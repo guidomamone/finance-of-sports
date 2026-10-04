@@ -1,0 +1,667 @@
+{
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-parent-fli-2023.md",
+ "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-parent-fli-2023.pdf",
+ "club": "valerenga",
+ "year": 2023,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:21.305Z",
+ "tieOuts": {
+  "cierran": 133,
+  "noCierran": 19
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "7 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "12 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "27 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 65,
+  "notasUsadas": []
+ },
+ "ladoConocido": 62,
+ "rubros": [
+  {
+   "label": "Reklame-/sponsorinntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    4739.349
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Kampbillettinntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    530.483
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Medle- og ligasponsorinntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    6984.966
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Medlems- og aktivitetsavgifter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    14291.78
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Andre salgsinntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    4507.045
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Leieinntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    2146.593
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Andre inntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    26369.457
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Andre kamps- og arrangementsinntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    378.151
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Variable kamp og treningskostnader inkl arr.kost",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    16471.736
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    31724.602
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Avskrivning forøvrig",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    529.519
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Avskrivning spillerkontrakter",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    325
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Administrasjonskostnader",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    6602.304
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Leie av faste trenings- og kampfasiliteter",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    1088.776
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Bane og anleggskostnader egne anlegg",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    5875.867
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Kostnader reklame og sponsor",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    0.96
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    243.837
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Salgskostnader",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    33.6
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Direkte kostnader ved kjap av spillerrettigheter",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    1205.429
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    188.452
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    30.927
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Avsatt til annen egenkapital",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "values": [
+    -3996.281
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Leieinntekter",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    42233.679
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Medlemsinntekter",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    14291.78
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    62881.605
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Lønnskostnader m.m.",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    33626.828
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Variable kamp- og treningskostnader",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    16471.736
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Leie av fast trenings- og kampfasiliteter",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    1088.776
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Direkte kostnader ved kjøp av spillerrettigheter",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    1205.429
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Avskrivning på driftsmidler",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    15277.59
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Avskrivning av spillerkontrakter",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    325
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    19928.152
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    7905.584
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    192.512
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    22577.345
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Overført fra/til annen egenkapital",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "values": [
+    -2748.097
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Påmeldingsavgifter, liseser mm",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "values": [
+    1.001138
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Drakt og utstyr",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "values": [
+    0.870107
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Utdanning trenere",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "values": [
+    0.0951
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Reise, bespisning og opphold",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "values": [
+    8.783504
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Vare og innkjøpskostnader",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "values": [
+    3.617463
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Dommerkostnader",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "values": [
+    0.834571
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Øvrig kamp og treningsrelatert kostnad",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "values": [
+    0.183303
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Dugnader og øvrig fremmedtjeneste",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "values": [
+    1.08655
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Grasrotmidler",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    3.74075
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Mva kompensasjon",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    3.006199
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Støtte fra kommunen",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    1.98714
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Tilskudd NIF, NFF og Toppfotball Kvinner",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    4.249457
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Øvrig støtte og tilskudd",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    13.160367
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Fakturering av felleskostnader",
+   "lado": "expense",
+   "page": 17,
+   "section": "",
+   "values": [
+    11.25507
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Andre idrettsrelaterte inntekter",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    25.482622
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 17,
+   "section": "Note 2 Lønnskostnader",
+   "values": [
+    25.461275
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 17,
+   "section": "Note 2 Lønnskostnader",
+   "values": [
+    3.67276
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 17,
+   "section": "Note 2 Lønnskostnader",
+   "values": [
+    0.975072
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 17,
+   "section": "Note 2 Lønnskostnader",
+   "values": [
+    3.51772
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Permanente forskjeller",
+   "lado": "revenue",
+   "page": 18,
+   "section": "",
+   "values": [
+    -0.519
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Endring i midlertidige forskjeller",
+   "lado": "revenue",
+   "page": 18,
+   "section": "",
+   "values": [
+    -0.329744
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 27,
+   "section": "Personalkostnader består av:",
+   "values": [
+    23.946486
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 27,
+   "section": "Personalkostnader består av:",
+   "values": [
+    3.419924
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 27,
+   "section": "Personalkostnader består av:",
+   "values": [
+    0.866462
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 27,
+   "section": "Personalkostnader består av:",
+   "values": [
+    3.49173
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Betalbar skatt",
+   "lado": "expense",
+   "page": 18,
+   "section": "Av forsiktighetsprinsippet er ikke utsatt skattefordel bokført i regnskapet.",
+   "values": [
+    0.000212
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Endring utsatt skattefordel/utsatt skatt",
+   "lado": "expense",
+   "page": 18,
+   "section": "Av forsiktighetsprinsippet er ikke utsatt skattefordel bokført i regnskapet.",
+   "values": [
+    1.712337
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Leieinntekter",
+   "lado": "revenue",
+   "page": 17,
+   "section": "Note 1 Driftsinntekter",
+   "values": [
+    42.233679
+   ],
+   "origen": "estado 12"
+  }
+ ]
+}

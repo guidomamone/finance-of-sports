@@ -1,0 +1,1569 @@
+{
+ "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2017-18.pdf",
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2017-18.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T21:15:15.792Z",
+ "ubicacion": {
+  "estado": [
+   "b15"
+  ],
+  "notas_ingresos": [
+   "b47",
+   "b49",
+   "b50",
+   "b52",
+   "b65"
+  ],
+  "notas_gastos": [
+   "b53",
+   "b54",
+   "b55",
+   "b57",
+   "b59",
+   "b62",
+   "b63",
+   "b64",
+   "b66",
+   "b67"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b15",
+   "escala": "unidades",
+   "evidencia": "Amounts in euros (L1138)"
+  },
+  {
+   "bloque": "b47",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L2696)"
+  },
+  {
+   "bloque": "b49",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L2735)"
+  },
+  {
+   "bloque": "b50",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L2756)"
+  },
+  {
+   "bloque": "b52",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L2830)"
+  },
+  {
+   "bloque": "b65",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L3108)"
+  },
+  {
+   "bloque": "b53",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L2856)"
+  },
+  {
+   "bloque": "b54",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L2876)"
+  },
+  {
+   "bloque": "b55",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L2921)"
+  },
+  {
+   "bloque": "b57",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L2948)"
+  },
+  {
+   "bloque": "b59",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L2985)"
+  },
+  {
+   "bloque": "b62",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L3052)"
+  },
+  {
+   "bloque": "b63",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L3076)"
+  },
+  {
+   "bloque": "b64",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L3097)"
+  },
+  {
+   "bloque": "b66",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L3125)"
+  },
+  {
+   "bloque": "b67",
+   "escala": "miles",
+   "evidencia": "Amounts in thousands of euros (L3137)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b15",
+   "linea": 1140,
+   "etiqueta": "Ticket sales",
+   "actual": "56,410,423",
+   "anterior": "57,835,297",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1141,
+   "etiqueta": "Television and radio rights and media revenues",
+   "actual": "200,169,142",
+   "anterior": "232,773,784",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1142,
+   "etiqueta": "Revenues from sponsorship and advertising",
+   "actual": "86,896,999",
+   "anterior": "74,718,794",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1143,
+   "etiqueta": "Revenues from sales of products and licences",
+   "actual": "27,796,591",
+   "anterior": "19,198,979",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1144,
+   "etiqueta": "Revenues from players' registration rights",
+   "actual": "102,401,466",
+   "anterior": "151,149,536",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1145,
+   "etiqueta": "Other revenues",
+   "actual": "30,995,269",
+   "anterior": "27,034,664",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1146,
+   "etiqueta": "Total revenues",
+   "actual": "504,669,890",
+   "anterior": "562,711,054",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1147,
+   "etiqueta": "Purchase of materials, supplies and other consumables",
+   "actual": "(3,464,062)",
+   "anterior": "(2,979,934)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1148,
+   "etiqueta": "Purchases of products for sale",
+   "actual": "(11,469,144)",
+   "anterior": "(8,290,140)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1149,
+   "etiqueta": "External services",
+   "actual": "(76,943,169)",
+   "anterior": "(66,578,563)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1150,
+   "etiqueta": "Players' wages and technical staff costs",
+   "actual": "(233,319,806)",
+   "anterior": "(235,344,554)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1151,
+   "etiqueta": "Other personnel",
+   "actual": "(25,683,238)",
+   "anterior": "(26,481,657)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1152,
+   "etiqueta": "Expenses from players' registration rights",
+   "actual": "(20,107,143)",
+   "anterior": "(50,492,316)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1153,
+   "etiqueta": "Other expenses",
+   "actual": "(12,273,621)",
+   "anterior": "(10,524,690)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1154,
+   "etiqueta": "Total operating costs",
+   "actual": "(383,260,183)",
+   "anterior": "(400,691,854)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1155,
+   "etiqueta": "Amortisation and write-downs of players' registration rights",
+   "actual": "(107,954,427)",
+   "anterior": "(82,949,776)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1156,
+   "etiqueta": "Amortisation of other tangible and intangible assets",
+   "actual": "(12,525,527)",
+   "anterior": "(9,934,144)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1157,
+   "etiqueta": "Provisions, write-downs and release of funds",
+   "actual": "(2,363,811)",
+   "anterior": "(2,107,849)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1158,
+   "etiqueta": "Other non-current revenues and expenses",
+   "actual": "-",
+   "anterior": "350,000",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1159,
+   "etiqueta": "Operating income",
+   "actual": "(1,434,058)",
+   "anterior": "67,377,431",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1160,
+   "etiqueta": "Financial income",
+   "actual": "4,260,740",
+   "anterior": "4,273,061",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1161,
+   "etiqueta": "Financial expenses",
+   "actual": "(11,963,159)",
+   "anterior": "(11,969,140)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1162,
+   "etiqueta": "Group's share of results of associates and joint ventures",
+   "actual": "(886,073)",
+   "anterior": "(1,266,633)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1163,
+   "etiqueta": "Income/(loss) before taxes",
+   "actual": "(10,022,550)",
+   "anterior": "58,414,719",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1164,
+   "etiqueta": "Current taxes",
+   "actual": "(8,820,346)",
+   "anterior": "(11,363,921)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1165,
+   "etiqueta": "Deferred taxes",
+   "actual": "(385,923)",
+   "anterior": "(4,482,874)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 1166,
+   "etiqueta": "Profit/(loss) for the year",
+   "actual": "(19,228,819)",
+   "anterior": "42,567,924",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b47",
+   "linea": 2698,
+   "etiqueta": "Season ticket revenues",
+   "actual": "20,265",
+   "anterior": "18,791",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ticket sales"
+  },
+  {
+   "bloque": "b47",
+   "linea": 2699,
+   "etiqueta": "Revenues from ticket sales for home championship matches (a)",
+   "actual": "11,817",
+   "anterior": "11,046",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ticket sales"
+  },
+  {
+   "bloque": "b47",
+   "linea": 2700,
+   "etiqueta": "Revenues from ticket sales for UEFA Champions League home matches",
+   "actual": "9,981",
+   "anterior": "12,279",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ticket sales"
+  },
+  {
+   "bloque": "b47",
+   "linea": 2701,
+   "etiqueta": "Revenues from additional match services",
+   "actual": "5,555",
+   "anterior": "5,002",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ticket sales"
+  },
+  {
+   "bloque": "b47",
+   "linea": 2702,
+   "etiqueta": "Friendly match fees",
+   "actual": "5,161",
+   "anterior": "6,189",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ticket sales"
+  },
+  {
+   "bloque": "b47",
+   "linea": 2703,
+   "etiqueta": "Revenues from ticket sales for Italian Cup matches",
+   "actual": "1,876",
+   "anterior": "1,932",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ticket sales"
+  },
+  {
+   "bloque": "b47",
+   "linea": 2704,
+   "etiqueta": "Revenues from Cup finals",
+   "actual": "1,641",
+   "anterior": "2,421",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ticket sales"
+  },
+  {
+   "bloque": "b47",
+   "linea": 2705,
+   "etiqueta": "Other match revenues",
+   "actual": "114",
+   "anterior": "175",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ticket sales"
+  },
+  {
+   "bloque": "b47",
+   "linea": 2706,
+   "etiqueta": "Ticket sales",
+   "actual": "56,410",
+   "anterior": "57,835",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Ticket sales"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2737,
+   "etiqueta": "Revenues from media rights",
+   "actual": "117,388",
+   "anterior": "117,681",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Television and radio rights and media revenues"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2738,
+   "etiqueta": "Revenues from UEFA competitions",
+   "actual": "78,233",
+   "anterior": "110,324",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Television and radio rights and media revenues"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2739,
+   "etiqueta": "Revenues from production and access to the media rights signal",
+   "actual": "4,548",
+   "anterior": "4,769",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Television and radio rights and media revenues"
+  },
+  {
+   "bloque": "b49",
+   "linea": 2740,
+   "etiqueta": "Television and radio rights and media revenues",
+   "actual": "200,169",
+   "anterior": "232,774",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Television and radio rights and media revenues"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2758,
+   "etiqueta": "Gains on disposal of players' registration rights",
+   "actual": "92,389",
+   "anterior": "139,444",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenues from players' registration rights"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2759,
+   "etiqueta": "Revenues from the temporary disposal of players' registration rights",
+   "actual": "5,488",
+   "anterior": "9,688",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenues from players' registration rights"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2760,
+   "etiqueta": "Gains on disposal of registered young players' sharing agreements",
+   "actual": "1,536",
+   "anterior": "866",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenues from players' registration rights"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2761,
+   "etiqueta": "Other revenues",
+   "actual": "2,988",
+   "anterior": "1,152",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Revenues from players' registration rights"
+  },
+  {
+   "bloque": "b50",
+   "linea": 2762,
+   "etiqueta": "Revenues from players' registration rights",
+   "actual": "102,401",
+   "anterior": "151,150",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Revenues from players' registration rights"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2832,
+   "etiqueta": "Revenues from commercial projects (Accendi una Stella, Membership, Stadium Tour, Museum, Camp, Club Doc)",
+   "actual": "11,340",
+   "anterior": "10,050",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other revenues"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2833,
+   "etiqueta": "Contingent assets",
+   "actual": "2,276",
+   "anterior": "3,040",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other revenues"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2834,
+   "etiqueta": "Contributions from Lega Nazionale Professionisti Serie A and other contributions",
+   "actual": "2,382",
+   "anterior": "2,286",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other revenues"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2835,
+   "etiqueta": "Income from no match day activities and other stadium income",
+   "actual": "4,046",
+   "anterior": "5,646",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other revenues"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2836,
+   "etiqueta": "Compensation and other insurance-related income",
+   "actual": "4,484",
+   "anterior": "2,507",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other revenues"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2837,
+   "etiqueta": "Sale of away match tickets",
+   "actual": "787",
+   "anterior": "1,023",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other revenues"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2838,
+   "etiqueta": "Contributions from FIFA/UEFA for players called up to play for the national team",
+   "actual": "2,257",
+   "anterior": "347",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other revenues"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2839,
+   "etiqueta": "Others",
+   "actual": "3,423",
+   "anterior": "2,136",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other revenues"
+  },
+  {
+   "bloque": "b52",
+   "linea": 2840,
+   "etiqueta": "Other revenues",
+   "actual": "30,995",
+   "anterior": "27,035",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Other revenues"
+  },
+  {
+   "bloque": "b65",
+   "linea": 3110,
+   "etiqueta": "Financial income from discounting",
+   "actual": "4,050",
+   "anterior": "3,873",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financial income"
+  },
+  {
+   "bloque": "b65",
+   "linea": 3111,
+   "etiqueta": "Interest income",
+   "actual": "60",
+   "anterior": "115",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financial income"
+  },
+  {
+   "bloque": "b65",
+   "linea": 3112,
+   "etiqueta": "Others",
+   "actual": "151",
+   "anterior": "285",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financial income"
+  },
+  {
+   "bloque": "b65",
+   "linea": 3113,
+   "etiqueta": "Financial income",
+   "actual": "4,261",
+   "anterior": "4,273",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Financial income"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2858,
+   "etiqueta": "Technical sponsor cost to sell",
+   "actual": "7,482",
+   "anterior": "5,858",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Purchases of products for sale"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2859,
+   "etiqueta": "Licensing cost to sell",
+   "actual": "3,941",
+   "anterior": "1,837",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Purchases of products for sale"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2860,
+   "etiqueta": "Other change in inventories of Technical Sponsor merchandise",
+   "actual": "(89)",
+   "anterior": "206",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Purchases of products for sale"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2861,
+   "etiqueta": "Other changes in inventories of licensing merchandise",
+   "actual": "135",
+   "anterior": "389",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Purchases of products for sale"
+  },
+  {
+   "bloque": "b53",
+   "linea": 2862,
+   "etiqueta": "Total",
+   "actual": "11,469",
+   "anterior": "8,290",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Purchases of products for sale"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2878,
+   "etiqueta": "Transport, accommodation and meals expenses",
+   "actual": "14,614",
+   "anterior": "11,017",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2879,
+   "etiqueta": "Leases and rentals",
+   "actual": "6,506",
+   "anterior": "5,141",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2880,
+   "etiqueta": "Advisory",
+   "actual": "6,039",
+   "anterior": "6,773",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2881,
+   "etiqueta": "Maintenance",
+   "actual": "5,957",
+   "anterior": "5,093",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2882,
+   "etiqueta": "Audio and video productions",
+   "actual": "5,117",
+   "anterior": "5,090",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2883,
+   "etiqueta": "Fees to the members of the Board of Directors and Corporate Bodies",
+   "actual": "4,612",
+   "anterior": "5,436",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2884,
+   "etiqueta": "Insurance",
+   "actual": "3,924",
+   "anterior": "3,707",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2885,
+   "etiqueta": "Utilities",
+   "actual": "3,912",
+   "anterior": "2,943",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2886,
+   "etiqueta": "Costs for security and reception",
+   "actual": "3,134",
+   "anterior": "2,597",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2887,
+   "etiqueta": "Advertising spaces on the media",
+   "actual": "2,804",
+   "anterior": "1,318",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2888,
+   "etiqueta": "Costs for cleaning",
+   "actual": "2,075",
+   "anterior": "1,589",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2889,
+   "etiqueta": "Fees to sports consultants",
+   "actual": "2,011",
+   "anterior": "1,905",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2890,
+   "etiqueta": "Printed material and dispatch",
+   "actual": "1,979",
+   "anterior": "1,229",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2891,
+   "etiqueta": "Legal and notarial expenses",
+   "actual": "1,706",
+   "anterior": "1,890",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2892,
+   "etiqueta": "Expenses for installations",
+   "actual": "1,602",
+   "anterior": "1,543",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2893,
+   "etiqueta": "Brokers' fees",
+   "actual": "1,152",
+   "anterior": "742",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2894,
+   "etiqueta": "Bank services and charges on guarantees",
+   "actual": "919",
+   "anterior": "1,492",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2895,
+   "etiqueta": "Distribution network and ticket sales",
+   "actual": "919",
+   "anterior": "989",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2896,
+   "etiqueta": "Services for ancillary and temporary work",
+   "actual": "910",
+   "anterior": "435",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2897,
+   "etiqueta": "Training, catch up lessons",
+   "actual": "843",
+   "anterior": "634",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2898,
+   "etiqueta": "Expense refunds",
+   "actual": "824",
+   "anterior": "767",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2899,
+   "etiqueta": "Health and rehabilitation",
+   "actual": "458",
+   "anterior": "583",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2900,
+   "etiqueta": "Others",
+   "actual": "4,926",
+   "anterior": "3,666",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b54",
+   "linea": 2901,
+   "etiqueta": "External services",
+   "actual": "76,943",
+   "anterior": "66,579",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "External services"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2923,
+   "etiqueta": "Wages and salaries",
+   "actual": "193,373",
+   "anterior": "183,978",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Players' wages and technical staff costs"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2924,
+   "etiqueta": "Variable bonuses",
+   "actual": "28,670",
+   "anterior": "38,483",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Players' wages and technical staff costs"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2925,
+   "etiqueta": "Payments to players temporarily transferred to other Companies",
+   "actual": "3,188",
+   "anterior": "2,524",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Players' wages and technical staff costs"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2926,
+   "etiqueta": "Leaving incentives",
+   "actual": "2,367",
+   "anterior": "4,968",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Players' wages and technical staff costs"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2927,
+   "etiqueta": "Social security contributions",
+   "actual": "3,533",
+   "anterior": "3,195",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Players' wages and technical staff costs"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2928,
+   "etiqueta": "Scholarships",
+   "actual": "1,088",
+   "anterior": "917",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Players' wages and technical staff costs"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2929,
+   "etiqueta": "Employee severance indemnities",
+   "actual": "906",
+   "anterior": "823",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Players' wages and technical staff costs"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2930,
+   "etiqueta": "Other expenses",
+   "actual": "195",
+   "anterior": "457",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Players' wages and technical staff costs"
+  },
+  {
+   "bloque": "b55",
+   "linea": 2931,
+   "etiqueta": "Players' wages and technical staff costs",
+   "actual": "233,320",
+   "anterior": "235,345",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Players' wages and technical staff costs"
+  },
+  {
+   "bloque": "b57",
+   "linea": 2950,
+   "etiqueta": "Wages and salaries",
+   "actual": "13,937",
+   "anterior": "13,350",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other personnel"
+  },
+  {
+   "bloque": "b57",
+   "linea": 2951,
+   "etiqueta": "Social security contributions",
+   "actual": "4,550",
+   "anterior": "4,182",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other personnel"
+  },
+  {
+   "bloque": "b57",
+   "linea": 2952,
+   "etiqueta": "Variable bonuses",
+   "actual": "3,795",
+   "anterior": "5,377",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other personnel"
+  },
+  {
+   "bloque": "b57",
+   "linea": 2953,
+   "etiqueta": "Severance Indemnity",
+   "actual": "1,074",
+   "anterior": "998",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other personnel"
+  },
+  {
+   "bloque": "b57",
+   "linea": 2954,
+   "etiqueta": "Contractors and related social security contributions",
+   "actual": "1,032",
+   "anterior": "443",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other personnel"
+  },
+  {
+   "bloque": "b57",
+   "linea": 2955,
+   "etiqueta": "Scholarships",
+   "actual": "59",
+   "anterior": "67",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other personnel"
+  },
+  {
+   "bloque": "b57",
+   "linea": 2956,
+   "etiqueta": "Other expenses",
+   "actual": "1,236",
+   "anterior": "2,065",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other personnel"
+  },
+  {
+   "bloque": "b57",
+   "linea": 2957,
+   "etiqueta": "Other personnel",
+   "actual": "25,683",
+   "anterior": "26,482",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Other personnel"
+  },
+  {
+   "bloque": "b59",
+   "linea": 2987,
+   "etiqueta": "Expenses for the temporary purchase of players' registration rights",
+   "actual": "9,986",
+   "anterior": "10,490",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Expenses from players' registration rights"
+  },
+  {
+   "bloque": "b59",
+   "linea": 2988,
+   "etiqueta": "Auxiliary non-capitalised expenses for players' registration rights",
+   "actual": "8,924",
+   "anterior": "35,957",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Expenses from players' registration rights"
+  },
+  {
+   "bloque": "b59",
+   "linea": 2989,
+   "etiqueta": "Losses on disposal of registered young players-sharing agreements",
+   "actual": "85",
+   "anterior": "197",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Expenses from players' registration rights"
+  },
+  {
+   "bloque": "b59",
+   "linea": 2990,
+   "etiqueta": "Losses on disposal of players' registration rights",
+   "actual": "19",
+   "anterior": "296",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Expenses from players' registration rights"
+  },
+  {
+   "bloque": "b59",
+   "linea": 2991,
+   "etiqueta": "Other expenses",
+   "actual": "1,093",
+   "anterior": "3,552",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Expenses from players' registration rights"
+  },
+  {
+   "bloque": "b59",
+   "linea": 2992,
+   "etiqueta": "Expenses from players' registration rights",
+   "actual": "20,107",
+   "anterior": "50,492",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Expenses from players' registration rights"
+  },
+  {
+   "bloque": "b62",
+   "linea": 3054,
+   "etiqueta": "Indirect duties and taxes",
+   "actual": "2,685",
+   "anterior": "2,242",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other expenses"
+  },
+  {
+   "bloque": "b62",
+   "linea": 3055,
+   "etiqueta": "Camp Tour Operator activity costs",
+   "actual": "2,294",
+   "anterior": "451",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other expenses"
+  },
+  {
+   "bloque": "b62",
+   "linea": 3056,
+   "etiqueta": "Percentages to third parties in regard to fees and other items",
+   "actual": "1,362",
+   "anterior": "1,120",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other expenses"
+  },
+  {
+   "bloque": "b62",
+   "linea": 3057,
+   "etiqueta": "Contingent liabilities",
+   "actual": "1,357",
+   "anterior": "1,180",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other expenses"
+  },
+  {
+   "bloque": "b62",
+   "linea": 3058,
+   "etiqueta": "Entertainment expenses",
+   "actual": "1,260",
+   "anterior": "1,983",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other expenses"
+  },
+  {
+   "bloque": "b62",
+   "linea": 3059,
+   "etiqueta": "Contributions to FIGC, LNPA and other bodies",
+   "actual": "1,172",
+   "anterior": "991",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other expenses"
+  },
+  {
+   "bloque": "b62",
+   "linea": 3060,
+   "etiqueta": "Percentages to third parties on income from matches",
+   "actual": "784",
+   "anterior": "783",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other expenses"
+  },
+  {
+   "bloque": "b62",
+   "linea": 3061,
+   "etiqueta": "Purchase of away match tickets",
+   "actual": "771",
+   "anterior": "1,009",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other expenses"
+  },
+  {
+   "bloque": "b62",
+   "linea": 3062,
+   "etiqueta": "Fines and penalties",
+   "actual": "80",
+   "anterior": "102",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other expenses"
+  },
+  {
+   "bloque": "b62",
+   "linea": 3063,
+   "etiqueta": "Others",
+   "actual": "509",
+   "anterior": "664",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other expenses"
+  },
+  {
+   "bloque": "b62",
+   "linea": 3064,
+   "etiqueta": "Other expenses",
+   "actual": "12,274",
+   "anterior": "10,525",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Other expenses"
+  },
+  {
+   "bloque": "b63",
+   "linea": 3078,
+   "etiqueta": "Amortisation:",
+   "actual": "107,220",
+   "anterior": "81,816",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Amortisation and write-downs of players' registration rights"
+  },
+  {
+   "bloque": "b63",
+   "linea": 3079,
+   "etiqueta": "Professional players",
+   "actual": "106,658",
+   "anterior": "81,132",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortisation:"
+  },
+  {
+   "bloque": "b63",
+   "linea": 3080,
+   "etiqueta": "Registered young players",
+   "actual": "554",
+   "anterior": "684",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortisation:"
+  },
+  {
+   "bloque": "b63",
+   "linea": 3081,
+   "etiqueta": "Women players/youth-team female players",
+   "actual": "8",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortisation:"
+  },
+  {
+   "bloque": "b63",
+   "linea": 3082,
+   "etiqueta": "Depreciation",
+   "actual": "734",
+   "anterior": "1,134",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Amortisation and write-downs of players' registration rights"
+  },
+  {
+   "bloque": "b63",
+   "linea": 3083,
+   "etiqueta": "Amortisation and write-downs of players' registration rights",
+   "actual": "107,954",
+   "anterior": "82,950",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Amortisation and write-downs of players' registration rights"
+  },
+  {
+   "bloque": "b64",
+   "linea": 3099,
+   "etiqueta": "Provision for other risks and charges",
+   "actual": "1,024",
+   "anterior": "788",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Provisions, write-downs and release of funds"
+  },
+  {
+   "bloque": "b64",
+   "linea": 3100,
+   "etiqueta": "Allowance for doubtful accounts",
+   "actual": "1,340",
+   "anterior": "1,329",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Provisions, write-downs and release of funds"
+  },
+  {
+   "bloque": "b64",
+   "linea": 3101,
+   "etiqueta": "Release of provisions for other risks and charges",
+   "actual": "-",
+   "anterior": "(9)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Provisions, write-downs and release of funds"
+  },
+  {
+   "bloque": "b64",
+   "linea": 3102,
+   "etiqueta": "Provisions and other write-downs/reverses and releases",
+   "actual": "2,364",
+   "anterior": "2,108",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Provisions, write-downs and release of funds"
+  },
+  {
+   "bloque": "b66",
+   "linea": 3127,
+   "etiqueta": "Interest expense and charges",
+   "actual": "6,442",
+   "anterior": "6,106",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financial expenses"
+  },
+  {
+   "bloque": "b66",
+   "linea": 3128,
+   "etiqueta": "Financial expenses from discounting",
+   "actual": "5,041",
+   "anterior": "5,764",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financial expenses"
+  },
+  {
+   "bloque": "b66",
+   "linea": 3129,
+   "etiqueta": "Financial charges on derivative instruments",
+   "actual": "193",
+   "anterior": "31",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financial expenses"
+  },
+  {
+   "bloque": "b66",
+   "linea": 3130,
+   "etiqueta": "Others",
+   "actual": "287",
+   "anterior": "68",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Financial expenses"
+  },
+  {
+   "bloque": "b66",
+   "linea": 3131,
+   "etiqueta": "Financial expenses",
+   "actual": "11,963",
+   "anterior": "11,969",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Financial expenses"
+  },
+  {
+   "bloque": "b67",
+   "linea": 3139,
+   "etiqueta": "Current taxes IRES",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Current taxes"
+  },
+  {
+   "bloque": "b67",
+   "linea": 3140,
+   "etiqueta": "Current taxes IRAP",
+   "actual": "8,820",
+   "anterior": "11,364",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Current taxes"
+  },
+  {
+   "bloque": "b67",
+   "linea": 3141,
+   "etiqueta": "Total current taxes",
+   "actual": "8,820",
+   "anterior": "11,364",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Current taxes"
+  },
+  {
+   "bloque": "b67",
+   "linea": 3142,
+   "etiqueta": "Deferred taxes IRES",
+   "actual": "321",
+   "anterior": "2,992",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Deferred taxes"
+  },
+  {
+   "bloque": "b67",
+   "linea": 3143,
+   "etiqueta": "Deferred taxes IRAP",
+   "actual": "65",
+   "anterior": "164",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Deferred taxes"
+  },
+  {
+   "bloque": "b67",
+   "linea": 3144,
+   "etiqueta": "Total deferred taxes",
+   "actual": "386",
+   "anterior": "3,156",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Deferred taxes"
+  },
+  {
+   "bloque": "b67",
+   "linea": 3145,
+   "etiqueta": "Deferred IRES eliminated",
+   "actual": "-",
+   "anterior": "1,327",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Deferred taxes"
+  },
+  {
+   "bloque": "b67",
+   "linea": 3146,
+   "etiqueta": "Income taxes",
+   "actual": "9,206",
+   "anterior": "15,847",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 1146,
+  "actual": "504,669,890"
+ },
+ "total_gastos": {
+  "linea": 1154,
+  "actual": "(383,260,183)"
+ },
+ "resultado": {
+  "linea": 1166,
+  "actual": "(19,228,819)",
+  "anterior": "42,567,924"
+ },
+ "dudas": [],
+ "observaciones": "Estado en euros, notas en miles de euros. 'Total operating costs' (L1154) no incluye amortizaciones, provisiones ni otros no corrientes (L1155-L1158). No hay notas para sponsorship, ventas de productos, compra de materiales ni amortización de otros activos. Se omitió la ganancia por acción (L1167) por no ser un importe monetario. En b67 'Deferred IRES eliminated' (L3145) solo tiene importe en 2016/17; los diferidos 2016/17 del estado (4,482,874) coinciden con 3,156+1,327."
+}

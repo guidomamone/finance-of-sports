@@ -1,0 +1,754 @@
+{
+ "md": "Clubes/Francia/_DNCG-Agregado-Liga/dncg-rapport-financiero-2011-12.md",
+ "generatedAt": "2026-09-30T01:11:48.497Z",
+ "rubros": [
+  {
+   "label": "Autres produits",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Sponsors - Publicité",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Rémunération du personnel chargée",
+   "page": 62,
+   "section": "## 2.4.1 SYNTHÈSE LIGUE 2 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "choice": "wages_squad",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "wages_squad",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1300
+  },
+  {
+   "label": "Frais généraux",
+   "page": 26,
+   "section": "### Charges : détail des écarts",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Recettes matches",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Amortissements des indemnités de mutation",
+   "page": 26,
+   "section": "### Charges : détail des écarts",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Masse salariale chargée",
+   "page": 26,
+   "section": "### Charges : détail des écarts",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Droits audiovisuels",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Autres charges",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Coûts des mutations",
+   "page": 62,
+   "section": "## 2.4.1 SYNTHÈSE LIGUE 2 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "choice": "player_amortisation",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "player_amortisation",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "lump_football_operations_expense",
+     0.21000000000000002
+    ]
+   ],
+   "tokens": 1296
+  },
+  {
+   "label": "Résultat financier",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Impôt société",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "RÉSULTAT DE MUTATION",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "player_sales",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "player_sales",
+     0.59
+    ],
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "RÉSULTAT OPÉRATIONNEL COURANT",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "other_income",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "lump_football_operations",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "RÉSULTAT D'EXPLOITATION HORS MUTATION",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "lump_football_operations",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.36
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Résultat exceptionnel : Autres",
+   "page": 62,
+   "section": "## 2.4.1 SYNTHÈSE LIGUE 2 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "choice": "exceptional_items",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "exceptional_items",
+     0.74
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1299
+  },
+  {
+   "label": "Abandons et reprises de comptes courants",
+   "page": 62,
+   "section": "## 2.4.1 SYNTHÈSE LIGUE 2 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "choice": "other_income",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "exceptional_items",
+     0.21000000000000002
+    ]
+   ],
+   "tokens": 1300
+  },
+  {
+   "label": "RÉSULTAT NET",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "lump_football_operations",
+     0.15
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Dotations aux amortissements des indemnités de mutation",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     0.99
+    ],
+    [
+     "depreciation",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Rémunération du personnel",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "wages_squad",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "wages_squad",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Charges sociales",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "wages_squad",
+     0.08
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Frais de déplacement",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Frais d'organisation de matches",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Honoraires d'agents",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "lump_football_operations_expense",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Impôts et taxes",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Services extérieurs",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "admin_general_expense",
+     0.39
+    ],
+    [
+     "match_organisation_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Dotations aux autres amortissements et provisions",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "other_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_amortisation",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Résultat exceptionnel (autres)",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "exceptional_items",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "exceptional_items",
+     0.78
+    ],
+    [
+     "other_income",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "RÉSULTAT AVANT IMPÔT",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "admin_general_expense",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.38
+    ],
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Équilibre ou bénéfices",
+   "page": 63,
+   "section": "19 clubs pour 2010/11, hors Grenoble qui a déposé le bilan. / - la hausse de tous les postes de produits (+ 6 % au total), / - la forte augmentation de tous les postes de charges (+ 23 % au total), / - l'excédent sur mutation record à près de 55 M€, / - une contribution des actionnaires stable à 9 M€.",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "player_sales",
+     0.05
+    ]
+   ],
+   "tokens": 1352
+  },
+  {
+   "label": "Résultat exceptionnel : abandons/reprises comptes courants",
+   "page": 80,
+   "section": "## Compte de résultat moyen par groupe",
+   "choice": "exceptional_items",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "exceptional_items",
+     0.93
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Pertes < 1 M€",
+   "page": 63,
+   "section": "19 clubs pour 2010/11, hors Grenoble qui a déposé le bilan. / - la hausse de tous les postes de produits (+ 6 % au total), / - la forte augmentation de tous les postes de charges (+ 23 % au total), / - l'excédent sur mutation record à près de 55 M€, / - une contribution des actionnaires stable à 9 M€.",
+   "choice": "exceptional_items",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "exceptional_items",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "other_income",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1350
+  },
+  {
+   "label": "Résultat exceptionnel : abandons/reprises C/C",
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "choice": "exceptional_items",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "exceptional_items",
+     0.95
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Dotations aux amort des indemn de mutation",
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "choice": "player_amortisation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "player_amortisation",
+     0.98
+    ],
+    [
+     "depreciation",
+     0.02
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1268
+  }
+ ]
+}

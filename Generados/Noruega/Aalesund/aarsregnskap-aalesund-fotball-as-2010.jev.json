@@ -1,0 +1,536 @@
+{
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2010.md",
+ "generatedAt": "2026-09-30T19:15:42.954Z",
+ "rubrosHuella": "aa3f9e1334b98567190b5fc0fdcb18fcdf11c508",
+ "rubros": [
+  {
+   "label": "Lønnskostnader m.m.",
+   "lado": "expense",
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "wages_squad",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Salgsinntekter",
+   "lado": "revenue",
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.49
+    ],
+    [
+     "sponsorship_commercial",
+     0.23
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Inntekt på investering i datterselskap",
+   "lado": "revenue",
+   "page": 31,
+   "section": "# Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Avskrivning på driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 5,
+   "section": "ÅLESUND FOTBALL AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.69
+    ],
+    [
+     "depreciation",
+     0.22
+    ],
+    [
+     "player_impairment",
+     0.04
+    ]
+   ],
+   "tokens": 1101
+  },
+  {
+   "label": "Varekostnader",
+   "lado": "expense",
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Nedskrivning av andre finansielle anleggsmidler",
+   "lado": null,
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "depreciation",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0.01
+    ]
+   ],
+   "tokens": 1530
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Skattekostnad på ordinært resultat",
+   "lado": "expense",
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Avsatt til annen egenkapital",
+   "lado": null,
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1450
+  },
+  {
+   "label": "Overført fra overkursfond",
+   "lado": null,
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "member_dues",
+     0.06999999999999999
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1441
+  },
+  {
+   "label": "Udekket tap",
+   "lado": null,
+   "page": 5,
+   "section": "ÅLESUND FOTBALL AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "exceptional_items",
+     0.07
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1495
+  },
+  {
+   "label": "Nedskrivning av driftsmidler og immaterielle driftsmidler",
+   "lado": "expense",
+   "page": 35,
+   "section": "# Resultatregnskap - konsern",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "depreciation",
+     0.19
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Skatterådgivning (inkl. teknisk bistand med ligningspapirer)",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Andre attestasjonstjenester",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 977
+  },
+  {
+   "label": "Annen bistand",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "youth_other_sports_expense",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Lovpålagt revisjon (inkl. teknisk bistand med årsregnskap)",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.74
+    ],
+    [
+     "exceptional_items",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Overførsel iht. avtale",
+   "lado": null,
+   "page": 30,
+   "section": "# Note 17 Samarbeidsavtale Ålesund Fotball AS og AaFK Sponsorservice AS / # Morselskapet",
+   "choice": "player_sales",
+   "confidence": 0.25,
+   "top3": [
+    [
+     "player_sales",
+     0.29000000000000004
+    ],
+    [
+     "player_amortisation",
+     0.22
+    ],
+    [
+     "sponsorship_commercial",
+     0.19
+    ]
+   ],
+   "tokens": 1493
+  },
+  {
+   "label": "Kostnadsført leie",
+   "lado": "expense",
+   "page": 29,
+   "section": "## Konsernregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "admin_general_expense",
+     0.41
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1014
+  }
+ ]
+}

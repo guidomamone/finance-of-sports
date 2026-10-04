@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/España/Girona FC/cuentas-anuales-2019-2020.md",
+ "generado": "2026-10-02T00:16:05.470Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euros: os001",
+ "caja": {
+  "lineas": [
+   643
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   749
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Formulario oficial con casilla de unidad (Euros 09001) poco legible; las cifras con decimales confirman unidades de euro. Única deuda bancaria explícita: deudas con entidades de crédito a corto plazo (L749). Se excluyeron 'otros pasivos financieros' (L734, L752) y la deuda con empresas del grupo (L735, vacía en 2019), cuya naturaleza es dudosa (posiblemente deudas por traspasos o fianzas). La columna 'Ejercicio 2019' corresponde al ejercicio 2019-2020."
+}

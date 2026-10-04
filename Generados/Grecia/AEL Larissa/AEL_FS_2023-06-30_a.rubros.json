@@ -1,0 +1,100 @@
+{
+  "md": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.md",
+  "pdf": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.pdf",
+  "club": "aellarissa-gr",
+  "year": 2023,
+  "generatedAt": "2026-10-03T19:55:48.423Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Κύκλος εργασιών (καθαρός)",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.963953
+      ],
+      "glosa": "Cifra de negocios (neta)"
+    },
+    {
+      "label": "Επιχορηγήσεις & διάφορα έσοδα πωλήσεων",
+      "lado": "revenue",
+      "page": 19,
+      "section": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\"",
+      "values": [
+        0.113417
+      ],
+      "glosa": "Subvenciones y otros ingresos por ventas"
+    },
+    {
+      "label": "Έσοδα παρεπόμενων ασχολιών",
+      "lado": "revenue",
+      "page": 19,
+      "section": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\"",
+      "values": [
+        0.293156
+      ],
+      "glosa": "Ingresos por actividades accesorias"
+    },
+    {
+      "label": "(+) Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "(+) Ganancias y pérdidas por enajenación de activos no corrientes"
+    },
+    {
+      "label": "(+) Λοιπά έσοδα και κέρδη",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "(+) Otros ingresos y ganancias"
+    },
+    {
+      "label": "(-) Κόστος πωλήσεων",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        1.587768
+      ],
+      "glosa": "(-) Coste de ventas"
+    },
+    {
+      "label": "(-) Έξοδα διοίκησης",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.657007
+      ],
+      "glosa": "(-) Gastos de administración"
+    },
+    {
+      "label": "(-) Έξοδα διάθεσης",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.492756
+      ],
+      "glosa": "(-) Gastos de distribución"
+    },
+    {
+      "label": "(-) Λοιπά έξοδα και ζημιές",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "(-) Otros gastos y pérdidas"
+    }
+  ]
+}

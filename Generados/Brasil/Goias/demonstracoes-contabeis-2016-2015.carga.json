@@ -1,0 +1,352 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.pdf",
+ "generado": "2026-10-03T00:25:05.283Z",
+ "frena": [],
+ "avisos": [],
+ "ejercicio": {
+  "clubId": "goias-br",
+  "year": 2016,
+  "cierre": "2016-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "RECEITA LÍQUIDA DAS ATIVIDADES",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 83.004966,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.94
+   },
+   {
+    "rawLabel": "Outras receitas e despesas",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.018408,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Despesas com futebol profissional e amador",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -38.209386,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas administrativas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.454245,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Materiais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.875578,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Serviços de terceiros",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -3.284072,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas tributárias",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.454818,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas gerais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -19.707325,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2016-12-31",
+   "sourceId": "goias-br-demonstracoes-contabeis-2016-2015",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -3.260861,
+   "tax": 0,
+   "sinDesglose": [
+    {
+     "renglon": "RECEITA LÍQUIDA DAS ATIVIDADES",
+     "lado": "revenue",
+     "importe": 83.004966,
+     "motivo": "el documento no desglosa este renglón"
+    },
+    {
+     "renglon": "Despesas com futebol profissional e amador",
+     "lado": "expense",
+     "importe": 38.209386,
+     "motivo": "el documento no desglosa este renglón"
+    },
+    {
+     "renglon": "Serviços de terceiros",
+     "lado": "expense",
+     "importe": 3.284072,
+     "motivo": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 83.023374,
+   "officialTotalExpenses": 63.985423,
+   "officialPAT": 15.77709
+  },
+  "source": {
+   "id": "goias-br-demonstracoes-contabeis-2016-2015",
+   "clubId": "goias-br",
+   "title": "Goiás Esporte Clube — demonstracoes-contabeis-2016-2015 (ejercicio 2016)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2016-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "goias-br",
+ "year": 2016,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.pdf",
+   "campo": "anio",
+   "valor": "2016",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2016-2015' es el ejercicio 2016 con 2015 de comparativo, no 2015.",
+   "evidencia": "fecha de cierre 2016-12-31 leída del contenido (periodo.mjs)",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  }
+ ],
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "RECEITA LÍQUIDA DAS ATIVIDADES",
+   "page": 1,
+   "native": 83.004966,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 83.004966,
+   "cat": "lump_football_operations",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 83.004966
+  },
+  {
+   "label": "Outras receitas e despesas",
+   "page": 1,
+   "native": 0.018408,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))",
+   "signoFijo": 0.018408,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.018408
+  },
+  {
+   "label": "Despesas com futebol profissional e amador",
+   "page": 1,
+   "native": 38.209386,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 38.209386,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -38.209386
+  },
+  {
+   "label": "Despesas administrativas",
+   "page": 1,
+   "native": 0.454245,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.454245,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.454245
+  },
+  {
+   "label": "Materiais",
+   "page": 1,
+   "native": 0.875578,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.875578,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)",
+   "destino": "expense",
+   "amountNative": -0.875578
+  },
+  {
+   "label": "Serviços de terceiros",
+   "page": 1,
+   "native": 3.284072,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.284072,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "expense",
+   "amountNative": -3.284072
+  },
+  {
+   "label": "Despesas tributárias",
+   "page": 1,
+   "native": 1.454818,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.454818,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.454818
+  },
+  {
+   "label": "Despesas gerais",
+   "page": 1,
+   "native": 19.707325,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 19.707325,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -19.707325
+  },
+  {
+   "label": "Resultado financeiro líquido 20 (",
+   "page": null,
+   "native": -3.260861,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3))": "gastos con signo",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 83.023374,
+  "expSum": -63.985424,
+  "officialTotalRevenue": 83.023374,
+  "officialTotalExpenses": 63.985423,
+  "officialPAT": 15.77709,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 15.77709,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 83.023374
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 63.985423
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "BRL@2016-12-31",
+  "fx": 3.2591,
+  "source": "market_close",
+  "label": "PTAX de cierre (venda) del Banco Central do Brasil, última rueda hábil antes del cierre (2016-12-30, 2016-12-31 no es día hábil)"
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no hay ninguna liga-temporada de br 2016 cacheada",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding §17)"
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 2,
+  "lineasGasto": 6,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}

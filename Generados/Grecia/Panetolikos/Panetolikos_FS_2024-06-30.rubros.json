@@ -1,0 +1,162 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2024-06-30.md",
+ "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2024-06-30.pdf",
+ "club": "panetolikos",
+ "year": 2024,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:03:32.045Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 16,
+  "notasUsadas": []
+ },
+ "ladoConocido": 14,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2023 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2024",
+   "values": [
+    0.289806
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2023 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2024",
+   "values": [
+    -6.720034
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2023 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2024",
+   "values": [
+    4.412163
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2023 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2024",
+   "values": [
+    -0.58242
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2023 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2024",
+   "values": [
+    -0.054834
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "revenue",
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2023 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2024",
+   "values": [
+    -0.000031
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2023 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2024",
+   "values": [
+    -0.017109
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ### 10. Λοιπά έξοδα και ζημίες",
+   "values": [
+    0.017595
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Φόροι και τέλη",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ### 10. Λοιπά έξοδα και ζημίες",
+   "values": [
+    0.000944
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ### 10. Λοιπά έξοδα και ζημίες",
+   "values": [
+    0.110904
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ### 10. Λοιπά έξοδα και ζημίες",
+   "values": [
+    0.051238
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Κύκλος Εργασιών",
+   "lado": "revenue",
+   "page": 28,
+   "section": "### 9. Κύκλος εργασιών",
+   "values": [
+    0.03006
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Έσοδα από εισιτήρια",
+   "lado": "revenue",
+   "page": 28,
+   "section": "### 9. Κύκλος εργασιών",
+   "values": [
+    258.35775
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Έσοδα από μεταγραφές",
+   "lado": "revenue",
+   "page": 28,
+   "section": "### 9. Κύκλος εργασιών",
+   "values": [
+    31.44781
+   ],
+   "origen": "estado 21"
+  }
+ ]
+}

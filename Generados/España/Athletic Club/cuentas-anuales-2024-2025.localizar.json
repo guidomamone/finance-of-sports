@@ -1,0 +1,22 @@
+{
+ "pdf": "Clubes/España/Athletic Club/cuentas-anuales-2024-2025.pdf",
+ "md": "Clubes/España/Athletic Club/cuentas-anuales-2024-2025.md",
+ "cierre": "2025-06-30",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:48:28.552Z",
+ "paginas_resultados": [
+  4
+ ],
+ "paginas_notas_ingresos": [
+  33
+ ],
+ "paginas_notas_gastos": [
+  32
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales en euros (ej. 7.692.386,44); no hay frase explícita de escala, se infiere unidades (euros y céntimos)",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.06.2025",
+ "perimetro": "individual",
+ "observaciones": "Cuentas anuales individuales del Athletic Club (asociación). La cuenta de pérdidas y ganancias está en pág. 4 (posiblemente continúe en pág. 5 no visible; pág. 5 es estado de cambios en el patrimonio). Nota 21 desglosa ingresos y gastos: 21.3 otros gastos de gestión corriente (pág. 32), 21.5 ingresos accesorios (pág. 33); la nota 21.4 (cifra de negocios) y 21.1-21.2 posiblemente estén en pág. 31-32 pero no se ven completas. La pág. 34 trata personal (22.2), no incluida. Los importes se expresan con céntimos, por lo que la escala es unidades de euro, aunque no hay frase explícita."
+}

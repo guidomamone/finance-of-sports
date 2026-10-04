@@ -1,0 +1,232 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.pdf",
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.md",
+ "generado": "2026-10-03T23:03:05.612Z",
+ "estado": "ok",
+ "clubId": "goias-br",
+ "year": 2013,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.pdf",
+   "campo": "anio",
+   "valor": "2013",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2013-2012' es el ejercicio 2013 con 2012 de comparativo, no 2012.",
+   "evidencia": "fecha de cierre 2013-12-31 leída del contenido (periodo.mjs)",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.pdf",
+   "campo": "cero-real",
+   "valor": "Otras secciones deportivas",
+   "linea": null,
+   "motivo": "Guido 2026-10-03: NO DESGLOSADO, no un 0 real: Goiás tenía esportes olímpicos ese año (notas / cuentas a cobrar), pero el estado de resultados no los separa (van dentro de los ingresos). El ajuste evita un reintento que no puede encontrar el dato.",
+   "evidencia": "demonstracoes-contabeis-2013-2012.md L407 (Esportes olímpicos en contas a receber)",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "51.074726 = 51.074726"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "54.518463 = 54.518463"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2012 de este documento suma ingresos 48.738763; el sitio tiene 48.738764"
+  },
+  {
+   "nombre": "documento del año 2014",
+   "ok": true,
+   "detalle": "ingresos de 2013: 51.074726 en este documento y 51.074726 en demonstracoes-contabeis-2014-2013.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2012",
+   "ok": true,
+   "detalle": "ingresos de 2012: 48.738763 en demonstracoes-contabeis-2012-2011.pdf y 48.738763 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de extraer ya contestada para el club (usar-cuadro-por-segmento, \"RECEITA LÍQUIDA\"): aceptar, en demonstracoes-contabeis-2013-2012.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 51.074726,
+  "gastos": 54.518463,
+  "financiero": -4.049691,
+  "impuesto": 0,
+  "resultadoImpreso": -7.493428,
+  "resultadoParaCargar": -7.493428,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Bilheterias",
+   "lado": "ingreso",
+   "M": 8.41719,
+   "pagina": 18,
+   "linea": 795,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Direitos de transmissão de TV",
+   "lado": "ingreso",
+   "M": 30.648015,
+   "pagina": 18,
+   "linea": 796,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Premiação/participações",
+   "lado": "ingreso",
+   "M": 4.3,
+   "pagina": 18,
+   "linea": 797,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Transação de atletas",
+   "lado": "ingreso",
+   "M": 0.253333,
+   "pagina": 18,
+   "linea": 798,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Patrocínio/ publicidade/propaganda",
+   "lado": "ingreso",
+   "M": 1.839777,
+   "pagina": 18,
+   "linea": 799,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Mensalidades",
+   "lado": "ingreso",
+   "M": 3.535146,
+   "pagina": 18,
+   "linea": 800,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Jogos lotéricos",
+   "lado": "ingreso",
+   "M": 1.928792,
+   "pagina": 18,
+   "linea": 801,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Receitas patrimoniais",
+   "lado": "ingreso",
+   "M": 0.03934,
+   "pagina": 18,
+   "linea": 802,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "Outras receitas",
+   "lado": "ingreso",
+   "M": 4.510592,
+   "pagina": 18,
+   "linea": 803,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "(-) Deduções da receita",
+   "lado": "ingreso",
+   "M": -4.397459,
+   "pagina": 18,
+   "linea": 804,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA\""
+  },
+  {
+   "etiqueta": "(-) Despesas com futebol profissional e amador",
+   "lado": "gasto",
+   "M": 44.649623,
+   "pagina": 6,
+   "linea": 168,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Despesas administrativas",
+   "lado": "gasto",
+   "M": 0.204453,
+   "pagina": 6,
+   "linea": 169,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Materiais",
+   "lado": "gasto",
+   "M": 0.697356,
+   "pagina": 6,
+   "linea": 170,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Serviços de terceiros",
+   "lado": "gasto",
+   "M": 3.262262,
+   "pagina": 6,
+   "linea": 171,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Despesas tributárias",
+   "lado": "gasto",
+   "M": 0.837323,
+   "pagina": 6,
+   "linea": 172,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Despesas gerais",
+   "lado": "gasto",
+   "M": 4.867446,
+   "pagina": 6,
+   "linea": 173,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "(+) Receitas financeiras",
+   "M": 0.07421,
+   "linea": 175
+  },
+  {
+   "etiqueta": "(-) Despesas financeiras",
+   "M": -4.123902,
+   "linea": 176
+  }
+ ],
+ "impuesto": []
+}

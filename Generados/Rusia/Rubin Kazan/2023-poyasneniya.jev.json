@@ -1,0 +1,812 @@
+{
+ "md": "Clubes/Rusia/Rubin Kazan/2023-poyasneniya.md",
+ "generatedAt": "2026-09-30T19:15:49.251Z",
+ "rubrosHuella": "5bc823cda8fdf40dcf5b1d4058a3ee2fec43589f",
+ "rubros": [
+  {
+   "label": "Расходы будущих периодов по текущей хозяйственной деятельности",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 3.9. Расшифровка статьи 1260 «Прочие оборотные активы»",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "other_amortisation",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Амортизация, начисленная на право пользование активом",
+   "lado": null,
+   "page": 13,
+   "section": "Суммы, признанные в отчете о финансовых результатах: / (тыс. руб.)",
+   "choice": "depreciation",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "depreciation",
+     0.77
+    ],
+    [
+     "other_amortisation",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1600
+  },
+  {
+   "label": "Доходы от рекламы и спонсорства",
+   "lado": "revenue",
+   "page": 17,
+   "section": "### 3.15. Доходы и расходы по обычным видам деятельности / #### Выручка и себестоимость по видам деятельности",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1122
+  },
+  {
+   "label": "Доходы от продажи прав на трансляцию",
+   "lado": "revenue",
+   "page": 17,
+   "section": "### 3.15. Доходы и расходы по обычным видам деятельности / #### Выручка и себестоимость по видам деятельности",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1108
+  },
+  {
+   "label": "Процентные расходы по обязательствам по аренде",
+   "lado": "expense",
+   "page": 13,
+   "section": "Суммы, признанные в отчете о финансовых результатах: / (тыс. руб.)",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "Расходы по трансферным, агентским договорам, связанным с приобретением регистраций игроков (в том числе на условиях аренды)",
+   "lado": "expense",
+   "page": 14,
+   "section": "### 3.5. Расшифровка статьи 1210 «Запасы» / ### 3.6. Расшифровка статьи «Расходы будущих периодов»",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "player_amortisation",
+     0.16
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1237
+  },
+  {
+   "label": "Расходы по трансферным, агентским договорам, связанным с приобретением регистраций",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 3.9. Расшифровка статьи 1260 «Прочие оборотные активы»",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "player_amortisation",
+     0.1
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1189
+  },
+  {
+   "label": "Доходы от сдачи в аренду ложи",
+   "lado": "revenue",
+   "page": 17,
+   "section": "### 3.15. Доходы и расходы по обычным видам деятельности / #### Выручка и себестоимость по видам деятельности",
+   "choice": "stadium_other",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "stadium_other",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1092
+  },
+  {
+   "label": "Прочие",
+   "lado": null,
+   "page": 17,
+   "section": "### 3.15. Доходы и расходы по обычным видам деятельности / #### Выручка и себестоимость по видам деятельности",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1483
+  },
+  {
+   "label": "Доходы от продажи билетов и абонементов",
+   "lado": "revenue",
+   "page": 17,
+   "section": "### 3.15. Доходы и расходы по обычным видам деятельности / #### Выручка и себестоимость по видам деятельности",
+   "choice": "matchday_competition",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "matchday_competition",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "season_tickets",
+     0.03
+    ]
+   ],
+   "tokens": 1145
+  },
+  {
+   "label": "Доход от продажи сувенирной продукции и атрибутики",
+   "lado": "revenue",
+   "page": 17,
+   "section": "### 3.15. Доходы и расходы по обычным видам деятельности / #### Выручка и себестоимость по видам деятельности",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1135
+  },
+  {
+   "label": "Материальные затраты",
+   "lado": "expense",
+   "page": 17,
+   "section": "#### Затраты на производство",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Амортизация",
+   "lado": "expense",
+   "page": 17,
+   "section": "#### Затраты на производство",
+   "choice": "other_amortisation",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_amortisation",
+     0.41000000000000003
+    ],
+    [
+     "player_amortisation",
+     0.24
+    ],
+    [
+     "depreciation",
+     0.21
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Отчисления на социальные нужды",
+   "lado": "expense",
+   "page": 17,
+   "section": "#### Затраты на производство",
+   "choice": "wages_squad",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "wages_squad",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Расходы на оплату труда",
+   "lado": "expense",
+   "page": 17,
+   "section": "#### Затраты на производство",
+   "choice": "wages_squad",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "wages_squad",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Прочие затраты",
+   "lado": "expense",
+   "page": 17,
+   "section": "#### Затраты на производство",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "незавершенного производства, готовой продукции и др.",
+   "lado": "expense",
+   "page": 17,
+   "section": "#### Затраты на производство",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Курсовые разницы",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9400000000000001
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 914
+  },
+  {
+   "label": "Проценты к получению",
+   "lado": null,
+   "page": 17,
+   "section": "### 3.16. Прочие доходы и расходы / #### Прочие доходы",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1491
+  },
+  {
+   "label": "Трансферные поступления",
+   "lado": null,
+   "page": 17,
+   "section": "### 3.16. Прочие доходы и расходы / #### Прочие доходы",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1532
+  },
+  {
+   "label": "Бонусы футбольных лиг, участие игроков в сборных",
+   "lado": null,
+   "page": 17,
+   "section": "### 3.16. Прочие доходы и расходы / #### Прочие доходы",
+   "choice": "competition_bonus",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "competition_bonus",
+     0.95
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1528
+  },
+  {
+   "label": "Проценты к уплате",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Восстановление резерва по сомнительным долгам",
+   "lado": null,
+   "page": 17,
+   "section": "### 3.16. Прочие доходы и расходы / #### Прочие доходы",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1592
+  },
+  {
+   "label": "Списание агентских РБП в связи с расторжением контракта",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "other_amortisation",
+     0.12
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Списание трансферных РБП в связи с расторжением контракта",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "player_amortisation",
+     0.32
+    ],
+    [
+     "player_impairment",
+     0.21
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Компенсация по трансферному контракту",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "player_amortisation",
+     0.48
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Компенсация по трансферному контракту на условиях аренды",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.5599999999999999
+    ],
+    [
+     "player_amortisation",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Списание резерва по сомнительным долгам",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Солидарные взносы",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "player_amortisation",
+     0.43
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1159
+  },
+  {
+   "label": "Прочие расходы",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "3. Условный доход (расход) по налогу на прибыль",
+   "lado": "expense",
+   "page": 18,
+   "section": "### 3.17. Расчеты по налогу на прибыль",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "2. Ставка налога на прибыль, %",
+   "lado": "expense",
+   "page": 18,
+   "section": "### 3.17. Расчеты по налогу на прибыль",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "4. Постоянный налоговый расход (доход)",
+   "lado": "expense",
+   "page": 18,
+   "section": "### 3.17. Расчеты по налогу на прибыль",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "8. Текущий налог на прибыль",
+   "lado": "expense",
+   "page": 18,
+   "section": "### 3.17. Расчеты по налогу на прибыль",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "*с возникновением (погашением) временных разниц в отчетном периоде*",
+   "lado": null,
+   "page": 18,
+   "section": "### 3.17. Расчеты по налогу на прибыль",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "other_income",
+     0.06
+    ]
+   ],
+   "tokens": 1564
+  }
+ ]
+}

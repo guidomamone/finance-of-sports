@@ -1,0 +1,98 @@
+{
+  "club": "j-league-todos-los-clubes",
+  "year": 2018,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Japón/_J.League (todos los clubes)/club_doc-2018.md",
+  "generatedAt": "2026-09-30T22:05:42.261Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 2,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 3,
+  "relevantTableCount": 3,
+  "tables": [
+    {
+      "page": 10,
+      "section": "• Ｊ１・Ｊ２・Ｊ３合計で、前年と比較すると営業収益+151億円、営業費用＋141億円であり、 / 拡大均衡となっている / • 当期純利益は、前年並みの10億円黒字となっている / （百万円） / Ｊ１合計                       Ｊ２合計                        Ｊ３合計               Ｊ１+Ｊ２+Ｊ３合計",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "15 販売費および一般管理費 19,164 21,491 +2,327 8,615 9,152 +537 2,189 2,242 +53",
+          "values": [
+            "29,968",
+            "32,885",
+            "+2,917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "16 営業利益 700 2,591 +1,891 895 231 ▲664 ▲ 60 ▲ 227 ▲167",
+          "values": [
+            "1,535",
+            "2,595",
+            "+1,060"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 12,
+      "section": "【Ｊ１・Ｊ２・Ｊ３合計】                                                                    （百万円） / 2016年度      2017年度                         2018年度 / 前年比       成長率                  前年比       成長率 / 営業収益              99,395     110,562   +11,167   111.2%     125,708   +15,146   113.7% ★ / 内スポンサー収入         48,332      51,554    +3,222   106.7%      59,532    +7,978   115.5% ★",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "内入場料収入 18,341 19,319 +978 105.3% 19,251 ▲68",
+          "values": [
+            "99.6%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "内Ｊリーグ配分金 6,225 12,274 +6,049 197.2% 12,938 +664",
+          "values": [
+            "105.4%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 23,
+      "section": "営業利益          ▲ 116 / 経常利益          ▲ 115          したがって左のクラブの場合、債務超過解消には、 / 税引前当期利益       ▲ 115           ① 5,600万円以上の増資 / 法人税および住民税等        1 / 当期純利益（損失）     ▲ 116",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "②",
+          "values": [
+            "5,600万円以上の当期純利益"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "２．貸借対照表 ③",
+          "values": [
+            "増資と利益の合計が5,600万円以上"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/j-league-todos-los-clubes-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"j-league-todos-los-clubes\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

@@ -1,0 +1,1478 @@
+{
+ "md": "Clubes/Noruega/Start/aarsregnskap-2009.md",
+ "generatedAt": "2026-09-30T13:16:03.381Z",
+ "rubros": [
+  {
+   "label": "Forretningsadresse:",
+   "lado": null,
+   "page": 1,
+   "section": "# ÅRSREGNSKAP FOR REGNSKAPSÅRET 2009 - GENERELL INFORMASJON / # Enheten",
+   "choice": "other_income",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "admin_general_expense",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "wages_squad",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "wages_squad",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1481
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "depreciation",
+     0.96
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1562
+  },
+  {
+   "label": "Varekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1510
+  },
+  {
+   "label": "Driftsresultat",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1472
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1479
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.43
+    ],
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 1461
+  },
+  {
+   "label": "Inntekt på andre investeringer",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1489
+  },
+  {
+   "label": "Netto finans",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1529
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.94
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1485
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1480
+  },
+  {
+   "label": "Inntekt på investering i datterselskap og tilknyttet selskap",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "Ordinært resultat etter skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "other_income",
+     0.17
+    ]
+   ],
+   "tokens": 1468
+  },
+  {
+   "label": "Årsresultat",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.85
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1463
+  },
+  {
+   "label": "Medlemsinntekter",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "Årsresultat etter minoritetsinteresser",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "exceptional_items",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1477
+  },
+  {
+   "label": "Tilskudd Cultiva",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "sponsorship_commercial",
+     0.08
+    ],
+    [
+     "education",
+     0.07
+    ]
+   ],
+   "tokens": 1420
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "other_income",
+     0.19
+    ]
+   ],
+   "tokens": 1468
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1531
+  },
+  {
+   "label": "Arrangementsinntekter",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "stadium_other",
+     0.26
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1463
+  },
+  {
+   "label": "Tilskudd NFF/UEFA",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.82
+    ],
+    [
+     "competition_bonus",
+     0.16
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1506
+  },
+  {
+   "label": "Salgsinntekt kiosk med mer",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "stadium_other",
+     0.28
+    ],
+    [
+     "sponsorship_commercial",
+     0.07
+    ]
+   ],
+   "tokens": 1476
+  },
+  {
+   "label": "Resultat håndball, Junior og Senior",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_sports",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_sports",
+     0.74
+    ],
+    [
+     "youth_other_sports_expense",
+     0.16
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1481
+  },
+  {
+   "label": "Egne stevner/arrangement",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "matchday_competition",
+     0.12
+    ],
+    [
+     "stadium_other",
+     0.05
+    ]
+   ],
+   "tokens": 1456
+  },
+  {
+   "label": "Leie markedsrettigheter ST AS",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.91
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "broadcasting",
+     0.03
+    ]
+   ],
+   "tokens": 1459
+  },
+  {
+   "label": "Deltakelse andres arrangement",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "competition_bonus",
+     0.23
+    ],
+    [
+     "match_organisation_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1497
+  },
+  {
+   "label": "Andre ytelser ansatte",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "wages_squad",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "wages_squad",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.3
+    ]
+   ],
+   "tokens": 1476
+  },
+  {
+   "label": "Andre inntekter",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1444
+  },
+  {
+   "label": "Utstyr, lege, fysioter. Etc.",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1474
+  },
+  {
+   "label": "Trening/instruksjon",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "match_organisation_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1515
+  },
+  {
+   "label": "Møter styret og spillere, kurs",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "education_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1466
+  },
+  {
+   "label": "Administrasjonsutgifter",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1471
+  },
+  {
+   "label": "Fremmed tjenester",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.82
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1465
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1448
+  },
+  {
+   "label": "Årsoverskudd",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1480
+  },
+  {
+   "label": "Renteinntekter fra foretak i samme konsern",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1481
+  },
+  {
+   "label": "ordinære avskrivinger",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "depreciation",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "depreciation",
+     0.66
+    ],
+    [
+     "other_amortisation",
+     0.27
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 1492
+  },
+  {
+   "label": "Øvrige driftskostnader",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "Inventar, kontormaskiner og lignende",
+   "lado": null,
+   "page": 6,
+   "section": "# Idrettsklubben Start / # Årsregnskap 2009",
+   "choice": "depreciation",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "depreciation",
+     0.75
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1557
+  },
+  {
+   "label": "Avsatt til egenkapital",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1534
+  },
+  {
+   "label": "Investering i datterselskap",
+   "lado": null,
+   "page": 6,
+   "section": "# Idrettsklubben Start / # Årsregnskap 2009",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1354
+  },
+  {
+   "label": "Lån til foretak i samme konsern",
+   "lado": null,
+   "page": 6,
+   "section": "# Idrettsklubben Start / # Årsregnskap 2009",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1494
+  },
+  {
+   "label": "Fordring på ansatte",
+   "lado": null,
+   "page": 6,
+   "section": "# Idrettsklubben Start / # Årsregnskap 2009",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1463
+  },
+  {
+   "label": "Varer",
+   "lado": null,
+   "page": 6,
+   "section": "# Idrettsklubben Start / # Årsregnskap 2009",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1388
+  },
+  {
+   "label": "Kundefordringer",
+   "lado": null,
+   "page": 6,
+   "section": "# Idrettsklubben Start / # Årsregnskap 2009",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Egenkapital underavdeling",
+   "lado": null,
+   "page": 6,
+   "section": "# Idrettsklubben Start / # Årsregnskap 2009",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.21000000000000002
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1542
+  },
+  {
+   "label": "Fordring Start Toppfotball",
+   "lado": null,
+   "page": 6,
+   "section": "# Idrettsklubben Start / # Årsregnskap 2009",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 1568
+  },
+  {
+   "label": "Bankinnskudd, kontanter og lignende",
+   "lado": null,
+   "page": 6,
+   "section": "# Idrettsklubben Start / # Årsregnskap 2009",
+   "choice": "other_income",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_income",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1526
+  },
+  {
+   "label": "Andre fordringer",
+   "lado": null,
+   "page": 6,
+   "section": "# Idrettsklubben Start / # Årsregnskap 2009",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1441
+  },
+  {
+   "label": "Lønn og bonus",
+   "lado": "expense",
+   "page": 9,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Folketrygdavgift",
+   "lado": "expense",
+   "page": 9,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.78
+    ],
+    [
+     "wages_squad",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Lønnskostnader",
+   "lado": "expense",
+   "page": 9,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "wages_squad",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Årets resultat",
+   "lado": null,
+   "page": 10,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet / # Note 5 Bundne midler / # Note 6 Egenkapital",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "exceptional_items",
+     0.060000000000000005
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Egenkapital 31.12.08",
+   "lado": null,
+   "page": 10,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet / # Note 5 Bundne midler / # Note 6 Egenkapital",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1576
+  },
+  {
+   "label": "Egenkapital 31.12.09",
+   "lado": null,
+   "page": 10,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet / # Note 5 Bundne midler / # Note 6 Egenkapital",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1576
+  },
+  {
+   "label": "Gjennomsnittlig antall årsverk",
+   "lado": "expense",
+   "page": 9,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "wages_squad",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 822
+  },
+  {
+   "label": "Driftsinntekter",
+   "lado": null,
+   "page": 11,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "choice": "lump_football_operations",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.85
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "matchday_competition",
+     0.04
+    ]
+   ],
+   "tokens": 1480
+  },
+  {
+   "label": "Driftskostnader",
+   "lado": null,
+   "page": 11,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "choice": "admin_general_expense",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.46
+    ],
+    [
+     "match_organisation_expense",
+     0.23
+    ],
+    [
+     "lump_football_operations_expense",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Resultat",
+   "lado": null,
+   "page": 11,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ],
+    [
+     "exceptional_items",
+     0.09
+    ]
+   ],
+   "tokens": 1479
+  },
+  {
+   "label": "Finansposter",
+   "lado": null,
+   "page": 11,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "other_income",
+     0.35000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1363
+  },
+  {
+   "label": "Gjeld",
+   "lado": null,
+   "page": 11,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "other_income",
+     0.24000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Eiendeler",
+   "lado": null,
+   "page": 11,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1326
+  },
+  {
+   "label": "Netto eiendeler",
+   "lado": null,
+   "page": 11,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1542
+  }
+ ]
+}

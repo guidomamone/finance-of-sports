@@ -1,0 +1,95 @@
+{
+  "club": "midtjylland-dk",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Dinamarca/FC Midtjylland/aarsrapport-2019-06-30.md",
+  "generatedAt": "2026-09-30T22:43:31.342Z",
+  "numberFormat": "espacio como separador de miles (escandinavo)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 5
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 17,
+      "section": "DKK 1.000 2018/19 2017/18 DKK '000 2018/19 2017/18",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Nettoomsætning 107.921 97.189 Revenue",
+          "values": [
+            "107.921",
+            "97.189"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bruttotab/-fortjeneste 195.907 174.817 Gross profit",
+          "values": [
+            "195.907",
+            "174.817"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat af transferaktivitet 130.434 115.657 Profit from transfer activities",
+          "values": [
+            "130.434",
+            "115.657"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EBITDA 99.071 87.202 EBITDA",
+          "values": [
+            "99.071",
+            "87.202"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat af primær drift 66.461 66.895 Operating profit (EBIT)",
+          "values": [
+            "66.461",
+            "66.895"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets resultat før skat 66.418 66.729 Net profit before tax",
+          "values": [
+            "66.418",
+            "66.729"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "dk",
+    "query": "FC Midtjylland",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 50,
+      "line": "the exchange rates at the dates of transaction."
+    },
+    {
+      "page": 50,
+      "line": "between the exchange rates at the balance sheet"
+    }
+  ],
+  "warnings": []
+}

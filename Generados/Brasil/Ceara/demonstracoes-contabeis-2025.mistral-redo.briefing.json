@@ -1,0 +1,5086 @@
+{
+  "club": "ceara-br",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Ceara/demonstracoes-contabeis-2025.mistral-redo.md",
+  "generatedAt": "2026-09-30T14:17:13.827Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 482,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 46,
+  "relevantTableCount": 8,
+  "tables": [
+    {
+      "page": 12,
+      "section": "# CEARA SPORTING CLUB / CNPJ Nº 07.369.226/0001-03 / # BALANÇO PATRIMONIAL / DOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2025 E 2024",
+      "columns": [
+        "",
+        "Notas Explicativas",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ATIVO CIRCULANTE",
+          "values": [
+            "",
+            "42.848.635,72",
+            "48.493.948,27"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caixa e Equivalentes de Caixa",
+          "values": [
+            "Nota 3",
+            "2.110.419,90",
+            "619.155,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a Receber",
+          "values": [
+            "Nota 4",
+            "36.496.498,20",
+            "45.662.680,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos",
+          "values": [
+            "Nota 5",
+            "2.858.771,97",
+            "1.267.366,65"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Almoxarifado",
+          "values": [
+            "Nota 6",
+            "1.214.556,64",
+            "664.447,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Créditos a Receber",
+          "values": [
+            "",
+            "22.175,57",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos a Recuperar",
+          "values": [
+            "Nota 7",
+            "-",
+            "9.016,73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Antecipadas",
+          "values": [
+            "Nota 8",
+            "146.213,44",
+            "271.281,63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compras para Entrega Futura",
+          "values": [
+            "",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATIVO NÃO CIRCULANTE",
+          "values": [
+            "",
+            "70.112.639,67",
+            "41.225.978,92"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Realizável a Longo Prazo",
+          "values": [
+            "Nota 09",
+            "276.385,72",
+            "474.868,27"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investimentos",
+          "values": [
+            "Nota 10",
+            "13.140.029,33",
+            "13.120.630,60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "Nota 11",
+            "16.851.753,81",
+            "12.413.328,88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "Nota 12",
+            "39.844.470,81",
+            "15.217.151,17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DO ATIVO",
+          "values": [
+            "",
+            "112.961.275,39",
+            "89.719.927,19"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "# CEARA SPORTING CLUB / CNPJ Nº 07.369.226/0001-03 / # BALANÇO PATRIMONIAL / DOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2025 E 2024",
+      "columns": [
+        "",
+        "Notas Explicativas",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "PASSIVO CIRCULANTE",
+          "values": [
+            "",
+            "125.332.391,93",
+            "54.593.326,00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "Nota 13",
+            "6.175.584,71",
+            "2.665.121,87"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e Financiamentos",
+          "values": [
+            "Nota 14",
+            "30.231.893,92",
+            "9.775.343,16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de Imagem a Pagar",
+          "values": [
+            "Nota 15",
+            "2.055.862,59",
+            "800.891,67"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comissões de Agentes a Pagar",
+          "values": [
+            "Nota 16",
+            "2.333.747,99",
+            "1.762.778,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações Trabalhistas e Previdenciárias",
+          "values": [
+            "Nota 17",
+            "63.249.326,69",
+            "22.776.811,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações Tributárias",
+          "values": [
+            "Nota 18",
+            "933.383,54",
+            "130.058,64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos Tributários",
+          "values": [
+            "Nota 19",
+            "10.983.773,36",
+            "1.519.388,07"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações com Clubes",
+          "values": [
+            "Nota 20",
+            "4.125.300,00",
+            "9.584.800,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Contas a Pagar",
+          "values": [
+            "Nota 21",
+            "4.444.284,72",
+            "5.147.903,75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos Recebidos",
+          "values": [
+            "Nota 22",
+            "-",
+            "430.229,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para Contingências",
+          "values": [
+            "",
+            "799.234,41",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PASSIVO NÃO CIRCULANTE",
+          "values": [
+            "",
+            "91.883.941,13",
+            "51.310.358,56"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Empréstimos e Financiamentos",
+          "values": [
+            "Nota 14",
+            "54.500.224,92",
+            "11.849.435,54"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos Tributários",
+          "values": [
+            "Nota 19",
+            "37.383.716,21",
+            "39.460.923,02"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PATRIMÔNIO LÍQUIDO",
+          "values": [
+            "",
+            "(104.255.057,67)",
+            "(16.183.757,37)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Patrimônio Social",
+          "values": [
+            "",
+            "(18.418.507,29)",
+            "(10.481.502,23)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit do Exercício",
+          "values": [
+            "",
+            "(85.836.550,38)",
+            "(5.702.255,14)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASSIVO + PATRIMÔNIO LÍQUIDO",
+          "values": [
+            "",
+            "112.961.275,39",
+            "89.719.927,19"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "# CEARA SPORTING CLUB / CNPJ Nº 07.369.226/0001-03 / DES EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2025 E 2024",
+      "columns": [
+        "",
+        "Notas Explicativas",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "RECEITA OPERACIONAL LIQUIDA",
+          "values": [
+            "Nota 23",
+            "221.545.956,46",
+            "161.925.359,42"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(-) CUSTOS E DESPESAS OPERACIONAIS",
+          "values": [
+            "Nota 24",
+            "(270.769.212,99)",
+            "(148.303.303,98)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Pessoal e Encargos",
+          "values": [
+            "",
+            "(152.006.756,74)",
+            "(80.433.270,99)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gerais e Administrativas",
+          "values": [
+            "",
+            "(88.514.566,60)",
+            "(49.706.888,33)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sócio Torcedor",
+          "values": [
+            "",
+            "(5.176.175,66)",
+            "(2.442.412,90)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jogos e Competições",
+          "values": [
+            "",
+            "(24.677.120,70)",
+            "(15.200.484,19)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributárias",
+          "values": [
+            "",
+            "(394.593,29)",
+            "(500.452,15)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Resultados Operacionais",
+          "values": [
+            "",
+            "-",
+            "(19.795,42)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) SUPERÁVIT OPERACIONAL ANTES DAS RECEITAS E DESPESAS FINANCEIRAS",
+          "values": [
+            "",
+            "(49.223.256,53)",
+            "13.622.055,44"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Receitas Financeiras",
+          "values": [
+            "Nota 25",
+            "1.222.468,50",
+            "674.846,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Financeiras",
+          "values": [
+            "Nota 25",
+            "(37.835.762,35)",
+            "(19.999.156,84)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DÉFICIT DO EXERCÍCIO",
+          "values": [
+            "",
+            "(85.836.550,38)",
+            "(5.702.255,14)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "# CEARA SPORTING CLUB / CNPJ Nº 07.369.226/0001-03 / # DEMONSTRAÇÃO DO RESULTADO ABRANGENTE / DOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2025 E 2024",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "DÉFICIT DO EXERCÍCIO",
+          "values": [
+            "(85.836.550,38)",
+            "(5.702.255,14)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Outros Resultados Abrangentes",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DO RESULTADO ABRANGENTE DO EXERCÍCIO",
+          "values": [
+            "(85.836.550,38)",
+            "(5.702.255,14)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 16,
+      "section": "# CEARA SPORTING CLUB / CNPJ Nº 07.369.226/0001-03 / DEMONSTRAÇÃO DAS MUTAÇÕES DO PATRIMÔNIO LÍQUIDO / DOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2025 E 2024 / (PERÍODO DE 31/DEZ/22 A 31/DEZ/24)",
+      "columns": [
+        "CONTAS",
+        "PATRIMÔNIO SOCIAL",
+        "SUPERÁVIT OU DÉFICIT",
+        "TOTAL GERAL"
+      ],
+      "rows": [
+        {
+          "rawLabel": "SALDOS EM 31/12/23",
+          "values": [
+            "1.125.766,24",
+            "(781.225,50)",
+            "344.540,74"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Incorporação do Déficit ao Patrimônio Social",
+          "values": [
+            "(781.225,50)",
+            "781.225,50",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste no Intangível (ITG 2003 R2)",
+          "values": [
+            "(10.826.042,97)",
+            "",
+            "(10.826.042,97)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit do Exercício",
+          "values": [
+            "",
+            "(5.702.255,14)",
+            "(5.702.255,14)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SALDOS EM 31/12/24",
+          "values": [
+            "(10.481.502,23)",
+            "(5.702.255,14)",
+            "(16.183.757,37)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Incorporação do Déficit ao Patrimônio Social",
+          "values": [
+            "(5.702.255,14)",
+            "5.702.255,14",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Mutações do Patrimônio Líquido",
+          "values": [
+            "(2.234.749,92)",
+            "",
+            "(2.234.749,92)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit do Exercício",
+          "values": [
+            "",
+            "(85.836.550,38)",
+            "(85.836.550,38)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SALDOS EM 31/12/25",
+          "values": [
+            "(18.418.507,29)",
+            "(85.836.550,38)",
+            "(104.255.057,67)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "# CEARA SPORTING CLUB / # CNPJ Nº 07.369.226/0001-03 / DEMONSTRAÇÃO DO FLUXO DE CAIXA - MÉTODO INDIRETO / DOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2025 E 2024",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ATIVIDADES OPERACIONAIS",
+          "values": [
+            "(8.879.908,86)",
+            "19.203.457,08"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit do exercício",
+          "values": [
+            "(85.836.550,38)",
+            "(5.702.255,14)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas/Receitas que não afetam o Caixa",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Depreciação",
+          "values": [
+            "1.213.486,85",
+            "1.203.539,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Amortização",
+          "values": [
+            "4.993.326,84",
+            "11.086.976,05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Baixa Imobilizado",
+          "values": [
+            "15.819,41",
+            "27.564,77"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Baixa Intangível",
+          "values": [
+            "17.428.390,48",
+            "1.782.682,48"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Mutações do Patrimônio Líquido",
+          "values": [
+            "(2.234.749,92)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento)/ Redução no Ativo",
+          "values": [
+            "7.335.059,50",
+            "(3.795.017,22)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento)/ Redução em Contas a Receber",
+          "values": [
+            "9.166.182,01",
+            "(3.172.747,28)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento)/ Redução em Adiantamentos",
+          "values": [
+            "(1.591.405,32)",
+            "(572.635,95)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento)/ Redução em Estoques",
+          "values": [
+            "(550.109,09)",
+            "86.733,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento)/ Redução em Tributos a Recuperar",
+          "values": [
+            "9.016,73",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento)/ Redução em Outros Créditos",
+          "values": [
+            "(22.175,57)",
+            "315.858,24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento)/ Redução em Despesas Antecipadas",
+          "values": [
+            "125.068,19",
+            "(226.827,75)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento)/ Redução em Realizável a Longo Prazo",
+          "values": [
+            "198.482,55",
+            "(225.398,06)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(Redução) no Passivo",
+          "values": [
+            "48.205.308,36",
+            "14.599.966,43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(Redução) Em Fornecedores",
+          "values": [
+            "3.510.462,84",
+            "971.273,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(Redução) Em Direito de Imagem a Pagar",
+          "values": [
+            "1.254.970,92",
+            "464.975,67"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(Redução) Em Comissões de Agentes a Pagar",
+          "values": [
+            "570.969,73",
+            "966.377,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(Redução) Em Obrigações Tributárias",
+          "values": [
+            "803.324,90",
+            "(84.173,84)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(Redução) Em Obrigações Trabalhistas e Previdenciárias",
+          "values": [
+            "40.472.515,43",
+            "8.620.042,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(Redução) Em Parcelamentos Tributários",
+          "values": [
+            "7.387.178,48",
+            "7.552.867,52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(Redução) Em Outras contas a pagar",
+          "values": [
+            "(703.619,03)",
+            "1.652.354,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(Redução) Em obrigações com clubes",
+          "values": [
+            "(5.459.500,00)",
+            "(5.933.980,04)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(Redução) Em Obrigações contratuais ref Dir. Econômicos",
+          "values": [
+            "-",
+            "(40.000,00)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(Redução) Contingências",
+          "values": [
+            "799.234,41",
+            "430.229,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(Redução) Em Adiantamentos Recebidos",
+          "values": [
+            "(430.229,32)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATIVIDADES DE INVESTIMENTOS",
+          "values": [
+            "(52.736.166,88)",
+            "(5.827.982,71)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aquisições de Investimentos",
+          "values": [
+            "(19.398,73)",
+            "(208.742,47)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicações no Imobilizado",
+          "values": [
+            "(5.667.731,19)",
+            "(292.093,28)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicações no Intangível",
+          "values": [
+            "(47.049.036,96)",
+            "(5.327.146,96)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATIVIDADES DE FINANCIAMENTOS",
+          "values": [
+            "63.107.340,14",
+            "(12.815.318,49)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Captação de Empréstimos e Financiamentos",
+          "values": [
+            "151.426.996,07",
+            "91.226.525,98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizações de Empréstimos e Financiamentos",
+          "values": [
+            "(88.319.655,93)",
+            "(104.041.844,47)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VARIAÇÃO DO CAIXA E EQUIVALENTES DE CAIXA",
+          "values": [
+            "1.491.264,40",
+            "560.155,88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo no Início do Período",
+          "values": [
+            "619.155,50",
+            "58.999,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo no Final do Período",
+          "values": [
+            "2.110.419,90",
+            "619.155,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1.491.264,40",
+            "560.155,88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "JOAO PAULO SILVA:61521825300",
+          "values": [
+            "Assinado de forma digital por JOAO PAULO SILVA:61521825300 Dados: 2026.04.30 23:36:36 -03'00'",
+            "LISARB DOS SANTOS REGO MONTEIRO:90198530315"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "Assinado de forma digital por LISARB DOS SANTOS REGO MONTEIRO:90198530315 Dados: 2026.04.30 23:39:14 -03'00'"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "João Paulo Silva CPF 615.218.253-00 Presidente",
+          "values": [
+            "",
+            "Lisarb dos Santos Rego Monteiro CRC CE-026759/O-5 Contador"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "## 1. Contexto operacional / ## 2. Apresentação das demonstrações contábeis e principais práticas contábeis / ### 2.1. Apresentação das Demonstrações Contábeis / #### 2.1.1 Autorização para emissão e divulgação das Demonstrações Contábeis / ### 2.2. Continuidade operacional",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "#### 2.3.2. Caixa e Equivalentes de Caixa / #### 2.3.3. Instrumentos Financeiros / #### 2.3.4. Estoques / #### 2.3.5. Demais contas do ativo circulante / #### 2.3.6. Imobilizado",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "#### 2.3.10.2. Direitos de Transmissão de Jogos / #### 2.3.10.3. Bilheteria / #### 2.3.10.4. Sócio Torcedor / #### 2.3.10.5. Royalties de Produtos Licenciados / #### 2.3.10.6. Contratos de Publicidade e Patrocínio",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "### 2.3.10.7. Venda de Direitos de Participação / ### 2.3.11. Receitas e despesas financeiras / ### 2.3.12. Divulgação das Demonstrações Contábeis / ### 2.3.13. Reconhecimento das Despesas / ## 3. Caixa e equivalentes de caixa",
+      "columns": [
+        "",
+        "2025 (R$)",
+        "2024 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caixa",
+          "values": [
+            "5.004,45",
+            "13.101,38"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos conta movimento",
+          "values": [
+            "826.905,31",
+            "374.592,65"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicações de liquidez imediata",
+          "values": [
+            "1.278.510,14",
+            "231.461,47"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "2.110.419,90",
+            "619.155,50"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": null,
+      "columns": [
+        "",
+        "2025 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "APLICACAO BANCO DO BRASIL CC 76680-1",
+          "values": [
+            "228.221,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APLICACAO BANCO DO BRASIL CC 76721-2",
+          "values": [
+            "317,69"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APLICACAO BRADESCO AG 6282 C: 38854-8",
+          "values": [
+            "1.025.248,63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APLICACAO SANTANDER AG.3132 CC.13014848",
+          "values": [
+            "20.731,95"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APLIC. ITAU - AG: 8527 CC: 39932",
+          "values": [
+            "673,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APLIC. SICREDI",
+          "values": [
+            "735,63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APLIC. PREFEITURA 6051",
+          "values": [
+            "2580,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APLIC. DEBENTURES BRADESCO 38854-8",
+          "values": [
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DAYCOVAL APLICACAO",
+          "values": [
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "1.278.510,14"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / #### 4. Contas a receber",
+      "columns": [
+        "",
+        "",
+        "2025 (R$)",
+        "2024 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Contas a Receber na Venda de Atletas",
+          "values": [
+            "(a)",
+            "24.654.460,00",
+            "8.621.561,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocínios a Receber",
+          "values": [
+            "(b)",
+            "3.847.702,97",
+            "3.330.983,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sócio torcedor a receber",
+          "values": [
+            "(c)",
+            "780,40",
+            "449.788,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Royalties a Receber",
+          "values": [
+            "(d)",
+            "2.130.962,74",
+            "1.230.443,43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bares a receber",
+          "values": [
+            "(i)",
+            "596.334,21",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multa a receber",
+          "values": [
+            "(e)",
+            "271.555,05",
+            "271.555,05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de Participação a Receber - LFF",
+          "values": [
+            "(f)",
+            "-",
+            "31.656.006,94"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bilheteria a receber",
+          "values": [
+            "(g)",
+            "1.275.363,83",
+            "102.341,77"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contratos de camarotes a receber",
+          "values": [
+            "",
+            "52.000,00",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mensalidade da escolinha a receber",
+          "values": [
+            "",
+            "167.125,17",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Produtos licenciados a receber",
+          "values": [
+            "",
+            "79.241,12",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de Transmissão a receber",
+          "values": [
+            "",
+            "3.420.972,71",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "",
+            "36.496.498,20",
+            "45.662.680,21"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "(d) A conta refere-se ao saldo de royalties das lojas franqueadas a receber.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / # 5. Adiantamentos",
+      "columns": [
+        "",
+        "",
+        "2025 (R$)",
+        "2024 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Adiantamentos a Fornecedores",
+          "values": [
+            "(a)",
+            "1.856.508,62",
+            "775.688,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos a Funcionários",
+          "values": [
+            "(b)",
+            "798.062,14",
+            "92.514,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento Direitos de Imagem",
+          "values": [
+            "(c)",
+            "162.359,14",
+            "399.163,74"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos cartão alelo",
+          "values": [
+            "",
+            "41.842,07",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "",
+            "2.858.771,97",
+            "1.267.366,65"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "# 6. Almoxarifado",
+      "columns": [
+        "",
+        "2025 (R$)",
+        "2024 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Almoxarifado",
+          "values": [
+            "1.214.556,64",
+            "664.447,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "1.214.556,64",
+            "664.447,55"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "# 7. Tributos a recuperar",
+      "columns": [
+        "",
+        "2025 (R$)",
+        "2024 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CSRF a recuperar",
+          "values": [
+            "-",
+            "7.516,73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS a Recuperar",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos Diversos a Recuperar",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF A Recuperar",
+          "values": [
+            "-",
+            "1.500,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "-",
+            "9.016,73"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## 8. Despesas Antecipadas / ## 9. Realizável a Longo Prazo",
+      "columns": [
+        "",
+        "2025 (R$)",
+        "2024 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Depósitos Judiciais",
+          "values": [
+            "159.129,26",
+            "118.481,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Consórcios",
+          "values": [
+            "117.256,46",
+            "356.386,56"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "276.385,72",
+            "474.868,27"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 24,
+      "section": "## 10. Investimentos",
+      "columns": [
+        "",
+        "2025 (R$)",
+        "2024 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Centro de Treinamento Esportivo",
+          "values": [
+            "13.091.292,43",
+            "13.091.292,43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SICREDI",
+          "values": [
+            "3.436,76",
+            "2.695,75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Título de Capitalização",
+          "values": [
+            "45.300,14",
+            "26.642,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "13.140.029,33",
+            "13.120.630,60"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "## 11. Imobilizado",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Imobilizado",
+      "columns": [
+        "Custo",
+        "Depreciação a.a",
+        "2024 (R$)",
+        "Adições",
+        "Baixas",
+        "Transferências",
+        "2025 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Imóveis",
+          "values": [
+            "4%",
+            "11.389.439,79",
+            "-",
+            "-",
+            "-",
+            "11.389.439,79"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos Para Processamento",
+          "values": [
+            "20%",
+            "1.048.912,71",
+            "410.713,53",
+            "-",
+            "59.499,70",
+            "1.519.125,94"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinas, Aparelhos e Equipamentos",
+          "values": [
+            "10%",
+            "3.127.527,74",
+            "956.192,45",
+            "(371.174,32)",
+            "(90.729,40)",
+            "3.621.816,47"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Utensílios",
+          "values": [
+            "10%",
+            "926.840,01",
+            "271.764,22",
+            "(6.639,26)",
+            "31.229,70",
+            "1.223.194,67"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "20%",
+            "1.320.680,94",
+            "976.750,00",
+            "-",
+            "-",
+            "2.297.430,94"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "",
+            "17.813.401,19",
+            "2.615.420,20",
+            "(377.813,58)",
+            "-",
+            "20.051.007,81"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 25,
+      "section": null,
+      "columns": [
+        "Depreciação",
+        "Depreciação a.a",
+        "2024 (R$)",
+        "Adições",
+        "Baixas",
+        "Transferências",
+        "2025 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Imóveis",
+          "values": [
+            "4%",
+            "1.491.677,55",
+            "455.577,84",
+            "-",
+            "-",
+            "1.947.255,39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos Para Processamento",
+          "values": [
+            "20%",
+            "667.826,65",
+            "165.665,83",
+            "(1.225,67)",
+            "44.647,44",
+            "876.914,25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinas, Aparelhos e Equipamentos",
+          "values": [
+            "10%",
+            "1.371.665,64",
+            "331.375,69",
+            "-",
+            "(62.146,69)",
+            "1.640.894,64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Utensílios",
+          "values": [
+            "10%",
+            "345.935,16",
+            "102.131,44",
+            "-",
+            "17.499,25",
+            "465.565,85"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "20%",
+            "919.564,49",
+            "158.915,42",
+            "-",
+            "-",
+            "1.078.479,91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "",
+            "4.796.669,49",
+            "1.213.666,22",
+            "(1.225,67)",
+            "-",
+            "6.009.110,04"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": null,
+      "columns": [
+        "Saldo Contábil",
+        "2024",
+        "",
+        "",
+        "2025",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Custo",
+            "Depreciação Acumulada",
+            "Saldo Contábil Líquido",
+            "Custo",
+            "Depreciação Acumulada",
+            "Saldo Contábil Líquido"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imóveis",
+          "values": [
+            "11.389.439,79",
+            "(1.491.677,55)",
+            "9.897.762,24",
+            "11.389.439,79",
+            "(1.947.255,39)",
+            "9.442.184,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos Para Processamento de Dados",
+          "values": [
+            "1.048.912,71",
+            "(667.826,65)",
+            "381.086,06",
+            "1.519.125,94",
+            "(788.165,51)",
+            "730.960,43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinas, Aparelhos e Equipamentos",
+          "values": [
+            "3.127.527,74",
+            "(1.371.665,64)",
+            "1.755.862,10",
+            "3.621.816,47",
+            "(1.764.797,24)",
+            "1.857.019,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Utensílios",
+          "values": [
+            "926.840,01",
+            "(345.935,16)",
+            "580.904,85",
+            "1.223.194,67",
+            "(430.505,69)",
+            "792.688,98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "1.320.680,94",
+            "(919.564,49)",
+            "401.116,45",
+            "2.297.430,94",
+            "(1.078.479,91)",
+            "1.218.951,03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benfeitorias",
+          "values": [
+            "2.809.949,74",
+            "-",
+            "-",
+            "-",
+            "-",
+            "2.809.949,74"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "17.813.401,19",
+            "(4.796.669,49)",
+            "13.016.731,70",
+            "20.051.007,81",
+            "(6.009.203,74)",
+            "16.851.753,81"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "## 12. Intangível",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Intangível",
+      "columns": [
+        "Custo",
+        "2024 (R$)",
+        "Adições",
+        "Baixas",
+        "Transferências",
+        "2025 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Marcas E Patentes",
+          "values": [
+            "21.933,05",
+            "-",
+            "(21.933,05)",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Software",
+          "values": [
+            "16.782,16",
+            "-",
+            "(16.782,16)",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas Formados",
+          "values": [
+            "35.493,21",
+            "-",
+            "(35.493,21)",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos Econômicos",
+          "values": [
+            "26.843.526,45",
+            "15.665.572,36",
+            "(26.494.122,46)",
+            "-",
+            "16.014.976,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "26.917.734,87",
+            "15.665.572,36",
+            "(26.568.330,88)",
+            "-",
+            "16.014.976,35"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 26,
+      "section": null,
+      "columns": [
+        "Amortização",
+        "2024 (R$)",
+        "Adições",
+        "Baixas",
+        "Transferências",
+        "2025 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Marcas E Patentes",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Software",
+          "values": [
+            "16.782,16",
+            "-",
+            "(16.782,16)",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas Formados",
+          "values": [
+            "35.493,21",
+            "-",
+            "(35.493,21)",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos Econômicos",
+          "values": [
+            "11.648.308,34",
+            "7.802.545,67",
+            "(12.077.248,61)",
+            "-",
+            "7.373.605,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "11.700.583,71",
+            "7.802.545,67",
+            "(12.129.523,98)",
+            "-",
+            "7.373.605,40"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": null,
+      "columns": [
+        "Saldo Contábil",
+        "2024",
+        "",
+        "",
+        "2025",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Custo",
+            "Amortização Acumulada",
+            "Saldo Contábil Líquido",
+            "Custo",
+            "Amortização Acumulada",
+            "Saldo Contábil Líquido"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marcas E Patentes",
+          "values": [
+            "21.933,05",
+            "-",
+            "21.933,05",
+            "-",
+            "-",
+            "21.933,05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Software",
+          "values": [
+            "16.782,16",
+            "(16.782,16)",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas Formados",
+          "values": [
+            "35.493,21",
+            "(35.493,21)",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos Econômicos",
+          "values": [
+            "26.843.526,45",
+            "(11.648.308,34)",
+            "15.195.218,11",
+            "16.014.976,35",
+            "(7.373.605,40)",
+            "8.641.370,92"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recompra",
+          "values": [
+            "31.656.006,94",
+            "-",
+            "-",
+            "-",
+            "(474.840,10)",
+            "31.181.166,84"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "58.573.741,81",
+            "(11.700.583,71)",
+            "15.217.151,16",
+            "16.014.976,35",
+            "(7.848.445,50)",
+            "39.844.470,81"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Intangível (% Direitos Econômicos)",
+      "columns": [
+        "Percentual",
+        "Categoria",
+        "",
+        "2025"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Base",
+            "Profissional",
+            "TOTAL"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "até 30%",
+          "values": [
+            "-",
+            "15",
+            "15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31% a 50%",
+          "values": [
+            "2",
+            "14",
+            "16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "51% a 80%",
+          "values": [
+            "18",
+            "9",
+            "27"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "81% a 99%",
+          "values": [
+            "1",
+            "1",
+            "2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "100%",
+          "values": [
+            "105",
+            "10",
+            "115"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "126",
+            "49",
+            "175"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "### 13. Fornecedores / ### 14. Empréstimos e Financiamentos",
+      "columns": [
+        "",
+        "2025 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Empréstimo Capital de Giro - Bradesco",
+          "values": [
+            "493.531,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimo Banco - Daycoval",
+          "values": [
+            "489.957,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos de Terceiros (a)",
+          "values": [
+            "54.500.224,92"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos – Valer Fundo de Invest (b)",
+          "values": [
+            "11.428.647,25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos - STARS",
+          "values": [
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMPRESTIMO - ALFA AMERICA SECURITIZADORA",
+          "values": [
+            "460.599,48"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMPRESTIMO - DDR COBRANCAS",
+          "values": [
+            "632.219,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMPRESTIMO - FUNDO DE INVESTIMENTOS CRED",
+          "values": [
+            "67.483,43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMPRESTIMO - GERA SECURITZADORA",
+          "values": [
+            "1.818.894,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMPRESTIMO - LPM SECURITIZADORA",
+          "values": [
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMPRESTIMO - MARTINS SECURITZADORA",
+          "values": [
+            "2.240.560,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMPRESTIMO - QI SOCIEDADE DE CREDITO DIR",
+          "values": [
+            "12.600.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Conta Garantida ag: 682 cc: 38854-8",
+          "values": [
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "84.732.118,84"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "30.231.893,92"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Não Circulante",
+          "values": [
+            "54.500.224,92"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "GLORIAS / CEARÁ SPORTING CLUB / #### 15. Direitos de Imagem a Pagar / #### 16. Comissões de Agentes a Pagar / #### 17. Obrigações Trabalhistas e Previdenciárias",
+      "columns": [
+        "",
+        "2025 (R$)",
+        "2024 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Obrigações Trabalhistas",
+          "values": [
+            "2.609.346,06",
+            "1.293.411,66"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Salários e Ordenados A Pagar",
+          "values": [
+            "1.013.103,73",
+            "716.513,39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensão alimentícia a repassar",
+          "values": [
+            "646,10",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rescisão de Contrato de Trabalho",
+          "values": [
+            "128.547,94",
+            "377.546,79"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13º Salário a Pagar",
+          "values": [
+            "228.151,51",
+            "98.056,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Férias a Pagar",
+          "values": [
+            "1.238.896,78",
+            "101.295,27"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Encargos Sociais",
+          "values": [
+            "38.079.201,64",
+            "9.652.157,87"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "INSS a recolher",
+          "values": [
+            "6.497.505,80",
+            "1.370.314,37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS a recolher",
+          "values": [
+            "9.792.191,43",
+            "5.819.905,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS Rescisório a recolher",
+          "values": [
+            "237.604,62",
+            "120.023,87"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF s/ Trabalho Assalariado a Recolher",
+          "values": [
+            "21.551.899,79",
+            "2.341.914,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões",
+          "values": [
+            "2.927.373,01",
+            "1.297.016,54"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Provisão de férias",
+          "values": [
+            "2.603.944,56",
+            "1.152.903,59"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão INSS sobre férias",
+          "values": [
+            "117.176,66",
+            "51.880,66"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "11",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "POR UM / FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB",
+      "columns": [
+        "Provisão FGTS sobre férias",
+        "206.251,79",
+        "92.232,29"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Compromissos Legais Relacionados a Contratos",
+          "values": [
+            "19.633.405,98",
+            "10.534.225,19"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Luvas de Atletas",
+          "values": [
+            "284.127,50",
+            "358.800,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações Contratuais Ref. Direitos Econômicos",
+          "values": [
+            "11.092.614,42",
+            "1.981.635,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos Rescisórios e Distratos",
+          "values": [
+            "5.814.905,12",
+            "7.436.414,88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos Trabalhistas",
+          "values": [
+            "2.441.758,94",
+            "757.375,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "63.249.326,69",
+            "22.776.811,26"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "#### 18. Obrigações Tributárias",
+      "columns": [
+        "",
+        "2025 (R$)",
+        "2024 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "INSS Retido a Recolher",
+          "values": [
+            "97.107,29",
+            "47.894,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF Retido a Recolher",
+          "values": [
+            "100.284,04",
+            "29.107,44"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ISS Retido a Recolher",
+          "values": [
+            "327.470,82",
+            "15.668,16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PIS/COFINS/CSL a Recolher",
+          "values": [
+            "408.521,39",
+            "37.388,98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "933.383,54",
+            "130.058,64"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "#### 19. Parcelamentos Tributários",
+      "columns": [
+        "",
+        "2025 (R$)",
+        "2024 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Previdenciários",
+          "values": [
+            "2.381.625,18",
+            "2.485.259,73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros parcelamentos federais",
+          "values": [
+            "(a) 45.985.864,59 (b)",
+            "38.495.051,36"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juros a apropriar",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "48.367.489,77",
+            "40.980.311,09"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "10.983.773,56",
+            "1.519.388,07"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Não Circulante",
+          "values": [
+            "37.383.716,21",
+            "39.460.923,02"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": "CEARÁ SPORTING CLUB / ## 20. Obrigações com Clubes / ## 21. Outras contas a pagar / ## 22. Adiantamentos Recebidos / ## 23. Receita Operacional Líquida",
+      "columns": [
+        "RECEITAS",
+        "Futebol Profissional",
+        "Adm, Clube Social e esportes amadores",
+        "2025 (R$)",
+        "Futebol Profissional",
+        "Adm, Clube Social e esportes amadores",
+        "2024 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Direitos de Transmissão e Premiações",
+          "values": [
+            "106.093.516,17",
+            "-",
+            "106.093.516,17",
+            "22.117.116,36",
+            "-",
+            "22.117.116,36"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Direitos de Transmissão",
+          "values": [
+            "100.159.016,17",
+            "-",
+            "100.159.016,17",
+            "17.856.856,89",
+            "-",
+            "17.856.856,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiações",
+          "values": [
+            "5.934.500,00",
+            "-",
+            "5.934.500,00",
+            "4.260.259,47",
+            "-",
+            "4.260.259,47"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bilheteria",
+          "values": [
+            "23.894.943,56",
+            "31.078,31",
+            "23.926.021,87",
+            "17.141.999,26",
+            "59.955,95",
+            "17.201.955,21"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bilheteria – jogos",
+          "values": [
+            "17.905.034,50",
+            "31.078,31",
+            "17.936.112,81",
+            "12.499.521,59",
+            "45.055,00",
+            "12.544.576,59"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estacionamento, bares, camarotes",
+          "values": [
+            "5.989.909,06",
+            "-",
+            "5.989.909,06",
+            "4.642.477,67",
+            "14.900,95",
+            "4.657.378,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocínio/Marketing",
+          "values": [
+            "37.340.093,66",
+            "3.396.089,55",
+            "40.736.183,21",
+            "16.728.127,11",
+            "3.501.013,78",
+            "20.229.140,89"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Patrocínio",
+          "values": [
+            "22.328.363,25",
+            "173.581,44",
+            "22.501.944,69",
+            "15.072.877,11",
+            "1.391.423,46",
+            "16.464.300,57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Royalties e Licenciamento",
+          "values": [
+            "-",
+            "3.222.508,11",
+            "3.222.508,11",
+            "-",
+            "2.092.414,45",
+            "2.092.414,45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas com publicidade",
+          "values": [
+            "15.011.730,41",
+            "-",
+            "15.011.730,41",
+            "1.655.250,00",
+            "17.175,87",
+            "1.672.425,87"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Programa de Sócio Torcedor",
+          "values": [
+            "23.171.910,88",
+            "-",
+            "23.171.910,88",
+            "22.851.556,10",
+            "-",
+            "22.851.556,10"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Negotiação de atletas",
+          "values": [
+            "56.083.248,84",
+            "500.000,00",
+            "56.583.248,84",
+            "18.292.926,42",
+            "750.000,00",
+            "19.042.926,42"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Receitas Patrimoniais / Sociais",
+          "values": [
+            "-",
+            "893.102,24",
+            "893.102,24",
+            "-",
+            "667.337,29",
+            "667.337,29"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Escolinha/Fábrica de craques",
+          "values": [
+            "-",
+            "541.358,26",
+            "541.358,26",
+            "-",
+            "493.859,99",
+            "493.859,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas patrimoniais",
+          "values": [
+            "-",
+            "351.743,98",
+            "351.743,98",
+            "-",
+            "173.477,30",
+            "173.477,30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demais Receitas",
+          "values": [
+            "2.533.148,29",
+            "1.005.447,86",
+            "3.538.596,15",
+            "2.468.580,37",
+            "218.117,26",
+            "2.686.697,63"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Timemaria",
+          "values": [
+            "43.132,17",
+            "-",
+            "43.132,17",
+            "433.644,49",
+            "-",
+            "433.644,49"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Convênio Enel",
+          "values": [
+            "19.400,43",
+            "-",
+            "19.400,43",
+            "20.768,08",
+            "-",
+            "20.768,08"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas com Eventos",
+          "values": [
+            "747.285,57",
+            "38.066,00",
+            "785.351,57",
+            "99.077,57",
+            "3.000,00",
+            "102.077,57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas",
+          "values": [
+            "1.723.330,12",
+            "290.401,28",
+            "2.013.731,40",
+            "4.563,91",
+            "215.117,26",
+            "219.681,17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fomento CBF",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "1.910.526,32",
+            "-",
+            "1.910.526,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lei do incentivo ao esporte",
+          "values": [
+            "-",
+            "676.980,58",
+            "676.980,58",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venda de direitos de participação",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "60.119.065,78",
+            "-",
+            "60.119.065,78"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RECEITA BRUTA",
+          "values": [
+            "249.116.861,40",
+            "5.825.717,96",
+            "254.942.579,36",
+            "159.719.371,40",
+            "5.196.424,28",
+            "164.915.795,68"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(-)Impostos",
+          "values": [
+            "(5.203.031,34)",
+            "(147.648,39)",
+            "(5.350.679,73)",
+            "(1.279.510,91)",
+            "(18.959,02)",
+            "(1.298.469,93)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-)Direito de arena",
+          "values": [
+            "(4.161.794,41)",
+            "-",
+            "(4.161.794,41)",
+            "(732.607,20)",
+            "-",
+            "(732.607,20)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-)Outras deduções (a)",
+          "values": [
+            "(23.884.148,76)",
+            "-",
+            "(23.884.148,76)",
+            "(959.352,39)",
+            "(6,74)",
+            "(959.359,13)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) DEDUÇÕES",
+          "values": [
+            "(33.248.974,51)",
+            "(147.648,39)",
+            "(33.396.622,90)",
+            "(2.971.470,50)",
+            "(18.965,76)",
+            "(2.990.436,26)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RECEITA LÍQUIDA",
+          "values": [
+            "215.867.886,89",
+            "5.678.069,57",
+            "221.545.956,46",
+            "156.747.900,90",
+            "5.177.458,52",
+            "161.925.359,42"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 30,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / # 24. Custos e despesas operacionais",
+      "columns": [
+        "DESPESAS",
+        "Futebol Profissional",
+        "Adm. Clube Social e esportes amadores",
+        "2025 (R$)",
+        "Futebol Profissional",
+        "Adm. Clube Social e esportes amadores",
+        "2024 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Pessoal e Encargos",
+          "values": [
+            "137.214.059,32",
+            "14.792.697,42",
+            "152.006.756,74",
+            "64.872.348,53",
+            "15.560.922,46",
+            "80.433.270,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gerais e Administrativas",
+          "values": [
+            "60.649.400,93",
+            "21.658.205,32",
+            "82.307.606,25",
+            "23.877.732,93",
+            "13.538.639,64",
+            "37.416.372,57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiais e Manutenção",
+          "values": [
+            "4.996.122,49",
+            "6.800.612,52",
+            "11.796.735,01",
+            "2.981.268,73",
+            "3.661.119,89",
+            "6.642.388,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de Terceiros",
+          "values": [
+            "6.930.009,96",
+            "10.416.071,91",
+            "17.346.081,87",
+            "8.577.913,13",
+            "7.016.103,58",
+            "15.594.016,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gerais",
+          "values": [
+            "8.946.901,91",
+            "4.441.520,89",
+            "13.388.422,80",
+            "3.761.757,29",
+            "2.861.416,17",
+            "6.623.173,46"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custos gerais com negociação de atletas",
+          "values": [
+            "39.776.366,57",
+            "-",
+            "39.776.366,57",
+            "8.556.793,78",
+            "-",
+            "8.556.793,78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação e Amortizações",
+          "values": [
+            "4.993.326,84",
+            "1.213.486,85",
+            "6.206.813,69",
+            "11.086.976,05",
+            "1.203.539,71",
+            "12.290.515,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação",
+          "values": [
+            "-",
+            "1.213.486,85",
+            "1.213.486,85",
+            "-",
+            "1.203.539,71",
+            "1.203.539,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizações - Direitos Econômicos",
+          "values": [
+            "4.518.486,74",
+            "-",
+            "4.518.486,74",
+            "11.086.976,05",
+            "-",
+            "11.086.976,05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizações - Recompra dos Direitos",
+          "values": [
+            "474.840,10",
+            "-",
+            "474.840,10",
+            "14.107.727,90",
+            "1.092.756,29",
+            "15.200.484,19"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jogos e Competições",
+          "values": [
+            "(a) 22.463.954,78",
+            "2.213.165,92",
+            "24.677.120,70",
+            "2.442.412,90",
+            "-",
+            "2.442.412,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas programa de Sócio Torcedor",
+          "values": [
+            "5.176.175,66",
+            "-",
+            "5.176.175,66",
+            "58.202,45",
+            "442.249,70",
+            "500.452,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com Tributos",
+          "values": [
+            "97.276,16",
+            "297.317,13",
+            "394.593,29",
+            "-",
+            "19.795,42",
+            "19.795,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Resultados Operacionais",
+          "values": [
+            "-",
+            "146,66",
+            "146,66",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CUSTOS E DESPESAS OPERACIONAIS",
+          "values": [
+            "230.594.193,69",
+            "40.175.019,30",
+            "270.769.212,99",
+            "116.445.400,76",
+            "31.857.903,22",
+            "148.303.303,98"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 31,
+      "section": "# 25. Receitas e Despesas financeiras",
+      "columns": [
+        "",
+        "2025 (R$)",
+        "2024 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Resultado Financeiro",
+          "values": [
+            "36.613.293,85",
+            "19.324.310,58"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Receitas Financeiras",
+          "values": [
+            "1.222.468,50",
+            "674.846,26"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Descontos Obtidos",
+          "values": [
+            "1.065.043,07",
+            "348.339,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juros Ativos",
+          "values": [
+            "39.010,55",
+            "2.016,48"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rendimento de Aplicações Financeiras",
+          "values": [
+            "25.443,54",
+            "1.028,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variação Cambial Ativas",
+          "values": [
+            "92.971,34",
+            "323.461,75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Financeiras",
+          "values": [
+            "37.835.762,35",
+            "19.999.156,84"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Descontos Concedidos",
+          "values": [
+            "1.221.807,00",
+            "27.310,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Bancárias",
+          "values": [
+            "165.423,88",
+            "386.604,34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com Câmbio Financeiro",
+          "values": [
+            "982.996,82",
+            "752.216,73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juros",
+          "values": [
+            "(a) 30.888.123,80",
+            "16.591.401,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas",
+          "values": [
+            "(b) 4.069.353,04",
+            "1.526.810,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxa de Administração do Cartão",
+          "values": [
+            "13.057,53",
+            "96.310,03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variação Cambial Passiva",
+          "values": [
+            "495.000,28",
+            "618.503,64"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 31,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "POR UM / FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB",
+      "columns": [
+        "Descrição",
+        "Valor (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Provável",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ações Cíveis",
+          "values": [
+            "584.018,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ações Trabalhistas",
+          "values": [
+            "215.215,69"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "799.234,41"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Possível",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ações Cíveis",
+          "values": [
+            "19.570,57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ações Trabalhistas",
+          "values": [
+            "6.213.090,17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "6.232.660,74"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club · CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "REGO / MONTEIRO:90198530315 / LISARB DOS SANTOS REGO / MONTEIRO:90198530315 / CRC CE-026759/O-5",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ceará Sporting Club - CNPJ",
+          "values": [
+            "07.369.226/0001-03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Major Weyne, 1040 - Porangabuçu - CEP",
+          "values": [
+            "60.425-782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 12,
+      "section": "# CEARA SPORTING CLUB / CNPJ Nº 07.369.226/0001-03 / # BALANÇO PATRIMONIAL / DOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2025 E 2024",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DO ATIVO",
+      "target": "112.961.275,39",
+      "addendCount": 10,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "# CEARA SPORTING CLUB / CNPJ Nº 07.369.226/0001-03 / # BALANÇO PATRIMONIAL / DOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2025 E 2024",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL DO ATIVO",
+      "target": "89.719.927,19",
+      "addendCount": 10,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 13,
+      "section": "# CEARA SPORTING CLUB / CNPJ Nº 07.369.226/0001-03 / # BALANÇO PATRIMONIAL / DOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2025 E 2024",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PASSIVO + PATRIMÔNIO LÍQUIDO",
+      "target": "112.961.275,39",
+      "addendCount": 14,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 13,
+      "section": "# CEARA SPORTING CLUB / CNPJ Nº 07.369.226/0001-03 / # BALANÇO PATRIMONIAL / DOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2025 E 2024",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL PASSIVO + PATRIMÔNIO LÍQUIDO",
+      "target": "89.719.927,19",
+      "addendCount": 14,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "# CEARA SPORTING CLUB / CNPJ Nº 07.369.226/0001-03 / # DEMONSTRAÇÃO DO RESULTADO ABRANGENTE / DOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2025 E 2024",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL DO RESULTADO ABRANGENTE DO EXERCÍCIO",
+      "target": "(85.836.550,38)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "# CEARA SPORTING CLUB / CNPJ Nº 07.369.226/0001-03 / # DEMONSTRAÇÃO DO RESULTADO ABRANGENTE / DOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2025 E 2024",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL DO RESULTADO ABRANGENTE DO EXERCÍCIO",
+      "target": "(5.702.255,14)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "### 2.3.10.7. Venda de Direitos de Participação / ### 2.3.11. Receitas e despesas financeiras / ### 2.3.12. Divulgação das Demonstrações Contábeis / ### 2.3.13. Reconhecimento das Despesas / ## 3. Caixa e equivalentes de caixa",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "2.110.419,90",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "### 2.3.10.7. Venda de Direitos de Participação / ### 2.3.11. Receitas e despesas financeiras / ### 2.3.12. Divulgação das Demonstrações Contábeis / ### 2.3.13. Reconhecimento das Despesas / ## 3. Caixa e equivalentes de caixa",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "619.155,50",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "1.278.510,14",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "-0.3300000000745058"
+    },
+    {
+      "page": 22,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / #### 4. Contas a receber",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "36.496.498,20",
+      "addendCount": 11,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / #### 4. Contas a receber",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "target": "45.662.680,21",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / # 5. Adiantamentos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "2.858.771,97",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / # 5. Adiantamentos",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "target": "1.267.366,65",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "# 6. Almoxarifado",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "1.214.556,64",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "# 6. Almoxarifado",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "664.447,55",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "# 7. Tributos a recuperar",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "9.016,73",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## 8. Despesas Antecipadas / ## 9. Realizável a Longo Prazo",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "276.385,72",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## 8. Despesas Antecipadas / ## 9. Realizável a Longo Prazo",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "474.868,27",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "## 10. Investimentos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "13.140.029,33",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "## 10. Investimentos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "13.120.630,60",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Imobilizado",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "17.813.401,19",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Imobilizado",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "target": "2.615.420,20",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Imobilizado",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "(377.813,58)",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Imobilizado",
+      "likelyRelevant": true,
+      "column": 5,
+      "totalLabel": "TOTAL",
+      "target": "20.051.007,81",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "4.796.669,49",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "target": "1.213.666,22",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "(1.225,67)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "TOTAL",
+      "target": "6.009.110,04",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 7 valor(es) del segmento no parecen números (ej. \"Custo\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 25,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 6 valor(es) del segmento no parecen números (ej. \"Depreciação Acumulada\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 25,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 6 valor(es) del segmento no parecen números (ej. \"Saldo Contábil Líquido\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 25,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 6 valor(es) del segmento no parecen números (ej. \"Custo\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 25,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 6 valor(es) del segmento no parecen números (ej. \"Depreciação Acumulada\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 25,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 7 valor(es) del segmento no parecen números (ej. \"Saldo Contábil Líquido\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 26,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Intangível",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "26.917.734,87",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 26,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Intangível",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "15.665.572,36",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 26,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Intangível",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "target": "(26.568.330,88)",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 26,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Intangível",
+      "likelyRelevant": true,
+      "column": 4,
+      "totalLabel": "TOTAL",
+      "target": "16.014.976,35",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 26,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "11.700.583,71",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 26,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "7.802.545,67",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 26,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "target": "(12.129.523,98)",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 26,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "TOTAL",
+      "target": "7.373.605,40",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 26,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 6 valor(es) del segmento no parecen números (ej. \"Custo\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 26,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"Amortização Acumulada\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 26,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 3 valor(es) del segmento no parecen números (ej. \"Saldo Contábil Líquido\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 26,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"Custo\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 26,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 3 valor(es) del segmento no parecen números (ej. \"Amortização Acumulada\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 26,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"Saldo Contábil Líquido\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 27,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Intangível (% Direitos Econômicos)",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 5 valor(es) del segmento no parecen números (ej. \"Base\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 27,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Intangível (% Direitos Econômicos)",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 6 valor(es) del segmento no parecen números (ej. \"Profissional\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 27,
+      "section": "FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB / ## Intangível (% Direitos Econômicos)",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 6 valor(es) del segmento no parecen números (ej. \"TOTAL\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 27,
+      "section": "### 13. Fornecedores / ### 14. Empréstimos e Financiamentos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "84.732.118,84",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "POR UM / FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "63.249.326,69",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-23982514.730000004"
+    },
+    {
+      "page": 29,
+      "section": "POR UM / FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "22.776.811,26",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-1708360.8800000027"
+    },
+    {
+      "page": 29,
+      "section": "#### 18. Obrigações Tributárias",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "933.383,54",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "#### 18. Obrigações Tributárias",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "130.058,64",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "#### 19. Parcelamentos Tributários",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"(a) 45.985.864,59 (b)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 29,
+      "section": "#### 19. Parcelamentos Tributários",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "40.980.311,09",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "POR UM / FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "799.234,41",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "POR UM / FUTURO / COBERTO DE / GLORIAS / CEARÁ SPORTING CLUB",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "6.232.660,74",
+      "addendCount": 2,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 74,
+    "results": [
+      {
+        "label": "DÉFICIT DO EXERCÍCIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DÉFICIT DO EXERCÍCIO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros Resultados Abrangentes",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros Resultados Abrangentes",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Outros Resultados Operacionais",
+        "similarity": 50
+      },
+      {
+        "label": "Caixa",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Caixa",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bancos conta movimento",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bancos conta movimento",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aplicações de liquidez imediata",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aplicações de liquidez imediata",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depósitos Judiciais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depósitos Judiciais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Consórcios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Consórcios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Imóveis",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Imóveis",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipamentos Para Processamento",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipamentos Para Processamento",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Maquinas, Aparelhos e Equipamentos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Maquinas, Aparelhos e Equipamentos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Móveis e Utensílios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Móveis e Utensílios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Veículos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Veículos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Marcas E Patentes",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Marcas E Patentes",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Software",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Software",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas Formados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas Formados",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direitos Econômicos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direitos Econômicos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Amortizações — Direitos Econômicos",
+        "similarity": 67
+      },
+      {
+        "label": "Direitos de Transmissão e Premiações",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "broadcasting",
+        "matchedLabel": "Direitos de Transmissão",
+        "similarity": 67
+      },
+      {
+        "label": "Direitos de Transmissão e Premiações",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direitos de Transmissão",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Direitos de Transmissão",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Direitos de Transmissão",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Premiações",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "competition_bonus",
+        "matchedLabel": "Premiações",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Premiações",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bilheteria",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "matchday_competition",
+        "matchedLabel": "Bilheteria — jogos",
+        "similarity": 50
+      },
+      {
+        "label": "Bilheteria",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bilheteria – jogos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Bilheteria — jogos",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Bilheteria – jogos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Estacionamento, bares, camarotes",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "stadium_other",
+        "matchedLabel": "Estacionamento, bares, camarotes",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Estacionamento, bares, camarotes",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrocínio/Marketing",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Patrocínio",
+        "similarity": 50
+      },
+      {
+        "label": "Patrocínio/Marketing",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrocínio",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Patrocínio",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Patrocínio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Royalties e Licenciamento",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Royalties e Licenciamento",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Royalties e Licenciamento",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras receitas com publicidade",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Outras receitas com publicidade",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Outras receitas com publicidade",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Programa de Sócio Torcedor",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "member_dues",
+        "matchedLabel": "Programa de Sócio Torcedor",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Programa de Sócio Torcedor",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Despesas programa de Sócio Torcedor",
+        "similarity": 75
+      },
+      {
+        "label": "Negotiação de atletas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Negotiação de atletas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas Patrimoniais / Sociais",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras receitas patrimoniais",
+        "similarity": 50
+      },
+      {
+        "label": "Receitas Patrimoniais / Sociais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Escolinha/Fábrica de craques",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "youth_football",
+        "matchedLabel": "Escolinha/Fábrica de craques",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Escolinha/Fábrica de craques",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras receitas patrimoniais",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Outras receitas patrimoniais",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Outras receitas patrimoniais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Demais Receitas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Demais Receitas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Timemaria",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Timemaria",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Convênio Enel",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Convênio Enel",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Convênio Enel",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas com Eventos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Receitas com Eventos",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Receitas com Eventos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras receitas",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Outras receitas",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Outras receitas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fomento CBF",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Fomento CBF",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Fomento CBF",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Lei do incentivo ao esporte",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Lei do incentivo ao esporte",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Lei do incentivo ao esporte",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Venda de direitos de participação",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Venda de direitos de participação (LFF)",
+        "similarity": 75
+      },
+      {
+        "label": "Venda de direitos de participação",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECEITA BRUTA",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "(-) Impostos (dedução da receita bruta)",
+        "similarity": 50
+      },
+      {
+        "label": "RECEITA BRUTA",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-)Impostos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-)Impostos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-)Direito de arena",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-)Direito de arena",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-)Outras deduções (a)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "(-) Outras deduções da receita bruta",
+        "similarity": 50
+      },
+      {
+        "label": "(-)Outras deduções (a)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) DEDUÇÕES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) DEDUÇÕES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECEITA LÍQUIDA",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECEITA LÍQUIDA",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pessoal e Encargos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pessoal e Encargos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Pessoal e Encargos — Futebol Profissional",
+        "similarity": 50
+      },
+      {
+        "label": "Gerais e Administrativas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gerais e Administrativas",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gerais",
+        "similarity": 50
+      },
+      {
+        "label": "Materiais e Manutenção",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Materiais e Manutenção",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Materiais e Manutenção",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Serviços de Terceiros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços de Terceiros",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Serviços de Terceiros",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Gerais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gerais",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gerais",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Custos gerais com negociação de atletas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Custos gerais com negociação de atletas",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "player_amortisation",
+        "matchedLabel": "Custos gerais com negociação de atletas",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Depreciação e Amortizações",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciação e Amortizações",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "depreciation",
+        "matchedLabel": "Depreciação",
+        "similarity": 50
+      },
+      {
+        "label": "Depreciação",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciação",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "depreciation",
+        "matchedLabel": "Depreciação",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Amortizações - Direitos Econômicos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizações - Direitos Econômicos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "player_amortisation",
+        "matchedLabel": "Amortizações — Direitos Econômicos",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Amortizações - Recompra dos Direitos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizações - Recompra dos Direitos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_amortisation",
+        "matchedLabel": "Amortizações — Recompra dos Direitos (LFF)",
+        "similarity": 80
+      },
+      {
+        "label": "Jogos e Competições",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Jogos e Competições",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Jogos e Competições",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Despesas programa de Sócio Torcedor",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "member_dues",
+        "matchedLabel": "Programa de Sócio Torcedor",
+        "similarity": 75
+      },
+      {
+        "label": "Despesas programa de Sócio Torcedor",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Despesas programa de Sócio Torcedor",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Despesas com Tributos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com Tributos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Despesas com Tributos",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Outros Resultados Operacionais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros Resultados Operacionais",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Outros Resultados Operacionais",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "CUSTOS E DESPESAS OPERACIONAIS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CUSTOS E DESPESAS OPERACIONAIS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado Financeiro",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado Financeiro",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas Financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas Financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Descontos Obtidos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Descontos Obtidos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros Ativos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros Ativos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Rendimento de Aplicações Financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Rendimento de Aplicações Financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variação Cambial Ativas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variação Cambial Ativas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas Financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas Financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Descontos Concedidos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Descontos Concedidos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas Bancárias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas Bancárias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com Câmbio Financeiro",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com Câmbio Financeiro",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Multas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Multas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Taxa de Administração do Cartão",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Taxa de Administração do Cartão",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variação Cambial Passiva",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variação Cambial Passiva",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Ceará",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "3 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "16 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

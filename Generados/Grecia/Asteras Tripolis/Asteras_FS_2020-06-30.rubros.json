@@ -1,0 +1,422 @@
+{
+ "md": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2020-06-30.md",
+ "pdf": "Clubes/Grecia/Asteras Tripolis/Asteras_FS_2020-06-30.pdf",
+ "club": "asteras-tripolis",
+ "year": 2020,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:02:04.702Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 53,
+  "notasUsadas": []
+ },
+ "ladoConocido": 40,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 19,
+   "section": "[LOGO] / # 4. Κατάσταση Αποτελεσμάτων κατά λειτουργία της “ΑΓΣ ΑΣΤΕΡΑΣ ΤΡΙΠΟΛΗΣ ΠΑΕ”",
+   "values": [
+    1.725977
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+   "lado": "expense",
+   "page": 19,
+   "section": "[LOGO] / # 4. Κατάσταση Αποτελεσμάτων κατά λειτουργία της “ΑΓΣ ΑΣΤΕΡΑΣ ΤΡΙΠΟΛΗΣ ΠΑΕ”",
+   "values": [
+    -3.147828
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 19,
+   "section": "[LOGO] / # 4. Κατάσταση Αποτελεσμάτων κατά λειτουργία της “ΑΓΣ ΑΣΤΕΡΑΣ ΤΡΙΠΟΛΗΣ ΠΑΕ”",
+   "values": [
+    1.699452
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 19,
+   "section": "[LOGO] / # 4. Κατάσταση Αποτελεσμάτων κατά λειτουργία της “ΑΓΣ ΑΣΤΕΡΑΣ ΤΡΙΠΟΛΗΣ ΠΑΕ”",
+   "values": [
+    -1.259543
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 19,
+   "section": "[LOGO] / # 4. Κατάσταση Αποτελεσμάτων κατά λειτουργία της “ΑΓΣ ΑΣΤΕΡΑΣ ΤΡΙΠΟΛΗΣ ΠΑΕ”",
+   "values": [
+    -0.037245
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 19,
+   "section": "[LOGO] / # 4. Κατάσταση Αποτελεσμάτων κατά λειτουργία της “ΑΓΣ ΑΣΤΕΡΑΣ ΤΡΙΠΟΛΗΣ ΠΑΕ”",
+   "values": [
+    -0.01184
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Αμοιβές και έξοδα προσωπικού",
+   "lado": "expense",
+   "page": 32,
+   "section": "[LOGO] / ### 5.4.25 Έξοδα ανά κατηγορία",
+   "values": [
+    2534.41364
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Αμοιβές και έξοδα τρίτων",
+   "lado": "expense",
+   "page": 32,
+   "section": "[LOGO] / ### 5.4.25 Έξοδα ανά κατηγορία",
+   "values": [
+    365.36524
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "lado": "expense",
+   "page": 32,
+   "section": "[LOGO] / ### 5.4.25 Έξοδα ανά κατηγορία",
+   "values": [
+    293.95012
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Φόροι και τέλη",
+   "lado": "expense",
+   "page": 32,
+   "section": "[LOGO] / ### 5.4.25 Έξοδα ανά κατηγορία",
+   "values": [
+    98.89566
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "lado": "expense",
+   "page": 32,
+   "section": "[LOGO] / ### 5.4.25 Έξοδα ανά κατηγορία",
+   "values": [
+    1004.57837
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Αποσβέσεις παγίων στο λειτουργικό κόστος",
+   "lado": "expense",
+   "page": 32,
+   "section": "[LOGO] / ### 5.4.25 Έξοδα ανά κατηγορία",
+   "values": [
+    156.86257
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Πρόβλεψη αποζημίωσης προσωπικού",
+   "lado": "expense",
+   "page": 32,
+   "section": "[LOGO] / ### 5.4.25 Έξοδα ανά κατηγορία",
+   "values": [
+    10.14654
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Αξία χορηγούμενων εισιτηρίων δωρεάν",
+   "lado": "expense",
+   "page": 32,
+   "section": "[LOGO] / ### 5.4.25 Έξοδα ανά κατηγορία",
+   "values": [
+    -19.59677
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Κόστος πωλήσεων (Κόστος λειτουργίας ποδοσφαιρικού τμήματος)",
+   "lado": "expense",
+   "page": 32,
+   "section": "[LOGO] / ### 5.4.25 Έξοδα ανά κατηγορία",
+   "values": [
+    3147.82819
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 32,
+   "section": "[LOGO] / ### 5.4.25 Έξοδα ανά κατηγορία",
+   "values": [
+    1259.54266
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 32,
+   "section": "[LOGO] / ### 5.4.25 Έξοδα ανά κατηγορία",
+   "values": [
+    37.24452
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Ασφάλιστρα ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 27,
+   "section": "### 5.4.7 Προπληρωμένα έξοδα",
+   "values": [
+    5.36704
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Ασφάλιστρα μεταφορικών μέσων",
+   "lado": "expense",
+   "page": 27,
+   "section": "### 5.4.7 Προπληρωμένα έξοδα",
+   "values": [
+    1.98457
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Λοιπά Ασφάλιστρα προσωπικού",
+   "lado": "expense",
+   "page": 27,
+   "section": "### 5.4.7 Προπληρωμένα έξοδα",
+   "values": [
+    0.11767
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Τέλη κυκλοφορίας επιβατικών μεταφορικών μέσων",
+   "lado": "expense",
+   "page": 27,
+   "section": "### 5.4.7 Προπληρωμένα έξοδα",
+   "values": [
+    3.46751
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Αγορά αθλητικού υλικού",
+   "lado": "expense",
+   "page": 27,
+   "section": "### 5.4.7 Προπληρωμένα έξοδα",
+   "values": [
+    78.91853
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Λοιπά προπληρωμένα έξοδα",
+   "lado": "expense",
+   "page": 27,
+   "section": "### 5.4.7 Προπληρωμένα έξοδα",
+   "values": [
+    9.48737
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Επιχορηγήσεις",
+   "lado": "revenue",
+   "page": 31,
+   "section": "# 5.4.22 Λοιπά συνήθη έσοδα",
+   "values": [
+    405.87929
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Έσοδα από παροχή υπηρεσιών σε τρίτους",
+   "lado": "revenue",
+   "page": 31,
+   "section": "# 5.4.22 Λοιπά συνήθη έσοδα",
+   "values": [
+    1239.66182
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Έσοδα από συνεισφορά αλληλεγγύης",
+   "lado": "revenue",
+   "page": 31,
+   "section": "# 5.4.22 Λοιπά συνήθη έσοδα",
+   "values": [
+    53.8143
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Άλλα λειτουργικά έσοδα",
+   "lado": "revenue",
+   "page": 31,
+   "section": "# 5.4.22 Λοιπά συνήθη έσοδα",
+   "values": [
+    0.09657
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Πρόβλεψη για επισφαλείς απαιτήσεις",
+   "lado": "expense",
+   "page": 32,
+   "section": "### 5.4.26 Λοιπά έξοδα και ζημιές",
+   "values": [
+    31
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Φορολογικά πρόστιμα και προσαυξήσεις",
+   "lado": "expense",
+   "page": 32,
+   "section": "### 5.4.26 Λοιπά έξοδα και ζημιές",
+   "values": [
+    0.00692
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Προσαυξήσεις Εισφ. Ασφαλιστικών Ταμείων",
+   "lado": "expense",
+   "page": 32,
+   "section": "### 5.4.26 Λοιπά έξοδα και ζημιές",
+   "values": [
+    0.8441
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Λοιπά έκτακτα έξοδα",
+   "lado": "expense",
+   "page": 32,
+   "section": "### 5.4.26 Λοιπά έξοδα και ζημιές",
+   "values": [
+    0.02498
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Έσοδα από χορηγίες επόμενης χρήσεως",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 5.4.20 Έσοδα επόμενων χρήσεων",
+   "values": [
+    0.081876
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Συναλλαγματικές διαφορές",
+   "lado": "revenue",
+   "page": 31,
+   "section": "# 5.4.23 Λοιπά έσοδα και κέρδη",
+   "values": [
+    7.68714
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Λοιπά Έκτακτα και ανόργανα έσοδα",
+   "lado": "revenue",
+   "page": 31,
+   "section": "# 5.4.23 Λοιπά έσοδα και κέρδη",
+   "values": [
+    2.85463
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Προμήθειες εγγυητικών επιστολών",
+   "lado": "expense",
+   "page": 33,
+   "section": "[LOGO] / #### 5.4.28 Χρεωστικοί τόκοι και συναφή έξοδα",
+   "values": [
+    10
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Λοιπά τραπεζικά έξοδα",
+   "lado": "expense",
+   "page": 33,
+   "section": "[LOGO] / #### 5.4.28 Χρεωστικοί τόκοι και συναφή έξοδα",
+   "values": [
+    1.83954
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Έσοδα από τηλεοπτικές μεταδόσεις",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 5.4.5 Δουλευμένα έσοδα περιόδου",
+   "values": [
+    207.9988
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Έσοδα από διαφημίσεις-χορηγίες",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 5.4.5 Δουλευμένα έσοδα περιόδου",
+   "values": [
+    177.89445
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Δεδουλευμένες αμοιβές τρίτων",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 5.4.19 Έξοδα χρήσεως δουλευμένα",
+   "values": [
+    0.115534
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Δεδουλευμένες παροχές τρίτων",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 5.4.19 Έξοδα χρήσεως δουλευμένα",
+   "values": [
+    0.006419
+   ],
+   "origen": "estado 29"
+  }
+ ]
+}

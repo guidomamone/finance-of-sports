@@ -1,0 +1,94 @@
+{
+  "club": "temperley",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Temperley/memoria-ejercicio-2023-24.md",
+  "generatedAt": "2026-09-30T21:51:12.881Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 1,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 3,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "MEMORIA / CORRESPONDIENTE AL / EJERCICIO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Iniciado el 01 de abril de",
+          "values": [
+            "2023."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finalizado el 31 de Marzo de",
+          "values": [
+            "2024."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "ORDEN DEL DIA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "económico y financiero del período",
+          "values": [
+            "2023/2024.-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4) Adelantamiento de las Elecciones para el 24 de Noviembre de",
+          "values": [
+            "2024.-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "Silva, Jorge Adrián     32735 / Sayago, Sabrina       49261 / Calzón, Martin     33435 / Pereyra, Diego     35.928 / Tomas, Viera      62220",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Benbenuto, Pablo",
+          "values": [
+            "62.227"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maggio , Diego",
+          "values": [
+            "26.767"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/temperley-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"temperley\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

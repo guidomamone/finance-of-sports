@@ -1,0 +1,489 @@
+{
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2023.md",
+ "generatedAt": "2026-09-30T12:59:29.002Z",
+ "rubros": [
+  {
+   "label": "Resultat før skattekostnad",
+   "lado": null,
+   "page": 10,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": null,
+   "page": 10,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": null,
+   "page": 10,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Netto finans",
+   "lado": null,
+   "page": 10,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": null,
+   "page": 10,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": null,
+   "page": 10,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## Resultatregnskap",
+   "choice": "depreciation",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "depreciation",
+     0.78
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1701
+  },
+  {
+   "label": "Skattekostnad",
+   "lado": "expense",
+   "page": 14,
+   "section": "### Mer om ytelser til revisjon / ## Note 3 - Spesifisering av skatt",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 812
+  },
+  {
+   "label": "Driftsresultat",
+   "lado": null,
+   "page": 10,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.23,
+   "top3": [
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.22
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Udekket tap",
+   "lado": null,
+   "page": 10,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "exceptional_items",
+     0.2
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Årsresultat",
+   "lado": null,
+   "page": 10,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_income",
+     0.62
+    ],
+    [
+     "lump_football_operations",
+     0.15000000000000002
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Ordinært utbytte",
+   "lado": null,
+   "page": 10,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Investert i året",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Salgsinntekter / ### Klassifisering og vurdering av balanseposter / ### Skatt / ### Note 1 - Immaterielle rettigheter i spillere / #### Spesifikasjon av immaterielle eiendeler i spiller-rettigheter",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "player_sales",
+     0.26
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ]
+   ],
+   "tokens": 883
+  },
+  {
+   "label": "Annen egenkapital",
+   "lado": null,
+   "page": 10,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Investert i akademi",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Salgsinntekter / ### Klassifisering og vurdering av balanseposter / ### Skatt / ### Note 1 - Immaterielle rettigheter i spillere / #### Spesifikasjon av immaterielle eiendeler i spiller-rettigheter",
+   "choice": "youth_football",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "youth_football",
+     0.66
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 885
+  },
+  {
+   "label": "Årets avskrivning",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Salgsinntekter / ### Klassifisering og vurdering av balanseposter / ### Skatt / ### Note 1 - Immaterielle rettigheter i spillere / #### Spesifikasjon av immaterielle eiendeler i spiller-rettigheter",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 884
+  },
+  {
+   "label": "Bokført verdi 31.12",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Salgsinntekter / ### Klassifisering og vurdering av balanseposter / ### Skatt / ### Note 1 - Immaterielle rettigheter i spillere / #### Spesifikasjon av immaterielle eiendeler i spiller-rettigheter",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "player_sales",
+     0.34
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ]
+   ],
+   "tokens": 890
+  },
+  {
+   "label": "+/- Endring i midlertidige forskjeller",
+   "lado": "revenue",
+   "page": 14,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 824
+  },
+  {
+   "label": "Betalbar skatt på alminnelig inntekt",
+   "lado": "expense",
+   "page": 14,
+   "section": "### Mer om ytelser til revisjon / ## Note 3 - Spesifisering av skatt",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 820
+  },
+  {
+   "label": "Resultat før skatt",
+   "lado": "revenue",
+   "page": 14,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 818
+  },
+  {
+   "label": "- Anvendelse av fremførbart underskudd",
+   "lado": "revenue",
+   "page": 14,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "Skattepliktig inntekt",
+   "lado": "revenue",
+   "page": 14,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 819
+  }
+ ]
+}

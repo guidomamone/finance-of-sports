@@ -1,0 +1,262 @@
+{
+ "md": "Clubes/Brasil/Palmeiras/demonstracoes-financeiras-2021-2022.md",
+ "generatedAt": "2026-09-30T22:48:30.997Z",
+ "rubrosHuella": "cb9f0693e3558be1df178c166ff326150d27fb14",
+ "rubros": [
+  {
+   "label": "Direitos de transmissão",
+   "lado": null,
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidade e patrocínio",
+   "lado": null,
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrecadação de jogos",
+   "lado": null,
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "matchday_competition",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Negociação de atletas",
+   "lado": null,
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "player_sales",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Sócio torcedor Avanti",
+   "lado": null,
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "member_dues",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Incentivos Fiscais e Outros",
+   "lado": null,
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiações",
+   "lado": null,
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "competition_bonus",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Licenciamentos da marca e franquias",
+   "lado": null,
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Rendas diversas",
+   "lado": null,
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Pessoal e encargos sociais",
+   "lado": "expense",
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "wages_squad",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas gerais e administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciação e amortização",
+   "lado": null,
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "depreciation",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortização - direitos de atletas e comissão técnica",
+   "lado": null,
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "player_amortisation",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.82
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Despesas com jogos",
+   "lado": "expense",
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Despesas sócio torcedor Avanti",
+   "lado": "expense",
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Despesas com direito de imagem",
+   "lado": "expense",
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Receitas financeiras",
+   "lado": "revenue",
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Gastos com atletas, comissão técnica e baixa",
+   "lado": "expense",
+   "page": 1,
+   "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "wages_squad",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1085
+  }
+ ]
+}

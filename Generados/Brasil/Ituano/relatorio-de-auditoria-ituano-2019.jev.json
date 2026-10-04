@@ -1,0 +1,297 @@
+{
+ "md": "Clubes/Brasil/Ituano/relatorio-de-auditoria-ituano-2019.md",
+ "generatedAt": "2026-09-30T22:48:30.480Z",
+ "rubrosHuella": "6f30647e9c8c10b4b57a155061f32e4e250b9c13",
+ "rubros": [
+  {
+   "label": "RECEITA - FUTEBOL PROFISSIONAL E DE BASE",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "lump_football_operations",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiações em Campeonatos (CBF)",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de Transmissão de TV (FPF)",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínio e Publicidades",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrecadação de Jogos",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com Repasses de Direitos Federativos",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita de Projetos e Incentivos Fiscais",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Impostos Incidentes s/ Vendas e Serviços",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "DESPESAS - FUTEBOL PROFISSIONAL E DE BASE",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com Pessoal (Salários e encargos)",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de Terceiros (Prêmios, Mídia, Serviços de PJ e PF)",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos c/ Atletas (Viagens, Uniformes, Taxas CBF-FPF)",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras Despesas (Eventos e Partidas- Estádio e Alojamento)",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "DESPESAS ADMINISTRATIVAS",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Água, Luz, Telefone, e Internet (sede do Clube)",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de Terceiros - Advogado, Contador, Assessores",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras Receitas e Despesas Administrativas",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Impostos e Taxas diversas",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Encargos Financeiros",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "RECEITAS E DESPESAS NÃO OPERACIONAIS",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras Receitas e Despesas Não Operacionais",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Dimache Participações",
+   "lado": "revenue",
+   "page": 18,
+   "section": "## 19. ADIANTAMENTO DE RECEITAS EXERCÍCIOS FUTUROS / ## 20. TÍTULOS A PAGAR",
+   "choice": "competition_bonus",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Loterias e Outras Receitas",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "(-) Depreciação e Amortização",
+   "lado": "revenue",
+   "page": 6,
+   "section": "Permanente",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "broadcasting",
+     0.06
+    ]
+   ],
+   "tokens": 895
+  },
+  {
+   "label": "Imobilizado - Máquinas e Equipamentos",
+   "lado": "revenue",
+   "page": 6,
+   "section": "Permanente",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Imobilizado - Móveis e Instalações",
+   "lado": "revenue",
+   "page": 6,
+   "section": "Permanente",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "stadium_other",
+     0.04
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1058
+  }
+ ]
+}

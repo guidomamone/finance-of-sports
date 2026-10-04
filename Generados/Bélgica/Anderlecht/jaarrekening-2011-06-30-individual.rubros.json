@@ -1,0 +1,574 @@
+{
+  "md": "Clubes/Bélgica/Anderlecht/jaarrekening-2011-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Anderlecht/jaarrekening-2011-06-30-individual.pdf",
+  "club": "anderlecht-be",
+  "year": 2011,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:54:13.722Z",
+  "tieOuts": {
+    "cierran": 2,
+    "noCierran": 5
+  },
+  "warnings": [
+    "5 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 50,
+    "notasUsadas": []
+  },
+  "ladoConocido": 34,
+  "rubros": [
+    {
+      "label": "Ventes et prestations",
+      "lado": "revenue",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.007074
+      ],
+      "origen": "estado 9",
+      "glosa": "Ventas y prestaciones de servicios"
+    },
+    {
+      "label": "Chiffre d'affaires",
+      "lado": "revenue",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.00007
+      ],
+      "origen": "estado 9",
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "En-cours de fabrication, produits finis et commandes en cours d'exécution: augmentation (réduction) (+)/(-)",
+      "lado": "revenue",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000071
+      ],
+      "origen": "estado 9",
+      "glosa": "Variación de existencias de productos en curso, terminados y pedidos en curso de ejecución: aumento (disminución) (+)/(-)"
+    },
+    {
+      "label": "Production immobilisée",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000072
+      ],
+      "origen": "estado 9",
+      "glosa": "Trabajos realizados por la empresa para su activo"
+    },
+    {
+      "label": "Autres produits d'exploitation",
+      "lado": "revenue",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000074
+      ],
+      "origen": "estado 9",
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Coût des ventes et des prestations",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.006064
+      ],
+      "origen": "estado 9",
+      "glosa": "Coste de las ventas y de las prestaciones de servicios"
+    },
+    {
+      "label": "Approvisionnements et marchandises",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.00006
+      ],
+      "origen": "estado 9",
+      "glosa": "Aprovisionamientos y mercancías"
+    },
+    {
+      "label": "Achats",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.006008
+      ],
+      "origen": "estado 9",
+      "glosa": "Compras"
+    },
+    {
+      "label": "Stocks: réduction (augmentation) (+)/(-)",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000609
+      ],
+      "origen": "estado 9",
+      "glosa": "Existencias: disminución (aumento) (+)/(-)"
+    },
+    {
+      "label": "Services et biens divers",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000061
+      ],
+      "origen": "estado 9",
+      "glosa": "Servicios y bienes diversos"
+    },
+    {
+      "label": "Rémunérations, charges sociales et pensions (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000062
+      ],
+      "origen": "estado 9",
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.00063
+      ],
+      "origen": "estado 9",
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises) (+)/(-)",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.006314
+      ],
+      "origen": "estado 9",
+      "glosa": "Correcciones de valor de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Provisions pour risques et charges: dotations (utilisations et reprises) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.006357
+      ],
+      "origen": "estado 9",
+      "glosa": "Provisiones para riesgos y cargas: dotaciones (aplicaciones y reversiones) (+)/(-)"
+    },
+    {
+      "label": "Autres charges d'exploitation",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.006408
+      ],
+      "origen": "estado 9",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Charges d'exploitation portées à l'actif au titre de frais de restructuration (-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000649
+      ],
+      "origen": "estado 9",
+      "glosa": "Gastos de explotación activados en concepto de gastos de reestructuración (-)"
+    },
+    {
+      "label": "Produits financiers",
+      "lado": "revenue",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000075
+      ],
+      "origen": "estado 9",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Produits des immobilisations financières",
+      "lado": "revenue",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.00075
+      ],
+      "origen": "estado 9",
+      "glosa": "Ingresos de inmovilizaciones financieras"
+    },
+    {
+      "label": "Produits des actifs circulants",
+      "lado": "revenue",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000751
+      ],
+      "origen": "estado 9",
+      "glosa": "Ingresos de activos circulantes"
+    },
+    {
+      "label": "Autres produits financiers",
+      "lado": "revenue",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.007529
+      ],
+      "origen": "estado 9",
+      "glosa": "Otros ingresos financieros"
+    },
+    {
+      "label": "Charges financières",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000065
+      ],
+      "origen": "estado 9",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Charges des dettes",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.00065
+      ],
+      "origen": "estado 9",
+      "glosa": "Cargas de deudas"
+    },
+    {
+      "label": "Réductions de valeur sur actifs circulants autres que stocks, commandes en cours et créances commerciales: dotations (reprises) (+)/(-)",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000651
+      ],
+      "origen": "estado 9",
+      "glosa": "Correcciones de valor sobre activo circulante excepto existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Autres charges financières",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.006529
+      ],
+      "origen": "estado 9",
+      "glosa": "Otros gastos financieros"
+    },
+    {
+      "label": "Produits exceptionnels",
+      "lado": "revenue",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000076
+      ],
+      "origen": "estado 9",
+      "glosa": "Ingresos excepcionales"
+    },
+    {
+      "label": "Reprises d'amortissements et de réductions de valeur sur immobilisations incorporelles et corporelles",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.00076
+      ],
+      "origen": "estado 9",
+      "glosa": "Reversiones de amortizaciones y correcciones de valor de inmovilizado intangible y material"
+    },
+    {
+      "label": "Reprises de réductions de valeur sur immobilisations financières",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000761
+      ],
+      "origen": "estado 9",
+      "glosa": "Reversiones de correcciones de valor de inmovilizaciones financieras"
+    },
+    {
+      "label": "Reprises de provisions pour risques et charges exceptionnels",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000762
+      ],
+      "origen": "estado 9",
+      "glosa": "Reversiones de provisiones para riesgos y cargas excepcionales"
+    },
+    {
+      "label": "Plus-values sur réalisation d'actifs immobilisés",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000763
+      ],
+      "origen": "estado 9",
+      "glosa": "Plusvalías en enajenación de inmovilizado"
+    },
+    {
+      "label": "Autres produits exceptionnels",
+      "lado": "revenue",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.007649
+      ],
+      "origen": "estado 9",
+      "glosa": "Otros ingresos excepcionales"
+    },
+    {
+      "label": "Charges exceptionnelles",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000066
+      ],
+      "origen": "estado 9",
+      "glosa": "Gastos excepcionales"
+    },
+    {
+      "label": "Amortissements et réductions de valeur exceptionnels sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.00066
+      ],
+      "origen": "estado 9",
+      "glosa": "Amortizaciones y correcciones de valor excepcionales sobre gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Réductions de valeur sur immobilisations financières",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000661
+      ],
+      "origen": "estado 9",
+      "glosa": "Correcciones de valor de inmovilizaciones financieras"
+    },
+    {
+      "label": "Provisions pour risques et charges exceptionnels: dotations (utilisations) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000662
+      ],
+      "origen": "estado 9",
+      "glosa": "Provisiones para riesgos y cargas excepcionales: dotaciones (aplicaciones) (+)/(-)"
+    },
+    {
+      "label": "Moins-values sur réalisation d'actifs immobilisés",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000663
+      ],
+      "origen": "estado 9",
+      "glosa": "Pérdidas en enajenación de inmovilizado"
+    },
+    {
+      "label": "Autres charges exceptionnelles",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.006648
+      ],
+      "origen": "estado 9",
+      "glosa": "Otros gastos excepcionales"
+    },
+    {
+      "label": "Charges exceptionnelles portées à l'actif au titre de frais de restructuration (-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.000669
+      ],
+      "origen": "estado 9",
+      "glosa": "Gastos excepcionales activados en concepto de gastos de reestructuración (-)"
+    },
+    {
+      "label": "Prélèvements sur les impôts différés",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.00078
+      ],
+      "origen": "estado 9",
+      "glosa": "Disposición de impuestos diferidos"
+    },
+    {
+      "label": "Transfert aux impôts différés",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.00068
+      ],
+      "origen": "estado 9",
+      "glosa": "Transferencia a impuestos diferidos"
+    },
+    {
+      "label": "Impôts",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "values": [
+        0.006703
+      ],
+      "origen": "estado 9",
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Chiffre d'affaires",
+      "lado": "revenue",
+      "page": 37,
+      "section": "",
+      "values": [
+        31.775511
+      ],
+      "origen": "estado 29",
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Autres Produits",
+      "lado": "revenue",
+      "page": 37,
+      "section": "",
+      "values": [
+        7.371635
+      ],
+      "origen": "estado 29",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Frais de personnel",
+      "lado": null,
+      "page": 37,
+      "section": "",
+      "values": [
+        24.421769
+      ],
+      "origen": "estado 29",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Amortissements",
+      "lado": null,
+      "page": 37,
+      "section": "",
+      "values": [
+        5.171003
+      ],
+      "origen": "estado 29",
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Autres charges d'exploitation",
+      "lado": "expense",
+      "page": 37,
+      "section": "",
+      "values": [
+        13.623183
+      ],
+      "origen": "estado 29",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Produits exceptionnels",
+      "lado": "revenue",
+      "page": 37,
+      "section": "",
+      "values": [
+        3.181004
+      ],
+      "origen": "estado 29",
+      "glosa": "Ingresos excepcionales"
+    },
+    {
+      "label": "Charges exceptionnelles",
+      "lado": "expense",
+      "page": 37,
+      "section": "",
+      "values": [
+        -0.128767
+      ],
+      "origen": "estado 29",
+      "glosa": "Gastos excepcionales"
+    },
+    {
+      "label": "DETTES 17/49",
+      "lado": "expense",
+      "page": 6,
+      "section": "Pensions et obligations similaires 160 / Charges fiscales 161 / Grosses réparations et gros entretien 162 / Autres risques et charges 5.8 | 163/5 128.767 / Impôts différés 168",
+      "values": [
+        33.992852
+      ],
+      "origen": "estado 5",
+      "glosa": "DEUDAS 17/49"
+    },
+    {
+      "label": "Dettes à plus d'un an 59 |",
+      "lado": "expense",
+      "page": 6,
+      "section": "Pensions et obligations similaires 160 / Charges fiscales 161 / Grosses réparations et gros entretien 162 / Autres risques et charges 5.8 | 163/5 128.767 / Impôts différés 168",
+      "values": [
+        8.12921
+      ],
+      "origen": "estado 5",
+      "glosa": "Deudas a más de un año 59 |"
+    },
+    {
+      "label": "Dettes financières 170/4",
+      "lado": "expense",
+      "page": 6,
+      "section": "Pensions et obligations similaires 160 / Charges fiscales 161 / Grosses réparations et gros entretien 162 / Autres risques et charges 5.8 | 163/5 128.767 / Impôts différés 168",
+      "values": [
+        6.85421
+      ],
+      "origen": "estado 5",
+      "glosa": "Deudas financieras 170/4"
+    }
+  ]
+}

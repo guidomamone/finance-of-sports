@@ -1,0 +1,314 @@
+{
+ "md": "Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2009-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:44.668Z",
+ "rubrosHuella": "db0348e60f57e0af858ce3ac274b390cb700c582",
+ "rubros": [
+  {
+   "label": "Marge brute d'exploitation (+)/(-)",
+   "lado": null,
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Approvisionnements, marchandises, services et biens divers",
+   "lado": null,
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "lado": null,
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "depreciation",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises) (+)/(-)",
+   "lado": null,
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Produits exceptionnels",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Provisions pour risques et charges: dotations (utilisations et reprises) (+)/(-)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "exceptional_items",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1101
+  },
+  {
+   "label": "Rémunérations, charges sociales et pensions (+)/(-)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "wages_squad",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "wages_squad",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Autres charges d'exploitation",
+   "lado": "expense",
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Prélèvements sur les réserves immunisées",
+   "lado": null,
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Transfert aux réserves immunisées",
+   "lado": null,
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Chiffre d'affaires",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1160
+  },
+  {
+   "label": "Charges d'exploitation portées à l'actif au titre de frais de restructuration (-)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "exceptional_items",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1209
+  },
+  {
+   "label": "Charges financières",
+   "lado": "expense",
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 992
+  },
+  {
+   "label": "Produits financiers",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Charges exceptionnelles",
+   "lado": "expense",
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "exceptional_items",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Prélèvements sur les impôts différés",
+   "lado": "expense",
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "exceptional_items",
+     0.14
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Transfert aux impôts différés",
+   "lado": "expense",
+   "page": 5,
+   "section": "# COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1005
+  }
+ ]
+}

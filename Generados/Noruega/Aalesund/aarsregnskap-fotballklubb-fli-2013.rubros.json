@@ -1,0 +1,239 @@
+{
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-fotballklubb-fli-2013.md",
+ "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-fotballklubb-fli-2013.pdf",
+ "club": "aalesund",
+ "year": 2013,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:10.103Z",
+ "tieOuts": {
+  "cierran": 52,
+  "noCierran": 7
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "5 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "13 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 21,
+  "notasUsadas": [
+   "4"
+  ]
+ },
+ "ladoConocido": 20,
+ "rubros": [
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ### RESULTATREGNSKAP",
+   "values": [
+    33.009001
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ### RESULTATREGNSKAP",
+   "values": [
+    1.132779
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ### RESULTATREGNSKAP",
+   "values": [
+    0.381351
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ### RESULTATREGNSKAP",
+   "values": [
+    30.988089
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ### RESULTATREGNSKAP",
+   "values": [
+    0.918315
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ### RESULTATREGNSKAP",
+   "values": [
+    1.303168
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ### RESULTATREGNSKAP",
+   "values": [
+    0.053626
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ### RESULTATREGNSKAP",
+   "values": [
+    0.150373
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ### RESULTATREGNSKAP",
+   "values": [
+    0.000793
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ### RESULTATREGNSKAP",
+   "values": [
+    2.391929
+   ],
+   "origen": "estado 0 (su nota queda consumida sin abrir)"
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ### RESULTATREGNSKAP",
+   "values": [
+    -1.637866
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 19,
+   "section": "# Note 13 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    25346.84
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 19,
+   "section": "# Note 13 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    4004.575
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 19,
+   "section": "# Note 13 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    344.787
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 19,
+   "section": "# Note 13 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    1291.887
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Sysselsatte årsverk i regnskapsåret har vært",
+   "lado": "expense",
+   "page": 19,
+   "section": "# Note 13 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    0.033
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Lovpålagt revisjon (inkl. teknisk bistand med årsregnskap)",
+   "lado": "expense",
+   "page": 19,
+   "section": "",
+   "values": [
+    87
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Andre attestasjonstjenester",
+   "lado": "expense",
+   "page": 19,
+   "section": "",
+   "values": [
+    14
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Avtalte kontrollhandlinger rapportering NFF",
+   "lado": "expense",
+   "page": 19,
+   "section": "",
+   "values": [
+    40.3
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Salgsinntekter",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Aalesunds Fotballklubb / # Note 10 Pensjoner / # Note 11 Skatt / # Note 12 Driftsinntekter",
+   "values": [
+    34141.779
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Av registrerte salgsinntekter ovenfor utgjør overføringer fra Ålesund Fotball AS",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Aalesunds Fotballklubb / # Note 10 Pensjoner / # Note 11 Skatt / # Note 12 Driftsinntekter",
+   "values": [
+    30872.532
+   ],
+   "origen": "estado 16"
+  }
+ ]
+}

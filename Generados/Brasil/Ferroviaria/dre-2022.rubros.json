@@ -1,0 +1,4362 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/dre-2022.md",
+ "pdf": "Clubes/Brasil/Ferroviaria/dre-2022.pdf",
+ "club": "ferroviaria",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:52:37.361Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 434,
+  "notasUsadas": []
+ },
+ "ladoConocido": 56,
+ "rubros": [
+  {
+   "label": "CUSTOS",
+   "lado": "expense",
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -23267.06209
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "SALÁRIOS E ORDENADOS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -750.40611
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -62.33081
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "FÉRIAS INDENIZADAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.22516
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -8.67666
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO INDENIZADO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.96934
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "INSS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -37.28399
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "FGTS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -73.35636
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PIS S/FOLHA",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -7.82809
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -93.16405
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -64.16537
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -4.09714
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -7.24574
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.91137
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE INSS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.5811
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE FGTS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.57328
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE PIS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.32175
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "AJUDA DE CUSTO",
+   "lado": "expense",
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -229.52354
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "AVISO PRÉVIO INDENIZADO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.22709
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "ASSISTÊNCIA MÉDICA",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    13.38268
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "VALE TRANSPORTE",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    4.63146
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    65.32561
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    2.86917
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    5.00061
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.63853
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "SALÁRIOS E ORDENADOS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1160.05013
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -158.50797
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "FÉRIAS INDENIZADAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -24.98974
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -13.07269
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO INDENIZADO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -28.51884
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "INSS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -59.29034
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "FGTS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -126.17399
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PIS S/FOLHA",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -12.77388
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -164.29156
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -87.69517
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -7.20738
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -12.72543
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.61372
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE INSS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -4.2077
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE FGTS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -16.12327
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE PIS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.48384
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "AJUDA DE CUSTO",
+   "lado": "expense",
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -121.61603
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "AVISO PRÉVIO INDENIZADO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.05342
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "ASSISTÊNCIA MÉDICA",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    19.96914
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "VALE TRANSPORTE",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    2.49155
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "EXAMES MÉDICOS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -3.049
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    174.8266
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    8.30446
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    14.55164
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    1.85755
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "SALÁRIOS E ORDENADOS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -441.05051
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -41.91795
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "FÉRIAS INDENIZADAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -3.66444
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -3.28467
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO INDENIZADO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.736
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "INSS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -23.3592
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "FGTS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -39.54602
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PIS S/FOLHA",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -4.94328
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -65.06585
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -34.25136
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.91967
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -5.1906
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.65054
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE INSS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.68831
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE FGTS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.53904
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PROVISÃO DE PIS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.24067
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "AJUDA DE CUSTO",
+   "lado": "expense",
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -40.10502
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "SEGURO DE VIDA",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.40064
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DESPESAS ADMINISTRATIVAS",
+   "lado": "expense",
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -6.6554
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "PROVISÃO DE FGTS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.001857
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "PROVISÃO DE PIS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000228
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "AJUDA DE CUSTO",
+   "lado": "expense",
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.002098
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "ASSISTÊNCIA MÉDICA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.006615
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "VALE TRANSPORTE",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.002376
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.056536
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.002549
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.004964
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.000577
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "SALÁRIOS E ORDENADOS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.203879
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.02141
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "FÉRIAS INDENIZADAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.002122
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.002249
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO INDENIZADO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.002458
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "INSS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.010597
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "FGTS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.02089
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "PIS S/FOLHA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.002237
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.030613
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "PROVISÃO DE DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.016306
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.00138
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.00241
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000307
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "PROVISÃO DE INSS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000791
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "PROVISÃO DE FGTS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000753
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "PROVISÃO DE PIS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000094
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "AJUDA DE CUSTO",
+   "lado": "expense",
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.034905
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "ASSISTÊNCIA MÉDICA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.004636
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "VALE TRANSPORTE",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.000307
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.025805
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.001164
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.001963
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.000259
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "DEPRECIAÇÃO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.095716
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "ENERGIA ELÉTRICA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000999
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "TELEFONE",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.007182
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "INTERNET",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000376
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "COMBUSTÍVEIS E LUBRIFICANTES",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.046718
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "MANUTENÇÃO DE VEÍCULOS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.001476
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "MATERIAL DE LIMPEZA, HIGIENE, COPA E COZINHA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.026477
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "FOTOCÓPIAS, AUTENTICAÇÕES E RECONHECIMENTO DE FIRMA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000242
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "MANUTENÇÃO E CONSERVAÇÃO DE BENS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.006524
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "LICENÇA DE USO DE SOFTWARE",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.031754
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "BENS NATUREZA PERMANENTE PEQUENO VALOR",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.003075
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "IMPRESSOS E MATERIAIS DE ESCRITÓRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.018198
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "CORREIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.003288
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "HONORÁRIOS CONTÁBEIS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.077636
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "HONORÁRIOS ADVOCATÍCIOS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.419406
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "SERVIÇOS PRESTADOS POR TERCEIROS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.160273
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "SERVIÇOS DE CONSULTORIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.159378
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "GESTÃO DO PROGRAMA SÓCIO TORCEDOR",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.014808
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "ASSOCIAÇÃO DE CLASSE",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.0375
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "HOSPEDAGEM",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.00132
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "ALUGUÉL DE MÁQUINAS E EQUIPAMENTOS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.001351
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "GÁS DE COZINHA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.004049
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "MANUTENÇÃO GERAL",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.004144
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "CUSTAS PROCESSUAIS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.019447
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "ANÚNCIOS E PUBLICAÇÕES",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.0002
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "SEGURANÇA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.002
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "MATERIAIS MÉDICOS E MEDICAMENTOS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.001323
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "VIAGENS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.017958
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "OUTRAS DESPESAS",
+   "lado": "expense",
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.001321
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "AUXÍLIO MORADIA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.04229
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "CONFRATERNIZAÇÃO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.00112
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "GASTOS C/ VEÍCULOS",
+   "lado": "expense",
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.003255
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "DESPESAS FINANCEIRAS SÓCIO TORCEDOR",
+   "lado": "expense",
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.004881
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "TV A CABO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000156
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "GASTOS C/ CERTIFICADO DIGITAL",
+   "lado": "expense",
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.00023
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "CUSTOS",
+   "lado": "expense",
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -23.267062
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.22199
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.040035
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.009924
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.016439
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.002039
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE INSS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.004098
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE FGTS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000258
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE PIS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.001099
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "AJUDA DE CUSTO",
+   "lado": "expense",
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.487286
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "ASSISTÊNCIA MÉDICA",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.056208
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "SEGURO DE VIDA",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.012672
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "VALE TRANSPORTE",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000738
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "EXAMES MÉDICOS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.117448
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "ACORDO TRABALHISTA",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.207462
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.286732
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.012838
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.022822
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.002859
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "SALÁRIOS E ORDENADOS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.682364
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.088693
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "FÉRIAS INDENIZADAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.00379
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.006537
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO INDENIZADO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.017419
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "INSS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.036666
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "FGTS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.066231
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PIS S/FOLHA",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.007729
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.092989
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.044961
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.004139
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.008735
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000923
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE INSS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.002203
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE FGTS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000692
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE PIS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000264
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "AJUDA DE CUSTO",
+   "lado": "expense",
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.264472
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "ASSISTÊNCIA MÉDICA",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.011646
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "VALE TRANSPORTE",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.001657
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "COMISSÕES",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.020636
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "ACORDO TRABALHISTA",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.342124
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.094511
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.004222
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.007506
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.000941
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "SALÁRIOS E ORDENADOS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.025188
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.090697
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "FÉRIAS INDENIZADAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000222
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.016505
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO INDENIZADO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000167
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "INSS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.053592
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "FGTS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.090804
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PIS S/FOLHA",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.011339
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.136423
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.073759
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.006102
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.010848
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.001361
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE INSS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.003955
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE FGTS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.003669
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "PROVISÃO DE PIS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.000459
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "AJUDA DE CUSTO",
+   "lado": "expense",
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.182739
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "VALE TRANSPORTE",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.0001
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "EXAMES MÉDICOS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.111234
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.088531
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.003947
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.007016
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.000882
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "VALE TRANSPORTE",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.28
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "EXAMES MÉDICOS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -103.3124
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    65.02498
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    2.24989
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    3.99991
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.50175
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ÁGUA E ESGOTO",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -9.79971
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "TV A CABO",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.44091
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "INTERNET",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.90556
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ÁGUA E ESGOTO",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -4.22595
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ENERGIA ELÉTRICA",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.14152
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ALIMENTAÇÃO",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -91.97741
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "DIREITO DE IMAGEM",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2844.30048
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "AGENCIAMENTO DE ATLETAS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2593.71251
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "HOSPEDAGEM",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -188.36967
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "SERVIÇOS PRESTADOS POR TERCEIROS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -48.17867
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ALUGUÉL DE IMÓVEL",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -46.81706
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "INTERNET",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.12944
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "TAXAS FEDERAÇÕES DE FUTEBOL",
+   "lado": "expense",
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -96.78356
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "TAXAS CONFEDERAÇÃO BRASILEIRA DE FUTEBOL",
+   "lado": "expense",
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -59.925
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "GASTOS C/ VEÍCULOS",
+   "lado": "expense",
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.53178
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "VIAGENS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -6.8424
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "FRETAMENTOS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -25.28
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "MATERIAIS ESPORTIVOS E UNIFORMES",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.88377
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "AUXÍLIO MORADIA",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -34.00335
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "CONDOMÍNIO",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.78
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "IPTU",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.03816
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "SERVIÇOS DE CONSULTORIAS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -201.2244
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ÁGUA MINERAL E GELO",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.786
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "TV A CABO",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -4.47424
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "MANUTENÇÃO GERAL",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -86.9032
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "MATERIAIS MÉDICOS E MEDICAMENTOS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -8.25768
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "LOCAÇÃO DE VEÍCULOS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.11592
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "SEGUROS DE IMÓVEIS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.1314
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "OUTRAS DESPESAS",
+   "lado": "expense",
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.29094
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ANTI DOPING",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -3.99
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "BENS NATUREZA PERMANENTE PEQUENO VALOR",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.22247
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "MANUTENÇÃO DE MÁQUINAS E EQUIPAMENTOS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -6.18665
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "LUVAS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -14.051
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "PASSAGENS AEREAS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -25.44921
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "JOGOS E COMPETIÇÕES",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -332.43587
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "MATERIAL DE LIMPEZA, HIGIENE, COPA E COZINHA",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.1743
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "FRETES E CARRETOS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.27857
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "EVENTOS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -196.85788
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "EMPRÉSTIMOS DE ATLETAS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -60
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "HONORARIOS ADVOCATIVIOS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -22
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "/-/RECUPERAÇÃO DE CUSTOS",
+   "lado": "expense",
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    85.71269
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ALIMENTAÇÃO",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -9.14738
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "DIREITO DE IMAGEM",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2051.13416
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "HOSPEDAGEM",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -17.648
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "SERVIÇOS PRESTADOS POR TERCEIROS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -76.745
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ALUGUÉL DE IMÓVEL",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -29.83465
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ÁGUA E ESGOTO",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.10212
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "TELEFONE",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.08082
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "INTERNET",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.3958
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "TAXAS FEDERAÇÕES DE FUTEBOL",
+   "lado": "expense",
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -27.01094
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "TAXAS CONFEDERAÇÃO BRASILEIRA DE FUTEBOL",
+   "lado": "expense",
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -11.425
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "VIAGENS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -69.40036
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "MATERIAIS ESPORTIVOS E UNIFORMES",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -7.46018
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "AUXÍLIO MORADIA",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.175
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "CONDOMÍNIO",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.88
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "IPTU",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.066
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "SERVIÇOS DE CONSULTORIAS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.04565
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ÁGUA MINERAL E GELO",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.39
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "DESPESAS ADMINISTRATIVAS",
+   "lado": "expense",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -6655.40005
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "ALIMENTAÇÃO E REFEIÇÃO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -5.0605
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "EMOLUMENTOS CARTORIAIS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.34142
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "MANUTENÇÃO E CONSERVAÇÃO DE MÁQUINAS E EQUIPAMENTOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -4.31
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "CONTRIBUIÇÕES E DONATIVOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -3.18678
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "DESPESAS DIVERSAS",
+   "lado": "expense",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -898.25865
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "MULTAS DE TRÂNSITO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.0167
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "MULTAS TJD",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -13.8
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "SERVIÇOS PRESTADOS POR TERCEIROS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.91911
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "TRANSFERS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -22.35187
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "PROPAGANDA E PUBLICIDADE",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -73.682
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "MATERIAL DE MARKETING",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.80218
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "BENS NATUREZA PERMANENTE PEQUENO VALOR",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.603
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "OUTRAS DESPESAS",
+   "lado": "expense",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -4.15056
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "TELEFONE",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.78362
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "MANUTENÇÃO DE MÁQUINAS E EQUIPAMENTOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.523
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "DESPESAS COM DOMINIO SITE",
+   "lado": "expense",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -7.7
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "HONORARIOS CONSULTORIA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -83.5
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "AUXILIO MORADIA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -18
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "MATERIAIS ESPORTIVOS E UNIFORMES",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.67
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "ALIMENTOS PARA COZINHA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1173.1447
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "OUTRAS DESPESAS",
+   "lado": "expense",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.71
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "COMBUSTÍVEIS E LUBRIFICANTES",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.35
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "GÁS DE COZINHA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -42.638
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "ÁGUA E ESGOTO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.75958
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "MANUTENÇÃO E CONSERVAÇÃO DE BENS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -3.87
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "MANUTENÇÃO GERAL",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -30.76841
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "TELEFONE",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.06761
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "MATERIAL DE LIMPEZA, HIGIENE, COPA E COZINHA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -127.7677
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "BENS NATUREZA PERMANENTE PEQUENO VALOR",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -9.41656
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "GASTOS C/ VEÍCULOS",
+   "lado": "expense",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.57678
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "SEGURANÇA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -212.1774
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "VIAGENS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.92623
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "SERVIÇOS PRESTADOS POR TERCEIROS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -5.65
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "ALUGUÉL DE MÁQUINAS E EQUIPAMENTOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -8.255
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "SEGUROS DE VEÍCULOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.71042
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "HONORARIOS CONSULTORIA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -25
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "MANUTENÇÃO DE MÁQUINAS E EQUIPAMENTOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -10.9806
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "BAIXA DOS ATLETAS EM FORMAÇÃO SUB-15",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -32.87862
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "I.S.S. E TAXA PODER DE POLÍCIA",
+   "lado": "expense",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.06636
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "CONTRIBUIÇÃO NEGOCIAL",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -14.469
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "MULTAS, JUROS E CORREÇÃO MONETÁRIA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -71.19415
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "IMPOSTOS E TAXAS DIVERSAS",
+   "lado": "expense",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -10.65686
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "I.O.F.",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -25.175
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "ENCARGOS S/PARCELAMENTOS",
+   "lado": "expense",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -22.26917
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "ISS RETIDO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.33161
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "INSS RETIDO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.07451
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "DESPESAS BANCÁRIAS",
+   "lado": "expense",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -50.82839
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "ENCARGOS FINANCEIROS",
+   "lado": "expense",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -560.03183
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "ANUIDADE CARTÃO DE CRÉDITO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.06984
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "DESPESAS C/ CARTÃO DE CRÉDITO",
+   "lado": "expense",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.60268
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "JUROS PASSIVOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -66.68817
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "PERDAS EVENTUAIS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    53.10897
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "DESPESAS CAMBIO FINANCEIRO",
+   "lado": "expense",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -68.10975
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "VARIAÇÕES CAMBIAIS PASSIVAS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -363.03589
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "RECEITAS FINANCEIRAS",
+   "lado": "revenue",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    474.9502
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "DESCONTOS OBTIDOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    4.00564
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "RENDAS EVENTUAIS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    2.00259
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "RENDIMENTOS DE APLICAÇÕES BANCO BRADESCO S/A",
+   "lado": "revenue",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.43937
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "RENDIMENTOS PAGSEGURO",
+   "lado": "revenue",
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.90864
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "UNIFORMES",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -19.9991
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "MANUTENÇÃO GERAL",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.38
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "TAXAS FEDERAÇÕES DE FUTEBOL",
+   "lado": "expense",
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -8.12
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "AJUDA DE CUSTO",
+   "lado": "expense",
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -10.1
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "TAXAS FEDERAÇÕES DE FUTEBOL",
+   "lado": "expense",
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.29
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "AJUDA DE CUSTO",
+   "lado": "expense",
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.9
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "AMORTIZAÇÃO DOS ATLETAS FORMADOS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -149.29186
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "MERCADORIAS COMPRADAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.93849
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "MERCADORIAS RECEBIDAS EM BONIFICAÇÃO",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -45.96921
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "ESTOQUE INICIAL",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -86.99294
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "/-/ESTOQUE FINAL",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    85.28366
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "/-/ICMS A RECUPERAR",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    3.62347
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "RECEITA LÍQUIDA",
+   "lado": "revenue",
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -5109.60712
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "DESPESAS OPERACIONAIS",
+   "lado": "expense",
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -6655.40005
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "SALÁRIOS E ORDENADOS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -186.40374
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -21.50019
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "FÉRIAS INDENIZADAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.59211
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -14.88473
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO INDENIZADO",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.5329
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "INSS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -40.0647
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "FGTS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -16.29204
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PIS S/FOLHA",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.95753
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -24.33965
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -12.72749
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.83923
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.73009
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.21625
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE INSS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.72604
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE FGTS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.89359
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE PIS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.11171
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "AJUDA DE CUSTO",
+   "lado": "expense",
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "ASSISTÊNCIA MÉDICA",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -68.87131
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "SEGURO DE VIDA",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.3677
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "VALE TRANSPORTE",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -28.9598
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "EXAMES MÉDICOS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -21.1526
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    17.05992
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.76561
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.8848
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    0.15997
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "SALÁRIOS E ORDENADOS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -466.62218
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -49.55172
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "FÉRIAS INDENIZADAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -2.96074
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -5.08173
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO INDENIZADO",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.5177
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "INSS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -24.709
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "FGTS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -46.58939
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PIS S/FOLHA",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -5.32363
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -69.87965
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -39.79437
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -3.14954
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -5.59943
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.69996
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "PROVISÃO DE INSS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1.92259
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "RECEITA BRUTA",
+   "lado": "revenue",
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    19190.54564
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "CAMPEONATO PAULISTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    481.93366
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "COPA LIBERTADORES",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    39.23627
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "CAMPEONATO PAULISTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    5126.695
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "COPA DO BRASIL",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    558
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "VENDA DOS DIREITOS FEDERATIVOS E ECONÔMICOS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    2839.04721
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "REPASSE DE CESSÃO TEMPORÁRIA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    900
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "VENDA DOS DIREITOS FEDERATIVOS E ECONÔMICOS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    393.85875
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "REPASSE DE CESSÃO TEMPORÁRIA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    3620.43
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "RECEITA COM FORMAÇÃO",
+   "lado": "revenue",
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    150
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "CAMPEONATO PAULISTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    180
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "CAMPEONATO BRASILEIRO",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    65
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "CAMPEONATO PAULISTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    80
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "PROGRAMA DE EXCELÊNCIA - FPF",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    80
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "CAMPEONATO PAULISTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    873.305
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "PATROCÍNIOS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    3523.1
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "PERMUTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    47.111
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "MENSALIDADE SÓCIO TORCEDOR",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    108.72414
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "VENDA DE MERCADORIAS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    44.60461
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "DEDUÇÕES DA RECEITA BRUTA",
+   "lado": "revenue",
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1033.09067
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/5% INSS RENDA BRUTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -5.96182
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/DESPESAS OPERACIONAIS",
+   "lado": "expense",
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -5.76182
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/5% INSS - CAMPEONATO PAULISTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -256.33475
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/DIREITO DE ARENA - CAMPEONATO PAULISTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -243.51801
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/TAXAS DE ARBITRAGEM",
+   "lado": "expense",
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -169.47017
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/5% INSS - CAMPEONATO PAULISTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -9
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/5% INSS - CAMPEONATO BRASILEIRO",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -3.25
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/5% INSS - CAMPEONATO PAULISTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -4
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/5% INSS - PROGRAMA DE EXCELÊNCIA - FPF",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -4
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/5% INSS - CAMPEONATO PAULISTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -43.66525
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/5% INSS - PATROCÍNIOS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -40.05
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/S.A.F",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -53.05538
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/COFINS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -153.12564
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/PIS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -33.24438
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/ICMS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -8.02866
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/COFINS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.51335
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "/-/PIS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -0.11144
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "SALÁRIOS E ORDENADOS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -1578.27041
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "FÉRIAS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -194.68237
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "FÉRIAS INDENIZADAS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -42.38888
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -17.95532
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO INDENIZADO",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -58.20834
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "INSS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -89.49502
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "FGTS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -155.81678
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "PIS S/FOLHA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -19.22602
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "VARIAÇÕES CAMBIAIS ATIVA",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    467.59396
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "OUTRAS RECEITAS OPERACIONAIS",
+   "lado": "revenue",
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    45.96921
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "BONIFICAÇÕES",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    45.96921
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "RECEITAS NÃO OPERACIONAIS",
+   "lado": "revenue",
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    306.89204
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "OUTRAS RECEITAS",
+   "lado": "revenue",
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    11.4763
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "ROYALTIES",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    18.20761
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "PROGRAMA DE AUXILIO FINANCEIRO",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    240
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "AUXILIO FINANCEIRO",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    88.445
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "PERDAS NA ALIENAÇÃO DO ATIVO IMOBILIZADO",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "values": [
+    -51.23687
+   ],
+   "origen": "estado 8"
+  }
+ ]
+}

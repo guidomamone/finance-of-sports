@@ -1,0 +1,187 @@
+{
+  "md": "Clubes/Brasil/Sport Recife/demonstracoes-financeiras-2024-e-2023.md",
+  "pdf": "Clubes/Brasil/Sport Recife/demonstracoes-financeiras-2024-e-2023.pdf",
+  "club": "sportrecife-br",
+  "year": 2024,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:53:59.556Z",
+  "tieOuts": {
+    "cierran": 3,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": false,
+  "seleccion": {
+    "ok": true,
+    "filas": 15,
+    "notasUsadas": []
+  },
+  "ladoConocido": 15,
+  "rubros": [
+    {
+      "label": "Terrenos - 78.662 -",
+      "lado": "expense",
+      "page": 43,
+      "section": "11. Imobilizado / Taxa Custo Deprecia cão Líquido Líquido / 0, / Dep.% 2024 2024 2024 2023",
+      "values": [
+        78.662
+      ],
+      "origen": "estado 12",
+      "glosa": "Terrenos - 78.662 -"
+    },
+    {
+      "label": "Estádio",
+      "lado": "expense",
+      "page": 43,
+      "section": "11. Imobilizado / Taxa Custo Deprecia cão Líquido Líquido / 0, / Dep.% 2024 2024 2024 2023",
+      "values": [
+        0.00205
+      ],
+      "origen": "estado 12",
+      "glosa": "Estadio"
+    },
+    {
+      "label": "Sede Social",
+      "lado": "expense",
+      "page": 43,
+      "section": "11. Imobilizado / Taxa Custo Deprecia cão Líquido Líquido / 0, / Dep.% 2024 2024 2024 2023",
+      "values": [
+        0.002
+      ],
+      "origen": "estado 12",
+      "glosa": "Sede social"
+    },
+    {
+      "label": "Parque Aquático",
+      "lado": "expense",
+      "page": 43,
+      "section": "11. Imobilizado / Taxa Custo Deprecia cão Líquido Líquido / 0, / Dep.% 2024 2024 2024 2023",
+      "values": [
+        0.002
+      ],
+      "origen": "estado 12",
+      "glosa": "Parque acuático"
+    },
+    {
+      "label": "Serviços de terceiros",
+      "lado": "expense",
+      "page": 48,
+      "section": "Despesas com formação de atleta e amortização de despesas de / anos anteriores (11.070) (28.416) / (92.679) (90.481) / 20. Despesas gerais e administrativas / 2024 2023",
+      "values": [
+        -19.902
+      ],
+      "origen": "estado 17",
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Gastos com pessoal",
+      "lado": "expense",
+      "page": 48,
+      "section": "Despesas com formação de atleta e amortização de despesas de / anos anteriores (11.070) (28.416) / (92.679) (90.481) / 20. Despesas gerais e administrativas / 2024 2023",
+      "values": [
+        -9.345
+      ],
+      "origen": "estado 17",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Depreciação",
+      "lado": "expense",
+      "page": 48,
+      "section": "Despesas com formação de atleta e amortização de despesas de / anos anteriores (11.070) (28.416) / (92.679) (90.481) / 20. Despesas gerais e administrativas / 2024 2023",
+      "values": [
+        -7.234
+      ],
+      "origen": "estado 17",
+      "glosa": "Depreciación"
+    },
+    {
+      "label": "Despesas gerais",
+      "lado": "expense",
+      "page": 48,
+      "section": "Despesas com formação de atleta e amortização de despesas de / anos anteriores (11.070) (28.416) / (92.679) (90.481) / 20. Despesas gerais e administrativas / 2024 2023",
+      "values": [
+        -17.341
+      ],
+      "origen": "estado 17",
+      "glosa": "Gastos generales"
+    },
+    {
+      "label": "Despesas tributárias",
+      "lado": "expense",
+      "page": 48,
+      "section": "Despesas com formação de atleta e amortização de despesas de / anos anteriores (11.070) (28.416) / (92.679) (90.481) / 20. Despesas gerais e administrativas / 2024 2023",
+      "values": [
+        -3.726
+      ],
+      "origen": "estado 17",
+      "glosa": "Gastos tributarios"
+    },
+    {
+      "label": "Créditos a receber 7 34.321 13 Obrigações tributárias",
+      "lado": "revenue",
+      "page": 18,
+      "section": "Receitas a reconhecer 14 14.116 - / Receitas Antecipadas 14.104 17.012 / 164.951 122.212 / Não Circulante Não Circulante / Depósitos Judiciais 9 7.649 7.571 Fornecedores 12 9.548 677",
+      "values": [
+        49.411
+      ],
+      "origen": "estado 1",
+      "glosa": "Créditos a cobrar 7 34.321 13 Obligaciones tributarias"
+    },
+    {
+      "label": "Impostos a Recuperar 8 8 Empréstimos com terceiros e Mútuos",
+      "lado": "expense",
+      "page": 18,
+      "section": "Receitas a reconhecer 14 14.116 - / Receitas Antecipadas 14.104 17.012 / 164.951 122.212 / Não Circulante Não Circulante / Depósitos Judiciais 9 7.649 7.571 Fornecedores 12 9.548 677",
+      "values": [
+        1.218
+      ],
+      "origen": "estado 1",
+      "glosa": "Impuestos a recuperar 8 8 Préstamos con terceros y mutuos"
+    },
+    {
+      "label": "Despesas Antecipadas - 1.981 Provisão para contingências",
+      "lado": "expense",
+      "page": 18,
+      "section": "Receitas a reconhecer 14 14.116 - / Receitas Antecipadas 14.104 17.012 / 164.951 122.212 / Não Circulante Não Circulante / Depósitos Judiciais 9 7.649 7.571 Fornecedores 12 9.548 677",
+      "values": [
+        52.477
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos anticipados - 1.981 Provisión para contingencias"
+    },
+    {
+      "label": "Imobilizado 11 287.431 242.614 Receitas a reconhecer",
+      "lado": "revenue",
+      "page": 18,
+      "section": "Receitas a reconhecer 14 14.116 - / Receitas Antecipadas 14.104 17.012 / 164.951 122.212 / Não Circulante Não Circulante / Depósitos Judiciais 9 7.649 7.571 Fornecedores 12 9.548 677",
+      "values": [
+        67.548
+      ],
+      "origen": "estado 1",
+      "glosa": "Inmovilizado 11 287.431 242.614 Ingresos a reconocer"
+    },
+    {
+      "label": "Capital Social",
+      "lado": "revenue",
+      "page": 18,
+      "section": "Intangível 10 14.657 2.960 Receitas Antecipadas 544 544 / 344.066 255.147 180.746 153.932 / Patrimonio líquido",
+      "values": [
+        149.469
+      ],
+      "origen": "estado 2",
+      "glosa": "Capital social"
+    },
+    {
+      "label": "Ajuste de Avaliação Patrimonial",
+      "lado": "revenue",
+      "page": 18,
+      "section": "Intangível 10 14.657 2.960 Receitas Antecipadas 544 544 / 344.066 255.147 180.746 153.932 / Patrimonio líquido",
+      "values": [
+        123.173
+      ],
+      "origen": "estado 2",
+      "glosa": "Ajuste de valoración patrimonial"
+    }
+  ]
+}

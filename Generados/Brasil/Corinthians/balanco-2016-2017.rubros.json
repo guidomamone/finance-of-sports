@@ -1,0 +1,565 @@
+{
+  "md": "Clubes/Brasil/Corinthians/balanco-2016-2017.md",
+  "pdf": "Clubes/Brasil/Corinthians/balanco-2016-2017.pdf",
+  "club": "corinthians-br",
+  "year": 2017,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:51:55.561Z",
+  "tieOuts": {
+    "cierran": 19,
+    "noCierran": 31
+  },
+  "warnings": [
+    "9 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "22 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "10 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 49,
+    "notasUsadas": []
+  },
+  "ladoConocido": 37,
+  "rubros": [
+    {
+      "label": "Pessoal",
+      "lado": "expense",
+      "page": 3,
+      "section": "Receitas (despesas) operacionais no segmento futebol",
+      "values": [
+        -158.687
+      ],
+      "origen": "estado 10",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Serviços de terceiros",
+      "lado": "expense",
+      "page": 3,
+      "section": "Receitas (despesas) operacionais no segmento futebol",
+      "values": [
+        -16.512
+      ],
+      "origen": "estado 10",
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Gerais e administrativas",
+      "lado": "expense",
+      "page": 3,
+      "section": "Receitas (despesas) operacionais no segmento futebol",
+      "values": [
+        -11.072
+      ],
+      "origen": "estado 10",
+      "glosa": "Generales y administrativos"
+    },
+    {
+      "label": "Custo com vendas e aquisição de atletas",
+      "lado": "expense",
+      "page": 3,
+      "section": "Receitas (despesas) operacionais no segmento futebol",
+      "values": [
+        -46.71
+      ],
+      "origen": "estado 10",
+      "glosa": "Coste por ventas y adquisición de futbolistas"
+    },
+    {
+      "label": "Depreciação e amortização de direitos",
+      "lado": "expense",
+      "page": 3,
+      "section": "Receitas (despesas) operacionais no segmento futebol",
+      "values": [
+        -29.803
+      ],
+      "origen": "estado 10",
+      "glosa": "Depreciación y amortización de derechos"
+    },
+    {
+      "label": "Futebol",
+      "lado": "expense",
+      "page": 3,
+      "section": "Receitas (despesas) operacionais no segmento futebol",
+      "values": [
+        -2.609
+      ],
+      "origen": "estado 10",
+      "glosa": "Fútbol"
+    },
+    {
+      "label": "Rateio de despesas administrativas",
+      "lado": "expense",
+      "page": 3,
+      "section": "Receitas (despesas) operacionais no segmento futebol",
+      "values": [
+        -12.58
+      ],
+      "origen": "estado 10",
+      "glosa": "Prorrateo de gastos administrativos"
+    },
+    {
+      "label": "Pessoal",
+      "lado": "expense",
+      "page": 3,
+      "section": "Receitas (despesas) operacionais no segmento clube social e esportes amadores",
+      "values": [
+        -30.574
+      ],
+      "origen": "estado 14",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Serviços de terceiros",
+      "lado": "expense",
+      "page": 3,
+      "section": "Receitas (despesas) operacionais no segmento clube social e esportes amadores",
+      "values": [
+        -11.896
+      ],
+      "origen": "estado 14",
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Gerais e administrativas",
+      "lado": "expense",
+      "page": 3,
+      "section": "Receitas (despesas) operacionais no segmento clube social e esportes amadores",
+      "values": [
+        -15.587
+      ],
+      "origen": "estado 14",
+      "glosa": "Generales y administrativos"
+    },
+    {
+      "label": "Depreciação e amortização de direitos",
+      "lado": "expense",
+      "page": 3,
+      "section": "Receitas (despesas) operacionais no segmento clube social e esportes amadores",
+      "values": [
+        -2.84
+      ],
+      "origen": "estado 14",
+      "glosa": "Depreciación y amortización de derechos"
+    },
+    {
+      "label": "Esportes amadores",
+      "lado": "expense",
+      "page": 3,
+      "section": "Receitas (despesas) operacionais no segmento clube social e esportes amadores",
+      "values": [
+        -2.397
+      ],
+      "origen": "estado 14",
+      "glosa": "Deportes amateurs"
+    },
+    {
+      "label": "Rateio das despesas administrativas",
+      "lado": "expense",
+      "page": 3,
+      "section": "Receitas (despesas) operacionais no segmento clube social e esportes amadores",
+      "values": [
+        12.58
+      ],
+      "origen": "estado 14",
+      "glosa": "Prorrateo de los gastos administrativos"
+    },
+    {
+      "label": "Direitos de transmissão de TV",
+      "lado": "revenue",
+      "page": 3,
+      "section": "Demonstrações do resultado para os exercícios findos em 31 de dezembro / (Em milhares de reais, exceto quando indicado de outro modo) / Notas 2017 2016 / Segmento futebol / Receita bruta no segmento futebol",
+      "values": [
+        146.633
+      ],
+      "origen": "estado 8",
+      "glosa": "Derechos de transmisión televisiva"
+    },
+    {
+      "label": "Patrocínios e publicidades",
+      "lado": "revenue",
+      "page": 3,
+      "section": "Demonstrações do resultado para os exercícios findos em 31 de dezembro / (Em milhares de reais, exceto quando indicado de outro modo) / Notas 2017 2016 / Segmento futebol / Receita bruta no segmento futebol",
+      "values": [
+        78.375
+      ],
+      "origen": "estado 8",
+      "glosa": "Patrocinios y publicidad"
+    },
+    {
+      "label": "Premiações, fiel torcedor e loterias e outras",
+      "lado": "revenue",
+      "page": 3,
+      "section": "Demonstrações do resultado para os exercícios findos em 31 de dezembro / (Em milhares de reais, exceto quando indicado de outro modo) / Notas 2017 2016 / Segmento futebol / Receita bruta no segmento futebol",
+      "values": [
+        35.266
+      ],
+      "origen": "estado 8",
+      "glosa": "Premios, Fiel Torcedor, loterías y otros"
+    },
+    {
+      "label": "Receitas com repasses de direitos federativos",
+      "lado": "revenue",
+      "page": 3,
+      "section": "Demonstrações do resultado para os exercícios findos em 31 de dezembro / (Em milhares de reais, exceto quando indicado de outro modo) / Notas 2017 2016 / Segmento futebol / Receita bruta no segmento futebol",
+      "values": [
+        97.831
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos por transferencia de derechos federativos"
+    },
+    {
+      "label": "outras receitas (despesas) operacionais",
+      "lado": null,
+      "page": 3,
+      "section": "Superávit operacional do futebol antes das despesas financeiras e resultado de",
+      "values": [
+        60.054
+      ],
+      "origen": "estado 11",
+      "glosa": "Otros ingresos (gastos) operativos"
+    },
+    {
+      "label": "Despesas financeiras líquidas",
+      "lado": "expense",
+      "page": 3,
+      "section": "Superávit operacional do futebol antes das despesas financeiras e resultado de",
+      "values": [
+        -33.622
+      ],
+      "origen": "estado 11",
+      "glosa": "Gastos financieros netos"
+    },
+    {
+      "label": "Outras receitas (despesas) não operacionais",
+      "lado": null,
+      "page": 3,
+      "section": "Superávit operacional do futebol antes das despesas financeiras e resultado de",
+      "values": [
+        -3.682
+      ],
+      "origen": "estado 11",
+      "glosa": "Otros ingresos (gastos) no operativos"
+    },
+    {
+      "label": "Despesas extraordinárias com o estádio Arena Corinthians",
+      "lado": "expense",
+      "page": 3,
+      "section": "Superávit operacional do futebol antes das despesas financeiras e resultado de",
+      "values": [
+        -26.567
+      ],
+      "origen": "estado 11",
+      "glosa": "Gastos extraordinarios con el estadio Arena Corinthians"
+    },
+    {
+      "label": "Despesas financeiras líquidas",
+      "lado": "expense",
+      "page": 3,
+      "section": "Déficit / superávit operacional do clube social e esportes amadores antes das",
+      "values": [
+        -13.496
+      ],
+      "origen": "estado 15",
+      "glosa": "Gastos financieros netos"
+    },
+    {
+      "label": "Outras receitas (despesas) operacionais",
+      "lado": null,
+      "page": 3,
+      "section": "Déficit / superávit operacional do clube social e esportes amadores antes das",
+      "values": [
+        -1.218
+      ],
+      "origen": "estado 15",
+      "glosa": "Otros ingresos (gastos) operativos"
+    },
+    {
+      "label": "Contribuições dos sócios",
+      "lado": null,
+      "page": 3,
+      "section": "Segmento clube social e esportes amadores / Receita bruta no segmento clube social e esportes amadores / Receita bruta",
+      "values": [
+        14.453
+      ],
+      "origen": "estado 12",
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Explorações comerciais",
+      "lado": null,
+      "page": 3,
+      "section": "Segmento clube social e esportes amadores / Receita bruta no segmento clube social e esportes amadores / Receita bruta",
+      "values": [
+        10.94
+      ],
+      "origen": "estado 12",
+      "glosa": "Explotaciones comerciales"
+    },
+    {
+      "label": "Licenciamento e franquias",
+      "lado": null,
+      "page": 3,
+      "section": "Segmento clube social e esportes amadores / Receita bruta no segmento clube social e esportes amadores / Receita bruta",
+      "values": [
+        6.108
+      ],
+      "origen": "estado 12",
+      "glosa": "Licencias y franquicias"
+    },
+    {
+      "label": "Ajuste de avaliação patrimonial - - 407.738 - -",
+      "lado": null,
+      "page": 4,
+      "section": "Ajuste de / Patrimônio Reserva de avaliação Reserva de Déficits / social reavaliação patrimonial capital - doações acumulados Total / Em 31 de dezembro de 2015 1 84.097 - 31 (202.341) (118.212) / Realização da reserva de reavaliação - (2.108) - - 2.108 -",
+      "values": [
+        407.738
+      ],
+      "origen": "estado 16",
+      "glosa": "Ajuste de valoración patrimonial - - 407.738 - -"
+    },
+    {
+      "label": "Em 31 de dezembro de 2016 1 81.989 407.738",
+      "lado": null,
+      "page": 4,
+      "section": "Ajuste de / Patrimônio Reserva de avaliação Reserva de Déficits / social reavaliação patrimonial capital - doações acumulados Total / Em 31 de dezembro de 2015 1 84.097 - 31 (202.341) (118.212) / Realização da reserva de reavaliação - (2.108) - - 2.108 -",
+      "values": [
+        -169.219
+      ],
+      "origen": "estado 16",
+      "glosa": "Al 31 de diciembre de 2016 1 81.989 407.738"
+    },
+    {
+      "label": "Ajuste de avaliação patrimonial - - (1.680) - -",
+      "lado": null,
+      "page": 4,
+      "section": "Realização da reserva de reavaliação - (2.108) - - 2.108 -",
+      "values": [
+        -1.68
+      ],
+      "origen": "estado 17",
+      "glosa": "Ajuste de valoración patrimonial - - (1.680) - -"
+    },
+    {
+      "label": "Em 31 de dezembro de 2017 1 79.881 406.058",
+      "lado": null,
+      "page": 4,
+      "section": "Realização da reserva de reavaliação - (2.108) - - 2.108 -",
+      "values": [
+        -202.219
+      ],
+      "origen": "estado 17",
+      "glosa": "Al 31 de diciembre de 2017 1 79.881 406.058"
+    },
+    {
+      "label": "Despesas boletim financeiro (bordero)",
+      "lado": "expense",
+      "page": 34,
+      "section": "gere resultado positivo, situação que não tem ocorrido conforme nota explicativa n.º 1. / No exercício de 2017 o montante de R$ 25.472 mil foi provisionado como valor a pagar ao / Arena FIl relativo a essas despesas operacionais conforme demonstrativo abaixo: / 2017 2016 / Receita bruta de jogos 63.785 50.148",
+      "values": [
+        -23.63
+      ],
+      "origen": "estado 58",
+      "glosa": "Gastos de liquidación de taquilla (borderô)"
+    },
+    {
+      "label": "Valor liquido a repassar ao Arena FII",
+      "lado": null,
+      "page": 34,
+      "section": "gere resultado positivo, situação que não tem ocorrido conforme nota explicativa n.º 1. / No exercício de 2017 o montante de R$ 25.472 mil foi provisionado como valor a pagar ao / Arena FIl relativo a essas despesas operacionais conforme demonstrativo abaixo: / 2017 2016 / Receita bruta de jogos 63.785 50.148",
+      "values": [
+        40.155
+      ],
+      "origen": "estado 58",
+      "glosa": "Valor neto a transferir al Arena FII"
+    },
+    {
+      "label": "Repasses de caixa ao Arena FIl",
+      "lado": null,
+      "page": 34,
+      "section": "gere resultado positivo, situação que não tem ocorrido conforme nota explicativa n.º 1. / No exercício de 2017 o montante de R$ 25.472 mil foi provisionado como valor a pagar ao / Arena FIl relativo a essas despesas operacionais conforme demonstrativo abaixo: / 2017 2016 / Receita bruta de jogos 63.785 50.148",
+      "values": [
+        -14.683
+      ],
+      "origen": "estado 58",
+      "glosa": "Transferencias de caja al Arena FII"
+    },
+    {
+      "label": "Giovanni Augusto de Oliveira Cardoso 60% 01/02/2016 | 31/12/2019",
+      "lado": "expense",
+      "page": 25,
+      "section": "Os saldos em 31 de dezembro de 2017 (53 Atletas) e de 2016 (46 atletas) estão assim / representados: / Direito Contrato Saldo líquido / econômico / % Início Término Custo | Amortização 2017 2016",
+      "values": [
+        15.329
+      ],
+      "origen": "estado 40",
+      "glosa": "Giovanni Augusto de Oliveira Cardoso 60% 01/02/2016 | 31/12/2019"
+    },
+    {
+      "label": "Marcos Gabriel do Nascimento 70% 18/04/2016 | 31/07/2020 |",
+      "lado": "expense",
+      "page": 25,
+      "section": "Os saldos em 31 de dezembro de 2017 (53 Atletas) e de 2016 (46 atletas) estão assim / representados: / Direito Contrato Saldo líquido / econômico / % Início Término Custo | Amortização 2017 2016",
+      "values": [
+        12.418
+      ],
+      "origen": "estado 40",
+      "glosa": "Marcos Gabriel do Nascimento 70% 18/04/2016 | 31/07/2020 |"
+    },
+    {
+      "label": "Guilherme Milhomem Gusmão 100% 28/01/2016 | 31/12/2019",
+      "lado": "expense",
+      "page": 25,
+      "section": "Os saldos em 31 de dezembro de 2017 (53 Atletas) e de 2016 (46 atletas) estão assim / representados: / Direito Contrato Saldo líquido / econômico / % Início Término Custo | Amortização 2017 2016",
+      "values": [
+        9.605
+      ],
+      "origen": "estado 40",
+      "glosa": "Guilherme Milhomem Gusmão 100% 28/01/2016 | 31/12/2019"
+    },
+    {
+      "label": "Fabian Carnelio Balbuena Gonzalez 100% 12/02/2016 | 31/12/2018",
+      "lado": "expense",
+      "page": 25,
+      "section": "Os saldos em 31 de dezembro de 2017 (53 Atletas) e de 2016 (46 atletas) estão assim / representados: / Direito Contrato Saldo líquido / econômico / % Início Término Custo | Amortização 2017 2016",
+      "values": [
+        8.845
+      ],
+      "origen": "estado 40",
+      "glosa": "Fabian Carnelio Balbuena Gonzalez 100% 12/02/2016 | 31/12/2018"
+    },
+    {
+      "label": "Lucca Borges de Brito 60% 06/05/2016 | 31/07/2019",
+      "lado": "expense",
+      "page": 25,
+      "section": "Os saldos em 31 de dezembro de 2017 (53 Atletas) e de 2016 (46 atletas) estão assim / representados: / Direito Contrato Saldo líquido / econômico / % Início Término Custo | Amortização 2017 2016",
+      "values": [
+        5.842
+      ],
+      "origen": "estado 40",
+      "glosa": "Lucca Borges de Brito 60% 06/05/2016 | 31/07/2019"
+    },
+    {
+      "label": "Gustavo Henrique Silva Souza 45% 24/08/2016 | 31/12/2020",
+      "lado": "expense",
+      "page": 25,
+      "section": "Os saldos em 31 de dezembro de 2017 (53 Atletas) e de 2016 (46 atletas) estão assim / representados: / Direito Contrato Saldo líquido / econômico / % Início Término Custo | Amortização 2017 2016",
+      "values": [
+        4.506
+      ],
+      "origen": "estado 40",
+      "glosa": "Gustavo Henrique Silva Souza 45% 24/08/2016 | 31/12/2020"
+    },
+    {
+      "label": "Edificações 4% 183.568 (40.251) 143.317 |",
+      "lado": "expense",
+      "page": 22,
+      "section": "cada item do imobilizado está descrita no quadro a seguir. / O saldo do imobilizado é composto como segue: / 2017 2016 / Taxa anual de Depreciação / depreciação Custo acumulada Líquido Líquido",
+      "values": [
+        147.296
+      ],
+      "origen": "estado 34",
+      "glosa": "Edificaciones 4% 183.568 (40.251) 143.317 |"
+    },
+    {
+      "label": "Terrenos - 421.824 - 421.824 |",
+      "lado": "expense",
+      "page": 22,
+      "section": "cada item do imobilizado está descrita no quadro a seguir. / O saldo do imobilizado é composto como segue: / 2017 2016 / Taxa anual de Depreciação / depreciação Custo acumulada Líquido Líquido",
+      "values": [
+        421.825
+      ],
+      "origen": "estado 34",
+      "glosa": "Terrenos - 421.824 - 421.824 |"
+    },
+    {
+      "label": "Máquinas e equipamentos 10%",
+      "lado": "expense",
+      "page": 22,
+      "section": "cada item do imobilizado está descrita no quadro a seguir. / O saldo do imobilizado é composto como segue: / 2017 2016 / Taxa anual de Depreciação / depreciação Custo acumulada Líquido Líquido",
+      "values": [
+        5.202
+      ],
+      "origen": "estado 34",
+      "glosa": "Maquinaria y equipo 10%"
+    },
+    {
+      "label": "Equipamentos de informática 10%",
+      "lado": "expense",
+      "page": 22,
+      "section": "cada item do imobilizado está descrita no quadro a seguir. / O saldo do imobilizado é composto como segue: / 2017 2016 / Taxa anual de Depreciação / depreciação Custo acumulada Líquido Líquido",
+      "values": [
+        6.99
+      ],
+      "origen": "estado 34",
+      "glosa": "Equipos de informática 10%"
+    },
+    {
+      "label": "Direitos de transmissão de campeonatos 159.940 -",
+      "lado": "revenue",
+      "page": 18,
+      "section": "cada periodo. / 6.2. Receitas a realizar / 2017 / Circulante Não circulante Total / Passivos",
+      "values": [
+        159.94
+      ],
+      "origen": "estado 29",
+      "glosa": "Derechos de transmisión de campeonatos 159.940 -"
+    },
+    {
+      "label": "Patrocínios 39.138 -",
+      "lado": "revenue",
+      "page": 18,
+      "section": "cada periodo. / 6.2. Receitas a realizar / 2017 / Circulante Não circulante Total / Passivos",
+      "values": [
+        39.138
+      ],
+      "origen": "estado 29",
+      "glosa": "Patrocinios 39.138 -"
+    },
+    {
+      "label": "Licenciados e franqueados",
+      "lado": "revenue",
+      "page": 18,
+      "section": "cada periodo. / 6.2. Receitas a realizar / 2017 / Circulante Não circulante Total / Passivos",
+      "values": [
+        3.544
+      ],
+      "origen": "estado 29",
+      "glosa": "Licenciatarios y franquiciados"
+    },
+    {
+      "label": "IRRF a recolher",
+      "lado": "expense",
+      "page": 30,
+      "section": "Think Ball E Sports Consulting Ltda. 765 - / Outros contratos de direito de uso de imagem 5.719 270 / Total 20.452 4.770 / 13. Obrigações e encargos fiscais e sociais a recolher / 2017 2016",
+      "values": [
+        9.696
+      ],
+      "origen": "estado 51",
+      "glosa": "Retenciones de impuestos (IRRF) por pagar"
+    },
+    {
+      "label": "INSS a recolher",
+      "lado": "expense",
+      "page": 30,
+      "section": "Think Ball E Sports Consulting Ltda. 765 - / Outros contratos de direito de uso de imagem 5.719 270 / Total 20.452 4.770 / 13. Obrigações e encargos fiscais e sociais a recolher / 2017 2016",
+      "values": [
+        2.184
+      ],
+      "origen": "estado 51",
+      "glosa": "Seguridad social (INSS) por pagar"
+    },
+    {
+      "label": "FGTS a recolher",
+      "lado": "expense",
+      "page": 30,
+      "section": "Think Ball E Sports Consulting Ltda. 765 - / Outros contratos de direito de uso de imagem 5.719 270 / Total 20.452 4.770 / 13. Obrigações e encargos fiscais e sociais a recolher / 2017 2016",
+      "values": [
+        1.331
+      ],
+      "origen": "estado 51",
+      "glosa": "Fondo de garantía (FGTS) por pagar"
+    }
+  ]
+}

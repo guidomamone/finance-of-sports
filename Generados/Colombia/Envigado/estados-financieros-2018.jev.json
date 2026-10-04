@@ -1,0 +1,1219 @@
+{
+ "md": "Clubes/Colombia/Envigado/estados-financieros-2018.md",
+ "generatedAt": "2026-09-30T22:48:56.778Z",
+ "rubrosHuella": "746a9569033c1a18dcd4610dda826f41a8d339e3",
+ "rubros": [
+  {
+   "label": "Construcciones y edificaciones",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "depreciation",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Muebles y enseres",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "depreciation",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Afiliaciones y sostenimiento",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Sustracción y hurto",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Flota y equipo de transporte",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Responsabilidad civil y extra",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Vuelo",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Aseo y vigilancia",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Asistencia técnica",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.32,
+   "desdeCache": true
+  },
+  {
+   "label": "Acueducto y alcantarillado",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Teléfono",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Correo portes",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Transporte fletes",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Gas",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Propaganda y publicidad",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Notariales",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Tramites y licencias",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "other_amortisation",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Terrenos",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "depreciation",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Maquinaria y equipo",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "depreciation",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "Instalaciones eléctricas",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "depreciation",
+   "confidence": 0.36,
+   "desdeCache": true
+  },
+  {
+   "label": "Reparaciones locativas",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Alojamiento y manutención",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Pasajes aéreos",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Pasajes terrestres",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Comisiones",
+   "lado": "expense",
+   "page": 30,
+   "section": "## 27. Gastos financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de representación",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Elementos de aseo.",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Combustibles y lubricantes",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Taxis y buses",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Contribuciones",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Energía eléctrica",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Correo portes y telegramas",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Transporte fletes y acarreos",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Registro mercantil",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipo de oficina",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipo de computación y comunicación",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Intangibles",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "player_amortisation",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Cargos diferidos",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "other_amortisation",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Elementos de aseo y cafetería",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Sueldos",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Viáticos",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Incapacidades",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilio de transporte",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Cesantías",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses a las cesantías",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Prima de servicios",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Vacaciones",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilios",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Bonificaciones",
+   "lado": "expense",
+   "page": 30,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Dotación y suministro a trabaja",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Indemnizaciones laborales",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Capacitación al personal",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes administradores de riesgos pro",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "match_organisation_expense",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes a E.P.S",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes a fondos y pensiones",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Caja de compensación",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes al I.C.B.F",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes al Sena",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "other_expenses",
+   "confidence": 0.34,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos médicos y drogas",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Revisoría fiscal",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Consultoría",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesoría jurídica",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesoría financiera",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesoría técnica",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Industria y comercio",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "De timbres",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Iva descontable",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuesto al consumo",
+   "lado": "expense",
+   "page": 26,
+   "section": "## 26. Gastos Operacionales",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Salario integral",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Básico aprendiz",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses sobre cesantías",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Dotación y suministro",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos deportivos y recreación",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes administradoras riesgos",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes E.P.S.",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.34,
+   "desdeCache": true
+  },
+  {
+   "label": "Fondo de pensiones",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes cajas de compensación",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.29,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes I.C.B.F.",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Sena",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Honorarios médicos",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "A la propiedad raíz",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "depreciation",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "De vehículos",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "De espectáculos públicos",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "DIMAYOR",
+   "lado": "revenue",
+   "page": 24,
+   "section": "### Cuotas de sostenimiento",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Escuelas de fútbol",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "youth_football",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Taquilla",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Abonados",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "season_tickets",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Venta de derechos deportivos",
+   "lado": "revenue",
+   "page": 23,
+   "section": "#### Venta de derechos deportivos",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Préstamo de derechos deportivo",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Contribución de solidaridad",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "player_sales",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos televisión internacional(1)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos televisión abierta RCN(1)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos televisión cerrada Win Sports(1)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Arbitraje",
+   "lado": "expense",
+   "page": 30,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Federación colombiana de fútbol",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "competition_bonus",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocinio",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuotas de sostenimiento",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Venta de artículos deportivos",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Entretenimiento y esparcimiento",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Casino y restaurante",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Parqueaderos",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Logística",
+   "lado": "expense",
+   "page": 30,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Defensa civil",
+   "lado": "expense",
+   "page": 30,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilios fuerzas básicas",
+   "lado": "expense",
+   "page": 30,
+   "section": "",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilios especiales equipo profesional",
+   "lado": "expense",
+   "page": 30,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos deportivos",
+   "lado": "expense",
+   "page": 30,
+   "section": "",
+   "choice": "player_amortisation",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses",
+   "lado": "expense",
+   "page": 30,
+   "section": "## 27. Gastos financieros",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Diferencia en cambio",
+   "lado": "expense",
+   "page": 30,
+   "section": "## 27. Gastos financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Descuentos comerciales condicionales",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### Otras revelaciones de Ingresos: / ### 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### Otras revelaciones de Ingresos: / ### 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Recuperación gastos bancarios",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### Otras revelaciones de Ingresos: / ### 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Reintegro de otros costos y gastos",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### Otras revelaciones de Ingresos: / ### 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Por incapacidades",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### Otras revelaciones de Ingresos: / ### 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Ajuste al peso",
+   "lado": "expense",
+   "page": 30,
+   "section": "## 28. Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses moratorios DIAN",
+   "lado": "expense",
+   "page": 30,
+   "section": "## 28. Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Multas sanciones y litigios",
+   "lado": "expense",
+   "page": 30,
+   "section": "## 28. Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos asumidos",
+   "lado": "expense",
+   "page": 30,
+   "section": "## 28. Otros Gastos",
+   "choice": "exceptional_items",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Costas y procesos judiciales",
+   "lado": "expense",
+   "page": 30,
+   "section": "## 28. Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos y gastos de ejercicios (1)",
+   "lado": "expense",
+   "page": 30,
+   "section": "## 28. Otros Gastos",
+   "choice": "exceptional_items",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisiones - deudores",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos bancarios",
+   "lado": "expense",
+   "page": 30,
+   "section": "## 27. Gastos financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Descuentos comerciales",
+   "lado": "expense",
+   "page": 30,
+   "section": "## 27. Gastos financieros",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Gravamen a los movimientos financieros",
+   "lado": "expense",
+   "page": 30,
+   "section": "## 27. Gastos financieros",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Saldo inicial 2017",
+   "lado": "expense",
+   "page": 14,
+   "section": "## 9. Propiedad Planta y Equipo: / ### Propiedad, planta y equipo - Costo",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Compras",
+   "lado": "expense",
+   "page": 14,
+   "section": "## 9. Propiedad Planta y Equipo: / ### Propiedad, planta y equipo - Costo",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos no deducibles",
+   "lado": "revenue",
+   "page": 28,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Diferencias en cambio en negocios del extranjero (Ingreso)",
+   "lado": "revenue",
+   "page": 31,
+   "section": "## 29. Estado de resultados – Otro Resultado Integral",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Diferencias en cambio en negocios del extranjero (Gasto)",
+   "lado": "expense",
+   "page": 31,
+   "section": "## 29. Estado de resultados – Otro Resultado Integral",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1038
+  }
+ ]
+}

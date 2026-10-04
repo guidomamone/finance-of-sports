@@ -1,0 +1,32 @@
+{
+ "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2019-06-30.md",
+ "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2019-06-30.pdf",
+ "club": "viborg-dk",
+ "year": 2019,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:00:16.470Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 1,
+  "notasUsadas": []
+ },
+ "ladoConocido": 1,
+ "rubros": [
+  {
+   "label": "Finansielle omkostninger",
+   "lado": "expense",
+   "page": 13,
+   "section": "Finansielle indtægter 241 100",
+   "values": [
+    -27.646
+   ],
+   "origen": "estado 3"
+  }
+ ]
+}

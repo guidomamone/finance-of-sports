@@ -1,0 +1,443 @@
+{
+ "md": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.md",
+ "generatedAt": "2026-09-30T04:30:52.338Z",
+ "rubros": [
+  {
+   "label": "Pensioenlasten",
+   "lado": null,
+   "page": 22,
+   "section": "# Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1314
+  },
+  {
+   "label": "Omzetbelasting",
+   "lado": null,
+   "page": 17,
+   "section": "### *Vorderingen* / #### Overige vorderingen en overlopende activa",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Huisvestingskosten",
+   "lado": null,
+   "page": 23,
+   "section": "# *Overige bedrijfskosten*",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1468
+  },
+  {
+   "label": "Wedstrijd- en trainingskosten",
+   "lado": null,
+   "page": 23,
+   "section": "# *Overige bedrijfskosten*",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "Algemene kosten",
+   "lado": null,
+   "page": 23,
+   "section": "# *Overige bedrijfskosten*",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1527
+  },
+  {
+   "label": "Overige vorderingen en overlopende activa",
+   "lado": null,
+   "page": 17,
+   "section": "### *Vorderingen* / #### Overige vorderingen en overlopende activa",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1489
+  },
+  {
+   "label": "Overige",
+   "lado": null,
+   "page": 23,
+   "section": "# *Verkoopkosten*",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 1451
+  },
+  {
+   "label": "Sociale lasten",
+   "lado": null,
+   "page": 22,
+   "section": "# Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "wages_squad",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1463
+  },
+  {
+   "label": "Verkoop",
+   "lado": null,
+   "page": 23,
+   "section": "# *Verkoopkosten*",
+   "choice": "player_sales",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "player_sales",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1255
+  },
+  {
+   "label": "Kostprijs merchandise",
+   "lado": null,
+   "page": 23,
+   "section": "# *Verkoopkosten*",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "sponsorship_commercial",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1398
+  },
+  {
+   "label": "Gas, water en electra",
+   "lado": null,
+   "page": 23,
+   "section": "# *Huisvestingskosten*",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1521
+  },
+  {
+   "label": "Onderhoud",
+   "lado": null,
+   "page": 23,
+   "section": "# *Huisvestingskosten*",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Belastingen en zakelijke lasten",
+   "lado": null,
+   "page": 23,
+   "section": "# *Huisvestingskosten*",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1514
+  },
+  {
+   "label": "Sponsoring",
+   "lado": null,
+   "page": 23,
+   "section": "# *Verkoopkosten*",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1437
+  },
+  {
+   "label": "Schoonmaakkosten",
+   "lado": null,
+   "page": 23,
+   "section": "# *Huisvestingskosten*",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "Overige huisvestingskosten",
+   "lado": null,
+   "page": 23,
+   "section": "# *Huisvestingskosten*",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1491
+  },
+  {
+   "label": "Rentelasten en soortgelijke kosten",
+   "lado": null,
+   "page": 24,
+   "section": "# *Som der financiële baten en lasten*",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1533
+  },
+  {
+   "label": "Trainingskosten",
+   "lado": null,
+   "page": 23,
+   "section": "# *Wedstrijd- en trainingskosten*",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.39
+    ],
+    [
+     "match_organisation_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.28
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Overige algemene kosten",
+   "lado": null,
+   "page": 24,
+   "section": "# *Algemene kosten*",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1480
+  }
+ ]
+}

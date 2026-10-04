@@ -1,0 +1,72 @@
+{
+ "md": "Clubes/Rusia/Rostov/2023-poyasneniya.md",
+ "pdf": "Clubes/Rusia/Rostov/2023-poyasneniya.pdf",
+ "club": "rostov",
+ "year": 2023,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:08:04.954Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 5,
+  "notasUsadas": []
+ },
+ "ladoConocido": 5,
+ "rubros": [
+  {
+   "label": "Материальные затраты",
+   "lado": "expense",
+   "page": 14,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    0.139059
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Расходы на оплату труда",
+   "lado": "expense",
+   "page": 14,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    1.439814
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Отчисления на социальные нужды",
+   "lado": "expense",
+   "page": 14,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    0.241657
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Амортизация",
+   "lado": "expense",
+   "page": 14,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    0.007606
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Прочие затраты",
+   "lado": "expense",
+   "page": 14,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    1.016071
+   ],
+   "origen": "estado 17"
+  }
+ ]
+}

@@ -1,0 +1,490 @@
+{
+  "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2023.md",
+  "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2023.pdf",
+  "club": "goias-br",
+  "year": 2023,
+  "generatedAt": "2026-10-03T00:16:10.234Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Direitos de transmissão de TV (a)",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        48.120138
+      ],
+      "glosa": "Derechos de retransmisión televisiva (a)"
+    },
+    {
+      "label": "Patrocínio/publicidade/propaganda (a)",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        13.370573
+      ],
+      "glosa": "Patrocinio/publicidad/propaganda (a)"
+    },
+    {
+      "label": "Premiação/participações (a)",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        10.77787
+      ],
+      "glosa": "Premios/participaciones (a)"
+    },
+    {
+      "label": "Receitas Atividades Sociais e Lazer",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        7.951299
+      ],
+      "glosa": "Ingresos por actividades sociales y de ocio"
+    },
+    {
+      "label": "Bilheterias (a)",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        7.18975
+      ],
+      "glosa": "Taquilla (a)"
+    },
+    {
+      "label": "Transação de atletas",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        4.565449
+      ],
+      "glosa": "Traspaso de deportistas"
+    },
+    {
+      "label": "Outras receitas",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        2.98135
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Sou Goiás",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        1.734466
+      ],
+      "glosa": "Sou Goiás"
+    },
+    {
+      "label": "Jogos lotéricos",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        1.011995
+      ],
+      "glosa": "Juegos de lotería"
+    },
+    {
+      "label": "Receitas patrimoniais",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.272852
+      ],
+      "glosa": "Ingresos patrimoniales"
+    },
+    {
+      "label": "(-) INSS Competições/Torneios",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -3.3035
+      ],
+      "glosa": "(-) INSS Competiciones/Torneos"
+    },
+    {
+      "label": "(-) Direito de Arena Compet./Torneios",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -2.892523
+      ],
+      "glosa": "(-) Derecho de arena compet./torneos"
+    },
+    {
+      "label": "(-) INSS Patrocínio/Publicidade/Propaganda",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.650227
+      ],
+      "glosa": "(-) INSS Patrocinio/Publicidad/Propaganda"
+    },
+    {
+      "label": "(-) Custos e Despesas Sou Goiás",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.343497
+      ],
+      "glosa": "(-) Costes y gastos Sou Goiás"
+    },
+    {
+      "label": "(-) Demais deduções da receita",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.277778
+      ],
+      "glosa": "(-) Demás deducciones de los ingresos"
+    },
+    {
+      "label": "(-) Cortez. Ingressos - Camp. Brasileiro",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.25032
+      ],
+      "glosa": "(-) Cortesía de entradas - Camp. Brasileño"
+    },
+    {
+      "label": "(-) IRRF Jogos Lotéricos",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.095634
+      ],
+      "glosa": "(-) IRRF Juegos de lotería"
+    },
+    {
+      "label": "(-) Cortez. Ingressos - Camp. Goiano",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.06145
+      ],
+      "glosa": "(-) Cortesía de entradas - Camp. Goiano"
+    },
+    {
+      "label": "(-) INSS Jogos Lotéricos",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.0506
+      ],
+      "glosa": "(-) INSS Juegos de lotería"
+    },
+    {
+      "label": "(-) Cortez. Ingressos - Copa Verde",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.042935
+      ],
+      "glosa": "(-) Cortesía de entradas - Copa Verde"
+    },
+    {
+      "label": "(-) Cortez. Ingressos - Sul. Americana",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.034245
+      ],
+      "glosa": "(-) Cortesía de entradas - Copa Sudamericana"
+    },
+    {
+      "label": "(-) Ressarcimento/Reembolso de Ingressos",
+      "lado": "revenue",
+      "page": 29,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.00028
+      ],
+      "glosa": "(-) Devolución/Reembolso de entradas"
+    },
+    {
+      "label": "Outras Receitas e Despesas",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        140.214785
+      ],
+      "glosa": "Otros ingresos y gastos"
+    },
+    {
+      "label": "Despesa com pessoal (a)",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        43.24911
+      ],
+      "glosa": "Gastos de personal (a)"
+    },
+    {
+      "label": "Despesas com viagens (b)",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        7.52929
+      ],
+      "glosa": "Gastos de viaje (b)"
+    },
+    {
+      "label": "Serviços de terceiros",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        7.501287
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Cessão de Direitos Imagem (a)",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        6.94578
+      ],
+      "glosa": "Cesión de derechos de imagen (a)"
+    },
+    {
+      "label": "Baixa Custo de Atletas",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        3.685438
+      ],
+      "glosa": "Baja de coste de deportistas"
+    },
+    {
+      "label": "Materiais Esportivos",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        2.301108
+      ],
+      "glosa": "Material deportivo"
+    },
+    {
+      "label": "Cessão Temporária",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        1.369988
+      ],
+      "glosa": "Cesión temporal"
+    },
+    {
+      "label": "Amortização de custo de atletas formados",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        1.322065
+      ],
+      "glosa": "Amortización del coste de deportistas formados"
+    },
+    {
+      "label": "Amortização de custo d atletas contratados",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        1.219063
+      ],
+      "glosa": "Amortización del coste de deportistas contratados"
+    },
+    {
+      "label": "Arbitragens",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        1.037313
+      ],
+      "glosa": "Arbitrajes"
+    },
+    {
+      "label": "Taxas confederações e federações",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.745417
+      ],
+      "glosa": "Tasas de confederaciones y federaciones"
+    },
+    {
+      "label": "Demais custos e despesas operacionais",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.568291
+      ],
+      "glosa": "Demás costes y gastos operativos"
+    },
+    {
+      "label": "Outros custos com atletas",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.52261
+      ],
+      "glosa": "Otros costes de deportistas"
+    },
+    {
+      "label": "Cessão Definitiva",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.188851
+      ],
+      "glosa": "Cesión definitiva"
+    },
+    {
+      "label": "Custos e despesas c/ pessoal jogos",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.114969
+      ],
+      "glosa": "Costes y gastos de personal de partidos"
+    },
+    {
+      "label": "Aluguéis e Estádios",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.070963
+      ],
+      "glosa": "Alquileres y estadios"
+    },
+    {
+      "label": "Exames antidoping",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.03785
+      ],
+      "glosa": "Controles antidopaje"
+    },
+    {
+      "label": "Despesa com pessoal",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        7.947338
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Provisões para contingências",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        6.380613
+      ],
+      "glosa": "Provisiones para contingencias"
+    },
+    {
+      "label": "Despesas Administrativas (materiais inclusos)",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        3.914253
+      ],
+      "glosa": "Gastos administrativos (materiales incluidos)"
+    },
+    {
+      "label": "Despesas com serviços prestados",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        3.304666
+      ],
+      "glosa": "Gastos por servicios prestados"
+    },
+    {
+      "label": "Depreciação e amortização",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        2.648703
+      ],
+      "glosa": "Depreciación y amortización"
+    },
+    {
+      "label": "Água, telefone, energia e internet",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        1.101099
+      ],
+      "glosa": "Agua, teléfono, electricidad e internet"
+    },
+    {
+      "label": "Despesas legais e judiciais",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+      "values": [
+        -0.117608
+      ],
+      "glosa": "Gastos legales y judiciales"
+    },
+    {
+      "label": "Despesas tributárias",
+      "lado": "expense",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.739705
+      ],
+      "glosa": "Gastos tributarios"
+    }
+  ]
+}

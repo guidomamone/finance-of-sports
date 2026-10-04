@@ -1,0 +1,144 @@
+{
+ "md": "Clubes/Argentina/Racing/informe-de-gestion-del-segundo-semestre-de-2025.md",
+ "generatedAt": "2026-09-30T04:25:33.577Z",
+ "rubros": [
+  {
+   "label": "2025 $",
+   "lado": null,
+   "page": 59,
+   "section": "PERÍODO            INGRESOS        EGRESOS             RESULTADO",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "lump_football_operations",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1504
+  },
+  {
+   "label": "• Socios atendidos:",
+   "lado": null,
+   "page": 61,
+   "section": "• Autogestión y servicios asociados / • Gestión de abonos, accesos y capacidad del Estadio / • Soporte tecnológico y mejoras operativas / 1. Acciones realizadas y resultados obtenidos / 1.1. Atención al socio y dispositivos presenciales",
+   "choice": "member_dues",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "member_dues",
+     0.41000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1484
+  },
+  {
+   "label": "• Transacciones presenciales:",
+   "lado": null,
+   "page": 61,
+   "section": "• Autogestión y servicios asociados / • Gestión de abonos, accesos y capacidad del Estadio / • Soporte tecnológico y mejoras operativas / 1. Acciones realizadas y resultados obtenidos / 1.1. Atención al socio y dispositivos presenciales",
+   "choice": "season_tickets",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "season_tickets",
+     0.48
+    ],
+    [
+     "member_dues",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1311
+  },
+  {
+   "label": "o En 2025, por cada peso que ingresó al área se gastaron",
+   "lado": null,
+   "page": 59,
+   "section": "estructura. / •   El mayor control sobre gastos, imputaciones y cajas chicas permitió no solo / gastar menos, sino también saber en qué se gastaba. / •   Mejora sustancial de la relación entre ingresos y egresos del área, comparando / mismo período entre 2024 y 2025",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "lump_football_operations_expense",
+     0.21000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1562
+  },
+  {
+   "label": "2024 $ 215.000.000 $",
+   "lado": null,
+   "page": 59,
+   "section": "PERÍODO            INGRESOS        EGRESOS             RESULTADO",
+   "choice": "other_income",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_income",
+     0.63
+    ],
+    [
+     "lump_football_operations",
+     0.34
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1565
+  },
+  {
+   "label": "o En 2024, por cada peso que ingresó al área se gastaron",
+   "lado": null,
+   "page": 59,
+   "section": "estructura. / •   El mayor control sobre gastos, imputaciones y cajas chicas permitió no solo / gastar menos, sino también saber en qué se gastaba. / •   Mejora sustancial de la relación entre ingresos y egresos del área, comparando / mismo período entre 2024 y 2025",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "lump_football_operations_expense",
+     0.24000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1562
+  }
+ ]
+}

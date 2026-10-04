@@ -1,0 +1,420 @@
+{
+  "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.md",
+  "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.pdf",
+  "club": "novorizontino-br",
+  "year": 2022,
+  "generatedAt": "2026-10-03T03:11:48.110Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Direitos de transmissão de TV",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        11.951683
+      ],
+      "glosa": "Derechos de retransmisión televisiva"
+    },
+    {
+      "label": "Negociação de atletas",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        12.741552
+      ],
+      "glosa": "Traspaso de jugadores"
+    },
+    {
+      "label": "Publicidade",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        2.038276
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Patrocínio",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        1.0085
+      ],
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "Arrecadação de jogos",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.764723
+      ],
+      "glosa": "Recaudación de partidos"
+    },
+    {
+      "label": "Premiações",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.596
+      ],
+      "glosa": "Premios"
+    },
+    {
+      "label": "Convênios",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.897625
+      ],
+      "glosa": "Convenios"
+    },
+    {
+      "label": "Outras receitas",
+      "lado": "revenue",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.004875
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Com pessoal",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        21.71003
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Aluguel de imóveis",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Gastos com atletas e comissão técnica\"",
+      "values": [
+        1.470969
+      ],
+      "glosa": "Alquiler de inmuebles"
+    },
+    {
+      "label": "Serviços e exames médicos",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Gastos com atletas e comissão técnica\"",
+      "values": [
+        0.464222
+      ],
+      "glosa": "Servicios y exámenes médicos"
+    },
+    {
+      "label": "Taxa da FPF e CBF",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Gastos com atletas e comissão técnica\"",
+      "values": [
+        0.219177
+      ],
+      "glosa": "Tasas de la FPF y CBF"
+    },
+    {
+      "label": "Gastos com negociação de atletas",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Gastos com atletas e comissão técnica\"",
+      "values": [
+        0.736584
+      ],
+      "glosa": "Gastos por traspaso de jugadores"
+    },
+    {
+      "label": "Multa indenizatória",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Gastos com atletas e comissão técnica\"",
+      "values": [
+        0.582358
+      ],
+      "glosa": "Multa indemnizatoria"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Gastos com atletas e comissão técnica\"",
+      "values": [
+        0.075291
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Lanches e refeições",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        1.043357
+      ],
+      "glosa": "Comidas y refrigerios"
+    },
+    {
+      "label": "Assessoria esportiva",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        5.540142
+      ],
+      "glosa": "Asesoría deportiva"
+    },
+    {
+      "label": "Assessoria de imprensa",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.0778
+      ],
+      "glosa": "Asesoría de prensa"
+    },
+    {
+      "label": "Lavanderia",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.153501
+      ],
+      "glosa": "Lavandería"
+    },
+    {
+      "label": "Estadias",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.255755
+      ],
+      "glosa": "Alojamiento y estancias"
+    },
+    {
+      "label": "Combustíveis e lubrificantes",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.159702
+      ],
+      "glosa": "Combustibles y lubricantes"
+    },
+    {
+      "label": "Energia elétrica",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.060312
+      ],
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Água e esgoto",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.059144
+      ],
+      "glosa": "Agua y alcantarillado"
+    },
+    {
+      "label": "Assessoria jurídica",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.199767
+      ],
+      "glosa": "Asesoría jurídica"
+    },
+    {
+      "label": "Depreciação",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.129289
+      ],
+      "glosa": "Amortización"
+    },
+    {
+      "label": "Assessoria administrativa",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.041259
+      ],
+      "glosa": "Asesoría administrativa"
+    },
+    {
+      "label": "Serviços médicos",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.039559
+      ],
+      "glosa": "Servicios médicos"
+    },
+    {
+      "label": "Medicamentos",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.066936
+      ],
+      "glosa": "Medicamentos"
+    },
+    {
+      "label": "Matriais de escritório e de limpeza",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.038877
+      ],
+      "glosa": "Material de oficina y limpieza"
+    },
+    {
+      "label": "Software",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.093435
+      ],
+      "glosa": "Software"
+    },
+    {
+      "label": "Serviços contábeis e auditoria",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.083652
+      ],
+      "glosa": "Servicios contables y auditoría"
+    },
+    {
+      "label": "Segurança patrimonial",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.047528
+      ],
+      "glosa": "Seguridad patrimonial"
+    },
+    {
+      "label": "Telefone e internet",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.069927
+      ],
+      "glosa": "Teléfono e internet"
+    },
+    {
+      "label": "Outras",
+      "lado": "expense",
+      "page": 30,
+      "section": "nota que desglosa \"Administrativas e gerais\"",
+      "values": [
+        0.074989
+      ],
+      "glosa": "Otras"
+    },
+    {
+      "label": "Com jogos",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        2.516472
+      ],
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Manutenção",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        1.935664
+      ],
+      "glosa": "Mantenimiento"
+    },
+    {
+      "label": "Atletas não profissionais",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        2.369901
+      ],
+      "glosa": "Deportistas no profesionales"
+    },
+    {
+      "label": "Aluguéis",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.653795
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Material esportivo",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.231931
+      ],
+      "glosa": "Material deportivo"
+    },
+    {
+      "label": "Tributária",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0.017334
+      ],
+      "glosa": "Gastos tributarios"
+    },
+    {
+      "label": "Outras receitas",
+      "lado": "expense",
+      "page": 10,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Otros ingresos"
+    }
+  ]
+}

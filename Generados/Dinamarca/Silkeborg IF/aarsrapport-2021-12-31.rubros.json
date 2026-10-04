@@ -1,0 +1,291 @@
+{
+  "md": "Clubes/Dinamarca/Silkeborg IF/aarsrapport-2021-12-31.md",
+  "pdf": "Clubes/Dinamarca/Silkeborg IF/aarsrapport-2021-12-31.pdf",
+  "club": "silkeborg-dk",
+  "year": 2021,
+  "numberFormat": "ambiguo",
+  "generatedAt": "2026-09-30T22:00:05.637Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 21,
+    "notasUsadas": [
+      "8",
+      "10"
+    ]
+  },
+  "ladoConocido": 22,
+  "rubros": [
+    {
+      "label": "Entréindtægter",
+      "lado": "revenue",
+      "page": 18,
+      "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+      "values": [
+        1.839
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Nettoomsætning",
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Nettoomsætning",
+      "lado": "revenue",
+      "page": 13,
+      "section": "# Resultatopgørelse for 2021",
+      "values": [
+        47.124
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "TV- Indtægter",
+      "lado": "revenue",
+      "page": 18,
+      "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+      "values": [
+        13.117
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Nettoomsætning",
+      "glosa": "Ingresos por derechos de televisión"
+    },
+    {
+      "label": "Sponsor- og samarbejdsaftaler",
+      "lado": "revenue",
+      "page": 18,
+      "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+      "values": [
+        19.742
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Nettoomsætning",
+      "glosa": "Patrocinios y acuerdos de colaboración"
+    },
+    {
+      "label": "Salg af merchandise",
+      "lado": "revenue",
+      "page": 18,
+      "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+      "values": [
+        0.745
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Nettoomsætning",
+      "glosa": "Venta de merchandising"
+    },
+    {
+      "label": "Kompensation (FIFA/UEFA/DBU)",
+      "lado": "revenue",
+      "page": 18,
+      "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+      "values": [
+        2.647
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Nettoomsætning",
+      "glosa": "Compensación (FIFA/UEFA/DBU)"
+    },
+    {
+      "label": "Food & beverage JYSK PARK",
+      "lado": "revenue",
+      "page": 18,
+      "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+      "values": [
+        2.131
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Nettoomsætning",
+      "glosa": "Alimentos y bebidas JYSK PARK"
+    },
+    {
+      "label": "Øvrige driftindtægter",
+      "lado": "revenue",
+      "page": 18,
+      "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+      "values": [
+        6.903
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Nettoomsætning",
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Andre driftsindtægter",
+      "lado": "revenue",
+      "page": 13,
+      "section": "# Resultatopgørelse for 2021",
+      "values": [
+        13.304
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros ingresos operativos"
+    },
+    {
+      "label": "Andre eksterne omkostninger",
+      "lado": "expense",
+      "page": 13,
+      "section": "# Resultatopgørelse for 2021",
+      "values": [
+        -19.49
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros gastos externos"
+    },
+    {
+      "label": "Gager og lønninger",
+      "lado": "expense",
+      "page": 19,
+      "section": "5 Personaleomkostninger",
+      "values": [
+        32.154
+      ],
+      "origen": "nota 10 (ancla 1)",
+      "ancla": "Personaleomkostninger",
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Personaleomkostninger",
+      "lado": "expense",
+      "page": 13,
+      "section": "# Resultatopgørelse for 2021",
+      "values": [
+        -35.307
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Pensioner",
+      "lado": "expense",
+      "page": 19,
+      "section": "5 Personaleomkostninger",
+      "values": [
+        1.453
+      ],
+      "origen": "nota 10 (ancla 1)",
+      "ancla": "Personaleomkostninger",
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 19,
+      "section": "5 Personaleomkostninger",
+      "values": [
+        0.484
+      ],
+      "origen": "nota 10 (ancla 1)",
+      "ancla": "Personaleomkostninger",
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Andre personaleomkostninger",
+      "lado": "expense",
+      "page": 19,
+      "section": "5 Personaleomkostninger",
+      "values": [
+        1.216
+      ],
+      "origen": "nota 10 (ancla 1)",
+      "ancla": "Personaleomkostninger",
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Af- og nedskrivninger",
+      "lado": null,
+      "page": 13,
+      "section": "# Resultatopgørelse for 2021",
+      "values": [
+        -8.94
+      ],
+      "origen": "estado 1",
+      "glosa": "Amortizaciones y correcciones de valor"
+    },
+    {
+      "label": "Andre finansielle indtægter",
+      "lado": "revenue",
+      "page": 13,
+      "section": "# Resultatopgørelse for 2021",
+      "values": [
+        0.344
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros ingresos financieros"
+    },
+    {
+      "label": "Andre finansielle omkostninger",
+      "lado": "expense",
+      "page": 13,
+      "section": "# Resultatopgørelse for 2021",
+      "values": [
+        -0.415
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros gastos financieros"
+    },
+    {
+      "label": "Transferindtægter",
+      "lado": "revenue",
+      "page": 18,
+      "section": "3 Andre driftsindtægter",
+      "values": [
+        0.008418
+      ],
+      "origen": "estado 9",
+      "glosa": "Ingresos por traspasos"
+    },
+    {
+      "label": "Offentlige tilskud",
+      "lado": "revenue",
+      "page": 18,
+      "section": "3 Andre driftsindtægter",
+      "values": [
+        0.004754
+      ],
+      "origen": "estado 9",
+      "glosa": "Subvenciones públicas"
+    },
+    {
+      "label": "Salg af materielle anlægsaktiver",
+      "lado": "revenue",
+      "page": 18,
+      "section": "3 Andre driftsindtægter",
+      "values": [
+        0.000132
+      ],
+      "origen": "estado 9",
+      "glosa": "Venta de inmovilizado material"
+    },
+    {
+      "label": "Finansielle indtægter fra tilknyttede virksomheder",
+      "lado": "revenue",
+      "page": 19,
+      "section": "6 Andre finansielle indtægter",
+      "values": [
+        344
+      ],
+      "origen": "estado 12",
+      "glosa": "Ingresos financieros de empresas vinculadas"
+    },
+    {
+      "label": "Renteomkostninger i øvrigt",
+      "lado": "expense",
+      "page": 19,
+      "section": "7 Andre finansielle omkostninger",
+      "values": [
+        415
+      ],
+      "origen": "estado 13",
+      "glosa": "Otros gastos por intereses"
+    }
+  ]
+}

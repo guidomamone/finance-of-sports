@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2018.md",
+ "generado": "2026-10-03T03:42:17.186Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "caja": {
+  "lineas": [
+   179
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   181
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La tabla está mal extraída: las líneas del pasivo no circulante (L191-L193) aparecen duplicadas del lado del activo. Solo 'Empréstimos' (L181, corriente) es deuda financiera; los débitos con partes relacionadas (L191) no se incluyeron por no ser bancarios."
+}

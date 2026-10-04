@@ -1,0 +1,344 @@
+{
+  "md": "Clubes/Países Bajos/PSV/PSV-Jaarverslag-2019-2020.md",
+  "pdf": "Clubes/Países Bajos/PSV/PSV-Jaarverslag-2019-2020.pdf",
+  "club": "psv-nl",
+  "year": 2020,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:07:27.086Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 24,
+    "notasUsadas": [
+      "21",
+      "22",
+      "24",
+      "26"
+    ]
+  },
+  "ladoConocido": 23,
+  "rubros": [
+    {
+      "label": "Recettes competitie en KNVB beker",
+      "lado": "revenue",
+      "page": 24,
+      "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+      "values": [
+        1.27
+      ],
+      "origen": "nota 21 (ancla 2)",
+      "ancla": "Netto-omzet (18)",
+      "glosa": "Ingresos por taquilla de liga y copa KNVB"
+    },
+    {
+      "label": "Netto-omzet (18)",
+      "lado": "revenue",
+      "page": 14,
+      "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+      "values": [
+        71.538
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Cifra neta de negocios (18)"
+    },
+    {
+      "label": "Recettes Europees voetbal",
+      "lado": "revenue",
+      "page": 24,
+      "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+      "values": [
+        2.299
+      ],
+      "origen": "nota 21 (ancla 2)",
+      "ancla": "Netto-omzet (18)",
+      "glosa": "Ingresos por taquilla de competiciones europeas"
+    },
+    {
+      "label": "Seizoen Club Cards",
+      "lado": "revenue",
+      "page": 24,
+      "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+      "values": [
+        6.789
+      ],
+      "origen": "nota 21 (ancla 2)",
+      "ancla": "Netto-omzet (18)",
+      "glosa": "Abonos de temporada"
+    },
+    {
+      "label": "Premies Europees voetbal",
+      "lado": "revenue",
+      "page": 24,
+      "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+      "values": [
+        8.541
+      ],
+      "origen": "nota 21 (ancla 2)",
+      "ancla": "Netto-omzet (18)",
+      "glosa": "Premios por competiciones europeas"
+    },
+    {
+      "label": "Overige wedstrijdopbrengsten",
+      "lado": "revenue",
+      "page": 24,
+      "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+      "values": [
+        0.99
+      ],
+      "origen": "nota 21 (ancla 2)",
+      "ancla": "Netto-omzet (18)",
+      "glosa": "Otros ingresos por partidos"
+    },
+    {
+      "label": "Partnerships",
+      "lado": "revenue",
+      "page": 24,
+      "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+      "values": [
+        27.599
+      ],
+      "origen": "nota 21 (ancla 2)",
+      "ancla": "Netto-omzet (18)",
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Merchandising",
+      "lado": "revenue",
+      "page": 24,
+      "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+      "values": [
+        4.625
+      ],
+      "origen": "nota 21 (ancla 2)",
+      "ancla": "Netto-omzet (18)",
+      "glosa": "Merchandising"
+    },
+    {
+      "label": "Media",
+      "lado": "revenue",
+      "page": 24,
+      "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+      "values": [
+        9.22
+      ],
+      "origen": "nota 21 (ancla 2)",
+      "ancla": "Netto-omzet (18)",
+      "glosa": "Derechos audiovisuales"
+    },
+    {
+      "label": "Stadionexploitatie",
+      "lado": "revenue",
+      "page": 24,
+      "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+      "values": [
+        2.886
+      ],
+      "origen": "nota 21 (ancla 2)",
+      "ancla": "Netto-omzet (18)",
+      "glosa": "Explotación del estadio"
+    },
+    {
+      "label": "Overige opbrengsten",
+      "lado": "revenue",
+      "page": 24,
+      "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+      "values": [
+        7.319
+      ],
+      "origen": "nota 21 (ancla 2)",
+      "ancla": "Netto-omzet (18)",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Kostprijs van de omzet",
+      "lado": "expense",
+      "page": 14,
+      "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+      "values": [
+        3.793
+      ],
+      "origen": "estado 2",
+      "glosa": "Coste de las ventas"
+    },
+    {
+      "label": "Lonen en salarissen",
+      "lado": "expense",
+      "page": 24,
+      "section": "## LONEN, SALARISSEN EN SOCIALE LASTEN (19)",
+      "values": [
+        43.901
+      ],
+      "origen": "nota 22 (ancla 2)",
+      "ancla": "Lonen, salarissen en sociale lasten (19)",
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Lonen, salarissen en sociale lasten (19)",
+      "lado": "expense",
+      "page": 14,
+      "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+      "values": [
+        47.066
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Sueldos, salarios y cargas sociales (19)"
+    },
+    {
+      "label": "Sociale lasten",
+      "lado": "expense",
+      "page": 24,
+      "section": "## LONEN, SALARISSEN EN SOCIALE LASTEN (19)",
+      "values": [
+        2.478
+      ],
+      "origen": "nota 22 (ancla 2)",
+      "ancla": "Lonen, salarissen en sociale lasten (19)",
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Pensionlasten",
+      "lado": "expense",
+      "page": 24,
+      "section": "## LONEN, SALARISSEN EN SOCIALE LASTEN (19)",
+      "values": [
+        0.687
+      ],
+      "origen": "nota 22 (ancla 2)",
+      "ancla": "Lonen, salarissen en sociale lasten (19)",
+      "glosa": "Gastos por pensiones"
+    },
+    {
+      "label": "Afschrijvingen op materiële vaste activa",
+      "lado": "expense",
+      "page": 14,
+      "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+      "values": [
+        6.378
+      ],
+      "origen": "estado 2",
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Overige personeelskosten",
+      "lado": "expense",
+      "page": 24,
+      "section": "## OVERIGE BEDRIJFSKOSTEN (20)",
+      "values": [
+        4.314
+      ],
+      "origen": "nota 24 (ancla 2)",
+      "ancla": "Overige bedrijfskosten (20)",
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Overige bedrijfskosten (20)",
+      "lado": "expense",
+      "page": 14,
+      "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+      "values": [
+        30.413
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Otros gastos de explotación (20)"
+    },
+    {
+      "label": "Wedstrijdkosten",
+      "lado": "expense",
+      "page": 24,
+      "section": "## OVERIGE BEDRIJFSKOSTEN (20)",
+      "values": [
+        5.113
+      ],
+      "origen": "nota 24 (ancla 2)",
+      "ancla": "Overige bedrijfskosten (20)",
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Huisvestingskosten",
+      "lado": "expense",
+      "page": 24,
+      "section": "## OVERIGE BEDRIJFSKOSTEN (20)",
+      "values": [
+        7.859
+      ],
+      "origen": "nota 24 (ancla 2)",
+      "ancla": "Overige bedrijfskosten (20)",
+      "glosa": "Gastos de inmuebles e instalaciones"
+    },
+    {
+      "label": "Beheerskosten",
+      "lado": "expense",
+      "page": 24,
+      "section": "## OVERIGE BEDRIJFSKOSTEN (20)",
+      "values": [
+        13.127
+      ],
+      "origen": "nota 24 (ancla 2)",
+      "ancla": "Overige bedrijfskosten (20)",
+      "glosa": "Gastos de administración y gestión"
+    },
+    {
+      "label": "Vergoedingsommen",
+      "lado": null,
+      "page": 14,
+      "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+      "values": [
+        46.928
+      ],
+      "origen": "estado 2",
+      "glosa": "Indemnizaciones por traspasos"
+    },
+    {
+      "label": "Afschrijving op vergoedingssommen",
+      "lado": null,
+      "page": 14,
+      "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+      "values": [
+        -22.305
+      ],
+      "origen": "estado 2",
+      "glosa": "Amortización de derechos de traspaso"
+    },
+    {
+      "label": "Bijzondere waardeverminderingen",
+      "lado": null,
+      "page": 14,
+      "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+      "values": [
+        -2.613
+      ],
+      "origen": "estado 2",
+      "glosa": "Pérdidas por deterioro de valor"
+    },
+    {
+      "label": "Renteresultaat (21)",
+      "lado": null,
+      "page": 14,
+      "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+      "values": [
+        -3.743
+      ],
+      "origen": "estado 2",
+      "glosa": "Resultado por intereses (21)"
+    },
+    {
+      "label": "Belastingen (22)",
+      "lado": "expense",
+      "page": 14,
+      "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+      "values": [
+        -0.584
+      ],
+      "origen": "estado 2 (su nota queda consumida sin abrir)",
+      "glosa": "Impuestos (22)"
+    }
+  ]
+}

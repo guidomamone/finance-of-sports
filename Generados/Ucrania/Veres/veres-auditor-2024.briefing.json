@@ -1,0 +1,97 @@
+{
+  "club": "veres",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Ucrania/Veres/veres-auditor-2024.md",
+  "generatedAt": "2026-09-30T22:08:24.070Z",
+  "numberFormat": "espacio como separador de miles (escandinavo)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 5
+  },
+  "scannedWarning": true,
+  "tableCount": 3,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "# ЗВІТ НЕЗАЛЕЖНОГО АУДИТОРА / # ПУБЛІЧНОГО АКЦІОНЕРНОГО ТОВАРИСТВА",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Україна 01033, м.Київ, вул. Сім'ї Прахових, 27, оф.",
+          "values": [
+            "5,"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Номер в Реєстрі аудиторів та суб'єктів аудиторської діяльності",
+          "values": [
+            "1525."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "# ІНФОРМАЦІЯ ПРО ІНШІ НАДАНІ АУДИТОРОМ ПОСЛУГИ / # ПОЯСНЕННЯ ЩОДО ОБСЯГУ АУДИТУ ТА ВЛАСТИВИХ АУДИТУ ОБМЕЖЕНЬ",
+      "columns": [
+        "Повне найменування юридичної особи (учасника ринків капіталу та організованих товарних ринків)",
+        "ПУБЛІЧНЕ АКЦІОНЕРНЕ ТОВАРИСТВО «РІВНЕНСЬКИЙ НАРОДНИЙ КЛУБ «ВЕРЕС»"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Думка аудитора щодо повного розкриття юридичною особою (заявником або учасником ринків",
+          "values": [
+            "На основі нашого аудиту ніщо не привернуло нашої уваги, що б змусило нас вважати, що Товариство не повністю розкрило інформацію про кінцевого"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 11,
+      "section": "ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ «ААН «СЕЙЯ-КІРШ-АУДИТ» 10",
+      "columns": [
+        "капіталу та організованих товарних ринків) інформації про кінцевого бенефіціарного власника (у разі наявності) та структуру власності станом на дату аудиту",
+        "бенефіціарного власника та структуру власності відповідно до вимог, встановлених Положенням про форму та зміст структури власності, затвердженим наказом Міністерства фінансів України від 19 березня 2022 року № 163."
+      ],
+      "rows": [
+        {
+          "rawLabel": "Інформація про те, чи є суб'єкт господарювання: контролером/учасником небанківської фінансової групи; підприємством, що становить суспільний інтерес",
+          "values": [
+            "ПАТ «РНК «ВЕРЕС» не є контролером/учасником небанківської фінансової групи. ПАТ «РНК «ВЕРЕС» є підприємством, що становить суспільний інтерес."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інформація про наявність у суб'єкта господарювання материнських/дочірніх компаній",
+          "values": [
+            "У ПАТ «РНК «ВЕРЕС» відсутні материнські/дочірні компанії."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/veres-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"veres\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+  ]
+}

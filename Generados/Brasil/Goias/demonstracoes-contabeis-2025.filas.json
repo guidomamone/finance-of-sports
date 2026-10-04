@@ -1,0 +1,686 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf",
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-02T22:46:49.122Z",
+ "ubicacion": {
+  "estado": [
+   "b8"
+  ],
+  "notas_ingresos": [
+   "b36",
+   "b39",
+   "b41"
+  ],
+  "notas_gastos": [
+   "b37",
+   "b38",
+   "b40"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "L214: (Valores expressos em Reais - R$)"
+  },
+  {
+   "bloque": "b36",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; importes coinciden con b8 (L1218 = L218)"
+  },
+  {
+   "bloque": "b39",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; total coincide con b8 L226"
+  },
+  {
+   "bloque": "b41",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; total coincide con b8 L224"
+  },
+  {
+   "bloque": "b37",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; total coincide con b8 L219"
+  },
+  {
+   "bloque": "b38",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; total coincide con b8 L222"
+  },
+  {
+   "bloque": "b40",
+   "escala": "unidades",
+   "evidencia": "Sin frase propia; total coincide con b8 L227"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b8",
+   "linea": 218,
+   "etiqueta": "Receita líquida",
+   "actual": "45.374.624",
+   "anterior": "37.975.414",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 219,
+   "etiqueta": "Custo com futebol",
+   "actual": "(100.209.847)",
+   "anterior": "(76.647.440)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 220,
+   "etiqueta": "Superávit (Déficit) bruto",
+   "actual": "(54.835.223)",
+   "anterior": "(38.672.026)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 221,
+   "etiqueta": "Despesas",
+   "actual": "(40.504.946)",
+   "anterior": "(34.610.029)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 222,
+   "etiqueta": "Despesas administrativas e gerais",
+   "actual": "(33.771.252)",
+   "anterior": "(27.382.857)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 223,
+   "etiqueta": "Despesas tributárias",
+   "actual": "(195.678)",
+   "anterior": "(323.384)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 224,
+   "etiqueta": "Outras Receitas e Despesas",
+   "actual": "(6.538.017)",
+   "anterior": "(6.903.788)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 225,
+   "etiqueta": "Superávit (Déficit)antes do resultado financeiro",
+   "actual": "(95.340.169)",
+   "anterior": "(73.282.055)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 226,
+   "etiqueta": "Receitas financeiras",
+   "actual": "3.906.292",
+   "anterior": "7.204.010",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 227,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(6.676.216)",
+   "anterior": "(3.042.582)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 228,
+   "etiqueta": "Resultado financeiro líquido",
+   "actual": "(2.769.924)",
+   "anterior": "4.161.428",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 229,
+   "etiqueta": "Déficit do exercício",
+   "actual": "(98.110.093)",
+   "anterior": "(69.120.627)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b36",
+   "linea": 1211,
+   "etiqueta": "Direitos de transmissão de TV",
+   "actual": "16.887.449",
+   "anterior": "9.604.224",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1212,
+   "etiqueta": "Receitas Atividades Sociais e Lazer",
+   "actual": "9.835.889",
+   "anterior": "8.759.568",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1213,
+   "etiqueta": "Patrocínio/bilheteria/Sócio Torcedor/ Outras",
+   "actual": "19.931.127",
+   "anterior": "19.267.714",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1214,
+   "etiqueta": "Transação de atletas",
+   "actual": "1.084.364",
+   "anterior": "3.587.690",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1215,
+   "etiqueta": "Total",
+   "actual": "47.738.829",
+   "anterior": "41.219.196",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1217,
+   "etiqueta": "(-) Demais deduções da receita",
+   "actual": "(2.364.205)",
+   "anterior": "(3.243.782)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1218,
+   "etiqueta": "Receita líquida",
+   "actual": "45.374.624",
+   "anterior": "37.975.414",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1280,
+   "etiqueta": "Rendimentos de aplicações financeiras",
+   "actual": "3.236.464",
+   "anterior": "6.286.080",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1281,
+   "etiqueta": "Atualizações monetárias",
+   "actual": "194.123",
+   "anterior": "305.802",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1282,
+   "etiqueta": "Receitas com variações cambiais",
+   "actual": "49.460",
+   "anterior": "225.956",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1283,
+   "etiqueta": "Outras receitas financeiras",
+   "actual": "426.244",
+   "anterior": "386.172",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1284,
+   "etiqueta": "Total",
+   "actual": "3.906.291",
+   "anterior": "7.204.010",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Receitas financeiras"
+  },
+  {
+   "bloque": "b41",
+   "linea": 1299,
+   "etiqueta": "Despesas com Earn In (a)",
+   "actual": "(7.977.865)",
+   "anterior": "(6.972.437)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Outras Receitas e Despesas"
+  },
+  {
+   "bloque": "b41",
+   "linea": 1300,
+   "etiqueta": "Outras Receitas (b)",
+   "actual": "1.439.848",
+   "anterior": "68.649",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Outras Receitas e Despesas"
+  },
+  {
+   "bloque": "b41",
+   "linea": 1301,
+   "etiqueta": "",
+   "actual": "(6.538.017)",
+   "anterior": "(6.903.788)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "Outras Receitas e Despesas"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1224,
+   "etiqueta": "Despesa com pessoal (a)",
+   "actual": "(60.604.081)",
+   "anterior": "(44.603.582)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1225,
+   "etiqueta": "Cessão de Direitos Imagem",
+   "actual": "(14.799.284)",
+   "anterior": "(12.284.241)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1226,
+   "etiqueta": "Serviços de terceiros (b)",
+   "actual": "(12.827.914)",
+   "anterior": "(8.114.569)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1227,
+   "etiqueta": "Despesa formação atletas base",
+   "actual": "(2.257.512)",
+   "anterior": "(2.174.585)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1228,
+   "etiqueta": "Demais custos e despesas operacionais",
+   "actual": "(1.923.779)",
+   "anterior": "(907.274)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1229,
+   "etiqueta": "Materiais Esportivos",
+   "actual": "(1.888.534)",
+   "anterior": "(1.185.464)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1230,
+   "etiqueta": "Amortização de custo de atletas contratados",
+   "actual": "(1.471.898)",
+   "anterior": "(1.063.213)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1231,
+   "etiqueta": "Cessão Temporária",
+   "actual": "(1.330.526)",
+   "anterior": "(488.366)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1232,
+   "etiqueta": "Outros custos com jogos e atletas",
+   "actual": "(1.291.424)",
+   "anterior": "(695.491)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1233,
+   "etiqueta": "Taxas confederações e federações",
+   "actual": "(688.253)",
+   "anterior": "(601.449)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1234,
+   "etiqueta": "Luvas",
+   "actual": "(598.999)",
+   "anterior": "(423.842)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1235,
+   "etiqueta": "Amortização de custo de atletas formados",
+   "actual": "(423.305)",
+   "anterior": "(695.254)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1236,
+   "etiqueta": "Custos e despesas c/ pessoal jogos",
+   "actual": "(103.989)",
+   "anterior": "(104.915)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1237,
+   "etiqueta": "Arbitragens",
+   "actual": "(350)",
+   "anterior": "(127.483)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1238,
+   "etiqueta": "Despesas com viagens",
+   "actual": "-",
+   "anterior": "(3.161.637)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1239,
+   "etiqueta": "Cessão Definitiva",
+   "actual": "-",
+   "anterior": "(2.525)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1240,
+   "etiqueta": "Exames antidoping",
+   "actual": "-",
+   "anterior": "(13.550)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1241,
+   "etiqueta": "Total",
+   "actual": "(100.209.847)",
+   "anterior": "(76.647.440)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Custo com futebol"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1263,
+   "etiqueta": "Despesas Administrativas (a)",
+   "actual": "(10.346.189)",
+   "anterior": "(5.702.875)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas administrativas e gerais"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1264,
+   "etiqueta": "Despesas com serviços prestados",
+   "actual": "(8.729.303)",
+   "anterior": "(6.795.380)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas administrativas e gerais"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1265,
+   "etiqueta": "Despesa com pessoal",
+   "actual": "(7.972.794)",
+   "anterior": "(9.428.348)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas administrativas e gerais"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1266,
+   "etiqueta": "Despesas legais e judiciais (b)",
+   "actual": "(3.104.744)",
+   "anterior": "(43.735)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas administrativas e gerais"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1267,
+   "etiqueta": "Depreciação e amortização",
+   "actual": "(2.521.457)",
+   "anterior": "(2.608.742)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas administrativas e gerais"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1268,
+   "etiqueta": "Água, telefone, energia e internet",
+   "actual": "(1.096.766)",
+   "anterior": "(1.062.935)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas administrativas e gerais"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1269,
+   "etiqueta": "Provisões para contingências",
+   "actual": "-",
+   "anterior": "(1.740.842)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas administrativas e gerais"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1270,
+   "etiqueta": "Total",
+   "actual": "(33.771.252)",
+   "anterior": "(27.382.857)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Despesas administrativas e gerais"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1288,
+   "etiqueta": "Atualizações monetárias",
+   "actual": "(5.735.115)",
+   "anterior": "(2.922.239)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1289,
+   "etiqueta": "Descontos concedidos",
+   "actual": "(877.206)",
+   "anterior": "(5.633)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1290,
+   "etiqueta": "Despesas com variações cambiais",
+   "actual": "(61.418)",
+   "anterior": "(112.220)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1291,
+   "etiqueta": "Outras despesas financeiras",
+   "actual": "(2.476)",
+   "anterior": "(2.490)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1292,
+   "etiqueta": "Total",
+   "actual": "(6.676.216)",
+   "anterior": "(3.042.582)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Despesas financeiras"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1293,
+   "etiqueta": "Resultado financeiro",
+   "actual": "(2.769.925)",
+   "anterior": "4.161.428",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Resultado financeiro líquido"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 218,
+  "actual": "45.374.624"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 229,
+  "actual": "(98.110.093)",
+  "anterior": "(69.120.627)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que no existe en el documento un renglón ni cuadro de 'Estadio' ni de 'Cuotas sociales' y que esos conceptos están englobados en 'Receitas Atividades Sociais e Lazer' (L1212) y 'Patrocínio/bilheteria/Sócio Torcedor/ Outras' (L1213)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Receita líquida",
+   "texto": "La nota 18 (b36) no abre un desglose de bilheteria/estadio ni de sócio torcedor/cuotas sociales; vienen agregados en L1212-L1213.",
+   "bloques": [
+    "b36"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera de b40 la repetición de las filas L1283-L1284 que ya se cargaron desde b39?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Receitas financeiras",
+   "texto": "b40 arranca con L1283-L1284, que pertenecen al cuadro de receitas financeiras de b39.",
+   "bloques": [
+    "b39",
+    "b40"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Escala en reales (unidades) según L214; notas sin leyenda propia pero coinciden con el estado. Diferencias de 1 en Receitas financeiras (L226 3.906.292 vs L1284 3.906.291) y Resultado financeiro (L228 vs L1293) son redondeo. No hay impuesto a las ganancias en el estado. No se imprime un total de gastos único. No hay renglones de Estadio ni Cuotas sociales separados: están dentro de L1212/L1213."
+}

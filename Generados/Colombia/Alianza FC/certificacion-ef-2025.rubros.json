@@ -1,0 +1,95 @@
+{
+ "md": "Clubes/Colombia/Alianza FC/certificacion-ef-2025.md",
+ "pdf": "Clubes/Colombia/Alianza FC/certificacion-ef-2025.pdf",
+ "club": "alianza-fc",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:57:42.492Z",
+ "tieOuts": {
+  "cierran": 12,
+  "noCierran": 3
+ },
+ "warnings": [
+  "3 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "8 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 7,
+  "notasUsadas": []
+ },
+ "ladoConocido": 7,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias (Nota 21)",
+   "lado": "revenue",
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    14346.940128
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Gastos de administración (Nota 22)",
+   "lado": "expense",
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    -3673.013954
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Gastos de ventas (Nota 22)",
+   "lado": "expense",
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    -11063.443283
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Otros ingresos (Nota 21)",
+   "lado": "revenue",
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    338.228929
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Ingresos financieros (Nota 21)",
+   "lado": "revenue",
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    2.560832
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Otros gastos (Nota 22)",
+   "lado": "expense",
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    -86.846029
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Gastos financieros (Nota 22)",
+   "lado": "expense",
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    -352.336496
+   ],
+   "origen": "estado 2"
+  }
+ ]
+}

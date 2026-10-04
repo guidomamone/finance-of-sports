@@ -1,0 +1,190 @@
+{
+  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2024-25.md",
+  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2024-25.pdf",
+  "club": "juventus-it",
+  "year": 2025,
+  "generatedAt": "2026-10-03T23:23:53.227Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ticket sales",
+      "lado": "revenue",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        65.410993
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Broadcasting revenues",
+      "lado": "revenue",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        177.388791
+      ],
+      "glosa": "Ingresos por derechos audiovisuales"
+    },
+    {
+      "label": "Revenues from sponsorship and advertising",
+      "lado": "revenue",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        105.619021
+      ],
+      "glosa": "Ingresos por patrocinio y publicidad"
+    },
+    {
+      "label": "Revenues from sales of products and licences",
+      "lado": "revenue",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        10.31347
+      ],
+      "glosa": "Ingresos por venta de productos y licencias"
+    },
+    {
+      "label": "Revenues from players' registration rights",
+      "lado": "revenue",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        109.724534
+      ],
+      "glosa": "Ingresos por derechos federativos de jugadores"
+    },
+    {
+      "label": "Other income",
+      "lado": "revenue",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        56.215886
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Change in the fair value of equity investments in joint ventures",
+      "lado": "revenue",
+      "page": 193,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+      "values": [
+        1.837205
+      ],
+      "glosa": "Variación del valor razonable de inversiones en negocios conjuntos"
+    },
+    {
+      "label": "Cost of raw materials and other consumables",
+      "lado": "expense",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        4.588252
+      ],
+      "glosa": "Coste de materias primas y otros consumibles"
+    },
+    {
+      "label": "Cost of goods for sale",
+      "lado": "expense",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.583172
+      ],
+      "glosa": "Coste de mercaderías para la venta"
+    },
+    {
+      "label": "External services",
+      "lado": "expense",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        95.001543
+      ],
+      "glosa": "Servicios exteriores"
+    },
+    {
+      "label": "Registered players and technical staff",
+      "lado": "expense",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        220.268725
+      ],
+      "glosa": "Jugadores inscritos y cuerpo técnico"
+    },
+    {
+      "label": "Other personnel expenses",
+      "lado": "expense",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        22.702276
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Expenses from players' registration rights",
+      "lado": "expense",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        43.770967
+      ],
+      "glosa": "Gastos por derechos federativos de jugadores"
+    },
+    {
+      "label": "Other operating expenses",
+      "lado": "expense",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        15.466314
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Amortisation and write-downs of players' registration rights",
+      "lado": "expense",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        124.931543
+      ],
+      "glosa": "Amortización y deterioro de derechos federativos de jugadores"
+    },
+    {
+      "label": "Depreciation/amortisation of other tangible and intangible assets",
+      "lado": "expense",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        10.046757
+      ],
+      "glosa": "Amortización de otros activos materiales e intangibles"
+    },
+    {
+      "label": "Provisions, other impairments/reversals and releases of provisions",
+      "lado": "expense",
+      "page": 193,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        16.765822
+      ],
+      "glosa": "Provisiones, otros deterioros/reversiones y aplicaciones de provisiones"
+    },
+    {
+      "label": "Equity-accounted profit (loss) of associates",
+      "lado": "expense",
+      "page": 193,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)",
+      "values": [
+        0.00247
+      ],
+      "glosa": "Resultado de asociadas contabilizadas por el método de la participación"
+    }
+  ]
+}

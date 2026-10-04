@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Antwerp/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-02T00:10:40.527Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   345
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Caja: 'Liquide middelen' (L345). Las páginas del pasivo (Passiva, con financiële schulden en codes 170/4 y 42/43) no fueron incluidas, por lo que no se pueden identificar las líneas de deuda financiera. La escala no se indica en forma explícita: los importes del balance coinciden con los euros exactos del informe del auditor (balanstotaal € 52.596.796,83 frente a 52.596.797), por lo que parecen estar en unidades de euro."
+}

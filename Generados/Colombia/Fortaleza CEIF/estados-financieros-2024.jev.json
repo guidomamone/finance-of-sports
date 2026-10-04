@@ -1,0 +1,556 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.md",
+ "generatedAt": "2026-10-02T20:07:38.176Z",
+ "rubrosHuella": "06e1588038598210f96b549dab54e84885b1b256",
+ "rubros": [
+  {
+   "label": "Derechos de televisión nacional",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Patrocinios (1)\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Federación Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilio hotelero",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Convenio entre clubes",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilio de arbitraje",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilio de transporte",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros auxilios (*)",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Patrocinios (1)\"",
+   "choice": "broadcasting",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Propaganda y publicidad",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Patrocinios (1)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos deportivos (2)",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Boletería",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Enseñanza",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "education",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Transportes",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "broadcasting",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Venta de indumentaria deportiva",
+   "lado": "revenue",
+   "page": 23,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Alquiler deportivo (1)",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Reintegro de costos y gastos (2)",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Utilidad en propiedad, planta y equipo",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ajuste al peso",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Otros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\" > desglose de \"Gastos Diversos\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 24,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Laborales",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos administrativos\"",
+   "choice": "wages_squad",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos administrativos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Alquiler construcciones y edificaciones",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Arrendamientos\"",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Alquiler maquinaria y equipo",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Arrendamientos\"",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Alquiler Terrenos",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Arrendamientos\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Afiliaciones y sostenimientos",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Industria y comercio pagados a la Secretaría de Hacienda de Bogotá por $ 35.065",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Impuestos (1)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "De espectáculos públicos pagados IDRD por $ 388.776",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Impuestos (1)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "IVA descontable por $ 119.791",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Impuestos (1)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Legales",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Terrenos",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Mantenimiento y adecuaciones\"",
+   "choice": "depreciation",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Construcciones y edificaciones",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Mantenimiento y adecuaciones\"",
+   "choice": "depreciation",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Maquinaria y equipo",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\" > desglose de \"Mantenimientos\"",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Muebles y enseres",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Mantenimiento y adecuaciones\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Flota y equipo de transporte",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Mantenimiento y adecuaciones\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "De viaje",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Comisiones",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Combustible",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Taxis y buses",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\" > desglose de \"Gastos Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Casinos y restaurantes",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos\"",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de representación",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Papelería",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Parqueadero",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.31,
+   "desdeCache": true
+  },
+  {
+   "label": "Elementos de aseo y cafetería (Hidratación)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Implementos Deportivos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos de ventas\" > desglose de \"Diversos\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\"",
+   "choice": "other_amortisation",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Deterioro de inventario",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos de ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Contribuciones y afiliaciones",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipo de oficina",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\" > desglose de \"Mantenimientos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Combustibles y lubricantes",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\" > desglose de \"Gastos Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Útiles, papelería y Fotocopias",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\" > desglose de \"Gastos Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Parqueaderos",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\" > desglose de \"Gastos Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Casino y restaurante",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\" > desglose de \"Gastos Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Deterioro de cartera",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos administrativos\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos no deducibles (1)",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Otros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Multas sanciones y litigios (2)",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Otros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos asumidos",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Otros gastos\"",
+   "choice": "exceptional_items",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses de mora",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Otros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  }
+ ]
+}

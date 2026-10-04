@@ -1,0 +1,359 @@
+{
+  "club": "hoffenheim-de",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2022-23.md",
+  "generatedAt": "2026-09-30T21:50:40.339Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 94,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 11,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 1,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+          "values": [
+            "55.639.502",
+            "58.820"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. technische Anlage und Maschinen",
+          "values": [
+            "1.593.441",
+            "2.012"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "1.954.220",
+            "2.482"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "4. geleistete Anzahlungen und Anlagen im Bau 47.500 1 / 59.234.663 63.315 / III. Finanzanlagen",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Anteile an verbundenen Unternehmen",
+          "values": [
+            "25.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Sonstige Ausleihungen",
+          "values": [
+            "40.000.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "40.025.000 25 / 132.147.691 94.236 / B. Umlaufvermögen / I. Vorräte 1.388.715 1.236 / II. Forderungen und sonstige Vermögensgegenstände",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Forderungen aus Lieferungen und Leistungen",
+          "values": [
+            "48.312.987",
+            "10.421"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Forderungen gegen verbundene Unternehmen",
+          "values": [
+            "68.292",
+            "1.056"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bei den Steuerrückstellungen handelt es sich um Gewerbesteuer für das Jahr 2023 (T€1.175) sowie Lohnsteuer aus Außenprüfungen für die Jahre 2018 bis 2021",
+          "values": [
+            "(T€408)."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Die sonstigen Rückstellungen bestehen im Wesentlichen aus Rückstellungen für drohende Verluste (T€2.663), ausstehende Rechnungen (T€447) und Urlaubsrückstellungen",
+          "values": [
+            "(T€574)."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "UNTERNEHMENSREGISTER / T€ T€ T€ T€ T€",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2. technische Anlagen und Maschinen 9.876 40 0",
+          "values": [
+            "9.907"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. andere Anlagen, Betriebs- und Ge- 23.428 291 0",
+          "values": [
+            "23.151"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Sonstige Veränderungen",
+          "values": [
+            "-26.861",
+            "-103.139",
+            "-130.000",
+            "-130.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodenergebnis",
+          "values": [
+            "1.060.270",
+            "1.060.270",
+            "1.060.270"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am",
+          "values": [
+            "30.6.2023",
+            "53.809.247",
+            "1.060.270",
+            "54.869.518",
+            "197.661.115"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "T-EUR T-EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2. Ergebnisanteil atypisch stiller Gesellschafter -995",
+          "values": [
+            "-41.349"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Abschreibungen auf das Anlagevermögen",
+          "values": [
+            "29.664",
+            "25.503"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Zunahme (+) / Abnahme (-) der Rückstellungen -441",
+          "values": [
+            "-8.127"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Sonstige zahlungsunwirksame Aufwendungen (+) und Erträge (-)",
+          "values": [
+            "2.900",
+            "3.664"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "7. Zunahme (+) / Abnahme (-) der Verbindlichkeiten aus Lieferungen und Leistungen sowie anderer Passiva",
+          "values": [
+            "11.520",
+            "-9.559"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8. Gewinn (-) / Verlust (+) aus dem Abgang von Anlagevermögen",
+          "values": [
+            "-26.194",
+            "1.528"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "9. Zinsaufwendungen (+) / Zinserträge (-)",
+          "values": [
+            "-2.928",
+            "-1.860"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "10. Ertragsteueraufwand (+) /-ertrag (-) 646 750",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "11. Ertragsteuerzahlungen (-) / -erstattungen (+)",
+          "values": [
+            "-4.414"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "12. Cashflow aus laufender Geschäftstätigkeit",
+          "values": [
+            "2.814",
+            "-33.702"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "13. Einzahlungen aus Abgängen des immateriellen Anlagevermögens 5.937 714 / 14. Auszahlungen (-) für Investitionen in das immaterielle Anlagevermöge -14.339 -670 / 15. Auszahlungen (-) für Investitionen in das Sachanlagevermögen -396 -918",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "16. Erhaltene Zinsen",
+          "values": [
+            "1.877"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "17. Cashflow aus der Investitionstätigkeit",
+          "values": [
+            "-8.750",
+            "1.003"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Auszahlungen aus Eigenkapitalrückzahlungen an / 18. - andere Gesellschafter -4.620 -4.930 / 19. gezahlte Zinsen (-) -28 -17",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "20. Cashflow aus der Finanzierungstätigkeit",
+          "values": [
+            "-4.648",
+            "-4.947"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "21. Zahlungswirksame Veränderungen des Finanzmittelfonds",
+          "values": [
+            "-10.584",
+            "-37.646"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "22. Finanzmittelfonds 1. Juli",
+          "values": [
+            "27.835",
+            "65.481"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "11. Ertragsteuerzahlungen (-) / -erstattungen (+)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "11. Ertragsteuerzahlungen (-) / -erstattungen (+)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "12. Cashflow aus laufender Geschäftstätigkeit",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "12. Cashflow aus laufender Geschäftstätigkeit",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "de",
+    "query": "TSG Hoffenheim",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

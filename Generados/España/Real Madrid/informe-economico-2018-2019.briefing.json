@@ -1,0 +1,3915 @@
+{
+  "club": "realmadrid",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/España/Real Madrid/informe-economico-2018-2019.md",
+  "generatedAt": "2026-09-30T22:01:06.492Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 8,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 84,
+  "relevantTableCount": 19,
+  "tables": [
+    {
+      "page": 7,
+      "section": "BALANCE FISCAL: CONTRIBUCIÓN DEL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "INGRESOS DE EXPLOTACIÓN 751 757 IRPF e IRNR (retenciones trabajo personal e imagen)",
+          "values": [
+            "203.874"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Crecimiento anual 11,3% 0,8% IMPUESTO DE SOCIEDADES",
+          "values": [
+            "15.062"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IBI y otros impuestos locales",
+          "values": [
+            "15.742"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESULTADO DE EXPLOTACIÓN antes de amortización/enajenación de inmovilizado CUOTAS SEGURIDAD SOCIAL (cuota empresa)",
+          "values": [
+            "7.207"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(EBITDA antes de enajenación de inmovilizado) 93 124 CUOTAS SEGURIDAD SOCIAL (cuota trabajador)",
+          "values": [
+            "1.557"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "BALANCE DE SITUACIÓN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Periodificaciones a corto plazo 4.956 3.664 Periodificaciones a corto plazo",
+          "values": [
+            "129.378",
+            "99.215"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVO CORRIENTE 412.607 354.468 TOTAL PASIVO CORRIENTE",
+          "values": [
+            "472.759",
+            "460.788"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "BALANCE DE SITUACIÓN / A 30 DE JUNIO DE 2019",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "ACTIVO NO CORRIENTE 725.776 734.557 PATRIMONIO NETO",
+          "values": [
+            "532.576",
+            "494.506"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inmovilizado intangible deportivo 4 310.913 316.787 Fondos propios",
+          "values": [
+            "528.480",
+            "490.086"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inmovilizado intangible no deportivo 5 4.042 7.479 Fondo social",
+          "values": [
+            "451.894",
+            "423.459"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inmovilizado material 6 350.344 341.215 Reserva de actualización R.D 7/96",
+          "values": [
+            "8.548",
+            "8.548"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inversiones inmobiliarias 7 11.551 11.920 Reserva de actualización ley 16/2012",
+          "values": [
+            "20.277",
+            "20.277"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inversiones financieras a largo plazo 8.1 29.825 44.113 Reserva de capitalización",
+          "values": [
+            "9.367",
+            "6.628"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos por impuesto diferido 16 19.111 13.043 Resultado del periodo",
+          "values": [
+            "38.394",
+            "31.174"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subvenciones, donaciones y legados recibidos",
+          "values": [
+            "4.276",
+            "4.420"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "PASIVO NO CORRIENTE",
+          "values": [
+            "132.868",
+            "133.731"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisiones a largo plazo",
+          "values": [
+            "14.293",
+            "23.906"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas a largo plazo",
+          "values": [
+            "65.896",
+            "69.368"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas con entidades de crédito",
+          "values": [
+            "49.693",
+            "49.793"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros pasivos financieros",
+          "values": [
+            "16.203",
+            "19.575"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivos por impuesto diferido",
+          "values": [
+            "19.390",
+            "16.230"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodificaciones a largo plazo",
+          "values": [
+            "33.289",
+            "24.227"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "ACTIVO CORRIENTE 412.607 354.468 PASIVO CORRIENTE",
+          "values": [
+            "472.759",
+            "460.788"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos no corrientes mantenidos para la venta 4.2 78.935 - Provisiones a corto plazo",
+          "values": [
+            "2.163",
+            "1.920"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Existencias 9 5.570 3.671 Deudas a corto plazo",
+          "values": [
+            "108.244",
+            "65.656"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudores comerciales y otras cuentas a cobrar 8.2 167.442 157.024 Deudas con entidades de crédito",
+          "values": [
+            "10.151"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodificaciones a corto plazo 4.954 3.664 Otros pasivos financieros",
+          "values": [
+            "108.150",
+            "55.505"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo y otros activos líquidos equivalentes 8 y 10 155.706 190.109 Acreedores comerciales y otras cuentas a pagar",
+          "values": [
+            "232.974",
+            "293.997"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodificaciones a corto plazo",
+          "values": [
+            "129.378",
+            "99.215"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "ESTADO DE CAMBIOS EN EL PATRIMONIO NETO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos de retransmisión",
+          "values": [
+            "172.991",
+            "178.413"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos de marketing 295.172 295.203 Resultado del ejercicio",
+          "values": [
+            "38.394",
+            "31.174"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "17.1       755.128       748.042",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros ingresos de explotación 17.1",
+          "values": [
+            "1.704"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total ingresos y gastos reconocidos",
+          "values": [
+            "38.250",
+            "31.030"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de personal deportivo y no deportivo",
+          "values": [
+            "(394.221)",
+            "(430.751)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "al ejercicio anual terminado el 30 de junio de 2019 / (214.564)     (200.095) / correspondientes al ejercicio anual",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deterioros y pérdidas 17.5 (46.378) 626 terminado el 30/06/2018 - - - - 31.174 31.174 (144)",
+          "values": [
+            "31.030"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultados por enajenaciones y otras",
+          "values": [
+            "98.548",
+            "53.583"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "1. NATURALEZA Y ACTIVIDADES PRINCIPALES / FLUJOS DE EFECTIVO DE LAS ACTIVIDADES DE EXPLOTACIÓN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros flujos de efectivo de las actividades de explotación",
+          "values": [
+            "(14.673)",
+            "(8.806)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagos de intereses",
+          "values": [
+            "(1.212)",
+            "(2.296)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "FLUJOS DE EFECTIVO DE LAS ACTIVIDADES DE FINANCIACIÓN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deuda con entidades de crédito. Emisión -",
+          "values": [
+            "50.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Devolución y amortización de deudas con entidades de crédito",
+          "values": [
+            "(10.000)",
+            "(72.000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FLUJOS DE EFECTIVO DE LAS ACTIVIDADES DE FINANCIACIÓN",
+          "values": [
+            "(10.000)",
+            "(22.000)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "EFECTO DE LAS VARIACIONES DE LOS TIPOS DE CAMBIO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "AUMENTO / DISMINUCIÓN NETA DEL EFECTIVO O EQUIVALENTES",
+          "values": [
+            "(34.403)",
+            "12.121"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo o equivalentes al comienzo del ejercicio",
+          "values": [
+            "190.109",
+            "177.988"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo o equivalentes al final del ejercicio",
+          "values": [
+            "155.706",
+            "190.109"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "5. INMOVILIZADO INTANGIBLE NO DEPORTIVO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Concesiones",
+          "values": [
+            "2.103",
+            "2.103"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total coste 146.909 255 -",
+          "values": [
+            "(1.115)",
+            "146.049"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "Patentes, licencias, marcas y similares             806         806",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Amortización acumulada: Aplicaciones informáticas",
+          "values": [
+            "7.453",
+            "7.228"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Concesiones (2.278) (70) - - (2.348) Otro inmovilizado intangible",
+          "values": [
+            "125.047",
+            "120.209"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patentes, licencias, marcas y similares (1.094) (92) - -",
+          "values": [
+            "(1.186)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "135.409     130.346",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aplicaciones informáticas (11.198) (2.185) - -",
+          "values": [
+            "(13.383)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otro inmovilizado intangible (124.815) (230) - -",
+          "values": [
+            "(125.045)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total amortización (139.385) (2.577) - -",
+          "values": [
+            "(141.962)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "Correcciones por deterioro: / Ejercicio 2017/2018 / Altas y / Coste:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Concesiones 3.159 - - -",
+          "values": [
+            "3.159"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patentes, licencias, marcas y similares 1.526 140 - -",
+          "values": [
+            "1.666"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicaciones informáticas 14.400 518 -",
+          "values": [
+            "15.331"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otro inmovilizado intangible 125.047 - - -",
+          "values": [
+            "125.047"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipos 1.461 658 - (413)",
+          "values": [
+            "1.706"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total coste 145.593 1.316 - -",
+          "values": [
+            "146.909"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 31,
+      "section": "Amortización acumulada:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Concesiones (2.208) (70) - -",
+          "values": [
+            "(2.278)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patentes, licencias, marcas y similares (1.019) (75) - -",
+          "values": [
+            "(1.094)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicaciones informáticas (8.948) (2.250) - -",
+          "values": [
+            "(11.198)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otro inmovilizado intangible (124.585) (230) - -",
+          "values": [
+            "(124.815)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total amortización (136.760) (2.625) - -",
+          "values": [
+            "(139.385)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "meses. La ejecución de las obras se compatibilizará con la cele- / bración de los partidos del calendario deportivo y con el manteni- / miento de las actividades habituales del estadio: Tour Bernabéu, / Amortización acumulada: / tienda oficial, restaurantes, etc…",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otras construcciones (7.741) (1.351) 90 -",
+          "values": [
+            "(9.002)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instalaciones técnicas y otro inmovilizado material (70.036) (6.739) 348 -",
+          "values": [
+            "(76.427)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "7. INVERSIONES INMOBILIARIAS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Coste de la parcela TER.",
+          "values": [
+            "189-A."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos 13.620 - - -",
+          "values": [
+            "13.620"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "formalizado en 1992, inicialmente por un periodo de 20 años y / ejercicio. Este contrato de cesión y explotación ha generado / Altas y / de aproximadamente 376 miles de euros (467 miles de euros a / Coste",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "30 de junio",
+          "values": [
+            "2018)."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos 13.620 - - -",
+          "values": [
+            "13.620"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construcciones 15.024 - - -",
+          "values": [
+            "15.024"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 34,
+      "section": "de las construcciones. / Amortización acumulada / mientos operativos son los siguientes: / miles €                                       30/06/2019   30/06/2018 / Correcciones por deterioro",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Construcciones - -",
+          "values": [
+            "(4.803)",
+            "(4.024)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos (2.709) - 180 - (2.529) Hasta un año",
+          "values": [
+            "2.278",
+            "2.170"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construcciones en curso (5.351) - - 4.803 (548) Entre uno y cinco años",
+          "values": [
+            "3.687",
+            "4.528"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Corrección por deterioro (8.060) - 959 - (7.101) Más de cinco años",
+          "values": [
+            "2.691",
+            "3.306"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 35,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Préstamos y partidas a cobrar Otros activos financieros 19.956 9.468 - -",
+          "values": [
+            "29.424"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inversiones financieras a largo plazo -",
+          "values": [
+            "29.480",
+            "29.480"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total inversiones financieras a largo plazo 44.113 62.222 -",
+          "values": [
+            "(76.510)",
+            "29.825"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 35,
+      "section": "Activos disponibles para la venta / 345     29.480     29.825   Ejercicio 2017/2018",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deudores comerciales y otras cuentas a cobrar (*) - 163.551 163.551 Entidades deportivas deudoras por traspaso jugadores largo plazo 16.894 59.957 -",
+          "values": [
+            "(53.039)",
+            "23.812"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo y otros activos líquidos equivalentes (nota 10) - 155.706 155.706 Otros activos financieros 9.438 10.518 - -",
+          "values": [
+            "19.956"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 35,
+      "section": "-   319.257    319.257",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total inversiones financieras a largo plazo 26.677 70.475 -",
+          "values": [
+            "(53.039)",
+            "44.113"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVOS FINANCIEROS",
+          "values": [
+            "348.737",
+            "349.082"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 35,
+      "section": "ACTIVOS FINANCIEROS NO CORRIENTES / ACTIVOS FINANCIEROS CORRIENTES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deudores comerciales y otras cuentas a cobrar (*) - 151.269 151.269 Año 2",
+          "values": [
+            "23.807"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo y otros activos líquidos equivalentes (nota 10) -",
+          "values": [
+            "190.109",
+            "190.109"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 36,
+      "section": "te amortizado, el cual recoge el efecto financiero de su actua- / de 378 miles de euros (320 miles de euros a 30 de junio de / miles €                                             30/06/2019       30/06/2018",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2018) (nota",
+          "values": [
+            "17.6)."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Corrección por deterioro inicial",
+          "values": [
+            "15.324",
+            "15.711"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 36,
+      "section": "Aplicación del periodo                                        -                - / Reversión del periodo (Nota 17.4)                          (28)            (277) / Traspaso del periodo                                        28               28 / Corrección por deterioro final                             178                28 / Dentro del epígrafe “Entidades deportivas deudoras otros concep-",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "TOTAL DEUDORES COMERCIALES Y OTRAS CUENTAS A COBRAR 167.442 157.024 tos” se incluye un saldo con la Liga de Fútbol Profesional de",
+          "values": [
+            "5.948"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "miles de euros (3.642 miles de euros acreedor a 30 de junio de",
+          "values": [
+            "2018)."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 38,
+      "section": "RECIBIDOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total provisiones a largo plazo",
+          "values": [
+            "23.906",
+            "2.011",
+            "(9.513)",
+            "(2.111)",
+            "14.293"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subvenciones no reintegrables 4.420 - - (192)",
+          "values": [
+            "4.276"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "hubieran podido realizar, así como realizar una nueva valorización de",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "neo en el lateral del Paseo de la Castellana establecido en el Conve- Diligencia de Ordenación de fecha 20 de noviembre de",
+          "values": [
+            "2013."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "nio del 20 de diciembre de",
+          "values": [
+            "2001."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "PASIVOS FINANCIEROS NO CORRIENTES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Consejo Superior de Deportes procedió a la ratificación de dicho Deudas a largo plazo",
+          "values": [
+            "49.693",
+            "16.203",
+            "65.896"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "acuerdo. De prosperar el recurso, el Club percibiría por sus dere-",
+          "values": [
+            "49.693",
+            "16.203",
+            "65.896"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "chos del ejercicio 2015/2016 un importe adicional al ya cobrado / Pasivos financieros a corto plazo",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Petroleum Investment Company (IPIC) como nuevo patrocinador Deudas a corto plazo",
+          "values": [
+            "108.150",
+            "108.244"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "del Club por las temporadas 2014/2015, 2015/2016 y 2016/2017. Acreedores comerciales y otras cuentas a pagar (*) -",
+          "values": [
+            "207.121",
+            "207.121"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "En diciembre de 2014 el contrato de patrocinio fue parcialmente",
+          "values": [
+            "315.271",
+            "315.365"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "PASIVOS FINANCIEROS NO CORRIENTES / PASIVOS FINANCIEROS CORRIENTES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "visto en el contrato, presentó en 2018 la solicitud de arbitraje ante Deudas a corto plazo",
+          "values": [
+            "10.151",
+            "55.505",
+            "65.656"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "el Tribunal Internacional de Arbitraje de la Cámara de Comercio Acreedores comerciales y otras cuentas a pagar (*) -",
+          "values": [
+            "270.861",
+            "270.861"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Internacional. El Club formuló la demanda en el mes de febrero de",
+          "values": [
+            "10.151",
+            "326.366",
+            "336.517"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "30 de junio de 2019",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros pasivos financieros Proveedores de inmovilizado 10.648 2.698 65 71",
+          "values": [
+            "14.135"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proveedores de inmovilizado 14.135 16.682 Entidades deportivas acreedoras por traspaso de jugadores 2.068 - - - -",
+          "values": [
+            "2.068"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros pasivos financieros -",
+          "values": [
+            "1.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "16.203 19.575 Total 12.716 2.698 65 71",
+          "values": [
+            "16.203"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "30 de junio de 2018 / Como se indica en la nota 6.1, la primera disposición del prés-",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "julio 2019, por lo que no está reflejado en el balance de situación Proveedores de inmovilizado 10.562 4.134 1.198 65",
+          "values": [
+            "16.682"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "al 30 de junio 2019. Entidades deportivas acreedoras por traspaso de jugadores 1.893 - - - -",
+          "values": [
+            "1.893"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros pasivos financieros 1.000 - - - -",
+          "values": [
+            "1.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Proveedores de inmovilizado 28.292 38.658 Entidades deportivas acreedoras por prestación de servicios",
+          "values": [
+            "1.296"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Entidades deportivas acreedoras por traspaso de jugadores 79.858 16.847 Personal deportivo",
+          "values": [
+            "143.713",
+            "200.818"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "108.150 55.505 Personal no deportivo",
+          "values": [
+            "5.783",
+            "6.942"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total pasivos financieros",
+          "values": [
+            "207.121",
+            "270.861"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DEUDAS A CORTO PLAZO",
+          "values": [
+            "108.244",
+            "65.656"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros deudas con las Administraciones Públicas (nota 16)",
+          "values": [
+            "25.853",
+            "23.136"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 45,
+      "section": "129 millones de euros de periodificaciones de cuotas socios/ / abonados, otros), mientras que a 30 de junio de 2018 fueron 393 / de euros fichas/otros personal, 99 millones de euros de periodifi- / dores recurrentes, generan gran parte del Fondo de Maniobra / Periodificaciones a largo plazo",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Estos saldos van a ser renovados y por tanto van a existir por Anticipos a largo plazo",
+          "values": [
+            "33.289",
+            "24.227"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "importe similar al cierre de cada periodo. En el caso de las cuo-",
+          "values": [
+            "33.289",
+            "24.227"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 45,
+      "section": "tas de socios/abonados, se cobran el 30 de junio las del ejercicio / Ingresos de retransmisión                    23.501       14.825 / sentará ningún pago ya que se realizará vía ingresos del ejercicio",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos de estadio",
+          "values": [
+            "67.637",
+            "65.967"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "siguiente. En el caso de los abonos de palcos y zonas VIP, así Ingresos de marketing",
+          "values": [
+            "34.239",
+            "10.098"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "como de algunos patrocinadores, una parte de los cobros se han Ingresos de competiciones",
+          "values": [
+            "4.001",
+            "8.325"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "producido con anterioridad al cierre de la temporada, mientras",
+          "values": [
+            "129.378",
+            "99.215"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 46,
+      "section": "• Anticipos a largo plazo                                          16. SITUACIÓN FISCAL / pendientes de devengo relativos a diversos contratos de patro- / Hacienda Pública, deudora por devolución de impuestos                    10           12 / pérdidas y ganancias del ejercicio 2018/2019 correspondiente a",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Retenciones y pagos a cuenta a devolver",
+          "values": [
+            "3.881",
+            "5.743"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "la actualización de los anticipos recibidos asciende a 231 miles Activos por impuesto corriente (nota 8.2)",
+          "values": [
+            "3.881",
+            "5.743"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de euros (365 miles de euros en el ejercicio",
+          "values": [
+            "2017/2018)."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos por diferencias temporarias deducibles",
+          "values": [
+            "19.111",
+            "13.043"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 46,
+      "section": "Activos por impuesto diferido (activo no corriente)                  19.111       13.043 / a) Ingresos de retransmisión / o facturado por el Club por acuerdos sobre los derechos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "nio de 2019 y cuyo devengo corresponde a la temporada Hacienda Pública, acreedor por IVA",
+          "values": [
+            "19.507",
+            "18.160"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2019/2020. Hacienda Pública, acreedor por IRPF",
+          "values": [
+            "3.478",
+            "2.367"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 46,
+      "section": "Hacienda Pública, acreedor por IRNR                                      23           23 / Organismos de la Seguridad Social, acreedores                           760          667 / palcos cobrados o facturados con anterioridad a 30 de ju- / 2019/2020.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pasivos por diferencias temporarias imponibles",
+          "values": [
+            "19.390",
+            "16.230"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivos por impuestos diferidos",
+          "values": [
+            "19.390",
+            "16.230"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 48,
+      "section": "Variación de impuestos diferidos / Cuenta de pérdidas   directamente imputados / 53.416                          - / El cálculo del impuesto sobre beneficios a devolver o pagar es el / siguiente:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Impuesto corriente",
+          "values": [
+            "(17.976)",
+            "(9.961)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reserva de capitalización (685) - Retenciones y pagos a cuenta",
+          "values": [
+            "21.857",
+            "14.593"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste Reserva de capitalización ejercicio anterior (11) - Deducciones años anteriores aplicadas en el ejercicio -",
+          "values": [
+            "1.111"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 49,
+      "section": "miles € / Deducción           Deducción         Crédito fiscal / 12.407                   636                   -       13.043 / Pasivos por impuesto diferido / Pasivos por diferencias temporarias deducibles",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Diferimiento plusvalías 2.895 (82) -",
+          "values": [
+            "2.813"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferimiento plusvalías por pago aplazado 8.052 2.545 -",
+          "values": [
+            "10.597"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Libertad de amortización 1.172 (76) -",
+          "values": [
+            "1.096"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subvenciones (Nota 6.4) 1.522 - (48)",
+          "values": [
+            "1.474"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 50,
+      "section": "jugadores / iniciados a partir del 1 de enero de 2015, eliminó esta deducción / para las nuevas plusvalías generadas a partir de dicha fecha, man- / S/ amortizac / bienes reinvertidos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "das en ejercicios anteriores y pendientes de integración en la base Total",
+          "values": [
+            "406.117",
+            "421.311",
+            "421.311",
+            "395.196",
+            "10.921"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "imponible. En el ejercicio 2017/2018, el Club finalizó la integración Impuesto Diferido (25%)",
+          "values": [
+            "2.730"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 50,
+      "section": "Sociedades, por las plusvalías obtenidas en la enajenación de / los citados activos, adquiriendo el compromiso de reinvertir el / Dos federativos / importe íntegro de la venta entre el año anterior y los tres siguien-   2000/2001 / jugadores",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "vo material e inmovilizado financiero. Total",
+          "values": [
+            "406.117",
+            "421.311",
+            "421.311",
+            "394.866",
+            "11.251"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto Diferido (25%)",
+          "values": [
+            "2.813"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 53,
+      "section": "Segmentación por categorías de actividades",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "17.1 Ingresos de explotación Ingresos de socios y estadio",
+          "values": [
+            "173.372",
+            "174.226"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos de amistosos y competiciones",
+          "values": [
+            "113.593",
+            "100.200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos de retransmisión",
+          "values": [
+            "172.991",
+            "178.413"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dentro de la cuenta de pérdidas y ganancias adjunta se incluyen Ingresos de marketing",
+          "values": [
+            "295.172",
+            "295.203"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "las siguientes partidas:",
+          "values": [
+            "755.128",
+            "748.042"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 53,
+      "section": "miles €                                                30/06/2019   30/06/2018 / Segmentación por mercados geográficos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Importe neto de la cifra de negocios 755.128 748.042 Mercado nacional",
+          "values": [
+            "476.269",
+            "486.934"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trabajos realizados por la empresa para su activo 1.474 - Mercado exterior",
+          "values": [
+            "278.859",
+            "261.108"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros ingresos de explotación",
+          "values": [
+            "1.704",
+            "755.128",
+            "748.042"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 53,
+      "section": "ficaciones a largo plazo del pasivo y se va cancelando a medida que / Ingresos Supercopa de Europa                            3.549        4.000 / Ingresos Amistosos                                     10.858       18.543 / Total Ingresos Taquillas y Competiciones                 205.699      195.630 / más, hasta junio de 2028. Los efectos económicos derivados de la",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Ingresos Abonados y Socios",
+          "values": [
+            "54.277",
+            "49.865"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Ingresos Explotación de instalaciones",
+          "values": [
+            "26.989",
+            "28.931"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 54,
+      "section": "hasta 30 de junio 2020. / 17.2 Consumos de materias primas y otras materias consumibles / La gestión de las actividades será realizada por Global Merchandi- / de negocios, el Club asume el registro de los ingresos, aprovisiona-",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "del acuerdo. Compras",
+          "values": [
+            "3.132",
+            "4.530"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variación de existencias",
+          "values": [
+            "(1.148)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 54,
+      "section": "dos años adicionales en función del cumplimiento de determinadas / condiciones económicas. El acuerdo considera todos los territorios / y categorías de patrocinio, con la excepción de los patrocinios de- / 5. En la temporada 2015/2016, y una vez finalizados los contratos / derechos audiovisuales de las competiciones de fútbol profesional",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(Campeonato Nacional de Liga de Primera y Segunda División, Copa Jugadores y técnicos 1º equipo fútbol 283.396 1.911 8.472 4.304",
+          "values": [
+            "1.174",
+            "299.807"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de S.M. el Rey y Supercopa de España). Jugadores y técnicos 2º equipo fútbol 8.368 7 - - 319 -",
+          "values": [
+            "8.694"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jugadores y técnicos categorías inferiores fútbol 5.045 - 490 -",
+          "values": [
+            "1.110",
+            "1.856",
+            "8.501"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Esta normativa establece un sistema de distribución de los ingresos Personal no deportivo 37.227 - 1.901 -",
+          "values": [
+            "4.740",
+            "1.013",
+            "44.881"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "obtenidos de la comercialización conjunta en función de la ca- Total Fútbol",
+          "values": [
+            "334.036",
+            "1.918",
+            "10.863",
+            "4.304",
+            "6.719",
+            "4.043",
+            "361.883"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 54,
+      "section": "tegoría (Primera o Segunda División), los resultados deportivos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "obtenidos y la implantación social, medida por la recaudación en Jugadores y técnicos baloncesto 24.502 1.839 - 2.470",
+          "values": [
+            "1.018",
+            "30.322"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "abonos y taquilla media y la aportación relativa en la generación Personal no deportivo baloncesto 1.732 - - 130 124",
+          "values": [
+            "2.016"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de recursos por la comercialización de las retransmisiones tele- Total Baloncesto 26.234 1.839 - 2.600",
+          "values": [
+            "1.048",
+            "32.338"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 55,
+      "section": "baloncesto) en la LNFP es la siguiente: / Ejercicio 2018/2019 / Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Importe plantilla inscribible LNFP 283.396 1.911 8.472 4.304",
+          "values": [
+            "1.174",
+            "299.807"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Importe plantilla no inscribible LNFP 37.915 1.846 490 2.470 1.922 2.874 47.517 Importe plantilla inscribible LNFP",
+          "values": [
+            "299.807",
+            "101.337",
+            "52.402",
+            "(16.798)",
+            "436.748"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Importe plantilla no inscribible LNFP 47.517 2.724 357",
+          "values": [
+            "51.267"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total gasto de personal plantilla deportiva",
+          "values": [
+            "321.311",
+            "3.757",
+            "8.962",
+            "6.774",
+            "2.472",
+            "4.048",
+            "347.324"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos totales plantilla deportiva",
+          "values": [
+            "347.324",
+            "104.061",
+            "52.759",
+            "(16.129)",
+            "488.015"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 55,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Jugadores y técnicos 1º equipo fútbol 280.795 2.786 - 54.858",
+          "values": [
+            "1.010",
+            "339.935"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Importe plantilla inscribible LNFP 339.935 80.258",
+          "values": [
+            "(7.205)",
+            "413.319"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jugadores y técnicos 2º equipo fútbol 6.425 54 19 - 348 -",
+          "values": [
+            "6.846"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Importe plantilla no inscribible LNFP 48.385 4.664 112",
+          "values": [
+            "53.596"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jugadores y técnicos categorías inferiores fútbol 5.218 22 - -",
+          "values": [
+            "1.800",
+            "7.936"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Personal no deportivo 34.035 - 113 1.150 4.273",
+          "values": [
+            "40.293"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos totales plantilla deportiva 388.320 84.922",
+          "values": [
+            "(6.770)",
+            "466.915"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Fútbol 326.473 2.862",
+          "values": [
+            "56.008",
+            "6.003",
+            "3.532",
+            "395.010"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 55,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Jugadores y técnicos baloncesto 23.257 2.760 - 6.306 403",
+          "values": [
+            "33.603"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Personal no deportivo baloncesto 1.686 - - 300 124",
+          "values": [
+            "2.138"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Baloncesto 24.943 2.760 - 6.606 527",
+          "values": [
+            "35.741"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 56,
+      "section": "prestados por otras empresas que forman parte de la misma red in- / terminado a 30 de junio de 2018). / miles €                                           30/06/2019   30/06/2018",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Tributos",
+          "values": [
+            "4.365",
+            "4.059"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Desplazamientos",
+          "values": [
+            "9.083",
+            "12.075"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 56,
+      "section": "El detalle del epígrafe “Deterioro, resultado de enajenaciones del",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos de cesión y adquisición de jugadores",
+          "values": [
+            "1.405"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros gastos de gestión corriente",
+          "values": [
+            "58.924",
+            "46.170"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 56,
+      "section": "inmovilizado y otros excepcionales” es el siguiente: / Dentro del epígrafe “Otros gastos de gestión corriente” se inclu- / en el R/D 5/2015 (ver Nota 17.1.5), así como provisiones de de- / miles €                                           30/06/2019   30/06/2018",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "TOTAL DETERIORO, RESULTADO POR ENAJENACIONES DEL INMOVILIZADO Y OTROS EXCEPCIONALES",
+          "values": [
+            "52.170",
+            "54.209"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos de activos (nota 6.3)",
+          "values": [
+            "2.203",
+            "1.808"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros arrendamientos, cánones y otros servicios",
+          "values": [
+            "61.350",
+            "69.681"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reparaciones y conservación",
+          "values": [
+            "28.964",
+            "27.126"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios profesionales",
+          "values": [
+            "35.711",
+            "26.681"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 58,
+      "section": "19. INFORMACIÓN SOBRE LA NATURALEZA Y EL NIVEL DE RIESGO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "D. Jerónimo Farré Muncharaz Entidades deportivas deudoras a largo plazo (nota 8.1)",
+          "values": [
+            "23.812"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros activos financieros (nota 8.1)",
+          "values": [
+            "29.424",
+            "19.956"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 58,
+      "section": "D. Enrique Pérez Rodríguez / Deudores comerciales y otras cuentas a cobrar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "D. Manuel Cerezo Velázquez Clientes por ventas y prestación de servicios (nota 8.2)",
+          "values": [
+            "66.460",
+            "80.603"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D. José Sánchez Bernal Entidades deportivas deudoras a corto plazo (nota 8.2)",
+          "values": [
+            "89.387",
+            "63.386"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D. Gumersindo Santamaría Gil Otros activos financieros (nota 8.2)",
+          "values": [
+            "7.704",
+            "7.280"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D. Raúl Ronda Ortiz Administraciones Públicas deudoras (Nota 8.2)",
+          "values": [
+            "3.891",
+            "5.755"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D. José Manuel Otero Lastres Efectivo y otros activos líquidos equivalentes (nota 10)",
+          "values": [
+            "155.706",
+            "190.109"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 59,
+      "section": "tema informático del Club y supervisado por las correspondientes / incluso legales, que permitan recuperar los saldos vencidos a la / rantizar el cobro de los saldos deudores se solicita a los mismos / Nº de deudores   Miles de euros   las fianzas y garantías correspondientes. / • Actividades de inversión",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Con saldo entre 1.000 miles de euros y 500 miles de euros",
+          "values": [
+            "6.812"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Con saldo entre 500 miles de euros y 200 miles de euros",
+          "values": [
+            "6.325"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 60,
+      "section": "Los vencimientos contractuales, no descontados, de los pasivos / sada por variaciones en el valor razonable o en los futuros flujos / de efectivo de los activos y pasivos correspondientes así como a / el valor en libros de los diferentes activos y especialmente el valor / Entre 3 meses    Entre 1 año",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "circunstancias descritas en la nota 3.6 a la hora de determinar las Proveedores de inmovilizado 25.758 2.534 13.560",
+          "values": [
+            "42.427"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "correcciones valorativas correspondientes. Entidades deportivas acreedoras por traspasos jugadores 49.520 30.338 2.068 -",
+          "values": [
+            "81.926"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 60,
+      "section": "entidades financieras con vencimiento a largo plazo. El capital / pendiente de amortizar total asciende a 50.000 miles de euros de / valor nominal (60.000 miles de euros a 30 de junio de 2018). El / Entre 3 meses    Entre 1 año / Otros pasivos financieros",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Proveedores de inmovilizado 29.291 9.367 16.029",
+          "values": [
+            "55.340"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Entidades deportivas acreedoras por traspasos jugadores 16.847 - 1.893 -",
+          "values": [
+            "18.740"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros pasivos financieros - - 1.000 -",
+          "values": [
+            "1.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acreedores comerciales y otras cuentas a pagar 227.626 66.371 - -",
+          "values": [
+            "293.997"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 61,
+      "section": "Ejercicio 2018/2019 / Días",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total pagos realizados",
+          "values": [
+            "231.426",
+            "228.127"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudores varios 7.704 - -",
+          "values": [
+            "7.704"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total pagos pendientes",
+          "values": [
+            "57.625",
+            "63.101"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administraciones Públicas deudoras 9 3.881 -",
+          "values": [
+            "3.890"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 61,
+      "section": "20. OTRA INFORMACIÓN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Clientes por ventas y prestaciones de servicios 78.936 1.667 -",
+          "values": [
+            "80.603"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Entidades deportivas deudoras",
+          "values": [
+            "58.201",
+            "5.185",
+            "23.812",
+            "87.198"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 62,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos relevantes",
+          "values": [
+            "848.002",
+            "787.924",
+            "711.808"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dada la actividad a la que se dedica el Club, no existen responsa- Gastos relevantes",
+          "values": [
+            "740.439",
+            "692.139",
+            "635.629"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "bilidades, gastos, activos, ni provisiones y contingencias de natu- Punto de equilibrio (+ superávit, - déficit)",
+          "values": [
+            "107.563",
+            "95.785",
+            "76.179"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 62,
+      "section": "presentes cuentas anuales son los siguientes: / profesionales la competencia exclusiva sobre el desempeño de / las funciones de tutela, control y supervisión económica, respec- / sión a través de sus órganos de gobierno y administración, en / Ingresos relevantes",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "general y el Comité de Control Económico, en especial, de acuer- Importe neto de la cifra de negocios",
+          "values": [
+            "755.128",
+            "748.042",
+            "671.864"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "do con el artículo 41.4 b) de la Ley del Deporte y en los Estatutos Otros ingresos de explotación",
+          "values": [
+            "1.947",
+            "1.704",
+            "1.030"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 62,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Excesos de provisiones -",
+          "values": [
+            "1.000",
+            "1.539"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "En este sentido, la LFP, a través de sus órganos de gobierno, ha Ganancias enajenación de fichas de jugadores",
+          "values": [
+            "105.976",
+            "53.495",
+            "51.710"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 62,
+      "section": "para el Control Económico y para la inscripción en la LFP. Por",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "fueron incluidos en los estados financieros intermedios a 31 de Total ingresos de explotación (nota 17.1)",
+          "values": [
+            "855.815",
+            "804.521",
+            "726.292"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "diciembre de 2018. Total ingresos financieros (nota 17.6)",
+          "values": [
+            "1.004",
+            "1.657"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total ingresos estados financieros",
+          "values": [
+            "856.610",
+            "805.525",
+            "727.949"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 63,
+      "section": "Se considerará indicativo de una posible situación de desequili- / brio económico financiero futuro cuando el montante económico / 30/06/2019    30/06/2018    30/06/2017 / anual de los gastos de personal asociados a la primera plantilla / Económico de la LFP.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Costes financieros y dividendos",
+          "values": [
+            "1.599",
+            "2.819",
+            "3.011"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos personal asociados a la primera plantilla de fútbol",
+          "values": [
+            "301.699",
+            "342.658"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos actividades desarrollo cantera no identificables",
+          "values": [
+            "(7.365)",
+            "(5.771)",
+            "(8.368)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos relevantes",
+          "values": [
+            "848.002",
+            "787.924"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos en actividades de desarrollo comunitario",
+          "values": [
+            "(2.768)",
+            "(2.346)",
+            "(1.951)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización/desvalorización inmovilizado inmaterial no deportivo, material e inmobiliario",
+          "values": [
+            "(18.046)",
+            "(16.567)",
+            "(17.871)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 63,
+      "section": "CUMPLE        CUMPLE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos personal deportivo asociados a la primera plantilla de fútbol",
+          "values": [
+            "299.807",
+            "339.935"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencia",
+          "values": [
+            "(62.689)",
+            "(70.403)",
+            "(66.055)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos personal no deportivo fútbol asociado primera plantilla de fútbol",
+          "values": [
+            "1.892",
+            "2.723"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total gastos personal asociados primera plantilla de fútbol",
+          "values": [
+            "301.699",
+            "342.658"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 63,
+      "section": "Partidas conciliatorias",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos actividades desarrollo cantera no identificables",
+          "values": [
+            "(7.365)",
+            "(5.771)",
+            "(8.368)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos personal cantera fútbol",
+          "values": [
+            "17.195",
+            "14.782"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos en actividades de desarrollo comunitario",
+          "values": [
+            "(2.768)",
+            "(2.346)",
+            "(1.951)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos personal baloncesto",
+          "values": [
+            "32.338",
+            "35.741"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización/desvalorización inmovilizado inmaterial no deportivo, material e inmobiliario",
+          "values": [
+            "(18.046)",
+            "(16.567)",
+            "(17.871)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos personal no deportivo fútbol y estructura no asociado primera plantilla de fútbol",
+          "values": [
+            "42.989",
+            "37.570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos baloncesto",
+          "values": [
+            "(41.938)",
+            "(45.833)",
+            "(37.908)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total gastos de personal estados financieros",
+          "values": [
+            "394.221",
+            "430.751"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 64,
+      "section": "definen en el Reglamento. / Cifras de balance: datos correspondientes a diciembre T-1 / corresponde a la suma de la deuda neta por traspasos de un club / • Ratio 1 / (es decir, el neto de las cuentas a cobrar y las cuentas a pagar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "tamos con los propietarios y partes relacionadas, cobros antici- Pasivo no Corriente",
+          "values": [
+            "142.065",
+            "153.496"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "pados a devengar en plazo superior a 1 año y arrendamientos Pasivo Corriente",
+          "values": [
+            "371.347",
+            "409.164"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Menos: Pasivo por Impuesto Diferido",
+          "values": [
+            "(20.625)",
+            "(16.744)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 64,
+      "section": "financieros minorados por la tesorería, los activos líquidos equi-",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Menos: Tesorería y Activos Líquidos Equivalentes",
+          "values": [
+            "(61.435)",
+            "(133.076)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "valentes y las inversiones financieras temporales) y más la deuda Menos: Deudores Entidades Deportivas",
+          "values": [
+            "(105.524)",
+            "(84.762)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "con proveedores de inmovilizado. La deuda neta no incluye deu- Total Pasivo ajustado T-1",
+          "values": [
+            "325.828",
+            "328.078"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "das comerciales u otras cuentas a pagar. Cifra negocios T-2",
+          "values": [
+            "748.042",
+            "671.864"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 64,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ratio",
+          "values": [
+            "0,44",
+            "0,49"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "miles € 30/06/2019 30/06/2018 Ratio 1 requerido",
+          "values": [
+            "<3,45",
+            "<3,75"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 64,
+      "section": "CUMPLE                CUMPLE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CUMPLE CUMPLE Pasivo Corriente",
+          "values": [
+            "371.347",
+            "409.164"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Menos: Tesorería y Activos Líquidos Equivalentes",
+          "values": [
+            "(61.435)",
+            "(133.076)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Menos: Deudas Entidades Deportivas",
+          "values": [
+            "(105.524)",
+            "(84.762)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "La composición de la deuda neta es la siguiente: Total Pasivo corriente ajustado T-1",
+          "values": [
+            "204.388",
+            "191.326"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cifra negocios T-2",
+          "values": [
+            "748.042",
+            "671.864"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 64,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "miles € 30/06/2019 30/06/2018 Ratio",
+          "values": [
+            "0,27",
+            "0,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Ratio 2 requerido",
+          "values": [
+            "<1,70",
+            "<2,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 64,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deudas con entidades deportivas l/p",
+          "values": [
+            "2.068",
+            "1.893"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras deudas l/p",
+          "values": [
+            "14.135",
+            "17.684"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cobros anticipados l/p",
+          "values": [
+            "33.289",
+            "24.227"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 64,
+      "section": "21. HECHOS POSTERIORES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deudas con entidades de crédito c/p",
+          "values": [
+            "10.151"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas con entidades deportivas c/p",
+          "values": [
+            "79.858",
+            "16.847"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 65,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos de Socios y Estadio 169.551 5.497 175.048 Ingresos de Socios y Estadio",
+          "values": [
+            "172.316",
+            "175.049",
+            "2.733"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ing. de Amistosos y Competiciones Internacionales 112.300 1.293 113.593 Ingresos de Amistosos y Competiciones Internacionales",
+          "values": [
+            "116.259",
+            "113.593",
+            "(2.666)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos de Retransmisión 170.697 2.295 172.992 Ingresos de Retransmisión",
+          "values": [
+            "158.234",
+            "172.991",
+            "14.757"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos de Marketing 288.749 6.885 295.634 Ingresos de Marketing",
+          "values": [
+            "305.240",
+            "295.634",
+            "(9.606)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 65,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aprovisionamientos (23.870) (435) (24.305) Gastos de Aprovisionamientos",
+          "values": [
+            "(27.567)",
+            "(24.305)",
+            "3.262"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Personal Deportivo y no Deportivo (361.885) (32.336) (394.221) Gastos de Personal Deportivo y No Deportivo",
+          "values": [
+            "(421.897)",
+            "(394.221)",
+            "27.676"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Operaciones (205.631) (8.410) (214.041) Gastos de Operaciones",
+          "values": [
+            "(189.672)",
+            "(214.041)",
+            "(24.369)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisión de insolvencia y de riesgos y gastos (523) - (523) Provisiones de Insolvencia y de Riesgos y Gastos (4.000) (523)",
+          "values": [
+            "3.477"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 65,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Resultado enajenación inmovilizado 98.789 (241) 98.548 Resultado de Explotación antes Amortizaciones y Enajenación de Inmovilizado",
+          "values": [
+            "108.913",
+            "124.177",
+            "15.264"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pérdidas por deterioro/baja inmovilizado (46.378) -",
+          "values": [
+            "(46.378)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado por Enajenación de Inmovilizado",
+          "values": [
+            "102.210",
+            "98.548",
+            "(3.662)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado de explotación antes de amortizaciones (EBITDA) 201.799 (25.452) 176.347 Pérdida por Deterioro/Baja Inmovilizado",
+          "values": [
+            "(45.000)",
+            "(46.378)",
+            "(1.378)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 65,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos Financieros por coste implícito derivado del pago aplazado en la adquisición de jugadores (543) Resultado de Explotación",
+          "values": [
+            "44.244",
+            "54.286",
+            "10.042"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Financieros por intereses de préstamos, gastos de avales y otros gastos financieros",
+          "values": [
+            "(1.056)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 74,
+      "section": "REAL MADRID CLUB DE FÚTBOL PRESUPUESTO POR / SECCIONES DEPORTIVAS DE LA TEMPORADA 2019-2020",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos de Socios y Estadio",
+          "values": [
+            "156.098",
+            "5.237",
+            "161.335"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos de Amistosos y Competiciones Internacionales 108.867",
+          "values": [
+            "109.685"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos de Retransmisión",
+          "values": [
+            "177.561",
+            "2.267",
+            "179.828"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos de Marketing",
+          "values": [
+            "363.716",
+            "7.567",
+            "371.283"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 74,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos de Aprovisionamientos (28.706) (562)",
+          "values": [
+            "(29.268)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Personal Deportivo y No Deportivo",
+          "values": [
+            "(422.252)",
+            "(34.217)",
+            "(456.469)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Operaciones",
+          "values": [
+            "(247.296)",
+            "(8.069)",
+            "(255.365)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 74,
+      "section": "Resultado de Explotación antes Amortizaciones",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Resultado por Enajenación de Inmovilizado 94.054 (25)",
+          "values": [
+            "94.029"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pérdida por Deterioro/Baja Inmovilizado 42.473",
+          "values": [
+            "42.473"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 12,
+      "section": "BALANCE DE SITUACIÓN",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL ACTIVO CORRIENTE 412.607 354.468 TOTAL PASIVO CORRIENTE",
+      "target": "472.759",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-343381"
+    },
+    {
+      "page": 12,
+      "section": "BALANCE DE SITUACIÓN",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL ACTIVO CORRIENTE 412.607 354.468 TOTAL PASIVO CORRIENTE",
+      "target": "460.788",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-361573"
+    },
+    {
+      "page": 17,
+      "section": "17.1       755.128       748.042",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total ingresos y gastos reconocidos",
+      "target": "38.250",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-36546"
+    },
+    {
+      "page": 31,
+      "section": "5. INMOVILIZADO INTANGIBLE NO DEPORTIVO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total coste 146.909 255 -",
+      "target": "(1.115)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "3218"
+    },
+    {
+      "page": 31,
+      "section": "5. INMOVILIZADO INTANGIBLE NO DEPORTIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total coste 146.909 255 -",
+      "target": "146.049",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-143946"
+    },
+    {
+      "page": 31,
+      "section": "135.409     130.346",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total amortización (139.385) (2.577) - -",
+      "target": "(141.962)",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "3534"
+    },
+    {
+      "page": 31,
+      "section": "Correcciones por deterioro: / Ejercicio 2017/2018 / Altas y / Coste:",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total coste 145.593 1.316 - -",
+      "target": "146.909",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "Amortización acumulada:",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total amortización (136.760) (2.625) - -",
+      "target": "(139.385)",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 34,
+      "section": "de las construcciones. / Amortización acumulada / mientos operativos son los siguientes: / miles €                                       30/06/2019   30/06/2018 / Correcciones por deterioro",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Corrección por deterioro (8.060) - 959 - (7.101) Más de cinco años",
+      "target": "2.691",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-1529"
+    },
+    {
+      "page": 34,
+      "section": "de las construcciones. / Amortización acumulada / mientos operativos son los siguientes: / miles €                                       30/06/2019   30/06/2018 / Correcciones por deterioro",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Corrección por deterioro (8.060) - 959 - (7.101) Más de cinco años",
+      "target": "3.306",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-632"
+    },
+    {
+      "page": 35,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total inversiones financieras a largo plazo 44.113 62.222 -",
+      "target": "(76.510)",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "135414"
+    },
+    {
+      "page": 35,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total inversiones financieras a largo plazo 44.113 62.222 -",
+      "target": "29.825",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-345"
+    },
+    {
+      "page": 35,
+      "section": "-   319.257    319.257",
+      "likelyRelevant": false,
+      "totalLabel": "Total inversiones financieras a largo plazo 26.677 70.475 -",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 35,
+      "section": "-   319.257    319.257",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL ACTIVOS FINANCIEROS",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 36,
+      "section": "Aplicación del periodo                                        -                - / Reversión del periodo (Nota 17.4)                          (28)            (277) / Traspaso del periodo                                        28               28 / Corrección por deterioro final                             178                28 / Dentro del epígrafe “Entidades deportivas deudoras otros concep-",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL DEUDORES COMERCIALES Y OTRAS CUENTAS A COBRAR 167.442 157.024 tos” se incluye un saldo con la Liga de Fútbol Profesional de",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 38,
+      "section": "RECIBIDOS",
+      "likelyRelevant": false,
+      "totalLabel": "Total provisiones a largo plazo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 44,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total pasivos financieros",
+      "target": "207.121",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-56329"
+    },
+    {
+      "page": 44,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total pasivos financieros",
+      "target": "270.861",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-63101"
+    },
+    {
+      "page": 44,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL DEUDAS A CORTO PLAZO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 53,
+      "section": "ficaciones a largo plazo del pasivo y se va cancelando a medida que / Ingresos Supercopa de Europa                            3.549        4.000 / Ingresos Amistosos                                     10.858       18.543 / Total Ingresos Taquillas y Competiciones                 205.699      195.630 / más, hasta junio de 2028. Los efectos económicos derivados de la",
+      "likelyRelevant": true,
+      "totalLabel": "Total Ingresos Abonados y Socios",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 53,
+      "section": "ficaciones a largo plazo del pasivo y se va cancelando a medida que / Ingresos Supercopa de Europa                            3.549        4.000 / Ingresos Amistosos                                     10.858       18.543 / Total Ingresos Taquillas y Competiciones                 205.699      195.630 / más, hasta junio de 2028. Los efectos económicos derivados de la",
+      "likelyRelevant": true,
+      "totalLabel": "Total Ingresos Explotación de instalaciones",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 55,
+      "section": "baloncesto) en la LNFP es la siguiente: / Ejercicio 2018/2019 / Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total gasto de personal plantilla deportiva",
+      "target": "321.311",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "30937"
+    },
+    {
+      "page": 55,
+      "section": "baloncesto) en la LNFP es la siguiente: / Ejercicio 2018/2019 / Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total gasto de personal plantilla deportiva",
+      "target": "3.757",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "397387"
+    },
+    {
+      "page": 55,
+      "section": "baloncesto) en la LNFP es la siguiente: / Ejercicio 2018/2019 / Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Total gasto de personal plantilla deportiva",
+      "target": "8.962",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "43440"
+    },
+    {
+      "page": 55,
+      "section": "baloncesto) en la LNFP es la siguiente: / Ejercicio 2018/2019 / Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "Total gasto de personal plantilla deportiva",
+      "target": "6.774",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-23572"
+    },
+    {
+      "page": 55,
+      "section": "baloncesto) en la LNFP es la siguiente: / Ejercicio 2018/2019 / Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "likelyRelevant": true,
+      "column": 4,
+      "totalLabel": "Total gasto de personal plantilla deportiva",
+      "target": "2.472",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "434276"
+    },
+    {
+      "page": 55,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Fútbol 326.473 2.862",
+      "target": "56.008",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "33562"
+    },
+    {
+      "page": 55,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Fútbol 326.473 2.862",
+      "target": "6.003",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "1222102"
+    },
+    {
+      "page": 55,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Baloncesto 24.943 2.760 - 6.606 527",
+      "target": "35.741",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 56,
+      "section": "inmovilizado y otros excepcionales” es el siguiente: / Dentro del epígrafe “Otros gastos de gestión corriente” se inclu- / en el R/D 5/2015 (ver Nota 17.1.5), así como provisiones de de- / miles €                                           30/06/2019   30/06/2018",
+      "likelyRelevant": true,
+      "totalLabel": "TOTAL DETERIORO, RESULTADO POR ENAJENACIONES DEL INMOVILIZADO Y OTROS EXCEPCIONALES",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 61,
+      "section": "Ejercicio 2018/2019 / Días",
+      "likelyRelevant": false,
+      "totalLabel": "Total pagos realizados",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 61,
+      "section": "Ejercicio 2018/2019 / Días",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total pagos pendientes",
+      "target": "57.625",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-49921"
+    },
+    {
+      "page": 62,
+      "section": "para el Control Económico y para la inscripción en la LFP. Por",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total ingresos estados financieros",
+      "target": "856.610",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "209"
+    },
+    {
+      "page": 62,
+      "section": "para el Control Económico y para la inscripción en la LFP. Por",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total ingresos estados financieros",
+      "target": "805.525",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "653"
+    },
+    {
+      "page": 62,
+      "section": "para el Control Económico y para la inscripción en la LFP. Por",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total ingresos estados financieros",
+      "target": "727.949",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-1657"
+    },
+    {
+      "page": 63,
+      "section": "CUMPLE        CUMPLE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total gastos personal asociados primera plantilla de fútbol",
+      "target": "301.699",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-62689"
+    },
+    {
+      "page": 63,
+      "section": "CUMPLE        CUMPLE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total gastos personal asociados primera plantilla de fútbol",
+      "target": "342.658",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-70403"
+    },
+    {
+      "page": 63,
+      "section": "Partidas conciliatorias",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total gastos de personal estados financieros",
+      "target": "394.221",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "-371816"
+    },
+    {
+      "page": 63,
+      "section": "Partidas conciliatorias",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total gastos de personal estados financieros",
+      "target": "430.751",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "-413175"
+    },
+    {
+      "page": 64,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Ratio 2 requerido",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"<1,70\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 64,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Ratio 2 requerido",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"<2,00\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 59,
+    "results": [
+      {
+        "label": "Concesiones 3.159 - - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Concesiones 3.159 - - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patentes, licencias, marcas y similares 1.526 140 - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patentes, licencias, marcas y similares 1.526 140 - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aplicaciones informáticas 14.400 518 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aplicaciones informáticas 14.400 518 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otro inmovilizado intangible 125.047 - - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otro inmovilizado intangible 125.047 - - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Anticipos 1.461 658 - (413)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Anticipos 1.461 658 - (413)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "30 de junio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "30 de junio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Terrenos 13.620 - - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Terrenos 13.620 - - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Construcciones 15.024 - - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Construcciones 15.024 - - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Deudores comerciales y otras cuentas a cobrar (*) - 163.551 163.551 Entidades deportivas deudoras por traspaso jugadores largo plazo 16.894 59.957 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Deudores comerciales y otras cuentas a cobrar (*) - 163.551 163.551 Entidades deportivas deudoras por traspaso jugadores largo plazo 16.894 59.957 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Efectivo y otros activos líquidos equivalentes (nota 10) - 155.706 155.706 Otros activos financieros 9.438 10.518 - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Efectivo y otros activos líquidos equivalentes (nota 10) - 155.706 155.706 Otros activos financieros 9.438 10.518 - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Estos saldos van a ser renovados y por tanto van a existir por Anticipos a largo plazo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Estos saldos van a ser renovados y por tanto van a existir por Anticipos a largo plazo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "importe similar al cierre de cada periodo. En el caso de las cuo-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "importe similar al cierre de cada periodo. En el caso de las cuo-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos de estadio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos de estadio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "siguiente. En el caso de los abonos de palcos y zonas VIP, así Ingresos de marketing",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "siguiente. En el caso de los abonos de palcos y zonas VIP, así Ingresos de marketing",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "como de algunos patrocinadores, una parte de los cobros se han Ingresos de competiciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "como de algunos patrocinadores, una parte de los cobros se han Ingresos de competiciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "producido con anterioridad al cierre de la temporada, mientras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "producido con anterioridad al cierre de la temporada, mientras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Retenciones y pagos a cuenta a devolver",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Retenciones y pagos a cuenta a devolver",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "la actualización de los anticipos recibidos asciende a 231 miles Activos por impuesto corriente (nota 8.2)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "la actualización de los anticipos recibidos asciende a 231 miles Activos por impuesto corriente (nota 8.2)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "de euros (365 miles de euros en el ejercicio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "de euros (365 miles de euros en el ejercicio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Activos por diferencias temporarias deducibles",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Activos por diferencias temporarias deducibles",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "nio de 2019 y cuyo devengo corresponde a la temporada Hacienda Pública, acreedor por IVA",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "nio de 2019 y cuyo devengo corresponde a la temporada Hacienda Pública, acreedor por IVA",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2019/2020. Hacienda Pública, acreedor por IRPF",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2019/2020. Hacienda Pública, acreedor por IRPF",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impuesto corriente",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impuesto corriente",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reserva de capitalización (685) - Retenciones y pagos a cuenta",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reserva de capitalización (685) - Retenciones y pagos a cuenta",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ajuste Reserva de capitalización ejercicio anterior (11) - Deducciones años anteriores aplicadas en el ejercicio -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ajuste Reserva de capitalización ejercicio anterior (11) - Deducciones años anteriores aplicadas en el ejercicio -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "vo material e inmovilizado financiero. Total",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "vo material e inmovilizado financiero. Total",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impuesto Diferido (25%)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impuesto Diferido (25%)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "del acuerdo. Compras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "del acuerdo. Compras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variación de existencias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variación de existencias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "obtenidos y la implantación social, medida por la recaudación en Jugadores y técnicos baloncesto 24.502 1.839 - 2.470",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "obtenidos y la implantación social, medida por la recaudación en Jugadores y técnicos baloncesto 24.502 1.839 - 2.470",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "abonos y taquilla media y la aportación relativa en la generación Personal no deportivo baloncesto 1.732 - - 130 124",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "abonos y taquilla media y la aportación relativa en la generación Personal no deportivo baloncesto 1.732 - - 130 124",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "de recursos por la comercialización de las retransmisiones tele- Total Baloncesto 26.234 1.839 - 2.600",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "de recursos por la comercialización de las retransmisiones tele- Total Baloncesto 26.234 1.839 - 2.600",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Importe plantilla inscribible LNFP 283.396 1.911 8.472 4.304",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Importe plantilla inscribible LNFP 283.396 1.911 8.472 4.304",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Importe plantilla no inscribible LNFP 37.915 1.846 490 2.470 1.922 2.874 47.517 Importe plantilla inscribible LNFP",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Importe plantilla no inscribible LNFP 37.915 1.846 490 2.470 1.922 2.874 47.517 Importe plantilla inscribible LNFP",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Importe plantilla no inscribible LNFP 47.517 2.724 357",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Importe plantilla no inscribible LNFP 47.517 2.724 357",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos totales plantilla deportiva",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos totales plantilla deportiva",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Jugadores y técnicos 1º equipo fútbol 280.795 2.786 - 54.858",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Jugadores y técnicos 1º equipo fútbol 280.795 2.786 - 54.858",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Importe plantilla inscribible LNFP 339.935 80.258",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Importe plantilla inscribible LNFP 339.935 80.258",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Jugadores y técnicos 2º equipo fútbol 6.425 54 19 - 348 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Jugadores y técnicos 2º equipo fútbol 6.425 54 19 - 348 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Importe plantilla no inscribible LNFP 48.385 4.664 112",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Importe plantilla no inscribible LNFP 48.385 4.664 112",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Jugadores y técnicos categorías inferiores fútbol 5.218 22 - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Jugadores y técnicos categorías inferiores fútbol 5.218 22 - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Personal no deportivo 34.035 - 113 1.150 4.273",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Personal no deportivo 34.035 - 113 1.150 4.273",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos totales plantilla deportiva 388.320 84.922",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos totales plantilla deportiva 388.320 84.922",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de cesión y adquisición de jugadores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de cesión y adquisición de jugadores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros gastos de gestión corriente",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros gastos de gestión corriente",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Otros gastos de gestión corriente",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Arrendamientos de activos (nota 6.3)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Arrendamientos de activos (nota 6.3)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros arrendamientos, cánones y otros servicios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros arrendamientos, cánones y otros servicios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reparaciones y conservación",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reparaciones y conservación",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Servicios profesionales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Servicios profesionales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "general y el Comité de Control Económico, en especial, de acuer- Importe neto de la cifra de negocios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "general y el Comité de Control Económico, en especial, de acuer- Importe neto de la cifra de negocios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "do con el artículo 41.4 b) de la Ley del Deporte y en los Estatutos Otros ingresos de explotación",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "do con el artículo 41.4 b) de la Ley del Deporte y en los Estatutos Otros ingresos de explotación",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costes financieros y dividendos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costes financieros y dividendos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos personal asociados a la primera plantilla de fútbol",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos personal asociados a la primera plantilla de fútbol",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos actividades desarrollo cantera no identificables",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos actividades desarrollo cantera no identificables",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos relevantes",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos relevantes",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos en actividades de desarrollo comunitario",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos en actividades de desarrollo comunitario",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortización/desvalorización inmovilizado inmaterial no deportivo, material e inmobiliario",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortización/desvalorización inmovilizado inmaterial no deportivo, material e inmobiliario",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado por Enajenación de Inmovilizado 94.054 (25)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado por Enajenación de Inmovilizado 94.054 (25)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pérdida por Deterioro/Baja Inmovilizado 42.473",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pérdida por Deterioro/Baja Inmovilizado 42.473",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "es",
+    "query": "Real Madrid",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 29,
+      "line": "su valoración inicial al tipo de cambio de contado vigente en la"
+    },
+    {
+      "page": 29,
+      "line": "tinta del euro se convierten al tipo de cambio de contado vigente                                                                           Altas y"
+    },
+    {
+      "page": 43,
+      "line": "moneda extranjera por deudas a largo plazo."
+    }
+  ],
+  "warnings": [
+    "7 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "20 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "11 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

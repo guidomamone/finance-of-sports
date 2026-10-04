@@ -1,0 +1,262 @@
+{
+  "club": "atromitos",
+  "year": 2021,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Grecia/Atromitos/Atromitos_board_report_2021-06-30.md",
+  "generatedAt": "2026-09-30T22:02:26.583Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 38,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 5,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 5,
+      "section": "## 6.3 Αριθμοδείκτες",
+      "columns": [
+        "Αριθμοδείκτες διάρθρωσης ενεργητικού",
+        "",
+        "2020-2021",
+        "",
+        "2019-2020",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Κυκλοφορούν ενεργητικό",
+          "values": [
+            "",
+            "1.582.617,79",
+            "",
+            "1.527.878,34",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο ενεργητικού",
+          "values": [
+            "=",
+            "2.300.981,33",
+            "= 68,78%",
+            "2.115.147,67",
+            "= 72,24%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Πάγιο ενεργητικό",
+          "values": [
+            "",
+            "685.034,58",
+            "",
+            "559.167,92",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο ενεργητικού",
+          "values": [
+            "=",
+            "2.300.981,33",
+            "= 29,77%",
+            "2.115.147,67",
+            "= 26,44%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "### Αριθμοδείκτες κεφαλαιακής επάρκειας",
+      "columns": [
+        "Ίδια κεφάλαια",
+        "",
+        "-3.922.199,97",
+        "",
+        "-1.644.687,04",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Σύνολο υποχρεώσεων",
+          "values": [
+            "=",
+            "6.139.434,12",
+            "= -63,89%",
+            "3.678.758,02",
+            "= -44,71%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο υποχρεώσεων",
+          "values": [
+            "",
+            "6.139.434,12",
+            "",
+            "3.678.758,02",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο παθητικού",
+          "values": [
+            "=",
+            "2.300.981,33",
+            "= 266,82%",
+            "2.115.147,67",
+            "= 173,92%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ίδια κεφάλαια",
+          "values": [
+            "",
+            "-3.922.199,97",
+            "",
+            "-1.644.687,04",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο παθητικού",
+          "values": [
+            "=",
+            "2.300.981,33",
+            "= -170,46%",
+            "2.115.147,67",
+            "= -77,76%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "### Αριθμοδείκτης χρηματοδότησης ενεργητικού",
+      "columns": [
+        "Ίδια κεφάλαια",
+        "",
+        "-3.922.199,97",
+        "",
+        "-1.644.687,04",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Πάγιο ενεργητικό",
+          "values": [
+            "=",
+            "685.034,58",
+            "= -5,73",
+            "559.167,92",
+            "= -2,94"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "### Αριθμοδείκτης ρευστότητας",
+      "columns": [
+        "Κυκλοφορούν ενεργητικό",
+        "",
+        "1.582.617,79",
+        "",
+        "1.527.878,34",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Βραχ. υποχρεώσεις",
+          "values": [
+            "=",
+            "4.708.697,78",
+            "= 0,34",
+            "2.395.778,87",
+            "= 0,64"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "### Αριθμοδείκτες αποδόσεως και αποδοτικότητας",
+      "columns": [
+        "Μικτά αποτελέσματα",
+        "",
+        "-3.095.349,58",
+        "",
+        "-2.257.097,90",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Πωλήσεις",
+          "values": [
+            "=",
+            "2.572.890,78",
+            "= -120,31%",
+            "2.808.345,37",
+            "= -80,37%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Καθαρά κέρδη προ φόρων",
+          "values": [
+            "",
+            "-2.277.512,93",
+            "",
+            "-1.471.736,98",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο Ιδίων Κεφαλαίων",
+          "values": [
+            "=",
+            "-3.922.199,97",
+            "= 58,07%",
+            "-1.644.687,04",
+            "= 89,48%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/atromitos-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"atromitos\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

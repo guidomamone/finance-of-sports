@@ -1,0 +1,29 @@
+{
+ "pdf": "Clubes/España/Celta de Vigo/cuentas-anuales-individual-2024-2025.pdf",
+ "md": "Clubes/España/Celta de Vigo/cuentas-anuales-individual-2024-2025.md",
+ "cierre": "2025-06-30",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:49:16.714Z",
+ "paginas_resultados": [
+  5
+ ],
+ "paginas_notas_ingresos": [
+  55,
+  59,
+  61,
+  62
+ ],
+ "paginas_notas_gastos": [
+  56,
+  57,
+  58,
+  60,
+  61
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales en euros (ej. 72.930.541,94); pág. 68: \"Información en €\"",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/06/2025",
+ "perimetro": "individual",
+ "observaciones": "Cuentas anuales individuales de la S.A.D. (el club formula también consolidadas por separado, no incluidas aquí). La cuenta de pérdidas y ganancias aparece en pág. 5; podría continuar en la pág. siguiente pero la pág. 6 ya es estado de cambios en el patrimonio. Nota 14 (págs. 55-62) desglosa cifra de negocios, gastos de personal, plantilla deportiva, adquisición de jugadores, operaciones con vinculadas y excepcionales/financieros. Se excluyen presupuesto (77-78) y cálculos LNFP."
+}

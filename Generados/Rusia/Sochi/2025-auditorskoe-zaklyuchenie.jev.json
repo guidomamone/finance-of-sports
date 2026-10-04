@@ -1,0 +1,75 @@
+{
+ "md": "Clubes/Rusia/Sochi/2025-auditorskoe-zaklyuchenie.md",
+ "generatedAt": "2026-09-30T12:59:41.672Z",
+ "rubros": [
+  {
+   "label": "Общество с ограниченной ответственностью 'ФУТБОЛЬНЫЙ Организация: КЛУБ 'СОЧИ'",
+   "lado": null,
+   "page": 7,
+   "section": "# Отчет о финансовых результатах",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ]
+   ],
+   "tokens": 1341
+  },
+  {
+   "label": "3.6",
+   "lado": null,
+   "page": 8,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_income",
+     0.41
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1244
+  },
+  {
+   "label": "Единица измерения тыс. руб.",
+   "lado": null,
+   "page": 7,
+   "section": "# Отчет о финансовых результатах",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1291
+  }
+ ]
+}

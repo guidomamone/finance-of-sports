@@ -1,0 +1,286 @@
+{
+  "md": "Clubes/Bélgica/Charleroi/jaarrekening-2006-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Charleroi/jaarrekening-2006-06-30-individual.pdf",
+  "club": "charleroi-be",
+  "year": 2006,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:54:26.690Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 24,
+    "notasUsadas": []
+  },
+  "ladoConocido": 16,
+  "rubros": [
+    {
+      "label": "I. Ventes et prestations",
+      "lado": "revenue",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        7.074
+      ],
+      "origen": "estado 0",
+      "glosa": "I. Ventas y prestaciones de servicios"
+    },
+    {
+      "label": "A. Chiffre d'affaires (annexe XII, A)",
+      "lado": "revenue",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.07
+      ],
+      "origen": "estado 0",
+      "glosa": "A. Cifra de negocios (anexo XII, A)"
+    },
+    {
+      "label": "B. Variation des en-cours de fabrication, des produits finis et des commandes en cours d'exécution (augmentation +, réduction -)",
+      "lado": "revenue",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.071
+      ],
+      "origen": "estado 0",
+      "glosa": "B. Variación de existencias de productos en curso, productos terminados y pedidos en curso de ejecución (aumento +, disminución -)"
+    },
+    {
+      "label": "C. Production immobilisée",
+      "lado": null,
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.072
+      ],
+      "origen": "estado 0",
+      "glosa": "C. Trabajos realizados por la empresa para su activo"
+    },
+    {
+      "label": "D. Autres produits d'exploitation (ann. XII, B)",
+      "lado": "revenue",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.074
+      ],
+      "origen": "estado 0",
+      "glosa": "D. Otros ingresos de explotación (anexo XII, B)"
+    },
+    {
+      "label": "II. Coût des ventes et des prestations (-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        6.064
+      ],
+      "origen": "estado 0",
+      "glosa": "II. Coste de las ventas y de las prestaciones (-)"
+    },
+    {
+      "label": "A. Approvisionnements et marchandises",
+      "lado": null,
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.06
+      ],
+      "origen": "estado 0",
+      "glosa": "A. Aprovisionamientos y mercancías"
+    },
+    {
+      "label": "1. Achats",
+      "lado": null,
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        6.008
+      ],
+      "origen": "estado 0",
+      "glosa": "1. Compras"
+    },
+    {
+      "label": "2. Variation des stocks (augmentation -, réduction +)",
+      "lado": null,
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.609
+      ],
+      "origen": "estado 0",
+      "glosa": "2. Variación de existencias (aumento -, disminución +)"
+    },
+    {
+      "label": "B. Services et biens divers",
+      "lado": null,
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.061
+      ],
+      "origen": "estado 0",
+      "glosa": "B. Servicios y bienes diversos"
+    },
+    {
+      "label": "C. Rémunérations, charges sociales et pensions (ann. XII, C2)",
+      "lado": "expense",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.062
+      ],
+      "origen": "estado 0",
+      "glosa": "C. Sueldos, cargas sociales y pensiones (anexo XII, C2)"
+    },
+    {
+      "label": "D. Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+      "lado": null,
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.63
+      ],
+      "origen": "estado 0",
+      "glosa": "D. Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "E. Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales (dotations +, reprises -) (ann. XII, D)",
+      "lado": null,
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        6.314
+      ],
+      "origen": "estado 0",
+      "glosa": "E. Correcciones de valor sobre existencias, pedidos en curso de ejecución y créditos comerciales (dotaciones +, reversiones -) (anexo XII, D)"
+    },
+    {
+      "label": "F. Provisions pour risques et charges (dotations +, utilisations et reprises -) (ann. XII, C3 et E)",
+      "lado": "expense",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        6.357
+      ],
+      "origen": "estado 0",
+      "glosa": "F. Provisiones para riesgos y gastos (dotaciones +, aplicaciones y reversiones -) (anexo XII, C3 y E)"
+    },
+    {
+      "label": "G. Autres charges d'exploitation (ann. XII, F)",
+      "lado": "expense",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        6.408
+      ],
+      "origen": "estado 0",
+      "glosa": "G. Otros gastos de explotación (anexo XII, F)"
+    },
+    {
+      "label": "H. Charges d'exploitation portées à l'actif au titre de frais de restructuration (-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.649
+      ],
+      "origen": "estado 0",
+      "glosa": "H. Gastos de explotación activados en concepto de gastos de reestructuración (-)"
+    },
+    {
+      "label": "IV. Produits financiers",
+      "lado": "revenue",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.075
+      ],
+      "origen": "estado 0",
+      "glosa": "IV. Ingresos financieros"
+    },
+    {
+      "label": "A. Produits des immobilisations financières",
+      "lado": "revenue",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.75
+      ],
+      "origen": "estado 0",
+      "glosa": "A. Ingresos del inmovilizado financiero"
+    },
+    {
+      "label": "B. Produits des actifs circulants",
+      "lado": "revenue",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.751
+      ],
+      "origen": "estado 0",
+      "glosa": "B. Ingresos del activo corriente"
+    },
+    {
+      "label": "C. Autres produits financiers (ann. XIII, A)",
+      "lado": "revenue",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        7.529
+      ],
+      "origen": "estado 0",
+      "glosa": "C. Otros ingresos financieros (anexo XIII, A)"
+    },
+    {
+      "label": "V. Charges financières (-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.065
+      ],
+      "origen": "estado 0",
+      "glosa": "V. Gastos financieros (-)"
+    },
+    {
+      "label": "A. Charges des dettes (ann. XIII, B et C)",
+      "lado": "expense",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.65
+      ],
+      "origen": "estado 0",
+      "glosa": "A. Gastos por deudas (anexo XIII, B y C)"
+    },
+    {
+      "label": "B. Réductions de valeur sur actifs circulants autres que ceux visés sub. II.E. (dotations +, reprises -) (ann. XIII, D)",
+      "lado": null,
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        0.651
+      ],
+      "origen": "estado 0",
+      "glosa": "B. Correcciones de valor sobre activos corrientes distintos de los indicados en II.E. (dotaciones +, reversiones -) (anexo XIII, D)"
+    },
+    {
+      "label": "C. Autres charges financières (ann. XIII, E)",
+      "lado": "expense",
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "values": [
+        6.529
+      ],
+      "origen": "estado 0",
+      "glosa": "C. Otros gastos financieros (anexo XIII, E)"
+    }
+  ]
+}

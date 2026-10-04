@@ -1,0 +1,2007 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2021.md",
+ "generatedAt": "2026-09-30T04:26:09.859Z",
+ "rubros": [
+  {
+   "label": "Cessão temporária dos atletas",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "player_sales",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "player_sales",
+     0.93
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Direitos econômicos",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "player_amortisation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "player_amortisation",
+     0.98
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Direitos de transmissão de TV",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1476
+  },
+  {
+   "label": "Arrecadação de jogos",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1507
+  },
+  {
+   "label": "Publicidade",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1471
+  },
+  {
+   "label": "Patrocínio",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1473
+  },
+  {
+   "label": "Cessão definitiva dos atletas",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "Mecanismo Solidariedade da FIFA",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.5
+    ],
+    [
+     "player_sales",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1506
+  },
+  {
+   "label": "Sócio torcedor",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Receita líquida",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1480
+  },
+  {
+   "label": "Outras receitas",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1460
+  },
+  {
+   "label": "(-) Custos operacionais",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1491
+  },
+  {
+   "label": "Premiações",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "wages_squad",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "wages_squad",
+     0.62
+    ],
+    [
+     "match_organisation_expense",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 947
+  },
+  {
+   "label": "Impostos incidentes sobre a receita",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.5
+    ],
+    [
+     "admin_general_expense",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "Lucro bruto",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "lump_football_operations",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.75
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1425
+  },
+  {
+   "label": "Administrativas e gerais",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1493
+  },
+  {
+   "label": "Com pessoal",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "wages_squad",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "wages_squad",
+     0.51
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Atletas não profissionais",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.61
+    ],
+    [
+     "wages_squad",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1508
+  },
+  {
+   "label": "Com materiais",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 1466
+  },
+  {
+   "label": "Alojamento e moradia",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1379
+  },
+  {
+   "label": "Outras despesas",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1483
+  },
+  {
+   "label": "Prejuízo antes do resultado financeiro",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ],
+    [
+     "other_income",
+     0.13
+    ]
+   ],
+   "tokens": 1477
+  },
+  {
+   "label": "Tributária",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "exceptional_items",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "exceptional_items",
+     0.62
+    ],
+    [
+     "admin_general_expense",
+     0.35
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1347
+  },
+  {
+   "label": "Receita financeira",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1474
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1478
+  },
+  {
+   "label": "Lucro (prejuízo) líquido por ação (em R$)",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "lump_football_operations",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1468
+  },
+  {
+   "label": "Móveis e utensílios",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "choice": "admin_general_expense",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.35000000000000003
+    ],
+    [
+     "depreciation",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.24
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Prejuízo antes dos impostos e contribuições",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "other_income",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1527
+  },
+  {
+   "label": "Instalações",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.52
+    ],
+    [
+     "depreciation",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "Prejuízo líquido do exercício",
+   "lado": null,
+   "page": 10,
+   "section": "# Ferroviária Futebol S.A. / # Demonstrações do resultado abrangente / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "lump_football_operations",
+     0.06999999999999999
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1442
+  },
+  {
+   "label": "Quantidade de ações integralizadas",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1346
+  },
+  {
+   "label": "Equipamentos de informática",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 932
+  },
+  {
+   "label": "Máquinas e equipamentos",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "depreciation",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 904
+  },
+  {
+   "label": "Veículos",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "choice": "other_expenses",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "depreciation",
+     0.29
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ]
+   ],
+   "tokens": 792
+  },
+  {
+   "label": "Software",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11 Intangível",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_amortisation",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Equipamentos esportivos",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "wages_squad",
+     0.56
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 953
+  },
+  {
+   "label": "Marcas e patentes",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11 Intangível",
+   "choice": "other_amortisation",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_amortisation",
+     0.59
+    ],
+    [
+     "depreciation",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Aparelhos de comunicação",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 880
+  },
+  {
+   "label": "Atletas profissionais formados (ii)",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11 Intangível",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.53
+    ],
+    [
+     "player_amortisation",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Atletas em formação (i)",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11 Intangível",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.63
+    ],
+    [
+     "player_amortisation",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Atletas profissionais contratados (ii)",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11 Intangível",
+   "choice": "player_amortisation",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "player_amortisation",
+     0.64
+    ],
+    [
+     "wages_squad",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Com jogos",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Banco SICOOB",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Movimentação dos empréstimos:",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Direito de uso de imagem",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "depreciation",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Banco Bradesco",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Movimentação dos empréstimos:",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Viagens e hospedagens",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Taxas de federação e confederação",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "admin_general_expense",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "match_organisation_expense",
+     0.17
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Manutenção e conservação",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Agenciamento de atletas",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Locação de estádio",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "match_organisation_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Moradia",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 891
+  },
+  {
+   "label": "Material esportivo",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "match_organisation_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Amortização de atletas formados",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     0.99
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "Serviços de consultoria",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Outros custos",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Serviços de apoio administrativo",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Serviços contábeis, advocatícios e auditoria",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Processos cíveis",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 995
+  },
+  {
+   "label": "Viagens e estadias",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "match_organisation_expense",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Refeitório",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 808
+  },
+  {
+   "label": "Manutenção e conservação de bens",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Premiação",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "wages_squad",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "wages_squad",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 889
+  },
+  {
+   "label": "Propaganda e publicidade",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 967
+  },
+  {
+   "label": "Licença de software",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Material de limpeza, higiene, copa e cozinha",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Material de escritório",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Seguro de vida",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5
+    ],
+    [
+     "wages_squad",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 862
+  },
+  {
+   "label": "Gestão do programa sócio torcedor",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Outras",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Reversão das contingências trabalhistas",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "exceptional_items",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Depreciações",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "Rendimento sobre aplicação financeira",
+   "lado": null,
+   "page": 28,
+   "section": "### 23 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "Descontos obtidos",
+   "lado": null,
+   "page": 28,
+   "section": "### 23 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1310
+  },
+  {
+   "label": "Variação cambial",
+   "lado": null,
+   "page": 28,
+   "section": "### 23 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Encargos financeiros com a F.P.F.",
+   "lado": null,
+   "page": 28,
+   "section": "### 23 Resultado financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "match_organisation_expense",
+     0.23
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "Rendas eventuais",
+   "lado": null,
+   "page": 28,
+   "section": "### 23 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1312
+  },
+  {
+   "label": "Juros sobre empréstimos bancários",
+   "lado": null,
+   "page": 28,
+   "section": "### 23 Resultado financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1469
+  },
+  {
+   "label": "Juros passivos",
+   "lado": null,
+   "page": 28,
+   "section": "### 23 Resultado financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1310
+  },
+  {
+   "label": "Perdas eventuais",
+   "lado": null,
+   "page": 28,
+   "section": "### 23 Resultado financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "exceptional_items",
+     0.19
+    ],
+    [
+     "player_impairment",
+     0.03
+    ]
+   ],
+   "tokens": 1443
+  },
+  {
+   "label": "Prejuízo operacional antes dos impostos",
+   "lado": "expense",
+   "page": 29,
+   "section": "# Ferroviária Futebol S.A. / ### 24 Imposto de renda e contribuição social / #### Reconciliação da despesa de imposto de renda e da contribuição social corrente",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Provisões não dedutíveis",
+   "lado": "expense",
+   "page": 29,
+   "section": "# Ferroviária Futebol S.A. / ### 24 Imposto de renda e contribuição social / #### Reconciliação da despesa de imposto de renda e da contribuição social corrente",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "exceptional_items",
+     0.07
+    ]
+   ],
+   "tokens": 1146
+  },
+  {
+   "label": "Tarifas bancárias",
+   "lado": null,
+   "page": 28,
+   "section": "### 23 Resultado financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1445
+  },
+  {
+   "label": "Demais despesas não dedutíveis",
+   "lado": "expense",
+   "page": 29,
+   "section": "# Ferroviária Futebol S.A. / ### 24 Imposto de renda e contribuição social / #### Reconciliação da despesa de imposto de renda e da contribuição social corrente",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Lucro real antes da compensação de prejuízos fiscais",
+   "lado": "expense",
+   "page": 29,
+   "section": "# Ferroviária Futebol S.A. / ### 24 Imposto de renda e contribuição social / #### Reconciliação da despesa de imposto de renda e da contribuição social corrente",
+   "choice": "admin_general_expense",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 986
+  },
+  {
+   "label": "Prejuízo real depois da compensação de prejuízos fiscais",
+   "lado": "expense",
+   "page": 29,
+   "section": "# Ferroviária Futebol S.A. / ### 24 Imposto de renda e contribuição social / #### Reconciliação da despesa de imposto de renda e da contribuição social corrente",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 913
+  },
+  {
+   "label": "Alíquota nominal combinada do imposto de renda e da contribuição social – (%)",
+   "lado": "expense",
+   "page": 29,
+   "section": "# Ferroviária Futebol S.A. / ### 24 Imposto de renda e contribuição social / #### Reconciliação da despesa de imposto de renda e da contribuição social corrente",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1095
+  }
+ ]
+}

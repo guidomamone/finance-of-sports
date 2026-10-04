@@ -1,0 +1,144 @@
+{
+ "md": "Clubes/Rusia/Krylia Sovetov Samara/2021-poyasneniya.md",
+ "pdf": "Clubes/Rusia/Krylia Sovetov Samara/2021-poyasneniya.pdf",
+ "club": "krylia-sovetov-samara",
+ "year": 2021,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:59.890Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 12,
+  "notasUsadas": []
+ },
+ "ladoConocido": 12,
+ "rubros": [
+  {
+   "label": "Продажа билетов и сезонных билетов",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "values": [
+    0.044608
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Реализация прав на трансляцию",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "values": [
+    0.063873
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Реклама",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "values": [
+    0.132831
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Доходы от выбытия игроков",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "values": [
+    0.012768
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Безвозмездные поступления",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "values": [
+    1.051126
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Выплаты УЭФА",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "values": [
+    0.031338
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Прочие доходы",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "values": [
+    0.085484
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Прощение долга",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "values": [
+    0.128821
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Себестоимость проданных товаров и услуг",
+   "lado": "expense",
+   "page": 10,
+   "section": "",
+   "values": [
+    1.22101
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Проценты по займам и кредитам",
+   "lado": "expense",
+   "page": 10,
+   "section": "",
+   "values": [
+    0.037033
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Курсовые разницы",
+   "lado": "expense",
+   "page": 10,
+   "section": "",
+   "values": [
+    0.019345
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Прочие",
+   "lado": "expense",
+   "page": 10,
+   "section": "",
+   "values": [
+    0.004887
+   ],
+   "origen": "estado 9"
+  }
+ ]
+}

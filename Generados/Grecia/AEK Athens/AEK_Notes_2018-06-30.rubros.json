@@ -1,0 +1,342 @@
+{
+ "md": "Clubes/Grecia/AEK Athens/AEK_Notes_2018-06-30.md",
+ "pdf": "Clubes/Grecia/AEK Athens/AEK_Notes_2018-06-30.pdf",
+ "club": "aek-athens",
+ "year": 2018,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:01:34.265Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 33,
+  "notasUsadas": []
+ },
+ "ladoConocido": 30,
+ "rubros": [
+  {
+   "label": "Έσοδα από εισιτήρια",
+   "lado": "revenue",
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    4281.60814
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Χορηγίες και διαφημίσεις",
+   "lado": "revenue",
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    5547.44136
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Δικαιώματα αναμετάδοσης",
+   "lado": "revenue",
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    2558.03816
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Εμπορικά",
+   "lado": "revenue",
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    13.40533
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+   "lado": "revenue",
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    9021.521
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Λοιπά λειτουργικά έσοδα",
+   "lado": "revenue",
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    2722.67166
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Κόστος πωλήσεων / υλικών",
+   "lado": "expense",
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    -139.1776
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Αμοιβές ποδοσφαιρικού και λοιπές δαπάνες",
+   "lado": "expense",
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    -12651.12739
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Απομείωση και απόσβεση",
+   "lado": null,
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    -1147.41052
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Απομείωση παγίων περιουσιακών στοιχείων",
+   "lado": null,
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    -177.2714
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Λοιπά λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    -8686.20076
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    -22801.18767
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Χρηματοοικονομικά Έξοδα",
+   "lado": "expense",
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    -83.68468
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Αναβαλλόμενος Φόρος",
+   "lado": "expense",
+   "page": 14,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος",
+   "values": [
+    335.88639
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Μισθώματα",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    0.805435
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Τηλεφωνικά - Ταχυδρομικά",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    0.09827
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Ασφάλιστρα",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    0.05564
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Επισκευές και συντηρήσεις",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    0.039303
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Έξοδα μετακινήσεων",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    0.893568
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Διαφημίσεις και εκδηλώσεις",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    0.192323
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Συνδρομές",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    0.009582
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Δωρεές",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    0.119345
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Έξοδα δημοσιεύσεων",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    0.009731
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Φόροι - Τέλη",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    0.266988
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Αμοιβές τρίτων",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    1.791327
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Έξοδα αγώνων",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    0.723027
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Προβλέψεις επισφαλειών",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    0.319785
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Λοιπά λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 41,
+   "section": "#### 6.20 Λοιπά λειτουργικά έξοδα",
+   "values": [
+    3.360533
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Έσοδα εισιτηρίων εγχώριων διοργανώσεων",
+   "lado": "revenue",
+   "page": 40,
+   "section": "#### 6.15 Έσοδα από εισιτήρια",
+   "values": [
+    3.16156
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Έσοδα από πωλήσεις εισιτηρίων διαρκείας",
+   "lado": "revenue",
+   "page": 40,
+   "section": "#### 6.15 Έσοδα από εισιτήρια",
+   "values": [
+    1.120048
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Ανάλυση αθλητικού υλικού",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### 6.16 Κόστος πωλήσεων / υλικών",
+   "values": [
+    0.092073
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Έξοδα φαρμακείου αθλητών",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### 6.16 Κόστος πωλήσεων / υλικών",
+   "values": [
+    0.047105
+   ],
+   "origen": "estado 32"
+  }
+ ]
+}

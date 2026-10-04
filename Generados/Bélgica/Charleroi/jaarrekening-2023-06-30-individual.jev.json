@@ -1,0 +1,742 @@
+{
+ "md": "Clubes/Bélgica/Charleroi/jaarrekening-2023-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:36.474Z",
+ "rubrosHuella": "56d05c761a346105c87deb30a2dccc351962d4fa",
+ "rubros": [
+  {
+   "label": "Charges financières récurrentes",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Charges financières",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 981
+  },
+  {
+   "label": "Produits des immobilisations financières",
+   "lado": "revenue",
+   "page": 9,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1100
+  },
+  {
+   "label": "Produits financiers",
+   "lado": "revenue",
+   "page": 9,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Produits financiers non récurrents",
+   "lado": "revenue",
+   "page": 9,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Autres produits financiers",
+   "lado": "revenue",
+   "page": 9,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Produits des actifs circulants",
+   "lado": "revenue",
+   "page": 9,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Réductions de valeur sur actifs circulants autres que stocks, commandes en cours et créances commerciales: dotations (reprises)",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "player_impairment",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1536
+  },
+  {
+   "label": "Charges des dettes",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Produits financiers récurrents",
+   "lado": "revenue",
+   "page": 9,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Autres charges financières",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.82
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Charges financières non récurrentes",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "exceptional_items",
+     0.12
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Transfert aux impôts différés",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Impôts",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 984
+  },
+  {
+   "label": "Production immobilisée",
+   "lado": null,
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Prélèvement sur les impôts différés",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "exceptional_items",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Transfert aux réserves immunisées",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "choice": "exceptional_items",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "exceptional_items",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.060000000000000005
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1469
+  },
+  {
+   "label": "Régularisation d'impôts et reprise de provisions fiscales",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "exceptional_items",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Approvisionnements et marchandises",
+   "lado": null,
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Achats",
+   "lado": null,
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Stocks: réduction (augmentation)",
+   "lado": null,
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Services et biens divers",
+   "lado": null,
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Prélèvement sur les réserves immunisées",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "choice": "exceptional_items",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "exceptional_items",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1471
+  },
+  {
+   "label": "Chiffre d'affaires",
+   "lado": "revenue",
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1160
+  },
+  {
+   "label": "Ventes et prestations",
+   "lado": "revenue",
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "En-cours de fabrication, produits finis et commandes en cours d'exécution: augmentation (réduction)",
+   "lado": "revenue",
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Autres produits d'exploitation",
+   "lado": "revenue",
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Produits d'exploitation non récurrents",
+   "lado": "revenue",
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Rémunérations, charges sociales et pensions",
+   "lado": "expense",
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "lado": "expense",
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "depreciation",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "depreciation",
+     0.73
+    ],
+    [
+     "other_amortisation",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1104
+  },
+  {
+   "label": "Coût des ventes et des prestations",
+   "lado": "expense",
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ],
+    [
+     "match_organisation_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+   "lado": "expense",
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Provisions pour risques et charges: dotations (utilisations et reprises)",
+   "lado": "expense",
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "exceptional_items",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1093
+  },
+  {
+   "label": "Charges d'exploitation non récurrentes",
+   "lado": "expense",
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "exceptional_items",
+     0.11
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1166
+  },
+  {
+   "label": "Autres charges d'exploitation",
+   "lado": "expense",
+   "page": 8,
+   "section": "## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1015
+  }
+ ]
+}

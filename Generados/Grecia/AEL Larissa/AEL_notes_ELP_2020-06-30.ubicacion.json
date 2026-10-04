@@ -1,0 +1,293 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2020-06-30.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2020-06-30.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T13:21:30.983Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    42,
+    46
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    50,
+    52
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    56,
+    60
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    68,
+    70
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 3,
+   "lineas": [
+    76,
+    78
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 3,
+   "lineas": [
+    82,
+    84
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 3,
+   "lineas": [
+    90,
+    92
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 3,
+   "lineas": [
+    94,
+    96
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 3,
+   "lineas": [
+    100,
+    102
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 3,
+   "lineas": [
+    106,
+    108
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 6,
+   "lineas": [
+    195,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 7,
+   "lineas": [
+    245,
+    261
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 8,
+   "lineas": [
+    270,
+    305
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    407,
+    415
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 14,
+   "lineas": [
+    433,
+    437
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 16,
+   "lineas": [
+    489,
+    513
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 17,
+   "lineas": [
+    521,
+    524
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 17,
+   "lineas": [
+    528,
+    532
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 17,
+   "lineas": [
+    536,
+    541
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 17,
+   "lineas": [
+    545,
+    549
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 17,
+   "lineas": [
+    553,
+    556
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 18,
+   "lineas": [
+    564,
+    568
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 18,
+   "lineas": [
+    572,
+    577
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 18,
+   "lineas": [
+    583,
+    587
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 18,
+   "lineas": [
+    591,
+    596
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 18,
+   "lineas": [
+    600,
+    603
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 19,
+   "lineas": [
+    611,
+    614
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 19,
+   "lineas": [
+    618,
+    621
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 19,
+   "lineas": [
+    625,
+    631
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 19,
+   "lineas": [
+    635,
+    644
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 19,
+   "lineas": [
+    648,
+    651
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 19,
+   "lineas": [
+    655,
+    658
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 21,
+   "lineas": [
+    710,
+    716
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b12"
+ ],
+ "notas_ingresos": [
+  "b29"
+ ],
+ "notas_gastos": [
+  "b30",
+  "b31",
+  "b32"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con decimales (ej. 2.105.959,34) en euros; presentación de partidas en euros (b14 'Παρουσίαση κονδυλίων').",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2020",
+ "columna_anterior": "30/6/2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados individual de la ΠΑΕ AEL en b12 (pág. 7). Notas 14 (Έσοδα), 15 (Έξοδα), 16 (έκτακτα έξοδα) y 17 (τόκοι) desglosan renglones. Índices financieros (b1-b10), balance (b11), flujo (b13) y notas de balance excluidos."
+}

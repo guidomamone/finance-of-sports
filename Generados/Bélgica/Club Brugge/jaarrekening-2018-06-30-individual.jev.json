@@ -1,0 +1,737 @@
+{
+ "md": "Clubes/Bélgica/Club Brugge/jaarrekening-2018-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:37.219Z",
+ "rubrosHuella": "3416169ada2d21665099f4f30740bdfe27bbb84b",
+ "rubros": [
+  {
+   "label": "Voorraad goederen in bewerking en gereed product en bestellingen in uitvoering: toename (afname) (+)/(-)",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Geproduceerde vaste activa",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Aankopen",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Voorraad: afname (toename) (+)/(-)",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Diensten en diverse goederen",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Niet-recurrente bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1111
+  },
+  {
+   "label": "Andere bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "player_sales",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.73
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ],
+    [
+     "match_organisation_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1167
+  },
+  {
+   "label": "Bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "lump_football_operations",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.73
+    ],
+    [
+     "other_income",
+     0.19
+    ],
+    [
+     "player_sales",
+     0.07
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Omzet",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1197
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "depreciation",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "depreciation",
+     0.59
+    ],
+    [
+     "player_amortisation",
+     0.35
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1164
+  },
+  {
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "exceptional_items",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1119
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Opbrengsten uit financiële vaste activa",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1115
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "exceptional_items",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Opbrengsten uit vlottende activa",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Recurrente financiële opbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Als herstructureringskosten geactiveerde bedrijfskosten (-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "exceptional_items",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ]
+   ],
+   "tokens": 1195
+  },
+  {
+   "label": "Financiële opbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Andere financiële opbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Niet-recurrente financiële opbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Recurrente financiële kosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Financiële kosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1232
+  },
+  {
+   "label": "Andere financiële kosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Kosten van schulden",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Niet-recurrente financiële kosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "exceptional_items",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.17
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Onttrekking aan de uitgestelde belastingen",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6900000000000001
+    ],
+    [
+     "exceptional_items",
+     0.29
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Overboeking naar de uitgestelde belastingen",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Belastingen",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Onttrekking aan de belastingvrije reserves",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Overboeking naar de belastingvrije reserves",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1030
+  }
+ ]
+}

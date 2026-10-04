@@ -1,0 +1,8105 @@
+{
+  "club": "fluminense-br",
+  "year": 2016,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Fluminense/demonstracoes-financeiras-2016.md",
+  "generatedAt": "2026-09-30T21:52:45.836Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 4,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 23,
+  "relevantTableCount": 11,
+  "tables": [
+    {
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "columns": [
+        "Receita",
+        "Valor 2016",
+        "Valor 2015"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Bilheteria",
+          "values": [
+            "R$ 11.362",
+            "R$ 15.765"
+          ],
+          "bold": false,
+          "codigo": "1"
+        },
+        {
+          "rawLabel": "Repasse de Direitos Federativos",
+          "values": [
+            "R$ 52.438",
+            "R$ 36.511"
+          ],
+          "bold": false,
+          "codigo": "2"
+        },
+        {
+          "rawLabel": "Transmissões Televisivas",
+          "values": [
+            "R$ 177.344",
+            "R$ 67.329"
+          ],
+          "bold": false,
+          "codigo": "3"
+        },
+        {
+          "rawLabel": "Publicidade e Patrocínio",
+          "values": [
+            "R$ 15.687",
+            "R$ 27.517"
+          ],
+          "bold": false,
+          "codigo": "4"
+        },
+        {
+          "rawLabel": "Licenciamentos e Franquias",
+          "values": [
+            "R$ 2.225",
+            "R$ 1.812"
+          ],
+          "bold": false,
+          "codigo": "5"
+        },
+        {
+          "rawLabel": "Premiações e Loterias",
+          "values": [
+            "R$ 4.961",
+            "R$ 4.830"
+          ],
+          "bold": false,
+          "codigo": "6"
+        },
+        {
+          "rawLabel": "Esportes Amadores",
+          "values": [
+            "R$ 2.537",
+            "R$ 2.388"
+          ],
+          "bold": false,
+          "codigo": "7"
+        },
+        {
+          "rawLabel": "Associados",
+          "values": [
+            "R$ 14.463",
+            "R$ 14.989"
+          ],
+          "bold": false,
+          "codigo": "8"
+        },
+        {
+          "rawLabel": "Aluguéis",
+          "values": [
+            "R$ 1.557",
+            "R$ 1.951"
+          ],
+          "bold": false,
+          "codigo": "9"
+        },
+        {
+          "rawLabel": "Socio Futebol",
+          "values": [
+            "R$ 5.479",
+            "R$ 5.932"
+          ],
+          "bold": false,
+          "codigo": "10"
+        },
+        {
+          "rawLabel": "Incentivado",
+          "values": [
+            "R$ 2.375",
+            ""
+          ],
+          "bold": false,
+          "codigo": "11"
+        },
+        {
+          "rawLabel": "Outras",
+          "values": [
+            "R$ 2.766",
+            "R$ 1.296"
+          ],
+          "bold": false,
+          "codigo": "12"
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "R$ 293.194",
+            "R$ 180.320"
+          ],
+          "bold": false,
+          "codigo": "13"
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "Gráfico \"Receitas Operacionais\" (eixo de 0 a 350.000, de 50.000 em 50.000):",
+      "columns": [
+        "Ano",
+        "Valor"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2014",
+          "values": [
+            "122.270"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2015",
+          "values": [
+            "180.320"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2016",
+          "values": [
+            "293.194"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "Gráfico \"Direitos de Transmissão Televisiva\" (eixo de 0 a 200.000, de 20.000 em 20.000):",
+      "columns": [
+        "Ano",
+        "Valor"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2014",
+          "values": [
+            "61.342"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2015",
+          "values": [
+            "67.329"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2016",
+          "values": [
+            "177.344"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "Gráfico \"Direitos Federativos\" (eixo de 0 a 60.000, de 10.000 em 10.000):",
+      "columns": [
+        "Ano",
+        "Valor"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2014",
+          "values": [
+            "5.652"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2015",
+          "values": [
+            "36.511"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2016",
+          "values": [
+            "52.438"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "Despesas",
+      "columns": [
+        "Ano",
+        "Valor"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2014",
+          "values": [
+            "74.604"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2015",
+          "values": [
+            "121.944"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2016",
+          "values": [
+            "181.018"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": null,
+      "columns": [
+        "Despesa",
+        "2014",
+        "2015",
+        "2016"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos com Pessoal",
+          "values": [
+            "-R$ 34.064",
+            "-R$ 53.295",
+            "-R$ 75.448"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços Profissionais",
+          "values": [
+            "-R$ 4.915",
+            "-R$ 6.060",
+            "-R$ 26.720"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos com Jogos",
+          "values": [
+            "-R$ 6.027",
+            "-R$ 12.818",
+            "-R$ 10.033"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de Imagem e de Arena",
+          "values": [
+            "-R$ 9.095",
+            "-R$ 24.525",
+            "-R$ 24.981"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização Atletas Profissionais Contratação",
+          "values": [
+            "-R$ 10.703",
+            "-R$ 11.257",
+            "-R$ 17.851"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Gerais",
+          "values": [
+            "-R$ 9.800",
+            "-R$ 13.989",
+            "-R$ 25.985"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "-R$ 74.604",
+            "-R$ 121.944",
+            "-R$ 181.018"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 1,
+      "section": "Gráfico \"Custos Esportes Olímpicos\" (eixo de 0 a 14.000, de 2.000 em 2.000):",
+      "columns": [
+        "Ano",
+        "Valor"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2014",
+          "values": [
+            "6.819"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2015",
+          "values": [
+            "8.117"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2016",
+          "values": [
+            "12.022"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "Gráfico \"Custos Social\" (eixo de 0 a 30.000, de 5.000 em 5.000):",
+      "columns": [
+        "Ano",
+        "Valor"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2014",
+          "values": [
+            "21.208"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2015",
+          "values": [
+            "25.114"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2016",
+          "values": [
+            "26.202"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "Resultado",
+      "columns": [
+        "Resultado",
+        "Resultado com Expurgos"
+      ],
+      "rows": [
+        {
+          "rawLabel": "[ilegible]",
+          "values": [
+            "—"
+          ],
+          "bold": false,
+          "codigo": "2014"
+        },
+        {
+          "rawLabel": "[ilegible] (rótulo em \"MM\")",
+          "values": [
+            "[ilegible] (rótulo em \"MM\")"
+          ],
+          "bold": false,
+          "codigo": "2015"
+        },
+        {
+          "rawLabel": "[ilegible] (rótulo em \"MM\")",
+          "values": [
+            "[ilegible] (rótulo em \"MM\")"
+          ],
+          "bold": false,
+          "codigo": "2016"
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "FLUMINENSE FOOTBALL CLUB / CNPJ Nº 33.647.553/0001-90 / Considerações finais",
+      "columns": [
+        "Ativo",
+        "Notas",
+        "2016",
+        "2015"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "",
+            "58.605",
+            "14.775"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caixa e Equivalentes de Caixa",
+          "values": [
+            "",
+            "3.756",
+            "1.281"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a Receber",
+          "values": [
+            "4",
+            "54.416",
+            "12.959"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos a Terceiros",
+          "values": [
+            "",
+            "225",
+            "160"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Almoxarifado",
+          "values": [
+            "",
+            "177",
+            "135"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas a Apropriar",
+          "values": [
+            "",
+            "31",
+            "240"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não Circulante",
+          "values": [
+            "",
+            "473.461",
+            "423.866"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos Judiciais",
+          "values": [
+            "",
+            "13.819",
+            "13.620"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investimento",
+          "values": [
+            "",
+            "1.167",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "5",
+            "348.979",
+            "326.591"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "6",
+            "109.496",
+            "83.655"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo",
+          "values": [
+            "",
+            "532.066",
+            "438.641"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": [
+        "Passivo e Patrimônio Líquido (passivo a descoberto)",
+        "Notas",
+        "2016",
+        "2015"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "",
+            "253.393",
+            "183.824"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Empréstimos",
+          "values": [
+            "7",
+            "81.503",
+            "38.379"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "",
+            "7.743",
+            "5.662"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imagem de Atletas a Pagar",
+          "values": [
+            "",
+            "29.823",
+            "36.084"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações Trabalhistas e Sociais",
+          "values": [
+            "8",
+            "13.371",
+            "12.444"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos e Contribuições",
+          "values": [
+            "9",
+            "8.338",
+            "6.201"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a Pagar",
+          "values": [
+            "10",
+            "51.225",
+            "50.584"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Credores Diversos",
+          "values": [
+            "",
+            "396",
+            "163"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos de impostos",
+          "values": [
+            "11",
+            "6.626",
+            "4.832"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos Trabalhistas e Cíveis",
+          "values": [
+            "12",
+            "23.985",
+            "19.965"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita a realizar",
+          "values": [
+            "13",
+            "30.383",
+            "9.510"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não Circulante",
+          "values": [
+            "",
+            "322.010",
+            "306.495"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Imagem de Atletas a Pagar",
+          "values": [
+            "",
+            "32.919",
+            "37.844"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a Pagar",
+          "values": [
+            "",
+            "6.657",
+            "1.196"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos de impostos",
+          "values": [
+            "11",
+            "175.467",
+            "158.200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingências e acordos trabalhistas e cíveis",
+          "values": [
+            "12",
+            "92.203",
+            "91.591"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita a realizar",
+          "values": [
+            "13",
+            "14.764",
+            "17.664"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimônio líquido (passivo a descoberto)",
+          "values": [
+            "",
+            "(43.337)",
+            "(51.678)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fundo Patrimonial",
+          "values": [
+            "",
+            "(339.638)",
+            "(373.505)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Avaliação Patrimonial",
+          "values": [
+            "",
+            "287.959",
+            "290.025"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit do Exercício",
+          "values": [
+            "",
+            "8.342",
+            "31.802"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do Passivo e Patrimônio Líquido",
+          "values": [
+            "",
+            "532.066",
+            "438.641"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "columns": [
+        "",
+        "Nota",
+        "2016",
+        "2015"
+      ],
+      "rows": [
+        {
+          "rawLabel": "RECEITA LÍQUIDA",
+          "values": [
+            "14",
+            "271.896",
+            "170.429"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CUSTOS DO DEPARTAMENTO DE ESPORTES",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Futebol",
+          "values": [
+            "19",
+            "(181.018)",
+            "(121.944)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gastos com Pessoal",
+          "values": [
+            "20",
+            "(75.448)",
+            "(53.295)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços Profissionais",
+          "values": [
+            "21",
+            "(26.720)",
+            "(6.060)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos com Jogos e Bonificações",
+          "values": [
+            "22",
+            "(10.033)",
+            "(12.818)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de Imagem e de Arena",
+          "values": [
+            "",
+            "(24.981)",
+            "(24.525)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização Atletas Profissionais Contratados",
+          "values": [
+            "",
+            "(17.851)",
+            "(11.257)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Gerais",
+          "values": [
+            "23",
+            "(25.985)",
+            "(13.989)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Esporte Olímpico",
+          "values": [
+            "",
+            "(12.022)",
+            "(8.117)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gastos com Pessoal",
+          "values": [
+            "20",
+            "(5.867)",
+            "(3.740)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços Profissionais",
+          "values": [
+            "21",
+            "(1.430)",
+            "(1.112)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de Imagem",
+          "values": [
+            "",
+            "(294)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Gerais",
+          "values": [
+            "23",
+            "(4.431)",
+            "(3.265)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de Custos do Departamento de Esportes",
+          "values": [
+            "",
+            "(193.040)",
+            "(130.061)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RESULTADO OPERACIONAL BRUTO",
+          "values": [
+            "",
+            "78.856",
+            "40.368"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CLUBE SOCIAL",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Despesas Operacionais",
+          "values": [
+            "",
+            "(70.514)",
+            "(8.566)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Despesas com Pessoal",
+          "values": [
+            "20",
+            "(7.457)",
+            "(7.751)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços Profissionais",
+          "values": [
+            "21",
+            "(12.894)",
+            "(12.511)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Gerais e Administrativas",
+          "values": [
+            "23",
+            "(5.851)",
+            "(4.852)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financeiras Líquidas",
+          "values": [
+            "24",
+            "(25.985)",
+            "24.719"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação e Amortização",
+          "values": [
+            "",
+            "(2.805)",
+            "(2.676)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para contingências",
+          "values": [
+            "",
+            "(15.522)",
+            "(5.495)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUPERÁVIT DO EXERCÍCIO",
+          "values": [
+            "",
+            "8.342",
+            "31.802"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DOS RESULTADOS ABRANGENTES EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "columns": [
+        "",
+        "2016",
+        "2015"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Superávit/(déficit) do exercício",
+          "values": [
+            "8.342",
+            "31.802"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros resultados abrangentes",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total dos resultados abrangentes do exercício",
+          "values": [
+            "8.342",
+            "31.802"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÃO DOS FLUXOS DE CAIXA EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "columns": [
+        "Atividade Operacional",
+        "2016",
+        "2015"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Déficit do Exercício",
+          "values": [
+            "8.342",
+            "31.802"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes para Conciliação",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação",
+          "values": [
+            "2.805",
+            "2.676"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização do Intangível",
+          "values": [
+            "17.851",
+            "11.257"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com Provisão para Contingências",
+          "values": [
+            "15.522",
+            "5.495"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Juros e Atualizações, líquidas",
+          "values": [
+            "14.195",
+            "(21.116)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas Apropriadas",
+          "values": [
+            "(9.800)",
+            "(5.550)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Operacional Bruto",
+          "values": [
+            "48.915",
+            "24.564"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento(Diminuição) no Ativo Circulante e Não Circulante",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a Receber",
+          "values": [
+            "(41.440)",
+            "97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento de Terceiros",
+          "values": [
+            "(65)",
+            "(42)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estoques",
+          "values": [
+            "(42)",
+            "84"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas a Apropriar",
+          "values": [
+            "209",
+            "162"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos Judiciais",
+          "values": [
+            "(199)",
+            "(6.882)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuições sociais a recuperar",
+          "values": [
+            "-",
+            "1.198"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento (Diminuição) no Passivo Circulante e Não Circulante",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "2.081",
+            "2.924"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações Fiscais e Sociais",
+          "values": [
+            "927",
+            "(1.887)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a Pagar",
+          "values": [
+            "(2.756)",
+            "21.171"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Credores Diversos",
+          "values": [
+            "233",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos",
+          "values": [
+            "19.061",
+            "(32.601)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas a Realizar",
+          "values": [
+            "(11.555)",
+            "(13.724)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão P/ Contingências",
+          "values": [
+            "612",
+            "28.063"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos e processos cíveis",
+          "values": [
+            "4.020",
+            "3.857"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa Líquido das Atividades de Operacionais",
+          "values": [
+            "20.001",
+            "26.984"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Atividades de Investimento",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Direitos Sobre Atletas de Futebol",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Líquido de negociações com atletas profissionais",
+          "values": [
+            "(28.659)",
+            "(19.227)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamentos Referente Formação de Atletas",
+          "values": [
+            "(8.605)",
+            "(5.983)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimônio",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aquisição de Imobilizado",
+          "values": [
+            "(944)",
+            "(7.086)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa Líquido das Atividades de Investimento",
+          "values": [
+            "(38.208)",
+            "(32.296)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Atividades de financiamento",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aquisição de Empréstimo",
+          "values": [
+            "84.742",
+            "32.302"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização de Empréstimos",
+          "values": [
+            "(64.060)",
+            "(26.947)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa Líquido das Atividades de Financiamento",
+          "values": [
+            "20.682",
+            "5.355"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Redução Líquida de Caixa e Equivalentes de Caixa",
+          "values": [
+            "2.475",
+            "43"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Demonstração da Redução Líquida de Caixa e Equivalentes de Caixa",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "No Início do Exercício",
+          "values": [
+            "1.281",
+            "1.238"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "No Fim do Exercício",
+          "values": [
+            "3.756",
+            "1.281"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variação de Caixa e Equivalentes de Caixa",
+          "values": [
+            "2.475",
+            "43"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "columns": [
+        "",
+        "Fundo Patrimonial",
+        "Ajuste de Avaliação Patrimonial",
+        "Déficits acumulados",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo em 31/12/2014",
+          "values": [
+            "(368.457)",
+            "292.091",
+            "(7.114)",
+            "(83.480)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Transferência Déficit",
+          "values": [
+            "(7.114)",
+            "",
+            "7.114",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Realização do Custo Atribuído",
+          "values": [
+            "2.066",
+            "(2.066)",
+            "",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit no Exercício",
+          "values": [
+            "",
+            "",
+            "31.802",
+            "31.802"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2015",
+          "values": [
+            "(373.505)",
+            "290.025",
+            "31.802",
+            "(51.679)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Transferência Superávit",
+          "values": [
+            "31.802",
+            "",
+            "(31.802)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Realização do Custo Atribuído",
+          "values": [
+            "2.066",
+            "(2.066)",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit no Exercício",
+          "values": [
+            "",
+            "",
+            "8.342",
+            "8.342"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2016",
+          "values": [
+            "(339.637)",
+            "287.959",
+            "8.342",
+            "(43.337)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "2.2.5 Contas a receber / 2.2.6 Almoxarifado / 2.2.7 Despesas antecipadas / 2.2.8 Demais ativos circulantes e não circulantes / 2.2.9 Imobilizado",
+      "columns": [
+        "",
+        "2015"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Edificações",
+          "values": [
+            "51 a 95"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos Processamento",
+          "values": [
+            "5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamento Diversos",
+          "values": [
+            "10"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "3. Estimativas críticas / 3.1 Provisão para créditos de liquidação duvidosa / 3.2 Provisão para contingências / 3.3 Vida útil de ativos não circulantes / 4 Contas a receber – Circulante e não circulante",
+      "columns": [
+        "",
+        "2016",
+        "2015"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Contrato de TV",
+          "values": [
+            "82.108",
+            "85.723"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Repasse de direitos federativos/econômicos",
+          "values": [
+            "51.149",
+            "2.935"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contratos de patrocínio",
+          "values": [
+            "26.860",
+            "36.143"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Licenciamento de produtos",
+          "values": [
+            "652",
+            "476"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aluguéis",
+          "values": [
+            "234",
+            "227"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "42",
+            "650"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "161.045",
+            "126.154"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Provisão para créditos de liquidação duvidosa (i)",
+          "values": [
+            "(10.944)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "150.101",
+            "126.154"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Receitas a realizar (ii)",
+          "values": [
+            "(95.685)",
+            "(113.195)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do circulante",
+          "values": [
+            "54.416",
+            "12.959"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Contrato de TV",
+          "values": [
+            "83.522",
+            "165.630"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contratos de patrocínio",
+          "values": [
+            "32.801",
+            "3.253"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "116.323",
+            "168.883"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Receitas a realizar (i)",
+          "values": [
+            "(116.323)",
+            "(168.883)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do não circulante",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do contas a receber",
+          "values": [
+            "54.416",
+            "12.959"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "5 Imobilizado",
+      "columns": [
+        "",
+        "Custo",
+        "Depreciação acumulada",
+        "2016",
+        "2015"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Sede",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Edificações e benfeitorias",
+          "values": [
+            "175.795",
+            "(14.309)",
+            "161.486",
+            "163.103"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "676",
+            "(278)",
+            "398",
+            "309"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "46",
+            "(7)",
+            "39",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos de processamento",
+          "values": [
+            "226",
+            "(127)",
+            "99",
+            "75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos diversos",
+          "values": [
+            "2.422",
+            "(659)",
+            "1.763",
+            "1.850"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pinacoteca e monumentos",
+          "values": [
+            "727",
+            "-",
+            "727",
+            "727"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "152.000",
+            "-",
+            "152.000",
+            "152.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "331.892",
+            "(15.380)",
+            "316.512",
+            "318.064"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Xerém",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Benfeitorias e instalações",
+          "values": [
+            "2.304",
+            "(571)",
+            "1.733",
+            "1.825"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "171",
+            "(93)",
+            "78",
+            "100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos de processamento",
+          "values": [
+            "29",
+            "(25)",
+            "4",
+            "2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos diversos",
+          "values": [
+            "298",
+            "(126)",
+            "172",
+            "119"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações e benfeitorias",
+          "values": [
+            "2.706",
+            "(462)",
+            "2.244",
+            "2.311"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "5.508",
+            "(1.277)",
+            "4.230",
+            "4.357"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CT Barra",
+          "values": [
+            "28.235",
+            "-",
+            "28.235",
+            "4.171"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total do imobilizado",
+          "values": [
+            "365.635",
+            "(16.657)",
+            "348.979",
+            "326.592"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "Movimentação do imobilizado",
+      "columns": [
+        "",
+        "2015",
+        "Adições",
+        "Baixas",
+        "Depreciações",
+        "2016"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Sede",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Edificações e benfeitorias",
+          "values": [
+            "163.103",
+            "651",
+            "(105)",
+            "(2.163)",
+            "161.487"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "309",
+            "156",
+            "(3)",
+            "(64)",
+            "398"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "-",
+            "46",
+            "-",
+            "(7)",
+            "39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos de processamento",
+          "values": [
+            "75",
+            "48",
+            "(3)",
+            "(22)",
+            "99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos diversos",
+          "values": [
+            "1.850",
+            "101",
+            "(1)",
+            "(187)",
+            "1.763"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pinacoteca e monumentos",
+          "values": [
+            "727",
+            "-",
+            "-",
+            "-",
+            "727"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "152.000",
+            "-",
+            "-",
+            "-",
+            "152.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "318.064",
+            "1.108",
+            "(112)",
+            "(2.443)",
+            "316.512"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Xerém",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Benfeitorias e instalações",
+          "values": [
+            "1.825",
+            "-",
+            "-",
+            "(92)",
+            "1.733"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "100",
+            "1",
+            "-",
+            "(23)",
+            "78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos de processamento",
+          "values": [
+            "2",
+            "2",
+            "(1)",
+            "(1)",
+            "2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos diversos",
+          "values": [
+            "119",
+            "83",
+            "-",
+            "(30)",
+            "172"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações e benfeitorias",
+          "values": [
+            "2.310",
+            "-",
+            "-",
+            "(66)",
+            "2.244"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "4.356",
+            "86",
+            "(1)",
+            "(212)",
+            "4.230"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CT Barra",
+          "values": [
+            "4.171",
+            "24.020",
+            "-",
+            "-",
+            "28.191"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total do imobilizado",
+          "values": [
+            "326.591",
+            "25.214",
+            "(113)",
+            "(2.655)",
+            "348.979"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": null,
+      "columns": [
+        "FLUMINENSE FOOTBALL CLUB",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "CNPJ Nº 33.647.553/0001-90",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6 Intangível",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Custo",
+            "Amortização acumulada",
+            "2016",
+            "2015",
+            "Atleta",
+            "2016 2015"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas de futebol",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "Guilherme Eulalio Avelino de Oliveira",
+            "50% 50%"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Atletas profissionais",
+          "values": [
+            "157.784",
+            "(54.770)",
+            "103.014",
+            "78.499",
+            "Guilherme Oliveira Santos",
+            "100% 100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas em formação",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "Gustavo Henrique Furtado Scarpa",
+            "40% 45%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub-17",
+          "values": [
+            "3.840",
+            "-",
+            "3.840",
+            "1.567",
+            "Gustavo Jose da Silva",
+            "100% 100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub-15",
+          "values": [
+            "1.907",
+            "-",
+            "1.907",
+            "3.263",
+            "Gustavo Schutz",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub-20",
+          "values": [
+            "103",
+            "-",
+            "103",
+            "93",
+            "Henrique Adriano Buss",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "5.850",
+            "-",
+            "5.850",
+            "4.923",
+            "Henrique Fernandes Lima",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de atletas de futebol",
+          "values": [
+            "163.633",
+            "(54.770)",
+            "108.863",
+            "83.422",
+            "Henrique Pereira Cardoso",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de uso de software",
+          "values": [
+            "1.043",
+            "(409)",
+            "633",
+            "233",
+            "Higor Rodrigues Barbosa Leite",
+            "50% 50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do intangível",
+          "values": [
+            "164.676",
+            "(55.179)",
+            "109.496",
+            "83.655",
+            "Igor de Carvalho Julião",
+            "50% 50%"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Movimentação do intangível",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "Ighori roberto Tabosa da Conceição",
+            "60% 60%"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2015",
+            "Adições",
+            "Baixas",
+            "Transferências",
+            "Amortizações",
+            "2016"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas profissionais",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "Jefferson Gabriel Orejuela",
+            "60% 60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contratados",
+          "values": [
+            "14.597",
+            "38.417",
+            "-",
+            "-",
+            "(12.733)",
+            "40.282"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Formados",
+          "values": [
+            "1.673",
+            "1.641",
+            "-",
+            "-",
+            "(766)",
+            "2.548"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contratos de imagem",
+          "values": [
+            "62.229",
+            "54.847",
+            "(42.374)",
+            "-",
+            "(14.518)",
+            "60.184"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "78.499",
+            "93.955",
+            "(42.374)",
+            "-",
+            "(28.017)",
+            "103.014"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas em formação",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "João Vitor Souza Maciel",
+            "60% 60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub-17",
+          "values": [
+            "1.567",
+            "6.651",
+            "(2.261)",
+            "(2.117)",
+            "-",
+            "3.840"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub-15",
+          "values": [
+            "3.264",
+            "5.364",
+            "(2.935)",
+            "(3.786)",
+            "-",
+            "1.907"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub-20",
+          "values": [
+            "92",
+            "346",
+            "(94)",
+            "(242)",
+            "-",
+            "102"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "4.923",
+            "12.361",
+            "(5.290)",
+            "(6.145)",
+            "-",
+            "5.849"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de uso de software",
+          "values": [
+            "233",
+            "548",
+            "-",
+            "-",
+            "(148)",
+            "633"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "83.655",
+            "107.814",
+            "(47.663)",
+            "(6.145)",
+            "(28.165)",
+            "109.496"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "O montante referente a atletas descontinuados no processo de formação baixado para o resultado do exercício em 2016 foi de R$ 5.290 mil (R$ 4.435 mil em 2015).",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Participação em Direitos Econômicos sobre atletas Profissionais de Futebol em:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atleta",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "2016",
+            "2015"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ailton Ferreira Silva",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "60%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alan Gelhorn Fialho",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alex de Oliveira Nascimento",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alex da Conceição Junior",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "60%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alex Gomes Azizi",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anderson Ribeiro do Nascimento Oliveira",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "André Trindade da Costa Neto",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "60%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andrey Gracidi de Oliveira",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "70%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Antonio dos Santos Aguiar",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Artur Jesus Vieira",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ayrion Lucas Dantas de Medeiros",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bernardo Lacerda Martins",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bernardo Crespo Caldas Braga",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "70%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Breno Lucinda dos Santos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Breno Pereira Caetano",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "70%",
+            "70%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bruno Souza de Andrade",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "60%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bruno Duarte Nicomedes",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bryan Oliveira Calvo",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carlos Henrique dos Santos Souza",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "60%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caio Fernando de Oliveira",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "100%",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cesar Luziani Gonçalves",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Christian Henrique Oliveira",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "60%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cicero Santos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "25%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Daniel Sampaio Simões",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "70%",
+            "75%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Danilo Mariotto dos Santos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derlan Oliveira Bento",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diego Cavalieri",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "100%",
+            "16%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diego Mathias de Almeida",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "60%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diego Santos Gama Camilo",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diogo Augusto Pereira Neto",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "100%",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diego Hereda da Silva",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Douglas Augusto Sores Gomes",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "62,50%",
+            "57,50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dorielton Gomes Nascimento",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "80,00%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edson Felipe da Cruz",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "75%",
+            "5%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eduardo Antonio Machado Teixeira",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "60%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eduardo Gonzaga Mendes Santos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Elivelton Viana dos Santos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "75%",
+            "65%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estevão Samuel Valensio",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Euller da Silva Rodrigues",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Felipe Amorim",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Felipe Souza Moreno Sampaio",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "40%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Felipe Codognatto Correa",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fernando Gomes Alves da Silva",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fernando José da Cunha Neto",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Francinilson Santos Meireles \"Maranhão\"",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Francisco Evanilson de Lima Barbosa",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "60%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Frederico Chaves Guedes ( FRED )",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "15%",
+            "20%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gabriel Hernandes Teixeira Lima",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "40%",
+            "40%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gabriel Teixeira Aragão",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "60%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gabriel Estigarribia e Silva",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "70%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gabriel Silveira dos Santos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "40%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Giovani Palmieri dos Santos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "50%",
+            "70%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Guilherme Crepaldi",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "60%",
+            "-",
+            "",
+            "Atleta",
+            "2016",
+            "2015"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Guilherme Eulalio Avelino de Oliveira",
+          "values": [
+            "50%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Guilherme Oliveira Santos",
+          "values": [
+            "-",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gustavo Henrique Furtado Scarpa",
+          "values": [
+            "40%",
+            "45%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gustavo Jose da Silva",
+          "values": [
+            "-",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gustavo Schutz",
+          "values": [
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Henrique Adriano Buss",
+          "values": [
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Henrique Fernandes Lima",
+          "values": [
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Henrique Pereira Cardoso",
+          "values": [
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Higor Rodrigues Barbosa Leite",
+          "values": [
+            "50%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Igor de Carvalho Julião",
+          "values": [
+            "50%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ighori roberto Tabosa da Conceição",
+          "values": [
+            "-",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Igor Ricardo Freitas de Amorim",
+          "values": [
+            "-",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jefferson Gabriel Orejuela",
+          "values": [
+            "60%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jean Raphael Vanderlei Moreira",
+          "values": [
+            "-",
+            "15%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "João Henrique Machado",
+          "values": [
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "João Felipe Rabelo da Costa Silva",
+          "values": [
+            "-",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "João Pedro Frez Pubel",
+          "values": [
+            "-",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "João Vitor M. Matos",
+          "values": [
+            "70%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "João Vitor Souza Maciel",
+          "values": [
+            "60%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jennerson de Abreu Mendes",
+          "values": [
+            "-",
+            "70%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jhonatan Soares Pinto",
+          "values": [
+            "-",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jonathan Cicero Moreira",
+          "values": [
+            "-",
+            "80%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jobson Eduardo dos Santos",
+          "values": [
+            "50%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "John Everson de Morais Mesquita",
+          "values": [
+            "80%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "José Alexandre Marques Junior",
+          "values": [
+            "-",
+            "70%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "José Henrique da Silva Dourado",
+          "values": [
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "José Renato da Silva Junior",
+          "values": [
+            "30%",
+            "30%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "José Ricardo Araujo Fernandes",
+          "values": [
+            "60%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jose Ricardo Garcia dos Santos Junior",
+          "values": [
+            "-",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Julio Cesar Jacobi",
+          "values": [
+            "100%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Julio Cesar Marcelino Ramalho",
+          "values": [
+            "-",
+            "70%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Junior Nazareno Somoza Moreira",
+          "values": [
+            "60%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kadu Ribeiro Durval",
+          "values": [
+            "60%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kassiano Soares Mendonça",
+          "values": [
+            "70%",
+            "70%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Klever Rodrigo Gomer Rufino",
+          "values": [
+            "-",
+            "80%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leonardo Lang Lopes",
+          "values": [
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leonardo Pinheiro da Conceição",
+          "values": [
+            "80%",
+            "70%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leonel Adrian Auban",
+          "values": [
+            "50%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Levi Rodrigues dos Santos",
+          "values": [
+            "90%",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucas Barcelos Damaceno",
+          "values": [
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucas das Neves Vilela",
+          "values": [
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucas Fernandes",
+          "values": [
+            "30%",
+            "30%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucas Gacia Benetão",
+          "values": [
+            "-",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucas Gomes da Silva",
+          "values": [
+            "-",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucas Lyrio de Oliveira",
+          "values": [
+            "-",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucas Henrique \"Luquinhas\"",
+          "values": [
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucas Peron Silva",
+          "values": [
+            "60%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucas Pierre Santos Oliveira",
+          "values": [
+            "100%",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luis Felipe Branco de Oliveira França",
+          "values": [
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luiz Eduardo Figueiredo",
+          "values": [
+            "65%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luiz Eduardo Teodoro",
+          "values": [
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luiz Felipe Santos da Cruz",
+          "values": [
+            "60%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luiz Fernando Ferreira Maximiano",
+          "values": [
+            "60%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marco Antonio de Mattos Filho",
+          "values": [
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marcos Felipe de Freitas Monteiro",
+          "values": [
+            "65%",
+            "55%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marcos Júlio Lima dos Santos",
+          "values": [
+            "60%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marcos Paulo Costa do Nascimento",
+          "values": [
+            "80%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marcos Vinicius Silva Rocha Calazans",
+          "values": [
+            "60%",
+            "70%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marcus Wendel Valle da Silva",
+          "values": [
+            "90%",
+            "70%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marlon Rodrigues Freitas",
+          "values": [
+            "52%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Magno Alves de Araujo",
+          "values": [
+            "-",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marcio Couto Filho",
+          "values": [
+            "-",
+            "70%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marlon Santos da Silva Barbosa",
+          "values": [
+            "-",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mateus Norton",
+          "values": [
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Matheus Alessandro dos Santos Pereira",
+          "values": [
+            "60%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Matheus Alves Leandro",
+          "values": [
+            "80%",
+            "85%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Matheus Antonio Souza dos Santos",
+          "values": [
+            "50%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Matheus Mascarenhas dos Santos Raimundo",
+          "values": [
+            "70%",
+            "70%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Matheus Monteiro do Nascimento",
+          "values": [
+            "60%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Matheus Nascimento Soares",
+          "values": [
+            "90%",
+            "90%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Matheus Phillipe Coutinho Gomes",
+          "values": [
+            "60%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Matheus de Oliveira Silva",
+          "values": [
+            "-",
+            "70%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Matheus Thiago Carvalho",
+          "values": [
+            "-",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Michel Alves Tamborim",
+          "values": [
+            "-",
+            "20%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Michael Vinicius Silva de Morais",
+          "values": [
+            "50%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Osvaldo Lourenço Filho",
+          "values": [
+            "100%",
+            "100%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pablo Dyego da Silva Rosa",
+          "values": [
+            "60%",
+            "60%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrick Carvalho dos Santos",
+          "values": [
+            "50%",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrick Luan dos Santos",
+          "values": [
+            "50%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Paulo Lucas Santos de Paula",
+          "values": [
+            "70%",
+            "70%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Paulo Victor da Costa Miranda",
+          "values": [
+            "100%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pedro Guilherme Abreu dos Santos",
+          "values": [
+            "50%",
+            "50%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": null,
+      "columns": [
+        "FLUMINENSE FOOTBALL CLUB",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "11 Parcelamento de impostos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            "2016",
+            "2015",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Circulante",
+            "Circulante",
+            "Não Circulante",
+            "Não Circulante",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atleta",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Pedro Henrique Cavalcanti",
+          "values": [
+            "50%",
+            "",
+            "1.191",
+            "31.537",
+            "27.217"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Peterson Silvino da Cruz",
+          "values": [
+            "60%",
+            "60%",
+            "3.320",
+            "143.753",
+            "130.497"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rafael Borges Andrade",
+          "values": [
+            "",
+            "70%",
+            "321",
+            "177",
+            "486"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rafael Gimenes da Silva",
+          "values": [
+            "",
+            "60%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ramon de Araújo Siqueira",
+          "values": [
+            "70%",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Raphael Augusto Santos da Silva",
+          "values": [
+            "",
+            "65%",
+            "6.626",
+            "4.832",
+            "175.467"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reginaldo Manoel da Silva Junior",
+          "values": [
+            "50%",
+            "50%",
+            "",
+            "",
+            "158.200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Regys Brayn Thomas de Morais",
+          "values": [
+            "50%",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Renato de Araújo Chaves Júnior",
+          "values": [
+            "90%",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Renato Barbosa Vischi",
+          "values": [
+            "",
+            "60%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Renato Luís Moura Soares",
+          "values": [
+            "50%",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rhuan Silva de Oliveira",
+          "values": [
+            "70%",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Richarlison de Andrade",
+          "values": [
+            "50%",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Robert Gonçalves Santos",
+          "values": [
+            "60%",
+            "50%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Romulo Matheus Chagas",
+          "values": [
+            "60%",
+            "60%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rosebergue da Silva",
+          "values": [
+            "",
+            "100%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ruan Silva Alves",
+          "values": [
+            "50%",
+            "50%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Samuel Rosa Gonçalves",
+          "values": [
+            "50%",
+            "50%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Samuel Salustiano de Jesus Silva",
+          "values": [
+            "50%",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Talles Brener de Paula",
+          "values": [
+            "40%",
+            "40%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Thiago Saturnino André",
+          "values": [
+            "100%",
+            "100%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Victor Oliveira",
+          "values": [
+            "",
+            "80%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vinicius de Oliveira Clerier",
+          "values": [
+            "100%",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Walter Henrique da Silva",
+          "values": [
+            "",
+            "25%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wallace Bonilha Felix",
+          "values": [
+            "",
+            "75%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wellington Alves da Silva",
+          "values": [
+            "55%",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wellington Pereira Rodrigues",
+          "values": [
+            "",
+            "10%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wellington Carvalho dos Santos",
+          "values": [
+            "",
+            "65%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wellington Nascimento Silva",
+          "values": [
+            "50%",
+            "5%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wellington Paulista",
+          "values": [
+            "100%",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wellington Pereira do Nascimento",
+          "values": [
+            "",
+            "100%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wendew Margarido Barreto",
+          "values": [
+            "100%",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wesley Frazan Bernardo",
+          "values": [
+            "60%",
+            "60%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wilson Martins dos Santos",
+          "values": [
+            "",
+            "60%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Willian Henrique dos Santos",
+          "values": [
+            "40%",
+            "40%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Willian Osmar de Oliveira Silva",
+          "values": [
+            "50%",
+            "50%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wisney Junio Dias Carvalho",
+          "values": [
+            "70%",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ygor Nogueira de Paula",
+          "values": [
+            "70%",
+            "70%",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Yuri Duarte Filho",
+          "values": [
+            "100%",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7 Empréstimos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Indexador ou Taxa média de juros",
+            "Vencimento",
+            "2016",
+            "2015",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instituição",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "XXIII Capital (i)",
+          "values": [
+            "0,88% a.m.",
+            "Jan a dez/17",
+            "43.035",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Federação de Futebol do Estado do Rio de Janeiro",
+          "values": [
+            "CDI",
+            "maio 2016",
+            "-",
+            "1.300",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BMG",
+          "values": [
+            "1,85% a.m.",
+            "dezembro/17",
+            "14.916",
+            "8.000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BCV",
+          "values": [
+            "1,85% a.m.",
+            "outubro/17",
+            "7.778",
+            "2.593",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Confederação Brasileira de Futebol",
+          "values": [
+            "CDI",
+            "dezembro/17",
+            "5.617",
+            "10.565",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lecca Comercial",
+          "values": [
+            "2,25% a.m.",
+            "dezembro/17",
+            "2.797",
+            "6.932",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras entidades",
+          "values": [
+            "",
+            "",
+            "7.360",
+            "8.989",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "81.503",
+            "38.379",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(i) A XXIII capital antecipou ao clube os recebíveis decorrentes da negociação do atleta Gerson com a A.S. Roma. Dessa forma, os valores a receber registrados na rubrica Recessos de direitos federativos/econômicos (vide Nota 4), serão transferidos diretamente da A.S. Roma para a XXIII Capital em 2017.",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Garantias de empréstimos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Em 31 de dezembro de 2016, os empréstimos estão garantidos por cotas do campeonato estadual, campeonato brasileiro e mensalidades sociais.",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8 Obrigações Trabalhistas e Sociais",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salários a pagar",
+          "values": [
+            "3.298",
+            "1.798",
+            "16.175",
+            "3.790",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS",
+          "values": [
+            "1.320",
+            "1.054",
+            "67.827",
+            "4.189",
+            "19.575"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS",
+          "values": [
+            "1.456",
+            "759",
+            "84.002",
+            "7.979",
+            "19.575"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PIS s/ folha salarial",
+          "values": [
+            "177",
+            "133",
+            "(17.973)",
+            "(2.965)",
+            "(2.404)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rescisões a pagar",
+          "values": [
+            "1.559",
+            "2.672",
+            "17.666",
+            "10.309",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Férias a pagar",
+          "values": [
+            "5.561",
+            "6.028",
+            "83.695",
+            "15.323",
+            "17.171"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "13.371",
+            "12.444",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "9 Impostos e Contribuições",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF",
+          "values": [
+            "4.077",
+            "2.779",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ISS",
+          "values": [
+            "2.126",
+            "1.715",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COFINS",
+          "values": [
+            "59",
+            "48",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS",
+          "values": [
+            "357",
+            "213",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retenções - CSLL/COFINS/PIS",
+          "values": [
+            "475",
+            "203",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IPTU",
+          "values": [
+            "1.204",
+            "1.204",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sindicato",
+          "values": [
+            "40",
+            "39",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "8.338",
+            "6.201",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "10 Contas a Pagar",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aquisição de direitos federativos",
+          "values": [
+            "17.635",
+            "21.621",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Participação em direitos econômicos",
+          "values": [
+            "11.964",
+            "9.228",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Agencamentos e comissões",
+          "values": [
+            "17.114",
+            "3.283",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras",
+          "values": [
+            "4.512",
+            "16.452",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "51.225",
+            "50.584",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11 Parcelamento de impostos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS - Profut",
+          "values": [
+            "1.191",
+            "31.537",
+            "27.217",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profut Lei 13.155/2015(PGFN/RFB/INSS)...",
+          "values": [
+            "6.270",
+            "3.320",
+            "143.753",
+            "130.497",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "356",
+            "321",
+            "177",
+            "486",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "6.626",
+            "4.832",
+            "175.467",
+            "158.200",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PROFUT – Em novembro de 2015 o clube aderiu a parcelamento de dívida fiscal conforme previsto na lei de Responsabilidade Fiscal do Esporte - LRFE que estabeleceu princípios e práticas de responsabilidade fiscal e financeira e de gestão transparente e democrática para entidades desportivas profissionais de futebol criando o Programa de Modernização da Gestão e de Responsabilidade Fiscal do Futebol Brasileiro - PROFUT.",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Dessa forma, o clube renunciou aos demais parcelamentos vigentes consolidando toda sua dívida fiscal com PGFN/RFB e INSS em 240 meses obtendo redução de 70% (setenta por cento) das multas, 40%(quarenta por cento) dos juros e 100% (cem por cento) dos encargos legais.",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "12 Contingências Trabalhistas, Cíveis e Fiscais",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ato trabalhista",
+          "values": [
+            "13.339",
+            "16.175",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingências pós ato trabalhista",
+          "values": [
+            "6.865",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingências cíveis",
+          "values": [
+            "3.781",
+            "3.790",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "23.985",
+            "19.965",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ato trabalhista",
+          "values": [
+            "63.491",
+            "53.850",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingências pós ato trabalhista",
+          "values": [
+            "-",
+            "13.977",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingências cíveis",
+          "values": [
+            "11.541",
+            "4.189",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingências fiscais",
+          "values": [
+            "17.171",
+            "19.575",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "92.203",
+            "91.591",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "116.188",
+            "111.556",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Movimentação das contingências",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Trabalhista",
+            "Cível",
+            "Fiscal",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "16.175",
+            "3.790",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "67.827",
+            "4.189",
+            "19.575",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31 de dezembro de 2015",
+          "values": [
+            "84.002",
+            "7.979",
+            "19.575",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Baixas",
+          "values": [
+            "(17.973)",
+            "(2.965)",
+            "(2.404)",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atualizações e adições",
+          "values": [
+            "17.666",
+            "10.309",
+            "-",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31 de dezembro de 2016",
+          "values": [
+            "83.695",
+            "15.323",
+            "17.171",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Em 29 de novembro 2011 o Fluminense assinou o Ato trabalhista conforme publicação no Diário Oficial. O referido ato é o acordo de parcelamento a longo prazo de todos os processos trabalhistas do clube, exceto os de valores inferiores a R$ 13.196,42 (treze mil cento e noventa e seis reais e quarenta e dois centavos) e os ajuizados após sua publicação. O Clube depositou mensalmente 15% de sua receita mensal, com a garantia mínima de R$ 1.000 mil até novembro 2014 e R$ 1.200 mil a partir de dezembro/14.",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "O Clube é réu em ações judiciais e processos administrativos, perante vários tribunais e órgãos governamentais, decorrentes do curso normal das operações, envolvendo questões tributárias, trabalhistas, aspectos cíveis e outros assuntos.",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A Administração, com base em relatórios de seus assessores jurídicos e análise das demandas judiciais pendentes, achou por bem provisionar valores considerados como execuções em curso, perdas prováveis, com a seguinte composição: O clube é réu em processos cujo objeto é o pagamento da cláusula penal prevista em contrato, conforme determinado pelo artigo 28 da Lei 9.615/98 (Lei Pelé). Os consultores jurídicos baseados em decisões favoráveis proferidas pelo Pleno do Tribunal Superior do Trabalho nos processos 00552-2002-029-01-00-4 (movido contra o Fluminense) em que se decidiu que tal cláusula penal é somente devida pelo atleta ao clube e nunca deste ao atleta acreditam que existem possibilidades de ganho nessas ações movidas contra o clube dessa forma a administração não considerou a constituição de provisão para contingências nesses casos. Os montantes envolvidos são de aproximadamente R$ 75.760 mil (R$ 51.231 em 31 de dezembro de 2015).",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13 Receitas a realizar",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Globo (Luvas 2016-18)",
+          "values": [
+            "9.310",
+            "8.820",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Barcelona",
+          "values": [
+            "18.749",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras",
+          "values": [
+            "2.324",
+            "690",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "30.383",
+            "9.510",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Globo (Luvas 2016-18)",
+          "values": [
+            "14.710",
+            "17.640",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras",
+          "values": [
+            "54",
+            "24",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "14.764",
+            "17.664",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "45.147",
+            "27.174",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "14 Receita Líquida",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Receitas Operacionais",
+          "values": [
+            "Nota",
+            "2016",
+            "2015",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bilheteria",
+          "values": [
+            "15",
+            "11.362",
+            "15.765",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Repasse de Direitos Federativos",
+          "values": [
+            "16",
+            "52.438",
+            "36.511",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de Transmissões Televisivas",
+          "values": [
+            "",
+            "177.344",
+            "67.329",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidade e Patrocínio",
+          "values": [
+            "",
+            "15.687",
+            "27.517",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Licenciamentos e Franquias",
+          "values": [
+            "",
+            "2.225",
+            "1.812",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiações e loterias",
+          "values": [
+            "17",
+            "4.961",
+            "4.829",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas com Esportes Amadores",
+          "values": [
+            "",
+            "2.537",
+            "2.388",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas com Associados",
+          "values": [
+            "",
+            "14.463",
+            "14.989",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas com Aluguéis",
+          "values": [
+            "",
+            "1.557",
+            "1.951",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Programa Sócio Futebol",
+          "values": [
+            "",
+            "5.479",
+            "5.932",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Projeto Incentivado",
+          "values": [
+            "",
+            "2.375",
+            "-",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Receitas",
+          "values": [
+            "",
+            "2.766",
+            "1.296",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total das Receitas Operacionais",
+          "values": [
+            "",
+            "293.194",
+            "180.320",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deduções da Receita Bruta",
+          "values": [
+            "",
+            "(21.298)",
+            "(9.891)",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita Líquida",
+          "values": [
+            "",
+            "271.896",
+            "170.429",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 6,
+      "section": null,
+      "columns": [
+        "FLUMINENSE FOOTBALL CLUB",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "15 Bilheteria",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Campeonato Brasileiro",
+          "values": [
+            "5.859",
+            "11.148",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Campeonato Estadual",
+          "values": [
+            "4.637",
+            "2.832",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Copa do Brasil",
+          "values": [
+            "212",
+            "1.785",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Copa da 1ª Liga",
+          "values": [
+            "638",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Super Liga (vôlei)",
+          "values": [
+            "16",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "11.362",
+            "15.765",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "16 Repasses de Direitos Federativos e Econômicos",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Negociação Atletas",
+          "values": [
+            "2016",
+            "2015",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Cessão Definitiva",
+          "values": [
+            "50.427",
+            "33.078",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cessão Temporária",
+          "values": [
+            "1.967",
+            "2.534",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mecanismo Solidariedade",
+          "values": [
+            "44",
+            "899",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "52.438",
+            "36.511",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Em 2016 o clube negociou a transferência dos Direitos Federativos e percentual de Direitos Econômicos dos Atletas Jean, Diego Santos, Diego de Souza, Frederico Chaves e a transferência do atleta Gerson Santos Silva.",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Em 2015 o clube negociou a transferência dos Direitos Federativos e percentual de Direitos Econômicos dos Atletas Dario Conca, Robert Kenedy, Bruno Vieira do Nascimento e Marlon Santos.",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "17 Receitas de transmissões televisivas",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(i) No exercício de 2016, o Clube firmou proposta comercial de cessão de direitos de transmissão e extinção dos jogos do Campeonato Brasileiro com a Rede Globo de Televisão, o que gerou o direito irrestrito de recebimento de luvas (ou bônus de assinatura), pelo Clube no montante bruto de R$ 80.000.",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "18 Receitas com Premiações e Loterias",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Campeonato Brasileiro",
+          "values": [
+            "1.339",
+            "700",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Campeonato Estadual",
+          "values": [
+            "250",
+            "200",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Copa do Brasil",
+          "values": [
+            "1.320",
+            "2.510",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Copa da 1ª Liga",
+          "values": [
+            "355",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Timemaria",
+          "values": [
+            "1.697",
+            "1.420",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "4.961",
+            "4.830",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "19 Custos Departamento de Esportes",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Futebol Profissional",
+          "values": [
+            "(168.451)",
+            "(109.933)",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gastos com Pessoal",
+          "values": [
+            "(71.134)",
+            "(49.113)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços Profissionais",
+          "values": [
+            "(25.686)",
+            "(5.000)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos com Jogos e Bonificações",
+          "values": [
+            "(9.809)",
+            "(12.606)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de Imagem e de Arena",
+          "values": [
+            "(24.981)",
+            "(24.525)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização Atletas Profissionais Contratados",
+          "values": [
+            "(17.851)",
+            "(11.257)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Gerais",
+          "values": [
+            "(18.990)",
+            "(7.432)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Futebol Base",
+          "values": [
+            "(12.567)",
+            "(12.011)",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gastos com Pessoal",
+          "values": [
+            "(4.313)",
+            "(4.182)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços Profissionais",
+          "values": [
+            "(1.033)",
+            "(1.061)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos com Jogos e Bonificações",
+          "values": [
+            "(223)",
+            "(213)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Gerais",
+          "values": [
+            "(6.998)",
+            "(6.555)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "(181.018)",
+            "(121.944)",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "20 Gastos com pessoal",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salários",
+          "values": [
+            "53.966",
+            "40.719",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gratificações",
+          "values": [
+            "4.014",
+            "1.301",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Férias",
+          "values": [
+            "4.771",
+            "5.789",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13º Salário",
+          "values": [
+            "4.679",
+            "3.597",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbas Indenizatórias",
+          "values": [
+            "5.594",
+            "4.631",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luvas",
+          "values": [
+            "3.502",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vale Transporte",
+          "values": [
+            "244",
+            "220",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Assistência Médica",
+          "values": [
+            "1.282",
+            "1.148",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alimentação",
+          "values": [
+            "443",
+            "489",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguro de Vida",
+          "values": [
+            "98",
+            "58",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estagiários",
+          "values": [
+            "183",
+            "173",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS",
+          "values": [
+            "3.203",
+            "2.214",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS",
+          "values": [
+            "5.745",
+            "3.952",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PIS",
+          "values": [
+            "712",
+            "492",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "17",
+            "4",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "88.772",
+            "64.786",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "21 Serviços Profissionais",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de Terceiros PJ",
+          "values": [
+            "19.520",
+            "12.462",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de Terceiros PF",
+          "values": [
+            "1.286",
+            "903",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorários Advocáticos",
+          "values": [
+            "4.774",
+            "4.054",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intermediação / Agenciamento",
+          "values": [
+            "15.464",
+            "2.264",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "41.044",
+            "19.683",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "22 Gastos com Jogos e Bonificações",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Campeonato Estadual",
+          "values": [
+            "2.370",
+            "2.292",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Campeonato Brasileiro",
+          "values": [
+            "3.818",
+            "8.164",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Copa do Brasil",
+          "values": [
+            "588",
+            "1.354",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amistosos",
+          "values": [
+            "-",
+            "585",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Copa 1ª Liga",
+          "values": [
+            "372",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras",
+          "values": [
+            "2.885",
+            "423",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "10.033",
+            "12.818",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "23 Gastos Gerais",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos e Taxas",
+          "values": [
+            "1.713",
+            "586",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Material Esportivo",
+          "values": [
+            "2.363",
+            "1.664",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Material de Limpeza",
+          "values": [
+            "181",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Material Promocional",
+          "values": [
+            "700",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Água e Esgoto - Cedae",
+          "values": [
+            "3.052",
+            "3.189",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gás - Ceg",
+          "values": [
+            "550",
+            "503",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Telefone /Internet",
+          "values": [
+            "426",
+            "453",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luz e Força - Light",
+          "values": [
+            "1.349",
+            "1.315",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aluguel de Equipamento",
+          "values": [
+            "361",
+            "244",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bolsa aprendizagem",
+          "values": [
+            "1.050",
+            "567",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bens de Pequeno Valor",
+          "values": [
+            "26",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Condução Urbana",
+          "values": [
+            "218",
+            "186",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Conservação E Manutenção",
+          "values": [
+            "2.093",
+            "1.221",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Correios e Telégrafos",
+          "values": [
+            "76",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Legais",
+          "values": [
+            "309",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Entidades Esportivas",
+          "values": [
+            "749",
+            "868",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eventos Sociais",
+          "values": [
+            "427",
+            "186",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Homenagens E Representações",
+          "values": [
+            "103",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lanches e Refeições",
+          "values": [
+            "855",
+            "706",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Livros, Jornais E Revistas",
+          "values": [
+            "44",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Manutenção Uso de Sistemas",
+          "values": [
+            "328",
+            "232",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propaganda e Publicidade",
+          "values": [
+            "235",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "51",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transportes",
+          "values": [
+            "839",
+            "795",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tv por Assinatura",
+          "values": [
+            "31",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Viagens e Estadias",
+          "values": [
+            "1.811",
+            "1.334",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Médica",
+          "values": [
+            "349",
+            "327",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiais Diversos",
+          "values": [
+            "295",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicações",
+          "values": [
+            "57",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Negociação de atletas",
+          "values": [
+            "1.298",
+            "1.673",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sócio Futebol",
+          "values": [
+            "1.596",
+            "935",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "custo atletas dispensados",
+          "values": [
+            "4.827",
+            "4.434",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multa Contratual",
+          "values": [
+            "7.600",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras",
+          "values": [
+            "305",
+            "688",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "36.267",
+            "22.106",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "24 Financeiras Líquidas",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2016",
+            "2015",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas Financeiras",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Atualização Monetária /juros",
+          "values": [
+            "3.181",
+            "1.052",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Descontos Obtidos",
+          "values": [
+            "537",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Aplicação Financeira",
+          "values": [
+            "110",
+            "22",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Redução juros e multas s/parcelamento impostos",
+          "values": [
+            "-",
+            "59.464",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variação Cambial",
+          "values": [
+            "18.939",
+            "1.179",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "-",
+            "542",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "22.766",
+            "62.259",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas financeiras",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Atualização, juros e multas",
+          "values": [
+            "(28.482)",
+            "(25.094)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atualização Juros e Encargos Empréstimos",
+          "values": [
+            "(7.609)",
+            "(1.971)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multa e Encargos Contratuais",
+          "values": [
+            "(1.061)",
+            "(1.650)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variação Cambial",
+          "values": [
+            "(6.129)",
+            "(7.593)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Bancarias/IOF",
+          "values": [
+            "(3.236)",
+            "(512)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Descontos concedidos",
+          "values": [
+            "(2.234)",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "-",
+            "(719)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(48.751)",
+            "(37.539)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financeira Líquida",
+          "values": [
+            "(25.985)",
+            "24.719",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Financeira líquida (2015)",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Redução de juros multas e encargos no montante de R$58.765 mil, com a Adesão ao Programa de Modernização da Gestão e de Responsabilidade Fiscal do Futebol Brasileiro - PROFUT.",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "25 Seguros",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Os valores segurados são determinados e contratados em bases técnicas estimadas suficientes para a cobertura de eventuais perdas decorrentes de sinistros. Os seguros pactuados cobrem os riscos dos atletas (acidentes pessoais e coletivos), dos funcionários (Seguro de vida em Grupo e acidentes pessoais) e seguro da Sede (Seguro contra incêndio). As premissas de riscos adotadas, dadas a sua natureza, não fazem parte do escopo de uma auditoria de demonstrações contábeis, consequentemente, não foram examinadas por nossos auditores independentes.",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIRETORIA",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PEDRO EDUARDO SILVA ABAD",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Presidente",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIOGO VALLE BUENO",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Vice-Presidente de Finanças",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Raquel B. Rocha de Sá",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Contadora – CRC/RJ 071871/0-8",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 7,
+      "section": null,
+      "columns": [
+        "PARECER DESTE CONSELHO FISCAL",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Com base nos relatórios analisados com a assistência da contadora do F.F.C., Raquel Barbosa de Rocha de Sá e, ainda, com o parecer de GRANT THORNTON AUDITORES, o Conselho Fiscal apresenta a V.Sª. integrando este relatório, seu Parecer sobre as contas apresentadas pelo Conselho Diretor, do exercício de 2016, que refletem a realidade econômico-financeira do F.F.C.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "O conselheiro Gustavo Donati vota pela aprovação das contas, o conselheiro Felipe Dias vota pela aprovação das contas e o conselheiro Paulo Quartarone vota pela aprovação das contas. Os conselheiros votam, por UNANIMIDADE, pela aprovação das contas. Pelos motivos expostos, este Conselho Fiscal opina pela APROVAÇÃO das contas do exercício de 2016.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atenciosamente,",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gustavo Donati Membro do Conselho Fiscal",
+          "values": [
+            "Paulo Quartarone Membro do Conselho Fiscal"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RELATÓRIO DOS AUDITORES INDEPENDENTES SOBRE AS DEMONSTRAÇÕES FINANCEIRAS",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aos",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aos administradores e conselheiros",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fluminense Football Club",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rio de Janeiro – RJ",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opinião",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Examinamos as demonstrações contábeis do Fluminense Football Club (\"Clube\") que compreendem o balanço patrimonial em 31 de dezembro de 2016 e as respectivas demonstrações do resultado, do resultado abrangente, das mutações do patrimônio líquido e dos fluxos de caixa para o exercício findo nessa data, bem como as correspondentes notas explicativas, incluindo o resumo das principais políticas contábeis.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Em nossa opinião, as demonstrações contábeis acima referidas apresentam adequadamente, em todos os aspectos relevantes, a posição patrimonial e financeira Fluminense Football Club em 31 de dezembro de 2016, o desempenho de suas operações e os seus fluxos de caixa para o exercício findo nessa data, de acordo com as práticas contábeis adotadas no Brasil, aplicáveis a pequenas e médias empresas.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Base para opinião",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Nossa auditoria foi conduzida de acordo com as normas brasileiras e internacionais de auditoria. Nossas responsabilidades, em conformidade com tais normas, estão descritas na seção a seguir intitulada \"Responsabilidades do auditor pela auditoria das demonstrações contábeis\". Somos independentes em relação ao Clube, de acordo com os princípios éticos relevantes previstos no Código de Ética Profissional do Contador e nas normas profissionais emitidas pelo Conselho Federal de Contabilidade, e cumprimos com as demais responsabilidades éticas de acordo com essas normas. Acreditamos que a evidência de auditoria obtida é suficiente e apropriada para fundamentar nossa opinião.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Incerteza relevante relacionada com a continuidade operacional",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Conforme descrito na Nota 1, o clube apresenta deficiência de capital de giro de R$ 194.788 mil em 31 de dezembro de 2016 (R$ 169.049 mil em 31 de dezembro de 2015) e patrimônio líquido negativo no montante de R$ 43.337 mil (R$ 51.678 em 31 de dezembro de 2015), evidenciando a necessidade de aporte de recursos financeiros. A administração está enviando esforços com o objetivo de minimizar os impactos em seu fluxo de caixa. As ações que estão sendo desenvolvidas para o reestabelecimento do equilíbrio econômico financeiro e da posição patrimonial do clube, bem como da necessidade de geração de caixa para funcionamento das respectivas atividades, estão descritas na Nota 1. A continuidade das atividades do clube dependerá do sucesso das medidas que estão sendo tomadas pela administração e, portanto, suas demonstrações contábeis foram preparadas de acordo com as práticas contábeis adotadas no Brasil, aplicáveis a um clube em continuidade normal de suas atividades e, não incluem nenhum ajuste relativo à recuperação e classificação de ativos ou aos valores e à classificação de passivos, que seriam requeridos na impossibilidade do clube continuar exercendo suas atividades. Nossa opinião não contém ressalva em relação a esse assunto.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ênfase - Parcelamento da Lei nº 13.155/2015 – Profut (Programa de Modernização da gestão e de responsabilidade fiscal do futebol brasileiro)",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Chamamos a atenção para a Nota 11 às demonstrações contábeis, que descreve que o clube aderiu ao PROFUT em novembro de 2015, atualizando seus débitos e recolhendo os tributos e contribuições incluídos no Programa de acordo com as condições estabelecidas na Portaria Conjunta PGFN/RFB nº 1.340 de 23 de setembro de 2015. A homologação formal e definitiva do parcelamento, encontra-se em processo de aprovação pela Secretaria da Receita Federal do Brasil (RFB) e à Procuradoria-Geral da Fazenda Nacional (PGFN). Nossa opinião não contém ressalva em relação a esse assunto.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros assuntos",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Auditoria do período anterior",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "As demonstrações contábeis do Fluminense Football Club para o exercício findo em 31 de dezembro de 2015 foram examinadas por outro auditor independente que emitiu relatório em 4 de março de 2016 com opinião sem modificação sobre essas demonstrações contábeis contendo os mesmos parágrafos de ênfase acima.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Responsabilidade da administração e da governança pelas demonstrações contábeis",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A administração do Clube é responsável pela elaboração e adequada apresentação das demonstrações contábeis de acordo com as práticas contábeis adotadas no Brasil, e pelos controles internos que ela determinou como necessários para permitir a elaboração das demonstrações contábeis livres de distorção relevante, independentemente se causadas por fraude ou erro.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Na elaboração das demonstrações contábeis, a administração é responsável pela avaliação da capacidade do Clube continuar operando, divulgando, quando aplicável, os assuntos relacionados com a sua continuidade operacional e o uso dessa base contábil na elaboração das demonstrações contábeis, a não ser que a administração pretenda liquidar o Clube ou cessar suas operações, ou não tenha nenhuma alternativa realista para evitar o encerramento das operações.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Os responsáveis pela governança do Clube são aqueles com responsabilidade pela supervisão do processo de elaboração das demonstrações contábeis.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Responsabilidade do auditor pela auditoria das demonstrações contábeis",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Nossos objetivos são obter segurança razoável de que as demonstrações contábeis, tomadas em conjunto, estão livres de distorção relevante, independentemente se causada por fraude ou erro, e emitir relatório de auditoria contendo nossa opinião. Segurança razoável é um alto nível de segurança, mas não uma garantia de que a auditoria realizada de acordo com as normas brasileiras e internacionais de auditoria, sempre detectam as eventuais distorções relevantes existentes. As distorções podem ser decorrentes de fraude e erro e são consideradas relevantes quando, individualmente ou em conjunto, possam influenciar, dentro de uma perspectiva razoável, as decisões econômicas dos usuários tomadas com base nas referidas demonstrações contábeis.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Como parte de uma auditoria realizada de acordo com as normas brasileiras e internacionais de auditoria, exercemos julgamento profissional e mantemos ceticismo profissional ao longo da auditoria, além disso:",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Identificamos e avaliamos os riscos de distorção relevante nas demonstrações contábeis, independentemente se causadas por fraude ou erro, planejamos e executamos procedimentos de auditoria em respostas a tais riscos, bem como obtenimos evidência de auditoria apropriada e suficiente para fundamentar nossa opinião. O risco de não detecção de distorção relevante resultante de fraude é maior do que o proveniente de erro, já que a fraude pode envolver o ato de burlar os controles internos, conluio, falsificação, omissão ou representações falsas intencionais. - Obtemos entendimento dos controles internos relevantes para a auditoria para planejarmos procedimentos de auditoria apropriados às circunstâncias, mas não com o objetivo de expressarmos opinião sobre a eficácia dos controles internos do Clube. - Avaliamos a adequação das políticas contábeis utilizadas e a razoabilidade das estimativas contábeis e respectivas divulgações feitas pela administração. - Concluímos sobre a adequação do uso, pela administração, da base contábil de continuidade operacional e, com base nas evidências de auditoria obtidas, se existe incerteza relevante em relação a eventos ou condições que possam levantar dúvida significativa em relação à capacidade de continuidade operacional do Clube. Se concluirmos que existe incerteza relevante, devemos chamar atenção em nosso relatório de auditoria para as respectivas divulgações nas demonstrações contábeis ou incluir modificação em nossa opinião, se as divulgações forem inadequadas. Nossas conclusões estão fundamentadas nas evidências de auditoria obtidas até a data de nosso relatório. Todavia, eventos ou condições futuras podem levar o Clube a não mais se manter em continuidade operacional. - Avaliamos a apresentação geral, a estrutura e o conteúdo das demonstrações contábeis, inclusive as divulgações e se as demonstrações contábeis representam as correspondentes transações e os eventos de maneira compatível com o objetivo de apresentação adequada.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comunicamo-nos com os responsáveis pela governança a respeito, entre outros aspectos, do alcance planejado, da época da auditoria e das constatações significativas de auditoria, inclusive as eventuais deficiências significativas nos controles internos que identificamos durante nossos trabalhos.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rio de Janeiro, 5 de abril de 2017.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carlos Aragaki CT CRC 1SP132.091/O-1 \"S\" RJ Grant Thornton Grant Thornton Auditores Independentes CRC 2SP-025.583/O-1 \"S\" RJ",
+          "values": [
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"R$ 293.194\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"R$ 180.320\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 1,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"-R$ 74.604\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 1,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"-R$ 121.944\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 1,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"-R$ 181.018\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 2,
+      "section": "FLUMINENSE FOOTBALL CLUB / CNPJ Nº 33.647.553/0001-90 / Considerações finais",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do ativo",
+      "target": "532.066",
+      "addendCount": 9,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "FLUMINENSE FOOTBALL CLUB / CNPJ Nº 33.647.553/0001-90 / Considerações finais",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do ativo",
+      "target": "438.641",
+      "addendCount": 8,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do Passivo e Patrimônio Líquido",
+      "target": "532.066",
+      "addendCount": 18,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do Passivo e Patrimônio Líquido",
+      "target": "438.641",
+      "addendCount": 18,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total de Custos do Departamento de Esportes",
+      "target": "(193.040)",
+      "addendCount": 10,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Total de Custos do Departamento de Esportes",
+      "target": "(130.061)",
+      "addendCount": 9,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DOS RESULTADOS ABRANGENTES EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total dos resultados abrangentes do exercício",
+      "target": "8.342",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DOS RESULTADOS ABRANGENTES EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total dos resultados abrangentes do exercício",
+      "target": "31.802",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "3. Estimativas críticas / 3.1 Provisão para créditos de liquidação duvidosa / 3.2 Provisão para contingências / 3.3 Vida útil de ativos não circulantes / 4 Contas a receber – Circulante e não circulante",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do circulante",
+      "target": "54.416",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "311146"
+    },
+    {
+      "page": 3,
+      "section": "3. Estimativas críticas / 3.1 Provisão para créditos de liquidação duvidosa / 3.2 Provisão para contingências / 3.3 Vida útil de ativos não circulantes / 4 Contas a receber – Circulante e não circulante",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do circulante",
+      "target": "12.959",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "252308"
+    },
+    {
+      "page": 3,
+      "section": "3. Estimativas críticas / 3.1 Provisão para créditos de liquidação duvidosa / 3.2 Provisão para contingências / 3.3 Vida útil de ativos não circulantes / 4 Contas a receber – Circulante e não circulante",
+      "likelyRelevant": false,
+      "totalLabel": "Total do contas a receber",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": "5 Imobilizado",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total do imobilizado",
+      "target": "365.635",
+      "addendCount": 15,
+      "closes": false,
+      "diff": "337400"
+    },
+    {
+      "page": 3,
+      "section": "5 Imobilizado",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total do imobilizado",
+      "target": "(16.657)",
+      "addendCount": 12,
+      "closes": false,
+      "diff": "-16657"
+    },
+    {
+      "page": 3,
+      "section": "5 Imobilizado",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Total do imobilizado",
+      "target": "348.979",
+      "addendCount": 15,
+      "closes": false,
+      "diff": "320741"
+    },
+    {
+      "page": 3,
+      "section": "5 Imobilizado",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "Total do imobilizado",
+      "target": "326.592",
+      "addendCount": 14,
+      "closes": false,
+      "diff": "322421"
+    },
+    {
+      "page": 3,
+      "section": "Movimentação do imobilizado",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do imobilizado",
+      "target": "326.591",
+      "addendCount": 14,
+      "closes": false,
+      "diff": "322420"
+    },
+    {
+      "page": 3,
+      "section": "Movimentação do imobilizado",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do imobilizado",
+      "target": "25.214",
+      "addendCount": 11,
+      "closes": false,
+      "diff": "1088"
+    },
+    {
+      "page": 3,
+      "section": "Movimentação do imobilizado",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do imobilizado",
+      "target": "(113)",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "-113"
+    },
+    {
+      "page": 3,
+      "section": "Movimentação do imobilizado",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total do imobilizado",
+      "target": "(2.655)",
+      "addendCount": 12,
+      "closes": false,
+      "diff": "-2655"
+    },
+    {
+      "page": 3,
+      "section": "Movimentação do imobilizado",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total do imobilizado",
+      "target": "348.979",
+      "addendCount": 15,
+      "closes": false,
+      "diff": "320696"
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total de atletas de futebol",
+      "skipped": true,
+      "reason": "1 de 6 valor(es) del segmento no parecen números (ej. \"Custo\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total de atletas de futebol",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"Amortização acumulada\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total de atletas de futebol",
+      "target": "108.863",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "7867"
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total de atletas de futebol",
+      "target": "83.422",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "6938"
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total de atletas de futebol",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"Henrique Pereira Cardoso\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total de atletas de futebol",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"50%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do intangível",
+      "target": "164.676",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-163633"
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do intangível",
+      "target": "(55.179)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "54770"
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do intangível",
+      "target": "109.496",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-108863"
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total do intangível",
+      "target": "83.655",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-83422"
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total do intangível",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"Igor de Carvalho Julião\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total do intangível",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"50% 50%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 5,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "35 de 63 valor(es) del segmento no parecen números (ej. \"Circulante\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 5,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "33 de 61 valor(es) del segmento no parecen números (ej. \"Circulante\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 5,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 23 valor(es) del segmento no parecen números (ej. \"Não Circulante\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 5,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 22 valor(es) del segmento no parecen números (ej. \"Não Circulante\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 5,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total das Receitas Operacionais",
+      "skipped": true,
+      "reason": "1 de 38 valor(es) del segmento no parecen números (ej. \"Cível\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 5,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total das Receitas Operacionais",
+      "skipped": true,
+      "reason": "1 de 17 valor(es) del segmento no parecen números (ej. \"Fiscal\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "11.362",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "2016"
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "15.765",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "2015"
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "52.438",
+      "addendCount": 3,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "36.511",
+      "addendCount": 3,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "4.961",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "2016"
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "4.830",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "2015"
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "(181.018)",
+      "addendCount": 10,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "(121.944)",
+      "addendCount": 10,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "88.772",
+      "addendCount": 16,
+      "closes": false,
+      "diff": "1697"
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "64.786",
+      "addendCount": 15,
+      "closes": false,
+      "diff": "2016"
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "41.044",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "2016"
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "19.683",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "2015"
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "10.033",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "2016"
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "12.818",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "2015"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 55,
+    "results": [
+      {
+        "label": "Bilheteria",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bilheteria",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Repasse de Direitos Federativos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Repasse de Direitos Federativos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transmissões Televisivas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transmissões Televisivas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidade e Patrocínio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidade e Patrocínio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Licenciamentos e Franquias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Licenciamentos e Franquias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Premiações e Loterias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Premiações e Loterias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Esportes Amadores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Esportes Amadores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Associados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Associados",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aluguéis",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aluguéis",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Socio Futebol",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "member_dues",
+        "matchedLabel": "Programa sócio-torcedor (Sócio Futebol)",
+        "similarity": 50
+      },
+      {
+        "label": "Socio Futebol",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Incentivado",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Incentivado",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras (Futebol)",
+        "similarity": 50
+      },
+      {
+        "label": "Outras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2014",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2014",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2015",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2015",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2016",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2016",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos com Pessoal",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos com Pessoal",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços Profissionais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços Profissionais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos com Jogos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos com Jogos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Transporte e outros gastos com jogos e competições",
+        "similarity": 50
+      },
+      {
+        "label": "Direitos de Imagem e de Arena",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direitos de Imagem e de Arena",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização Atletas Profissionais Contratação",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização Atletas Profissionais Contratação",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos Gerais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos Gerais",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos gerais",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "[ilegible]",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "[ilegible]",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "[ilegible] (rótulo em \"MM\")",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "[ilegible] (rótulo em \"MM\")",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECEITA LÍQUIDA",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECEITA LÍQUIDA",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CUSTOS DO DEPARTAMENTO DE ESPORTES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CUSTOS DO DEPARTAMENTO DE ESPORTES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Futebol",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras (Futebol)",
+        "similarity": 50
+      },
+      {
+        "label": "Futebol",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos com Jogos e Bonificações",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos com Jogos e Bonificações",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização Atletas Profissionais Contratados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização Atletas Profissionais Contratados",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Esporte Olímpico",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Esporte Olímpico",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direitos de Imagem",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direitos de Imagem",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RESULTADO OPERACIONAL BRUTO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RESULTADO OPERACIONAL BRUTO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CLUBE SOCIAL",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CLUBE SOCIAL",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas Operacionais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas Operacionais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com Pessoal",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com Pessoal",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas Gerais e Administrativas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas Gerais e Administrativas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financeiras Líquidas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financeiras Líquidas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciação e Amortização",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciação e Amortização",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão para contingências",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão para contingências",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Reversão (constituição) de provisão para contingências, líquida",
+        "similarity": 50
+      },
+      {
+        "label": "SUPERÁVIT DO EXERCÍCIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SUPERÁVIT DO EXERCÍCIO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit/(déficit) do exercício",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit/(déficit) do exercício",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros resultados abrangentes",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros resultados abrangentes",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Edificações",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Edificações",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Móveis e utensílios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Móveis e utensílios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipamentos Processamento",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipamentos Processamento",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipamento Diversos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipamento Diversos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sede",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sede",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Edificações e benfeitorias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Edificações e benfeitorias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Veículos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Veículos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipamentos de processamento",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipamentos de processamento",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipamentos diversos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipamentos diversos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pinacoteca e monumentos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pinacoteca e monumentos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Terrenos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Terrenos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Xerém",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Xerém",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Benfeitorias e instalações",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Benfeitorias e instalações",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CT Barra",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CT Barra",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Fluminense",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "23 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "18 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

@@ -1,0 +1,437 @@
+{
+ "md": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2014.md",
+ "pdf": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2014.pdf",
+ "club": "criciuma",
+ "year": 2014,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:52:10.403Z",
+ "tieOuts": {
+  "cierran": 18,
+  "noCierran": 4
+ },
+ "warnings": [
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 41,
+  "notasUsadas": [
+   "25"
+  ]
+ },
+ "ladoConocido": 33,
+ "rubros": [
+  {
+   "label": "Receita operacional bruta",
+   "lado": "revenue",
+   "page": 6,
+   "section": "CRICIÚMA E.C. / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013",
+   "values": [
+    43.279511
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento profissional",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013",
+   "values": [
+    -32.953552
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento amador",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013",
+   "values": [
+    -2.519771
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento administrativo",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013",
+   "values": [
+    -0.884796
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento marketing e comercial",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013",
+   "values": [
+    -0.687495
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento financeiro",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013",
+   "values": [
+    -0.199486
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento de patrimônio",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013",
+   "values": [
+    -4.094848
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento jurídico",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013",
+   "values": [
+    -0.716254
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento loja Tigre Maníacos",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013",
+   "values": [
+    -0.249772
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "page": 6,
+   "section": "CRICIÚMA E.C. / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013",
+   "values": [
+    -0.063622
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Custos e despesas operacionais",
+   "lado": "expense",
+   "page": 6,
+   "section": "CRICIÚMA E.C. / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013",
+   "values": [
+    -42.369596
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Receitas financeiras",
+   "lado": "revenue",
+   "page": 6,
+   "section": "CRICIÚMA E.C. / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013",
+   "values": [
+    0.106268
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 6,
+   "section": "CRICIÚMA E.C. / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2014 e de 2013",
+   "values": [
+    -1.012061
+   ],
+   "origen": "estado 1 (su nota queda consumida sin abrir)"
+  },
+  {
+   "label": "Terrenos",
+   "lado": "expense",
+   "page": 21,
+   "section": "",
+   "values": [
+    28198.475
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Edificações",
+   "lado": "expense",
+   "page": 21,
+   "section": "",
+   "values": [
+    17519.356
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Veículos",
+   "lado": "expense",
+   "page": 21,
+   "section": "",
+   "values": [
+    97.076
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Equipamentos informática",
+   "lado": "expense",
+   "page": 21,
+   "section": "",
+   "values": [
+    128.1
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Máquinas e equipamentos",
+   "lado": "expense",
+   "page": 21,
+   "section": "",
+   "values": [
+    1632.282
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Móveis e utensílios",
+   "lado": "expense",
+   "page": 21,
+   "section": "",
+   "values": [
+    489.292
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Obras em execução",
+   "lado": "expense",
+   "page": 21,
+   "section": "",
+   "values": [
+    3690.172
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Receitas com transmissões televisivas",
+   "lado": "revenue",
+   "page": 27,
+   "section": "### 16 Receitas operacionais brutas",
+   "values": [
+    30086.366
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Receitas com mensalidade dos sócios",
+   "lado": "revenue",
+   "page": 27,
+   "section": "### 16 Receitas operacionais brutas",
+   "values": [
+    10809.859
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Receita de mecanismo de solidariedade",
+   "lado": "revenue",
+   "page": 27,
+   "section": "### 16 Receitas operacionais brutas",
+   "values": [
+    1048.507
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Repasses de direitos federativos",
+   "lado": "revenue",
+   "page": 27,
+   "section": "### 16 Receitas operacionais brutas",
+   "values": [
+    505.145
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Venda de mercadorias",
+   "lado": "revenue",
+   "page": 27,
+   "section": "### 16 Receitas operacionais brutas",
+   "values": [
+    441.636
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Receitas com royalties",
+   "lado": "revenue",
+   "page": 27,
+   "section": "### 16 Receitas operacionais brutas",
+   "values": [
+    119.377
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Receitas de publicidade",
+   "lado": "revenue",
+   "page": 27,
+   "section": "### 16 Receitas operacionais brutas",
+   "values": [
+    268.621
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Edificações",
+   "lado": "expense",
+   "page": 21,
+   "section": "### 7 Adiantamentos a fornecedores / ### 8 Imobilizado",
+   "values": [
+    0.004
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Veículos",
+   "lado": "expense",
+   "page": 21,
+   "section": "### 7 Adiantamentos a fornecedores / ### 8 Imobilizado",
+   "values": [
+    1.625
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Equipamentos informática",
+   "lado": "expense",
+   "page": 21,
+   "section": "### 7 Adiantamentos a fornecedores / ### 8 Imobilizado",
+   "values": [
+    1.15
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Máquinas e equipamentos",
+   "lado": "expense",
+   "page": 21,
+   "section": "### 7 Adiantamentos a fornecedores / ### 8 Imobilizado",
+   "values": [
+    0.55
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Móveis e utensílios",
+   "lado": "expense",
+   "page": 21,
+   "section": "### 7 Adiantamentos a fornecedores / ### 8 Imobilizado",
+   "values": [
+    0.55
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "SIECESC – Sindicato da Indústria Extr. Carvão",
+   "lado": "revenue",
+   "page": 21,
+   "section": "### 6 Patrocínios a receber e receitas de patrocínio a realizar",
+   "values": [
+    270
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Midea",
+   "lado": "revenue",
+   "page": 21,
+   "section": "### 6 Patrocínios a receber e receitas de patrocínio a realizar",
+   "values": [
+    655
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "NISSIN - Ajinomoto Alimentos Ltda",
+   "lado": "revenue",
+   "page": 21,
+   "section": "### 6 Patrocínios a receber e receitas de patrocínio a realizar",
+   "values": [
+    47.5
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Atletas formados",
+   "lado": "expense",
+   "page": 22,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "values": [
+    176.752
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Atletas em formação",
+   "lado": "expense",
+   "page": 22,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "values": [
+    2866.468
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Atletas contratados",
+   "lado": "expense",
+   "page": 22,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "values": [
+    1198.283
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Projeto de Formação Atletas Amadores (i)",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### 12 Receitas de subvenções a realizar",
+   "values": [
+    3.332814
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Projeto Construção Centro da Academia - PMC (i)",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### 12 Receitas de subvenções a realizar",
+   "values": [
+    0.686075
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Projeto Construção Centro de Treinamento (i)",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### 12 Receitas de subvenções a realizar",
+   "values": [
+    4.246179
+   ],
+   "origen": "estado 17"
+  }
+ ]
+}

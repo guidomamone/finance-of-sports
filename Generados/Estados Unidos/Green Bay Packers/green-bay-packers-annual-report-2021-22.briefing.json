@@ -1,0 +1,539 @@
+{
+  "club": "green-bay-packers",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Estados Unidos/Green Bay Packers/green-bay-packers-annual-report-2021-22.md",
+  "generatedAt": "2026-09-30T22:01:26.683Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 4,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 7,
+  "relevantTableCount": 4,
+  "tables": [
+    {
+      "page": 16,
+      "section": "GREEN BAY PACKERS GIVE BACK / ## DONATIONS / *GREEN BAY PACKERS FOUNDATION IMPACT GRANTS:* / *GREEN BAY PACKERS FOUNDATION ANNUAL GRANTS:* / *PACKERS GIVE BACK IMPACT GRANTS:*",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- 42 Packers players and coaches donated",
+          "values": [
+            "$135,325"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Packers Give Back matched the amount to donate a total of",
+          "values": [
+            "$270,650"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+      "columns": [
+        "",
+        "2022",
+        "2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "*$ thousands*",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Revenue",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "National",
+          "values": [
+            "$347,270",
+            "$309,206"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Local",
+          "values": [
+            "231,741",
+            "61,859"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total revenue",
+          "values": [
+            "579,011",
+            "371,065"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Expenses",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Player costs",
+          "values": [
+            "280,874",
+            "219,919"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Team",
+          "values": [
+            "55,353",
+            "47,771"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sales, marketing & fan engagement",
+          "values": [
+            "67,863",
+            "47,506"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Facilities, net*",
+          "values": [
+            "27,111",
+            "35,286"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "General & administrative",
+          "values": [
+            "70,084",
+            "59,369"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total expenses",
+          "values": [
+            "501,286",
+            "409,851"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profit (loss) from Operations",
+          "values": [
+            "$ 77,726",
+            "$ (38,786)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Investment Fund gain (loss)",
+          "values": [
+            "$ 5,111",
+            "$120,032"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Net Income",
+          "values": [
+            "$ 61,572",
+            "$ 60,679"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 24,
+      "section": "## REVENUE",
+      "columns": [
+        "Año",
+        "Revenue (Millions)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2019",
+          "values": [
+            "$478.0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2020",
+          "values": [
+            "$507.1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2021",
+          "values": [
+            "$371.1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2022",
+          "values": [
+            "$578.6"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "## EXPENSES",
+      "columns": [
+        "Año",
+        "Expenses (Millions)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2019",
+          "values": [
+            "$477.3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2020",
+          "values": [
+            "$436.8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2021",
+          "values": [
+            "$409.9"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2022",
+          "values": [
+            "$501.3"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "## OPERATING PROFIT",
+      "columns": [
+        "Año",
+        "Operating Profit (Millions)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2019",
+          "values": [
+            "$0.7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2020",
+          "values": [
+            "$70.3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2021",
+          "values": [
+            "$-38.8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2022",
+          "values": [
+            "$77.3"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "## NET INCOME",
+      "columns": [
+        "Año",
+        "Net Income (Millions)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2019",
+          "values": [
+            "$8.4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2020",
+          "values": [
+            "$34.9"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2021",
+          "values": [
+            "$60.7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2022",
+          "values": [
+            "$61.6"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "## PRESERVING THE PACKERS FRANCHISE / Balance Sheet†",
+      "columns": [
+        "",
+        "2022",
+        "2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "*$ thousands*",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Assets",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Cash & investments",
+          "values": [
+            "$623,342",
+            "$511,022"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Unamortized signing bonuses, net",
+          "values": [
+            "177,056",
+            "187,379"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Property & equipment, net",
+          "values": [
+            "387,178",
+            "389,354"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other",
+          "values": [
+            "99,469",
+            "75,176"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total assets",
+          "values": [
+            "$1,287,045",
+            "$1,162,932"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Liabilities & Equity",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Debt",
+          "values": [
+            "$112,201",
+            "$156,252"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compensation liabilities",
+          "values": [
+            "176,191",
+            "119,413"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other liabilities",
+          "values": [
+            "123,777",
+            "127,107"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equity",
+          "values": [
+            "874,877",
+            "760,159"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total liabilities & equity",
+          "values": [
+            "$1,287,045",
+            "$1,162,932"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 24,
+      "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total revenue",
+      "skipped": true,
+      "reason": "2 de 3 valor(es) del segmento no parecen números (ej. \"*$ thousands*\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 24,
+      "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total revenue",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"$309,206\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 24,
+      "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total expenses",
+      "target": "501,286",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 5 rubros enteros)"
+    },
+    {
+      "page": 24,
+      "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total expenses",
+      "target": "409,851",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "## PRESERVING THE PACKERS FRANCHISE / Balance Sheet†",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total assets",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$1,287,045\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 25,
+      "section": "## PRESERVING THE PACKERS FRANCHISE / Balance Sheet†",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total assets",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$1,162,932\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 25,
+      "section": "## PRESERVING THE PACKERS FRANCHISE / Balance Sheet†",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total liabilities & equity",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$1,287,045\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 25,
+      "section": "## PRESERVING THE PACKERS FRANCHISE / Balance Sheet†",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total liabilities & equity",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$1,162,932\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/green-bay-packers-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"green-bay-packers\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "6 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

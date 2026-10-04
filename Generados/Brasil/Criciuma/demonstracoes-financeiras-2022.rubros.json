@@ -1,0 +1,247 @@
+{
+ "md": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.md",
+ "pdf": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2022.pdf",
+ "club": "criciuma",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:52:07.360Z",
+ "tieOuts": {
+  "cierran": 45,
+  "noCierran": 8
+ },
+ "warnings": [
+  "8 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 24,
+  "notasUsadas": [
+   "26"
+  ]
+ },
+ "ladoConocido": 17,
+ "rubros": [
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": "revenue",
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "values": [
+    27.268558
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "CUSTOS E DESPESAS OPERACIONAIS",
+   "lado": "expense",
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "values": [
+    -23.790402
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Futebol Profissional",
+   "lado": null,
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "values": [
+    -15.977814
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Futebol de Base",
+   "lado": null,
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "values": [
+    -1.902868
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Futebol Feminino",
+   "lado": null,
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "values": [
+    -0.263722
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Administrativo",
+   "lado": null,
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "values": [
+    -1.385459
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento de Patrimônio",
+   "lado": null,
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "values": [
+    -3.584477
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "values": [
+    -0.708285
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Outras receitas Operacionais",
+   "lado": "revenue",
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "values": [
+    0.032222
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas Financeiras",
+   "lado": "expense",
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "values": [
+    -1.251577
+   ],
+   "origen": "estado 2 (su nota queda consumida sin abrir)"
+  },
+  {
+   "label": "Receitas Financeiras",
+   "lado": "revenue",
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "values": [
+    0.044576
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Descrição",
+   "lado": "expense",
+   "page": 20,
+   "section": "\\#1 – Vide Nota Explicativa 14 / Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "values": [
+    0.000031
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Saldo Inicial",
+   "lado": "expense",
+   "page": 20,
+   "section": "\\#1 – Vide Nota Explicativa 14 / Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "values": [
+    0.189618
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Atletas Profissionalizados",
+   "lado": "expense",
+   "page": 20,
+   "section": "\\#1 – Vide Nota Explicativa 14 / Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "values": [
+    0.249542
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Amortização",
+   "lado": "expense",
+   "page": 20,
+   "section": "\\#1 – Vide Nota Explicativa 14 / Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "values": [
+    -0.153504
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Projeto de Formação de Atletas Amadores",
+   "lado": "revenue",
+   "page": 20,
+   "section": "### 9 Receitas de subvenções a realizar",
+   "values": [
+    1.285359
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Projeto de Construção CT – MESP",
+   "lado": "revenue",
+   "page": 20,
+   "section": "### 9 Receitas de subvenções a realizar",
+   "values": [
+    0.408002
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Projeto de Construção CT – MESP",
+   "lado": "revenue",
+   "page": 20,
+   "section": "### 9 Receitas de subvenções a realizar",
+   "values": [
+    3.560634
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Projeto de Construção CT – PMC",
+   "lado": "revenue",
+   "page": 20,
+   "section": "### 9 Receitas de subvenções a realizar",
+   "values": [
+    0.899781
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Receita com transmissão",
+   "lado": "revenue",
+   "page": 24,
+   "section": "### 17 Receitas operacionais brutas",
+   "values": [
+    11274.214
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Receita com sócios",
+   "lado": "revenue",
+   "page": 24,
+   "section": "### 17 Receitas operacionais brutas",
+   "values": [
+    7566.451
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Receita com patrocínios",
+   "lado": "revenue",
+   "page": 24,
+   "section": "### 17 Receitas operacionais brutas",
+   "values": [
+    2803.5
+   ],
+   "origen": "estado 24"
+  }
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "md": "Clubes/Colombia/Once Caldas/estados-financieros-2020.md",
+ "generatedAt": "2026-09-30T22:49:00.067Z",
+ "rubrosHuella": "df1ddd9c8eb5b557cc513c6cedf602bb6894fcbd",
+ "rubros": [
+  {
+   "label": "FINANCIEROS",
+   "lado": "revenue",
+   "page": 11,
+   "section": "NOTA 24",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "INTERESES",
+   "lado": "revenue",
+   "page": 11,
+   "section": "NOTA 24",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DIFERENCIA EN CAMBIO",
+   "lado": "revenue",
+   "page": 11,
+   "section": "NOTA 24",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "RECUPERACIONES",
+   "lado": "revenue",
+   "page": 11,
+   "section": "NOTA 24",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "REINTEGROS NIIF",
+   "lado": "revenue",
+   "page": 11,
+   "section": "NOTA 24",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "INDEMNIZACIONES",
+   "lado": "revenue",
+   "page": 11,
+   "section": "NOTA 24",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DIVERSOS",
+   "lado": "revenue",
+   "page": 11,
+   "section": "NOTA 24",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "APROVECHAMIENTOS",
+   "lado": "revenue",
+   "page": 11,
+   "section": "NOTA 24",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "SUBVENCIONES",
+   "lado": "revenue",
+   "page": 11,
+   "section": "NOTA 24",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "AJUSTE AL PESO",
+   "lado": "revenue",
+   "page": 11,
+   "section": "NOTA 24",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "REINTEGRO DE GASTOS AÑOS ANTERIORES",
+   "lado": "revenue",
+   "page": 11,
+   "section": "NOTA 24",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "REINTE DE OTROS C",
+   "lado": "revenue",
+   "page": 11,
+   "section": "NOTA 24",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1000
+  }
+ ]
+}

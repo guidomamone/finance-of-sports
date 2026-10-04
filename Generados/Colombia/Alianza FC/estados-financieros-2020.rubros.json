@@ -1,0 +1,344 @@
+{
+ "md": "Clubes/Colombia/Alianza FC/estados-financieros-2020.md",
+ "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2020.pdf",
+ "club": "alianza-fc",
+ "year": 2020,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:57:46.227Z",
+ "tieOuts": {
+  "cierran": 24,
+  "noCierran": 2
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 34,
+  "notasUsadas": []
+ },
+ "ladoConocido": 32,
+ "rubros": [
+  {
+   "label": "GASTOS OPERACIONALES",
+   "lado": "expense",
+   "page": 10,
+   "section": "### GASTOS",
+   "values": [
+    6494972.709
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Gastos de personal",
+   "lado": "expense",
+   "page": 10,
+   "section": "### GASTOS",
+   "values": [
+    1576466.978
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 10,
+   "section": "### GASTOS",
+   "values": [
+    341693.359
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 10,
+   "section": "### GASTOS",
+   "values": [
+    218865.431
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 10,
+   "section": "### GASTOS",
+   "values": [
+    86422.905
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 10,
+   "section": "### GASTOS",
+   "values": [
+    4118.665
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 10,
+   "section": "### GASTOS",
+   "values": [
+    367204.022
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 10,
+   "section": "### GASTOS",
+   "values": [
+    4168.684
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "lado": "expense",
+   "page": 10,
+   "section": "### GASTOS",
+   "values": [
+    44088.745
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Gastos de viaje",
+   "lado": "expense",
+   "page": 10,
+   "section": "### GASTOS",
+   "values": [
+    740264.545
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 10,
+   "section": "### GASTOS",
+   "values": [
+    3079966.145
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 10,
+   "section": "### GASTOS",
+   "values": [
+    31713.23
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "OPERACIONALES",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    9449755.604
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Taquilla",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    1071033.5
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Escuelas de Formación Deportiva",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    146197.379
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    988647.059
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Dimayor",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    5316609.739
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Venta Derechos Deportivos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    1111166.125
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Prestamos Derechos Deportivos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    750919.195
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Venta artículos deportivos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    65182.607
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "OPERACIONALES DE VENTA",
+   "lado": "revenue",
+   "page": 11,
+   "section": "",
+   "values": [
+    2863125.917
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Gastos de personal",
+   "lado": "expense",
+   "page": 11,
+   "section": "",
+   "values": [
+    2568516.506
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Amortización de Derechos Deportivos",
+   "lado": "revenue",
+   "page": 11,
+   "section": "",
+   "values": [
+    294609.411
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "GASTOS NO OPERACIONALES",
+   "lado": "expense",
+   "page": 11,
+   "section": "",
+   "values": [
+    782945.839
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Financieros",
+   "lado": "revenue",
+   "page": 11,
+   "section": "",
+   "values": [
+    261874.585
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Gastos Extraordinarios",
+   "lado": "expense",
+   "page": 11,
+   "section": "",
+   "values": [
+    104109.237
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Gastos Diversos",
+   "lado": "expense",
+   "page": 11,
+   "section": "",
+   "values": [
+    88193
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Impuesto de Renta (año anterior)",
+   "lado": "expense",
+   "page": 11,
+   "section": "",
+   "values": [
+    237936.303
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Costos (De Boletería)",
+   "lado": "expense",
+   "page": 11,
+   "section": "",
+   "values": [
+    52507.714
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Costos (De Artículos Deportivos)",
+   "lado": "expense",
+   "page": 11,
+   "section": "",
+   "values": [
+    38325
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Caja",
+   "lado": "revenue",
+   "page": 4,
+   "section": "#### Políticas contables para la cuenta de Ingresos / ### ACTIVO / #### Efectivo y equivalentes de efectivo",
+   "values": [
+    1450.573
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Bancos",
+   "lado": "revenue",
+   "page": 4,
+   "section": "#### Políticas contables para la cuenta de Ingresos / ### ACTIVO / #### Efectivo y equivalentes de efectivo",
+   "values": [
+    34036.491
+   ],
+   "origen": "estado 0"
+  }
+ ]
+}

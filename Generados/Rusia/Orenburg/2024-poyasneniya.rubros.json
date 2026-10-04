@@ -1,0 +1,72 @@
+{
+ "md": "Clubes/Rusia/Orenburg/2024-poyasneniya.md",
+ "pdf": "Clubes/Rusia/Orenburg/2024-poyasneniya.pdf",
+ "club": "orenburg",
+ "year": 2024,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:08:00.921Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 5,
+  "notasUsadas": []
+ },
+ "ladoConocido": 5,
+ "rubros": [
+  {
+   "label": "Материальные затраты",
+   "lado": "expense",
+   "page": 14,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    0.036249
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Расходы на оплату труда",
+   "lado": "expense",
+   "page": 14,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    1.143137
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Отчисления на социальные нужды",
+   "lado": "expense",
+   "page": 14,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    0.11634
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Амортизация",
+   "lado": "expense",
+   "page": 14,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    0.139397
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Прочие затраты",
+   "lado": "expense",
+   "page": 14,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    0.724257
+   ],
+   "origen": "estado 17"
+  }
+ ]
+}

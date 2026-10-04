@@ -1,0 +1,773 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.pdf",
+ "generado": "2026-10-03T00:18:21.684Z",
+ "frena": [],
+ "avisos": [],
+ "ejercicio": {
+  "clubId": "goias-br",
+  "year": 2010,
+  "cierre": "2010-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Arrecadação de jogos",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 5.236275,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Direitos de transmissão de TV",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 13.044375,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "(-) Dedução da receita",
+    "normalizedCategory": "other_income",
+    "amountNative": -2.348606,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.92
+   },
+   {
+    "rawLabel": "Negociação de atestado liberatório de atletas",
+    "normalizedCategory": "player_sales",
+    "amountNative": 2.810396,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Mensalidade e matrículas de iniciação esportiva",
+    "normalizedCategory": "youth_football",
+    "amountNative": 2.350298,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.99
+   },
+   {
+    "rawLabel": "Mensalidade de sócio titular",
+    "normalizedCategory": "member_dues",
+    "amountNative": 0.555774,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Publicidade e patrocínio",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 3.367874,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Parceria com patrocinadores e parceiros",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.96,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Premiação",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 2.913373,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Participação em loteria esportiva",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.016236,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.99
+   },
+   {
+    "rawLabel": "Patrocínio e parceria",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.192,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Treinamento de atletas",
+    "normalizedCategory": "other_sports",
+    "amountNative": 0,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Royalties",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.145658,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.97
+   },
+   {
+    "rawLabel": "Outros",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.119332,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Despesas com jogos",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -3.981832,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Pessoal",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -23.218075,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Provisões, acordos e indenizações",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": 3.355708,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Acordos judiciais e extrajudiciais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.452889,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Direito de imagem",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -4.262228,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.99
+   },
+   {
+    "rawLabel": "Serviços profissionais comissão técnica",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -1.239625,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.9
+   },
+   {
+    "rawLabel": "Despesas administrativas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.273126,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Materiais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.243092,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Serviços de terceiros",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -1.659554,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas tributárias",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.240843,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas gerais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.177761,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2010-12-31",
+   "sourceId": "goias-br-demonstracoes-contabeis-2010-2009",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -6.660002,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Receitas financeiras",
+     "value": 0.010513
+    },
+    {
+     "label": "Despesas financeiras",
+     "value": -6.670515
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Serviços de terceiros",
+     "lado": "expense",
+     "importe": 1.659554,
+     "motivo": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 30.362985,
+   "officialTotalExpenses": 34.393317,
+   "officialPAT": -10.690334
+  },
+  "source": {
+   "id": "goias-br-demonstracoes-contabeis-2010-2009",
+   "clubId": "goias-br",
+   "title": "Goiás Esporte Clube — demonstracoes-contabeis-2010-2009 (ejercicio 2010)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2010-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "goias-br",
+ "year": 2010,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.pdf",
+   "campo": "anio",
+   "valor": "2010",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2010-2009' es el ejercicio 2010 con 2009 de comparativo, no 2009.",
+   "evidencia": "fecha de cierre 2010-12-31 leída del contenido (periodo.mjs)",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  }
+ ],
+ "seleccion": {
+  "filas": 27,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Arrecadação de jogos",
+   "page": 1,
+   "native": 5.236275,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 5.236275,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 5.236275
+  },
+  {
+   "label": "Direitos de transmissão de TV",
+   "page": 1,
+   "native": 13.044375,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 13.044375,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 13.044375
+  },
+  {
+   "label": "(-) Dedução da receita",
+   "page": 1,
+   "native": 2.348606,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
+   "signoFijo": -2.348606,
+   "cat": "other_income",
+   "conf": 0.92,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -2.348606
+  },
+  {
+   "label": "Negociação de atestado liberatório de atletas",
+   "page": 1,
+   "native": 2.810396,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.810396,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.810396
+  },
+  {
+   "label": "Mensalidade e matrículas de iniciação esportiva",
+   "page": 1,
+   "native": 2.350298,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.350298,
+   "cat": "youth_football",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.350298
+  },
+  {
+   "label": "Mensalidade de sócio titular",
+   "page": 1,
+   "native": 0.555774,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.555774,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.555774
+  },
+  {
+   "label": "Publicidade e patrocínio",
+   "page": 1,
+   "native": 3.367874,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.367874,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.367874
+  },
+  {
+   "label": "Parceria com patrocinadores e parceiros",
+   "page": 1,
+   "native": 0.96,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.96,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.96
+  },
+  {
+   "label": "Premiação",
+   "page": 1,
+   "native": 2.913373,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.913373,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.913373
+  },
+  {
+   "label": "Participação em loteria esportiva",
+   "page": 1,
+   "native": 1.016236,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.016236,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.016236
+  },
+  {
+   "label": "Patrocínio e parceria",
+   "page": 1,
+   "native": 0.192,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.192,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.192
+  },
+  {
+   "label": "Treinamento de atletas",
+   "page": 1,
+   "native": 0,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0,
+   "cat": "other_sports",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude): 'Treinamento de atletas' está en el bloque 'Sociais e esportes amadores' de ingresos, no en fútbol de base.",
+   "destino": "revenue",
+   "amountNative": 0
+  },
+  {
+   "label": "Royalties",
+   "page": 1,
+   "native": 0.145658,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.145658,
+   "cat": "sponsorship_commercial",
+   "conf": 0.97,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.145658
+  },
+  {
+   "label": "Outros",
+   "page": 1,
+   "native": 0.119332,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.119332,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.119332
+  },
+  {
+   "label": "Despesas com jogos",
+   "page": 1,
+   "native": 3.981832,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.981832,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.981832
+  },
+  {
+   "label": "Pessoal",
+   "page": 1,
+   "native": 23.218075,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 23.218075,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)",
+   "destino": "expense",
+   "amountNative": -23.218075
+  },
+  {
+   "label": "Provisões, acordos e indenizações",
+   "page": 1,
+   "native": 3.355708,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 4: signo impreso, resta en su lado))",
+   "signoFijo": -3.355708,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)",
+   "destino": "expense",
+   "amountNative": 3.355708
+  },
+  {
+   "label": "Acordos judiciais e extrajudiciais",
+   "page": 1,
+   "native": 0.452889,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.452889,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)",
+   "destino": "expense",
+   "amountNative": -0.452889
+  },
+  {
+   "label": "Direito de imagem",
+   "page": 1,
+   "native": 4.262228,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.262228,
+   "cat": "wages_squad",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.262228
+  },
+  {
+   "label": "Serviços profissionais comissão técnica",
+   "page": 1,
+   "native": 1.239625,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.239625,
+   "cat": "wages_squad",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.239625
+  },
+  {
+   "label": "Despesas administrativas",
+   "page": 1,
+   "native": 0.273126,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.273126,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.273126
+  },
+  {
+   "label": "Materiais",
+   "page": 1,
+   "native": 1.243092,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.243092,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)",
+   "destino": "expense",
+   "amountNative": -1.243092
+  },
+  {
+   "label": "Serviços de terceiros",
+   "page": 1,
+   "native": 1.659554,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.659554,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "expense",
+   "amountNative": -1.659554
+  },
+  {
+   "label": "Despesas tributárias",
+   "page": 1,
+   "native": 0.240843,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.240843,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.240843
+  },
+  {
+   "label": "Despesas gerais",
+   "page": 1,
+   "native": 1.177761,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.177761,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.177761
+  },
+  {
+   "label": "Receitas financeiras",
+   "page": null,
+   "native": 0.010513,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Despesas financeiras",
+   "page": null,
+   "native": -6.670515,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (estado (lectura 4: signo impreso, resta en su lado))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 30.362985,
+  "expSum": -34.393317,
+  "officialTotalRevenue": 30.362985,
+  "officialTotalExpenses": 34.393317,
+  "officialPAT": -10.690334,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -10.690334,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 30.362985
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 34.393317
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "BRL@2010-12-31",
+  "fx": 1.6662,
+  "source": "market_close",
+  "label": "PTAX de cierre (venda) del Banco Central do Brasil al 2010-12-31"
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no hay ninguna liga-temporada de br 2010 cacheada",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding §17)"
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 14,
+  "lineasGasto": 11,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

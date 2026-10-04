@@ -1,0 +1,192 @@
+{
+ "md": "Clubes/Grecia/OFI Crete/OFI_notes_2020-06-30.md",
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_notes_2020-06-30.pdf",
+ "club": "ofi-crete",
+ "year": 2020,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:02:58.874Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 22,
+  "notasUsadas": []
+ },
+ "ladoConocido": 17,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ",
+   "values": [
+    1.835448
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 9,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ",
+   "values": [
+    -5.125907
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ",
+   "values": [
+    1.370515
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 9,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ",
+   "values": [
+    -0.371575
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 9,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ",
+   "values": [
+    -0.215003
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 9,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ",
+   "values": [
+    -0.01138
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Υπόλοιπο 1.7.2019",
+   "lado": "expense",
+   "page": 18,
+   "section": "## 6.2. Άυλα πάγια περιουσιακά στοιχεία",
+   "values": [
+    30
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Υπόλοιπο 1.7.2019",
+   "lado": "expense",
+   "page": 18,
+   "section": "## 6.2. Άυλα πάγια περιουσιακά στοιχεία",
+   "values": [
+    0.9
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Αποσβέσεις περιόδου",
+   "lado": "expense",
+   "page": 18,
+   "section": "## 6.2. Άυλα πάγια περιουσιακά στοιχεία",
+   "values": [
+    0.3
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Αμοιβές και έξοδα προσωπικού",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "values": [
+    2.907534
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Αμοιβές και έξοδα τρίτων",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "values": [
+    0.487502
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "values": [
+    0.510174
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Φόροι-τέλη",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "values": [
+    0.045991
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "values": [
+    1.671093
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "values": [
+    0.01138
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Αποσβέσεις",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "values": [
+    0.074778
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Προβλέψεις",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "values": [
+    0.01965
+   ],
+   "origen": "estado 13"
+  }
+ ]
+}

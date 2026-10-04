@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.md",
+ "generado": "2026-10-04T17:59:22.223Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "The tables in the Balance Sheet and Income Statement are expressed to the nearest Euro",
+ "caja": {
+  "lineas": [
+   1775,
+   1776
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no presenta deudas con bancos ni otras deudas financieras; la posición financiera neta es positiva y está compuesta solo por activos líquidos. Para la caja se toman los depósitos bancarios y postales y el efectivo en caja (L1775 y L1776, que suman el total de L1777)."
+}

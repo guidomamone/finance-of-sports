@@ -1,0 +1,59 @@
+{
+  "club": "americadecali-co",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/America de Cali/certificacion-ef-2025.md",
+  "generatedAt": "2026-09-30T22:43:07.233Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "ASAMBLEA ORDINARIA DE ACCIONISTAS 2025-2024 / CERTIFICACIÓN DE LOS ESTADOS FINANCIEROS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Integridad: Todos los hechos económicos realizados han sido reconocidos a 31 de diciembre de 2025 y a 31 de diciembre de",
+          "values": [
+            "2024."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Derechos y obligaciones: Los activos representan probables beneficios económicos futuros y los pasivos representan probables sacrificios económicos futuros, obtenidos o a cargo de América de Cali S.A En Reorganización, al 31 de diciembre de 2025 y a 31 de diciembre de",
+          "values": [
+            "2024."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "co",
+    "query": "América de Cali",
+    "matches": [
+      {
+        "leagueId": "co-primeraA",
+        "year": "2025",
+        "matchedName": "América de Cali",
+        "wikipediaPage": "2025 Liga DIMAYOR"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": []
+}

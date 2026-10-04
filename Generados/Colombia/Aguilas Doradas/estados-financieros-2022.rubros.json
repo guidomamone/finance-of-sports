@@ -1,0 +1,354 @@
+{
+ "md": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2022.md",
+ "pdf": "Clubes/Colombia/Aguilas Doradas/estados-financieros-2022.pdf",
+ "club": "aguilas-doradas",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:57:40.339Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "40 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 34,
+  "notasUsadas": []
+ },
+ "ladoConocido": 33,
+ "rubros": [
+  {
+   "label": "GASTOS DE PERSONAL",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    4958363.184
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "HONORARIOS",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    125050
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "IMPUESTOS",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    275315.648
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "ARRENDAMIENTOS",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    410660.158
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "CONTRIBUCIONES Y AFILIACIONES",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    17526
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "SEGUROS",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    42811.617
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "SERVICIOS",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    843383.641
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "GASTOS LEGALES",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    93977.5
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "MANTENIMIENTO Y REPARACIONES",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    213500.928
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "GASTOS DE VIAJE",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    651731.61
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "DEPRECIACIONES",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    5966.666
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "AMORTIZACIONES",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    57232.654
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "DIVERSOS",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    3389870.09
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "GASTOS DE ADMINISTRACION",
+   "lado": "expense",
+   "page": 15,
+   "section": "### 17. GASTOS DE ADMINISTRACION",
+   "values": [
+    10995389.696
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Por taquilla",
+   "lado": "revenue",
+   "page": 12,
+   "section": "### 15. INGRESOS:",
+   "values": [
+    827326000
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Venta Derechos deportivos",
+   "lado": "revenue",
+   "page": 12,
+   "section": "### 15. INGRESOS:",
+   "values": [
+    4876838591
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "lado": "revenue",
+   "page": 12,
+   "section": "### 15. INGRESOS:",
+   "values": [
+    2260496000
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Dimayor: Derechos de televisión",
+   "lado": "revenue",
+   "page": 12,
+   "section": "### 15. INGRESOS:",
+   "values": [
+    5355140074
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Dimayor: Diferidos",
+   "lado": "revenue",
+   "page": 12,
+   "section": "### 15. INGRESOS:",
+   "values": [
+    159680776
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Dimayor participaciones",
+   "lado": "revenue",
+   "page": 12,
+   "section": "### 15. INGRESOS:",
+   "values": [
+    156178500
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Federación Colombiana de futbol",
+   "lado": "revenue",
+   "page": 12,
+   "section": "### 15. INGRESOS:",
+   "values": [
+    436000000
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Actividades conexas",
+   "lado": "revenue",
+   "page": 12,
+   "section": "### 15. INGRESOS:",
+   "values": [
+    132939949
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Financieros",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Talento DORADO S.A. / 12 / Nit. 900.456.885-3 / 15.2 Los ingresos No operacionales ascienden a $921.888.127 conformados así:",
+   "values": [
+    90782439
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Utilidad en venta de activos fijos",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Talento DORADO S.A. / 12 / Nit. 900.456.885-3 / 15.2 Los ingresos No operacionales ascienden a $921.888.127 conformados así:",
+   "values": [
+    147099982
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Recuperaciones",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Talento DORADO S.A. / 12 / Nit. 900.456.885-3 / 15.2 Los ingresos No operacionales ascienden a $921.888.127 conformados así:",
+   "values": [
+    374696046
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Indemnizaciones",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Talento DORADO S.A. / 12 / Nit. 900.456.885-3 / 15.2 Los ingresos No operacionales ascienden a $921.888.127 conformados así:",
+   "values": [
+    306322948
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Ingresos de años anteriores",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Talento DORADO S.A. / 12 / Nit. 900.456.885-3 / 15.2 Los ingresos No operacionales ascienden a $921.888.127 conformados así:",
+   "values": [
+    2186712
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Ingresos diversos",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Talento DORADO S.A. / 12 / Nit. 900.456.885-3 / 15.2 Los ingresos No operacionales ascienden a $921.888.127 conformados así:",
+   "values": [
+    800000
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "GRAVAMENES FINANCIEROS",
+   "lado": "expense",
+   "page": 15,
+   "section": "16.2 Análisis de los Costos financieros",
+   "values": [
+    62608.199
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "COMISIONES",
+   "lado": "expense",
+   "page": 15,
+   "section": "16.2 Análisis de los Costos financieros",
+   "values": [
+    29654.008
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "GASTOS BANCARIOS",
+   "lado": "expense",
+   "page": 15,
+   "section": "16.2 Análisis de los Costos financieros",
+   "values": [
+    2003.038
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "OTROS",
+   "lado": "expense",
+   "page": 15,
+   "section": "16.2 Análisis de los Costos financieros",
+   "values": [
+    212.443
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "INTERESES",
+   "lado": "expense",
+   "page": 15,
+   "section": "16.2 Análisis de los Costos financieros",
+   "values": [
+    3818.347
+   ],
+   "origen": "estado 17"
+  }
+ ]
+}

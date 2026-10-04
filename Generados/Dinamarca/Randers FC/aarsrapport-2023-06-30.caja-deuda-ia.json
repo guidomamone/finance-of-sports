@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2023-06-30.md",
+ "generado": "2026-10-02T00:19:28.841Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Note Balance DKK 1.000 DKK",
+ "caja": {
+  "lineas": [
+   464
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   483,
+   487
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El encabezado indica que la columna 2022/23 está en DKK (unidades) y la de 2021/22 en 1.000 DKK; las cifras lo confirman (p. ej. 71.981.011 frente a 84.765). La deuda financiera corresponde a Kreditinstitutter, no corriente (L483) y corriente (L487)."
+}

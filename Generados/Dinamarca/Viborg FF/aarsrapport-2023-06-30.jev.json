@@ -1,0 +1,144 @@
+{
+ "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2023-06-30.md",
+ "generatedAt": "2026-09-30T04:28:23.627Z",
+ "rubros": [
+  {
+   "label": "Kostpris pr.",
+   "lado": "revenue",
+   "page": 30,
+   "section": "driftsmateriel se / Grunde og Indretning af og inventar Property, plant / bygninger lejede lokaler Other fixtures and equipment / Beløb i DKK Land and Leasehold and fittings, tools under / Figures in DKK buildings << improvements and equipment construction",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "stadium_other",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 876
+  },
+  {
+   "label": "Balance as at",
+   "lado": "expense",
+   "page": 25,
+   "section": "Salg af egne kapitalandele 0 14.000 / Sale of treasury shares / Forslag til resultatdisponering 0 8.328.915 / Net profit/loss for the year",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "I alt",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Særlige poster: under: 2022/23 2021/22 / Special items: Recognised in the income statement in: DKK DKK / Kompensation fra / arrangørpuljeordningen/ / Compensation from the Andre driftsindtægter/",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "competition_bonus",
+     0.16
+    ]
+   ],
+   "tokens": 882
+  },
+  {
+   "label": "organizer pool scheme Other operating income",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Særlige poster: under: 2022/23 2021/22 / Special items: Recognised in the income statement in: DKK DKK / Kompensation fra / arrangørpuljeordningen/ / Compensation from the Andre driftsindtægter/",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.9400000000000001
+    ],
+    [
+     "competition_bonus",
+     0.06
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1094
+  },
+  {
+   "label": "Cost as at",
+   "lado": "revenue",
+   "page": 30,
+   "section": "driftsmateriel se / Grunde og Indretning af og inventar Property, plant / bygninger lejede lokaler Other fixtures and equipment / Beløb i DKK Land and Leasehold and fittings, tools under / Figures in DKK buildings << improvements and equipment construction",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "stadium_other",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 875
+  },
+  {
+   "label": "Saldo pr.",
+   "lado": "expense",
+   "page": 25,
+   "section": "Salg af egne kapitalandele 0 14.000 / Sale of treasury shares / Forslag til resultatdisponering 0 8.328.915 / Net profit/loss for the year",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "player_amortisation",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 899
+  }
+ ]
+}

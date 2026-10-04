@@ -1,0 +1,34 @@
+{
+  "club": "talleres-ar",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Talleres/asamblea-social-2024.md",
+  "generatedAt": "2026-09-30T14:11:23.414Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 60,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 0,
+  "relevantTableCount": 0,
+  "tables": [],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver sus RELEVANT_KEYWORDS)."
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Talleres",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 2,
+      "line": "del tipo de cambio, el Club ratifica el valor de su Modelo de Gestión basado en los criterios"
+    }
+  ],
+  "warnings": []
+}

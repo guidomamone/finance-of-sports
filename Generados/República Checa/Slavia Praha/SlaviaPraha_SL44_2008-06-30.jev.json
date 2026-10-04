@@ -1,0 +1,1110 @@
+{
+ "md": "Clubes/República Checa/Slavia Praha/SlaviaPraha_SL44_2008-06-30.md",
+ "generatedAt": "2026-09-30T12:59:40.768Z",
+ "rubros": [
+  {
+   "label": "A.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "lump_football_operations",
+     0.29000000000000004
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "B.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_expenses",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "I.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "lump_football_operations",
+     0.23
+    ],
+    [
+     "matchday_competition",
+     0.05
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "+",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "lump_football_operations",
+     0.09999999999999999
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "D.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_expenses",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "depreciation",
+     0.24
+    ],
+    [
+     "other_income",
+     0.17
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "II.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_income",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "E.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_income",
+     0.33999999999999997
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "C.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "III.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "depreciation",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "depreciation",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "other_amortisation",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1325
+  },
+  {
+   "label": "G.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.19,
+   "top3": [
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "F.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_income",
+     0.35
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "*",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "IV.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "H.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "matchday_competition",
+     0.04
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "M.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_income",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "wages_squad",
+     0.06
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "X.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "O.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "N.",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Stav k 30.6.2006",
+   "lado": "revenue",
+   "page": 30,
+   "section": "Příloha k účetní závěrce k 30.6.2008 / Oprávky / (údaje v tis. Kč)",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 865
+  },
+  {
+   "label": "Výsledek hospodaření za běžné období",
+   "lado": null,
+   "page": 17,
+   "section": "PŘEHLED O ZMĚNÁCH VLASTNÍHO KAPITÁLU",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.6900000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Stav k 30.6.2007",
+   "lado": "revenue",
+   "page": 30,
+   "section": "Zůstatková hodnota / (údaje v tis. Kč)",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.9400000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 842
+  },
+  {
+   "label": "Rozdělení výsledku hospodaření",
+   "lado": null,
+   "page": 17,
+   "section": "PŘEHLED O ZMĚNÁCH VLASTNÍHO KAPITÁLU",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Převedení výsledku hospodaření",
+   "lado": null,
+   "page": 17,
+   "section": "PŘEHLED O ZMĚNÁCH VLASTNÍHO KAPITÁLU",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Úbytky",
+   "lado": "revenue",
+   "page": 30,
+   "section": "Příloha k účetní závěrce k 30.6.2008 / Oprávky / (údaje v tis. Kč)",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 855
+  },
+  {
+   "label": "Stav k 30.6.2008",
+   "lado": "revenue",
+   "page": 30,
+   "section": "Zůstatková hodnota / (údaje v tis. Kč)",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.9400000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 842
+  },
+  {
+   "label": "Přírůstky",
+   "lado": "revenue",
+   "page": 30,
+   "section": "Příloha k účetní závěrce k 30.6.2008 / Oprávky / (údaje v tis. Kč)",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "player_sales",
+     0.05
+    ]
+   ],
+   "tokens": 858
+  },
+  {
+   "label": "- odměna při podpisu smlouvy",
+   "lado": "expense",
+   "page": 31,
+   "section": "## 4.5. Náklady příštích období",
+   "choice": "wages_squad",
+   "confidence": 0.24,
+   "top3": [
+    [
+     "wages_squad",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ]
+   ],
+   "tokens": 808
+  },
+  {
+   "label": "- zůstatková cena hráčů",
+   "lado": "expense",
+   "page": 31,
+   "section": "## 4.5. Náklady příštích období",
+   "choice": "player_amortisation",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "player_amortisation",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 808
+  },
+  {
+   "label": "Celkem",
+   "lado": "expense",
+   "page": 39,
+   "section": "1.7.2006 - 30.6.2007 / (údaje v tis. Kč)",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.6900000000000001
+    ],
+    [
+     "lump_football_operations_expense",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 812
+  },
+  {
+   "label": "- ostatní",
+   "lado": "expense",
+   "page": 31,
+   "section": "## 4.5. Náklady příštích období",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "- časově rozlišené pronájmu stadionu na 50 let",
+   "lado": "expense",
+   "page": 31,
+   "section": "## 4.5. Náklady příštích období",
+   "choice": "admin_general_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.51
+    ],
+    [
+     "other_amortisation",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 818
+  },
+  {
+   "label": "Tržby za prodej zboží",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.53
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "player_sales",
+     0.14
+    ]
+   ],
+   "tokens": 853
+  },
+  {
+   "label": "Reklama",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 846
+  },
+  {
+   "label": "Prodej televizních práv",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 851
+  },
+  {
+   "label": "Prodej vstupenek",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 848
+  },
+  {
+   "label": "Tržby za prodej služeb celkem",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "choice": "lump_football_operations",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.72
+    ],
+    [
+     "other_income",
+     0.18
+    ],
+    [
+     "matchday_competition",
+     0.06
+    ]
+   ],
+   "tokens": 854
+  },
+  {
+   "label": "Příspěvky od UEFA",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "choice": "competition_bonus",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "competition_bonus",
+     0.95
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "broadcasting",
+     0.02
+    ]
+   ],
+   "tokens": 1121
+  },
+  {
+   "label": "Prodej a hostování hráčů",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 854
+  },
+  {
+   "label": "Ostatní",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 847
+  },
+  {
+   "label": "Ostatní provozní výnosy celkem",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 856
+  },
+  {
+   "label": "Přestupy a hostování hráčů",
+   "lado": "expense",
+   "page": 38,
+   "section": "## 4.15. Ostatní provozní náklady",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "lump_football_operations_expense",
+     0.26
+    ],
+    [
+     "player_amortisation",
+     0.19
+    ]
+   ],
+   "tokens": 812
+  },
+  {
+   "label": "Smluvní pokuty a úroky z prodlení a ostatní pokuty a penále",
+   "lado": "expense",
+   "page": 38,
+   "section": "## 4.15. Ostatní provozní náklady",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "exceptional_items",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 824
+  },
+  {
+   "label": "Odpisy pohledávek a postoupené pohledávky",
+   "lado": "expense",
+   "page": 38,
+   "section": "## 4.15. Ostatní provozní náklady",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "other_amortisation",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 815
+  },
+  {
+   "label": "Ostatní provozní náklady celkem",
+   "lado": "expense",
+   "page": 38,
+   "section": "## 4.15. Ostatní provozní náklady",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 811
+  },
+  {
+   "label": "Ostatní provozní náklady",
+   "lado": "expense",
+   "page": 38,
+   "section": "## 4.15. Ostatní provozní náklady",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 809
+  },
+  {
+   "label": "Vedení společnosti",
+   "lado": "expense",
+   "page": 39,
+   "section": "1.7.2006 - 30.6.2007 / (údaje v tis. Kč)",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 814
+  },
+  {
+   "label": "Zaměstnanci",
+   "lado": "expense",
+   "page": 39,
+   "section": "1.7.2006 - 30.6.2007 / (údaje v tis. Kč)",
+   "choice": "wages_squad",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "wages_squad",
+     0.61
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 816
+  },
+  {
+   "label": "Dohody",
+   "lado": "expense",
+   "page": 39,
+   "section": "1.7.2006 - 30.6.2007 / (údaje v tis. Kč)",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 813
+  }
+ ]
+}

@@ -1,0 +1,622 @@
+{
+ "md": "Clubes/España/Real Madrid/informe-economico-2012-2013.md",
+ "generatedAt": "2026-09-30T22:49:13.912Z",
+ "rubrosHuella": "1af929213995deef706ab0590fda0c62478e4285",
+ "rubros": [
+  {
+   "label": "Deudores y otras cuentas a cobrar",
+   "lado": null,
+   "page": 12,
+   "section": "Transferencias a la cuenta de pérdidas y ganancias",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros activos corrientes",
+   "lado": null,
+   "page": 12,
+   "section": "Transferencias a la cuenta de pérdidas y ganancias",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Acreedores y otras cuentas a pagar",
+   "lado": null,
+   "page": 12,
+   "section": "Transferencias a la cuenta de pérdidas y ganancias",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros pasivos corrientes",
+   "lado": null,
+   "page": 12,
+   "section": "Transferencias a la cuenta de pérdidas y ganancias",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros activos y pasivos no corrientes",
+   "lado": null,
+   "page": 12,
+   "section": "Transferencias a la cuenta de pérdidas y ganancias",
+   "choice": "other_income",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Pasivos por impuesto diferido",
+   "lado": "expense",
+   "page": 11,
+   "section": "Deterioro, resultado por enajenaciones del inmovilizado y otros excepcionales",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Periodificaciones a",
+   "lado": null,
+   "page": 11,
+   "section": "Deterioro, resultado por enajenaciones del inmovilizado y otros excepcionales",
+   "choice": "exceptional_items",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "largo plazo",
+   "lado": null,
+   "page": 11,
+   "section": "Deterioro, resultado por enajenaciones del inmovilizado y otros excepcionales",
+   "choice": "exceptional_items",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Cobros de intereses",
+   "lado": null,
+   "page": 12,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "FLUJOS DE EFECTIVO DE LAS ACTIVIDADES DE EXPLOTACIÓN",
+   "lado": null,
+   "page": 12,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización del inmovilizado",
+   "lado": null,
+   "page": 12,
+   "section": "NOTAS        EJERCICIO 2012/2013          EJERCICIO 2011/2012",
+   "choice": "depreciation",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "B) Estado total de cambios en el patrimonio neto consolidado Otros flujos de efectivo de las actividades de explotación",
+   "lado": null,
+   "page": 12,
+   "section": "Transferencias a la cuenta de pérdidas y ganancias",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1527
+  },
+  {
+   "label": "Correcciones valorativas por deterioro",
+   "lado": null,
+   "page": 12,
+   "section": "NOTAS        EJERCICIO 2012/2013          EJERCICIO 2011/2012",
+   "choice": "player_impairment",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "player_impairment",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 1489
+  },
+  {
+   "label": "Personal no deportivo Baloncesto 1.513 99 -",
+   "lado": null,
+   "page": 50,
+   "section": "",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.29
+    ],
+    [
+     "other_sports",
+     0.02
+    ]
+   ],
+   "tokens": 1480
+  },
+  {
+   "label": "Existencias",
+   "lado": null,
+   "page": 66,
+   "section": "Provisiones a corto plazo         13.2       1.868        720   Ingresos financieros",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "2013 y al ejercicio anual terminado el 30 de junio de",
+   "lado": null,
+   "page": 12,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "player_amortisation",
+     0.12
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1508
+  },
+  {
+   "label": "Jugadores y técnicos Baloncesto 16.234 331",
+   "lado": null,
+   "page": 50,
+   "section": "",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.66
+    ],
+    [
+     "wages_squad",
+     0.25
+    ],
+    [
+     "other_sports",
+     0.05
+    ]
+   ],
+   "tokens": 1470
+  },
+  {
+   "label": "Cobros por desinversiones",
+   "lado": null,
+   "page": 12,
+   "section": "RESULTADO / SUBVENCIONES, / RECIBIDOS",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Inmovilizado inmaterial deportivo",
+   "lado": null,
+   "page": 12,
+   "section": "RESULTADO / SUBVENCIONES, / RECIBIDOS",
+   "choice": "player_amortisation",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Reparaciones y conservación",
+   "lado": "expense",
+   "page": 50,
+   "section": "EJERCICIO 2011/2012 / OTRAS CARGAS    TOTAL GASTOS DE / SOCIALES           PERSONAL",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadores y técnicos 1º equipo Fútbol 178.574 378 - 178.952 Servicios profesionales",
+   "lado": "expense",
+   "page": 50,
+   "section": "EJERCICIO 2011/2012 / OTRAS CARGAS    TOTAL GASTOS DE / SOCIALES           PERSONAL",
+   "choice": "wages_squad",
+   "confidence": 0.37,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadores y técnicos 2º equipo Fútbol 4.235 310 - 4.545 Primas de seguro",
+   "lado": "expense",
+   "page": 50,
+   "section": "EJERCICIO 2011/2012 / OTRAS CARGAS    TOTAL GASTOS DE / SOCIALES           PERSONAL",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.31,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadores y técnicos categorías inferiores Fútbol 4.081 777 1.010 5.868 Publicidad, propaganda y relaciones públicas",
+   "lado": "expense",
+   "page": 50,
+   "section": "EJERCICIO 2011/2012 / OTRAS CARGAS    TOTAL GASTOS DE / SOCIALES           PERSONAL",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Personal no deportivo fútbol 13.962 1.889 - 15.851 Suministros",
+   "lado": "expense",
+   "page": 50,
+   "section": "EJERCICIO 2011/2012 / OTRAS CARGAS    TOTAL GASTOS DE / SOCIALES           PERSONAL",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadores y técnicos categorías inferiores Fútbol 4.943",
+   "lado": "expense",
+   "page": 50,
+   "section": "OTRAS CARGAS      TOTAL GASTOS / SUELDOS Y SALARIOS   SEGURIDAD SOCIAL / SOCIALES       DE PERSONAL",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Personal no deportivo fútbol 13.101 1.950 - 15.051 Servicios exteriores",
+   "lado": "expense",
+   "page": 50,
+   "section": "OTRAS CARGAS      TOTAL GASTOS / SUELDOS Y SALARIOS   SEGURIDAD SOCIAL / SOCIALES       DE PERSONAL",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Desplazamientos",
+   "lado": "expense",
+   "page": 50,
+   "section": "OTRAS CARGAS      TOTAL GASTOS / SUELDOS Y SALARIOS   SEGURIDAD SOCIAL / SOCIALES       DE PERSONAL",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos de gestión corriente",
+   "lado": "expense",
+   "page": 11,
+   "section": "no deportivo                                                       R.D. 7/96 / Reserva de Socied. Consolidadas               574        462 / a largo plazo                                                  y legados recibidos / Otros gastos de explotación",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "PASIVO NO CORRIENTE",
+   "lado": "expense",
+   "page": 11,
+   "section": "no deportivo                                                       R.D. 7/96 / Reserva de Socied. Consolidadas               574        462 / a largo plazo                                                  y legados recibidos / Otros gastos de explotación",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos anticipados de retransmisión 118 114 devengo corresponde a la temporada",
+   "lado": "revenue",
+   "page": 42,
+   "section": "Miles de euros        la temporada 2013/2014. / 30/06/2013     30/06/2012 / • Ingresos de marketing / Periodificaciones a largo plazo / 36.550          40.917         o facturado por el Grupo relacionados con acuerdos co-",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos anticipados de estadio",
+   "lado": "revenue",
+   "page": 42,
+   "section": "Miles de euros        la temporada 2013/2014. / 30/06/2013     30/06/2012 / • Ingresos de marketing / Periodificaciones a largo plazo / 36.550          40.917         o facturado por el Grupo relacionados con acuerdos co-",
+   "choice": "matchday_competition",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos anticipados de marketing",
+   "lado": "revenue",
+   "page": 42,
+   "section": "Miles de euros        la temporada 2013/2014. / 30/06/2013     30/06/2012 / • Ingresos de marketing / Periodificaciones a largo plazo / 36.550          40.917         o facturado por el Grupo relacionados con acuerdos co-",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Inversiones financieras a 10 -",
+   "lado": null,
+   "page": 11,
+   "section": "cuentas a cobrar                                                  de crédito",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1330
+  },
+  {
+   "label": "A 30 de junio de 2013 el gasto de personal de la plantilla inscri- Catering, azafatas y eventos",
+   "lado": "expense",
+   "page": 50,
+   "section": "anterior es el siguiente: / 227.495              4.973           1.478            233.946 / Miles de euros / 30/06/2013     30/06/2012 / Gastos Real Madrid TV y radio                       3.057             200",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Periodificaciones 3.357 3.290 Acreedores comerciales",
+   "lado": null,
+   "page": 11,
+   "section": "cuentas a cobrar                                                  de crédito",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "sponsorship_commercial",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "Deudas a corto plazo 14.2 102.585 116.333 Gastos financieros",
+   "lado": "expense",
+   "page": 66,
+   "section": "Provisiones a corto plazo         13.2       1.868        720   Ingresos financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "bible en la LNFP asciende a 192.007 miles de euros (183.497 Edición de publicaciones, manipulado y envío",
+   "lado": "expense",
+   "page": 50,
+   "section": "anterior es el siguiente: / 227.495              4.973           1.478            233.946 / Miles de euros / 30/06/2013     30/06/2012 / Gastos Real Madrid TV y radio                       3.057             200",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "miles de euros a 30 de junio de 2012) correspondiente al gasto Otros servicios exteriores",
+   "lado": "expense",
+   "page": 50,
+   "section": "anterior es el siguiente: / 227.495              4.973           1.478            233.946 / Miles de euros / 30/06/2013     30/06/2012 / Gastos Real Madrid TV y radio                       3.057             200",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Variación de provisiones 13,",
+   "lado": null,
+   "page": 12,
+   "section": "NOTAS        EJERCICIO 2012/2013          EJERCICIO 2011/2012",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1530
+  },
+  {
+   "label": "Deudores comerciales y otras 8.2,16 89.247 97.476 Deudas con entidades",
+   "lado": null,
+   "page": 66,
+   "section": "Provisiones a corto plazo         13.2       1.868        720   Ingresos financieros",
+   "choice": "other_income",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_income",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "sponsorship_commercial",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1494
+  },
+  {
+   "label": "De valores negociables y otros instrumentos financieros",
+   "lado": null,
+   "page": 66,
+   "section": "Provisiones a corto plazo         13.2       1.868        720   Ingresos financieros",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1454
+  },
+  {
+   "label": "adquisición/traspaso activos – Tesorería",
+   "lado": "expense",
+   "page": 8,
+   "section": "Deuda Financiera Neta : Deuda Bancaria + Acreedores/Deudores por",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "player_amortisation",
+     0.12
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Signo negativo significa posición de liquidez neta. Se incluye también mía financiera, pues el capital invertido está",
+   "lado": "expense",
+   "page": 8,
+   "section": "Deuda Financiera Neta : Deuda Bancaria + Acreedores/Deudores por",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1153
+  },
+  {
+   "label": "es más solvente y tiene una mayor autono-",
+   "lado": "expense",
+   "page": 8,
+   "section": "Deuda Financiera Neta : Deuda Bancaria + Acreedores/Deudores por",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 980
+  },
+  {
+   "label": "correspondiente al ejercicio anual terminado el 30 de junio de Pagos de intereses",
+   "lado": null,
+   "page": 12,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1461
+  }
+ ]
+}

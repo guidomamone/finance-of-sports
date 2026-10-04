@@ -1,0 +1,875 @@
+{
+ "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+ "generado": "2026-10-04T17:58:45.529Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-03: Guido 2026-10-03: estados separados de Juventus F.C. S.p.A. en todos los años (los consolidados del grupo empiezan en 2020-21); serie 2003-2025 pareja)"
+ ],
+ "ejercicio": {
+  "clubId": "juventus-it",
+  "year": 2022,
+  "cierre": "2022-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Ticket sales",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 32.293161,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Audiovisual rights and media revenues",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 170.517144,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Revenues from sponsorship and advertising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 142.538542,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Revenues from sales of products and licences",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 24.434746,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Revenues from players' registration rights",
+    "normalizedCategory": "player_sales",
+    "amountNative": 40.78279,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Other revenues and income",
+    "normalizedCategory": "other_income",
+    "amountNative": 29.398082,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Share of results of associates and joint ventures",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.087694,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Purchase of materials, supplies and other consumables",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.489368,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Purchases of products for sale",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -8.904961,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "External services",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -74.237041,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Players' wages and technical staff costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -310.82451,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Other personnel",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -24.934326,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Expenses from players' registration rights",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -31.853535,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Other expenses",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -12.086153,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Amortisation and write-downs of players' registration rights",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -173.360643,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Depreciation/amortisation of other tangible and intangible assets",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -14.594215,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Provisions, write-downs and release of funds",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -6.44871,
+    "disclosureLevel": "aggregated",
+    "_pag": 136,
+    "_escalon": 0,
+    "_conf": 1
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2022-06-30",
+   "sourceId": "juventus-it-annual-financial-report-2021-22",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -15.557673,
+   "tax": -1.898119,
+   "extraRows": [
+    {
+     "label": "Financial income",
+     "value": 3.299439
+    },
+    {
+     "label": "Financial expenses",
+     "value": -18.857112
+    },
+    {
+     "label": "Current taxes",
+     "value": -2.564904
+    },
+    {
+     "label": "Deferred and prepaid taxes",
+     "value": 0.666785
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 440.052159,
+   "officialTotalExpenses": 660.733462,
+   "officialPAT": -238.137095
+  },
+  "source": {
+   "id": "juventus-it-annual-financial-report-2021-22",
+   "clubId": "juventus-it",
+   "title": "Juventus Football Club S.p.A. — Juventus-annual-financial-report-2021-22 (ejercicio 2022)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-04) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2022-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "juventus-it",
+ "year": 2022,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "24,541",
+   "linea": 6462,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b133, pág. 172) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "2019",
+   "linea": 6470,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b133, pág. 172) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "28,838",
+   "linea": 6534,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "12,123",
+   "linea": 6536,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "10,495",
+   "linea": 6537,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "1,925",
+   "linea": 6538,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "1,603",
+   "linea": 6539,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "1,129",
+   "linea": 6540,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b136, pág. 174) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "2,560",
+   "linea": 6642,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "1,355",
+   "linea": 6642,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "1,205",
+   "linea": 6642,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "1,897",
+   "linea": 6643,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "1,600",
+   "linea": 6643,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "1,835",
+   "linea": 6644,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "1,588",
+   "linea": 6645,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "2,250",
+   "linea": 6645,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "1,530",
+   "linea": 6646,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "2,980",
+   "linea": 6646,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "1,450",
+   "linea": 6646,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "1,129",
+   "linea": 6647,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "5,123",
+   "linea": 6656,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "4,927",
+   "linea": 6656,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "74,237",
+   "linea": 6657,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "64,011",
+   "linea": 6657,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b140, pág. 176) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "12,086",
+   "linea": 6879,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "9,545",
+   "linea": 6879,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "2,541",
+   "linea": 6879,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "2021",
+   "linea": 6891,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.pdf",
+   "campo": "confirmado",
+   "valor": "2020",
+   "linea": 6891,
+   "motivo": "Guido 2026-10-04: número de una NOTA (b149, pág. 181) que no se usa para cargar (2022 cierra con la lectura 6, solo el estado b100); se confirma para destrabar el registro",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-04"
+  }
+ ],
+ "seleccion": {
+  "filas": 21,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ticket sales",
+   "page": 136,
+   "native": 32.293161,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 32.293161,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 32.293161
+  },
+  {
+   "label": "Audiovisual rights and media revenues",
+   "page": 136,
+   "native": 170.517144,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 170.517144,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 170.517144
+  },
+  {
+   "label": "Revenues from sponsorship and advertising",
+   "page": 136,
+   "native": 142.538542,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 142.538542,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 142.538542
+  },
+  {
+   "label": "Revenues from sales of products and licences",
+   "page": 136,
+   "native": 24.434746,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 24.434746,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 24.434746
+  },
+  {
+   "label": "Revenues from players' registration rights",
+   "page": 136,
+   "native": 40.78279,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 40.78279,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 40.78279
+  },
+  {
+   "label": "Other revenues and income",
+   "page": 136,
+   "native": 29.398082,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 29.398082,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 29.398082
+  },
+  {
+   "label": "Share of results of associates and joint ventures",
+   "page": 136,
+   "native": 0.087694,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))",
+   "signoFijo": 0.087694,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.087694
+  },
+  {
+   "label": "Purchase of materials, supplies and other consumables",
+   "page": 136,
+   "native": 3.489368,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.489368,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-03",
+   "destino": "expense",
+   "amountNative": -3.489368
+  },
+  {
+   "label": "Purchases of products for sale",
+   "page": 136,
+   "native": 8.904961,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 8.904961,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -8.904961
+  },
+  {
+   "label": "External services",
+   "page": 136,
+   "native": 74.237041,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 74.237041,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -74.237041
+  },
+  {
+   "label": "Players' wages and technical staff costs",
+   "page": 136,
+   "native": 310.82451,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 310.82451,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -310.82451
+  },
+  {
+   "label": "Other personnel",
+   "page": 136,
+   "native": 24.934326,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 24.934326,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-03",
+   "destino": "expense",
+   "amountNative": -24.934326
+  },
+  {
+   "label": "Expenses from players' registration rights",
+   "page": 136,
+   "native": 31.853535,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 31.853535,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-03: costos de operaciones con jugadores (préstamos, comisiones), no amortización; la amortización va en su propio renglón (52,3 M)",
+   "destino": "expense",
+   "amountNative": -31.853535
+  },
+  {
+   "label": "Other expenses",
+   "page": 136,
+   "native": 12.086153,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 12.086153,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -12.086153
+  },
+  {
+   "label": "Amortisation and write-downs of players' registration rights",
+   "page": 136,
+   "native": 173.360643,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 173.360643,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -173.360643
+  },
+  {
+   "label": "Depreciation/amortisation of other tangible and intangible assets",
+   "page": 136,
+   "native": 14.594215,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 14.594215,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -14.594215
+  },
+  {
+   "label": "Provisions, write-downs and release of funds",
+   "page": 136,
+   "native": 6.44871,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 6.44871,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.44871
+  },
+  {
+   "label": "Financial income",
+   "page": null,
+   "native": 3.299439,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Financial expenses",
+   "page": null,
+   "native": -18.857112,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Current taxes",
+   "page": null,
+   "native": -2.564904,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "Deferred and prepaid taxes",
+   "page": null,
+   "native": 0.666785,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))": "gastos con signo",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 440.052159,
+  "expSum": -660.733462,
+  "officialTotalRevenue": 440.052159,
+  "officialTotalExpenses": 660.733462,
+  "officialPAT": -238.137095,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -238.137095,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 440.052159
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 660.733462
+  }
+ },
+ "liga": {
+  "valor": "it-seriea",
+  "fuente": "roster cacheado de \"2021–22 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Juventus\"",
+  "estado": "ok"
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 7,
+  "lineasGasto": 10,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
+}

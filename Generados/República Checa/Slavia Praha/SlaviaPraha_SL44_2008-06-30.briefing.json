@@ -1,0 +1,2854 @@
+{
+  "club": "slavia-praha",
+  "year": 2008,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/República Checa/Slavia Praha/SlaviaPraha_SL44_2008-06-30.md",
+  "generatedAt": "2026-09-30T22:07:51.282Z",
+  "numberFormat": "espacio como separador de miles (escandinavo)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 2,
+    "space": 16
+  },
+  "scannedWarning": true,
+  "tableCount": 32,
+  "relevantTableCount": 8,
+  "tables": [
+    {
+      "page": 15,
+      "section": "# Rozvaha (Bilance)",
+      "columns": [
+        "Text",
+        "Ř.",
+        "Brutto",
+        "Korekce",
+        "Netto",
+        "Min. období"
+      ],
+      "rows": [
+        {
+          "rawLabel": "AKTIVA CELKEM",
+          "values": [
+            "1",
+            "915 102",
+            "57 476",
+            "857 626",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Dlouhodobý majetek",
+          "values": [
+            "3",
+            "830 229",
+            "51 806",
+            "778 423",
+            "35 153"
+          ],
+          "bold": false,
+          "codigo": "B."
+        },
+        {
+          "rawLabel": "Dlouhodobý nehmotný majetek",
+          "values": [
+            "4",
+            "[ilegible]",
+            "41 701",
+            "[ilegible]",
+            "0"
+          ],
+          "bold": false,
+          "codigo": "B.I."
+        },
+        {
+          "rawLabel": "Software",
+          "values": [
+            "7",
+            "714",
+            "214",
+            "[ilegible]",
+            "0"
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Oceniteľná práva",
+          "values": [
+            "8",
+            "818 354",
+            "41 547",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "4."
+        },
+        {
+          "rawLabel": "Dlouhodobý hmotný majetek",
+          "values": [
+            "13",
+            "11 661",
+            "10 042",
+            "1 619",
+            "33 153"
+          ],
+          "bold": false,
+          "codigo": "B.II."
+        },
+        {
+          "rawLabel": "Stavby",
+          "values": [
+            "15",
+            "[ilegible]",
+            "[ilegible]",
+            "7",
+            "0"
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Samostatné movité věci a soubory movitých věcí",
+          "values": [
+            "16",
+            "5 489",
+            "4 177",
+            "1 312",
+            "408"
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Nedokončený dlouhodobý hmotný majetek",
+          "values": [
+            "20",
+            "290",
+            "0",
+            "290",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "7."
+        },
+        {
+          "rawLabel": "Poskytnuté zálohy na dlouhodobý hmotný majetek",
+          "values": [
+            "21",
+            "0",
+            "0",
+            "0",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "8."
+        },
+        {
+          "rawLabel": "Oběžná aktiva",
+          "values": [
+            "31",
+            "[ilegible]",
+            "5 972",
+            "80 472",
+            "31 448"
+          ],
+          "bold": false,
+          "codigo": "C."
+        },
+        {
+          "rawLabel": "Zásoby",
+          "values": [
+            "32",
+            "0",
+            "0",
+            "0",
+            "55"
+          ],
+          "bold": false,
+          "codigo": "C.I."
+        },
+        {
+          "rawLabel": "Zboží",
+          "values": [
+            "37",
+            "0",
+            "0",
+            "0",
+            "35"
+          ],
+          "bold": false,
+          "codigo": "5."
+        },
+        {
+          "rawLabel": "Krátkodobé pohledávky",
+          "values": [
+            "47",
+            "77 608",
+            "5 972",
+            "72 236",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "C.III."
+        },
+        {
+          "rawLabel": "Pohledávky z obchodních vztahů",
+          "values": [
+            "48",
+            "75 054",
+            "5 972",
+            "69 382",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "1."
+        },
+        {
+          "rawLabel": "Ostatní poskytnuté zálohy",
+          "values": [
+            "54",
+            "[ilegible]",
+            "0",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "7."
+        },
+        {
+          "rawLabel": "Dohadné účty aktivní",
+          "values": [
+            "55",
+            "[ilegible]",
+            "0",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "8."
+        },
+        {
+          "rawLabel": "Jiné pohledávky",
+          "values": [
+            "56",
+            "27",
+            "0",
+            "27",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "9."
+        },
+        {
+          "rawLabel": "Krátkodobý finanční majetek",
+          "values": [
+            "57",
+            "[ilegible]",
+            "0",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "C.IV."
+        },
+        {
+          "rawLabel": "Peníze",
+          "values": [
+            "58",
+            "[ilegible]",
+            "0",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "1."
+        },
+        {
+          "rawLabel": "Účty v bankách",
+          "values": [
+            "59",
+            "7 205",
+            "0",
+            "7 205",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Časové rozlišení",
+          "values": [
+            "62",
+            "198 729",
+            "0",
+            "198 729",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "D.I."
+        },
+        {
+          "rawLabel": "Náklady příštích období",
+          "values": [
+            "63",
+            "198 057",
+            "0",
+            "198 057",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "1."
+        },
+        {
+          "rawLabel": "Příjmy příštích období",
+          "values": [
+            "65",
+            "[ilegible]",
+            "0",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "PASIVA CELKEM",
+          "values": [
+            "66",
+            "857 626",
+            "",
+            "857 626",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Vlastní kapitál",
+          "values": [
+            "67",
+            "640 [ilegible]",
+            "",
+            "640 [ilegible]",
+            "-215 373"
+          ],
+          "bold": false,
+          "codigo": "A."
+        },
+        {
+          "rawLabel": "Základní kapitál",
+          "values": [
+            "68",
+            "1 040 476",
+            "",
+            "1 040 476",
+            "422 476"
+          ],
+          "bold": false,
+          "codigo": "A.I."
+        },
+        {
+          "rawLabel": "Základní kapitál",
+          "values": [
+            "69",
+            "1 040 476",
+            "",
+            "1 040 476",
+            "422 476"
+          ],
+          "bold": false,
+          "codigo": "1."
+        },
+        {
+          "rawLabel": "Kapitálové fondy",
+          "values": [
+            "72",
+            "2 725",
+            "",
+            "2 725",
+            "2 725"
+          ],
+          "bold": false,
+          "codigo": "A.II."
+        },
+        {
+          "rawLabel": "Ostatní kapitálové fondy",
+          "values": [
+            "74",
+            "2 725",
+            "",
+            "2 725",
+            "2 725"
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Rezervní fondy, nedělitelný fond a ostatní fondy ze zisku",
+          "values": [
+            "77",
+            "[ilegible]",
+            "",
+            "[ilegible]",
+            "0"
+          ],
+          "bold": false,
+          "codigo": "A.III."
+        },
+        {
+          "rawLabel": "Statutární a ostatní fondy",
+          "values": [
+            "79",
+            "[ilegible]",
+            "",
+            "[ilegible]",
+            "0"
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Výsledek hospodaření minulých let",
+          "values": [
+            "80",
+            "-640 [ilegible]",
+            "",
+            "-640 [ilegible]",
+            "-580 062"
+          ],
+          "bold": false,
+          "codigo": "A.IV."
+        },
+        {
+          "rawLabel": "Nerozdělený zisk/Neuhrazená ztráta minulých let",
+          "values": [
+            "82",
+            "-640 [ilegible]",
+            "",
+            "-640 [ilegible]",
+            "-580 062"
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Výsledek hospodaření běžného účetního období",
+          "values": [
+            "83",
+            "237 719",
+            "",
+            "237 719",
+            "-60 512"
+          ],
+          "bold": false,
+          "codigo": "A.V."
+        },
+        {
+          "rawLabel": "Cizí zdroje",
+          "values": [
+            "84",
+            "202 594",
+            "",
+            "202 594",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "B."
+        },
+        {
+          "rawLabel": "Rezervy",
+          "values": [
+            "85",
+            "0",
+            "",
+            "0",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "B.I."
+        },
+        {
+          "rawLabel": "Ostatní rezervy",
+          "values": [
+            "88",
+            "0",
+            "",
+            "0",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "4."
+        },
+        {
+          "rawLabel": "Dlouhodobé závazky",
+          "values": [
+            "90",
+            "120 815",
+            "",
+            "120 815",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "B.II."
+        },
+        {
+          "rawLabel": "Závazky k účetním jednotkám pod podstatným vlivem",
+          "values": [
+            "92",
+            "120 815",
+            "",
+            "120 815",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Dlouhodobé přijaté zálohy",
+          "values": [
+            "95",
+            "0",
+            "",
+            "0",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "5."
+        },
+        {
+          "rawLabel": "Krátkodobé závazky",
+          "values": [
+            "101",
+            "61 278",
+            "",
+            "61 278",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "B.III."
+        },
+        {
+          "rawLabel": "Závazky z obchodních vztahů",
+          "values": [
+            "102",
+            "51 923",
+            "",
+            "51 923",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "1."
+        },
+        {
+          "rawLabel": "Závazky k účetním jednotkám pod podstatným vlivem",
+          "values": [
+            "104",
+            "0",
+            "",
+            "0",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Závazky k zaměstnancům",
+          "values": [
+            "106",
+            "661",
+            "",
+            "661",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "5."
+        },
+        {
+          "rawLabel": "Závazky ze sociálního zabezpečení a zdravotního pojištění",
+          "values": [
+            "107",
+            "866",
+            "",
+            "866",
+            "2 925"
+          ],
+          "bold": false,
+          "codigo": "6."
+        },
+        {
+          "rawLabel": "Stát - daňové závazky & dotace",
+          "values": [
+            "108",
+            "7 873",
+            "",
+            "7 873",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "7."
+        },
+        {
+          "rawLabel": "Krátkodobé přijaté zálohy",
+          "values": [
+            "109",
+            "5 720",
+            "",
+            "5 720",
+            "0"
+          ],
+          "bold": false,
+          "codigo": "8."
+        },
+        {
+          "rawLabel": "Dohadné účty pasivní",
+          "values": [
+            "111",
+            "15 125",
+            "",
+            "15 125",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "10."
+        },
+        {
+          "rawLabel": "Bankovní úvěry a výpomoci",
+          "values": [
+            "113",
+            "0",
+            "",
+            "0",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "B.IV."
+        },
+        {
+          "rawLabel": "Krátkodobé finanční výpomoci",
+          "values": [
+            "116",
+            "0",
+            "",
+            "0",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Časové rozlišení",
+          "values": [
+            "117",
+            "14 673",
+            "",
+            "14 673",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "C.I."
+        },
+        {
+          "rawLabel": "Výdaje příštích období",
+          "values": [
+            "118",
+            "4 246",
+            "",
+            "4 246",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "1."
+        },
+        {
+          "rawLabel": "Výnosy příštích období",
+          "values": [
+            "119",
+            "10 427",
+            "",
+            "10 427",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "2."
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 16,
+      "section": "# Výkaz zisků a ztrát - druhové členění",
+      "columns": [
+        "Text",
+        "Ř.",
+        "Skutečnost běžné období",
+        "Skutečnost minulé období"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Tržby za prodej zboží",
+          "values": [
+            "1",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "I."
+        },
+        {
+          "rawLabel": "Náklady vynaložené na prodané zboží",
+          "values": [
+            "2",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "A."
+        },
+        {
+          "rawLabel": "Obchodní marže",
+          "values": [
+            "3",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "+"
+        },
+        {
+          "rawLabel": "Výkony",
+          "values": [
+            "4",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "II."
+        },
+        {
+          "rawLabel": "1. Tržby za prodej vlastních výrobků a služeb",
+          "values": [
+            "5",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Výkonová spotřeba",
+          "values": [
+            "8",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "B."
+        },
+        {
+          "rawLabel": "1. Spotřeba materiálu a energie",
+          "values": [
+            "9",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "2. Služby",
+          "values": [
+            "10",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Přidaná hodnota",
+          "values": [
+            "11",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "+"
+        },
+        {
+          "rawLabel": "Osobní náklady",
+          "values": [
+            "12",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "C."
+        },
+        {
+          "rawLabel": "1. Mzdové náklady",
+          "values": [
+            "13",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "3. Náklady na sociální zabezpečení a zdravotní pojištění",
+          "values": [
+            "15",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "4. Sociální náklady",
+          "values": [
+            "16",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Daně a poplatky",
+          "values": [
+            "17",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "D."
+        },
+        {
+          "rawLabel": "Odpisy dlouhodobého nehmotného a hmotného majetku",
+          "values": [
+            "18",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "E."
+        },
+        {
+          "rawLabel": "Tržby z prodeje dlouhodobého majetku a materiálu",
+          "values": [
+            "19",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "III."
+        },
+        {
+          "rawLabel": "1. Tržby z prodeje dlouhodobého majetku",
+          "values": [
+            "20",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Zůstatková cena prodaného dlouhodobého majetku a materiálu",
+          "values": [
+            "22",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "F."
+        },
+        {
+          "rawLabel": "1. Zůstatková cena prodaného dlouhodobého majetku",
+          "values": [
+            "23",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Změna stavu rezerv a opravných položek v provozní oblasti a komplexních nákladů příštích období",
+          "values": [
+            "25",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "G."
+        },
+        {
+          "rawLabel": "Ostatní provozní výnosy",
+          "values": [
+            "26",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "IV."
+        },
+        {
+          "rawLabel": "Ostatní provozní náklady",
+          "values": [
+            "27",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "H."
+        },
+        {
+          "rawLabel": "Provozní výsledek hospodaření",
+          "values": [
+            "30",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "*"
+        },
+        {
+          "rawLabel": "Změna stavu rezerv a opravných položek ve finanční oblasti",
+          "values": [
+            "41",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "M."
+        },
+        {
+          "rawLabel": "Výnosové úroky",
+          "values": [
+            "42",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "X."
+        },
+        {
+          "rawLabel": "Nákladové úroky",
+          "values": [
+            "43",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "N."
+        },
+        {
+          "rawLabel": "Ostatní finanční výnosy",
+          "values": [
+            "44",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "X."
+        },
+        {
+          "rawLabel": "Ostatní finanční náklady",
+          "values": [
+            "45",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "O."
+        },
+        {
+          "rawLabel": "Finanční výsledek hospodaření",
+          "values": [
+            "46",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false,
+          "codigo": "*"
+        },
+        {
+          "rawLabel": "Výsledek hospodaření za běžnou činnost",
+          "values": [
+            "[ilegible]",
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": true,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Výsledek hospodaření za účetní období (+/-)",
+          "values": [
+            "59",
+            "237 719",
+            "-60 512"
+          ],
+          "bold": true,
+          "codigo": "*"
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 17,
+      "section": "PŘEHLED O ZMĚNÁCH VLASTNÍHO KAPITÁLU",
+      "columns": [
+        "",
+        "Základní kapitál",
+        "Kapitálové fondy",
+        "Nerozdělená ztráta minulých let",
+        "Výsledek hospodaření běžného účetního období",
+        "VLASTNÍ KAPITÁL CELKEM"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Stav k 30.6.2006",
+          "values": [
+            "422 476",
+            "2 725",
+            "-520 635",
+            "-59 427",
+            "-154 861"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Rozdělení výsledku hospodaření",
+          "values": [
+            "",
+            "",
+            "-59 427",
+            "59 427",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostatní",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Výsledek hospodaření za běžné období",
+          "values": [
+            "",
+            "",
+            "",
+            "-60 512",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stav k 30.6.2007",
+          "values": [
+            "422 476",
+            "2 725",
+            "-580 062",
+            "-60 512",
+            "-215 373"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Převedení výsledku hospodaření",
+          "values": [
+            "",
+            "",
+            "-60 512",
+            "60 512",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Výsledek hospodaření za běžné období",
+          "values": [
+            "",
+            "",
+            "",
+            "237 719",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stav k 30.6.2008",
+          "values": [
+            "1 040 476",
+            "2 725",
+            "-640 574",
+            "237 719",
+            "640 346"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 21,
+      "section": "# 1. OBECNÉ ÚDAJE / ## 1.1. Založení a charakteristika společnosti",
+      "columns": [
+        "Akcionář",
+        "% podíl na základním kapitálu",
+        "V minulém úč. období"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ENIC Football Management S.à r.l.",
+          "values": [
+            "15,76 %",
+            "38,31 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "KEY INVESTMENT",
+          "values": [
+            "82,98%",
+            "61,00 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostatní",
+          "values": [
+            "1,26%",
+            "0,69 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celkem",
+          "values": [
+            "100 %",
+            "100 %"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "# 1.4.Statutární a dozorčí orgány",
+      "columns": [
+        "Funkce",
+        "Jméno"
+      ],
+      "rows": [
+        {
+          "rawLabel": "člen",
+          "values": [
+            "Mgr. Petr Dolíček"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "člen",
+          "values": [
+            "Ing. Roman Vlk"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Předseda",
+          "values": [
+            "Ing. Tomáš Kozan"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "Dozorčí rada:",
+      "columns": [
+        "Funkce",
+        "Jméno"
+      ],
+      "rows": [
+        {
+          "rawLabel": "člen",
+          "values": [
+            "Miroslav Ondříček"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "člen",
+          "values": [
+            "Doc. Hluboš Václav Šimlák"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "člen",
+          "values": [
+            "Ing. Jiří Hustýen"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "člen",
+          "values": [
+            "Prof. Ing. Jaroslav Dušek"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "člen",
+          "values": [
+            "MSK Michal László"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "# 3. PŘEHLED VYZNAMNÝCH ÚČETNÍCH PRAVIDEL A POSTUPŮ / # 3.1. Způsoby ocenění a odepisování / # 3.1.1. Dlouhodobý hmotný a nehmotný majetek / # 3.1.2. Odpisy dlouhodobého majetku",
+      "columns": [
+        "Kategorie majetku",
+        "Účetní odpisy v letech"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Slavby",
+          "values": [
+            "8 - 15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dopravní prostředky",
+          "values": [
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investiční",
+          "values": [
+            "4 - 9"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Software",
+          "values": [
+            "3 - 5"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": "## 3.8. Přehled o peněžních tocích",
+      "columns": [
+        "",
+        "30.6.2008",
+        "30.6.2007"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Pokladní hotovost a peníze na cestě",
+          "values": [
+            "1 039",
+            "657"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Účty v bankách",
+          "values": [
+            "7 199",
+            "898"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Peněžní prostředky a peněžní ekvivalenty celkem",
+          "values": [
+            "8 238",
+            "1 555"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "# 4. DOPLŇUJÍCÍ ÚDAJE K ROZVAZE A VÝKAZU ZISKU A ZTRÁTY / ## 4.1. Dlouhodobý nehmotný majetek",
+      "columns": [
+        "",
+        "Ocenitelná práva",
+        "Software",
+        "Celkem"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Stav k 30.6.2006",
+          "values": [
+            "347",
+            "214",
+            "561"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Přírůstky",
+          "values": [
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Úbytky",
+          "values": [
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stav k 30.6.2007",
+          "values": [
+            "347",
+            "214",
+            "561"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Přírůstky",
+          "values": [
+            "618 007",
+            "0",
+            "618 007"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Úbytky",
+          "values": [
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stav k 30.6.2008",
+          "values": [
+            "618 354",
+            "214",
+            "618 568"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "Oprávky / (údaje v tis. Kč)",
+      "columns": [
+        "",
+        "Ocenitelná práva",
+        "Software",
+        "Celkem"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Stav k 30.6.2006",
+          "values": [
+            "347",
+            "214",
+            "561"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Přírůstky",
+          "values": [
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Úbytky",
+          "values": [
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stav k 30.6.2007",
+          "values": [
+            "347",
+            "214",
+            "561"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Přírůstky",
+          "values": [
+            "41 200",
+            "0",
+            "41 200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Úbytky",
+          "values": [
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stav k 30.6.2008",
+          "values": [
+            "41 547",
+            "214",
+            "41 761"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "Zůstatková hodnota / (údaje v tis. Kč)",
+      "columns": [
+        "",
+        "Ocenitelná práva",
+        "Software",
+        "Celkem"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Stav k 30.6.2007",
+          "values": [
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stav k 30.6.2008",
+          "values": [
+            "576 807",
+            "0",
+            "576 807"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "## 4.2. Dlouhodobý hmotný majetek",
+      "columns": [
+        "",
+        "Stavby",
+        "Dopravní prostředky",
+        "Stroje a zařízení a inventář",
+        "Ostatní DHM",
+        "Pořízení DHM",
+        "Zálohy na DHM",
+        "Celkem"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Stav k 30.6.2006",
+          "values": [
+            "5 872",
+            "950",
+            "2 530",
+            "3 316",
+            "20 254",
+            "12 500",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Přírůstky",
+          "values": [
+            "0",
+            "0",
+            "[ilegible]",
+            "347",
+            "0",
+            "0",
+            "437"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Úbytky",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "10",
+            "0",
+            "10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stav k 30.6.2007",
+          "values": [
+            "5 872",
+            "950",
+            "[ilegible]",
+            "[ilegible]",
+            "20 254",
+            "12 500",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Přírůstky",
+          "values": [
+            "0",
+            "0",
+            "977",
+            "637",
+            "14 084",
+            "[ilegible]",
+            "15 498"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Úbytky",
+          "values": [
+            "0",
+            "0",
+            "2 091",
+            "2 341",
+            "[ilegible]",
+            "[ilegible]",
+            "51 766"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stav k 30.6.2008",
+          "values": [
+            "5 872",
+            "950",
+            "2 560",
+            "1 879",
+            "290",
+            "0",
+            "11 081"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": "Příloha k účetní závěrce k 30.6.2008 / Oprávky / (údaje v tis. Kč)",
+      "columns": [
+        "",
+        "Stavby",
+        "Dopravní prostředky",
+        "Stroje a zařízení a inventář",
+        "Ostatní DHM",
+        "Pořízení DHM",
+        "Zálohy na DHM",
+        "Celkem"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Stav k 30.6.2006",
+          "values": [
+            "5 861",
+            "857",
+            "2 139",
+            "3 216",
+            "0",
+            "0",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Přírůstky",
+          "values": [
+            "2",
+            "29",
+            "261",
+            "295",
+            "0",
+            "0",
+            "587"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Úbytky",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stav k 30.6.2007",
+          "values": [
+            "5 863",
+            "886",
+            "[ilegible]",
+            "[ilegible]",
+            "0",
+            "0",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Přírůstky",
+          "values": [
+            "2",
+            "29",
+            "[ilegible]",
+            "502",
+            "0",
+            "0",
+            "720"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Úbytky",
+          "values": [
+            "0",
+            "0",
+            "[ilegible]",
+            "[ilegible]",
+            "0",
+            "0",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stav k 30.6.2008",
+          "values": [
+            "5 865",
+            "915",
+            "1 904",
+            "1 657",
+            "0",
+            "0",
+            "10 042"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": "Zůstatková hodnota / (údaje v tis. Kč)",
+      "columns": [
+        "",
+        "Stavby",
+        "Dopravní prostředky",
+        "Stroje a zařízení a inventář",
+        "Ostatní DHM",
+        "Pořízení DHM",
+        "Zálohy na DHM",
+        "Celkem"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Stav k 30.6.2007",
+          "values": [
+            "9",
+            "74",
+            "260",
+            "52",
+            "20 254",
+            "12 500",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stav k 30.6.2008",
+          "values": [
+            "7",
+            "46",
+            "[ilegible]",
+            "322",
+            "290",
+            "0",
+            "1 020"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": "## 4.3. Majetek ve finančním pronájmu",
+      "columns": [
+        "",
+        "Celková výše splátek",
+        "Zaplaceno v předchozích účetních obdobích",
+        "Zaplaceno v 2007-2008",
+        "Splatné v 2008-2009",
+        "Splatné v dalších letech"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Reklamní panely",
+          "values": [
+            "4 777",
+            "2 593",
+            "1 108",
+            "[ilegible]",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ford Transit",
+          "values": [
+            "659",
+            "0",
+            "[ilegible]",
+            "91",
+            "557"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Osobní auta",
+          "values": [
+            "520",
+            "328",
+            "137",
+            "55",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celkem",
+          "values": [
+            "5 951",
+            "2 904",
+            "1 454",
+            "1 026",
+            "[ilegible]"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "## 4.4. Pohledávky / ### 4.4.1. Krátkodobé pohledávky z obchodních vztahů",
+      "columns": [
+        "",
+        "Stav k 30.6.2008",
+        "Stav k 30.6.2007"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Krátkodobé",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "- odběratelé",
+          "values": [
+            "72 218",
+            "35 692"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- ostatní pohledávky",
+          "values": [
+            "2 836",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- opravné položky",
+          "values": [
+            "-5 672",
+            "-8 660"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celkem",
+          "values": [
+            "69 382",
+            "27 032"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "### 4.4.2. Věková struktura krátkodobých pohledávek z obchodních vztahů",
+      "columns": [
+        "",
+        "Do lhůty splatnosti",
+        "Do 180 dnů po lhůtě splatnosti",
+        "Více než 180 dnů po lhůtě splatnosti",
+        "Celkem krátkodobé pohledávky brutto",
+        "Opravná položka",
+        "Krátkodobé pohledávky netto"
+      ],
+      "rows": [
+        {
+          "rawLabel": "30.6.2008",
+          "values": [
+            "39 250",
+            "30 132",
+            "5 672",
+            "75 054",
+            "5 672",
+            "69 382"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30.6.2007",
+          "values": [
+            "11 460",
+            "15 718",
+            "8 514",
+            "35 692",
+            "8 660",
+            "27 032"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "## 4.5. Náklady příštích období",
+      "columns": [
+        "",
+        "Stav k 30.6.2008",
+        "Stav k 30.6.2007"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Náklady příštích období",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "- odměna při podpisu smlouvy",
+          "values": [
+            "818",
+            "2 608"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- zůstatková cena hráčů",
+          "values": [
+            "57 851",
+            "30 086"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- časově rozlišené pronájmu stadionu na 50 let",
+          "values": [
+            "138 360",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- ostatní",
+          "values": [
+            "638",
+            "2 958"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celkem",
+          "values": [
+            "[ilegible]",
+            "35 652"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 33,
+      "section": "### 4.7.2. Základní kapitál",
+      "columns": [
+        "",
+        "Akcie na jméno",
+        "Nominální hodnota",
+        "Celkem"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Série 01",
+          "values": [
+            "1 000",
+            "200",
+            "200 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Série 02",
+          "values": [
+            "1 080",
+            "20 000",
+            "21 600 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Série 02",
+          "values": [
+            "3 000",
+            "200",
+            "600 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Série 03",
+          "values": [
+            "100 019",
+            "4 000",
+            "400 076 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Série 04",
+          "values": [
+            "618",
+            "1 000 000",
+            "618 000 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celkem",
+          "values": [
+            "",
+            "",
+            "1 040 476 000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 33,
+      "section": "Základní kapitál k 30.6.2007 byl následující: / (počet akcií v ks, hodnota v Kč)",
+      "columns": [
+        "",
+        "Akcie na jméno",
+        "Nominální hodnota",
+        "Celkem"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Série 01",
+          "values": [
+            "1 000",
+            "200",
+            "200 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Série 02",
+          "values": [
+            "1 080",
+            "20 000",
+            "21 600 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Série 02",
+          "values": [
+            "3 000",
+            "200",
+            "600 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Série 03",
+          "values": [
+            "100 019",
+            "4 000",
+            "400 076 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celkem",
+          "values": [
+            "",
+            "",
+            "422 476 000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 33,
+      "section": "## 4.8. Rezervy / ## 4.9. Závazky / ### 4.9.1. Krátkodobé závazky z obchodních vztahů",
+      "columns": [
+        "",
+        "Stav k 30.6.2008",
+        "Stav k 30.6.2007"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Krátkodobé závazky",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "- dodavatelé",
+          "values": [
+            "27 707",
+            "20 129"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- závazky k hráčům",
+          "values": [
+            "18 990",
+            "22 987"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- ostatní závazky",
+          "values": [
+            "5 226",
+            "18 838"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celkem",
+          "values": [
+            "51 923",
+            "61 954"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 34,
+      "section": "#### 4.9.2. Věková struktura krátkodobých závazků z obchodních vztahů",
+      "columns": [
+        "",
+        "Do lhůty splatnosti",
+        "Do 180 dnů po lhůtě splatnosti",
+        "Více než 180 dnů po lhůtě splatnosti",
+        "Celkem krátkodobé závazky"
+      ],
+      "rows": [
+        {
+          "rawLabel": "30.6.2008",
+          "values": [
+            "44 277",
+            "7 199",
+            "447",
+            "51 923"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "30.6.2007",
+          "values": [
+            "39 136",
+            "15 706",
+            "7 112",
+            "61 954"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 34,
+      "section": "#### 4.9.3. Závazky k podnikům ve skupině",
+      "columns": [
+        "",
+        "Měna",
+        "Stav k 30.6.2007",
+        "Snížení půjčky",
+        "Úrok za období",
+        "Stav k 30.6.2008"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ENIC GROUP LIMITED",
+          "values": [
+            "GBP",
+            "132 301",
+            "27 508",
+            "5 754",
+            "110 547"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ENIC Football Management S.a.r.l",
+          "values": [
+            "Kč",
+            "9 779",
+            "0",
+            "490",
+            "10 269"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CELKEM",
+          "values": [
+            "",
+            "142 090",
+            "27 508",
+            "6 244",
+            "120 816"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 34,
+      "section": "#### 4.9.4. Dlouhodobé přijaté zálohy / #### 4.9.5. Jiné dlouhodobé závazky / Závazky spojené s odměnami hráčů:",
+      "columns": [
+        "Odměna hráčů při podpisu smlouvy",
+        "Stav k 30.6.2008",
+        "Stav k 30.6.2007"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Krátkodobá část (ř. B.III.1. – Závazky z obchodních vztahů)",
+          "values": [
+            "1 050",
+            "2 261"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dlouhodobá část (ř. 99 B. II.9. – Jiné dlouhodobé závazky)",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Odměna hráčů při podpisu smlouvy celkem",
+          "values": [
+            "1 050",
+            "2 261"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 35,
+      "section": "### 4.9.6. Krátkodobé finanční výpomoci / ### 4.9.7. Závazky ze sociálního a zdravotního pojištění a daňové závazky",
+      "columns": [
+        "",
+        "Stav k 30.6.2008",
+        "Stav k 30.6.2007"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Zdravotní pojištění",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "- splatné",
+          "values": [
+            "0",
+            "837"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- nesplatné",
+          "values": [
+            "399",
+            "115"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sociální pojištění",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "- splatné",
+          "values": [
+            "0",
+            "1 686"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- nesplatné",
+          "values": [
+            "467",
+            "287"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celkem",
+          "values": [
+            "866",
+            "2 925"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 35,
+      "section": "Stát – daňové závazky / (údaje v tis. Kč)",
+      "columns": [
+        "",
+        "Stav k 30.6.2008",
+        "Stav k 30.6.2007"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Záloha na daň z př. zaměstnanců",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "- splatné",
+          "values": [
+            "0",
+            "841"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- nesplatné",
+          "values": [
+            "190",
+            "108"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Srážkové daně",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "- splatné",
+          "values": [
+            "0",
+            "724"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- nesplatné",
+          "values": [
+            "143",
+            "89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DPH",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "- splatné",
+          "values": [
+            "0",
+            "2 653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- nesplatné",
+          "values": [
+            "6 939",
+            "662"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostatní",
+          "values": [
+            "1",
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celkem",
+          "values": [
+            "7 273",
+            "5 081"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+      "columns": [
+        "",
+        "Období do 30.6.2008",
+        "Období do 30.6.2007"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Tržby za prodej zboží",
+          "values": [
+            "546",
+            "199"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prodej televizních práv",
+          "values": [
+            "32 460",
+            "15 463"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reklama",
+          "values": [
+            "49 132",
+            "38 515"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prodej vstupenek",
+          "values": [
+            "57 513",
+            "12 678"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostatní služby",
+          "values": [
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tržby za prodej služeb celkem",
+          "values": [
+            "140 171",
+            "71 527"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prodej a hostování hráčů",
+          "values": [
+            "104 264",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Příspěvky od UEFA",
+          "values": [
+            "201 246",
+            "5 206"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostatní",
+          "values": [
+            "16 170",
+            "5 707"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostatní provozní výnosy celkem",
+          "values": [
+            "321 680",
+            "52 782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 37,
+      "section": "## 4.13. Spotřeba materiálu a energie",
+      "columns": [
+        "",
+        "Období do 30.6.2008",
+        "Období do 30.6.2007"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Spotřeba materiálu",
+          "values": [
+            "12 341",
+            "10 024"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spotřeba energie (teplo, elektřina)",
+          "values": [
+            "4 641",
+            "2 600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celkem",
+          "values": [
+            "16 982",
+            "12 624"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": "## 4.14. Služby",
+      "columns": [
+        "",
+        "Období do 30.6.2008",
+        "Období do 30.6.2007"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Opravy a udržování",
+          "values": [
+            "2 171",
+            "1 358"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cestovné",
+          "values": [
+            "9 165",
+            "3 615"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Náklady na reprezentaci",
+          "values": [
+            "12 617",
+            "3 055"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Časové rozlišení hráčských smluv a nákupních cen",
+          "values": [
+            "38 860",
+            "26 725"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Platy a prémie hráčů a realizačních týmů",
+          "values": [
+            "141 099",
+            "58 400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nájemné",
+          "values": [
+            "11 064",
+            "5 096"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostatní náklady na zápasy",
+          "values": [
+            "15 150",
+            "5 020"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Odpisy nehmotného majetku",
+          "values": [
+            "41 213",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostatní služby",
+          "values": [
+            "29 845",
+            "26 035"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celkem",
+          "values": [
+            "301 184",
+            "126 684"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 38,
+      "section": "## 4.15. Ostatní provozní náklady",
+      "columns": [
+        "",
+        "Období do 30.6.2008",
+        "Období do 30.6.2008"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Smluvní pokuty a úroky z prodlení a ostatní pokuty a penále",
+          "values": [
+            "1 821",
+            "1 866"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Přestupy a hostování hráčů",
+          "values": [
+            "3 084",
+            "5 130"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Odpisy pohledávek a postoupené pohledávky",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostatní provozní náklady",
+          "values": [
+            "4 188",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostatní provozní náklady celkem",
+          "values": [
+            "9 093",
+            "8 161"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 39,
+      "section": "# 5. ÚDAJE O ZAMĚSTNANCÍCH",
+      "columns": [
+        "",
+        "Počet",
+        "Mzdové náklady",
+        "Soc. a zdrav. zabezpečení",
+        "Ostatní náklady",
+        "Osobní náklady celkem"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Zaměstnanci",
+          "values": [
+            "23",
+            "10 982",
+            "3 844",
+            "324",
+            "15 150"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vedení společnosti",
+          "values": [
+            "5",
+            "9 854",
+            "3 449",
+            "0",
+            "13 303"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dohody",
+          "values": [
+            "99",
+            "4 996",
+            "167",
+            "0",
+            "5 163"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celkem",
+          "values": [
+            "127",
+            "25 832",
+            "7 460",
+            "324",
+            "33 616"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 39,
+      "section": "1.7.2006 - 30.6.2007 / (údaje v tis. Kč)",
+      "columns": [
+        "",
+        "Počet",
+        "Mzdové náklady",
+        "Soc. a zdrav. zabezpečení",
+        "Ostatní náklady",
+        "Osobní náklady celkem"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Zaměstnanci",
+          "values": [
+            "21",
+            "5 659",
+            "1 730",
+            "295",
+            "7 684"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vedení společnosti",
+          "values": [
+            "3",
+            "3 202",
+            "1 020",
+            "0",
+            "4 222"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dohody",
+          "values": [
+            "96",
+            "3 986",
+            "1 295",
+            "0",
+            "5 281"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celkem",
+          "values": [
+            "120",
+            "12 847",
+            "4 045",
+            "295",
+            "[ilegible]"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/slavia-praha-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"slavia-praha\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+  ]
+}

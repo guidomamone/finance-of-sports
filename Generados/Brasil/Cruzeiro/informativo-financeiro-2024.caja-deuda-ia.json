@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Cruzeiro/informativo-financeiro-2024.md",
+ "generado": "2026-10-02T00:13:52.824Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"luvas e intermediacao de atletas a pagar\" + \"receitas financeiras\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "(em milhares de reais, exceto quando indicado de outra forma)",
+ "caja": {
+  "lineas": [
+   198
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   261,
+   279
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El criterio pide sumar 'receitas financeiras', pero esa partida pertenece al estado de resultados (L340) y no es una línea del balance, por lo que no se incluyó. Solo se tomaron 'Luvas e intermediação de atletas a pagar' corriente (L261) y no corriente (L279). Para 2024 los préstamos (L259) son cero. No se incluyeron los 'Títulos emitidos' (L266, L283), aunque podrían considerarse deuda financiera bajo otro criterio."
+}

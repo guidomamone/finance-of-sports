@@ -1,0 +1,283 @@
+{
+ "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-associacao-2020-2021.md",
+ "generatedAt": "2026-09-30T22:48:22.149Z",
+ "rubrosHuella": "a9f0e57bbba5bb50f45f4438db11187cd539474b",
+ "rubros": [
+  {
+   "label": "Perda na recuperação de créditos de sócios",
+   "lado": null,
+   "page": 8,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita de transmissão de imagem e luvas (a)",
+   "lado": "revenue",
+   "page": 42,
+   "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas de acesso garantido, bilheteria e premiações",
+   "lado": "revenue",
+   "page": 42,
+   "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+   "choice": "matchday_competition",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita de patrocínio, publicidade e marketing",
+   "lado": "revenue",
+   "page": 42,
+   "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sócios patrimonial e contribuinte",
+   "lado": "revenue",
+   "page": 42,
+   "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+   "choice": "member_dues",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Loterias",
+   "lado": "revenue",
+   "page": 42,
+   "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com negociação de direitos contratuais (b)",
+   "lado": "revenue",
+   "page": 42,
+   "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com vendas da filial Loja Esquadrão",
+   "lado": "revenue",
+   "page": 42,
+   "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Luvas - Direito de transmissão TV fechada/PPV",
+   "lado": "revenue",
+   "page": 38,
+   "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 15.     Receitas a apropriar / 2021                  2020 / Receitas a apropriar",
+   "choice": "broadcasting",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Luvas - Direito de transmissão TV aberta",
+   "lado": "revenue",
+   "page": 38,
+   "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 15.     Receitas a apropriar / 2021                  2020 / Receitas a apropriar",
+   "choice": "broadcasting",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Licenciamento / Direitos individuais",
+   "lado": "revenue",
+   "page": 38,
+   "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 15.     Receitas a apropriar / 2021                  2020 / Receitas a apropriar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de transmissão -",
+   "lado": "revenue",
+   "page": 38,
+   "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 15.     Receitas a apropriar / 2021                  2020 / Receitas a apropriar",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínio",
+   "lado": "revenue",
+   "page": 38,
+   "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 15.     Receitas a apropriar / 2021                  2020 / Receitas a apropriar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "CBF - Confederação Brasileira de Futebol",
+   "lado": "revenue",
+   "page": 38,
+   "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 15.     Receitas a apropriar / 2021                  2020 / Receitas a apropriar",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Saldos em 1º/01/2020 35.027 2.455 538 967 8.111 150 -",
+   "lado": "expense",
+   "page": 30,
+   "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 7.     Imobilizado / Máquinas e         Equipamentos      Móveis e / Custo",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Adições - 1.123 87 1.065 2.624 -",
+   "lado": "expense",
+   "page": 30,
+   "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 7.     Imobilizado / Máquinas e         Equipamentos      Móveis e / Custo",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Baixas (b) (23.240) - - - - - -",
+   "lado": "expense",
+   "page": 30,
+   "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 7.     Imobilizado / Máquinas e         Equipamentos      Móveis e / Custo",
+   "choice": "depreciation",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "Custos com negociação e formação de atletas (a)",
+   "lado": "expense",
+   "page": 43,
+   "section": "19.     Custos das atividades / 2021                  2020",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Viagens",
+   "lado": "expense",
+   "page": 43,
+   "section": "19.     Custos das atividades / 2021                  2020",
+   "choice": "match_organisation_expense",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 43,
+   "section": "19.     Custos das atividades / 2021                  2020",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Informática",
+   "lado": "expense",
+   "page": 44,
+   "section": "20.     Despesas gerais e administrativas / 2021                    2020 / (8.248)                (5.909) / 21.     Despesas de serviços / 2021                    2020",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Marketing",
+   "lado": "expense",
+   "page": 44,
+   "section": "20.     Despesas gerais e administrativas / 2021                    2020 / (8.248)                (5.909) / 21.     Despesas de serviços / 2021                    2020",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Jurídico",
+   "lado": "expense",
+   "page": 44,
+   "section": "20.     Despesas gerais e administrativas / 2021                    2020 / (8.248)                (5.909) / 21.     Despesas de serviços / 2021                    2020",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita líquida das atividades",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Esporte Clube Bahia / Demonstração dos resultados / para os exercícios findos em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de Reais) / Nota            2021         2020",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1107
+  },
+  {
+   "label": "Custo das atividades",
+   "lado": "expense",
+   "page": 8,
+   "section": "Esporte Clube Bahia / Demonstração dos resultados / para os exercícios findos em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de Reais) / Nota            2021         2020",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Depreciação e amortização",
+   "lado": null,
+   "page": 8,
+   "section": "",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1513
+  }
+ ]
+}

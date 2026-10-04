@@ -1,0 +1,130 @@
+{
+ "pdf": "Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2023-24.pdf",
+ "md": "Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2023-24.md",
+ "cierre": "2024-06-30",
+ "paginas": [
+  5,
+  8
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:54:54.150Z",
+ "escala": "unidades",
+ "filas": [
+  {
+   "pagina": 5,
+   "etiqueta": "a) Löhne und Gehälter",
+   "importe_impreso": "85.064.540",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "b) soziale abgaben und Aufwendungen für Altersversorgung und Unterstützung",
+   "importe_impreso": "5.931.703",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "a) auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen",
+   "importe_impreso": "30.138.809",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "6. Sonstige betriebliche Aufwendungen",
+   "importe_impreso": "54.148.713",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "7. Sonstige Zinsen und ähnliche Erträge",
+   "importe_impreso": "5.163.357",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "8. Zinsen und ähnliche Aufwendungen",
+   "importe_impreso": "444.625",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "9. Steuern vom Einkommen und Ertrag",
+   "importe_impreso": "- 3.296",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "10. Ergebnis nach Steuern",
+   "importe_impreso": "- 23.159.617",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "11. sonstige Steuern",
+   "importe_impreso": "206.206",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "12. Ergebnis vor Übernahme",
+   "importe_impreso": "- 23.365.823",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "13. Ergebniszuweisung atypisch stille Gesellschafter",
+   "importe_impreso": "24.633.713",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "14. Konzernjahresüberschuss",
+   "importe_impreso": "1.267.891",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "15. auf andere Gesellschafter entfallender Gewinn/Verlust",
+   "importe_impreso": "- 1.636.257",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "16. Konzernverlust",
+   "importe_impreso": "- 368.366",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos_impreso": null,
+ "total_gastos_impreso": null,
+ "resultado_impreso": "- 368.366",
+ "observaciones": "Solo está la parte final de la GuV (pág. 5); faltan los renglones 1-3 (Umsatzerlöse, sonstige betriebliche Erträge, etc.), por lo que no hay total de ingresos ni de gastos. La columna 2024 está en euros (unidades), mientras la del año anterior está en T€; la asignación de importes a renglones se verificó aritméticamente (-23.159.617-206.206=-23.365.823; +24.633.713=1.267.891; -1.636.257=-368.366) y con la nota de impuestos (ingreso fiscal T€3). '4. Personalaufwand' y '5. Abschreibungen' no tienen importe propio impreso. El texto de la pág. 8 menciona sonstige betriebliche Erträge T€ 1.575, periodenfremde Erträge T€ 13 y Aufwendungen T€ 159 solo en prosa y en otra escala; no se incluyeron como filas."
+}

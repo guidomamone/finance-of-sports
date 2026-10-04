@@ -1,0 +1,328 @@
+{
+  "md": "Clubes/Brasil/Ituano/relatorio-de-auditoria-ituano-2019.md",
+  "pdf": "Clubes/Brasil/Ituano/relatorio-de-auditoria-ituano-2019.pdf",
+  "club": "ituano",
+  "year": 2019,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:53:26.557Z",
+  "tieOuts": {
+    "cierran": 22,
+    "noCierran": 7
+  },
+  "warnings": [
+    "7 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 26,
+    "notasUsadas": [
+      "3"
+    ]
+  },
+  "ladoConocido": 17,
+  "rubros": [
+    {
+      "label": "Imobilizado - Móveis e Instalações",
+      "lado": "revenue",
+      "page": 6,
+      "section": "Permanente",
+      "values": [
+        12
+      ],
+      "origen": "nota 3 (ancla 7)",
+      "ancla": "RECEITA - FUTEBOL PROFISSIONAL E DE BASE",
+      "glosa": "Inmovilizado material - Mobiliario e instalaciones"
+    },
+    {
+      "label": "RECEITA - FUTEBOL PROFISSIONAL E DE BASE",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        37.21369
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "INGRESOS - FÚTBOL PROFESIONAL Y FÚTBOL BASE"
+    },
+    {
+      "label": "Imobilizado - Máquinas e Equipamentos",
+      "lado": "revenue",
+      "page": 6,
+      "section": "Permanente",
+      "values": [
+        12
+      ],
+      "origen": "nota 3 (ancla 7)",
+      "ancla": "RECEITA - FUTEBOL PROFISSIONAL E DE BASE",
+      "glosa": "Inmovilizado material - Maquinaria y equipo"
+    },
+    {
+      "label": "(-) Depreciação e Amortização",
+      "lado": "revenue",
+      "page": 6,
+      "section": "Permanente",
+      "values": [
+        12
+      ],
+      "origen": "nota 3 (ancla 7)",
+      "ancla": "RECEITA - FUTEBOL PROFISSIONAL E DE BASE",
+      "glosa": "(-) Depreciación y amortización"
+    },
+    {
+      "label": "Premiações em Campeonatos (CBF)",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        0.46
+      ],
+      "origen": "estado 7",
+      "glosa": "Premios en campeonatos (CBF)"
+    },
+    {
+      "label": "Direito de Transmissão de TV (FPF)",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        5.853
+      ],
+      "origen": "estado 7",
+      "glosa": "Derechos de transmisión de TV (FPF)"
+    },
+    {
+      "label": "Patrocínio e Publicidades",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        1.2
+      ],
+      "origen": "estado 7",
+      "glosa": "Patrocinio y publicidad"
+    },
+    {
+      "label": "Arrecadação de Jogos",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        1.009053
+      ],
+      "origen": "estado 7",
+      "glosa": "Recaudación por partidos"
+    },
+    {
+      "label": "Receita com Repasses de Direitos Federativos",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        28.129843
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos por cesión de derechos federativos"
+    },
+    {
+      "label": "Loterias e Outras Receitas",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        0.845108
+      ],
+      "origen": "estado 7",
+      "glosa": "Loterías y otros ingresos"
+    },
+    {
+      "label": "Receita de Projetos e Incentivos Fiscais",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        0.062071
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos por proyectos e incentivos fiscales"
+    },
+    {
+      "label": "(-) Impostos Incidentes s/ Vendas e Serviços",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -0.345384
+      ],
+      "origen": "estado 7",
+      "glosa": "(-) Impuestos sobre ventas y servicios"
+    },
+    {
+      "label": "DESPESAS - FUTEBOL PROFISSIONAL E DE BASE",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -24.495764
+      ],
+      "origen": "estado 7",
+      "glosa": "GASTOS - FÚTBOL PROFESIONAL Y FÚTBOL BASE"
+    },
+    {
+      "label": "Despesas com Pessoal (Salários e Encargos)",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -3.638297
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos de personal (Sueldos y cargas sociales)"
+    },
+    {
+      "label": "Serviços de Terceiros (Prêmios, Mídia, Serviços de PJ e PF)",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -18.600071
+      ],
+      "origen": "estado 7",
+      "glosa": "Servicios de terceros (Premios, medios, servicios de PJ y PF)"
+    },
+    {
+      "label": "Gastos c/ Atletas (Viagens, Uniformes, Taxas CBF-FPF)",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -0.684258
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos con deportistas (Viajes, indumentaria, tasas CBF-FPF)"
+    },
+    {
+      "label": "Outras Despesas (Eventos e Partidas- Estádio e Alojamento)",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -1.573137
+      ],
+      "origen": "estado 7",
+      "glosa": "Otros gastos (Eventos y partidos - Estadio y alojamiento)"
+    },
+    {
+      "label": "DESPESAS ADMINISTRATIVAS",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -3.899305
+      ],
+      "origen": "estado 7",
+      "glosa": "GASTOS ADMINISTRATIVOS"
+    },
+    {
+      "label": "Despesas com Pessoal (Salários e encargos)",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -1.281247
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos de personal (Sueldos y cargas sociales)"
+    },
+    {
+      "label": "Água, Luz, Telefone, e Internet (sede do Clube)",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -0.09321
+      ],
+      "origen": "estado 7",
+      "glosa": "Agua, luz, teléfono e internet (sede del club)"
+    },
+    {
+      "label": "Serviços de Terceiros - Advogado, Contador, Assessores",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -0.455363
+      ],
+      "origen": "estado 7",
+      "glosa": "Servicios de terceros - Abogado, contador, asesores"
+    },
+    {
+      "label": "Outras Receitas e Despesas Administrativas",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -0.590557
+      ],
+      "origen": "estado 7",
+      "glosa": "Otros ingresos y gastos administrativos"
+    },
+    {
+      "label": "Impostos e Taxas diversas",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -0.168453
+      ],
+      "origen": "estado 7",
+      "glosa": "Impuestos y tasas diversas"
+    },
+    {
+      "label": "Encargos Financeiros",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -1.310475
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "RECEITAS E DESPESAS NÃO OPERACIONAIS",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -1.37721
+      ],
+      "origen": "estado 7",
+      "glosa": "INGRESOS Y GASTOS NO OPERATIVOS"
+    },
+    {
+      "label": "Outras Receitas e Despesas Não Operacionais",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "values": [
+        -1.37721
+      ],
+      "origen": "estado 7",
+      "glosa": "Otros ingresos y gastos no operativos"
+    },
+    {
+      "label": "Dimache Participações",
+      "lado": "revenue",
+      "page": 18,
+      "section": "## 19. ADIANTAMENTO DE RECEITAS EXERCÍCIOS FUTUROS / ## 20. TÍTULOS A PAGAR",
+      "values": [
+        3666.88536
+      ],
+      "origen": "estado 32",
+      "glosa": "Dimache Participaciones"
+    }
+  ]
+}

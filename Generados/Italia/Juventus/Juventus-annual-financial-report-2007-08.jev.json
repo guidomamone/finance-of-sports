@@ -1,0 +1,147 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.md",
+ "generatedAt": "2026-10-03T23:15:28.095Z",
+ "rubrosHuella": "78c07a9912a6151a074aeccd491e821b63d0ef6c",
+ "rubros": [
+  {
+   "label": "Ticket sales",
+   "lado": "revenue",
+   "page": 47,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Television and radio rights and media revenues",
+   "lado": "revenue",
+   "page": 47,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Revenues from sponsorship and advertising",
+   "lado": "revenue",
+   "page": 47,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Revenues from players' registration rights",
+   "lado": "revenue",
+   "page": 47,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other revenues",
+   "lado": "revenue",
+   "page": 47,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Purchase of materials, supplies and other consumables",
+   "lado": "expense",
+   "page": 47,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "External services",
+   "lado": "expense",
+   "page": 47,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Players' wages and technical staff costs",
+   "lado": "expense",
+   "page": 47,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other personnel",
+   "lado": "expense",
+   "page": 47,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Expenses from players' registration rights",
+   "lado": "expense",
+   "page": 47,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Other costs",
+   "lado": "expense",
+   "page": 47,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisation and write-downs of players' registration rights",
+   "lado": "expense",
+   "page": 47,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Other amortisation, write-downs and provisions",
+   "lado": "expense",
+   "page": 47,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other non recurring revenues and costs",
+   "lado": "expense",
+   "page": 47,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)",
+   "choice": "exceptional_items",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "exceptional_items",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1044
+  }
+ ]
+}

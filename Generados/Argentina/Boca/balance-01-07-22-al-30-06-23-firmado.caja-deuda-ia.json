@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Argentina/Boca/balance-01-07-22-al-30-06-23-firmado.md",
+ "generado": "2026-10-02T00:11:49.837Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Expresado en moneda homogénea y en pesos - Nota 2.2.)",
+ "caja": {
+  "lineas": [
+   2081
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "La nota 6.1 de Deudas (corrientes y no corrientes) sólo incluye proveedores, acreedores varios, acreedores fútbol, AFA, remuneraciones y cargas fiscales; no hay préstamos bancarios ni financieros al 30/06/2023 (la memoria indica que se canceló la deuda contraída). Inversiones (L2082) no se incluyó como caja."
+}

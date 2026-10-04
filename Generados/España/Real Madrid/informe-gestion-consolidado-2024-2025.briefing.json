@@ -1,0 +1,155 @@
+{
+  "club": "realmadrid",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/España/Real Madrid/informe-gestion-consolidado-2024-2025.md",
+  "generatedAt": "2026-09-30T22:44:28.825Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 12,
+    "space": 2
+  },
+  "scannedWarning": false,
+  "tableCount": 3,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 4,
+      "section": "INGRESOS / DE EXPLOTACIÓN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "€ (10,4%) respecto al ejercicio 2023/24, en el cicio anterior. Excluyendo estos ingresos por 1.200 9,7% CRECIMIENTO",
+          "values": [
+            "1.185"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "que el Club había superado por primera vez licencias, los ingresos de los negocios recu-",
+          "values": [
+            "1.150"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 8,
+      "section": "BALANCE FISCAL: CONTRIBUCIÓN DEL / REAL MADRID A LOS INGRESOS FISCALES / DE HACIENDA Y SEGURIDAD SOCIAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "INGRESOS DE EXPLOTACIÓN",
+          "values": [
+            "1.073",
+            "1.185"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRPF e IRNR (retenciones trabajo personal e imagen)",
+          "values": [
+            "221.841"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 8,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "IMPUESTO DE SOCIEDADES",
+          "values": [
+            "5.909"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "resultado DE EXPLOTACIÓN antes de amortiz./enaj. Inmovilizado (EBITDA antes enajenación inmov.) 144 208 IBI y otros impuestos locales",
+          "values": [
+            "5.321"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "% s/ingresos 13% 18% CUOTAS SEGURIDAD SOCIAL (cuota empresa)",
+          "values": [
+            "15.534"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CUOTAS SEGURIDAD SOCIAL (cuota trabajador)",
+          "values": [
+            "3.196"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 4,
+    "results": [
+      {
+        "label": "€ (10,4%) respecto al ejercicio 2023/24, en el cicio anterior. Excluyendo estos ingresos por 1.200 9,7% CRECIMIENTO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "€ (10,4%) respecto al ejercicio 2023/24, en el cicio anterior. Excluyendo estos ingresos por 1.200 9,7% CRECIMIENTO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "que el Club había superado por primera vez licencias, los ingresos de los negocios recu-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "que el Club había superado por primera vez licencias, los ingresos de los negocios recu-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESOS DE EXPLOTACIÓN",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Otros ingresos de explotación",
+        "similarity": 67
+      },
+      {
+        "label": "INGRESOS DE EXPLOTACIÓN",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IRPF e IRNR (retenciones trabajo personal e imagen)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IRPF e IRNR (retenciones trabajo personal e imagen)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "es",
+    "query": "Real Madrid",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

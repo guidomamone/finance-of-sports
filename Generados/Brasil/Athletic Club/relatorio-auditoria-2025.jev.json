@@ -1,0 +1,1985 @@
+{
+ "md": "Clubes/Brasil/Athletic Club/relatorio-auditoria-2025.md",
+ "generatedAt": "2026-09-30T19:15:39.441Z",
+ "rubrosHuella": "01ae9f51381a12c4d9505c0e0aa40d32b189108a",
+ "rubros": [
+  {
+   "label": "VENDA DE ATLETAS",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "lump_football_operations",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "CAMPEONATO BRASILEIRO",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.9400000000000001
+    ],
+    [
+     "broadcasting",
+     0.02
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ]
+   ],
+   "tokens": 1437
+  },
+  {
+   "label": "ENTRADAS DE EVENTOS ESPORTIVOS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1513
+  },
+  {
+   "label": "VENDAS LOJA",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "USOM DE IMAGEM",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "wages_squad",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "wages_squad",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "sponsorship_commercial",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1493
+  },
+  {
+   "label": "Bonificações Recebidas",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "competition_bonus",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "competition_bonus",
+     0.87
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "ESCOLINHA",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "youth_football",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "youth_football",
+     0.96
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ],
+    [
+     "education_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "Doações Recebidas",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "PATROCINIOS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1512
+  },
+  {
+   "label": "PUBLICIDADE",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1496
+  },
+  {
+   "label": "AJUDA DE CUSTOS REMUERAÇÃO DE ATLETAS",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "wages_squad",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "wages_squad",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1102
+  },
+  {
+   "label": "DIREITO E TRANSMISSAO DE IMAGEM",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1505
+  },
+  {
+   "label": "LOCAÇÃO DE ESPAÇO",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "stadium_other",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "stadium_other",
+     0.71
+    ],
+    [
+     "other_income",
+     0.29
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "DISTRIBUICAO DE DIREITOS ECONOMICOS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "player_amortisation",
+     0.22
+    ],
+    [
+     "player_sales",
+     0.14
+    ]
+   ],
+   "tokens": 1540
+  },
+  {
+   "label": "PREMIAÇÕES",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "competition_bonus",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "competition_bonus",
+     0.95
+    ],
+    [
+     "wages_squad",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "Venda de mando de campo",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "matchday_competition",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "matchday_competition",
+     0.95
+    ],
+    [
+     "stadium_other",
+     0.04
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Descontos Obtidos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "GANHO DE CAPITAL ( IMOBILIZADO)",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1533
+  },
+  {
+   "label": "COPA DO BRASIL",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "competition_bonus",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "competition_bonus",
+     0.97
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0.01
+    ]
+   ],
+   "tokens": 1521
+  },
+  {
+   "label": "CAMPEONATO MINEIRO",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.95
+    ],
+    [
+     "competition_bonus",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1416
+  },
+  {
+   "label": "DIREITO PARTICIPAÇÕES CAMPEONATOS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "competition_bonus",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "competition_bonus",
+     0.87
+    ],
+    [
+     "match_organisation_expense",
+     0.07
+    ],
+    [
+     "broadcasting",
+     0.02
+    ]
+   ],
+   "tokens": 1499
+  },
+  {
+   "label": "DEDUÇÕES",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "INDENIZAÇÃO RESCISÃO CONTRATUAL",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "player_sales",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "player_sales",
+     0.66
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "player_impairment",
+     0.1
+    ]
+   ],
+   "tokens": 1548
+  },
+  {
+   "label": "(-) IMPOSTO TEF 5%",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 968
+  },
+  {
+   "label": "(-) ICMS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1378
+  },
+  {
+   "label": "RECEITA OPERACIONAL LIQUIDA",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1160
+  },
+  {
+   "label": "(-) VENDAS CANCELADAS E DEVOLUÇÕES",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1107
+  },
+  {
+   "label": "DESPESAS OPERACIONAIS",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.63
+    ],
+    [
+     "lump_football_operations_expense",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "CUSTO DAS MERCADORIAS VENDIDAS",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1075
+  },
+  {
+   "label": "DESPESAS COM PESSOAL",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "wages_squad",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "wages_squad",
+     0.66
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "MANUTENÇAO E CONSERVAÇÃO E CONSUMO",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1527
+  },
+  {
+   "label": "SERVIÇOS DE TERCEIROS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "ALUGUEL",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "OUTRAS DESPESAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "ALIMENTAÇÃO / VIAGENS /COMBUSTIVEL E EVENTOS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1541
+  },
+  {
+   "label": "DESPESAS COM IMPOSTOS E TAXAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "COMIÇÃO DE INTERMEDIAÇÕES",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1540
+  },
+  {
+   "label": "DEPRECIAÇÃO E AMORTIZAÇAO",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1571
+  },
+  {
+   "label": "DIREITO DE IMAGEM",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "RECEITAS FINANCEIRAS",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "MULTAS DE TRANSITO",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "DOAÇÕES EFETUADAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 933
+  },
+  {
+   "label": "INDENIZAÇÕES PROCESSUAIS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "exceptional_items",
+     0.41000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1560
+  },
+  {
+   "label": "RENDIMENTOS S/ APLICAÇÃO FINANCEIRA",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 948
+  },
+  {
+   "label": "DESPESAS FINANCEIRAS",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "OUTRAS RECEITA OPERACIONAIS",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "DESPESAS BANCARIAS",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Encargos e juros de mora",
+   "lado": "expense",
+   "page": 31,
+   "section": "Demonstrações Financeiras 2025 – ATLETIC CLUB / 31",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "JUROS S/ FINANCIMENTOS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "other_income",
+     0.07
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "IOF",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1290
+  },
+  {
+   "label": "IRRF",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1290
+  },
+  {
+   "label": "Valor Lucros/Prejuízos LIQUIDOS",
+   "lado": null,
+   "page": 14,
+   "section": "### Demonstração dos Resultados Abrangentes / #### Em 31 de dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "exceptional_items",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1560
+  },
+  {
+   "label": "REEMBOLSO DE SEGURO DE VIDA ATLETA",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "wages_squad",
+     0.12
+    ]
+   ],
+   "tokens": 1403
+  },
+  {
+   "label": "Outros Resultados Abrangentes",
+   "lado": null,
+   "page": 14,
+   "section": "### Demonstração dos Resultados Abrangentes / #### Em 31 de dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1477
+  },
+  {
+   "label": "Reultado Abrangente do Período",
+   "lado": null,
+   "page": 14,
+   "section": "### Demonstração dos Resultados Abrangentes / #### Em 31 de dezembro de 2025 e 2024 / (Expresso em reais)",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1494
+  },
+  {
+   "label": "Receita c/ Venda Loja Estádio",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.97
+    ],
+    [
+     "stadium_other",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Receita Venda de Jogadores",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Receita Escolinha",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "youth_football",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_football",
+     0.99
+    ],
+    [
+     "education",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Receita de Entradas Eventos Esportivos - Ingressos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "matchday_competition",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "matchday_competition",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Receita com Publicidade",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Receita Premiação Federação Mineira Futebol",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Receita Premiação Confederação Brasileira Futebol",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Receita de Patrocínios",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Receita de Locação Espaço",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "stadium_other",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "stadium_other",
+     0.64
+    ],
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Receita Uso de Imagem",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.75
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "broadcasting",
+     0.04
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Direito de Transmissão de Imagem",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Receita Ajuda Custos remuneração Atletas",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Receita Distribuição Direitos Econômicos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "player_sales",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "player_sales",
+     0.95
+    ],
+    [
+     "broadcasting",
+     0.04
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Direitos Participações em Campeonatos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "competition_bonus",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "competition_bonus",
+     0.97
+    ],
+    [
+     "broadcasting",
+     0.03
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Receita Ganho de Capital ( Imobilizado )",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Receita de Indenizações Rescisão Contratual",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "player_sales",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "player_sales",
+     0.9
+    ],
+    [
+     "other_income",
+     0.1
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Reembolso de Segura de Vida Atleta",
+   "lado": "revenue",
+   "page": 29,
+   "section": "#### 16. Receita Operacional Liquida",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 850
+  },
+  {
+   "label": "CUSTO DE MERCADORIAS VENDIDAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "MANUTENÇAO E CONSERVAÇÃO",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "ALIMENTAÇÃO/VIAGENS/COMBUSTIVEL E EVENTOS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "match_organisation_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "COMISSÃO DE INTERMEDIAÇÕES",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "AMORTIZAÇAO DIREITO ECONOMICO DE ATLETAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "INDENIZAÇÕES PROCESSUAIS/CONTRATUAIS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "exceptional_items",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1093
+  },
+  {
+   "label": "PREMIAÇÕESS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "wages_squad",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "GESTÃO DE FUTEBOL",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 995
+  },
+  {
+   "label": "DISTRIBUIÇÃO DE DIREITOS ECONÔMICOS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "player_amortisation",
+     0.11
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "TRANSPORTE P/ ATLETAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "PERDAS CRÉDITOS RECEBÍVEIS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Rendimento aplicação financeira",
+   "lado": "revenue",
+   "page": 30,
+   "section": "#### 18. Receitas e (Despesas) Financeiras",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 912
+  },
+  {
+   "label": "Despesas bancárias",
+   "lado": "expense",
+   "page": 31,
+   "section": "Demonstrações Financeiras 2025 – ATLETIC CLUB / 31",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.69
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1029
+  }
+ ]
+}

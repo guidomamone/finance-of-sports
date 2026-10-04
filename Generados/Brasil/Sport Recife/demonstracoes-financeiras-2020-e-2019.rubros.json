@@ -1,0 +1,156 @@
+{
+  "md": "Clubes/Brasil/Sport Recife/demonstracoes-financeiras-2020-e-2019.md",
+  "pdf": "Clubes/Brasil/Sport Recife/demonstracoes-financeiras-2020-e-2019.pdf",
+  "club": "sportrecife-br",
+  "year": 2020,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:53:57.383Z",
+  "tieOuts": {
+    "cierran": 6,
+    "noCierran": 2
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 12,
+    "notasUsadas": []
+  },
+  "ladoConocido": 12,
+  "rubros": [
+    {
+      "label": "Juros e comissões bancárias",
+      "lado": "expense",
+      "page": 24,
+      "section": "Despesas financeiras",
+      "values": [
+        -0.765228
+      ],
+      "origen": "estado 33",
+      "glosa": "Intereses y comisiones bancarias"
+    },
+    {
+      "label": "Outras despesas financeiras",
+      "lado": "expense",
+      "page": 24,
+      "section": "Despesas financeiras",
+      "values": [
+        -3.260156
+      ],
+      "origen": "estado 33",
+      "glosa": "Otros gastos financieros"
+    },
+    {
+      "label": "Rendimentos de aplicação financeira",
+      "lado": "revenue",
+      "page": 24,
+      "section": "Patrocínios, Licenciamento de Uso de Marcas e Símbolos, Publicidade, Propaganda, / Transmissão de Espetáculos Desportivos, Loterias e Televisionamentos), à alíquota de 5%. / Resultado financeiro / 2020 2019 / Receitas financeiras",
+      "values": [
+        1.393
+      ],
+      "origen": "estado 32",
+      "glosa": "Rendimientos de inversiones financieras"
+    },
+    {
+      "label": "Outras receitas financeiras",
+      "lado": "revenue",
+      "page": 24,
+      "section": "Patrocínios, Licenciamento de Uso de Marcas e Símbolos, Publicidade, Propaganda, / Transmissão de Espetáculos Desportivos, Loterias e Televisionamentos), à alíquota de 5%. / Resultado financeiro / 2020 2019 / Receitas financeiras",
+      "values": [
+        228.982
+      ],
+      "origen": "estado 32",
+      "glosa": "Otros ingresos financieros"
+    },
+    {
+      "label": "Federação Pernambucana de Futebol",
+      "lado": "revenue",
+      "page": 23,
+      "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+      "values": [
+        1568.554
+      ],
+      "origen": "estado 29",
+      "glosa": "Federación Pernambucana de Fútbol"
+    },
+    {
+      "label": "Aluguéis e Arrendamentos -",
+      "lado": "revenue",
+      "page": 23,
+      "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+      "values": [
+        21.419
+      ],
+      "origen": "estado 29",
+      "glosa": "Alquileres y arrendamientos -"
+    },
+    {
+      "label": "Mensalidades",
+      "lado": "revenue",
+      "page": 23,
+      "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+      "values": [
+        31.464
+      ],
+      "origen": "estado 29",
+      "glosa": "Cuotas sociales"
+    },
+    {
+      "label": "12Vara - TRT",
+      "lado": "revenue",
+      "page": 23,
+      "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+      "values": [
+        42.52
+      ],
+      "origen": "estado 29",
+      "glosa": "12.º Juzgado - TRT"
+    },
+    {
+      "label": "clube Internacional",
+      "lado": "revenue",
+      "page": 23,
+      "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+      "values": [
+        150
+      ],
+      "origen": "estado 29",
+      "glosa": "Club Internacional"
+    },
+    {
+      "label": "Futebolcard",
+      "lado": "revenue",
+      "page": 23,
+      "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+      "values": [
+        291.667
+      ],
+      "origen": "estado 29",
+      "glosa": "Futebolcard"
+    },
+    {
+      "label": "Dass Nordeste",
+      "lado": "revenue",
+      "page": 23,
+      "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+      "values": [
+        13.151
+      ],
+      "origen": "estado 29",
+      "glosa": "Dass Nordeste"
+    },
+    {
+      "label": "Francisco Brennand -",
+      "lado": "revenue",
+      "page": 23,
+      "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+      "values": [
+        35
+      ],
+      "origen": "estado 29",
+      "glosa": "Francisco Brennand -"
+    }
+  ]
+}

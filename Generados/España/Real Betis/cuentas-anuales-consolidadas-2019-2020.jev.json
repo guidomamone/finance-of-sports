@@ -1,0 +1,1508 @@
+{
+ "md": "Clubes/España/Real Betis/cuentas-anuales-consolidadas-2019-2020.md",
+ "generatedAt": "2026-09-30T22:49:10.199Z",
+ "rubrosHuella": "87e65545d52df34ff10b2af46d9640cc6683198a",
+ "rubros": [
+  {
+   "label": "Publicidad, propaganda y relaciones públicas",
+   "lado": null,
+   "page": 56,
+   "section": "16.4 Servicios Exteriores",
+   "choice": "admin_general_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5
+    ],
+    [
+     "sponsorship_commercial",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1463
+  },
+  {
+   "label": "Suministros",
+   "lado": null,
+   "page": 56,
+   "section": "16.4 Servicios Exteriores",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Arrendamientos y canones",
+   "lado": null,
+   "page": 56,
+   "section": "16.4 Servicios Exteriores",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "stadium_other",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1601
+  },
+  {
+   "label": "Otros servicios",
+   "lado": null,
+   "page": 56,
+   "section": "16.4 Servicios Exteriores",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1435
+  },
+  {
+   "label": "Primas de seguro",
+   "lado": null,
+   "page": 56,
+   "section": "16.4 Servicios Exteriores",
+   "choice": "wages_squad",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "wages_squad",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1461
+  },
+  {
+   "label": "Reparaciones y conservación",
+   "lado": null,
+   "page": 56,
+   "section": "16.4 Servicios Exteriores",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1526
+  },
+  {
+   "label": "Servicios de profesionales independientes",
+   "lado": null,
+   "page": 56,
+   "section": "16.4 Servicios Exteriores",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9400000000000001
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1449
+  },
+  {
+   "label": "Servicios bancarios y similares",
+   "lado": null,
+   "page": 56,
+   "section": "16.4 Servicios Exteriores",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.42
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1446
+  },
+  {
+   "label": "Ingresos por competiciones europeas -",
+   "lado": "revenue",
+   "page": 55,
+   "section": "16.       INGRESOS Y GASTOS",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Provisión para responsabilidades 574.494,85 - - (567.217,41) -",
+   "lado": null,
+   "page": 41,
+   "section": "13.          PROVISIONES Y CONTINGENCIAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1509
+  },
+  {
+   "label": "Ingresos por abonados y socios",
+   "lado": "revenue",
+   "page": 55,
+   "section": "16.       INGRESOS Y GASTOS",
+   "choice": "season_tickets",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "season_tickets",
+     0.9
+    ],
+    [
+     "member_dues",
+     0.1
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Provisiones para impuestos 70.547,00 - - - -",
+   "lado": "expense",
+   "page": 41,
+   "section": "13.          PROVISIONES Y CONTINGENCIAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Obligaciones por prestaciones a largo plazo al personal 1.536.788,95 - - (1.036.538,50) -",
+   "lado": null,
+   "page": 41,
+   "section": "13.          PROVISIONES Y CONTINGENCIAS",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "wages_squad",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1495
+  },
+  {
+   "label": "Ingresos por competiciones nacionales",
+   "lado": "revenue",
+   "page": 55,
+   "section": "16.       INGRESOS Y GASTOS",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Provisión por litigios 40.505,03 - - (25.481,40) -",
+   "lado": null,
+   "page": 41,
+   "section": "13.          PROVISIONES Y CONTINGENCIAS",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "exceptional_items",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1477
+  },
+  {
+   "label": "Reserva Legal 2.089.805,78 - -",
+   "lado": null,
+   "page": 40,
+   "section": "junio de 2020 y 2019 a 2.208.408,49 euros. / 12.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución de / Ejercicio 30/06/2020",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Reservas voluntarias 10.996.194,83 -",
+   "lado": null,
+   "page": 40,
+   "section": "junio de 2020 y 2019 a 2.208.408,49 euros. / 12.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución de / Ejercicio 30/06/2020",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Reservas de capitalización - 53.847,99 -",
+   "lado": null,
+   "page": 40,
+   "section": "junio de 2020 y 2019 a 2.208.408,49 euros. / 12.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución de / Ejercicio 30/06/2020",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Reservas consolidadas",
+   "lado": null,
+   "page": 40,
+   "section": "junio de 2020 y 2019 a 2.208.408,49 euros. / 12.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución de / Ejercicio 30/06/2020",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por retransmisión",
+   "lado": "revenue",
+   "page": 55,
+   "section": "16.       INGRESOS Y GASTOS",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Aprovisionamiento entradas autoconsumo",
+   "lado": null,
+   "page": 55,
+   "section": "86.301.398,51         107.269.706,02 / España. / 16.2 Aprovisionamientos / composición:",
+   "choice": "match_organisation_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "matchday_competition",
+     0.13
+    ]
+   ],
+   "tokens": 1542
+  },
+  {
+   "label": "Compra material sanitario",
+   "lado": null,
+   "page": 55,
+   "section": "86.301.398,51         107.269.706,02 / España. / 16.2 Aprovisionamientos / composición:",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "admin_general_expense",
+     0.41
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1497
+  },
+  {
+   "label": "Compra material deportivo",
+   "lado": null,
+   "page": 55,
+   "section": "86.301.398,51         107.269.706,02 / España. / 16.2 Aprovisionamientos / composición:",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "match_organisation_expense",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1513
+  },
+  {
+   "label": "Trabajos realizados por otras empresas",
+   "lado": null,
+   "page": 55,
+   "section": "86.301.398,51         107.269.706,02 / España. / 16.2 Aprovisionamientos / composición:",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1518
+  },
+  {
+   "label": "Otros consumos y gastos externos",
+   "lado": "expense",
+   "page": 55,
+   "section": "86.301.398,51         107.269.706,02 / España. / 16.2 Aprovisionamientos / composición:",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Ingresos de comercialización y publicidad",
+   "lado": "revenue",
+   "page": 55,
+   "section": "16.       INGRESOS Y GASTOS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Reservas voluntarias 10.996.194,83 - -",
+   "lado": null,
+   "page": 40,
+   "section": "10.780.554,17           287.659,64        3.404.976,42     14.473.190,23 / (7.516.666,31)                                               405.516,94 / Ejercicio 30/06/2019",
+   "choice": "other_income",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_income",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1363
+  },
+  {
+   "label": "Reservas consolidadas 941.434,00 -",
+   "lado": null,
+   "page": 40,
+   "section": "10.780.554,17           287.659,64        3.404.976,42     14.473.190,23 / (7.516.666,31)                                               405.516,94 / Ejercicio 30/06/2019",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "exceptional_items",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1360
+  },
+  {
+   "label": "Provisión por litigios 40.505,03 - - - -",
+   "lado": null,
+   "page": 41,
+   "section": "Ejercicio 30/06/2019",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "exceptional_items",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1468
+  },
+  {
+   "label": "Provisiones para impuestos 175.500,00 - - (104.953,00) -",
+   "lado": "expense",
+   "page": 41,
+   "section": "Ejercicio 30/06/2019",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Provisión para responsabilidades",
+   "lado": null,
+   "page": 41,
+   "section": "Ejercicio 30/06/2019",
+   "choice": "admin_general_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1485
+  },
+  {
+   "label": "Sueldos y Salarios",
+   "lado": null,
+   "page": 55,
+   "section": "3.349.338,20          5.125.750,03 / 16.3       Gastos de personal",
+   "choice": "wages_squad",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "wages_squad",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "Indemnizaciones",
+   "lado": null,
+   "page": 55,
+   "section": "3.349.338,20          5.125.750,03 / 16.3       Gastos de personal",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1613
+  },
+  {
+   "label": "Construcciones 27.265.544,86 7.450,25 - -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2020 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "depreciation",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 887
+  },
+  {
+   "label": "Estadios y pabellones deportivos 33.025.625,07 975.441,07 (8.345,35) -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2020 / Coste",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.18
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Obligaciones por prestaciones a largo plazo al personal 575.250,45 1.261.538,50 - (300.000,00) -",
+   "lado": null,
+   "page": 41,
+   "section": "Ejercicio 30/06/2019",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "wages_squad",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1504
+  },
+  {
+   "label": "Otras cargas sociales",
+   "lado": null,
+   "page": 55,
+   "section": "3.349.338,20          5.125.750,03 / 16.3       Gastos de personal",
+   "choice": "wages_squad",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "wages_squad",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "Instalaciones técnicas 6.505.095,47 181.941,40 - -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2020 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "depreciation",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 890
+  },
+  {
+   "label": "Maquinaria 271.234,00 - - -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2020 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "depreciation",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 813
+  },
+  {
+   "label": "Otras instalaciones 1.558.108,53 126.718,94 - -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2020 / Coste",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.42
+    ],
+    [
+     "depreciation",
+     0.08
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Cargas sociales",
+   "lado": null,
+   "page": 55,
+   "section": "3.349.338,20          5.125.750,03 / 16.3       Gastos de personal",
+   "choice": "wages_squad",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "wages_squad",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.15000000000000002
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "Mobiliario 1.323.322,49 69.684,56 - -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2020 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "depreciation",
+     0.52
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 824
+  },
+  {
+   "label": "Construcciones 24.461.678,18 2.805.565,23 (1.698,55) -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "depreciation",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 900
+  },
+  {
+   "label": "Turismos y furgonetas/Elementos de transporte 59.979,49 - - -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2020 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "depreciation",
+     0.86
+    ],
+    [
+     "match_organisation_expense",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Inmovilizado en curso 218.415,90 - (0,46) -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2020 / Coste",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "depreciation",
+     0.08
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Equipos para procesos de información 660.922,22 93.947,73 (1.155,57) -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2020 / Coste",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "depreciation",
+     0.06
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Otro inmovilizado material 245.867,10 122.552,56 - -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2020 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "depreciation",
+     0.75
+    ],
+    [
+     "other_amortisation",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1092
+  },
+  {
+   "label": "Estadios y pabellones deportivos 32.945.065,19 85.869,83 (5.309,95) -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Maquinaria 199.107,16 72.126,84 - -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "depreciation",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 822
+  },
+  {
+   "label": "Instalaciones técnicas 6.489.595,47 15.500,00 - -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "other_expenses",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "lump_football_operations_expense",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Otras instalaciones 1.477.962,87 80.145,66 - -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "admin_general_expense",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "depreciation",
+     0.09
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Mobiliario 1.032.567,14 290.755,35 - -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "depreciation",
+     0.5
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "other_amortisation",
+     0.15
+    ]
+   ],
+   "tokens": 825
+  },
+  {
+   "label": "Otro inmovilizado material 187.219,23 58.647,87 - -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "depreciation",
+     0.81
+    ],
+    [
+     "other_amortisation",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1091
+  },
+  {
+   "label": "Equipos para procesos de información 459.613,98 206.482,30 (5.174,06) -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "depreciation",
+     0.06
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Estadios y Pabellones deportivos",
+   "lado": "expense",
+   "page": 32,
+   "section": "de junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / en uso, con el siguiente detalle:",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Instalaciones técnicas y maquinaria",
+   "lado": "expense",
+   "page": 32,
+   "section": "de junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / en uso, con el siguiente detalle:",
+   "choice": "depreciation",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Mobiliario",
+   "lado": "expense",
+   "page": 32,
+   "section": "de junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / en uso, con el siguiente detalle:",
+   "choice": "depreciation",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipos para procesos de información",
+   "lado": "expense",
+   "page": 32,
+   "section": "de junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / en uso, con el siguiente detalle:",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Otras instalaciones y material deportivo",
+   "lado": "expense",
+   "page": 32,
+   "section": "de junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / en uso, con el siguiente detalle:",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Otro inmovilizado material",
+   "lado": "expense",
+   "page": 32,
+   "section": "de junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / en uso, con el siguiente detalle:",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Material deportivo -",
+   "lado": "expense",
+   "page": 38,
+   "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Prima fichaje jugadores del primer equipo",
+   "lado": "expense",
+   "page": 38,
+   "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+   "choice": "player_amortisation",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos asociados a la TV -",
+   "lado": "expense",
+   "page": 38,
+   "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses préstamo",
+   "lado": "expense",
+   "page": 38,
+   "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos diversos",
+   "lado": "expense",
+   "page": 38,
+   "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 38,
+   "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Inmovilizado en curso 196.250,46 22.164,98 - -",
+   "lado": "expense",
+   "page": 31,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "depreciation",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "Derechos federativos de jugadores",
+   "lado": "expense",
+   "page": 29,
+   "section": "(31.261.627,95) (36.824.267,17)     5.879.269,62             (62.206.625,51) / Ejercicio 30/06/2019 / Coste",
+   "choice": "player_amortisation",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "player_amortisation",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1117
+  },
+  {
+   "label": "Concesiones administrativas 391.562,49 648.977,65 -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Altas y / Ejercicio 30/06/2020 / Coste",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Patentes, licencias y marcas 3.402,00 - -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Altas y / Ejercicio 30/06/2020 / Coste",
+   "choice": "other_amortisation",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_amortisation",
+     0.7
+    ],
+    [
+     "depreciation",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Derecho de participación en competiciones 110.000,00 - -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Altas y / Ejercicio 30/06/2020 / Coste",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1209
+  },
+  {
+   "label": "Aplicaciones informáticas 482.121,50 92.283,75 -",
+   "lado": "expense",
+   "page": 29,
+   "section": "(31.261.627,95) (36.824.267,17)     5.879.269,62             (62.206.625,51) / Ejercicio 30/06/2019 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "depreciation",
+     0.75
+    ],
+    [
+     "other_amortisation",
+     0.25
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 991
+  },
+  {
+   "label": "Aplicaciones informáticas 574.405,25 70.338,40 -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Altas y / Ejercicio 30/06/2020 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "depreciation",
+     0.72
+    ],
+    [
+     "other_amortisation",
+     0.25
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 934
+  },
+  {
+   "label": "Concesiones administrativas - 391.562,49 -",
+   "lado": "expense",
+   "page": 29,
+   "section": "(31.261.627,95) (36.824.267,17)     5.879.269,62             (62.206.625,51) / Ejercicio 30/06/2019 / Coste",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1093
+  },
+  {
+   "label": "Derechos deportivos de jugadores - 90.000,00 -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Altas y / Ejercicio 30/06/2020 / Coste",
+   "choice": "player_amortisation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "player_amortisation",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1087
+  }
+ ]
+}

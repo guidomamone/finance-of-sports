@@ -1,0 +1,27 @@
+{
+  "club": "san-martin-tucuman",
+  "year": 2026,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/San Martín (Tucumán)/informe-gestion-120-dias-2026.md",
+  "generatedAt": "2026-09-30T21:51:08.207Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 7,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 0,
+  "relevantTableCount": 0,
+  "tables": [],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/san-martin-tucuman-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"san-martin-tucuman\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

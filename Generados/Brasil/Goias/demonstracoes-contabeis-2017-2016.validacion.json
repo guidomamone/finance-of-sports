@@ -1,0 +1,25 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2017-2016.pdf",
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2017-2016.md",
+ "modo": "digital",
+ "motivoModo": "1 cifra(s) del .md casi iguales a una del PDF pero con un dígito distinto (lectura mal hecha): 426776888 vs 426778888",
+ "generado": "2026-10-02T22:46:54.861Z",
+ "fuentes": {
+  "7": "pdftotext",
+  "23": "pdftotext",
+  "24": "pdftotext",
+  "25": "pdftotext"
+ },
+ "confirmados": 266,
+ "noConfirmados": [
+  {
+   "bloque": "b27",
+   "pagina": 25,
+   "linea": 1050,
+   "numero": "4.267.768,88",
+   "segundaLeyo": "426778888",
+   "sinSegunda": false,
+   "texto": "|  Patrocínio/ Publicidade/Propaganda | 4.267.768,88 | 2.796.573,06 | - | - | 373.115,48 | 431.586,44 | 4.640.904,36 | 3.228.159,50  |"
+  }
+ ]
+}

@@ -1,0 +1,688 @@
+{
+  "club": "argentinosjuniors",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Argentinos Juniors/presentacion-asamblea-2018-2019.md",
+  "generatedAt": "2026-09-30T22:38:25.837Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 105,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 4,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 1,
+      "section": "ESTADOS DE SITUACIÓN PATRIMONIAL COMPARATIVOS (cifras en pesos ajustadas por inflación) / 30/06/2019       30/06/2018          30/06/2017      30/06/2016        30/06/2015",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Activo Corriente",
+          "values": [
+            "175.248.584",
+            "459.242.916",
+            "129.478.058",
+            "30.853.981",
+            "85.981.481"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Activo No Corriente",
+          "values": [
+            "1.648.723.485",
+            "1.034.245.062",
+            "1.033.696.980",
+            "1.245.300.400",
+            "1.038.593.256"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DEL ACTIVO",
+          "values": [
+            "1.823.972.069",
+            "1.493.487.978",
+            "1.163.175.038",
+            "1.276.154.381",
+            "1.124.574.736"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Pasivo Corriente",
+          "values": [
+            "224.606.086",
+            "366.284.678",
+            "379.376.546",
+            "286.249.155",
+            "629.057.013"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Pasivo No Corriente",
+          "values": [
+            "22.960.322",
+            "21.635.116",
+            "129.094.508",
+            "286.484.719",
+            "49.496.764"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DEL PASIVO",
+          "values": [
+            "247.566.408",
+            "387.919.794",
+            "508.471.054",
+            "572.733.874",
+            "678.553.777"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PATRIMONIO NETO",
+          "values": [
+            "1.576.405.661",
+            "1.105.568.184",
+            "654.703.984",
+            "703.420.508",
+            "446.020.959"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Pasivo y Patrimonio Neto",
+          "values": [
+            "1.823.972.069",
+            "1.493.487.978",
+            "1.163.175.038",
+            "1.276.154.381",
+            "1.124.574.736"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "Indices",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Liquidez (Activo Corriente/Pasivo Corriente)",
+          "values": [
+            "0,78",
+            "1,25",
+            "0,34",
+            "0,11",
+            "0,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Solvencia (Patrimonio Neto/Pasivo)",
+          "values": [
+            "6,37",
+            "2,85",
+            "1,29",
+            "1,23",
+            "0,66"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endeudamiento (Pasivo/Patrimonio Neto)",
+          "values": [
+            "0,16",
+            "0,35",
+            "0,78",
+            "0,81",
+            "1,52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rentabilidad (Resultado/Patrimonio Neto)",
+          "values": [
+            "0,08",
+            "0,81",
+            "0,10",
+            "-0,08",
+            "-0,34"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "RECURSOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fútbol profesional",
+          "values": [
+            "1.033.075.093",
+            "862.299.066",
+            "268.618.332",
+            "185.630.775",
+            "226.666.620"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Actividades deportivas y culturales",
+          "values": [
+            "20.753.946",
+            "27.205.279",
+            "31.744.242",
+            "25.750.933",
+            "27.401.580"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Socios",
+          "values": [
+            "33.954.376",
+            "38.156.243",
+            "36.515.207",
+            "24.888.304",
+            "31.563.592"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "73.173.983",
+            "23.515.468",
+            "55.914.670",
+            "15.123.297",
+            "12.925.278"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DE RECURSOS",
+          "values": [
+            "1.160.957.398",
+            "951.176.055",
+            "392.792.452",
+            "251.393.309",
+            "298.557.070"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 2,
+      "section": "GASTOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fútbol profesional",
+          "values": [
+            "-951.379.297",
+            "-324.316.106",
+            "-188.008.642",
+            "-172.670.435",
+            "-379.151.648"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Actividades deportivas y culturales",
+          "values": [
+            "-49.480.646",
+            "-38.244.420",
+            "-61.261.456",
+            "-58.647.655",
+            "-29.565.846"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administración",
+          "values": [
+            "-59.619.273",
+            "-38.730.913",
+            "-50.840.009",
+            "-43.615.172",
+            "-52.827.626"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estadio y predios",
+          "values": [
+            "-35.314.290",
+            "-23.000.431",
+            "-15.909.715",
+            "-14.083.233",
+            "-29.975.577"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DE GASTOS",
+          "values": [
+            "-1.095.793.506",
+            "-424.291.870",
+            "-316.019.823",
+            "-289.016.495",
+            "-491.520.696"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESULTADOS ANTES DEL EFECTO FINANCIERO",
+          "values": [
+            "65.163.892",
+            "526.884.186",
+            "76.772.629",
+            "-37.623.187",
+            "-192.963.627"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultados financieros y por tenencia, netos",
+          "values": [
+            "54.110.381",
+            "-31.068.292",
+            "-14.639.695",
+            "-21.517.592",
+            "-35.594.159"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUPERÁVIT / (DÉFICIT) DEL EJERCICIO",
+          "values": [
+            "119.274.273",
+            "495.815.894",
+            "62.132.934",
+            "-59.140.779",
+            "-228.557.786"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 1,
+      "section": "ESTADOS DE SITUACIÓN PATRIMONIAL COMPARATIVOS (cifras en pesos ajustadas por inflación) / 30/06/2019       30/06/2018          30/06/2017      30/06/2016        30/06/2015",
+      "likelyRelevant": false,
+      "totalLabel": "Total Activo Corriente",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 1,
+      "section": "ESTADOS DE SITUACIÓN PATRIMONIAL COMPARATIVOS (cifras en pesos ajustadas por inflación) / 30/06/2019       30/06/2018          30/06/2017      30/06/2016        30/06/2015",
+      "likelyRelevant": false,
+      "totalLabel": "Total Activo No Corriente",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 1,
+      "section": "ESTADOS DE SITUACIÓN PATRIMONIAL COMPARATIVOS (cifras en pesos ajustadas por inflación) / 30/06/2019       30/06/2018          30/06/2017      30/06/2016        30/06/2015",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL DEL ACTIVO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 1,
+      "section": "ESTADOS DE SITUACIÓN PATRIMONIAL COMPARATIVOS (cifras en pesos ajustadas por inflación) / 30/06/2019       30/06/2018          30/06/2017      30/06/2016        30/06/2015",
+      "likelyRelevant": false,
+      "totalLabel": "Total Pasivo Corriente",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 1,
+      "section": "ESTADOS DE SITUACIÓN PATRIMONIAL COMPARATIVOS (cifras en pesos ajustadas por inflación) / 30/06/2019       30/06/2018          30/06/2017      30/06/2016        30/06/2015",
+      "likelyRelevant": false,
+      "totalLabel": "Total Pasivo No Corriente",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 1,
+      "section": "ESTADOS DE SITUACIÓN PATRIMONIAL COMPARATIVOS (cifras en pesos ajustadas por inflación) / 30/06/2019       30/06/2018          30/06/2017      30/06/2016        30/06/2015",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL DEL PASIVO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 1,
+      "section": "ESTADOS DE SITUACIÓN PATRIMONIAL COMPARATIVOS (cifras en pesos ajustadas por inflación) / 30/06/2019       30/06/2018          30/06/2017      30/06/2016        30/06/2015",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Pasivo y Patrimonio Neto",
+      "target": "1.823.972.069",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-247566408"
+    },
+    {
+      "page": 1,
+      "section": "ESTADOS DE SITUACIÓN PATRIMONIAL COMPARATIVOS (cifras en pesos ajustadas por inflación) / 30/06/2019       30/06/2018          30/06/2017      30/06/2016        30/06/2015",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Pasivo y Patrimonio Neto",
+      "target": "1.493.487.978",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-387919794"
+    },
+    {
+      "page": 1,
+      "section": "ESTADOS DE SITUACIÓN PATRIMONIAL COMPARATIVOS (cifras en pesos ajustadas por inflación) / 30/06/2019       30/06/2018          30/06/2017      30/06/2016        30/06/2015",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Pasivo y Patrimonio Neto",
+      "target": "1.163.175.038",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-508471054"
+    },
+    {
+      "page": 1,
+      "section": "ESTADOS DE SITUACIÓN PATRIMONIAL COMPARATIVOS (cifras en pesos ajustadas por inflación) / 30/06/2019       30/06/2018          30/06/2017      30/06/2016        30/06/2015",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total Pasivo y Patrimonio Neto",
+      "target": "1.276.154.381",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-572733873"
+    },
+    {
+      "page": 1,
+      "section": "ESTADOS DE SITUACIÓN PATRIMONIAL COMPARATIVOS (cifras en pesos ajustadas por inflación) / 30/06/2019       30/06/2018          30/06/2017      30/06/2016        30/06/2015",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total Pasivo y Patrimonio Neto",
+      "target": "1.124.574.736",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-678553777"
+    },
+    {
+      "page": 2,
+      "section": "RECURSOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL DE RECURSOS",
+      "target": "1.160.957.398",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "RECURSOS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL DE RECURSOS",
+      "target": "951.176.055",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    },
+    {
+      "page": 2,
+      "section": "RECURSOS",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "TOTAL DE RECURSOS",
+      "target": "392.792.452",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 4 rubros enteros)"
+    },
+    {
+      "page": 2,
+      "section": "RECURSOS",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "TOTAL DE RECURSOS",
+      "target": "251.393.309",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "RECURSOS",
+      "likelyRelevant": true,
+      "column": 4,
+      "totalLabel": "TOTAL DE RECURSOS",
+      "target": "298.557.070",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "GASTOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL DE GASTOS",
+      "target": "-1.095.793.506",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "GASTOS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL DE GASTOS",
+      "target": "-424.291.870",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "GASTOS",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "TOTAL DE GASTOS",
+      "target": "-316.019.823",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    },
+    {
+      "page": 2,
+      "section": "GASTOS",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "TOTAL DE GASTOS",
+      "target": "-289.016.495",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "GASTOS",
+      "likelyRelevant": true,
+      "column": 4,
+      "totalLabel": "TOTAL DE GASTOS",
+      "target": "-491.520.696",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 4 rubros enteros)"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 9,
+    "results": [
+      {
+        "label": "Fútbol profesional",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "lump_football_operations",
+        "matchedLabel": "Fútbol profesional",
+        "years": [
+          "2019"
+        ]
+      },
+      {
+        "label": "Fútbol profesional",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "lump_football_operations_expense",
+        "matchedLabel": "Fútbol profesional",
+        "years": [
+          "2019"
+        ]
+      },
+      {
+        "label": "Actividades deportivas y culturales",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_sports",
+        "matchedLabel": "Actividades deportivas y culturales",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019"
+        ]
+      },
+      {
+        "label": "Actividades deportivas y culturales",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Actividades deportivas y culturales",
+        "years": [
+          "2015",
+          "2019"
+        ]
+      },
+      {
+        "label": "Socios",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "member_dues",
+        "matchedLabel": "Socios",
+        "years": [
+          "2019"
+        ]
+      },
+      {
+        "label": "Socios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diversos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Diversos",
+        "years": [
+          "2019"
+        ]
+      },
+      {
+        "label": "Diversos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Gastos diversos",
+        "similarity": 50
+      },
+      {
+        "label": "Administración",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Administración",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Administración",
+        "years": [
+          "2015",
+          "2019"
+        ]
+      },
+      {
+        "label": "Estadio y predios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Estadio y predios",
+        "side": "expense",
+        "tier": "CONFLICTO",
+        "detail": "\"Estadio y predios\" tuvo MÁS DE UNA categoría en años distintos de este mismo lado -- no sugiero, revisar a mano."
+      },
+      {
+        "label": "RESULTADOS ANTES DEL EFECTO FINANCIERO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RESULTADOS ANTES DEL EFECTO FINANCIERO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultados financieros y por tenencia, netos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultados financieros y por tenencia, netos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SUPERÁVIT / (DÉFICIT) DEL EJERCICIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SUPERÁVIT / (DÉFICIT) DEL EJERCICIO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Argentinos Juniors",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "5 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "6 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

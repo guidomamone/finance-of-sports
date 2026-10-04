@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Athletico Paranaense/demonstracoes-financeiras-2025.md",
+ "generado": "2026-10-02T00:10:54.972Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de Reais)",
+ "caja": {
+  "lineas": [
+   389
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   430,
+   439
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance presenta columnas Controladora y Consolidado; la deuda difiere mucho entre ambas (consolidado 61.280 + 105.893 vs controladora 130 + 0). Las mismas líneas sirven para cualquiera de las dos columnas 2025, pero conviene confirmar cuál se usa. Parcelamentos fiscais excluidos por no ser deuda financiera."
+}

@@ -1,0 +1,94 @@
+{
+ "md": "Clubes/Inglaterra/Aston Martin F1/amr-gp-full-accounts-2024.md",
+ "pdf": "Clubes/Inglaterra/Aston Martin F1/amr-gp-full-accounts-2024.pdf",
+ "club": "aston-martin-f1",
+ "year": 2024,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T22:03:54.275Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 6
+ },
+ "warnings": [
+  "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 7,
+  "notasUsadas": []
+ },
+ "ladoConocido": 4,
+ "rubros": [
+  {
+   "label": "At 1 January 2023",
+   "lado": null,
+   "page": 19,
+   "section": "Statement of Changes in Equity / For the Year Ended 31 December 2024 / Called up Share premium Profit and loss / share capital account account Total equity / £000 £000 £000 £000",
+   "values": [
+    259.251
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "At 1 January 2024",
+   "lado": null,
+   "page": 19,
+   "section": "Statement of Changes in Equity / For the Year Ended 31 December 2024 / Called up Share premium Profit and loss / share capital account account Total equity / £000 £000 £000 £000",
+   "values": [
+    259.251
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "At 31 December 2024",
+   "lado": null,
+   "page": 19,
+   "section": "Statement of Changes in Equity / For the Year Ended 31 December 2024 / Called up Share premium Profit and loss / share capital account account Total equity / £000 £000 £000 £000",
+   "values": [
+    259.251
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Exchange differences",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Included within other operating income is UK Government grants. / 6. Operating loss / The operating loss is stated after (crediting)/charging: / 2024 2023 / £000 £000",
+   "values": [
+    5.687
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Operating lease rentals",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Included within other operating income is UK Government grants. / 6. Operating loss / The operating loss is stated after (crediting)/charging: / 2024 2023 / £000 £000",
+   "values": [
+    2.341
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Depreciation ,",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Included within other operating income is UK Government grants. / 6. Operating loss / The operating loss is stated after (crediting)/charging: / 2024 2023 / £000 £000",
+   "values": [
+    12.426
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Amortisation",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Included within other operating income is UK Government grants. / 6. Operating loss / The operating loss is stated after (crediting)/charging: / 2024 2023 / £000 £000",
+   "values": [
+    1.105
+   ],
+   "origen": "estado 3"
+  }
+ ]
+}

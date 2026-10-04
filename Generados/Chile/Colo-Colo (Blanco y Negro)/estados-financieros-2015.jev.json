@@ -1,0 +1,431 @@
+{
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2015.md",
+ "generatedAt": "2026-09-30T22:48:47.447Z",
+ "rubrosHuella": "04949e9a65fab9c17ee77aa59bd0ddca4baa73f4",
+ "rubros": [
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 77,
+   "section": "-              - / -              -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos de administración",
+   "lado": "expense",
+   "page": 77,
+   "section": "-              - / -              -",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración plantel profesional y cuerpo técnico",
+   "lado": null,
+   "page": 77,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización Activos en concesión",
+   "lado": null,
+   "page": 77,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_amortisation",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización pases jugadores profesionales",
+   "lado": null,
+   "page": 77,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos de concentración traslados y otros",
+   "lado": "expense",
+   "page": 77,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros costos",
+   "lado": "expense",
+   "page": 77,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesorías",
+   "lado": "expense",
+   "page": 77,
+   "section": "-              - / -              -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 847
+  },
+  {
+   "label": "Gasto por impuestos utilizando la tasa legal",
+   "lado": "expense",
+   "page": 70,
+   "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2015       01.01.2014 / 31.12.2015       31.12.2014 / M$                 M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios básicos",
+   "lado": "expense",
+   "page": 77,
+   "section": "-              - / -              -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 992
+  },
+  {
+   "label": "Otro aumento (disminución) en cargo por impuestos legales",
+   "lado": "expense",
+   "page": 70,
+   "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2015       01.01.2014 / 31.12.2015       31.12.2014 / M$                 M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Facturas por pagar",
+   "lado": null,
+   "page": 71,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 14. CUENTAS POR PAGAR COMERCIALES CORRIENTES",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuentas por pagar",
+   "lado": null,
+   "page": 71,
+   "section": "15. OTROS PASIVOS NO FINANCIEROS, NO CORRIENTES",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Retenciones por pagar",
+   "lado": null,
+   "page": 71,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 14. CUENTAS POR PAGAR COMERCIALES CORRIENTES",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 77,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "player_amortisation",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Celfin",
+   "lado": null,
+   "page": 78,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 23. INGRESOS FINANCIEROS",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 76,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros activos financieros corrientes",
+   "lado": null,
+   "page": 78,
+   "section": "24. DIFERENCIA DE CAMBIO",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Deudores comerciales y otras cuentas por cobrar corrientes",
+   "lado": null,
+   "page": 78,
+   "section": "24. DIFERENCIA DE CAMBIO",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+   "lado": null,
+   "page": 78,
+   "section": "24. DIFERENCIA DE CAMBIO",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Prov. Incobrable",
+   "lado": "expense",
+   "page": 77,
+   "section": "-              - / -              -",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "player_impairment",
+     0.06
+    ]
+   ],
+   "tokens": 793
+  },
+  {
+   "label": "Club(**)",
+   "lado": "revenue",
+   "page": 76,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por publicidad",
+   "lado": "revenue",
+   "page": 76,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenciones",
+   "lado": "expense",
+   "page": 77,
+   "section": "-              - / -              -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 845
+  },
+  {
+   "label": "Remuneración administración",
+   "lado": "expense",
+   "page": 77,
+   "section": "-              - / -              -",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 989
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 77,
+   "section": "-              - / -              -",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 986
+  },
+  {
+   "label": "Gastos Tesorería no considerados en convenio (1) -",
+   "lado": "expense",
+   "page": 77,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Deuda Fiscal",
+   "lado": null,
+   "page": 71,
+   "section": "15. OTROS PASIVOS NO FINANCIEROS, NO CORRIENTES",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1360
+  },
+  {
+   "label": "Efecto impositivo de gastos no deducidos impositivamente",
+   "lado": "expense",
+   "page": 70,
+   "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2015       01.01.2014 / 31.12.2015       31.12.2014 / M$                 M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.41
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Larraín Vial (415)",
+   "lado": null,
+   "page": 78,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 23. INGRESOS FINANCIEROS",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1293
+  }
+ ]
+}

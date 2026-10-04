@@ -1,0 +1,65 @@
+{
+ "md": "Clubes/Alemania/TSG Hoffenheim/jahresabschluss-2010-11.md",
+ "pdf": "Clubes/Alemania/TSG Hoffenheim/jahresabschluss-2010-11.pdf",
+ "club": "hoffenheim-de",
+ "year": 2011,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:50:30.243Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": false,
+  "motivo": "no se pudo ubicar la columna del ejercicio"
+ },
+ "ladoConocido": 4,
+ "rubros": [
+  {
+   "label": "S 1. Umsatzerlöse",
+   "lado": "revenue",
+   "page": 6,
+   "section": "2 Gewinn- und Verlustrechnung / 2 / ve / o 2010 / 2011 Vorjahr / & = TE",
+   "values": [
+    "72.189.555",
+    "53.005"
+   ],
+   "columns": null
+  },
+  {
+   "label": "5 2. sonstige betriebliche Erträge",
+   "lado": "revenue",
+   "page": 6,
+   "section": "2 Gewinn- und Verlustrechnung / 2 / ve / o 2010 / 2011 Vorjahr / & = TE",
+   "values": [
+    "1.738.063",
+    "1.579"
+   ],
+   "columns": null
+  },
+  {
+   "label": "5 a) Löhne und Gehälter",
+   "lado": "expense",
+   "page": 6,
+   "section": "= / 5 73.927.618 54.584 / E 3. Materialaufwand 1.166.876 1.290 / x 4. Personalaufwand",
+   "values": [
+    "42.026.209",
+    "40.547"
+   ],
+   "columns": null
+  },
+  {
+   "label": "5 b) soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",
+   "lado": "expense",
+   "page": 6,
+   "section": "= / 5 73.927.618 54.584 / E 3. Materialaufwand 1.166.876 1.290 / x 4. Personalaufwand",
+   "values": [
+    "2.027.721",
+    "1.992"
+   ],
+   "columns": null
+  }
+ ]
+}

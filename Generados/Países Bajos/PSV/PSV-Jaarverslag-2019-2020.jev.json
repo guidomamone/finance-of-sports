@@ -1,0 +1,250 @@
+{
+ "md": "Clubes/Países Bajos/PSV/PSV-Jaarverslag-2019-2020.md",
+ "generatedAt": "2026-09-30T22:49:24.149Z",
+ "rubrosHuella": "1f4558aa8f70aa7b37df7975bec623337511089b",
+ "rubros": [
+  {
+   "label": "Recettes competitie en KNVB beker",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+   "choice": "matchday_competition",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Netto-omzet (18)",
+   "lado": "revenue",
+   "page": 14,
+   "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Recettes Europees voetbal",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+   "choice": "matchday_competition",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Seizoen Club Cards",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Premies Europees voetbal",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Overige wedstrijdopbrengsten",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+   "choice": "stadium_other",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Partnerships",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Merchandising",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Media",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Stadionexploitatie",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+   "choice": "stadium_other",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Overige opbrengsten",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / BEBRUIKEN IN EUR 4 1 000, TENDER ANDERE VERMELD / ## NETTO-OMZET (18)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Kostprijs van de omzet",
+   "lado": "expense",
+   "page": 14,
+   "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Lonen en salarissen",
+   "lado": "expense",
+   "page": 24,
+   "section": "## LONEN, SALARISSEN EN SOCIALE LASTEN (19)",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Lonen, salarissen en sociale lasten (19)",
+   "lado": "expense",
+   "page": 14,
+   "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Sociale lasten",
+   "lado": "expense",
+   "page": 24,
+   "section": "## LONEN, SALARISSEN EN SOCIALE LASTEN (19)",
+   "choice": "wages_squad",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensionlasten",
+   "lado": "expense",
+   "page": 24,
+   "section": "## LONEN, SALARISSEN EN SOCIALE LASTEN (19)",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijvingen op materiële vaste activa",
+   "lado": "expense",
+   "page": 14,
+   "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Overige personeelskosten",
+   "lado": "expense",
+   "page": 24,
+   "section": "## OVERIGE BEDRIJFSKOSTEN (20)",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Overige bedrijfskosten (20)",
+   "lado": "expense",
+   "page": 14,
+   "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Wedstrijdkosten",
+   "lado": "expense",
+   "page": 24,
+   "section": "## OVERIGE BEDRIJFSKOSTEN (20)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Huisvestingskosten",
+   "lado": "expense",
+   "page": 24,
+   "section": "## OVERIGE BEDRIJFSKOSTEN (20)",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Beheerskosten",
+   "lado": "expense",
+   "page": 24,
+   "section": "## OVERIGE BEDRIJFSKOSTEN (20)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Vergoedingsommen",
+   "lado": null,
+   "page": 14,
+   "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Afschrijving op vergoedingssommen",
+   "lado": null,
+   "page": 14,
+   "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Bijzondere waardeverminderingen",
+   "lado": null,
+   "page": 14,
+   "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+   "choice": "player_impairment",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Renteresultaat (21)",
+   "lado": null,
+   "page": 14,
+   "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Belastingen (22)",
+   "lado": "expense",
+   "page": 14,
+   "section": "## GECONSOLIDEERDE WINST- EN VERLIESREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

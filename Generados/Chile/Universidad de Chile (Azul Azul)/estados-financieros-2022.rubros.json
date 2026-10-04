@@ -1,0 +1,416 @@
+{
+ "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2022.md",
+ "pdf": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2022.pdf",
+ "club": "universidad-de-chile-azul-azul-",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T01:18:29.780Z",
+ "tieOuts": {
+  "cierran": 27,
+  "noCierran": 17
+ },
+ "warnings": [
+  "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "13 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "7 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "ladoConocido": 27,
+ "rubros": [
+  {
+   "label": "clasificados como mantenidos para la venta",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Total de activos corrientes distintos de los activos o grupos / de activos para su disposición clasificados como mantenidos / para la venta o como mantenidos para distribuir a los / Activos no corrientes o grupos de activos para su disposición",
+   "values": [
+    "52.000",
+    "20.907"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Activos corrientes totales",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Total de activos corrientes distintos de los activos o grupos / de activos para su disposición clasificados como mantenidos / para la venta o como mantenidos para distribuir a los / Activos no corrientes o grupos de activos para su disposición",
+   "values": [
+    "6.456.219",
+    "7.285.060"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": null,
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2022 Y 2021.",
+   "values": [
+    "14.515.925",
+    "12.884.811"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": null,
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2022 Y 2021.",
+   "values": [
+    "(12.509.716)",
+    "(10.633.999)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ganancia bruta",
+   "lado": null,
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2022 Y 2021.",
+   "values": [
+    "2.006.209",
+    "2.250.812"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gasto de administración",
+   "lado": null,
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2022 Y 2021.",
+   "values": [
+    "(3.922.954)",
+    "(3.220.307)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos financieros",
+   "lado": null,
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2022 Y 2021.",
+   "values": [
+    "142.003",
+    "4.676"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Importe en libros - (1.249.367) -",
+   "lado": "revenue",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "values": [
+    "(1.249.367)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Amortización Acumulada - 1.006.276 -",
+   "lado": "revenue",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "values": [
+    "1.006.276"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gastos por amortización",
+   "lado": "revenue",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "values": [
+    "(305.813)",
+    "(1.915.129)",
+    "(10.236)",
+    "(2.231.178)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Importe en libros - (1.017.119) -",
+   "lado": "revenue",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "values": [
+    "(1.017.119)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Amortización Acumulada - 716.175 -",
+   "lado": "revenue",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "values": [
+    "716.175"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gastos por amortización",
+   "lado": "revenue",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "values": [
+    "(307.633)",
+    "(1.846.131)",
+    "(10.260)",
+    "(2.164.024)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Borderó",
+   "lado": "revenue",
+   "page": 76,
+   "section": "21- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "values": [
+    "2.575.833",
+    "80.897"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 76,
+   "section": "21- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "values": [
+    "6.052.638",
+    "7.333.622"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Participación torneos Internacionales",
+   "lado": "revenue",
+   "page": 76,
+   "section": "21- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "values": [
+    "7.004",
+    "375.952"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Derechos de T.V.",
+   "lado": "revenue",
+   "page": 76,
+   "section": "21- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "values": [
+    "4.377.614",
+    "4.044.016"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos por transferencias de pases de jugadores",
+   "lado": "revenue",
+   "page": 76,
+   "section": "21- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "values": [
+    "448.862",
+    "508.317"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos varios",
+   "lado": "revenue",
+   "page": 76,
+   "section": "21- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "values": [
+    "1.053.975",
+    "542.007"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Borderó (costos directos)",
+   "lado": null,
+   "page": 77,
+   "section": "22.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "values": [
+    "(961.223)",
+    "(429.277)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Remuneraciones",
+   "lado": null,
+   "page": 77,
+   "section": "22.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "values": [
+    "(7.144.464)",
+    "(6.338.718)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Amortización de pases",
+   "lado": null,
+   "page": 77,
+   "section": "22.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "values": [
+    "(2.121.734)",
+    "(1.909.039)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros gastos de operación",
+   "lado": null,
+   "page": 77,
+   "section": "Costo de venta pases de jugadores                       (25.341)                        -",
+   "values": [
+    "(2.256.954)",
+    "(1.956.965)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Servicios básicos",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "values": [
+    "(87.160)",
+    "(75.226)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Asesorías",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "values": [
+    "(539.389)",
+    "(540.319)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Depreciaciones y amortizaciones",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "values": [
+    "(565.863)",
+    "(615.133)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Arriendos -",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "values": [
+    "(10.740)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Mantenciones",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "values": [
+    "(199.486)",
+    "(103.216)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Remuneraciones Administración",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "values": [
+    "(1.387.777)",
+    "(1.185.220)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros Gastos de Administración",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "values": [
+    "(1.143.279)",
+    "(690.453)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros Activos no financieros no corrientes 709.337 709.337 - - - -",
+   "lado": "revenue",
+   "page": 81,
+   "section": "Total de activos corrientes distintos de los activos o grupos de / venta o como mantenidos para distribuir a los propietarios / Activos no corrientes",
+   "values": [
+    "709.337",
+    "709.337"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Activos intangibles distintos de la plusvalía 8.644.081 7.000.953 - - - -",
+   "lado": "revenue",
+   "page": 81,
+   "section": "Total de activos corrientes distintos de los activos o grupos de / venta o como mantenidos para distribuir a los propietarios / Activos no corrientes",
+   "values": [
+    "8.644.081",
+    "7.000.953"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Propiedades, Planta y Equipo 2.197.464 2.443.538 - - - -",
+   "lado": "revenue",
+   "page": 81,
+   "section": "Total de activos corrientes distintos de los activos o grupos de / venta o como mantenidos para distribuir a los propietarios / Activos no corrientes",
+   "values": [
+    "2.197.464",
+    "2.443.538"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Activos por impuestos diferidos 7.507.864 7.036.224 700.273 391.636 - -",
+   "lado": "revenue",
+   "page": 81,
+   "section": "Total de activos corrientes distintos de los activos o grupos de / venta o como mantenidos para distribuir a los propietarios / Activos no corrientes",
+   "values": [
+    "8.208.137",
+    "7.427.860"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Pesos",
+   "lado": "revenue",
+   "page": 83,
+   "section": "Pesos         2.119.603        2.167.428 / Dólares               0                0 / Activos no corrientes o grupos de activos para su disposición clasificados / Euros                 0                0 / como mantenidos para la venta",
+   "values": [
+    "52.000",
+    "20.907"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Activos corrientes totales",
+   "lado": "revenue",
+   "page": 83,
+   "section": "Pesos         2.119.603        2.167.428 / Dólares               0                0 / Activos no corrientes o grupos de activos para su disposición clasificados / Euros                 0                0 / como mantenidos para la venta",
+   "values": [
+    "6.456.219",
+    "7.285.060"
+   ],
+   "columns": null
+  }
+ ]
+}

@@ -1,0 +1,2383 @@
+{
+  "club": "godoycruz-ar",
+  "year": 2020,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Godoy Cruz/estados-contables-ejercicio-2019-20.md",
+  "generatedAt": "2026-09-30T22:39:10.037Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 212,
+    "eu": 32,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 26,
+  "relevantTableCount": 7,
+  "tables": [
+    {
+      "page": 3,
+      "section": "CLUB DEPORTIVO GODOY CRUZ ANTONIO TOMBA / ESTADO DE SITUACIÓN PATRIMONIAL / ACTIVO CORRIENTE PASIVO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caja y Bancos (Nota N22) 161,039,723.56 78,840,949.43 [Deudas (Nota N25)",
+          "values": [
+            "79,331,256.82",
+            "48,750,928.70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por Cobrar (Nota N23)",
+          "values": [
+            "31,693,212.91",
+            "44,189,474.41"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inversiones (Anexo l) 488,795,309.48 |",
+          "values": [
+            "342,097,341.60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Activo Corriente 681,528,245.95 | 465,127,765.44 | Total Pasivo Corriente :",
+          "values": [
+            "79,331,256.82",
+            "48,750,928.70"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "ACTIVO NO CORRIENTE PASIVO NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bienes de Uso (Anexo l!) 319,417,789.39 | 297,065,699.03 [Deudas (Nota N25)",
+          "values": [
+            "1,205,874.85",
+            "1,684,486.58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos Intangibles (Nota N24)",
+          "values": [
+            "145,145,669.25",
+            "196,446,981.88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Total Activo No Corriente 464,563,458.64 | 493,512,680.91 Total Pasivo No Corriente :",
+          "values": [
+            "1,205,874.85",
+            "1,684,486.58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Pasivo",
+          "values": [
+            "80,537,131.67",
+            "50,435,415.28"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "CLUB DEPORTIVO GODOY CRUZ ANTONIO TOMBA / ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo al inicio ajustado 888,247.29 231,399,720.22 | 000 |",
+          "values": [
+            "758,565.17",
+            "675,158,498.38",
+            "908,205,031.07",
+            "630,695,719.89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado del ejercicio",
+          "values": [
+            "157,349,541.83",
+            "157,349,541.83",
+            "277,509,311.18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales de",
+          "values": [
+            "888,247.29",
+            "231,399,720,22",
+            "758,565.17",
+            "832,508,040.21",
+            "1,065,554,572.90",
+            "903,205,031.07"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "CLUB DEPORTIVO GODOY CRUZ ANTONIO TOMIBA / ESTADO DE RECURSOS Y GASTOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "INGRESOS VARIOS AFA",
+          "values": [
+            "16,060,121.81",
+            "13,487,375.81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESOS VENTA JUGADORES",
+          "values": [
+            "132,526,833.97",
+            "88,043,806.31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESOS VARIOS",
+          "values": [
+            "6,018.86",
+            "12,280.26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO FÚTBOL AMATEUR",
+          "values": [
+            "3,652,939.15",
+            "3,377,555.37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO POR D* DE TV Y TRANSMISION",
+          "values": [
+            "263,030,343.86",
+            "325,334,940.91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO POR PUBLICIDAD Y SPONSORIZACION",
+          "values": [
+            "30,279,651.49",
+            "35,664,625.31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO CUOTA SOCIALES",
+          "values": [
+            "16,861,384.82",
+            "15,880,670.36"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO POR CUOTA SOCIO FÚTBOL",
+          "values": [
+            "6,621,606.74",
+            "7,401,160.10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO POR PLUS DE ACTIVIDADES",
+          "values": [
+            "1,954,056.47",
+            "775,224.77"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO POR OTRAS ACTIVIDADES CLUB",
+          "values": [
+            "6,689,910.95",
+            "8,335,006.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO CUOTAS COLEGIO",
+          "values": [
+            "16,967,373.69",
+            "11,371,601.43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO ADICIONALES INSTITUTO",
+          "values": [
+            "3,479,392.23",
+            "2,386,598.51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO POR APORTE DGE (Nota n28)",
+          "values": [
+            "11,611,686.54",
+            "8,291,979.29"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO POR VENTA DE ENTRADAS",
+          "values": [
+            "7,697,922.78",
+            "9,578,627.99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO POR PUBLICIDAD REVISTA",
+          "values": [
+            "288,106.20",
+            "185,558.73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO POR DESCUENTOS COMERCIALES",
+          "values": [
+            "58,276.26",
+            "15,046.89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO POR RESCISIÓN DE CONTRATO",
+          "values": [
+            "2,351,825.84",
+            "1,106,574.70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO POR INTERESES PLAZO FIJO",
+          "values": [
+            "1,385,610.45",
+            "5,191,915.08"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO POR DERECHO DE FORMACIÓN / MEC. SOLIDARIDAD",
+          "values": [
+            "1,847,878.07",
+            "14,290,681.15"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "INGRESO POR SUBSIDIO 36,858.00 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "INGRESO RECUPERO ART - SEGUROS",
+          "values": [
+            "1,453,858.98",
+            "948,772.92"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESO POR ALQUILER INSTALACIONES DEPORTIVAS",
+          "values": [
+            "1,403,526.38",
+            "531,573.66"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "INGRESO POR PARTIDO AMISTOSO 18,229,545.00 - / INGRESO POR DERECHOS DE TANTEO 38,591,521.00 9,812,950.05 / INGRESOS AYUDA ATP 155,697.10 - / INGRESO ACUERDO DEUDA CLUBES 32,812,277.65 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "INGRESOS FINANCIEROS",
+          "values": [
+            "296,951,174.48",
+            "131,497,538.74"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL INGRESOS",
+          "values": [
+            "913,005,398.77",
+            "693,522,064.36"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "GASTOS ORDINARIOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "GASTOS MANTENIMIENTO INST. DEPORTIVAS",
+          "values": [
+            "11,043,284.60",
+            "7,425,927.75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS ESPECIFICOS Y DE ORGANIZACIÓN",
+          "values": [
+            "15,038,198.00",
+            "15,370,542.57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REMUNERACIÓN PLANTEL",
+          "values": [
+            "38,406,059.77",
+            "30,904,989.65"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PRIMAS Y PREMIOS DEL PLANTEL",
+          "values": [
+            "127,472,478.44",
+            "113,202,221.11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTROS GASTOS DEPORTIVOS",
+          "values": [
+            "54,510,741.13",
+            "32,220,802.86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTROS GASTOS DE GESTIÓN",
+          "values": [
+            "10,774,997.13",
+            "17,979,982.84"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COSTO DE VENTA JUGADORES",
+          "values": [
+            "1,021,288.00",
+            "4,706,052.69"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LIGA MENDOCINA DE FÚTBOL",
+          "values": [
+            "1,362,001.02",
+            "1,267,718.92"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AFA - ASOCIACIÓN DEL FÚTBOL ARGENTINO",
+          "values": [
+            "8,873,755.69",
+            "11,072,359.02"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FAA - FUTBOLISTAS ARGENTINOS",
+          "values": [
+            "134,521.47",
+            "177,231.42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPUESTOS INTERNOS",
+          "values": [
+            "144,878.83",
+            "175,078.18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PERDIDA RETENCIÓN - PERCEPCIÓN - GANANCIA",
+          "values": [
+            "430,507.08",
+            "548,851.26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESCUENTOS EN RECIBOS SOCIALES",
+          "values": [
+            "2,507,718.33",
+            "1,619,571.87"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TRANSPORTE",
+          "values": [
+            "271,720,429,49",
+            "236,671,330.13"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "CLUB DEPORTIVO GODOY CRUZ ANTONIO TOMBA / ESTADO DE RECURSOS Y GASTOS / (CONTINUACIÓN)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "TRANSPORTE",
+          "values": [
+            "271,720,429.49",
+            "236,671,330.13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPARTAMENTO DE ACTIVIDADES DEPORTIVAS -",
+          "values": [
+            "117,585.64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPARTAMENTO MÉDICO",
+          "values": [
+            "7,742,766.10",
+            "6,222,905.57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS GENERALES DE ADMINISTRACIÓN FÚTBOL",
+          "values": [
+            "4,768,356.95",
+            "3,203,292.04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SISTEMAS INFORMÁTICOS",
+          "values": [
+            "3,395,055.20",
+            "2,730,268.04"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "GASTOS IMPOSITIVOS 650,511.93 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "OTRAS AMORTIZACIONES",
+          "values": [
+            "7,312,083.90",
+            "6,178,809.36"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SEGUROS",
+          "values": [
+            "301,116.01",
+            "5,919.25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REMUNERACIONES Y CARGAS SOCIALES CLUB",
+          "values": [
+            "30,909,863.90",
+            "22,310,268.42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS TARJETA DE CRÉDITO",
+          "values": [
+            "1,116,865.75",
+            "900,598.25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS GENERALES DE ADMINISTRACIÓN COLEGIO",
+          "values": [
+            "932,077,52",
+            "1,266,818.03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SERVICIOS PRESTADOS PERSONAL COLEGIO",
+          "values": [
+            "1,559,955.84",
+            "1,168,562.66"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REMUNERACIONES Y CARGAS SOCIALES COLEGIO",
+          "values": [
+            "22,206,505.90",
+            "17,315,832.99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TEMPORADA PILETA",
+          "values": [
+            "2,376,563.57",
+            "2,233,719.59"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS VARIOS ADMINISTRACIÓN CLUB",
+          "values": [
+            "1,903,483.36",
+            "1,473,638.14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EGRESO OBRA CLUB",
+          "values": [
+            "2,983,703.72",
+            "664,799.39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EGRESO POR DISCIPLINA",
+          "values": [
+            "4,494,090.05",
+            "5,213,386.14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS LOCAL INDUMENTARIA -",
+          "values": [
+            "363,253.83"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "SERVICIOS PRESTADOS POR DT Y PF INFERIORES 5,823,969.20 4,090,946.48 .",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SERVICIOS PRESTADOS POR DT Y PF INFANTILES",
+          "values": [
+            "1,718,079.06",
+            "1,646,951.23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS GENERALES ADMINISTRACIÓN FÚTBOL AMATEUR",
+          "values": [
+            "91,932.91",
+            "199,735.40"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "DEUDORES INCOBRABLES CLUB 2,440,506.27 = / DEUDORES INCOBRABLES COLEGIO 1,300,694.16 - / PERDIDA POR FINALIZACION DE CONTRATO 209,535.00 - / GASTOS POR JUICIOS LABORALES 998,829.58 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CARGAS SOCIALES",
+          "values": [
+            "22,743,991.70",
+            "13,058,210.57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VIÁTICOS FÚTBOL AMATEUR INFERIORES",
+          "values": [
+            "141,919,67",
+            "201,774,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SERVICIOS PRESTADOS RESERVA",
+          "values": [
+            "645,456.97",
+            "673,737.96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INDEMNIZACIÓN EMPLEADOS",
+          "values": [
+            "274,430.92",
+            "275,346.05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPARTAMENTO JURÍDICO",
+          "values": [
+            "2,006,516.49",
+            "1,747,619.08"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HONORARIOS PROFESIONALES CLUB",
+          "values": [
+            "340,746.50",
+            "155,745.98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS POR PARTIDOS AMISTOSOS -",
+          "values": [
+            "26,457,976.64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DERECHO DE TANTEO -",
+          "values": [
+            "24,857,585.45"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "MECANISMO DE SOLIDARIDAD 11,125,044.25 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "EGRESOS FINANCIEROS",
+          "values": [
+            "341,420,775.07",
+            "34,606,136.57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL GASTOS ORDINARIOS",
+          "values": [
+            "755,655,856.94",
+            "416,012,753.18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUPERÁVIT DEL EJERCICIO",
+          "values": [
+            "157,349,541.83",
+            "277,509,311.18"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "ESTADO DE FLUJO DE EFECTIVO / VARIACIONES DEL EFECTIVO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Efectivo al inicio",
+          "values": [
+            "78,840,949.43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo al cierre del ejercicio",
+          "values": [
+            "161,039,723.56",
+            "78,840,949.43"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "AUMENTO (DISMINUCIÓN) NETO DEL EFECTIVO / CAUSAS DE LAS VARIACIONES DEL EFECTIVO / ACTIVIDADES OPERATIVAS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cobros por recursos",
+          "values": [
+            "12,496,261.50",
+            "8,426,275.76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros ingresos 901,208,764.54 ||",
+          "values": [
+            "669,476,460.90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagos de deudas",
+          "values": [
+            "30,101,716.40",
+            "-15,102,837.31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagos al personal y cargas sociales -114,266,421.27 |",
+          "values": [
+            "-83,589,301.62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagos de otros impuestos",
+          "values": [
+            "-650,511.93",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros egresos -642,126,696.55 ||",
+          "values": [
+            "-316,744,186.46"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses cobrados",
+          "values": [
+            "0.00",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses pagados",
+          "values": [
+            "0.00",
+            "0.00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "ACTIVIDADES DE INVERSIÓN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pagos por compras de Bienes de Uso -29,664,174.27 |",
+          "values": [
+            "-82,939,629.79"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagos por compras de Intangibles",
+          "values": [
+            "51,301,312.63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagos por compras de Acciones o Títulos Públicos -146,697,967.88 |",
+          "values": [
+            "-57,853,473.85"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "ACTIVIDADES DE FINANCIACIÓN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cobros de aportes a los Asociados",
+          "values": [
+            "32,126,958.98",
+            "32,392,061.23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cobros de aportes para fondos con fines Especificos",
+          "values": [
+            "0.00",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cobros de prestamos de terceros",
+          "values": [
+            "0.00",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagos de gastos financieros -11,630,468.00 |",
+          "values": [
+            "-4,493,790.39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses pagados por préstamos recibidos",
+          "values": [
+            "0.00",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Resultados de Ejercicios Anteriores",
+          "values": [
+            "0.00",
+            "0.00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "oo ANEXO INVERSIONES: O] / FECHA / CLASE VALOR ÚLTIMA VALOR DE VALOR EN LIBROS | VALOR EN LIBROS / d NOMINAL COTIZACIÓN COTIZACIÓN 30/06/20 30/06/19 / ACCIONES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Banco Francés \"B\" 1V/94 / BBAR - - - =:",
+          "values": [
+            "1,288,703.11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Celulosa ARG Ord 1V / 223 / CELU 12,750.00 6/30/2020",
+          "values": [
+            "22.40",
+            "285,600.00",
+            "515,613.25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Grupo Financiero Galicia 534 / GGAL - - - -",
+          "values": [
+            "2,901,249.55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pampa Holding SA Ord 1 voto / 457 / PAMP - - - -",
+          "values": [
+            "3,321,828.20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Petróleo Brasileiro SA Ord / 41902 / APBR < = 5 -",
+          "values": [
+            "10,333,181.86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tenaris SA 40115 /TS - - - -",
+          "values": [
+            "8,645,099.10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "¡Ternium ARG SA \"A\" 1 VOTO ESC / 839 / TXAR 40,800.00 6/30/2020",
+          "values": [
+            "32.700",
+            "1,334,160.00",
+            "786,510.58"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "CEDEAR / TITULOS PUBLICOS / LETRAS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Letes V3/10/19/5300/V0309 - - - -",
+          "values": [
+            "591,554.81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Letes V4/12/19/5333/V04D9 10,688.00 6/30/2020",
+          "values": [
+            "25.60",
+            "273,612.80",
+            "591,913.33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Letes V5/11/19/5332/V05N9 10,688,00 6/30/2020",
+          "values": [
+            "34.70",
+            "370,852.51",
+            "594,995.43"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "FONDOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "FCI- Colegio Colegio 265,274.00 6/30/2020",
+          "values": [
+            "2.8859",
+            "765,552.11",
+            "625,067.18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FCI- Club Club 572,484.37 6/30/2020",
+          "values": [
+            "2,8859",
+            "1,652,128.07",
+            "2,245,300.02"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "CARTERA DISPONIBLE / PLAZOS FIJOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Plazo fijo Fútbol Plazo fijo en Pesos - Banco Credicoop > - - -",
+          "values": [
+            "7,593,390.47"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plazo fijo Fútbol Plazo fijo en USD - Banco Credicoop 50,379.10 6/30/2020",
+          "values": [
+            "68.50",
+            "3,450,968.35",
+            "75,684,440.93"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plazo fijo Colegio Plazo fijo en Pesos - Banco Credicoop - - - -",
+          "values": [
+            "154,247.99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plazo fijo Colegio Plazo fijo en USD - Banco Credicoop - - - -",
+          "values": [
+            "7,141,192.75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plazo fijo Club Plazo fijo en USD - Banco Credicoop - - - -",
+          "values": [
+            "1,355,779.41"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "NOTAS A LOS ESTADOS CONTABLES / CLUB DEPORTIVO GODOY CRUZ ANTONIO TOMBA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "El Estado de Flujo de Efectivo se expone por el método directo ya que se trata de actividades operativas (Resolución Técnica N2",
+          "values": [
+            "8,"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de la F.A.P.C.E., Capítulo VI",
+          "values": [
+            "A.31)."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "El saldo del rubro se compone de la siguiente manera: Ejercicio Actual Ejercicio Anterior / 5412.323,38 $256.299,92 / $64.067,00 $99.218,06 / - Fondos a Rendir $279.546,57 $768.491,04 / 5159.463.576,61 576.747.403,40",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Tarjeta de Crédito",
+          "values": [
+            "$804.875,00",
+            "$923.692,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Tarjeta de Débito",
+          "values": [
+            "$15.335,00",
+            "$45.844,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "$161.039.723,56",
+            "$78.840.949,43"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "NOTA N23. Cuentas por Cobrar: / El saldo del rubro se compone de la siguiente manera: Ejercicio Actual Ejercicio Anterior",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Anticipo de Sueldos (Plantel de fútbol y empleados)",
+          "values": [
+            "$428.836,45",
+            "$374.369,20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Anticipo a Proveedores",
+          "values": [
+            "$2.536.017,94",
+            "$6.124.524,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Créditos Fiscales",
+          "values": [
+            "$23.063.389,36",
+            "$22.528.490,18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Cuotas Sociales (Colegio, club y adicionales instituto)",
+          "values": [
+            "$2.012.141,71",
+            "$4,277.532,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Cuentas Corrientes (sponsors, revistas, socios del club)",
+          "values": [
+            "$3.652.827,45",
+            "$10.884.557,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL $31.693.212,91/7 |",
+          "values": [
+            "$44.189.474,41"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "TOTAL $145.145.699,25 $196.446.981,88 / CORRIENTES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Tarjeta de Crédito",
+          "values": [
+            "$5391.178,16",
+            "$0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Acreedores de Fútbol",
+          "values": [
+            "$10.584.000,00",
+            "$8.750.181,60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Retenciones Impuesto a las Ganancias a Pagar",
+          "values": [
+            "$233.826,38",
+            "$764.232,19"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "$554.952,28 525.492.025,70",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Anticipos Clientes",
+          "values": [
+            "$47.550.760,00",
+            "$0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Impuestos a Pagar",
+          "values": [
+            "$198,60",
+            "$16.800,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "$79.331.256,82",
+            "$48.750.928,70"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "NO CORRIENTES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Deudas del Concurso",
+          "values": [
+            "$678.612,82",
+            "$947.954,25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Juicio EFOR a Pagar",
+          "values": [
+            "$527.262,03",
+            "$736.532,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "$1.205.874,85",
+            "$1.684.486,58"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 3,
+      "section": "CLUB DEPORTIVO GODOY CRUZ ANTONIO TOMBA / ESTADO DE SITUACIÓN PATRIMONIAL / ACTIVO CORRIENTE PASIVO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Activo Corriente 681,528,245.95 | 465,127,765.44 | Total Pasivo Corriente :",
+      "target": "79,331,256.82",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "373790554.51000005"
+    },
+    {
+      "page": 3,
+      "section": "CLUB DEPORTIVO GODOY CRUZ ANTONIO TOMBA / ESTADO DE SITUACIÓN PATRIMONIAL / ACTIVO CORRIENTE PASIVO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Activo Corriente 681,528,245.95 | 465,127,765.44 | Total Pasivo Corriente :",
+      "target": "48,750,928.70",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "44189474.41"
+    },
+    {
+      "page": 3,
+      "section": "ACTIVO NO CORRIENTE PASIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Pasivo",
+      "target": "80,537,131.67",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "67020287.27999999"
+    },
+    {
+      "page": 3,
+      "section": "ACTIVO NO CORRIENTE PASIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Pasivo",
+      "target": "50,435,415.28",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "149380539.76000002"
+    },
+    {
+      "page": 4,
+      "section": "CLUB DEPORTIVO GODOY CRUZ ANTONIO TOMBA / ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales de",
+      "target": "888,247.29",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "157219859.71"
+    },
+    {
+      "page": 4,
+      "section": "CLUB DEPORTIVO GODOY CRUZ ANTONIO TOMBA / ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totales de",
+      "target": "231,399,720,22",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "832507808.811"
+    },
+    {
+      "page": 4,
+      "section": "CLUB DEPORTIVO GODOY CRUZ ANTONIO TOMBA / ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Totales de",
+      "target": "758,565.17",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "1184955777.08"
+    },
+    {
+      "page": 4,
+      "section": "CLUB DEPORTIVO GODOY CRUZ ANTONIO TOMBA / ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Totales de",
+      "target": "832,508,040.21",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-201812320.32000005"
+    },
+    {
+      "page": 5,
+      "section": "INGRESO POR PARTIDO AMISTOSO 18,229,545.00 - / INGRESO POR DERECHOS DE TANTEO 38,591,521.00 9,812,950.05 / INGRESOS AYUDA ATP 155,697.10 - / INGRESO ACUERDO DEUDA CLUBES 32,812,277.65 -",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL INGRESOS",
+      "target": "913,005,398.77",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-616054224.29"
+    },
+    {
+      "page": 5,
+      "section": "INGRESO POR PARTIDO AMISTOSO 18,229,545.00 - / INGRESO POR DERECHOS DE TANTEO 38,591,521.00 9,812,950.05 / INGRESOS AYUDA ATP 155,697.10 - / INGRESO ACUERDO DEUDA CLUBES 32,812,277.65 -",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL INGRESOS",
+      "target": "693,522,064.36",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-562024525.62"
+    },
+    {
+      "page": 6,
+      "section": "MECANISMO DE SOLIDARIDAD 11,125,044.25 -",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL GASTOS ORDINARIOS",
+      "target": "755,655,856.94",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-414235081.87000006"
+    },
+    {
+      "page": 6,
+      "section": "MECANISMO DE SOLIDARIDAD 11,125,044.25 -",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL GASTOS ORDINARIOS",
+      "target": "416,012,753.18",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-381406616.61"
+    },
+    {
+      "page": 10,
+      "section": "El saldo del rubro se compone de la siguiente manera: Ejercicio Actual Ejercicio Anterior / 5412.323,38 $256.299,92 / $64.067,00 $99.218,06 / - Fondos a Rendir $279.546,57 $768.491,04 / 5159.463.576,61 576.747.403,40",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$161.039.723,56\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 10,
+      "section": "El saldo del rubro se compone de la siguiente manera: Ejercicio Actual Ejercicio Anterior / 5412.323,38 $256.299,92 / $64.067,00 $99.218,06 / - Fondos a Rendir $279.546,57 $768.491,04 / 5159.463.576,61 576.747.403,40",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$78.840.949,43\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 10,
+      "section": "NOTA N23. Cuentas por Cobrar: / El saldo del rubro se compone de la siguiente manera: Ejercicio Actual Ejercicio Anterior",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL $31.693.212,91/7 |",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$44.189.474,41\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 11,
+      "section": "$554.952,28 525.492.025,70",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$79.331.256,82\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 11,
+      "section": "$554.952,28 525.492.025,70",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$48.750.928,70\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 11,
+      "section": "NO CORRIENTES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$1.205.874,85\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 11,
+      "section": "NO CORRIENTES",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$1.684.486,58\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 60,
+    "results": [
+      {
+        "label": "INGRESOS VARIOS AFA",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Ingresos Varios AFA",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESOS VARIOS AFA",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESOS VENTA JUGADORES",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Ingresos Venta Jugadores",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESOS VENTA JUGADORES",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Costo de Venta Jugadores",
+        "similarity": 50
+      },
+      {
+        "label": "INGRESOS VARIOS",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Ingresos Varios",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESOS VARIOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO FÚTBOL AMATEUR",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "youth_football",
+        "matchedLabel": "Ingreso Fútbol Amateur",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO FÚTBOL AMATEUR",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR D* DE TV Y TRANSMISION",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Ingreso por D° de TV y Transmisión",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO POR D* DE TV Y TRANSMISION",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR PUBLICIDAD Y SPONSORIZACION",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Ingreso por Publicidad y Sponsorización",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO POR PUBLICIDAD Y SPONSORIZACION",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO CUOTA SOCIALES",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "member_dues",
+        "matchedLabel": "Ingreso Cuota Sociales",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO CUOTA SOCIALES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR CUOTA SOCIO FÚTBOL",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "member_dues",
+        "matchedLabel": "Ingreso por Cuota Socio Fútbol",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO POR CUOTA SOCIO FÚTBOL",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR PLUS DE ACTIVIDADES",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Ingreso por Plus de Actividades",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO POR PLUS DE ACTIVIDADES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR OTRAS ACTIVIDADES CLUB",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Ingreso por Otras Actividades Club",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO POR OTRAS ACTIVIDADES CLUB",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO CUOTAS COLEGIO",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "education",
+        "matchedLabel": "Ingreso Cuotas Colegio",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO CUOTAS COLEGIO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO ADICIONALES INSTITUTO",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "education",
+        "matchedLabel": "Ingreso Adicionales Instituto",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO ADICIONALES INSTITUTO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR APORTE DGE (Nota n28)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "education",
+        "matchedLabel": "Ingreso por Aporte DGE (Nota n°28)",
+        "similarity": 83
+      },
+      {
+        "label": "INGRESO POR APORTE DGE (Nota n28)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR VENTA DE ENTRADAS",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Ingreso por Venta de Entradas",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO POR VENTA DE ENTRADAS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR PUBLICIDAD REVISTA",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Ingreso por Publicidad Revista",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO POR PUBLICIDAD REVISTA",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR DESCUENTOS COMERCIALES",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Ingreso por Descuentos Comerciales",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO POR DESCUENTOS COMERCIALES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR RESCISIÓN DE CONTRATO",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Ingreso por Rescisión de Contrato",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO POR RESCISIÓN DE CONTRATO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR INTERESES PLAZO FIJO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR INTERESES PLAZO FIJO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR DERECHO DE FORMACIÓN / MEC. SOLIDARIDAD",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Ingreso por Derecho de Formación / Mec. Solidaridad",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO POR DERECHO DE FORMACIÓN / MEC. SOLIDARIDAD",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO RECUPERO ART - SEGUROS",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Ingreso Recupero ART - Seguros",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO RECUPERO ART - SEGUROS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESO POR ALQUILER INSTALACIONES DEPORTIVAS",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Ingreso por Alquiler Instalaciones Deportivas",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INGRESO POR ALQUILER INSTALACIONES DEPORTIVAS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESOS FINANCIEROS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESOS FINANCIEROS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS MANTENIMIENTO INST. DEPORTIVAS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS MANTENIMIENTO INST. DEPORTIVAS",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos Mantenimiento Inst. Deportivas",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "GASTOS ESPECIFICOS Y DE ORGANIZACIÓN",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS ESPECIFICOS Y DE ORGANIZACIÓN",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Gastos Específicos y de Organización",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "REMUNERACIÓN PLANTEL",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REMUNERACIÓN PLANTEL",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Remuneración Plantel",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "PRIMAS Y PREMIOS DEL PLANTEL",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "PRIMAS Y PREMIOS DEL PLANTEL",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Primas y Premios del Plantel",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "OTROS GASTOS DEPORTIVOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "OTROS GASTOS DEPORTIVOS",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Otros Gastos Deportivos",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "OTROS GASTOS DE GESTIÓN",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "OTROS GASTOS DE GESTIÓN",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Otros Gastos de Gestión",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "COSTO DE VENTA JUGADORES",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "player_sales",
+        "matchedLabel": "Ingresos Venta Jugadores",
+        "similarity": 50
+      },
+      {
+        "label": "COSTO DE VENTA JUGADORES",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "player_amortisation",
+        "matchedLabel": "Costo de Venta Jugadores",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "LIGA MENDOCINA DE FÚTBOL",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "LIGA MENDOCINA DE FÚTBOL",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Liga Mendocina de Fútbol",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "AFA - ASOCIACIÓN DEL FÚTBOL ARGENTINO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "AFA - ASOCIACIÓN DEL FÚTBOL ARGENTINO",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "AFA - Asociación del Fútbol Argentino",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "FAA - FUTBOLISTAS ARGENTINOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FAA - FUTBOLISTAS ARGENTINOS",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "FAA - Futbolistas Argentinos",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "IMPUESTOS INTERNOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IMPUESTOS INTERNOS",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Impuestos Internos",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "PERDIDA RETENCIÓN - PERCEPCIÓN - GANANCIA",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "PERDIDA RETENCIÓN - PERCEPCIÓN - GANANCIA",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Pérdida Retención - Percepción - Ganancia",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "DESCUENTOS EN RECIBOS SOCIALES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DESCUENTOS EN RECIBOS SOCIALES",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Descuentos en Recibos Sociales",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "TRANSPORTE",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "TRANSPORTE",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DEPARTAMENTO DE ACTIVIDADES DEPORTIVAS -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DEPARTAMENTO DE ACTIVIDADES DEPORTIVAS -",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Departamento de Actividades Deportivas",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "DEPARTAMENTO MÉDICO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DEPARTAMENTO MÉDICO",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Departamento Médico",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "GASTOS GENERALES DE ADMINISTRACIÓN FÚTBOL",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS GENERALES DE ADMINISTRACIÓN FÚTBOL",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos Generales de Administración Fútbol",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "SISTEMAS INFORMÁTICOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SISTEMAS INFORMÁTICOS",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Sistemas Informáticos",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "OTRAS AMORTIZACIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "OTRAS AMORTIZACIONES",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_amortisation",
+        "matchedLabel": "Otras Amortizaciones",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "SEGUROS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SEGUROS",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Seguros",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "REMUNERACIONES Y CARGAS SOCIALES CLUB",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REMUNERACIONES Y CARGAS SOCIALES CLUB",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Remuneraciones y Cargas Sociales Club",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "GASTOS TARJETA DE CRÉDITO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS TARJETA DE CRÉDITO",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos Tarjeta de Crédito",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "GASTOS GENERALES DE ADMINISTRACIÓN COLEGIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS GENERALES DE ADMINISTRACIÓN COLEGIO",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "education_expense",
+        "matchedLabel": "Gastos Generales de Administración Colegio",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "SERVICIOS PRESTADOS PERSONAL COLEGIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SERVICIOS PRESTADOS PERSONAL COLEGIO",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "education_expense",
+        "matchedLabel": "Servicios Prestados Personal Colegio",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "REMUNERACIONES Y CARGAS SOCIALES COLEGIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REMUNERACIONES Y CARGAS SOCIALES COLEGIO",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "education_expense",
+        "matchedLabel": "Remuneraciones y Cargas Sociales Colegio",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "TEMPORADA PILETA",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "TEMPORADA PILETA",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Temporada Pileta",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "GASTOS VARIOS ADMINISTRACIÓN CLUB",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS VARIOS ADMINISTRACIÓN CLUB",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos Varios Administración Club",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "EGRESO OBRA CLUB",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "EGRESO OBRA CLUB",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Egreso Obra Club",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "EGRESO POR DISCIPLINA",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "EGRESO POR DISCIPLINA",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Egreso por Disciplina",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "GASTOS LOCAL INDUMENTARIA -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS LOCAL INDUMENTARIA -",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Gastos Local Indumentaria",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "CARGAS SOCIALES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CARGAS SOCIALES",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Cargas Sociales",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "VIÁTICOS FÚTBOL AMATEUR INFERIORES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "VIÁTICOS FÚTBOL AMATEUR INFERIORES",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Viáticos Fútbol Amateur Inferiores",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "SERVICIOS PRESTADOS RESERVA",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SERVICIOS PRESTADOS RESERVA",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Servicios Prestados Reserva",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "INDEMNIZACIÓN EMPLEADOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INDEMNIZACIÓN EMPLEADOS",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Indemnización Empleados",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "DEPARTAMENTO JURÍDICO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DEPARTAMENTO JURÍDICO",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Departamento Jurídico",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "HONORARIOS PROFESIONALES CLUB",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "HONORARIOS PROFESIONALES CLUB",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Honorarios Profesionales Club",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "GASTOS POR PARTIDOS AMISTOSOS -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS POR PARTIDOS AMISTOSOS -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DERECHO DE TANTEO -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DERECHO DE TANTEO -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Godoy Cruz",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 9,
+      "line": "d NOMINAL COTIZACIÓN COTIZACIÓN 30/06/20 30/06/19"
+    }
+  ],
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "10 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "7 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

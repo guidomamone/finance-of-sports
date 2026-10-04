@@ -1,0 +1,305 @@
+{
+ "md": "Clubes/Colombia/Alianza FC/certificacion-ef-2025.md",
+ "generatedAt": "2026-09-30T04:27:37.453Z",
+ "rubros": [
+  {
+   "label": "Ingresos financieros (Nota 21)",
+   "lado": null,
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1465
+  },
+  {
+   "label": "Ingresos de actividades ordinarias (Nota 21)",
+   "lado": null,
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1470
+  },
+  {
+   "label": "Otros ingresos (Nota 21)",
+   "lado": null,
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1454
+  },
+  {
+   "label": "Utilidad (Pérdida) Operativa",
+   "lado": null,
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_expenses",
+   "confidence": 0.25,
+   "top3": [
+    [
+     "other_expenses",
+     0.29000000000000004
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "other_income",
+     0.23
+    ]
+   ],
+   "tokens": 1510
+  },
+  {
+   "label": "Utilidad Bruta",
+   "lado": null,
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "lump_football_operations",
+     0.35000000000000003
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "Otros gastos (Nota 22)",
+   "lado": null,
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Gastos de administración (Nota 22)",
+   "lado": null,
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1484
+  },
+  {
+   "label": "Gastos de ventas (Nota 22)",
+   "lado": null,
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "lump_football_operations_expense",
+     0.21
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1505
+  },
+  {
+   "label": "Gastos financieros (Nota 22)",
+   "lado": null,
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "Gastos impuesto a las ganancias (Nota 23)",
+   "lado": null,
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "Utilidad (Pérdida) Neta del Período",
+   "lado": null,
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Utilidad (Pérdida) antes de Impuestos de Renta",
+   "lado": null,
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_income",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.23
+    ]
+   ],
+   "tokens": 1482
+  },
+  {
+   "label": "Resultado del Ejercicio",
+   "lado": null,
+   "page": 4,
+   "section": "# ALIANZA FC S.A. / # ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1464
+  }
+ ]
+}

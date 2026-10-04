@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Croacia/Slaven Belupo/financijsko-izvjesce-2025.md",
+ "generado": "2026-10-02T00:20:12.060Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(svi iznosi u eurima)",
+ "caja": {
+  "lineas": [
+   212
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   225
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los valores están en líneas separadas de las etiquetas (L258 en adelante); la deuda financiera es la línea de sobregiros bancarios y préstamos (1.179.036 en 2025), que incluye sobregiros. No hay pasivos no corrientes."
+}

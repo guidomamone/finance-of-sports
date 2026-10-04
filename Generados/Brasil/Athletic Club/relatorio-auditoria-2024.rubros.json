@@ -1,0 +1,475 @@
+{
+ "md": "Clubes/Brasil/Athletic Club/relatorio-auditoria-2024.md",
+ "pdf": "Clubes/Brasil/Athletic Club/relatorio-auditoria-2024.pdf",
+ "club": "athletic-club",
+ "year": 2024,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:51:28.256Z",
+ "tieOuts": {
+  "cierran": 25,
+  "noCierran": 8
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 42,
+  "notasUsadas": [
+   "22",
+   "24"
+  ]
+ },
+ "ladoConocido": 28,
+ "rubros": [
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    19332.098
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "VENDAS LOJA",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    212.085
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "BONIFICAÇÕES RECEBIDAS",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    185.296
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "VENDA DE ATLETAS",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    6371.394
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "ESCOLINHA",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    161.831
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "ENTRADAS DE EVENTOS ESPORTIVOS",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    755.86
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PUBLICIDADE",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    14.87
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PREMIAÇÕES",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    5352.025
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PATROCINIOS",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    2139.518
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DOAÇÕES RECEBIDAS",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    205
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DIREITO E TRANSMISSAO DE IMAGEM",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    2250
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "VENDA DE MANDO DE CAMPO",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    375
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DIREITO PARTICIPAÇÕES CAMPEONATOS",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    1309.219
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DEDUÇÕES",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    -972.585
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-) IMPOSTO TEF 5%",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    -564.559
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-) ICMS",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    -47.716
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-) VENDAS CANCELADAS E DEVOLUÇÕES",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    -360.31
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "RECEITA OPERACIONAL LIQUIDA",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    18359.513
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "CUSTO DE MERCADORIAS VENDIDAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -70.629
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "DESPESAS OPERACIONAIS",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    -23850.337
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "DESPESAS COM PESSOAL",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -5899.083
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "MANUTENÇAO E CONSERVAÇÃO",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -1820.796
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "ALUGUEL",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -157.269
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "ALIMENTAÇÃO / VIAGENS /COMBUSTIVEL E EVENTOS",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -435.066
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "SERVIÇOS DE TERCEIROS",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -8716.427
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "OUTRAS DESPESAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -977.482
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "DESPESAS COM IMPOSTOS E TAXAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -567.321
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "COMIÇÃO DE INTERMEDIAÇÕES",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -1137.518
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "AMORTIZAÇAO DIREITO ECONOMICO DE ATLETAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -327.119
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "PREMIAÇÕESS",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -519
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "DIREITO DE IMAGEM",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -2012.643
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "DOAÇÕES EFETUADAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -497.31
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "INDENIZAÇÕES PROCESSUAIS",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    -712.537
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "MULTAS DE TRANSITO",
+   "lado": "expense",
+   "page": 30,
+   "section": "(Despesas) por natureza",
+   "values": [
+    0.138
+   ],
+   "origen": "nota 22 (ancla 2)",
+   "ancla": "DESPESAS OPERACIONAIS"
+  },
+  {
+   "label": "CUSTO DAS MERCADORIAS VENDIDAS",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    -70.629
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "MANUTENÇAO E CONSERVAÇÃO E CONSUMO",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    -1820.796
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DEPRECIAÇÃO E AMORTIZAÇAO",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    -327.119
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "INDEDNIZAAÇÕES PROCESSUAIS",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    -712.537
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "MULTAS DE TRANSITO",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    -0.138
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "RECEITAS FINANCEIRAS",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    0.032
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "RENDIMENTOS S/ APLICAÇÃO FINANCEIRA",
+   "lado": "revenue",
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    0.032
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DESPESAS FINANCEIRAS",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    -1786.685
+   ],
+   "origen": "estado 2 (su nota queda consumida sin abrir)"
+  },
+  {
+   "label": "Reultado Abrangente do Período",
+   "lado": null,
+   "page": 13,
+   "section": "# Demonstração dos Resultados Abrangentes / ## Em 31 de dezembro de 2024 e 2023 / ### (Expresso em reais)",
+   "values": [
+    -7.277478
+   ],
+   "origen": "estado 3"
+  }
+ ]
+}

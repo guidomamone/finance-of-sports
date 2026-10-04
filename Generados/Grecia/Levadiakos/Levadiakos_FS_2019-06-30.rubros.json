@@ -1,0 +1,202 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2019-06-30.md",
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2019-06-30.pdf",
+ "club": "levadiakos",
+ "year": 2019,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:02:36.859Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 22,
+  "notasUsadas": []
+ },
+ "ladoConocido": 18,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 2,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
+   "values": [
+    0.076361
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 2,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
+   "values": [
+    -2.256353
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 2,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
+   "values": [
+    2.37042
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 2,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
+   "values": [
+    -0.141222
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 2,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
+   "values": [
+    -0.315689
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "revenue",
+   "page": 2,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
+   "values": [
+    0.000023
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 2,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2018 έως 30/6/2019",
+   "values": [
+    -0.001379
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Συντελεστής απόσβεσης",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
+   "values": [
+    0.008
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Υπόλοιπο 1.7.2017",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
+   "values": [
+    401.78162
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Προσθήκες",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
+   "values": [
+    70
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Υπόλοιπο 1.7.2017",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
+   "values": [
+    334.11916
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Αποσβέσεις χρήσεως",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
+   "values": [
+    30.73173
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Αναπόσβεστη αξία 30.6.2018",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
+   "values": [
+    106.93073
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Υπόλοιπο 1.7.2018",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
+   "values": [
+    364.85089
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Αποσβέσεις χρήσεως",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
+   "values": [
+    28.15957
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Αναπόσβεστη αξία 30.6.2019",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7 Αναλύσεις κονδυλίων χρηματοοικονομικών καταστάσεων / ### 5.7.1 Ενσώματα πάγια",
+   "values": [
+    78.77115
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Πελάτες εσωτερικού",
+   "lado": "expense",
+   "page": 12,
+   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7.2 Χρηματοοικονομικά περιουσιακά στοιχεία στο κόστος κτήσης / ### 5.7.2.1 Εμπορικές απαιτήσεις",
+   "values": [
+    198.5273
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Αξιόγραφα εμπορικών απαιτήσεων",
+   "lado": "expense",
+   "page": 12,
+   "section": "[LOGO] / LEVADIAKOS F.C. / ## 5.7.2 Χρηματοοικονομικά περιουσιακά στοιχεία στο κόστος κτήσης / ### 5.7.2.1 Εμπορικές απαιτήσεις",
+   "values": [
+    43.595
+   ],
+   "origen": "estado 5"
+  }
+ ]
+}

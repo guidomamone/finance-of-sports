@@ -1,0 +1,904 @@
+{
+ "md": "Clubes/España/Athletic Club/cuentas-anuales-2022-2023.md",
+ "generatedAt": "2026-09-30T22:49:07.676Z",
+ "rubrosHuella": "009780c0498903e3fb0e34fce782d82ea55a12aa",
+ "rubros": [
+  {
+   "label": "Ingresos por retransmisión",
+   "lado": "revenue",
+   "page": 31,
+   "section": "total de 1.926.640,24 euros (1.454.237,84 euros en el ejercicio anterior). / 21.4. Importe neto de la cifra de negocios: / 30.06.2023                                                   30.06.2022",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Ingresos por abonados y socios",
+   "lado": "revenue",
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "season_tickets",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "season_tickets",
+     0.9
+    ],
+    [
+     "member_dues",
+     0.1
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Ingresos San Mames VIP Area",
+   "lado": "revenue",
+   "page": 31,
+   "section": "total de 1.926.640,24 euros (1.454.237,84 euros en el ejercicio anterior). / 21.4. Importe neto de la cifra de negocios: / 30.06.2023                                                   30.06.2022",
+   "choice": "stadium_other",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "stadium_other",
+     0.97
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Ingresos por abonados y socios",
+   "lado": "revenue",
+   "page": 31,
+   "section": "total de 1.926.640,24 euros (1.454.237,84 euros en el ejercicio anterior). / 21.4. Importe neto de la cifra de negocios: / 30.06.2023                                                   30.06.2022",
+   "choice": "season_tickets",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "season_tickets",
+     0.88
+    ],
+    [
+     "member_dues",
+     0.1
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1093
+  },
+  {
+   "label": "Ingresos de comercialización y publicidad",
+   "lado": "revenue",
+   "page": 31,
+   "section": "total de 1.926.640,24 euros (1.454.237,84 euros en el ejercicio anterior). / 21.4. Importe neto de la cifra de negocios: / 30.06.2023                                                   30.06.2022",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1129
+  },
+  {
+   "label": "2. Variación de existencias de productos terminados y en curso de fabricación",
+   "lado": null,
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1559
+  },
+  {
+   "label": "Ingresos por competición",
+   "lado": "revenue",
+   "page": 31,
+   "section": "total de 1.926.640,24 euros (1.454.237,84 euros en el ejercicio anterior). / 21.4. Importe neto de la cifra de negocios: / 30.06.2023                                                   30.06.2022",
+   "choice": "competition_bonus",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "competition_bonus",
+     0.9299999999999999
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "a) Ingresos deportivos",
+   "lado": "revenue",
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "matchday_competition",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "matchday_competition",
+     0.78
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "b) Otros consumos y gastos externos",
+   "lado": "expense",
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "5. Otros ingresos de explotación",
+   "lado": "revenue",
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "21.5 a) Ingresos accesorios y otros de gestion corriente",
+   "lado": "revenue",
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1122
+  },
+  {
+   "label": "4. Aprovisionamientos",
+   "lado": null,
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1571
+  },
+  {
+   "label": "a) Sueldos y salarios plantilla deportiva",
+   "lado": null,
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "21.2 6. Gastos de personal",
+   "lado": "expense",
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "wages_squad",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "wages_squad",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Derechos arbitrajes",
+   "lado": "expense",
+   "page": 31,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2023                                                    30.06.2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "21.4 1. Importe neto de la cifra de negocios",
+   "lado": null,
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1580
+  },
+  {
+   "label": "Subvenciones a entidades",
+   "lado": "expense",
+   "page": 31,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2023                                                    30.06.2022",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "LNFP (Nota 21.4)",
+   "lado": "expense",
+   "page": 31,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2023                                                    30.06.2022",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuotas entidades deportivas",
+   "lado": "expense",
+   "page": 31,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2023                                                    30.06.2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": null,
+   "page": 32,
+   "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Otros Sueldos, salarios y asimilados",
+   "lado": null,
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "wages_squad",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1536
+  },
+  {
+   "label": "a) Servicios exteriores",
+   "lado": null,
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "LNFP - Patrocinios, licencias y quinielas",
+   "lado": null,
+   "page": 32,
+   "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "LNFP – Gastos COVID",
+   "lado": "expense",
+   "page": 32,
+   "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "RFEF - Cantera de valores",
+   "lado": null,
+   "page": 32,
+   "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+   "choice": "youth_football",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Participación en selección",
+   "lado": null,
+   "page": 32,
+   "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+   "choice": "competition_bonus",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Ayuda socios/as COVID (Nota 21.4) -",
+   "lado": null,
+   "page": 32,
+   "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "LFP Devolución de abonos -",
+   "lado": null,
+   "page": 32,
+   "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Tributos",
+   "lado": null,
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1512
+  },
+  {
+   "label": "21.3 f) Otros gastos de gestión corriente",
+   "lado": "expense",
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "c) Cargas sociales",
+   "lado": null,
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "wages_squad",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "wages_squad",
+     0.61
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1508
+  },
+  {
+   "label": "5,6 y 7 8. Amortización del inmovilizado",
+   "lado": null,
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "depreciation",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "depreciation",
+     0.75
+    ],
+    [
+     "player_amortisation",
+     0.19
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1567
+  },
+  {
+   "label": "Jugadoras y jugadores",
+   "lado": null,
+   "page": 32,
+   "section": "NOTA 22 / OTRA INFORMACIÓN",
+   "choice": "player_sales",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuerpo técnico y resto",
+   "lado": null,
+   "page": 32,
+   "section": "NOTA 22 / OTRA INFORMACIÓN",
+   "choice": "wages_squad",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Maquinaria 187.401,80 - - -",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "depreciation",
+   "confidence": 0.3,
+   "desdeCache": true
+  },
+  {
+   "label": "Otras instalaciones 40.696.648,58 93.103,51 -",
+   "lado": "expense",
+   "page": 15,
+   "section": "COSTE",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "Mobiliario y material deportivo 2.472.155,15 92.000,00 - -",
+   "lado": "expense",
+   "page": 15,
+   "section": "COSTE",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipos informáticos 625.003,81 - - -",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Elementos de transporte 239.555,78 - - -",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "depreciation",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Otras instalaciones",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "c) Desplazamientos",
+   "lado": null,
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1386
+  },
+  {
+   "label": "15 9. Imputación de subvenciones de inmovilizado no financiero y otras",
+   "lado": "revenue",
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1117
+  },
+  {
+   "label": "15. Gastos financieros",
+   "lado": "expense",
+   "page": 3,
+   "section": "b) De valores negociables y otros instrumentos financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Otros 113.959,50 - -",
+   "lado": "expense",
+   "page": 13,
+   "section": "NOTA 6 / OTRO INMOVILIZADO INTANGIBLE / COSTE",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ventas de existencias en tiendas y museo",
+   "lado": "revenue",
+   "page": 32,
+   "section": "21.5. Ingresos accesorios y otros de gestión corriente: / 30.06.2023                                    30.06.2022",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "revenue",
+   "page": 32,
+   "section": "21.5. Ingresos accesorios y otros de gestión corriente: / 30.06.2023                                    30.06.2022",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "c) Por deudas con terceros",
+   "lado": null,
+   "page": 3,
+   "section": "b) De valores negociables y otros instrumentos financieros",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "other_income",
+     0.060000000000000005
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1466
+  },
+  {
+   "label": "7. Otros gastos de explotación",
+   "lado": "expense",
+   "page": 3,
+   "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Mobiliario y material deportivo 2.564.155,15 - - -",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "match_organisation_expense",
+     0.16
+    ],
+    [
+     "depreciation",
+     0.16
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Aplicaciones informáticas 3.053.731,96 263.870,37 -",
+   "lado": "expense",
+   "page": 13,
+   "section": "NOTA 6 / OTRO INMOVILIZADO INTANGIBLE / COSTE",
+   "choice": "other_amortisation",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_amortisation",
+     0.88
+    ],
+    [
+     "depreciation",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 935
+  },
+  {
+   "label": "Otros ingresos cesión -",
+   "lado": "revenue",
+   "page": 32,
+   "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.73
+    ],
+    [
+     "player_sales",
+     0.25
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Propiedad artística 143.720,82 - -",
+   "lado": "expense",
+   "page": 13,
+   "section": "NOTA 6 / OTRO INMOVILIZADO INTANGIBLE / COSTE",
+   "choice": "other_amortisation",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_amortisation",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "player_amortisation",
+     0.22
+    ]
+   ],
+   "tokens": 876
+  },
+  {
+   "label": "b2) En terceros",
+   "lado": null,
+   "page": 3,
+   "section": "b) De valores negociables y otros instrumentos financieros",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 1436
+  }
+ ]
+}

@@ -1,0 +1,343 @@
+{
+ "md": "Clubes/Ucrania/Polissya/polissya-financiero-2020.md",
+ "pdf": "Clubes/Ucrania/Polissya/polissya-financiero-2020.pdf",
+ "club": "polissya",
+ "year": 2020,
+ "numberFormat": "ambiguo",
+ "generatedAt": "2026-09-30T22:08:23.135Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 29,
+  "notasUsadas": []
+ },
+ "ladoConocido": 19,
+ "rubros": [
+  {
+   "label": "Чистий дохід від реалізації продукції (товарів, робіт, послуг)",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.002
+   ],
+   "origen": "estado 6",
+   "glosa": "Importe neto de la cifra de negocios (bienes, obras y servicios)"
+  },
+  {
+   "label": "Чисті зароблені страхові премії",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.00201
+   ],
+   "origen": "estado 6",
+   "glosa": "Primas devengadas netas"
+  },
+  {
+   "label": "премії підписані, валова сума",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.002011
+   ],
+   "origen": "estado 6",
+   "glosa": "Primas emitidas, importe bruto"
+  },
+  {
+   "label": "премії, передані у перестрахування",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.002012
+   ],
+   "origen": "estado 6",
+   "glosa": "Primas cedidas al reaseguro"
+  },
+  {
+   "label": "зміна резерву незароблених премій, валова сума",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.002013
+   ],
+   "origen": "estado 6",
+   "glosa": "Variación de la provisión para primas no consumidas, importe bruto"
+  },
+  {
+   "label": "зміна частки перестраховиків у резерві незароблених премій",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.002014
+   ],
+   "origen": "estado 6",
+   "glosa": "Variación de la participación de los reaseguradores en la provisión para primas no consumidas"
+  },
+  {
+   "label": "Собівартість реалізованої продукції (товарів, робіт, послуг)",
+   "lado": "expense",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.00205
+   ],
+   "origen": "estado 6",
+   "glosa": "Coste de las ventas (productos, bienes, obras y servicios)"
+  },
+  {
+   "label": "Дохід (витрати) від зміни у резервах довгострокових зобов'язань",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.002105
+   ],
+   "origen": "estado 6",
+   "glosa": "Ingresos (gastos) por variación de provisiones para compromisos a largo plazo"
+  },
+  {
+   "label": "Дохід (витрати) від зміни інших страхових резервів",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.00211
+   ],
+   "origen": "estado 6",
+   "glosa": "Ingresos (gastos) por variación de otras provisiones técnicas"
+  },
+  {
+   "label": "зміна інших страхових резервів, валова сума",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.002111
+   ],
+   "origen": "estado 6",
+   "glosa": "Variación de otras provisiones técnicas, importe bruto"
+  },
+  {
+   "label": "зміна частки перестраховиків в інших страхових резервах",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.002112
+   ],
+   "origen": "estado 6",
+   "glosa": "Variación de la participación del reaseguro en otras provisiones técnicas"
+  },
+  {
+   "label": "Інші операційні доходи",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.00212
+   ],
+   "origen": "estado 6",
+   "glosa": "Otros ingresos de explotación"
+  },
+  {
+   "label": "дохід від первісного визнання біологічних активів і сільськогосподарської продукції",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.002122
+   ],
+   "origen": "estado 6",
+   "glosa": "Ingresos por reconocimiento inicial de activos biológicos y productos agrícolas"
+  },
+  {
+   "label": "дохід від використання коштів, вивільнених від оподаткування",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.002123
+   ],
+   "origen": "estado 6",
+   "glosa": "Ingresos procedentes de fondos liberados de tributación"
+  },
+  {
+   "label": "Адміністративні витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.00213
+   ],
+   "origen": "estado 6",
+   "glosa": "Gastos de administración"
+  },
+  {
+   "label": "Витрати на збут",
+   "lado": "expense",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.00215
+   ],
+   "origen": "estado 6",
+   "glosa": "Gastos de comercialización y distribución"
+  },
+  {
+   "label": "Інші операційні витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.00218
+   ],
+   "origen": "estado 6",
+   "glosa": "Otros gastos de explotación"
+  },
+  {
+   "label": "витрати від первісного визнання біологічних активів і сільськогосподарської продукції",
+   "lado": "expense",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.002182
+   ],
+   "origen": "estado 6",
+   "glosa": "Gastos por reconocimiento inicial de activos biológicos y productos agrícolas"
+  },
+  {
+   "label": "Доход від участі в капіталі",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.0022
+   ],
+   "origen": "estado 6",
+   "glosa": "Participación en beneficios de entidades valoradas por el método de la participación"
+  },
+  {
+   "label": "Інші фінансові доходи",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.00222
+   ],
+   "origen": "estado 6",
+   "glosa": "Otros ingresos financieros"
+  },
+  {
+   "label": "Інші доходи",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.00224
+   ],
+   "origen": "estado 6",
+   "glosa": "Otros ingresos"
+  },
+  {
+   "label": "Фінансові витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.00225
+   ],
+   "origen": "estado 6",
+   "glosa": "Gastos financieros"
+  },
+  {
+   "label": "Втрати від участі в капіталі",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.002255
+   ],
+   "origen": "estado 6",
+   "glosa": "Participación en pérdidas de entidades valoradas por el método de la participación"
+  },
+  {
+   "label": "Інші витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.00227
+   ],
+   "origen": "estado 6",
+   "glosa": "Otros gastos"
+  },
+  {
+   "label": "Матеріальні витрати",
+   "lado": "expense",
+   "page": 4,
+   "section": "## III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "values": [
+    0.000024
+   ],
+   "origen": "estado 9",
+   "glosa": "Gastos de materiales y aprovisionamientos"
+  },
+  {
+   "label": "Витрати на оплату праці",
+   "lado": "expense",
+   "page": 4,
+   "section": "## III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "values": [
+    0.005134
+   ],
+   "origen": "estado 9",
+   "glosa": "Gastos de personal (sueldos y salarios)"
+  },
+  {
+   "label": "Відрахування на соціальні заходи",
+   "lado": "expense",
+   "page": 4,
+   "section": "## III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "values": [
+    0.001129
+   ],
+   "origen": "estado 9",
+   "glosa": "Cargas sociales y aportaciones a la seguridad social"
+  },
+  {
+   "label": "Амортизація",
+   "lado": "expense",
+   "page": 4,
+   "section": "## III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "values": [
+    0.000306
+   ],
+   "origen": "estado 9",
+   "glosa": "Amortización y depreciación"
+  },
+  {
+   "label": "Інші операційні витрати",
+   "lado": "expense",
+   "page": 4,
+   "section": "## III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "values": [
+    0.002706
+   ],
+   "origen": "estado 9",
+   "glosa": "Otros gastos de explotación"
+  }
+ ]
+}

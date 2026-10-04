@@ -1,0 +1,808 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.md",
+ "generado": "2026-10-03T23:03:06.199Z",
+ "estado": "ok",
+ "clubId": "fortalezaceif-co",
+ "year": 2022,
+ "escala": {
+  "valor": "miles",
+  "escalon": 1,
+  "factor": 1000,
+  "de": "estados-financieros-2023.pdf"
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf",
+   "campo": "resultado-final",
+   "valor": "(175.117)",
+   "linea": 1207,
+   "motivo": "Localizar no eligió el bloque del resultado impreso (el documento trae solo notas). Nota de patrimonio 'Resultados del ejercicio (175.117)'; lo repite el documento 2023 en su columna 2022 (L1099). Antes de impuestos: (199.789), L789.",
+   "evidencia": "estados-financieros-2022.md L1207; estados-financieros-2023.md L1099",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf",
+   "campo": "sin-dudas",
+   "valor": null,
+   "linea": null,
+   "motivo": "Guido 2026-10-02: el año cierra por ajuste manual; las dudas de localizar y extraer no vuelven a la cola.",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf",
+   "campo": "desglose",
+   "valor": "54.000",
+   "linea": null,
+   "etiqueta": "Patrocinios (1)",
+   "categoria": "sponsorship_commercial",
+   "motivo": "Guido 2026-10-02 (opción a): el renglón dice 2.334.630 y su detalle suma 2.280.630 (error del documento); se abre igual con la diferencia como 'Diferencia en el documento', patrocinio.",
+   "evidencia": "estados-financieros-2022.md L1219 (renglón) y L1229-1240 (detalle, total 2.280.630)",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "ingresos 4302.126 - gastos 4453.496 ± financiero -48.42 ± impuesto 0 no da el impreso -175.117 → aceptado por ajuste manual (resultado final (175.117))"
+  },
+  {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-175.117 por ajuste manual ((175.117): Localizar no eligió el bloque del resultado impreso (el documento trae solo notas). Nota de patrimonio 'Resultados del ejercicio (175.117)'; lo repite el documento 2023 en su columna 2022 (L1099). Antes de impuestos: (199.789), L789.); impuesto deducido -24.673 (antes de impuestos -199.79; el documento imprimía 0)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 3595.986; el sitio tiene 3595.986"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2022: 4302.126 en este documento y 4302.126 en estados-financieros-2023.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 3595.986 en estados-financieros-2021.pdf y 3595.986 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "escala: el documento no la declara; se tomó miles del año vecino (estados-financieros-2023.pdf), con el que coincide x1000 (escalón 1)",
+  "ajuste manual: el desglose de \"Patrocinios (1)\" se abre con una fila \"Diferencia en el documento\" de 54.000 (2026-10-02, Guido 2026-10-02 (opción a): el renglón dice 2.334.630 y su detalle suma 2.280.630 (error del documento); se abre igual con la diferencia como 'Diferencia en el documento', patrocinio.)",
+  "el desglose de \"Diversos\" (8 filas) no suma la fila: quedó la fila",
+  "el desglose de \"Gastos Laborales\" (36 filas) no suma la fila: quedó la fila",
+  "el desglose de \"Honorarios\" (7 filas) no suma la fila: quedó la fila",
+  "el desglose de \"Arrendamientos\" (6 filas) no suma la fila: quedó la fila",
+  "el desglose de \"Servicios\" (18 filas) no suma la fila: quedó la fila",
+  "el desglose de \"Legales\" (3 filas) no suma la fila: quedó la fila",
+  "el desglose de \"De viaje\" (4 filas) no suma la fila: quedó la fila",
+  "ajuste manual: resultado final (175.117) (2026-10-02, Localizar no eligió el bloque del resultado impreso (el documento trae solo notas). Nota de patrimonio 'Resultados del ejercicio (175.117)'; lo repite el documento 2023 en su columna 2022 (L1099). Antes de impuestos: (199.789), L789.)",
+  "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Las cifras de las notas 19 a 25 están expresadas en miles de pesos colombianos?",
+  "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma el resultado del ejercicio de la fila 'Resultados del ejercicio' del cuadro de patrimonio (b38) como resultado impreso, según el ajuste manual?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se usan como etiqueta de cada renglón del estado las frases introductorias de las notas (ej. L1214) porque los títulos numerados de las notas no aparecen en la transcripción?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se carga el desglose de patrocinios (L1229-L1240, total 2.280.630) aunque no coincide con 'Patrocinios (1)' de L1219 (2.334.630), diferencia de 54.000?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Falta en el documento un gasto por impuesto a las ganancias de 24.672 que explique la diferencia entre la suma de notas (-199.789) y el resultado del ejercicio (175.117) de L1207?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se omite la fila sin etiqueta de L1488 (23.014) por ser subtotal de ingresos financieros?"
+ ],
+ "reintentar": [
+  {
+   "renglon": "Diversos",
+   "suma": 259.806,
+   "objetivo": 6.089
+  },
+  {
+   "renglon": "Gastos Laborales",
+   "suma": 2188.633,
+   "objetivo": 1686.353
+  },
+  {
+   "renglon": "Honorarios",
+   "suma": 228.573,
+   "objetivo": 177.218
+  },
+  {
+   "renglon": "Arrendamientos",
+   "suma": 378.115,
+   "objetivo": 377.814
+  },
+  {
+   "renglon": "Servicios",
+   "suma": 546.501,
+   "objetivo": 404.995
+  },
+  {
+   "renglon": "Legales",
+   "suma": 1.886,
+   "objetivo": 20.367
+  },
+  {
+   "renglon": "De viaje",
+   "suma": 266.35,
+   "objetivo": 265.396
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Diversos",
+   "suma": 259.806,
+   "objetivo": 6.089
+  },
+  {
+   "renglon": "Gastos Laborales",
+   "suma": 2188.633,
+   "objetivo": 1686.353
+  },
+  {
+   "renglon": "Honorarios",
+   "suma": 228.573,
+   "objetivo": 177.218
+  },
+  {
+   "renglon": "Arrendamientos",
+   "suma": 378.115,
+   "objetivo": 377.814
+  },
+  {
+   "renglon": "Servicios",
+   "suma": 546.501,
+   "objetivo": 404.995
+  },
+  {
+   "renglon": "Legales",
+   "suma": 1.886,
+   "objetivo": 20.367
+  },
+  {
+   "renglon": "De viaje",
+   "suma": 266.35,
+   "objetivo": 265.396
+  }
+ ],
+ "totales": {
+  "ingresos": 4302.126,
+  "gastos": 4453.496,
+  "financiero": -48.42,
+  "impuesto": -24.673,
+  "resultadoImpreso": -175.117,
+  "resultadoParaCargar": -175.117,
+  "resultadoFinal": {
+   "valor": -175.117,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0,
+   "impuestoDeducido": -24.673
+  },
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Derechos de televisión nacional",
+   "lado": "ingreso",
+   "M": 1208.394,
+   "pagina": 25,
+   "linea": 1229,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Federación Colombiana de Futbol",
+   "lado": "ingreso",
+   "M": 100,
+   "pagina": 25,
+   "linea": 1230,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Auxilio protocolos bioseguridad (*)",
+   "lado": "ingreso",
+   "M": 18.83,
+   "pagina": 25,
+   "linea": 1231,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Auxilio hotelero (*)",
+   "lado": "ingreso",
+   "M": 112.436,
+   "pagina": 25,
+   "linea": 1232,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Convenio entre clubes",
+   "lado": "ingreso",
+   "M": 317.561,
+   "pagina": 25,
+   "linea": 1233,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Auxilio de arbitraje (*)",
+   "lado": "ingreso",
+   "M": 101.356,
+   "pagina": 25,
+   "linea": 1234,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Auxilio de transporte (*)",
+   "lado": "ingreso",
+   "M": 24.094,
+   "pagina": 25,
+   "linea": 1235,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Otros auxilios",
+   "lado": "ingreso",
+   "M": 51.775,
+   "pagina": 25,
+   "linea": 1236,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Infraestructura",
+   "lado": "ingreso",
+   "M": 71.681,
+   "pagina": 25,
+   "linea": 1237,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Propaganda y publicidad",
+   "lado": "ingreso",
+   "M": 274.503,
+   "pagina": 25,
+   "linea": 1239,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Diferencia en el documento",
+   "lado": "ingreso",
+   "M": 54,
+   "pagina": 25,
+   "linea": 1219,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\"",
+   "categoria": "sponsorship_commercial"
+  },
+  {
+   "etiqueta": "Derechos deportivos (2)",
+   "lado": "ingreso",
+   "M": 987.608,
+   "pagina": 25,
+   "linea": 1220,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\""
+  },
+  {
+   "etiqueta": "Transportes",
+   "lado": "ingreso",
+   "M": 68,
+   "pagina": 25,
+   "linea": 1221,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\""
+  },
+  {
+   "etiqueta": "Venta de Indumentaria",
+   "lado": "ingreso",
+   "M": 200.96,
+   "pagina": 25,
+   "linea": 1257,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Comercio al por mayor y menor (3)\""
+  },
+  {
+   "etiqueta": "Venta de boletería en taquilla",
+   "lado": "ingreso",
+   "M": 357.908,
+   "pagina": 25,
+   "linea": 1259,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Comercio al por mayor y menor (3)\""
+  },
+  {
+   "etiqueta": "Alquiler Deportivo (1)",
+   "lado": "ingreso",
+   "M": 168.84,
+   "pagina": 30,
+   "linea": 1462,
+   "origen": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Reintegro De Otros Costos Y Gastos (3)",
+   "lado": "ingreso",
+   "M": 147.506,
+   "pagina": 30,
+   "linea": 1464,
+   "origen": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Aprovechamientos",
+   "lado": "ingreso",
+   "M": 4.284,
+   "pagina": 30,
+   "linea": 1465,
+   "origen": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Indemnizaciones",
+   "lado": "ingreso",
+   "M": 26.29,
+   "pagina": 30,
+   "linea": 1466,
+   "origen": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Ajuste Al Peso",
+   "lado": "ingreso",
+   "M": 0.011,
+   "pagina": 30,
+   "linea": 1467,
+   "origen": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Diversos",
+   "lado": "ingreso",
+   "M": 6.089,
+   "pagina": 30,
+   "linea": 1468,
+   "origen": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "El costo detallado a continuación corresponde a la comercialización de artículos",
+   "lado": "gasto",
+   "M": 127.201,
+   "pagina": 26,
+   "linea": 1272,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos Laborales",
+   "lado": "gasto",
+   "M": 1686.353,
+   "pagina": 26,
+   "linea": 1282,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 177.218,
+   "pagina": 26,
+   "linea": 1300,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "M": 377.814,
+   "pagina": 26,
+   "linea": 1304,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Afiliaciones y sostenimientos",
+   "lado": "gasto",
+   "M": 2.734,
+   "pagina": 27,
+   "linea": 1315,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Impuestos",
+   "lado": "gasto",
+   "M": 29.317,
+   "pagina": 27,
+   "linea": 1316,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 15.231,
+   "pagina": 27,
+   "linea": 1317,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 404.995,
+   "pagina": 27,
+   "linea": 1318,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Legales",
+   "lado": "gasto",
+   "M": 20.367,
+   "pagina": 27,
+   "linea": 1328,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Terrenos",
+   "lado": "gasto",
+   "M": 17.068,
+   "pagina": 27,
+   "linea": 1330,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimiento y adecuaciones\""
+  },
+  {
+   "etiqueta": "Construcciones y edificaciones",
+   "lado": "gasto",
+   "M": 26.007,
+   "pagina": 27,
+   "linea": 1331,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimiento y adecuaciones\""
+  },
+  {
+   "etiqueta": "Maquinaria y equipo",
+   "lado": "gasto",
+   "M": 5.981,
+   "pagina": 27,
+   "linea": 1332,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimiento y adecuaciones\""
+  },
+  {
+   "etiqueta": "Equipo de computación y comunicación",
+   "lado": "gasto",
+   "M": 0.42,
+   "pagina": 27,
+   "linea": 1333,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimiento y adecuaciones\""
+  },
+  {
+   "etiqueta": "Muebles y enseres",
+   "lado": "gasto",
+   "M": 1.689,
+   "pagina": 27,
+   "linea": 1334,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimiento y adecuaciones\""
+  },
+  {
+   "etiqueta": "Flota y equipo de transporte",
+   "lado": "gasto",
+   "M": 16.077,
+   "pagina": 27,
+   "linea": 1335,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimiento y adecuaciones\""
+  },
+  {
+   "etiqueta": "De viaje",
+   "lado": "gasto",
+   "M": 265.396,
+   "pagina": 27,
+   "linea": 1337,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Combustible",
+   "lado": "gasto",
+   "M": 52.104,
+   "pagina": 27,
+   "linea": 1342,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Taxis y buses",
+   "lado": "gasto",
+   "M": 54.032,
+   "pagina": 27,
+   "linea": 1343,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Casinos y restaurantes",
+   "lado": "gasto",
+   "M": 95.105,
+   "pagina": 27,
+   "linea": 1344,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Estampillas",
+   "lado": "gasto",
+   "M": 1.67,
+   "pagina": 27,
+   "linea": 1345,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Papelería",
+   "lado": "gasto",
+   "M": 0.085,
+   "pagina": 27,
+   "linea": 1346,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Parqueadero",
+   "lado": "gasto",
+   "M": 0.364,
+   "pagina": 27,
+   "linea": 1347,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Elementos de aseo y cafetería (Hidratación)",
+   "lado": "gasto",
+   "M": 42.92,
+   "pagina": 27,
+   "linea": 1348,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Diversos",
+   "lado": "gasto",
+   "M": 13.526,
+   "pagina": 27,
+   "linea": 1349,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\""
+  },
+  {
+   "etiqueta": "Depreciaciones",
+   "lado": "gasto",
+   "M": 71.858,
+   "pagina": 27,
+   "linea": 1350,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Amortizaciones",
+   "lado": "gasto",
+   "M": 2,
+   "pagina": 27,
+   "linea": 1351,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Gastos Laborales",
+   "lado": "gasto",
+   "M": 502.281,
+   "pagina": 28,
+   "linea": 1362,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 51.355,
+   "pagina": 28,
+   "linea": 1382,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Impuestos",
+   "lado": "gasto",
+   "M": 8.522,
+   "pagina": 28,
+   "linea": 1387,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "M": 0.301,
+   "pagina": 28,
+   "linea": 1389,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Contribuciones y afiliaciones",
+   "lado": "gasto",
+   "M": 5.401,
+   "pagina": 28,
+   "linea": 1391,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 141.507,
+   "pagina": 28,
+   "linea": 1393,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Registro Mercantil",
+   "lado": "gasto",
+   "M": 1.866,
+   "pagina": 28,
+   "linea": 1404,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Legales\""
+  },
+  {
+   "etiqueta": "Tramites y licencias",
+   "lado": "gasto",
+   "M": 0.02,
+   "pagina": 29,
+   "linea": 1411,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Legales\""
+  },
+  {
+   "etiqueta": "Maquinaria y Equipo",
+   "lado": "gasto",
+   "M": 0.539,
+   "pagina": 29,
+   "linea": 1414,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimientos\""
+  },
+  {
+   "etiqueta": "Equipo de Computación Y Comunicación",
+   "lado": "gasto",
+   "M": 1.643,
+   "pagina": 29,
+   "linea": 1415,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimientos\""
+  },
+  {
+   "etiqueta": "Equipo De Oficina",
+   "lado": "gasto",
+   "M": 0.202,
+   "pagina": 29,
+   "linea": 1416,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimientos\""
+  },
+  {
+   "etiqueta": "De viaje",
+   "lado": "gasto",
+   "M": 0.954,
+   "pagina": 29,
+   "linea": 1417,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Elementos de Aseo y Cafetería",
+   "lado": "gasto",
+   "M": 7.026,
+   "pagina": 29,
+   "linea": 1420,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\""
+  },
+  {
+   "etiqueta": "Combustibles y Lubricantes",
+   "lado": "gasto",
+   "M": 1.851,
+   "pagina": 29,
+   "linea": 1421,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\""
+  },
+  {
+   "etiqueta": "Útiles Papelería y Fotocopias",
+   "lado": "gasto",
+   "M": 1.732,
+   "pagina": 29,
+   "linea": 1422,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\""
+  },
+  {
+   "etiqueta": "Parqueaderos",
+   "lado": "gasto",
+   "M": 0.06,
+   "pagina": 29,
+   "linea": 1423,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\""
+  },
+  {
+   "etiqueta": "Casino Y Restaurante",
+   "lado": "gasto",
+   "M": 3.23,
+   "pagina": 29,
+   "linea": 1424,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\""
+  },
+  {
+   "etiqueta": "Diversos",
+   "lado": "gasto",
+   "M": 4.764,
+   "pagina": 29,
+   "linea": 1425,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\""
+  },
+  {
+   "etiqueta": "Taxis y buses",
+   "lado": "gasto",
+   "M": 0.011,
+   "pagina": 29,
+   "linea": 1426,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\""
+  },
+  {
+   "etiqueta": "Depreciaciones",
+   "lado": "gasto",
+   "M": 99.989,
+   "pagina": 29,
+   "linea": 1428,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Deterioro de cartera",
+   "lado": "gasto",
+   "M": 33.88,
+   "pagina": 29,
+   "linea": 1429,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Amortizaciones",
+   "lado": "gasto",
+   "M": 6.949,
+   "pagina": 29,
+   "linea": 1430,
+   "origen": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Gastos no Deducibles (1)",
+   "lado": "gasto",
+   "M": 23.354,
+   "pagina": 29,
+   "linea": 1439,
+   "origen": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Multas sanciones y litigios (2)",
+   "lado": "gasto",
+   "M": 31.998,
+   "pagina": 29,
+   "linea": 1440,
+   "origen": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Impuestos Asumidos",
+   "lado": "gasto",
+   "M": 1.11,
+   "pagina": 29,
+   "linea": 1441,
+   "origen": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Ajuste Al Peso",
+   "lado": "gasto",
+   "M": 0.567,
+   "pagina": 29,
+   "linea": 1442,
+   "origen": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\""
+  },
+  {
+   "etiqueta": "Intereses de mora",
+   "lado": "gasto",
+   "M": 14.852,
+   "pagina": 29,
+   "linea": 1443,
+   "origen": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Los costos financieros están comprendidos al 31 de diciembre de:",
+   "M": -48.42,
+   "linea": 1495
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": 24.673
+  }
+ ]
+}

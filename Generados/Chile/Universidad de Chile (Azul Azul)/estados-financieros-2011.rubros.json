@@ -1,0 +1,246 @@
+{
+  "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2011.md",
+  "pdf": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2011.pdf",
+  "club": "udechile-cl",
+  "year": 2011,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:57:11.793Z",
+  "tieOuts": {
+    "cierran": 14,
+    "noCierran": 24
+  },
+  "warnings": [
+    "5 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "19 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 20,
+    "notasUsadas": []
+  },
+  "ladoConocido": 19,
+  "rubros": [
+    {
+      "label": "amortizado",
+      "lado": null,
+      "page": 6,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo",
+      "values": [
+        -2.5
+      ],
+      "origen": "estado 6",
+      "glosa": "amortizado"
+    },
+    {
+      "label": "Gasto de administración",
+      "lado": "expense",
+      "page": 6,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo",
+      "values": [
+        -2702.374
+      ],
+      "origen": "estado 6",
+      "glosa": "Gasto de administración"
+    },
+    {
+      "label": "Ingresos financieros",
+      "lado": "revenue",
+      "page": 6,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo",
+      "values": [
+        13.151
+      ],
+      "origen": "estado 6",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Costos financieros",
+      "lado": "expense",
+      "page": 6,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo",
+      "values": [
+        -159.54
+      ],
+      "origen": "estado 6",
+      "glosa": "Costos financieros"
+    },
+    {
+      "label": "Gasto por impuestos a las ganancias",
+      "lado": "expense",
+      "page": 6,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo",
+      "values": [
+        -160.8
+      ],
+      "origen": "estado 6",
+      "glosa": "Gasto por impuestos a las ganancias"
+    },
+    {
+      "label": "Borderó (costos directos)",
+      "lado": "expense",
+      "page": 62,
+      "section": "20. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES.",
+      "values": [
+        -1390.635
+      ],
+      "origen": "estado 42",
+      "glosa": "Borderó (costos directos)"
+    },
+    {
+      "label": "Remuneraciones",
+      "lado": "expense",
+      "page": 62,
+      "section": "20. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES.",
+      "values": [
+        -4770.138
+      ],
+      "origen": "estado 42",
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Amortización de pases",
+      "lado": "expense",
+      "page": 62,
+      "section": "20. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES.",
+      "values": [
+        -1643.517
+      ],
+      "origen": "estado 42",
+      "glosa": "Amortización de pases"
+    },
+    {
+      "label": "Costo de venta pases de jugadores",
+      "lado": "expense",
+      "page": 62,
+      "section": "20. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES.",
+      "values": [
+        -743.397
+      ],
+      "origen": "estado 42",
+      "glosa": "Costo de venta pases de jugadores"
+    },
+    {
+      "label": "Otros gastos de operación",
+      "lado": "expense",
+      "page": 62,
+      "section": "20. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES.",
+      "values": [
+        -1429.15
+      ],
+      "origen": "estado 42",
+      "glosa": "Otros gastos de operación"
+    },
+    {
+      "label": "Otros Activos financieros no corrientes 260.140 264.765 0 0 0",
+      "lado": "revenue",
+      "page": 65,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados como / mantenidos para la venta o como mantenidos para",
+      "values": [
+        260.14
+      ],
+      "origen": "estado 48",
+      "glosa": "Otros Activos financieros no corrientes 260.140 264.765 0 0 0"
+    },
+    {
+      "label": "Otros Activos no financieros no corrientes 1.198.302 1.247.221 0 0 0",
+      "lado": "revenue",
+      "page": 65,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados como / mantenidos para la venta o como mantenidos para",
+      "values": [
+        1198.302
+      ],
+      "origen": "estado 48",
+      "glosa": "Otros Activos no financieros no corrientes 1.198.302 1.247.221 0 0 0"
+    },
+    {
+      "label": "Activos intangibles distintos de la plusvalía 12.194.544 12.017.037 0 0 0",
+      "lado": "revenue",
+      "page": 65,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados como / mantenidos para la venta o como mantenidos para",
+      "values": [
+        12194.544
+      ],
+      "origen": "estado 48",
+      "glosa": "Activos intangibles distintos de la plusvalía 12.194.544 12.017.037 0 0 0"
+    },
+    {
+      "label": "Propiedades, Planta y Equipo 3.614.997 3.690.367 0 0 0",
+      "lado": "revenue",
+      "page": 65,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados como / mantenidos para la venta o como mantenidos para",
+      "values": [
+        3614.997
+      ],
+      "origen": "estado 48",
+      "glosa": "Propiedades, Planta y Equipo 3.614.997 3.690.367 0 0 0"
+    },
+    {
+      "label": "Activos por impuestos diferidos 1.702.516 659.081 33.198 273.047",
+      "lado": "expense",
+      "page": 65,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados como / mantenidos para la venta o como mantenidos para",
+      "values": [
+        9.415
+      ],
+      "origen": "estado 48",
+      "glosa": "Activos por impuestos diferidos 1.702.516 659.081 33.198 273.047"
+    },
+    {
+      "label": "Borderó",
+      "lado": "revenue",
+      "page": 62,
+      "section": "19. INGRESOS ORDINARIOS.",
+      "values": [
+        5110.123
+      ],
+      "origen": "estado 40",
+      "glosa": "Borderó"
+    },
+    {
+      "label": "Publicidad",
+      "lado": "revenue",
+      "page": 62,
+      "section": "19. INGRESOS ORDINARIOS.",
+      "values": [
+        2799.437
+      ],
+      "origen": "estado 40",
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Derechos de T.V.",
+      "lado": "revenue",
+      "page": 62,
+      "section": "19. INGRESOS ORDINARIOS.",
+      "values": [
+        1541.73
+      ],
+      "origen": "estado 40",
+      "glosa": "Derechos de T.V."
+    },
+    {
+      "label": "jugadores",
+      "lado": "revenue",
+      "page": 62,
+      "section": "Ingresos por transferencias de pases de",
+      "values": [
+        3420.666
+      ],
+      "origen": "estado 41",
+      "glosa": "jugadores"
+    },
+    {
+      "label": "Ingresos varios",
+      "lado": "revenue",
+      "page": 62,
+      "section": "Ingresos por transferencias de pases de",
+      "values": [
+        213.594
+      ],
+      "origen": "estado 41",
+      "glosa": "Ingresos varios"
+    }
+  ]
+}

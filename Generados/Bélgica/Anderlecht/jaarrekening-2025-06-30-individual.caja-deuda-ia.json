@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Anderlecht/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-02T00:10:34.136Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Resultatenrekening (in EUR)",
+ "caja": {
+  "lineas": [
+   419
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas del pasivo (schulden, códigos 17/49, financiële schulden 170/4 y 43) no están incluidas, por lo que no se puede identificar la deuda financiera; la escala es en euros (unidades), según el formato del modelo NBB y el total del activo de 73.063.219 que coincide con € 73.063.218,86."
+}

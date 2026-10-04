@@ -1,0 +1,710 @@
+{
+  "club": "arsenal-gb",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2024-25.md",
+  "generatedAt": "2026-09-30T22:44:39.003Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 12,
+    "eu": 0,
+    "space": 2
+  },
+  "scannedWarning": false,
+  "tableCount": 17,
+  "relevantTableCount": 4,
+  "tables": [
+    {
+      "page": 23,
+      "section": "ARSENAL HOLDINGS LIMITED / CONSOLIDATED PROFIT AND LOSS ACCOUNT",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Group turnover 3 690,544",
+          "values": [
+            "690,998",
+            "615,206",
+            "1,374",
+            "616,580"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operating expenses",
+          "values": [
+            "(567,338)",
+            "(186,868)",
+            "(754,206)",
+            "(493,875)",
+            "(171,099)",
+            "(664,974)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operating profit/(loss)",
+          "values": [
+            "123,206",
+            "(186,414)",
+            "(63,208)",
+            "121,331",
+            "(169,725)",
+            "(48,394)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Share of joint venture operating loss . (1,690) - (1,690) (1,934) a",
+          "values": [
+            "(1,934)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profit on disposal of player registrations : 81,237 81,237 -",
+          "values": [
+            "$1,073",
+            "51,073"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 23,
+      "section": "Profit/(loss) before net finance charges 121,516 (105,177) | 16,339 119,397 (118,652) 745",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Net finance charges",
+          "values": [
+            "(17,687)",
+            "(18,432)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Loss) before taxation",
+          "values": [
+            "(1,348)",
+            "(17,687)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 25,
+      "section": "ARSENAL HOLDINGS LIMITED / STATEMENT OF CHANGES IN EQUITY",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "ended 31 May 2024 - - - -",
+          "values": [
+            "(17,688)",
+            "(17,688)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 31 May 2024 .",
+          "values": [
+            "5,369",
+            "29,997",
+            "26,699",
+            "65,725",
+            "127,852"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "Total comprehensive expense for the year",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "ended 31 May 2025 - - - -",
+          "values": [
+            "(1,387)",
+            "(1,387)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "As at 31 May 2025 ,",
+          "values": [
+            "5,369",
+            "29,997",
+            "26,699",
+            "64,338",
+            "126,465"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 32,
+      "section": "ARSENAL HOLDINGS LIMITED / NOTES TO THE ACCOUNTS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gate and other match day revenues ;",
+          "values": [
+            "153,854",
+            "131,652"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Broadcasting",
+          "values": [
+            "272,784",
+            "262,252"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Commercial",
+          "values": [
+            "263,193",
+            "218,268"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Property",
+          "values": [
+            "3,034"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "ARSENAL HOLDINGS LIMITED / NOTES TO THE ACCOUNTS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Wages and salaries",
+          "values": [
+            "303,171",
+            "286,960"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Social security costs",
+          "values": [
+            "41,441",
+            "38,133"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other pension costs ,",
+          "values": [
+            "2,192",
+            "2,729"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Remuneration for services 2,440 2,440 / 2,440 2,440 / The number of directors who were:- / Members of a defined benefit pension scheme - - / Remuneration of the highest paid director:- £7000 £°000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Emoluments",
+          "values": [
+            "2,000",
+            "2,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneration of key management personnel",
+          "values": [
+            "6,424",
+            "7,341"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "ARSENAL HOLDINGS LIMITED / NOTES TO THE ACCOUNTS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "After five years",
+          "values": [
+            "18,218",
+            "17,222"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total debt",
+          "values": [
+            "18,218",
+            "17,222"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "policy for managing these risks. / The carrying value of the Group’s financial instruments is analysed as follows:- / ; 2025 2024 / Financial Assets ; £000 £°000 / Measured at undiscounted amount receivable:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cash at bank",
+          "values": [
+            "55,994",
+            "66,819"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trade and other debtors",
+          "values": [
+            "121,731",
+            "60,324"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "177,725 127,143 / Financial Liabilities / Measured at amortised cost:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "C & D Debentures",
+          "values": [
+            "(18,171)",
+            "(17,677)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balance due to parent undertaking (340,076) |",
+          "values": [
+            "(324,062)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 42,
+      "section": "ARSENAL HOLDINGS LIMITED / NOTES TO THE ACCOUNTS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "New provisions established ,",
+          "values": [
+            "38,699",
+            "24,628"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Classified as creditors",
+          "values": [
+            "(18,286)",
+            "(28,037)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cancelled as no longer required",
+          "values": [
+            "(9,806)",
+            "(8,949)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "(2024 - £1.21 million) in respect of the losses of the joint venture (see note 11). / Group / 2025 2024 / £°000 £7000 / Deferred tax provision",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Tax losses (including excess corporate interest)",
+          "values": [
+            "(21,616)",
+            "(19,744)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Accelerated capital allowances",
+          "values": [
+            "10,229",
+            "8,543"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capitalised interest",
+          "values": [
+            "7,199",
+            "7,355"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rollover relief on player registrations",
+          "values": [
+            "4,374",
+            "3,822"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "ARSENAL HOLDINGS LIMITED / NOTES TO THE ACCOUNTS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Operating loss",
+          "values": [
+            "(63,208)",
+            "(48,394)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortisation of player registrations",
+          "values": [
+            "171,627",
+            "171,099"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "Impairment of player registrations 15,241 - / Profit on disposal of fixed assets (19) / Loss on disposal of investments - 25",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depreciation (net of grant amortisation)",
+          "values": [
+            "19,778",
+            "18,161"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operating cash flow before working capital",
+          "values": [
+            "143,419",
+            "140,891"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "(Increase) in stock (4,783) (19)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(Increase)/Decrease in debtors",
+          "values": [
+            "(26,915)",
+            "7,590"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Increase in creditors",
+          "values": [
+            "36,216",
+            "27,595"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net cash inflow from operating activities",
+          "values": [
+            "147,937",
+            "176,057"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "Analysis of changes in net debt At | June Non cash At 31 May / 2024 changes Cash flows _ 2025 / £7000 £7000 £7000 £7000 / Cash at bank and in hand 66,819 - (10,825) 55,994 / Cash equivalents - - - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "66,819 -",
+          "values": [
+            "(10,825)",
+            "55,994"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Debentures (17,722) (496) -",
+          "values": [
+            "(18,218)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balance due to parent undertaking",
+          "values": [
+            "(324,062)",
+            "(2,493)",
+            "(13,521)",
+            "(340,076)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net (debt)",
+          "values": [
+            "(274,965)",
+            "(2,989)",
+            "(24,346)",
+            "(302,300)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "Group’s A and B debentures. / Gross cash flows 2025 2024 / £7000 £°000 / Player registrations",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Payments for purchase of players (201,119) =",
+          "values": [
+            "(247,650)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receipts from sale of players",
+          "values": [
+            "58,089",
+            "54,256"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(143,030) =",
+          "values": [
+            "(193,394)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 40,
+      "section": "ARSENAL HOLDINGS LIMITED / NOTES TO THE ACCOUNTS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total debt",
+      "target": "18,218",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 40,
+      "section": "ARSENAL HOLDINGS LIMITED / NOTES TO THE ACCOUNTS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total debt",
+      "target": "17,222",
+      "addendCount": 1,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 11,
+    "results": [
+      {
+        "label": "Group turnover 3 690,544",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Group turnover 3 690,544",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operating expenses",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operating expenses",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operating profit/(loss)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operating profit/(loss)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Share of joint venture operating loss . (1,690) - (1,690) (1,934) a",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Share of joint venture operating loss",
+        "similarity": 71
+      },
+      {
+        "label": "Share of joint venture operating loss . (1,690) - (1,690) (1,934) a",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Profit on disposal of player registrations : 81,237 81,237 -",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "player_sales",
+        "matchedLabel": "Profit on disposal of player registrations",
+        "similarity": 80
+      },
+      {
+        "label": "Profit on disposal of player registrations : 81,237 81,237 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Net finance charges",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Net finance charges",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(Loss) before taxation",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(Loss) before taxation",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ended 31 May 2025 - - - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ended 31 May 2025 - - - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "As at 31 May 2025 ,",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "As at 31 May 2025 ,",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "C & D Debentures",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "C & D Debentures",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Balance due to parent undertaking (340,076) |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Balance due to parent undertaking (340,076) |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "gb",
+    "query": "Arsenal",
+    "matches": [
+      {
+        "leagueId": "gb-premierleague",
+        "year": "2025",
+        "matchedName": "Arsenal",
+        "wikipediaPage": "2024–25 Premier League"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [
+    {
+      "page": 30,
+      "line": "Transactions denominated in foreign currencies are translated at the exchange rate at the date of the"
+    },
+    {
+      "page": 30,
+      "line": "year-end exchange rates. Exchange gains or losses are dealt with in the profit and loss account."
+    }
+  ],
+  "warnings": []
+}

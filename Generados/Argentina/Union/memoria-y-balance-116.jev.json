@@ -1,0 +1,536 @@
+{
+ "md": "Clubes/Argentina/Union/memoria-y-balance-116.md",
+ "generatedAt": "2026-09-30T22:48:21.894Z",
+ "rubrosHuella": "f75676f5317559e1a51a18851f89ce8a582267f7",
+ "rubros": [
+  {
+   "label": "Sueldos y Jornales de Fútbol",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Gastos de Fútbol",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Gastos del Estadio Cubierto",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.59
+    ],
+    [
+     "match_organisation_expense",
+     0.35
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1155
+  },
+  {
+   "label": "Sueldos y Jornales de Maestranza",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0.03
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Sueldos y Jornales p/ Reunión",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "wages_squad",
+     0.09
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Sueldos y Cargas Soc. de Administración",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Gastos Administrativos",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Gastos del Estadio de Fútbol",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Gastos de partidos oficiales",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Energía Eléctrica, Gas, Agua, Telefonos.",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1084
+  },
+  {
+   "label": "Gastos de Vigilancia",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "match_organisation_expense",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Amortizaciones ( Anexo I )",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "depreciation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "depreciation",
+     0.98
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Gastos por Prestamos y Ventas de Jugadores",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Gastos del Complejo La Tatenguita",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "admin_general_expense",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "match_organisation_expense",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1172
+  },
+  {
+   "label": "Comisiones y gtos bancarios",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Gastos de Mantenimiento",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.47
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Amortizaciones de Activos Intangibles ( Anexo II )",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "player_amortisation",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "player_amortisation",
+     0.92
+    ],
+    [
+     "other_amortisation",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 987
+  },
+  {
+   "label": "Departamento para la Actividad Educativa",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "education_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "education_expense",
+     0.54
+    ],
+    [
+     "youth_other_sports_expense",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "IVA no computable",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 860
+  },
+  {
+   "label": "Gastos Generales",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Quebrantos por Incobrables y otras Contingencias",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Egresos de Subcomisiones",
+   "lado": "expense",
+   "page": 42,
+   "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1015
+  }
+ ]
+}

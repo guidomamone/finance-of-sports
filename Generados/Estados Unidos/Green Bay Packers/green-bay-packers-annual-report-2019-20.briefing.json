@@ -1,0 +1,331 @@
+{
+  "club": "green-bay-packers",
+  "year": 2020,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Estados Unidos/Green Bay Packers/green-bay-packers-annual-report-2019-20.md",
+  "generatedAt": "2026-09-30T22:01:25.892Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 4,
+    "eu": 1,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 20,
+      "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+      "columns": [
+        "Statement of Income",
+        "2020",
+        "2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Revenue",
+          "values": [
+            "$ thousands",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "National",
+          "values": [
+            "$295,971",
+            "$274,293"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Local",
+          "values": [
+            "210,914",
+            "203,650"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total revenue",
+          "values": [
+            "$506,885",
+            "$477,943"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Expenses",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Player costs",
+          "values": [
+            "226,548",
+            "243,082"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Team",
+          "values": [
+            "46,510",
+            "63,595"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sales, marketing & fan engagement",
+          "values": [
+            "66,994",
+            "66,927"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Facilities, net*",
+          "values": [
+            "33,429",
+            "30,466"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "General & administrative",
+          "values": [
+            "63,101",
+            "73,149"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total expenses",
+          "values": [
+            "436,582",
+            "477,219"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Profit from operations",
+          "values": [
+            "$70,303",
+            "$ 724"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Net income",
+          "values": [
+            "$34,862",
+            "$ 8,368"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 21,
+      "section": "# NET INCOME / # PRESERVING THE PACKERS FRANCHISE",
+      "columns": [
+        "Balance Sheet",
+        "2020",
+        "2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Assets",
+          "values": [
+            "$ thousands",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash & Investments",
+          "values": [
+            "$422,026",
+            "$444,170"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Unamortized signing bonuses, net",
+          "values": [
+            "136,030",
+            "152,222"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Property & equipment net",
+          "values": [
+            "383,621",
+            "370,581"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other",
+          "values": [
+            "101,410",
+            "98,038"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total assets",
+          "values": [
+            "$1,043,087",
+            "$1,065,011"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Liabilities & Equity",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Debt",
+          "values": [
+            "144,427",
+            "147,407"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compensation liabilities",
+          "values": [
+            "69,451",
+            "83,711"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other liabilities",
+          "values": [
+            "130,036",
+            "170,431"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equity",
+          "values": [
+            "699,173",
+            "663,462"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Liabilities & Equity",
+          "values": [
+            "$1,043,087",
+            "$1,065,011"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 20,
+      "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total revenue",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$506,885\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 20,
+      "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total revenue",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$477,943\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 20,
+      "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total expenses",
+      "target": "436,582",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total expenses",
+      "target": "477,219",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "# NET INCOME / # PRESERVING THE PACKERS FRANCHISE",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total assets",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$1,043,087\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 21,
+      "section": "# NET INCOME / # PRESERVING THE PACKERS FRANCHISE",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total assets",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$1,065,011\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 21,
+      "section": "# NET INCOME / # PRESERVING THE PACKERS FRANCHISE",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Liabilities & Equity",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$1,043,087\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 21,
+      "section": "# NET INCOME / # PRESERVING THE PACKERS FRANCHISE",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Liabilities & Equity",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$1,065,011\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/green-bay-packers-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"green-bay-packers\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "6 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

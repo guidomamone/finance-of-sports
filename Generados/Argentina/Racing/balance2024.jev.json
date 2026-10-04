@@ -1,0 +1,328 @@
+{
+ "md": "Clubes/Argentina/Racing/balance2024.md",
+ "generatedAt": "2026-09-30T04:25:32.663Z",
+ "rubros": [
+  {
+   "label": "Diversos (Anexo III)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Ejercicio Nro. 122 / 2024                    2023 / Recursos ordinarios",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Divisas en custodia USD",
+   "lado": "expense",
+   "page": 32,
+   "section": "Divisas en custodia",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "match_organisation_expense",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 891
+  },
+  {
+   "label": "Generales (Anexo IV)",
+   "lado": "expense",
+   "page": 5,
+   "section": "Gastos ordinarios",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Específicos(Anexo III)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Ejercicio Nro. 122 / 2024                    2023 / Recursos ordinarios",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "competition_bonus",
+     0.03
+    ]
+   ],
+   "tokens": 934
+  },
+  {
+   "label": "Específicos (Anexo IV)",
+   "lado": "expense",
+   "page": 5,
+   "section": "Gastos ordinarios",
+   "choice": "match_organisation_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "(Disminución) / Aumento del efectivo",
+   "lado": null,
+   "page": 7,
+   "section": "inversión / Resultados financieros y por tenencia generados por el",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1479
+  },
+  {
+   "label": "efectivo (incluyendo RECPAM)",
+   "lado": null,
+   "page": 7,
+   "section": "inversión / Resultados financieros y por tenencia generados por el",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Generales(Anexo III)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Ejercicio Nro. 122 / 2024                    2023 / Recursos ordinarios",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "A.C. Siena SPA Préstamo - Martínez €",
+   "lado": "revenue",
+   "page": 32,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Calcio Catania SPA - Castro €",
+   "lado": "revenue",
+   "page": 32,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "Atlético Mineiro - Zaracho USD",
+   "lado": "revenue",
+   "page": 32,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 824
+  },
+  {
+   "label": "€",
+   "lado": "expense",
+   "page": 32,
+   "section": "Divisas en custodia",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 785
+  },
+  {
+   "label": "Godoy Cruz – Ojeda USD",
+   "lado": "revenue",
+   "page": 32,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 821
+  },
+  {
+   "label": "Southampton – Alcaraz USD",
+   "lado": "revenue",
+   "page": 32,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 823
+  }
+ ]
+}

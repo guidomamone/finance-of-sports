@@ -1,0 +1,889 @@
+{
+  "md": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2013.md",
+  "pdf": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2013.pdf",
+  "club": "fluminense-br",
+  "year": 2013,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:52:42.078Z",
+  "tieOuts": {
+    "cierran": 48,
+    "noCierran": 8
+  },
+  "warnings": [
+    "5 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "3 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 76,
+    "notasUsadas": [
+      "3"
+    ]
+  },
+  "ladoConocido": 75,
+  "rubros": [
+    {
+      "label": "Receita Líquida (Nota 20)",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        116.588
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos netos (Nota 20)"
+    },
+    {
+      "label": "Profissional",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -74.337
+      ],
+      "origen": "estado 1",
+      "glosa": "Profesional"
+    },
+    {
+      "label": "Gastos com Pessoal",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -31.559
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Serviços Profissionais",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -2.794
+      ],
+      "origen": "estado 1",
+      "glosa": "Servicios profesionales"
+    },
+    {
+      "label": "Gastos com Jogos e Bonificações",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -7.51
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos por partidos y primas"
+    },
+    {
+      "label": "Direitos de Imagem e de Arena",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -6.361
+      ],
+      "origen": "estado 1",
+      "glosa": "Derechos de imagen y de arena"
+    },
+    {
+      "label": "Amortização Atletas Profissionais Contratados",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -10.433
+      ],
+      "origen": "estado 1",
+      "glosa": "Amortización de deportistas profesionales contratados"
+    },
+    {
+      "label": "Gastos Gerais",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -15.68
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos generales"
+    },
+    {
+      "label": "Amador",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -7.676
+      ],
+      "origen": "estado 1",
+      "glosa": "Amateur"
+    },
+    {
+      "label": "Gastos com Pessoal",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -2.716
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Serviços Profissionais",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -0.703
+      ],
+      "origen": "estado 1",
+      "glosa": "Servicios profesionales"
+    },
+    {
+      "label": "Gastos Gerais",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -4.257
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos generales"
+    },
+    {
+      "label": "Despesas Operacionais",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -37.883
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "Despesas com Pessoal",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -6.522
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Despesas Gerais e Administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -4.551
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos generales y administrativos"
+    },
+    {
+      "label": "Serviços Profissionais",
+      "lado": null,
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -5.805
+      ],
+      "origen": "estado 1",
+      "glosa": "Servicios profesionales"
+    },
+    {
+      "label": "Financeiras Líquidas",
+      "lado": null,
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -16.176
+      ],
+      "origen": "estado 1",
+      "glosa": "Resultados financieros netos"
+    },
+    {
+      "label": "Despesas com Depreciação e Amortização",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -2.526
+      ],
+      "origen": "estado 1",
+      "glosa": "Dotaciones para amortizaciones y depreciaciones"
+    },
+    {
+      "label": "Despesas com Provisões - (Contigências)",
+      "lado": "expense",
+      "page": 1,
+      "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -2.303
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos por provisiones - (Contingencias)"
+    },
+    {
+      "label": "Sede",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        319.057
+      ],
+      "origen": "estado 7",
+      "glosa": "Sede"
+    },
+    {
+      "label": "Edificações e Benfeitorias",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        165.003
+      ],
+      "origen": "estado 7",
+      "glosa": "Edificaciones y mejoras"
+    },
+    {
+      "label": "Móveis e Utensílios",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        0.372
+      ],
+      "origen": "estado 7",
+      "glosa": "Mobiliario y enseres"
+    },
+    {
+      "label": "Equipamento Processamento",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        0.076
+      ],
+      "origen": "estado 7",
+      "glosa": "Equipos de procesamiento de datos"
+    },
+    {
+      "label": "Equipamentos Diversos",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        0.899
+      ],
+      "origen": "estado 7",
+      "glosa": "Equipos diversos"
+    },
+    {
+      "label": "Pinacoteca",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        0.707
+      ],
+      "origen": "estado 7",
+      "glosa": "Pinacoteca"
+    },
+    {
+      "label": "Terrenos",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        152
+      ],
+      "origen": "estado 7",
+      "glosa": "Terrenos"
+    },
+    {
+      "label": "Xerém",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        4.759
+      ],
+      "origen": "estado 7",
+      "glosa": "Xerém"
+    },
+    {
+      "label": "Benfeitorias e Instalações",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        2.002
+      ],
+      "origen": "estado 7",
+      "glosa": "Mejoras e instalaciones"
+    },
+    {
+      "label": "Móveis e utensílios",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        0.128
+      ],
+      "origen": "estado 7",
+      "glosa": "Mobiliario y enseres"
+    },
+    {
+      "label": "Equipamento de Processamento",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        0.015
+      ],
+      "origen": "estado 7",
+      "glosa": "Equipos de procesamiento de datos"
+    },
+    {
+      "label": "Equipamentos Diversos",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        0.172
+      ],
+      "origen": "estado 7",
+      "glosa": "Equipos diversos"
+    },
+    {
+      "label": "Edificações e Benfeitorias",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        2.442
+      ],
+      "origen": "estado 7",
+      "glosa": "Edificaciones y mejoras"
+    },
+    {
+      "label": "Atletas profissionais",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        18.034
+      ],
+      "origen": "estado 7",
+      "glosa": "Deportistas profesionales"
+    },
+    {
+      "label": "Infantil",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        1.334
+      ],
+      "origen": "estado 7",
+      "glosa": "Infantil"
+    },
+    {
+      "label": "Júnior",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        0.485
+      ],
+      "origen": "estado 7",
+      "glosa": "Júnior"
+    },
+    {
+      "label": "Juvenil",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        2.545
+      ],
+      "origen": "estado 7",
+      "glosa": "Juvenil"
+    },
+    {
+      "label": "Direito uso de software",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+      "values": [
+        0.121
+      ],
+      "origen": "estado 7",
+      "glosa": "Derechos de uso de software"
+    },
+    {
+      "label": "Receitas com Bilheteria",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 20 RECEITA LÍQUIDA",
+      "values": [
+        0.008071
+      ],
+      "origen": "estado 20",
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Receitas com Repasse de Direitos Federativos",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 20 RECEITA LÍQUIDA",
+      "values": [
+        0.014357
+      ],
+      "origen": "estado 20",
+      "glosa": "Ingresos por transferencia de derechos federativos"
+    },
+    {
+      "label": "Receitas de Transmissões Televisivas",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 20 RECEITA LÍQUIDA",
+      "values": [
+        0.057469
+      ],
+      "origen": "estado 20",
+      "glosa": "Ingresos por retransmisiones televisivas"
+    },
+    {
+      "label": "Receitas com Publicidade e Patrocínio",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 20 RECEITA LÍQUIDA",
+      "values": [
+        0.02086
+      ],
+      "origen": "estado 20",
+      "glosa": "Ingresos por publicidad y patrocinio"
+    },
+    {
+      "label": "Receitas com Licenciamentos e Franquias",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 20 RECEITA LÍQUIDA",
+      "values": [
+        0.001965
+      ],
+      "origen": "estado 20",
+      "glosa": "Ingresos por licencias y franquicias"
+    },
+    {
+      "label": "Receitas com Premiações e Loterias",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 20 RECEITA LÍQUIDA",
+      "values": [
+        0.001711
+      ],
+      "origen": "estado 20",
+      "glosa": "Ingresos por premios y loterías"
+    },
+    {
+      "label": "Receitas com Esportes Amadores",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 20 RECEITA LÍQUIDA",
+      "values": [
+        0.001956
+      ],
+      "origen": "estado 20",
+      "glosa": "Ingresos por deportes amateurs"
+    },
+    {
+      "label": "Receitas com Associados",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 20 RECEITA LÍQUIDA",
+      "values": [
+        0.013134
+      ],
+      "origen": "estado 20",
+      "glosa": "Ingresos por cuotas de socios"
+    },
+    {
+      "label": "Receitas com Aluguéis",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 20 RECEITA LÍQUIDA",
+      "values": [
+        0.001385
+      ],
+      "origen": "estado 20",
+      "glosa": "Ingresos por alquileres"
+    },
+    {
+      "label": "Outras Receitas",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 20 RECEITA LÍQUIDA",
+      "values": [
+        0.003854
+      ],
+      "origen": "estado 20",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Deduções da Receita Bruta",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 20 RECEITA LÍQUIDA",
+      "values": [
+        -0.008174
+      ],
+      "origen": "estado 20",
+      "glosa": "Deducciones de los ingresos brutos"
+    },
+    {
+      "label": "Impostos e Contribuições",
+      "lado": "expense",
+      "page": 2,
+      "section": "#### 20 RECEITA LÍQUIDA",
+      "values": [
+        -0.008174
+      ],
+      "origen": "estado 20",
+      "glosa": "Impuestos y contribuciones"
+    },
+    {
+      "label": "Receita Líquida",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 20 RECEITA LÍQUIDA",
+      "values": [
+        0.116588
+      ],
+      "origen": "estado 20",
+      "glosa": "Ingresos netos"
+    },
+    {
+      "label": "Globosat (2013 a 2015)",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 15 RECEITAS ANTECIPADAS",
+      "values": [
+        0.002422
+      ],
+      "origen": "estado 15",
+      "glosa": "Globosat (2013 a 2015)"
+    },
+    {
+      "label": "Traficc Assessoria",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 15 RECEITAS ANTECIPADAS",
+      "values": [
+        0.0047
+      ],
+      "origen": "estado 15",
+      "glosa": "Traficc Assessoria"
+    },
+    {
+      "label": "Ambev",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 15 RECEITAS ANTECIPADAS",
+      "values": [
+        0.00012
+      ],
+      "origen": "estado 15",
+      "glosa": "Ambev"
+    },
+    {
+      "label": "Outros",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 15 RECEITAS ANTECIPADAS",
+      "values": [
+        0.000429
+      ],
+      "origen": "estado 15",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Premiação Campeonato Brasileiro",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 23 RECEITAS COM PREMIAÇÕES E LOTERIAS",
+      "values": [
+        300
+      ],
+      "origen": "estado 23",
+      "glosa": "Premios Campeonato Brasileño"
+    },
+    {
+      "label": "Premiação Campeonato Estadual",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 23 RECEITAS COM PREMIAÇÕES E LOTERIAS",
+      "values": [
+        200
+      ],
+      "origen": "estado 23",
+      "glosa": "Premios Campeonato Estatal"
+    },
+    {
+      "label": "Premiação Base",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 23 RECEITAS COM PREMIAÇÕES E LOTERIAS",
+      "values": [
+        150
+      ],
+      "origen": "estado 23",
+      "glosa": "Premios categorías formativas"
+    },
+    {
+      "label": "Timemania",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 23 RECEITAS COM PREMIAÇÕES E LOTERIAS",
+      "values": [
+        1061
+      ],
+      "origen": "estado 23",
+      "glosa": "Timemania"
+    },
+    {
+      "label": "Edificações",
+      "lado": "expense",
+      "page": 1,
+      "section": "##### 2.5 CONTAS A RECEBER / ##### 2.6 ALMOXARIFADO / ##### 2.7 DESPESAS ANTECIPADAS / ##### 2.8 DEMAIS ATIVOS CIRCULANTES E NÃO CIRCULANTES / ##### 2.9 IMOBILIZADO",
+      "values": [
+        5195
+      ],
+      "origen": "estado 4",
+      "glosa": "Edificaciones"
+    },
+    {
+      "label": "Móveis e utensílios",
+      "lado": "expense",
+      "page": 1,
+      "section": "##### 2.5 CONTAS A RECEBER / ##### 2.6 ALMOXARIFADO / ##### 2.7 DESPESAS ANTECIPADAS / ##### 2.8 DEMAIS ATIVOS CIRCULANTES E NÃO CIRCULANTES / ##### 2.9 IMOBILIZADO",
+      "values": [
+        10
+      ],
+      "origen": "estado 4",
+      "glosa": "Mobiliario y enseres"
+    },
+    {
+      "label": "Contas a Pagar",
+      "lado": "expense",
+      "page": 1,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "values": [
+        12.357
+      ],
+      "origen": "nota 3 (ancla 4)",
+      "ancla": "Equipamentos processamento",
+      "glosa": "Cuentas por pagar"
+    },
+    {
+      "label": "Equipamentos processamento",
+      "lado": "expense",
+      "page": 1,
+      "section": "##### 2.5 CONTAS A RECEBER / ##### 2.6 ALMOXARIFADO / ##### 2.7 DESPESAS ANTECIPADAS / ##### 2.8 DEMAIS ATIVOS CIRCULANTES E NÃO CIRCULANTES / ##### 2.9 IMOBILIZADO",
+      "values": [
+        5
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Equipos de procesamiento de datos"
+    },
+    {
+      "label": "Credores Diversos",
+      "lado": "expense",
+      "page": 1,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "values": [
+        -0.188
+      ],
+      "origen": "nota 3 (ancla 4)",
+      "ancla": "Equipamentos processamento",
+      "glosa": "Acreedores diversos"
+    },
+    {
+      "label": "Parcelamentos",
+      "lado": "expense",
+      "page": 1,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "values": [
+        -3.928
+      ],
+      "origen": "nota 3 (ancla 4)",
+      "ancla": "Equipamentos processamento",
+      "glosa": "Deudas fraccionadas"
+    },
+    {
+      "label": "Receitas a Realizar",
+      "lado": "expense",
+      "page": 1,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "values": [
+        -5.395
+      ],
+      "origen": "nota 3 (ancla 4)",
+      "ancla": "Equipamentos processamento",
+      "glosa": "Ingresos diferidos"
+    },
+    {
+      "label": "Provisão P/ Contingências",
+      "lado": "expense",
+      "page": 1,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "values": [
+        3.109
+      ],
+      "origen": "nota 3 (ancla 4)",
+      "ancla": "Equipamentos processamento",
+      "glosa": "Provisión para contingencias"
+    },
+    {
+      "label": "Acordos",
+      "lado": "expense",
+      "page": 1,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "values": [
+        -9.618
+      ],
+      "origen": "nota 3 (ancla 4)",
+      "ancla": "Equipamentos processamento",
+      "glosa": "Acuerdos"
+    },
+    {
+      "label": "Líquido do Intangível",
+      "lado": "expense",
+      "page": 1,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "values": [
+        20.164
+      ],
+      "origen": "nota 3 (ancla 4)",
+      "ancla": "Equipamentos processamento",
+      "glosa": "Activo intangible neto"
+    },
+    {
+      "label": "Pagamentos Referente Formação de Atletas",
+      "lado": "expense",
+      "page": 1,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "values": [
+        -4.745
+      ],
+      "origen": "nota 3 (ancla 4)",
+      "ancla": "Equipamentos processamento",
+      "glosa": "Pagos relativos a la formación de deportistas"
+    },
+    {
+      "label": "Aquisição de Imobilizado",
+      "lado": "expense",
+      "page": 1,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "values": [
+        -0.921
+      ],
+      "origen": "nota 3 (ancla 4)",
+      "ancla": "Equipamentos processamento",
+      "glosa": "Adquisición de inmovilizado material"
+    },
+    {
+      "label": "Aquisição de Empréstimo",
+      "lado": "expense",
+      "page": 1,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "values": [
+        24.128
+      ],
+      "origen": "nota 3 (ancla 4)",
+      "ancla": "Equipamentos processamento",
+      "glosa": "Obtención de préstamos"
+    },
+    {
+      "label": "Amortização de Empréstimos",
+      "lado": "expense",
+      "page": 1,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "values": [
+        -38.992
+      ],
+      "origen": "nota 3 (ancla 4)",
+      "ancla": "Equipamentos processamento",
+      "glosa": "Amortización de préstamos"
+    },
+    {
+      "label": "Caixa Líquido das Atividades de Financiamento",
+      "lado": "expense",
+      "page": 1,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "values": [
+        -14.864
+      ],
+      "origen": "nota 3 (ancla 4)",
+      "ancla": "Equipamentos processamento",
+      "glosa": "Flujo de efectivo neto de las actividades de financiación"
+    },
+    {
+      "label": "Redução Líquida de Caixa e Equivalentes de Caixa",
+      "lado": "expense",
+      "page": 1,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+      "values": [
+        24.028
+      ],
+      "origen": "nota 3 (ancla 4)",
+      "ancla": "Equipamentos processamento",
+      "glosa": "Disminución neta del efectivo y equivalentes al efectivo"
+    },
+    {
+      "label": "Equipamento diversos",
+      "lado": "expense",
+      "page": 1,
+      "section": "##### 2.5 CONTAS A RECEBER / ##### 2.6 ALMOXARIFADO / ##### 2.7 DESPESAS ANTECIPADAS / ##### 2.8 DEMAIS ATIVOS CIRCULANTES E NÃO CIRCULANTES / ##### 2.9 IMOBILIZADO",
+      "values": [
+        10
+      ],
+      "origen": "estado 4",
+      "glosa": "Equipos diversos"
+    },
+    {
+      "label": "Globo(Luvas 2013 a 2018)",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 16 RECEITAS A APROPRIAR",
+      "values": [
+        4932
+      ],
+      "origen": "estado 16",
+      "glosa": "Globo (Primas por firma 2013 a 2018)"
+    },
+    {
+      "label": "Outras",
+      "lado": "revenue",
+      "page": 2,
+      "section": "#### 16 RECEITAS A APROPRIAR",
+      "values": [
+        412
+      ],
+      "origen": "estado 16",
+      "glosa": "Otras"
+    }
+  ]
+}

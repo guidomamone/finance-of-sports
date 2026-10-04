@@ -1,0 +1,163 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.md",
+ "generatedAt": "2026-10-03T03:28:43.464Z",
+ "rubrosHuella": "4fdd4113c93a003639c45dedd1021540966a1ebf",
+ "rubros": [
+  {
+   "label": "Recuperação de Despesas",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Administrativas",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "RECURSOS PUBLICOS",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "education",
+     0.06
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "(-) Ordenados, Salários, Encargos Sociais e Trabalhistas e Outros",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "wages_squad",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Provisões no Exercício",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "depreciation",
+     0.02
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "(-) DESPESAS OPERACIONAIS PAGAS COM RECURSOS PÚBLICOS",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Despesas Gerais e de Manutenção",
+   "lado": "expense",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "RENDAS DE JOGOS, PATROCÍNIOS, LOCAÇÕES E OUTRAS RECEITAS OPERACIONAIS",
+   "lado": "revenue",
+   "page": 5,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "sponsorship_commercial",
+     0.1
+    ]
+   ],
+   "tokens": 1087
+  }
+ ]
+}

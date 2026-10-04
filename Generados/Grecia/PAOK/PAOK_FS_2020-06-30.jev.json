@@ -1,0 +1,1685 @@
+{
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2020-06-30.md",
+ "generatedAt": "2026-09-30T04:29:42.778Z",
+ "rubros": [
+  {
+   "label": "Δείκτης Κυκλοφοριακής Ρευστότητας",
+   "lado": null,
+   "page": 6,
+   "section": "PAOK FE / ### 3. Οικονομική Ανασκόπηση / #### 3.1 Εξέλιξη των εργασιών και των αποτελεσμάτων / #### 3.2 Αριθμοδείκτες",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1359
+  },
+  {
+   "label": "Αποδοτικότητα Καθαρής Θέσης",
+   "lado": null,
+   "page": 6,
+   "section": "PAOK FE / ### 3. Οικονομική Ανασκόπηση / #### 3.1 Εξέλιξη των εργασιών και των αποτελεσμάτων / #### 3.2 Αριθμοδείκτες",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1353
+  },
+  {
+   "label": "Δείκτης Χρέους",
+   "lado": null,
+   "page": 6,
+   "section": "PAOK FE / ### 3. Οικονομική Ανασκόπηση / #### 3.1 Εξέλιξη των εργασιών και των αποτελεσμάτων / #### 3.2 Αριθμοδείκτες",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1341
+  },
+  {
+   "label": "Δείκτης Παγιοποίησης Περιουσίας",
+   "lado": null,
+   "page": 6,
+   "section": "PAOK FE / ### 3. Οικονομική Ανασκόπηση / #### 3.1 Εξέλιξη των εργασιών και των αποτελεσμάτων / #### 3.2 Αριθμοδείκτες",
+   "choice": "depreciation",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "depreciation",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "other_income",
+     0.21000000000000002
+    ]
+   ],
+   "tokens": 1357
+  },
+  {
+   "label": "Μέση διάρκεια είσπραξης Απαιτήσεων (σε μέρες)",
+   "lado": null,
+   "page": 6,
+   "section": "PAOK FE / ### 3. Οικονομική Ανασκόπηση / #### 3.1 Εξέλιξη των εργασιών και των αποτελεσμάτων / #### 3.2 Αριθμοδείκτες",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_income",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 1359
+  },
+  {
+   "label": "Μικτό Περιθώριο Κέρδους",
+   "lado": null,
+   "page": 6,
+   "section": "PAOK FE / ### 3. Οικονομική Ανασκόπηση / #### 3.1 Εξέλιξη των εργασιών και των αποτελεσμάτων / #### 3.2 Αριθμοδείκτες",
+   "choice": "other_income",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1349
+  },
+  {
+   "label": "Καθαρό Περιθώριο Κέρδους",
+   "lado": null,
+   "page": 6,
+   "section": "PAOK FE / ### 3. Οικονομική Ανασκόπηση / #### 3.1 Εξέλιξη των εργασιών και των αποτελεσμάτων / #### 3.2 Αριθμοδείκτες",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 1350
+  },
+  {
+   "label": "Κυκλοφοριακή Ταχύτητα Απαιτήσεων",
+   "lado": null,
+   "page": 6,
+   "section": "PAOK FE / ### 3. Οικονομική Ανασκόπηση / #### 3.1 Εξέλιξη των εργασιών και των αποτελεσμάτων / #### 3.2 Αριθμοδείκτες",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1358
+  },
+  {
+   "label": "Κύκλος εργασιών",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "lump_football_operations",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.86
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "womens_football",
+     0.01
+    ]
+   ],
+   "tokens": 1299
+  },
+  {
+   "label": "Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1323
+  },
+  {
+   "label": "Μικτό (Ζημίες) αποτέλεσμα",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1299
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1299
+  },
+  {
+   "label": "Λοιπά έξοδα και ζημιές",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "exceptional_items",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1302
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "match_organisation_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1298
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1301
+  },
+  {
+   "label": "Κέρδη & ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "player_sales",
+     0.36
+    ],
+    [
+     "exceptional_items",
+     0.1
+    ]
+   ],
+   "tokens": 1329
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1301
+  },
+  {
+   "label": "Αποτελέσματα (Ζημίες) προ τόκων και φόρων",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "other_expenses",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "lump_football_operations",
+     0.24000000000000002
+    ],
+    [
+     "other_income",
+     0.17
+    ]
+   ],
+   "tokens": 1317
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1312
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.35
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1312
+  },
+  {
+   "label": "Υπόλοιπα 1/7/2018",
+   "lado": null,
+   "page": 18,
+   "section": "PAOK FE",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "womens_football",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Αποτέλεσμα (Ζημίες) προ φόρων",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1309
+  },
+  {
+   "label": "Φόροι εισοδήματος",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1301
+  },
+  {
+   "label": "Αποτέλεσμα (Ζημίες) περιόδου μετά από φόρους",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΚΑΤΑ ΛΕΙΤΟΥΡΓΙΑ",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1319
+  },
+  {
+   "label": "Μεταβολές στοιχείων στην περίοδο",
+   "lado": null,
+   "page": 18,
+   "section": "PAOK FE",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ],
+    [
+     "womens_football",
+     0.16
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Αποτελέσματα περιόδου",
+   "lado": null,
+   "page": 18,
+   "section": "PAOK FE",
+   "choice": "other_income",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "womens_football",
+     0.16
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Υπόλοιπα 1/7/2019",
+   "lado": null,
+   "page": 18,
+   "section": "PAOK FE",
+   "choice": "other_income",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "womens_football",
+     0.18000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Υπόλοιπο Ιδίων Κεφαλαίων της 30/6/2019",
+   "lado": null,
+   "page": 18,
+   "section": "PAOK FE",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.8200000000000001
+    ],
+    [
+     "womens_football",
+     0.06999999999999999
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "Κόστος τρέχουσας υπηρεσίας",
+   "lado": null,
+   "page": 29,
+   "section": "Τα ποσά, τα οποία έχουν καταχωριστεί στην κατάσταση αποτελεσμάτων αναλύονται παρακάτω:",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1323
+  },
+  {
+   "label": "Υπόλοιπο Ιδίων Κεφαλαίων της 30/6/2020",
+   "lado": null,
+   "page": 18,
+   "section": "PAOK FE",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "womens_football",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1370
+  },
+  {
+   "label": "Χρηματοοικονομικό κόστος",
+   "lado": null,
+   "page": 29,
+   "section": "Τα ποσά, τα οποία έχουν καταχωριστεί στην κατάσταση αποτελεσμάτων αναλύονται παρακάτω:",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.29000000000000004
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1322
+  },
+  {
+   "label": "Έσοδα από τηλεοπτικά δικαιώματα",
+   "lado": null,
+   "page": 31,
+   "section": "### 11. Έσοδα και έξοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1332
+  },
+  {
+   "label": "Συνολική επιβάρυνση αποτελεσμάτων χρήσεως",
+   "lado": null,
+   "page": 29,
+   "section": "Τα ποσά, τα οποία έχουν καταχωριστεί στην κατάσταση αποτελεσμάτων αναλύονται παρακάτω:",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1337
+  },
+  {
+   "label": "Έσοδα από επιχορηγήσεις",
+   "lado": null,
+   "page": 31,
+   "section": "### 11. Έσοδα και έξοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.85
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "education",
+     0.06
+    ]
+   ],
+   "tokens": 1325
+  },
+  {
+   "label": "Κόστος προϋπηρεσίας",
+   "lado": null,
+   "page": 29,
+   "section": "Τα ποσά, τα οποία έχουν καταχωριστεί στην κατάσταση αποτελεσμάτων αναλύονται παρακάτω:",
+   "choice": "player_amortisation",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "player_amortisation",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "wages_squad",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1317
+  },
+  {
+   "label": "Έσοδα από εισιτήρια-συνδρομές",
+   "lado": null,
+   "page": 31,
+   "section": "### 11. Έσοδα και έξοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "matchday_competition",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "matchday_competition",
+     0.87
+    ],
+    [
+     "season_tickets",
+     0.09
+    ],
+    [
+     "member_dues",
+     0.02
+    ]
+   ],
+   "tokens": 1331
+  },
+  {
+   "label": "Έσοδα από παραχωρήσεις ποδοσφαιριστών",
+   "lado": null,
+   "page": 31,
+   "section": "### 11. Έσοδα και έξοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1338
+  },
+  {
+   "label": "Έσοδα από χορηγίες-διαφημίσεις",
+   "lado": null,
+   "page": 31,
+   "section": "### 11. Έσοδα και έξοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1332
+  },
+  {
+   "label": "Ενοίκια Έσοδα",
+   "lado": null,
+   "page": 31,
+   "section": "### 11. Έσοδα και έξοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "stadium_other",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "stadium_other",
+     0.76
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1318
+  },
+  {
+   "label": "Σύνολο",
+   "lado": null,
+   "page": 31,
+   "section": "### 11. Έσοδα και έξοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "other_income",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "lump_football_operations",
+     0.32
+    ],
+    [
+     "exceptional_items",
+     0.19
+    ]
+   ],
+   "tokens": 1312
+  },
+  {
+   "label": "778.797,87",
+   "lado": "expense",
+   "page": 32,
+   "section": "PAOK FE / # Έξοδα Ποδοσφαιρικού Τμήματος",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 820
+  },
+  {
+   "label": "Λοιπά Έσοδα πάροχης Υπηρεσιών",
+   "lado": null,
+   "page": 31,
+   "section": "### 11. Έσοδα και έξοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.9400000000000001
+    ],
+    [
+     "stadium_other",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1332
+  },
+  {
+   "label": "26.238.656,46",
+   "lado": "expense",
+   "page": 32,
+   "section": "PAOK FE / # Έξοδα Ποδοσφαιρικού Τμήματος",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "131.923,54",
+   "lado": "expense",
+   "page": 32,
+   "section": "PAOK FE / # Έξοδα Ποδοσφαιρικού Τμήματος",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 820
+  },
+  {
+   "label": "3.622.504,21",
+   "lado": "expense",
+   "page": 32,
+   "section": "PAOK FE / # Έξοδα Ποδοσφαιρικού Τμήματος",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 822
+  },
+  {
+   "label": "2.804.361,99",
+   "lado": "expense",
+   "page": 32,
+   "section": "PAOK FE / # Έξοδα Ποδοσφαιρικού Τμήματος",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 822
+  },
+  {
+   "label": "9.377.664,45",
+   "lado": "expense",
+   "page": 32,
+   "section": "PAOK FE / # Έξοδα Ποδοσφαιρικού Τμήματος",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 822
+  },
+  {
+   "label": "43.188.601,27",
+   "lado": "expense",
+   "page": 32,
+   "section": "PAOK FE / # Έξοδα Ποδοσφαιρικού Τμήματος",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "234.692,75",
+   "lado": "expense",
+   "page": 32,
+   "section": "PAOK FE / # Έξοδα Ποδοσφαιρικού Τμήματος",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 820
+  },
+  {
+   "label": "906.147,94",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διοίκησης",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 804
+  },
+  {
+   "label": "1.581.082,34",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διοίκησης",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 806
+  },
+  {
+   "label": "176.406,07",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διοίκησης",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 804
+  },
+  {
+   "label": "334.764,63",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διοίκησης",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 804
+  },
+  {
+   "label": "1.222.892,46",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διοίκησης",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 806
+  },
+  {
+   "label": "241.471,98",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διοίκησης",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 804
+  },
+  {
+   "label": "212.477,93",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διάθεσης",
+   "choice": "admin_general_expense",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "match_organisation_expense",
+     0.2
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "65.640,73",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διοίκησης",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "762.648,53",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διάθεσης",
+   "choice": "admin_general_expense",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "match_organisation_expense",
+     0.24
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "117.358,19",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διάθεσης",
+   "choice": "admin_general_expense",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "match_organisation_expense",
+     0.21
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "4.528.406,15",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διοίκησης",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 806
+  },
+  {
+   "label": "70.334,53",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διάθεσης",
+   "choice": "admin_general_expense",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "match_organisation_expense",
+     0.22
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "1.267.008,39",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διάθεσης",
+   "choice": "admin_general_expense",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "match_organisation_expense",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 805
+  },
+  {
+   "label": "38.707,71",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διάθεσης",
+   "choice": "admin_general_expense",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "match_organisation_expense",
+     0.19
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "260.293,24",
+   "lado": "revenue",
+   "page": 32,
+   "section": "# Λοιπά Έσοδα και Κέρδη",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "13.987,64",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διάθεσης",
+   "choice": "admin_general_expense",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.41000000000000003
+    ],
+    [
+     "match_organisation_expense",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.22
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "2.482.522,92",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Έξοδα Διάθεσης",
+   "choice": "admin_general_expense",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "lump_football_operations_expense",
+     0.19
+    ]
+   ],
+   "tokens": 805
+  },
+  {
+   "label": "267.871,56",
+   "lado": "revenue",
+   "page": 32,
+   "section": "# Λοιπά Έσοδα και Κέρδη",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "528.164,80",
+   "lado": "revenue",
+   "page": 32,
+   "section": "# Λοιπά Έσοδα και Κέρδη",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "376.902,77",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Λοιπά Έξοδα",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "1.371.718,69",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Λοιπά Έξοδα",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "7.612,76",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Λοιπά Έξοδα",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 798
+  },
+  {
+   "label": "21.097,75",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Λοιπά Έξοδα",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "1.777.331,97",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Λοιπά Έξοδα",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 802
+  }
+ ]
+}

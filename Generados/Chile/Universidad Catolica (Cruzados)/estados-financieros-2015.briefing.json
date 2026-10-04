@@ -1,0 +1,346 @@
+{
+  "club": "catolica-cl",
+  "year": 2015,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2015.md",
+  "generatedAt": "2026-09-30T21:56:50.505Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 65,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 5,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 10,
+      "section": "ESTADOS DE CAMBIOS EN EL PATRIMONIO / CRUZADOS S.A.D.P.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Resultado integral - - - - -",
+          "values": [
+            "(481.925)",
+            "(481.925)",
+            "(481.925)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Incremento (disminución) del patrimonio 1.424.790 (78.820) (85.823) (85.823) -",
+          "values": [
+            "1.260.147",
+            "1.260.147"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de cambios en patrimonio 1.424.790 (78.820) -",
+          "values": [
+            "(85.823)",
+            "(85.823)",
+            "(481.925)",
+            "778.222",
+            "778.222"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo Final Período Actual 31/12/2015 16.454.790 - -",
+          "values": [
+            "(115.823)",
+            "(115.823)",
+            "(4.530.383)",
+            "11.808.584",
+            "11.808.584"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Cambios en patrimonio / Resultado Integral",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Resultado integral",
+          "values": [
+            "71.752",
+            "71.752",
+            "71.752"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Incremento (disminución) del patrimonio",
+          "values": [
+            "380.113",
+            "380.113",
+            "380.113"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de cambios en patrimonio - - - - -",
+          "values": [
+            "451.865",
+            "451.865",
+            "451.865"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 44,
+      "section": "M$                 M$               M$            M$            M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo Inicial al 01/01/2014 5.400.696 1.661.336 -",
+          "values": [
+            "7.062.032"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiciones por compra de pases 1.438.118 -",
+          "values": [
+            "1.438.118"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización de Intangibles (151.068) (1.151.696) -",
+          "values": [
+            "(1.302.764)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo Final al 31/12/2014 5.249.628 1.947.758 - -",
+          "values": [
+            "7.197.386"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": "M$                 M$               M$            M$            M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo Inicial al 01/01/2014 642.041 5.285.803 - -",
+          "values": [
+            "5.927.844"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizaciones de Intangibles del período 151.068 1.151.696 -",
+          "values": [
+            "1.302.764"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicación a pases por venta (baja) - (2.568.245) -",
+          "values": [
+            "(2.568.245)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 55,
+      "section": "b) CAPITAL SUSCRITO Y PAGADO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "La Sociedad cumple con el requerimiento del capital mínimo de funcionamiento, equivalente a",
+          "values": [
+            "1.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Unidades de Fomento, que indica el artículo 13 de la Ley",
+          "values": [
+            "20.019."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 10,
+      "section": "ESTADOS DE CAMBIOS EN EL PATRIMONIO / CRUZADOS S.A.D.P.",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total de cambios en patrimonio 1.424.790 (78.820) -",
+      "target": "(85.823)",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "864045"
+    },
+    {
+      "page": 10,
+      "section": "ESTADOS DE CAMBIOS EN EL PATRIMONIO / CRUZADOS S.A.D.P.",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total de cambios en patrimonio 1.424.790 (78.820) -",
+      "target": "(85.823)",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "864045"
+    },
+    {
+      "page": 10,
+      "section": "ESTADOS DE CAMBIOS EN EL PATRIMONIO / CRUZADOS S.A.D.P.",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total de cambios en patrimonio 1.424.790 (78.820) -",
+      "target": "(481.925)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "Cambios en patrimonio / Resultado Integral",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total de cambios en patrimonio - - - - -",
+      "target": "451.865",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "Cambios en patrimonio / Resultado Integral",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total de cambios en patrimonio - - - - -",
+      "target": "451.865",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "Cambios en patrimonio / Resultado Integral",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Total de cambios en patrimonio - - - - -",
+      "target": "451.865",
+      "addendCount": 2,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "Resultado integral",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado integral",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Incremento (disminución) del patrimonio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Incremento (disminución) del patrimonio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "cl",
+    "query": "Universidad Católica",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 3,
+      "line": "Nota 24.- Moneda Extranjera ........................................................................................................... 50"
+    },
+    {
+      "page": 15,
+      "line": "2.4 Conversión de saldos, transacciones y estados financieros en moneda extranjera"
+    },
+    {
+      "page": 16,
+      "line": "moneda extranjera que resultan de la liquidación de estas transacciones y de la conversión a los tipos"
+    },
+    {
+      "page": 16,
+      "line": "de cambio de cierre de los activos y pasivos monetarios denominados en moneda extranjera, se"
+    },
+    {
+      "page": 20,
+      "line": "Las variaciones en el valor razonable de títulos monetarios denominados en moneda extranjera y"
+    },
+    {
+      "page": 33,
+      "line": "Actualmente la sociedad tiene activos y pasivos en moneda extranjera que frente a fluctuaciones del"
+    },
+    {
+      "page": 33,
+      "line": "tipo de cambio generarían variaciones en el patrimonio neto de la sociedad."
+    },
+    {
+      "page": 33,
+      "line": "en los niveles de tipo de cambio e interés."
+    },
+    {
+      "page": 33,
+      "line": "b.     Riesgo de tipo de cambio"
+    },
+    {
+      "page": 33,
+      "line": "La Sociedad está expuesta a riesgo de tipo de cambio dada la naturaleza de sus operaciones, las que"
+    },
+    {
+      "page": 61,
+      "line": "Nota 24.- Moneda Extranjera"
+    },
+    {
+      "page": 61,
+      "line": "El siguiente es el cuadro de moneda extranjera que mantiene la Sociedad al 31 de diciembre de 2015"
+    },
+    {
+      "page": 61,
+      "line": "a)       Activos en Moneda Extranjera"
+    },
+    {
+      "page": 62,
+      "line": "Nota 24.- Moneda Extranjera (Continuación)"
+    },
+    {
+      "page": 62,
+      "line": "b)      Pasivos en Moneda Extranjera"
+    }
+  ],
+  "warnings": [
+    "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ]
+}

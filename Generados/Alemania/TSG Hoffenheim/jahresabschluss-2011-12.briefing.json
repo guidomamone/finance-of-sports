@@ -1,0 +1,213 @@
+{
+  "club": "hoffenheim-de",
+  "year": 2012,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/TSG Hoffenheim/jahresabschluss-2011-12.md",
+  "generatedAt": "2026-09-30T21:50:31.293Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 84,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 6,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 6,
+      "section": "UNTERNEHMENS- / —— 11 REGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "I. Gezeichnetes Kapital",
+          "values": [
+            "2.500.000",
+            "2.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Einlage stille Beteiligung",
+          "values": [
+            "148.206.154",
+            "147.156"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Verlustvortrag",
+          "values": [
+            "-4.574.845",
+            "-4.349"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "UNTERNEHMENS- / —— 11 REGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Entgeltlich erworbene Konzessionen 436.462 0 18.419",
+          "values": [
+            "454.881"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spielerwerte 57.764.750 [)",
+          "values": [
+            "7.877.319",
+            "10.350.500",
+            "55.291.569"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "UNTERNEHMENS- / —— 11 REGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bauten auf fremden Grundstücken 577.828 0 14.700",
+          "values": [
+            "592.528"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "technische Anlagen und Maschinen 3.789.879 32.119 89.323",
+          "values": [
+            "3.911.321"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "andere Anlagen, Betriebs- und Ge- 3.548.376",
+          "values": [
+            "149.760",
+            "74.474",
+            "3.623.662"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "schäftsausstattung",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "geleistete Anzahlungen 32.119 -32.119 4.237",
+          "values": [
+            "4.237"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7.948.202 [)",
+          "values": [
+            "258.020",
+            "74.474",
+            "8.131.748"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Entgeltlich erworbene Konzessionen / Spielerwerte 34.103.794 13.213.230 9.842.414 37.474.610 / geleistete Anzahlungen auf Spielerwerte 0 0 0 0 / 34.373.903 13.320.840 9.842.414 37.852.329 / Sachanlagen",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bauten auf fremden Grundstücken 106.215 29.578",
+          "values": [
+            "135.793"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "technische Anlagen und Maschinen 3.273.388 166.433",
+          "values": [
+            "3.439.821"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "andere Anlagen, Betriebs- und Geschäftsaus-",
+          "values": [
+            "1.829.825",
+            "458.483",
+            "70.946",
+            "2.217.362"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "UNTERNEHMENS- / —— 11 REGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bauten auf fremden Grundstücken",
+          "values": [
+            "456.735",
+            "471.613"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "technische Anlagen und Maschinen",
+          "values": [
+            "471.500",
+            "516.491"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "1.406.300",
+            "1.718.551"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "geleistete Anzahlungen",
+          "values": [
+            "4.237",
+            "32.119"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "de",
+    "query": "TSG Hoffenheim",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

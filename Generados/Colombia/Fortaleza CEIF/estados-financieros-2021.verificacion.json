@@ -1,0 +1,483 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.md",
+ "generado": "2026-10-03T23:03:06.182Z",
+ "estado": "ok",
+ "clubId": "fortalezaceif-co",
+ "year": 2021,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf",
+   "campo": "sin-dudas",
+   "valor": null,
+   "motivo": "Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: la boletería de 2021 es '-' (en 2020 fue 191.189): el 0 de estadio es real.",
+   "evidencia": "estados-financieros-2021.md L1141 'Venta de boletería | - | 191.189'",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado antes de impuestos",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 1 (resultado antes de impuestos si no hay resultado final)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 2223.737; el sitio tiene 2223.737"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 3595.986 en este documento y 3595.986 en estados-financieros-2022.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 2223.737 en estados-financieros-2020.pdf y 2223.737 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 1",
+  "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma la 'Perdida contable antes de impuesto' de la conciliación fiscal (b15) como resultado antes de impuestos del ejercicio 2021?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se usan como etiquetas de las notas 'INGRESOS DE ACTIVIDADES ORDINARIAS', 'COSTO DE VENTAS', 'GASTOS DE VENTAS', 'GASTOS DE ADMINISTRACIÓN', 'OTROS GASTOS', 'OTROS INGRESOS' y 'COSTOS FINANCIEROS', inferidas del texto introductorio porque los títulos con número no están transcritos?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se cargan solo los subtotales en negrita de gastos de ventas y administración (no sus sub-renglones) para evitar doble conteo?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se dejan afuera las partidas de la conciliación fiscal (b15-b16, L698-L712) por ser detalle ya incluido en otras notas?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 3595.986,
+  "gastos": 4189.291,
+  "financiero": -54.012,
+  "impuesto": 0,
+  "resultadoImpreso": -647.319,
+  "resultadoParaCargar": -647.319,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Derechos de televisión nacional(*)",
+   "lado": "ingreso",
+   "M": 1149.209,
+   "pagina": 26,
+   "linea": 1139,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Federación Colombiana de Futbol",
+   "lado": "ingreso",
+   "M": 270,
+   "pagina": 26,
+   "linea": 1140,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Auxilio protocolos bioseguridad(*)",
+   "lado": "ingreso",
+   "M": 237.238,
+   "pagina": 26,
+   "linea": 1143,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Auxilio hotelero(*)",
+   "lado": "ingreso",
+   "M": 161.7,
+   "pagina": 26,
+   "linea": 1144,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Convenio entre clubes",
+   "lado": "ingreso",
+   "M": 276.128,
+   "pagina": 26,
+   "linea": 1145,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Auxilio de arbitraje(*)",
+   "lado": "ingreso",
+   "M": 60.875,
+   "pagina": 26,
+   "linea": 1146,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Auxilio de transporte(*)",
+   "lado": "ingreso",
+   "M": 52.26,
+   "pagina": 26,
+   "linea": 1147,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Infraestructura(*)",
+   "lado": "ingreso",
+   "M": 12.842,
+   "pagina": 26,
+   "linea": 1148,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Derechos de televisión internacional(*)",
+   "lado": "ingreso",
+   "M": 4.603,
+   "pagina": 26,
+   "linea": 1149,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Propaganda y publicidad",
+   "lado": "ingreso",
+   "M": 141.578,
+   "pagina": 26,
+   "linea": 1150,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Derechos deportivos (2)",
+   "lado": "ingreso",
+   "M": 287.59,
+   "pagina": 25,
+   "linea": 1118,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\""
+  },
+  {
+   "etiqueta": "Transportes",
+   "lado": "ingreso",
+   "M": 120,
+   "pagina": 25,
+   "linea": 1119,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\""
+  },
+  {
+   "etiqueta": "Comercio al por mayor y menor (3)",
+   "lado": "ingreso",
+   "M": 257.71,
+   "pagina": 25,
+   "linea": 1120,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\""
+  },
+  {
+   "etiqueta": "Alquiler deportivo (1)",
+   "lado": "ingreso",
+   "M": 69.5,
+   "pagina": 31,
+   "linea": 1417,
+   "origen": "nota que desglosa \"OTROS INGRESOS\""
+  },
+  {
+   "etiqueta": "Subsidio nomina gobierno nacional (2)",
+   "lado": "ingreso",
+   "M": 43.995,
+   "pagina": 31,
+   "linea": 1418,
+   "origen": "nota que desglosa \"OTROS INGRESOS\""
+  },
+  {
+   "etiqueta": "Reintegro de otros costos y gastos (3)",
+   "lado": "ingreso",
+   "M": 438.185,
+   "pagina": 31,
+   "linea": 1419,
+   "origen": "nota que desglosa \"OTROS INGRESOS\""
+  },
+  {
+   "etiqueta": "Aprovechamientos",
+   "lado": "ingreso",
+   "M": 12.569,
+   "pagina": 31,
+   "linea": 1420,
+   "origen": "nota que desglosa \"OTROS INGRESOS\""
+  },
+  {
+   "etiqueta": "Ajuste al peso",
+   "lado": "ingreso",
+   "M": 0.004,
+   "pagina": 31,
+   "linea": 1421,
+   "origen": "nota que desglosa \"OTROS INGRESOS\""
+  },
+  {
+   "etiqueta": "COSTO DE VENTAS",
+   "lado": "gasto",
+   "M": 155.043,
+   "pagina": 26,
+   "linea": 1166,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos Laborales",
+   "lado": "gasto",
+   "M": 1489.278,
+   "pagina": 27,
+   "linea": 1187,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 156.259,
+   "pagina": 27,
+   "linea": 1203,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "M": 238.134,
+   "pagina": 27,
+   "linea": 1207,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "Afiliaciones y sostenimientos",
+   "lado": "gasto",
+   "M": 2.602,
+   "pagina": 27,
+   "linea": 1212,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 6.169,
+   "pagina": 27,
+   "linea": 1213,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 398.803,
+   "pagina": 27,
+   "linea": 1214,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "Legales",
+   "lado": "gasto",
+   "M": 3.124,
+   "pagina": 27,
+   "linea": 1223,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "Mantenimiento y adecuaciones",
+   "lado": "gasto",
+   "M": 28.025,
+   "pagina": 27,
+   "linea": 1224,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "De viaje",
+   "lado": "gasto",
+   "M": 212.466,
+   "pagina": 28,
+   "linea": 1245,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "Diversos",
+   "lado": "gasto",
+   "M": 260.061,
+   "pagina": 28,
+   "linea": 1249,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "Depreciaciones",
+   "lado": "gasto",
+   "M": 91.84,
+   "pagina": 28,
+   "linea": 1258,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "Amortizaciones",
+   "lado": "gasto",
+   "M": 124,
+   "pagina": 28,
+   "linea": 1259,
+   "origen": "nota que desglosa \"GASTOS DE VENTAS\""
+  },
+  {
+   "etiqueta": "Gastos Laborales",
+   "lado": "gasto",
+   "M": 517.345,
+   "pagina": 28,
+   "linea": 1268,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 106.062,
+   "pagina": 29,
+   "linea": 1302,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\""
+  },
+  {
+   "etiqueta": "Impuestos",
+   "lado": "gasto",
+   "M": 6.608,
+   "pagina": 29,
+   "linea": 1308,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\""
+  },
+  {
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "M": 0.45,
+   "pagina": 29,
+   "linea": 1312,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\""
+  },
+  {
+   "etiqueta": "Contribuciones y afiliaciones",
+   "lado": "gasto",
+   "M": 24.471,
+   "pagina": 29,
+   "linea": 1316,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 131.186,
+   "pagina": 29,
+   "linea": 1324,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\""
+  },
+  {
+   "etiqueta": "Legales",
+   "lado": "gasto",
+   "M": 3.235,
+   "pagina": 29,
+   "linea": 1338,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\""
+  },
+  {
+   "etiqueta": "Mantenimientos",
+   "lado": "gasto",
+   "M": 25.797,
+   "pagina": 29,
+   "linea": 1342,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\""
+  },
+  {
+   "etiqueta": "Gastos Diversos",
+   "lado": "gasto",
+   "M": 59.078,
+   "pagina": 30,
+   "linea": 1368,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\""
+  },
+  {
+   "etiqueta": "Depreciaciones",
+   "lado": "gasto",
+   "M": 30.445,
+   "pagina": 30,
+   "linea": 1378,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\""
+  },
+  {
+   "etiqueta": "Amortizaciones",
+   "lado": "gasto",
+   "M": 4.793,
+   "pagina": 30,
+   "linea": 1379,
+   "origen": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\""
+  },
+  {
+   "etiqueta": "Gastos no deducibles (1)",
+   "lado": "gasto",
+   "M": 80.371,
+   "pagina": 30,
+   "linea": 1388,
+   "origen": "nota que desglosa \"OTROS GASTOS\""
+  },
+  {
+   "etiqueta": "Multas sanciones y litigios (2)",
+   "lado": "gasto",
+   "M": 11.126,
+   "pagina": 30,
+   "linea": 1389,
+   "origen": "nota que desglosa \"OTROS GASTOS\""
+  },
+  {
+   "etiqueta": "Impuestos asumidos",
+   "lado": "gasto",
+   "M": 3.67,
+   "pagina": 30,
+   "linea": 1390,
+   "origen": "nota que desglosa \"OTROS GASTOS\""
+  },
+  {
+   "etiqueta": "Ajuste al peso",
+   "lado": "gasto",
+   "M": 0.412,
+   "pagina": 30,
+   "linea": 1391,
+   "origen": "nota que desglosa \"OTROS GASTOS\""
+  },
+  {
+   "etiqueta": "Intereses de mora",
+   "lado": "gasto",
+   "M": 18.438,
+   "pagina": 30,
+   "linea": 1392,
+   "origen": "nota que desglosa \"OTROS GASTOS\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "COSTOS FINANCIEROS",
+   "M": -54.012,
+   "linea": 1472
+  }
+ ],
+ "impuesto": []
+}

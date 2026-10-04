@@ -1,0 +1,127 @@
+{
+ "md": "Clubes/Noruega/Brann/aarsregnskap-2018.md",
+ "pdf": "Clubes/Noruega/Brann/aarsregnskap-2018.pdf",
+ "club": "brann",
+ "year": 2018,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:16.647Z",
+ "tieOuts": {
+  "cierran": 66,
+  "noCierran": 8
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "15 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 10,
+  "notasUsadas": []
+ },
+ "ladoConocido": 9,
+ "rubros": [
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    106.598321
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    176.698292
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    127.689444
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    62.021249
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    14.450524
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    38.766546
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    0.108053
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    0.003719
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    6.20608
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    25.652977
+   ],
+   "origen": "estado 4"
+  }
+ ]
+}

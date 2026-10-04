@@ -1,0 +1,251 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2019-06-30.pdf",
+ "md": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2019-06-30.md",
+ "cierre": "2019-06-30",
+ "paginas": [
+  27,
+  35,
+  36
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:57:04.008Z",
+ "escala": "miles",
+ "filas": [
+  {
+   "pagina": 27,
+   "etiqueta": "Nettoomsætning",
+   "importe_impreso": "107.921",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 27,
+   "etiqueta": "Andre driftsindtægter",
+   "importe_impreso": "161.960",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 27,
+   "etiqueta": "Andre eksterne omkostninger",
+   "importe_impreso": "-73.974",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 27,
+   "etiqueta": "Bruttoresultat",
+   "importe_impreso": "195.907",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 27,
+   "etiqueta": "Personaleomkostninger",
+   "importe_impreso": "-93.592",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 27,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+   "importe_impreso": "-32.610",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 27,
+   "etiqueta": "Andre driftsomkostninger",
+   "importe_impreso": "-3.244",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 27,
+   "etiqueta": "Resultat før finansielle poster",
+   "importe_impreso": "66.461",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 27,
+   "etiqueta": "Finansielle indtægter",
+   "importe_impreso": "427",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 27,
+   "etiqueta": "Finansielle omkostninger",
+   "importe_impreso": "-470",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 27,
+   "etiqueta": "Resultat før skat",
+   "importe_impreso": "66.418",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 27,
+   "etiqueta": "Skat af årets resultat",
+   "importe_impreso": "-10.649",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 27,
+   "etiqueta": "Årets resultat",
+   "importe_impreso": "55.769",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Lønninger",
+   "importe_impreso": "82.112",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Pensioner",
+   "importe_impreso": "9.334",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Andre omkostninger til social sikring",
+   "importe_impreso": "2.146",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Personaleomkostninger",
+   "importe_impreso": "93.592",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Afskrivninger af immaterielle anlægsaktiver",
+   "importe_impreso": "29.319",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Afskrivninger af materielle anlægsaktiver",
+   "importe_impreso": "3.291",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+   "importe_impreso": "32.610",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Renteindtægter tilknyttede virksomheder",
+   "importe_impreso": "111",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle indtægter"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Andre finansielle indtægter",
+   "importe_impreso": "316",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle indtægter"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Finansielle indtægter",
+   "importe_impreso": "427",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Finansielle indtægter"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Andre finansielle omkostninger",
+   "importe_impreso": "317",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Kursreguleringer omkostninger",
+   "importe_impreso": "153",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Finansielle omkostninger",
+   "importe_impreso": "470",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Finansielle omkostninger"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Årets aktuelle skat",
+   "importe_impreso": "5.399",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Årets udskudte skat",
+   "importe_impreso": "5.250",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Skat af årets resultat",
+   "importe_impreso": "10.649",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat"
+  }
+ ],
+ "total_ingresos_impreso": null,
+ "total_gastos_impreso": null,
+ "resultado_impreso": "55.769",
+ "observaciones": "El estado no imprime total de ingresos ni de gastos. En la pág. 35 se omitieron filas informativas que no desglosan renglones del estado: remuneración Direktion 3.603, Bestyrelse 200, total 3.803 (incluidas dentro de Personaleomkostninger) y número medio de empleados 113. Las etiquetas de subtotales de notas se tomaron del encabezado de cada nota porque la transcripción no imprime etiqueta en la línea de total. En la nota de impuestos 2017/18 aparece -833 mientras el estado muestra 833 (no afecta 2018/19)."
+}

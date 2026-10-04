@@ -1,0 +1,272 @@
+{
+ "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.md",
+ "generatedAt": "2026-09-30T22:49:04.531Z",
+ "rubrosHuella": "d23e3a352dcbfe6ccb37e5ae9c67dd669bedc071",
+ "rubros": [
+  {
+   "label": "Sponsorindtægter",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "TV-indtægter",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Entré og kampindtægter",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Øvrige indtægter",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsorudgifter",
+   "lado": "expense",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Transferudgifter og leje af spillere",
+   "lado": "expense",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Udgifter Lounge og Skybokse",
+   "lado": "expense",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Administrationsomkostninger",
+   "lado": "expense",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Afskrivninger, anlægsaktiver",
+   "lado": "expense",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "depreciation",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Sportslige udgifter i øvrigt",
+   "lado": "expense",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "wages_squad",
+     0.02
+    ],
+    [
+     "youth_other_sports_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Løn- og personaleomkostninger",
+   "lado": "expense",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "wages_squad",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "wages_squad",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Finansielle indtægter",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Talentudvikling",
+   "lado": "expense",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.49
+    ],
+    [
+     "player_amortisation",
+     0.38
+    ],
+    [
+     "education_expense",
+     0.08
+    ]
+   ],
+   "tokens": 852
+  },
+  {
+   "label": "Løn- og personaleomkostninger, administration",
+   "lado": "expense",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Øvrige udgifter",
+   "lado": "expense",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Kampafvikling",
+   "lado": "expense",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Finansielle omkostninger",
+   "lado": "expense",
+   "page": 11,
+   "section": "Randers FC A/S",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 994
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.md",
+ "generado": "2026-10-04T17:59:43.221Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Cash and cash equivalents | 13 | 28,104,289",
+ "caja": {
+  "lineas": [
+   1351
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1376,
+   1383
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no indica la escala de forma explícita; por la magnitud de las cifras (total del activo 260,795,438) se infiere que está expresado en euros (unidades), mientras que las notas usan €/000. Por eso la evidencia de escala es una línea de cifras y no una frase textual del documento."
+}

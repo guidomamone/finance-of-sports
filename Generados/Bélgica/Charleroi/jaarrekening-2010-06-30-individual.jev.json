@@ -1,0 +1,72 @@
+{
+ "md": "Clubes/Bélgica/Charleroi/jaarrekening-2010-06-30-individual.md",
+ "generatedAt": "2026-09-30T01:11:41.852Z",
+ "rubros": [
+  {
+   "label": "640/8",
+   "page": 6,
+   "section": "COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.21,
+   "top3": [
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "635/7",
+   "page": 6,
+   "section": "COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "other_income",
+     0.12
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "631/4",
+   "page": 6,
+   "section": "COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1258
+  }
+ ]
+}

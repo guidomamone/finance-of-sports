@@ -1,0 +1,135 @@
+{
+ "md": "Clubes/Portugal/Rio Ave/relatorio-contas-2014-15.md",
+ "pdf": "Clubes/Portugal/Rio Ave/relatorio-contas-2014-15.pdf",
+ "club": "rio-ave",
+ "year": 2015,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:07:36.987Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 1
+ },
+ "warnings": [
+  "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "7 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 11,
+  "notasUsadas": []
+ },
+ "ladoConocido": 9,
+ "rubros": [
+  {
+   "label": "Vendas e prestações de serviços",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RIO AVE F.C. / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / # PERÍODO FINDO EM 30 DE JUNHO DE 2015",
+   "values": [
+    0.296733
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Subsídios à Exploração",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RIO AVE F.C. / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / # PERÍODO FINDO EM 30 DE JUNHO DE 2015",
+   "values": [
+    0.28303
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "expense",
+   "page": 11,
+   "section": "RIO AVE F.C. / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / # PERÍODO FINDO EM 30 DE JUNHO DE 2015",
+   "values": [
+    -0.026292
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": null,
+   "page": 11,
+   "section": "RIO AVE F.C. / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / # PERÍODO FINDO EM 30 DE JUNHO DE 2015",
+   "values": [
+    -0.253651
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "lado": "expense",
+   "page": 11,
+   "section": "RIO AVE F.C. / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / # PERÍODO FINDO EM 30 DE JUNHO DE 2015",
+   "values": [
+    -0.083757
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": null,
+   "page": 11,
+   "section": "RIO AVE F.C. / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / # PERÍODO FINDO EM 30 DE JUNHO DE 2015",
+   "values": [
+    -0.033945
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Outros rendimentos e ganhos",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RIO AVE F.C. / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / # PERÍODO FINDO EM 30 DE JUNHO DE 2015",
+   "values": [
+    0.247275
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Outros gastos e perdas",
+   "lado": "expense",
+   "page": 11,
+   "section": "RIO AVE F.C. / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / # PERÍODO FINDO EM 30 DE JUNHO DE 2015",
+   "values": [
+    -0.061438
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Gastos / reversões de depreciação e de amortização",
+   "lado": "expense",
+   "page": 11,
+   "section": "RIO AVE F.C. / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / # PERÍODO FINDO EM 30 DE JUNHO DE 2015",
+   "values": [
+    -0.29766
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Juros e gastos similares suportados",
+   "lado": "expense",
+   "page": 11,
+   "section": "RIO AVE F.C. / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / # PERÍODO FINDO EM 30 DE JUNHO DE 2015",
+   "values": [
+    -0.007078
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Imposto sobre o rendimento do período",
+   "lado": "expense",
+   "page": 11,
+   "section": "RIO AVE F.C. / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / # PERÍODO FINDO EM 30 DE JUNHO DE 2015",
+   "values": [
+    -0.003193
+   ],
+   "origen": "estado 3"
+  }
+ ]
+}

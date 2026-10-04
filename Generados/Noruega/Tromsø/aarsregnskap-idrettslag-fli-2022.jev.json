@@ -1,0 +1,1386 @@
+{
+ "md": "Clubes/Noruega/Tromsø/aarsregnskap-idrettslag-fli-2022.md",
+ "generatedAt": "2026-09-30T04:30:50.849Z",
+ "rubros": [
+  {
+   "label": "Annen driftskostnad",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Salgsinntekter",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "lump_football_operations",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.83
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Gaver",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Varekostnad",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.24,
+   "top3": [
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.26
+    ],
+    [
+     "match_organisation_expense",
+     0.22
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Ordinære avskrivninger",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "depreciation",
+     0.92
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ],
+    [
+     "player_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Forretningsadresse:",
+   "lado": null,
+   "page": 1,
+   "section": "# ÅRSREGNSKAP FOR REGNSKAPSÅRET 2022 - GENERELL INFORMASJON / # Enheten",
+   "choice": "admin_general_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "Leieinntekter",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "stadium_other",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "stadium_other",
+     0.79
+    ],
+    [
+     "other_income",
+     0.16
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Driftsresultat",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.25,
+   "top3": [
+    [
+     "other_expenses",
+     0.29000000000000004
+    ],
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Skattekostnad på ordinært resultat",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Netto finans",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "Overføring annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "TROMSØ IDRETTSLAG / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_income",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Gevinst v/salg spillerrettigheter",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "player_sales",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "player_sales",
+     0.75
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1380
+  },
+  {
+   "label": "Ordinært resultat etter skattekostnad",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.62
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Resultatandel tilknyttet selskap",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Av dette utgjør eiendeler i Bjerkakerhallen AS kr.",
+   "lado": null,
+   "page": 15,
+   "section": "Resultatandel tilknyttet selskap gjelder andel av resultat i Alfheim Stadion II AS. / Denne posten fremkommer kun i konsernregnskapet og er på kr. -376.880,- i 2022. / Balansen – eiendeler og gjeld / Under kortsiktig gjeld framkommer også gjeld til TIL Fotball AS med kr. 34.023.536,-. / Denne posten elimineres i konsernregnskapet.",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "stadium_other",
+     0.08
+    ]
+   ],
+   "tokens": 1379
+  },
+  {
+   "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "depreciation",
+     0.63
+    ],
+    [
+     "player_impairment",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1701
+  },
+  {
+   "label": "Årsresultat",
+   "lado": null,
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "71 116 314",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "82 331 998",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "other_income",
+     0.29000000000000004
+    ],
+    [
+     "lump_football_operations",
+     0.18000000000000002
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "5 387 924",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "36 897 343",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "lump_football_operations",
+     0.21000000000000002
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "2 526 152",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.24,
+   "top3": [
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "1 428 950",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.22,
+   "top3": [
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "7 113 522",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_income",
+     0.49
+    ],
+    [
+     "member_dues",
+     0.21000000000000002
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "39 569 497",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "3 301 608",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "other_income",
+     0.35000000000000003
+    ],
+    [
+     "lump_football_operations",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "86 513 039",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "-4 181 040",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "lump_football_operations_expense",
+     0.29
+    ],
+    [
+     "youth_other_sports_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "1 503 727",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "269",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "3 903 069",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "-376 880",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "lump_football_operations_expense",
+     0.21
+    ],
+    [
+     "youth_other_sports_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "9 640",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_expenses",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "11 237",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_expenses",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "-8 462 316",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "lump_football_operations_expense",
+     0.26
+    ],
+    [
+     "youth_other_sports_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "0",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "youth_other_sports_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1277
+  },
+  {
+   "label": "-4 281 276",
+   "lado": null,
+   "page": 18,
+   "section": "# Tromsø Idrettslag / ## Resultatregnskap / ### Konsernet Tromsø II. / ### Tromsø II.",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "lump_football_operations_expense",
+     0.29
+    ],
+    [
+     "youth_other_sports_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Lønninger og andre oppg.pl. ytelser",
+   "lado": null,
+   "page": 25,
+   "section": "Note 8 Varelager / Konsern: / Note 9 Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1574
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": null,
+   "page": 25,
+   "section": "Note 8 Varelager / Konsern: / Note 9 Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "wages_squad",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.18
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": null,
+   "page": 25,
+   "section": "Note 8 Varelager / Konsern: / Note 9 Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "wages_squad",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Datterselskaper:",
+   "lado": null,
+   "page": 23,
+   "section": "Tromsø Idrettslag / Noter til regnskapet pr. 31.12.2022 for morselskapet og konsernet Tromsø Idrettslag / Konsern",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.35000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1295
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": null,
+   "page": 25,
+   "section": "Note 8 Varelager / Konsern: / Note 9 Lønnskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "wages_squad",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1565
+  },
+  {
+   "label": "Tekn. utarb. ligningspapirer samt regnskap pr 31.12.",
+   "lado": null,
+   "page": 26,
+   "section": "Honorar til revisor:",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Revisjonshonorar inkl. søratestasjoner",
+   "lado": null,
+   "page": 26,
+   "section": "Honorar til revisor:",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Tekn. utarb. konsolidert regnskap til NFF og attestasjon rapporteringspakke til NFF",
+   "lado": null,
+   "page": 26,
+   "section": "Honorar til revisor:",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1454
+  },
+  {
+   "label": "Utvidede revisjonshandlinger og annen regnskapsmessig bistand",
+   "lado": null,
+   "page": 26,
+   "section": "Honorar til revisor:",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "+ Tilgang",
+   "lado": null,
+   "page": 27,
+   "section": "Konsern:",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "player_sales",
+     0.04
+    ]
+   ],
+   "tokens": 1251
+  },
+  {
+   "label": "Anskaff. kost 01.01.",
+   "lado": null,
+   "page": 27,
+   "section": "Konsern:",
+   "choice": "player_amortisation",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "player_amortisation",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "- Avgang",
+   "lado": null,
+   "page": 27,
+   "section": "Konsern:",
+   "choice": "other_expenses",
+   "confidence": 0.22,
+   "top3": [
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "player_sales",
+     0.24000000000000002
+    ],
+    [
+     "depreciation",
+     0.14
+    ]
+   ],
+   "tokens": 1251
+  },
+  {
+   "label": "Årets ord. avskrivn. i %",
+   "lado": null,
+   "page": 27,
+   "section": "Konsern:",
+   "choice": "depreciation",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "depreciation",
+     0.93
+    ],
+    [
+     "player_amortisation",
+     0.03
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1568
+  },
+  {
+   "label": "- Akkm. ord. avskrivninger",
+   "lado": null,
+   "page": 27,
+   "section": "Konsern:",
+   "choice": "depreciation",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "depreciation",
+     0.84
+    ],
+    [
+     "other_amortisation",
+     0.11
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1315
+  },
+  {
+   "label": "= Bokført verdi 31.12.",
+   "lado": null,
+   "page": 27,
+   "section": "Konsern:",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "player_impairment",
+     0.07
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "= Anskaff. kost 31.12.",
+   "lado": null,
+   "page": 27,
+   "section": "Konsern:",
+   "choice": "player_amortisation",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "player_amortisation",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "depreciation",
+     0.11
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Årets ord. avskrivning",
+   "lado": null,
+   "page": 27,
+   "section": "Konsern:",
+   "choice": "depreciation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "depreciation",
+     0.97
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1566
+  }
+ ]
+}

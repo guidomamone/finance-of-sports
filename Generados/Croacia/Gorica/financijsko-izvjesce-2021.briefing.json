@@ -1,0 +1,3718 @@
+{
+  "club": "gorica-hr",
+  "year": 2021,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Croacia/Gorica/financijsko-izvjesce-2021.md",
+  "generatedAt": "2026-09-30T21:59:42.173Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 151,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 23,
+  "relevantTableCount": 7,
+  "tables": [
+    {
+      "page": 8,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Bilanca",
+      "columns": [
+        "",
+        "31.12.2021. kuna",
+        "31.12.2020. kuna"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Kratkotrajna imovina",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Novac i novčani ekvivalenti",
+          "values": [
+            "896.473",
+            "1.296.290"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Potraživanja od nogometnih klubova za transfere igrača",
+          "values": [
+            "11.787.967",
+            "818.886"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Potraživanja od subjekata grupe i ostalih povezanih strana",
+          "values": [
+            "20.000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Potraživanja od posrednika",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Potraživanja - ostala",
+          "values": [
+            "3.376.260",
+            "3.322.610"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Porezna imovina",
+          "values": [
+            "276.244",
+            "1.870.846"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zalihe",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostala kratkotrajna imovina",
+          "values": [
+            "766.311",
+            "28.613"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupno - Kratkotrajna imovina",
+          "values": [
+            "17.123.255",
+            "7.337.245"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Dugotrajna imovina",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Materijalna imovina (stalna sredstva)",
+          "values": [
+            "994.849",
+            "1.102.769"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nematerijalna imovina - igrači",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nematerijalna imovina - ostala",
+          "values": [
+            "4.455.735",
+            "4.455.735"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Potraživanja od nogometnih klubova za transfere igrača",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Potraživanja od subjekata grupe i ostalih povezanih strana",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Porezna imovina",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ulaganja",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostala dugotrajna imovina",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupno - Dugotrajna imovina",
+          "values": [
+            "5.450.584",
+            "5.558.504"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "UKUPNO - IMOVINA",
+          "values": [
+            "22.573.839",
+            "12.895.749"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kratkoročne obveze",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Prekoračenja po bankovnim računima",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bankovni i ostali zajmovi",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obveze prema subjektima grupe i povezanim stranama",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obveze prema nogometnim klubovima iz transfera igrača",
+          "values": [
+            "1.642.749",
+            "461.325"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obveze prema posrednicima",
+          "values": [
+            "29.778",
+            "120.590"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obveze prema dobavljačima",
+          "values": [
+            "3.147.593",
+            "1.242.407"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obveze prema zaposlenicima",
+          "values": [
+            "1.269.653",
+            "1.371.104"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obveze prema državi (porezi i doprinosi)",
+          "values": [
+            "181.315",
+            "255.826"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obračunati troškovi i odgođeni prihodi",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostale obveze za poreze",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostale kratkoročne obveze",
+          "values": [
+            "429.217",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kratkoročna rezerviranja",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupno - Kratkoročne obveze",
+          "values": [
+            "6.700.305",
+            "3.451.252"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Dugoročne obveze",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bankovni i ostali zajmovi",
+          "values": [
+            "1.664.994",
+            "1.829.509"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obveze prema subjektima grupe i drugim povezanim stranama",
+          "values": [
+            "12.398.337",
+            "12.398.337"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obveze prema nogometnim klubovima iz transfera igrača",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obveze prema posrednicima",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obveze prema zaposlenicima",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obveze prema državi (porezi i doprinosi)",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obračunati troškovi i odgođeni prihodi",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostale obveze za poreze",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostale dugoročne obveze",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dugoročna rezerviranja",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupno - Dugoročne obveze",
+          "values": [
+            "14.063.331",
+            "14.227.846"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ukupne obveze",
+          "values": [
+            "20.763.636",
+            "17.679.098"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Neto imovina/(obveze)",
+          "values": [
+            "1.810.203",
+            "-4.783.349"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kapital i rezerve",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Dionički/temeljni kapital",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Revalorizacijske rezerve",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostale rezerve",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zadržana dobit / (gubitak)",
+          "values": [
+            "-4.783.349",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dobit / (gubitak) tekuće godine / razdoblja",
+          "values": [
+            "6.593.552",
+            "-4.783.349"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupno kapital i rezerve",
+          "values": [
+            "1.810.203",
+            "-4.783.349"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "UKUPNO KAPITAL I OBVEZE",
+          "values": [
+            "22.573.839",
+            "12.895.749"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "columns": [
+        "PRIHODI",
+        "Bilješka",
+        "2021. kuna",
+        "2020. kuna"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Prihodi od ulaznica - Nacionalna natjecanja",
+          "values": [
+            "",
+            "87.378",
+            "155.748"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prihodi od ulaznica - UEFA klupska natjecanja",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prihodi od ulaznica - Godišnje ulaznice",
+          "values": [
+            "",
+            "14.100",
+            "35.700"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prihodi od ulaznica - Članarine",
+          "values": [
+            "",
+            "440.980",
+            "241.760"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali nerazvrstani prihodi od ulaznica",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prihodi od ulaznica - ukupno",
+          "values": [
+            "",
+            "542.458",
+            "433.208"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Prihod od sponzorstva i oglašavanja - Proizvođač opreme",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prihod od sponzorstva i oglašavanja - Glavni sponzor",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prihod od sponzorstva i oglašavanja - Sponzor za stadion",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prihod od sponzorstva i oglašavanja - Reklamni pano oko terena za igru",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
+          "values": [
+            "",
+            "1.573.495",
+            "135.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prihod od sponzorstva i oglašavanja - Ukupno",
+          "values": [
+            "",
+            "1.573.495",
+            "135.000"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Prava emitiranja - Nacionalna natjecanja",
+          "values": [
+            "",
+            "1.384.200",
+            "1.430.536"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali nerazvrstani prihodi od emitiranja",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prihodi od prava emitiranja - Ukupno",
+          "values": [
+            "",
+            "1.384.200",
+            "1.430.536"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Komercijalni prihodi - Nacionalna natjecanja",
+          "values": [
+            "",
+            "786.000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Komercijalni prihodi - Prodaja proizvoda",
+          "values": [
+            "",
+            "550.152",
+            "995.862"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
+          "values": [
+            "",
+            "20.821",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali nerazvrstani komercijalni prihodi",
+          "values": [
+            "",
+            "369.327",
+            "149.366"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Komercijalni prihodi - Ukupno",
+          "values": [
+            "",
+            "1.726.300",
+            "1.145.228"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uefina klupska natjecanja - solidarne uplate",
+          "values": [
+            "",
+            "57.500",
+            "3.521.583"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uefine nagrade i solidarne uplate - nerazvrstano",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uefine nagrade i solidarne uplate - Ukupno",
+          "values": [
+            "",
+            "57.500",
+            "3.521.583"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Donacije i dotacije ili drugi iznosi od države i lokalne samouprave",
+          "values": [
+            "",
+            "3.409.750",
+            "4.160.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Donacije nepovezanih strana",
+          "values": [
+            "",
+            "541.600",
+            "330.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Donacije i doprinosi povezanih strana",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prihodi od nenogometnih djelatnosti",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Izvanredni prihodi",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali nerazvrstani poslovni prihodi",
+          "values": [
+            "! Bilješka IX",
+            "163.758",
+            "694.925"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali poslovni prihodi - Ukupno",
+          "values": [
+            "",
+            "4.115.108",
+            "5.184.925"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ukupno - Prihodi",
+          "values": [
+            "",
+            "9.399.061",
+            "11.850.480"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "columns": [
+        "RASHODI",
+        "Bilješka",
+        "2021. kuna",
+        "2020. kuna"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Troškovi prodaje/materijala - Ukupno",
+          "values": [
+            "",
+            "0",
+            "0"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Plaće igrača",
+          "values": [
+            "",
+            "(12.981.069)",
+            "(8.993.968)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Porezi i doprinosi - igrači",
+          "values": [
+            "",
+            "(102.294)",
+            "(94.501)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali nerazvrstani troškovi primanja igrača",
+          "values": [
+            "",
+            "(219.642)",
+            "(162.290)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Troškovi primanja igrača - ukupno",
+          "values": [
+            "",
+            "(13.303.005)",
+            "(9.250.759)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Plaće ostalih zaposlenika",
+          "values": [
+            "",
+            "(1.545.025)",
+            "(793.710)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Porezi i doprinosi - ostali zaposlenici",
+          "values": [
+            "",
+            "(750.157)",
+            "(417.985)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali nerazvrstani troškovi za primanja ostalih zaposlenika",
+          "values": [
+            "",
+            "(325.526)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trošak primanja ostalih zaposlenika - Ukupno",
+          "values": [
+            "",
+            "(2.620.708)",
+            "(1.211.695)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ukupni troškovi primanja zaposlenika",
+          "values": [
+            "",
+            "(15.923.713)",
+            "(10.462.454)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Amortizacija i umanjenje vrijednosti dugotrajne materijalne imovine",
+          "values": [
+            "",
+            "(250.760)",
+            "(248.146)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizacija i umanjenje ostale nematerijalne imovine (bez registracija igrača)",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizacija i umanjenje vrijednosti - Ukupno (bez registracija igrača)",
+          "values": [
+            "",
+            "(250.760)",
+            "(248.146)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Troškovi održavanja utakmica",
+          "values": [
+            "",
+            "(3.960.691)",
+            "(1.898.579)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Troškovi sponzorstva i oglašavanja",
+          "values": [
+            "",
+            "(264.158)",
+            "(543.053)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Troškovi komercijalnih aktivnosti",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Troškovi posrednika",
+          "values": [
+            "",
+            "(5.124.160)",
+            "(188.465)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Troškovi imovine i objekata",
+          "values": [
+            "",
+            "(835.209)",
+            "(436.072)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Troškovi za nenogometne djelatnosti",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Izvanredni troškovi",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali nerazvrstani poslovni rashodi",
+          "values": [
+            "! Bilješka X",
+            "(6.622.565)",
+            "(746.222)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali poslovni rashodi - Ukupno",
+          "values": [
+            "",
+            "(16.806.783)",
+            "(3.812.391)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ukupno - poslovni rashodi (bez registracija igrača)",
+          "values": [
+            "",
+            "(32.981.256)",
+            "(14.522.991)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Poslovni rezultat (bez registracija igrača)",
+          "values": [
+            "",
+            "(23.582.195)",
+            "(2.672.511)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "*Ispunjava samo izvještajni subjekt koji primjenjuje metodu kapitalizacije troškova registracija igrača*",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizacija nematerijalne imovine (registracije igrača)",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Umanjenje vrijednosti nematerijalne imovine (registracije igrača)",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dobit od raspolaganja nematerijalnom imovinom (registracije igrača)",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gubitak od raspolaganja nematerijalnom imovinom (registracije igrača)",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Neto rezultat od raspolaganja registracijama igrača - po metodi kapitalizacije troškova",
+          "values": [
+            "",
+            "0",
+            "0"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "*Ispunjava samo izvještajni subjekt koji za registracije igrača primjenjuje metodu prihoda i rashoda*",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Troškovi za stjecanje registracija igrača",
+          "values": [
+            "",
+            "(3.148.845)",
+            "(3.530.029)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prihodi od raspolaganja registracijama igrača",
+          "values": [
+            "",
+            "33.492.079",
+            "4.820.575"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Neto rezultat od raspolaganja registracijama igrača - po metodi prihoda i rashoda",
+          "values": [
+            "",
+            "30.343.234",
+            "1.290.546"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Dobit /(gubitak) od raspolaganja dugotrajnom imovinom",
+          "values": [
+            "",
+            "13.367",
+            "(4.584.318)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Financijski prihodi",
+          "values": [
+            "",
+            "20.365",
+            "71.681"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financijski rashodi",
+          "values": [
+            "",
+            "(201.219)",
+            "(130.581)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupni neto prihod/rashod od financiranja",
+          "values": [
+            "",
+            "(180.854)",
+            "(58.900)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ostali neposlovni prihodi",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali neposlovni rashodi",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupni neposlovni prihodi/rashodi",
+          "values": [
+            "",
+            "0",
+            "0"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 11,
+      "section": "Račun dobiti i gubitka",
+      "columns": [
+        "",
+        "2021. kuna",
+        "2020. kuna"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Porezni prihod/(rashod)",
+          "values": [
+            "",
+            "0"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Dobit/(gubitak) poslije oporezivanja",
+          "values": [
+            "6.593.552",
+            "(6.025.183)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Izvještaj o novčanom toku",
+      "columns": [
+        "",
+        "2021. kuna",
+        "2020. kuna"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Novčani tokovi od poslovnih aktivnosti (od redovnog poslovanja)",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gotovinski primici od prihoda od ulaznica",
+          "values": [
+            "516.610",
+            "433.208"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski primici od sponzorstva i oglašavanja",
+          "values": [
+            "1.415.625",
+            "125.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski primici od prava emitiranja",
+          "values": [
+            "1.427.750",
+            "1.430.536"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski primici od komercijalnih aktivnosti",
+          "values": [
+            "2.455.572",
+            "1.811.749"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski primici od ostalih poslovnih aktivnosti",
+          "values": [
+            "47.041.047",
+            "40.388.217"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski izdaci dobavljačima za proizvode i usluge",
+          "values": [
+            "(9.833.186)",
+            "(3.130.305)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski izdaci zaposlenicima i u ime zaposlenika",
+          "values": [
+            "(14.654.060)",
+            "(8.623.234)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski izdaci prema posrednicima",
+          "values": [
+            "(5.102.952)",
+            "(67.876)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski izdaci u vezi s ostalim poslovnim aktivnostima",
+          "values": [
+            "(47.491.858)",
+            "(44.567.157)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski priljev/(odljev) od poslovnih aktivnosti (redovnog poslovanja)",
+          "values": [
+            "(24.225.452)",
+            "(12.199.862)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Novčani tokovi od ulaganja",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gotovinski primici od prodaje registracija igrača",
+          "values": [
+            "27.188.547",
+            "8.565.091"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski izdaci za stjecanje registracija igrača",
+          "values": [
+            "(3.342.912)",
+            "(4.668.379)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski primici od prodaje dugotrajne imovine",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski izdaci za stjecanje dugotrajne imovine",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali gotovinski primici/izdaci od/za ulaganja",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nerazvrstani gotovinski primici/izdaci od/za ulaganja",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski priljev/(odljev) od ulaganja",
+          "values": [
+            "23.845.635",
+            "3.896.712"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Novčani tokovi od financiranja",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gotovinski primici od pozajmica - dioničari i povezane strane",
+          "values": [
+            "",
+            "12.360.332"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski izdaci za pozajmice - dioničari i povezane strane",
+          "values": [
+            "(20.000)",
+            "(2.976.500)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski primici od pozajmica - financijske institucije",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski izdaci za pozajmice - financijske institucije",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski primici od povećanja kapitala",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski izdaci za dividende isplaćene vlasnicima/dioničarima",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali priljevi/odljevi od/za financiranja",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nerazvrstani gotovinski priljevi/odljevi od/za financiranja",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gotovinski priljev/(odljev) od/za financiranja",
+          "values": [
+            "(20.000)",
+            "9.383.832"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Neto povećanje/(smanjenje) gotovog novca u izvještajnom razdoblju",
+          "values": [
+            "(399.817)",
+            "1.080.682"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 12,
+      "section": "#### Poravnanje stavke Novac i novčani ekvivalenti",
+      "columns": [
+        "",
+        "2021.",
+        "2020."
+      ],
+      "rows": [
+        {
+          "rawLabel": "Preneseno na početku izvještajnog razdoblju (prepisati početno stanje - 2019.)",
+          "values": [
+            "1.296.290",
+            "215.608"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Neto gotovinski priljev/odljev u izvještajnom razdoblju",
+          "values": [
+            "(399.817)",
+            "1080682"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Novac i novčani ekvivalenti na kraju izvještajnog razdoblja",
+          "values": [
+            "896.473",
+            "1.296.290"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "\\*PROVJERA S BILANCOM",
+          "values": [
+            "OK OK",
+            "OK OK"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Bilješke uz financijske izvještaje I / #### 1. Dobit/gubitak od raspolaganja dugotrajnom imovinom",
+      "columns": [
+        "",
+        "Bilješke",
+        "2021. kuna",
+        "2020. kuna"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Prihod od otuđivanja nematerijalne imovine",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prihod od otuđivanja materijalne dugotrajne imovine",
+          "values": [
+            "",
+            "609.522",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupno prihodi",
+          "values": [
+            "",
+            "609.522",
+            "0"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Trošak stjecanja nematerijalne imovine",
+          "values": [
+            "",
+            "",
+            "4.455.735"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trošak stjecanja materijalne dugotrajne imovine",
+          "values": [
+            "",
+            "596.155",
+            "128.583"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupno rashodi",
+          "values": [
+            "",
+            "596.155",
+            "4.584.318"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ukupno",
+          "values": [
+            "",
+            "13.367",
+            "(4.584.318)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "OK",
+            "OK"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 16,
+      "section": "#### 2. Troškovi financiranja",
+      "columns": [
+        "",
+        "Bilješke",
+        "2021. kuna",
+        "2020. kuna"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Prihodi od kamata po bankovnim računima i danim kreditima",
+          "values": [
+            "",
+            "14.780",
+            "47"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pozitivne tečajne razlike",
+          "values": [
+            "",
+            "2.585",
+            "40.914"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali financijski prihodi",
+          "values": [
+            "",
+            "3.000",
+            "30.720"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupni financijski prihodi",
+          "values": [
+            "",
+            "20.365",
+            "71.681"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "OK",
+            "OK"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Troškovi kamata na prekoračenja po bankovnim računima i zajmovima",
+          "values": [
+            "",
+            "(74.050)",
+            "(82.557)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Troškovi kamata - leasing",
+          "values": [
+            "",
+            "(8.700)",
+            "(8.445)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Negativne tečajne razlike",
+          "values": [
+            "",
+            "(115.358)",
+            "(39.579)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali financijski troškovi",
+          "values": [
+            "",
+            "(3.111)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupni financijski troškovi",
+          "values": [
+            "",
+            "(201.219)",
+            "(130.581)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "OK",
+            "OK"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupno neto",
+          "values": [
+            "",
+            "(180.854)",
+            "(58.900)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 17,
+      "section": "1. SPORT SERVIS ZDENKO (4.162.501) (0) / 2. SPORTBACK GROUP LTD MAURITIUS (749.443) o / 3. F-MG PRZEMYSLAW PANTAK (110.785) (0) / 4. VM SPORT (45.172) (o) / 5. CAPET SPORTS GROUP (44.953) o",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "6. Ostali",
+          "values": [
+            "(11.306)",
+            "(188.465)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupno",
+          "values": [
+            "(5.124.160)",
+            "(188.465)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Bilješke uz financijske izvještaje III / 7. Dugotrajna materijalna imovina 2021. / Ukupno / kuna / Trošak ili procjena",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Na početku razdoblja",
+          "values": [
+            "1.650.348"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kupnja ili povećanje",
+          "values": [
+            "596.155"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otuđivanja",
+          "values": [
+            "(609.521)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Povećanje uslijed revalorizacije / Na kraju razdoblja 1.636.982 / Akumulirana amortizacija",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Na početku razdoblja",
+          "values": [
+            "547.579"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Godišnji trošak amortizacije",
+          "values": [
+            "250.759"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Smanjenje po revalorizaciji",
+          "values": [
+            "(156.205)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Na kraju razdoblja",
+          "values": [
+            "642.133"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Otuđivanje / Sadašnja knjigovodstvena vrijednost",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Na početku razdoblja",
+          "values": [
+            "1.102.769"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Na kraju razdoblja",
+          "values": [
+            "994.849"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Bilješke uz financijske izvještaje IV / #### 8. Nematerijalna imovina",
+      "columns": [
+        "",
+        "Bilješke",
+        "Registracije igrača kuna",
+        "Ostalo kuna",
+        "2021. Ukupno kuna"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Trošak",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Na početku razdoblja",
+          "values": [
+            "",
+            "",
+            "4.455.735",
+            "4.455.735"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dodavanja",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otuđivanja",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Na kraju razdoblja",
+          "values": [
+            "",
+            "",
+            "4.455.735",
+            "4.455.735"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Akumulirana Amortizacija",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Na početku razdoblja",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trošak amortizacije za razdoblje",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otuđivanja",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Na kraju razdoblja",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Sadašnja knjigovodstvena vrijednost",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Na početku razdoblja",
+          "values": [
+            "",
+            "",
+            "4.455.735",
+            "4.455.735"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Na kraju razdoblja",
+          "values": [
+            "",
+            "",
+            "4.455.735",
+            "4.455.735"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "OK",
+            "OK",
+            "OK"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "OK",
+            "OK",
+            "OK"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Bilješke uz financijske izvještaje V / #### 9. Prekoračenja po bankovnim računima i zajmovi",
+      "columns": [
+        "",
+        "2021. kuna",
+        "2020. kuna"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Prekoračenja po bankovnim računima",
+          "values": [
+            "1.150.229",
+            "1.624.401"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bankovni zajmovi",
+          "values": [
+            "514.765",
+            "205.108"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ostali zajmovi",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1.664.994",
+            "1.829.509"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "OK",
+            "OK"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "Zajmovi se otplaćuju kako slijedi: / - na zahtjev ili u roku od jedne godine / - u drugoj godini / - u trećoj do uključivo petoj godini / - poslije pet godina:",
+      "columns": [
+        "",
+        "2021.",
+        "2020."
+      ],
+      "rows": [
+        {
+          "rawLabel": "- poslije pet godina",
+          "values": [
+            "1.664.994",
+            "1.829.509"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1.664.994",
+            "1.829.509"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "OK",
+            "OK"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "Manje: dospjeli iznos za podmirenje u roku od 12 mjeseci (prikazan u tekućim obvezama):",
+      "columns": [
+        "",
+        "2021.",
+        "2020."
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "OK",
+            "OK"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "Dospjeli iznos za podmirenje poslije 12 mjeseci:",
+      "columns": [
+        "",
+        "2021.",
+        "2020."
+      ],
+      "rows": [
+        {
+          "rawLabel": "Dospjeli iznos za podmirenje poslije 12 mjeseci",
+          "values": [
+            "1.664.994",
+            "1.829.509"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "OK",
+            "OK"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "#### 10. Obveze prema subjektima grupe i ostalim povezanim stranama",
+      "columns": [
+        "",
+        "2021. kuna",
+        "2020. kuna"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Obveze prema subjektima grupe (uključujući dioničare)",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obveze prema ključnim članovima uprave",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obveze prema ostalim povezanim stranama",
+          "values": [
+            "12.398.337",
+            "12.398.337"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupno",
+          "values": [
+            "12.398.337",
+            "12.398.337"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "OK",
+            "OK"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Bilješke uz financijske izvještaje VIII / #### 13. Transakcije povezanih strana",
+      "columns": [
+        "",
+        "Prihodi od prodaje robe/usluga povezanim stranama 2021.",
+        "Prihodi od prodaje robe/usluga povezanim stranama 2020.",
+        "Troškovi nabave robe/usluga od povezanih strana 2021.",
+        "Troškovi nabave robe/usluga od povezanih strana 2020.",
+        "Potraživanja od povezanih strana 2021.",
+        "Potraživanja od povezanih strana 2020.",
+        "Obveze prema povezanim stranama 2021.",
+        "Obveze prema povezanim stranama 2021. [2020.]"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Većinski vlasnici",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A FAN POINT GORICA D.O.O.",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "20.000",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupno",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "20.000",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ostale povezane strane",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "INVESTITOR TOP INVEST",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "12.398.337",
+            "12.398.337"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupno",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "12.398.337",
+            "12.398.337"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Sveukupno",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "20.000",
+            "0",
+            "12.398.337",
+            "12.398.337"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 27,
+      "section": "Hrvatski nogometni klub Gorica / Bilješke uz financijske izvještaje IX / 14. Ostali nerazvrstani poslovni prihodi / *potrebno unijeti sve prihode veće od 10% ukupnog iznosa / Opis Iznos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. potpore covid",
+          "values": [
+            "133.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. otpis obaveza",
+          "values": [
+            "18.397"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. subvencija covid",
+          "values": [
+            "12.361"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ukupno:",
+          "values": [
+            "163.758"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 29,
+      "section": "Hrvatski nogometni klub Gorica / Bilješke uz financijske izvještaje X / 15. Ostali nerazvrstani poslovni rashodi / *potrebno unijeti sve raashode veće od 10% ukupnog iznosa / Opis Iznos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. zakupnine i najamnine",
+          "values": [
+            "-1.694.269"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OSTALI",
+          "values": [
+            "-4.928.296"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 33,
+      "section": "Pored upisa u Registar udruga, HNK Gorica upisan je u: / društvene djelatnosti, na stranici broj 201, pod registarskim brojem: 238-01-201/10, sa / danom upisa 25. siječnja 2010. godine. / - < Registar profesionalnih sportskih klubova u Ministarstvu turizma i sporta, Registarski / broj upisa: PŠ-01-0031/17, datum upisa 23.ožujka 2017.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Registar klubova Nogometnog saveza Zagrebačke županije, potvrda od",
+          "values": [
+            "02.01.2020."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "godine, BROJ:",
+          "values": [
+            "D-001/20."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 38,
+      "section": null,
+      "columns": [
+        "Prezime i ime",
+        "Adresa",
+        "OIB",
+        "Trajanje mandata"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Bebić Domagoj",
+          "values": [
+            "Zorkovačka 4<br>10 000 Zagreb",
+            "50544191196",
+            "13.09.2017.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "1."
+        },
+        {
+          "rawLabel": "Blažinčić Darko",
+          "values": [
+            "Junija Palmotića 5<br>10 410 Velika Gorica",
+            "54725925118",
+            "13.09.2017.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Črnko Nenad",
+          "values": [
+            "Osišće 1, Buševec<br>10 410 Velika Gorica",
+            "63378646007",
+            "13.09.2017.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Debijadi Devi",
+          "values": [
+            "Slavka Kolara 10<br>10 410 Velika Gorica",
+            "48137206889",
+            "13.09.2017.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "4."
+        },
+        {
+          "rawLabel": "Hrstić Tvrtko",
+          "values": [
+            "Zvonimirova 9<br>10 410 Velika Gorica",
+            "83821391093",
+            "13.09.2017.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "5."
+        },
+        {
+          "rawLabel": "Ivanuš Renato",
+          "values": [
+            "Horvatova 47<br>10 410 Velika Gorica",
+            "63187266987",
+            "13.09.2017.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "6."
+        },
+        {
+          "rawLabel": "Japec Kristijan",
+          "values": [
+            "HBZ 14<br>10 410 Velika Gorica",
+            "42345052460",
+            "13.09.2017.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "7."
+        },
+        {
+          "rawLabel": "Krlić Igor",
+          "values": [
+            "Posavska 24, Novo Čiče<br>10 410 Velika Gorica",
+            "43698758155",
+            "13.06.2018.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "8."
+        },
+        {
+          "rawLabel": "Landeka Tomislav",
+          "values": [
+            "Trebnjanska 16<br>10410 Velika Gorica",
+            "04931764026",
+            "13.09.2017.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "9."
+        },
+        {
+          "rawLabel": "Makek Željka",
+          "values": [
+            "Matice Hrvatske 3<br>10 410 Velika Gorica",
+            "38111730406",
+            "13.09.2017.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "10."
+        },
+        {
+          "rawLabel": "Matić Željko",
+          "values": [
+            "Cvjetno naselje 18<br>10 410 Velika Gorica",
+            "19453400682",
+            "23.12.2019.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "11."
+        },
+        {
+          "rawLabel": "Gabelica Filip",
+          "values": [
+            "Ksavera Šandora Đalskog 25; 10 410 V. Gorica",
+            "49683370939",
+            "06.07.2021.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "12."
+        },
+        {
+          "rawLabel": "Sučec Dario",
+          "values": [
+            "Fabijančićeva 23<br>10 410 Velika Gorica",
+            "07966161952",
+            "13.09.2017.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "13."
+        },
+        {
+          "rawLabel": "Šimunić Damir",
+          "values": [
+            "Pleška 47c<br>10 410 Velika Gorica",
+            "77940905496",
+            "13.09.2017.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "14."
+        },
+        {
+          "rawLabel": "Vučur Robert",
+          "values": [
+            "Mate Lovraka 15,<br>10 410 Velika Gorica",
+            "73318630666",
+            "13.09.2017.-12.09.2022."
+          ],
+          "bold": false,
+          "codigo": "15."
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 101,
+    "results": [
+      {
+        "label": "Prihodi od ulaznica - Nacionalna natjecanja",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Prihodi od ulaznica - Nacionalna natjecanja",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Prihodi od ulaznica - Nacionalna natjecanja",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihodi od ulaznica - UEFA klupska natjecanja",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "matchday_competition",
+        "matchedLabel": "Prihodi od ulaznica - Nacionalna natjecanja",
+        "similarity": 50
+      },
+      {
+        "label": "Prihodi od ulaznica - UEFA klupska natjecanja",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihodi od ulaznica - Godišnje ulaznice",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihodi od ulaznica - Godišnje ulaznice",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihodi od ulaznica - Članarine",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "member_dues",
+        "matchedLabel": "Prihodi od ulaznica - Članarine",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Prihodi od ulaznica - Članarine",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani prihodi od ulaznica",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani prihodi od ulaznica",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihodi od ulaznica - ukupno",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "member_dues",
+        "matchedLabel": "Prihodi od ulaznica - Članarine",
+        "similarity": 50
+      },
+      {
+        "label": "Prihodi od ulaznica - ukupno",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihod od sponzorstva i oglašavanja - Proizvođač opreme",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihod od sponzorstva i oglašavanja - Proizvođač opreme",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihod od sponzorstva i oglašavanja - Glavni sponzor",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihod od sponzorstva i oglašavanja - Glavni sponzor",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihod od sponzorstva i oglašavanja - Sponzor za stadion",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihod od sponzorstva i oglašavanja - Sponzor za stadion",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihod od sponzorstva i oglašavanja - Reklamni pano oko terena za igru",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihod od sponzorstva i oglašavanja - Reklamni pano oko terena za igru",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihod od sponzorstva i oglašavanja - Ukupno",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Prihod od sponzorstva i oglašavanja - Ukupno + Komercijalni prihodi - Ukupno",
+        "similarity": 67
+      },
+      {
+        "label": "Prihod od sponzorstva i oglašavanja - Ukupno",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prava emitiranja - Nacionalna natjecanja",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prava emitiranja - Nacionalna natjecanja",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani prihodi od emitiranja",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani prihodi od emitiranja",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihodi od prava emitiranja - Ukupno",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Prihodi od prava emitiranja - Ukupno",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Prihodi od prava emitiranja - Ukupno",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Komercijalni prihodi - Nacionalna natjecanja",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "matchday_competition",
+        "matchedLabel": "Prihodi od ulaznica - Nacionalna natjecanja",
+        "similarity": 60
+      },
+      {
+        "label": "Komercijalni prihodi - Nacionalna natjecanja",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Komercijalni prihodi - Prodaja proizvoda",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Komercijalni prihodi - Prodaja proizvoda",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani komercijalni prihodi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani komercijalni prihodi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Komercijalni prihodi - Ukupno",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Prihod od sponzorstva i oglašavanja - Ukupno + Komercijalni prihodi - Ukupno",
+        "similarity": 50
+      },
+      {
+        "label": "Komercijalni prihodi - Ukupno",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Uefina klupska natjecanja - solidarne uplate",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Uefina klupska natjecanja - solidarne uplate",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Uefine nagrade i solidarne uplate - nerazvrstano",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "competition_bonus",
+        "matchedLabel": "Uefine nagrade i solidarne uplate - Ukupno",
+        "similarity": 67
+      },
+      {
+        "label": "Uefine nagrade i solidarne uplate - nerazvrstano",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Uefine nagrade i solidarne uplate - Ukupno",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "competition_bonus",
+        "matchedLabel": "Uefine nagrade i solidarne uplate - Ukupno",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Uefine nagrade i solidarne uplate - Ukupno",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Donacije i dotacije ili drugi iznosi od države i lokalne samouprave",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Donacije i dotacije ili drugi iznosi od države i lokalne samouprave",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Donacije nepovezanih strana",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Donacije nepovezanih strana",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Donacije i doprinosi povezanih strana",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Donacije i doprinosi povezanih strana",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihodi od nenogometnih djelatnosti",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihodi od nenogometnih djelatnosti",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Izvanredni prihodi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Izvanredni prihodi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani poslovni prihodi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani poslovni prihodi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali poslovni prihodi - Ukupno",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Ostali poslovni prihodi - Ukupno (donacije + prihodi od nenogometnih djelatnosti + ostalo)",
+        "similarity": 50
+      },
+      {
+        "label": "Ostali poslovni prihodi - Ukupno",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupno - Prihodi",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "broadcasting",
+        "matchedLabel": "Prihodi od prava emitiranja - Ukupno",
+        "similarity": 50
+      },
+      {
+        "label": "Ukupno - Prihodi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi prodaje/materijala - Ukupno",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi prodaje/materijala - Ukupno",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Plaće igrača",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Plaće igrača",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Porezi i doprinosi - igrači",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Porezi i doprinosi - igrači",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani troškovi primanja igrača",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani troškovi primanja igrača",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi primanja igrača - ukupno",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi primanja igrača - ukupno",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Troškovi primanja igrača + Troškovi primanja stručnog stožera",
+        "similarity": 50
+      },
+      {
+        "label": "Plaće ostalih zaposlenika",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Plaće ostalih zaposlenika",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Porezi i doprinosi - ostali zaposlenici",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Porezi i doprinosi - ostali zaposlenici",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani troškovi za primanja ostalih zaposlenika",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani troškovi za primanja ostalih zaposlenika",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Trošak primanja ostalih zaposlenika + Troškovi primanja zaposlenika (ostali/nerazvrstani) + Troškovi imovine i objekata",
+        "similarity": 67
+      },
+      {
+        "label": "Trošak primanja ostalih zaposlenika - Ukupno",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Trošak primanja ostalih zaposlenika - Ukupno",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupni troškovi primanja zaposlenika",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupni troškovi primanja zaposlenika",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizacija i umanjenje vrijednosti dugotrajne materijalne imovine",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizacija i umanjenje vrijednosti dugotrajne materijalne imovine",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "depreciation",
+        "matchedLabel": "Amortizacija dugotrajne materijalne imovine",
+        "similarity": 67
+      },
+      {
+        "label": "Amortizacija i umanjenje ostale nematerijalne imovine (bez registracija igrača)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizacija i umanjenje ostale nematerijalne imovine (bez registracija igrača)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_amortisation",
+        "matchedLabel": "Umanjenje vrijednosti ostale nematerijalne imovine (bez registracija igrača)",
+        "similarity": 78
+      },
+      {
+        "label": "Amortizacija i umanjenje vrijednosti - Ukupno (bez registracija igrača)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizacija i umanjenje vrijednosti - Ukupno (bez registracija igrača)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_amortisation",
+        "matchedLabel": "Umanjenje vrijednosti ostale nematerijalne imovine (bez registracija igrača)",
+        "similarity": 50
+      },
+      {
+        "label": "Troškovi održavanja utakmica",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi održavanja utakmica",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Troškovi utakmica",
+        "similarity": 67
+      },
+      {
+        "label": "Troškovi sponzorstva i oglašavanja",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi sponzorstva i oglašavanja",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi komercijalnih aktivnosti",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi komercijalnih aktivnosti",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi posrednika",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi posrednika",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi imovine i objekata",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi imovine i objekata",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi za nenogometne djelatnosti",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi za nenogometne djelatnosti",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Izvanredni troškovi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Izvanredni troškovi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani poslovni rashodi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali nerazvrstani poslovni rashodi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali poslovni rashodi - Ukupno",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali poslovni rashodi - Ukupno",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupno - poslovni rashodi (bez registracija igrača)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupno - poslovni rashodi (bez registracija igrača)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Poslovni rezultat (bez registracija igrača)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Poslovni rezultat (bez registracija igrača)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "*Ispunjava samo izvještajni subjekt koji primjenjuje metodu kapitalizacije troškova registracija igrača*",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "*Ispunjava samo izvještajni subjekt koji primjenjuje metodu kapitalizacije troškova registracija igrača*",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizacija nematerijalne imovine (registracije igrača)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizacija nematerijalne imovine (registracije igrača)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Umanjenje vrijednosti nematerijalne imovine (registracije igrača)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Umanjenje vrijednosti nematerijalne imovine (registracije igrača)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_amortisation",
+        "matchedLabel": "Umanjenje vrijednosti ostale nematerijalne imovine (bez registracija igrača)",
+        "similarity": 56
+      },
+      {
+        "label": "Dobit od raspolaganja nematerijalnom imovinom (registracije igrača)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dobit od raspolaganja nematerijalnom imovinom (registracije igrača)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gubitak od raspolaganja nematerijalnom imovinom (registracije igrača)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gubitak od raspolaganja nematerijalnom imovinom (registracije igrača)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Neto rezultat od raspolaganja registracijama igrača - po metodi kapitalizacije troškova",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Neto rezultat od raspolaganja registracijama igrača - po metodi kapitalizacije troškova",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "*Ispunjava samo izvještajni subjekt koji za registracije igrača primjenjuje metodu prihoda i rashoda*",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "*Ispunjava samo izvještajni subjekt koji za registracije igrača primjenjuje metodu prihoda i rashoda*",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi za stjecanje registracija igrača",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi za stjecanje registracija igrača",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihodi od raspolaganja registracijama igrača",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihodi od raspolaganja registracijama igrača",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Neto rezultat od raspolaganja registracijama igrača - po metodi prihoda i rashoda",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Neto rezultat od raspolaganja registracijama igrača - po metodi prihoda i rashoda",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dobit /(gubitak) od raspolaganja dugotrajnom imovinom",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dobit /(gubitak) od raspolaganja dugotrajnom imovinom",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financijski prihodi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financijski prihodi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financijski rashodi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financijski rashodi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupni neto prihod/rashod od financiranja",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupni neto prihod/rashod od financiranja",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali neposlovni prihodi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali neposlovni prihodi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali neposlovni rashodi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali neposlovni rashodi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupni neposlovni prihodi/rashodi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupni neposlovni prihodi/rashodi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Porezni prihod/(rashod)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Porezni prihod/(rashod)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dobit/(gubitak) poslije oporezivanja",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dobit/(gubitak) poslije oporezivanja",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihodi od kamata po bankovnim računima i danim kreditima",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prihodi od kamata po bankovnim računima i danim kreditima",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pozitivne tečajne razlike",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pozitivne tečajne razlike",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali financijski prihodi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali financijski prihodi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupni financijski prihodi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupni financijski prihodi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi kamata na prekoračenja po bankovnim računima i zajmovima",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi kamata na prekoračenja po bankovnim računima i zajmovima",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi kamata - leasing",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Troškovi kamata - leasing",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Negativne tečajne razlike",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Negativne tečajne razlike",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali financijski troškovi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostali financijski troškovi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupni financijski troškovi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupni financijski troškovi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupno neto",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupno neto",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Većinski vlasnici",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Većinski vlasnici",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "A FAN POINT GORICA D.O.O.",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "A FAN POINT GORICA D.O.O.",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "B",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "B",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "C",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "C",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "D",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "D",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupno",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupno",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostale povezane strane",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ostale povezane strane",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INVESTITOR TOP INVEST",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INVESTITOR TOP INVEST",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sveukupno",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sveukupno",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1. potpore covid",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1. potpore covid",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2. otpis obaveza",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2. otpis obaveza",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "3. subvencija covid",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "3. subvencija covid",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupno:",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ukupno:",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1. zakupnine i najamnine",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1. zakupnine i najamnine",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "OSTALI",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "OSTALI",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "hr",
+    "query": "Gorica",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

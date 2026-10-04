@@ -1,0 +1,351 @@
+{
+ "md": "Clubes/República Checa/Hradec Králové/SL51_2022.md",
+ "generatedAt": "2026-09-30T15:14:14.894Z",
+ "rubros": [
+  {
+   "label": "60 – 180 dnů",
+   "lado": null,
+   "page": 25,
+   "section": "# 6. Doplňující údaje k Rozvaze a k Výkazu zisku a ztráty k 30. 6. 2023 / # 6.1. Položky významné pro hodnocení majetkové a finanční situace společnosti / # 7. Pohledávky a závazky / # 7.1 Pohledávky",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "other_income",
+     0.29000000000000004
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1478
+  },
+  {
+   "label": "III.",
+   "lado": null,
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "choice": "depreciation",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "depreciation",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "other_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 1327
+  },
+  {
+   "label": "180 a více dnů",
+   "lado": null,
+   "page": 25,
+   "section": "# 6. Doplňující údaje k Rozvaze a k Výkazu zisku a ztráty k 30. 6. 2023 / # 6.1. Položky významné pro hodnocení majetkové a finanční situace společnosti / # 7. Pohledávky a závazky / # 7.1 Pohledávky",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "player_impairment",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1633
+  },
+  {
+   "label": "Základní kapitál",
+   "lado": null,
+   "page": 26,
+   "section": "# 7.3. Údaje o pohledávkách a závazcích z titulu uplatnění zástavního a zajišťovacího / # 7.4. Závazky nesledované v účetnictví a neuvedené v rozvaze / # 8. Sestavení výkazu zisku a ztráty / # 9. Vlastní kapitál / # 9.1. Složky vlastního kapitálu",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "member_dues",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1585
+  },
+  {
+   "label": "Ostatní kapitál. fondy",
+   "lado": null,
+   "page": 26,
+   "section": "# 7.3. Údaje o pohledávkách a závazcích z titulu uplatnění zástavního a zajišťovacího / # 7.4. Závazky nesledované v účetnictví a neuvedené v rozvaze / # 8. Sestavení výkazu zisku a ztráty / # 9. Vlastní kapitál / # 9.1. Složky vlastního kapitálu",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "member_dues",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1598
+  },
+  {
+   "label": "30 – 60 dnů",
+   "lado": null,
+   "page": 25,
+   "section": "# 6. Doplňující údaje k Rozvaze a k Výkazu zisku a ztráty k 30. 6. 2023 / # 6.1. Položky významné pro hodnocení majetkové a finanční situace společnosti / # 7. Pohledávky a závazky / # 7.1 Pohledávky",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1476
+  },
+  {
+   "label": "Zákonný rezervní fond",
+   "lado": null,
+   "page": 26,
+   "section": "# 7.3. Údaje o pohledávkách a závazcích z titulu uplatnění zástavního a zajišťovacího / # 7.4. Závazky nesledované v účetnictví a neuvedené v rozvaze / # 8. Sestavení výkazu zisku a ztráty / # 9. Vlastní kapitál / # 9.1. Složky vlastního kapitálu",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1519
+  },
+  {
+   "label": "Do 30 dnů",
+   "lado": null,
+   "page": 25,
+   "section": "# 6. Doplňující údaje k Rozvaze a k Výkazu zisku a ztráty k 30. 6. 2023 / # 6.1. Položky významné pro hodnocení majetkové a finanční situace společnosti / # 7. Pohledávky a závazky / # 7.1 Pohledávky",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1470
+  },
+  {
+   "label": "Nerozdělený zisk minulých let",
+   "lado": null,
+   "page": 26,
+   "section": "# 7.3. Údaje o pohledávkách a závazcích z titulu uplatnění zástavního a zajišťovacího / # 7.4. Závazky nesledované v účetnictví a neuvedené v rozvaze / # 8. Sestavení výkazu zisku a ztráty / # 9. Vlastní kapitál / # 9.1. Složky vlastního kapitálu",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.8200000000000001
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1690
+  },
+  {
+   "label": "Tržby z prodeje služeb - vstupné",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 10. Výnosy z běžné činnosti / # Přehled tržeb za hlavní činnosti společnosti",
+   "choice": "matchday_competition",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1107
+  },
+  {
+   "label": "Tržby z prodeje služeb - přestupy hráčů (nezařaz. do majetku)",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 10. Výnosy z běžné činnosti / # Přehled tržeb za hlavní činnosti společnosti",
+   "choice": "player_sales",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "player_sales",
+     0.87
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1117
+  },
+  {
+   "label": "Tržby z prodeje služeb - nájem + ostatní",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 10. Výnosy z běžné činnosti / # Přehled tržeb za hlavní činnosti společnosti",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "stadium_other",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1092
+  },
+  {
+   "label": "Výsledek hospodaření běžného účetního období",
+   "lado": null,
+   "page": 26,
+   "section": "# 7.3. Údaje o pohledávkách a závazcích z titulu uplatnění zástavního a zajišťovacího / # 7.4. Závazky nesledované v účetnictví a neuvedené v rozvaze / # 8. Sestavení výkazu zisku a ztráty / # 9. Vlastní kapitál / # 9.1. Složky vlastního kapitálu",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "exceptional_items",
+     0.09999999999999999
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 1597
+  },
+  {
+   "label": "Tržby z prodeje služeb - reklamy",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 10. Výnosy z běžné činnosti / # Přehled tržeb za hlavní činnosti společnosti",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Tržby z prodeje služeb - hostování",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 10. Výnosy z běžné činnosti / # Přehled tržeb za hlavní činnosti společnosti",
+   "choice": "player_sales",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "player_sales",
+     0.8
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1094
+  }
+ ]
+}

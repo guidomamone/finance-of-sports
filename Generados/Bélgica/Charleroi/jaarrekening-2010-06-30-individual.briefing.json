@@ -1,0 +1,1943 @@
+{
+  "club": "charleroi-be",
+  "year": 2010,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Charleroi/jaarrekening-2010-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:54:27.845Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 154,
+    "space": 2
+  },
+  "scannedWarning": false,
+  "tableCount": 10,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 4,
+      "section": "N° BE 0472.519.068 | C 2.1 / # BILAN APRÈS RÉPARTITION",
+      "columns": [
+        "",
+        "Ann.",
+        "Codes",
+        "Exercice",
+        "Exercice précédent"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ACTIF",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ACTIFS IMMOBILISÉS",
+          "values": [
+            "",
+            "20/28",
+            "6.617.504",
+            "6.835.288"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Frais d'établissement",
+          "values": [
+            "5.1",
+            "20",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Immobilisations incorporelles",
+          "values": [
+            "5.2",
+            "21",
+            "4.085.105",
+            "4.290.969"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Immobilisations corporelles",
+          "values": [
+            "5.3",
+            "22/27",
+            "613.311",
+            "627.282"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Terrains et constructions",
+          "values": [
+            "",
+            "22",
+            "518.834",
+            "523.343"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Installations, machines et outillage",
+          "values": [
+            "",
+            "23",
+            "59.180",
+            "44.931"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mobilier et matériel roulant",
+          "values": [
+            "",
+            "24",
+            "35.297",
+            "59.008"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Location-financement et droits similaires",
+          "values": [
+            "",
+            "25",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres immobilisations corporelles",
+          "values": [
+            "",
+            "26",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immobilisations en cours et acomptes versés",
+          "values": [
+            "",
+            "27",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immobilisations financières",
+          "values": [
+            "5.4/5.5.1",
+            "28",
+            "1.919.088",
+            "1.917.037"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Entreprises liées",
+          "values": [
+            "5.14",
+            "280/1",
+            "1.825.000",
+            "1.825.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Participations",
+          "values": [
+            "",
+            "280",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances",
+          "values": [
+            "",
+            "281",
+            "1.825.000",
+            "1.825.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres entreprises avec lesquelles il existe un lien de participation",
+          "values": [
+            "5.14",
+            "282/3",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Participations",
+          "values": [
+            "",
+            "282",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances",
+          "values": [
+            "",
+            "283",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres immobilisations financières",
+          "values": [
+            "",
+            "284/8",
+            "94.088",
+            "92.037"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Actions et parts",
+          "values": [
+            "",
+            "284",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances et cautionnements en numéraire",
+          "values": [
+            "",
+            "285/8",
+            "94.088",
+            "92.037"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ACTIFS CIRCULANTS",
+          "values": [
+            "",
+            "29/58",
+            "6.767.297",
+            "5.629.499"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Créances à plus d'un an",
+          "values": [
+            "",
+            "29",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Créances commerciales",
+          "values": [
+            "",
+            "290",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres créances",
+          "values": [
+            "",
+            "291",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stocks et commandes en cours d'exécution",
+          "values": [
+            "",
+            "3",
+            "1.592",
+            "69.531"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Stocks",
+          "values": [
+            "",
+            "30/36",
+            "1.592",
+            "69.531"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Approvisionnements",
+          "values": [
+            "",
+            "30/31",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "En-cours de fabrication",
+          "values": [
+            "",
+            "32",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Produits finis",
+          "values": [
+            "",
+            "33",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marchandises",
+          "values": [
+            "",
+            "34",
+            "1.592",
+            "69.531"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immeubles destinés à la vente",
+          "values": [
+            "",
+            "35",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acomptes versés",
+          "values": [
+            "",
+            "36",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Commandes en cours d'exécution",
+          "values": [
+            "",
+            "37",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances à un an au plus",
+          "values": [
+            "",
+            "40/41",
+            "5.564.974",
+            "5.289.673"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Créances commerciales",
+          "values": [
+            "",
+            "40",
+            "4.249.997",
+            "4.864.099"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres créances",
+          "values": [
+            "",
+            "41",
+            "1.314.977",
+            "425.574"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Placements de trésorerie",
+          "values": [
+            "5.5.1/5.6",
+            "50/53",
+            "502.856",
+            "2.293"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actions propres",
+          "values": [
+            "",
+            "50",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres placements",
+          "values": [
+            "",
+            "51/53",
+            "502.856",
+            "2.293"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valeurs disponibles",
+          "values": [
+            "",
+            "54/58",
+            "333.919",
+            "198.297"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Comptes de régularisation",
+          "values": [
+            "5.6",
+            "490/1",
+            "363.956",
+            "69.705"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL DE L'ACTIF",
+          "values": [
+            "",
+            "20/58",
+            "13.384.801",
+            "12.464.787"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "N° BE 0472.519.068 | C 2.2",
+      "columns": [
+        "",
+        "Ann.",
+        "Codes",
+        "Exercice",
+        "Exercice précédent"
+      ],
+      "rows": [
+        {
+          "rawLabel": "PASSIF",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CAPITAUX PROPRES",
+          "values": [
+            "",
+            "10/15",
+            "922.141",
+            "-804.252"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Capital",
+          "values": [
+            "5.7",
+            "10",
+            "3.500.000",
+            "3.500.000"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Capital souscrit",
+          "values": [
+            "",
+            "100",
+            "3.500.000",
+            "3.500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital non appelé",
+          "values": [
+            "",
+            "101",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Primes d'émission",
+          "values": [
+            "",
+            "11",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Plus-values de réévaluation",
+          "values": [
+            "",
+            "12",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Réserves",
+          "values": [
+            "",
+            "13",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Réserve légale",
+          "values": [
+            "",
+            "130",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Réserves indisponibles",
+          "values": [
+            "",
+            "131",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pour actions propres",
+          "values": [
+            "",
+            "1310",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres",
+          "values": [
+            "",
+            "1311",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Réserves immunisées",
+          "values": [
+            "",
+            "132",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Réserves disponibles",
+          "values": [
+            "",
+            "133",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bénéfice (Perte) reporté(e) (+)/(-)",
+          "values": [
+            "",
+            "14",
+            "-2.577.859",
+            "-4.304.252"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Subsides en capital",
+          "values": [
+            "",
+            "15",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Avance aux associés sur répartition de l'actif net",
+          "values": [
+            "",
+            "19",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PROVISIONS ET IMPÔTS DIFFÉRÉS",
+          "values": [
+            "",
+            "16",
+            "476.929",
+            "316.697"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Provisions pour risques et charges",
+          "values": [
+            "",
+            "160/5",
+            "476.929",
+            "316.697"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Pensions et obligations similaires",
+          "values": [
+            "",
+            "160",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charges fiscales",
+          "values": [
+            "",
+            "161",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Grosses réparations et gros entretien",
+          "values": [
+            "",
+            "162",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres risques et charges",
+          "values": [
+            "5.8",
+            "163/5",
+            "476.929",
+            "316.697"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impôts différés",
+          "values": [
+            "",
+            "168",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DETTES",
+          "values": [
+            "",
+            "17/49",
+            "11.985.731",
+            "12.952.342"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Dettes à plus d'un an",
+          "values": [
+            "5.9",
+            "17",
+            "6.287.199",
+            "6.755.359"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Dettes financières",
+          "values": [
+            "",
+            "170/4",
+            "6.287.199",
+            "6.755.359"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Emprunts subordonnés",
+          "values": [
+            "",
+            "170",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Emprunts obligataires non subordonnés",
+          "values": [
+            "",
+            "171",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes de location-financement et assimilées",
+          "values": [
+            "",
+            "172",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Etablissements de crédit",
+          "values": [
+            "",
+            "173",
+            "6.287.199",
+            "6.755.359"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres emprunts",
+          "values": [
+            "",
+            "174",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes commerciales",
+          "values": [
+            "",
+            "175",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fournisseurs",
+          "values": [
+            "",
+            "1750",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Effets à payer",
+          "values": [
+            "",
+            "1751",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acomptes reçus sur commandes",
+          "values": [
+            "",
+            "176",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres dettes",
+          "values": [
+            "",
+            "178/9",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes à un an au plus",
+          "values": [
+            "",
+            "42/48",
+            "4.062.717",
+            "4.281.313"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Dettes à plus d'un an échéant dans l'année",
+          "values": [
+            "5.9",
+            "42",
+            "468.160",
+            "450.398"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes financières",
+          "values": [
+            "",
+            "43",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Etablissements de crédit",
+          "values": [
+            "",
+            "430/8",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres emprunts",
+          "values": [
+            "",
+            "439",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes commerciales",
+          "values": [
+            "",
+            "44",
+            "2.396.677",
+            "2.398.259"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fournisseurs",
+          "values": [
+            "",
+            "440/4",
+            "2.396.677",
+            "2.398.259"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Effets à payer",
+          "values": [
+            "",
+            "441",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acomptes reçus sur commandes",
+          "values": [
+            "",
+            "46",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes fiscales, salariales et sociales",
+          "values": [
+            "5.9",
+            "45",
+            "1.018.664",
+            "1.266.683"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impôts",
+          "values": [
+            "",
+            "450/3",
+            "372.126",
+            "562.373"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rémunérations et charges sociales",
+          "values": [
+            "",
+            "454/9",
+            "646.538",
+            "704.310"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres dettes",
+          "values": [
+            "",
+            "47/48",
+            "179.216",
+            "165.973"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comptes de régularisation",
+          "values": [
+            "5.9",
+            "492/3",
+            "1.635.815",
+            "1.915.670"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL DU PASSIF",
+          "values": [
+            "",
+            "10/49",
+            "13.384.801",
+            "12.464.787"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 6,
+      "section": "COMPTE DE RÉSULTATS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "631/4",
+          "values": [
+            "-10.666",
+            "-26.130"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "635/7",
+          "values": [
+            "160.232",
+            "-294.934"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "640/8",
+          "values": [
+            "205.853",
+            "201.678"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 7,
+      "section": "N° BE 0472.519.068 | C 3",
+      "columns": [
+        "",
+        "Ann.",
+        "Codes",
+        "Exercice",
+        "Exercice précédent"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Régularisations d'impôts et reprises de provisions fiscales",
+          "values": [
+            "",
+            "77",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bénéfice (Perte) de l'exercice (+)/(-)",
+          "values": [
+            "",
+            "9904",
+            "1.726.393",
+            "1.734.082"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Prélèvements sur les réserves immunisées",
+          "values": [
+            "",
+            "789",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Transfert aux réserves immunisées",
+          "values": [
+            "",
+            "689",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bénéfice (Perte) de l'exercice à affecter (+)/(-)",
+          "values": [
+            "",
+            "9905",
+            "1.726.393",
+            "1.734.082"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "IMPÔTS ET TAXES / IMPÔTS SUR LE RÉSULTAT / DEPENSES NON ADMISES 95.586",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Latences actives 9141",
+          "values": [
+            "1.407.298"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pertes fiscales cumulées, déductibles des bénéfices taxables ultérieurs 9142",
+          "values": [
+            "1.407.298"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 22,
+      "section": "TAXES SUR LA VALEUR AJOUTÉE ET IMPÔTS À CHARGE DE TIERS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "A l'entreprise (déductibles) 9145",
+          "values": [
+            "373.483",
+            "355.272"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Par l'entreprise 9146",
+          "values": [
+            "1.487.731",
+            "1.494.751"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "N° BE 0472.519.068 C 5.13 / DROITS ET ENGAGEMENTS HORS BILAN / GARANTIES PERSONNELLES CONSTITUÉES OÙ IRRÉVOCABLEMENT PROMISES PAR / L'ENTREPRISE POUR SÜÛRETÉ DE DETTES OÙ D'ENGAGEMENTS DE TIERS 9149 1.825.000 / GARANTIES RÉELLES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Valeur comptable des immeubles grevés 9161",
+          "values": [
+            "404.969"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Montant de l'inscription 9171",
+          "values": [
+            "330.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "N° BE 0472.519.068 | C 5.14",
+      "columns": [
+        "",
+        "Codes",
+        "Exercice",
+        "Exercice précédent"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ENTREPRISES LIÉES",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Immobilisations financières",
+          "values": [
+            "280/1",
+            "1.825.000",
+            "1.825.000"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Participations",
+          "values": [
+            "280",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances subordonnées",
+          "values": [
+            "9271",
+            "1.825.000",
+            "1.825.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres créances",
+          "values": [
+            "9281",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances sur les entreprises liées",
+          "values": [
+            "9291",
+            "977.022",
+            "77.781"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A plus d'un an",
+          "values": [
+            "9301",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A un an au plus",
+          "values": [
+            "9311",
+            "977.022",
+            "77.781"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Placements de trésorerie",
+          "values": [
+            "9321",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actions",
+          "values": [
+            "9331",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances",
+          "values": [
+            "9341",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes",
+          "values": [
+            "9351",
+            "78.809",
+            "64.608"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A plus d'un an",
+          "values": [
+            "9361",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A un an au plus",
+          "values": [
+            "9371",
+            "78.809",
+            "64.608"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Garanties personnelles et réelles",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Constituées ou irrévocablement promises par l'entreprise pour sûreté de dettes ou d'engagements d'entreprises liées",
+          "values": [
+            "9381",
+            "1.825.000",
+            "1.825.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Constituées ou irrévocablement promises par des entreprises liées pour sûreté de dettes ou d'engagements de l'entreprise",
+          "values": [
+            "9391",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres engagements financiers significatifs",
+          "values": [
+            "9401",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Résultats financiers",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Produits des immobilisations financières",
+          "values": [
+            "9421",
+            "63.875",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Produits des actifs circulants",
+          "values": [
+            "9431",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres produits financiers",
+          "values": [
+            "9441",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charges des dettes",
+          "values": [
+            "9461",
+            "",
+            "15.863"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres charges financières",
+          "values": [
+            "9471",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cession d'actifs immobilisés",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Plus-values réalisées",
+          "values": [
+            "9481",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Moins-values réalisées",
+          "values": [
+            "9491",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ENTREPRISES AVEC UN LIEN DE PARTICIPATION",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Immobilisations financières",
+          "values": [
+            "282/3",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Participations",
+          "values": [
+            "282",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances subordonnées",
+          "values": [
+            "9272",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres créances",
+          "values": [
+            "9282",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances",
+          "values": [
+            "9292",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A plus d'un an",
+          "values": [
+            "9302",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A un an au plus",
+          "values": [
+            "9312",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes",
+          "values": [
+            "9352",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A plus d'un an",
+          "values": [
+            "9362",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A un an au plus",
+          "values": [
+            "9372",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 28,
+      "section": "N° BE 0472.519.068 | C 6 / # BILAN SOCIAL / ## Etat des personnes occupées / ### Travailleurs inscrits au registre du personnel",
+      "columns": [
+        "Au cours de l'exercice et de l'exercice précédent",
+        "Codes",
+        "1. Temps plein (exercice)",
+        "2. Temps partiel (exercice)",
+        "3. Total (T) ou total en équivalents temps plein (ETP) (exercice)",
+        "3P. Total (T) ou total en équivalents temps plein (ETP) (exercice précédent)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Nombre moyen de travailleurs",
+          "values": [
+            "100",
+            "35,2",
+            "30,2",
+            "46,1 ETP",
+            "47,1 ETP"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nombre d'heures effectivement prestées",
+          "values": [
+            "101",
+            "67.284",
+            "20.316",
+            "87.600 T",
+            "86.944 T"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Frais de personnel",
+          "values": [
+            "102",
+            "3.528.168",
+            "734.066",
+            "4.262.234 T",
+            "4.413.077 T"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Montant des avantages accordés en sus du salaire",
+          "values": [
+            "103",
+            "XXXXXXX",
+            "XXXXXXX",
+            "T",
+            "T"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": null,
+      "columns": [
+        "A la date de clôture de l'exercice",
+        "Codes",
+        "1. Temps plein",
+        "2. Temps partiel",
+        "3. Total en équivalents temps plein"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Nombre de travailleurs inscrits au registre du personnel",
+          "values": [
+            "105",
+            "32",
+            "33",
+            "44,1"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Par type de contrat de travail",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Contrat à durée indéterminée",
+          "values": [
+            "110",
+            "13",
+            "11",
+            "18,1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrat à durée déterminée",
+          "values": [
+            "111",
+            "19",
+            "22",
+            "26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrat pour l'exécution d'un travail nettement défini",
+          "values": [
+            "112",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrat de remplacement",
+          "values": [
+            "113",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Par sexe et niveau d'études",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Hommes",
+          "values": [
+            "120",
+            "30",
+            "29",
+            "39,7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau primaire",
+          "values": [
+            "1200",
+            "12",
+            "17",
+            "16,7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau secondaire",
+          "values": [
+            "1201",
+            "13",
+            "11",
+            "17,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau supérieur non universitaire",
+          "values": [
+            "1202",
+            "4",
+            "",
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau universitaire",
+          "values": [
+            "1203",
+            "1",
+            "1",
+            "1,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Femmes",
+          "values": [
+            "121",
+            "2",
+            "4",
+            "4,4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau primaire",
+          "values": [
+            "1210",
+            "",
+            "2",
+            "1,1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau secondaire",
+          "values": [
+            "1211",
+            "",
+            "2",
+            "1,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau supérieur non universitaire",
+          "values": [
+            "1212",
+            "2",
+            "",
+            "2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau universitaire",
+          "values": [
+            "1213",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Par catégorie professionnelle",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Personnel de direction",
+          "values": [
+            "130",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Employés",
+          "values": [
+            "134",
+            "31",
+            "24",
+            "40,7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ouvriers",
+          "values": [
+            "132",
+            "1",
+            "1",
+            "1,1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres",
+          "values": [
+            "133",
+            "",
+            "8",
+            "2,3"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 4,
+      "section": "N° BE 0472.519.068 | C 2.1 / # BILAN APRÈS RÉPARTITION",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DE L'ACTIF",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"20/58\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 4,
+      "section": "N° BE 0472.519.068 | C 2.1 / # BILAN APRÈS RÉPARTITION",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL DE L'ACTIF",
+      "target": "13.384.801",
+      "addendCount": 22,
+      "closes": false,
+      "diff": "23907302"
+    },
+    {
+      "page": 4,
+      "section": "N° BE 0472.519.068 | C 2.1 / # BILAN APRÈS RÉPARTITION",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL DE L'ACTIF",
+      "target": "12.464.787",
+      "addendCount": 22,
+      "closes": false,
+      "diff": "22357171"
+    },
+    {
+      "page": 5,
+      "section": "N° BE 0472.519.068 | C 2.2",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DU PASSIF",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"10/49\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 5,
+      "section": "N° BE 0472.519.068 | C 2.2",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL DU PASSIF",
+      "target": "13.384.801",
+      "addendCount": 20,
+      "closes": false,
+      "diff": "37414186"
+    },
+    {
+      "page": 5,
+      "section": "N° BE 0472.519.068 | C 2.2",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL DU PASSIF",
+      "target": "12.464.787",
+      "addendCount": 20,
+      "closes": false,
+      "diff": "37738457"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 5,
+    "results": [
+      {
+        "label": "631/4",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "631/4",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "635/7",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "635/7",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "640/8",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "640/8",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Latences actives 9141",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Latences actives 9141",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pertes fiscales cumulées, déductibles des bénéfices taxables ultérieurs 9142",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pertes fiscales cumulées, déductibles des bénéfices taxables ultérieurs 9142",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Charleroi",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

@@ -1,0 +1,125 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2016.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2016.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T02:32:17.333Z",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    10,
+    30
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    36,
+    60
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    67,
+    97
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 1,
+   "lineas": [
+    104,
+    113
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 1,
+   "lineas": [
+    119,
+    123
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 2,
+   "lineas": [
+    146,
+    191
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 3,
+   "lineas": [
+    206,
+    252
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 4,
+   "lineas": [
+    267,
+    301
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 5,
+   "lineas": [
+    325,
+    374
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 6,
+   "lineas": [
+    390,
+    426
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b6"
+ ],
+ "notas_gastos": [
+  "b6",
+  "b7",
+  "b8"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(valores expressos em milhares de reais) — encabezado del balance en pág. 1, misma página que la DRE b2",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2016",
+ "columna_anterior": "31/12/2015",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿La DRE analítica por cuenta contable (b6-b8, págs. 2-4) está en reales (unidades) y no en miles como la DRE resumida b2?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Las diferencias del intento anterior (0.00193 vs 0.002; 6.207219 vs 6.206) sugieren que b6-b8 están en reales con centavos mientras b2 está en miles.",
+   "bloques": [
+    "b2",
+    "b6",
+    "b7",
+    "b8"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b2 es la DRE resumida en miles; b6-b8 son la DRE analítica por cuentas contables (continuación entre páginas) que abre todos los renglones, incluidos Recuperação de Despesas y Ordenados/Salários/Encargos. b1, b9, b10 son balance; b3 flujo; b4 mutaciones; b5 resultados abrangentes: excluidos. Las diferencias reportadas son de redondeo a miles."
+}

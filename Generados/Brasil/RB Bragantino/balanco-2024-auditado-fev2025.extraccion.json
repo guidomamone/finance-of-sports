@@ -1,0 +1,137 @@
+{
+ "pdf": "Clubes/Brasil/RB Bragantino/balanco-2024-auditado-fev2025.pdf",
+ "md": "Clubes/Brasil/RB Bragantino/balanco-2024-auditado-fev2025.md",
+ "cierre": "2024-12-31",
+ "paginas": [
+  2
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:47:37.848Z",
+ "escala": "miles",
+ "filas": [
+  {
+   "pagina": 2,
+   "etiqueta": "Receita Líquida",
+   "importe_impreso": "425 224",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Comissão técnica",
+   "importe_impreso": "(68 656)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Custo do departamento de futebol",
+   "importe_impreso": "(311 878)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Gastos com jogos e bonificações",
+   "importe_impreso": "(13 822)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Custo com departamento amador",
+   "importe_impreso": "(37316)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Custo as atividades desportivas",
+   "importe_impreso": "(431 672)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Resultado operacional",
+   "importe_impreso": "(6 448)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Despesas gerais e administrativas",
+   "importe_impreso": "(38 253)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Outras receitas e despesas operacionais",
+   "importe_impreso": "80 992",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Lucro antes das receitas e despesas financeiras",
+   "importe_impreso": "36 291",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Receitas financeiras",
+   "importe_impreso": "21568",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Despesas financeiras",
+   "importe_impreso": "(12 474)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Lucro antes do Imposto de Renda e Contribuição Social",
+   "importe_impreso": "45 385",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Imposto de Renda e Contribuição Social",
+   "importe_impreso": "(14 384)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 2,
+   "etiqueta": "Lucro líquido do exercício",
+   "importe_impreso": "31001",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos_impreso": "425 224",
+ "total_gastos_impreso": null,
+ "resultado_impreso": "31001",
+ "observaciones": "La transcripción separa etiquetas e importes; la asignación se hizo por cuadre aritmético. Los cuatro costos (68 656+311 878+13 822+37 316) suman 431 672, asignado al encabezado 'Custo as atividades desportivas' como subtotal; 'Outros Centros de Custo' no tiene importe identificable (la asignación de los cuatro renglones a etiquetas es posicional y podría desplazarse). 425 224-431 672 = (6 448) = Resultado operacional. Hay un importe 9 094 (resultado financeiro neto = 21 568-12 474) sin etiqueta impresa; se omitió. No hay notas de desglose en las páginas provistas."
+}

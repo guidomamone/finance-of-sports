@@ -1,0 +1,877 @@
+{
+ "md": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2020.md",
+ "pdf": "Clubes/Italia/Atalanta/Atalanta-bilancio-consolidato-2020.pdf",
+ "club": "atalanta",
+ "year": 2020,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:04:31.175Z",
+ "tieOuts": {
+  "cierran": 150,
+  "noCierran": 21
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "15 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "30 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 89,
+  "notasUsadas": []
+ },
+ "ladoConocido": 57,
+ "rubros": [
+  {
+   "label": "1) Ricavi delle vendite e delle prestazioni",
+   "lado": "revenue",
+   "page": 9,
+   "section": "",
+   "values": [
+    6.7304
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "4) Incrementi di immobilizzazioni per lavori interni",
+   "lado": "revenue",
+   "page": 9,
+   "section": "",
+   "values": [
+    1.30197
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "5) Altri ricavi e proventi",
+   "lado": "revenue",
+   "page": 9,
+   "section": "",
+   "values": [
+    233.965626
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "6) per materie prime, sussidiarie, di consumo e merci",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    2.475486
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "7) per servizi",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    24.709149
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "8) per godimento beni di terzi",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    4.092496
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "a) salari e stipendi",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    67.507412
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "b) oneri sociali",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    2.929494
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "c) trattamento di fine rapporto",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    0.608337
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "e) altri costi",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    3.097412
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    42.731359
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "b) ammortamento delle immobilizzazioni materiali",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    2.025122
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "c) altre svalutazioni delle immobilizzazioni",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    0.089414
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "d) svalutazione crediti compresi nell'attivo circolante e disp. liquide",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    0.625211
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "11) Variazioni rimanenze di materie prime, sussidiarie, di consumo e merci",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    0.093168
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "12) Accantonamenti per rischi",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    0.057305
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "14) Oneri diversi di gestione",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    15.423569
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Differenza tra Valore e Costi della Produzione ( A - B )",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    75.533062
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "- da controllanti",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "values": [
+    0.281967
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "- da altri",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "values": [
+    0.256369
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "- verso controllanti",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "values": [
+    -0.115775
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "- verso altri",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "values": [
+    -1.572128
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "- utili (perdite) su cambi realizzate",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "values": [
+    0.003481
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "a) imposte correnti",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    6.021778
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "b) imposte anni precedenti",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    -0.818883
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "c) oneri/(proventi) da adesione consolidato fiscale",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "values": [
+    10.737493
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "d) imposte differite",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    7.248351
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "e) imposte anticipate",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    -0.540012
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Proventi televisivi",
+   "lado": "revenue",
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    117150.278
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Plusv. Cess. Dir. Plur. Prest. Calciatori",
+   "lado": null,
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    68482.096
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Sponsorizzazioni",
+   "lado": null,
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    18178.509
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Altri ricavi",
+   "lado": "revenue",
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    19265.616
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Calc. in prestito ad altre squadre prof.",
+   "lado": null,
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    1620.336
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Proventi non audiovisivi",
+   "lado": "revenue",
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    4200.594
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Contributi da Leghe e Enti Federali",
+   "lado": null,
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    1534.843
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Sopravvenienze attive",
+   "lado": null,
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    1517.007
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Proventi per iscrizioni Football camp",
+   "lado": "revenue",
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    128.399
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Proventi da enti assicurativi",
+   "lado": "revenue",
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    1439.042
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Altri proventi su trasf. Calciatori",
+   "lado": "revenue",
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    1.256
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Proventi cess licenze diritti e simili",
+   "lado": "revenue",
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    308.269
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Proventi diversi settore giovanile",
+   "lado": "revenue",
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    135.651
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Contributi c/impianto",
+   "lado": null,
+   "page": 36,
+   "section": "# ALTRI RICAVI E PROVENTI",
+   "values": [
+    3.73
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Compensi a terzi",
+   "lado": null,
+   "page": 37,
+   "section": "# COSTI PER SERVIZI",
+   "values": [
+    11747.652
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Spese Pubblicitarie",
+   "lado": "expense",
+   "page": 37,
+   "section": "# COSTI PER SERVIZI",
+   "values": [
+    1676.663
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "lado": "expense",
+   "page": 37,
+   "section": "# COSTI PER SERVIZI",
+   "values": [
+    2687.856
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Spese Amministrative e generali",
+   "lado": "expense",
+   "page": 37,
+   "section": "# COSTI PER SERVIZI",
+   "values": [
+    1973.209
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Altri costi per servizi",
+   "lado": "expense",
+   "page": 37,
+   "section": "# COSTI PER SERVIZI",
+   "values": [
+    1204.69
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Costi vitto - alloggio - locomozione gare",
+   "lado": "expense",
+   "page": 37,
+   "section": "# COSTI PER SERVIZI",
+   "values": [
+    1000.444
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Servizio biglietteria/controllo ingressi",
+   "lado": "revenue",
+   "page": 37,
+   "section": "# COSTI PER SERVIZI",
+   "values": [
+    558.84
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Spese varie organizzazioni gare",
+   "lado": "expense",
+   "page": 37,
+   "section": "# COSTI PER SERVIZI",
+   "values": [
+    333.954
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Manutenzioni e riparazioni",
+   "lado": null,
+   "page": 37,
+   "section": "# COSTI PER SERVIZI",
+   "values": [
+    2066.244
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Costi per utenze",
+   "lado": "expense",
+   "page": 37,
+   "section": "# COSTI PER SERVIZI",
+   "values": [
+    560.181
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Assicurative e previdenziali",
+   "lado": null,
+   "page": 37,
+   "section": "# COSTI PER SERVIZI",
+   "values": [
+    555.663
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Costi specifici tecnici",
+   "lado": "expense",
+   "page": 37,
+   "section": "# COSTI PER SERVIZI",
+   "values": [
+    343.752
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Abbonamenti",
+   "lado": null,
+   "page": 35,
+   "section": "# ANALISI DELLE VOCI DI CONTO ECONOMICO / # RICAVI DELLE PRESTAZIONI",
+   "values": [
+    1394.192
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Altri ricavi delle vendite e prestazioni",
+   "lado": "revenue",
+   "page": 35,
+   "section": "# ANALISI DELLE VOCI DI CONTO ECONOMICO / # RICAVI DELLE PRESTAZIONI",
+   "values": [
+    2272.885
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Gare di Coppa Italia",
+   "lado": null,
+   "page": 35,
+   "section": "# ANALISI DELLE VOCI DI CONTO ECONOMICO / # RICAVI DELLE PRESTAZIONI",
+   "values": [
+    34.041
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Gare di campionato",
+   "lado": null,
+   "page": 35,
+   "section": "# ANALISI DELLE VOCI DI CONTO ECONOMICO / # RICAVI DELLE PRESTAZIONI",
+   "values": [
+    2620.548
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Altri incassi per gare",
+   "lado": null,
+   "page": 35,
+   "section": "# ANALISI DELLE VOCI DI CONTO ECONOMICO / # RICAVI DELLE PRESTAZIONI",
+   "values": [
+    408.734
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Acquisto materiali vari e di consumo",
+   "lado": null,
+   "page": 37,
+   "section": "# COSTI PER MATERIE PRIME, SUSSIDIARIE, DI CONSUMO E MERCI",
+   "values": [
+    1133.695
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "Acquisto divise dipendenti",
+   "lado": null,
+   "page": 37,
+   "section": "# COSTI PER MATERIE PRIME, SUSSIDIARIE, DI CONSUMO E MERCI",
+   "values": [
+    1046.453
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "Acquisto materiale pubblicitario e promozionale",
+   "lado": null,
+   "page": 37,
+   "section": "# COSTI PER MATERIE PRIME, SUSSIDIARIE, DI CONSUMO E MERCI",
+   "values": [
+    282.645
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "Acquisto medicinali",
+   "lado": null,
+   "page": 37,
+   "section": "# COSTI PER MATERIE PRIME, SUSSIDIARIE, DI CONSUMO E MERCI",
+   "values": [
+    17.575
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "Sconti e abbuoni su acquisti",
+   "lado": null,
+   "page": 37,
+   "section": "# COSTI PER MATERIE PRIME, SUSSIDIARIE, DI CONSUMO E MERCI",
+   "values": [
+    -4.882
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "Trasferimento temporaneo calciatori",
+   "lado": null,
+   "page": 38,
+   "section": "# COSTI PER GODIMENTO DI BENI DI TERZI",
+   "values": [
+    2766.941
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Locazioni impianti sportivi",
+   "lado": null,
+   "page": 38,
+   "section": "# COSTI PER GODIMENTO DI BENI DI TERZI",
+   "values": [
+    367.904
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Noleggi e locazioni varie",
+   "lado": null,
+   "page": 38,
+   "section": "# COSTI PER GODIMENTO DI BENI DI TERZI",
+   "values": [
+    808.488
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Locazioni immobiliari",
+   "lado": null,
+   "page": 38,
+   "section": "# COSTI PER GODIMENTO DI BENI DI TERZI",
+   "values": [
+    149.163
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Altri costi diversi di gestione",
+   "lado": "expense",
+   "page": 40,
+   "section": "# ONERI DIVERSI DI GESTIONE",
+   "values": [
+    12247.774
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Minusvalenze cess dir plur prest calciatori",
+   "lado": "expense",
+   "page": 40,
+   "section": "# ONERI DIVERSI DI GESTIONE",
+   "values": [
+    248.89
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Oneri bancari",
+   "lado": "expense",
+   "page": 40,
+   "section": "# ONERI DIVERSI DI GESTIONE",
+   "values": [
+    19.307
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Contributi Lega Calcio",
+   "lado": "expense",
+   "page": 40,
+   "section": "# ONERI DIVERSI DI GESTIONE",
+   "values": [
+    375
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Imposte e tasse varie",
+   "lado": "expense",
+   "page": 40,
+   "section": "# ONERI DIVERSI DI GESTIONE",
+   "values": [
+    562.018
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Ammende - multe gare",
+   "lado": "expense",
+   "page": 40,
+   "section": "# ONERI DIVERSI DI GESTIONE",
+   "values": [
+    28.55
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Sopravvenienze passive",
+   "lado": "expense",
+   "page": 40,
+   "section": "# ONERI DIVERSI DI GESTIONE",
+   "values": [
+    1902.202
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Perdite su crediti",
+   "lado": "expense",
+   "page": 40,
+   "section": "# ONERI DIVERSI DI GESTIONE",
+   "values": [
+    39.245
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Abbuoni e arrotondamenti passivi",
+   "lado": "expense",
+   "page": 40,
+   "section": "# ONERI DIVERSI DI GESTIONE",
+   "values": [
+    0.583
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Salari-stipendi",
+   "lado": "expense",
+   "page": 38,
+   "section": "# COSTI PER IL PERSONALE",
+   "values": [
+    3227.311
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Oneri sociali",
+   "lado": "expense",
+   "page": 38,
+   "section": "# COSTI PER IL PERSONALE",
+   "values": [
+    488.353
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "F.A.F.I.C. - T.F.R.",
+   "lado": "expense",
+   "page": 38,
+   "section": "# COSTI PER IL PERSONALE",
+   "values": [
+    260.294
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Altri costi",
+   "lado": "expense",
+   "page": 38,
+   "section": "# COSTI PER IL PERSONALE",
+   "values": [
+    854.444
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Nazionale",
+   "lado": "expense",
+   "page": 26,
+   "section": "# FONDI PER RISCHI E ONERI / # Fondo per imposte differite / # Fondo per strumenti finanziari derivati passivi",
+   "values": [
+    10.184045
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Scadenza",
+   "lado": "expense",
+   "page": 26,
+   "section": "# FONDI PER RISCHI E ONERI / # Fondo per imposte differite / # Fondo per strumenti finanziari derivati passivi",
+   "values": [
+    31.122032
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Compensi contrattuali calciatori",
+   "lado": "expense",
+   "page": 38,
+   "section": "Relativamente al personale tesserato, il costo è di seguito dettagliato:",
+   "values": [
+    57646.523
+   ],
+   "origen": "estado 50"
+  },
+  {
+   "label": "Compensi contrattuali allenatori-tecnici",
+   "lado": "expense",
+   "page": 38,
+   "section": "Relativamente al personale tesserato, il costo è di seguito dettagliato:",
+   "values": [
+    6633.578
+   ],
+   "origen": "estado 50"
+  }
+ ]
+}

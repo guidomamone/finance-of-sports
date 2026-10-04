@@ -1,0 +1,750 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.md",
+ "generatedAt": "2026-10-02T02:41:56.553Z",
+ "rubrosHuella": "430fd3f9fddfb784a5842bdb6dc4ba52a0b17515",
+ "rubros": [
+  {
+   "label": "Federación Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Convenio entre clubes",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Propaganda y publicidad",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos de televisión nacional(*)",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "broadcasting",
+     0.99
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Derechos deportivos (2)",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\"",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Auxilio protocolos bioseguridad(*)",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "competition_bonus",
+     0.2
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "Alquiler deportivo (1)",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"OTROS INGRESOS\"",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Infraestructura(*)",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "sponsorship_commercial",
+     0.11
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 951
+  },
+  {
+   "label": "Reintegro de otros costos y gastos (3)",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"OTROS INGRESOS\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"OTROS INGRESOS\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ajuste al peso",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"OTROS GASTOS\"",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilio de arbitraje(*)",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "competition_bonus",
+     0.9
+    ],
+    [
+     "broadcasting",
+     0.06
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Gastos Laborales",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\"",
+   "choice": "wages_squad",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilio hotelero(*)",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "competition_bonus",
+     0.81
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "broadcasting",
+     0.07
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Derechos de televisión internacional(*)",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Auxilio de transporte(*)",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "competition_bonus",
+     0.73
+    ],
+    [
+     "sponsorship_commercial",
+     0.15
+    ],
+    [
+     "other_income",
+     0.1
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Transportes",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\"",
+   "choice": "broadcasting",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "broadcasting",
+     0.89
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 894
+  },
+  {
+   "label": "Comercio al por mayor y menor (3)",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 974
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 990
+  },
+  {
+   "label": "Subsidio nomina gobierno nacional (2)",
+   "lado": "revenue",
+   "page": 31,
+   "section": "nota que desglosa \"OTROS INGRESOS\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 944
+  },
+  {
+   "label": "COSTO DE VENTAS",
+   "lado": "expense",
+   "page": 26,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 995
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1180
+  },
+  {
+   "label": "Afiliaciones y sostenimientos",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "match_organisation_expense",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 982
+  },
+  {
+   "label": "Legales",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1113
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Gastos no deducibles (1)",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"OTROS GASTOS\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Multas sanciones y litigios (2)",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"OTROS GASTOS\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos asumidos",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"OTROS GASTOS\"",
+   "choice": "exceptional_items",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\"",
+   "choice": "other_amortisation",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_amortisation",
+     0.91
+    ],
+    [
+     "depreciation",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Mantenimiento y adecuaciones",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "De viaje",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"GASTOS DE VENTAS\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Mantenimientos",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Gastos Diversos",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\"",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Intereses de mora",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"OTROS GASTOS\"",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 875
+  },
+  {
+   "label": "Contribuciones y afiliaciones",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"GASTOS DE ADMINISTRACIÓN\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1073
+  }
+ ]
+}

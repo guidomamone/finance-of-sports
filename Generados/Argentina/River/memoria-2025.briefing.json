@@ -1,0 +1,60 @@
+{
+  "club": "river",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/River/memoria-2025.md",
+  "generatedAt": "2026-09-30T21:51:07.144Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 4,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 41,
+      "section": "MEMORIA CARP 2025   81 / EL PASO A PASO / DE UNA OBRA / HISTÓRICA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "se alcanzó el aforo definitivo de",
+          "values": [
+            "85.018"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "espectadores. Se trata de una pantalla LED de 28,8 x",
+          "values": [
+            "12,"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "metros, con una superficie de",
+          "values": [
+            "362,9",
+            "m2,"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "ar",
+    "query": "River Plate",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

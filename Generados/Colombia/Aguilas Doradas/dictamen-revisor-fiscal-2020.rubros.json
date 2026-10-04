@@ -1,0 +1,222 @@
+{
+ "md": "Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2020.md",
+ "pdf": "Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2020.pdf",
+ "club": "aguilas-doradas",
+ "year": 2020,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T21:57:35.841Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 26,
+  "notasUsadas": []
+ },
+ "ladoConocido": 12,
+ "rubros": [
+  {
+   "label": "TAQUILLA - VENTA BOLETERIA",
+   "lado": null,
+   "page": 3,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    17700000
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "VENTA DERECHOS DEPORTIVOS - JUGADORES",
+   "lado": null,
+   "page": 3,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    6223202564
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "PUBLICIDAD Y PROPAGANDA",
+   "lado": null,
+   "page": 3,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    656956000
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "DIMAYOR",
+   "lado": null,
+   "page": 3,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    2821284938
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "DIMAYOR DIFERIDOS",
+   "lado": null,
+   "page": 3,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    54840577
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "DIMAYOR PARTICIPACIONES",
+   "lado": null,
+   "page": 3,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    51553000
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "APOYO LOGISTICO DIMAYOR",
+   "lado": null,
+   "page": 3,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    95699600
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "ACTIVIDADES CONEXAS",
+   "lado": null,
+   "page": 3,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    1348750000
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 4,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    322013423
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 4,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    29200732
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 4,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    445891253
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Contribuciones y afiliaciones",
+   "lado": "expense",
+   "page": 4,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    6648000
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 4,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    43039803
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 4,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    599404871
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Legales",
+   "lado": "expense",
+   "page": 4,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    7044616
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "lado": "expense",
+   "page": 4,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    152178261
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "De viaje",
+   "lado": "expense",
+   "page": 4,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    272260613
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 4,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    121800000
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 4,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    3067903889
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Derechos deportivos",
+   "lado": "expense",
+   "page": 4,
+   "section": "OML ASESORES S.A.S.",
+   "values": [
+    1010666209
+   ],
+   "origen": "estado 1"
+  }
+ ]
+}

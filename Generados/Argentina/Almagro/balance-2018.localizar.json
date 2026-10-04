@@ -1,0 +1,23 @@
+{
+ "pdf": "Clubes/Argentina/Almagro/balance-2018.pdf",
+ "md": "Clubes/Argentina/Almagro/balance-2018.md",
+ "cierre": "2018-10-31",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:44:46.310Z",
+ "paginas_resultados": [
+  5
+ ],
+ "paginas_notas_ingresos": [
+  6,
+  7
+ ],
+ "paginas_notas_gastos": [
+  8
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(Cifras en pesos expresados en moneda Homogénea)",
+ "moneda": "ARS",
+ "columna_ejercicio": "31/10/2018",
+ "perimetro": "individual",
+ "observaciones": "El estado de recursos y gastos (pág. 5) muestra una sola columna, 31/10/2018. Los anexos II y III desglosan los ingresos (cuotas sociales y recaudación por actividades) y los anexos IV-V los gastos. La escala se toma de la nota de la pág. 14 y es coherente con importes con decimales en pesos. Las cifras están ajustadas por inflación."
+}

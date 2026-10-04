@@ -1,0 +1,265 @@
+{
+ "md": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2022.md",
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2022.pdf",
+ "club": "viking",
+ "year": 2022,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:11.344Z",
+ "tieOuts": {
+  "cierran": 37,
+  "noCierran": 9
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "3 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "12 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 21,
+  "notasUsadas": [
+   "4",
+   "7"
+  ]
+ },
+ "ladoConocido": 21,
+ "rubros": [
+  {
+   "label": "Salgsinntekt/dugnad",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Resultat### Viking Fotballklubb",
+   "values": [
+    2008.613
+   ],
+   "origen": "nota 4 (ancla 1)",
+   "ancla": "Salgsinntekt"
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    13733.969
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Kontigent/treningsavgift, egenandeler",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Resultat### Viking Fotballklubb",
+   "values": [
+    3040.61
+   ],
+   "origen": "nota 4 (ancla 1)",
+   "ancla": "Salgsinntekt"
+  },
+  {
+   "label": "Sponsorinntekter",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Resultat### Viking Fotballklubb",
+   "values": [
+    3426.506
+   ],
+   "origen": "nota 4 (ancla 1)",
+   "ancla": "Salgsinntekt"
+  },
+  {
+   "label": "Tilskudd",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Resultat### Viking Fotballklubb",
+   "values": [
+    1326.107
+   ],
+   "origen": "nota 4 (ancla 1)",
+   "ancla": "Salgsinntekt"
+  },
+  {
+   "label": "Bingo/grasrot",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Resultat### Viking Fotballklubb",
+   "values": [
+    1040.093
+   ],
+   "origen": "nota 4 (ancla 1)",
+   "ancla": "Salgsinntekt"
+  },
+  {
+   "label": "FFO/IFO/fotballskoler/turneringer",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Resultat### Viking Fotballklubb",
+   "values": [
+    2772.392
+   ],
+   "origen": "nota 4 (ancla 1)",
+   "ancla": "Salgsinntekt"
+  },
+  {
+   "label": "Leieinntekter",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Resultat### Viking Fotballklubb",
+   "values": [
+    64.8
+   ],
+   "origen": "nota 4 (ancla 1)",
+   "ancla": "Salgsinntekt"
+  },
+  {
+   "label": "Utdanningskompensasjon",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Resultat### Viking Fotballklubb",
+   "values": [
+    54.848
+   ],
+   "origen": "nota 4 (ancla 1)",
+   "ancla": "Salgsinntekt"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    6908.892
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Antall årsverk knyttet til spillere og trenere",
+   "lado": "expense",
+   "page": 10,
+   "section": "# Note 1: Offentlig støtte / # Note 2: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "values": [
+    0.054
+   ],
+   "origen": "nota 7 (ancla 1)",
+   "ancla": "Lønnskostnad"
+  },
+  {
+   "label": "Andre ansatte i Viking F.K.",
+   "lado": "expense",
+   "page": 10,
+   "section": "# Note 1: Offentlig støtte / # Note 2: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "values": [
+    2.022
+   ],
+   "origen": "nota 7 (ancla 1)",
+   "ancla": "Lønnskostnad"
+  },
+  {
+   "label": "Lønn",
+   "lado": "expense",
+   "page": 10,
+   "section": "# Note 1: Offentlig støtte / # Note 2: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "values": [
+    5460.964
+   ],
+   "origen": "nota 7 (ancla 1)",
+   "ancla": "Lønnskostnad"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 10,
+   "section": "# Note 1: Offentlig støtte / # Note 2: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "values": [
+    1330.56
+   ],
+   "origen": "nota 7 (ancla 1)",
+   "ancla": "Lønnskostnad"
+  },
+  {
+   "label": "Offentlig tjenestepensjonsforsikring",
+   "lado": "expense",
+   "page": 10,
+   "section": "# Note 1: Offentlig støtte / # Note 2: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "values": [
+    117.368
+   ],
+   "origen": "nota 7 (ancla 1)",
+   "ancla": "Lønnskostnad"
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    129.193
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    7045.521
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    624
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    9.411
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    2.726
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    0.046
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    281.002
+   ],
+   "origen": "estado 1"
+  }
+ ]
+}

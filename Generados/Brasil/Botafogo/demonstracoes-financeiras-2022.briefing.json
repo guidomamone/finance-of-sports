@@ -1,0 +1,226 @@
+{
+  "club": "botafogo",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Botafogo/demonstracoes-financeiras-2022.md",
+  "generatedAt": "2026-09-30T21:51:44.722Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 2,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 5,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 8,
+      "section": "Demonstração das mutações do patrimônio líquido / 31 de dezembro de 2022 e 2021 / (Valores expressos em milhares de reais) / Capital            Prejuízos / Social            Acumulados       Total",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aumento de capital 6.914 -",
+          "values": [
+            "6.914"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Emissão de ações - combinações de negócios 350.000 -",
+          "values": [
+            "350.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital a integralizar (229.400) -",
+          "values": [
+            "(229.400)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prejuízo do Exercício -",
+          "values": [
+            "(248.288)",
+            "(248.288)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "(Valores expressos em milhares de reais) / 1.     Contexto operacional / 1.1.   Combinações de negócios / processo de due diligence. / foram transferidos à SAF.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "13.285"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo circulante",
+          "values": [
+            "13.285"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Contas a receber                  2.875 / Imobilizado                         168",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "74.852"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo não circulante",
+          "values": [
+            "77.895"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Total do ativo                           91.180",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "14.529"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas diferidas",
+          "values": [
+            "47.257"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo circulante",
+          "values": [
+            "61.786"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "2.256"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas diferidas",
+          "values": [
+            "20.224"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo não circulante",
+          "values": [
+            "22.480"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 11,
+      "section": "(Valores expressos em milhares de reais) / 1.     Contexto operacional / 1.1.   Combinações de negócios / processo de due diligence. / foram transferidos à SAF.",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do ativo circulante",
+      "target": "13.285",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": "Contas a receber                  2.875 / Imobilizado                         168",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do ativo não circulante",
+      "target": "77.895",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-3043"
+    },
+    {
+      "page": 11,
+      "section": "Total do ativo                           91.180",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do passivo circulante",
+      "target": "61.786",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do passivo não circulante",
+      "target": "22.480",
+      "addendCount": 2,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "br",
+    "query": "Botafogo",
+    "matches": [
+      {
+        "leagueId": "br-serieA",
+        "year": "2022",
+        "matchedName": "Botafogo",
+        "wikipediaPage": "2022 Campeonato Brasileiro Série A"
+      },
+      {
+        "leagueId": "br-serieC",
+        "year": "2022",
+        "matchedName": "Botafogo-PB",
+        "wikipediaPage": "2022 Campeonato Brasileiro Série C"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": [
+    "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ]
+}

@@ -1,0 +1,554 @@
+{
+  "md": "Clubes/Colombia/Millonarios/informe-gestion-2023.md",
+  "pdf": "Clubes/Colombia/Millonarios/informe-gestion-2023.pdf",
+  "club": "millonarios-co",
+  "year": 2023,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:59:23.478Z",
+  "tieOuts": {
+    "cierran": 7,
+    "noCierran": 40
+  },
+  "warnings": [
+    "8 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "32 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 48,
+    "notasUsadas": []
+  },
+  "ladoConocido": 39,
+  "rubros": [
+    {
+      "label": "Cuentas comerciales por cobrar y otras cuentas por cobrar",
+      "lado": null,
+      "page": 37,
+      "section": "Cambios en los activos y pasivos de operación, netos:",
+      "values": [
+        -14085.667
+      ],
+      "origen": "estado 17",
+      "glosa": "Cuentas comerciales por cobrar y otras cuentas por cobrar"
+    },
+    {
+      "label": "Inventarios corrientes",
+      "lado": null,
+      "page": 37,
+      "section": "Cambios en los activos y pasivos de operación, netos:",
+      "values": [
+        -2951.912
+      ],
+      "origen": "estado 17",
+      "glosa": "Inventarios corrientes"
+    },
+    {
+      "label": "Activos por impuestos corrientes",
+      "lado": "expense",
+      "page": 37,
+      "section": "Cambios en los activos y pasivos de operación, netos:",
+      "values": [
+        -1740.841
+      ],
+      "origen": "estado 17",
+      "glosa": "Activos por impuestos corrientes"
+    },
+    {
+      "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+      "lado": null,
+      "page": 37,
+      "section": "Cambios en los activos y pasivos de operación, netos:",
+      "values": [
+        4047.02
+      ],
+      "origen": "estado 17",
+      "glosa": "Cuentas por pagar comerciales y otras cuentas por pagar"
+    },
+    {
+      "label": "Otros activos financieros corrientes",
+      "lado": null,
+      "page": 37,
+      "section": "Cambios en los activos y pasivos de operación, netos:",
+      "values": [
+        -20165.13
+      ],
+      "origen": "estado 17",
+      "glosa": "Otros activos financieros corrientes"
+    },
+    {
+      "label": "Pasivos por impuestos corrientes",
+      "lado": "expense",
+      "page": 37,
+      "section": "Cambios en los activos y pasivos de operación, netos:",
+      "values": [
+        -456.791
+      ],
+      "origen": "estado 17",
+      "glosa": "Pasivos por impuestos corrientes"
+    },
+    {
+      "label": "Pasivos estimados, provisiones y otros activos",
+      "lado": null,
+      "page": 37,
+      "section": "Cambios en los activos y pasivos de operación, netos:",
+      "values": [
+        4227.91
+      ],
+      "origen": "estado 17",
+      "glosa": "Pasivos estimados, provisiones y otros activos"
+    },
+    {
+      "label": "Otros pasivos no financieros corrientes",
+      "lado": null,
+      "page": 37,
+      "section": "Cambios en los activos y pasivos de operación, netos:",
+      "values": [
+        1555.081
+      ],
+      "origen": "estado 17",
+      "glosa": "Otros pasivos no financieros corrientes"
+    },
+    {
+      "label": "Otros pasivos no financieros no corrientes",
+      "lado": null,
+      "page": 37,
+      "section": "Cambios en los activos y pasivos de operación, netos:",
+      "values": [
+        735.849
+      ],
+      "origen": "estado 17",
+      "glosa": "Otros pasivos no financieros no corrientes"
+    },
+    {
+      "label": "Ingresos por actividades deportivas $ 87.704.672 $",
+      "lado": "revenue",
+      "page": 35,
+      "section": "AZUL & BLANCO MILLONARIOS FC S.A. / ESTADOS DE RESULTADOS INTEGRALES / POR LOS AÑOS TERMINADOS EL 31 DE DICIEMBRE DE 2023 Y 2022",
+      "values": [
+        50511.183
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos por actividades deportivas $ 87.704.672 $"
+    },
+    {
+      "label": "Ingresos por venta de articulos deportivos",
+      "lado": "revenue",
+      "page": 35,
+      "section": "AZUL & BLANCO MILLONARIOS FC S.A. / ESTADOS DE RESULTADOS INTEGRALES / POR LOS AÑOS TERMINADOS EL 31 DE DICIEMBRE DE 2023 Y 2022",
+      "values": [
+        17540.848
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos por venta de articulos deportivos"
+    },
+    {
+      "label": "Utilidad en venta de derechos deportivos",
+      "lado": "revenue",
+      "page": 35,
+      "section": "AZUL & BLANCO MILLONARIOS FC S.A. / ESTADOS DE RESULTADOS INTEGRALES / POR LOS AÑOS TERMINADOS EL 31 DE DICIEMBRE DE 2023 Y 2022",
+      "values": [
+        24554.691
+      ],
+      "origen": "estado 8",
+      "glosa": "Utilidad en venta de derechos deportivos"
+    },
+    {
+      "label": "Ingresos por actividades de academias",
+      "lado": "revenue",
+      "page": 35,
+      "section": "AZUL & BLANCO MILLONARIOS FC S.A. / ESTADOS DE RESULTADOS INTEGRALES / POR LOS AÑOS TERMINADOS EL 31 DE DICIEMBRE DE 2023 Y 2022",
+      "values": [
+        4311.452
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos por actividades de academias"
+    },
+    {
+      "label": "Traslados (30.739.866) - (8.960.349) -",
+      "lado": null,
+      "page": 36,
+      "section": "",
+      "values": [
+        38804.18
+      ],
+      "origen": "estado 15",
+      "glosa": "Traslados (30.739.866) - (8.960.349) -"
+    },
+    {
+      "label": "Apropiación de la reserval legal - 896.035 - - -",
+      "lado": null,
+      "page": 36,
+      "section": "",
+      "values": [
+        896.035
+      ],
+      "origen": "estado 15",
+      "glosa": "Apropiación de la reserval legal - 896.035 - - -"
+    },
+    {
+      "label": "Costo de actividades deportivas",
+      "lado": "expense",
+      "page": 35,
+      "section": "",
+      "values": [
+        -70428.148
+      ],
+      "origen": "estado 9",
+      "glosa": "Costo de actividades deportivas"
+    },
+    {
+      "label": "Costo de venta articulos deportivos",
+      "lado": "expense",
+      "page": 35,
+      "section": "",
+      "values": [
+        -10606.672
+      ],
+      "origen": "estado 9",
+      "glosa": "Costo de venta articulos deportivos"
+    },
+    {
+      "label": "Gasto de personal y honorarios.",
+      "lado": "expense",
+      "page": 35,
+      "section": "Gastos de administración",
+      "values": [
+        -6071.5
+      ],
+      "origen": "estado 10",
+      "glosa": "Gasto de personal y honorarios."
+    },
+    {
+      "label": "Otros gastos e impuestos",
+      "lado": "expense",
+      "page": 35,
+      "section": "Gastos de administración",
+      "values": [
+        -963.655
+      ],
+      "origen": "estado 10",
+      "glosa": "Otros gastos e impuestos"
+    },
+    {
+      "label": "Gasto de personal y honorarios $ (6.071.500) $",
+      "lado": "expense",
+      "page": 80,
+      "section": "24. GASTOS DE ADMINISTRACION.",
+      "values": [
+        -4.402979
+      ],
+      "origen": "estado 67",
+      "glosa": "Gasto de personal y honorarios $ (6.071.500) $"
+    },
+    {
+      "label": "Servicios",
+      "lado": "expense",
+      "page": 80,
+      "section": "24. GASTOS DE ADMINISTRACION.",
+      "values": [
+        -0.364749
+      ],
+      "origen": "estado 67",
+      "glosa": "Servicios"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 80,
+      "section": "24. GASTOS DE ADMINISTRACION.",
+      "values": [
+        -0.318894
+      ],
+      "origen": "estado 67",
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Arrendamientos",
+      "lado": "expense",
+      "page": 80,
+      "section": "24. GASTOS DE ADMINISTRACION.",
+      "values": [
+        -0.187652
+      ],
+      "origen": "estado 67",
+      "glosa": "Arrendamientos"
+    },
+    {
+      "label": "Gastos de viaje",
+      "lado": "expense",
+      "page": 80,
+      "section": "24. GASTOS DE ADMINISTRACION.",
+      "values": [
+        -0.047807
+      ],
+      "origen": "estado 67",
+      "glosa": "Gastos de viaje"
+    },
+    {
+      "label": "Castigo Deudores",
+      "lado": "expense",
+      "page": 80,
+      "section": "24. GASTOS DE ADMINISTRACION.",
+      "values": [
+        -0.009223
+      ],
+      "origen": "estado 67",
+      "glosa": "Castigo Deudores"
+    },
+    {
+      "label": "Contribuciones y afiliaciones",
+      "lado": "expense",
+      "page": 80,
+      "section": "24. GASTOS DE ADMINISTRACION.",
+      "values": [
+        -0.006093
+      ],
+      "origen": "estado 67",
+      "glosa": "Contribuciones y afiliaciones"
+    },
+    {
+      "label": "Impuestos",
+      "lado": "expense",
+      "page": 80,
+      "section": "24. GASTOS DE ADMINISTRACION.",
+      "values": [
+        -0.004249
+      ],
+      "origen": "estado 67",
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Mantenimiento, seguros y gastos legales",
+      "lado": "expense",
+      "page": 80,
+      "section": "24. GASTOS DE ADMINISTRACION.",
+      "values": [
+        -0.024988
+      ],
+      "origen": "estado 67",
+      "glosa": "Mantenimiento, seguros y gastos legales"
+    },
+    {
+      "label": "Costos y gastos de ejercicios anteriores",
+      "lado": "expense",
+      "page": 76,
+      "section": "$         40.324.461                  $     8.736.384 / Beneficio (perdida) antes de impuestos en operaciones / continuas (a) / Efecto impositivo de los gastos que no son deducibles / para determinar la ganancia o (perdida) fiscal",
+      "values": [
+        9.138
+      ],
+      "origen": "estado 56",
+      "glosa": "Costos y gastos de ejercicios anteriores"
+    },
+    {
+      "label": "Impuestos asumidos",
+      "lado": "expense",
+      "page": 76,
+      "section": "$         40.324.461                  $     8.736.384 / Beneficio (perdida) antes de impuestos en operaciones / continuas (a) / Efecto impositivo de los gastos que no son deducibles / para determinar la ganancia o (perdida) fiscal",
+      "values": [
+        124.701
+      ],
+      "origen": "estado 56",
+      "glosa": "Impuestos asumidos"
+    },
+    {
+      "label": "Deterioros deudores",
+      "lado": "expense",
+      "page": 76,
+      "section": "$         40.324.461                  $     8.736.384 / Beneficio (perdida) antes de impuestos en operaciones / continuas (a) / Efecto impositivo de los gastos que no son deducibles / para determinar la ganancia o (perdida) fiscal",
+      "values": [
+        15.1
+      ],
+      "origen": "estado 56",
+      "glosa": "Deterioros deudores"
+    },
+    {
+      "label": "Diferencia en Cambio",
+      "lado": "expense",
+      "page": 76,
+      "section": "$         40.324.461                  $     8.736.384 / Beneficio (perdida) antes de impuestos en operaciones / continuas (a) / Efecto impositivo de los gastos que no son deducibles / para determinar la ganancia o (perdida) fiscal",
+      "values": [
+        3089.539
+      ],
+      "origen": "estado 56",
+      "glosa": "Diferencia en Cambio"
+    },
+    {
+      "label": "Gastos no deducibles",
+      "lado": "revenue",
+      "page": 76,
+      "section": "$         40.324.461                  $     8.736.384 / Beneficio (perdida) antes de impuestos en operaciones / continuas (a) / Efecto impositivo de los gastos que no son deducibles / para determinar la ganancia o (perdida) fiscal",
+      "values": [
+        11327.766
+      ],
+      "origen": "estado 56",
+      "glosa": "Gastos no deducibles"
+    },
+    {
+      "label": "Intereses $ (5.010) $",
+      "lado": "expense",
+      "page": 81,
+      "section": "Inversiones virtuales Bancolombia, relacionado con los excedentes de caja. / 2023                   2022 / Gastos",
+      "values": [
+        -0.511128
+      ],
+      "origen": "estado 71",
+      "glosa": "Intereses $ (5.010) $"
+    },
+    {
+      "label": "Intereses pasivos por derechos de uso",
+      "lado": "expense",
+      "page": 81,
+      "section": "Inversiones virtuales Bancolombia, relacionado con los excedentes de caja. / 2023                   2022 / Gastos",
+      "values": [
+        -0.194617
+      ],
+      "origen": "estado 71",
+      "glosa": "Intereses pasivos por derechos de uso"
+    },
+    {
+      "label": "Diferencia en cambio",
+      "lado": "expense",
+      "page": 81,
+      "section": "Inversiones virtuales Bancolombia, relacionado con los excedentes de caja. / 2023                   2022 / Gastos",
+      "values": [
+        -5.460865
+      ],
+      "origen": "estado 71",
+      "glosa": "Diferencia en cambio"
+    },
+    {
+      "label": "Gastos bancarios",
+      "lado": "expense",
+      "page": 81,
+      "section": "Inversiones virtuales Bancolombia, relacionado con los excedentes de caja. / 2023                   2022 / Gastos",
+      "values": [
+        -0.318248
+      ],
+      "origen": "estado 71",
+      "glosa": "Gastos bancarios"
+    },
+    {
+      "label": "HFL Colombia Ltda. -",
+      "lado": "revenue",
+      "page": 61,
+      "section": "8.3. Ingresos no Facturados / Central Cervecera de Colombia S.A.S (a)                     $ 100.000           $ 190.000 / Gastronomía Italiana en Colombia S.A.S (b)                     45.000                   - / Banco Av Villas                                                11.282              11.071 / Otros                                                           9.200                    -",
+      "values": [
+        61509
+      ],
+      "origen": "estado 33",
+      "glosa": "HFL Colombia Ltda. -"
+    },
+    {
+      "label": "Adidas Colombia Ltda. -",
+      "lado": "revenue",
+      "page": 61,
+      "section": "8.3. Ingresos no Facturados / Central Cervecera de Colombia S.A.S (a)                     $ 100.000           $ 190.000 / Gastronomía Italiana en Colombia S.A.S (b)                     45.000                   - / Banco Av Villas                                                11.282              11.071 / Otros                                                           9.200                    -",
+      "values": [
+        3941
+      ],
+      "origen": "estado 33",
+      "glosa": "Adidas Colombia Ltda. -"
+    },
+    {
+      "label": "Sutex -",
+      "lado": "revenue",
+      "page": 61,
+      "section": "8.3. Ingresos no Facturados / Central Cervecera de Colombia S.A.S (a)                     $ 100.000           $ 190.000 / Gastronomía Italiana en Colombia S.A.S (b)                     45.000                   - / Banco Av Villas                                                11.282              11.071 / Otros                                                           9.200                    -",
+      "values": [
+        7569
+      ],
+      "origen": "estado 33",
+      "glosa": "Sutex -"
+    },
+    {
+      "label": "Aprovechamientos $ 101.277 $",
+      "lado": "revenue",
+      "page": 80,
+      "section": "25. OTROS INGRESOS",
+      "values": [
+        0.083433
+      ],
+      "origen": "estado 68",
+      "glosa": "Aprovechamientos $ 101.277 $"
+    },
+    {
+      "label": "Reintegro de otros costos y gastos",
+      "lado": "expense",
+      "page": 80,
+      "section": "25. OTROS INGRESOS",
+      "values": [
+        1.025443
+      ],
+      "origen": "estado 68",
+      "glosa": "Reintegro de otros costos y gastos"
+    },
+    {
+      "label": "Otros (a)",
+      "lado": "revenue",
+      "page": 80,
+      "section": "25. OTROS INGRESOS",
+      "values": [
+        1.754099
+      ],
+      "origen": "estado 68",
+      "glosa": "Otros (a)"
+    },
+    {
+      "label": "Participación en eventos internacionales",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Otros Ingresos relacionados con derechos / 4.067.953                     - / deportivos",
+      "values": [
+        13583.844
+      ],
+      "origen": "estado 65",
+      "glosa": "Participación en eventos internacionales"
+    },
+    {
+      "label": "Regalías y otras actividades de estadio.",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Otros Ingresos relacionados con derechos / 4.067.953                     - / deportivos",
+      "values": [
+        1569.701
+      ],
+      "origen": "estado 65",
+      "glosa": "Regalías y otras actividades de estadio."
+    },
+    {
+      "label": "Gastos extraordinarios (a) $ (3.196.937) $",
+      "lado": "expense",
+      "page": 80,
+      "section": "26. OTROS GASTOS",
+      "values": [
+        -300999
+      ],
+      "origen": "estado 69",
+      "glosa": "Gastos extraordinarios (a) $ (3.196.937) $"
+    },
+    {
+      "label": "Gravamen a los movimientos financieros",
+      "lado": "expense",
+      "page": 80,
+      "section": "26. OTROS GASTOS",
+      "values": [
+        -406463
+      ],
+      "origen": "estado 69",
+      "glosa": "Gravamen a los movimientos financieros"
+    },
+    {
+      "label": "Gastos no deducibles",
+      "lado": "revenue",
+      "page": 80,
+      "section": "26. OTROS GASTOS",
+      "values": [
+        -258436
+      ],
+      "origen": "estado 69",
+      "glosa": "Gastos no deducibles"
+    }
+  ]
+}

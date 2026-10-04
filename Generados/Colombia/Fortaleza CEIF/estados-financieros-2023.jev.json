@@ -1,0 +1,835 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.md",
+ "generatedAt": "2026-10-02T20:07:38.174Z",
+ "rubrosHuella": "3b9ccac73bf58a74cba7f2c11839199eb3d0fbda",
+ "rubros": [
+  {
+   "label": "Derechos de televisión nacional",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados al 31 de diciembre:\" > desglose de \"Patrocinios (1)\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Federación Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados al 31 de diciembre:\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilio hotelero",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados al 31 de diciembre:\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Convenio entre clubes",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados al 31 de diciembre:\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilio de arbitraje",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados al 31 de diciembre:\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilio de transporte",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros auxilios(*)",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados al 31 de diciembre:\" > desglose de \"Patrocinios (1)\"",
+   "choice": "broadcasting",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Propaganda y publicidad",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados al 31 de diciembre:\" > desglose de \"Patrocinios (1)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos deportivos (2)",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados al 31 de diciembre:\"",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Enseñanza Deportiva",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados al 31 de diciembre:\"",
+   "choice": "education",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Transportes",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados al 31 de diciembre:\"",
+   "choice": "broadcasting",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Venta de Indumentaria",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados al 31 de diciembre:\" > desglose de \"Comercio al por mayor y menor (3)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Venta de boletería en taquilla",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados al 31 de diciembre:\" > desglose de \"Comercio al por mayor y menor (3)\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Alquiler Deportivo (1)",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\"",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Reintegro de costos y gastos (3)",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Marca Fortaleza",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 28,
+   "section": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ajuste al Peso",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "El costo detallado a continuación corresponde a la comercialización de artículos deportivos, al 31 de diciembre de:",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Sueldos",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Incapacidades",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Bonificaciones",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "wages_squad",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Cesantías",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Prima de servicios",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses sobre cesantías",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Vacaciones",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Prima extralegal",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Fondos Pensión",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Fondos EPS",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes Cajas De Compensación Familiar - Sena - ICBF",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.37,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes Administradoras de Riesgos Profesionales",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "wages_squad",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Indemnizaciones Laborales",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Médicos y drogas",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Arbitraje",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesoría Jurídica",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesoría Técnica",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.35,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos Deportivos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "player_amortisation",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Alquiler construcciones y edificaciones",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Alquiler maquinaria y equipo",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Alquiler Terrenos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Afiliaciones y sostenimientos",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguridad",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios públicos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Transporte de Pasajeros",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Transportes fletes y acarreos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Médico y ambulancias",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Logística de partidos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Legales",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Construcciones y edificaciones",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "depreciation",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Maquinaria y equipo",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Muebles y enseres",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Flota y equipo de transporte",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Reparaciones locativas",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Alojamiento y manutención",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Pasajes aéreos y terrestres",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Peajes",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Combustible",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Taxis y buses",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Casinos y restaurantes",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Papelería",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Parqueadero",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.31,
+   "desdeCache": true
+  },
+  {
+   "label": "Elementos de aseo y cafetería (Hidratación)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Implementos Deportivos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Deterioro de inventario",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Horas extras y recargos",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes fondo de pensiones",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes caja de compensación familiar",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes de riesgos laborales",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "wages_squad",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes a entidades promotora de salud",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Dotación y suministros a trabajadores",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Aporte I.C.B.F.",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Aporte SENA",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Revisoría Fiscal",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Aseo y vigilancia",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Energía Eléctrica",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Teléfono",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Registro Mercantil",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Tramites y licencias",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipo de oficina",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Casino Y Restaurante",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Deterioro de cartera",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "other_amortisation",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos no deducibles (1)",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Multas sanciones y litigios (2)",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos Asumidos",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\"",
+   "choice": "exceptional_items",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses de mora",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  }
+ ]
+}

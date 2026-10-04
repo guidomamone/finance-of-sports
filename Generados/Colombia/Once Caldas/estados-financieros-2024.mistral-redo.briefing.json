@@ -1,0 +1,3352 @@
+{
+  "club": "oncecaldas",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Once Caldas/estados-financieros-2024.mistral-redo.md",
+  "generatedAt": "2026-09-30T14:17:18.969Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 128,
+    "eu": 2,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 35,
+  "relevantTableCount": 4,
+  "tables": [
+    {
+      "page": 1,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023 / # NOTA 4",
+      "columns": [
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CAJA GENERAL",
+          "values": [
+            "9,325",
+            "35,271"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAJAS MENORES",
+          "values": [
+            "3,072",
+            "3,072"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCOS",
+          "values": [
+            "2,659,618",
+            "6,970,524"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CUENTA DE AHORRO",
+          "values": [
+            "312,521",
+            "30,841"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DERECHOS FIDUCIARIOS",
+          "values": [
+            "1,596,127",
+            "23,613"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EFECTIVO Y EQUIVALENTES DE EFE",
+          "values": [
+            "4,580,663",
+            "7,063,322"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "# NOTA 5",
+      "columns": [
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CUENTAS POR COBRAR A ENTIDADES REGULADAS POR EL FUTBOL COLOMBIANO: este valor corresponde a los derechos de televisión de los periodos de cada año, los cuales quedan pendientes a fin de cada mes y son cancelados en los primeros días del mes siguiente",
+          "values": [
+            "300,188",
+            "524,520"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CLIENTES DEL EXTERIOR: Cuentas por cobrar a los clubes del exterior , por la venta y prestamos de derechos deportivos,ajustadas a la TRM de junio 2024 diciembre 31 de 2023 , así:",
+          "values": [
+            "10,562,407",
+            "16,653,161"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RED BULL BRAGANTINO FUTEBOL LT-SERGIO PALACIOS",
+          "values": [
+            "66,137",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PFC CSKA SOFIA -MARCELINO CARREAZO",
+          "values": [
+            "22,046",
+            "19,110"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FEYENOORD ROTTERDAM - LUIS SINISTERRA",
+          "values": [
+            "8,957,174",
+            "12,964,677"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LEEDS UNITED FOOTBALL CLUB LIM-LUIS SINISTERRA",
+          "values": [
+            "740,885",
+            "1,080,602"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GIRENSUSPOR KULUB-ROBERT MEJIA",
+          "values": [
+            "319,597",
+            "295,542"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RACING CLUB ASOCIACION CIVIL -JOHAN CARBONERO",
+          "values": [
+            "0",
+            "2,293,230"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FOOTBALL CLUB KHIMKI-RBERT MEJIA",
+          "values": [
+            "456,567",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "columns": [
+        "INGRESOS POR COBRAR: En ésta se registran los obligaciones correspondiente a la venta de la publicidad, en los contratos queda establecido las fechas de pago, las cuales son normalmente a un año; son obligaciones de excelente comportamiento,",
+        "279,914",
+        "110,461"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anticipos de Impuestos :los valores registrados son anticipos de impuesto de renta y de industria y comerciode cada periodo",
+          "values": [
+            "2,326",
+            "693,687"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Retención en la fuente : Corresponde a las retenciones que nos realizan en cada periodo, sobre lo facturado durante el año, los cuales son anticipo del impuesto,",
+          "values": [
+            "0",
+            "409,379"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Impuesto de Industria y comercio: descuentos realizados por algunas empresas, para dar cumplimiento al impuesto municipal",
+          "values": [
+            "2,326",
+            "0"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Autorretenciones Renta, según decreto 2201 de 2016; valores cancelados a la Dian, correspondiente al 1,1% de los ingresos mensuales, y que se cruzan con el impuesto de renta de cada periodo.",
+          "values": [
+            "0",
+            "284,308"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Cuentas por Cobrar a empleados : Valores, descontados directamente de nómina, donde el plazo máximo es de dos meses.",
+          "values": [
+            "26,814",
+            "106,668"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deudores Varios : Los valores aca registrados, no se les calcula deterioro, ya que de acuerdo a la política del Once Caldas, cuando las obligaciones no superan 90 dias, son de una probabilidad alta, de recuperar, de hecho, a la fecha de realización de estos informes, ya estaban cancelados",
+          "values": [
+            "541,234",
+            "233,094"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DEUDAS DE DIFICIL COBRO",
+          "values": [
+            "188,250",
+            "188,250"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DETERIORO: Correspondiente a la obligación pendiente a las obligaciones, que de acuerdo a la política contable se encuentran vencidas",
+          "values": [
+            "-139,921",
+            "-138,429"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL DEUDORES",
+          "values": [
+            "11,761,212",
+            "18,371,412"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 2,
+      "section": "NOTA 6",
+      "columns": [
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Mercancias no fabricadas por la empresa",
+          "values": [
+            "53,771",
+            "83,385"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL INVENTARIOS",
+          "values": [
+            "53,771",
+            "83,385"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "NOTA 7",
+      "columns": [
+        "CONCEPTO",
+        "Saldo a enero 01 2023",
+        "adquisiciones",
+        "traslados y movimientos",
+        "Depreciación",
+        "Saldo a diciembre 31 de 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "9,634,742",
+            "0",
+            "0",
+            "0",
+            "9,634,742"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "columns": [
+        "Máquinaria y equ",
+        "48,078",
+        "3,068",
+        "",
+        "12,103",
+        "39,043"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Equipo de oficina",
+          "values": [
+            "4,402",
+            "30,619",
+            "0",
+            "32,435",
+            "2,586"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de computación y comunicación",
+          "values": [
+            "0",
+            "6,809",
+            "0",
+            "1,580",
+            "5,229"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flota y equipo de transporte",
+          "values": [
+            "131,800",
+            "250,000",
+            "",
+            "77,000",
+            "304,800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "9,819,022",
+            "290,496",
+            "0",
+            "123,118",
+            "9,986,400"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": null,
+      "columns": [
+        "",
+        "Saldo a enero 01 2024",
+        "adquisiciones",
+        "traslados y movimientos",
+        "Depreciación",
+        "Saldo a diciembre 31 de 2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CONCEPTO",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "9,634,742",
+            "0",
+            "-330,233",
+            "0",
+            "9,304,509"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construcciones y edificaciones",
+          "values": [
+            "",
+            "",
+            "330,233",
+            "33,563",
+            "296,670"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinaria y equ",
+          "values": [
+            "39,043",
+            "81,691",
+            "",
+            "34,702",
+            "86,032"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de oficina",
+          "values": [
+            "2,586",
+            "44,229",
+            "5,500",
+            "16,676",
+            "24,639"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de computación y comunicación",
+          "values": [
+            "5,229",
+            "4,346",
+            "0",
+            "2,360",
+            "7,215"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flota y equipo de transporte",
+          "values": [
+            "304,800",
+            "314,980",
+            "",
+            "94,250",
+            "525,530"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "9,986,400",
+            "445,246",
+            "5,500",
+            "181,550",
+            "10,244,596"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# ACTIVOS NO CORRIENTES / NOTA 8",
+      "columns": [
+        "CUENTA",
+        "DICIEMBRE 31 DE 2023",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "LICENCIAS: Se registra la licencia de oficce",
+          "values": [
+            "7,441",
+            "8,352"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": null,
+      "columns": [
+        "",
+        "Saldo a enero 01 2023",
+        "adquisiciones",
+        "traslados y movimientos",
+        "Amortizacion",
+        "Saldo a diciembre 31 de 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Derechos deportivos",
+          "values": [
+            "1,050,680",
+            "3,078,950",
+            "3,668,605",
+            "-328,789",
+            "789,814"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1,050,680",
+            "3,078,950",
+            "3,668,605",
+            "-328,789",
+            "789,814"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": null,
+      "columns": [
+        "",
+        "Saldo a enero 01 2024",
+        "adquisiciones",
+        "traslados y movimientos",
+        "Amortizacion",
+        "Saldo a octubre 31 de 2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CONCEPTO",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Derechos deportivos",
+          "values": [
+            "789,814",
+            "4,003,635",
+            "980,601",
+            "-340,026",
+            "3,472,822"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023 / # NOTA 9",
+      "columns": [
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "GASTOS PAGADOS POR ANTICIPADO",
+          "values": [
+            "227",
+            "329"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TRANSFERENCIA TEMPORAL",
+          "values": [
+            "0",
+            "131,194"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ACTIVO DIFERIDO NIIF: Valor correspondiente al impuesto diferido, sobre las perdidas fiscales acumuladas a la fecha",
+          "values": [
+            "78,882",
+            "167,144"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GASTOS PAGADOS POR ANTICIPADO",
+          "values": [
+            "79,109",
+            "298,667"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "# NOTA 10",
+      "columns": [
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "OBLIGACIONES FINANCIERAS A CORTO PLAZO",
+          "values": [
+            "337,500",
+            "0"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "OTRAS OBLIGACIONES FINANCIERAS: Parte corriente de la obligacion adquirida con el Banco Colpatria, atravez de la Dimayor, teniendo como garantia los derechos de tv, que sera cancelado en 32 meses, esto es hasta diciembre del año 2026.",
+          "values": [
+            "337,500",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "# NOTA 11",
+      "columns": [
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "PROVEEDORES",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Para compra de la Tienda Deportiva",
+          "values": [
+            "8,923",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PROVEEDORES",
+          "values": [
+            "8,923",
+            "0"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "# NOTA 12",
+      "columns": [
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "COMPRA DERECHOS DETIVOS",
+          "values": [
+            "1,704,943",
+            "346,217"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PRESTAMO DERECHOS DTVOS",
+          "values": [
+            "5,564",
+            "94,900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COMISION POR VENTA O PREST JUGAD",
+          "values": [
+            "0",
+            "229,323"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DERECHOS DE FORMACION",
+          "values": [
+            "0",
+            "44,375"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARTICIPACION EN VTA JUG -VENTA SINISTERRA",
+          "values": [
+            "3,397,109",
+            "5,316,392"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HONORARIOS",
+          "values": [
+            "34,263",
+            "50,772"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COMPRAS Y SS DE MANTENIM",
+          "values": [
+            "43,291",
+            "105,430"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ARRENDAMIENTOS",
+          "values": [
+            "18,382",
+            "15,747"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TRANSP, FLETES Y ACARREO",
+          "values": [
+            "0",
+            "1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SERVICIOS PUBLICOS",
+          "values": [
+            "18,078",
+            "6,338"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SEGUROS",
+          "values": [
+            "482",
+            "100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS DE VIAJE",
+          "values": [
+            "6,506",
+            "13,391"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LOGISTICA-PREPARA EVENTO",
+          "values": [
+            "44,695",
+            "11,006"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTROS",
+          "values": [
+            "23,329",
+            "18,932"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REINTEGROS POR PAGAR",
+          "values": [
+            "24,852",
+            "9,242"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "columns": [
+        "OTROS",
+        "60,894",
+        "60,894"
+      ],
+      "rows": [
+        {
+          "rawLabel": "TOTAL CUENTAS POR PAGAR A CORTO PLAZO",
+          "values": [
+            "5,382,386",
+            "6,323,060"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": null,
+      "columns": [
+        "",
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "NOTA 13",
+          "values": [
+            "IMPUESTO DE RENTA",
+            "787,340",
+            "534,128"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "IMPTO DE INDUSTRIA Y COMERCIO",
+            "20,809",
+            "11,544"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "RETENCION EN LA FUENTE",
+            "231,626",
+            "64,690"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "IMTO SOBRE LAS VTAS X PAGAR",
+            "127,705",
+            "52,681"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "TOTAL IMPUESTOS POR PAGAR",
+            "1,167,480",
+            "663,044"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": null,
+      "columns": [
+        "",
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "SALARIOS POR PAGAR",
+            "112,177",
+            "396,259"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "CESANTIAS CONSOLIDADAS",
+            "162,224",
+            "133,253"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "INTERESES SOBRE LAS CESANTIAS",
+            "16,865",
+            "14,667"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "PRIMA DE SERVICIOS",
+            "0",
+            "55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "VACACIONES CONSOLIDADAS",
+            "54,544",
+            "55,731"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "APORTES A EPS",
+            "71,434",
+            "23,343"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "APORTES ARL",
+            "8,568",
+            "5,416"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "APORTES ICBF SENA CAJAS",
+            "35,814",
+            "17,238"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "APORTES CESANTIAS Y/O PENSIONE",
+            "119,909",
+            "86,134"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "EMBARGOS",
+            "4,940",
+            "2,768"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "libranzas",
+            "704",
+            "363"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "PARA PAGOS A TERCEROS",
+            "4,030",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "FONDOS",
+            "37,754",
+            "21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "TOTAL OBLIGACIONES LABORALES",
+            "628,963",
+            "756,193"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": null,
+      "columns": [
+        "",
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Ingresos Recibidos por anticipado",
+            "421,715",
+            "94,089"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Anticipo bus",
+            "12,000",
+            "12,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "TOTAL ANTICIPOS Y AVANCES RECIBIDOS",
+            "433,715",
+            "106,089"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023 / NOTA 16",
+      "columns": [
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CUENTAS POR PAGAR EN REORGANIZACION",
+          "values": [
+            "9,221,052",
+            "9,147,700"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "QUIROGRAFARIOS",
+          "values": [
+            "2,008,174",
+            "2,008,174"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NO RECLAMADOS",
+          "values": [
+            "200,096",
+            "200,096"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INTERESES FISCALES",
+          "values": [
+            "1,843,046",
+            "1,728,197"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INTERESES ANTES ACUERDO",
+          "values": [
+            "3,252",
+            "3,252"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INTERESES PACTADOS ACUER",
+          "values": [
+            "971,760",
+            "787,954"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "QUIROGRAFARIOS-NO RECLAM",
+          "values": [
+            "92,570",
+            "92,570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OBLIGACION FISCAL RENTA",
+          "values": [
+            "2,434,327",
+            "2,637,188"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OBLIGACION FISCAL IVA",
+          "values": [
+            "269,296",
+            "291,738"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OBLIGACION FISCAL SANCION",
+          "values": [
+            "1,398,532",
+            "1,398,532"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OBLIGACIONES FINANCIERAS A LARGO PLAZO",
+          "values": [
+            "DICIEMBRE 31 DE 2024",
+            "DICIEMBRE 31 DE 2023"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "OTRAS OBLIGACIONES FINANCIERAS: Parte e largo plazo de la obligación adquirida con el Banco Colpatria, atravez de la Dimayor, teniendo como garantía los derechos de tv, que será cancelado en 32 meses, esto es hasta diciembre del año 2026.",
+          "values": [
+            "337,500",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL OBLIGACIONES FINANCIERAS A LARGO PLAZO",
+          "values": [
+            "337,500",
+            "0"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PASIVOS ESTIMADOS Y PROVISIONE",
+          "values": [
+            "116,054",
+            "279,710"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "NOTA 17 / NOTA 18 / NOTA 19",
+      "columns": [
+        "COMPOSICION DEL PATRIMONIO",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capital autorizado, corresponde a 15 millones de acciones a $1000 cada una, a partir de agosto del año 2016",
+          "values": [
+            "15,000,000",
+            "15,000,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital suscrito y pagado",
+          "values": [
+            "7,968,821",
+            "7,968,821"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "columns": [
+        "CAPITAL SOCIAL",
+        "7,968,821",
+        "7,968,821"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Superavit por conversión",
+          "values": [
+            "7,872,705",
+            "7,872,705"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima por conversión",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL SUPERAVIT DE CAPITAL",
+          "values": [
+            "7,872,705",
+            "7,872,705"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RESERVAS OBLIGATORIAS",
+          "values": [
+            "525,599",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESERVA PARA READQUIS DE ACCIONES",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ACCIONES PROPIAS READQUIRIDAS",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESERVAS OBLIGATORIAS",
+          "values": [
+            "525,599",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ganancias (perdidas) acumuladas por adopción NIIF Pymes, de acuerdo con la NIIF para las pymes(párrafo 11.36), una entidad solo dará de baja en cuentas un pasivo financiero( o una parte de un pasivo financiero), cuando se haya extinguido, como es nuestro caso, que los intereses que se causaron por la demanda de Flefield, no se reconoceran, toda vez, que estando en la ley 1116, no se reconoceran intereses distintos a los decretados en el acuerdo",
+          "values": [
+            "-484,425",
+            "-484,425"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impactos por conversión a NIIF",
+          "values": [
+            "-484,425",
+            "-484,425"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RESULTADO DE EJERCICIOS ANTERIORES",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Utilidades o perdidas acumuladas, varían de un año a otro, bien por que se sumen las perdidas del año anterior o bien por que la asamblea determina que las utilidades del ejercicio anterior, son para enjuagar las pérdidas.",
+          "values": [
+            "-745,672",
+            "5,255,986"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL RESULTADO DE EJERCICIOS ANTERIORES",
+          "values": [
+            "-745,672",
+            "5,255,986"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "UTILIDAD O PERDIDA DEL EJERCICIO",
+          "values": [
+            "4,112,260",
+            "-1,287,531"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PATRIMONIO",
+          "values": [
+            "19,249,288",
+            "19,325,556"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "INGRESOS OPERATIVOS",
+          "values": [
+            "26,814,332",
+            "24,591,311"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TAQUILLA-VENTA DE BOLETERIA",
+          "values": [
+            "12,037,298",
+            "5,274,741"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "partidos oficiales",
+          "values": [
+            "9,214,593",
+            "2,239,486"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "venta de abonos",
+          "values": [
+            "2,822,704",
+            "3,035,255"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VENTA DERECHOS DTIVOS-JUGADORE",
+          "values": [
+            "1,246,593",
+            "5,153,577"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PRESTAMO DERECHOS DTIVOS-JUGAD",
+          "values": [
+            "599,657",
+            "1,760,186"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PATROCINIO",
+          "values": [
+            "2,265,877",
+            "3,044,840"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PUBLICIDAD Y PROPAGANDA",
+          "values": [
+            "784,967",
+            "331,034"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "vallas publicitarias",
+          "values": [
+            "417,666",
+            "320,535"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad en partidos",
+          "values": [
+            "115,966",
+            "10,082"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Regalias",
+          "values": [
+            "251,334",
+            "416"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIMAYOR",
+          "values": [
+            "7,095,459",
+            "7,191,672"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FEDERACION",
+          "values": [
+            "595,734",
+            "489,735"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "columns": [
+        "PARTICIPACIONES FEDERACION COLOMBIANA",
+        "595,734",
+        "489,735"
+      ],
+      "rows": [
+        {
+          "rawLabel": "PARTICIPA NACIONALES-INTERNACI",
+          "values": [
+            "81,922",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VTA DE ARTICULOS DTIVOS-MISCEL",
+          "values": [
+            "1,833,023",
+            "1,320,907"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ACTIVIDADES CONEXAS",
+          "values": [
+            "281,813",
+            "31,640"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEVOLUCION VTAS ALMACEN",
+          "values": [
+            "-8,011",
+            "-7,020"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": null,
+      "columns": [
+        "",
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "NOTA 21",
+          "values": [
+            "COSTO DE VENTAS",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Venta de artículos deportivos-miscelaneos",
+            "1,276,105",
+            "1,002,258"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "TOTAL COSTO DE VENTA",
+            "1,276,105",
+            "1,002,258"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": null,
+      "columns": [
+        "",
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "NOTA 22",
+          "values": [
+            "GASTOS DE ADMINISTRACION: La desagregación de los gastos de administración presentados en el estado de resultados, para los periodos contables terminados en Septiembre 30 de 2024 y de diciembre 31 de 2023.",
+            "",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": null,
+      "columns": [
+        "",
+        "CUENTA",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "1,633,521",
+            "1,345,945"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS DE PERSONAL",
+          "values": [
+            "",
+            "1,208,958",
+            "1,102,946"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HONORARIOS",
+          "values": [
+            "",
+            "134,008",
+            "66,620"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPUESTOS",
+          "values": [
+            "",
+            "0",
+            "547"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ARRENDAMIENTOS",
+          "values": [
+            "",
+            "71,622",
+            "63,468"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SEGUROS",
+          "values": [
+            "",
+            "8,684",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SERVICIOS",
+          "values": [
+            "",
+            "41,017",
+            "36,424"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS LEGALES",
+          "values": [
+            "",
+            "5,746",
+            "5,625"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MANTENIMIENTO Y REPARACIONES",
+          "values": [
+            "",
+            "2,587",
+            "359"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ADECUACION E INSTALACION",
+          "values": [
+            "",
+            "15",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS DE VIAJE",
+          "values": [
+            "",
+            "64,091",
+            "39,375"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPRECIACIONES",
+          "values": [
+            "",
+            "10,173",
+            "495"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AMORTIZACIONES",
+          "values": [
+            "",
+            "911",
+            "759"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIVERSOS",
+          "values": [
+            "",
+            "85,709",
+            "29,326"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": null,
+      "columns": [
+        "",
+        "GASTOS DE VENTAS",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "NOTA 23",
+          "values": [
+            "TOTAL GASTOS DE VENTAS",
+            "19,085,241",
+            "18,602,159"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "GASTOS DE PERSONAL",
+            "10,764,652",
+            "9,448,750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "HONORARIOS",
+            "64,100",
+            "69,550"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "IMPUESTOS",
+            "1,358,701",
+            "963,930"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "ARRENDAMIENTOS",
+            "222,430",
+            "231,172"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "CONTRIBUCIONES Y AFILIACIONES",
+            "8,974",
+            "14,980"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "columns": [
+        "SEGUROS",
+        "43,431",
+        "39,475"
+      ],
+      "rows": [
+        {
+          "rawLabel": "SERVICIOS",
+          "values": [
+            "312,845",
+            "94,431"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS LEGALES",
+          "values": [
+            "911",
+            "6,202"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MANTENIMIENTO Y REPARACIONES",
+          "values": [
+            "353,355",
+            "84,669"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ADECUACION E INSTALAC",
+          "values": [
+            "120",
+            "1,411"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS DE VIAJE",
+          "values": [
+            "861,540",
+            "604,556"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPRECIACIONES",
+          "values": [
+            "171,377",
+            "122,623"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DERECHOS DEPORTIVOS",
+          "values": [
+            "2,528,655",
+            "5,455,172"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIVERSOS",
+          "values": [
+            "2,381,745",
+            "1,454,072"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROVISIONES",
+          "values": [
+            "12,405",
+            "11,165"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIVERSOS : Registramos los siguientes conceptos",
+          "values": [
+            "2,380,103",
+            "1,454,072"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "COMISIONES",
+          "values": [
+            "0",
+            "20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS DE REPRESENTACION Y RELACIONES",
+          "values": [
+            "2,574",
+            "2,528"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ELEMENTOS DE ASEO Y CAFETERIA",
+          "values": [
+            "22,627",
+            "18,626"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "UTILES PAPELERIA Y FOTOCOPIAS",
+          "values": [
+            "1,512",
+            "4,380"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COMBUSTIBLES Y LUBRICANTES",
+          "values": [
+            "9,259",
+            "7,628"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMBASES Y EMPAQUES",
+          "values": [
+            "775",
+            "118"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TAXIS Y BUSES",
+          "values": [
+            "5,682",
+            "3,873"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CASINO Y RESTAURANTE",
+          "values": [
+            "737",
+            "571"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARQUEADEROS",
+          "values": [
+            "854",
+            "689"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LOGISTICA PREPARAC EVENTOS DEP",
+          "values": [
+            "1,799,694",
+            "979,605"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTROS",
+          "values": [
+            "533,814",
+            "432,200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IVA X DIVERSOS",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPTO AL CONSUMO",
+          "values": [
+            "2,575",
+            "3,833"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "NOTA 24",
+      "columns": [
+        "INGRESOS NO OPERACIONALES",
+        "DICIEMBRE 31 DE 2024",
+        "DICIEMBRE 31 DE 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "FINANCIEROS",
+          "values": [
+            "4,626,564",
+            "3,555,844"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INTERESES",
+          "values": [
+            "511,170",
+            "181,980"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIFERENCIA EN CAMBIO",
+          "values": [
+            "4,115,259",
+            "3,373,864"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESC COMERCIALES CONDICIONADOS",
+          "values": [
+            "135",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECUPERACIONES",
+          "values": [
+            "109,072",
+            "774,023"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DESCUENTOS CONCEDIDOS",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECUPE DE DETERIORO CARTERA",
+          "values": [
+            "0",
+            "33,354"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REINTE DE OTROS COSTOS Y GASTO",
+          "values": [
+            "15,999",
+            "73,915"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REINTEGROS NIIF",
+          "values": [
+            "0",
+            "641,552"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REINTEGRO DE GTOS ANOS ANTERIO",
+          "values": [
+            "93,073",
+            "25,202"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INDEMNIZACIONES",
+          "values": [
+            "43,975",
+            "13,565"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "INDEMNIZACIONES",
+          "values": [
+            "43,975",
+            "13,565"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESOS DE EJERCICIOS ANTERIORES",
+          "values": [
+            "0",
+            "156"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "INGRESOS DE EJERCICIOS ANTERIORES",
+          "values": [
+            "0",
+            "156"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIVERSOS",
+          "values": [
+            "3,661",
+            "481,754"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "APROVECHAMIENTOS",
+          "values": [
+            "3,638",
+            "408,508"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "columns": [
+        "SUBVENCIONES",
+        "0",
+        "50,965"
+      ],
+      "rows": [
+        {
+          "rawLabel": "MULTAS Y RECARGOS",
+          "values": [
+            "0",
+            "22,241"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AJUSTE AL PESO",
+          "values": [
+            "23",
+            "40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL INGRESOS NO OPERACIONALES",
+          "values": [
+            "4,783,272",
+            "4,825,342"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "NOTA 25",
+      "columns": [
+        "GASTOS NO OPERACIONALES: Son los gastos diferentes a los ordinarios ya mencionados anteriormente,",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "DICIEMBRE 31 DE 2024",
+            "DICIEMBRE 31 DE 2023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS NO OPERACIONALES",
+          "values": [
+            "3,435,595",
+            "9,180,210"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GSTOS FINANCIEROS",
+          "values": [
+            "3,086,790",
+            "8,762,141"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GASTOS BANCARIOS",
+          "values": [
+            "3,998",
+            "3,625"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COMISION",
+          "values": [
+            "144,155",
+            "89,830"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INTERESES",
+          "values": [
+            "537,415",
+            "536,759"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIFERENCIA EN CAMBIO",
+          "values": [
+            "2,236,204",
+            "8,024,219"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTROS(4X1000)",
+          "values": [
+            "165,018",
+            "107,708"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS EXTRAORDINARIOS",
+          "values": [
+            "302,930",
+            "399,347"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "COSTAS Y PROCESOS JUDICIALES",
+          "values": [
+            "27",
+            "8,283"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COSTOS Y GASTOS DE EJERCI ANTE",
+          "values": [
+            "6,665",
+            "2,285"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPUESTOS ASUMIDOS",
+          "values": [
+            "103,801",
+            "274,094"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTROS",
+          "values": [
+            "23",
+            "-75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SEGURIDAD SOCIAL ASUMIDA",
+          "values": [
+            "19,126",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS NO DEDUCIBLES",
+          "values": [
+            "173,288",
+            "114,760"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMUESTO DIFERIDO",
+          "values": [
+            "293,580",
+            "39,483"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GASTOS DIVERSOS",
+          "values": [
+            "45,875",
+            "18,722"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GASTOS DIVERSOS",
+          "values": [
+            "45,875",
+            "18,722"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPUESTO DE RENTA Y COMPLEMENTARIO",
+          "values": [
+            "0",
+            "534,128"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "IMPUESTO DE RENTA Y COMPLEMENTARIOS",
+          "values": [
+            "1,761,301",
+            "534,128"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": [
+        "CONCEPTO",
+        "Saldo a enero 01 2023",
+        "adquisiciones",
+        "traslados y movimientos",
+        "Depreciación",
+        "Saldo a diciembre 31 de 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "9,634,742",
+            "0",
+            "0",
+            "0",
+            "9,634,742"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinaria y equ",
+          "values": [
+            "48,078",
+            "3,068",
+            "",
+            "12,103",
+            "39,043"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de oficina",
+          "values": [
+            "4,402",
+            "30,619",
+            "0",
+            "32,435",
+            "2,586"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de computación y comunicación",
+          "values": [
+            "0",
+            "6,809",
+            "0",
+            "1,580",
+            "5,229"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flota y equipo de transporte",
+          "values": [
+            "131,800",
+            "250,000",
+            "",
+            "77,000",
+            "304,800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "9,819,022",
+            "290,496",
+            "0",
+            "123,118",
+            "9,986,400"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": [
+        "CONCEPTO",
+        "Saldo a enero 01 2024",
+        "adquisiciones",
+        "traslados y movimientos",
+        "Depreciación",
+        "Saldo a diciembre 31 de 2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "9,634,742",
+            "0",
+            "-330,233",
+            "0",
+            "9,304,509"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construcciones y edificaciones",
+          "values": [
+            "",
+            "",
+            "330,233",
+            "33,563",
+            "296,670"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinaria y equ",
+          "values": [
+            "39,043",
+            "81,691",
+            "",
+            "34,702",
+            "86,032"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de oficina",
+          "values": [
+            "2,586",
+            "44,229",
+            "5,500",
+            "16,676",
+            "24,639"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de computación y comunicación",
+          "values": [
+            "5,229",
+            "4,346",
+            "0",
+            "2,360",
+            "7,215"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flota y equipo de transporte",
+          "values": [
+            "304,800",
+            "314,980",
+            "",
+            "94,250",
+            "525,530"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "9,986,400",
+            "445,246",
+            "5,500",
+            "181,550",
+            "10,244,596"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": [
+        "CONCEPTO",
+        "Saldo a enero 01 2023",
+        "adquisiciones",
+        "traslados y movimientos",
+        "Amortizacion",
+        "Saldo a diciembre 31 de 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "1,050,680",
+            "3,078,950",
+            "3,668,605",
+            "-328,789",
+            "789,814"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos deportivos",
+          "values": [
+            "1,050,680",
+            "3,078,950",
+            "3,668,605",
+            "-328,789",
+            "789,814"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": [
+        "CONCEPTO",
+        "Saldo a enero 01 2024",
+        "adquisiciones",
+        "traslados y movimientos",
+        "Amortizacion",
+        "Saldo a octubre 31 de 2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Derechos deportivos",
+          "values": [
+            "789,814",
+            "4,003,635",
+            "980,601",
+            "-340,026",
+            "3,472,822"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "7,441"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 2,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL DEUDORES",
+      "target": "11,761,212",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "-11140183"
+    },
+    {
+      "page": 2,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL DEUDORES",
+      "target": "18,371,412",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "-16594455"
+    },
+    {
+      "page": 2,
+      "section": "NOTA 6",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL INVENTARIOS",
+      "target": "53,771",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "NOTA 6",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL INVENTARIOS",
+      "target": "83,385",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "9,819,022",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-9682820"
+    },
+    {
+      "page": 3,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "290,496",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-3068"
+    },
+    {
+      "page": 3,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "target": "0",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "123,118",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-12103"
+    },
+    {
+      "page": 3,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "TOTAL",
+      "target": "9,986,400",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-9673785"
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "9,986,400",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "445,246",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "target": "5,500",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "181,550",
+      "addendCount": 6,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 6 rubros enteros)"
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "TOTAL",
+      "target": "10,244,596",
+      "addendCount": 6,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 6 rubros enteros)"
+    },
+    {
+      "page": 4,
+      "section": "# NOTA 11",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PROVEEDORES",
+      "target": "8,923",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "# NOTA 11",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PROVEEDORES",
+      "target": "0",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL CUENTAS POR PAGAR A CORTO PLAZO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 6,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023 / NOTA 16",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL OBLIGACIONES FINANCIERAS A LARGO PLAZO",
+      "skipped": true,
+      "reason": "1 de 12 valor(es) del segmento no parecen números (ej. \"DICIEMBRE 31 DE 2024\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 6,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023 / NOTA 16",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL OBLIGACIONES FINANCIERAS A LARGO PLAZO",
+      "skipped": true,
+      "reason": "1 de 12 valor(es) del segmento no parecen números (ej. \"DICIEMBRE 31 DE 2023\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 7,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL SUPERAVIT DE CAPITAL",
+      "target": "7,872,705",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL SUPERAVIT DE CAPITAL",
+      "target": "7,872,705",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL RESULTADO DE EJERCICIOS ANTERIORES",
+      "target": "-745,672",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "82348"
+    },
+    {
+      "page": 7,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL RESULTADO DE EJERCICIOS ANTERIORES",
+      "target": "5,255,986",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-968850"
+    },
+    {
+      "page": 7,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PATRIMONIO",
+      "target": "19,249,288",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-15137028"
+    },
+    {
+      "page": 7,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PATRIMONIO",
+      "target": "19,325,556",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-20613087"
+    },
+    {
+      "page": 10,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL INGRESOS NO OPERACIONALES",
+      "target": "4,783,272",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-4783249"
+    },
+    {
+      "page": 10,
+      "section": "# ONCE CALDAS S.A. EN REORGANIZACION / # NOTAS A LOS ESTADOS FINANCIEROS A DICIEMBRE 31 DE 2024 VS DICIEMBRE 31 DE 2023",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL INGRESOS NO OPERACIONALES",
+      "target": "4,825,342",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-4803061"
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "9,819,022",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "290,496",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "target": "0",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "123,118",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "TOTAL",
+      "target": "9,986,400",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "9,986,400",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "445,246",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "target": "5,500",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "181,550",
+      "addendCount": 6,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 6 rubros enteros)"
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "TOTAL",
+      "target": "10,244,596",
+      "addendCount": 6,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 6 rubros enteros)"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 39,
+    "results": [
+      {
+        "label": "Anticipos de Impuestos :los valores registrados son anticipos de impuesto de renta y de industria y comerciode cada periodo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Anticipos de Impuestos :los valores registrados son anticipos de impuesto de renta y de industria y comerciode cada periodo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Retención en la fuente : Corresponde a las retenciones que nos realizan en cada periodo, sobre lo facturado durante el año, los cuales son anticipo del impuesto,",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Retención en la fuente : Corresponde a las retenciones que nos realizan en cada periodo, sobre lo facturado durante el año, los cuales son anticipo del impuesto,",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impuesto de Industria y comercio: descuentos realizados por algunas empresas, para dar cumplimiento al impuesto municipal",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impuesto de Industria y comercio: descuentos realizados por algunas empresas, para dar cumplimiento al impuesto municipal",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autorretenciones Renta, según decreto 2201 de 2016; valores cancelados a la Dian, correspondiente al 1,1% de los ingresos mensuales, y que se cruzan con el impuesto de renta de cada periodo.",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autorretenciones Renta, según decreto 2201 de 2016; valores cancelados a la Dian, correspondiente al 1,1% de los ingresos mensuales, y que se cruzan con el impuesto de renta de cada periodo.",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cuentas por Cobrar a empleados : Valores, descontados directamente de nómina, donde el plazo máximo es de dos meses.",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cuentas por Cobrar a empleados : Valores, descontados directamente de nómina, donde el plazo máximo es de dos meses.",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Deudores Varios : Los valores aca registrados, no se les calcula deterioro, ya que de acuerdo a la política del Once Caldas, cuando las obligaciones no superan 90 dias, son de una probabilidad alta, de recuperar, de hecho, a la fecha de realización de estos informes, ya estaban cancelados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Deudores Varios : Los valores aca registrados, no se les calcula deterioro, ya que de acuerdo a la política del Once Caldas, cuando las obligaciones no superan 90 dias, son de una probabilidad alta, de recuperar, de hecho, a la fecha de realización de estos informes, ya estaban cancelados",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DEUDAS DE DIFICIL COBRO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DEUDAS DE DIFICIL COBRO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DETERIORO: Correspondiente a la obligación pendiente a las obligaciones, que de acuerdo a la política contable se encuentran vencidas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DETERIORO: Correspondiente a la obligación pendiente a las obligaciones, que de acuerdo a la política contable se encuentran vencidas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "NOTA 23",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "NOTA 23",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FINANCIEROS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FINANCIEROS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INTERESES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INTERESES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DIFERENCIA EN CAMBIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DIFERENCIA EN CAMBIO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DESC COMERCIALES CONDICIONADOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DESC COMERCIALES CONDICIONADOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECUPERACIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECUPERACIONES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DESCUENTOS CONCEDIDOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DESCUENTOS CONCEDIDOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECUPE DE DETERIORO CARTERA",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECUPE DE DETERIORO CARTERA",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REINTE DE OTROS COSTOS Y GASTO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REINTE DE OTROS COSTOS Y GASTO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REINTEGROS NIIF",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REINTEGROS NIIF",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REINTEGRO DE GTOS ANOS ANTERIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REINTEGRO DE GTOS ANOS ANTERIO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INDEMNIZACIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INDEMNIZACIONES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESOS DE EJERCICIOS ANTERIORES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESOS DE EJERCICIOS ANTERIORES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DIVERSOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DIVERSOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "APROVECHAMIENTOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "APROVECHAMIENTOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS NO OPERACIONALES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS NO OPERACIONALES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GSTOS FINANCIEROS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GSTOS FINANCIEROS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS BANCARIOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS BANCARIOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COMISION",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COMISION",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "OTROS(4X1000)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "OTROS(4X1000)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS EXTRAORDINARIOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS EXTRAORDINARIOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COSTAS Y PROCESOS JUDICIALES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COSTAS Y PROCESOS JUDICIALES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COSTOS Y GASTOS DE EJERCI ANTE",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COSTOS Y GASTOS DE EJERCI ANTE",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IMPUESTOS ASUMIDOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IMPUESTOS ASUMIDOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "OTROS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "OTROS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SEGURIDAD SOCIAL ASUMIDA",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SEGURIDAD SOCIAL ASUMIDA",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS NO DEDUCIBLES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS NO DEDUCIBLES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IMUESTO DIFERIDO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IMUESTO DIFERIDO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS DIVERSOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS DIVERSOS",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Gastos de Ventas: Diversos y provisiones",
+        "similarity": 50
+      },
+      {
+        "label": "IMPUESTO DE RENTA Y COMPLEMENTARIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IMPUESTO DE RENTA Y COMPLEMENTARIO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IMPUESTO DE RENTA Y COMPLEMENTARIOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IMPUESTO DE RENTA Y COMPLEMENTARIOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "co",
+    "query": "Once Caldas",
+    "matches": [
+      {
+        "leagueId": "co-primeraa",
+        "year": "2024",
+        "matchedName": "Once Caldas",
+        "wikipediaPage": "2024 Liga DIMAYOR"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "10 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

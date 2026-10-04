@@ -1,0 +1,216 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2008-2009.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2008-2009.pdf",
+  "club": "realmadrid",
+  "year": 2009,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:00:48.414Z",
+  "tieOuts": {
+    "cierran": 3,
+    "noCierran": 9
+  },
+  "warnings": [
+    "3 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 17,
+    "notasUsadas": [
+      "43",
+      "44"
+    ]
+  },
+  "ladoConocido": 14,
+  "rubros": [
+    {
+      "label": "Gastos de aprovisionamientos",
+      "lado": "expense",
+      "page": 36,
+      "section": "Resultado de explotación antes de amortizaciones",
+      "values": [
+        -15.485
+      ],
+      "origen": "estado 61",
+      "glosa": "Gastos de aprovisionamientos"
+    },
+    {
+      "label": "y enajenación de inmovilizado",
+      "lado": "expense",
+      "page": 36,
+      "section": "Resultado de explotación antes de amortizaciones",
+      "values": [
+        76.566
+      ],
+      "origen": "estado 61",
+      "glosa": "y enajenación de inmovilizado"
+    },
+    {
+      "label": "Gastos de personal deportivo y no deportivo",
+      "lado": "expense",
+      "page": 36,
+      "section": "Resultado de explotación antes de amortizaciones",
+      "values": [
+        -177.885
+      ],
+      "origen": "estado 61",
+      "glosa": "Gastos de personal deportivo y no deportivo"
+    },
+    {
+      "label": "Gastos de operaciones",
+      "lado": "expense",
+      "page": 36,
+      "section": "Resultado de explotación antes de amortizaciones",
+      "values": [
+        -102.781
+      ],
+      "origen": "estado 61",
+      "glosa": "Gastos de operaciones"
+    },
+    {
+      "label": "Provisiones de insolvencia y de riesgos y gastos -",
+      "lado": "expense",
+      "page": 36,
+      "section": "Resultado de explotación antes de amortizaciones",
+      "values": [
+        -14.158
+      ],
+      "origen": "estado 61",
+      "glosa": "Provisiones de insolvencia y de riesgos y gastos -"
+    },
+    {
+      "label": "Ingresos Financieros",
+      "lado": "revenue",
+      "page": 36,
+      "section": "",
+      "values": [
+        5807
+      ],
+      "origen": "estado 63 (su nota queda consumida sin abrir)",
+      "glosa": "Ingresos Financieros"
+    },
+    {
+      "label": "Gastos Financieros",
+      "lado": "expense",
+      "page": 36,
+      "section": "",
+      "values": [
+        -9987
+      ],
+      "origen": "estado 63 (su nota queda consumida sin abrir)",
+      "glosa": "Gastos Financieros"
+    },
+    {
+      "label": "Amortización Ordinaria",
+      "lado": null,
+      "page": 36,
+      "section": "",
+      "values": [
+        -77662
+      ],
+      "origen": "estado 63",
+      "glosa": "Amortización Ordinaria"
+    },
+    {
+      "label": "Ingresos de socios y estadios",
+      "lado": "revenue",
+      "page": 41,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS CORRESPONDIENTES AL EJERCICIO / ANUAL TERMINADO EL 30 DE JUNIO DE 2009 / OPERACIONES CONTINUADAS",
+      "values": [
+        0.116904
+      ],
+      "origen": "estado 68",
+      "glosa": "Ingresos de socios y estadios"
+    },
+    {
+      "label": "Ingresos de amistosos y competiciones internacionales",
+      "lado": "revenue",
+      "page": 41,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS CORRESPONDIENTES AL EJERCICIO / ANUAL TERMINADO EL 30 DE JUNIO DE 2009 / OPERACIONES CONTINUADAS",
+      "values": [
+        0.015515
+      ],
+      "origen": "estado 68",
+      "glosa": "Ingresos de amistosos y competiciones internacionales"
+    },
+    {
+      "label": "Ingresos de retransmisión",
+      "lado": "revenue",
+      "page": 41,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS CORRESPONDIENTES AL EJERCICIO / ANUAL TERMINADO EL 30 DE JUNIO DE 2009 / OPERACIONES CONTINUADAS",
+      "values": [
+        0.14445
+      ],
+      "origen": "estado 68",
+      "glosa": "Ingresos de retransmisión"
+    },
+    {
+      "label": "Ingresos de marketing",
+      "lado": "revenue",
+      "page": 41,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS CORRESPONDIENTES AL EJERCICIO / ANUAL TERMINADO EL 30 DE JUNIO DE 2009 / OPERACIONES CONTINUADAS",
+      "values": [
+        0.10061
+      ],
+      "origen": "estado 68",
+      "glosa": "Ingresos de marketing"
+    },
+    {
+      "label": "Amortizaciones Ordinarias",
+      "lado": null,
+      "page": 36,
+      "section": "Resultado de Explotación antes Amortizaciones",
+      "values": [
+        -61602
+      ],
+      "origen": "estado 62",
+      "glosa": "Amortizaciones Ordinarias"
+    },
+    {
+      "label": "y Enajenación de Inmovilizado",
+      "lado": null,
+      "page": 36,
+      "section": "Resultado de Explotación antes Amortizaciones",
+      "values": [
+        104005
+      ],
+      "origen": "estado 62",
+      "glosa": "y Enajenación de Inmovilizado"
+    },
+    {
+      "label": "Gastos de aprovisionamientos",
+      "lado": "expense",
+      "page": 42,
+      "section": "",
+      "values": [
+        -0.012729
+      ],
+      "origen": "estado 72",
+      "glosa": "Gastos de aprovisionamientos"
+    },
+    {
+      "label": "Gastos de personal deportivo y no deportivo",
+      "lado": "expense",
+      "page": 42,
+      "section": "",
+      "values": [
+        -0.187191
+      ],
+      "origen": "estado 72",
+      "glosa": "Gastos de personal deportivo y no deportivo"
+    },
+    {
+      "label": "Gastos de operaciones",
+      "lado": "expense",
+      "page": 42,
+      "section": "",
+      "values": [
+        -0.100088
+      ],
+      "origen": "estado 72",
+      "glosa": "Gastos de operaciones"
+    }
+  ]
+}

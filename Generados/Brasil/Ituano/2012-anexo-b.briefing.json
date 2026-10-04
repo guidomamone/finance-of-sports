@@ -1,0 +1,326 @@
+{
+  "club": "ituano",
+  "year": 2012,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Ituano/2012-anexo-b.md",
+  "generatedAt": "2026-09-30T21:53:18.745Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 1,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 5,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 4,
+      "section": "## NOTA 10. IMOBILIZADO",
+      "columns": [
+        "Descrição",
+        "31/12/2012",
+        "31/12/2011"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Construções Imóveis e Terrenos",
+          "values": [
+            "96.849,40",
+            "96.849,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Instalações",
+          "values": [
+            "183.083,63",
+            "140.327,25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e Equipamentos",
+          "values": [
+            "159.313,80",
+            "143.286,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação Acumulada",
+          "values": [
+            "(143.076,30)",
+            "(70.017,37)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 11. EMPRESTIMOS PESSOAS FISICAS LIGADAS AO CLUBE",
+      "columns": [
+        "Descrição",
+        "31/12/2012",
+        "31/12/2011"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ademir Francisco de Campos",
+          "values": [
+            "3.500,00",
+            "3.500,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salomão Guerra",
+          "values": [
+            "33.900,00",
+            "33.900,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Creditos- Coreano",
+          "values": [
+            "29.914,00",
+            "29.914,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "George Bykoff",
+          "values": [
+            "0,00",
+            "244.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lineu Antonio Giacomin",
+          "values": [
+            "5.000,00",
+            "5.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fernando Francisco Vieira",
+          "values": [
+            "0,00",
+            "13.402,13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luiz Antonio Cristofoletti",
+          "values": [
+            "3.000,00",
+            "3.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fernando Maria Bragagnolio",
+          "values": [
+            "0,00",
+            "1.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juros Passivos",
+          "values": [
+            "60.195,00",
+            "60.195,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 12. OBRIGAÇÕES TRABALHISTAS - SALÁRIOS E ENCARGOS",
+      "columns": [
+        "Descrição",
+        "31/12/2012",
+        "31/12/2011"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salários e Ordenados à Pagar",
+          "values": [
+            "80.985,00",
+            "67.770,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS e FGTS a Recolher",
+          "values": [
+            "16.350,59",
+            "24.443,66"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rescisões à Pagar",
+          "values": [
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 13. ACORDOS e PROVISÕES TRABALHISTAS",
+      "columns": [
+        "Descrição",
+        "31/12/2012",
+        "31/12/2011"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Outras Obrigações com Funcionários",
+          "values": [
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão p/Contingencia - INSS/FGTS",
+          "values": [
+            "261.449,01",
+            "261.449,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão p/Férias",
+          "values": [
+            "54.796,17",
+            "95.056,86"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "#### NOTA 14. OBRIGAÇÕES TRIBUTARIAS",
+      "columns": [
+        "Descrição",
+        "31/12/2012",
+        "31/12/2011"
+      ],
+      "rows": [
+        {
+          "rawLabel": "IRRF a Recolher",
+          "values": [
+            "37.798,53",
+            "25.405,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ISS Retido a Recolher",
+          "values": [
+            "4.569,73",
+            "4.135,56"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS Retido a Recolher",
+          "values": [
+            "4.147,99",
+            "1.549,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CRF a Recolher",
+          "values": [
+            "64.407,07",
+            "64.407,07"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Contrib.a Recolher",
+          "values": [
+            "3.587,99",
+            "3.587,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrib. Sindical a Recolher",
+          "values": [
+            "9.282,21",
+            "8.923,62"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 3,
+    "results": [
+      {
+        "label": "Salários e Ordenados à Pagar",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Salários e Ordenados à Pagar",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INSS e FGTS a Recolher",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INSS e FGTS a Recolher",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Rescisões à Pagar",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Rescisões à Pagar",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Ituano",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

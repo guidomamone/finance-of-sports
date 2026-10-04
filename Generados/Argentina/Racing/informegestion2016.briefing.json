@@ -1,0 +1,182 @@
+{
+  "club": "racing",
+  "year": 2016,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Racing/informegestion2016.md",
+  "generatedAt": "2026-09-30T01:15:38.933Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 33,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 4,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 2,
+      "section": "SALIDA DE JUGADORES / NETO / Y GASTOS        TERCEROS / SIN CARGO Y SIN OPCIÓN:                          SIN CARGO Y CON OPCIÓN: / DISTRACTO LABORAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "TOTAL DE INGRESOS: - $",
+          "values": [
+            "213.968.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPUESTOS Y GASTOS: - $",
+          "values": [
+            "58.089.573"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TENENCIA TERCEROS: - $",
+          "values": [
+            "16.013.711"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETO: - $",
+          "values": [
+            "139.865.516"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 3,
+      "section": "INFORME DE GESTIÓN / 1° SEMESTRE 2016 / ALTA DE JUGADORES / IMPUESTOS         TENENCIA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "ORTIZ SOTO, Danilo F. Con cargo y con opción - 2.100.000 -225.000 - -",
+          "values": [
+            "2.325.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "100% de U$",
+          "values": [
+            "1.080.000.-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "U$ 1.050.000 / con opción 100% / U$ 2,5 MM / con opción 100% / U$ 4,5 MM",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "TOTAL DE ALTAS: $",
+          "values": [
+            "-76.210.806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPUESTOS Y GASTOS: - $",
+          "values": [
+            "15.502.136"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 52,
+      "section": "1° SEMESTRE 2016 / DEPARTAMENTO / DE SOCIOS / ABONADOS / OBJETIVOS PARA EL SEGUNDO SEMESTRE:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Incrementar la masa societaria a",
+          "values": [
+            "75.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Incrementar la venta de abonos a",
+          "values": [
+            "16.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 2,
+      "section": "SALIDA DE JUGADORES / NETO / Y GASTOS        TERCEROS / SIN CARGO Y SIN OPCIÓN:                          SIN CARGO Y CON OPCIÓN: / DISTRACTO LABORAL",
+      "likelyRelevant": true,
+      "totalLabel": "TOTAL DE INGRESOS: - $",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": "U$ 1.050.000 / con opción 100% / U$ 2,5 MM / con opción 100% / U$ 4,5 MM",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL DE ALTAS: $",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 3,
+    "results": [
+      {
+        "label": "IMPUESTOS Y GASTOS: - $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IMPUESTOS Y GASTOS: - $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "TENENCIA TERCEROS: - $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "TENENCIA TERCEROS: - $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "NETO: - $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "NETO: - $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Racing Club",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

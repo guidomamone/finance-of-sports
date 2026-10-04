@@ -1,0 +1,793 @@
+{
+ "md": "Clubes/Colombia/Envigado/estados-financieros-2019.md",
+ "generatedAt": "2026-09-30T22:48:56.999Z",
+ "rubrosHuella": "ed2968a1d222bb3d50cfb62e5209d02946ecd245",
+ "rubros": [
+  {
+   "label": "Diferencias en cambio en negocios del extranjero (Ingreso)",
+   "lado": "revenue",
+   "page": 29,
+   "section": "## 30. Estado de resultados – Otro Resultado Integral",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Diferencias en cambio en negocios del extranjero (Gasto)",
+   "lado": "expense",
+   "page": 29,
+   "section": "## 30. Estado de resultados – Otro Resultado Integral",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Salario integral",
+   "lado": "expense",
+   "page": 26,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Sueldos",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "wages_squad",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Básico aprendiz",
+   "lado": "expense",
+   "page": 26,
+   "section": "",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Viáticos",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "match_organisation_expense",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Incapacidades",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilio de transporte",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "match_organisation_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Cesantías",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "wages_squad",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses sobre cesantías",
+   "lado": "expense",
+   "page": 26,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Prima de servicios",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Vacaciones",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilios",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Bonificaciones",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "wages_squad",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Dotación y suministro a trabajadores",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "desdeCache": true
+  },
+  {
+   "label": "Indemnizaciones laborales",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Capacitación al personal",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "admin_general_expense",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos deportivos y de recreación",
+   "lado": "expense",
+   "page": 26,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes A.R.L.",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "match_organisation_expense",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes a E.P.S.",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes a A.F.P.",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "match_organisation_expense",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Caja de compensación familiar",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes al ICBF",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes al SENA",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "other_expenses",
+   "confidence": 0.34,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos médicos y drogas",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Consultoría",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesoría jurídica",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesoría técnica",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Honorarios médicos",
+   "lado": "expense",
+   "page": 26,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses a las cesantías",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos deportivos y recreación",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Revisoría fiscal",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesoría financiera",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Escuelas de fútbol",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "youth_football",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Taquilla",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Abonados",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "season_tickets",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Venta de derechos deportivos (1)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sociedade Esportiva Palmeiras (3)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "### Venta de derechos deportivos (1)",
+   "choice": "player_sales",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "America De Cali S.A. (4)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "### Venta de derechos deportivos (1)",
+   "choice": "player_sales",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Atlético Nacional S.A (5)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "### Venta de derechos deportivos (1)",
+   "choice": "player_sales",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Club Sport Emelec (7)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "### Venta de derechos deportivos (1)",
+   "choice": "player_sales",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Préstamo de derechos deportivo (2)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Contribución de solidaridad (3)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "player_sales",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos televisión internacional (4)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos televisión abierta RCN (4)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos televisión cerrada Win Sports (4)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Arbitraje",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "competition_bonus",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Federación colombiana de fútbol",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "competition_bonus",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocinio",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuotas de sostenimiento (5)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Venta de mercancías",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Entretenimiento y esparcimiento",
+   "lado": "revenue",
+   "page": 22,
+   "section": "## 24. Ingresos de actividades ordinarias",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 27. Gastos Financieros",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Diferencia en cambio",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 27. Gastos Financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Utilidad En Venta De Propiedad",
+   "lado": "revenue",
+   "page": 24,
+   "section": "## 25. Otros ingresos / ### Otros ingresos",
+   "choice": "player_sales",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Reclamos A.R.L.",
+   "lado": "revenue",
+   "page": 24,
+   "section": "## 25. Otros ingresos / ### Otros ingresos",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Reintegro De Costos Y Gastos",
+   "lado": "revenue",
+   "page": 24,
+   "section": "## 25. Otros ingresos / ### Otros ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 24,
+   "section": "## 25. Otros ingresos / ### Otros ingresos",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ajuste al peso",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 28. Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses no financieros",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 28. Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos y gastos de ejercicios anteriores",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 28. Otros Gastos",
+   "choice": "exceptional_items",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos asumidos",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 28. Otros Gastos",
+   "choice": "exceptional_items",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Demandas laborales",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 28. Otros Gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Multas sanciones y litigios",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 28. Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Donaciones",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 28. Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "(+) Gastos Sin Soporte",
+   "lado": "expense",
+   "page": 18,
+   "section": "### 1 Diferencias permanentes que aumentan la renta líquida / #### Pérdidas y gastos no deducibles",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "(+) Donaciones Que No Cumplan Los Requisitos Legales",
+   "lado": "expense",
+   "page": 18,
+   "section": "### 1 Diferencias permanentes que aumentan la renta líquida / #### Pérdidas y gastos no deducibles",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "(+) Gastos De Vigencias Anteriores",
+   "lado": "expense",
+   "page": 18,
+   "section": "### 1 Diferencias permanentes que aumentan la renta líquida / #### Pérdidas y gastos no deducibles",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos bancarios",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 27. Gastos Financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Comisiones",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 27. Gastos Financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Gravamen a los movimientos fin",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 27. Gastos Financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "(+) Otros Gastos Financieros No Deducibles",
+   "lado": "revenue",
+   "page": 18,
+   "section": "### 1 Diferencias permanentes que aumentan la renta líquida / #### Pérdidas y gastos no deducibles",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Gastos equipo de fútbol",
+   "lado": "expense",
+   "page": 26,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "wages_squad",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "lump_football_operations_expense",
+     0.24
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Gastos administrativos",
+   "lado": "expense",
+   "page": 24,
+   "section": "## 26. Gastos de Gastos de administración y equipo de fútbol",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "(+) Otros Gastos No Deducibles De Naturaleza Permanente",
+   "lado": "revenue",
+   "page": 18,
+   "section": "### 1 Diferencias permanentes que aumentan la renta líquida / #### Pérdidas y gastos no deducibles",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "(+) Impuestos. Multas. Sanciones. Intereses Moratorios Y Las Condenas No Deducibles",
+   "lado": "revenue",
+   "page": 18,
+   "section": "### 1 Diferencias permanentes que aumentan la renta líquida / #### Pérdidas y gastos no deducibles",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "(+) Deducciones De Impuestos (GMF. Patrimonio Vehículos. Entre Otros)",
+   "lado": "revenue",
+   "page": 18,
+   "section": "### 1 Diferencias permanentes que aumentan la renta líquida / #### Pérdidas y gastos no deducibles",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1039
+  }
+ ]
+}

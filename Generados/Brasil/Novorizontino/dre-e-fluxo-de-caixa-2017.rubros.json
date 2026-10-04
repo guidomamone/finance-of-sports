@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.md",
+  "pdf": "Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.pdf",
+  "club": "novorizontino-br",
+  "year": 2017,
+  "generatedAt": "2026-10-03T03:29:29.463Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "RENDAS DE JOGOS, PATROCÍNIOS, LOCAÇÕES E OUTRAS RECEITAS OPERACIONAIS",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        8.019563
+      ],
+      "glosa": "INGRESOS POR PARTIDOS, PATROCINIOS, ALQUILERES Y OTROS INGRESOS DE EXPLOTACIÓN"
+    },
+    {
+      "label": "Recuperação de Despesas",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.05615
+      ],
+      "glosa": "Recuperación de gastos"
+    },
+    {
+      "label": "RECURSOS PUBLICOS",
+      "lado": "revenue",
+      "page": 5,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.070526
+      ],
+      "glosa": "RECURSOS PÚBLICOS"
+    },
+    {
+      "label": "(-) Ordenados, Salários, Encargos Sociais e Trabalhistas e Outros",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.604131
+      ],
+      "glosa": "(-) Sueldos, salarios, cargas sociales y laborales y otros"
+    },
+    {
+      "label": "Despesas Administrativas",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        3.128041
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Despesas Gerais e de Manutenção",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.5637
+      ],
+      "glosa": "Gastos generales y de mantenimiento"
+    },
+    {
+      "label": "Provisões no Exercício",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.414148
+      ],
+      "glosa": "Provisiones del ejercicio"
+    },
+    {
+      "label": "(-) DESPESAS OPERACIONAIS PAGAS COM RECURSOS PÚBLICOS",
+      "lado": "expense",
+      "page": 5,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.070526
+      ],
+      "glosa": "(-) GASTOS DE EXPLOTACIÓN PAGADOS CON RECURSOS PÚBLICOS"
+    }
+  ]
+}

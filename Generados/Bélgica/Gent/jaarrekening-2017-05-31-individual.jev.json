@@ -1,0 +1,398 @@
+{
+ "md": "Clubes/Bélgica/Gent/jaarrekening-2017-05-31-individual.md",
+ "generatedAt": "2026-09-30T22:48:40.445Z",
+ "rubrosHuella": "64598d039e38d153eb0b0f1a3d5ca0403f7f2662",
+ "rubros": [
+  {
+   "label": "Aankoop sportmateriaal jeugd",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Stages jeugd",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.8200000000000001
+    ],
+    [
+     "match_organisation_expense",
+     0.18
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Huur terreinen",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "match_organisation_expense",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.45
+    ],
+    [
+     "youth_other_sports_expense",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Scheidsrechterskosten jeugd",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "match_organisation_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.78
+    ],
+    [
+     "youth_other_sports_expense",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Opleidingsvergoeding Pro league",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "player_amortisation",
+     0.26
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Aankoop kledij jeugd",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.69
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "match_organisation_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Opleidingsvergoeding jeugdspelers amateurclubs",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Schoolbegeleiding en internaat",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "education_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "education_expense",
+     0.89
+    ],
+    [
+     "youth_other_sports_expense",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "Dranken en voeding jeugd",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.98
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Transport jeugd",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "match_organisation_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.68
+    ],
+    [
+     "youth_other_sports_expense",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Afschrijvingen Warmoezenierswegbezetting jeugd 70%<br>289.440 x 70%=",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "other_amortisation",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_amortisation",
+     0.42
+    ],
+    [
+     "youth_other_sports_expense",
+     0.34
+    ],
+    [
+     "depreciation",
+     0.21
+    ]
+   ],
+   "tokens": 1088
+  },
+  {
+   "label": "Ter beschikkingstelling oefencomplex bezetting jeugd 70%<br>206.318 x 70%",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.81
+    ],
+    [
+     "match_organisation_expense",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1156
+  },
+  {
+   "label": "toe te rekenen kosten",
+   "lado": "expense",
+   "page": 20,
+   "section": "Nr. BE 0407.885.394 VOL 6.9 / SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN SOCIALE LASTEN / OVERLOPENDE REKENINGEN",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1119
+  },
+  {
+   "label": "Omkadering jeugd – coordinator -begeleider – medisch",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.98
+    ],
+    [
+     "education_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1164
+  },
+  {
+   "label": "In aanmerking te nemen totaal voor 50% sociaal oogmerk",
+   "lado": "expense",
+   "page": 36,
+   "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "publiciteit diverse",
+   "lado": "expense",
+   "page": 20,
+   "section": "Nr. BE 0407.885.394 VOL 6.9 / SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN SOCIALE LASTEN / OVERLOPENDE REKENINGEN",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1091
+  },
+  {
+   "label": "lidgelden jeugd",
+   "lado": "expense",
+   "page": 20,
+   "section": "Nr. BE 0407.885.394 VOL 6.9 / SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN SOCIALE LASTEN / OVERLOPENDE REKENINGEN",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.24000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1076
+  }
+ ]
+}

@@ -1,0 +1,258 @@
+{
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2020.md",
+ "pdf": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-as-2020.pdf",
+ "club": "valerenga",
+ "year": 2020,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:14.801Z",
+ "tieOuts": {
+  "cierran": 61,
+  "noCierran": 10
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "12 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 20,
+  "notasUsadas": [
+   "9",
+   "12",
+   "31",
+   "33"
+  ]
+ },
+ "ladoConocido": 20,
+ "rubros": [
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 13,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball AS",
+   "values": [
+    2066.847
+   ],
+   "origen": "nota 9 (ancla 0)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Sum kostnader",
+   "lado": "expense",
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    75581.916
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Note 1 - Lønn og lønnsrelaterte kostnader",
+   "values": [
+    8640.563
+   ],
+   "origen": "nota 12 (ancla 0>9)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Note 1 - Lønn og lønnsrelaterte kostnader",
+   "values": [
+    1206.768
+   ],
+   "origen": "nota 12 (ancla 0>9)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Note 1 - Lønn og lønnsrelaterte kostnader",
+   "values": [
+    334.196
+   ],
+   "origen": "nota 12 (ancla 0>9)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Note 1 - Lønn og lønnsrelaterte kostnader",
+   "values": [
+    222.096
+   ],
+   "origen": "nota 12 (ancla 0>9)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Avskrivning av driftsmidler",
+   "lado": "expense",
+   "page": 13,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball AS",
+   "values": [
+    2122.896
+   ],
+   "origen": "nota 9 (ancla 0)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Tap på fordringer",
+   "lado": "expense",
+   "page": 13,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball AS",
+   "values": [
+    261.666
+   ],
+   "origen": "nota 9 (ancla 0)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 13,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball AS",
+   "values": [
+    60726.884
+   ],
+   "origen": "nota 9 (ancla 0)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Sponsorinntekter",
+   "lado": "revenue",
+   "page": 22,
+   "section": "### Note 12 - Inntekter",
+   "values": [
+    36798.442
+   ],
+   "origen": "nota 31 (ancla 0)",
+   "ancla": "Salgsinntekt"
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    60178.686
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Markeds- og medieinntekter",
+   "lado": "revenue",
+   "page": 22,
+   "section": "### Note 12 - Inntekter",
+   "values": [
+    23073.841
+   ],
+   "origen": "nota 31 (ancla 0)",
+   "ancla": "Salgsinntekt"
+  },
+  {
+   "label": "Billettsalg (ordinært)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "### Note 12 - Inntekter",
+   "values": [
+    306.403
+   ],
+   "origen": "nota 31 (ancla 0)",
+   "ancla": "Salgsinntekt"
+  },
+  {
+   "label": "Økonomitjenester",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    150
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Andre inntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    4838.705
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Viderefakturert",
+   "lado": "revenue",
+   "page": 22,
+   "section": "Andre inntekter består av følgende poster:",
+   "values": [
+    3297.005
+   ],
+   "origen": "nota 33 (ancla 0)",
+   "ancla": "Andre inntekter"
+  },
+  {
+   "label": "Diverse inntekter",
+   "lado": "revenue",
+   "page": 22,
+   "section": "Andre inntekter består av følgende poster:",
+   "values": [
+    1541.7
+   ],
+   "origen": "nota 33 (ancla 0)",
+   "ancla": "Andre inntekter"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    33748.621
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    13489.098
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Skattekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    9844.998
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Udekket tap",
+   "lado": null,
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    7460.652
+   ],
+   "origen": "estado 0"
+  }
+ ]
+}

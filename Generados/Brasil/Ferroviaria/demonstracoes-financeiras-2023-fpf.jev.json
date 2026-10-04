@@ -1,0 +1,1846 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.md",
+ "generatedAt": "2026-09-30T04:26:11.578Z",
+ "rubros": [
+  {
+   "label": "Direitos econômicos",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "player_amortisation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "player_amortisation",
+     0.97
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1503
+  },
+  {
+   "label": "Cessão definitiva dos atletas",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1505
+  },
+  {
+   "label": "Publicidade",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Patrocínio",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Mecanismo Solidariedade da FIFA",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.5
+    ],
+    [
+     "player_sales",
+     0.34
+    ],
+    [
+     "youth_football",
+     0.08
+    ]
+   ],
+   "tokens": 1521
+  },
+  {
+   "label": "Arrecadação de jogos",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1522
+  },
+  {
+   "label": "Cessão temporária dos atletas",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "player_sales",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "player_sales",
+     0.96
+    ],
+    [
+     "player_amortisation",
+     0.03
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1503
+  },
+  {
+   "label": "Direitos de transmissão de TV",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1491
+  },
+  {
+   "label": "Sócio torcedor",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "Premiações",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "choice": "wages_squad",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "wages_squad",
+     0.63
+    ],
+    [
+     "match_organisation_expense",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 937
+  },
+  {
+   "label": "Outras receitas",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1475
+  },
+  {
+   "label": "Receita líquida",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1495
+  },
+  {
+   "label": "Impostos incidentes sobre a receita",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_income",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.17
+    ]
+   ],
+   "tokens": 1540
+  },
+  {
+   "label": "Lucro (prejuízo) bruto",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "lump_football_operations",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.71
+    ],
+    [
+     "other_income",
+     0.24000000000000002
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1446
+  },
+  {
+   "label": "(-) Custos operacionais",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1506
+  },
+  {
+   "label": "Administrativas e gerais",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1508
+  },
+  {
+   "label": "Com pessoal",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "choice": "wages_squad",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "wages_squad",
+     0.51
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Com materiais",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1481
+  },
+  {
+   "label": "Lucro (prejuízo) antes do resultado financeiro",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1496
+  },
+  {
+   "label": "Atletas não profissionais",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.67
+    ],
+    [
+     "wages_squad",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1523
+  },
+  {
+   "label": "Outras despesas",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.9400000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "Alojamento e moradia",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1394
+  },
+  {
+   "label": "Tributária",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "exceptional_items",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "exceptional_items",
+     0.66
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1362
+  },
+  {
+   "label": "Receita financeira",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1489
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1493
+  },
+  {
+   "label": "Lucro (prejuízo) líquido do exercício",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_income",
+     0.48
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 1442
+  },
+  {
+   "label": "Quantidade de ações integralizadas",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1361
+  },
+  {
+   "label": "Prejuízo líquido do exercício",
+   "lado": null,
+   "page": 10,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado abrangente / Exercícios findos em 31 de dezembro",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ],
+    [
+     "other_income",
+     0.06
+    ]
+   ],
+   "tokens": 1438
+  },
+  {
+   "label": "Móveis e utensílios",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "choice": "admin_general_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "depreciation",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.25
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Prejuízo líquido por ação (em R$)",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1479
+  },
+  {
+   "label": "Instalações",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "choice": "admin_general_expense",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.61
+    ],
+    [
+     "depreciation",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Equipamentos de informática",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 933
+  },
+  {
+   "label": "Veículos",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "depreciation",
+     0.19
+    ]
+   ],
+   "tokens": 793
+  },
+  {
+   "label": "Máquinas e equipamentos",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "depreciation",
+     0.07
+    ]
+   ],
+   "tokens": 905
+  },
+  {
+   "label": "Marcas e patentes",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 11 Intangível",
+   "choice": "other_amortisation",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_amortisation",
+     0.6
+    ],
+    [
+     "depreciation",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Equipamentos esportivos",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "choice": "wages_squad",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "wages_squad",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 954
+  },
+  {
+   "label": "Software",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 11 Intangível",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_amortisation",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Aparelhos de comunicação",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 881
+  },
+  {
+   "label": "Direito de uso (i)",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 11 Intangível",
+   "choice": "wages_squad",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "wages_squad",
+     0.6
+    ],
+    [
+     "depreciation",
+     0.25
+    ],
+    [
+     "other_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Atletas em formação (ii)",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 11 Intangível",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.55
+    ],
+    [
+     "player_amortisation",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Atletas profissionais formados (iii)",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 11 Intangível",
+   "choice": "player_amortisation",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "player_amortisation",
+     0.5
+    ],
+    [
+     "youth_other_sports_expense",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Atletas profissionais contratados (iii)",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 11 Intangível",
+   "choice": "player_amortisation",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "player_amortisation",
+     0.66
+    ],
+    [
+     "wages_squad",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Banco Bradesco",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Movimentação dos empréstimos:",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Direito de uso de imagem",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Com jogos",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Banco SICOOB",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Movimentação dos empréstimos:",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Taxas de federação e confederação",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "choice": "admin_general_expense",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "match_organisation_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Viagens e hospedagens",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Agenciamento de atletas",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.15000000000000002
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Manutenção e conservação",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Moradia",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 881
+  },
+  {
+   "label": "Amortização de atletas formados",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1072
+  },
+  {
+   "label": "Baixa de atletas formados",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Material esportivo",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "match_organisation_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Outros custos",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Serviços de consultoria",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Serviços contábeis, advocatícios e auditoria",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Serviços de apoio administrativo",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Viagens e estadias",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "match_organisation_expense",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Premiação",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 879
+  },
+  {
+   "label": "Propaganda e publicidade",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 957
+  },
+  {
+   "label": "Manutenção e conservação de bens",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Licença de software",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Refeitório",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 798
+  },
+  {
+   "label": "Material de escritório",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Material de limpeza, higiene, copa e cozinha",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Gestão do programa sócio torcedor",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Rendimento sobre aplicação financeira",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1499
+  },
+  {
+   "label": "Depreciações",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Outras",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Seguro de vida",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "wages_squad",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 852
+  },
+  {
+   "label": "Descontos obtidos",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1319
+  },
+  {
+   "label": "Contingências",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Rendas eventuais",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "Variação cambial",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Tarifas bancárias",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1454
+  },
+  {
+   "label": "Perdas eventuais",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "exceptional_items",
+     0.19
+    ],
+    [
+     "player_impairment",
+     0.03
+    ]
+   ],
+   "tokens": 1452
+  },
+  {
+   "label": "Encargos financeiros com a F.P.F",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "match_organisation_expense",
+     0.29000000000000004
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ]
+   ],
+   "tokens": 1533
+  },
+  {
+   "label": "Juros passivos",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1319
+  }
+ ]
+}

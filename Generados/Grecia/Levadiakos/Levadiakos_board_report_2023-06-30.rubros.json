@@ -1,0 +1,102 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_board_report_2023-06-30.md",
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_board_report_2023-06-30.pdf",
+ "club": "levadiakos",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:02:45.124Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 8,
+  "notasUsadas": []
+ },
+ "ladoConocido": 8,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    253.44435
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -3042.1186
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    3233.0683
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -34.18531
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -334.88652
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "revenue",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    0.00119
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -7.69286
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Φόρος εισοδήματος",
+   "lado": "expense",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -17.17492
+   ],
+   "origen": "estado 1"
+  }
+ ]
+}

@@ -1,0 +1,473 @@
+{
+ "md": "Clubes/Croacia/Osijek/financijsko-izvjesce-2019.md",
+ "generatedAt": "2026-09-30T22:49:01.469Z",
+ "rubrosHuella": "73e148a03f43ef62d1c24bc1da5f14b2144eab0f",
+ "rubros": [
+  {
+   "label": "Ostali nerazvrstani poslovni prihodi",
+   "lado": "revenue",
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Plaće igrača",
+   "lado": "expense",
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali nerazvrstani troškovi primanja igrača",
+   "lado": "expense",
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "wages_squad",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Porezi i doprinosi - ostali zaposlenici",
+   "lado": "expense",
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali nerazvrstani troškovi za primanja ostalih zaposlenike",
+   "lado": "expense",
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Umanjenje vrijednosti dugotrajne materijalne imovine",
+   "lado": "expense",
+   "page": 18,
+   "section": "#### Rashodi amortizacije",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizacija ostale nematerijalne imovine (bez registracija igrača)",
+   "lado": "expense",
+   "page": 18,
+   "section": "#### Rashodi amortizacije",
+   "choice": "other_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Smanjenje vrijednosti i amortizacija - Ukupno (bez registracija igrača)",
+   "lado": "expense",
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi održavanja utakmica",
+   "lado": "expense",
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi sponzorstva i oglašavanja",
+   "lado": "expense",
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi komercijalnih aktivnosti",
+   "lado": "expense",
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi posrednika",
+   "lado": "expense",
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi za nenogometne djelatnosti",
+   "lado": "expense",
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali nerazvrstani poslovni rashodi",
+   "lado": "expense",
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Poslovni rezultat (bez registracije igrača)",
+   "lado": null,
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "other_expenses",
+   "confidence": 0.34,
+   "desdeCache": true
+  },
+  {
+   "label": "Prava emitiranja - Nacionalna natjecanja",
+   "lado": "revenue",
+   "page": 10,
+   "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1105
+  },
+  {
+   "label": "Uefina klupska natjecanja - solidarne uplate",
+   "lado": null,
+   "page": 10,
+   "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihodi od ulaznica - Članarine",
+   "lado": "revenue",
+   "page": 10,
+   "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+   "choice": "member_dues",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "member_dues",
+     0.96
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ],
+    [
+     "season_tickets",
+     0.01
+    ]
+   ],
+   "tokens": 1084
+  },
+  {
+   "label": "Prihodi od ulaznica - Nacionalna natjecanja",
+   "lado": "revenue",
+   "page": 10,
+   "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1157
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Reklamni panoi oko terena za igru",
+   "lado": "revenue",
+   "page": 10,
+   "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1120
+  },
+  {
+   "label": "Prihodi od ulaznica - godišnje ulaznice",
+   "lado": "revenue",
+   "page": 10,
+   "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+   "choice": "season_tickets",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "season_tickets",
+     0.97
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1084
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Glavni sponzor",
+   "lado": "revenue",
+   "page": 10,
+   "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1141
+  },
+  {
+   "label": "Plaće ostalih zaposlenika",
+   "lado": null,
+   "page": 11,
+   "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "wages_squad",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1516
+  },
+  {
+   "label": "Komercijalni prihodi - Prodaja proizvoda",
+   "lado": "revenue",
+   "page": 10,
+   "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1130
+  },
+  {
+   "label": "Donacije i dotacije ili drugi iznosi od države i lokalne samouprave",
+   "lado": null,
+   "page": 10,
+   "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1576
+  },
+  {
+   "label": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
+   "lado": null,
+   "page": 10,
+   "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1582
+  },
+  {
+   "label": "Financijski prihodi",
+   "lado": "revenue",
+   "page": 12,
+   "section": "RAČUN DOBITI I GUBITKA",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Prihodi od raspolaganja registracijama igrača",
+   "lado": "revenue",
+   "page": 12,
+   "section": "RAČUN DOBITI I GUBITKA",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Troškovi za stjecanje registracija igrača",
+   "lado": "expense",
+   "page": 12,
+   "section": "RAČUN DOBITI I GUBITKA",
+   "choice": "player_amortisation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "player_amortisation",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Financijski rashodi",
+   "lado": "expense",
+   "page": 12,
+   "section": "RAČUN DOBITI I GUBITKA",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 997
+  }
+ ]
+}

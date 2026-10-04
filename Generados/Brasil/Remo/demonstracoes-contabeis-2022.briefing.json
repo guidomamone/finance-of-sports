@@ -1,0 +1,2093 @@
+{
+  "club": "remo",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Remo/demonstracoes-contabeis-2022.md",
+  "generatedAt": "2026-09-30T21:53:53.021Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 211,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 20,
+  "relevantTableCount": 3,
+  "tables": [
+    {
+      "page": 2,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Índice",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Balanço",
+          "values": [
+            "patrimonial...3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demonstração do",
+          "values": [
+            "resultado...5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demonstração do fluxo de",
+          "values": [
+            "caixa...7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demonstração das mutações do patrimônio",
+          "values": [
+            "social...9"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Balanço Patrimonial",
+      "columns": [
+        "",
+        "Nota explicativa",
+        "31/12/2022",
+        "31/12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ativo",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "",
+            "1.603.318",
+            "9.850.750"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caixa e Equivalentes de Caixa",
+          "values": [
+            "4",
+            "284.456",
+            "753.395"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "",
+            "133.964",
+            "24.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos a receber",
+          "values": [
+            "",
+            "840.351",
+            "8.681.265"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos",
+          "values": [
+            "",
+            "344.547",
+            "325.943"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos a recuperar",
+          "values": [
+            "",
+            "-",
+            "65.347"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "",
+            "181.153.408",
+            "188.886.361"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "5",
+            "202.800.102",
+            "202.600.122"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "( - ) Depreciação acumulada",
+          "values": [
+            "",
+            "(23.136.762)",
+            "(14.939.932)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "6",
+            "1.490.069",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas em formação",
+          "values": [
+            "",
+            "136.069",
+            "25.672"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de imagem",
+          "values": [
+            "",
+            "5.527.100",
+            "3.891.300"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "( - ) Amortização acumulada",
+          "values": [
+            "",
+            "(4.173.100)",
+            "(2.690.800)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo",
+          "values": [
+            "",
+            "182.756.727",
+            "198.737.111"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "columns": [
+        "",
+        "",
+        "31/12/2022",
+        "31/12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Passivo e patrimônio líquido",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "",
+            "16.752.848",
+            "14.787.909"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fornecedores e outras obrigações",
+          "values": [
+            "7",
+            "777.265",
+            "800.519"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos retidos a recolher",
+          "values": [
+            "",
+            "609",
+            "798"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas e previdenciárias",
+          "values": [
+            "",
+            "6.052.227",
+            "7.884.216"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de imagem a pagar",
+          "values": [
+            "",
+            "2.759.630",
+            "1.156.080"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos",
+          "values": [
+            "8",
+            "684.671",
+            "687.863"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "( - ) Encargos a transcorrer",
+          "values": [
+            "",
+            "(173.496)",
+            "(285.397)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingências Federais",
+          "values": [
+            "10",
+            "3.568.229",
+            "1.937.120"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "9",
+            "2.928.154",
+            "2.216.362"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos recebidos",
+          "values": [
+            "",
+            "125.770",
+            "353.862"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras obrigações",
+          "values": [
+            "",
+            "29.788",
+            "36.486"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "",
+            "10.803.932",
+            "8.174.723"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Divida ativa",
+          "values": [
+            "",
+            "3.086.996",
+            "72.875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos",
+          "values": [
+            "8",
+            "8.127.428",
+            "8.548.036"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "( - ) Encargos a transcorrer",
+          "values": [
+            "",
+            "(410.492)",
+            "(446.187)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimônio líquido",
+          "values": [
+            "",
+            "155.199.948",
+            "175.774.480"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Patrimônio social",
+          "values": [
+            "9",
+            "155.199.948",
+            "175.774.480"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de reavaliação patrimonial",
+          "values": [
+            "",
+            "142.808.792",
+            "142.808.792"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávits/Déficit Acumulado",
+          "values": [
+            "",
+            "22.151.844",
+            "11.996.568"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávits/Déficit do exercício",
+          "values": [
+            "",
+            "(9.760.688)",
+            "22.884.501"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de exercícios anteriores",
+          "values": [
+            "",
+            "-",
+            "(1.915.381)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo e do patrimônio líquido",
+          "values": [
+            "",
+            "182.756.727",
+            "198.737.111"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+      "columns": [
+        "",
+        "Nota explicativa",
+        "31/12/2022",
+        "31/12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Receita Bruta Operacional",
+          "values": [
+            "13",
+            "20.328.785",
+            "42.957.262"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Receita de Alugueis",
+          "values": [
+            "",
+            "798.804",
+            "757.191"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita de Estacionamento",
+          "values": [
+            "",
+            "156.767",
+            "54.236"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita de Bilheteria",
+          "values": [
+            "",
+            "5.721.510",
+            "9.533.278"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita Royalties / Lojas",
+          "values": [
+            "",
+            "1.620.263",
+            "3.209.878"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita Patrimoniais/Sociais",
+          "values": [
+            "",
+            "1.413.955",
+            "831.010"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita da Atividade Social",
+          "values": [
+            "",
+            "991.544",
+            "7.212.591"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita Programa Timemania",
+          "values": [
+            "",
+            "535.692",
+            "604.689"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita Programa Socio Torcedor",
+          "values": [
+            "",
+            "1.552.399",
+            "882.386"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita de Patrocínio / Marketing",
+          "values": [
+            "",
+            "5.311.429",
+            "4.350.110"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita de Direito de Transmissão",
+          "values": [
+            "",
+            "-",
+            "46.421"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas Royalties / Licenciados",
+          "values": [
+            "",
+            "177.819",
+            "1.627.466"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita com Vendas Materiais",
+          "values": [
+            "",
+            "118.650",
+            "133.010"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demais Receitas",
+          "values": [
+            "",
+            "906.122",
+            "224.168"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita com redução juros/multa - Perse",
+          "values": [
+            "",
+            "-",
+            "13.490.829"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas Repasse de Direitos Federativos",
+          "values": [
+            "",
+            "687.391",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita de Premiações",
+          "values": [
+            "",
+            "322.245",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas Financeiras",
+          "values": [
+            "",
+            "14.197",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita Líquida",
+          "values": [
+            "",
+            "20.328.785",
+            "42.957.262"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Resultado Bruto",
+          "values": [
+            "",
+            "20.328.785",
+            "42.957.262"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Despesas Administrativas",
+          "values": [
+            "",
+            "16.926.409",
+            "5.609.784"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Despesas Administrativas",
+          "values": [
+            "12",
+            "436.843",
+            "385.967"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comissões",
+          "values": [
+            "",
+            "30.512",
+            "23.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiais",
+          "values": [
+            "",
+            "69.278",
+            "134.117"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Manutenção",
+          "values": [
+            "12",
+            "1.229.071",
+            "880.265"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com eventos esportivos",
+          "values": [
+            "",
+            "6.950",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Programa Sócio Torcedor",
+          "values": [
+            "",
+            "-",
+            "36.547"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo com Contratação",
+          "values": [
+            "",
+            "122.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviço de Terceiros",
+          "values": [
+            "12",
+            "2.700.725",
+            "2.427.815"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiais esportivos e premiações",
+          "values": [
+            "",
+            "103.753",
+            "101.857"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização dos Débitos Trabalhistas",
+          "values": [
+            "",
+            "53.896",
+            "3.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com tributos",
+          "values": [
+            "",
+            "18.628",
+            "173.537"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com depreciação e amortização",
+          "values": [
+            "",
+            "8.196.830",
+            "75.833"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizações - Direitos Econômicos",
+          "values": [
+            "",
+            "1.482.300",
+            "707.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesa com Contingências",
+          "values": [
+            "",
+            "1.631.109",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Despesas",
+          "values": [
+            "",
+            "844.514",
+            "660.346"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 6,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "columns": [
+        "Despesas operacionais",
+        "",
+        "12.756.654",
+        "14.268.270"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Despesas com Pessoal",
+          "values": [
+            "",
+            "6.436.387",
+            "6.537.288"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de imagem",
+          "values": [
+            "",
+            "2.686.106",
+            "3.926.946"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com Jogos e Competições",
+          "values": [
+            "10",
+            "2.624.685",
+            "3.014.827"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Programa Socio Torcedor",
+          "values": [
+            "10",
+            "549.080",
+            "321.113"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com Passagens e Hospedagens",
+          "values": [
+            "",
+            "460.396",
+            "468.095"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado antes do resultado financeiro",
+          "values": [
+            "",
+            "-9.354.278",
+            "23.079.208"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Despesas financeiras",
+          "values": [
+            "",
+            "406.410",
+            "250.527"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit/Déficit do exercício",
+          "values": [
+            "",
+            "-9.760.688",
+            "22.828.682"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 7,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixas",
+      "columns": [
+        "",
+        "2022",
+        "2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "(=) Lucro/Prejuízo do exercício",
+          "values": [
+            "(9.760.688)",
+            "26.742.042"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Encargos de empréstimos e financiamentos",
+          "values": [
+            "446.187",
+            "446.187"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes de exercícios anteriores",
+          "values": [
+            "(11.158.987)",
+            "431.031"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação e amortização",
+          "values": [
+            "9.679.130",
+            "(675.080)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucro ajustado",
+          "values": [
+            "(10.794.358)",
+            "26.944.180"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aumento e diminuição das contas de ativo e passivo",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aumento/Redução no contas a receber",
+          "values": [
+            "7.731.749",
+            "(7.141.977)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução nos impostos a recuperar",
+          "values": [
+            "-",
+            "(6.150)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução nos adiantamentos",
+          "values": [
+            "(18.604)",
+            "262.184"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução em fornecedores",
+          "values": [
+            "(23.253)",
+            "(271.598)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução em obrigações trabalhistas",
+          "values": [
+            "(1.723.279)",
+            "(11.090.798)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução no direito de imagem apagar",
+          "values": [
+            "1.603.550",
+            "1.004.820"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução em obrigações tributárias",
+          "values": [
+            "(189)",
+            "72.875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução adiantamentos recebidos",
+          "values": [
+            "(228.092)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução em Contingências Federais",
+          "values": [
+            "1.631.109",
+            "1.937.120"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução em outras contas a pagar",
+          "values": [
+            "2.586.816",
+            "(4.960.788)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido das atividades operacionais",
+          "values": [
+            "8.545.686",
+            "(20.194.311)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades de investimentos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aquisição de Imobilizado",
+          "values": [
+            "(199.980)",
+            "(3.250.000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investimento em Intangível",
+          "values": [
+            "(1.746.198)",
+            "(3.372.972)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido das atividades de investimentos",
+          "values": [
+            "(1.946.178)",
+            "(6.622.972)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades de financiamentos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "711.790",
+            "281.695"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido das atividades de financiamentos",
+          "values": [
+            "711.790",
+            "712.726"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "columns": [
+        "Aumento/(redução) líquido de caixa",
+        "(468.939)",
+        "408.593"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caixa do início do período",
+          "values": [
+            "753.395",
+            "344.803"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa no final do período",
+          "values": [
+            "284.453",
+            "753.395"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução líquido de caixa",
+          "values": [
+            "(468.939)",
+            "408.593"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração das mutações do patrimônio social",
+      "columns": [
+        "Descrição",
+        "PATRIMÔNIO SOCIAL",
+        "DÉFICITS / SUPERÁVITS ACUMULADOS",
+        "DÉFICITS / SUPERÁVITS DO EXERCÍCIO",
+        "AJUSTES DE REAVALIAÇÕES PATRIMONIAIS",
+        "AJUSTE DE EXERCÍCIOS ANTERIORES",
+        "TOTAIS"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2020",
+          "values": [
+            "46.400.100",
+            "(38.095.547)",
+            "(2.064.503)",
+            "0",
+            "0",
+            "6.240.050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes de Reavaliações Patrimoniais",
+          "values": [
+            "(46.400.100)",
+            "38.095.547",
+            "2.064.503",
+            "142.808.792",
+            "",
+            "136.568.742"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit do Exercício",
+          "values": [
+            "",
+            "",
+            "34.881.069",
+            "",
+            "",
+            "34.881.069"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de exercícios anteriores",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "(1.915.380)",
+            "(1.915.380)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2021",
+          "values": [
+            "0",
+            "0",
+            "34.881.069",
+            "142.808.792",
+            "(1.915.380)",
+            "175.774.481"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes de Reavaliações Patrimoniais",
+          "values": [
+            "",
+            "",
+            "",
+            "(2.424.662)",
+            "",
+            "(2.424.662)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit do Exercício",
+          "values": [
+            "",
+            "",
+            "(9.760.688)",
+            "-",
+            "",
+            "(9.760.688)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit Acumulado",
+          "values": [
+            "",
+            "(8.389.182)",
+            "",
+            "",
+            "",
+            "(8.389.182)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2022",
+          "values": [
+            "0",
+            "(8.389.182)",
+            "25.120.381",
+            "140.384.130",
+            "0",
+            "155.199.949"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / ### 3.11.3 SUPERÁVITS OU DÉFICITS DO EXERCÍCIO / ### 3.11.4 RESERVAS / ## 4. Caixa e equivalentes de caixa",
+      "columns": [
+        "Descrição",
+        "12/2022",
+        "12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caixa",
+          "values": [
+            "206.406",
+            "221.795"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos e Aplicações Financeiras",
+          "values": [
+            "78.050",
+            "531.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "284.456",
+            "753.395"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "columns": [
+        "Descrição",
+        "12/2022",
+        "12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "219.755",
+            "219.755"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos, Máquinas e Instalações",
+          "values": [
+            "999.852",
+            "807.296"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "veículos",
+          "values": [
+            "191.800",
+            "191.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Utensílios",
+          "values": [
+            "165.642",
+            "150.918"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equip. de Processamento de Dados",
+          "values": [
+            "43.190",
+            "161.418"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sede Social",
+          "values": [
+            "58.733.040",
+            "587.33.040"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Centro de Treinamento Clube do Remo",
+          "values": [
+            "3.250.000",
+            "3.250.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estádio Baenão",
+          "values": [
+            "133.800.823",
+            "133.800.823"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sede Náutica",
+          "values": [
+            "5.396.000",
+            "5.396.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Depreciação Acumulada",
+          "values": [
+            "23.136.762",
+            "14.939.932"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do imobilizado líquido",
+          "values": [
+            "179.663.339",
+            "187.660.189"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "## 6. Intangível / ### 6.1 Atletas em Formação",
+      "columns": [
+        "Descrição",
+        "12/2022",
+        "12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ajuda de Custo",
+          "values": [
+            "83.402",
+            "17.860"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hospedagem",
+          "values": [
+            "4.680",
+            "2.180"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiais Esportivos",
+          "values": [
+            "1.706",
+            "52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alimentação",
+          "values": [
+            "39.299",
+            "4.817"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Assistência e Materiais Médicos",
+          "values": [
+            "6.982",
+            "762"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / ## 6.2 Direito de Imagem",
+      "columns": [
+        "Descrição",
+        "12/2022",
+        "12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Direito de Imagem com o Clube",
+          "values": [
+            "5.527.100",
+            "3.891.300"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Amortização Direito de Imagem",
+          "values": [
+            "4.173.100",
+            "2.690.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de Imagem Líquido com o Clube",
+          "values": [
+            "1.490.069",
+            "1.226.172"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "## 7. Fornecedores",
+      "columns": [
+        "Descrição",
+        "12/2022",
+        "12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "FORNECEDORES DIVERSOS",
+          "values": [
+            "777.265",
+            "800.519"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total dos fornecedores",
+          "values": [
+            "777.265",
+            "800.519"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "## 8. Tributos Parcelados",
+      "columns": [
+        "Descrição Curto Prazo",
+        "12/2022",
+        "12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Perse Previdenciário",
+          "values": [
+            "329.272",
+            "463.566"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Perse Demais Débitos",
+          "values": [
+            "186.257",
+            "121.147"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Perse Repactuação",
+          "values": [
+            "158.615",
+            "103.150"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transação Excepcional",
+          "values": [
+            "10.527",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Encargos a Transcorrer",
+          "values": [
+            "173.496",
+            "285.397"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "511.175",
+            "402.466"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "columns": [
+        "Descrição Longo Prazo",
+        "12/2022",
+        "12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Perse Previdenciário",
+          "values": [
+            "5.801.279",
+            "6.011.179"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Perse Demais Débitos",
+          "values": [
+            "1.225.628",
+            "1.370.008"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Perse Repactuação",
+          "values": [
+            "1.043.871",
+            "1.166.848"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transação Excepcional",
+          "values": [
+            "56.651",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Encargos a Transcorrer",
+          "values": [
+            "410.492",
+            "446.187"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "7.716.936",
+            "8.994.223"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": "## 9. Empréstimos Contraídos",
+      "columns": [
+        "Descrição",
+        "31/12/2022",
+        "31/12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Hamilton Dias Bordalo",
+          "values": [
+            "241.069",
+            "271.069"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Milton Campos",
+          "values": [
+            "140.242",
+            "170.242"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rafael Dantas",
+          "values": [
+            "175.200",
+            "177.100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Meu Bilhete",
+          "values": [
+            "553.294",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATM Factoring LTDA",
+          "values": [
+            "125.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "1.234.805",
+            "556.511"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": "## 10. Contingências",
+      "columns": [
+        "Descrição",
+        "31/12/2022",
+        "31/12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Contingências Federais",
+          "values": [
+            "3.568.228",
+            "1.937.120"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "3.568.228",
+            "1.937.120"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / ## 11. Patrimônio Social",
+      "columns": [
+        "Descrição",
+        "12/2022",
+        "12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ajuste de Avaliações Patrimonial",
+          "values": [
+            "142.808.792",
+            "142.808.792"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Défict/Superávits do Exercício",
+          "values": [
+            "(9.760.688)",
+            "34.881.069"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Exercícios Anteriores",
+          "values": [
+            "-",
+            "(1.915.381)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "155.199.948",
+            "175.774.480"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "## 12. Despesas Operacionais",
+      "columns": [
+        "Descrição",
+        "12/2022",
+        "12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Serviço de Terceiros",
+          "values": [
+            "2.706.775",
+            "2.427.814"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com Pessoal",
+          "values": [
+            "6.739.255",
+            "6.537.288"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de imagem",
+          "values": [
+            "2.686.106",
+            "3.926.946"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jogos e Competições",
+          "values": [
+            "2.630.685",
+            "3.014.827"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Manutenção",
+          "values": [
+            "1.229.071",
+            "880.264"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "15.993.891",
+            "16.787.142"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "columns": [
+        "Descrição",
+        "12/2022",
+        "12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Receitas Operacionais",
+          "values": [
+            "955.570",
+            "811.427"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas Ordinárias",
+          "values": [
+            "19.373.215",
+            "28.444.338"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Incentivos Fiscais",
+          "values": [
+            "-",
+            "13.714.997"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "20.328.785",
+            "42.970.762"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 3,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Balanço Patrimonial",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do ativo",
+      "target": "182.756.727",
+      "addendCount": 12,
+      "closes": false,
+      "diff": "184246795"
+    },
+    {
+      "page": 3,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Balanço Patrimonial",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do ativo",
+      "target": "198.737.111",
+      "addendCount": 2,
+      "how": "solo-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do passivo e do patrimônio líquido",
+      "target": "182.756.727",
+      "addendCount": 20,
+      "closes": false,
+      "diff": "337956676"
+    },
+    {
+      "page": 4,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do passivo e do patrimônio líquido",
+      "target": "198.737.111",
+      "addendCount": 21,
+      "closes": false,
+      "diff": "374511594"
+    },
+    {
+      "page": 19,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do imobilizado líquido",
+      "target": "179.663.339",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "46273525"
+    },
+    {
+      "page": 19,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do imobilizado líquido",
+      "target": "187.660.189",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "29990793"
+    },
+    {
+      "page": 20,
+      "section": "## 7. Fornecedores",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total dos fornecedores",
+      "target": "777.265",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "## 7. Fornecedores",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total dos fornecedores",
+      "target": "800.519",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "## 8. Tributos Parcelados",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "511.175",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "346992"
+    },
+    {
+      "page": 20,
+      "section": "## 8. Tributos Parcelados",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "402.466",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "570794"
+    },
+    {
+      "page": 21,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "7.716.936",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "820985"
+    },
+    {
+      "page": 21,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "8.994.223",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 4 rubros enteros)"
+    },
+    {
+      "page": 21,
+      "section": "## 9. Empréstimos Contraídos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "1.234.805",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "## 9. Empréstimos Contraídos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "556.511",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "61900"
+    },
+    {
+      "page": 21,
+      "section": "## 10. Contingências",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "3.568.228",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "## 10. Contingências",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "1.937.120",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / ## 11. Patrimônio Social",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "155.199.948",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-22151844"
+    },
+    {
+      "page": 22,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / ## 11. Patrimônio Social",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "175.774.480",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "## 12. Despesas Operacionais",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "15.993.891",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-1999"
+    },
+    {
+      "page": 22,
+      "section": "## 12. Despesas Operacionais",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "16.787.142",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "-3",
+      "how": "redondeo (diferencia -3 en 5 rubros enteros)"
+    },
+    {
+      "page": 23,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "20.328.785",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "42.970.762",
+      "addendCount": 3,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/remo-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"remo\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "1 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "10 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ]
+}

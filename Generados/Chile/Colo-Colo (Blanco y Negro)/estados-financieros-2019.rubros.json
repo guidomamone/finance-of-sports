@@ -1,0 +1,334 @@
+{
+  "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2019.md",
+  "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2019.pdf",
+  "club": "colocolo-cl",
+  "year": 2019,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:56:38.543Z",
+  "tieOuts": {
+    "cierran": 27,
+    "noCierran": 29
+  },
+  "warnings": [
+    "3 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "26 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 28,
+    "notasUsadas": []
+  },
+  "ladoConocido": 23,
+  "rubros": [
+    {
+      "label": "Servicios básicos",
+      "lado": "expense",
+      "page": 71,
+      "section": "0                -",
+      "values": [
+        199.472
+      ],
+      "origen": "estado 61",
+      "glosa": "Servicios básicos"
+    },
+    {
+      "label": "Asesorías",
+      "lado": "expense",
+      "page": 71,
+      "section": "0                -",
+      "values": [
+        536.489
+      ],
+      "origen": "estado 61",
+      "glosa": "Asesorías"
+    },
+    {
+      "label": "Depreciaciones",
+      "lado": "expense",
+      "page": 71,
+      "section": "0                -",
+      "values": [
+        500.281
+      ],
+      "origen": "estado 61",
+      "glosa": "Depreciaciones"
+    },
+    {
+      "label": "Gastos Legales",
+      "lado": "expense",
+      "page": 71,
+      "section": "0                -",
+      "values": [
+        221.645
+      ],
+      "origen": "estado 61",
+      "glosa": "Gastos Legales"
+    },
+    {
+      "label": "Mantenciones",
+      "lado": "expense",
+      "page": 71,
+      "section": "0                -",
+      "values": [
+        13.344
+      ],
+      "origen": "estado 61",
+      "glosa": "Mantenciones"
+    },
+    {
+      "label": "Remuneración administración",
+      "lado": "expense",
+      "page": 71,
+      "section": "0                -",
+      "values": [
+        1613.995
+      ],
+      "origen": "estado 61",
+      "glosa": "Remuneración administración"
+    },
+    {
+      "label": "Otros gastos de administración",
+      "lado": "expense",
+      "page": 71,
+      "section": "0                -",
+      "values": [
+        1121.4
+      ],
+      "origen": "estado 61",
+      "glosa": "Otros gastos de administración"
+    },
+    {
+      "label": "Costo de ventas jugadores",
+      "lado": "expense",
+      "page": 71,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 24.   COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        779.023
+      ],
+      "origen": "estado 60",
+      "glosa": "Costo de ventas jugadores"
+    },
+    {
+      "label": "Remuneración plantel profesional y cuerpo técnico",
+      "lado": "expense",
+      "page": 71,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 24.   COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        8601.767
+      ],
+      "origen": "estado 60",
+      "glosa": "Remuneración plantel profesional y cuerpo técnico"
+    },
+    {
+      "label": "Amortización Activos en concesión",
+      "lado": "expense",
+      "page": 71,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 24.   COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        669.891
+      ],
+      "origen": "estado 60",
+      "glosa": "Amortización Activos en concesión"
+    },
+    {
+      "label": "Amortización pases jugadores profesionales",
+      "lado": "expense",
+      "page": 71,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 24.   COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2321.181
+      ],
+      "origen": "estado 60",
+      "glosa": "Amortización pases jugadores profesionales"
+    },
+    {
+      "label": "Costos de concentración traslados y otros",
+      "lado": "expense",
+      "page": 71,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 24.   COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2517.969
+      ],
+      "origen": "estado 60",
+      "glosa": "Costos de concentración traslados y otros"
+    },
+    {
+      "label": "Otros costos",
+      "lado": "expense",
+      "page": 71,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 24.   COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        800.321
+      ],
+      "origen": "estado 60",
+      "glosa": "Otros costos"
+    },
+    {
+      "label": "Otros activos financieros",
+      "lado": null,
+      "page": 72,
+      "section": "26.   DIFERENCIA POR TIPO DE CAMBIO",
+      "values": [
+        0.11215
+      ],
+      "origen": "estado 64",
+      "glosa": "Otros activos financieros"
+    },
+    {
+      "label": "Otros activos no financieros",
+      "lado": null,
+      "page": 72,
+      "section": "26.   DIFERENCIA POR TIPO DE CAMBIO",
+      "values": [
+        0.464206
+      ],
+      "origen": "estado 64",
+      "glosa": "Otros activos no financieros"
+    },
+    {
+      "label": "Deudores comerciales y otras cuentas por cobrar",
+      "lado": null,
+      "page": 72,
+      "section": "26.   DIFERENCIA POR TIPO DE CAMBIO",
+      "values": [
+        0.39704
+      ],
+      "origen": "estado 64",
+      "glosa": "Deudores comerciales y otras cuentas por cobrar"
+    },
+    {
+      "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+      "lado": null,
+      "page": 72,
+      "section": "26.   DIFERENCIA POR TIPO DE CAMBIO",
+      "values": [
+        -0.044011
+      ],
+      "origen": "estado 64",
+      "glosa": "Cuentas por pagar comerciales y otras cuentas por pagar"
+    },
+    {
+      "label": "Otros pasivos no financieros",
+      "lado": null,
+      "page": 72,
+      "section": "26.   DIFERENCIA POR TIPO DE CAMBIO",
+      "values": [
+        -0.703915
+      ],
+      "origen": "estado 64",
+      "glosa": "Otros pasivos no financieros"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 71,
+      "section": "(0)                   -",
+      "values": [
+        111.073
+      ],
+      "origen": "estado 62",
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Gastos financieros",
+      "lado": "expense",
+      "page": 71,
+      "section": "(0)                   -",
+      "values": [
+        510.377
+      ],
+      "origen": "estado 62",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Ingresos por recaudaciones",
+      "lado": "revenue",
+      "page": 70,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 23.   INGRESOS DE ACTIVIDADES ORDINARIAS Y OTROS INGRESOS POR FUNCION",
+      "values": [
+        3686.505
+      ],
+      "origen": "estado 57",
+      "glosa": "Ingresos por recaudaciones"
+    },
+    {
+      "label": "Ingresos por venta de jugadores comprado a terceros",
+      "lado": "revenue",
+      "page": 70,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 23.   INGRESOS DE ACTIVIDADES ORDINARIAS Y OTROS INGRESOS POR FUNCION",
+      "values": [
+        218.497
+      ],
+      "origen": "estado 57",
+      "glosa": "Ingresos por venta de jugadores comprado a terceros"
+    },
+    {
+      "label": "Ingresos por venta de jugadores formados por el Club",
+      "lado": "revenue",
+      "page": 70,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 23.   INGRESOS DE ACTIVIDADES ORDINARIAS Y OTROS INGRESOS POR FUNCION",
+      "values": [
+        4139.636
+      ],
+      "origen": "estado 57",
+      "glosa": "Ingresos por venta de jugadores formados por el Club"
+    },
+    {
+      "label": "Ingresos por arriendo/préstamos pase de jugadores",
+      "lado": "revenue",
+      "page": 70,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 23.   INGRESOS DE ACTIVIDADES ORDINARIAS Y OTROS INGRESOS POR FUNCION",
+      "values": [
+        16.681
+      ],
+      "origen": "estado 57",
+      "glosa": "Ingresos por arriendo/préstamos pase de jugadores"
+    },
+    {
+      "label": "Ingresos por publicidad",
+      "lado": "revenue",
+      "page": 70,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 23.   INGRESOS DE ACTIVIDADES ORDINARIAS Y OTROS INGRESOS POR FUNCION",
+      "values": [
+        9805.441
+      ],
+      "origen": "estado 57",
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 70,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 23.   INGRESOS DE ACTIVIDADES ORDINARIAS Y OTROS INGRESOS POR FUNCION",
+      "values": [
+        29.169
+      ],
+      "origen": "estado 57",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Scotiabank Fondo Mutuo Pesos",
+      "lado": "revenue",
+      "page": 40,
+      "section": "Institución       Tipo          Moneda          N° Cuotas        Cuota       Monto / Scotiabank     Fondo Mutuo        USD               7835,158      128,1261    751.651 / Larraín Vial   Fondo Mutuo        Pesos                 2,6478   2507,2244           6 / Valor / Institución       Tipo          Moneda          N° Cuotas        Cuota       Monto",
+      "values": [
+        0.266574
+      ],
+      "origen": "estado 24",
+      "glosa": "Scotiabank Fondo Mutuo Pesos"
+    },
+    {
+      "label": "Scotiabank Fondo Mutuo Pesos",
+      "lado": "revenue",
+      "page": 40,
+      "section": "Institución       Tipo          Moneda          N° Cuotas        Cuota       Monto / Scotiabank     Fondo Mutuo        USD               7835,158      128,1261    751.651 / Larraín Vial   Fondo Mutuo        Pesos                 2,6478   2507,2244           6 / Valor / Institución       Tipo          Moneda          N° Cuotas        Cuota       Monto",
+      "values": [
+        0.213259
+      ],
+      "origen": "estado 24",
+      "glosa": "Scotiabank Fondo Mutuo Pesos"
+    }
+  ]
+}

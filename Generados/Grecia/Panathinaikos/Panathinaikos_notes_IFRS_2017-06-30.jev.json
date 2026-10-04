@@ -1,0 +1,287 @@
+{
+ "md": "Clubes/Grecia/Panathinaikos/Panathinaikos_notes_IFRS_2017-06-30.md",
+ "generatedAt": "2026-09-30T22:49:22.553Z",
+ "rubrosHuella": "832fcffd20faad844fd708d460c7e86685d47721",
+ "rubros": [
+  {
+   "label": "Αμοιβές τρίτων",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Επισκευές και συντηρήσεις",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Μισθώματα",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα τέλεσης αγώνων",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα ανταποδοτικών χορηγιών και διαφήμισης",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Διάφορα έξοδα Α' ομάδας και Ακαδημίας",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα ταξιδίων και μεταφορών",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "match_organisation_expense",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα Αυξήσεων Μετοχικού Κεφαλαίου",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Ασφάλιστρα",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Δαπάνες υπηρεσιών κοινής ωφέλειας",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα προηγούμενων χρήσεων",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπές προβλέψεις",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Έκτακτα και ανόργανα έξοδα",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "exceptional_items",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιποί φόροι – τέλη",
+   "lado": "expense",
+   "page": 75,
+   "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Συνεισφορά αλληλεγγύης ομάδων",
+   "lado": "revenue",
+   "page": 73,
+   "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Ειδικές επιχορηγήσεις",
+   "lado": "revenue",
+   "page": 73,
+   "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από μισθώματα",
+   "lado": "revenue",
+   "page": 73,
+   "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "stadium_other",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από αχρησιμοποίητες προβλέψεις",
+   "lado": "revenue",
+   "page": 73,
+   "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από τακτοποίηση υποχρεώσεων",
+   "lado": "revenue",
+   "page": 73,
+   "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά παρεπόμενα έσοδα",
+   "lado": "revenue",
+   "page": 73,
+   "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Έκτακτα και ανόργανα έσοδα",
+   "lado": "revenue",
+   "page": 73,
+   "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Προεξόφληση από αποτίμηση υποχρεώσεων",
+   "lado": "revenue",
+   "page": 76,
+   "section": "Τα χρηματοοικονομικά έσοδα του Ομίλου και της Εταιρείας αναλύονται ως εξής:",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Τόκοι χορηγηθέντων δανείων",
+   "lado": "revenue",
+   "page": 76,
+   "section": "Τα χρηματοοικονομικά έσοδα του Ομίλου και της Εταιρείας αναλύονται ως εξής:",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα τόκων τραπεζών",
+   "lado": "revenue",
+   "page": 76,
+   "section": "Τα χρηματοοικονομικά έσοδα του Ομίλου και της Εταιρείας αναλύονται ως εξής:",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Αναβαλλόμενος Φόρος",
+   "lado": "expense",
+   "page": 77,
+   "section": "## 29 ΔΑΠΑΝΕΣ ΦΟΡΟΛΟΓΙΑΣ",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Αποσβέσεις εγγραφών ποδοσφαιριστών",
+   "lado": "revenue",
+   "page": 75,
+   "section": "## 26 ΚΕΡΔΟΣ / (ΖΗΜΙΑ) ΑΠΟ ΠΩΛΗΣΗ ΑΥΛΩΝ ΠΕΡΙΟΥΣΙΑΚΩΝ ΣΤΟΙΧΕΙΩΝ – ΠΟΔΟΣΦΑΙΡΙΣΤΕΣ",
+   "choice": "player_sales",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "player_sales",
+     0.51
+    ],
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 1103
+  },
+  {
+   "label": "Λοιπά συνολικά έσοδα / (έξοδα) χρήσης μετά φόρων",
+   "lado": "expense",
+   "page": 16,
+   "section": "## Κατάσταση Συνολικού Εισοδήματος (συνέχεια)",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1146
+  }
+ ]
+}

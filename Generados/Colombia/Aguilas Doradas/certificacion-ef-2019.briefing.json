@@ -1,0 +1,27 @@
+{
+  "club": "aguilas-doradas",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Aguilas Doradas/certificacion-ef-2019.md",
+  "generatedAt": "2026-09-30T21:57:35.133Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 8,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 0,
+  "relevantTableCount": 0,
+  "tables": [],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/aguilas-doradas-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"aguilas-doradas\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

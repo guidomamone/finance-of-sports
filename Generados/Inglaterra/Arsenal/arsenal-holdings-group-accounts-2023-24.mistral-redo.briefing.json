@@ -1,0 +1,4456 @@
+{
+  "club": "arsenal-gb",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2023-24.mistral-redo.md",
+  "generatedAt": "2026-09-30T01:45:58.702Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 7,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": true,
+  "tableCount": 49,
+  "relevantTableCount": 9,
+  "tables": [
+    {
+      "page": 3,
+      "section": "# ARSENAL HOLDINGS LIMITED / ## STRATEGIC REPORT / # Principal Activity and Strategy / # Results for the year / # Review of the business",
+      "columns": [
+        "",
+        "2024 £m",
+        "2023 £m"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Adjusted operating profit from football (see note 2 on page 30)",
+          "values": [
+            "138.2",
+            "116.1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Exceptional costs (player impairment)",
+          "values": [
+            "-",
+            "(18.1)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortisation and impairment of player registrations (non-exceptional)",
+          "values": [
+            "(171.1)",
+            "(139.1)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profit on sale of player registrations / Loan of players",
+          "values": [
+            "52.4",
+            "12.2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Property trading profits",
+          "values": [
+            "1.3",
+            "0.8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net interest costs",
+          "values": [
+            "(18.4)",
+            "(6.2)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other",
+          "values": [
+            "(20.1)",
+            "(17.8)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Loss before tax",
+          "values": [
+            "(17.7)",
+            "(52.1)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Loss before tax (excluding exceptional costs)",
+          "values": [
+            "(17.7)",
+            "(34.0)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "# ARSENAL HOLDINGS LIMITED / ## STRATEGIC REPORT",
+      "columns": [
+        "Strategic oversight",
+        "Board Directors"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Managing Director"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Operational Governance Committee"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Management level",
+          "values": [
+            "Chief Operations Officer"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Director of ESG"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Executive Committee"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "### Risk Management / ### Climate-related risks and opportunities",
+      "columns": [
+        "Risk Category",
+        "",
+        "Risk Title",
+        "Risk Description",
+        "Gross risk (before consideration of existing controls)",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "Likelihood",
+            "Impact",
+            "Immediacy"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Physical Risk",
+          "values": [
+            "Acute",
+            "Extreme weather impacting operations",
+            "Shifting weather patterns, increased risk of flooding, drought, fires, extreme heat and other changes resulting from climate change may impact our operations, facilities and player performance, causing significant business disruption and leading to financial loss.",
+            "3 Possible",
+            "4 Major",
+            "Short/medium"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "## ARSENAL HOLDINGS LIMITED / STRATEGIC REPORT",
+      "columns": [
+        "Risk Category",
+        "",
+        "Risk Title",
+        "Risk Description",
+        "Gross risk (before consideration of existing controls)",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "Likelihood",
+            "Impact",
+            "Immediacy"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transitional Risk",
+          "values": [
+            "Policy and Legal",
+            "Non-compliance with environmental regulation or policy",
+            "Arsenal need to understand and comply with all relevant mandatory regulations in the industry and jurisdictions within which we operate. As the club grows and expands into new territories new regulations may become applicable (e.g. CSRD and other non-UK required disclosures). There is also the possibilities of changes to climate-related regulations or requirements by the government or governing bodies including UEFA and the Premier League. Non-compliance may result in fines, reputational damage and impact to our licence to operate.",
+            "3 Possible",
+            "3 Moderate",
+            "Short"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transitional Risk",
+          "values": [
+            "Policy and Legal",
+            "Risk of Carbon Taxation/ Emissions Trading Scheme",
+            "GovUK modelling suggests traded carbon values in the UK could reach £87/tCo2e on a Net-Zero aligned pathway. If applied to Arsenal this could result in financial impact.",
+            "2 Remote",
+            "3 Moderate",
+            "Medium"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transitional Risk",
+          "values": [
+            "Market Risk",
+            "Rise in fuel and energy-related costs",
+            "Volatile energy markets, a roll-back of schemes and grants for low emission energy and increased use of the stadium could increase the consumption and/or price of energy for the club.",
+            "5 Highly Probable",
+            "3 Moderate",
+            "Short"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transitional Risk",
+          "values": [
+            "Market Risk",
+            "Negative perception of offsets",
+            "Arsenal do not participate in the use of offsets. This is following SBTi recommendation to calculate a full emissions baseline year, reduce emissions, and then offset residual emissions where operations cannot be decarbonised. However, we do invest in forestry projects. Even though these are not offset projects, they must be monitored to avoid potential reputational damage.",
+            "3 Possible",
+            "2 Minor",
+            "Short/ Medium"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "# ARSENAL HOLDINGS LIMITED / STRATEGIC REPORT",
+      "columns": [
+        "Risk Category",
+        "",
+        "Risk Title",
+        "Risk Description",
+        "Gross risk (before consideration of existing controls)",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "Likelihood",
+            "Impact",
+            "Immediacy"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transitional Risk",
+          "values": [
+            "Reputational Risk",
+            "Failure to achieve publicly disclosed targets",
+            "Arsenal's failure to show progress towards our 2030 and 2040 reduction and Net Zero targets for both SBTi and UN Sports Climate Action may result in reputational impact.",
+            "2 Remote",
+            "3 Moderate",
+            "Short/ Medium"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transitional Risk",
+          "values": [
+            "Reputational Risk",
+            "Suppliers not aligned with sustainability goals",
+            "Risk of Arsenal's major suppliers not reducing their emissions which would impact our ability to achieve our net-zero goals as one of the largest categories of emissions in our baseline.",
+            "3 Possible",
+            "2 Minor",
+            "Medium/ Long"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "# ARSENAL HOLDINGS LIMITED / ## STRATEGIC REPORT / ### Streamlined Energy and Carbon Reporting Disclosure (SECR)",
+      "columns": [
+        "",
+        "",
+        "2024 GHG Emissions (tCO2e)",
+        "2023 GHG Emissions (tCO2e)",
+        "% Change in Emissions"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Scope 1",
+          "values": [
+            "Stationary combustion",
+            "1,474.20",
+            "1,304.53",
+            "+13%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Mobile combustion",
+            "177.98",
+            "165.18",
+            "+8%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Fugitive emissions",
+            "662.48",
+            "1,015.67",
+            "-35%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Process emissions",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Scope 2",
+          "values": [
+            "Electricity, heat, steam, and cooling emissions",
+            "2,956.22",
+            "2,136.23",
+            "+38%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Scope 3",
+          "values": [
+            "Mobile combustion",
+            "70.31",
+            "69.07",
+            "+2%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Other emissions",
+            "16,746.84",
+            "16,131.53",
+            "+4%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Emissions",
+          "values": [
+            "",
+            "22,088.03",
+            "20,822.22",
+            "+6%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "# ARSENAL HOLDINGS LIMITED / ## STRATEGIC REPORT",
+      "columns": [
+        "",
+        "FY23-24",
+        "FY22-23",
+        "% Change"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Revenue (£m)",
+          "values": [
+            "616.60",
+            "464.6",
+            "32.72%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FTE",
+          "values": [
+            "826",
+            "723",
+            "14.25%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carbon Intensity per £100,000 (tCO2e/£100,000)",
+          "values": [
+            "3.61",
+            "4.48",
+            "-19.51%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carbon Intensity per FTE (tCO2e/FTE)",
+          "values": [
+            "26.93",
+            "28.80",
+            "-6.50%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "# ARSENAL HOLDINGS LIMITED / # CONSOLIDATED PROFIT AND LOSS ACCOUNT",
+      "columns": [
+        "",
+        "Note",
+        "2024",
+        "",
+        "",
+        "2023",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "Operations excluding player trading £'000",
+            "Player trading £'000",
+            "Total £'000",
+            "Operations excluding player trading £'000",
+            "Player trading £'000",
+            "Total £'000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Turnover of the Group including its share of joint ventures",
+          "values": [
+            "",
+            "615,793",
+            "1,374",
+            "617,167",
+            "465,698",
+            "1,457",
+            "467,155"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Share of turnover of joint venture",
+          "values": [
+            "",
+            "(587)",
+            "-",
+            "(587)",
+            "(470)",
+            "-",
+            "(470)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Group turnover",
+          "values": [
+            "3",
+            "615,206",
+            "1,374",
+            "616,580",
+            "465,228",
+            "1,457",
+            "466,685"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operating expenses",
+          "values": [
+            "4",
+            "(493,875)",
+            "(171,099)",
+            "(664,974)",
+            "(364,778)",
+            "(157,151)",
+            "(521,929)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operating profit/(loss)",
+          "values": [
+            "",
+            "121,331",
+            "(169,725)",
+            "(48,394)",
+            "100,450",
+            "(155,694)",
+            "(55,244)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Share of joint venture operating loss",
+          "values": [
+            "",
+            "(1,934)",
+            "-",
+            "(1,934)",
+            "(1,390)",
+            "-",
+            "(1,390)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profit on disposal of player registrations",
+          "values": [
+            "",
+            "-",
+            "51,073",
+            "51,073",
+            "-",
+            "10,732",
+            "10,732"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profit/(loss) before net finance charges",
+          "values": [
+            "",
+            "119,397",
+            "(118,652)",
+            "745",
+            "99,060",
+            "(144,962)",
+            "(45,902)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net finance charges",
+          "values": [
+            "5",
+            "",
+            "",
+            "(18,432)",
+            "",
+            "",
+            "(6,222)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Loss) before taxation",
+          "values": [
+            "",
+            "",
+            "",
+            "(17,687)",
+            "",
+            "",
+            "(52,124)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tax on loss",
+          "values": [
+            "8",
+            "",
+            "",
+            "-",
+            "",
+            "",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Loss) for the financial year",
+          "values": [
+            "",
+            "",
+            "",
+            "(17,687)",
+            "",
+            "",
+            "(52,124)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 22,
+      "section": "# CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME",
+      "columns": [
+        "",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Loss after taxation",
+          "values": [
+            "(17,687)",
+            "(52,124)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Exchange differences",
+          "values": [
+            "(1)",
+            "2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total comprehensive expense",
+          "values": [
+            "(17,688)",
+            "(52,122)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 23,
+      "section": "# ARSENAL HOLDINGS LIMITED / # BALANCE SHEET",
+      "columns": [
+        "",
+        "Note",
+        "Group",
+        "",
+        "Company",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "2024 £'000",
+            "2023 £'000",
+            "2024 £'000",
+            "2023 £'000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fixed assets",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Tangible assets",
+          "values": [
+            "9",
+            "388,874",
+            "388,644",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangible assets",
+          "values": [
+            "10",
+            "486,643",
+            "417,044",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investments",
+          "values": [
+            "11",
+            "-",
+            "750",
+            "30,059",
+            "30,059"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "875,517",
+            "806,438",
+            "30,059",
+            "30,059"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Current assets",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Stock - development properties",
+          "values": [
+            "12",
+            "7,355",
+            "10,068",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stock - retail merchandise",
+          "values": [
+            "",
+            "11,546",
+            "11,498",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Debtors - due within one year",
+          "values": [
+            "13",
+            "71,314",
+            "72,207",
+            "136,924",
+            "136,515"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- due after one year",
+          "values": [
+            "13",
+            "17,046",
+            "11,916",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash at bank and in hand",
+          "values": [
+            "14",
+            "66,819",
+            "42,769",
+            "30",
+            "30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "174,080",
+            "148,458",
+            "136,954",
+            "136,545"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Creditors: amounts falling due within one year",
+          "values": [
+            "15",
+            "(418,041)",
+            "(374,135)",
+            "(1,816)",
+            "(1,829)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Net current (liabilities)/assets",
+          "values": [
+            "",
+            "(243,961)",
+            "(225,677)",
+            "135,138",
+            "134,716"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total assets less current liabilities",
+          "values": [
+            "",
+            "631,556",
+            "580,761",
+            "165,197",
+            "164,775"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Creditors: amounts falling due after more than one year",
+          "values": [
+            "16",
+            "(455,772)",
+            "(374,361)",
+            "(17,677)",
+            "(17,195)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Provisions for liabilities",
+          "values": [
+            "19",
+            "(47,932)",
+            "(60,860)",
+            "-",
+            "-"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Net assets",
+          "values": [
+            "",
+            "127,852",
+            "145,540",
+            "147,520",
+            "147,580"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Capital and reserves",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Called up share capital",
+          "values": [
+            "20",
+            "62",
+            "62",
+            "62",
+            "62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Share premium account",
+          "values": [
+            "",
+            "29,997",
+            "29,997",
+            "29,997",
+            "29,997"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital contribution",
+          "values": [
+            "",
+            "5,369",
+            "5,369",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Merger reserve",
+          "values": [
+            "",
+            "26,699",
+            "26,699",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profit and loss account",
+          "values": [
+            "",
+            "65,725",
+            "83,413",
+            "117,461",
+            "117,521"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Shareholders' funds",
+          "values": [
+            "",
+            "127,852",
+            "145,540",
+            "147,520",
+            "147,580"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "# ARSENAL HOLDINGS LIMITED / # STATEMENT OF CHANGES IN EQUITY",
+      "columns": [
+        "Group",
+        "Share Capital £'000",
+        "Capital C'tribution £'000",
+        "Share Premium £'000",
+        "Merger Reserve £'000",
+        "Profit and Loss £'000",
+        "Total £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "At 1 June 2022",
+          "values": [
+            "62",
+            "-",
+            "29,997",
+            "26,699",
+            "135,535",
+            "192,293"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital contribution for year ended 31 May 2023",
+          "values": [
+            "-",
+            "5,369",
+            "-",
+            "-",
+            "-",
+            "5,369"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total comprehensive expense for year ended 31 May 2023",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "(52,122)",
+            "(52,122)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 31 May 2023",
+          "values": [
+            "62",
+            "5,369",
+            "29,997",
+            "26,699",
+            "83,413",
+            "145,540"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total comprehensive expense for the year ended 31 May 2024",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "(17,688)",
+            "(17,688)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "As at 31 May 2024",
+          "values": [
+            "62",
+            "5,369",
+            "29,997",
+            "26,699",
+            "65,725",
+            "127,852"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 24,
+      "section": null,
+      "columns": [
+        "Company",
+        "Share Capital £'000",
+        "Share Premium £'000",
+        "Profit and Loss £'000",
+        "Total £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "At 1 June 2022",
+          "values": [
+            "62",
+            "29,997",
+            "117,554",
+            "147,613"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total comprehensive expense for year ended 31 May 2023",
+          "values": [
+            "-",
+            "-",
+            "(33)",
+            "(33)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 31 May 2023",
+          "values": [
+            "62",
+            "29,997",
+            "117,521",
+            "147,580"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total comprehensive expense for the year ended 31 May 2024",
+          "values": [
+            "-",
+            "-",
+            "(60)",
+            "(60)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "As at 31 May 2024",
+          "values": [
+            "62",
+            "29,997",
+            "117,461",
+            "147,520"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 25,
+      "section": "# ARSENAL HOLDINGS LIMITED / # CONSOLIDATED CASH FLOW STATEMENT",
+      "columns": [
+        "",
+        "Note",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Net cash inflow from operating activities",
+          "values": [
+            "21a",
+            "176,057",
+            "136,936"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxation received/(paid)",
+          "values": [
+            "",
+            "-",
+            "760"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash flow from investing activities",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Interest received",
+          "values": [
+            "",
+            "298",
+            "74"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proceeds from sale of fixed assets",
+          "values": [
+            "",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Purchase of fixed assets",
+          "values": [
+            "",
+            "(12,687)",
+            "(16,867)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Player registrations",
+          "values": [
+            "21c",
+            "(193,394)",
+            "(149,449)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net cash flow from investing activities",
+          "values": [
+            "",
+            "(205,783)",
+            "(166,242)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash flow from financing activities",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finance charges paid",
+          "values": [
+            "",
+            "(8,115)",
+            "(4,359)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "New debt issued",
+          "values": [
+            "",
+            "80,000",
+            "63,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Repayment of debt",
+          "values": [
+            "",
+            "(18,109)",
+            "(17,282)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net cash flow from financing activities",
+          "values": [
+            "",
+            "53,776",
+            "41,359"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Increase in cash and cash equivalents",
+          "values": [
+            "",
+            "24,050",
+            "12,813"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash and cash equivalents at start of year",
+          "values": [
+            "",
+            "42,769",
+            "29,956"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash and cash equivalents at end of year",
+          "values": [
+            "14",
+            "66,819",
+            "42,769"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "## NOTES TO THE ACCOUNTS / ### 1. Accounting policies (continued) / #### (d) Joint venture and subsidiary undertakings / #### (e) Turnover and income recognition / #### (f) Depreciation",
+      "columns": [
+        "Freehold buildings and improvements",
+        "2% to 10% per annum"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Leasehold properties",
+          "values": [
+            "over the period of the lease"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plant and equipment",
+          "values": [
+            "5% to 25% per annum"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 31,
+      "section": "#### Critical judgements in applying the Group's Accounting Policies / #### Key sources of estimation uncertainty / ##### *Provisions and contingent liabilities for player transactions* / ##### *Claim in respect of historic property developments* / ### 2. Segmental analysis",
+      "columns": [
+        "Class of business:-",
+        "Football",
+        "",
+        "Property development",
+        "",
+        "Group",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "2024 £'000",
+            "2023 £'000",
+            "2024 £'000",
+            "2023 £'000",
+            "2024 £'000",
+            "2023 £'000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Turnover",
+          "values": [
+            "613,546",
+            "464,557",
+            "3,034",
+            "2,128",
+            "616,580",
+            "466,685"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Segment operating (loss)/profit",
+          "values": [
+            "(49,729)",
+            "(56,063)",
+            "1,335",
+            "819",
+            "(48,394)",
+            "(55,244)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Share of operating loss of joint venture",
+          "values": [
+            "(1,934)",
+            "(1,390)",
+            "-",
+            "-",
+            "(1,934)",
+            "(1,390)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profit on disposal of player registrations",
+          "values": [
+            "51,073",
+            "10,732",
+            "-",
+            "-",
+            "51,073",
+            "10,732"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net finance charges",
+          "values": [
+            "(18,278)",
+            "(6,075)",
+            "(154)",
+            "(147)",
+            "(18,432)",
+            "(6,222)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Loss)/profit before taxation",
+          "values": [
+            "(18,868)",
+            "(52,796)",
+            "1,181",
+            "672",
+            "(17,687)",
+            "(52,124)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Segment net assets",
+          "values": [
+            "65,238",
+            "84,133",
+            "62,614",
+            "61,407",
+            "127,852",
+            "145,540"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # For the year ended 31 May 2024 / # 2. Segmental analysis (continued) / # Exceptional items",
+      "columns": [
+        "",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Impairment of player registrations",
+          "values": [
+            "-",
+            "18,091"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "# 3. Group turnover",
+      "columns": [
+        "Turnover, all of which originates in the UK, comprises the following:",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gate and other match day revenues",
+          "values": [
+            "131,652",
+            "102,604"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Broadcasting",
+          "values": [
+            "262,252",
+            "191,194"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Commercial",
+          "values": [
+            "218,268",
+            "169,302"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Property development",
+          "values": [
+            "3,034",
+            "2,128"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Player trading",
+          "values": [
+            "1,374",
+            "1,457"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "616,580",
+            "466,685"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "# 4. Operating expenses",
+      "columns": [
+        "Operating expenses comprise:",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Amortisation of player registrations",
+          "values": [
+            "171,099",
+            "139,060"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impairment of player registrations (see note 2)",
+          "values": [
+            "-",
+            "18,091"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciation and impairment charges (less amortisation of grants)",
+          "values": [
+            "18,161",
+            "16,983"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total depreciation, amortisation and impairment",
+          "values": [
+            "189,260",
+            "174,134"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Staff costs (see note 6)",
+          "values": [
+            "327,822",
+            "234,766"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cost of property sales",
+          "values": [
+            "1,118",
+            "472"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other operating charges",
+          "values": [
+            "146,774",
+            "112,557"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total operating expenses",
+          "values": [
+            "664,974",
+            "521,929"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 33,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # For the year ended 31 May 2024 / # 4. Operating expenses (continued)",
+      "columns": [
+        "",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Total operating expenses include:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auditor's remuneration",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- audit of the company's annual accounts",
+          "values": [
+            "40",
+            "32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- audit of the subsidiaries pursuant to legislation",
+          "values": [
+            "157",
+            "130"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total audit fees",
+          "values": [
+            "197",
+            "162"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- assurance services other than auditing of company's accounts",
+          "values": [
+            "60",
+            "62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- tax compliance services",
+          "values": [
+            "55",
+            "49"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- other tax advisory services",
+          "values": [
+            "53",
+            "29"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total non-audit fees",
+          "values": [
+            "168",
+            "140"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operating lease rentals",
+          "values": [
+            "62",
+            "40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Loss on disposal of tangible fixed assets/investments",
+          "values": [
+            "25",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 33,
+      "section": "# 5. Net finance charges",
+      "columns": [
+        "",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Interest payable and similar charges:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bank loans and overdrafts",
+          "values": [
+            "3,160",
+            "1,506"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Notional interest expense on deferred payments for player registrations",
+          "values": [
+            "6,524",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other",
+          "values": [
+            "7,800",
+            "3,355"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costs of raising long term finance",
+          "values": [
+            "1,291",
+            "1,435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total interest payable and similar charges",
+          "values": [
+            "18,775",
+            "6,296"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Interest receivable",
+          "values": [
+            "(343)",
+            "(74)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net finance charges",
+          "values": [
+            "18,432",
+            "6,222"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 33,
+      "section": "# 6. Employees",
+      "columns": [
+        "",
+        "2024 Number",
+        "2023 Number"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Playing staff",
+          "values": [
+            "117",
+            "115"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Training staff",
+          "values": [
+            "84",
+            "74"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Commercial and Administrative staff",
+          "values": [
+            "513",
+            "426"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ground staff",
+          "values": [
+            "112",
+            "108"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "826",
+            "723"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # For the year ended 31 May 2024 / # 6. Employees (continued)",
+      "columns": [
+        "",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Staff costs:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Wages and salaries",
+          "values": [
+            "286,960",
+            "204,648"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Social security costs",
+          "values": [
+            "38,133",
+            "28,569"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other pension costs",
+          "values": [
+            "2,729",
+            "1,549"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "327,822",
+            "234,766"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "# 7. Directors' remuneration",
+      "columns": [
+        "",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Remuneration for services",
+          "values": [
+            "2,440",
+            "1,856"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2,440",
+            "1,856"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "The number of directors who were:-",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Members of a defined benefit pension scheme",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneration of the highest paid director:-",
+          "values": [
+            "£'000",
+            "£'000"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Emoluments",
+          "values": [
+            "2,000",
+            "1,366"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneration of key management personnel",
+          "values": [
+            "7,341",
+            "6,624"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "# 8. Tax on loss",
+      "columns": [
+        "",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "UK corporation tax at 25% (2023 – 20%)",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overseas tax",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total current taxation",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deferred taxation (see note 19)",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total deferred taxation",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total tax charge/(credit) on loss",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 35,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # 8. Tax on loss (continued)",
+      "columns": [
+        "",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "The differences between the total tax shown above and the amount calculated by applying the standard rate of UK corporation tax to the loss before tax are as follows:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Group loss before tax",
+          "values": [
+            "(17,687)",
+            "(52,124)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tax on Group loss before tax at standard UK corporation tax rate of 25% (2023 – 20%)",
+          "values": [
+            "(4,422)",
+            "(10,425)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Effects of:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Expenses not deductible",
+          "values": [
+            "1,822",
+            "1,281"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overseas tax",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impact of tax losses on deferred tax",
+          "values": [
+            "2,600",
+            "9,144"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Group total tax charge/(credit) for the year",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 36,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / For the year ended 31 May 2024 / # 9. Tangible assets",
+      "columns": [
+        "",
+        "Freehold properties £'000",
+        "Long Leasehold properties £'000",
+        "Plant and equipment £'000",
+        "Total £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Group",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Cost",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "At 1 June 2023",
+          "values": [
+            "422,146",
+            "22,133",
+            "175,369",
+            "619,648"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Foreign exchange",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Additions",
+          "values": [
+            "584",
+            "-",
+            "15,214",
+            "15,798"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disposals",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfers",
+          "values": [
+            "3,497",
+            "(804)",
+            "(9)",
+            "2,684"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 31 May 2024",
+          "values": [
+            "426,227",
+            "21,329",
+            "190,574",
+            "638,130"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciation",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "At 1 June 2023",
+          "values": [
+            "98,350",
+            "9,423",
+            "123,231",
+            "231,004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Foreign exchange",
+          "values": [
+            "-",
+            "-",
+            "1",
+            "1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charge for the year",
+          "values": [
+            "6,165",
+            "681",
+            "11,405",
+            "18,251"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disposals",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfers",
+          "values": [
+            "426",
+            "(423)",
+            "(3)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 31 May 2024",
+          "values": [
+            "104,941",
+            "9,681",
+            "134,634",
+            "249,256"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net book value",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "At 31 May 2024",
+          "values": [
+            "321,286",
+            "11,648",
+            "55,940",
+            "388,874"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 31 May 2023",
+          "values": [
+            "323,796",
+            "12,710",
+            "52,138",
+            "388,644"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 36,
+      "section": "# 10. Intangible assets",
+      "columns": [
+        "",
+        "£'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cost of player registrations",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "At 1 June 2023",
+          "values": [
+            "773,673"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Additions",
+          "values": [
+            "255,663"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disposals",
+          "values": [
+            "(146,919)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 31 May 2024",
+          "values": [
+            "882,417"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortisation of player registrations",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "At 1 June 2023",
+          "values": [
+            "356,629"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charge for the year",
+          "values": [
+            "171,099"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impairment",
+          "values": [
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disposals",
+          "values": [
+            "(131,954)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 31 May 2024",
+          "values": [
+            "395,774"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 37,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / For the year ended 31 May 2024 / # 10. Intangible assets (continued) / Net book value",
+      "columns": [
+        "At 31 May 2024",
+        "486,643"
+      ],
+      "rows": [
+        {
+          "rawLabel": "At 31 May 2023",
+          "values": [
+            "417,044"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 37,
+      "section": "# 11. Investments",
+      "columns": [
+        "",
+        "Group",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "2024",
+            "2023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "£'000",
+            "£'000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Accumulated share of (losses)/profit of joint venture (see note 19)",
+          "values": [
+            "(1,209)",
+            "725"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other investments",
+          "values": [
+            "-",
+            "25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(1,209)",
+            "750"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 37,
+      "section": null,
+      "columns": [
+        "",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "£'000",
+            "£'000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fixed assets",
+          "values": [
+            "1,505",
+            "496"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Current assets",
+          "values": [
+            "488",
+            "625"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Liabilities",
+          "values": [
+            "(3,202)",
+            "(396)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(1,209)",
+            "725"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 37,
+      "section": null,
+      "columns": [
+        "Investments in subsidiary undertakings",
+        "Company"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "£'000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balance at 1 June 2023 and 31 May 2024",
+          "values": [
+            "30,059"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 38,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # 11. Investments (continued)",
+      "columns": [
+        "",
+        "Country of incorporation",
+        "Proportion of ordinary shares owned",
+        "Principal activity"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Arsenal (AFC Holdings) Limited",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Share holding"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "The Arsenal Football Club Limited*",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Professional football club"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arsenal (Emirates Stadium) Limited*",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Property development"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arsenal Overseas Holdings Limited*",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Share holding"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AOH-USA, LLC*",
+          "values": [
+            "USA",
+            "100%",
+            "Data management"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arsenal Securities Limited*",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Financing"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arsenal Stadium Management Company Limited*",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Stadium operations"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATL (Holdings) Limited",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Share holding"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ashburton Trading Limited*",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Property development"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HHL Holding Company Limited",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Share holding"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Highbury Holdings Limited*",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Property holding"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arsenal Women Football Club Limited*",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Women's football"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ashburton Properties (Northern Triangle) Limited*",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Dormant"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Drayton Park Trading Limited*",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Dormant"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Queensland Road Trading Limited*",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Dormant"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ashburton Properties Holdings Limited",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Dormant"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arsenal Stadium Management Holdings Limited",
+          "values": [
+            "Great Britain",
+            "100%",
+            "Dormant"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 38,
+      "section": "# 12. Stock - development properties / # 13. Debtors",
+      "columns": [
+        "",
+        "Group",
+        "",
+        "Company",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "2024 £'000",
+            "2023 £'000",
+            "2024 £'000",
+            "2023 £'000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amounts recoverable within one year",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trade debtors",
+          "values": [
+            "18,332",
+            "37,169",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other debtors",
+          "values": [
+            "25,429",
+            "18,085",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amounts due from group undertakings",
+          "values": [
+            "-",
+            "-",
+            "136,924",
+            "136,515"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prepayments and accrued income",
+          "values": [
+            "22,997",
+            "16,953",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amount due from joint venture",
+          "values": [
+            "4,556",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "71,314",
+            "72,207",
+            "136,924",
+            "136,515"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amounts recoverable in more than one year",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other debtors",
+          "values": [
+            "16,563",
+            "11,230",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prepayments and accrued income",
+          "values": [
+            "483",
+            "686",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "17,046",
+            "11,916",
+            "-",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # 14. Cash at bank and in hand",
+      "columns": [
+        "",
+        "Group",
+        "",
+        "Company",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "2024 £'000",
+            "2023 £'000",
+            "2024 £'000",
+            "2023 £'000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash at bank and in hand",
+          "values": [
+            "66,819",
+            "42,769",
+            "-",
+            "30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash equivalents (short-term deposits)",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "66,819",
+            "42,769",
+            "-",
+            "30"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "# 15. Creditors: amounts falling due within one year",
+      "columns": [
+        "",
+        "Group",
+        "",
+        "Company",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "2024 £'000",
+            "2023 £'000",
+            "2024 £'000",
+            "2023 £'000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trade creditors",
+          "values": [
+            "19,446",
+            "13,175",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other tax and social security",
+          "values": [
+            "35,659",
+            "28,934",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amounts due to group undertakings",
+          "values": [
+            "-",
+            "-",
+            "1,786",
+            "1,786"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other creditors",
+          "values": [
+            "171,138",
+            "155,491",
+            "10",
+            "10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Accruals and deferred income",
+          "values": [
+            "191,798",
+            "176,535",
+            "20",
+            "33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "418,041",
+            "374,135",
+            "1,816",
+            "1,829"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "# 16. Creditors: amounts falling due after more than one year",
+      "columns": [
+        "",
+        "Group",
+        "",
+        "Company",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "2024 £'000",
+            "2023 £'000",
+            "2024 £'000",
+            "2023 £'000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balance due to parent undertaking",
+          "values": [
+            "324,062",
+            "258,937",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Debenture loans",
+          "values": [
+            "17,722",
+            "17,238",
+            "17,677",
+            "17,195"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other creditors",
+          "values": [
+            "103,907",
+            "89,189",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Grants",
+          "values": [
+            "2,895",
+            "2,985",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Accruals and deferred income",
+          "values": [
+            "7,186",
+            "6,012",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "455,772",
+            "374,361",
+            "17,677",
+            "17,195"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Debenture loans comprise:",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Par value of debentures plus accumulated interest",
+          "values": [
+            "32,415",
+            "31,933",
+            "17,988",
+            "17,506"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costs of raising finance",
+          "values": [
+            "(311)",
+            "(311)",
+            "(311)",
+            "(311)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fair value adjustment",
+          "values": [
+            "(14,382)",
+            "(14,384)",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "17,722",
+            "17,238",
+            "17,677",
+            "17,195"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # For the year ended 31 May 2024 / # 16. Creditors: amounts falling due after more than one year (continued)",
+      "columns": [
+        "",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "The Group's financial liabilities/debt are repayable as follows:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "After five years",
+          "values": [
+            "17,722",
+            "17,238"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total debt",
+          "values": [
+            "17,722",
+            "17,238"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "# 17. Financial instruments",
+      "columns": [
+        "Financial Assets",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Measured at undiscounted amount receivable:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash at bank",
+          "values": [
+            "66,819",
+            "42,769"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trade and other debtors",
+          "values": [
+            "60,324",
+            "66,484"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "127,143",
+            "109,253"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "# Financial Liabilities",
+      "columns": [
+        "C & D Debentures",
+        "(17,677)",
+        "(17,195)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Balance due to parent undertaking",
+          "values": [
+            "(324,062)",
+            "(258,937)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "Measured at fair value through profit and loss:",
+      "columns": [
+        "A & B Debentures",
+        "(45)",
+        "(43)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Other creditors (see note 1(g))",
+          "values": [
+            "(97,687)",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 40,
+      "section": "Measured at undiscounted amount payable:",
+      "columns": [
+        "Trade and other creditors",
+        "(196,804)",
+        "(257,855)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "(636,275)",
+            "(534,030)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": "For the year ended 31 May 2024 / # 17. Financial instruments (continued) / # Financial Liabilities (continued) / # 18. Financial Derivatives / # Borrowing facilities",
+      "columns": [
+        "",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Expiring in:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Less than one year",
+          "values": [
+            "100,000",
+            "70,000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # For the year ended 31 May 2024 / # 19. Provisions for liabilities",
+      "columns": [
+        "",
+        "Group",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "2024 £'000",
+            "2023 £'000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensions provision (see note 25 (b))",
+          "values": [
+            "1,122",
+            "739"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deferred taxation",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfers",
+          "values": [
+            "45,601",
+            "60,121"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Losses of joint venture (see note 11)",
+          "values": [
+            "1,209",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "47,932",
+            "60,860"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": null,
+      "columns": [
+        "",
+        "Group",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "2024 £'000",
+            "2023 £'000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deferred tax provision",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tax losses (including excess corporate interest)",
+          "values": [
+            "(19,744)",
+            "(20,991)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Accelerated capital allowances",
+          "values": [
+            "8,543",
+            "6,325"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capitalised interest",
+          "values": [
+            "7,355",
+            "7,510"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rollover relief on player registrations",
+          "values": [
+            "3,822",
+            "6,676"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other timing differences",
+          "values": [
+            "24",
+            "480"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total provision for deferred taxation",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "# 20. Called up share capital",
+      "columns": [
+        "",
+        "2024 £",
+        "2023 £"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Allotted, issued and fully paid",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subscriber Ordinary shares of £1 each",
+          "values": [
+            "2",
+            "2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ordinary shares of £1 each",
+          "values": [
+            "62,217",
+            "62,217"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # 21. Notes to the consolidated cash flow statement",
+      "columns": [
+        "",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Operating loss",
+          "values": [
+            "(48,394)",
+            "(55,244)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortisation of player registrations",
+          "values": [
+            "171,099",
+            "139,060"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impairment of player registrations",
+          "values": [
+            "-",
+            "18,091"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Loss on disposal of investments",
+          "values": [
+            "25",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciation (net of grant amortisation)",
+          "values": [
+            "18,161",
+            "16,983"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operating cash flow before working capital",
+          "values": [
+            "140,891",
+            "118,890"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Increase) in stock",
+          "values": [
+            "(19)",
+            "(8,225)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Decrease/(Increase) in debtors",
+          "values": [
+            "7,590",
+            "(33,462)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Increase in creditors",
+          "values": [
+            "27,595",
+            "59,733"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net cash inflow from operating activities",
+          "values": [
+            "176,057",
+            "136,936"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": null,
+      "columns": [
+        "(b) Analysis of changes in net debt",
+        "At 1 June 2023 £'000",
+        "Non cash changes £'000",
+        "Cash flows £'000",
+        "At 31 May 2024 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cash at bank and in hand",
+          "values": [
+            "42,769",
+            "-",
+            "24,050",
+            "66,819"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash equivalents",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "42,769",
+            "-",
+            "24,050",
+            "66,819"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Debentures",
+          "values": [
+            "(17,238)",
+            "(484)",
+            "-",
+            "(17,722)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balance due to parent undertaking",
+          "values": [
+            "(258,937)",
+            "(3,234)",
+            "(61,891)",
+            "(324,062)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net (debt)",
+          "values": [
+            "(233,406)",
+            "(3,718)",
+            "(37,841)",
+            "(274,965)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": null,
+      "columns": [
+        "(c) Gross cash flows",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Player registrations",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Payments for purchase of players",
+          "values": [
+            "(247,650)",
+            "(184,299)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receipts from sale of players",
+          "values": [
+            "54,256",
+            "34,850"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(193,394)",
+            "(149,449)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # 22. Leasing commitments",
+      "columns": [
+        "",
+        "2024 £'000",
+        "2023 £'000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Group",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "One year or less",
+          "values": [
+            "50",
+            "37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Two to five years",
+          "values": [
+            "33",
+            "37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Over five years",
+          "values": [
+            "76",
+            "78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "159",
+            "152"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 13,
+      "section": "# ARSENAL HOLDINGS LIMITED / ## STRATEGIC REPORT / ### Streamlined Energy and Carbon Reporting Disclosure (SECR)",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Emissions",
+      "target": "22,088.03",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 13,
+      "section": "# ARSENAL HOLDINGS LIMITED / ## STRATEGIC REPORT / ### Streamlined Energy and Carbon Reporting Disclosure (SECR)",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Emissions",
+      "target": "20,822.22",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "-0.010000000002037268"
+    },
+    {
+      "page": 13,
+      "section": "# ARSENAL HOLDINGS LIMITED / ## STRATEGIC REPORT / ### Streamlined Energy and Carbon Reporting Disclosure (SECR)",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total Emissions",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"+6%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 22,
+      "section": "# CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total comprehensive expense",
+      "target": "(17,688)",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "# CONSOLIDATED STATEMENT OF COMPREHENSIVE INCOME",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total comprehensive expense",
+      "target": "(52,122)",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "# ARSENAL HOLDINGS LIMITED / # BALANCE SHEET",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total assets less current liabilities",
+      "skipped": true,
+      "reason": "1 de 12 valor(es) del segmento no parecen números (ej. \"2024 £'000\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 23,
+      "section": "# ARSENAL HOLDINGS LIMITED / # BALANCE SHEET",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total assets less current liabilities",
+      "skipped": true,
+      "reason": "1 de 13 valor(es) del segmento no parecen números (ej. \"2023 £'000\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 23,
+      "section": "# ARSENAL HOLDINGS LIMITED / # BALANCE SHEET",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total assets less current liabilities",
+      "skipped": true,
+      "reason": "1 de 8 valor(es) del segmento no parecen números (ej. \"2024 £'000\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 23,
+      "section": "# ARSENAL HOLDINGS LIMITED / # BALANCE SHEET",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total assets less current liabilities",
+      "skipped": true,
+      "reason": "1 de 8 valor(es) del segmento no parecen números (ej. \"2023 £'000\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 24,
+      "section": "# ARSENAL HOLDINGS LIMITED / # STATEMENT OF CHANGES IN EQUITY",
+      "likelyRelevant": true,
+      "column": 4,
+      "totalLabel": "Total comprehensive expense for year ended 31 May 2023",
+      "target": "(52,122)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "187657"
+    },
+    {
+      "page": 24,
+      "section": "# ARSENAL HOLDINGS LIMITED / # STATEMENT OF CHANGES IN EQUITY",
+      "likelyRelevant": true,
+      "column": 5,
+      "totalLabel": "Total comprehensive expense for year ended 31 May 2023",
+      "target": "(52,122)",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "249784"
+    },
+    {
+      "page": 24,
+      "section": "# ARSENAL HOLDINGS LIMITED / # STATEMENT OF CHANGES IN EQUITY",
+      "likelyRelevant": true,
+      "column": 4,
+      "totalLabel": "Total comprehensive expense for the year ended 31 May 2024",
+      "target": "(17,688)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "101101"
+    },
+    {
+      "page": 24,
+      "section": "# ARSENAL HOLDINGS LIMITED / # STATEMENT OF CHANGES IN EQUITY",
+      "likelyRelevant": true,
+      "column": 5,
+      "totalLabel": "Total comprehensive expense for the year ended 31 May 2024",
+      "target": "(17,688)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "163228"
+    },
+    {
+      "page": 24,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Total comprehensive expense for year ended 31 May 2023",
+      "target": "(33)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "117587"
+    },
+    {
+      "page": 24,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "Total comprehensive expense for year ended 31 May 2023",
+      "target": "(33)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "147646"
+    },
+    {
+      "page": 24,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Total comprehensive expense for the year ended 31 May 2024",
+      "target": "(60)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "117581"
+    },
+    {
+      "page": 24,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "Total comprehensive expense for the year ended 31 May 2024",
+      "target": "(60)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "147640"
+    },
+    {
+      "page": 32,
+      "section": "# 4. Operating expenses",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total depreciation, amortisation and impairment",
+      "target": "189,260",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# 4. Operating expenses",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total depreciation, amortisation and impairment",
+      "target": "174,134",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# 4. Operating expenses",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total operating expenses",
+      "target": "664,974",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-189260"
+    },
+    {
+      "page": 32,
+      "section": "# 4. Operating expenses",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total operating expenses",
+      "target": "521,929",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-174134"
+    },
+    {
+      "page": 33,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # For the year ended 31 May 2024 / # 4. Operating expenses (continued)",
+      "likelyRelevant": true,
+      "totalLabel": "Total operating expenses include:",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 33,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # For the year ended 31 May 2024 / # 4. Operating expenses (continued)",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total audit fees",
+      "target": "197",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # For the year ended 31 May 2024 / # 4. Operating expenses (continued)",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total audit fees",
+      "target": "162",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # For the year ended 31 May 2024 / # 4. Operating expenses (continued)",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total non-audit fees",
+      "target": "168",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # For the year ended 31 May 2024 / # 4. Operating expenses (continued)",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total non-audit fees",
+      "target": "140",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# 5. Net finance charges",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total interest payable and similar charges",
+      "target": "18,775",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# 5. Net finance charges",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total interest payable and similar charges",
+      "target": "6,296",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 34,
+      "section": "# 8. Tax on loss",
+      "likelyRelevant": false,
+      "totalLabel": "Total tax charge/(credit) on loss",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 40,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # For the year ended 31 May 2024 / # 16. Creditors: amounts falling due after more than one year (continued)",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total debt",
+      "target": "17,722",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 40,
+      "section": "# ARSENAL HOLDINGS LIMITED / # NOTES TO THE ACCOUNTS / # For the year ended 31 May 2024 / # 16. Creditors: amounts falling due after more than one year (continued)",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total debt",
+      "target": "17,238",
+      "addendCount": 1,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 41,
+    "results": [
+      {
+        "label": "Turnover of the Group including its share of joint ventures",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Turnover of the Group including its share of joint ventures",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Share of turnover of joint venture",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Share of joint venture operating loss",
+        "similarity": 50
+      },
+      {
+        "label": "Share of turnover of joint venture",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Group turnover",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Group turnover",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operating expenses",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operating expenses",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operating profit/(loss)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operating profit/(loss)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Share of joint venture operating loss",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Share of joint venture operating loss",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Share of joint venture operating loss",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Profit on disposal of player registrations",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Profit on disposal of player registrations",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Profit on disposal of player registrations",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Profit/(loss) before net finance charges",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Profit/(loss) before net finance charges",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Net finance charges",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Net finance charges",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(Loss) before taxation",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(Loss) before taxation",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Tax on loss",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Tax on loss",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(Loss) for the financial year",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(Loss) for the financial year",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Loss after taxation",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Loss after taxation",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Exchange differences",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Exchange differences",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "At 1 June 2022",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "At 1 June 2022",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Capital contribution for year ended 31 May 2023",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Capital contribution for year ended 31 May 2023",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "At 31 May 2023",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "At 31 May 2023",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "As at 31 May 2024",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "As at 31 May 2024",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Leasehold properties",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Leasehold properties",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Plant and equipment",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Plant and equipment",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortisation of player registrations",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortisation of player registrations",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "player_amortisation",
+        "matchedLabel": "Amortisation of player registrations",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Impairment of player registrations (see note 2)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impairment of player registrations (see note 2)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_impairment",
+        "matchedLabel": "Impairment of player registrations",
+        "similarity": 60
+      },
+      {
+        "label": "Depreciation and impairment charges (less amortisation of grants)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciation and impairment charges (less amortisation of grants)",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "depreciation",
+        "matchedLabel": "Depreciation and impairment charges (less amortisation of grants)",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Staff costs (see note 6)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Staff costs (see note 6)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Staff costs",
+        "similarity": 50
+      },
+      {
+        "label": "Cost of property sales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cost of property sales",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Cost of property sales",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Other operating charges",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Other operating charges",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Other operating charges",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Auditor's remuneration",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Auditor's remuneration",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- audit of the company's annual accounts",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- audit of the company's annual accounts",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- audit of the subsidiaries pursuant to legislation",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- audit of the subsidiaries pursuant to legislation",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- assurance services other than auditing of company's accounts",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- assurance services other than auditing of company's accounts",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- tax compliance services",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- tax compliance services",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- other tax advisory services",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- other tax advisory services",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operating lease rentals",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operating lease rentals",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Loss on disposal of tangible fixed assets/investments",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Loss on disposal of tangible fixed assets/investments",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Interest payable and similar charges:",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Interest payable and similar charges:",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bank loans and overdrafts",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bank loans and overdrafts",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Notional interest expense on deferred payments for player registrations",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Notional interest expense on deferred payments for player registrations",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Other",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Other",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costs of raising long term finance",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costs of raising long term finance",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Interest receivable",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Interest receivable",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Other creditors (see note 1(g))",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Other creditors (see note 1(g))",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "gb",
+    "query": "Arsenal",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+    "10 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "7 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.md",
+  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.pdf",
+  "club": "juventus-it",
+  "year": 2003,
+  "generatedAt": "2026-10-03T23:14:05.100Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "1) REVENUES FROM SALES AND SERVICES",
+      "lado": "revenue",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        22.589103
+      ],
+      "glosa": "1) INGRESOS POR VENTAS Y SERVICIOS"
+    },
+    {
+      "label": "a) Income from temporary transfer of players",
+      "lado": "revenue",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.016095
+      ],
+      "glosa": "a) Ingresos por cesión temporal de jugadores"
+    },
+    {
+      "label": "e) Other revenues and income",
+      "lado": "revenue",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        17.21318
+      ],
+      "glosa": "e) Otros ingresos y rendimientos"
+    },
+    {
+      "label": "a) capital gains on disposals",
+      "lado": "revenue",
+      "page": 68,
+      "section": "ajuste manual",
+      "values": [
+        48.013871
+      ],
+      "glosa": "a) Plusvalías por enajenaciones"
+    },
+    {
+      "label": "b) use of reserve art. 25 of the Company By-Laws",
+      "lado": "revenue",
+      "page": 68,
+      "section": "ajuste manual",
+      "values": [
+        0.613289
+      ],
+      "glosa": "b) Aplicación de la reserva art. 25 de los Estatutos Sociales"
+    },
+    {
+      "label": "d) others",
+      "lado": "revenue",
+      "page": 68,
+      "section": "ajuste manual",
+      "values": [
+        4.217905
+      ],
+      "glosa": "d) Otros"
+    },
+    {
+      "label": "Official and technical sponsors",
+      "lado": "revenue",
+      "page": 87,
+      "section": "ajuste manual",
+      "values": [
+        32.15
+      ],
+      "glosa": "Patrocinadores oficiales y técnicos"
+    },
+    {
+      "label": "Other sponsorships and other commercial contracts",
+      "lado": "revenue",
+      "page": 87,
+      "section": "ajuste manual",
+      "values": [
+        19.53
+      ],
+      "glosa": "Otros patrocinios y otros contratos comerciales"
+    },
+    {
+      "label": "Television revenues",
+      "lado": "revenue",
+      "page": 87,
+      "section": "ajuste manual",
+      "values": [
+        78.201921
+      ],
+      "glosa": "Ingresos por televisión"
+    },
+    {
+      "label": "TV revenues percentage from visiting team",
+      "lado": "revenue",
+      "page": 87,
+      "section": "ajuste manual",
+      "values": [
+        3.488
+      ],
+      "glosa": "Porcentaje de ingresos de televisión del equipo visitante"
+    },
+    {
+      "label": "Telephonic rights",
+      "lado": "revenue",
+      "page": 87,
+      "section": "ajuste manual",
+      "values": [
+        5.715
+      ],
+      "glosa": "Derechos telefónicos"
+    },
+    {
+      "label": "Revenues from U.E.F.A. Champions League",
+      "lado": "revenue",
+      "page": 87,
+      "section": "ajuste manual",
+      "values": [
+        35.009
+      ],
+      "glosa": "Ingresos de la U.E.F.A. Champions League"
+    },
+    {
+      "label": "Advertising",
+      "lado": "revenue",
+      "page": 87,
+      "section": "ajuste manual",
+      "values": [
+        0.536
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Players' and coach image rights",
+      "lado": "revenue",
+      "page": 87,
+      "section": "ajuste manual",
+      "values": [
+        2.396
+      ],
+      "glosa": "Derechos de imagen de jugadores y entrenador"
+    },
+    {
+      "label": "Sundry income",
+      "lado": "revenue",
+      "page": 87,
+      "section": "ajuste manual",
+      "values": [
+        0.478
+      ],
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "6) PURCHASES",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.926493
+      ],
+      "glosa": "6) COMPRAS"
+    },
+    {
+      "label": "7) SERVICE EXPENSES",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        29.289936
+      ],
+      "glosa": "7) GASTOS POR SERVICIOS"
+    },
+    {
+      "label": "8) LEASE AND RENT COSTS",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        12.51283
+      ],
+      "glosa": "8) GASTOS POR ARRENDAMIENTOS Y CÁNONES"
+    },
+    {
+      "label": "a) Salaries and wages",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        128.222349
+      ],
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) Social security contributions",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.900048
+      ],
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "c) Severance indemnity",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.570386
+      ],
+      "glosa": "c) Indemnizaciones por despido"
+    },
+    {
+      "label": "e) Other costs",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.000304
+      ],
+      "glosa": "e) Otros costes"
+    },
+    {
+      "label": "a) Amortisation of intangible fixed assets",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        61.866923
+      ],
+      "glosa": "a) Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "b) Depreciation of tangible fixed assets",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.550461
+      ],
+      "glosa": "b) Amortización del inmovilizado material"
+    },
+    {
+      "label": "d) Write-downs of receivables entered under current assets and cash at bank and in hand",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.100217
+      ],
+      "glosa": "d) Deterioro de valor de créditos del activo corriente y de tesorería"
+    },
+    {
+      "label": "Other risks",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.224288
+      ],
+      "glosa": "Otros riesgos"
+    },
+    {
+      "label": "a) Match organisation expenses",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.435865
+      ],
+      "glosa": "a) Gastos de organización de partidos"
+    },
+    {
+      "label": "b) Official match expenses",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.116913
+      ],
+      "glosa": "b) Gastos de partidos oficiales"
+    },
+    {
+      "label": "c) Match registration fees",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.004823
+      ],
+      "glosa": "c) Tasas de inscripción en competiciones"
+    },
+    {
+      "label": "d) Others",
+      "lado": "expense",
+      "page": 67,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        22.385241
+      ],
+      "glosa": "d) Otros"
+    },
+    {
+      "label": "c) of securities entered under current assets other than shareholdings",
+      "lado": "expense",
+      "page": 68,
+      "section": "ajuste manual",
+      "values": [
+        0.196702
+      ],
+      "glosa": "c) de valores incluidos en el activo corriente distintos de participaciones"
+    },
+    {
+      "label": "a) capital losses on disposals",
+      "lado": "expense",
+      "page": 68,
+      "section": "ajuste manual",
+      "values": [
+        2.447425
+      ],
+      "glosa": "a) Pérdidas por enajenaciones"
+    },
+    {
+      "label": "c) other extraordinary expenses",
+      "lado": "expense",
+      "page": 68,
+      "section": "ajuste manual",
+      "values": [
+        1.469301
+      ],
+      "glosa": "c) Otros gastos extraordinarios"
+    }
+  ]
+}

@@ -1,0 +1,1547 @@
+{
+ "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2008.md",
+ "generatedAt": "2026-09-30T04:30:48.179Z",
+ "rubros": [
+  {
+   "label": "Forretningsadresse:",
+   "lado": null,
+   "page": 1,
+   "section": "# ÅRSREGNSKAP FOR REGNSKAPSÅRET 2008 - GENERELL INFORMASJON / # Enheten",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "other_income",
+     0.07
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Trening/ utstyr",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "lump_football_operations_expense",
+     0.41000000000000003
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "depreciation",
+     0.71
+    ],
+    [
+     "player_impairment",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1698
+  },
+  {
+   "label": "Administrasjon",
+   "lado": null,
+   "page": 28,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "depreciation",
+     0.72
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1697
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "lump_football_operations",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.72
+    ],
+    [
+     "other_income",
+     0.14
+    ],
+    [
+     "matchday_competition",
+     0.07
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Egne arrangement",
+   "lado": null,
+   "page": 28,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "sponsorship_commercial",
+     0.12
+    ]
+   ],
+   "tokens": 1244
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": null,
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1541
+  },
+  {
+   "label": "Tap på fordringer",
+   "lado": null,
+   "page": 28,
+   "section": "",
+   "choice": "player_impairment",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "player_impairment",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ],
+    [
+     "other_income",
+     0.16
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Anleggskostnader",
+   "lado": null,
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "depreciation",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Kjøp spillere/ leie spillere",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "lump_football_operations_expense",
+     0.36
+    ],
+    [
+     "player_amortisation",
+     0.17
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "DRIFTSRESULTAT",
+   "lado": null,
+   "page": 15,
+   "section": "# Molde Fotballklubb",
+   "choice": "lump_football_operations",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "other_income",
+     0.29000000000000004
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Andres arrangement",
+   "lado": null,
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "other_income",
+     0.16999999999999998
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 1244
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Netto finans",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1484
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.69
+    ],
+    [
+     "admin_general_expense",
+     0.29
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_income",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.21000000000000002
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "ÅRSRESULTAT",
+   "lado": null,
+   "page": 15,
+   "section": "# Molde Fotballklubb",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "lump_football_operations",
+     0.15000000000000002
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Ordinært resultat etter skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5
+    ],
+    [
+     "other_income",
+     0.21000000000000002
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Medlemsinntekter/tilskudd",
+   "lado": null,
+   "page": 28,
+   "section": "## BREDDEFOTBALLSTYRET / ### Resultatregnskap 2008",
+   "choice": "member_dues",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "member_dues",
+     0.91
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Årsresultat før minoritetsinteresser",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "other_income",
+     0.35000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1506
+  },
+  {
+   "label": "Kamp/billettinntekter",
+   "lado": null,
+   "page": 28,
+   "section": "## BREDDEFOTBALLSTYRET / ### Resultatregnskap 2008",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1332
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "lado": null,
+   "page": 28,
+   "section": "## BREDDEFOTBALLSTYRET / ### Resultatregnskap 2008",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1567
+  },
+  {
+   "label": "Personalkostnader",
+   "lado": null,
+   "page": 28,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Trening/utstyr",
+   "lado": null,
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "lump_football_operations_expense",
+     0.4
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Avtale MF/sponsor",
+   "lado": null,
+   "page": 28,
+   "section": "## BREDDEFOTBALLSTYRET / ### Resultatregnskap 2008",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.97
+    ],
+    [
+     "wages_squad",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1330
+  },
+  {
+   "label": "Kjøp spillere/Leie spillere",
+   "lado": null,
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "lump_football_operations_expense",
+     0.36
+    ],
+    [
+     "player_amortisation",
+     0.21
+    ]
+   ],
+   "tokens": 1254
+  },
+  {
+   "label": "Salg spillere/Utleie",
+   "lado": null,
+   "page": 26,
+   "section": "# Totalbudsjett 2009 / Budsjett 2009 / Regnskap 2008 / Budsjett 2008 / # DRIFTSINNTEKTER",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1406
+  },
+  {
+   "label": "Avskrivninger",
+   "lado": null,
+   "page": 28,
+   "section": "",
+   "choice": "depreciation",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "depreciation",
+     0.77
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ],
+    [
+     "other_amortisation",
+     0.09
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Netto finansposter",
+   "lado": null,
+   "page": 15,
+   "section": "# Molde Fotballklubb",
+   "choice": "other_income",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_income",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1476
+  },
+  {
+   "label": "Ekstra ordinære poster",
+   "lado": null,
+   "page": 15,
+   "section": "# Molde Fotballklubb",
+   "choice": "exceptional_items",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "exceptional_items",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "other_income",
+     0.1
+    ]
+   ],
+   "tokens": 1366
+  },
+  {
+   "label": "Overføres til fri egenkapital",
+   "lado": null,
+   "page": 15,
+   "section": "# Molde Fotballklubb",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1473
+  },
+  {
+   "label": "Inntekter NM Cup",
+   "lado": null,
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Forhold til Molde Fotball AS / ## Forholdet til Opptur MFK AS / ### Note 2 Kamp- og billettinntekter",
+   "choice": "competition_bonus",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "competition_bonus",
+     0.53
+    ],
+    [
+     "matchday_competition",
+     0.27
+    ],
+    [
+     "other_income",
+     0.2
+    ]
+   ],
+   "tokens": 1367
+  },
+  {
+   "label": "Inntekter Seriekamper",
+   "lado": null,
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Forhold til Molde Fotball AS / ## Forholdet til Opptur MFK AS / ### Note 2 Kamp- og billettinntekter",
+   "choice": "matchday_competition",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "matchday_competition",
+     0.97
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0.01
+    ]
+   ],
+   "tokens": 1303
+  },
+  {
+   "label": "Inntekter E-Cup",
+   "lado": null,
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Forhold til Molde Fotball AS / ## Forholdet til Opptur MFK AS / ### Note 2 Kamp- og billettinntekter",
+   "choice": "other_income",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "competition_bonus",
+     0.3
+    ],
+    [
+     "matchday_competition",
+     0.23
+    ]
+   ],
+   "tokens": 1368
+  },
+  {
+   "label": "Oppgjør NM Cup",
+   "lado": null,
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Forhold til Molde Fotball AS / ## Forholdet til Opptur MFK AS / ### Note 2 Kamp- og billettinntekter",
+   "choice": "competition_bonus",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "competition_bonus",
+     0.38
+    ],
+    [
+     "other_income",
+     0.26
+    ],
+    [
+     "match_organisation_expense",
+     0.22
+    ]
+   ],
+   "tokens": 1367
+  },
+  {
+   "label": "Andre inntekter privatkamper etc.",
+   "lado": null,
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Forhold til Molde Fotball AS / ## Forholdet til Opptur MFK AS / ### Note 2 Kamp- og billettinntekter",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.94
+    ],
+    [
+     "matchday_competition",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1569
+  },
+  {
+   "label": "Publikumssnitt hjemmekamper",
+   "lado": null,
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Forhold til Molde Fotball AS / ## Forholdet til Opptur MFK AS / ### Note 2 Kamp- og billettinntekter",
+   "choice": "matchday_competition",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "matchday_competition",
+     0.93
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1305
+  },
+  {
+   "label": "Medlemskontigent",
+   "lado": null,
+   "page": 18,
+   "section": "### Note 3 Medlemsinntekter og tilskudd",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Egenandeler/deltakeravgift",
+   "lado": null,
+   "page": 18,
+   "section": "### Note 3 Medlemsinntekter og tilskudd",
+   "choice": "member_dues",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "member_dues",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Markedsmidler NFF, NTF og UEFA",
+   "lado": null,
+   "page": 18,
+   "section": "### Note 3 Medlemsinntekter og tilskudd",
+   "choice": "competition_bonus",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "competition_bonus",
+     0.42
+    ],
+    [
+     "other_income",
+     0.35000000000000003
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ]
+   ],
+   "tokens": 1537
+  },
+  {
+   "label": "Andre tilskudd",
+   "lado": null,
+   "page": 18,
+   "section": "### Note 3 Medlemsinntekter og tilskudd",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "member_dues",
+     0.060000000000000005
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1556
+  },
+  {
+   "label": "Kiosksalg",
+   "lado": null,
+   "page": 19,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Note 5 Andre driftsinntekter",
+   "choice": "stadium_other",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "stadium_other",
+     0.53
+    ],
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "sponsorship_commercial",
+     0.05
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Lønn spillere, trenere og støtteapparat",
+   "lado": null,
+   "page": 19,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1292
+  },
+  {
+   "label": "Annen markedsinntekt",
+   "lado": null,
+   "page": 19,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Note 5 Andre driftsinntekter",
+   "choice": "other_income",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_income",
+     0.62
+    ],
+    [
+     "sponsorship_commercial",
+     0.35
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "Inntekter andre arrangement cup, turer, etc.",
+   "lado": null,
+   "page": 19,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Note 5 Andre driftsinntekter",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "stadium_other",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1547
+  },
+  {
+   "label": "Pensjonskostnad",
+   "lado": null,
+   "page": 19,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "wages_squad",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "Folketrygdavgift",
+   "lado": null,
+   "page": 19,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "wages_squad",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": null,
+   "page": 19,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "wages_squad",
+     0.28
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1575
+  },
+  {
+   "label": "Anskaffelseskost 01.01",
+   "lado": null,
+   "page": 21,
+   "section": "# Note 13 Driftsmidler",
+   "choice": "player_amortisation",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "player_amortisation",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "depreciation",
+     0.12
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Tilgang kjøpte driftsmidler",
+   "lado": null,
+   "page": 21,
+   "section": "# Note 13 Driftsmidler",
+   "choice": "other_expenses",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "player_amortisation",
+     0.18000000000000002
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Utgifter Prosjekt/Tiltak",
+   "lado": null,
+   "page": 20,
+   "section": "### Note 12 Andre driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ],
+    [
+     "match_organisation_expense",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Avgang",
+   "lado": null,
+   "page": 21,
+   "section": "# Note 13 Driftsmidler",
+   "choice": "player_amortisation",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "player_amortisation",
+     0.31
+    ],
+    [
+     "depreciation",
+     0.25
+    ],
+    [
+     "player_sales",
+     0.19
+    ]
+   ],
+   "tokens": 1255
+  },
+  {
+   "label": "Akkumulerte avskrivinger 01.0",
+   "lado": null,
+   "page": 21,
+   "section": "# Note 13 Driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "depreciation",
+     0.84
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Akk. Avskrivninger på avgang",
+   "lado": null,
+   "page": 21,
+   "section": "# Note 13 Driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "depreciation",
+     0.41000000000000003
+    ],
+    [
+     "player_amortisation",
+     0.39
+    ],
+    [
+     "player_impairment",
+     0.08
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Anskaffelseskost 31.12.",
+   "lado": null,
+   "page": 21,
+   "section": "# Note 13 Driftsmidler",
+   "choice": "player_amortisation",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "player_amortisation",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "depreciation",
+     0.19
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Årets avskrivninger",
+   "lado": null,
+   "page": 21,
+   "section": "# Note 13 Driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "depreciation",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1544
+  },
+  {
+   "label": "Balanseført verdi pr. 31.12.",
+   "lado": null,
+   "page": 21,
+   "section": "# Note 13 Driftsmidler",
+   "choice": "player_amortisation",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "player_amortisation",
+     0.33
+    ],
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "depreciation",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Akkumulerte avskrivinger 31.1",
+   "lado": null,
+   "page": 21,
+   "section": "# Note 13 Driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "depreciation",
+     0.92
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Varekjøp og andre kostnader kiosker",
+   "lado": null,
+   "page": 20,
+   "section": "### Note 12 Andre driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "stadium_other",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1561
+  },
+  {
+   "label": "Økonomisk levetid",
+   "lado": null,
+   "page": 21,
+   "section": "# Note 13 Driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "depreciation",
+     0.5
+    ],
+    [
+     "player_amortisation",
+     0.32
+    ],
+    [
+     "other_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Kjøp spillere",
+   "lado": null,
+   "page": 26,
+   "section": "Sum driftsinntekter 50 625 080 51 038 956 48 448 000 / # DRIFTSKOSTNADER",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "lump_football_operations_expense",
+     0.32
+    ],
+    [
+     "player_amortisation",
+     0.2
+    ]
+   ],
+   "tokens": 1299
+  },
+  {
+   "label": "Gevinst ved salg av anleggsmiddel",
+   "lado": null,
+   "page": 26,
+   "section": "Sum driftskostnader 50 508 180 50 431 010 48 334 000 / DRIFTSRESULTAT 116 900 607 946 114 000",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1479
+  },
+  {
+   "label": "Salg spillere/Utleie spillere",
+   "lado": null,
+   "page": 28,
+   "section": "## BREDDEFOTBALLSTYRET / ### Resultatregnskap 2008",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1383
+  }
+ ]
+}

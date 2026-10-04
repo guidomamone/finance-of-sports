@@ -1,0 +1,558 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2025-06-30.md",
+ "generatedAt": "2026-09-30T04:30:09.251Z",
+ "rubros": [
+  {
+   "label": "- Ο κύκλος εργασιών για το 2024/2025 ανήλθε σε € 400.223,74 έναντι € 289.805,56 το 2023/2024, παρουσιάζοντας αύξηση κατά €",
+   "lado": null,
+   "page": 3,
+   "section": "# Έκθεση Διαχείρισης του Διοικητικού Συμβουλίου / # επί των οικονομικών καταστάσεων / # Κατά την 30η Ιουνίου 2025 και για τη χρήση 1η Ιουλίου 2024 έως 30η Ιουνίου 2025 / # 1. ΕΤΗΣΙΟΣ ΟΙΚΟΝΟΜΙΚΟΣ ΑΠΟΛΟΓΙΣΜΟΣ 2024/2025 / # Αποτελέσματα χρήσης",
+   "choice": "lump_football_operations",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.73
+    ],
+    [
+     "player_sales",
+     0.15
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1878
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.41000000000000003
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "match_organisation_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1326
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1328
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1326
+  },
+  {
+   "label": "- Τα Λοιπά συνήθη έσοδα για το 2024/2025 ανήλθαν σε € 5.266.495,13 έναντι € 4.412.163,07 το 2023/2024 παρουσιάζοντας αύξηση κατά €",
+   "lado": null,
+   "page": 3,
+   "section": "# Έκθεση Διαχείρισης του Διοικητικού Συμβουλίου / # επί των οικονομικών καταστάσεων / # Κατά την 30η Ιουνίου 2025 και για τη χρήση 1η Ιουλίου 2024 έως 30η Ιουνίου 2025 / # 1. ΕΤΗΣΙΟΣ ΟΙΚΟΝΟΜΙΚΟΣ ΑΠΟΛΟΓΙΣΜΟΣ 2024/2025 / # Αποτελέσματα χρήσης",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1884
+  },
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "lump_football_operations",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.87
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1334
+  },
+  {
+   "label": "Μικτό αποτέλεσμα",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "lump_football_operations",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1318
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "admin_general_expense",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "match_organisation_expense",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1325
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1339
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1328
+  },
+  {
+   "label": "Αποτέλεσμα προ φόρων",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "other_income",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1328
+  },
+  {
+   "label": "Αποτελέσματα προ τόκων και φόρων",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "lump_football_operations",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1336
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.6900000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1339
+  },
+  {
+   "label": "Λοιπά έξοδα και ζημίες",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "exceptional_items",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1329
+  },
+  {
+   "label": "Φόροι εισοδήματος",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1328
+  },
+  {
+   "label": "Πρόσθετες αμοιβές βάσει επίτευξης στόχων",
+   "lado": null,
+   "page": 28,
+   "section": "#### 8.3.3 Έξοδα χρήσεως δουλευμένα και Έσοδα επόμενων χρήσεων",
+   "choice": "wages_squad",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "wages_squad",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "competition_bonus",
+     0.05
+    ]
+   ],
+   "tokens": 1332
+  },
+  {
+   "label": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "lado": null,
+   "page": 15,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2024 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2025",
+   "choice": "other_income",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 1338
+  },
+  {
+   "label": "Σύνολο",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 10. Λοιπά έξοδα και ζημίες",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "exceptional_items",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 809
+  },
+  {
+   "label": "Έσοδα από χορηγίες και διαφημιστική προβολή",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Τα έσοδα επόμενων χρήσεων αναλύονται στον κατωτέρω πίνακα:",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 894
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 10. Λοιπά έξοδα και ζημίες",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 816
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 10. Λοιπά έξοδα και ζημίες",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 815
+  },
+  {
+   "label": "Φόροι και τέλη",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 10. Λοιπά έξοδα και ζημίες",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 813
+  },
+  {
+   "label": "Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 10. Λοιπά έξοδα και ζημίες",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "exceptional_items",
+     0.15
+    ]
+   ],
+   "tokens": 846
+  },
+  {
+   "label": "Έξοδα προηγούμενων χρήσεων",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 10. Λοιπά έξοδα και ζημίες",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "exceptional_items",
+     0.24
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 827
+  }
+ ]
+}

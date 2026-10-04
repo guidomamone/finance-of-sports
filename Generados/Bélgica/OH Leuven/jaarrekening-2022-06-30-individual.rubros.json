@@ -1,0 +1,112 @@
+{
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2022-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2022-06-30-individual.pdf",
+ "club": "oh-leuven",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:55:25.359Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 9,
+  "notasUsadas": []
+ },
+ "ladoConocido": 9,
+ "rubros": [
+  {
+   "label": "Ticketing & lidgelden",
+   "lado": "revenue",
+   "page": 25,
+   "section": "BEDRIJFSRESULTATEN / BEDRIJFSOPBRENGSTEN / NETTO-OMZET",
+   "values": [
+    1.21065
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Sponsoring",
+   "lado": "revenue",
+   "page": 25,
+   "section": "BEDRIJFSRESULTATEN / BEDRIJFSOPBRENGSTEN / NETTO-OMZET",
+   "values": [
+    4.647527
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "TV rechten",
+   "lado": "revenue",
+   "page": 25,
+   "section": "BEDRIJFSRESULTATEN / BEDRIJFSOPBRENGSTEN / NETTO-OMZET",
+   "values": [
+    2.29037
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Commercieel",
+   "lado": "revenue",
+   "page": 25,
+   "section": "BEDRIJFSRESULTATEN / BEDRIJFSOPBRENGSTEN / NETTO-OMZET",
+   "values": [
+    1.73159
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Andere",
+   "lado": "revenue",
+   "page": 25,
+   "section": "BEDRIJFSRESULTATEN / BEDRIJFSOPBRENGSTEN / NETTO-OMZET",
+   "values": [
+    6.497203
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 25,
+   "section": "Personeelskosten",
+   "values": [
+    15.328056
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 25,
+   "section": "Personeelskosten",
+   "values": [
+    1.589606
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "expense",
+   "page": 25,
+   "section": "Personeelskosten",
+   "values": [
+    0.004293
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Andere personeelskosten",
+   "lado": "expense",
+   "page": 25,
+   "section": "Personeelskosten",
+   "values": [
+    0.665981
+   ],
+   "origen": "estado 23"
+  }
+ ]
+}

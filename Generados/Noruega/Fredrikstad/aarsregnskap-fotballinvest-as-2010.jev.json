@@ -1,0 +1,1722 @@
+{
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2010.md",
+ "generatedAt": "2026-09-30T01:11:58.703Z",
+ "rubros": [
+  {
+   "label": "Varekostnad",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.27
+    ],
+    [
+     "match_organisation_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "depreciation",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "player_impairment",
+     0.12
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "Endring i beholdning av varer under tilvirkning og ferdig tilvirkede varer",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1292
+  },
+  {
+   "label": "Avskrivning",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "depreciation",
+     0.88
+    ],
+    [
+     "other_amortisation",
+     0.06
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Lønnskostnad",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "wages_squad",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1277
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "Endring i beholdning av egentilvirkede anleggsmidler",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_income",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "depreciation",
+     0.19
+    ]
+   ],
+   "tokens": 1288
+  },
+  {
+   "label": "Salgsinntekt",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "lump_football_operations",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.87
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Inntekt på inv. i datterselskap og tilknyttet selskap",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1289
+  },
+  {
+   "label": "Annen driftskostnad",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1277
+  },
+  {
+   "label": "Annen finansinntekt",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "Driftsresultat",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Inntekt på andre investeringer",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "Renteinntekt fra foretak i samme konsern",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "Nedskrivning av finansielle eiendeler",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "player_impairment",
+     0.17
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "Verdiendr. finansielle instrumenter, virkelig verdi",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "lump_football_operations",
+     0.18
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Rentekostnad til foretak i samme konsern",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Ordinært resultat etter skattekostnad",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "other_income",
+     0.19
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Skattekostnad på ordinært resultat",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "Annen finanskostnad",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1277
+  },
+  {
+   "label": "Netto finans",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Tilgang kjøpte spillere",
+   "page": 14,
+   "section": "### Noter til regnskapet for 2010 / #### *Skatter* / #### *Kontantstrømoppstilling* / ### Note 2 - Immaterielle eiendeler / #### Morselskap",
+   "choice": "player_amortisation",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "player_amortisation",
+     0.36
+    ],
+    [
+     "lump_football_operations_expense",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.26
+    ]
+   ],
+   "tokens": 1303
+  },
+  {
+   "label": "Anskaffelseskost pr 01.01.",
+   "page": 14,
+   "section": "### Noter til regnskapet for 2010 / #### *Skatter* / #### *Kontantstrømoppstilling* / ### Note 2 - Immaterielle eiendeler / #### Morselskap",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "player_amortisation",
+     0.21000000000000002
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1308
+  },
+  {
+   "label": "Akk.avskrivninger 31.12.",
+   "page": 14,
+   "section": "### Noter til regnskapet for 2010 / #### *Skatter* / #### *Kontantstrømoppstilling* / ### Note 2 - Immaterielle eiendeler / #### Morselskap",
+   "choice": "depreciation",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "depreciation",
+     0.52
+    ],
+    [
+     "other_amortisation",
+     0.4
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 1308
+  },
+  {
+   "label": "Årets avskrivninger",
+   "page": 15,
+   "section": "# Konsern",
+   "choice": "depreciation",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "depreciation",
+     0.81
+    ],
+    [
+     "other_amortisation",
+     0.09
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Balanseført verdi pr.31.12.",
+   "page": 14,
+   "section": "### Noter til regnskapet for 2010 / #### *Skatter* / #### *Kontantstrømoppstilling* / ### Note 2 - Immaterielle eiendeler / #### Morselskap",
+   "choice": "other_income",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ]
+   ],
+   "tokens": 1308
+  },
+  {
+   "label": "Avgang kostpris solgte spillere",
+   "page": 14,
+   "section": "### Noter til regnskapet for 2010 / #### *Skatter* / #### *Kontantstrømoppstilling* / ### Note 2 - Immaterielle eiendeler / #### Morselskap",
+   "choice": "player_sales",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "player_sales",
+     0.75
+    ],
+    [
+     "player_amortisation",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1304
+  },
+  {
+   "label": "Anskaffelseskost 31.12.",
+   "page": 15,
+   "section": "# Konsern",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "player_amortisation",
+     0.3
+    ],
+    [
+     "depreciation",
+     0.11
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Økonomisk levetid",
+   "page": 15,
+   "section": "# Konsern",
+   "choice": "depreciation",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "depreciation",
+     0.56
+    ],
+    [
+     "player_amortisation",
+     0.2
+    ],
+    [
+     "other_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Anskaffelseskost 01.01.",
+   "page": 15,
+   "section": "# Konsern",
+   "choice": "player_amortisation",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "player_amortisation",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "depreciation",
+     0.07
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Tilgang kjøpte driftsmidler",
+   "page": 15,
+   "section": "# Konsern",
+   "choice": "other_expenses",
+   "confidence": 0.24,
+   "top3": [
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "depreciation",
+     0.18000000000000002
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "30 497 699",
+   "page": 16,
+   "section": "# Note 5 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "choice": "wages_squad",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "wages_squad",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "Akk.avskrivning 31.12.",
+   "page": 15,
+   "section": "# Konsern",
+   "choice": "depreciation",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "depreciation",
+     0.75
+    ],
+    [
+     "other_amortisation",
+     0.13
+    ],
+    [
+     "player_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Balanseført pr. 31.12.",
+   "page": 15,
+   "section": "# Konsern",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "114 454",
+   "page": 16,
+   "section": "# Note 5 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "choice": "wages_squad",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "wages_squad",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "1 377 995",
+   "page": 16,
+   "section": "# Note 5 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "choice": "wages_squad",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "wages_squad",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "2 519 652",
+   "page": 16,
+   "section": "# Note 5 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "choice": "wages_squad",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "wages_squad",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "34 509 800",
+   "page": 16,
+   "section": "# Note 5 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "choice": "wages_squad",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "wages_squad",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "80 000",
+   "page": 17,
+   "section": "# Noter til regnskapet for 2010",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Aristokraten AS",
+   "page": 16,
+   "section": "# Noter til regnskapet for 2010 / # Note 4 - Datterselskap / # Morselskap",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "16 462 855",
+   "page": 17,
+   "section": "# Note 6 - Salgsinntekter",
+   "choice": "lump_football_operations",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.78
+    ],
+    [
+     "player_sales",
+     0.09
+    ],
+    [
+     "other_income",
+     0.07
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "58 790",
+   "page": 17,
+   "section": "# Noter til regnskapet for 2010",
+   "choice": "other_income",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "16 701 492",
+   "page": 17,
+   "section": "# Note 6 - Salgsinntekter",
+   "choice": "lump_football_operations",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.74
+    ],
+    [
+     "player_sales",
+     0.12
+    ],
+    [
+     "other_income",
+     0.07
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "5 376 293",
+   "page": 17,
+   "section": "# Note 6 - Salgsinntekter",
+   "choice": "lump_football_operations",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.74
+    ],
+    [
+     "player_sales",
+     0.11
+    ],
+    [
+     "other_income",
+     0.09
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "4 904 834",
+   "page": 17,
+   "section": "# Note 6 - Salgsinntekter",
+   "choice": "lump_football_operations",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.68
+    ],
+    [
+     "player_sales",
+     0.17
+    ],
+    [
+     "other_income",
+     0.09
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "4 130 717",
+   "page": 17,
+   "section": "# Note 6 - Salgsinntekter",
+   "choice": "lump_football_operations",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.76
+    ],
+    [
+     "player_sales",
+     0.11
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "297 385",
+   "page": 17,
+   "section": "# Note 6 - Salgsinntekter",
+   "choice": "lump_football_operations",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.7
+    ],
+    [
+     "player_sales",
+     0.13
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "0",
+   "page": 19,
+   "section": "# Morselskap / # Konsern / # Note 11 - Driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "lump_football_operations_expense",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "47 873 576",
+   "page": 17,
+   "section": "# Note 6 - Salgsinntekter",
+   "choice": "lump_football_operations",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.77
+    ],
+    [
+     "player_sales",
+     0.11
+    ],
+    [
+     "other_income",
+     0.07
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "2010",
+   "page": 20,
+   "section": "# Noter til regnskapet for 2010 / # Note 13 - Pant og garantier",
+   "choice": "other_income",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "42 598 330",
+   "page": 17,
+   "section": "# Note 6 - Salgsinntekter",
+   "choice": "lump_football_operations",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.76
+    ],
+    [
+     "player_sales",
+     0.1
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "371 267",
+   "page": 18,
+   "section": "# Noter til regnskapet for 2010 / # Note 8 - Bankinnskudd",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "-44 055 031",
+   "page": 19,
+   "section": "# Noter til regnskapet for 2010",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "lump_football_operations_expense",
+     0.25
+    ],
+    [
+     "exceptional_items",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "826 441",
+   "page": 18,
+   "section": "# Noter til regnskapet for 2010 / # Note 8 - Bankinnskudd",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "455 174",
+   "page": 18,
+   "section": "# Noter til regnskapet for 2010 / # Note 8 - Bankinnskudd",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "-45 972 449",
+   "page": 19,
+   "section": "# Noter til regnskapet for 2010",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "lump_football_operations_expense",
+     0.28
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "7 118 540",
+   "page": 19,
+   "section": "# Morselskap / # Konsern / # Note 11 - Driftskostnader",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "1 262 313",
+   "page": 19,
+   "section": "# Morselskap / # Konsern / # Note 11 - Driftskostnader",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "2 124 323",
+   "page": 19,
+   "section": "# Morselskap / # Konsern / # Note 11 - Driftskostnader",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "1 106 548",
+   "page": 19,
+   "section": "# Morselskap / # Konsern / # Note 11 - Driftskostnader",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "admin_general_expense",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "79 030",
+   "page": 19,
+   "section": "# Morselskap / # Konsern / # Note 11 - Driftskostnader",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "14 639 847",
+   "page": 19,
+   "section": "# Morselskap / # Konsern / # Note 11 - Driftskostnader",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "250 843",
+   "page": 20,
+   "section": "# Noter til regnskapet for 2010 / # Note 13 - Pant og garantier",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "other_income",
+     0.24
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1277
+  },
+  {
+   "label": "26 330 601",
+   "page": 19,
+   "section": "# Morselskap / # Konsern / # Note 11 - Driftskostnader",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "1 737 137",
+   "page": 20,
+   "section": "# Noter til regnskapet for 2010 / # Note 13 - Pant og garantier",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "8 994 644",
+   "page": 20,
+   "section": "# Noter til regnskapet for 2010 / # Note 13 - Pant og garantier",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "4 971 941",
+   "page": 20,
+   "section": "# Noter til regnskapet for 2010 / # Note 13 - Pant og garantier",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "Egenkapital 01.01.",
+   "page": 21,
+   "section": "# Noter til regnskapet for 2010 / # Note 15 - Egenkapital / # Morselskap",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "10 982 624",
+   "page": 20,
+   "section": "# Noter til regnskapet for 2010 / # Note 13 - Pant og garantier",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "4 680 792",
+   "page": 20,
+   "section": "# Noter til regnskapet for 2010 / # Note 13 - Pant og garantier",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "291 149",
+   "page": 20,
+   "section": "# Noter til regnskapet for 2010 / # Note 13 - Pant og garantier",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1277
+  },
+  {
+   "label": "Årsresultat",
+   "page": 21,
+   "section": "# Noter til regnskapet for 2010 / # Note 15 - Egenkapital / # Morselskap",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "lump_football_operations",
+     0.09999999999999999
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Emisjon",
+   "page": 21,
+   "section": "# Noter til regnskapet for 2010 / # Note 15 - Egenkapital / # Morselskap",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "Gjeldsettergivelse",
+   "page": 21,
+   "section": "# Noter til regnskapet for 2010 / # Note 15 - Egenkapital / # Morselskap",
+   "choice": "other_income",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "exceptional_items",
+     0.16
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "Gjeld konvertert til aksjekapital",
+   "page": 21,
+   "section": "# Noter til regnskapet for 2010 / # Note 15 - Egenkapital / # Morselskap",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "Egenkapital 31.12.",
+   "page": 21,
+   "section": "# Noter til regnskapet for 2010 / # Note 15 - Egenkapital / # Morselskap",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "Ordinære aksjer",
+   "page": 22,
+   "section": "# Noter til regnskapet for 2010 / # Note 16 - Aksjekapital og aksjonærinformasjon / # Morselskap",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1291
+  }
+ ]
+}

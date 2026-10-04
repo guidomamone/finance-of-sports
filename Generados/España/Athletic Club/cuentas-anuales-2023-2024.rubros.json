@@ -1,0 +1,311 @@
+{
+  "md": "Clubes/España/Athletic Club/cuentas-anuales-2023-2024.md",
+  "pdf": "Clubes/España/Athletic Club/cuentas-anuales-2023-2024.pdf",
+  "club": "athleticclub",
+  "year": 2024,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:00:31.232Z",
+  "tieOuts": {
+    "cierran": 25,
+    "noCierran": 15
+  },
+  "warnings": [
+    "15 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 26,
+    "notasUsadas": []
+  },
+  "ladoConocido": 21,
+  "rubros": [
+    {
+      "label": "LNFP - Patrocinios, licencias y quinielas -",
+      "lado": null,
+      "page": 32,
+      "section": "21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2024                                         30.06.2023",
+      "values": [
+        231.38285
+      ],
+      "origen": "estado 80",
+      "glosa": "LNFP - Patrocinios, licencias y quinielas -"
+    },
+    {
+      "label": "LNFP - Gastos COVID",
+      "lado": "expense",
+      "page": 32,
+      "section": "21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2024                                         30.06.2023",
+      "values": [
+        -266.41893
+      ],
+      "origen": "estado 80",
+      "glosa": "LNFP - Gastos COVID"
+    },
+    {
+      "label": "RFEF - Cantera de valores",
+      "lado": null,
+      "page": 32,
+      "section": "21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2024                                         30.06.2023",
+      "values": [
+        280.38462
+      ],
+      "origen": "estado 80",
+      "glosa": "RFEF - Cantera de valores"
+    },
+    {
+      "label": "Participación en la selección -",
+      "lado": null,
+      "page": 32,
+      "section": "21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2024                                         30.06.2023",
+      "values": [
+        760.8276
+      ],
+      "origen": "estado 80",
+      "glosa": "Participación en la selección -"
+    },
+    {
+      "label": "Jugadoras y jugadores",
+      "lado": null,
+      "page": 32,
+      "section": "21.8. Resultados procedentes del inmovilizado intangible, material y otras: / Presentan el siguiente detalle: / 30.06.2024                                         30.06.2023 / Nota 22 / Otra información",
+      "values": [
+        133.42
+      ],
+      "origen": "estado 82",
+      "glosa": "Jugadoras y jugadores"
+    },
+    {
+      "label": "Cuerpo técnico y resto",
+      "lado": null,
+      "page": 32,
+      "section": "21.8. Resultados procedentes del inmovilizado intangible, material y otras: / Presentan el siguiente detalle: / 30.06.2024                                         30.06.2023 / Nota 22 / Otra información",
+      "values": [
+        232.25
+      ],
+      "origen": "estado 82",
+      "glosa": "Cuerpo técnico y resto"
+    },
+    {
+      "label": "Maquinaria 187.401,80 56.700,00 - -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        244.1018
+      ],
+      "origen": "estado 37",
+      "glosa": "Maquinaria 187.401,80 56.700,00 - -"
+    },
+    {
+      "label": "Otras instalaciones 41.953.104,62 1.573.394,61 -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        20
+      ],
+      "origen": "estado 37",
+      "glosa": "Otras instalaciones 41.953.104,62 1.573.394,61 -"
+    },
+    {
+      "label": "Mobiliario y material deportivo 2.564.155,15 38.239,44 - -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        2602.39459
+      ],
+      "origen": "estado 37",
+      "glosa": "Mobiliario y material deportivo 2.564.155,15 38.239,44 - -"
+    },
+    {
+      "label": "Equipos informáticos 625.003,81 65.089,30 - -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        690.09311
+      ],
+      "origen": "estado 37",
+      "glosa": "Equipos informáticos 625.003,81 65.089,30 - -"
+    },
+    {
+      "label": "Elementos de transporte 239.555,78 - - -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        239.55578
+      ],
+      "origen": "estado 37",
+      "glosa": "Elementos de transporte 239.555,78 - - -"
+    },
+    {
+      "label": "Derechos arbitrajes",
+      "lado": "expense",
+      "page": 31,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2024                                              30.06.2023",
+      "values": [
+        1.330191
+      ],
+      "origen": "estado 75",
+      "glosa": "Derechos arbitrajes"
+    },
+    {
+      "label": "Subvenciones a entidades",
+      "lado": "revenue",
+      "page": 31,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2024                                              30.06.2023",
+      "values": [
+        2.088349
+      ],
+      "origen": "estado 75",
+      "glosa": "Subvenciones a entidades"
+    },
+    {
+      "label": "LNFP (Nota 21.4)",
+      "lado": "expense",
+      "page": 31,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2024                                              30.06.2023",
+      "values": [
+        6.075746
+      ],
+      "origen": "estado 75",
+      "glosa": "LNFP (Nota 21.4)"
+    },
+    {
+      "label": "Cuotas entidades deportivas",
+      "lado": "expense",
+      "page": 31,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2024                                              30.06.2023",
+      "values": [
+        0.505633
+      ],
+      "origen": "estado 75",
+      "glosa": "Cuotas entidades deportivas"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 31,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2024                                              30.06.2023",
+      "values": [
+        0.096514
+      ],
+      "origen": "estado 75",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Maquinaria 187.401,80 - - -",
+      "lado": "expense",
+      "page": 15,
+      "section": "COSTE",
+      "values": [
+        0.187402
+      ],
+      "origen": "estado 41",
+      "glosa": "Maquinaria 187.401,80 - - -"
+    },
+    {
+      "label": "Otras instalaciones",
+      "lado": "expense",
+      "page": 15,
+      "section": "COSTE",
+      "values": [
+        44.299831
+      ],
+      "origen": "estado 41",
+      "glosa": "Otras instalaciones"
+    },
+    {
+      "label": "Mobiliario y material deportivo 2.564.155,15 - - -",
+      "lado": "expense",
+      "page": 15,
+      "section": "COSTE",
+      "values": [
+        2.564155
+      ],
+      "origen": "estado 41",
+      "glosa": "Mobiliario y material deportivo 2.564.155,15 - - -"
+    },
+    {
+      "label": "Equipos informáticos 625.003,81 - - -",
+      "lado": "expense",
+      "page": 15,
+      "section": "COSTE",
+      "values": [
+        0.625004
+      ],
+      "origen": "estado 41",
+      "glosa": "Equipos informáticos 625.003,81 - - -"
+    },
+    {
+      "label": "Elementos de transporte 239.555,78 - - -",
+      "lado": "expense",
+      "page": 15,
+      "section": "COSTE",
+      "values": [
+        0.239556
+      ],
+      "origen": "estado 41",
+      "glosa": "Elementos de transporte 239.555,78 - - -"
+    },
+    {
+      "label": "Aplicaciones informáticas 3.053.731,96 263.870,37 -",
+      "lado": "expense",
+      "page": 13,
+      "section": "COSTE",
+      "values": [
+        3.317602
+      ],
+      "origen": "estado 33",
+      "glosa": "Aplicaciones informáticas 3.053.731,96 263.870,37 -"
+    },
+    {
+      "label": "Propiedad artística 143.720,82 - -",
+      "lado": "expense",
+      "page": 13,
+      "section": "COSTE",
+      "values": [
+        0.143721
+      ],
+      "origen": "estado 33",
+      "glosa": "Propiedad artística 143.720,82 - -"
+    },
+    {
+      "label": "Otros 113.959,50 - -",
+      "lado": "expense",
+      "page": 13,
+      "section": "COSTE",
+      "values": [
+        0.113959
+      ],
+      "origen": "estado 33",
+      "glosa": "Otros 113.959,50 - -"
+    },
+    {
+      "label": "Ingresos por retransmisión",
+      "lado": "revenue",
+      "page": 31,
+      "section": "Ingresos por retransmisión: / Presenta el siguiente detalle: / 30.06.2024                                              30.06.2023",
+      "values": [
+        67.508284
+      ],
+      "origen": "estado 77",
+      "glosa": "Ingresos por retransmisión"
+    },
+    {
+      "label": "Ingresos por retransmisión resto de categorías",
+      "lado": "revenue",
+      "page": 31,
+      "section": "Ingresos por retransmisión: / Presenta el siguiente detalle: / 30.06.2024                                              30.06.2023",
+      "values": [
+        0.519445
+      ],
+      "origen": "estado 77",
+      "glosa": "Ingresos por retransmisión resto de categorías"
+    }
+  ]
+}

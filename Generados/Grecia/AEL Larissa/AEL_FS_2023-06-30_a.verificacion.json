@@ -1,0 +1,175 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.md",
+ "generado": "2026-10-03T23:03:06.245Z",
+ "estado": "ok",
+ "clubId": "aellarissa-gr",
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.pdf",
+   "campo": "sin-dudas",
+   "valor": null,
+   "linea": null,
+   "motivo": "Guido 2026-10-03: se carga por función (costo de ventas + administración + comercialización); la nota 16 suma también los intereses (7.608,42) y el escalón 1 no la abre",
+   "evidencia": "AEL_FS_2023-06-30_a.md L238-256 y L593-599",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "2.737531 = 2.74514"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2022 de este documento suma ingresos 2.332679; el sitio tiene 2.332679"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 1.370526 en este documento y 1.370526 en AEL_FS_ELP_2024-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 2.332679 en AEL_FS_2022-06-30.pdf y 2.332679 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Κύκλος εργασιών (καθαρός)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la nota de \"(-) Λοιπά έξοδα και ζημιές\" tiene todas sus filas en 0 y da el renglón: queda el renglón, sin reintento",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se carga la nota 16 'Έξοδα' (L593-L599) como desglose por naturaleza de la suma de Κόστος πωλήσεων + Έξοδα διοίκησης + Έξοδα διάθεσης (L241, L245, L246), sin asignarla a un único renglón?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se asume escala en unidades (euros) para todos los bloques, aunque ningún bloque la declara?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 1.370526,
+  "gastos": 2.737531,
+  "financiero": -0.007607,
+  "impuesto": 0,
+  "resultadoImpreso": -1.374612,
+  "resultadoParaCargar": -1.374612,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "lado": "ingreso",
+   "M": 0.963953,
+   "pagina": 8,
+   "linea": 240,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Επιχορηγήσεις & διάφορα έσοδα πωλήσεων",
+   "lado": "ingreso",
+   "M": 0.113417,
+   "pagina": 19,
+   "linea": 585,
+   "origen": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\""
+  },
+  {
+   "etiqueta": "Έσοδα παρεπόμενων ασχολιών",
+   "lado": "ingreso",
+   "M": 0.293156,
+   "pagina": 19,
+   "linea": 586,
+   "origen": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\""
+  },
+  {
+   "etiqueta": "(+) Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 8,
+   "linea": 248,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(+) Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 8,
+   "linea": 249,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Κόστος πωλήσεων",
+   "lado": "gasto",
+   "M": 1.587768,
+   "pagina": 8,
+   "linea": 241,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 0.657007,
+   "pagina": 8,
+   "linea": 245,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Έξοδα διάθεσης",
+   "lado": "gasto",
+   "M": 0.492756,
+   "pagina": 8,
+   "linea": 246,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Λοιπά έξοδα και ζημιές",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 8,
+   "linea": 247,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "(+) Πιστωτικοί τόκοι και συναφή έσοδα",
+   "M": 0.000002,
+   "linea": 251
+  },
+  {
+   "etiqueta": "(-) Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.007608,
+   "linea": 252
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "(-) Φόροι εισοδήματος",
+   "M": 0,
+   "linea": 254
+  }
+ ]
+}

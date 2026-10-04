@@ -1,0 +1,474 @@
+{
+ "md": "Clubes/Colombia/Alianza FC/estados-financieros-2021.md",
+ "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2021.pdf",
+ "club": "alianza-fc",
+ "year": 2021,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:57:47.779Z",
+ "tieOuts": {
+  "cierran": 25,
+  "noCierran": 1
+ },
+ "warnings": [
+  "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 43,
+  "notasUsadas": [
+   "6"
+  ]
+ },
+ "ladoConocido": 44,
+ "rubros": [
+  {
+   "label": "GASTOS OPERACIONALES",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    4203771.681
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Gastos de personal",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    1564906.223
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    422166.398
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    47311.781
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    93532.254
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    17574.132
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    148307.294
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    2465.689
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    4340
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Gastos de viaje",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    254734.075
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Construcciones y Edificaciones",
+   "lado": "expense",
+   "page": 6,
+   "section": "### Propiedad planta y Equipo.",
+   "values": [
+    1289450.035
+   ],
+   "origen": "nota 6 (ancla 19)",
+   "ancla": "Diversos"
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    1554246.584
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Maquinaria y Equipo",
+   "lado": "expense",
+   "page": 6,
+   "section": "### Propiedad planta y Equipo.",
+   "values": [
+    38731.228
+   ],
+   "origen": "nota 6 (ancla 19)",
+   "ancla": "Diversos"
+  },
+  {
+   "label": "Equipos de oficina",
+   "lado": "expense",
+   "page": 6,
+   "section": "### Propiedad planta y Equipo.",
+   "values": [
+    34748.917
+   ],
+   "origen": "nota 6 (ancla 19)",
+   "ancla": "Diversos"
+  },
+  {
+   "label": "Equipo de computación y comunicación",
+   "lado": "expense",
+   "page": 6,
+   "section": "### Propiedad planta y Equipo.",
+   "values": [
+    4530.4
+   ],
+   "origen": "nota 6 (ancla 19)",
+   "ancla": "Diversos"
+  },
+  {
+   "label": "Flota y Equipo de Transporte",
+   "lado": "expense",
+   "page": 6,
+   "section": "### Propiedad planta y Equipo.",
+   "values": [
+    321918.059
+   ],
+   "origen": "nota 6 (ancla 19)",
+   "ancla": "Diversos"
+  },
+  {
+   "label": "Depreciación acumulada",
+   "lado": "expense",
+   "page": 6,
+   "section": "### Propiedad planta y Equipo.",
+   "values": [
+    -134538.625
+   ],
+   "origen": "nota 6 (ancla 19)",
+   "ancla": "Diversos"
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    94187.251
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "OPERACIONALES DE VENTA",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    4320952.962
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Gastos de personal",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    3353357.54
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Amortización de Derechos Deportivos",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    967595.422
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "GASTOS NO OPERACIONALES",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    1030481.303
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Financieros",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    241550.026
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Gastos Extraordinarios",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    464653.99
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Gastos Diversos",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    74028.925
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Impuesto de Renta (año anterior)",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    238250.139
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Costos (De Boletería)",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    6408.223
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Costos (De Artículos Deportivos)",
+   "lado": "expense",
+   "page": 11,
+   "section": "ALIANZA PETROLERA / # GASTOS",
+   "values": [
+    5590
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "OPERACIONALES",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    8545033.535
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Taquilla",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    128715
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Escuelas de Formación Deportiva",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    43049.6
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    1208260.504
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Dimayor",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    2533348.78
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Venta Derechos Deportivos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    1732078.783
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Prestamos Derechos Deportivos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    2083005.563
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Federación Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    670135
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Venta artículos deportivos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    25246.305
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Donaciones",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    20000
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Subsidio PAEF",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    101194
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "NO OPERACIONALES",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    1117428.934
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Arrendamiento",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    3168.067
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Recuperaciones",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    5190.317
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Financieros",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    1.04
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Diversos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    1109069.51
+   ],
+   "origen": "estado 18"
+  }
+ ]
+}

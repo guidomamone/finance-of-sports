@@ -1,0 +1,458 @@
+{
+  "club": "zultewaregem-be",
+  "year": 2012,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Zulte Waregem/jaarrekening-2012-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:56:09.911Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 49,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 12,
+  "relevantTableCount": 3,
+  "tables": [
+    {
+      "page": 4,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "50/53",
+          "values": [
+            "100.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "484.936"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "284.071"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "7.084.258"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "Nr. BE 0833.092.517 VKT 2.2 / PASSIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "EIGEN VERMOGEN 10/15",
+          "values": [
+            "29.372"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaal 5.3 |",
+          "values": [
+            "25.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geplaatst kapitaal",
+          "values": [
+            "100.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet-opgevraagd kapitaal",
+          "values": [
+            "75.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Uitgiftepremies 11 / Herwaarderingsmeerwaarden 12",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Reserves",
+          "values": [
+            "4.372"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wettelijke reserve",
+          "values": [
+            "4.372"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Beschikbare reserves 133 / Overgedragen winst (verlies) (+)/(-) 14 / Kapitaalsubsidies 15 / Voorschot aan de vennoten op de verdeling van het / netto-actief 19",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN",
+          "values": [
+            "34.871"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorzieningen voor risico's en kosten 5.4 | 160/5",
+          "values": [
+            "34.871"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "Uitgestelde belastingen 168",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "7.020.014"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 55 |",
+          "values": [
+            "2.485.917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "2.485.917"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Kredietinstellingen, leasingschulden en soortgelijke",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "schulden 172/3",
+          "values": [
+            "84.154"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige leningen 174/0",
+          "values": [
+            "2.401.763"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Schulden op meer dan één jaar die binnen het jaar / vervallen 42 14.492 / Financiële schulden 43 / Kredietinstellingen 430/8 / Overige leningen 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "2.548.963"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "2.548.963"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 361.468 / Schulden met betrekking tot belastingen,",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "bezoldigingen en sociale lasten",
+          "values": [
+            "402.933"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "70.902"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "332.032"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige schulden 47/48",
+          "values": [
+            "700.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 492/3",
+          "values": [
+            "506.241"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "7.084.258"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "RESULTATENREKENING",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "631/4",
+          "values": [
+            "19.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "635/7",
+          "values": [
+            "34.871"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "640/8",
+          "values": [
+            "7.760"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 16,
+      "section": "SOCIALE BALANS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Mannen 120 43",
+          "values": [
+            "44,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "lager onderwijs 1200 43",
+          "values": [
+            "44,2"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "secundair onderwijs 1201 / hoger niet-universitair onderwijs 1202 / universitair onderwijs 1203",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Vrouwen 121 4",
+          "values": [
+            "4,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "lager onderwijs 1210 4",
+          "values": [
+            "4,5"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "secundair onderwijs 1211 / hoger niet-universitair onderwijs 1212 / universitair onderwijs 1213 / Volgens de beroepscategorie / Directiepersoneel 130",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bedienden 134 44",
+          "values": [
+            "45,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arbeiders 132 3",
+          "values": [
+            "3,2"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 9,
+    "results": [
+      {
+        "label": "50/53",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "50/53",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "54/58",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "54/58",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "490/1",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "490/1",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "20/58",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "20/58",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Voorzieningen voor risico's en kosten 5.4 | 160/5",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Voorzieningen voor risico's en kosten 5.4 | 160/5",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "exceptional_items",
+        "matchedLabel": "Voorzieningen voor risico's en kosten",
+        "similarity": 80
+      },
+      {
+        "label": "631/4",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "631/4",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "635/7",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "635/7",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "640/8",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "640/8",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Zulte Waregem",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

@@ -1,0 +1,154 @@
+{
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2015.md",
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2015.pdf",
+ "club": "fredrikstad",
+ "year": 2015,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:22.409Z",
+ "tieOuts": {
+  "cierran": 40,
+  "noCierran": 8
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "12 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 11,
+  "notasUsadas": [
+   "3"
+  ]
+ },
+ "ladoConocido": 11,
+ "rubros": [
+  {
+   "label": "Varekostnad",
+   "lado": "revenue",
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "values": [
+    4.0189
+   ],
+   "origen": "nota 3 (ancla 0)",
+   "ancla": "Sum inntekter"
+  },
+  {
+   "label": "Sum inntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "FREDRIKSTAD FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "values": [
+    32.177542
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "revenue",
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "values": [
+    16.994686
+   ],
+   "origen": "nota 3 (ancla 0)",
+   "ancla": "Sum inntekter"
+  },
+  {
+   "label": "Avskrivning",
+   "lado": "revenue",
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "values": [
+    0.169916
+   ],
+   "origen": "nota 3 (ancla 0)",
+   "ancla": "Sum inntekter"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "revenue",
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "values": [
+    10.996404
+   ],
+   "origen": "nota 3 (ancla 0)",
+   "ancla": "Sum inntekter"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "FREDRIKSTAD FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "values": [
+    0.048832
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "FREDRIKSTAD FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "values": [
+    0.011356
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Overføringer annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "FREDRIKSTAD FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "values": [
+    0.035112
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 18,
+   "section": "## Fredrikstad Fotballklubb / ### Noter til regnskapet for 2015 / #### Note 3 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "values": [
+    14267.826
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 18,
+   "section": "## Fredrikstad Fotballklubb / ### Noter til regnskapet for 2015 / #### Note 3 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "values": [
+    2052.939
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 18,
+   "section": "## Fredrikstad Fotballklubb / ### Noter til regnskapet for 2015 / #### Note 3 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "values": [
+    211.498
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 18,
+   "section": "## Fredrikstad Fotballklubb / ### Noter til regnskapet for 2015 / #### Note 3 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "values": [
+    462.423
+   ],
+   "origen": "estado 6"
+  }
+ ]
+}

@@ -1,0 +1,247 @@
+{
+ "md": "Clubes/Noruega/Lillestrøm/aarsregnskap-2010.md",
+ "pdf": "Clubes/Noruega/Lillestrøm/aarsregnskap-2010.pdf",
+ "club": "lillestr-m",
+ "year": 2010,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:28.083Z",
+ "tieOuts": {
+  "cierran": 21,
+  "noCierran": 15
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "13 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "8 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 25,
+  "notasUsadas": []
+ },
+ "ladoConocido": 21,
+ "rubros": [
+  {
+   "label": "Medlemsinntekter og tilskudd",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    5.536887
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Serie- og cupinntekt",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    23.648987
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Reklame og sponsorinntekt",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    28.808617
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Kiosksalg, utleie og andre tiltak",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    11.155505
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Salg og utleie av spillere",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    1.308402
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Administrasjon",
+   "lado": "expense",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    4.201258
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Lønn/reise/diett",
+   "lado": "expense",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    44.072886
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Trening og utstyr",
+   "lado": "expense",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    5.806212
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Egne arrangementer",
+   "lado": "expense",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    3.281936
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Andres arrangementer",
+   "lado": "expense",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    0.616583
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Kjøp og leie av spillere",
+   "lado": "expense",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    1.544533
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Varekjøp kiosk, sponsor og andre tiltak",
+   "lado": "expense",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    14.802448
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Anleggskostnader",
+   "lado": "expense",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    5.52033
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Avskrivninger",
+   "lado": "expense",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    4.380532
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Tap på fordringer",
+   "lado": "expense",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    0.02835
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Finansinntekter",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    1.568679
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Finanskostnader",
+   "lado": "expense",
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    -0.76391
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Overført fra egenkapital",
+   "lado": null,
+   "page": 7,
+   "section": "# Resultatregnskap / ## Lillestrøm Sportsklubb",
+   "values": [
+    12.991901
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Lønn",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Note 6 Lønnskostnader",
+   "values": [
+    34494.357
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Note 6 Lønnskostnader",
+   "values": [
+    5503.159
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Note 6 Lønnskostnader",
+   "values": [
+    455.847
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Andre lønnsrelaterte ytelser",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Note 6 Lønnskostnader",
+   "values": [
+    3619.524
+   ],
+   "origen": "estado 14"
+  }
+ ]
+}

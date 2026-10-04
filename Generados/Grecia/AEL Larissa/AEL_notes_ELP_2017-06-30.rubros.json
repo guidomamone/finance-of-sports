@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2017-06-30.md",
+  "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2017-06-30.pdf",
+  "club": "aellarissa-gr",
+  "year": 2017,
+  "generatedAt": "2026-10-03T19:55:48.323Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Κύκλος εργασιών (καθαρός)",
+      "lado": "revenue",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        1.881042
+      ],
+      "glosa": "Cifra de negocios (neta)"
+    },
+    {
+      "label": "(+) Λοιπά συνήθη έσοδα",
+      "lado": "revenue",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.338744
+      ],
+      "glosa": "(+) Otros ingresos ordinarios"
+    },
+    {
+      "label": "(+) Λοιπά έσοδα και κέρδη",
+      "lado": "revenue",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "(+) Otros ingresos y ganancias"
+    },
+    {
+      "label": "(-) Κόστος πωλήσεων",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        1.477726
+      ],
+      "glosa": "(-) Coste de ventas"
+    },
+    {
+      "label": "(-) Έξοδα διοίκησης",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.611473
+      ],
+      "glosa": "(-) Gastos de administración"
+    },
+    {
+      "label": "(-) Έξοδα διάθεσης",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.458605
+      ],
+      "glosa": "(-) Gastos de comercialización"
+    },
+    {
+      "label": "(-) Λοιπά έξοδα και ζημιές",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.020179
+      ],
+      "glosa": "(-) Otros gastos y pérdidas"
+    }
+  ]
+}

@@ -1,0 +1,962 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/balanco-2014-b.md",
+ "generatedAt": "2026-10-03T03:28:42.400Z",
+ "rubrosHuella": "0ee0cec607311dbaf483ac4e6d5a50ba452fd746",
+ "rubros": [
+  {
+   "label": "117 3.1.01.01.0009 - DOAÇÕES RECEBIDAS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "35 3.1.01.01.0004 - LOCAÇÃO DE CADEIRA S/ASSENTOS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "matchday_competition",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "33 3.1.01.01.0002 - PATROCINIO EM PLACAS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "34 3.1.01.01.0003 - PATROCINIO NO ESTÁDIO",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "32 3.1.01.01.0001 - PATROCINIO NO UNIFORME",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "37 3.1.01.01.0006 - RECEITAS DO BAR",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "stadium_other",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "36 3.1.01.01.0005 - VENDAS DE INGRESSOS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "179 3.1.01.02.0003 - DEV. DE CONVÊNIO NÃO UTILIZAD",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "49 4.1.01.01.0010 - ACORDOS TRABALHISTAS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "41 4.1.01.01.0002 - AJUDA DE CUSTO",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "51 4.1.01.01.0012 - CURSOS E TREINAMENTOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "44 4.1.01.01.0005 - DIREITOS DE IMAGEM",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "58 4.1.01.01.0019 - CAFE DA MANHA",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ]
+   ],
+   "tokens": 839
+  },
+  {
+   "label": "46 4.1.01.01.0007 - FGTS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "159 3.1.01.01.0012 - CESSÃO EXPLORAÇÃO PUBLICIDADE",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.8
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1111
+  },
+  {
+   "label": "45 4.1.01.01.0006 - INSS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "57 4.1.01.01.0018 - LANCHES",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "62 4.1.01.01.0023 - MATERIAIS ESPORTIVOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "60 4.1.01.01.0021 - MEDICAMENTOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "50 4.1.01.01.0011 - ASSISTENCIA MÉDICA E SOCIAL",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "wages_squad",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "184 4.1.01.01.0031 - ANUIDADE CBF E FEDER.PAULISTA",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "56 4.1.01.01.0017 - REFEIÇÕES",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "48 4.1.01.01.0009 - RESCISOES E HOMOLOGAÇOES",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "40 4.1.01.01.0001 - SALARIOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "55 4.1.01.01.0016 - ALUGUEL MORADIA COM TECNICA",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "wages_squad",
+     0.11
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "71 4.1.01.01.0025 - SERVIÇOS DE FISIOTERAPIA",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.31,
+   "desdeCache": true
+  },
+  {
+   "label": "70 4.1.01.01.0024 - SERVIÇOS E EXAMES MÉDICOS",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "61 4.1.01.01.0022 - SUPLEMENTOS ALIMENTARES",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "89 4.1.01.01.0028 - TAXA DE LIBERAÇÃO DE ATLETAS",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "player_amortisation",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "88 4.1.01.01.0027 - TAXA FED PAULISTA,FAAP,CBF/INS",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "180 3.1.01.01.0013 - CESSÃO ECONOMICO DO JOGADOR",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "74 5.1.01.01.0009 - ASSESSORIA ADMINISTRATIVA",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "73 5.1.01.01.0008 - ASSESSORIA DE MARKETING",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "76 5.1.01.01.0011 - ASSESSORIA ESPORTIVA",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "47 4.1.01.01.0008 - FERIAS E 13º SALARIO",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "97 5.1.01.01.0020 - ASSINATURAS E ANUIDADES",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "144 3.1.01.01.0011 - CESSÃO DIREITO EXPLOR.EVENTOS",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "stadium_other",
+     0.19
+    ],
+    [
+     "broadcasting",
+     0.01
+    ]
+   ],
+   "tokens": 1106
+  },
+  {
+   "label": "95 5.1.01.01.0018 - CORREIOS",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "93 5.1.01.01.0017 - DESPESAS CARTORARIAS",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "186 4.1.01.01.0032 - PIS FOLHA PAGAMENTO",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "wages_squad",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "54 4.1.01.01.0015 - OUTROS BENEFICIOS",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "wages_squad",
+     0.16
+    ],
+    [
+     "youth_other_sports_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "72 5.1.01.01.0007 - HONORARIOS CONTABILIDADE",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "108 5.1.01.01.0024 - I.S.S.Q.N",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "77 5.1.01.01.0012 - MANUTENÇÃO E HOSPEDAGEM SITE",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "65 5.1.01.01.0003 - MATERIAIS DE ESCRITORIO",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "64 5.1.01.01.0002 - MATERIAIS DE HIGIENE E LIMPEZA",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "68 5.1.01.01.0004 - MATERIAIS DIVERSOS",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "63 5.1.01.01.0001 - MATERIAS DE MANUTENÇÃO GERAL",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "52 4.1.01.01.0013 - SEGURO PESSOAL",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "wages_squad",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "94 5.1.01.01.0016 - MULTAS",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "80 5.1.01.01.0013 - SEGURANÇA PATRIMONIAL",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "82 5.1.01.01.0014 - SERVIÇOS LIMPEZA E MANUTENÇÃO",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "96 5.1.01.01.0019 - TELEFONE",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "101 5.1.02.02.0013 - ALUGUEL DE ACADEMIA",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "87 4.1.01.01.0030 - I.R.R.FONTE",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0.03
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "102 5.1.02.02.0014 - DESPESAS COM JOGOS",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "98 5.1.02.02.0010 - ENERGIA ELETRICA",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "59 4.1.01.01.0020 - UNIFORME",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "wages_squad",
+     0.09
+    ]
+   ],
+   "tokens": 1127
+  },
+  {
+   "label": "83 5.1.02.02.0004 - LAVANDERIA",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "78 5.1.02.02.0002 - MANUTENÇAO GERAL",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "66 5.1.02.02.0001 - MATERIAIS P/ ALOJAMENTO",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "84 5.1.02.02.0005 - PINTURA DE PLACAS",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "79 5.1.02.02.0003 - SEGURANÇA E POLICIAMENTO JOGOS",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "90 5.1.02.02.0007 - TAXA DE ARBITRAGEM",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "91 5.1.02.02.0008 - TAXA DE VISTORIA DO ESTADIO",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "85 5.1.02.02.0006 - TRANSPORTE DE JOGADORES",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "92 5.1.02.02.0009 - VIAGENS E ESTADIAS",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "99 5.1.02.02.0011 - AGUA E ESGOTO",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "75 5.1.01.01.0010 - ASSESSORIA JURÍDICA",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "181 5.1.01.01.0027 - ESTADIAS",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "123 5.1.01.01.0026 - COMBUSTIVEIS E LUBRIFICANTES",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1183
+  },
+  {
+   "label": "69 5.1.01.01.0006 - MOVEIS E UTENS. PEQ VALOR",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "depreciation",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "109 5.1.01.01.0025 - FRETES, CARRETOS E TRANSPORTES",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con D)",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "124 5.1.02.02.0017 - FRETES E CARRETOS",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 995
+  },
+  {
+   "label": "100 5.1.02.02.0012 - ASSOCIAÇÕES RECREATIVAS",
+   "lado": "expense",
+   "page": 2,
+   "section": "estado (lectura 5: hoja con C)",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "youth_other_sports_expense",
+     0.18000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.15
+    ]
+   ],
+   "tokens": 934
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "md": "Clubes/Grecia/Panserraikos/Panserraikos_board_minutes_2025-06-30.md",
+ "pdf": "Clubes/Grecia/Panserraikos/Panserraikos_board_minutes_2025-06-30.pdf",
+ "club": "panserraikos",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:03:36.492Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 7,
+  "notasUsadas": []
+ },
+ "ladoConocido": 6,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 3,
+   "section": "# ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024/2025 / ΠΕΡΙΟΔΟΣ 1/7/2024 - 30/6/2025 / # ΣΤΟΙΧΕΙΑ ΕΚΘΕΣΗΣ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ",
+   "values": [
+    4.700403
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 3,
+   "section": "# ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024/2025 / ΠΕΡΙΟΔΟΣ 1/7/2024 - 30/6/2025 / # ΣΤΟΙΧΕΙΑ ΕΚΘΕΣΗΣ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ",
+   "values": [
+    1.501129
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 3,
+   "section": "# ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024/2025 / ΠΕΡΙΟΔΟΣ 1/7/2024 - 30/6/2025 / # ΣΤΟΙΧΕΙΑ ΕΚΘΕΣΗΣ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ",
+   "values": [
+    -2.407198
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 3,
+   "section": "# ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024/2025 / ΠΕΡΙΟΔΟΣ 1/7/2024 - 30/6/2025 / # ΣΤΟΙΧΕΙΑ ΕΚΘΕΣΗΣ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ",
+   "values": [
+    -2.153245
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 3,
+   "section": "# ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024/2025 / ΠΕΡΙΟΔΟΣ 1/7/2024 - 30/6/2025 / # ΣΤΟΙΧΕΙΑ ΕΚΘΕΣΗΣ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ",
+   "values": [
+    -1.741122
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 4,
+   "section": "",
+   "values": [
+    -0.011172
+   ],
+   "origen": "estado 1"
+  }
+ ]
+}

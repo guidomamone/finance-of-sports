@@ -1,0 +1,377 @@
+{
+ "md": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2013.md",
+ "pdf": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2013.pdf",
+ "club": "criciuma",
+ "year": 2013,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:52:04.590Z",
+ "tieOuts": {
+  "cierran": 6,
+  "noCierran": 4
+ },
+ "warnings": [
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 35,
+  "notasUsadas": [
+   "19"
+  ]
+ },
+ "ladoConocido": 20,
+ "rubros": [
+  {
+   "label": "Futebol",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    31.284433
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Sócios",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    10.343313
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "MESP - Projeto Formação Atletas – nota 5",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    1.422656
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Extraordinárias",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    0.705478
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Venda de mercadorias",
+   "lado": "revenue",
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    0.795949
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Royalties",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    0.292131
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Outras receitas",
+   "lado": "revenue",
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    0.155927
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento profissional",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    -28.077497
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento amador",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    -2.028453
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento administrativo",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    -0.856767
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento marketing e comercial",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    -0.971574
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento financeiro",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    -0.14397
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento de patrimônio",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    -3.331551
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento jurídico",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    -1.271965
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Departamento loja Tigre Maníacos",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    -0.25209
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    -0.420794
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Receitas financeiras – nota 16",
+   "lado": "revenue",
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    0.048876
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Despesas financeiras – nota 16",
+   "lado": "expense",
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    -1.405748
+   ],
+   "origen": "estado 1 (su nota queda consumida sin abrir)"
+  },
+  {
+   "label": "Imobilizado",
+   "lado": null,
+   "page": 11,
+   "section": "### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / ##### i Provisões ativas e passivas / ##### j Apuração do resultado / ##### k Mudanças nas políticas contábeis e reclassificações das cifras comparativas",
+   "values": [
+    46.299793
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Intangível",
+   "lado": null,
+   "page": 11,
+   "section": "### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / ##### i Provisões ativas e passivas / ##### j Apuração do resultado / ##### k Mudanças nas políticas contábeis e reclassificações das cifras comparativas",
+   "values": [
+    0.574119
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Terrenos",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "values": [
+    28198.475
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Edificações",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "values": [
+    17252.828
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Veículos",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "values": [
+    97.076
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Equipamentos informática",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "values": [
+    113.01
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Máquinas e equipamentos",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "values": [
+    892.726
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Móveis e utensílios",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "values": [
+    272.921
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Obras em execução",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "values": [
+    2057.626
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Hypermarcas",
+   "lado": "revenue",
+   "page": 15,
+   "section": "#### 11 Receitas de patrocínios a realizar",
+   "values": [
+    375
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Siecesc - Sindicato das Indústrias de Carvão",
+   "lado": "revenue",
+   "page": 15,
+   "section": "#### 11 Receitas de patrocínios a realizar",
+   "values": [
+    180
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "CBSM - Companhia Bras. dos Serv. Marketing S.A",
+   "lado": "revenue",
+   "page": 15,
+   "section": "#### 11 Receitas de patrocínios a realizar",
+   "values": [
+    771.924
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Resicolor Indus. Produtos Químicos",
+   "lado": "revenue",
+   "page": 15,
+   "section": "#### 11 Receitas de patrocínios a realizar",
+   "values": [
+    190
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Atletas formados",
+   "lado": "expense",
+   "page": 14,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    0.142933
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Atletas em formação",
+   "lado": "expense",
+   "page": 14,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "values": [
+    2.344294
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "MESP – Projeto de Formação Atletas Amadores (i)",
+   "lado": "revenue",
+   "page": 16,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 12 Receitas de subvenções a realizar",
+   "values": [
+    2.217297
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "MESP – Projeto Construção Centro de Treinamento (i)",
+   "lado": "revenue",
+   "page": 16,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 12 Receitas de subvenções a realizar",
+   "values": [
+    4.156272
+   ],
+   "origen": "estado 15"
+  }
+ ]
+}

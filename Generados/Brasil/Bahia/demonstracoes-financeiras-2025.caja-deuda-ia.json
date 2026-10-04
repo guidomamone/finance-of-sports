@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-2025.md",
+ "generado": "2026-10-02T00:11:42.072Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de Reais)",
+ "caja": {
+  "lineas": [
+   169
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no presenta préstamos ni financiamientos bancarios; existen 'Contas a pagar a partes relacionadas' (L180, 36.841) que podrían considerarse deuda con el grupo controlador, pero no se clasificaron como deuda financiera bancaria."
+}

@@ -1,0 +1,1961 @@
+{
+ "md": "Clubes/Colombia/La Equidad/estados-financieros-2025.md",
+ "generatedAt": "2026-09-30T04:28:09.455Z",
+ "rubros": [
+  {
+   "label": "Prendas Escuelas Attle",
+   "lado": "revenue",
+   "page": 20,
+   "section": "#### Nota 7. Inventarios",
+   "choice": "youth_football",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "youth_football",
+     0.72
+    ],
+    [
+     "other_income",
+     0.14
+    ],
+    [
+     "sponsorship_commercial",
+     0.1
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Zapato Deportivo",
+   "lado": "revenue",
+   "page": 20,
+   "section": "#### Nota 7. Inventarios",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "sponsorship_commercial",
+     0.18
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 874
+  },
+  {
+   "label": "Indumentaria Umbro Femenino",
+   "lado": "revenue",
+   "page": 20,
+   "section": "#### Nota 7. Inventarios",
+   "choice": "womens_football",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "womens_football",
+     0.79
+    ],
+    [
+     "sponsorship_commercial",
+     0.15
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Prendas Attle Fuerzas Básicas",
+   "lado": "revenue",
+   "page": 20,
+   "section": "#### Nota 7. Inventarios",
+   "choice": "youth_football",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "youth_football",
+     0.45
+    ],
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "sponsorship_commercial",
+     0.12
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "Indumentaria Deportiva",
+   "lado": "revenue",
+   "page": 20,
+   "section": "#### Nota 7. Inventarios",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "other_sports",
+     0.01
+    ]
+   ],
+   "tokens": 986
+  },
+  {
+   "label": "Prendas Attle Equipo Profesional",
+   "lado": "revenue",
+   "page": 20,
+   "section": "#### Nota 7. Inventarios",
+   "choice": "womens_football",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "womens_football",
+     0.41000000000000003
+    ],
+    [
+     "sponsorship_commercial",
+     0.33
+    ],
+    [
+     "other_income",
+     0.14
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Balones",
+   "lado": "revenue",
+   "page": 20,
+   "section": "#### Nota 7. Inventarios",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "Prendas Para La Venta Kimo, Saeta, Puma, Otros",
+   "lado": "revenue",
+   "page": 20,
+   "section": "#### Nota 7. Inventarios",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.56
+    ],
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Taquilla - Venta de Boletería",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1088
+  },
+  {
+   "label": "Reserva Legal",
+   "lado": null,
+   "page": 30,
+   "section": "## Aplicación de los resultados / ## Reserva Legal",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1392
+  },
+  {
+   "label": "Federacion Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "choice": "competition_bonus",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "competition_bonus",
+     0.94
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Resultado Del Ejercicio",
+   "lado": null,
+   "page": 30,
+   "section": "## Resultado del ejercicio",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1450
+  },
+  {
+   "label": "Indumentaria Umbro Fuerzas Básicas",
+   "lado": "revenue",
+   "page": 20,
+   "section": "#### Nota 7. Inventarios",
+   "choice": "other_income",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "youth_football",
+     0.33
+    ],
+    [
+     "sponsorship_commercial",
+     0.22
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Dimayor",
+   "lado": null,
+   "page": 36,
+   "section": "## Nota 27. Saldo y transacciones con partes relacionadas / ## Nota 28. Detalle ingresos y gastos EQUIPO FEMENINO",
+   "choice": "broadcasting",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "broadcasting",
+     0.99
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Publicidad y Propaganda",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Devoluciones en Ventas",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Patrocinio",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Escuelas de Futbol",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "choice": "youth_football",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "youth_football",
+     0.98
+    ],
+    [
+     "education",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Actividades Conexas",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Ingresos Fuerzas Basicas",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "choice": "youth_football",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "youth_football",
+     0.93
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Venta de Artículos Deportivos",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Reembolso Arbitrajes",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "Derechos Tv Cerrada Dimayor",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Derechos Tv Rcn Abierta Dimayor",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Derechos Tv Variable Cerradawin Sport",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "choice": "broadcasting",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "broadcasting",
+     0.96
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Derechos Tv Internal",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "choice": "broadcasting",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "broadcasting",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Derechos Tv Variable On Line Win Sports",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Auxilio Transporte",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "choice": "competition_bonus",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "competition_bonus",
+     0.83
+    ],
+    [
+     "other_income",
+     0.14
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Contrato Genius Videos Ofic. Para Apuestas",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.95
+    ],
+    [
+     "broadcasting",
+     0.05
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Auxilio Hotelero",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "choice": "competition_bonus",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "competition_bonus",
+     0.88
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "broadcasting",
+     0.05
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Derechos Tv Cerrada Variable Canal Premium",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Auxilio Logístico",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "choice": "competition_bonus",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "competition_bonus",
+     0.7
+    ],
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Ingresos de Ejercicios Anteriores",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Costo de Venta Artículos Deportivos",
+   "lado": null,
+   "page": 33,
+   "section": "## Nota 21. Costo de Ventas",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1520
+  },
+  {
+   "label": "Reintegro de Otros Costos y Gastos",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Venta Derechos Deportivos",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Recobro Incapacidades",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Financieros",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 833
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 982
+  },
+  {
+   "label": "Rendimientos Financieros",
+   "lado": "revenue",
+   "page": 34,
+   "section": "AFILIADO AL",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "member_dues",
+     0.08
+    ]
+   ],
+   "tokens": 825
+  },
+  {
+   "label": "Ajuste al Peso",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 960
+  },
+  {
+   "label": "Diferencia en Cambio",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Gastos De Personal",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "wages_squad",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Descuentos Comerciales Condicionados",
+   "lado": "revenue",
+   "page": 34,
+   "section": "AFILIADO AL",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "sponsorship_commercial",
+     0.2
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 37,
+   "section": "FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 37,
+   "section": "FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 988
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1196
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Mantenimiento y Reparaciones",
+   "lado": "expense",
+   "page": 37,
+   "section": "FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Contribuciones",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1119
+  },
+  {
+   "label": "Adecuación E Instalación",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.56
+    ],
+    [
+     "match_organisation_expense",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1230
+  },
+  {
+   "label": "Gastos de Viaje",
+   "lado": "expense",
+   "page": 37,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 976
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Legales",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1129
+  },
+  {
+   "label": "Adecuacion E Instalacion",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1249
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "choice": "other_amortisation",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_amortisation",
+     0.65
+    ],
+    [
+     "player_amortisation",
+     0.23
+    ],
+    [
+     "depreciation",
+     0.06
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Amortizaciones Donaciones Derechos",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "choice": "other_amortisation",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_amortisation",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Provision",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "choice": "player_impairment",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "player_impairment",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 947
+  },
+  {
+   "label": "Gastos Bancarios",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Comisiones",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.41
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Derechos Deportivos",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "choice": "player_amortisation",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "player_amortisation",
+     0.9
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Intereses",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 861
+  },
+  {
+   "label": "Costas y procesos Juridicos",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "exceptional_items",
+     0.09
+    ]
+   ],
+   "tokens": 808
+  },
+  {
+   "label": "Costos y Gastos de Ejercicios",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "choice": "exceptional_items",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "exceptional_items",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Impuestos Asumidos",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "choice": "exceptional_items",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "exceptional_items",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Donaciones",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 930
+  },
+  {
+   "label": "Multas, Sanciones y Litigios",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Impuestos Renta Periodos anteriores",
+   "lado": "expense",
+   "page": 36,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO N° / ## Nota 26. Gasto por impuesto / ### Impuesto de Renta",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "exceptional_items",
+     0.23
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Ingresos No Operacionales",
+   "lado": null,
+   "page": 36,
+   "section": "## Nota 27. Saldo y transacciones con partes relacionadas / ## Nota 28. Detalle ingresos y gastos EQUIPO FEMENINO",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1479
+  },
+  {
+   "label": "Impuesto de Renta Y Complementarios",
+   "lado": "expense",
+   "page": 36,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO N° / ## Nota 26. Gasto por impuesto / ### Impuesto de Renta",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 952
+  },
+  {
+   "label": "Impuesto Diferido Activo",
+   "lado": "expense",
+   "page": 36,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO N° / ## Nota 26. Gasto por impuesto / ### Impuesto de Renta",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 949
+  },
+  {
+   "label": "Conmebol - Federación Colombiana",
+   "lado": null,
+   "page": 36,
+   "section": "## Nota 27. Saldo y transacciones con partes relacionadas / ## Nota 28. Detalle ingresos y gastos EQUIPO FEMENINO",
+   "choice": "competition_bonus",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "competition_bonus",
+     0.96
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "womens_football",
+     0.01
+    ]
+   ],
+   "tokens": 1530
+  },
+  {
+   "label": "Otros Ingresos",
+   "lado": null,
+   "page": 36,
+   "section": "## Nota 27. Saldo y transacciones con partes relacionadas / ## Nota 28. Detalle ingresos y gastos EQUIPO FEMENINO",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "womens_football",
+     0.01
+    ]
+   ],
+   "tokens": 1462
+  },
+  {
+   "label": "Taquillas",
+   "lado": null,
+   "page": 36,
+   "section": "## Nota 27. Saldo y transacciones con partes relacionadas / ## Nota 28. Detalle ingresos y gastos EQUIPO FEMENINO",
+   "choice": "matchday_competition",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "womens_football",
+     0.01
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1454
+  },
+  {
+   "label": "Publicidad y Patrocinio de Vallas",
+   "lado": null,
+   "page": 36,
+   "section": "## Nota 27. Saldo y transacciones con partes relacionadas / ## Nota 28. Detalle ingresos y gastos EQUIPO FEMENINO",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "womens_football",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Cuerpo Técnico",
+   "lado": "revenue",
+   "page": 36,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "lump_football_operations",
+     0.31
+    ],
+    [
+     "other_sports",
+     0.01
+    ]
+   ],
+   "tokens": 814
+  },
+  {
+   "label": "Otros Gastos",
+   "lado": "expense",
+   "page": 37,
+   "section": "FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Gastos No Operacionales",
+   "lado": "expense",
+   "page": 37,
+   "section": "FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Equipo Femenino Profesional",
+   "lado": "revenue",
+   "page": 36,
+   "section": "",
+   "choice": "womens_football",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "womens_football",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Gastos Equipo Profesional Y Divisiones Menores",
+   "lado": "expense",
+   "page": 37,
+   "section": "FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "lump_football_operations_expense",
+     0.31
+    ],
+    [
+     "youth_other_sports_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Servi. Pub. - Aseo Y Otros",
+   "lado": "expense",
+   "page": 37,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 967
+  }
+ ]
+}

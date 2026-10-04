@@ -1,0 +1,374 @@
+{
+  "md": "Clubes/Croacia/Osijek/financijsko-izvjesce-2019.md",
+  "pdf": "Clubes/Croacia/Osijek/financijsko-izvjesce-2019.pdf",
+  "club": "osijek-hr",
+  "year": 2019,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:59:43.020Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 32,
+    "notasUsadas": []
+  },
+  "ladoConocido": 27,
+  "rubros": [
+    {
+      "label": "Ostali nerazvrstani poslovni prihodi",
+      "lado": "revenue",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        2.540688
+      ],
+      "origen": "estado 8",
+      "glosa": "Otros ingresos de explotación no clasificados"
+    },
+    {
+      "label": "Plaće igrača",
+      "lado": "expense",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -33.652227
+      ],
+      "origen": "estado 8",
+      "glosa": "Salarios de jugadores"
+    },
+    {
+      "label": "Ostali nerazvrstani troškovi primanja igrača",
+      "lado": "expense",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -4.516468
+      ],
+      "origen": "estado 8",
+      "glosa": "Otras remuneraciones de jugadores no clasificadas"
+    },
+    {
+      "label": "Plaće ostalih zaposlenika",
+      "lado": null,
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -11.302021
+      ],
+      "origen": "estado 8",
+      "glosa": "Salarios de otros empleados"
+    },
+    {
+      "label": "Porezi i doprinosi - ostali zaposlenici",
+      "lado": "expense",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -6.829855
+      ],
+      "origen": "estado 8",
+      "glosa": "Impuestos y cargas sociales - otros empleados"
+    },
+    {
+      "label": "Ostali nerazvrstani troškovi za primanja ostalih zaposlenike",
+      "lado": "expense",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -0.96757
+      ],
+      "origen": "estado 8",
+      "glosa": "Otras retribuciones no clasificadas de otros empleados"
+    },
+    {
+      "label": "Umanjenje vrijednosti dugotrajne materijalne imovine",
+      "lado": "expense",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -0.763312
+      ],
+      "origen": "estado 8",
+      "glosa": "Deterioro de valor del inmovilizado material"
+    },
+    {
+      "label": "Amortizacija ostale nematerijalne imovine (bez registracija igrača)",
+      "lado": "expense",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -1.57395
+      ],
+      "origen": "estado 8",
+      "glosa": "Amortización de otro inmovilizado intangible (excluidas inscripciones de jugadores)"
+    },
+    {
+      "label": "Smanjenje vrijednosti i amortizacija - Ukupno (bez registracija igrača)",
+      "lado": "expense",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -2.337262
+      ],
+      "origen": "estado 8",
+      "glosa": "Deterioro de valor y amortización - Total (excluidas inscripciones de jugadores)"
+    },
+    {
+      "label": "Troškovi održavanja utakmica",
+      "lado": "expense",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -10.088674
+      ],
+      "origen": "estado 8",
+      "glosa": "Gastos de organización de partidos"
+    },
+    {
+      "label": "Troškovi sponzorstva i oglašavanja",
+      "lado": "expense",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -3.733059
+      ],
+      "origen": "estado 8",
+      "glosa": "Gastos de patrocinio y publicidad"
+    },
+    {
+      "label": "Troškovi komercijalnih aktivnosti",
+      "lado": "expense",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -0.737625
+      ],
+      "origen": "estado 8",
+      "glosa": "Gastos de actividades comerciales"
+    },
+    {
+      "label": "Troškovi posrednika",
+      "lado": "expense",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -0.18477
+      ],
+      "origen": "estado 8",
+      "glosa": "Gastos de intermediarios y agentes"
+    },
+    {
+      "label": "Troškovi za nenogometne djelatnosti",
+      "lado": "expense",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -11.447983
+      ],
+      "origen": "estado 8",
+      "glosa": "Gastos de actividades no futbolísticas"
+    },
+    {
+      "label": "Ostali nerazvrstani poslovni rashodi",
+      "lado": "expense",
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -11.553538
+      ],
+      "origen": "estado 8",
+      "glosa": "Otros gastos de explotación no clasificados"
+    },
+    {
+      "label": "Poslovni rezultat (bez registracije igrača)",
+      "lado": null,
+      "page": 11,
+      "section": "NK OSIJEK Osijek                RAČUN DOBITI I GUBITKA",
+      "values": [
+        -21.075066
+      ],
+      "origen": "estado 8",
+      "glosa": "Resultado de explotación (excluidas inscripciones de jugadores)"
+    },
+    {
+      "label": "Prihodi od ulaznica - Nacionalna natjecanja",
+      "lado": "revenue",
+      "page": 10,
+      "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+      "values": [
+        1.577088
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos por taquilla - Competiciones nacionales"
+    },
+    {
+      "label": "Prihodi od ulaznica - godišnje ulaznice",
+      "lado": "revenue",
+      "page": 10,
+      "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+      "values": [
+        0.55682
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos por taquilla - Abonos de temporada"
+    },
+    {
+      "label": "Prihodi od ulaznica - Članarine",
+      "lado": "revenue",
+      "page": 10,
+      "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+      "values": [
+        0.15952
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos por taquilla - Cuotas de socios"
+    },
+    {
+      "label": "Prihod od sponzorstva i oglašavanja - Glavni sponzor",
+      "lado": "revenue",
+      "page": 10,
+      "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+      "values": [
+        26.417913
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos por patrocinio y publicidad - Patrocinador principal"
+    },
+    {
+      "label": "Prihod od sponzorstva i oglašavanja - Reklamni panoi oko terena za igru",
+      "lado": "revenue",
+      "page": 10,
+      "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+      "values": [
+        39.259066
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos por patrocinio y publicidad - Publicidad perimetral en el terreno de juego"
+    },
+    {
+      "label": "Prava emitiranja - Nacionalna natjecanja",
+      "lado": "revenue",
+      "page": 10,
+      "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+      "values": [
+        2.134563
+      ],
+      "origen": "estado 7",
+      "glosa": "Derechos de retransmisión - Competiciones nacionales"
+    },
+    {
+      "label": "Komercijalni prihodi - Prodaja proizvoda",
+      "lado": "revenue",
+      "page": 10,
+      "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+      "values": [
+        0.217984
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos comerciales - Venta de productos"
+    },
+    {
+      "label": "Uefina klupska natjecanja - solidarne uplate",
+      "lado": null,
+      "page": 10,
+      "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+      "values": [
+        2.18336
+      ],
+      "origen": "estado 7",
+      "glosa": "Competiciones de clubes de la UEFA - Pagos de solidaridad"
+    },
+    {
+      "label": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
+      "lado": null,
+      "page": 10,
+      "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+      "values": [
+        0.462082
+      ],
+      "origen": "estado 7",
+      "glosa": "Donaciones y subvenciones u otros importes de organismos futbolísticos nacionales"
+    },
+    {
+      "label": "Donacije i dotacije ili drugi iznosi od države i lokalne samouprave",
+      "lado": null,
+      "page": 10,
+      "section": "RAČUN DOBITI I GUBITKA / RAČUN DOBITI I GUBITKA",
+      "values": [
+        0.766902
+      ],
+      "origen": "estado 7",
+      "glosa": "Donaciones y subvenciones u otros importes de la administración estatal y local"
+    },
+    {
+      "label": "Troškovi za stjecanje registracija igrača",
+      "lado": "expense",
+      "page": 12,
+      "section": "RAČUN DOBITI I GUBITKA",
+      "values": [
+        -13.918244
+      ],
+      "origen": "estado 9",
+      "glosa": "Gastos por adquisición de inscripciones de jugadores"
+    },
+    {
+      "label": "Prihodi od raspolaganja registracijama igrača",
+      "lado": "revenue",
+      "page": 12,
+      "section": "RAČUN DOBITI I GUBITKA",
+      "values": [
+        37.452392
+      ],
+      "origen": "estado 9",
+      "glosa": "Ingresos por enajenación de inscripciones de jugadores"
+    },
+    {
+      "label": "Financijski prihodi",
+      "lado": "revenue",
+      "page": 12,
+      "section": "RAČUN DOBITI I GUBITKA",
+      "values": [
+        0.592055
+      ],
+      "origen": "estado 9",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Financijski rashodi",
+      "lado": "expense",
+      "page": 12,
+      "section": "RAČUN DOBITI I GUBITKA",
+      "values": [
+        -1.646489
+      ],
+      "origen": "estado 9",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Umanjenje vrijednosti dugotrajne materijalne imovine",
+      "lado": "expense",
+      "page": 18,
+      "section": "#### Rashodi amortizacije",
+      "values": [
+        763.312
+      ],
+      "origen": "estado 14",
+      "glosa": "Deterioro de valor del inmovilizado material"
+    },
+    {
+      "label": "Amortizacija ostale nematerijalne imovine (bez registracija igrača)",
+      "lado": "expense",
+      "page": 18,
+      "section": "#### Rashodi amortizacije",
+      "values": [
+        1573.95
+      ],
+      "origen": "estado 14",
+      "glosa": "Amortización de otro inmovilizado intangible (excluidas inscripciones de jugadores)"
+    }
+  ]
+}

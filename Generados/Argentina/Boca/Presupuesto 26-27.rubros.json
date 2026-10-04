@@ -1,0 +1,933 @@
+{
+  "md": "Clubes/Argentina/Boca/Presupuesto 26-27.md",
+  "pdf": "Clubes/Argentina/Boca/Presupuesto 26-27.pdf",
+  "club": "boca",
+  "year": 0,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:50:48.940Z",
+  "tieOuts": {
+    "cierran": 62,
+    "noCierran": 8
+  },
+  "warnings": [
+    "8 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ],
+  "estadoDeResultados": false,
+  "seleccion": {
+    "ok": true,
+    "filas": 81,
+    "notasUsadas": [
+      "2",
+      "9"
+    ]
+  },
+  "ladoConocido": 82,
+  "rubros": [
+    {
+      "label": "Remuneraciones S.A.C. y C.S.",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        3539.035
+      ],
+      "origen": "estado 17",
+      "glosa": "Remuneraciones S.A.C. y C.S."
+    },
+    {
+      "label": "Remuneraciones Plantel, S.A.C. y Cs. Sociales",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        8819.925
+      ],
+      "origen": "estado 17",
+      "glosa": "Remuneraciones Plantel, S.A.C. y Cs. Sociales"
+    },
+    {
+      "label": "Agasajos, Buffet y Refrigerios",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        168.972
+      ],
+      "origen": "estado 17",
+      "glosa": "Agasajos, Buffet y Refrigerios"
+    },
+    {
+      "label": "Alquiler Vivienda",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        129.97
+      ],
+      "origen": "estado 17",
+      "glosa": "Alquiler Vivienda"
+    },
+    {
+      "label": "Artículos de Deporte",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        5.926
+      ],
+      "origen": "estado 17",
+      "glosa": "Artículos de Deporte"
+    },
+    {
+      "label": "Gastos Alojamiento",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        410.296
+      ],
+      "origen": "estado 17",
+      "glosa": "Gastos Alojamiento"
+    },
+    {
+      "label": "Gastos Pretemporada",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        659.769
+      ],
+      "origen": "estado 17",
+      "glosa": "Gastos Pretemporada"
+    },
+    {
+      "label": "Honorarios",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        26.5
+      ],
+      "origen": "estado 17",
+      "glosa": "Honorarios"
+    },
+    {
+      "label": "Mantenimiento Campo de Juego",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        86.184
+      ],
+      "origen": "estado 17",
+      "glosa": "Mantenimiento Campo de Juego"
+    },
+    {
+      "label": "Mantenimiento Inmueble y Muebles",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        9.896
+      ],
+      "origen": "estado 17",
+      "glosa": "Mantenimiento Inmueble y Muebles"
+    },
+    {
+      "label": "Obsequios",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        8.179
+      ],
+      "origen": "estado 17",
+      "glosa": "Obsequios"
+    },
+    {
+      "label": "Prima cuerpo tecnico",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        2698.975
+      ],
+      "origen": "estado 17",
+      "glosa": "Prima cuerpo tecnico"
+    },
+    {
+      "label": "Prima Jugadores",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        45538.138
+      ],
+      "origen": "estado 17",
+      "glosa": "Prima Jugadores"
+    },
+    {
+      "label": "Seguros",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        13.475
+      ],
+      "origen": "estado 17",
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Servicios y Abonos Varios",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        20.32
+      ],
+      "origen": "estado 17",
+      "glosa": "Servicios y Abonos Varios"
+    },
+    {
+      "label": "Tasas y Sellados",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        3.461
+      ],
+      "origen": "estado 17",
+      "glosa": "Tasas y Sellados"
+    },
+    {
+      "label": "Telefonía",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        1.264
+      ],
+      "origen": "estado 17",
+      "glosa": "Telefonía"
+    },
+    {
+      "label": "Viajes y Viaticos",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        776.325
+      ],
+      "origen": "estado 17",
+      "glosa": "Viajes y Viaticos"
+    },
+    {
+      "label": "Vigilancia",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        388.043
+      ],
+      "origen": "estado 17",
+      "glosa": "Vigilancia"
+    },
+    {
+      "label": "Varios",
+      "lado": "expense",
+      "page": 15,
+      "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+      "values": [
+        11.463
+      ],
+      "origen": "estado 17",
+      "glosa": "Varios"
+    },
+    {
+      "label": "Sponsor Indumentaria",
+      "lado": "revenue",
+      "page": 11,
+      "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+      "values": [
+        18004.358
+      ],
+      "origen": "estado 3",
+      "glosa": "Sponsor Indumentaria"
+    },
+    {
+      "label": "Sponsor Pecho Futbol Masculino",
+      "lado": "revenue",
+      "page": 11,
+      "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+      "values": [
+        7772.255
+      ],
+      "origen": "estado 3",
+      "glosa": "Sponsor Pecho Futbol Masculino"
+    },
+    {
+      "label": "Espalda Futbol Masculino",
+      "lado": "revenue",
+      "page": 11,
+      "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+      "values": [
+        4212.604
+      ],
+      "origen": "estado 3",
+      "glosa": "Espalda Futbol Masculino"
+    },
+    {
+      "label": "Bocashop",
+      "lado": "revenue",
+      "page": 11,
+      "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+      "values": [
+        2865.507
+      ],
+      "origen": "estado 3",
+      "glosa": "Bocashop"
+    },
+    {
+      "label": "Museo",
+      "lado": "revenue",
+      "page": 11,
+      "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+      "values": [
+        2453.545
+      ],
+      "origen": "estado 3",
+      "glosa": "Museo"
+    },
+    {
+      "label": "Publicidad Estatica Estadio",
+      "lado": "revenue",
+      "page": 11,
+      "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+      "values": [
+        2336.4
+      ],
+      "origen": "estado 3",
+      "glosa": "Publicidad Estatica Estadio"
+    },
+    {
+      "label": "Manga Futbol Masculino",
+      "lado": "revenue",
+      "page": 11,
+      "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+      "values": [
+        2123.153
+      ],
+      "origen": "estado 3",
+      "glosa": "Manga Futbol Masculino"
+    },
+    {
+      "label": "Mastercard",
+      "lado": "revenue",
+      "page": 11,
+      "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+      "values": [
+        1685.042
+      ],
+      "origen": "estado 3",
+      "glosa": "Mastercard"
+    },
+    {
+      "label": "BBVA - Branding",
+      "lado": "revenue",
+      "page": 11,
+      "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+      "values": [
+        1444.315
+      ],
+      "origen": "estado 3",
+      "glosa": "BBVA - Branding"
+    },
+    {
+      "label": "Licencias",
+      "lado": "revenue",
+      "page": 11,
+      "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+      "values": [
+        1356.072
+      ],
+      "origen": "estado 3",
+      "glosa": "Licencias"
+    },
+    {
+      "label": "Pantalón Futbol Masculino",
+      "lado": "revenue",
+      "page": 11,
+      "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+      "values": [
+        1179.529
+      ],
+      "origen": "estado 3",
+      "glosa": "Pantalón Futbol Masculino"
+    },
+    {
+      "label": "Sponsor Digital",
+      "lado": "revenue",
+      "page": 11,
+      "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+      "values": [
+        675
+      ],
+      "origen": "estado 3",
+      "glosa": "Sponsor Digital"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 11,
+      "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+      "values": [
+        2062.613
+      ],
+      "origen": "estado 3",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Fútbol Profesional",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS / CONCEPTO                            IMPORTE",
+      "values": [
+        120358.357
+      ],
+      "origen": "estado 1",
+      "glosa": "Fútbol Profesional"
+    },
+    {
+      "label": "Administración",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS / CONCEPTO                            IMPORTE",
+      "values": [
+        36332.931
+      ],
+      "origen": "estado 1",
+      "glosa": "Administración"
+    },
+    {
+      "label": "Organización de Espectáculos",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS / CONCEPTO                            IMPORTE",
+      "values": [
+        33730.855
+      ],
+      "origen": "estado 1",
+      "glosa": "Organización de Espectáculos"
+    },
+    {
+      "label": "Gastos Generales",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS / CONCEPTO                            IMPORTE",
+      "values": [
+        14386.41
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos Generales"
+    },
+    {
+      "label": "Fútbol Juvenil",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS / CONCEPTO                            IMPORTE",
+      "values": [
+        7918.49
+      ],
+      "origen": "estado 1",
+      "glosa": "Fútbol Juvenil"
+    },
+    {
+      "label": "Otros Deportes",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS / CONCEPTO                            IMPORTE",
+      "values": [
+        6769.002
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros Deportes"
+    },
+    {
+      "label": "Basket",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS / CONCEPTO                            IMPORTE",
+      "values": [
+        6217.767
+      ],
+      "origen": "estado 1",
+      "glosa": "Basket"
+    },
+    {
+      "label": "Otras Amortizaciones",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS / CONCEPTO                            IMPORTE",
+      "values": [
+        3785.324
+      ],
+      "origen": "estado 1",
+      "glosa": "Otras Amortizaciones"
+    },
+    {
+      "label": "Comerciales",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS / CONCEPTO                            IMPORTE",
+      "values": [
+        3250.608
+      ],
+      "origen": "estado 1",
+      "glosa": "Comerciales"
+    },
+    {
+      "label": "Socios",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS / CONCEPTO                            IMPORTE",
+      "values": [
+        2393.117
+      ],
+      "origen": "estado 1",
+      "glosa": "Socios"
+    },
+    {
+      "label": "Eventuales",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS / CONCEPTO                            IMPORTE",
+      "values": [
+        847
+      ],
+      "origen": "estado 1",
+      "glosa": "Eventuales"
+    },
+    {
+      "label": "Socios Activos",
+      "lado": "revenue",
+      "page": 11,
+      "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+      "values": [
+        32387.986
+      ],
+      "origen": "estado 2",
+      "glosa": "Socios Activos"
+    },
+    {
+      "label": "Adherente AMBA",
+      "lado": "revenue",
+      "page": 11,
+      "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+      "values": [
+        17308.922
+      ],
+      "origen": "estado 2",
+      "glosa": "Adherente AMBA"
+    },
+    {
+      "label": "Socios Interior",
+      "lado": "revenue",
+      "page": 11,
+      "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+      "values": [
+        11537.424
+      ],
+      "origen": "estado 2",
+      "glosa": "Socios Interior"
+    },
+    {
+      "label": "Adherente Interior",
+      "lado": "revenue",
+      "page": 11,
+      "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+      "values": [
+        7869.528
+      ],
+      "origen": "estado 2",
+      "glosa": "Adherente Interior"
+    },
+    {
+      "label": "Socias Activas",
+      "lado": "revenue",
+      "page": 11,
+      "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+      "values": [
+        6368.302
+      ],
+      "origen": "estado 2",
+      "glosa": "Socias Activas"
+    },
+    {
+      "label": "Socios Menores",
+      "lado": "revenue",
+      "page": 11,
+      "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+      "values": [
+        5579.328
+      ],
+      "origen": "estado 2",
+      "glosa": "Socios Menores"
+    },
+    {
+      "label": "Socios Cadetes",
+      "lado": "revenue",
+      "page": 11,
+      "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+      "values": [
+        1474.486
+      ],
+      "origen": "estado 2",
+      "glosa": "Socios Cadetes"
+    },
+    {
+      "label": "Carnet Socios",
+      "lado": "revenue",
+      "page": 11,
+      "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+      "values": [
+        837.7
+      ],
+      "origen": "estado 2",
+      "glosa": "Carnet Socios"
+    },
+    {
+      "label": "Seguro de Vida",
+      "lado": "revenue",
+      "page": 11,
+      "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+      "values": [
+        792.438
+      ],
+      "origen": "estado 2",
+      "glosa": "Seguro de Vida"
+    },
+    {
+      "label": "Socio Internacional",
+      "lado": "revenue",
+      "page": 11,
+      "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+      "values": [
+        365.029
+      ],
+      "origen": "estado 2",
+      "glosa": "Socio Internacional"
+    },
+    {
+      "label": "Socios Exterior",
+      "lado": "revenue",
+      "page": 11,
+      "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+      "values": [
+        79.128
+      ],
+      "origen": "estado 2",
+      "glosa": "Socios Exterior"
+    },
+    {
+      "label": "Aportes a Fundacion Boca Social",
+      "lado": "expense",
+      "page": 24,
+      "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+      "values": [
+        1252398
+      ],
+      "origen": "estado 48",
+      "glosa": "Aportes a Fundacion Boca Social"
+    },
+    {
+      "label": "Comisiones Tarjetas",
+      "lado": "expense",
+      "page": 24,
+      "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+      "values": [
+        2051732
+      ],
+      "origen": "estado 48",
+      "glosa": "Comisiones Tarjetas"
+    },
+    {
+      "label": "Diversos",
+      "lado": "expense",
+      "page": 24,
+      "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+      "values": [
+        2175790
+      ],
+      "origen": "estado 48",
+      "glosa": "Diversos"
+    },
+    {
+      "label": "Gastos Bancarios",
+      "lado": "expense",
+      "page": 24,
+      "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+      "values": [
+        2888267
+      ],
+      "origen": "estado 48",
+      "glosa": "Gastos Bancarios"
+    },
+    {
+      "label": "IVA",
+      "lado": "expense",
+      "page": 24,
+      "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+      "values": [
+        3025762
+      ],
+      "origen": "estado 48",
+      "glosa": "IVA"
+    },
+    {
+      "label": "Mutual Jugadores 1%",
+      "lado": "expense",
+      "page": 24,
+      "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+      "values": [
+        533543
+      ],
+      "origen": "estado 48",
+      "glosa": "Mutual Jugadores 1%"
+    },
+    {
+      "label": "Previsión Indemnizaciones",
+      "lado": "expense",
+      "page": 24,
+      "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+      "values": [
+        956863
+      ],
+      "origen": "estado 48",
+      "glosa": "Previsión Indemnizaciones"
+    },
+    {
+      "label": "Previsión para Juicios",
+      "lado": "expense",
+      "page": 24,
+      "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+      "values": [
+        735121
+      ],
+      "origen": "estado 48",
+      "glosa": "Previsión para Juicios"
+    },
+    {
+      "label": "Seguros Varios",
+      "lado": "expense",
+      "page": 24,
+      "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+      "values": [
+        628040
+      ],
+      "origen": "estado 48",
+      "glosa": "Seguros Varios"
+    },
+    {
+      "label": "Sellos",
+      "lado": "expense",
+      "page": 24,
+      "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+      "values": [
+        138894
+      ],
+      "origen": "estado 48",
+      "glosa": "Sellos"
+    },
+    {
+      "label": "Fútbol Profesional",
+      "lado": "expense",
+      "page": 34,
+      "section": "GASTOS / CONCEPTO                                   IMPORTE",
+      "values": [
+        70047.611
+      ],
+      "origen": "estado 77",
+      "glosa": "Fútbol Profesional"
+    },
+    {
+      "label": "Administración",
+      "lado": "expense",
+      "page": 34,
+      "section": "GASTOS / CONCEPTO                                   IMPORTE",
+      "values": [
+        36189.077
+      ],
+      "origen": "estado 77",
+      "glosa": "Administración"
+    },
+    {
+      "label": "Organización de Espectáculos",
+      "lado": "expense",
+      "page": 34,
+      "section": "GASTOS / CONCEPTO                                   IMPORTE",
+      "values": [
+        33429.911
+      ],
+      "origen": "estado 77",
+      "glosa": "Organización de Espectáculos"
+    },
+    {
+      "label": "Fútbol Juvenil",
+      "lado": "expense",
+      "page": 34,
+      "section": "GASTOS / CONCEPTO                                   IMPORTE",
+      "values": [
+        21198.57
+      ],
+      "origen": "estado 77",
+      "glosa": "Fútbol Juvenil"
+    },
+    {
+      "label": "Otros Deportes",
+      "lado": "expense",
+      "page": 34,
+      "section": "GASTOS / CONCEPTO                                   IMPORTE",
+      "values": [
+        6501.997
+      ],
+      "origen": "estado 77",
+      "glosa": "Otros Deportes"
+    },
+    {
+      "label": "Basket",
+      "lado": "expense",
+      "page": 34,
+      "section": "GASTOS / CONCEPTO                                   IMPORTE",
+      "values": [
+        5765.515
+      ],
+      "origen": "estado 77",
+      "glosa": "Basket"
+    },
+    {
+      "label": "Comerciales",
+      "lado": "revenue",
+      "page": 9,
+      "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+      "values": [
+        53477.864
+      ],
+      "origen": "estado 0",
+      "glosa": "Comerciales"
+    },
+    {
+      "label": "Exhibición de Espectáculos Deportivos",
+      "lado": "revenue",
+      "page": 9,
+      "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+      "values": [
+        43085.83
+      ],
+      "origen": "estado 0",
+      "glosa": "Exhibición de Espectáculos Deportivos"
+    },
+    {
+      "label": "Plateas",
+      "lado": "revenue",
+      "page": 12,
+      "section": "TOTAL EXHIBICION ESPECTACULOS DEPORTIVOS         43.085.830.000 / ABONOS                                          IMPORTE",
+      "values": [
+        30570.629
+      ],
+      "origen": "nota 9 (ancla 0)",
+      "ancla": "Abonos",
+      "glosa": "Plateas"
+    },
+    {
+      "label": "Abonos",
+      "lado": "revenue",
+      "page": 9,
+      "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+      "values": [
+        40639.558
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Abonos"
+    },
+    {
+      "label": "Palcos Vip y corporativos",
+      "lado": "revenue",
+      "page": 12,
+      "section": "TOTAL EXHIBICION ESPECTACULOS DEPORTIVOS         43.085.830.000 / ABONOS                                          IMPORTE",
+      "values": [
+        8927.048
+      ],
+      "origen": "nota 9 (ancla 0)",
+      "ancla": "Abonos",
+      "glosa": "Palcos Vip y corporativos"
+    },
+    {
+      "label": "Cocheras",
+      "lado": "revenue",
+      "page": 12,
+      "section": "TOTAL EXHIBICION ESPECTACULOS DEPORTIVOS         43.085.830.000 / ABONOS                                          IMPORTE",
+      "values": [
+        1141.881
+      ],
+      "origen": "nota 9 (ancla 0)",
+      "ancla": "Abonos",
+      "glosa": "Cocheras"
+    },
+    {
+      "label": "Diversos",
+      "lado": "revenue",
+      "page": 9,
+      "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+      "values": [
+        12178.898
+      ],
+      "origen": "estado 0",
+      "glosa": "Diversos"
+    },
+    {
+      "label": "Otros deportes",
+      "lado": "revenue",
+      "page": 9,
+      "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+      "values": [
+        2118.967
+      ],
+      "origen": "estado 0",
+      "glosa": "Otros deportes"
+    },
+    {
+      "label": "Basket Profesional",
+      "lado": "revenue",
+      "page": 9,
+      "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+      "values": [
+        1656.377
+      ],
+      "origen": "estado 0",
+      "glosa": "Basket Profesional"
+    },
+    {
+      "label": "Futbol Juvenil",
+      "lado": "revenue",
+      "page": 9,
+      "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+      "values": [
+        1489.046
+      ],
+      "origen": "estado 0",
+      "glosa": "Futbol Juvenil"
+    },
+    {
+      "label": "Futbol Femenino",
+      "lado": "revenue",
+      "page": 9,
+      "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+      "values": [
+        145.293
+      ],
+      "origen": "estado 0",
+      "glosa": "Futbol Femenino"
+    }
+  ]
+}

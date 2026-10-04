@@ -1,0 +1,125 @@
+{
+ "md": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.md",
+ "pdf": "Clubes/Brasil/Remo/relatorio-auditor-independente-2022.pdf",
+ "club": "remo",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:53:56.232Z",
+ "tieOuts": {
+  "cierran": 12,
+  "noCierran": 8
+ },
+ "warnings": [
+  "8 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 10,
+  "notasUsadas": []
+ },
+ "ladoConocido": 10,
+ "rubros": [
+  {
+   "label": "Despesas com Jogos e Competições",
+   "lado": "expense",
+   "page": 12,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Notas explicativas às demonstrações contábeis em 31 de dezembro de 2022",
+   "values": [
+    2.624685
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Despesas Programa Sócio Torcedor",
+   "lado": "expense",
+   "page": 12,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Notas explicativas às demonstrações contábeis em 31 de dezembro de 2022",
+   "values": [
+    0.54908
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Despesas com Passagens e Hospedagens",
+   "lado": "expense",
+   "page": 12,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Notas explicativas às demonstrações contábeis em 31 de dezembro de 2022",
+   "values": [
+    0.460396
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 12,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Notas explicativas às demonstrações contábeis em 31 de dezembro de 2022",
+   "values": [
+    0.40641
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Serviço de Terceiros",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 12. Despesas Operacionais",
+   "values": [
+    2.706775
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Despesas com Pessoal",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 12. Despesas Operacionais",
+   "values": [
+    6.440639
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Direito de imagem",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 12. Despesas Operacionais",
+   "values": [
+    1.578607
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Jogos e Competições",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 12. Despesas Operacionais",
+   "values": [
+    2.630685
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Receitas Operacionais",
+   "lado": "revenue",
+   "page": 29,
+   "section": "### 13. Receitas Operacionais",
+   "values": [
+    0.95557
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Receitas Ordinárias",
+   "lado": "revenue",
+   "page": 29,
+   "section": "### 13. Receitas Operacionais",
+   "values": [
+    20.589446
+   ],
+   "origen": "estado 22"
+  }
+ ]
+}

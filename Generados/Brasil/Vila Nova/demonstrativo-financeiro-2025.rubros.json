@@ -1,0 +1,365 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.md",
+ "pdf": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.pdf",
+ "club": "vila-nova",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:54:12.516Z",
+ "tieOuts": {
+  "cierran": 17,
+  "noCierran": 6
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 35,
+  "notasUsadas": []
+ },
+ "ladoConocido": 34,
+ "rubros": [
+  {
+   "label": "Receita operacional líquida",
+   "lado": "revenue",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "values": [
+    38.356
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Custo das atividades sociais e esportivas",
+   "lado": "expense",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "values": [
+    -35.518
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Despesas com pessoal",
+   "lado": "expense",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "values": [
+    -3.244
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Despesas com atividades gerais",
+   "lado": "expense",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "values": [
+    -12.732
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Outras receitas, líquidas",
+   "lado": "revenue",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "values": [
+    13.837
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "values": [
+    -4.804
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Receitas financeiras",
+   "lado": "revenue",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "values": [
+    1.263
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Juros pagos",
+   "lado": "expense",
+   "page": 56,
+   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+   "values": [
+    -0.002485
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Multas pagas",
+   "lado": "expense",
+   "page": 56,
+   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+   "values": [
+    -0.001157
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Tarifas bancárias",
+   "lado": "expense",
+   "page": 56,
+   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+   "values": [
+    -0.000718
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Juros sobre empréstimos e financiamentos (i)",
+   "lado": "expense",
+   "page": 56,
+   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+   "values": [
+    -0.000359
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Perdas contratuais",
+   "lado": "expense",
+   "page": 56,
+   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+   "values": [
+    -0.000081
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "IOF",
+   "lado": "expense",
+   "page": 56,
+   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+   "values": [
+    -0.000004
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Amortização de direitos sobre atletas (i)",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 16. Custo das atividades esportivas",
+   "values": [
+    -0.012077
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Premiações (ii)",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 16. Custo das atividades esportivas",
+   "values": [
+    -0.006676
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Gastos com jogos e competições",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 16. Custo das atividades esportivas",
+   "values": [
+    -0.005898
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Despesas com transações de atletas",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 16. Custo das atividades esportivas",
+   "values": [
+    -0.002686
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Rescisões",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 16. Custo das atividades esportivas",
+   "values": [
+    -0.00089
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Perdas esperadas com processos trabalhistas",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 16. Custo das atividades esportivas",
+   "values": [
+    -0.000681
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Direito de imagem",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 16. Custo das atividades esportivas",
+   "values": [
+    -0.000535
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Custo",
+   "lado": "expense",
+   "page": 47,
+   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
+   "values": [
+    0.03112
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Imóveis e benfeitorias",
+   "lado": "expense",
+   "page": 47,
+   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
+   "values": [
+    6.878
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Móveis e utensílios",
+   "lado": "expense",
+   "page": 47,
+   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
+   "values": [
+    0.676
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Computadores",
+   "lado": "expense",
+   "page": 47,
+   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
+   "values": [
+    0.06
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Máquinas e equipamentos",
+   "lado": "expense",
+   "page": 47,
+   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
+   "values": [
+    1.525
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Benfeitorias em imóveis de terceiros",
+   "lado": "expense",
+   "page": 47,
+   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
+   "values": [
+    4.641
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Terrenos",
+   "lado": "expense",
+   "page": 47,
+   "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
+   "values": [
+    84.33
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Imóveis e benfeitorias",
+   "lado": "expense",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "values": [
+    0.335
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Móveis e utensílios",
+   "lado": "expense",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "values": [
+    0.473
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Veículos",
+   "lado": "expense",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "values": [
+    0.475
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Benfeitorias em imóveis de terceiros",
+   "lado": "expense",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "values": [
+    0.358
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Terrenos",
+   "lado": "expense",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "values": [
+    65
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Obras em andamento",
+   "lado": "expense",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "values": [
+    2.2
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Trabalhistas",
+   "lado": "revenue",
+   "page": 51,
+   "section": "# (ii) Antecipações de receita / # (iii) Receitas de patrocínios a apropriar / # 12. Provisões para riscos processuais, depósitos judiciais e acordos em andamento / # 12.1. Perdas esperadas com causas judiciais / # Provisões para riscos processuais",
+   "values": [
+    0.005533
+   ],
+   "origen": "estado 37"
+  }
+ ]
+}

@@ -1,0 +1,135 @@
+{
+  "md": "Clubes/Colombia/Once Caldas/estados-financieros-2021.md",
+  "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2021.pdf",
+  "club": "oncecaldas",
+  "year": 2021,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:59:34.617Z",
+  "tieOuts": {
+    "cierran": 26,
+    "noCierran": 8
+  },
+  "warnings": [
+    "8 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 10,
+    "notasUsadas": []
+  },
+  "ladoConocido": 10,
+  "rubros": [
+    {
+      "label": "FINANCIEROS",
+      "lado": "revenue",
+      "page": 19,
+      "section": "NOTA 23",
+      "values": [
+        102796
+      ],
+      "origen": "estado 25",
+      "glosa": "FINANCIEROS"
+    },
+    {
+      "label": "INTERESES",
+      "lado": "revenue",
+      "page": 19,
+      "section": "NOTA 23",
+      "values": [
+        3225
+      ],
+      "origen": "estado 25",
+      "glosa": "INTERESES"
+    },
+    {
+      "label": "DIFERENCIA EN CAMBIO",
+      "lado": "revenue",
+      "page": 19,
+      "section": "NOTA 23",
+      "values": [
+        99571
+      ],
+      "origen": "estado 25",
+      "glosa": "DIFERENCIA EN CAMBIO"
+    },
+    {
+      "label": "RECUPERACIONES",
+      "lado": "revenue",
+      "page": 19,
+      "section": "NOTA 23",
+      "values": [
+        34065
+      ],
+      "origen": "estado 25",
+      "glosa": "RECUPERACIONES"
+    },
+    {
+      "label": "DE PROVISIONES",
+      "lado": "revenue",
+      "page": 19,
+      "section": "NOTA 23",
+      "values": [
+        436
+      ],
+      "origen": "estado 25",
+      "glosa": "DE PROVISIONES"
+    },
+    {
+      "label": "REINTE DE OTROS COSTOS Y GASTO",
+      "lado": "expense",
+      "page": 19,
+      "section": "NOTA 23",
+      "values": [
+        10650
+      ],
+      "origen": "estado 25",
+      "glosa": "REINTE DE OTROS COSTOS Y GASTO"
+    },
+    {
+      "label": "GASTOS NO OPERACIONALES",
+      "lado": "expense",
+      "page": 20,
+      "section": "",
+      "values": [
+        758.455
+      ],
+      "origen": "estado 27",
+      "glosa": "GASTOS NO OPERACIONALES"
+    },
+    {
+      "label": "GASTOS FINANCIEROS",
+      "lado": "expense",
+      "page": 20,
+      "section": "",
+      "values": [
+        196.94
+      ],
+      "origen": "estado 27",
+      "glosa": "GASTOS FINANCIEROS"
+    },
+    {
+      "label": "GASTOS EXTRAORDINARIOS",
+      "lado": "expense",
+      "page": 20,
+      "section": "",
+      "values": [
+        540.616
+      ],
+      "origen": "estado 27",
+      "glosa": "GASTOS EXTRAORDINARIOS"
+    },
+    {
+      "label": "GASTOS DIVERSOS",
+      "lado": "expense",
+      "page": 20,
+      "section": "",
+      "values": [
+        17.426
+      ],
+      "origen": "estado 27",
+      "glosa": "GASTOS DIVERSOS"
+    }
+  ]
+}

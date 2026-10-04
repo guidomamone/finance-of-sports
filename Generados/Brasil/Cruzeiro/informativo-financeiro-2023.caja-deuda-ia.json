@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Brasil/Cruzeiro/informativo-financeiro-2023.md",
+ "generado": "2026-10-02T00:13:48.615Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"luvas e intermediacao de atletas a pagar\" + \"receitas financeiras\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "(em milhares de reais)",
+ "caja": {
+  "lineas": [
+   79
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   134,
+   137,
+   151
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Siguiendo el criterio del club: 'Luvas e intermediação de atletas a pagar' (L134) más 'Receitas a apropriar' corriente y no corriente (L137, L151), tomado como equivalente de 'receitas financeiras', que no aparece en el balance; el criterio es atípico y deja fuera 'Empréstimos e financiamentos' (L132), que sería la deuda financiera bancaria."
+}

@@ -1,0 +1,298 @@
+{
+ "md": "Clubes/Dinamarca/Silkeborg IF/aarsrapport-2021-12-31.md",
+ "generatedAt": "2026-09-30T22:49:05.533Z",
+ "rubrosHuella": "9a6eef8eeef92f4d3aa291ec34aebe7c4313296b",
+ "rubros": [
+  {
+   "label": "Entréindtægter",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "TV- Indtægter",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sponsor- og samarbejdsaftaler",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Salg af merchandise",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Kompensation (FIFA/UEFA/DBU)",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+   "choice": "competition_bonus",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Food & beverage JYSK PARK",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+   "choice": "stadium_other",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Øvrige driftindtægter",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Noter / 1 Begivenheder efter balancedagen / 2 Nettoomsætning",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Gager og lønninger",
+   "lado": "expense",
+   "page": 19,
+   "section": "5 Personaleomkostninger",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensioner",
+   "lado": "expense",
+   "page": 19,
+   "section": "5 Personaleomkostninger",
+   "choice": "wages_squad",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "page": 19,
+   "section": "5 Personaleomkostninger",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre personaleomkostninger",
+   "lado": "expense",
+   "page": 19,
+   "section": "5 Personaleomkostninger",
+   "choice": "wages_squad",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Af- og nedskrivninger",
+   "lado": null,
+   "page": 13,
+   "section": "# Resultatopgørelse for 2021",
+   "choice": "depreciation",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Transferindtægter",
+   "lado": "revenue",
+   "page": 18,
+   "section": "3 Andre driftsindtægter",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Offentlige tilskud",
+   "lado": "revenue",
+   "page": 18,
+   "section": "3 Andre driftsindtægter",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Salg af materielle anlægsaktiver",
+   "lado": "revenue",
+   "page": 18,
+   "section": "3 Andre driftsindtægter",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Finansielle indtægter fra tilknyttede virksomheder",
+   "lado": "revenue",
+   "page": 19,
+   "section": "6 Andre finansielle indtægter",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Renteomkostninger i øvrigt",
+   "lado": "expense",
+   "page": 19,
+   "section": "7 Andre finansielle omkostninger",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre driftsindtægter",
+   "lado": "revenue",
+   "page": 13,
+   "section": "# Resultatopgørelse for 2021",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Andre eksterne omkostninger",
+   "lado": "expense",
+   "page": 13,
+   "section": "# Resultatopgørelse for 2021",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Nettoomsætning",
+   "lado": "revenue",
+   "page": 13,
+   "section": "# Resultatopgørelse for 2021",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1198
+  },
+  {
+   "label": "Andre finansielle omkostninger",
+   "lado": "expense",
+   "page": 13,
+   "section": "# Resultatopgørelse for 2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Personaleomkostninger",
+   "lado": "expense",
+   "page": 13,
+   "section": "# Resultatopgørelse for 2021",
+   "choice": "wages_squad",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "wages_squad",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Andre finansielle indtægter",
+   "lado": "revenue",
+   "page": 13,
+   "section": "# Resultatopgørelse for 2021",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1026
+  }
+ ]
+}

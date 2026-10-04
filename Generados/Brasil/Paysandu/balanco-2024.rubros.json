@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Brasil/Paysandu/balanco-2024.md",
+ "pdf": "Clubes/Brasil/Paysandu/balanco-2024.pdf",
+ "club": "paysandu",
+ "year": 2024,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:53:43.895Z",
+ "tieOuts": {
+  "cierran": 2,
+  "noCierran": 8
+ },
+ "warnings": [
+  "8 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": false,
+  "motivo": "sin estado de resultados"
+ },
+ "ladoConocido": 0,
+ "rubros": []
+}

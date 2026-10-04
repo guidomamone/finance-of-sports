@@ -1,0 +1,137 @@
+{
+  "club": "temperley",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Temperley/memoria-ejercicio-2022-23.md",
+  "generatedAt": "2026-09-30T21:51:11.965Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 4,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "MEMORIA / CORRESPONDIENTE AL / EJERCICIO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Iniciado el 01 de abril de",
+          "values": [
+            "2022."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finalizado el 31 de Marzo de",
+          "values": [
+            "2023."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "HANDBALL / LOGROS DEPORTIVOS DESTACADOS:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Mayores caballeros “B” obtiene el 3er puesto en el Torneo Súper",
+          "values": [
+            "8."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mayores caballeros “A” obtiene el 2do puesto en el Torneo Súper",
+          "values": [
+            "8."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "Masculino, Sub 14, Sub 16, Sub 18, Sub 21",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Femenino: presentando por primera vez tira completa. Sub 12, Sub 14, Sub 16, Sub",
+          "values": [
+            "18,"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub",
+          "values": [
+            "21,"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 45,
+      "section": "INTEGRANTES DEL DTO DE RR.PP 2022-2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Torchia, Maximiliano Socio nº",
+          "values": [
+            "37.623"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maggio, Diego Socio nº",
+          "values": [
+            "26.767"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benbenuto, Pablo Socio nº",
+          "values": [
+            "62.227"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pereyra, Diego Socio nº",
+          "values": [
+            "35.928"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ranieri, Daniel Socio nº",
+          "values": [
+            "42.018"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/temperley-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"temperley\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

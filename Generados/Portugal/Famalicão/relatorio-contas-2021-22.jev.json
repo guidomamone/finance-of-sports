@@ -1,0 +1,1179 @@
+{
+ "md": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.md",
+ "generatedAt": "2026-09-30T12:59:33.898Z",
+ "rubros": [
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1521
+  },
+  {
+   "label": "Gastos de depreciação",
+   "lado": "expense",
+   "page": 6,
+   "section": "## Gastos",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 984
+  },
+  {
+   "label": "Gastos com pessoal",
+   "lado": "expense",
+   "page": 6,
+   "section": "## Gastos",
+   "choice": "wages_squad",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "wages_squad",
+     0.61
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Juros",
+   "lado": null,
+   "page": 7,
+   "section": "## Resultados",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1303
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 34,
+   "section": "## 25. Outros rendimentos / ## 26. Outros gastos",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Resultado Líquido",
+   "lado": null,
+   "page": 7,
+   "section": "## Resultados",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "lump_football_operations",
+     0.09999999999999999
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1457
+  },
+  {
+   "label": "Resultados Operacionais",
+   "lado": null,
+   "page": 7,
+   "section": "## Resultados",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1456
+  },
+  {
+   "label": "Gastos de financiamento",
+   "lado": "expense",
+   "page": 6,
+   "section": "## Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 980
+  },
+  {
+   "label": "9. Estado e outros entes",
+   "lado": "revenue",
+   "page": 15,
+   "section": "7. Inventários...15 / 8. Clientes...16",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "education",
+     0.05
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "10. Outros créditos a",
+   "lado": "revenue",
+   "page": 15,
+   "section": "7. Inventários...15 / 8. Clientes...16",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1443
+  },
+  {
+   "label": "Vendas e serviços prestados",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "lump_football_operations",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.6900000000000001
+    ],
+    [
+     "other_income",
+     0.19
+    ],
+    [
+     "sponsorship_commercial",
+     0.06
+    ]
+   ],
+   "tokens": 1532
+  },
+  {
+   "label": "Ganhos/perdas imputados de subsidiárias, associadas e empre",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "Custo das mercadorias vendidas",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1539
+  },
+  {
+   "label": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "player_impairment",
+     0.15000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1584
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "wages_squad",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "wages_squad",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.18000000000000002
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1526
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "depreciation",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "depreciation",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1572
+  },
+  {
+   "label": "Outros gastos",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1509
+  },
+  {
+   "label": "Provisões (aumentos/reduções)",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "player_impairment",
+     0.1
+    ]
+   ],
+   "tokens": 1391
+  },
+  {
+   "label": "Resultado antes de deprec., gastos de financ. e impostos",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "Resultado operacional (antes de gastos de financiamento e impostos)",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "other_expenses",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "lump_football_operations",
+     0.31
+    ],
+    [
+     "other_income",
+     0.23
+    ]
+   ],
+   "tokens": 1537
+  },
+  {
+   "label": "Outros rendimentos",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1500
+  },
+  {
+   "label": "Juros e gastos similares suportados",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "Resultado antes de impostos",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_income",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ]
+   ],
+   "tokens": 1513
+  },
+  {
+   "label": "Mercadorias",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Total ativo intangível: 3 291 645,16 / 7. Inventários",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.75
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 948
+  },
+  {
+   "label": "Sub-total",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Total ativo intangível: 3 291 645,16 / 7. Inventários",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 988
+  },
+  {
+   "label": "Resultado líquido do período",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1504
+  },
+  {
+   "label": "Imposto sobre o rendimento do período",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1534
+  },
+  {
+   "label": "Perdas por imparidades de inventários",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Total ativo intangível: 3 291 645,16 / 7. Inventários",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Empréstimos bancários",
+   "lado": null,
+   "page": 31,
+   "section": "FUTURO, S.A. / ### 13. Resultados transitados / ### 14. Outras variações no capital próprio / ### 15. Financiamentos obtidos",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "other_income",
+     0.1
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "Locações financeiras",
+   "lado": null,
+   "page": 31,
+   "section": "FUTURO, S.A. / ### 13. Resultados transitados / ### 14. Outras variações no capital próprio / ### 15. Financiamentos obtidos",
+   "choice": "other_income",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_income",
+     0.63
+    ],
+    [
+     "stadium_other",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1448
+  },
+  {
+   "label": "Suprimentos",
+   "lado": null,
+   "page": 31,
+   "section": "FUTURO, S.A. / ### 13. Resultados transitados / ### 14. Outras variações no capital próprio / ### 15. Financiamentos obtidos",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1295
+  },
+  {
+   "label": "Prestações de serviços",
+   "lado": null,
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "choice": "admin_general_expense",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.43
+    ],
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ]
+   ],
+   "tokens": 1515
+  },
+  {
+   "label": "Ingressos",
+   "lado": null,
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "choice": "matchday_competition",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "matchday_competition",
+     0.55
+    ],
+    [
+     "member_dues",
+     0.24
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1346
+  },
+  {
+   "label": "Vendas de mercadorias",
+   "lado": null,
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1522
+  },
+  {
+   "label": "Competições",
+   "lado": null,
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "choice": "match_organisation_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.5
+    ],
+    [
+     "competition_bonus",
+     0.41
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1515
+  },
+  {
+   "label": "Publicidade",
+   "lado": null,
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "Patrocinios",
+   "lado": null,
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1510
+  },
+  {
+   "label": "Direitos Clube",
+   "lado": null,
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "choice": "other_income",
+   "confidence": 0.24,
+   "top3": [
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "broadcasting",
+     0.26
+    ],
+    [
+     "player_amortisation",
+     0.19
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "Outras receitas desportivas",
+   "lado": null,
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "other_sports",
+     0.01
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "Apostas desportivas",
+   "lado": null,
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "other_income",
+     0.18
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1351
+  },
+  {
+   "label": "Descontos e Abatimentos",
+   "lado": null,
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ]
+   ],
+   "tokens": 1350
+  },
+  {
+   "label": "Saldo inicial em 1 de junho",
+   "lado": "expense",
+   "page": 33,
+   "section": "FUTORIA 2021 / ## 22. Custo das mercadorias vendidas",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "player_amortisation",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 871
+  },
+  {
+   "label": "Custo de vendas",
+   "lado": "expense",
+   "page": 33,
+   "section": "FUTORIA 2021 / ## 22. Custo das mercadorias vendidas",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "player_amortisation",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Regularizações",
+   "lado": "expense",
+   "page": 33,
+   "section": "FUTORIA 2021 / ## 22. Custo das mercadorias vendidas",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ],
+    [
+     "exceptional_items",
+     0.1
+    ]
+   ],
+   "tokens": 807
+  },
+  {
+   "label": "Compras",
+   "lado": "expense",
+   "page": 33,
+   "section": "FUTORIA 2021 / ## 22. Custo das mercadorias vendidas",
+   "choice": "player_amortisation",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "player_amortisation",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ]
+   ],
+   "tokens": 880
+  },
+  {
+   "label": "Descontos de pronto pagamento concedidos",
+   "lado": "expense",
+   "page": 34,
+   "section": "## 25. Outros rendimentos / ## 26. Outros gastos",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 946
+  },
+  {
+   "label": "Saldo final em 30 de junho",
+   "lado": "expense",
+   "page": 33,
+   "section": "FUTORIA 2021 / ## 22. Custo das mercadorias vendidas",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "player_amortisation",
+     0.2
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 872
+  },
+  {
+   "label": "Ganhos e perdas em subsidiárias e associadas",
+   "lado": "expense",
+   "page": 34,
+   "section": "## 25. Outros rendimentos / ## 26. Outros gastos",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "exceptional_items",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Gastos e perdas em inv. não financeiros",
+   "lado": "expense",
+   "page": 34,
+   "section": "## 25. Outros rendimentos / ## 26. Outros gastos",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Outros gastos e perdas",
+   "lado": "expense",
+   "page": 34,
+   "section": "## 25. Outros rendimentos / ## 26. Outros gastos",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1018
+  }
+ ]
+}

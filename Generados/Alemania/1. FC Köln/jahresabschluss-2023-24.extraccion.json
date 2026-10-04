@@ -1,0 +1,226 @@
+{
+ "pdf": "Clubes/Alemania/1. FC Köln/jahresabschluss-2023-24.pdf",
+ "md": "Clubes/Alemania/1. FC Köln/jahresabschluss-2023-24.md",
+ "cierre": "2024-06-30",
+ "paginas": [
+  3,
+  9
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:53:48.256Z",
+ "escala": "unidades",
+ "filas": [
+  {
+   "pagina": 3,
+   "etiqueta": "1. Umsatzerlöse",
+   "importe_impreso": "155.314.920,05",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "2. sonstige betriebliche Erträge",
+   "importe_impreso": "3.656.789,13",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "3. Materialaufwand",
+   "importe_impreso": "10.945.362,29",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "a) Löhne und Gehälter",
+   "importe_impreso": "56.248.596,53",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "b) soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",
+   "importe_impreso": "6.502.175,13",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "4. Personalaufwand",
+   "importe_impreso": "62.750.771,66",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen",
+   "importe_impreso": "8.854.900,43",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "6. sonstige betriebliche Aufwendungen",
+   "importe_impreso": "60.936.523,58",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "7. sonstige Zinsen und ähnliche Erträge",
+   "importe_impreso": "4.093,91",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "8. Zinsen und ähnliche Aufwendungen",
+   "importe_impreso": "1.903.325,39",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "9. Steuern vom Einkommen und vom Ertrag",
+   "importe_impreso": "1.767.000,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "10. Ergebnis nach Steuern",
+   "importe_impreso": "11.817.919,74",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "11. sonstige Steuern",
+   "importe_impreso": "37.033,72",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "12. Jahresüberschuss",
+   "importe_impreso": "11.780.886,02",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "13. Gewinnvortrag aus dem Vorjahr",
+   "importe_impreso": "4.908.874,58",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "14. Zuführung Gewinnrücklagen (gesetzliche Rücklage)",
+   "importe_impreso": "0,00",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "15. Wiederauffüllung der Genussrechte",
+   "importe_impreso": "0,00",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 3,
+   "etiqueta": "16. Bilanzgewinn",
+   "importe_impreso": "16.689.760,60",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Spielbetrieb",
+   "importe_impreso": "25.560",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Umsatzerlöse"
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Werbung",
+   "importe_impreso": "42.637",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Umsatzerlöse"
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Fernseh- u. Hörfunkverwertung",
+   "importe_impreso": "56.830",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Umsatzerlöse"
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Transfer",
+   "importe_impreso": "3.232",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Umsatzerlöse"
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Merchandising",
+   "importe_impreso": "15.098",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Umsatzerlöse"
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Catering",
+   "importe_impreso": "3.667",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Umsatzerlöse"
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Sonstige",
+   "importe_impreso": "8.291",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Umsatzerlöse"
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "(total Umsatzerlöse, sin rótulo)",
+   "importe_impreso": "155.315",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "1. Umsatzerlöse"
+  }
+ ],
+ "total_ingresos_impreso": null,
+ "total_gastos_impreso": null,
+ "resultado_impreso": "11.780.886,02",
+ "observaciones": "La GuV no imprime total de ingresos ni de gastos. El desglose de Umsatzerlöse (pág. 9) está en TEUR (miles), distinto de la escala del estado (EUR con céntimos); su total 155.315 no tiene rótulo impreso. Se omitieron los honorarios del auditor (422, 27, 7, 18 y total 94 TEUR) por ser una nota informativa que no desglosa un renglón concreto; además su total impreso 94 no coincide con la suma 474. Las menciones 'davon' (Altersversorgung EUR 705,14; Genussrechte EUR 383.424,66) y los importes periodenfremde (TEUR 3.077 y 4.970) en texto no se incluyeron como filas."
+}

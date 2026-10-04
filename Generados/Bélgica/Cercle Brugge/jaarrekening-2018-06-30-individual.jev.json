@@ -1,0 +1,144 @@
+{
+ "md": "Clubes/Bélgica/Cercle Brugge/jaarrekening-2018-06-30-individual.md",
+ "generatedAt": "2026-09-30T04:26:56.624Z",
+ "rubros": [
+  {
+   "label": "631/4",
+   "lado": null,
+   "page": 6,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.2,
+   "top3": [
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "640/8",
+   "lado": null,
+   "page": 6,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.16,
+   "top3": [
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "wages_squad",
+     0.1
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Schulden op meer dan één jaar 63 |",
+   "lado": "expense",
+   "page": 5,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "depreciation",
+     0.02
+    ]
+   ],
+   "tokens": 919
+  },
+  {
+   "label": "635/8",
+   "lado": null,
+   "page": 6,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 5,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 857
+  },
+  {
+   "label": "Schulden 17/49",
+   "lado": "expense",
+   "page": 5,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 / Uitgestelde belastingen 168",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 853
+  }
+ ]
+}

@@ -1,0 +1,709 @@
+{
+  "club": "genk-be",
+  "year": 2010,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Genk/jaarrekening-2010-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:55:03.808Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 152,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 23,
+  "relevantTableCount": 4,
+  "tables": [
+    {
+      "page": 3,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / VASTE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Financiële vaste activa",
+          "values": [
+            "4.4/4.5.A"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbonden entiteiten",
+          "values": [
+            "4.13"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 3,
+      "section": "VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "285/8",
+          "values": [
+            "28.350",
+            "40.369"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "29/58",
+          "values": [
+            "4.033.634",
+            "8.785.191"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "40/41 3.700.707 5.731.596 / 40 3.569.079 5.188.210 / 41 131.628 543.386 / 415 / 50/53",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "45.222",
+            "2.790.040"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "285.202",
+            "258.340"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "21.446.447",
+            "28.415.145"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "PASSIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "EIGEN VERMOGEN 10/15",
+          "values": [
+            "8.931.032",
+            "11.787.550"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondsen van de vereniging",
+          "values": [
+            "144.330",
+            "144.330"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Beginvermogen",
+          "values": [
+            "144.330",
+            "144.330"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Permanente financiering 101 / Herwaarderingsmeerwaarden 12 / Bestemde fondsen 47 | 13 / Overgedragen winst (verlies) (+)/(-) 14 8.786.702 11.643.221 / Kapitaalsubsidies 15",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "VOORZIENINGEN",
+          "values": [
+            "150.000",
+            "800.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorzieningen voor risico's en kosten 160/5",
+          "values": [
+            "150.000",
+            "800.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 4,
+      "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 4.7 | 163/5 150.000 800.000 / Voorzieningen voor schenkingen en legaten met / terugnemingsrecht 4.7 | 168",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "12.365.415",
+            "15.827.595"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 48 |",
+          "values": [
+            "4.510.717",
+            "5.178.520"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "4.509.667",
+            "5.177.470"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 4,
+      "section": "Achtergestelde leningen 170 / Niet-achtergestelde obligatieleningen 171",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Leasingschulden en soortgelijke schulden",
+          "values": [
+            "80.481"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kredietinstellingen",
+          "values": [
+            "4.509.667",
+            "5.096.989"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Ontvangen vooruitbetalingen op bestellingen 176 / Overige schulden 179 1.050 1.050 / Rentedragend 1790 / Niet-rentedragend of gekoppeld aan een abnormaal / lage rente 1791",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Borgtochten ontvangen in contanten 1792",
+          "values": [
+            "1.050",
+            "1.050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op ten hoogste één jaar 42/48",
+          "values": [
+            "7.609.522",
+            "10.305.607"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Schulden op meer dan één jaar die binnen het jaar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "vervallen 48 |",
+          "values": [
+            "667.803",
+            "715.767"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden",
+          "values": [
+            "428.868"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kredietinstellingen 430/8",
+          "values": [
+            "428.868"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Overige leningen 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "2.965.353",
+            "5.263.290"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "2.965.353",
+            "5.263.290"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 1.767.014 2.625.979 / Schulden met betrekking tot belastingen,",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "bezoldigingen en sociale lasten 48 |",
+          "values": [
+            "1.694.748",
+            "1.549.179"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "73.443",
+            "379.654"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "1.621.305",
+            "1.169.525"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diverse schulden",
+          "values": [
+            "85.737",
+            "151.393"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Vervallen obligaties, coupons en borgtochten / ontvangen in contanten 480/8 / Andere rentedragende schulden 4890 / Andere schulden, niet-rentedragend of gekoppeld",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "aan een abnormaal lage rente 4891",
+          "values": [
+            "85.737",
+            "151.393"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 4.8 | _492/3",
+          "values": [
+            "245.176",
+            "343.468"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "21.446.447",
+            "28.415.145"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "TOELICHTING ‚ / STAAT VAN DE IMMATERIELE VASTE ACTIVA / CONCESSIES, OCTROOIEN, LICENTIES, KNOWHOW, MERKEN EN / SOORTGELIJKE RECHTEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "boekjaar 8122",
+          "values": [
+            "4.276.220"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR",
+          "values": [
+            "4.534.201"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "STAAT VAN DE SCHULDEN EN OVERLOPENDE REKENINGEN (PASSIVA) / UITSPLITSING VAN DE SCHULDEN MET EEN OORSPRONKELIJKE LOOPTIJD VAN MEER DAN EEN / JAAR, NAARGELANG HUN RESTERENDE LOOPTIJD",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Leasingschulden en soortgelijke schulden 8831",
+          "values": [
+            "80.481"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kredietinstellingen 8841",
+          "values": [
+            "587.322"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "Overige leningen 8853 / Handelsschulden 8863 / Leveranciers 8873 / Te betalen wissels 8883 / Ontvangen vooruitbetalingen op bestellingen 8893",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige schulden 8903",
+          "values": [
+            "1.050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal der schulden met een resterende looptijd van meer dan 5 jaar 8913",
+          "values": [
+            "1.939.422"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN SOCIALE LASTEN / OVERLOPENDE REKENINGEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Toe te rekenen kosten",
+          "values": [
+            "97.676"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Over te dragen opbrengsten",
+          "values": [
+            "147.500"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 26,
+      "section": "SOCIALE BALANS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overeenkomst voor een onbepaalde tijd 110 29",
+          "values": [
+            "38,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overeenkomst voor een bepaalde tijd 111 19",
+          "values": [
+            "24,5"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "Overeenkomst voor een duidelijk omschreven werk 112 / Vervangingsovereenkomst 113 / Volgens het geslacht en het studieniveau",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Mannen 120 41",
+          "values": [
+            "54,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "lager onderwijs 1200 41",
+          "values": [
+            "54,2"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "secundair onderwijs 1201 / hoger niet-universitair onderwijs 1202 / universitair onderwijs 1203",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Vrouwen 121 7",
+          "values": [
+            "8,6"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "lager onderwijs 1210 7",
+          "values": [
+            "8,6"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "secundair onderwijs 1211 / hoger niet-universitair onderwijs 1212 / universitair onderwijs 1213 / Volgens de beroepscategorie / Directiepersoneel 130",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bedienden 134 41",
+          "values": [
+            "51,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arbeiders 132 7",
+          "values": [
+            "11,3"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "151 3.858 / 152 62.918 / Codes | 1. Voltijds 2. Deeltijds 3. Totaal in / voltijdse / equivalenten",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "205 19",
+          "values": [
+            "21,7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "210 6",
+          "values": [
+            "7,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "211 13",
+          "values": [
+            "14,2"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "212 / 213 / Codes | 1. Voltijds 2. Deeltijds 3. Totaal in / voltijdse / equivalenten",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "305 9",
+          "values": [
+            "10,7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "310 2",
+          "values": [
+            "3,7"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "311 7 7 / 312 / 313 / 340 / 341",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "342 4",
+          "values": [
+            "4,4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "343 5",
+          "values": [
+            "6,3"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 9,
+    "results": [
+      {
+        "label": "Financiële vaste activa",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financiële vaste activa",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Verbonden entiteiten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Verbonden entiteiten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "VOORZIENINGEN",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "VOORZIENINGEN",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Voorzieningen voor risico's en kosten 160/5",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Voorzieningen voor risico's en kosten 160/5",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SCHULDEN 17/49",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SCHULDEN 17/49",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Schulden op meer dan één jaar 48 |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Schulden op meer dan één jaar 48 |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financiële schulden 170/4",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financiële schulden 170/4",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Toe te rekenen kosten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Toe te rekenen kosten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Over te dragen opbrengsten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Over te dragen opbrengsten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Genk",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

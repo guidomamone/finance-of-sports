@@ -1,0 +1,674 @@
+{
+ "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-consolidato-2023.md",
+ "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-consolidato-2023.pdf",
+ "club": "hellas-verona",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:04:49.187Z",
+ "tieOuts": {
+  "cierran": 4,
+  "noCierran": 7
+ },
+ "warnings": [
+  "7 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 65,
+  "notasUsadas": []
+ },
+ "ladoConocido": 19,
+ "rubros": [
+  {
+   "label": "Variazione ratei e risconti attivi",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    -0.426282
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Variazione debiti verso società calcistiche",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    -29.298587
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Variazione debiti commerciali",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    1.8922
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Variazione debiti tributari",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    1.179011
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Variazione debiti diversi",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    1.828876
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Variazione ratei e risconti passivi",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    -6.94124
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Flusso finanziario dopo le variazioni del ccn (D= B-C)",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    41.55413
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "FLUSSO DI CASSA DELLA GESTIONE CORRENTE (E= A-D)",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    -32.271118
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Incremento (Decremento) netto diritti pluriennali prestazioni calciatori",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    -0.327271
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Incremento (Decremento) netto altre immobilizzazioni immateriali",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    1.372781
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Incremento (Decremento) netto immobilizzazioni materiali",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    0.143465
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Incremento (Decremento) netto immobilizzazioni finanziarie",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    0.037294
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Flussi finanziari derivanti dall'attività di investimento",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    -1.226269
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "d) Proventi commerciali e royalties",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "values": [
+    1845
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "e) Proventi da cessioni diritti audiovisivi",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "values": [
+    34134.013
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "f) Ricavi da cessione temporanea prestazioni calciatori",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "values": [
+    8145
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "g) Plusvalenze da cessione pluriennale diritti calciatori",
+   "lado": null,
+   "page": 8,
+   "section": "",
+   "values": [
+    30912.273
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "h) Altri proventi da trasferimento calciatori",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "values": [
+    4940.207
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "di cui premi e/o indennizzi attivi ex art. 103, comma 3, NOIF",
+   "lado": null,
+   "page": 8,
+   "section": "",
+   "values": [
+    4773.504
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "di cui proventi diversi da trasferimento calciatori",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "values": [
+    166.703
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "i) Ricavi e proventi diversi",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "values": [
+    2206.785
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Ammortamento costi diritti pluriennali prestazioni calciatori",
+   "lado": "expense",
+   "page": 10,
+   "section": "RENDICONTO FINANZIARIO                              30-giu-23        30-giu-22 / A. Flussi finanziari derivanti dalla gestione reddituale",
+   "values": [
+    21.263898
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Ammortamento altre immobilizzazioni immateriali",
+   "lado": null,
+   "page": 10,
+   "section": "RENDICONTO FINANZIARIO                              30-giu-23        30-giu-22 / A. Flussi finanziari derivanti dalla gestione reddituale",
+   "values": [
+    2.58735
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Ammortamento immobilizzazioni materiali",
+   "lado": null,
+   "page": 10,
+   "section": "RENDICONTO FINANZIARIO                              30-giu-23        30-giu-22 / A. Flussi finanziari derivanti dalla gestione reddituale",
+   "values": [
+    0.416514
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Variazione T.F.R.",
+   "lado": null,
+   "page": 10,
+   "section": "RENDICONTO FINANZIARIO                              30-giu-23        30-giu-22 / A. Flussi finanziari derivanti dalla gestione reddituale",
+   "values": [
+    -0.006429
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Altre svalutazioni delle immobilizzazioni",
+   "lado": null,
+   "page": 10,
+   "section": "RENDICONTO FINANZIARIO                              30-giu-23        30-giu-22 / A. Flussi finanziari derivanti dalla gestione reddituale",
+   "values": [
+    0.012099
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Svalutazione dei crediti",
+   "lado": null,
+   "page": 10,
+   "section": "RENDICONTO FINANZIARIO                              30-giu-23        30-giu-22 / A. Flussi finanziari derivanti dalla gestione reddituale",
+   "values": [
+    0.105564
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Variazione fondi imposte differite/anticipate",
+   "lado": "expense",
+   "page": 10,
+   "section": "RENDICONTO FINANZIARIO                              30-giu-23        30-giu-22 / A. Flussi finanziari derivanti dalla gestione reddituale",
+   "values": [
+    -3.439921
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Flusso Finanziario prima delle variazioni del ccn (A)",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    9.283013
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Variazione rimanenze",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    0.025971
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Variazione crediti verso società calcistiche",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    17.877513
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Variazione crediti verso clienti",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    -10.112573
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Variazione crediti tributari",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    -0.787874
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Variazione crediti diversi",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    3.637636
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Flusso finanziario dell'attività di finanziamento",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    26.061334
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "INCREMENTO (DECREMENTO) DELLE DISPONIBILITA' LIQUIDE (H= E-F+G)",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    -7.436053
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "Disponibilità liquide all'inizio del periodo ( I )",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    12.024224
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "SALDO A PAREGGIO (M= L - I )",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    -7.436053
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "a) Salari e stipendi",
+   "lado": null,
+   "page": 8,
+   "section": "9) Per il personale:",
+   "values": [
+    49183.265
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "b) Oneri sociali",
+   "lado": "expense",
+   "page": 8,
+   "section": "9) Per il personale:",
+   "values": [
+    2949.636
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "c) Trattamento di fine rapporto",
+   "lado": null,
+   "page": 8,
+   "section": "9) Per il personale:",
+   "values": [
+    560.313
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "e) altri costi",
+   "lado": "expense",
+   "page": 8,
+   "section": "9) Per il personale:",
+   "values": [
+    1672.547
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "a) Ammortamento delle immobilizzazioni immateriali",
+   "lado": null,
+   "page": 8,
+   "section": "54.365.762        38.887.262 / 10) Ammortamenti e svalutazioni:",
+   "values": [
+    23851.248
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "b) Ammortamento delle immobilizzazioni materiali",
+   "lado": null,
+   "page": 8,
+   "section": "54.365.762        38.887.262 / 10) Ammortamenti e svalutazioni:",
+   "values": [
+    416.514
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "c) Altre svalutazioni delle immobilizzazioni",
+   "lado": null,
+   "page": 8,
+   "section": "54.365.762        38.887.262 / 10) Ammortamenti e svalutazioni:",
+   "values": [
+    12.099
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "d) Svalutazioni cred. incl. nell'attivo circolante",
+   "lado": null,
+   "page": 8,
+   "section": "54.365.762        38.887.262 / 10) Ammortamenti e svalutazioni:",
+   "values": [
+    105.564
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "a) Oneri da organizzazione competizioni",
+   "lado": "expense",
+   "page": 8,
+   "section": "24.373.326        20.113.813 / 14) Oneri diversi di gestione",
+   "values": [
+    1900.411
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "b) Costi per acquisizione temporanea prestazioni calciatori",
+   "lado": "expense",
+   "page": 8,
+   "section": "24.373.326        20.113.813 / 14) Oneri diversi di gestione",
+   "values": [
+    547
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "c) Minusvalenze da cessione diritti prestazioni calciatori",
+   "lado": null,
+   "page": 8,
+   "section": "24.373.326        20.113.813 / 14) Oneri diversi di gestione",
+   "values": [
+    699.186
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "d) Altri oneri da trasferimento diritti calciatori",
+   "lado": "expense",
+   "page": 8,
+   "section": "24.373.326        20.113.813 / 14) Oneri diversi di gestione",
+   "values": [
+    2817.236
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "a) Ricavi da gare",
+   "lado": "revenue",
+   "page": 8,
+   "section": "CONTO ECONOMICO / VALORE DELLA PRODUZIONE",
+   "values": [
+    2502.149
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "b) Abbonamenti",
+   "lado": null,
+   "page": 8,
+   "section": "CONTO ECONOMICO / VALORE DELLA PRODUZIONE",
+   "values": [
+    1953.526
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "c) Corrispettivi Store",
+   "lado": null,
+   "page": 8,
+   "section": "CONTO ECONOMICO / VALORE DELLA PRODUZIONE",
+   "values": [
+    1305.242
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
+   "lado": null,
+   "page": 8,
+   "section": "COSTI DELLA PRODUZIONE",
+   "values": [
+    1997.65
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "7) Per servizi",
+   "lado": null,
+   "page": 8,
+   "section": "COSTI DELLA PRODUZIONE",
+   "values": [
+    16277.536
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "8) Per godimento di beni di terzi",
+   "lado": null,
+   "page": 8,
+   "section": "COSTI DELLA PRODUZIONE",
+   "values": [
+    2255.159
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "di cui premi e/o indennizzi passivi ex art. 103, comma 3, NOIF",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "values": [
+    0.120596
+   ],
+   "origen": "estado 28"
+  },
+  {
+   "label": "di cui oneri diversi da trasferimento calciatori",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    2.69664
+   ],
+   "origen": "estado 28"
+  },
+  {
+   "label": "e) Altri oneri diversi di gestione",
+   "lado": "expense",
+   "page": 9,
+   "section": "",
+   "values": [
+    2.241382
+   ],
+   "origen": "estado 28"
+  },
+  {
+   "label": "a) Imposte correnti",
+   "lado": "expense",
+   "page": 9,
+   "section": "PROVENTI E ONERI FINANZIARI / RETTIFICHE DI VALORE DI ATTIVITA FINANZIARIE",
+   "values": [
+    -1.837856
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "c) Imposte differite",
+   "lado": "expense",
+   "page": 9,
+   "section": "PROVENTI E ONERI FINANZIARI / RETTIFICHE DI VALORE DI ATTIVITA FINANZIARIE",
+   "values": [
+    -3.2424
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "d) Imposte anticipate",
+   "lado": "expense",
+   "page": 9,
+   "section": "PROVENTI E ONERI FINANZIARI / RETTIFICHE DI VALORE DI ATTIVITA FINANZIARIE",
+   "values": [
+    6.682321
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Variazione debiti verso soci per finanziamenti",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    -0.603703
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Variazione debiti verso banche",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    -6.631577
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Variazioni debiti verso altri finanziatori",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    33.296614
+   ],
+   "origen": "estado 33"
+  }
+ ]
+}

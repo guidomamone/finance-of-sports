@@ -1,0 +1,903 @@
+{
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.md",
+ "generatedAt": "2026-09-30T04:30:41.756Z",
+ "rubros": [
+  {
+   "label": "Annen driftsinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Inntekt på investering i datterselskap og tilknyttet selskap",
+   "lado": null,
+   "page": 2,
+   "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "wages_squad",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": null,
+   "page": 2,
+   "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "depreciation",
+     0.79
+    ],
+    [
+     "player_amortisation",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1697
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Varekostnad",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "lump_football_operations_expense",
+     0.18000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.17
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+   "choice": "lump_football_operations",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.73
+    ],
+    [
+     "other_income",
+     0.1
+    ],
+    [
+     "player_sales",
+     0.07
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Driftsresultat",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "lump_football_operations",
+   "confidence": 0.22,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.26
+    ],
+    [
+     "other_income",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Nedskrivning av finansielle eiendeler",
+   "lado": null,
+   "page": 2,
+   "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+   "choice": "player_impairment",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "player_impairment",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Renteinntekt fra foretak i samme konsern",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1358
+  },
+  {
+   "label": "Netto finans",
+   "lado": null,
+   "page": 2,
+   "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1484
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Resultat før skattekostnad",
+   "lado": null,
+   "page": 14,
+   "section": "Grunnlag for skattekostnad, endring i utsatt skatt og betalbar skatt",
+   "choice": "admin_general_expense",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "other_income",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Udekket tap",
+   "lado": null,
+   "page": 2,
+   "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "exceptional_items",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Salgsinntekter",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Note 1 Driftsinntekter",
+   "choice": "lump_football_operations",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.46
+    ],
+    [
+     "player_sales",
+     0.22
+    ],
+    [
+     "other_income",
+     0.14
+    ]
+   ],
+   "tokens": 825
+  },
+  {
+   "label": "Årsresultat",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1559
+  },
+  {
+   "label": "Avskrivning varige driftsmidler og immatrielle eiendeler",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "depreciation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "depreciation",
+     0.97
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Inntekt på investering i datterselskap",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Nedskrivning av andre finansielle omløpsmidler",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "player_impairment",
+     0.19
+    ],
+    [
+     "other_amortisation",
+     0.14
+    ]
+   ],
+   "tokens": 1569
+  },
+  {
+   "label": "Ordinært resultat",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_income",
+     0.53
+    ],
+    [
+     "lump_football_operations",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Overført til udekket tap",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "exceptional_items",
+     0.19
+    ],
+    [
+     "other_income",
+     0.06
+    ]
+   ],
+   "tokens": 1443
+  },
+  {
+   "label": "Skattekostnad på ordinært resultat",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 13,
+   "section": "Note 2 Gjennomført fusjon mellom Ålesund Fotball AS og AaFK Sponsorservice AS / Note 3 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 909
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 13,
+   "section": "Note 2 Gjennomført fusjon mellom Ålesund Fotball AS og AaFK Sponsorservice AS / Note 3 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "choice": "other_expenses",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "wages_squad",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 13,
+   "section": "Note 2 Gjennomført fusjon mellom Ålesund Fotball AS og AaFK Sponsorservice AS / Note 3 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "choice": "admin_general_expense",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.43
+    ],
+    [
+     "wages_squad",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.17
+    ]
+   ],
+   "tokens": 841
+  },
+  {
+   "label": "Permanente forskjeller",
+   "lado": null,
+   "page": 14,
+   "section": "Grunnlag for skattekostnad, endring i utsatt skatt og betalbar skatt",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 13,
+   "section": "Note 2 Gjennomført fusjon mellom Ålesund Fotball AS og AaFK Sponsorservice AS / Note 3 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "wages_squad",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1152
+  },
+  {
+   "label": "Mottatt konsernbidrag",
+   "lado": null,
+   "page": 14,
+   "section": "Grunnlag for skattekostnad, endring i utsatt skatt og betalbar skatt",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.9400000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Endring i midlertidige forskjeller",
+   "lado": null,
+   "page": 14,
+   "section": "Grunnlag for skattekostnad, endring i utsatt skatt og betalbar skatt",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1277
+  },
+  {
+   "label": "Skattepliktig inntekt",
+   "lado": null,
+   "page": 14,
+   "section": "Grunnlag for skattekostnad, endring i utsatt skatt og betalbar skatt",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.49
+    ],
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "For mye, lite avsatt tidligere år",
+   "lado": "expense",
+   "page": 14,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "exceptional_items",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Betalbar skatt på årets resultat",
+   "lado": "expense",
+   "page": 14,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Endring i utsatt skattefordel",
+   "lado": "expense",
+   "page": 14,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 786
+  },
+  {
+   "label": "Årets Skattekostnad",
+   "lado": "expense",
+   "page": 14,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1068
+  }
+ ]
+}

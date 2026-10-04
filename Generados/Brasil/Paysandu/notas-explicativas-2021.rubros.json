@@ -1,0 +1,172 @@
+{
+ "md": "Clubes/Brasil/Paysandu/notas-explicativas-2021.md",
+ "pdf": "Clubes/Brasil/Paysandu/notas-explicativas-2021.pdf",
+ "club": "paysandu",
+ "year": 2021,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:53:50.123Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 17,
+  "notasUsadas": []
+ },
+ "ladoConocido": 15,
+ "rubros": [
+  {
+   "label": "Despesa com Pessoal",
+   "lado": "expense",
+   "page": 17,
+   "section": "### 24. Despesas operacionais da atividade desportiva",
+   "values": [
+    2142.472
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Gerais e Administrativas",
+   "lado": "expense",
+   "page": 17,
+   "section": "### 24. Despesas operacionais da atividade desportiva",
+   "values": [
+    5802.959
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Despesas com Gratuidades (i)",
+   "lado": "expense",
+   "page": 17,
+   "section": "### 24. Despesas operacionais da atividade desportiva",
+   "values": [
+    3182.285
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Depreciação/Amortização",
+   "lado": "expense",
+   "page": 17,
+   "section": "### 24. Despesas operacionais da atividade desportiva",
+   "values": [
+    287.647
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Perdas Constituídas (ii)",
+   "lado": "expense",
+   "page": 17,
+   "section": "### 24. Despesas operacionais da atividade desportiva",
+   "values": [
+    5
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "PECLD",
+   "lado": "expense",
+   "page": 17,
+   "section": "### 24. Despesas operacionais da atividade desportiva",
+   "values": [
+    1911.802
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 17,
+   "section": "### 24. Despesas operacionais da atividade desportiva",
+   "values": [
+    3.463
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Receita da Atividade Desportiva (i)",
+   "lado": "revenue",
+   "page": 16,
+   "section": "### 21. Receita operacional",
+   "values": [
+    22.400099
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "(-) Deduções da Receita do Futebol (ii)",
+   "lado": "revenue",
+   "page": 16,
+   "section": "### 21. Receita operacional",
+   "values": [
+    -0.423691
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Salários e ordenados",
+   "lado": "expense",
+   "page": 17,
+   "section": "# Paysandu Sport Club / ## Notas explicativas da administração às demonstrações contábeis / ### 22. Custo da atividade desportiva",
+   "values": [
+    4478.984
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Prem. Grat. e D Imagem",
+   "lado": "expense",
+   "page": 17,
+   "section": "# Paysandu Sport Club / ## Notas explicativas da administração às demonstrações contábeis / ### 22. Custo da atividade desportiva",
+   "values": [
+    4685.869
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Encargos sociais",
+   "lado": "expense",
+   "page": 17,
+   "section": "# Paysandu Sport Club / ## Notas explicativas da administração às demonstrações contábeis / ### 22. Custo da atividade desportiva",
+   "values": [
+    507.101
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Salários e Ordenados",
+   "lado": "expense",
+   "page": 14,
+   "section": "# Paysandu Sport Club / ## Notas explicativas da administração às demonstrações contábeis / ### 15. Salários, férias e encargos sociais",
+   "values": [
+    3.103274
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Encargos e Contribuições",
+   "lado": "expense",
+   "page": 14,
+   "section": "# Paysandu Sport Club / ## Notas explicativas da administração às demonstrações contábeis / ### 15. Salários, férias e encargos sociais",
+   "values": [
+    6.559189
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Provisões Trabalhistas",
+   "lado": "expense",
+   "page": 14,
+   "section": "# Paysandu Sport Club / ## Notas explicativas da administração às demonstrações contábeis / ### 15. Salários, férias e encargos sociais",
+   "values": [
+    1.657136
+   ],
+   "origen": "estado 8"
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+{
+  "club": "metalist-1925",
+  "year": 1925,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Ucrania/Metalist 1925/metalist1925-pagos-agentes-2025.md",
+  "generatedAt": "2026-09-30T22:08:22.079Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 0,
+  "relevantTableCount": 0,
+  "tables": [],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/metalist-1925-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"metalist-1925\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

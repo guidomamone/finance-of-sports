@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Guarani/demonstracoes-financeiras-2024-2025.md",
+ "generado": "2026-10-02T00:16:28.934Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de reais - R$)",
+ "caja": {
+  "lineas": [
+   527
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   527
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La línea L527 contiene tanto Caixa e equivalentes (6.535) como Empréstimos corrientes (1.018) por el formato a dos columnas; no hay préstamos no corrientes. Antecipações y Recuperação judicial no se incluyeron como deuda financiera, aunque la RJ podría contener deuda bancaria."
+}

@@ -1,0 +1,101 @@
+{
+  "club": "gimnasiaesgrima-ar",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Gimnasia y Esgrima LP/memoria-y-balance-2023-2024.md",
+  "generatedAt": "2026-09-30T22:39:08.717Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 9,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 3,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 25,
+      "section": "4.5,8 SECTOR DE GUARDADO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Colocación de bomba bajo nivel de suelo. - Reper昀椀lado de zanjeo para drenaje en cancha",
+          "values": [
+            "10."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Construcción de un nuevo pozo surgente con bomba de - Reper昀椀lado de zanjeo en cancha",
+          "values": [
+            "2."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "- Limpieza cisterna para abastecimiento de riego de can- / de medidas reglamentarias. / cha 2. / - Colocación de parapelotas. / - Colocación de caños de hormigón en zanja para cone-",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "4.5.9 OBRA ELÉCTRICA xión de circulación entre canchas 5 y",
+          "values": [
+            "9."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Construcción de un nuevo tablero para llave conmuta- - Poda de sanidad sector de cancha",
+          "values": [
+            "5."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 87,
+      "section": "-Agustina Ibarra, Athina Apas, Camila Peña, Alma del        - / Negro y Carla Gutiérrez participaron por primera vez en / realizadas durante el período que abarca la presente / Agosto de 2023                                              memoria fueron las siguientes: / participaron del show organizado por Cecilia Yuma, en       denominado “Bajo del Mar\".",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "lizaron en el Campeonato Argentino de la categoría B",
+          "values": [
+            "22/07/23."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "este año en la provincia de Mendoza. • Bingo familiar realizado el sábado",
+          "values": [
+            "09/09/23."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Gimnasia y Esgrima (La Plata)",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 94,
+      "line": "so al Club de Campo, se solicitaron cotizaciones para su     tó una prórrogas del contrato de 昀椀deicomiso en virtud de"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,384 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.pdf",
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T00:22:13.203Z",
+ "ubicacion": {
+  "estado": [
+   "b6",
+   "b7",
+   "b8"
+  ],
+  "notas_ingresos": [
+   "b50",
+   "b42",
+   "b45",
+   "b40"
+  ],
+  "notas_gastos": [
+   "b46",
+   "b47",
+   "b59",
+   "b40"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos (83.004.966,02), sin indicación de miles"
+  },
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos"
+  },
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos"
+  },
+  {
+   "bloque": "b50",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos"
+  },
+  {
+   "bloque": "b42",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos"
+  },
+  {
+   "bloque": "b45",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos"
+  },
+  {
+   "bloque": "b40",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos"
+  },
+  {
+   "bloque": "b46",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos"
+  },
+  {
+   "bloque": "b47",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos"
+  },
+  {
+   "bloque": "b59",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 205,
+   "etiqueta": "RECEITA LÍQUIDA DAS ATIVIDADES (nota 17)",
+   "actual": "83.004.966,02",
+   "anterior": "70.333.324,50",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 206,
+   "etiqueta": "CUSTOS E DESPESAS",
+   "actual": "(63.985.423,09)",
+   "anterior": "(39.233.743,86)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 210,
+   "etiqueta": "Despesas com futebol profissional e amador (nota 18)",
+   "actual": "(38.209.385,92)",
+   "anterior": "(26.592.069,43)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 211,
+   "etiqueta": "Despesas administrativas",
+   "actual": "(454.245,43)",
+   "anterior": "(340.103,84)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 212,
+   "etiqueta": "Materiais",
+   "actual": "(875.577,79)",
+   "anterior": "(664.503,46)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 213,
+   "etiqueta": "Serviços de terceiros",
+   "actual": "(3.284.071,56)",
+   "anterior": "(2.427.360,73)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 214,
+   "etiqueta": "Despesas tributárias",
+   "actual": "(1.454.817,55)",
+   "anterior": "(227.969,45)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 215,
+   "etiqueta": "Despesas gerais (nota 19)",
+   "actual": "(19.707.324,84)",
+   "anterior": "(8.981.736,95)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 216,
+   "etiqueta": "Outras receitas e despesas",
+   "actual": "18.407,79",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 220,
+   "etiqueta": "RESULTADO ANTES DO RESULTADO FINANCEIRO",
+   "actual": "19.037.950,72",
+   "anterior": "31.099.580,64",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 221,
+   "etiqueta": "Resultado financeiro líquido 20 (",
+   "actual": "3.260.860,85)",
+   "anterior": "(5.572.564,38)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 222,
+   "etiqueta": "SUPERÁVIT DO EXERCÍCIO",
+   "actual": "15.777.089,87",
+   "anterior": "25.527.016,26",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b40",
+   "linea": 791,
+   "etiqueta": "Receitas financeiras",
+   "actual": "4.946.151,88",
+   "anterior": "44.558,79",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Resultado financeiro líquido 20 ("
+  },
+  {
+   "bloque": "b40",
+   "linea": 792,
+   "etiqueta": "Juros, multas e descontos obtidos",
+   "actual": "37.793,58",
+   "anterior": "41.531,40",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Resultado financeiro líquido 20 ("
+  },
+  {
+   "bloque": "b40",
+   "linea": 793,
+   "etiqueta": "Rendimentos de aplicações financeiras",
+   "actual": "3.572.333,10",
+   "anterior": "219,39",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Resultado financeiro líquido 20 ("
+  },
+  {
+   "bloque": "b40",
+   "linea": 794,
+   "etiqueta": "Receitas com variação cambial",
+   "actual": "1.336.025,20",
+   "anterior": "2.808,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Resultado financeiro líquido 20 ("
+  },
+  {
+   "bloque": "b40",
+   "linea": 796,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(8.207.012,73)",
+   "anterior": "(5.617.123,17)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Resultado financeiro líquido 20 ("
+  },
+  {
+   "bloque": "b40",
+   "linea": 797,
+   "etiqueta": "Taxas, tarifas bancárias, juros, multas e descontos concedidos",
+   "actual": "(4.242.119,67)",
+   "anterior": "(5.369.913,98)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Resultado financeiro líquido 20 ("
+  },
+  {
+   "bloque": "b40",
+   "linea": 798,
+   "etiqueta": "Despesas com variação cambial",
+   "actual": "(3.962.600,19)",
+   "anterior": "(220.200,00)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Resultado financeiro líquido 20 ("
+  },
+  {
+   "bloque": "b40",
+   "linea": 799,
+   "etiqueta": "Outras despesas financeiras",
+   "actual": "(2.292,87)",
+   "anterior": "(27.009,19)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Resultado financeiro líquido 20 ("
+  },
+  {
+   "bloque": "b40",
+   "linea": 801,
+   "etiqueta": "TOTAL",
+   "actual": "(3.260.860,85)",
+   "anterior": "(5.572.564,38)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Resultado financeiro líquido 20 ("
+  },
+  {
+   "bloque": "b59",
+   "linea": 968,
+   "etiqueta": "Correios",
+   "actual": "(12.637,28)",
+   "anterior": "(10.257,08)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas gerais (nota 19)"
+  },
+  {
+   "bloque": "b59",
+   "linea": 969,
+   "etiqueta": "Transportes",
+   "actual": "(4.605,04)",
+   "anterior": "(5.495,78)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas gerais (nota 19)"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 205,
+  "actual": "83.004.966,02"
+ },
+ "total_gastos": {
+  "linea": 206,
+  "actual": "(63.985.423,09)"
+ },
+ "resultado": {
+  "linea": 222,
+  "actual": "15.777.089,87",
+  "anterior": "25.527.016,26"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los ingresos de la nota 17 por segmento (L817-L842) usando la columna total (7ª-8ª) para desglosar 'RECEITA LÍQUIDA DAS ATIVIDADES (nota 17)'?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "RECEITA LÍQUIDA DAS ATIVIDADES (nota 17)",
+   "texto": "El cuadro tiene columnas por segmento sin encabezado legible y el estado no tiene renglones de ingreso por segmento; el total L842 coincide con 83.004.966,02.",
+   "bloques": [
+    "b42",
+    "b45",
+    "b50"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera el cuadro duplicado de Bilheterias y TV (L892-L893) por repetir L817-L818?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "RECEITA LÍQUIDA DAS ATIVIDADES (nota 17)",
+   "texto": "L892-L893 repiten importes de L817-L818.",
+   "bloques": [
+    "b50",
+    "b42"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se cargan los gastos por segmento (L849-L865) como desglose de los renglones del estado, siendo que la 1ª columna (futebol) desglosa 'Despesas com futebol profissional e amador (nota 18)'?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Despesas com futebol profissional e amador (nota 18)",
+   "texto": "Las columnas no tienen encabezado y la suma de la 1ª columna (47.064.183,57) no coincide con 38.209.385,92; ademas 'Despesas gerais' 8.925.063,53+10.943.888,71 parecen componer 19.707.324,84.",
+   "bloques": [
+    "b46",
+    "b47"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se excluyen los importes de Receitas Antecipadas (nota 13) mezclados en L791-L802?",
+   "propuesta": "sí",
+   "tema": "perimetro",
+   "renglon": "",
+   "texto": "Son saldos de balance (nota 13), no resultados; L795, L800 y L802 pertenecen a esa nota.",
+   "bloques": [
+    "b40"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se cargan Correios y Transportes (L968-L969) como desglose de 'Despesas gerais (nota 19)'?",
+   "propuesta": "no",
+   "tema": "perimetro",
+   "renglon": "Despesas gerais (nota 19)",
+   "texto": "El cuadro está truncado y sin título; no se sabe a qué renglón pertenece.",
+   "bloques": [
+    "b59"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "L221 tiene el paréntesis corrido: el importe es (3.260.860,85). Los cuadros por segmento de ingresos y gastos no se cargaron por falta de encabezados de columna; ver dudas. Las provisiones (Cíveis, Trabalhistas, Tributária) mezcladas en L839-L843 y L861-L865 son de nota de contingencias, no resultados."
+}

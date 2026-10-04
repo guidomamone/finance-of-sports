@@ -1,0 +1,152 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2016-17.md",
+ "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2016-17.pdf",
+ "club": "panetolikos",
+ "year": 2017,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:03:25.583Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 14,
+  "notasUsadas": []
+ },
+ "ladoConocido": 7,
+ "rubros": [
+  {
+   "label": "ποσά σε €",
+   "lado": null,
+   "page": 13,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    0.00003
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 13,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    0.712062
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 13,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    3.807846
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 13,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    2.575265
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 13,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    -0.385561
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 13,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    -0.035004
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "revenue",
+   "page": 13,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    0.001262
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 13,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    -0.005759
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Κάλυψης Παγίας περιουσίας μέσω ιδίων κεφαλαίων",
+   "lado": null,
+   "page": 4,
+   "section": "# ΟΙΚΟΝΟΜΙΚΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΕΤΑΙΡΕΙΑΣ / # ΒΑΣΙΚΟΙ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΟΙ ΔΕΙΚΤΕΣ ΑΠΟΔΟΣΗΣ",
+   "values": [
+    3.256792
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Κεφαλαιακής Ανεξαρτησίας",
+   "lado": null,
+   "page": 4,
+   "section": "# ΟΙΚΟΝΟΜΙΚΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΕΤΑΙΡΕΙΑΣ / # ΒΑΣΙΚΟΙ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΟΙ ΔΕΙΚΤΕΣ ΑΠΟΔΟΣΗΣ",
+   "values": [
+    3.256792
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Παγιοποίησης Περιουσίας",
+   "lado": null,
+   "page": 4,
+   "section": "# ΟΙΚΟΝΟΜΙΚΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΕΤΑΙΡΕΙΑΣ / # ΒΑΣΙΚΟΙ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΟΙ ΔΕΙΚΤΕΣ ΑΠΟΔΟΣΗΣ",
+   "values": [
+    4.874843
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Κυκλοφοριακής Ρευστότητας",
+   "lado": null,
+   "page": 4,
+   "section": "# ΟΙΚΟΝΟΜΙΚΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΕΤΑΙΡΕΙΑΣ / # ΒΑΣΙΚΟΙ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΟΙ ΔΕΙΚΤΕΣ ΑΠΟΔΟΣΗΣ",
+   "values": [
+    0.663989
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Κυκλοφοριακής Ταχύτητας Ιδίων κεφαλαίων",
+   "lado": null,
+   "page": 4,
+   "section": "# ΟΙΚΟΝΟΜΙΚΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΕΤΑΙΡΕΙΑΣ / # ΒΑΣΙΚΟΙ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΟΙ ΔΕΙΚΤΕΣ ΑΠΟΔΟΣΗΣ",
+   "values": [
+    0.712062
+   ],
+   "origen": "estado 1"
+  }
+ ]
+}

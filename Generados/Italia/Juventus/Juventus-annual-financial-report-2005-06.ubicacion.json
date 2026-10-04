@@ -1,0 +1,817 @@
+{
+ "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.pdf",
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T22:23:19.171Z",
+ "bloques": {
+  "b1": {
+   "pagina": 36,
+   "lineas": [
+    708,
+    727
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 39,
+   "lineas": [
+    802,
+    808
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 40,
+   "lineas": [
+    824,
+    829
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 49,
+   "lineas": [
+    1064,
+    1070
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 50,
+   "lineas": [
+    1082,
+    1088
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 50,
+   "lineas": [
+    1094,
+    1099
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 51,
+   "lineas": [
+    1119,
+    1126
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 52,
+   "lineas": [
+    1156,
+    1163
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 53,
+   "lineas": [
+    1189,
+    1198
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 54,
+   "lineas": [
+    1212,
+    1219
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 59,
+   "lineas": [
+    1363,
+    1384
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 60,
+   "lineas": [
+    1407,
+    1412
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 61,
+   "lineas": [
+    1439,
+    1463
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 62,
+   "lineas": [
+    1469,
+    1475
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 65,
+   "lineas": [
+    1569,
+    1573
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 66,
+   "lineas": [
+    1590,
+    1595
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 70,
+   "lineas": [
+    1695,
+    1706
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 74,
+   "lineas": [
+    1753,
+    1783
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 76,
+   "lineas": [
+    1846,
+    1869
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 77,
+   "lineas": [
+    1881,
+    1905
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 78,
+   "lineas": [
+    1913,
+    1934
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 79,
+   "lineas": [
+    1950,
+    1980
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 80,
+   "lineas": [
+    1994,
+    2009
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 81,
+   "lineas": [
+    2021,
+    2053
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 82,
+   "lineas": [
+    2061,
+    2087
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 85,
+   "lineas": [
+    2173,
+    2183
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 89,
+   "lineas": [
+    2303,
+    2308
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 90,
+   "lineas": [
+    2338,
+    2344
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 92,
+   "lineas": [
+    2403,
+    2435
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 93,
+   "lineas": [
+    2463,
+    2475
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 94,
+   "lineas": [
+    2483,
+    2487
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 94,
+   "lineas": [
+    2491,
+    2500
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 94,
+   "lineas": [
+    2506,
+    2519
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 95,
+   "lineas": [
+    2533,
+    2543
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 95,
+   "lineas": [
+    2547,
+    2553
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 96,
+   "lineas": [
+    2573,
+    2603
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 97,
+   "lineas": [
+    2619,
+    2623
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 97,
+   "lineas": [
+    2643,
+    2652
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 99,
+   "lineas": [
+    2695,
+    2701
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 100,
+   "lineas": [
+    2721,
+    2726
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 101,
+   "lineas": [
+    2780,
+    2786
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 102,
+   "lineas": [
+    2798,
+    2802
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 102,
+   "lineas": [
+    2812,
+    2820
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 103,
+   "lineas": [
+    2838,
+    2863
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 104,
+   "lineas": [
+    2877,
+    2886
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 107,
+   "lineas": [
+    2989,
+    2993
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 107,
+   "lineas": [
+    2997,
+    3006
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 108,
+   "lineas": [
+    3016,
+    3023
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 108,
+   "lineas": [
+    3027,
+    3033
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 108,
+   "lineas": [
+    3039,
+    3044
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 109,
+   "lineas": [
+    3056,
+    3062
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 109,
+   "lineas": [
+    3072,
+    3083
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 110,
+   "lineas": [
+    3109,
+    3115
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 111,
+   "lineas": [
+    3141,
+    3145
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 112,
+   "lineas": [
+    3157,
+    3162
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 112,
+   "lineas": [
+    3168,
+    3178
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 113,
+   "lineas": [
+    3209,
+    3215
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 113,
+   "lineas": [
+    3223,
+    3230
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 114,
+   "lineas": [
+    3240,
+    3248
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 114,
+   "lineas": [
+    3254,
+    3263
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 115,
+   "lineas": [
+    3287,
+    3301
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 116,
+   "lineas": [
+    3323,
+    3329
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 116,
+   "lineas": [
+    3333,
+    3339
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 116,
+   "lineas": [
+    3345,
+    3351
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 116,
+   "lineas": [
+    3355,
+    3360
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 117,
+   "lineas": [
+    3372,
+    3381
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 117,
+   "lineas": [
+    3389,
+    3394
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 117,
+   "lineas": [
+    3406,
+    3412
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 118,
+   "lineas": [
+    3425,
+    3436
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 118,
+   "lineas": [
+    3446,
+    3455
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 119,
+   "lineas": [
+    3469,
+    3477
+   ],
+   "tipo": "tabla"
+  },
+  "b72": {
+   "pagina": 120,
+   "lineas": [
+    3503,
+    3535
+   ],
+   "tipo": "tabla"
+  },
+  "b73": {
+   "pagina": 122,
+   "lineas": [
+    3580,
+    3584
+   ],
+   "tipo": "texto"
+  },
+  "b74": {
+   "pagina": 123,
+   "lineas": [
+    3603,
+    3608
+   ],
+   "tipo": "tabla"
+  },
+  "b75": {
+   "pagina": 123,
+   "lineas": [
+    3610,
+    3615
+   ],
+   "tipo": "tabla"
+  },
+  "b76": {
+   "pagina": 124,
+   "lineas": [
+    3627,
+    3640
+   ],
+   "tipo": "tabla"
+  },
+  "b77": {
+   "pagina": 125,
+   "lineas": [
+    3656,
+    3675
+   ],
+   "tipo": "tabla"
+  },
+  "b78": {
+   "pagina": 126,
+   "lineas": [
+    3691,
+    3726
+   ],
+   "tipo": "tabla"
+  },
+  "b79": {
+   "pagina": 127,
+   "lineas": [
+    3746,
+    3766
+   ],
+   "tipo": "tabla"
+  },
+  "b80": {
+   "pagina": 128,
+   "lineas": [
+    3780,
+    3803
+   ],
+   "tipo": "tabla"
+  },
+  "b81": {
+   "pagina": 129,
+   "lineas": [
+    3821,
+    3833
+   ],
+   "tipo": "tabla"
+  },
+  "b82": {
+   "pagina": 130,
+   "lineas": [
+    3845,
+    3857
+   ],
+   "tipo": "tabla"
+  },
+  "b83": {
+   "pagina": 131,
+   "lineas": [
+    3873,
+    3885
+   ],
+   "tipo": "tabla"
+  },
+  "b84": {
+   "pagina": 132,
+   "lineas": [
+    3895,
+    3909
+   ],
+   "tipo": "tabla"
+  },
+  "b85": {
+   "pagina": 133,
+   "lineas": [
+    3925,
+    3941
+   ],
+   "tipo": "tabla"
+  },
+  "b86": {
+   "pagina": 134,
+   "lineas": [
+    3951,
+    3966
+   ],
+   "tipo": "tabla"
+  },
+  "b87": {
+   "pagina": 135,
+   "lineas": [
+    3992,
+    4021
+   ],
+   "tipo": "tabla"
+  },
+  "b88": {
+   "pagina": 136,
+   "lineas": [
+    4033,
+    4061
+   ],
+   "tipo": "tabla"
+  },
+  "b89": {
+   "pagina": 137,
+   "lineas": [
+    4075,
+    4088
+   ],
+   "tipo": "tabla"
+  },
+  "b90": {
+   "pagina": 138,
+   "lineas": [
+    4102,
+    4125
+   ],
+   "tipo": "tabla"
+  },
+  "b91": {
+   "pagina": 145,
+   "lineas": [
+    4361,
+    4367
+   ],
+   "tipo": "tabla"
+  },
+  "b92": {
+   "pagina": 165,
+   "lineas": [
+    4931,
+    4943
+   ],
+   "tipo": "tabla"
+  },
+  "b93": {
+   "pagina": 166,
+   "lineas": [
+    4958,
+    4966
+   ],
+   "tipo": "tabla"
+  },
+  "b94": {
+   "pagina": 167,
+   "lineas": [
+    4984,
+    5011
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b24",
+  "b25"
+ ],
+ "notas_ingresos": [
+  "b46",
+  "b47",
+  "b52",
+  "b53",
+  "b62",
+  "b68"
+ ],
+ "notas_gastos": [
+  "b55",
+  "b56",
+  "b58",
+  "b59",
+  "b61",
+  "b64",
+  "b71"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "El estado oficial (b24) imprime importes en euros sin redondeo (ej. 16.594.705; 252.727.083), mientras las notas están en €/000.",
+ "moneda": "EUR",
+ "columna_ejercicio": "Year 2005/2006",
+ "columna_anterior": "Year 2004/2005",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el estado reclasificado por segmento (b19, pág. 76, 'Op. excl. player management / Player management') porque repite importes del estado oficial b24/b25?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "",
+   "texto": "b19 es una cuenta de resultados reclasificada en €/000 con columnas por área de negocio; sus importes ya están en el estado oficial y las notas.",
+   "bloques": [
+    "b19"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se dejan afuera los cuadros por jugador de plusvalías/minusvalías y player sharing (b63, b65, b69, b70)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Son detalle por jugador de renglones ya abiertos en b62, b64 y b68.",
+   "bloques": [
+    "b63",
+    "b65",
+    "b69",
+    "b70"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado individual de Juventus FC S.p.A. (b24 producción/costos, b25 financieros, extraordinarios, impuestos y resultado), en euros. No hay estado consolidado en el documento (b17 es un resumen de la controlada Campi di Vinovo). Las notas están en €/000. b4, b6, b7, b8 son cuadros del informe de gestión sobre el estado reclasificado; no se eligen."
+}

@@ -1,0 +1,22 @@
+{
+ "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.pdf",
+ "generado": "2026-10-03T20:53:30.065Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2012-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ }
+}

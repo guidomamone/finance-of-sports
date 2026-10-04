@@ -1,0 +1,255 @@
+{
+  "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2018-06-30.md",
+  "pdf": "Clubes/Dinamarca/Randers FC/aarsrapport-2018-06-30.pdf",
+  "club": "randers-dk",
+  "year": 2018,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:00:00.432Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 21,
+    "notasUsadas": []
+  },
+  "ladoConocido": 21,
+  "rubros": [
+    {
+      "label": "Sponsorindtægter",
+      "lado": "revenue",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        27.596726
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por patrocinio"
+    },
+    {
+      "label": "TV-indtægter",
+      "lado": "revenue",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        10.010173
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por derechos de televisión"
+    },
+    {
+      "label": "Entré og kampindtægter",
+      "lado": "revenue",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        4.342471
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por taquilla y días de partido"
+    },
+    {
+      "label": "Øvrige indtægter",
+      "lado": "revenue",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        16.238153
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Sponsorudgifter",
+      "lado": "expense",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        -5.164019
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de patrocinio"
+    },
+    {
+      "label": "Kampafvikling",
+      "lado": "expense",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        -8.289306
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de organización de partidos"
+    },
+    {
+      "label": "Sportslige udgifter i øvrigt",
+      "lado": "expense",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        -3.102951
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros gastos deportivos"
+    },
+    {
+      "label": "Talentudvikling",
+      "lado": "expense",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        -4.498426
+      ],
+      "origen": "estado 1",
+      "glosa": "Desarrollo de talentos"
+    },
+    {
+      "label": "Leje spillere mv.",
+      "lado": "expense",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        -1.440373
+      ],
+      "origen": "estado 1",
+      "glosa": "Cesión de jugadores, etc."
+    },
+    {
+      "label": "Løn- og personaleomkostninger",
+      "lado": "expense",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        -26.592058
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Øvrige udgifter",
+      "lado": "expense",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        -2.249955
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Udgifter Lounge og Skybokse",
+      "lado": "expense",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        -4.204091
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de salón y palcos VIP"
+    },
+    {
+      "label": "Løn- og personaleomkostninger, administration",
+      "lado": "expense",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        -9.869036
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de personal, administración"
+    },
+    {
+      "label": "Administrationsomkostninger",
+      "lado": "expense",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        -2.120868
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Afskrivninger, anlægsaktiver",
+      "lado": "expense",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        -7.673738
+      ],
+      "origen": "estado 1",
+      "glosa": "Amortizaciones del inmovilizado"
+    },
+    {
+      "label": "Finansielle indtægter",
+      "lado": "revenue",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        0.009157
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Finansielle omkostninger",
+      "lado": "expense",
+      "page": 10,
+      "section": "Randers FC A/S",
+      "values": [
+        -0.735949
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Løn og gager",
+      "lado": "expense",
+      "page": 15,
+      "section": "# 1 Personaleomkostninger",
+      "values": [
+        31.072277
+      ],
+      "origen": "estado 9",
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensioner",
+      "lado": "expense",
+      "page": 15,
+      "section": "# 1 Personaleomkostninger",
+      "values": [
+        3.145544
+      ],
+      "origen": "estado 9",
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 15,
+      "section": "# 1 Personaleomkostninger",
+      "values": [
+        1.28425
+      ],
+      "origen": "estado 9",
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Øvrige personaleomkostninger",
+      "lado": "expense",
+      "page": 15,
+      "section": "# 1 Personaleomkostninger",
+      "values": [
+        0.959023
+      ],
+      "origen": "estado 9",
+      "glosa": "Otros gastos de personal"
+    }
+  ]
+}

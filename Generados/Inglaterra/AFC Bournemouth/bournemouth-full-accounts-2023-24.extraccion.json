@@ -1,0 +1,269 @@
+{
+ "pdf": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2023-24.pdf",
+ "md": "Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2023-24.md",
+ "cierre": "2024-06-30",
+ "paginas": [
+  18,
+  29,
+  30,
+  31,
+  32
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:52:02.476Z",
+ "escala": "miles",
+ "filas": [
+  {
+   "pagina": 18,
+   "etiqueta": "Turnover",
+   "importe_impreso": "160,792",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Other operating income",
+   "importe_impreso": "8,825",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Profit on disposal of players' registrations",
+   "importe_impreso": "251",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Staff costs",
+   "importe_impreso": "(136,170)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Depreciation and amortisation charge",
+   "importe_impreso": "(63,512)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Other operating expenses",
+   "importe_impreso": "(26,026)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Operating (loss)/profit",
+   "importe_impreso": "(55,840)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Interest receivable and similar income",
+   "importe_impreso": "191",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Interest payable and similar expenses",
+   "importe_impreso": "(10,502)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "{Loss)/profit before taxation",
+   "importe_impreso": "(66,151)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "(Loss)/profit for the financial year",
+   "importe_impreso": "(66,151)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 29,
+   "etiqueta": "Match and season ticket income",
+   "importe_impreso": "6,531",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "pagina": 29,
+   "etiqueta": "Premier League income",
+   "importe_impreso": "135,631",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "pagina": 29,
+   "etiqueta": "Sponsorship and advertising",
+   "importe_impreso": "12,120",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "pagina": 29,
+   "etiqueta": "Hospitality and events",
+   "importe_impreso": "3,226",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "pagina": 29,
+   "etiqueta": "Shop merchandise",
+   "importe_impreso": "1,542",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "pagina": 29,
+   "etiqueta": "Other income",
+   "importe_impreso": "1,742",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "pagina": 29,
+   "etiqueta": "Turnover (total nota 4)",
+   "importe_impreso": "160,792",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "pagina": 29,
+   "etiqueta": "Other operating income",
+   "importe_impreso": "8,825",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Other operating income"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Depreciation of tangible assets",
+   "importe_impreso": "1,896",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Depreciation and amortisation charge"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Amortisation of intangibles",
+   "importe_impreso": "61,616",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Depreciation and amortisation charge"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Exchange differences",
+   "importe_impreso": "(1,264)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Other operating expenses"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Operating lease rentals",
+   "importe_impreso": "170",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Other operating expenses"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Wages and salaries",
+   "importe_impreso": "119,732",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Social security costs",
+   "importe_impreso": "16,011",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Other pension costs",
+   "importe_impreso": "427",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Staff costs (total nota 9)",
+   "importe_impreso": "136,170",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Staff costs"
+  },
+  {
+   "pagina": 31,
+   "etiqueta": "Bank interest received",
+   "importe_impreso": "191",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Interest on bank loans",
+   "importe_impreso": "448",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Implied interest on trade creditors with extended payment terms",
+   "importe_impreso": "10,054",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Interest payable and similar expenses (total nota 12)",
+   "importe_impreso": "10,502",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  }
+ ],
+ "total_ingresos_impreso": null,
+ "total_gastos_impreso": null,
+ "resultado_impreso": "(66,151)",
+ "observaciones": "El estado no imprime totales de ingresos ni de gastos. Tax on (loss)/profit es '-' en 2024, se omite; Exceptional other operating income 2024 '-' omitido. En nota 7, la línea '170' aparece separada de su etiqueta en la transcripción; se asume que corresponde a 'Operating lease rentals'. 'Profit on disposal of players’ registrations (251)' en nota 7 es un recordatorio del renglón del estado, no se duplicó. Las etiquetas de subtotales de notas (sin texto impreso) se rotularon descriptivamente. Se omitieron honorarios de auditoría (nota 8), remuneración de directores (nota 10) y conciliación fiscal (nota 13) por ser información complementaria, no desglose directo de renglones; '§2' en nota 8 es ilegible."
+}

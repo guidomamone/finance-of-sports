@@ -1,0 +1,848 @@
+{
+ "md": "Clubes/Argentina/Gimnasia y Esgrima LP/balance-ejercicio-134-2020-2021.md",
+ "generatedAt": "2026-09-30T22:48:20.832Z",
+ "rubrosHuella": "78373df506344815f4952f92e18fc067bba4ff9b",
+ "rubros": [
+  {
+   "label": "Cuotas Sociales",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Cesión Der. Federativos / Solidaridad",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos de Televisión",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Entradas",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Venta Merchandising",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Matrícula y Cuotas",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+   "choice": "member_dues",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Arancel Deportes",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+   "choice": "other_sports",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Alquiler Instalaciones",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+   "choice": "other_income",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Varios",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Donaciones",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "RECPAM",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Sueldos y Retribuciones",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+   "choice": "wages_squad",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Fútbol Profesional (Anexo V)",
+   "lado": null,
+   "page": 5,
+   "section": "# Estado de Recursos y Gastos",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Reconocimientos y Premios",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Cargas Sociales",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de Transferencias",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de Partidos",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Atención Médica",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo Cesión Der. Federativos",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+   "choice": "player_amortisation",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización Activos Intangibles (Anexo I)",
+   "lado": null,
+   "page": 5,
+   "section": "# Estado de Recursos y Gastos",
+   "choice": "player_amortisation",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciación Bienes de Uso (Anexo II)",
+   "lado": null,
+   "page": 5,
+   "section": "# Estado de Recursos y Gastos",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Proveedores en Cuenta Corriente",
+   "lado": null,
+   "page": 22,
+   "section": "### 3.5. Deudas Operativas",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.8200000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1480
+  },
+  {
+   "label": "Deportes y Actividades Sociales (Anexo V)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Estado de Recursos y Gastos",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Total Recursos Ordinarios",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Estado de Recursos y Gastos",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "lump_football_operations",
+     0.21000000000000002
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Generales (Anexo V)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Estado de Recursos y Gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Diferencia de Cambio",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 922
+  },
+  {
+   "label": "Jardín de Infantes y Escuela (Anexo V)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Estado de Recursos y Gastos",
+   "choice": "education_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "education_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Transferencias a Pagar",
+   "lado": null,
+   "page": 22,
+   "section": "### 3.5. Deudas Operativas",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "player_amortisation",
+     0.33
+    ],
+    [
+     "player_sales",
+     0.04
+    ]
+   ],
+   "tokens": 1493
+  },
+  {
+   "label": "Financieros y por Tenencia (Anexo V)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Estado de Recursos y Gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Préstamos Asociados en USD (Anexo VI)",
+   "lado": null,
+   "page": 22,
+   "section": "### 3.5. Deudas Operativas",
+   "choice": "member_dues",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "member_dues",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "other_income",
+     0.16
+    ]
+   ],
+   "tokens": 1476
+  },
+  {
+   "label": "Transferencias a Pagar USD (Anexo VI)",
+   "lado": null,
+   "page": 22,
+   "section": "### 3.5. Deudas Operativas",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "player_amortisation",
+     0.17
+    ],
+    [
+     "player_sales",
+     0.09
+    ]
+   ],
+   "tokens": 1495
+  },
+  {
+   "label": "Mutuos en USD (Anexo VI)",
+   "lado": null,
+   "page": 22,
+   "section": "### 3.5. Deudas Operativas",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1508
+  },
+  {
+   "label": "Convenios por Juicios",
+   "lado": null,
+   "page": 22,
+   "section": "### 3.5. Deudas Operativas",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1464
+  },
+  {
+   "label": "Deudores por Cuotas Sociales",
+   "lado": null,
+   "page": 21,
+   "section": "### 3.2. Créditos Operativos",
+   "choice": "member_dues",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "member_dues",
+     0.74
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1467
+  },
+  {
+   "label": "Acreedores Varios en USD (Anexo VI)",
+   "lado": null,
+   "page": 22,
+   "section": "### 3.5. Deudas Operativas",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "other_income",
+     0.07
+    ]
+   ],
+   "tokens": 1462
+  },
+  {
+   "label": "Préstamos Asociados",
+   "lado": null,
+   "page": 22,
+   "section": "### 3.5. Deudas Operativas",
+   "choice": "member_dues",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "member_dues",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "other_income",
+     0.06
+    ]
+   ],
+   "tokens": 1473
+  },
+  {
+   "label": "Acreedores Varios",
+   "lado": null,
+   "page": 22,
+   "section": "### 3.5. Deudas Operativas",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1449
+  },
+  {
+   "label": "Caja Sede Social",
+   "lado": null,
+   "page": 21,
+   "section": "### 2.8. Cuentas del patrimonio neto / ### 2.9. Cuentas del estado de recursos y gastos / ### 2.10. Componentes financieros implícitos / ## 3. COMPOSICIÓN Y EVOLUCIÓN DE LOS RUBROS / ### 3.1. Caja y Bancos",
+   "choice": "other_income",
+   "confidence": 0.35,
+   "desdeCache": true
+  },
+  {
+   "label": "Cheques en Cartera",
+   "lado": null,
+   "page": 21,
+   "section": "### 2.8. Cuentas del patrimonio neto / ### 2.9. Cuentas del estado de recursos y gastos / ### 2.10. Componentes financieros implícitos / ## 3. COMPOSICIÓN Y EVOLUCIÓN DE LOS RUBROS / ### 3.1. Caja y Bancos",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Bancos en Moneda Nacional",
+   "lado": null,
+   "page": 21,
+   "section": "### 2.8. Cuentas del patrimonio neto / ### 2.9. Cuentas del estado de recursos y gastos / ### 2.10. Componentes financieros implícitos / ## 3. COMPOSICIÓN Y EVOLUCIÓN DE LOS RUBROS / ### 3.1. Caja y Bancos",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Mercado Pago",
+   "lado": null,
+   "page": 21,
+   "section": "### 2.8. Cuentas del patrimonio neto / ### 2.9. Cuentas del estado de recursos y gastos / ### 2.10. Componentes financieros implícitos / ## 3. COMPOSICIÓN Y EVOLUCIÓN DE LOS RUBROS / ### 3.1. Caja y Bancos",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Anticipo Sueldos y Proveedores",
+   "lado": null,
+   "page": 21,
+   "section": "### 3.2. Créditos Operativos",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "wages_squad",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1482
+  },
+  {
+   "label": "Red In a Cobrar",
+   "lado": null,
+   "page": 21,
+   "section": "### 3.2. Créditos Operativos",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Documentos a Cobrar en USD (Anexo VI)",
+   "lado": null,
+   "page": 21,
+   "section": "### 3.2. Créditos Operativos",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1514
+  },
+  {
+   "label": "Otras Cuentas por Cobrar",
+   "lado": null,
+   "page": 21,
+   "section": "### 3.2. Créditos Operativos",
+   "choice": "other_income",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_income",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "Cuotas Jardín y Escuela a Cobrar",
+   "lado": null,
+   "page": 21,
+   "section": "### 3.2. Créditos Operativos",
+   "choice": "education",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "education",
+     0.98
+    ],
+    [
+     "member_dues",
+     0.01
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1503
+  },
+  {
+   "label": "Transferencias a Cobrar USD (Anexo VI)",
+   "lado": null,
+   "page": 21,
+   "section": "### 3.2. Créditos Operativos",
+   "choice": "player_sales",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "player_sales",
+     0.61
+    ],
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1497
+  },
+  {
+   "label": "Tarjetas de Débito/Crédito a Cobrar",
+   "lado": null,
+   "page": 21,
+   "section": "### 3.2. Créditos Operativos",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.47000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1573
+  },
+  {
+   "label": "Anticipo a Sectores a Rendir",
+   "lado": null,
+   "page": 22,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Notas a los Estados Contables / ### 3.3. Otros Créditos",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "other_income",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1477
+  },
+  {
+   "label": "I.V.A. Saldo a Favor",
+   "lado": null,
+   "page": 22,
+   "section": "# Club de Gimnasia y Esgrima La Plata / ## Notas a los Estados Contables / ### 3.3. Otros Créditos",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1397
+  },
+  {
+   "label": "Mercadería Loboshop",
+   "lado": null,
+   "page": 22,
+   "section": "### 3.4. Bienes de Cambio",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "sponsorship_commercial",
+     0.23
+    ],
+    [
+     "youth_other_sports_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1412
+  }
+ ]
+}

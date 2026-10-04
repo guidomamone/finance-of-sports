@@ -1,0 +1,142 @@
+{
+  "club": "nordsjaelland-dk",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2024-12-31.md",
+  "generatedAt": "2026-09-30T22:43:32.039Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 1,
+    "eu": 128,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 3,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 1,
+      "section": "Company reg. no. 24 25 77 03 / Årsrapport / Annual report / 1. januar - 31. december 2024 / I January - 31 December 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Årsrapporten er fremlagt og godkendt på selskabets ordinære generalforsamling den 1. maj",
+          "values": [
+            "2025."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Thé annual report was submitted and approved by the general meeting on the 1 May",
+          "values": [
+            "2025."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "Vi anser den valgte regnskabspraksis for hensigts- / mæssig, og efter vores opfattelse giver årsregnska- / bet et retvisende billede af selskabets aktiver, pas- / siver og finansielle stilling pr. 31. december 2024 / samt af resultatet af selskabets aktiviteter og pen-",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "gestrømme for regnskabsåret 1. januar -",
+          "values": [
+            "31."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "december",
+          "values": [
+            "2024."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": "Periodiserede indtægter / Prepayments/deferred income 3.440.736 2.748 / 3.440.736 2.748 / 15. Pantsætninger og sikkerhedsstillelser / Charges and security",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Selskabet har ingen pantsætninger sikkerhedstillelser pr. 31. december",
+          "values": [
+            "2024."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "The company has no charges or security as per 31 December",
+          "values": [
+            "2024."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "Selskabet har ingen pantsætninger sikkerhedstillelser pr. 31. december",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Selskabet har ingen pantsætninger sikkerhedstillelser pr. 31. december",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "The company has no charges or security as per 31 December",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "The company has no charges or security as per 31 December",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "dk",
+    "query": "FC Nordsjælland",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 36,
+      "line": "using the exchange rate prevailing at the date of"
+    },
+    {
+      "page": 36,
+      "line": "currency are measured at the exchange rate"
+    },
+    {
+      "page": 37,
+      "line": "average exchange rate for the month, and the"
+    },
+    {
+      "page": 37,
+      "line": "exchange rate to closing rate."
+    },
+    {
+      "page": 37,
+      "line": "items are translated using the exchange rate"
+    },
+    {
+      "page": 37,
+      "line": "are translated using the exchange rate prevailing at"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,94 @@
+{
+ "md": "Clubes/Estados Unidos/Green Bay Packers/green-bay-packers-annual-report-2016-17.md",
+ "pdf": "Clubes/Estados Unidos/Green Bay Packers/green-bay-packers-annual-report-2016-17.pdf",
+ "club": "green-bay-packers",
+ "year": 2017,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:01:25.275Z",
+ "tieOuts": {
+  "cierran": 2,
+  "noCierran": 0
+ },
+ "warnings": [
+  "6 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 7,
+  "notasUsadas": []
+ },
+ "ladoConocido": 7,
+ "rubros": [
+  {
+   "label": "National",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "values": [
+    243978
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Local",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "values": [
+    197424
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Player costs",
+   "lado": "expense",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "values": [
+    192507
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Team",
+   "lado": "expense",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "values": [
+    47698
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Sales & marketing",
+   "lado": "expense",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "values": [
+    56612
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Operations & maintenance, net*",
+   "lado": "expense",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "values": [
+    30046
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "General & administrative",
+   "lado": "expense",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "values": [
+    49187
+   ],
+   "origen": "estado 0"
+  }
+ ]
+}

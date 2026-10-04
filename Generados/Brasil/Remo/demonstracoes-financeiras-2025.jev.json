@@ -1,0 +1,834 @@
+{
+ "md": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.md",
+ "generatedAt": "2026-09-30T04:26:49.643Z",
+ "rubros": [
+  {
+   "label": "Receita líquida",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1527
+  },
+  {
+   "label": "Resultado bruto",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "lump_football_operations",
+     0.24000000000000002
+    ],
+    [
+     "player_sales",
+     0.19
+    ]
+   ],
+   "tokens": 1519
+  },
+  {
+   "label": "(-) Custos das atividades esportivas",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1548
+  },
+  {
+   "label": "Receitas de futebol",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "lump_football_operations",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.94
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1522
+  },
+  {
+   "label": "Receita bruta das atividades",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1533
+  },
+  {
+   "label": "Receitas recorrentes",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "lump_football_operations",
+     0.26
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1500
+  },
+  {
+   "label": "Despesas administrativas",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1546
+  },
+  {
+   "label": "Outras receitas (despesas)",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1537
+  },
+  {
+   "label": "Resultado antes do resultado financeiro",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1521
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "Déficit do exercício",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "exceptional_items",
+     0.07
+    ]
+   ],
+   "tokens": 1412
+  },
+  {
+   "label": "Déficit líquido",
+   "lado": null,
+   "page": 10,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado abrangente / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1405
+  },
+  {
+   "label": "Receitas financeiras",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1500
+  },
+  {
+   "label": "Serviço de terceiros",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 15. Custos e despesas",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Ajuste de avaliação patrimonial",
+   "lado": null,
+   "page": 10,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado abrangente / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.48
+    ],
+    [
+     "exceptional_items",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1557
+  },
+  {
+   "label": "Custos com contratações e direitos de atletas",
+   "lado": "expense",
+   "page": 24,
+   "section": "# CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+   "choice": "player_amortisation",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "player_amortisation",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1072
+  },
+  {
+   "label": "Direitos de imagem",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 15. Custos e despesas",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Jogos e competições",
+   "lado": "expense",
+   "page": 24,
+   "section": "# CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Estacionamento",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "stadium_other",
+     0.13
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 933
+  },
+  {
+   "label": "Despesas com pessoal",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 15. Custos e despesas",
+   "choice": "wages_squad",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "wages_squad",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Aluguéis",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "choice": "stadium_other",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "stadium_other",
+     0.59
+    ],
+    [
+     "other_income",
+     0.41
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Royalties de lojas",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Patrimoniais",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "member_dues",
+     0.34
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 942
+  },
+  {
+   "label": "Atividade sociais e esportivas",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ],
+    [
+     "other_sports",
+     0.05
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Programa timemania",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "member_dues",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Marketing, patrocínio e publicidade",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Sócio torcedor",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Royalties licenciados",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Receita de bilheteria",
+   "lado": "revenue",
+   "page": 24,
+   "section": "",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Venda de materiais",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "sponsorship_commercial",
+     0.26
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Cessão de direitos sobre atletas",
+   "lado": "revenue",
+   "page": 24,
+   "section": "",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Luvas",
+   "lado": "revenue",
+   "page": 24,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "competition_bonus",
+     0.17
+    ],
+    [
+     "player_sales",
+     0.16
+    ]
+   ],
+   "tokens": 931
+  },
+  {
+   "label": "Multas contratuais/compensatórias",
+   "lado": "revenue",
+   "page": 24,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "Receita de premiações",
+   "lado": "revenue",
+   "page": 24,
+   "section": "",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Receita de direito de transmissão",
+   "lado": "revenue",
+   "page": 24,
+   "section": "",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1028
+  }
+ ]
+}

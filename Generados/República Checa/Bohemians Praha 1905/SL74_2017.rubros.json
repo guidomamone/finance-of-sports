@@ -1,0 +1,371 @@
+{
+ "md": "Clubes/República Checa/Bohemians Praha 1905/SL74_2017.md",
+ "pdf": "Clubes/República Checa/Bohemians Praha 1905/SL74_2017.pdf",
+ "club": "bohemians-praha-1905",
+ "year": 2017,
+ "numberFormat": "ambiguo",
+ "generatedAt": "2026-09-30T22:07:40.321Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 58,
+  "notasUsadas": [
+   "15",
+   "8"
+  ]
+ },
+ "ladoConocido": 26,
+ "rubros": [
+  {
+   "label": "Tržby z prodeje výrobků a služeb",
+   "lado": "revenue",
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.073024
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Tržby za prodej zboží",
+   "lado": "revenue",
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.005647
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Výkonová spotřeba",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.074638
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Náklady vynaložené na prodané zboží",
+   "lado": "expense",
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.00364
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Spotřeba materiálu a energie",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.004703
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Služby",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.066295
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Mzdové náklady",
+   "lado": "expense",
+   "page": 24,
+   "section": "1.6. Údaje o zaměstnancích a odměnách vedení společnosti k 30.6.2018",
+   "values": [
+    0.004815
+   ],
+   "origen": "nota 15 (ancla 9)",
+   "ancla": "Osobní náklady"
+  },
+  {
+   "label": "Osobní náklady",
+   "lado": "expense",
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.006165
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Náklady na sociální zabezpečení",
+   "lado": "expense",
+   "page": 24,
+   "section": "1.6. Údaje o zaměstnancích a odměnách vedení společnosti k 30.6.2018",
+   "values": [
+    0.00135
+   ],
+   "origen": "nota 15 (ancla 9)",
+   "ancla": "Osobní náklady"
+  },
+  {
+   "label": "Náklady na sociální zabezpečení, zdravotní pojištění a ostatní náklady",
+   "lado": "expense",
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.00135
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Náklady na sociální zabezpečení a zdravotní pojištění",
+   "lado": "expense",
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.00135
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Úpravy hodnot v provozní oblasti",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.004275
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Úpravy hodnot dlouhodobého nehmotného a hmotného majetku",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.003517
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Úpravy hodnot dlouhodobého nehmotného a hmotného majetku - trvalé",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.003517
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Úpravy hodnot pohledávek",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.000758
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Ostatní provozní výnosy",
+   "lado": "revenue",
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.008344
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Tržby z prodaného dlouhodobého majetku",
+   "lado": "revenue",
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.000004
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Jiné provozní výnosy",
+   "lado": "revenue",
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.00834
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Ostatní provozní náklady",
+   "lado": "expense",
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.000447
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Daně a poplatky",
+   "lado": "expense",
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.00002
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Jiné provozní náklady",
+   "lado": "expense",
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "values": [
+    0.000427
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Výnosové úroky a podobné výnosy",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    0.000056
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Nákladové úroky a podobné náklady",
+   "lado": "expense",
+   "page": 17,
+   "section": "",
+   "values": [
+    0.001124
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Ostatní finanční výnosy",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    0.000043
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Ostatní finanční náklady",
+   "lado": "expense",
+   "page": 17,
+   "section": "",
+   "values": [
+    0.000213
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Čistý obrat za účetní období (I. + II. + III. + IV. + V. + VI. + VII.)",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "values": [
+    0.087114
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Tržby z prodeje výrobků",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# 1. TEXTOVÁ ČÁST / # 1.1 Popisné údaje / # 1.2 Popis struktury společnosti / # 1.3 Údaje o minulém vývoji VI. hospodářský účetní rok 1. 7. 2017 - 30. 6. 2018 / # 1.3.1 Údaje o tržbách *)",
+   "values": [
+    31.714
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Tržby z prodeje zboží",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# 1. TEXTOVÁ ČÁST / # 1.1 Popisné údaje / # 1.2 Popis struktury společnosti / # 1.3 Údaje o minulém vývoji VI. hospodářský účetní rok 1. 7. 2017 - 30. 6. 2018 / # 1.3.1 Údaje o tržbách *)",
+   "values": [
+    4.057
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Tržby ze služeb",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# 1. TEXTOVÁ ČÁST / # 1.1 Popisné údaje / # 1.2 Popis struktury společnosti / # 1.3 Údaje o minulém vývoji VI. hospodářský účetní rok 1. 7. 2017 - 30. 6. 2018 / # 1.3.1 Údaje o tržbách *)",
+   "values": [
+    38.212
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Ostatní tržby a výnosy",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# 1. TEXTOVÁ ČÁST / # 1.1 Popisné údaje / # 1.2 Popis struktury společnosti / # 1.3 Údaje o minulém vývoji VI. hospodářský účetní rok 1. 7. 2017 - 30. 6. 2018 / # 1.3.1 Údaje o tržbách *)",
+   "values": [
+    6.976
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Tržby z prodeje zboží",
+   "lado": "revenue",
+   "page": 30,
+   "section": "",
+   "values": [
+    5.647
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Tržby z prodeje výrobků",
+   "lado": "revenue",
+   "page": 30,
+   "section": "",
+   "values": [
+    28.747
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Tržby ze služeb",
+   "lado": "revenue",
+   "page": 30,
+   "section": "",
+   "values": [
+    44.276
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Ostatní tržby",
+   "lado": "revenue",
+   "page": 30,
+   "section": "",
+   "values": [
+    8.444
+   ],
+   "origen": "estado 20"
+  }
+ ]
+}

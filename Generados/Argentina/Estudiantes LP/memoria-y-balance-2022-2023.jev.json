@@ -1,0 +1,857 @@
+{
+ "md": "Clubes/Argentina/Estudiantes LP/memoria-y-balance-2022-2023.md",
+ "generatedAt": "2026-09-30T04:25:23.498Z",
+ "rubros": [
+  {
+   "label": "Instituto de enseñanza (Anexo V)",
+   "lado": null,
+   "page": 49,
+   "section": "CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "choice": "education",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "education",
+     0.5700000000000001
+    ],
+    [
+     "education_expense",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "Estadio (Anexo V)",
+   "lado": null,
+   "page": 49,
+   "section": "CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "choice": "match_organisation_expense",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.33
+    ],
+    [
+     "matchday_competition",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "Fútbol - Plantel profesional (Anexo V)",
+   "lado": null,
+   "page": 49,
+   "section": "CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "choice": "wages_squad",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "wages_squad",
+     0.47000000000000003
+    ],
+    [
+     "lump_football_operations_expense",
+     0.26
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "Fútbol - Plantel profesional (Anexo VI)",
+   "lado": "expense",
+   "page": 49,
+   "section": "GASTOS ORDINARIOS",
+   "choice": "wages_squad",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "wages_squad",
+     0.84
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ],
+    [
+     "player_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Golf Country Club (Anexo V)",
+   "lado": null,
+   "page": 49,
+   "section": "CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "other_income",
+     0.26
+    ],
+    [
+     "youth_other_sports_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1521
+  },
+  {
+   "label": "Fútbol - Exhibición y espectáculos (Anexo V)",
+   "lado": null,
+   "page": 49,
+   "section": "CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "choice": "matchday_competition",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "matchday_competition",
+     0.55
+    ],
+    [
+     "wages_squad",
+     0.15000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ]
+   ],
+   "tokens": 1546
+  },
+  {
+   "label": "Generales (Anexo V)",
+   "lado": null,
+   "page": 49,
+   "section": "CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.73
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1503
+  },
+  {
+   "label": "Deportes y otras actividades (Anexo V)",
+   "lado": null,
+   "page": 49,
+   "section": "CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "choice": "other_sports",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_sports",
+     0.84
+    ],
+    [
+     "other_income",
+     0.12
+    ],
+    [
+     "youth_other_sports_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1519
+  },
+  {
+   "label": "Deportes y otras actividades (Anexo VI)",
+   "lado": "expense",
+   "page": 49,
+   "section": "GASTOS ORDINARIOS",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Fútbol - Exhibición y espectáculos (Anexo VI)",
+   "lado": "expense",
+   "page": 49,
+   "section": "GASTOS ORDINARIOS",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.58
+    ],
+    [
+     "match_organisation_expense",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0.16
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Golf Country Club (Anexo VI)",
+   "lado": "expense",
+   "page": 49,
+   "section": "GASTOS ORDINARIOS",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "youth_other_sports_expense",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Depreciación de bienes de uso (Anexo I)",
+   "lado": "expense",
+   "page": 49,
+   "section": "GASTOS ORDINARIOS",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Generales (Anexo VI)",
+   "lado": "expense",
+   "page": 49,
+   "section": "GASTOS ORDINARIOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Estadio (Anexo VI)",
+   "lado": "expense",
+   "page": 49,
+   "section": "GASTOS ORDINARIOS",
+   "choice": "match_organisation_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.62
+    ],
+    [
+     "youth_other_sports_expense",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Amortización de activos intangibles (Anexo II)",
+   "lado": "expense",
+   "page": 49,
+   "section": "GASTOS ORDINARIOS",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     0.99
+    ],
+    [
+     "depreciation",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Instituto de enseñanza (Anexo VI)",
+   "lado": "expense",
+   "page": 49,
+   "section": "GASTOS ORDINARIOS",
+   "choice": "education_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "education_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Fútbol - Plantel Profesional",
+   "lado": "revenue",
+   "page": 81,
+   "section": "PRESUPUESTO ECONÓMICO SINTÉTICO / RECURSOS ORDINARIOS",
+   "choice": "lump_football_operations",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.88
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Golf Country Club",
+   "lado": "expense",
+   "page": 87,
+   "section": "Egresos Ordinarios",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "youth_other_sports_expense",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 990
+  },
+  {
+   "label": "Estadio",
+   "lado": "expense",
+   "page": 87,
+   "section": "Egresos Ordinarios",
+   "choice": "match_organisation_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.71
+    ],
+    [
+     "youth_other_sports_expense",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 991
+  },
+  {
+   "label": "Instituto de Enseñanza",
+   "lado": "expense",
+   "page": 87,
+   "section": "Egresos Ordinarios",
+   "choice": "education_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "education_expense",
+     0.99
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 980
+  },
+  {
+   "label": "Depreciación de Bienes de Uso",
+   "lado": "expense",
+   "page": 81,
+   "section": "GASTOS ORDINARIOS",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Generales",
+   "lado": "expense",
+   "page": 87,
+   "section": "Egresos Ordinarios",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Deportes y Otras Actividades",
+   "lado": "expense",
+   "page": 87,
+   "section": "Egresos Ordinarios",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Fútbol - Exhibición y Espectáculos",
+   "lado": "expense",
+   "page": 87,
+   "section": "Egresos Ordinarios",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.44
+    ],
+    [
+     "wages_squad",
+     0.3
+    ],
+    [
+     "match_organisation_expense",
+     0.21
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Amortización de Activos Intangibles",
+   "lado": "expense",
+   "page": 81,
+   "section": "GASTOS ORDINARIOS",
+   "choice": "player_amortisation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_amortisation",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Derecho de retransmisión",
+   "lado": "revenue",
+   "page": 83,
+   "section": "PRESUPUESTO ECONÓMICO DETALLADO / RECURSOS ORDINARIOS",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 83,
+   "section": "PRESUPUESTO ECONÓMICO DETALLADO / RECURSOS ORDINARIOS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 83,
+   "section": "PRESUPUESTO ECONÓMICO DETALLADO / RECURSOS ORDINARIOS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Recursos Fútbol Infantil / Amateur",
+   "lado": "revenue",
+   "page": 83,
+   "section": "PRESUPUESTO ECONÓMICO DETALLADO / RECURSOS ORDINARIOS",
+   "choice": "youth_football",
+   "confidence": 1,
+   "top3": [
+    [
+     "youth_football",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Reconocimientos, Premios y Viáticos",
+   "lado": "expense",
+   "page": 91,
+   "section": "PRESUPUESTO FINANCIERO DETALLADO (Continuación) / Egresos Ordinarios / Fútbol - Plantel Profesional / Fútbol - Exhibición y Espectáculos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "wages_squad",
+     0.07
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Sueldos y Cargas Sociales",
+   "lado": "expense",
+   "page": 91,
+   "section": "PRESUPUESTO FINANCIERO DETALLADO (Continuación) / Egresos Ordinarios / Fútbol - Plantel Profesional / Fútbol - Exhibición y Espectáculos",
+   "choice": "wages_squad",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "wages_squad",
+     0.71
+    ],
+    [
+     "match_organisation_expense",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1085
+  },
+  {
+   "label": "Subvenciones a la explotacion",
+   "lado": "revenue",
+   "page": 83,
+   "section": "PRESUPUESTO ECONÓMICO DETALLADO / RECURSOS ORDINARIOS",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "Gastos de Partidos Nacionales",
+   "lado": "expense",
+   "page": 91,
+   "section": "PRESUPUESTO FINANCIERO DETALLADO (Continuación) / Egresos Ordinarios / Fútbol - Plantel Profesional / Fútbol - Exhibición y Espectáculos",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Egresos por Alta de Bs Uso",
+   "lado": null,
+   "page": 91,
+   "section": "Otros Ingresos y Egresos",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "Sueldos y Cargas Sociales Otros",
+   "lado": "expense",
+   "page": 91,
+   "section": "PRESUPUESTO FINANCIERO DETALLADO (Continuación) / Egresos Ordinarios / Fútbol - Plantel Profesional / Fútbol - Exhibición y Espectáculos",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "wages_squad",
+     0.08
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Cancelación de Prestamos",
+   "lado": null,
+   "page": 91,
+   "section": "Otros Ingresos y Egresos",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "player_amortisation",
+     0.27
+    ],
+    [
+     "other_income",
+     0.14
+    ]
+   ],
+   "tokens": 1475
+  },
+  {
+   "label": "(Deﬁcit)/Superavit",
+   "lado": null,
+   "page": 91,
+   "section": "Otros Ingresos y Egresos",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1263
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Dinamarca/FC København/aarsrapport-2024-12-31.md",
+ "generado": "2026-10-02T00:14:57.551Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "t.kr.",
+ "caja": {
+  "lineas": [
+   442
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El pasivo no muestra ninguna línea explícita de deuda bancaria o financiera (solo depósitos, otra deuda, proveedores, deuda con vinculadas y diferidos); 'Anden gæld' (L491/L498) podría incluir obligaciones financieras, pero no se identifica como tal. Los importes del pasivo aparecen separados de sus etiquetas."
+}

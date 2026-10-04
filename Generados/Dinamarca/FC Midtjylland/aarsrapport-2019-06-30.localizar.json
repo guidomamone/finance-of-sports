@@ -1,0 +1,23 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2019-06-30.pdf",
+ "md": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2019-06-30.md",
+ "cierre": "2019-06-30",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:56:46.944Z",
+ "paginas_resultados": [
+  27
+ ],
+ "paginas_notas_ingresos": [
+  36
+ ],
+ "paginas_notas_gastos": [
+  35,
+  36
+ ],
+ "escala": "miles",
+ "escala_evidencia": "TDKK",
+ "moneda": "DKK",
+ "columna_ejercicio": "2018/19",
+ "perimetro": "individual",
+ "observaciones": "Resultatopgørelse (Income Statement) en pág. 27; puede continuar en la pág. 28, pero esa página ya muestra el balance. Notas de desglose: pág. 35 (Nota 1, personaleomkostninger) y pág. 36 (finansielle indtægter/omkostninger y skat). Las notas de amortización (pág. 37 y 39) son cuadros de activo fijo, por eso no se incluyen. Cuentas individuales de FC Midtjylland A/S; la pág. 48 indica \"Årsregnskab for 2018/19 er aflagt i TDKK\". No se ve una nota específica que desglose otros ingresos de explotación (andre driftsindtægter)."
+}

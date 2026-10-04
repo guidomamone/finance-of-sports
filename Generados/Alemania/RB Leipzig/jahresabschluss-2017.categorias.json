@@ -1,0 +1,72 @@
+{
+ "md": "Clubes/Alemania/RB Leipzig/jahresabschluss-2017.md",
+ "club": "rbleipzig-de",
+ "year": 2017,
+ "generatedAt": "2026-09-30T15:14:50.006Z",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.011348,
+ "rubros": [
+  {
+   "label": "9. Steuern vom Einkommen und vom Ertrag",
+   "lado": null,
+   "section": "215.044.971,13 117.053 / 7. Sonstige Zinsen und ähnliche Erträge 806,30 1 / 8. Zinsen und ähnliche Aufwendungen 1.012.672,41 593 / -1.011.866,11 -592",
+   "page": 6,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 0.96,
+   "categoria": "admin_general_expense",
+   "confianza": 0.96
+  },
+  {
+   "label": "10. Ergebnis nach Steuern",
+   "lado": null,
+   "section": "215.044.971,13 117.053 / 7. Sonstige Zinsen und ähnliche Erträge 806,30 1 / 8. Zinsen und ähnliche Aufwendungen 1.012.672,41 593 / -1.011.866,11 -592",
+   "page": 6,
+   "pendiente": true,
+   "jev": "admin_general_expense",
+   "jevConf": 0.46,
+   "escalon": 2,
+   "categoria": "no_es_rubro",
+   "confianza": 0.97,
+   "motivo": "Resultado después de impuestos es un subtotal, no una línea del sitio."
+  },
+  {
+   "label": "Spielbetrieb",
+   "lado": "revenue",
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Beträge 2017 / Umsatzerlöse aus TEUR",
+   "page": 8,
+   "pendiente": true,
+   "jev": "matchday_competition",
+   "jevConf": 0.85,
+   "escalon": 2,
+   "categoria": "lump_football_operations",
+   "confianza": 0.85,
+   "motivo": "Igual a 'Umsatzerlöse aus Spielbetrieb' del club, bolsón sin desglosar (sponsoring, matchday, TV)."
+  },
+  {
+   "label": "Handel",
+   "lado": "revenue",
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Beträge 2017 / Umsatzerlöse aus TEUR",
+   "page": 8,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "sponsorship_commercial",
+   "confianza": 0.99
+  },
+  {
+   "label": "Sonstigem",
+   "lado": "revenue",
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Beträge 2017 / Umsatzerlöse aus TEUR",
+   "page": 8,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_income",
+   "confianza": 0.99
+  }
+ ]
+}

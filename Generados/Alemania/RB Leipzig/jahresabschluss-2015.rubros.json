@@ -1,0 +1,77 @@
+{
+  "md": "Clubes/Alemania/RB Leipzig/jahresabschluss-2015.md",
+  "pdf": "Clubes/Alemania/RB Leipzig/jahresabschluss-2015.pdf",
+  "club": "rbleipzig-de",
+  "year": 2015,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:50:24.582Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": false,
+  "seleccion": {
+    "ok": true,
+    "filas": 5,
+    "notasUsadas": []
+  },
+  "ladoConocido": 5,
+  "rubros": [
+    {
+      "label": "1. Spielerwerte",
+      "lado": "expense",
+      "page": 8,
+      "section": "UNTERNEHMENSREGISTER / 6. Sonstige Angaben / 7. Mitglieder des Geschäftsführungsorgans / 8. Mitarbeiter / # Entwicklung des Anlagevermögens",
+      "values": [
+        24.342
+      ],
+      "origen": "estado 3",
+      "glosa": "1. Derechos de adquisición de jugadores"
+    },
+    {
+      "label": "2. Software",
+      "lado": "expense",
+      "page": 8,
+      "section": "UNTERNEHMENSREGISTER / 6. Sonstige Angaben / 7. Mitglieder des Geschäftsführungsorgans / 8. Mitarbeiter / # Entwicklung des Anlagevermögens",
+      "values": [
+        0.168
+      ],
+      "origen": "estado 3",
+      "glosa": "2. Aplicaciones informáticas"
+    },
+    {
+      "label": "1. Bauten auf fremden Grundstücken",
+      "lado": "expense",
+      "page": 8,
+      "section": "UNTERNEHMENSREGISTER / 6. Sonstige Angaben / 7. Mitglieder des Geschäftsführungsorgans / 8. Mitarbeiter / # Entwicklung des Anlagevermögens",
+      "values": [
+        1.866
+      ],
+      "origen": "estado 3",
+      "glosa": "1. Construcciones en terrenos ajenos"
+    },
+    {
+      "label": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+      "lado": "expense",
+      "page": 8,
+      "section": "UNTERNEHMENSREGISTER / 6. Sonstige Angaben / 7. Mitglieder des Geschäftsführungsorgans / 8. Mitarbeiter / # Entwicklung des Anlagevermögens",
+      "values": [
+        2.573
+      ],
+      "origen": "estado 3",
+      "glosa": "2. Otras instalaciones, mobiliario y enseres"
+    },
+    {
+      "label": "3. Geleistete Anzahlungen",
+      "lado": "expense",
+      "page": 8,
+      "section": "UNTERNEHMENSREGISTER / 6. Sonstige Angaben / 7. Mitglieder des Geschäftsführungsorgans / 8. Mitarbeiter / # Entwicklung des Anlagevermögens",
+      "values": [
+        0.282
+      ],
+      "origen": "estado 3",
+      "glosa": "3. Anticipos entregados"
+    }
+  ]
+}

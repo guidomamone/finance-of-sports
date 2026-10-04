@@ -1,0 +1,7729 @@
+{
+  "club": "velez",
+  "year": 2021,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Velez Sarsfield/balance-general-2021.mistral-redo.md",
+  "generatedAt": "2026-09-30T01:47:35.042Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 989,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 42,
+  "relevantTableCount": 12,
+  "tables": [
+    {
+      "page": 6,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "columns": [
+        "",
+        "30/06/2021",
+        "30/06/2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ACTIVO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ACTIVO CORRIENTE",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caja y bancos - Notas 2.b) y 3.a)",
+          "values": [
+            "44.959.285",
+            "34.784.803"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inversiones - Notas 2.c) y Anexo VIII",
+          "values": [
+            "60.593.923",
+            "195.875.670"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos - Notas 2.d) y 3.b)1.",
+          "values": [
+            "687.442.974",
+            "529.603.975"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos intangibles - Notas 2.h) y 3.d)1.",
+          "values": [
+            "-",
+            "502.872.106"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del activo corriente",
+          "values": [
+            "792.996.182",
+            "1.263.136.554"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ACTIVO NO CORRIENTE",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Créditos - Notas 2.d) y 3.b)2.",
+          "values": [
+            "28.740.884",
+            "10.647.641"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bienes de uso - Notas 2.f) y 3.c)",
+          "values": [
+            "1.672.789.764",
+            "1.722.785.461"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos intangibles - Notas 2.h) y 3.d)2.",
+          "values": [
+            "1.185.807.572",
+            "1.347.818.104"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del activo no corriente",
+          "values": [
+            "2.887.338.220",
+            "3.081.251.206"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total del activo",
+          "values": [
+            "3.680.334.402",
+            "4.344.387.760"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "columns": [
+        "",
+        "30/06/2021",
+        "30/06/2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "PASIVO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PASIVO CORRIENTE",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deudas - Notas 2.d) y 4.a)1.",
+          "values": [
+            "993.999.756",
+            "873.325.584"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos anticipados - Notas 2.d) y 4.b)1.",
+          "values": [
+            "27.963.119",
+            "77.629.885"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del pasivo corriente",
+          "values": [
+            "1.021.962.875",
+            "950.955.469"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PASIVO NO CORRIENTE",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deudas - Notas 2.d) y 4.a)2.",
+          "values": [
+            "58.649.519",
+            "18.326.060"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos anticipados - Notas 2.d) y 4.b)2.",
+          "values": [
+            "107.528.592",
+            "113.194.077"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Previsiones - Nota 2.i) y Anexo VII",
+          "values": [
+            "51.687.456",
+            "67.780.322"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del pasivo no corriente",
+          "values": [
+            "217.865.567",
+            "199.300.459"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total del pasivo",
+          "values": [
+            "1.239.828.442",
+            "1.150.255.928"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PATRIMONIO NETO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Según estado respectivo - Nota 2.j)",
+          "values": [
+            "2.440.505.960",
+            "3.194.131.832"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del pasivo y patrimonio neto",
+          "values": [
+            "3.680.334.402",
+            "4.344.387.760"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de recursos y gastos",
+      "columns": [
+        "",
+        "2021",
+        "2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "RECURSOS ORDINARIOS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Para fines generales - Anexo II",
+          "values": [
+            "230.142.044",
+            "368.110.305"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Para fines específicos - Anexo II",
+          "values": [
+            "2.113.828.958",
+            "1.657.815.857"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Para fines diversos - Anexo II",
+          "values": [
+            "2.382.724",
+            "39.640.610"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2.346.353.726",
+            "2.065.566.772"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS ORDINARIOS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Específicos de sectores - Anexo III",
+          "values": [
+            "(2.220.758.211)",
+            "(2.087.038.013)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Generales de administración - Anexo IV",
+          "values": [
+            "(259.449.954)",
+            "(306.296.831)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizaciones - Nota 5.a)",
+          "values": [
+            "(593.534.174)",
+            "(660.935.904)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(3.073.742.339)",
+            "(3.054.270.748)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultados financieros y por tenencia - Nota 5.b)",
+          "values": [
+            "(26.237.259)",
+            "770.884.401"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DÉFICIT DEL EJERCICIO",
+          "values": [
+            "(753.625.872)",
+            "(217.819.575)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / # Estado de evolución del patrimonio neto",
+      "columns": [
+        "Conceptos",
+        "Aportes de los asociados",
+        "",
+        "",
+        "Superávit acumulado",
+        "Total del patrimonio neto",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Capital",
+            "Ajuste del capital",
+            "Subtotal",
+            "",
+            "2021",
+            "2020"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos al inicio del ejercicio",
+          "values": [
+            "287",
+            "1.310.103.481",
+            "1.310.103.768",
+            "1.884.028.064",
+            "3.194.131.832",
+            "3.411.951.407"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit del ejercicio",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "(753.625.872)",
+            "(753.625.872)",
+            "(217.819.575)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos al cierre del ejercicio",
+          "values": [
+            "287",
+            "1.310.103.481",
+            "1.310.103.768",
+            "1.130.402.192",
+            "2.440.505.960",
+            "3.194.131.832"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de flujo de efectivo",
+      "columns": [
+        "",
+        "2021",
+        "2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Variaciones del efectivo",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Efectivo al inicio del ejercicio - Nota 2.l)",
+          "values": [
+            "230.660.473",
+            "14.979.753"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo al cierre del ejercicio - Nota 2.l)",
+          "values": [
+            "105.553.208",
+            "230.660.473"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Disminución neta) aumento neto del efectivo",
+          "values": [
+            "(125.107.265)",
+            "215.680.720"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Causas de las variaciones del efectivo",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actividades operativas",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Recursos cobrados - Nota 6.a)",
+          "values": [
+            "2.827.772.339",
+            "3.653.115.940"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagos a proveedores y gastos - Nota 6.b)",
+          "values": [
+            "(2.897.345.117)",
+            "(3.324.174.214)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flujo neto de efectivo (utilizado en) generado por las actividades operativas",
+          "values": [
+            "(69.572.778)",
+            "328.941.726"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actividades de inversión",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Cobro de intereses",
+          "values": [
+            "19.703.037",
+            "22.458.051"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagos por compra de bienes de uso - Nota 3.c)",
+          "values": [
+            "(21.623.025)",
+            "(95.261.390)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flujo neto de efectivo utilizado en las actividades de inversión",
+          "values": [
+            "(1.919.988)",
+            "(72.803.339)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actividades de financiación",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Disminución de deudas bancarias",
+          "values": [
+            "(39.399.927)",
+            "(91.432.377)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento (disminución) de moratoria previsional e impositiva",
+          "values": [
+            "21.317.197",
+            "(14.052.171)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pago de préstamos asociados",
+          "values": [
+            "-",
+            "(10.926.091)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pago de intereses",
+          "values": [
+            "(47.677.206)",
+            "(141.609.882)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flujo neto de efectivo utilizado en las actividades de financiación",
+          "values": [
+            "(65.759.936)",
+            "(258.020.521)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Resultado por exposición a los cambios en el poder adquisitivo de la moneda",
+          "values": [
+            "12.145.437",
+            "217.562.854"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Disminución neta) aumento neto del efectivo",
+          "values": [
+            "(125.107.265)",
+            "215.680.720"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### k) Cuentas de recursos y gastos / ### l) Estado de Flujo de Efectivo",
+      "columns": [
+        "",
+        "30/06/2021",
+        "30/06/2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caja y bancos",
+          "values": [
+            "44.959.285",
+            "34.784.803"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inversiones",
+          "values": [
+            "60.593.923",
+            "195.875.670"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "105.553.208",
+            "230.660.473"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 17,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 3 - COMPOSICIÓN DE LOS RUBROS DEL ACTIVO",
+      "columns": [
+        "",
+        "30/06/2021",
+        "30/06/2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "a) CAJA Y BANCOS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caja en moneda local",
+          "values": [
+            "5.656.099",
+            "1.017.457"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caja en moneda extranjera - Anexo VI",
+          "values": [
+            "-",
+            "35.458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondos fijos",
+          "values": [
+            "312.147",
+            "613.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos en moneda local",
+          "values": [
+            "24.463.061",
+            "924.765"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos en moneda extranjera - Anexo VI",
+          "values": [
+            "14.527.978",
+            "32.193.523"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "44.959.285",
+            "34.784.803"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "b) CRÉDITOS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Corrientes",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deudores varios (1)",
+          "values": [
+            "538.196.137",
+            "422.685.117"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Documentos a cobrar",
+          "values": [
+            "161.695",
+            "1.929.635"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de formación y mecanismo de solidaridad a cobrar - Anexo VI y Nota 2.e)",
+          "values": [
+            "45.625.723",
+            "28.244.824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Préstamos de jugadores a devengar - Anexo VI",
+          "values": [
+            "9.242.279",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cupones de tarjetas de crédito a cobrar y otros",
+          "values": [
+            "437.992",
+            "5.388.497"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipos a rendir",
+          "values": [
+            "619.479",
+            "862.338"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos pagados por adelantado",
+          "values": [
+            "3.880.468",
+            "1.877.415"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos a favor impositivos",
+          "values": [
+            "87.959.925",
+            "68.550.664"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "1.319.276",
+            "65.485"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "687.442.974",
+            "529.603.975"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021",
+      "columns": [
+        "",
+        "30/06/2021",
+        "30/06/2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "(1) Incluye:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Major League Soccer (Venta Álvaro Barreal) - Anexo VI",
+          "values": [
+            "47.760.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Unión Desportiva Almería SAD (Venta Lucas Robertone) - Anexo VI",
+          "values": [
+            "81.428.904",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bologna Football Club (Venta Nicolás Domínguez) - Anexo VI",
+          "values": [
+            "127.232.663",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Club Atlético Mineiro (Venta Lucas Pratto) - Anexo VI",
+          "values": [
+            "-",
+            "100.334.049"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Club Atlético Independiente (Venta Lucas Romero) (2)",
+          "values": [
+            "60.843.800",
+            "128.493.665"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Conmebol (Premios Copa) - Anexo VI",
+          "values": [
+            "117.489.600",
+            "50.127.023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TV Internacional (Liga Profesional de Fútbol)",
+          "values": [
+            "59.454.853",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contratos a devengar",
+          "values": [
+            "13.392.222",
+            "96.188.651"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subvención municipal a cobrar",
+          "values": [
+            "15.200.513",
+            "18.518.869"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad y concesiones",
+          "values": [
+            "13.429.450",
+            "26.898.204"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varios",
+          "values": [
+            "1.964.132",
+            "2.124.656"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "538.196.137",
+            "422.685.117"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "### 2. No corrientes",
+      "columns": [
+        "Deudores varios (3)",
+        "7.944.444",
+        "10.642.330"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Derechos de formación y mecanismo de solidaridad a cobrar - Anexo VI y Nota 2.e)",
+          "values": [
+            "20.796.440",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "-",
+            "5.311"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "28.740.884",
+            "10.647.641"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "(3) Incluye:",
+      "columns": [
+        "Contratos a devengar",
+        "7.944.444",
+        "10.642.330"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Total",
+          "values": [
+            "7.944.444",
+            "10.642.330"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ### Notas a los estados contables al 30 de junio de 2021 / #### c) BIENES DE USO",
+      "columns": [
+        "RUBRO",
+        "Valor de origen",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Al inicio",
+            "Altas",
+            "Transferencias",
+            "Al cierre"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "532.379.162",
+            "-",
+            "-",
+            "532.379.162"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificios",
+          "values": [
+            "2.579.418.666",
+            "1.792.723",
+            "9.777.526",
+            "2.590.988.915"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Villa Olímpica",
+          "values": [
+            "257.456.509",
+            "-",
+            "-",
+            "257.456.509"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Muebles y útiles",
+          "values": [
+            "159.266.326",
+            "6.064.815",
+            "9.097",
+            "165.340.238"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas y herramientas",
+          "values": [
+            "16.631.685",
+            "1.096.074",
+            "-",
+            "17.727.759"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gimnasio polifuncional",
+          "values": [
+            "11.267.657",
+            "-",
+            "-",
+            "11.267.657"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mini estadio de básquet",
+          "values": [
+            "10.650.717",
+            "-",
+            "-",
+            "10.650.717"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instalaciones",
+          "values": [
+            "125.349.315",
+            "1.538.292",
+            "1.586.486",
+            "128.474.093"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros bienes",
+          "values": [
+            "55.272.846",
+            "-",
+            "-",
+            "55.272.846"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obras en curso",
+          "values": [
+            "3.199.350",
+            "11.131.121",
+            "(11.373.109)",
+            "2.957.362"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales 2021",
+          "values": [
+            "3.750.892.233",
+            "21.623.025",
+            "-",
+            "3.772.515.258"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Totales 2020",
+          "values": [
+            "3.655.630.843",
+            "95.261.390",
+            "-",
+            "3.750.892.233"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": null,
+      "columns": [
+        "RUBRO",
+        "Amortizaciones",
+        "",
+        "",
+        "Neto Resultante"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Acumuladas al inicio",
+            "Del ejercicio (4)",
+            "Acumuladas al cierre",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "532.379.162"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificios",
+          "values": [
+            "1.703.740.445",
+            "44.553.092",
+            "1.748.293.537",
+            "842.695.378"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Villa Olímpica",
+          "values": [
+            "87.121.622",
+            "5.302.827",
+            "92.424.449",
+            "165.032.060"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Muebles y útiles",
+          "values": [
+            "131.588.740",
+            "6.394.511",
+            "137.983.251",
+            "27.356.987"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas y herramientas",
+          "values": [
+            "15.684.901",
+            "277.170",
+            "15.962.071",
+            "1.765.688"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gimnasio polifuncional",
+          "values": [
+            "4.957.769",
+            "225.353",
+            "5.183.122",
+            "6.084.535"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mini estadio de básquet",
+          "values": [
+            "4.686.315",
+            "213.014",
+            "4.899.329",
+            "5.751.388"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instalaciones",
+          "values": [
+            "56.892.501",
+            "10.255.132",
+            "67.147.633",
+            "61.326.460"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros bienes",
+          "values": [
+            "23.434.479",
+            "4.397.623",
+            "27.832.102",
+            "27.440.744"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obras en curso",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "2.957.362"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales 2021",
+          "values": [
+            "2.028.106.772",
+            "71.618.722",
+            "2.099.725.494",
+            "1.672.789.764"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Totales 2020",
+          "values": [
+            "1.957.379.530",
+            "70.727.242",
+            "2.028.106.772",
+            "1.722.785.461"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021",
+      "columns": [
+        "",
+        "30/06/2021",
+        "30/06/2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "d) ACTIVOS INTANGIBLES",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Corrientes",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Plantel profesional de fútbol - Anexo I (5)",
+          "values": [
+            "-",
+            "502.872.106"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "-",
+            "502.872.106"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "### 2. No corrientes",
+      "columns": [
+        "Plantel profesional de fútbol - Anexo I",
+        "1.185.807.572",
+        "1.347.818.104"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Total",
+          "values": [
+            "1.185.807.572",
+            "1.347.818.104"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "## NOTA 4 - COMPOSICIÓN DE LOS RUBROS DEL PASIVO / ### a) DEUDAS / #### 1. Corrientes",
+      "columns": [
+        "Plantel profesional de fútbol - Compromisos de pago a jugadores y cuerpo técnico por premios y primas (6)",
+        "143.020.126",
+        "51.832.205"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Retribuciones al personal",
+          "values": [
+            "166.373.527",
+            "133.550.379"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cargas sociales",
+          "values": [
+            "18.010.334",
+            "22.707.622"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas bancarias (7)",
+          "values": [
+            "136.136.184",
+            "201.584.615"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proveedores (8)",
+          "values": [
+            "56.636.337",
+            "48.481.078"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cheques de pago diferido",
+          "values": [
+            "29.335.305",
+            "13.032.005"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Moratoria previsional e impositiva",
+          "values": [
+            "6.982.117",
+            "5.058.730"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.F.I.P. - Retenciones a depositar",
+          "values": [
+            "28.300.453",
+            "51.721.726"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acreedores por transferencia de jugadores (9)",
+          "values": [
+            "409.205.373",
+            "345.357.224"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "993.999.756",
+            "873.325.584"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ### Notas a los estados contables al 30 de junio de 2021",
+      "columns": [
+        "",
+        "30/06/2021",
+        "30/06/2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "(9) Incluye:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Agustín Bouzat (10)",
+          "values": [
+            "11.192.061",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la rescisión de Rodrigo Salinas - Anexo VI",
+          "values": [
+            "6.029.501",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Ricardo Centurión - Anexo VI",
+          "values": [
+            "134.008.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la renovación de Francisco Ortega - Anexo VI",
+          "values": [
+            "40.892.500",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por el reconocimiento de Maximiliano Romero - Anexo VI",
+          "values": [
+            "11.357.180",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la venta de Braian Cufré - Anexo VI",
+          "values": [
+            "6.814.308",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la venta de Lucas Robertone - Anexo VI",
+          "values": [
+            "29.123.178",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Matías De Los Santos - Anexo VI",
+          "values": [
+            "39.589.792",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Mauro Pittón (11)",
+          "values": [
+            "11.798.700",
+            "85.192.107"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Lucas Janson (12)",
+          "values": [
+            "35.643.375",
+            "99.481.117"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la venta de Gastón Giménez (13)",
+          "values": [
+            "656.717",
+            "52.404.133"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la venta de Nicolás Domínguez - Anexo VI",
+          "values": [
+            "26.192.496",
+            "19.342.760"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la rescisión cuerpo técnico Gabriel Heinze - Anexo VI",
+          "values": [
+            "-",
+            "20.460.411"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Gastón Giménez - Anexo VI",
+          "values": [
+            "33.502.000",
+            "31.749.293"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por el préstamo de Leandro Fernández",
+          "values": [
+            "3.159.606",
+            "4.745.729"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Rodrigo Salinas (14)",
+          "values": [
+            "-",
+            "17.723.591"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Luis Antonio Amarilla Lencina",
+          "values": [
+            "-",
+            "2.016.887"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acreedores varios (15)",
+          "values": [
+            "4.430.600",
+            "4.501.050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de formación a pagar (16)",
+          "values": [
+            "14.815.359",
+            "7.740.146"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "409.205.373",
+            "345.357.224"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "## 2. No corrientes",
+      "columns": [
+        "Proveedores",
+        "172.693",
+        "-"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Deudas bancarias",
+          "values": [
+            "26.048.504",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Moratoria previsional e impositiva",
+          "values": [
+            "32.428.322",
+            "13.034.512"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acreedores por transferencia de jugadores (17)",
+          "values": [
+            "-",
+            "5.291.548"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "58.649.519",
+            "18.326.060"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Notas a los estados contables al 30 de junio de 2021",
+      "columns": [
+        "",
+        "30/06/2021",
+        "30/06/2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "(17) Incluye:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Gastón Giménez - Anexo VI",
+          "values": [
+            "-",
+            "5.291.548"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "-",
+            "5.291.548"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "# b) INGRESOS ANTICIPADOS / # 1. Corrientes",
+      "columns": [
+        "Coca Cola Femsa",
+        "10.011.490",
+        "20.022.982"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Publicidad Estática Internacional",
+          "values": [
+            "10.659.958",
+            "5.081.683"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Duracril Group",
+          "values": [
+            "-",
+            "3.513.420"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rio Uruguay Seguros",
+          "values": [
+            "493.347",
+            "3.740.122"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Quilmes",
+          "values": [
+            "4.234.509",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Borrona",
+          "values": [
+            "918.627",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Radio Victoria Fueguina - Hitachi",
+          "values": [
+            "-",
+            "24.194.436"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alquiler de palcos",
+          "values": [
+            "-",
+            "5.986.703"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Federico Pablo Aste - Tienda Oficial Vélez",
+          "values": [
+            "-",
+            "452.601"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Telecom Argentina - Anexo VI",
+          "values": [
+            "1.645.188",
+            "1.984.329"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Air Europa - Anexo VI",
+          "values": [
+            "-",
+            "592.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros contratos de publicidad",
+          "values": [
+            "-",
+            "504.831"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros contratos de concesiones",
+          "values": [
+            "-",
+            "3.618.802"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Préstamos de jugadores profesionales a devengar - Anexo VI",
+          "values": [
+            "-",
+            "7.937.323"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "27.963.119",
+            "77.629.885"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 22,
+      "section": "# 2. No corrientes",
+      "columns": [
+        "Coca Cola Femsa",
+        "-",
+        "10.011.492"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Quilmes",
+          "values": [
+            "8.469.017",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "The Send - Anexo VI",
+          "values": [
+            "14.358.000",
+            "15.874.646"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Telecom Argentina - Anexo VI",
+          "values": [
+            "-",
+            "1.818.970"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recitales a devengar",
+          "values": [
+            "27.175.036",
+            "27.175.036"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Unión Argentina de Rugby",
+          "values": [
+            "57.526.539",
+            "57.526.539"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros contratos de concesiones",
+          "values": [
+            "-",
+            "787.394"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "107.528.592",
+            "113.194.077"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 5 - COMPOSICIÓN DE ALGUNOS RUBROS DEL ESTADO DE RECURSOS Y GASTOS",
+      "columns": [
+        "",
+        "2021",
+        "2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "a) AMORTIZACIONES",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Plantel profesional de fútbol - Anexo I",
+          "values": [
+            "521.915.452",
+            "591.363.213"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Regularización valuación plantel profesional de fútbol Ejercicio 2015 - Nota 2.g)",
+          "values": [
+            "-",
+            "(1.154.551)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subtotal",
+          "values": [
+            "521.915.452",
+            "590.208.662"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bienes de uso - Nota 3.c)",
+          "values": [
+            "71.618.722",
+            "70.727.242"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "593.534.174",
+            "660.935.904"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "b) RESULTADOS FINANCIEROS Y POR TENENCIA",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Intereses generados por colocaciones financieras",
+          "values": [
+            "19.703.037",
+            "22.458.051"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses bancarios",
+          "values": [
+            "(1.711.674)",
+            "(80.375.471)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses deudas previsionales e impositivas",
+          "values": [
+            "49.388.880",
+            "54.934.645"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultados por tenencia jugadores prof. propios - Anexo I",
+          "values": [
+            "42.084.778",
+            "831.947.929"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos incobrables",
+          "values": [
+            "(4.081.895)",
+            "(66.261)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencias de cambio",
+          "values": [
+            "(40.083.458)",
+            "(156.970.472)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado por Exposición a los Cambios en el Poder Adquisitivo de la Moneda - R.E.C.P.A.M.",
+          "values": [
+            "(91.536.927)",
+            "98.955.980"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "(26.237.259)",
+            "770.884.401"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 24,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 6 - CAUSAS DE LAS VARIACIONES DEL EFECTIVO",
+      "columns": [
+        "",
+        "2021",
+        "2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "a) RECURSOS COBRADOS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ingresos para fines generales",
+          "values": [
+            "230.142.044",
+            "368.110.305"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos para fines específicos",
+          "values": [
+            "2.113.828.958",
+            "1.657.815.857"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferencias jugadores",
+          "values": [
+            "129.338.182",
+            "271.111.864"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de televisión",
+          "values": [
+            "375.943.159",
+            "336.264.913"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros derechos de fútbol profesional",
+          "values": [
+            "229.077.761",
+            "64.913.039"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuotas de asociados",
+          "values": [
+            "306.034.127",
+            "524.522.912"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Competencias deportivas",
+          "values": [
+            "591.405.019",
+            "59.317.258"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "482.030.710",
+            "401.685.871"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos para fines diversos",
+          "values": [
+            "2.382.724",
+            "39.640.610"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencias de cambio",
+          "values": [
+            "(40.083.458)",
+            "(156.970.472)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Partidas que no significan utilización (origen) de fondos:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Valor residual de bajas por ventas y rescisiones de futbolistas profesionales",
+          "values": [
+            "756.848.459",
+            "1.945.052.100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valor residual regularización valuación plantel profesional",
+          "values": [
+            "-",
+            "(1.346.984)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cambios en activos y pasivos operativos:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aumento de créditos",
+          "values": [
+            "(180.014.137)",
+            "(231.648.417)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Disminución) aumento de ingresos anticipados",
+          "values": [
+            "(55.332.251)",
+            "32.462.941"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "2.827.772.339",
+            "3.653.115.940"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "### b) PAGOS A PROVEEDORES Y GASTOS",
+      "columns": [
+        "Gastos generales de administración",
+        "(146.916.730)",
+        "(155.202.277)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos específicos de sectores",
+          "values": [
+            "(952.054.233)",
+            "(703.609.325)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de remuneraciones y cargas sociales",
+          "values": [
+            "(1.381.237.202)",
+            "(1.534.523.242)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pago por altas de intangibles del ejercicio",
+          "values": [
+            "(513.239.894)",
+            "(901.367.012)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte",
+          "values": [
+            "(2.993.448.059)",
+            "(3.294.701.856)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 25,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021",
+      "columns": [
+        "",
+        "2021",
+        "2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Transporte",
+          "values": [
+            "(2.993.448.059)",
+            "(3.294.701.856)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Partidas que no significan utilización (origen) de fondos:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aumento de previsión para juicios - Anexo VII",
+          "values": [
+            "6.560.767",
+            "11.948.645"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disminución de previsión para juicios - Anexo VII",
+          "values": [
+            "(22.653.633)",
+            "(53.737.868)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cambios en pasivos operativos:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aumento deuda plantel profesional de fútbol",
+          "values": [
+            "91.187.921",
+            "20.126.482"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento de deudas sociales",
+          "values": [
+            "28.125.860",
+            "30.161.709"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disminución de deudas Asociación del Fútbol Argentino",
+          "values": [
+            "-",
+            "(21.442.374)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Disminución) aumento de deudas fiscales",
+          "values": [
+            "(23.421.273)",
+            "36.571.044"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento (disminución) de otras deudas",
+          "values": [
+            "16.303.300",
+            "(53.099.996)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "(2.897.345.117)",
+            "(3.324.174.214)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "### NOTA 7 - PLAZOS ESTIMADOS DE CRÉDITOS Y DEUDAS",
+      "columns": [
+        "",
+        "Créditos",
+        "Deudas",
+        "Ingresos anticipados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "A vencer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1° Trimestre",
+          "values": [
+            "258.709.014",
+            "513.552.401",
+            "10.372.982"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2° Trimestre",
+          "values": [
+            "312.629.522",
+            "270.371.117",
+            "9.879.635"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3° Trimestre",
+          "values": [
+            "993.056",
+            "54.079.960",
+            "4.414.576"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4° Trimestre",
+          "values": [
+            "993.056",
+            "31.092.554",
+            "3.295.926"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A más de 1 año",
+          "values": [
+            "28.740.884",
+            "58.649.519",
+            "8.469.017"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subtotales",
+          "values": [
+            "602.065.532",
+            "927.745.551",
+            "36.432.136"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Sin plazo establecido",
+          "values": [
+            "114.118.326",
+            "124.903.724",
+            "99.059.575"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales",
+          "values": [
+            "716.183.858",
+            "1.052.649.275",
+            "135.491.711"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Que no devengan interés",
+          "values": [
+            "716.183.858",
+            "851.054.148",
+            "135.491.711"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Que devengan interés",
+          "values": [
+            "-",
+            "201.595.127",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales al 30/06/2021",
+          "values": [
+            "716.183.858",
+            "1.052.649.275",
+            "135.491.711"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Totales al 30/06/2020",
+          "values": [
+            "540.251.616",
+            "891.651.644",
+            "190.823.962"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 27,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ### Notas a los estados contables al 30 de junio de 2021 / #### NOTA 9 - CONTRATOS A PLAZO FIJO CON FUTBOLISTAS PROFESIONALES",
+      "columns": [
+        "Apellido y Nombre",
+        "Fecha de finalización del contrato"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Álvarez, Ricardo",
+          "values": [
+            "31/12/2022"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tarragona, Cristian",
+          "values": [
+            "31/12/2021"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mancuello, Federico",
+          "values": [
+            "31/12/2021"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Poblete, Gerónimo",
+          "values": [
+            "31/12/2021"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "#### NOTA 10 - HECHOS RELACIONADOS CON EL FUTURO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Leonardo Jara: incorporado el 23 de julio de 2021. El contrato firmado con el futbolista se extiende hasta el 31 de diciembre de",
+          "values": [
+            "2022."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Enzo Gabriel Martínez Suarez: incorporado el 20 de julio de 2021, con vigencia hasta el 31 de diciembre de",
+          "values": [
+            "2022."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Lucas David Pratto: incorporado el 24 de agosto de 2021, con vigencia hasta el 31 de diciembre de",
+          "values": [
+            "2023."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Adicionalmente, se renovó contrato con los siguientes jugadores:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Florián Monzón: El contrato firmado con el futbolista con fecha 19 de julio de 2021 se extiende hasta el 31 de diciembre de",
+          "values": [
+            "2023."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Facundo Cáseres: Renovó su contrato el 10 de agosto de 2021, con vigencia hasta el 31 de diciembre de",
+          "values": [
+            "2023."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Plantel profesional de fútbol / ### a) EVOLUCIÓN DEL EJERCICIO",
+      "columns": [
+        "Apellido y nombre",
+        "Saldos al inicio del ejercicio",
+        "Incorporaciones del ejercicio",
+        "Bajas del ejercicio",
+        "Amortización del ejercicio",
+        "Saldos al cierre del ejercicio"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Amor, J. Emiliano (5%)",
+          "values": [
+            "2.309.109",
+            "-",
+            "577.277 (2)",
+            "1.731.832",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Domínguez, Nicolás (25%)",
+          "values": [
+            "132.599.086",
+            "7.189.503 (1)",
+            "139.788.589 (2)",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Robertone, Lucas Gastón (50%)",
+          "values": [
+            "315.290.437",
+            "29.646.022 (1)",
+            "341.314.434 (2)",
+            "3.622.025",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Toni, Mauricio Andres",
+          "values": [
+            "10.866.077",
+            "-",
+            "4.527.532 (3)",
+            "6.338.545",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bouzat, Agustín",
+          "values": [
+            "36.480.748",
+            "18.290.451",
+            "-",
+            "19.647.332",
+            "35.123.867"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abram, Luis (80%)",
+          "values": [
+            "15.354.276",
+            "-",
+            "-",
+            "15.354.276",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mainero, Guido (80%)",
+          "values": [
+            "21.872.878",
+            "-",
+            "-",
+            "6.249.394",
+            "15.623.484"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Domínguez Carabalí, Alexander",
+          "values": [
+            "34.675.509",
+            "-",
+            "-",
+            "34.675.509",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amarilla Lencina, Luis Antonio (50%)",
+          "values": [
+            "14.244.515",
+            "-",
+            "-",
+            "5.697.806",
+            "8.546.709"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Almada, Thiago Ezequiel (95%)",
+          "values": [
+            "7.554.459",
+            "-",
+            "-",
+            "2.518.153",
+            "5.036.306"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bazán, Nazareno Daniel",
+          "values": [
+            "6.715.074",
+            "-",
+            "-",
+            "2.686.030",
+            "4.029.044"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Brizuela, Miguel Marcelo",
+          "values": [
+            "7.554.459",
+            "-",
+            "-",
+            "2.158.417",
+            "5.396.042"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cáseres, Rodrigo",
+          "values": [
+            "13.067.172",
+            "-",
+            "-",
+            "6.533.586",
+            "6.533.586"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "De La Fuente, Hernán",
+          "values": [
+            "8.241.228",
+            "-",
+            "-",
+            "8.241.228",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ortega, Fancisco Gabriel (90%)",
+          "values": [
+            "5.036.305",
+            "-",
+            "-",
+            "1.119.179",
+            "3.917.126"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Perrone, Facundo Jesús",
+          "values": [
+            "8.094.062",
+            "-",
+            "-",
+            "3.237.625",
+            "4.856.437"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rodríguez, Gonzalo Ezequiel",
+          "values": [
+            "9.800.378",
+            "-",
+            "4.083.491 (3)",
+            "5.716.887",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Romero, Nazareno",
+          "values": [
+            "9.297.794",
+            "-",
+            "-",
+            "3.719.118",
+            "5.578.676"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hoyos, Lucas (50%)",
+          "values": [
+            "12.207.859",
+            "-",
+            "-",
+            "6.103.929",
+            "6.103.930"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ramis Persincula, Jonathan Raphael (50%)",
+          "values": [
+            "19.177.547",
+            "-",
+            "7.990.645 (3)",
+            "11.186.902",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Galdames Millán, Pablo Ignacio (80%)",
+          "values": [
+            "38.915.842",
+            "-",
+            "-",
+            "38.915.842",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Guidara, Tomás Ezequiel (80%)",
+          "values": [
+            "142.265.487",
+            "-",
+            "-",
+            "71.132.743",
+            "71.132.744"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Núñez Morales, Cristian",
+          "values": [
+            "10.117.330",
+            "-",
+            "9.274.219 (3)",
+            "843.111",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Borgogno, Matías",
+          "values": [
+            "10.117.330",
+            "-",
+            "-",
+            "2.890.666",
+            "7.226.664"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte",
+          "values": [
+            "891.854.961",
+            "55.125.976",
+            "507.556.187",
+            "260.320.135",
+            "179.104.615"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Plantel profesional de fútbol",
+      "columns": [
+        "Apellido y nombre",
+        "Saldos al inicio del ejercicio",
+        "Incorporaciones del ejercicio",
+        "Bajas del ejercicio",
+        "Amortización del ejercicio",
+        "Saldos al cierre del ejercicio"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Transporte",
+          "values": [
+            "891.854.961",
+            "55.125.976",
+            "507.556.187",
+            "260.320.135",
+            "179.104.615"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Barreal, Álvaro",
+          "values": [
+            "128.610.274",
+            "331.390 (1)",
+            "128.941.664 (2)",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Versaci, Federico",
+          "values": [
+            "10.117.330",
+            "-",
+            "-",
+            "4.046.932",
+            "6.070.398"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zárate, Tobías",
+          "values": [
+            "10.117.330",
+            "-",
+            "-",
+            "2.890.666",
+            "7.226.664"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Di Lena, Felipe",
+          "values": [
+            "16.187.729",
+            "-",
+            "-",
+            "8.093.864",
+            "8.093.865"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Orellano, Luca",
+          "values": [
+            "17.343.995",
+            "-",
+            "-",
+            "4.955.427",
+            "12.388.568"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pugliese, Gianluca",
+          "values": [
+            "19.687.778",
+            "-",
+            "-",
+            "9.843.889",
+            "9.843.889"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cerato, Giuliano",
+          "values": [
+            "19.687.778",
+            "-",
+            "-",
+            "9.843.889",
+            "9.843.889"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cufré, Braian (40%)",
+          "values": [
+            "115.432.745",
+            "4.917.863 (1)",
+            "120.350.608 (2)",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Janson, Lucas",
+          "values": [
+            "233.175.066",
+            "-",
+            "-",
+            "58.293.766",
+            "174.881.300"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pittón, Mauro Rodolfo (70%)",
+          "values": [
+            "177.465.536",
+            "-",
+            "-",
+            "39.436.786",
+            "138.028.750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cabrera, Elías",
+          "values": [
+            "17.990.169",
+            "-",
+            "-",
+            "4.497.542",
+            "13.492.627"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Perrone, Máximo",
+          "values": [
+            "17.990.169",
+            "-",
+            "-",
+            "4.497.542",
+            "13.492.627"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cáseres, Facundo A.",
+          "values": [
+            "17.990.169",
+            "-",
+            "-",
+            "4.497.542",
+            "13.492.627"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Monzón, Florián",
+          "values": [
+            "17.990.169",
+            "-",
+            "-",
+            "4.497.542",
+            "13.492.627"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fernández, Damián",
+          "values": [
+            "17.990.169",
+            "-",
+            "-",
+            "4.497.542",
+            "13.492.627"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cano, Lautaro",
+          "values": [
+            "19.114.554",
+            "-",
+            "-",
+            "4.497.542",
+            "14.617.012"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andrada, Isaías",
+          "values": [
+            "19.114.554",
+            "-",
+            "-",
+            "4.497.542",
+            "14.617.012"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "García, Roberto Joaquín",
+          "values": [
+            "20.238.940",
+            "-",
+            "-",
+            "4.497.542",
+            "15.741.398"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ojeda, Thiago Ezequiel",
+          "values": [
+            "20.238.940",
+            "-",
+            "-",
+            "4.497.542",
+            "15.741.398"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Giannetti, Lautaro",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Delgadillo, Nicolás",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Muñoz Aizcorbe, Elián",
+          "values": [
+            "20.988.530",
+            "-",
+            "-",
+            "4.497.542",
+            "16.490.988"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Enrique, Marcos Nahuel",
+          "values": [
+            "21.363.325",
+            "-",
+            "-",
+            "4.497.542",
+            "16.865.783"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "De los Santos, Matías (75%)",
+          "values": [
+            "-",
+            "103.334.235",
+            "-",
+            "8.611.186",
+            "94.723.049"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Centurión, Ricardo (40%)",
+          "values": [
+            "-",
+            "220.459.026",
+            "-",
+            "44.091.805",
+            "176.367.221"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte",
+          "values": [
+            "1.850.690.210",
+            "384.168.490",
+            "756.848.459",
+            "499.901.307",
+            "978.108.934"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Plantel profesional de fútbol",
+      "columns": [
+        "Apellido y nombre",
+        "Saldos al inicio del ejercicio",
+        "Incorporaciones del ejercicio",
+        "Bajas del ejercicio",
+        "Amortización del ejercicio",
+        "Saldos al cierre del ejercicio"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Transporte",
+          "values": [
+            "1.850.690.210",
+            "384.168.490",
+            "756.848.459",
+            "499.901.307",
+            "978.108.934"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fernández, Julián",
+          "values": [
+            "-",
+            "19.142.732",
+            "-",
+            "3.509.501",
+            "15.633.231"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lobato Romanelli, Lenny Ivo",
+          "values": [
+            "-",
+            "19.142.732",
+            "-",
+            "3.190.456",
+            "15.952.276"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cavanagh, Tomás Bernardo",
+          "values": [
+            "-",
+            "19.142.732",
+            "-",
+            "2.233.319",
+            "16.909.413"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Garayalde, Nicolás",
+          "values": [
+            "-",
+            "19.142.732",
+            "-",
+            "2.233.319",
+            "16.909.413"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Castro, Santiago Tomás",
+          "values": [
+            "-",
+            "19.142.732",
+            "-",
+            "1.914.274",
+            "17.228.458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Molina Puga, Benjamín Alejandro",
+          "values": [
+            "-",
+            "19.142.732",
+            "-",
+            "1.595.228",
+            "17.547.504"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mulet, Agustín Nicolás",
+          "values": [
+            "-",
+            "19.142.732",
+            "-",
+            "1.595.228",
+            "17.547.504"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "López, Martín Agustín",
+          "values": [
+            "-",
+            "19.142.732",
+            "-",
+            "1.595.228",
+            "17.547.504"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gómez, Diego Valentín",
+          "values": [
+            "-",
+            "19.142.732",
+            "-",
+            "1.276.182",
+            "17.866.550"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seonae, Mateo",
+          "values": [
+            "-",
+            "19.142.732",
+            "-",
+            "638.091",
+            "18.504.641"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pellegrino Casalaguida, Mateo (95%)",
+          "values": [
+            "-",
+            "19.142.732",
+            "-",
+            "1.595.228",
+            "17.547.504"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cabral, Raúl Ignacio",
+          "values": [
+            "-",
+            "19.142.731",
+            "-",
+            "638.091",
+            "18.504.640"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales 2021",
+          "values": [
+            "1.850.690.210",
+            "613.881.273",
+            "756.848.459",
+            "521.915.452",
+            "1.185.807.572"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Totales 2020",
+          "values": [
+            "2.775.572.199",
+            "1.611.533.324",
+            "1.945.052.100",
+            "591.363.213",
+            "1.850.690.210"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Plantel profesional de fútbol / Anexo I",
+      "columns": [
+        "Apellido y nombre",
+        "Valor del pase",
+        "Gastos de transferencia",
+        "Costo del jugador",
+        "Ingreso Neto"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Domínguez, Nicolás",
+          "values": [
+            "280.449.382",
+            "(29.215.699)",
+            "(139.788.589)",
+            "111.445.094"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Robertone, Lucas Gastón",
+          "values": [
+            "402.598.985",
+            "(61.284.551)",
+            "(341.314.434)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Barreal, Álvaro",
+          "values": [
+            "158.698.837",
+            "(29.757.173)",
+            "(128.941.664)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cufré, Braian",
+          "values": [
+            "148.195.932",
+            "(27.845.324)",
+            "(120.350.608)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amor, Emiliano",
+          "values": [
+            "11.078.985",
+            "(555.148)",
+            "(577.277)",
+            "9.946.560"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amarilla Lencina, Luis Antonio",
+          "values": [
+            "7.946.528",
+            "-",
+            "-",
+            "7.946.528"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales 2021",
+          "values": [
+            "1.008.968.649",
+            "(148.657.895)",
+            "(730.972.572)",
+            "129.338.182"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Totales 2020",
+          "values": [
+            "2.695.858.649",
+            "(524.609.479)",
+            "(1.900.137.306)",
+            "271.111.864"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 34,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Recursos ordinarios / Anexo II",
+      "columns": [
+        "Detalle",
+        "Para fines",
+        "",
+        "",
+        "Totales 2021",
+        "Totales 2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Generales",
+            "Específicos",
+            "Diversos",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuotas de asociados",
+          "values": [
+            "230.142.044",
+            "75.892.083",
+            "-",
+            "306.034.127",
+            "524.522.912"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uso del estadio",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "38.768.388"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Competencias deportivas",
+          "values": [
+            "-",
+            "591.405.019",
+            "-",
+            "591.405.019",
+            "59.317.258"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de televisión",
+          "values": [
+            "-",
+            "375.943.159",
+            "-",
+            "375.943.159",
+            "336.264.913"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferencias de jugadores (Anexo I.b)",
+          "values": [
+            "-",
+            "129.338.182",
+            "-",
+            "129.338.182",
+            "271.111.864"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad y otras concesiones",
+          "values": [
+            "-",
+            "176.310.993",
+            "-",
+            "176.310.993",
+            "219.161.812"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros derechos de fútbol profesional",
+          "values": [
+            "-",
+            "229.077.761",
+            "-",
+            "229.077.761",
+            "64.913.039"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por servicios de enseñanza",
+          "values": [
+            "-",
+            "197.047.963",
+            "-",
+            "197.047.963",
+            "241.158.281"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subsidios estatales a la educación",
+          "values": [
+            "-",
+            "145.790.042",
+            "-",
+            "145.790.042",
+            "159.645.512"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de formación",
+          "values": [
+            "-",
+            "84.149.417",
+            "-",
+            "84.149.417",
+            "45.453.621"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recuperos",
+          "values": [
+            "-",
+            "16.907.590",
+            "2.382.724",
+            "19.290.314",
+            "15.892.230"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subsidio A.T.P.",
+          "values": [
+            "-",
+            "91.966.749",
+            "-",
+            "91.966.749",
+            "37.307.550"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Donaciones recibidas",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "52.049.392"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales 2021",
+          "values": [
+            "230.142.044",
+            "2.113.828.958",
+            "2.382.724",
+            "2.346.353.726",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Totales 2020",
+          "values": [
+            "368.110.305",
+            "1.657.815.857",
+            "39.640.610",
+            "",
+            "2.065.566.772"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 35,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Gastos específicos de sectores / Anexo III",
+      "columns": [
+        "DETALLE",
+        "FÚTBOL",
+        "",
+        "COMPLEJO POLIDEPORTIVO",
+        "ACTIVIDADES DE ENSEÑANZA",
+        "OTRAS ACTIVIDADES CULTURALES",
+        "OTROS DEPORTES Y SECTORES",
+        "TOTAL 2021",
+        "TOTAL 2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "PROFESIONAL",
+            "AMATEUR",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneraciones al personal",
+          "values": [
+            "575.602.633",
+            "134.829.787",
+            "52.555.428",
+            "242.161.334",
+            "5.743.599",
+            "174.282.184",
+            "1.185.174.965",
+            "1.236.246.305"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cargas sociales",
+          "values": [
+            "21.766.853",
+            "12.573.046",
+            "3.841.694",
+            "28.606.497",
+            "467.280",
+            "16.273.643",
+            "83.529.013",
+            "147.182.383"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cargo por retenciones y percepciones Decreto 1212/2003 (Nota 8)",
+          "values": [
+            "50.751.324",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "50.751.324",
+            "11.665.379"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios y retribuciones por servicios",
+          "values": [
+            "14.813.193",
+            "7.966.571",
+            "1.663.591",
+            "581.064",
+            "29.523",
+            "3.198.044",
+            "28.251.986",
+            "19.562.276"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Primas y premios de jugadores y cuerpo técnico",
+          "values": [
+            "360.337.811",
+            "127.828",
+            "-",
+            "-",
+            "-",
+            "-",
+            "360.465.639",
+            "425.799.772"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguridad y vigilancia",
+          "values": [
+            "29.958.004",
+            "18.304.565",
+            "11.620.291",
+            "13.645",
+            "-",
+            "439.353",
+            "60.335.858",
+            "71.379.371"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pretemporada y concentraciones",
+          "values": [
+            "8.373.723",
+            "14.139",
+            "-",
+            "-",
+            "-",
+            "-",
+            "8.387.862",
+            "2.047.817"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pérdida por baja jugadores profesionales",
+          "values": [
+            "25.875.887",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "25.875.887",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Energía eléctrica",
+          "values": [
+            "4.284.408",
+            "1.300.103",
+            "4.042.021",
+            "1.063.426",
+            "-",
+            "-",
+            "10.689.958",
+            "23.869.101"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios públicos",
+          "values": [
+            "699.492",
+            "845.336",
+            "1.223.277",
+            "521.594",
+            "-",
+            "457.690",
+            "3.747.389",
+            "8.958.208"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Farmacia y asistencia médica",
+          "values": [
+            "15.015.002",
+            "692.872",
+            "17.007",
+            "82.225",
+            "-",
+            "123.386",
+            "15.930.492",
+            "8.120.036"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "10.343.267",
+            "1.275.007",
+            "916.338",
+            "4.746.059",
+            "78.797",
+            "2.548.071",
+            "19.907.539",
+            "13.388.266"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad",
+          "values": [
+            "634.469",
+            "-",
+            "-",
+            "10.200",
+            "-",
+            "89.265",
+            "733.934",
+            "239.420"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos partidos",
+          "values": [
+            "275.373",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "275.373",
+            "2.883.410"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Útiles de deportes",
+          "values": [
+            "5.774.800",
+            "509.126",
+            "317.640",
+            "95.399",
+            "-",
+            "2.284.934",
+            "8.981.899",
+            "7.324.346"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte",
+          "values": [
+            "1.124.506.239",
+            "178.438.380",
+            "76.197.287",
+            "277.881.443",
+            "6.319.199",
+            "199.696.570",
+            "1.863.039.118",
+            "1.978.666.090"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 36,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Gastos específicos de sectores / Anexo III",
+      "columns": [
+        "DETALLE",
+        "FÚTBOL",
+        "",
+        "COMPLEJO POLIDEPORTIVO",
+        "ACTIVIDADES DE ENSEÑANZA",
+        "OTRAS ACTIVIDADES CULTURALES",
+        "OTROS DEPORTES Y SECTORES",
+        "TOTAL 2021",
+        "TOTAL 2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "PROFESIONAL",
+            "AMATEUR",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte",
+          "values": [
+            "1.124.506.239",
+            "178.438.380",
+            "76.197.287",
+            "277.881.443",
+            "6.319.199",
+            "199.696.570",
+            "1.863.039.118",
+            "1.978.666.090"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "9.538.602",
+            "7.840.175",
+            "6.766.741",
+            "2.698.664",
+            "5.122",
+            "1.332.075",
+            "28.181.379",
+            "29.934.727"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alquileres",
+          "values": [
+            "2.915.146",
+            "2.263.559",
+            "-",
+            "13.786",
+            "-",
+            "56.552",
+            "5.249.043",
+            "2.502.131"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Viáticos, comidas y refrigerios",
+          "values": [
+            "14.925.159",
+            "15.994.490",
+            "18.624",
+            "14.241",
+            "6.335",
+            "1.248.591",
+            "32.207.440",
+            "40.374.912"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fletes y acarreos",
+          "values": [
+            "3.355",
+            "20.918",
+            "-",
+            "-",
+            "-",
+            "-",
+            "24.273",
+            "96.394"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reparaciones y mantenimiento",
+          "values": [
+            "12.559.936",
+            "12.935.680",
+            "4.031.534",
+            "1.108.938",
+            "2.753",
+            "921.679",
+            "31.560.520",
+            "29.952.302"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Productos químicos, fertilizantes y semillas",
+          "values": [
+            "2.587.246",
+            "3.687.084",
+            "-",
+            "-",
+            "-",
+            "-",
+            "6.274.330",
+            "5.297.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Papelería, impresiones y útiles de escritorio",
+          "values": [
+            "3.405.502",
+            "82.908",
+            "-",
+            "939.438",
+            "7.217",
+            "110.313",
+            "4.545.378",
+            "4.979.582"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Becas",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "1.020.112",
+            "1.020.112",
+            "6.038.292"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afilaciones e inscripciones",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "1.695.650",
+            "1.695.650",
+            "7.350.532"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varios",
+          "values": [
+            "8.235.684",
+            "2.227.540",
+            "2.316.399",
+            "1.579.185",
+            "1.169.632",
+            "2.751.210",
+            "18.279.650",
+            "23.781.283"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Traslados y estadías",
+          "values": [
+            "77.809.583",
+            "3.856.935",
+            "61.370",
+            "26.206",
+            "-",
+            "734.325",
+            "82.488.419",
+            "42.697.198"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios de limpieza",
+          "values": [
+            "6.613.107",
+            "2.365.114",
+            "12.500.131",
+            "9.946.800",
+            "313.951",
+            "4.385.340",
+            "36.124.443",
+            "52.036.179"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos y derechos de jugadores profesionales",
+          "values": [
+            "339.781.239",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "339.781.239",
+            "110.695.711"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costo de desarrollo de jugadores propios",
+          "values": [
+            "-",
+            "(229.712.783)",
+            "-",
+            "-",
+            "-",
+            "-",
+            "(229.712.783)",
+            "(247.364.820)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales 2021",
+          "values": [
+            "1.602.880.798",
+            "-",
+            "101.892.086",
+            "294.208.701",
+            "7.824.209",
+            "213.952.417",
+            "2.220.758.211",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Totales 2020",
+          "values": [
+            "1.275.421.728",
+            "-",
+            "142.759.856",
+            "327.074.917",
+            "10.871.465",
+            "330.910.047",
+            "",
+            "2.087.038.013"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 37,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Gastos generales de administración / Anexo IV",
+      "columns": [
+        "DETALLE",
+        "2021",
+        "2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Remuneraciones al personal",
+          "values": [
+            "102.994.522",
+            "126.503.863"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cargas sociales",
+          "values": [
+            "9.538.702",
+            "24.590.691"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios y retribuciones por servicios",
+          "values": [
+            "7.844.038",
+            "8.388.662"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos y comisiones bancarias",
+          "values": [
+            "62.436.770",
+            "75.652.519"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Papelería, impresiones y útiles de escritorio",
+          "values": [
+            "5.915.742",
+            "7.023.573"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros, juicios y gastos relacionados",
+          "values": [
+            "17.067.858",
+            "12.396.263"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Viáticos, comidas y refrigerios",
+          "values": [
+            "2.222.126",
+            "2.893.260"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reparaciones, mantenimiento y limpieza",
+          "values": [
+            "8.405.283",
+            "11.604.951"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguridad y vigilancia",
+          "values": [
+            "99.527",
+            "88.677"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios públicos",
+          "values": [
+            "2.474.169",
+            "3.670.773"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "26.490.073",
+            "20.772.650"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad y propaganda",
+          "values": [
+            "2.687.139",
+            "2.827.459"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varios",
+          "values": [
+            "11.274.005",
+            "9.883.490"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales",
+          "values": [
+            "259.449.954",
+            "306.296.831"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 38,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Recursos y gastos por sectores / Anexo V",
+      "columns": [
+        "DETALLE",
+        "FUTBOL Y OTRAS ACTIVIDADES DEPORTIVAS",
+        "ACTIVIDADES DE ENSEÑANZA",
+        "TOTAL"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Recursos específicos de sectores (Anexo II)",
+          "values": [
+            "2.003.515.721",
+            "342.838.005",
+            "2.346.353.726"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos específicos de sectores (Anexo III)",
+          "values": [
+            "(1.926.549.510)",
+            "(294.208.701)",
+            "(2.220.758.211)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit de Sectores 2021",
+          "values": [
+            "76.966.211",
+            "48.629.304",
+            "125.595.515"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(Déficit) Superávit de Sectores 2020",
+          "values": [
+            "(95.200.117)",
+            "73.728.876",
+            "(21.471.241)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 39,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Activos y pasivos en moneda extranjera / Anexo VI",
+      "columns": [
+        "Rubros",
+        "30/06/2021",
+        "",
+        "",
+        "30/06/2020",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Clase y monto de la moneda extranjera",
+            "Cambio vigente",
+            "Monto en moneda argentina",
+            "Monto en moneda argentina",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ACTIVO",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ACTIVO CORRIENTE",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caja y bancos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caja",
+          "values": [
+            "U$S",
+            "-",
+            "-",
+            "-",
+            "35.458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Credicoop",
+          "values": [
+            "U$S",
+            "148.934",
+            "95,5200",
+            "14.226.215",
+            "11.199.592"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Santander Río",
+          "values": [
+            "U$S",
+            "1.193",
+            "95,5200",
+            "113.910",
+            "20.708.492"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Eur",
+            "1.661",
+            "113,0957",
+            "187.853",
+            "285.439"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudores varios",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Major League Soccer (Venta Álvaro Barreal)",
+          "values": [
+            "U$S",
+            "500.000",
+            "95,5200",
+            "47.760.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Unión Desportiva Almería SAD (Venta Lucas Robertone)",
+          "values": [
+            "Eur",
+            "720.000",
+            "113,0957",
+            "81.428.904",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bologna Football Club (Venta Nicolás Domínguez)",
+          "values": [
+            "Eur",
+            "1.125.000",
+            "113,0957",
+            "127.232.663",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Club Atlético Mineiro (Venta Lucas Pratto)",
+          "values": [
+            "Eur",
+            "-",
+            "-",
+            "-",
+            "100.334.049"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Club Atlético Independiente (Venta Lucas Romero)",
+          "values": [
+            "U$S",
+            "-",
+            "-",
+            "-",
+            "105.530.575"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Conmebol (Premios Copa)",
+          "values": [
+            "U$S",
+            "1.230.000",
+            "95,5200",
+            "117.489.600",
+            "50.127.023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de formación y mecanismo de solidaridad a cobrar",
+          "values": [
+            "U$S",
+            "90.874",
+            "95,5200",
+            "8.680.254",
+            "1.483.020"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Eur",
+            "326.674",
+            "113,0957",
+            "36.945.469",
+            "26.761.804"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Préstamos de jugadores a devengar",
+          "values": [
+            "U$S",
+            "96.758",
+            "95,5200",
+            "9.242.279",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ACTIVO NO CORRIENTE",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Créditos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de formación y mecanismo de solidaridad a cobrar",
+          "values": [
+            "Eur",
+            "183.884",
+            "113,0957",
+            "20.796.440",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del activo",
+          "values": [
+            "",
+            "",
+            "",
+            "464.103.587",
+            "316.465.452"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Activos y pasivos en moneda extranjera / Anexo VI",
+      "columns": [
+        "Rubros",
+        "30/06/2021",
+        "",
+        "",
+        "30/06/2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Clase y monto de la moneda extranjera",
+            "Cambio vigente",
+            "Monto en moneda argentina",
+            "Monto en moneda argentina"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PASIVO",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PASIVO CORRIENTE",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deudas",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plantel profesional de fútbol - Compromisos de pago a jugadores y cuerpo técnico por premios y primas",
+          "values": [
+            "U$S 262.724",
+            "95,7200",
+            "25.147.925",
+            "39.101.053"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "MEP 29.612",
+            "163,5700",
+            "4.843.671",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas bancarias",
+          "values": [
+            "U$S -",
+            "-",
+            "-",
+            "105.830.975"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proveedores",
+          "values": [
+            "U$S 14.660",
+            "95,7200",
+            "1.403.227",
+            "2.143.022"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acreedores por transferencia de jugadores",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Agustín Bouzat",
+          "values": [
+            "U$S 41.925",
+            "95,7200",
+            "4.013.061",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la rescisión de Rodrigo Salinas",
+          "values": [
+            "U$S 62.991",
+            "95,7200",
+            "6.029.501",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Ricardo Centurión",
+          "values": [
+            "U$S 1.400.000",
+            "95,7200",
+            "134.008.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la renovación de Francisco Ortega",
+          "values": [
+            "MEP 250.000",
+            "163,5700",
+            "40.892.500",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por el reconocimiento de Maximiliano Romero",
+          "values": [
+            "Eur 100.000",
+            "113,5718",
+            "11.357.180",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la venta de Braian Cufré",
+          "values": [
+            "Eur 60.000",
+            "113,5718",
+            "6.814.308",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la venta de Lucas Robertone",
+          "values": [
+            "Eur 256.430",
+            "113,5718",
+            "29.123.178",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Matías De Los Santos",
+          "values": [
+            "U$S 413.600",
+            "95,7200",
+            "39.589.792",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Mauro Pittón",
+          "values": [
+            "U$S -",
+            "-",
+            "-",
+            "5.291.549"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Lucas Janson",
+          "values": [
+            "U$S -",
+            "-",
+            "-",
+            "99.481.117"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la venta de Gastón Giménez",
+          "values": [
+            "U$S -",
+            "-",
+            "-",
+            "18.913.979"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la venta de Nicolás Domínguez",
+          "values": [
+            "Eur 230.625",
+            "113,5718",
+            "26.192.496",
+            "19.342.760"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la rescisión cuerpo técnico Gabriel Heinze",
+          "values": [
+            "U$S -",
+            "-",
+            "-",
+            "20.460.411"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Gastón Giménez",
+          "values": [
+            "U$S 350.000",
+            "95,7200",
+            "33.502.000",
+            "31.749.293"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Rodrigo Salinas",
+          "values": [
+            "U$S -",
+            "-",
+            "-",
+            "17.272.991"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acreedores varios",
+          "values": [
+            "U$S 30.000",
+            "95,7200",
+            "2.871.600",
+            "2.645.774"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de formación a pagar",
+          "values": [
+            "U$S 141.834",
+            "95,7200",
+            "13.576.380",
+            "5.719.107"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "FRF -",
+            "-",
+            "-",
+            "1.111.007"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos anticipados",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Telecom Argentina",
+          "values": [
+            "U$S 17.188",
+            "95,7200",
+            "1.645.188",
+            "1.984.329"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Air Europa",
+          "values": [
+            "U$S -",
+            "-",
+            "-",
+            "592.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Préstamos de jugadores profesionales a devengar",
+          "values": [
+            "U$S -",
+            "-",
+            "-",
+            "7.937.323"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte",
+          "values": [
+            "",
+            "",
+            "381.010.007",
+            "379.577.343"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Activos y pasivos en moneda extranjera / Anexo VI",
+      "columns": [
+        "Rubros",
+        "30/06/2021",
+        "",
+        "",
+        "30/06/2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Clase y monto de la moneda extranjera",
+            "Cambio vigente",
+            "Monto en moneda argentina",
+            "Monto en moneda argentina"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte",
+          "values": [
+            "",
+            "",
+            "381.010.007",
+            "379.577.343"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PASIVO NO CORRIENTE",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deudas",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acreedores por transferencia de jugadores",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por la compra de Gastón Giménez",
+          "values": [
+            "U$S",
+            "-",
+            "-",
+            "5.291.548"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos anticipados",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "The Send",
+          "values": [
+            "U$S",
+            "150.000",
+            "95,7200",
+            "15.874.646"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Telecom Argentina",
+          "values": [
+            "U$S",
+            "-",
+            "-",
+            "1.818.970"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del pasivo",
+          "values": [
+            "",
+            "",
+            "395.368.007",
+            "402.562.507"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil",
+      "columns": [
+        "Rubros",
+        "Saldos al inicio del ejercicio",
+        "Aumentos",
+        "Disminuciones",
+        "Saldos al cierre del ejercicio"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Incluidas en el pasivo",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Para juicios y otras contingencias",
+          "values": [
+            "67.780.322",
+            "6.560.767 (1)",
+            "(22.653.633) (2)",
+            "51.687.456"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales 2021",
+          "values": [
+            "67.780.322",
+            "6.560.767",
+            "(22.653.633)",
+            "51.687.456"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Totales 2020",
+          "values": [
+            "109.569.545",
+            "11.948.645",
+            "(53.737.868)",
+            "67.780.322"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil Inversiones",
+      "columns": [
+        "Descripción",
+        "30/6/2021",
+        "",
+        "",
+        "30/6/2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Cuotas partes",
+            "Valor de cotización",
+            "Monto en moneda argentina",
+            "Monto en moneda argentina"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos a plazo fijo",
+          "values": [
+            "-",
+            "-",
+            "2.569.863",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total plazo fijo",
+          "values": [
+            "",
+            "",
+            "2.569.863",
+            "-"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fondo común de inversión - Banco Credicoop",
+          "values": [
+            "629",
+            "23,1705",
+            "14.574",
+            "171.261.533"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondo común de inversión - Banco Supervielle",
+          "values": [
+            "3.220.105",
+            "18,0148",
+            "58.009.486",
+            "24.614.137"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total fondo común de inversión",
+          "values": [
+            "",
+            "",
+            "58.024.060",
+            "195.875.670"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total de inversiones",
+          "values": [
+            "",
+            "",
+            "60.593.923",
+            "195.875.670"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 6,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total del activo corriente",
+      "target": "792.996.182",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total del activo corriente",
+      "target": "1.263.136.554",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total del activo no corriente",
+      "target": "2.887.338.220",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total del activo no corriente",
+      "target": "3.081.251.206",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "likelyRelevant": false,
+      "totalLabel": "Total del activo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 7,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total del pasivo corriente",
+      "target": "1.021.962.875",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total del pasivo corriente",
+      "target": "950.955.469",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total del pasivo no corriente",
+      "target": "217.865.567",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total del pasivo no corriente",
+      "target": "199.300.459",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "likelyRelevant": false,
+      "totalLabel": "Total del pasivo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 7,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total del pasivo y patrimonio neto",
+      "target": "3.680.334.402",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-1239828442"
+    },
+    {
+      "page": 7,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Estado de situación patrimonial",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total del pasivo y patrimonio neto",
+      "target": "4.344.387.760",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-1150255928"
+    },
+    {
+      "page": 16,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### k) Cuentas de recursos y gastos / ### l) Estado de Flujo de Efectivo",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "105.553.208",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### k) Cuentas de recursos y gastos / ### l) Estado de Flujo de Efectivo",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "230.660.473",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 3 - COMPOSICIÓN DE LOS RUBROS DEL ACTIVO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "44.959.285",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 3 - COMPOSICIÓN DE LOS RUBROS DEL ACTIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "34.784.803",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 3 - COMPOSICIÓN DE LOS RUBROS DEL ACTIVO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "687.442.974",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 3 - COMPOSICIÓN DE LOS RUBROS DEL ACTIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "529.603.975",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "538.196.137",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "422.685.117",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "### 2. No corrientes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "28.740.884",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-7944444"
+    },
+    {
+      "page": 18,
+      "section": "### 2. No corrientes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "10.647.641",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-10642330"
+    },
+    {
+      "page": 18,
+      "section": "(3) Incluye:",
+      "likelyRelevant": false,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 19,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ### Notas a los estados contables al 30 de junio de 2021 / #### c) BIENES DE USO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales 2021",
+      "skipped": true,
+      "reason": "1 de 11 valor(es) del segmento no parecen números (ej. \"Al inicio\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 19,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ### Notas a los estados contables al 30 de junio de 2021 / #### c) BIENES DE USO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totales 2021",
+      "skipped": true,
+      "reason": "1 de 6 valor(es) del segmento no parecen números (ej. \"Altas\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 19,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ### Notas a los estados contables al 30 de junio de 2021 / #### c) BIENES DE USO",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Totales 2021",
+      "skipped": true,
+      "reason": "1 de 11 valor(es) del segmento no parecen números (ej. \"Al cierre\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 19,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ### Notas a los estados contables al 30 de junio de 2021 / #### c) BIENES DE USO",
+      "likelyRelevant": false,
+      "totalLabel": "Totales 2020",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 19,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales 2021",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"Acumuladas al inicio\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 19,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totales 2021",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"Del ejercicio (4)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 19,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Totales 2021",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"Acumuladas al cierre\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 19,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Totales 2021",
+      "target": "1.672.789.764",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Totales 2020",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 20,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "502.872.106",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "### 2. No corrientes",
+      "likelyRelevant": false,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 20,
+      "section": "## NOTA 4 - COMPOSICIÓN DE LOS RUBROS DEL PASIVO / ### a) DEUDAS / #### 1. Corrientes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "993.999.756",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "-143020126"
+    },
+    {
+      "page": 20,
+      "section": "## NOTA 4 - COMPOSICIÓN DE LOS RUBROS DEL PASIVO / ### a) DEUDAS / #### 1. Corrientes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "873.325.584",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "-51832205"
+    },
+    {
+      "page": 21,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ### Notas a los estados contables al 30 de junio de 2021",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "409.205.373",
+      "addendCount": 16,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ### Notas a los estados contables al 30 de junio de 2021",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "345.357.224",
+      "addendCount": 11,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "## 2. No corrientes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "58.649.519",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-172693"
+    },
+    {
+      "page": 21,
+      "section": "## 2. No corrientes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "18.326.060",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Notas a los estados contables al 30 de junio de 2021",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "5.291.548",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "# b) INGRESOS ANTICIPADOS / # 1. Corrientes",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "27.963.119",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-10011490"
+    },
+    {
+      "page": 22,
+      "section": "# b) INGRESOS ANTICIPADOS / # 1. Corrientes",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "77.629.885",
+      "addendCount": 11,
+      "closes": false,
+      "diff": "-20022982"
+    },
+    {
+      "page": 22,
+      "section": "# 2. No corrientes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "107.528.592",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "# 2. No corrientes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "113.194.077",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-10011492"
+    },
+    {
+      "page": 23,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 5 - COMPOSICIÓN DE ALGUNOS RUBROS DEL ESTADO DE RECURSOS Y GASTOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Subtotal",
+      "target": "521.915.452",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 5 - COMPOSICIÓN DE ALGUNOS RUBROS DEL ESTADO DE RECURSOS Y GASTOS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Subtotal",
+      "target": "590.208.662",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 5 - COMPOSICIÓN DE ALGUNOS RUBROS DEL ESTADO DE RECURSOS Y GASTOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "593.534.174",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-521915452"
+    },
+    {
+      "page": 23,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 5 - COMPOSICIÓN DE ALGUNOS RUBROS DEL ESTADO DE RECURSOS Y GASTOS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "660.935.904",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-590208662"
+    },
+    {
+      "page": 23,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 5 - COMPOSICIÓN DE ALGUNOS RUBROS DEL ESTADO DE RECURSOS Y GASTOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "(26.237.259)",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 5 - COMPOSICIÓN DE ALGUNOS RUBROS DEL ESTADO DE RECURSOS Y GASTOS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "770.884.401",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 6 - CAUSAS DE LAS VARIACIONES DEL EFECTIVO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "2.827.772.339",
+      "addendCount": 13,
+      "closes": false,
+      "diff": "2113828958"
+    },
+    {
+      "page": 24,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021 / ### NOTA 6 - CAUSAS DE LAS VARIACIONES DEL EFECTIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "3.653.115.940",
+      "addendCount": 14,
+      "closes": false,
+      "diff": "1657815857"
+    },
+    {
+      "page": 25,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "(2.897.345.117)",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Notas a los estados contables al 30 de junio de 2021",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "(3.324.174.214)",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "### NOTA 7 - PLAZOS ESTIMADOS DE CRÉDITOS Y DEUDAS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Subtotales",
+      "target": "602.065.532",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "### NOTA 7 - PLAZOS ESTIMADOS DE CRÉDITOS Y DEUDAS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Subtotales",
+      "target": "927.745.551",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "### NOTA 7 - PLAZOS ESTIMADOS DE CRÉDITOS Y DEUDAS",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Subtotales",
+      "target": "36.432.136",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "### NOTA 7 - PLAZOS ESTIMADOS DE CRÉDITOS Y DEUDAS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales",
+      "target": "716.183.858",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-602065532"
+    },
+    {
+      "page": 25,
+      "section": "### NOTA 7 - PLAZOS ESTIMADOS DE CRÉDITOS Y DEUDAS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totales",
+      "target": "1.052.649.275",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-927745551"
+    },
+    {
+      "page": 25,
+      "section": "### NOTA 7 - PLAZOS ESTIMADOS DE CRÉDITOS Y DEUDAS",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Totales",
+      "target": "135.491.711",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-36432136"
+    },
+    {
+      "page": 25,
+      "section": "### NOTA 7 - PLAZOS ESTIMADOS DE CRÉDITOS Y DEUDAS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales al 30/06/2021",
+      "target": "716.183.858",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "### NOTA 7 - PLAZOS ESTIMADOS DE CRÉDITOS Y DEUDAS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totales al 30/06/2021",
+      "target": "1.052.649.275",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "### NOTA 7 - PLAZOS ESTIMADOS DE CRÉDITOS Y DEUDAS",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Totales al 30/06/2021",
+      "target": "135.491.711",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "### NOTA 7 - PLAZOS ESTIMADOS DE CRÉDITOS Y DEUDAS",
+      "likelyRelevant": true,
+      "totalLabel": "Totales al 30/06/2020",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 32,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Plantel profesional de fútbol",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales 2021",
+      "target": "1.850.690.210",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Plantel profesional de fútbol",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totales 2021",
+      "target": "613.881.273",
+      "addendCount": 13,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Plantel profesional de fútbol",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Totales 2021",
+      "target": "756.848.459",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Plantel profesional de fútbol",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Totales 2021",
+      "target": "521.915.452",
+      "addendCount": 13,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Plantel profesional de fútbol",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Totales 2021",
+      "target": "1.185.807.572",
+      "addendCount": 13,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / ## Plantel profesional de fútbol",
+      "likelyRelevant": false,
+      "totalLabel": "Totales 2020",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 33,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Plantel profesional de fútbol / Anexo I",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales 2021",
+      "target": "1.008.968.649",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Plantel profesional de fútbol / Anexo I",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totales 2021",
+      "target": "(148.657.895)",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Plantel profesional de fútbol / Anexo I",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Totales 2021",
+      "target": "(730.972.572)",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Plantel profesional de fútbol / Anexo I",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "Totales 2021",
+      "target": "129.338.182",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Plantel profesional de fútbol / Anexo I",
+      "likelyRelevant": true,
+      "totalLabel": "Totales 2020",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 34,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Recursos ordinarios / Anexo II",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales 2021",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"Generales\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 34,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Recursos ordinarios / Anexo II",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totales 2021",
+      "skipped": true,
+      "reason": "1 de 12 valor(es) del segmento no parecen números (ej. \"Específicos\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 34,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Recursos ordinarios / Anexo II",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Totales 2021",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"Diversos\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 34,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Recursos ordinarios / Anexo II",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "Totales 2021",
+      "target": "2.346.353.726",
+      "addendCount": 11,
+      "closes": true
+    },
+    {
+      "page": 34,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Recursos ordinarios / Anexo II",
+      "likelyRelevant": true,
+      "totalLabel": "Totales 2020",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 36,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Gastos específicos de sectores / Anexo III",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales 2021",
+      "skipped": true,
+      "reason": "1 de 13 valor(es) del segmento no parecen números (ej. \"PROFESIONAL\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 36,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Gastos específicos de sectores / Anexo III",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Totales 2021",
+      "target": "101.892.086",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Gastos específicos de sectores / Anexo III",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "Totales 2021",
+      "target": "294.208.701",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Gastos específicos de sectores / Anexo III",
+      "likelyRelevant": true,
+      "column": 4,
+      "totalLabel": "Totales 2021",
+      "target": "7.824.209",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Gastos específicos de sectores / Anexo III",
+      "likelyRelevant": true,
+      "column": 5,
+      "totalLabel": "Totales 2021",
+      "target": "213.952.417",
+      "addendCount": 11,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Gastos específicos de sectores / Anexo III",
+      "likelyRelevant": true,
+      "column": 6,
+      "totalLabel": "Totales 2021",
+      "target": "2.220.758.211",
+      "addendCount": 15,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Gastos específicos de sectores / Anexo III",
+      "likelyRelevant": true,
+      "totalLabel": "Totales 2020",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 37,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Gastos generales de administración / Anexo IV",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales",
+      "target": "259.449.954",
+      "addendCount": 13,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Gastos generales de administración / Anexo IV",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totales",
+      "target": "306.296.831",
+      "addendCount": 13,
+      "closes": true
+    },
+    {
+      "page": 39,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Activos y pasivos en moneda extranjera / Anexo VI",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total del activo",
+      "skipped": true,
+      "reason": "1 de 12 valor(es) del segmento no parecen números (ej. \"Monto en moneda argentina\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 39,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Activos y pasivos en moneda extranjera / Anexo VI",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total del activo",
+      "target": "316.465.452",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Activos y pasivos en moneda extranjera / Anexo VI",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total del pasivo",
+      "skipped": true,
+      "reason": "1 de 3 valor(es) del segmento no parecen números (ej. \"Monto en moneda argentina\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 41,
+      "section": "# CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil / Activos y pasivos en moneda extranjera / Anexo VI",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total del pasivo",
+      "skipped": true,
+      "reason": "1 de 5 valor(es) del segmento no parecen números (ej. \"Monto en moneda argentina\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 42,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales 2021",
+      "target": "67.780.322",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 42,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totales 2021",
+      "skipped": true,
+      "reason": "1 de 1 valor(es) del segmento no parecen números (ej. \"6.560.767 (1)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 42,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Totales 2021",
+      "skipped": true,
+      "reason": "1 de 1 valor(es) del segmento no parecen números (ej. \"(22.653.633) (2)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 42,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Totales 2021",
+      "target": "51.687.456",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 42,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil",
+      "likelyRelevant": false,
+      "totalLabel": "Totales 2020",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 43,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil Inversiones",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total plazo fijo",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"Monto en moneda argentina\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 43,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil Inversiones",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total fondo común de inversión",
+      "target": "58.024.060",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 43,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil Inversiones",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total fondo común de inversión",
+      "target": "195.875.670",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 43,
+      "section": "## CLUB ATLÉTICO VÉLEZ SARSFIELD Asociación Civil Inversiones",
+      "likelyRelevant": false,
+      "totalLabel": "Total de inversiones",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 106,
+    "results": [
+      {
+        "label": "RECURSOS ORDINARIOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECURSOS ORDINARIOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines generales - Anexo II",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines generales - Anexo II",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines específicos - Anexo II",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines específicos - Anexo II",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines diversos - Anexo II",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines diversos - Anexo II",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS ORDINARIOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS ORDINARIOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Específicos de sectores - Anexo III",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Específicos de sectores - Anexo III",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generales de administración - Anexo IV",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generales de administración - Anexo IV",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizaciones - Nota 5.a)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizaciones - Nota 5.a)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultados financieros y por tenencia - Nota 5.b)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultados financieros y por tenencia - Nota 5.b)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DÉFICIT DEL EJERCICIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DÉFICIT DEL EJERCICIO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Caja y bancos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Caja y bancos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Inversiones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Inversiones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad Estática Internacional",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad Estática Internacional",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Duracril Group",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Duracril Group",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Rio Uruguay Seguros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Rio Uruguay Seguros",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Quilmes",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Quilmes",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Borrona",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Borrona",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Radio Victoria Fueguina - Hitachi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Radio Victoria Fueguina - Hitachi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Alquiler de palcos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Alquiler de palcos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Federico Pablo Aste - Tienda Oficial Vélez",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Federico Pablo Aste - Tienda Oficial Vélez",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Telecom Argentina - Anexo VI",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Telecom Argentina - Anexo VI",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Air Europa - Anexo VI",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Air Europa - Anexo VI",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros contratos de publicidad",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros contratos de publicidad",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros contratos de concesiones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros contratos de concesiones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Préstamos de jugadores profesionales a devengar - Anexo VI",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Préstamos de jugadores profesionales a devengar - Anexo VI",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "a) AMORTIZACIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "a) AMORTIZACIONES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Plantel profesional de fútbol - Anexo I",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Plantel profesional de fútbol - Anexo I",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Amortización plantel profesional de fútbol",
+        "similarity": 60
+      },
+      {
+        "label": "Regularización valuación plantel profesional de fútbol Ejercicio 2015 - Nota 2.g)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Regularización valuación plantel profesional de fútbol Ejercicio 2015 - Nota 2.g)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Regularización valuación plantel profesional de fútbol (Ejercicio 2015)",
+        "similarity": 88
+      },
+      {
+        "label": "Bienes de uso - Nota 3.c)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bienes de uso - Nota 3.c)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "depreciation",
+        "matchedLabel": "Amortización de bienes de uso",
+        "similarity": 50
+      },
+      {
+        "label": "b) RESULTADOS FINANCIEROS Y POR TENENCIA",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "b) RESULTADOS FINANCIEROS Y POR TENENCIA",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses generados por colocaciones financieras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses generados por colocaciones financieras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses bancarios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses bancarios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses deudas previsionales e impositivas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses deudas previsionales e impositivas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultados por tenencia jugadores prof. propios - Anexo I",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultados por tenencia jugadores prof. propios - Anexo I",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Créditos incobrables",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Créditos incobrables",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencias de cambio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencias de cambio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado por Exposición a los Cambios en el Poder Adquisitivo de la Moneda - R.E.C.P.A.M.",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado por Exposición a los Cambios en el Poder Adquisitivo de la Moneda - R.E.C.P.A.M.",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos específicos de sectores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos específicos de sectores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de remuneraciones y cargas sociales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de remuneraciones y cargas sociales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pago por altas de intangibles del ejercicio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pago por altas de intangibles del ejercicio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transporte",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transporte",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "A vencer",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "A vencer",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1° Trimestre",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1° Trimestre",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2° Trimestre",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2° Trimestre",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "3° Trimestre",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "3° Trimestre",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "4° Trimestre",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "4° Trimestre",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "A más de 1 año",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "A más de 1 año",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sin plazo establecido",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sin plazo establecido",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Que no devengan interés",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Que no devengan interés",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Que devengan interés",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Que devengan interés",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Domínguez, Nicolás",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Domínguez, Nicolás",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Robertone, Lucas Gastón",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Robertone, Lucas Gastón",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Barreal, Álvaro",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Barreal, Álvaro",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cufré, Braian",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cufré, Braian",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amor, Emiliano",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amor, Emiliano",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amarilla Lencina, Luis Antonio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amarilla Lencina, Luis Antonio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cuotas de asociados",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "member_dues",
+        "matchedLabel": "Cuotas de asociados",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Cuotas de asociados",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Uso del estadio",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "stadium_other",
+        "matchedLabel": "Uso del estadio",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Uso del estadio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Competencias deportivas",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Competencias deportivas",
+        "years": [
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Competencias deportivas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Derechos de televisión",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Derechos de televisión",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transferencias de jugadores (Anexo I.b)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "player_sales",
+        "matchedLabel": "Transferencias de jugadores",
+        "similarity": 67
+      },
+      {
+        "label": "Transferencias de jugadores (Anexo I.b)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad y otras concesiones",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Publicidad y otras concesiones",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Publicidad y otras concesiones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros derechos de fútbol profesional",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Otros derechos de fútbol profesional",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Otros derechos de fútbol profesional",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Por servicios de enseñanza",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "education",
+        "matchedLabel": "Por servicios de enseñanza",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Por servicios de enseñanza",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Subsidios estatales a la educación",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "education",
+        "matchedLabel": "Subsidios estatales a la educación",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Subsidios estatales a la educación",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Derechos de formación",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Derechos de formación",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Derechos de formación",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Recuperos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Recuperos",
+        "years": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Recuperos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Subsidio A.T.P.",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Subsidio A.T.P.",
+        "years": [
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "Subsidio A.T.P.",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Donaciones recibidas",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Donaciones recibidas",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Donaciones recibidas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Remuneraciones al personal",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Remuneraciones al personal",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Remuneraciones al personal (administración)",
+        "similarity": 67
+      },
+      {
+        "label": "Cargas sociales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cargas sociales",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Cargas sociales (administración)",
+        "similarity": 67
+      },
+      {
+        "label": "Cargo por retenciones y percepciones Decreto 1212/2003 (Nota 8)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cargo por retenciones y percepciones Decreto 1212/2003 (Nota 8)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Cargo por retenciones y percepciones Decreto 1212/2003",
+        "similarity": 88
+      },
+      {
+        "label": "Honorarios y retribuciones por servicios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Honorarios y retribuciones por servicios",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Honorarios y retribuciones por servicios (sectores)",
+        "similarity": 80
+      },
+      {
+        "label": "Primas y premios de jugadores y cuerpo técnico",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Primas y premios de jugadores y cuerpo técnico",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Primas y premios de jugadores y cuerpo técnico",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Seguridad y vigilancia",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Seguridad y vigilancia",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Seguridad y vigilancia (sectores)",
+        "similarity": 67
+      },
+      {
+        "label": "Pretemporada y concentraciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pretemporada y concentraciones",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Pretemporada y concentraciones",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Pérdida por baja jugadores profesionales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pérdida por baja jugadores profesionales",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "player_impairment",
+        "matchedLabel": "Pérdida por baja jugadores profesionales",
+        "years": [
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Energía eléctrica",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Energía eléctrica",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Energía eléctrica (sectores)",
+        "similarity": 67
+      },
+      {
+        "label": "Servicios públicos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Servicios públicos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Servicios públicos (sectores)",
+        "similarity": 67
+      },
+      {
+        "label": "Farmacia y asistencia médica",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Farmacia y asistencia médica",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Farmacia y asistencia médica (sectores)",
+        "similarity": 75
+      },
+      {
+        "label": "Seguros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Seguros",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Seguros (sectores)",
+        "similarity": 50
+      },
+      {
+        "label": "Publicidad",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Publicidad (sectores)",
+        "similarity": 50
+      },
+      {
+        "label": "Gastos partidos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos partidos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Gastos partidos",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Útiles de deportes",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Útiles de deportes",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Útiles de deportes",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Impuestos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impuestos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Impuestos (sectores)",
+        "similarity": 50
+      },
+      {
+        "label": "Alquileres",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Alquileres",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Alquileres (sectores)",
+        "similarity": 50
+      },
+      {
+        "label": "Viáticos, comidas y refrigerios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Viáticos, comidas y refrigerios",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Viáticos, comidas y refrigerios (sectores)",
+        "similarity": 75
+      },
+      {
+        "label": "Fletes y acarreos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fletes y acarreos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Fletes y acarreos",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Reparaciones y mantenimiento",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reparaciones y mantenimiento",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Reparaciones y mantenimiento (sectores)",
+        "similarity": 67
+      },
+      {
+        "label": "Productos químicos, fertilizantes y semillas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Productos químicos, fertilizantes y semillas",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Productos químicos, fertilizantes y semillas",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Papelería, impresiones y útiles de escritorio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Papelería, impresiones y útiles de escritorio",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Papelería, impresiones y útiles de escritorio (sectores)",
+        "similarity": 80
+      },
+      {
+        "label": "Becas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Becas",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Becas",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Afilaciones e inscripciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Afilaciones e inscripciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Varios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Varios",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Varios",
+        "years": [
+          "2016",
+          "2017"
+        ]
+      },
+      {
+        "label": "Traslados y estadías",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Traslados y estadías",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Traslados y estadías",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Servicios de limpieza",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Servicios de limpieza",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Servicios de limpieza (sectores)",
+        "similarity": 67
+      },
+      {
+        "label": "Gastos y derechos de jugadores profesionales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos y derechos de jugadores profesionales",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Gastos y derechos de jugadores profesionales",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Costo de desarrollo de jugadores propios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costo de desarrollo de jugadores propios",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Costo de desarrollo de jugadores propios (reclasificación)",
+        "similarity": 80
+      },
+      {
+        "label": "Gastos y comisiones bancarias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos y comisiones bancarias",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos y comisiones bancarias",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Seguros, juicios y gastos relacionados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Seguros, juicios y gastos relacionados",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Seguros, juicios y gastos relacionados",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Reparaciones, mantenimiento y limpieza",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reparaciones, mantenimiento y limpieza",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Reparaciones, mantenimiento y limpieza (administración)",
+        "similarity": 75
+      },
+      {
+        "label": "Publicidad y propaganda",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad y propaganda",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Publicidad y propaganda",
+        "years": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2024"
+        ]
+      },
+      {
+        "label": "Recursos específicos de sectores (Anexo II)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Recursos específicos de sectores (Anexo II)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos específicos de sectores (Anexo III)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos específicos de sectores (Anexo III)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit de Sectores 2021",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit de Sectores 2021",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(Déficit) Superávit de Sectores 2020",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(Déficit) Superávit de Sectores 2020",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Vélez Sarsfield",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 13,
+      "line": "#### a) Moneda extranjera"
+    },
+    {
+      "page": 13,
+      "line": "Los activos y pasivos denominados en moneda extranjera fueron convertidos a pesos utilizando los tipos de cambio comprador o vendedor vigentes al cierre de cada ejercicio, según corresponda. El detalle respectivo se expone en el Anexo VI."
+    },
+    {
+      "page": 13,
+      "line": "Los fondos comunes de inversión se encuentran representados por cuotas partes medidas a su valor de cotización al cierre de cada ejercicio."
+    },
+    {
+      "page": 17,
+      "line": "|  Caja en moneda extranjera - Anexo VI | - | 35.458  |"
+    },
+    {
+      "page": 17,
+      "line": "|  Bancos en moneda extranjera - Anexo VI | 14.527.978 | 32.193.523  |"
+    },
+    {
+      "page": 18,
+      "line": "(2) Al 30 de junio de 2020, incluye 105.530.575 en moneda extranjera - Anexo VI."
+    },
+    {
+      "page": 20,
+      "line": "(6) Al 30 de junio de 2021 y 2020 incluye 29.991.596 y 39.101.053, respectivamente, en moneda extranjera - Anexo VI."
+    },
+    {
+      "page": 20,
+      "line": "(7) Al 30 de junio de 2020, incluye 105.830.975 en moneda extranjera - Anexo VI."
+    },
+    {
+      "page": 20,
+      "line": "(8) Al 30 de junio de 2021 y 2020 incluye 1.403.227 y 2.143.022, respectivamente, en moneda extranjera - Anexo VI."
+    },
+    {
+      "page": 21,
+      "line": "(10) Al 30 de junio de 2021 incluye 4.013.061 en moneda extranjera - Anexo VI."
+    },
+    {
+      "page": 21,
+      "line": "(11) Al 30 de junio de 2020 incluye 5.291.549 en moneda extranjera - Anexo VI."
+    },
+    {
+      "page": 21,
+      "line": "(12) Al 30 de junio de 2020 incluye 99.481.117 en moneda extranjera - Anexo VI."
+    },
+    {
+      "page": 21,
+      "line": "(13) Al 30 de junio de 2020 incluye 18.913.979 en moneda extranjera - Anexo VI."
+    },
+    {
+      "page": 21,
+      "line": "(14) Al 30 de junio de 2020 incluye 17.272.991 en moneda extranjera - Anexo VI."
+    },
+    {
+      "page": 21,
+      "line": "(15) Al 30 de junio de 2021 y 2020 incluye 2.871.600 y 2.645.774, respectivamente, en moneda extranjera - Anexo VI."
+    },
+    {
+      "page": 21,
+      "line": "(16) Al 30 de junio de 2021 y 2020 incluye 13.576.380 y 6.830.114, respectivamente, en moneda extranjera - Anexo VI."
+    },
+    {
+      "page": 39,
+      "line": "**Activos y pasivos en moneda extranjera**"
+    },
+    {
+      "page": 39,
+      "line": "|   |  Clase y monto de la moneda extranjera | Cambio vigente | Monto en moneda argentina | Monto en moneda argentina  |   |"
+    },
+    {
+      "page": 40,
+      "line": "**Activos y pasivos en moneda extranjera**"
+    },
+    {
+      "page": 40,
+      "line": "|   |  Clase y monto de la moneda extranjera | Cambio vigente | Monto en moneda argentina | Monto en moneda argentina  |"
+    },
+    {
+      "page": 41,
+      "line": "**Activos y pasivos en moneda extranjera**"
+    },
+    {
+      "page": 41,
+      "line": "|   |  Clase y monto de la moneda extranjera | Cambio vigente | Monto en moneda argentina | Monto en moneda argentina  |"
+    },
+    {
+      "page": 43,
+      "line": "|   |  Cuotas partes | Valor de cotización | Monto en moneda argentina | Monto en moneda argentina  |"
+    }
+  ],
+  "warnings": [
+    "7 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "10 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "29 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

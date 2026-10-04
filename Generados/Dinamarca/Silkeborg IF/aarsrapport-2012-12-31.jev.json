@@ -1,0 +1,246 @@
+{
+ "md": "Clubes/Dinamarca/Silkeborg IF/aarsrapport-2012-12-31.md",
+ "generatedAt": "2026-09-30T22:49:05.345Z",
+ "rubrosHuella": "b7189d29939eafde4082cc69575162b127fe88f3",
+ "rubros": [
+  {
+   "label": "Af- og nedskrivninger",
+   "lado": null,
+   "page": 11,
+   "section": "rettighed / kr. / 3.Immaterielle anlægsaktiver / Kostpris 01.01.2012 17.350.000 / Tilgang 0",
+   "choice": "depreciation",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Salgsrettighed 3 6.365.455 —",
+   "lado": null,
+   "page": 10,
+   "section": "Investeringsselskabet af 21. december 2001 A/S 8 / Balance pr. 31.12.2012 / 2012 2011 / Note kr. kr.",
+   "choice": "player_sales",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "player_sales",
+     0.93
+    ],
+    [
+     "broadcasting",
+     0.02
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1531
+  },
+  {
+   "label": "Årets afskrivninger",
+   "lado": null,
+   "page": 11,
+   "section": "rettighed / kr. / 3.Immaterielle anlægsaktiver / Kostpris 01.01.2012 17.350.000 / Tilgang 0",
+   "choice": "depreciation",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "depreciation",
+     0.66
+    ],
+    [
+     "other_amortisation",
+     0.25
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 1572
+  },
+  {
+   "label": "Udskudte skatteaktiver",
+   "lado": null,
+   "page": 10,
+   "section": "Investeringsselskabet af 21. december 2001 A/S 8 / Balance pr. 31.12.2012 / 2012 2011 / Note kr. kr.",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_income",
+     0.48
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "Finansielle anlægsaktiver",
+   "lado": null,
+   "page": 10,
+   "section": "Investeringsselskabet af 21. december 2001 A/S 8 / Balance pr. 31.12.2012 / 2012 2011 / Note kr. kr.",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "other_income",
+     0.47000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1634
+  },
+  {
+   "label": "Kostpris",
+   "lado": null,
+   "page": 11,
+   "section": "rettighed / kr. / 3.Immaterielle anlægsaktiver / Kostpris 01.01.2012 17.350.000 / Tilgang 0",
+   "choice": "player_amortisation",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "player_amortisation",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1521
+  },
+  {
+   "label": "Regnskabsmæssig værdi",
+   "lado": null,
+   "page": 11,
+   "section": "rettighed / kr. / 3.Immaterielle anlægsaktiver / Kostpris 01.01.2012 17.350.000 / Tilgang 0",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_income",
+     0.49
+    ],
+    [
+     "depreciation",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.17
+    ]
+   ],
+   "tokens": 1566
+  },
+  {
+   "label": "Anlægsaktiver 6.865.455 —",
+   "lado": null,
+   "page": 10,
+   "section": "Investeringsselskabet af 21. december 2001 A/S 8 / Balance pr. 31.12.2012 / 2012 2011 / Note kr. kr.",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "depreciation",
+     0.02
+    ]
+   ],
+   "tokens": 1655
+  },
+  {
+   "label": "Finansielle omkostninger",
+   "lado": "expense",
+   "page": 9,
+   "section": "Finansielle indtægter 65 145",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Administrationsomkostninger",
+   "lado": "expense",
+   "page": 9,
+   "section": "Investeringsselskabet af 21. december 2001 A/S 7 / Resultatopgørelse for 2012 / 2012 2011 / Note kr. kr.",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Immaterielle anlægsaktiver",
+   "lado": null,
+   "page": 10,
+   "section": "Investeringsselskabet af 21. december 2001 A/S 8 / Balance pr. 31.12.2012 / 2012 2011 / Note kr. kr.",
+   "choice": "player_amortisation",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "player_amortisation",
+     0.59
+    ],
+    [
+     "other_amortisation",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1582
+  }
+ ]
+}

@@ -1,0 +1,278 @@
+{
+  "md": "Clubes/Brasil/Ituano/2016-anexo-b.md",
+  "pdf": "Clubes/Brasil/Ituano/2016-anexo-b.pdf",
+  "club": "ituano",
+  "year": 2016,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:53:21.915Z",
+  "tieOuts": {
+    "cierran": 24,
+    "noCierran": 6
+  },
+  "warnings": [
+    "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 25,
+    "notasUsadas": []
+  },
+  "ladoConocido": 15,
+  "rubros": [
+    {
+      "label": "RECEITA - FUTEBOL PROFISSIONAL E DE BASE",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        9.764402
+      ],
+      "origen": "estado 7",
+      "glosa": "INGRESOS - FÚTBOL PROFESIONAL Y FORMATIVO"
+    },
+    {
+      "label": "Premiações em Campeonatos (CBF)",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        0.2
+      ],
+      "origen": "estado 7",
+      "glosa": "Premios en campeonatos (CBF)"
+    },
+    {
+      "label": "Direito de Transmissão de TV (FPF)",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        3.875
+      ],
+      "origen": "estado 7",
+      "glosa": "Derechos de transmisión de TV (FPF)"
+    },
+    {
+      "label": "Patrocínio e Publicidades",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        1.1535
+      ],
+      "origen": "estado 7",
+      "glosa": "Patrocinio y publicidad"
+    },
+    {
+      "label": "Arrecadação de Jogos",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        0.606063
+      ],
+      "origen": "estado 7",
+      "glosa": "Recaudación por partidos"
+    },
+    {
+      "label": "Receita com Repasses de Direitos Federativos",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        3.154375
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos por cesión de derechos federativos"
+    },
+    {
+      "label": "Loteiras e Outras Receitas",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        0.79665
+      ],
+      "origen": "estado 7",
+      "glosa": "Loterías y otros ingresos"
+    },
+    {
+      "label": "Receita de Projetos e Incentivos Fiscais",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        0.182565
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos por proyectos e incentivos fiscales"
+    },
+    {
+      "label": "(-) Impostos Incidentes s/ Vendas e Serviços",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -0.20375
+      ],
+      "origen": "estado 7",
+      "glosa": "(-) Impuestos sobre ventas y servicios"
+    },
+    {
+      "label": "DESPESAS - FUTEBOL PROFISSIONAL E DE BASE",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -9.690052
+      ],
+      "origen": "estado 7",
+      "glosa": "GASTOS - FÚTBOL PROFESIONAL Y FORMATIVO"
+    },
+    {
+      "label": "Despesas com Pessoal (Salários e Encargos)",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -1.900705
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos de personal (Sueldos y cargas sociales)"
+    },
+    {
+      "label": "Serviços de Terceiros (Prêmios, Mídia, Serviços de PJ e PF)",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -3.494225
+      ],
+      "origen": "estado 7",
+      "glosa": "Servicios de terceros (Premios, medios, servicios de PJ y PF)"
+    },
+    {
+      "label": "Gastos c/ Atletas (Viagens, Uniformes, Taxas CBF-FPF)",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -0.469429
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos con deportistas (Viajes, uniformes, tasas CBF-FPF)"
+    },
+    {
+      "label": "Despesas com formação e contratação de atletas",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -2.380372
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos de formación y contratación de deportistas"
+    },
+    {
+      "label": "Outras Despesas (Eventos e Partidas- Estádio e Alojamento)",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -1.445321
+      ],
+      "origen": "estado 7",
+      "glosa": "Otros gastos (Eventos y partidos - Estadio y alojamiento)"
+    },
+    {
+      "label": "DESPESAS ADMINISTRATIVAS",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -1.761492
+      ],
+      "origen": "estado 7",
+      "glosa": "GASTOS ADMINISTRATIVOS"
+    },
+    {
+      "label": "Despesas com Pessoal (Salários e encargos)",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -0.539975
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos de personal (Sueldos y cargas sociales)"
+    },
+    {
+      "label": "Água, Luz, Telefone, e Internet (sede do Clube)",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -0.112091
+      ],
+      "origen": "estado 7",
+      "glosa": "Agua, luz, teléfono e internet (sede del club)"
+    },
+    {
+      "label": "Serviços de Terceiros - Advogado, Contador, Assessores",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -0.397105
+      ],
+      "origen": "estado 7",
+      "glosa": "Servicios de terceros - Abogado, contador, asesores"
+    },
+    {
+      "label": "Outras Receitas e Despesas Administrativas",
+      "lado": null,
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -0.171163
+      ],
+      "origen": "estado 7",
+      "glosa": "Otros ingresos y gastos administrativos"
+    },
+    {
+      "label": "Impostos e Taxas diversas",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -0.056601
+      ],
+      "origen": "estado 7",
+      "glosa": "Impuestos y tasas diversas"
+    },
+    {
+      "label": "Encargos Financeiros",
+      "lado": "expense",
+      "page": 7,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+      "values": [
+        -0.484557
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Amortização",
+      "lado": "expense",
+      "page": 16,
+      "section": "### D) AMORTIZAÇÕES DE GASTOS",
+      "values": [
+        -938.68582
+      ],
+      "origen": "estado 20",
+      "glosa": "Amortización"
+    }
+  ]
+}

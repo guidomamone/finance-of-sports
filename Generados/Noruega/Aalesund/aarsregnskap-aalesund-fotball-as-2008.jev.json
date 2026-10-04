@@ -1,0 +1,995 @@
+{
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2008.md",
+ "generatedAt": "2026-09-30T12:59:27.290Z",
+ "rubros": [
+  {
+   "label": "Lønnskostnad",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "lump_football_operations",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.5700000000000001
+    ],
+    [
+     "player_sales",
+     0.21
+    ],
+    [
+     "other_income",
+     0.1
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Avskrivning",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "depreciation",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "depreciation",
+     0.85
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "Startdato 01.01.2008",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1255
+  },
+  {
+   "label": "Varekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "match_organisation_expense",
+     0.2
+    ],
+    [
+     "lump_football_operations_expense",
+     0.2
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Nedskrivning",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "player_impairment",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "player_impairment",
+     0.9
+    ],
+    [
+     "depreciation",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "Verdiendr. finansielle instrumenter, virkelig verdi",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Driftsresultat",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.23,
+   "top3": [
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.23
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Inntekt på inv. i datterselskap",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Netto finansposter",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1477
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_income",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Lån til foretak i samme konsern",
+   "lado": "revenue",
+   "page": 6,
+   "section": "### Note 2 - Driftsinntekter / ### Note 3 - Talentutviklingsfond / ### Note 4 - Konsernbidrag / ### Note 5 - Mellomværende med selskap i samme konsern og tilknyttet selskap / #### *Fordringer*",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 887
+  },
+  {
+   "label": "Årsresultat",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "lump_football_operations",
+     0.15000000000000002
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Comrod Communication AS",
+   "lado": null,
+   "page": 7,
+   "section": "# Noter til regnskapet for 2008 / # Note 6 - Aksjer i andre selskaper",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1277
+  },
+  {
+   "label": "Skattekostnad på ordinært resultat",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Udekket tap",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "exceptional_items",
+     0.25
+    ],
+    [
+     "player_impairment",
+     0.09
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Hexagon ASA",
+   "lado": null,
+   "page": 7,
+   "section": "# Noter til regnskapet for 2008 / # Note 6 - Aksjer i andre selskaper",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Talentutviklingsfond",
+   "lado": null,
+   "page": 8,
+   "section": "# Noter til regnskapet for 2008",
+   "choice": "youth_football",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "youth_football",
+     0.47000000000000003
+    ],
+    [
+     "youth_other_sports_expense",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "AaFK Sponsorservice AS",
+   "lado": null,
+   "page": 7,
+   "section": "# Investering etter kostmetoden (selskapsregnskapet)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.5
+    ],
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Anskaffelseskost 01.01.2008",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Note 9 - Kundefordringer / # Note 10 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.06999999999999999
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 851
+  },
+  {
+   "label": "Tilgang kjøpte driftsmidler",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Note 9 - Kundefordringer / # Note 10 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 843
+  },
+  {
+   "label": "Avgang driftsmidler",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Note 9 - Kundefordringer / # Note 10 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "player_sales",
+     0.06
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 840
+  },
+  {
+   "label": "Akk.avskrivning 31.12.2008",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Note 9 - Kundefordringer / # Note 10 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 851
+  },
+  {
+   "label": "Balanseført pr. 31.12.2008",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Note 9 - Kundefordringer / # Note 10 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.9400000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 852
+  },
+  {
+   "label": "Anskaffelseskost 31.12.2008",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Note 9 - Kundefordringer / # Note 10 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 851
+  },
+  {
+   "label": "Økonomisk levetid",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Note 9 - Kundefordringer / # Note 10 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 841
+  },
+  {
+   "label": "Årets avskrivninger",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Note 9 - Kundefordringer / # Note 10 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "lump_football_operations",
+     0.15000000000000002
+    ],
+    [
+     "other_sports",
+     0.02
+    ]
+   ],
+   "tokens": 841
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Note 11 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "choice": "wages_squad",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "wages_squad",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ]
+   ],
+   "tokens": 817
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Note 11 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 885
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Note 11 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "wages_squad",
+     0.35
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 814
+  },
+  {
+   "label": "Årets nedskrivninger",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Note 9 - Kundefordringer / # Note 10 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ],
+    [
+     "other_sports",
+     0.01
+    ]
+   ],
+   "tokens": 841
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Note 11 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "wages_squad",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1128
+  },
+  {
+   "label": "Jon Kjetil Gjørtz",
+   "lado": null,
+   "page": 10,
+   "section": "Ålesund Fotball AS / # Noter til regnskapet for 2008",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "other_income",
+     0.18000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Per Waagan",
+   "lado": null,
+   "page": 10,
+   "section": "Ålesund Fotball AS / # Noter til regnskapet for 2008",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "wages_squad",
+     0.29000000000000004
+    ],
+    [
+     "other_income",
+     0.1
+    ]
+   ],
+   "tokens": 1315
+  },
+  {
+   "label": "Henrik Hoff",
+   "lado": null,
+   "page": 10,
+   "section": "Ålesund Fotball AS / # Noter til regnskapet for 2008",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "wages_squad",
+     0.16
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Ikke fradragsberettigede representasjonskostnader",
+   "lado": null,
+   "page": 11,
+   "section": "# Noter til regnskapet for 2008",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Ikke fradragsberettigede kontingenter",
+   "lado": null,
+   "page": 11,
+   "section": "# Noter til regnskapet for 2008",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.41000000000000003
+    ],
+    [
+     "member_dues",
+     0.09
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Bundne midler utgjør",
+   "lado": null,
+   "page": 12,
+   "section": "# Noter til regnskapet for 2008",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Andre skattefrie inntekter",
+   "lado": null,
+   "page": 11,
+   "section": "# Noter til regnskapet for 2008",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1562
+  }
+ ]
+}

@@ -1,0 +1,740 @@
+{
+ "md": "Clubes/Argentina/Estudiantes LP/memoria-y-balance-2021-2022.md",
+ "pdf": "Clubes/Argentina/Estudiantes LP/memoria-y-balance-2021-2022.pdf",
+ "club": "estudiantes-lp",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T01:15:13.514Z",
+ "tieOuts": {
+  "cierran": 13,
+  "noCierran": 56
+ },
+ "warnings": [
+  "7 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "49 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "12 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "ladoConocido": 43,
+ "rubros": [
+  {
+   "label": "Fútbol - Plantel profesional (Anexo V)",
+   "lado": null,
+   "page": 48,
+   "section": "ASOCIACION CIVIL / CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / ESTADO DE RECURSOS Y GASTOS / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "values": [
+    "956.625.854",
+    "1.033.670.405"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Fútbol - Exhibición y espectáculos (Anexo V)",
+   "lado": null,
+   "page": 48,
+   "section": "ASOCIACION CIVIL / CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / ESTADO DE RECURSOS Y GASTOS / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "values": [
+    "1.912.981.733",
+    "884.467.813"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Deportes y otras actividades (Anexo V)",
+   "lado": null,
+   "page": 48,
+   "section": "ASOCIACION CIVIL / CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / ESTADO DE RECURSOS Y GASTOS / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "values": [
+    "103.884.968",
+    "43.954.039"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Golf Country Club (Anexo V)",
+   "lado": null,
+   "page": 48,
+   "section": "ASOCIACION CIVIL / CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / ESTADO DE RECURSOS Y GASTOS / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "values": [
+    "76.835.721",
+    "62.615.045"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Instituto de enseñanza (Anexo V)",
+   "lado": null,
+   "page": 48,
+   "section": "ASOCIACION CIVIL / CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / ESTADO DE RECURSOS Y GASTOS / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "values": [
+    "336.446.780",
+    "318.537.080"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Generales (Anexo V)",
+   "lado": null,
+   "page": 48,
+   "section": "ASOCIACION CIVIL / CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / ESTADO DE RECURSOS Y GASTOS / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "values": [
+    "877.409.795",
+    "688.813.764"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Fútbol - Plantel profesional (Anexo VI)",
+   "lado": "expense",
+   "page": 48,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "(809.275.625)",
+    "(191.163.986)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Fútbol - Exhibición y espectáculos (Anexo VI)",
+   "lado": "expense",
+   "page": 48,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "(1.851.531.369)",
+    "(1.332.930.454)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Deportes y otras actividades (Anexo VI)",
+   "lado": "expense",
+   "page": 48,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "(179.288.610)",
+    "(131.308.557)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Golf Country Club (Anexo VI)",
+   "lado": "expense",
+   "page": 48,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "(71.134.128)",
+    "(53.649.102)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Instituto de enseñanza (Anexo VI)",
+   "lado": "expense",
+   "page": 48,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "(309.298.516)",
+    "(245.103.879)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Generales (Anexo VI)",
+   "lado": "expense",
+   "page": 48,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "(558.629.717)",
+    "(422.427.713)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Depreciación de bienes de uso (Anexo I)",
+   "lado": "expense",
+   "page": 48,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "(200.405.775)",
+    "(180.266.496)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Amortización de activos intangibles (Anexo II)",
+   "lado": "expense",
+   "page": 48,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "(439.641.672)",
+    "(428.402.669)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Indemnizaciones y juicios",
+   "lado": null,
+   "page": 60,
+   "section": "85.151.219                     196.715.517 / En moneda extranjera (A nexo IV): / 66.998.050                     103.596.324 / 152.149.269                     300.311.841 / 3.7. Otros ingresos y egresos",
+   "values": [
+    "(29.218.628)",
+    "(41.424.699)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Venta de ubicaciones -",
+   "lado": null,
+   "page": 60,
+   "section": "85.151.219                     196.715.517 / En moneda extranjera (A nexo IV): / 66.998.050                     103.596.324 / 152.149.269                     300.311.841 / 3.7. Otros ingresos y egresos",
+   "values": [
+    "84.342.088"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Donaciones -",
+   "lado": null,
+   "page": 60,
+   "section": "85.151.219                     196.715.517 / En moneda extranjera (A nexo IV): / 66.998.050                     103.596.324 / 152.149.269                     300.311.841 / 3.7. Otros ingresos y egresos",
+   "values": [
+    "77.966.768"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Diversos",
+   "lado": null,
+   "page": 60,
+   "section": "85.151.219                     196.715.517 / En moneda extranjera (A nexo IV): / 66.998.050                     103.596.324 / 152.149.269                     300.311.841 / 3.7. Otros ingresos y egresos",
+   "values": [
+    "(24.121)",
+    "2.548.314"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Recuperos de cargas sociales Dto 1212",
+   "lado": null,
+   "page": 60,
+   "section": "85.151.219                     196.715.517 / En moneda extranjera (A nexo IV): / 66.998.050                     103.596.324 / 152.149.269                     300.311.841 / 3.7. Otros ingresos y egresos",
+   "values": [
+    "68.756.627",
+    "1.980.731"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Condonación Experiencia Futbol -",
+   "lado": null,
+   "page": 60,
+   "section": "85.151.219                     196.715.517 / En moneda extranjera (A nexo IV): / 66.998.050                     103.596.324 / 152.149.269                     300.311.841 / 3.7. Otros ingresos y egresos",
+   "values": [
+    "124.814.611"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Expresado en moneda homogénea y en pesos (Nota",
+   "lado": "revenue",
+   "page": 74,
+   "section": "CLUB ESTUDIANTES DE LA PLATA / ASOCIACION CIVIL / CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / RECURSOS – RESULTADOS POR SECTORES / RECURSOS - RESULTADOS PorPORelSECTORES",
+   "values": [
+    "2.2.)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Expresado en moneda homogénea y en pesos (Nota",
+   "lado": "revenue",
+   "page": 74,
+   "section": "CLUB ESTUDIANTES DE LA PLATA / ASOCIACION CIVIL / CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / RECURSOS – RESULTADOS POR SECTORES / RECURSOS - RESULTADOS PorPORelSECTORES",
+   "values": [
+    "2.2.)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Presentado en forma comparativa Expresado en moneda homogénea y en pesos (Nota",
+   "lado": "expense",
+   "page": 75,
+   "section": "ANEXO “VI” / CLUB ESTUDIANTES DE LA PLATA / ASOCIACION CIVIL / CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / GASTOS",
+   "values": [
+    "2.2.)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Expresado en moneda homogénea y en pesos (Nota",
+   "lado": "expense",
+   "page": 75,
+   "section": "ANEXO “VI” / CLUB ESTUDIANTES DE LA PLATA / ASOCIACION CIVIL / CLUB ESTUDIANTES DE LA PLATA - ASOCIACIÓN CIVIL / GASTOS",
+   "values": [
+    "2.2.)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Fútbol - Exhibición y Espectáculos",
+   "lado": "revenue",
+   "page": 78,
+   "section": "PRESUPUESTO ECONÓMICO SINTÉTICO / RECURSOS ORDINARIOS",
+   "values": [
+    "263.091.276",
+    "324.891.887",
+    "84.165.423",
+    "84.899.228",
+    "90.570.627"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Deportes y Otras Actividades",
+   "lado": "revenue",
+   "page": 78,
+   "section": "PRESUPUESTO ECONÓMICO SINTÉTICO / RECURSOS ORDINARIOS",
+   "values": [
+    "8.105.956",
+    "8.865.051",
+    "10.512.703",
+    "9.686.477",
+    "12.843.344"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Golf Country Club",
+   "lado": "revenue",
+   "page": 78,
+   "section": "PRESUPUESTO ECONÓMICO SINTÉTICO / RECURSOS ORDINARIOS",
+   "values": [
+    "5.419.350",
+    "5.844.100",
+    "6.239.100",
+    "6.593.000",
+    "6.918.000"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Instituto de Enseñanza",
+   "lado": "revenue",
+   "page": 78,
+   "section": "PRESUPUESTO ECONÓMICO SINTÉTICO / RECURSOS ORDINARIOS",
+   "values": [
+    "28.583.390",
+    "28.672.745",
+    "34.938.881",
+    "40.282.670",
+    "40.409.936"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Generales",
+   "lado": "revenue",
+   "page": 78,
+   "section": "PRESUPUESTO ECONÓMICO SINTÉTICO / RECURSOS ORDINARIOS",
+   "values": [
+    "108.817.942",
+    "72.960.817",
+    "118.280.079",
+    "93.533.624",
+    "94.566.746"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Fútbol - Exhibición y Espectáculos",
+   "lado": "expense",
+   "page": 78,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "-326.573.963",
+    "-297.799.006",
+    "-201.345.532",
+    "-187.339.907",
+    "-166.330.556"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Deportes y Otras Actividades",
+   "lado": "expense",
+   "page": 78,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "-12.806.006",
+    "-14.904.235",
+    "-15.274.796",
+    "-17.453.660",
+    "-16.288.745"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Golf Country Club",
+   "lado": "expense",
+   "page": 78,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "-4.720.325",
+    "-5.115.533",
+    "-5.129.193",
+    "-5.481.054",
+    "-5.740.087"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Instituto de Enseñanza",
+   "lado": "expense",
+   "page": 78,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "-26.697.656",
+    "-30.522.447",
+    "-23.648.547",
+    "-31.124.138",
+    "-33.020.240"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Generales",
+   "lado": "expense",
+   "page": 78,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "-43.780.581",
+    "-49.335.152",
+    "-48.108.080",
+    "-51.347.426",
+    "-54.005.995"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Depreciación de Bienes de Uso",
+   "lado": "expense",
+   "page": 78,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "-22.117.668",
+    "-22.117.668",
+    "-22.117.668",
+    "-22.117.668",
+    "-22.117.668"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Amortización de Activos Intangibles",
+   "lado": "expense",
+   "page": 78,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "-46.532.653",
+    "-46.532.653",
+    "-46.532.653",
+    "-46.532.653",
+    "-46.532.653"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Derecho de retransmisión",
+   "lado": "revenue",
+   "page": 80,
+   "section": "PRESUPUESTO ECONÓMICO DETALLADO / RECURSOS ORDINARIOS",
+   "values": [
+    "61.642.782",
+    "61.642.782",
+    "61.642.782",
+    "61.642.782",
+    "66.142.782"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 80,
+   "section": "PRESUPUESTO ECONÓMICO DETALLADO / RECURSOS ORDINARIOS",
+   "values": [
+    "13.503.560",
+    "11.506.729",
+    "12.105.566",
+    "12.802.226",
+    "13.470.100"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 80,
+   "section": "PRESUPUESTO ECONÓMICO DETALLADO / RECURSOS ORDINARIOS",
+   "values": [
+    "5.000",
+    "5.000",
+    "5.000",
+    "5.000",
+    "5.000"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Abonos a Plateas",
+   "lado": "revenue",
+   "page": 80,
+   "section": "PRESUPUESTO ECONÓMICO DETALLADO / RECURSOS ORDINARIOS",
+   "values": [
+    "7.200.000",
+    "7.200.000",
+    "7.200.000",
+    "7.200.000",
+    "7.200.000"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Recursos Fútbol Infantil / Amateur",
+   "lado": "revenue",
+   "page": 80,
+   "section": "PRESUPUESTO ECONÓMICO DETALLADO / RECURSOS ORDINARIOS",
+   "values": [
+    "3.857.644",
+    "2.130.444",
+    "2.213.444",
+    "2.213.444",
+    "2.678.444"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Subvenciones a la explotacion",
+   "lado": "revenue",
+   "page": 80,
+   "section": "PRESUPUESTO ECONÓMICO DETALLADO / RECURSOS ORDINARIOS",
+   "values": [
+    "928.290",
+    "962.818",
+    "998.631",
+    "1.035.775",
+    "1.074.302"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Reconocimientos, Premios y Viáticos",
+   "lado": "expense",
+   "page": 82,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "-60.891.623",
+    "-60.891.623",
+    "-75.216.167",
+    "-60.891.623",
+    "-60.891.623"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Sueldos y Cargas Sociales",
+   "lado": "expense",
+   "page": 82,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "-54.875.815",
+    "-54.875.815",
+    "-54.875.815",
+    "-54.875.815",
+    "-54.875.815"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Sueldos y Cargas Sociales Otros",
+   "lado": "expense",
+   "page": 82,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "-13.232.530",
+    "-14.555.783",
+    "-14.555.783",
+    "-15.614.386",
+    "-16.276.012"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gastos de Partidos Nacionales",
+   "lado": "expense",
+   "page": 82,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "-24.355.017",
+    "-24.902.039",
+    "-26.045.512",
+    "-25.555.657",
+    "-110.675"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Fútbol - Exhibición y Espectáculos",
+   "lado": "expense",
+   "page": 84,
+   "section": "Egresos Ordinarios",
+   "values": [
+    "-316.842.534",
+    "-251.169.184",
+    "-105.437.876",
+    "-89.803.214",
+    "-236.623.837"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Deportes y Otras Actividades",
+   "lado": "expense",
+   "page": 84,
+   "section": "Egresos Ordinarios",
+   "values": [
+    "-10.675.173",
+    "-12.856.952",
+    "-13.603.687",
+    "-15.533.040",
+    "-14.216.690"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Golf Country Club",
+   "lado": "expense",
+   "page": 84,
+   "section": "Egresos Ordinarios",
+   "values": [
+    "-3.857.354",
+    "-4.075.916",
+    "-4.338.414",
+    "-4.431.298",
+    "-4.731.763"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Instituto de Enseñanza",
+   "lado": "expense",
+   "page": 84,
+   "section": "Egresos Ordinarios",
+   "values": [
+    "-19.792.456",
+    "-22.018.342",
+    "-22.339.203",
+    "-22.355.650",
+    "-24.582.433"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Generales",
+   "lado": "expense",
+   "page": 84,
+   "section": "Egresos Ordinarios",
+   "values": [
+    "-84.179.292",
+    "-79.886.866",
+    "-79.805.117",
+    "-80.015.509",
+    "-88.254.652"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Reconocimientos, Premios y Viáticos",
+   "lado": "expense",
+   "page": 88,
+   "section": "PRESUPUESTO FINANCIERO DETALLADO (continuación) / Jul-22         Aug-22         Sep-22         Oct-22          Nov-22 / Egresos Ordinarios / Fútbol - Plantel Profesional / Fútbol - Exhibición y Espectáculos",
+   "values": [
+    "-227.950",
+    "-55.300.255",
+    "-14.552.494",
+    "-227.950",
+    "-164.811.149"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Sueldos y Cargas Sociales",
+   "lado": "expense",
+   "page": 88,
+   "section": "PRESUPUESTO FINANCIERO DETALLADO (continuación) / Jul-22         Aug-22         Sep-22         Oct-22          Nov-22 / Egresos Ordinarios / Fútbol - Plantel Profesional / Fútbol - Exhibición y Espectáculos",
+   "values": [
+    "-32.845.932",
+    "-32.845.932",
+    "-32.845.932",
+    "-32.845.935",
+    "-32.845.935"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Sueldos y Cargas Sociales Otros",
+   "lado": "expense",
+   "page": 88,
+   "section": "PRESUPUESTO FINANCIERO DETALLADO (continuación) / Jul-22         Aug-22         Sep-22         Oct-22          Nov-22 / Egresos Ordinarios / Fútbol - Plantel Profesional / Fútbol - Exhibición y Espectáculos",
+   "values": [
+    "-8.173.202",
+    "-8.713.578",
+    "-9.584.936",
+    "-9.584.936",
+    "-10.282.023"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gastos de Partidos Nacionales",
+   "lado": "expense",
+   "page": 88,
+   "section": "PRESUPUESTO FINANCIERO DETALLADO (continuación) / Jul-22         Aug-22         Sep-22         Oct-22          Nov-22 / Egresos Ordinarios / Fútbol - Plantel Profesional / Fútbol - Exhibición y Espectáculos",
+   "values": [
+    "-21.972.693",
+    "-21.827.493",
+    "-27.796.669",
+    "-20.849.414",
+    "-5.081.187"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros Ingresos",
+   "lado": null,
+   "page": 88,
+   "section": "Otros Ingresos y Egresos",
+   "values": [
+    "8.129.610",
+    "6.129.610",
+    "4.739.879",
+    "4.252.899",
+    "4.252.896"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Egresos por Alta de Bs Uso",
+   "lado": null,
+   "page": 88,
+   "section": "Otros Ingresos y Egresos",
+   "values": [
+    "-20.328.375",
+    "-19.671.000",
+    "-19.457.000",
+    "-20.341.028",
+    "-19.762.000"
+   ],
+   "columns": null
+  }
+ ]
+}

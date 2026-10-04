@@ -1,0 +1,922 @@
+{
+ "md": "Clubes/Argentina/Argentinos Juniors/memoria-2018-2019.md",
+ "pdf": "Clubes/Argentina/Argentinos Juniors/memoria-2018-2019.pdf",
+ "club": "argentinos-juniors",
+ "year": 2018,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T14:32:52.457Z",
+ "tieOuts": {
+  "cierran": 29,
+  "noCierran": 8
+ },
+ "warnings": [
+  "8 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "11 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "ladoConocido": 41,
+ "rubros": [
+  {
+   "label": "Fútbol profesional (Anexo IV)",
+   "lado": "revenue",
+   "page": 4,
+   "section": "ESTADO DE RECURSOS Y GASTOS AL 30 DE JUNIO DE 2019 / RECURSOS",
+   "values": [
+    "1.033.075.093"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Actividades deportivas y culturales (Anexo IV)",
+   "lado": "revenue",
+   "page": 4,
+   "section": "ESTADO DE RECURSOS Y GASTOS AL 30 DE JUNIO DE 2019 / RECURSOS",
+   "values": [
+    "20.753.946"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Socios (Anexo IV)",
+   "lado": "revenue",
+   "page": 4,
+   "section": "ESTADO DE RECURSOS Y GASTOS AL 30 DE JUNIO DE 2019 / RECURSOS",
+   "values": [
+    "33.954.376"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Diversos (Anexo IV)",
+   "lado": "revenue",
+   "page": 4,
+   "section": "ESTADO DE RECURSOS Y GASTOS AL 30 DE JUNIO DE 2019 / RECURSOS",
+   "values": [
+    "73.173.983"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Fútbol profesional (Anexo V)",
+   "lado": "expense",
+   "page": 4,
+   "section": "GASTOS",
+   "values": [
+    "(951.379.297)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Actividades deportivas y culturales (Anexo V)",
+   "lado": "expense",
+   "page": 4,
+   "section": "GASTOS",
+   "values": [
+    "(49.480.646)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Administración (Anexo V)",
+   "lado": "expense",
+   "page": 4,
+   "section": "GASTOS",
+   "values": [
+    "(59.619.273)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Estadio y predios (Anexo V)",
+   "lado": "expense",
+   "page": 4,
+   "section": "GASTOS",
+   "values": [
+    "(35.314.290)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Resultados financieros y por tenencia, netos",
+   "lado": "expense",
+   "page": 4,
+   "section": "GASTOS",
+   "values": [
+    "54.110.381"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Saldos al inicio del ejercicio",
+   "lado": null,
+   "page": 5,
+   "section": "ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO AL 30 DE JUNIO DE 2019",
+   "values": [
+    "4.122",
+    "127.327.495",
+    "907.685.437",
+    "70.551.130",
+    "1.105.568.184"
+   ],
+   "columns": [
+    "",
+    "Capital social",
+    "Ajuste de capital",
+    "Revaluación según R.T. 31",
+    "Resultados no asignados",
+    "Patrimonio Neto al 30/06/2019"
+   ]
+  },
+  {
+   "label": "Ajuste neto de actualización revalúo técnico",
+   "lado": null,
+   "page": 5,
+   "section": "ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO AL 30 DE JUNIO DE 2019",
+   "values": [
+    "-",
+    "-",
+    "351.563.204",
+    "-",
+    "351.563.204"
+   ],
+   "columns": [
+    "",
+    "Capital social",
+    "Ajuste de capital",
+    "Revaluación según R.T. 31",
+    "Resultados no asignados",
+    "Patrimonio Neto al 30/06/2019"
+   ]
+  },
+  {
+   "label": "Depreciación de bienes de uso e intangibles",
+   "lado": null,
+   "page": 6,
+   "section": "Flujos de efectivo de las operaciones / Superávit del ejercicio 119.274.273 / Ajustes para conciliar el resultado con el efectivo generado por las / operaciones:",
+   "values": [
+    "51.382.005"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Baja neta de bienes de uso e intangibles",
+   "lado": null,
+   "page": 6,
+   "section": "Flujos de efectivo de las operaciones / Superávit del ejercicio 119.274.273 / Ajustes para conciliar el resultado con el efectivo generado por las / operaciones:",
+   "values": [
+    "272.336.857"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ajuste revaluación según R.T.",
+   "lado": null,
+   "page": 6,
+   "section": "Flujos de efectivo de las operaciones / Superávit del ejercicio 119.274.273 / Ajustes para conciliar el resultado con el efectivo generado por las / operaciones:",
+   "values": [
+    "351.563.204"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Terrenos y edificios",
+   "lado": "expense",
+   "page": 17,
+   "section": "ANEXO I",
+   "values": [
+    "933.414.389",
+    "351.563.204 (1)",
+    "(7.930.480)",
+    "1.277.047.113",
+    "8.539.781",
+    "436.855",
+    "8.976.636",
+    "1.268.070.477",
+    "924.874.608"
+   ],
+   "columns": [
+    "Cuenta principal",
+    "Costo: Al comienzo del ejercicio",
+    "Costo: Aumentos",
+    "Costo: Disminuciones",
+    "Costo: Al cierre del ejercicio",
+    "Depreciaciones acumuladas: Al comienzo del ejercicio",
+    "Depreciaciones acumuladas: Aumentos",
+    "Depreciaciones acumuladas: Al cierre del ejercicio",
+    "Valor residual 30/06/2019",
+    "Valor residual 30/06/2018"
+   ]
+  },
+  {
+   "label": "Instalaciones",
+   "lado": "expense",
+   "page": 17,
+   "section": "ANEXO I",
+   "values": [
+    "43.585.062",
+    "1.063.280",
+    "-",
+    "44.648.342",
+    "33.439.075",
+    "232.042",
+    "33.671.117",
+    "10.977.225",
+    "10.145.987"
+   ],
+   "columns": [
+    "Cuenta principal",
+    "Costo: Al comienzo del ejercicio",
+    "Costo: Aumentos",
+    "Costo: Disminuciones",
+    "Costo: Al cierre del ejercicio",
+    "Depreciaciones acumuladas: Al comienzo del ejercicio",
+    "Depreciaciones acumuladas: Aumentos",
+    "Depreciaciones acumuladas: Al cierre del ejercicio",
+    "Valor residual 30/06/2019",
+    "Valor residual 30/06/2018"
+   ]
+  },
+  {
+   "label": "Muebles y útiles",
+   "lado": "expense",
+   "page": 17,
+   "section": "ANEXO I",
+   "values": [
+    "6.936.960",
+    "214.411",
+    "-",
+    "7.151.371",
+    "2.697.478",
+    "28.153",
+    "2.725.631",
+    "4.425.740",
+    "4.239.482"
+   ],
+   "columns": [
+    "Cuenta principal",
+    "Costo: Al comienzo del ejercicio",
+    "Costo: Aumentos",
+    "Costo: Disminuciones",
+    "Costo: Al cierre del ejercicio",
+    "Depreciaciones acumuladas: Al comienzo del ejercicio",
+    "Depreciaciones acumuladas: Aumentos",
+    "Depreciaciones acumuladas: Al cierre del ejercicio",
+    "Valor residual 30/06/2019",
+    "Valor residual 30/06/2018"
+   ]
+  },
+  {
+   "label": "Máquinas y herramientas",
+   "lado": "expense",
+   "page": 17,
+   "section": "ANEXO I",
+   "values": [
+    "310.944",
+    "27.940",
+    "-",
+    "338.884",
+    "148.325",
+    "35.435",
+    "183.760",
+    "155.124",
+    "162.619"
+   ],
+   "columns": [
+    "Cuenta principal",
+    "Costo: Al comienzo del ejercicio",
+    "Costo: Aumentos",
+    "Costo: Disminuciones",
+    "Costo: Al cierre del ejercicio",
+    "Depreciaciones acumuladas: Al comienzo del ejercicio",
+    "Depreciaciones acumuladas: Aumentos",
+    "Depreciaciones acumuladas: Al cierre del ejercicio",
+    "Valor residual 30/06/2019",
+    "Valor residual 30/06/2018"
+   ]
+  },
+  {
+   "label": "Equipos de computación",
+   "lado": "expense",
+   "page": 17,
+   "section": "ANEXO I",
+   "values": [
+    "761.844",
+    "983.582",
+    "-",
+    "1.745.426",
+    "581.687",
+    "338.241",
+    "919.928",
+    "825.498",
+    "180.157"
+   ],
+   "columns": [
+    "Cuenta principal",
+    "Costo: Al comienzo del ejercicio",
+    "Costo: Aumentos",
+    "Costo: Disminuciones",
+    "Costo: Al cierre del ejercicio",
+    "Depreciaciones acumuladas: Al comienzo del ejercicio",
+    "Depreciaciones acumuladas: Aumentos",
+    "Depreciaciones acumuladas: Al cierre del ejercicio",
+    "Valor residual 30/06/2019",
+    "Valor residual 30/06/2018"
+   ]
+  },
+  {
+   "label": "Obras en curso",
+   "lado": "expense",
+   "page": 17,
+   "section": "ANEXO I",
+   "values": [
+    "4.871.783",
+    "84.862.669",
+    "-",
+    "89.734.452",
+    "-",
+    "-",
+    "-",
+    "89.734.452",
+    "4.871.783"
+   ],
+   "columns": [
+    "Cuenta principal",
+    "Costo: Al comienzo del ejercicio",
+    "Costo: Aumentos",
+    "Costo: Disminuciones",
+    "Costo: Al cierre del ejercicio",
+    "Depreciaciones acumuladas: Al comienzo del ejercicio",
+    "Depreciaciones acumuladas: Aumentos",
+    "Depreciaciones acumuladas: Al cierre del ejercicio",
+    "Valor residual 30/06/2019",
+    "Valor residual 30/06/2018"
+   ]
+  },
+  {
+   "label": "Marcas y patentes",
+   "lado": "expense",
+   "page": 18,
+   "section": "Estados contables al 30 de junio de 2019 / Anexo II / Estados contables al 30 de junio de 2019 y 2018 / Evolución de los activos intangibles / (Expresadas en pesos - Nota 1)",
+   "values": [
+    "127.180",
+    "49.000",
+    "-",
+    "176.180",
+    "115.612",
+    "9.800",
+    "-",
+    "125.412",
+    "50.768",
+    "11.568"
+   ],
+   "columns": [
+    "Cuenta principal",
+    "Costo: Al comienzo del ejercicio",
+    "Costo: Aumentos",
+    "Costo: Disminuciones",
+    "Costo: Al cierre del ejercicio",
+    "Depreciaciones Acumuladas: Al comienzo del ejercicio",
+    "Depreciaciones Acumuladas: Aumentos",
+    "Depreciaciones Acumuladas: Disminuciones",
+    "Depreciaciones Acumuladas: Al cierre del ejercicio",
+    "Valor residual 30/06/2019",
+    "Valor residual 30/06/2018"
+   ]
+  },
+  {
+   "label": "Jugadores",
+   "lado": "expense",
+   "page": 18,
+   "section": "Estados contables al 30 de junio de 2019 / Anexo II / Estados contables al 30 de junio de 2019 y 2018 / Evolución de los activos intangibles / (Expresadas en pesos - Nota 1)",
+   "values": [
+    "425.204.023",
+    "233.796.753",
+    "(275.518.976)",
+    "383.481.800",
+    "69.808.719",
+    "50.301.479",
+    "(11.112.599)",
+    "108.997.599",
+    "274.484.201",
+    "355.395.304"
+   ],
+   "columns": [
+    "Cuenta principal",
+    "Costo: Al comienzo del ejercicio",
+    "Costo: Aumentos",
+    "Costo: Disminuciones",
+    "Costo: Al cierre del ejercicio",
+    "Depreciaciones Acumuladas: Al comienzo del ejercicio",
+    "Depreciaciones Acumuladas: Aumentos",
+    "Depreciaciones Acumuladas: Disminuciones",
+    "Depreciaciones Acumuladas: Al cierre del ejercicio",
+    "Valor residual 30/06/2019",
+    "Valor residual 30/06/2018"
+   ]
+  },
+  {
+   "label": "Amortización de activos intangibles",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "50.311.279",
+    "-",
+    "-",
+    "-",
+    "50.311.279"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Costo por derechos de formación",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "1.016.909",
+    "-",
+    "-",
+    "-",
+    "1.016.909"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Costo de venta de jugadores",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "343.142.998",
+    "-",
+    "-",
+    "-",
+    "343.142.998"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Depreciación de bienes de uso",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "-",
+    "-",
+    "367.090",
+    "703.636",
+    "1.070.726"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Derechos de imagen",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "16.282.011",
+    "-",
+    "-",
+    "-",
+    "16.282.011"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Desvalorización plantel",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "15.735.765",
+    "-",
+    "-",
+    "-",
+    "15.735.765"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Gastos de entrenamiento",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "13.529.362",
+    "-",
+    "-",
+    "-",
+    "13.529.362"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Gastos de mantenimiento y conservación",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "-",
+    "10.127.311",
+    "-",
+    "15.561.645",
+    "25.688.956"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Gastos de oficina",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "-",
+    "-",
+    "2.275.638",
+    "-",
+    "2.275.638"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Gastos de prensa",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "-",
+    "-",
+    "2.791.996",
+    "-",
+    "2.791.996"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Gastos diversos",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "4.500.039",
+    "1.908.505",
+    "4.470.482",
+    "1.086.493",
+    "11.965.519"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Gastos legales y judiciales",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "-",
+    "-",
+    "17.568.670",
+    "-",
+    "17.568.670"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Gastos y comisiones bancarias",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "-",
+    "-",
+    "17.342.759",
+    "-",
+    "17.342.759"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Honorarios y retribuciones por servicios",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "-",
+    "6.559.987",
+    "419.564",
+    "-",
+    "6.979.551"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Hospedaje y concentración",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "22.055.724",
+    "-",
+    "-",
+    "-",
+    "22.055.724"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Impuestos, tasas y contribuciones",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "-",
+    "-",
+    "-",
+    "1.371.420",
+    "1.371.420"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Organización de partidos",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "37.412.522",
+    "-",
+    "-",
+    "-",
+    "37.412.522"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Préstamos y transferencias de jugadores",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "193.729.109",
+    "-",
+    "-",
+    "-",
+    "193.729.109"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Primas y premios",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "37.100.208",
+    "-",
+    "-",
+    "-",
+    "37.100.208"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Seguridad y vigilancia",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "7.219.979",
+    "-",
+    "-",
+    "1.932.182",
+    "9.152.161"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "1.589.337",
+    "-",
+    "25.000",
+    "701.569",
+    "2.315.906"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Servicios públicos",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "-",
+    "-",
+    "138.462",
+    "5.983.068",
+    "6.121.530"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Sueldos y cargas sociales",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "160.220.739",
+    "30.116.011",
+    "13.779.498",
+    "7.974.277",
+    "212.090.525"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  },
+  {
+   "label": "Viajes",
+   "lado": "expense",
+   "page": 23,
+   "section": "ANEXO V / Gastos",
+   "values": [
+    "47.533.316",
+    "768.832",
+    "440.114",
+    "-",
+    "48.742.262"
+   ],
+   "columns": [
+    "Rubros",
+    "Fútbol profesional 2019",
+    "Actividades deportivas y culturales 2019",
+    "Administración 2019",
+    "Estadio y predios 2019",
+    "Total 2019"
+   ]
+  }
+ ]
+}

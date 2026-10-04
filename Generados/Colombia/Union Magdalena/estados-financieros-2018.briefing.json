@@ -1,0 +1,1794 @@
+{
+  "club": "union-magdalena",
+  "year": 2018,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Union Magdalena/estados-financieros-2018.md",
+  "generatedAt": "2026-09-30T01:19:55.178Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 146,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 41,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 3,
+      "section": "UNION MAGDALENA S.A. / ESTADO DE SITUACION FINANCIERA INDIVIDUAL / ACTIVO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Efectivo y equivalente al efectivo",
+          "values": [
+            "1,494,693",
+            "975,556",
+            "519,137"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas Comerciales por Cobrar y Otras Cuentsa por cobrar",
+          "values": [
+            "490,154",
+            "824,831",
+            "-334,677"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVOS CORRIENTES",
+          "values": [
+            "1,984,847",
+            "1,800,387",
+            "184,460"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propiedad, Planta y Equipo",
+          "values": [
+            "2,280,256",
+            "1,107,762",
+            "1,172,494"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciacion de Propiedad, Planta y Equipo",
+          "values": [
+            "-396,657",
+            "-316,157",
+            "-80,500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos Diferidos 8",
+          "values": [
+            "100,808",
+            "-100,808"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activo Intangible",
+          "values": [
+            "32,980",
+            "58,987",
+            "-26,007"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "TOTAL ACTIVOS NO CORRIENTE",
+          "values": [
+            "1,916,579",
+            "951,400",
+            "965,179"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVOS",
+          "values": [
+            "3,901,426",
+            "2,751,787",
+            "1,149,639"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "PASIVOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Obligaciones Financieras",
+          "values": [
+            "419,425",
+            "476,609",
+            "-57,184"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por Pagar comerciaes y Otras Cuentas por Pagar",
+          "values": [
+            "400,621",
+            "559,624",
+            "-159,003"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos por Pagar",
+          "values": [
+            "344,984",
+            "278,772",
+            "66,212"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros Pasivos no Financieros",
+          "values": [
+            "1,231,449",
+            "502,756",
+            "728,693"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASIVO CORRIENTE",
+          "values": [
+            "2,458,798",
+            "1,879,608",
+            "579,190"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto diferido por pagar",
+          "values": [
+            "159,329",
+            "73,279",
+            "86,050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obligaciones Financieras a L.P.",
+          "values": [
+            "638,889",
+            "986,360",
+            "-347,471"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Pasivos No Financieros",
+          "values": [
+            "470,939",
+            "578,843",
+            "-107,904"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASIVO NO CORRIENTE",
+          "values": [
+            "1,269,157",
+            "1,638,482",
+            "-369,325"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASIVO",
+          "values": [
+            "3,727,955",
+            "3,518,090",
+            "209,865"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "PATRIMONIO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ganancias y Perdidas Acumuladas",
+          "values": [
+            "-2,125,549",
+            "-2,753,792",
+            "628,243"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ganancia y Perdidas Acum por Adopcion Niif",
+          "values": [
+            "-691,029",
+            "-590,221",
+            "-100,808"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utilidad del Ejercicio",
+          "values": [
+            "285,742",
+            "628,243",
+            "-342,501"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ori-Superavit por revaluacion 23 612,230",
+          "values": [
+            "612,230"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PATRIMONIO",
+          "values": [
+            "173,471",
+            "-766,303",
+            "939,774"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASIVO MAS PATRIMONIO",
+          "values": [
+            "3,901,426",
+            "2,751,787",
+            "1,149,639"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "UNION MAGDALENA S.A. / ESTADO DE RESULTADO INTEGRAL / INGRESOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(+) Otros Ingresos",
+          "values": [
+            "113,286",
+            "135,632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Gastos Operacionales",
+          "values": [
+            "-5,400,542",
+            "-3,382,177"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Gastos Administrativos y Otros Gastos",
+          "values": [
+            "-1,069,690",
+            "-765,228"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 4,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(+) Ingresos Financieros",
+          "values": [
+            "66,916",
+            "77,061"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Gastos Financieros",
+          "values": [
+            "-126,104",
+            "-317,491"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "UNION MAGDALENA S.A.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Mas Aumento cuentas por pagar",
+          "values": [
+            "-159,003"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento impuestos,Gravamenes y tasas",
+          "values": [
+            "66,212"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Flujos de efectivo por actividades de inversión:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Menos Aumento de Impuesto Diferido",
+          "values": [
+            "100,808"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Menos Aumento de intangible",
+          "values": [
+            "26,007"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "+ / Flujos de efectivo por actividades de financiación:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aumento o Disminucion neto de efectivo",
+          "values": [
+            "519,137"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo y Equivalente al efec. al inicio del periodo",
+          "values": [
+            "975,556"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo y equivalente al efec. al final del periodo",
+          "values": [
+            "1,494,693"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "a)         In s p e c c ió n d e           lo s t ra b a jo s e je c u t a d o s ; / tota l de          s e rv ic io s a p re s t a r; o / e l p o rc e n t a je d e l s e rv ic io p re s t a d o h a s t a la fe c h a . / pase de acá. / Dic. 31 de 2018              Dic 31 de 2017                     Variación",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Efectivo en Caja",
+          "values": [
+            "3,250",
+            "6,278",
+            "-3,028"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos 14,061",
+          "values": [
+            "13,397"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuenta corriente colpatria No. 7241003242 4,503",
+          "values": [
+            "3,841"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuenta corriente colpatria No. 7241003811",
+          "values": [
+            "9,558",
+            "2,533",
+            "7,025"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuenta de Ahorro",
+          "values": [
+            "1,477,382",
+            "968,614",
+            "508,768"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cuenta de ahorros colpatria No. 7242007792",
+          "values": [
+            "284,177",
+            "371,782",
+            "-87,605"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuenta de ahorros colpatria No. 7242013755 951,530 -",
+          "values": [
+            "951,530"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALES",
+          "values": [
+            "1,494,693",
+            "975,556",
+            "519,137"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": "C O B R A R",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "C uentas Por C obrar Entidades Reguladoras",
+          "values": [
+            "218,896",
+            "543,890",
+            "-324,994"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipos y Avances 64,203",
+          "values": [
+            "64,203"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "C uentas Por C obrar a Trabajadores",
+          "values": [
+            "50,661",
+            "48,758",
+            "1,903"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudores Varios",
+          "values": [
+            "6,820",
+            "82,882",
+            "-76,062"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carlos zuñiga",
+          "values": [
+            "3,250",
+            "75,000",
+            "-71,750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudores menores",
+          "values": [
+            "7,882",
+            "-7,882"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "N O T A 7 . P R O P IE D A D , P L A N T A        Y E Q U IP O S / NOTA 7A. PROPIEDAD, PLANTA Y EQUIPOS -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terrenos Rurales",
+          "values": [
+            "800,000",
+            "250,000",
+            "550,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub - Total",
+          "values": [
+            "800,000",
+            "250,000",
+            "550,000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contruciones En curso",
+          "values": [
+            "536,610",
+            "140,419",
+            "396,191"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipos",
+          "values": [
+            "170,449",
+            "97,619",
+            "72,830"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proyecto sede deportiva",
+          "values": [
+            "366,161",
+            "42,800",
+            "323,361"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub - Total",
+          "values": [
+            "536,610",
+            "140,419",
+            "396,191"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depreciación Acumulada",
+          "values": [
+            "-28,750",
+            "-13,750",
+            "-15,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub - Total",
+          "values": [
+            "271,250",
+            "286,250",
+            "-15,000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Maquinaria y Equipo",
+          "values": [
+            "41,613",
+            "33,370",
+            "8,243"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria y Equipo",
+          "values": [
+            "41,613",
+            "33,370",
+            "8,243"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación Acumulada",
+          "values": [
+            "-28,787",
+            "-27,587",
+            "-1,200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub - Total",
+          "values": [
+            "12,826",
+            "5,783",
+            "7,043"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Equipo De Oficina",
+          "values": [
+            "68,079",
+            "57,869",
+            "10,210"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Oficina",
+          "values": [
+            "68,079",
+            "57,869",
+            "10,210"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación Acumulada",
+          "values": [
+            "-43,353",
+            "-40,801",
+            "-2,552"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub - Total",
+          "values": [
+            "24,726",
+            "17,068",
+            "7,658"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "Equipo De Computacion y Comunicación / 26,887            20,342          6,545",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Equipo medico Cientifico 6,049",
+          "values": [
+            "6,049"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo Instrumental 6,049",
+          "values": [
+            "6,049"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depreciación Acumulada",
+          "values": [
+            "-276,679",
+            "-215,526",
+            "-61,153"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub - Total",
+          "values": [
+            "29,083",
+            "90,236",
+            "-61,153"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Propiedad, Planta y Equipo",
+          "values": [
+            "2,085,000",
+            "417,343",
+            "24,998"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciacion Acumulada",
+          "values": [
+            "-396,657",
+            "-302,407",
+            "-65,362"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gran Total Propiedad Planta y Equipo",
+          "values": [
+            "1,688,343",
+            "114,936",
+            "-40,364"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 35,
+      "section": "Dic. 31 de 2018                 Dic 31 de 2017                       Variación",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Proveedores",
+          "values": [
+            "80,577",
+            "98,900",
+            "-18,323"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alex Blanco 6,736",
+          "values": [
+            "6,736"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 35,
+      "section": "cuantias",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Retencion en la Fuente",
+          "values": [
+            "11,698",
+            "13,356",
+            "-1,658"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acreedores Varios",
+          "values": [
+            "302,705",
+            "299,113",
+            "3,592"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 36,
+      "section": "N O T A      1 2 . IM P U E S T O S             P O R      P A G A R",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Salarios por Pagar",
+          "values": [
+            "2,205",
+            "6,426",
+            "-4,221"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C esantías",
+          "values": [
+            "37,404",
+            "28,270",
+            "9,134"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses sobre las cesantías",
+          "values": [
+            "4,489",
+            "3,392",
+            "1,097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Primas de Servicios",
+          "values": [
+            "1,773",
+            "-1,773"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 36,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pensiones por pagar",
+          "values": [
+            "9,561"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes fondos pens.y prima",
+          "values": [
+            "13,006",
+            "-13,006"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 37,
+      "section": "TORNEO       RENOVACION / AUXILIO HOTELERO / CONCEPTO                                                         AGUILA 2015- CONTRATO WIN / SPORT 2022-2026",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "VALOR A AMORTIZAR DEENERO DE 2019 A DICIEMBRE 2019",
+          "values": [
+            "131,617,391",
+            "239,521,164",
+            "860,310,433",
+            "1,231,448,989"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VALOR POR AMORTIZAR NO CORRIENTE 16,892,574 454,046,479",
+          "values": [
+            "470,939,053"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 38,
+      "section": "Dic. 31 de 2018                          Dic 31 de 2017                    Variación",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Impuesto diferido por pagar",
+          "values": [
+            "159.329",
+            "73.279",
+            "86.050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALES",
+          "values": [
+            "159.329",
+            "73.279",
+            "86.050"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 38,
+      "section": "Depreciacion Acumulada / Diferencia / Tipo de                        Im puesto Diferido / diferencia                            Activo / Deducible",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2015-01 -32,069,460.00 0 32,069,460 159235 Temporaria",
+          "values": [
+            "-32,069,460",
+            "10,903,616"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2015-12 -93,221,780.00 0 93,221,780 159235 Temporaria",
+          "values": [
+            "-93,221,780",
+            "31,695,405"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2016-12 -154,374,056.00 0 154,374,056 159235 Temporaria",
+          "values": [
+            "-154,374,056",
+            "52,487,179"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2017-12 -215,526,332.00 0 215,526,332 159235 Temporaria",
+          "values": [
+            "-215,526,332",
+            "-73,278,953"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2018-05 -241,006,515.00 0 241,006,515 159235 Temporaria",
+          "values": [
+            "-241,006,515",
+            "-79,532,150"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2018-06 -246,102,542.00 0 246,102,542 159235 Temporaria",
+          "values": [
+            "-246,102,542",
+            "-81,213,839"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2018-11 -271,582,677.00 0 271,582,677 159235 Temporaria",
+          "values": [
+            "-271,582,677",
+            "-89,622,283"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2018-12 -276,678,704.00 0 276,678,704 159235 Temporaria",
+          "values": [
+            "-276,678,704",
+            "-91,304,000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "N O T A        1 8 . C A P IT A L",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "C apital por Suscribir",
+          "values": [
+            "-1,131,800",
+            "-1,274,410",
+            "142,610"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C apital Suscrito",
+          "values": [
+            "1,139,140",
+            "996,530",
+            "142,610"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Acciones autorizadas",
+          "values": [
+            "227,094",
+            "10,000",
+            "2,270,940,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acciones por Suscribir",
+          "values": [
+            "-113,180",
+            "10,000",
+            "-1,131,800,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acciones Suscrita",
+          "values": [
+            "113,914",
+            "10,000",
+            "1,139,140,000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "NOTA 20. REVALORIZACION DE PATRIMONIO / NOTA 21. GANANCIAS O PERDIDAS ACUMULADAS / NOTA 22. GANANCIAS O PERDIDAS ACUMULADAS POR ADOPCION NIIF / VL NOMINA / # ACCIONES                        VL NOM ACCION                               TOTAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ganancia o Perdidas Acum por Adopcion Niif",
+          "values": [
+            "-691,029",
+            "-590,221",
+            "-100,808"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALES",
+          "values": [
+            "-691,029",
+            "-590,221",
+            "-100,808"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "NOTA 23. ORI-SUPERAVIT DE REVALUACION",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Revaluacion de Terrenos 680,256",
+          "values": [
+            "680,256"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Revaluacion de Terrenos - Imp Diferido -68,026",
+          "values": [
+            "-68,026"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALES 680,256",
+          "values": [
+            "680,256"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": "N O T A   2 4 . IN G R E S O S D E        A C T IV ID A D E S      O R D IN A R IA S",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Participacion federacion colombiana de futbol 485,600",
+          "values": [
+            "485,600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta de Articulos Deportivos",
+          "values": [
+            "77,798",
+            "12,112",
+            "65,686"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros ingresos de partido",
+          "values": [
+            "66,190"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALES",
+          "values": [
+            "7,049,990",
+            "5,284,171",
+            "1,699,629"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "N O T A        2 5 . O T R O S       IN G R E S O S / N O T A        2 6 . G A S T O S O P E R A C IO N A L E S",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos del Personal",
+          "values": [
+            "3,250,748",
+            "2,024,741",
+            "1,226,007"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos 193,835",
+          "values": [
+            "193,835"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arriendos",
+          "values": [
+            "192,226",
+            "111,680",
+            "80,546"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "577,808                       555,258",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "C ontribuciones y Afiliaciones",
+          "values": [
+            "22,550"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "41,378",
+            "38,397",
+            "2,981"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Legales",
+          "values": [
+            "13,153",
+            "5,795",
+            "7,358"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento 1,300",
+          "values": [
+            "1,300"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Viaje",
+          "values": [
+            "230,720",
+            "282,471",
+            "-51,751"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizaciones Derechos Deportivos",
+          "values": [
+            "113,988",
+            "58,987"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "Dic. 31 de 2018          Dic. 31 de 2017                   variación",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gasto de Personal",
+          "values": [
+            "462,732",
+            "349,972",
+            "112,760"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "92,298",
+            "45,840",
+            "46,458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "116,035",
+            "66,554",
+            "49,481"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "14,769",
+            "8,672",
+            "6,097"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "94,931",
+            "66,629",
+            "28,302"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Legales",
+          "values": [
+            "3,859",
+            "7,569",
+            "-3,710"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento y Reparaciones",
+          "values": [
+            "38,337",
+            "25,165",
+            "13,172"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "81,367                    80,413",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos Bancarios",
+          "values": [
+            "22,468",
+            "25,100",
+            "-2,632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Extraordinarios",
+          "values": [
+            "34,077",
+            "15,111",
+            "18,966"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Diversos",
+          "values": [
+            "7,847",
+            "-7,847"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALES",
+          "values": [
+            "1,069,690",
+            "765,228",
+            "304,462"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "N O T A    2 8 . IN G R E S O S Y             G A S T O S         F IN A N C IE R O S",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos por Intereses",
+          "values": [
+            "66,916",
+            "77,061",
+            "-10,145"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por Intereses",
+          "values": [
+            "-126,104",
+            "-317,491",
+            "191,387"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 3,
+      "section": "UNION MAGDALENA S.A. / ESTADO DE SITUACION FINANCIERA INDIVIDUAL / ACTIVO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL ACTIVOS CORRIENTES",
+      "target": "1,984,847",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "UNION MAGDALENA S.A. / ESTADO DE SITUACION FINANCIERA INDIVIDUAL / ACTIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL ACTIVOS CORRIENTES",
+      "target": "1,800,387",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "UNION MAGDALENA S.A. / ESTADO DE SITUACION FINANCIERA INDIVIDUAL / ACTIVO",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL ACTIVOS CORRIENTES",
+      "target": "184,460",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL ACTIVOS NO CORRIENTE",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL ACTIVOS",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PASIVO CORRIENTE",
+      "target": "2,458,798",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-1227349"
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PASIVO CORRIENTE",
+      "target": "1,879,608",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-1376852"
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL PASIVO CORRIENTE",
+      "target": "579,190",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "149503"
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PASIVO NO CORRIENTE",
+      "target": "1,269,157",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PASIVO NO CORRIENTE",
+      "target": "1,638,482",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL PASIVO NO CORRIENTE",
+      "target": "-369,325",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL PASIVO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": "PATRIMONIO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PATRIMONIO",
+      "target": "173,471",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-2092077"
+    },
+    {
+      "page": 3,
+      "section": "PATRIMONIO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PATRIMONIO",
+      "target": "-766,303",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-1949467"
+    },
+    {
+      "page": 3,
+      "section": "PATRIMONIO",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL PATRIMONIO",
+      "target": "939,774",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-754840"
+    },
+    {
+      "page": 3,
+      "section": "PATRIMONIO",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL PASIVO MAS PATRIMONIO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 29,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALES",
+      "target": "1,494,693",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-258986"
+    },
+    {
+      "page": 29,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALES",
+      "target": "975,556",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-603774"
+    },
+    {
+      "page": 29,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTALES",
+      "target": "519,137",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-606742"
+    },
+    {
+      "page": 31,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Total Propiedad, Planta y Equipo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 38,
+      "section": "Dic. 31 de 2018                          Dic 31 de 2017                    Variación",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALES",
+      "target": "159.329",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 38,
+      "section": "Dic. 31 de 2018                          Dic 31 de 2017                    Variación",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALES",
+      "target": "73.279",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 38,
+      "section": "Dic. 31 de 2018                          Dic 31 de 2017                    Variación",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTALES",
+      "target": "86.050",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 40,
+      "section": "NOTA 20. REVALORIZACION DE PATRIMONIO / NOTA 21. GANANCIAS O PERDIDAS ACUMULADAS / NOTA 22. GANANCIAS O PERDIDAS ACUMULADAS POR ADOPCION NIIF / VL NOMINA / # ACCIONES                        VL NOM ACCION                               TOTAL",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALES",
+      "target": "-691,029",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 40,
+      "section": "NOTA 20. REVALORIZACION DE PATRIMONIO / NOTA 21. GANANCIAS O PERDIDAS ACUMULADAS / NOTA 22. GANANCIAS O PERDIDAS ACUMULADAS POR ADOPCION NIIF / VL NOMINA / # ACCIONES                        VL NOM ACCION                               TOTAL",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALES",
+      "target": "-590,221",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 40,
+      "section": "NOTA 20. REVALORIZACION DE PATRIMONIO / NOTA 21. GANANCIAS O PERDIDAS ACUMULADAS / NOTA 22. GANANCIAS O PERDIDAS ACUMULADAS POR ADOPCION NIIF / VL NOMINA / # ACCIONES                        VL NOM ACCION                               TOTAL",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTALES",
+      "target": "-100,808",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 40,
+      "section": "NOTA 23. ORI-SUPERAVIT DE REVALUACION",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALES 680,256",
+      "target": "680,256",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-68026"
+    },
+    {
+      "page": 41,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALES",
+      "target": "7,049,990",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-6983800"
+    },
+    {
+      "page": 43,
+      "section": "81,367                    80,413",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALES",
+      "target": "1,069,690",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-1005298"
+    },
+    {
+      "page": 43,
+      "section": "81,367                    80,413",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALES",
+      "target": "765,228",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-732864"
+    },
+    {
+      "page": 43,
+      "section": "81,367                    80,413",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTALES",
+      "target": "304,462",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-288128"
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/union-magdalena-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"union-magdalena\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "14 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

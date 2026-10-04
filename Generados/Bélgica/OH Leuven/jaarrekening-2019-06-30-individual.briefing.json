@@ -1,0 +1,627 @@
+{
+  "club": "oh-leuven",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:55:23.228Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 171,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 17,
+  "relevantTableCount": 6,
+  "tables": [
+    {
+      "page": 5,
+      "section": "ACTIVA / OPRICHT INGSKOSTEN 6.1 / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "285/8",
+          "values": [
+            "30.090",
+            "33.470"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "29/58",
+          "values": [
+            "4.921.139",
+            "6.549.483"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "40 529.510 1.084.589 / 41 916.328 835.084 / 50/53 / 50 / 51/53",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "2.822.254",
+            "3.759.645"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "633.605",
+            "826.836"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "13.773.471",
+            "15.260.543"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Nr. BE 0668.426.703 VOL 3.2 / PASSIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "EIGEN VERMOGEN 10/15",
+          "values": [
+            "2.930.847",
+            "10.790.917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaal 6.7.1 |",
+          "values": [
+            "24.712.000",
+            "24.712.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geplaatst kapitaal",
+          "values": [
+            "24.712.000",
+            "24.712.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "VOORZIENINGEN EN UITGESTELDE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "BELASTINGEN",
+          "values": [
+            "109.020",
+            "109.020"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorzieningen voor risico's en kosten 160/5",
+          "values": [
+            "109.020",
+            "109.020"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 109.020 / Uitgestelde belastingen 168",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "10.733.604",
+            "4.360.606"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 69 |",
+          "values": [
+            "8.045.372"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "8.045.372"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "Schulden op meer dan één jaar die binnen het jaar / vervallen 42 / Financiële schulden 43 / Kredietinstellingen 430/8 / Overige leningen 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "1.901.672",
+            "2.563.632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "1.901.672",
+            "2.563.632"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 / Schulden met betrekking tot belastingen,",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "bezoldigingen en sociale lasten 69 |",
+          "values": [
+            "296.555",
+            "582.566"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "3.810"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "296.555",
+            "578.756"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige schulden 47/48",
+          "values": [
+            "95.613",
+            "71.976"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 6.9 | 492/3",
+          "values": [
+            "394.393",
+            "1.142.433"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "13.773.471",
+            "15.260.543"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Nr. BE 0668.426.703 VOL 6.2.4 / GOODWILL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "boekjaar 8123",
+          "values": [
+            "125.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR",
+          "values": [
+            "125.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "STAAT VAN HET KAPITAAL EN DE AANDEELHOUDERSSTRUCTUUR / STAAT VAN HET KAPITAAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Geplaatst kapitaal per einde van het boekjaar 100P XXXXXXKKKK",
+          "values": [
+            "24.712.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geplaatst kapitaal per einde van het boekjaar",
+          "values": [
+            "24.712.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "Nr. BE 0668.426.703 VOL 6.9 / SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN / SOCIALE LASTEN / OVERLOPENDE REKENINGEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Prov bonus 2019",
+          "values": [
+            "30.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Over te dragen abonnementen",
+          "values": [
+            "364.393"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 25,
+      "section": "Nr. BE 0668.426.703 VOL 6.12 / OPBRENGSTEN EN KOSTEN VAN UITZONDERLIJKE OMVANG OF UITZONDERLIJKE MATE VAN VOORKOMEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "NIET-RECURRENTE OPBRENGSTEN",
+          "values": [
+            "1.179"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet-recurrente bedrijfsopbrengsten 76A",
+          "values": [
+            "1.179"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 25,
+      "section": "Terugneming van waardeverminderingen op financiële vaste activa 761 / Terugneming van voorzieningen voor uitzonderlijke financiële risico's / en kosten 7621 / Meerwaarden bij de realisatie van financiële vaste activa 7631 / Andere niet-recurrente financiële opbrengsten 769",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "NIET-RECURRENTE KOSTEN",
+          "values": [
+            "38.126",
+            "55.293"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet-recurrente bedrijfskosten 66A",
+          "values": [
+            "38.126",
+            "55.293"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 26,
+      "section": "Nr. BE 0668.426.703 VOL 6.13 / BELASTINGEN EN TAKSEN / BELASTINGEN OP HET RESULTAAT",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Actieve latenties 9141",
+          "values": [
+            "13.623.817"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gecumuleerde fiscale verliezen die aftrekbaar zijn van latere belastbare winsten 9142",
+          "values": [
+            "13.623.817"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "BELASTING OP DE TOEGEVOEGDE WAARDE EN / BELASTINGEN TEN LASTE VAN DERDEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aan de onderneming (aftrekbaar) 9145",
+          "values": [
+            "548.894",
+            "1.012.413"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Door de onderneming 9146",
+          "values": [
+            "203.843",
+            "665.873"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "3001 LEUVEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Oprichtingskosten",
+          "values": [
+            "1.708,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immateriële vaste activa",
+          "values": [
+            "2.775.830,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiële vaste activa",
+          "values": [
+            "6.044.702,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële vaste activa",
+          "values": [
+            "30.090,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorraden",
+          "values": [
+            "19.441,87"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorderingen op ten hoogste 1 jaar",
+          "values": [
+            "1.445.838,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Liquide middelen",
+          "values": [
+            "2.822.254,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen",
+          "values": [
+            "633.604,97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal",
+          "values": [
+            "13.773.470,75"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Passiva 30/06/2019 / (in Euro)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kapitaal",
+          "values": [
+            "24.712.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overgedragen winst",
+          "values": [
+            "-21.781.152,78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorzieningen",
+          "values": [
+            "109.019,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan 1 jaar",
+          "values": [
+            "8.045.372,19"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op ten hoogste 1 jaar",
+          "values": [
+            "2.293.839,17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen",
+          "values": [
+            "394.392,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal",
+          "values": [
+            "13.773.470,75"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Omzet",
+          "values": [
+            "2.800.761,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handelsgoederen",
+          "values": [
+            "-158.750,48"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diensten en diverse goederen",
+          "values": [
+            "-3.422.019,09"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Personeelskosten",
+          "values": [
+            "-5.341.596,63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen & waardeverminderingen",
+          "values": [
+            "-1.403.146,47"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere bedrijfskosten",
+          "values": [
+            "-115.145,74"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nier-recurrente bedrijfskosten",
+          "values": [
+            "-38.764,39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verlies uit gewone bedrijfsoefening",
+          "values": [
+            "-7.678.660,98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financieel resultaat",
+          "values": [
+            "-182.587,73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verlies van het boekjaar voor belasting",
+          "values": [
+            "-7.861.248,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uitzonderlijke opbrengsten",
+          "values": [
+            "1.178,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verlies van het boekjaar",
+          "values": [
+            "-7.860.069,88"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/oh-leuven-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"oh-leuven\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

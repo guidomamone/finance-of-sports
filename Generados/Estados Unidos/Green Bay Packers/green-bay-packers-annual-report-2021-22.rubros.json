@@ -1,0 +1,94 @@
+{
+ "md": "Clubes/Estados Unidos/Green Bay Packers/green-bay-packers-annual-report-2021-22.md",
+ "pdf": "Clubes/Estados Unidos/Green Bay Packers/green-bay-packers-annual-report-2021-22.pdf",
+ "club": "green-bay-packers",
+ "year": 2022,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T22:01:26.695Z",
+ "tieOuts": {
+  "cierran": 2,
+  "noCierran": 0
+ },
+ "warnings": [
+  "6 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 7,
+  "notasUsadas": []
+ },
+ "ladoConocido": 7,
+ "rubros": [
+  {
+   "label": "National",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "values": [
+    347270
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Local",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "values": [
+    231741
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Player costs",
+   "lado": "expense",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "values": [
+    280874
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Team",
+   "lado": "expense",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "values": [
+    55353
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Sales, marketing & fan engagement",
+   "lado": "expense",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "values": [
+    67863
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Facilities, net*",
+   "lado": "expense",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "values": [
+    27111
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "General & administrative",
+   "lado": "expense",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "values": [
+    70084
+   ],
+   "origen": "estado 1"
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "pdf": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2009.pdf",
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2009.md",
+ "generado": "2026-10-01T19:30:40.325Z",
+ "estado": "ok",
+ "clubId": "catolica-cl",
+ "year": 2009,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": false,
+   "detalle": "ingresos 0 - gastos 0 ± financiero 0 ± impuesto 194.459 no da el impreso -727.914"
+  },
+  {
+   "nombre": "documento del año 2010",
+   "ok": false,
+   "detalle": "ingresos de 2009: 0 en este documento y 459.045 en estados-financieros-2010.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2008: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0,
+  "gastos": 0,
+  "financiero": 0,
+  "impuesto": 194.459,
+  "resultadoImpreso": -727.914,
+  "resultadoParaCargar": -727.914,
+  "lecturaSignos": null
+ },
+ "lineas": [],
+ "financiero": [],
+ "impuesto": [
+  {
+   "etiqueta": "Impuesto a la renta",
+   "M": 194.459,
+   "linea": 46
+  }
+ ]
+}

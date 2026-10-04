@@ -1,0 +1,443 @@
+{
+ "md": "Clubes/Rusia/Baltika Kaliningrad/2022-auditorskoe-zaklyuchenie.md",
+ "generatedAt": "2026-09-30T13:16:04.520Z",
+ "rubros": [
+  {
+   "label": "переоценка имущества",
+   "lado": null,
+   "page": 12,
+   "section": "Форма 0710004 с.2",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "depreciation",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1541
+  },
+  {
+   "label": "доходы, относящиеся непосредственно на увеличение капитала",
+   "lado": null,
+   "page": 12,
+   "section": "Форма 0710004 с.2",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1510
+  },
+  {
+   "label": "Вид экономической деятельности",
+   "lado": null,
+   "page": 9,
+   "section": "# Отчет о финансовых результатах",
+   "choice": "other_expenses",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "other_income",
+     0.26
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ]
+   ],
+   "tokens": 1372
+  },
+  {
+   "label": "Организация",
+   "lado": null,
+   "page": 9,
+   "section": "# Отчет о финансовых результатах",
+   "choice": "admin_general_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.41000000000000003
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "match_organisation_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1383
+  },
+  {
+   "label": "Величина капитала на 31 декабря 2020 г.",
+   "lado": null,
+   "page": 11,
+   "section": "1. Движение капитала",
+   "choice": "other_income",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_income",
+     0.64
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1575
+  },
+  {
+   "label": "дополнительный выпуск акций",
+   "lado": null,
+   "page": 12,
+   "section": "Форма 0710004 с.2",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "member_dues",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1447
+  },
+  {
+   "label": "Акционерное общество",
+   "lado": null,
+   "page": 9,
+   "section": "# Отчет о финансовых результатах",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1364
+  },
+  {
+   "label": "расходы, относящиеся непосредственно на уменьшение капитала",
+   "lado": null,
+   "page": 12,
+   "section": "Форма 0710004 с.2",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "exceptional_items",
+     0.1
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1523
+  },
+  {
+   "label": "уменьшение номинальной стоимости акций",
+   "lado": null,
+   "page": 12,
+   "section": "Форма 0710004 с.2",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "other_income",
+     0.21000000000000002
+    ],
+    [
+     "exceptional_items",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1503
+  },
+  {
+   "label": "реорганизация юридического лица",
+   "lado": null,
+   "page": 12,
+   "section": "Форма 0710004 с.2",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "exceptional_items",
+     0.18
+    ]
+   ],
+   "tokens": 1414
+  },
+  {
+   "label": "увеличение номинальной стоимости акций",
+   "lado": null,
+   "page": 12,
+   "section": "Форма 0710004 с.2",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 1503
+  },
+  {
+   "label": "уменьшение количества акций",
+   "lado": null,
+   "page": 12,
+   "section": "Форма 0710004 с.2",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1492
+  },
+  {
+   "label": "дивиденды",
+   "lado": null,
+   "page": 12,
+   "section": "Форма 0710004 с.2",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1328
+  },
+  {
+   "label": "Идентификационный номер налогоплательщика",
+   "lado": null,
+   "page": 9,
+   "section": "# Отчет о финансовых результатах",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1385
+  },
+  {
+   "label": "Прочее",
+   "lado": null,
+   "page": 11,
+   "section": "1. Движение капитала",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1446
+  },
+  {
+   "label": "Величина капитала на 31 декабря 2022 г.",
+   "lado": null,
+   "page": 12,
+   "section": "Форма 0710004 с.2",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1572
+  },
+  {
+   "label": "Изменение резервного капитала",
+   "lado": null,
+   "page": 12,
+   "section": "Форма 0710004 с.2",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1568
+  },
+  {
+   "label": "Величина капитала на 31 декабря 2021 г.",
+   "lado": null,
+   "page": 12,
+   "section": "Форма 0710004 с.2",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.15000000000000002
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1572
+  },
+  {
+   "label": "Изменение добавочного капитала",
+   "lado": null,
+   "page": 12,
+   "section": "Форма 0710004 с.2",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1518
+  }
+ ]
+}

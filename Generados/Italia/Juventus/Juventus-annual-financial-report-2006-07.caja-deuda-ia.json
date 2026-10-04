@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2006-07.md",
+ "generado": "2026-10-04T17:59:39.015Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Total assets |  | **259,466,747**",
+ "caja": {
+  "lineas": [
+   1631
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1656,
+   1663
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance principal no indica la escala explícitamente; las cifras están en euros (unidades), mientras que las notas usan €/000. La evidencia de escala es por tanto inferida a partir de las cifras del balance y no es una frase textual del documento que declare la escala. Las líneas de deuda elegidas ('Loans and other financial liabilities') pueden incluir otros pasivos financieros además de préstamos."
+}

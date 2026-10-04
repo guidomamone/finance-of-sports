@@ -1,0 +1,428 @@
+{
+ "md": "Clubes/España/Real Madrid/informe-economico-2005-2006.md",
+ "generatedAt": "2026-09-30T22:49:11.481Z",
+ "rubrosHuella": "6a5cda4b42cbd1c22e627d4c244a1f53d985368e",
+ "rubros": [
+  {
+   "label": "Ingresos de Socios y Estadio",
+   "lado": "revenue",
+   "page": 16,
+   "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+   "choice": "matchday_competition",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos de Amistosos y Competiciones Internacionales",
+   "lado": "revenue",
+   "page": 4,
+   "section": "[Página derecha] / ## Cuenta de resultados",
+   "choice": "competition_bonus",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos de Retransmisión",
+   "lado": "revenue",
+   "page": 16,
+   "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos de Marketing",
+   "lado": "revenue",
+   "page": 4,
+   "section": "[Página derecha] / ## Cuenta de resultados",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Fútbol",
+   "lado": "expense",
+   "page": 15,
+   "section": "# 18 INGRESOS Y GASTOS / ### Gastos de Personal",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de Personal Deportivo y no Deportivo",
+   "lado": "expense",
+   "page": 16,
+   "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+   "choice": "wages_squad",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Baloncesto",
+   "lado": "expense",
+   "page": 15,
+   "section": "# 18 INGRESOS Y GASTOS / ### Gastos de Personal",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Estructura",
+   "lado": "expense",
+   "page": 15,
+   "section": "# 18 INGRESOS Y GASTOS / ### Gastos de Personal",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de Operación",
+   "lado": "expense",
+   "page": 4,
+   "section": "[Página derecha] / ## Cuenta de resultados",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizaciones Ordinarias",
+   "lado": null,
+   "page": 4,
+   "section": "[Página derecha] / ## Cuenta de resultados",
+   "choice": "other_amortisation",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 4,
+   "section": "[Página derecha] / ## Cuenta de resultados",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ing. de Amistosos y Competiciones Internac.",
+   "lado": "revenue",
+   "page": 16,
+   "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+   "choice": "competition_bonus",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de aprovisionamientos",
+   "lado": "expense",
+   "page": 16,
+   "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de Operaciones",
+   "lado": "expense",
+   "page": 16,
+   "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización Ordinaria",
+   "lado": "expense",
+   "page": 16,
+   "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+   "choice": "player_amortisation",
+   "confidence": 0.37,
+   "desdeCache": true
+  },
+  {
+   "label": "Inmovilizado",
+   "lado": null,
+   "page": 15,
+   "section": "### c) Moneda extranjera",
+   "choice": "depreciation",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de explotación",
+   "lado": "expense",
+   "page": 15,
+   "section": "### c) Moneda extranjera",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos de explotación",
+   "lado": "revenue",
+   "page": 15,
+   "section": "### c) Moneda extranjera",
+   "choice": "lump_football_operations",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos extraordinarios",
+   "lado": "revenue",
+   "page": 15,
+   "section": "### c) Moneda extranjera",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuentas a cobrar",
+   "lado": null,
+   "page": 15,
+   "section": "### c) Moneda extranjera",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuentas a pagar",
+   "lado": null,
+   "page": 15,
+   "section": "### c) Moneda extranjera",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "do social",
+   "lado": null,
+   "page": 12,
+   "section": "### FONDOS PROPIOS E INTERESES DE SOCIOS EXTERNOS",
+   "choice": "member_dues",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "erva actualización R.D. 7/1996",
+   "lado": null,
+   "page": 12,
+   "section": "### FONDOS PROPIOS E INTERESES DE SOCIOS EXTERNOS",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "CIOS EXTERNOS",
+   "lado": null,
+   "page": 12,
+   "section": "### FONDOS PROPIOS E INTERESES DE SOCIOS EXTERNOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Real Madrid Club de Fútbol",
+   "lado": null,
+   "page": 15,
+   "section": "### Resultado por Sociedades",
+   "choice": "lump_football_operations",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Real Madrid Gestión de Derechos, S.L.",
+   "lado": null,
+   "page": 15,
+   "section": "### Resultado por Sociedades",
+   "choice": "broadcasting",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "[Ing]resos de Explotación*",
+   "lado": "revenue",
+   "page": 6,
+   "section": "■ Patrimonio neto / ■ Fondos propios ajustados por efecto de amortización anticipada / ■ Ingresos ordinarios / ■ Endeudamiento neto",
+   "choice": "lump_football_operations",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "[E]ndeudamiento Neto",
+   "lado": "revenue",
+   "page": 6,
+   "section": "■ Patrimonio neto / ■ Fondos propios ajustados por efecto de amortización anticipada / ■ Ingresos ordinarios / ■ Endeudamiento neto",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "[RA]TIO ENDEUDAMIENTO FACTURACIÓN",
+   "lado": "revenue",
+   "page": 6,
+   "section": "■ Patrimonio neto / ■ Fondos propios ajustados por efecto de amortización anticipada / ■ Ingresos ordinarios / ■ Endeudamiento neto",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "[Fo]ndos Propios ajustados por efecto amortización anticipada",
+   "lado": "revenue",
+   "page": 6,
+   "section": "■ Patrimonio neto / ■ Fondos propios ajustados por efecto de amortización anticipada / ■ Ingresos ordinarios / ■ Endeudamiento neto",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "[RA]TIO ENDEUDAMIENTO / FONDOS PROPIOS",
+   "lado": "revenue",
+   "page": 6,
+   "section": "■ Patrimonio neto / ■ Fondos propios ajustados por efecto de amortización anticipada / ■ Ingresos ordinarios / ■ Endeudamiento neto",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrimonio neto",
+   "lado": "revenue",
+   "page": 6,
+   "section": "[E]ndeudamiento neto sobre ingresos ordinarios y fondos propios / [Cifr]as en millones de euros",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos ordinarios",
+   "lado": "revenue",
+   "page": 6,
+   "section": "[E]ndeudamiento neto sobre ingresos ordinarios y fondos propios / [Cifr]as en millones de euros",
+   "choice": "lump_football_operations",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Endeudamiento neto",
+   "lado": "revenue",
+   "page": 6,
+   "section": "[E]ndeudamiento neto sobre ingresos ordinarios y fondos propios / [Cifr]as en millones de euros",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "erva soc. consolidadas por integración global o del ejercicio atribuido a la Soc. Dominante",
+   "lado": null,
+   "page": 12,
+   "section": "### FONDOS PROPIOS E INTERESES DE SOCIOS EXTERNOS",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.06999999999999999
+    ],
+    [
+     "member_dues",
+     0.02
+    ]
+   ],
+   "tokens": 1541
+  },
+  {
+   "label": "[Be]neficio antes de impuestos",
+   "lado": "expense",
+   "page": 21,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 986
+  },
+  {
+   "label": "Relacionados con inmovilizado",
+   "lado": null,
+   "page": 12,
+   "section": "### 10 INGRESOS A DISTRIBUIR EN VARIOS EJERCICIOS",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "depreciation",
+     0.33
+    ],
+    [
+     "other_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 1505
+  },
+  {
+   "label": "Relacionados con ing. marketing",
+   "lado": null,
+   "page": 12,
+   "section": "### 10 INGRESOS A DISTRIBUIR EN VARIOS EJERCICIOS",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1456
+  },
+  {
+   "label": "Impuesto de sociedades",
+   "lado": "expense",
+   "page": 21,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 908
+  }
+ ]
+}

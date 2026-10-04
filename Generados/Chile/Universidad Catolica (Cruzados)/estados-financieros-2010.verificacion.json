@@ -1,0 +1,287 @@
+{
+ "pdf": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2010.pdf",
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2010.md",
+ "generado": "2026-10-03T23:03:05.951Z",
+ "estado": "ok",
+ "clubId": "catolica-cl",
+ "year": 2010,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 3 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "documento del año 2011",
+   "ok": true,
+   "detalle": "ingresos de 2010: 3477.566 en este documento y 3477.566 en estados-financieros-2011.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2009",
+   "ok": null,
+   "detalle": "ingresos de 2009: 0 en estados-financieros-2009.pdf y 459.045 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2009: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 3",
+  "duda de localizar ya contestada para el club (usar-cuadro-por-segmento, \"Ingresos de actividades ordinarias\"): aceptar, en estados-financieros-2011.pdf",
+  "duda de localizar que no afecta la carga: El estado de resultado integral (b4) muestra 01-01-2010/31-12-2010 y 30-09-2009/31-12-2009.",
+  "duda de extraer que no afecta la carga: Los costos por segmento (columna totales) repiten b44 con diferencias de 1 por redondeo (L2696, L2702).",
+  "duda de extraer que no afecta la carga: Repite en la columna total renglones del estado (L2729-L2732) sin aportar desglose."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 3477.566,
+  "gastos": 7113.714,
+  "financiero": -2.719,
+  "impuesto": 747.846,
+  "resultadoImpreso": -2891.019,
+  "resultadoParaCargar": -2891.019,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ingresos por A.N.F.P.",
+   "lado": "ingreso",
+   "M": 829.131,
+   "pagina": 60,
+   "linea": 2677,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por recaudaciones y otros\""
+  },
+  {
+   "etiqueta": "Ingresos por Derechos de TV",
+   "lado": "ingreso",
+   "M": 247.703,
+   "pagina": 60,
+   "linea": 2678,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por recaudaciones y otros\""
+  },
+  {
+   "etiqueta": "Ingresos por Borderó (Recaudación Entradas)",
+   "lado": "ingreso",
+   "M": 833.101,
+   "pagina": 60,
+   "linea": 2679,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por recaudaciones y otros\""
+  },
+  {
+   "etiqueta": "Ingresos por Préstamo de Jugadores",
+   "lado": "ingreso",
+   "M": 154.792,
+   "pagina": 60,
+   "linea": 2681,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por recaudaciones y otros\""
+  },
+  {
+   "etiqueta": "Ingresos por Derechos de Solidaridad",
+   "lado": "ingreso",
+   "M": 45.878,
+   "pagina": 60,
+   "linea": 2682,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por recaudaciones y otros\""
+  },
+  {
+   "etiqueta": "Otros",
+   "lado": "ingreso",
+   "M": 53.07,
+   "pagina": 60,
+   "linea": 2691,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por recaudaciones y otros\""
+  },
+  {
+   "etiqueta": "Ingresos Cuotas Socios Fútbol",
+   "lado": "ingreso",
+   "M": 69.677,
+   "pagina": 60,
+   "linea": 2683,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos comerciales\""
+  },
+  {
+   "etiqueta": "Ingresos Matrículas de Escuelas de Fútbol",
+   "lado": "ingreso",
+   "M": 121.057,
+   "pagina": 60,
+   "linea": 2684,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos comerciales\""
+  },
+  {
+   "etiqueta": "Ingresos por Publicidad y Auspicios",
+   "lado": "ingreso",
+   "M": 1001.531,
+   "pagina": 60,
+   "linea": 2686,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos comerciales\""
+  },
+  {
+   "etiqueta": "Ingresos por Ventas de Productos Tienda UC",
+   "lado": "ingreso",
+   "M": 22.892,
+   "pagina": 60,
+   "linea": 2687,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos comerciales\""
+  },
+  {
+   "etiqueta": "Ingresos por Derechos de Merchandising",
+   "lado": "ingreso",
+   "M": 57.097,
+   "pagina": 60,
+   "linea": 2689,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos comerciales\""
+  },
+  {
+   "etiqueta": "Otros",
+   "lado": "ingreso",
+   "M": 36.418,
+   "pagina": 60,
+   "linea": 2691,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos comerciales\""
+  },
+  {
+   "etiqueta": "Otros Ingresos por función",
+   "lado": "ingreso",
+   "M": 5.219,
+   "pagina": 5,
+   "linea": 109,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Remuneraciones",
+   "lado": "gasto",
+   "M": 2620.074,
+   "pagina": 58,
+   "linea": 2598,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Gastos de Operación",
+   "lado": "gasto",
+   "M": 969.226,
+   "pagina": 58,
+   "linea": 2599,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Amortización pases jugadores profesionales",
+   "lado": "gasto",
+   "M": 1690.571,
+   "pagina": 58,
+   "linea": 2600,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Amortización Concesión",
+   "lado": "gasto",
+   "M": 151.068,
+   "pagina": 58,
+   "linea": 2601,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Costos de torneos y otros",
+   "lado": "gasto",
+   "M": 500.196,
+   "pagina": 58,
+   "linea": 2602,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Costos de pases de jugadores",
+   "lado": "gasto",
+   "M": 199.322,
+   "pagina": 58,
+   "linea": 2603,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Depreciación",
+   "lado": "gasto",
+   "M": 10.593,
+   "pagina": 58,
+   "linea": 2604,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Costo de ventas productos",
+   "lado": "gasto",
+   "M": 11.888,
+   "pagina": 58,
+   "linea": 2605,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Gasto de administración",
+   "lado": "gasto",
+   "M": 785.054,
+   "pagina": 5,
+   "linea": 110,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otras ganancias (pérdidas)",
+   "lado": "gasto",
+   "M": 175.722,
+   "pagina": 5,
+   "linea": 111,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Ingresos financieros",
+   "M": 21.004,
+   "linea": 112
+  },
+  {
+   "etiqueta": "Costos financieros",
+   "M": -1.088,
+   "linea": 113
+  },
+  {
+   "etiqueta": "Diferencias de cambio",
+   "M": -22.635,
+   "linea": 114
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Gasto por impuestos a las ganancias",
+   "M": 747.846,
+   "linea": 116
+  }
+ ]
+}

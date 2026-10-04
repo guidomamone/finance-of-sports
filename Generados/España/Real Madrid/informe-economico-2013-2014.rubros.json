@@ -1,0 +1,675 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2013-2014.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2013-2014.pdf",
+  "club": "realmadrid",
+  "year": 2014,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:00:57.711Z",
+  "tieOuts": {
+    "cierran": 1,
+    "noCierran": 33
+  },
+  "warnings": [
+    "8 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "25 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "13 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 59,
+    "notasUsadas": []
+  },
+  "ladoConocido": 44,
+  "rubros": [
+    {
+      "label": "Otros activos corrientes",
+      "lado": null,
+      "page": 15,
+      "section": "",
+      "values": [
+        40.518
+      ],
+      "origen": "estado 15",
+      "glosa": "Otros activos corrientes"
+    },
+    {
+      "label": "Acreedores y otras cuentas a pagar",
+      "lado": null,
+      "page": 15,
+      "section": "",
+      "values": [
+        22.579
+      ],
+      "origen": "estado 15",
+      "glosa": "Acreedores y otras cuentas a pagar"
+    },
+    {
+      "label": "Otros pasivos corrientes",
+      "lado": null,
+      "page": 15,
+      "section": "",
+      "values": [
+        -2.549
+      ],
+      "origen": "estado 15",
+      "glosa": "Otros pasivos corrientes"
+    },
+    {
+      "label": "B) Estado total de cambios en el patrimonio neto consolidado Otros activos y pasivos no corrientes",
+      "lado": null,
+      "page": 15,
+      "section": "",
+      "values": [
+        -3.136
+      ],
+      "origen": "estado 15",
+      "glosa": "B) Estado total de cambios en el patrimonio neto consolidado Otros activos y pasivos no corrientes"
+    },
+    {
+      "label": "correspondiente al ejercicio anual terminado el 30 de junio de 2014 Otros flujos de efectivo de las actividades de explotación",
+      "lado": null,
+      "page": 15,
+      "section": "",
+      "values": [
+        -18.577
+      ],
+      "origen": "estado 15",
+      "glosa": "correspondiente al ejercicio anual terminado el 30 de junio de 2014 Otros flujos de efectivo de las actividades de explotación"
+    },
+    {
+      "label": "y al ejercicio anual terminado el 30 de junio de 2013. Pagos de intereses",
+      "lado": null,
+      "page": 15,
+      "section": "",
+      "values": [
+        -6.8
+      ],
+      "origen": "estado 15",
+      "glosa": "y al ejercicio anual terminado el 30 de junio de 2013. Pagos de intereses"
+    },
+    {
+      "label": "Cobros de intereses",
+      "lado": null,
+      "page": 15,
+      "section": "",
+      "values": [
+        1.582
+      ],
+      "origen": "estado 15",
+      "glosa": "Cobros de intereses"
+    },
+    {
+      "label": "Pagos por inversiones",
+      "lado": null,
+      "page": 15,
+      "section": "Subvenciones, / recibidos",
+      "values": [
+        -149.058
+      ],
+      "origen": "estado 16",
+      "glosa": "Pagos por inversiones"
+    },
+    {
+      "label": "Saldo al 30 de junio Inmovilizado inmaterial deportivo",
+      "lado": null,
+      "page": 15,
+      "section": "Subvenciones, / recibidos",
+      "values": [
+        -123.641
+      ],
+      "origen": "estado 16",
+      "glosa": "Saldo al 30 de junio Inmovilizado inmaterial deportivo"
+    },
+    {
+      "label": "de 2012 Otro inmovilizado inmaterial",
+      "lado": null,
+      "page": 15,
+      "section": "Subvenciones, / recibidos",
+      "values": [
+        -1.025
+      ],
+      "origen": "estado 16",
+      "glosa": "de 2012 Otro inmovilizado inmaterial"
+    },
+    {
+      "label": "Pasivo Corriente",
+      "lado": null,
+      "page": 60,
+      "section": "• Ratio 2 / Miles € / 30/06/2014     30/06/2013    Resultado de explotación antes de amortizaciones / 141.720           (17.160)       124.560 / y enajenación de inmovilizado",
+      "values": [
+        360.454
+      ],
+      "origen": "estado 97",
+      "glosa": "Pasivo Corriente"
+    },
+    {
+      "label": "Menos: Tesorería y Activos Líquidos Equivalentes",
+      "lado": null,
+      "page": 60,
+      "section": "• Ratio 2 / Miles € / 30/06/2014     30/06/2013    Resultado de explotación antes de amortizaciones / 141.720           (17.160)       124.560 / y enajenación de inmovilizado",
+      "values": [
+        -173.892
+      ],
+      "origen": "estado 97",
+      "glosa": "Menos: Tesorería y Activos Líquidos Equivalentes"
+    },
+    {
+      "label": "Menos: Deudas Entidades Deportivas",
+      "lado": null,
+      "page": 60,
+      "section": "• Ratio 2 / Miles € / 30/06/2014     30/06/2013    Resultado de explotación antes de amortizaciones / 141.720           (17.160)       124.560 / y enajenación de inmovilizado",
+      "values": [
+        -74.841
+      ],
+      "origen": "estado 97",
+      "glosa": "Menos: Deudas Entidades Deportivas"
+    },
+    {
+      "label": "imputados al patrimonio neto Diferimiento plusvalías por pago aplazado 4.261 9.334 -",
+      "lado": null,
+      "page": 45,
+      "section": "Activos por impuesto diferido / Activos por diferencias temporarias deducibles / 4.883                     9.372                 -         14.255 / Miles €    Pasivos por diferencias temporarias deducibles / Cuenta de pérdidas y ganancias",
+      "values": [
+        13.595
+      ],
+      "origen": "estado 55",
+      "glosa": "imputados al patrimonio neto Diferimiento plusvalías por pago aplazado 4.261 9.334 -"
+    },
+    {
+      "label": "Libertad de amortización 1.452 (69) -",
+      "lado": null,
+      "page": 45,
+      "section": "Activos por impuesto diferido / Activos por diferencias temporarias deducibles / 4.883                     9.372                 -         14.255 / Miles €    Pasivos por diferencias temporarias deducibles / Cuenta de pérdidas y ganancias",
+      "values": [
+        1.383
+      ],
+      "origen": "estado 55",
+      "glosa": "Libertad de amortización 1.452 (69) -"
+    },
+    {
+      "label": "Impuesto corriente 10.558 - Subvenciones (Nota 6.4) 1.714 - (48)",
+      "lado": "expense",
+      "page": 45,
+      "section": "Activos por impuesto diferido / Activos por diferencias temporarias deducibles / 4.883                     9.372                 -         14.255 / Miles €    Pasivos por diferencias temporarias deducibles / Cuenta de pérdidas y ganancias",
+      "values": [
+        1.666
+      ],
+      "origen": "estado 55",
+      "glosa": "Impuesto corriente 10.558 - Subvenciones (Nota 6.4) 1.714 - (48)"
+    },
+    {
+      "label": "Ingresos Financieros - -",
+      "lado": "revenue",
+      "page": 60,
+      "section": "CUMPLE         CUMPLE",
+      "values": [
+        2.347
+      ],
+      "origen": "estado 99",
+      "glosa": "Ingresos Financieros - -"
+    },
+    {
+      "label": "21. HECHOS POSTERIORES Gastos Financieros - -",
+      "lado": "expense",
+      "page": 60,
+      "section": "CUMPLE         CUMPLE",
+      "values": [
+        -11.752
+      ],
+      "origen": "estado 99",
+      "glosa": "21. HECHOS POSTERIORES Gastos Financieros - -"
+    },
+    {
+      "label": "Aprovisionamientos",
+      "lado": "expense",
+      "page": 58,
+      "section": "Gastos estados financieros",
+      "values": [
+        20.149
+      ],
+      "origen": "estado 86",
+      "glosa": "Aprovisionamientos"
+    },
+    {
+      "label": "Gastos de personal deportivo y no deportivo",
+      "lado": "expense",
+      "page": 58,
+      "section": "Gastos estados financieros",
+      "values": [
+        269.597
+      ],
+      "origen": "estado 86",
+      "glosa": "Gastos de personal deportivo y no deportivo"
+    },
+    {
+      "label": "Gastos personal cantera fútbol",
+      "lado": "expense",
+      "page": 58,
+      "section": "Gastos estados financieros",
+      "values": [
+        15.682
+      ],
+      "origen": "estado 86",
+      "glosa": "Gastos personal cantera fútbol"
+    },
+    {
+      "label": "Otros gastos de explotación",
+      "lado": "expense",
+      "page": 58,
+      "section": "Gastos estados financieros",
+      "values": [
+        135.304
+      ],
+      "origen": "estado 86",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Gastos personal baloncesto",
+      "lado": "expense",
+      "page": 58,
+      "section": "Gastos estados financieros",
+      "values": [
+        20.019
+      ],
+      "origen": "estado 86",
+      "glosa": "Gastos personal baloncesto"
+    },
+    {
+      "label": "Amortización del inmovilizado",
+      "lado": "expense",
+      "page": 58,
+      "section": "Gastos estados financieros",
+      "values": [
+        106.875
+      ],
+      "origen": "estado 86",
+      "glosa": "Amortización del inmovilizado"
+    },
+    {
+      "label": "Gastos personal no deportivo fútbol y estructura no asociado primera plantilla de fútbol",
+      "lado": "expense",
+      "page": 58,
+      "section": "Gastos estados financieros",
+      "values": [
+        23.964
+      ],
+      "origen": "estado 86",
+      "glosa": "Gastos personal no deportivo fútbol y estructura no asociado primera plantilla de fútbol"
+    },
+    {
+      "label": "Gastos financieros",
+      "lado": "expense",
+      "page": 58,
+      "section": "Gastos estados financieros",
+      "values": [
+        11.752
+      ],
+      "origen": "estado 86",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "La actividad con instrumentos financieros expone al Grupo al ries- Con saldo superior a 1.000 miles de euros",
+      "lado": "revenue",
+      "page": 54,
+      "section": "instancias jerárquicas. / zo)” y “Clientes por ventas y prestación de servicios” es el siguiente: / El Grupo Real Madrid ha establecido una serie de procedimientos / derivados de la actividad con instrumentos financieros. / Nº de deudores   Miles de euros",
+      "values": [
+        118.757
+      ],
+      "origen": "estado 68",
+      "glosa": "La actividad con instrumentos financieros expone al Grupo al ries- Con saldo superior a 1.000 miles de euros"
+    },
+    {
+      "label": "go de crédito, de mercado y de liquidez. Con saldo entre 1.000 miles de euros y 500 miles de euros",
+      "lado": "revenue",
+      "page": 54,
+      "section": "instancias jerárquicas. / zo)” y “Clientes por ventas y prestación de servicios” es el siguiente: / El Grupo Real Madrid ha establecido una serie de procedimientos / derivados de la actividad con instrumentos financieros. / Nº de deudores   Miles de euros",
+      "values": [
+        8.194
+      ],
+      "origen": "estado 68",
+      "glosa": "go de crédito, de mercado y de liquidez. Con saldo entre 1.000 miles de euros y 500 miles de euros"
+    },
+    {
+      "label": "Con saldo entre 500 miles de euros y 200 miles de euros",
+      "lado": "revenue",
+      "page": 54,
+      "section": "instancias jerárquicas. / zo)” y “Clientes por ventas y prestación de servicios” es el siguiente: / El Grupo Real Madrid ha establecido una serie de procedimientos / derivados de la actividad con instrumentos financieros. / Nº de deudores   Miles de euros",
+      "values": [
+        8.251
+      ],
+      "origen": "estado 68",
+      "glosa": "Con saldo entre 500 miles de euros y 200 miles de euros"
+    },
+    {
+      "label": "19.1 Riesgo de crédito Con saldo entre 200 miles de euros y 100 miles de euros",
+      "lado": "revenue",
+      "page": 54,
+      "section": "instancias jerárquicas. / zo)” y “Clientes por ventas y prestación de servicios” es el siguiente: / El Grupo Real Madrid ha establecido una serie de procedimientos / derivados de la actividad con instrumentos financieros. / Nº de deudores   Miles de euros",
+      "values": [
+        4.612
+      ],
+      "origen": "estado 68",
+      "glosa": "19.1 Riesgo de crédito Con saldo entre 200 miles de euros y 100 miles de euros"
+    },
+    {
+      "label": "Corrección por deterioro -",
+      "lado": "revenue",
+      "page": 54,
+      "section": "instancias jerárquicas. / zo)” y “Clientes por ventas y prestación de servicios” es el siguiente: / El Grupo Real Madrid ha establecido una serie de procedimientos / derivados de la actividad con instrumentos financieros. / Nº de deudores   Miles de euros",
+      "values": [
+        -33.03
+      ],
+      "origen": "estado 68",
+      "glosa": "Corrección por deterioro -"
+    },
+    {
+      "label": "Importe plantilla inscribible LNFP 192.006 79.095 5.939",
+      "lado": "expense",
+      "page": 50,
+      "section": "Informe Económico 2013 - 2014 / Cuentas anuales consolidadas / Otras                                                                           Gastos / cargas                                                                         Personal / sociales",
+      "values": [
+        277.07
+      ],
+      "origen": "estado 62",
+      "glosa": "Importe plantilla inscribible LNFP 192.006 79.095 5.939"
+    },
+    {
+      "label": "Jugadores y técnicos 1º equipo Fútbol 160.785 21.082 1.823 2.950 362 - 187.002 Importe plantilla no inscribible LNFP 26.941 2.647 166 -",
+      "lado": "expense",
+      "page": 50,
+      "section": "Informe Económico 2013 - 2014 / Cuentas anuales consolidadas / Otras                                                                           Gastos / cargas                                                                         Personal / sociales",
+      "values": [
+        29.754
+      ],
+      "origen": "estado 62",
+      "glosa": "Jugadores y técnicos 1º equipo Fútbol 160.785 21.082 1.823 2.950 362 - 187.002 Importe plantilla no inscribible LNFP 26.941 2.647 166 -"
+    },
+    {
+      "label": "Jugadores y técnicos 2º equipo Fútbol 3.818 656 176 - 354 -",
+      "lado": "expense",
+      "page": 50,
+      "section": "Informe Económico 2013 - 2014 / Cuentas anuales consolidadas / Otras                                                                           Gastos / cargas                                                                         Personal / sociales",
+      "values": [
+        5.004
+      ],
+      "origen": "estado 62",
+      "glosa": "Jugadores y técnicos 2º equipo Fútbol 3.818 656 176 - 354 -"
+    },
+    {
+      "label": "Jugadores y técnicos categorías Gastos totales plantilla deportiva 218.947 81.742 6.105",
+      "lado": "expense",
+      "page": 50,
+      "section": "Informe Económico 2013 - 2014 / Cuentas anuales consolidadas / Otras                                                                           Gastos / cargas                                                                         Personal / sociales",
+      "values": [
+        306.824
+      ],
+      "origen": "estado 62",
+      "glosa": "Jugadores y técnicos categorías Gastos totales plantilla deportiva 218.947 81.742 6.105"
+    },
+    {
+      "label": "formulación de las presentes cuentas anuales no se había tomado Concesiones 2.103 - - -",
+      "lado": "expense",
+      "page": 28,
+      "section": "Miles € / A 30 de junio de 2014 y 30 de junio de 2013 no existen opciones / Saldo inicial   Altas y dotaciones    Bajas    Traspasos       Saldo Final / de compra valoradas sobre jugadores, si bien existen derechos / para recomprar jugadores traspasados sobre los que a la fecha de         Coste:",
+      "values": [
+        2.103
+      ],
+      "origen": "estado 31",
+      "glosa": "formulación de las presentes cuentas anuales no se había tomado Concesiones 2.103 - - -"
+    },
+    {
+      "label": "decisión alguna. Patentes, licencias, marcas y similares 965 63 - -",
+      "lado": "expense",
+      "page": 28,
+      "section": "Miles € / A 30 de junio de 2014 y 30 de junio de 2013 no existen opciones / Saldo inicial   Altas y dotaciones    Bajas    Traspasos       Saldo Final / de compra valoradas sobre jugadores, si bien existen derechos / para recomprar jugadores traspasados sobre los que a la fecha de         Coste:",
+      "values": [
+        1.028
+      ],
+      "origen": "estado 31",
+      "glosa": "decisión alguna. Patentes, licencias, marcas y similares 965 63 - -"
+    },
+    {
+      "label": "Aplicaciones informáticas 4.986 71 -",
+      "lado": "expense",
+      "page": 28,
+      "section": "Miles € / A 30 de junio de 2014 y 30 de junio de 2013 no existen opciones / Saldo inicial   Altas y dotaciones    Bajas    Traspasos       Saldo Final / de compra valoradas sobre jugadores, si bien existen derechos / para recomprar jugadores traspasados sobre los que a la fecha de         Coste:",
+      "values": [
+        5.187
+      ],
+      "origen": "estado 31",
+      "glosa": "Aplicaciones informáticas 4.986 71 -"
+    },
+    {
+      "label": "La duración media de los contratos laborales de la plantilla inscri- Otro inmovilizado intangible 95.437 - - -",
+      "lado": "expense",
+      "page": 28,
+      "section": "Miles € / A 30 de junio de 2014 y 30 de junio de 2013 no existen opciones / Saldo inicial   Altas y dotaciones    Bajas    Traspasos       Saldo Final / de compra valoradas sobre jugadores, si bien existen derechos / para recomprar jugadores traspasados sobre los que a la fecha de         Coste:",
+      "values": [
+        95.437
+      ],
+      "origen": "estado 31",
+      "glosa": "La duración media de los contratos laborales de la plantilla inscri- Otro inmovilizado intangible 95.437 - - -"
+    },
+    {
+      "label": "y principios fundamentales de compensación están regulados en Gastos Real Madrid TV y audiovisuales",
+      "lado": "expense",
+      "page": 51,
+      "section": "tenecientes a la LFP, por el que se compensan desde la temporada / Miles € / 2011/2012 a los clubes descendidos por la pérdida de ingresos de- / 30/06/2014   30/06/2013 / rivados de los derechos audiovisuales de Liga y Copa. Los términos",
+      "values": [
+        1.022
+      ],
+      "origen": "estado 65",
+      "glosa": "y principios fundamentales de compensación están regulados en Gastos Real Madrid TV y audiovisuales"
+    },
+    {
+      "label": "un Reglamento que establece los parámetros de cálculo y las con- Catering, azafatas y eventos",
+      "lado": "revenue",
+      "page": 51,
+      "section": "tenecientes a la LFP, por el que se compensan desde la temporada / Miles € / 2011/2012 a los clubes descendidos por la pérdida de ingresos de- / 30/06/2014   30/06/2013 / rivados de los derechos audiovisuales de Liga y Copa. Los términos",
+      "values": [
+        11.702
+      ],
+      "origen": "estado 65",
+      "glosa": "un Reglamento que establece los parámetros de cálculo y las con- Catering, azafatas y eventos"
+    },
+    {
+      "label": "diciones de asignación que debe proponer el Órgano de Control y Edición de publicaciones, manipulado y envío",
+      "lado": "revenue",
+      "page": 51,
+      "section": "tenecientes a la LFP, por el que se compensan desde la temporada / Miles € / 2011/2012 a los clubes descendidos por la pérdida de ingresos de- / 30/06/2014   30/06/2013 / rivados de los derechos audiovisuales de Liga y Copa. Los términos",
+      "values": [
+        3.052
+      ],
+      "origen": "estado 65",
+      "glosa": "diciones de asignación que debe proponer el Órgano de Control y Edición de publicaciones, manipulado y envío"
+    },
+    {
+      "label": "aprobar los Clubes firmantes del acuerdo. Otros servicios exteriores",
+      "lado": "revenue",
+      "page": 51,
+      "section": "tenecientes a la LFP, por el que se compensan desde la temporada / Miles € / 2011/2012 a los clubes descendidos por la pérdida de ingresos de- / 30/06/2014   30/06/2013 / rivados de los derechos audiovisuales de Liga y Copa. Los términos",
+      "values": [
+        8.825
+      ],
+      "origen": "estado 65",
+      "glosa": "aprobar los Clubes firmantes del acuerdo. Otros servicios exteriores"
+    },
+    {
+      "label": "Existencias 9 2.402 2.040 Deudas a corto plazo 14.2 107.045 102.585 Gastos financieros",
+      "lado": "expense",
+      "page": 66,
+      "section": "Ingresos financieros",
+      "values": [
+        -11.642
+      ],
+      "origen": "estado 108",
+      "glosa": "Existencias 9 2.402 2.040 Deudas a corto plazo 14.2 107.045 102.585 Gastos financieros"
+    },
+    {
+      "label": "Deudas con entidades de crédito",
+      "lado": "revenue",
+      "page": 66,
+      "section": "Ingresos financieros",
+      "values": [
+        16.214
+      ],
+      "origen": "estado 108",
+      "glosa": "Deudas con entidades de crédito"
+    },
+    {
+      "label": "8.2,16 101.342 89.247 Otros pasivos financieros",
+      "lado": "revenue",
+      "page": 66,
+      "section": "Ingresos financieros",
+      "values": [
+        90.831
+      ],
+      "origen": "estado 108",
+      "glosa": "8.2,16 101.342 89.247 Otros pasivos financieros"
+    },
+    {
+      "label": "Construcciones en curso (205) (343) - - (548) el 30 de junio de 2014 ha sido de 1.432 miles de euros",
+      "lado": "revenue",
+      "page": 31,
+      "section": "tes a restaurantes, en las cuales se incluyen las inversiones rea- / instalaciones del Club que son explotados por terceros median- / te el pago de un royalty al Real Madrid. El ingreso directo ob- / Correcciones por deterioro: / tenido por esta actividad durante el ejercicio anual que termina",
+      "values": [
+        1324
+      ],
+      "origen": "estado 36",
+      "glosa": "Construcciones en curso (205) (343) - - (548) el 30 de junio de 2014 ha sido de 1.432 miles de euros"
+    },
+    {
+      "label": "Terrenos (727) (6.062) - - (6.789) miles de euros al 30 de junio de",
+      "lado": "revenue",
+      "page": 31,
+      "section": "tes a restaurantes, en las cuales se incluyen las inversiones rea- / instalaciones del Club que son explotados por terceros median- / te el pago de un royalty al Real Madrid. El ingreso directo ob- / Correcciones por deterioro: / tenido por esta actividad durante el ejercicio anual que termina",
+      "values": [
+        2013
+      ],
+      "origen": "estado 36",
+      "glosa": "Terrenos (727) (6.062) - - (6.789) miles de euros al 30 de junio de"
+    },
+    {
+      "label": "Ingresos anticipados de estadio",
+      "lado": "revenue",
+      "page": 42,
+      "section": "Periodificaciones a largo plazo / Anticipos recibidos por prestación de servicios       31.923       36.550 / 31.923       36.550 / Periodificaciones a corto plazo / Ingresos anticipados de retransmisión                   321          118",
+      "values": [
+        51.887
+      ],
+      "origen": "estado 52",
+      "glosa": "Ingresos anticipados de estadio"
+    },
+    {
+      "label": "Ingresos anticipados de marketing",
+      "lado": "revenue",
+      "page": 42,
+      "section": "Periodificaciones a largo plazo / Anticipos recibidos por prestación de servicios       31.923       36.550 / 31.923       36.550 / Periodificaciones a corto plazo / Ingresos anticipados de retransmisión                   321          118",
+      "values": [
+        5.011
+      ],
+      "origen": "estado 52",
+      "glosa": "Ingresos anticipados de marketing"
+    },
+    {
+      "label": "Ingresos anticipados de competiciones",
+      "lado": "revenue",
+      "page": 42,
+      "section": "Periodificaciones a largo plazo / Anticipos recibidos por prestación de servicios       31.923       36.550 / 31.923       36.550 / Periodificaciones a corto plazo / Ingresos anticipados de retransmisión                   321          118",
+      "values": [
+        3.539
+      ],
+      "origen": "estado 52",
+      "glosa": "Ingresos anticipados de competiciones"
+    },
+    {
+      "label": "A continuación se expone el gasto total de la plantilla deportiva in- Servicios exteriores",
+      "lado": "expense",
+      "page": 50,
+      "section": "el siguiente: / Total gasto de personal / plantilla deportiva / Miles € / 30/06/2014       30/06/2013",
+      "values": [
+        99.069
+      ],
+      "origen": "estado 64",
+      "glosa": "A continuación se expone el gasto total de la plantilla deportiva in- Servicios exteriores"
+    },
+    {
+      "label": "terpretado en base a las Normas de elaboración de presupuestos Tributos",
+      "lado": "expense",
+      "page": 50,
+      "section": "el siguiente: / Total gasto de personal / plantilla deportiva / Miles € / 30/06/2014       30/06/2013",
+      "values": [
+        3.711
+      ],
+      "origen": "estado 64",
+      "glosa": "terpretado en base a las Normas de elaboración de presupuestos Tributos"
+    },
+    {
+      "label": "de los clubes y SADS de la LFP. Desplazamientos",
+      "lado": "expense",
+      "page": 50,
+      "section": "el siguiente: / Total gasto de personal / plantilla deportiva / Miles € / 30/06/2014       30/06/2013",
+      "values": [
+        5.967
+      ],
+      "origen": "estado 64",
+      "glosa": "de los clubes y SADS de la LFP. Desplazamientos"
+    },
+    {
+      "label": "Primas de seguro",
+      "lado": "expense",
+      "page": 51,
+      "section": "rriente” las dotaciones a la provisión de riesgos y gastos realizadas / movilizado y otros excepcionales” es el siguiente: / El detalle de “Servicios exteriores” es el siguiente: / Miles € / 30/06/2014     30/06/2013",
+      "values": [
+        3.345
+      ],
+      "origen": "estado 66",
+      "glosa": "Primas de seguro"
+    },
+    {
+      "label": "la LFP en coordinación con la RFEF. Total ingresos financieros (nota 17.6)",
+      "lado": "revenue",
+      "page": 57,
+      "section": "co-financiero aplicables a los Clubes y SADs que disputan las com- / Ingresos estados financieros / peticiones de carácter profesional y ámbito estatal organizadas por",
+      "values": [
+        2.347
+      ],
+      "origen": "estado 80",
+      "glosa": "la LFP en coordinación con la RFEF. Total ingresos financieros (nota 17.6)"
+    },
+    {
+      "label": "Activos por impuesto diferido 16 14.255 4.883 PASIVO NO CORRIENTE",
+      "lado": "expense",
+      "page": 66,
+      "section": "8.1       33.531      9.540 / largo plazo / Otros gastos de explotación / 104           4 / (104.661)               (88.252)",
+      "values": [
+        239.499
+      ],
+      "origen": "estado 104",
+      "glosa": "Activos por impuesto diferido 16 14.255 4.883 PASIVO NO CORRIENTE"
+    },
+    {
+      "label": "Amortización del inmovilizado",
+      "lado": "expense",
+      "page": 66,
+      "section": "8.1       33.531      9.540 / largo plazo / Otros gastos de explotación / 104           4 / (104.661)               (88.252)",
+      "values": [
+        0.004567
+      ],
+      "origen": "estado 104",
+      "glosa": "Amortización del inmovilizado"
+    },
+    {
+      "label": "Provisiones a largo plazo",
+      "lado": "expense",
+      "page": 66,
+      "section": "8.1       33.531      9.540 / largo plazo / Otros gastos de explotación / 104           4 / (104.661)               (88.252)",
+      "values": [
+        13.807
+      ],
+      "origen": "estado 104",
+      "glosa": "Provisiones a largo plazo"
+    }
+  ]
+}

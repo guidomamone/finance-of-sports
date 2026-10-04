@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/Flamengo/relatorio-anual-demonstracoes-financeiras-2024.md",
+ "generado": "2026-10-02T00:15:10.528Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de reais)",
+ "caja": {
+  "lineas": [
+   901
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance (controladora y consolidado) no presenta préstamos ni financiamientos; se usó la columna 2024 de la controladora. Caixa restrito (L902) excluido de caja. La outorga de concessão (solo en el consolidado) no se considera deuda financiera."
+}

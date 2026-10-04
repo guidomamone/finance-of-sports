@@ -1,0 +1,56 @@
+{
+  "md": "Clubes/Colombia/Union Magdalena/estados-financieros-2018.md",
+  "pdf": "Clubes/Colombia/Union Magdalena/estados-financieros-2018.pdf",
+  "club": "union-magdalena",
+  "year": 2018,
+  "numberFormat": "us (coma miles, punto decimal)",
+  "generatedAt": "2026-09-30T01:19:55.183Z",
+  "tieOuts": {
+    "cierran": 12,
+    "noCierran": 14
+  },
+  "warnings": [
+    "14 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "ladoConocido": 3,
+  "rubros": [
+    {
+      "label": "(+) Otros Ingresos",
+      "lado": "revenue",
+      "page": 4,
+      "section": "UNION MAGDALENA S.A. / ESTADO DE RESULTADO INTEGRAL / INGRESOS",
+      "values": [
+        "113,286",
+        "135,632"
+      ],
+      "columns": null,
+      "glosa": "(+) Otros Ingresos"
+    },
+    {
+      "label": "(-) Gastos Operacionales",
+      "lado": "revenue",
+      "page": 4,
+      "section": "UNION MAGDALENA S.A. / ESTADO DE RESULTADO INTEGRAL / INGRESOS",
+      "values": [
+        "-5,400,542",
+        "-3,382,177"
+      ],
+      "columns": null,
+      "glosa": "(-) Gastos Operacionales"
+    },
+    {
+      "label": "(-) Gastos Administrativos y Otros Gastos",
+      "lado": "revenue",
+      "page": 4,
+      "section": "UNION MAGDALENA S.A. / ESTADO DE RESULTADO INTEGRAL / INGRESOS",
+      "values": [
+        "-1,069,690",
+        "-765,228"
+      ],
+      "columns": null,
+      "glosa": "(-) Gastos Administrativos y Otros Gastos"
+    }
+  ]
+}

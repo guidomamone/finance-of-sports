@@ -1,0 +1,143 @@
+{
+ "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2022-06-30.md",
+ "generatedAt": "2026-09-30T22:49:05.001Z",
+ "rubrosHuella": "4ca1f3b83eefa29cdc7185d53f1e9b7160d9dc1d",
+ "rubros": [
+  {
+   "label": "Ændring i tilgodehavender",
+   "lado": null,
+   "page": 15,
+   "section": "Finansielle indtægter -21.147 -39 / Finansielle omkostninger 364.410 253 / Skat af årets resultat 7.896.780 946 / Reguleringer 17.391.038 2.069 / Ændring i varebeholdninger -183.019 60",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Ændring i kortfristede gældsforpligtelser",
+   "lado": null,
+   "page": 15,
+   "section": "Finansielle indtægter -21.147 -39 / Finansielle omkostninger 364.410 253 / Skat af årets resultat 7.896.780 946 / Reguleringer 17.391.038 2.069 / Ændring i varebeholdninger -183.019 60",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "desdeCache": true
+  },
+  {
+   "label": "Ændring i driftskapital",
+   "lado": null,
+   "page": 15,
+   "section": "Finansielle indtægter -21.147 -39 / Finansielle omkostninger 364.410 253 / Skat af årets resultat 7.896.780 946 / Reguleringer 17.391.038 2.069 / Ændring i varebeholdninger -183.019 60",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Det samlede vederlag til selskabets direktion udgør i alt TDKK 2.494 mod TDKK 2.389 i",
+   "lado": "expense",
+   "page": 16,
+   "section": "1 Personaleomkostninger / Løn og gager 49.487.947 37.954 / Pensioner 3.220.650 2.263 / Andre omkostninger til social sikring 2.026.465 1.108 / Personaleomkostninger i alt 54.735.063 41.325",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Det samlede vederlag til selskabets bestyrelse udgør i alt TDKK 150 mod TDKK 80 i",
+   "lado": "expense",
+   "page": 16,
+   "section": "1 Personaleomkostninger / Løn og gager 49.487.947 37.954 / Pensioner 3.220.650 2.263 / Andre omkostninger til social sikring 2.026.465 1.108 / Personaleomkostninger i alt 54.735.063 41.325",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Tilgang i årets løb",
+   "lado": null,
+   "page": 17,
+   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
+   "choice": "depreciation",
+   "confidence": 0.28,
+   "desdeCache": true
+  },
+  {
+   "label": "Afgang i årets løb",
+   "lado": null,
+   "page": 17,
+   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
+   "choice": "other_expenses",
+   "confidence": 0.29,
+   "desdeCache": true
+  },
+  {
+   "label": "Af- og nedskrivninger på afhændede aktiver",
+   "lado": null,
+   "page": 17,
+   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
+   "choice": "depreciation",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Årets af- og nedskrivninger",
+   "lado": null,
+   "page": 17,
+   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
+   "choice": "depreciation",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Afskrivninger 30. juni",
+   "lado": null,
+   "page": 17,
+   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
+   "choice": "depreciation",
+   "confidence": 0.3,
+   "desdeCache": true
+  },
+  {
+   "label": "Af- og nedskrivninger 1. juli",
+   "lado": null,
+   "page": 17,
+   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
+   "choice": "depreciation",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "depreciation",
+     0.63
+    ],
+    [
+     "player_amortisation",
+     0.21000000000000002
+    ],
+    [
+     "other_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 1595
+  },
+  {
+   "label": "Kostpris 1. juli",
+   "lado": null,
+   "page": 17,
+   "section": "Særlige poster / res til tilbagebetaling til sponsorer. / I anden gæld indgår Covid-19 kompensationer med TDKK 1.271. / virksomhedens ansøgning om kompensation. / 6 Kontraktrettigheder mv.",
+   "choice": "player_amortisation",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "player_amortisation",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 1548
+  }
+ ]
+}

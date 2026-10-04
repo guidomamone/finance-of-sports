@@ -1,0 +1,22 @@
+{
+ "pdf": "Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2023-24.pdf",
+ "md": "Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2023-24.md",
+ "cierre": "2024-06-30",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:54:34.576Z",
+ "paginas_resultados": [
+  5
+ ],
+ "paginas_notas_ingresos": [
+  8
+ ],
+ "paginas_notas_gastos": [
+  8
+ ],
+ "escala": "no se sabe",
+ "escala_evidencia": "La página 5 (GuV) no muestra encabezado de unidad; la nota de balance usa importes en € (ej. \"davon aus Steuern: €5.794.178\") y el estado de flujo usa T-EUR, pero el texto visible de la GuV no lo indica.",
+ "moneda": "EUR",
+ "columna_ejercicio": "30.06.2024 (Geschäftsjahr 01.07.2023-30.06.2024)",
+ "perimetro": "consolidado",
+ "observaciones": "Documento de Konzernabschluss (consolidado). La Konzern-Gewinn- und Verlustrechnung aparece en la pág. 5 (desde Personalaufwand). Su inicio, con Umsatzerlöse y sonstige betriebliche Erträge, podría estar en la pág. 4 o en una página no transcripta (pág. 2 ausente), pero lo visible de la pág. 4 es solo Passiva. La pág. 8 (Anhang) desglosa sonstige betriebliche Erträge (T€ 1.575) y Abschreibungen. Probablemente los importes estén en € unidades, igual que el balance y el Eigenkapitalspiegel (\"Werte in €\"), pero no se confirma para la GuV. Lagebericht (págs. 15-16) con cifras en T€."
+}

@@ -1,0 +1,604 @@
+{
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballklubb-fli-2015.md",
+ "generatedAt": "2026-09-30T04:30:44.597Z",
+ "rubros": [
+  {
+   "label": "Salgsinntekt",
+   "lado": null,
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "choice": "lump_football_operations",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.77
+    ],
+    [
+     "other_income",
+     0.09999999999999999
+    ],
+    [
+     "matchday_competition",
+     0.06
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": null,
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": null,
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Avskrivning",
+   "lado": null,
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "choice": "depreciation",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "depreciation",
+     0.86
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ],
+    [
+     "other_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Driftsresultat",
+   "lado": null,
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "choice": "lump_football_operations",
+   "confidence": 0.24,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": null,
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": null,
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Varekostnad",
+   "lado": null,
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0.27
+    ],
+    [
+     "wages_squad",
+     0.12
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Netto finans",
+   "lado": null,
+   "page": 2,
+   "section": "FREDRIKSTAD FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1489
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": null,
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Årsresultat",
+   "lado": null,
+   "page": 20,
+   "section": "## Fredrikstad Fotballklubb--- / ### Noter til regnskapet for 2015 / #### Note 9 - Egenkapital",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "Overføringer annen egenkapital",
+   "lado": null,
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Netto finansposter",
+   "lado": null,
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Lønninger",
+   "lado": null,
+   "page": 18,
+   "section": "## Fredrikstad Fotballklubb / ### Noter til regnskapet for 2015 / #### Note 3 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1373
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 14,
+   "section": "## Fredrikstad Fotballklubb / ### Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Ordinært resultat etter skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "FREDRIKSTAD FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": null,
+   "page": 18,
+   "section": "## Fredrikstad Fotballklubb / ### Noter til regnskapet for 2015 / #### Note 3 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "wages_squad",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1597
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": null,
+   "page": 18,
+   "section": "## Fredrikstad Fotballklubb / ### Noter til regnskapet for 2015 / #### Note 3 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "choice": "wages_squad",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "wages_squad",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1305
+  },
+  {
+   "label": "Anskaffelseskost 31.12.",
+   "lado": null,
+   "page": 19,
+   "section": "## Fredrikstad Fotballklubb / ### Noter til regnskapet for 2015 / #### Note 5 - Immaterielle eiendeler",
+   "choice": "other_expenses",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "player_amortisation",
+     0.24000000000000002
+    ],
+    [
+     "other_amortisation",
+     0.2
+    ]
+   ],
+   "tokens": 1293
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": null,
+   "page": 18,
+   "section": "## Fredrikstad Fotballklubb / ### Noter til regnskapet for 2015 / #### Note 3 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1302
+  },
+  {
+   "label": "Akk.avskrivninger 31.12.",
+   "lado": null,
+   "page": 19,
+   "section": "## Fredrikstad Fotballklubb / ### Noter til regnskapet for 2015 / #### Note 5 - Immaterielle eiendeler",
+   "choice": "depreciation",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "depreciation",
+     0.45
+    ],
+    [
+     "other_amortisation",
+     0.44
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Balanseført verdi pr.31.12.",
+   "lado": null,
+   "page": 19,
+   "section": "## Fredrikstad Fotballklubb / ### Noter til regnskapet for 2015 / #### Note 5 - Immaterielle eiendeler",
+   "choice": "other_expenses",
+   "confidence": 0.21,
+   "top3": [
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "other_income",
+     0.24000000000000002
+    ],
+    [
+     "player_amortisation",
+     0.22
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Årets avskrivninger",
+   "lado": null,
+   "page": 19,
+   "section": "## Fredrikstad Fotballklubb / ### Noter til regnskapet for 2015 / #### Note 5 - Immaterielle eiendeler",
+   "choice": "player_amortisation",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "player_amortisation",
+     0.56
+    ],
+    [
+     "depreciation",
+     0.25
+    ],
+    [
+     "other_amortisation",
+     0.17
+    ]
+   ],
+   "tokens": 1572
+  },
+  {
+   "label": "Tilgang kjøpte eiendeler",
+   "lado": null,
+   "page": 19,
+   "section": "## Fredrikstad Fotballklubb / ### Noter til regnskapet for 2015 / #### Note 5 - Immaterielle eiendeler",
+   "choice": "player_amortisation",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "player_amortisation",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "other_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 1289
+  },
+  {
+   "label": "Egenkapital 01.01.2015",
+   "lado": null,
+   "page": 20,
+   "section": "## Fredrikstad Fotballklubb--- / ### Noter til regnskapet for 2015 / #### Note 9 - Egenkapital",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1361
+  },
+  {
+   "label": "Egenkapital 31.12.2015",
+   "lado": null,
+   "page": 20,
+   "section": "## Fredrikstad Fotballklubb--- / ### Noter til regnskapet for 2015 / #### Note 9 - Egenkapital",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1361
+  }
+ ]
+}

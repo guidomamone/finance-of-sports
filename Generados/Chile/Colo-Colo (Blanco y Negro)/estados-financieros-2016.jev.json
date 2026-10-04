@@ -1,0 +1,251 @@
+{
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2016.md",
+ "generatedAt": "2026-09-30T22:48:47.656Z",
+ "rubrosHuella": "3ae9849f9b7aa7fc4c04f64d77e0b23d47b04525",
+ "rubros": [
+  {
+   "label": "Servicios básicos",
+   "lado": null,
+   "page": 69,
+   "section": "-                 - / -                 -",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesorías",
+   "lado": null,
+   "page": 69,
+   "section": "-                 - / -                 -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": null,
+   "page": 69,
+   "section": "-                 - / -                 -",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 69,
+   "section": "-                 - / -                 -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenciones",
+   "lado": null,
+   "page": 69,
+   "section": "-                 - / -                 -",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración administración",
+   "lado": null,
+   "page": 69,
+   "section": "-                 - / -                 -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración plantel profesional y cuerpo técnico",
+   "lado": null,
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización Activos en concesión",
+   "lado": null,
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_amortisation",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización pases jugadores profesionales",
+   "lado": null,
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos de concentración traslados y otros",
+   "lado": "expense",
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros costos",
+   "lado": "expense",
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros activos financieros corrientes",
+   "lado": null,
+   "page": 70,
+   "section": "24. DIFERENCIA DE CAMBIO",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Deudores comerciales y otras cuentas por cobrar corrientes",
+   "lado": null,
+   "page": 70,
+   "section": "24. DIFERENCIA DE CAMBIO",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+   "lado": null,
+   "page": 70,
+   "section": "24. DIFERENCIA DE CAMBIO",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos financieros",
+   "lado": "expense",
+   "page": 69,
+   "section": "-                 -",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos, por función",
+   "lado": "expense",
+   "page": 69,
+   "section": "-                 -",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por futbol formativo (ii) -",
+   "lado": "revenue",
+   "page": 68,
+   "section": "El siguiente es el detalle de los otros ingresos por función: / 01.01.2016                 01.01.2015 / 31.12.2016                 31.12.2015 / Detalle de otros ingresos, por función                M$                       M$ / Prov.PPUA(i)                                        1.274.515                        -",
+   "choice": "youth_football",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Pases por pagar provisionados (iii) -",
+   "lado": "revenue",
+   "page": 68,
+   "section": "El siguiente es el detalle de los otros ingresos por función: / 01.01.2016                 01.01.2015 / 31.12.2016                 31.12.2015 / Detalle de otros ingresos, por función                M$                       M$ / Prov.PPUA(i)                                        1.274.515                        -",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 68,
+   "section": "El siguiente es el detalle de los otros ingresos por función: / 01.01.2016                 01.01.2015 / 31.12.2016                 31.12.2015 / Detalle de otros ingresos, por función                M$                       M$ / Prov.PPUA(i)                                        1.274.515                        -",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por publicidad",
+   "lado": "revenue",
+   "page": 68,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 68,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Prov. Incobrable -",
+   "lado": null,
+   "page": 69,
+   "section": "-                 - / -                 -",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "player_impairment",
+     0.09
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Otros(*) -",
+   "lado": null,
+   "page": 69,
+   "section": "-                 -",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1422
+  }
+ ]
+}

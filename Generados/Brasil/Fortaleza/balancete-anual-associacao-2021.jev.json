@@ -1,0 +1,604 @@
+{
+ "md": "Clubes/Brasil/Fortaleza/balancete-anual-associacao-2021.md",
+ "generatedAt": "2026-09-30T04:26:27.521Z",
+ "rubros": [
+  {
+   "label": "3.01.02 CUSTOS INDIRETOS DE PRODUÇÃO",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "match_organisation_expense",
+     0.27
+    ],
+    [
+     "lump_football_operations_expense",
+     0.19
+    ]
+   ],
+   "tokens": 1760
+  },
+  {
+   "label": "3.01.02.06 DEPRECIAÇÕES, AMORTIZAÇÕES E EXAUSTÕES",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "depreciation",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "depreciation",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1875
+  },
+  {
+   "label": "3.01 CUSTOS OPERACIONAIS",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1766
+  },
+  {
+   "label": "3.01.02.05 ALUGUEIS E ARRENDAMENTOS",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.59
+    ],
+    [
+     "other_income",
+     0.21000000000000002
+    ],
+    [
+     "stadium_other",
+     0.11
+    ]
+   ],
+   "tokens": 1767
+  },
+  {
+   "label": "3.01.05 CUSTOS DAS MERCADORIAS VENDIDAS",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1765
+  },
+  {
+   "label": "3 CUSTOS E DESPESAS OPERACIONAIS",
+   "lado": null,
+   "page": 6,
+   "section": "Empresa: FORTALEZA ESPORTE CLUBE - CNPJ: 07.319.551/0001-61 ESTER / 5.01 APURAÇÃO DO RESULTADO DO EXERCÍCIO 0,00 177.444.613,29 177.444.613,29 0,00 / 5.01.01 APURAÇÃO DO RESULTADO DO EXERCÍCIO 0,00 177.444.613,29 177.444.613,29 0,00 / 5.01.01.01 APURAÇÃO DO RESULTADO DO EXERCÍCIO 0,00 177.444.613,29 177.444.613,29 0,00",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ]
+   ],
+   "tokens": 1712
+  },
+  {
+   "label": "2.01.09.10 PATROCINIOS - FUTEBOL FEMININO 8.000,00 C",
+   "lado": "revenue",
+   "page": 3,
+   "section": "2.01.08.02 ANTECIPAÇÃO DE COTAS 0,00 21.046.000,00  21.555.000,00 509.000,00 C / 2.01.08.05 (-) JUROS A APROPRIAR 237.395,15 D* 339.991,11 301.517,61 275.868,65 D / 2.01.09 RECEITAS A APROPRIAR 8.539.694,61 C 53.539.097,51 51.921.960,36 6.922.557,46 C / 2.01.09.05 RECEITA C/ CESSÃO DE CAMAROTE 80.145,46 C 0,00 0,00 80.145,46 C / 2.01.09.09 RECEITA DE PATROCINIO FUTSAL 0,00 154.500,00 160.500,00 6.000,00 C",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.74
+    ],
+    [
+     "womens_football",
+     0.26
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1374
+  },
+  {
+   "label": "2.01.09.11 DÉBITOS COM PUBLICIDADE E PROPAGANDA 169.867,50 C",
+   "lado": "revenue",
+   "page": 3,
+   "section": "2.01.08.02 ANTECIPAÇÃO DE COTAS 0,00 21.046.000,00  21.555.000,00 509.000,00 C / 2.01.08.05 (-) JUROS A APROPRIAR 237.395,15 D* 339.991,11 301.517,61 275.868,65 D / 2.01.09 RECEITAS A APROPRIAR 8.539.694,61 C 53.539.097,51 51.921.960,36 6.922.557,46 C / 2.01.09.05 RECEITA C/ CESSÃO DE CAMAROTE 80.145,46 C 0,00 0,00 80.145,46 C / 2.01.09.09 RECEITA DE PATROCINIO FUTSAL 0,00 154.500,00 160.500,00 6.000,00 C",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.91
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1370
+  },
+  {
+   "label": "3.01.05.01 CUSTOS DAS MERCADORIAS VENDIDAS",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "sponsorship_commercial",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1768
+  },
+  {
+   "label": "3.02 DESPESAS OPERACIONAIS",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1770
+  },
+  {
+   "label": "3.02.01 DESPESAS COM JOGOS",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1801
+  },
+  {
+   "label": "3.02.01.01 DESPESAS DO BORDERO DE JOGOS",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "wages_squad",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "wages_squad",
+     0.65
+    ],
+    [
+     "match_organisation_expense",
+     0.24
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1797
+  },
+  {
+   "label": "3.02.02.01 DESPESAS COM PESSOAL",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "wages_squad",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "wages_squad",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1793
+  },
+  {
+   "label": "3.02.02 DESPESAS OPERACIONAIS",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "lump_football_operations_expense",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1773
+  },
+  {
+   "label": "3.02.02.02 IMPOSTOS, TAXAS E CONTRIBUIÇÕES",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1781
+  },
+  {
+   "label": "3.02.02.03 DESPESAS ADMINISTRATIVAS",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1783
+  },
+  {
+   "label": "3.02.02.04 DESPESAS FINANCEIRAS",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1761
+  },
+  {
+   "label": "3.02.02.07 DESPESAS FUTEBOL PROFISSIONAL 0,00 100.407.007,27 |",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1837
+  },
+  {
+   "label": "3.02.02.05 DESPESAS C/ SÓCIO TORCEDOR",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "member_dues",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1789
+  },
+  {
+   "label": "3.02.02.09 DESPESAS FUTEBOL FEMININO",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.98
+    ],
+    [
+     "womens_football",
+     0.02
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1816
+  },
+  {
+   "label": "3.02.02.10 DESPESAS C/ BASQUETE",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1762
+  },
+  {
+   "label": "3.02.02.08 PERDAS DE CRÉDITOS A RECEBER",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1787
+  },
+  {
+   "label": "3.02.02.11 OUTRAS CATEGORIAS",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1736
+  },
+  {
+   "label": "3.02.02.12 DESPESAS OPERACIONAIS - LOJAS",
+   "lado": null,
+   "page": 4,
+   "section": "2.03 PATRIMÔNIO 23.880.459,10 0,00 15.300.604,64 8.579.854,46 D* / 2.03.01 PATRIMONIO LIQUIDO 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.01.01 RESERVAS PATRIMONIAIS 86.078,00 C 0,00 0,00 86.078,00 C / 2.03.02 SUPERAVIT OU DEFICIT ACUMULADOS 23.966.537,10 0,00 15.300.604,64 8.665.932,46 D* / 2.03.02.01 RESULTADOS ACUMULADOS 27.410.929,91 0,00 0,00 27.410.929,91 D*",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1780
+  },
+  {
+   "label": "5 CONTAS DE APURAÇÃO",
+   "lado": null,
+   "page": 6,
+   "section": "Empresa: FORTALEZA ESPORTE CLUBE - CNPJ: 07.319.551/0001-61 ESTER / 5.01 APURAÇÃO DO RESULTADO DO EXERCÍCIO 0,00 177.444.613,29 177.444.613,29 0,00 / 5.01.01 APURAÇÃO DO RESULTADO DO EXERCÍCIO 0,00 177.444.613,29 177.444.613,29 0,00 / 5.01.01.01 APURAÇÃO DO RESULTADO DO EXERCÍCIO 0,00 177.444.613,29 177.444.613,29 0,00",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "lump_football_operations",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1474
+  },
+  {
+   "label": "4 RECEITA OPERACIONAL LÍQUIDA",
+   "lado": null,
+   "page": 6,
+   "section": "Empresa: FORTALEZA ESPORTE CLUBE - CNPJ: 07.319.551/0001-61 ESTER / 5.01 APURAÇÃO DO RESULTADO DO EXERCÍCIO 0,00 177.444.613,29 177.444.613,29 0,00 / 5.01.01 APURAÇÃO DO RESULTADO DO EXERCÍCIO 0,00 177.444.613,29 177.444.613,29 0,00 / 5.01.01.01 APURAÇÃO DO RESULTADO DO EXERCÍCIO 0,00 177.444.613,29 177.444.613,29 0,00",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1701
+  }
+ ]
+}

@@ -1,0 +1,447 @@
+{
+ "md": "Clubes/Bélgica/Charleroi/jaarrekening-2006-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:35.680Z",
+ "rubrosHuella": "5be43138aa55e5f610fdf068116de44d208c4031",
+ "rubros": [
+  {
+   "label": "C. Production immobilisée",
+   "lado": null,
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "A. Approvisionnements et marchandises",
+   "lado": null,
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "1. Achats",
+   "lado": null,
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "2. Variation des stocks (augmentation -, réduction +)",
+   "lado": null,
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "B. Services et biens divers",
+   "lado": null,
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "D. Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "lado": null,
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "depreciation",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "E. Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales (dotations +, reprises -) (ann. XII, D)",
+   "lado": null,
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "D. Autres produits d'exploitation (ann. XII, B)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1094
+  },
+  {
+   "label": "C. Rémunérations, charges sociales et pensions (ann. XII, C2)",
+   "lado": "expense",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "wages_squad",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1085
+  },
+  {
+   "label": "F. Provisions pour risques et charges (dotations +, utilisations et reprises -) (ann. XII, C3 et E)",
+   "lado": "expense",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "exceptional_items",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1102
+  },
+  {
+   "label": "G. Autres charges d'exploitation (ann. XII, F)",
+   "lado": "expense",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "I. Ventes et prestations",
+   "lado": "revenue",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "B. Variation des en-cours de fabrication, des produits finis et des commandes en cours d'exécution (augmentation +, réduction -)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1151
+  },
+  {
+   "label": "A. Chiffre d'affaires (annexe XII, A)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1105
+  },
+  {
+   "label": "II. Coût des ventes et des prestations (-)",
+   "lado": "expense",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "lump_football_operations_expense",
+     0.23
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "B. Réductions de valeur sur actifs circulants autres que ceux visés sub. II.E. (dotations +, reprises -) (ann. XIII, D)",
+   "lado": null,
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "B. Produits des actifs circulants",
+   "lado": "revenue",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "player_sales",
+     0.03
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "H. Charges d'exploitation portées à l'actif au titre de frais de restructuration (-)",
+   "lado": "expense",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "exceptional_items",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1215
+  },
+  {
+   "label": "IV. Produits financiers",
+   "lado": "revenue",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "C. Autres produits financiers (ann. XIII, A)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "C. Autres charges financières (ann. XIII, E)",
+   "lado": "expense",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "A. Produits des immobilisations financières",
+   "lado": "revenue",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1116
+  },
+  {
+   "label": "V. Charges financières (-)",
+   "lado": "expense",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "A. Charges des dettes (ann. XIII, B et C)",
+   "lado": "expense",
+   "page": 5,
+   "section": "2. COMPTE DE RESULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1040
+  }
+ ]
+}

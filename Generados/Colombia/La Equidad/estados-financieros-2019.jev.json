@@ -1,0 +1,1731 @@
+{
+ "md": "Clubes/Colombia/La Equidad/estados-financieros-2019.md",
+ "generatedAt": "2026-09-30T04:28:02.124Z",
+ "rubros": [
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 39,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 27. Otros Gastos, Gastos Financieros",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Convergencia Niif",
+   "lado": null,
+   "page": 26,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 21. Resultados de Ejercicio",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "exceptional_items",
+     0.12
+    ]
+   ],
+   "tokens": 1310
+  },
+  {
+   "label": "Utilidades Acumuladas",
+   "lado": null,
+   "page": 26,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 21. Resultados de Ejercicio",
+   "choice": "other_income",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1364
+  },
+  {
+   "label": "Balones",
+   "lado": "revenue",
+   "page": 17,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / ## 7. Inventarios",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 868
+  },
+  {
+   "label": "Prendas Escuelas",
+   "lado": "revenue",
+   "page": 17,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / ## 7. Inventarios",
+   "choice": "youth_football",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "youth_football",
+     0.73
+    ],
+    [
+     "other_income",
+     0.15
+    ],
+    [
+     "sponsorship_commercial",
+     0.08
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Ajustes Por Primera Vez Niif",
+   "lado": null,
+   "page": 26,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 21. Resultados de Ejercicio",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "exceptional_items",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "Prendas Para Equipo Profesional",
+   "lado": "revenue",
+   "page": 17,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / ## 7. Inventarios",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.63
+    ],
+    [
+     "lump_football_operations",
+     0.32
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Camisetas Para la Venta",
+   "lado": "revenue",
+   "page": 17,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / ## 7. Inventarios",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.66
+    ],
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Taquilla - Venta de Boletería",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 22. Ingresos de Actividades Ordinarias",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Escuelas de Futbol",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 22. Ingresos de Actividades Ordinarias",
+   "choice": "youth_football",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "youth_football",
+     0.96
+    ],
+    [
+     "education",
+     0.04
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Dimayor",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 22. Ingresos de Actividades Ordinarias",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "broadcasting",
+     0.99
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Otro Resultado Integral",
+   "lado": null,
+   "page": 26,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 21. Resultados de Ejercicio",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "exceptional_items",
+     0.06999999999999999
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1528
+  },
+  {
+   "label": "Federacion Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 22. Ingresos de Actividades Ordinarias",
+   "choice": "competition_bonus",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "competition_bonus",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Venta y Prestamo de Derechos",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 22. Ingresos de Actividades Ordinarias",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Publicidad y Propaganda",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 22. Ingresos de Actividades Ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Patrocinio",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 22. Ingresos de Actividades Ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Participación CopaSuramericana",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 22. Ingresos de Actividades Ordinarias",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Cuota de Sostenimiento",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 22. Ingresos de Actividades Ordinarias",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 960
+  },
+  {
+   "label": "Venta de Artículos Deportivos",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 22. Ingresos de Actividades Ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Devoluciones en Ventas",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 22. Ingresos de Actividades Ordinarias",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Ingresos Fuerzas Basicas",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 22. Ingresos de Actividades Ordinarias",
+   "choice": "youth_football",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "youth_football",
+     0.95
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Costo de Venta Artículos Deportivos",
+   "lado": null,
+   "page": 27,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 23. Costo de Ventas",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "sponsorship_commercial",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1565
+  },
+  {
+   "label": "Actividades Conexas",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# 22. Ingresos de Actividades Ordinarias",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Multas y Recargos",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 24. Otros Ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 903
+  },
+  {
+   "label": "Reintegro de Otros Costos y Gastos",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 24. Otros Ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Construcciones y Edificaciones",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 24. Otros Ingresos",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "stadium_other",
+     0.1
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "Intereses",
+   "lado": "expense",
+   "page": 39,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 27. Otros Gastos, Gastos Financieros",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 901
+  },
+  {
+   "label": "Transporte",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 24. Otros Ingresos",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "sponsorship_commercial",
+     0.25
+    ],
+    [
+     "competition_bonus",
+     0.07
+    ]
+   ],
+   "tokens": 903
+  },
+  {
+   "label": "Reintegro Provisiones",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 24. Otros Ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1115
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 24. Otros Ingresos",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "stadium_other",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Ingresos de Ejercicios Anteriores",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 24. Otros Ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Viaticos",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "wages_squad",
+     0.03
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Ajuste al Peso",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 24. Otros Ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 952
+  },
+  {
+   "label": "Sueldos",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "wages_squad",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "wages_squad",
+     0.9
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Cesantías",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 25. Gastos de Administración / # Gastos Operacionales de Administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "wages_squad",
+     0.11
+    ]
+   ],
+   "tokens": 850
+  },
+  {
+   "label": "Auxilio de Transporte",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Salario Integral",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "wages_squad",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "wages_squad",
+     0.95
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Intereses Sobre Cesantías",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 25. Gastos de Administración / # Gastos Operacionales de Administración",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.45
+    ],
+    [
+     "wages_squad",
+     0.07
+    ]
+   ],
+   "tokens": 1116
+  },
+  {
+   "label": "Prima de Servicios",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Auxilio de Rodamiento",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 25. Gastos de Administración / # Gastos Operacionales de Administración",
+   "choice": "match_organisation_expense",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 913
+  },
+  {
+   "label": "Bonificaciones",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "wages_squad",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "wages_squad",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 920
+  },
+  {
+   "label": "Vacaciones",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 930
+  },
+  {
+   "label": "Dotacion y Suministro",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 25. Gastos de Administración / # Gastos Operacionales de Administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 852
+  },
+  {
+   "label": "Indemnizaciones Laborales",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Aportes Salud EPS",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 25. Gastos de Administración / # Gastos Operacionales de Administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "match_organisation_expense",
+     0.07
+    ]
+   ],
+   "tokens": 910
+  },
+  {
+   "label": "Aportes administradoras ARL",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 25. Gastos de Administración / # Gastos Operacionales de Administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 975
+  },
+  {
+   "label": "Aportes I.C.B.F.",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "youth_other_sports_expense",
+     0.13
+    ]
+   ],
+   "tokens": 910
+  },
+  {
+   "label": "Aportes Cajas de Compensacion",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "match_organisation_expense",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 912
+  },
+  {
+   "label": "Capacitacion al Personal",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "wages_squad",
+     0.15
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Aportes Fondos de Pensiones",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 25. Gastos de Administración / # Gastos Operacionales de Administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.69
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 914
+  },
+  {
+   "label": "sena",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "match_organisation_expense",
+     0.06
+    ]
+   ],
+   "tokens": 846
+  },
+  {
+   "label": "Gastos Medicos",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 25. Gastos de Administración / # Gastos Operacionales de Administración",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Notariales",
+   "lado": "expense",
+   "page": 35,
+   "section": "# Gastos Legales",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 789
+  },
+  {
+   "label": "Registro Mercantil",
+   "lado": "expense",
+   "page": 30,
+   "section": "# Gastos Legales",
+   "choice": "admin_general_expense",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "player_amortisation",
+     0.17
+    ]
+   ],
+   "tokens": 853
+  },
+  {
+   "label": "Alojamiento y Manutencion",
+   "lado": "expense",
+   "page": 36,
+   "section": "# Gastos de Viaje",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 853
+  },
+  {
+   "label": "Pasajes Aereos",
+   "lado": "expense",
+   "page": 36,
+   "section": "# Gastos de Viaje",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 792
+  },
+  {
+   "label": "Cesantias",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "wages_squad",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "wages_squad",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 847
+  },
+  {
+   "label": "Intereses Sobre Cesantias",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "wages_squad",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1113
+  },
+  {
+   "label": "Tramites y Licencias",
+   "lado": "expense",
+   "page": 35,
+   "section": "# Gastos Legales",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "other_amortisation",
+     0.15
+    ]
+   ],
+   "tokens": 867
+  },
+  {
+   "label": "Auxilios",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ],
+    [
+     "youth_other_sports_expense",
+     0.02
+    ]
+   ],
+   "tokens": 846
+  },
+  {
+   "label": "Dotación al Personal",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "wages_squad",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Gastos Deportivos y Recreación",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "youth_other_sports_expense",
+     0.15
+    ],
+    [
+     "match_organisation_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1084
+  },
+  {
+   "label": "Gastos Medicos Examenes y Medicamentos",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Aportes Administradora de Riesgos ARL",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 976
+  },
+  {
+   "label": "Aportes Salud E.P.S.",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "lump_football_operations_expense",
+     0.17
+    ],
+    [
+     "match_organisation_expense",
+     0.1
+    ]
+   ],
+   "tokens": 910
+  },
+  {
+   "label": "Fondo de Pensiones y Censantias",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "wages_squad",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 854
+  },
+  {
+   "label": "Pasajes Terrestres",
+   "lado": "expense",
+   "page": 36,
+   "section": "# Gastos de Viaje",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 792
+  },
+  {
+   "label": "Gastos Bancarios",
+   "lado": "expense",
+   "page": 39,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 27. Otros Gastos, Gastos Financieros",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Gastos Legales Otros",
+   "lado": "expense",
+   "page": 35,
+   "section": "# Gastos Legales",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1005
+  },
+  {
+   "label": "Diferencia en Cambio",
+   "lado": "expense",
+   "page": 39,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 27. Otros Gastos, Gastos Financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Comisiones",
+   "lado": "expense",
+   "page": 39,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 27. Otros Gastos, Gastos Financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1072
+  },
+  {
+   "label": "Impuestos Asumidos",
+   "lado": "expense",
+   "page": 39,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 27. Otros Gastos, Gastos Financieros",
+   "choice": "exceptional_items",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "exceptional_items",
+     0.6
+    ],
+    [
+     "admin_general_expense",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Multas, Sanciones y Litigios",
+   "lado": "expense",
+   "page": 39,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 27. Otros Gastos, Gastos Financieros",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1104
+  },
+  {
+   "label": "Costos y Gastos de Ejercicios",
+   "lado": "expense",
+   "page": 39,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 27. Otros Gastos, Gastos Financieros",
+   "choice": "exceptional_items",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "exceptional_items",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Donaciones",
+   "lado": "expense",
+   "page": 39,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 27. Otros Gastos, Gastos Financieros",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 970
+  }
+ ]
+}

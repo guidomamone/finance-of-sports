@@ -1,0 +1,1660 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.md",
+ "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.pdf",
+ "club": "parma",
+ "year": 2021,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:05:12.557Z",
+ "tieOuts": {
+  "cierran": 121,
+  "noCierran": 51
+ },
+ "warnings": [
+  "18 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "33 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "10 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 160,
+  "notasUsadas": [
+   "40",
+   "41",
+   "44",
+   "45"
+  ]
+ },
+ "ladoConocido": 155,
+ "rubros": [
+  {
+   "label": "1) ricavi delle vendite e delle prestazioni",
+   "lado": "revenue",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    1375.965
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "5) altri ricavi e proventi altri",
+   "lado": "revenue",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    39305.396
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "expense",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    1802.752
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "lado": "expense",
+   "page": 40,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    3113.622
+   ],
+   "origen": "nota 40 (ancla 10)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "7) per servizi",
+   "lado": "expense",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    12559.104
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Costi specifici Tecnici",
+   "lado": "expense",
+   "page": 40,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    494.667
+   ],
+   "origen": "nota 40 (ancla 10)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi per intermediazioni",
+   "lado": "expense",
+   "page": 40,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    1372.73
+   ],
+   "origen": "nota 40 (ancla 10)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi per prestazioni servizi personale",
+   "lado": "expense",
+   "page": 40,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    432.246
+   ],
+   "origen": "nota 40 (ancla 10)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi vitto, alloggio e locomozione gare",
+   "lado": "expense",
+   "page": 40,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    738.192
+   ],
+   "origen": "nota 40 (ancla 10)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Compensi e rimborsi spesa a terzi",
+   "lado": "expense",
+   "page": 40,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    323.351
+   ],
+   "origen": "nota 40 (ancla 10)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi per servizio biglietteria, controllo ingressi",
+   "lado": "expense",
+   "page": 40,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    89.825
+   ],
+   "origen": "nota 40 (ancla 10)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi per pubblicità e propaganda",
+   "lado": "expense",
+   "page": 40,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    800.362
+   ],
+   "origen": "nota 40 (ancla 10)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi Assicurativi",
+   "lado": "expense",
+   "page": 40,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    411.993
+   ],
+   "origen": "nota 40 (ancla 10)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi per utenze e spese generali",
+   "lado": "expense",
+   "page": 40,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    3090.42
+   ],
+   "origen": "nota 40 (ancla 10)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi per manutenzioni e riparazioni",
+   "lado": "expense",
+   "page": 40,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    591.721
+   ],
+   "origen": "nota 40 (ancla 10)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi per servizio da banche e finanz.",
+   "lado": "expense",
+   "page": 40,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    840.302
+   ],
+   "origen": "nota 40 (ancla 10)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Altri",
+   "lado": "expense",
+   "page": 40,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    259.671
+   ],
+   "origen": "nota 40 (ancla 10)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Fitti Passivi",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### *Costi per godimento beni di terzi*",
+   "values": [
+    629.35
+   ],
+   "origen": "nota 41 (ancla 10)",
+   "ancla": "8) per godimento di beni di terzi"
+  },
+  {
+   "label": "8) per godimento di beni di terzi",
+   "lado": "expense",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    1461.866
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Costi per noleggi",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### *Costi per godimento beni di terzi*",
+   "values": [
+    107.553
+   ],
+   "origen": "nota 41 (ancla 10)",
+   "ancla": "8) per godimento di beni di terzi"
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### *Costi per godimento beni di terzi*",
+   "values": [
+    671.864
+   ],
+   "origen": "nota 41 (ancla 10)",
+   "ancla": "8) per godimento di beni di terzi"
+  },
+  {
+   "label": "Altri costi per il godimento dei beni di terzi",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### *Costi per godimento beni di terzi*",
+   "values": [
+    42.602
+   ],
+   "origen": "nota 41 (ancla 10)",
+   "ancla": "8) per godimento di beni di terzi"
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### *Costi per godimento beni di terzi*",
+   "values": [
+    10.497
+   ],
+   "origen": "nota 41 (ancla 10)",
+   "ancla": "8) per godimento di beni di terzi"
+  },
+  {
+   "label": "a) salari e stipendi",
+   "lado": "expense",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    55880.52
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "b) oneri sociali",
+   "lado": "expense",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    3582.208
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "c) trattamento di fine rapporto",
+   "lado": "expense",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    726.685
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    41469.946
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "b) ammortamento delle immobilizzazioni materiali",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    792.947
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    212.43
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+   "lado": "expense",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    112.467
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "12) accantonamenti per rischi",
+   "lado": "expense",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    15
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Spese per organizzazione gare",
+   "lado": "expense",
+   "page": 41,
+   "section": "### *Oneri diversi di gestione*",
+   "values": [
+    550.61
+   ],
+   "origen": "nota 44 (ancla 10)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "14) oneri diversi di gestione",
+   "lado": "expense",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    9794.998
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Tasse iscrizione gare",
+   "lado": "expense",
+   "page": 41,
+   "section": "### *Oneri diversi di gestione*",
+   "values": [
+    12.945
+   ],
+   "origen": "nota 44 (ancla 10)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "Oneri Specifici verso squadre ospitate",
+   "lado": "expense",
+   "page": 41,
+   "section": "### *Oneri diversi di gestione*",
+   "values": [
+    3.099
+   ],
+   "origen": "nota 44 (ancla 10)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "Costi acq. Temporanea calciatori",
+   "lado": "expense",
+   "page": 41,
+   "section": "### *Oneri diversi di gestione*",
+   "values": [
+    2563.786
+   ],
+   "origen": "nota 44 (ancla 10)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "Costi valorizzazione calciatori",
+   "lado": "expense",
+   "page": 41,
+   "section": "Gli altri oneri per la gestione dei calciatori sono così costituiti:",
+   "values": [
+    10
+   ],
+   "origen": "nota 45 (ancla 10>44)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "Costi accessori campagna trasferimenti",
+   "lado": "expense",
+   "page": 41,
+   "section": "Gli altri oneri per la gestione dei calciatori sono così costituiti:",
+   "values": [
+    797.78
+   ],
+   "origen": "nota 45 (ancla 10>44)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "Minusvalenze cessioni calciatori",
+   "lado": "expense",
+   "page": 41,
+   "section": "Gli altri oneri per la gestione dei calciatori sono così costituiti:",
+   "values": [
+    1412.457
+   ],
+   "origen": "nota 45 (ancla 10>44)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "Altri oneri di gestione",
+   "lado": "expense",
+   "page": 41,
+   "section": "### *Oneri diversi di gestione*",
+   "values": [
+    4444.32
+   ],
+   "origen": "nota 44 (ancla 10)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "Differenza tra valore e costi della produzione (A - B)",
+   "lado": "revenue",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    -87729.562
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "a) da crediti iscritti nelle immobilizzazioni altri",
+   "lado": "revenue",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    216.025
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "17) interessi e altri oneri finanziari altri",
+   "lado": "expense",
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "values": [
+    51.311
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Gare Ufficiali Campionato",
+   "lado": null,
+   "page": 38,
+   "section": "### RICAVI DELLE VENDITE E DELLE PRESTAZIONI",
+   "values": [
+    0.526552
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Abbonamenti",
+   "lado": null,
+   "page": 38,
+   "section": "### RICAVI DELLE VENDITE E DELLE PRESTAZIONI",
+   "values": [
+    0.228302
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Ricavi e proventi diversi",
+   "lado": "revenue",
+   "page": 38,
+   "section": "### RICAVI DELLE VENDITE E DELLE PRESTAZIONI",
+   "values": [
+    0.621111
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Ricavi vendite e prestazioni",
+   "lado": "revenue",
+   "page": 38,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ### Valore della produzione / ### Suddivisione dei ricavi delle vendite e delle prestazioni per categoria di attività",
+   "values": [
+    1.375965
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Altri Ricavi",
+   "lado": "revenue",
+   "page": 38,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ### Valore della produzione / ### Suddivisione dei ricavi delle vendite e delle prestazioni per categoria di attività",
+   "values": [
+    39.305396
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Proventi da sponsorizzazioni",
+   "lado": "revenue",
+   "page": 38,
+   "section": "### ALTRI RICAVI E PROVENTI",
+   "values": [
+    2.640706
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Proventi pubblicitari",
+   "lado": "revenue",
+   "page": 38,
+   "section": "### ALTRI RICAVI E PROVENTI",
+   "values": [
+    3.075404
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Proventi commerciali e royalties",
+   "lado": "revenue",
+   "page": 38,
+   "section": "### ALTRI RICAVI E PROVENTI",
+   "values": [
+    0.106859
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Proventi da cessione diritti audiovisivi",
+   "lado": "revenue",
+   "page": 38,
+   "section": "### ALTRI RICAVI E PROVENTI",
+   "values": [
+    15.06204
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Adorante Andrea",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    50.2
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Alastra Fabrizio",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    11.097
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Baraye Yves Bertand",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    220.692
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Buffon Gianluigi",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    280.178
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Carannante Gabriele",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    270.299
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Carriero Giuseppe Mattia",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    40.997
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Castaldo Antonio",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    140.206
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Cavazza Paolo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    170.103
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Cheddira Walid",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    220.198
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Cipoletti Davide",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    300.301
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Colombi Simone",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    10.791
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Corvi Edoardo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    230.321
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Cucci Matteo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    200.201
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Dermaku Kaistriot",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    150.192
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Dezi Jacopo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    100.192
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Dini Andrea",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    200.296
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Frediani Marco",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    130.394
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Gagliolo Riccardo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    280.49
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Galuppini Francesco",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    171.093
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Golfo Matteo Francesco",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    50.994
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Grassi Alberto",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    70.395
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Iacoponi Daniele",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    250.302
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Iacoponi Simone",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    300.487
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Inglese Roberto",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    121.191
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Kasa Redi",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    10.901
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Lanini Eric",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    250.294
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Laraspata Michele",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    20.601
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Longo Sebastiano",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    50.198
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Martella Alessandro",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    301.1
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Mastaj Davide",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    300.498
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Matino Emmanuele",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    71.098
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Mustacciolo Vincenzo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    190.7
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Napolitano Paolo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    40.202
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Nocciolini Manuel",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    180.589
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Palmucci Stefano",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    220.501
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Pavone Fabian",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    50.2
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Pellè Graziano",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    150.785
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Pezzella Giuseppe",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    291.197
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Primavera Luca",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    80.405
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Ricci Giacomo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    20.996
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Rinaldi Filippo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    41.202
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Schiattarella Pasquale",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    300.587
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Scozzarella Matteo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    50.688
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Sepe Luigi",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    80.591
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Silingardi Luca",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    260.188
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Sprocati Mattia",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    280.493
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Tutino Gennaro",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    200.896
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Vaglica Giovanni",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    60.203
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Balogh Boton",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    60.6
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Benedyczak Adrian Dawid",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    41.1
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Bonny Ange Yoan",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    251.003
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Brugman Duarte Gaston",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    70.992
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Busi Maxime",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    141.099
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Cornelius Andreas",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    160.393
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Coulibaly Woyo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    260.599
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Cyprien Wylan",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    280.195
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Da Cruz Alessio",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    180.197
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Dierckx Daan",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    240.203
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Fiath Bence",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    110.304
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Gervais Yao Kouassi",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    270.587
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Hernani Azevedo Junior",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    270.394
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Karamoh Yann",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    80.798
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Kone Moussa",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    191.1
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Kucka Juraj",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    260.287
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Kurtic Jasmin",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    100.189
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Laragera Danilo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    100.584
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Laurini Vincent Alain",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    100.689
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Lopes Andre' Silva",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    180.303
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Maliszewski Bartolomiej",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    120.204
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Man Dennis Delfin",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    260.898
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Marsetic Enej",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    41.204
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Mihai Valentin Mihaila",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    20.2
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Mir Garcia Matias",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    260.503
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Osorio Yordan Hernando Paredes",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    100.594
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Regulfe Alves Bruno Eduardo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    271.181
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Sahitaj Ledjan",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    120.104
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Sits Dario",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    40.204
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Sohm Simon",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    110.401
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Stanko Juric",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    160.896
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Tehe Muhamed",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    200.299
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Traore Aliou Badara",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    80.101
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Traore Chaka",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    231.204
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Turk Martin",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    210.803
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Valenti Lautaro Rodrigo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    140.199
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Vazquez Franco Darmian",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    220.289
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Zagaritis Vasileios",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "values": [
+    40.501
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Costo",
+   "lado": "expense",
+   "page": 30,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "values": [
+    1.387943
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Ammortamenti (Fondo ammortamento)",
+   "lado": "expense",
+   "page": 30,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "values": [
+    0.593965
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Valore di bilancio",
+   "lado": "expense",
+   "page": 30,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "values": [
+    0.793978
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Decrementi per alienazioni e dismissioni (del valore di bilancio)",
+   "lado": "expense",
+   "page": 30,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "values": [
+    0.008576
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Ammortamento dell'esercizio",
+   "lado": "expense",
+   "page": 30,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "values": [
+    0.207321
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Ammortamenti (Fondo ammortamento)",
+   "lado": "expense",
+   "page": 30,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "values": [
+    0.801286
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Valore di bilancio",
+   "lado": "expense",
+   "page": 30,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "values": [
+    0.578081
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Fabbricati",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.000003
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Impianti generici",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.000015
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Attrezzature sanitarie",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.000012
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Attrezzature varie",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.00002
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Hospitality stadio",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.00002
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Coppe e trofei",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.00002
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Autovetture",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.00002
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Valore di inizio esercizio",
+   "lado": "expense",
+   "page": 35,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    1212.633
+   ],
+   "origen": "estado 28"
+  },
+  {
+   "label": "Accantonamento nell'esercizio",
+   "lado": "expense",
+   "page": 35,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    2298.968
+   ],
+   "origen": "estado 28"
+  },
+  {
+   "label": "Utilizzo nell'esercizio",
+   "lado": "expense",
+   "page": 35,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    1184.133
+   ],
+   "origen": "estado 28"
+  },
+  {
+   "label": "Valore di fine esercizio",
+   "lado": "expense",
+   "page": 35,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    2327.468
+   ],
+   "origen": "estado 28"
+  },
+  {
+   "label": "Proventi da cessione diritti pluriennali prestazioni calciatori",
+   "lado": "revenue",
+   "page": 39,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    1394.738
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Altri proventi gestione calciatori",
+   "lado": "revenue",
+   "page": 39,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    759.78
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Contributi in conto esercizio",
+   "lado": "revenue",
+   "page": 39,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    14272.881
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Ricavi e proventi diversi",
+   "lado": "revenue",
+   "page": 39,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "values": [
+    1992.988
+   ],
+   "origen": "estado 39"
+  }
+ ]
+}

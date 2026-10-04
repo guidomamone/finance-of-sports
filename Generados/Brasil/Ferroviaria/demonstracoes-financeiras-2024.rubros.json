@@ -1,0 +1,779 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2024.md",
+ "pdf": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2024.pdf",
+ "club": "ferroviaria",
+ "year": 2024,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:52:35.210Z",
+ "tieOuts": {
+  "cierran": 2,
+  "noCierran": 4
+ },
+ "warnings": [
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 71,
+  "notasUsadas": [
+   "4",
+   "16"
+  ]
+ },
+ "ladoConocido": 53,
+ "rubros": [
+  {
+   "label": "Administrativas e gerais",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    -1.605647
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Com pessoal",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    -1.632439
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Atletas não profissionais",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    -4.963052
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Aluguéis",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    -0.694228
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Tributária",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    -0.328961
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Outras despesas",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    -1.00731
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Receita financeira",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    0.017055
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    -3.824597
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Saldo em 31 de dezembro de 2022",
+   "lado": null,
+   "page": 10,
+   "section": "# Ferroviária S.A.F. / # Demonstrações das mutações do patrimônio líquido / # Exercícios findos em 31 de dezembro",
+   "values": [
+    7.568421
+   ],
+   "origen": "nota 4 (ancla 2)",
+   "ancla": "Quantidade de ações integralizadas"
+  },
+  {
+   "label": "Quantidade de ações integralizadas",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    17.834019
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Integralização de capital",
+   "lado": null,
+   "page": 10,
+   "section": "# Ferroviária S.A.F. / # Demonstrações das mutações do patrimônio líquido / # Exercícios findos em 31 de dezembro",
+   "values": [
+    10.265598
+   ],
+   "origen": "nota 4 (ancla 2)",
+   "ancla": "Quantidade de ações integralizadas"
+  },
+  {
+   "label": "Direitos de transmissão de TV",
+   "lado": null,
+   "page": 7,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    1485.398
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Patrocínio",
+   "lado": null,
+   "page": 7,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    13711.333
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Publicidade",
+   "lado": null,
+   "page": 7,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    120.852
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Arrecadação de jogos",
+   "lado": null,
+   "page": 7,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    230.019
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Cessão temporária dos atletas",
+   "lado": null,
+   "page": 7,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    285.785
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Venda dos direitos econômicos",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    6700
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Premiações",
+   "lado": null,
+   "page": 7,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    1782
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Outras receitas",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    8728.152
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Impostos incidentes sobre a receita",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    -1540.516
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Com pessoal",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    15259.861
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "(-) Custos operacionais",
+   "lado": "expense",
+   "page": 7,
+   "section": "# Ferroviária S.A.F. / ## Demonstrações do resultado",
+   "values": [
+    -32752.704
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Direito de uso de imagem",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    8598.131
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Premiações",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    2662.557
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Viagens e hospedagens",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    1189.512
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Refeitório",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    1112.813
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Com jogos",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    940.452
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    845.261
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Taxas de federação e confederação",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    173.889
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Agenciamento de atletas",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    579.166
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Manutenção e conservação",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    44.242
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Moradia",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    161.054
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Mercadorias vendidas",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    30.526
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Com atletas (empréstimos, luvas etc.)",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    238
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Material esportivo",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    199.734
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Amortização de atletas formados",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    390.7
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Baixa de atletas formados",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    7.906
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Outros custos",
+   "lado": "expense",
+   "page": 26,
+   "section": "# Ferroviária S.A.F. / ### 19 Custos operacionais",
+   "values": [
+    318.9
+   ],
+   "origen": "nota 16 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Rendimento sobre aplicação financeira",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# Ferroviária S.A.F. / ### 21 Resultado financeiro",
+   "values": [
+    0.00725
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Descontos obtidos",
+   "lado": null,
+   "page": 27,
+   "section": "# Ferroviária S.A.F. / ### 21 Resultado financeiro",
+   "values": [
+    0.009247
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Variação cambial",
+   "lado": null,
+   "page": 27,
+   "section": "# Ferroviária S.A.F. / ### 21 Resultado financeiro",
+   "values": [
+    0.000558
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Encargos bancários",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária S.A.F. / ### 21 Resultado financeiro",
+   "values": [
+    -0.421022
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Encargos sobre parcelamentos",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária S.A.F. / ### 21 Resultado financeiro",
+   "values": [
+    -1.892549
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Tarifas bancárias",
+   "lado": null,
+   "page": 27,
+   "section": "# Ferroviária S.A.F. / ### 21 Resultado financeiro",
+   "values": [
+    -0.082403
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Juros passivos",
+   "lado": null,
+   "page": 27,
+   "section": "# Ferroviária S.A.F. / ### 21 Resultado financeiro",
+   "values": [
+    -0.261659
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Variação cambial",
+   "lado": null,
+   "page": 27,
+   "section": "# Ferroviária S.A.F. / ### 21 Resultado financeiro",
+   "values": [
+    -1.107793
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Perdas eventuais",
+   "lado": null,
+   "page": 27,
+   "section": "# Ferroviária S.A.F. / ### 21 Resultado financeiro",
+   "values": [
+    -0.026931
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Serviços de consultoria",
+   "lado": "expense",
+   "page": 26,
+   "section": "### 20 Despesas administrativas e gerais",
+   "values": [
+    524.855
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Serviços contábeis, advocatícios e auditoria",
+   "lado": "expense",
+   "page": 26,
+   "section": "### 20 Despesas administrativas e gerais",
+   "values": [
+    539.539
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Serviços de apoio administrativo",
+   "lado": "expense",
+   "page": 26,
+   "section": "### 20 Despesas administrativas e gerais",
+   "values": [
+    28.823
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Alimentação",
+   "lado": "expense",
+   "page": 26,
+   "section": "### 20 Despesas administrativas e gerais",
+   "values": [
+    43.097
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Manutenção e conservação de bens",
+   "lado": "expense",
+   "page": 26,
+   "section": "### 20 Despesas administrativas e gerais",
+   "values": [
+    156.04
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Propaganda e publicidade",
+   "lado": "expense",
+   "page": 26,
+   "section": "### 20 Despesas administrativas e gerais",
+   "values": [
+    29.821
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Licença de software",
+   "lado": "expense",
+   "page": 26,
+   "section": "### 20 Despesas administrativas e gerais",
+   "values": [
+    56.259
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Material de limpeza, higiene, copa e cozinha",
+   "lado": "expense",
+   "page": 26,
+   "section": "### 20 Despesas administrativas e gerais",
+   "values": [
+    200.958
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Material de escritório",
+   "lado": "expense",
+   "page": 26,
+   "section": "### 20 Despesas administrativas e gerais",
+   "values": [
+    9.198
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Seguro de vida",
+   "lado": "expense",
+   "page": 26,
+   "section": "### 20 Despesas administrativas e gerais",
+   "values": [
+    3.189
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Material esportivo",
+   "lado": "expense",
+   "page": 26,
+   "section": "### 20 Despesas administrativas e gerais",
+   "values": [
+    5.95
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Contingências (reversão)",
+   "lado": "expense",
+   "page": 26,
+   "section": "### 20 Despesas administrativas e gerais",
+   "values": [
+    -553.848
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Outras",
+   "lado": "expense",
+   "page": 26,
+   "section": "### 20 Despesas administrativas e gerais",
+   "values": [
+    271.743
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Móveis e utensílios",
+   "lado": "expense",
+   "page": 21,
+   "section": "#### a. Movimentação do custo",
+   "values": [
+    334.986
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Instalações",
+   "lado": "expense",
+   "page": 21,
+   "section": "#### a. Movimentação do custo",
+   "values": [
+    53.366
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Equipamentos de informática",
+   "lado": "expense",
+   "page": 21,
+   "section": "#### a. Movimentação do custo",
+   "values": [
+    82.647
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Equipamentos esportivos",
+   "lado": "expense",
+   "page": 21,
+   "section": "#### a. Movimentação do custo",
+   "values": [
+    220.535
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Veículos",
+   "lado": "expense",
+   "page": 21,
+   "section": "#### a. Movimentação do custo",
+   "values": [
+    364.251
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Máquinas e equipamentos",
+   "lado": "expense",
+   "page": 21,
+   "section": "#### a. Movimentação do custo",
+   "values": [
+    815.776
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Aparelhos de comunicação",
+   "lado": "expense",
+   "page": 21,
+   "section": "#### a. Movimentação do custo",
+   "values": [
+    2.279
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Salários a pagar",
+   "lado": "expense",
+   "page": 23,
+   "section": "# Ferroviária S.A.F. / ### 12 Salários e encargos a pagar",
+   "values": [
+    0.915564
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "INSS a recolher",
+   "lado": "expense",
+   "page": 23,
+   "section": "# Ferroviária S.A.F. / ### 12 Salários e encargos a pagar",
+   "values": [
+    0.525821
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "FGTS a recolher",
+   "lado": "expense",
+   "page": 23,
+   "section": "# Ferroviária S.A.F. / ### 12 Salários e encargos a pagar",
+   "values": [
+    0.263583
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Rescisões a pagar",
+   "lado": "expense",
+   "page": 23,
+   "section": "# Ferroviária S.A.F. / ### 12 Salários e encargos a pagar",
+   "values": [
+    0.114264
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "PIS sobre folha a recolher",
+   "lado": "expense",
+   "page": 23,
+   "section": "# Ferroviária S.A.F. / ### 12 Salários e encargos a pagar",
+   "values": [
+    0.027935
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "IRRF a recolher",
+   "lado": "expense",
+   "page": 23,
+   "section": "# Ferroviária S.A.F. / ### 12 Salários e encargos a pagar",
+   "values": [
+    0.247436
+   ],
+   "origen": "estado 13"
+  }
+ ]
+}

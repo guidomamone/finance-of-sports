@@ -1,0 +1,189 @@
+{
+ "md": "Clubes/Argentina/Racing/balance2024.md",
+ "pdf": "Clubes/Argentina/Racing/balance2024.pdf",
+ "club": "racing",
+ "year": 2024,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T01:15:35.231Z",
+ "tieOuts": {
+  "cierran": 22,
+  "noCierran": 45
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "43 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "9 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "ladoConocido": 12,
+ "rubros": [
+  {
+   "label": "Generales(Anexo III)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Ejercicio Nro. 122 / 2024                    2023 / Recursos ordinarios",
+   "values": [
+    "13.310.094.018",
+    "13.024.997.519"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Específicos(Anexo III)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Ejercicio Nro. 122 / 2024                    2023 / Recursos ordinarios",
+   "values": [
+    "47.685.051.006",
+    "41.209.162.441"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Diversos (Anexo III)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Ejercicio Nro. 122 / 2024                    2023 / Recursos ordinarios",
+   "values": [
+    "5.372.567.465",
+    "4.408.527.318"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Generales (Anexo IV)",
+   "lado": "expense",
+   "page": 5,
+   "section": "Gastos ordinarios",
+   "values": [
+    "(12.468.943.403)",
+    "(13.290.387.290)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Específicos (Anexo IV)",
+   "lado": "expense",
+   "page": 5,
+   "section": "Gastos ordinarios",
+   "values": [
+    "(43.378.246.330)",
+    "(31.697.170.269)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "efectivo (incluyendo RECPAM)",
+   "lado": null,
+   "page": 7,
+   "section": "inversión / Resultados financieros y por tenencia generados por el",
+   "values": [
+    "(11.772.652.198)",
+    "(2.101.075.514)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(Disminución) / Aumento del efectivo",
+   "lado": null,
+   "page": 7,
+   "section": "inversión / Resultados financieros y por tenencia generados por el",
+   "values": [
+    "(19.498.821.168)",
+    "12.336.618.592"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Divisas en custodia USD",
+   "lado": "expense",
+   "page": 32,
+   "section": "Divisas en custodia",
+   "values": [
+    "1.084",
+    "909,0000",
+    "985.174",
+    "434.578.938"
+   ],
+   "columns": null
+  },
+  {
+   "label": "€",
+   "lado": "expense",
+   "page": 32,
+   "section": "Divisas en custodia",
+   "values": [
+    "500.001",
+    "973,1754",
+    "486.588.284",
+    "2.189.592.068"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Calcio Catania SPA - Castro €",
+   "lado": "revenue",
+   "page": 32,
+   "section": "Venta de jugadores",
+   "values": [
+    "23.367",
+    "973,1754",
+    "22.740.676",
+    "24.258.315"
+   ],
+   "columns": null
+  },
+  {
+   "label": "A.C. Siena SPA Préstamo - Martínez €",
+   "lado": "revenue",
+   "page": 32,
+   "section": "Venta de jugadores",
+   "values": [
+    "125.000",
+    "973,1754",
+    "121.646.925",
+    "129.765.249"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Godoy Cruz – Ojeda USD",
+   "lado": "revenue",
+   "page": 32,
+   "section": "Venta de jugadores",
+   "values": [
+    "500.000",
+    "909,0000",
+    "454.500.000",
+    "952.230.625"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Atlético Mineiro - Zaracho USD",
+   "lado": "revenue",
+   "page": 32,
+   "section": "Venta de jugadores",
+   "values": [
+    "900.000",
+    "909,0000",
+    "818.100.000",
+    "784.028.607"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Southampton – Alcaraz USD",
+   "lado": "revenue",
+   "page": 32,
+   "section": "Venta de jugadores",
+   "values": [
+    "4.100.000",
+    "909,0000",
+    "3.726.900.000",
+    "3.904.145.561"
+   ],
+   "columns": null
+  }
+ ]
+}

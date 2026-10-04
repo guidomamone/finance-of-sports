@@ -1,0 +1,302 @@
+{
+ "md": "Clubes/Brasil/Cuiaba/balanco-patrimonial-2023.md",
+ "pdf": "Clubes/Brasil/Cuiaba/balanco-patrimonial-2023.pdf",
+ "club": "cuiaba",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:52:26.322Z",
+ "tieOuts": {
+  "cierran": 4,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 28,
+  "notasUsadas": []
+ },
+ "ladoConocido": 16,
+ "rubros": [
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": "revenue",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    168532.84
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "RECEITA FUTEBOL PROFISSIONAL",
+   "lado": "revenue",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    164031.359
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PATROCÍNIOS",
+   "lado": null,
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    14582.342
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "PLACAS DE PUBLICIDADE",
+   "lado": null,
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    6050
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DIREITOS ECONÔMICOS DE ATLETAS",
+   "lado": null,
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    17252.05
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "SÓCIO TORCEDOR",
+   "lado": null,
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    2337.031
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "COTAS/TV",
+   "lado": null,
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    103565.41
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "BILHETERIA/JOGOS",
+   "lado": null,
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    20181.467
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "OUTRAS RECEITAS C/ FUTEBOL",
+   "lado": "revenue",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    63.061
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DEMAIS RECEITAS",
+   "lado": "revenue",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    4501.481
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "LICENCIAMENTOS",
+   "lado": null,
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    1074.189
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "ESCOLINHA",
+   "lado": null,
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    1241.567
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "LOTERIAS",
+   "lado": null,
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    887.11
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "OUTRAS RECEITAS",
+   "lado": "revenue",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    1298.615
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-) DEDUÇÕES DAS RECEITAS",
+   "lado": "revenue",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    10599.427
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DESPESAS TRIBUTÁRIAS",
+   "lado": "expense",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    10599.427
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "RECEITA OPERACIONAL LÍQUIDA",
+   "lado": "revenue",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    157933.413
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-) CUSTOS FUTEBOL PROFISSIONAL",
+   "lado": "expense",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    98846.512
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "CUSTOS COM PESSOAL",
+   "lado": "expense",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    74689.52
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "CUSTOS COM JOGOS",
+   "lado": "expense",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    9584.064
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "OUTROS CUSTOS COM FUTEBOL",
+   "lado": "expense",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    14572.928
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-) DESPESAS",
+   "lado": "expense",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    21124.887
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DESPESAS COM PESSOAL",
+   "lado": "expense",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    7341.037
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DESPESAS ADMINISTRATIVAS",
+   "lado": "expense",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    13549.932
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DESPESAS COM VENDAS",
+   "lado": null,
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    107.449
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DESPESAS TRIBUTÁRIAS",
+   "lado": "expense",
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    126.468
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(+/-) DESPESAS/(RECEITAS) OPERACIONAI",
+   "lado": null,
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    605.998
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "DESPESAS/(RECEITAS) FINANCEIRAS",
+   "lado": null,
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+   "values": [
+    605.998
+   ],
+   "origen": "estado 2"
+  }
+ ]
+}

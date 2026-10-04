@@ -1,0 +1,183 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T13:19:55.326Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "Ποσά εκφρασμένα σε μονάδες Ευρώ (L76)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 80,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "596.069,48",
+   "anterior": "287.352,06",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 81,
+   "etiqueta": "Κόστος πωλήσεων",
+   "actual": "-726.277,15",
+   "anterior": "-570.736,08",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 82,
+   "etiqueta": "Μικτό αποτέλεσμα",
+   "actual": "-130.207,67",
+   "anterior": "-283.384,02",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 83,
+   "etiqueta": "Λοιπά συνήθη έσοδα",
+   "actual": "374.833,00",
+   "anterior": "27.112,95",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 84,
+   "etiqueta": "",
+   "actual": "244.625,33",
+   "anterior": "-256.271,07",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 85,
+   "etiqueta": "Έξοδα διοίκησης",
+   "actual": "-300.528,48",
+   "anterior": "-236.959,51",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 86,
+   "etiqueta": "Έξοδα διάθεσης",
+   "actual": "-225.396,36",
+   "anterior": "-175.076,17",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 87,
+   "etiqueta": "Λοιπά έξοδα και ζημιές",
+   "actual": "-99.590,58",
+   "anterior": "-290.945,52",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 88,
+   "etiqueta": "Λοιπά έσοδα και κέρδη",
+   "actual": "30.362,50",
+   "anterior": "541.322,95",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 89,
+   "etiqueta": "Αποτελέσματα προ τόκων και φόρων",
+   "actual": "-350.527,58",
+   "anterior": "-417.929,32",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 91,
+   "etiqueta": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "-2.401,53",
+   "anterior": "-1.599,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 92,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "-352.929,11",
+   "anterior": "-419.528,32",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 93,
+   "etiqueta": "Φόροι εισοδήματος",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 94,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "-352.929,11",
+   "anterior": "-419.528,32",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 94,
+  "actual": "-352.929,11",
+  "anterior": "-419.528,32"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se toma la columna '22/8/2014- 30/6/2015' (L78) como año anterior aunque es un período irregular de ~10 meses?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El año anterior figura como '?' y la columna impresa cubre 22/8/2014-30/6/2015, período no anual (L78).",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado por función en euros (unidades). La fila L84 no tiene etiqueta; es un subtotal (Μικτό αποτέλεσμα + Λοιπά συνήθη έσοδα). No hay notas de desglose. No se imprimen totales de ingresos ni de gastos."
+}

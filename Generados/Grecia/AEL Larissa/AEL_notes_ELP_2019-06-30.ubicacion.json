@@ -1,0 +1,205 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T13:20:49.935Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    25,
+    66
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    74,
+    90
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    187,
+    195
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    213,
+    217
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 11,
+   "lineas": [
+    278,
+    302
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 12,
+   "lineas": [
+    310,
+    313
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 12,
+   "lineas": [
+    317,
+    321
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    325,
+    330
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    334,
+    338
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 12,
+   "lineas": [
+    342,
+    345
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 13,
+   "lineas": [
+    353,
+    357
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 13,
+   "lineas": [
+    361,
+    366
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 13,
+   "lineas": [
+    372,
+    375
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    379,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    388,
+    391
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 14,
+   "lineas": [
+    399,
+    402
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    406,
+    409
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    413,
+    419
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 14,
+   "lineas": [
+    423,
+    432
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    436,
+    439
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 14,
+   "lineas": [
+    443,
+    446
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 15,
+   "lineas": [
+    481,
+    487
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b18"
+ ],
+ "notas_gastos": [
+  "b19",
+  "b20",
+  "b21"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Τα ποσά των κονδυλίων των χρηματοοικονομικών καταστάσεων είναι εκφρασμένα σε Ευρώ ... και δεν έχουν στρογγυλοποιηθεί",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2019",
+ "columna_anterior": "30/6/2018",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estados individuales de la ΠΑΕ AEL (ley 4308/2014, pequeña entidad). Estado de resultados en b2 (pág. 3). Nota 14 Έσοδα (b18) desglosa ingresos; notas 15 Έξοδα (b19), 16 gastos extraordinarios (b20) y 17 intereses/gastos bancarios (b21) desglosan gastos. Importes en euros sin redondear."
+}

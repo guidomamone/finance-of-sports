@@ -1,0 +1,4004 @@
+{
+  "club": "fluminense-br",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Fluminense/demonstracoes-financeiras-2022.md",
+  "generatedAt": "2026-09-30T21:52:52.620Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 4,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 63,
+  "relevantTableCount": 18,
+  "tables": [
+    {
+      "page": 5,
+      "section": "Reversão (constituição) de provisão para contingências, líquida T(d) 40.839 (13.869) / Amortizações e baixas dos direitos de jogadores T(a) (22.948) (13.956) / Depreciações/ amortizações de imobilizado e outros intangíveis T(b) (4.380) (4.153) / Tributos incidentes sobre operações de câmbio (1.862) (5.985) / Gastos gerais 5(e) (28.603) (19.661)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total dos custos e despesas operacionais",
+          "values": [
+            "(292.046)",
+            "(291.030)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit antes do resultado financeiro",
+          "values": [
+            "36.874",
+            "22.905"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas financeiras 5(f)",
+          "values": [
+            "34.162",
+            "26.176"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas financeiras 5(f)",
+          "values": [
+            "(63.976)",
+            "(51.140)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas (despesas) financeiras, líquidas",
+          "values": [
+            "(29.814)",
+            "(24.964)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit (déficit) do exercício",
+          "values": [
+            "7.060",
+            "(2.059)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 7,
+      "section": "Balanço patrimonial / Exercícios findos em 31 de dezembro de 2022 e 2021 | Informações em milhares de Reais / Nota 2022 2021 / Ativos / Circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caixa e equivalentes de caixa 6(a)",
+          "values": [
+            "20.150"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber 6(b)",
+          "values": [
+            "8.110",
+            "5.950"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber na transferência de jogadores 6(c)",
+          "values": [
+            "46.288",
+            "16.516"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos a fornecedores",
+          "values": [
+            "7.341",
+            "5.474"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros ativos",
+          "values": [
+            "2.714",
+            "1.920"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "64.504 50.010 / Não circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a receber na transferência de jogadores 6(c)",
+          "values": [
+            "34.207",
+            "9.164"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos judiciais T(d)",
+          "values": [
+            "17.096",
+            "17.357"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do Realizável a longo prazo",
+          "values": [
+            "51.303",
+            "26.521"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível T(a)",
+          "values": [
+            "78.054",
+            "54.369"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado T(b)",
+          "values": [
+            "335.516",
+            "338.861"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "464.873 419.751 / Total de ativos 529.377 469.761 / Nota 2022 2021 / Passivo e passivo a descoberto / Circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores e outras obrigações",
+          "values": [
+            "10.488",
+            "10.139"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar na transferência de jogadores 6(d)",
+          "values": [
+            "27.675",
+            "22.228"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos 6(e)",
+          "values": [
+            "33.418",
+            "17.889"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos parcelados o(f)",
+          "values": [
+            "28.298",
+            "43.364"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas T(c)",
+          "values": [
+            "42.002",
+            "40.912"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de imagem a pagar",
+          "values": [
+            "8.176",
+            "13.705"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos a recolher",
+          "values": [
+            "20.025",
+            "28.943"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Encargos sociais",
+          "values": [
+            "26.145",
+            "31.698"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar oriundos de acordos judiciais T(d)",
+          "values": [
+            "54.567",
+            "62.824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos recebidos T(e)",
+          "values": [
+            "40.228",
+            "15.635"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros passivos",
+          "values": [
+            "2.127",
+            "2.630"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "293.149 289.967 / Não circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a pagar na transferência de jogadores 6(d)",
+          "values": [
+            "23.826",
+            "3.865"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos 6(e)",
+          "values": [
+            "25.748",
+            "15.120"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos parcelados 6(f)",
+          "values": [
+            "285.826",
+            "206.898"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar oriundos de acordos judiciais T(d)",
+          "values": [
+            "25.558",
+            "23.998"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para contingências T(d)",
+          "values": [
+            "129.876",
+            "182.357"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos recebidos T(e)",
+          "values": [
+            "9.330",
+            "18.552"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "500.164 450.790 / Total do passivo 793.313 740.757 / Passivo a descoberto 8",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ajuste de avaliação patrimonial",
+          "values": [
+            "275.564",
+            "277.630"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prejuízos acumulados",
+          "values": [
+            "(539.500)",
+            "(548.626)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo a descoberto",
+          "values": [
+            "(263.936)",
+            "(270.996)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo e passivo a descoberto",
+          "values": [
+            "529.377",
+            "469.761"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Demonstração das mutações do patrimônio líquido (passivo a descoberto) / Exercícios findos em 31 de dezembro de 2022 e 2021 | Informações em milhares de Reais / Ajuste de / avaliação Déficit Total do passivo / patrimonial acumulado a descoberto",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo em 1º de janeiro de 2021",
+          "values": [
+            "279.696",
+            "(548.632)",
+            "(268.936)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit do exercício",
+          "values": [
+            "(2.059)",
+            "(2.059)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Realização do \"deemed cost\"",
+          "values": [
+            "(2.066)",
+            "2.066"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Outras movimentações (1) (1)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo em 31 de dezembro de 2021",
+          "values": [
+            "277.630",
+            "(548.626)",
+            "(270.996)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit (déficit) do exercício",
+          "values": [
+            "7.060",
+            "7.060"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Realização do \"deemed cost\"",
+          "values": [
+            "(2.066)",
+            "2.066"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "Notas explicativas das demonstrações financeiras de 2022 e informações relevantes / Informações em milhares de Reais, exceto quando indicado de outra forma / Revisão dos principais indicadores financeiros / Ref. 2022 2021 Variação / Principais indicadores de resultado e geração de caixa",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita operacional líquida 5(a)",
+          "values": [
+            "328.920",
+            "313.935",
+            "14.985"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custos e despesas operacionais 5(b) a 5(e)",
+          "values": [
+            "(292.046)",
+            "(291.030)",
+            "(1.016)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado operacional DRE",
+          "values": [
+            "36.874",
+            "22.905",
+            "13.969"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit (déficit) do exercício DRE",
+          "values": [
+            "7.060",
+            "(2.059)",
+            "9.119"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 12,
+      "section": "Caixa proveniente (aplicado) nas: / Atividades operacionais DFC 37.683 84.241 (46.558) / Atividades de investimento DFC (47.600) (33.288) (14.312) / Atividades de financiamento DFC (10.182) (31.307) 21.125 / Principais indicadores patrimoniais",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ativo intangível ao custo (*) BP",
+          "values": [
+            "78.054",
+            "54.369",
+            "23.685"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ativos financeiros 6(a) a 6(c)",
+          "values": [
+            "88.656",
+            "51.780",
+            "36.876"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital circulante líquido BP",
+          "values": [
+            "(228.645)",
+            "(239.957)",
+            "11.312"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para contingências + acordos judiciais",
+          "values": [
+            "(210.001)",
+            "(269.179)",
+            "59.178"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo BP",
+          "values": [
+            "(793.313)",
+            "(740.757)",
+            "(52.556)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo a descoberto BP",
+          "values": [
+            "(263.936)",
+            "(270.996)",
+            "7.060"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "= Aumento de R$ 13.511 das receitas com o programa de sócio-torcedor / = Aumento de R$ 12.450 das receitas com patrocínio / sazonal observado em 2021, pelos efeitos da pandemia COVID-19 (Nota 5(a)) / 3(b) Aumento dos custos e despesas operacionais / jogos. A seguir, as principais variações identificadas:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "O aumento dos custos e despesas operacionais foi compensado por ganhos em processos judiciais (Nota",
+          "values": [
+            "7(d)),"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "que resultaram em uma reversão de provisão para contingências, no total de R$",
+          "values": [
+            "35.636."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 14,
+      "section": "Informações originalmente baseadas no plano de credores / Budget anual / Acumulado do médio do / triênio 2022-2024(*) triênio 2022-2024(*) / Principais informações do orçamento",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita operacional líquida",
+          "values": [
+            "1.100.306",
+            "366.769"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custos e despesas operacionais",
+          "values": [
+            "(872.838)",
+            "(290.946)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado operacional",
+          "values": [
+            "227.468",
+            "75.823"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "(-) Liquidação de passivos financeiros",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Empréstimos/ antecipações, líquido de captações",
+          "values": [
+            "(28.795)",
+            "(9.598)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos judiciais",
+          "values": [
+            "(30.052)",
+            "(10.017)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos fiscais",
+          "values": [
+            "(89.825)",
+            "(29.942)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Centralização de credores",
+          "values": [
+            "(72.000)",
+            "(24.000)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "Outros 896 299",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Liquidação de passivos financeiros",
+          "values": [
+            "(219.776)",
+            "(73.259)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fluxo de caixa estimado",
+          "values": [
+            "7.692",
+            "2.564"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "5(a) Receita operacional líquida / 2022 / Clube social / e esportes / Futebol amadores Total",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita operacional bruta",
+          "values": [
+            "331.784",
+            "15.459",
+            "347.243"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos e contribuições",
+          "values": [
+            "(10.254)",
+            "(10.254)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de arena",
+          "values": [
+            "(8.069)",
+            "(8.069)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita líquida",
+          "values": [
+            "313.461",
+            "15.459",
+            "328.920"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 16,
+      "section": "2021 / Clube social / e esportes / Futebol amadores Total",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita operacional bruta",
+          "values": [
+            "320.192",
+            "13.441",
+            "333.633"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos e contribuições",
+          "values": [
+            "(10.167)",
+            "(10.167)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de arena",
+          "values": [
+            "(9.531)",
+            "(9.531)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita líquida",
+          "values": [
+            "300.494",
+            "13.441",
+            "313.935"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "5 Resultado do exercício (continuação) / S(a) Receita operacional líquida (continuação) / Receita por segmento - Futebol / Nota 2022 2021 / Receita bruta com Futebol",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Direitos de transmissão e premiações por performance (i)",
+          "values": [
+            "151.422",
+            "176.802"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferências de atletas e mecanismo de solidariedade (ii)",
+          "values": [
+            "93.930",
+            "109.593"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocínios",
+          "values": [
+            "32.552",
+            "20.102"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Programa sócio-torcedor",
+          "values": [
+            "22.273",
+            "8.762"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bilheteria e outras receitas em jogos",
+          "values": [
+            "24.372",
+            "2.555"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Timemania",
+          "values": [
+            "1.128",
+            "1.583"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 17,
+      "section": "2022 / Campeonato Copa do Copa Copa Campeonato / Brasileiro Brasil Libertadores Sudamericana Carioca / de 2022 de 2022 de 2022 de 2022 de 2022 Total / Direitos de transmissão e performance",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Direitos de tansmissão fixos",
+          "values": [
+            "30.184",
+            "3.050",
+            "33.234"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiações por performance 40.749 16.861 4.912 5.668",
+          "values": [
+            "68.290"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Exposição",
+          "values": [
+            "35.982",
+            "35.982"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luvas",
+          "values": [
+            "9.583",
+            "9.583"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pay-per-vew",
+          "values": [
+            "4.333",
+            "4.333"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "2021 / Campeonato Campeonato Copa do Copa Copa Campeonato / Brasileiro Brasileiro Brasil Libertadores Sudamericana Carioca / de 2020 de 2021 de 2021 de 2021 de 2021 de 2021 Total / Direitos de transmissão e performance",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Direitos de tansmissão fixos",
+          "values": [
+            "6.738",
+            "28.191",
+            "2.200",
+            "37.129"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiações por performance",
+          "values": [
+            "16.932",
+            "27.852",
+            "7.909",
+            "28.386",
+            "81.079"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Exposição",
+          "values": [
+            "9.269",
+            "27.569",
+            "36.838"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luvas",
+          "values": [
+            "9.583",
+            "9.583"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pay-per-vew",
+          "values": [
+            "3.588",
+            "8.585",
+            "12.173"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "36.527 101.780 7.909 28.386, 2.200 176.802 / (ii) Transferência de atletas e mecanismo de solidariedade / depende do cumprimento de determinadas obrigações de performance. / Contraparte Referente a Atleta 2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Real Betis Venda de direitos Luiz Henrique",
+          "values": [
+            "41.905"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Udinese Venda de direitos Matheus Martins",
+          "values": [
+            "32.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clube Bahia Venda de direitos Gabriel Teixeira",
+          "values": [
+            "7.395"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FIFA (*) Mecanismo de solidariedade Richarlison",
+          "values": [
+            "2.936"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FIFA (*) Mecanismo de solidariedade Gerson Santos",
+          "values": [
+            "2.085"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "Receita por segmento — Futebol (continuação) / (ii) Transferência de atletas e mecanismo de solidariedade (continuação) / incerteza sobre a carreira dos jogadores e a política contábil do Clube. / A seguir, as informações sobre as vendas de direitos de atletas do exercício de 2021: / Contraparte Referente a Atleta 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Manchester City Venda de direitos Kayky da S. Chagas",
+          "values": [
+            "63.539"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eapérance Sportive Venda de direitos Metinho Silu",
+          "values": [
+            "30.201"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Boavista Futebol SAD Venda de direitos Paulo Lucas",
+          "values": [
+            "2.750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Club Atlético Madrid Compensação de treinamento Marcos Paulo",
+          "values": [
+            "2.603"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flamengo Mecanismo de solidariedade Pedro Guilherme",
+          "values": [
+            "2.535"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Olympique Mecanismo de solidariedade Gerson Santos",
+          "values": [
+            "1.915"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 18,
+      "section": "Outros 6.050 / 109.593 / Receita por segmento — Clube social e esportes amadores / 2022 2021 / Receita bruta do clube social e esportes amadores",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Quadro social",
+          "values": [
+            "10.519",
+            "9.658"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Escolinhas esportivas",
+          "values": [
+            "2.241",
+            "1.373"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras",
+          "values": [
+            "2.699",
+            "2.410"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 20,
+      "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5(b) Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2022 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Salários a atletas e demais funcionários",
+          "values": [
+            "97.401",
+            "99.969"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de imagem a atletas",
+          "values": [
+            "32.879",
+            "18.068"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneração de prestadores de serviço (Futebol)",
+          "values": [
+            "11.450",
+            "6.480"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneração de prestadores de serviço (Outras áreas) (i)",
+          "values": [
+            "7.947",
+            "5.643"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subtotal - remuneração direta",
+          "values": [
+            "149.677",
+            "130.160"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prêmios e gratificações",
+          "values": [
+            "12.894",
+            "18.694"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão de férias",
+          "values": [
+            "9.915",
+            "8.324"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão 130 salário",
+          "values": [
+            "9.389",
+            "5.063"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Assistência médica",
+          "values": [
+            "1.323",
+            "2.435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "8.222",
+            "5.587"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 20,
+      "section": "191.420 170.263 / Tributos incidentes",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "FGTS",
+          "values": [
+            "10.067",
+            "9.829"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS",
+          "values": [
+            "6.008",
+            "5.151"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PIS",
+          "values": [
+            "1.216",
+            "1.045"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "17.291 16.025 / 208.711 186.288 / (i) Outras áreas abrangem esportes olímpicos, “back-office” e outras áreas do Clube. / 5(c) Transportes e outros gastos com jogos e competições / 2022 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Viagens e estadias",
+          "values": [
+            "15.042",
+            "12.196"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estádio",
+          "values": [
+            "11.591",
+            "7.552"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de apoio, taxas de federação e outras",
+          "values": [
+            "8.855",
+            "3.376"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas médicas",
+          "values": [
+            "1.320",
+            "1.818"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lanches e refeições",
+          "values": [
+            "2.796",
+            "1.521"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros gastos com jogos e competições",
+          "values": [
+            "3.796",
+            "2.131"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5 Resultado do exercício (continuação) / 5(d) Serviços de terceiros / 2022 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Comissão em vendas de direitos econômicos",
+          "values": [
+            "8.195",
+            "10.038"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comissão na assinatura e/ou renovações de contratos",
+          "values": [
+            "7.476",
+            "4.720"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de limpeza, manutenção e segurança",
+          "values": [
+            "1.733",
+            "1.240"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorários advocatícios",
+          "values": [
+            "3.595",
+            "1.648"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "Demais serviços de terceiros 1.982 878 / 22.981 18.524 / 5(e) Gastos gerais / 2022 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas com conservação e manutenção",
+          "values": [
+            "5.952",
+            "5.860"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiais de consumo",
+          "values": [
+            "4.328",
+            "4.700"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luz, telefone, gás e informática",
+          "values": [
+            "4.173",
+            "4.026"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para perdas com recebíveis",
+          "values": [
+            "2.961",
+            "2.383"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "5(f) Receitas e despesas financeiras / 2022 2021 / Receita financeira / Descontos financeiros obtidos 26.895 22.143 / Variação cambial 5.771 888",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ajuste a valor presente de obrigações a pagar",
+          "values": [
+            "1.496",
+            "2.545"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total da receita financeira",
+          "values": [
+            "34.162",
+            "26.176"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "Despesa financeira",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Juros e encargos de parcelamento de impostos",
+          "values": [
+            "(35.575)",
+            "(26.505)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juros e encargos de financiamento e antecipação de recebíveis",
+          "values": [
+            "(18.006)",
+            "(15.140)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variação cambial",
+          "values": [
+            "(6.806)",
+            "(5.569)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras despesas financeiras, líquidas",
+          "values": [
+            "(3.589)",
+            "(3.926)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total da despesa financeira",
+          "values": [
+            "(63.976)",
+            "(51.140)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas (despesas) financeiras, líquidas",
+          "values": [
+            "(29.814)",
+            "(24.964)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 23,
+      "section": "Ativos e passivos financeiros / contábeis. / Instrumentos financeiros por categoria / Nota 2022 2021 / Ativos financeiros ao custo amortizado",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caixa e equivalentes de caixa",
+          "values": [
+            "20.150"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "8.110",
+            "5.950"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber na transferência de jogadores",
+          "values": [
+            "80.495",
+            "25.680"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 23,
+      "section": "88.656 51.780 / Nota 2022 2021 / Passivos financeiros ao custo amortizado",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fomecedores e outras obrigações",
+          "values": [
+            "10.488",
+            "10.139"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar na transferência de jogadores",
+          "values": [
+            "51.501",
+            "26.093"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "59.166",
+            "33.009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos parcelados",
+          "values": [
+            "314.124",
+            "250.262"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 24,
+      "section": "em que os empréstimos estejam em aberto, utilizando o método da taxa efetiva de juros. / demonstrado ao custo amortizado. / 6(a) Caixa e equivalentes de caixa e aplicações financeiras / 2022 2021 / Caixa e equivalentes de caixa",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aplicações financeiras equivalentes a caixa",
+          "values": [
+            "20.150"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa",
+          "values": [
+            "20.150"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 25,
+      "section": "Contas a receber / Licenciamento de marcas e patrocínio 23.239 18.568 / Premiação - Campeonato Brasileiro / Outras 1.790 1.340 / Menos: provisão para impairment de contas",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "a receber",
+          "values": [
+            "(16.919)",
+            "(13.958)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber, líquidas",
+          "values": [
+            "8.110",
+            "5.950"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcela classificada no circulante",
+          "values": [
+            "8.110",
+            "5.950"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "Indexados em Dólares estadunidenses 83 175 / Em moeda nacional 18.365 5.134 / 87.226 26.657 / Ajuste a valor presente (6.731) (977) / 80.495 25.680",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Parcela classificada no Circulante",
+          "values": [
+            "46.288",
+            "16.516"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcela classificada no Não circulante",
+          "values": [
+            "34.207",
+            "9.164"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "6 Ativos e passivos financeiros (continuação) / 6(d) Contas a pagar na transferência de jogadores / 2022 2021 / Direitos econômicos, comissões, luvas e intermediações / Em moeda estrangeira",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Indexados em Euros",
+          "values": [
+            "9.224",
+            "9.066"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indexados em Dólares estadunidenses",
+          "values": [
+            "1.255"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Em moeda nacional",
+          "values": [
+            "42.683",
+            "15.544"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "52.028 25.865 / Ajuste a valor presente (1.782) (457) / 50.246 25.408 / Outras contas 1.255 685",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total de contas a pagar na transferência de jogadores",
+          "values": [
+            "51.501",
+            "26.093"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcela classificada no Circulante",
+          "values": [
+            "27.675",
+            "22.228"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcela classificada no Não circulante",
+          "values": [
+            "23.826",
+            "3.865"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 6 Ativos e passivos financeiros (continuação) / 6(f) Tributos parcelados / Ref. 2022 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Profut - Lei 13.155/2015 (i)",
+          "values": [
+            "91.876",
+            "148.364"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento - Transação PGFN",
+          "values": [
+            "88.252",
+            "74.225"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento - RFB (ii)",
+          "values": [
+            "43.387"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento - FGTS (iii)",
+          "values": [
+            "44.088",
+            "12.568"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PERSE (iv)",
+          "values": [
+            "35.319"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PERT - Programa Especial de Regularização Tributária",
+          "values": [
+            "10.901",
+            "12.298"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento - INSS",
+          "values": [
+            "2.807"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de tributos parcelados",
+          "values": [
+            "314.124",
+            "250.262"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "28.298",
+            "43.364"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "285.826",
+            "206.898"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "Movimentação do saldo / Seção 2 — Principais / informações financeiras / Saldo inicial Saldo final / (2021) Adições Baixas Transferências Amortizações (2022)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Atletas Profissionais",
+          "values": [
+            "22.481",
+            "26.927",
+            "(4.233)",
+            "4.871",
+            "(6.444)",
+            "43.602"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas em Formação",
+          "values": [
+            "31.625",
+            "19.798",
+            "(12.185)",
+            "(4.871)",
+            "34.367"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub -",
+          "values": [
+            "8.931",
+            "8.410",
+            "(5.796)",
+            "11.545"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub - 17 11.786 6.941 (4.314) (638)",
+          "values": [
+            "13.775"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub -",
+          "values": [
+            "10.908",
+            "4.447",
+            "(2.075)",
+            "(4.233)",
+            "9.047"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "Direito de uso de Software 263 (178) 85 / 54.369 46.725 (16.418) (6.622) 78.054 / Saldo inicial Saldo final / (2020) Adições Baixas Transferências Amortizações (2021)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Atletas Profissionais",
+          "values": [
+            "17.072",
+            "12.947",
+            "(2.564)",
+            "3.232",
+            "(8.206)",
+            "22.481"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas em Formação",
+          "values": [
+            "21.383",
+            "18.776",
+            "(5.302)",
+            "(3.232)",
+            "31.625"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub -",
+          "values": [
+            "9.438",
+            "7.953",
+            "(1.432)",
+            "(7.028)",
+            "8.931"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub - 17 9.655 5.681 (3.259) (291)",
+          "values": [
+            "11.786"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub - 20 2.290 5.142 (611)",
+          "values": [
+            "4.087",
+            "10.908"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "38.622 31.941 (7.866) (8.328) 54.369 / Investimentos em atletas profissionais / 2022 / Atleta Contraparte Montante / Aquisição de direitos econômicos e federativos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cristiano da Silva Sheriff",
+          "values": [
+            "8.572"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cláudio R. Gomes (\"Guga\") Atletico-MG",
+          "values": [
+            "9.668"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marcos da Silva França (\"Keno\") Atletico-MG",
+          "values": [
+            "5.687"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vinícius Moreira de Lima (\"Lima\") Ceará",
+          "values": [
+            "3.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total investimento 2022",
+          "values": [
+            "26.927"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "2021 / Atleta Contraparte Montante / Aquisição de direitos econômicos e federativos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caio Oliveira (\"Caio Paulista”) Tombense",
+          "values": [
+            "9.199"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "John Arias Patriotas",
+          "values": [
+            "3.147"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": "visando formar mais e melhores atletas. / seus atletas. / no Clube. / Reconciliação com a demonstração dos fluxos de caixa / Classificação na DFC 2022 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo inicial do ativo intangível",
+          "values": [
+            "54.369",
+            "38.622"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização dos direitos econômicos de atletas Atividade operacional",
+          "values": [
+            "(6.444)",
+            "(8.328)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": "Amortização de outros direitos intangíveis Atividade operacional (178)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Investimento em direitos de atletas Atividade de investimento",
+          "values": [
+            "46.725",
+            "31.941"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixas de direitos econômicos de atletas Atividade de investimento",
+          "values": [
+            "(16.418)",
+            "(7.866)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo final do ativo intangível",
+          "values": [
+            "78.054",
+            "54.369"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "T(b) Imobilizado / Seção 2 — Principais / informações financeiras / Taxa de / depreciação 2021 Aquisições Baixas  Depreciação 2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Sede 305.326 379 (3)",
+          "values": [
+            "(2.752)",
+            "302.950"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações e benfeitorias 1a2% 150.684",
+          "values": [
+            "(2.250)",
+            "148.684"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "152.000",
+            "152.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "Equipamentos Diversos 10% 1.074 107 (262) 919 / Pinacoteca e monumentos 727 727 / Móveis e utensílios 10% 302 (58) 244 / Veículos 20% 74 (3) (71) / Equipamentos de processamento 20% 465 22 (111) 376",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CT BARRA 29.793",
+          "values": [
+            "(1.347)",
+            "28.861"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total 3% 29.793",
+          "values": [
+            "(1.347)",
+            "28.861"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Xerém 3.742 84 (121)",
+          "values": [
+            "3.705"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações e benfeitorias 1a2% 3.682 60 (102)",
+          "values": [
+            "3.640"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "Equipamentos de processamento 20% 45 5 (13) 37 / Equipamentos Diversos 10% / 338.861 878 (3) (4.220) 335.516 / Taxa de / depreciação 2020 Aquisições Baixas  Depreciação 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Sede 307.213 904 (146)",
+          "values": [
+            "(2.645)",
+            "305.326"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações e benfeitorias 1a2% 152.828",
+          "values": [
+            "(2.199)",
+            "150.684"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "152.000",
+            "152.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos Diversos 10% 1.183 166 (275)",
+          "values": [
+            "1.074"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "Pinacoteca e monumentos 727 727 / Móveis e utensílios 10% 97 233 (28) 302 / Veículos 20% 303 (146) (83) 74 / Equipamentos de processamento 20% 75 450 (60) 465",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CT BARRA 30.817",
+          "values": [
+            "(1.186)",
+            "29.793"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total 5% 30.817",
+          "values": [
+            "(1.186)",
+            "29.793"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Xerém 3.515 427 (200)",
+          "values": [
+            "3.742"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações e benfeitorias 1a2% 3.439 407 (164)",
+          "values": [
+            "3.682"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "T(c) Obrigações trabalhistas / 2022 2021 / Salários a pagar 14.348 12.777 / Provisão de férias 12.477 15.487 / Rescisões a pagar 8.942 6.219",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "130 salário",
+          "values": [
+            "5.061",
+            "6.429"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "1.174"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "Composição do saldo / Contas a pagar em Provisão para / De pósitos judiciais acordos judiciais contingências (i) / 2022 2021 2022 2021 2022 2021 / Natureza",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Trabalhista",
+          "values": [
+            "15.309",
+            "15.549",
+            "(25.686)",
+            "(27.811)",
+            "(90.619)",
+            "(123.836)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Civeis",
+          "values": [
+            "1.787",
+            "1.808",
+            "(54.439)",
+            "(59.011)",
+            "(39.257)",
+            "(58.521)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "17.096 17.357 (80.125) (86.822) (129.876) (182.357) / Classificação no:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Passivo circulante",
+          "values": [
+            "(54.567)",
+            "(62.824)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo não circulante",
+          "values": [
+            "(25.558)",
+            "(23.998)",
+            "(129.876)",
+            "(182.357)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "Movimentação do passivo contingente e acordos judiciais / demonstração de resultados (2021 — perda de R$ 13.869). / 2022 2021 / Saldo inicial de acordos judiciais e provisão para contingências 269.179 262.043 / Variações com impacto na demonstração do resultado",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Inflação do saldo inicial reconhecida na variação da provisão",
+          "values": [
+            "15.559",
+            "26.362"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Novos processos",
+          "values": [
+            "2.778",
+            "4.570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alteração do valor ou prognóstico de risco",
+          "values": [
+            "(59.176)",
+            "(17.063)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de variações com impacto no resultado do exercício",
+          "values": [
+            "(40.839)",
+            "13.869"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamentos",
+          "values": [
+            "(18.339)",
+            "(6.733)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo final de acordos judiciais e provisão para contingências",
+          "values": [
+            "210.001",
+            "269.179"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 33,
+      "section": "T(e) Adiantamentos recebidos / acordo com a competência dos respectivos contratos. / 2022 2021 / Televisionamento / Bônus de assunatura do contrato de direitos de transmissão",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "ref. ao Campeonato Brasileiro 2019-2024",
+          "values": [
+            "22.583",
+            "33.513"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento da parcela fixa do campeonato brasileiro de 2023",
+          "values": [
+            "26.298"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "Outros 677 674 / 49.558 34.187",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Parcela classificada no Circulante",
+          "values": [
+            "40.228",
+            "15.635"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcela classificada no Não Circulante",
+          "values": [
+            "9.330",
+            "18.552"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 36,
+      "section": "2022 / Indexado aos / Dólares Indexado ao / estadunidenses Euro Reais / (CUSD\") (CEURº) (R$) Total",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a receber de clientes, na transf. de jogadores",
+          "values": [
+            "68.778",
+            "11.634",
+            "80.495"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar na transf. de jogadores (121)",
+          "values": [
+            "(9.224)",
+            "(42.156)",
+            "(51.501)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para contingências e acordos judiciais",
+          "values": [
+            "(6.176)",
+            "(203.825)",
+            "(210.001)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Exposição líquida",
+          "values": [
+            "(6.214)",
+            "59.554",
+            "(234.347)",
+            "(181.007)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 36,
+      "section": "2021 / Indexado aos / Dólares Indexado ao / estadunidenses Euro Reais / (CUSD\") (CEURº) (R$) Total",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a receber de clientes, na transf. de jogadores",
+          "values": [
+            "21.348",
+            "4.157",
+            "25.680"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar na transf. de jogadores",
+          "values": [
+            "(1.255)",
+            "(9.066)",
+            "(15.772)",
+            "(26.093)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para contingências e acordos judiciais",
+          "values": [
+            "(13.680)",
+            "(3.320)",
+            "(252.179)",
+            "(269.179)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Exposição líquida",
+          "values": [
+            "(14.760)",
+            "8.962",
+            "(263.794)",
+            "(269.592)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 37,
+      "section": "Análise de sensibilidade / demonstrações financeiras do Clube, dependendo da oscilação do câmbio. / Exposição líquida e impacto / no resultado do exercício / 2022 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Exposição líquida em USD",
+          "values": [
+            "(6.214)",
+            "(14.760)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valorização do Real em 10%",
+          "values": [
+            "1.476"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 37,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depreciação do Real em 25%",
+          "values": [
+            "(1.554)",
+            "(3.690)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Exposição líquida em Euro",
+          "values": [
+            "59.554",
+            "8.962"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 38,
+      "section": "Vencidos Vencidos / até 180 acima de / A vencer dias 180 dias Total / Em 31 de dezembro de 2022 / Taxa de perda esperada -81%",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Valor bruto - Contas a receber 84.179",
+          "values": [
+            "20.875",
+            "105.524"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber de clientes",
+          "values": [
+            "8.110",
+            "16.919",
+            "25.029"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber na transferência de jogadores 76.069",
+          "values": [
+            "3.956",
+            "80.495"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 38,
+      "section": "Provisão para perdas esperadas (16.919) (16.919) / Em 31 de dezembro de 2021 / Taxa de perda esperada -100%",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Valor bruto - Contas a receber",
+          "values": [
+            "30.255",
+            "1.375",
+            "13.958",
+            "45.588"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber de clientes",
+          "values": [
+            "5.950",
+            "13.958",
+            "19.908"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber na transferência de jogadores",
+          "values": [
+            "24.305",
+            "1.375",
+            "25.680"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "10 Gestão de riscos (continuação) / 10(c) Risco de liquidez (continuação) / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total soma / Em 31 de dezembro de 2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores e outras obrigações",
+          "values": [
+            "10.488",
+            "10.488",
+            "10.488"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar na transferência de jogadores",
+          "values": [
+            "27.675",
+            "23.826",
+            "51.501",
+            "51.501"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "33.418",
+            "25.748",
+            "59.166",
+            "59.166"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos parcelados",
+          "values": [
+            "28.298",
+            "75.910",
+            "113.686",
+            "96.230",
+            "314.124",
+            "314.124"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas e direitos de imagem",
+          "values": [
+            "50.178",
+            "50.178",
+            "50.178"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos a recolher, incluindo encargos sociais",
+          "values": [
+            "46.170",
+            "46.170",
+            "46.170"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar em acordos judiciais",
+          "values": [
+            "54.567",
+            "15.162",
+            "1.566",
+            "8.830",
+            "80.125",
+            "80.125"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros passivos, incluindo adiantamentos",
+          "values": [
+            "42.355",
+            "9.330",
+            "51.685",
+            "51.685"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subtotal conforme demonstrações financeiras",
+          "values": [
+            "293.149",
+            "149.976",
+            "115.252",
+            "105.060",
+            "663.437",
+            "663.437"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para contingências (i)",
+          "values": [
+            "24.000",
+            "24.000",
+            "72.000",
+            "9.876",
+            "129.876",
+            "129.876"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo em 2022",
+          "values": [
+            "317.149",
+            "173.976",
+            "187.252",
+            "114.936",
+            "793.313",
+            "793.313"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "Em 31 de dezembro de 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores e outras obrigações",
+          "values": [
+            "10.139",
+            "10.139",
+            "10.139"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar na transferência de jogadores",
+          "values": [
+            "22.228",
+            "3.865",
+            "26.093",
+            "26.093"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "17.889",
+            "8.387",
+            "6.733",
+            "33.009",
+            "33.009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos parcelados",
+          "values": [
+            "43.364",
+            "53.171",
+            "47.231",
+            "106.496",
+            "250.262",
+            "250.262"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas e direitos de imagem",
+          "values": [
+            "54.617",
+            "54.617",
+            "54.617"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos a recolher, incluindo encargos sociais",
+          "values": [
+            "60.641",
+            "60.641",
+            "60.641"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar em acordos judiciais",
+          "values": [
+            "62.824",
+            "16.892",
+            "7.106",
+            "86.822",
+            "86.822"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros passivos, incluindo adiantamentos",
+          "values": [
+            "18.265",
+            "9.224",
+            "9.328",
+            "36.817",
+            "36.817"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subtotal conforme demonstrações financeiras",
+          "values": [
+            "289.967",
+            "91.539",
+            "70.398",
+            "106.496",
+            "558.400",
+            "558.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para contingências (i)",
+          "values": [
+            "182.357",
+            "182.357",
+            "182.357"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo em 2021",
+          "values": [
+            "472.324",
+            "91.539",
+            "70.398",
+            "106.496",
+            "740.757",
+            "740.757"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": "Fluminense Football Club Seção 4 — Itens / Notas explicativas das demonstrações financeiras de 2022 não reconhecidos / Informações em milhares de Reais, exceto quando indicado de outra forma / 1 1 Perdas possíveis não provisionadas / 2022 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Trabalhistas",
+          "values": [
+            "28.377",
+            "26.516"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cíveis",
+          "values": [
+            "57.556",
+            "49.383"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributárias",
+          "values": [
+            "60.171",
+            "56.030"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": "milhares de reais, salvo indicação contrária. / 12(i) Novas normas e interpretações de normas / interpretação ou alteração que tenham sido emitidas, mas ainda não vigentes. / tenham um impacto significativo nas demonstrações financeiras do Clube. / 1 3 Seguros",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "= Sede Laranjeiras, com cobertura de R$ 168.422 (2021 — R$",
+          "values": [
+            "168.422)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= CT Xerém, com cobertura de R$ 1.232 (2021 — R$",
+          "values": [
+            "1.232)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 5,
+      "section": "Reversão (constituição) de provisão para contingências, líquida T(d) 40.839 (13.869) / Amortizações e baixas dos direitos de jogadores T(a) (22.948) (13.956) / Depreciações/ amortizações de imobilizado e outros intangíveis T(b) (4.380) (4.153) / Tributos incidentes sobre operações de câmbio (1.862) (5.985) / Gastos gerais 5(e) (28.603) (19.661)",
+      "likelyRelevant": true,
+      "totalLabel": "Total dos custos e despesas operacionais",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 7,
+      "section": "64.504 50.010 / Não circulante",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do Realizável a longo prazo",
+      "target": "51.303",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "64.504 50.010 / Não circulante",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do Realizável a longo prazo",
+      "target": "26.521",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "500.164 450.790 / Total do passivo 793.313 740.757 / Passivo a descoberto 8",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do passivo a descoberto",
+      "target": "(263.936)",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "500.164 450.790 / Total do passivo 793.313 740.757 / Passivo a descoberto 8",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do passivo a descoberto",
+      "target": "(270.996)",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "500.164 450.790 / Total do passivo 793.313 740.757 / Passivo a descoberto 8",
+      "likelyRelevant": false,
+      "totalLabel": "Total do passivo e passivo a descoberto",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 12,
+      "section": "Caixa proveniente (aplicado) nas: / Atividades operacionais DFC 37.683 84.241 (46.558) / Atividades de investimento DFC (47.600) (33.288) (14.312) / Atividades de financiamento DFC (10.182) (31.307) 21.125 / Principais indicadores patrimoniais",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do passivo BP",
+      "target": "(793.313)",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "521377"
+    },
+    {
+      "page": 12,
+      "section": "Caixa proveniente (aplicado) nas: / Atividades operacionais DFC 37.683 84.241 (46.558) / Atividades de investimento DFC (47.600) (33.288) (14.312) / Atividades de financiamento DFC (10.182) (31.307) 21.125 / Principais indicadores patrimoniais",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do passivo BP",
+      "target": "(740.757)",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "337770"
+    },
+    {
+      "page": 12,
+      "section": "Caixa proveniente (aplicado) nas: / Atividades operacionais DFC 37.683 84.241 (46.558) / Atividades de investimento DFC (47.600) (33.288) (14.312) / Atividades de financiamento DFC (10.182) (31.307) 21.125 / Principais indicadores patrimoniais",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do passivo BP",
+      "target": "(52.556)",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "183607"
+    },
+    {
+      "page": 20,
+      "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5(b) Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2022 2021",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Subtotal - remuneração direta",
+      "target": "149.677",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5(b) Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2022 2021",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Subtotal - remuneração direta",
+      "target": "130.160",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "5(f) Receitas e despesas financeiras / 2022 2021 / Receita financeira / Descontos financeiros obtidos 26.895 22.143 / Variação cambial 5.771 888",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total da receita financeira",
+      "target": "34.162",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-32666"
+    },
+    {
+      "page": 21,
+      "section": "5(f) Receitas e despesas financeiras / 2022 2021 / Receita financeira / Descontos financeiros obtidos 26.895 22.143 / Variação cambial 5.771 888",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total da receita financeira",
+      "target": "26.176",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-23631"
+    },
+    {
+      "page": 21,
+      "section": "Despesa financeira",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total da despesa financeira",
+      "target": "(63.976)",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "Despesa financeira",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total da despesa financeira",
+      "target": "(51.140)",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 26,
+      "section": "52.028 25.865 / Ajuste a valor presente (1.782) (457) / 50.246 25.408 / Outras contas 1.255 685",
+      "likelyRelevant": false,
+      "totalLabel": "Total de contas a pagar na transferência de jogadores",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 27,
+      "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 6 Ativos e passivos financeiros (continuação) / 6(f) Tributos parcelados / Ref. 2022 2021",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total de tributos parcelados",
+      "target": "314.124",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "2506"
+    },
+    {
+      "page": 27,
+      "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 6 Ativos e passivos financeiros (continuação) / 6(f) Tributos parcelados / Ref. 2022 2021",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total de tributos parcelados",
+      "target": "250.262",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-2807"
+    },
+    {
+      "page": 29,
+      "section": "38.622 31.941 (7.866) (8.328) 54.369 / Investimentos em atletas profissionais / 2022 / Atleta Contraparte Montante / Aquisição de direitos econômicos e federativos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total investimento 2022",
+      "target": "26.927",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "Equipamentos Diversos 10% 1.074 107 (262) 919 / Pinacoteca e monumentos 727 727 / Móveis e utensílios 10% 302 (58) 244 / Veículos 20% 74 (3) (71) / Equipamentos de processamento 20% 465 22 (111) 376",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total 3% 29.793",
+      "target": "(1.347)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "Equipamentos Diversos 10% 1.074 107 (262) 919 / Pinacoteca e monumentos 727 727 / Móveis e utensílios 10% 302 (58) 244 / Veículos 20% 74 (3) (71) / Equipamentos de processamento 20% 465 22 (111) 376",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total 3% 29.793",
+      "target": "28.861",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "Pinacoteca e monumentos 727 727 / Móveis e utensílios 10% 97 233 (28) 302 / Veículos 20% 303 (146) (83) 74 / Equipamentos de processamento 20% 75 450 (60) 465",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total 5% 30.817",
+      "target": "(1.186)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "Pinacoteca e monumentos 727 727 / Móveis e utensílios 10% 97 233 (28) 302 / Veículos 20% 303 (146) (83) 74 / Equipamentos de processamento 20% 75 450 (60) 465",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total 5% 30.817",
+      "target": "29.793",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "Movimentação do passivo contingente e acordos judiciais / demonstração de resultados (2021 — perda de R$ 13.869). / 2022 2021 / Saldo inicial de acordos judiciais e provisão para contingências 269.179 262.043 / Variações com impacto na demonstração do resultado",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total de variações com impacto no resultado do exercício",
+      "target": "(40.839)",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "Movimentação do passivo contingente e acordos judiciais / demonstração de resultados (2021 — perda de R$ 13.869). / 2022 2021 / Saldo inicial de acordos judiciais e provisão para contingências 269.179 262.043 / Variações com impacto na demonstração do resultado",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total de variações com impacto no resultado do exercício",
+      "target": "13.869",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 39,
+      "section": "10 Gestão de riscos (continuação) / 10(c) Risco de liquidez (continuação) / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total soma / Em 31 de dezembro de 2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Subtotal conforme demonstrações financeiras",
+      "target": "293.149",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 39,
+      "section": "10 Gestão de riscos (continuação) / 10(c) Risco de liquidez (continuação) / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total soma / Em 31 de dezembro de 2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Subtotal conforme demonstrações financeiras",
+      "target": "149.976",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "106836"
+    },
+    {
+      "page": 39,
+      "section": "10 Gestão de riscos (continuação) / 10(c) Risco de liquidez (continuação) / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total soma / Em 31 de dezembro de 2022",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Subtotal conforme demonstrações financeiras",
+      "target": "115.252",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "269188"
+    },
+    {
+      "page": 39,
+      "section": "10 Gestão de riscos (continuação) / 10(c) Risco de liquidez (continuação) / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total soma / Em 31 de dezembro de 2022",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Subtotal conforme demonstrações financeiras",
+      "target": "105.060",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "162352"
+    },
+    {
+      "page": 39,
+      "section": "10 Gestão de riscos (continuação) / 10(c) Risco de liquidez (continuação) / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total soma / Em 31 de dezembro de 2022",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Subtotal conforme demonstrações financeiras",
+      "target": "663.437",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-269188"
+    },
+    {
+      "page": 39,
+      "section": "10 Gestão de riscos (continuação) / 10(c) Risco de liquidez (continuação) / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total soma / Em 31 de dezembro de 2022",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Subtotal conforme demonstrações financeiras",
+      "target": "663.437",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-269188"
+    },
+    {
+      "page": 39,
+      "section": "10 Gestão de riscos (continuação) / 10(c) Risco de liquidez (continuação) / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total soma / Em 31 de dezembro de 2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do passivo em 2022",
+      "target": "317.149",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-293149"
+    },
+    {
+      "page": 39,
+      "section": "10 Gestão de riscos (continuação) / 10(c) Risco de liquidez (continuação) / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total soma / Em 31 de dezembro de 2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do passivo em 2022",
+      "target": "173.976",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-149976"
+    },
+    {
+      "page": 39,
+      "section": "10 Gestão de riscos (continuação) / 10(c) Risco de liquidez (continuação) / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total soma / Em 31 de dezembro de 2022",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do passivo em 2022",
+      "target": "187.252",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-115252"
+    },
+    {
+      "page": 39,
+      "section": "10 Gestão de riscos (continuação) / 10(c) Risco de liquidez (continuação) / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total soma / Em 31 de dezembro de 2022",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total do passivo em 2022",
+      "target": "114.936",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-105060"
+    },
+    {
+      "page": 39,
+      "section": "10 Gestão de riscos (continuação) / 10(c) Risco de liquidez (continuação) / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total soma / Em 31 de dezembro de 2022",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total do passivo em 2022",
+      "target": "793.313",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-663437"
+    },
+    {
+      "page": 39,
+      "section": "10 Gestão de riscos (continuação) / 10(c) Risco de liquidez (continuação) / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total soma / Em 31 de dezembro de 2022",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total do passivo em 2022",
+      "target": "793.313",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-663437"
+    },
+    {
+      "page": 39,
+      "section": "Em 31 de dezembro de 2021",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Subtotal conforme demonstrações financeiras",
+      "target": "289.967",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 39,
+      "section": "Em 31 de dezembro de 2021",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Subtotal conforme demonstrações financeiras",
+      "target": "91.539",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "125397"
+    },
+    {
+      "page": 39,
+      "section": "Em 31 de dezembro de 2021",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Subtotal conforme demonstrações financeiras",
+      "target": "70.398",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "151490"
+    },
+    {
+      "page": 39,
+      "section": "Em 31 de dezembro de 2021",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Subtotal conforme demonstrações financeiras",
+      "target": "106.496",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "182741"
+    },
+    {
+      "page": 39,
+      "section": "Em 31 de dezembro de 2021",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Subtotal conforme demonstrações financeiras",
+      "target": "558.400",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-151490"
+    },
+    {
+      "page": 39,
+      "section": "Em 31 de dezembro de 2021",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Subtotal conforme demonstrações financeiras",
+      "target": "558.400",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-308138"
+    },
+    {
+      "page": 39,
+      "section": "Em 31 de dezembro de 2021",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do passivo em 2021",
+      "target": "472.324",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-289967"
+    },
+    {
+      "page": 39,
+      "section": "Em 31 de dezembro de 2021",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do passivo em 2021",
+      "target": "91.539",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "90818"
+    },
+    {
+      "page": 39,
+      "section": "Em 31 de dezembro de 2021",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do passivo em 2021",
+      "target": "70.398",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "111959"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 73,
+    "results": [
+      {
+        "label": "Superávit antes do resultado financeiro",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit antes do resultado financeiro",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas financeiras 5(f)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas financeiras 5(f)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas financeiras 5(f)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas financeiras 5(f)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas (despesas) financeiras, líquidas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas (despesas) financeiras, líquidas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit (déficit) do exercício",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit (déficit) do exercício",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita operacional líquida 5(a)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita operacional líquida 5(a)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Custos e despesas operacionais 5(b) a 5(e)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Custos e despesas operacionais 5(b) a 5(e)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado operacional DRE",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado operacional DRE",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit (déficit) do exercício DRE",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit (déficit) do exercício DRE",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "O aumento dos custos e despesas operacionais foi compensado por ganhos em processos judiciais (Nota",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "O aumento dos custos e despesas operacionais foi compensado por ganhos em processos judiciais (Nota",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "que resultaram em uma reversão de provisão para contingências, no total de R$",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "que resultaram em uma reversão de provisão para contingências, no total de R$",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita operacional bruta",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita operacional bruta",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impostos e contribuições",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impostos e contribuições",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direito de arena",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Direito de arena (Futebol)",
+        "similarity": 67
+      },
+      {
+        "label": "Direito de arena",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita líquida",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita líquida",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direitos de transmissão e premiações por performance (i)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "broadcasting",
+        "matchedLabel": "Direitos de transmissão e premiações por performance",
+        "similarity": 100
+      },
+      {
+        "label": "Direitos de transmissão e premiações por performance (i)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transferências de atletas e mecanismo de solidariedade (ii)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transferências de atletas e mecanismo de solidariedade (ii)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrocínios",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Patrocínios",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Patrocínios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Programa sócio-torcedor",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "member_dues",
+        "matchedLabel": "Programa sócio-torcedor (Sócio Futebol)",
+        "similarity": 75
+      },
+      {
+        "label": "Programa sócio-torcedor",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bilheteria e outras receitas em jogos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Bilheteria e outras receitas em jogos",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Bilheteria e outras receitas em jogos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Timemania",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Timemania",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Manchester City Venda de direitos Kayky da S. Chagas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Manchester City Venda de direitos Kayky da S. Chagas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Eapérance Sportive Venda de direitos Metinho Silu",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Eapérance Sportive Venda de direitos Metinho Silu",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Boavista Futebol SAD Venda de direitos Paulo Lucas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Boavista Futebol SAD Venda de direitos Paulo Lucas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Club Atlético Madrid Compensação de treinamento Marcos Paulo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Club Atlético Madrid Compensação de treinamento Marcos Paulo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Flamengo Mecanismo de solidariedade Pedro Guilherme",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Flamengo Mecanismo de solidariedade Pedro Guilherme",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Olympique Mecanismo de solidariedade Gerson Santos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Olympique Mecanismo de solidariedade Gerson Santos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Quadro social",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "member_dues",
+        "matchedLabel": "Quadro social",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Quadro social",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Escolinhas esportivas",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_sports",
+        "matchedLabel": "Escolinhas esportivas",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Escolinhas esportivas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras (Futebol)",
+        "similarity": 50
+      },
+      {
+        "label": "Outras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Salários a atletas e demais funcionários",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Salários a atletas e demais funcionários",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direito de imagem a atletas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direito de imagem a atletas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Remuneração de prestadores de serviço (Futebol)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Remuneração de prestadores de serviço (Futebol)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Remuneração de prestadores de serviço (Outras áreas) (i)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Remuneração de prestadores de serviço (Outras áreas) (i)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prêmios e gratificações",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prêmios e gratificações",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão de férias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão de férias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão 130 salário",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão 130 salário",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Assistência médica",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Assistência médica",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Viagens e estadias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Viagens e estadias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Estádio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Estádio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços de apoio, taxas de federação e outras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços de apoio, taxas de federação e outras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas médicas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas médicas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Lanches e refeições",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Lanches e refeições",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros gastos com jogos e competições",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros gastos com jogos e competições",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Transporte e outros gastos com jogos e competições",
+        "similarity": 83
+      },
+      {
+        "label": "Comissão em vendas de direitos econômicos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Comissão em vendas de direitos econômicos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Comissão na assinatura e/ou renovações de contratos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Comissão na assinatura e/ou renovações de contratos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços de limpeza, manutenção e segurança",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços de limpeza, manutenção e segurança",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Honorários advocatícios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Honorários advocatícios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com conservação e manutenção",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com conservação e manutenção",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Materiais de consumo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Materiais de consumo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Luz, telefone, gás e informática",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Luz, telefone, gás e informática",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão para perdas com recebíveis",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão para perdas com recebíveis",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ajuste a valor presente de obrigações a pagar",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ajuste a valor presente de obrigações a pagar",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros e encargos de parcelamento de impostos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros e encargos de parcelamento de impostos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros e encargos de financiamento e antecipação de recebíveis",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros e encargos de financiamento e antecipação de recebíveis",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variação cambial",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variação cambial",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras despesas financeiras, líquidas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras despesas financeiras, líquidas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Caixa e equivalentes de caixa",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Caixa e equivalentes de caixa",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contas a receber",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contas a receber",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contas a receber na transferência de jogadores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contas a receber na transferência de jogadores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fomecedores e outras obrigações",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fomecedores e outras obrigações",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contas a pagar na transferência de jogadores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contas a pagar na transferência de jogadores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Empréstimos e financiamentos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Empréstimos e financiamentos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Tributos parcelados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Tributos parcelados",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aplicações financeiras equivalentes a caixa",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aplicações financeiras equivalentes a caixa",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Inflação do saldo inicial reconhecida na variação da provisão",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Inflação do saldo inicial reconhecida na variação da provisão",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Novos processos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Novos processos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Alteração do valor ou prognóstico de risco",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Alteração do valor ou prognóstico de risco",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pagamentos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pagamentos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldo final de acordos judiciais e provisão para contingências",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldo final de acordos judiciais e provisão para contingências",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Exposição líquida em USD",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Exposição líquida em USD",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Valorização do Real em 10%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Valorização do Real em 10%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Fluminense",
+    "matches": [
+      {
+        "leagueId": "br-serieA",
+        "year": "2022",
+        "matchedName": "Fluminense",
+        "wikipediaPage": "2022 Campeonato Brasileiro Série A"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "24 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

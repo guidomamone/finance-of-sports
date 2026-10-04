@@ -1,0 +1,371 @@
+{
+ "md": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.md",
+ "pdf": "Clubes/Portugal/Moreirense/relatorio-contas-2024-25.pdf",
+ "club": "moreirense",
+ "year": 2025,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:34.271Z",
+ "tieOuts": {
+  "cierran": 33,
+  "noCierran": 7
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "7 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 40,
+  "notasUsadas": [
+   "33",
+   "14",
+   "31"
+  ]
+ },
+ "ladoConocido": 28,
+ "rubros": [
+  {
+   "label": "Vendas e serviços prestados",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / PERÍODO FINDO EM 30 DE JUNHO DE 2025 E 2024",
+   "values": [
+    5.052729
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / PERÍODO FINDO EM 30 DE JUNHO DE 2025 E 2024",
+   "values": [
+    0.784972
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "expense",
+   "page": 14,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / PERÍODO FINDO EM 30 DE JUNHO DE 2025 E 2024",
+   "values": [
+    -0.017388
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": null,
+   "page": 14,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / PERÍODO FINDO EM 30 DE JUNHO DE 2025 E 2024",
+   "values": [
+    -1.666157
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "lado": "expense",
+   "page": 14,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / PERÍODO FINDO EM 30 DE JUNHO DE 2025 E 2024",
+   "values": [
+    -5.87095
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Outros rendimentos e ganhos",
+   "lado": "revenue",
+   "page": 14,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / PERÍODO FINDO EM 30 DE JUNHO DE 2025 E 2024",
+   "values": [
+    8.733803
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Outros gastos e perdas",
+   "lado": "expense",
+   "page": 14,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / PERÍODO FINDO EM 30 DE JUNHO DE 2025 E 2024",
+   "values": [
+    -0.355608
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Gastos/reversões de depreciação e amortização",
+   "lado": "expense",
+   "page": 14,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / PERÍODO FINDO EM 30 DE JUNHO DE 2025 E 2024",
+   "values": [
+    -0.903861
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Imposto sobre o rendimento do período",
+   "lado": "expense",
+   "page": 14,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / # DEMONSTRAÇÃO DOS RESULTADOS POR NATUREZAS / PERÍODO FINDO EM 30 DE JUNHO DE 2025 E 2024",
+   "values": [
+    -0.350186
+   ],
+   "origen": "estado 13 (su nota queda consumida sin abrir)"
+  },
+  {
+   "label": "POSIÇÃO NO INÍCIO DO PERÍODO",
+   "lado": null,
+   "page": 15,
+   "section": "MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / DEMONSTRAÇÃO DAS ALTERAÇÕES DO CAPITAL PRÓPRIO NO PERÍODO FINDO EM 30 DE JUNHO DE 2024",
+   "values": [
+    1000
+   ],
+   "origen": "nota 14 (ancla 15)",
+   "ancla": "POSIÇÃO NO INÍCIO DO PERÍODO"
+  },
+  {
+   "label": "Realizações de capital",
+   "lado": null,
+   "page": 15,
+   "section": "DEMONSTRAÇÃO DAS ALTERAÇÕES DO CAPITAL PRÓPRIO NO PERÍODO FINDO EM 30 DE JUNHO DE 2025",
+   "values": [
+    125
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "POSIÇÃO NO FIM DO PERÍODO",
+   "lado": null,
+   "page": 15,
+   "section": "DEMONSTRAÇÃO DAS ALTERAÇÕES DO CAPITAL PRÓPRIO NO PERÍODO FINDO EM 30 DE JUNHO DE 2025",
+   "values": [
+    1125
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Diferenças de câmbio desfavoráveis",
+   "lado": null,
+   "page": 24,
+   "section": "# 14. EFEITOS DE ALTERAÇÕES EM TAXAS DE CÂMBIO:",
+   "values": [
+    -109.276
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Quantia líquida",
+   "lado": null,
+   "page": 24,
+   "section": "# 14. EFEITOS DE ALTERAÇÕES EM TAXAS DE CÂMBIO:",
+   "values": [
+    -109.276
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 23.4 Decomposição dos outros gastos:",
+   "values": [
+    6.699
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Gastos em investimentos não financeiros",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 23.4 Decomposição dos outros gastos:",
+   "values": [
+    4.5
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 23.4 Decomposição dos outros gastos:",
+   "values": [
+    235.133
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Correções relativas a exercícios anteriores",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 23.4 Decomposição dos outros gastos:",
+   "values": [
+    56.196
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Quotizações",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 23.4 Decomposição dos outros gastos:",
+   "values": [
+    117.673
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Multas",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 23.4 Decomposição dos outros gastos:",
+   "values": [
+    12.76
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 23.4 Decomposição dos outros gastos:",
+   "values": [
+    48.505
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Rendimentos suplementares",
+   "lado": "revenue",
+   "page": 29,
+   "section": "### 23.3 Decomposição de outros rendimentos:",
+   "values": [
+    202.712
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Descontos de pronto pagamento obtidos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "### 23.3 Decomposição de outros rendimentos:",
+   "values": [
+    0.194
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Rendimentos em investimentos não financeiros*",
+   "lado": "revenue",
+   "page": 29,
+   "section": "### 23.3 Decomposição de outros rendimentos:",
+   "values": [
+    8002.412
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 29,
+   "section": "### 23.3 Decomposição de outros rendimentos:",
+   "values": [
+    528.485
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Correções relativas a exercícios anteriores",
+   "lado": "revenue",
+   "page": 29,
+   "section": "### 23.3 Decomposição de outros rendimentos:",
+   "values": [
+    1.322
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 29,
+   "section": "### 23.3 Decomposição de outros rendimentos:",
+   "values": [
+    527.163
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Compras",
+   "lado": "expense",
+   "page": 23,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025",
+   "values": [
+    22.949
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Inventários no fim do período",
+   "lado": "expense",
+   "page": 23,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025",
+   "values": [
+    5.561
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "expense",
+   "page": 23,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025",
+   "values": [
+    -17.388
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Remunerações do pessoal",
+   "lado": "expense",
+   "page": 28,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / # 20. BENEFÍCIOS DOS EMPREGADOS",
+   "values": [
+    4636.673
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Encargos sobre remunerações",
+   "lado": "expense",
+   "page": 28,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / # 20. BENEFÍCIOS DOS EMPREGADOS",
+   "values": [
+    337.528
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Seguros de acidentes de trabalho e doenças profissionais",
+   "lado": "expense",
+   "page": 28,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / # 20. BENEFÍCIOS DOS EMPREGADOS",
+   "values": [
+    554.513
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Outros gastos com pessoal",
+   "lado": "expense",
+   "page": 28,
+   "section": "# MOREIRENSE FUTEBOL CLUBE – FUTEBOL SAD / ÉPOCA 2024-2025 / # 20. BENEFÍCIOS DOS EMPREGADOS",
+   "values": [
+    342.235
+   ],
+   "origen": "estado 43"
+  }
+ ]
+}

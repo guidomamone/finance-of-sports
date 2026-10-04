@@ -1,0 +1,52 @@
+{
+  "club": "union",
+  "year": 2020,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Union/memoria-ejercicio-114-2019-2020.md",
+  "generatedAt": "2026-09-30T21:51:14.368Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 9,
+      "section": "CAUNION / SANITARIAS). / SANITARIAS). / SANITARIAS).",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Santafesina de Categorías Formativas Temporada",
+          "values": [
+            "2019."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "En el Comienzo de la temporada 2020 se inscribió por primera vez dos categorías en",
+          "values": [
+            "U15."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Unión",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

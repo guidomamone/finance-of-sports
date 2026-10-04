@@ -1,0 +1,954 @@
+{
+  "club": "novorizontino",
+  "year": 2017,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Novorizontino/balanco-patrimonial-2017.md",
+  "generatedAt": "2026-09-30T21:53:31.653Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 3,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 7,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 1,
+      "section": "GRÊMIO NOVORIZONTINO / CNPJ Nº 04.728.712/0001-82 - NOVO HORIZONTE (SP) CEP 14.960-000",
+      "columns": [
+        "CONTAS",
+        "31/12/2017",
+        "31/12/2016"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ATIVO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CIRCULANTE",
+          "values": [
+            "1.182",
+            "1.127"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DISPONIBILIDADES",
+          "values": [
+            "170",
+            "105"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caixa e Equivalentes de Caixa",
+          "values": [
+            "12",
+            "7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B Brasil Proc. Selj nº 0927/2016",
+          "values": [
+            "103",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CLIENTES",
+          "values": [
+            "34",
+            "34"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Contas a Receber",
+          "values": [
+            "34",
+            "34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Provisão p/ Liquid. Créditos Duvidosos",
+          "values": [
+            "-34",
+            "-34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OUTROS CRÉDITOS",
+          "values": [
+            "55",
+            "64"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Adiantamentos Diversos",
+          "values": [
+            "55",
+            "64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATIVO NÃO CIRCULANTE",
+          "values": [
+            "1.012",
+            "1022"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "[ilegible]",
+          "values": [
+            "4",
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS A APROPRIAR",
+          "values": [
+            "328",
+            "320"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Depósito Judicial",
+          "values": [
+            "328",
+            "320"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMOBILIZADO",
+          "values": [
+            "419",
+            "398"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "BENS DURÁVEIS",
+          "values": [
+            "521",
+            "469"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(-) Depreciações Acumuladas",
+          "values": [
+            "(102)",
+            "-50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BEM INTANGÍVEL",
+          "values": [
+            "[ilegible]",
+            "339"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bens Intangíveis",
+          "values": [
+            "265",
+            "339"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": null,
+      "columns": [
+        "CONTAS",
+        "31/12/2017",
+        "31/12/2016"
+      ],
+      "rows": [
+        {
+          "rawLabel": "PASSIVO",
+          "values": [
+            "1.182",
+            "1.127"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PASSIVO CIRCULANTE",
+          "values": [
+            "1.206",
+            "403"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "OBRIGAÇÕES DIVERSAS",
+          "values": [
+            "312",
+            "73"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Obrigações Comerciais",
+          "values": [
+            "312",
+            "73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DÉBITOS SOCIAIS E FISCAIS",
+          "values": [
+            "402",
+            "301"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Débitos Sociais",
+          "values": [
+            "401",
+            "299"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Débitos Fiscais",
+          "values": [
+            "1",
+            "2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSTITUIÇÕES FINANCEIRAS",
+          "values": [
+            "43",
+            "28"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bancos c/ Devedores",
+          "values": [
+            "43",
+            "28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PASSIVO NÃO CIRCULANTE",
+          "values": [
+            "21.000",
+            "16.817"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "EMPRÉSTIMOS E FINANCIAMENTOS",
+          "values": [
+            "19.749",
+            "15.965"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Partes Relacionadas",
+          "values": [
+            "19.748",
+            "15.965"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OUTROS VALORES A PAGAR",
+          "values": [
+            "1.095",
+            "852"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Outros Valores a Pagar",
+          "values": [
+            "1.096",
+            "852"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PATRIMÔNIO LÍQUIDO",
+          "values": [
+            "(20.868)",
+            "(16.093)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Patrimônio Social",
+          "values": [
+            "(20.868)",
+            "(16.093)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "Resultados dos Exercícios Findos",
+      "columns": [
+        "",
+        "31/12/2017",
+        "31/12/2016"
+      ],
+      "rows": [
+        {
+          "rawLabel": "RECEITA OPERACIONAL BRUTA",
+          "values": [
+            "8.020",
+            "3.240"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RECEITAS OPERACIONAIS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Receitas de Jogos, Patrimônios, Locações e outras",
+          "values": [
+            "1.068",
+            "828"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita com Negociação de Atleta",
+          "values": [
+            "3.306",
+            "207"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Repasse da Federação Paulista de Futebol",
+          "values": [
+            "3.499",
+            "2.205"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita com Empréstimo de Atleta",
+          "values": [
+            "27",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita com Exploração de Publicidade",
+          "values": [
+            "50",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECEITA OPERACIONAL",
+          "values": [
+            "8.020",
+            "3.240"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(-)CUSTO DO DEPARTAMENTO DE FUTEBOL",
+          "values": [
+            "(6.694)",
+            "(6.206)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(-) Custo do Departamento Profissional",
+          "values": [
+            "(4.527)",
+            "(6.206)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Custo do Departamento Amador",
+          "values": [
+            "(2.167)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESULTADO OPERACIONAL BRUTO",
+          "values": [
+            "1.418",
+            "(2.966)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(-)DESPESAS OPERACIONAIS",
+          "values": [
+            "(3.083)",
+            "(1.795)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Administrativa p/ Rateio de Categoria",
+          "values": [
+            "(2.751)",
+            "[ilegible]"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Departamento Futebol Profissional",
+          "values": [
+            "(332)",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Gerais e de Manutenção p/ Rateio de Categoria",
+          "values": [
+            "(2.563)",
+            "(1.945)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Departamento Futebol Profissional",
+          "values": [
+            "(1.510)",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Departamento Futebol Amador",
+          "values": [
+            "(1.053)",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Despesas Operacionais Administrativas",
+          "values": [
+            "(466)",
+            "[ilegible]"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Resultado antes das Provisões, Depr., Receita/Despesa Financ",
+          "values": [
+            "(4.276)",
+            "[ilegible]"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Provisões no Exercício",
+          "values": [
+            "(414)",
+            "(75)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Financeiras Líquidas",
+          "values": [
+            "(141)",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recuperação de Despesas",
+          "values": [
+            "56",
+            "2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Operacional Líquido",
+          "values": [
+            "(4.775)",
+            "(6.779)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Projeto Futebol Sub-15 Selj Proc 927/2016",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Recurso do Projeto",
+          "values": [
+            "70",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Aplicação do Recurso",
+          "values": [
+            "(70)",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DÉFICIT DO PERÍODO",
+          "values": [
+            "(4.775)",
+            "(6.779)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 1,
+      "section": "Demonstração dos Resultados Abrangentes dos Exercícios findos em 31/12/2017 e 31/12/2016",
+      "columns": [
+        "",
+        "31/12/2017",
+        "31/12/2016"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Resultados dos Exercícios Findos",
+          "values": [
+            "(4.775)",
+            "(6.779)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Resultados Abrangentes",
+          "values": [
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total dos Resultados Abrangentes",
+          "values": [
+            "(4.775)",
+            "(6.779)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 1,
+      "section": "Demonstrações dos fluxos de caixa - Método Indireto / Dos exercícios findos em 31/12/2017 e 31/12/2016",
+      "columns": [
+        "Fluxo de caixa das Atividades operacionais",
+        "2017",
+        "2016"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Resultado do Exercício",
+          "values": [
+            "(4.775)",
+            "(6.779)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes para conciliação:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação de imobilizado",
+          "values": [
+            "52",
+            "32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução de Bem Intangível",
+          "values": [
+            "(74)",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variações nos Ativos e Passivos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução em Contas a receber",
+          "values": [
+            "[ilegible]",
+            "366"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução em Adiantamentos diversos",
+          "values": [
+            "[ilegible]",
+            "81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução em Outros recebíveis",
+          "values": [
+            "8",
+            "10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução em Depósito judicial",
+          "values": [
+            "(21)",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução em Fornecedores",
+          "values": [
+            "[ilegible]",
+            "[ilegible]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução em Obrigações trabalhistas",
+          "values": [
+            "101",
+            "171"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução em Tributos a Recolher",
+          "values": [
+            "[ilegible]",
+            "33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução em Outras contas a pagar",
+          "values": [
+            "260",
+            "508"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fluxo de caixa consumido pelas atividades operacionais",
+          "values": [
+            "(4.157)",
+            "(5.577)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades de investimentos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aquisição de Ativo imobilizado",
+          "values": [
+            "(112)",
+            "(233)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos com partes relacionadas",
+          "values": [
+            "4",
+            "(4)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fluxo de caixa aplicado nas atividades de investimentos",
+          "values": [
+            "(108)",
+            "(237)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fluxo de caixa das Atividades de financiamentos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Captação com partes relacionadas",
+          "values": [
+            "3.784",
+            "5.802"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Amortização)/Captação de Empréstimos",
+          "values": [
+            "135",
+            "(508)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recuperação de Despesas",
+          "values": [
+            "(334)",
+            "(49)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Diminuição de Outros Valores a Pagar",
+          "values": [
+            "[ilegible]",
+            "508"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades de financiamentos",
+          "values": [
+            "4.157",
+            "5.753"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(Redução)/Aumento em caixa e equivalentes de caixa",
+          "values": [
+            "(108)",
+            "(62)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": null,
+      "columns": [
+        "",
+        "2017",
+        "2016"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caixa e equivalentes de caixa no início do exercício",
+          "values": [
+            "7",
+            "69"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa no final do exercício",
+          "values": [
+            "(115)",
+            "7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Redução)/Aumento em caixa e equivalentes de caixa",
+          "values": [
+            "(108)",
+            "(62)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "Demonstrações das Mutações do Patrimônio Líquido / Exercícios findos em 31/12/2017 e 31/12/2016",
+      "columns": [
+        "Discriminações",
+        "Patrimônio Social",
+        "Superávit e Déficit Acumulados",
+        "Déficit do Exercício",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldos em 01/01/2016",
+          "values": [
+            "(9.314)",
+            "[ilegible]",
+            "[ilegible]",
+            "(9.314)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit do Exercício 2016",
+          "values": [
+            "(6.779)",
+            "",
+            "",
+            "(6.779)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31/12/2016",
+          "values": [
+            "(16.093)",
+            "",
+            "",
+            "(16.093)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 01/01/2017",
+          "values": [
+            "(16.093)",
+            "",
+            "",
+            "(16.093)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit do Exercício 2017",
+          "values": [
+            "(4.775)",
+            "",
+            "",
+            "(4.775)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31/12/2017",
+          "values": [
+            "(20.868)",
+            "",
+            "",
+            "(20.868)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 1,
+      "section": "Demonstração dos Resultados Abrangentes dos Exercícios findos em 31/12/2017 e 31/12/2016",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total dos Resultados Abrangentes",
+      "target": "(4.775)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 1,
+      "section": "Demonstração dos Resultados Abrangentes dos Exercícios findos em 31/12/2017 e 31/12/2016",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total dos Resultados Abrangentes",
+      "target": "(6.779)",
+      "addendCount": 1,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/novorizontino-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"novorizontino\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

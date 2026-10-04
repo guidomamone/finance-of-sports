@@ -1,0 +1,340 @@
+{
+  "club": "hoffenheim-de",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2023-24.md",
+  "generatedAt": "2026-09-30T22:37:58.290Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 112,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 11,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 6,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bei sämtlichen in den Konzernabschluss einbezogenen Unternehmen entspricht der Stichtag des Einzelabschlusses dem Stichtag des Konzernabschlusses zum 30. Juni",
+          "values": [
+            "2024."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bei sämtlichen in den Konzernabschluss einbezogenen Unternehmen entspricht der Stichtag des Einzelabschlusses dem Stichtag des Konzernabschlusses zum 30. Juni",
+          "values": [
+            "2024."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bei den Steuerrückstellungen handelt es sich um Gewerbesteuer für das Jahr 2023",
+          "values": [
+            "(T€1.175)."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Die sonstigen Rückstellungen bestehen im Wesentlichen aus Rückstellungen für drohende Verluste (T€1.398), ausstehende Rechnungen (T€268) und Urlaubsrückstellungen",
+          "values": [
+            "(T€486)."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Herr Alexander Rosen (Sportökonom) (bis",
+          "values": [
+            "29.07.2024)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Herr Dr. Markus Schütz (Rechtsanwalt) (ab",
+          "values": [
+            "8.07.2024)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "UNTERNEHMENSREGISTER / T€ T€ T€ T€ T€",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2. technische Anlagen und Maschinen 9.907 13",
+          "values": [
+            "9.920"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. andere Anlagen, Betriebs- und Ge- 23.151 857 0",
+          "values": [
+            "23.907"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "III. Finanzanlagen / 1. Anteile an verbundenen Unterneh- 25 0 0 0 25 / men / 2.Ausleihungen an verbundene Uner- 0 607 0 0 607 / nehmen",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "3. Sonstige Ausleihungen 40.000 0",
+          "values": [
+            "40.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Summe 314.482 48.930 [0]",
+          "values": [
+            "48.063",
+            "315.349"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "3. Sonstige Ausleihungen",
+          "values": [
+            "40.000",
+            "40.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Summe",
+          "values": [
+            "132.148",
+            "150.270"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Einstellung in / Entnahme aus Rück- 0 0 0 0 0 / lagen / Erwerb Anteile von nicht beherr- 0 0 -19.364 0 -19.364 / schenden Gesellschaftern / Sonstige Veränderungen 0 0 -523.024 523.024 0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Periodenergebnis 0 -994.981",
+          "values": [
+            "-69.981",
+            "-1.064.962"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am",
+          "values": [
+            "30.6.2023/1.7.2023",
+            "2.500.000",
+            "144.717.719",
+            "-4.356.141",
+            "-69.981",
+            "142.791.597"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Einstellung in / Entnahme aus Rück- 0 0 0 0 0 / lagen",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Sonstige Veränderungen",
+          "values": [
+            "-1.662",
+            "-69.981",
+            "69.981",
+            "-1.662"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodenergebnis 0 -24.633.713",
+          "values": [
+            "-368.366",
+            "-25.002.079"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am",
+          "values": [
+            "30.6.2024",
+            "2.500.000",
+            "120.082.344",
+            "-4.426.122",
+            "-368.366",
+            "117.787.856"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Nicht beherrschende Anteile Konzern-Eigenkapital / Nicht beherrschende Anteile vor Jahreser- Auf nicht beherrschende Anteile entfallen- / Wertein€ gebnis de Gewinne / Verluste Summe Summe",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Stand",
+          "values": [
+            "1.7.2022",
+            "57.390.810",
+            "1.149.072",
+            "58.539.882",
+            "202.415.805"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einstellung in / Entnahme aus Rücklagen",
+          "values": [
+            "-3.554.702",
+            "-1.065.297",
+            "-4.619.999",
+            "-4.619.999"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Erwerb Anteile von nicht beherrschenden Ge- 0 19.365 19.365 1 / sellschaftern",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Sonstige Veränderungen",
+          "values": [
+            "-26.861",
+            "-103.139",
+            "-130.000",
+            "-130.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodenergebnis",
+          "values": [
+            "1.060.270",
+            "1.060.270",
+            "-4.692"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am",
+          "values": [
+            "30.6.2023/1.7.2023",
+            "53.809.247",
+            "1.060.270",
+            "54.869.518",
+            "197.661.115"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einstellung in / Entnahme aus Rücklagen -4.250.000",
+          "values": [
+            "-4.250.000",
+            "-4.250.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige Veränderungen",
+          "values": [
+            "1.076.643",
+            "-1.060.269",
+            "16.374",
+            "14.712"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "UNTERNEHMENSREGISTER / T-EUR T-EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "25. Finanzmittelfonds 1. Juli",
+          "values": [
+            "17.251",
+            "27.835"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "26. Finanzmittelfonds 31. Dezember",
+          "values": [
+            "35.578",
+            "17.251"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "de",
+    "query": "TSG Hoffenheim",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

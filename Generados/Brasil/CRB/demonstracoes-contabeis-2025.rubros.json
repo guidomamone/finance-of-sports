@@ -1,0 +1,85 @@
+{
+ "md": "Clubes/Brasil/CRB/demonstracoes-contabeis-2025.md",
+ "pdf": "Clubes/Brasil/CRB/demonstracoes-contabeis-2025.pdf",
+ "club": "crb",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:51:48.495Z",
+ "tieOuts": {
+  "cierran": 8,
+  "noCierran": 2
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 6,
+  "notasUsadas": []
+ },
+ "ladoConocido": 6,
+ "rubros": [
+  {
+   "label": "Receita operacional líquida",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AMAC AUDITORES INDEPENDENTES / ### CLUBE DE REGATAS BRASIL / #### Demonstrações de resultados dos exercícios / #### Exercícios findos em 31 de dezembro de 2025 e 2024",
+   "values": [
+    47471.422
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Custo das atividades sociais e esportivas",
+   "lado": "expense",
+   "page": 7,
+   "section": "AMAC AUDITORES INDEPENDENTES / ### CLUBE DE REGATAS BRASIL / #### Demonstrações de resultados dos exercícios / #### Exercícios findos em 31 de dezembro de 2025 e 2024",
+   "values": [
+    -43365.002
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas com pessoal",
+   "lado": "expense",
+   "page": 7,
+   "section": "AMAC AUDITORES INDEPENDENTES / ### CLUBE DE REGATAS BRASIL / #### Demonstrações de resultados dos exercícios / #### Exercícios findos em 31 de dezembro de 2025 e 2024",
+   "values": [
+    -754.228
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas gerais e administrativas",
+   "lado": "expense",
+   "page": 7,
+   "section": "AMAC AUDITORES INDEPENDENTES / ### CLUBE DE REGATAS BRASIL / #### Demonstrações de resultados dos exercícios / #### Exercícios findos em 31 de dezembro de 2025 e 2024",
+   "values": [
+    -4349.905
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "page": 7,
+   "section": "AMAC AUDITORES INDEPENDENTES / ### CLUBE DE REGATAS BRASIL / #### Demonstrações de resultados dos exercícios / #### Exercícios findos em 31 de dezembro de 2025 e 2024",
+   "values": [
+    -189.484
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 7,
+   "section": "AMAC AUDITORES INDEPENDENTES / ### CLUBE DE REGATAS BRASIL / #### Demonstrações de resultados dos exercícios / #### Exercícios findos em 31 de dezembro de 2025 e 2024",
+   "values": [
+    -80.129
+   ],
+   "origen": "estado 2"
+  }
+ ]
+}

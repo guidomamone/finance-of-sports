@@ -1,0 +1,310 @@
+{
+ "md": "Clubes/Brasil/Sport Recife/demonstracoes-financeiras-2024-e-2023.md",
+ "generatedAt": "2026-09-30T22:48:32.155Z",
+ "rubrosHuella": "58ab3a1f8369da6e271d38c70e0a00420ad19c3b",
+ "rubros": [
+  {
+   "label": "Estádio",
+   "lado": "expense",
+   "page": 43,
+   "section": "11. Imobilizado / Taxa Custo Deprecia cão Líquido Líquido / 0, / Dep.% 2024 2024 2024 2023",
+   "choice": "admin_general_expense",
+   "confidence": 0.27,
+   "desdeCache": true
+  },
+  {
+   "label": "Parque Aquático",
+   "lado": "expense",
+   "page": 43,
+   "section": "11. Imobilizado / Taxa Custo Deprecia cão Líquido Líquido / 0, / Dep.% 2024 2024 2024 2023",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas gerais",
+   "lado": "expense",
+   "page": 48,
+   "section": "Despesas com formação de atleta e amortização de despesas de / anos anteriores (11.070) (28.416) / (92.679) (90.481) / 20. Despesas gerais e administrativas / 2024 2023",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sede Social",
+   "lado": "expense",
+   "page": 43,
+   "section": "11. Imobilizado / Taxa Custo Deprecia cão Líquido Líquido / 0, / Dep.% 2024 2024 2024 2023",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "depreciation",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Depreciação",
+   "lado": "expense",
+   "page": 48,
+   "section": "Despesas com formação de atleta e amortização de despesas de / anos anteriores (11.070) (28.416) / (92.679) (90.481) / 20. Despesas gerais e administrativas / 2024 2023",
+   "choice": "depreciation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "depreciation",
+     0.98
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Terrenos - 78.662 -",
+   "lado": "expense",
+   "page": 43,
+   "section": "11. Imobilizado / Taxa Custo Deprecia cão Líquido Líquido / 0, / Dep.% 2024 2024 2024 2023",
+   "choice": "depreciation",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "depreciation",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 960
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 48,
+   "section": "Despesas com formação de atleta e amortização de despesas de / anos anteriores (11.070) (28.416) / (92.679) (90.481) / 20. Despesas gerais e administrativas / 2024 2023",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1092
+  },
+  {
+   "label": "Impostos a Recuperar 8 8 Empréstimos com terceiros e Mútuos",
+   "lado": "expense",
+   "page": 18,
+   "section": "Receitas a reconhecer 14 14.116 - / Receitas Antecipadas 14.104 17.012 / 164.951 122.212 / Não Circulante Não Circulante / Depósitos Judiciais 9 7.649 7.571 Fornecedores 12 9.548 677",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1119
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "page": 48,
+   "section": "Despesas com formação de atleta e amortização de despesas de / anos anteriores (11.070) (28.416) / (92.679) (90.481) / 20. Despesas gerais e administrativas / 2024 2023",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Créditos a receber 7 34.321 13 Obrigações tributárias",
+   "lado": "revenue",
+   "page": 18,
+   "section": "Receitas a reconhecer 14 14.116 - / Receitas Antecipadas 14.104 17.012 / 164.951 122.212 / Não Circulante Não Circulante / Depósitos Judiciais 9 7.649 7.571 Fornecedores 12 9.548 677",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Gastos com pessoal",
+   "lado": "expense",
+   "page": 48,
+   "section": "Despesas com formação de atleta e amortização de despesas de / anos anteriores (11.070) (28.416) / (92.679) (90.481) / 20. Despesas gerais e administrativas / 2024 2023",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "wages_squad",
+     0.75
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Ajuste de Avaliação Patrimonial",
+   "lado": "revenue",
+   "page": 18,
+   "section": "Intangível 10 14.657 2.960 Receitas Antecipadas 544 544 / 344.066 255.147 180.746 153.932 / Patrimonio líquido",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Imobilizado 11 287.431 242.614 Receitas a reconhecer",
+   "lado": "revenue",
+   "page": 18,
+   "section": "Receitas a reconhecer 14 14.116 - / Receitas Antecipadas 14.104 17.012 / 164.951 122.212 / Não Circulante Não Circulante / Depósitos Judiciais 9 7.649 7.571 Fornecedores 12 9.548 677",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ]
+   ],
+   "tokens": 1161
+  },
+  {
+   "label": "Despesas Antecipadas - 1.981 Provisão para contingências",
+   "lado": "expense",
+   "page": 18,
+   "section": "Receitas a reconhecer 14 14.116 - / Receitas Antecipadas 14.104 17.012 / 164.951 122.212 / Não Circulante Não Circulante / Depósitos Judiciais 9 7.649 7.571 Fornecedores 12 9.548 677",
+   "choice": "admin_general_expense",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "exceptional_items",
+     0.11
+    ]
+   ],
+   "tokens": 1223
+  },
+  {
+   "label": "Capital Social",
+   "lado": "revenue",
+   "page": 18,
+   "section": "Intangível 10 14.657 2.960 Receitas Antecipadas 544 544 / 344.066 255.147 180.746 153.932 / Patrimonio líquido",
+   "choice": "member_dues",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "member_dues",
+     0.56
+    ],
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1086
+  }
+ ]
+}

@@ -1,0 +1,2426 @@
+{
+  "club": "gent-be",
+  "year": 2017,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Gent/jaarrekening-2017-05-31-individual.md",
+  "generatedAt": "2026-09-30T21:55:10.009Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 246,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 30,
+  "relevantTableCount": 7,
+  "tables": [
+    {
+      "page": 5,
+      "section": "ACTIVA / OPRICHTINGSKOSTEN 6.1 / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "285/8",
+          "values": [
+            "48.115",
+            "30.064"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "29/58",
+          "values": [
+            "26.607.833",
+            "9.071.147"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "40 8.082.872 3.795.365 / 41 680.811 203.766 / 50/53 / 50 / 51/53",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "11.678.990",
+            "4.530.314"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "2.659.109",
+            "493.302"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "80.016.499",
+            "43.840.657"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Nr. BE 0407.885.394 VOL 3.2 / PASSIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "EIGEN VERMOGEN 10/15",
+          "values": [
+            "24.938.811",
+            "2.220.176"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaal 6.7.1 |",
+          "values": [
+            "10.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geplaatst kapitaal",
+          "values": [
+            "10.000.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Niet-opgevraagd kapitaal 101 / Uitgiftepremies 11 / Herwaarderingsmeerwaarden 12",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Reserves",
+          "values": [
+            "7.424.258",
+            "18.859"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wettelijke reserve",
+          "values": [
+            "1.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Onbeschikbare reserves",
+          "values": [
+            "6.424.258"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Voor eigen aandelen 1310",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Andere 1311",
+          "values": [
+            "6.424.258"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingvrije reserves",
+          "values": [
+            "18.859"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Beschikbare reserves 133",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overgedragen winst (verlies) (+)/(-)",
+          "values": [
+            "7.514.553",
+            "-412.880"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaalsubsidies",
+          "values": [
+            "2.614.197"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN 16",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "55.077.688",
+            "41.620.481"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 69 |",
+          "values": [
+            "35.037.142",
+            "32.418.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "24.531.469",
+            "24.920.500"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Achtergestelde leningen 170 / Niet-achtergestelde obligatieleningen 171 / Leasingschulden en soortgelijke schulden 172 22.041.250 23.050.500 / Kredietinstellingen 173",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige leningen",
+          "values": [
+            "2.490.219",
+            "1.870.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "425.000",
+            "900.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 1750",
+          "values": [
+            "425.000",
+            "900.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Te betalen wissels 1751 / Ontvangen vooruitbetalingen op bestellingen 176",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige schulden 178/9",
+          "values": [
+            "10.080.674",
+            "6.598.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op ten hoogste één jaar 6.9 | 42/48",
+          "values": [
+            "13.016.303",
+            "5.961.992"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Schulden op meer dan één jaar die binnen het jaar / vervallen 42 941.326 375.000 / Financiële schulden 43 / Kredietinstellingen 430/8 / Overige leningen 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "8.214.868",
+            "4.407.058"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "8.214.868",
+            "4.407.058"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 / Schulden met betrekking tot belastingen,",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "bezoldigingen en sociale lasten 6.9 |",
+          "values": [
+            "3.860.109",
+            "1.111.703"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "111.010",
+            "456.028"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "3.749.099",
+            "655.675"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige schulden 47/48",
+          "values": [
+            "68.231"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 6.9 | 492/3",
+          "values": [
+            "7.024.243",
+            "3.239.989"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "80.016.499",
+            "43.840.657"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "RESULTATENREKENING",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "76A",
+          "values": [
+            "167.547",
+            "11.434"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "60/66A",
+          "values": [
+            "97.494.356",
+            "28.669.183"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 15,
+      "section": null,
+      "columns": [
+        "ANDERE ONDERNEMINGEN - DEELNEMINGEN EN AANDELEN",
+        "Codes",
+        "Boekjaar",
+        "Vorig boekjaar"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Aanschaffingswaarde per einde van het boekjaar",
+          "values": [
+            "8393P",
+            "XXXXXXXXXX",
+            "829.900"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutaties tijdens het boekjaar",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aanschaffingen",
+          "values": [
+            "8363",
+            "775.001",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overdrachten en buitengebruikstellingen",
+          "values": [
+            "8373",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overboekingen van een post naar een andere (+)/(-)",
+          "values": [
+            "8383",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aanschaffingswaarde per einde van het boekjaar",
+          "values": [
+            "8393",
+            "1.604.901",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Meerwaarden per einde van het boekjaar",
+          "values": [
+            "8453P",
+            "XXXXXXXXXX",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutaties tijdens het boekjaar",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Geboekt",
+          "values": [
+            "8413",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verworven van derden",
+          "values": [
+            "8423",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afgeboekt",
+          "values": [
+            "8433",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overgeboekt van een post naar een andere (+)/(-)",
+          "values": [
+            "8443",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Meerwaarden per einde van het boekjaar",
+          "values": [
+            "8453",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Waardeverminderingen per einde van het boekjaar",
+          "values": [
+            "8523P",
+            "XXXXXXXXXX",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutaties tijdens het boekjaar",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Geboekt",
+          "values": [
+            "8473",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Teruggenomen",
+          "values": [
+            "8483",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verworven van derden",
+          "values": [
+            "8493",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afgeboekt na overdrachten en buitengebruikstellingen",
+          "values": [
+            "8503",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overgeboekt van een post naar een andere (+)/(-)",
+          "values": [
+            "8513",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Waardeverminderingen per einde van het boekjaar",
+          "values": [
+            "8523",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Niet-opgevraagde bedragen per einde van het boekjaar",
+          "values": [
+            "8553P",
+            "XXXXXXXXXX",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutaties tijdens het boekjaar (+)/(-)",
+          "values": [
+            "8543",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Niet-opgevraagde bedragen per einde van het boekjaar",
+          "values": [
+            "8553",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR",
+          "values": [
+            "284",
+            "1.604.901",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ANDERE ONDERNEMINGEN - VORDERINGEN",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR",
+          "values": [
+            "285/8P",
+            "XXXXXXXXXX",
+            "30.064"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutaties tijdens het boekjaar",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "8583",
+            "18.051",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terugbetalingen",
+          "values": [
+            "8593",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geboekte waardeverminderingen",
+          "values": [
+            "8603",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Teruggenomen waardeverminderingen",
+          "values": [
+            "8613",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wisselkoersverschillen (+)/(-)",
+          "values": [
+            "8623",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige mutaties (+)/(-)",
+          "values": [
+            "8633",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR",
+          "values": [
+            "285/8",
+            "48.115",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GECUMULEERDE WAARDEVERMINDERINGEN OP VORDERINGEN PER EINDE BOEKJAAR",
+          "values": [
+            "8653",
+            "",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "Nr. BE 0407.885.394 VOL 6.9 / STAAT VAN DE SCHULDEN EN OVERLOPENDE REKENINGEN (PASSIVA) / UITSPLITSING VAN DE SCHULDEN MET EEN OORSPRONKELIJKE LOOPTIJD VAN MEER DAN ÉÉN / JAAR, NAARGELANG HUN RESTERENDE LOOPTIJD",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige schulden 8901",
+          "values": [
+            "30.481"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal der schulden op meer dan één jaar die binnen het jaar vervallen",
+          "values": [
+            "941.326"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Financiële schulden 8802 3.207.214 / Achtergestelde leningen 8812 / Niet-achtergestelde obligatieleningen 8822 / Leasingschulden en soortgelijke schulden 8832 2.490.000 / Kredietinstellingen 8842",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige leningen 8852",
+          "values": [
+            "717.214"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handelsschulden 8862",
+          "values": [
+            "425.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 8872",
+          "values": [
+            "425.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Overige leningen 8853 1.773.005 / Handelsschulden 8863 / Leveranciers 8873 / Te betalen wissels 8883 / Ontvangen vooruitbetalingen op bestellingen 8893",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige schulden 8903",
+          "values": [
+            "5.443.374"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal der schulden met een resterende looptijd van meer dan 5 jaar 8913",
+          "values": [
+            "26.767.628"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "Nr. BE 0407.885.394 VOL 6.9 / SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN SOCIALE LASTEN / OVERLOPENDE REKENINGEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "toe te rekenen kosten",
+          "values": [
+            "521.038"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "publiciteit diverse",
+          "values": [
+            "500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "lidgelden jeugd",
+          "values": [
+            "2.435"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "Nr. BE 0407.885.394 VOL 6.10 / BEDRIJFSRESULTATEN / BEDRIJFSOPBRENGSTEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Belgie",
+          "values": [
+            "40.929.457"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Europees",
+          "values": [
+            "32.195.910"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "BEDRIJFSKOSTEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bezoldigingen en rechtstreekse sociale voordelen",
+          "values": [
+            "37.531.499"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Werkgeversbijdragen voor sociale verzekeringen",
+          "values": [
+            "2.223.551"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "Werkgeverspremies voor bovenwettelijke verzekeringen 622",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Andere personeelskosten",
+          "values": [
+            "728.170"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ouderdoms- en overlevingspensioenen",
+          "values": [
+            "8.084.217"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Teruggenomen 9113 / Voorzieningen voor risico's en kosten / Toevoegingen 9115 / Bestedingen en terugnemingen 9116 / Andere bedrijfskosten",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bedrijfsbelastingen en -taksen",
+          "values": [
+            "1.297.536"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere 641/8",
+          "values": [
+            "4.966.143"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 23,
+      "section": "Nr. BE 0407.885.394 VOL 6.13 / BELASTINGEN EN TAKSEN / BELASTINGEN OP HET RESULTAAT / BELASTING OP DE TOEGEVOEGDE WAARDE EN BELASTINGEN TEN / LASTE VAN DERDEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aan de onderneming (aftrekbaar) 9145",
+          "values": [
+            "10.879.192",
+            "2.743.327"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Door de onderneming 9146",
+          "values": [
+            "12.867.696",
+            "4.075.025"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": null,
+      "columns": [
+        "",
+        "Codes",
+        "Boekjaar",
+        "Vorig boekjaar"
+      ],
+      "rows": [
+        {
+          "rawLabel": "VERBONDEN ONDERNEMINGEN",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Financiële vaste activa",
+          "values": [
+            "280/1",
+            "3.271.173",
+            "563.423"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deelnemingen",
+          "values": [
+            "280",
+            "3.271.173",
+            "563.423"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Achtergestelde vorderingen",
+          "values": [
+            "9271",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere vorderingen",
+          "values": [
+            "9281",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorderingen",
+          "values": [
+            "9291",
+            "588.025",
+            "549.554"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Op meer dan één jaar",
+          "values": [
+            "9301",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Op hoogstens één jaar",
+          "values": [
+            "9311",
+            "588.025",
+            "549.554"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geldbeleggingen",
+          "values": [
+            "9321",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aandelen",
+          "values": [
+            "9331",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorderingen",
+          "values": [
+            "9341",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden",
+          "values": [
+            "9351",
+            "5.433.329",
+            "5.483.945"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Op meer dan één jaar",
+          "values": [
+            "9361",
+            "5.400.000",
+            "5.400.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Op hoogstens één jaar",
+          "values": [
+            "9371",
+            "33.329",
+            "83.945"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Persoonlijke en zakelijke zekerheden",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Door de onderneming gesteld of onherroepelijk beloofd als waarborg voor schulden of verplichtingen van verbonden ondernemingen",
+          "values": [
+            "9381",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Door verbonden ondernemingen gesteld of onherroepelijk beloofd als waarborg voor schulden of verplichtingen van de onderneming",
+          "values": [
+            "9391",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere betekenisvolle financiële verplichtingen",
+          "values": [
+            "9401",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Financiële resultaten",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Opbrengsten uit financiële vaste activa",
+          "values": [
+            "9421",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opbrengsten uit vlottende activa",
+          "values": [
+            "9431",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere financiële opbrengsten",
+          "values": [
+            "9441",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kosten van schulden",
+          "values": [
+            "9461",
+            "249.197",
+            "258.940"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere financiële kosten",
+          "values": [
+            "9471",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Realisatie van vaste activa",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Verwezenlijkte meerwaarden",
+          "values": [
+            "9481",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verwezenlijkte minderwaarden",
+          "values": [
+            "9491",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GEASSOCIEERDE ONDERNEMINGEN",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Financiële vaste activa",
+          "values": [
+            "9253",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deelnemingen",
+          "values": [
+            "9263",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Achtergestelde vorderingen",
+          "values": [
+            "9273",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere vorderingen",
+          "values": [
+            "9283",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorderingen",
+          "values": [
+            "9293",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Op meer dan één jaar",
+          "values": [
+            "9303",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Op hoogstens één jaar",
+          "values": [
+            "9313",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden",
+          "values": [
+            "9353",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Op meer dan één jaar",
+          "values": [
+            "9363",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Op hoogstens één jaar",
+          "values": [
+            "9373",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Persoonlijke en zakelijke zekerheden",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Door de onderneming gesteld of onherroepelijk beloofd als waarborg voor schulden of verplichtingen van geassocieerde ondernemingen",
+          "values": [
+            "9383",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Door geassocieerde ondernemingen gesteld of onherroepelijk beloofd als waarborg voor schulden of verplichtingen van de onderneming",
+          "values": [
+            "9393",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere betekenisvolle financiële verplichtingen",
+          "values": [
+            "9403",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ANDERE ONDERNEMINGEN WAARMEE EEN DEELNEMINGSVERHOUDING BESTAAT",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Financiële vaste activa",
+          "values": [
+            "9252",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deelnemingen",
+          "values": [
+            "9262",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Achtergestelde vorderingen",
+          "values": [
+            "9272",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere vorderingen",
+          "values": [
+            "9282",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorderingen",
+          "values": [
+            "9292",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Op meer dan één jaar",
+          "values": [
+            "9302",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Op hoogstens één jaar",
+          "values": [
+            "9312",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden",
+          "values": [
+            "9352",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Op meer dan één jaar",
+          "values": [
+            "9362",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 35,
+      "section": "KAA GENT CVBA SO / Ottergemsesteenweg Zuid, 808, / 9000 GENT / Ondernemingsnummer : 0407.885.394 / Aandeel bestedingen KAA Gent aan VZW Voetbal in de Stad : 309.476€",
+      "columns": [
+        "samenwerkingsovereenkomst KAA Gent Foundation:",
+        "30.510€"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Elk talent telt Ondersteuningsfonds: clubsamenwerking",
+          "values": [
+            "47.917€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subsidie Community - project kosten",
+          "values": [
+            "29.412€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subsidie Community - werkingskosten",
+          "values": [
+            "3.191€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subsidie Community - loonkosten",
+          "values": [
+            "103.274€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subsidie Elk talent telt -werkingskosten en overheadkosten",
+          "values": [
+            "34.316€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sportieve Elk Talent Telt -sportieve uitrusting",
+          "values": [
+            "60.856€"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "columns": [
+        "Loonkosten + sociale lasten jeugdtrainers",
+        "421.431€"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Aankoop kledij jeugd",
+          "values": [
+            "319.596€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aankoop sportmateriaal jeugd",
+          "values": [
+            "9.365€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Huur terreinen",
+          "values": [
+            "144.261€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opleidingsvergoeding jeugdspelers amateurclubs",
+          "values": [
+            "60.000€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schoolbegeleiding en internaat",
+          "values": [
+            "40.234€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stages jeugd",
+          "values": [
+            "68.489€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Scheidsrechterskosten jeugd",
+          "values": [
+            "6.610€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opleidingsvergoeding Pro league",
+          "values": [
+            "557.500€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transport jeugd",
+          "values": [
+            "96.207€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ter beschikkingstelling oefencomplex bezetting jeugd 70%<br>206.318 x 70%",
+          "values": [
+            "144.423€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dranken en voeding jeugd",
+          "values": [
+            "28.244€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omkadering jeugd – coordinator -begeleider – medisch",
+          "values": [
+            "59.624€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen Warmoezenierswegbezetting jeugd 70%<br>289.440 x 70%=",
+          "values": [
+            "202.608€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "In aanmerking te nemen totaal voor 50% sociaal oogmerk",
+          "values": [
+            "2.158.592€"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan Damesvoetbal (1^{e} ploeg en jeugd):491.094€",
+      "columns": [
+        "Vergoeding trainers",
+        "59.276€"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Vergoeding medewerkers",
+          "values": [
+            "14.501€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aankoop kledij Ladies",
+          "values": [
+            "94.065€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "verplaatsingskosten",
+          "values": [
+            "49.339€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Teambuilding en evenementen",
+          "values": [
+            "55.816€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kosten infrastructuur",
+          "values": [
+            "62.160€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Medische kosten",
+          "values": [
+            "30.273€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dranken en voeding Damesvoetbal",
+          "values": [
+            "12.406€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "exploitatiekosten",
+          "values": [
+            "95.598€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiaal",
+          "values": [
+            "9.490€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Scheidsrechterskosten",
+          "values": [
+            "8.170€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "In aanmerking te nemen totaal voor 100% sociaal oogmerk",
+          "values": [
+            "491.094€"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 41,
+      "section": "Nr. BE 0407.885.394 — VOL 10",
+      "columns": [
+        "Op de afsluitingsdatum van het boekjaar",
+        "Codes",
+        "1. Voltijds",
+        "2. Deeltijds",
+        "3. Totaal in voltijdse equivalenten"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Aantal werknemers",
+          "values": [
+            "105",
+            "63",
+            "47",
+            "82,8"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Volgens de aard van de arbeidsovereenkomst",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Overeenkomst voor een onbepaalde tijd",
+          "values": [
+            "110",
+            "22",
+            "22",
+            "30,4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overeenkomst voor een bepaalde tijd",
+          "values": [
+            "111",
+            "41",
+            "25",
+            "52,4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overeenkomst voor een duidelijk omschreven werk",
+          "values": [
+            "112",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervangingsovereenkomst",
+          "values": [
+            "113",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Volgens het geslacht en het studieniveau",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mannen",
+          "values": [
+            "120",
+            "63",
+            "41",
+            "80,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "lager onderwijs",
+          "values": [
+            "1200",
+            "62",
+            "41",
+            "79,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "secundair onderwijs",
+          "values": [
+            "1201",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "hoger niet-universitair onderwijs",
+          "values": [
+            "1202",
+            "1",
+            "0",
+            "1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "universitair onderwijs",
+          "values": [
+            "1203",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vrouwen",
+          "values": [
+            "121",
+            "0",
+            "6",
+            "2,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "lager onderwijs",
+          "values": [
+            "1210",
+            "0",
+            "5",
+            "1,9"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "secundair onderwijs",
+          "values": [
+            "1211",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "hoger niet-universitair onderwijs",
+          "values": [
+            "1212",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "universitair onderwijs",
+          "values": [
+            "1213",
+            "0",
+            "1",
+            "0,6"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Volgens de beroepscategorie",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Directiepersoneel",
+          "values": [
+            "130",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bedienden",
+          "values": [
+            "134",
+            "57",
+            "34",
+            "72,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arbeiders",
+          "values": [
+            "132",
+            "6",
+            "13",
+            "10,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere",
+          "values": [
+            "133",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 41,
+      "section": "Uitzendkrachten en ter beschikking van de onderneming gestelde personen",
+      "columns": [
+        "Tijdens het boekjaar",
+        "Codes",
+        "1. Uitzendkrachten",
+        "2. Ter beschikking van de onderneming gestelde personen"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gemiddeld aantal tewerkgestelde personen",
+          "values": [
+            "150",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aantal daadwerkelijk gepresteerde uren",
+          "values": [
+            "151",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kosten voor de onderneming",
+          "values": [
+            "152",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 42,
+      "section": "Nr. BE 0407.885.394 — VOL 10 / Tabel van het personeelsverloop tijdens het boekjaar / Ingetreden",
+      "columns": [
+        "",
+        "Codes",
+        "1. Voltijds",
+        "2. Deeltijds",
+        "3. Totaal in voltijdse equivalenten"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Aantal werknemers waarvoor de onderneming tijdens het boekjaar een DIMONA-verklaring heeft ingediend of die tijdens het boekjaar werden ingeschreven in het algemeen personeelsregister",
+          "values": [
+            "205",
+            "86",
+            "128",
+            "126"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Volgens de aard van de arbeidsovereenkomst",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Overeenkomst voor een onbepaalde tijd",
+          "values": [
+            "210",
+            "15",
+            "20",
+            "22,7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overeenkomst voor een bepaalde tijd",
+          "values": [
+            "211",
+            "71",
+            "108",
+            "103,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overeenkomst voor een duidelijk omschreven werk",
+          "values": [
+            "212",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervangingsovereenkomst",
+          "values": [
+            "213",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 42,
+      "section": "Uitgetreden",
+      "columns": [
+        "",
+        "Codes",
+        "1. Voltijds",
+        "2. Deeltijds",
+        "3. Totaal in voltijdse equivalenten"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Aantal werknemers met een in de DIMONA-verklaring aangegeven of een in het algemeen personeelsregister opgetekende datum waarop hun overeenkomst tijdens het boekjaar een einde nam",
+          "values": [
+            "305",
+            "77",
+            "86",
+            "107,3"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Volgens de aard van de arbeidsovereenkomst",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Overeenkomst voor een onbepaalde tijd",
+          "values": [
+            "310",
+            "17",
+            "12",
+            "24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overeenkomst voor een bepaalde tijd",
+          "values": [
+            "311",
+            "60",
+            "74",
+            "83,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overeenkomst voor een duidelijk omschreven werk",
+          "values": [
+            "312",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervangingsovereenkomst",
+          "values": [
+            "313",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Volgens de reden van beëindiging van de overeenkomst",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Pensioen",
+          "values": [
+            "340",
+            "1",
+            "",
+            "1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Werkloosheid met bedrijfstoeslag",
+          "values": [
+            "341",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afdanking",
+          "values": [
+            "342",
+            "2",
+            "2",
+            "2,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere reden",
+          "values": [
+            "343",
+            "74",
+            "84",
+            "103,8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Waarvan: het aantal werknemers dat als zelfstandige ten minste op halftijdse basis diensten blijft verlenen aan de onderneming",
+          "values": [
+            "350",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 27,
+    "results": [
+      {
+        "label": "285/8",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "285/8",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "29/58",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "29/58",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "76A",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "76A",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "60/66A",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "60/66A",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "toe te rekenen kosten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "toe te rekenen kosten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "publiciteit diverse",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "publiciteit diverse",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "lidgelden jeugd",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "lidgelden jeugd",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Belgie",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Belgie",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Europees",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Europees",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Werkgeversbijdragen voor sociale verzekeringen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Werkgeversbijdragen voor sociale verzekeringen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bedrijfsbelastingen en -taksen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bedrijfsbelastingen en -taksen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andere 641/8",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andere 641/8",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aankoop kledij jeugd",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aankoop kledij jeugd",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aankoop sportmateriaal jeugd",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aankoop sportmateriaal jeugd",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Huur terreinen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Huur terreinen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Opleidingsvergoeding jeugdspelers amateurclubs",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Opleidingsvergoeding jeugdspelers amateurclubs",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Schoolbegeleiding en internaat",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Schoolbegeleiding en internaat",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Stages jeugd",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Stages jeugd",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Scheidsrechterskosten jeugd",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Scheidsrechterskosten jeugd",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Opleidingsvergoeding Pro league",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Opleidingsvergoeding Pro league",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transport jeugd",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transport jeugd",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ter beschikkingstelling oefencomplex bezetting jeugd 70%<br>206.318 x 70%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ter beschikkingstelling oefencomplex bezetting jeugd 70%<br>206.318 x 70%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dranken en voeding jeugd",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dranken en voeding jeugd",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Omkadering jeugd – coordinator -begeleider – medisch",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Omkadering jeugd – coordinator -begeleider – medisch",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Afschrijvingen Warmoezenierswegbezetting jeugd 70%<br>289.440 x 70%=",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Afschrijvingen Warmoezenierswegbezetting jeugd 70%<br>289.440 x 70%=",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "In aanmerking te nemen totaal voor 50% sociaal oogmerk",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "In aanmerking te nemen totaal voor 50% sociaal oogmerk",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Gent",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

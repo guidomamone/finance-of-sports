@@ -1,0 +1,951 @@
+{
+ "md": "Clubes/Colombia/La Equidad/estados-financieros-2025.md",
+ "pdf": "Clubes/Colombia/La Equidad/estados-financieros-2025.pdf",
+ "club": "la-equidad",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:59:11.541Z",
+ "tieOuts": {
+  "cierran": 67,
+  "noCierran": 10
+ },
+ "warnings": [
+  "10 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 98,
+  "notasUsadas": [
+   "35",
+   "37",
+   "36"
+  ]
+ },
+ "ladoConocido": 87,
+ "rubros": [
+  {
+   "label": "Taquilla - Venta de Boletería",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "values": [
+    4102.414
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "Escuelas de Futbol",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "values": [
+    1830.768
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "Publicidad y Propaganda",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "values": [
+    614.21
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "Reembolso Arbitrajes",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "values": [
+    308.905
+   ],
+   "origen": "nota 35 (ancla 34)",
+   "ancla": "Dimayor"
+  },
+  {
+   "label": "Dimayor",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "values": [
+    7245.343
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Derechos Tv Cerrada Dimayor",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "values": [
+    2001.016
+   ],
+   "origen": "nota 35 (ancla 34)",
+   "ancla": "Dimayor"
+  },
+  {
+   "label": "Derechos Tv Rcn Abierta Dimayor",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "values": [
+    968.51
+   ],
+   "origen": "nota 35 (ancla 34)",
+   "ancla": "Dimayor"
+  },
+  {
+   "label": "Derechos Tv Internal",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "values": [
+    263.783
+   ],
+   "origen": "nota 35 (ancla 34)",
+   "ancla": "Dimayor"
+  },
+  {
+   "label": "Auxilio Hotelero",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "values": [
+    462.513
+   ],
+   "origen": "nota 35 (ancla 34)",
+   "ancla": "Dimayor"
+  },
+  {
+   "label": "Auxilio Transporte",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "values": [
+    22.417
+   ],
+   "origen": "nota 35 (ancla 34)",
+   "ancla": "Dimayor"
+  },
+  {
+   "label": "Derechos Tv Variable Cerradawin Sport",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "values": [
+    711.358
+   ],
+   "origen": "nota 35 (ancla 34)",
+   "ancla": "Dimayor"
+  },
+  {
+   "label": "Derechos Tv Variable On Line Win Sports",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "values": [
+    91.243
+   ],
+   "origen": "nota 35 (ancla 34)",
+   "ancla": "Dimayor"
+  },
+  {
+   "label": "Derechos Tv Cerrada Variable Canal Premium",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "values": [
+    2156.249
+   ],
+   "origen": "nota 35 (ancla 34)",
+   "ancla": "Dimayor"
+  },
+  {
+   "label": "Contrato Genius Videos Ofic. Para Apuestas",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "values": [
+    90.72
+   ],
+   "origen": "nota 35 (ancla 34)",
+   "ancla": "Dimayor"
+  },
+  {
+   "label": "Auxilio Logístico",
+   "lado": "revenue",
+   "page": 32,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+   "values": [
+    168.63
+   ],
+   "origen": "nota 35 (ancla 34)",
+   "ancla": "Dimayor"
+  },
+  {
+   "label": "Federacion Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "values": [
+    680.148
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "Bet Play",
+   "lado": "revenue",
+   "page": 32,
+   "section": "",
+   "values": [
+    841.6
+   ],
+   "origen": "nota 37 (ancla 34)",
+   "ancla": "Patrocinio"
+  },
+  {
+   "label": "Patrocinio",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "values": [
+    4916.6
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Colanta",
+   "lado": "revenue",
+   "page": 32,
+   "section": "",
+   "values": [
+    1000
+   ],
+   "origen": "nota 37 (ancla 34)",
+   "ancla": "Patrocinio"
+  },
+  {
+   "label": "Comedal Cooperativa Medica De Ar",
+   "lado": "revenue",
+   "page": 32,
+   "section": "",
+   "values": [
+    275
+   ],
+   "origen": "nota 37 (ancla 34)",
+   "ancla": "Patrocinio"
+  },
+  {
+   "label": "La Equidad",
+   "lado": "revenue",
+   "page": 32,
+   "section": "",
+   "values": [
+    2500
+   ],
+   "origen": "nota 37 (ancla 34)",
+   "ancla": "Patrocinio"
+  },
+  {
+   "label": "Patrocinio Equipo Femenino",
+   "lado": "revenue",
+   "page": 32,
+   "section": "",
+   "values": [
+    300
+   ],
+   "origen": "nota 37 (ancla 34)",
+   "ancla": "Patrocinio"
+  },
+  {
+   "label": "Venta de Artículos Deportivos",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "values": [
+    252.372
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "Actividades Conexas",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "values": [
+    950.381
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Certificaciones / Paz Y Salvo",
+   "lado": "revenue",
+   "page": 32,
+   "section": "",
+   "values": [
+    5.168
+   ],
+   "origen": "nota 36 (ancla 34)",
+   "ancla": "Actividades Conexas"
+  },
+  {
+   "label": "Fondos Equip No Clasificados",
+   "lado": "revenue",
+   "page": 32,
+   "section": "",
+   "values": [
+    144
+   ],
+   "origen": "nota 36 (ancla 34)",
+   "ancla": "Actividades Conexas"
+  },
+  {
+   "label": "Participacion En Torneos Nacionales",
+   "lado": "revenue",
+   "page": 32,
+   "section": "",
+   "values": [
+    801.078
+   ],
+   "origen": "nota 36 (ancla 34)",
+   "ancla": "Actividades Conexas"
+  },
+  {
+   "label": "Ingresos Fuerzas Basicas",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+   "values": [
+    20
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "Ajustes Por Primera Vez Niif",
+   "lado": null,
+   "page": 31,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A: / ### Otros componentes del patrimonio / #### Otros componentes del patrimonio",
+   "values": [
+    230.865
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Convergencia Niif",
+   "lado": null,
+   "page": 31,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A: / ### Otros componentes del patrimonio / #### Otros componentes del patrimonio",
+   "values": [
+    -595.437
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Reserva Legal",
+   "lado": null,
+   "page": 30,
+   "section": "## Aplicación de los resultados / ## Reserva Legal",
+   "values": [
+    703.185
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Gastos De Personal",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    15860.461
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    647.428
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    895.461
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    1995.877
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    84.008
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    1067.21
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Legales",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    28.772
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Mantenimiento Y Reparaciones",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    69.22
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Adecuacion E Instalacion",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    3.323
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Gastos De Viaje",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    860.237
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    8.772
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    1129.732
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Amortizaciones Donaciones Derechos",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    138.133
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Derechos Deportivos",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    2107.77
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 35,
+   "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+   "values": [
+    4116.533
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Gastos De Personal",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "values": [
+    1797.543
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "values": [
+    199.876
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "values": [
+    213.478
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "values": [
+    10.355
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Contribuciones",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "values": [
+    1.1
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "values": [
+    0.017
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "values": [
+    178.15
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "values": [
+    82.146
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Mantenimiento Y Reparaciones",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "values": [
+    29.445
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Adecuación E Instalación",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "values": [
+    33.717
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Gastos de viaje",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "values": [
+    1.303
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "values": [
+    160.08
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Nota 23. Gastos de administración",
+   "values": [
+    56.096
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Gastos Bancarios",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "values": [
+    8.906
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Comisiones",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "values": [
+    25.276
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Intereses",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "values": [
+    343.268
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Diferencia en Cambio",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "values": [
+    0.441
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Costas y procesos Juridicos",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "values": [
+    850
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Costos y Gastos de Ejercicios",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "values": [
+    3.43
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Impuestos Asumidos",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "values": [
+    226.016
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Multas, Sanciones y Litigios",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "values": [
+    18.677
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Donaciones",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "values": [
+    9.113
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 35,
+   "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+   "values": [
+    164.175
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Reintegro de Otros Costos y Gastos",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    946.032
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Recobro Incapacidades",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    212.89
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Venta Derechos Deportivos",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    10549.68
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    0.054
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Financieros",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    116.083
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    1.072
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Ajuste al Peso",
+   "lado": "revenue",
+   "page": 33,
+   "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    0.008
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Gastos Equipo Profesional Y Divisiones Menores",
+   "lado": "expense",
+   "page": 37,
+   "section": "FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN",
+   "values": [
+    150.578
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Gastos No Operacionales",
+   "lado": "expense",
+   "page": 37,
+   "section": "FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN",
+   "values": [
+    0.058
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 37,
+   "section": "FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN",
+   "values": [
+    22.282
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Mantenimiento y Reparaciones",
+   "lado": "expense",
+   "page": 37,
+   "section": "FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN",
+   "values": [
+    0.487
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Otros Gastos",
+   "lado": "expense",
+   "page": 37,
+   "section": "FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN",
+   "values": [
+    14.161
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 37,
+   "section": "FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN",
+   "values": [
+    0.65
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "Rendimientos Financieros",
+   "lado": "revenue",
+   "page": 34,
+   "section": "AFILIADO AL",
+   "values": [
+    11.963
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "Diferencia En Cambio",
+   "lado": "revenue",
+   "page": 34,
+   "section": "AFILIADO AL",
+   "values": [
+    0.026
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "Impuestos Renta Periodos anteriores",
+   "lado": "expense",
+   "page": 36,
+   "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO N° / ## Nota 26. Gasto por impuesto / ### Impuesto de Renta",
+   "values": [
+    42.928
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "Cuerpo Técnico",
+   "lado": "revenue",
+   "page": 36,
+   "section": "",
+   "values": [
+    203.089
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Equipo Femenino Profesional",
+   "lado": "revenue",
+   "page": 36,
+   "section": "",
+   "values": [
+    1037.061
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Servi. Pub. - Aseo Y Otros",
+   "lado": "expense",
+   "page": 37,
+   "section": "",
+   "values": [
+    34.47
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Gastos de Viaje",
+   "lado": "expense",
+   "page": 37,
+   "section": "",
+   "values": [
+    56.213
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Costo de Venta Artículos Deportivos",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 21. Costo de Ventas",
+   "values": [
+    555.558
+   ],
+   "origen": "estado 39"
+  }
+ ]
+}

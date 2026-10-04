@@ -1,0 +1,72 @@
+{
+ "md": "Clubes/Bélgica/Sint-Truiden/jaarrekening-2016-06-30-individual.md",
+ "generatedAt": "2026-09-30T01:11:42.833Z",
+ "rubros": [
+  {
+   "label": "640/8",
+   "page": 5,
+   "section": "RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.19,
+   "top3": [
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "635/7",
+   "page": 5,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.24,
+   "top3": [
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "other_income",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "631/4",
+   "page": 5,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.19,
+   "top3": [
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "other_income",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1259
+  }
+ ]
+}

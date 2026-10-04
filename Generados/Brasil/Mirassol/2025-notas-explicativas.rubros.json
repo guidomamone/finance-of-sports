@@ -1,0 +1,288 @@
+{
+  "md": "Clubes/Brasil/Mirassol/2025-notas-explicativas.md",
+  "pdf": "Clubes/Brasil/Mirassol/2025-notas-explicativas.pdf",
+  "club": "mirassol",
+  "year": 2025,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:53:30.597Z",
+  "tieOuts": {
+    "cierran": 15,
+    "noCierran": 0
+  },
+  "warnings": [
+    "10 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 24,
+    "notasUsadas": []
+  },
+  "ladoConocido": 24,
+  "rubros": [
+    {
+      "label": "Pessoal e Encargos Sociais^{1}",
+      "lado": "expense",
+      "page": 3,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## Composição das Despesas Operacionais",
+      "values": [
+        50.703
+      ],
+      "origen": "estado 1",
+      "glosa": "Personal y cargas sociales^{1}"
+    },
+    {
+      "label": "Premiações e Prêmios",
+      "lado": "expense",
+      "page": 3,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## Composição das Despesas Operacionais",
+      "values": [
+        22.1
+      ],
+      "origen": "estado 1",
+      "glosa": "Primas y premios"
+    },
+    {
+      "label": "Comissões e Transferências^{2}",
+      "lado": "expense",
+      "page": 3,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## Composição das Despesas Operacionais",
+      "values": [
+        10.11
+      ],
+      "origen": "estado 1",
+      "glosa": "Comisiones y transferencias^{2}"
+    },
+    {
+      "label": "Manutenção e Suporte Operacional^{3}",
+      "lado": "expense",
+      "page": 3,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## Composição das Despesas Operacionais",
+      "values": [
+        9.738
+      ],
+      "origen": "estado 1",
+      "glosa": "Mantenimiento y soporte operativo^{3}"
+    },
+    {
+      "label": "Direitos de Uso de Imagem (Adicional)",
+      "lado": "expense",
+      "page": 3,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## Composição das Despesas Operacionais",
+      "values": [
+        4.743
+      ],
+      "origen": "estado 1",
+      "glosa": "Derechos de uso de imagen (adicional)"
+    },
+    {
+      "label": "Outras Despesas Operacionais^{4}",
+      "lado": "expense",
+      "page": 3,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## Composição das Despesas Operacionais",
+      "values": [
+        4.093
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros gastos operativos^{4}"
+    },
+    {
+      "label": "Direitos de Transmissão de TV",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## 1 Receita Operacional / ### Receita operacional",
+      "values": [
+        125.548
+      ],
+      "origen": "estado 0",
+      "glosa": "Derechos de retransmisión televisiva"
+    },
+    {
+      "label": "Patrocínio e Publicidade",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## 1 Receita Operacional / ### Receita operacional",
+      "values": [
+        24.722
+      ],
+      "origen": "estado 0",
+      "glosa": "Patrocinio y publicidad"
+    },
+    {
+      "label": "Transferência de Atletas",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## 1 Receita Operacional / ### Receita operacional",
+      "values": [
+        16.311
+      ],
+      "origen": "estado 0",
+      "glosa": "Transferencia de deportistas"
+    },
+    {
+      "label": "Bilheteria e Atividades de Jogos^{1}",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## 1 Receita Operacional / ### Receita operacional",
+      "values": [
+        12.149
+      ],
+      "origen": "estado 0",
+      "glosa": "Taquilla y actividades de partidos^{1}"
+    },
+    {
+      "label": "Outras Receitas^{2}",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## 1 Receita Operacional / ### Receita operacional",
+      "values": [
+        1.233
+      ],
+      "origen": "estado 0",
+      "glosa": "Otros ingresos^{2}"
+    },
+    {
+      "label": "Encargos de Amortização^{1}",
+      "lado": "expense",
+      "page": 3,
+      "section": "### 3 Despesas Administrativas / ## Composição das Despesas Administrativas",
+      "values": [
+        2.402
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos de amortización^{1}"
+    },
+    {
+      "label": "Infraestrutura e Ocupação^{2}",
+      "lado": "expense",
+      "page": 3,
+      "section": "### 3 Despesas Administrativas / ## Composição das Despesas Administrativas",
+      "values": [
+        2.526
+      ],
+      "origen": "estado 2",
+      "glosa": "Infraestructura y ocupación^{2}"
+    },
+    {
+      "label": "Serviços de Terceiros e Jurídico^{3}",
+      "lado": "expense",
+      "page": 3,
+      "section": "### 3 Despesas Administrativas / ## Composição das Despesas Administrativas",
+      "values": [
+        0.761
+      ],
+      "origen": "estado 2",
+      "glosa": "Servicios de terceros y asesoría jurídica^{3}"
+    },
+    {
+      "label": "Taxas e Registros",
+      "lado": "expense",
+      "page": 3,
+      "section": "### 3 Despesas Administrativas / ## Composição das Despesas Administrativas",
+      "values": [
+        0.611
+      ],
+      "origen": "estado 2",
+      "glosa": "Tasas y registros"
+    },
+    {
+      "label": "Outras Despesas Administrativas^{4}",
+      "lado": "expense",
+      "page": 3,
+      "section": "### 3 Despesas Administrativas / ## Composição das Despesas Administrativas",
+      "values": [
+        0.963
+      ],
+      "origen": "estado 2",
+      "glosa": "Otros gastos administrativos^{4}"
+    },
+    {
+      "label": "Impostos sobre Operações de Câmbio (IRRF)",
+      "lado": "expense",
+      "page": 4,
+      "section": "## 5 Despesas Financeiras / ### Composição das Despesas Financeiras",
+      "values": [
+        0.348
+      ],
+      "origen": "estado 4",
+      "glosa": "Impuestos sobre operaciones de cambio (IRRF)"
+    },
+    {
+      "label": "Juros Passivos e Encargos Financeiros^{1}",
+      "lado": "expense",
+      "page": 4,
+      "section": "## 5 Despesas Financeiras / ### Composição das Despesas Financeiras",
+      "values": [
+        0.097
+      ],
+      "origen": "estado 4",
+      "glosa": "Intereses pasivos y gastos financieros^{1}"
+    },
+    {
+      "label": "Despesas com Operações de Câmbio",
+      "lado": "expense",
+      "page": 4,
+      "section": "## 5 Despesas Financeiras / ### Composição das Despesas Financeiras",
+      "values": [
+        0.049
+      ],
+      "origen": "estado 4",
+      "glosa": "Gastos por operaciones de cambio"
+    },
+    {
+      "label": "Tarifas Bancárias",
+      "lado": "expense",
+      "page": 4,
+      "section": "## 5 Despesas Financeiras / ### Composição das Despesas Financeiras",
+      "values": [
+        0.026
+      ],
+      "origen": "estado 4",
+      "glosa": "Comisiones bancarias"
+    },
+    {
+      "label": "IOF",
+      "lado": "expense",
+      "page": 4,
+      "section": "## 5 Despesas Financeiras / ### Composição das Despesas Financeiras",
+      "values": [
+        0.012
+      ],
+      "origen": "estado 4",
+      "glosa": "IOF"
+    },
+    {
+      "label": "Rendimentos de Aplicações Financeiras",
+      "lado": "revenue",
+      "page": 4,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## 4 Receitas Financeiras / ### Composição das Receitas Financeiras",
+      "values": [
+        6.55
+      ],
+      "origen": "estado 3",
+      "glosa": "Rendimientos de inversiones financieras"
+    },
+    {
+      "label": "Recuperação de Créditos Baixados",
+      "lado": "revenue",
+      "page": 4,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## 4 Receitas Financeiras / ### Composição das Receitas Financeiras",
+      "values": [
+        0.448
+      ],
+      "origen": "estado 3",
+      "glosa": "Recuperación de créditos fallidos"
+    },
+    {
+      "label": "Descontos Obtidos",
+      "lado": "revenue",
+      "page": 4,
+      "section": "# MIRASSOL FUTEBOL CLUBE / ## 4 Receitas Financeiras / ### Composição das Receitas Financeiras",
+      "values": [
+        0.053
+      ],
+      "origen": "estado 3",
+      "glosa": "Descuentos obtenidos"
+    }
+  ]
+}

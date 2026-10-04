@@ -1,0 +1,590 @@
+{
+ "md": "Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2019.md",
+ "generatedAt": "2026-09-30T22:49:00.266Z",
+ "rubrosHuella": "9ea31a54c0e1cc60865098c7d2bedf786ea6515a",
+ "rubros": [
+  {
+   "label": "Prihodi od kamata po bankovnim računima i danim kreditima",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# 7. Troškovi financiranja",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Pozitivne tečajne razlike",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# 7. Troškovi financiranja",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali financijski prihodi",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# 7. Troškovi financiranja",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Proizvođač opreme",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Glavni sponzor",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Prava emitiranja - Nacionalna natjecanja",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali nerazvrstani prihodi od emitiranja",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "broadcasting",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Komercijalni prihodi - Nacionalna natjecanja",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Komercijalni prihodi - Prodaja proizvoda",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "stadium_other",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali nerazvrstani komercijalni prihodi",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "competition_bonus",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Uefina nagrade i solidarne uplate - nerazvrstano",
+   "lado": null,
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Donacije i dotacije ili drugi iznosi od države i lokalne samouprave",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali nerazvrstani poslovni prihodi",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihodi od bonova za ručak",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE - nastavak / # BILJEŠKE UZ RAČUN DOBITI I GUBITKA / # 4. Ostali nerazvrstani poslovni prihodi",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihodi od refundacija",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE - nastavak / # BILJEŠKE UZ RAČUN DOBITI I GUBITKA / # 4. Ostali nerazvrstani poslovni prihodi",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otpis obveza",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE - nastavak / # BILJEŠKE UZ RAČUN DOBITI I GUBITKA / # 4. Ostali nerazvrstani poslovni prihodi",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihod od dohotka u naravi",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE - nastavak / # BILJEŠKE UZ RAČUN DOBITI I GUBITKA / # 4. Ostali nerazvrstani poslovni prihodi",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Prihod od naknadno odobrenih popusta",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE - nastavak / # BILJEŠKE UZ RAČUN DOBITI I GUBITKA / # 4. Ostali nerazvrstani poslovni prihodi",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali prihodi",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE - nastavak / # BILJEŠKE UZ RAČUN DOBITI I GUBITKA / # 4. Ostali nerazvrstani poslovni prihodi",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Plaće igrača",
+   "lado": "expense",
+   "page": 8,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Porezi i doprinosi - igrači",
+   "lado": "expense",
+   "page": 8,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Plaće ostalih zaposlenika",
+   "lado": null,
+   "page": 8,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Porezi i doprinosi - ostali zaposlenici",
+   "lado": "expense",
+   "page": 8,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali nerazvrstani troškovi zaposlenika",
+   "lado": "expense",
+   "page": 8,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizacija i umanjenje vrijednosti dugotrajne materijalne imovine",
+   "lado": "expense",
+   "page": 8,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizacija ostale nematerijalne imovine (bez registracije igrača)",
+   "lado": "expense",
+   "page": 8,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "other_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Smanjenje vrijednosti i amortizacija - Ukupno (bez registracija igrača)",
+   "lado": "expense",
+   "page": 8,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "depreciation",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi održavanja utakmica",
+   "lado": "expense",
+   "page": 8,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi sponzorstva i oglašavanja",
+   "lado": "expense",
+   "page": 8,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi imovine i objekata",
+   "lado": "expense",
+   "page": 8,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Donacije",
+   "lado": "expense",
+   "page": 20,
+   "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali nerazvrstani poslovni rashodi",
+   "lado": "expense",
+   "page": 8,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi najmova",
+   "lado": "expense",
+   "page": 20,
+   "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+   "choice": "admin_general_expense",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi službenih putovanja",
+   "lado": "expense",
+   "page": 20,
+   "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.32,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi energije",
+   "lado": "expense",
+   "page": 20,
+   "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi komunalnih usluga",
+   "lado": "expense",
+   "page": 20,
+   "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi reprezentacije",
+   "lado": "expense",
+   "page": 20,
+   "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi intelektualnih usluga",
+   "lado": "expense",
+   "page": 20,
+   "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Naknade šteta po sudskim sporovima i kazne",
+   "lado": "expense",
+   "page": 20,
+   "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi prijevoza",
+   "lado": "expense",
+   "page": 20,
+   "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Troškovi premije osiguranja",
+   "lado": "expense",
+   "page": 20,
+   "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Naknade i kazne savezima",
+   "lado": "expense",
+   "page": 20,
+   "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Usluge banaka",
+   "lado": "expense",
+   "page": 20,
+   "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Ostali poslovni rashodi",
+   "lado": "expense",
+   "page": 20,
+   "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Poslovni rezultat (bez registracija igrača)",
+   "lado": null,
+   "page": 8,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizacija dugotrajne nematerijalne imovine (registracije igrača)",
+   "lado": null,
+   "page": 9,
+   "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Financijski prihodi",
+   "lado": "expense",
+   "page": 9,
+   "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Financijski rashodi",
+   "lado": "expense",
+   "page": 9,
+   "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Porezni rashod",
+   "lado": "expense",
+   "page": 9,
+   "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "admin_general_expense",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Odgovornost za godišnje konsolidirane financijske izvještaje",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # S A D R Ž A J",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "Bilješke uz konsolidirane financijske izvještaje",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # S A D R Ž A J",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 954
+  },
+  {
+   "label": "Troškovi kamata na prekoračenja po bankovnim računima i zajmove",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# 7. Troškovi financiranja",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "Konsolidirani Izvještaj o novčanim tokovima",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # S A D R Ž A J",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 867
+  },
+  {
+   "label": "Prihodi od ulaznica - ukupno",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1054
+  }
+ ]
+}

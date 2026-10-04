@@ -1,0 +1,908 @@
+{
+ "md": "Clubes/Turquía/Fenerbahçe/fenerbahce-futbol-bilanco-31-05-2016.md",
+ "pdf": "Clubes/Turquía/Fenerbahçe/fenerbahce-futbol-bilanco-31-05-2016.pdf",
+ "club": "fenerbahce",
+ "year": 2016,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:08:14.975Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 82,
+  "notasUsadas": [
+   "73",
+   "74",
+   "77",
+   "78",
+   "72",
+   "28"
+  ]
+ },
+ "ladoConocido": 80,
+ "rubros": [
+  {
+   "label": "Hasılat",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    548.229359
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Satışların Maliyeti (-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    -514.591909
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Pazarlama Giderleri (-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    -43.204181
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Genel Yönetim Giderleri (-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    -30.795663
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Ticari işlemlere ilişkin kambiyo karı",
+   "lado": "revenue",
+   "page": 55,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 22 –ESAS FAALİYETLERDEN DİĞER GELİRLER/GİDERLER / # Esas Faaliyetlerden Diğer Gelirler",
+   "values": [
+    28.421813
+   ],
+   "origen": "nota 73 (ancla 3)",
+   "ancla": "Esas Faaliyetlerden Diğer Gelirler"
+  },
+  {
+   "label": "Esas Faaliyetlerden Diğer Gelirler",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    45.69964
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Ertelenmiş finansman gelirleri",
+   "lado": "revenue",
+   "page": 55,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 22 –ESAS FAALİYETLERDEN DİĞER GELİRLER/GİDERLER / # Esas Faaliyetlerden Diğer Gelirler",
+   "values": [
+    14.565163
+   ],
+   "origen": "nota 73 (ancla 3)",
+   "ancla": "Esas Faaliyetlerden Diğer Gelirler"
+  },
+  {
+   "label": "Reeskont faiz geliri",
+   "lado": "revenue",
+   "page": 55,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 22 –ESAS FAALİYETLERDEN DİĞER GELİRLER/GİDERLER / # Esas Faaliyetlerden Diğer Gelirler",
+   "values": [
+    0.531082
+   ],
+   "origen": "nota 73 (ancla 3)",
+   "ancla": "Esas Faaliyetlerden Diğer Gelirler"
+  },
+  {
+   "label": "Konusu kalmayan karşılıklar",
+   "lado": "revenue",
+   "page": 55,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 22 –ESAS FAALİYETLERDEN DİĞER GELİRLER/GİDERLER / # Esas Faaliyetlerden Diğer Gelirler",
+   "values": [
+    0.033271
+   ],
+   "origen": "nota 73 (ancla 3)",
+   "ancla": "Esas Faaliyetlerden Diğer Gelirler"
+  },
+  {
+   "label": "Diğer",
+   "lado": "revenue",
+   "page": 55,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 22 –ESAS FAALİYETLERDEN DİĞER GELİRLER/GİDERLER / # Esas Faaliyetlerden Diğer Gelirler",
+   "values": [
+    2.148311
+   ],
+   "origen": "nota 73 (ancla 3)",
+   "ancla": "Esas Faaliyetlerden Diğer Gelirler"
+  },
+  {
+   "label": "Ticari işlemlere ilişkin kambiyo zararı",
+   "lado": "expense",
+   "page": 55,
+   "section": "# Esas faaliyetlerden diğer giderler (-)",
+   "values": [
+    40.372686
+   ],
+   "origen": "nota 74 (ancla 3)",
+   "ancla": "Esas Faaliyetlerden Diğer Giderler (-)"
+  },
+  {
+   "label": "Esas Faaliyetlerden Diğer Giderler (-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    -46.232739
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Ertelenmiş finansman giderleri",
+   "lado": "expense",
+   "page": 55,
+   "section": "# Esas faaliyetlerden diğer giderler (-)",
+   "values": [
+    5.28941
+   ],
+   "origen": "nota 74 (ancla 3)",
+   "ancla": "Esas Faaliyetlerden Diğer Giderler (-)"
+  },
+  {
+   "label": "Reeskont faiz giderleri",
+   "lado": "expense",
+   "page": 55,
+   "section": "# Esas faaliyetlerden diğer giderler (-)",
+   "values": [
+    0.555477
+   ],
+   "origen": "nota 74 (ancla 3)",
+   "ancla": "Esas Faaliyetlerden Diğer Giderler (-)"
+  },
+  {
+   "label": "Diğer",
+   "lado": "expense",
+   "page": 55,
+   "section": "# Esas faaliyetlerden diğer giderler (-)",
+   "values": [
+    0.015166
+   ],
+   "origen": "nota 74 (ancla 3)",
+   "ancla": "Esas Faaliyetlerden Diğer Giderler (-)"
+  },
+  {
+   "label": "Yatırım Faaliyetlerinden Gelirler",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    0.102778
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Yatırım Faaliyetlerinden Giderler",
+   "lado": "expense",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    -0.059581
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Finansman Gelirleri",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    18.203794
+   ],
+   "origen": "estado 3 (su nota queda consumida sin abrir)"
+  },
+  {
+   "label": "Finansman Giderleri (-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    -94.064168
+   ],
+   "origen": "estado 3 (su nota queda consumida sin abrir)"
+  },
+  {
+   "label": "- Dönem Vergi Gelir/(Gideri)",
+   "lado": "expense",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    -0.575969
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "- Ertelenmiş Vergi Gelir/(Gideri)",
+   "lado": "expense",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    0.656572
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Ana Ortaklık Payları",
+   "lado": null,
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    -116.529632
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Kontrol Gücü Olmayan Paylar",
+   "lado": null,
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    -0.102435
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Hisse Başına Kayıp/Kazanç",
+   "lado": null,
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    -0.000005
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "- Tanımlanmış Fayda Planları Yeniden Ölçüm Kazançları/(Kayıpları)",
+   "lado": null,
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    0.078904
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Ana Ortaklık Payları",
+   "lado": null,
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    -116.482339
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Kontrol Gücü Olmayan Paylar",
+   "lado": null,
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "values": [
+    -0.089419
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Ücret giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    273.925794
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Satışların maliyeti",
+   "lado": "expense",
+   "page": 54,
+   "section": "",
+   "values": [
+    73.91706
+   ],
+   "origen": "nota 72 (ancla 70)",
+   "ancla": "Amortisman ve itfa giderleri"
+  },
+  {
+   "label": "Amortisman ve itfa giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    76.650924
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Pazarlama, satış ve dağıtım giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "",
+   "values": [
+    0.059548
+   ],
+   "origen": "nota 72 (ancla 70)",
+   "ancla": "Amortisman ve itfa giderleri"
+  },
+  {
+   "label": "Genel yönetim giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "",
+   "values": [
+    2.674316
+   ],
+   "origen": "nota 72 (ancla 70)",
+   "ancla": "Amortisman ve itfa giderleri"
+  },
+  {
+   "label": "Satılan ticari mallar maliyeti",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    45.401171
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Personel giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    23.266171
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Tesis kullanım giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    26.848743
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Futbol takımı giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    23.570963
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Futbolcu menajer giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    17.741341
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Futbolcu kiralama giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    15.482701
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Kira giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    14.476702
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Futbolcu transferlerine ilişkin giderler",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    10.66671
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Pazarlama ve promosyon giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    8.073159
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Ceza ve kesinti giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    7.724051
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Bonservis çıkış maliyeti",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    8.287251
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Vergi, resim ve harçlar",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    15.498712
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Avanslar itfa payı",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    1.02724
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Danışmanlık giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    1.274086
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Futbolcu dayanışma katkı payları",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    1.01673
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Diğer",
+   "lado": "expense",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "values": [
+    17.659304
+   ],
+   "origen": "estado 70"
+  },
+  {
+   "label": "Yayın hakkı avansı",
+   "lado": "revenue",
+   "page": 35,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER (devamı)",
+   "values": [
+    24679.903
+   ],
+   "origen": "nota 28 (ancla 27)",
+   "ancla": "Alınan avanslar"
+  },
+  {
+   "label": "Alınan avanslar",
+   "lado": "revenue",
+   "page": 34,
+   "section": "(*) Dönem içerisinde itfa olunan avans tutarı satışların maliyetine dahil edilmiştir.",
+   "values": [
+    37295.341
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Ürün satışlarından alınan avanslar",
+   "lado": "revenue",
+   "page": 35,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER (devamı)",
+   "values": [
+    6348.316
+   ],
+   "origen": "nota 28 (ancla 27)",
+   "ancla": "Alınan avanslar"
+  },
+  {
+   "label": "Reklam satışlarından alınan avanslar",
+   "lado": "revenue",
+   "page": 35,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER (devamı)",
+   "values": [
+    6267.122
+   ],
+   "origen": "nota 28 (ancla 27)",
+   "ancla": "Alınan avanslar"
+  },
+  {
+   "label": "Gelecek aylara ait isim hakkı gelirleri(*)",
+   "lado": "revenue",
+   "page": 34,
+   "section": "(*) Dönem içerisinde itfa olunan avans tutarı satışların maliyetine dahil edilmiştir.",
+   "values": [
+    28130.1
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Gelecek aylara ait reklam ve sponsorluk gelirleri",
+   "lado": "revenue",
+   "page": 34,
+   "section": "(*) Dönem içerisinde itfa olunan avans tutarı satışların maliyetine dahil edilmiştir.",
+   "values": [
+    15749.028
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Gelecek aylara ait kombine ve loca satış gelirleri",
+   "lado": "revenue",
+   "page": 34,
+   "section": "(*) Dönem içerisinde itfa olunan avans tutarı satışların maliyetine dahil edilmiştir.",
+   "values": [
+    5644.075
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Diğer",
+   "lado": "revenue",
+   "page": 34,
+   "section": "(*) Dönem içerisinde itfa olunan avans tutarı satışların maliyetine dahil edilmiştir.",
+   "values": [
+    3203.673
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Gelecek yıllara ait isim hakkı gelirleri ()",
+   "lado": "revenue",
+   "page": 34,
+   "section": "(*) Dönem içerisinde itfa olunan avans tutarı satışların maliyetine dahil edilmiştir.",
+   "values": [
+    158525.52
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Gelecek yıllara ait reklam ve sponsorluk gelirleri",
+   "lado": "revenue",
+   "page": 34,
+   "section": "(*) Dönem içerisinde itfa olunan avans tutarı satışların maliyetine dahil edilmiştir.",
+   "values": [
+    12440.839
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Gelecek yıllara ait kombine ve loca satış gelirleri",
+   "lado": "revenue",
+   "page": 34,
+   "section": "(*) Dönem içerisinde itfa olunan avans tutarı satışların maliyetine dahil edilmiştir.",
+   "values": [
+    803.988
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Naklen yayın gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## NOT 20 – HASILAT",
+   "values": [
+    109954.522
+   ],
+   "origen": "estado 68"
+  },
+  {
+   "label": "Lisanslı ürün satış gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## NOT 20 – HASILAT",
+   "values": [
+    99527.152
+   ],
+   "origen": "estado 68"
+  },
+  {
+   "label": "Stad hasılatı",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## NOT 20 – HASILAT",
+   "values": [
+    94265.124
+   ],
+   "origen": "estado 68"
+  },
+  {
+   "label": "Futbolcu bonservis gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## NOT 20 – HASILAT",
+   "values": [
+    71071.063
+   ],
+   "origen": "estado 68"
+  },
+  {
+   "label": "Reklam ve sponsorluk gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## NOT 20 – HASILAT",
+   "values": [
+    70048.028
+   ],
+   "origen": "estado 68"
+  },
+  {
+   "label": "Katılım ve performans gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## NOT 20 – HASILAT",
+   "values": [
+    51748.154
+   ],
+   "origen": "estado 68"
+  },
+  {
+   "label": "İsim hakkı gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## NOT 20 – HASILAT",
+   "values": [
+    43511.906
+   ],
+   "origen": "estado 68"
+  },
+  {
+   "label": "Dergi satış gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## NOT 20 – HASILAT",
+   "values": [
+    834.349
+   ],
+   "origen": "estado 68"
+  },
+  {
+   "label": "Futbolcu yetiştirme tazminatı gelirleri",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## NOT 20 – HASILAT",
+   "values": [
+    720.586
+   ],
+   "origen": "estado 68"
+  },
+  {
+   "label": "Diğer gelirler",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## NOT 20 – HASILAT",
+   "values": [
+    6548.475
+   ],
+   "origen": "estado 68"
+  },
+  {
+   "label": "FBSK",
+   "lado": "expense",
+   "page": 58,
+   "section": "",
+   "values": [
+    14.603216
+   ],
+   "origen": "estado 83"
+  },
+  {
+   "label": "Radyo Fenerbahçe Medya ve İletişim Hizmetleri A.Ş.",
+   "lado": "expense",
+   "page": 58,
+   "section": "",
+   "values": [
+    1.336165
+   ],
+   "origen": "estado 83"
+  },
+  {
+   "label": "Fenerbahçe Eğitim Öğretim İşl. ve Tic. A.Ş.",
+   "lado": "expense",
+   "page": 58,
+   "section": "",
+   "values": [
+    0.388415
+   ],
+   "origen": "estado 83"
+  },
+  {
+   "label": "Fenerbahçe Turizm ve Catering İşl. San. ve Tic. Ltd. Şti.",
+   "lado": "expense",
+   "page": 58,
+   "section": "",
+   "values": [
+    0.357687
+   ],
+   "origen": "estado 83"
+  },
+  {
+   "label": "Fenerbahçe İletişim Hizmetleri San. ve Tic. A.S.",
+   "lado": "expense",
+   "page": 58,
+   "section": "",
+   "values": [
+    0.006566
+   ],
+   "origen": "estado 83"
+  },
+  {
+   "label": "FBSK",
+   "lado": "revenue",
+   "page": 58,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 25 – İLİŞKİLİ TARAF AÇIKLAMALARI (devamı)",
+   "values": [
+    3.774393
+   ],
+   "origen": "estado 82"
+  },
+  {
+   "label": "Fenerbahçe İletişim Hizmetleri San. ve Tic. A.Ş.",
+   "lado": "revenue",
+   "page": 58,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 25 – İLİŞKİLİ TARAF AÇIKLAMALARI (devamı)",
+   "values": [
+    0.951186
+   ],
+   "origen": "estado 82"
+  },
+  {
+   "label": "Radyo Fenerbahçe Medya ve İletişim Hizmetleri A.Ş.",
+   "lado": "revenue",
+   "page": 58,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 25 – İLİŞKİLİ TARAF AÇIKLAMALARI (devamı)",
+   "values": [
+    0.600367
+   ],
+   "origen": "estado 82"
+  },
+  {
+   "label": "Fener TV Fener Televizyon Haber ve Görsel Yay. A.Ş",
+   "lado": "revenue",
+   "page": 58,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 25 – İLİŞKİLİ TARAF AÇIKLAMALARI (devamı)",
+   "values": [
+    0.010085
+   ],
+   "origen": "estado 82"
+  },
+  {
+   "label": "Satışların maliyeti",
+   "lado": "expense",
+   "page": 53,
+   "section": "## NOT 21 – NİTELİKLERİNE GÖRE GİDERLER",
+   "values": [
+    514591.909
+   ],
+   "origen": "estado 69"
+  },
+  {
+   "label": "Pazarlama, satış ve dağıtım giderleri",
+   "lado": "expense",
+   "page": 53,
+   "section": "## NOT 21 – NİTELİKLERİNE GÖRE GİDERLER",
+   "values": [
+    43204.181
+   ],
+   "origen": "estado 69"
+  },
+  {
+   "label": "Genel yönetim giderleri",
+   "lado": "expense",
+   "page": 53,
+   "section": "## NOT 21 – NİTELİKLERİNE GÖRE GİDERLER",
+   "values": [
+    30795.663
+   ],
+   "origen": "estado 69"
+  },
+  {
+   "label": "Satışların maliyeti",
+   "lado": "expense",
+   "page": 54,
+   "section": "",
+   "values": [
+    273.925794
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Pazarlama, satış ve dağıtım giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "",
+   "values": [
+    15.642607
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Genel yönetim giderleri",
+   "lado": "expense",
+   "page": 54,
+   "section": "",
+   "values": [
+    7.623564
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "FBSK",
+   "lado": "revenue",
+   "page": 59,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 25 – İLİŞKİLİ TARAF AÇIKLAMALARI (devamı)",
+   "values": [
+    15.577284
+   ],
+   "origen": "estado 84"
+  },
+  {
+   "label": "Fenerbahçe Turizm ve Catering İşl. San. ve Tic. Ltd. Şti.",
+   "lado": "expense",
+   "page": 59,
+   "section": "",
+   "values": [
+    0.040954
+   ],
+   "origen": "estado 85"
+  }
+ ]
+}

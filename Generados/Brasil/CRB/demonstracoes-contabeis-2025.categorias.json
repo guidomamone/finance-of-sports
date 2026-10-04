@@ -1,0 +1,97 @@
+{
+ "md": "Clubes/Brasil/CRB/demonstracoes-contabeis-2025.md",
+ "club": "crb",
+ "year": 2025,
+ "generatedAt": "2026-09-30T15:20:21.468Z",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.009688,
+ "rubros": [
+  {
+   "label": "Receita operacional líquida",
+   "lado": "revenue",
+   "section": "AMAC AUDITORES INDEPENDENTES / ### CLUBE DE REGATAS BRASIL / #### Demonstrações de resultados dos exercícios / #### Exercícios findos em 31 de dezembro de 2025 e 2024",
+   "page": 7,
+   "pendiente": false,
+   "ya": "lump_football_operations",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "lump_football_operations",
+   "confianza": 0.99
+  },
+  {
+   "label": "Custo das atividades sociais e esportivas",
+   "lado": "expense",
+   "section": "AMAC AUDITORES INDEPENDENTES / ### CLUBE DE REGATAS BRASIL / #### Demonstrações de resultados dos exercícios / #### Exercícios findos em 31 de dezembro de 2025 e 2024",
+   "page": 7,
+   "pendiente": true,
+   "jev": "youth_other_sports_expense",
+   "jevConf": 0.5,
+   "escalon": 2,
+   "categoria": "lump_football_operations_expense",
+   "confianza": 0.6,
+   "motivo": "Costo agregado de actividades esportivas sin desglose; ingresos también cargados como bolsón"
+  },
+  {
+   "label": "Despesas com pessoal",
+   "lado": "expense",
+   "section": "AMAC AUDITORES INDEPENDENTES / ### CLUBE DE REGATAS BRASIL / #### Demonstrações de resultados dos exercícios / #### Exercícios findos em 31 de dezembro de 2025 e 2024",
+   "page": 7,
+   "pendiente": true,
+   "jev": "wages_squad",
+   "jevConf": 0.78,
+   "escalon": 2,
+   "categoria": "wages_squad",
+   "confianza": 0.5,
+   "motivo": "Despesas com pessoal separada de gerais e administrativas; ambigua entre plantel y administración"
+  },
+  {
+   "label": "Despesas gerais e administrativas",
+   "lado": "expense",
+   "section": "AMAC AUDITORES INDEPENDENTES / ### CLUBE DE REGATAS BRASIL / #### Demonstrações de resultados dos exercícios / #### Exercícios findos em 31 de dezembro de 2025 e 2024",
+   "page": 7,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "section": "AMAC AUDITORES INDEPENDENTES / ### CLUBE DE REGATAS BRASIL / #### Demonstrações de resultados dos exercícios / #### Exercícios findos em 31 de dezembro de 2025 e 2024",
+   "page": 7,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Receitas financeiras",
+   "lado": "revenue",
+   "section": "AMAC AUDITORES INDEPENDENTES / ### CLUBE DE REGATAS BRASIL / #### Demonstrações de resultados dos exercícios / #### Exercícios findos em 31 de dezembro de 2025 e 2024",
+   "page": 7,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "other_income",
+   "confianza": 1
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "section": "AMAC AUDITORES INDEPENDENTES / ### CLUBE DE REGATAS BRASIL / #### Demonstrações de resultados dos exercícios / #### Exercícios findos em 31 de dezembro de 2025 e 2024",
+   "page": 7,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.75,
+   "escalon": 2,
+   "categoria": "no_es_rubro",
+   "confianza": 0.85,
+   "motivo": "Resultado financiero no es línea del sitio"
+  }
+ ]
+}

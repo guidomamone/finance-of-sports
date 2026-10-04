@@ -1,0 +1,92 @@
+{
+  "club": "hoffenheim-de",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2018-19.md",
+  "generatedAt": "2026-09-30T21:50:35.697Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 182,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 11,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Übrige Änderungen 0 0",
+          "values": [
+            "192.903"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodenergebnis",
+          "values": [
+            "803.190",
+            "15.705",
+            "818.894",
+            "19.235.868"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand zum",
+          "values": [
+            "30.06.2019",
+            "69.080.869",
+            "53.297",
+            "69.134.166",
+            "222.743.013"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Forderungen aus Lieferungen und Leistungen",
+          "values": [
+            "11.383.028,39",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Sonstige Vermögensgegenstände",
+          "values": [
+            "1.932.081,15",
+            "60.035.000,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "de",
+    "query": "TSG Hoffenheim",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

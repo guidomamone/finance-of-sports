@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2017.md",
+ "generado": "2026-10-02T00:12:53.802Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(APRESENTADAS EM REAIS)",
+ "caja": {
+  "lineas": [
+   488
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no presenta préstamos ni financiamientos en el pasivo; hay columnas Controladora y Consolidado con caja distinta (8.340.897 vs 30.823.720), se eligió la línea 488 que contiene ambas."
+}

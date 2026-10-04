@@ -1,0 +1,155 @@
+{
+ "md": "Clubes/Colombia/Llaneros/estados-financieros-2019.md",
+ "pdf": "Clubes/Colombia/Llaneros/estados-financieros-2019.pdf",
+ "club": "llaneros",
+ "year": 2019,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T21:59:14.833Z",
+ "tieOuts": {
+  "cierran": 29,
+  "noCierran": 1
+ },
+ "warnings": [
+  "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 13,
+  "notasUsadas": []
+ },
+ "ladoConocido": 13,
+ "rubros": [
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 19,
+   "section": "A diciembre 31 los gastos de administración se detallan a continuación:",
+   "values": [
+    206500
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 19,
+   "section": "A diciembre 31 los gastos de administración se detallan a continuación:",
+   "values": [
+    8727.37
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 19,
+   "section": "A diciembre 31 los gastos de administración se detallan a continuación:",
+   "values": [
+    286.26
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Gastos legales",
+   "lado": "expense",
+   "page": 19,
+   "section": "A diciembre 31 los gastos de administración se detallan a continuación:",
+   "values": [
+    10788.789
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 19,
+   "section": "A diciembre 31 los gastos de administración se detallan a continuación:",
+   "values": [
+    67584.058
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Saldo a Enero 1 de 2018",
+   "lado": "expense",
+   "page": 13,
+   "section": "",
+   "values": [
+    4.89871
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Adiciones",
+   "lado": "expense",
+   "page": 13,
+   "section": "",
+   "values": [
+    1.79
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Saldo a Enero 1 de 2019",
+   "lado": "expense",
+   "page": 13,
+   "section": "",
+   "values": [
+    6.68871
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Saldo a 31 de Diciembre de 2019",
+   "lado": "expense",
+   "page": 13,
+   "section": "",
+   "values": [
+    6.68871
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Financieros",
+   "lado": "expense",
+   "page": 20,
+   "section": "NOTA 22. Otros Gastos",
+   "values": [
+    63.584673
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Gastos extraordinarios",
+   "lado": "expense",
+   "page": 20,
+   "section": "NOTA 22. Otros Gastos",
+   "values": [
+    230.527807
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Gastos diversos",
+   "lado": "expense",
+   "page": 20,
+   "section": "NOTA 22. Otros Gastos",
+   "values": [
+    51.098093
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Ingresos de actividades ordinarias por prestación de servicios de actividades deportivas",
+   "lado": "revenue",
+   "page": 18,
+   "section": "NOTA 19. Ingresos Por Actividades Ordinarias",
+   "values": [
+    1625695.589
+   ],
+   "origen": "estado 16"
+  }
+ ]
+}

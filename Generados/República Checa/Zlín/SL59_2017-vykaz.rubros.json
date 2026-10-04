@@ -1,0 +1,531 @@
+{
+ "md": "Clubes/República Checa/Zlín/SL59_2017-vykaz.md",
+ "pdf": "Clubes/República Checa/Zlín/SL59_2017-vykaz.pdf",
+ "club": "zlin",
+ "year": 2017,
+ "numberFormat": "ambiguo",
+ "generatedAt": "2026-09-30T22:07:54.484Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": false,
+  "motivo": "no se pudo ubicar la columna del ejercicio"
+ },
+ "ladoConocido": 16,
+ "rubros": [
+  {
+   "label": "Tržby z prodeje výrobků a služeb",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "001",
+    "61.679",
+    "39.136"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Tržby za prodej zboží",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "002",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Výkonová spotřeba (ř.4 až 6)",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "003",
+    "53.208",
+    "42.114"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Náklady vynaložené na prodané zboží",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "004",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Spotřeba materiálu a energie",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "005",
+    "7.659",
+    "5.260"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Služby",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "006",
+    "45.549",
+    "36.854"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Změna stavu zásob vlastní činnosti (+/-)",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "007",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Aktivace (-)",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "008",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Osobní náklady (ř.10+11)",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "009",
+    "2.550",
+    "2.571"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Mzdové náklady",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "010",
+    "2.060",
+    "2.139"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Náklady na sociální zabezpečení, zdravotní pojištění a ostatní náklady (ř.12+13)",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "011",
+    "490",
+    "432"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Náklady na sociální zabezpečení, zdravotní pojištění",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "012",
+    "469",
+    "432"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Ostatní náklady",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "013",
+    "21",
+    "0"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Úpravy hodnot v provozní oblasti (ř.15+18+19)",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "014",
+    "2.778",
+    "1.208"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Úpravy hodnot dlouhodobého nehmotného a hmotného majetku (ř.16+17)",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "015",
+    "2.807",
+    "1.179"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Úpravy hodnot dlouhodobého nehmotného a hmotného majetku - trvalé",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "016",
+    "2.807",
+    "1.179"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Úpravy hodnot dlouhodobého nehmotného a hmotného majetku - dočasné",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "017",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Úpravy hodnot zásob",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "018",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Úpravy hodnot pohledávek",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "019",
+    "-29",
+    "29"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Ostatní provozní výnosy (ř.21 až 23)",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "020",
+    "7.436",
+    "9.980"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Tržby z prodaného dlouhodobého majetku",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "021",
+    "0",
+    "845"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Tržby z prodaného materiálu",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "022",
+    "170",
+    "77"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Jiné provozní výnosy",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "023",
+    "7.266",
+    "9.058"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Ostatní provozní náklady (ř.25 až 29)",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "024",
+    "292",
+    "406"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Zůstatková cena prodaného dlouhodobého majetku",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "025",
+    "0",
+    "300"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Zůstatková cena prodaného materiálu",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "026",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Daně a poplatky",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "027",
+    "5",
+    "6"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Rezervy v provozní oblasti a komplexní náklady příštích období",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "028",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Jiné provozní náklady",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "029",
+    "287",
+    "100"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Provozní výsledek hospodaření (+/-) (ř.1+2-3-7-8-9-14+20-24)",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / Tyršovo nábřeží 4381 / 76001 Zlín",
+   "values": [
+    "030",
+    "10.287",
+    "2.817"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  }
+ ]
+}

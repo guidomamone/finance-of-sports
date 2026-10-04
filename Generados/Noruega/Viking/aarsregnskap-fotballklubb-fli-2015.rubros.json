@@ -1,0 +1,533 @@
+{
+ "md": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2015.md",
+ "pdf": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2015.pdf",
+ "club": "viking",
+ "year": 2015,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:08.455Z",
+ "tieOuts": {
+  "cierran": 35,
+  "noCierran": 14
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "11 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "3 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "12 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 50,
+  "notasUsadas": [
+   "8"
+  ]
+ },
+ "ladoConocido": 41,
+ "rubros": [
+  {
+   "label": "Inntekter for dugnad bodsalg Viking Stadion",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    431.292
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Medlemskontingenter",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    1444.144
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Sponsorinntekter",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    691.569
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Tilskudd / gaver / spillemidler",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    1880.222
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Inntekter fra bingo og spilleautomater",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    170.918
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Inntekter FFO",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    2899.479
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen driftsinntekt inkl fotballskole og egenandeler",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    3347.8
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Inntekter fotballturnering",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    11.95
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Lønn, honorar, sign on fee",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Viking F.K. / # Note 5: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "values": [
+    26147.787
+   ],
+   "origen": "nota 8 (ancla 4)",
+   "ancla": "Refundert lønn, pensjon, arb.avg. mm. Viking ASA"
+  },
+  {
+   "label": "Refundert lønn, pensjon, arb.avg. mm. Viking ASA",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    30263.123
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Viking F.K. / # Note 5: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "values": [
+    3795.739
+   ],
+   "origen": "nota 8 (ancla 4)",
+   "ancla": "Refundert lønn, pensjon, arb.avg. mm. Viking ASA"
+  },
+  {
+   "label": "Offentlig tjenestepensjonsforsikring",
+   "lado": "expense",
+   "page": 12,
+   "section": "# Viking F.K. / # Note 5: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "values": [
+    319.597
+   ],
+   "origen": "nota 8 (ancla 4)",
+   "ancla": "Refundert lønn, pensjon, arb.avg. mm. Viking ASA"
+  },
+  {
+   "label": "Lønn, pensjon, arb.g.avg. mm spillere/trenere",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    30263.123
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Lønnskostnader andre ansatte Viking FK",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    7277.452
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    322.277
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Utgifter fotballturnering",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    19.05
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Utgifter til deltakelse turneringer og reiseutgifter trenere",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    1517.929
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Idrettsutstyr m.m",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    500.007
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    3034.869
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Vedlikehold Vikinghuset",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    26.099
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    699.158
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    0.774
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Overført fra spillerutviklingsfond",
+   "lado": null,
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    165
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Overført til/fra annen egenkapital",
+   "lado": null,
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    884.512
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Overført fra anleggsfond",
+   "lado": null,
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "values": [
+    72.417
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Inntekter for dugnad bodsalg Viking Stadion",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    0.431292
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Medlemskontigenter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    1.444144
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Sponsorinntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    0.691569
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Tilskudd / gaver / spillemidler",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    1.880222
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Inntekter fra bingo og spilleautomater",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    0.170918
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Inntekter FFO",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    2.899475
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen driftsinntekt inkl fotballskole og egenandeler",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    3.3478
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Inntekter fra fotballturnering",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    0.01195
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Refundert lønn, pensjon, arb. avg. mm. Viking ASA",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    30.263123
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Lønn, pensjon, arb. avg. mm. Viking ASA",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    30.263123
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Lønnskostnader andre ansatte Viking FK",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    7.277452
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    0.322277
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Utgifter fotballturnering",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    0.01905
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Utgifter til deltakelse turneringer og reiseutgifter trenere",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    1.517929
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Idrettsutstyr mm",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    0.500007
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    3.034869
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Vedlikehold Vikinghuset",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    0.026099
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    0.699158
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "values": [
+    0.000774
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen egenkapital",
+   "lado": null,
+   "page": 10,
+   "section": "# Balanse / ## Viking F.K.",
+   "values": [
+    11.054155
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Spillerutviklingsfond",
+   "lado": null,
+   "page": 10,
+   "section": "# Balanse / ## Viking F.K.",
+   "values": [
+    0.3213
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Anleggsfond",
+   "lado": null,
+   "page": 10,
+   "section": "# Balanse / ## Viking F.K.",
+   "values": [
+    5.134474
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Leverandørgjeld",
+   "lado": null,
+   "page": 10,
+   "section": "# Balanse / ## Viking F.K.",
+   "values": [
+    0.130264
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Skyldige offentlige avgifter",
+   "lado": null,
+   "page": 10,
+   "section": "# Balanse / ## Viking F.K.",
+   "values": [
+    4.656351
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Annen kortsiktig gjeld",
+   "lado": null,
+   "page": 10,
+   "section": "# Balanse / ## Viking F.K.",
+   "values": [
+    3.279827
+   ],
+   "origen": "estado 6"
+  }
+ ]
+}

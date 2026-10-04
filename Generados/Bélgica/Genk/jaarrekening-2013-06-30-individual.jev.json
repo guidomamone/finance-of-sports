@@ -1,0 +1,79 @@
+{
+ "md": "Clubes/Bélgica/Genk/jaarrekening-2013-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:38.944Z",
+ "rubrosHuella": "7062596828a1d9dd38320f6b558a15e9b8a41f4c",
+ "rubros": [
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 19,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 19,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "expense",
+   "page": 19,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere personeelskosten",
+   "lado": "expense",
+   "page": 19,
+   "section": "Personeelskosten",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Ouderdoms- en overlevingspensioenen",
+   "lado": "expense",
+   "page": 19,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 4,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 4.7 | 163/5 250.000 250.000 / Voorzieningen voor schenkingen en legaten met / terugnemingsrecht 4.7 | 168",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Schulden op meer dan één jaar 48 |",
+   "lado": "expense",
+   "page": 4,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 4.7 | 163/5 250.000 250.000 / Voorzieningen voor schenkingen en legaten met / terugnemingsrecht 4.7 | 168",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 4,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 4.7 | 163/5 250.000 250.000 / Voorzieningen voor schenkingen en legaten met / terugnemingsrecht 4.7 | 168",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "desdeCache": true
+  }
+ ]
+}

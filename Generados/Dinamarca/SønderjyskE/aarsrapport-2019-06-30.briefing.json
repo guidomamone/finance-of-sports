@@ -1,0 +1,496 @@
+{
+  "club": "sonderjyske-dk",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Dinamarca/SønderjyskE/aarsrapport-2019-06-30.md",
+  "generatedAt": "2026-09-30T22:00:07.516Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 112,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 11,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 7,
+      "section": "Hovedtal / Resultat af primær drift 710.576 637 4.316 3.643 -313 / Resultat af finansielle poster -56 11 91 -77 -387 / Resultat før skat -10.632 648 4.406 3.566 -700 / Årets resultat \"8.678 488 3.421 2.767 11",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Anlægsaktiver",
+          "values": [
+            "2.502",
+            "1.913",
+            "3.218",
+            "2.753",
+            "2.484"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omsætningsaktiver",
+          "values": [
+            "32.537",
+            "33.491",
+            "23.965",
+            "31.580",
+            "29.451"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aktiver i alt (balancesum)",
+          "values": [
+            "35.039",
+            "35.404",
+            "27.183",
+            "34.333",
+            "31.935"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Selskabskapital 500 500 500 500 500",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Egenkapital",
+          "values": [
+            "-6.920",
+            "1.759",
+            "1.270",
+            "\"2.151",
+            "\"4.918"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Langfristede gældsforpligtelser",
+          "values": [
+            "12.749",
+            "10.250",
+            "10.277",
+            "10.610",
+            "10.250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortfristede gældsforpligtelser",
+          "values": [
+            "29.209",
+            "23.395",
+            "15.636",
+            "25.874",
+            "22.611"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pengestrømme fra driftsaktiviteten",
+          "values": [
+            "-4.955",
+            "1.766",
+            "3.364",
+            "1.577",
+            "-1.955"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "Sønderjyske Fodbold A/S / Årsrapport 2018/19 / Ledelsesberetning / Udvikling i aktiviteter og økonomiske forhold",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "488 t.kr. sidste år, og virksomhedens balance pr. 30. juni 2019 udviser en negativ egenkapital på",
+          "values": [
+            "6.920"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "t.kr. Årets resultat fremgår af resultatdisponeringen på side",
+          "values": [
+            "22."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "statustidspunktet omfattet af selskabslovens bestemmelse i & 119 vedrørende kapitaltab. / den daglige drift i regnskabsåret 2019/20. / den fortsatte drift således, at selskabet derigennem kan genvinde den tabte kapital. / kr. 2018/19 2017/18 / Personaleomkostninger",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Lønninger",
+          "values": [
+            "26.248.534",
+            "24.418.287"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensioner",
+          "values": [
+            "821.300",
+            "775.802"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre omkostninger til social sikring",
+          "values": [
+            "388.269",
+            "346.198"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre personaleomkostninger",
+          "values": [
+            "1.913.550",
+            "928.205"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 20,
+      "section": "2. / Finansielle indtægter / Renteindtægter fra tilknyttede virksomheder 635.072 662.952 / 635.072 662.952 / Finansielle omkostninger",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Renteomkostninger til tilknyttede virksomheder",
+          "values": [
+            "547.023",
+            "410.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre finansielle omkostninger",
+          "values": [
+            "144.239",
+            "242.023"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 20,
+      "section": "691.262 652.023 / Skat af årets resultat",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Beregnet skat af årets skattepligtige indkomst",
+          "values": [
+            "-1.954.324",
+            "737.191"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets regulering af udskudt skat (0)",
+          "values": [
+            "197.542"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Årsregnskab 1. juli 2018 - 30. juni 2019 / Noter / Immaterielle anlægsaktiver / Kontrakt- / kr. rettigheder",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kostpris 1. juli 2018",
+          "values": [
+            "2.478.494"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang i årets løb",
+          "values": [
+            "1.742.314"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afgang i årets løb",
+          "values": [
+            "-100.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kostpris 30. juni 2019",
+          "values": [
+            "4.120.808"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Af- og nedskrivninger 1. juli 2018",
+          "values": [
+            "1.138.829"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets afskrivninger",
+          "values": [
+            "1.020.416"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilbageførsel af af- og nedskrivn. på afhændede aktiver",
+          "values": [
+            "51.351"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Af- og nedskrivninger 30. juni 2019",
+          "values": [
+            "2.107.894"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Regnskabsmæssig værdi 30. juni 2019 2.012.914 / Materielle anlægsaktiver / Andre anlæg, / driftsmateriel og / kr. inventar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kostpris 1. juli 2018",
+          "values": [
+            "2.688.247"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang i årets løb",
+          "values": [
+            "342.963"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kostpris 30. juni 2019",
+          "values": [
+            "3.031.210"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Af- og nedskrivninger 1. juli 2018",
+          "values": [
+            "2.150.901"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets afskrivninger",
+          "values": [
+            "427.273"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Af- og nedskrivninger 30. juni 2019",
+          "values": [
+            "2.578.174"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Regnskabsmæssig værdi 30. juni 2019 453.036 / Finansielle anlægsaktiver / kr. Værdipapirer",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kostpris 1. juli 2018",
+          "values": [
+            "35.715"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kostpris 30. juni 2019",
+          "values": [
+            "35.715"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "Resultatdisponering / Forslag til resultatdisponering / Overført resultat -8.678.100 488.065 / 8.678.100 488.065 / Reguleringer",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Af- og nedskrivninger",
+          "values": [
+            "1.496.338",
+            "1.655.422"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansielle indtægter",
+          "values": [
+            "635.072",
+            "662.952"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansielle omkostninger",
+          "values": [
+            "691.263",
+            "652.023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skat af årets resultat",
+          "values": [
+            "-1.954.324",
+            "160.351"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "-401.795 1.804.844 / Ændring i driftskapital",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ændring i tilgodehavender",
+          "values": [
+            "2.881.482",
+            "-9,546.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ændring i leverandørgæld m.v.",
+          "values": [
+            "1.258.619",
+            "8.933.974"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 6,
+    "results": [
+      {
+        "label": "Lønninger",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Lønninger",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pensioner",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pensioner",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andre omkostninger til social sikring",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andre omkostninger til social sikring",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andre personaleomkostninger",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andre personaleomkostninger",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Personaleomkostninger",
+        "similarity": 50
+      },
+      {
+        "label": "Renteomkostninger til tilknyttede virksomheder",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Renteomkostninger til tilknyttede virksomheder",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andre finansielle omkostninger",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andre finansielle omkostninger",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "dk",
+    "query": "SønderjyskE",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

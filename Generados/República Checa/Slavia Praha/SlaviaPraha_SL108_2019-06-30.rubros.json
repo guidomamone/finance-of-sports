@@ -1,0 +1,214 @@
+{
+ "md": "Clubes/República Checa/Slavia Praha/SlaviaPraha_SL108_2019-06-30.md",
+ "pdf": "Clubes/República Checa/Slavia Praha/SlaviaPraha_SL108_2019-06-30.pdf",
+ "club": "slavia-praha",
+ "year": 2019,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:50.594Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 19,
+  "notasUsadas": []
+ },
+ "ladoConocido": 19,
+ "rubros": [
+  {
+   "label": "Tržby za prodej zboží",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# 3.17. Výnosy z běžné činnosti a ostatní provozní výnosy",
+   "values": [
+    0.000704
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Prodej televizních práv",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# 3.17. Výnosy z běžné činnosti a ostatní provozní výnosy",
+   "values": [
+    0.02733
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Reklama",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# 3.17. Výnosy z běžné činnosti a ostatní provozní výnosy",
+   "values": [
+    0.393496
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Prodej vstupenek",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# 3.17. Výnosy z běžné činnosti a ostatní provozní výnosy",
+   "values": [
+    0.108397
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Ostatní služby",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# 3.17. Výnosy z běžné činnosti a ostatní provozní výnosy",
+   "values": [
+    0.037279
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Prodej a hostování hráčů",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# 3.17. Výnosy z běžné činnosti a ostatní provozní výnosy",
+   "values": [
+    0.024051
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Příspěvky od UEFA",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# 3.17. Výnosy z běžné činnosti a ostatní provozní výnosy",
+   "values": [
+    0.264619
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Smluvní pokuty",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# 3.17. Výnosy z běžné činnosti a ostatní provozní výnosy",
+   "values": [
+    0.000005
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Ostatní",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# 3.17. Výnosy z běžné činnosti a ostatní provozní výnosy",
+   "values": [
+    0.003623
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Smluvní pokuty a úroky z prodlení a ostatní pokuty a penále",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 3.21. Ostatní provozní náklady",
+   "values": [
+    0.0099
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Odpisy pohledávek a postoupené pohledávky",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 3.21. Ostatní provozní náklady",
+   "values": [
+    0.000008
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Dary",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 3.21. Ostatní provozní náklady",
+   "values": [
+    0.000997
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Tvorba rezerv",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 3.21. Ostatní provozní náklady",
+   "values": [
+    -0.014342
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Ostatní daně",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 3.21. Ostatní provozní náklady",
+   "values": [
+    0.005298
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Ostatní provozní náklady",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 3.21. Ostatní provozní náklady",
+   "values": [
+    0.034122
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Časové rozlišení odměn plynoucích z podpisů profesionálních hráčských smluv",
+   "lado": "expense",
+   "page": 26,
+   "section": "# 3.7. Krátkodobý finanční majetek / # 3.8. Časové rozlišení aktiv",
+   "values": [
+    98.536
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Zůstatková cena pořizovacích nákladů vynaložených na nákup hráčů",
+   "lado": "expense",
+   "page": 26,
+   "section": "# 3.7. Krátkodobý finanční majetek / # 3.8. Časové rozlišení aktiv",
+   "values": [
+    509.109
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Časové rozlišení pronájmu části prostor stadionu po dobu 50 let",
+   "lado": "expense",
+   "page": 26,
+   "section": "# 3.7. Krátkodobý finanční majetek / # 3.8. Časové rozlišení aktiv",
+   "values": [
+    108.135
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Ostatní",
+   "lado": "expense",
+   "page": 26,
+   "section": "# 3.7. Krátkodobý finanční majetek / # 3.8. Časové rozlišení aktiv",
+   "values": [
+    6.687
+   ],
+   "origen": "estado 19"
+  }
+ ]
+}

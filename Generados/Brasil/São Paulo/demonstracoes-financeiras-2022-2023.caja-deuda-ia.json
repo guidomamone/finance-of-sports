@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Brasil/São Paulo/demonstracoes-financeiras-2022-2023.md",
+ "generado": "2026-10-02T00:19:53.725Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "caja": {
+  "lineas": [
+   620
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   621,
+   622,
+   636,
+   643
+  ],
+  "ninguna": false
+ },
+ "observaciones": "OCR con columnas mezcladas; deuda = Instituições financeiras corriente (143.405) y no corriente (74.123) más Empréstimos com terceiros corriente (8.478) y no corriente (- en 2023, 9.161 en 2022). La línea L643 se incluye por ser préstamo aunque su saldo 2023 es cero."
+}

@@ -1,0 +1,236 @@
+{
+ "md": "Clubes/Bélgica/Club Brugge/jaarrekening-2016-06-30-individual.md",
+ "generatedAt": "2026-09-30T04:26:58.328Z",
+ "rubros": [
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 20,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "wages_squad",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 20,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 987
+  },
+  {
+   "label": "Aantal daadwerkelijk gepresteerde uren 9088",
+   "lado": null,
+   "page": 20,
+   "section": "Nr. BE 0460.444.251 VOL 5.10 / BEDRIJFSRESULTATEN / BEDRIJFSOPBRENGSTEN / BEDRIJFSKOSTEN",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "wages_squad",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1311
+  },
+  {
+   "label": "Gemiddeld personeelsbestand berekend in voltijdse equivalenten 9087",
+   "lado": null,
+   "page": 20,
+   "section": "Nr. BE 0460.444.251 VOL 5.10 / BEDRIJFSRESULTATEN / BEDRIJFSOPBRENGSTEN / BEDRIJFSKOSTEN",
+   "choice": "wages_squad",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "wages_squad",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1317
+  },
+  {
+   "label": "631/4",
+   "lado": null,
+   "page": 6,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.24,
+   "top3": [
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "other_income",
+     0.15
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "635/7",
+   "lado": null,
+   "page": 6,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "expense",
+   "page": 20,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "wages_squad",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 941
+  },
+  {
+   "label": "640/8",
+   "lado": null,
+   "page": 6,
+   "section": "RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.17,
+   "top3": [
+    [
+     "other_income",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.16999999999999998
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Bedrijfsbelastingen en -taksen",
+   "lado": "expense",
+   "page": 20,
+   "section": "Voorzieningen voor risico's en kosten / Toevoegingen 9115 / Bestedingen en terugnemingen 9116 50.000 / Andere bedrijfskosten",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 901
+  },
+  {
+   "label": "Andere 641/8",
+   "lado": "expense",
+   "page": 20,
+   "section": "Voorzieningen voor risico's en kosten / Toevoegingen 9115 / Bestedingen en terugnemingen 9116 50.000 / Andere bedrijfskosten",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1101
+  }
+ ]
+}

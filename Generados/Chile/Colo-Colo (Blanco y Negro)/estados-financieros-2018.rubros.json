@@ -1,0 +1,246 @@
+{
+  "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2018.md",
+  "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2018.pdf",
+  "club": "colocolo-cl",
+  "year": 2018,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:56:35.441Z",
+  "tieOuts": {
+    "cierran": 41,
+    "noCierran": 34
+  },
+  "warnings": [
+    "3 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "31 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "7 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 20,
+    "notasUsadas": []
+  },
+  "ladoConocido": 11,
+  "rubros": [
+    {
+      "label": "Servicios básicos",
+      "lado": null,
+      "page": 78,
+      "section": "-                -",
+      "values": [
+        178.012
+      ],
+      "origen": "estado 75",
+      "glosa": "Servicios básicos"
+    },
+    {
+      "label": "Asesorías",
+      "lado": null,
+      "page": 78,
+      "section": "-                -",
+      "values": [
+        381.325
+      ],
+      "origen": "estado 75",
+      "glosa": "Asesorías"
+    },
+    {
+      "label": "Depreciaciones",
+      "lado": null,
+      "page": 78,
+      "section": "-                -",
+      "values": [
+        456.275
+      ],
+      "origen": "estado 75",
+      "glosa": "Depreciaciones"
+    },
+    {
+      "label": "Gastos Legales",
+      "lado": "expense",
+      "page": 78,
+      "section": "-                -",
+      "values": [
+        343.923
+      ],
+      "origen": "estado 75",
+      "glosa": "Gastos Legales"
+    },
+    {
+      "label": "Mantenciones",
+      "lado": null,
+      "page": 78,
+      "section": "-                -",
+      "values": [
+        7.377
+      ],
+      "origen": "estado 75",
+      "glosa": "Mantenciones"
+    },
+    {
+      "label": "Remuneración administración",
+      "lado": null,
+      "page": 78,
+      "section": "-                -",
+      "values": [
+        1271.229
+      ],
+      "origen": "estado 75",
+      "glosa": "Remuneración administración"
+    },
+    {
+      "label": "Contribuciones -",
+      "lado": null,
+      "page": 78,
+      "section": "-                -",
+      "values": [
+        797.676
+      ],
+      "origen": "estado 75",
+      "glosa": "Contribuciones -"
+    },
+    {
+      "label": "Otros gastos de administración",
+      "lado": "expense",
+      "page": 78,
+      "section": "-                -",
+      "values": [
+        959.012
+      ],
+      "origen": "estado 75",
+      "glosa": "Otros gastos de administración"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 78,
+      "section": "-                -",
+      "values": [
+        3597.153
+      ],
+      "origen": "estado 75",
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Costo de ventas jugadores",
+      "lado": "expense",
+      "page": 78,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        1049.665
+      ],
+      "origen": "estado 74",
+      "glosa": "Costo de ventas jugadores"
+    },
+    {
+      "label": "Remuneración plantel profesional y cuerpo técnico",
+      "lado": "expense",
+      "page": 78,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        9681.727
+      ],
+      "origen": "estado 74",
+      "glosa": "Remuneración plantel profesional y cuerpo técnico"
+    },
+    {
+      "label": "Amortización Activos en concesión",
+      "lado": "expense",
+      "page": 78,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        669.891
+      ],
+      "origen": "estado 74",
+      "glosa": "Amortización Activos en concesión"
+    },
+    {
+      "label": "Amortización pases jugadores profesionales",
+      "lado": "expense",
+      "page": 78,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2740.052
+      ],
+      "origen": "estado 74",
+      "glosa": "Amortización pases jugadores profesionales"
+    },
+    {
+      "label": "Costos de concentración traslados y otros",
+      "lado": "expense",
+      "page": 78,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        4016.261
+      ],
+      "origen": "estado 74",
+      "glosa": "Costos de concentración traslados y otros"
+    },
+    {
+      "label": "Otros costos",
+      "lado": "expense",
+      "page": 78,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        843.19
+      ],
+      "origen": "estado 74",
+      "glosa": "Otros costos"
+    },
+    {
+      "label": "Otros activos financieros corrientes",
+      "lado": null,
+      "page": 79,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS / 26. DIFERENCIA TIPO DE CAMBIO",
+      "values": [
+        0.136209
+      ],
+      "origen": "estado 77",
+      "glosa": "Otros activos financieros corrientes"
+    },
+    {
+      "label": "Deudores comerciales y otras cuentas por cobrar corrientes",
+      "lado": null,
+      "page": 79,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS / 26. DIFERENCIA TIPO DE CAMBIO",
+      "values": [
+        0.460804
+      ],
+      "origen": "estado 77",
+      "glosa": "Deudores comerciales y otras cuentas por cobrar corrientes"
+    },
+    {
+      "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+      "lado": null,
+      "page": 79,
+      "section": "BLANCO Y NEGRO S.A. Y FILIALES / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS / 26. DIFERENCIA TIPO DE CAMBIO",
+      "values": [
+        -0.682172
+      ],
+      "origen": "estado 77",
+      "glosa": "Cuentas por pagar comerciales y otras cuentas por pagar"
+    },
+    {
+      "label": "Ingresos por publicidad",
+      "lado": "revenue",
+      "page": 77,
+      "section": "Ingresos por venta de jugadores formados por el",
+      "values": [
+        16828.556
+      ],
+      "origen": "estado 71",
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 77,
+      "section": "Ingresos por venta de jugadores formados por el",
+      "values": [
+        5
+      ],
+      "origen": "estado 71",
+      "glosa": "Otros"
+    }
+  ]
+}

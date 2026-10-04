@@ -1,0 +1,781 @@
+{
+ "pdf": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2015.pdf",
+ "generado": "2026-10-02T21:03:24.889Z",
+ "frena": [],
+ "avisos": [
+  "--reemplazar: rehace un ejercicio ya cargado",
+  "catolica-cl 2015 ya cargado: se reemplaza",
+  "sources['catolica-cl-estados-financieros-2015'] ya existe: se conserva"
+ ],
+ "ejercicio": {
+  "clubId": "catolica-cl",
+  "year": 2015,
+  "cierre": "2015-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Ingresos por A.N.F.P.",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 2448.845,
+    "disclosureLevel": "aggregated",
+    "_pag": 56,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Ingresos por Derechos de TV",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 199.03,
+    "disclosureLevel": "aggregated",
+    "_pag": 56,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Ingresos por Borderó (Recaudación Entradas)",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 1254.487,
+    "disclosureLevel": "aggregated",
+    "_pag": 56,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Ingresos por Préstamo de Jugadores",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1170.949,
+    "disclosureLevel": "aggregated",
+    "_pag": 56,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Ingresos por venta de Jugadores",
+    "normalizedCategory": "player_sales",
+    "amountNative": 866.256,
+    "disclosureLevel": "aggregated",
+    "_pag": 56,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Ingresos por Derechos de Solidaridad",
+    "normalizedCategory": "player_sales",
+    "amountNative": 453.894,
+    "disclosureLevel": "aggregated",
+    "_pag": 56,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Otros",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.538,
+    "disclosureLevel": "aggregated",
+    "_pag": 56,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Ingresos Cuotas Socios Fútbol",
+    "normalizedCategory": "member_dues",
+    "amountNative": 89.059,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Ingresos Matrículas de Escuelas de Fútbol",
+    "normalizedCategory": "youth_football",
+    "amountNative": 294.396,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Ingresos por Publicidad y Auspicios",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 2525.424,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Ingresos por Ventas de Productos Tienda UC",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 78.427,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Ingresos por Derechos de Merchandising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 284.331,
+    "disclosureLevel": "aggregated",
+    "_pag": 59,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Otros ingresos por función",
+    "normalizedCategory": "other_income",
+    "amountNative": 603.272,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Remuneraciones",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -4028.472,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Gastos de Operación",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1366.827,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Amortización pases de jugadores profesionales (*)",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -1897.256,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Amortización Concesión",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -151.068,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Amortización Licencias",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -1.559,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Gastos de torneos y otros",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -797.955,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Gasto por Préstamo de Jugadores",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -556.489,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Gasto por Transferencia de Jugadores",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -657.498,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Depreciación",
+    "normalizedCategory": "depreciation",
+    "amountNative": -61.057,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Costos de ventas productos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -74.865,
+    "disclosureLevel": "aggregated",
+    "_pag": 58,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Gasto de administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1387.944,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Otras ganancias (pérdidas)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -436.812,
+    "disclosureLevel": "aggregated",
+    "_pag": 8,
+    "_escalon": 0,
+    "_conf": 1
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "CLP",
+   "fx": 710.16,
+   "fxSource": "document_close",
+   "sourceId": "catolica-cl-estados-financieros-2015",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 43.955,
+   "tax": 622.014,
+   "extraRows": [
+    {
+     "label": "Ingresos financieros",
+     "value": 9.63
+    },
+    {
+     "label": "Costos financieros",
+     "value": -7.572
+    },
+    {
+     "label": "Diferencias de cambio",
+     "value": 41.897
+    },
+    {
+     "label": "Ingreso (Gasto) por impuestos a las ganancias",
+     "value": 622.014
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 10269.908,
+   "officialTotalExpenses": 11417.802,
+   "officialPAT": -481.925
+  },
+  "source": {
+   "id": "catolica-cl-estados-financieros-2015",
+   "clubId": "catolica-cl",
+   "title": "Cruzados S.A.D.P. — estados-financieros-2015 (ejercicio 2015)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-02) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2015.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2015.md",
+ "reemplaza": true,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2015-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "catolica-cl",
+ "year": 2015,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 29,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ingresos por A.N.F.P.",
+   "page": 56,
+   "native": 2448.845,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\")",
+   "signoFijo": 2448.845,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2448.845
+  },
+  {
+   "label": "Ingresos por Derechos de TV",
+   "page": 56,
+   "native": 199.03,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\")",
+   "signoFijo": 199.03,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 199.03
+  },
+  {
+   "label": "Ingresos por Borderó (Recaudación Entradas)",
+   "page": 56,
+   "native": 1254.487,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\")",
+   "signoFijo": 1254.487,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1254.487
+  },
+  {
+   "label": "Ingresos por Préstamo de Jugadores",
+   "page": 56,
+   "native": 1170.949,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\")",
+   "signoFijo": 1170.949,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1170.949
+  },
+  {
+   "label": "Ingresos por venta de Jugadores",
+   "page": 56,
+   "native": 866.256,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\")",
+   "signoFijo": 866.256,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 866.256
+  },
+  {
+   "label": "Ingresos por Derechos de Solidaridad",
+   "page": 56,
+   "native": 453.894,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\")",
+   "signoFijo": 453.894,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 453.894
+  },
+  {
+   "label": "Otros",
+   "page": 56,
+   "native": 1.538,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\")",
+   "signoFijo": 1.538,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.538
+  },
+  {
+   "label": "Ingresos Cuotas Socios Fútbol",
+   "page": 59,
+   "native": 89.059,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\")",
+   "signoFijo": 89.059,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 89.059
+  },
+  {
+   "label": "Ingresos Matrículas de Escuelas de Fútbol",
+   "page": 59,
+   "native": 294.396,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\")",
+   "signoFijo": 294.396,
+   "cat": "youth_football",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 294.396
+  },
+  {
+   "label": "Ingresos por Publicidad y Auspicios",
+   "page": 59,
+   "native": 2525.424,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\")",
+   "signoFijo": 2525.424,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2525.424
+  },
+  {
+   "label": "Ingresos por Ventas de Productos Tienda UC",
+   "page": 59,
+   "native": 78.427,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\")",
+   "signoFijo": 78.427,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 78.427
+  },
+  {
+   "label": "Ingresos por Derechos de Merchandising",
+   "page": 59,
+   "native": 284.331,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\")",
+   "signoFijo": 284.331,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 284.331
+  },
+  {
+   "label": "Otros ingresos por función",
+   "page": 8,
+   "native": 603.272,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 603.272,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 603.272
+  },
+  {
+   "label": "Remuneraciones",
+   "page": 58,
+   "native": 4028.472,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 4028.472,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4028.472
+  },
+  {
+   "label": "Gastos de Operación",
+   "page": 58,
+   "native": 1366.827,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 1366.827,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1366.827
+  },
+  {
+   "label": "Amortización pases de jugadores profesionales (*)",
+   "page": 58,
+   "native": 1897.256,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 1897.256,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1897.256
+  },
+  {
+   "label": "Amortización Concesión",
+   "page": 58,
+   "native": 151.068,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 151.068,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -151.068
+  },
+  {
+   "label": "Amortización Licencias",
+   "page": 58,
+   "native": 1.559,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 1.559,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.559
+  },
+  {
+   "label": "Gastos de torneos y otros",
+   "page": 58,
+   "native": 797.955,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 797.955,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -797.955
+  },
+  {
+   "label": "Gasto por Préstamo de Jugadores",
+   "page": 58,
+   "native": 556.489,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 556.489,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -556.489
+  },
+  {
+   "label": "Gasto por Transferencia de Jugadores",
+   "page": 58,
+   "native": 657.498,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 657.498,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -657.498
+  },
+  {
+   "label": "Depreciación",
+   "page": 58,
+   "native": 61.057,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 61.057,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -61.057
+  },
+  {
+   "label": "Costos de ventas productos",
+   "page": 58,
+   "native": 74.865,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Costo de ventas\")",
+   "signoFijo": 74.865,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -74.865
+  },
+  {
+   "label": "Gasto de administración",
+   "page": 8,
+   "native": 1387.944,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1387.944,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1387.944
+  },
+  {
+   "label": "Otras ganancias (pérdidas)",
+   "page": 8,
+   "native": 436.812,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))",
+   "signoFijo": 436.812,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-01: sí, 'Otras ganancias (pérdidas)' va como Otros gastos (vale para todos los años del club; queda como precedente y como ejemplo para Jev)",
+   "destino": "expense",
+   "amountNative": -436.812
+  },
+  {
+   "label": "Ingresos financieros",
+   "page": null,
+   "native": 9.63,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Costos financieros",
+   "page": null,
+   "native": -7.572,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Diferencias de cambio",
+   "page": null,
+   "native": 41.897,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Ingreso (Gasto) por impuestos a las ganancias",
+   "page": null,
+   "native": 622.014,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Costo de ventas\")": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 10269.908,
+  "expSum": -11417.802,
+  "officialTotalRevenue": 10269.908,
+  "officialTotalExpenses": 11417.802,
+  "officialPAT": -481.925,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -481.925,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 10269.908
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 11417.802
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe",
+  "nota": "la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding §17)"
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 13,
+  "lineasGasto": 12,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
+}

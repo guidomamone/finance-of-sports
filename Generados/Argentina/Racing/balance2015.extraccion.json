@@ -1,0 +1,387 @@
+{
+ "pdf": "Clubes/Argentina/Racing/balance2015.pdf",
+ "md": "Clubes/Argentina/Racing/balance2015.md",
+ "cierre": "2015-08-31",
+ "paginas": [
+  7,
+  11,
+  12
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:45:53.220Z",
+ "escala": "unidades",
+ "filas": [
+  {
+   "pagina": 7,
+   "etiqueta": "Generales (Anexo ll)",
+   "importe_impreso": "114.959.615",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Especificos [Anexo 11)",
+   "importe_impreso": "266.496.473",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Diversos (Anexo 11)",
+   "importe_impreso": "48.858.896",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "TOTAL DE RECURSOS",
+   "importe_impreso": "430.314.983",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Generales (Anexo 11!)",
+   "importe_impreso": "90.302.635",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Especificos (Anexo 111)",
+   "importe_impreso": "219.736.436",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "TOTAL DE GASTOS",
+   "importe_impreso": "310.039.072",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "RESULTADO OPERATIVO",
+   "importe_impreso": "120.275.912",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Amortizaciones [Anexo l)",
+   "importe_impreso": "1.683.948",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Intereses Financieros",
+   "importe_impreso": "1.199.945",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Diferencias de Cambio (Anexo 11)",
+   "importe_impreso": "6.701.031",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Intereses Financieros",
+   "importe_impreso": "0",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Diferencias de Cambio",
+   "importe_impreso": "4.016.785",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Recursos (Anexo ll)",
+   "importe_impreso": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Egresos (Anexo 111)",
+   "importe_impreso": "19.931.642",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "RESULTADO FINAL (Beneficio)",
+   "importe_impreso": "102.544.513",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "dudas Sociales",
+   "importe_impreso": "93.187.267",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Generales (Anexo ll)"
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "Tel ación / Televisión AFA",
+   "importe_impreso": "56.648.320",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Especificos [Anexo 11)"
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "Carfíipeonatos Oficiales",
+   "importe_impreso": "56.640.384",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Especificos [Anexo 11)"
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "Otrós'Torneos",
+   "importe_impreso": "2.568.669",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Especificos [Anexo 11)"
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "Ima8jos Alquiler",
+   "importe_impreso": "1.457.230",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "IfgiESos Publicidad",
+   "importe_impreso": "40.505.380",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Especificos [Anexo 11)"
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "OtrÉZ Ingresos Diversos",
+   "importe_impreso": "84.059.113",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "OtróBlingresos Deportivos",
+   "importe_impreso": "3.448.025",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "Transferencia de Jugadores",
+   "importe_impreso": "83.417.474",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "Ingresos Sede Villa del Parque",
+   "importe_impreso": "1.326.368",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "Ingresos Colegio",
+   "importe_impreso": "7.056.754",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "Resultados Financieros",
+   "importe_impreso": "7.900.977",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "Total Recursos Ordinarios",
+   "importe_impreso": "438.215.960",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "Desafectación Previsiones / Provisiones",
+   "importe_impreso": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recursos (Anexo ll)"
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "Condonaciones",
+   "importe_impreso": "0",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recursos (Anexo ll)"
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "Total Recursos Extraordinarios",
+   "importe_impreso": "$0",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Recursos (Anexo ll)"
+  },
+  {
+   "pagina": 11,
+   "etiqueta": "TOTALES",
+   "importe_impreso": "438.215.960",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 12,
+   "etiqueta": "Sueldos del Personal",
+   "importe_impreso": "88.805.004",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 12,
+   "etiqueta": "Cargas Sociales",
+   "importe_impreso": "14.284.452",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 12,
+   "etiqueta": "Futbol Profesional",
+   "importe_impreso": "72.493.181",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Especificos (Anexo 111)"
+  },
+  {
+   "pagina": 12,
+   "etiqueta": "Organización de Partidos",
+   "importe_impreso": "35.094.389",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 12,
+   "etiqueta": "Grales Actividades Deportivas / Soc.",
+   "importe_impreso": "31.493.115",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 12,
+   "etiqueta": "Mantenimiento",
+   "importe_impreso": "3.326.824",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 12,
+   "etiqueta": "Sellados, Multas, Gtos Bancarios",
+   "importe_impreso": "9.084.199",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 12,
+   "etiqueta": "Colegio",
+   "importe_impreso": "547.052",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 12,
+   "etiqueta": "Sede Villa del Parque",
+   "importe_impreso": "1.644.146",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 12,
+   "etiqueta": "Costo Transferencia de Jugadores",
+   "importe_impreso": "53.266.710",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Especificos (Anexo 111)"
+  },
+  {
+   "pagina": 12,
+   "etiqueta": "SUBTOTAL",
+   "importe_impreso": "310.039.072",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "TOTAL DE GASTOS"
+  },
+  {
+   "pagina": 12,
+   "etiqueta": "CARGOS EXTRAORDINARIOS (Previsiones / Otras Amortizaciones)",
+   "importe_impreso": "19.931.642",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Egresos (Anexo 111)"
+  },
+  {
+   "pagina": 12,
+   "etiqueta": "Total",
+   "importe_impreso": "329.970.713",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos_impreso": "430.314.983",
+ "total_gastos_impreso": "310.039.072",
+ "resultado_impreso": "102.544.513",
+ "observaciones": "Los anexos II y III tienen columnas por categoría (generales/específicos/diversos); se tomó la columna total 31/08/15. Filas de anexo con montos en varias categorías quedan con detalla_a null por abarcar varios renglones del estado. Etiquetas con OCR dañado se copiaron tal cual. En el estado, el encabezado de egresos financieros está ilegible ('res'). Recursos generales del anexo (122.860.592) incluye resultados financieros 7.900.977 = 1.199.945 + 6.701.031; 122.860.592 - 7.900.977 = 114.959.615. 'Total Recursos Extraordinarios' muestra valores ilegibles/confusos ('so $0 $0 $0 000.000'). Total de cargos extraordinarios 31/08/14 impreso '$5 26.435.562' difiere del estado (26.435.662)."
+}

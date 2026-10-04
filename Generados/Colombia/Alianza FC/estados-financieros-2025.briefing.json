@@ -1,0 +1,1952 @@
+{
+  "club": "alianza-fc",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Alianza FC/estados-financieros-2025.md",
+  "generatedAt": "2026-09-30T21:57:52.722Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 240,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 22,
+  "relevantTableCount": 3,
+  "tables": [
+    {
+      "page": 1,
+      "section": "## NOTAS A LOS ESTADOS FINANCIEROS / ### NOTA 1: ENTE ECONÓMICO Y POLÍTICAS CONTABLES / ### NOTA 2: MARCO TÉCNICO Y NORMATIVO / ### NOTA 3: EFECTIVO Y EQUIVALENTES AL EFECTIVO",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caja",
+          "values": [
+            "345.025",
+            "-",
+            "-",
+            "345.025"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos",
+          "values": [
+            "100.149.683",
+            "2.274.778.228",
+            "(96%)",
+            "(2.174.628.545)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remesas en tránsito",
+          "values": [
+            "-",
+            "211.344.285",
+            "(100%)",
+            "(211.344.285)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "100.494.709",
+            "2.486.122.513",
+            "(96%)",
+            "(2.385.627.804)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "### NOTA 4: INVERSIONES",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Derechos fiduciarios",
+          "values": [
+            "2.557.990",
+            "44.832.897",
+            "(94%)",
+            "(42.274.907)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "2.557.990",
+            "44.832.897",
+            "(94%)",
+            "(42.274.907)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "### NOTA 5: CUENTAS COMERCIALES Y OTRAS CUENTAS POR COBRAR",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Clientes",
+          "values": [
+            "5.923.830.355",
+            "5.005.417.709",
+            "18%",
+            "918.412.646"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar a socios y accionistas",
+          "values": [
+            "798.442.702",
+            "114.511.022",
+            "597%",
+            "683.931.680"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar a trabajadores",
+          "values": [
+            "157.968.538",
+            "185.475.238",
+            "(15%)",
+            "(27.506.700)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Préstamos a particulares",
+          "values": [
+            "1.986.591.084",
+            "1.220.383.522",
+            "63%",
+            "766.207.562"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudores varios",
+          "values": [
+            "108.092.458",
+            "122.441.658",
+            "(12%)",
+            "(14.349.200)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas de difícil cobro",
+          "values": [
+            "288.399.875",
+            "-",
+            "-",
+            "288.399.875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "9.263.325.012",
+            "6.648.229.149",
+            "39%",
+            "2.615.095.863"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "### NOTA 6: ACTIVOS POR IMPUESTOS CORRIENTES",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anticipo de impuestos y contribuciones",
+          "values": [
+            "743.425.082",
+            "254.974.148",
+            "192%",
+            "488.450.934"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "743.425.082",
+            "254.974.148",
+            "192%",
+            "488.450.934"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 7: INVENTARIOS",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Mercancías no fabricadas por la empresa",
+          "values": [
+            "180.000",
+            "180.000",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "180.000",
+            "180.000",
+            "-",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 8: ANTICIPOS Y AVANCES",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anticipos y avances",
+          "values": [
+            "1.770.716.245",
+            "1.544.989.426",
+            "15%",
+            "225.726.819"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "1.770.716.245",
+            "1.544.989.426",
+            "15%",
+            "225.726.819"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 9: OTROS ACTIVOS",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos pagados por anticipado",
+          "values": [
+            "1.263.415.651",
+            "85.912.729",
+            "1.371%",
+            "1.177.502.922"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valorizaciones",
+          "values": [
+            "5.466.580.000",
+            "5.466.580.000",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "6.729.995.651",
+            "5.552.492.729",
+            "21%",
+            "1.177.502.922"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 10: PROPIEDADES PLANTA Y EQUIPOS",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "23.160.000",
+            "23.160.000",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria y equipos en montaje",
+          "values": [
+            "173.636.070",
+            "173.636.070",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construcciones y edificaciones",
+          "values": [
+            "1.501.150.035",
+            "1.501.150.035",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria y equipo",
+          "values": [
+            "183.731.228",
+            "100.731.228",
+            "82%",
+            "83.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de oficina",
+          "values": [
+            "82.671.042",
+            "74.124.227",
+            "12%",
+            "8.546.815"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de computación y comunicación",
+          "values": [
+            "36.143.852",
+            "36.143.852",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo médico - científico",
+          "values": [
+            "29.426.383",
+            "29.426.383",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flota y equipo de transporte",
+          "values": [
+            "390.000.000",
+            "390.000.000",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación acumulada",
+          "values": [
+            "(573.253.187)",
+            "(564.316.847)",
+            "2%",
+            "(8.936.340)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "1.846.665.423",
+            "1.764.054.948",
+            "5%",
+            "82.610.475"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 11: ACTIVOS INTANGIBLES",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Derechos",
+          "values": [
+            "3.200.547.500",
+            "3.200.547.500",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos deportivos",
+          "values": [
+            "3.493.692.134",
+            "2.445.061.610",
+            "43%",
+            "1.048.630.524"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación y/o amortización acumulada",
+          "values": [
+            "(1.762.838.839)",
+            "(1.713.937.607)",
+            "3%",
+            "(48.901.232)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "4.931.400.795",
+            "3.931.671.503",
+            "25%",
+            "999.729.292"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 12: OBLIGACIONES FINANCIERAS",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Bancos nacionales",
+          "values": [
+            "767.526.866",
+            "153.497.845",
+            "400%",
+            "614.029.021"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compañías de financiamiento comercial",
+          "values": [
+            "8.059.690",
+            "(820.516)",
+            "(1.082%)",
+            "8.880.206"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "775.586.556",
+            "152.677.329",
+            "408%",
+            "622.909.227"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": null,
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Instrumentos financieros con",
+          "values": [
+            "202.577.895",
+            "385.245.151",
+            "(47%)",
+            "(182.667.256)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas corrientes comerciales",
+          "values": [
+            "816.042.550",
+            "-",
+            "-",
+            "816.042.550"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costos y gastos por pagar",
+          "values": [
+            "4.344.465.976",
+            "2.743.065.971",
+            "58%",
+            "1.601.400.005"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acreedores oficiales",
+          "values": [
+            "305.850.539",
+            "-",
+            "-",
+            "305.850.539"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "5.668.936.960",
+            "3.128.311.122",
+            "81%",
+            "2.540.625.838"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 14: PASIVOS POR IMPUESTOS CORRIENTES",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Retención en la fuente",
+          "values": [
+            "204",
+            "129.109.276",
+            "(100%)",
+            "(129.109.072)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto de industria y comercio retenido",
+          "values": [
+            "680.984",
+            "249.635",
+            "173%",
+            "431.349"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos, gravámenes y tasas",
+          "values": [
+            "-",
+            "1.058.488.204",
+            "(100%)",
+            "(1.058.488.204)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "681.188",
+            "1.187.847.115",
+            "(100%)",
+            "(1.187.165.927)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 15: BENEFICIOS A EMPLEADOS",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Retenciones y aportes de nómina",
+          "values": [
+            "50.018.800",
+            "71.833.100",
+            "(30%)",
+            "(21.814.300)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acreedores varios",
+          "values": [
+            "58.123.200",
+            "63.958.500",
+            "(9%)",
+            "(5.835.300)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instrumentos financieros en",
+          "values": [
+            "549.304.614",
+            "580.601.919",
+            "(5%)",
+            "(31.297.305)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Para obligaciones laborales",
+          "values": [
+            "1",
+            "1.320.138.427",
+            "(100%)",
+            "(1.320.138.426)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "657.446.615",
+            "2.036.531.946",
+            "(68%)",
+            "(1.379.085.331)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 16: ANTICIPOS Y AVANCES RECIBIDOS",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anticipo y avances recibidos",
+          "values": [
+            "1.569.834.895",
+            "916.441.504",
+            "71%",
+            "653.393.391"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos recibidos",
+          "values": [
+            "471.720.900",
+            "-",
+            "-",
+            "471.720.900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos recibidos para terceros",
+          "values": [
+            "46.897.855",
+            "(20.172.705)",
+            "(332%)",
+            "67.070.560"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "2.088.453.650",
+            "896.268.799",
+            "133%",
+            "1.192.184.851"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 17: CUENTAS POR PAGAR COMERCIALES NO CORRIENTES",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Deudas con accionistas o socios",
+          "values": [
+            "(2.708.655.552)",
+            "(2.135.340.552)",
+            "27%",
+            "(573.315.000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "2.708.655.552",
+            "2.135.340.552",
+            "27%",
+            "573.315.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 18: DIFERIDOS — IMPUESTO DIFERIDO",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Total Diferidos",
+          "values": [
+            "695.286.500",
+            "695.286.500",
+            "-",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 19: CAPITAL SOCIAL",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capital social",
+          "values": [
+            "3.715.566.750",
+            "3.715.566.750",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit de capital",
+          "values": [
+            "905.219.447",
+            "905.219.447",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reservas",
+          "values": [
+            "168.752.483",
+            "168.752.483",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit de Capital Valorización",
+          "values": [
+            "5.466.580.000",
+            "5.466.580.000",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL Capital Social",
+          "values": [
+            "10.256.118.680",
+            "10.256.118.680",
+            "-",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 20: UTILIDADES Y PÉRDIDAS",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Utilidad y/o pérdidas del ejercicio",
+          "values": [
+            "(314.217.815)",
+            "1.333.040.673",
+            "(124%)",
+            "(1.018.822.858)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utilidad y/o pérdidas acumuladas",
+          "values": [
+            "2.851.813.021",
+            "406.124.598",
+            "602%",
+            "2.445.688.423"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 21: INGRESOS POR ACTIVIDADES ORDINARIAS",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Actividades Deportivas",
+          "values": [
+            "14.346.940.128",
+            "15.586.946.743",
+            "(8%)",
+            "(1.240.006.615)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Actividades financieras",
+          "values": [
+            "-",
+            "157.221",
+            "(100%)",
+            "(157.221)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras actividades de servicios",
+          "values": [
+            "-",
+            "3.600.000.000",
+            "(100%)",
+            "(3.600.000.000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL Ingresos Ordinarios",
+          "values": [
+            "14.346.940.128",
+            "19.179.850.812",
+            "(25%)",
+            "(4.832.910.684)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 22: GASTOS DE ADMINISTRACIÓN Y VENTAS",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos de personal (administración)",
+          "values": [
+            "1.052.713.237",
+            "1.013.914.207",
+            "4%",
+            "38.799.030"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "232.088.655",
+            "653.469.983",
+            "(64%)",
+            "(421.381.328)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "524.413.592",
+            "271.568.575",
+            "93%",
+            "252.845.017"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "140.299.649",
+            "147.831.145",
+            "(5%)",
+            "(7.531.496)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "348.232.210",
+            "461.181.223",
+            "(24%)",
+            "(112.949.013)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de viaje",
+          "values": [
+            "122.097.982",
+            "65.825.506",
+            "85%",
+            "56.272.476"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciaciones",
+          "values": [
+            "8.936.340",
+            "89.363.400",
+            "(90%)",
+            "(80.427.060)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos y otros admin.",
+          "values": [
+            "1.231.915.749",
+            "2.212.335.652",
+            "(44%)",
+            "(980.419.903)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL Gastos Administración",
+          "values": [
+            "3.673.013.954",
+            "5.032.256.571",
+            "(27%)",
+            "(1.359.242.617)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Partida",
+          "values": [
+            "31/12/2025",
+            "31/12/2024",
+            "VAR%",
+            "VARIACIÓN $"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de personal (ventas)",
+          "values": [
+            "8.976.755.866",
+            "8.397.238.215",
+            "7%",
+            "579.517.651"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "84.600.000",
+            "276.533.334",
+            "(69%)",
+            "(191.933.334)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "47.030.621",
+            "34.132.982",
+            "38%",
+            "12.897.639"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "697.435.763",
+            "856.237.830",
+            "(19%)",
+            "(158.802.067)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento y reparaciones",
+          "values": [
+            "48.079.342",
+            "647.670.789",
+            "(93%)",
+            "(599.591.447)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de viaje",
+          "values": [
+            "355.851.382",
+            "440.779.970",
+            "(19%)",
+            "(84.928.588)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos y otros ventas",
+          "values": [
+            "797.177.143",
+            "1.100.295.691",
+            "(28%)",
+            "(303.118.548)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL Gastos de Ventas",
+          "values": [
+            "11.063.443.283",
+            "11.826.802.815",
+            "(7%)",
+            "(763.359.532)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 23: GASTOS IMPUESTO A LAS GANANCIAS",
+      "columns": [
+        "Partida",
+        "31/12/2025",
+        "31/12/2024",
+        "VAR%",
+        "VARIACIÓN $"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos impuesto a las ganancias",
+          "values": [
+            "-",
+            "1.058.488.204",
+            "(100%)",
+            "(1.058.488.204)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 1,
+      "section": "## NOTAS A LOS ESTADOS FINANCIEROS / ### NOTA 1: ENTE ECONÓMICO Y POLÍTICAS CONTABLES / ### NOTA 2: MARCO TÉCNICO Y NORMATIVO / ### NOTA 3: EFECTIVO Y EQUIVALENTES AL EFECTIVO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "100.494.709",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 2 rubros enteros)"
+    },
+    {
+      "page": 1,
+      "section": "## NOTAS A LOS ESTADOS FINANCIEROS / ### NOTA 1: ENTE ECONÓMICO Y POLÍTICAS CONTABLES / ### NOTA 2: MARCO TÉCNICO Y NORMATIVO / ### NOTA 3: EFECTIVO Y EQUIVALENTES AL EFECTIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "2.486.122.513",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 1,
+      "section": "## NOTAS A LOS ESTADOS FINANCIEROS / ### NOTA 1: ENTE ECONÓMICO Y POLÍTICAS CONTABLES / ### NOTA 2: MARCO TÉCNICO Y NORMATIVO / ### NOTA 3: EFECTIVO Y EQUIVALENTES AL EFECTIVO",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"(96%)\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 1,
+      "section": "## NOTAS A LOS ESTADOS FINANCIEROS / ### NOTA 1: ENTE ECONÓMICO Y POLÍTICAS CONTABLES / ### NOTA 2: MARCO TÉCNICO Y NORMATIVO / ### NOTA 3: EFECTIVO Y EQUIVALENTES AL EFECTIVO",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "(2.385.627.804)",
+      "addendCount": 3,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 3 rubros enteros)"
+    },
+    {
+      "page": 1,
+      "section": "### NOTA 4: INVERSIONES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "2.557.990",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 1,
+      "section": "### NOTA 4: INVERSIONES",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "44.832.897",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 1,
+      "section": "### NOTA 4: INVERSIONES",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"(94%)\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 1,
+      "section": "### NOTA 4: INVERSIONES",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "(42.274.907)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 1,
+      "section": "### NOTA 5: CUENTAS COMERCIALES Y OTRAS CUENTAS POR COBRAR",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "9.263.325.012",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 1,
+      "section": "### NOTA 5: CUENTAS COMERCIALES Y OTRAS CUENTAS POR COBRAR",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "6.648.229.149",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 1,
+      "section": "### NOTA 5: CUENTAS COMERCIALES Y OTRAS CUENTAS POR COBRAR",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"39%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 1,
+      "section": "### NOTA 5: CUENTAS COMERCIALES Y OTRAS CUENTAS POR COBRAR",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "2.615.095.863",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 7: INVENTARIOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "180.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 7: INVENTARIOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "180.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 8: ANTICIPOS Y AVANCES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "1.770.716.245",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 8: ANTICIPOS Y AVANCES",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "1.544.989.426",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 8: ANTICIPOS Y AVANCES",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"15%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 8: ANTICIPOS Y AVANCES",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "225.726.819",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 9: OTROS ACTIVOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "6.729.995.651",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 9: OTROS ACTIVOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "5.552.492.729",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 9: OTROS ACTIVOS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"21%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 9: OTROS ACTIVOS",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "1.177.502.922",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 10: PROPIEDADES PLANTA Y EQUIPOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "1.846.665.423",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 10: PROPIEDADES PLANTA Y EQUIPOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "1.764.054.948",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 10: PROPIEDADES PLANTA Y EQUIPOS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"5%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 10: PROPIEDADES PLANTA Y EQUIPOS",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "82.610.475",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 11: ACTIVOS INTANGIBLES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "4.931.400.795",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 11: ACTIVOS INTANGIBLES",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "3.931.671.503",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 11: ACTIVOS INTANGIBLES",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"25%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 11: ACTIVOS INTANGIBLES",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "999.729.292",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 12: OBLIGACIONES FINANCIERAS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "775.586.556",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 12: OBLIGACIONES FINANCIERAS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "152.677.329",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 12: OBLIGACIONES FINANCIERAS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"408%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 2,
+      "section": "## NOTA 12: OBLIGACIONES FINANCIERAS",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "622.909.227",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "5.668.936.960",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "3.128.311.122",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"81%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "2.540.625.838",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 14: PASIVOS POR IMPUESTOS CORRIENTES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "681.188",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 14: PASIVOS POR IMPUESTOS CORRIENTES",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "1.187.847.115",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 14: PASIVOS POR IMPUESTOS CORRIENTES",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"(100%)\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 14: PASIVOS POR IMPUESTOS CORRIENTES",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "(1.187.165.927)",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 15: BENEFICIOS A EMPLEADOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "657.446.615",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 15: BENEFICIOS A EMPLEADOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "2.036.531.946",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 15: BENEFICIOS A EMPLEADOS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"(68%)\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 15: BENEFICIOS A EMPLEADOS",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "(1.379.085.331)",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 16: ANTICIPOS Y AVANCES RECIBIDOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "2.088.453.650",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 16: ANTICIPOS Y AVANCES RECIBIDOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "896.268.799",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 16: ANTICIPOS Y AVANCES RECIBIDOS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"133%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 16: ANTICIPOS Y AVANCES RECIBIDOS",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "1.192.184.851",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 17: CUENTAS POR PAGAR COMERCIALES NO CORRIENTES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "2.708.655.552",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-5417311104"
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 17: CUENTAS POR PAGAR COMERCIALES NO CORRIENTES",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "2.135.340.552",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-4270681104"
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 17: CUENTAS POR PAGAR COMERCIALES NO CORRIENTES",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"27%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 17: CUENTAS POR PAGAR COMERCIALES NO CORRIENTES",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "573.315.000",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-1146630000"
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 18: DIFERIDOS — IMPUESTO DIFERIDO",
+      "likelyRelevant": false,
+      "totalLabel": "Total Diferidos",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 19: CAPITAL SOCIAL",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL Capital Social",
+      "target": "10.256.118.680",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "#### NOTA 19: CAPITAL SOCIAL",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL Capital Social",
+      "target": "10.256.118.680",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 21: INGRESOS POR ACTIVIDADES ORDINARIAS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL Ingresos Ordinarios",
+      "target": "14.346.940.128",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 21: INGRESOS POR ACTIVIDADES ORDINARIAS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL Ingresos Ordinarios",
+      "target": "19.179.850.812",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "7253152"
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 21: INGRESOS POR ACTIVIDADES ORDINARIAS",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "TOTAL Ingresos Ordinarios",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"(25%)\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 21: INGRESOS POR ACTIVIDADES ORDINARIAS",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "TOTAL Ingresos Ordinarios",
+      "target": "(4.832.910.684)",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-7253152"
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 22: GASTOS DE ADMINISTRACIÓN Y VENTAS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL Gastos Administración",
+      "target": "3.673.013.954",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "-12316540"
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 22: GASTOS DE ADMINISTRACIÓN Y VENTAS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL Gastos Administración",
+      "target": "5.032.256.571",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "-116766880"
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 22: GASTOS DE ADMINISTRACIÓN Y VENTAS",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "TOTAL Gastos Administración",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"(27%)\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 22: GASTOS DE ADMINISTRACIÓN Y VENTAS",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "TOTAL Gastos Administración",
+      "target": "(1.359.242.617)",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "104450340"
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 22: GASTOS DE ADMINISTRACIÓN Y VENTAS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL Gastos de Ventas",
+      "skipped": true,
+      "reason": "1 de 8 valor(es) del segmento no parecen números (ej. \"31/12/2025\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 22: GASTOS DE ADMINISTRACIÓN Y VENTAS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL Gastos de Ventas",
+      "skipped": true,
+      "reason": "1 de 8 valor(es) del segmento no parecen números (ej. \"31/12/2024\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 22: GASTOS DE ADMINISTRACIÓN Y VENTAS",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "TOTAL Gastos de Ventas",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"(7%)\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 4,
+      "section": "## NOTA 22: GASTOS DE ADMINISTRACIÓN Y VENTAS",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "TOTAL Gastos de Ventas",
+      "skipped": true,
+      "reason": "1 de 8 valor(es) del segmento no parecen números (ej. \"VARIACIÓN $\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/alianza-fc-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"alianza-fc\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "5 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "3 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "21 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "md": "Clubes/Brasil/Palmeiras/demonstracoes-financeiras-2021-2022.md",
+  "pdf": "Clubes/Brasil/Palmeiras/demonstracoes-financeiras-2021-2022.pdf",
+  "club": "palmeiras-br",
+  "year": 2022,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:53:40.647Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 4
+  },
+  "warnings": [
+    "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 19,
+    "notasUsadas": []
+  },
+  "ladoConocido": 8,
+  "rubros": [
+    {
+      "label": "Direitos de transmissão",
+      "lado": null,
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        167.893
+      ],
+      "origen": "estado 1",
+      "glosa": "Derechos de transmisión"
+    },
+    {
+      "label": "Publicidade e patrocínio",
+      "lado": null,
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        135.756
+      ],
+      "origen": "estado 1",
+      "glosa": "Publicidad y patrocinio"
+    },
+    {
+      "label": "Arrecadação de jogos",
+      "lado": null,
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        55.419
+      ],
+      "origen": "estado 1",
+      "glosa": "Recaudación de partidos"
+    },
+    {
+      "label": "Negociação de atletas",
+      "lado": null,
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        162.286
+      ],
+      "origen": "estado 1",
+      "glosa": "Negociación de jugadores"
+    },
+    {
+      "label": "Sócio torcedor Avanti",
+      "lado": null,
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        49.728
+      ],
+      "origen": "estado 1",
+      "glosa": "Socios abonados Avanti"
+    },
+    {
+      "label": "Incentivos Fiscais e Outros",
+      "lado": null,
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        3.245
+      ],
+      "origen": "estado 1",
+      "glosa": "Incentivos fiscales y otros"
+    },
+    {
+      "label": "Premiações",
+      "lado": null,
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        86.086
+      ],
+      "origen": "estado 1",
+      "glosa": "Premios"
+    },
+    {
+      "label": "Licenciamentos da marca e franquias",
+      "lado": null,
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        21.612
+      ],
+      "origen": "estado 1",
+      "glosa": "Licencias de marca y franquicias"
+    },
+    {
+      "label": "Rendas diversas",
+      "lado": null,
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        0.894
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "Pessoal e encargos sociais",
+      "lado": "expense",
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        -267.028
+      ],
+      "origen": "estado 1",
+      "glosa": "Personal y cargas sociales"
+    },
+    {
+      "label": "Despesas com direito de imagem",
+      "lado": "expense",
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        -63.931
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos por derechos de imagen"
+    },
+    {
+      "label": "Despesas com jogos",
+      "lado": "expense",
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        -18.609
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Despesas sócio torcedor Avanti",
+      "lado": "expense",
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        -8.291
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de socios abonados Avanti"
+    },
+    {
+      "label": "Despesas gerais e administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        -69.217
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos generales y administrativos"
+    },
+    {
+      "label": "Depreciação e amortização",
+      "lado": null,
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        -2.969
+      ],
+      "origen": "estado 1",
+      "glosa": "Depreciación y amortización"
+    },
+    {
+      "label": "Amortização - direitos de atletas e comissão técnica",
+      "lado": null,
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        -96.131
+      ],
+      "origen": "estado 1",
+      "glosa": "Amortización - derechos de jugadores y cuerpo técnico"
+    },
+    {
+      "label": "Gastos com atletas, comissão técnica e baixa",
+      "lado": "expense",
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        -40.411
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos con jugadores, cuerpo técnico y bajas"
+    },
+    {
+      "label": "Receitas financeiras",
+      "lado": "revenue",
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        66.689
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Despesas financeiras",
+      "lado": "expense",
+      "page": 1,
+      "section": "DEMONSTRAÇÕES DOS RESULTADOS - EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2022 E DE 2021",
+      "values": [
+        -106.455
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos financieros"
+    }
+  ]
+}

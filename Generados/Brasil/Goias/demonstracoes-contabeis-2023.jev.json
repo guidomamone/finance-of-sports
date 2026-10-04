@@ -1,0 +1,691 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2023.md",
+ "generatedAt": "2026-10-02T22:10:38.562Z",
+ "rubrosHuella": "c84e5fc65c0c3d43c71a98e0c1598f45bbf15b87",
+ "rubros": [
+  {
+   "label": "Direitos de transmissão de TV (a)",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínio/publicidade/propaganda (a)",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiação/participações (a)",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheterias (a)",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Transação de atletas",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras receitas",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Jogos lotéricos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas patrimoniais",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) INSS Competições/Torneios",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) INSS Patrocínio/Publicidade/Propaganda",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Demais deduções da receita",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) IRRF Jogos Lotéricos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) INSS Jogos Lotéricos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Cortez. Ingressos - Copa Verde",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Custos e Despesas Sou Goiás",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "member_dues",
+     0.02
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Outras Receitas e Despesas",
+   "lado": "revenue",
+   "page": 7,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesa com pessoal (a)",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Direito de Arena Compet./Torneios",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.5700000000000001
+    ],
+    [
+     "broadcasting",
+     0.42
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Receitas Atividades Sociais e Lazer",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "member_dues",
+     0.05
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Cessão de Direitos Imagem (a)",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Baixa Custo de Atletas",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Cortez. Ingressos - Camp. Brasileiro",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "matchday_competition",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "(-) Cortez. Ingressos - Camp. Goiano",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1108
+  },
+  {
+   "label": "Amortização de custo de atletas formados",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "player_amortisation",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Ressarcimento/Reembolso de Ingressos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "matchday_competition",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "matchday_competition",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Arbitragens",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Taxas confederações e federações",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Demais custos e despesas operacionais",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros custos com atletas",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Cortez. Ingressos - Sul. Americana",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "matchday_competition",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "matchday_competition",
+     0.97
+    ],
+    [
+     "competition_bonus",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1103
+  },
+  {
+   "label": "Sou Goiás",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "sponsorship_commercial",
+     0.22
+    ]
+   ],
+   "tokens": 826
+  },
+  {
+   "label": "Amortização de custo d atletas contratados",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Exames antidoping",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesa com pessoal",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "wages_squad",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisões para contingências",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "match_organisation_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Cessão Temporária",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "player_amortisation",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "player_amortisation",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Depreciação e amortização",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Água, telefone, energia e internet",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas legais e judiciais",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Materiais Esportivos",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "wages_squad",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "wages_squad",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Despesas com viagens (b)",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Cessão Definitiva",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "player_amortisation",
+     0.44
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Aluguéis e Estádios",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "match_organisation_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Custos e despesas c/ pessoal jogos",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "wages_squad",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "wages_squad",
+     0.54
+    ],
+    [
+     "match_organisation_expense",
+     0.37
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Despesas Administrativas (materiais inclusos)",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Despesas com serviços prestados",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1045
+  }
+ ]
+}

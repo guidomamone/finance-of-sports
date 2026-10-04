@@ -1,0 +1,184 @@
+{
+ "md": "Clubes/Países Bajos/NEC/NEC-Jaarverslag-2014-2015.md",
+ "pdf": "Clubes/Países Bajos/NEC/NEC-Jaarverslag-2014-2015.pdf",
+ "club": "nec",
+ "year": 2015,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:07:25.965Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 16,
+  "notasUsadas": []
+ },
+ "ladoConocido": 6,
+ "rubros": [
+  {
+   "label": "Bruto-marge",
+   "lado": null,
+   "page": 6,
+   "section": "# GECONSOLIDEERDE WINST- EN VERLIESREKENING OVER 2014/2015",
+   "values": [
+    6.755239
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Lonen en salarissen",
+   "lado": "expense",
+   "page": 6,
+   "section": "# GECONSOLIDEERDE WINST- EN VERLIESREKENING OVER 2014/2015",
+   "values": [
+    4.044074
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Sociale lasten",
+   "lado": "expense",
+   "page": 6,
+   "section": "# GECONSOLIDEERDE WINST- EN VERLIESREKENING OVER 2014/2015",
+   "values": [
+    0.586306
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Overige personeelskosten",
+   "lado": "expense",
+   "page": 6,
+   "section": "# GECONSOLIDEERDE WINST- EN VERLIESREKENING OVER 2014/2015",
+   "values": [
+    0.615809
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Afschrijvingen immateriële vaste activa",
+   "lado": "expense",
+   "page": 6,
+   "section": "# GECONSOLIDEERDE WINST- EN VERLIESREKENING OVER 2014/2015",
+   "values": [
+    0.082603
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "page": 6,
+   "section": "# GECONSOLIDEERDE WINST- EN VERLIESREKENING OVER 2014/2015",
+   "values": [
+    3.378921
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Rentelasten en soortgelijke kosten",
+   "lado": "expense",
+   "page": 6,
+   "section": "# GECONSOLIDEERDE WINST- EN VERLIESREKENING OVER 2014/2015",
+   "values": [
+    -0.038836
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Som der financiële baten en lasten",
+   "lado": null,
+   "page": 6,
+   "section": "# GECONSOLIDEERDE WINST- EN VERLIESREKENING OVER 2014/2015",
+   "values": [
+    -0.038836
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Mutatie herwaardering immateriële vaste activa",
+   "lado": null,
+   "page": 8,
+   "section": "# N.E.C. Holding B.V., Nijmegen",
+   "values": [
+    0.350244
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Toename langlopende schulden",
+   "lado": null,
+   "page": 8,
+   "section": "# N.E.C. Holding B.V., Nijmegen",
+   "values": [
+    0.829386
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Toename geldmiddelen",
+   "lado": null,
+   "page": 8,
+   "section": "# N.E.C. Holding B.V., Nijmegen",
+   "values": [
+    0.303683
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Stand per 1 juli",
+   "lado": null,
+   "page": 8,
+   "section": "# N.E.C. Holding B.V., Nijmegen",
+   "values": [
+    0.221395
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Mutatie boekjaar",
+   "lado": null,
+   "page": 8,
+   "section": "# N.E.C. Holding B.V., Nijmegen",
+   "values": [
+    0.303683
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Spelers",
+   "lado": null,
+   "page": 16,
+   "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / # Personeelskosten / # Overige informatie / # Gemiddeld aantal werknemers",
+   "values": [
+    0.000024
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Trainers",
+   "lado": null,
+   "page": 16,
+   "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / # Personeelskosten / # Overige informatie / # Gemiddeld aantal werknemers",
+   "values": [
+    0.00001
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Scouts, administratie, secretariaat & management",
+   "lado": null,
+   "page": 16,
+   "section": "# TOELICHTING OP DE GECONSOLIDEERDE WINST- EN VERLIESREKENING / # Personeelskosten / # Overige informatie / # Gemiddeld aantal werknemers",
+   "values": [
+    0.000025
+   ],
+   "origen": "estado 9"
+  }
+ ]
+}

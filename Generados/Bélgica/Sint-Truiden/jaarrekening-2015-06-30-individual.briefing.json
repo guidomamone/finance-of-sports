@@ -1,0 +1,482 @@
+{
+  "club": "sinttruiden-be",
+  "year": 2015,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Sint-Truiden/jaarrekening-2015-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:55:30.595Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 96,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 12,
+  "relevantTableCount": 4,
+  "tables": [
+    {
+      "page": 5,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "126.220",
+            "367.071"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "1.393",
+            "28.140"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "3.705.956",
+            "4.457.059"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "Nr. BE 0845.049.251 VKT 2.2 / PASSIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "EIGEN VERMOGEN 10/15",
+          "values": [
+            "-3.043.868",
+            "-103.020"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaal 53 |",
+          "values": [
+            "3.500.000",
+            "3.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geplaatst kapitaal",
+          "values": [
+            "3.500.000",
+            "3.000.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Beschikbare reserves 133 / Overgedragen winst (verlies) (+/(-) 14 -6.543.868 -3.103.020 / Kapitaalsubsidies 15 / Voorschot aan de vennoten op de verdeling van het / netto-actief 19",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN",
+          "values": [
+            "315.000",
+            "197.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorzieningen voor risico's en kosten 5.4 | 160/5",
+          "values": [
+            "315.000",
+            "197.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "Uitgestelde belastingen 168",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "6.434.823",
+            "4.363.079"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 55 |",
+          "values": [
+            "3.760.853",
+            "2.560.658"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "676.130",
+            "178.155"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Kredietinstellingen, leasingschulden en soortgelijke / schulden 172/3 / Overige leningen 174/0 676.130 178.155 / Handelsschulden 175 / Ontvangen vooruitbetalingen op bestellingen 176",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige schulden 178/9",
+          "values": [
+            "3.084.723",
+            "2.382.502"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op ten hoogste één jaar 5.5 | 42/48",
+          "values": [
+            "2.610.798",
+            "1.394.260"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Schulden op meer dan één jaar die binnen het jaar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "vervallen",
+          "values": [
+            "145.815"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden",
+          "values": [
+            "7.611"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Kredietinstellingen 430/8",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige leningen",
+          "values": [
+            "7.611"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "1.585.768",
+            "768.572"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "1.585.768",
+            "768.572"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 492.127 / Schulden met betrekking tot belastingen,",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "bezoldigingen en sociale lasten",
+          "values": [
+            "494.935",
+            "456.011"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "85.589",
+            "21.466"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "409.346",
+            "434.545"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige schulden 47/48",
+          "values": [
+            "37.968",
+            "16.250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 492/3",
+          "values": [
+            "63.173",
+            "408.162"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "3.705.956",
+            "4.457.059"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "RESULTATENREKENING",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "631/4",
+          "values": [
+            "-1.470",
+            "31.780"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "635/7",
+          "values": [
+            "118.000",
+            "182.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "640/8",
+          "values": [
+            "51.853",
+            "76.485"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 16,
+      "section": "Nr. BE 0845.049.251 VKT 6 / SOCIALE BALANS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overeenkomst voor een onbepaalde tijd 110 6",
+          "values": [
+            "8,7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overeenkomst voor een bepaalde tijd 111 19",
+          "values": [
+            "20,7"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "OPRICHTINGSKOSTEN / HERSTRUCTURERINGSKOSTEN / IMMATERIELE VASTE ACTIVA / MATERIELE VASTE ACTIVA / AFSCHRIJVINGEN GEBOEKT TIJDENS HET BOEKJAAR :",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "uitrusting* L NG 10,00 - 33,33 10,00 -",
+          "values": [
+            "33,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Rollend materieel* L NG 20,00 - 33,33 20,00 -",
+          "values": [
+            "33,33"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 20,
+      "section": "Verslag van de commissaris aan de Algemene Vergadering van de",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "NV STVV, Tiensesteenweg",
+          "values": [
+            "168,"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3800 SINT-TRUIDEN, BE",
+          "values": [
+            "0485.049.251"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 10,
+    "results": [
+      {
+        "label": "54/58",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "54/58",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "490/1",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "490/1",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "20/58",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "20/58",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Voorzieningen voor risico's en kosten 5.4 | 160/5",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Voorzieningen voor risico's en kosten 5.4 | 160/5",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "631/4",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "631/4",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "635/7",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "635/7",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "640/8",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "640/8",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "uitrusting* L NG 10,00 - 33,33 10,00 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "uitrusting* L NG 10,00 - 33,33 10,00 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "5. Rollend materieel* L NG 20,00 - 33,33 20,00 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "5. Rollend materieel* L NG 20,00 - 33,33 20,00 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Sint-Truiden",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

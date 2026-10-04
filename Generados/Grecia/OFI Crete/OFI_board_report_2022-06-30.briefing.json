@@ -1,0 +1,318 @@
+{
+  "club": "ofi-crete",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Grecia/OFI Crete/OFI_board_report_2022-06-30.md",
+  "generatedAt": "2026-09-30T22:02:53.719Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 36,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 10,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 2,
+      "section": "#### Αριθμοδείκτες οικονομικής διάρθρωσης",
+      "columns": [
+        "",
+        "30/6/2022",
+        "",
+        "30/6/2021",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Κυκλοφορούν ενεργητικό",
+          "values": [
+            "935.997,71",
+            "75,08%",
+            "1.720.567,46",
+            "81,14%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο ενεργητικού",
+          "values": [
+            "1.246.741,92",
+            "",
+            "2.120.389,89",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Πάγιο ενεργητικό",
+          "values": [
+            "306.164,21",
+            "24,56%",
+            "391.742,43",
+            "18,48%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο ενεργητικού",
+          "values": [
+            "1.246.741,92",
+            "",
+            "2.120.389,89",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": [
+        "Ίδια κεφάλαια",
+        "-2.150.983,43",
+        "-63,55%",
+        "-386.143,69",
+        "-15,71%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Σύνολο υποχρεώσεων",
+          "values": [
+            "3.384.548,41",
+            "",
+            "2.457.521,97",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "Ο παραπάνω δείκτης δείχνει την οικονομική αυτάρκεια της Εταιρείας.",
+      "columns": [
+        "Σύνολο υποχρεώσεων",
+        "3.384.548,41",
+        "271,47%",
+        "2.457.521,97",
+        "115,90%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Σύνολο παθητικού",
+          "values": [
+            "1.246.741,92",
+            "",
+            "2.120.389,89",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": [
+        "Ίδια κεφάλαια",
+        "-2.150.983,43",
+        "172,53%",
+        "-386.143,69",
+        "-18,21%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Σύνολο παθητικού",
+          "values": [
+            "1.246.741,92",
+            "",
+            "2.120.389,89",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "Οι παραπάνω δείκτες δείχνουν την δανειακή εξάρτηση της εταιρείας",
+      "columns": [
+        "Ίδια κεφάλαια",
+        "-2.150.983,43",
+        "702,56%",
+        "-386.143,69",
+        "-98,57%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Πάγιο ενεργητικό",
+          "values": [
+            "306.164,21",
+            "",
+            "391.742,43",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": [
+        "Κυκλοφορούν ενεργητικό",
+        "935.997,71",
+        "27,76%",
+        "1.720.567,46",
+        "70,01%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Βραχυπρόθεσμες υποχρεώσεις",
+          "values": [
+            "3.371.423,41",
+            "",
+            "2.457.521,97",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": [
+        "Κεφάλαιο κινήσεως",
+        "-2.435.425,70",
+        "260,20%",
+        "-736.954,51",
+        "-42,83%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Κυκλοφορούν ενεργητικό",
+          "values": [
+            "935.997,71",
+            "",
+            "1.720.567,46",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "#### Αριθμοδείκτες αποδόσεως και αποδοτικότητας",
+      "columns": [
+        "",
+        "30/6/2022",
+        "",
+        "30/6/2021",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Καθαρά αποτελέσματα χρήσεως προ φόρων",
+          "values": [
+            "-2.413.839,74",
+            "-44,80%",
+            "-623.571,62",
+            "-10,29%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο εσόδων",
+          "values": [
+            "5.387.521,95",
+            "",
+            "6.060.871,90",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": null,
+      "columns": [
+        "Καθαρά αποτελέσματα χρήσεως προ φόρων",
+        "-2.413.839,74",
+        "112,22%",
+        "-623.571,62",
+        "161,49%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ίδια κεφάλαια",
+          "values": [
+            "-2.150.983,43",
+            "",
+            "-386.143,69",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "Ο αριθμοδείκτης αυτός απεικονίζει την αποδοτικότητα των ιδίων κεφαλαίων της εταιρείας.",
+      "columns": [
+        "Μικτά αποτελέσματα",
+        "-2.261.353,87",
+        "-44,65%",
+        "-2.936.424,97",
+        "-109,05%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Πωλήσεις αποθεμάτων & υπηρεσιών",
+          "values": [
+            "5.064.440,83",
+            "",
+            "2.692.727,09",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/ofi-crete-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"ofi-crete\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

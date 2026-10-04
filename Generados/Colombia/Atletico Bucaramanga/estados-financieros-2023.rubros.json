@@ -1,0 +1,553 @@
+{
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2023.md",
+ "pdf": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2023.pdf",
+ "club": "atletico-bucaramanga",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:58:00.209Z",
+ "tieOuts": {
+  "cierran": 12,
+  "noCierran": 0
+ },
+ "warnings": [
+  "51 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 51,
+  "notasUsadas": [
+   "31",
+   "34"
+  ]
+ },
+ "ladoConocido": 52,
+ "rubros": [
+  {
+   "label": "Salarios",
+   "lado": "expense",
+   "page": 27,
+   "section": "(a) Gastos de personal",
+   "values": [
+    179.168
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Incapacidades",
+   "lado": "expense",
+   "page": 27,
+   "section": "(a) Gastos de personal",
+   "values": [
+    0.106
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Auxilio de transporte",
+   "lado": "expense",
+   "page": 27,
+   "section": "(a) Gastos de personal",
+   "values": [
+    7.03
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Cesantías",
+   "lado": "expense",
+   "page": 27,
+   "section": "(a) Gastos de personal",
+   "values": [
+    16.838
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Intereses de cesantías",
+   "lado": "expense",
+   "page": 27,
+   "section": "(a) Gastos de personal",
+   "values": [
+    2.111
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Prima de servicios",
+   "lado": "expense",
+   "page": 27,
+   "section": "(a) Gastos de personal",
+   "values": [
+    16.838
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Vacaciones",
+   "lado": "expense",
+   "page": 27,
+   "section": "(a) Gastos de personal",
+   "values": [
+    13.858
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 27,
+   "section": "(a) Gastos de personal",
+   "values": [
+    5.562
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Indemnizaciones",
+   "lado": "expense",
+   "page": 27,
+   "section": "(a) Gastos de personal",
+   "values": [
+    6
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Aportes a administradores de riesgos profesionales",
+   "lado": "expense",
+   "page": 27,
+   "section": "(a) Gastos de personal",
+   "values": [
+    2.651
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Aportes a entidades promotoras de salud E.P.S",
+   "lado": "expense",
+   "page": 27,
+   "section": "(a) Gastos de personal",
+   "values": [
+    0.067
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Aportes a fondos de pensiones y o cesantías",
+   "lado": "expense",
+   "page": 27,
+   "section": "(a) Gastos de personal",
+   "values": [
+    14.745
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Aportes cajas de compensación familiar",
+   "lado": "expense",
+   "page": 27,
+   "section": "(a) Gastos de personal",
+   "values": [
+    5.972
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 26,
+   "section": "### NOTA 14 – GASTOS DE ADMINISTRACIÓN",
+   "values": [
+    62.151
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "impuestos (b)",
+   "lado": "expense",
+   "page": 26,
+   "section": "### NOTA 14 – GASTOS DE ADMINISTRACIÓN",
+   "values": [
+    2.247
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Servicios (c)",
+   "lado": "expense",
+   "page": 26,
+   "section": "### NOTA 14 – GASTOS DE ADMINISTRACIÓN",
+   "values": [
+    19.681
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 26,
+   "section": "### NOTA 14 – GASTOS DE ADMINISTRACIÓN",
+   "values": [
+    12.845
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Gastos legales",
+   "lado": "expense",
+   "page": 26,
+   "section": "### NOTA 14 – GASTOS DE ADMINISTRACIÓN",
+   "values": [
+    3.738
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Mantenimientos y reparaciones",
+   "lado": "expense",
+   "page": 26,
+   "section": "### NOTA 14 – GASTOS DE ADMINISTRACIÓN",
+   "values": [
+    6.224
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Construcciones y edificaciones",
+   "lado": "expense",
+   "page": 27,
+   "section": "(d) Depreciaciones",
+   "values": [
+    3.816
+   ],
+   "origen": "nota 34 (ancla 30)",
+   "ancla": "Depreciaciones (d)"
+  },
+  {
+   "label": "Depreciaciones (d)",
+   "lado": "expense",
+   "page": 26,
+   "section": "### NOTA 14 – GASTOS DE ADMINISTRACIÓN",
+   "values": [
+    180.942
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Equipo de oficina",
+   "lado": "expense",
+   "page": 27,
+   "section": "(d) Depreciaciones",
+   "values": [
+    25.165
+   ],
+   "origen": "nota 34 (ancla 30)",
+   "ancla": "Depreciaciones (d)"
+  },
+  {
+   "label": "Equipo de computación y comunicación",
+   "lado": "expense",
+   "page": 27,
+   "section": "(d) Depreciaciones",
+   "values": [
+    12.584
+   ],
+   "origen": "nota 34 (ancla 30)",
+   "ancla": "Depreciaciones (d)"
+  },
+  {
+   "label": "Equipo médico científico",
+   "lado": "expense",
+   "page": 27,
+   "section": "(d) Depreciaciones",
+   "values": [
+    2.377
+   ],
+   "origen": "nota 34 (ancla 30)",
+   "ancla": "Depreciaciones (d)"
+  },
+  {
+   "label": "Flota y equipo de transporte",
+   "lado": "expense",
+   "page": 27,
+   "section": "(d) Depreciaciones",
+   "values": [
+    137
+   ],
+   "origen": "nota 34 (ancla 30)",
+   "ancla": "Depreciaciones (d)"
+  },
+  {
+   "label": "Gastos varios",
+   "lado": "expense",
+   "page": 26,
+   "section": "### NOTA 14 – GASTOS DE ADMINISTRACIÓN",
+   "values": [
+    19.511
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 26,
+   "section": "### NOTA 14 – GASTOS DE ADMINISTRACIÓN",
+   "values": [
+    185.487
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Provisiones demandas laborales (nota 10)",
+   "lado": "expense",
+   "page": 26,
+   "section": "### NOTA 14 – GASTOS DE ADMINISTRACIÓN",
+   "values": [
+    24
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Taquilla venta de boletería",
+   "lado": "revenue",
+   "page": 26,
+   "section": "### NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    2766.13
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "lado": "revenue",
+   "page": 26,
+   "section": "### NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    219.871
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Derechos de televisión",
+   "lado": "revenue",
+   "page": 26,
+   "section": "### NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    5520.325
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Patrocinios",
+   "lado": "revenue",
+   "page": 26,
+   "section": "### NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    1659.163
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Boletería",
+   "lado": "revenue",
+   "page": 26,
+   "section": "### NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    3.182
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Actividades conexas",
+   "lado": "revenue",
+   "page": 26,
+   "section": "### NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    2211.901
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Impuestos asumidos",
+   "lado": "expense",
+   "page": 30,
+   "section": "### NOTA 17 – OTROS GASTOS",
+   "values": [
+    52.675
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Demandas laborales",
+   "lado": "expense",
+   "page": 30,
+   "section": "### NOTA 17 – OTROS GASTOS",
+   "values": [
+    450
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Multas sanciones y litigios",
+   "lado": "expense",
+   "page": 30,
+   "section": "### NOTA 17 – OTROS GASTOS",
+   "values": [
+    51.753
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 30,
+   "section": "### NOTA 17 – OTROS GASTOS",
+   "values": [
+    14.535
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Comisiones",
+   "lado": "expense",
+   "page": 31,
+   "section": "### NOTA 19 – COSTOS FINANCIEROS",
+   "values": [
+    0.004024
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "Gravamen",
+   "lado": "expense",
+   "page": 31,
+   "section": "### NOTA 19 – COSTOS FINANCIEROS",
+   "values": [
+    0.043934
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "Intereses",
+   "lado": "expense",
+   "page": 31,
+   "section": "### NOTA 19 – COSTOS FINANCIEROS",
+   "values": [
+    0.001978
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 31,
+   "section": "### NOTA 19 – COSTOS FINANCIEROS",
+   "values": [
+    0.003973
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "Honorarios por pagar",
+   "lado": "expense",
+   "page": 22,
+   "section": "(a) Cuentas comerciales corrientes / (b) Costos y gastos por pagar",
+   "values": [
+    1583
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Gastos de viaje por pagar",
+   "lado": "expense",
+   "page": 22,
+   "section": "(a) Cuentas comerciales corrientes / (b) Costos y gastos por pagar",
+   "values": [
+    1418
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 22,
+   "section": "(a) Cuentas comerciales corrientes / (b) Costos y gastos por pagar",
+   "values": [
+    510
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Alojamiento y manutención",
+   "lado": "expense",
+   "page": 29,
+   "section": "(d) Gastos de viaje",
+   "values": [
+    0.20371
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Pasajes Aéreos",
+   "lado": "expense",
+   "page": 29,
+   "section": "(d) Gastos de viaje",
+   "values": [
+    0.000084
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Pasajes terrestres",
+   "lado": "expense",
+   "page": 29,
+   "section": "(d) Gastos de viaje",
+   "values": [
+    0.001029
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Reintegro de costos y gastos",
+   "lado": "expense",
+   "page": 30,
+   "section": "### NOTA 16 – OTROS INGRESOS",
+   "values": [
+    423.329
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Incapacidades",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### NOTA 16 – OTROS INGRESOS",
+   "values": [
+    165.443
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Venta de camisetas",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### NOTA 16 – OTROS INGRESOS",
+   "values": [
+    39.704
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Ingresos financieros",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### NOTA 18 – INGRESOS FINANCIEROS",
+   "values": [
+    0.000028
+   ],
+   "origen": "estado 44"
+  }
+ ]
+}

@@ -1,0 +1,280 @@
+{
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2009.md",
+ "generatedAt": "2026-09-30T22:48:45.782Z",
+ "rubrosHuella": "d82e1b4b985fe5544722e77b8596d6f90ef22554",
+ "rubros": [
+  {
+   "label": "Servicios básicos",
+   "lado": null,
+   "page": 45,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesorías",
+   "lado": null,
+   "page": 45,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": null,
+   "page": 45,
+   "section": "",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenciones",
+   "lado": null,
+   "page": 45,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración administración",
+   "lado": null,
+   "page": 45,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneracion plantel profesional y cuerpo tecnico",
+   "lado": null,
+   "page": 45,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 23. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizacion Activos en concesion",
+   "lado": null,
+   "page": 45,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 23. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_amortisation",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizacion pases jugadores profesionales",
+   "lado": null,
+   "page": 45,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 23. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Saldo al 1º de enero de 2009",
+   "lado": null,
+   "page": 44,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 21. RESULTADOS RETENIDOS",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Dividendos",
+   "lado": null,
+   "page": 44,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 21. RESULTADOS RETENIDOS",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por recaudaciones y venta de jugadores",
+   "lado": "revenue",
+   "page": 44,
+   "section": "22. INGRESOS ORDINARIOS",
+   "choice": "player_sales",
+   "confidence": 0.32,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por publicidad",
+   "lado": "revenue",
+   "page": 44,
+   "section": "22. INGRESOS ORDINARIOS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Larrain Vial",
+   "lado": "revenue",
+   "page": 32,
+   "section": "8.   ACTIVOS FINANCIEROS DISPONIBLES PARA LA VENTA.",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "UBS Financial Service INC",
+   "lado": "revenue",
+   "page": 32,
+   "section": "8.   ACTIVOS FINANCIEROS DISPONIBLES PARA LA VENTA.",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Celfin Capital",
+   "lado": "revenue",
+   "page": 32,
+   "section": "8.   ACTIVOS FINANCIEROS DISPONIBLES PARA LA VENTA.",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 45,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 980
+  },
+  {
+   "label": "Costo de venta jugadores",
+   "lado": "expense",
+   "page": 45,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 23. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Costos de concentracion traslados y otros",
+   "lado": "expense",
+   "page": 45,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 23. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Otros costos",
+   "lado": "expense",
+   "page": 45,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 23. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Otros",
+   "lado": null,
+   "page": 44,
+   "section": "22. INGRESOS ORDINARIOS",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1428
+  },
+  {
+   "label": "Otros gastos de administración",
+   "lado": "expense",
+   "page": 45,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 985
+  }
+ ]
+}

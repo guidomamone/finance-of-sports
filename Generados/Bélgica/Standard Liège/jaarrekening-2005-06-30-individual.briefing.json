@@ -1,0 +1,59 @@
+{
+  "club": "standardliege-be",
+  "year": 2005,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Standard Liège/jaarrekening-2005-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:55:37.744Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 35,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 24,
+      "section": "RAPPORT DE GESTION / STANDARD DE LIEGE / T.V.A. : BE 0443.255.448",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "\" Perte de l'exercice 2002/2003 à reporter —",
+          "values": [
+            "2.288.357.49"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "\" Perte de l'exercice 2004/2005 à reporter _",
+          "values": [
+            "160.111,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "o Total de la perte à reporter au 30/06/2005 -",
+          "values": [
+            "2.448.468,55"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "be",
+    "query": "Standard Liège",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

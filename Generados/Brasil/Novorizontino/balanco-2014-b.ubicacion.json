@@ -1,0 +1,63 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2014-b.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2014-b.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T01:51:13.975Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    13,
+    59
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    75,
+    121
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    137,
+    145
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1",
+  "b2",
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "No se ve indicación de escala en el índice; probablemente unidades (R$) por tratarse de un demonstrativo contable analítico por cuenta.",
+ "moneda": "BRL",
+ "columna_ejercicio": "01/01/2014 a 31/12/2014",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del demonstrativo (b1-b3) están expresados en reales (unidades), sin escala de miles?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ningún bloque muestra una leyenda de escala; un demonstrativo contable por cuenta suele estar en unidades.",
+   "bloques": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El demonstrativo de resultados es analítico, por cuenta contable (plan de contas). Ocupa tres páginas consecutivas: b1, b2 y b3. Empieza en '3 - RECEITAS OPERACIONAIS' y termina en 'PREJUIZO'. Tiene una sola columna, la del ejercicio 2014, y no trae columna del año anterior. No hay notas aparte."
+}

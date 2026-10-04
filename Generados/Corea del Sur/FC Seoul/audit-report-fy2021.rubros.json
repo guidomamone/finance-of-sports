@@ -1,0 +1,170 @@
+{
+ "md": "Clubes/Corea del Sur/FC Seoul/audit-report-fy2021.md",
+ "pdf": "Clubes/Corea del Sur/FC Seoul/audit-report-fy2021.pdf",
+ "club": "fc-seoul",
+ "year": 2021,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T21:59:35.723Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 13,
+  "notasUsadas": [
+   "48"
+  ]
+ },
+ "ladoConocido": 14,
+ "rubros": [
+  {
+   "label": "상품매출원가",
+   "lado": "expense",
+   "page": 43,
+   "section": "### 17. 비용의 성격별 분류",
+   "values": [
+    0.357312
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "경기진행비",
+   "lado": "expense",
+   "page": 43,
+   "section": "### 17. 비용의 성격별 분류",
+   "values": [
+    1.711994
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "사업비",
+   "lado": "expense",
+   "page": 43,
+   "section": "### 17. 비용의 성격별 분류",
+   "values": [
+    1.505754
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "선수단운영비",
+   "lado": "expense",
+   "page": 43,
+   "section": "### 17. 비용의 성격별 분류",
+   "values": [
+    23.016123
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "광고원가",
+   "lado": "expense",
+   "page": 43,
+   "section": "### 17. 비용의 성격별 분류",
+   "values": [
+    0.883115
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "종업원급여",
+   "lado": "expense",
+   "page": 43,
+   "section": "### 17. 비용의 성격별 분류",
+   "values": [
+    3.532993
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "감가상각비 및 무형자산상각비",
+   "lado": "expense",
+   "page": 43,
+   "section": "### 17. 비용의 성격별 분류",
+   "values": [
+    1.214044
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "기타 비용",
+   "lado": "expense",
+   "page": 43,
+   "section": "### 17. 비용의 성격별 분류",
+   "values": [
+    1.459146
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "적용세율에 따른 법인세",
+   "lado": "expense",
+   "page": 44,
+   "section": "(단위 : 천원)",
+   "values": [
+    0.008464
+   ],
+   "origen": "nota 48 (ancla 46)",
+   "ancla": "법인세비용"
+  },
+  {
+   "label": "법인세비용",
+   "lado": "expense",
+   "page": 44,
+   "section": "### 19. 법인세 / #### (1) 당기 및 전기 법인세비용의 구성요소는 다음과 같습니다.",
+   "values": [
+    0.168656
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "- 세무상 비과세항목의 법인세 효과 등",
+   "lado": "expense",
+   "page": 44,
+   "section": "(단위 : 천원)",
+   "values": [
+    0.027587
+   ],
+   "origen": "nota 48 (ancla 46)",
+   "ancla": "법인세비용"
+  },
+  {
+   "label": "- 미인식이연법인세자산 등의 효과",
+   "lado": "expense",
+   "page": 44,
+   "section": "(단위 : 천원)",
+   "values": [
+    0.013403
+   ],
+   "origen": "nota 48 (ancla 46)",
+   "ancla": "법인세비용"
+  },
+  {
+   "label": "- 이월결손금공제",
+   "lado": "expense",
+   "page": 44,
+   "section": "(단위 : 천원)",
+   "values": [
+    -0.029672
+   ],
+   "origen": "nota 48 (ancla 46)",
+   "ancla": "법인세비용"
+  },
+  {
+   "label": "- 기타(토지등양도소득법인세 등)",
+   "lado": "expense",
+   "page": 44,
+   "section": "(단위 : 천원)",
+   "values": [
+    0.148874
+   ],
+   "origen": "nota 48 (ancla 46)",
+   "ancla": "법인세비용"
+  }
+ ]
+}

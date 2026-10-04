@@ -1,0 +1,4169 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/dre-2022.md",
+ "generatedAt": "2026-09-30T04:26:18.743Z",
+ "rubros": [
+  {
+   "label": "COPA DO BRASIL",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "competition_bonus",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "competition_bonus",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1532
+  },
+  {
+   "label": "RECEITA COM FORMAÇÃO",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "youth_football",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "youth_football",
+     0.97
+    ],
+    [
+     "player_sales",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1533
+  },
+  {
+   "label": "CAMPEONATO BRASILEIRO",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.87
+    ],
+    [
+     "broadcasting",
+     0.06
+    ],
+    [
+     "competition_bonus",
+     0.03
+    ]
+   ],
+   "tokens": 1447
+  },
+  {
+   "label": "VENDA DOS DIREITOS FEDERATIVOS E ECONÔMICOS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1536
+  },
+  {
+   "label": "COPA LIBERTADORES",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "competition_bonus",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "competition_bonus",
+     0.97
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0.01
+    ]
+   ],
+   "tokens": 1536
+  },
+  {
+   "label": "CAMPEONATO PAULISTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "competition_bonus",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.49
+    ],
+    [
+     "competition_bonus",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1427
+  },
+  {
+   "label": "RECEITA BRUTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "lump_football_operations",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.77
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "REPASSE DE CESSÃO TEMPORÁRIA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "player_sales",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "player_sales",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ],
+    [
+     "player_amortisation",
+     0.12
+    ]
+   ],
+   "tokens": 1518
+  },
+  {
+   "label": "PROGRAMA DE EXCELÊNCIA - FPF",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "competition_bonus",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "competition_bonus",
+     0.47000000000000003
+    ],
+    [
+     "match_organisation_expense",
+     0.23
+    ],
+    [
+     "other_income",
+     0.1
+    ]
+   ],
+   "tokens": 1538
+  },
+  {
+   "label": "PERMUTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "sponsorship_commercial",
+     0.09
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1393
+  },
+  {
+   "label": "MENSALIDADE SÓCIO TORCEDOR",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1531
+  },
+  {
+   "label": "PATROCÍNIOS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1523
+  },
+  {
+   "label": "LUCRO NA ALIENAÇÃO DO ATIVO IMOBILIZADO",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1543
+  },
+  {
+   "label": "VENDA DE MERCADORIAS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1509
+  },
+  {
+   "label": "DEDUÇÕES DA RECEITA BRUTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.8200000000000001
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1550
+  },
+  {
+   "label": "/-/5% INSS RENDA BRUTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1541
+  },
+  {
+   "label": "/-/DESPESAS OPERACIONAIS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1535
+  },
+  {
+   "label": "/-/DIREITO DE ARENA - CAMPEONATO PAULISTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.5
+    ],
+    [
+     "broadcasting",
+     0.25
+    ],
+    [
+     "other_income",
+     0.16
+    ]
+   ],
+   "tokens": 1533
+  },
+  {
+   "label": "/-/TAXAS DE ARBITRAGEM",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1531
+  },
+  {
+   "label": "/-/5% INSS - CAMPEONATO PAULISTA",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.47000000000000003
+    ],
+    [
+     "match_organisation_expense",
+     0.34
+    ],
+    [
+     "wages_squad",
+     0.09
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "/-/5% INSS - CAMPEONATO BRASILEIRO",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.49
+    ],
+    [
+     "match_organisation_expense",
+     0.35000000000000003
+    ],
+    [
+     "wages_squad",
+     0.08
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "/-/5% INSS - PATROCÍNIOS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "sponsorship_commercial",
+     0.15000000000000002
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "/-/S.A.F",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.24000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ]
+   ],
+   "tokens": 1307
+  },
+  {
+   "label": "/-/PIS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1306
+  },
+  {
+   "label": "/-/COFINS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1307
+  },
+  {
+   "label": "/-/ICMS",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1392
+  },
+  {
+   "label": "CUSTOS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "/-/5% INSS - PROGRAMA DE EXCELÊNCIA - FPF",
+   "lado": null,
+   "page": 1,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.48
+    ],
+    [
+     "competition_bonus",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1532
+  },
+  {
+   "label": "SALÁRIOS E ORDENADOS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "wages_squad",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1540
+  },
+  {
+   "label": "FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "wages_squad",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1383
+  },
+  {
+   "label": "FÉRIAS INDENIZADAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "wages_squad",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1387
+  },
+  {
+   "label": "PIS S/FOLHA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "wages_squad",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1398
+  },
+  {
+   "label": "FGTS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "wages_squad",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ]
+   ],
+   "tokens": 1385
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "wages_squad",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1476
+  },
+  {
+   "label": "INSS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "other_income",
+     0.13
+    ]
+   ],
+   "tokens": 1566
+  },
+  {
+   "label": "DÉCIMO TERCEIRO SALÁRIO INDENIZADO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "wages_squad",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1480
+  },
+  {
+   "label": "PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "wages_squad",
+     0.65
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1522
+  },
+  {
+   "label": "PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1538
+  },
+  {
+   "label": "PROVISÃO DE DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "wages_squad",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1548
+  },
+  {
+   "label": "PROVISÃO DE FGTS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "wages_squad",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1540
+  },
+  {
+   "label": "PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "wages_squad",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1536
+  },
+  {
+   "label": "PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "wages_squad",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1528
+  },
+  {
+   "label": "PROVISÃO DE INSS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "wages_squad",
+     0.66
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1534
+  },
+  {
+   "label": "PROVISÃO DE PIS DÉCIMO TERCEIRO SALÁRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "wages_squad",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1550
+  },
+  {
+   "label": "AJUDA DE CUSTO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1523
+  },
+  {
+   "label": "ASSISTÊNCIA MÉDICA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "wages_squad",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1545
+  },
+  {
+   "label": "VALE TRANSPORTE",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.3
+    ],
+    [
+     "wages_squad",
+     0.29000000000000004
+    ],
+    [
+     "other_expenses",
+     0.22
+    ]
+   ],
+   "tokens": 1496
+  },
+  {
+   "label": "SEGURO DE VIDA",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "wages_squad",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1362
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE INSS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.8200000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 1540
+  },
+  {
+   "label": "EXAMES MÉDICOS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "wages_squad",
+     0.75
+    ],
+    [
+     "match_organisation_expense",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1433
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "wages_squad",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1543
+  },
+  {
+   "label": "ACORDO TRABALHISTA",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1549
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE FGTS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_income",
+     0.85
+    ],
+    [
+     "wages_squad",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1545
+  },
+  {
+   "label": "COMISSÕES",
+   "lado": null,
+   "page": 2,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1584
+  },
+  {
+   "label": "INTERNET",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1447
+  },
+  {
+   "label": "AVISO PRÉVIO INDENIZADO",
+   "lado": null,
+   "page": 3,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "wages_squad",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1313
+  },
+  {
+   "label": "TV A CABO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "broadcasting",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "broadcasting",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1307
+  },
+  {
+   "label": "ÁGUA E ESGOTO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1569
+  },
+  {
+   "label": "ENERGIA ELÉTRICA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1553
+  },
+  {
+   "label": "/-/REVERSÃO DE PROVISÃO DE PIS FÉRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.8200000000000001
+    ],
+    [
+     "wages_squad",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1545
+  },
+  {
+   "label": "ALIMENTAÇÃO",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "match_organisation_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1505
+  },
+  {
+   "label": "DIREITO DE IMAGEM",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "broadcasting",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1516
+  },
+  {
+   "label": "AGENCIAMENTO DE ATLETAS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "player_sales",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "player_sales",
+     0.5
+    ],
+    [
+     "other_income",
+     0.21000000000000002
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 1500
+  },
+  {
+   "label": "SERVIÇOS PRESTADOS POR TERCEIROS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1544
+  },
+  {
+   "label": "HOSPEDAGEM",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "other_income",
+     0.13
+    ]
+   ],
+   "tokens": 1307
+  },
+  {
+   "label": "ALUGUÉL DE IMÓVEL",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "stadium_other",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "stadium_other",
+     0.92
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1415
+  },
+  {
+   "label": "TAXAS FEDERAÇÕES DE FUTEBOL",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1555
+  },
+  {
+   "label": "TAXAS CONFEDERAÇÃO BRASILEIRA DE FUTEBOL",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.52
+    ],
+    [
+     "match_organisation_expense",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1522
+  },
+  {
+   "label": "VIAGENS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1517
+  },
+  {
+   "label": "GASTOS C/ VEÍCULOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1505
+  },
+  {
+   "label": "FRETAMENTOS",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1365
+  },
+  {
+   "label": "CONDOMÍNIO",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "broadcasting",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "broadcasting",
+     0.79
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ]
+   ],
+   "tokens": 1402
+  },
+  {
+   "label": "MATERIAIS ESPORTIVOS E UNIFORMES",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "wages_squad",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1516
+  },
+  {
+   "label": "IPTU",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1305
+  },
+  {
+   "label": "AUXÍLIO MORADIA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "competition_bonus",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.18
+    ]
+   ],
+   "tokens": 1540
+  },
+  {
+   "label": "ÁGUA MINERAL E GELO",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "match_organisation_expense",
+     0.29000000000000004
+    ]
+   ],
+   "tokens": 1571
+  },
+  {
+   "label": "MANUTENÇÃO GERAL",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1529
+  },
+  {
+   "label": "SERVIÇOS DE CONSULTORIAS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1529
+  },
+  {
+   "label": "MATERIAIS MÉDICOS E MEDICAMENTOS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "wages_squad",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1515
+  },
+  {
+   "label": "OUTRAS DESPESAS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "LOCAÇÃO DE VEÍCULOS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1404
+  },
+  {
+   "label": "ANTI DOPING",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "admin_general_expense",
+     0.18000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.17
+    ]
+   ],
+   "tokens": 1307
+  },
+  {
+   "label": "BENS NATUREZA PERMANENTE PEQUENO VALOR",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "depreciation",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "depreciation",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1544
+  },
+  {
+   "label": "SEGUROS DE IMÓVEIS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1499
+  },
+  {
+   "label": "MANUTENÇÃO DE MÁQUINAS E EQUIPAMENTOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1543
+  },
+  {
+   "label": "LUVAS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "player_sales",
+     0.1
+    ],
+    [
+     "competition_bonus",
+     0.08
+    ]
+   ],
+   "tokens": 1491
+  },
+  {
+   "label": "JOGOS E COMPETIÇÕES",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1538
+  },
+  {
+   "label": "MATERIAL DE LIMPEZA, HIGIENE, COPA E COZINHA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1522
+  },
+  {
+   "label": "PASSAGENS AEREAS",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1366
+  },
+  {
+   "label": "FRETES E CARRETOS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1387
+  },
+  {
+   "label": "EVENTOS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_income",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "stadium_other",
+     0.08
+    ]
+   ],
+   "tokens": 1493
+  },
+  {
+   "label": "EMPRÉSTIMOS DE ATLETAS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "player_sales",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "player_sales",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1550
+  },
+  {
+   "label": "HONORARIOS ADVOCATIVIOS",
+   "lado": null,
+   "page": 4,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "PSICOLOGA E ESCOLAS",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "education_expense",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "education_expense",
+     0.34
+    ],
+    [
+     "youth_football",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1382
+  },
+  {
+   "label": "/-/RECUPERAÇÃO DE CUSTOS",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "wages_squad",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "wages_squad",
+     0.64
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1518
+  },
+  {
+   "label": "MANUTENÇÃO DE MORADIA",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1535
+  },
+  {
+   "label": "TELEFONE",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1555
+  },
+  {
+   "label": "ALUGUÉL DE MÁQUINAS E EQUIPAMENTOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "CONFRATERNIZAÇÃO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "admin_general_expense",
+     0.39
+    ],
+    [
+     "youth_other_sports_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1310
+  },
+  {
+   "label": "AUXILIO MORADIA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "competition_bonus",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1539
+  },
+  {
+   "label": "COMBUSTÍVEIS E LUBRIFICANTES",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ]
+   ],
+   "tokens": 1316
+  },
+  {
+   "label": "MEDALHAS E TROFÉUS",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "competition_bonus",
+     0.39
+    ],
+    [
+     "other_income",
+     0.09
+    ]
+   ],
+   "tokens": 1311
+  },
+  {
+   "label": "ALUGUEL DE IMOVEL",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "stadium_other",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "stadium_other",
+     0.83
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1413
+  },
+  {
+   "label": "/-/CUSTO DE FORMAÇÃO SUB-15",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.78
+    ],
+    [
+     "player_amortisation",
+     0.14
+    ],
+    [
+     "youth_football",
+     0.06
+    ]
+   ],
+   "tokens": 1542
+  },
+  {
+   "label": "UNIFORMES",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1374
+  },
+  {
+   "label": "/-/CUSTO DE FORMAÇÃO SUB-17",
+   "lado": null,
+   "page": 5,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.75
+    ],
+    [
+     "player_amortisation",
+     0.16
+    ],
+    [
+     "youth_football",
+     0.07
+    ]
+   ],
+   "tokens": 1542
+  },
+  {
+   "label": "AMORTIZAÇÃO DOS ATLETAS FORMADOS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1564
+  },
+  {
+   "label": "MERCADORIAS COMPRADAS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1437
+  },
+  {
+   "label": "MERCADORIAS RECEBIDAS EM BONIFICAÇÃO",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "sponsorship_commercial",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1537
+  },
+  {
+   "label": "ESTOQUE INICIAL",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "other_income",
+     0.15000000000000002
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1309
+  },
+  {
+   "label": "/-/ICMS A RECUPERAR",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.47000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1397
+  },
+  {
+   "label": "/-/ESTOQUE FINAL",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1370
+  },
+  {
+   "label": "LUCRO BRUTO",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "lump_football_operations",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.72
+    ],
+    [
+     "other_income",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1465
+  },
+  {
+   "label": "RECEITA LÍQUIDA",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1521
+  },
+  {
+   "label": "DESPESAS OPERACIONAIS",
+   "lado": null,
+   "page": 6,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1534
+  },
+  {
+   "label": "DESPESAS ADMINISTRATIVAS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1541
+  },
+  {
+   "label": "DEPRECIAÇÃO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1521
+  },
+  {
+   "label": "FOTOCÓPIAS, AUTENTICAÇÕES E RECONHECIMENTO DE FIRMA",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1326
+  },
+  {
+   "label": "MANUTENÇÃO DE VEÍCULOS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1536
+  },
+  {
+   "label": "MANUTENÇÃO E CONSERVAÇÃO DE BENS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1537
+  },
+  {
+   "label": "IMPRESSOS E MATERIAIS DE ESCRITÓRIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "LICENÇA DE USO DE SOFTWARE",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1520
+  },
+  {
+   "label": "CORREIO",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "other_income",
+     0.23
+    ]
+   ],
+   "tokens": 1306
+  },
+  {
+   "label": "HONORÁRIOS CONTÁBEIS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1503
+  },
+  {
+   "label": "HONORÁRIOS ADVOCATÍCIOS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1505
+  },
+  {
+   "label": "GESTÃO DO PROGRAMA SÓCIO TORCEDOR",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "member_dues",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1550
+  },
+  {
+   "label": "ASSOCIAÇÃO DE CLASSE",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "match_organisation_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1617
+  },
+  {
+   "label": "GÁS DE COZINHA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1564
+  },
+  {
+   "label": "ANÚNCIOS E PUBLICAÇÕES",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1370
+  },
+  {
+   "label": "SEGURANÇA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1397
+  },
+  {
+   "label": "GASTOS C/ CERTIFICADO DIGITAL",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1507
+  },
+  {
+   "label": "CUSTAS PROCESSUAIS",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "exceptional_items",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "exceptional_items",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1395
+  },
+  {
+   "label": "DESPESAS FINANCEIRAS SÓCIO TORCEDOR",
+   "lado": null,
+   "page": 7,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "member_dues",
+     0.07
+    ]
+   ],
+   "tokens": 1549
+  },
+  {
+   "label": "EMOLUMENTOS CARTORIAIS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1311
+  },
+  {
+   "label": "ALIMENTAÇÃO E REFEIÇÃO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "match_organisation_expense",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "MANUTENÇÃO E CONSERVAÇÃO DE MÁQUINAS E EQUIPAMENTOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1549
+  },
+  {
+   "label": "DESPESAS DIVERSAS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1523
+  },
+  {
+   "label": "CONTRIBUIÇÕES E DONATIVOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "member_dues",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "member_dues",
+     0.51
+    ],
+    [
+     "other_income",
+     0.47
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1537
+  },
+  {
+   "label": "MULTAS DE TRÂNSITO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "TRANSFERS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1410
+  },
+  {
+   "label": "MULTAS TJD",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1522
+  },
+  {
+   "label": "PROPAGANDA E PUBLICIDADE",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.52
+    ],
+    [
+     "sponsorship_commercial",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1518
+  },
+  {
+   "label": "MATERIAL DE MARKETING",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.68
+    ],
+    [
+     "sponsorship_commercial",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1491
+  },
+  {
+   "label": "DESPESAS COM DOMINIO SITE",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1530
+  },
+  {
+   "label": "ALIMENTOS PARA COZINHA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "wages_squad",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "HONORARIOS CONSULTORIA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1500
+  },
+  {
+   "label": "I.S.S. E TAXA PODER DE POLÍCIA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.6
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1368
+  },
+  {
+   "label": "SEGUROS DE VEÍCULOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1497
+  },
+  {
+   "label": "CONTRIBUIÇÃO NEGOCIAL",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1312
+  },
+  {
+   "label": "BAIXA DOS ATLETAS EM FORMAÇÃO SUB-15",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "player_amortisation",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "player_amortisation",
+     0.92
+    ],
+    [
+     "youth_other_sports_expense",
+     0.08
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1566
+  },
+  {
+   "label": "IMPOSTOS E TAXAS DIVERSAS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1528
+  },
+  {
+   "label": "MULTAS, JUROS E CORREÇÃO MONETÁRIA",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1530
+  },
+  {
+   "label": "I.O.F.",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1306
+  },
+  {
+   "label": "ISS RETIDO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.66
+    ],
+    [
+     "other_income",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1379
+  },
+  {
+   "label": "ENCARGOS S/PARCELAMENTOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "admin_general_expense",
+     0.43
+    ],
+    [
+     "wages_squad",
+     0.03
+    ]
+   ],
+   "tokens": 1549
+  },
+  {
+   "label": "DESPESAS BANCÁRIAS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1520
+  },
+  {
+   "label": "INSS RETIDO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.43
+    ],
+    [
+     "other_income",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1568
+  },
+  {
+   "label": "ANUIDADE CARTÃO DE CRÉDITO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "member_dues",
+     0.01
+    ]
+   ],
+   "tokens": 1630
+  },
+  {
+   "label": "DESPESAS C/ CARTÃO DE CRÉDITO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.41
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "ENCARGOS FINANCEIROS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1546
+  },
+  {
+   "label": "JUROS PASSIVOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1359
+  },
+  {
+   "label": "PERDAS EVENTUAIS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "exceptional_items",
+     0.25
+    ],
+    [
+     "player_impairment",
+     0.02
+    ]
+   ],
+   "tokens": 1495
+  },
+  {
+   "label": "VARIAÇÕES CAMBIAIS PASSIVAS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1315
+  },
+  {
+   "label": "DESPESAS CAMBIO FINANCEIRO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1520
+  },
+  {
+   "label": "RECEITAS FINANCEIRAS",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1495
+  },
+  {
+   "label": "DESCONTOS OBTIDOS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1360
+  },
+  {
+   "label": "RENDIMENTOS DE APLICAÇÕES BANCO BRADESCO S/A",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1322
+  },
+  {
+   "label": "RENDAS EVENTUAIS",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1364
+  },
+  {
+   "label": "RENDIMENTOS PAGSEGURO",
+   "lado": null,
+   "page": 8,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1312
+  },
+  {
+   "label": "OUTRAS RECEITAS OPERACIONAIS",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1533
+  },
+  {
+   "label": "RECEITAS NÃO OPERACIONAIS",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1539
+  },
+  {
+   "label": "VARIAÇÕES CAMBIAIS ATIVA",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1314
+  },
+  {
+   "label": "RESULTADO OPERACIONAL",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.64
+    ],
+    [
+     "lump_football_operations",
+     0.24000000000000002
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1546
+  },
+  {
+   "label": "BONIFICAÇÕES",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "competition_bonus",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "competition_bonus",
+     0.88
+    ],
+    [
+     "match_organisation_expense",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1439
+  },
+  {
+   "label": "OUTRAS RECEITAS",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "ROYALTIES",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1503
+  },
+  {
+   "label": "AUXILIO FINANCEIRO",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "competition_bonus",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1539
+  },
+  {
+   "label": "PROGRAMA DE AUXILIO FINANCEIRO",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "competition_bonus",
+     0.03
+    ]
+   ],
+   "tokens": 1531
+  },
+  {
+   "label": "RESULTADO ANTES DO IR E CSL",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "lump_football_operations",
+     0.15000000000000002
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1517
+  },
+  {
+   "label": "PERDAS NA ALIENAÇÃO DO ATIVO IMOBILIZADO",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1543
+  },
+  {
+   "label": "PREJUÍZO DO EXERCÍCIO",
+   "lado": null,
+   "page": 9,
+   "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO EM 31/12/2022",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "exceptional_items",
+     0.06
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1407
+  }
+ ]
+}

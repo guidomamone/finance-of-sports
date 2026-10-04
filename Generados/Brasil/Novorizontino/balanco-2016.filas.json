@@ -1,0 +1,291 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2016.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2016.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T02:32:37.721Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b6"
+  ],
+  "notas_gastos": [
+   "b6",
+   "b7",
+   "b8"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "miles",
+   "evidencia": "No impreso; importes (3.240 vs 3,240,404.99 en b6) indican miles de reales"
+  },
+  {
+   "bloque": "b6",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos (3,240,404.99)"
+  },
+  {
+   "bloque": "b7",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos"
+  },
+  {
+   "bloque": "b8",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 40,
+   "etiqueta": "PATROCINIO NO UNIFORME",
+   "actual": "190",
+   "anterior": "48",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 41,
+   "etiqueta": "PATROCINIO EM PLACAS",
+   "actual": "-",
+   "anterior": "4",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 42,
+   "etiqueta": "PATROCÍNIO NO ESTÁDIO",
+   "actual": "4",
+   "anterior": "4",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 43,
+   "etiqueta": "LOCAÇÃO DE CADEIRA S/ASSENTOS",
+   "actual": "20",
+   "anterior": "6",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 44,
+   "etiqueta": "VENDAS DE INGRESSOS",
+   "actual": "605",
+   "anterior": "378",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 45,
+   "etiqueta": "RECEITAS DO BAR",
+   "actual": "10",
+   "anterior": "3",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 46,
+   "etiqueta": "RECEITA C/ NEGOCIAÇÃO DE ATLETA",
+   "actual": "207",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 47,
+   "etiqueta": "REPASSE DA FEDERAÇÃO",
+   "actual": "2.204",
+   "anterior": "300",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 48,
+   "etiqueta": "DOAÇÕES RECEBIDAS",
+   "actual": "-",
+   "anterior": "4",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 49,
+   "etiqueta": "RECEITA OPERACIONAL RECURSOS PRÓPRIOS",
+   "actual": "3.240",
+   "anterior": "746",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 51,
+   "etiqueta": "(-) Ordenados, Salários, Encargos Sociais e Trabalhistas",
+   "actual": "(6.206)",
+   "anterior": "(3.475)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 52,
+   "etiqueta": "RESULTADO OPERACIONAL BRUTO",
+   "actual": "(2.966)",
+   "anterior": "(2.729)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 54,
+   "etiqueta": "Despesas Administrativas",
+   "actual": "(1.794)",
+   "anterior": "(1.419)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 55,
+   "etiqueta": "Despesas e Manutenção",
+   "actual": "(1.945)",
+   "anterior": "(1.422)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 56,
+   "etiqueta": "Receitas Financeiras Líquidas",
+   "actual": "(75)",
+   "anterior": "(29)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 57,
+   "etiqueta": "Recuperação de Despesas",
+   "actual": "2",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 53,
+   "etiqueta": "(-)DESPESAS C/ RECURSOS PRÓPRIOS",
+   "actual": "(3.813)",
+   "anterior": "(2.869)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 58,
+   "etiqueta": "RESULTADO OPERACIONAL",
+   "actual": "(6.779)",
+   "anterior": "(5.598)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 59,
+   "etiqueta": "RESULTADO ANTES DOS IMPOSTOS",
+   "actual": "(6.779)",
+   "anterior": "(5.598)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 60,
+   "etiqueta": "SUPERÁVIT/DÉFICIT DO PERÍODO",
+   "actual": "(6.779)",
+   "anterior": "(5.598)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 298,
+   "etiqueta": "225 - 3.1.04.01.0001 RECUPERACAO DE DESPESA",
+   "actual": "1,930.00",
+   "anterior": "200.00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Recuperação de Despesas"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 49,
+  "actual": "3.240"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 60,
+  "actual": "(6.779)",
+  "anterior": "(5.598)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan sin desglose los renglones del estado (b2), dejando afuera el balancete detallado b6-b8 por estar en unidades y repetir el estado completo?",
+   "propuesta": "no",
+   "tema": "cuadro-duplicado",
+   "renglon": "",
+   "texto": "b6-b8 (L148-L301) es el mismo estado en unidades con cuentas analíticas; solo se cargó la cuenta de Recuperação de Despesas (L298) por el reintento, faltaría cargar el resto de las cuentas como desglose.",
+   "bloques": [
+    "b6",
+    "b7",
+    "b8"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se acepta que el desglose de '(-) Ordenados, Salários, Encargos Sociais e Trabalhistas' sume 6.207 mil frente a 6.206 impreso en L51?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "(-) Ordenados, Salários, Encargos Sociais e Trabalhistas",
+   "texto": "L161 imprime -6,207,219.25 y el estado L51 (6.206); diferencia de 1 mil por redondeo del estado.",
+   "bloques": [
+    "b2",
+    "b6"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado b2 en miles (inferido). Recuperação de Despesas: 2 (miles) vs 1,930.00 unidades, diferencia de redondeo; 2015 '-' vs 200.00. Notas b6-b8 son el mismo DRE en unidades con detalle por cuenta."
+}

@@ -1,0 +1,477 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2017-2018.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2017-2018.pdf",
+  "club": "realmadrid",
+  "year": 2018,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:01:04.288Z",
+  "tieOuts": {
+    "cierran": 6,
+    "noCierran": 14
+  },
+  "warnings": [
+    "5 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "9 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "8 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 41,
+    "notasUsadas": []
+  },
+  "ladoConocido": 31,
+  "rubros": [
+    {
+      "label": "Arrendamientos de activos (nota 6.3)",
+      "lado": null,
+      "page": 56,
+      "section": "Gastos de cesión y adquisición de jugadores           1.405          538 / Otros gastos de gestión corriente                    46.170       16.985 / El detalle del epígrafe “Deterioro, resultado de enajenaciones del / yen, entre otros gastos, las contribuciones obligatorias reguladas",
+      "values": [
+        1.808
+      ],
+      "origen": "estado 62",
+      "glosa": "Arrendamientos de activos (nota 6.3)"
+    },
+    {
+      "label": "Otros arrendamientos, cánones y otros servicios",
+      "lado": null,
+      "page": 56,
+      "section": "Gastos de cesión y adquisición de jugadores           1.405          538 / Otros gastos de gestión corriente                    46.170       16.985 / El detalle del epígrafe “Deterioro, resultado de enajenaciones del / yen, entre otros gastos, las contribuciones obligatorias reguladas",
+      "values": [
+        69.681
+      ],
+      "origen": "estado 62",
+      "glosa": "Otros arrendamientos, cánones y otros servicios"
+    },
+    {
+      "label": "Reparaciones y conservación",
+      "lado": null,
+      "page": 56,
+      "section": "Gastos de cesión y adquisición de jugadores           1.405          538 / Otros gastos de gestión corriente                    46.170       16.985 / El detalle del epígrafe “Deterioro, resultado de enajenaciones del / yen, entre otros gastos, las contribuciones obligatorias reguladas",
+      "values": [
+        27.126
+      ],
+      "origen": "estado 62",
+      "glosa": "Reparaciones y conservación"
+    },
+    {
+      "label": "Servicios profesionales",
+      "lado": null,
+      "page": 56,
+      "section": "Gastos de cesión y adquisición de jugadores           1.405          538 / Otros gastos de gestión corriente                    46.170       16.985 / El detalle del epígrafe “Deterioro, resultado de enajenaciones del / yen, entre otros gastos, las contribuciones obligatorias reguladas",
+      "values": [
+        26.681
+      ],
+      "origen": "estado 62",
+      "glosa": "Servicios profesionales"
+    },
+    {
+      "label": "Primas de seguro",
+      "lado": null,
+      "page": 56,
+      "section": "Gastos de cesión y adquisición de jugadores           1.405          538 / Otros gastos de gestión corriente                    46.170       16.985 / El detalle del epígrafe “Deterioro, resultado de enajenaciones del / yen, entre otros gastos, las contribuciones obligatorias reguladas",
+      "values": [
+        3.365
+      ],
+      "origen": "estado 62",
+      "glosa": "Primas de seguro"
+    },
+    {
+      "label": "Publicidad, propaganda y relaciones públicas",
+      "lado": null,
+      "page": 56,
+      "section": "Gastos de cesión y adquisición de jugadores           1.405          538 / Otros gastos de gestión corriente                    46.170       16.985 / El detalle del epígrafe “Deterioro, resultado de enajenaciones del / yen, entre otros gastos, las contribuciones obligatorias reguladas",
+      "values": [
+        6.055
+      ],
+      "origen": "estado 62",
+      "glosa": "Publicidad, propaganda y relaciones públicas"
+    },
+    {
+      "label": "Suministros",
+      "lado": null,
+      "page": 56,
+      "section": "Gastos de cesión y adquisición de jugadores           1.405          538 / Otros gastos de gestión corriente                    46.170       16.985 / El detalle del epígrafe “Deterioro, resultado de enajenaciones del / yen, entre otros gastos, las contribuciones obligatorias reguladas",
+      "values": [
+        2.044
+      ],
+      "origen": "estado 62",
+      "glosa": "Suministros"
+    },
+    {
+      "label": "Diferimiento plusvalías por pago aplazado 8.357 (305) -",
+      "lado": null,
+      "page": 48,
+      "section": "El cálculo del impuesto sobre beneficios a devolver o pagar es el / Pasivos por diferencias temporarias deducibles",
+      "values": [
+        8.052
+      ],
+      "origen": "estado 48",
+      "glosa": "Diferimiento plusvalías por pago aplazado 8.357 (305) -"
+    },
+    {
+      "label": "Impuesto corriente",
+      "lado": "expense",
+      "page": 48,
+      "section": "El cálculo del impuesto sobre beneficios a devolver o pagar es el / Pasivos por diferencias temporarias deducibles",
+      "values": [
+        -9.961
+      ],
+      "origen": "estado 48",
+      "glosa": "Impuesto corriente"
+    },
+    {
+      "label": "Libertad de amortización 1.242 (70) -",
+      "lado": null,
+      "page": 48,
+      "section": "El cálculo del impuesto sobre beneficios a devolver o pagar es el / Pasivos por diferencias temporarias deducibles",
+      "values": [
+        1.172
+      ],
+      "origen": "estado 48",
+      "glosa": "Libertad de amortización 1.242 (70) -"
+    },
+    {
+      "label": "Retenciones y pagos a cuenta",
+      "lado": null,
+      "page": 48,
+      "section": "El cálculo del impuesto sobre beneficios a devolver o pagar es el / Pasivos por diferencias temporarias deducibles",
+      "values": [
+        14.593
+      ],
+      "origen": "estado 48",
+      "glosa": "Retenciones y pagos a cuenta"
+    },
+    {
+      "label": "Subvenciones (Nota 6.4) 1.570 - (48)",
+      "lado": "revenue",
+      "page": 48,
+      "section": "El cálculo del impuesto sobre beneficios a devolver o pagar es el / Pasivos por diferencias temporarias deducibles",
+      "values": [
+        1.522
+      ],
+      "origen": "estado 48",
+      "glosa": "Subvenciones (Nota 6.4) 1.570 - (48)"
+    },
+    {
+      "label": "Concesiones 3.159 - - -",
+      "lado": "expense",
+      "page": 30,
+      "section": "inversiones en nuevos jugadores de las plantillas profesionales         siguientes: / de fútbol y baloncesto, e incluyen el importe del transfer y otros / Altas y / lación con servicios de intermediación ha sido un importe de 41.532 / miles de euros (39.488 miles de euros en el ejercicio anterior).        Coste:",
+      "values": [
+        3.159
+      ],
+      "origen": "estado 18",
+      "glosa": "Concesiones 3.159 - - -"
+    },
+    {
+      "label": "Patentes, licencias, marcas y similares 1.526 140 - -",
+      "lado": "expense",
+      "page": 30,
+      "section": "inversiones en nuevos jugadores de las plantillas profesionales         siguientes: / de fútbol y baloncesto, e incluyen el importe del transfer y otros / Altas y / lación con servicios de intermediación ha sido un importe de 41.532 / miles de euros (39.488 miles de euros en el ejercicio anterior).        Coste:",
+      "values": [
+        1.666
+      ],
+      "origen": "estado 18",
+      "glosa": "Patentes, licencias, marcas y similares 1.526 140 - -"
+    },
+    {
+      "label": "De acuerdo con lo establecido en la nota 3.6 anterior, el Club regis- Aplicaciones informáticas 14.400 518 -",
+      "lado": "expense",
+      "page": 30,
+      "section": "inversiones en nuevos jugadores de las plantillas profesionales         siguientes: / de fútbol y baloncesto, e incluyen el importe del transfer y otros / Altas y / lación con servicios de intermediación ha sido un importe de 41.532 / miles de euros (39.488 miles de euros en el ejercicio anterior).        Coste:",
+      "values": [
+        15.331
+      ],
+      "origen": "estado 18",
+      "glosa": "De acuerdo con lo establecido en la nota 3.6 anterior, el Club regis- Aplicaciones informáticas 14.400 518 -"
+    },
+    {
+      "label": "tra las correcciones valorativas oportunas en función de los indicios Otro inmovilizado intangible 125.047 - - -",
+      "lado": "expense",
+      "page": 30,
+      "section": "inversiones en nuevos jugadores de las plantillas profesionales         siguientes: / de fútbol y baloncesto, e incluyen el importe del transfer y otros / Altas y / lación con servicios de intermediación ha sido un importe de 41.532 / miles de euros (39.488 miles de euros en el ejercicio anterior).        Coste:",
+      "values": [
+        125.047
+      ],
+      "origen": "estado 18",
+      "glosa": "tra las correcciones valorativas oportunas en función de los indicios Otro inmovilizado intangible 125.047 - - -"
+    },
+    {
+      "label": "claros y evidencias de deterioro que se obtienen en los elementos Anticipos 1.461 658 - (413)",
+      "lado": "expense",
+      "page": 30,
+      "section": "inversiones en nuevos jugadores de las plantillas profesionales         siguientes: / de fútbol y baloncesto, e incluyen el importe del transfer y otros / Altas y / lación con servicios de intermediación ha sido un importe de 41.532 / miles de euros (39.488 miles de euros en el ejercicio anterior).        Coste:",
+      "values": [
+        1.706
+      ],
+      "origen": "estado 18",
+      "glosa": "claros y evidencias de deterioro que se obtienen en los elementos Anticipos 1.461 658 - (413)"
+    },
+    {
+      "label": "A 30 de junio de 2018 existen compromisos en firme de inversión Concesiones 3.159 - - -",
+      "lado": "expense",
+      "page": 30,
+      "section": "4.2 Otra información / dores totalmente amortizados por un importe de 331 miles de / Altas y / Coste:",
+      "values": [
+        3.159
+      ],
+      "origen": "estado 21",
+      "glosa": "A 30 de junio de 2018 existen compromisos en firme de inversión Concesiones 3.159 - - -"
+    },
+    {
+      "label": "por importe de 53.925 miles de euros, así como compromisos en Patentes, licencias, marcas y similares 1.458 68 - -",
+      "lado": "expense",
+      "page": 30,
+      "section": "4.2 Otra información / dores totalmente amortizados por un importe de 331 miles de / Altas y / Coste:",
+      "values": [
+        1.526
+      ],
+      "origen": "estado 21",
+      "glosa": "por importe de 53.925 miles de euros, así como compromisos en Patentes, licencias, marcas y similares 1.458 68 - -"
+    },
+    {
+      "label": "firme de traspasos de derechos sobre jugadores por 2.000 miles Aplicaciones informáticas 10.882 170 -",
+      "lado": "expense",
+      "page": 30,
+      "section": "4.2 Otra información / dores totalmente amortizados por un importe de 331 miles de / Altas y / Coste:",
+      "values": [
+        3.348
+      ],
+      "origen": "estado 21",
+      "glosa": "firme de traspasos de derechos sobre jugadores por 2.000 miles Aplicaciones informáticas 10.882 170 -"
+    },
+    {
+      "label": "de euros (a 30 de junio de 2017 no existían compromisos en firme Otro inmovilizado intangible 125.047 - - -",
+      "lado": "expense",
+      "page": 30,
+      "section": "4.2 Otra información / dores totalmente amortizados por un importe de 331 miles de / Altas y / Coste:",
+      "values": [
+        125.047
+      ],
+      "origen": "estado 21",
+      "glosa": "de euros (a 30 de junio de 2017 no existían compromisos en firme Otro inmovilizado intangible 125.047 - - -"
+    },
+    {
+      "label": "de inversión ni de traspasos). Anticipos 4.126 683 -",
+      "lado": "expense",
+      "page": 30,
+      "section": "4.2 Otra información / dores totalmente amortizados por un importe de 331 miles de / Altas y / Coste:",
+      "values": [
+        -3.348
+      ],
+      "origen": "estado 21",
+      "glosa": "de inversión ni de traspasos). Anticipos 4.126 683 -"
+    },
+    {
+      "label": "Estadios y pabellones deportivos (90.062) (6.878)",
+      "lado": "expense",
+      "page": 31,
+      "section": "Un resumen del coste de los elementos de inmovilizado intangi- / ble no deportivo totalmente amortizados es como sigue: / Amortización acumulada: / miles €                                         30/06/18    30/06/17",
+      "values": [
+        1.838
+      ],
+      "origen": "estado 24",
+      "glosa": "Estadios y pabellones deportivos (90.062) (6.878)"
+    },
+    {
+      "label": "Otras construcciones (4.863) (1.040) -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Un resumen del coste de los elementos de inmovilizado intangi- / ble no deportivo totalmente amortizados es como sigue: / Amortización acumulada: / miles €                                         30/06/18    30/06/17",
+      "values": [
+        -1.838
+      ],
+      "origen": "estado 24",
+      "glosa": "Otras construcciones (4.863) (1.040) -"
+    },
+    {
+      "label": "Concesiones",
+      "lado": "expense",
+      "page": 31,
+      "section": "Un resumen del coste de los elementos de inmovilizado intangi- / ble no deportivo totalmente amortizados es como sigue: / Amortización acumulada: / miles €                                         30/06/18    30/06/17",
+      "values": [
+        2.103
+      ],
+      "origen": "estado 24",
+      "glosa": "Concesiones"
+    },
+    {
+      "label": "Instalaciones técnicas y otro inmovilizado material (64.386) (6.512) 862 -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Un resumen del coste de los elementos de inmovilizado intangi- / ble no deportivo totalmente amortizados es como sigue: / Amortización acumulada: / miles €                                         30/06/18    30/06/17",
+      "values": [
+        -70.036
+      ],
+      "origen": "estado 24",
+      "glosa": "Instalaciones técnicas y otro inmovilizado material (64.386) (6.512) 862 -"
+    },
+    {
+      "label": "Patentes, licencias, marcas y similares 806 805 Total amortización acumulada (159.311) (14.430) 1.255 -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Un resumen del coste de los elementos de inmovilizado intangi- / ble no deportivo totalmente amortizados es como sigue: / Amortización acumulada: / miles €                                         30/06/18    30/06/17",
+      "values": [
+        -172.486
+      ],
+      "origen": "estado 24",
+      "glosa": "Patentes, licencias, marcas y similares 806 805 Total amortización acumulada (159.311) (14.430) 1.255 -"
+    },
+    {
+      "label": "Aplicaciones informáticas",
+      "lado": "expense",
+      "page": 31,
+      "section": "Un resumen del coste de los elementos de inmovilizado intangi- / ble no deportivo totalmente amortizados es como sigue: / Amortización acumulada: / miles €                                         30/06/18    30/06/17",
+      "values": [
+        7.228
+      ],
+      "origen": "estado 24",
+      "glosa": "Aplicaciones informáticas"
+    },
+    {
+      "label": "Estadios y pabellones deportivos 345.676 397 (255)",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 2016/2017 / Altas y / Coste:",
+      "values": [
+        2.117
+      ],
+      "origen": "estado 25",
+      "glosa": "Estadios y pabellones deportivos 345.676 397 (255)"
+    },
+    {
+      "label": "Otros terrenos y construcciones 22.168 - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 2016/2017 / Altas y / Coste:",
+      "values": [
+        22.215
+      ],
+      "origen": "estado 25",
+      "glosa": "Otros terrenos y construcciones 22.168 - -"
+    },
+    {
+      "label": "Instalaciones técnicas y otro inmovilizado material 89.169 2.194 (67)",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 2016/2017 / Altas y / Coste:",
+      "values": [
+        4.842
+      ],
+      "origen": "estado 25",
+      "glosa": "Instalaciones técnicas y otro inmovilizado material 89.169 2.194 (67)"
+    },
+    {
+      "label": "Inmovilizado en curso y anticipos 22.494 21.739 -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 2016/2017 / Altas y / Coste:",
+      "values": [
+        -7.006
+      ],
+      "origen": "estado 25",
+      "glosa": "Inmovilizado en curso y anticipos 22.494 21.739 -"
+    },
+    {
+      "label": "Patentes, licencias, marcas y similares (1.019) (75) - -",
+      "lado": "revenue",
+      "page": 30,
+      "section": "ha obtenido unos ingresos de 107.991 miles de euros (53.899 mi-",
+      "values": [
+        -1.094
+      ],
+      "origen": "estado 19",
+      "glosa": "Patentes, licencias, marcas y similares (1.019) (75) - -"
+    },
+    {
+      "label": "les de euros en el ejercicio anual terminado el 30 de junio de 2017) Aplicaciones informáticas (8.948) (2.250) - -",
+      "lado": "revenue",
+      "page": 30,
+      "section": "ha obtenido unos ingresos de 107.991 miles de euros (53.899 mi-",
+      "values": [
+        -11.198
+      ],
+      "origen": "estado 19",
+      "glosa": "les de euros en el ejercicio anual terminado el 30 de junio de 2017) Aplicaciones informáticas (8.948) (2.250) - -"
+    },
+    {
+      "label": "como consecuencia del traspaso a otros clubes de los derechos Otro inmovilizado intangible (124.585) (230) - -",
+      "lado": "revenue",
+      "page": 30,
+      "section": "ha obtenido unos ingresos de 107.991 miles de euros (53.899 mi-",
+      "values": [
+        -124.815
+      ],
+      "origen": "estado 19",
+      "glosa": "como consecuencia del traspaso a otros clubes de los derechos Otro inmovilizado intangible (124.585) (230) - -"
+    },
+    {
+      "label": "Ingresos de retransmisión",
+      "lado": "revenue",
+      "page": 45,
+      "section": "relación a partidos amistosos o a otros ingresos de carácter / 24.227       16.952 / deportivo. / Periodificaciones a corto plazo / Ingresos anticipados",
+      "values": [
+        14825
+      ],
+      "origen": "estado 43",
+      "glosa": "Ingresos de retransmisión"
+    },
+    {
+      "label": "Ingresos de estadio",
+      "lado": "revenue",
+      "page": 45,
+      "section": "relación a partidos amistosos o a otros ingresos de carácter / 24.227       16.952 / deportivo. / Periodificaciones a corto plazo / Ingresos anticipados",
+      "values": [
+        65967
+      ],
+      "origen": "estado 43",
+      "glosa": "Ingresos de estadio"
+    },
+    {
+      "label": "Ingresos de marketing",
+      "lado": "revenue",
+      "page": 45,
+      "section": "relación a partidos amistosos o a otros ingresos de carácter / 24.227       16.952 / deportivo. / Periodificaciones a corto plazo / Ingresos anticipados",
+      "values": [
+        10098
+      ],
+      "origen": "estado 43",
+      "glosa": "Ingresos de marketing"
+    },
+    {
+      "label": "Ingresos de competiciones",
+      "lado": "revenue",
+      "page": 45,
+      "section": "relación a partidos amistosos o a otros ingresos de carácter / 24.227       16.952 / deportivo. / Periodificaciones a corto plazo / Ingresos anticipados",
+      "values": [
+        8325
+      ],
+      "origen": "estado 43",
+      "glosa": "Ingresos de competiciones"
+    },
+    {
+      "label": "fueron incluidos en los estados financieros intermedios a 31 de Total ingresos de explotación (nota 17.1)",
+      "lado": "revenue",
+      "page": 62,
+      "section": "profesionales la competencia exclusiva sobre el desempeño de / las funciones de tutela, control y supervisión económica, respec- / sión a través de sus órganos de gobierno y administración, en / Ingresos relevantes / para el Control Económico y para la inscripción en la LFP. Por",
+      "values": [
+        804.521
+      ],
+      "origen": "estado 72",
+      "glosa": "fueron incluidos en los estados financieros intermedios a 31 de Total ingresos de explotación (nota 17.1)"
+    },
+    {
+      "label": "diciembre de 2017. Total ingresos financieros (nota 17.6)",
+      "lado": "revenue",
+      "page": 62,
+      "section": "profesionales la competencia exclusiva sobre el desempeño de / las funciones de tutela, control y supervisión económica, respec- / sión a través de sus órganos de gobierno y administración, en / Ingresos relevantes / para el Control Económico y para la inscripción en la LFP. Por",
+      "values": [
+        1.004
+      ],
+      "origen": "estado 72",
+      "glosa": "diciembre de 2017. Total ingresos financieros (nota 17.6)"
+    }
+  ]
+}

@@ -1,0 +1,305 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_board_report_2023-06-30.md",
+ "generatedAt": "2026-09-30T04:29:36.148Z",
+ "rubros": [
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Άλλα έξοδα και ζημίες",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "exceptional_items",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Μικτό αποτέλεσμα",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "lump_football_operations",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "choice": "lump_football_operations",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.88
+    ],
+    [
+     "other_income",
+     0.1
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "match_organisation_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "match_organisation_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.6900000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "Φόρος εισοδήματος",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Αποτέλεσμα προ φόρων",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "choice": "other_income",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "other_income",
+     0.35000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "choice": "admin_general_expense",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1285
+  }
+ ]
+}

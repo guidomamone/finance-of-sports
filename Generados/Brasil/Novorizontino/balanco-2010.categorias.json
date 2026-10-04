@@ -1,0 +1,78 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/balanco-2010.md",
+ "club": "novorizontino-br",
+ "year": null,
+ "generatedAt": "2026-10-03T03:00:11.293Z",
+ "rubrosHuella": "9cf02a2382a0295511ae057ebcefa764762032da",
+ "jevHuella": "6adb3e2485186f085b3f093311c1fe38d6c874db",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.014084,
+ "rubros": [
+  {
+   "label": "Convênio P.M.N.H nº 21/10",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Convenio P.M.N.H. n.º 21/10",
+   "page": 1,
+   "pendiente": true,
+   "jev": "other_income",
+   "jevConf": 0.88,
+   "escalon": 2,
+   "categoria": "other_income",
+   "confianza": 0.75,
+   "motivo": "Convenio municipal; club carga 'Convênios' en other_income, aunque financia escuela de fútbol (youth posible)"
+  },
+  {
+   "label": "Doações, Receitas de Patrocínio, Locação de Espaço, e Ev",
+   "lado": "revenue",
+   "section": "estado",
+   "glosa": "Donaciones, ingresos por patrocinio, alquiler de espacios y eventos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.9,
+   "categoria": "other_income",
+   "confianza": 0.9
+  },
+  {
+   "label": "Administrativas",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos administrativos",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "admin_general_expense",
+   "confianza": 1
+  },
+  {
+   "label": "Despesas Gerais e Manutenção",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Gastos generales y de mantenimiento",
+   "page": 1,
+   "pendiente": false,
+   "ya": "admin_general_expense",
+   "escalon": 1,
+   "jevConf": 0.98,
+   "categoria": "admin_general_expense",
+   "confianza": 0.98
+  },
+  {
+   "label": "Projeto Escola de Futebol -Conv. Nº 21/10",
+   "lado": "expense",
+   "section": "estado",
+   "glosa": "Proyecto Escuela de Fútbol - Conv. n.º 21/10",
+   "page": 1,
+   "pendiente": false,
+   "ya": "youth_other_sports_expense",
+   "escalon": 1,
+   "jevConf": 0.9,
+   "categoria": "youth_other_sports_expense",
+   "confianza": 0.9
+  }
+ ]
+}

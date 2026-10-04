@@ -1,0 +1,4929 @@
+{
+  "club": "nacional",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Portugal/Nacional/relatorio-contas-2023-24.md",
+  "generatedAt": "2026-09-30T22:07:36.187Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 70,
+    "space": 0
+  },
+  "scannedWarning": true,
+  "tableCount": 34,
+  "relevantTableCount": 8,
+  "tables": [
+    {
+      "page": 2,
+      "section": "# Índice / BALANÇO...3",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "DEMONSTRAÇÃO DOS",
+          "values": [
+            "RESULTADOS...4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEMONSTRAÇÃO DOS FLUXOS DE",
+          "values": [
+            "CAIXA...5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEMONSTRAÇÃO DAS ALTERAÇÕES DOS CAPITAIS",
+          "values": [
+            "PRÓPRIOS...6"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ANEXO ÀS DEMONSTRAÇÕES",
+          "values": [
+            "FINANCEIRAS...7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. NOTA",
+          "values": [
+            "INTRODUTÓRIA...7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. REFERENCIAL CONTABILÍSTICO DE PREPARAÇÃO DAS DEMONSTRAÇÕES",
+          "values": [
+            "FINANCEIRAS...8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. PRINCIPAIS POLÍTICAS",
+          "values": [
+            "CONTABILÍSTICAS...8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. FLUXOS DE",
+          "values": [
+            "CAIXA...11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. PARTES",
+          "values": [
+            "RELACIONADAS...11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6. ATIVOS",
+          "values": [
+            "TANGÍVEIS...12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7. ATIVOS",
+          "values": [
+            "INTANGÍVEIS...13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8. ESTADO E OUTROS ENTES",
+          "values": [
+            "PÚBLICOS...14"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "9. CLIENTES...16",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "10. OUTROS CRÉDITOS A",
+          "values": [
+            "RECEBER...17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11. CAPITAL",
+          "values": [
+            "PRÓPRIO...17"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "12. FORNECEDORES...18",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "13. OUTRAS DÍVIDAS A",
+          "values": [
+            "PAGAR...19"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "14. FINANCIAMENTOS",
+          "values": [
+            "OBTIDOS...20"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "15. RÉDITO...20",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "15.1 VENDAS E PRESTAÇÕES DE",
+          "values": [
+            "SERVIÇOS...20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "15.2 OUTROS RENDIMENTOS E",
+          "values": [
+            "GANHOS...21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "16. SUBSÍDIOS À",
+          "values": [
+            "EXPLORAÇÃO...21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "17. FORNECIMENTOS E SERVIÇOS",
+          "values": [
+            "EXTERNOS...22"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "18. GASTOS COM O",
+          "values": [
+            "PESSOAL...23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "19. OUTROS GASTOS E",
+          "values": [
+            "PERDAS...24"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "20. PROVISÕES...24",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "21. INFORMAÇÕES EXIGIDAS POR DIPLOMAS",
+          "values": [
+            "LEGAIS...24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "22. ACONTECIMENTOS APÓS A DATA DO",
+          "values": [
+            "BALANÇO...24"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# Balanço",
+      "columns": [
+        "Rubricas",
+        "Notas",
+        "Datas",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "30-jun-24",
+            "30-jun-23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATIVO",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ativo não corrente",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ativos intangíveis",
+          "values": [
+            "7",
+            "-",
+            "81.250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ativos por impostos diferidos",
+          "values": [
+            "8.3",
+            "538.746",
+            "376.649"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "538.746",
+            "457.899"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ativo corrente",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes",
+          "values": [
+            "9",
+            "239.017",
+            "430.199"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estado e outros entes públicos",
+          "values": [
+            "8",
+            "3.369",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros créditos a receber",
+          "values": [
+            "10",
+            "534.802",
+            "204.831"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa e depósitos bancários",
+          "values": [
+            "4",
+            "15.675",
+            "21.946"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "792.862",
+            "656.976"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo",
+          "values": [
+            "",
+            "1.331.608",
+            "1.114.875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAPITAL PRÓPRIO E PASSIVO",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Capital Próprio",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital subscrito",
+          "values": [
+            "DACP",
+            "1.000.000",
+            "1.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reservas legais",
+          "values": [
+            "DACP",
+            "16.837",
+            "16.837"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultados transitados",
+          "values": [
+            "DACP",
+            "(2.187.887)",
+            "(1.769.358)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado líquido do período",
+          "values": [
+            "",
+            "(972.572)",
+            "(418.529)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do capital próprio",
+          "values": [
+            "",
+            "(2.143.622)",
+            "(1.171.050)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PASSIVO",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Passivo não corrente",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiamentos obtidos",
+          "values": [
+            "14",
+            "462.593",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "12",
+            "191.500",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras dívidas a pagar",
+          "values": [
+            "13",
+            "260.166",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "914.259",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo corrente",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "12",
+            "783.087",
+            "728.879"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões",
+          "values": [
+            "22",
+            "422.414",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estado e outros entes públicos",
+          "values": [
+            "8",
+            "601.114",
+            "360.366"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiamentos obtidos",
+          "values": [
+            "14",
+            "276.081",
+            "565.522"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras dívidas a pagar",
+          "values": [
+            "13",
+            "478.275",
+            "611.158"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferimentos",
+          "values": [
+            "",
+            "-",
+            "20.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "2.560.971",
+            "2.285.925"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo",
+          "values": [
+            "",
+            "3.475.231",
+            "2.285.925"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do capital próprio e do passivo",
+          "values": [
+            "",
+            "1.331.608",
+            "1.114.875"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "# Demonstração dos Resultados",
+      "columns": [
+        "Rendimentos e Gastos",
+        "Notas",
+        "Períodos",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "30-jun-24",
+            "30-jun-23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "12 meses",
+            "12 meses"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vendas e serviços prestados",
+          "values": [
+            "15.1",
+            "842.638",
+            "710.725"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subsídios à exploração",
+          "values": [
+            "16",
+            "880.088",
+            "878.623"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecimentos e serviços externos",
+          "values": [
+            "17",
+            "(1.229.127)",
+            "(1.016.294)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos com o pessoal",
+          "values": [
+            "18",
+            "(2.446.879)",
+            "(2.217.194)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões (aumentos/reduções)",
+          "values": [
+            "20",
+            "(422.414)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros rendimentos",
+          "values": [
+            "15.2",
+            "1.407.889",
+            "1.471.215"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros gastos",
+          "values": [
+            "19",
+            "(81.732)",
+            "(211.986)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado antes de depreciações, gastos de financiamento e impostos",
+          "values": [
+            "",
+            "(1.049.538)",
+            "(384.912)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gastos/reversões de depreciação e de amortização",
+          "values": [
+            "6 e 7",
+            "(81.250)",
+            "(82.761)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Operacional (antes de gastos de financiamento e impostos)",
+          "values": [
+            "",
+            "(1.130.788)",
+            "(467.673)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Juros e gastos similares suportados",
+          "values": [
+            "",
+            "(3.882)",
+            "(1.911)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado antes de impostos",
+          "values": [
+            "",
+            "(1.134.669)",
+            "(469.584)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Imposto sobre rendimento do período",
+          "values": [
+            "8.1",
+            "162.097",
+            "51.055"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado líquido do período",
+          "values": [
+            "",
+            "(972.572)",
+            "(418.529)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 5,
+      "section": "# Demonstração dos Fluxos de Caixa",
+      "columns": [
+        "Rubricas",
+        "Notas",
+        "Períodos",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "30-jun-24",
+            "30-jun-23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "12 meses",
+            "12 meses"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades operacionais",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Recebimentos de clientes",
+          "values": [
+            "",
+            "1.465.934",
+            "1.414.690"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamento a fornecedores",
+          "values": [
+            "",
+            "(693.273)",
+            "(798.428)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamentos ao pessoal",
+          "values": [
+            "",
+            "(2.038.855)",
+            "(1.797.848)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa gerada pelas operações",
+          "values": [
+            "",
+            "(1.266.194)",
+            "(1.181.586)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamentos/recebimento do imposto sobre o rendimento",
+          "values": [
+            "",
+            "(0)",
+            "5.208"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros recebimentos/pagamentos",
+          "values": [
+            "",
+            "1.099.150",
+            "1.007.191"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades operacionais ( 1 )",
+          "values": [
+            "",
+            "(167.044)",
+            "(169.187)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades de investimento",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades de investimento ( 2 )",
+          "values": [
+            "",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades de financiamento",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Recebimentos provenientes de:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiamentos obtidos",
+          "values": [
+            "",
+            "72",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras operações de financiamento",
+          "values": [
+            "",
+            "369.069",
+            "365.060"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamentos respeitantes a:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiamentos obtidos",
+          "values": [
+            "",
+            "(63.794)",
+            "(28.142)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juros e custos similares",
+          "values": [
+            "",
+            "(13.265)",
+            "(1.911)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras operações de financiamento",
+          "values": [
+            "",
+            "(131.310)",
+            "(154.696)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades de financiamento ( 3 )",
+          "values": [
+            "",
+            "160.773",
+            "180.312"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variação da caixa e seus equivalentes ( 1 + 2 + 3 )",
+          "values": [
+            "",
+            "(6.271)",
+            "11.125"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa e seus equivalentes no início do período",
+          "values": [
+            "",
+            "21.946",
+            "10.821"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa e seus equivalentes no fim do período",
+          "values": [
+            "",
+            "15.675",
+            "21.946"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "# Demonstração das Alterações dos Capitais Próprios",
+      "columns": [
+        "Descrição",
+        "Notas",
+        "Capital subscrito",
+        "Reservas legais",
+        "Resultados transitados",
+        "Resultado líquido do Período",
+        "Total do Capital Próprio"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Posição no início do período: 01.07.2022",
+          "values": [
+            "1",
+            "1.000.000",
+            "16.837",
+            "(1.315.153)",
+            "(439.297)",
+            "(737.613)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alterações no período",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras alterações reconhecidas no capital próprio:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicação dos resultados do período anterior",
+          "values": [
+            "",
+            "-",
+            "-",
+            "(439.297)",
+            "439.297",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras alterações",
+          "values": [
+            "",
+            "-",
+            "-",
+            "(14.908)",
+            "-",
+            "(14.908)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2",
+            "-",
+            "-",
+            "(454.205)",
+            "439.297",
+            "(14.908)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado líquido do período",
+          "values": [
+            "3",
+            "",
+            "",
+            "",
+            "(418.529)",
+            "(418.529)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado integral",
+          "values": [
+            "4=2+3",
+            "",
+            "",
+            "",
+            "20.768",
+            "(418.529)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operações com detentores de capital no período",
+          "values": [
+            "5",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Posição no fim do período: 30.06.2023",
+          "values": [
+            "6=1+2+3+5",
+            "1.000.000",
+            "16.837",
+            "(1.769.358)",
+            "(418.529)",
+            "(1.171.050)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 6,
+      "section": null,
+      "columns": [
+        "Descrição",
+        "Notas",
+        "Capital subscrito",
+        "Reservas legais",
+        "Resultados transitados",
+        "Resultado líquido do Período",
+        "Total do Capital Próprio"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Posição no início do período: 01.07.2023",
+          "values": [
+            "6",
+            "1.000.000",
+            "16.837",
+            "(1.769.358)",
+            "(418.529)",
+            "(1.171.050)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alterações no período",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras alterações reconhecidas no capital próprio:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicação dos resultados do período anterior",
+          "values": [
+            "7",
+            "-",
+            "-",
+            "(418.529)",
+            "418.529",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "8",
+            "-",
+            "-",
+            "(418.529)",
+            "418.529",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado líquido do período",
+          "values": [
+            "9=7+8",
+            "",
+            "",
+            "",
+            "(972.572)",
+            "(972.572)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado integral",
+          "values": [
+            "10",
+            "",
+            "",
+            "",
+            "(554.043)",
+            "(972.572)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operações com detentores de capital no período",
+          "values": [
+            "1=6+7+8+10",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Posição no fim do período: 31.12.2023",
+          "values": [
+            "",
+            "1.000.000",
+            "16.837",
+            "(2.187.887)",
+            "(972.572)",
+            "(2.143.622)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 9,
+      "section": "# 3.2. Ativos fixos tangíveis",
+      "columns": [
+        "Edifícios e outras construções",
+        "10-50"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Equipamento básico",
+          "values": [
+            "7-8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamento de transporte",
+          "values": [
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ferramentas e utensílios",
+          "values": [
+            "3-8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamento administrativo",
+          "values": [
+            "3-8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros ativos fixos tangíveis",
+          "values": [
+            "1 - 4"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 11,
+      "section": "# 3.6. Fornecedores e outras contas a pagar / # 3.7. Subsídios / # 4. Fluxos de Caixa",
+      "columns": [
+        "Descrição",
+        "30-jun-24",
+        "30-jun-23"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caixa",
+          "values": [
+            "1.380",
+            "8.556"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos à ordem",
+          "values": [
+            "13.453",
+            "12.413"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos a prazo",
+          "values": [
+            "841",
+            "841"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "-",
+            "136"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa e depósitos bancários",
+          "values": [
+            "15.675",
+            "21.946"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "# 5.2 Saldos entre partes relacionadas",
+      "columns": [
+        "Saldos",
+        "30-jun-24",
+        "30-jun-23"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ativo Corrente",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros créditos a receber",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clube Desportivo Nacional, Sgps",
+          "values": [
+            "1.684",
+            "1.184"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nacional Store",
+          "values": [
+            "86.480",
+            "75.186"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "88.164",
+            "76.371"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo corrente",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiamentos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clube Desportivo Nacional",
+          "values": [
+            "0",
+            "213.464"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eng.º Rui Alves",
+          "values": [
+            "199.900",
+            "196.900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "199.900,00",
+            "410.364"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo não corrente",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiamentos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clube Desportivo Nacional",
+          "values": [
+            "447.338",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "447.338",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "# 5.3 Transações entre partes relacionadas",
+      "columns": [
+        "Transações",
+        "30-jun-24",
+        "30-jun-23"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Fornecimentos e serviços externos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clube Desportivo Nacional",
+          "values": [
+            "120.000",
+            "120.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "120.000",
+            "120.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "Clube Desportivo Nacional, SAD / Demonstrações Financeiras | Época Desportiva 2023/2024",
+      "columns": [
+        "Ativo bruto",
+        "Terrenos",
+        "Infinções e D. Constr.",
+        "Equin. básico",
+        "Equin. transporte",
+        "Equin. diministra.",
+        "Outros A.F.T.",
+        "A.F.T. em curso",
+        "Total A.F.T."
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo inicial a 01-07-2022",
+          "values": [
+            "-",
+            "-",
+            "1.060",
+            "-",
+            "13.914",
+            "814",
+            "-",
+            "15.789"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo inicial a 01-07-2023",
+          "values": [
+            "-",
+            "-",
+            "1.060",
+            "-",
+            "13.914",
+            "814",
+            "-",
+            "15.789"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo final a 30-06-2024",
+          "values": [
+            "-",
+            "-",
+            "1.060",
+            "-",
+            "13.914",
+            "814",
+            "-",
+            "15.789"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciações e F.I. Acumuladas",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo inicial a 01-07-2022",
+          "values": [
+            "-",
+            "-",
+            "1.060",
+            "-",
+            "13.218",
+            "-",
+            "-",
+            "14.278"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciações do período",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "697",
+            "814",
+            "-",
+            "1.511"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo inicial a 01-07-2023",
+          "values": [
+            "-",
+            "-",
+            "1.060",
+            "-",
+            "13.914",
+            "814",
+            "-",
+            "15.789"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo final a 30-06-2024",
+          "values": [
+            "-",
+            "-",
+            "1.060",
+            "-",
+            "13.914",
+            "814",
+            "-",
+            "15.789"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valor líquido",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A 30-06-2023",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A 30-06-2024",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "# 7. Ativos intangíveis",
+      "columns": [
+        "Ativo bruto",
+        "Jogadores",
+        "Total At"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo inicial a 01-07-2022",
+          "values": [
+            "475.000",
+            "475.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alienações",
+          "values": [
+            "(150.000)",
+            "(150.000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo inicial a 01-07-2023",
+          "values": [
+            "325.000",
+            "325.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferências e/ou saídas",
+          "values": [
+            "(325.000)",
+            "(325.000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo final a 30-06-2024",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizações e perdas por imparidades acumuladas",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo inicial a 01-07-2022",
+          "values": [
+            "312.500",
+            "312.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizações e perdas de imparid. do período",
+          "values": [
+            "81.250",
+            "81.250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alienações e abates",
+          "values": [
+            "(150.000)",
+            "(150.000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo inicial a 01-07-2023",
+          "values": [
+            "243.750",
+            "243.750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizações e perdas de imparid. do período",
+          "values": [
+            "81.250",
+            "81.250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alienações e abates",
+          "values": [
+            "(325.000)",
+            "(325.000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo final a 30-06-2024",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "Clube Desportivo Nacional, SAD / Demonstrações Financeiras | Época Desportiva 2023/2024",
+      "columns": [
+        "Julgadores",
+        "Valor de Aq.",
+        "Amort Exercício",
+        "Amort Acumulados",
+        "Valor Líquido",
+        "Prêmio e/ IVA",
+        "Valor já pago",
+        "Valor em dívida 30-jun-2024",
+        "Clube detentor"
+      ],
+      "rows": [
+        {
+          "rawLabel": "VLADAN DANILOVIC",
+          "values": [
+            "325.000",
+            "(81.250)",
+            "(325.000)",
+            "-",
+            "325.000",
+            "325.000",
+            "-",
+            "F. Club Borac Banja Luka"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "325.000",
+            "(81.250)",
+            "(325.000)",
+            "-",
+            "325.000",
+            "325.000",
+            "-",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "## 8. Estado e outros entes públicos",
+      "columns": [
+        "Saldos devedores",
+        "30-jun-24",
+        "30-jun-23"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Imposto sobre o rendimento",
+          "values": [
+            "3.369",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Saldos devedores de Estado e Outros Entes Públicos",
+          "values": [
+            "3.369",
+            "-"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": null,
+      "columns": [
+        "Saldos credores",
+        "30-jun-24",
+        "30-jun-23"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Imposto sobre o rendimento",
+          "values": [
+            "-",
+            "2.443"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retenção de impostos sobre rendimentos",
+          "values": [
+            "394.251",
+            "288.761"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imposto sobre o valor acrescentado (IVA)",
+          "values": [
+            "74.205",
+            "10.707"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuições para a Segurança Social",
+          "values": [
+            "132.658",
+            "58.455"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Saldos credores de Estado e Outros Entes Públicos",
+          "values": [
+            "601.114",
+            "360.366"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "### 8.1 Imposto sobre o rendimento",
+      "columns": [
+        "Imposto sobre o rendimento",
+        "30-jun-24",
+        "30-jun-23"
+      ],
+      "rows": [
+        {
+          "rawLabel": "*Imposto diferido*",
+          "values": [
+            "(162.097)",
+            "(51.055)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Imposto corrente*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Coleta",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imposto do período",
+          "values": [
+            "(162.097)",
+            "(51.055)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "# 8.2 Reconciliação efetiva do imposto",
+      "columns": [
+        "Descrição",
+        "30-jun-24 12 meses",
+        "",
+        "30-jun-23 12 meses",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Base",
+            "Imposto",
+            "Base",
+            "Imposto"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Antes de Imposto (RAI)",
+          "values": [
+            "(1.134.669)",
+            "",
+            "(469.584)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxa de 11,9% < 25.000 € / 14,7% restante",
+          "values": [
+            "-",
+            "-",
+            "(469.584)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxa de 11,9% < 50.000 € / 14,7% restante",
+          "values": [
+            "(1.134.669)",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do imposto",
+          "values": [
+            "(1.134.669)",
+            "-",
+            "(469.584)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxa de imposto média",
+          "values": [
+            "",
+            "0,00%",
+            "",
+            "0,00%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferenças permanentes:",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Correções períodos anteriores",
+          "values": [
+            "16.971",
+            "-",
+            "70",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas e coimas",
+          "values": [
+            "11.558",
+            "-",
+            "9.835",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Excesso/Insuficiência de estimativa",
+          "values": [
+            "(604)",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "4.043",
+            "-",
+            "112.367",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Diferenças permanentes",
+          "values": [
+            "31.967",
+            "-",
+            "122.272",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Matéria coletavel/(Reporte de prejuízos)",
+          "values": [
+            "(1.102.702)",
+            "-",
+            "(347.311)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gasto com impostos sobre o rendimento",
+          "values": [
+            "",
+            "-",
+            "",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxa média efetiva de imposto",
+          "values": [
+            "",
+            "0,00%",
+            "",
+            "0,00%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "# 8.3 Imposto diferido",
+      "columns": [
+        "Ano de Prejuízo Fiscal",
+        "Ano Limite para Dedução",
+        "Valor do Prejuízo",
+        "Valor PF's Deduzidos",
+        "",
+        "Reporte",
+        "Imposto diferido (IRC=14,7)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "Anos Ant.",
+            "Ano",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2019",
+          "values": [
+            "n.a.",
+            "1.731.088",
+            "31.359",
+            "-",
+            "1.699.729",
+            "249.860"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2021",
+          "values": [
+            "n.a.",
+            "515.196",
+            "-",
+            "-",
+            "515.196",
+            "75.734"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2022",
+          "values": [
+            "n.a.",
+            "347.311",
+            "-",
+            "-",
+            "347.311",
+            "51.055"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2023",
+          "values": [
+            "n.a.",
+            "1.102.702",
+            "-",
+            "-",
+            "1.102.702",
+            "162.097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "3.696.298",
+            "31.359",
+            "-",
+            "3.664.939",
+            "538.746"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "# 9. Clientes",
+      "columns": [
+        "Clientes",
+        "30-jun-24",
+        "30-jun-23"
+      ],
+      "rows": [
+        {
+          "rawLabel": "*Clientes conta corrente*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes - mercado regional",
+          "values": [
+            "10.779",
+            "21.074"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes - mercado nacional",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Federação Portuguesa de Futebol",
+          "values": [
+            "22.722",
+            "192.192"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Liga Portuguesa Futebol Profissional",
+          "values": [
+            "-",
+            "26.337"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Portimonense Futebol, SAD",
+          "values": [
+            "14.563",
+            "14.563"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Futebol Clube do Porto, Futebol SAD",
+          "values": [
+            "18.850",
+            "18.850"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sport TV Portugal, S.A.",
+          "values": [
+            "61.500",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Solverde-Soc. Invest. Turísticos Costa Verde S.A.",
+          "values": [
+            "73.800",
+            "24.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Football Club \"Metalist\" Limited Liability Company",
+          "values": [
+            "-",
+            "100.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "25.826",
+            "16.533"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Total Clientes - mercado nacional*",
+          "values": [
+            "217.261",
+            "393.074"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes - mercado intracomunitário",
+          "values": [
+            "10.977",
+            "16.052"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Sub-total*",
+          "values": [
+            "239.017",
+            "430.199"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "239.017",
+            "430.199"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes",
+          "values": [
+            "30-jun-24",
+            "30-jun-23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Clientes de cobrança duvidosa*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes - mercado nacional",
+          "values": [
+            "47.694",
+            "47.694"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes - mercado externo",
+          "values": [
+            "2.592.500",
+            "2.592.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2.640.194",
+            "2.640.194"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Imparidade de clientes*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo inicial",
+          "values": [
+            "2.640.194",
+            "2.640.194"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reforço",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reversão",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Saldo final*",
+          "values": [
+            "2.640.194",
+            "2.640.194"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Clientes",
+          "values": [
+            "239.017",
+            "430.199"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "# 10. Outros créditos a receber",
+      "columns": [
+        "Outros créditos a receber",
+        "30-jun-24",
+        "",
+        "",
+        "30-jun-23",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Corrente",
+            "Não Corrente",
+            "Total",
+            "Corrente",
+            "Não Corrente",
+            "Total"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dev. por acréscimo de rendimentos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Apolo DRID - por faturar",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "72.917",
+            "-",
+            "72.917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "UEFA 2023/2024",
+          "values": [
+            "219.033",
+            "-",
+            "219.033",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Apostas Placard / Online",
+          "values": [
+            "148.292",
+            "-",
+            "148.292",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores c/c",
+          "values": [
+            "14.872",
+            "-",
+            "14.872",
+            "1.998",
+            "-",
+            "1.998"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pessoal",
+          "values": [
+            "6.037",
+            "-",
+            "6.037",
+            "5.049",
+            "-",
+            "5.049"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros devedores",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nacional Store",
+          "values": [
+            "86.480",
+            "-",
+            "86.480",
+            "75.186",
+            "-",
+            "75.186"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Credores - LIGA",
+          "values": [
+            "16.281",
+            "-",
+            "16.281",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Processo MC",
+          "values": [
+            "28.645",
+            "-",
+            "28.645",
+            "28.645",
+            "-",
+            "28.645"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros devedores",
+          "values": [
+            "15.161",
+            "-",
+            "15.161",
+            "21.037",
+            "-",
+            "21.037"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total outros créditos a receber",
+          "values": [
+            "534.802",
+            "-",
+            "534.802",
+            "204.831",
+            "-",
+            "204.831"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "## 12. Fornecedores",
+      "columns": [
+        "",
+        "30-jun-24 Não",
+        "",
+        "",
+        "30-jun-23 Não",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Corrente",
+            "Corrente",
+            "Total",
+            "Corrente",
+            "Corrente",
+            "Total"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fornecedores gerais",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fornecedores Mercado Regional",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gustavo & Andreia 2",
+          "values": [
+            "201.738",
+            "-",
+            "201.738",
+            "154.409",
+            "-",
+            "154.409"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Solidago - Indústria & Serviços, Lda.",
+          "values": [
+            "7.346",
+            "-",
+            "7.346",
+            "6.754",
+            "-",
+            "6.754"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Polícia de Segurança Pública",
+          "values": [
+            "6.705",
+            "-",
+            "6.705",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Previsão Dinâmica, Lda.",
+          "values": [
+            "13.137",
+            "-",
+            "13.137",
+            "10.933",
+            "-",
+            "10.933"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Beyond the Sports, Unipessoal, Lda.",
+          "values": [
+            "17.080",
+            "-",
+            "17.080",
+            "17.080",
+            "-",
+            "17.080"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros (Valor < 5.000 euros)",
+          "values": [
+            "33.295",
+            "-",
+            "33.295",
+            "22.826",
+            "-",
+            "22.826"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores Mercado Nacional",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Futebol Clube de Arouca - Futebol SDUC",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "100.000",
+            "-",
+            "100.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ProEleven, Gestão Desportiva, Lda.",
+          "values": [
+            "28.365",
+            "-",
+            "28.365",
+            "18.605",
+            "-",
+            "18.605"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "UNA Seguros S.A.",
+          "values": [
+            "115.709",
+            "-",
+            "115.709",
+            "86.980",
+            "-",
+            "86.980"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Desporto Seguro",
+          "values": [
+            "7.322",
+            "-",
+            "7.322",
+            "7.322",
+            "-",
+            "7.322"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Velosa, Silva e Marques-Soc. Revisores C",
+          "values": [
+            "13.941",
+            "-",
+            "13.941",
+            "18.589",
+            "-",
+            "18.589"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indutora Energia - Unip. Lda",
+          "values": [
+            "6.610",
+            "-",
+            "6.610",
+            "13.728",
+            "-",
+            "13.728"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Smartmove",
+          "values": [
+            "20.034",
+            "-",
+            "20.034",
+            "11.103",
+            "-",
+            "11.103"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Powershield - Segurança Privada, S.A.",
+          "values": [
+            "25.477",
+            "-",
+            "25.477",
+            "13.850",
+            "-",
+            "13.850"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Barbot - Industria de Tintas, S.A.",
+          "values": [
+            "183",
+            "-",
+            "183",
+            "5.874",
+            "-",
+            "5.874"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Footinvest",
+          "values": [
+            "9.225",
+            "-",
+            "9.225",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sana Metropolitan Hotel",
+          "values": [
+            "8.809",
+            "-",
+            "8.809",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "J. Espírito Santo & Irmãos, Lda.",
+          "values": [
+            "28.000",
+            "-",
+            "28.000",
+            "1.600",
+            "-",
+            "1.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hotel Urgeiriça",
+          "values": [
+            "5.760",
+            "-",
+            "5.760",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hospital da Luz",
+          "values": [
+            "5.753",
+            "-",
+            "5.753",
+            "5.753",
+            "-",
+            "5.753"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros (Valor < 5.000 euros)",
+          "values": [
+            "51.906",
+            "-",
+            "51.906",
+            "32.351",
+            "-",
+            "32.351"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores Mercado Intracomunitário",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DOYEN SPORTS INVESTMENTS LIMITED",
+          "values": [
+            "-",
+            "145.000",
+            "145.000",
+            "145.000",
+            "-",
+            "145.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Footinvest Poland by Gaspar da Silva Fr",
+          "values": [
+            "-",
+            "6.500",
+            "6.500",
+            "6.500",
+            "-",
+            "6.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Huexpo Trade Kft",
+          "values": [
+            "-",
+            "20.000",
+            "20.000",
+            "20.000",
+            "-",
+            "20.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comacini Serviços Administrativos Ltda",
+          "values": [
+            "-",
+            "20.000",
+            "20.000",
+            "20.000",
+            "-",
+            "20.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TFM Agency Marketing Esportivo Ltda.",
+          "values": [
+            "10.998",
+            "-",
+            "10.998",
+            "1.498",
+            "-",
+            "1.498"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EZ Sports, S.A.P.I. de C.V.-Club Atletico M",
+          "values": [
+            "20.000",
+            "-",
+            "20.000",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros (Valor < 5.000 euros)",
+          "values": [
+            "4.570",
+            "-",
+            "4.570",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atlanta United Football Club, LLC",
+          "values": [
+            "133.000",
+            "-",
+            "133.000",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub-total",
+          "values": [
+            "774.962",
+            "191.500",
+            "966.462",
+            "720.754",
+            "-",
+            "720.754"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Outras Dívidas a sociedades desportivas resultantes da transferências de atletas",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Football Club Borac Banja Luka",
+          "values": [
+            "8.125",
+            "-",
+            "8.125",
+            "8.125",
+            "-",
+            "8.125"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub-total",
+          "values": [
+            "8.125",
+            "-",
+            "8.125",
+            "8.125",
+            "-",
+            "8.125"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total de Fornecedores",
+          "values": [
+            "783.087",
+            "191.500",
+            "974.587",
+            "728.879",
+            "-",
+            "728.879"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "### 13. Outras dívidas a pagar",
+      "columns": [
+        "",
+        "30-jun-24",
+        "",
+        "",
+        "30-jun-23",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Corrente",
+            "Não Corrente",
+            "Total",
+            "Corrente",
+            "Não Corrente",
+            "Total"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras dívidas a pagar",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Credores por acréscimos de gastos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "O. Acres. Gastos - Transf. Joagdores",
+          "values": [
+            "90.440",
+            "-",
+            "90.440",
+            "90.440",
+            "-",
+            "90.440"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros credores por acréscimos de gastos",
+          "values": [
+            "70.000",
+            "-",
+            "70.000",
+            "20.000",
+            "-",
+            "20.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remunerações a liquidar-anual",
+          "values": [
+            "79.189",
+            "-",
+            "79.189",
+            "79.189",
+            "-",
+            "79.189"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pessoal",
+          "values": [
+            "152.883",
+            "-",
+            "152.883",
+            "77.025",
+            "-",
+            "77.025"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Clientes C/C",
+          "values": [
+            "254",
+            "-",
+            "254",
+            "5.494",
+            "-",
+            "5.494"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fornecedores de investimento",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Unick Football e Consultoria e MKT Esport.",
+          "values": [
+            "-",
+            "238.500",
+            "238.500",
+            "238.500",
+            "-",
+            "238.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Soccer Promaster - Gestão de Carreiras De",
+          "values": [
+            "-",
+            "15.000",
+            "15.000",
+            "15.000",
+            "-",
+            "15.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Liga Desportiva Muçulmana de Maputo",
+          "values": [
+            "-",
+            "6.666",
+            "6.666",
+            "6.666",
+            "-",
+            "6.666"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros credores",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "LIGA - OUTROS",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "20.938",
+            "-",
+            "20.938"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clube Desportivo Nacional",
+          "values": [
+            "33.293",
+            "-",
+            "33.293",
+            "42.751",
+            "-",
+            "42.751"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros credores",
+          "values": [
+            "52.217",
+            "-",
+            "52.217",
+            "15.155",
+            "-",
+            "15.155"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total outras dívidas a pagar",
+          "values": [
+            "478.275",
+            "260.166",
+            "738.441",
+            "611.158",
+            "-",
+            "611.158"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "columns": [
+        "",
+        "30-jun-24 Não",
+        "",
+        "",
+        "30-jun-23 Não",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Corrente",
+            "Corrente",
+            "Total",
+            "Corrente",
+            "Corrente",
+            "Total"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos bancários",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caixa de Crédito Agrícola",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "InvesteRAM Covid I",
+          "values": [
+            "25.817",
+            "15.255",
+            "41.072",
+            "65.715",
+            "-",
+            "65.715"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Empréstimos Bancários",
+          "values": [
+            "25.817",
+            "15.255",
+            "41.072",
+            "65.715",
+            "-",
+            "65.715"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Participantes de capital",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Clube Desportivo Nacional",
+          "values": [
+            "-",
+            "447.338",
+            "447.338",
+            "213.464",
+            "-",
+            "213.464"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eng.º Rui Alves",
+          "values": [
+            "199.900",
+            "-",
+            "199.900",
+            "196.900",
+            "-",
+            "196.900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Instituidores",
+          "values": [
+            "199.900",
+            "447.338",
+            "647.238",
+            "410.364",
+            "-",
+            "410.364"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Descobertos bancários",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Depósitos à Ordem",
+          "values": [
+            "50.365",
+            "-",
+            "50.365",
+            "89.443",
+            "-",
+            "89.443"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total descobertos bancários",
+          "values": [
+            "50.365",
+            "-",
+            "50.365",
+            "89.443",
+            "-",
+            "89.443"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total Financiamentos obtidos",
+          "values": [
+            "276.081",
+            "462.593",
+            "738.675",
+            "565.522",
+            "-",
+            "565.522"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "# 15. Rédito / # 15.1 Vendas e Prestações de Serviços",
+      "columns": [
+        "Descrição",
+        "30-jun-24 13 meses",
+        "30-jun-23 13 meses"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Prestação de serviços",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bilhetes, Camarotes",
+          "values": [
+            "48.230",
+            "10.294"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Competições",
+          "values": [
+            "-",
+            "23.367"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidade",
+          "values": [
+            "294.408",
+            "177.064"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos Televisivos",
+          "values": [
+            "500.000",
+            "500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total das Prestações de Serviços",
+          "values": [
+            "842.638",
+            "710.725"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total das Vendas e Prestações de Serviços",
+          "values": [
+            "842.638",
+            "710.725"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": "# 15.2 Outros Rendimentos e Ganhos",
+      "columns": [
+        "Descrição",
+        "30-jun-24 12 meses",
+        "30-jun-23 12 meses"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Rendimentos suplementares",
+          "values": [
+            "11.557",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prémios",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prémios - LPFP Apostas Desportivas Placard",
+          "values": [
+            "463.426",
+            "190.942"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prémios Federação Portuguesa de Futebol",
+          "values": [
+            "422.276",
+            "512.794"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prémios - Mecanismo de Solidariedade",
+          "values": [
+            "564",
+            "803"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros rendimentos e ganhos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Correções relativas a períodos anteriores",
+          "values": [
+            "229.792",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Excesso da estimativa para impostos",
+          "values": [
+            "604",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cedências de jogadores",
+          "values": [
+            "-",
+            "9.001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venda de Jogadores",
+          "values": [
+            "-",
+            "400.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comparticipação tarifa residente",
+          "values": [
+            "242.545",
+            "217.160"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros não especificados",
+          "values": [
+            "37.125",
+            "140.515"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Outros rendimentos",
+          "values": [
+            "1.407.889",
+            "1.471.215"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 21,
+      "section": "# 16. Subsídios à exploração",
+      "columns": [
+        "Descrição",
+        "Data de início",
+        "Data de fim",
+        "Valor atribuído",
+        "Balanço Ativo",
+        "",
+        "DR Imput. Subs. Expl.",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "30-jun-24",
+            "30-jun-23",
+            "30-jun-24 12 meses",
+            "30-jun-23 12 meses"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subsídios à exploração",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Subsídios de Estado e outros entes Públicos",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DRJD",
+          "values": [
+            "01-jul-23",
+            "30-jun-24",
+            "875.000",
+            "-",
+            "-",
+            "875.000",
+            "875.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INST. SEG. SOCIAL",
+          "values": [
+            "01-jul-22",
+            "30-jun-23",
+            "-",
+            "-",
+            "-",
+            "-",
+            "1.898"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INST. EMPREGO",
+          "values": [
+            "01-jul-23",
+            "30-jun-24",
+            "5.088",
+            "-",
+            "-",
+            "5.088",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subsídios de outras entidades",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FPF - TAÇA PORTUGAL",
+          "values": [
+            "01-jul-22",
+            "30-jun-23",
+            "-",
+            "-",
+            "-",
+            "-",
+            "1.725"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Subsídios à exploração",
+          "values": [
+            "",
+            "",
+            "880.088",
+            "-",
+            "-",
+            "880.088",
+            "878.623"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "# 17. Fornecimentos e serviços externos",
+      "columns": [
+        "Descrição",
+        "30-jun-24 12 meses",
+        "30-jun-23 12 meses"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Serviços especializados",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Trabalhos especializados",
+          "values": [
+            "227.684",
+            "117.007"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vigilância e segurança",
+          "values": [
+            "65.305",
+            "43.684"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorários",
+          "values": [
+            "69.683",
+            "96.308"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Conservação e reparação",
+          "values": [
+            "32.889",
+            "46.667"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços bancários",
+          "values": [
+            "11.574",
+            "3.283"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "66.048",
+            "57.165"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiais",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "80.835",
+            "67.909"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Energia e fluidos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "344",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deslocações, estadas e transportes",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deslocações e estadas",
+          "values": [
+            "504.483",
+            "413.991"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "7.584",
+            "10.140"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços diversos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Rendas e alugueres",
+          "values": [
+            "120.000",
+            "120.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comunicação",
+          "values": [
+            "10.002",
+            "13.492"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contencioso e notariado",
+          "values": [
+            "15.487",
+            "13.891"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Limpeza, higiene e conforto",
+          "values": [
+            "5.309",
+            "5.279"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros serviços",
+          "values": [
+            "11.900",
+            "7.477"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total dos Fornecimentos e Serviços Externos",
+          "values": [
+            "1.229.127",
+            "1.016.294"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "# 18. Gastos com o pessoal",
+      "columns": [
+        "Descrição",
+        "30-jun-24 12 meses",
+        "30-jun-23 12 meses"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Remunerações órgãos sociais",
+          "values": [
+            "121.200",
+            "129.908"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remunerações do pessoal",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remunerações do Pessoal - Funcionários",
+          "values": [
+            "309.052",
+            "293.472"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remunerações do Pessoal - Jogadores",
+          "values": [
+            "1.474.667",
+            "1.266.420"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remunerações do Pessoal - Treinadores",
+          "values": [
+            "209.890",
+            "195.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indemnização para despedimento",
+          "values": [
+            "-",
+            "6.496"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Encargos s/ remunerações",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Enc. s/rem.-orgãos sociais",
+          "values": [
+            "28.785",
+            "30.853"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Enc. s/rem.-pessoal - Funcionários",
+          "values": [
+            "58.185",
+            "61.619"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Enc. s/rem.-pessoal - Treinadores",
+          "values": [
+            "39.516",
+            "41.048"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Enc. s/rem.-pessoal - Jogadores",
+          "values": [
+            "41.713",
+            "43.833"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguro Acidentes de trabalho",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seg.ac.trb - pessoal",
+          "values": [
+            "180",
+            "2.573"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seg.ac.trb - Jogadores",
+          "values": [
+            "125.546",
+            "137.649"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Custos com Pessoal - Jogadores",
+          "values": [
+            "35.510",
+            "4.265"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Custos com Pessoal - Outros",
+          "values": [
+            "1.117",
+            "3.558"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Custos com Pessoal - Outros",
+          "values": [
+            "1.518",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de Gastos com pessoal",
+          "values": [
+            "2.446.879",
+            "2.217.194"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 24,
+      "section": "# 19. Outros gastos e perdas",
+      "columns": [
+        "Descrição",
+        "30-jun-24 12 meses",
+        "30-jun-23 12 meses"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Encargos com descontos de letras",
+          "values": [
+            "10.810",
+            "4.774"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos em investimentos não financeiros",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Correções relativas a períodos anteriores",
+          "values": [
+            "16.971",
+            "70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Quotizações",
+          "values": [
+            "2.262",
+            "1.347"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferências de jogadores",
+          "values": [
+            "10.500",
+            "3.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custas, tribunal, etc",
+          "values": [
+            "12.307",
+            "59.689"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros não especificados",
+          "values": [
+            "28.882",
+            "143.106"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total dos Outros Gastos",
+          "values": [
+            "81.732",
+            "211.986"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 24,
+      "section": "# 20. Provisões",
+      "columns": [
+        "Provisões",
+        "Saldo 8/07/2022",
+        "Constit. /Reforço",
+        "Reversão/ Utilização",
+        "Utilização /Write off",
+        "Saldo 30/06/23",
+        "Constit. /Reforço",
+        "Reversão/ Utilização",
+        "Utilização /Write off",
+        "Saldo 30/06/24"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Processos judiciais em curso",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "422.414",
+            "-",
+            "-",
+            "422.414"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Provisões",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "422.414",
+            "-",
+            "-",
+            "422.414"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 3,
+      "section": "# Balanço",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do ativo",
+      "skipped": true,
+      "reason": "1 de 8 valor(es) del segmento no parecen números (ej. \"30-jun-24\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "# Balanço",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do ativo",
+      "skipped": true,
+      "reason": "1 de 8 valor(es) del segmento no parecen números (ej. \"30-jun-23\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "# Balanço",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do capital próprio",
+      "target": "(2.143.622)",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# Balanço",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do capital próprio",
+      "target": "(1.171.050)",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# Balanço",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do passivo",
+      "target": "3.475.231",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "3475229"
+    },
+    {
+      "page": 3,
+      "section": "# Balanço",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do passivo",
+      "target": "2.285.925",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "2285925"
+    },
+    {
+      "page": 3,
+      "section": "# Balanço",
+      "likelyRelevant": false,
+      "totalLabel": "Total do capital próprio e do passivo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 14,
+      "section": "Clube Desportivo Nacional, SAD / Demonstrações Financeiras | Época Desportiva 2023/2024",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "325.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": "Clube Desportivo Nacional, SAD / Demonstrações Financeiras | Época Desportiva 2023/2024",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "(81.250)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": "Clube Desportivo Nacional, SAD / Demonstrações Financeiras | Época Desportiva 2023/2024",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total",
+      "target": "(325.000)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": "Clube Desportivo Nacional, SAD / Demonstrações Financeiras | Época Desportiva 2023/2024",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total",
+      "target": "325.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": "Clube Desportivo Nacional, SAD / Demonstrações Financeiras | Época Desportiva 2023/2024",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total",
+      "target": "325.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": "## 8. Estado e outros entes públicos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Saldos devedores de Estado e Outros Entes Públicos",
+      "target": "3.369",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Saldos credores de Estado e Outros Entes Públicos",
+      "target": "601.114",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Saldos credores de Estado e Outros Entes Públicos",
+      "target": "360.366",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "# 8.2 Reconciliação efetiva do imposto",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do imposto",
+      "skipped": true,
+      "reason": "1 de 3 valor(es) del segmento no parecen números (ej. \"Base\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 15,
+      "section": "# 8.2 Reconciliação efetiva do imposto",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do imposto",
+      "skipped": true,
+      "reason": "1 de 3 valor(es) del segmento no parecen números (ej. \"Base\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 15,
+      "section": "# 8.2 Reconciliação efetiva do imposto",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Diferenças permanentes",
+      "target": "31.967",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    },
+    {
+      "page": 15,
+      "section": "# 8.2 Reconciliação efetiva do imposto",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Diferenças permanentes",
+      "target": "122.272",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# 9. Clientes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Clientes",
+      "skipped": true,
+      "reason": "1 de 17 valor(es) del segmento no parecen números (ej. \"30-jun-24\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "# 9. Clientes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Clientes",
+      "skipped": true,
+      "reason": "1 de 18 valor(es) del segmento no parecen números (ej. \"30-jun-23\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 17,
+      "section": "# 10. Outros créditos a receber",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total outros créditos a receber",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"Corrente\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 17,
+      "section": "# 10. Outros créditos a receber",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total outros créditos a receber",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"Total\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 17,
+      "section": "# 10. Outros créditos a receber",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total outros créditos a receber",
+      "skipped": true,
+      "reason": "1 de 7 valor(es) del segmento no parecen números (ej. \"Corrente\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 17,
+      "section": "# 10. Outros créditos a receber",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total outros créditos a receber",
+      "skipped": true,
+      "reason": "1 de 7 valor(es) del segmento no parecen números (ej. \"Total\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 18,
+      "section": "## 12. Fornecedores",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total de Fornecedores",
+      "skipped": true,
+      "reason": "1 de 28 valor(es) del segmento no parecen números (ej. \"Corrente\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 18,
+      "section": "## 12. Fornecedores",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total de Fornecedores",
+      "skipped": true,
+      "reason": "1 de 6 valor(es) del segmento no parecen números (ej. \"Corrente\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 18,
+      "section": "## 12. Fornecedores",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total de Fornecedores",
+      "skipped": true,
+      "reason": "1 de 32 valor(es) del segmento no parecen números (ej. \"Total\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 18,
+      "section": "## 12. Fornecedores",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total de Fornecedores",
+      "skipped": true,
+      "reason": "1 de 26 valor(es) del segmento no parecen números (ej. \"Corrente\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 18,
+      "section": "## 12. Fornecedores",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total de Fornecedores",
+      "skipped": true,
+      "reason": "1 de 26 valor(es) del segmento no parecen números (ej. \"Total\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 19,
+      "section": "### 13. Outras dívidas a pagar",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total outras dívidas a pagar",
+      "skipped": true,
+      "reason": "1 de 8 valor(es) del segmento no parecen números (ej. \"Corrente\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 19,
+      "section": "### 13. Outras dívidas a pagar",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total outras dívidas a pagar",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"Não Corrente\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 19,
+      "section": "### 13. Outras dívidas a pagar",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total outras dívidas a pagar",
+      "skipped": true,
+      "reason": "1 de 11 valor(es) del segmento no parecen números (ej. \"Total\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 19,
+      "section": "### 13. Outras dívidas a pagar",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total outras dívidas a pagar",
+      "skipped": true,
+      "reason": "1 de 12 valor(es) del segmento no parecen números (ej. \"Corrente\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 19,
+      "section": "### 13. Outras dívidas a pagar",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total outras dívidas a pagar",
+      "skipped": true,
+      "reason": "1 de 12 valor(es) del segmento no parecen números (ej. \"Total\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Empréstimos Bancários",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"Corrente\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Empréstimos Bancários",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"Corrente\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Empréstimos Bancários",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"Total\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total Empréstimos Bancários",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"Corrente\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total Empréstimos Bancários",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"Total\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Instituidores",
+      "target": "199.900",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Instituidores",
+      "target": "447.338",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Instituidores",
+      "target": "647.238",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total Instituidores",
+      "target": "410.364",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total Instituidores",
+      "target": "410.364",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total descobertos bancários",
+      "target": "50.365",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total descobertos bancários",
+      "target": "50.365",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total descobertos bancários",
+      "target": "89.443",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total descobertos bancários",
+      "target": "89.443",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "# 14. Financiamentos Obtidos",
+      "likelyRelevant": false,
+      "totalLabel": "Total Financiamentos obtidos",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 20,
+      "section": "# 15. Rédito / # 15.1 Vendas e Prestações de Serviços",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total das Prestações de Serviços",
+      "target": "842.638",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "# 15. Rédito / # 15.1 Vendas e Prestações de Serviços",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total das Prestações de Serviços",
+      "target": "710.725",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "# 15. Rédito / # 15.1 Vendas e Prestações de Serviços",
+      "likelyRelevant": true,
+      "totalLabel": "Total das Vendas e Prestações de Serviços",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 21,
+      "section": "# 15.2 Outros Rendimentos e Ganhos",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Outros rendimentos",
+      "target": "1.407.889",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "# 15.2 Outros Rendimentos e Ganhos",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Outros rendimentos",
+      "target": "1.471.215",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "# 16. Subsídios à exploração",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Subsídios à exploração",
+      "target": "880.088",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "# 16. Subsídios à exploração",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total Subsídios à exploração",
+      "skipped": true,
+      "reason": "1 de 3 valor(es) del segmento no parecen números (ej. \"30-jun-24 12 meses\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 21,
+      "section": "# 16. Subsídios à exploração",
+      "likelyRelevant": false,
+      "column": 6,
+      "totalLabel": "Total Subsídios à exploração",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"30-jun-23 12 meses\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 22,
+      "section": "# 17. Fornecimentos e serviços externos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total dos Fornecimentos e Serviços Externos",
+      "target": "1.229.127",
+      "addendCount": 15,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "# 17. Fornecimentos e serviços externos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total dos Fornecimentos e Serviços Externos",
+      "target": "1.016.294",
+      "addendCount": 14,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 14 rubros enteros)"
+    },
+    {
+      "page": 23,
+      "section": "# 18. Gastos com o pessoal",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total de Gastos com pessoal",
+      "target": "2.446.879",
+      "addendCount": 13,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "# 18. Gastos com o pessoal",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total de Gastos com pessoal",
+      "target": "2.217.194",
+      "addendCount": 13,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "# 19. Outros gastos e perdas",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total dos Outros Gastos",
+      "target": "81.732",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "# 19. Outros gastos e perdas",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total dos Outros Gastos",
+      "target": "211.986",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "# 20. Provisões",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total Provisões",
+      "target": "422.414",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "# 20. Provisões",
+      "likelyRelevant": false,
+      "column": 8,
+      "totalLabel": "Total Provisões",
+      "target": "422.414",
+      "addendCount": 1,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/nacional-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"nacional\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+    "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "30 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

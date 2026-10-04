@@ -1,0 +1,1006 @@
+{
+ "md": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2013.md",
+ "generatedAt": "2026-09-30T22:48:25.862Z",
+ "rubrosHuella": "f110134f0795ba6d42b84469810028fa0940502a",
+ "rubros": [
+  {
+   "label": "Serviços Profissionais",
+   "lado": null,
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos com Pessoal",
+   "lado": "expense",
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "wages_squad",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "wages_squad",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Amador",
+   "lado": "expense",
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Amortização Atletas Profissionais Contratados",
+   "lado": "expense",
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1107
+  },
+  {
+   "label": "Gastos Gerais",
+   "lado": "expense",
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Financeiras Líquidas",
+   "lado": null,
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Profissional",
+   "lado": "expense",
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "wages_squad",
+     0.13
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Direitos de Imagem e de Arena",
+   "lado": "expense",
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "wages_squad",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.060000000000000005
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Sede",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Edificações e Benfeitorias",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "depreciation",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Móveis e utensílios",
+   "lado": "expense",
+   "page": 1,
+   "section": "##### 2.5 CONTAS A RECEBER / ##### 2.6 ALMOXARIFADO / ##### 2.7 DESPESAS ANTECIPADAS / ##### 2.8 DEMAIS ATIVOS CIRCULANTES E NÃO CIRCULANTES / ##### 2.9 IMOBILIZADO",
+   "choice": "depreciation",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipamento Processamento",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "depreciation",
+   "confidence": 0.31,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipamentos Diversos",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Pinacoteca",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Terrenos",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "depreciation",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Xerém",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Benfeitorias e Instalações",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "depreciation",
+   "confidence": 0.31,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipamento de Processamento",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "depreciation",
+   "confidence": 0.31,
+   "desdeCache": true
+  },
+  {
+   "label": "Atletas profissionais",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "player_amortisation",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Infantil",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Júnior",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Juvenil",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito uso de software",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 7 IMOBILIZADO E INTANGÍVEL",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com Bilheteria",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 20 RECEITA LÍQUIDA",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com Repasse de Direitos Federativos",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 20 RECEITA LÍQUIDA",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas de Transmissões Televisivas",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 20 RECEITA LÍQUIDA",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com Publicidade e Patrocínio",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 20 RECEITA LÍQUIDA",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com Licenciamentos e Franquias",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 20 RECEITA LÍQUIDA",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com Premiações e Loterias",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 20 RECEITA LÍQUIDA",
+   "choice": "competition_bonus",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com Esportes Amadores",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 20 RECEITA LÍQUIDA",
+   "choice": "other_sports",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com Associados",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 20 RECEITA LÍQUIDA",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com Aluguéis",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 20 RECEITA LÍQUIDA",
+   "choice": "stadium_other",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras Receitas",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 20 RECEITA LÍQUIDA",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Deduções da Receita Bruta",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 20 RECEITA LÍQUIDA",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita Líquida (Nota 20)",
+   "lado": "expense",
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Receita Líquida",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 20 RECEITA LÍQUIDA",
+   "choice": "lump_football_operations",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Globosat (2013 a 2015)",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 15 RECEITAS ANTECIPADAS",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Traficc Assessoria",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 15 RECEITAS ANTECIPADAS",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Ambev",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 15 RECEITAS ANTECIPADAS",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 15 RECEITAS ANTECIPADAS",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiação Campeonato Brasileiro",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 23 RECEITAS COM PREMIAÇÕES E LOTERIAS",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiação Campeonato Estadual",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 23 RECEITAS COM PREMIAÇÕES E LOTERIAS",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiação Base",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 23 RECEITAS COM PREMIAÇÕES E LOTERIAS",
+   "choice": "competition_bonus",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Timemania",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 23 RECEITAS COM PREMIAÇÕES E LOTERIAS",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Edificações",
+   "lado": "expense",
+   "page": 1,
+   "section": "##### 2.5 CONTAS A RECEBER / ##### 2.6 ALMOXARIFADO / ##### 2.7 DESPESAS ANTECIPADAS / ##### 2.8 DEMAIS ATIVOS CIRCULANTES E NÃO CIRCULANTES / ##### 2.9 IMOBILIZADO",
+   "choice": "depreciation",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos com Jogos e Bonificações",
+   "lado": "expense",
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.94
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Equipamentos processamento",
+   "lado": "expense",
+   "page": 1,
+   "section": "##### 2.5 CONTAS A RECEBER / ##### 2.6 ALMOXARIFADO / ##### 2.7 DESPESAS ANTECIPADAS / ##### 2.8 DEMAIS ATIVOS CIRCULANTES E NÃO CIRCULANTES / ##### 2.9 IMOBILIZADO",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com Pessoal",
+   "lado": "expense",
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "wages_squad",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Despesas Operacionais",
+   "lado": "expense",
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.48
+    ],
+    [
+     "lump_football_operations_expense",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Impostos e Contribuições",
+   "lado": "expense",
+   "page": 2,
+   "section": "#### 20 RECEITA LÍQUIDA",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Despesas com Depreciação e Amortização",
+   "lado": "expense",
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Despesas Gerais e Administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "Despesas com Provisões - (Contigências)",
+   "lado": "expense",
+   "page": 1,
+   "section": "### DEMONSTRAÇÃO DO RESULTADO EXERCÍCIO FINDO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "exceptional_items",
+     0.35
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Contas a Pagar",
+   "lado": "expense",
+   "page": 1,
+   "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.9400000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Acordos",
+   "lado": "expense",
+   "page": 1,
+   "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Credores Diversos",
+   "lado": "expense",
+   "page": 1,
+   "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Provisão P/ Contingências",
+   "lado": "expense",
+   "page": 1,
+   "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Líquido do Intangível",
+   "lado": "expense",
+   "page": 1,
+   "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "player_amortisation",
+     0.26
+    ],
+    [
+     "other_amortisation",
+     0.09
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Pagamentos Referente Formação de Atletas",
+   "lado": "expense",
+   "page": 1,
+   "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.89
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Equipamento diversos",
+   "lado": "expense",
+   "page": 1,
+   "section": "##### 2.5 CONTAS A RECEBER / ##### 2.6 ALMOXARIFADO / ##### 2.7 DESPESAS ANTECIPADAS / ##### 2.8 DEMAIS ATIVOS CIRCULANTES E NÃO CIRCULANTES / ##### 2.9 IMOBILIZADO",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Globo(Luvas 2013 a 2018)",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 16 RECEITAS A APROPRIAR",
+   "choice": "broadcasting",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras",
+   "lado": "revenue",
+   "page": 2,
+   "section": "#### 16 RECEITAS A APROPRIAR",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas a Realizar",
+   "lado": "expense",
+   "page": 1,
+   "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Parcelamentos",
+   "lado": "expense",
+   "page": 1,
+   "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+   "choice": "exceptional_items",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "exceptional_items",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Aquisição de Imobilizado",
+   "lado": "expense",
+   "page": 1,
+   "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "depreciation",
+     0.07
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Caixa Líquido das Atividades de Financiamento",
+   "lado": "expense",
+   "page": 1,
+   "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Aquisição de Empréstimo",
+   "lado": "expense",
+   "page": 1,
+   "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "player_amortisation",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Redução Líquida de Caixa e Equivalentes de Caixa",
+   "lado": "expense",
+   "page": 1,
+   "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Amortização de Empréstimos",
+   "lado": "expense",
+   "page": 1,
+   "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis.",
+   "choice": "player_amortisation",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "player_amortisation",
+     0.91
+    ],
+    [
+     "other_amortisation",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1032
+  }
+ ]
+}

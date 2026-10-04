@@ -1,0 +1,56 @@
+{
+ "md": "Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2014-15.md",
+ "pdf": "Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2014-15.pdf",
+ "club": "hoffenheim-de",
+ "year": 2015,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:50:33.482Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 5,
+  "notasUsadas": [
+   "13",
+   "lista-p12-6"
+  ]
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "Finanzerträge",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Stadionbenutzung 90 32 / sonstiger Spielbetrieb 385 52 / Transfer -109 -19 / sonstige Aufwendungen -145 -2,8 / Betriebsaufwand 1.854 20",
+   "values": [
+    0.002105
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Finanzaufwendungen",
+   "lado": "expense",
+   "page": 9,
+   "section": "Stadionbenutzung 90 32 / sonstiger Spielbetrieb 385 52 / Transfer -109 -19 / sonstige Aufwendungen -145 -2,8 / Betriebsaufwand 1.854 20",
+   "values": [
+    0.0001
+   ],
+   "origen": "estado 7 (su nota queda consumida sin abrir)"
+  },
+  {
+   "label": "sonstige Steuern",
+   "lado": "expense",
+   "page": 9,
+   "section": "Stadionbenutzung 90 32 / sonstiger Spielbetrieb 385 52 / Transfer -109 -19 / sonstige Aufwendungen -145 -2,8 / Betriebsaufwand 1.854 20",
+   "values": [
+    0.0001
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  }
+ ]
+}

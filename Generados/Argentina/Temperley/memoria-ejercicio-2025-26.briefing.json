@@ -1,0 +1,72 @@
+{
+  "club": "temperley",
+  "year": 2026,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Temperley/memoria-ejercicio-2025-26.md",
+  "generatedAt": "2026-09-30T21:51:13.804Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 32,
+      "section": "•   5 de octubre: visitó el Museo Juan Carlos Merlo, exfutbolista y director técnico de la / institución. Fue uno de los delanteros más importantes de nuestra historia: disputó / 119 partidos entre 1971 y 1976, con 54 goles. Además, se desempeñó como director / técnico en las temporadas 1982, 1987/88 y 1997/98. / •   31 de octubre: organizado por el Departamento de Cultura se realizó el encuentro",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "de Pioneras Gasoleras, que integraron los planteles de fútbol femenino de",
+          "values": [
+            "1989,"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1997 y",
+          "values": [
+            "2002."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 78,
+      "section": "5.s) TAI CHI CHUAN / 5.t) VOLEY",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "escuelitas como Sub",
+          "values": [
+            "16."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Naranja: participó del torneo de escuelitas como Sub",
+          "values": [
+            "18."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/temperley-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"temperley\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

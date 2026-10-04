@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Bélgica/Westerlo/jaarrekening-2019-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/Westerlo/jaarrekening-2019-06-30-individual.pdf",
+ "club": "westerlo-be",
+ "year": 2019,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:56:08.832Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 10.000 / Uitgestelde belastingen 168",
+   "values": [
+    3563.759
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Schulden op meer dan één jaar 63 |",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 10.000 / Uitgestelde belastingen 168",
+   "values": [
+    1575.65
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 10.000 / Uitgestelde belastingen 168",
+   "values": [
+    981.036
+   ],
+   "origen": "estado 5"
+  }
+ ]
+}

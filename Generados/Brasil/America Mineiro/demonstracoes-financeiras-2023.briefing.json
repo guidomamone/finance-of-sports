@@ -1,0 +1,1888 @@
+{
+  "club": "americamineiro-br",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/America Mineiro/demonstracoes-financeiras-2023.md",
+  "generatedAt": "2026-09-30T14:11:23.247Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 791,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 38,
+  "relevantTableCount": 8,
+  "tables": [
+    {
+      "page": 7,
+      "section": "ATIVO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caixa e equivalentes de caixa",
+          "values": [
+            "14.105.841",
+            "1.511.459",
+            "434.656",
+            "1.511.339"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Títulos a receber",
+          "values": [
+            "23.693083",
+            "10.337.351",
+            "3.141.869",
+            "10.314.434"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos -",
+          "values": [
+            "1.133.234",
+            "401.196",
+            "890.846",
+            "385.607"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos a compensar -",
+          "values": [
+            "480.393",
+            "401.846",
+            "364.643",
+            "364.643"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas antecipadas -",
+          "values": [
+            "239.673",
+            "172.188",
+            "186.836",
+            "172.188"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos pessoas ligadas 6 - -",
+          "values": [
+            "19.443.488",
+            "47.216.348"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo circulante",
+          "values": [
+            "39.652.224",
+            "12.824.040",
+            "24.462.338",
+            "59.964.558"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Ativo não circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Títulos a receber",
+          "values": [
+            "79.784.434",
+            "13.966.854",
+            "21.369.434",
+            "13.966.854"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos judiciais -",
+          "values": [
+            "1.091.694",
+            "1.091.694",
+            "1.091.694",
+            "1.091.694"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "84.560.823          15.058.848        23.358.816         15.058.548",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Investimentos",
+          "values": [
+            "834.623",
+            "693.316",
+            "834.623",
+            "693.316"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propriedades para investimento",
+          "values": [
+            "107.749.167",
+            "114.944.383",
+            "107.749.167",
+            "114.944.383"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "56.769.321",
+            "57.765.874",
+            "56.769.321",
+            "57.765.874"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "187.514.508        195.068.540        165.353.111       173.403.574",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total do ativo não circulante",
+          "values": [
+            "272.075.331",
+            "210.127.088",
+            "188.711.927",
+            "188.462.122"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo",
+          "values": [
+            "311.727.555",
+            "222.951.128",
+            "213.174.265",
+            "248.426.680"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "PASSIVO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores -",
+          "values": [
+            "3.114.970",
+            "6.653.490",
+            "2.880.723",
+            "6.453.557"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas",
+          "values": [
+            "15.341.066",
+            "14.878.662",
+            "3.875.639",
+            "8.042.121"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "4.974.738",
+            "13.881.114",
+            "4.963.314",
+            "13.881.114"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações tributárias",
+          "values": [
+            "15.142.888",
+            "14.693.943",
+            "6.374.888",
+            "6.601.379"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Títulos a pagar",
+          "values": [
+            "4.392.277",
+            "7.722.113",
+            "424.206",
+            "3.026.723"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas a realizar",
+          "values": [
+            "1.969.446",
+            "4.499.517",
+            "1.291.446",
+            "4.476.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo circulante",
+          "values": [
+            "44.935.385",
+            "62.328.838",
+            "19.810.216",
+            "42.481.494"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Passivo não circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "17.730.614",
+            "21.593.910",
+            "17.730.614",
+            "21.593.910"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos pessoas ligadas",
+          "values": [
+            "2.407.326",
+            "2.560.082",
+            "2.407.326",
+            "2.560.082"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento de terceiros - - 4.711.469 -",
+          "values": [
+            "4.711.469"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para riscos",
+          "values": [
+            "4.021.973",
+            "4.021.973",
+            "4.021.973",
+            "4.021.973"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Projetos e convênios a executar",
+          "values": [
+            "2.187.556",
+            "2.888.058",
+            "2.187.556",
+            "2.888.058"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações tributárias",
+          "values": [
+            "60.254.554",
+            "52.297.872",
+            "49.597.640",
+            "52.297.872"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para perdas em 17 - -",
+          "values": [
+            "59.405.014",
+            "45.322.896"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "investimentos / Patrimônio líquido",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ajuste de avaliação patrimonial -",
+          "values": [
+            "163.091.876",
+            "167.671.675",
+            "163.091.876",
+            "167.671.675"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit acumulados -",
+          "values": [
+            "(112.677.522)",
+            "(95.122.749)",
+            "112.677.522",
+            "(95.122.749)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do patrimônio social",
+          "values": [
+            "50.414.354",
+            "72.548.926",
+            "50.414.354",
+            "72.548.926"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Demonstração do Resultado / Em 31 de dezembro de 2023 e 2022 / (Valores expressos em reais, exceto quando especificado) / Consolidado                       Controladora / Notas         2023                2022           2023                2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita operacional líquida",
+          "values": [
+            "187.876.760",
+            "144.142.704",
+            "60.813.977",
+            "121.472.581"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custos operacionais",
+          "values": [
+            "(92.070.307)",
+            "(59.605.351)",
+            "(798.498)",
+            "(39.071.276)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucro/Prejuízo bruto",
+          "values": [
+            "95.806.453",
+            "84.537.353",
+            "60.015.479",
+            "(82.401.305)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 8,
+      "section": "Despesas operacionais",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Administrativas",
+          "values": [
+            "(100.568.347)",
+            "(88.412.828)",
+            "(54.344.320)",
+            "(32.858.180)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributárias",
+          "values": [
+            "(4.128.370)",
+            "(2.327.604)",
+            "(4.392.317)",
+            "(1.308.969)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado equivalência 20 - -",
+          "values": [
+            "(14.082.118)",
+            "(54.563.031)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 8,
+      "section": "patrimonial / operacionais / (104.696.717)       (90.927.733)   (72.818.755)         (88.917.481) / Resultado operacional antes do / resultado financeiro",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Resultado financeiro líquido",
+          "values": [
+            "(13.244.308)",
+            "(14.802.348)",
+            "(9.331.297)",
+            "(14.676.552)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit (Déficit) do exercício",
+          "values": [
+            "(22.134.572)",
+            "(21.192.728)",
+            "(22.134.573)",
+            "(21.192.728)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "Ajustes de / Superávit (Déficit) / avaliação           Total / acumulado / patrimonial",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Déficit do exercício (21.192.728) -",
+          "values": [
+            "(21.192.728)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2022",
+          "values": [
+            "(95.122.749)",
+            "167.671.675",
+            "(72.548.926)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Déficit do exercício (22.134.572) -",
+          "values": [
+            "(22.134.572)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2023",
+          "values": [
+            "(112.677.522)",
+            "163.091.876",
+            "50.414354"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "(Valores expressos em reais, exceto quando especificado) / Consolidado                     Controladora / 2023             2022            2023             2022 / Atidades Operacionais / Ajustes ao Déficit do exercício",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depreciação imobilizado",
+          "values": [
+            "1.442.105",
+            "1.421.579",
+            "1.442.105",
+            "1.421.579"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para riscos - 150.941 -",
+          "values": [
+            "150.941"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Amortização de propriedades para investimento",
+          "values": [
+            "7.195.216",
+            "3.597.609",
+            "7.195.216",
+            "3.597.609"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equivalência patrimonial - -",
+          "values": [
+            "14.082.118",
+            "54.563.031"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "(6.292.994)    (13.864.563)       564.866      38.540.432 / (Acréscimos) Decréscimos de Ativos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Títulos a receber",
+          "values": [
+            "(79.173.312)",
+            "3.323.915",
+            "(230.015)",
+            "3.346.832"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos",
+          "values": [
+            "(732.038)",
+            "(391.026)",
+            "(505.239)",
+            "(375.437)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas antecipadas",
+          "values": [
+            "(3.752.180)",
+            "(193.887",
+            "(912.336)",
+            "193.887"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos judiciais - (133.452) -",
+          "values": [
+            "(133.452)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "(83.736.077)      2.956.100      (1.647.590)     3.031.809 / Acréscimos (Decréscimos) de Passivos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "(3.110.520)",
+            "5.286.733",
+            "(3.572.834)",
+            "5.086.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas",
+          "values": [
+            "462.404",
+            "4.442.069",
+            "(4.166.482)",
+            "(2.394.472)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações tributárias",
+          "values": [
+            "8.405.627",
+            "9.020.072",
+            "(2.926.722)",
+            "927.508"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas a realizar",
+          "values": [
+            "126.817.722",
+            "(3.680.995)",
+            "4.414.418",
+            "3.703.912"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "123.833.427      16.595.337     (14.266.108)    (3.252.006) / Atividades de Investimento",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Variação em Ações e Participações",
+          "values": [
+            "(141.307)",
+            "299.398",
+            "(141.307)",
+            "299.398"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adições/baixas imobilizado",
+          "values": [
+            "(445.552)",
+            "(625.671)",
+            "(425.552)",
+            "(625.671)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variação do intangível (7.700.688) (16.405.657) -",
+          "values": [
+            "7.387.345"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Investimentos coligadas - - -",
+          "values": [
+            "(9.240.135)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fluxo de Caixa das Atividades de Investimento",
+          "values": [
+            "(8.440.302)",
+            "(16.731.930)",
+            "27.053.245",
+            "(2.179.063)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Atividades de Financiamento",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Financiamento e credores internos",
+          "values": [
+            "(12.769.672)",
+            "5.914.665",
+            "(12.781.096)",
+            "5.914.665"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Partes Relacionadas - - -",
+          "values": [
+            "(47.216.348)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fluxo de Caixa das Atividades de Financiamento",
+          "values": [
+            "(12.769.672)",
+            "5.914.665",
+            "(12.781.096)",
+            "(41.301.683)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caixa e equivalentes de caixa no início do exerc.",
+          "values": [
+            "1.511.459",
+            "6.671.850",
+            "1.511.339",
+            "6.671.850"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa no fim do exerc.",
+          "values": [
+            "14.105.841",
+            "1.511.459",
+            "434.656",
+            "1.511.339"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/Redução Líq. de Caixa e Equiv. Caixa",
+          "values": [
+            "12.594.382",
+            "(5.160.391)",
+            "(1.067.683)",
+            "(5.160.391)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "2023                                   2022 / Taxa anual de                              Depreciação / Custo                                         Líquido        Líquido / depreciação                                Acumulada / CT Santa Luzia (a)                4%",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terreno 23.000.000 -",
+          "values": [
+            "23.000.000",
+            "23.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações",
+          "values": [
+            "1.609.713",
+            "(965.828)",
+            "643.885",
+            "772.663"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 19,
+      "section": "Contagem (b)                      4% / Carrefour",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terreno 3.255.075 -",
+          "values": [
+            "3.255.075",
+            "3.255.075"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações",
+          "values": [
+            "86.744.925",
+            "(20.818.782)",
+            "65.926.143",
+            "72.865.737"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Loja Av. Andradas (c)             4%",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terreno 14.430 -",
+          "values": [
+            "14.430",
+            "14.430"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações",
+          "values": [
+            "1.585.570",
+            "(380.537)",
+            "1.205.033",
+            "1.331.879"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "treinamento, que ocupa uma área de 145 mil m2, / a Segunda Divisão do Campeonato Mineiro; / em negociação com a Direcional Engenharia. / Movimentação do imobilizado / 2022                      Adições                  2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CT Santa Luzia - Terreno 23.000.000 -",
+          "values": [
+            "23.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CT Santa Luzia - Edificações 1.609.713 -",
+          "values": [
+            "1.609.713"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contagem - Terreno Três Barras 13.704.600 -",
+          "values": [
+            "13.704.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carrefour - Terreno 3.255.075 -",
+          "values": [
+            "3.255.075"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carrefour - Edificações 86.744.925 -",
+          "values": [
+            "86.744.925"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Loja Av. Andradas - Terreno 14.430 -",
+          "values": [
+            "14.430"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Loja Av. Andradas - Edificações 1.585.570 -",
+          "values": [
+            "1.585.570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação acumulada",
+          "values": [
+            "(14.969.930)",
+            "(7.195.216)",
+            "(22.165.146)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "114.944.383                      (7.195.216)         107.749.167 / Movimentação do imobilizado / 2021                      Adições                  2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CT Santa Luzia - Terreno 23.000.000 -",
+          "values": [
+            "23.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CT Santa Luzia - Edificações 1.609.713 -",
+          "values": [
+            "1.609.713"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contagem - Terreno Três Barras 13.704.600 -",
+          "values": [
+            "13.704.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carrefour - Terreno 3.255.075 -",
+          "values": [
+            "3.255.075"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carrefour - Edificações 86.744.925 -",
+          "values": [
+            "86.744.925"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Loja Av. Andradas - Terreno 14.430 -",
+          "values": [
+            "14.430"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Loja Av. Andradas - Edificações 1.585.570 -",
+          "values": [
+            "1.585.570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação acumulada",
+          "values": [
+            "(11.372.321)",
+            "(3.597.609)",
+            "(14.969.930)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "O saldo do imobilizado é composto como segue: / 2023                                   2022 / Taxa anual de                           Depreciação / Custo                                         Líquido          Líquido / depreciação                             Acumulada",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terrenos - 39.754.202 -",
+          "values": [
+            "39.754.202",
+            "39.754.202"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações 4%",
+          "values": [
+            "28.134.427",
+            "(12.326.972)",
+            "15.807.455",
+            "16.730.587"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios 10%",
+          "values": [
+            "465.097",
+            "(335.023)",
+            "130.074",
+            "40.209"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e equipamentos 10%",
+          "values": [
+            "553.465",
+            "(322.480)",
+            "230.985",
+            "102.137"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos 30%",
+          "values": [
+            "528.959",
+            "(525.729)",
+            "3.231",
+            "43.588"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Computadores e periféricos 20%",
+          "values": [
+            "194.370",
+            "(138.070)",
+            "56.300",
+            "37.252"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instalações 10%",
+          "values": [
+            "2.389.763",
+            "(1.824.329)",
+            "565.434",
+            "978.461"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos esportivos 10%",
+          "values": [
+            "557.702",
+            "(336.063)",
+            "221.640",
+            "79.438"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 20,
+      "section": "sentados, a Administração entendeu que não            ciamento CPC 01. / tangíveis pudesse sofrer desvalorização, uma          monstradas a seguir: / vez que não foi evidenciado nenhum dos fato- / Movimentação do imobilizado / 2022               Adições/baixas                        2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terrenos 39.754.202 -",
+          "values": [
+            "39.754.202"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações 28.134.427 -",
+          "values": [
+            "28.134.427"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "364.876",
+            "100.222",
+            "465.097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e equipamentos",
+          "values": [
+            "415.161",
+            "138.304",
+            "553.465"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos 528.959 -",
+          "values": [
+            "528.959"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Computadores e periféricos",
+          "values": [
+            "170.513",
+            "23.857",
+            "194.370"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instalações 2.389.763 -",
+          "values": [
+            "2.389.763"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos esportivos",
+          "values": [
+            "374.533",
+            "183.169",
+            "557.702"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "72.132.434                          445.552               72.577.985 / 57.765.874                        (996.553)               56.769.321 / Movimentação do imobilizado / 2021              Adições/baixas                        2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terrenos 39.754.202 -",
+          "values": [
+            "39.754.202"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações 28.134.427 -",
+          "values": [
+            "28.134.427"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "359.677",
+            "5.199",
+            "364.876"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e equipamentos",
+          "values": [
+            "329.988",
+            "85.173",
+            "415.161"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos 528.959 -",
+          "values": [
+            "528.959"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Computadores e periféricos",
+          "values": [
+            "144.284",
+            "26.229",
+            "170.513"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instalações",
+          "values": [
+            "1.880.693",
+            "509.070",
+            "2.389.763"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos esportivos 374.533 -",
+          "values": [
+            "374.533"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "11. Empréstimos e financiamentos a pagar / O saldo do empréstimo é composto como segue: / Consolidado                                                        Controladora",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Banco Sicoob",
+          "values": [
+            "13.525.844",
+            "(2.128.689)",
+            "11.397.155",
+            "13.525.844",
+            "(2.128.689)",
+            "11.397.155"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Boulevard",
+          "values": [
+            "11.320.067",
+            "(609.609)",
+            "10.710.458",
+            "11.320.067",
+            "(609.609)",
+            "10.710.458"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "Shopping / consignado",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "13.881.114",
+            "(8.906.376)",
+            "4.974.738",
+            "13.881.114",
+            "(8.917.800)",
+            "4.963.314"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "21.593.910",
+            "(2.863.275)",
+            "17.730.614",
+            "21.593.910",
+            "(3.863.296)",
+            "17.730.614"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "FGTS / ISS BH / SAF TEF                                                                      RFB (b)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Passivo circulante",
+          "values": [
+            "15.142.888",
+            "14.693.943",
+            "6.374.888",
+            "6.601.379"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo não",
+          "values": [
+            "60.254.554",
+            "52.297.872",
+            "49.597.640",
+            "52.297.872"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "(-) Deduções da / Participação Patrimônio Resultado / %            dez/23      dez/23         dez/23           (impostos, INSS e / Sindicato Atletas) / América Futebol",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Clube Sociedade",
+          "values": [
+            "187.876.760",
+            "144.142.704",
+            "60.813.977",
+            "121.472.581"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anônima de 100%",
+          "values": [
+            "(59.405.014)",
+            "(14.082.118)",
+            "(59.405.014)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 24,
+      "section": "A movimentação dos investimentos nas con- / troladas está demonstrada a seguir: / Saldo em 31/12/2021                                                        - / (+/-) Aquisição de quotas / Integralização                     9.240.135 / de capital",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(+/-) Equivalência Patrimonial",
+          "values": [
+            "(54.563.031)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2022",
+          "values": [
+            "(45.322.896)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+/-) Equivalência Patrimonial",
+          "values": [
+            "(14.082.118)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2023",
+          "values": [
+            "(59.405.014)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "23. Divulgação adicional do resultado / (R1), conforme segue: / 2023 / Futebol      Futebol de base Futebol feminino          Outros            Total / profissional",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita operacional líquida 135.271.267 - -",
+          "values": [
+            "52.605.493",
+            "187.876.760"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custos operacionais",
+          "values": [
+            "(69.973.433)",
+            "(7.089.414)",
+            "(2.301.758)",
+            "(12.705.702)",
+            "(92.070.307)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 26,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Tributárias",
+          "values": [
+            "(4.128.370)",
+            "(4.128.370)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas (despesas) -",
+          "values": [
+            "(187.301)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "(76.431.944)          (7.743.763)      (2.514.209)    (18.006.802)    (104.696.717) / do resultado financeiro / 2022 / Futebol      Futebol de base Futebol feminino          Outros            Total / profissional",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita operacional líquida 103.782.747 - -",
+          "values": [
+            "40.359.957",
+            "144.142.705"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custos operacionais",
+          "values": [
+            "(45.300.067)",
+            "(4.589.612)",
+            "(1.490.134)",
+            "(8.225.538)",
+            "(59.605.351)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 26,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Tributárias",
+          "values": [
+            "(2.327.604)",
+            "(2.327.604)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas (despesas)",
+          "values": [
+            "(187.301)",
+            "(187.301)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 7,
+      "section": "ATIVO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do ativo circulante",
+      "target": "39.652.224",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "-4249571.306916997"
+    },
+    {
+      "page": 7,
+      "section": "ATIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do ativo circulante",
+      "target": "12.824.040",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "47216348"
+    },
+    {
+      "page": 7,
+      "section": "ATIVO",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do ativo circulante",
+      "target": "24.462.338",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-19443488"
+    },
+    {
+      "page": 7,
+      "section": "ATIVO",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total do ativo circulante",
+      "target": "59.964.558",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-47216347"
+    },
+    {
+      "page": 7,
+      "section": "187.514.508        195.068.540        165.353.111       173.403.574",
+      "likelyRelevant": false,
+      "totalLabel": "Total do ativo não circulante",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 7,
+      "section": "187.514.508        195.068.540        165.353.111       173.403.574",
+      "likelyRelevant": false,
+      "totalLabel": "Total do ativo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 7,
+      "section": "PASSIVO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do passivo circulante",
+      "target": "44.935.385",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "PASSIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do passivo circulante",
+      "target": "62.328.838",
+      "addendCount": 6,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 6 rubros enteros)"
+    },
+    {
+      "page": 7,
+      "section": "PASSIVO",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do passivo circulante",
+      "target": "19.810.216",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "PASSIVO",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total do passivo circulante",
+      "target": "42.481.494",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "investimentos / Patrimônio líquido",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do patrimônio social",
+      "target": "50.414.354",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "investimentos / Patrimônio líquido",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do patrimônio social",
+      "target": "72.548.926",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "investimentos / Patrimônio líquido",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do patrimônio social",
+      "target": "50.414.354",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "225355044"
+    },
+    {
+      "page": 7,
+      "section": "investimentos / Patrimônio líquido",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total do patrimônio social",
+      "target": "72.548.926",
+      "addendCount": 2,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 22,
+    "results": [
+      {
+        "label": "Receita operacional líquida",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita operacional líquida",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Custos operacionais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Custos operacionais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Lucro/Prejuízo bruto",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Lucro/Prejuízo bruto",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Administrativas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Administrativas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Tributárias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Tributárias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado equivalência 20 - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado equivalência 20 - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado financeiro líquido",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado financeiro líquido",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit (Déficit) do exercício",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit (Déficit) do exercício",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Terreno 23.000.000 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Terreno 23.000.000 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Edificações",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Edificações",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Terrenos - 39.754.202 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Terrenos - 39.754.202 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Edificações 4%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Edificações 4%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Móveis e utensílios 10%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Móveis e utensílios 10%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Máquinas e equipamentos 10%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Máquinas e equipamentos 10%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Veículos 30%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Veículos 30%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Computadores e periféricos 20%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Computadores e periféricos 20%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Instalações 10%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Instalações 10%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipamentos esportivos 10%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipamentos esportivos 10%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Clube Sociedade",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Clube Sociedade",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Anônima de 100%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Anônima de 100%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita operacional líquida 135.271.267 - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita operacional líquida 135.271.267 - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita operacional líquida 103.782.747 - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita operacional líquida 103.782.747 - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "América Mineiro",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "5 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

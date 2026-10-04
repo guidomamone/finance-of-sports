@@ -1,0 +1,134 @@
+{
+ "md": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2019.md",
+ "generatedAt": "2026-09-30T22:48:26.900Z",
+ "rubrosHuella": "bf3ddb077e5d5ef6039be5c0a0879be6959c8dc1",
+ "rubros": [
+  {
+   "label": "Receita operacional bruta",
+   "lado": "revenue",
+   "page": 17,
+   "section": "2.1(a) Receita operacional líquida / 2019 / Clube social e / esportes / Futebol amadores Total",
+   "choice": "lump_football_operations",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Impostos e contribuições",
+   "lado": "revenue",
+   "page": 17,
+   "section": "2.1(a) Receita operacional líquida / 2019 / Clube social e / esportes / Futebol amadores Total",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de arena",
+   "lado": "revenue",
+   "page": 17,
+   "section": "2.1(a) Receita operacional líquida / 2019 / Clube social e / esportes / Futebol amadores Total",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Salários a atletas e demais funcionários",
+   "lado": "expense",
+   "page": 19,
+   "section": "bens ou serviços forem prestados. O Clube já havia reconhecido o diferimento do “bônus” de / Gastos por natureza / Os gastos são reconhecidos de acordo com o regime de competência. / Salários, encargos e benefícios com atletas e demais funcionários / 2019 2018",
+   "choice": "wages_squad",
+   "confidence": 0.37,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de imagem a atletas",
+   "lado": "expense",
+   "page": 19,
+   "section": "bens ou serviços forem prestados. O Clube já havia reconhecido o diferimento do “bônus” de / Gastos por natureza / Os gastos são reconhecidos de acordo com o regime de competência. / Salários, encargos e benefícios com atletas e demais funcionários / 2019 2018",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneração de prestadores de serviço (Futebol)",
+   "lado": "expense",
+   "page": 19,
+   "section": "bens ou serviços forem prestados. O Clube já havia reconhecido o diferimento do “bônus” de / Gastos por natureza / Os gastos são reconhecidos de acordo com o regime de competência. / Salários, encargos e benefícios com atletas e demais funcionários / 2019 2018",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Fornecedores e outras obrigações",
+   "lado": "expense",
+   "page": 22,
+   "section": "Caixa e equivalentes de caixa 1.883 444 / Contas a receber 45.027 77.487 / 46.910 77.931 / 2019 2018 / Passivos financeiros ao custo amortizado",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Contas a pagar na transferência de jogadores",
+   "lado": "expense",
+   "page": 22,
+   "section": "Caixa e equivalentes de caixa 1.883 444 / Contas a receber 45.027 77.487 / 46.910 77.931 / 2019 2018 / Passivos financeiros ao custo amortizado",
+   "choice": "player_amortisation",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Empréstimos e financiamentos",
+   "lado": "expense",
+   "page": 22,
+   "section": "Caixa e equivalentes de caixa 1.883 444 / Contas a receber 45.027 77.487 / 46.910 77.931 / 2019 2018 / Passivos financeiros ao custo amortizado",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Impostos e contribuições a recolher",
+   "lado": "expense",
+   "page": 22,
+   "section": "Caixa e equivalentes de caixa 1.883 444 / Contas a receber 45.027 77.487 / 46.910 77.931 / 2019 2018 / Passivos financeiros ao custo amortizado",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1180
+  },
+  {
+   "label": "Remuneração de prestadores de serviço (Outras áreas) (*)",
+   "lado": "expense",
+   "page": 19,
+   "section": "bens ou serviços forem prestados. O Clube já havia reconhecido o diferimento do “bônus” de / Gastos por natureza / Os gastos são reconhecidos de acordo com o regime de competência. / Salários, encargos e benefícios com atletas e demais funcionários / 2019 2018",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "youth_other_sports_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1083
+  }
+ ]
+}

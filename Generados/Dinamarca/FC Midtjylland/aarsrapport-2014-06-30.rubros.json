@@ -1,0 +1,252 @@
+{
+  "md": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2014-06-30.md",
+  "pdf": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2014-06-30.pdf",
+  "club": "midtjylland-dk",
+  "year": 2014,
+  "numberFormat": "ambiguo",
+  "generatedAt": "2026-09-30T21:59:56.549Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 22,
+    "notasUsadas": [
+      "21",
+      "53",
+      "35",
+      "23",
+      "26"
+    ]
+  },
+  "ladoConocido": 16,
+  "rubros": [
+    {
+      "label": "Entré- og turneringsindtægter",
+      "lado": "revenue",
+      "page": 51,
+      "section": "# NOTER / # NOTES",
+      "values": [
+        37.039
+      ],
+      "origen": "nota 21 (ancla 11)",
+      "ancla": "2 Nettoomsætning",
+      "glosa": "Ingresos por taquilla y competiciones"
+    },
+    {
+      "label": "2 Nettoomsætning",
+      "lado": "revenue",
+      "page": 29,
+      "section": "# RESULTAT- OG TOTALINDKOMSTOPGØRELSE 1. JULI - 30. JUNI / *INCOME STATEMENT AND STATEMENT OF COMPREHENSIVE INCOME 1 JULY - 30 JUNE*",
+      "values": [
+        71.228
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "2 Cifra neta de negocios"
+    },
+    {
+      "label": "Sponsor- og reklameindtægter",
+      "lado": "revenue",
+      "page": 51,
+      "section": "# NOTER / # NOTES",
+      "values": [
+        23.282
+      ],
+      "origen": "nota 21 (ancla 11)",
+      "ancla": "2 Nettoomsætning",
+      "glosa": "Ingresos por patrocinio y publicidad"
+    },
+    {
+      "label": "Andre indtægter",
+      "lado": "revenue",
+      "page": 51,
+      "section": "# NOTER / # NOTES",
+      "values": [
+        10.908
+      ],
+      "origen": "nota 21 (ancla 11)",
+      "ancla": "2 Nettoomsætning",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "3 Andre eksterne omkostninger",
+      "lado": "expense",
+      "page": 29,
+      "section": "# RESULTAT- OG TOTALINDKOMSTOPGØRELSE 1. JULI - 30. JUNI / *INCOME STATEMENT AND STATEMENT OF COMPREHENSIVE INCOME 1 JULY - 30 JUNE*",
+      "values": [
+        -29.387
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "3 Otros gastos externos"
+    },
+    {
+      "label": "Af- og nedskrivninger 1. juli 2012 *Depreciation at 1 July 2012*",
+      "lado": "expense",
+      "page": 58,
+      "section": "# NOTER / # NOTES / # 11 MATERIELLE AKTIVER / # PROPERTY, PLANTS AND EQUIPMENT",
+      "values": [
+        0.626
+      ],
+      "origen": "nota 35 (ancla 11>53)",
+      "ancla": "3 Andre eksterne omkostninger",
+      "glosa": "Amortizaciones y deterioros a 1 de julio de 2012"
+    },
+    {
+      "label": "Årets afskrivninger *Depreciation for the year*",
+      "lado": "expense",
+      "page": 58,
+      "section": "# NOTER / # NOTES / # 11 MATERIELLE AKTIVER / # PROPERTY, PLANTS AND EQUIPMENT",
+      "values": [
+        0.119
+      ],
+      "origen": "nota 35 (ancla 11>53)",
+      "ancla": "3 Andre eksterne omkostninger",
+      "glosa": "Amortizaciones del ejercicio"
+    },
+    {
+      "label": "Lejeforpligtelser(Stadion) Lease obligations (Stadium)",
+      "lado": "expense",
+      "page": 70,
+      "section": "# NOTER / 19 EVENTUALPOSTER MV. / CONTINGENT LIABILITIES / # Eventualaktiver og eventualforpligtelser / # Særlige kontraktlige forpligtelser",
+      "values": [
+        27.3
+      ],
+      "origen": "nota 53 (ancla 11)",
+      "ancla": "3 Andre eksterne omkostninger",
+      "glosa": "Obligaciones de arrendamiento (Estadio)"
+    },
+    {
+      "label": "Løn og gager",
+      "lado": "expense",
+      "page": 52,
+      "section": "De samlede personaleomkostninger udgør: / *Total staff expenses*",
+      "values": [
+        45.896
+      ],
+      "origen": "nota 23 (ancla 11)",
+      "ancla": "4 Personaleomkostninger",
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "4 Personaleomkostninger",
+      "lado": "expense",
+      "page": 29,
+      "section": "# RESULTAT- OG TOTALINDKOMSTOPGØRELSE 1. JULI - 30. JUNI / *INCOME STATEMENT AND STATEMENT OF COMPREHENSIVE INCOME 1 JULY - 30 JUNE*",
+      "values": [
+        -57.035
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "4 Gastos de personal"
+    },
+    {
+      "label": "Pensioner",
+      "lado": "expense",
+      "page": 52,
+      "section": "De samlede personaleomkostninger udgør: / *Total staff expenses*",
+      "values": [
+        2.622
+      ],
+      "origen": "nota 23 (ancla 11)",
+      "ancla": "4 Personaleomkostninger",
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 52,
+      "section": "De samlede personaleomkostninger udgør: / *Total staff expenses*",
+      "values": [
+        0.793
+      ],
+      "origen": "nota 23 (ancla 11)",
+      "ancla": "4 Personaleomkostninger",
+      "glosa": "Otros costes de seguridad social"
+    },
+    {
+      "label": "Andre personaleomkostninger",
+      "lado": "expense",
+      "page": 52,
+      "section": "De samlede personaleomkostninger udgør: / *Total staff expenses*",
+      "values": [
+        7.724
+      ],
+      "origen": "nota 23 (ancla 11)",
+      "ancla": "4 Personaleomkostninger",
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "5 Af- og nedskrivninger",
+      "lado": null,
+      "page": 29,
+      "section": "# RESULTAT- OG TOTALINDKOMSTOPGØRELSE 1. JULI - 30. JUNI / *INCOME STATEMENT AND STATEMENT OF COMPREHENSIVE INCOME 1 JULY - 30 JUNE*",
+      "values": [
+        -2.66
+      ],
+      "origen": "estado 11",
+      "glosa": "5 Amortizaciones y deterioros de valor"
+    },
+    {
+      "label": "Bruttotab",
+      "lado": null,
+      "page": 29,
+      "section": "# RESULTAT- OG TOTALINDKOMSTOPGØRELSE 1. JULI - 30. JUNI / *INCOME STATEMENT AND STATEMENT OF COMPREHENSIVE INCOME 1 JULY - 30 JUNE*",
+      "values": [
+        -17.853
+      ],
+      "origen": "estado 11",
+      "glosa": "Pérdida bruta"
+    },
+    {
+      "label": "Transferindtægter",
+      "lado": "revenue",
+      "page": 29,
+      "section": "# RESULTAT- OG TOTALINDKOMSTOPGØRELSE 1. JULI - 30. JUNI / *INCOME STATEMENT AND STATEMENT OF COMPREHENSIVE INCOME 1 JULY - 30 JUNE*",
+      "values": [
+        14.21
+      ],
+      "origen": "estado 11",
+      "glosa": "Ingresos por traspasos"
+    },
+    {
+      "label": "5 Afskrivning transferrettigheder",
+      "lado": null,
+      "page": 29,
+      "section": "# RESULTAT- OG TOTALINDKOMSTOPGØRELSE 1. JULI - 30. JUNI / *INCOME STATEMENT AND STATEMENT OF COMPREHENSIVE INCOME 1 JULY - 30 JUNE*",
+      "values": [
+        -9.574
+      ],
+      "origen": "estado 11",
+      "glosa": "5 Amortización de derechos federativos"
+    },
+    {
+      "label": "6 Andre finansielle indtægter",
+      "lado": "revenue",
+      "page": 29,
+      "section": "# RESULTAT- OG TOTALINDKOMSTOPGØRELSE 1. JULI - 30. JUNI / *INCOME STATEMENT AND STATEMENT OF COMPREHENSIVE INCOME 1 JULY - 30 JUNE*",
+      "values": [
+        0.109
+      ],
+      "origen": "estado 11",
+      "glosa": "6 Otros ingresos financieros"
+    },
+    {
+      "label": "7 Andre finansielle omkostninger",
+      "lado": "expense",
+      "page": 29,
+      "section": "# RESULTAT- OG TOTALINDKOMSTOPGØRELSE 1. JULI - 30. JUNI / *INCOME STATEMENT AND STATEMENT OF COMPREHENSIVE INCOME 1 JULY - 30 JUNE*",
+      "values": [
+        -0.994
+      ],
+      "origen": "estado 11 (su nota queda consumida sin abrir)",
+      "glosa": "7 Otros gastos financieros"
+    }
+  ]
+}

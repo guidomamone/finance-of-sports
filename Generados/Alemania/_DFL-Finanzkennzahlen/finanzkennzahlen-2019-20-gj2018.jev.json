@@ -1,0 +1,144 @@
+{
+ "md": "Clubes/Alemania/_DFL-Finanzkennzahlen/finanzkennzahlen-2019-20-gj2018.md",
+ "generatedAt": "2026-09-30T04:25:19.297Z",
+ "rubros": [
+  {
+   "label": "4. Sonstige betriebliche Aufwendungen",
+   "lado": null,
+   "page": 1,
+   "section": "FC / 1. FC Union / Letzter Abschluss (Geschäftsjahr entspricht der Saison 2017-18 oder dem Kalenderjahr 2018) / 10. (Konzern)jahresüberschuss/(Konzern)jahresfehlbetrag / Gewinn- und Verlustrechnung Hertha BSC . ” SC Freiburg . 1.FCKöln RBLeipzig . . .",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1629
+  },
+  {
+   "label": "3. Abschreibungen -13.155 -9.427 -4.604 -13.543 -90.556 -1.215 -14.666 -12.917 -19.886 -20.297 -57.468 -48.588 -13.371 -38.381 -90.090 -355",
+   "lado": null,
+   "page": 1,
+   "section": "FC / 1. FC Union / Letzter Abschluss (Geschäftsjahr entspricht der Saison 2017-18 oder dem Kalenderjahr 2018) / 10. (Konzern)jahresüberschuss/(Konzern)jahresfehlbetrag / Gewinn- und Verlustrechnung Hertha BSC . ” SC Freiburg . 1.FCKöln RBLeipzig . . .",
+   "choice": "depreciation",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "depreciation",
+     0.41000000000000003
+    ],
+    [
+     "player_amortisation",
+     0.32
+    ],
+    [
+     "other_amortisation",
+     0.17
+    ]
+   ],
+   "tokens": 1713
+  },
+  {
+   "label": "2. Personalaufwand",
+   "lado": null,
+   "page": 1,
+   "section": "FC / 1. FC Union / Letzter Abschluss (Geschäftsjahr entspricht der Saison 2017-18 oder dem Kalenderjahr 2018) / 10. (Konzern)jahresüberschuss/(Konzern)jahresfehlbetrag / Gewinn- und Verlustrechnung Hertha BSC . ” SC Freiburg . 1.FCKöln RBLeipzig . . .",
+   "choice": "wages_squad",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "wages_squad",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1620
+  },
+  {
+   "label": "1. Rohergebnis",
+   "lado": null,
+   "page": 1,
+   "section": "FC / 1. FC Union / Letzter Abschluss (Geschäftsjahr entspricht der Saison 2017-18 oder dem Kalenderjahr 2018) / 10. (Konzern)jahresüberschuss/(Konzern)jahresfehlbetrag / Gewinn- und Verlustrechnung Hertha BSC . ” SC Freiburg . 1.FCKöln RBLeipzig . . .",
+   "choice": "lump_football_operations",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.61
+    ],
+    [
+     "other_income",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1352
+  },
+  {
+   "label": "Ergebnisabführung an atypisch stillen Gesellschafter",
+   "lado": "revenue",
+   "page": 1,
+   "section": "8. Ergebnis nach Steuern / Aufgrund von Unternehmensverträgen abgeführte Gewinne -247",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 863
+  },
+  {
+   "label": "Auf andere Gesellschafter entfallender Gewinn/Verlust -3 [6) -24 [6) [6] [6) [6] [6) -386 [6] [6) -17.988 [6] [6) [6] [6) -514",
+   "lado": "revenue",
+   "page": 1,
+   "section": "8. Ergebnis nach Steuern / Aufgrund von Unternehmensverträgen abgeführte Gewinne -247",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1109
+  }
+ ]
+}

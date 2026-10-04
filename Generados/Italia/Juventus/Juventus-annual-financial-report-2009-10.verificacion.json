@@ -1,0 +1,228 @@
+{
+ "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2009-10.pdf",
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2009-10.md",
+ "generado": "2026-10-03T23:14:05.547Z",
+ "estado": "ok",
+ "clubId": "juventus-it",
+ "year": 2010,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "documento del año 2011",
+   "ok": false,
+   "detalle": "ingresos de 2010: 243.299797 en este documento y 222.866024 en Juventus-annual-financial-report-2010-11.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2009",
+   "ok": true,
+   "detalle": "ingresos de 2009: 240.43414 en Juventus-annual-financial-report-2008-09.pdf y 240.43414 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2009: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Other costs\" (7 filas) no suma la fila: quedó la fila",
+  "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar que no afecta la carga: Los cuadros de las págs. 37 y 39 del informe de gestión repiten los totales del estado de resultados y de sus notas.",
+  "duda de localizar que no afecta la carga: Son detalles por jugador; b59 y b66 ya dan el desglose por categoría.",
+  "duda de extraer que no afecta la carga: El encabezado de b58 (L2492-L2494) está partido y la segunda columna no tiene año, pero su total 150,351 coincide con el 2008/2009 del estado.",
+  "duda de extraer que no afecta la carga: Son ganancias por acción, no partidas de resultado (L1379-L1380)."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Other costs",
+   "suma": 25.353,
+   "objetivo": 0.045
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Other costs",
+   "suma": 25.353,
+   "objetivo": 0.045
+  }
+ ],
+ "totales": {
+  "ingresos": 243.299797,
+  "gastos": 238.080091,
+  "financiero": -3.143865,
+  "impuesto": -13.043785,
+  "resultadoImpreso": -10.967944,
+  "resultadoParaCargar": -10.967944,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ticket sales",
+   "lado": "ingreso",
+   "M": 18.471393,
+   "pagina": 62,
+   "linea": 1356,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Television and radio rights and media revenues",
+   "lado": "ingreso",
+   "M": 151.436256,
+   "pagina": 62,
+   "linea": 1357,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Revenues from sponsorship and advertising",
+   "lado": "ingreso",
+   "M": 45.678338,
+   "pagina": 62,
+   "linea": 1358,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Revenues from players' registration rights",
+   "lado": "ingreso",
+   "M": 14.66472,
+   "pagina": 62,
+   "linea": 1359,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Other revenues",
+   "lado": "ingreso",
+   "M": 9.914903,
+   "pagina": 62,
+   "linea": 1360,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Other non recurring revenues and costs",
+   "lado": "ingreso",
+   "M": 3.134187,
+   "pagina": 62,
+   "linea": 1371,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
+  },
+  {
+   "etiqueta": "Purchase of materials, supplies and other consumables",
+   "lado": "gasto",
+   "M": 2.246618,
+   "pagina": 62,
+   "linea": 1362,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "External services",
+   "lado": "gasto",
+   "M": 27.265348,
+   "pagina": 62,
+   "linea": 1363,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Players' wages and technical staff costs",
+   "lado": "gasto",
+   "M": 127.035001,
+   "pagina": 62,
+   "linea": 1364,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Other personnel",
+   "lado": "gasto",
+   "M": 11.167834,
+   "pagina": 62,
+   "linea": 1365,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Expenses from players' registration rights",
+   "lado": "gasto",
+   "M": 3.42177,
+   "pagina": 62,
+   "linea": 1366,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Other costs",
+   "lado": "gasto",
+   "M": 25.352588,
+   "pagina": 62,
+   "linea": 1367,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Amortisation and write-downs of players' registration rights",
+   "lado": "gasto",
+   "M": 39.486912,
+   "pagina": 62,
+   "linea": 1369,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Other amortisation, write-downs and provisions",
+   "lado": "gasto",
+   "M": 2.10402,
+   "pagina": 62,
+   "linea": 1370,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financial income",
+   "M": 3.58352,
+   "linea": 1373
+  },
+  {
+   "etiqueta": "Financial expenses",
+   "M": -6.727385,
+   "linea": 1374
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Current taxes",
+   "M": -5.544717,
+   "linea": 1376
+  },
+  {
+   "etiqueta": "Deferred taxes",
+   "M": -7.499068,
+   "linea": 1377
+  }
+ ]
+}

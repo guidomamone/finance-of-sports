@@ -1,0 +1,347 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf",
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.md",
+ "generado": "2026-10-03T23:03:05.732Z",
+ "estado": "ok",
+ "clubId": "goias-br",
+ "year": 2025,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: el documento 2025 no separa bilheteria ni sócio torcedor: van juntos en 'Patrocínio/bilheteria/Sócio Torcedor/ Outras' 19.931.127. El 0 es del desglose, no un dato perdido; reintentar no lo arregla.",
+   "evidencia": "pág. 29 del visor, .md L1213",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf",
+   "campo": "cero-real",
+   "valor": "Cuotas sociales",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: el documento 2025 no separa bilheteria ni sócio torcedor: van juntos en 'Patrocínio/bilheteria/Sócio Torcedor/ Outras' 19.931.127. El 0 es del desglose, no un dato perdido; reintentar no lo arregla.",
+   "evidencia": "pág. 29 del visor, .md L1213",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Despesa com pessoal",
+   "motivo": "corrección (auditoría del pipeline, 2026-10-02): la marca '(a)' cambia de nota entre años; el precedente y la caché de Claude la categorizaban por etiqueta. En 2025 esta fila está en la nota de Despesas administrativas e gerais.",
+   "evidencia": "demonstracoes-contabeis-2025.md L1265",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Despesa com pessoal (a)",
+   "motivo": "corrección (auditoría del pipeline, 2026-10-02): la marca '(a)' cambia de nota entre años; el precedente y la caché de Claude la categorizaban por etiqueta. En 2025 esta fila está en la nota de Custo com futebol.",
+   "evidencia": "demonstracoes-contabeis-2025.md L1224",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "45.374624 = 45.374624"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 37.975414; el sitio tiene 37.975414"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 37.975414 en demonstracoes-contabeis-2024.pdf y 37.975414 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: El documento no abre bilheteria ni sócio torcedor en otro cuadro; b13 es cuentas a cobrar (balance), no ingresos.",
+  "duda de extraer que no afecta la carga: La nota 18 (b36) no abre un desglose de bilheteria/estadio ni de sócio torcedor/cuotas sociales; vienen agregados en L1212-L1213.",
+  "duda de extraer que no afecta la carga: b40 arranca con L1283-L1284, que pertenecen al cuadro de receitas financeiras de b39."
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 45.374624,
+  "gastos": 140.714796,
+  "financiero": -2.769924,
+  "impuesto": 0,
+  "resultadoImpreso": -98.110093,
+  "resultadoParaCargar": -98.110093,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Direitos de transmissão de TV",
+   "lado": "ingreso",
+   "M": 16.887449,
+   "pagina": 29,
+   "linea": 1211,
+   "origen": "nota que desglosa \"Receita líquida\""
+  },
+  {
+   "etiqueta": "Receitas Atividades Sociais e Lazer",
+   "lado": "ingreso",
+   "M": 9.835889,
+   "pagina": 29,
+   "linea": 1212,
+   "origen": "nota que desglosa \"Receita líquida\""
+  },
+  {
+   "etiqueta": "Patrocínio/bilheteria/Sócio Torcedor/ Outras",
+   "lado": "ingreso",
+   "M": 19.931127,
+   "pagina": 29,
+   "linea": 1213,
+   "origen": "nota que desglosa \"Receita líquida\""
+  },
+  {
+   "etiqueta": "Transação de atletas",
+   "lado": "ingreso",
+   "M": 1.084364,
+   "pagina": 29,
+   "linea": 1214,
+   "origen": "nota que desglosa \"Receita líquida\""
+  },
+  {
+   "etiqueta": "(-) Demais deduções da receita",
+   "lado": "ingreso",
+   "M": -2.364205,
+   "pagina": 29,
+   "linea": 1217,
+   "origen": "nota que desglosa \"Receita líquida\""
+  },
+  {
+   "etiqueta": "Despesa com pessoal (a)",
+   "lado": "gasto",
+   "M": 60.604081,
+   "pagina": 29,
+   "linea": 1224,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Cessão de Direitos Imagem",
+   "lado": "gasto",
+   "M": 14.799284,
+   "pagina": 29,
+   "linea": 1225,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Serviços de terceiros (b)",
+   "lado": "gasto",
+   "M": 12.827914,
+   "pagina": 29,
+   "linea": 1226,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Despesa formação atletas base",
+   "lado": "gasto",
+   "M": 2.257512,
+   "pagina": 29,
+   "linea": 1227,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Demais custos e despesas operacionais",
+   "lado": "gasto",
+   "M": 1.923779,
+   "pagina": 29,
+   "linea": 1228,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Materiais Esportivos",
+   "lado": "gasto",
+   "M": 1.888534,
+   "pagina": 29,
+   "linea": 1229,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Amortização de custo de atletas contratados",
+   "lado": "gasto",
+   "M": 1.471898,
+   "pagina": 29,
+   "linea": 1230,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Cessão Temporária",
+   "lado": "gasto",
+   "M": 1.330526,
+   "pagina": 29,
+   "linea": 1231,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Outros custos com jogos e atletas",
+   "lado": "gasto",
+   "M": 1.291424,
+   "pagina": 29,
+   "linea": 1232,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Taxas confederações e federações",
+   "lado": "gasto",
+   "M": 0.688253,
+   "pagina": 29,
+   "linea": 1233,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Luvas",
+   "lado": "gasto",
+   "M": 0.598999,
+   "pagina": 29,
+   "linea": 1234,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Amortização de custo de atletas formados",
+   "lado": "gasto",
+   "M": 0.423305,
+   "pagina": 29,
+   "linea": 1235,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Custos e despesas c/ pessoal jogos",
+   "lado": "gasto",
+   "M": 0.103989,
+   "pagina": 29,
+   "linea": 1236,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Arbitragens",
+   "lado": "gasto",
+   "M": 0.00035,
+   "pagina": 29,
+   "linea": 1237,
+   "origen": "nota que desglosa \"Custo com futebol\""
+  },
+  {
+   "etiqueta": "Despesas Administrativas (a)",
+   "lado": "gasto",
+   "M": 10.346189,
+   "pagina": 30,
+   "linea": 1263,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Despesas com serviços prestados",
+   "lado": "gasto",
+   "M": 8.729303,
+   "pagina": 30,
+   "linea": 1264,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Despesa com pessoal",
+   "lado": "gasto",
+   "M": 7.972794,
+   "pagina": 30,
+   "linea": 1265,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Despesas legais e judiciais (b)",
+   "lado": "gasto",
+   "M": 3.104744,
+   "pagina": 30,
+   "linea": 1266,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Depreciação e amortização",
+   "lado": "gasto",
+   "M": 2.521457,
+   "pagina": 30,
+   "linea": 1267,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Água, telefone, energia e internet",
+   "lado": "gasto",
+   "M": 1.096766,
+   "pagina": 30,
+   "linea": 1268,
+   "origen": "nota que desglosa \"Despesas administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Despesas tributárias",
+   "lado": "gasto",
+   "M": 0.195678,
+   "pagina": 7,
+   "linea": 223,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Despesas com Earn In (a)",
+   "lado": "gasto",
+   "M": 7.977865,
+   "pagina": 30,
+   "linea": 1299,
+   "origen": "nota que desglosa \"Outras Receitas e Despesas\""
+  },
+  {
+   "etiqueta": "Outras Receitas (b)",
+   "lado": "ingreso",
+   "M": 1.439848,
+   "pagina": 30,
+   "linea": 1300,
+   "origen": "nota que desglosa \"Outras Receitas e Despesas\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receitas financeiras",
+   "M": 3.906292,
+   "linea": 226
+  },
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -6.676216,
+   "linea": 227
+  }
+ ],
+ "impuesto": []
+}

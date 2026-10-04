@@ -1,0 +1,604 @@
+{
+ "md": "Clubes/Brasil/Botafogo/demonstracoes-financeiras-associacao-2023.md",
+ "generatedAt": "2026-09-30T04:25:48.631Z",
+ "rubros": [
+  {
+   "label": "Terrenos n/a 59.637 - 59.637 59.637 -",
+   "lado": "expense",
+   "page": 20,
+   "section": "7. Imobilizado / 2023                               2022 / Taxa de                Depreciação      Valor              Depreciação        Valor / Descrição                          Custo                               Custo / depreciação               Acumulada      líquido              Acumulada        líquido",
+   "choice": "depreciation",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "depreciation",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 991
+  },
+  {
+   "label": "Resultado operacional antes do resultado bruto",
+   "lado": "expense",
+   "page": 8,
+   "section": "Despesas operacionais clube social e esportes olímpicos",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Outras despesas e receitas operacionais",
+   "lado": null,
+   "page": 31,
+   "section": "6.414 / 24. Outras Receitas e Despesas Operacionais / 2023                               2022",
+   "choice": "other_income",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1521
+  },
+  {
+   "label": "Salários, encargos e benefícios -",
+   "lado": null,
+   "page": 8,
+   "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais) / Nota / Explicativa        2023          2022",
+   "choice": "wages_squad",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "wages_squad",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ]
+   ],
+   "tokens": 1552
+  },
+  {
+   "label": "Receitas de Transmissão -",
+   "lado": "revenue",
+   "page": 29,
+   "section": "a constituição do Clube. / 21. Receita Operacional Líquida / 2023                         2022 / 21.1 Futebol / 2023                         2022",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1072
+  },
+  {
+   "label": "Resultado de equivalência patrimonial",
+   "lado": "expense",
+   "page": 8,
+   "section": "Despesas operacionais clube social e esportes olímpicos",
+   "choice": "exceptional_items",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "exceptional_items",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Custo do departamento de futebol - Profissional e amador 22 -",
+   "lado": null,
+   "page": 8,
+   "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais) / Nota / Explicativa        2023          2022",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.75
+    ],
+    [
+     "wages_squad",
+     0.18000000000000002
+    ],
+    [
+     "youth_other_sports_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1565
+  },
+  {
+   "label": "Edificações 4%",
+   "lado": "expense",
+   "page": 20,
+   "section": "7. Imobilizado / 2023                               2022 / Taxa de                Depreciação      Valor              Depreciação        Valor / Descrição                          Custo                               Custo / depreciação               Acumulada      líquido              Acumulada        líquido",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "depreciation",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 855
+  },
+  {
+   "label": "Receitas de Aluguel (i)",
+   "lado": "revenue",
+   "page": 30,
+   "section": "Notas explicativas às demonstrações financeiras / Em 31 de dezembro de 2023 / (Valores expressos em milhares de reais) / 21.2 Receita do Clube Social / 2023                             2022",
+   "choice": "stadium_other",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "stadium_other",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Receitas Participação nas Competições -",
+   "lado": "revenue",
+   "page": 29,
+   "section": "a constituição do Clube. / 21. Receita Operacional Líquida / 2023                         2022 / 21.1 Futebol / 2023                         2022",
+   "choice": "competition_bonus",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "competition_bonus",
+     0.97
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Gerais e administrativas -",
+   "lado": null,
+   "page": 30,
+   "section": "21.3 Receitas dos Esportes Olímpicos / 2023                            2022 / 22. Custo do Departamento de Futebol / São os custos exclusivamente relacionados com as atividades desportivas. / 2023                 2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1538
+  },
+  {
+   "label": "Serviços profissionais -",
+   "lado": null,
+   "page": 30,
+   "section": "21.3 Receitas dos Esportes Olímpicos / 2023                            2022 / 22. Custo do Departamento de Futebol / São os custos exclusivamente relacionados com as atividades desportivas. / 2023                 2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1539
+  },
+  {
+   "label": "Receita repasse direitos profissionais -",
+   "lado": "revenue",
+   "page": 29,
+   "section": "a constituição do Clube. / 21. Receita Operacional Líquida / 2023                         2022 / 21.1 Futebol / 2023                         2022",
+   "choice": "player_sales",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "player_sales",
+     0.96
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "broadcasting",
+     0.01
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "Uso de imagem de atleta -",
+   "lado": null,
+   "page": 30,
+   "section": "21.3 Receitas dos Esportes Olímpicos / 2023                            2022 / 22. Custo do Departamento de Futebol / São os custos exclusivamente relacionados com as atividades desportivas. / 2023                 2022",
+   "choice": "wages_squad",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "wages_squad",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "Receitas com Associados",
+   "lado": "revenue",
+   "page": 30,
+   "section": "Notas explicativas às demonstrações financeiras / Em 31 de dezembro de 2023 / (Valores expressos em milhares de reais) / 21.2 Receita do Clube Social / 2023                             2022",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "Concessionários (Água, Energia Elétrica, Gás, Telefonia)",
+   "lado": "expense",
+   "page": 31,
+   "section": "Despesas Administrativas (i)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Impostos, taxas e contribuições (IPTU e FORO)",
+   "lado": "expense",
+   "page": 31,
+   "section": "Despesas Administrativas (i)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Custo do departamento de futebol - Profissional e amador -",
+   "lado": null,
+   "page": 30,
+   "section": "21.3 Receitas dos Esportes Olímpicos / 2023                            2022 / 22. Custo do Departamento de Futebol / São os custos exclusivamente relacionados com as atividades desportivas. / 2023                 2022",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.87
+    ],
+    [
+     "wages_squad",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1568
+  },
+  {
+   "label": "Competições e amistosos -",
+   "lado": null,
+   "page": 30,
+   "section": "21.3 Receitas dos Esportes Olímpicos / 2023                            2022 / 22. Custo do Departamento de Futebol / São os custos exclusivamente relacionados com as atividades desportivas. / 2023                 2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.62
+    ],
+    [
+     "competition_bonus",
+     0.2
+    ],
+    [
+     "matchday_competition",
+     0.09
+    ]
+   ],
+   "tokens": 1531
+  },
+  {
+   "label": "Outras receitas/despesas",
+   "lado": null,
+   "page": 31,
+   "section": "6.414 / 24. Outras Receitas e Despesas Operacionais / 2023                               2022",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1505
+  },
+  {
+   "label": "Receita líquida acordo de acionista (iii)",
+   "lado": null,
+   "page": 31,
+   "section": "6.414 / 24. Outras Receitas e Despesas Operacionais / 2023                               2022",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1500
+  },
+  {
+   "label": "Ganho de Capital S.A.F (ii) -",
+   "lado": null,
+   "page": 31,
+   "section": "6.414 / 24. Outras Receitas e Despesas Operacionais / 2023                               2022",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "exceptional_items",
+     0.09
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1422
+  },
+  {
+   "label": "Ajuste valor justo (i) -",
+   "lado": null,
+   "page": 31,
+   "section": "6.414 / 24. Outras Receitas e Despesas Operacionais / 2023                               2022",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "exceptional_items",
+     0.13
+    ]
+   ],
+   "tokens": 1526
+  },
+  {
+   "label": "Perda de investimento -",
+   "lado": null,
+   "page": 31,
+   "section": "6.414 / 24. Outras Receitas e Despesas Operacionais / 2023                               2022",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ],
+    [
+     "player_impairment",
+     0.01
+    ]
+   ],
+   "tokens": 1392
+  },
+  {
+   "label": "Receitas Financeiras",
+   "lado": null,
+   "page": 32,
+   "section": "Notas explicativas às demonstrações financeiras / Em 31 de dezembro de 2023 / (Valores expressos em milhares de reais) / 25.Resultado Financeiro / 2023                   2022",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1495
+  },
+  {
+   "label": "Descontos Obtidos",
+   "lado": null,
+   "page": 32,
+   "section": "Notas explicativas às demonstrações financeiras / Em 31 de dezembro de 2023 / (Valores expressos em milhares de reais) / 25.Resultado Financeiro / 2023                   2022",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1362
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
+ "generado": "2026-10-02T20:58:23.032Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"prestamos y sobregiros bancarios\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expresados en miles de pesos Colombianos)",
+ "caja": {
+  "lineas": [
+   273
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas son notas, no el estado de situación financiera completo. No aparece ninguna línea de préstamos ni sobregiros bancarios, pero como no puede confirmarse que el balance esté completo no se marca deuda.ninguna. Para caja se toma el total de la nota 6 (L273)."
+}

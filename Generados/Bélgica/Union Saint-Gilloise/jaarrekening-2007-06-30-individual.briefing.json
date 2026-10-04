@@ -1,0 +1,280 @@
+{
+  "club": "unionsg-be",
+  "year": 2007,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2007-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:55:48.384Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 18,
+    "space": 2
+  },
+  "scannedWarning": false,
+  "tableCount": 8,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 4,
+      "section": "BILAN APRÈS RÉPARTITION / ACTIF / ACTIFS IMMOBILISÉS / ACTIFS CIRCULANTS / TOTAL DE L'ACTIF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "22.118"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "82.541",
+            "33.620"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "194.649",
+            "197.622"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "N° BE 0417.144.936 A 2.2 / PASSIF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CAPITAUX PROPRES 10/15",
+          "values": [
+            "-312.917",
+            "-45.758"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital 5.3 |",
+          "values": [
+            "559.900",
+            "559.900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital souscrit",
+          "values": [
+            "559.900",
+            "559.900"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Réserves immunisées 132 / Réserves disponibles 133 / Bénéfice (perte) reporté(e) (+)/(-) 14 -872.817 -605.658 / Subsides en capital 15 / Avance aux associés sur répartition de l'actif net 19",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "PROVISIONS ET IMPÔTS DIFFÉRÉS",
+          "values": [
+            "38.864"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisions pour risques et charges 5.4 | 160/5",
+          "values": [
+            "38.864"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "DETTES 17/49 507.566 204.516",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dettes à un an au plus 5.5 | 42/48",
+          "values": [
+            "507.566",
+            "204.516"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes à plus d'un an échéant dans l'année",
+          "values": [
+            "42.110",
+            "34.624"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Dettes financières 43 77 20 / Etablissements de crédit 430/8 77 20 / Autres emprunts 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dettes commerciales",
+          "values": [
+            "159.907",
+            "103.441"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fournisseurs 440/4",
+          "values": [
+            "159.907",
+            "103.441"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Effets à payer 441 / Acomptes reçus sur commandes 46",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dettes fiscales, salariales et sociales",
+          "values": [
+            "91.808"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impôts 450/3",
+          "values": [
+            "17.440"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rémunérations et charges sociales 454/9",
+          "values": [
+            "74.369"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres dettes 47/48",
+          "values": [
+            "213.663",
+            "66.431"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "COMPTE DE RÉSULTATS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "635/7",
+          "values": [
+            "38.864"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "640/8",
+          "values": [
+            "4.522",
+            "13.844"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "N° BE 0417.144.936 A 5.3 / ETAT DU CAPITAL ET STRUCTURE DE L'ACTIONNARIAT / ETAT DU CAPITAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Parts sociales nominatives ( av 30.06.95)",
+          "values": [
+            "15.362"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parts sociale nominatives ( ex95-96)",
+          "values": [
+            "602.967"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parts sociales nominatives ( ex 96-97)",
+          "values": [
+            "1.728.395"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "parts sociales nominatives ( ex 00-01)",
+          "values": [
+            "5.347.216"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "635/7",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "635/7",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "640/8",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "640/8",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Union Saint-Gilloise",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

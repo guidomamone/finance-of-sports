@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-02T00:21:04.176Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Total du bilan 54.939.328 €",
+ "caja": {
+  "lineas": [
+   279
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas del pasivo (C-app 3.2) no están incluidas, por lo que no se pueden identificar las líneas de deuda financiera; la caja (Valeurs disponibles, código 54/58) es 1.275.320 en L279. Los importes están expresados en euros (unidades)."
+}

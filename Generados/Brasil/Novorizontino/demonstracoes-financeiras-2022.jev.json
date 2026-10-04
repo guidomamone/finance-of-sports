@@ -1,0 +1,451 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.md",
+ "generatedAt": "2026-10-03T03:12:12.829Z",
+ "rubrosHuella": "1a283b8b2064f879d6b315714c6378d8700eca67",
+ "rubros": [
+  {
+   "label": "Direitos de transmissão de TV",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Negociação de atletas",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidade",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínio",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrecadação de jogos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiações",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Convênios",
+   "lado": "revenue",
+   "page": 10,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Com pessoal",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Aluguel de imóveis",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos com atletas e comissão técnica\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços e exames médicos",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos com atletas e comissão técnica\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Taxa da FPF e CBF",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos com atletas e comissão técnica\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos com negociação de atletas",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos com atletas e comissão técnica\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Lanches e refeições",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Assessoria esportiva",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Assessoria de imprensa",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Lavanderia",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Energia elétrica",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Água e esgoto",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Assessoria jurídica",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciação",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Assessoria administrativa",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços médicos",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "wages_squad",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Medicamentos",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "wages_squad",
+   "confidence": 0.29,
+   "desdeCache": true
+  },
+  {
+   "label": "Software",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "other_amortisation",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços contábeis e auditoria",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Segurança patrimonial",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Telefone e internet",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Com jogos",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Manutenção",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Atletas não profissionais",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Aluguéis",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Material esportivo",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Tributária",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras receitas",
+   "lado": "expense",
+   "page": 10,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Combustíveis e lubrificantes",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1139
+  },
+  {
+   "label": "Estadias",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.66
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos com atletas e comissão técnica\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "wages_squad",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 977
+  },
+  {
+   "label": "Matriais de escritório e de limpeza",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Multa indenizatória",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos com atletas e comissão técnica\"",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "exceptional_items",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 856
+  }
+ ]
+}

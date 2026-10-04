@@ -1,0 +1,326 @@
+{
+  "club": "aguilas-doradas",
+  "year": 2020,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2020.md",
+  "generatedAt": "2026-09-30T21:57:35.829Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 53,
+    "eu": 24,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 3,
+      "section": "OML ASESORES S.A.S.",
+      "columns": [
+        "CONCEPTO DEL INGRESO",
+        "AÑO 2019",
+        "AÑO 2020",
+        "DIFERENCIA"
+      ],
+      "rows": [
+        {
+          "rawLabel": "TAQUILLA - VENTA BOLETERIA",
+          "values": [
+            "214,508,000",
+            "17,700,000",
+            "-196.808.000"
+          ],
+          "bold": false,
+          "codigo": "410505"
+        },
+        {
+          "rawLabel": "VENTA DERECHOS DEPORTIVOS - JUGADORES",
+          "values": [
+            "5,288,992,142",
+            "6,223,202,564",
+            "934.210.422"
+          ],
+          "bold": false,
+          "codigo": "410515"
+        },
+        {
+          "rawLabel": "PRESTAMO DERECHOS DEPORTIVOS - JUGADORES",
+          "values": [
+            "203,160,000",
+            "0",
+            "-203.160.000"
+          ],
+          "bold": false,
+          "codigo": "410520"
+        },
+        {
+          "rawLabel": "PUBLICIDAD Y PROPAGANDA",
+          "values": [
+            "802,852,035",
+            "656,956,000",
+            "-145.896.035"
+          ],
+          "bold": false,
+          "codigo": "410525"
+        },
+        {
+          "rawLabel": "DIMAYOR",
+          "values": [
+            "4,597,343,284",
+            "2,821,284,938",
+            "-1.776.058.346"
+          ],
+          "bold": false,
+          "codigo": "410530"
+        },
+        {
+          "rawLabel": "DIMAYOR DIFERIDOS",
+          "values": [
+            "131,617,392",
+            "54,840,577",
+            "-76.776.815"
+          ],
+          "bold": false,
+          "codigo": "410531"
+        },
+        {
+          "rawLabel": "DIMAYOR PARTICIPACIONES",
+          "values": [
+            "58,711,000",
+            "51,553,000",
+            "-7.158.000"
+          ],
+          "bold": false,
+          "codigo": "410532"
+        },
+        {
+          "rawLabel": "APOYO LOGISTICO DIMAYOR",
+          "values": [
+            "0",
+            "95,699,600",
+            "95.699.600"
+          ],
+          "bold": false,
+          "codigo": "410533"
+        },
+        {
+          "rawLabel": "FEDERACION COLOMBIANA DE FUTBOL",
+          "values": [
+            "286.000.000",
+            "0",
+            "-286.000.000"
+          ],
+          "bold": false,
+          "codigo": "410535"
+        },
+        {
+          "rawLabel": "PATROCINIO",
+          "values": [
+            "2.680.672.269",
+            "0",
+            "-2.680.672.269"
+          ],
+          "bold": false,
+          "codigo": "410545"
+        },
+        {
+          "rawLabel": "CUOTA DE SOSTENIMIENTO",
+          "values": [
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false,
+          "codigo": "410550"
+        },
+        {
+          "rawLabel": "PARTICIPACION EN EVENTOS NALES E INTERNALES",
+          "values": [
+            "2.215.236.662",
+            "0",
+            "-2.215.236.662"
+          ],
+          "bold": false,
+          "codigo": "410555"
+        },
+        {
+          "rawLabel": "ACTIVIDADES CONEXAS",
+          "values": [
+            "873.288.602",
+            "1,348,750,000",
+            "475.461.398"
+          ],
+          "bold": false,
+          "codigo": "410595"
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 4,
+      "section": "OML ASESORES S.A.S.",
+      "columns": [
+        "CONCEPTO DE GASTO OPERACIONAL",
+        "AÑO 2019",
+        "AÑO 2020",
+        "DIFERENCIA"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salarios de empleados y gastos por beneficios",
+          "values": [
+            "4,823,829,273",
+            "4,531,434,912",
+            "-292,394,361"
+          ],
+          "bold": false,
+          "codigo": "5105"
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "367,330,084",
+            "322,013,423",
+            "-45,316,661"
+          ],
+          "bold": false,
+          "codigo": "5110"
+        },
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "213,766,885",
+            "29,200,732",
+            "-184,566,153"
+          ],
+          "bold": false,
+          "codigo": "5115"
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "411,713,918",
+            "445,891,253",
+            "34,177,335"
+          ],
+          "bold": false,
+          "codigo": "5120"
+        },
+        {
+          "rawLabel": "Contribuciones y afiliaciones",
+          "values": [
+            "19,078,000",
+            "6,648,000",
+            "-12,430,000"
+          ],
+          "bold": false,
+          "codigo": "5125"
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "69,333,362",
+            "43,039,803",
+            "-26,293,559"
+          ],
+          "bold": false,
+          "codigo": "5130"
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "808,445,888",
+            "599,404,871",
+            "-209,041,017"
+          ],
+          "bold": false,
+          "codigo": "5135"
+        },
+        {
+          "rawLabel": "Legales",
+          "values": [
+            "3,892,840",
+            "7,044,616",
+            "3,151,776"
+          ],
+          "bold": false,
+          "codigo": "5140"
+        },
+        {
+          "rawLabel": "Mantenimiento y reparaciones",
+          "values": [
+            "262,909,537",
+            "152,178,261",
+            "-110,731,276"
+          ],
+          "bold": false,
+          "codigo": "5145"
+        },
+        {
+          "rawLabel": "De viaje",
+          "values": [
+            "893,311,591",
+            "272,260,613",
+            "-621,050,978"
+          ],
+          "bold": false,
+          "codigo": "5155"
+        },
+        {
+          "rawLabel": "Depreciaciones",
+          "values": [
+            "121,800,009",
+            "121,800,000",
+            "-9"
+          ],
+          "bold": false,
+          "codigo": "5160"
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "4,218,304,795",
+            "3,067,903,889",
+            "-1,150,400,906"
+          ],
+          "bold": false,
+          "codigo": "5195"
+        },
+        {
+          "rawLabel": "Deterioros",
+          "values": [
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false,
+          "codigo": "5199"
+        },
+        {
+          "rawLabel": "Derechos deportivos",
+          "values": [
+            "2,477,099,516",
+            "1,010,666,209",
+            "-1,466,433,307"
+          ],
+          "bold": false,
+          "codigo": "5294"
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/aguilas-doradas-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"aguilas-doradas\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

@@ -1,0 +1,1041 @@
+{
+ "md": "Clubes/Argentina/Racing/balance2011.md",
+ "generatedAt": "2026-09-30T04:25:32.333Z",
+ "rubros": [
+  {
+   "label": "Diversos (Anexo II) $ 10.859.773 $",
+   "lado": null,
+   "page": 8,
+   "section": "RACING CLUB ASOCIACION CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.8200000000000001
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1489
+  },
+  {
+   "label": "Generales (Anexo II) $ 45.206.945 $",
+   "lado": null,
+   "page": 8,
+   "section": "RACING CLUB ASOCIACION CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_income",
+     0.06999999999999999
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1506
+  },
+  {
+   "label": "Especìficos (Anexo III) $ 47.281.723 $",
+   "lado": "expense",
+   "page": 8,
+   "section": "Gastos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "depreciation",
+     0.04
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Generales (Anexo III) $ 38.978.580 $",
+   "lado": "expense",
+   "page": 8,
+   "section": "Gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "depreciation",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Ingresos por Televisaciòn AFA $ 25.823.558 $",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Orìgen Ordinario de Recursos",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Diferencias de Cambio $ 2.125.443 $",
+   "lado": null,
+   "page": 8,
+   "section": "Resultados Financieros / Ingresos / Egresos",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1378
+  },
+  {
+   "label": "Intereses Financieros $ 2.846.010 $",
+   "lado": null,
+   "page": 8,
+   "section": "Resultados Financieros / Ingresos / Egresos",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_income",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1466
+  },
+  {
+   "label": "Especìficos (Anexo II) $ 52.713.061 $",
+   "lado": null,
+   "page": 8,
+   "section": "RACING CLUB ASOCIACION CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "choice": "match_organisation_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "other_income",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1541
+  },
+  {
+   "label": "Otras Actividades Deportivas $ 1.384.087 $",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Orìgen Ordinario de Recursos",
+   "choice": "other_sports",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_sports",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Otros Ingresos Ordinarios Comunes $ 5.570.319 $",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Orìgen Ordinario de Recursos",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Ingresos S. Social / Colegio $ 3.482.381 $",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Orìgen Ordinario de Recursos",
+   "choice": "education",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "education",
+     0.77
+    ],
+    [
+     "member_dues",
+     0.15000000000000002
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Ingresos por Socios $ 24.239.650 $",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Orìgen Ordinario de Recursos",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Partidos Oficiales y Otros $ 10.700.186 $",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Orìgen Ordinario de Recursos",
+   "choice": "lump_football_operations",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.47000000000000003
+    ],
+    [
+     "matchday_competition",
+     0.45
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Ingresos por Publicidad y Sponsoreo $ 10.376.268 $",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Orìgen Ordinario de Recursos",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Otros Aportes / Cobros Fùtbol $ 17.981.452 $",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Orìgen Extraordinario de Recursos",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Transferencia de Jugadores $ 9.585.871 $",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Orìgen Extraordinario de Recursos",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Futbol Profesional / Partidos Oficiales $ 53.877.732 $",
+   "lado": null,
+   "page": 9,
+   "section": "Egreso Ordinario de Recursos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.94
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "Instalaciones / Bs Uso / Otros $ 2.957.863 $",
+   "lado": null,
+   "page": 9,
+   "section": "Egreso Ordinario de Recursos",
+   "choice": "admin_general_expense",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "stadium_other",
+     0.23
+    ]
+   ],
+   "tokens": 1441
+  },
+  {
+   "label": "Remuneraciones / Cargas Sociales / Impuestos $ 33.234.193 $",
+   "lado": null,
+   "page": 9,
+   "section": "Egreso Ordinario de Recursos",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "wages_squad",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "Televisaciòn / Televisiòn AFA $ 24.333.540 $ 24.333.540 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES        ESPECIFICOS        DIVERSOS        TOTAL AL 31/10/11 TOTAL AL 31/10/10 / DETALLE",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1093
+  },
+  {
+   "label": "Cuotas Sociales $ 24.215.161 $ 24.215.161 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES        ESPECIFICOS        DIVERSOS        TOTAL AL 31/10/11 TOTAL AL 31/10/10 / DETALLE",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Aplicaciones Varias / Mantenimiento $ 18.319.889 $",
+   "lado": null,
+   "page": 9,
+   "section": "Egreso Ordinario de Recursos",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1469
+  },
+  {
+   "label": "Campeonatos Oficiales $ 8.294.515 $ 8.294.515 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES        ESPECIFICOS        DIVERSOS        TOTAL AL 31/10/11 TOTAL AL 31/10/10 / DETALLE",
+   "choice": "matchday_competition",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "matchday_competition",
+     0.7
+    ],
+    [
+     "competition_bonus",
+     0.29
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1116
+  },
+  {
+   "label": "Ingresos Alquiler $ 677.286 $ 677.286 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES        ESPECIFICOS        DIVERSOS        TOTAL AL 31/10/11 TOTAL AL 31/10/10 / DETALLE",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.73
+    ],
+    [
+     "stadium_other",
+     0.27
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1088
+  },
+  {
+   "label": "Otros Torneos $ 840.000 $ 840.000 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES        ESPECIFICOS        DIVERSOS        TOTAL AL 31/10/11 TOTAL AL 31/10/10 / DETALLE",
+   "choice": "matchday_competition",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "matchday_competition",
+     0.9
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "competition_bonus",
+     0.04
+    ]
+   ],
+   "tokens": 1075
+  },
+  {
+   "label": "Otros Ingresos Deportivos $ 676.439 $ 676.439 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES        ESPECIFICOS        DIVERSOS        TOTAL AL 31/10/11 TOTAL AL 31/10/10 / DETALLE",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1098
+  },
+  {
+   "label": "Ingresos Publicidad $ 12.746.478 $ 12.746.478 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES        ESPECIFICOS        DIVERSOS        TOTAL AL 31/10/11 TOTAL AL 31/10/10 / DETALLE",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1127
+  },
+  {
+   "label": "Transferencia de Jugadores $ 9.202.760 $ 9.131.413 $ 2.348.375 $ 20.682.548 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES        ESPECIFICOS        DIVERSOS        TOTAL AL 31/10/11 TOTAL AL 31/10/10 / DETALLE",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1121
+  },
+  {
+   "label": "Otros Ingresos Diversos $ 1.977.223 $ 6.501.629 $ 4.317.452 $ 12.796.304 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES        ESPECIFICOS        DIVERSOS        TOTAL AL 31/10/11 TOTAL AL 31/10/10 / DETALLE",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1174
+  },
+  {
+   "label": "Ingresos Sede Villa del Parque $ 643.144 $ 643.144 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES        ESPECIFICOS        DIVERSOS        TOTAL AL 31/10/11 TOTAL AL 31/10/10 / DETALLE",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "stadium_other",
+     0.23
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1133
+  },
+  {
+   "label": "Sueldos del Personal $ 29.628.596 $ 29.628.596 $",
+   "lado": "expense",
+   "page": 12,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "wages_squad",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Futbol Profesional $ 30.219.716 $ 30.219.716 $",
+   "lado": "expense",
+   "page": 12,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "choice": "wages_squad",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "wages_squad",
+     0.77
+    ],
+    [
+     "lump_football_operations_expense",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Resultados Financieros $ 949.466 $ 949.466 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES        ESPECIFICOS        DIVERSOS        TOTAL AL 31/10/11 TOTAL AL 31/10/10 / DETALLE",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1147
+  },
+  {
+   "label": "Grales Actividades Deportivas / Soc. $ 2.781.097 $ 6.951.176 $ 9.732.273 $",
+   "lado": "expense",
+   "page": 12,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.99
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1102
+  },
+  {
+   "label": "Organizaciòn de Partidos $ 4.814.521 $ 4.814.521 $",
+   "lado": "expense",
+   "page": 12,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Ingresos Colegio $ 2.874.363 $ 2.874.363 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES        ESPECIFICOS        DIVERSOS        TOTAL AL 31/10/11 TOTAL AL 31/10/10 / DETALLE",
+   "choice": "education",
+   "confidence": 1,
+   "top3": [
+    [
+     "education",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "Cargas Sociales $ 4.769.258 $ 4.769.258 $",
+   "lado": "expense",
+   "page": 12,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "choice": "wages_squad",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "wages_squad",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Sellados, Multas, Gtos Bancarios $ 807.811 $ 807.811 $",
+   "lado": "expense",
+   "page": 12,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Mantenimiento $ 991.818 $ 97.780 $ 1.089.598 $",
+   "lado": "expense",
+   "page": 12,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Colegio $ 174.678 $ 174.678 $",
+   "lado": "expense",
+   "page": 12,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "choice": "education_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "education_expense",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Blanquic Crèditos Por Ventas/transf Jugadores u$s 2.375.116 $ 3,3480 $ 7.951.888 $ 7.951.888 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Creditos por venta/transferencia de Jugadores",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1085
+  },
+  {
+   "label": "Blanquic Crèditos Por Ventas/transf Jugadores Euros 2.148.000 $ 4,2677 $ 9.167.019 $ 9.167.019 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Creditos por venta/transferencia de Jugadores",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1084
+  },
+  {
+   "label": "Costo Transferencia de Jugadores $ 4.233.806 $ 4.233.806 $",
+   "lado": "expense",
+   "page": 12,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "choice": "player_amortisation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "player_amortisation",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Sede Villa del Parque $ 790.046 $ 790.046 $",
+   "lado": "expense",
+   "page": 12,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Crèditos Por Ventas/transferencia Jugadores u$s 129.103 $ 3,9170 $ 505.696 $ 505.696 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Creditos por venta/transferencia de Jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1069
+  }
+ ]
+}

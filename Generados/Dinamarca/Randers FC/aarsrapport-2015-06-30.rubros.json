@@ -1,0 +1,187 @@
+{
+  "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2015-06-30.md",
+  "pdf": "Clubes/Dinamarca/Randers FC/aarsrapport-2015-06-30.pdf",
+  "club": "randers-dk",
+  "year": 2015,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:59:58.538Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 15,
+    "notasUsadas": []
+  },
+  "ladoConocido": 12,
+  "rubros": [
+    {
+      "label": "Sponsorindtægter",
+      "lado": "revenue",
+      "page": 14,
+      "section": "Randers FC A/S / 2014/15 2013/14 / Note — Resultatopgørelse DKK 1.000 DKK / Perioden 1. juli - 30. juni",
+      "values": [
+        30.281789
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por patrocinio"
+    },
+    {
+      "label": "TV-indtægter",
+      "lado": "revenue",
+      "page": 14,
+      "section": "Randers FC A/S / 2014/15 2013/14 / Note — Resultatopgørelse DKK 1.000 DKK / Perioden 1. juli - 30. juni",
+      "values": [
+        22.8713
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por televisión"
+    },
+    {
+      "label": "Entré og kampindtægter",
+      "lado": "revenue",
+      "page": 14,
+      "section": "Randers FC A/S / 2014/15 2013/14 / Note — Resultatopgørelse DKK 1.000 DKK / Perioden 1. juli - 30. juni",
+      "values": [
+        6.419549
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por taquilla y partidos"
+    },
+    {
+      "label": "Øvrige indtægter",
+      "lado": "revenue",
+      "page": 14,
+      "section": "Randers FC A/S / 2014/15 2013/14 / Note — Resultatopgørelse DKK 1.000 DKK / Perioden 1. juli - 30. juni",
+      "values": [
+        7.560427
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Sponsorudgifter",
+      "lado": "expense",
+      "page": 14,
+      "section": "Randers FC A/S / 2014/15 2013/14 / Note — Resultatopgørelse DKK 1.000 DKK / Perioden 1. juli - 30. juni",
+      "values": [
+        -5.012592
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de patrocinio"
+    },
+    {
+      "label": "Kampafvikling",
+      "lado": null,
+      "page": 14,
+      "section": "Randers FC A/S / 2014/15 2013/14 / Note — Resultatopgørelse DKK 1.000 DKK / Perioden 1. juli - 30. juni",
+      "values": [
+        -8.327418
+      ],
+      "origen": "estado 1",
+      "glosa": "Organización de partidos"
+    },
+    {
+      "label": "Sportslige udgifter",
+      "lado": "expense",
+      "page": 14,
+      "section": "Randers FC A/S / 2014/15 2013/14 / Note — Resultatopgørelse DKK 1.000 DKK / Perioden 1. juli - 30. juni",
+      "values": [
+        -2.427186
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos deportivos"
+    },
+    {
+      "label": "Talentudvikling",
+      "lado": null,
+      "page": 14,
+      "section": "Randers FC A/S / 2014/15 2013/14 / Note — Resultatopgørelse DKK 1.000 DKK / Perioden 1. juli - 30. juni",
+      "values": [
+        -2.566068
+      ],
+      "origen": "estado 1",
+      "glosa": "Desarrollo de talentos"
+    },
+    {
+      "label": "Transferudgifter og leje af spillere",
+      "lado": "expense",
+      "page": 14,
+      "section": "Randers FC A/S / 2014/15 2013/14 / Note — Resultatopgørelse DKK 1.000 DKK / Perioden 1. juli - 30. juni",
+      "values": [
+        -0.073491
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de traspasos y cesión de jugadores"
+    },
+    {
+      "label": "1 Løn- og personaleomkostninger",
+      "lado": "expense",
+      "page": 14,
+      "section": "Randers FC A/S / 2014/15 2013/14 / Note — Resultatopgørelse DKK 1.000 DKK / Perioden 1. juli - 30. juni",
+      "values": [
+        -32.20277
+      ],
+      "origen": "estado 1",
+      "glosa": "1 Gastos de personal"
+    },
+    {
+      "label": "Udgifter Lounge og Skybokse",
+      "lado": "expense",
+      "page": 14,
+      "section": "Øvrige udgifter -133.299 -177",
+      "values": [
+        -4.344198
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos de salas VIP y palcos"
+    },
+    {
+      "label": "1 Løn- og personaleomkostninger, administration",
+      "lado": "expense",
+      "page": 14,
+      "section": "Øvrige udgifter -133.299 -177",
+      "values": [
+        -5.803899
+      ],
+      "origen": "estado 2",
+      "glosa": "1 Gastos de personal, administración"
+    },
+    {
+      "label": "Administrationsomkostninger",
+      "lado": "expense",
+      "page": 14,
+      "section": "Øvrige udgifter -133.299 -177",
+      "values": [
+        -2.495094
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Afskrivninger, anlægsaktiver",
+      "lado": "expense",
+      "page": 14,
+      "section": "Øvrige udgifter -133.299 -177",
+      "values": [
+        -4.654293
+      ],
+      "origen": "estado 2",
+      "glosa": "Amortización del inmovilizado"
+    },
+    {
+      "label": "metode",
+      "lado": null,
+      "page": 14,
+      "section": "4 Skat af årets resultat 119.421 -547 / Årets resultat 115.991 2.637 / Forslag til resultatdisponering: / Henlæggelse til reserve for nettoopskrivning efter indre værdis",
+      "values": [
+        1234.969
+      ],
+      "origen": "estado 4",
+      "glosa": "Método"
+    }
+  ]
+}

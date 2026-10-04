@@ -1,0 +1,1802 @@
+{
+  "md": "Clubes/Brasil/São Paulo/demonstracoes-financeiras-2020-2021.md",
+  "pdf": "Clubes/Brasil/São Paulo/demonstracoes-financeiras-2020-2021.pdf",
+  "club": "saopaulo-br",
+  "year": 2021,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:54:05.743Z",
+  "tieOuts": {
+    "cierran": 122,
+    "noCierran": 25
+  },
+  "warnings": [
+    "7 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "18 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 158,
+    "notasUsadas": [
+      "28",
+      "6",
+      "25"
+    ]
+  },
+  "ladoConocido": 139,
+  "rubros": [
+    {
+      "label": "Futebol profissional e da base",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        432.847
+      ],
+      "origen": "estado 4",
+      "glosa": "Fútbol profesional y formativo"
+    },
+    {
+      "label": "Negociação de atestados liberatórios de atletas (nota 21)",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        121.138
+      ],
+      "origen": "estado 4",
+      "glosa": "Traspaso de derechos federativos de deportistas (nota 21)"
+    },
+    {
+      "label": "Direitos de transmissão de TV",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        194.814
+      ],
+      "origen": "estado 4",
+      "glosa": "Derechos de retransmisión televisiva"
+    },
+    {
+      "label": "Premiações em campeonatos",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        48.235
+      ],
+      "origen": "estado 4",
+      "glosa": "Premios por competiciones"
+    },
+    {
+      "label": "Publicidade e patrocínio",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        33.06
+      ],
+      "origen": "estado 4",
+      "glosa": "Publicidad y patrocinio"
+    },
+    {
+      "label": "Projeto sócio torcedor",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        9.517
+      ],
+      "origen": "estado 4",
+      "glosa": "Programa de socios abonados"
+    },
+    {
+      "label": "Arrecadação de jogos",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        8.46
+      ],
+      "origen": "estado 4",
+      "glosa": "Recaudación por partidos"
+    },
+    {
+      "label": "Licenciamento da marca",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        15.984
+      ],
+      "origen": "estado 4",
+      "glosa": "Licencias de marca"
+    },
+    {
+      "label": "Outras receitas",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        1.639
+      ],
+      "origen": "estado 4",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Sociais e esportes amadores",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        28.814
+      ],
+      "origen": "estado 4",
+      "glosa": "Actividades sociales y deportes amateurs"
+    },
+    {
+      "label": "Contribuições e taxas",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        23.063
+      ],
+      "origen": "estado 4",
+      "glosa": "Cuotas y tasas"
+    },
+    {
+      "label": "Departamentos e esportes amadores",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        3.572
+      ],
+      "origen": "estado 4",
+      "glosa": "Departamentos y deportes amateurs"
+    },
+    {
+      "label": "Aluguéis e patrocínios",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        2.179
+      ],
+      "origen": "estado 4",
+      "glosa": "Alquileres y patrocinios"
+    },
+    {
+      "label": "Esportes Profissionais",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        0.729
+      ],
+      "origen": "estado 4",
+      "glosa": "Deportes profesionales"
+    },
+    {
+      "label": "Patrocínios",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        0.729
+      ],
+      "origen": "estado 4",
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Estádio",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        13.845
+      ],
+      "origen": "estado 4",
+      "glosa": "Estadio"
+    },
+    {
+      "label": "Camarotes e cadeiras cativas",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        3.443
+      ],
+      "origen": "estado 4",
+      "glosa": "Palcos y asientos reservados"
+    },
+    {
+      "label": "Publicidade",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        6.607
+      ],
+      "origen": "estado 4",
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Aluguéis",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        0.714
+      ],
+      "origen": "estado 4",
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Outras receitas",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        3.081
+      ],
+      "origen": "estado 4",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Deduções",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        -10.908
+      ],
+      "origen": "estado 4",
+      "glosa": "Deducciones"
+    },
+    {
+      "label": "Tributos",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        -0.178
+      ],
+      "origen": "estado 4",
+      "glosa": "Tributos"
+    },
+    {
+      "label": "Direito de Arena",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        -10.73
+      ],
+      "origen": "estado 4",
+      "glosa": "Derecho de arena"
+    },
+    {
+      "label": "Brenner Souza da Silva",
+      "lado": null,
+      "page": 7,
+      "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+      "values": [
+        69.442
+      ],
+      "origen": "estado 50",
+      "glosa": "Brenner Souza da Silva"
+    },
+    {
+      "label": "Calebe Gonçalves Pereira da Silva",
+      "lado": null,
+      "page": 7,
+      "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+      "values": [
+        0.5
+      ],
+      "origen": "estado 50",
+      "glosa": "Calebe Gonçalves Pereira da Silva"
+    },
+    {
+      "label": "Weverson Moreira da Costa",
+      "lado": null,
+      "page": 7,
+      "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+      "values": [
+        1.9
+      ],
+      "origen": "estado 50",
+      "glosa": "Weverson Moreira da Costa"
+    },
+    {
+      "label": "Gabriel Novaes Fernandes",
+      "lado": null,
+      "page": 7,
+      "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+      "values": [
+        6.64
+      ],
+      "origen": "estado 50",
+      "glosa": "Gabriel Novaes Fernandes"
+    },
+    {
+      "label": "Helio Junio Nunes de Castro",
+      "lado": null,
+      "page": 7,
+      "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+      "values": [
+        23.567
+      ],
+      "origen": "estado 50",
+      "glosa": "Helio Junio Nunes de Castro"
+    },
+    {
+      "label": "Denner Gomes Clemente",
+      "lado": null,
+      "page": 7,
+      "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+      "values": [
+        3.984
+      ],
+      "origen": "estado 50",
+      "glosa": "Denner Gomes Clemente"
+    },
+    {
+      "label": "Paulo Henrique Pereira da Silva",
+      "lado": null,
+      "page": 7,
+      "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+      "values": [
+        8.44
+      ],
+      "origen": "estado 50",
+      "glosa": "Paulo Henrique Pereira da Silva"
+    },
+    {
+      "label": "Diversos",
+      "lado": null,
+      "page": 7,
+      "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+      "values": [
+        4.309
+      ],
+      "origen": "estado 50",
+      "glosa": "Varios"
+    },
+    {
+      "label": "Diversos",
+      "lado": null,
+      "page": 7,
+      "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+      "values": [
+        3.628
+      ],
+      "origen": "estado 50",
+      "glosa": "Varios"
+    },
+    {
+      "label": "Diversos",
+      "lado": null,
+      "page": 7,
+      "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+      "values": [
+        0.7
+      ],
+      "origen": "estado 50",
+      "glosa": "Varios"
+    },
+    {
+      "label": "Brenner Souza da Silva",
+      "lado": null,
+      "page": 5,
+      "section": "ATLETAS 2020",
+      "values": [
+        26
+      ],
+      "origen": "nota 28 (ancla 51)",
+      "ancla": "Total",
+      "glosa": "Brenner Souza da Silva"
+    },
+    {
+      "label": "Total",
+      "lado": null,
+      "page": 7,
+      "section": "2020",
+      "values": [
+        158.609
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Total"
+    },
+    {
+      "label": "Gabriel Davi Gomes Sara",
+      "lado": null,
+      "page": 5,
+      "section": "ATLETAS 2020",
+      "values": [
+        33
+      ],
+      "origen": "nota 28 (ancla 51)",
+      "ancla": "Total",
+      "glosa": "Gabriel Davi Gomes Sara"
+    },
+    {
+      "label": "Paulo Henrique Pereira da Silva",
+      "lado": null,
+      "page": 5,
+      "section": "ATLETAS 2020",
+      "values": [
+        5
+      ],
+      "origen": "nota 28 (ancla 51)",
+      "ancla": "Total",
+      "glosa": "Paulo Henrique Pereira da Silva"
+    },
+    {
+      "label": "Perdas estimadas/provisões para contingências",
+      "lado": null,
+      "page": 2,
+      "section": "### DEMONSTRAÇÕES DO VALOR ADICIONADO / #### PARA OS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        -18.969
+      ],
+      "origen": "nota 6 (ancla 51>28)",
+      "ancla": "Total",
+      "glosa": "Pérdidas estimadas / provisiones para contingencias"
+    },
+    {
+      "label": "Provisão de impairment atletas profissionais",
+      "lado": null,
+      "page": 2,
+      "section": "### DEMONSTRAÇÕES DO VALOR ADICIONADO / #### PARA OS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+      "values": [
+        -8.277
+      ],
+      "origen": "nota 6 (ancla 51>28)",
+      "ancla": "Total",
+      "glosa": "Provisión por deterioro de valor de deportistas profesionales"
+    },
+    {
+      "label": "Jonas Gabriel da Silva Junior",
+      "lado": null,
+      "page": 5,
+      "section": "ATLETAS 2020",
+      "values": [
+        1
+      ],
+      "origen": "nota 28 (ancla 51)",
+      "ancla": "Total",
+      "glosa": "Jonas Gabriel da Silva Junior"
+    },
+    {
+      "label": "Igor Silveira Gomes",
+      "lado": null,
+      "page": 5,
+      "section": "ATLETAS 2020",
+      "values": [
+        40
+      ],
+      "origen": "nota 28 (ancla 51)",
+      "ancla": "Total",
+      "glosa": "Igor Silveira Gomes"
+    },
+    {
+      "label": "Luan Vinicius da Silva Santos",
+      "lado": null,
+      "page": 5,
+      "section": "ATLETAS 2020",
+      "values": [
+        25
+      ],
+      "origen": "nota 28 (ancla 51)",
+      "ancla": "Total",
+      "glosa": "Luan Vinicius da Silva Santos"
+    },
+    {
+      "label": "Diversos",
+      "lado": null,
+      "page": 7,
+      "section": "2020",
+      "values": [
+        0.704
+      ],
+      "origen": "estado 51",
+      "glosa": "Varios"
+    },
+    {
+      "label": "Diversos",
+      "lado": null,
+      "page": 7,
+      "section": "2020",
+      "values": [
+        0.604
+      ],
+      "origen": "estado 51",
+      "glosa": "Varios"
+    },
+    {
+      "label": "Futebol profissional e de base",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -411.958
+      ],
+      "origen": "estado 5",
+      "glosa": "Fútbol profesional y fútbol base"
+    },
+    {
+      "label": "Pessoal",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -166.918
+      ],
+      "origen": "estado 5",
+      "glosa": "Personal"
+    },
+    {
+      "label": "Encargos trabalhistas",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -18.245
+      ],
+      "origen": "estado 5",
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Prêmios",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -4.588
+      ],
+      "origen": "estado 5",
+      "glosa": "Primas"
+    },
+    {
+      "label": "Direito de uso de imagem",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -52.305
+      ],
+      "origen": "estado 5",
+      "glosa": "Derechos de uso de imagen"
+    },
+    {
+      "label": "Baixa do custo de atletas em formação (nota 9.2)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -17.658
+      ],
+      "origen": "estado 5",
+      "glosa": "Baja del coste de deportistas en formación (nota 9.2)"
+    },
+    {
+      "label": "Amortização do custo de atletas formados (nota 9.3)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -10.149
+      ],
+      "origen": "estado 5",
+      "glosa": "Amortización del coste de deportistas formados (nota 9.3)"
+    },
+    {
+      "label": "Amortização/baixa de contratos de atletas profissionais (nota 9.1)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -62.952
+      ],
+      "origen": "estado 5",
+      "glosa": "Amortización/baja de contratos de deportistas profesionales (nota 9.1)"
+    },
+    {
+      "label": "Provisão de impairment atletas profissionais (nota 9.1)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -8.277
+      ],
+      "origen": "estado 5",
+      "glosa": "Provisión por deterioro de valor de deportistas profesionales (nota 9.1)"
+    },
+    {
+      "label": "Mecanismo de solidariedade",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.088
+      ],
+      "origen": "estado 5",
+      "glosa": "Mecanismo de solidaridad"
+    },
+    {
+      "label": "Arbitragens, federações e confederações",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -1.205
+      ],
+      "origen": "estado 5",
+      "glosa": "Arbitrajes, federaciones y confederaciones"
+    },
+    {
+      "label": "Despesas com jogos",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -15.393
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Intermediações sobre negociações c/ atletas (nota 21)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -10.959
+      ],
+      "origen": "estado 5",
+      "glosa": "Intermediaciones en negociaciones con deportistas (nota 21)"
+    },
+    {
+      "label": "Água/Luz/Telefone",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -1.759
+      ],
+      "origen": "estado 5",
+      "glosa": "Agua/electricidad/teléfono"
+    },
+    {
+      "label": "Manutenções",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.616
+      ],
+      "origen": "estado 5",
+      "glosa": "Mantenimiento"
+    },
+    {
+      "label": "Depreciação e amortização (software/marcas)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -3.72
+      ],
+      "origen": "estado 5",
+      "glosa": "Depreciación y amortización (software/marcas)"
+    },
+    {
+      "label": "Gerais",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -1.428
+      ],
+      "origen": "estado 5",
+      "glosa": "Generales"
+    },
+    {
+      "label": "Materiais",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -11.172
+      ],
+      "origen": "estado 5",
+      "glosa": "Materiales"
+    },
+    {
+      "label": "Serviços",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -13.684
+      ],
+      "origen": "estado 5",
+      "glosa": "Servicios"
+    },
+    {
+      "label": "Contingências (nota 17)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -15.636
+      ],
+      "origen": "estado 5",
+      "glosa": "Contingencias (nota 17)"
+    },
+    {
+      "label": "Perdas estimadas (nota 6)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -3.313
+      ],
+      "origen": "estado 5",
+      "glosa": "Pérdidas estimadas (nota 6)"
+    },
+    {
+      "label": "Tributos",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -15.183
+      ],
+      "origen": "estado 5",
+      "glosa": "Tributos"
+    },
+    {
+      "label": "Transferência para custo de formação de atletas (nota 9.2)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        26.887
+      ],
+      "origen": "estado 5",
+      "glosa": "Transferencia al coste de formación de deportistas (nota 9.2)"
+    },
+    {
+      "label": "Sociais e esportes amadores",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -42.094
+      ],
+      "origen": "estado 5",
+      "glosa": "Actividades sociales y deportes amateurs"
+    },
+    {
+      "label": "Pessoal",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -19.821
+      ],
+      "origen": "estado 5",
+      "glosa": "Personal"
+    },
+    {
+      "label": "Encargos trabalhistas",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -2.198
+      ],
+      "origen": "estado 5",
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Arbitragens, federações e confederações",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.734
+      ],
+      "origen": "estado 5",
+      "glosa": "Arbitrajes, federaciones y confederaciones"
+    },
+    {
+      "label": "Despesas com jogos",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -1.595
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Depreciação e amortização (software/marcas)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -3.136
+      ],
+      "origen": "estado 5",
+      "glosa": "Depreciación y amortización (software/marcas)"
+    },
+    {
+      "label": "Manutenções",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.205
+      ],
+      "origen": "estado 5",
+      "glosa": "Mantenimiento"
+    },
+    {
+      "label": "Materiais",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -2.608
+      ],
+      "origen": "estado 5",
+      "glosa": "Materiales"
+    },
+    {
+      "label": "Serviços de Limpeza/Lavanderia/Medicina",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -4.492
+      ],
+      "origen": "estado 5",
+      "glosa": "Servicios de limpieza/lavandería/médicos"
+    },
+    {
+      "label": "Água/Luz/Telefone",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -3.375
+      ],
+      "origen": "estado 5",
+      "glosa": "Agua/electricidad/teléfono"
+    },
+    {
+      "label": "Tributos",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.097
+      ],
+      "origen": "estado 5",
+      "glosa": "Tributos"
+    },
+    {
+      "label": "Gerais",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -1.23
+      ],
+      "origen": "estado 5",
+      "glosa": "Generales"
+    },
+    {
+      "label": "Estádio",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -18.192
+      ],
+      "origen": "estado 5",
+      "glosa": "Estadio"
+    },
+    {
+      "label": "Pessoal",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -2.622
+      ],
+      "origen": "estado 5",
+      "glosa": "Personal"
+    },
+    {
+      "label": "Encargos trabalhistas",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.24
+      ],
+      "origen": "estado 5",
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Despesas gerais e com jogos",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.582
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos generales y de partidos"
+    },
+    {
+      "label": "Depreciação e amortização (software/marcas)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -7.905
+      ],
+      "origen": "estado 5",
+      "glosa": "Depreciación y amortización (software/marcas)"
+    },
+    {
+      "label": "Água/luz/telefone",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -1.161
+      ],
+      "origen": "estado 5",
+      "glosa": "Agua/electricidad/teléfono"
+    },
+    {
+      "label": "Manutenções",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.13
+      ],
+      "origen": "estado 5",
+      "glosa": "Mantenimiento"
+    },
+    {
+      "label": "Materiais",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -1.332
+      ],
+      "origen": "estado 5",
+      "glosa": "Materiales"
+    },
+    {
+      "label": "Serviços de limpeza/lavanderia/medicina",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -3.129
+      ],
+      "origen": "estado 5",
+      "glosa": "Servicios de limpieza/lavandería/médicos"
+    },
+    {
+      "label": "Tributos",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.55
+      ],
+      "origen": "estado 5",
+      "glosa": "Tributos"
+    },
+    {
+      "label": "Administrativas",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -32.289
+      ],
+      "origen": "estado 5",
+      "glosa": "Administrativos"
+    },
+    {
+      "label": "Pessoal",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -16.308
+      ],
+      "origen": "estado 5",
+      "glosa": "Personal"
+    },
+    {
+      "label": "Encargos trabalhistas",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -1.964
+      ],
+      "origen": "estado 5",
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Depreciação e amortização (software/marcas)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -1.393
+      ],
+      "origen": "estado 5",
+      "glosa": "Depreciación y amortización (software/marcas)"
+    },
+    {
+      "label": "Água/luz/telefone",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.876
+      ],
+      "origen": "estado 5",
+      "glosa": "Agua/electricidad/teléfono"
+    },
+    {
+      "label": "Serviços",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -6.233
+      ],
+      "origen": "estado 5",
+      "glosa": "Servicios"
+    },
+    {
+      "label": "Manutenções",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.141
+      ],
+      "origen": "estado 5",
+      "glosa": "Mantenimiento"
+    },
+    {
+      "label": "Contingências (nota 17)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.02
+      ],
+      "origen": "estado 5",
+      "glosa": "Contingencias (nota 17)"
+    },
+    {
+      "label": "Materiais",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -2.643
+      ],
+      "origen": "estado 5",
+      "glosa": "Materiales"
+    },
+    {
+      "label": "Gerais",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.899
+      ],
+      "origen": "estado 5",
+      "glosa": "Generales"
+    },
+    {
+      "label": "Tributos",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -0.136
+      ],
+      "origen": "estado 5",
+      "glosa": "Tributos"
+    },
+    {
+      "label": "Rateios de serviços de alimentação, transporte e lavanderia.",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        1.029
+      ],
+      "origen": "estado 5",
+      "glosa": "Distribución de costes de servicios de alimentación, transporte y lavandería."
+    },
+    {
+      "label": "Encargos financeiros",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -55.508
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Receitas financeiras",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        4.492
+      ],
+      "origen": "estado 5",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Despesas financeiras",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -60
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Encargos e Honorários Parcelamento de Tributos (nota 13)",
+      "lado": "expense",
+      "page": 2,
+      "section": "",
+      "values": [
+        -11.756
+      ],
+      "origen": "estado 5",
+      "glosa": "Recargos y honorarios por aplazamiento de tributos (nota 13)"
+    },
+    {
+      "label": "Bertolucci Assessoria Propaganda Esp. Ltda.",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        578
+      ],
+      "origen": "estado 40",
+      "glosa": "Bertolucci Assessoria Propaganda Esp. Ltda."
+    },
+    {
+      "label": "Bertolucci Assessoria Propaganda Esp. Ltda.",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        21221
+      ],
+      "origen": "estado 40",
+      "glosa": "Bertolucci Assessoria Propaganda Esp. Ltda."
+    },
+    {
+      "label": "Bertolucci Assessoria Propaganda Esp. Ltda.",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        5116
+      ],
+      "origen": "estado 40",
+      "glosa": "Bertolucci Assessoria Propaganda Esp. Ltda."
+    },
+    {
+      "label": "Bertolucci Assessoria Propaganda Esp. Ltda.",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        2652
+      ],
+      "origen": "estado 40",
+      "glosa": "Bertolucci Assessoria Propaganda Esp. Ltda."
+    },
+    {
+      "label": "Bertolucci Assessoria Propaganda Esp. Ltda.",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        4242
+      ],
+      "origen": "estado 40",
+      "glosa": "Bertolucci Assessoria Propaganda Esp. Ltda."
+    },
+    {
+      "label": "Link Assessoria Esportiva",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        4518
+      ],
+      "origen": "estado 40",
+      "glosa": "Link Assessoria Esportiva"
+    },
+    {
+      "label": "Datasoccer Sports Marketing Ltda",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        3052
+      ],
+      "origen": "estado 40",
+      "glosa": "Datasoccer Sports Marketing Ltda"
+    },
+    {
+      "label": "Link Assessoria Esportiva",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        3764
+      ],
+      "origen": "estado 40",
+      "glosa": "Link Assessoria Esportiva"
+    },
+    {
+      "label": "DIS Esporte e Organização de Eventos Ltda.",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        2425
+      ],
+      "origen": "estado 40",
+      "glosa": "DIS Esporte e Organização de Eventos Ltda."
+    },
+    {
+      "label": "Elenko Sports Ltda.",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        1838
+      ],
+      "origen": "estado 40",
+      "glosa": "Elenko Sports Ltda."
+    },
+    {
+      "label": "Nilson Simplício Assessoria Esportiva Ltda.",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        1375
+      ],
+      "origen": "estado 40",
+      "glosa": "Nilson Simplício Assessoria Esportiva Ltda."
+    },
+    {
+      "label": "C.A. Taboão da Serra",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        1200
+      ],
+      "origen": "estado 40",
+      "glosa": "C.A. Taboão da Serra"
+    },
+    {
+      "label": "JD Sports Management A.E. Ltda.",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        1057
+      ],
+      "origen": "estado 40",
+      "glosa": "JD Sports Management A.E. Ltda."
+    },
+    {
+      "label": "Esporte Clube Juventude",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        1024
+      ],
+      "origen": "estado 40",
+      "glosa": "Esporte Clube Juventude"
+    },
+    {
+      "label": "Nato e Zola Sports A. Int. Ltda",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        844
+      ],
+      "origen": "estado 40",
+      "glosa": "Nato e Zola Sports A. Int. Ltda"
+    },
+    {
+      "label": "D&D Assessoria Esportiva Ltda",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        344
+      ],
+      "origen": "estado 40",
+      "glosa": "D&D Assessoria Esportiva Ltda"
+    },
+    {
+      "label": "Leão Borges Participações Ltda.",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        236
+      ],
+      "origen": "estado 40",
+      "glosa": "Leão Borges Participações Ltda."
+    },
+    {
+      "label": "Nilton de Jesus Moreira",
+      "lado": "revenue",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        229
+      ],
+      "origen": "estado 40",
+      "glosa": "Nilton de Jesus Moreira"
+    },
+    {
+      "label": "Encargos Legais de Parcelamentos/Diversos",
+      "lado": "expense",
+      "page": 6,
+      "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+      "values": [
+        2532
+      ],
+      "origen": "estado 40",
+      "glosa": "Recargos legales por aplazamientos/varios"
+    },
+    {
+      "label": "Contratos de televisionamento",
+      "lado": "revenue",
+      "page": 4,
+      "section": "##### 6.1. RECEITAS A APROPRIAR",
+      "values": [
+        71.902
+      ],
+      "origen": "estado 12",
+      "glosa": "Contratos de retransmisión televisiva"
+    },
+    {
+      "label": "Empréstimo de atletas",
+      "lado": "revenue",
+      "page": 4,
+      "section": "##### 6.1. RECEITAS A APROPRIAR",
+      "values": [
+        0.412
+      ],
+      "origen": "estado 12",
+      "glosa": "Cesión de deportistas"
+    },
+    {
+      "label": "Contratos de patrocínio",
+      "lado": "revenue",
+      "page": 4,
+      "section": "##### 6.1. RECEITAS A APROPRIAR",
+      "values": [
+        52.969
+      ],
+      "origen": "estado 12",
+      "glosa": "Contratos de patrocinio"
+    },
+    {
+      "label": "Contratos de locação",
+      "lado": "revenue",
+      "page": 4,
+      "section": "##### 6.1. RECEITAS A APROPRIAR",
+      "values": [
+        0.9
+      ],
+      "origen": "estado 12",
+      "glosa": "Contratos de arrendamiento"
+    },
+    {
+      "label": "Receitas de loterias",
+      "lado": "revenue",
+      "page": 4,
+      "section": "##### 6.1. RECEITAS A APROPRIAR",
+      "values": [
+        4.686
+      ],
+      "origen": "estado 12",
+      "glosa": "Ingresos por loterías"
+    },
+    {
+      "label": "Contratos de cessão de espaço",
+      "lado": "revenue",
+      "page": 4,
+      "section": "##### 6.1. RECEITAS A APROPRIAR",
+      "values": [
+        2.85
+      ],
+      "origen": "estado 12",
+      "glosa": "Contratos de cesión de espacios"
+    },
+    {
+      "label": "Contratos de licenciamento de marca",
+      "lado": "revenue",
+      "page": 4,
+      "section": "##### 6.1. RECEITAS A APROPRIAR",
+      "values": [
+        3.685
+      ],
+      "origen": "estado 12",
+      "glosa": "Contratos de licencia de marca"
+    },
+    {
+      "label": "Contratos de televisionamento",
+      "lado": "revenue",
+      "page": 4,
+      "section": "",
+      "values": [
+        0.07215
+      ],
+      "origen": "estado 13",
+      "glosa": "Contratos de retransmisión televisiva"
+    },
+    {
+      "label": "Empréstimo de atletas",
+      "lado": "revenue",
+      "page": 4,
+      "section": "",
+      "values": [
+        0.002604
+      ],
+      "origen": "estado 13",
+      "glosa": "Cesión de deportistas"
+    },
+    {
+      "label": "Contratos de patrocínio",
+      "lado": "revenue",
+      "page": 4,
+      "section": "",
+      "values": [
+        0.001241
+      ],
+      "origen": "estado 13",
+      "glosa": "Contratos de patrocinio"
+    },
+    {
+      "label": "Contratos de locação",
+      "lado": "revenue",
+      "page": 4,
+      "section": "",
+      "values": [
+        0.0009
+      ],
+      "origen": "estado 13",
+      "glosa": "Contratos de arrendamiento"
+    },
+    {
+      "label": "Receitas de loterias",
+      "lado": "revenue",
+      "page": 4,
+      "section": "",
+      "values": [
+        0.004733
+      ],
+      "origen": "estado 13",
+      "glosa": "Ingresos por loterías"
+    },
+    {
+      "label": "Contratos de cessão de espaço",
+      "lado": "revenue",
+      "page": 4,
+      "section": "",
+      "values": [
+        0.003231
+      ],
+      "origen": "estado 13",
+      "glosa": "Contratos de cesión de espacios"
+    },
+    {
+      "label": "Contratos de licenciamento de marca",
+      "lado": "revenue",
+      "page": 4,
+      "section": "",
+      "values": [
+        0.003152
+      ],
+      "origen": "estado 13",
+      "glosa": "Contratos de licencia de marca"
+    },
+    {
+      "label": "Terrenos",
+      "lado": "expense",
+      "page": 4,
+      "section": "#### 8. IMOBILIZADO LÍQUIDO",
+      "values": [
+        90.795
+      ],
+      "origen": "estado 15",
+      "glosa": "Terrenos"
+    },
+    {
+      "label": "Edificações",
+      "lado": "expense",
+      "page": 4,
+      "section": "#### 8. IMOBILIZADO LÍQUIDO",
+      "values": [
+        93.258
+      ],
+      "origen": "estado 15",
+      "glosa": "Edificaciones"
+    },
+    {
+      "label": "Instalações e benfeitorias",
+      "lado": "expense",
+      "page": 4,
+      "section": "#### 8. IMOBILIZADO LÍQUIDO",
+      "values": [
+        36.377
+      ],
+      "origen": "estado 15",
+      "glosa": "Instalaciones y mejoras"
+    },
+    {
+      "label": "Máquinas e equipamentos",
+      "lado": "expense",
+      "page": 4,
+      "section": "#### 8. IMOBILIZADO LÍQUIDO",
+      "values": [
+        7.598
+      ],
+      "origen": "estado 15",
+      "glosa": "Maquinaria y equipos"
+    },
+    {
+      "label": "Móveis e utensílios",
+      "lado": "expense",
+      "page": 4,
+      "section": "#### 8. IMOBILIZADO LÍQUIDO",
+      "values": [
+        4.139
+      ],
+      "origen": "estado 15",
+      "glosa": "Mobiliario y enseres"
+    },
+    {
+      "label": "Veículos",
+      "lado": "expense",
+      "page": 4,
+      "section": "#### 8. IMOBILIZADO LÍQUIDO",
+      "values": [
+        0.574
+      ],
+      "origen": "estado 15",
+      "glosa": "Vehículos"
+    },
+    {
+      "label": "Obras em andamento",
+      "lado": "expense",
+      "page": 4,
+      "section": "#### 8. IMOBILIZADO LÍQUIDO",
+      "values": [
+        1.007
+      ],
+      "origen": "estado 15",
+      "glosa": "Obras en curso"
+    },
+    {
+      "label": "Edificações",
+      "lado": "expense",
+      "page": 4,
+      "section": "Movimentação do ativo imobilizado:",
+      "values": [
+        148.055
+      ],
+      "origen": "estado 16",
+      "glosa": "Edificaciones"
+    },
+    {
+      "label": "Instalações e benfeitorias",
+      "lado": "expense",
+      "page": 4,
+      "section": "Movimentação do ativo imobilizado:",
+      "values": [
+        116.706
+      ],
+      "origen": "estado 16",
+      "glosa": "Instalaciones y mejoras"
+    },
+    {
+      "label": "Diego Costa",
+      "lado": "expense",
+      "page": 5,
+      "section": "ATLETAS 2021",
+      "values": [
+        17
+      ],
+      "origen": "nota 25 (ancla 16)",
+      "ancla": "Máquinas e equipamentos",
+      "glosa": "Diego Costa"
+    },
+    {
+      "label": "Máquinas e equipamentos",
+      "lado": "expense",
+      "page": 4,
+      "section": "Movimentação do ativo imobilizado:",
+      "values": [
+        22.092
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Maquinaria y equipos"
+    },
+    {
+      "label": "Marcus Vinicius O Alencar",
+      "lado": "expense",
+      "page": 5,
+      "section": "ATLETAS 2021",
+      "values": [
+        6
+      ],
+      "origen": "nota 25 (ancla 16)",
+      "ancla": "Máquinas e equipamentos",
+      "glosa": "Marcus Vinicius O Alencar"
+    },
+    {
+      "label": "Móveis e utensílios",
+      "lado": "expense",
+      "page": 4,
+      "section": "Movimentação do ativo imobilizado:",
+      "values": [
+        19.71
+      ],
+      "origen": "estado 16",
+      "glosa": "Mobiliario y enseres"
+    },
+    {
+      "label": "Veículos",
+      "lado": "expense",
+      "page": 4,
+      "section": "Movimentação do ativo imobilizado:",
+      "values": [
+        2.958
+      ],
+      "origen": "estado 16",
+      "glosa": "Vehículos"
+    },
+    {
+      "label": "Acumulado 2016",
+      "lado": "expense",
+      "page": 5,
+      "section": "##### 9.2. Custo de atletas em formação",
+      "values": [
+        217.352
+      ],
+      "origen": "estado 23",
+      "glosa": "Acumulado 2016"
+    },
+    {
+      "label": "Contratos de atletas profissionais (nota 9.1)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / #### 9. INTANGÍVEL LÍQUIDO",
+      "values": [
+        83.748
+      ],
+      "origen": "estado 18",
+      "glosa": "Contratos de deportistas profesionales (nota 9.1)"
+    },
+    {
+      "label": "Custo de atletas em formação (nota 9.2)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / #### 9. INTANGÍVEL LÍQUIDO",
+      "values": [
+        27.985
+      ],
+      "origen": "estado 18",
+      "glosa": "Coste de deportistas en formación (nota 9.2)"
+    },
+    {
+      "label": "Custo de atletas formados (nota 9.3)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / #### 9. INTANGÍVEL LÍQUIDO",
+      "values": [
+        18.336
+      ],
+      "origen": "estado 18",
+      "glosa": "Coste de deportistas formados (nota 9.3)"
+    },
+    {
+      "label": "Softwares",
+      "lado": "expense",
+      "page": 5,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / #### 9. INTANGÍVEL LÍQUIDO",
+      "values": [
+        0.905
+      ],
+      "origen": "estado 18",
+      "glosa": "Software"
+    },
+    {
+      "label": "Marcas e patentes",
+      "lado": "expense",
+      "page": 5,
+      "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / #### 9. INTANGÍVEL LÍQUIDO",
+      "values": [
+        0.679
+      ],
+      "origen": "estado 18",
+      "glosa": "Marcas y patentes"
+    },
+    {
+      "label": "Acumulado até 2018",
+      "lado": "expense",
+      "page": 5,
+      "section": "##### 9.1 Contratos de atletas profissionais",
+      "values": [
+        -0.007142
+      ],
+      "origen": "estado 19",
+      "glosa": "Acumulado hasta 2018"
+    },
+    {
+      "label": "Acumulado 2018",
+      "lado": "expense",
+      "page": 5,
+      "section": "##### 9.3. Custo de atletas formados",
+      "values": [
+        -0.001692
+      ],
+      "origen": "estado 24",
+      "glosa": "Acumulado 2018"
+    }
+  ]
+}

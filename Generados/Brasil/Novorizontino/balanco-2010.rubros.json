@@ -1,0 +1,60 @@
+{
+  "md": "Clubes/Brasil/Novorizontino/balanco-2010.md",
+  "pdf": "Clubes/Brasil/Novorizontino/balanco-2010.pdf",
+  "club": "novorizontino-br",
+  "year": null,
+  "generatedAt": "2026-10-03T03:11:48.132Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Convênio P.M.N.H nº 21/10",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.07
+      ],
+      "glosa": "Convenio P.M.N.H. n.º 21/10"
+    },
+    {
+      "label": "Doações, Receitas de Patrocínio, Locação de Espaço, e Ev",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.06035
+      ],
+      "glosa": "Donaciones, ingresos por patrocinio, alquiler de espacios y eventos"
+    },
+    {
+      "label": "Administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.040536
+      ],
+      "glosa": "Gastos administrativos"
+    },
+    {
+      "label": "Despesas Gerais e Manutenção",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.056758
+      ],
+      "glosa": "Gastos generales y mantenimiento"
+    },
+    {
+      "label": "Projeto Escola de Futebol -Conv. Nº 21/10",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.066653
+      ],
+      "glosa": "Proyecto Escuela de Fútbol - Conv. N.º 21/10"
+    }
+  ]
+}

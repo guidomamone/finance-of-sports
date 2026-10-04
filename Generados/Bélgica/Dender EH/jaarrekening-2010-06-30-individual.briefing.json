@@ -1,0 +1,313 @@
+{
+  "club": "dender-be",
+  "year": 2010,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Dender EH/jaarrekening-2010-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:54:52.889Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 55,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 7,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 3,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "50/53",
+          "values": [
+            "7.192",
+            "4.741"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "85.041",
+            "244.802"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "49.246",
+            "27.320"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "4.055.966",
+            "4.361.110"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 4,
+      "section": "PASSIVA / EIGEN VERMOGEN 10/15 1.132.173 935.592",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overgedragen winst (verlies) (+)/(-)",
+          "values": [
+            "-206.827",
+            "-446.908"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaalsubsidies",
+          "values": [
+            "1.339.000",
+            "1.382.500"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "VOORZIENINGEN 43 f 16",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "2.923.793",
+            "3.425.518"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 44 {",
+          "values": [
+            "1.556.192",
+            "1.082.782"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "1.556.192",
+            "1.082.782"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Niet-rentedragend of gekoppeld aan een abnormaal / lage rente 1791 / Borgtochten ontvangen in contanten 1792 / Schulden op ten hoogste één jaar 4.4 | 42/48 1.080.699 2.267.736 / Schulden op meer dan één jaar die binnen het jaar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "vervallen",
+          "values": [
+            "115.273",
+            "455.785"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden",
+          "values": [
+            "1.653",
+            "500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kredietinstellingen 430/8",
+          "values": [
+            "1.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige leningen 439",
+          "values": [
+            "500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "717.553",
+            "1.122.093"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "717.553",
+            "1.122.093"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 12.100 / Schulden met betrekking tot belastingen,",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "bezoldigingen en sociale lasten",
+          "values": [
+            "220.290",
+            "189.858"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "70.108",
+            "51.330"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "150.182",
+            "138.528"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diverse schulden",
+          "values": [
+            "13.830"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Vervallen obligaties, coupons en borgtochten / ontvangen in contanten 480/8 / Andere rentedragende schulden 4890 / Andere schulden, niet-rentedragend of gekoppeld",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "aan een abnormaal lage rente 4891",
+          "values": [
+            "13.830"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 492/3",
+          "values": [
+            "286.902",
+            "75.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "4.055.966",
+            "4.361.110"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "SOCIALE BALANS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Mannen 120 26",
+          "values": [
+            "26,7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "lager onderwijs 1200 23",
+          "values": [
+            "23,7"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 4,
+    "results": [
+      {
+        "label": "50/53",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "50/53",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "54/58",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "54/58",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "490/1",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "490/1",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "20/58",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "20/58",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Dender EH",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

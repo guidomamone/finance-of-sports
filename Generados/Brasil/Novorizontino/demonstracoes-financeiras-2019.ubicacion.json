@@ -1,0 +1,237 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.pdf",
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T01:44:28.012Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    41,
+    44
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    77,
+    80
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    105,
+    108
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    133,
+    136
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    188,
+    211
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    226,
+    237
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    252,
+    256
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    272,
+    278
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    292,
+    323
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    426,
+    436
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    548,
+    552
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 21,
+   "lineas": [
+    564,
+    568
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    574,
+    577
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    583,
+    587
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 22,
+   "lineas": [
+    597,
+    602
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    610,
+    620
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 24,
+   "lineas": [
+    636,
+    675
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 25,
+   "lineas": [
+    683,
+    688
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 25,
+   "lineas": [
+    692,
+    697
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 26,
+   "lineas": [
+    717,
+    721
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 26,
+   "lineas": [
+    729,
+    736
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 27,
+   "lineas": [
+    758,
+    769
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 28,
+   "lineas": [
+    781,
+    787
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 29,
+   "lineas": [
+    805,
+    816
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 29,
+   "lineas": [
+    820,
+    824
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 29,
+   "lineas": [
+    828,
+    839
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b22",
+  "b25"
+ ],
+ "notas_gastos": [
+  "b23",
+  "b24"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2019",
+ "columna_anterior": "2018 (Reapresentado)",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados: Demonstração dos Déficits (b6, pág. 9). Notas: 16 Receita líquida (b22), 17 Custos (b23), 18 Despesas gerais e administrativas (b24), 19 Outras receitas operacionais (b25). Las menciones a 'Consolidado' en las páginas 4-6 son del membrete del auditor; los estados son de la entidad individual. Se excluyen el balance, el resultado abrangente, las mutaciones, el flujo de caja y la reapresentação (b10)."
+}

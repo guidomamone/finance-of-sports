@@ -1,0 +1,509 @@
+{
+ "md": "Clubes/Argentina/Racing/balance2010.md",
+ "pdf": "Clubes/Argentina/Racing/balance2010.pdf",
+ "club": "racing",
+ "year": 2010,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T01:15:26.115Z",
+ "tieOuts": {
+  "cierran": 1,
+  "noCierran": 0
+ },
+ "warnings": [
+  "11 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "ladoConocido": 42,
+ "rubros": [
+  {
+   "label": "Generales (Anexo II) $ 28.373.843 $",
+   "lado": null,
+   "page": 10,
+   "section": "RACING CLUB ASOCIACION CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "values": [
+    "18.267.409"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Especìficos (Anexo II) $ 40.491.858 $",
+   "lado": null,
+   "page": 10,
+   "section": "RACING CLUB ASOCIACION CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "values": [
+    "57.615.284"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Diversos (Anexo II) $ 4.071.112 $",
+   "lado": null,
+   "page": 10,
+   "section": "RACING CLUB ASOCIACION CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "values": [
+    "2.326.368"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Generales (Anexo III) $ 28.966.457 $",
+   "lado": "expense",
+   "page": 10,
+   "section": "Gastos",
+   "values": [
+    "21.372.687"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Especìficos (Anexo III) $ 37.959.889 $",
+   "lado": "expense",
+   "page": 10,
+   "section": "Gastos",
+   "values": [
+    "38.065.448"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Intereses Financieros $0 $",
+   "lado": "revenue",
+   "page": 10,
+   "section": "Resultados Financieros / Ingresos",
+   "values": [
+    "58.230"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Diferencias de Cambio (Anexo II) $ 1.596.503 $",
+   "lado": "revenue",
+   "page": 10,
+   "section": "Resultados Financieros / Ingresos",
+   "values": [
+    "1.499.065"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Intereses Financieros $ 1.987.747 $",
+   "lado": "expense",
+   "page": 10,
+   "section": "Egresos",
+   "values": [
+    "622.539"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Diferencias de Cambio $ 2.046.242 $",
+   "lado": "expense",
+   "page": 10,
+   "section": "Egresos",
+   "values": [
+    "1.096.718"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos por Televisaciòn AFA $ 33.174.804 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Orìgen Ordinario de Recursos",
+   "values": [
+    "15.831.750"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Partidos Oficiales y Otros $ 5.898.562 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Orìgen Ordinario de Recursos",
+   "values": [
+    "5.929.775"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos por Publicidad y Sponsoreo $ 5.914.865 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Orìgen Ordinario de Recursos",
+   "values": [
+    "6.159.645"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros Ingresos Ordinarios Comunes $ 3.570.292 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Orìgen Ordinario de Recursos",
+   "values": [
+    "697.107"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos por Socios $ 14.639.272 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Orìgen Ordinario de Recursos",
+   "values": [
+    "8.687.592"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otras Actividades Deportivas $ 499.756 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Orìgen Ordinario de Recursos",
+   "values": [
+    "302.549"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos S. Social / Anexo / Colegio $ 2.156.364 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Orìgen Ordinario de Recursos",
+   "values": [
+    "1.452.524"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Transferencia de Jugadores $ 3.676.224 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Orìgen Extraordinario de Recursos",
+   "values": [
+    "32.905.749"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros Aportes / Cobros Fùtbol $ 16.732.037 $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Orìgen Extraordinario de Recursos",
+   "values": [
+    "14.805.987"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Futbol Profesional / Partidos Oficiales $ 49.445.350 $",
+   "lado": null,
+   "page": 11,
+   "section": "Egreso Ordinario de Recursos",
+   "values": [
+    "59.804.570"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Instalaciones / Bs Uso / Otros $ 2.395.854 $",
+   "lado": null,
+   "page": 11,
+   "section": "Egreso Ordinario de Recursos",
+   "values": [
+    "1.465.926"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Remuneraciones / Cargas Sociales / Impuestos $ 20.551.942 $",
+   "lado": null,
+   "page": 11,
+   "section": "Egreso Ordinario de Recursos",
+   "values": [
+    "14.970.013"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Aplicaciones Varias / Mantenimiento $ 16.508.915 $",
+   "lado": null,
+   "page": 11,
+   "section": "Egreso Ordinario de Recursos",
+   "values": [
+    "1.589.158"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Cuotas Sociales $ 13.119.809 $ 13.119.809 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES         ESPECIFICOS       DIVERSOS        TOTAL AL 31/10/10 TOTAL AL 31/10/09 / DETALLE",
+   "values": [
+    "7.643.229"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Televisaciòn / Televisiòn AFA $ 23.739.515 $ 23.739.515 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES         ESPECIFICOS       DIVERSOS        TOTAL AL 31/10/10 TOTAL AL 31/10/09 / DETALLE",
+   "values": [
+    "14.534.089"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Campeonatos Oficiales $ 5.373.862 $ 5.373.862 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES         ESPECIFICOS       DIVERSOS        TOTAL AL 31/10/10 TOTAL AL 31/10/09 / DETALLE",
+   "values": [
+    "6.828.116"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros Torneos $ 525.000 $ 525.000 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES         ESPECIFICOS       DIVERSOS        TOTAL AL 31/10/10 TOTAL AL 31/10/09 / DETALLE",
+   "values": [
+    "473.000"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos Alquiler $ 878.360 $ 878.360 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES         ESPECIFICOS       DIVERSOS        TOTAL AL 31/10/10 TOTAL AL 31/10/09 / DETALLE",
+   "values": [
+    "504.617"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos Publicidad $ 10.242.055 $ 10.242.055 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES         ESPECIFICOS       DIVERSOS        TOTAL AL 31/10/10 TOTAL AL 31/10/09 / DETALLE",
+   "values": [
+    "5.458.068"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros Ingresos Diversos $ 2.009.035 $ 2.834.064 $ 1.611.683 $ 6.454.782 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES         ESPECIFICOS       DIVERSOS        TOTAL AL 31/10/10 TOTAL AL 31/10/09 / DETALLE",
+   "values": [
+    "502.250"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros Ingresos Deportivos $ 549.346 $ 549.346 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES         ESPECIFICOS       DIVERSOS        TOTAL AL 31/10/10 TOTAL AL 31/10/09 / DETALLE",
+   "values": [
+    "727.336"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Transferencia de Jugadores $ 6.467.778 $ 3.676.224 $ 10.144.002 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES         ESPECIFICOS       DIVERSOS        TOTAL AL 31/10/10 TOTAL AL 31/10/09 / DETALLE",
+   "values": [
+    "40.441.574"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos Sede Villa del Parque $ 546.590 $ 546.590 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES         ESPECIFICOS       DIVERSOS        TOTAL AL 31/10/10 TOTAL AL 31/10/09 / DETALLE",
+   "values": [
+    "504.279"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos Colegio $ 1.363.493 $ 1.363.493 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES         ESPECIFICOS       DIVERSOS        TOTAL AL 31/10/10 TOTAL AL 31/10/09 / DETALLE",
+   "values": [
+    "592.503"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Desafectaciòn Previsiones / Provisiones $ 370.152 $ 370.152 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Recursos Extraordinarios",
+   "values": [
+    "8.994.400"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Condonaciones $0 $0 $",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Recursos Extraordinarios",
+   "values": [
+    "201.440"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Sueldos del Personal $ 22.070.956 $ 22.070.956 $",
+   "lado": "expense",
+   "page": 14,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "values": [
+    "14.309.759"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Cargas Sociales $ 2.723.000 $ 2.723.000 $",
+   "lado": "expense",
+   "page": 14,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "values": [
+    "2.260.641"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Futbol Profesional $ 27.008.442 $ 27.008.442 $",
+   "lado": "expense",
+   "page": 14,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "values": [
+    "24.826.296"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Organizaciòn de Partidos $ 4.741.876 $ 4.741.876 $",
+   "lado": "expense",
+   "page": 14,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "values": [
+    "4.619.621"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Grales Actividades Deportivas / Soc. $ 2.189.667 $ 4.716.977 $ 6.906.644 $",
+   "lado": "expense",
+   "page": 14,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "values": [
+    "3.359.679"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Mantenimiento $ 1.490.771 $ 139.934 $ 1.630.705 $",
+   "lado": "expense",
+   "page": 14,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "values": [
+    "1.214.576"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Sellados, Multas, Gtos Bancarios $ 492.063 $ 492.063 $",
+   "lado": "expense",
+   "page": 14,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "values": [
+    "260.240"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Colegio $ 171.630 $ 171.630 $",
+   "lado": "expense",
+   "page": 14,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "values": [
+    "958.539"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Sede Villa del Parque $ 517.030 $ 517.030 $",
+   "lado": "expense",
+   "page": 14,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "values": [
+    "1.875.632"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Costo Transferencia de Jugadores $ 664.000 $ 664.000 $",
+   "lado": "expense",
+   "page": 14,
+   "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+   "values": [
+    "5.753.152"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Blanquic Crèditos Por Ventas/transf Jugadores u$s 2.375.116 $ 3,3480 $ 7.951.888 $ 7.951.888 $",
+   "lado": "revenue",
+   "page": 15,
+   "section": "Creditos por venta/transferencia de Jugadores",
+   "values": [
+    "7.951.888"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Blanquic Crèditos Por Ventas/transf Jugadores Euros 2.148.000 $ 4,2677 $ 9.167.019 $ 9.167.019 $",
+   "lado": "revenue",
+   "page": 15,
+   "section": "Creditos por venta/transferencia de Jugadores",
+   "values": [
+    "9.167.019"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Crèditos Por Ventas/transferencia Jugadores u$s 129.103 $ 3,9170 $ 505.696 $ 505.696 $",
+   "lado": "revenue",
+   "page": 15,
+   "section": "Creditos por venta/transferencia de Jugadores",
+   "values": [
+    "264.530"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Crèditos Por Ventas/transferencia Jugadores Euros 0 $ 5,4485 $0 $0 $",
+   "lado": "revenue",
+   "page": 15,
+   "section": "Creditos por venta/transferencia de Jugadores",
+   "values": [
+    "1.376.900"
+   ],
+   "columns": null
+  }
+ ]
+}

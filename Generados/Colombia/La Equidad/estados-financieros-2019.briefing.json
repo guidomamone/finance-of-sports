@@ -1,0 +1,4528 @@
+{
+  "club": "la-equidad",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/La Equidad/estados-financieros-2019.md",
+  "generatedAt": "2026-09-30T21:58:53.432Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 99,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 53,
+  "relevantTableCount": 12,
+  "tables": [
+    {
+      "page": 2,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # La composición accionaria del club al 31 de diciembre de 2019 es:",
+      "columns": [
+        "ACCIONISTAS",
+        "N° ACCIONES",
+        "% PARTICIPACION",
+        "CAPITAL"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Menos del 1% de participación",
+          "values": [
+            "2.860",
+            "0,9%",
+            "$ 14.300.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fundación Desarrollo Solidaridad Fundequidad",
+          "values": [
+            "150.000",
+            "49,5%",
+            "$ 750.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "La equidad Seguros de Vida O.C.",
+          "values": [
+            "75.000",
+            "24,8%",
+            "$ 375.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "La Equidad Seguros O.C.",
+          "values": [
+            "75.000",
+            "24,8%",
+            "$ 375.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "302.860",
+            "100,00%",
+            "$ 1.514.300.000"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Separación de Terrenos y Edificios / # ACTIVO VIDA UTIL ESTIMADA EN AÑOS",
+      "columns": [
+        "a) Edificaciones",
+        "30 años"
+      ],
+      "rows": [
+        {
+          "rawLabel": "b) Maquinaria",
+          "values": [
+            "10 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "c) Muebles y enceres",
+          "values": [
+            "10 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "d) Equipo de oficina",
+          "values": [
+            "10 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "e) Equipo de cómputo",
+          "values": [
+            "3 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "f) Equipo de comunicaciones",
+          "values": [
+            "5 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "g) Vehículos",
+          "values": [
+            "5 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "h) Sillas de oficina",
+          "values": [
+            "10 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "i) Mejoras en propiedades ajenas",
+          "values": [
+            "Tiempo del contrato"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "j) Componentes",
+          "values": [
+            "Tiempo de uso esperado"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Arrendadores Arrendamiento Operativo / # 5. Efectivo y Equivalente",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Efectivo y Equivalente",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caja General",
+          "values": [
+            "318",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cajas Menores",
+          "values": [
+            "0",
+            "2.344"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos Moneda Nacional",
+          "values": [
+            "70.262",
+            "28.219"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remesas en Transito",
+          "values": [
+            "21.365",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "91.945",
+            "30.563"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "# 6. Cuentas Comerciales Por Cobrar y Otras Cuentas Por Cobrar",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cuentas por cobrar a Trabajadores",
+          "values": [
+            "88.259",
+            "42.862"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes Nacionales",
+          "values": [
+            "3.649.326",
+            "2.142.100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes Del Exterior",
+          "values": [
+            "193.189",
+            "329.826"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudores comerciales",
+          "values": [
+            "269.834",
+            "279.212"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos Por Cobrar",
+          "values": [
+            "8.546",
+            "372.449"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipos",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisiones",
+          "values": [
+            "-848.356",
+            "-348.407"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Cuentas Comerciales Por Cobrar y Otras Cuentas Por Cobrar",
+          "values": [
+            "3.360.799",
+            "2.818.043"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / ## 7. Inventarios",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Prendas Escuelas",
+          "values": [
+            "175.953",
+            "168.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Camisetas Para la Venta",
+          "values": [
+            "91.237",
+            "111.051"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prendas Para Equipo Profesional",
+          "values": [
+            "191.216",
+            "189.320"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balones",
+          "values": [
+            "72.249",
+            "79.105"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Inventarios",
+          "values": [
+            "530.656",
+            "547.809"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 8. Activos Por Impuestos Corrientes",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Retención en la Fuente",
+          "values": [
+            "874.735",
+            "881.733"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sobrantes en liquidacion Privada de Impuestos",
+          "values": [
+            "9.939",
+            "9.939"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos a las Ventas Retenido",
+          "values": [
+            "-",
+            "33.990"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto de Industria y Comercio",
+          "values": [
+            "-",
+            "7.846"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Activo Por Impuestos Corrientes",
+          "values": [
+            "884.674",
+            "933.508"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "# 9. Otros Activos Financieros",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Fideicomisos de Inversión",
+          "values": [
+            "0",
+            "2.494"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Certificado de Deposito a Termino Fijo",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Otros Activos Financieros",
+          "values": [
+            "0",
+            "2.494"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 10. Propiedad Planta y Equipo",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Urbanos",
+          "values": [
+            "9.461.540",
+            "9.461.540"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mejoras en Bien Ajeno",
+          "values": [
+            "348.453",
+            "348.453"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propiedades de Inversión",
+          "values": [
+            "315.077",
+            "315.077"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria",
+          "values": [
+            "36.998",
+            "36.998"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Muebles y Enseres",
+          "values": [
+            "55.472",
+            "55.472"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipos de Computación y Comunicación",
+          "values": [
+            "106.798",
+            "76.242"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo Medico",
+          "values": [
+            "398.050",
+            "252.197"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autos, Camionetas y Camperos",
+          "values": [
+            "126.496",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "10.848.883",
+            "10.545.978"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construcciones y Edificaciones",
+          "values": [
+            "-78.772",
+            "-25.540"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria y Equipo",
+          "values": [
+            "-27.477",
+            "-25.201"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Oficina",
+          "values": [
+            "-47.950",
+            "-45.585"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Computación y Comunicación",
+          "values": [
+            "-76.213",
+            "-69.301"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo Medico Científico",
+          "values": [
+            "-107.746",
+            "-83.524"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autos, Camionetas y Camperos",
+          "values": [
+            "-6.325",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "-344.482",
+            "-249.152"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Propiedad Planta y Equipo, Propiedad de Inversión",
+          "values": [
+            "10.504.401",
+            "10.296.826"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018",
+      "columns": [
+        "Concepto",
+        "Importe Inicial",
+        "31 de Diciembre 2019",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "Adiciones",
+            "Importe Final",
+            "Depreciaciones"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "9.461.540",
+            "0",
+            "9.461.540",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mejoras en bien ajeno",
+          "values": [
+            "348.453",
+            "0",
+            "348.453",
+            "-78.772"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propiedad de Inversión",
+          "values": [
+            "315.077",
+            "0",
+            "315.077",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria",
+          "values": [
+            "36.998",
+            "0",
+            "36.998",
+            "-27.477"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Enseres y accesorios",
+          "values": [
+            "55.472",
+            "0",
+            "55.472",
+            "-47.950"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Computación y Comunicación",
+          "values": [
+            "76.242",
+            "30.555.860",
+            "30.632.102",
+            "-76.213"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo Medico",
+          "values": [
+            "252.197",
+            "145.853.523",
+            "146.105.720",
+            "-107.746"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autos, Camionetas y Camperos",
+          "values": [
+            "0",
+            "126.496",
+            "126.496",
+            "-6.325"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total General",
+          "values": [
+            "10.545.978",
+            "176.535.879",
+            "187.081.857",
+            "-344.482"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "# 11. Activos Intangibles Distintos de la Plusvalía",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Afiliacion Dimayor",
+          "values": [
+            "2.483.500",
+            "2.483.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Software Contable",
+          "values": [
+            "3.253",
+            "3.253"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jugadores Profesionales",
+          "values": [
+            "3.932.000",
+            "4.249.625"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "6.418.752",
+            "6.736.377"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jugadores Profesionales",
+          "values": [
+            "-2.271.047",
+            "-2.027.437"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afiliacion Dimayor",
+          "values": [
+            "-1.051.829",
+            "-1.002.159"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "-3.322.876",
+            "-3.029.596"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Activos intangibles Distintos a la Plusvalía",
+          "values": [
+            "3.095.877",
+            "3.706.781"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / ## 12. Cargos Diferidos",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Jugadores Profesionales",
+          "values": [
+            "597.500",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "21.000",
+            "21.100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto Diferido",
+          "values": [
+            "156.332",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acumulado Prestamo Jugadores",
+          "values": [
+            "-406.802",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Cargos Diferidos",
+          "values": [
+            "368.029",
+            "21.100"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": "## 13. Obligaciones Financieras",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Prestamos",
+          "values": [
+            "48.378",
+            "391.750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tarjetas de Credito",
+          "values": [
+            "63.170",
+            "77.581"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Obligaciones Financieras",
+          "values": [
+            "111.548",
+            "469.331"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 14. Cuentas Comerciales Por Pagar y Otras Cuentas Por Pagar",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cuentas Por Pagar Derechos",
+          "values": [
+            "2.401.889",
+            "716.336"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "159.359",
+            "206.171"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "187.240",
+            "78.345"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transportes, Fletes y Acarreos",
+          "values": [
+            "29.187",
+            "64.700"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "13.983",
+            "2.423"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retenciones en la Fuente Por Pagar",
+          "values": [
+            "188.454",
+            "441.424"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes a Salud E.P.S",
+          "values": [
+            "39.014",
+            "36.087"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes a A.R.L.",
+          "values": [
+            "3.367",
+            "7.143"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondos de Cesantías y/o Pensiones",
+          "values": [
+            "66.438",
+            "75.409"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Embargos Judiciales",
+          "values": [
+            "7.916",
+            "626"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "565.050",
+            "638.919"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Libranza",
+          "values": [
+            "8.964",
+            "5.445"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "3.670.860",
+            "2.273.027"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 15. Obligaciones Financieras L.P.",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Obligaciones Financiera Coopcentral",
+          "values": [
+            "8.271.240",
+            "7.584.199"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "acreedores varios",
+          "values": [
+            "473.905",
+            "972.238"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Obligaciones Financieras a L.P.",
+          "values": [
+            "8.745.145",
+            "8.556.437"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": null,
+      "columns": [
+        "Nro. Crédito",
+        "Entidad",
+        "Monto",
+        "Tasa",
+        "Fecha de desembolso"
+      ],
+      "rows": [
+        {
+          "rawLabel": "390880000390",
+          "values": [
+            "Banco Cooperativo Coopcentral",
+            "$ 566.652.522",
+            "DTF + 6,00 EA",
+            "5 de diciembre de 2017"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "390880000670",
+          "values": [
+            "Banco Cooperativo Coopcentral",
+            "$ 91.657.366",
+            "DTF + 5,00 EA",
+            "31 de mayo de 2018"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "390880000780",
+          "values": [
+            "Banco Cooperativo Coopcentral",
+            "$ 19.888.880",
+            "DTF + 5,00 EA",
+            "17 de agosto de 2018"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "390380000910",
+          "values": [
+            "Banco Cooperativo Coopcentral",
+            "$ 5.400.000.000",
+            "DTF + 6,00 EA",
+            "10 de diciembre de 2018"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "390880001020",
+          "values": [
+            "Banco Cooperativo Coopcentral",
+            "$ 116.375.000",
+            "DTF + 6,00 EA",
+            "26 de febrero de 2019"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "390880001760",
+          "values": [
+            "Banco Cooperativo Coopcentral",
+            "$ 958.333.180",
+            "DTF + 4,5 EA",
+            "30 de octubre de 2019"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "390880001850",
+          "values": [
+            "Banco Cooperativo Coopcentral",
+            "$ 548.333.020",
+            "DTF + 5,50 EA",
+            "25 de noviembre de 2019"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "390880001940",
+          "values": [
+            "Banco Cooperativo Coopcentral",
+            "$ 570.000.000",
+            "DTF + 5,50 EA",
+            "18 de diciembre de 2019"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "$ 8.271.239.968",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 16. Pasivo Por Impuestos Corrientes",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Iva Saldo Por Pagar",
+          "values": [
+            "58.063",
+            "198.808"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vigencia Fiscal y Corriente",
+          "values": [
+            "0",
+            "62.379"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Industria y Comercio Por pagar",
+          "values": [
+            "11.975",
+            "1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auto Cree por Pagar",
+          "values": [
+            "0",
+            "16.993"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Impuestos, Gravámenes y Tasas",
+          "values": [
+            "70.038",
+            "278.182"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "# 17. Beneficios a Empleados",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salarios por Pagar",
+          "values": [
+            "0",
+            "7.316"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cesantías Consolidadas",
+          "values": [
+            "84.878",
+            "105.746"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses Sobre Cesantías",
+          "values": [
+            "9.240",
+            "12.399"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima de Servicios",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vacaciones Consolidadas",
+          "values": [
+            "144.790",
+            "219.078"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obligaciones Laborales - Parafiscales",
+          "values": [
+            "31.042",
+            "32.174"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "269.949",
+            "376.713"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "# 18. Otros Pasivos No Financieros",
+      "columns": [
+        "Ingresos Diferidos",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "682.095",
+            "146.242"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Ingresos Diferidos",
+          "values": [
+            "682.095",
+            "146.242"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018",
+      "columns": [
+        "Otros Pasivos",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anticipos y Avances Recibidos",
+          "values": [
+            "0",
+            "51.772"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos Recibidos",
+          "values": [
+            "1.010.204",
+            "2.503.425"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos Recibidos Para Terceros",
+          "values": [
+            "0",
+            "8.998"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "0",
+            "106.244"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Otros Pasivos",
+          "values": [
+            "1.010.204",
+            "2.670.438"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "### 19. Utilidad Perdida del Ejercicio",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Utilidades Del Ejercicio",
+          "values": [
+            "689.785",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Perdida Del Ejercicio",
+          "values": [
+            "-",
+            "-1.072.063"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "689.785",
+            "-1.072.063"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "### 20. Capital Suscrito y Pagado",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capital Autorizado",
+          "values": [
+            "1.650.000",
+            "1.650.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital Por Suscribir (Db) Acciones Propias en Cartera",
+          "values": [
+            "-135.700",
+            "-135.700"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Capital Emitido",
+          "values": [
+            "1.514.300",
+            "1.514.300"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 26,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 21. Resultados de Ejercicio",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Utilidades Acumuladas",
+          "values": [
+            "-44.800",
+            "1.027.264"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes Por Primera Vez Niif",
+          "values": [
+            "230.865",
+            "230.865"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Convergencia Niif",
+          "values": [
+            "-595.437",
+            "-595.437"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otro Resultado Integral",
+          "values": [
+            "2.481.827",
+            "2.481.827"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2.072.455",
+            "3.144.519"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 26,
+      "section": "# 22. Ingresos de Actividades Ordinarias",
+      "columns": [
+        "Ingresos Operacionales",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Taquilla - Venta de Boletería",
+          "values": [
+            "1.279.541",
+            "698.515"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Escuelas de Futbol",
+          "values": [
+            "1.918.734",
+            "2.680.747"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta y Prestamo de Derechos",
+          "values": [
+            "2.769.869",
+            "769.991"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad y Propaganda",
+          "values": [
+            "466.083",
+            "349.207"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dimayor",
+          "values": [
+            "4.046.863",
+            "5.992.845"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Federacion Colombiana de Futbol",
+          "values": [
+            "304.832",
+            "436.642"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocinio",
+          "values": [
+            "4.963.454",
+            "5.041.050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuota de Sostenimiento",
+          "values": [
+            "34.242",
+            "470.698"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Participación CopaSuramericana",
+          "values": [
+            "5.884.921",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta de Artículos Deportivos",
+          "values": [
+            "141.466",
+            "33.795"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Devoluciones en Ventas",
+          "values": [
+            "-9.351",
+            "-524"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Actividades Conexas",
+          "values": [
+            "519.124",
+            "446.752"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos Fuerzas Basicas",
+          "values": [
+            "51.033",
+            "2.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Ingresos Operacionales",
+          "values": [
+            "22.370.813",
+            "16.922.218"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 27,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 23. Costo de Ventas",
+      "columns": [
+        "Costo de Ventas",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Costo de Venta Artículos Deportivos",
+          "values": [
+            "65.220",
+            "11.429"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Costo de Ventas",
+          "values": [
+            "65.220",
+            "11.429"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 27,
+      "section": "# 24. Otros Ingresos",
+      "columns": [
+        "Otros Ingresos",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Intereses",
+          "values": [
+            "5.319",
+            "9.178"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas y Recargos",
+          "values": [
+            "34.516",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construcciones y Edificaciones",
+          "values": [
+            "44.000",
+            "32.723"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte",
+          "values": [
+            "240",
+            "8.354"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construcciones y Edificaciones",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reintegro de Otros Costos y Gastos",
+          "values": [
+            "203.858",
+            "278.547"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reintegro Provisiones",
+          "values": [
+            "8.133",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos de Ejercicios Anteriores",
+          "values": [
+            "9.048",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aprovechamientos",
+          "values": [
+            "54.868",
+            "7.172"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste al Peso",
+          "values": [
+            "13",
+            "25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Otros Ingresos",
+          "values": [
+            "359.996",
+            "335.999"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 28,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 25. Gastos de Administración / # Gastos Operacionales de Administración",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salario Integral",
+          "values": [
+            "464.955",
+            "372.280"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sueldos",
+          "values": [
+            "384.705",
+            "435.804"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Viaticos",
+          "values": [
+            "28.724",
+            "24.373"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilio de Transporte",
+          "values": [
+            "7.588",
+            "6.164"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cesantías",
+          "values": [
+            "33.608",
+            "32.395"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses Sobre Cesantías",
+          "values": [
+            "3.096",
+            "3.803"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima de Servicios",
+          "values": [
+            "30.695",
+            "32.619"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vacaciones",
+          "values": [
+            "75.602",
+            "55.381"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilio de Rodamiento",
+          "values": [
+            "4.560",
+            "6.210"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bonificaciones",
+          "values": [
+            "413.461",
+            "5.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dotacion y Suministro",
+          "values": [
+            "3.193",
+            "209"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indemnizaciones Laborales",
+          "values": [
+            "0",
+            "4.742"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capacitacion al Personal",
+          "values": [
+            "17.273",
+            "2.755"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes administradoras ARL",
+          "values": [
+            "4.634",
+            "5.565"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes Salud EPS",
+          "values": [
+            "16.724",
+            "22.347"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes Fondos de Pensiones",
+          "values": [
+            "103.679",
+            "72.501"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes Cajas de Compensacion",
+          "values": [
+            "28.111",
+            "26.231"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes I.C.B.F.",
+          "values": [
+            "8.941",
+            "8.609"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sena",
+          "values": [
+            "5.961",
+            "5.739"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Medicos",
+          "values": [
+            "18",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1.635.527",
+            "1.123.527"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Honorarios",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Asesoría Técnica",
+          "values": [
+            "41.925",
+            "20.931"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avaluos",
+          "values": [
+            "0",
+            "7.330"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Asesoría Jurídica",
+          "values": [
+            "0",
+            "111.281"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "181.045",
+            "173.703"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Honorarios",
+          "values": [
+            "222.970",
+            "313.246"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "# Impuestos",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Industria y Comercio",
+          "values": [
+            "17",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A la Propiedad Raíz",
+          "values": [
+            "7.540",
+            "6.758"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto de Vehículo",
+          "values": [
+            "985",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Iva Descontable",
+          "values": [
+            "12.666",
+            "24.921"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "110.053",
+            "66.093"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Impuestos",
+          "values": [
+            "131.261",
+            "97.772"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "# Seguros",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Manejo",
+          "values": [
+            "0",
+            "350"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cumplimiento",
+          "values": [
+            "8.988",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Seguros",
+          "values": [
+            "8.988",
+            "350"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Servicios",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Aseo y Vigilancia",
+          "values": [
+            "49.036",
+            "2.192"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Temporales",
+          "values": [
+            "6.000",
+            "2.001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Procesamiento Electronico de Datos",
+          "values": [
+            "75",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acueducto y Alcantarillado",
+          "values": [
+            "41.943",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Energía Eléctrica",
+          "values": [
+            "742",
+            "733"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Teléfono",
+          "values": [
+            "28.585",
+            "38.529"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Correo, Portes y Telegramas",
+          "values": [
+            "333",
+            "401"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gas",
+          "values": [
+            "27.374",
+            "32.304"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte, Fletes y Acarreos",
+          "values": [
+            "0",
+            "13.273"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad Propaganda y Promocion",
+          "values": [
+            "0",
+            "1.298"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Servicios",
+          "values": [
+            "37.525",
+            "23.605"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Servicios",
+          "values": [
+            "191.614",
+            "114.335"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": "# Gastos Legales",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Notariales",
+          "values": [
+            "2.921",
+            "8.692"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Registro Mercantil",
+          "values": [
+            "2.021",
+            "1.907"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tramites y Licencias",
+          "values": [
+            "1.567",
+            "167"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "352",
+            "450"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Gastos Legales",
+          "values": [
+            "6.861",
+            "11.216"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / (Cifras expresadas en miles de pesos colombianos) / # Mantenimiento y Reparaciones",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Construcciones y Edificaciones",
+          "values": [
+            "580",
+            "6.977"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria y Equipo",
+          "values": [
+            "2.192",
+            "782"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Oficina",
+          "values": [
+            "9.871",
+            "9.738"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Computación y Comunicación",
+          "values": [
+            "4.424",
+            "1.299"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Mantenimiento y Reparaciones",
+          "values": [
+            "17.066",
+            "18.797"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "# Adecuación y Instalación",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Instalaciones Eléctricas",
+          "values": [
+            "750",
+            "76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reparaciones Locativas",
+          "values": [
+            "8.450",
+            "12.975"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "0",
+            "608"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Adecuación y Instalación",
+          "values": [
+            "9.200",
+            "13.659"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "# Gastos de Viaje",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Alojamiento y Manutencion",
+          "values": [
+            "9.689",
+            "15.392"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasajes Aereos",
+          "values": [
+            "1.559",
+            "20.977"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Gastos de Viaje",
+          "values": [
+            "11.248",
+            "36.369"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 32,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Depreciaciones",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Maquinaria",
+          "values": [
+            "3.248",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Oficina",
+          "values": [
+            "1.908",
+            "308"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Computación y Comunicación",
+          "values": [
+            "6.911",
+            "2.373"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo Médico - Científico",
+          "values": [
+            "23.862",
+            "621"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Depreciaciones",
+          "values": [
+            "35.929",
+            "3.301"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 32,
+      "section": "# Diversos",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Comisiones",
+          "values": [
+            "5.740",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Libros, Suscripciones, Periodicos",
+          "values": [
+            "1.046",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Representación",
+          "values": [
+            "8.073",
+            "4.743"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Elementos de Aseo y Cafetería",
+          "values": [
+            "8.266",
+            "4.100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utiles, Papelería y Fotocopias",
+          "values": [
+            "3.407",
+            "2.806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Combustibles y Lubricantes",
+          "values": [
+            "4.512",
+            "3.388"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxis y Buses",
+          "values": [
+            "1.408",
+            "652"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Casino y Restaurante",
+          "values": [
+            "3.407",
+            "7.077"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parqueaderos",
+          "values": [
+            "871",
+            "702"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "-634",
+            "1.730"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Diversos",
+          "values": [
+            "36.097",
+            "25.198"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 33,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salario Integral",
+          "values": [
+            "4.727.388",
+            "4.881.789"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sueldos",
+          "values": [
+            "1.471.965",
+            "1.914.017"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Viaticos",
+          "values": [
+            "97.875",
+            "9.003"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilio de Transporte",
+          "values": [
+            "64.960",
+            "67.021"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cesantias",
+          "values": [
+            "155.346",
+            "148.477"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses Sobre Cesantias",
+          "values": [
+            "14.699",
+            "14.845"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima de Servicios",
+          "values": [
+            "156.376",
+            "147.922"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vacaciones",
+          "values": [
+            "405.234",
+            "298.081"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilios",
+          "values": [
+            "363.800",
+            "259.710"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bonificaciones",
+          "values": [
+            "563.046",
+            "931.230"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dotación al Personal",
+          "values": [
+            "0",
+            "419"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indemnizaciones Laborales",
+          "values": [
+            "70.118",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capacitacion al Personal",
+          "values": [
+            "18.668",
+            "10.855"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Deportivos y Recreación",
+          "values": [
+            "0",
+            "478"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes Administradora de Riesgos ARL",
+          "values": [
+            "98.645",
+            "119.795"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes Salud E.P.S.",
+          "values": [
+            "345.082",
+            "296.496"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondo de Pensiones y Censantias",
+          "values": [
+            "658.671",
+            "696.215"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes Cajas de Compensacion",
+          "values": [
+            "216.661",
+            "220.770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes I.C.B.F.",
+          "values": [
+            "116.614",
+            "108.657"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "sena",
+          "values": [
+            "77.744",
+            "72.440"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Medicos Examenes y Medicamentos",
+          "values": [
+            "3.054",
+            "5.911"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Gastos Deportivos",
+          "values": [
+            "9.625.944",
+            "10.204.130"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 33,
+      "section": "# Honorarios",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Asesoria Tecnica",
+          "values": [
+            "19.787",
+            "52.346"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "83.260",
+            "139.013"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Honorarios",
+          "values": [
+            "103.047",
+            "191.360"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 34,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Impuestos",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Industria y Comercio",
+          "values": [
+            "130.696",
+            "97.719"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "De Espectaculos Públicos",
+          "values": [
+            "107.454",
+            "56.561"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IVA",
+          "values": [
+            "562",
+            "12.795"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "7.657",
+            "239.869"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Impuestos",
+          "values": [
+            "246.369",
+            "406.944"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 34,
+      "section": "# Arrendamientos",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Construcciones y Edificaciones",
+          "values": [
+            "1.139.713",
+            "1.272.065"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Computación y Comunicación",
+          "values": [
+            "0",
+            "830"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Arrendamientos",
+          "values": [
+            "8.595",
+            "260"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Arrendamientos",
+          "values": [
+            "1.148.308",
+            "1.273.155"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 34,
+      "section": "# Seguros",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "55.895",
+            "71.641"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Seguros",
+          "values": [
+            "55.895",
+            "71.641"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 35,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Servicios",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Aseo y Vigilancia",
+          "values": [
+            "92.849",
+            "70.843"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Temporales",
+          "values": [
+            "18.000",
+            "8.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Asistencia Técnica",
+          "values": [
+            "4.550",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acueducto y Alcantarillado",
+          "values": [
+            "184",
+            "79"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Energía Eléctrica",
+          "values": [
+            "67.668",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Correo, Portes y Telegramas",
+          "values": [
+            "762",
+            "294"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte, Fletes y Acarreos",
+          "values": [
+            "148.526",
+            "119.856"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gas Natural",
+          "values": [
+            "51",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad, Propaganda",
+          "values": [
+            "58.149",
+            "22.195"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "87.222",
+            "51.079"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Servicios",
+          "values": [
+            "477.961",
+            "272.346"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 35,
+      "section": "# Gastos Legales",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Notariales",
+          "values": [
+            "0",
+            "298"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tramites y Licencias",
+          "values": [
+            "15",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Legales Otros",
+          "values": [
+            "1.106",
+            "10.079"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Gastos Legales",
+          "values": [
+            "1.121",
+            "10.377"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 36,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Mantenimiento y Reparaciones",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Maquinaria y Equipo",
+          "values": [
+            "1.730",
+            "234"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Oficina",
+          "values": [
+            "80",
+            "643"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Computo y Comunicacion",
+          "values": [
+            "250",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo Medico - Cientifico Deportivo",
+          "values": [
+            "18.531",
+            "1.478"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flota y Equipo de Transporte",
+          "values": [
+            "246",
+            "4.276"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Mantenimiento Y Reparaciones",
+          "values": [
+            "20.837",
+            "6.631"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 36,
+      "section": "# Adecuación E Instalación",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Reparaciones Locativas",
+          "values": [
+            "8.012",
+            "7.428"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "0",
+            "6.931"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Adecuaciones E Instalaciones",
+          "values": [
+            "8.012",
+            "14.360"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 36,
+      "section": "# Gastos de Viaje",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Alojamiento y Manutencion",
+          "values": [
+            "310.114",
+            "159.581"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasajes Aereos",
+          "values": [
+            "149.479",
+            "97.969"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasajes Terrestres",
+          "values": [
+            "650",
+            "230"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "1.799",
+            "1.733"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Gastos de Viaje",
+          "values": [
+            "462.042",
+            "259.512"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018",
+      "columns": [
+        "Depreciaciones",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Construcciones y Edificaciones",
+          "values": [
+            "52.052",
+            "25.111"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria y Equipo",
+          "values": [
+            "6.533",
+            "890"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación",
+          "values": [
+            "359",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipos de Hoteles",
+          "values": [
+            "457",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Depreciaciones",
+          "values": [
+            "59.401",
+            "26.000"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": null,
+      "columns": [
+        "Amortizaciones",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Derechos Deportivos",
+          "values": [
+            "977.755",
+            "945.692"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afiliación Dimayor",
+          "values": [
+            "49.670",
+            "49.670"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prestamo Derechos Deportivos",
+          "values": [
+            "345.257",
+            "445.064"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Amortizaciones",
+          "values": [
+            "1.372.682",
+            "1.440.426"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": null,
+      "columns": [
+        "Derechos Deportivos",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Derechos Deportivos Profesionales",
+          "values": [
+            "1.714.411",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Derechos Deportivos",
+          "values": [
+            "1.714.411",
+            "-"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 38,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Diversos",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Comisiones",
+          "values": [
+            "419.097",
+            "108.116"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Representacion",
+          "values": [
+            "7.003",
+            "2.491"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Elementos de Aseo y Cafeteria",
+          "values": [
+            "2.867",
+            "1.972"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utiles, Papeleria y Fotocopias",
+          "values": [
+            "21.867",
+            "6.200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Combustibles y Lubricantes",
+          "values": [
+            "50",
+            "100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxis y Buses",
+          "values": [
+            "5.076",
+            "2.016"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Casino y Restaurante",
+          "values": [
+            "360.246",
+            "252.918"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parqueaderos",
+          "values": [
+            "5",
+            "174"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Logistica Preparacion Eventos",
+          "values": [
+            "801.031",
+            "532.860"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "471.765",
+            "479.502"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Diversos",
+          "values": [
+            "2.089.008",
+            "1.386.351"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 38,
+      "section": "# Provisiones",
+      "columns": [
+        "",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Provisiones de Cartera",
+          "values": [
+            "500.084",
+            "272.038"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Provisiones",
+          "values": [
+            "500.084",
+            "272.038"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 39,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 27. Otros Gastos, Gastos Financieros",
+      "columns": [
+        "Otros Gastos",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos Bancarios",
+          "values": [
+            "4.772",
+            "9.482"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comisiones",
+          "values": [
+            "70.453",
+            "44.076"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses",
+          "values": [
+            "966.654",
+            "434.218"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencia en Cambio",
+          "values": [
+            "0",
+            "16.959"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "1.852",
+            "35.899"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costos y Gastos de Ejercicios",
+          "values": [
+            "17.538",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos Asumidos",
+          "values": [
+            "447",
+            "2.542"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas, Sanciones y Litigios",
+          "values": [
+            "125.436",
+            "111.736"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Donaciones",
+          "values": [
+            "1.000",
+            "6.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "317.331",
+            "70.572"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Otros Gastos",
+          "values": [
+            "1.505.483",
+            "731.483"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 40,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 28. Impuesto de Renta",
+      "columns": [
+        "Impuesto de Renta",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Impuesto Diferido Pasivo",
+          "values": [
+            "0",
+            "140.491"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto Diferido Activo",
+          "values": [
+            "-218.711",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto de Renta Y Complentarios",
+          "values": [
+            "497.146",
+            "-146.161"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Impuesto de Renta",
+          "values": [
+            "278.435",
+            "-5.670"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 2,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # La composición accionaria del club al 31 de diciembre de 2019 es:",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "302.860",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # La composición accionaria del club al 31 de diciembre de 2019 es:",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"100,00%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 2,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # La composición accionaria del club al 31 de diciembre de 2019 es:",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$ 1.514.300.000\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "# 6. Cuentas Comerciales Por Cobrar y Otras Cuentas Por Cobrar",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Cuentas Comerciales Por Cobrar y Otras Cuentas Por Cobrar",
+      "target": "3.360.799",
+      "addendCount": 7,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 7 rubros enteros)"
+    },
+    {
+      "page": 16,
+      "section": "# 6. Cuentas Comerciales Por Cobrar y Otras Cuentas Por Cobrar",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Cuentas Comerciales Por Cobrar y Otras Cuentas Por Cobrar",
+      "target": "2.818.043",
+      "addendCount": 7,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 7 rubros enteros)"
+    },
+    {
+      "page": 17,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / ## 7. Inventarios",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Inventarios",
+      "target": "530.656",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 4 rubros enteros)"
+    },
+    {
+      "page": 17,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / ## 7. Inventarios",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Inventarios",
+      "target": "547.809",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 8. Activos Por Impuestos Corrientes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Activo Por Impuestos Corrientes",
+      "target": "884.674",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 8. Activos Por Impuestos Corrientes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Activo Por Impuestos Corrientes",
+      "target": "933.508",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# 9. Otros Activos Financieros",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Otros Activos Financieros",
+      "target": "0",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# 9. Otros Activos Financieros",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Otros Activos Financieros",
+      "target": "2.494",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 10. Propiedad Planta y Equipo",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Propiedad Planta y Equipo, Propiedad de Inversión",
+      "target": "10.504.401",
+      "addendCount": 16,
+      "closes": false,
+      "diff": "10504401"
+    },
+    {
+      "page": 19,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 10. Propiedad Planta y Equipo",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Propiedad Planta y Equipo, Propiedad de Inversión",
+      "target": "10.296.826",
+      "addendCount": 16,
+      "closes": false,
+      "diff": "10296828"
+    },
+    {
+      "page": 20,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total General",
+      "target": "10.545.978",
+      "addendCount": 8,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 8 rubros enteros)"
+    },
+    {
+      "page": 20,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total General",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"Adiciones\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 20,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total General",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"Importe Final\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 20,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total General",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"Depreciaciones\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 20,
+      "section": "# 11. Activos Intangibles Distintos de la Plusvalía",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Activos intangibles Distintos a la Plusvalía",
+      "target": "3.095.877",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "3095876"
+    },
+    {
+      "page": 20,
+      "section": "# 11. Activos Intangibles Distintos de la Plusvalía",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Activos intangibles Distintos a la Plusvalía",
+      "target": "3.706.781",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "3706782"
+    },
+    {
+      "page": 21,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / ## 12. Cargos Diferidos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Cargos Diferidos",
+      "target": "368.029",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    },
+    {
+      "page": 21,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / ## 12. Cargos Diferidos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Cargos Diferidos",
+      "target": "21.100",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "## 13. Obligaciones Financieras",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Obligaciones Financieras",
+      "target": "111.548",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "## 13. Obligaciones Financieras",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Obligaciones Financieras",
+      "target": "469.331",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 15. Obligaciones Financieras L.P.",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Obligaciones Financieras a L.P.",
+      "target": "8.745.145",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 15. Obligaciones Financieras L.P.",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Obligaciones Financieras a L.P.",
+      "target": "8.556.437",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 16. Pasivo Por Impuestos Corrientes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Impuestos, Gravámenes y Tasas",
+      "target": "70.038",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 16. Pasivo Por Impuestos Corrientes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Impuestos, Gravámenes y Tasas",
+      "target": "278.182",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 4 rubros enteros)"
+    },
+    {
+      "page": 24,
+      "section": "# 18. Otros Pasivos No Financieros",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Ingresos Diferidos",
+      "target": "682.095",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "# 18. Otros Pasivos No Financieros",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Ingresos Diferidos",
+      "target": "146.242",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Otros Pasivos",
+      "target": "1.010.204",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Otros Pasivos",
+      "target": "2.670.438",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    },
+    {
+      "page": 25,
+      "section": "### 20. Capital Suscrito y Pagado",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Capital Emitido",
+      "target": "1.514.300",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "### 20. Capital Suscrito y Pagado",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Capital Emitido",
+      "target": "1.514.300",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 26,
+      "section": "# 22. Ingresos de Actividades Ordinarias",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Ingresos Operacionales",
+      "target": "22.370.813",
+      "addendCount": 13,
+      "closes": true,
+      "diff": "-2",
+      "how": "redondeo (diferencia -2 en 13 rubros enteros)"
+    },
+    {
+      "page": 26,
+      "section": "# 22. Ingresos de Actividades Ordinarias",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Ingresos Operacionales",
+      "target": "16.922.218",
+      "addendCount": 13,
+      "closes": true
+    },
+    {
+      "page": 27,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 23. Costo de Ventas",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Costo de Ventas",
+      "target": "65.220",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 27,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 23. Costo de Ventas",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Costo de Ventas",
+      "target": "11.429",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 27,
+      "section": "# 24. Otros Ingresos",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Otros Ingresos",
+      "target": "359.996",
+      "addendCount": 10,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 10 rubros enteros)"
+    },
+    {
+      "page": 27,
+      "section": "# 24. Otros Ingresos",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Otros Ingresos",
+      "target": "335.999",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Honorarios",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Honorarios",
+      "target": "222.970",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Honorarios",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Honorarios",
+      "target": "313.246",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 4 rubros enteros)"
+    },
+    {
+      "page": 29,
+      "section": "# Impuestos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Impuestos",
+      "target": "131.261",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "# Impuestos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Impuestos",
+      "target": "97.772",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "# Seguros",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Seguros",
+      "target": "8.988",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "# Seguros",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Seguros",
+      "target": "350",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 30,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Servicios",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Servicios",
+      "target": "191.614",
+      "addendCount": 11,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 11 rubros enteros)"
+    },
+    {
+      "page": 30,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Servicios",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Servicios",
+      "target": "114.335",
+      "addendCount": 11,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 11 rubros enteros)"
+    },
+    {
+      "page": 30,
+      "section": "# Gastos Legales",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Gastos Legales",
+      "target": "6.861",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 30,
+      "section": "# Gastos Legales",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Gastos Legales",
+      "target": "11.216",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / (Cifras expresadas en miles de pesos colombianos) / # Mantenimiento y Reparaciones",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Mantenimiento y Reparaciones",
+      "target": "17.066",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    },
+    {
+      "page": 31,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / (Cifras expresadas en miles de pesos colombianos) / # Mantenimiento y Reparaciones",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Mantenimiento y Reparaciones",
+      "target": "18.797",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 4 rubros enteros)"
+    },
+    {
+      "page": 31,
+      "section": "# Adecuación y Instalación",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Adecuación y Instalación",
+      "target": "9.200",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "# Adecuación y Instalación",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Adecuación y Instalación",
+      "target": "13.659",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "# Gastos de Viaje",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Gastos de Viaje",
+      "target": "11.248",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "# Gastos de Viaje",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Gastos de Viaje",
+      "target": "36.369",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Depreciaciones",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Depreciaciones",
+      "target": "35.929",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Depreciaciones",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Depreciaciones",
+      "target": "3.301",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    },
+    {
+      "page": 32,
+      "section": "# Diversos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Diversos",
+      "target": "36.097",
+      "addendCount": 10,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 10 rubros enteros)"
+    },
+    {
+      "page": 32,
+      "section": "# Diversos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Diversos",
+      "target": "25.198",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Gastos Deportivos",
+      "target": "9.625.944",
+      "addendCount": 21,
+      "closes": true,
+      "diff": "2",
+      "how": "redondeo (diferencia 2 en 21 rubros enteros)"
+    },
+    {
+      "page": 33,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 26. Gastos Deportivos / # Gastos Deportivos",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Gastos Deportivos",
+      "target": "10.204.130",
+      "addendCount": 21,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 21 rubros enteros)"
+    },
+    {
+      "page": 33,
+      "section": "# Honorarios",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Honorarios",
+      "target": "103.047",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# Honorarios",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Honorarios",
+      "target": "191.360",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 2 rubros enteros)"
+    },
+    {
+      "page": 34,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Impuestos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Impuestos",
+      "target": "246.369",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 34,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Impuestos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Impuestos",
+      "target": "406.944",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 34,
+      "section": "# Arrendamientos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Arrendamientos",
+      "target": "1.148.308",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 34,
+      "section": "# Arrendamientos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Arrendamientos",
+      "target": "1.273.155",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 34,
+      "section": "# Seguros",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Seguros",
+      "target": "55.895",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 34,
+      "section": "# Seguros",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Seguros",
+      "target": "71.641",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 35,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Servicios",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Servicios",
+      "target": "477.961",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 35,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Servicios",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Servicios",
+      "target": "272.346",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 35,
+      "section": "# Gastos Legales",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Gastos Legales",
+      "target": "1.121",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 35,
+      "section": "# Gastos Legales",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Gastos Legales",
+      "target": "10.377",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Mantenimiento y Reparaciones",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Mantenimiento Y Reparaciones",
+      "target": "20.837",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Mantenimiento y Reparaciones",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Mantenimiento Y Reparaciones",
+      "target": "6.631",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# Adecuación E Instalación",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Adecuaciones E Instalaciones",
+      "target": "8.012",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# Adecuación E Instalación",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Adecuaciones E Instalaciones",
+      "target": "14.360",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 2 rubros enteros)"
+    },
+    {
+      "page": 36,
+      "section": "# Gastos de Viaje",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Gastos de Viaje",
+      "target": "462.042",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# Gastos de Viaje",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Gastos de Viaje",
+      "target": "259.512",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    },
+    {
+      "page": 37,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Depreciaciones",
+      "target": "59.401",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Depreciaciones",
+      "target": "26.000",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    },
+    {
+      "page": 37,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Amortizaciones",
+      "target": "1.372.682",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Amortizaciones",
+      "target": "1.440.426",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Derechos Deportivos",
+      "target": "1.714.411",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 38,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Diversos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Diversos",
+      "target": "2.089.008",
+      "addendCount": 10,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 10 rubros enteros)"
+    },
+    {
+      "page": 38,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # Diversos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Diversos",
+      "target": "1.386.351",
+      "addendCount": 10,
+      "closes": true,
+      "diff": "-2",
+      "how": "redondeo (diferencia -2 en 10 rubros enteros)"
+    },
+    {
+      "page": 38,
+      "section": "# Provisiones",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Provisiones",
+      "target": "500.084",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 38,
+      "section": "# Provisiones",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Provisiones",
+      "target": "272.038",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 39,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 27. Otros Gastos, Gastos Financieros",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Otros Gastos",
+      "target": "1.505.483",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 39,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 27. Otros Gastos, Gastos Financieros",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Otros Gastos",
+      "target": "731.483",
+      "addendCount": 10,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 10 rubros enteros)"
+    },
+    {
+      "page": 40,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 28. Impuesto de Renta",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Impuesto de Renta",
+      "target": "278.435",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 40,
+      "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2019 y / 31 de diciembre de 2018 / # 28. Impuesto de Renta",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Impuesto de Renta",
+      "target": "-5.670",
+      "addendCount": 3,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/la-equidad-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"la-equidad\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

@@ -1,0 +1,2559 @@
+{
+ "md": "Clubes/Croacia/Varaždin/revizorsko-izvjesce-2025.md",
+ "generatedAt": "2026-09-30T12:59:21.063Z",
+ "rubros": [
+  {
+   "label": "Prihodi od ulaznica - Nacionalna natjecanja",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1626
+  },
+  {
+   "label": "Prihodi od ulaznica - Godišnje ulaznice",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "season_tickets",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "season_tickets",
+     0.98
+    ],
+    [
+     "member_dues",
+     0.01
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1635
+  },
+  {
+   "label": "Ostali nerazvrstani prihodi od ulaznica",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "matchday_competition",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "matchday_competition",
+     0.79
+    ],
+    [
+     "other_income",
+     0.21
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1585
+  },
+  {
+   "label": "Prihodi od ulaznica - UEFA klupska natjecanja",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "matchday_competition",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "matchday_competition",
+     0.94
+    ],
+    [
+     "competition_bonus",
+     0.06
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1636
+  },
+  {
+   "label": "Prihodi od sponzorstva i oglašavanja - glavni sponzor",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# PR-2 Prihodi od sponzorstva i oglašavanja",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1163
+  },
+  {
+   "label": "Prihodi od ulaznica - Članarine",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1621
+  },
+  {
+   "label": "Prihodi od sponzorstva i oglašavanja - Sponzor za stadion",
+   "lado": null,
+   "page": 7,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1656
+  },
+  {
+   "label": "Prihodi od sponzorstva i oglašavanja - proizvođač opreme",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# PR-2 Prihodi od sponzorstva i oglašavanja",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1165
+  },
+  {
+   "label": "Prihodi od sponzorstva i oglašavanja - reklamni panoi oko terena",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# PR-2 Prihodi od sponzorstva i oglašavanja",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1166
+  },
+  {
+   "label": "Komercijalni prihodi - Nacionalna natjecanja",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1624
+  },
+  {
+   "label": "Ostali nerazvrstani prihodi od prava emitiranja",
+   "lado": null,
+   "page": 7,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "broadcasting",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1575
+  },
+  {
+   "label": "Prihodi od prava emitiranja - Nacionalna natjecanja",
+   "lado": null,
+   "page": 7,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1583
+  },
+  {
+   "label": "Komercijalni prihodi - korištenje objekata",
+   "lado": "revenue",
+   "page": 25,
+   "section": "# BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / # PR-3 Prihodi od prava emitiranja / # PR-4 Komercijalni prihodi",
+   "choice": "stadium_other",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "stadium_other",
+     0.99
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1191
+  },
+  {
+   "label": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1624
+  },
+  {
+   "label": "Komercijalni prihodi - Prodaja proizvoda",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1598
+  },
+  {
+   "label": "Ostali nerazvrstani komercijalni prihodi",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.71
+    ],
+    [
+     "other_income",
+     0.29
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1572
+  },
+  {
+   "label": "Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi",
+   "lado": null,
+   "page": 7,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "broadcasting",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "broadcasting",
+     0.46
+    ],
+    [
+     "other_income",
+     0.18000000000000002
+    ],
+    [
+     "competition_bonus",
+     0.15
+    ]
+   ],
+   "tokens": 1574
+  },
+  {
+   "label": "Uefina klupska natjecanja - solidarne uplate",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1619
+  },
+  {
+   "label": "Uefine nagrade i solidarne uplate - nerazvrstano",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "competition_bonus",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "competition_bonus",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1561
+  },
+  {
+   "label": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "competition_bonus",
+     0.02
+    ]
+   ],
+   "tokens": 1451
+  },
+  {
+   "label": "Donacije i dotacije ili drugi iznosi od države i lokalne samouprave",
+   "lado": null,
+   "page": 7,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1451
+  },
+  {
+   "label": "Prihodi od nenogometnih djelatnosti",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "other_sports",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 1541
+  },
+  {
+   "label": "Donacije i doprinosi povezanih strana",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "member_dues",
+     0.02
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1415
+  },
+  {
+   "label": "Donacije nepovezanih strana",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1410
+  },
+  {
+   "label": "Izvanredni prihodi",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "Ostali nerazvrstani poslovni prihodi",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1551
+  },
+  {
+   "label": "Troškovi prodaje robe/proizvoda - izravni",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1572
+  },
+  {
+   "label": "Plače igrača",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1582
+  },
+  {
+   "label": "Troškovi prodaje robe/proizvoda - ostali nerazvrstani",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1619
+  },
+  {
+   "label": "Porezi i doprinosi - igrači",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "wages_squad",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "wages_squad",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.24
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Plače stručnog stožera",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "wages_squad",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "wages_squad",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1345
+  },
+  {
+   "label": "Porezi i doprinosi - stručni stožer",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0.11
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "Ostali nerazvrstani troškovi primanja igrača",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "wages_squad",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1627
+  },
+  {
+   "label": "Ostali nerazvrstani troškovi primanja stručnog stožera",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "wages_squad",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "wages_squad",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1638
+  },
+  {
+   "label": "Plače ostalih zaposlenika",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 1535
+  },
+  {
+   "label": "Porezi i doprinosi - ostali zaposlenici",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "wages_squad",
+     0.07
+    ]
+   ],
+   "tokens": 1551
+  },
+  {
+   "label": "Amortizacija i umanjenje vrijednosti dugotrajne materijalne imovine",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1597
+  },
+  {
+   "label": "Ostali nerazvrstani troškovi primanja ostalih zaposlenika",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1651
+  },
+  {
+   "label": "Amortizacija ostale nematerijalne imovine (bez registracije igrača)",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_amortisation",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1602
+  },
+  {
+   "label": "Amortizacija ostale materijalne ili ostale nematerijalne imovine",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_amortisation",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_amortisation",
+     0.76
+    ],
+    [
+     "depreciation",
+     0.24
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1598
+  },
+  {
+   "label": "Troškovi održavanja utakmica",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1528
+  },
+  {
+   "label": "Troškovi posrednika",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "Troškovi imovine i objekata",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "depreciation",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1659
+  },
+  {
+   "label": "Troškovi sponzorstva i oglašavanja",
+   "lado": "expense",
+   "page": 27,
+   "section": "# RA-3 Umanjenje vrijednosti i amortizacija / # RA-4 Ostali poslovni rashodi",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1120
+  },
+  {
+   "label": "Troškovi za nenogometne djelatnosti",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1530
+  },
+  {
+   "label": "Ostali nerazvrstani poslovni rashodi",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1564
+  },
+  {
+   "label": "POSLOVNI REZULTAT (BEZ REGISTRACIJE IGRAČA)",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ]
+   ],
+   "tokens": 1598
+  },
+  {
+   "label": "Troškovi za stjecanje registracija igrača",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1617
+  },
+  {
+   "label": "Nekapitalizirani troškovi za naknade agentima/posrednicima",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1599
+  },
+  {
+   "label": "Prihodi od raspolaganja registracijama igrača",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1566
+  },
+  {
+   "label": "Neto rezultat od raspolaganja registracijama igrača - po metodi kapitalizacije troškova",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "player_sales",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "player_sales",
+     0.76
+    ],
+    [
+     "other_income",
+     0.15
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 1611
+  },
+  {
+   "label": "Dobit (gubitak) od raspolaganja dugotrajnom materijalnom imovinom",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1448
+  },
+  {
+   "label": "Financijski rashodi",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1425
+  },
+  {
+   "label": "Dobit (gubitak) od raspolaganja ostalom dugotrajnom nematerijalnom imovinom",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1451
+  },
+  {
+   "label": "Financijski prihodi",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "broadcasting",
+     0.02
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "Neto tečajne razlike (gubici)",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "other_income",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1569
+  },
+  {
+   "label": "Ostali neposlovni rashodi",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1560
+  },
+  {
+   "label": "DOBIT (GUBITAK) POSLIJE OPOREZIVANJA",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "admin_general_expense",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.45
+    ],
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 1287
+  },
+  {
+   "label": "Ostali neposlovni prihodi",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1559
+  },
+  {
+   "label": "POREZNI PRIHODI (RASHODI)",
+   "lado": null,
+   "page": 8,
+   "section": "# RAČUN DOBITI I GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN",
+   "choice": "admin_general_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1530
+  },
+  {
+   "label": "Prihodi od donacija nepovezanih strana (tvrtke, građani)",
+   "lado": "revenue",
+   "page": 25,
+   "section": "# PR-6 Ostali poslovni prihodi",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "sponsorship_commercial",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1092
+  },
+  {
+   "label": "Prihodi od donacija - Hrvatski nogometni savez",
+   "lado": "revenue",
+   "page": 25,
+   "section": "# PR-6 Ostali poslovni prihodi",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "sponsorship_commercial",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Prihodi od donacija - lokalna samouprava",
+   "lado": "revenue",
+   "page": 25,
+   "section": "# PR-6 Ostali poslovni prihodi",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ],
+    [
+     "education",
+     0.01
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Prihodi od nenogometnih djelatnosti (najam prostorija stadiona)",
+   "lado": "revenue",
+   "page": 25,
+   "section": "# PR-6 Ostali poslovni prihodi",
+   "choice": "stadium_other",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "stadium_other",
+     0.88
+    ],
+    [
+     "other_income",
+     0.12
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1103
+  },
+  {
+   "label": "Troškovi sirovina, materijala, energije i goriva",
+   "lado": "expense",
+   "page": 26,
+   "section": "# BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / # RA-1 Materijalni troškovi",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1117
+  },
+  {
+   "label": "Troškovi sitnog inventara",
+   "lado": "expense",
+   "page": 26,
+   "section": "# BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / # RA-1 Materijalni troškovi",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "Trošak bankarskih usluga",
+   "lado": "expense",
+   "page": 26,
+   "section": "# BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / # RA-1 Materijalni troškovi",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1146
+  },
+  {
+   "label": "Troškovi poreza i doprinosa iz i na plaću igrača",
+   "lado": "expense",
+   "page": 26,
+   "section": "# RA-2 Troškovi primanja zaposlenika / # RA-2a Troškovi primanja igrača",
+   "choice": "wages_squad",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "wages_squad",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1127
+  },
+  {
+   "label": "Troškovi stanarina, prehrane i drugih naknada igračima",
+   "lado": "expense",
+   "page": 26,
+   "section": "# RA-2 Troškovi primanja zaposlenika / # RA-2a Troškovi primanja igrača",
+   "choice": "wages_squad",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "wages_squad",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Troškovi plaća igrača",
+   "lado": "expense",
+   "page": 26,
+   "section": "# RA-2 Troškovi primanja zaposlenika / # RA-2a Troškovi primanja igrača",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Troškovi poreza i doprinosa iz i na plaću stručnog stožera",
+   "lado": "expense",
+   "page": 26,
+   "section": "# RA-2b Troškovi primanja stručnog stožera",
+   "choice": "wages_squad",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "wages_squad",
+     0.69
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1072
+  },
+  {
+   "label": "Troškovi neto plaća stručnog stožera",
+   "lado": "expense",
+   "page": 26,
+   "section": "# RA-2b Troškovi primanja stručnog stožera",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "wages_squad",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Troškovi poreza i doprinosa iz i na plaću ostalih zaposlenika",
+   "lado": "expense",
+   "page": 27,
+   "section": "# BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / # RA-2c Troškovi primanja ostalih zaposlenika",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "wages_squad",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1188
+  },
+  {
+   "label": "Troškovi ostalih naknada stručnom stožeru",
+   "lado": "expense",
+   "page": 26,
+   "section": "# RA-2b Troškovi primanja stručnog stožera",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1112
+  },
+  {
+   "label": "Troškovi neto plaća ostalih zaposlenika",
+   "lado": "expense",
+   "page": 27,
+   "section": "# BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / # RA-2c Troškovi primanja ostalih zaposlenika",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1181
+  },
+  {
+   "label": "Troškovi hitne službe, osiguranja, snimanja utakmica, sudaca i delegata",
+   "lado": "expense",
+   "page": 27,
+   "section": "# RA-3 Umanjenje vrijednosti i amortizacija / # RA-4 Ostali poslovni rashodi",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Troškovi prigodnih nagrada, prijevoza i službenih putovanja",
+   "lado": "expense",
+   "page": 27,
+   "section": "# BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / # RA-2c Troškovi primanja ostalih zaposlenika",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "match_organisation_expense",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ]
+   ],
+   "tokens": 1102
+  },
+  {
+   "label": "Troškovi imovine i objekta - održavanje",
+   "lado": "expense",
+   "page": 27,
+   "section": "# RA-3 Umanjenje vrijednosti i amortizacija / # RA-4 Ostali poslovni rashodi",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1174
+  },
+  {
+   "label": "Troškovi čišćenja",
+   "lado": "expense",
+   "page": 27,
+   "section": "# RA-3 Umanjenje vrijednosti i amortizacija / # RA-4 Ostali poslovni rashodi",
+   "choice": "admin_general_expense",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Troškovi liječničkih pregleda",
+   "lado": "expense",
+   "page": 27,
+   "section": "# RA-3 Umanjenje vrijednosti i amortizacija / # RA-4 Ostali poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Troškovi prijevoza, prehrane i smještaja igrača",
+   "lado": "expense",
+   "page": 27,
+   "section": "# RA-3 Umanjenje vrijednosti i amortizacija / # RA-4 Ostali poslovni rashodi",
+   "choice": "match_organisation_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1129
+  },
+  {
+   "label": "Troškovi premija osiguranja",
+   "lado": "expense",
+   "page": 27,
+   "section": "# RA-3 Umanjenje vrijednosti i amortizacija / # RA-4 Ostali poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "admin_general_expense",
+     0.49
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Troškovi reprezentacije",
+   "lado": "expense",
+   "page": 27,
+   "section": "# RA-3 Umanjenje vrijednosti i amortizacija / # RA-4 Ostali poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "match_organisation_expense",
+     0.38
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Troškovi kotizacija i članarina",
+   "lado": "expense",
+   "page": 27,
+   "section": "# RA-3 Umanjenje vrijednosti i amortizacija / # RA-4 Ostali poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "match_organisation_expense",
+     0.26
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Troškovi najamnina",
+   "lado": "expense",
+   "page": 27,
+   "section": "# RA-3 Umanjenje vrijednosti i amortizacija / # RA-4 Ostali poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "wages_squad",
+     0.26
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Ostali troškovi i poslovni rashodi (kazne, donacije, otpisi potraživanja i sl.)",
+   "lado": "expense",
+   "page": 27,
+   "section": "# RA-3 Umanjenje vrijednosti i amortizacija / # RA-4 Ostali poslovni rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1162
+  },
+  {
+   "label": "Dobit (gubitak) prije poreza",
+   "lado": null,
+   "page": 29,
+   "section": "# BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / # PD Porezni prihodi (rashodi)",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "other_income",
+     0.15
+    ]
+   ],
+   "tokens": 1300
+  },
+  {
+   "label": "Rashodi za kamate",
+   "lado": null,
+   "page": 28,
+   "section": "# RA-5 Troškovi za stjecanje registracija igrača / # PR-6 Prihodi od raspolaganja registracijama igrača / # RA-6 Nekapitalizirani troškovi za naknade agentima/posrednicima / # PR-7 Financijski prihodi / # RA-7 Financijski rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1483
+  },
+  {
+   "label": "Negativne tečajne razlike",
+   "lado": null,
+   "page": 28,
+   "section": "# RA-5 Troškovi za stjecanje registracija igrača / # PR-6 Prihodi od raspolaganja registracijama igrača / # RA-6 Nekapitalizirani troškovi za naknade agentima/posrednicima / # PR-7 Financijski prihodi / # RA-7 Financijski rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1335
+  },
+  {
+   "label": "Uvećanja za porezno nepriznate rashode",
+   "lado": null,
+   "page": 29,
+   "section": "# BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / # PD Porezni prihodi (rashodi)",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1304
+  },
+  {
+   "label": "Ostali financijski rashodi",
+   "lado": null,
+   "page": 28,
+   "section": "# RA-5 Troškovi za stjecanje registracija igrača / # PR-6 Prihodi od raspolaganja registracijama igrača / # RA-6 Nekapitalizirani troškovi za naknade agentima/posrednicima / # PR-7 Financijski prihodi / # RA-7 Financijski rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1618
+  },
+  {
+   "label": "Osnovica poreza na dobit",
+   "lado": null,
+   "page": 29,
+   "section": "# BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / # PD Porezni prihodi (rashodi)",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1298
+  },
+  {
+   "label": "Stopa poreza na dobit",
+   "lado": null,
+   "page": 29,
+   "section": "# BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / # PD Porezni prihodi (rashodi)",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1297
+  },
+  {
+   "label": "Obaveza poreza na dobit",
+   "lado": null,
+   "page": 29,
+   "section": "# BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / # PD Porezni prihodi (rashodi)",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1298
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Glavni sponzor na opremi",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1661
+  },
+  {
+   "label": "Prihodi od ulaznica - ukupno",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "matchday_competition",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "matchday_competition",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1544
+  },
+  {
+   "label": "Prihodi od ulaznica - VIP ulaznice i hospitality",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "matchday_competition",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "matchday_competition",
+     0.94
+    ],
+    [
+     "stadium_other",
+     0.05
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1634
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Sponzor za stadion",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1657
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Sponzor za opremu (Proizvođač opreme)",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1667
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Ukupno",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1655
+  },
+  {
+   "label": "Prava emitiranja - Nacionalna natjecanja",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1582
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Reklamiranje na panoima oko terena za igru",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1665
+  },
+  {
+   "label": "Prava emitiranja - Ostali nerazvrstani prihodi",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "broadcasting",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "broadcasting",
+     0.95
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1577
+  },
+  {
+   "label": "Komercijalni prihodi od članstva (nevezano za utakmice)",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1596
+  },
+  {
+   "label": "Prihodi od prava emitiranja - Ukupno",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1543
+  },
+  {
+   "label": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "stadium_other",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "stadium_other",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1602
+  },
+  {
+   "label": "Komercijalni prihodi - Ukupno",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1547
+  },
+  {
+   "label": "Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "competition_bonus",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "competition_bonus",
+     0.48
+    ],
+    [
+     "lump_football_operations",
+     0.26
+    ],
+    [
+     "other_income",
+     0.19
+    ]
+   ],
+   "tokens": 1579
+  },
+  {
+   "label": "Donacije i dotacije ili drugi iznosi od države (na teritoriju sjedišta) i lokalne samouprave",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1463
+  },
+  {
+   "label": "Uefine nagrade i solidarne uplate - Ukupno",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1531
+  },
+  {
+   "label": "Ostali poslovni prihodi - Ukupno",
+   "lado": null,
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / # Račun dobiti i gubitka",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1542
+  }
+ ]
+}

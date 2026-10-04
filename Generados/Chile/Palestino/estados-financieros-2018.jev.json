@@ -1,0 +1,742 @@
+{
+ "md": "Clubes/Chile/Palestino/estados-financieros-2018.md",
+ "generatedAt": "2026-09-30T04:27:15.928Z",
+ "rubros": [
+  {
+   "label": "CARLOS AGUSTIN FARIAS Fenix Arriendo de pases 100%",
+   "lado": null,
+   "page": 35,
+   "section": "Desde 01.01.2018 al 31.12.2018 / Procedencia o             Descripción de los         Efecto en / Nombre Jugador / Destino           movimientos del ejercicio   resultado en M$",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "player_sales",
+     0.26
+    ],
+    [
+     "player_amortisation",
+     0.17
+    ]
+   ],
+   "tokens": 1605
+  },
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": null,
+   "page": 8,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / ESTADOS DE RESULTADOS INTEGRALES INTERMEDIOS / Nº         M$            M$             M$           M$",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1484
+  },
+  {
+   "label": "Ganancia bruta",
+   "lado": null,
+   "page": 8,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / ESTADOS DE RESULTADOS INTEGRALES INTERMEDIOS / Nº         M$            M$             M$           M$",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "lump_football_operations",
+     0.41000000000000003
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 1518
+  },
+  {
+   "label": "Resultado integral - - - 523.688 523.688 -",
+   "lado": null,
+   "page": 9,
+   "section": "varias            acumuladas                      controladoras / de la / controladora / Cambios en patrimonio / Resultado Integral",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "exceptional_items",
+     0.09999999999999999
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "BENJAMIN VIDAL Préstamo",
+   "lado": null,
+   "page": 35,
+   "section": "Desde 01.01.2018 al 31.12.2018 / Procedencia o             Descripción de los         Efecto en / Nombre Jugador / Destino           movimientos del ejercicio   resultado en M$",
+   "choice": "player_sales",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "player_sales",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1512
+  },
+  {
+   "label": "Ganancia (pérdida) 523.688 523.688 -",
+   "lado": null,
+   "page": 9,
+   "section": "varias            acumuladas                      controladoras / de la / controladora / Cambios en patrimonio / Resultado Integral",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1601
+  },
+  {
+   "label": "ROBERTO CARLOS GUTIERREZ GAMBOA Arriendo de pases 100%",
+   "lado": null,
+   "page": 35,
+   "section": "Desde 01.01.2018 al 31.12.2018 / Procedencia o             Descripción de los         Efecto en / Nombre Jugador / Destino           movimientos del ejercicio   resultado en M$",
+   "choice": "player_amortisation",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "player_amortisation",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "other_income",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1608
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": null,
+   "page": 8,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / ESTADOS DE RESULTADOS INTEGRALES INTERMEDIOS / Nº         M$            M$             M$           M$",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1495
+  },
+  {
+   "label": "SEBASTIAN GORGA Arriendo de pase",
+   "lado": null,
+   "page": 36,
+   "section": "Destino                    del ejercicio                en M$ / Desde 01.01.2018 al 31.12.2018 / Procedencia o       Descripción de los movimientos   Efecto en resultado / Nombre Jugador / Destino                     del ejercicio                en M$",
+   "choice": "player_amortisation",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "player_amortisation",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1425
+  },
+  {
+   "label": "Escuela de Futbol",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "choice": "youth_football",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "youth_football",
+     0.99
+    ],
+    [
+     "education",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Gasto (ingreso) por impuesto corriente",
+   "lado": null,
+   "page": 39,
+   "section": "El resultado por impuesto a las ganancias se detalla de la siguiente manera: / 01.01.2019        01.01.2018 / 30.06.2019        31.12.2018 / M$                 M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1552
+  },
+  {
+   "label": "ESTEBAN CARVAJAL Unión San Felipe Arriendo de pases 50%",
+   "lado": null,
+   "page": 36,
+   "section": "Destino                    del ejercicio                en M$ / Desde 01.01.2018 al 31.12.2018 / Procedencia o       Descripción de los movimientos   Efecto en resultado / Nombre Jugador / Destino                     del ejercicio                en M$",
+   "choice": "player_amortisation",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "player_amortisation",
+     0.32
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.22
+    ]
+   ],
+   "tokens": 1591
+  },
+  {
+   "label": "Abonados",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "top3": [
+    [
+     "season_tickets",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 976
+  },
+  {
+   "label": "Recaudación por partidos",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Saldo Final al",
+   "lado": null,
+   "page": 36,
+   "section": "Destino                    del ejercicio                en M$ / Desde 01.01.2018 al 31.12.2018 / Procedencia o       Descripción de los movimientos   Efecto en resultado / Nombre Jugador / Destino                     del ejercicio                en M$",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1410
+  },
+  {
+   "label": "Televisión",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Souvenir",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.89
+    ],
+    [
+     "other_income",
+     0.1
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Ingresos por préstamo Jugador",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Costo pase jugador",
+   "lado": null,
+   "page": 46,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 18. COMPOSICION DE CUENTAS DE COSTO DE VENTA",
+   "choice": "player_amortisation",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "player_amortisation",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1494
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": null,
+   "page": 46,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 18. COMPOSICION DE CUENTAS DE COSTO DE VENTA",
+   "choice": "other_amortisation",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_amortisation",
+     0.47000000000000003
+    ],
+    [
+     "player_amortisation",
+     0.35
+    ],
+    [
+     "depreciation",
+     0.14
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "Gastos de operación(*)",
+   "lado": null,
+   "page": 46,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 18. COMPOSICION DE CUENTAS DE COSTO DE VENTA",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "Implementación deportiva",
+   "lado": null,
+   "page": 46,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 18. COMPOSICION DE CUENTAS DE COSTO DE VENTA",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "lump_football_operations_expense",
+     0.22
+    ],
+    [
+     "youth_other_sports_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1465
+  },
+  {
+   "label": "Remuneraciones Cuerpo Técnico y Jugadores",
+   "lado": null,
+   "page": 46,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 18. COMPOSICION DE CUENTAS DE COSTO DE VENTA",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "Servicios basicos",
+   "lado": "expense",
+   "page": 46,
+   "section": "Detalle gastos de operación (*) / 01.01.2019             01.01.2018 / Gastos de operación                               30.06.2019             30.06.2018 / M$                     M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Arriendos pagados",
+   "lado": "expense",
+   "page": 46,
+   "section": "Detalle gastos de operación (*) / 01.01.2019             01.01.2018 / Gastos de operación                               30.06.2019             30.06.2018 / M$                     M$",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 46,
+   "section": "Detalle gastos de operación (*) / 01.01.2019             01.01.2018 / Gastos de operación                               30.06.2019             30.06.2018 / M$                     M$",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Asesorias",
+   "lado": "expense",
+   "page": 46,
+   "section": "Detalle gastos de operación (*) / 01.01.2019             01.01.2018 / Gastos de operación                               30.06.2019             30.06.2018 / M$                     M$",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 903
+  },
+  {
+   "label": "Gastos de Oficinas",
+   "lado": null,
+   "page": 48,
+   "section": "NOTA 20. OTROS INGRESOS / NOTA 21. GASTOS DE ADMINISTRACIÓN",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1471
+  },
+  {
+   "label": "Asesorias Profesionales",
+   "lado": null,
+   "page": 48,
+   "section": "NOTA 20. OTROS INGRESOS / NOTA 21. GASTOS DE ADMINISTRACIÓN",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1494
+  },
+  {
+   "label": "Comunicaciones y correo",
+   "lado": null,
+   "page": 48,
+   "section": "NOTA 20. OTROS INGRESOS / NOTA 21. GASTOS DE ADMINISTRACIÓN",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1331
+  },
+  {
+   "label": "Remuneraciones Administrativas",
+   "lado": null,
+   "page": 48,
+   "section": "NOTA 20. OTROS INGRESOS / NOTA 21. GASTOS DE ADMINISTRACIÓN",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1493
+  }
+ ]
+}

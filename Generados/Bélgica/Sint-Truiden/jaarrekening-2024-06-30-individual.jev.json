@@ -1,0 +1,489 @@
+{
+ "md": "Clubes/Bélgica/Sint-Truiden/jaarrekening-2024-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:42.467Z",
+ "rubrosHuella": "d16a7d7427174ccd695c5bcd0d3bfdbcb01ca4be",
+ "rubros": [
+  {
+   "label": "Bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "lump_football_operations",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Bedrijfskosten",
+   "lado": "expense",
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "- Handelsgoederen, grond- en hulpstoffen",
+   "lado": null,
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "- Diensten en diverse goederen",
+   "lado": null,
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "- Andere bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "player_sales",
+     0.02
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "- Afschrijvingen en waardeverminderingen op vaste activa",
+   "lado": null,
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "depreciation",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "- Omzet",
+   "lado": "revenue",
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "lump_football_operations",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1178
+  },
+  {
+   "label": "Andere personeelskosten",
+   "lado": "expense",
+   "page": 26,
+   "section": "Personeelskosten",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "wages_squad",
+     0.06
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 26,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "wages_squad",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "expense",
+   "page": 26,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "wages_squad",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.29000000000000004
+    ],
+    [
+     "other_expenses",
+     0.18
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "- Niet recurente bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "- Bezoldigingen, sociale lasten en pensioenen",
+   "lado": "expense",
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "- Anderen bedrijfskosten",
+   "lado": "expense",
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "- Financiële opbrengsten",
+   "lado": "revenue",
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "- Niet recurente bedrijfskosten",
+   "lado": "expense",
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "exceptional_items",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1165
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 26,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "wages_squad",
+     0.53
+    ],
+    [
+     "lump_football_operations_expense",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "- Financiële kosten",
+   "lado": "expense",
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "VASTE ACTIVA 21/28",
+   "lado": "expense",
+   "page": 5,
+   "section": "JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 | 20",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "depreciation",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1102
+  },
+  {
+   "label": "- Uitzonderlijke kosten",
+   "lado": "expense",
+   "page": 44,
+   "section": "# RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "top3": [
+    [
+     "exceptional_items",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Immateriële vaste activa 62 |",
+   "lado": "expense",
+   "page": 5,
+   "section": "JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 | 20",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "other_amortisation",
+     0.25
+    ],
+    [
+     "player_amortisation",
+     0.23
+    ]
+   ],
+   "tokens": 1134
+  },
+  {
+   "label": "Materiële vaste activa 63 | 22/27",
+   "lado": "expense",
+   "page": 5,
+   "section": "JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 | 20",
+   "choice": "depreciation",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "depreciation",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1115
+  },
+  {
+   "label": "Terreinen en gebouwen",
+   "lado": "expense",
+   "page": 5,
+   "section": "JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 | 20",
+   "choice": "depreciation",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "depreciation",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 947
+  },
+  {
+   "label": "Installaties, machines en uitrusting",
+   "lado": "expense",
+   "page": 5,
+   "section": "JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 | 20",
+   "choice": "depreciation",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "depreciation",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 899
+  },
+  {
+   "label": "Meubilair en rollend materieel",
+   "lado": "expense",
+   "page": 5,
+   "section": "JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 | 20",
+   "choice": "depreciation",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "depreciation",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.09999999999999999
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1082
+  }
+ ]
+}

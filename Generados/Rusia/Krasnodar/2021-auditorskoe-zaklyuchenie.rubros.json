@@ -1,0 +1,384 @@
+{
+ "md": "Clubes/Rusia/Krasnodar/2021-auditorskoe-zaklyuchenie.md",
+ "pdf": "Clubes/Rusia/Krasnodar/2021-auditorskoe-zaklyuchenie.pdf",
+ "club": "krasnodar",
+ "year": 2021,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:58.868Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 36,
+  "notasUsadas": []
+ },
+ "ladoConocido": 31,
+ "rubros": [
+  {
+   "label": "Форма по ОКУД",
+   "lado": null,
+   "page": 8,
+   "section": "# Отчет о финансовых результатах",
+   "values": [
+    0.000031
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Общество с ограниченной ответственностью 'Футбольный клуб 'Краснодар''",
+   "lado": null,
+   "page": 8,
+   "section": "# Отчет о финансовых результатах",
+   "values": [
+    84.442654
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Идентификационный номер налогоплательщика",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Отчет о финансовых результатах",
+   "values": [
+    2310.981325
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Вид экономической деятельности",
+   "lado": null,
+   "page": 8,
+   "section": "# Отчет о финансовых результатах",
+   "values": [
+    0.000293
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Общества с ограниченной ответственностью / Частная собственность",
+   "lado": null,
+   "page": 8,
+   "section": "# Отчет о финансовых результатах",
+   "values": [
+    1.230016
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Единица измерения: в тыс. рублей",
+   "lado": null,
+   "page": 8,
+   "section": "# Отчет о финансовых результатах",
+   "values": [
+    0.000384
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Выручка",
+   "lado": "revenue",
+   "page": 31,
+   "section": "#### 14.3. Отчет о финансовых результатах / #### Доходы и расходы по обычным видам деятельности",
+   "values": [
+    3.368643
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Себестоимость",
+   "lado": "expense",
+   "page": 31,
+   "section": "#### 14.3. Отчет о финансовых результатах / #### Доходы и расходы по обычным видам деятельности",
+   "values": [
+    -4.497071
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Коммерческие расходы",
+   "lado": "expense",
+   "page": 31,
+   "section": "#### 14.3. Отчет о финансовых результатах / #### Доходы и расходы по обычным видам деятельности",
+   "values": [
+    -0.150006
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Управленческие расходы",
+   "lado": "expense",
+   "page": 31,
+   "section": "#### 14.3. Отчет о финансовых результатах / #### Доходы и расходы по обычным видам деятельности",
+   "values": [
+    -0.108919
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "*в том числе:*<br>Сырье, материалы",
+   "lado": "expense",
+   "page": 28,
+   "section": "#### Наличие и движение запасов",
+   "values": [
+    0.002021
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Товары для перепродажи",
+   "lado": "expense",
+   "page": 28,
+   "section": "#### Наличие и движение запасов",
+   "values": [
+    0.002021
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Товары отгруженные",
+   "lado": "expense",
+   "page": 28,
+   "section": "#### Наличие и движение запасов",
+   "values": [
+    0.002021
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Затраты в незавершенном производстве",
+   "lado": "expense",
+   "page": 28,
+   "section": "#### Наличие и движение запасов",
+   "values": [
+    0.002021
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Прочие запасы и затраты",
+   "lado": "expense",
+   "page": 28,
+   "section": "#### Наличие и движение запасов",
+   "values": [
+    0.002021
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Расходы будущих периодов",
+   "lado": "expense",
+   "page": 28,
+   "section": "#### Наличие и движение запасов",
+   "values": [
+    0.002021
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Проценты к получению",
+   "lado": "revenue",
+   "page": 32,
+   "section": "#### Прочие доходы",
+   "values": [
+    0.07271
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Доходы по трансферной деятельности, солидарные выплаты",
+   "lado": "revenue",
+   "page": 32,
+   "section": "#### Прочие доходы",
+   "values": [
+    0.671549
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Положительные курсовые разницы и доходы, связанные с продажей валюты",
+   "lado": "revenue",
+   "page": 32,
+   "section": "#### Прочие доходы",
+   "values": [
+    0.447937
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Бонусы за участие в Лиге Европы, Лиге Чемпионов",
+   "lado": "revenue",
+   "page": 32,
+   "section": "#### Прочие доходы",
+   "values": [
+    0.087847
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Компенсация расходов на развитие молодежного спорта, полученная от УЕФА, РПЛ",
+   "lado": "expense",
+   "page": 32,
+   "section": "#### Прочие доходы",
+   "values": [
+    0.00051
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Доходы от реализации ценных бумаг",
+   "lado": "revenue",
+   "page": 32,
+   "section": "#### Прочие доходы",
+   "values": [
+    0.110468
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Дооценка ценных бумаг",
+   "lado": "revenue",
+   "page": 32,
+   "section": "#### Прочие доходы",
+   "values": [
+    0.007941
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Дивиденды по ценным бумагам",
+   "lado": "revenue",
+   "page": 32,
+   "section": "#### Прочие доходы",
+   "values": [
+    0.000612
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Уступка права требования",
+   "lado": "revenue",
+   "page": 32,
+   "section": "#### Прочие доходы",
+   "values": [
+    0.000337
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Списание оценочных обязательств по предстоящим отпускам",
+   "lado": "revenue",
+   "page": 32,
+   "section": "#### Прочие доходы",
+   "values": [
+    0.055784
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Прочие доходы",
+   "lado": "revenue",
+   "page": 32,
+   "section": "#### Прочие доходы",
+   "values": [
+    0.001632
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Расходы по трансферам с учетом посреднических услуг и солидарных взносов",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Прочие расходы",
+   "values": [
+    2455.964
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Курсовые разницы по расчетам, расходы, связанные с продажей (покупкой) валюты",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Прочие расходы",
+   "values": [
+    460.176
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Штрафы, неустойки",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Прочие расходы",
+   "values": [
+    2.631
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Банковские услуги",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Прочие расходы",
+   "values": [
+    0.413
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Расходы по реализации ценных бумаг, в т.ч. комиссия брокера",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Прочие расходы",
+   "values": [
+    112.873
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Дооценка финансовых вложений (ценных бумаг)",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Прочие расходы",
+   "values": [
+    12.93
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Формирование резерва по сомнительным долгам",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Прочие расходы",
+   "values": [
+    0.219
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Исправление ошибок прошлого периода в БУ",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Прочие расходы",
+   "values": [
+    4.293
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Прочие расходы",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Прочие расходы",
+   "values": [
+    5.75
+   ],
+   "origen": "estado 27"
+  }
+ ]
+}

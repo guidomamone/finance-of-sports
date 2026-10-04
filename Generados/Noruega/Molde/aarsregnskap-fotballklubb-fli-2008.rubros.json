@@ -1,0 +1,739 @@
+{
+ "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2008.md",
+ "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2008.pdf",
+ "club": "molde",
+ "year": 2008,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:31.466Z",
+ "tieOuts": {
+  "cierran": 71,
+  "noCierran": 3
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "1 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "15 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 73,
+  "notasUsadas": [
+   "8",
+   "14",
+   "16",
+   "17",
+   "18",
+   "10",
+   "15"
+  ]
+ },
+ "ladoConocido": 66,
+ "rubros": [
+  {
+   "label": "Salg spillere/Utleie",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Molde Fotballklubb",
+   "values": [
+    10
+   ],
+   "origen": "nota 8 (ancla 1)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Sum kostnader",
+   "lado": "expense",
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "values": [
+    50431
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Administrasjon",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Molde Fotballklubb",
+   "values": [
+    1272.423
+   ],
+   "origen": "nota 8 (ancla 1)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Lønn spillere, trenere og støtteapparat",
+   "lado": "expense",
+   "page": 19,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "values": [
+    25312.648
+   ],
+   "origen": "nota 14 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Folketrygdavgift",
+   "lado": "expense",
+   "page": 19,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "values": [
+    4138.845
+   ],
+   "origen": "nota 14 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Pensjonskostnad",
+   "lado": "expense",
+   "page": 19,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "values": [
+    327.711
+   ],
+   "origen": "nota 14 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 19,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "values": [
+    5076.199
+   ],
+   "origen": "nota 14 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Trening/utstyr",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Molde Fotballklubb",
+   "values": [
+    4409.368
+   ],
+   "origen": "nota 8 (ancla 1)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Baneleie seriekamper",
+   "lado": "expense",
+   "page": 20,
+   "section": "### Note 10 Egne arrangement",
+   "values": [
+    1947.035
+   ],
+   "origen": "nota 16 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Avgift Norges Fotballforbund",
+   "lado": "expense",
+   "page": 20,
+   "section": "### Note 10 Egne arrangement",
+   "values": [
+    665.99
+   ],
+   "origen": "nota 16 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Annonsering seriekamper",
+   "lado": "expense",
+   "page": 20,
+   "section": "### Note 10 Egne arrangement",
+   "values": [
+    529.859
+   ],
+   "origen": "nota 16 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Utgifter billettsalg",
+   "lado": "expense",
+   "page": 20,
+   "section": "### Note 10 Egne arrangement",
+   "values": [
+    365.501
+   ],
+   "origen": "nota 16 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Andre arrangementskostnader",
+   "lado": "expense",
+   "page": 20,
+   "section": "### Note 10 Egne arrangement",
+   "values": [
+    1329.744
+   ],
+   "origen": "nota 16 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Utgifter Cup kamper",
+   "lado": "expense",
+   "page": 20,
+   "section": "### Note 11 Andres arrangement",
+   "values": [
+    1049.516
+   ],
+   "origen": "nota 17 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Utgifter andre arrangement",
+   "lado": "expense",
+   "page": 20,
+   "section": "### Note 11 Andres arrangement",
+   "values": [
+    136.089
+   ],
+   "origen": "nota 17 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Reisekostnader seriekamper",
+   "lado": "expense",
+   "page": 20,
+   "section": "### Note 11 Andres arrangement",
+   "values": [
+    1034.979
+   ],
+   "origen": "nota 17 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Utgifter Prosjekt/Tiltak",
+   "lado": "expense",
+   "page": 20,
+   "section": "### Note 12 Andre driftskostnader",
+   "values": [
+    384.739
+   ],
+   "origen": "nota 18 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": "expense",
+   "page": 20,
+   "section": "### Note 12 Andre driftskostnader",
+   "values": [
+    259.52
+   ],
+   "origen": "nota 18 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Varekjøp og andre kostnader kiosker",
+   "lado": "expense",
+   "page": 20,
+   "section": "### Note 12 Andre driftskostnader",
+   "values": [
+    667.695
+   ],
+   "origen": "nota 18 (ancla 1>8)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Molde Fotballklubb",
+   "values": [
+    1209.83
+   ],
+   "origen": "nota 8 (ancla 1)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Anleggskostnader",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Molde Fotballklubb",
+   "values": [
+    69.14
+   ],
+   "origen": "nota 8 (ancla 1)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Avskrivninger",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Molde Fotballklubb",
+   "values": [
+    244.18
+   ],
+   "origen": "nota 8 (ancla 1)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "values": [
+    48190
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "values": [
+    2849
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "values": [
+    17
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "values": [
+    625
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Medlemsinntekter/tilskudd",
+   "lado": "revenue",
+   "page": 27,
+   "section": "## HOVEDSTYRET / SPORTSLIG UTVALG / ### Resultatregnskap 2008",
+   "values": [
+    8261.197
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Inntekter Seriekamper",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Forhold til Molde Fotball AS / ## Forholdet til Opptur MFK AS / ### Note 2 Kamp- og billettinntekter",
+   "values": [
+    13884.885
+   ],
+   "origen": "nota 10 (ancla 33)",
+   "ancla": "Kamp/billettinntekter"
+  },
+  {
+   "label": "Kamp/billettinntekter",
+   "lado": "revenue",
+   "page": 27,
+   "section": "## HOVEDSTYRET / SPORTSLIG UTVALG / ### Resultatregnskap 2008",
+   "values": [
+    16175.498
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Inntekter NM Cup",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Forhold til Molde Fotball AS / ## Forholdet til Opptur MFK AS / ### Note 2 Kamp- og billettinntekter",
+   "values": [
+    1007.93
+   ],
+   "origen": "nota 10 (ancla 33)",
+   "ancla": "Kamp/billettinntekter"
+  },
+  {
+   "label": "Oppgjør NM Cup",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Forhold til Molde Fotball AS / ## Forholdet til Opptur MFK AS / ### Note 2 Kamp- og billettinntekter",
+   "values": [
+    1164.783
+   ],
+   "origen": "nota 10 (ancla 33)",
+   "ancla": "Kamp/billettinntekter"
+  },
+  {
+   "label": "Andre inntekter privatkamper etc.",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Forhold til Molde Fotball AS / ## Forholdet til Opptur MFK AS / ### Note 2 Kamp- og billettinntekter",
+   "values": [
+    117.9
+   ],
+   "origen": "nota 10 (ancla 33)",
+   "ancla": "Kamp/billettinntekter"
+  },
+  {
+   "label": "Publikumssnitt hjemmekamper",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Forhold til Molde Fotball AS / ## Forholdet til Opptur MFK AS / ### Note 2 Kamp- og billettinntekter",
+   "values": [
+    8.388
+   ],
+   "origen": "nota 10 (ancla 33)",
+   "ancla": "Kamp/billettinntekter"
+  },
+  {
+   "label": "Avtale MF/sponsor",
+   "lado": "revenue",
+   "page": 27,
+   "section": "## HOVEDSTYRET / SPORTSLIG UTVALG / ### Resultatregnskap 2008",
+   "values": [
+    22696
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "lado": "revenue",
+   "page": 27,
+   "section": "## HOVEDSTYRET / SPORTSLIG UTVALG / ### Resultatregnskap 2008",
+   "values": [
+    316.173
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Salg spillere/Utleie spillere",
+   "lado": "revenue",
+   "page": 27,
+   "section": "## HOVEDSTYRET / SPORTSLIG UTVALG / ### Resultatregnskap 2008",
+   "values": [
+    10
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Medlemsinntekter/tilskudd",
+   "lado": "revenue",
+   "page": 28,
+   "section": "## BREDDEFOTBALLSTYRET / ### Resultatregnskap 2008",
+   "values": [
+    1090.7
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "lado": "revenue",
+   "page": 28,
+   "section": "## BREDDEFOTBALLSTYRET / ### Resultatregnskap 2008",
+   "values": [
+    2532.388
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Administrasjon",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "values": [
+    244.532
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Personalkostnader",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "values": [
+    784.73
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Trening/utstyr",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "values": [
+    561.323
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Egne arrangement",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "values": [
+    69.142
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Andres arrangement",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "values": [
+    129.368
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Kjøp spillere/Leie spillere",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "values": [
+    3.6
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "values": [
+    984.026
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Administrasjon",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "values": [
+    1027.891
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "Personalkostnader",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "values": [
+    34070.672
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "Utgifter treningsleir/privatkamper",
+   "lado": "expense",
+   "page": 20,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Revisor / ### Note 9 Trening utstyr",
+   "values": [
+    1243.778
+   ],
+   "origen": "nota 15 (ancla 34)",
+   "ancla": "Trening/utstyr"
+  },
+  {
+   "label": "Trening/utstyr",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "values": [
+    3848.045
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Leie treningsbaner etc.",
+   "lado": "expense",
+   "page": 20,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Revisor / ### Note 9 Trening utstyr",
+   "values": [
+    635.359
+   ],
+   "origen": "nota 15 (ancla 34)",
+   "ancla": "Trening/utstyr"
+  },
+  {
+   "label": "Sportsrekvisita",
+   "lado": "expense",
+   "page": 20,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Revisor / ### Note 9 Trening utstyr",
+   "values": [
+    778.226
+   ],
+   "origen": "nota 15 (ancla 34)",
+   "ancla": "Trening/utstyr"
+  },
+  {
+   "label": "Medisinske tjenester og rekvisita",
+   "lado": "expense",
+   "page": 20,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Revisor / ### Note 9 Trening utstyr",
+   "values": [
+    247.704
+   ],
+   "origen": "nota 15 (ancla 34)",
+   "ancla": "Trening/utstyr"
+  },
+  {
+   "label": "Andre sportslige kostnader",
+   "lado": "expense",
+   "page": 20,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Revisor / ### Note 9 Trening utstyr",
+   "values": [
+    942.978
+   ],
+   "origen": "nota 15 (ancla 34)",
+   "ancla": "Trening/utstyr"
+  },
+  {
+   "label": "Egne arrangement",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "values": [
+    4768.987
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "Andres arrangement",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "values": [
+    2091.216
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "Kjøp spillere/Leie spillere",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "values": [
+    1308.354
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "values": [
+    268.804
+   ],
+   "origen": "estado 34"
+  },
+  {
+   "label": "Medlemskontigent",
+   "lado": "revenue",
+   "page": 18,
+   "section": "### Note 3 Medlemsinntekter og tilskudd",
+   "values": [
+    210.25
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Egenandeler/deltakeravgift",
+   "lado": "revenue",
+   "page": 18,
+   "section": "### Note 3 Medlemsinntekter og tilskudd",
+   "values": [
+    1163.362
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Markedsmidler NFF, NTF og UEFA",
+   "lado": "revenue",
+   "page": 18,
+   "section": "### Note 3 Medlemsinntekter og tilskudd",
+   "values": [
+    7595.885
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Andre tilskudd",
+   "lado": "revenue",
+   "page": 18,
+   "section": "### Note 3 Medlemsinntekter og tilskudd",
+   "values": [
+    339.4
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Kiosksalg",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Note 5 Andre driftsinntekter",
+   "values": [
+    1538.572
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Årsberetning Molde Fotballklubb 2008 / ## Note 5 Andre driftsinntekter",
+   "values": [
+    1314.441
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Medlemsinntekter/tilskudd",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# Totalbudsjett 2009 / Budsjett 2009 / Regnskap 2008 / Budsjett 2008 / # DRIFTSINNTEKTER",
+   "values": [
+    8790
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Kamp/billettinntekter",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# Totalbudsjett 2009 / Budsjett 2009 / Regnskap 2008 / Budsjett 2008 / # DRIFTSINNTEKTER",
+   "values": [
+    16650
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Avtale MF/sponsor",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# Totalbudsjett 2009 / Budsjett 2009 / Regnskap 2008 / Budsjett 2008 / # DRIFTSINNTEKTER",
+   "values": [
+    21800.08
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "lado": "revenue",
+   "page": 26,
+   "section": "# Totalbudsjett 2009 / Budsjett 2009 / Regnskap 2008 / Budsjett 2008 / # DRIFTSINNTEKTER",
+   "values": [
+    3385
+   ],
+   "origen": "estado 30"
+  }
+ ]
+}

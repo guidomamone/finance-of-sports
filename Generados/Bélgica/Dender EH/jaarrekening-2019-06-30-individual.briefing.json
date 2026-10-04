@@ -1,0 +1,323 @@
+{
+  "club": "dender-be",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Dender EH/jaarrekening-2019-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:54:57.217Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 40,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 9,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 5,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / VASTE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Immateriële vaste activa",
+          "values": [
+            "5.1.1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiële vaste activa",
+          "values": [
+            "5.1.2"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "51.084",
+            "16.838"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "4.793",
+            "3.770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "2.458.374",
+            "2.385.703"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "PASSIVA / EIGEN VERMOGEN 10/15 -2.624.336 -1.981.978",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overgedragen positief (negatief) resultaat (+)/(-)",
+          "values": [
+            "-3.571.836",
+            "-2.972.978"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaalsubsidies",
+          "values": [
+            "947.500",
+            "991.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VOORZIENINGEN 53 |",
+          "values": [
+            "226.557"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorzieningen voor risico's en kosten 160/5",
+          "values": [
+            "226.557"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Voorzieningen voor terug te betalen subsidies en / legaten en voor schenkingen met terugnemingsrecht 168",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "5.082.711",
+            "4.141.124"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 54 |",
+          "values": [
+            "3.689.341",
+            "867.544"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "3.689.341",
+            "867.544"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Kredietinstellingen, leasingschulden en soortgelijke",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "schulden 172/3",
+          "values": [
+            "304.000",
+            "473.544"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige leningen 174/0",
+          "values": [
+            "3.385.341",
+            "394.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Schulden op meer dan één jaar die binnen het jaar / vervallen 42 52.500 / Financiële schulden 43 / Kredietinstellingen 430/8 / Overige leningen 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "114.456",
+            "118.682"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "114.456",
+            "118.682"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 / Schulden met betrekking tot belastingen,",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "bezoldigingen en sociale lasten",
+          "values": [
+            "36.407",
+            "60.654"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "1.822",
+            "4.616"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "34.584",
+            "56.038"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diverse schulden",
+          "values": [
+            "675.605",
+            "2.833.048"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Vervallen obligaties en coupons, terug te betalen / subsidies en borgtochten ontvangen in contanten 480/8 / Andere rentedragende schulden 4890 / Andere schulden, niet-rentedragend of gekoppeld",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "aan een abnormaal lage rente 4891",
+          "values": [
+            "675.605",
+            "2.833.048"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 492/3",
+          "values": [
+            "566.902",
+            "208.696"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "2.458.374",
+            "2.385.703"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "SOCIALE BALANS / (VTE) (VTE)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overeenkomst voor een onbepaalde tijd 110",
+          "values": [
+            "0,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overeenkomst voor een bepaalde tijd 111 10",
+          "values": [
+            "13,2"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "Immateriële vaste activa",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Immateriële vaste activa",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "depreciation",
+        "matchedLabel": "Afschrijvingen en waardeverminderingen op immateriële en materiële vaste activa",
+        "similarity": 50
+      },
+      {
+        "label": "Materiële vaste activa",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Materiële vaste activa",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "depreciation",
+        "matchedLabel": "Afschrijvingen en waardeverminderingen op immateriële en materiële vaste activa",
+        "similarity": 50
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Dender EH",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

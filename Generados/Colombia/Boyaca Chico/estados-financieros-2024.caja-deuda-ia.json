@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Colombia/Boyaca Chico/estados-financieros-2024.md",
+ "generado": "2026-10-02T00:12:16.440Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Días en pesos Colombianos)",
+ "caja": {
+  "lineas": [
+   447
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   447,
+   455
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Encabezados de columna confusos (2023-24/2024-25) y OCR defectuoso; se asume que la primera columna numérica corresponde a 2024, coherente con el resultado del ejercicio 708.070.085 del estado de resultados 2024. Las obligaciones financieras no corrientes (L455) están en 0, y las corrientes (L447) suman 666.527.066. La frase de escala parece un error de OCR de 'Cifras en pesos Colombianos'."
+}

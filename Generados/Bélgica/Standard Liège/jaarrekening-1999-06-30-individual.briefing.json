@@ -1,0 +1,161 @@
+{
+  "club": "standardliege-be",
+  "year": 1999,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Standard Liège/jaarrekening-1999-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:55:36.076Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 52,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 5,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 15,
+      "section": "RESULTATS D'EXPLOITATION / TRAVAILLEURS INSCRITS AU REGISTRE DU PERSONNEL / PROVISIONS POUR RISQUES ET CHARGES / PERSONNEL INTERIMAIRE ET PERSONNES MISES A LA / DISPOSITION DE L'ENTREPRISE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "9087 ! 59,7 !",
+          "values": [
+            "57,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "9088 ! 111.525 !",
+          "values": [
+            "111.253"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 15,
+      "section": "! ! / ! !",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "620 ! 260.780 !",
+          "values": [
+            "231.887"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "621 ! 19.823 !",
+          "values": [
+            "16.222"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "! ! / 9115 ! 202 ! 4.301 / 9116 ! ) ! ( ) / ! ! / ! !",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "640 ! 5.750 !",
+          "values": [
+            "6.368"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "641/8 ! 23.138 !",
+          "values": [
+            "11.561"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "! ! / ! ! / ! ! / 9096 ! 4 ! 6 / 9097 ! 2 ! 3",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "9098 ! 3.308 !",
+          "values": [
+            "5.727"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "617 ! 2.686 !",
+          "values": [
+            "4.678"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "! N° NAT. ! 433.255.448 ! 99650.4967 ! C 27. ! / RAPPORT DE GESTION / RAPPORT DE GESTION DU CONSEIL D'ADMINISTRATION / A L'ASSEMBLEE GENERALE ANNUELLE / COMPTE - RENDU DE L'EXERCICE 1998 - 1999",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "* Abonnements 98-99 : 26.969.000 FB contre 30.655.000 FB en",
+          "values": [
+            "97-98."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "* Location (vente de tickets) 45.486.000 FB contre 34.154.000 FB en",
+          "values": [
+            "97-98."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "9087 ! 59,7 !",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "9087 ! 59,7 !",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "9088 ! 111.525 !",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "9088 ! 111.525 !",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Standard Liège",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

@@ -1,0 +1,150 @@
+{
+  "club": "deloitte-proleague-report",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/_Deloitte-ProLeague-Report/deloitte-pro-league-report-2023.md",
+  "generatedAt": "2026-09-30T21:56:13.811Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 3,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 18,
+      "section": "UEFA Ranking / Netherlands and Portugal between Belgium and the ‘Big Five’ leagues. / Figure 12: UEFA Ranking 22/23 / 18/19 19/20 20/21 21/22 22/23 Total / AA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. England IS",
+          "values": [
+            "22.642",
+            "18.571",
+            "24.357",
+            "21.000",
+            "23.000",
+            "109.570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Spain =",
+          "values": [
+            "19.571",
+            "18.928",
+            "19.500",
+            "18.428",
+            "16.571",
+            "92.998"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Germany é",
+          "values": [
+            "15.214",
+            "18.714",
+            "15.214",
+            "16.214",
+            "17.125",
+            "82.481"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Italy ( )",
+          "values": [
+            "12.642",
+            "14.928",
+            "16.285",
+            "15.714",
+            "22.357",
+            "81.926"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. France ( )",
+          "values": [
+            "10.583",
+            "11.666",
+            "7.916",
+            "18.416",
+            "12.585",
+            "61.164"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "yp N",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "6. Netherlands wy",
+          "values": [
+            "8.600",
+            "9,400",
+            "9,200",
+            "19.200",
+            "13.500",
+            "59.900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7. Portugal",
+          "values": [
+            "10.900",
+            "10.300",
+            "9.600",
+            "12.916",
+            "12.500",
+            "56.216"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "impact, or operational output, excludes governmental support (i.e., / subsidies). An additional attention point is that transfer revenues / are included in the direct impact, but not factored into the / calculation of the indirect and induced gross output. The analysis / of the direct gross output reveals that the largest contributors are",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "transfer revenues (i.e., 32%), other operational revenue (i.e.,",
+          "values": [
+            "23%),"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "and broadcasting (i.e.,",
+          "values": [
+            "17%)."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/deloitte-proleague-report-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"deloitte-proleague-report\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

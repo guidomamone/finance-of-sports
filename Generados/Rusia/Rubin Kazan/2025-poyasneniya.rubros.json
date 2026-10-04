@@ -1,0 +1,342 @@
+{
+ "md": "Clubes/Rusia/Rubin Kazan/2025-poyasneniya.md",
+ "pdf": "Clubes/Rusia/Rubin Kazan/2025-poyasneniya.pdf",
+ "club": "rubin-kazan",
+ "year": 2025,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:08:07.114Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 29,
+  "notasUsadas": []
+ },
+ "ladoConocido": 27,
+ "rubros": [
+  {
+   "label": "2340 «Прочие доходы»",
+   "lado": "revenue",
+   "page": 4,
+   "section": "# Корректировки, внесенные в отчет о финансовых результатах",
+   "values": [
+    0.326692
+   ],
+   "origen": "estado 1",
+   "glosa": "2340 «Otros ingresos»"
+  },
+  {
+   "label": "2350 «Прочие расходы»",
+   "lado": "expense",
+   "page": 4,
+   "section": "# Корректировки, внесенные в отчет о финансовых результатах",
+   "values": [
+    0.193186
+   ],
+   "origen": "estado 1",
+   "glosa": "2350 «Otros gastos»"
+  },
+  {
+   "label": "Амортизация, начисленная на право пользования активом",
+   "lado": null,
+   "page": 21,
+   "section": "Суммы, признанные в отчете о финансовых результатах: / (тыс. руб.)",
+   "values": [
+    -0.030529
+   ],
+   "origen": "estado 13",
+   "glosa": "Amortización acumulada de activos por derecho de uso"
+  },
+  {
+   "label": "Процентные расходы по обязательствам по аренде",
+   "lado": "expense",
+   "page": 21,
+   "section": "Суммы, признанные в отчете о финансовых результатах: / (тыс. руб.)",
+   "values": [
+    -0.002615
+   ],
+   "origen": "estado 13",
+   "glosa": "Gastos por intereses de pasivos por arrendamiento"
+  },
+  {
+   "label": "Отток денежных средств по аренде",
+   "lado": null,
+   "page": 22,
+   "section": "Суммы, признание в отчете о движении денежных средств: / (тыс. руб.)",
+   "values": [
+    -36.279
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "*в том числе:* Расчеты по аренде",
+   "lado": "revenue",
+   "page": 29,
+   "section": "3.10.1 Наличие и движение обязательств (за исключением оценочных обязательств)",
+   "values": [
+    0.002025
+   ],
+   "origen": "estado 26",
+   "glosa": "*de las cuales:* Cuentas por arrendamiento"
+  },
+  {
+   "label": "*в том числе:* Расчеты с поставщиками и подрядчиками",
+   "lado": "revenue",
+   "page": 29,
+   "section": "3.10.1 Наличие и движение обязательств (за исключением оценочных обязательств)",
+   "values": [
+    0.002025
+   ],
+   "origen": "estado 26",
+   "glosa": "*de los cuales:* Proveedores y contratistas"
+  },
+  {
+   "label": "Расчеты с покупателями и заказчиками",
+   "lado": "revenue",
+   "page": 29,
+   "section": "3.10.1 Наличие и движение обязательств (за исключением оценочных обязательств)",
+   "values": [
+    0.002025
+   ],
+   "origen": "estado 26",
+   "glosa": "Deudores comerciales y cuentas a cobrar"
+  },
+  {
+   "label": "Расчеты с разными дебиторами и кредиторами",
+   "lado": "revenue",
+   "page": 29,
+   "section": "3.10.1 Наличие и движение обязательств (за исключением оценочных обязательств)",
+   "values": [
+    0.002025
+   ],
+   "origen": "estado 26",
+   "glosa": "Otros deudores y acreedores"
+  },
+  {
+   "label": "Расчеты по аренде",
+   "lado": "revenue",
+   "page": 29,
+   "section": "3.10.1 Наличие и движение обязательств (за исключением оценочных обязательств)",
+   "values": [
+    0.002025
+   ],
+   "origen": "estado 26",
+   "glosa": "Cuentas a pagar por arrendamiento"
+  },
+  {
+   "label": "Краткосрочные займы",
+   "lado": "revenue",
+   "page": 29,
+   "section": "3.10.1 Наличие и движение обязательств (за исключением оценочных обязательств)",
+   "values": [
+    0.002025
+   ],
+   "origen": "estado 26",
+   "glosa": "Préstamos a corto plazo"
+  },
+  {
+   "label": "Расчеты по налогам и взносам",
+   "lado": "expense",
+   "page": 29,
+   "section": "3.10.1 Наличие и движение обязательств (за исключением оценочных обязательств)",
+   "values": [
+    0.002025
+   ],
+   "origen": "estado 26",
+   "glosa": "Pasivos por impuestos y seguridad social"
+  },
+  {
+   "label": "в том числе: Базы данных",
+   "lado": "expense",
+   "page": 16,
+   "section": "3.1.3 Капитальные вложения в нематериальные активы",
+   "values": [
+    2.025
+   ],
+   "origen": "estado 5",
+   "glosa": "de los cuales: Bases de datos"
+  },
+  {
+   "label": "Секреты производства (ноу-хау)",
+   "lado": "expense",
+   "page": 16,
+   "section": "3.1.3 Капитальные вложения в нематериальные активы",
+   "values": [
+    2.025
+   ],
+   "origen": "estado 5",
+   "glosa": "Secretos industriales y comerciales (know-how)"
+  },
+  {
+   "label": "Исключительное право владельца на товарный знак и знак обслуживания, наименование происхождения товара",
+   "lado": "expense",
+   "page": 16,
+   "section": "3.1.3 Капитальные вложения в нематериальные активы",
+   "values": [
+    2.025
+   ],
+   "origen": "estado 5",
+   "glosa": "Derecho exclusivo sobre marcas comerciales, marcas de servicio y denominaciones de origen"
+  },
+  {
+   "label": "Трансферные и агентские вознаграждения по приобретению футболистов",
+   "lado": "expense",
+   "page": 16,
+   "section": "3.1.3 Капитальные вложения в нематериальные активы",
+   "values": [
+    2.025
+   ],
+   "origen": "estado 5",
+   "glosa": "Comisiones de transferencia y de agentes por adquisición de futbolistas"
+  },
+  {
+   "label": "Проценты к уплате по аренде",
+   "lado": "expense",
+   "page": 33,
+   "section": "Таблица 3.13.2 / Прочие расходы (тыс. руб.)",
+   "values": [
+    2.615
+   ],
+   "origen": "estado 34",
+   "glosa": "Intereses devengados por contratos de arrendamiento"
+  },
+  {
+   "label": "Курсовые разницы",
+   "lado": "expense",
+   "page": 33,
+   "section": "Таблица 3.13.2 / Прочие расходы (тыс. руб.)",
+   "values": [
+    459.673
+   ],
+   "origen": "estado 34",
+   "glosa": "Diferencias de cambio"
+  },
+  {
+   "label": "Солидарные выплаты",
+   "lado": "expense",
+   "page": 33,
+   "section": "Таблица 3.13.2 / Прочие расходы (тыс. руб.)",
+   "values": [
+    15.099
+   ],
+   "origen": "estado 34",
+   "glosa": "Contribuciones del mecanismo de solidaridad"
+  },
+  {
+   "label": "Резерв сомнительных долгов",
+   "lado": "expense",
+   "page": 33,
+   "section": "Таблица 3.13.2 / Прочие расходы (тыс. руб.)",
+   "values": [
+    10.308
+   ],
+   "origen": "estado 34",
+   "glosa": "Provisión para insolvencias de créditos de dudoso cobro"
+  },
+  {
+   "label": "Расходы на услуги банков",
+   "lado": "expense",
+   "page": 33,
+   "section": "Таблица 3.13.2 / Прочие расходы (тыс. руб.)",
+   "values": [
+    7.223
+   ],
+   "origen": "estado 34",
+   "glosa": "Gastos por servicios bancarios y comisiones"
+  },
+  {
+   "label": "Штрафы, пени, неустойки",
+   "lado": "expense",
+   "page": 33,
+   "section": "Таблица 3.13.2 / Прочие расходы (тыс. руб.)",
+   "values": [
+    1.506
+   ],
+   "origen": "estado 34",
+   "glosa": "Multas, penalizaciones e indemnizaciones"
+  },
+  {
+   "label": "Прочие расходы",
+   "lado": "expense",
+   "page": 33,
+   "section": "Таблица 3.13.2 / Прочие расходы (тыс. руб.)",
+   "values": [
+    64.021
+   ],
+   "origen": "estado 34",
+   "glosa": "Otros gastos"
+  },
+  {
+   "label": "Материальные затраты",
+   "lado": "expense",
+   "page": 32,
+   "section": "### 3.12.2 Расходы по обычным видам деятельности",
+   "values": [
+    0.238409
+   ],
+   "origen": "estado 31",
+   "glosa": "Consumos y gastos de materiales"
+  },
+  {
+   "label": "Затраты на оплату труда",
+   "lado": "expense",
+   "page": 32,
+   "section": "### 3.12.2 Расходы по обычным видам деятельности",
+   "values": [
+    2.78389
+   ],
+   "origen": "estado 31",
+   "glosa": "Gastos de personal (sueldos y salarios)"
+  },
+  {
+   "label": "Отчисления на социальные нужды",
+   "lado": "expense",
+   "page": 32,
+   "section": "### 3.12.2 Расходы по обычным видам деятельности",
+   "values": [
+    0.322524
+   ],
+   "origen": "estado 31",
+   "glosa": "Cargas y aportaciones a la seguridad social"
+  },
+  {
+   "label": "Амортизация",
+   "lado": "expense",
+   "page": 32,
+   "section": "### 3.12.2 Расходы по обычным видам деятельности",
+   "values": [
+    0.858785
+   ],
+   "origen": "estado 31",
+   "glosa": "Dotación para amortizaciones"
+  },
+  {
+   "label": "Прочие затраты",
+   "lado": "expense",
+   "page": 32,
+   "section": "### 3.12.2 Расходы по обычным видам деятельности",
+   "values": [
+    1.479484
+   ],
+   "origen": "estado 31",
+   "glosa": "Otros gastos de explotación"
+  },
+  {
+   "label": "Изменение остатков (прирост [-], уменьшение [-]): незавершенного производства, готовой продукции",
+   "lado": "expense",
+   "page": 32,
+   "section": "### 3.12.2 Расходы по обычным видам деятельности",
+   "values": [
+    -0.000298
+   ],
+   "origen": "estado 31",
+   "glosa": "Variación de existencias (incremento [-], disminución [-]): productos en curso y productos terminados"
+  }
+ ]
+}

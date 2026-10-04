@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.md",
+ "generado": "2026-10-03T03:42:30.789Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "caja": {
+  "lineas": [
+   250
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   250,
+   259
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Empréstimos bancários corriente (28.250) en L250 y no corriente en L259 ('-' en 2022). La línea L250 comparte fila con caja. Partes relacionadas (70,3 millones) no se incluyó como deuda financiera, aunque podría ser financiamiento de partes vinculadas. Documento escaneado con OCR: verificar las cifras."
+}

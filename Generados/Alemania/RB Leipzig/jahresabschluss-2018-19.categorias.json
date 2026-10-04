@@ -1,0 +1,73 @@
+{
+ "md": "Clubes/Alemania/RB Leipzig/jahresabschluss-2018-19.md",
+ "club": "rbleipzig-de",
+ "year": 2019,
+ "generatedAt": "2026-09-30T15:14:54.130Z",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.015364,
+ "rubros": [
+  {
+   "label": "Spielbetrieb",
+   "lado": "revenue",
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Umsatzerlöse aus TEUR",
+   "page": 8,
+   "pendiente": true,
+   "jev": "matchday_competition",
+   "jevConf": 0.83,
+   "escalon": 2,
+   "categoria": "lump_football_operations",
+   "confianza": 0.85,
+   "motivo": "Club carga 'Umsatzerlöse aus Spielbetrieb' como bolsón sin desglosar (sponsoring, matchday, TV)"
+  },
+  {
+   "label": "Handel",
+   "lado": "revenue",
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Umsatzerlöse aus TEUR",
+   "page": 8,
+   "pendiente": false,
+   "ya": "sponsorship_commercial",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "sponsorship_commercial",
+   "confianza": 0.99
+  },
+  {
+   "label": "Sonstigem",
+   "lado": "revenue",
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Umsatzerlöse aus TEUR",
+   "page": 8,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.99,
+   "categoria": "other_income",
+   "confianza": 0.99
+  },
+  {
+   "label": "In der vorliegenden Gewinn- und Verlustrechnung werden periodenfremde Erträge ausgewiesen. Diese betreffen im Wesentlichen nachlaufende Vermarktungserlöse von der UEFA in Höhe von TEUR 2.521, nachlaufende Einnahmen Spielbetrieb in Höhe von TEUR",
+   "lado": null,
+   "section": "4.2 Steuern vom Einkommen und vom Ertrag / 4.3 Periodenfremde Aufwendungen und Erträge",
+   "page": 8,
+   "pendiente": true,
+   "jev": "other_income",
+   "jevConf": 0.57,
+   "escalon": 2,
+   "categoria": "no_es_rubro",
+   "confianza": 0.8,
+   "motivo": "Texto narrativo de nota sobre ingresos de otros períodos, no línea de la cuenta de resultados"
+  },
+  {
+   "label": "die nachlaufenden Kosten Betrieb des Hauptgebäudes/Nebenkosten des Nachwuchsleistungszentrums TEUR 156 und die Ausgleichszahlungen für Konzertbetrieb in Höhe von TEUR",
+   "lado": null,
+   "section": "4.2 Steuern vom Einkommen und vom Ertrag / 4.3 Periodenfremde Aufwendungen und Erträge",
+   "page": 8,
+   "pendiente": true,
+   "jev": "admin_general_expense",
+   "jevConf": 0.54,
+   "escalon": 2,
+   "categoria": "no_es_rubro",
+   "confianza": 0.8,
+   "motivo": "Fragmento narrativo de nota sobre gastos de otros períodos, no línea propia"
+  }
+ ]
+}

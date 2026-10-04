@@ -1,0 +1,677 @@
+{
+  "club": "antwerp-be",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Antwerp/jaarrekening-2019-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:54:20.904Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 143,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 20,
+  "relevantTableCount": 4,
+  "tables": [
+    {
+      "page": 6,
+      "section": "JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN / VASTE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Immateriële vaste activa",
+          "values": [
+            "6.1.1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiële vaste activa",
+          "values": [
+            "6.1.2"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "6.564.567",
+            "3.084.973"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "240.212",
+            "538.224"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "24.961.434",
+            "21.981.133"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Nr. BE 0839.407.415 VKT 3.2 / PASSIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "EIGEN VERMOGEN 10/15",
+          "values": [
+            "8.313.962",
+            "5.962.185"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaal",
+          "values": [
+            "16.462.185",
+            "10.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geplaatst kapitaal",
+          "values": [
+            "16.462.185",
+            "10.000.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "VOORZIENINGEN EN UITGESTELDE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "BELASTINGEN",
+          "values": [
+            "504.204",
+            "180.154"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorzieningen voor risico's en kosten 160/5",
+          "values": [
+            "504.204",
+            "180.154"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 504.204 180.154 / Uitgestelde belastingen 168",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "16.143.268",
+            "15.838.794"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 63 |",
+          "values": [
+            "3.263.163",
+            "6.562.456"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "94.164",
+            "4.938.793"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 7,
+      "section": "Kredietinstellingen, leasingschulden en soortgelijke / schulden 172/3",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige leningen 174/0",
+          "values": [
+            "94.164",
+            "4.938.793"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "1.460.807",
+            "1.205.578"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Ontvangen vooruitbetalingen op bestellingen 176",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige schulden 178/9",
+          "values": [
+            "1.708.192",
+            "418.085"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op ten hoogste één jaar 6.3 | 42/48",
+          "values": [
+            "7.364.172",
+            "4.796.545"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Schulden op meer dan één jaar die binnen het jaar / vervallen 42 163.260 626.133 / Financiële schulden 43 / Kredietinstellingen 430/8 / Overige leningen 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "5.149.500",
+            "2.978.456"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "5.149.500",
+            "2.978.456"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 / Schulden met betrekking tot belastingen,",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "bezoldigingen en sociale lasten",
+          "values": [
+            "1.906.618",
+            "930.392"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "227.858",
+            "140.165"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "1.678.760",
+            "790.227"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige schulden 47/48",
+          "values": [
+            "144.794",
+            "261.563"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 492/3",
+          "values": [
+            "5.515.932",
+            "4.479.794"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "24.961.434",
+            "21.981.133"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "RESULTATENREKENING",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "631/4",
+          "values": [
+            "-16.739",
+            "-16.067"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "635/8",
+          "values": [
+            "324.050",
+            "-9.316"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "640/8",
+          "values": [
+            "266.537",
+            "205.891"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 8,
+      "section": "66A 748.158 / 9901 -13.227.883 -8.996.475 / 75/76B 5.474.912 5.506.581 / 75 9.087 6.581 / 753",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "76B",
+          "values": [
+            "5.465.825",
+            "5.500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "65/66B",
+          "values": [
+            "389.300",
+            "541.859"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "RESULTATEN / PERSONEEL EN PERSONEELSKOSTEN / OPBRENGSTEN EN KOSTEN VAN UITZONDERLIJKE / OMVANG OF UITZONDERLIJKE MATE VAN VOORKOMEN / FINANCIËLE RESULTATEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "76A",
+          "values": [
+            "2.215.913",
+            "922.198"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "76B",
+          "values": [
+            "5.465.825",
+            "5.500.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 14,
+      "section": "66 150.000 748.158",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "66A",
+          "values": [
+            "748.158"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "66B",
+          "values": [
+            "150.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "ARDERINGSREGELS / SAMENVATTING VAN DE WAARDERINGSREGELS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "+ 2. Immateriële vaste activa ....... + L + NG + 20.00 — 50.00 + 20.00 —",
+          "values": [
+            "50.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ + L + NG + 20.00 — 20.00 + 20.00 —",
+          "values": [
+            "20.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ + L + NG + 20.00 — 33.33 + 20.00 —",
+          "values": [
+            "33.33"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "+ + + + + / + 3. Industriële, administratieve of + + + +",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "+ commerciële gebouwen * ......... + L + NG + 2.78 - 2.78 + 2.78 -",
+          "values": [
+            "2.78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ + L + NG + 5.55 — 20.00 + 5.55 =",
+          "values": [
+            "20.00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "+ + + + + / + 4. Installaties, machines en + + + +",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "+ uitrustingen * …….......eneen. + L + NG + 10.00 — 50.00 + 10.00 —",
+          "values": [
+            "50.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ + L + NG + 20.00 — 33.33 + 20.00 —",
+          "values": [
+            "33.33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ + L + NG + 10.00 — 20.00 + 10.00 —",
+          "values": [
+            "20.00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "+ + + + +",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "+ 5. Rollend materieel * ............ + L + NG + 20.00 — 50.00 + 20.00 —",
+          "values": [
+            "50.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ + L + NG + 33.33 — 33.33 + 33.33 —",
+          "values": [
+            "33.33"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "+ + + + +",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "+ 6. Kantoormateriaal en meubilair * + L + NG + 10.00 — 25.00 + 10.00 —",
+          "values": [
+            "25.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ + L + NG + 20.00 — 33.33 + 20.00 —",
+          "values": [
+            "33.33"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "SOCIALE BALANS / (VTE) (VTE) / 100 67,7 37,4 79,5| VTE 53,6| VTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "105 69",
+          "values": [
+            "81,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "110 69",
+          "values": [
+            "81,3"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "111 / 113 / 120 65 38 77",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1200 44",
+          "values": [
+            "50,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1201 19",
+          "values": [
+            "24,7"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 10,
+    "results": [
+      {
+        "label": "Immateriële vaste activa",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Immateriële vaste activa",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Afschrijvingen — immateriële vaste activa (pases)",
+        "similarity": 60
+      },
+      {
+        "label": "Materiële vaste activa",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Materiële vaste activa",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "depreciation",
+        "matchedLabel": "Afschrijvingen — materiële vaste activa (bienes de uso)",
+        "similarity": 50
+      },
+      {
+        "label": "SCHULDEN 17/49",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SCHULDEN 17/49",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Schulden op meer dan één jaar 63 |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Schulden op meer dan één jaar 63 |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financiële schulden 170/4",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financiële schulden 170/4",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "631/4",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "631/4",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "635/8",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "635/8",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "640/8",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "640/8",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "76A",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "76A",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "76B",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "76B",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Antwerp",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

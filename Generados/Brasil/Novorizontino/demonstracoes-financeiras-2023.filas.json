@@ -1,0 +1,556 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2023.pdf",
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2023.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T02:32:10.219Z",
+ "ubicacion": {
+  "estado": [
+   "b22",
+   "b23",
+   "b33"
+  ],
+  "notas_ingresos": [
+   "b87"
+  ],
+  "notas_gastos": [
+   "b77",
+   "b86"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b22",
+   "escala": "no se sabe",
+   "evidencia": "No figura frase de escala en el bloque (importes aparentan estar en reais, unidades)."
+  },
+  {
+   "bloque": "b23",
+   "escala": "no se sabe",
+   "evidencia": "No figura frase de escala en el bloque."
+  },
+  {
+   "bloque": "b33",
+   "escala": "no se sabe",
+   "evidencia": "No figura frase de escala en el bloque."
+  },
+  {
+   "bloque": "b87",
+   "escala": "no se sabe",
+   "evidencia": "No figura frase de escala en el bloque."
+  },
+  {
+   "bloque": "b77",
+   "escala": "no se sabe",
+   "evidencia": "No figura frase de escala en el bloque."
+  },
+  {
+   "bloque": "b86",
+   "escala": "no se sabe",
+   "evidencia": "No figura frase de escala en el bloque."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b22",
+   "linea": 428,
+   "etiqueta": "Direitos de transmissão de TV",
+   "actual": "11.804.077",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 429,
+   "etiqueta": "Negociação de atletas",
+   "actual": "6.539.894",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 430,
+   "etiqueta": "Publicidade",
+   "actual": "1.297.468",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 431,
+   "etiqueta": "Patrocínio",
+   "actual": "1.385.083",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 432,
+   "etiqueta": "Arrecadação de jogos",
+   "actual": "356.997",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 433,
+   "etiqueta": "Premiações",
+   "actual": "190.000",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 434,
+   "etiqueta": "Convênios",
+   "actual": "189.906",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 435,
+   "etiqueta": "Outras receitas",
+   "actual": "309.436",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 436,
+   "etiqueta": "",
+   "actual": "22.072.861",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 442,
+   "etiqueta": "Com pessoal",
+   "actual": "(10.169.016)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 443,
+   "etiqueta": "Gastos com atletas e comissão técnica (nota 21)",
+   "actual": "(20.357.108)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 444,
+   "etiqueta": "Administrativas e gerais (nota 22)",
+   "actual": "(9.548.007)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 445,
+   "etiqueta": "Com jogos",
+   "actual": "(4.156.403)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 446,
+   "etiqueta": "Manutenção",
+   "actual": "(1.808.509)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 447,
+   "etiqueta": "Atletas não profissionais",
+   "actual": "(3.598.404)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 448,
+   "etiqueta": "Aluguéis",
+   "actual": "(691.616)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 449,
+   "etiqueta": "Material esportivo",
+   "actual": "(197.044)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 450,
+   "etiqueta": "Tributária",
+   "actual": "(15.053)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 451,
+   "etiqueta": "",
+   "actual": "(50.541.160)",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b23",
+   "linea": 452,
+   "etiqueta": "Déficit antes do resultado financeiro",
+   "actual": "(28.468.299)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b33",
+   "linea": 537,
+   "etiqueta": "Receita financeira (nota 23)",
+   "actual": "35.962",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b33",
+   "linea": 538,
+   "etiqueta": "Despesas financeiras (nota 23)",
+   "actual": "(1.284.310)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b33",
+   "linea": 539,
+   "etiqueta": "",
+   "actual": "(1.248.348)",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b33",
+   "linea": 540,
+   "etiqueta": "Déficit do exercício",
+   "actual": "(29.716.647)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b77",
+   "linea": 1770,
+   "etiqueta": "Lanches e refeições",
+   "actual": "(1.280.460)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1771,
+   "etiqueta": "Assessoria esportiva",
+   "actual": "(3.377.493)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1772,
+   "etiqueta": "Assessoria de imprensa",
+   "actual": "(37.318)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1773,
+   "etiqueta": "Lavanderia",
+   "actual": "(255.300)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1776,
+   "etiqueta": "Energia elétrica",
+   "actual": "(333.616)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1777,
+   "etiqueta": "Água e esgoto",
+   "actual": "(78.538)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1778,
+   "etiqueta": "Assessoria jurídica",
+   "actual": "(330.075)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1779,
+   "etiqueta": "Depreciação",
+   "actual": "(148.980)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1780,
+   "etiqueta": "Assessoria administrativa",
+   "actual": "(99.234)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1781,
+   "etiqueta": "Serviços médicos",
+   "actual": "(7.225)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1782,
+   "etiqueta": "Medicamentos",
+   "actual": "(26.158)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1783,
+   "etiqueta": "Materiais de escritório e de limpeza",
+   "actual": "(24.053)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1784,
+   "etiqueta": "Software",
+   "actual": "(120.445)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1785,
+   "etiqueta": "Serviços contábeis e auditoria",
+   "actual": "(103.814)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1786,
+   "etiqueta": "Segurança patrimonial",
+   "actual": "(52.956)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1787,
+   "etiqueta": "Telefone e internet",
+   "actual": "(89.846)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1788,
+   "etiqueta": "Despesas diversas",
+   "actual": "(583.514)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1789,
+   "etiqueta": "Acordos trabalhistas",
+   "actual": "(150.000)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1790,
+   "etiqueta": "Acordos cíveis",
+   "actual": "(2.320.000)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1791,
+   "etiqueta": "Outras",
+   "actual": "(128.982)",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  },
+  {
+   "bloque": "b77",
+   "linea": 1792,
+   "etiqueta": "",
+   "actual": "(9.548.007)",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrativas e gerais (nota 22)"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 436,
+  "actual": "22.072.861"
+ },
+ "total_gastos": {
+  "linea": 451,
+  "actual": "(50.541.160)"
+ },
+ "resultado": {
+  "linea": 540,
+  "actual": "(29.716.647)",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de la nota 23 (L1896-L1904) porque sus filas no tienen etiqueta legible en la transcripción?",
+   "propuesta": "sí",
+   "tema": "fila-ilegible",
+   "renglon": "Despesas financeiras (nota 23)",
+   "texto": "Las filas L1896-L1904 no tienen etiquetas; solo se infiere que L1899 suma 35.962 (receita) y L1904 1.284.310 (despesas).",
+   "bloques": [
+    "b87"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera el cuadro b86 'Despesas financeiras' (L1880-L1884) por ser solo la columna Futebol profissional (total 1.252.546) y no el total 1.284.310?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "Despesas financeiras (nota 23)",
+   "texto": "El total de L1884 (1.252.546) coincide con la columna Futebol profissional de L538, no con el Total.",
+   "bloques": [
+    "b86",
+    "b33"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se toma la columna 'Total' (última) de los cuadros por segmento del estado como la columna 'Total (2023)' pedida?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "Las tablas L428-L540 no tienen encabezado de año; se usó la última columna (Total) y no hay columna de año anterior.",
+   "bloques": [
+    "b22",
+    "b23",
+    "b33"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El estado viene por segmento (Futebol profissional, amador, Convênios, Administrativo, Total); se cargó la columna Total. No hay columna de año anterior en los bloques. La nota b77 desglosa 'Administrativas e gerais (nota 22)' y su total coincide. Filas en cero (Estadias, Combustíveis) omitidas por no tener importe."
+}

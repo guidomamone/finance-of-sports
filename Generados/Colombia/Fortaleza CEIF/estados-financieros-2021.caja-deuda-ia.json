@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.md",
+ "generado": "2026-10-02T20:58:33.172Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"prestamos y sobregiros bancarios\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "Expresados en miles de pesos colombianos",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   859
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas son notas, no el balance principal; la deuda se toma del total de la nota 12 'Total Prestamos y Sobregiros Bancarios' (102.513), que incluye tarjetas de crédito y préstamos bancarios. No aparece la línea de efectivo en las páginas provistas."
+}

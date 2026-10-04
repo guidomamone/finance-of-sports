@@ -1,0 +1,378 @@
+{
+  "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2015.md",
+  "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2015.pdf",
+  "club": "colocolo-cl",
+  "year": 2015,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:56:27.112Z",
+  "tieOuts": {
+    "cierran": 34,
+    "noCierran": 17
+  },
+  "warnings": [
+    "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "13 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 32,
+    "notasUsadas": []
+  },
+  "ladoConocido": 18,
+  "rubros": [
+    {
+      "label": "Servicios básicos",
+      "lado": "expense",
+      "page": 77,
+      "section": "-              - / -              -",
+      "values": [
+        0.210944
+      ],
+      "origen": "estado 56",
+      "glosa": "Servicios básicos"
+    },
+    {
+      "label": "Asesorías",
+      "lado": "expense",
+      "page": 77,
+      "section": "-              - / -              -",
+      "values": [
+        0.864908
+      ],
+      "origen": "estado 56",
+      "glosa": "Asesorías"
+    },
+    {
+      "label": "Depreciaciones",
+      "lado": "expense",
+      "page": 77,
+      "section": "-              - / -              -",
+      "values": [
+        0.44419
+      ],
+      "origen": "estado 56",
+      "glosa": "Depreciaciones"
+    },
+    {
+      "label": "Gastos Legales",
+      "lado": "expense",
+      "page": 77,
+      "section": "-              - / -              -",
+      "values": [
+        0.289565
+      ],
+      "origen": "estado 56",
+      "glosa": "Gastos Legales"
+    },
+    {
+      "label": "Mantenciones",
+      "lado": "expense",
+      "page": 77,
+      "section": "-              - / -              -",
+      "values": [
+        0.014505
+      ],
+      "origen": "estado 56",
+      "glosa": "Mantenciones"
+    },
+    {
+      "label": "Remuneración administración",
+      "lado": "expense",
+      "page": 77,
+      "section": "-              - / -              -",
+      "values": [
+        1.332291
+      ],
+      "origen": "estado 56",
+      "glosa": "Remuneración administración"
+    },
+    {
+      "label": "Prov. Incobrable",
+      "lado": "expense",
+      "page": 77,
+      "section": "-              - / -              -",
+      "values": [
+        1.036396
+      ],
+      "origen": "estado 56",
+      "glosa": "Prov. Incobrable"
+    },
+    {
+      "label": "Otros gastos de administración",
+      "lado": "expense",
+      "page": 77,
+      "section": "-              - / -              -",
+      "values": [
+        0.328667
+      ],
+      "origen": "estado 56",
+      "glosa": "Otros gastos de administración"
+    },
+    {
+      "label": "Remuneración plantel profesional y cuerpo técnico",
+      "lado": null,
+      "page": 77,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        5626.847
+      ],
+      "origen": "estado 55",
+      "glosa": "Remuneración plantel profesional y cuerpo técnico"
+    },
+    {
+      "label": "Amortización Activos en concesión",
+      "lado": null,
+      "page": 77,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        669.891
+      ],
+      "origen": "estado 55",
+      "glosa": "Amortización Activos en concesión"
+    },
+    {
+      "label": "Amortización pases jugadores profesionales",
+      "lado": null,
+      "page": 77,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        3372.411
+      ],
+      "origen": "estado 55",
+      "glosa": "Amortización pases jugadores profesionales"
+    },
+    {
+      "label": "Costos de concentración traslados y otros",
+      "lado": "expense",
+      "page": 77,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2870.402
+      ],
+      "origen": "estado 55",
+      "glosa": "Costos de concentración traslados y otros"
+    },
+    {
+      "label": "Gastos Tesorería no considerados en convenio (1) -",
+      "lado": "expense",
+      "page": 77,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        24.757
+      ],
+      "origen": "estado 55",
+      "glosa": "Gastos Tesorería no considerados en convenio (1) -"
+    },
+    {
+      "label": "Otros costos",
+      "lado": "expense",
+      "page": 77,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        322.123
+      ],
+      "origen": "estado 55",
+      "glosa": "Otros costos"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 77,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        12861.674
+      ],
+      "origen": "estado 55",
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gasto por impuestos utilizando la tasa legal",
+      "lado": "expense",
+      "page": 70,
+      "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2015       01.01.2014 / 31.12.2015       31.12.2014 / M$                 M$",
+      "values": [
+        0.698934
+      ],
+      "origen": "estado 45",
+      "glosa": "Gasto por impuestos utilizando la tasa legal"
+    },
+    {
+      "label": "Efecto impositivo de gastos no deducidos impositivamente",
+      "lado": "expense",
+      "page": 70,
+      "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2015       01.01.2014 / 31.12.2015       31.12.2014 / M$                 M$",
+      "values": [
+        1.39469
+      ],
+      "origen": "estado 45",
+      "glosa": "Efecto impositivo de gastos no deducidos impositivamente"
+    },
+    {
+      "label": "Otro aumento (disminución) en cargo por impuestos legales",
+      "lado": "expense",
+      "page": 70,
+      "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2015       01.01.2014 / 31.12.2015       31.12.2014 / M$                 M$",
+      "values": [
+        -1.013827
+      ],
+      "origen": "estado 45",
+      "glosa": "Otro aumento (disminución) en cargo por impuestos legales"
+    },
+    {
+      "label": "Facturas por pagar",
+      "lado": null,
+      "page": 71,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 14. CUENTAS POR PAGAR COMERCIALES CORRIENTES",
+      "values": [
+        0.167841
+      ],
+      "origen": "estado 46",
+      "glosa": "Facturas por pagar"
+    },
+    {
+      "label": "Cuentas por pagar",
+      "lado": null,
+      "page": 71,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 14. CUENTAS POR PAGAR COMERCIALES CORRIENTES",
+      "values": [
+        1.704894
+      ],
+      "origen": "estado 46",
+      "glosa": "Cuentas por pagar"
+    },
+    {
+      "label": "Retenciones por pagar",
+      "lado": null,
+      "page": 71,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 14. CUENTAS POR PAGAR COMERCIALES CORRIENTES",
+      "values": [
+        0.348591
+      ],
+      "origen": "estado 46",
+      "glosa": "Retenciones por pagar"
+    },
+    {
+      "label": "Larraín Vial (415)",
+      "lado": null,
+      "page": 78,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 23. INGRESOS FINANCIEROS",
+      "values": [
+        34953
+      ],
+      "origen": "estado 57",
+      "glosa": "Larraín Vial (415)"
+    },
+    {
+      "label": "Celfin",
+      "lado": null,
+      "page": 78,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 23. INGRESOS FINANCIEROS",
+      "values": [
+        -2069
+      ],
+      "origen": "estado 57",
+      "glosa": "Celfin"
+    },
+    {
+      "label": "Otros",
+      "lado": null,
+      "page": 78,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 23. INGRESOS FINANCIEROS",
+      "values": [
+        1022
+      ],
+      "origen": "estado 57",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Otros activos financieros corrientes",
+      "lado": null,
+      "page": 78,
+      "section": "24. DIFERENCIA DE CAMBIO",
+      "values": [
+        0.012585
+      ],
+      "origen": "estado 58",
+      "glosa": "Otros activos financieros corrientes"
+    },
+    {
+      "label": "Deudores comerciales y otras cuentas por cobrar corrientes",
+      "lado": null,
+      "page": 78,
+      "section": "24. DIFERENCIA DE CAMBIO",
+      "values": [
+        -0.046965
+      ],
+      "origen": "estado 58",
+      "glosa": "Deudores comerciales y otras cuentas por cobrar corrientes"
+    },
+    {
+      "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+      "lado": null,
+      "page": 78,
+      "section": "24. DIFERENCIA DE CAMBIO",
+      "values": [
+        -0.625245
+      ],
+      "origen": "estado 58",
+      "glosa": "Cuentas por pagar comerciales y otras cuentas por pagar"
+    },
+    {
+      "label": "Cuentas por pagar",
+      "lado": null,
+      "page": 71,
+      "section": "15. OTROS PASIVOS NO FINANCIEROS, NO CORRIENTES",
+      "values": [
+        1306.165
+      ],
+      "origen": "estado 47",
+      "glosa": "Cuentas por pagar"
+    },
+    {
+      "label": "Deuda Fiscal",
+      "lado": null,
+      "page": 71,
+      "section": "15. OTROS PASIVOS NO FINANCIEROS, NO CORRIENTES",
+      "values": [
+        11985.746
+      ],
+      "origen": "estado 47",
+      "glosa": "Deuda Fiscal"
+    },
+    {
+      "label": "Club(**)",
+      "lado": "revenue",
+      "page": 76,
+      "section": "Ingresos por venta de jugadores formados por el",
+      "values": [
+        850.754
+      ],
+      "origen": "estado 53",
+      "glosa": "Club(**)"
+    },
+    {
+      "label": "Ingresos por publicidad",
+      "lado": "revenue",
+      "page": 76,
+      "section": "Ingresos por venta de jugadores formados por el",
+      "values": [
+        9935.061
+      ],
+      "origen": "estado 53",
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 76,
+      "section": "Ingresos por venta de jugadores formados por el",
+      "values": [
+        167.175
+      ],
+      "origen": "estado 53",
+      "glosa": "Otros"
+    }
+  ]
+}

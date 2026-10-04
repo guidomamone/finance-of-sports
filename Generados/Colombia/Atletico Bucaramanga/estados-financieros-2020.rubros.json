@@ -1,0 +1,345 @@
+{
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.md",
+ "pdf": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.pdf",
+ "club": "atletico-bucaramanga",
+ "year": 2020,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:57:56.826Z",
+ "tieOuts": {
+  "cierran": 22,
+  "noCierran": 12
+ },
+ "warnings": [
+  "12 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 32,
+  "notasUsadas": []
+ },
+ "ladoConocido": 29,
+ "rubros": [
+  {
+   "label": "Gastos de administracion 14 -$ 220.040 -$",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "values": [
+    1200.728
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Gastos de ventas 15 -$ 5.513.072 -$",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "values": [
+    11368.189
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Otros ingresos 16 $ 5.553 $",
+   "lado": "revenue",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "values": [
+    178.052
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Otros gastos 17 -$ 60.225 -$",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "values": [
+    798.771
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Ingresos financieros 18 $ 39 $",
+   "lado": "revenue",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "values": [
+    2.078
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Costos financieros 19 -$ 39.733 -$",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "values": [
+    54.293
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Ingreso (gasto) por impuestos $ - -$",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "values": [
+    361.862
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Saldo a Diciembre 31 de 2018 $ 800.000 $ - $ - $ 89.614 -$ 82.413 $",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    1773.452
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Saldo Inicial 1° Enero de 2019 $ 800.000 $ - $ - $ 89.614 -$ 82.413 $",
+   "lado": null,
+   "page": 10,
+   "section": "",
+   "values": [
+    1773.452
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "(+/-) Ajustes por disminuciones (incrementos) en pasivos por impuestos corrientes -$ 19.592 -$",
+   "lado": "expense",
+   "page": 11,
+   "section": "",
+   "values": [
+    320.053
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "(+/-) Ajustes por disminuciones (incrementos) en ingresos recibidos por anticipado $",
+   "lado": "revenue",
+   "page": 11,
+   "section": "",
+   "values": [
+    426.564
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "(+/-) Ajustes por disminuciones (incrementos) en obligaciones laborales -$ 195.853 $",
+   "lado": null,
+   "page": 11,
+   "section": "",
+   "values": [
+    331.715
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Taquilla venta de boleteria $ 283.367 $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    2047.612
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Venta y préstamo de derechos deportivos $ - $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    1580
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Publicidad y propaganda $ 278.417 $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    97.8
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Derechos de televisión $ 2.294.617 $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    5162.038
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Patrocinios $ 1.570.040 $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    1720.04
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Reclamaciones mecanismo de solidaridad $ - $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    19.712
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Actividades conexas (a) $ 976.989 $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    2242.621
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Impuestos asumidos $ 14.472 $",
+   "lado": "expense",
+   "page": 38,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "values": [
+    0.134374
+   ],
+   "origen": "estado 55"
+  },
+  {
+   "label": "Demandas laborales $ - $",
+   "lado": "expense",
+   "page": 38,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "values": [
+    0.029763
+   ],
+   "origen": "estado 55"
+  },
+  {
+   "label": "Indemnizaciones $ - $",
+   "lado": "expense",
+   "page": 38,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "values": [
+    0.0578
+   ],
+   "origen": "estado 55"
+  },
+  {
+   "label": "Multas sanciones y litigios $ 44.515 $",
+   "lado": "expense",
+   "page": 38,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "values": [
+    0.572439
+   ],
+   "origen": "estado 55"
+  },
+  {
+   "label": "Otros gastos $ 1.238 $",
+   "lado": "expense",
+   "page": 38,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "values": [
+    0.004395
+   ],
+   "origen": "estado 55"
+  },
+  {
+   "label": "Sueldos de administracion $",
+   "lado": "expense",
+   "page": 33,
+   "section": "(a) Gastos de personal / 31 de diciembre de / Concepto / 2020 / (a) Gastos de personal",
+   "values": [
+    74.883
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Auxilio de transporte $",
+   "lado": "expense",
+   "page": 33,
+   "section": "(a) Gastos de personal / 31 de diciembre de / Concepto / 2020 / (a) Gastos de personal",
+   "values": [
+    2.846
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Otros Auxilios $",
+   "lado": "expense",
+   "page": 33,
+   "section": "(a) Gastos de personal / 31 de diciembre de / Concepto / 2020 / (a) Gastos de personal",
+   "values": [
+    35.612
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Cesantias $",
+   "lado": "expense",
+   "page": 33,
+   "section": "(a) Gastos de personal / 31 de diciembre de / Concepto / 2020 / (a) Gastos de personal",
+   "values": [
+    7.025
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Juzgado 1 laboral Circuito Bucaramanga, proceso # 68001310500120120030602 $",
+   "lado": "revenue",
+   "page": 21,
+   "section": "mes. / y se pueda hacer uso de estos recursos. / (c) Depositos Judiciales: / Concepto                            31 de diciembre de 2020 / (c) Depositos Judiciales",
+   "values": [
+    166548
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Juzgado 2 laboral Circuito Bucaramanga, proceso # 68001310500220090017900 $",
+   "lado": "revenue",
+   "page": 21,
+   "section": "mes. / y se pueda hacer uso de estos recursos. / (c) Depositos Judiciales: / Concepto                            31 de diciembre de 2020 / (c) Depositos Judiciales",
+   "values": [
+    248443
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Derechos economicos por pagar $",
+   "lado": "expense",
+   "page": 26,
+   "section": "(b) Costos y gastos por pagar / 31 de diciembre de / Concepto / 2020 / (b) Costos y gastos por pagar",
+   "values": [
+    16708
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Arrendamientos por pagar $",
+   "lado": "expense",
+   "page": 26,
+   "section": "(b) Costos y gastos por pagar / 31 de diciembre de / Concepto / 2020 / (b) Costos y gastos por pagar",
+   "values": [
+    86810
+   ],
+   "origen": "estado 26"
+  }
+ ]
+}

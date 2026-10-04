@@ -1,0 +1,218 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md",
+ "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.pdf",
+ "club": "panetolikos",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:03:31.002Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 20,
+  "notasUsadas": [
+   "25"
+  ]
+ },
+ "ladoConocido": 19,
+ "rubros": [
+  {
+   "label": "Έσοδα από εισιτήρια",
+   "lado": "revenue",
+   "page": 31,
+   "section": "#### 10. Κύκλος εργασιών",
+   "values": [
+    0.300214
+   ],
+   "origen": "nota 25 (ancla 9)",
+   "ancla": "Κύκλος εργασιών (καθαρός)"
+  },
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "values": [
+    0.444412
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Έσοδα από μεταγραφές",
+   "lado": "revenue",
+   "page": 31,
+   "section": "#### 10. Κύκλος εργασιών",
+   "values": [
+    0.1425
+   ],
+   "origen": "nota 25 (ancla 9)",
+   "ancla": "Κύκλος εργασιών (καθαρός)"
+  },
+  {
+   "label": "Λοιπά έσοδα",
+   "lado": "revenue",
+   "page": 31,
+   "section": "#### 10. Κύκλος εργασιών",
+   "values": [
+    0.001698
+   ],
+   "origen": "nota 25 (ancla 9)",
+   "ancla": "Κύκλος εργασιών (καθαρός)"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "values": [
+    -6.807271
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "values": [
+    4.254506
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "values": [
+    -0.570216
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "values": [
+    -0.088709
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "revenue",
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "values": [
+    0.006931
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "values": [
+    -0.012176
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "lado": "expense",
+   "page": 31,
+   "section": "#### 11. Λοιπά έξοδα και ζημίες",
+   "values": [
+    0.018375
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Φόροι και τέλη",
+   "lado": "expense",
+   "page": 31,
+   "section": "#### 11. Λοιπά έξοδα και ζημίες",
+   "values": [
+    0.0008
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "lado": "expense",
+   "page": 31,
+   "section": "#### 11. Λοιπά έξοδα και ζημίες",
+   "values": [
+    0.046825
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις",
+   "lado": "expense",
+   "page": 31,
+   "section": "#### 11. Λοιπά έξοδα και ζημίες",
+   "values": [
+    0.089651
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Προπληρωμένα Έξοδα",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 7.4 Προπληρωμένα έξοδα",
+   "values": [
+    0.00003
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Κρατήσεις Τηλεοπτικών για ΕΠΟ-SL-Αστυνομία",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 7.4 Προπληρωμένα έξοδα",
+   "values": [
+    0.072048
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "GIANTO SRL Ρουχισμός",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 7.4 Προπληρωμένα έξοδα",
+   "values": [
+    0.132758
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Έσοδα επόμενων χρήσεων",
+   "lado": "revenue",
+   "page": 31,
+   "section": "[LOGO]",
+   "values": [
+    0.00003
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "ΟΤΕ Α.Ε. έσοδα προβολής",
+   "lado": "revenue",
+   "page": 31,
+   "section": "[LOGO]",
+   "values": [
+    0.554217
+   ],
+   "origen": "estado 24"
+  }
+ ]
+}

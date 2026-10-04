@@ -1,0 +1,798 @@
+{
+ "md": "Clubes/Argentina/Almagro/balance-2018.md",
+ "generatedAt": "2026-09-30T01:11:35.147Z",
+ "rubros": [
+  {
+   "label": "Premio Copa Argentina",
+   "page": 7,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ANEXO III / RECAUDACIONES POR ACTIVIDAD",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1292
+  },
+  {
+   "label": "Publicidad",
+   "page": 7,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ANEXO III / RECAUDACIONES POR ACTIVIDAD",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "Ingreso A.F.A:",
+   "page": 7,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ANEXO III / RECAUDACIONES POR ACTIVIDAD",
+   "choice": "lump_football_operations",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.62
+    ],
+    [
+     "other_income",
+     0.21
+    ],
+    [
+     "competition_bonus",
+     0.09
+    ]
+   ],
+   "tokens": 1293
+  },
+  {
+   "label": "Ingresos Especiales",
+   "page": 7,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ANEXO III / RECAUDACIONES POR ACTIVIDAD",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Gastos de mantenimiento",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "Futbol Ingreso por Partidos",
+   "page": 7,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ANEXO III / RECAUDACIONES POR ACTIVIDAD",
+   "choice": "matchday_competition",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "matchday_competition",
+     0.82
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1296
+  },
+  {
+   "label": "Alquiler de Antena",
+   "page": 7,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ANEXO III / RECAUDACIONES POR ACTIVIDAD",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "broadcasting",
+     0.4
+    ],
+    [
+     "stadium_other",
+     0.05
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Alquiler de Sede",
+   "page": 7,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ANEXO III / RECAUDACIONES POR ACTIVIDAD",
+   "choice": "stadium_other",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "stadium_other",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Gastos varios",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1320
+  },
+  {
+   "label": "Gastos Administrativos",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1323
+  },
+  {
+   "label": "Gastos de movilidad",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "choice": "match_organisation_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "Estadías y traslados",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "choice": "match_organisation_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1325
+  },
+  {
+   "label": "Gastos de lavandería",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "match_organisation_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1323
+  },
+  {
+   "label": "Honorarios Contador",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1322
+  },
+  {
+   "label": "Impuestos y Contribuciones",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1325
+  },
+  {
+   "label": "Seguros",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1319
+  },
+  {
+   "label": "Alquileres Vivienda para Jugadores",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "match_organisation_expense",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1328
+  },
+  {
+   "label": "Gastos Generales",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "Gastos transmisión radio",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "broadcasting",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "Alquiler equipo electrógeno",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1324
+  },
+  {
+   "label": "Impuesto Ley 25413",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Interese perdidos",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Gastos bancarios",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Gastos de alimentos",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "match_organisation_expense",
+     0.31
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Sueldos y Jornales",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Honorarios Cuerpo Medico y Tecnico",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "lump_football_operations_expense",
+     0.37
+    ],
+    [
+     "wages_squad",
+     0.13
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Gastos de Policía",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Primas por contrato privado",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0.39
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Gastos de Representación",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Juicios",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "exceptional_items",
+     0.23
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Cargas Sociales",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "wages_squad",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Gastos de Servicios de Emergencia",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "exceptional_items",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Alquiler para entrenamiento",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "lump_football_operations_expense",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Apertura",
+   "page": 9,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO - AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 80",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.060000000000000005
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1316
+  },
+  {
+   "label": "Area",
+   "page": 9,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO - AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 80",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ]
+   ],
+   "tokens": 1314
+  },
+  {
+   "label": "Resultado del ejercicio",
+   "page": 9,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO - AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 80",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ]
+   ],
+   "tokens": 1316
+  }
+ ]
+}

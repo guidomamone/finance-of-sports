@@ -1,0 +1,120 @@
+{
+  "md": "Clubes/Brasil/Novorizontino/balanco-2016.md",
+  "pdf": "Clubes/Brasil/Novorizontino/balanco-2016.pdf",
+  "club": "novorizontino-br",
+  "year": 2016,
+  "generatedAt": "2026-10-03T03:29:29.491Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "PATROCINIO NO UNIFORME",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.19
+      ],
+      "glosa": "Patrocinio en el uniforme"
+    },
+    {
+      "label": "PATROCÍNIO NO ESTÁDIO",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.004
+      ],
+      "glosa": "Patrocinio en el estadio"
+    },
+    {
+      "label": "LOCAÇÃO DE CADEIRA S/ASSENTOS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.02
+      ],
+      "glosa": "Alquiler de butacas y asientos"
+    },
+    {
+      "label": "VENDAS DE INGRESSOS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.605
+      ],
+      "glosa": "Venta de entradas"
+    },
+    {
+      "label": "RECEITAS DO BAR",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.01
+      ],
+      "glosa": "Ingresos del bar"
+    },
+    {
+      "label": "RECEITA C/ NEGOCIAÇÃO DE ATLETA",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.207
+      ],
+      "glosa": "Ingresos por traspaso de jugadores"
+    },
+    {
+      "label": "REPASSE DA FEDERAÇÃO",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.204
+      ],
+      "glosa": "Transferencias de la federación"
+    },
+    {
+      "label": "Recuperação de Despesas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        0.002
+      ],
+      "glosa": "Recuperación de gastos"
+    },
+    {
+      "label": "(-) Ordenados, Salários, Encargos Sociais e Trabalhistas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        6.206
+      ],
+      "glosa": "(-) Sueldos, salarios, cargas sociales y laborales"
+    },
+    {
+      "label": "Despesas Administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.794
+      ],
+      "glosa": "Gastos administrativos"
+    },
+    {
+      "label": "Despesas e Manutenção",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        1.945
+      ],
+      "glosa": "Gastos y mantenimiento"
+    }
+  ]
+}

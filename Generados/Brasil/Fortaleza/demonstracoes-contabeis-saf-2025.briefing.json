@@ -1,0 +1,1347 @@
+{
+  "club": "fortaleza-br",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Fortaleza/demonstracoes-contabeis-saf-2025.md",
+  "generatedAt": "2026-09-30T22:41:39.777Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 26,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 38,
+  "relevantTableCount": 3,
+  "tables": [
+    {
+      "page": 6,
+      "section": "FORTALEZA EC SAF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caixa e equivalentes de caixa 4 4.074 25.083 Fornecedores",
+          "values": [
+            "12.136",
+            "10.417"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber 5 19.530 54.377 Contas a pagar de transferência de jogadores",
+          "values": [
+            "106.935",
+            "65.732"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber de transferência de jogadores 6 38.369 9.257 Empréstimos e financiamentos",
+          "values": [
+            "35.966",
+            "38.106"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos a recuperar 284 870 Passivos de arrendamentos",
+          "values": [
+            "1.218",
+            "1.613"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valores a apropriar 647 693 Obrigações trabalhistas e previdenciárias",
+          "values": [
+            "26.559",
+            "14.694"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros ativos 168 2.770 Obrigações tributárias",
+          "values": [
+            "13.460",
+            "12.835"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "63.072 93.050 Parcelamentos tributários 2.403 - / Contratos a apropriar 14 12.575 22.202 / Não circulante Acordos extrajudiciais 9.262 211",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a receber 5 1.145 1.896 Outras contas a pagar",
+          "values": [
+            "9.365",
+            "6.709"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber de transferência de jogadores 6 3.320",
+          "values": [
+            "229.879",
+            "172.519"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Partes relacionadas -",
+          "values": [
+            "31.695"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Outros ativos 103 130 Não circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Imobilizado 7 20.451 22.704 Contas a pagar de transferência de jogadores",
+          "values": [
+            "17.217",
+            "12.266"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível 8 129.228 101.428 Empréstimos e financiamentos",
+          "values": [
+            "24.200",
+            "8.303"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "154.247 157.910 Passivos de arrendamentos",
+          "values": [
+            "4.518",
+            "5.588"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Parcelamentos tributários 8.939 - / Contratos a apropriar 14 1.858 4.774 / Provisão para contingências 15 4.204 865 / 60.936 31.796 / Patrimônio líquido (passivo a descoberto)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Capital social",
+          "values": [
+            "52.667",
+            "52.667"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prejuízos acumulados",
+          "values": [
+            "(126.163)",
+            "(6.022)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "FORTALEZA EC SAF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita operacional líquida",
+          "values": [
+            "276.709",
+            "125.709"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo das atividades sociais e esportivas",
+          "values": [
+            "(327.259)",
+            "(117.721)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado bruto",
+          "values": [
+            "(50.550)",
+            "7.988"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas gerais e administrativas",
+          "values": [
+            "(59.478)",
+            "(21.233)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas tributárias",
+          "values": [
+            "(14.470)",
+            "(4.977)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas e despesas operacionais, líquidas",
+          "values": [
+            "41.740",
+            "17.590"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Despesas)/receitas operacionais, líquidas",
+          "values": [
+            "(32.208)",
+            "(8.620)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Prejuízo antes do resultado financeiro (82.758) (632) / Receitas financeiras 21 4.888 393",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas financeiras",
+          "values": [
+            "(42.271)",
+            "(5.783)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado financeiro, líquido",
+          "values": [
+            "(37.383)",
+            "(5.390)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prejuízo do exercício",
+          "values": [
+            "(120.141)",
+            "(6.022)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "FORTALEZA EC SAF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Absorção do prejuízo do exercício",
+          "values": [
+            "(6.022)",
+            "6.022",
+            "(6.022)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2024 52.667 (6.022) -",
+          "values": [
+            "46.645"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "Prejuízo do exercício - (120.141) -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Absorção do prejuízo do exercício",
+          "values": [
+            "(120.141)",
+            "120.141",
+            "(120.141)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2025 52.667 (126.163) -",
+          "values": [
+            "(73.496)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "FORTALEZA EC SAF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Juros sobre empréstimos",
+          "values": [
+            "13.876",
+            "2.636"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variações cambiais, líquidas",
+          "values": [
+            "7.334",
+            "1.215"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "46.804 21.132 / Variações nos ativos e passivos operacionais",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "5.009",
+            "(21.306)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber de transferência de jogadores",
+          "values": [
+            "(32.375)",
+            "2.937"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Impostos a recuperar 586 (870) / Valores a apropriar 46 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Outros ativos",
+          "values": [
+            "2.629",
+            "13.647"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "1.719",
+            "5.239"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar de transferência de jogadores",
+          "values": [
+            "38.820",
+            "34.110"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Passivos de arrendamentos (1.465) -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Obrigações trabalhistas e previdenciárias",
+          "values": [
+            "11.865",
+            "7.474"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações tributárias",
+          "values": [
+            "3.460"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos tributários",
+          "values": [
+            "11.342"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contratos a apropriar",
+          "values": [
+            "(12.543)",
+            "(1.562)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Acordos extrajudiciais 9.051 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Outras contas a pagar",
+          "values": [
+            "2.656",
+            "4.682"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido das atividades operacionais",
+          "values": [
+            "84.769",
+            "68.943"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Fluxo de caixa das atividades de investimento / Aplicações financeiras - 457",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aquisições e baixas de imobilizado, líquidas (407)",
+          "values": [
+            "(12.685)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aquisições e baixas de intangível, líquidas",
+          "values": [
+            "(100.025)",
+            "(42.440)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos cedidos a partes relacionadas",
+          "values": [
+            "(5.227)",
+            "(31.695)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido das atividades de investimento",
+          "values": [
+            "(105.659)",
+            "(86.363)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Fluxo de caixa das atividades de financiamento",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Captação (pagamentos) de empréstimos e financiamentos, líquidos (119)",
+          "values": [
+            "42.502"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido das atividades de financiamento (119)",
+          "values": [
+            "42.502"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Redução)/aumento líquido de caixa e equivalentes de caixa",
+          "values": [
+            "(21.009)",
+            "25.082"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Caixa e equivalentes de caixa no início do exercício 25.083 1",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caixa e equivalentes de caixa no fim do exercício",
+          "values": [
+            "4.074",
+            "25.083"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Redução)/aumento líquido de caixa e equivalentes de caixa",
+          "values": [
+            "(21.009)",
+            "25.082"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "FORTALEZA EG SAF / CNPJ: 53.406.952/0001-76",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ativo circulante",
+          "values": [
+            "62.251"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ativo não circulante",
+          "values": [
+            "88.930"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo circulante",
+          "values": [
+            "(84.787)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo não circulante",
+          "values": [
+            "(13.727)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acervo líquido cindido",
+          "values": [
+            "52.667"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "W / 4. Caixa e equivalentes de caixa / 31/12/2025 31/12/2024 / Caixa 10 26",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bancos conta movimento",
+          "values": [
+            "19.724"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicações financeiras de resgate imediato",
+          "values": [
+            "3.312",
+            "5.333"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "FORTALEZA EC SAF / FORTALEZA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "9.423 580 - (351)",
+          "values": [
+            "9.652"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7.201 - -",
+          "values": [
+            "(1.613)",
+            "5.588"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "980 247 - -",
+          "values": [
+            "1.227"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "FORTALEZA EC SAF / FORTALEZA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Atletas profissionais",
+          "values": [
+            "83.469",
+            "75.361"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comissões e luvas",
+          "values": [
+            "49.367",
+            "30.133"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "FORTALEZA EC SAF / FORTALEZA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Atletas contratados",
+          "values": [
+            "75.361",
+            "63.535",
+            "(18.879)",
+            "(36.548)",
+            "83.469"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comissões e luvas",
+          "values": [
+            "30.133",
+            "74.795",
+            "(19.929)",
+            "(35.632)",
+            "49.367"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "FORTALEZA EC SAF / FORTALEZA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Obrigações com entidades nacionais",
+          "values": [
+            "9.777",
+            "8.088"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações com entidades estrangeiras (a)",
+          "values": [
+            "30.812",
+            "35.289"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de uso de imagem a pagar",
+          "values": [
+            "10.248",
+            "5.286"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Direitos econômicos e financeiros a pagar - 797",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Exigibilidade com agentes - comissões",
+          "values": [
+            "41.615",
+            "21.423"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luvas a pagar",
+          "values": [
+            "31.700",
+            "7.115"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "124.152 77.998",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "106.935",
+            "65.732"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "17.217",
+            "12.266"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "FORTALEZA EC SAF / FORTALEZA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Club Atletico Union Imanol Javier Machuca Cessão definitiva -",
+          "values": [
+            "2.950"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Club Social y Deportivo Defensia e Justicia Tomás Cardona Bernaschina Cessão definitiva",
+          "values": [
+            "1.761",
+            "3.170"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Club de Fútbol Cruz Azul Moisés Vieira da Veiga Cessão definitiva",
+          "values": [
+            "3.851",
+            "6.770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Club Social y Deportivo Colo-Colo Juan Martin Lucero Cessão definitiva",
+          "values": [
+            "6.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Club Estudiantes de La Plata Eros Nazareno Mancuso Cessão definitiva",
+          "values": [
+            "3.824",
+            "9.058"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Major League Soccer L.L.C. Lucas de Lima Linhares Cessão definitiva 3.851 5.378 / Shimizu S-Pulse Glaybson Yago Souza Lisboa Cessão definitiva - 489 / 30.812 35.289 / Empréstimos e financiamentos / Banco Modalidade Vencimento 31/12/2025 31/12/2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CVPAR Investimentos Ltda. Capital de giro 2025",
+          "values": [
+            "9.170",
+            "8.946"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Bradesco S.A. Capital de giro 2025 -",
+          "values": [
+            "8.229"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco BTG Pactual S.A. Capital de giro 2026 -",
+          "values": [
+            "20.583"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Inter S.A. Capital de giro 2026",
+          "values": [
+            "2.194",
+            "8.651"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Outfield Ventures Ltda. Capital de giro 2027 24.602 - / Oliveira Trust Capital de giro 2030 24.200 - / 60.166 46.409",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "35.966",
+            "38.106"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "24.200",
+            "8.303"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "FORTALEZA EC SAF / FORTALEZA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "1.218",
+            "1.613"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "4.518",
+            "5.588"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "o último vencimento em 2029. / 12. Obrigações trabalhistas e previdenciárias / 31/12/2025 31/12/2024 / Salários de atletas 5.839 3.459 / Salários de funcionários do Clube 103 177",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Provisão de férias e encargos incidentes",
+          "values": [
+            "10.318",
+            "7.864"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS a recolher",
+          "values": [
+            "2.387",
+            "1.614"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "COFINS - 284",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "INSS",
+          "values": [
+            "4.278"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF",
+          "values": [
+            "9.685",
+            "5.632"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": "FORTALEZA EC SAF / FORTALEZA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Patrocínio e publicidade (a)",
+          "values": [
+            "7.239",
+            "9.482"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de transmissão de jogos (b) -",
+          "values": [
+            "6.364"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sócio torcedor",
+          "values": [
+            "3.039",
+            "6.659"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": "Cessão de camarote 24 195 / Cessão temporária de atletas 1.265 276 / Luvas de arrendamentos 2.866 4.000 / 14.433 26.976",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "12.575",
+            "22.202"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "1.858",
+            "4.774"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "FORTALEZA / FORTALEZA EC SAF W",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Civel",
+          "values": [
+            "5.394",
+            "2.237"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trabalhista",
+          "values": [
+            "1.945",
+            "14.784"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributário",
+          "values": [
+            "28.578",
+            "5.510"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "FORTALEZA / FORTALEZA EC SAF W",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cessão definitiva de atletas",
+          "values": [
+            "92.293",
+            "1.285"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cessão temporária de atletas",
+          "values": [
+            "5.479",
+            "2.343"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Reversão de PECLD 26 - / Alienação de imobilizado 19 38 / Outras receitas 14.626 462 / 123.927 17.590 / Outras despesas operacionais",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Provisão para contingências",
+          "values": [
+            "(3.339)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixa de recebíveis LFU (a)",
+          "values": [
+            "(30.615)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixa de partes relacionadas (b)",
+          "values": [
+            "(36.922)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 37,
+      "section": "FORTALEZA EC SAF / FORTALEZA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caixa e equivalentes de caixa",
+          "values": [
+            "4.074",
+            "25.083"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "20.675",
+            "56.273"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber de transferência de jogadores",
+          "values": [
+            "41.689",
+            "9.314"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Partes relacionadas -",
+          "values": [
+            "31.695"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros ativos",
+          "values": [
+            "2.900"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 37,
+      "section": "31/12/2025 31/12/2024 / Custo amortizado / Passivos, conforme o balanço patrimonial",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "12.136",
+            "10.417"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar de transferência de jogadores",
+          "values": [
+            "124.152",
+            "77.998"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "60.166",
+            "46.409"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivos de arrendamentos",
+          "values": [
+            "5.736",
+            "7.201"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras contas a pagar",
+          "values": [
+            "9.365",
+            "6.709"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 38,
+      "section": "FORTALEZA / FORTALEZA EC SAF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Moisés Vieira da Veiga Santos Futebol Clube Cessão definitiva",
+          "values": [
+            "9.832",
+            "1.880",
+            "5,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adam Fernando Bareiro Gamarra Club Atlético Boca Juniors Cessão definitiva",
+          "values": [
+            "18.504",
+            "3.600",
+            "5,14"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 11,
+    "results": [
+      {
+        "label": "Despesas financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado financeiro, líquido",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado financeiro, líquido",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prejuízo do exercício",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prejuízo do exercício",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão para contingências",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão para contingências",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Provisão para contingências",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Baixa de recebíveis LFU (a)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Baixa de recebíveis LFU (a)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Baixa de partes relacionadas (b)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Baixa de partes relacionadas (b)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "exceptional_items",
+        "matchedLabel": "Baixa de partes relacionadas",
+        "similarity": 100
+      },
+      {
+        "label": "Fornecedores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fornecedores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contas a pagar de transferência de jogadores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contas a pagar de transferência de jogadores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Empréstimos e financiamentos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Empréstimos e financiamentos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Passivos de arrendamentos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Passivos de arrendamentos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras contas a pagar",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras contas a pagar",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Fortaleza",
+    "matches": [
+      {
+        "leagueId": "br-serieA",
+        "year": "2025",
+        "matchedName": "Fortaleza",
+        "wikipediaPage": "2025 Campeonato Brasileiro Série A"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": []
+}

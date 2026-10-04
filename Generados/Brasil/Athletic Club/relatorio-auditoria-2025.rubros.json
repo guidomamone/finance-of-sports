@@ -1,0 +1,823 @@
+{
+ "md": "Clubes/Brasil/Athletic Club/relatorio-auditoria-2025.md",
+ "pdf": "Clubes/Brasil/Athletic Club/relatorio-auditoria-2025.pdf",
+ "club": "athletic-club",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:51:30.395Z",
+ "tieOuts": {
+  "cierran": 25,
+  "noCierran": 6
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 76,
+  "notasUsadas": [
+   "23",
+   "26"
+  ]
+ },
+ "ladoConocido": 40,
+ "rubros": [
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    42733.132
+   ],
+   "origen": "estado 3",
+   "glosa": "Ingresos operacionales brutos"
+  },
+  {
+   "label": "VENDAS LOJA",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    282.269
+   ],
+   "origen": "estado 3",
+   "glosa": "Ventas de tienda"
+  },
+  {
+   "label": "VENDA DE ATLETAS",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    7390
+   ],
+   "origen": "estado 3",
+   "glosa": "Venta de jugadores"
+  },
+  {
+   "label": "ESCOLINHA",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    94.58
+   ],
+   "origen": "estado 3",
+   "glosa": "Escuela de fútbol"
+  },
+  {
+   "label": "ENTRADAS DE EVENTOS ESPORTIVOS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    1161.637
+   ],
+   "origen": "estado 3",
+   "glosa": "Entradas de eventos deportivos"
+  },
+  {
+   "label": "CAMPEONATO BRASILEIRO",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    11820.947
+   ],
+   "origen": "estado 3",
+   "glosa": "Campeonato Brasileño"
+  },
+  {
+   "label": "USOM DE IMAGEM",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    30.161
+   ],
+   "origen": "estado 3",
+   "glosa": "Uso de imagen"
+  },
+  {
+   "label": "PATROCINIOS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    15887.2
+   ],
+   "origen": "estado 3",
+   "glosa": "Patrocinios"
+  },
+  {
+   "label": "DOAÇÕES RECEBIDAS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    500.089
+   ],
+   "origen": "estado 3",
+   "glosa": "Donaciones recibidas"
+  },
+  {
+   "label": "LOCAÇÃO DE ESPAÇO",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    38.43
+   ],
+   "origen": "estado 3",
+   "glosa": "Alquiler de espacios"
+  },
+  {
+   "label": "DIREITO E TRANSMISSAO DE IMAGEM",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    2500
+   ],
+   "origen": "estado 3",
+   "glosa": "Derechos y transmisión de imagen"
+  },
+  {
+   "label": "AJUDA DE CUSTOS REMUERAÇÃO DE ATLETAS",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    520
+   ],
+   "origen": "estado 3",
+   "glosa": "Ayuda de costos para remuneración de deportistas"
+  },
+  {
+   "label": "DISTRIBUICAO DE DIREITOS ECONOMICOS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    1744.8
+   ],
+   "origen": "estado 3",
+   "glosa": "Distribución de derechos económicos"
+  },
+  {
+   "label": "INDENIZAÇÃO RESCISÃO CONTRATUAL",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    21
+   ],
+   "origen": "estado 3",
+   "glosa": "Indemnización por rescisión contractual"
+  },
+  {
+   "label": "CAMPEONATO MINEIRO",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    52.278
+   ],
+   "origen": "estado 3",
+   "glosa": "Campeonato Mineiro"
+  },
+  {
+   "label": "COPA DO BRASIL",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    684.118
+   ],
+   "origen": "estado 3",
+   "glosa": "Copa de Brasil"
+  },
+  {
+   "label": "GANHO DE CAPITAL ( IMOBILIZADO)",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    5.6
+   ],
+   "origen": "estado 3",
+   "glosa": "Ganancia de capital (inmovilizado)"
+  },
+  {
+   "label": "DESCONTOS OBTIDOS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    0.024
+   ],
+   "origen": "estado 3",
+   "glosa": "Descuentos obtenidos"
+  },
+  {
+   "label": "(-) TEF",
+   "lado": "revenue",
+   "page": 30,
+   "section": "Demonstrações Financeiras 2025 – ATLETIC CLUB / 30",
+   "values": [
+    -1662.17805
+   ],
+   "origen": "nota 23 (ancla 3)",
+   "ancla": "DEDUÇÕES"
+  },
+  {
+   "label": "DEDUÇÕES",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -1713.301
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true,
+   "glosa": "Deducciones"
+  },
+  {
+   "label": "(-) ICMS",
+   "lado": "revenue",
+   "page": 30,
+   "section": "Demonstrações Financeiras 2025 – ATLETIC CLUB / 30",
+   "values": [
+    -50.78148
+   ],
+   "origen": "nota 23 (ancla 3)",
+   "ancla": "DEDUÇÕES",
+   "glosa": "(-) ICMS"
+  },
+  {
+   "label": "(-) Vendas Canceladas e Devoluções",
+   "lado": "revenue",
+   "page": 30,
+   "section": "Demonstrações Financeiras 2025 – ATLETIC CLUB / 30",
+   "values": [
+    -0.3419
+   ],
+   "origen": "nota 23 (ancla 3)",
+   "ancla": "DEDUÇÕES"
+  },
+  {
+   "label": "(-) IMPOSTO TEF 5%",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -1662.178
+   ],
+   "origen": "estado 3",
+   "glosa": "(-) Impuesto TEF 5%"
+  },
+  {
+   "label": "(-) ICMS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -50.781
+   ],
+   "origen": "estado 3",
+   "glosa": "(-) ICMS"
+  },
+  {
+   "label": "(-) VENDAS CANCELADAS E DEVOLUÇÕES",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -0.342
+   ],
+   "origen": "estado 3",
+   "glosa": "(-) Ventas canceladas y devoluciones"
+  },
+  {
+   "label": "RECEITA OPERACIONAL LIQUIDA",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    41019.831
+   ],
+   "origen": "estado 3",
+   "glosa": "Ingresos operacionales netos"
+  },
+  {
+   "label": "DESPESAS OPERACIONAIS",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -65566.51429
+   ],
+   "origen": "estado 3",
+   "glosa": "Gastos operacionales"
+  },
+  {
+   "label": "CUSTO DAS MERCADORIAS VENDIDAS",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -206.063
+   ],
+   "origen": "estado 3",
+   "glosa": "Costo de las mercaderías vendidas"
+  },
+  {
+   "label": "DESPESAS COM PESSOAL",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -18688.891
+   ],
+   "origen": "estado 3",
+   "glosa": "Gastos de personal"
+  },
+  {
+   "label": "MANUTENÇAO E CONSERVAÇÃO E CONSUMO",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -2538.144
+   ],
+   "origen": "estado 3",
+   "glosa": "Mantenimiento, conservación y consumo"
+  },
+  {
+   "label": "ALUGUEL",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -2175.293
+   ],
+   "origen": "estado 3",
+   "glosa": "Alquileres"
+  },
+  {
+   "label": "ALIMENTAÇÃO / VIAGENS /COMBUSTIVEL E EVENTOS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -106.482
+   ],
+   "origen": "estado 3",
+   "glosa": "Alimentación / viajes / combustible y eventos"
+  },
+  {
+   "label": "SERVIÇOS DE TERCEIROS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -21734.366
+   ],
+   "origen": "estado 3",
+   "glosa": "Servicios de terceros"
+  },
+  {
+   "label": "OUTRAS DESPESAS",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -16753.289
+   ],
+   "origen": "estado 3",
+   "glosa": "Otros gastos"
+  },
+  {
+   "label": "DESPESAS COM IMPOSTOS E TAXAS",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -898.222
+   ],
+   "origen": "estado 3",
+   "glosa": "Gastos en impuestos y tasas"
+  },
+  {
+   "label": "COMIÇÃO DE INTERMEDIAÇÕES",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    1376.095
+   ],
+   "origen": "estado 3",
+   "glosa": "Comisiones de intermediación"
+  },
+  {
+   "label": "DEPRECIAÇÃO E AMORTIZAÇAO",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -88.609
+   ],
+   "origen": "estado 3",
+   "glosa": "Depreciación y amortización"
+  },
+  {
+   "label": "PREMIAÇÕES",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -2393.221
+   ],
+   "origen": "estado 3",
+   "glosa": "Premios"
+  },
+  {
+   "label": "DIREITO DE IMAGEM",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -902.575
+   ],
+   "origen": "estado 3",
+   "glosa": "Derechos de imagen"
+  },
+  {
+   "label": "DOAÇÕES EFETUADAS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    6.177
+   ],
+   "origen": "estado 3",
+   "glosa": "Donaciones realizadas"
+  },
+  {
+   "label": "INDENIZAÇÕES PROCESSUAIS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -455.526
+   ],
+   "origen": "estado 3",
+   "glosa": "Indemnizaciones procesales"
+  },
+  {
+   "label": "MULTAS DE TRANSITO",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -8.105
+   ],
+   "origen": "estado 3",
+   "glosa": "Multas de tránsito"
+  },
+  {
+   "label": "RECEITAS FINANCEIRAS",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    48.524
+   ],
+   "origen": "estado 3",
+   "glosa": "Ingresos financieros"
+  },
+  {
+   "label": "RENDIMENTOS S/ APLICAÇÃO FINANCEIRA",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    48.524
+   ],
+   "origen": "estado 3",
+   "glosa": "Rendimientos de inversiones financieras"
+  },
+  {
+   "label": "OUTRAS RECEITA OPERACIONAIS",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    44.353
+   ],
+   "origen": "estado 3",
+   "glosa": "Otros ingresos operacionales"
+  },
+  {
+   "label": "BONIFICAÇÕES RECEBIDAS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    25.228
+   ],
+   "origen": "estado 3",
+   "glosa": "Bonificaciones recibidas"
+  },
+  {
+   "label": "REEMBOLSO DE SEGURO DE VIDA ATLETA",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    19.125
+   ],
+   "origen": "estado 3",
+   "glosa": "Reembolso de seguro de vida de deportistas"
+  },
+  {
+   "label": "DESPESAS FINANCEIRAS",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -3174.488
+   ],
+   "origen": "estado 3 (su nota queda consumida sin abrir)",
+   "glosa": "Gastos financieros"
+  },
+  {
+   "label": "ENCARGOS E JUROS DE MORA",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -1180.151
+   ],
+   "origen": "estado 3",
+   "glosa": "Cargos e intereses de demora"
+  },
+  {
+   "label": "DESPESAS BANCARIAS",
+   "lado": "expense",
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -144.114
+   ],
+   "origen": "estado 3",
+   "glosa": "Gastos bancarios"
+  },
+  {
+   "label": "JUROS S/ FINANCIMENTOS",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -673.331
+   ],
+   "origen": "estado 3",
+   "glosa": "Intereses sobre financiaciones"
+  },
+  {
+   "label": "IOF",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -334.064
+   ],
+   "origen": "estado 3",
+   "glosa": "IOF"
+  },
+  {
+   "label": "IRRF",
+   "lado": null,
+   "page": 13,
+   "section": "### Demonstração de Resultado do Exercício / #### Em 31 de Dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -842.828
+   ],
+   "origen": "estado 3",
+   "glosa": "IRRF"
+  },
+  {
+   "label": "Reultado Abrangente do Período",
+   "lado": null,
+   "page": 14,
+   "section": "### Demonstração dos Resultados Abrangentes / #### Em 31 de dezembro de 2025 e 2024 / (Expresso em reais)",
+   "values": [
+    -27.628295
+   ],
+   "origen": "estado 4",
+   "glosa": "Resultado integral del período"
+  },
+  {
+   "label": "CUSTO DE MERCADORIAS VENDIDAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -206.06255
+   ],
+   "origen": "estado 24",
+   "glosa": "Costo de mercaderías vendidas"
+  },
+  {
+   "label": "DESPESAS COM PESSOAL",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -18688.16069
+   ],
+   "origen": "estado 24",
+   "glosa": "Gastos de personal"
+  },
+  {
+   "label": "MANUTENÇAO E CONSERVAÇÃO",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -152.21666
+   ],
+   "origen": "estado 24",
+   "glosa": "Mantenimiento y conservación"
+  },
+  {
+   "label": "ALUGUEL",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -5734.38236
+   ],
+   "origen": "estado 24",
+   "glosa": "Alquileres"
+  },
+  {
+   "label": "ALIMENTAÇÃO/VIAGENS/COMBUSTIVEL E EVENTOS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -1063.2087
+   ],
+   "origen": "estado 24",
+   "glosa": "Alimentación / viajes / combustible y eventos"
+  },
+  {
+   "label": "SERVIÇOS DE TERCEIROS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -21734.36629
+   ],
+   "origen": "estado 24",
+   "glosa": "Servicios de terceros"
+  },
+  {
+   "label": "OUTRAS DESPESAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -4358.473
+   ],
+   "origen": "estado 24",
+   "glosa": "Otros gastos"
+  },
+  {
+   "label": "DESPESAS COM IMPOSTOS E TAXAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -1068.46509
+   ],
+   "origen": "estado 24",
+   "glosa": "Gastos en impuestos y tasas"
+  },
+  {
+   "label": "COMISSÃO DE INTERMEDIAÇÕES",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -1376.09464
+   ],
+   "origen": "estado 24",
+   "glosa": "Comisiones de intermediación"
+  },
+  {
+   "label": "AMORTIZAÇAO DIREITO ECONOMICO DE ATLETAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -964.19425
+   ],
+   "origen": "estado 24",
+   "glosa": "Amortización de derechos económicos de deportistas"
+  },
+  {
+   "label": "PREMIAÇÕESS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -2393.22125
+   ],
+   "origen": "estado 24",
+   "glosa": "Premios"
+  },
+  {
+   "label": "DOAÇÕES EFETUADAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -6.17697
+   ],
+   "origen": "estado 24",
+   "glosa": "Donaciones realizadas"
+  },
+  {
+   "label": "INDENIZAÇÕES PROCESSUAIS/CONTRATUAIS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -485.86103
+   ],
+   "origen": "estado 24",
+   "glosa": "Indemnizaciones procesales / contractuales"
+  },
+  {
+   "label": "GESTÃO DE FUTEBOL",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -977.1114
+   ],
+   "origen": "estado 24",
+   "glosa": "Gestión de fútbol"
+  },
+  {
+   "label": "TRANSPORTE P/ ATLETAS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    604.96618
+   ],
+   "origen": "estado 24",
+   "glosa": "Transporte para deportistas"
+  },
+  {
+   "label": "DISTRIBUIÇÃO DE DIREITOS ECONÔMICOS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -3500.23038
+   ],
+   "origen": "estado 24",
+   "glosa": "Distribución de derechos económicos"
+  },
+  {
+   "label": "MULTAS DE TRANSITO",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -8.10506
+   ],
+   "origen": "estado 24",
+   "glosa": "Multas de tránsito"
+  },
+  {
+   "label": "PERDAS CRÉDITOS RECEBÍVEIS",
+   "lado": "expense",
+   "page": 30,
+   "section": "#### 17. (Despesas) por natureza",
+   "values": [
+    -1342.64279
+   ],
+   "origen": "estado 24",
+   "glosa": "Pérdidas por créditos incobrables"
+  }
+ ]
+}

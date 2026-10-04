@@ -1,0 +1,1486 @@
+{
+  "club": "llaneros",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Llaneros/estados-financieros-2019.md",
+  "generatedAt": "2026-09-30T21:59:14.817Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 146,
+    "eu": 25,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 21,
+  "relevantTableCount": 5,
+  "tables": [
+    {
+      "page": 11,
+      "section": "NOTA 6.2. Juicios Críticos En La Aplicación De Las Políticas Contables De La Sociedad / NOTA 7. Efectivo Y Equivalentes Al Efectivo",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caja general",
+          "values": [
+            "25,986,967",
+            "32,969,364"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos (1)",
+          "values": [
+            "4,287,031",
+            "4,287,031"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "30,273,998",
+            "37,256,395"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 11,
+      "section": "(1) Las cuentas bancarias a 31 de diciembre están conformadas por:",
+      "columns": [
+        "ENTIDAD BANCARIA",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "BBVA Cuenta de Ahorros",
+          "values": [
+            "4.287.031",
+            "4.287.031"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "NOTA 8. Cuentas Comerciales Por Cobrar Y Otras Cuentas Por Cobrar",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cuentas comerciales por cobrar a terceros (1)",
+          "values": [
+            "240,024,733",
+            "318,396,353"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "240,024,733",
+            "318,396,353"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "(1) El rubro de cuentas comerciales por cobrar a terceros corresponde a:",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cuentas comerciales por cobrar – Clientes",
+          "values": [
+            "84,417,938",
+            "164,550,595"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas comerciales por cobrar a trabajadores",
+          "values": [
+            "151,036",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras cuentas por cobrar",
+          "values": [
+            "155,455,759",
+            "153,845,758"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "240,024,733",
+            "318,396,353"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "NOTA 10. Propiedad Planta Y Equipo",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Maquinaria Y Equipo",
+          "values": [
+            "6,688,710",
+            "6,688,710"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciaciones",
+          "values": [
+            "-5,508,423",
+            "-5,150,801"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "1,180,287",
+            "1,537,909"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": null,
+      "columns": [
+        "Costo",
+        "Maquinaria Y Equipo",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo a Enero 1 de 2018",
+          "values": [
+            "4.898.710",
+            "4.898.710"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiciones",
+          "values": [
+            "1.790.000",
+            "1.790.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retiros",
+          "values": [
+            "$-",
+            "$-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo a 31 de Diciembre de 2018",
+          "values": [
+            "6.688.710",
+            "6.688.710"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo a Enero 1 de 2019",
+          "values": [
+            "6.688.710",
+            "6.688.710"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiciones",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retiros",
+          "values": [
+            "$-",
+            "$-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo a 31 de Diciembre de 2019",
+          "values": [
+            "$ 6.688.710",
+            "$ 6.688.710"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": null,
+      "columns": [
+        "Depreciación",
+        "Maquinaria Y Equipo",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo a Enero 1 de 2018",
+          "values": [
+            "3.000.317",
+            "1.396.841"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gasto depreciación del periodo",
+          "values": [
+            "2.150.484",
+            "1.603.476"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo a 31 de Diciembre de 2018",
+          "values": [
+            "5.150.801",
+            "3.000.317"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo a Enero 1 de 2019",
+          "values": [
+            "5.150.801",
+            "3.000.317"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gasto depreciación del periodo",
+          "values": [
+            "357.622",
+            "2.150.484"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo a 31 de Diciembre de 2019",
+          "values": [
+            "5.508.423",
+            "5.150.801"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": null,
+      "columns": [
+        "CONCEPTO",
+        "VIDA UTIL (Años)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Maquinaria Y Equipo",
+          "values": [
+            "5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo De Oficina",
+          "values": [
+            "5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo De Computo",
+          "values": [
+            "3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construcciones y Edificaciones",
+          "values": [
+            "30"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "NOTA 11. Otros Activos No Financieros No Corrientes",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anticipos y avances (1)",
+          "values": [
+            "252,651,514",
+            "344,536,487"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "252,651,514",
+            "344,536,487"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "NOTA 12. Intangibles",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Derechos (1)",
+          "values": [
+            "4,600,000,000",
+            "6,013,201,613"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "4,600,000,000",
+            "6,013,201,613"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "NOTA 13. Pasivos Financieros Medidos Al Valor Razonable",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Bancos nacionales (1)",
+          "values": [
+            "456,521,152",
+            "381,840,597"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "456,521,152",
+            "381,840,597"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "NOTA 14. Cuentas Comerciales Por Pagar Y Otras Cuentas Por Pagar",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cuentas comerciales por pagar a terceros",
+          "values": [
+            "812,099,226",
+            "696,452,420"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Cuentas comerciales por pagar",
+          "values": [
+            "155,734,086",
+            "147,698,086"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Costos y gastos por pagar",
+          "values": [
+            "310,127,321",
+            "252,414,747"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Retenciones en la fuente",
+          "values": [
+            "334,429,227",
+            "284,530,995"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Impuesto a las ventas retenido",
+          "values": [
+            "11,808,592",
+            "11,808,592"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas comerciales por pagar a partes vinculadas",
+          "values": [
+            "1,088,738,463",
+            "3,310,370,194"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Deudas con accionistas o socios",
+          "values": [
+            "1,088,738,463",
+            "3,310,370,194"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "1,900,837,689",
+            "4,006,822,614"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "NOTA 15. Impuestos Corrientes",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Activos por impuestos corrientes",
+          "values": [
+            "189,752,107",
+            "151,366,742"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Retención en la fuente",
+          "values": [
+            "27,339,771",
+            "17,935,569"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Autorretención CREE",
+          "values": [
+            "15,839,248",
+            "15,839,248"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Autorretención Renta",
+          "values": [
+            "12,248,004",
+            "11,418,925"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Sobrantes en liquidación privada de impuestos",
+          "values": [
+            "100,243,000",
+            "100,243,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Sobrante en liquidación de impuestos IVA",
+          "values": [
+            "34,082,084",
+            "5,930,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivos por impuestos corrientes",
+          "values": [
+            "-",
+            "11,232,000"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Impuesto de Renta y Complementarios",
+          "values": [
+            "-",
+            "11,232,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Impuesto Sobre las Ventas por Pagar",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "189,752,107",
+            "140,134,742"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": null,
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salarios por Pagar",
+          "values": [
+            "130,025,684",
+            "94,288,887"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cesantías consolidadas",
+          "values": [
+            "10,910,320",
+            "23,021,864"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses sobre cesantías",
+          "values": [
+            "1,055,966",
+            "2,685,336"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima de Servicios",
+          "values": [
+            "7,091,944",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vacaciones Consolidadas",
+          "values": [
+            "4,450,773",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros beneficios a empleados",
+          "values": [
+            "",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "153,534,687",
+            "119,996,087"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "NOTA 17. Impuestos Diferidos",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Activos por impuestos diferidos",
+          "values": [
+            "34,092,836",
+            "17,309,686"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Cuentas comerciales por cobrar y otras cuentas por cobrar",
+          "values": [
+            "34,092,836",
+            "17,309,686"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivos por impuestos corrientes",
+          "values": [
+            "-",
+            "131,325,627"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Cuentas comerciales por pagar y otras cuentas por pagar",
+          "values": [
+            "-",
+            "39,878,342"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Beneficios a empleados",
+          "values": [
+            "-",
+            "469,200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Otros pasivos no financieros",
+          "values": [
+            "-",
+            "15,727,564"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "&nbsp;&nbsp;Revaluación de patrimonio por reconocimiento al valor razonable",
+          "values": [
+            "-",
+            "75,250,521"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "NOTA 18. Patrimonio",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capital social",
+          "values": [
+            "5,800,000,000",
+            "2,910,000,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Revaluación del patrimonio",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reserva legal",
+          "values": [
+            "47,401,000",
+            "47,401,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ganancia (Pérdida) del Periodo",
+          "values": [
+            "($ 341,548,489)",
+            "($ 685,798,020)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ganancias (Pérdidas) de Periodos Anteriores",
+          "values": [
+            "($ 3,159,797,690)",
+            "($ 2,473,999,670)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ganancias (Pérdidas) Acumuladas por Conversión a NIIF",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "2,346,054,820",
+            "-202,396,691"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "NOTA 19. Ingresos Por Actividades Ordinarias",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ingresos de actividades ordinarias por prestación de servicios de actividades deportivas",
+          "values": [
+            "1,625,695,589",
+            "1,426,937,811"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "1,625,695,589",
+            "1,426,937,811"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": null,
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "150,723,320",
+            "459,432"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "150,723,320",
+            "459,432"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "A diciembre 31 los gastos de administración se detallan a continuación:",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos por beneficios a empleados",
+          "values": [
+            "24,372,762",
+            "26,535,172"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "206,500,000",
+            "106,166,444"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "-",
+            "2,480,477"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "8,727,370",
+            "17,399,650"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "-",
+            "1,785,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "286,260",
+            "13,686,681"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos legales",
+          "values": [
+            "10,788,789",
+            "2,251,455"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento y reparaciones",
+          "values": [
+            "-",
+            "2,068,328"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de viaje",
+          "values": [
+            "-",
+            "3,231,877"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación, amortización y cargos por pérdidas por deterioro del valor",
+          "values": [
+            "-",
+            "2,150,484"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros gastos",
+          "values": [
+            "67,584,058",
+            "24,601,739"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "318,259,239",
+            "202,357,307"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 19,
+      "section": "NOTA 21. Costos De Distribución Y Ventas",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos por beneficios a empleados",
+          "values": [
+            "1,077,885,518",
+            "919,667,848"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "126,336,166",
+            "193,580,180"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "1,200,000",
+            "20,138,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "1,667,359",
+            "12,887,650"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuciones y afiliaciones",
+          "values": [
+            "555,200",
+            "1,200,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "1,785,000",
+            "1,980,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "65,785,972",
+            "103,681,514"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos legales",
+          "values": [
+            "30,803,970",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento y reparaciones",
+          "values": [
+            "272,401",
+            "125,500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de viaje",
+          "values": [
+            "115,214,242",
+            "68,015,885"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros gastos",
+          "values": [
+            "14,869,266",
+            "59,345,303"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "1,436,375,094",
+            "1,380,621,880"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 20,
+      "section": "NOTA 22. Otros Gastos",
+      "columns": [
+        "CONCEPTO",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Financieros",
+          "values": [
+            "63,584,673",
+            "56,503,900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos extraordinarios",
+          "values": [
+            "230,527,807",
+            "283,168,695"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos diversos",
+          "values": [
+            "51,098,093",
+            "183,874,986"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "345,210,573",
+            "523,547,581"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 11,
+      "section": "NOTA 6.2. Juicios Críticos En La Aplicación De Las Políticas Contables De La Sociedad / NOTA 7. Efectivo Y Equivalentes Al Efectivo",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "30,273,998",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": "NOTA 6.2. Juicios Críticos En La Aplicación De Las Políticas Contables De La Sociedad / NOTA 7. Efectivo Y Equivalentes Al Efectivo",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "37,256,395",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "NOTA 8. Cuentas Comerciales Por Cobrar Y Otras Cuentas Por Cobrar",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "240,024,733",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "NOTA 8. Cuentas Comerciales Por Cobrar Y Otras Cuentas Por Cobrar",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "318,396,353",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "(1) El rubro de cuentas comerciales por cobrar a terceros corresponde a:",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "240,024,733",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "(1) El rubro de cuentas comerciales por cobrar a terceros corresponde a:",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "318,396,353",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 13,
+      "section": "NOTA 10. Propiedad Planta Y Equipo",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "1,180,287",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 13,
+      "section": "NOTA 10. Propiedad Planta Y Equipo",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "1,537,909",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": "NOTA 11. Otros Activos No Financieros No Corrientes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "252,651,514",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": "NOTA 11. Otros Activos No Financieros No Corrientes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "344,536,487",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "NOTA 12. Intangibles",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "4,600,000,000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "NOTA 12. Intangibles",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "6,013,201,613",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "NOTA 13. Pasivos Financieros Medidos Al Valor Razonable",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "456,521,152",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "NOTA 13. Pasivos Financieros Medidos Al Valor Razonable",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "381,840,597",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "NOTA 14. Cuentas Comerciales Por Pagar Y Otras Cuentas Por Pagar",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "1,900,837,689",
+      "addendCount": 5,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "NOTA 14. Cuentas Comerciales Por Pagar Y Otras Cuentas Por Pagar",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "4,006,822,614",
+      "addendCount": 5,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "NOTA 15. Impuestos Corrientes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "189,752,107",
+      "addendCount": 5,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "NOTA 15. Impuestos Corrientes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "140,134,742",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "185062742"
+    },
+    {
+      "page": 17,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "153,534,687",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "119,996,087",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "NOTA 18. Patrimonio",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "2 de 4 valor(es) del segmento no parecen números (ej. \"($ 341,548,489)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 18,
+      "section": "NOTA 18. Patrimonio",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "2 de 4 valor(es) del segmento no parecen números (ej. \"($ 685,798,020)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 18,
+      "section": "NOTA 19. Ingresos Por Actividades Ordinarias",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "1,625,695,589",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "NOTA 19. Ingresos Por Actividades Ordinarias",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "1,426,937,811",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "150,723,320",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "459,432",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "A diciembre 31 los gastos de administración se detallan a continuación:",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "318,259,239",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "A diciembre 31 los gastos de administración se detallan a continuación:",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "202,357,307",
+      "addendCount": 11,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "NOTA 21. Costos De Distribución Y Ventas",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "1,436,375,094",
+      "addendCount": 11,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "NOTA 21. Costos De Distribución Y Ventas",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "1,380,621,880",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "NOTA 22. Otros Gastos",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "345,210,573",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "NOTA 22. Otros Gastos",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "523,547,581",
+      "addendCount": 3,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/llaneros-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"llaneros\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

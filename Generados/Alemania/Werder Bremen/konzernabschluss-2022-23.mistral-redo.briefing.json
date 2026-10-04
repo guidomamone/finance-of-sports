@@ -1,0 +1,2714 @@
+{
+  "club": "werderbremen-de",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/Werder Bremen/konzernabschluss-2022-23.mistral-redo.md",
+  "generatedAt": "2026-09-30T01:48:48.713Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 158,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 20,
+  "relevantTableCount": 3,
+  "tables": [
+    {
+      "page": 1,
+      "section": "UNTERNEHMENSREGISTER / ## SV Werder Bremen GmbH & Co KG aA / ### Bremen / #### Konzernabschluss zum Geschäftsjahr vom 01.07.2022 bis zum 30.06.2023 / #### Konzern-Kapitalflussrechnung für die Zeit vom 1. Juli 2022 bis 30. Juni 2023",
+      "columns": [
+        "",
+        "01.07.2022 - 30.06.2023 TEUR",
+        "01.07.2021 - 30.06.2022 TEUR",
+        "Veränderung TEUR"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1. Periodenergebnis",
+          "values": [
+            "-3.838",
+            "6.296",
+            "-10.134"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. +/- Abschreibungen/Zuschreibungen auf Gegenstände des Anlagevermögens",
+          "values": [
+            "11.901",
+            "10.365",
+            "1.536"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. +/- Zunahme/Abnahme der Rückstellungen",
+          "values": [
+            "-1.809",
+            "1.965",
+            "-3.774"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. +/- Sonstige zahlungsunwirksame Aufwendungen/Erträge",
+          "values": [
+            "-3.124",
+            "-1.346",
+            "-1.778"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. -/+ Zunahme/Abnahme der Vorräte, der Forderungen aus Lieferungen und Leistungen sowie anderer Aktiva, die nicht der Investitions- oder Finanzierungstätigkeit zuzuordnen sind",
+          "values": [
+            "-1.112",
+            "3.729",
+            "-4.841"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6. +/- Zunahme/Abnahme der Verbindlichkeiten aus Lieferungen und Leistungen sowie anderer Passiva, die nicht der Investitions- oder Finanzierungstätigkeit zuzuordnen sind",
+          "values": [
+            "2.526",
+            "-11.595",
+            "14.121"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7. -/+ Gewinn/Verlust aus dem Abgang von Anlagevermögen",
+          "values": [
+            "-4.676",
+            "-27.378",
+            "22.702"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8. +/- Zinsaufwendungen/-erträge",
+          "values": [
+            "2.311",
+            "1.959",
+            "352"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "9. +/- Beteiligungserträge",
+          "values": [
+            "-57",
+            "0",
+            "-57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "10. +/- Ertragsteueraufwand/-ertrag",
+          "values": [
+            "19",
+            "-187",
+            "206"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11. - Ertragsteuerzahlungen",
+          "values": [
+            "-340",
+            "-619",
+            "279"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "12. = Cashflow aus der laufenden Geschäftstätigkeit",
+          "values": [
+            "1.801",
+            "-16.811",
+            "18.612"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13. + Einzahlungen aus Abgängen von Gegenständen des Anlagevermögens",
+          "values": [
+            "16.512",
+            "21.608",
+            "-5.096"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "14. - Auszahlungen für Investitionen in das Anlagevermögen",
+          "values": [
+            "-9.353",
+            "-10.781",
+            "1.428"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "15. Erhaltene Zinsen",
+          "values": [
+            "106",
+            "0",
+            "106"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "16. + Erhaltene Dividenden",
+          "values": [
+            "57",
+            "1",
+            "56"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "",
+        "01.07.2022 - 30.06.2023",
+        "01.07.2021 - 30.06.2022",
+        "Veränderung"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "TEUR",
+            "TEUR",
+            "TEUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "17. = Cashflow aus der Investitionstätigkeit",
+          "values": [
+            "7.322",
+            "10.828",
+            "-3.506"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "18. +/- Ein-/Auszahlungen aus der Aufnahme von (Finanz-) Krediten",
+          "values": [
+            "-3.842",
+            "1.114",
+            "-4.956"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "19. - Gezahlte Zinsen",
+          "values": [
+            "-2.404",
+            "-1.946",
+            "-458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20. = Cashflow aus der Finanzierungstätigkeit",
+          "values": [
+            "-6.246",
+            "-832",
+            "-5.414"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "21. Zahlungswirksame Veränderungen des Finanzmittelfonds (Summe 11,15 und 18)",
+          "values": [
+            "2.877",
+            "-6.815",
+            "9.692"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "22. + Finanzmittelfonds am 1.7.",
+          "values": [
+            "16.089",
+            "22.904",
+            "-6.815"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "23. = Finanzmittelfonds am 30.6.",
+          "values": [
+            "18.966",
+            "16.089",
+            "2.877"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "## Konzernanhang für das Geschäftsjahr vom 1. Juli 2022 bis 30. Juni 2023 / ### 1. Allgemeine Angaben zur Muttergesellschaft",
+      "columns": [
+        "Firma:",
+        "SV Werder Bremen GmbH & Co KG aA"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Sitz:",
+          "values": [
+            "Bremen"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Registergericht/-Nr.:",
+          "values": [
+            "Amtsgericht Bremen HRB 21775 HB"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "",
+        "Kapitalanteil in %"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Werder Bremen Merchandising GmbH, Bremen",
+          "values": [
+            "100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Werder Bremen Payment GmbH, Bremen",
+          "values": [
+            "100"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "",
+        "2022/2023 TEUR"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Spielerträge, mediale Verwertung und Werbung",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "sowie Transfererträge",
+          "values": [
+            "102.276"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handel",
+          "values": [
+            "9.005"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige",
+          "values": [
+            "4.005"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "115.286"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "UNTERNEHMENSREGISTER / # d) Sonstige Leistungen TEUR 132",
+      "columns": [
+        "Name",
+        "Beruf",
+        "Bereich"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Klaus Fülbry",
+          "values": [
+            "Kaufmann",
+            "Vorsitzender der Geschäftsführung, Kaufmännischer Geschäftsführer"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Frank Baumann",
+          "values": [
+            "Kaufmann",
+            "Geschäftsführer Fußball"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dr. Hubertus Hess-Grunewald (bis 31.12.2022)",
+          "values": [
+            "Rechtsanwalt",
+            "Geschäftsführer Sport & Nachhaltigkeit"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tarek Brauer (ab 01.09.2022)",
+          "values": [
+            "Rechtsanwalt",
+            "Geschäftsführer Organisation & Personal"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anne-Kathrin Laufmann (ab 01.01.2023)",
+          "values": [
+            "Kauffrau",
+            "Geschäftsführerin Sport & Nachhaltigkeit"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "6.4. Der Aufsichtsrat besteht aus den folgenden Mitgliedern:",
+      "columns": [
+        "Dr. Hubertus Hess-Grunewald (ab 20.03.2023)",
+        "Rechtsanwalt - Vorsitzender (ab 30.03.2023) -"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Marco R. Fuchs (bis 30.03.2023)",
+          "values": [
+            "Vorstandsvorsitzender der OHB SE - Vorsitzender -"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ulrike Hiller",
+          "values": [
+            "Unternehmerin - stellvertretende Vorsitzende -"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Harm Ohlmeyer",
+          "values": [
+            "Finanzvorstand der adidas AG"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gerrit Meier (ab 29.05.2023)",
+          "values": [
+            "Managing Director International NFL"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Axel Plaat",
+          "values": [
+            "Kreditanalyst"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dr. Florian Weiss",
+          "values": [
+            "Unternehmer"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dirk Wintermann",
+          "values": [
+            "Unternehmer"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "UNTERNEHMENSREGISTER / Wirtschaftsprüfungsgesellschaft / ## Konzernbilanz zum 30. Juni 2023 / ### Aktiva",
+      "columns": [
+        "",
+        "30.06.2023",
+        "",
+        "30.06.2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "EUR",
+            "EUR",
+            "EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A. Anlagevermögen",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "I. Immaterielle Vermögensgegenstände",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+          "values": [
+            "9.243.997,83",
+            "",
+            "11.445.216,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Geleistete Anzahlungen",
+          "values": [
+            "8.042,00",
+            "",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "9.252.039,83",
+            "11.445.216,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Sachanlagen",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+          "values": [
+            "1.099.733,15",
+            "",
+            "1.317.856,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "3.518.530,30",
+            "",
+            "2.627.879,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Geleistete Anzahlungen und Anlagen im Bau",
+          "values": [
+            "869.245,42",
+            "",
+            "928.055,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "5.487.508,87",
+            "4.873.791,44"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Finanzanlagen",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Beteiligungen an assoziierten Unternehmen",
+          "values": [
+            "5.911.469,12",
+            "",
+            "4.553.233,78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Beteiligungen",
+          "values": [
+            "12.800,35",
+            "",
+            "12.800,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "5.924.269,47",
+            "4.566.034,13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "20.663.818,17",
+            "20.885.042,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Umlaufvermögen",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "",
+        "30.06.2023",
+        "",
+        "30.06.2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "EUR",
+            "EUR",
+            "EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I. Vorräte",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Roh-, Hilfs- und Betriebsstoffe",
+          "values": [
+            "359.554,10",
+            "",
+            "324.832,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Waren",
+          "values": [
+            "730.683,26",
+            "",
+            "942.163,60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "1.090.237,36",
+            "1.266.995,61"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Forderungen und sonstige Vermögensgegenstände",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Forderungen aus Lieferungen und Leistungen",
+          "values": [
+            "13.087.917,75",
+            "",
+            "22.689.016,92"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Forderungen gegen Gesellschafter",
+          "values": [
+            "547.511,26",
+            "",
+            "553.438,56"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Forderungen gegen assoziierte Unternehmen",
+          "values": [
+            "868.451,75",
+            "",
+            "560.494,56"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Forderungen gegen Unternehmen, mit denen ein Beteiligungsverhältnis besteht",
+          "values": [
+            "26.982,15",
+            "",
+            "150.271,29"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Sonstige Vermögensgegenstände",
+          "values": [
+            "1.436.375,60",
+            "",
+            "2.186.472,37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "15.967.238,51",
+            "26.139.693,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Kassenbestand, Guthaben bei Kreditinstituten und Schecks",
+          "values": [
+            "",
+            "18.966.330,79",
+            "16.088.886,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "36.023.806,66",
+            "43.495.576,20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C. Rechnungsabgrenzungsposten",
+          "values": [
+            "",
+            "897.349,17",
+            "833.449,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D. Nicht durch Konzerneigenkapital gedeckter Fehlbetrag",
+          "values": [
+            "",
+            "17.874.462,97",
+            "14.036.303,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "75.459.436,97",
+            "79.250.370,75"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "# Passiva",
+      "columns": [
+        "",
+        "30.06.2023",
+        "",
+        "30.06.2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "EUR",
+            "EUR",
+            "EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A. Eigenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I. Gezeichnetes Kapital",
+          "values": [
+            "2.500.000,00",
+            "",
+            "2.500.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Kapitalrücklage",
+          "values": [
+            "5.387.203,97",
+            "",
+            "5.387.203,97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Verlustvortrag",
+          "values": [
+            "-21.923.507,12",
+            "",
+            "-28.219.977,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IV. Konzernjahresfehlbetrag/-überschuss",
+          "values": [
+            "-3.838.159,82",
+            "",
+            "6.296.470,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "V. Nicht durch Konzerneigenkapital gedeckter Fehlbetrag",
+          "values": [
+            "17.874.462,97",
+            "",
+            "14.036.303,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Rückstellungen",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Rückstellungen für Pensionen und ähnliche Verpflichtungen",
+          "values": [
+            "737.488,00",
+            "",
+            "776.645,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Steuerrückstellungen",
+          "values": [
+            "1.250.860,00",
+            "",
+            "1.362.400,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Sonstige Rückstellungen",
+          "values": [
+            "2.804.935,08",
+            "",
+            "4.583.715,91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "4.793.283,08",
+            "6.722.760,91"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "",
+        "30.06.2023",
+        "",
+        "30.06.2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "EUR",
+            "EUR",
+            "EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C. Verbindlichkeiten",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Anleihen",
+          "values": [
+            "18.200.000,00",
+            "",
+            "18.200.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Verbindlichkeiten gegenüber Kreditinstituten",
+          "values": [
+            "16.572.000,00",
+            "",
+            "20.414.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Erhaltene Anzahlungen auf Bestellungen",
+          "values": [
+            "4.888,88",
+            "",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "15.090.090,09",
+            "",
+            "10.530.737,98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Verbindlichkeiten gegenüber Gesellschaftern",
+          "values": [
+            "987.786,32",
+            "",
+            "1.016.248,48"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6. Verbindlichkeiten gegenüber assoziierten Unternehmen",
+          "values": [
+            "312.663,71",
+            "",
+            "785.464,08"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7. Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht",
+          "values": [
+            "0,00",
+            "",
+            "186.391,11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8. Sonstige Verbindlichkeiten",
+          "values": [
+            "8.509.745,18",
+            "",
+            "9.789.129,85"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "59.677.174,18",
+            "60.921.971,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D. Rechnungsabgrenzungsposten",
+          "values": [
+            "",
+            "10.988.979,71",
+            "11.605.638,34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "75.459.436,97",
+            "79.250.370,75"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "### Konzern-Gewinn- und Verlustrechnung für die Zeit vom 1. Juli 2022 bis 30. Juni 2023",
+      "columns": [
+        "",
+        "2022/2023",
+        "",
+        "2021/2022",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "EUR",
+            "EUR",
+            "EUR",
+            "EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Umsatzerlöse",
+          "values": [
+            "",
+            "115.285.511,47",
+            "",
+            "92.725.635,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Sonstige betriebliche Erträge",
+          "values": [
+            "",
+            "4.792.120,22",
+            "",
+            "9.466.366,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "120.077.631,69",
+            "",
+            "102.192.001,18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Materialaufwand",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Aufwendungen für Roh-, Hilfs- und Betriebsstoffe und bezogene Waren",
+          "values": [
+            "4.694.605,13",
+            "",
+            "2.911.556,66",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Aufwendungen für bezogene Leistungen",
+          "values": [
+            "2.031.957,41",
+            "",
+            "1.342.002,69",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "6.726.562,54",
+            "",
+            "4.253.559,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Personalaufwand",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Löhne und Gehälter",
+          "values": [
+            "51.127.319,36",
+            "",
+            "39.250.037,04",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",
+          "values": [
+            "6.083.847,36",
+            "",
+            "4.539.236,37",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "57.211.166,72",
+            "",
+            "43.789.273,41"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen",
+          "values": [
+            "",
+            "11.901.296,64",
+            "",
+            "10.365.151,75"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 12,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "",
+        "2022/2023",
+        "",
+        "2021/2022",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "EUR",
+            "EUR",
+            "EUR",
+            "EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6. Sonstige betriebliche Aufwendungen",
+          "values": [
+            "",
+            "47.000.534,17",
+            "",
+            "35.397.484,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "-2.761.928,38",
+            "",
+            "8.386.532,05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7. Erträge aus Beteiligungen",
+          "values": [
+            "56.850,00",
+            "",
+            "0,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8. Erträge aus assoziierten Unternehmen",
+          "values": [
+            "1.358.235,34",
+            "",
+            "0,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "9. Sonstige Zinsen und ähnliche Erträge",
+          "values": [
+            "105.900,95",
+            "",
+            "765,59",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "10. Aufwendungen aus Verlustübernahme von assoziierten Unternehmen",
+          "values": [
+            "0,00",
+            "",
+            "234.078,92",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11. Zinsen und ähnliche Aufwendungen",
+          "values": [
+            "2.417.240,00",
+            "",
+            "1.960.133,48",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "-896.253,71",
+            "",
+            "-2.193.446,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "12. Steuern vom Einkommen und vom Ertrag (2021/2022: Ertrag)",
+          "values": [
+            "",
+            "18.830,70",
+            "",
+            "-187.620,66"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13. Ergebnis nach Steuern",
+          "values": [
+            "",
+            "-3.677.012,79",
+            "",
+            "6.380.705,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "14. Sonstige Steuern",
+          "values": [
+            "",
+            "161.147,03",
+            "",
+            "84.235,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "15. Konzernjahresfehlbetrag/-überschuss",
+          "values": [
+            "",
+            "-3.838.159,82",
+            "",
+            "6.296.470,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "### Entwicklung des Konzernanlagevermögens zum 30. Juni 2023",
+      "columns": [
+        "",
+        "Anschaffungs-/Herstellungskosten",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "01.07.2022",
+            "Zugang",
+            "Umbuchung",
+            "Abgang",
+            "30.06.2023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "EUR",
+            "EUR",
+            "EUR",
+            "EUR",
+            "EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I. Immaterielle Vermögensgegenstände",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+          "values": [
+            "38.744.533,58",
+            "8.733.493,00",
+            "0,00",
+            "4.321.750,00",
+            "43.156.276,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Geleistete Anzahlungen",
+          "values": [
+            "0,00",
+            "8.042,00",
+            "0,00",
+            "0,00",
+            "8.042,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "38.744.533,58",
+            "8.741.535,00",
+            "0,00",
+            "4.321.750,00",
+            "43.164.318,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Sachanlagen",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich Bauten auf fremden Grundstücken",
+          "values": [
+            "7.280.213,26",
+            "0,00",
+            "0,00",
+            "0,00",
+            "7.280.213,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "13.776.174,92",
+            "1.685.868,18",
+            "48.000,00",
+            "6.900,65",
+            "15.503.142,45"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 13,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "Anschaffungs-/Herstellungskosten",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "01.07.2022 EUR",
+            "Zugang EUR",
+            "Umbuchung EUR",
+            "Abgang EUR",
+            "30.06.2023 EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Geleistete Anzahlungen und Anlagen im Bau",
+          "values": [
+            "928.055,53",
+            "212.383,00",
+            "-48.000,00",
+            "223.193,11",
+            "869.245,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "21.984.443,71",
+            "1.898.251,18",
+            "0,00",
+            "230.093,76",
+            "23.652.601,13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Finanzanlagen",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Beteiligungen an assoziierten Unternehmen",
+          "values": [
+            "4.553.233,78",
+            "1.358.235,34",
+            "0,00",
+            "0,00",
+            "5.911.469,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Beteiligungen",
+          "values": [
+            "12.800,35",
+            "0,00",
+            "0,00",
+            "0,00",
+            "12.800,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "4.566.034,13",
+            "1.358.235,34",
+            "0,00",
+            "0,00",
+            "5.924.269,47"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Summe Anlagevermögen",
+          "values": [
+            "65.295.011,42",
+            "11.998.021,52",
+            "0,00",
+            "4.551.843,76",
+            "72.741.189,18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abschreibungen",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "01.07.2022 EUR",
+            "Zugang EUR",
+            "Abgang EUR",
+            "30.06.2023 EUR",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I. Immaterielle Vermögensgegenstände",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+          "values": [
+            "27.299.316,75",
+            "10.839.956,00",
+            "4.226.994,00",
+            "33.912.278,75",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Geleistete Anzahlungen",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "27.299.316,75",
+            "10.839.956,00",
+            "4.226.994,00",
+            "33.912.278,75",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Sachanlagen",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich Bauten auf fremden Grundstücken",
+          "values": [
+            "5.962.357,11",
+            "218.123,00",
+            "0,00",
+            "6.180.480,11",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "11.148.295,16",
+            "843.217,64",
+            "6.900,65",
+            "11.984.612,15",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Geleistete Anzahlungen und Anlagen im Bau",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "17.110.652,27",
+            "1.061.340,64",
+            "6.900,65",
+            "18.165.092,26",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Finanzanlagen",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Beteiligungen an assoziierten Unternehmen",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Beteiligungen",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Summe Anlagevermögen",
+          "values": [
+            "44.409.969,02",
+            "11.901.296,64",
+            "4.233.894,65",
+            "52.077.371,01",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 14,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "",
+        "Buchwerte",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "30.06.2023",
+            "30.06.2022"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "EUR",
+            "EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I. Immaterielle Vermögensgegenstände",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+          "values": [
+            "9.243.997,83",
+            "11.445.216,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Geleistete Anzahlungen",
+          "values": [
+            "8.042,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "9.252.039,83",
+            "11.445.216,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Sachanlagen",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich Bauten auf fremden Grundstücken",
+          "values": [
+            "1.099.733,15",
+            "1.317.856,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "3.518.530,30",
+            "2.627.879,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Geleistete Anzahlungen und Anlagen im Bau",
+          "values": [
+            "869.245,42",
+            "928.055,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "5.487.508,87",
+            "4.873.791,44"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Finanzanlagen",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Beteiligungen an assoziierten Unternehmen",
+          "values": [
+            "5.911.469,12",
+            "4.553.233,78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Beteiligungen",
+          "values": [
+            "12.800,35",
+            "12.800,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "5.924.269,47",
+            "4.566.034,13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Summe Anlagevermögen",
+          "values": [
+            "20.663.818,17",
+            "20.885.042,40"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "### Konzerneigenkapitalspiegel zum 30. Juni 2023",
+      "columns": [
+        "",
+        "Gezeichnetes Kapital",
+        "Kapitalrücklage",
+        "Verlustvortrag"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "TEUR",
+            "TEUR",
+            "TEUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am 01.07.2021",
+          "values": [
+            "2.500",
+            "5.387",
+            "-28.220"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresüberschuss",
+          "values": [
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am 30.06.2022",
+          "values": [
+            "2.500",
+            "5.387",
+            "-28.220"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einstellung in Verlustvortrag",
+          "values": [
+            "0",
+            "0",
+            "6.297"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresfehlbetrag",
+          "values": [
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am 30.06.2023",
+          "values": [
+            "2.500",
+            "5.387",
+            "-21.923"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Konzernjahresüberschuss/-fehlbetrag",
+            "erwirtschaftetes Konzerneigenkapital",
+            "Konzerneigenkapital"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "TEUR",
+            "TEUR",
+            "TEUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am 01.07.2021",
+          "values": [
+            "0",
+            "-28.220",
+            "-20.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresüberschuss",
+          "values": [
+            "6.297",
+            "6.297",
+            "6.297"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "",
+        "Konzernjahresüberschuss/ -fehlbetrag",
+        "erwirtschaftetes Konzerneigenkapital",
+        "Konzerneigenkapital"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "TEUR",
+            "TEUR",
+            "TEUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am 30.06.2022",
+          "values": [
+            "6.297",
+            "-21.923",
+            "-14.036"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einstellung in Verlustvortrag",
+          "values": [
+            "-6.297",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresfehlbetrag",
+          "values": [
+            "-3.838",
+            "-3.838",
+            "-3.838"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am 30.06.2023",
+          "values": [
+            "-3.838",
+            "-25.761",
+            "-17.874"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "UNTERNEHMENSREGISTER / ## Konzern-Verbindlichkeitenspiegel zum 30. Juni 2023",
+      "columns": [
+        "",
+        "Gesamtbetrag",
+        "",
+        "davon mit einer Restlaufzeit von",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "TEUR",
+            "bis zu 1 Jahr TEUR",
+            "über 1 Jahr TEUR",
+            "davon über 5 Jahre TEUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Anleihen",
+          "values": [
+            "18.200",
+            "0",
+            "18.200",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "(18.200)",
+            "(0)",
+            "(18.200)",
+            "(0)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Verbindlichkeiten gegenüber Kreditinstituten",
+          "values": [
+            "16.572",
+            "5.092",
+            "11.480",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "(20.414)",
+            "(3.842)",
+            "(16.572)",
+            "(0)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Erhaltene Anzahlungen auf Bestellungen",
+          "values": [
+            "5",
+            "5",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "(0)",
+            "(0)",
+            "(0)",
+            "(0)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "15.090",
+            "9.955",
+            "5.135",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "(10.531)",
+            "(8.835)",
+            "(1.696)",
+            "(0)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Verbindlichkeiten gegenüber Gesellschaftern",
+          "values": [
+            "988",
+            "0",
+            "988",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "(1.016)",
+            "(25)",
+            "(991)",
+            "(0)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6. Verbindlichkeiten gegenüber assoziierten Unternehmen",
+          "values": [
+            "312",
+            "312",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "(785)",
+            "(785)",
+            "(0)",
+            "(0)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7. Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "(186)",
+            "(186)",
+            "(0)",
+            "(0)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8. Sonstige Verbindlichkeiten",
+          "values": [
+            "8.510",
+            "8.510",
+            "0",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "",
+        "Gesamtbetrag",
+        "",
+        "davon mit einer Restlaufzeit von",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "TEUR",
+            "bis zu 1 Jahr TEUR",
+            "über 1 Jahr TEUR",
+            "davon über 5 Jahre TEUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "(9.789)",
+            "(9.789)",
+            "(0)",
+            "(0)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "59.677",
+            "23.874",
+            "35.803",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(60.921)",
+            "(23.462)",
+            "(37.459)",
+            "(0)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Art der Sicherheit",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "gesicherte Beträge",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "TEUR",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Anleihen",
+          "values": [
+            "",
+            "0",
+            "",
+            "/."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Verbindlichkeiten gegenüber Kreditinstituten",
+          "values": [
+            "",
+            "16.572",
+            "Abtretung künftiger Transfererlöse, Zahlung einer Kaution TEUR 500",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Erhaltene Anzahlungen auf Bestellungen",
+          "values": [
+            "",
+            "0",
+            "",
+            "/."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "",
+            "0",
+            "",
+            "/."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Verbindlichkeiten gegenüber Gesellschaftern",
+          "values": [
+            "",
+            "0",
+            "",
+            "/."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6. Verbindlichkeiten gegenüber assoziierten Unternehmen",
+          "values": [
+            "",
+            "0",
+            "",
+            "/."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7. Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht",
+          "values": [
+            "",
+            "0",
+            "",
+            "/."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8. Sonstige Verbindlichkeiten",
+          "values": [
+            "",
+            "0",
+            "",
+            "/."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "16.572",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 21,
+    "results": [
+      {
+        "label": "1. Umsatzerlöse",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1. Umsatzerlöse",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2. Sonstige betriebliche Erträge",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Sonstige betriebliche Erträge",
+        "similarity": 100
+      },
+      {
+        "label": "2. Sonstige betriebliche Erträge",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Sonstige betriebliche Aufwendungen",
+        "similarity": 50
+      },
+      {
+        "label": "3. Materialaufwand",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "3. Materialaufwand",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Materialaufwand",
+        "similarity": 100
+      },
+      {
+        "label": "a) Aufwendungen für Roh-, Hilfs- und Betriebsstoffe und bezogene Waren",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "a) Aufwendungen für Roh-, Hilfs- und Betriebsstoffe und bezogene Waren",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "b) Aufwendungen für bezogene Leistungen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "b) Aufwendungen für bezogene Leistungen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "4. Personalaufwand",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "4. Personalaufwand",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Personalaufwand",
+        "similarity": 100
+      },
+      {
+        "label": "a) Löhne und Gehälter",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "a) Löhne und Gehälter",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "b) Soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "b) Soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "I. Immaterielle Vermögensgegenstände",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "I. Immaterielle Vermögensgegenstände",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2. Geleistete Anzahlungen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2. Geleistete Anzahlungen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "II. Sachanlagen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "II. Sachanlagen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich Bauten auf fremden Grundstücken",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich Bauten auf fremden Grundstücken",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "3. Geleistete Anzahlungen und Anlagen im Bau",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "3. Geleistete Anzahlungen und Anlagen im Bau",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "III. Finanzanlagen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "III. Finanzanlagen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1. Beteiligungen an assoziierten Unternehmen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1. Beteiligungen an assoziierten Unternehmen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2. Beteiligungen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2. Beteiligungen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Summe Anlagevermögen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Summe Anlagevermögen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Abschreibungen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Abschreibungen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "de",
+    "query": "Werder Bremen",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

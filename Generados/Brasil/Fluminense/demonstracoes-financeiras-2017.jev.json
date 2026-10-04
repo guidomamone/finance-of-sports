@@ -1,0 +1,125 @@
+{
+ "md": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2017.md",
+ "generatedAt": "2026-09-30T22:48:26.717Z",
+ "rubrosHuella": "0d6230b9a8b606ddf86b7cf3317d8480965a118e",
+ "rubros": [
+  {
+   "label": "Custos e despesas operacionais",
+   "lado": "expense",
+   "page": 39,
+   "section": "A apresentação do resultado operacional por segmento está indicada a seguir: / 31 de dezembro de 2017 / Futebol Clube Social e / (profissional e Esportes / amador) olímpicos Outros (*) Total",
+   "choice": "admin_general_expense",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Custos e despesas operacionais (237.571) (20.630) (1.167) 2437",
+   "lado": "expense",
+   "page": 17,
+   "section": "direito econômico do / \"Write-off\" de atleta Diego Souza, / gastos Estorno amortização líquido de / Originalmente Provisão para  capitalizados - de direito econômico amortização / apresentado contingências Flu Samorin superavaliada (Nota 24.4) Reapresentado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.31,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 17,
+   "section": "direito econômico do / \"Write-off\" de atleta Diego Souza, / gastos Estorno amortização líquido de / Originalmente Provisão para  capitalizados - de direito econômico amortização / apresentado contingências Flu Samorin superavaliada (Nota 24.4) Reapresentado",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas (despesas) financeiras, líquidas",
+   "lado": "expense",
+   "page": 17,
+   "section": "direito econômico do / \"Write-off\" de atleta Diego Souza, / gastos Estorno amortização líquido de / Originalmente Provisão para  capitalizados - de direito econômico amortização / apresentado contingências Flu Samorin superavaliada (Nota 24.4) Reapresentado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos detransmissão",
+   "lado": "revenue",
+   "page": 36,
+   "section": "17.1.1 Futebol / 31 de 31 de / dezembro de dezembro de / 2017 2016 / Receita bruta com Futebol",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínio",
+   "lado": "revenue",
+   "page": 36,
+   "section": "17.1.1 Futebol / 31 de 31 de / dezembro de dezembro de / 2017 2016 / Receita bruta com Futebol",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteria de jogos",
+   "lado": "revenue",
+   "page": 36,
+   "section": "17.1.1 Futebol / 31 de 31 de / dezembro de dezembro de / 2017 2016 / Receita bruta com Futebol",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Programa sócio-torcedor",
+   "lado": "revenue",
+   "page": 36,
+   "section": "17.1.1 Futebol / 31 de 31 de / dezembro de dezembro de / 2017 2016 / Receita bruta com Futebol",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas financeiras",
+   "lado": "revenue",
+   "page": 17,
+   "section": "direito econômico do / \"Write-off\" de atleta Diego Souza, / gastos Estorno amortização líquido de / Originalmente Provisão para  capitalizados - de direito econômico amortização / apresentado contingências Flu Samorin superavaliada (Nota 24.4) Reapresentado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Receita operacional líquida",
+   "lado": "revenue",
+   "page": 17,
+   "section": "direito econômico do / \"Write-off\" de atleta Diego Souza, / gastos Estorno amortização líquido de / Originalmente Provisão para  capitalizados - de direito econômico amortização / apresentado contingências Flu Samorin superavaliada (Nota 24.4) Reapresentado",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1217
+  }
+ ]
+}

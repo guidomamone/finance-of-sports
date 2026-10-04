@@ -1,0 +1,1133 @@
+{
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2020.md",
+ "generatedAt": "2026-09-30T04:27:39.002Z",
+ "rubros": [
+  {
+   "label": "EXCEDENTES BRUTOS $ 5.403.429 $",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 835
+  },
+  {
+   "label": "Otros ingresos 16 $ 5.553 $",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "SUPERÁVIT / (DEFICIT) ANTES DE IMPUESTO DE RENTA -$ 424.049 -$",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Gastos de administracion 14 -$ 220.040 -$",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Ingresos financieros 18 $ 39 $",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Otros gastos 17 -$ 60.225 -$",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Costos financieros 19 -$ 39.733 -$",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Gastos de ventas 15 -$ 5.513.072 -$",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "SUPERÁVIT / (DEFICIT) NETO DEL EJERCICIO -$ 424.049 -$",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.94
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Ingreso (gasto) por impuestos $ - -$",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUB ATLETICO BUCARAMANGA S.A. / ESTADO DE RESULTADOS INDIVIDUAL / POR FUNCION DEL GASTO / NOTA",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Juzgado 1 laboral Circuito Bucaramanga, proceso # 68001310500120120030602 $",
+   "lado": "revenue",
+   "page": 21,
+   "section": "mes. / y se pueda hacer uso de estos recursos. / (c) Depositos Judiciales: / Concepto                            31 de diciembre de 2020 / (c) Depositos Judiciales",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 903
+  },
+  {
+   "label": "Arrendamientos por pagar $",
+   "lado": "expense",
+   "page": 26,
+   "section": "(b) Costos y gastos por pagar / 31 de diciembre de / Concepto / 2020 / (b) Costos y gastos por pagar",
+   "choice": "admin_general_expense",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Juzgado 2 laboral Circuito Bucaramanga, proceso # 68001310500220090017900 $",
+   "lado": "revenue",
+   "page": 21,
+   "section": "mes. / y se pueda hacer uso de estos recursos. / (c) Depositos Judiciales: / Concepto                            31 de diciembre de 2020 / (c) Depositos Judiciales",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 903
+  },
+  {
+   "label": "Taquilla venta de boleteria $ 283.367 $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1093
+  },
+  {
+   "label": "Venta y préstamo de derechos deportivos $ - $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Derechos economicos por pagar $",
+   "lado": "expense",
+   "page": 26,
+   "section": "(b) Costos y gastos por pagar / 31 de diciembre de / Concepto / 2020 / (b) Costos y gastos por pagar",
+   "choice": "player_amortisation",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "player_amortisation",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Publicidad y propaganda $ 278.417 $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Patrocinios $ 1.570.040 $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Reclamaciones mecanismo de solidaridad $ - $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "choice": "player_sales",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "player_sales",
+     0.95
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "youth_football",
+     0.01
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Derechos de televisión $ 2.294.617 $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Gastos de personal (a) $ 150.678 $",
+   "lado": "expense",
+   "page": 33,
+   "section": "NOTA 14 – GASTOS DE ADMINISTACION",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "wages_squad",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Actividades conexas (a) $ 976.989 $",
+   "lado": "revenue",
+   "page": 32,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Sueldos de administracion $",
+   "lado": "expense",
+   "page": 33,
+   "section": "(a) Gastos de personal / 31 de diciembre de / Concepto / 2020 / (a) Gastos de personal",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "wages_squad",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Honorarios $ 20.280 $",
+   "lado": "expense",
+   "page": 33,
+   "section": "NOTA 14 – GASTOS DE ADMINISTACION",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Auxilio de transporte $",
+   "lado": null,
+   "page": 36,
+   "section": "(a) Gastos de personal de ventas / 31 de diciembre de / Concepto / 2020 / (a) Gastos de personal",
+   "choice": "match_organisation_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "competition_bonus",
+     0.1
+    ]
+   ],
+   "tokens": 1509
+  },
+  {
+   "label": "Otros Auxilios $",
+   "lado": "expense",
+   "page": 33,
+   "section": "(a) Gastos de personal / 31 de diciembre de / Concepto / 2020 / (a) Gastos de personal",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0.03
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Cesantias $",
+   "lado": "expense",
+   "page": 33,
+   "section": "(a) Gastos de personal / 31 de diciembre de / Concepto / 2020 / (a) Gastos de personal",
+   "choice": "wages_squad",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "wages_squad",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 819
+  },
+  {
+   "label": "Arrendamientos $ 88.574 $",
+   "lado": null,
+   "page": 35,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "match_organisation_expense",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "other_income",
+     0.13
+    ]
+   ],
+   "tokens": 1614
+  },
+  {
+   "label": "Impuestos (b) $ 29.469 $",
+   "lado": null,
+   "page": 35,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1476
+  },
+  {
+   "label": "Contribuciones y afiliaciones $ 5.391 $",
+   "lado": null,
+   "page": 35,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1532
+  },
+  {
+   "label": "Servicios (c) $ 163.046 $",
+   "lado": null,
+   "page": 35,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "match_organisation_expense",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.24000000000000002
+    ]
+   ],
+   "tokens": 1474
+  },
+  {
+   "label": "Gastos legales $ 13.598 $",
+   "lado": null,
+   "page": 35,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1484
+  },
+  {
+   "label": "Seguros $ 15.935 $",
+   "lado": null,
+   "page": 35,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1458
+  },
+  {
+   "label": "Gastos de viaje (d) $ 125.603 $",
+   "lado": null,
+   "page": 35,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1471
+  },
+  {
+   "label": "Mantenimiento y reparación $ 11.506 $",
+   "lado": null,
+   "page": 35,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1467
+  },
+  {
+   "label": "Depreciaciones $ 35.728 $",
+   "lado": null,
+   "page": 35,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1468
+  },
+  {
+   "label": "Sueldos Ordinarios $",
+   "lado": null,
+   "page": 36,
+   "section": "(a) Gastos de personal de ventas / 31 de diciembre de / Concepto / 2020 / (a) Gastos de personal",
+   "choice": "wages_squad",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "wages_squad",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "Salario integral $",
+   "lado": null,
+   "page": 36,
+   "section": "(a) Gastos de personal de ventas / 31 de diciembre de / Concepto / 2020 / (a) Gastos de personal",
+   "choice": "wages_squad",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "wages_squad",
+     0.47000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1449
+  },
+  {
+   "label": "Auxilios de vivienda y sostenimiento $",
+   "lado": null,
+   "page": 36,
+   "section": "(a) Gastos de personal de ventas / 31 de diciembre de / Concepto / 2020 / (a) Gastos de personal",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "wages_squad",
+     0.06
+    ],
+    [
+     "broadcasting",
+     0.02
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "Otros ingresos $ 5.553 $",
+   "lado": "revenue",
+   "page": 38,
+   "section": "NOTA 16 – OTROS INGRESOS",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Impuestos asumidos $ 14.472 $",
+   "lado": "expense",
+   "page": 38,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "choice": "exceptional_items",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "exceptional_items",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Pasajes Aereos $",
+   "lado": "expense",
+   "page": 37,
+   "section": "(d) Gastos de viaje / 31 de diciembre de / Concepto / 2020 / (d) Gastos de viaje",
+   "choice": "match_organisation_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 821
+  },
+  {
+   "label": "Demandas laborales $ - $",
+   "lado": "expense",
+   "page": 38,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.49
+    ],
+    [
+     "exceptional_items",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.23
+    ]
+   ],
+   "tokens": 962
+  },
+  {
+   "label": "Indemnizaciones $ - $",
+   "lado": "expense",
+   "page": 38,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 916
+  },
+  {
+   "label": "Multas sanciones y litigios $ 44.515 $",
+   "lado": "expense",
+   "page": 38,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Otros gastos $ 1.238 $",
+   "lado": "expense",
+   "page": 38,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Alojamiento y manuntencion $",
+   "lado": "expense",
+   "page": 37,
+   "section": "(d) Gastos de viaje / 31 de diciembre de / Concepto / 2020 / (d) Gastos de viaje",
+   "choice": "match_organisation_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 882
+  },
+  {
+   "label": "Ingresos financieros $ 39 $",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOTA 18 – INGRESOS FINANCIEROS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Bancarios $ 39.733 $",
+   "lado": "expense",
+   "page": 39,
+   "section": "NOTA 19 – COSTOS FINANCIEROS",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1050
+  }
+ ]
+}

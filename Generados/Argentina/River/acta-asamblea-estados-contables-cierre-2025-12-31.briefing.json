@@ -1,0 +1,83 @@
+{
+  "club": "river",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/River/acta-asamblea-estados-contables-cierre-2025-12-31.md",
+  "generatedAt": "2026-09-30T21:51:04.341Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 11,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 7,
+      "section": "1.7 Recomendaciones / 1.8 Índices y análisis",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Índice de endeudamiento = Pasivo / Patrimonio Neto = 299.593 / 421.299 =",
+          "values": [
+            "0,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Índice de solvencia = Patrimonio Neto / Pasivo = 421.299 / 299.593 =",
+          "values": [
+            "1,41"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "*Análisis:* / *b) Liquidez y capital de trabajo*",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Liquidez corriente = Activo corriente / Pasivo corriente = 90.020.860.109 / 200.818.679.289 =",
+          "values": [
+            "0,45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Capital de trabajo = Activo corriente - Pasivo corriente =",
+          "values": [
+            "($110.797.819.180)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "ar",
+    "query": "River Plate",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 7,
+      "line": "- Mantener especial atención sobre la evolución de las variables macroeconómicas, en particular aquellas vinculadas al tipo de cambio y a la inflación, considerando su potencial impacto sobre las partidas patrimoniales y de resultados."
+    },
+    {
+      "page": 9,
+      "line": "**3. Análisis de Recursos y Gastos Ordinarios (tipo de cambio tomado U$S1 = $1400)**"
+    }
+  ],
+  "warnings": []
+}

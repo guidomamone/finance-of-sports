@@ -1,0 +1,112 @@
+{
+ "md": "Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2024.md",
+ "pdf": "Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2024.pdf",
+ "club": "aguilas-doradas",
+ "year": 2024,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:57:38.633Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 15,
+  "notasUsadas": []
+ },
+ "ladoConocido": 2,
+ "rubros": [
+  {
+   "label": "Actividades deportivas",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    26735985.527
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Taquilla-venta de boletería",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    337653
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Venta derechos deportivos-jugadores",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    12110170.057
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    308044
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Dimayor-reintegro de costos y gastos",
+   "lado": "expense",
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    7038294.689
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Dimayor ingresos diferidos",
+   "lado": "revenue",
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    239521.164
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Federación colombiana de futbol",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    533337
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Patrocinios",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    4287179.487
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Participación en eventos nacionales e internacionales",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    1881786.13
+   ],
+   "origen": "estado 0"
+  }
+ ]
+}

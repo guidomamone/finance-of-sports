@@ -1,0 +1,959 @@
+{
+ "md": "Clubes/Colombia/Envigado/estados-financieros-2017.md",
+ "generatedAt": "2026-09-30T22:48:56.615Z",
+ "rubrosHuella": "1a207e757a0e7b2e3b21b426ae417226f5dae8e2",
+ "rubros": [
+  {
+   "label": "SUELDOS",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "wages_squad",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "BASICO APRENDIZ",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "VIATICOS",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "match_organisation_expense",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "AUXILIO DE TRANSPORTE",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "match_organisation_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "CESANTIAS",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "wages_squad",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "INTERESES A LAS CESANTIAS",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "PRIMA DE SERVICIOS",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "VACACIONES",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "BONIFICACIONES",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "wages_squad",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "INDEMNIZACIONES LABORALES",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "CAPACITACION AL PERSONAL",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "admin_general_expense",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS DEPORTIVOS Y RECREACION",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "APORTES A E.P.S",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "APORTES A FONDOS Y PENSIONES",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "CAJA DE COMPENSACION",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "APORTES AL I.C.B.F",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "APORTES AL SENA",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "other_expenses",
+   "confidence": 0.34,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS MEDICOS Y DROGAS",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "OTROS",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "REVISORIA FISCAL",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "ASESORIA JURIDICA",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "ASESORIA FINANCIERA",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "TAQUILLA",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "ABONADOS",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "season_tickets",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "ESCUELAS DE FUTBOL",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "youth_football",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "PRESTAMO DE DERECHOS DEPORTIVO",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "CONTRIBUCION DE SOLIDARIDAD",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "player_sales",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "DERECHOS TELEVISION ABIERTA",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "DERECHOS TELEVISION INTERNACIONAL",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "DOTACION Y SUMINISTRO ATRABAJA",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 810
+  },
+  {
+   "label": "ARBITRAJE",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "competition_bonus",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "FEDERACION COLOMBIANA DE FUTBOL",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "competition_bonus",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "CUOTAS DE SOSTENIMIENTO",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "PARTICIPACION EN EVENTOS NACIONALES",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "VENTA DE ARTICULOS DEPORTIVOS",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "ENTRETENIMIENTO Y ESPARCIMIENTO",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "SALARIO INTEGRAL",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "wages_squad",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "INTERESES SOBRE CESANTIAS",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "APORTES ADMINIS DE RIESGOS PRO",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "match_organisation_expense",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.45
+    ],
+    [
+     "admin_general_expense",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 870
+  },
+  {
+   "label": "DERECHOS TELEVISION ABIERT RCN",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "VENTA DE DERECHOS DEPORTIVOS -",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "DE CLIENTES",
+   "lado": "revenue",
+   "page": 17,
+   "section": "16. Anticipos y avances recibidos e ingresos para terceros",
+   "choice": "season_tickets",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "season_tickets",
+     0.51
+    ],
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "matchday_competition",
+     0.07
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "DERECHOS TELEVISION WIN SPORTS",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "GASTOS BANCARIOS",
+   "lado": "expense",
+   "page": 28,
+   "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "COMISIONES",
+   "lado": "expense",
+   "page": 28,
+   "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "INTERESES",
+   "lado": "expense",
+   "page": 28,
+   "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "DIFERENCIA EN CAMBIO",
+   "lado": "expense",
+   "page": 28,
+   "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "DESCUENTOS COMERCIALES",
+   "lado": "expense",
+   "page": 28,
+   "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "DERECHOS TELEVISION CERRADA",
+   "lado": "revenue",
+   "page": 21,
+   "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "COSTAS Y PROCESOS JUDICIALES",
+   "lado": "expense",
+   "page": 28,
+   "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "IMPUESTOS ASUMIDOS",
+   "lado": "expense",
+   "page": 28,
+   "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+   "choice": "exceptional_items",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "DEMANDAS LABORALES",
+   "lado": "expense",
+   "page": 28,
+   "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "MULTAS SANCIONES Y LITIGIOS",
+   "lado": "expense",
+   "page": 28,
+   "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "DONACIONES",
+   "lado": "expense",
+   "page": 28,
+   "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "DOTACION Y SUMINISTRO A TRABAJ",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "lump_football_operations_expense",
+     0.44
+    ],
+    [
+     "wages_squad",
+     0.03
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "APORTES ADMINISTRADORA DE RIES",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "admin_general_expense",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "match_organisation_expense",
+     0.27
+    ]
+   ],
+   "tokens": 859
+  },
+  {
+   "label": "GASTOS DEPORTIVOS Y DE RECREAC",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ],
+    [
+     "match_organisation_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "FONDO DE PENSIONES Y/O CESANTI",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0.41
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "APORTES AL I.S.S",
+   "lado": "expense",
+   "page": 26,
+   "section": "GASTOS EQUIPO PROFESIONAL",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "match_organisation_expense",
+     0.1
+    ]
+   ],
+   "tokens": 855
+  },
+  {
+   "label": "AVALUOS",
+   "lado": "expense",
+   "page": 24,
+   "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "depreciation",
+     0.06
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "APROVECHAMIENTOS",
+   "lado": "revenue",
+   "page": 23,
+   "section": "20. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "VENTA DE DERECHOS DEPORTIVOS",
+   "lado": "revenue",
+   "page": 21,
+   "section": "VENTA DE DERECHOS DEPORTIVOS",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "AJUSTE AL PESO",
+   "lado": "revenue",
+   "page": 23,
+   "section": "20. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 949
+  },
+  {
+   "label": "GRAVAMEN A LOS MOVIMIENTOS F",
+   "lado": "expense",
+   "page": 28,
+   "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 981
+  },
+  {
+   "label": "INTERES",
+   "lado": "revenue",
+   "page": 23,
+   "section": "20. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 821
+  },
+  {
+   "label": "REINTEGRO DE OTROS COSTOS Y GASTOS",
+   "lado": "expense",
+   "page": 23,
+   "section": "20. Otros ingresos",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "DESCTOS COMERCIALES CONDICIONA",
+   "lado": "revenue",
+   "page": 23,
+   "section": "20. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "sponsorship_commercial",
+     0.12
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 922
+  },
+  {
+   "label": "COSTO AMORTIZADO",
+   "lado": "expense",
+   "page": 24,
+   "section": "21. Ingresos Financieros",
+   "choice": "player_amortisation",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "player_amortisation",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "other_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "POR INCUMPLIMIENTO DE CONTRATO",
+   "lado": "revenue",
+   "page": 23,
+   "section": "20. Otros ingresos",
+   "choice": "player_sales",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "player_sales",
+     0.77
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "POR INCAPACIDADES I.S.S.",
+   "lado": "revenue",
+   "page": 23,
+   "section": "20. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "broadcasting",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1013
+  }
+ ]
+}

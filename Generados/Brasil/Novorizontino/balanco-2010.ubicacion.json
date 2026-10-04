@@ -1,0 +1,63 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2010.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2010.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T03:08:26.611Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    3,
+    16
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    18,
+    29
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    33,
+    39
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 1,
+   "lineas": [
+    53,
+    61
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 2,
+   "lineas": [
+    65,
+    76
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Balanço Patrimonial encerrado em 31/12/2010 (em reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "31/12/2010",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "El bloque b1 contiene la Demonstração do Resultado del ejercicio cerrado el 31/12/2010, a pesar de que su encabezado dice 'Balanço Patrimonial'. Está expresada en reais. b2 es el balance (activo) y b3/b4 son firmas y CPF, por lo que no se eligen. No se ve columna del año anterior. Entidad individual."
+}

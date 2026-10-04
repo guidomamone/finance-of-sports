@@ -1,0 +1,647 @@
+{
+ "md": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-consolidato.md",
+ "pdf": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-consolidato.pdf",
+ "club": "genoa",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:04:47.626Z",
+ "tieOuts": {
+  "cierran": 137,
+  "noCierran": 37
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "5 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "32 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "25 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 78,
+  "notasUsadas": []
+ },
+ "ladoConocido": 50,
+ "rubros": [
+  {
+   "label": "Contributi in conto esercizio",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "values": [
+    29918.278
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "Proventi da sponsorizzazioni",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "values": [
+    3293.644
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "Proventi pubblicitari",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "values": [
+    1637.5
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "Proventi commerciali e royalties",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "values": [
+    1272.351
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "* Proventi televisivi",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "values": [
+    11094.754
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "Ricavi da cessione temporanea prestazioni calciatori (prestiti)",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "values": [
+    742.541
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori",
+   "lado": null,
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "values": [
+    13122.835
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "* Premi di valorizzazione calciatori",
+   "lado": null,
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "values": [
+    9235.531
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "Altri ricavi e proventi",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "values": [
+    15376.998
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "* Gare campionato",
+   "lado": null,
+   "page": 71,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## CONTO ECONOMICO / ### Valore della produzione",
+   "values": [
+    1.658958
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "* Gare coppa Italia",
+   "lado": null,
+   "page": 71,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## CONTO ECONOMICO / ### Valore della produzione",
+   "values": [
+    0.114176
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "* Gare coppa Italia",
+   "lado": null,
+   "page": 71,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## CONTO ECONOMICO / ### Valore della produzione",
+   "values": [
+    0.062983
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Abbonamenti",
+   "lado": null,
+   "page": 71,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## CONTO ECONOMICO / ### Valore della produzione",
+   "values": [
+    1.274388
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "VALORE DELLA PRODUZIONE",
+   "lado": "revenue",
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "values": [
+    88.804936
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "COSTI OPERATIVI",
+   "lado": "expense",
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "values": [
+    -131.592382
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "AMMORTAMENTI E SVALUTAZIONI",
+   "lado": null,
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "values": [
+    -23.297497
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "PROVENTI ONERI FINANZIARI",
+   "lado": null,
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "values": [
+    -5.390641
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "IMPOSTE DI ESERCIZIO",
+   "lado": "expense",
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "values": [
+    9.214794
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Costo per materie consumo/merci",
+   "lado": "expense",
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "values": [
+    0.486954
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Costo per servizi",
+   "lado": "expense",
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "values": [
+    16.494707
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Godimento beni di terzi",
+   "lado": null,
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "values": [
+    3.126125
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Costo per il personale",
+   "lado": "expense",
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "values": [
+    75.809408
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Ammortamento e svalutazioni",
+   "lado": null,
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "values": [
+    23.297497
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Accantonamenti per rischi",
+   "lado": null,
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "values": [
+    0.888653
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Variazione delle rimanenze",
+   "lado": null,
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "values": [
+    0.349732
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Oneri diversi di gestione",
+   "lado": "expense",
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "values": [
+    34.436804
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Spese varie organizzazione gare",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "values": [
+    1253.451
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Tasse iscrizioni gare",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "values": [
+    34
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Costi per acquisizione temporanea prestazioni calciatori",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "values": [
+    259.025
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Minusvalenze da cessione diritti pluriennali alle prestazioni dei calciatori",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "values": [
+    2590.025
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "* Costi valorizzazione calciatori",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "values": [
+    1973.275
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "* Contributo di solidarietà",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "values": [
+    1011.447
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "* Premio alla carriera ex art. 99 bis N.O.I.F.",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "values": [
+    155
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "* Spese, ammende e multe gare",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "values": [
+    142.087
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "* Oneri lega",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "values": [
+    3571.011
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "* Altri",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "values": [
+    15924.153
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Impianti e attrezzature Ferraris",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "values": [
+    0.149399
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Impianti e attrezzature Pio XII",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "values": [
+    0.750286
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Autovetture/automezzi",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "values": [
+    0.071317
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Macchine elettromeccaniche d'ufficio",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "values": [
+    0.32411
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Mobili e arredi",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "values": [
+    1.682027
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Macchinari Sanitari",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "values": [
+    0.233613
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Beni strumentali omaggio",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "values": [
+    0.002697
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Mobili e varie negozio",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "values": [
+    0.01795
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Macchine Agricole",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "values": [
+    0.063245
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Macchinari",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "values": [
+    0.0091
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Costi per tesserati",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "values": [
+    67.673
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "values": [
+    2189.785
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Costi specifici tecnici",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "values": [
+    3471.878
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Costi vitto, alloggio, locomozione gare",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "values": [
+    1954.217
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Servizio biglietteria, controllo ingressi",
+   "lado": "revenue",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "values": [
+    320.51
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Assicurative e previdenziali",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "values": [
+    377.552
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Amministrative, pubblicitarie e generali",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "values": [
+    7293.083
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Altri",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "values": [
+    820.009
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "Salari e stipendi",
+   "lado": "expense",
+   "page": 77,
+   "section": "# Costi per il personale",
+   "values": [
+    66.267455
+   ],
+   "origen": "estado 50"
+  },
+  {
+   "label": "Oneri sociali",
+   "lado": "expense",
+   "page": 77,
+   "section": "# Costi per il personale",
+   "values": [
+    3.239737
+   ],
+   "origen": "estado 50"
+  },
+  {
+   "label": "Trattamento di Fine Rapporto",
+   "lado": "expense",
+   "page": 77,
+   "section": "# Costi per il personale",
+   "values": [
+    0.317598
+   ],
+   "origen": "estado 50"
+  },
+  {
+   "label": "Diritti pluriennali alle prestazioni dei calciatori",
+   "lado": "expense",
+   "page": 52,
+   "section": "GENOA / GRUPPO ANTI-FESTIBALI CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "values": [
+    129358.528
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Diritto sportivo calciatori settore giovanile",
+   "lado": "expense",
+   "page": 52,
+   "section": "GENOA / GRUPPO ANTI-FESTIBALI CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "values": [
+    622.25
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Capitalizzazione costi vivaio",
+   "lado": "expense",
+   "page": 52,
+   "section": "GENOA / GRUPPO ANTI-FESTIBALI CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "values": [
+    20292.216
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Per imposte",
+   "lado": "expense",
+   "page": 64,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## Fondi per rischi e oneri",
+   "values": [
+    0.065576
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Altri",
+   "lado": "expense",
+   "page": 64,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## Fondi per rischi e oneri",
+   "values": [
+    5.839643
+   ],
+   "origen": "estado 32"
+  }
+ ]
+}

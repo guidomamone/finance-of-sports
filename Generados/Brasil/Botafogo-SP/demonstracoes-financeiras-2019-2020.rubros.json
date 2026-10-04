@@ -1,0 +1,146 @@
+{
+  "md": "Clubes/Brasil/Botafogo-SP/demonstracoes-financeiras-2019-2020.md",
+  "pdf": "Clubes/Brasil/Botafogo-SP/demonstracoes-financeiras-2019-2020.pdf",
+  "club": "botafogosp-br",
+  "year": 2020,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:51:44.002Z",
+  "tieOuts": {
+    "cierran": 4,
+    "noCierran": 1
+  },
+  "warnings": [
+    "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 11,
+    "notasUsadas": []
+  },
+  "ladoConocido": 10,
+  "rubros": [
+    {
+      "label": "Receita operacional líquida",
+      "lado": "revenue",
+      "page": 3,
+      "section": "Demonstração do resultado / Exercícios findos em 31 de dezembro de 2020 e de 2019 / Em milhares de reais / Nota   31/12/2020       31/12/2019 / (reapresentado)",
+      "values": [
+        15.14
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos operativos netos"
+    },
+    {
+      "label": "Custos com atletas, comissão técnica e jogos",
+      "lado": "expense",
+      "page": 3,
+      "section": "Demonstração do resultado / Exercícios findos em 31 de dezembro de 2020 e de 2019 / Em milhares de reais / Nota   31/12/2020       31/12/2019 / (reapresentado)",
+      "values": [
+        -16.704
+      ],
+      "origen": "estado 1",
+      "glosa": "Costes de jugadores, cuerpo técnico y partidos"
+    },
+    {
+      "label": "Receita operacional líquida 14.159 -",
+      "lado": "revenue",
+      "page": 14,
+      "section": "b.       Demonstração do resultado / 31/12/2019 / Anteriormente / apresentado       Ajustes       Reapresentado",
+      "values": [
+        14.159
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos operativos netos 14.159 -"
+    },
+    {
+      "label": "Custos com atletas, comissão técnica e jogos (19.405) -",
+      "lado": "expense",
+      "page": 14,
+      "section": "b.       Demonstração do resultado / 31/12/2019 / Anteriormente / apresentado       Ajustes       Reapresentado",
+      "values": [
+        -19.405
+      ],
+      "origen": "estado 8",
+      "glosa": "Costes de jugadores, cuerpo técnico y partidos (19.405) -"
+    },
+    {
+      "label": "financeiro (11.994)",
+      "lado": null,
+      "page": 14,
+      "section": "(6.748)          651             (6.097) / Resultado operacional antes do resultado",
+      "values": [
+        -11.343
+      ],
+      "origen": "estado 10",
+      "glosa": "Financiero (11.994)"
+    },
+    {
+      "label": "Marca 6.970 6.970 - -",
+      "lado": "expense",
+      "page": 27,
+      "section": "b       Movimentação do custo e amortização acumulada / Aquisição/ / Subscrição     31/12/2019      Aquisição         Baixas      31/12/2020 / Custo",
+      "values": [
+        0.00697
+      ],
+      "origen": "estado 17",
+      "glosa": "Marca 6.970 6.970 - -"
+    },
+    {
+      "label": "Direito de competição 5.030 5.030 - -",
+      "lado": "expense",
+      "page": 27,
+      "section": "b       Movimentação do custo e amortização acumulada / Aquisição/ / Subscrição     31/12/2019      Aquisição         Baixas      31/12/2020 / Custo",
+      "values": [
+        0.00503
+      ],
+      "origen": "estado 17",
+      "glosa": "Derechos de competición 5.030 5.030 - -"
+    },
+    {
+      "label": "Atletas em formação - - 1.694 -",
+      "lado": "expense",
+      "page": 27,
+      "section": "b       Movimentação do custo e amortização acumulada / Aquisição/ / Subscrição     31/12/2019      Aquisição         Baixas      31/12/2020 / Custo",
+      "values": [
+        0.001694
+      ],
+      "origen": "estado 17",
+      "glosa": "Jugadores en formación - - 1.694 -"
+    },
+    {
+      "label": "Cotas de participação (i)",
+      "lado": "revenue",
+      "page": 31,
+      "section": "16      Receita operacional líquida / 2020            2019 / Receita operacional bruta",
+      "values": [
+        12.38
+      ],
+      "origen": "estado 20",
+      "glosa": "Cuotas de participación (i)"
+    },
+    {
+      "label": "Patrocínios e publicidade (ii)",
+      "lado": "revenue",
+      "page": 31,
+      "section": "16      Receita operacional líquida / 2020            2019 / Receita operacional bruta",
+      "values": [
+        1.503
+      ],
+      "origen": "estado 20",
+      "glosa": "Patrocinios y publicidad (ii)"
+    },
+    {
+      "label": "Sócio torcedor (iii)",
+      "lado": "revenue",
+      "page": 31,
+      "section": "16      Receita operacional líquida / 2020            2019 / Receita operacional bruta",
+      "values": [
+        1.205
+      ],
+      "origen": "estado 20",
+      "glosa": "Socios abonados (iii)"
+    }
+  ]
+}

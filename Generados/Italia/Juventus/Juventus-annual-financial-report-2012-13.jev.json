@@ -1,0 +1,329 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2012-13.md",
+ "generatedAt": "2026-10-03T22:46:13.426Z",
+ "rubrosHuella": "731f756e818a27625c4b68fead583634fe347ea2",
+ "rubros": [
+  {
+   "label": "Ticket sales",
+   "lado": "revenue",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Purchase of materials, supplies and other consumables",
+   "lado": "expense",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Players' wages and technical staff costs",
+   "lado": "expense",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Other revenues",
+   "lado": "revenue",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Television and radio rights and media revenues",
+   "lado": "revenue",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "External services",
+   "lado": "expense",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 975
+  },
+  {
+   "label": "Revenues from players' registration rights",
+   "lado": "revenue",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Revenues from sponsorship and advertising",
+   "lado": "revenue",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Other personnel",
+   "lado": "expense",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 982
+  },
+  {
+   "label": "Expenses from players' registration rights",
+   "lado": "expense",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "player_amortisation",
+     0.19
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Amortisation and write-downs of players' registration rights",
+   "lado": "expense",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_amortisation",
+     0.98
+    ],
+    [
+     "player_impairment",
+     0.02
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Provisions and other write-downs/reverses and releases",
+   "lado": "expense",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_amortisation",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1088
+  },
+  {
+   "label": "Other expenses",
+   "lado": "expense",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Depreciation/amortisation of other tangible and intangible assets",
+   "lado": "expense",
+   "page": 79,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_amortisation",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1070
+  }
+ ]
+}

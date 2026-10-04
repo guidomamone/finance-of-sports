@@ -1,0 +1,115 @@
+{
+ "md": "Clubes/Brasil/Sport Recife/demonstracoes-financeiras-2020-e-2019.md",
+ "generatedAt": "2026-09-30T22:48:30.999Z",
+ "rubrosHuella": "7382fe21d27a13c0306a7076c661d8be184d7162",
+ "rubros": [
+  {
+   "label": "Juros e comissões bancárias",
+   "lado": "expense",
+   "page": 24,
+   "section": "Despesas financeiras",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras despesas financeiras",
+   "lado": "expense",
+   "page": 24,
+   "section": "Despesas financeiras",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Rendimentos de aplicação financeira",
+   "lado": "revenue",
+   "page": 24,
+   "section": "Patrocínios, Licenciamento de Uso de Marcas e Símbolos, Publicidade, Propaganda, / Transmissão de Espetáculos Desportivos, Loterias e Televisionamentos), à alíquota de 5%. / Resultado financeiro / 2020 2019 / Receitas financeiras",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras receitas financeiras",
+   "lado": "revenue",
+   "page": 24,
+   "section": "Patrocínios, Licenciamento de Uso de Marcas e Símbolos, Publicidade, Propaganda, / Transmissão de Espetáculos Desportivos, Loterias e Televisionamentos), à alíquota de 5%. / Resultado financeiro / 2020 2019 / Receitas financeiras",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Federação Pernambucana de Futebol",
+   "lado": "revenue",
+   "page": 23,
+   "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Aluguéis e Arrendamentos -",
+   "lado": "revenue",
+   "page": 23,
+   "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+   "choice": "stadium_other",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Mensalidades",
+   "lado": "revenue",
+   "page": 23,
+   "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+   "choice": "member_dues",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "12Vara - TRT",
+   "lado": "revenue",
+   "page": 23,
+   "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+   "choice": "competition_bonus",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "clube Internacional",
+   "lado": "revenue",
+   "page": 23,
+   "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Futebolcard",
+   "lado": "revenue",
+   "page": 23,
+   "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+   "choice": "other_income",
+   "confidence": 0.25,
+   "desdeCache": true
+  },
+  {
+   "label": "Dass Nordeste",
+   "lado": "revenue",
+   "page": 23,
+   "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+   "choice": "competition_bonus",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Francisco Brennand -",
+   "lado": "revenue",
+   "page": 23,
+   "section": "17. Receitas antecipadas / 2020 2019 / Copa do Brasil 990.000 250.000 / Confederação Brasileira de Futebol - CBF 309.000 - / IBGM - Instituto Brasileiro de Gestão - -",
+   "choice": "competition_bonus",
+   "confidence": 0.46,
+   "desdeCache": true
+  }
+ ]
+}

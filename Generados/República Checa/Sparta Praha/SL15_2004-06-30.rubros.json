@@ -1,0 +1,44 @@
+{
+ "md": "Clubes/República Checa/Sparta Praha/SL15_2004-06-30.md",
+ "pdf": "Clubes/República Checa/Sparta Praha/SL15_2004-06-30.pdf",
+ "club": "sparta-praha",
+ "year": 2004,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:52.806Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 2,
+  "notasUsadas": []
+ },
+ "ladoConocido": 0,
+ "rubros": [
+  {
+   "label": "Pohledávky (31)",
+   "lado": null,
+   "page": 25,
+   "section": "# 2.4. Odpisové plány a doba odepisování / # 2.5 Inventarizace / # 2.6. Přepočet cizí měny / # C) Ostatní skutečnosti a vybrané údaje v rozvahy a výkazu zisku a ztráty / # 1. Pohledávky a závazky a tvorba opravných položek rozdělit pohledávky a závazky",
+   "values": [
+    0.072528
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Závazky (32)",
+   "lado": null,
+   "page": 25,
+   "section": "# 2.4. Odpisové plány a doba odepisování / # 2.5 Inventarizace / # 2.6. Přepočet cizí měny / # C) Ostatní skutečnosti a vybrané údaje v rozvahy a výkazu zisku a ztráty / # 1. Pohledávky a závazky a tvorba opravných položek rozdělit pohledávky a závazky",
+   "values": [
+    0.148533
+   ],
+   "origen": "estado 15"
+  }
+ ]
+}

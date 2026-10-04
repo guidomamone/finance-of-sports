@@ -1,0 +1,140 @@
+{
+ "pdf": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2009.pdf",
+ "generado": "2026-10-01T19:30:40.902Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el documento no está listo-para-jev (estado pendiente-segunda-voz, jev -)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "alta:reportType",
+   "motivo": "¿El documento trae un estado de resultados (o de recursos y gastos) anual cargable, o hay que buscar los estados en otro documento del club?"
+  },
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel, Televisión, Estadio, Cuotas sociales. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  },
+  {
+   "etapa": "tie-out",
+   "motivo": "ninguna fila de ingresos con categoría aceptable"
+  }
+ ],
+ "avisos": [
+  "no se encontró el resultado del ejercicio impreso: officialPAT queda null (audit.js P2 balance-sin-pat)",
+  "ninguna fila de gastos: officialTotalExpenses queda null (el sitio muestra \"sin dato\")",
+  "fx: Regla #0: antes de cargar, confirmar en el documento que NO declara su propio tipo de cambio de cierre; si lo declara, gana ese sobre el de mercado de abajo"
+ ],
+ "ejercicio": {
+  "clubId": "catolica-cl",
+  "year": 2009,
+  "cierre": "2009-12-31",
+  "perimetro": "individual",
+  "revenueLines": [],
+  "expenseLines": [],
+  "fiscalYearMeta": {
+   "currency": "CLP",
+   "fxRef": "CLP@2009-12-31",
+   "sourceId": "catolica-cl-estados-financieros-2009",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0,
+   "tax": 194.459,
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": null,
+   "officialTotalExpenses": null,
+   "officialPAT": null
+  },
+  "source": {
+   "id": "catolica-cl-estados-financieros-2009",
+   "clubId": "catolica-cl",
+   "title": "Cruzados S.A.D.P. — estados-financieros-2009 (ejercicio 2009)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-01) desde la transcripción Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2009.md; categorías del pipeline (Jev/Claude). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2009.md",
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2009-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "catolica-cl",
+ "year": 2009,
+ "seleccion": {
+  "filas": 1,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Impuesto a la renta",
+   "page": null,
+   "native": 194.459,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Salarios del plantel"
+  },
+  {
+   "categoria": "Televisión"
+  },
+  {
+   "categoria": "Estadio"
+  },
+  {
+   "categoria": "Cuotas sociales"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación (ninguna lectura cerró el resultado)"
+ },
+ "totales": {
+  "revSum": 0,
+  "expSum": 0,
+  "officialTotalRevenue": null,
+  "officialTotalExpenses": null,
+  "officialPAT": null,
+  "verificacion": {}
+ },
+ "fxCloseNuevo": {
+  "key": "CLP@2009-12-31",
+  "fx": 507.1,
+  "source": "market_close",
+  "label": "Dólar observado (Banco Central de Chile, publicado por el SII), última rueda hábil antes del cierre (2010-01-04, 2009-12-31 no es día hábil)"
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "sin caché de rosters para cl (tools/club-league-reference/cl.json)",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó, P3 liga-sin-verificar); para resolverla: resolve-wikipedia-season-page.mjs + fetch-club-league-reference.mjs (club-or-year-onboarding §17)"
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 5,
+  "lineasIngreso": 0,
+  "lineasGasto": 0,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Bélgica/Sint-Truiden/jaarrekening-2017-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/Sint-Truiden/jaarrekening-2017-06-30-individual.pdf",
+ "club": "sinttruiden-be",
+ "year": 2017,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:55:32.774Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 60.000 464.803 / Uitgestelde belastingen 168",
+   "values": [
+    11.847954
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Schulden op meer dan één jaar 6.3 |",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 60.000 464.803 / Uitgestelde belastingen 168",
+   "values": [
+    8.473477
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 60.000 464.803 / Uitgestelde belastingen 168",
+   "values": [
+    0.249264
+   ],
+   "origen": "estado 5"
+  }
+ ]
+}

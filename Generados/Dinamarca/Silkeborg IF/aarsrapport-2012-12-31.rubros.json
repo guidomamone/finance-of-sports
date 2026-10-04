@@ -1,0 +1,154 @@
+{
+  "md": "Clubes/Dinamarca/Silkeborg IF/aarsrapport-2012-12-31.md",
+  "pdf": "Clubes/Dinamarca/Silkeborg IF/aarsrapport-2012-12-31.pdf",
+  "club": "silkeborg-dk",
+  "year": 2012,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:00:03.710Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 12,
+    "notasUsadas": []
+  },
+  "ladoConocido": 2,
+  "rubros": [
+    {
+      "label": "Salgsrettighed 3 6.365.455 —",
+      "lado": null,
+      "page": 10,
+      "section": "Investeringsselskabet af 21. december 2001 A/S 8 / Balance pr. 31.12.2012 / 2012 2011 / Note kr. kr.",
+      "values": [
+        7426.364
+      ],
+      "origen": "estado 2",
+      "glosa": "Derechos de venta 3 6.365.455 —"
+    },
+    {
+      "label": "Immaterielle anlægsaktiver",
+      "lado": null,
+      "page": 10,
+      "section": "Investeringsselskabet af 21. december 2001 A/S 8 / Balance pr. 31.12.2012 / 2012 2011 / Note kr. kr.",
+      "values": [
+        6365.455
+      ],
+      "origen": "estado 2",
+      "glosa": "Activos intangibles"
+    },
+    {
+      "label": "Udskudte skatteaktiver",
+      "lado": null,
+      "page": 10,
+      "section": "Investeringsselskabet af 21. december 2001 A/S 8 / Balance pr. 31.12.2012 / 2012 2011 / Note kr. kr.",
+      "values": [
+        500
+      ],
+      "origen": "estado 2",
+      "glosa": "Activos por impuestos diferidos"
+    },
+    {
+      "label": "Finansielle anlægsaktiver",
+      "lado": null,
+      "page": 10,
+      "section": "Investeringsselskabet af 21. december 2001 A/S 8 / Balance pr. 31.12.2012 / 2012 2011 / Note kr. kr.",
+      "values": [
+        500
+      ],
+      "origen": "estado 2",
+      "glosa": "Activos financieros"
+    },
+    {
+      "label": "Anlægsaktiver 6.865.455 —",
+      "lado": null,
+      "page": 10,
+      "section": "Investeringsselskabet af 21. december 2001 A/S 8 / Balance pr. 31.12.2012 / 2012 2011 / Note kr. kr.",
+      "values": [
+        7999.364
+      ],
+      "origen": "estado 2",
+      "glosa": "Activos no corrientes 6.865.455 —"
+    },
+    {
+      "label": "Kostpris",
+      "lado": null,
+      "page": 11,
+      "section": "rettighed / kr. / 3.Immaterielle anlægsaktiver / Kostpris 01.01.2012 17.350.000 / Tilgang 0",
+      "values": [
+        0.03112
+      ],
+      "origen": "estado 4",
+      "glosa": "Coste de adquisición"
+    },
+    {
+      "label": "Af- og nedskrivninger",
+      "lado": null,
+      "page": 11,
+      "section": "rettighed / kr. / 3.Immaterielle anlægsaktiver / Kostpris 01.01.2012 17.350.000 / Tilgang 0",
+      "values": [
+        0.00101
+      ],
+      "origen": "estado 4",
+      "glosa": "Amortizaciones y deterioros de valor"
+    },
+    {
+      "label": "Årets afskrivninger",
+      "lado": null,
+      "page": 11,
+      "section": "rettighed / kr. / 3.Immaterielle anlægsaktiver / Kostpris 01.01.2012 17.350.000 / Tilgang 0",
+      "values": [
+        1060.909
+      ],
+      "origen": "estado 4",
+      "glosa": "Amortizaciones del ejercicio"
+    },
+    {
+      "label": "Af- og nedskrivninger",
+      "lado": null,
+      "page": 11,
+      "section": "rettighed / kr. / 3.Immaterielle anlægsaktiver / Kostpris 01.01.2012 17.350.000 / Tilgang 0",
+      "values": [
+        0.03112
+      ],
+      "origen": "estado 4",
+      "glosa": "Amortizaciones y deterioros de valor"
+    },
+    {
+      "label": "Regnskabsmæssig værdi",
+      "lado": null,
+      "page": 11,
+      "section": "rettighed / kr. / 3.Immaterielle anlægsaktiver / Kostpris 01.01.2012 17.350.000 / Tilgang 0",
+      "values": [
+        0.03112
+      ],
+      "origen": "estado 4",
+      "glosa": "Valor contable"
+    },
+    {
+      "label": "Finansielle omkostninger",
+      "lado": "expense",
+      "page": 9,
+      "section": "Finansielle indtægter 65 145",
+      "values": [
+        -105.42
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Administrationsomkostninger",
+      "lado": "expense",
+      "page": 9,
+      "section": "Investeringsselskabet af 21. december 2001 A/S 7 / Resultatopgørelse for 2012 / 2012 2011 / Note kr. kr.",
+      "values": [
+        -7.86
+      ],
+      "origen": "estado 0",
+      "glosa": "Gastos de administración"
+    }
+  ]
+}

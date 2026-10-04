@@ -1,0 +1,362 @@
+{
+ "md": "Clubes/Noruega/Tromsø/aarsregnskap-idrettslag-fli-2022.md",
+ "pdf": "Clubes/Noruega/Tromsø/aarsregnskap-idrettslag-fli-2022.pdf",
+ "club": "troms",
+ "year": 2022,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:05.359Z",
+ "tieOuts": {
+  "cierran": 57,
+  "noCierran": 17
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "8 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "9 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "24 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 33,
+  "notasUsadas": [
+   "22"
+  ]
+ },
+ "ladoConocido": 32,
+ "rubros": [
+  {
+   "label": "Salgsinntekter",
+   "lado": "revenue",
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "values": [
+    71.116314
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Leieinntekter",
+   "lado": "revenue",
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "values": [
+    2.526152
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Gaver",
+   "lado": "revenue",
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "values": [
+    3.301608
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "values": [
+    1.42895
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "values": [
+    36.897343
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Ordinære avskrivninger",
+   "lado": "expense",
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "values": [
+    7.113522
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "values": [
+    1.503727
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "values": [
+    39.569496
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "values": [
+    0.00964
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "values": [
+    0.000269
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "values": [
+    3.903069
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "TROMSØ IDRETTSLAG / KONSERNRESULTATREGNSKAP",
+   "values": [
+    0.011236
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Salgsinntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "TROMSØ IDRETTSLAG / # RESULTATREGNSKAP",
+   "values": [
+    58.114318
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Leieinntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "TROMSØ IDRETTSLAG / # RESULTATREGNSKAP",
+   "values": [
+    1.260571
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Gaver",
+   "lado": "revenue",
+   "page": 2,
+   "section": "TROMSØ IDRETTSLAG / # RESULTATREGNSKAP",
+   "values": [
+    0.410443
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "TROMSØ IDRETTSLAG / # RESULTATREGNSKAP",
+   "values": [
+    30.345027
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Ordinære avskrivninger",
+   "lado": "expense",
+   "page": 2,
+   "section": "TROMSØ IDRETTSLAG / # RESULTATREGNSKAP",
+   "values": [
+    4.083472
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "TROMSØ IDRETTSLAG / # RESULTATREGNSKAP",
+   "values": [
+    24.430707
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "TROMSØ IDRETTSLAG / # RESULTATREGNSKAP",
+   "values": [
+    0.006253
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "TROMSØ IDRETTSLAG / # RESULTATREGNSKAP",
+   "values": [
+    0.916363
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "TROMSØ IDRETTSLAG / # RESULTATREGNSKAP",
+   "values": [
+    0.011237
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Overføring annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "TROMSØ IDRETTSLAG / # RESULTATREGNSKAP",
+   "values": [
+    0.005048
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Lønninger og andre oppg.pl. ytelser",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 8 Værelager / # Konsern: / # Note 9 Lønnskostnader",
+   "values": [
+    26692.759
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 8 Værelager / # Konsern: / # Note 9 Lønnskostnader",
+   "values": [
+    2230.825
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Kostnadsført premie til OTP",
+   "lado": "expense",
+   "page": 25,
+   "section": "",
+   "values": [
+    449.28
+   ],
+   "origen": "nota 22 (ancla 21)",
+   "ancla": "Pensjonskostnader"
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 8 Værelager / # Konsern: / # Note 9 Lønnskostnader",
+   "values": [
+    810.71
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Kostnadsført premie til avtalefestet pensjon (AFP)",
+   "lado": "expense",
+   "page": 25,
+   "section": "",
+   "values": [
+    361.43
+   ],
+   "origen": "nota 22 (ancla 21)",
+   "ancla": "Pensjonskostnader"
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 8 Værelager / # Konsern: / # Note 9 Lønnskostnader",
+   "values": [
+    610.733
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Gjennomsnittlig antall årsverk",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 8 Værelager / # Konsern: / # Note 9 Lønnskostnader",
+   "values": [
+    0.04
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Revisjonshonorar inkl. søratestasjoner",
+   "lado": "expense",
+   "page": 26,
+   "section": "Honorar til revisor:",
+   "values": [
+    97.282
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Tekn. utarb. ligningspapirer samt regnskap pr 31.12.",
+   "lado": "expense",
+   "page": 26,
+   "section": "Honorar til revisor:",
+   "values": [
+    21.847
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Tekn. utarb. konsolidert regnskap til NFF og attestasjon rapporteringspakke til NFF",
+   "lado": "expense",
+   "page": 26,
+   "section": "Honorar til revisor:",
+   "values": [
+    36.981
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Utvidede revisjonshandlinger og annen regnskapsmessig bistand",
+   "lado": "expense",
+   "page": 26,
+   "section": "Honorar til revisor:",
+   "values": [
+    5.062
+   ],
+   "origen": "estado 24"
+  }
+ ]
+}

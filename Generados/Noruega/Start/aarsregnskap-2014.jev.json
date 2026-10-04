@@ -1,0 +1,696 @@
+{
+ "md": "Clubes/Noruega/Start/aarsregnskap-2014.md",
+ "generatedAt": "2026-09-30T12:59:29.674Z",
+ "rubros": [
+  {
+   "label": "Forretningsadresse:",
+   "lado": null,
+   "page": 1,
+   "section": "# ÅRSREGNSKAP FOR REGNSKAPSÅRET 2014 - GENERELL INFORMASJON / # Enheten",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "Driftsresultat",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "lump_football_operations",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.22
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Varekostnader",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "wages_squad",
+     0.14
+    ]
+   ],
+   "tokens": 1255
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "depreciation",
+     0.72
+    ],
+    [
+     "player_impairment",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1688
+  },
+  {
+   "label": "Ordinære avskrivninger",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "depreciation",
+     0.85
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Salgsinntekter",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "lump_football_operations",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.71
+    ],
+    [
+     "other_income",
+     0.15000000000000002
+    ],
+    [
+     "matchday_competition",
+     0.07
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Andre inntekter",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1550
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Ordinært resultat etter skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.48
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Netto finans",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1474
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Årsresultat",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Andre lønns- og personalkostnader",
+   "lado": "expense",
+   "page": 6,
+   "section": "# IK Start / ## Note 2 - Ansatte, godtgjørelser, lån til ansatte m.m.",
+   "choice": "wages_squad",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "wages_squad",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1127
+  },
+  {
+   "label": "Lønn og bonus",
+   "lado": "expense",
+   "page": 6,
+   "section": "# IK Start / ## Note 2 - Ansatte, godtgjørelser, lån til ansatte m.m.",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 869
+  },
+  {
+   "label": "Andre tjenester (adv. bistand mva/aga, NFF.rapport m.m.)",
+   "lado": "expense",
+   "page": 6,
+   "section": "## Revisor",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1115
+  },
+  {
+   "label": "Overført fra egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.9400000000000001
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1348
+  },
+  {
+   "label": "Folketrygdavgift",
+   "lado": "expense",
+   "page": 6,
+   "section": "# IK Start / ## Note 2 - Ansatte, godtgjørelser, lån til ansatte m.m.",
+   "choice": "wages_squad",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "wages_squad",
+     0.49
+    ],
+    [
+     "admin_general_expense",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 808
+  },
+  {
+   "label": "Tilgang i år",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Note 3 - Pensjonsforpliktelser / ## Note 4 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 6,
+   "section": "# IK Start / ## Note 2 - Ansatte, godtgjørelser, lån til ansatte m.m.",
+   "choice": "other_expenses",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "wages_squad",
+     0.27
+    ]
+   ],
+   "tokens": 806
+  },
+  {
+   "label": "Anskaffelseskost pr 01.01.2014",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Note 3 - Pensjonsforpliktelser / ## Note 4 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 851
+  },
+  {
+   "label": "Avgang i år",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Note 3 - Pensjonsforpliktelser / ## Note 4 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "player_sales",
+     0.13
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Anskaffelseskost pr. 31.12.2014",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Note 3 - Pensjonsforpliktelser / ## Note 4 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 852
+  },
+  {
+   "label": "Bokført verdi pr. 31.12.2014",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Note 3 - Pensjonsforpliktelser / ## Note 4 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 852
+  },
+  {
+   "label": "Akkumulerte avskrivninger pr. 31.12.",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Note 3 - Pensjonsforpliktelser / ## Note 4 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 851
+  },
+  {
+   "label": "Økonomisk levetid",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Note 3 - Pensjonsforpliktelser / ## Note 4 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 840
+  },
+  {
+   "label": "Årets avskrivninger",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## Note 3 - Pensjonsforpliktelser / ## Note 4 - Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "other_sports",
+     0.02
+    ]
+   ],
+   "tokens": 840
+  }
+ ]
+}

@@ -1,0 +1,669 @@
+{
+ "pdf": "Clubes/España/Real Betis/informe-auditoria-memoria-einf-2024-2025.pdf",
+ "md": "Clubes/España/Real Betis/informe-auditoria-memoria-einf-2024-2025.md",
+ "cierre": "2025-06-30",
+ "paginas": [
+  9,
+  62,
+  63,
+  64,
+  65
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:51:38.716Z",
+ "escala": "unidades",
+ "filas": [
+  {
+   "pagina": 9,
+   "etiqueta": "Importe neto de la cifra de negocios",
+   "importe_impreso": "150.628.896",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Ingresos por competiciones nacionales",
+   "importe_impreso": "5.986.473",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Ingresos por competiciones europeas",
+   "importe_impreso": "20.730.690",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Ingresos por abonados y socios",
+   "importe_impreso": "21.663.176",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Ingresos por retransmisión",
+   "importe_impreso": "64.957.035",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Ingresos de comercialización y publicidad",
+   "importe_impreso": "37.291.523",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Trabajos realizados por la empresa para su activo",
+   "importe_impreso": "546.884",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Aprovisionamientos",
+   "importe_impreso": "(12.717.010)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Consumo de material deportivo",
+   "importe_impreso": "(3.979.839)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Otros consumos y gastos externos",
+   "importe_impreso": "(8.737.170)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Otros ingresos de explotación",
+   "importe_impreso": "7.146.189",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Ingresos accesorios y otros de gestión corriente",
+   "importe_impreso": "6.259.506",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Subvenciones de explotación incorporadas al resultado del ejercicio",
+   "importe_impreso": "886.683",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Gastos de personal",
+   "importe_impreso": "(102.729.761)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Sueldos y salarios de plantilla deportiva",
+   "importe_impreso": "(85.404.892)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Otros sueldos, salarios y asimilados",
+   "importe_impreso": "(12.544.400)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Cargas sociales",
+   "importe_impreso": "(4.780.469)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Otros gastos de explotación",
+   "importe_impreso": "(47.597.496)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Servicios exteriores",
+   "importe_impreso": "(28.652.025)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Tributos",
+   "importe_impreso": "(481.227)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Desplazamientos",
+   "importe_impreso": "(7.787.003)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Gastos cesión de jugadores",
+   "importe_impreso": "(5.725.000)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Otros gastos de gestión corriente",
+   "importe_impreso": "(2.461.770)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+   "importe_impreso": "(2.490.471)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Amortización del inmovilizado",
+   "importe_impreso": "(27.257.054)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Deterioro y resultado por enajenaciones del inmovilizado",
+   "importe_impreso": "10.101.484",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Resultados por enajenaciones y otras",
+   "importe_impreso": "10.101.484",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Otros resultados",
+   "importe_impreso": "36.897.850",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Otros resultados",
+   "importe_impreso": "36.897.850",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "RESULTADO DE EXPLOTACIÓN",
+   "importe_impreso": "15.019.983",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Ingresos financieros",
+   "importe_impreso": "681.620",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "De valores negociables y otros instrumentos financieros",
+   "importe_impreso": "681.620",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Otros ingresos financieros",
+   "importe_impreso": "681.620",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Gastos financieros",
+   "importe_impreso": "(11.509.004)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Por deudas con terceros",
+   "importe_impreso": "(11.430.210)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Gastos financieros derivados del convenio de acreedores",
+   "importe_impreso": "(78.793)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Variación de valor razonable en instrumentos financieros",
+   "importe_impreso": "242.936",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Valor razonable con cambios en pérdidas y ganancias",
+   "importe_impreso": "242.936",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Diferencias de cambio",
+   "importe_impreso": "1.141.998",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "RESULTADO FINANCIERO",
+   "importe_impreso": "(9.442.449)",
+   "tipo": "resultado",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "RESULTADO ANTES DE IMPUESTOS",
+   "importe_impreso": "5.577.534",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Impuestos sobre beneficios",
+   "importe_impreso": "(1.008.801)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "RTDO DEL EJERCICIO PROCEDENTE DE OP. CONTINUADAS (A.3+17)",
+   "importe_impreso": "4.568.734",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "RESULTADO DEL EJERCICIO (A.4+18)",
+   "importe_impreso": "4.568.734",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 62,
+   "etiqueta": "Ingresos por competiciones nacionales",
+   "importe_impreso": "5.986.473",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 62,
+   "etiqueta": "Ingresos por competiciones europeas",
+   "importe_impreso": "20.730.690",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 62,
+   "etiqueta": "Ingresos por abonados y socios",
+   "importe_impreso": "21.663.176",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 62,
+   "etiqueta": "Ingresos por retransmisión",
+   "importe_impreso": "64.957.035",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 62,
+   "etiqueta": "Ingresos por comercialización y publicidad",
+   "importe_impreso": "37.291.523",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 62,
+   "etiqueta": "",
+   "importe_impreso": "150.628.896",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 63,
+   "etiqueta": "Compra material deportivo",
+   "importe_impreso": "3.915.940",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Aprovisionamientos"
+  },
+  {
+   "pagina": 63,
+   "etiqueta": "Compra material sanitario",
+   "importe_impreso": "93.243",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Aprovisionamientos"
+  },
+  {
+   "pagina": 63,
+   "etiqueta": "Otros consumos y gastos externos",
+   "importe_impreso": "5.604.472",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Aprovisionamientos"
+  },
+  {
+   "pagina": 63,
+   "etiqueta": "Trabajos realizados por otras empresas",
+   "importe_impreso": "3.103.354",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Aprovisionamientos"
+  },
+  {
+   "pagina": 63,
+   "etiqueta": "",
+   "importe_impreso": "12.717.010",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Aprovisionamientos"
+  },
+  {
+   "pagina": 63,
+   "etiqueta": "Sueldos y salarios",
+   "importe_impreso": "97.347.367",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de personal"
+  },
+  {
+   "pagina": 63,
+   "etiqueta": "Indemnizaciones",
+   "importe_impreso": "601.925",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de personal"
+  },
+  {
+   "pagina": 63,
+   "etiqueta": "Seguridad social",
+   "importe_impreso": "4.780.469",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de personal"
+  },
+  {
+   "pagina": 63,
+   "etiqueta": "",
+   "importe_impreso": "102.729.761",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de personal"
+  },
+  {
+   "pagina": 63,
+   "etiqueta": "Personal deportivo",
+   "importe_impreso": "87.377.649",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de personal"
+  },
+  {
+   "pagina": 63,
+   "etiqueta": "Personal no deportivo",
+   "importe_impreso": "15.352.112",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de personal"
+  },
+  {
+   "pagina": 63,
+   "etiqueta": "",
+   "importe_impreso": "102.729.761",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de personal"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "Arrendamientos y cánones",
+   "importe_impreso": "1.556.804",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios exteriores"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "Reparaciones y conservación",
+   "importe_impreso": "1.803.745",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios exteriores"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "Servicios de profesionales independientes",
+   "importe_impreso": "14.421.883",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios exteriores"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "Primas de seguro",
+   "importe_impreso": "210.749",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios exteriores"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "Servicios bancarios y similares",
+   "importe_impreso": "2.991.710",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios exteriores"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "Publicidad, propaganda y relaciones públicas",
+   "importe_impreso": "60.819",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios exteriores"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "Suministros",
+   "importe_impreso": "674.554",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios exteriores"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "Otros servicios",
+   "importe_impreso": "6.931.763",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios exteriores"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "",
+   "importe_impreso": "28.652.025",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Servicios exteriores"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "Gastos deportivos diversos",
+   "importe_impreso": "2.461.770",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos de gestión corriente"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "",
+   "importe_impreso": "2.461.770",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos de gestión corriente"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "Gastos financieros derivados del convenio de acreedores (Nota 13.3)",
+   "importe_impreso": "78.793",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Gastos financieros"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "Intereses por préstamos con entidades de crédito",
+   "importe_impreso": "11.430.210",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Gastos financieros"
+  },
+  {
+   "pagina": 64,
+   "etiqueta": "",
+   "importe_impreso": "11.509.004",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Gastos financieros"
+  },
+  {
+   "pagina": 65,
+   "etiqueta": "Otros ingresos financieros",
+   "importe_impreso": "681.620",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Ingresos financieros"
+  },
+  {
+   "pagina": 65,
+   "etiqueta": "",
+   "importe_impreso": "681.620",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Ingresos financieros"
+  },
+  {
+   "pagina": 65,
+   "etiqueta": "Otros gastos excepcionales",
+   "importe_impreso": "(9.885.033)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros resultados"
+  },
+  {
+   "pagina": 65,
+   "etiqueta": "Otros ingresos excepcionales",
+   "importe_impreso": "46.782.883",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros resultados"
+  },
+  {
+   "pagina": 65,
+   "etiqueta": "",
+   "importe_impreso": "36.897.850",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "Otros resultados"
+  }
+ ],
+ "total_ingresos_impreso": null,
+ "total_gastos_impreso": null,
+ "resultado_impreso": "4.568.734",
+ "observaciones": "La cuenta no imprime totales de ingresos ni de gastos. Los subtotales de las notas no tienen etiqueta impresa (se dejaron vacías). El desglose de personal deportivo/no deportivo se tomó de la columna 'Total gasto personal'. Se omitieron las tablas de saldos de contratos con clientes (pág. 62) por ser saldos de balance. El encabezado de 15.4 menciona 2024 y 2023 pero las columnas son 30/06/2025 y 30/06/2024. Nota: la suma de la nota 15.6 (78.793+11.430.210=11.509.003) difiere en 1 del total impreso por redondeo."
+}

@@ -1,0 +1,316 @@
+{
+ "md": "Clubes/Colombia/Aguilas Doradas/certificacion-ef-2017.md",
+ "pdf": "Clubes/Colombia/Aguilas Doradas/certificacion-ef-2017.pdf",
+ "club": "aguilas-doradas",
+ "year": 2017,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T21:57:34.668Z",
+ "tieOuts": {
+  "cierran": 6,
+  "noCierran": 11
+ },
+ "warnings": [
+  "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "5 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "11 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 29,
+  "notasUsadas": []
+ },
+ "ladoConocido": 28,
+ "rubros": [
+  {
+   "label": "OPERACIONALES",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    11125006.45
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Actividades deportivas*",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    11125006.45
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "OPERACIONALES DE ADMINISTRACION",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    9823987.211
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Honorarios*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    459748.091
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Impuestos*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    259841.635
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Arrendamientos*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    436164.95
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Contribuciones y afiliaciones*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    113286.51
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Seguros*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    60680.244
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Servicios*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    1168874.819
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Legales*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    13104.499
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Mantenimiento y reparaciones*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    208708.349
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*De viaje*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    845733.704
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Depreciaciones*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    178281.33
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Diversos*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    2688205.955
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Provisiones*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    121100
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "OPERACIONALES DE VENTAS",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    428538.466
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Derechos deportivos*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    428538.466
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Ingresos financieros*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    161725.527
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Costos financieros por intereses*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    87762.518
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Otros costos financieros*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    77572.015
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Ingresos por recuperaciones*",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    223340.796
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Ingresos por indemnizaciones*",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    67303.271
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Ingresos de ejercicios anteriores*",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    750
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Ingresos diversos (aprovechamientos)*",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    8.642
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Gastos extraordinarios*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    74326.007
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Gastos diversos (demandas, multas, donaciones)*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    29.247
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Gastos por impuesto (renta, riqueza)*",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    625
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "GASTO POR IMPUESTO DE RENTA",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    340699
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "*Corriente*",
+   "lado": null,
+   "page": 5,
+   "section": "# Talento DORADO S.A. / Nit. 900.456.885-3 / ESTADO INDIVIDUAL DE RESULTADOS INTEGRALES COMPARATIVO NIIF / TALENTO DORADO S.A. / NIT: 900.456.885-3",
+   "values": [
+    340699
+   ],
+   "origen": "estado 3"
+  }
+ ]
+}

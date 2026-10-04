@@ -1,0 +1,674 @@
+{
+ "md": "Clubes/Ucrania/Karpaty Lviv/karpaty-balance-resultados-2025.md",
+ "generatedAt": "2026-09-30T19:15:52.726Z",
+ "rubrosHuella": "0dab282b02c8c542957897c253800424a33637ef",
+ "rubros": [
+  {
+   "label": "Чистий дохід від реалізації продукції (товарів, робіт, послуг)",
+   "lado": "revenue",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1188
+  },
+  {
+   "label": "Інші операційні витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "### III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Адміністративні витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1084
+  },
+  {
+   "label": "Дохід від участі в капіталі",
+   "lado": "revenue",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1110
+  },
+  {
+   "label": "Собівартість реалізованої продукції (товарів, робіт, послуг)",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1165
+  },
+  {
+   "label": "Інші операційні доходи",
+   "lado": "revenue",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1113
+  },
+  {
+   "label": "Інші фінансові доходи",
+   "lado": "revenue",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1093
+  },
+  {
+   "label": "Витрати на збут",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1115
+  },
+  {
+   "label": "Фінансові витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1075
+  },
+  {
+   "label": "Інші доходи",
+   "lado": "revenue",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Витрати від участі в капіталі",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "match_organisation_expense",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1104
+  },
+  {
+   "label": "Витрати (дохід) з податку на прибуток",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1135
+  },
+  {
+   "label": "Дооцінка (уцінка) фінансових інструментів",
+   "lado": "revenue",
+   "page": 3,
+   "section": "### II. СУКУПНИЙ ДОХІД",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Інші витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Дооцінка (уцінка) необоротних активів",
+   "lado": "revenue",
+   "page": 3,
+   "section": "### II. СУКУПНИЙ ДОХІД",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1116
+  },
+  {
+   "label": "Прибуток (збиток) від припиненої діяльності після оподаткування",
+   "lado": "revenue",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1134
+  },
+  {
+   "label": "Накопичені курсові різниці",
+   "lado": "revenue",
+   "page": 3,
+   "section": "### II. СУКУПНИЙ ДОХІД",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 867
+  },
+  {
+   "label": "Частка іншого сукупного доходу асоційованих та спільних підприємств",
+   "lado": "revenue",
+   "page": 3,
+   "section": "### II. СУКУПНИЙ ДОХІД",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1105
+  },
+  {
+   "label": "Податок на прибуток, пов'язаний з іншим сукупним доходом",
+   "lado": "expense",
+   "page": 3,
+   "section": "### II. СУКУПНИЙ ДОХІД",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "Сукупний дохід (сума рядків 2350, 2355 та 2460)",
+   "lado": "revenue",
+   "page": 3,
+   "section": "### II. СУКУПНИЙ ДОХІД",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "lump_football_operations",
+     0.4
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1165
+  },
+  {
+   "label": "Матеріальні витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "### III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Відрахування на соціальні заходи",
+   "lado": "expense",
+   "page": 3,
+   "section": "### III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "choice": "wages_squad",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "wages_squad",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Скоригована середньорічна кількість простих акцій",
+   "lado": null,
+   "page": 4,
+   "section": "# IV. РОЗРАХУНОК ПОКАЗНИКІВ ПРИБУТКОВОСТІ АКЦІЙ",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1424
+  },
+  {
+   "label": "Середньорічна кількість простих акцій",
+   "lado": null,
+   "page": 4,
+   "section": "# IV. РОЗРАХУНОК ПОКАЗНИКІВ ПРИБУТКОВОСТІ АКЦІЙ",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1411
+  },
+  {
+   "label": "Витрати на оплату праці",
+   "lado": "expense",
+   "page": 3,
+   "section": "### III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "wages_squad",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Чистий прибуток (збиток) на одну просту акцію",
+   "lado": null,
+   "page": 4,
+   "section": "# IV. РОЗРАХУНОК ПОКАЗНИКІВ ПРИБУТКОВОСТІ АКЦІЙ",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ]
+   ],
+   "tokens": 1584
+  },
+  {
+   "label": "Амортизація",
+   "lado": "expense",
+   "page": 3,
+   "section": "### III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "choice": "other_amortisation",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_amortisation",
+     0.38
+    ],
+    [
+     "depreciation",
+     0.31
+    ],
+    [
+     "player_amortisation",
+     0.16
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Скоригований чистий прибуток (збиток) на одну просту акцію",
+   "lado": null,
+   "page": 4,
+   "section": "# IV. РОЗРАХУНОК ПОКАЗНИКІВ ПРИБУТКОВОСТІ АКЦІЙ",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "other_income",
+     0.35000000000000003
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ]
+   ],
+   "tokens": 1598
+  },
+  {
+   "label": "Дивіденди на одну просту акцію",
+   "lado": null,
+   "page": 4,
+   "section": "# IV. РОЗРАХУНОК ПОКАЗНИКІВ ПРИБУТКОВОСТІ АКЦІЙ",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1524
+  }
+ ]
+}

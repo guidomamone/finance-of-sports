@@ -1,0 +1,522 @@
+{
+  "club": "monchengladbach-de",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2023.md",
+  "generatedAt": "2026-09-30T22:37:41.805Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 101,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 12,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 4,
+      "section": "UNTERNEHMENSREGISTER / EUR EUR EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2. Beteiligungen",
+          "values": [
+            "2.442.840,00",
+            "2.442.840,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Sonstige Finanzanlagen",
+          "values": [
+            "600,00",
+            "2.815.040,00",
+            "600,00",
+            "2.743.440,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "160.192.074,37 147.835.474,84 / I. Vorräte / Waren 2.495.679,15 2.157.981,23 / I. Forderungen und sonstige Vermögensgegenstände",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Forderungen aus Lieferungen und Leistungen",
+          "values": [
+            "9.071.039,56",
+            "5.559.054,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Forderungen aus Transfer",
+          "values": [
+            "12.764.832,15",
+            "8.810.096,45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Forderungen gegen Gesellschafter",
+          "values": [
+            "0,00",
+            "435.476,07"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Forderungen gegen verbundene Unternehmen",
+          "values": [
+            "130.098,01",
+            "128.806,73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Sonstige Vermögensgegenstände",
+          "values": [
+            "2.117.942,75",
+            "24.083.912,47",
+            "815.832,49",
+            "15.749.265,97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Kassenbestand, Guthaben bei Kreditinstituten",
+          "values": [
+            "493.334,99",
+            "351.219,23"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "I. Gezeichnetes Kapital",
+          "values": [
+            "2.500.000,00",
+            "2.500.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Kapitalrücklage",
+          "values": [
+            "600.000,00",
+            "600.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Gewinnvortrag",
+          "values": [
+            "44.048.287,97",
+            "68.727.567",
+            ",88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IV. Jahresüberschuss/Jahresfehlbetrag",
+          "values": [
+            "4.286.546,48",
+            "-24.679.279,91"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Steuerrückstellungen",
+          "values": [
+            "616.739,00",
+            "403.486,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Sonstige Rückstellungen",
+          "values": [
+            "1.535.000,00",
+            "1.141.755,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "UNTERNEHMENSREGISTER / EUR EUR EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Verbindlichkeiten gegenüber Kreditinstituten",
+          "values": [
+            "62.189.561,17",
+            "62.716.776,29"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Erhaltene Anzahlungen auf Bestellungen",
+          "values": [
+            "0,00",
+            "70.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "3.492.649,58",
+            "2.884.375,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Verbindlichkeiten aus Transfer",
+          "values": [
+            "29.829.008,63",
+            "19.202.021,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Verbindlichkeiten gegenüber Gesellschafter",
+          "values": [
+            "2.205.738,76",
+            "2.526.833",
+            ",30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6. Sonstige Verbindlichkeiten",
+          "values": [
+            "9.388.569,76",
+            "8.810.537,11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-davon aus Steuern EUR 5.221 .453,01 (i. Vj. EUR",
+          "values": [
+            "4.091",
+            ".826,35)--"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-davon im Rahmen der sozialen Sicherheit EUR 9.800,64 (i. Vj. EUR",
+          "values": [
+            "6.638",
+            ",91)--"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "EUR EUR EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "a) Löhne und Gehälter",
+          "values": [
+            "94.607.140,41",
+            "95.811.057,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Soziale Abgaben",
+          "values": [
+            "7.401.228,73",
+            "102.008.369,14",
+            "7.429.104,69",
+            "103.240.161,97"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "UNTERNEHMENSREGISTER / EUR EUR EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "--davon an verbundene Unternehmen EUR 198.985,60 (i. Vj. EUR",
+          "values": [
+            "48.396,,83)--"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-- davon Aufwand aus latenten Steuern EUR 4.510.000,00 (i. Vj. EUR",
+          "values": [
+            "0,00)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11. Ergebnis nach Steuern",
+          "values": [
+            "4.376.047,44",
+            "-24.308.013,19"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Vortrag Zugänge Umbuchungen Abgänge Stand",
+          "values": [
+            "31.12.2023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Entgeltlich erworbene Konzessionen, ge-",
+          "values": [
+            "19.152.469,79",
+            "560.493,76",
+            "0,00",
+            "38.348,80",
+            "19.674.614,75"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Vortrag Zugänge Umbuchungen Abgänge Stand",
+          "values": [
+            "31.12.2023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rech-",
+          "values": [
+            "150.507.982,85",
+            "15.880,00",
+            "0,00",
+            "133.331,60",
+            "150.390.531,25"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "te und Bauten einschließlich der Bauten auf / fremden Grundstücken / ausstattung / 3. Geleistete Anzahlungen und Anlagen im 69.098,49 355.133,21 -36.889,68 0,00 387.342,02 / Bau",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Anteile an verbundenen Unternehmen",
+          "values": [
+            "300.000,00",
+            "71.600,00",
+            "0,00",
+            "0,00",
+            "371.600,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Beteiligungen",
+          "values": [
+            "2.442.840,00",
+            "0,00",
+            "0,00",
+            "0,00",
+            "2.442.840,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Sonstige Finanzanlagen",
+          "values": [
+            "600,00",
+            "0,00",
+            "0,00",
+            "0,00",
+            "600,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "te und Bauten einschließlich der Bauten auf / fremden Grundstücken / ausstattung / 3. Geleistete Anzahlungen und Anlagen im 0,00 0,00 0,00 0,00 0,00 / Bau",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Anteile an verbundenen Unternehmen",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Beteiligungen",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Sonstige Finanzanlagen",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "EB-Wert",
+          "values": [
+            "31.12.2023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+          "values": [
+            "1.277.411,58",
+            "1.206.823,59"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Spielerwerte",
+          "values": [
+            "52.316.425,10",
+            "68.967.277",
+            ",53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+          "values": [
+            "87.553.917,85",
+            "83.033.827,43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "3.875.181,82",
+            "3.781.763,80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Geleistete Anzahlungen und Anlagen im Bau",
+          "values": [
+            "69.098,49",
+            "387.342,02"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Anteile an verbundenen Unternehmen",
+          "values": [
+            "300.000,00",
+            "371.600,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Beteiligungen",
+          "values": [
+            "2.442.840,00",
+            "2.442.840,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Sonstige Finanzanlagen",
+          "values": [
+            "600,00",
+            "600,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "de",
+    "query": "Borussia Mönchengladbach",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

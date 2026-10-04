@@ -1,0 +1,375 @@
+{
+ "md": "Clubes/Noruega/Sandefjord/aarsregnskap-sandefjord-fotball-as-2019.md",
+ "generatedAt": "2026-09-30T19:15:43.376Z",
+ "rubrosHuella": "24ce381777eb9a558f44794ff83dd530eb8f7d29",
+ "rubros": [
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 6,
+   "section": "# Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "sponsorship_commercial",
+     0.34
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "player_amortisation",
+     0.25
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 6,
+   "section": "# Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 6,
+   "section": "# Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1471
+  },
+  {
+   "label": "Varekostnader",
+   "lado": "expense",
+   "page": 6,
+   "section": "# Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "player_amortisation",
+     0.12
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "Utbytte",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1320
+  },
+  {
+   "label": "Driftsinntekter",
+   "lado": "revenue",
+   "page": 6,
+   "section": "# Resultatregnskap",
+   "choice": "lump_football_operations",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.81
+    ],
+    [
+     "other_income",
+     0.1
+    ],
+    [
+     "matchday_competition",
+     0.07
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Andre finanskostnader",
+   "lado": "expense",
+   "page": 6,
+   "section": "# Resultatregnskap",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Avskrivning varige driftsmidler",
+   "lado": "expense",
+   "page": 6,
+   "section": "# Resultatregnskap",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "lado": "revenue",
+   "page": 6,
+   "section": "# Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Overføring annen egenkapital",
+   "lado": null,
+   "page": 6,
+   "section": "# Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1443
+  }
+ ]
+}

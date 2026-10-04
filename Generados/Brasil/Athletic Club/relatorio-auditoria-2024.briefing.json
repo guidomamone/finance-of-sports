@@ -1,0 +1,3459 @@
+{
+  "club": "athletic-club",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Athletic Club/relatorio-auditoria-2024.md",
+  "generatedAt": "2026-09-30T21:51:28.218Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 261,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 26,
+  "relevantTableCount": 6,
+  "tables": [
+    {
+      "page": 10,
+      "section": "# Balanço Patrimonial / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+      "columns": [
+        "ATIVO",
+        "NE",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ATIVO CIRCULANTE",
+          "values": [
+            "",
+            "5.998.454",
+            "3.577.837"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DISPONIVEL",
+          "values": [
+            "3",
+            "224.728",
+            "1.351.068"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CAIXA",
+          "values": [
+            "",
+            "9.689",
+            "11.141"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCOS CONTA MOVIMENTO",
+          "values": [
+            "",
+            "214.645",
+            "1.325.580"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APLICAÇOES FINANCEIRAS",
+          "values": [
+            "",
+            "394",
+            "14.347"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CLIENTES",
+          "values": [
+            "4",
+            "2.000.000",
+            "0"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "OUTROS CREDITOS",
+          "values": [
+            "4",
+            "3.773.725",
+            "2.226.770"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TITULOS A RECEBER",
+          "values": [
+            "",
+            "3.553.390",
+            "2.226.770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ADIANTAMENTOS",
+          "values": [
+            "",
+            "78.750",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ESTOQUES",
+          "values": [
+            "",
+            "141.585",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATIVO NAO CIRCULANTE",
+          "values": [
+            "",
+            "13.223.916",
+            "12.337.688"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "REALIZAVEL A LONGO PRAZO",
+          "values": [
+            "",
+            "733.333",
+            "733.333"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CLIENTES A RECEBER A LONGO PRAZO",
+          "values": [
+            "4",
+            "733.333",
+            "733.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMOBILIZADO",
+          "values": [
+            "5",
+            "5.274.040",
+            "3.966.083"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "MÓVEIS E UTENSILIOS",
+          "values": [
+            "",
+            "118.086",
+            "65.894"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BENFEITORIAS PREDIO DE TERCEIROS",
+          "values": [
+            "",
+            "4.854.242",
+            "3.591.298"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MAQUINAS E EQUIPAMENTOS",
+          "values": [
+            "",
+            "108.432",
+            "96.916"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TERRENOS",
+          "values": [
+            "",
+            "220.000",
+            "220.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-)DEPRECIAÇÃO ACUMULADA",
+          "values": [
+            "",
+            "- 26.719",
+            "-8.024"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INTANGÍVEIS",
+          "values": [
+            "6",
+            "4.670.308",
+            "6.338.272"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DIREITOS ECONOMICO DOS ATLETAS",
+          "values": [
+            "17",
+            "5.129.459",
+            "2.290.987"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIREITO A PARTICIPAÇÃO EM CAMPEONATOS",
+          "values": [
+            "",
+            "140.000",
+            "140.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CUSTO FORMAÇAO DOS ATLETAS(PROFISSIONAL)",
+          "values": [
+            "6",
+            "-",
+            "3.093.807"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CUSTO FORMAÇAO DOS ATLETAS(BASE)",
+          "values": [
+            "6",
+            "-",
+            "1.104.205"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) AMORTIZAÇÃO ACUMULADA",
+          "values": [
+            "6",
+            "- 599.151",
+            "-290.726"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INVESTIMENTOS",
+          "values": [
+            "",
+            "2.546.235",
+            "1.300.000"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "VERTENTES EMPRENDIMENTOS IMOBILIARIOS",
+          "values": [
+            "7",
+            "2.546.235",
+            "1.300.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DO ATIVO",
+          "values": [
+            "",
+            "19.222.370",
+            "15.915.526"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 11,
+      "section": "# Balanço Patrimonial / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+      "columns": [
+        "PASSIVO",
+        "NE",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "PASSIVO CIRCULANTE",
+          "values": [
+            "",
+            "13.499.363",
+            "5.914.314"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "FORNECEDORES",
+          "values": [
+            "8",
+            "5.962.252",
+            "1.589.123"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "FORNECEDORES A PAGAR",
+          "values": [
+            "",
+            "1.823.126",
+            "91.470"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COMPRAS DE ATLETAS",
+          "values": [
+            "",
+            "4.039.125",
+            "1.497.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMPRÉSTIMOS DE JOGADORES",
+          "values": [
+            "",
+            "100.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OBRIGAÇÕES TRABALHISTAS E SOCIAIS",
+          "values": [
+            "9",
+            "1.125.278",
+            "258.783"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "SALARIOS A PAGAR",
+          "values": [
+            "",
+            "125.009",
+            "145.620"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROVISÕES DE OBRIGAÇÕES TRABALHIISTAS",
+          "values": [
+            "",
+            "295.174",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS A RECOLHER",
+          "values": [
+            "",
+            "635.464",
+            "79.335"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS A RECOLHER",
+          "values": [
+            "",
+            "55.645",
+            "33.135"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS RETIDO A RECOLHER",
+          "values": [
+            "",
+            "13.987",
+            "693"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OBRIGAÇÕES FISCAIS",
+          "values": [
+            "10",
+            "1.504.961",
+            "254.219"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "IRRF A RECOLHER S/FOLHA",
+          "values": [
+            "",
+            "661.250",
+            "31.385"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CRF A RECOLHER",
+          "values": [
+            "",
+            "22.367",
+            "8.538"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ICMS DIF DE ALIQUOTA",
+          "values": [
+            "",
+            "4.203",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ISSRF A RECOLHER",
+          "values": [
+            "",
+            "1.098",
+            "140"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ICMS A RECOLHER",
+          "values": [
+            "",
+            "28.585",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF S/SERVIÇOS DE TERCEIROS",
+          "values": [
+            "",
+            "11.639",
+            "2.896"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPOSTOS TEF 5%",
+          "values": [
+            "",
+            "775.819",
+            "211.260"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMPRESTIMOS E FINANCIAMENTOS",
+          "values": [
+            "11",
+            "568.522",
+            "327.333"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "EMPRESTIMOS SICRED",
+          "values": [
+            "",
+            "568.522",
+            "327.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CREDORES DIVERSOS",
+          "values": [
+            "",
+            "4.338.350",
+            "3.484.856"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CONTRATOS DE MUTUOS",
+          "values": [
+            "12",
+            "4.338.350",
+            "3.484.856"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PASSIVO NAO CIRCULANTE",
+          "values": [
+            "",
+            "5.082.946",
+            "3.245.661"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "EXIGIVEL A LONGO PRAZO",
+          "values": [
+            "11",
+            "5.082.946",
+            "3.245.661"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "EMPRESTIMOS E FINANCIAMENTOS",
+          "values": [
+            "",
+            "4.981.626",
+            "3.144.341"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROVISÃO DE CONTIGÊNCIAS",
+          "values": [
+            "20",
+            "101.320",
+            "101.320"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PATRIMONIO LIQUIDO",
+          "values": [
+            "13",
+            "640.061",
+            "6.755.551"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CAPITAL SOCIALSUBSCRITO",
+          "values": [
+            "",
+            "11.535.000",
+            "1.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESERVA DE CAPITAL",
+          "values": [
+            "18",
+            "81.600",
+            "5.266.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LUCROS E PREJUIZOS ACUMULADOS",
+          "values": [
+            "",
+            "- 3.699.061",
+            "1.544.340"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESULTADO DO EXERCICIO",
+          "values": [
+            "",
+            "- 7.277.478",
+            "- 1.055.389"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DO PASSIVO",
+          "values": [
+            "",
+            "19.222.370",
+            "15.915.526"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "# Demonstração de Resultado do Exercício / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+      "columns": [
+        "DRE",
+        "NE",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "RECEITA OPERACIONAL BRUTA",
+          "values": [
+            "14",
+            "19.332.098",
+            "7.456.580"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "VENDAS LOJA",
+          "values": [
+            "",
+            "212.085",
+            "120.945"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BONIFICAÇÕES RECEBIDAS",
+          "values": [
+            "",
+            "185.296",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VENDA DE ATLETAS",
+          "values": [
+            "",
+            "6.371.394",
+            "150.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ESCOLINHA",
+          "values": [
+            "",
+            "161.831",
+            "161.570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MENSALIDADES SÓCIO TORCEDOR",
+          "values": [
+            "",
+            "-",
+            "6.625"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ENTRADAS DE EVENTOS ESPORTIVOS",
+          "values": [
+            "",
+            "755.860",
+            "609.659"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PUBLICIDADE",
+          "values": [
+            "",
+            "14.870",
+            "18.815"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PREMIAÇÕES",
+          "values": [
+            "",
+            "5.352.025",
+            "2.745.382"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PATROCINIOS",
+          "values": [
+            "",
+            "2.139.518",
+            "3.568.084"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DOAÇÕES RECEBIDAS",
+          "values": [
+            "",
+            "205.000",
+            "15.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LOCAÇÃO DE ESPAÇO",
+          "values": [
+            "",
+            "-",
+            "30.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GRATIFICAÇÕES E INTERMEDIAÇÕES",
+          "values": [
+            "",
+            "-",
+            "30.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIREITO E TRANSMISSAO DE IMAGEM",
+          "values": [
+            "",
+            "2.250.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VENDA DE MANDO DE CAMPO",
+          "values": [
+            "",
+            "375.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIREITO PARTICIPAÇÕES CAMPEONATOS",
+          "values": [
+            "",
+            "1.309.219",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEDUÇÕES",
+          "values": [
+            "",
+            "- 972.585",
+            "-371.483"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(-) IMPOSTO TEF 5%",
+          "values": [
+            "",
+            "- 564.559",
+            "-371.483"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) ICMS",
+          "values": [
+            "",
+            "- 47.716",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) VENDAS CANCELADAS E DEVOLUÇÕES",
+          "values": [
+            "",
+            "- 360.310",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECEITA OPERACIONAL LIQUIDA",
+          "values": [
+            "",
+            "18.359.513",
+            "7.085.097"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DESPESAS OPERACIONAIS",
+          "values": [
+            "15",
+            "- 23.850.337",
+            "-7.803.501"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CUSTO DAS MERCADORIAS VENDIDAS",
+          "values": [
+            "",
+            "- 70.629",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS COM PESSOAL",
+          "values": [
+            "",
+            "- 5.899.083",
+            "-1.651.724"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MANUTENÇAO E CONSERVAÇÃO E CONSUMO",
+          "values": [
+            "",
+            "- 1.820.796",
+            "-73.094"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ALUGUEL",
+          "values": [
+            "",
+            "- 157.269",
+            "-287.805"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ALIMENTAÇÃO / VIAGENS /COMBUSTIVEL E EVENTOS",
+          "values": [
+            "",
+            "- 435.066",
+            "-1.792.313"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SERVIÇOS DE TERCEIROS",
+          "values": [
+            "",
+            "- 8.716.427",
+            "-4.404.326"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OUTRAS DESPESAS",
+          "values": [
+            "",
+            "- 977.482",
+            "-1.228.796"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS COM IMPOSTOS E TAXAS",
+          "values": [
+            "",
+            "- 567.321",
+            "-417.069"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COMIÇÃO DE INTERMEDIAÇÕES",
+          "values": [
+            "",
+            "- 1.137.518",
+            "-621.125"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPRECIAÇÃO E AMORTIZAÇAO",
+          "values": [
+            "",
+            "- 327.119",
+            "-219.902"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PREMIAÇÕESS",
+          "values": [
+            "",
+            "- 519.000",
+            "-914.004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIREITO DE IMAGEM",
+          "values": [
+            "",
+            "- 2.012.643",
+            "-187.141"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DOAÇÕES EFETUADAS",
+          "values": [
+            "",
+            "- 497.310",
+            "-102.894"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INDEDNIZAAÇÕES PROCESSUAIS",
+          "values": [
+            "",
+            "- 712.537",
+            "-101.320"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MULTAS DE TRANSITO",
+          "values": [
+            "",
+            "- 138",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) CUSTO FORMAÇÃO DE ATLETAS",
+          "values": [
+            "",
+            "",
+            "4.198.012"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECEITAS FINANCEIRAS",
+          "values": [
+            "16",
+            "32",
+            "1.496"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RENDIMENTOS S/ APLICAÇÃO FINANCEIRA",
+          "values": [
+            "",
+            "32",
+            "86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESCONTOS OBTIDOS",
+          "values": [
+            "",
+            "-",
+            "1.410"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS FINANCEIRAS",
+          "values": [
+            "16",
+            "- 1.786.685",
+            "-338.481"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ENCARGOS E JUROS DE MORA",
+          "values": [
+            "",
+            "- 1.572.664",
+            "-311.650"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS BANCARIAS",
+          "values": [
+            "",
+            "- 214.022",
+            "-26.831"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESULTADO DO EXERCICIO",
+          "values": [
+            "",
+            "- 7.277.478",
+            "-1.055.389"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 13,
+      "section": "# Demonstração dos Resultados Abrangentes / ## Em 31 de dezembro de 2024 e 2023 / ### (Expresso em reais)",
+      "columns": [
+        "DRA",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Valor Lucros/Prejuízos LIQUIDOS",
+          "values": [
+            "-7.277.478",
+            "-1.055.389"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Resultados Abrangentes",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reultado Abrangente do Período",
+          "values": [
+            "-7.277.478",
+            "-1.055.389"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "# Demonstração das Mutações do Patrimônio Líquido / ## Em 31 de dezembro de 2024 e 2023 / ### (Expresso em reais",
+      "columns": [
+        "Valor Capital Social Subscrito",
+        "Capital Social",
+        "Reserva de Capital",
+        "Lucros e Prejuizos Acumulados",
+        "SALDO FINAL"
+      ],
+      "rows": [
+        {
+          "rawLabel": "SALDO EM 31.12.2022",
+          "values": [
+            "1.000.000",
+            "",
+            "1.544.340",
+            "2.544.340"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RESERVA DE CAPITAL",
+          "values": [
+            "",
+            "5.266.600",
+            "",
+            "5.266.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valor Lucros/Prejuízos do Exercício",
+          "values": [
+            "",
+            "",
+            "-1.055.389",
+            "-1.055.389"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SALDO EM 31.12.2023",
+          "values": [
+            "1.000.000",
+            "5.266.600",
+            "488.951",
+            "6.755.551"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Capital Social Subscrito",
+          "values": [
+            "10.535.000",
+            "",
+            "",
+            "10.535.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESERVA DE CAPITAL",
+          "values": [
+            "",
+            "-5.185.000",
+            "",
+            "-5.185.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AJUSTE DE EXERCICIOS ANTERIORES",
+          "values": [
+            "",
+            "",
+            "-4.188.012",
+            "-4.188.012"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucros/Prejuízos do Exercício",
+          "values": [
+            "",
+            "",
+            "-7.277.478",
+            "-7.277.478"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SALDO EM 31.12.2024",
+          "values": [
+            "11.535.000",
+            "81.600",
+            "-10.976.539",
+            "640.061"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "# Demonstração do Fluxo de Caixa Método Direto / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+      "columns": [
+        "DFC",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ATIVIDADES OPERACIONAIS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Valores Recebidos de Clientes",
+          "values": [
+            "300.000",
+            "892.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valores Recebidos de Titulos Diversos",
+          "values": [
+            "1.396.798",
+            "1.603.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valores pagos a fornecedores",
+          "values": [
+            "- 10.419.949",
+            "-7.143.633"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valores pagos a empregados",
+          "values": [
+            "- 5.242.462",
+            "-1.390.802"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos pagos",
+          "values": [
+            "- 92.447",
+            "-241.794"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações Sociais",
+          "values": [
+            "- 351.173",
+            "-231.681"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros pagamentos liquidos",
+          "values": [
+            "- 21.805.854",
+            "-24.654.533"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros recebimentos líquidos",
+          "values": [
+            "30.778.040",
+            "23.297.257"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAIXA LÍQUIDO PROVENIENTE DAS ATIVIDADES",
+          "values": [
+            "- 5.437.046",
+            "-7.869.521"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ATIVIDADES DE INVESTIMENTO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Compras de imobilizado",
+          "values": [
+            "- 1.879.972",
+            "-214.931"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aquisição de ações/cotas",
+          "values": [
+            "- 1.246.235",
+            "-1.300.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recebimentos por vendas de ativos permanentes",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juros recebidos de empréstimos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAIXA LÍQUIDO USADO NAS ATIVIDADES DE",
+          "values": [
+            "- 3.126.207",
+            "-1.514.931"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ATIVIDADES DE FINANCIAMENTO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Capital a Integralizar",
+          "values": [
+            "-",
+            "5.266.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital a Integralizado",
+          "values": [
+            "5.268.400",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamentos de lucros e dividendos",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos tomados",
+          "values": [
+            "4.117.564",
+            "6.590.391"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamentos de empréstimos/Debêntures",
+          "values": [
+            "- 1.949.050",
+            "-1.131.824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAIXA LÍQUIDO GERADO PELAS ATIVIDADES DE",
+          "values": [
+            "7.436.914",
+            "10.725.167"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GERAÇAO LIQUIDA DE CAIXA",
+          "values": [
+            "- 1.126.340",
+            "1.340.716"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aumento nas Disponibilidades",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DISPONIBILIDADES - NO INÍCIO DO PERÍODO",
+          "values": [
+            "1.351.068",
+            "10.352"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DISPONIBILIDADES - NO FINAL DO PERÍODO",
+          "values": [
+            "224.728",
+            "1.351.068"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "# Demonstração do Fluxo de Caixa Método Indireto / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+      "columns": [
+        "DFC",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ATIVIDADES OPERACIONAIS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Lucro /Prejuizo do do Exercicio",
+          "values": [
+            "-7.277.478",
+            "-1.055.389"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustado Por :",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Depreciação e amortização",
+          "values": [
+            "327.119",
+            "227.833"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão de Contingencias",
+          "values": [
+            "-",
+            "101.320"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Exercicios Anteriores",
+          "values": [
+            "-4.188.012",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "-11.138.371",
+            "-726.237"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(redução) de ativos",
+          "values": [
+            "-3.546.956",
+            "-171.369"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Contas a receber na transferência de jogadores",
+          "values": [
+            "-2.000.000",
+            "733.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber Titulos Diversos",
+          "values": [
+            "-1.326.620",
+            "-1.201.770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos",
+          "values": [
+            "-78.750",
+            "1.030.401"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estoques",
+          "values": [
+            "-141.585",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes a Receber a longo prazo",
+          "values": [
+            "-",
+            "-733.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(redução) de passivos",
+          "values": [
+            "6.490.366",
+            "1.590.474"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "1.731.656",
+            "26.564"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compras de Atletas",
+          "values": [
+            "2.541.472",
+            "1.170.987"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Emprestimos de jogadores",
+          "values": [
+            "100.000",
+            "-40.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos e contribuições sociais a recolher",
+          "values": [
+            "1.250.742",
+            "231.642"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas e sociais",
+          "values": [
+            "866.496",
+            "201.281"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa liquido proveniente das atividades operacionais",
+          "values": [
+            "-8.194.960",
+            "692.869"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades de investimentos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aquisição de imobilizado",
+          "values": [
+            "-63.707",
+            "-371.562"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benfeitorias e Predio de Terceiros",
+          "values": [
+            "-1.262.945",
+            "-2.842.722"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de economicos de atletas",
+          "values": [
+            "-2.838.472",
+            "-1.410.987"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de participação em Campeonatos",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo formaçao de Atletas Profissionais",
+          "values": [
+            "3.093.807",
+            "-3.093.807"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo formaçao de Atletas Base",
+          "values": [
+            "1.104.205",
+            "-1.104.205"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vertentes Emprrendimentos imobiliarios",
+          "values": [
+            "-1.246.235",
+            "-1.300.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa liquido aplicado nas atividades de investimento",
+          "values": [
+            "-1.213.347",
+            "-10.123.283"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades de financiamentos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Partes Relacionadas, líquidas",
+          "values": [
+            "853.494",
+            "2.032.856"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aporte de capital",
+          "values": [
+            "5.350.000",
+            "5.266.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Emprestimos e Financiamentos",
+          "values": [
+            "2.078.474",
+            "3.461.674"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa liquido aplicado nas atividades de financiamento",
+          "values": [
+            "8.281.967",
+            "10.761.130"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Geração liquida de caixa",
+          "values": [
+            "-1.126.340",
+            "1.330.716"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DISPONIBILIDADES - NO INÍCIO DO PERÍODO",
+          "values": [
+            "1.351.068",
+            "10.352"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DISPONIBILIDADES - NO FINAL DO PERÍODO",
+          "values": [
+            "224.728",
+            "1.351.068"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "### 3. Caixa e equivalentes de caixa",
+      "columns": [
+        "Descrição",
+        "31/12/2024 (R$)",
+        "31/12/2023 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caixa",
+          "values": [
+            "9.688,82",
+            "11.140,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos conta movimento",
+          "values": [
+            "214.645,17",
+            "1.325.579,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicações financeiras",
+          "values": [
+            "394,37",
+            "14.347,03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "224.728,36",
+            "1.351.067,57"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "### 4. Clientes a receber e Títulos a Receber",
+      "columns": [
+        "Descrição",
+        "31/12/2024 (R$)",
+        "31/12/2023 (R$)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Clientes venda de atletas(b)",
+          "values": [
+            "2.000.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Títulos a receber",
+          "values": [
+            "3.553.390",
+            "2.226.870,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos a fornecedores",
+          "values": [
+            "78.750",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estoque",
+          "values": [
+            "141.585",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes a longo prazo (a)",
+          "values": [
+            "733.333",
+            "733.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "6.507.059",
+            "2.960.203"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "### 5. Imobilizado",
+      "columns": [
+        "Classificação",
+        "Saldo Inicial",
+        "",
+        "",
+        "Saldo Final"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Imóveis de uso próprio",
+          "values": [
+            "2023",
+            "Adições",
+            "Baixas",
+            "2024"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Móveis e Utensílios",
+          "values": [
+            "65.893,96",
+            "52.191,64",
+            "0,00",
+            "118.085,60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e Equipamentos",
+          "values": [
+            "96.916,10",
+            "11,515,40",
+            "0,00",
+            "108.431,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "220.000,00",
+            "0,00",
+            "0,00",
+            "220.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benfeitorias Prédio de Terceiros",
+          "values": [
+            "3.591.297,55",
+            "1.816.194,74",
+            "553.250,00",
+            "4.854.242,29"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação Acumulada (-)",
+          "values": [
+            "(8.024,44)",
+            "0,00",
+            "(18.695,02)",
+            "(26.719,46)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL GERAL",
+          "values": [
+            "3.966.083,17",
+            "1.879.901,78",
+            "(571.945,02)",
+            "5.274.039,93"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "Segue abaixo quadro de movimentação do ativo intangíveis no ano de 2024:",
+      "columns": [
+        "Classificação",
+        "Saldo Inicial",
+        "",
+        "",
+        "Saldo Final"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Bens Intangíveis",
+          "values": [
+            "2023",
+            "Adições",
+            "Baixas",
+            "2024"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bens Intangíveis",
+          "values": [
+            "2023",
+            "Adições",
+            "Baixas",
+            "2024"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos Econômicos Atletas",
+          "values": [
+            "2.290.986,55",
+            "3.908.472,00",
+            "1.070.00,00",
+            "5.129.458,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos a Participação n/ Campeonatos",
+          "values": [
+            "140.000,00",
+            "0,00",
+            "0,00",
+            "140.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização Acumulada (-)",
+          "values": [
+            "(290.726,45)",
+            "0,00",
+            "(308.424,20)",
+            "(599.150,65)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo Formação Atletas Profissional (a)",
+          "values": [
+            "3.093.806,92",
+            "0,00",
+            "(3.093.806,92)",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo Formação Atletas Base (a)",
+          "values": [
+            "1.104.204,94",
+            "0,00",
+            "(1.104.204,94)",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL GERAL",
+          "values": [
+            "6.338.271,96",
+            "3.908.472,00",
+            "(5.576.436,06)",
+            "4.670.307,90"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "### 7. Investimentos",
+      "columns": [
+        "Descrição",
+        "31/12/2024",
+        "31/12/2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Vertentes Empreendimentos Imobiliários",
+          "values": [
+            "2.546.235",
+            "1.300.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "2.546.235",
+            "1.300.000"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "### 8. Fornecedores",
+      "columns": [
+        "",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Fornecedores a pagar (a)",
+          "values": [
+            "1.823.126",
+            "91.470"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compra de Atletas (b)",
+          "values": [
+            "4.039.125",
+            "1.497.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos de jogadores",
+          "values": [
+            "100.000",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "5.962.252",
+            "1.589.123"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "### 9. Obrigações Trabalhistas",
+      "columns": [
+        "Descrição",
+        "31/12/2024",
+        "31/12/2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salários a pagar(a)",
+          "values": [
+            "125.009",
+            "145.20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões de Ferias e encargos (a)",
+          "values": [
+            "295.174",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS a recolher (b)",
+          "values": [
+            "55.645",
+            "33.135"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS a recolher (c)",
+          "values": [
+            "635.464",
+            "79.335"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS Retido a recolher",
+          "values": [
+            "13.987",
+            "693"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "1.125.278",
+            "258.783"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 26,
+      "section": "(b)",
+      "columns": [
+        "",
+        "",
+        "",
+        "SALDO ACUMULADO"
+      ],
+      "rows": [
+        {
+          "rawLabel": "set.-23",
+          "values": [
+            "R$ 6.224,17",
+            "R$ 6.224,17",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "out.-23",
+          "values": [
+            "R$ 4.239,36",
+            "R$ 10.463,53",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "nov.-23",
+          "values": [
+            "R$ 5.265,61",
+            "R$ 15.729,14",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "dez.-23",
+          "values": [
+            "R$ 17.405,46",
+            "R$ 33.134,60",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "02/01/2024",
+          "values": [
+            "Pagto. FGTS 11/2023",
+            "-R$ 5.265,61",
+            "R$ 27.868,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "02/01/2024",
+          "values": [
+            "Pagto. FGTS 10/2023",
+            "-R$ 4.239,36",
+            "R$ 23.629,63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31/01/2024",
+          "values": [
+            "Pagto. FGTS 09/2023",
+            "-R$ 6.224,17",
+            "R$ 17.405,46"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "29/02/2024",
+          "values": [
+            "Pagto. FGTS 12/2023",
+            "-R$ 17.405,46",
+            "R$ -"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "10-24",
+          "values": [
+            "FGTS 10/2024",
+            "R$ 25.842,22",
+            "R$ 25.842,22"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "12-24",
+          "values": [
+            "FGTS 12/2024",
+            "R$ 29.802,95",
+            "R$ 55.645,17"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 26,
+      "section": "(c)",
+      "columns": [
+        "APURAÇÃO",
+        "VALOR",
+        "SALDO ACUMULADO"
+      ],
+      "rows": [
+        {
+          "rawLabel": "07/2023",
+          "values": [
+            "R$ 11.773,68",
+            "R$ 11.773,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "08/2023",
+          "values": [
+            "R$ 13.228,11",
+            "R$ 25.001,79"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "09/2023",
+          "values": [
+            "R$ 13.940,77",
+            "R$ 38.942,56"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "10/2023",
+          "values": [
+            "R$ 6.326,05",
+            "R$ 45.268,61"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11/2023",
+          "values": [
+            "R$ 7.660,54",
+            "R$ 52.929,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "12/2023",
+          "values": [
+            "R$ 26.405,75",
+            "R$ 79.334,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "01/2024",
+          "values": [
+            "R$ 30.261,98",
+            "R$ 109.596,88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "02/2024",
+          "values": [
+            "R$ 33.124,50",
+            "R$ 142.721,38"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 27,
+      "section": null,
+      "columns": [
+        "03/2024",
+        "R$ 38.525,61",
+        "R$ 181.246,99"
+      ],
+      "rows": [
+        {
+          "rawLabel": "04/2024",
+          "values": [
+            "R$ 45.282,32",
+            "R$ 226.529,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "05/2024",
+          "values": [
+            "R$ 44.589,52",
+            "R$ 271.118,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "06/2024",
+          "values": [
+            "R$ 47.770,14",
+            "R$ 318.888,97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "07/2024",
+          "values": [
+            "R$ 48.118,70",
+            "R$ 367.007,67"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "08/2024",
+          "values": [
+            "R$ 55.532,11",
+            "R$ 422.539,78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "09/2024",
+          "values": [
+            "R$ 57.223,30",
+            "R$ 479.763,08"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "10/2024",
+          "values": [
+            "R$ 61.385,68",
+            "R$ 541.148,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11/2024",
+          "values": [
+            "R$ 38.185,76",
+            "R$ 579.334,52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13º/2024",
+          "values": [
+            "R$ 24.295,23",
+            "R$ 603.629,75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "12/2024",
+          "values": [
+            "R$ 31.833,79",
+            "R$ 635.463,54"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 27,
+      "section": "### 10. Obrigações Tributárias",
+      "columns": [
+        "Descrição",
+        "31/12/2024",
+        "31/12/2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "IRRF a recolher s/folha",
+          "values": [
+            "661.250",
+            "31.385"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CRF a recolher",
+          "values": [
+            "22.367",
+            "8.538"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ISSRF a recolher",
+          "values": [
+            "1.098",
+            "140"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF s/serviços de terceiros",
+          "values": [
+            "11.639",
+            "2.896"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imposto TEF 5% (a)",
+          "values": [
+            "775.819",
+            "211.260"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ICMS Dif de Alíquota",
+          "values": [
+            "4.203",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ICMS a Recolher",
+          "values": [
+            "28.585",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "1.504.961",
+            "254.219"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": "### 11. Empréstimos e Financiamentos",
+      "columns": [
+        "Descrição",
+        "31.12.2024",
+        "31.12.2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Curto Prazo",
+          "values": [
+            "568.522",
+            "327.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Longo Prazo",
+          "values": [
+            "4.981.626",
+            "3.144.341"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "5.550.148",
+            "3.471.674"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": "### 12. Mútuo Sócios e Terceiros",
+      "columns": [
+        "Descrição",
+        "31/12/2024",
+        "31/12/2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Mutuo Ftbraz/ F&P Gestão Esportiva",
+          "values": [
+            "300.000",
+            "300.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutuo Vinicios Leonardo Diniz",
+          "values": [
+            "120.000",
+            "985.071"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutuo Fabio Ernesto Lima de Campos",
+          "values": [
+            "450.550",
+            "35.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutuo de Terceiros",
+          "values": [
+            "3.440.227",
+            "2.164.785"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutuo FPM Esportes Ltda",
+          "values": [
+            "27.573",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "4.338.350",
+            "3.484.856"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "Brasil Holding Ltda. / A composição do capital social em 31 de dezembro de 2024 é a seguinte:",
+      "columns": [
+        "Acionista",
+        "Tipo de Ação",
+        "Quant. de Ações"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Testotrans Holding Ltda.",
+          "values": [
+            "Ordinária",
+            "50.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tiberis do Brasil Holding Ltda.",
+          "values": [
+            "Ordinária",
+            "165.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Futbraz Gestão Esportiva Ltda.",
+          "values": [
+            "Ordinária",
+            "685.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construtora Felipão Ltda.",
+          "values": [
+            "Preferencial",
+            "50.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Athletic Club",
+          "values": [
+            "Preferencial",
+            "50.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "### 14. Receita Operacional Liquida",
+      "columns": [
+        "",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Receita c/ Venda Loja Estádio",
+          "values": [
+            "212.085",
+            "120.945"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bonificações Recebidas",
+          "values": [
+            "185.296",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita Venda de Jogadores",
+          "values": [
+            "7.071.394",
+            "150.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita Escolinha",
+          "values": [
+            "161.831",
+            "161.570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas de Mensalidades Sócio Torcedor",
+          "values": [
+            "-",
+            "6.625"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita de Entradas Eventos Esportivos - Ingressos",
+          "values": [
+            "755.860",
+            "609.659"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita com Publicidade",
+          "values": [
+            "14.870",
+            "18.815"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita Premiação Confederação/Federação de Futebol",
+          "values": [
+            "5.352.025",
+            "2.745.382"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita de Patrocínios",
+          "values": [
+            "2.139.518",
+            "3.568.084"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Doações Recebidas",
+          "values": [
+            "205.000",
+            "15.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita de Locação Espaço",
+          "values": [
+            "-",
+            "30.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gratificações de Intermediações",
+          "values": [
+            "-",
+            "30.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de Transmissão de Imagem",
+          "values": [
+            "2.250.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venda de mando de campo",
+          "values": [
+            "375.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos Participações em Campeonatos",
+          "values": [
+            "1.309.219",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DA RECEITA BRUTA",
+          "values": [
+            "19.332.098",
+            "7.456.580"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(-) TEF",
+          "values": [
+            "-564.559",
+            "-371.483"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) ICMS",
+          "values": [
+            "-47,716",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Vendas Canceladas e Devoluções",
+          "values": [
+            "-360.310",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita operacional líquida",
+          "values": [
+            "18.359.513",
+            "7.085.094"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 30,
+      "section": "(Despesas) por natureza",
+      "columns": [
+        "",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CUSTO DE MERCADORIAS VENDIDAS",
+          "values": [
+            "-70.629",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS COM PESSOAL",
+          "values": [
+            "- 5.899.083",
+            "-1.651.724"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MANUTENÇAO E CONSERVAÇÃO",
+          "values": [
+            "- 1.820.796",
+            "-73.094"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ALUGUEL",
+          "values": [
+            "- 157.269",
+            "-287.805"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ALIMENTAÇÃO / VIAGENS /COMBUSTIVEL E EVENTOS",
+          "values": [
+            "-435.066",
+            "-1.792.313"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SERVIÇOS DE TERCEIROS",
+          "values": [
+            "- 8.716.427",
+            "-4.404.326"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OUTRAS DESPESAS",
+          "values": [
+            "- 977.482",
+            "-1.228.796"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS COM IMPOSTOS E TAXAS",
+          "values": [
+            "- 567.321",
+            "-417.069"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COMIÇÃO DE INTERMEDIAÇÕES",
+          "values": [
+            "-1.137.518",
+            "-621.125"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AMORTIZAÇAO DIREITO ECONOMICO DE ATLETAS",
+          "values": [
+            "- 327.119",
+            "-219.902"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PREMIAÇÕESS",
+          "values": [
+            "- 519.000",
+            "-914.004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIREITO DE IMAGEM",
+          "values": [
+            "- 2.012.643",
+            "-187.141"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DOAÇÕES EFETUADAS",
+          "values": [
+            "- 497.310",
+            "-102.894"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INDENIZAÇÕES PROCESSUAIS",
+          "values": [
+            "-712.537",
+            "-101.320"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CUSTO FORMAÇÃO DE ATLETAS",
+          "values": [
+            "",
+            "4.198.012"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MULTAS DE TRANSITO",
+          "values": [
+            "138",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "(23.850.337)",
+            "(7.803.501)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 30,
+      "section": "### 15. Receitas e (Despesas) Financeiras",
+      "columns": [
+        "Receita Financeira",
+        "31/12/2024",
+        "31/12/2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Rendimento aplicação financeira",
+          "values": [
+            "32",
+            "86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Descontos obtidos",
+          "values": [
+            "-",
+            "1.410"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total das receitas financeiras",
+          "values": [
+            "32",
+            "1.496"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": null,
+      "columns": [
+        "Despesa Financeira",
+        "31/12/2024",
+        "31/12/2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Encargos e juros de mora",
+          "values": [
+            "(1.572.664)",
+            "(311.650)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas bancárias",
+          "values": [
+            "(214.022)",
+            "(26.831)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total das despesas financeiras",
+          "values": [
+            "(1.786.685)",
+            "(338.481)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Resultado financeiro",
+          "values": [
+            "(1.786.653)",
+            "(336.985)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 34,
+      "section": "#### Capital Circulante Líquido - CCL",
+      "columns": [
+        "CAPITAL CIRCULANTE LÍQUIDO",
+        "",
+        "INDICE DE LIQUIDEZ CORRENTE"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ATIVO CIRCULANTE",
+          "values": [
+            "5.998.454",
+            "0,4444"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PASSIVO CIRCULANTE",
+          "values": [
+            "13.499.363",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL CCL",
+          "values": [
+            "- 7.500.909",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 10,
+      "section": "# Balanço Patrimonial / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DO ATIVO",
+      "target": "19.222.370",
+      "addendCount": 25,
+      "closes": false,
+      "diff": "36444739"
+    },
+    {
+      "page": 10,
+      "section": "# Balanço Patrimonial / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL DO ATIVO",
+      "target": "15.915.526",
+      "addendCount": 27,
+      "closes": false,
+      "diff": "31831053"
+    },
+    {
+      "page": 11,
+      "section": "# Balanço Patrimonial / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DO PASSIVO",
+      "target": "19.222.370",
+      "addendCount": 23,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": "# Balanço Patrimonial / ## Em 31 de Dezembro de 2024 e 2023 / ### (Expresso em reais)",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL DO PASSIVO",
+      "target": "15.915.526",
+      "addendCount": 19,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "### 3. Caixa e equivalentes de caixa",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "224.728,36",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "### 3. Caixa e equivalentes de caixa",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "1.351.067,57",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "### 4. Clientes a receber e Títulos a Receber",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "6.507.059",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 5 rubros enteros)"
+    },
+    {
+      "page": 22,
+      "section": "### 4. Clientes a receber e Títulos a Receber",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "2.960.203",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "### 5. Imobilizado",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL GERAL",
+      "target": "3.966.083,17",
+      "addendCount": 5,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "### 5. Imobilizado",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL GERAL",
+      "skipped": true,
+      "reason": "1 de 6 valor(es) del segmento no parecen números (ej. \"Adições\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 23,
+      "section": "### 5. Imobilizado",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL GERAL",
+      "skipped": true,
+      "reason": "1 de 6 valor(es) del segmento no parecen números (ej. \"Baixas\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 23,
+      "section": "### 5. Imobilizado",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL GERAL",
+      "target": "5.274.039,93",
+      "addendCount": 5,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "Segue abaixo quadro de movimentação do ativo intangíveis no ano de 2024:",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL GERAL",
+      "target": "6.338.271,96",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "4045.9999999990687"
+    },
+    {
+      "page": 24,
+      "section": "Segue abaixo quadro de movimentação do ativo intangíveis no ano de 2024:",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL GERAL",
+      "skipped": true,
+      "reason": "2 de 7 valor(es) del segmento no parecen números (ej. \"Adições\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 24,
+      "section": "Segue abaixo quadro de movimentação do ativo intangíveis no ano de 2024:",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL GERAL",
+      "skipped": true,
+      "reason": "2 de 7 valor(es) del segmento no parecen números (ej. \"Baixas\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 24,
+      "section": "Segue abaixo quadro de movimentação do ativo intangíveis no ano de 2024:",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL GERAL",
+      "target": "4.670.307,90",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "4047.9999999990687"
+    },
+    {
+      "page": 25,
+      "section": "### 7. Investimentos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "2.546.235",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "### 7. Investimentos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "1.300.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "### 8. Fornecedores",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "5.962.252",
+      "addendCount": 3,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 3 rubros enteros)"
+    },
+    {
+      "page": 25,
+      "section": "### 8. Fornecedores",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "1.589.123",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "### 9. Obrigações Trabalhistas",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "1.125.278",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 5 rubros enteros)"
+    },
+    {
+      "page": 25,
+      "section": "### 9. Obrigações Trabalhistas",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "258.783",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-145474.8"
+    },
+    {
+      "page": 27,
+      "section": "### 10. Obrigações Tributárias",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "1.504.961",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 27,
+      "section": "### 10. Obrigações Tributárias",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "254.219",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 28,
+      "section": "### 11. Empréstimos e Financiamentos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "5.550.148",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 28,
+      "section": "### 11. Empréstimos e Financiamentos",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "3.471.674",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 28,
+      "section": "### 12. Mútuo Sócios e Terceiros",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "4.338.350",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 28,
+      "section": "### 12. Mútuo Sócios e Terceiros",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "3.484.856",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "### 14. Receita Operacional Liquida",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL DA RECEITA BRUTA",
+      "target": "19.332.098",
+      "addendCount": 12,
+      "closes": false,
+      "diff": "700000"
+    },
+    {
+      "page": 29,
+      "section": "### 14. Receita Operacional Liquida",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL DA RECEITA BRUTA",
+      "target": "7.456.580",
+      "addendCount": 11,
+      "closes": true
+    },
+    {
+      "page": 30,
+      "section": "(Despesas) por natureza",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "(23.850.337)",
+      "addendCount": 15,
+      "closes": false,
+      "diff": "275"
+    },
+    {
+      "page": 30,
+      "section": "(Despesas) por natureza",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "(7.803.501)",
+      "addendCount": 14,
+      "closes": true
+    },
+    {
+      "page": 30,
+      "section": "### 15. Receitas e (Despesas) Financeiras",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total das receitas financeiras",
+      "target": "32",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 30,
+      "section": "### 15. Receitas e (Despesas) Financeiras",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total das receitas financeiras",
+      "target": "1.496",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 30,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total das despesas financeiras",
+      "target": "(1.786.685)",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 2 rubros enteros)"
+    },
+    {
+      "page": 30,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total das despesas financeiras",
+      "target": "(338.481)",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 34,
+      "section": "#### Capital Circulante Líquido - CCL",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL CCL",
+      "target": "- 7.500.909",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "26998726"
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/athletic-club-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"athletic-club\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

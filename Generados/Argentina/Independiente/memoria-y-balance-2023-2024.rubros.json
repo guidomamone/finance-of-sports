@@ -1,0 +1,1033 @@
+{
+ "md": "Clubes/Argentina/Independiente/memoria-y-balance-2023-2024.md",
+ "pdf": "Clubes/Argentina/Independiente/memoria-y-balance-2023-2024.pdf",
+ "club": "independiente",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T01:15:25.220Z",
+ "tieOuts": {
+  "cierran": 5,
+  "noCierran": 23
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "21 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "8 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "ladoConocido": 69,
+ "rubros": [
+  {
+   "label": "Actividades Deportivas, Culturales y Sociales (Anexo V)",
+   "lado": null,
+   "page": 6,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "values": [
+    "17.998.336.484",
+    "16.002.501.547"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Cuotas de Socios (Anexo V)",
+   "lado": null,
+   "page": 6,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "values": [
+    "13.518.882.094",
+    "11.486.073.747"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros Recursos (Anexo V sin resultados financieros)",
+   "lado": null,
+   "page": 6,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+   "values": [
+    "1.913.118.713",
+    "1.102.229.191"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Actividades Deportivas, Culturales y Sociales (Anexo V)",
+   "lado": "expense",
+   "page": 6,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "(27.911.684.682)",
+    "(29.159.433.004)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gastos Administrativos y Generales (Anexo V sin resultados financieros)",
+   "lado": "expense",
+   "page": 6,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "(6.576.118.028)",
+    "(6.851.394.475)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Depreciación de Bienes de Usos (Anexo V)",
+   "lado": "expense",
+   "page": 6,
+   "section": "GASTOS ORDINARIOS",
+   "values": [
+    "(5.662.251.009)",
+    "(5.536.311.466)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Recursos Extraordinarios - Transferencias y Préstamos del Plantel Profesional",
+   "lado": null,
+   "page": 6,
+   "section": "RESULTADOS FINANCIEROS Y POR TENENCIA / RECURSOS Y GASTOS EXTRAORDINARIOS",
+   "values": [
+    "4.736.943.543",
+    "4.786.288.689"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Recursos Extraordinarios - Ingresos por Donaciones -",
+   "lado": null,
+   "page": 6,
+   "section": "RESULTADOS FINANCIEROS Y POR TENENCIA / RECURSOS Y GASTOS EXTRAORDINARIOS",
+   "values": [
+    "2.963.894.872"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Fútbol Profesional (Anexo D) 14.884.953.943 13.082.366.258 Fútbol Profesional (Anexo D)",
+   "lado": null,
+   "page": 9,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO V- APERTURA DE RECURSOS Y GASTOS / CLASIFICADOS POR ACTIVIDAD",
+   "values": [
+    "17.882.917.379",
+    "19.559.767.443"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Fútbol Juvenil (Anexo E) 62.807.704 102.912.917 Fútbol Juvenil (Anexo F)",
+   "lado": null,
+   "page": 9,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO V- APERTURA DE RECURSOS Y GASTOS / CLASIFICADOS POR ACTIVIDAD",
+   "values": [
+    "1.917.566.423",
+    "1.912.344.037"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Departamento Educación Física (Anexo E) 133.193.580 195.444.277 Departamento Educación Física (Anexo F)",
+   "lado": null,
+   "page": 9,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO V- APERTURA DE RECURSOS Y GASTOS / CLASIFICADOS POR ACTIVIDAD",
+   "values": [
+    "711.290.588",
+    "697.582.128"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Complejo de Tenis (Anexo E) 131.201.365 159.494.297 Complejo de Tenis (Anexo F)",
+   "lado": null,
+   "page": 9,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO V- APERTURA DE RECURSOS Y GASTOS / CLASIFICADOS POR ACTIVIDAD",
+   "values": [
+    "310.260.968",
+    "300.893.689"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Filial Capital Federal (Anexo E) 515.491.235 60.699.194 Filial Capital Federal (Anexo F)",
+   "lado": null,
+   "page": 9,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO V- APERTURA DE RECURSOS Y GASTOS / CLASIFICADOS POR ACTIVIDAD",
+   "values": [
+    "221.044.991",
+    "214.127.568"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Centro Educativo (Anexo E) 1.936.897.300 2.088.364.275 Centro Educativo (Anexo F)",
+   "lado": null,
+   "page": 9,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO V- APERTURA DE RECURSOS Y GASTOS / CLASIFICADOS POR ACTIVIDAD",
+   "values": [
+    "2.324.309.805",
+    "2.666.122.513"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Complejo Polideportivo Wilde (Anexo E) 261.266.336 283.719.069 Complejo Polideportivo Wilde (Anexo F)",
+   "lado": null,
+   "page": 9,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO V- APERTURA DE RECURSOS Y GASTOS / CLASIFICADOS POR ACTIVIDAD",
+   "values": [
+    "931.945.511",
+    "846.745.200"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Parque Santo Domingo (Anexo E) - - Parque Santo Domingo (Anexo F)",
+   "lado": null,
+   "page": 9,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO V- APERTURA DE RECURSOS Y GASTOS / CLASIFICADOS POR ACTIVIDAD",
+   "values": [
+    "1.723.064.013",
+    "1.352.294.892"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Estadio (Anexo E) 72.525.021 29.501.260 Estadio (Anexo F)",
+   "lado": null,
+   "page": 9,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO V- APERTURA DE RECURSOS Y GASTOS / CLASIFICADOS POR ACTIVIDAD",
+   "values": [
+    "1.889.285.004",
+    "1.609.555.534"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Sede Central (Anexo E) 13.248.916.744 11.429.209.371 Administración (Anexo F)",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Cuotas de Socios",
+   "values": [
+    "6.576.118.028",
+    "6.851.394.475"
+   ],
+   "columns": null
+  },
+  {
+   "label": "13.518.882.094 11.486.073.747 Diferencia de Cambio generada por Pasivos e Intereses (Anexo F)",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Cuotas de Socios",
+   "values": [
+    "10.699.446.685",
+    "11.951.171.779"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros Recursos:",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Cuotas de Socios",
+   "values": [
+    "17.275.564.713",
+    "18.802.566.254"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Competiciones partidos amistosos",
+   "lado": null,
+   "page": 10,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ASOCIACIÓN CIVIL / PRESUPUESTO DE RECURSOS Y GASTOS PARA EL EJERCICIO 2023/2024 / RECURSOS                                         PRESUPUESTO                 EJECUCION / A- RECURSOS DEL FÚTBOL",
+   "values": [
+    "180.000.000",
+    "463.418.323"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Derechos de T.V.",
+   "lado": null,
+   "page": 10,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ASOCIACIÓN CIVIL / PRESUPUESTO DE RECURSOS Y GASTOS PARA EL EJERCICIO 2023/2024 / RECURSOS                                         PRESUPUESTO                 EJECUCION / A- RECURSOS DEL FÚTBOL",
+   "values": [
+    "861.369.825",
+    "2.836.075.715"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Publicidad y sponsorización",
+   "lado": null,
+   "page": 10,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ASOCIACIÓN CIVIL / PRESUPUESTO DE RECURSOS Y GASTOS PARA EL EJERCICIO 2023/2024 / RECURSOS                                         PRESUPUESTO                 EJECUCION / A- RECURSOS DEL FÚTBOL",
+   "values": [
+    "1.421.670.380",
+    "3.894.029.816"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Departamento de Educación Física",
+   "lado": "revenue",
+   "page": 10,
+   "section": "B- RECURSOS DE OTRAS SECCIONES DEPORTIVAS",
+   "values": [
+    "110.876.347",
+    "295.352.209"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Departamento Cultural y Social",
+   "lado": "revenue",
+   "page": 10,
+   "section": "B- RECURSOS DE OTRAS SECCIONES DEPORTIVAS",
+   "values": [
+    "250.000",
+    "355.292"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Departamento de Básquet",
+   "lado": "revenue",
+   "page": 10,
+   "section": "B- RECURSOS DE OTRAS SECCIONES DEPORTIVAS",
+   "values": [
+    "4.552.800",
+    "12.300.711"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Complejo Tenis",
+   "lado": "revenue",
+   "page": 10,
+   "section": "B- RECURSOS DE OTRAS SECCIONES DEPORTIVAS",
+   "values": [
+    "45.205.550",
+    "131.201.365"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Complejo Polideportivo Wilde",
+   "lado": "revenue",
+   "page": 10,
+   "section": "B- RECURSOS DE OTRAS SECCIONES DEPORTIVAS",
+   "values": [
+    "68.348.520",
+    "261.266.336"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos por socios y abonados",
+   "lado": "revenue",
+   "page": 10,
+   "section": "OTROS RECURSOS",
+   "values": [
+    "4.353.508.439",
+    "13.518.882.094"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros ingresos ordinarios",
+   "lado": "revenue",
+   "page": 10,
+   "section": "OTROS RECURSOS",
+   "values": [
+    "792.391.354",
+    "2.964.896.292"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Extraordinarios",
+   "lado": "revenue",
+   "page": 10,
+   "section": "OTROS RECURSOS",
+   "values": [
+    "800.000.000",
+    "106.039.224"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ingresos por cesión de uso de palcos y plateas",
+   "lado": "revenue",
+   "page": 10,
+   "section": "OTROS RECURSOS",
+   "values": [
+    "1.603.490.308",
+    "5.879.551.558"
+   ],
+   "columns": null
+  },
+  {
+   "label": "RECPAM -",
+   "lado": "revenue",
+   "page": 10,
+   "section": "OTROS RECURSOS",
+   "values": [
+    "18.961.207.621"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gastos explotación del estadio",
+   "lado": null,
+   "page": 11,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ASOCIACIÓN CIVIL / PRESUPUESTO DE RECURSOS Y GASTOS PARA EL EJERCICIO 2023/2024 (cont.) / GASTOS                                            PRESUPUESTO                 EJECUCION / A- GASTOS FÚTBOL",
+   "values": [
+    "906.240.320",
+    "2.339.401.563"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Participación en campeonatos oficiales de AFA",
+   "lado": null,
+   "page": 11,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ASOCIACIÓN CIVIL / PRESUPUESTO DE RECURSOS Y GASTOS PARA EL EJERCICIO 2023/2024 (cont.) / GASTOS                                            PRESUPUESTO                 EJECUCION / A- GASTOS FÚTBOL",
+   "values": [
+    "452.546.173",
+    "2.219.888.875"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Departamento de Educación Física",
+   "lado": "expense",
+   "page": 11,
+   "section": "B- GASTOS OTRAS SECCIONES DEPORTIVAS",
+   "values": [
+    "252.476.871",
+    "626.095.805"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Departamento Cultural y Social",
+   "lado": "expense",
+   "page": 11,
+   "section": "B- GASTOS OTRAS SECCIONES DEPORTIVAS",
+   "values": [
+    "12.187.758",
+    "3.603.799"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Departamento de Básquet",
+   "lado": "expense",
+   "page": 11,
+   "section": "B- GASTOS OTRAS SECCIONES DEPORTIVAS",
+   "values": [
+    "20.097.432",
+    "71.306.825"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Complejo Tenis",
+   "lado": "expense",
+   "page": 11,
+   "section": "B- GASTOS OTRAS SECCIONES DEPORTIVAS",
+   "values": [
+    "127.165.062",
+    "310.260.968"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Complejo Polideportivo Wilde",
+   "lado": "expense",
+   "page": 11,
+   "section": "B- GASTOS OTRAS SECCIONES DEPORTIVAS",
+   "values": [
+    "346.004.044",
+    "1.005.484.197"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Parque Santo Domingo",
+   "lado": "expense",
+   "page": 11,
+   "section": "B- GASTOS OTRAS SECCIONES DEPORTIVAS",
+   "values": [
+    "520.965.457",
+    "1.719.737.620"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Filial Capital Federal",
+   "lado": "expense",
+   "page": 11,
+   "section": "B- GASTOS OTRAS SECCIONES DEPORTIVAS",
+   "values": [
+    "91.897.478",
+    "220.653.110"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Sede Social",
+   "lado": "expense",
+   "page": 11,
+   "section": "B- GASTOS OTRAS SECCIONES DEPORTIVAS",
+   "values": [
+    "539.474.816",
+    "2.697.710.533"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gerencias operativas",
+   "lado": "expense",
+   "page": 11,
+   "section": "OTROS GASTOS DE FUNCIONAMIENTO",
+   "values": [
+    "2.507.649",
+    "537.392.938"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gastos generales de administración",
+   "lado": "expense",
+   "page": 11,
+   "section": "OTROS GASTOS DE FUNCIONAMIENTO",
+   "values": [
+    "1.162.531.801",
+    "1.518.543.535"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gastos financieros",
+   "lado": "expense",
+   "page": 11,
+   "section": "OTROS GASTOS DE FUNCIONAMIENTO",
+   "values": [
+    "2.410.464.523",
+    "10.699.446.685"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Otros gastos ordinarios",
+   "lado": "expense",
+   "page": 11,
+   "section": "OTROS GASTOS DE FUNCIONAMIENTO",
+   "values": [
+    "4.923.454",
+    "1.747.045.724"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Derechos T.V.",
+   "lado": "revenue",
+   "page": 41,
+   "section": "ANEXO D / FÚTBOL PROFESIONAL / RECURSOS / PARTIDOS COPA ARGENTINA Y COPA SUPERLIGA / RECAUDACIONES PARTIDOS",
+   "values": [
+    "2.836.075.715",
+    "3.410.381.831"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Publicidad y concesiones",
+   "lado": "revenue",
+   "page": 41,
+   "section": "ANEXO D / FÚTBOL PROFESIONAL / RECURSOS / PARTIDOS COPA ARGENTINA Y COPA SUPERLIGA / RECAUDACIONES PARTIDOS",
+   "values": [
+    "3.894.029.816",
+    "2.551.454.750"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Plateas",
+   "lado": "revenue",
+   "page": 41,
+   "section": "ANEXO D / FÚTBOL PROFESIONAL / RECURSOS / PARTIDOS COPA ARGENTINA Y COPA SUPERLIGA / RECAUDACIONES PARTIDOS",
+   "values": [
+    "5.879.551.558",
+    "5.334.152.920"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Varios",
+   "lado": "revenue",
+   "page": 41,
+   "section": "ANEXO D / FÚTBOL PROFESIONAL / RECURSOS / PARTIDOS COPA ARGENTINA Y COPA SUPERLIGA / RECAUDACIONES PARTIDOS",
+   "values": [
+    "844.389.059",
+    "446.418.206"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Jugadores",
+   "lado": "expense",
+   "page": 41,
+   "section": "GASTOS",
+   "values": [
+    "11.494.498.654",
+    "9.136.090.904"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Técnicos y preparadores físicos",
+   "lado": "expense",
+   "page": 41,
+   "section": "GASTOS",
+   "values": [
+    "498.335.033",
+    "337.642.008"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Personal auxiliar fútbol",
+   "lado": "expense",
+   "page": 41,
+   "section": "GASTOS",
+   "values": [
+    "1.196.963.202",
+    "977.291.351"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Asistencia médica",
+   "lado": "expense",
+   "page": 41,
+   "section": "GASTOS",
+   "values": [
+    "549.511.496",
+    "645.351.225"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Organización partidos",
+   "lado": "expense",
+   "page": 41,
+   "section": "GASTOS",
+   "values": [
+    "1.214.788.836",
+    "2.098.455.364"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Concentraciones-traslados-estadías-cesiones- otros",
+   "lado": "expense",
+   "page": 41,
+   "section": "GASTOS",
+   "values": [
+    "2.130.132.189",
+    "5.013.597.835"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Transferencias y Préstamos de Jugadores 4.736.943.543 - - - - - - - - -",
+   "lado": "revenue",
+   "page": 44,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO E / RECURSOS - RESULTADOS POR SECTORES",
+   "values": [
+    "4.736.943.543",
+    "4.786.288.689"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Palcos y Plateas 5.879.551.558 - - - - - - - - -",
+   "lado": "revenue",
+   "page": 44,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO E / RECURSOS - RESULTADOS POR SECTORES",
+   "values": [
+    "5.879.551.558",
+    "5.334.152.920"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Recaudaciones Partidos 1.430.907.795 - - - - - - - - -",
+   "lado": "revenue",
+   "page": 44,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO E / RECURSOS - RESULTADOS POR SECTORES",
+   "values": [
+    "1.430.907.795",
+    "1.339.958.551"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Derechos de Televisación 2.836.075.715 - - - - - - - - -",
+   "lado": "revenue",
+   "page": 44,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO E / RECURSOS - RESULTADOS POR SECTORES",
+   "values": [
+    "2.836.075.715",
+    "3.410.381.831"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Publicidad 3.894.029.816 - - - - - - - - -",
+   "lado": "revenue",
+   "page": 44,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO E / RECURSOS - RESULTADOS POR SECTORES",
+   "values": [
+    "3.894.029.816",
+    "2.551.454.750"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Cuotas Sociales - - - - 269.965.350 - - - -",
+   "lado": "revenue",
+   "page": 44,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO E / RECURSOS - RESULTADOS POR SECTORES",
+   "values": [
+    "13.248.916.744",
+    "13.518.882.094",
+    "11.486.073.747"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Carnets Asociados - - - - - - - - -",
+   "lado": "revenue",
+   "page": 44,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO E / RECURSOS - RESULTADOS POR SECTORES",
+   "values": [
+    "42.301.581",
+    "42.301.581",
+    "81.633.300"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Cuota Colegio - - - - - 1.729.045.041 - - - -",
+   "lado": "revenue",
+   "page": 44,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO E / RECURSOS - RESULTADOS POR SECTORES",
+   "values": [
+    "1.729.045.041",
+    "1.879.527.848"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Subvención - - - - - 207.852.259 - - - -",
+   "lado": "revenue",
+   "page": 44,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO E / RECURSOS - RESULTADOS POR SECTORES",
+   "values": [
+    "207.852.259",
+    "208.836.428"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Aranceles deportivos y recreativos - - 133.193.580 116.133.315 414.261.874 - 129.513.305 - 30.288.317 -",
+   "lado": "revenue",
+   "page": 44,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO E / RECURSOS - RESULTADOS POR SECTORES",
+   "values": [
+    "823.390.391",
+    "615.248.992"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Recursos Futbol Infantil/Amateur - 62.807.704 - - 81.718.611 - 78.086.673 - - -",
+   "lado": "revenue",
+   "page": 44,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO E / RECURSOS - RESULTADOS POR SECTORES",
+   "values": [
+    "222.612.988",
+    "144.822.176"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Estacionamientos - - - - - - 15.575.135 - - -",
+   "lado": "revenue",
+   "page": 44,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO E / RECURSOS - RESULTADOS POR SECTORES",
+   "values": [
+    "15.575.135",
+    "22.233.364"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Sueldos, Jornales y Cargas Sociales",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "13.189.796.889",
+    "1.013.346.632",
+    "555.231.552",
+    "236.414.848",
+    "150.089.095",
+    "2.157.698.155",
+    "649.405.102",
+    "946.640.367",
+    "1.297.829.229",
+    "2.031.092.656",
+    "22.227.544.525",
+    "19.390.947.767"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Farmacia y Asistencia Médica 549.511.496 - - - - - - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "5.046.433",
+    "554.557.929",
+    "714.488.044"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Organización Partidos 1.275.034.020 - - - - - - - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "1.275.034.020",
+    "2.154.894.947"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Concentraciones traslados, estadías, cesiones y otros 2.130.132.189 548.352.866 - - - - - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "15.404.850",
+    "2.693.889.905",
+    "5.459.495.843"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gastos Derivados de la Venta de Jugadores 738.442.785 - - - - - - - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "738.442.785",
+    "1.294.899.173"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Honorarios - 161.097.555 145.774.875 39.053.973 6.761.159 35.706.241 58.143.573 -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "134.742.105",
+    "46.681.836",
+    "627.961.317",
+    "1.032.044.365"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Fútsal, Fútbol Infantil y Juvenil - 170.519.429 10.284.161 - 391.880 - - - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "181.195.470",
+    "209.654.412"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Licencias - 1.237.602 - - - - - - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "1.237.602",
+    "458.439"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Útiles y Productos - 18.811.628 - - - 9.738.648 -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "83.732.898",
+    "73.907.760",
+    "73.366.381",
+    "259.557.315",
+    "71.679.293"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Intereses - - - - - - - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "3.085.290.438",
+    "3.085.290.438",
+    "2.824.693.163"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gastos Legales - - - - - - - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "1.747.045.723",
+    "1.747.045.723",
+    "2.125.554.792"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Diferencia de Cambio - - - - - - - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "7.614.156.247",
+    "7.614.156.247",
+    "9.126.478.616"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Campamentos - - - - - 15.507.024 - - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "15.507.024",
+    "72.004.744"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Servicios - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "10.537.348",
+    "8.772.464",
+    "28.784.391",
+    "171.368.226",
+    "317.141.523",
+    "209.322.226",
+    "138.239.530",
+    "884.165.708",
+    "729.551.203"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Conservaciones y Reparaciones - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "10.976.263",
+    "29.325.595",
+    "38.090.828",
+    "51.141.997",
+    "372.222.832",
+    "155.535.421",
+    "69.467.442",
+    "726.760.378",
+    "686.769.148"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gastos Bancarios y comisiones - - - - - - - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "1.388.503.882",
+    "1.388.503.882",
+    "155.237.753"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Impuestos al Débito y Crédito - - - - - - - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "356.608.127",
+    "356.608.127",
+    "436.643.830"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Tienda - - - - - - - - -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "336.944.645",
+    "336.944.645",
+    "12.167.848"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gastos Varios - 4.200.711 -",
+   "lado": "expense",
+   "page": 45,
+   "section": "CLUB ATLÉTICO INDEPENDIENTE / ANEXO F / GASTOS - RESULTADOS POR SECTORES",
+   "values": [
+    "13.278.536",
+    "25.704.798",
+    "38.784.518",
+    "1.886.613",
+    "3.326.393",
+    "17.948.263",
+    "367.716.523",
+    "472.846.355",
+    "1.464.335.878"
+   ],
+   "columns": null
+  }
+ ]
+}

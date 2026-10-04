@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Fortaleza/demonstracoes-contabeis-saf-2025.md",
+ "generado": "2026-10-02T00:15:31.367Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de Reais)",
+ "caja": {
+  "lineas": [
+   179
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   181,
+   193
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Empréstimos e financiamentos corriente (35.966) y no corriente (24.200) suman 60.166, coincidiendo con la nota 22; se excluyen pasivos de arrendamiento y parcelamentos tributarios."
+}

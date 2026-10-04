@@ -1,0 +1,446 @@
+{
+ "md": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2024.md",
+ "pdf": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2024.pdf",
+ "club": "como",
+ "year": 2024,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:04:35.081Z",
+ "tieOuts": {
+  "cierran": 56,
+  "noCierran": 10
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "8 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "12 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 42,
+  "notasUsadas": []
+ },
+ "ladoConocido": 27,
+ "rubros": [
+  {
+   "label": "a) ricavi da gare",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    992.906
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "b) abbonamenti",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    552.687
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "a) contributi in conto esercizio",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    7356.392
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "b) sponsorizzazioni",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    265.358
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "c) proventi pubblicitari",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    287.1
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "d) proventi commerciali e royalties",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    100
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "i) altri ricavi e proventi diversi",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    260.97
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "6) Per materie prime, sussidiarie, di consumo",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    563.223
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "7) Per servizi",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    12520.814
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "8) Per godimento di beni di terzi",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    593.339
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "a) salari e stipendi",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    30392.201
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "b) oneri sociali",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    2733.473
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "c) trattamento di fine rapporto",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    400.195
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    4746.36
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "b) ammortamento delle immobilizzazioni materiali",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    342.459
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "c) altre svalutazioni delle immobilizzazioni",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    603.4
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "12) Accantonamenti per rischi",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    175.655
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "a) oneri da organizzazione competizioni",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    627.77
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "b) costi per acquisizione temporanea prestazione calciatori",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    500
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "c) minusvalenze cessione diritti prestaz.calciatori",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    585.411
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "d) altri oneri da gestione calciatori",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    88.25
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "e) altri oneri diversi e sopravvenienze passive",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    2712.845
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Differenza fra valore e costi della produzione (A - B)",
+   "lado": "expense",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    -47769.982
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "- altri proventi diversi",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    18.25
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "a) di partecipazioni",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "values": [
+    -8.695
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Commissioni su fidejussioni",
+   "lado": null,
+   "page": 26,
+   "section": "Le spese amministrative, pubblicitarie e generali comprendono tra l’altro:",
+   "values": [
+    0.000301
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Compenso collegio sindacale",
+   "lado": null,
+   "page": 26,
+   "section": "Le spese amministrative, pubblicitarie e generali comprendono tra l’altro:",
+   "values": [
+    0.000035
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Consulenti esterni",
+   "lado": null,
+   "page": 26,
+   "section": "Le spese amministrative, pubblicitarie e generali comprendono tra l’altro:",
+   "values": [
+    0.000646
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Diversi",
+   "lado": null,
+   "page": 26,
+   "section": "Le spese amministrative, pubblicitarie e generali comprendono tra l’altro:",
+   "values": [
+    0.000409
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Legali e notarili",
+   "lado": null,
+   "page": 26,
+   "section": "Le spese amministrative, pubblicitarie e generali comprendono tra l’altro:",
+   "values": [
+    0.000112
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Manutenzioni ordinarie",
+   "lado": null,
+   "page": 26,
+   "section": "Le spese amministrative, pubblicitarie e generali comprendono tra l’altro:",
+   "values": [
+    0.000019
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Omaggi, promozionali e rappresentanza",
+   "lado": null,
+   "page": 26,
+   "section": "Le spese amministrative, pubblicitarie e generali comprendono tra l’altro:",
+   "values": [
+    0.00098
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Postelegrafoniche",
+   "lado": null,
+   "page": 26,
+   "section": "Le spese amministrative, pubblicitarie e generali comprendono tra l’altro:",
+   "values": [
+    0.000004
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Pubblicità",
+   "lado": null,
+   "page": 26,
+   "section": "Le spese amministrative, pubblicitarie e generali comprendono tra l’altro:",
+   "values": [
+    0.000241
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Rimborsi vari",
+   "lado": null,
+   "page": 26,
+   "section": "Le spese amministrative, pubblicitarie e generali comprendono tra l’altro:",
+   "values": [
+    0.000175
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Servizi da controllante e controllate dalla controllante",
+   "lado": null,
+   "page": 26,
+   "section": "Le spese amministrative, pubblicitarie e generali comprendono tra l’altro:",
+   "values": [
+    0.002553
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Spese bancarie",
+   "lado": "expense",
+   "page": 26,
+   "section": "Le spese amministrative, pubblicitarie e generali comprendono tra l’altro:",
+   "values": [
+    0.000052
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Utenze diverse",
+   "lado": null,
+   "page": 26,
+   "section": "Le spese amministrative, pubblicitarie e generali comprendono tra l’altro:",
+   "values": [
+    0.000132
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Valore della produzione",
+   "lado": "revenue",
+   "page": 35,
+   "section": "Il Conto Economico presenta, in sintesi, i seguenti valori:",
+   "values": [
+    11.669
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Costi della produzione",
+   "lado": "expense",
+   "page": 35,
+   "section": "Il Conto Economico presenta, in sintesi, i seguenti valori:",
+   "values": [
+    61.181
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Proventi e oneri finanziari",
+   "lado": null,
+   "page": 35,
+   "section": "Il Conto Economico presenta, in sintesi, i seguenti valori:",
+   "values": [
+    0.02
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Rettifiche di valore di attività e passività finanziarie",
+   "lado": null,
+   "page": 35,
+   "section": "Il Conto Economico presenta, in sintesi, i seguenti valori:",
+   "values": [
+    0.009
+   ],
+   "origen": "estado 39"
+  }
+ ]
+}

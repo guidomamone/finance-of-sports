@@ -1,0 +1,190 @@
+{
+  "md": "Clubes/Brasil/Vasco da Gama/dre-balanco-patrimonial-2024.md",
+  "pdf": "Clubes/Brasil/Vasco da Gama/dre-balanco-patrimonial-2024.pdf",
+  "club": "vascodagama-br",
+  "year": 2024,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:54:10.462Z",
+  "tieOuts": {
+    "cierran": 3,
+    "noCierran": 11
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "9 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 15,
+    "notasUsadas": []
+  },
+  "ladoConocido": 11,
+  "rubros": [
+    {
+      "label": "Trabalhista",
+      "lado": null,
+      "page": 43,
+      "section": "174.280               174.408 / Efeito no Resultado de 2024 (DRE) / Movimentações / Saldo em 2023    Despesa em 2024                        Saldo em 2024 / 2024",
+      "values": [
+        118.784
+      ],
+      "origen": "estado 31",
+      "glosa": "Laboral"
+    },
+    {
+      "label": "Cível",
+      "lado": null,
+      "page": 43,
+      "section": "174.280               174.408 / Efeito no Resultado de 2024 (DRE) / Movimentações / Saldo em 2023    Despesa em 2024                        Saldo em 2024 / 2024",
+      "values": [
+        24.122
+      ],
+      "origen": "estado 31",
+      "glosa": "Civil"
+    },
+    {
+      "label": "Tributária 3.153 (811)",
+      "lado": null,
+      "page": 43,
+      "section": "174.280               174.408 / Efeito no Resultado de 2024 (DRE) / Movimentações / Saldo em 2023    Despesa em 2024                        Saldo em 2024 / 2024",
+      "values": [
+        2.343
+      ],
+      "origen": "estado 31",
+      "glosa": "Tributaria 3.153 (811)"
+    },
+    {
+      "label": "Partes relacionadas",
+      "lado": null,
+      "page": 43,
+      "section": "174.280               174.408 / Efeito no Resultado de 2024 (DRE) / Movimentações / Saldo em 2023    Despesa em 2024                        Saldo em 2024 / 2024",
+      "values": [
+        28.35
+      ],
+      "origen": "estado 31",
+      "glosa": "Partes relacionadas"
+    },
+    {
+      "label": "Terrenos 101.392 - -",
+      "lado": "expense",
+      "page": 41,
+      "section": "9. Imobilizado / 2022     Adições          Baixas         2023 / Custo",
+      "values": [
+        101.392
+      ],
+      "origen": "estado 26",
+      "glosa": "Terrenos 101.392 - -"
+    },
+    {
+      "label": "Imóveis e Benfeitoria 80.687 - -",
+      "lado": "expense",
+      "page": 41,
+      "section": "9. Imobilizado / 2022     Adições          Baixas         2023 / Custo",
+      "values": [
+        80.687
+      ],
+      "origen": "estado 26",
+      "glosa": "Inmuebles y mejoras 80.687 - -"
+    },
+    {
+      "label": "Veículos e Embarcações 2.330 - -",
+      "lado": "expense",
+      "page": 41,
+      "section": "9. Imobilizado / 2022     Adições          Baixas         2023 / Custo",
+      "values": [
+        2.33
+      ],
+      "origen": "estado 26",
+      "glosa": "Vehículos y embarcaciones 2.330 - -"
+    },
+    {
+      "label": "Outros Imobilizados 2.245 34 -",
+      "lado": "expense",
+      "page": 41,
+      "section": "9. Imobilizado / 2022     Adições          Baixas         2023 / Custo",
+      "values": [
+        2.279
+      ],
+      "origen": "estado 26",
+      "glosa": "Otros inmovilizados 2.245 34 -"
+    },
+    {
+      "label": "Outros custos e despesas (8.956) -",
+      "lado": "expense",
+      "page": 32,
+      "section": "(+/-) Custo/Despesas operacionais - Clube / (159.161)                         (170.096) / social e esportes amadores",
+      "values": [
+        -0.004753
+      ],
+      "origen": "estado 14",
+      "glosa": "Otros costos y gastos (8.956) -"
+    },
+    {
+      "label": "Transporte e outros gastos com competição (1.015) -",
+      "lado": "expense",
+      "page": 32,
+      "section": "(+/-) Custo/Despesas operacionais - Clube / (159.161)                         (170.096) / social e esportes amadores",
+      "values": [
+        -0.001015
+      ],
+      "origen": "estado 14",
+      "glosa": "Transporte y otros gastos de competición (1.015) -"
+    },
+    {
+      "label": "Depreciação/Amortização (1.766) -",
+      "lado": "expense",
+      "page": 32,
+      "section": "(+/-) Custo/Despesas operacionais - Clube / (159.161)                         (170.096) / social e esportes amadores",
+      "values": [
+        -0.001766
+      ],
+      "origen": "estado 14",
+      "glosa": "Depreciación/Amortización (1.766) -"
+    },
+    {
+      "label": "Abertura das Despesas",
+      "lado": "expense",
+      "page": 49,
+      "section": "21. Custo/Despesas operacionais - Clube social e esportes amadores / Nota         31/12/2024           31/12/2023",
+      "values": [
+        -73.318
+      ],
+      "origen": "estado 37",
+      "glosa": "Desglose de gastos"
+    },
+    {
+      "label": "Pessoal",
+      "lado": "expense",
+      "page": 49,
+      "section": "21. Custo/Despesas operacionais - Clube social e esportes amadores / Nota         31/12/2024           31/12/2023",
+      "values": [
+        -8.685
+      ],
+      "origen": "estado 37",
+      "glosa": "Personal"
+    },
+    {
+      "label": "Jogos e Competições",
+      "lado": "expense",
+      "page": 49,
+      "section": "21. Custo/Despesas operacionais - Clube social e esportes amadores / Nota         31/12/2024           31/12/2023",
+      "values": [
+        -2.811
+      ],
+      "origen": "estado 37",
+      "glosa": "Partidos y competiciones"
+    },
+    {
+      "label": "Despesas Gerais",
+      "lado": "expense",
+      "page": 49,
+      "section": "21. Custo/Despesas operacionais - Clube social e esportes amadores / Nota         31/12/2024           31/12/2023",
+      "values": [
+        -33.388
+      ],
+      "origen": "estado 37",
+      "glosa": "Gastos generales"
+    }
+  ]
+}

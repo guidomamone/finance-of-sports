@@ -1,0 +1,50 @@
+{
+  "club": "atletico-bucaramanga",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Atletico Bucaramanga/dictamen-revisor-fiscal-2025.md",
+  "generatedAt": "2026-09-30T21:57:54.817Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 8,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 5,
+      "section": "# Cuestiones clave de Auditoría / # Activo: / # Pasivo:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Para el año 2025 el Club debe realizar el pago de los derechos económicos sobre los jugadores mencionados en el párrafo anterior por un valor total de",
+          "values": [
+            "$2.472.351.026."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Se reconoce la provisión por valor de $350.000.000 por demandas laborales que ascienden al monto de",
+          "values": [
+            "$350.000.000."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/atletico-bucaramanga-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"atletico-bucaramanga\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Inglaterra/Liverpool/liverpool-group-accounts-2023-24.md",
+ "generado": "2026-10-02T00:17:42.958Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000",
+ "caja": {
+  "lineas": [
+   729
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1793
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance consolidado no desglosa la deuda bancaria (incluida dentro de los acreedores a menos y más de un año); se toma 'Bank loans and overdrafts' de la nota 19 (corriente + no corriente, £115,595k). La deuda intercompañía (£198.7m) queda dentro de 'Other payables' y no se incluyó."
+}

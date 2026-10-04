@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.md",
+ "generado": "2026-10-04T17:59:26.291Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "The tables in the Balance Sheet and Income Statement are expressed to the nearest Euro",
+ "caja": {
+  "lineas": [
+   2308,
+   2309
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance oficial (en euros) no presenta deudas con bancos ni otros financiadores; la posición financiera neta es positiva (liquidez). Caja = cuentas bancarias y postales + efectivo (total 51.101.966)."
+}

@@ -1,0 +1,16 @@
+{
+ "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2023.md",
+ "generado": "2026-10-02T00:18:18.140Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR EUR EUR EUR",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas provistas no contienen la Bilanz (sólo GuV parcial, Anhang, Anlagenspiegel y Bestätigungsvermerk); no aparecen líneas de Kassenbestand/Guthaben bei Kreditinstituten ni de Verbindlichkeiten gegenüber Kreditinstituten, por lo que no se pueden identificar caja ni deuda financiera. La escala (EUR en unidades) se infiere del encabezado de la GuV."
+}

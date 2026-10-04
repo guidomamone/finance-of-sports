@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Inglaterra/Sunderland/sunderland-full-accounts-2023-24.md",
+ "generado": "2026-10-02T00:20:24.035Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£'000",
+ "caja": {
+  "lineas": [
+   809
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1509
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance no muestra cifras alineadas por línea; la caja es 'Cash at bank' (sin valor claro en 2024 por OCR). La deuda financiera es el sobregiro bancario de £8,289k (nota 14). Los montos adeudados a la matriz (£19,820k) y a empresas del grupo (£12,739k) no se incluyeron porque son financiación de accionistas a convertir en capital; su inclusión es dudosa. No hay deuda financiera no corriente."
+}

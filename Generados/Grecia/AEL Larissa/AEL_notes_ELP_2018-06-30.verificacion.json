@@ -1,0 +1,134 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.md",
+ "generado": "2026-10-03T23:03:06.284Z",
+ "estado": "ok",
+ "clubId": "aellarissa-gr",
+ "year": 2018,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2017 de este documento suma ingresos 2.219786; el sitio tiene 2.219786"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2018: 3.40008 en este documento y 3.40008 en AEL_notes_ELP_2019-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2017",
+   "ok": true,
+   "detalle": "ingresos de 2017: 2.219786 en AEL_notes_ELP_2017-06-30.pdf y 2.219786 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: El bloque no imprime la escala; los importes con céntimos (L80) indican unidades."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 3.40008,
+  "gastos": 2.658492,
+  "financiero": -0.011555,
+  "impuesto": 0,
+  "resultadoImpreso": 0.730033,
+  "resultadoParaCargar": 0.730033,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "lado": "ingreso",
+   "M": 2.710883,
+   "pagina": 3,
+   "linea": 80,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(+) Λοιπά συνήθη έσοδα",
+   "lado": "ingreso",
+   "M": 0.687187,
+   "pagina": 3,
+   "linea": 83,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(+) Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0.00201,
+   "pagina": 3,
+   "linea": 88,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Κόστος πωλήσεων",
+   "lado": "gasto",
+   "M": 1.541699,
+   "pagina": 3,
+   "linea": 81,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Έξοδα διοίκησης",
+   "lado": "gasto",
+   "M": 0.637944,
+   "pagina": 3,
+   "linea": 85,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Έξοδα διάθεσης",
+   "lado": "gasto",
+   "M": 0.478458,
+   "pagina": 3,
+   "linea": 86,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Λοιπά έξοδα και ζημιές",
+   "lado": "gasto",
+   "M": 0.000391,
+   "pagina": 3,
+   "linea": 87,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "(-) Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.011555,
+   "linea": 91
+  }
+ ],
+ "impuesto": []
+}

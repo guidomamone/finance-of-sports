@@ -1,0 +1,170 @@
+{
+  "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.md",
+  "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.pdf",
+  "club": "goias-br",
+  "year": 2013,
+  "generatedAt": "2026-10-03T00:16:10.327Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Bilheterias",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"RECEITA LÍQUIDA\"",
+      "values": [
+        8.41719
+      ],
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Direitos de transmissão de TV",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"RECEITA LÍQUIDA\"",
+      "values": [
+        30.648015
+      ],
+      "glosa": "Derechos de transmisión televisiva"
+    },
+    {
+      "label": "Premiação/participações",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"RECEITA LÍQUIDA\"",
+      "values": [
+        4.3
+      ],
+      "glosa": "Premios y participaciones"
+    },
+    {
+      "label": "Transação de atletas",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"RECEITA LÍQUIDA\"",
+      "values": [
+        0.253333
+      ],
+      "glosa": "Traspaso de jugadores"
+    },
+    {
+      "label": "Patrocínio/ publicidade/propaganda",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"RECEITA LÍQUIDA\"",
+      "values": [
+        1.839777
+      ],
+      "glosa": "Patrocinio y publicidad"
+    },
+    {
+      "label": "Mensalidades",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"RECEITA LÍQUIDA\"",
+      "values": [
+        3.535146
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Jogos lotéricos",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"RECEITA LÍQUIDA\"",
+      "values": [
+        1.928792
+      ],
+      "glosa": "Loterías"
+    },
+    {
+      "label": "Receitas patrimoniais",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"RECEITA LÍQUIDA\"",
+      "values": [
+        0.03934
+      ],
+      "glosa": "Ingresos patrimoniales"
+    },
+    {
+      "label": "Outras receitas",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"RECEITA LÍQUIDA\"",
+      "values": [
+        4.510592
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "(-) Deduções da receita",
+      "lado": "revenue",
+      "page": 18,
+      "section": "nota que desglosa \"RECEITA LÍQUIDA\"",
+      "values": [
+        -4.397459
+      ],
+      "glosa": "(-) Deducciones de los ingresos"
+    },
+    {
+      "label": "(-) Despesas com futebol profissional e amador",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        44.649623
+      ],
+      "glosa": "(-) Gastos de fútbol profesional y amateur"
+    },
+    {
+      "label": "(-) Despesas administrativas",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.204453
+      ],
+      "glosa": "(-) Gastos administrativos"
+    },
+    {
+      "label": "(-) Materiais",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.697356
+      ],
+      "glosa": "(-) Materiales"
+    },
+    {
+      "label": "(-) Serviços de terceiros",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        3.262262
+      ],
+      "glosa": "(-) Servicios de terceros"
+    },
+    {
+      "label": "(-) Despesas tributárias",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        0.837323
+      ],
+      "glosa": "(-) Gastos tributarios"
+    },
+    {
+      "label": "(-) Despesas gerais",
+      "lado": "expense",
+      "page": 6,
+      "section": "estado",
+      "values": [
+        4.867446
+      ],
+      "glosa": "(-) Gastos generales"
+    }
+  ]
+}

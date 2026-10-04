@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/España/CA Osasuna/auditoria2024.md",
+ "generado": "2026-10-02T00:18:52.050Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"a dy iii deudas a corto plazo\" + \"e il deudas a largo plazo\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "(euros)",
+ "caja": {
+  "lineas": [
+   435
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   476,
+   486
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda = Deudas a largo plazo (L476, 45.707.385) + Deudas a corto plazo (L486, 4.479.292), según criterio del club; incluyen otros pasivos financieros significativos además de deuda bancaria."
+}

@@ -1,0 +1,489 @@
+{
+ "md": "Clubes/Grecia/Volos NFC/Volos_board_report_2025-06-30.md",
+ "generatedAt": "2026-09-30T04:30:14.405Z",
+ "rubros": [
+  {
+   "label": "Πωλήσεις",
+   "lado": null,
+   "page": 2,
+   "section": "## 2.2 Αριθμοδείκτες αποδόσεως και αποδοτικότητας",
+   "choice": "player_sales",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "player_sales",
+     0.47000000000000003
+    ],
+    [
+     "lump_football_operations",
+     0.33
+    ],
+    [
+     "other_income",
+     0.15
+    ]
+   ],
+   "tokens": 1296
+  },
+  {
+   "label": "72.02 Εσοδα κεφαλαίων",
+   "lado": null,
+   "page": 1,
+   "section": "# ΕΚΘΕΣΗ ΔΙΑΧΕΙΡΙΣΗΣ / ΤΟΥ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ / ΠΡΟΣ ΤΗΝ ΤΑΚΤΙΚΗ ΓΕΝΙΚΗ ΣΥΝΕΛΕΥΣΗ ΤΩΝ ΜΕΤΟΧΩΝ ΤΗΣ ΠΑΕ ΒΟΛΟΣ Ν.Π.Σ. / ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024-2025 / ΠΕΡΙΟΔΟΣ 01/07/2024 - 30/06/2025",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "player_sales",
+     0.22
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1450
+  },
+  {
+   "label": "1. Έσοδα από πώληση αγαθών και υπηρεσιών",
+   "lado": null,
+   "page": 2,
+   "section": "## 4. Κατεχόμενα χρεόγραφα από την εταιρεία σε ποσοστό άνω του 10% / ## 5. Διαθέσιμο συνάλλαγμα / ## 6. Ακίνητα της Εταιρείας / ## 7. Υποκαταστήματα / ## 8. Αποτελέσματα της χρήσης",
+   "choice": "lump_football_operations",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.73
+    ],
+    [
+     "other_income",
+     0.16
+    ],
+    [
+     "sponsorship_commercial",
+     0.06
+    ]
+   ],
+   "tokens": 1414
+  },
+  {
+   "label": "71.04 Εσοδα παρεπόμενων ασχολιών",
+   "lado": null,
+   "page": 1,
+   "section": "# ΕΚΘΕΣΗ ΔΙΑΧΕΙΡΙΣΗΣ / ΤΟΥ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ / ΠΡΟΣ ΤΗΝ ΤΑΚΤΙΚΗ ΓΕΝΙΚΗ ΣΥΝΕΛΕΥΣΗ ΤΩΝ ΜΕΤΟΧΩΝ ΤΗΣ ΠΑΕ ΒΟΛΟΣ Ν.Π.Σ. / ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024-2025 / ΠΕΡΙΟΔΟΣ 01/07/2024 - 30/06/2025",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "stadium_other",
+     0.04
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1460
+  },
+  {
+   "label": "74 Επιχορηγήσεις",
+   "lado": null,
+   "page": 1,
+   "section": "# ΕΚΘΕΣΗ ΔΙΑΧΕΙΡΙΣΗΣ / ΤΟΥ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ / ΠΡΟΣ ΤΗΝ ΤΑΚΤΙΚΗ ΓΕΝΙΚΗ ΣΥΝΕΛΕΥΣΗ ΤΩΝ ΜΕΤΟΧΩΝ ΤΗΣ ΠΑΕ ΒΟΛΟΣ Ν.Π.Σ. / ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024-2025 / ΠΕΡΙΟΔΟΣ 01/07/2024 - 30/06/2025",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1446
+  },
+  {
+   "label": "Ίδια Κεφάλαια",
+   "lado": null,
+   "page": 2,
+   "section": "αποτελεσμάτων.",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "73 Πωλήσεις Υπηρεσιών",
+   "lado": null,
+   "page": 1,
+   "section": "# ΕΚΘΕΣΗ ΔΙΑΧΕΙΡΙΣΗΣ / ΤΟΥ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ / ΠΡΟΣ ΤΗΝ ΤΑΚΤΙΚΗ ΓΕΝΙΚΗ ΣΥΝΕΛΕΥΣΗ ΤΩΝ ΜΕΤΟΧΩΝ ΤΗΣ ΠΑΕ ΒΟΛΟΣ Ν.Π.Σ. / ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024-2025 / ΠΕΡΙΟΔΟΣ 01/07/2024 - 30/06/2025",
+   "choice": "lump_football_operations",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.4
+    ],
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "sponsorship_commercial",
+     0.09
+    ]
+   ],
+   "tokens": 1450
+  },
+  {
+   "label": "70 Εμπορευμάτων",
+   "lado": null,
+   "page": 1,
+   "section": "# ΕΚΘΕΣΗ ΔΙΑΧΕΙΡΙΣΗΣ / ΤΟΥ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ / ΠΡΟΣ ΤΗΝ ΤΑΚΤΙΚΗ ΓΕΝΙΚΗ ΣΥΝΕΛΕΥΣΗ ΤΩΝ ΜΕΤΟΧΩΝ ΤΗΣ ΠΑΕ ΒΟΛΟΣ Ν.Π.Σ. / ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024-2025 / ΠΕΡΙΟΔΟΣ 01/07/2024 - 30/06/2025",
+   "choice": "other_expenses",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "sponsorship_commercial",
+     0.28
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1445
+  },
+  {
+   "label": "Μοιτά αποτελέσματα (κέρδη) εκμεταλλεύσεως",
+   "lado": null,
+   "page": 2,
+   "section": "## 4. Κατεχόμενα χρεόγραφα από την εταιρεία σε ποσοστό άνω του 10% / ## 5. Διαθέσιμο συνάλλαγμα / ## 6. Ακίνητα της Εταιρείας / ## 7. Υποκαταστήματα / ## 8. Αποτελέσματα της χρήσης",
+   "choice": "lump_football_operations",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.46
+    ],
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "lump_football_operations_expense",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1422
+  },
+  {
+   "label": "Μείον: Κόστος αγαθών και υπηρεσιών",
+   "lado": null,
+   "page": 2,
+   "section": "## 4. Κατεχόμενα χρεόγραφα από την εταιρεία σε ποσοστό άνω του 10% / ## 5. Διαθέσιμο συνάλλαγμα / ## 6. Ακίνητα της Εταιρείας / ## 7. Υποκαταστήματα / ## 8. Αποτελέσματα της χρήσης",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.41000000000000003
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "match_organisation_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1412
+  },
+  {
+   "label": "(+) ή (-) Υπόλ. Αποτελ/των προηγ. χρήσεων",
+   "lado": null,
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1303
+  },
+  {
+   "label": "Σύνολο",
+   "lado": null,
+   "page": 2,
+   "section": "## 4. Κατεχόμενα χρεόγραφα από την εταιρεία σε ποσοστό άνω του 10% / ## 5. Διαθέσιμο συνάλλαγμα / ## 6. Ακίνητα της Εταιρείας / ## 7. Υποκαταστήματα / ## 8. Αποτελέσματα της χρήσης",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "lump_football_operations",
+     0.29000000000000004
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1390
+  },
+  {
+   "label": "2. Επιχορηγήσεις",
+   "lado": null,
+   "page": 2,
+   "section": "## 4. Κατεχόμενα χρεόγραφα από την εταιρεία σε ποσοστό άνω του 10% / ## 5. Διαθέσιμο συνάλλαγμα / ## 6. Ακίνητα της Εταιρείας / ## 7. Υποκαταστήματα / ## 8. Αποτελέσματα της χρήσης",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "education",
+     0.04
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1399
+  },
+  {
+   "label": "Πλέον: Άλλα έσοδα",
+   "lado": null,
+   "page": 2,
+   "section": "## 4. Κατεχόμενα χρεόγραφα από την εταιρεία σε ποσοστό άνω του 10% / ## 5. Διαθέσιμο συνάλλαγμα / ## 6. Ακίνητα της Εταιρείας / ## 7. Υποκαταστήματα / ## 8. Αποτελέσματα της χρήσης",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1399
+  },
+  {
+   "label": "(+) ή (-) Διαφορές Φορολογικού Ελέγχου",
+   "lado": null,
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6
+    ],
+    [
+     "other_income",
+     0.21
+    ],
+    [
+     "exceptional_items",
+     0.1
+    ]
+   ],
+   "tokens": 1301
+  },
+  {
+   "label": "Μείον : Φόρος Εισοδήματος",
+   "lado": null,
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1293
+  },
+  {
+   "label": "Κέρδη Προς Διάθεση",
+   "lado": null,
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1287
+  },
+  {
+   "label": "1. Τακτικό Αποθεματικό",
+   "lado": null,
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "2. Πρώτο Μέρισμα",
+   "lado": null,
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "3. Τέλος Επιτηδεύματος",
+   "lado": null,
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "8. Υπόλοιπο Κερδών σε Νέον",
+   "lado": null,
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "lump_football_operations",
+     0.060000000000000005
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1292
+  }
+ ]
+}

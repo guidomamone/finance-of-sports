@@ -1,0 +1,42 @@
+{
+ "md": "Clubes/Brasil/Ituano/2012-anexo-b.md",
+ "pdf": "Clubes/Brasil/Ituano/2012-anexo-b.pdf",
+ "club": "ituano",
+ "year": 2012,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:53:18.753Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 2,
+ "rubros": [
+  {
+   "label": "Salários e Ordenados à Pagar",
+   "lado": "expense",
+   "page": 4,
+   "section": "## NOTA 12. OBRIGAÇÕES TRABALHISTAS - SALÁRIOS E ENCARGOS",
+   "values": [
+    80.985
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "INSS e FGTS a Recolher",
+   "lado": "expense",
+   "page": 4,
+   "section": "## NOTA 12. OBRIGAÇÕES TRABALHISTAS - SALÁRIOS E ENCARGOS",
+   "values": [
+    16.35059
+   ],
+   "origen": "estado 2"
+  }
+ ]
+}

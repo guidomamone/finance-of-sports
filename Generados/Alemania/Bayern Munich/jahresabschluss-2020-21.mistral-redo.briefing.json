@@ -1,0 +1,259 @@
+{
+  "club": "bayernmunich-de",
+  "year": 2021,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/Bayern Munich/jahresabschluss-2020-21.mistral-redo.md",
+  "generatedAt": "2026-09-30T14:08:06.069Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 3,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 1,
+      "section": "## Jahresabschluss der FC Bayern München AG - *Konzern*",
+      "columns": [
+        "AKTIVA zum 30.6.2021",
+        "in Mio. EURO",
+        "PASSIVA zum 30.6.2021",
+        "in Mio. EURO"
+      ],
+      "rows": [
+        {
+          "rawLabel": "A. Anlagevermögen",
+          "values": [
+            "",
+            "A. Eigenkapital",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "I. Immaterielle Vermögensgegenstände",
+          "values": [
+            "175,3",
+            "I. Gezeichnetes Kapital",
+            "30,0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Sach- und Finanzanlagen",
+          "values": [
+            "289,2",
+            "II. Kapital- und Gewinnrücklage",
+            "461,1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "464,5",
+            "",
+            "491,1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Umlaufvermögen (Forderungen, Anzahlungen, Vorräte, Bank- und Kassenguthaben)",
+          "values": [
+            "209,0",
+            "B. Rückstellungen",
+            "42,0"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "C. Verbindlichkeiten",
+            "108,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C. Rechnungsabgrenzungsposten",
+          "values": [
+            "3,8",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "D. Aktiver Überhang aus Vermögensverrechnung",
+          "values": [
+            "2,1",
+            "D. Rechnungsabgrenzungsposten",
+            "37,7"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "679,4",
+            "",
+            "679,4"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "FC Bayern München AG - *Konzern*",
+      "columns": [
+        "Umsatz",
+        "643,9",
+        "Mio. Euro"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Operatives Ergebnis (EBITDA)",
+          "values": [
+            "98,4",
+            "Mio. Euro"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gewinn vor Steuern",
+          "values": [
+            "5,0",
+            "Mio. Euro"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Jahresüberschuss",
+          "values": [
+            "1,9",
+            "Mio. Euro"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 2,
+      "section": "## Die FC Bayern München AG - *Konzern*",
+      "columns": [
+        "Geschäftsjahr",
+        "2011/12",
+        "2012/13",
+        "2013/14",
+        "2014/15",
+        "2015/16",
+        "2016/17",
+        "2017/18",
+        "2018/19",
+        "2019/20",
+        "2020/21"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Umsatz in Mio. Euro",
+          "values": [
+            "373,4",
+            "432,8",
+            "528,7",
+            "523,7",
+            "626,8",
+            "640,5",
+            "657,4",
+            "750,4",
+            "698,0",
+            "643,9"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "EBITDA-Ergebnis in Mio. Euro",
+          "values": [
+            "86,0",
+            "95,6",
+            "98,7",
+            "111,3",
+            "142,5",
+            "149,1",
+            "136,5",
+            "146,1",
+            "104,5",
+            "98,4"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Jahresüberschuss in Mio. Euro",
+          "values": [
+            "11,1",
+            "14,0",
+            "16,5",
+            "23,8",
+            "33,0",
+            "39,2",
+            "29,5",
+            "52,5",
+            "9,8",
+            "1,9"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 3,
+    "results": [
+      {
+        "label": "Operatives Ergebnis (EBITDA)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operatives Ergebnis (EBITDA)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gewinn vor Steuern",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gewinn vor Steuern",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Jahresüberschuss",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Jahresüberschuss",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "de",
+    "query": "Bayern Munich",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

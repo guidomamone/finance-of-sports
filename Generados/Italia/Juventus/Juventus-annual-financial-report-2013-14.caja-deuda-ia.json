@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2013-14.md",
+ "generado": "2026-10-04T18:00:10.113Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "*Amounts in Euro*",
+ "caja": {
+  "lineas": [
+   1721
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Solo se incluye el lado del activo del balance; falta la página del pasivo, por lo que no se pueden identificar las líneas de deuda financiera (la nota de partes relacionadas menciona 'Bonds and other current financial liabilities' por 157,557.7 miles de euros, pero no es una línea del balance)."
+}

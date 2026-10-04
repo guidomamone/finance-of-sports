@@ -1,0 +1,381 @@
+{
+  "club": "stuttgart-de",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/VfB Stuttgart/konzernabschluss-2023.md",
+  "generatedAt": "2026-09-30T22:38:00.579Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 224,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 11,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 5,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "« VfB Stuttgart Marketing GmbH",
+          "values": [
+            "4.011",
+            "6.735"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "« VfB Stuttgart Beteiligungs-GmbH (incl. Ergebnis der Marketing GmbH)",
+          "values": [
+            "3.540",
+            "6.261"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Spielbetrieb",
+          "values": [
+            "35.845",
+            "22.341"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Werbung/Sponsoring",
+          "values": [
+            "30.414",
+            "27.068"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Medienvermarktung",
+          "values": [
+            "56.756",
+            "45.429"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handel und Sonstiges",
+          "values": [
+            "81.077",
+            "57.541"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Konzernjahresüberschuss",
+          "values": [
+            "679.300,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verlustvortrag aus dem Vorjahr",
+          "values": [
+            "-76.624.209,93"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernbilanzverlust",
+          "values": [
+            "-75.944.909,89"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2. Spielerwerte",
+          "values": [
+            "81.653.082,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Geleistete Anzahlungen",
+          "values": [
+            "79.161,89"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2. Spielerwerte",
+          "values": [
+            "38.611.422,00",
+            "20.268.010,63",
+            "20.297.058,12",
+            "38.582.374,51",
+            "12.195.035,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Geleistete Anzahlungen",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ausgabe von Anteilen",
+          "values": [
+            "4.147.450,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einlagen stiller Gesellschafter",
+          "values": [
+            "2.825.000,00",
+            "2.825.000,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Nicht beherrschende Anteile",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Minderheitenausgleich",
+          "values": [
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresüberschuss/-fehlbetrag",
+          "values": [
+            "-16.551.430,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am",
+          "values": [
+            "31.12.2022",
+            "6.000.000,00",
+            "2.825.000,00",
+            "3.304.425,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am",
+          "values": [
+            "01.01.2023",
+            "6.000.000,00",
+            "2.825.000,00",
+            "3.304.425,14"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Nicht beherrschende Anteile",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Minderheitenausgleich",
+          "values": [
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresüberschuss/-fehlbetrag",
+          "values": [
+            "679.300,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am",
+          "values": [
+            "31.12.2023",
+            "6.000.000,00",
+            "2.825.000,00",
+            "3.983.725,18"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Nicht beherrschende Anteile vor Jahreser- Aufnicht beherrschende Anteile entfallen- / gebnis de Gewinne / Verluste / Summe / Stand am 01.01.2022 20.000,00 0,00 20.000,00 12.903.405 26 / Kapitalerhöhung/ Herabsetzung",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ausgabe von Anteilen",
+          "values": [
+            "0,00",
+            "4.147.450,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einlagen stiller Gesellschafter",
+          "values": [
+            "0,00",
+            "2.325.000,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Nicht beherrschende Anteile",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Minderheitenausgleich",
+          "values": [
+            "-75.875,00",
+            "-75.875,00",
+            "-75.875,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresüberschuss/-fehlbetrag",
+          "values": [
+            "75.875,00",
+            "75.875,00",
+            "-16.475.555,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am",
+          "values": [
+            "31.12.2022",
+            "20.000,00",
+            "0,00",
+            "20.000,00",
+            "3.324.425,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am",
+          "values": [
+            "01.01.2023",
+            "20.000,00",
+            "0,00",
+            "20.000,00",
+            "3.324.425,14"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Nicht beherrschende Anteile",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Minderheitenausgleich",
+          "values": [
+            "-97.712,00",
+            "-97.712,00",
+            "-97.712,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresüberschuss/-fehlbetrag",
+          "values": [
+            "97.712,00",
+            "97.712,00",
+            "777.012,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand am",
+          "values": [
+            "31.12.2023",
+            "20.000,00",
+            "0,00",
+            "20.000,00",
+            "4.003.725,18"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "de",
+    "query": "VfB Stuttgart",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

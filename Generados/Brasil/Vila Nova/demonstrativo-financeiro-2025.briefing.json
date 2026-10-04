@@ -1,0 +1,4591 @@
+{
+  "club": "vila-nova",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.md",
+  "generatedAt": "2026-09-30T21:54:12.469Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 3,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 52,
+  "relevantTableCount": 16,
+  "tables": [
+    {
+      "page": 3,
+      "section": "# ÍNDICE",
+      "columns": [
+        "Mensagem da Administração",
+        "4"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Relatório Anual da Administração 2025",
+          "values": [
+            "6"
+          ],
+          "bold": true,
+          "codigo": "2"
+        },
+        {
+          "rawLabel": "Sumário Executivo",
+          "values": [
+            "7"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Desempenho Esportivo",
+          "values": [
+            "8"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Evolução das Receitas",
+          "values": [
+            "9"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Evolução dos Custos e Despesas",
+          "values": [
+            "10"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Evolução do Caixa e Endividamento",
+          "values": [
+            "11"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Gestão e Investimentos no Elenco",
+          "values": [
+            "12"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Evolução Jurídica",
+          "values": [
+            "13"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Estrutura Física",
+          "values": [
+            "14"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Evolução da Base",
+          "values": [
+            "15"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Futebol Feminino",
+          "values": [
+            "16"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Esportes Olímpicos e Paralímpicos",
+          "values": [
+            "17"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Responsabilidade Social",
+          "values": [
+            "18"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Gestão de Pessoas e Capital Humano",
+          "values": [
+            "19"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Governança Corporativa e Compliance",
+          "values": [
+            "20"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Sustentabilidade Financeira – SSF",
+          "values": [
+            "21"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Demonstrações Contábeis",
+          "values": [
+            ""
+          ],
+          "bold": true,
+          "codigo": "3"
+        },
+        {
+          "rawLabel": "Relatório dos Auditores Independentes",
+          "values": [
+            "23"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Parecer do Conselho Fiscal",
+          "values": [
+            "29"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Demonstrações Contábeis",
+          "values": [
+            "33"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": "## Sumário Executivo / ### Destaque esportivo / ### Desempenho Esportivo – Quadro Comparativo:",
+      "columns": [
+        "Competição",
+        "2025",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Campeonato Goiano",
+          "values": [
+            "Campeão",
+            "Final",
+            "Quartas"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Série B",
+          "values": [
+            "13º lugar",
+            "9º lugar",
+            "8º lugar"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Copa do Brasil",
+          "values": [
+            "3ª fase",
+            "—",
+            "2ª fase"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Copa Verde",
+          "values": [
+            "Quartas",
+            "Final",
+            "Quartas"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": "### Destaques de gestão / ### Desempenho Financeiro – Principais Indicadores:",
+      "columns": [
+        "Indicador",
+        "2025",
+        "2024",
+        "Variação"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Receita operacional líquida",
+          "values": [
+            "R$ 38,4 mi",
+            "R$ 40,4 mi",
+            "-5,00%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit do ano",
+          "values": [
+            "(R$ 2,8 mi)",
+            "(R$ 5,4 mi)",
+            "Melhoria de 47,1%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ativo total",
+          "values": [
+            "R$ 112,5 mi",
+            "R$ 86,7 mi",
+            "29,8%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimônio social",
+          "values": [
+            "(R$ 62,3 mi)",
+            "(R$ 59,5 mi)",
+            "+4,8% (Aumento do déficit)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EBITDA",
+          "values": [
+            "R$ 13,6 mi",
+            "R$ 14,1 mi",
+            "-3,5%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EBITDA Ajustado (Excluindo LFU)",
+          "values": [
+            "R$ 0,7 mi",
+            "(R$ 5,1 mi)",
+            "Melhoria significativa"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": "### Copa do Brasil (3ª Fase) / ### Copa Verde (Quartas de Final) / ### Série B 2025 — Campanha Detalhada / ### Comissão Técnica — Treinadores em 2025 / ### Maiores Públicos como Mandante — 2025",
+      "columns": [
+        "Anápolis 30/03",
+        "38.412"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Goiás 09/03",
+          "values": [
+            "26.261"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Goiás 02/02",
+          "values": [
+            "24.735"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cruzeiro 22/05",
+          "values": [
+            "18.211"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Goiás 16/08",
+          "values": [
+            "11.454"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Paysandu 12/04",
+          "values": [
+            "9.716"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ath.PR 17/05",
+          "values": [
+            "7.662"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Chapecoense 25/04",
+          "values": [
+            "5.620"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "35 PROFISSIONAIS DEDICADOS / 6 ATLETAS PROMOVIDOS / # Atletas Promovidos ao Profissional / # Vendidos/Emprestados / # Resultados Competições da Base 2025",
+      "columns": [
+        "CATEGORIA",
+        "Competições",
+        "Campeão",
+        "Vice-Campeão",
+        "Semifinais"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Sub-9 / Sub-10",
+          "values": [
+            "4",
+            "—",
+            "1",
+            "—"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub-11 / Sub-12",
+          "values": [
+            "7",
+            "2",
+            "1",
+            "2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub-13 / Sub-14",
+          "values": [
+            "4",
+            "—",
+            "2",
+            "1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub-15 / Sub-16",
+          "values": [
+            "4",
+            "1",
+            "1",
+            "1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub-17 / Sub-20",
+          "values": [
+            "8",
+            "2",
+            "2",
+            "3"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "# Esportes Olímpicos e Paralímpicos / ## Parceria com a Universo mantida desde 2020",
+      "columns": [
+        "Modalidade",
+        "Categorias",
+        "Destaques 2025"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Futebol de Cegos",
+          "values": [
+            "12 atletas (11 masc. + 1 fem.)",
+            "Campeão Jogos Paralímpicos do Estado, Campeão Regional, Permanência Série A Brasileiro"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Futsal",
+          "values": [
+            "Masc. adulto (26) + Fem. sub-13 (12) + sub-15 (13)",
+            "JUGs, Copa Goiás, Goiano de Futsal"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vôlei Feminino",
+          "values": [
+            "Adulto",
+            "Superliga C, Liga Goiana, CBI, Taça Brasília, Copa Sesi + 7 outros torneios"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vôlei Masculino",
+          "values": [
+            "Base",
+            "Copa Sesi, Liga Supervolei, Goiano"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Corrida de Rua",
+          "values": [
+            "Aberto",
+            "20+ provas em 2025 incl. Meia Maratona de Goiânia e Vila Run"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "## Gestão de Pessoas e Capital Humano / 145 COLABORADORES 87% HOMENS 13% MULHERES",
+      "columns": [
+        "Área",
+        "Qtd",
+        "%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Fut. Profissional",
+          "values": [
+            "52",
+            "33%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cat. Base",
+          "values": [
+            "49",
+            "31%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrativo",
+          "values": [
+            "37",
+            "24%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operacional",
+          "values": [
+            "15",
+            "10%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marketing",
+          "values": [
+            "4",
+            "3%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": null,
+      "columns": [
+        "Área",
+        "Efetivo",
+        "Detalhamento"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Futebol Profissional",
+          "values": [
+            "52",
+            "28 atletas + 24 comissão técnica"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Categorias de Base",
+          "values": [
+            "49",
+            "22 atletas base + 27 comissão base"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrativo/Financeiro/Jurídico",
+          "values": [
+            "37",
+            "Gestão, contabilidade, jurídico"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operacional",
+          "values": [
+            "15",
+            "Manutenção, segurança, limpeza (OBA e CT)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marketing/Comunicação",
+          "values": [
+            "4",
+            "Marketing, assessoria, mídias"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "# Governança Corporativa e Compliance / ## Principais órgãos de Gestão",
+      "columns": [
+        "Órgão",
+        "Composição",
+        "Reuniões 2025"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Conselho Deliberativo 2025",
+          "values": [
+            "Pres. Décio Caetano Vieira Filho",
+            "305 membros",
+            "8"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "COF 2025",
+          "values": [
+            "Pres. Henrique César Nery",
+            "VP João Gonzaga",
+            "3"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Conselho Deliberativo 2026",
+          "values": [
+            "Pres. Leandro Bittar Froes",
+            "305 membros",
+            "—"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "COF 2026/2028",
+          "values": [
+            "Pres. Rodrigo Silva Menezes",
+            "VP João Gonzaga",
+            "Sec. Henrique César Nery",
+            "Supl. Nilson, Fernando H. Mussi, Rafael L. L. Ribeiro",
+            "—"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": "# Sustentabilidade Financeira - SSF / ## Cronograma SSF",
+      "columns": [
+        "Indicador Estratégico SSF",
+        "Resultado Apurado",
+        "Limite Exigido (Série B)",
+        "Status"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1. Resultado da Operação (Exercício T-1)",
+          "values": [
+            "Superávit R$ 2,3mi",
+            "≥ 0",
+            "CONFORME"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Resultado Agregado (Exercícios T-1 a T-3)",
+          "values": [
+            "Superávit R$ 10,8 mi",
+            "Máx: Déficit R$ 10mi",
+            "CONFORME"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Custo com Elenco",
+          "values": [
+            "53,8%",
+            "Máximo: 80%",
+            "CONFORME"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Endividamento de Curto Prazo",
+          "values": [
+            "115,5%",
+            "Transição (45% Pleno)",
+            "NÃO CONFORME"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 31,
+      "section": "## PARECER DO CONSELHO DE ORIENTAÇÃO E FISCALIZAÇÃO - COF / RODRIGO SILVA MENEZES / JOÃO GONZAGA DE SIQUEIRA JUNIOR / HENRIQUE CESAR NERY DA VEIGA JARDIM",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Verifique em",
+          "values": [
+            "https://validar.j6.gov.br"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verifique em",
+          "values": [
+            "https://validar.j6.gov.br"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## Balanço Patrimonial / ### Ativo",
+      "columns": [
+        "",
+        "Nota",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa",
+          "values": [
+            "3",
+            "16",
+            "312"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "4",
+            "5.851",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos e contribuições a recuperar",
+          "values": [
+            "",
+            "81",
+            "31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros créditos",
+          "values": [
+            "",
+            "19",
+            "11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estoque",
+          "values": [
+            "",
+            "6",
+            "48"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "5.973",
+            "402"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Outros créditos",
+          "values": [
+            "",
+            "1.450",
+            "2.646"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos judiciais",
+          "values": [
+            "12",
+            "995",
+            "185"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "5",
+            "97.314",
+            "79.482"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "6",
+            "6.719",
+            "3.945"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "106.478",
+            "86.258"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo",
+          "values": [
+            "",
+            "112.451",
+            "86.660"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 33,
+      "section": "### Passivo e Patrimônio social",
+      "columns": [
+        "",
+        "Nota",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "",
+            "264",
+            "775"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "7",
+            "1.688",
+            "1.050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar com a transferência de jogadores",
+          "values": [
+            "8",
+            "7.975",
+            "5.065"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas e sociais",
+          "values": [
+            "9",
+            "29.054",
+            "27.574"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações tributárias",
+          "values": [
+            "10",
+            "9.501",
+            "9.182"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras contas a pagar",
+          "values": [
+            "11",
+            "7.022",
+            "214"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões para riscos processuais",
+          "values": [
+            "12",
+            "5.533",
+            "8.905"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos civis e trabalhistas a pagar",
+          "values": [
+            "12",
+            "1.125",
+            "905"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "62.162",
+            "53.669"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "7",
+            "2.271",
+            "90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subvenções recebidas",
+          "values": [
+            "13",
+            "19.330",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras contas a pagar",
+          "values": [
+            "11",
+            "90.987",
+            "92.358"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "112.588",
+            "92.448"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimônio social",
+          "values": [
+            "14",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Déficits acumulados",
+          "values": [
+            "",
+            "(127.169)",
+            "(124.327)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avaliação Patrimonial",
+          "values": [
+            "",
+            "64.870",
+            "64.870"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "(62.299)",
+            "(59.457)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo e do patrimônio líquido",
+          "values": [
+            "",
+            "112.451",
+            "86.660"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 34,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+      "columns": [
+        "",
+        "Nota",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Receita operacional líquida",
+          "values": [
+            "15",
+            "38.356",
+            "40.385"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo das atividades sociais e esportivas",
+          "values": [
+            "16",
+            "(35.518)",
+            "(25.758)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Bruto",
+          "values": [
+            "",
+            "2.838",
+            "14.627"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Despesas com pessoal",
+          "values": [
+            "17",
+            "(3.244)",
+            "(2.612)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com atividades gerais",
+          "values": [
+            "18",
+            "(12.732)",
+            "(12.280)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas, líquidas",
+          "values": [
+            "19",
+            "13.837",
+            "8.647"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(=) Superávit operacional antes do resultado financeiro",
+          "values": [
+            "",
+            "699",
+            "8.382"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Resultado financeiro",
+          "values": [
+            "20",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Despesas financeiras",
+          "values": [
+            "",
+            "(4.804)",
+            "(14.377)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas financeiras",
+          "values": [
+            "",
+            "1.263",
+            "625"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(=) Resultado financeiro líquido",
+          "values": [
+            "",
+            "(3.541)",
+            "(13.752)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(=) Déficit do Exercício",
+          "values": [
+            "",
+            "(2.842)",
+            "(5.370)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 35,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado abrangente",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Déficit do Exercício",
+          "values": [
+            "(2.842)",
+            "(5.370)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Outros resultados abrangentes",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do resultado abrangente do exercício",
+          "values": [
+            "(2.842)",
+            "(5.370)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 36,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração das mutações do patrimônio social",
+      "columns": [
+        "",
+        "Patrimônio social",
+        "Avaliação Patrimonial",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2023",
+          "values": [
+            "(118.957)",
+            "60.965",
+            "(57.992)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Déficit do exercício",
+          "values": [
+            "(5.370)",
+            "-",
+            "(5.370)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes de avaliação patrimonial",
+          "values": [
+            "-",
+            "3.905",
+            "3.905"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2024",
+          "values": [
+            "(124.327)",
+            "64.870",
+            "(59.457)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Déficit do exercício",
+          "values": [
+            "(2.842)",
+            "-",
+            "(2.842)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2025",
+          "values": [
+            "(127.169)",
+            "64.870",
+            "(62.299)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração dos fluxos de caixa",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Déficit do Exercício",
+          "values": [
+            "(2.842)",
+            "(5.370)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Itens que não afetam o caixa operacional",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Provisão para riscos processuais",
+          "values": [
+            "(3.372)",
+            "3.737"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juros provisionados sobre empréstimos",
+          "values": [
+            "359",
+            "9.299"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixas por venda de ativos",
+          "values": [
+            "721",
+            "223"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização de atletas",
+          "values": [
+            "12.077",
+            "5.618"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação de ativos",
+          "values": [
+            "813",
+            "85"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "7.755",
+            "13.592"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento e diminuição das contas de ativo e passivo",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(Aumento)/ diminuição nas contas a receber",
+          "values": [
+            "(5.851)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento)/ diminuição impostos a recuperar",
+          "values": [
+            "(50)",
+            "(24)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento)/ diminuição estoques",
+          "values": [
+            "42",
+            "(23)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento)/ diminuição de outros créditos",
+          "values": [
+            "1.188",
+            "2.767"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento)/ diminuição nos depósitos judiciais",
+          "values": [
+            "(811)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(diminuição) em fornecedores",
+          "values": [
+            "(511)",
+            "(2.151)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(diminuição) em contas a pagar com a transferência de jogadores",
+          "values": [
+            "2.910",
+            "3.401"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(diminuição) em obrigações trabalhistas e tributárias",
+          "values": [
+            "1.800",
+            "3.385"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(diminuição) em acordos processuais trabalhistas",
+          "values": [
+            "219",
+            "(1.958)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento/(diminuição) em outras contas a pagar",
+          "values": [
+            "5.437",
+            "(3.824)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido gerado nas atividades operacionais",
+          "values": [
+            "12.129",
+            "15.165"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades de investimentos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aquisição de imobilizado",
+          "values": [
+            "(35)",
+            "(7.572)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aquisição de diretos econômicos de atletas",
+          "values": [
+            "(14.850)",
+            "(8.133)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido consumido nas atividades de investimentos",
+          "values": [
+            "(14.885)",
+            "(15.706)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fluxo de caixa das atividades de financiamentos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Captação de empréstimos",
+          "values": [
+            "4.490",
+            "870"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamentos de empréstimos, financiamentos e juros",
+          "values": [
+            "(2.029)",
+            "(389)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido gerados nas atividades de financiamentos",
+          "values": [
+            "2.461",
+            "481"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Reduções líquidas de caixa",
+          "values": [
+            "(296)",
+            "(60)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caixa no início do período",
+          "values": [
+            "312",
+            "372"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa no final do período",
+          "values": [
+            "16",
+            "312"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reduções líquidas de caixa",
+          "values": [
+            "(296)",
+            "(60)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 41,
+      "section": "VILA NOVA FUTEBOL CLUBE / ### Custo atribuído / ### Taxa de depreciação",
+      "columns": [
+        "",
+        "Taxa de Depreciação Anual",
+        "Vida Útil Estimada"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Imóveis e Benfeitorias",
+          "values": [
+            "4%",
+            "25 anos"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Utensílios",
+          "values": [
+            "10%",
+            "10 anos"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "20%",
+            "5 anos"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Computadores",
+          "values": [
+            "20%",
+            "5 anos"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e Equipamentos",
+          "values": [
+            "10%",
+            "10 anos"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benfeitorias em Imóveis de Terceiros",
+          "values": [
+            "Depende da durabilidade ou prazo de contrato",
+            "Variável"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "Não aplicável",
+            "Não aplicável"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obras em Andamento",
+          "values": [
+            "Não aplicável",
+            "Não aplicável"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 45,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## 2.15 Reapresentação completa dos saldos correspondentes / ## 3. Caixa e equivalentes de caixa",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caixa e bancos",
+          "values": [
+            "16",
+            "312"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "16",
+            "312"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 46,
+      "section": "VILA NOVA FUTEBOL CLUBE / #### 4. Contas a receber",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Licenciamento de marca e patrocínio (i)",
+          "values": [
+            "2.538",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferência de jogadores (ii)",
+          "values": [
+            "3.310",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "3",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "5.851",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 46,
+      "section": "- (ii) Refere-se a transferências a receber dos atletas:",
+      "columns": [
+        "Atleta",
+        "Clube",
+        "Valor a receber"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Clayton Fernandes Silva",
+          "values": [
+            "Casa Pia - Portugal",
+            "1.079"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pablo Roberto dos Santos Barbosa",
+          "values": [
+            "Fortaleza",
+            "757"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "João Pedro Florêncio Barbosa",
+          "values": [
+            "Santa Cruz FC",
+            "600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Everton Galdino Moreira",
+          "values": [
+            "Tombense",
+            "572"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geovane da Silva de Souza",
+          "values": [
+            "Portimonense - Portugal",
+            "302"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "",
+            "3.310"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 46,
+      "section": "#### 5. Imobilizado",
+      "columns": [
+        "",
+        "2025",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Custo",
+            "Depreciação Acumulada",
+            "Valor líquido"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imóveis e benfeitorias",
+          "values": [
+            "6.878",
+            "(299)",
+            "6.580"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "676",
+            "(153)",
+            "523"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Computadores",
+          "values": [
+            "60",
+            "(12)",
+            "48"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e equipamentos",
+          "values": [
+            "1.525",
+            "(169)",
+            "1.356"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benfeitorias em imóveis de terceiros",
+          "values": [
+            "4.641",
+            "(164)",
+            "4.477"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "84.330",
+            "-",
+            "84.330"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obras em andamento",
+          "values": [
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "98.110",
+            "(796)",
+            "97.314"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 46,
+      "section": null,
+      "columns": [
+        "",
+        "2025",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Custo",
+            "Depreciação Acumulada",
+            "Valor líquido"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imóveis e benfeitorias",
+          "values": [
+            "6.878",
+            "(21)",
+            "6.857"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "645",
+            "(108)",
+            "537"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "1.350",
+            "(483)",
+            "867"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Computadores",
+          "values": [
+            "60",
+            "-",
+            "60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e equipamentos",
+          "values": [
+            "1.520",
+            "(0)",
+            "1.520"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benfeitorias em imóveis de terceiros",
+          "values": [
+            "540",
+            "-",
+            "540"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "65.000",
+            "-",
+            "65.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obras em andamento",
+          "values": [
+            "4.101",
+            "-",
+            "4.101"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "80.095",
+            "(612)",
+            "79.482"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 47,
+      "section": "VILA NOVA FUTEBOL CLUBE / ### Movimentação 2025",
+      "columns": [
+        "Custo",
+        "31.12.2024",
+        "Adições",
+        "Baixas",
+        "Imobilizações",
+        "Subvenções",
+        "31.12.2025"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Imóveis e benfeitorias",
+          "values": [
+            "6.878",
+            "-",
+            "-",
+            "-",
+            "-",
+            "6.878"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "645",
+            "30",
+            "-",
+            "-",
+            "-",
+            "676"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "1.350",
+            "-",
+            "(1.350)",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Computadores",
+          "values": [
+            "60",
+            "-",
+            "-",
+            "-",
+            "-",
+            "60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e equipamentos",
+          "values": [
+            "1.520",
+            "5",
+            "-",
+            "-",
+            "-",
+            "1.525"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benfeitorias em imóveis de terceiros",
+          "values": [
+            "540",
+            "-",
+            "-",
+            "4.101",
+            "-",
+            "4.641"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "65.000",
+            "-",
+            "-",
+            "-",
+            "19.330",
+            "84.330"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obras em andamento",
+          "values": [
+            "4.101",
+            "-",
+            "-",
+            "(4.101)",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "80.095",
+            "35",
+            "(1.350)",
+            "-",
+            "19.330",
+            "98.110"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 47,
+      "section": null,
+      "columns": [
+        "Depreciação acumulada",
+        "31.12.2024",
+        "Adições",
+        "Baixas",
+        "31.12.2025"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Imóveis e benfeitorias",
+          "values": [
+            "(21)",
+            "(277)",
+            "-",
+            "(299)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "(108)",
+            "(44)",
+            "-",
+            "(153)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "(483)",
+            "(146)",
+            "629",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Computadores",
+          "values": [
+            "-",
+            "(12)",
+            "-",
+            "(12)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e equipamentos",
+          "values": [
+            "(0)",
+            "(169)",
+            "-",
+            "(169)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benfeitorias em imóveis de terceiros",
+          "values": [
+            "-",
+            "(164)",
+            "-",
+            "(164)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(612)",
+            "(813)",
+            "629",
+            "(797)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 47,
+      "section": "### Movimentação 2024",
+      "columns": [
+        "Custo",
+        "31.12.2023",
+        "Adições",
+        "Baixas",
+        "Reavaliação",
+        "31.12.2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Imóveis e benfeitorias",
+          "values": [
+            "335",
+            "3.926",
+            "-",
+            "2.617",
+            "6.878"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "473",
+            "8",
+            "-",
+            "164",
+            "645"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "475",
+            "-",
+            "-",
+            "875",
+            "1.350"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Computadores",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "60",
+            "60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e equipamentos",
+          "values": [
+            "-",
+            "1.519",
+            "-",
+            "1",
+            "1.520"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benfeitorias em imóveis de terceiros",
+          "values": [
+            "358",
+            "223",
+            "(223)",
+            "182",
+            "540"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "65.000",
+            "-",
+            "-",
+            "-",
+            "65.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obras em andamento",
+          "values": [
+            "2.200",
+            "1.896",
+            "-",
+            "5",
+            "4.101"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "68.841",
+            "7.572",
+            "(223)",
+            "3.905",
+            "80.095"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 47,
+      "section": null,
+      "columns": [
+        "Depreciação acumulada",
+        "31.12.2023",
+        "Adições",
+        "Baixas",
+        "31.12.2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Imóveis e benfeitorias",
+          "values": [
+            "(19)",
+            "(2)",
+            "-",
+            "(21)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "(97)",
+            "(11)",
+            "-",
+            "(108)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "(411)",
+            "(72)",
+            "-",
+            "(483)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e equipamentos",
+          "values": [
+            "-",
+            "(0)",
+            "-",
+            "(0)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(527)",
+            "(85)",
+            "-",
+            "(612)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 48,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## 6. Intangível",
+      "columns": [
+        "Direitos econômicos",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Custo aquisição",
+          "values": [
+            "10.212",
+            "9.563"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Amortização Acumulada",
+          "values": [
+            "(3.493)",
+            "(5.618)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "6.719",
+            "3.945"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 48,
+      "section": "### Movimentação",
+      "columns": [
+        "Direitos econômicos - Movimentação",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo inicial",
+          "values": [
+            "3.945",
+            "1.429"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adições (i)",
+          "values": [
+            "18.507",
+            "9.563"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixas/Rescisões",
+          "values": [
+            "(3.657)",
+            "(1.429)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizações",
+          "values": [
+            "(12.077)",
+            "(5.618)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo Final",
+          "values": [
+            "6.719",
+            "3.945"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 48,
+      "section": "### (i) Adições aos direitos econômicos",
+      "columns": [
+        "Atleta",
+        "Valor de aquisição"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Andre Luis da Costa Alfredo",
+          "values": [
+            "1.507"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "João Pedro Vieira",
+          "values": [
+            "1.288"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Willian Prado Camargo",
+          "values": [
+            "1.288"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diego Fabian Torres",
+          "values": [
+            "1.235"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vinicius dos Santos de Oliveira Paiva",
+          "values": [
+            "1.180"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Emerson Lima Freitas",
+          "values": [
+            "1.133"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bruno Cesar Xavier Sislo",
+          "values": [
+            "1.105"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tiago Pagnussat",
+          "values": [
+            "878"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Walisson Moreira Farias Maia",
+          "values": [
+            "797"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Facundo Labandeira Castro",
+          "values": [
+            "792"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Elias Lira Nogueira Junior",
+          "values": [
+            "770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geremias Ribeiro Junior",
+          "values": [
+            "732"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hedhe Halls Rocha da Silva",
+          "values": [
+            "720"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Weverton Silva de Andrade",
+          "values": [
+            "713"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ruan Ribeiro Rodrigues",
+          "values": [
+            "608"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nathan Melo Silva",
+          "values": [
+            "593"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vinicius Rodrigues Adelino dos Santos",
+          "values": [
+            "585"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Igor Inocencio de Oliveira",
+          "values": [
+            "506"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Guilherme Parede Pinheiro",
+          "values": [
+            "484"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ralf de Souza Teles",
+          "values": [
+            "332"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mauricio Kozlinski Agenciamento Esportivo",
+          "values": [
+            "330"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pedro Henrique de Oliveira Romano",
+          "values": [
+            "300"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Enzo Bizzotto Costa",
+          "values": [
+            "270"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bruno Pereira Mendes",
+          "values": [
+            "225"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucas Breno Sena Lima",
+          "values": [
+            "102"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Thalys Victor Martins Sena",
+          "values": [
+            "36"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total das adições",
+          "values": [
+            "18.507"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 49,
+      "section": "VILA NOVA FUTEBOL CLUBE / # Percentual de direitos econômicos detidos pelo Vila Nova",
+      "columns": [
+        "",
+        "Formados / Contratados",
+        "Base",
+        "2025"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Percentual de direito econômico detido pelo Vila Nova",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "0%",
+          "values": [
+            "10",
+            "-",
+            "10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1% a 30%",
+          "values": [
+            "-",
+            "11",
+            "11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31% a 50%",
+          "values": [
+            "3",
+            "7",
+            "10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "51% a 80%",
+          "values": [
+            "6",
+            "2",
+            "8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "81% a 99%",
+          "values": [
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "100%",
+          "values": [
+            "6",
+            "-",
+            "6"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "25",
+            "20",
+            "45"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 49,
+      "section": "# 7. Empréstimos e financiamentos",
+      "columns": [
+        "",
+        "Vencimento",
+        "Taxa",
+        "Garantias",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capital de giro - SICOOB",
+          "values": [
+            "2026",
+            "2% a.m.",
+            "-",
+            "877",
+            "1.050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital de giro - BMP/FIDIC Futebol",
+          "values": [
+            "2026",
+            "CDI + 0,87% a.m.",
+            "Recebíveis LFU",
+            "2.174",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimo com terceiros",
+          "values": [
+            "2026",
+            "-",
+            "-",
+            "901",
+            "90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Antecipação de recebíveis",
+          "values": [
+            "2026",
+            "-",
+            "-",
+            "7",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "3.959",
+            "1.140"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 49,
+      "section": "# Movimentação",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo Inicial",
+          "values": [
+            "1.140",
+            "13.916"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Captação",
+          "values": [
+            "4.490",
+            "17.029"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamento de Principal",
+          "values": [
+            "(1.616)",
+            "(30.404)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamento de Juros",
+          "values": [
+            "(413)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juros Provisionados",
+          "values": [
+            "359",
+            "598"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo Final",
+          "values": [
+            "3.959",
+            "1.140"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 49,
+      "section": "# Covenants / # 8. Contas a pagar com a transferência de jogadores",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Direitos econômicos adquiridos de atletas (i)",
+          "values": [
+            "7.975",
+            "5.065"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "7.975",
+            "5.065"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 50,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## 9. Obrigações trabalhistas e sociais",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Dívida ativa previdenciária (i)",
+          "values": [
+            "25.635",
+            "24.218"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS a recolher (ii)",
+          "values": [
+            "1.205",
+            "1.027"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS a recolher (ii)",
+          "values": [
+            "1.107",
+            "507"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Férias",
+          "values": [
+            "467",
+            "500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salários a pagar",
+          "values": [
+            "245",
+            "604"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Encargos a pagar",
+          "values": [
+            "321",
+            "283"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rescisões a pagar",
+          "values": [
+            "75",
+            "435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "29.054",
+            "27.574"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 50,
+      "section": "## 10. Obrigações tributárias",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Débitos em dívida ativa (i)",
+          "values": [
+            "8.188",
+            "8.369"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF a recolher",
+          "values": [
+            "868",
+            "398"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ISS a recolher",
+          "values": [
+            "439",
+            "411"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demais débitos federais a recolher",
+          "values": [
+            "7",
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "9.501",
+            "9.182"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 50,
+      "section": "## 11. Outras contas a pagar",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Débitos com conselheiros (i)",
+          "values": [
+            "90.565",
+            "90.735"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Antecipações de receita (ii)",
+          "values": [
+            "3.967",
+            "52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas de patrocínio a apropriar (iii)",
+          "values": [
+            "2.440",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações com a LFU",
+          "values": [
+            "-",
+            "670"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comissões a pagar",
+          "values": [
+            "616",
+            "162"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Débitos com terceiros",
+          "values": [
+            "422",
+            "954"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "98.010",
+            "92.572"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "7.022",
+            "214"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "90.987",
+            "92.358"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 51,
+      "section": "# (ii) Antecipações de receita / # (iii) Receitas de patrocínios a apropriar / # 12. Provisões para riscos processuais, depósitos judiciais e acordos em andamento / # 12.1. Perdas esperadas com causas judiciais / # Provisões para riscos processuais",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Trabalhistas",
+          "values": [
+            "5.533",
+            "8.905"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total provisões",
+          "values": [
+            "5.533",
+            "8.905"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 51,
+      "section": "# Movimentação",
+      "columns": [
+        "",
+        "2024",
+        "Adições",
+        "Baixa por Acordo",
+        "Reversões",
+        "2025"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Trabalhistas",
+          "values": [
+            "8.905",
+            "688",
+            "(2.816)",
+            "(1.244)",
+            "5.533"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "8.905",
+            "688",
+            "(2.816)",
+            "(1.244)",
+            "5.533"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 52,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## 12.2. Depósitos judiciais",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Acordos trabalhistas firmados",
+          "values": [
+            "995",
+            "185"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total depósitos judiciais",
+          "values": [
+            "995",
+            "185"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 52,
+      "section": "## 12.3. Acordos civis e trabalhistas a pagar",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Acordos trabalhistas judiciais",
+          "values": [
+            "685",
+            "326"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos trabalhistas extrajudiciais",
+          "values": [
+            "392",
+            "436"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos cíveis extrajudiciais",
+          "values": [
+            "48",
+            "144"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total acordos",
+          "values": [
+            "1.125",
+            "905"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 52,
+      "section": "## 13. Subvenções recebidas / ### Natureza e Contexto da Subvenção / ### Movimentação do Período",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Terreno recebido – Centro de Treinamentos",
+          "values": [
+            "19.330",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Reconhecimento como Receita no Exercício (Competência)",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo a apropriar",
+          "values": [
+            "19.330",
+            "-"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 54,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Mídia e publicidade convencional",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Participação em competições, exposição e performance",
+          "values": [
+            "6.548",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de transmissão",
+          "values": [
+            "995",
+            "8.485"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "7.543",
+            "8.485"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocínio e Licenciamentos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Patrocínios e publicidade",
+          "values": [
+            "7.964",
+            "5.435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Licenciamento e *royanties*",
+          "values": [
+            "1.394",
+            "1.351"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "9.358",
+            "6.787"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operações de jogos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bilheteria",
+          "values": [
+            "5.605",
+            "3.252"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sócio Tigrão",
+          "values": [
+            "1.404",
+            "2.380"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "7.008",
+            "5.632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Adesão ao condomínio LFU",
+          "values": [
+            "12.850",
+            "19.155"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Associações quadro social",
+          "values": [
+            "866",
+            "480"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Repasse loterias",
+          "values": [
+            "795",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bares e lanchonetes",
+          "values": [
+            "376",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Incentivos governamentais",
+          "values": [
+            "277",
+            "338"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "15.164",
+            "19.972"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Impostos e deduções da receita",
+          "values": [
+            "(717)",
+            "(491)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "38.356",
+            "40.385"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 54,
+      "section": "## 16. Custo das atividades esportivas",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Amortização de direitos sobre atletas (i)",
+          "values": [
+            "(12.077)",
+            "(5.618)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiações (ii)",
+          "values": [
+            "(6.676)",
+            "(5.276)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salários, encargos e benefícios",
+          "values": [
+            "(6.076)",
+            "(4.708)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos com jogos e competições",
+          "values": [
+            "(5.898)",
+            "(1.912)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com transações de atletas",
+          "values": [
+            "(2.686)",
+            "(4.101)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rescisões",
+          "values": [
+            "(890)",
+            "(315)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Perdas esperadas com processos trabalhistas",
+          "values": [
+            "(681)",
+            "(3.737)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de imagem",
+          "values": [
+            "(535)",
+            "(91)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(35.518)",
+            "(25.758)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 55,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## 17. Despesas com pessoal",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salários, encargos e benefícios",
+          "values": [
+            "(1.708)",
+            "(1.249)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Férias e encargos",
+          "values": [
+            "(942)",
+            "(808)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13º salário e encargos",
+          "values": [
+            "(578)",
+            "(522)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rescisões",
+          "values": [
+            "(16)",
+            "(33)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(3.244)",
+            "(2.612)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 55,
+      "section": "## 18. Despesas gerais e administrativas",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Serviços de terceiros",
+          "values": [
+            "(3.713)",
+            "(3.841)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uso e consumo",
+          "values": [
+            "(2.717)",
+            "(3.089)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciações",
+          "values": [
+            "(813)",
+            "(85)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Esportes olímpicos",
+          "values": [
+            "(774)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidades",
+          "values": [
+            "(767)",
+            "(854)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Manutenções de ativos",
+          "values": [
+            "(743)",
+            "(508)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos administrativos",
+          "values": [
+            "(730)",
+            "(670)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorários jurídicos",
+          "values": [
+            "(686)",
+            "(1.205)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxas associativas",
+          "values": [
+            "(556)",
+            "(1.397)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas contratuais",
+          "values": [
+            "(435)",
+            "(223)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reembolsos",
+          "values": [
+            "(325)",
+            "(2)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tecnologia da informação",
+          "values": [
+            "(93)",
+            "(9)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com transporte",
+          "values": [
+            "(82)",
+            "(77)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "(77)",
+            "(65)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos estaduais",
+          "values": [
+            "(69)",
+            "(24)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aluguéis",
+          "values": [
+            "(63)",
+            "(161)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorários contábeis",
+          "values": [
+            "(61)",
+            "(37)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos municipais",
+          "values": [
+            "(13)",
+            "(36)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "(14)",
+            "3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(12.732)",
+            "(12.280)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 55,
+      "section": "## 19. Outras receitas, líquidas",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Movimentação de atletas (i)",
+          "values": [
+            "8.368",
+            "2.789"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estorno de provisões (ii)",
+          "values": [
+            "2.555",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas contratuais recebidas (iii)",
+          "values": [
+            "1.884",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Doações",
+          "values": [
+            "815",
+            "456"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita com aluguéis",
+          "values": [
+            "146",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrecadação do futebol de base",
+          "values": [
+            "144",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Brindes recebidos",
+          "values": [
+            "88",
+            "449"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "57",
+            "2.338"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reembolsos recebidos",
+          "values": [
+            "52",
+            "202"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxa de avaliação base",
+          "values": [
+            "35",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxílio custos operacionais",
+          "values": [
+            "33",
+            "80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estacionamentos",
+          "values": [
+            "15",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recuperação de despesas",
+          "values": [
+            "-",
+            "2.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total outras receitas",
+          "values": [
+            "14.192",
+            "8.647"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Perdas na venda de ativos",
+          "values": [
+            "(356)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total outras despesas",
+          "values": [
+            "(356)",
+            "-"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Outras receitas, líquidas",
+          "values": [
+            "13.837",
+            "8.647"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 56,
+      "section": "VILA NOVA FUTEBOL CLUBE / ### (i) Movimentação de atletas",
+      "columns": [
+        "Detalhamento das movimentações de atletas",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Venda de atletas e participações em direitos econômicos",
+          "values": [
+            "11.749",
+            "7.561"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mecanismo de solidariedade",
+          "values": [
+            "260",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Comissões",
+          "values": [
+            "(3.121)",
+            "(4.261)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Gastos para viabilizar a venda",
+          "values": [
+            "(520)",
+            "(510)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "8.368",
+            "2.789"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 56,
+      "section": "### Principais vendas/cessões de direitos econômicos em 2025",
+      "columns": [
+        "Atleta",
+        "Clube",
+        "Valor"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Alesson dos Santos Batista",
+          "values": [
+            "Torpedo Moscow",
+            "4.043"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jemmes Bruno Ribeiro da Silva",
+          "values": [
+            "Mirassol FC",
+            "2.156"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clayton Fernandes Silva",
+          "values": [
+            "Casa Pia",
+            "1.079"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pablo Roberto dos Santos Barbosa",
+          "values": [
+            "Fortaleza",
+            "1.008"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "João Pedro Florêncio Barbosa",
+          "values": [
+            "Santa Cruz FC",
+            "750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cristiano Claudinei Nogueira",
+          "values": [
+            "Sagan Tosu",
+            "762"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Everton Galdino Moreira",
+          "values": [
+            "Tombense",
+            "572"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Raimundo Ykaro Santos Silva",
+          "values": [
+            "CR Flamengo",
+            "600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geovane da Silva de Souza",
+          "values": [
+            "Portimorense",
+            "302"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 56,
+      "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+      "columns": [
+        "Despesas financeiras",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Juros pagos",
+          "values": [
+            "(2.485)",
+            "(3.861)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas pagas",
+          "values": [
+            "(1.157)",
+            "(213)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tarifas bancárias",
+          "values": [
+            "(718)",
+            "(269)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juros sobre empréstimos e financiamentos (i)",
+          "values": [
+            "(359)",
+            "(10.033)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Perdas contratuais",
+          "values": [
+            "(81)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IOF",
+          "values": [
+            "(4)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Descontos concedidos",
+          "values": [
+            "(0)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total despesas financeiras",
+          "values": [
+            "(4.804)",
+            "(14.377)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 56,
+      "section": null,
+      "columns": [
+        "Receitas financeiras",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Descontos sobre dívida ativa",
+          "values": [
+            "864",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rendimentos de aplicações financeiras",
+          "values": [
+            "232",
+            "51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Descontos obtidos",
+          "values": [
+            "165",
+            "(3)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atualizações monetárias",
+          "values": [
+            "3",
+            "545"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rendimentos de depósitos judiciais",
+          "values": [
+            "-",
+            "32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total receitas financeiras",
+          "values": [
+            "1.263",
+            "625"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Resultado financeiro líquido",
+          "values": [
+            "(3.541)",
+            "(13.752)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 57,
+      "section": "VILA NOVA FUTEBOL CLUBE / # 21. Instrumentos financeiros e gestão de risco financeiro / # 21.1 Classificação dos instrumentos financeiros por categoria / # Valor justo hierárquico",
+      "columns": [
+        "Ativos financeiros",
+        "Classificação por Categoria",
+        "Hierarquia de valor justo",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caixa e equivalentes de caixa",
+          "values": [
+            "VJ por meio do resultado",
+            "Nível 2",
+            "16",
+            "312"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "Custo amortizado",
+            "-",
+            "5.851",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros créditos",
+          "values": [
+            "Custo amortizado",
+            "-",
+            "1.469",
+            "2.658"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "7.336",
+            "2.970",
+            "",
+            "Passivos financeiros",
+            "Classificação por Categoria",
+            "Hierarquia de valor justo",
+            "2025",
+            "2024"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "Custo amortizado",
+            "-",
+            "264",
+            "775"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "Custo amortizado",
+            "Nível 2",
+            "3.959",
+            "1.140"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar com a transferência de jogadores",
+          "values": [
+            "Custo amortizado",
+            "-",
+            "7.975",
+            "5.065"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas e sociais",
+          "values": [
+            "Custo amortizado",
+            "-",
+            "29.054",
+            "27.574"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras contas a pagar",
+          "values": [
+            "Custo amortizado",
+            "-",
+            "98.010",
+            "92.572"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "139.261",
+            "127.125"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 33,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## Balanço Patrimonial / ### Ativo",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do ativo",
+      "target": "112.451",
+      "addendCount": 11,
+      "closes": false,
+      "diff": "112451"
+    },
+    {
+      "page": 33,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## Balanço Patrimonial / ### Ativo",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do ativo",
+      "target": "86.660",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "86660"
+    },
+    {
+      "page": 33,
+      "section": "### Passivo e Patrimônio social",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do passivo e do patrimônio líquido",
+      "target": "112.451",
+      "addendCount": 16,
+      "closes": false,
+      "diff": "112451"
+    },
+    {
+      "page": 33,
+      "section": "### Passivo e Patrimônio social",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do passivo e do patrimônio líquido",
+      "target": "86.660",
+      "addendCount": 15,
+      "closes": false,
+      "diff": "86661"
+    },
+    {
+      "page": 35,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado abrangente",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total do resultado abrangente do exercício",
+      "target": "(2.842)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 35,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado abrangente",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total do resultado abrangente do exercício",
+      "target": "(5.370)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 46,
+      "section": "- (ii) Refere-se a transferências a receber dos atletas:",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "3.310",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 48,
+      "section": "### (i) Adições aos direitos econômicos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total das adições",
+      "target": "18.507",
+      "addendCount": 26,
+      "closes": true,
+      "diff": "2",
+      "how": "redondeo (diferencia 2 en 26 rubros enteros)"
+    },
+    {
+      "page": 51,
+      "section": "# (ii) Antecipações de receita / # (iii) Receitas de patrocínios a apropriar / # 12. Provisões para riscos processuais, depósitos judiciais e acordos em andamento / # 12.1. Perdas esperadas com causas judiciais / # Provisões para riscos processuais",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total provisões",
+      "target": "5.533",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 51,
+      "section": "# (ii) Antecipações de receita / # (iii) Receitas de patrocínios a apropriar / # 12. Provisões para riscos processuais, depósitos judiciais e acordos em andamento / # 12.1. Perdas esperadas com causas judiciais / # Provisões para riscos processuais",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total provisões",
+      "target": "8.905",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 52,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## 12.2. Depósitos judiciais",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total depósitos judiciais",
+      "target": "995",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 52,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## 12.2. Depósitos judiciais",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total depósitos judiciais",
+      "target": "185",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 52,
+      "section": "## 12.3. Acordos civis e trabalhistas a pagar",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total acordos",
+      "target": "1.125",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 52,
+      "section": "## 12.3. Acordos civis e trabalhistas a pagar",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total acordos",
+      "target": "905",
+      "addendCount": 3,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 3 rubros enteros)"
+    },
+    {
+      "page": 54,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "38.356",
+      "addendCount": 16,
+      "closes": false,
+      "diff": "39074"
+    },
+    {
+      "page": 54,
+      "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "40.385",
+      "addendCount": 13,
+      "closes": false,
+      "diff": "40876"
+    },
+    {
+      "page": 55,
+      "section": "## 19. Outras receitas, líquidas",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total outras receitas",
+      "target": "14.192",
+      "addendCount": 12,
+      "closes": true
+    },
+    {
+      "page": 55,
+      "section": "## 19. Outras receitas, líquidas",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total outras receitas",
+      "target": "8.647",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 55,
+      "section": "## 19. Outras receitas, líquidas",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total outras despesas",
+      "target": "(356)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 56,
+      "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total despesas financeiras",
+      "target": "(4.804)",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 56,
+      "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total despesas financeiras",
+      "target": "(14.377)",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    },
+    {
+      "page": 56,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total receitas financeiras",
+      "target": "1.263",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    },
+    {
+      "page": 56,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total receitas financeiras",
+      "target": "625",
+      "addendCount": 4,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/vila-nova-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"vila-nova\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ]
+}

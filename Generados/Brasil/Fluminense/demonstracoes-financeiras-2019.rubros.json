@@ -1,0 +1,146 @@
+{
+  "md": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2019.md",
+  "pdf": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2019.pdf",
+  "club": "fluminense-br",
+  "year": 2019,
+  "numberFormat": "ambiguo",
+  "generatedAt": "2026-09-30T21:52:48.227Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 4
+  },
+  "warnings": [
+    "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": false,
+  "seleccion": {
+    "ok": true,
+    "filas": 11,
+    "notasUsadas": []
+  },
+  "ladoConocido": 11,
+  "rubros": [
+    {
+      "label": "Receita operacional bruta",
+      "lado": "revenue",
+      "page": 17,
+      "section": "2.1(a) Receita operacional líquida / 2019 / Clube social e / esportes / Futebol amadores Total",
+      "values": [
+        250.153
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos operativos brutos"
+    },
+    {
+      "label": "Impostos e contribuições",
+      "lado": "revenue",
+      "page": 17,
+      "section": "2.1(a) Receita operacional líquida / 2019 / Clube social e / esportes / Futebol amadores Total",
+      "values": [
+        -9.143
+      ],
+      "origen": "estado 3",
+      "glosa": "Impuestos y contribuciones"
+    },
+    {
+      "label": "Direito de arena",
+      "lado": "revenue",
+      "page": 17,
+      "section": "2.1(a) Receita operacional líquida / 2019 / Clube social e / esportes / Futebol amadores Total",
+      "values": [
+        -6.034
+      ],
+      "origen": "estado 3",
+      "glosa": "Derechos de arena"
+    },
+    {
+      "label": "Salários a atletas e demais funcionários",
+      "lado": "expense",
+      "page": 19,
+      "section": "bens ou serviços forem prestados. O Clube já havia reconhecido o diferimento do “bônus” de / Gastos por natureza / Os gastos são reconhecidos de acordo com o regime de competência. / Salários, encargos e benefícios com atletas e demais funcionários / 2019 2018",
+      "values": [
+        49.463
+      ],
+      "origen": "estado 5",
+      "glosa": "Salarios a atletas y demás empleados"
+    },
+    {
+      "label": "Direito de imagem a atletas",
+      "lado": "expense",
+      "page": 19,
+      "section": "bens ou serviços forem prestados. O Clube já havia reconhecido o diferimento do “bônus” de / Gastos por natureza / Os gastos são reconhecidos de acordo com o regime de competência. / Salários, encargos e benefícios com atletas e demais funcionários / 2019 2018",
+      "values": [
+        6.045
+      ],
+      "origen": "estado 5",
+      "glosa": "Derechos de imagen a atletas"
+    },
+    {
+      "label": "Remuneração de prestadores de serviço (Futebol)",
+      "lado": "expense",
+      "page": 19,
+      "section": "bens ou serviços forem prestados. O Clube já havia reconhecido o diferimento do “bônus” de / Gastos por natureza / Os gastos são reconhecidos de acordo com o regime de competência. / Salários, encargos e benefícios com atletas e demais funcionários / 2019 2018",
+      "values": [
+        5.568
+      ],
+      "origen": "estado 5",
+      "glosa": "Remuneración de prestadores de servicios (Fútbol)"
+    },
+    {
+      "label": "Remuneração de prestadores de serviço (Outras áreas) (*)",
+      "lado": "expense",
+      "page": 19,
+      "section": "bens ou serviços forem prestados. O Clube já havia reconhecido o diferimento do “bônus” de / Gastos por natureza / Os gastos são reconhecidos de acordo com o regime de competência. / Salários, encargos e benefícios com atletas e demais funcionários / 2019 2018",
+      "values": [
+        3.971
+      ],
+      "origen": "estado 5",
+      "glosa": "Remuneración de prestadores de servicios (Otras áreas) (*)"
+    },
+    {
+      "label": "Fornecedores e outras obrigações",
+      "lado": "expense",
+      "page": 22,
+      "section": "Caixa e equivalentes de caixa 1.883 444 / Contas a receber 45.027 77.487 / 46.910 77.931 / 2019 2018 / Passivos financeiros ao custo amortizado",
+      "values": [
+        13.927
+      ],
+      "origen": "estado 12",
+      "glosa": "Proveedores y otras obligaciones"
+    },
+    {
+      "label": "Contas a pagar na transferência de jogadores",
+      "lado": "expense",
+      "page": 22,
+      "section": "Caixa e equivalentes de caixa 1.883 444 / Contas a receber 45.027 77.487 / 46.910 77.931 / 2019 2018 / Passivos financeiros ao custo amortizado",
+      "values": [
+        46.182
+      ],
+      "origen": "estado 12",
+      "glosa": "Cuentas a pagar por transferencia de jugadores"
+    },
+    {
+      "label": "Empréstimos e financiamentos",
+      "lado": "expense",
+      "page": 22,
+      "section": "Caixa e equivalentes de caixa 1.883 444 / Contas a receber 45.027 77.487 / 46.910 77.931 / 2019 2018 / Passivos financeiros ao custo amortizado",
+      "values": [
+        47.735
+      ],
+      "origen": "estado 12",
+      "glosa": "Préstamos y financiamientos"
+    },
+    {
+      "label": "Impostos e contribuições a recolher",
+      "lado": "expense",
+      "page": 22,
+      "section": "Caixa e equivalentes de caixa 1.883 444 / Contas a receber 45.027 77.487 / 46.910 77.931 / 2019 2018 / Passivos financeiros ao custo amortizado",
+      "values": [
+        247.983
+      ],
+      "origen": "estado 12",
+      "glosa": "Impuestos y contribuciones por pagar"
+    }
+  ]
+}

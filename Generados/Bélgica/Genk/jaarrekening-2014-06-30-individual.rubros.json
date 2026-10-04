@@ -1,0 +1,110 @@
+{
+  "md": "Clubes/Bélgica/Genk/jaarrekening-2014-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Genk/jaarrekening-2014-06-30-individual.pdf",
+  "club": "genk-be",
+  "year": 2014,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:55:07.106Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": false,
+  "seleccion": {
+    "ok": true,
+    "filas": 8,
+    "notasUsadas": []
+  },
+  "ladoConocido": 8,
+  "rubros": [
+    {
+      "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+      "lado": "expense",
+      "page": 21,
+      "section": "Personeelskosten",
+      "values": [
+        14030.107
+      ],
+      "origen": "estado 13",
+      "glosa": "Remuneraciones y beneficios sociales directos"
+    },
+    {
+      "label": "Werkgeversbijdragen voor sociale verzekeringen",
+      "lado": "expense",
+      "page": 21,
+      "section": "Personeelskosten",
+      "values": [
+        1294.426
+      ],
+      "origen": "estado 13",
+      "glosa": "Aportaciones patronales a la seguridad social"
+    },
+    {
+      "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+      "lado": "expense",
+      "page": 21,
+      "section": "Personeelskosten",
+      "values": [
+        78.906
+      ],
+      "origen": "estado 13",
+      "glosa": "Primas patronales para seguros complementarios"
+    },
+    {
+      "label": "Andere personeelskosten",
+      "lado": "expense",
+      "page": 21,
+      "section": "Personeelskosten",
+      "values": [
+        940.793
+      ],
+      "origen": "estado 13",
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Ouderdoms- en overlevingspensioenen",
+      "lado": "expense",
+      "page": 21,
+      "section": "Personeelskosten",
+      "values": [
+        2595.05
+      ],
+      "origen": "estado 13",
+      "glosa": "Pensiones de jubilación y supervivencia"
+    },
+    {
+      "label": "SCHULDEN 17/49",
+      "lado": "expense",
+      "page": 5,
+      "section": "Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 5.7 | 163/5 250.000 250.000 / Voorzieningen voor terug te betalen subsidies en / legaten en voor schenkingen met / terugnemingsrecht 5.7 | 168",
+      "values": [
+        11857.35
+      ],
+      "origen": "estado 5",
+      "glosa": "DEUDAS 17/49"
+    },
+    {
+      "label": "Schulden op meer dan één jaar 58 |",
+      "lado": "expense",
+      "page": 5,
+      "section": "Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 5.7 | 163/5 250.000 250.000 / Voorzieningen voor terug te betalen subsidies en / legaten en voor schenkingen met / terugnemingsrecht 5.7 | 168",
+      "values": [
+        1997.209
+      ],
+      "origen": "estado 5",
+      "glosa": "Deudas a más de un año 58 |"
+    },
+    {
+      "label": "Financiële schulden 170/4",
+      "lado": "expense",
+      "page": 5,
+      "section": "Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 5.7 | 163/5 250.000 250.000 / Voorzieningen voor terug te betalen subsidies en / legaten en voor schenkingen met / terugnemingsrecht 5.7 | 168",
+      "values": [
+        1994.459
+      ],
+      "origen": "estado 5",
+      "glosa": "Deudas financieras 170/4"
+    }
+  ]
+}

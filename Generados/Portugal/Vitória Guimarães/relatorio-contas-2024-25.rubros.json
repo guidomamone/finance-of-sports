@@ -1,0 +1,912 @@
+{
+ "md": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.md",
+ "pdf": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.pdf",
+ "club": "vitoria-guimaraes",
+ "year": 2025,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:38.894Z",
+ "tieOuts": {
+  "cierran": 1,
+  "noCierran": 0
+ },
+ "warnings": [
+  "65 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 76,
+  "notasUsadas": [
+   "45",
+   "46",
+   "47",
+   "0",
+   "33"
+  ]
+ },
+ "ladoConocido": 42,
+ "rubros": [
+  {
+   "label": "Rendimentos e Gastos",
+   "lado": null,
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "values": [
+    0.002024
+   ],
+   "origen": "estado 8",
+   "glosa": "Ingresos y gastos"
+  },
+  {
+   "label": "Vendas e serviços prestados",
+   "lado": "revenue",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "values": [
+    22.584987
+   ],
+   "origen": "estado 8",
+   "glosa": "Ventas y prestaciones de servicios"
+  },
+  {
+   "label": "Subsidios à exploração",
+   "lado": "revenue",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "values": [
+    0.048544
+   ],
+   "origen": "estado 8",
+   "glosa": "Subvenciones a la explotación"
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "expense",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "values": [
+    -0.654102
+   ],
+   "origen": "estado 8",
+   "glosa": "Coste de las mercancías vendidas y de las materias consumidas"
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": null,
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "values": [
+    -10.03269
+   ],
+   "origen": "estado 8",
+   "glosa": "Servicios exteriores y suministros"
+  },
+  {
+   "label": "Remuneração Administração",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "values": [
+    0.289398
+   ],
+   "origen": "nota 45 (ancla 8)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Remuneración de la administración"
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "lado": "expense",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "values": [
+    -20.526758
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true,
+   "glosa": "Gastos de personal"
+  },
+  {
+   "label": "Remuneração pessoal administrativo",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "values": [
+    2.690021
+   ],
+   "origen": "nota 45 (ancla 8)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Remuneración del personal administrativo"
+  },
+  {
+   "label": "Remuneração treinadores",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "values": [
+    2.823606
+   ],
+   "origen": "nota 45 (ancla 8)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Remuneración de entrenadores"
+  },
+  {
+   "label": "Remuneração jogadores",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "values": [
+    11.028524
+   ],
+   "origen": "nota 45 (ancla 8)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Remuneración de jugadores"
+  },
+  {
+   "label": "Encargos com remunerações",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "values": [
+    1.478052
+   ],
+   "origen": "nota 45 (ancla 8)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Cargas sobre remuneraciones"
+  },
+  {
+   "label": "Seguro acidentes trabalho",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "values": [
+    1.689047
+   ],
+   "origen": "nota 45 (ancla 8)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Seguro de accidentes de trabajo"
+  },
+  {
+   "label": "Outros gastos pessoal",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "values": [
+    0.52811
+   ],
+   "origen": "nota 45 (ancla 8)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Otros gastos de personal"
+  },
+  {
+   "label": "Imparidade de dívidas a receber",
+   "lado": null,
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "values": [
+    -0.058484
+   ],
+   "origen": "estado 8",
+   "glosa": "Pérdidas por deterioro de créditos comerciales"
+  },
+  {
+   "label": "Seguros - indemnizações",
+   "lado": "revenue",
+   "page": 53,
+   "section": "A rubrica “Rendimentos Suplementares” está dividida da seguinte forma:",
+   "values": [
+    0.04889
+   ],
+   "origen": "nota 47 (ancla 8>46)",
+   "ancla": "Outros rendimentos e ganhos",
+   "glosa": "Seguros - indemnizaciones"
+  },
+  {
+   "label": "Outros rendimentos e ganhos",
+   "lado": "revenue",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "values": [
+    28.817437
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true,
+   "glosa": "Otros ingresos y ganancias"
+  },
+  {
+   "label": "Outros rendimentos Suplementares",
+   "lado": "revenue",
+   "page": 53,
+   "section": "A rubrica “Rendimentos Suplementares” está dividida da seguinte forma:",
+   "values": [
+    0.396508
+   ],
+   "origen": "nota 47 (ancla 8>46)",
+   "ancla": "Outros rendimentos e ganhos",
+   "glosa": "Otros ingresos accesorios"
+  },
+  {
+   "label": "Compensação Financeira",
+   "lado": "revenue",
+   "page": 53,
+   "section": "A rubrica “Rendimentos Suplementares” está dividida da seguinte forma:",
+   "values": [
+    1.396329
+   ],
+   "origen": "nota 47 (ancla 8>46)",
+   "ancla": "Outros rendimentos e ganhos",
+   "glosa": "Compensación financiera"
+  },
+  {
+   "label": "Cedencia Jogadores",
+   "lado": "revenue",
+   "page": 53,
+   "section": "A rubrica “Rendimentos Suplementares” está dividida da seguinte forma:",
+   "values": [
+    0.007975
+   ],
+   "origen": "nota 47 (ancla 8>46)",
+   "ancla": "Outros rendimentos e ganhos",
+   "glosa": "Cesión de jugadores"
+  },
+  {
+   "label": "Descontos pronto pagamento obtidos",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## 19 – Outros Rendimentos e Ganhos",
+   "values": [
+    0.061201
+   ],
+   "origen": "nota 46 (ancla 8)",
+   "ancla": "Outros rendimentos e ganhos",
+   "glosa": "Descuentos sobre compras por pronto pago"
+  },
+  {
+   "label": "Ganhos em inventarios",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## 19 – Outros Rendimentos e Ganhos",
+   "values": [
+    0.002821
+   ],
+   "origen": "nota 46 (ancla 8)",
+   "ancla": "Outros rendimentos e ganhos",
+   "glosa": "Ganancias en existencias"
+  },
+  {
+   "label": "Rendimentos e ganhos em investimentos",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## 19 – Outros Rendimentos e Ganhos",
+   "values": [
+    26.837199
+   ],
+   "origen": "nota 46 (ancla 8)",
+   "ancla": "Outros rendimentos e ganhos",
+   "glosa": "Ingresos y ganancias de inversiones"
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## 19 – Outros Rendimentos e Ganhos",
+   "values": [
+    0.066513
+   ],
+   "origen": "nota 46 (ancla 8)",
+   "ancla": "Outros rendimentos e ganhos",
+   "glosa": "Otros"
+  },
+  {
+   "label": "Outros gastos e perdas",
+   "lado": "expense",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "values": [
+    -1.520697
+   ],
+   "origen": "estado 8",
+   "glosa": "Otros gastos y pérdidas"
+  },
+  {
+   "label": "Gastos/reversões de depreciação e amortização",
+   "lado": "expense",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "values": [
+    -5.541431
+   ],
+   "origen": "estado 8",
+   "glosa": "Dotaciones/reversiones de amortización y depreciación"
+  },
+  {
+   "label": "Juros e rendimentos similares obtidos",
+   "lado": "revenue",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "values": [
+    0.003702
+   ],
+   "origen": "estado 8",
+   "glosa": "Intereses e ingresos similares obtenidos"
+  },
+  {
+   "label": "Juros e gastos similares suportados",
+   "lado": "expense",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "values": [
+    -5.006965
+   ],
+   "origen": "estado 8",
+   "glosa": "Intereses y gastos similares soportados"
+  },
+  {
+   "label": "Imposto sobre o rendimentos do período",
+   "lado": "expense",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "values": [
+    -0.503224
+   ],
+   "origen": "estado 8",
+   "glosa": "Impuesto sobre beneficios del período"
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "values": [
+    0.052683
+   ],
+   "origen": "estado 48",
+   "glosa": "Impuestos"
+  },
+  {
+   "label": "Gastos, perdas em investimento não financeiros",
+   "lado": "expense",
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "values": [
+    0.700191
+   ],
+   "origen": "estado 48",
+   "glosa": "Gastos y pérdidas en inversiones no financieras"
+  },
+  {
+   "label": "Outros",
+   "lado": null,
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "values": [
+    0.767823
+   ],
+   "origen": "estado 48",
+   "glosa": "Otros"
+  },
+  {
+   "label": "Correções relativas a exercicios anteriores",
+   "lado": null,
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "values": [
+    0.132393
+   ],
+   "origen": "estado 48",
+   "glosa": "Correcciones relativas a ejercicios anteriores"
+  },
+  {
+   "label": "Donativos",
+   "lado": null,
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "values": [
+    0.058774
+   ],
+   "origen": "estado 48",
+   "glosa": "Donaciones"
+  },
+  {
+   "label": "Quotizações (liga)",
+   "lado": null,
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "values": [
+    0.058968
+   ],
+   "origen": "estado 48",
+   "glosa": "Cuotas (liga)"
+  },
+  {
+   "label": "Multas",
+   "lado": null,
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "values": [
+    0.313004
+   ],
+   "origen": "estado 48",
+   "glosa": "Multas"
+  },
+  {
+   "label": "Outros",
+   "lado": null,
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "values": [
+    0.204684
+   ],
+   "origen": "estado 48",
+   "glosa": "Otros"
+  },
+  {
+   "label": "Amortizações e depreciações",
+   "lado": null,
+   "page": 21,
+   "section": "### 3.4.5 Resultados",
+   "values": [
+    -5541431.46
+   ],
+   "origen": "estado 5",
+   "glosa": "Amortizaciones y depreciaciones"
+  },
+  {
+   "label": "Juros",
+   "lado": null,
+   "page": 21,
+   "section": "### 3.4.5 Resultados",
+   "values": [
+    -5003262.27
+   ],
+   "origen": "estado 5",
+   "glosa": "Intereses"
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 21,
+   "section": "### 3.4.5 Resultados",
+   "values": [
+    -503223.98
+   ],
+   "origen": "estado 5",
+   "glosa": "Impuestos"
+  },
+  {
+   "label": "Saldo a 30-06-2024",
+   "lado": null,
+   "page": 49,
+   "section": "# 14.1 – Capital Social / # 14.2 - Resultados Transitados",
+   "values": [
+    -20969.6397
+   ],
+   "origen": "estado 39",
+   "glosa": "Saldo al 30-06-2024"
+  },
+  {
+   "label": "Saldo a 30-06-2025",
+   "lado": null,
+   "page": 49,
+   "section": "# 14.1 – Capital Social / # 14.2 - Resultados Transitados",
+   "values": [
+    -36136.58928
+   ],
+   "origen": "estado 39",
+   "glosa": "Saldo al 30-06-2025"
+  },
+  {
+   "label": "Direitos Televisivos",
+   "lado": null,
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "values": [
+    6922619.04
+   ],
+   "origen": "nota 0 (ancla 40)",
+   "ancla": "Total",
+   "glosa": "Derechos de televisión"
+  },
+  {
+   "label": "Total",
+   "lado": null,
+   "page": 50,
+   "section": "### 14.3 – Proposta de aplicação de resultados / ### 15 – Vendas e Prestações de serviços",
+   "values": [
+    22584986.98
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Merchandising",
+   "lado": null,
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "values": [
+    947278.68
+   ],
+   "origen": "nota 0 (ancla 40)",
+   "ancla": "Total",
+   "glosa": "Merchandising"
+  },
+  {
+   "label": "Patrocínios",
+   "lado": null,
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "values": [
+    1793255.05
+   ],
+   "origen": "nota 0 (ancla 40)",
+   "ancla": "Total",
+   "glosa": "Patrocinios"
+  },
+  {
+   "label": "Sócios e Camarotes",
+   "lado": null,
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "values": [
+    1768525.9
+   ],
+   "origen": "nota 0 (ancla 40)",
+   "ancla": "Total",
+   "glosa": "Socios y palcos"
+  },
+  {
+   "label": "Bilhética",
+   "lado": null,
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "values": [
+    886969.22
+   ],
+   "origen": "nota 0 (ancla 40)",
+   "ancla": "Total",
+   "glosa": "Taquilla"
+  },
+  {
+   "label": "Prémios",
+   "lado": null,
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "values": [
+    9720482.37
+   ],
+   "origen": "nota 0 (ancla 40)",
+   "ancla": "Total",
+   "glosa": "Premios"
+  },
+  {
+   "label": "Mec. Solidariedade",
+   "lado": null,
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "values": [
+    516935.63
+   ],
+   "origen": "nota 0 (ancla 40)",
+   "ancla": "Total",
+   "glosa": "Mecanismo de solidaridad"
+  },
+  {
+   "label": "Operações com atletas_clubes",
+   "lado": null,
+   "page": 47,
+   "section": "# 11.7 – Outras dívidas a pagar",
+   "values": [
+    1400
+   ],
+   "origen": "nota 33 (ancla 40>0)",
+   "ancla": "Total"
+  },
+  {
+   "label": "Operações com atletas_intermediários",
+   "lado": null,
+   "page": 47,
+   "section": "# 11.7 – Outras dívidas a pagar",
+   "values": [
+    4444.88126
+   ],
+   "origen": "nota 33 (ancla 40>0)",
+   "ancla": "Total"
+  },
+  {
+   "label": "Operações com atletas_clubes",
+   "lado": null,
+   "page": 47,
+   "section": "# 11.7 – Outras dívidas a pagar",
+   "values": [
+    1080.31789
+   ],
+   "origen": "nota 33 (ancla 40>0)",
+   "ancla": "Total"
+  },
+  {
+   "label": "Operações com atletas_intermediários",
+   "lado": null,
+   "page": 47,
+   "section": "# 11.7 – Outras dívidas a pagar",
+   "values": [
+    12454.47325
+   ],
+   "origen": "nota 33 (ancla 40>0)",
+   "ancla": "Total"
+  },
+  {
+   "label": "Outros Credores",
+   "lado": null,
+   "page": 47,
+   "section": "# 11.7 – Outras dívidas a pagar",
+   "values": [
+    85.51915
+   ],
+   "origen": "nota 33 (ancla 40>0)",
+   "ancla": "Total"
+  },
+  {
+   "label": "Pessoal",
+   "lado": null,
+   "page": 47,
+   "section": "# 11.7 – Outras dívidas a pagar",
+   "values": [
+    1061.33558
+   ],
+   "origen": "nota 33 (ancla 40>0)",
+   "ancla": "Total"
+  },
+  {
+   "label": "Operações com atletas_clubes",
+   "lado": null,
+   "page": 47,
+   "section": "# 11.7 – Outras dívidas a pagar",
+   "values": [
+    2237.5
+   ],
+   "origen": "nota 33 (ancla 40>0)",
+   "ancla": "Total"
+  },
+  {
+   "label": "Operações com atletas_intermediários",
+   "lado": null,
+   "page": 47,
+   "section": "# 11.7 – Outras dívidas a pagar",
+   "values": [
+    4327.1266
+   ],
+   "origen": "nota 33 (ancla 40>0)",
+   "ancla": "Total"
+  },
+  {
+   "label": "Operações correntes",
+   "lado": null,
+   "page": 47,
+   "section": "# 11.7 – Outras dívidas a pagar",
+   "values": [
+    1829.39716
+   ],
+   "origen": "nota 33 (ancla 40>0)",
+   "ancla": "Total"
+  },
+  {
+   "label": "Federação Portuguesa de Futebol",
+   "lado": null,
+   "page": 50,
+   "section": "### 16 – Subsídios",
+   "values": [
+    17110.9
+   ],
+   "origen": "estado 42",
+   "glosa": "Federación Portuguesa de Fútbol"
+  },
+  {
+   "label": "Outras Entidades (IEFP)",
+   "lado": null,
+   "page": 50,
+   "section": "### 16 – Subsídios",
+   "values": [
+    31432.86
+   ],
+   "origen": "estado 42",
+   "glosa": "Otras entidades (IEFP)"
+  },
+  {
+   "label": "Imparidade de dívidas a receber",
+   "lado": null,
+   "page": 54,
+   "section": "## 22 – Imparidade ativos",
+   "values": [
+    -0.091402
+   ],
+   "origen": "estado 51",
+   "glosa": "Pérdidas por deterioro de créditos comerciales"
+  },
+  {
+   "label": "Imparidades de inventários",
+   "lado": null,
+   "page": 54,
+   "section": "## 22 – Imparidade ativos",
+   "values": [
+    -0.074071
+   ],
+   "origen": "estado 51",
+   "glosa": "Pérdidas por deterioro de existencias"
+  },
+  {
+   "label": "Ativos financeiros",
+   "lado": null,
+   "page": 55,
+   "section": "",
+   "values": [
+    0.047845
+   ],
+   "origen": "estado 53",
+   "glosa": "Activos financieros"
+  },
+  {
+   "label": "Passivos financeiros",
+   "lado": null,
+   "page": 55,
+   "section": "",
+   "values": [
+    -3.741936
+   ],
+   "origen": "estado 53",
+   "glosa": "Pasivos financieros"
+  },
+  {
+   "label": "CMVMC (mercadorias)",
+   "lado": "expense",
+   "page": 17,
+   "section": "Relatório^{}[] e Contas / Relatório^{}[] de Gestão / 03",
+   "values": [
+    -654101.94
+   ],
+   "origen": "estado 1",
+   "glosa": "Coste de ventas (mercaderías)"
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": "expense",
+   "page": 17,
+   "section": "Relatório^{}[] e Contas / Relatório^{}[] de Gestão / 03",
+   "values": [
+    -10032689.77
+   ],
+   "origen": "estado 1",
+   "glosa": "Servicios exteriores y suministros"
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "lado": "expense",
+   "page": 17,
+   "section": "Relatório^{}[] e Contas / Relatório^{}[] de Gestão / 03",
+   "values": [
+    -20526757.64
+   ],
+   "origen": "estado 1",
+   "glosa": "Gastos de personal"
+  },
+  {
+   "label": "Provisões e imparidades",
+   "lado": "expense",
+   "page": 17,
+   "section": "Relatório^{}[] e Contas / Relatório^{}[] de Gestão / 03",
+   "values": [
+    -58483.75
+   ],
+   "origen": "estado 1",
+   "glosa": "Provisiones y pérdidas por deterioro"
+  },
+  {
+   "label": "Outros Gastos (exc. Jogadores)",
+   "lado": "expense",
+   "page": 17,
+   "section": "Relatório^{}[] e Contas / Relatório^{}[] de Gestão / 03",
+   "values": [
+    -820506.44
+   ],
+   "origen": "estado 1",
+   "glosa": "Otros gastos (exc. jugadores)"
+  },
+  {
+   "label": "Jogadores",
+   "lado": "expense",
+   "page": 17,
+   "section": "Relatório^{}[] e Contas / Relatório^{}[] de Gestão / 03",
+   "values": [
+    -700190.83
+   ],
+   "origen": "estado 1",
+   "glosa": "Jugadores"
+  },
+  {
+   "label": "Gastos Operacionais (exc. Jogadores)",
+   "lado": "expense",
+   "page": 17,
+   "section": "Relatório^{}[] e Contas / Relatório^{}[] de Gestão / 03",
+   "values": [
+    -32092539.54
+   ],
+   "origen": "estado 1",
+   "glosa": "Gastos de explotación (exc. jugadores)"
+  },
+  {
+   "label": "Inventários no início do período",
+   "lado": "expense",
+   "page": 41,
+   "section": "# 8.3 - Quantia de inventários reconhecida como um gasto durante o período",
+   "values": [
+    0.280389
+   ],
+   "origen": "estado 21",
+   "glosa": "Existencias al inicio del período"
+  },
+  {
+   "label": "Compras",
+   "lado": "expense",
+   "page": 41,
+   "section": "# 8.3 - Quantia de inventários reconhecida como um gasto durante o período",
+   "values": [
+    0.699182
+   ],
+   "origen": "estado 21",
+   "glosa": "Compras"
+  },
+  {
+   "label": "Inventários no fim do período",
+   "lado": "expense",
+   "page": 41,
+   "section": "# 8.3 - Quantia de inventários reconhecida como um gasto durante o período",
+   "values": [
+    0.325469
+   ],
+   "origen": "estado 21",
+   "glosa": "Existencias al final del período"
+  },
+  {
+   "label": "Equipamento básico",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 21 – Gastos/Reversões de depreciação e de amortização",
+   "values": [
+    0.149766
+   ],
+   "origen": "estado 49",
+   "glosa": "Instalaciones técnicas y maquinaria"
+  },
+  {
+   "label": "Equipamento de transporte",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 21 – Gastos/Reversões de depreciação e de amortização",
+   "values": [
+    0.003404
+   ],
+   "origen": "estado 49",
+   "glosa": "Elementos de transporte"
+  },
+  {
+   "label": "Equipamento administrativo",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 21 – Gastos/Reversões de depreciação e de amortização",
+   "values": [
+    0.039119
+   ],
+   "origen": "estado 49",
+   "glosa": "Mobiliario y equipos de oficina"
+  },
+  {
+   "label": "Outros ativos fixos tangíveis",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 21 – Gastos/Reversões de depreciação e de amortização",
+   "values": [
+    0.53571
+   ],
+   "origen": "estado 49",
+   "glosa": "Otro inmovilizado material"
+  }
+ ]
+}

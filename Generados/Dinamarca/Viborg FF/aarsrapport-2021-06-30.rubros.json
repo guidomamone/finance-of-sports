@@ -1,0 +1,132 @@
+{
+  "md": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.md",
+  "pdf": "Clubes/Dinamarca/Viborg FF/aarsrapport-2021-06-30.pdf",
+  "club": "viborg-dk",
+  "year": 2021,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:00:18.404Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 10,
+    "notasUsadas": []
+  },
+  "ladoConocido": 10,
+  "rubros": [
+    {
+      "label": "Salg af egne kapitalandele 0",
+      "lado": "expense",
+      "page": 20,
+      "section": "Kapitalforhøjelse 21.240.000 21.240.000 0 / Omkostninger ved kapitalændringer 0 -224.353 0",
+      "values": [
+        18.55
+      ],
+      "origen": "estado 12",
+      "glosa": "Venta de acciones propias 0"
+    },
+    {
+      "label": "Overførsler til/fra andre reserver",
+      "lado": "expense",
+      "page": 20,
+      "section": "Kapitalforhøjelse 21.240.000 21.240.000 0 / Omkostninger ved kapitalændringer 0 -224.353 0",
+      "values": [
+        -21015.647
+      ],
+      "origen": "estado 12",
+      "glosa": "Transferencias a/desde otras reservas"
+    },
+    {
+      "label": "Saldo pr. 30.06.21 30.288.500",
+      "lado": "expense",
+      "page": 20,
+      "section": "Kapitalforhøjelse 21.240.000 21.240.000 0 / Omkostninger ved kapitalændringer 0 -224.353 0",
+      "values": [
+        20202.845
+      ],
+      "origen": "estado 12",
+      "glosa": "Saldo al 30.06.21 30.288.500"
+    },
+    {
+      "label": "Afdrag på langfristede gældsforpligtelser i øvrigt",
+      "lado": "expense",
+      "page": 21,
+      "section": "Omkostninger forbundet med ændringer i aktiekapital -224.353 0",
+      "values": [
+        -0.043525
+      ],
+      "origen": "estado 17",
+      "glosa": "Amortización de otras deudas a largo plazo"
+    },
+    {
+      "label": "Pengestrømme fra finansiering",
+      "lado": "expense",
+      "page": 21,
+      "section": "Omkostninger forbundet med ændringer i aktiekapital -224.353 0",
+      "values": [
+        42.230672
+      ],
+      "origen": "estado 17",
+      "glosa": "Flujos de efectivo de las actividades de financiación"
+    },
+    {
+      "label": "Årets samlede pengestrømme",
+      "lado": "expense",
+      "page": 21,
+      "section": "Omkostninger forbundet med ændringer i aktiekapital -224.353 0",
+      "values": [
+        41.504945
+      ],
+      "origen": "estado 17",
+      "glosa": "Flujos de efectivo totales del ejercicio"
+    },
+    {
+      "label": "Likvide beholdninger ved årets begyndelse",
+      "lado": "expense",
+      "page": 21,
+      "section": "Omkostninger forbundet med ændringer i aktiekapital -224.353 0",
+      "values": [
+        3.62248
+      ],
+      "origen": "estado 17",
+      "glosa": "Efectivo y equivalentes de efectivo al inicio del ejercicio"
+    },
+    {
+      "label": "Betalte renteomkostninger og lignende omkostninger",
+      "lado": "expense",
+      "page": 21,
+      "section": "Modtagne renteindtægter og lignende indtægter 436 0",
+      "values": [
+        -43.65
+      ],
+      "origen": "estado 15",
+      "glosa": "Intereses y gastos similares pagados"
+    },
+    {
+      "label": "Pengestrømme fra driften",
+      "lado": "revenue",
+      "page": 21,
+      "section": "Modtagne renteindtægter og lignende indtægter 436 0",
+      "values": [
+        2577.978
+      ],
+      "origen": "estado 15",
+      "glosa": "Flujos de efectivo de las actividades de explotación"
+    },
+    {
+      "label": "Køb af immaterielle anlægsaktiver",
+      "lado": "revenue",
+      "page": 21,
+      "section": "Modtagne renteindtægter og lignende indtægter 436 0",
+      "values": [
+        -2787.029
+      ],
+      "origen": "estado 15",
+      "glosa": "Adquisición de inmovilizado intangible"
+    }
+  ]
+}

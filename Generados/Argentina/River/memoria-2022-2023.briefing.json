@@ -1,0 +1,57 @@
+{
+  "club": "river",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/River/memoria-2022-2023.md",
+  "generatedAt": "2026-09-30T21:51:06.545Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 8,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 34,
+      "section": "MEMORIA CARP 2022-2023   67 / GIMNASIA ARTÍSTICA / ¡MÍA MAINARDI, / CAMPEONA MUNDIAL!",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "completaron July Marano (Italia) con",
+          "values": [
+            "13.266"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "y Ming van Eijken (Francia) con",
+          "values": [
+            "13.000."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "ar",
+    "query": "River Plate",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 47,
+      "line": "detalles técnicos de la obra y cotización       no se detuvo y el salón permaneció          Libertador, Turno, René, Costanera,"
+    }
+  ],
+  "warnings": []
+}

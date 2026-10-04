@@ -1,0 +1,574 @@
+{
+ "pdf": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2020-2021.pdf",
+ "md": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2020-2021.md",
+ "cierre": "2021-12-31",
+ "paginas": [
+  7,
+  34,
+  35,
+  36,
+  37,
+  38
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:46:55.815Z",
+ "escala": "miles",
+ "filas": [
+  {
+   "pagina": 7,
+   "etiqueta": "Receita bruta",
+   "importe_impreso": "75.410",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "(-) Deduções",
+   "importe_impreso": "(5.121)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Receita Operacional Líquida",
+   "importe_impreso": "70.289",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Custos",
+   "importe_impreso": "339",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Lucro Bruto",
+   "importe_impreso": "70.629",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Despesas Operacionais",
+   "importe_impreso": "(80.675)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Pessoal",
+   "importe_impreso": "(58.419)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Materiais",
+   "importe_impreso": "(627)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Manutenção",
+   "importe_impreso": "(912)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Jogos e competições",
+   "importe_impreso": "(5.433)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Terceiros",
+   "importe_impreso": "(4.448)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Bens de pq. valor e depreciação",
+   "importe_impreso": "(784)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Direito de imagem",
+   "importe_impreso": "(7.341)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Gerais e Adm.",
+   "importe_impreso": "(2.540)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Tributárias",
+   "importe_impreso": "(171)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Resultado Antes dos outros resultados operacionais",
+   "importe_impreso": "(10.046)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Outros Resultados Operacionais",
+   "importe_impreso": "(41.322)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Resultado Antes das Despesas e Receitas Financeiras",
+   "importe_impreso": "(51.368)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Receitas Financeiras",
+   "importe_impreso": "614",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Despesas Financeiras",
+   "importe_impreso": "(8.761)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Lucro Antes do Imposto de Renda e da Contribuição Social",
+   "importe_impreso": "(59.514)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Lucro Líquido do Exercício",
+   "importe_impreso": "(59.514)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 34,
+   "etiqueta": "Ordenados e Salários",
+   "importe_impreso": "(19.730)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "pagina": 34,
+   "etiqueta": "Premiação",
+   "importe_impreso": "(4.226)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "pagina": 34,
+   "etiqueta": "INSS/FGTS/PIS",
+   "importe_impreso": "(2.986)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "pagina": 34,
+   "etiqueta": "Despesas com Transf. Jogadores",
+   "importe_impreso": "(136)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "pagina": 34,
+   "etiqueta": "Indenizações",
+   "importe_impreso": "(16.060)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "pagina": 34,
+   "etiqueta": "Alimentação",
+   "importe_impreso": "(120)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "pagina": 34,
+   "etiqueta": "Despesas Médicas",
+   "importe_impreso": "(2.349)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "pagina": 34,
+   "etiqueta": "Seguros",
+   "importe_impreso": "(562)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "pagina": 34,
+   "etiqueta": "Outros Gastos c/ Pessoal",
+   "importe_impreso": "(287)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "pagina": 34,
+   "etiqueta": "Total",
+   "importe_impreso": "(46.456)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Pessoal"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Manutenção Imobilizado",
+   "importe_impreso": "(586)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Manutenção"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Manutenção Terceiros",
+   "importe_impreso": "(39)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Manutenção"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Manutenção Intangível",
+   "importe_impreso": "(292)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Manutenção"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Total",
+   "importe_impreso": "(918)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Manutenção"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Viagens",
+   "importe_impreso": "(2.677)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Jogos e competições"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Hospedagens",
+   "importe_impreso": "(153)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Jogos e competições"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Gastos com jogos - Camp. Brasileiro",
+   "importe_impreso": "(1.982)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Jogos e competições"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Gastos com jogos - Camp. Catarinense",
+   "importe_impreso": "(551)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Jogos e competições"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Gastos com outros",
+   "importe_impreso": "(69)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Jogos e competições"
+  },
+  {
+   "pagina": 35,
+   "etiqueta": "Total",
+   "importe_impreso": "(5.433)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Jogos e competições"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Terceiros - Futebol e Comissões",
+   "importe_impreso": "(3.016)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Terceiros"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Honorarios profissionais",
+   "importe_impreso": "(525)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Terceiros"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Outros",
+   "importe_impreso": "(933)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Terceiros"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Total",
+   "importe_impreso": "(4.475)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Terceiros"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Direito Imagem",
+   "importe_impreso": "(7.341)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Direito de imagem"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Total",
+   "importe_impreso": "(7.341)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Direito de imagem"
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Multas e Indenizações",
+   "importe_impreso": "(48)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Propaganda e Publicidade",
+   "importe_impreso": "(148)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Gastos Logísticos",
+   "importe_impreso": "(119)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Doações/Ajudas de Custo",
+   "importe_impreso": "(362)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Água, Luz e Telefone",
+   "importe_impreso": "(86)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Despesas Bancarias",
+   "importe_impreso": "(189)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Mensalidades/Periódicos",
+   "importe_impreso": "(22)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Demais Gastos",
+   "importe_impreso": "(1.595)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "pagina": 36,
+   "etiqueta": "Total",
+   "importe_impreso": "(2.568)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gerais e Adm."
+  },
+  {
+   "pagina": 37,
+   "etiqueta": "Descontos Obtidos",
+   "importe_impreso": "50",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "pagina": 37,
+   "etiqueta": "Juros Recebidos",
+   "importe_impreso": "14",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "pagina": 37,
+   "etiqueta": "Provisão Variações Monetárias Ativas",
+   "importe_impreso": "93",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "pagina": 37,
+   "etiqueta": "Receitas de Aplicações Financeiras",
+   "importe_impreso": "68",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "pagina": 37,
+   "etiqueta": "Variações Monetárias Ativas",
+   "importe_impreso": "389",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "pagina": 37,
+   "etiqueta": "Total",
+   "importe_impreso": "614",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Receitas Financeiras"
+  },
+  {
+   "pagina": 37,
+   "etiqueta": "Descontos Concedidos",
+   "importe_impreso": "(20)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "pagina": 37,
+   "etiqueta": "Despesas Bancárias",
+   "importe_impreso": "(202)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "pagina": 37,
+   "etiqueta": "Juros Pagos",
+   "importe_impreso": "(6.775)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "pagina": 37,
+   "etiqueta": "Variações monetárias Passivas",
+   "importe_impreso": "(568)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "pagina": 37,
+   "etiqueta": "Total",
+   "importe_impreso": "(7.565)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Despesas Financeiras"
+  },
+  {
+   "pagina": 37,
+   "etiqueta": "Resultado Financeiro",
+   "importe_impreso": "(6.951)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos_impreso": "70.289",
+ "total_gastos_impreso": "(80.675)",
+ "resultado_impreso": "(59.514)",
+ "observaciones": "La pág. 7 es OCR (Tesseract) y debe verificarse. Inconsistencias entre estado y notas (consolidado 2021): Pessoal estado (58.419) vs nota 21 (46.456); Manutenção (912) vs nota (918); Terceiros (4.448) vs nota (4.475); Gerais e Adm. (2.540) vs nota (2.568); Despesas Financeiras (8.761) vs nota (7.565). Numeración de notas desplazada: el estado cita nota 22 para Pessoal pero la nota de Pessoal es la 21, etc. 'Resultado Financeiro' de la nota no tiene renglón propio en el estado (detalla_a null). La nota de Outros Resultados Operacionais (págs. 38) tiene columnas rotuladas 2020/2019 y su total consolidado (41.326) no coincide con el estado (41.322); no se incluyó por no corresponder claramente al ejercicio 2021. Nota de bilheteria y la nota de receitas sin columna consolidada 2021 legible no se incluyeron. 'Lucro Bruto' tipificado como resultado; 'Custos' consolidado es positivo (339). IR e CSLL con guion: omitido."
+}

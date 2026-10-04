@@ -1,0 +1,454 @@
+{
+  "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2011.md",
+  "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2011.pdf",
+  "club": "colocolo-cl",
+  "year": 2011,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:56:19.136Z",
+  "tieOuts": {
+    "cierran": 9,
+    "noCierran": 12
+  },
+  "warnings": [
+    "12 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 39,
+    "notasUsadas": []
+  },
+  "ladoConocido": 21,
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 54,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+      "values": [
+        8414.525
+      ],
+      "origen": "estado 58",
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Costo de ventas 10.442.561 7.100.016 1.011.779 853.094 - -",
+      "lado": "expense",
+      "page": 54,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+      "values": [
+        11454.34
+      ],
+      "origen": "estado 58",
+      "glosa": "Costo de ventas 10.442.561 7.100.016 1.011.779 853.094 - -"
+    },
+    {
+      "label": "Otros ingresos, por función 116.209 100.590 9.916 3 - -",
+      "lado": "revenue",
+      "page": 54,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+      "values": [
+        126.125
+      ],
+      "origen": "estado 58",
+      "glosa": "Otros ingresos, por función 116.209 100.590 9.916 3 - -"
+    },
+    {
+      "label": "Gasto de administración",
+      "lado": "expense",
+      "page": 54,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+      "values": [
+        -1505.837
+      ],
+      "origen": "estado 58",
+      "glosa": "Gasto de administración"
+    },
+    {
+      "label": "Otros gastos, por función (303.348) (377.717) (4.792) (3.376) - (37)",
+      "lado": "expense",
+      "page": 54,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+      "values": [
+        -308.14
+      ],
+      "origen": "estado 58",
+      "glosa": "Otros gastos, por función (303.348) (377.717) (4.792) (3.376) - (37)"
+    },
+    {
+      "label": "Ingresos financieros 114.413 357.456 - 603 - -",
+      "lado": "revenue",
+      "page": 54,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+      "values": [
+        114.413
+      ],
+      "origen": "estado 58",
+      "glosa": "Ingresos financieros 114.413 357.456 - 603 - -"
+    },
+    {
+      "label": "Diferencias de cambio (68.725) (486.760) 4.988 84 - -",
+      "lado": null,
+      "page": 54,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+      "values": [
+        -63.737
+      ],
+      "origen": "estado 58",
+      "glosa": "Diferencias de cambio (68.725) (486.760) 4.988 84 - -"
+    },
+    {
+      "label": "Gasto (Ingreso) por Impuesto a las Ganancias",
+      "lado": "expense",
+      "page": 54,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+      "values": [
+        259.429
+      ],
+      "origen": "estado 58",
+      "glosa": "Gasto (Ingreso) por Impuesto a las Ganancias"
+    },
+    {
+      "label": "Servicios básicos",
+      "lado": null,
+      "page": 49,
+      "section": "Costo de ventas                                     11.454.340   7.953.110",
+      "values": [
+        0.164285
+      ],
+      "origen": "estado 48",
+      "glosa": "Servicios básicos"
+    },
+    {
+      "label": "Asesorías",
+      "lado": null,
+      "page": 49,
+      "section": "Costo de ventas                                     11.454.340   7.953.110",
+      "values": [
+        0.605295
+      ],
+      "origen": "estado 48",
+      "glosa": "Asesorías"
+    },
+    {
+      "label": "Depreciaciones",
+      "lado": null,
+      "page": 49,
+      "section": "Costo de ventas                                     11.454.340   7.953.110",
+      "values": [
+        0.414597
+      ],
+      "origen": "estado 48",
+      "glosa": "Depreciaciones"
+    },
+    {
+      "label": "Gastos Legales",
+      "lado": "expense",
+      "page": 49,
+      "section": "Costo de ventas                                     11.454.340   7.953.110",
+      "values": [
+        0.124868
+      ],
+      "origen": "estado 48",
+      "glosa": "Gastos Legales"
+    },
+    {
+      "label": "Mantenciones",
+      "lado": null,
+      "page": 49,
+      "section": "Costo de ventas                                     11.454.340   7.953.110",
+      "values": [
+        0.007059
+      ],
+      "origen": "estado 48",
+      "glosa": "Mantenciones"
+    },
+    {
+      "label": "Remuneración administración",
+      "lado": null,
+      "page": 49,
+      "section": "Costo de ventas                                     11.454.340   7.953.110",
+      "values": [
+        0.905465
+      ],
+      "origen": "estado 48",
+      "glosa": "Remuneración administración"
+    },
+    {
+      "label": "Otros gastos de administración",
+      "lado": "expense",
+      "page": 49,
+      "section": "Costo de ventas                                     11.454.340   7.953.110",
+      "values": [
+        0.622274
+      ],
+      "origen": "estado 48",
+      "glosa": "Otros gastos de administración"
+    },
+    {
+      "label": "Costo de venta jugadores",
+      "lado": "expense",
+      "page": 49,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        3.999393
+      ],
+      "origen": "estado 47",
+      "glosa": "Costo de venta jugadores"
+    },
+    {
+      "label": "Remuneracion plantel profesional y cuerpo tecnico",
+      "lado": null,
+      "page": 49,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2.71306
+      ],
+      "origen": "estado 47",
+      "glosa": "Remuneracion plantel profesional y cuerpo tecnico"
+    },
+    {
+      "label": "Amortizacion Activos en concesion",
+      "lado": null,
+      "page": 49,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        0.701142
+      ],
+      "origen": "estado 47",
+      "glosa": "Amortizacion Activos en concesion"
+    },
+    {
+      "label": "Amortizacion pases jugadores profesionales",
+      "lado": null,
+      "page": 49,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2.589365
+      ],
+      "origen": "estado 47",
+      "glosa": "Amortizacion pases jugadores profesionales"
+    },
+    {
+      "label": "Costos de concentracion traslados y otros",
+      "lado": "expense",
+      "page": 49,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        1.039041
+      ],
+      "origen": "estado 47",
+      "glosa": "Costos de concentracion traslados y otros"
+    },
+    {
+      "label": "Otros costos",
+      "lado": "expense",
+      "page": 49,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        0.412339
+      ],
+      "origen": "estado 47",
+      "glosa": "Otros costos"
+    },
+    {
+      "label": "Gasto por impuestos utilizando la tasa legal",
+      "lado": "expense",
+      "page": 44,
+      "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2011    01.01.2010 / 31.12.2011    31.12.2010 / M$            M$",
+      "values": [
+        0.027396
+      ],
+      "origen": "estado 41",
+      "glosa": "Gasto por impuestos utilizando la tasa legal"
+    },
+    {
+      "label": "Efecto impositivo de gastos no deducidos impositivamente",
+      "lado": "revenue",
+      "page": 44,
+      "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2011    01.01.2010 / 31.12.2011    31.12.2010 / M$            M$",
+      "values": [
+        0.224039
+      ],
+      "origen": "estado 41",
+      "glosa": "Efecto impositivo de gastos no deducidos impositivamente"
+    },
+    {
+      "label": "Otro aumento (disminución) en cargo por impuestos legales",
+      "lado": "expense",
+      "page": 44,
+      "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2011    01.01.2010 / 31.12.2011    31.12.2010 / M$            M$",
+      "values": [
+        -0.06173
+      ],
+      "origen": "estado 41",
+      "glosa": "Otro aumento (disminución) en cargo por impuestos legales"
+    },
+    {
+      "label": "Otros activos financieros corrientes",
+      "lado": null,
+      "page": 50,
+      "section": "26. DIFERENCIA DE CAMBIO",
+      "values": [
+        0.192819
+      ],
+      "origen": "estado 51",
+      "glosa": "Otros activos financieros corrientes"
+    },
+    {
+      "label": "Deudores comerciales y otras cuentas por cobrar corrientes",
+      "lado": null,
+      "page": 50,
+      "section": "26. DIFERENCIA DE CAMBIO",
+      "values": [
+        -0.031895
+      ],
+      "origen": "estado 51",
+      "glosa": "Deudores comerciales y otras cuentas por cobrar corrientes"
+    },
+    {
+      "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+      "lado": null,
+      "page": 50,
+      "section": "26. DIFERENCIA DE CAMBIO",
+      "values": [
+        -0.224661
+      ],
+      "origen": "estado 51",
+      "glosa": "Cuentas por pagar comerciales y otras cuentas por pagar"
+    },
+    {
+      "label": "Pesos",
+      "lado": null,
+      "page": 55,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 29. MONEDA EXTRANJERA",
+      "values": [
+        2.533652
+      ],
+      "origen": "estado 59",
+      "glosa": "Pesos"
+    },
+    {
+      "label": "Efectivo y Equivalentes al Efectivo",
+      "lado": null,
+      "page": 55,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 29. MONEDA EXTRANJERA",
+      "values": [
+        2.6517
+      ],
+      "origen": "estado 59",
+      "glosa": "Efectivo y Equivalentes al Efectivo"
+    },
+    {
+      "label": "Otros activos financieros corrientes Dolares",
+      "lado": null,
+      "page": 55,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 29. MONEDA EXTRANJERA",
+      "values": [
+        1.406255
+      ],
+      "origen": "estado 59",
+      "glosa": "Otros activos financieros corrientes Dolares"
+    },
+    {
+      "label": "Pesos",
+      "lado": null,
+      "page": 55,
+      "section": "Activos por impuestos corrientes                        Dolares         -            - / Euros           -            -",
+      "values": [
+        222.66
+      ],
+      "origen": "estado 62",
+      "glosa": "Pesos"
+    },
+    {
+      "label": "Activos por impuestos corrientes",
+      "lado": "expense",
+      "page": 55,
+      "section": "Activos por impuestos corrientes                        Dolares         -            - / Euros           -            -",
+      "values": [
+        222.66
+      ],
+      "origen": "estado 62",
+      "glosa": "Activos por impuestos corrientes"
+    },
+    {
+      "label": "Pesos",
+      "lado": null,
+      "page": 55,
+      "section": "Activos por impuestos diferidos                         Dolares         -            - / Euros           -            -",
+      "values": [
+        4893.175
+      ],
+      "origen": "estado 66",
+      "glosa": "Pesos"
+    },
+    {
+      "label": "Activos por impuestos diferidos",
+      "lado": "expense",
+      "page": 55,
+      "section": "Activos por impuestos diferidos                         Dolares         -            - / Euros           -            -",
+      "values": [
+        4893.175
+      ],
+      "origen": "estado 66",
+      "glosa": "Activos por impuestos diferidos"
+    },
+    {
+      "label": "Pesos",
+      "lado": null,
+      "page": 56,
+      "section": "Pasivo por impuestos diferidos       Dolares      -            -             -          - / Euros        -            -             -          -",
+      "values": [
+        0.573311
+      ],
+      "origen": "estado 68",
+      "glosa": "Pesos"
+    },
+    {
+      "label": "Pasivo por impuestos diferidos",
+      "lado": "expense",
+      "page": 56,
+      "section": "Pasivo por impuestos diferidos       Dolares      -            -             -          - / Euros        -            -             -          -",
+      "values": [
+        0.573311
+      ],
+      "origen": "estado 68",
+      "glosa": "Pasivo por impuestos diferidos"
+    },
+    {
+      "label": "Ingresos por recaudaciones y venta de jugadores",
+      "lado": "revenue",
+      "page": 48,
+      "section": "23. INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        8414.525
+      ],
+      "origen": "estado 45",
+      "glosa": "Ingresos por recaudaciones y venta de jugadores"
+    },
+    {
+      "label": "Ingresos por publicidad",
+      "lado": "revenue",
+      "page": 48,
+      "section": "23. INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        5435.763
+      ],
+      "origen": "estado 45",
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 48,
+      "section": "23. INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        442.256
+      ],
+      "origen": "estado 45",
+      "glosa": "Otros"
+    }
+  ]
+}

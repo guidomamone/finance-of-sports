@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Operario Ferroviario/demonstracoes-financeiras-2024.md",
+ "generado": "2026-10-02T00:18:42.557Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de Reais)",
+ "caja": {
+  "lineas": [
+   131
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   132,
+   141
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las líneas 131, 132 y 141 combinan activo y pasivo lado a lado. La L141 (Empréstimos e financiamentos no corriente) es cero en 2024 ('-'), pero se incluye por completitud."
+}

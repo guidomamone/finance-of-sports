@@ -1,0 +1,880 @@
+{
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2025.md",
+ "generatedAt": "2026-09-30T04:26:06.464Z",
+ "rubros": [
+  {
+   "label": "SÓCIO TORCEDOR",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "OUTRAS RECEITAS C/ FUTEBOL",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1496
+  },
+  {
+   "label": "PLACAS DE PUBLICIDADE",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1500
+  },
+  {
+   "label": "BILHETERIA/JOGOS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1514
+  },
+  {
+   "label": "RECEITA FUTEBOL PROFISSIONAL",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "lump_football_operations",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.66
+    ],
+    [
+     "matchday_competition",
+     0.34
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1547
+  },
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "lump_football_operations",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1522
+  },
+  {
+   "label": "COTAS/TV",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1441
+  },
+  {
+   "label": "PATROCÍNIOS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1508
+  },
+  {
+   "label": "VENDAS DE MERCADORIAS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1521
+  },
+  {
+   "label": "DESPESAS TRIBUTÁRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "DEMAIS RECEITAS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1478
+  },
+  {
+   "label": "OUTRAS RECEITAS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "LICENCIAMENTOS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1369
+  },
+  {
+   "label": "(-) DEDUÇÕES DAS RECEITAS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1484
+  },
+  {
+   "label": "ESCOLINHA",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "youth_football",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "youth_football",
+     0.98
+    ],
+    [
+     "education",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1347
+  },
+  {
+   "label": "LUCRO BRUTO",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "lump_football_operations",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.83
+    ],
+    [
+     "other_income",
+     0.15000000000000002
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1450
+  },
+  {
+   "label": "LOTERIAS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1459
+  },
+  {
+   "label": "(-) CUSTOS FUTEBOL PROFISSIONAL",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1526
+  },
+  {
+   "label": "RECEITA OPERACIONAL LÍQUIDA",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1523
+  },
+  {
+   "label": "CUSTOS COM PESSOAL",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "wages_squad",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "wages_squad",
+     0.51
+    ],
+    [
+     "admin_general_expense",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1527
+  },
+  {
+   "label": "CUSTOS COM AMORTIZAÇÃO DE CONTRATOS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1520
+  },
+  {
+   "label": "CUSTOS COM JOGOS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1515
+  },
+  {
+   "label": "OUTROS CUSTOS COM FUTEBOL",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.6900000000000001
+    ],
+    [
+     "match_organisation_expense",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1510
+  },
+  {
+   "label": "DESPESAS COM PESSOAL",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "wages_squad",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "wages_squad",
+     0.71
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1536
+  },
+  {
+   "label": "DESPESAS ADMINISTRATIVAS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1526
+  },
+  {
+   "label": "(-) DESPESAS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "DESPESAS GERAIS ESCOLINHA",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "education_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "education_expense",
+     0.54
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "youth_other_sports_expense",
+     0.17
+    ]
+   ],
+   "tokens": 1528
+  },
+  {
+   "label": "DESPESAS GERAIS CATEGORIA DE BASE",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "youth_football",
+     0.02
+    ]
+   ],
+   "tokens": 1541
+  },
+  {
+   "label": "DESPESAS DEPRECIAÇÃO",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "DESPESAS GERAIS FUTEBOL FEMININO",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "womens_football",
+     0.01
+    ]
+   ],
+   "tokens": 1550
+  },
+  {
+   "label": "DESPESAS COM VENDAS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "player_sales",
+     0.11
+    ]
+   ],
+   "tokens": 1514
+  },
+  {
+   "label": "RECEITAS/(DESPESAS) FINANCEIRAS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1534
+  },
+  {
+   "label": "LUCRO/(PREJUÍZO) OPERACIONAL",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "other_income",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1536
+  },
+  {
+   "label": "(+/-) DESPESAS/(RECEITAS) OPERACIONAIS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "other_income",
+     0.14
+    ]
+   ],
+   "tokens": 1538
+  },
+  {
+   "label": "RESULTADO DA ATIVIDADE",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "other_income",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1506
+  },
+  {
+   "label": "(PREJUÍZO)/LUCRO LÍQUIDO DO EXERCÍCIO",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "lump_football_operations",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.45
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 1458
+  },
+  {
+   "label": "RESULTADO ANTES DA PROVISÃO DO IR/CS",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "other_income",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.27
+    ]
+   ],
+   "tokens": 1503
+  },
+  {
+   "label": "OUTRAS RECEITAS/(DESPESAS)",
+   "lado": null,
+   "page": 7,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / CNPJ: 04.847.144/0001-39",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1517
+  }
+ ]
+}

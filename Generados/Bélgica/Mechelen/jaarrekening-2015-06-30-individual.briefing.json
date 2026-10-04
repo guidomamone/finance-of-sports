@@ -1,0 +1,286 @@
+{
+  "club": "mechelen-be",
+  "year": 2015,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Mechelen/jaarrekening-2015-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:55:18.404Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 105,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 9,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 5,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / VASTE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Financiële vaste activa",
+          "values": [
+            "5.4/5.5.1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbonden entiteiten",
+          "values": [
+            "5.13"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "285/8",
+          "values": [
+            "32.097",
+            "27.937"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "29/58",
+          "values": [
+            "9.687.404",
+            "4.763.875"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "40/41 4.643.860 2.590.644 / 40 3.931.107 2.518.474 / 41 712.753 72.170 / 415 / 50/53",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "4.186.464",
+            "1.220.370"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "792.706",
+            "883.009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "13.982.635",
+            "7.669.955"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "PASSIVA / EIGEN VERMOGEN 10/15 4.350.503 4.333.069 / VOORZIENINGEN 16",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "9.632.132",
+            "3.336.886"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 58 |",
+          "values": [
+            "4.424.320",
+            "4.026"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "4.424.320",
+            "4.026"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Achtergestelde leningen 170 / Niet-achtergestelde obligatieleningen 171 / Leasingschulden en soortgelijke schulden 172",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kredietinstellingen",
+          "values": [
+            "228.320",
+            "4.026"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige leningen",
+          "values": [
+            "4.196.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Schulden op meer dan één jaar die binnen het jaar / vervallen 58 | 42 18.206 58.900 / Financiële schulden 43 / Kredietinstellingen 430/8 / Overige leningen 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "2.225.682",
+            "614.681"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "2.225.682",
+            "614.681"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 / Schulden met betrekking tot belastingen,",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "bezoldigingen en sociale lasten 58 |",
+          "values": [
+            "1.028.019",
+            "662.153"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "549.860",
+            "172.215"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "478.159",
+            "489.938"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Vervallen obligaties en coupons, terug te betalen / subsidies en borgtochten ontvangen in contanten 480/8 / Andere rentedragende schulden 4890 / Andere schulden, niet-rentedragend of gekoppeld / aan een abnormaal lage rente 4891",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overlopende rekeningen 5.8 | 492/3",
+          "values": [
+            "1.935.905",
+            "1.997.127"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "13.982.635",
+            "7.669.955"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "STAAT VAN DE SCHULDEN EN OVERLOPENDE REKENINGEN (PASSIVA) / UITSPLITSING VAN DE SCHULDEN MET EEN OORSPRONKELIJKE LOOPTIJD VAN MEER DAN EEN / JAAR, NAARGELANG HUN RESTERENDE LOOPTIJD",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kredietinstellingen 8843",
+          "values": [
+            "168.934"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige leningen 8853",
+          "values": [
+            "4.196.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "Financiële vaste activa",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financiële vaste activa",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Verbonden entiteiten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Verbonden entiteiten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Mechelen",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

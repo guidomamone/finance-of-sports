@@ -1,0 +1,668 @@
+{
+  "md": "Clubes/España/Athletic Club/cuentas-anuales-2022-2023.md",
+  "pdf": "Clubes/España/Athletic Club/cuentas-anuales-2022-2023.pdf",
+  "club": "athleticclub",
+  "year": 2023,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:00:25.036Z",
+  "tieOuts": {
+    "cierran": 25,
+    "noCierran": 19
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "17 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 68,
+    "notasUsadas": [
+      "74",
+      "73"
+    ]
+  },
+  "ladoConocido": 37,
+  "rubros": [
+    {
+      "label": "Ingresos por competición",
+      "lado": "revenue",
+      "page": 31,
+      "section": "total de 1.926.640,24 euros (1.454.237,84 euros en el ejercicio anterior). / 21.4. Importe neto de la cifra de negocios: / 30.06.2023                                                   30.06.2022",
+      "values": [
+        3.642621
+      ],
+      "origen": "nota 74 (ancla 14)",
+      "ancla": "21.4 1. Importe neto de la cifra de negocios",
+      "glosa": "Ingresos por competición"
+    },
+    {
+      "label": "21.4 1. Importe neto de la cifra de negocios",
+      "lado": null,
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        112.781946
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "21.4 1. Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Ingresos por abonados y socios",
+      "lado": "revenue",
+      "page": 31,
+      "section": "total de 1.926.640,24 euros (1.454.237,84 euros en el ejercicio anterior). / 21.4. Importe neto de la cifra de negocios: / 30.06.2023                                                   30.06.2022",
+      "values": [
+        25.109247
+      ],
+      "origen": "nota 74 (ancla 14)",
+      "ancla": "21.4 1. Importe neto de la cifra de negocios",
+      "glosa": "Ingresos por abonados y socios"
+    },
+    {
+      "label": "Ingresos San Mames VIP Area",
+      "lado": "revenue",
+      "page": 31,
+      "section": "total de 1.926.640,24 euros (1.454.237,84 euros en el ejercicio anterior). / 21.4. Importe neto de la cifra de negocios: / 30.06.2023                                                   30.06.2022",
+      "values": [
+        6.849313
+      ],
+      "origen": "nota 74 (ancla 14)",
+      "ancla": "21.4 1. Importe neto de la cifra de negocios",
+      "glosa": "Ingresos San Mames VIP Area"
+    },
+    {
+      "label": "Ingresos por retransmisión",
+      "lado": "revenue",
+      "page": 31,
+      "section": "total de 1.926.640,24 euros (1.454.237,84 euros en el ejercicio anterior). / 21.4. Importe neto de la cifra de negocios: / 30.06.2023                                                   30.06.2022",
+      "values": [
+        67.228128
+      ],
+      "origen": "nota 74 (ancla 14)",
+      "ancla": "21.4 1. Importe neto de la cifra de negocios",
+      "glosa": "Ingresos por retransmisión"
+    },
+    {
+      "label": "Ingresos de comercialización y publicidad",
+      "lado": "revenue",
+      "page": 31,
+      "section": "total de 1.926.640,24 euros (1.454.237,84 euros en el ejercicio anterior). / 21.4. Importe neto de la cifra de negocios: / 30.06.2023                                                   30.06.2022",
+      "values": [
+        9.952638
+      ],
+      "origen": "nota 74 (ancla 14)",
+      "ancla": "21.4 1. Importe neto de la cifra de negocios",
+      "glosa": "Ingresos de comercialización y publicidad"
+    },
+    {
+      "label": "a) Ingresos deportivos",
+      "lado": "revenue",
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        87.672699
+      ],
+      "origen": "estado 14",
+      "glosa": "a) Ingresos deportivos"
+    },
+    {
+      "label": "b) Ingresos por abonados y socios",
+      "lado": "revenue",
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        25.109247
+      ],
+      "origen": "estado 14",
+      "glosa": "b) Ingresos por abonados y socios"
+    },
+    {
+      "label": "2. Variación de existencias de productos terminados y en curso de fabricación",
+      "lado": null,
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        -1.371221
+      ],
+      "origen": "estado 14",
+      "glosa": "2. Variación de existencias de productos terminados y en curso de fabricación"
+    },
+    {
+      "label": "4. Aprovisionamientos",
+      "lado": null,
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        -3.035581
+      ],
+      "origen": "estado 14",
+      "glosa": "4. Aprovisionamientos"
+    },
+    {
+      "label": "b) Otros consumos y gastos externos",
+      "lado": "expense",
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        -3.035581
+      ],
+      "origen": "estado 14",
+      "glosa": "b) Otros consumos y gastos externos"
+    },
+    {
+      "label": "5. Otros ingresos de explotación",
+      "lado": "revenue",
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        8.160279
+      ],
+      "origen": "estado 14",
+      "glosa": "5. Otros ingresos de explotación"
+    },
+    {
+      "label": "21.5 a) Ingresos accesorios y otros de gestion corriente",
+      "lado": "revenue",
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        8.098464
+      ],
+      "origen": "estado 14",
+      "glosa": "21.5 a) Ingresos accesorios y otros de gestion corriente"
+    },
+    {
+      "label": "21.2 6. Gastos de personal",
+      "lado": "expense",
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        -98.85631
+      ],
+      "origen": "estado 14",
+      "glosa": "21.2 6. Gastos de personal"
+    },
+    {
+      "label": "a) Sueldos y salarios plantilla deportiva",
+      "lado": null,
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        -83.67135
+      ],
+      "origen": "estado 14",
+      "glosa": "a) Sueldos y salarios plantilla deportiva"
+    },
+    {
+      "label": "b) Otros Sueldos, salarios y asimilados",
+      "lado": null,
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        -11.647437
+      ],
+      "origen": "estado 14",
+      "glosa": "b) Otros Sueldos, salarios y asimilados"
+    },
+    {
+      "label": "c) Cargas sociales",
+      "lado": null,
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        -3.537523
+      ],
+      "origen": "estado 14",
+      "glosa": "c) Cargas sociales"
+    },
+    {
+      "label": "7. Otros gastos de explotación",
+      "lado": "expense",
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        -2.386978
+      ],
+      "origen": "estado 14",
+      "glosa": "7. Otros gastos de explotación"
+    },
+    {
+      "label": "a) Servicios exteriores",
+      "lado": null,
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        -10.584557
+      ],
+      "origen": "estado 14",
+      "glosa": "a) Servicios exteriores"
+    },
+    {
+      "label": "b) Tributos",
+      "lado": null,
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        -0.462803
+      ],
+      "origen": "estado 14",
+      "glosa": "b) Tributos"
+    },
+    {
+      "label": "c) Desplazamientos",
+      "lado": null,
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        -3.168624
+      ],
+      "origen": "estado 14",
+      "glosa": "c) Desplazamientos"
+    },
+    {
+      "label": "Derechos arbitrajes",
+      "lado": "expense",
+      "page": 31,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2023                                                    30.06.2022",
+      "values": [
+        0.94766
+      ],
+      "origen": "nota 73 (ancla 14)",
+      "ancla": "21.3 f) Otros gastos de gestión corriente",
+      "glosa": "Derechos arbitrajes"
+    },
+    {
+      "label": "21.3 f) Otros gastos de gestión corriente",
+      "lado": "expense",
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        -9.686901
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "21.3 f) Otros gastos de gestión corriente"
+    },
+    {
+      "label": "Subvenciones a entidades",
+      "lado": "expense",
+      "page": 31,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2023                                                    30.06.2022",
+      "values": [
+        2.04034
+      ],
+      "origen": "nota 73 (ancla 14)",
+      "ancla": "21.3 f) Otros gastos de gestión corriente",
+      "glosa": "Subvenciones a entidades"
+    },
+    {
+      "label": "LNFP (Nota 21.4)",
+      "lado": "expense",
+      "page": 31,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2023                                                    30.06.2022",
+      "values": [
+        5.991636
+      ],
+      "origen": "nota 73 (ancla 14)",
+      "ancla": "21.3 f) Otros gastos de gestión corriente",
+      "glosa": "LNFP (Nota 21.4)"
+    },
+    {
+      "label": "Cuotas entidades deportivas",
+      "lado": "expense",
+      "page": 31,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2023                                                    30.06.2022",
+      "values": [
+        0.644799
+      ],
+      "origen": "nota 73 (ancla 14)",
+      "ancla": "21.3 f) Otros gastos de gestión corriente",
+      "glosa": "Cuotas entidades deportivas"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 31,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2023                                                    30.06.2022",
+      "values": [
+        0.062466
+      ],
+      "origen": "nota 73 (ancla 14)",
+      "ancla": "21.3 f) Otros gastos de gestión corriente",
+      "glosa": "Otros"
+    },
+    {
+      "label": "5,6 y 7 8. Amortización del inmovilizado",
+      "lado": null,
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        -17.001336
+      ],
+      "origen": "estado 14",
+      "glosa": "5,6 y 7 8. Amortización del inmovilizado"
+    },
+    {
+      "label": "15 9. Imputación de subvenciones de inmovilizado no financiero y otras",
+      "lado": "revenue",
+      "page": 3,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS / AL CIERRE DEL EJERCICIO TERMINADO EL 30 DE JUNIO DE 2023 / (DEBE) HABER / A) OPERACIONES CONTINUADAS",
+      "values": [
+        0.116632
+      ],
+      "origen": "estado 14",
+      "glosa": "15 9. Imputación de subvenciones de inmovilizado no financiero y otras"
+    },
+    {
+      "label": "LNFP - Patrocinios, licencias y quinielas",
+      "lado": null,
+      "page": 32,
+      "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+      "values": [
+        231.38285
+      ],
+      "origen": "estado 78",
+      "glosa": "LNFP - Patrocinios, licencias y quinielas"
+    },
+    {
+      "label": "LNFP – Gastos COVID",
+      "lado": "expense",
+      "page": 32,
+      "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+      "values": [
+        -266.41893
+      ],
+      "origen": "estado 78",
+      "glosa": "LNFP – Gastos COVID"
+    },
+    {
+      "label": "RFEF - Cantera de valores",
+      "lado": null,
+      "page": 32,
+      "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+      "values": [
+        257.67662
+      ],
+      "origen": "estado 78",
+      "glosa": "RFEF - Cantera de valores"
+    },
+    {
+      "label": "Participación en selección",
+      "lado": null,
+      "page": 32,
+      "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+      "values": [
+        760.8276
+      ],
+      "origen": "estado 78",
+      "glosa": "Participación en selección"
+    },
+    {
+      "label": "Ayuda socios/as COVID (Nota 21.4) -",
+      "lado": null,
+      "page": 32,
+      "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+      "values": [
+        3584.195
+      ],
+      "origen": "estado 78",
+      "glosa": "Ayuda socios/as COVID (Nota 21.4) -"
+    },
+    {
+      "label": "LFP Devolución de abonos -",
+      "lado": null,
+      "page": 32,
+      "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+      "values": [
+        373.69182
+      ],
+      "origen": "estado 78",
+      "glosa": "LFP Devolución de abonos -"
+    },
+    {
+      "label": "Otros ingresos cesión -",
+      "lado": "revenue",
+      "page": 32,
+      "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+      "values": [
+        287.99671
+      ],
+      "origen": "estado 78",
+      "glosa": "Otros ingresos cesión -"
+    },
+    {
+      "label": "Otros",
+      "lado": null,
+      "page": 32,
+      "section": "dentro de la ayuda total de 990.444,02 euros, mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2023                                    30.06.2022",
+      "values": [
+        364.77612
+      ],
+      "origen": "estado 78",
+      "glosa": "Otros"
+    },
+    {
+      "label": "b2) En terceros",
+      "lado": null,
+      "page": 3,
+      "section": "b) De valores negociables y otros instrumentos financieros",
+      "values": [
+        0.761624
+      ],
+      "origen": "estado 16",
+      "glosa": "b2) En terceros"
+    },
+    {
+      "label": "15. Gastos financieros",
+      "lado": "expense",
+      "page": 3,
+      "section": "b) De valores negociables y otros instrumentos financieros",
+      "values": [
+        -0.126059
+      ],
+      "origen": "estado 16",
+      "glosa": "15. Gastos financieros"
+    },
+    {
+      "label": "c) Por deudas con terceros",
+      "lado": null,
+      "page": 3,
+      "section": "b) De valores negociables y otros instrumentos financieros",
+      "values": [
+        -0.126059
+      ],
+      "origen": "estado 16",
+      "glosa": "c) Por deudas con terceros"
+    },
+    {
+      "label": "Jugadoras y jugadores",
+      "lado": null,
+      "page": 32,
+      "section": "NOTA 22 / OTRA INFORMACIÓN",
+      "values": [
+        131.42
+      ],
+      "origen": "estado 79",
+      "glosa": "Jugadoras y jugadores"
+    },
+    {
+      "label": "Cuerpo técnico y resto",
+      "lado": null,
+      "page": 32,
+      "section": "NOTA 22 / OTRA INFORMACIÓN",
+      "values": [
+        220.67
+      ],
+      "origen": "estado 79",
+      "glosa": "Cuerpo técnico y resto"
+    },
+    {
+      "label": "Maquinaria 187.401,80 - - -",
+      "lado": "expense",
+      "page": 15,
+      "section": "COSTE",
+      "values": [
+        187.4018
+      ],
+      "origen": "estado 36",
+      "glosa": "Maquinaria 187.401,80 - - -"
+    },
+    {
+      "label": "Otras instalaciones 40.696.648,58 93.103,51 -",
+      "lado": "expense",
+      "page": 15,
+      "section": "COSTE",
+      "values": [
+        3510.07842
+      ],
+      "origen": "estado 36",
+      "glosa": "Otras instalaciones 40.696.648,58 93.103,51 -"
+    },
+    {
+      "label": "Mobiliario y material deportivo 2.472.155,15 92.000,00 - -",
+      "lado": "expense",
+      "page": 15,
+      "section": "COSTE",
+      "values": [
+        2564.15515
+      ],
+      "origen": "estado 36",
+      "glosa": "Mobiliario y material deportivo 2.472.155,15 92.000,00 - -"
+    },
+    {
+      "label": "Equipos informáticos 625.003,81 - - -",
+      "lado": "expense",
+      "page": 15,
+      "section": "COSTE",
+      "values": [
+        625.00381
+      ],
+      "origen": "estado 36",
+      "glosa": "Equipos informáticos 625.003,81 - - -"
+    },
+    {
+      "label": "Elementos de transporte 239.555,78 - - -",
+      "lado": "expense",
+      "page": 15,
+      "section": "COSTE",
+      "values": [
+        239.55578
+      ],
+      "origen": "estado 36",
+      "glosa": "Elementos de transporte 239.555,78 - - -"
+    },
+    {
+      "label": "Maquinaria 187.401,80 - - -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        0.187402
+      ],
+      "origen": "estado 32",
+      "glosa": "Maquinaria 187.401,80 - - -"
+    },
+    {
+      "label": "Otras instalaciones",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        44.299831
+      ],
+      "origen": "estado 32",
+      "glosa": "Otras instalaciones"
+    },
+    {
+      "label": "Mobiliario y material deportivo 2.564.155,15 - - -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        2.564155
+      ],
+      "origen": "estado 32",
+      "glosa": "Mobiliario y material deportivo 2.564.155,15 - - -"
+    },
+    {
+      "label": "Equipos informáticos 625.003,81 - - -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        0.625004
+      ],
+      "origen": "estado 32",
+      "glosa": "Equipos informáticos 625.003,81 - - -"
+    },
+    {
+      "label": "Elementos de transporte 239.555,78 - - -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        0.239556
+      ],
+      "origen": "estado 32",
+      "glosa": "Elementos de transporte 239.555,78 - - -"
+    },
+    {
+      "label": "Aplicaciones informáticas 3.053.731,96 263.870,37 -",
+      "lado": "expense",
+      "page": 13,
+      "section": "NOTA 6 / OTRO INMOVILIZADO INTANGIBLE / COSTE",
+      "values": [
+        3.317602
+      ],
+      "origen": "estado 26",
+      "glosa": "Aplicaciones informáticas 3.053.731,96 263.870,37 -"
+    },
+    {
+      "label": "Propiedad artística 143.720,82 - -",
+      "lado": "expense",
+      "page": 13,
+      "section": "NOTA 6 / OTRO INMOVILIZADO INTANGIBLE / COSTE",
+      "values": [
+        0.143721
+      ],
+      "origen": "estado 26",
+      "glosa": "Propiedad artística 143.720,82 - -"
+    },
+    {
+      "label": "Otros 113.959,50 - -",
+      "lado": "expense",
+      "page": 13,
+      "section": "NOTA 6 / OTRO INMOVILIZADO INTANGIBLE / COSTE",
+      "values": [
+        0.113959
+      ],
+      "origen": "estado 26",
+      "glosa": "Otros 113.959,50 - -"
+    },
+    {
+      "label": "Ventas de existencias en tiendas y museo",
+      "lado": "revenue",
+      "page": 32,
+      "section": "21.5. Ingresos accesorios y otros de gestión corriente: / 30.06.2023                                    30.06.2022",
+      "values": [
+        7837.00639
+      ],
+      "origen": "estado 76",
+      "glosa": "Ventas de existencias en tiendas y museo"
+    },
+    {
+      "label": "Arrendamientos",
+      "lado": "revenue",
+      "page": 32,
+      "section": "21.5. Ingresos accesorios y otros de gestión corriente: / 30.06.2023                                    30.06.2022",
+      "values": [
+        261.4581
+      ],
+      "origen": "estado 76",
+      "glosa": "Arrendamientos"
+    }
+  ]
+}

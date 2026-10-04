@@ -1,0 +1,752 @@
+{
+  "club": "hoffenheim-de",
+  "year": 2021,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2020-21.md",
+  "generatedAt": "2026-09-30T21:50:38.015Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 196,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 16,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 7,
+      "section": "UNTERNEHMENSREGISTER / EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "I. Immaterielle Vermögensgegenstände",
+          "values": [
+            "53.434.232,00",
+            "75.358.657,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+          "values": [
+            "53.434.232,00",
+            "75.358.657,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a. Konzessionen",
+          "values": [
+            "53.434.232,00",
+            "75.358.657,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Sachanlagen",
+          "values": [
+            "66.933.551,00",
+            "69.515.714,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+          "values": [
+            "62.015.868,00",
+            "63.313.322,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a. Übrige Grundstücke",
+          "values": [
+            "62.015.868,00",
+            "63.313.322,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. technische Anlagen und Maschinen",
+          "values": [
+            "2.474.092,00",
+            "2.849.657,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "UNTERNEHMENSREGISTER / EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "a. technische Anlagen",
+          "values": [
+            "2.474.092,00",
+            "2.849.657,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "2.438.372,00",
+            "2.301.762,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a. nicht zuordenbar",
+          "values": [
+            "2.438.372,00",
+            "2.301.762,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. geleistete Anzahlungen und Anlagen im Bau",
+          "values": [
+            "5.219,00",
+            "1.050.973,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a. geleistete Anzahlungen auf Sachanlagen",
+          "values": [
+            "5.219,00",
+            "1.050.973,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Finanzanlagen",
+          "values": [
+            "25.000,00",
+            "25.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Anteile an verbundenen Unternehmen",
+          "values": [
+            "25.000,00",
+            "25.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a. Anteile an Kapitalgesellschaften",
+          "values": [
+            "25.000,00",
+            "25.000,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "(B: Uinlaten 166L5|",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "I. Vorräte",
+          "values": [
+            "1.415.425,00",
+            "644.729,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Waren",
+          "values": [
+            "1.415.425,00",
+            "644.729,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a. Neuwaren",
+          "values": [
+            "1.415.425,00",
+            "644.729,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Forderungen und sonstige Vermögensgegenstände",
+          "values": [
+            "77.361.483,00",
+            "90.361.855,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Forderungen aus Lieferungen und Leistungen",
+          "values": [
+            "10.849.975,00",
+            "29.154.907,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a. nicht zuordenbar",
+          "values": [
+            "10.849.975,00",
+            "29.154.907,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Forderungen gegen verbundene Unternehmen",
+          "values": [
+            "5.511,00",
+            "311.347,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a. soweit aus der/den für die ausländische(n) Betriebsstätte(n) geführten Buchführung(en) nicht anders zuordenbar",
+          "values": [
+            "5.511,00",
+            "311.347,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. sonstige Vermögensgegenstände",
+          "values": [
+            "66.505.997,00",
+            "60.895.601,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a. übrige sonstige Vermögensgegenstände",
+          "values": [
+            "66.505.997,00",
+            "60.895.601,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Kassenbestand, Bundesbankguthaben, Guthaben bei Kreditinstituten und Schecks",
+          "values": [
+            "65.481.047,00",
+            "75.035.973,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "-593.900,00 / Passiva / 30.6.2021 / EUR / Ds En 2 2]",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "I. Gezeichnetes Kapital / Kapitalkonto / Kapitalanteile",
+          "values": [
+            "2.500.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Schlusskapital des letzten Stichtags",
+          "values": [
+            "2.500.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Verlustvortrag",
+          "values": [
+            "3.671.646,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Bilanzverlust",
+          "values": [
+            "142.107,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IV. Ausgleichsposten für nicht beherrschende Anteile",
+          "values": [
+            "62.404.585,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "b) Gewinnabführung aufgrund einer atypisch stillen Beteiligung",
+          "values": [
+            "0,00",
+            "55.569.888,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "anderen Gesellschaftern zustehender Gewinn",
+          "values": [
+            "947.223,00",
+            "1.043.227,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "TE TE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Abschreibungen auf das Anlagevermögen",
+          "values": [
+            "28.426",
+            "28.079"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme / Abnahme (-) der Rückstellungen",
+          "values": [
+            "1.830",
+            "-1.140"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "sonstige zahlungsunwirksame Aufwendungen / Erträge (-) -251 345",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Zunahme (-) / Abnahme der Vorräte, der Forderungen aus Lieferungen und Leistungen sowie anderer Aktiva",
+          "values": [
+            "8.501",
+            "-17.845"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme / Abnahme (-) der Verbindlichkeiten aus Lieferungen und Leistungen sowie anderer Passiva",
+          "values": [
+            "-17.315",
+            "3.934"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gewinn (-) / Verlust aus dem Abgang von Anlagevermögen",
+          "values": [
+            "-9.485",
+            "-98.670"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zinsaufwendungen / Zinserträge (-)",
+          "values": [
+            "-1.578",
+            "-2.040"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "Ertragsteueraufwand / -ertrag (-) 101 533 / Ertragsteuerzahlungen (-) / -erstattungen -30 -878",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cashflow aus laufender Geschäftstätigkeit",
+          "values": [
+            "10.057",
+            "-87.088"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einzahlungen aus Abgängen des immateriellen Anlagevermögens",
+          "values": [
+            "13.414",
+            "106.440"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auszahlungen (-) für Investitionen in das immaterielle Anlagevermögen",
+          "values": [
+            "-5.747",
+            "-57.590"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "Einzahlungen aus Abgängen von Gegenständen des Sachanlagevermögens 0 3",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Auszahlungen (-) für Investitionen in das Sachanlagevermögen",
+          "values": [
+            "-2.239",
+            "-1.625"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "erhaltene Zinsen",
+          "values": [
+            "1.895",
+            "2.049"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cashflow aus der Investitionstätigkeit",
+          "values": [
+            "71.323",
+            "49.279"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auszahlungen (-) aus Eigenkapitalrückzahlungen an - an andere Gesellschafter",
+          "values": [
+            "-4.000",
+            "-4.720"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "- an stillen Gesellschafter 0 0 / gezahlte Zinsen (-) 0 -9",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "auf andere Gesellschafter entfallendes Ergebnis",
+          "values": [
+            "1.043"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ergebnisanteil stiller Gesellschafter",
+          "values": [
+            "-23.882",
+            "55.570"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Herr Denni Marco Strich (Kaufmann) - Egelsbach / seit",
+          "values": [
+            "16.07.2020"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Herr Prof. Dr. Jan Mayer - Heidelberg / seit",
+          "values": [
+            "15.06.2021"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Herr Dr. Peter Görlich - Zuzenhausen / bis",
+          "values": [
+            "15.06.2021"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte 3.952.020",
+          "values": [
+            "224.779"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Spielerwerte 131.409.522",
+          "values": [
+            "5.522.088"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "135.361.542 0 5.746.867 / II. Sachanlagen",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte",
+          "values": [
+            "107.392.206",
+            "753.198",
+            "1.289.824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. technische Anlagen und Maschinen 9.765.846",
+          "values": [
+            "123.255"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "21.899.454",
+            "297.775",
+            "846.476"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. geleistete Anzahlungen",
+          "values": [
+            "1.050.973",
+            "-1.050.973",
+            "5.219"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "Anteile an verbundenen Unternehmen 25.000 0 0 0 / 275.495.021 0 8.011.642 / Buchwert Abgänge 30.06.2021 01.07.2020 Zugänge / € € € € / I. Immaterielle Vermögensgegenstände",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche",
+          "values": [
+            "4.176.798",
+            "2.186.268",
+            "271.893"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Rechte und Werte",
+          "values": [
+            "11.321.110",
+            "125.610.500",
+            "57.816.617",
+            "23.470.485"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spielerwerte",
+          "values": [
+            "11.321.110",
+            "129.787.298",
+            "60.002.885",
+            "23.742.378"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche",
+          "values": [
+            "2.458.160",
+            "1.718.638",
+            "1.765.752"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Rechte und Werte",
+          "values": [
+            "7.392.196",
+            "73.894.906",
+            "51.715.594",
+            "73.592.905"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spielerwerte",
+          "values": [
+            "7.392.196",
+            "76.353.066",
+            "53.434.232",
+            "75.358.657"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "II. Sachanlagen / 1. 125.880 47.138.310 62.015.868 63.313.322 / 2. Grundstücke, grundstücksgleiche Rechte 26.825 7.380.860 2.474.092 2.849.657 / 3. technische Anlagen und Maschinen",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "424.731",
+            "20.179.987",
+            "2.438.372",
+            "2.301.762"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. geleistete Anzahlungen 0",
+          "values": [
+            "5.219",
+            "1.050.973"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 7,
+    "results": [
+      {
+        "label": "Zunahme (-) / Abnahme der Vorräte, der Forderungen aus Lieferungen und Leistungen sowie anderer Aktiva",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Zunahme (-) / Abnahme der Vorräte, der Forderungen aus Lieferungen und Leistungen sowie anderer Aktiva",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Zunahme / Abnahme (-) der Verbindlichkeiten aus Lieferungen und Leistungen sowie anderer Passiva",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Zunahme / Abnahme (-) der Verbindlichkeiten aus Lieferungen und Leistungen sowie anderer Passiva",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gewinn (-) / Verlust aus dem Abgang von Anlagevermögen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gewinn (-) / Verlust aus dem Abgang von Anlagevermögen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Zinsaufwendungen / Zinserträge (-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Zinsaufwendungen / Zinserträge (-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cashflow aus laufender Geschäftstätigkeit",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cashflow aus laufender Geschäftstätigkeit",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Einzahlungen aus Abgängen des immateriellen Anlagevermögens",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Einzahlungen aus Abgängen des immateriellen Anlagevermögens",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Auszahlungen (-) für Investitionen in das immaterielle Anlagevermögen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Auszahlungen (-) für Investitionen in das immaterielle Anlagevermögen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "de",
+    "query": "TSG Hoffenheim",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

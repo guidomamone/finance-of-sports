@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2008-09.md",
+ "generado": "2026-10-04T17:59:45.804Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "€",
+ "caja": {
+  "lineas": [
+   1711
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1744,
+   1751
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance está expresado en euros (unidades), indicado solo con el símbolo '€' en el encabezado; la deuda financiera corresponde a 'Bonds and other financial liabilities' no corriente y corriente."
+}

@@ -1,0 +1,115 @@
+{
+ "md": "Clubes/Noruega/Sandefjord/aarsregnskap-sandefjord-fotball-as-2019.md",
+ "pdf": "Clubes/Noruega/Sandefjord/aarsregnskap-sandefjord-fotball-as-2019.pdf",
+ "club": "sandefjord",
+ "year": 2019,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:48.766Z",
+ "tieOuts": {
+  "cierran": 35,
+  "noCierran": 14
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "8 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "12 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 9,
+  "notasUsadas": []
+ },
+ "ladoConocido": 7,
+ "rubros": [
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    20.761126
+   ],
+   "origen": "estado 0",
+   "glosa": "Ingresos por ventas"
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    5.382136
+   ],
+   "origen": "estado 0",
+   "glosa": "Otros ingresos de explotación"
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    5.1872
+   ],
+   "origen": "estado 0",
+   "glosa": "Coste de las ventas"
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    0.486918
+   ],
+   "origen": "estado 0",
+   "glosa": "Amortización del inmovilizado material e intangible"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    34.662992
+   ],
+   "origen": "estado 0",
+   "glosa": "Otros gastos de explotación"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    0.13922
+   ],
+   "origen": "estado 0",
+   "glosa": "Otros gastos por intereses"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    0.00896
+   ],
+   "origen": "estado 0",
+   "glosa": "Otros gastos financieros"
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "values": [
+    -14.342028
+   ],
+   "origen": "estado 0",
+   "glosa": "Transferencias a/desde otros fondos propios"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.md",
+ "generado": "2026-10-03T20:04:50.000Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   44
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no indica escala explícita; los importes tienen decimales (ej. 468.861,84), por lo que están en euros (unidades). No hay líneas de préstamos bancarios: las 'Λοιπές μακροπρόθεσμες υποχρεώσεις' y 'Λοιπές υποχρεώσεις' no se identifican como deuda financiera, aunque existen intereses deudores (L91)."
+}

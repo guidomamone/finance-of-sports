@@ -1,0 +1,283 @@
+{
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2021-06-30.md",
+ "generatedAt": "2026-10-03T20:04:25.335Z",
+ "rubrosHuella": "a7d509935d031257a0066d73bccbdf5370a743c7",
+ "rubros": [
+  {
+   "label": "Πωλήσεις εμπορευμάτων",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\"",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "sponsorship_commercial",
+     0.43
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Επιχορηγήσεις & διάφορα έσοδα πωλήσεων",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1091
+  },
+  {
+   "label": "Αμοιβές και έξοδα τρίτων",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "(+) Λοιπά έσοδα και κέρδη",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Πωλήσεις υπηρεσιών",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\"",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "lump_football_operations",
+     0.15
+    ],
+    [
+     "education",
+     0.01
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Έσοδα παρεπόμενων ασχολιών",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "youth_football",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Αμοιβές και έξοδα προσωπικού",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+   "choice": "wages_squad",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "wages_squad",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.29
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "(-) Λοιπά έξοδα και ζημιές",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Φόροι-τέλη",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Αποσβέσεις",
+   "lado": "expense",
+   "page": 19,
+   "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+   "choice": "other_amortisation",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_amortisation",
+     0.59
+    ],
+    [
+     "depreciation",
+     0.34
+    ],
+    [
+     "player_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1081
+  }
+ ]
+}

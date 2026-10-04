@@ -1,0 +1,660 @@
+{
+  "md": "Clubes/Argentina/Gimnasia y Esgrima LP/balance-ejercicio-134-2020-2021.md",
+  "pdf": "Clubes/Argentina/Gimnasia y Esgrima LP/balance-ejercicio-134-2020-2021.pdf",
+  "club": "gimnasiaesgrima-ar",
+  "year": 2021,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:50:59.956Z",
+  "tieOuts": {
+    "cierran": 7,
+    "noCierran": 2
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 53,
+    "notasUsadas": [
+      "14",
+      "15",
+      "5"
+    ]
+  },
+  "ladoConocido": 28,
+  "rubros": [
+    {
+      "label": "Cuotas Sociales",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        210.204826
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "Cuotas Sociales"
+    },
+    {
+      "label": "Total Recursos Ordinarios",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# Estado de Recursos y Gastos",
+      "values": [
+        1869.163302
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Total Recursos Ordinarios"
+    },
+    {
+      "label": "Cesión Der. Federativos / Solidaridad",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        509.827062
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "Cesión Der. Federativos / Solidaridad"
+    },
+    {
+      "label": "Derechos de Televisión",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        438.810065
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "Derechos de Televisión"
+    },
+    {
+      "label": "Publicidad",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        81.427347
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Entradas",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        24.130328
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "Entradas"
+    },
+    {
+      "label": "Venta Merchandising",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        31.413944
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "Venta Merchandising"
+    },
+    {
+      "label": "Matrícula y Cuotas",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        77.47945
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "Matrícula y Cuotas"
+    },
+    {
+      "label": "Arancel Deportes",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        15.012195
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "Arancel Deportes"
+    },
+    {
+      "label": "Alquiler Instalaciones",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        2.130482
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "Alquiler Instalaciones"
+    },
+    {
+      "label": "Intereses",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        4.307754
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "Intereses"
+    },
+    {
+      "label": "Diferencia de Cambio",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        58.044357
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "Diferencia de Cambio"
+    },
+    {
+      "label": "Varios",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        122.737131
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "Varios"
+    },
+    {
+      "label": "Donaciones",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        0.171342
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "RECPAM",
+      "lado": "revenue",
+      "page": 14,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo IV - Recursos",
+      "values": [
+        293.467017
+      ],
+      "origen": "nota 14 (ancla 5)",
+      "ancla": "Total Recursos Ordinarios",
+      "glosa": "RECPAM"
+    },
+    {
+      "label": "Sueldos y Retribuciones",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+      "values": [
+        228.30047
+      ],
+      "origen": "nota 15 (ancla 5)",
+      "ancla": "Fútbol Profesional (Anexo V)",
+      "glosa": "Sueldos y Retribuciones"
+    },
+    {
+      "label": "Fútbol Profesional (Anexo V)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# Estado de Recursos y Gastos",
+      "values": [
+        -616.772109
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Fútbol Profesional (Anexo V)"
+    },
+    {
+      "label": "Reconocimientos y Premios",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+      "values": [
+        176.849085
+      ],
+      "origen": "nota 15 (ancla 5)",
+      "ancla": "Fútbol Profesional (Anexo V)",
+      "glosa": "Reconocimientos y Premios"
+    },
+    {
+      "label": "Cargas Sociales",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+      "values": [
+        14.953827
+      ],
+      "origen": "nota 15 (ancla 5)",
+      "ancla": "Fútbol Profesional (Anexo V)",
+      "glosa": "Cargas Sociales"
+    },
+    {
+      "label": "Gastos de Transferencias",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+      "values": [
+        85.488076
+      ],
+      "origen": "nota 15 (ancla 5)",
+      "ancla": "Fútbol Profesional (Anexo V)",
+      "glosa": "Gastos de Transferencias"
+    },
+    {
+      "label": "Gastos de Partidos",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+      "values": [
+        7.730635
+      ],
+      "origen": "nota 15 (ancla 5)",
+      "ancla": "Fútbol Profesional (Anexo V)",
+      "glosa": "Gastos de Partidos"
+    },
+    {
+      "label": "Atención Médica",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+      "values": [
+        10.877089
+      ],
+      "origen": "nota 15 (ancla 5)",
+      "ancla": "Fútbol Profesional (Anexo V)",
+      "glosa": "Atención Médica"
+    },
+    {
+      "label": "Costo Cesión Der. Federativos",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+      "values": [
+        44.813154
+      ],
+      "origen": "nota 15 (ancla 5)",
+      "ancla": "Fútbol Profesional (Anexo V)",
+      "glosa": "Costo Cesión Der. Federativos"
+    },
+    {
+      "label": "Varios",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Anexo V - Gastos",
+      "values": [
+        47.759774
+      ],
+      "origen": "nota 15 (ancla 5)",
+      "ancla": "Fútbol Profesional (Anexo V)",
+      "glosa": "Varios"
+    },
+    {
+      "label": "Deportes y Actividades Sociales (Anexo V)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# Estado de Recursos y Gastos",
+      "values": [
+        -139.58029
+      ],
+      "origen": "estado 5",
+      "glosa": "Deportes y Actividades Sociales (Anexo V)"
+    },
+    {
+      "label": "Jardín de Infantes y Escuela (Anexo V)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# Estado de Recursos y Gastos",
+      "values": [
+        -81.219066
+      ],
+      "origen": "estado 5",
+      "glosa": "Jardín de Infantes y Escuela (Anexo V)"
+    },
+    {
+      "label": "Generales (Anexo V)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# Estado de Recursos y Gastos",
+      "values": [
+        -178.186893
+      ],
+      "origen": "estado 5",
+      "glosa": "Generales (Anexo V)"
+    },
+    {
+      "label": "Financieros y por Tenencia (Anexo V)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# Estado de Recursos y Gastos",
+      "values": [
+        -177.597079
+      ],
+      "origen": "estado 5",
+      "glosa": "Financieros y por Tenencia (Anexo V)"
+    },
+    {
+      "label": "Amortización Activos Intangibles (Anexo I)",
+      "lado": null,
+      "page": 5,
+      "section": "# Estado de Recursos y Gastos",
+      "values": [
+        -94.456041
+      ],
+      "origen": "estado 5",
+      "glosa": "Amortización Activos Intangibles (Anexo I)"
+    },
+    {
+      "label": "Depreciación Bienes de Uso (Anexo II)",
+      "lado": null,
+      "page": 5,
+      "section": "# Estado de Recursos y Gastos",
+      "values": [
+        -32.074334
+      ],
+      "origen": "estado 5",
+      "glosa": "Depreciación Bienes de Uso (Anexo II)"
+    },
+    {
+      "label": "Proveedores en Cuenta Corriente",
+      "lado": null,
+      "page": 22,
+      "section": "### 3.5. Deudas Operativas",
+      "values": [
+        11008.60356
+      ],
+      "origen": "estado 22",
+      "glosa": "Proveedores en Cuenta Corriente"
+    },
+    {
+      "label": "Transferencias a Pagar",
+      "lado": null,
+      "page": 22,
+      "section": "### 3.5. Deudas Operativas",
+      "values": [
+        75.88627
+      ],
+      "origen": "estado 22",
+      "glosa": "Transferencias a Pagar"
+    },
+    {
+      "label": "Transferencias a Pagar USD (Anexo VI)",
+      "lado": null,
+      "page": 22,
+      "section": "### 3.5. Deudas Operativas",
+      "values": [
+        36773.75
+      ],
+      "origen": "estado 22",
+      "glosa": "Transferencias a Pagar USD (Anexo VI)"
+    },
+    {
+      "label": "Convenios por Juicios",
+      "lado": null,
+      "page": 22,
+      "section": "### 3.5. Deudas Operativas",
+      "values": [
+        3143.14778
+      ],
+      "origen": "estado 22",
+      "glosa": "Convenios por Juicios"
+    },
+    {
+      "label": "Préstamos Asociados en USD (Anexo VI)",
+      "lado": null,
+      "page": 22,
+      "section": "### 3.5. Deudas Operativas",
+      "values": [
+        56189.4971
+      ],
+      "origen": "estado 22",
+      "glosa": "Préstamos Asociados en USD (Anexo VI)"
+    },
+    {
+      "label": "Préstamos Asociados",
+      "lado": null,
+      "page": 22,
+      "section": "### 3.5. Deudas Operativas",
+      "values": [
+        500
+      ],
+      "origen": "estado 22",
+      "glosa": "Préstamos Asociados"
+    },
+    {
+      "label": "Mutuos en USD (Anexo VI)",
+      "lado": null,
+      "page": 22,
+      "section": "### 3.5. Deudas Operativas",
+      "values": [
+        401646.25962
+      ],
+      "origen": "estado 22",
+      "glosa": "Mutuos en USD (Anexo VI)"
+    },
+    {
+      "label": "Acreedores Varios en USD (Anexo VI)",
+      "lado": null,
+      "page": 22,
+      "section": "### 3.5. Deudas Operativas",
+      "values": [
+        54405
+      ],
+      "origen": "estado 22",
+      "glosa": "Acreedores Varios en USD (Anexo VI)"
+    },
+    {
+      "label": "Acreedores Varios",
+      "lado": null,
+      "page": 22,
+      "section": "### 3.5. Deudas Operativas",
+      "values": [
+        700.73945
+      ],
+      "origen": "estado 22",
+      "glosa": "Acreedores Varios"
+    },
+    {
+      "label": "Deudores por Cuotas Sociales",
+      "lado": null,
+      "page": 21,
+      "section": "### 3.2. Créditos Operativos",
+      "values": [
+        19000
+      ],
+      "origen": "estado 19",
+      "glosa": "Deudores por Cuotas Sociales"
+    },
+    {
+      "label": "Anticipo Sueldos y Proveedores",
+      "lado": null,
+      "page": 21,
+      "section": "### 3.2. Créditos Operativos",
+      "values": [
+        434.91521
+      ],
+      "origen": "estado 19",
+      "glosa": "Anticipo Sueldos y Proveedores"
+    },
+    {
+      "label": "Transferencias a Cobrar USD (Anexo VI)",
+      "lado": null,
+      "page": 21,
+      "section": "### 3.2. Créditos Operativos",
+      "values": [
+        109145.83397
+      ],
+      "origen": "estado 19",
+      "glosa": "Transferencias a Cobrar USD (Anexo VI)"
+    },
+    {
+      "label": "Otras Cuentas por Cobrar",
+      "lado": null,
+      "page": 21,
+      "section": "### 3.2. Créditos Operativos",
+      "values": [
+        48112.13056
+      ],
+      "origen": "estado 19",
+      "glosa": "Otras Cuentas por Cobrar"
+    },
+    {
+      "label": "Red In a Cobrar",
+      "lado": null,
+      "page": 21,
+      "section": "### 3.2. Créditos Operativos",
+      "values": [
+        145.942
+      ],
+      "origen": "estado 19",
+      "glosa": "Red In a Cobrar"
+    },
+    {
+      "label": "Tarjetas de Débito/Crédito a Cobrar",
+      "lado": null,
+      "page": 21,
+      "section": "### 3.2. Créditos Operativos",
+      "values": [
+        1383.15773
+      ],
+      "origen": "estado 19",
+      "glosa": "Tarjetas de Débito/Crédito a Cobrar"
+    },
+    {
+      "label": "Documentos a Cobrar en USD (Anexo VI)",
+      "lado": null,
+      "page": 21,
+      "section": "### 3.2. Créditos Operativos",
+      "values": [
+        211575
+      ],
+      "origen": "estado 19",
+      "glosa": "Documentos a Cobrar en USD (Anexo VI)"
+    },
+    {
+      "label": "Cuotas Jardín y Escuela a Cobrar",
+      "lado": null,
+      "page": 21,
+      "section": "### 3.2. Créditos Operativos",
+      "values": [
+        10249.15982
+      ],
+      "origen": "estado 19",
+      "glosa": "Cuotas Jardín y Escuela a Cobrar"
+    },
+    {
+      "label": "Fútbol Profesional (Anexo V)",
+      "lado": null,
+      "page": 5,
+      "section": "# Estado de Recursos y Gastos",
+      "values": [
+        -616.772109
+      ],
+      "origen": "nota 5 (ancla 18)",
+      "ancla": "Caja Sede Social",
+      "glosa": "Fútbol Profesional (Anexo V)"
+    },
+    {
+      "label": "Caja Sede Social",
+      "lado": null,
+      "page": 21,
+      "section": "### 2.8. Cuentas del patrimonio neto / ### 2.9. Cuentas del estado de recursos y gastos / ### 2.10. Componentes financieros implícitos / ## 3. COMPOSICIÓN Y EVOLUCIÓN DE LOS RUBROS / ### 3.1. Caja y Bancos",
+      "values": [
+        1192.73328
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Caja Sede Social"
+    },
+    {
+      "label": "Cheques en Cartera",
+      "lado": null,
+      "page": 21,
+      "section": "### 2.8. Cuentas del patrimonio neto / ### 2.9. Cuentas del estado de recursos y gastos / ### 2.10. Componentes financieros implícitos / ## 3. COMPOSICIÓN Y EVOLUCIÓN DE LOS RUBROS / ### 3.1. Caja y Bancos",
+      "values": [
+        8103.17933
+      ],
+      "origen": "estado 18",
+      "glosa": "Cheques en Cartera"
+    },
+    {
+      "label": "Bancos en Moneda Nacional",
+      "lado": null,
+      "page": 21,
+      "section": "### 2.8. Cuentas del patrimonio neto / ### 2.9. Cuentas del estado de recursos y gastos / ### 2.10. Componentes financieros implícitos / ## 3. COMPOSICIÓN Y EVOLUCIÓN DE LOS RUBROS / ### 3.1. Caja y Bancos",
+      "values": [
+        10614.40888
+      ],
+      "origen": "estado 18",
+      "glosa": "Bancos en Moneda Nacional"
+    },
+    {
+      "label": "Mercado Pago",
+      "lado": null,
+      "page": 21,
+      "section": "### 2.8. Cuentas del patrimonio neto / ### 2.9. Cuentas del estado de recursos y gastos / ### 2.10. Componentes financieros implícitos / ## 3. COMPOSICIÓN Y EVOLUCIÓN DE LOS RUBROS / ### 3.1. Caja y Bancos",
+      "values": [
+        1069.34077
+      ],
+      "origen": "estado 18",
+      "glosa": "Mercado Pago"
+    },
+    {
+      "label": "Anticipo a Sectores a Rendir",
+      "lado": null,
+      "page": 22,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Notas a los Estados Contables / ### 3.3. Otros Créditos",
+      "values": [
+        393.72999
+      ],
+      "origen": "estado 20",
+      "glosa": "Anticipo a Sectores a Rendir"
+    },
+    {
+      "label": "I.V.A. Saldo a Favor",
+      "lado": null,
+      "page": 22,
+      "section": "# Club de Gimnasia y Esgrima La Plata / ## Notas a los Estados Contables / ### 3.3. Otros Créditos",
+      "values": [
+        7338.37421
+      ],
+      "origen": "estado 20",
+      "glosa": "I.V.A. Saldo a Favor"
+    },
+    {
+      "label": "Mercadería Loboshop",
+      "lado": null,
+      "page": 22,
+      "section": "### 3.4. Bienes de Cambio",
+      "values": [
+        14343.8785
+      ],
+      "origen": "estado 21",
+      "glosa": "Mercadería Loboshop"
+    }
+  ]
+}

@@ -1,0 +1,995 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2005.md",
+ "generatedAt": "2026-09-30T13:16:05.637Z",
+ "rubros": [
+  {
+   "label": "*aus Meisterschaft*",
+   "lado": "revenue",
+   "page": 13,
+   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "competition_bonus",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "competition_bonus",
+     0.85
+    ],
+    [
+     "matchday_competition",
+     0.05
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1115
+  },
+  {
+   "label": "*aus übrigen Spielen*",
+   "lado": "revenue",
+   "page": 13,
+   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "matchday_competition",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "matchday_competition",
+     0.48
+    ],
+    [
+     "other_income",
+     0.46
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "TV-Entschädigungen",
+   "lado": "revenue",
+   "page": 13,
+   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1085
+  },
+  {
+   "label": "Sponsoring, Werbung",
+   "lado": "revenue",
+   "page": 13,
+   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "*aus Champions-League / UEFA-Cup*",
+   "lado": "revenue",
+   "page": 13,
+   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "competition_bonus",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "competition_bonus",
+     0.79
+    ],
+    [
+     "broadcasting",
+     0.19
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1143
+  },
+  {
+   "label": "*aus Cup-Spielen*",
+   "lado": "revenue",
+   "page": 13,
+   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "matchday_competition",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "matchday_competition",
+     0.86
+    ],
+    [
+     "competition_bonus",
+     0.13
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1078
+  },
+  {
+   "label": "Matcheinnahmen",
+   "lado": null,
+   "page": 13,
+   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1496
+  },
+  {
+   "label": "Business Seats",
+   "lado": "revenue",
+   "page": 13,
+   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.8
+    ],
+    [
+     "stadium_other",
+     0.08
+    ],
+    [
+     "season_tickets",
+     0.08
+    ]
+   ],
+   "tokens": 1110
+  },
+  {
+   "label": "Mitglieder",
+   "lado": "revenue",
+   "page": 13,
+   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Leihertrag, Ausbildungsentschädigungen",
+   "lado": "revenue",
+   "page": 13,
+   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "player_sales",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "player_sales",
+     0.85
+    ],
+    [
+     "youth_football",
+     0.14
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Verbandseinnahmen",
+   "lado": "revenue",
+   "page": 13,
+   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.53
+    ],
+    [
+     "member_dues",
+     0.22
+    ],
+    [
+     "broadcasting",
+     0.12
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Diverses",
+   "lado": "revenue",
+   "page": 13,
+   "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Organisationskosten Heimspiele",
+   "lado": "expense",
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Personalaufwand",
+   "lado": "expense",
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "wages_squad",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "wages_squad",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Übriger Spielbetrieb",
+   "lado": "expense",
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "match_organisation_expense",
+     0.37
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Leihaufwand, Ausbildungsentschädigungen",
+   "lado": "expense",
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Werbung",
+   "lado": "expense",
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Administration",
+   "lado": "expense",
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Finanzaufwand",
+   "lado": null,
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1500
+  },
+  {
+   "label": "Ergebnis vor Zinsen und ausserordentlichen Posten",
+   "lado": null,
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "other_income",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ]
+   ],
+   "tokens": 1533
+  },
+  {
+   "label": "Abschreibungen",
+   "lado": "expense",
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "depreciation",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "depreciation",
+     0.73
+    ],
+    [
+     "other_amortisation",
+     0.23
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Finanzertrag",
+   "lado": null,
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "Übriger Aufwand",
+   "lado": "expense",
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Ausserordentlicher Ertrag",
+   "lado": null,
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1505
+  },
+  {
+   "label": "Ausserordentlicher Aufwand",
+   "lado": null,
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "top3": [
+    [
+     "exceptional_items",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1567
+  },
+  {
+   "label": "Jahresgewinn",
+   "lado": null,
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1518
+  },
+  {
+   "label": "Steuern",
+   "lado": null,
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1493
+  },
+  {
+   "label": "Sicherheit",
+   "lado": "expense",
+   "page": 23,
+   "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Catering",
+   "lado": "expense",
+   "page": 23,
+   "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 866
+  },
+  {
+   "label": "Miete",
+   "lado": "expense",
+   "page": 23,
+   "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "match_organisation_expense",
+     0.26
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Verlustabdeckung FC Basel Marketing AG",
+   "lado": null,
+   "page": 14,
+   "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "other_income",
+     0.07
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "Personalkosten Dritte",
+   "lado": "expense",
+   "page": 23,
+   "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
+   "choice": "match_organisation_expense",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.47
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.22
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Sponsoren",
+   "lado": "revenue",
+   "page": 26,
+   "section": "## FC Basel 1893 / # Juniorenabteilung in Zahlen (CHF) / 1. Januar 2005 – 31. Dezember 2005 / ### Einnahmen",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 868
+  },
+  {
+   "label": "Mitgliederbeiträge",
+   "lado": "revenue",
+   "page": 26,
+   "section": "## FC Basel 1893 / # Juniorenabteilung in Zahlen (CHF) / 1. Januar 2005 – 31. Dezember 2005 / ### Einnahmen",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1075
+  },
+  {
+   "label": "Spielbetrieb",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Ausgaben",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.52
+    ],
+    [
+     "match_organisation_expense",
+     0.42
+    ],
+    [
+     "youth_other_sports_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Diverser Ertrag",
+   "lado": "revenue",
+   "page": 26,
+   "section": "## FC Basel 1893 / # Juniorenabteilung in Zahlen (CHF) / 1. Januar 2005 – 31. Dezember 2005 / ### Einnahmen",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1111
+  },
+  {
+   "label": "Spenden",
+   "lado": "revenue",
+   "page": 26,
+   "section": "## FC Basel 1893 / # Juniorenabteilung in Zahlen (CHF) / 1. Januar 2005 – 31. Dezember 2005 / ### Einnahmen",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Verbandsentschädigungen, Öffentliche Zuschüsse",
+   "lado": "revenue",
+   "page": 26,
+   "section": "## FC Basel 1893 / # Juniorenabteilung in Zahlen (CHF) / 1. Januar 2005 – 31. Dezember 2005 / ### Einnahmen",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "youth_football",
+     0.03
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1125
+  },
+  {
+   "label": "Vermarktungsrechte",
+   "lado": "expense",
+   "page": 23,
+   "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Transfer-, Leih- und Ausbildungsentschädigungsaufwand",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Ausgaben",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Diverser Aufwand",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Ausgaben",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Nettoinvestition in Juniorenabteilung",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Ausgaben",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.98
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Mietaufwand Juniorenunterkünfte",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Ausgaben",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.86
+    ],
+    [
+     "match_organisation_expense",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 998
+  }
+ ]
+}

@@ -1,0 +1,239 @@
+{
+ "md": "Clubes/República Checa/Dukla Praha/SL71_2020.md",
+ "pdf": "Clubes/República Checa/Dukla Praha/SL71_2020.pdf",
+ "club": "dukla-praha",
+ "year": 2020,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:43.886Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 21,
+  "notasUsadas": [
+   "8"
+  ]
+ },
+ "ladoConocido": 14,
+ "rubros": [
+  {
+   "label": "Tržby z prodeje výrobků a služeb",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.03939
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Výkonová spotřeba",
+   "lado": null,
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.046334
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Spotřeba materiálu a energie",
+   "lado": null,
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.003123
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Služby",
+   "lado": null,
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.043211
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Osobní náklady",
+   "lado": "expense",
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.001058
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Mzdové náklady",
+   "lado": "expense",
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.001005
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Náklady na sociální zabezpečení, zdravotní pojištění a ostatní náklady",
+   "lado": "expense",
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.000053
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Náklady na sociální zabezpečení a zdravotní pojištění",
+   "lado": "expense",
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.000053
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Úpravy hodnot v provozní oblasti",
+   "lado": null,
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.002023
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Úpravy hodnot dlouhodobého nehmotného a hmotného majetku",
+   "lado": null,
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.002023
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Úpravy hodnot dlouhodobého nehmotného a hmotného majetku - trvalé",
+   "lado": null,
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.002023
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Ostatní provozní výnosy",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.003474
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Výdaje spojené s nabytím stálých aktiv",
+   "lado": "revenue",
+   "page": 13,
+   "section": "# PŘEHLED O PENĚŽNÍCH TOCÍCH / PRAHA 6",
+   "values": [
+    0.000981
+   ],
+   "origen": "nota 8 (ancla 5)",
+   "ancla": "Tržby z prodeje dlouhodobého majetku"
+  },
+  {
+   "label": "Tržby z prodeje dlouhodobého majetku",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.001171
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Příjmy z prodeje stálých aktiv",
+   "lado": "revenue",
+   "page": 13,
+   "section": "# PŘEHLED O PENĚŽNÍCH TOCÍCH / PRAHA 6",
+   "values": [
+    0.00019
+   ],
+   "origen": "nota 8 (ancla 5)",
+   "ancla": "Tržby z prodeje dlouhodobého majetku"
+  },
+  {
+   "label": "Tržby z prodeje materiálu",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.000009
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Ostatní provozní výnosy",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.002294
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Ostatní provozní náklady",
+   "lado": "expense",
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.002429
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Zůstatková cena prodaného dlouhodobého majetku",
+   "lado": null,
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.000981
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Daně a poplatky",
+   "lado": "expense",
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.000036
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Ostatní provozní náklady",
+   "lado": "expense",
+   "page": 11,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "values": [
+    0.001412
+   ],
+   "origen": "estado 5"
+  }
+ ]
+}

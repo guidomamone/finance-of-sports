@@ -1,0 +1,627 @@
+{
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-fotballklubb-fli-2022.md",
+ "generatedAt": "2026-09-30T04:30:42.432Z",
+ "rubros": [
+  {
+   "label": "Annen finansinntekt",
+   "lado": null,
+   "page": 7,
+   "section": "Resultatregnskap / Aalesunds Fotballklubb",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": null,
+   "page": 7,
+   "section": "Resultatregnskap / Aalesunds Fotballklubb",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Driftsresultat",
+   "lado": null,
+   "page": 7,
+   "section": "Resultatregnskap / Aalesunds Fotballklubb",
+   "choice": "other_income",
+   "confidence": 0.21,
+   "top3": [
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "lump_football_operations",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.23
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": null,
+   "page": 7,
+   "section": "Resultatregnskap / Aalesunds Fotballklubb",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": null,
+   "page": 7,
+   "section": "Resultatregnskap / Aalesunds Fotballklubb",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": null,
+   "page": 7,
+   "section": "Resultatregnskap / Aalesunds Fotballklubb",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "lump_football_operations",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.68
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "player_sales",
+     0.1
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Varekostnad",
+   "lado": null,
+   "page": 7,
+   "section": "Resultatregnskap / Aalesunds Fotballklubb",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "match_organisation_expense",
+     0.23
+    ],
+    [
+     "lump_football_operations_expense",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": null,
+   "page": 7,
+   "section": "Resultatregnskap / Aalesunds Fotballklubb",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Netto finans",
+   "lado": null,
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Salgsinntekter",
+   "lado": null,
+   "page": 7,
+   "section": "Resultatregnskap / Aalesunds Fotballklubb",
+   "choice": "lump_football_operations",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.66
+    ],
+    [
+     "player_sales",
+     0.14
+    ],
+    [
+     "other_income",
+     0.1
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Årsresultat",
+   "lado": null,
+   "page": 7,
+   "section": "Resultatregnskap / Aalesunds Fotballklubb",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "lump_football_operations",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Ordinært resultat etter skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ],
+    [
+     "other_income",
+     0.16
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Ordinært resultat",
+   "lado": null,
+   "page": 7,
+   "section": "Resultatregnskap / Aalesunds Fotballklubb",
+   "choice": "other_income",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "lump_football_operations",
+     0.21000000000000002
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "AALESUNDS FOTBALLKLUBB / ## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1508
+  },
+  {
+   "label": "Overført fra annen egenkaital",
+   "lado": null,
+   "page": 7,
+   "section": "Resultatregnskap / Aalesunds Fotballklubb",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1358
+  },
+  {
+   "label": "Avsatt til egenkapital",
+   "lado": null,
+   "page": 7,
+   "section": "Resultatregnskap / Aalesunds Fotballklubb",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1443
+  },
+  {
+   "label": "Driftsinntekter",
+   "lado": null,
+   "page": 14,
+   "section": "# Note 3 Driftsinntekter",
+   "choice": "lump_football_operations",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.87
+    ],
+    [
+     "other_income",
+     0.1
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "Lønninger",
+   "lado": null,
+   "page": 14,
+   "section": "# Note 4 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm. / # Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1356
+  },
+  {
+   "label": "Av registrerte inntekter ovenfor utgjør overføringer fra Ålesund Fotball AS",
+   "lado": null,
+   "page": 14,
+   "section": "# Note 3 Driftsinntekter",
+   "choice": "other_income",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "lump_football_operations",
+     0.26
+    ],
+    [
+     "player_sales",
+     0.09
+    ]
+   ],
+   "tokens": 1364
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": null,
+   "page": 14,
+   "section": "# Note 4 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm. / # Lønnskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "wages_squad",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1580
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": null,
+   "page": 14,
+   "section": "# Note 4 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm. / # Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "wages_squad",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1288
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": null,
+   "page": 14,
+   "section": "# Note 4 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm. / # Lønnskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Lovpålagt revisjon",
+   "lado": null,
+   "page": 14,
+   "section": "# Kostnadsført godtgjørelse til revisor",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Avtalte kontrollhandlinger rapportering NFF",
+   "lado": null,
+   "page": 14,
+   "section": "# Kostnadsført godtgjørelse til revisor",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Andre regnskapsteknisk konsultasjon",
+   "lado": null,
+   "page": 14,
+   "section": "# Kostnadsført godtgjørelse til revisor",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1565
+  }
+ ]
+}

@@ -1,0 +1,334 @@
+{
+  "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-associacao-2021-2022.md",
+  "pdf": "Clubes/Brasil/Bahia/demonstracoes-financeiras-associacao-2021-2022.pdf",
+  "club": "bahia-br",
+  "year": 2022,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:51:39.167Z",
+  "tieOuts": {
+    "cierran": 2,
+    "noCierran": 7
+  },
+  "warnings": [
+    "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "3 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 28,
+    "notasUsadas": []
+  },
+  "ladoConocido": 28,
+  "rubros": [
+    {
+      "label": "Despesas gerais e administrativas",
+      "lado": "expense",
+      "page": 7,
+      "section": "(Despesas) Operacionais",
+      "values": [
+        -7.518
+      ],
+      "origen": "estado 4",
+      "glosa": "Gastos generales y administrativos"
+    },
+    {
+      "label": "Despesas de serviços",
+      "lado": "expense",
+      "page": 7,
+      "section": "(Despesas) Operacionais",
+      "values": [
+        -8.026
+      ],
+      "origen": "estado 4",
+      "glosa": "Gastos de servicios"
+    },
+    {
+      "label": "Despesas tributárias",
+      "lado": "expense",
+      "page": 7,
+      "section": "(Despesas) Operacionais",
+      "values": [
+        -5.28
+      ],
+      "origen": "estado 4",
+      "glosa": "Gastos tributarios"
+    },
+    {
+      "label": "Depreciação e amortização",
+      "lado": "expense",
+      "page": 7,
+      "section": "(Despesas) Operacionais",
+      "values": [
+        -1.431
+      ],
+      "origen": "estado 4",
+      "glosa": "Depreciación y amortización"
+    },
+    {
+      "label": "Perda na recuperação de créditos de sócios",
+      "lado": "expense",
+      "page": 7,
+      "section": "(Despesas) Operacionais",
+      "values": [
+        0.0011
+      ],
+      "origen": "estado 4",
+      "glosa": "Pérdida en la recuperación de créditos de socios"
+    },
+    {
+      "label": "Receita Líquida das Atividades Operacionais",
+      "lado": "revenue",
+      "page": 7,
+      "section": "Esporte Clube Bahia / Demonstração dos Resultados / para os Exercícios Findos em 31 de dezembro de 2022 e de 2021 / (Valores Expressos em Milhares de Reais) / Nota    2022             2021",
+      "values": [
+        100.16
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos netos de las actividades operativas"
+    },
+    {
+      "label": "Custo das Atividades Operacionais",
+      "lado": "expense",
+      "page": 7,
+      "section": "Esporte Clube Bahia / Demonstração dos Resultados / para os Exercícios Findos em 31 de dezembro de 2022 e de 2021 / (Valores Expressos em Milhares de Reais) / Nota    2022             2021",
+      "values": [
+        -99.581
+      ],
+      "origen": "estado 3",
+      "glosa": "Costo de las actividades operativas"
+    },
+    {
+      "label": "Receitas de transmissão de imagem e de luvas (a)",
+      "lado": "revenue",
+      "page": 43,
+      "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+      "values": [
+        21.619
+      ],
+      "origen": "estado 41",
+      "glosa": "Ingresos por transmisión de imagen y primas de firma (a)"
+    },
+    {
+      "label": "Receitas com negociação de direitos contratuais (b)",
+      "lado": "revenue",
+      "page": 43,
+      "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+      "values": [
+        21.414
+      ],
+      "origen": "estado 41",
+      "glosa": "Ingresos por negociación de derechos contractuales (b)"
+    },
+    {
+      "label": "Sócios patrimonial e contribuinte",
+      "lado": "revenue",
+      "page": 43,
+      "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+      "values": [
+        19.705
+      ],
+      "origen": "estado 41",
+      "glosa": "Socios patrimoniales y contribuyentes"
+    },
+    {
+      "label": "Receitas de patrocínio, publicidade e marketing",
+      "lado": "revenue",
+      "page": 43,
+      "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+      "values": [
+        18.135
+      ],
+      "origen": "estado 41",
+      "glosa": "Ingresos por patrocinio, publicidad y marketing"
+    },
+    {
+      "label": "Receitas de acesso garantido, bilheteria e premiações",
+      "lado": "revenue",
+      "page": 43,
+      "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+      "values": [
+        18.052
+      ],
+      "origen": "estado 41",
+      "glosa": "Ingresos por acceso garantizado, taquilla y premios"
+    },
+    {
+      "label": "Receitas - Filiais",
+      "lado": "revenue",
+      "page": 43,
+      "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+      "values": [
+        6.772
+      ],
+      "origen": "estado 41",
+      "glosa": "Ingresos - Sucursales"
+    },
+    {
+      "label": "Loterias",
+      "lado": "revenue",
+      "page": 43,
+      "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+      "values": [
+        1.925
+      ],
+      "origen": "estado 41",
+      "glosa": "Loterías"
+    },
+    {
+      "label": "Luvas - Direito de transmissão TV fechada/PPV (b)",
+      "lado": "revenue",
+      "page": 41,
+      "section": "encerrando, em caráter irrevogável e irretratável, a Ação Judicial (Processo nº 0274714- / pelos Devedores Solidários, do valor nominal de R$ 35.000. Vide nota explicativa nº 22. / 15.    Receitas a Apropriar / 2022                   2021 / Receitas a Apropriar",
+      "values": [
+        4.467
+      ],
+      "origen": "estado 35",
+      "glosa": "Primas de firma - Derechos de transmisión TV de pago/PPV (b)"
+    },
+    {
+      "label": "Luvas - Direito de transmissão TV aberta (b)",
+      "lado": "revenue",
+      "page": 41,
+      "section": "encerrando, em caráter irrevogável e irretratável, a Ação Judicial (Processo nº 0274714- / pelos Devedores Solidários, do valor nominal de R$ 35.000. Vide nota explicativa nº 22. / 15.    Receitas a Apropriar / 2022                   2021 / Receitas a Apropriar",
+      "values": [
+        2.2
+      ],
+      "origen": "estado 35",
+      "glosa": "Primas de firma - Derechos de transmisión TV abierta (b)"
+    },
+    {
+      "label": "Licenciamento / Direitos individuais",
+      "lado": "revenue",
+      "page": 41,
+      "section": "encerrando, em caráter irrevogável e irretratável, a Ação Judicial (Processo nº 0274714- / pelos Devedores Solidários, do valor nominal de R$ 35.000. Vide nota explicativa nº 22. / 15.    Receitas a Apropriar / 2022                   2021 / Receitas a Apropriar",
+      "values": [
+        4.533
+      ],
+      "origen": "estado 35",
+      "glosa": "Licenciamiento / Derechos individuales"
+    },
+    {
+      "label": "Patrocínio",
+      "lado": "revenue",
+      "page": 41,
+      "section": "encerrando, em caráter irrevogável e irretratável, a Ação Judicial (Processo nº 0274714- / pelos Devedores Solidários, do valor nominal de R$ 35.000. Vide nota explicativa nº 22. / 15.    Receitas a Apropriar / 2022                   2021 / Receitas a Apropriar",
+      "values": [
+        2.627
+      ],
+      "origen": "estado 35",
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "CBF - Confederação Brasileira de Futebol (c)",
+      "lado": "revenue",
+      "page": 41,
+      "section": "encerrando, em caráter irrevogável e irretratável, a Ação Judicial (Processo nº 0274714- / pelos Devedores Solidários, do valor nominal de R$ 35.000. Vide nota explicativa nº 22. / 15.    Receitas a Apropriar / 2022                   2021 / Receitas a Apropriar",
+      "values": [
+        11.9
+      ],
+      "origen": "estado 35",
+      "glosa": "CBF - Confederación Brasileña de Fútbol (c)"
+    },
+    {
+      "label": "(-) Impostos incidentes",
+      "lado": "expense",
+      "page": 43,
+      "section": "108.346               208.649 / Deduções da receita",
+      "values": [
+        -3.162
+      ],
+      "origen": "estado 42",
+      "glosa": "(-) Impuestos aplicables"
+    },
+    {
+      "label": "(-) Impostos incidentes - Filiais",
+      "lado": "expense",
+      "page": 43,
+      "section": "108.346               208.649 / Deduções da receita",
+      "values": [
+        -1.487
+      ],
+      "origen": "estado 42",
+      "glosa": "(-) Impuestos aplicables - Sucursales"
+    },
+    {
+      "label": "(-) Custo e deduções de venda - Loja",
+      "lado": "revenue",
+      "page": 43,
+      "section": "108.346               208.649 / Deduções da receita",
+      "values": [
+        -3.537
+      ],
+      "origen": "estado 42",
+      "glosa": "(-) Costo y deducciones de ventas - Tienda"
+    },
+    {
+      "label": "Concessionárias (água, energia, telefonia, gás)",
+      "lado": "expense",
+      "page": 45,
+      "section": "Notas Explicativas às Demonstrações Financeiras Referentes aos / Exercícios Findos em 31 de dezembro de 2022 e 2021 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 20.    Despesas Gerais e Administrativas / 2022                    2021",
+      "values": [
+        -1178
+      ],
+      "origen": "estado 44",
+      "glosa": "Suministros (agua, energía, telefonía, gas)"
+    },
+    {
+      "label": "Marketing",
+      "lado": "expense",
+      "page": 45,
+      "section": "Notas Explicativas às Demonstrações Financeiras Referentes aos / Exercícios Findos em 31 de dezembro de 2022 e 2021 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 20.    Despesas Gerais e Administrativas / 2022                    2021",
+      "values": [
+        -2141
+      ],
+      "origen": "estado 44",
+      "glosa": "Marketing"
+    },
+    {
+      "label": "Consumo",
+      "lado": "expense",
+      "page": 45,
+      "section": "Notas Explicativas às Demonstrações Financeiras Referentes aos / Exercícios Findos em 31 de dezembro de 2022 e 2021 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 20.    Despesas Gerais e Administrativas / 2022                    2021",
+      "values": [
+        -1190
+      ],
+      "origen": "estado 44",
+      "glosa": "Consumo"
+    },
+    {
+      "label": "Informática",
+      "lado": "expense",
+      "page": 45,
+      "section": "(7.518)               (8.248) / 21.    Despesas de Serviços / 2022                    2021",
+      "values": [
+        -1382
+      ],
+      "origen": "estado 45",
+      "glosa": "Informática"
+    },
+    {
+      "label": "Marketing (108)",
+      "lado": "expense",
+      "page": 45,
+      "section": "(7.518)               (8.248) / 21.    Despesas de Serviços / 2022                    2021",
+      "values": [
+        -1594
+      ],
+      "origen": "estado 45",
+      "glosa": "Marketing (108)"
+    },
+    {
+      "label": "Jurídico",
+      "lado": "expense",
+      "page": 45,
+      "section": "(7.518)               (8.248) / 21.    Despesas de Serviços / 2022                    2021",
+      "values": [
+        -1322
+      ],
+      "origen": "estado 45",
+      "glosa": "Gastos jurídicos"
+    }
+  ]
+}

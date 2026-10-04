@@ -1,0 +1,1288 @@
+{
+ "md": "Clubes/Brasil/São Paulo/demonstracoes-financeiras-2020-2021.md",
+ "generatedAt": "2026-09-30T22:48:32.806Z",
+ "rubrosHuella": "4eb039e6eeef1c76faa081109351ec444b4dcfda",
+ "rubros": [
+  {
+   "label": "Futebol profissional e da base",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "lump_football_operations",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Negociação de atestados liberatórios de atletas (nota 21)",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos de transmissão de TV",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiações em campeonatos",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidade e patrocínio",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Projeto sócio torcedor",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrecadação de jogos",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Licenciamento da marca",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras receitas",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sociais e esportes amadores",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "youth_other_sports_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Contribuições e taxas",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "member_dues",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Departamentos e esportes amadores",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "other_sports",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Aluguéis e patrocínios",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Esportes Profissionais",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "lump_football_operations",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínios",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Estádio",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Camarotes e cadeiras cativas",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "season_tickets",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidade",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Aluguéis",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "stadium_other",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Deduções",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Tributos",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de Arena",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / ### DEMONSTRAÇÕES DOS RESULTADOS / #### NOS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Brenner Souza da Silva",
+   "lado": null,
+   "page": 5,
+   "section": "ATLETAS 2020",
+   "choice": "player_sales",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Calebe Gonçalves Pereira da Silva",
+   "lado": null,
+   "page": 7,
+   "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+   "choice": "player_sales",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Weverson Moreira da Costa",
+   "lado": null,
+   "page": 7,
+   "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+   "choice": "player_sales",
+   "confidence": 0.37,
+   "desdeCache": true
+  },
+  {
+   "label": "Gabriel Novaes Fernandes",
+   "lado": null,
+   "page": 7,
+   "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Helio Junio Nunes de Castro",
+   "lado": null,
+   "page": 7,
+   "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Denner Gomes Clemente",
+   "lado": null,
+   "page": 7,
+   "section": "#### 20. PATRIMÔNIO LÍQUIDO / ##### 20.1. Patrimônio social / ##### 20.2. Reserva de reavaliação / #### 21. RECEITAS E GASTOS COM A NEGOCIAÇÃO DE ATLETAS PROFISSIONAIS / 2021",
+   "choice": "player_sales",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "Paulo Henrique Pereira da Silva",
+   "lado": null,
+   "page": 5,
+   "section": "ATLETAS 2020",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Total",
+   "lado": null,
+   "page": 7,
+   "section": "2020",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1495
+  },
+  {
+   "label": "Futebol profissional e de base",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Pessoal",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Encargos trabalhistas",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Prêmios",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de uso de imagem",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Baixa do custo de atletas em formação (nota 9.2)",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "player_amortisation",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortização do custo de atletas formados (nota 9.3)",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortização/baixa de contratos de atletas profissionais (nota 9.1)",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "player_amortisation",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisão de impairment atletas profissionais (nota 9.1)",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "player_impairment",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Mecanismo de solidariedade",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Arbitragens, federações e confederações",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com jogos",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Intermediações sobre negociações c/ atletas (nota 21)",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Água/luz/telefone",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Manutenções",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciação e amortização (software/marcas)",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gerais",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Contingências (nota 17)",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Perdas estimadas (nota 6)",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Transferência para custo de formação de atletas (nota 9.2)",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "player_amortisation",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de limpeza/lavanderia/medicina",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas gerais e com jogos",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Administrativas",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Rateios de serviços de alimentação, transporte e lavanderia.",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Encargos financeiros",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas financeiras",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Encargos e Honorários Parcelamento de Tributos (nota 13)",
+   "lado": "expense",
+   "page": 2,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Gabriel Davi Gomes Sara",
+   "lado": null,
+   "page": 5,
+   "section": "ATLETAS 2020",
+   "choice": "wages_squad",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "wages_squad",
+     0.7
+    ],
+    [
+     "player_amortisation",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Diversos",
+   "lado": null,
+   "page": 7,
+   "section": "2020",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1437
+  },
+  {
+   "label": "Luan Vinicius da Silva Santos",
+   "lado": null,
+   "page": 5,
+   "section": "ATLETAS 2020",
+   "choice": "wages_squad",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "wages_squad",
+     0.63
+    ],
+    [
+     "player_amortisation",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1349
+  },
+  {
+   "label": "Jonas Gabriel da Silva Junior",
+   "lado": null,
+   "page": 5,
+   "section": "ATLETAS 2020",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "wages_squad",
+     0.74
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Provisão de impairment atletas profissionais",
+   "lado": null,
+   "page": 2,
+   "section": "### DEMONSTRAÇÕES DO VALOR ADICIONADO / #### PARA OS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "player_impairment",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_impairment",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1556
+  },
+  {
+   "label": "Perdas estimadas/provisões para contingências",
+   "lado": null,
+   "page": 2,
+   "section": "### DEMONSTRAÇÕES DO VALOR ADICIONADO / #### PARA OS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2021 E 2020",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1603
+  },
+  {
+   "label": "Igor Silveira Gomes",
+   "lado": null,
+   "page": 5,
+   "section": "ATLETAS 2020",
+   "choice": "wages_squad",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "wages_squad",
+     0.72
+    ],
+    [
+     "player_amortisation",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Link Assessoria Esportiva",
+   "lado": "revenue",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "player_sales",
+     0.07
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 914
+  },
+  {
+   "label": "Datasoccer Sports Marketing Ltda",
+   "lado": "revenue",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.71
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "player_sales",
+     0.04
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Elenko Sports Ltda.",
+   "lado": "revenue",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.5
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "player_sales",
+     0.2
+    ]
+   ],
+   "tokens": 900
+  },
+  {
+   "label": "Bertolucci Assessoria Propaganda Esp. Ltda.",
+   "lado": "revenue",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.92
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 976
+  },
+  {
+   "label": "Nilson Simplício Assessoria Esportiva Ltda.",
+   "lado": "revenue",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.51
+    ],
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "player_sales",
+     0.1
+    ]
+   ],
+   "tokens": 949
+  },
+  {
+   "label": "DIS Esporte e Organização de Eventos Ltda.",
+   "lado": "revenue",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "stadium_other",
+     0.1
+    ],
+    [
+     "competition_bonus",
+     0.02
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Esporte Clube Juventude",
+   "lado": "revenue",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.85
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Contratos de televisionamento",
+   "lado": "revenue",
+   "page": 4,
+   "section": "",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Empréstimo de atletas",
+   "lado": "revenue",
+   "page": 4,
+   "section": "",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Contratos de patrocínio",
+   "lado": "revenue",
+   "page": 4,
+   "section": "",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Contratos de locação",
+   "lado": "revenue",
+   "page": 4,
+   "section": "",
+   "choice": "stadium_other",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas de loterias",
+   "lado": "revenue",
+   "page": 4,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Contratos de cessão de espaço",
+   "lado": "revenue",
+   "page": 4,
+   "section": "",
+   "choice": "stadium_other",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Contratos de licenciamento de marca",
+   "lado": "revenue",
+   "page": 4,
+   "section": "",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Terrenos",
+   "lado": "expense",
+   "page": 4,
+   "section": "#### 8. IMOBILIZADO LÍQUIDO",
+   "choice": "depreciation",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Edificações",
+   "lado": "expense",
+   "page": 4,
+   "section": "Movimentação do ativo imobilizado:",
+   "choice": "depreciation",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Instalações e benfeitorias",
+   "lado": "expense",
+   "page": 4,
+   "section": "Movimentação do ativo imobilizado:",
+   "choice": "depreciation",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Máquinas e equipamentos",
+   "lado": "expense",
+   "page": 4,
+   "section": "Movimentação do ativo imobilizado:",
+   "choice": "depreciation",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Móveis e utensílios",
+   "lado": "expense",
+   "page": 4,
+   "section": "Movimentação do ativo imobilizado:",
+   "choice": "depreciation",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Veículos",
+   "lado": "expense",
+   "page": 4,
+   "section": "Movimentação do ativo imobilizado:",
+   "choice": "depreciation",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Obras em andamento",
+   "lado": "expense",
+   "page": 4,
+   "section": "#### 8. IMOBILIZADO LÍQUIDO",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "JD Sports Management A.E. Ltda.",
+   "lado": "revenue",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.6
+    ],
+    [
+     "player_sales",
+     0.19
+    ],
+    [
+     "other_income",
+     0.17
+    ]
+   ],
+   "tokens": 902
+  },
+  {
+   "label": "C.A. Taboão da Serra",
+   "lado": "revenue",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "player_sales",
+     0.31
+    ],
+    [
+     "youth_football",
+     0.07
+    ]
+   ],
+   "tokens": 843
+  },
+  {
+   "label": "Acumulado 2016",
+   "lado": "expense",
+   "page": 5,
+   "section": "##### 9.2. Custo de atletas em formação",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Contratos de atletas profissionais (nota 9.1)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / #### 9. INTANGÍVEL LÍQUIDO",
+   "choice": "player_amortisation",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Custo de atletas em formação (nota 9.2)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / #### 9. INTANGÍVEL LÍQUIDO",
+   "choice": "player_amortisation",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Custo de atletas formados (nota 9.3)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / #### 9. INTANGÍVEL LÍQUIDO",
+   "choice": "player_amortisation",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Softwares",
+   "lado": "expense",
+   "page": 5,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / #### 9. INTANGÍVEL LÍQUIDO",
+   "choice": "depreciation",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Marcas e patentes",
+   "lado": "expense",
+   "page": 5,
+   "section": "# São Paulo Futebol Clube / ## DEMONSTRAÇÕES FINANCEIRAS 2022 / CNPJ/MF nº 60.517.984/0001-04 / #### 9. INTANGÍVEL LÍQUIDO",
+   "choice": "other_amortisation",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Acumulado até 2018",
+   "lado": "expense",
+   "page": 5,
+   "section": "##### 9.1 Contratos de atletas profissionais",
+   "choice": "player_amortisation",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Acumulado 2018",
+   "lado": "expense",
+   "page": 5,
+   "section": "##### 9.3. Custo de atletas formados",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Nato e Zola Sports A. Int. Ltda",
+   "lado": "revenue",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.42
+    ],
+    [
+     "player_sales",
+     0.29
+    ],
+    [
+     "other_income",
+     0.23
+    ]
+   ],
+   "tokens": 906
+  },
+  {
+   "label": "D&D Assessoria Esportiva Ltda",
+   "lado": "revenue",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.7
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "player_sales",
+     0.06
+    ]
+   ],
+   "tokens": 945
+  },
+  {
+   "label": "Encargos Legais de Parcelamentos/Diversos",
+   "lado": "expense",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1123
+  },
+  {
+   "label": "Nilton de Jesus Moreira",
+   "lado": "revenue",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "player_sales",
+     0.18
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 928
+  },
+  {
+   "label": "Diego Costa",
+   "lado": "expense",
+   "page": 5,
+   "section": "ATLETAS 2021",
+   "choice": "wages_squad",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "wages_squad",
+     0.77
+    ],
+    [
+     "player_amortisation",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 792
+  },
+  {
+   "label": "Leão Borges Participações Ltda.",
+   "lado": "revenue",
+   "page": 6,
+   "section": "##### 15.1. Intermediações e participação de terceiros em direitos econômicos",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.41
+    ],
+    [
+     "sponsorship_commercial",
+     0.29
+    ],
+    [
+     "player_sales",
+     0.2
+    ]
+   ],
+   "tokens": 932
+  },
+  {
+   "label": "Marcus Vinicius O Alencar",
+   "lado": "expense",
+   "page": 5,
+   "section": "ATLETAS 2021",
+   "choice": "wages_squad",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "wages_squad",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "player_amortisation",
+     0.14
+    ]
+   ],
+   "tokens": 797
+  }
+ ]
+}

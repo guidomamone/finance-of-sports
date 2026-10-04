@@ -1,0 +1,55 @@
+{
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2011.md",
+ "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2011.pdf",
+ "club": "aalesund",
+ "year": 2011,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:05:59.204Z",
+ "tieOuts": {
+  "cierran": 3,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 4,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "Lovpålagt revisjon (inkl. teknisk bistand med årsregnskap)",
+   "lado": "expense",
+   "page": 16,
+   "section": "",
+   "values": [
+    101.763
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Skatterådgivning (inkl. teknisk bistand med ligningspapirer)",
+   "lado": "expense",
+   "page": 16,
+   "section": "",
+   "values": [
+    11.5
+   ],
+   "origen": "estado 30"
+  },
+  {
+   "label": "Annen bistand",
+   "lado": "expense",
+   "page": 16,
+   "section": "",
+   "values": [
+    102.737
+   ],
+   "origen": "estado 30"
+  }
+ ]
+}

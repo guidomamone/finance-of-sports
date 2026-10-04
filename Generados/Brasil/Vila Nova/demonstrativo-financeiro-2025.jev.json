@@ -1,0 +1,2360 @@
+{
+ "md": "Clubes/Brasil/Vila Nova/demonstrativo-financeiro-2025.md",
+ "generatedAt": "2026-09-30T01:11:41.643Z",
+ "rubros": [
+  {
+   "label": "Sub-17 / Sub-20",
+   "page": 15,
+   "section": "35 PROFISSIONAIS DEDICADOS / 6 ATLETAS PROMOVIDOS / # Atletas Promovidos ao Profissional / # Vendidos/Emprestados / # Resultados Competições da Base 2025",
+   "choice": "youth_football",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "youth_football",
+     0.72
+    ],
+    [
+     "youth_other_sports_expense",
+     0.14
+    ],
+    [
+     "other_income",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1311
+  },
+  {
+   "label": "2. Resultado Agregado (Exercícios T-1 a T-3)",
+   "page": 21,
+   "section": "# Sustentabilidade Financeira - SSF / ## Cronograma SSF",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.6900000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Sub-11 / Sub-12",
+   "page": 15,
+   "section": "35 PROFISSIONAIS DEDICADOS / 6 ATLETAS PROMOVIDOS / # Atletas Promovidos ao Profissional / # Vendidos/Emprestados / # Resultados Competições da Base 2025",
+   "choice": "youth_football",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "youth_football",
+     0.7
+    ],
+    [
+     "youth_other_sports_expense",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1311
+  },
+  {
+   "label": "1. Resultado da Operação (Exercício T-1)",
+   "page": 21,
+   "section": "# Sustentabilidade Financeira - SSF / ## Cronograma SSF",
+   "choice": "lump_football_operations",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.52
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Sub-15 / Sub-16",
+   "page": 15,
+   "section": "35 PROFISSIONAIS DEDICADOS / 6 ATLETAS PROMOVIDOS / # Atletas Promovidos ao Profissional / # Vendidos/Emprestados / # Resultados Competições da Base 2025",
+   "choice": "youth_football",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "youth_football",
+     0.73
+    ],
+    [
+     "youth_other_sports_expense",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1311
+  },
+  {
+   "label": "Sub-9 / Sub-10",
+   "page": 15,
+   "section": "35 PROFISSIONAIS DEDICADOS / 6 ATLETAS PROMOVIDOS / # Atletas Promovidos ao Profissional / # Vendidos/Emprestados / # Resultados Competições da Base 2025",
+   "choice": "youth_football",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "youth_football",
+     0.73
+    ],
+    [
+     "youth_other_sports_expense",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1310
+  },
+  {
+   "label": "3. Custo com Elenco",
+   "page": 21,
+   "section": "# Sustentabilidade Financeira - SSF / ## Cronograma SSF",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "4. Endividamento de Curto Prazo",
+   "page": 21,
+   "section": "# Sustentabilidade Financeira - SSF / ## Cronograma SSF",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Resultado Bruto",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "choice": "lump_football_operations",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.54
+    ],
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Sub-13 / Sub-14",
+   "page": 15,
+   "section": "35 PROFISSIONAIS DEDICADOS / 6 ATLETAS PROMOVIDOS / # Atletas Promovidos ao Profissional / # Vendidos/Emprestados / # Resultados Competições da Base 2025",
+   "choice": "youth_football",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "youth_football",
+     0.7
+    ],
+    [
+     "youth_other_sports_expense",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1311
+  },
+  {
+   "label": "Despesas com atividades gerais",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Despesas com pessoal",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "choice": "wages_squad",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "wages_squad",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Custo das atividades sociais e esportivas",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.99
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Receita operacional líquida",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "choice": "lump_football_operations",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.81
+    ],
+    [
+     "other_income",
+     0.16
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Outras receitas, líquidas",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "(=) Superávit operacional antes do resultado financeiro",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "lump_football_operations",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Resultado financeiro",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "choice": "other_income",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_income",
+     0.63
+    ],
+    [
+     "lump_football_operations",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "(=) Resultado financeiro líquido",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "choice": "other_income",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "lump_football_operations",
+     0.18000000000000002
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Despesas financeiras",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "(=) Déficit do Exercício",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.82
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Déficit do Exercício",
+   "page": 35,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado abrangente",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Receitas financeiras",
+   "page": 34,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## Demonstração do resultado",
+   "choice": "lump_football_operations",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.66
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Imóveis e benfeitorias",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "choice": "depreciation",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "depreciation",
+     0.62
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Móveis e utensílios",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.29000000000000004
+    ],
+    [
+     "depreciation",
+     0.08
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Veículos",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "choice": "admin_general_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "match_organisation_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "Terrenos",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "choice": "other_expenses",
+   "confidence": 0.21,
+   "top3": [
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "stadium_other",
+     0.17
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Máquinas e equipamentos",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "choice": "admin_general_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "depreciation",
+     0.11
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Benfeitorias em imóveis de terceiros",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.24000000000000002
+    ],
+    [
+     "other_income",
+     0.13
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Computadores",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ],
+    [
+     "depreciation",
+     0.02
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Obras em andamento",
+   "page": 47,
+   "section": "### Movimentação 2024",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "stadium_other",
+     0.03
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Trabalhistas",
+   "page": 51,
+   "section": "# (ii) Antecipações de receita / # (iii) Receitas de patrocínios a apropriar / # 12. Provisões para riscos processuais, depósitos judiciais e acordos em andamento / # 12.1. Perdas esperadas com causas judiciais / # Provisões para riscos processuais",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "exceptional_items",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1335
+  },
+  {
+   "label": "Participação em competições, exposição e performance",
+   "page": 54,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+   "choice": "competition_bonus",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "competition_bonus",
+     0.56
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ],
+    [
+     "other_income",
+     0.13
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "Licenciamento e *royanties*",
+   "page": 54,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.71
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "broadcasting",
+     0.03
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Patrocínios e publicidade",
+   "page": 54,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Direitos de transmissão",
+   "page": 54,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Sócio Tigrão",
+   "page": 54,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+   "choice": "member_dues",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "member_dues",
+     0.5
+    ],
+    [
+     "sponsorship_commercial",
+     0.25
+    ],
+    [
+     "other_income",
+     0.17
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Bilheteria",
+   "page": 54,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Associações quadro social",
+   "page": 54,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+   "choice": "member_dues",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "member_dues",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Repasse loterias",
+   "page": 54,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Adesão ao condomínio LFU",
+   "page": 54,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+   "choice": "member_dues",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "member_dues",
+     0.7
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Bares e lanchonetes",
+   "page": 54,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+   "choice": "stadium_other",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "stadium_other",
+     0.72
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "(-) Impostos e deduções da receita",
+   "page": 54,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "Incentivos governamentais",
+   "page": 54,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 15. Receita operacional líquida",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "education",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Premiações (ii)",
+   "page": 54,
+   "section": "## 16. Custo das atividades esportivas",
+   "choice": "competition_bonus",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "competition_bonus",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Amortização de direitos sobre atletas (i)",
+   "page": 54,
+   "section": "## 16. Custo das atividades esportivas",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Salários, encargos e benefícios",
+   "page": 55,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 17. Despesas com pessoal",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Gastos com jogos e competições",
+   "page": 54,
+   "section": "## 16. Custo das atividades esportivas",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Despesas com transações de atletas",
+   "page": 54,
+   "section": "## 16. Custo das atividades esportivas",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "lump_football_operations_expense",
+     0.26
+    ],
+    [
+     "player_amortisation",
+     0.26
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Rescisões",
+   "page": 55,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 17. Despesas com pessoal",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "wages_squad",
+     0.33
+    ],
+    [
+     "exceptional_items",
+     0.17
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Férias e encargos",
+   "page": 55,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 17. Despesas com pessoal",
+   "choice": "wages_squad",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "wages_squad",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "13º salário e encargos",
+   "page": 55,
+   "section": "VILA NOVA FUTEBOL CLUBE / ## 17. Despesas com pessoal",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Perdas esperadas com processos trabalhistas",
+   "page": 54,
+   "section": "## 16. Custo das atividades esportivas",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "exceptional_items",
+     0.21000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Direito de imagem",
+   "page": 54,
+   "section": "## 16. Custo das atividades esportivas",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "sponsorship_commercial",
+     0.19
+    ],
+    [
+     "broadcasting",
+     0.15
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Uso e consumo",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Serviços de terceiros",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Depreciações",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Esportes olímpicos",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Manutenções de ativos",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Publicidades",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Gastos administrativos",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Taxas associativas",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Honorários jurídicos",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Multas contratuais",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Reembolsos",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Tecnologia da informação",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Despesas com transporte",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "match_organisation_expense",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Impostos estaduais",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Seguros",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Honorários contábeis",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Aluguéis",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Impostos municipais",
+   "page": 55,
+   "section": "## 18. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Movimentação de atletas (i)",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "player_sales",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "player_sales",
+     0.77
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Estorno de provisões (ii)",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Receita com aluguéis",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "stadium_other",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "stadium_other",
+     0.83
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Multas contratuais recebidas (iii)",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Outros",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Arrecadação do futebol de base",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "youth_football",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_football",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Doações",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Brindes recebidos",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "sponsorship_commercial",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Reembolsos recebidos",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Taxa de avaliação base",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.9400000000000001
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Perdas na venda de ativos",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "exceptional_items",
+     0.21000000000000002
+    ],
+    [
+     "other_income",
+     0.06
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Recuperação de despesas",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Auxílio custos operacionais",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Alesson dos Santos Batista",
+   "page": 56,
+   "section": "### Principais vendas/cessões de direitos econômicos em 2025",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Jemmes Bruno Ribeiro da Silva",
+   "page": 56,
+   "section": "### Principais vendas/cessões de direitos econômicos em 2025",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Clayton Fernandes Silva",
+   "page": 56,
+   "section": "### Principais vendas/cessões de direitos econômicos em 2025",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Estacionamentos",
+   "page": 55,
+   "section": "## 19. Outras receitas, líquidas",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "stadium_other",
+     0.49
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "João Pedro Florêncio Barbosa",
+   "page": 56,
+   "section": "### Principais vendas/cessões de direitos econômicos em 2025",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Pablo Roberto dos Santos Barbosa",
+   "page": 56,
+   "section": "### Principais vendas/cessões de direitos econômicos em 2025",
+   "choice": "player_sales",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "player_sales",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Everton Galdino Moreira",
+   "page": 56,
+   "section": "### Principais vendas/cessões de direitos econômicos em 2025",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Cristiano Claudinei Nogueira",
+   "page": 56,
+   "section": "### Principais vendas/cessões de direitos econômicos em 2025",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Raimundo Ykaro Santos Silva",
+   "page": 56,
+   "section": "### Principais vendas/cessões de direitos econômicos em 2025",
+   "choice": "player_sales",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "player_sales",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Geovane da Silva de Souza",
+   "page": 56,
+   "section": "### Principais vendas/cessões de direitos econômicos em 2025",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Multas pagas",
+   "page": 56,
+   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "exceptional_items",
+     0.18000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Tarifas bancárias",
+   "page": 56,
+   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Juros sobre empréstimos e financiamentos (i)",
+   "page": 56,
+   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1293
+  },
+  {
+   "label": "Juros pagos",
+   "page": 56,
+   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.43
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "IOF",
+   "page": 56,
+   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.53
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.18
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Perdas contratuais",
+   "page": 56,
+   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "player_impairment",
+     0.23
+    ],
+    [
+     "exceptional_items",
+     0.17
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "Descontos concedidos",
+   "page": 56,
+   "section": "### (ii) Estorno de provisões / ### (iii) Multas contratuais recebidas / ## 20. Resultado financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "other_income",
+     0.15
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Descontos sobre dívida ativa",
+   "page": 56,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ]
+   ],
+   "tokens": 1249
+  },
+  {
+   "label": "Atualizações monetárias",
+   "page": 56,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.29000000000000004
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1253
+  },
+  {
+   "label": "Descontos obtidos",
+   "page": 56,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1248
+  },
+  {
+   "label": "Rendimentos de depósitos judiciais",
+   "page": 56,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1254
+  },
+  {
+   "label": "Resultado financeiro líquido",
+   "page": 56,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Rendimentos de aplicações financeiras",
+   "page": 56,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1252
+  }
+ ]
+}

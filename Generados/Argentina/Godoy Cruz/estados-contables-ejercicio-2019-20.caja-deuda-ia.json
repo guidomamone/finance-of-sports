@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Argentina/Godoy Cruz/estados-contables-ejercicio-2019-20.md",
+ "generado": "2026-10-02T00:16:12.870Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   81
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las únicas deudas del balance son líneas genéricas 'Deudas (Nota N25)' (L81 corriente, L86 no corriente) que no distinguen la parte financiera de la comercial, por lo que la deuda financiera no puede identificarse sin consultar la Nota 25. Los importes están expresados con centavos, lo que indica pesos en unidades, aunque el documento no incluye una frase explícita de escala."
+}

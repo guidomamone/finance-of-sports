@@ -1,0 +1,462 @@
+{
+  "md": "Clubes/Brasil/Palmeiras/demonstracoes-financeiras-2018-2019.md",
+  "pdf": "Clubes/Brasil/Palmeiras/demonstracoes-financeiras-2018-2019.pdf",
+  "club": "palmeiras-br",
+  "year": 2019,
+  "numberFormat": "espacio como separador de miles (escandinavo)",
+  "generatedAt": "2026-09-30T21:53:39.292Z",
+  "tieOuts": {
+    "cierran": 8,
+    "noCierran": 8
+  },
+  "warnings": [
+    "3 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "5 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 38,
+    "notasUsadas": [
+      "34"
+    ]
+  },
+  "ladoConocido": 39,
+  "rubros": [
+    {
+      "label": "Receitas financeiras 23.001 33 589 23.623 33.563 -",
+      "lado": "revenue",
+      "page": 7,
+      "section": "(524.608) (27.263) (71.930) (623.801) (516.966) (18.705) (65.134) (600.805) / Resultado financeiro 18",
+      "values": [
+        1.157
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos financieros 23.001 33 589 23.623 33.563 -"
+    },
+    {
+      "label": "Despesas financeiras (38.932) (53) (1.028) (40.013) (54.863) (58)",
+      "lado": "expense",
+      "page": 7,
+      "section": "(524.608) (27.263) (71.930) (623.801) (516.966) (18.705) (65.134) (600.805) / Resultado financeiro 18",
+      "values": [
+        -2.156
+      ],
+      "origen": "estado 8",
+      "glosa": "Gastos financieros (38.932) (53) (1.028) (40.013) (54.863) (58)"
+    },
+    {
+      "label": "Pessoal e encargos sociais",
+      "lado": "expense",
+      "page": 7,
+      "section": "Despesas operacionais",
+      "values": [
+        -213.798
+      ],
+      "origen": "estado 7",
+      "glosa": "Personal y cargas sociales"
+    },
+    {
+      "label": "Despesas com direito de imagem (B0.906) (16) - (D0.922) (79.681) - (28)",
+      "lado": "expense",
+      "page": 7,
+      "section": "Despesas operacionais",
+      "values": [
+        -79.709
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos por derechos de imagen (B0.906) (16) - (D0.922) (79.681) - (28)"
+    },
+    {
+      "label": "Despesas com jogos (31.114) (153) (147) (31.414) (31.919) (682) (101)",
+      "lado": "expense",
+      "page": 7,
+      "section": "Despesas operacionais",
+      "values": [
+        -32.702
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos de partidos (31.114) (153) (147) (31.414) (31.919) (682) (101)"
+    },
+    {
+      "label": "Despesas sócio torcedor Avanti (25.374) - - (25.374) (30.635) - -",
+      "lado": "expense",
+      "page": 7,
+      "section": "Despesas operacionais",
+      "values": [
+        -30.635
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos socio abonado Avanti (25.374) - - (25.374) (30.635) - -"
+    },
+    {
+      "label": "Despesas gerais e administrativas",
+      "lado": "expense",
+      "page": 7,
+      "section": "Despesas operacionais",
+      "values": [
+        -52.384
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos generales y administrativos"
+    },
+    {
+      "label": "Depreciação e amortização (1.117) (104) (4.822) (6.043) (978) (79)",
+      "lado": "expense",
+      "page": 7,
+      "section": "Despesas operacionais",
+      "values": [
+        -4.997
+      ],
+      "origen": "estado 7",
+      "glosa": "Depreciación y amortización (1.117) (104) (4.822) (6.043) (978) (79)"
+    },
+    {
+      "label": "Amortização - direitos com jogadores TAIT (129.961) (522) - (130.483) (80.660) (291) -",
+      "lado": "expense",
+      "page": 7,
+      "section": "Despesas operacionais",
+      "values": [
+        -80.951
+      ],
+      "origen": "estado 7",
+      "glosa": "Amortización - derechos sobre jugadores TAIT (129.961) (522) - (130.483) (80.660) (291) -"
+    },
+    {
+      "label": "Baixa de gastos com atletas 74/72 (19.954) (14.384) - (34.338) (19.724) (12.146) -",
+      "lado": "expense",
+      "page": 7,
+      "section": "Despesas operacionais",
+      "values": [
+        -31.87
+      ],
+      "origen": "estado 7",
+      "glosa": "Baja de gastos con futbolistas 74/72 (19.954) (14.384) - (34.338) (19.724) (12.146) -"
+    },
+    {
+      "label": "Contas a pagar (Circulante e Não Circulante)",
+      "lado": "expense",
+      "page": 10,
+      "section": "Despesas antecipadas 73 / Depósitos judiciais (13.590) (2.758) / (60.843) (17.444) / Aumento (redução) de passivos / Fornecedores (204)",
+      "values": [
+        46.95
+      ],
+      "origen": "estado 14",
+      "glosa": "Cuentas por pagar (Corriente y No Corriente)"
+    },
+    {
+      "label": "Direitos imagem /luvas a pagar (Circulante e Não Circulante)",
+      "lado": "expense",
+      "page": 10,
+      "section": "Despesas antecipadas 73 / Depósitos judiciais (13.590) (2.758) / (60.843) (17.444) / Aumento (redução) de passivos / Fornecedores (204)",
+      "values": [
+        58.438
+      ],
+      "origen": "estado 14",
+      "glosa": "Derechos de imagen / primas de fichaje por pagar (Corriente y No Corriente)"
+    },
+    {
+      "label": "Obrigações trabalhistas e encargos sociais a pagar",
+      "lado": "expense",
+      "page": 10,
+      "section": "Despesas antecipadas 73 / Depósitos judiciais (13.590) (2.758) / (60.843) (17.444) / Aumento (redução) de passivos / Fornecedores (204)",
+      "values": [
+        7.966
+      ],
+      "origen": "estado 14",
+      "glosa": "Obligaciones laborales y cargas sociales por pagar"
+    },
+    {
+      "label": "Obrigações tributárias",
+      "lado": "expense",
+      "page": 10,
+      "section": "Despesas antecipadas 73 / Depósitos judiciais (13.590) (2.758) / (60.843) (17.444) / Aumento (redução) de passivos / Fornecedores (204)",
+      "values": [
+        2.548
+      ],
+      "origen": "estado 14",
+      "glosa": "Obligaciones tributarias"
+    },
+    {
+      "label": "Impostos parcelados",
+      "lado": "expense",
+      "page": 10,
+      "section": "Despesas antecipadas 73 / Depósitos judiciais (13.590) (2.758) / (60.843) (17.444) / Aumento (redução) de passivos / Fornecedores (204)",
+      "values": [
+        -6.47
+      ],
+      "origen": "estado 14",
+      "glosa": "Impuestos fraccionados"
+    },
+    {
+      "label": "Antecipação de contratos",
+      "lado": "expense",
+      "page": 10,
+      "section": "Despesas antecipadas 73 / Depósitos judiciais (13.590) (2.758) / (60.843) (17.444) / Aumento (redução) de passivos / Fornecedores (204)",
+      "values": [
+        -55.867
+      ],
+      "origen": "estado 14",
+      "glosa": "Anticipación de contratos"
+    },
+    {
+      "label": "Serviços de terceiros",
+      "lado": "expense",
+      "page": 31,
+      "section": "17. Despesas gerais e administrativas / 2019 2018 / Clube social e Clube social e / Futebol Futebol esportes Futebol Futebol esportes / profissional amador amadores Total profissional amador amadores Total",
+      "values": [
+        -0.015212
+      ],
+      "origen": "estado 56",
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Energia elétrica/água/telefone/gás (1.567) (44) (5.060) (6.671) (1.720) (612)",
+      "lado": "expense",
+      "page": 31,
+      "section": "17. Despesas gerais e administrativas / 2019 2018 / Clube social e Clube social e / Futebol Futebol esportes Futebol Futebol esportes / profissional amador amadores Total profissional amador amadores Total",
+      "values": [
+        -0.004447
+      ],
+      "origen": "estado 56",
+      "glosa": "Energía eléctrica/agua/teléfono/gas (1.567) (44) (5.060) (6.671) (1.720) (612)"
+    },
+    {
+      "label": "Materiais de consumo (1.061) (503) (1.191) (2.755) (1.587) (900)",
+      "lado": "expense",
+      "page": 31,
+      "section": "17. Despesas gerais e administrativas / 2019 2018 / Clube social e Clube social e / Futebol Futebol esportes Futebol Futebol esportes / profissional amador amadores Total profissional amador amadores Total",
+      "values": [
+        -0.001667
+      ],
+      "origen": "estado 56",
+      "glosa": "Materiales de consumo (1.061) (503) (1.191) (2.755) (1.587) (900)"
+    },
+    {
+      "label": "Conservação geral (1.806) (700) (1.955) (4.461) (795) (564)",
+      "lado": "expense",
+      "page": 31,
+      "section": "17. Despesas gerais e administrativas / 2019 2018 / Clube social e Clube social e / Futebol Futebol esportes Futebol Futebol esportes / profissional amador amadores Total profissional amador amadores Total",
+      "values": [
+        -0.003025
+      ],
+      "origen": "estado 56",
+      "glosa": "Conservación general (1.806) (700) (1.955) (4.461) (795) (564)"
+    },
+    {
+      "label": "Jogos, Torneios, Atletas e Federações (9.080) (277) (888) (10.245) (8.099) (563)",
+      "lado": "expense",
+      "page": 31,
+      "section": "17. Despesas gerais e administrativas / 2019 2018 / Clube social e Clube social e / Futebol Futebol esportes Futebol Futebol esportes / profissional amador amadores Total profissional amador amadores Total",
+      "values": [
+        -0.001019
+      ],
+      "origen": "estado 56",
+      "glosa": "Partidos, Torneos, Futbolistas y Federaciones (9.080) (277) (888) (10.245) (8.099) (563)"
+    },
+    {
+      "label": "Viagens, estadias e refeições (11.708) (2.888) (1.335) (15.931) (8.129) (5.407) (792)",
+      "lado": "expense",
+      "page": 31,
+      "section": "17. Despesas gerais e administrativas / 2019 2018 / Clube social e Clube social e / Futebol Futebol esportes Futebol Futebol esportes / profissional amador amadores Total profissional amador amadores Total",
+      "values": [
+        -0.014328
+      ],
+      "origen": "estado 56",
+      "glosa": "Viajes, estancias y dietas (11.708) (2.888) (1.335) (15.931) (8.129) (5.407) (792)"
+    },
+    {
+      "label": "Rateio de gastos - Atletas em formação - > = = = 8.834 =",
+      "lado": "expense",
+      "page": 31,
+      "section": "Propaganda e Publicidades (220) - (58) (278) (69) (6) - (75) / Despesas legais e judiciais (7.916) (2) (1.159) (9.077) (19.866) (4) (1.676) (21.546) / Seguros, impostos e taxas (250) (29) (249) (528) (38) (1) (283) (322)",
+      "values": [
+        0.008834
+      ],
+      "origen": "estado 57",
+      "glosa": "Distribución de gastos - Futbolistas en formación - > = = = 8.834 ="
+    },
+    {
+      "label": "Outras (3.175) (2.744) (4.832) (10.751) (2.610)",
+      "lado": "expense",
+      "page": 31,
+      "section": "Propaganda e Publicidades (220) - (58) (278) (69) (6) - (75) / Despesas legais e judiciais (7.916) (2) (1.159) (9.077) (19.866) (4) (1.676) (21.546) / Seguros, impostos e taxas (250) (29) (249) (528) (38) (1) (283) (322)",
+      "values": [
+        -0.005881
+      ],
+      "origen": "estado 57",
+      "glosa": "Otras (3.175) (2.744) (4.832) (10.751) (2.610)"
+    },
+    {
+      "label": "Ajustes contratuais - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Propaganda e Publicidades (220) - (58) (278) (69) (6) - (75) / Despesas legais e judiciais (7.916) (2) (1.159) (9.077) (19.866) (4) (1.676) (21.546) / Seguros, impostos e taxas (250) (29) (249) (528) (38) (1) (283) (322)",
+      "values": [
+        -0.040317
+      ],
+      "origen": "estado 57",
+      "glosa": "Ajustes contractuales - -"
+    },
+    {
+      "label": "Depósitos judiciais",
+      "lado": "expense",
+      "page": 6,
+      "section": "Despesas antecipadas 105 167 / 83.846 68.286 / Não circulante / Créditos a receber 5 59.217 35.824 / Outros créditos - 585",
+      "values": [
+        32.198
+      ],
+      "origen": "estado 1",
+      "glosa": "Depósitos judiciales"
+    },
+    {
+      "label": "Imobilizado",
+      "lado": "expense",
+      "page": 6,
+      "section": "Despesas antecipadas 105 167 / 83.846 68.286 / Não circulante / Créditos a receber 5 59.217 35.824 / Outros créditos - 585",
+      "values": [
+        193.769
+      ],
+      "origen": "estado 1",
+      "glosa": "Inmovilizado material"
+    },
+    {
+      "label": "Atletas em formação",
+      "lado": "expense",
+      "page": 22,
+      "section": "do terreno concedido ao Clube. / Bens oferecidos em garantia / empréstimos ou quaisquer outras obrigações existentes. / 7. Intangível / Notas 2019 2018",
+      "values": [
+        26.108
+      ],
+      "origen": "nota 34 (ancla 1)",
+      "ancla": "Intangível",
+      "glosa": "Futbolistas en formación"
+    },
+    {
+      "label": "Intangível",
+      "lado": "expense",
+      "page": 6,
+      "section": "Despesas antecipadas 105 167 / 83.846 68.286 / Não circulante / Créditos a receber 5 59.217 35.824 / Outros créditos - 585",
+      "values": [
+        368.744
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Intangible"
+    },
+    {
+      "label": "Atletas formados",
+      "lado": "expense",
+      "page": 22,
+      "section": "do terreno concedido ao Clube. / Bens oferecidos em garantia / empréstimos ou quaisquer outras obrigações existentes. / 7. Intangível / Notas 2019 2018",
+      "values": [
+        7.022
+      ],
+      "origen": "nota 34 (ancla 1)",
+      "ancla": "Intangível",
+      "glosa": "Futbolistas formados"
+    },
+    {
+      "label": "Atletas contratados",
+      "lado": "expense",
+      "page": 22,
+      "section": "do terreno concedido ao Clube. / Bens oferecidos em garantia / empréstimos ou quaisquer outras obrigações existentes. / 7. Intangível / Notas 2019 2018",
+      "values": [
+        244.519
+      ],
+      "origen": "nota 34 (ancla 1)",
+      "ancla": "Intangível",
+      "glosa": "Futbolistas contratados"
+    },
+    {
+      "label": "Luvas",
+      "lado": "expense",
+      "page": 22,
+      "section": "do terreno concedido ao Clube. / Bens oferecidos em garantia / empréstimos ou quaisquer outras obrigações existentes. / 7. Intangível / Notas 2019 2018",
+      "values": [
+        89.46
+      ],
+      "origen": "nota 34 (ancla 1)",
+      "ancla": "Intangível",
+      "glosa": "Primas de fichaje"
+    },
+    {
+      "label": "Softwares",
+      "lado": "expense",
+      "page": 22,
+      "section": "do terreno concedido ao Clube. / Bens oferecidos em garantia / empréstimos ou quaisquer outras obrigações existentes. / 7. Intangível / Notas 2019 2018",
+      "values": [
+        1.635
+      ],
+      "origen": "nota 34 (ancla 1)",
+      "ancla": "Intangível",
+      "glosa": "Software"
+    },
+    {
+      "label": "Terrenos 75.967 -",
+      "lado": "expense",
+      "page": 21,
+      "section": "Em 31 de dezembro de 2019, o Clube não possui recebíveis oferecidos em garantia. / 6. Imobilizado / 2019 / Taxas anuais Custo de Depreciação Imobilizado / Descrição de depreciação aquisição acumulada líquido 2018",
+      "values": [
+        0.075967
+      ],
+      "origen": "estado 26",
+      "glosa": "Terrenos 75.967 -"
+    },
+    {
+      "label": "Imóveis 1,66% a",
+      "lado": "expense",
+      "page": 21,
+      "section": "Em 31 de dezembro de 2019, o Clube não possui recebíveis oferecidos em garantia. / 6. Imobilizado / 2019 / Taxas anuais Custo de Depreciação Imobilizado / Descrição de depreciação aquisição acumulada líquido 2018",
+      "values": [
+        0.000003
+      ],
+      "origen": "estado 26",
+      "glosa": "Inmuebles 1,66% a"
+    },
+    {
+      "label": "Móveis e utensílios 10%",
+      "lado": "expense",
+      "page": 21,
+      "section": "Em 31 de dezembro de 2019, o Clube não possui recebíveis oferecidos em garantia. / 6. Imobilizado / 2019 / Taxas anuais Custo de Depreciação Imobilizado / Descrição de depreciação aquisição acumulada líquido 2018",
+      "values": [
+        0.007812
+      ],
+      "origen": "estado 26",
+      "glosa": "Mobiliario y enseres 10%"
+    },
+    {
+      "label": "Variação cambial passiva (25.285) - -",
+      "lado": "expense",
+      "page": 32,
+      "section": "Despesas financeiras",
+      "values": [
+        -0.025285
+      ],
+      "origen": "estado 59",
+      "glosa": "Diferencias de cambio negativas (25.285) - -"
+    },
+    {
+      "label": "Encargos sobre empréstimos (9.466) - - (9.466) (11.804) - -",
+      "lado": "expense",
+      "page": 32,
+      "section": "Despesas financeiras",
+      "values": [
+        -0.011804
+      ],
+      "origen": "estado 59",
+      "glosa": "Cargas sobre préstamos (9.466) - - (9.466) (11.804) - -"
+    },
+    {
+      "label": "Operações de Câmbio (611) (25) (2) (638) (1.655) (52) -",
+      "lado": "expense",
+      "page": 32,
+      "section": "Despesas financeiras",
+      "values": [
+        -0.001707
+      ],
+      "origen": "estado 59",
+      "glosa": "Operaciones de cambio (611) (25) (2) (638) (1.655) (52) -"
+    }
+  ]
+}

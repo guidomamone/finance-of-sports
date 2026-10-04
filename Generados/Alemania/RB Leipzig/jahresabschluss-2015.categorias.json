@@ -1,0 +1,80 @@
+{
+ "md": "Clubes/Alemania/RB Leipzig/jahresabschluss-2015.md",
+ "club": "rbleipzig-de",
+ "year": 2015,
+ "generatedAt": "2026-09-30T22:49:30.644Z",
+ "rubrosHuella": "442df2427153e82fe49741b8e7fd482b69d8f23b",
+ "jevHuella": "2e553c3353b03243b52caa0c33ed4ffad5b463ec",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.0131,
+ "rubros": [
+  {
+   "label": "1. Spielerwerte",
+   "lado": "expense",
+   "section": "UNTERNEHMENSREGISTER / 6. Sonstige Angaben / 7. Mitglieder des Geschäftsführungsorgans / 8. Mitarbeiter / # Entwicklung des Anlagevermögens",
+   "glosa": "1. Derechos de adquisición de jugadores",
+   "page": 8,
+   "pendiente": false,
+   "ya": "player_amortisation",
+   "escalon": 1,
+   "jevConf": 0.91,
+   "categoria": "player_amortisation",
+   "confianza": 0.91
+  },
+  {
+   "label": "2. Software",
+   "lado": "expense",
+   "section": "UNTERNEHMENSREGISTER / 6. Sonstige Angaben / 7. Mitglieder des Geschäftsführungsorgans / 8. Mitarbeiter / # Entwicklung des Anlagevermögens",
+   "glosa": "2. Aplicaciones informáticas",
+   "page": 8,
+   "pendiente": true,
+   "jev": "other_amortisation",
+   "jevConf": 0.65,
+   "escalon": 2,
+   "categoria": "other_amortisation",
+   "confianza": 0.8,
+   "motivo": "Software es intangible no jugador; club usa other_amortisation para sonstige immaterielle Vermögensgegenstände"
+  },
+  {
+   "label": "1. Bauten auf fremden Grundstücken",
+   "lado": "expense",
+   "section": "UNTERNEHMENSREGISTER / 6. Sonstige Angaben / 7. Mitglieder des Geschäftsführungsorgans / 8. Mitarbeiter / # Entwicklung des Anlagevermögens",
+   "glosa": "1. Construcciones en terrenos ajenos",
+   "page": 8,
+   "pendiente": true,
+   "jev": "depreciation",
+   "jevConf": 0.72,
+   "escalon": 2,
+   "categoria": "depreciation",
+   "confianza": 0.8,
+   "motivo": "Construcciones son Sachanlagen; club asigna depreciation a Abschreibungen auf Sachanlagen"
+  },
+  {
+   "label": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+   "lado": "expense",
+   "section": "UNTERNEHMENSREGISTER / 6. Sonstige Angaben / 7. Mitglieder des Geschäftsführungsorgans / 8. Mitarbeiter / # Entwicklung des Anlagevermögens",
+   "glosa": "2. Otras instalaciones, mobiliario y enseres",
+   "page": 8,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.45,
+   "escalon": 2,
+   "categoria": "depreciation",
+   "confianza": 0.8,
+   "motivo": "Mobiliario e instalaciones son Sachanlagen; depreciation según convención del club"
+  },
+  {
+   "label": "3. Geleistete Anzahlungen",
+   "lado": "expense",
+   "section": "UNTERNEHMENSREGISTER / 6. Sonstige Angaben / 7. Mitglieder des Geschäftsführungsorgans / 8. Mitarbeiter / # Entwicklung des Anlagevermögens",
+   "glosa": "3. Anticipos entregados",
+   "page": 8,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 0.9,
+   "categoria": "other_expenses",
+   "confianza": 0.9
+  }
+ ]
+}

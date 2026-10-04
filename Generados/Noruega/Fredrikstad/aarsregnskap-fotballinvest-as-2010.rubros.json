@@ -1,0 +1,177 @@
+{
+ "md": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2010.md",
+ "pdf": "Clubes/Noruega/Fredrikstad/aarsregnskap-fotballinvest-as-2010.pdf",
+ "club": "fredrikstad",
+ "year": 2010,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:19.731Z",
+ "tieOuts": {
+  "cierran": 53,
+  "noCierran": 7
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "1 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "12 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 25,
+  "notasUsadas": []
+ },
+ "ladoConocido": 15,
+ "rubros": [
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # RESULTATREGNSKAP",
+   "values": [
+    47.873575
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # RESULTATREGNSKAP",
+   "values": [
+    1.678247
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # RESULTATREGNSKAP",
+   "values": [
+    34.5098
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Avskrivning",
+   "lado": "expense",
+   "page": 2,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # RESULTATREGNSKAP",
+   "values": [
+    6.033999
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # RESULTATREGNSKAP",
+   "values": [
+    26.3306
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # RESULTATREGNSKAP",
+   "values": [
+    0.017986
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # RESULTATREGNSKAP",
+   "values": [
+    0.679778
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    43.043482
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    5.371416
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    2.240304
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    35.095011
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Avskrivning",
+   "lado": "expense",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    6.09548
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    25.703548
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    0.018407
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 7,
+   "section": "FREDRIKSTAD FOTBALLKLUBB SPORT AS / # KONSERNRESULTATREGNSKAP",
+   "values": [
+    0.711427
+   ],
+   "origen": "estado 6"
+  }
+ ]
+}

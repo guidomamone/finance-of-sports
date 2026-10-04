@@ -1,0 +1,673 @@
+{
+ "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2025-06-30.md",
+ "generatedAt": "2026-09-30T04:29:31.952Z",
+ "rubros": [
+  {
+   "label": "Έσοδα εισιτηρίων",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### 11. Έσοδα συνολικά",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 845
+  },
+  {
+   "label": "Σύνολο εσόδων",
+   "lado": null,
+   "page": 12,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01$^{η}$ Ιουλίου 2024 έως την 30$^{η}$ Ιουνίου 2025 της ΠΑΕ ΚΗΦΙΣΙΑ",
+   "choice": "lump_football_operations",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.87
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1358
+  },
+  {
+   "label": "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### 11. Έσοδα συνολικά",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "lump_football_operations",
+     0.32
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 868
+  },
+  {
+   "label": "Άλλα λειτουργικά έσοδα",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### 11. Έσοδα συνολικά",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 850
+  },
+  {
+   "label": "Χορηγίες και διαφήμιση",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### 11. Έσοδα συνολικά",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 848
+  },
+  {
+   "label": "Δικαιώματα αναμετάδοσης",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### 11. Έσοδα συνολικά",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 852
+  },
+  {
+   "label": "Επίδομα μηχανισμού αλληλεγγύης και χρηματικά έπαθλα UEFA",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### 11. Έσοδα συνολικά",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1144
+  },
+  {
+   "label": "Εμπορικές δραστηριότητες",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### 11. Έσοδα συνολικά",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 853
+  },
+  {
+   "label": "Κόστος πωλήσεων /υλικών",
+   "lado": "expense",
+   "page": 25,
+   "section": "### 12. Έξοδα συνολικά",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "lump_football_operations_expense",
+     0.24
+    ],
+    [
+     "match_organisation_expense",
+     0.13
+    ]
+   ],
+   "tokens": 819
+  },
+  {
+   "label": "Απόσβεση και απομείωση ενσώματων παγίων στοιχείων ενεργητικού",
+   "lado": "expense",
+   "page": 25,
+   "section": "### 12. Έξοδα συνολικά",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "depreciation",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 851
+  },
+  {
+   "label": "Δαπάνες παροχών προς εργαζόμενους (ποδοσφαιριστών και λοιπών εργαζομένων)",
+   "lado": "expense",
+   "page": 25,
+   "section": "### 12. Έξοδα συνολικά",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 858
+  },
+  {
+   "label": "Λοιπά λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 25,
+   "section": "### 12. Έξοδα συνολικά",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 819
+  },
+  {
+   "label": "Απόσβεση και απομείωση λοιπών άυλων στοιχείων (εξαιρουμένων ποδοσφαιριστών)",
+   "lado": "expense",
+   "page": 25,
+   "section": "### 12. Έξοδα συνολικά",
+   "choice": "other_amortisation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_amortisation",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 863
+  },
+  {
+   "label": "Απόσβεση εγγραφών παικτών και απομείωση εγγραφών παικτών",
+   "lado": null,
+   "page": 12,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01$^{η}$ Ιουλίου 2024 έως την 30$^{η}$ Ιουνίου 2025 της ΠΑΕ ΚΗΦΙΣΙΑ",
+   "choice": "player_amortisation",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "player_amortisation",
+     0.81
+    ],
+    [
+     "player_impairment",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1394
+  },
+  {
+   "label": "Σύνολο λειτουργικών εξόδων",
+   "lado": null,
+   "page": 12,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01$^{η}$ Ιουλίου 2024 έως την 30$^{η}$ Ιουνίου 2025 της ΠΑΕ ΚΗΦΙΣΙΑ",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1370
+  },
+  {
+   "label": "κέρδη /ζημίες από την διάθεση (μεταγραφών ) ποδοσφαιριστών",
+   "lado": null,
+   "page": 12,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01$^{η}$ Ιουλίου 2024 έως την 30$^{η}$ Ιουνίου 2025 της ΠΑΕ ΚΗΦΙΣΙΑ",
+   "choice": "player_sales",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "player_sales",
+     0.87
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1393
+  },
+  {
+   "label": "Σύνολο καθαρού αποτελέσματος από εγγραφές ποδοσφαιριστών",
+   "lado": null,
+   "page": 12,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01$^{η}$ Ιουλίου 2024 έως την 30$^{η}$ Ιουνίου 2025 της ΠΑΕ ΚΗΦΙΣΙΑ",
+   "choice": "player_amortisation",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "player_amortisation",
+     0.36
+    ],
+    [
+     "player_sales",
+     0.3
+    ],
+    [
+     "other_income",
+     0.14
+    ]
+   ],
+   "tokens": 1395
+  },
+  {
+   "label": "Κέρδη /ζημίες από διάθεση παγίων ή άυλων στοιχείων ενεργητικού",
+   "lado": null,
+   "page": 12,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01$^{η}$ Ιουλίου 2024 έως την 30$^{η}$ Ιουνίου 2025 της ΠΑΕ ΚΗΦΙΣΙΑ",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "exceptional_items",
+     0.09
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 1398
+  },
+  {
+   "label": "λοιπά έσοδα /έξοδα μεταγραφών",
+   "lado": null,
+   "page": 12,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01$^{η}$ Ιουλίου 2024 έως την 30$^{η}$ Ιουνίου 2025 της ΠΑΕ ΚΗΦΙΣΙΑ",
+   "choice": "other_expenses",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "player_sales",
+     0.14
+    ]
+   ],
+   "tokens": 1372
+  },
+  {
+   "label": "Φορολογικά έσοδα / (δαπάνες)",
+   "lado": null,
+   "page": 12,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01$^{η}$ Ιουλίου 2024 έως την 30$^{η}$ Ιουνίου 2025 της ΠΑΕ ΚΗΦΙΣΙΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_income",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1370
+  },
+  {
+   "label": "Χρηματοοικονομικά έσοδα / (έξοδα)",
+   "lado": null,
+   "page": 12,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01$^{η}$ Ιουλίου 2024 έως την 30$^{η}$ Ιουνίου 2025 της ΠΑΕ ΚΗΦΙΣΙΑ",
+   "choice": "other_income",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "lump_football_operations",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1375
+  },
+  {
+   "label": "Υπόλοιπο Ιδίων Κεφαλαίων την 1/7/2023",
+   "lado": null,
+   "page": 13,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "exceptional_items",
+     0.06
+    ]
+   ],
+   "tokens": 1461
+  },
+  {
+   "label": "Κέρδη/(ζημίες) μετά από φόρους",
+   "lado": null,
+   "page": 12,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01$^{η}$ Ιουλίου 2024 έως την 30$^{η}$ Ιουνίου 2025 της ΠΑΕ ΚΗΦΙΣΙΑ",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1367
+  },
+  {
+   "label": "Μεταβολές στοιχείων στην περίοδο",
+   "lado": null,
+   "page": 13,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1303
+  },
+  {
+   "label": "Αποτελέσματα περιόδου",
+   "lado": null,
+   "page": 13,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "choice": "other_income",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "lump_football_operations",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1297
+  },
+  {
+   "label": "Υπόλοιπο Ιδίων Κεφαλαίων την 30/06/2024",
+   "lado": null,
+   "page": 13,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1600
+  },
+  {
+   "label": "Υπόλοιπο Ιδίων Κεφαλαίων την 1/7/2024",
+   "lado": null,
+   "page": 13,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1598
+  },
+  {
+   "label": "Σύνολο",
+   "lado": "expense",
+   "page": 25,
+   "section": "### 12. Έξοδα συνολικά",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.8200000000000001
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 804
+  },
+  {
+   "label": "Υπόλοιπο Ιδίων Κεφαλαίων την 30/06/2025",
+   "lado": null,
+   "page": 13,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "other_income",
+     0.46
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1552
+  }
+ ]
+}

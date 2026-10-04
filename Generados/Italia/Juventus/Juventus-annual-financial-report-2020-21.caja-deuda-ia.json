@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2020-21.md",
+ "generado": "2026-10-04T18:00:34.314Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Amounts in euro",
+ "caja": {
+  "lineas": [
+   1444
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1469,
+   1476
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usó el balance consolidado (L1419-L1486); existe también el balance separado de la sociedad (L4325-L4390) con cifras ligeramente distintas (caja L4349, deuda L4373 y L4380)."
+}

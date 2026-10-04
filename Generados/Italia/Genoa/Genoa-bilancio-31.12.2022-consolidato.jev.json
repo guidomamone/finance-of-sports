@@ -1,0 +1,2076 @@
+{
+ "md": "Clubes/Italia/Genoa/Genoa-bilancio-31.12.2022-consolidato.md",
+ "generatedAt": "2026-09-30T04:30:24.061Z",
+ "rubros": [
+  {
+   "label": "RO (EBIT)",
+   "lado": null,
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "choice": "lump_football_operations",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.45
+    ],
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "RISULTATO PRIMA DELLE IMPOSTE",
+   "lado": null,
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "choice": "other_income",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "MOL (EBITDA)",
+   "lado": null,
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "lump_football_operations",
+     0.15
+    ]
+   ],
+   "tokens": 1572
+  },
+  {
+   "label": "VALORE DELLA PRODUZIONE",
+   "lado": null,
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "choice": "lump_football_operations",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.78
+    ],
+    [
+     "other_income",
+     0.19
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1290
+  },
+  {
+   "label": "AMMORTAMENTI E SVALUTAZIONI",
+   "lado": null,
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "choice": "depreciation",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "depreciation",
+     0.58
+    ],
+    [
+     "player_amortisation",
+     0.24
+    ],
+    [
+     "other_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 1295
+  },
+  {
+   "label": "COSTI OPERATIVI",
+   "lado": null,
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1290
+  },
+  {
+   "label": "PROVENTI ONERI FINANZIARI",
+   "lado": null,
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "IMPOSTE DI ESERCIZIO",
+   "lado": null,
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1290
+  },
+  {
+   "label": "Variazione rimanenze",
+   "lado": "revenue",
+   "page": 17,
+   "section": "## 1.5 RICAVI GESTIONE OPERATIVA",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Ricavi dalle vendite e prestazioni",
+   "lado": "revenue",
+   "page": 17,
+   "section": "## 1.5 RICAVI GESTIONE OPERATIVA",
+   "choice": "lump_football_operations",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.76
+    ],
+    [
+     "other_income",
+     0.1
+    ],
+    [
+     "player_sales",
+     0.09
+    ]
+   ],
+   "tokens": 835
+  },
+  {
+   "label": "RISULTATO D'ESERCIZIO",
+   "lado": null,
+   "page": 17,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.4 CONTO ECONOMICO",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "Incrementi costi vivaio capitalizzati",
+   "lado": "revenue",
+   "page": 17,
+   "section": "## 1.5 RICAVI GESTIONE OPERATIVA",
+   "choice": "youth_football",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "youth_football",
+     0.7
+    ],
+    [
+     "other_income",
+     0.24
+    ],
+    [
+     "player_sales",
+     0.05
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "Costo per materie consumo/merci",
+   "lado": "expense",
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "admin_general_expense",
+     0.39
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Proventi",
+   "lado": "revenue",
+   "page": 17,
+   "section": "## 1.5 RICAVI GESTIONE OPERATIVA",
+   "choice": "lump_football_operations",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.59
+    ],
+    [
+     "other_income",
+     0.35
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Costo per servizi",
+   "lado": "expense",
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "match_organisation_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Godimento beni di terzi",
+   "lado": "expense",
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 827
+  },
+  {
+   "label": "Variazione delle rimanenze",
+   "lado": "expense",
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 828
+  },
+  {
+   "label": "Oneri diversi di gestione",
+   "lado": "expense",
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 827
+  },
+  {
+   "label": "Ammortamento e svalutazioni",
+   "lado": "expense",
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "choice": "depreciation",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "depreciation",
+     0.44
+    ],
+    [
+     "player_amortisation",
+     0.23
+    ],
+    [
+     "other_amortisation",
+     0.2
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "Diritto sportivo calciatori settore giovanile",
+   "lado": "expense",
+   "page": 52,
+   "section": "GENOA / GRUPPO ANTI-FESTIBALI CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.81
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 821
+  },
+  {
+   "label": "Accantonamenti per rischi",
+   "lado": "expense",
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "exceptional_items",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Capitalizzazione costi vivaio",
+   "lado": "expense",
+   "page": 52,
+   "section": "GENOA / GRUPPO ANTI-FESTIBALI CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.52
+    ],
+    [
+     "player_amortisation",
+     0.18000000000000002
+    ],
+    [
+     "other_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 817
+  },
+  {
+   "label": "Costo per il personale",
+   "lado": "expense",
+   "page": 18,
+   "section": "CRICKET / FOOTBALL / CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## 1.6 COSTI GESTIONE OPERATIVA",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "wages_squad",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Diritti pluriennali alle prestazioni dei calciatori",
+   "lado": "expense",
+   "page": 52,
+   "section": "GENOA / GRUPPO ANTI-FESTIBALI CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "choice": "player_amortisation",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "player_amortisation",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "Impianti e attrezzature Pio XII",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "choice": "admin_general_expense",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "depreciation",
+     0.17
+    ]
+   ],
+   "tokens": 819
+  },
+  {
+   "label": "Autovetture/automezzi",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 817
+  },
+  {
+   "label": "Mobili e arredi",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "choice": "admin_general_expense",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.47
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "depreciation",
+     0.16
+    ]
+   ],
+   "tokens": 814
+  },
+  {
+   "label": "Macchine elettromeccaniche d'ufficio",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "depreciation",
+     0.09
+    ]
+   ],
+   "tokens": 820
+  },
+  {
+   "label": "Impianti e attrezzature Ferraris",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "depreciation",
+     0.16
+    ]
+   ],
+   "tokens": 818
+  },
+  {
+   "label": "Macchinari Sanitari",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 814
+  },
+  {
+   "label": "Mobili e varie negozio",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "choice": "admin_general_expense",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "depreciation",
+     0.03
+    ]
+   ],
+   "tokens": 815
+  },
+  {
+   "label": "Beni strumentali omaggio",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.07
+    ]
+   ],
+   "tokens": 816
+  },
+  {
+   "label": "Macchine Agricole",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "youth_other_sports_expense",
+     0.02
+    ]
+   ],
+   "tokens": 813
+  },
+  {
+   "label": "Macchinari",
+   "lado": "expense",
+   "page": 54,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A.",
+   "choice": "depreciation",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "depreciation",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ]
+   ],
+   "tokens": 812
+  },
+  {
+   "label": "Altri",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "* Gare coppa Italia",
+   "lado": null,
+   "page": 71,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## CONTO ECONOMICO / ### Valore della produzione",
+   "choice": "competition_bonus",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "competition_bonus",
+     0.6900000000000001
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "match_organisation_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1292
+  },
+  {
+   "label": "* Gare campionato",
+   "lado": null,
+   "page": 71,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## CONTO ECONOMICO / ### Valore della produzione",
+   "choice": "matchday_competition",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "matchday_competition",
+     0.49
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ],
+    [
+     "competition_bonus",
+     0.14
+    ]
+   ],
+   "tokens": 1292
+  },
+  {
+   "label": "Per imposte",
+   "lado": "expense",
+   "page": 64,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## Fondi per rischi e oneri",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 824
+  },
+  {
+   "label": "* Gare coppe internazionali",
+   "lado": null,
+   "page": 71,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## CONTO ECONOMICO / ### Valore della produzione",
+   "choice": "competition_bonus",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "competition_bonus",
+     0.67
+    ],
+    [
+     "other_income",
+     0.12
+    ],
+    [
+     "match_organisation_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "* Altre gare",
+   "lado": null,
+   "page": 71,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## CONTO ECONOMICO / ### Valore della produzione",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.47000000000000003
+    ],
+    [
+     "matchday_competition",
+     0.33
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "* Conguaglio abbonamenti da altre società",
+   "lado": null,
+   "page": 71,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## CONTO ECONOMICO / ### Valore della produzione",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "season_tickets",
+     0.36
+    ],
+    [
+     "member_dues",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1297
+  },
+  {
+   "label": "Proventi pubblicitari",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 858
+  },
+  {
+   "label": "Proventi da sponsorizzazioni",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 861
+  },
+  {
+   "label": "* Proventi televisivi",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "broadcasting",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 858
+  },
+  {
+   "label": "Contributi in conto esercizio",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ]
+   ],
+   "tokens": 860
+  },
+  {
+   "label": "Abbonamenti",
+   "lado": null,
+   "page": 71,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ## CONTO ECONOMICO / ### Valore della produzione",
+   "choice": "season_tickets",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "season_tickets",
+     0.98
+    ],
+    [
+     "member_dues",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "* Percentuale su diritti televisivi da squadre ospitanti",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "broadcasting",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "broadcasting",
+     0.88
+    ],
+    [
+     "other_income",
+     0.12
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 867
+  },
+  {
+   "label": "Proventi commerciali e royalties",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "* Proventi televisivi da partecipazione competizioni U.E.F.A.",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "broadcasting",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "broadcasting",
+     0.97
+    ],
+    [
+     "competition_bonus",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 869
+  },
+  {
+   "label": "* Proventi editoriali",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 858
+  },
+  {
+   "label": "* Proventi telefonici",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 858
+  },
+  {
+   "label": "* Proventi radiofonici",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "broadcasting",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "broadcasting",
+     0.63
+    ],
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 858
+  },
+  {
+   "label": "* Proventi di sfruttamento diritti d’immagine tesserati",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "sponsorship_commercial",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 868
+  },
+  {
+   "label": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "player_sales",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "player_sales",
+     0.73
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 874
+  },
+  {
+   "label": "* Premi di valorizzazione calciatori",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "player_sales",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "player_sales",
+     0.49
+    ],
+    [
+     "other_income",
+     0.49
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ]
+   ],
+   "tokens": 861
+  },
+  {
+   "label": "* Concessioni varie",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "stadium_other",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "stadium_other",
+     0.61
+    ],
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 856
+  },
+  {
+   "label": "Ricavi da cessione temporanea prestazioni calciatori (prestiti)",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "player_sales",
+     0.22
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 869
+  },
+  {
+   "label": "* Ricavi per diritti di opzione",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "player_sales",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "player_sales",
+     0.46
+    ],
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "broadcasting",
+     0.09
+    ]
+   ],
+   "tokens": 907
+  },
+  {
+   "label": "* Indennità di formazione F.I.F.A.",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "youth_football",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "youth_football",
+     0.88
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 862
+  },
+  {
+   "label": "* Contributo di solidarietà F.I.F.A.",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ]
+   ],
+   "tokens": 864
+  },
+  {
+   "label": "* Premi di preparazione *ex* art. 96 N.O.I.F.",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "competition_bonus",
+     0.06
+    ],
+    [
+     "youth_football",
+     0.01
+    ]
+   ],
+   "tokens": 923
+  },
+  {
+   "label": "Altri ricavi e proventi",
+   "lado": "revenue",
+   "page": 72,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Altri ricavi e proventi",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 860
+  },
+  {
+   "label": "Costi per tesserati",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "match_organisation_expense",
+     0.21
+    ]
+   ],
+   "tokens": 807
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.8
+    ],
+    [
+     "match_organisation_expense",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 807
+  },
+  {
+   "label": "Costi specifici tecnici",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "match_organisation_expense",
+     0.06
+    ]
+   ],
+   "tokens": 808
+  },
+  {
+   "label": "Costi vitto, alloggio, locomozione gare",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 815
+  },
+  {
+   "label": "Servizio biglietteria, controllo ingressi",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "choice": "match_organisation_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 812
+  },
+  {
+   "label": "Assicurative e previdenziali",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "choice": "admin_general_expense",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "wages_squad",
+     0.14
+    ]
+   ],
+   "tokens": 809
+  },
+  {
+   "label": "Salari e stipendi",
+   "lado": "expense",
+   "page": 77,
+   "section": "# Costi per il personale",
+   "choice": "wages_squad",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "wages_squad",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 790
+  },
+  {
+   "label": "Amministrative, pubblicitarie e generali",
+   "lado": "expense",
+   "page": 75,
+   "section": "### Costi per acquisto materiale di consumo e di merci / ### Costi per prestazioni di servizi",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 813
+  },
+  {
+   "label": "Oneri sociali",
+   "lado": "expense",
+   "page": 77,
+   "section": "# Costi per il personale",
+   "choice": "wages_squad",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "wages_squad",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 790
+  },
+  {
+   "label": "Spese varie organizzazione gare",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 826
+  },
+  {
+   "label": "Trattamento di Fine Rapporto",
+   "lado": "expense",
+   "page": 77,
+   "section": "# Costi per il personale",
+   "choice": "wages_squad",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "wages_squad",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 792
+  },
+  {
+   "label": "Spese per gare ufficiali",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 825
+  },
+  {
+   "label": "Tasse iscrizioni gare",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "choice": "match_organisation_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "Costi per acquisizione temporanea prestazioni calciatori",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "lump_football_operations_expense",
+     0.38
+    ],
+    [
+     "player_amortisation",
+     0.1
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Oneri specifici verso squadre ospitate",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "choice": "match_organisation_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "* Costi valorizzazione calciatori",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "choice": "player_amortisation",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "player_amortisation",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "player_impairment",
+     0.2
+    ]
+   ],
+   "tokens": 827
+  },
+  {
+   "label": "Minusvalenze da cessione diritti pluriennali alle prestazioni dei calciatori",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "choice": "other_expenses",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "exceptional_items",
+     0.32
+    ],
+    [
+     "player_impairment",
+     0.16
+    ]
+   ],
+   "tokens": 839
+  },
+  {
+   "label": "* Contributo di solidarietà",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 826
+  },
+  {
+   "label": "* Premio alla carriera ex art. 99 bis N.O.I.F.",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "exceptional_items",
+     0.16
+    ],
+    [
+     "wages_squad",
+     0.14
+    ]
+   ],
+   "tokens": 834
+  },
+  {
+   "label": "* Oneri lega",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "match_organisation_expense",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 822
+  },
+  {
+   "label": "* Spese, ammende e multe gare",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "match_organisation_expense",
+     0.39
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 826
+  },
+  {
+   "label": "* Oneri tributari indiretti",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 826
+  },
+  {
+   "label": "* Altri",
+   "lado": "expense",
+   "page": 79,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / ### Oneri diversi di gestione",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 820
+  },
+  {
+   "label": "Interessi attivi bancari",
+   "lado": null,
+   "page": 82,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Proventi e oneri finanziari",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1293
+  },
+  {
+   "label": "Interessi attivi su finanziamenti",
+   "lado": null,
+   "page": 82,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Proventi e oneri finanziari",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1295
+  },
+  {
+   "label": "Altri interessi attivi",
+   "lado": null,
+   "page": 82,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Proventi e oneri finanziari",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1292
+  },
+  {
+   "label": "Proventi diversi dai precedenti",
+   "lado": null,
+   "page": 82,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Proventi e oneri finanziari",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Proventi da compartecipazione ex art. 102 bis N.O.I.F.",
+   "lado": null,
+   "page": 82,
+   "section": "GENOA^{}[] GRUPPO AND FOOTBALL CLUB / GRUPPO GENOA CRICKET AND FOOTBALL CLUB S.P.A. / # Proventi e oneri finanziari",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "broadcasting",
+     0.18000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1360
+  }
+ ]
+}

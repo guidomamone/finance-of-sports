@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Wolverhampton Wanderers/wolves-full-accounts-2023-24.md",
+ "generado": "2026-10-02T00:21:59.845Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000",
+ "caja": {
+  "lineas": [
+   981
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance solo muestra 'Creditors' corrientes (L984-985) y no corrientes (L988-989) como totales que mezclan deuda financiera con cuentas comerciales y de transferencias; el desglose de préstamos está en las notas 16 y 17, que no están incluidas, por lo que no se elige ninguna línea de deuda. La línea de caja (L981) está dañada por OCR: el importe no es legible."
+}

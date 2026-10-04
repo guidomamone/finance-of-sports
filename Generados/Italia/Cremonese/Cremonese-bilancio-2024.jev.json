@@ -1,0 +1,351 @@
+{
+ "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2024.md",
+ "generatedAt": "2026-09-30T04:30:22.017Z",
+ "rubros": [
+  {
+   "label": "contributi in conto esercizio",
+   "lado": "revenue",
+   "page": 4,
+   "section": "Differenza da arrotondamento all'unità di Euro                                    (1) / 30/06/2024     30/06/2023 / Conto economico / A) Valore della produzione / 5) altri ricavi e proventi",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ]
+   ],
+   "tokens": 886
+  },
+  {
+   "label": "altri",
+   "lado": "expense",
+   "page": 5,
+   "section": "17) interessi e altri oneri finanziari",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "8) per godimento di beni di terzi",
+   "lado": "expense",
+   "page": 4,
+   "section": "B) Costi della produzione",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "expense",
+   "page": 4,
+   "section": "B) Costi della produzione",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "7) per servizi",
+   "lado": "expense",
+   "page": 4,
+   "section": "B) Costi della produzione",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 790
+  },
+  {
+   "label": "Risultato prima delle imposte (A - B + - C + - D)",
+   "lado": "expense",
+   "page": 5,
+   "section": "17) interessi e altri oneri finanziari",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 811
+  },
+  {
+   "label": "a) ricavi da gare",
+   "lado": null,
+   "page": 11,
+   "section": "U.S. CREMONESE S.P.A. / CONTO ECONOMICO AL 30.06.2024 / A) VALORE DELLA PRODUZIONE",
+   "choice": "matchday_competition",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "matchday_competition",
+     0.65
+    ],
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "17-bis) utili e perdite su cambi",
+   "lado": "expense",
+   "page": 5,
+   "section": "17) interessi e altri oneri finanziari",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ]
+   ],
+   "tokens": 806
+  },
+  {
+   "label": "c) trattamento di fine rapporto:",
+   "lado": "expense",
+   "page": 12,
+   "section": "B) COSTI DELLA PRODUZIONE",
+   "choice": "wages_squad",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "wages_squad",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "d) altri oneri finanziari",
+   "lado": null,
+   "page": 13,
+   "section": "C) PROVENTI E ONERI FINANZIARI",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "- proventi diversi da trasferimento diritti calciatori",
+   "lado": "revenue",
+   "page": 11,
+   "section": "h) altri proventi da trasferimento diritti calciatori",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "player_sales",
+     0.23
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 840
+  },
+  {
+   "label": "e) altri costi:",
+   "lado": "expense",
+   "page": 12,
+   "section": "B) COSTI DELLA PRODUZIONE",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "17-bis) Utile e perdite su cambi:",
+   "lado": null,
+   "page": 13,
+   "section": "C) PROVENTI E ONERI FINANZIARI",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "b) abbonamenti",
+   "lado": null,
+   "page": 11,
+   "section": "U.S. CREMONESE S.P.A. / CONTO ECONOMICO AL 30.06.2024 / A) VALORE DELLA PRODUZIONE",
+   "choice": "season_tickets",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "season_tickets",
+     0.99
+    ],
+    [
+     "member_dues",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1290
+  },
+  {
+   "label": "- premi e/o indennizzi attivi ex art 103, comma 3, NOIF",
+   "lado": "revenue",
+   "page": 11,
+   "section": "h) altri proventi da trasferimento diritti calciatori",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "player_sales",
+     0.05
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ]
+   ],
+   "tokens": 902
+  }
+ ]
+}

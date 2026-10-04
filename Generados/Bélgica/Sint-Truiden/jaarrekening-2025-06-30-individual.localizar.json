@@ -1,0 +1,28 @@
+{
+ "pdf": "Clubes/Bélgica/Sint-Truiden/jaarrekening-2025-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Sint-Truiden/jaarrekening-2025-06-30-individual.md",
+ "cierre": "2025-06-30",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:56:14.259Z",
+ "paginas_resultados": [
+  9,
+  10
+ ],
+ "paginas_notas_ingresos": [
+  25,
+  27,
+  28
+ ],
+ "paginas_notas_gastos": [
+  25,
+  26,
+  27,
+  28
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "2025 EUR (encabezado del formulario NBB VOL; importes como 8.020.436 sin indicación de miles; consistentes con 3.619.642,44 EUR en la resultaatverwerking)",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "perimetro": "individual",
+ "observaciones": "Cuentas anuales individuales (modelo completo VOL de la Banque Nationale de Belgique). Resultatenrekening en págs. 9-10 (columnas 'Boekjaar' y 'Vorig boekjaar'). Notas 6.10 (bedrijfsresultaten), 6.11 (financiële resultaten) y 6.12 (niet-recurrente opbrengsten en kosten) desglosan ingresos y gastos. El jaarverslag (págs. 41-44) incluye una tabla comparativa con resultatenrekening en pág. 43 con columnas 30/06/2025 y 30/06/2024, en euros con céntimos, que podría servir de verificación."
+}

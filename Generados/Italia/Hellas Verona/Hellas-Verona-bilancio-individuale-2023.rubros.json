@@ -1,0 +1,246 @@
+{
+ "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.md",
+ "pdf": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-individuale-2023.pdf",
+ "club": "hellas-verona",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:04:51.384Z",
+ "tieOuts": {
+  "cierran": 10,
+  "noCierran": 20
+ },
+ "warnings": [
+  "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "14 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 22,
+  "notasUsadas": []
+ },
+ "ladoConocido": 22,
+ "rubros": [
+  {
+   "label": "a) Oneri da organizzazione competizioni",
+   "lado": "expense",
+   "page": 7,
+   "section": "25.281.990                21.062.925 / Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e / merci / 14) Oneri diversi di gestione",
+   "values": [
+    1871.434
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "b) Costi per acquisizione temporanea prestazioni calciatori",
+   "lado": "expense",
+   "page": 7,
+   "section": "25.281.990                21.062.925 / Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e / merci / 14) Oneri diversi di gestione",
+   "values": [
+    547
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "c) Minusvalenze da cessione diritti prestazioni calciatori",
+   "lado": "expense",
+   "page": 7,
+   "section": "25.281.990                21.062.925 / Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e / merci / 14) Oneri diversi di gestione",
+   "values": [
+    699.186
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "d) Altri oneri da trasferimento diritti calciatori",
+   "lado": "expense",
+   "page": 7,
+   "section": "25.281.990                21.062.925 / Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e / merci / 14) Oneri diversi di gestione",
+   "values": [
+    2817.236
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "di cui premi e/o indennizzi attivi ex art.103, c.3, NOIF",
+   "lado": "expense",
+   "page": 7,
+   "section": "25.281.990                21.062.925 / Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e / merci / 14) Oneri diversi di gestione",
+   "values": [
+    120.596
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "di cui costi diversi da trasferimento calciatori",
+   "lado": "expense",
+   "page": 7,
+   "section": "25.281.990                21.062.925 / Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e / merci / 14) Oneri diversi di gestione",
+   "values": [
+    2696.64
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "e) Altri oneri diversi di gestione",
+   "lado": "expense",
+   "page": 7,
+   "section": "25.281.990                21.062.925 / Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e / merci / 14) Oneri diversi di gestione",
+   "values": [
+    2220.113
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Proventi da cessione diritti audiovisivi",
+   "lado": "revenue",
+   "page": 43,
+   "section": "A.5) Altri ricavi e proventi / In dettaglio gli altri ricavi e proventi risultano composti come segue: / Altri ricavi e proventi                           Bilancio                  Bilancio / Variazione / Euro/000                                   30.06.2023                30.06.2022",
+   "values": [
+    34.134
+   ],
+   "origen": "estado 52"
+  },
+  {
+   "label": "Ricavi da cessione temporanea prestazione calciatori 8.145",
+   "lado": "revenue",
+   "page": 43,
+   "section": "A.5) Altri ricavi e proventi / In dettaglio gli altri ricavi e proventi risultano composti come segue: / Altri ricavi e proventi                           Bilancio                  Bilancio / Variazione / Euro/000                                   30.06.2023                30.06.2022",
+   "values": [
+    7.855
+   ],
+   "origen": "estado 52"
+  },
+  {
+   "label": "Plusvalenze da cessione diritti pluriennali prestazioni calciatori",
+   "lado": "revenue",
+   "page": 43,
+   "section": "A.5) Altri ricavi e proventi / In dettaglio gli altri ricavi e proventi risultano composti come segue: / Altri ricavi e proventi                           Bilancio                  Bilancio / Variazione / Euro/000                                   30.06.2023                30.06.2022",
+   "values": [
+    30.912
+   ],
+   "origen": "estado 52"
+  },
+  {
+   "label": "Altri proventi da gestione calciatori",
+   "lado": "revenue",
+   "page": 43,
+   "section": "A.5) Altri ricavi e proventi / In dettaglio gli altri ricavi e proventi risultano composti come segue: / Altri ricavi e proventi                           Bilancio                  Bilancio / Variazione / Euro/000                                   30.06.2023                30.06.2022",
+   "values": [
+    4.94
+   ],
+   "origen": "estado 52"
+  },
+  {
+   "label": "Ricavi e proventi diversi",
+   "lado": "revenue",
+   "page": 43,
+   "section": "A.5) Altri ricavi e proventi / In dettaglio gli altri ricavi e proventi risultano composti come segue: / Altri ricavi e proventi                           Bilancio                  Bilancio / Variazione / Euro/000                                   30.06.2023                30.06.2022",
+   "values": [
+    2.149
+   ],
+   "origen": "estado 52"
+  },
+  {
+   "label": "Euro/000",
+   "lado": "expense",
+   "page": 46,
+   "section": "Relativamente al personale tesserato il costo è così suddiviso: / Costo del personale tesserato                           Bilancio        Bilancio / Variazione",
+   "values": [
+    0.03006
+   ],
+   "origen": "estado 59"
+  },
+  {
+   "label": "Compensi contrattuali calciatori",
+   "lado": "expense",
+   "page": 46,
+   "section": "Relativamente al personale tesserato il costo è così suddiviso: / Costo del personale tesserato                           Bilancio        Bilancio / Variazione",
+   "values": [
+    26.986
+   ],
+   "origen": "estado 59"
+  },
+  {
+   "label": "Quota variabile retribuzione legata ai risultati sportivi",
+   "lado": "expense",
+   "page": 46,
+   "section": "Relativamente al personale tesserato il costo è così suddiviso: / Costo del personale tesserato                           Bilancio        Bilancio / Variazione",
+   "values": [
+    12.47
+   ],
+   "origen": "estado 59"
+  },
+  {
+   "label": "Compensi contrattuali allenatori, istruttori, tecnici",
+   "lado": "expense",
+   "page": 46,
+   "section": "Relativamente al personale tesserato il costo è così suddiviso: / Costo del personale tesserato                           Bilancio        Bilancio / Variazione",
+   "values": [
+    6.482
+   ],
+   "origen": "estado 59"
+  },
+  {
+   "label": "a) Ricavi da gare",
+   "lado": "revenue",
+   "page": 7,
+   "section": "A         VALORE DELLA PRODUZIONE",
+   "values": [
+    2502.149
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "b) Abbonamenti",
+   "lado": "revenue",
+   "page": 7,
+   "section": "A         VALORE DELLA PRODUZIONE",
+   "values": [
+    1953.526
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "c) Corrispettivi Store",
+   "lado": "revenue",
+   "page": 7,
+   "section": "A         VALORE DELLA PRODUZIONE",
+   "values": [
+    1473.301
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "expense",
+   "page": 7,
+   "section": "B         COSTI DELLA PRODUZIONE",
+   "values": [
+    1998.446
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "7) Per servizi",
+   "lado": "expense",
+   "page": 7,
+   "section": "B         COSTI DELLA PRODUZIONE",
+   "values": [
+    14994.929
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "8) Per godimento di beni di terzi",
+   "lado": "expense",
+   "page": 7,
+   "section": "B         COSTI DELLA PRODUZIONE",
+   "values": [
+    2201.576
+   ],
+   "origen": "estado 26"
+  }
+ ]
+}

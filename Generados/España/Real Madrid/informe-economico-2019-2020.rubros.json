@@ -1,0 +1,510 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2019-2020.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2019-2020.pdf",
+  "club": "realmadrid",
+  "year": 2020,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:01:09.869Z",
+  "tieOuts": {
+    "cierran": 4,
+    "noCierran": 26
+  },
+  "warnings": [
+    "8 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "18 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "12 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 44,
+    "notasUsadas": []
+  },
+  "ladoConocido": 31,
+  "rubros": [
+    {
+      "label": "Gastos personal cantera fútbol",
+      "lado": "expense",
+      "page": 68,
+      "section": "CUMPLE        CUMPLE",
+      "values": [
+        18.3
+      ],
+      "origen": "estado 74",
+      "glosa": "Gastos personal cantera fútbol"
+    },
+    {
+      "label": "Deudas con entidades de crédito l/p",
+      "lado": "expense",
+      "page": 68,
+      "section": "CUMPLE        CUMPLE",
+      "values": [
+        152.649
+      ],
+      "origen": "estado 74",
+      "glosa": "Deudas con entidades de crédito l/p"
+    },
+    {
+      "label": "Gastos personal baloncesto",
+      "lado": "expense",
+      "page": 68,
+      "section": "CUMPLE        CUMPLE",
+      "values": [
+        32.626
+      ],
+      "origen": "estado 74",
+      "glosa": "Gastos personal baloncesto"
+    },
+    {
+      "label": "Deudas con entidades deportivas l/p",
+      "lado": "expense",
+      "page": 68,
+      "section": "CUMPLE        CUMPLE",
+      "values": [
+        61.541
+      ],
+      "origen": "estado 74",
+      "glosa": "Deudas con entidades deportivas l/p"
+    },
+    {
+      "label": "Gastos personal no deportivo fútbol y estructura no asociado primera plantilla de fútbol 49.626 42.989 Otras deudas l/p",
+      "lado": "expense",
+      "page": 68,
+      "section": "CUMPLE        CUMPLE",
+      "values": [
+        114.565
+      ],
+      "origen": "estado 74",
+      "glosa": "Gastos personal no deportivo fútbol y estructura no asociado primera plantilla de fútbol 49.626 42.989 Otras deudas l/p"
+    },
+    {
+      "label": "Retenciones y pagos a cuenta a devolver",
+      "lado": null,
+      "page": 49,
+      "section": "El importe de los gastos financieros registrados en la cuenta de / pérdidas y ganancias del ejercicio 2019/2020 correspondiente a        16. SITUACIÓN FISCAL / la actualización de los anticipos recibidos asciende a 80 miles de / Hacienda Pública, deudor por IVA y asimilados                       127            - / facturado por el Club por acuerdos sobre los derechos de",
+      "values": [
+        12.774
+      ],
+      "origen": "estado 38",
+      "glosa": "Retenciones y pagos a cuenta a devolver"
+    },
+    {
+      "label": "explotación audiovisual con anterioridad a 30 de junio de Activos por impuesto corriente (nota 8.2)",
+      "lado": "expense",
+      "page": 49,
+      "section": "El importe de los gastos financieros registrados en la cuenta de / pérdidas y ganancias del ejercicio 2019/2020 correspondiente a        16. SITUACIÓN FISCAL / la actualización de los anticipos recibidos asciende a 80 miles de / Hacienda Pública, deudor por IVA y asimilados                       127            - / facturado por el Club por acuerdos sobre los derechos de",
+      "values": [
+        12.774
+      ],
+      "origen": "estado 38",
+      "glosa": "explotación audiovisual con anterioridad a 30 de junio de Activos por impuesto corriente (nota 8.2)"
+    },
+    {
+      "label": "2020 y cuyo devengo corresponde al ejercicio",
+      "lado": null,
+      "page": 49,
+      "section": "El importe de los gastos financieros registrados en la cuenta de / pérdidas y ganancias del ejercicio 2019/2020 correspondiente a        16. SITUACIÓN FISCAL / la actualización de los anticipos recibidos asciende a 80 miles de / Hacienda Pública, deudor por IVA y asimilados                       127            - / facturado por el Club por acuerdos sobre los derechos de",
+      "values": [
+        20202.021
+      ],
+      "origen": "estado 38",
+      "glosa": "2020 y cuyo devengo corresponde al ejercicio"
+    },
+    {
+      "label": "El saldo a 30 de junio 2020 se corresponde con la parte Activos por diferencias temporarias deducibles",
+      "lado": "revenue",
+      "page": 49,
+      "section": "El importe de los gastos financieros registrados en la cuenta de / pérdidas y ganancias del ejercicio 2019/2020 correspondiente a        16. SITUACIÓN FISCAL / la actualización de los anticipos recibidos asciende a 80 miles de / Hacienda Pública, deudor por IVA y asimilados                       127            - / facturado por el Club por acuerdos sobre los derechos de",
+      "values": [
+        12.5
+      ],
+      "origen": "estado 38",
+      "glosa": "El saldo a 30 de junio 2020 se corresponde con la parte Activos por diferencias temporarias deducibles"
+    },
+    {
+      "label": "Importe neto de la cifra de negocios 692.546 755.128 748.042 Coste de venta/materiales",
+      "lado": "expense",
+      "page": 67,
+      "section": "",
+      "values": [
+        21.543
+      ],
+      "origen": "estado 66",
+      "glosa": "Importe neto de la cifra de negocios 692.546 755.128 748.042 Coste de venta/materiales"
+    },
+    {
+      "label": "Otros ingresos de explotación 22.157 1.947 1.704 Gastos en retribuciones a empleados",
+      "lado": null,
+      "page": 67,
+      "section": "",
+      "values": [
+        411.043
+      ],
+      "origen": "estado 66",
+      "glosa": "Otros ingresos de explotación 22.157 1.947 1.704 Gastos en retribuciones a empleados"
+    },
+    {
+      "label": "Imputación de subvenciones 192 192 192 Otros gastos de explotación",
+      "lado": null,
+      "page": 67,
+      "section": "",
+      "values": [
+        232.2
+      ],
+      "origen": "estado 66",
+      "glosa": "Imputación de subvenciones 192 192 192 Otros gastos de explotación"
+    },
+    {
+      "label": "Excesos de provisiones - - 1.000 Amortización del inmovilizado",
+      "lado": null,
+      "page": 67,
+      "section": "",
+      "values": [
+        176.503
+      ],
+      "origen": "estado 66",
+      "glosa": "Excesos de provisiones - - 1.000 Amortización del inmovilizado"
+    },
+    {
+      "label": "Ingresos financieros 4.072 795 1.004 Costes financieros y dividendos",
+      "lado": null,
+      "page": 67,
+      "section": "",
+      "values": [
+        2.619
+      ],
+      "origen": "estado 67",
+      "glosa": "Ingresos financieros 4.072 795 1.004 Costes financieros y dividendos"
+    },
+    {
+      "label": "Menos: Ingresos actividades cantera (37) (66) (76) Gastos actividades desarrollo cantera no identificables",
+      "lado": null,
+      "page": 67,
+      "section": "",
+      "values": [
+        -7.257
+      ],
+      "origen": "estado 67",
+      "glosa": "Menos: Ingresos actividades cantera (37) (66) (76) Gastos actividades desarrollo cantera no identificables"
+    },
+    {
+      "label": "Menos: Ingresos baloncesto (14.463) (15.970) (17.437) Gastos en actividades de desarrollo comunitario",
+      "lado": null,
+      "page": 67,
+      "section": "",
+      "values": [
+        -5.873
+      ],
+      "origen": "estado 67",
+      "glosa": "Menos: Ingresos baloncesto (14.463) (15.970) (17.437) Gastos en actividades de desarrollo comunitario"
+    },
+    {
+      "label": "Menos: Ingresos enajenación inmovilizado material/inmobiliario (13) - (202) Amortización/desvalorización inmovilizado inmaterial no deportivo, material e inmobiliario",
+      "lado": "revenue",
+      "page": 67,
+      "section": "",
+      "values": [
+        -17.771
+      ],
+      "origen": "estado 67",
+      "glosa": "Menos: Ingresos enajenación inmovilizado material/inmobiliario (13) - (202) Amortización/desvalorización inmovilizado inmaterial no deportivo, material e inmobiliario"
+    },
+    {
+      "label": "Ingresos de Socios y Estadio 123.351 4.140 127.491 Ingresos de Socios y Estadio",
+      "lado": "revenue",
+      "page": 70,
+      "section": "",
+      "values": [
+        161.335
+      ],
+      "origen": "estado 80",
+      "glosa": "Ingresos de Socios y Estadio 123.351 4.140 127.491 Ingresos de Socios y Estadio"
+    },
+    {
+      "label": "Ingresos de Amistosos y Competiciones Internacionales 104.706 868 105.574 Ingresos de Amistosos y Competiciones Internacionales",
+      "lado": "revenue",
+      "page": 70,
+      "section": "",
+      "values": [
+        109.685
+      ],
+      "origen": "estado 80",
+      "glosa": "Ingresos de Amistosos y Competiciones Internacionales 104.706 868 105.574 Ingresos de Amistosos y Competiciones Internacionales"
+    },
+    {
+      "label": "Ingresos de Retransmisión 145.828 2.742 148.570 Ingresos de Retransmisión",
+      "lado": "revenue",
+      "page": 70,
+      "section": "",
+      "values": [
+        179.828
+      ],
+      "origen": "estado 80",
+      "glosa": "Ingresos de Retransmisión 145.828 2.742 148.570 Ingresos de Retransmisión"
+    },
+    {
+      "label": "Ingresos de Marketing 326.547 6.713 333.260 Ingresos de Marketing",
+      "lado": "revenue",
+      "page": 70,
+      "section": "",
+      "values": [
+        371.283
+      ],
+      "origen": "estado 80",
+      "glosa": "Ingresos de Marketing 326.547 6.713 333.260 Ingresos de Marketing"
+    },
+    {
+      "label": "Gastos de Aprovisionamientos (20.999) (544) (21.543) Gastos de Aprovisionamientos",
+      "lado": "expense",
+      "page": 70,
+      "section": "",
+      "values": [
+        -29.268
+      ],
+      "origen": "estado 81",
+      "glosa": "Gastos de Aprovisionamientos (20.999) (544) (21.543) Gastos de Aprovisionamientos"
+    },
+    {
+      "label": "Gastos de Personal Deportivo y no Deportivo (378.415) (32.628) (411.043) Gastos de Personal Deportivo y No Deportivo",
+      "lado": "expense",
+      "page": 70,
+      "section": "",
+      "values": [
+        -456.469
+      ],
+      "origen": "estado 81",
+      "glosa": "Gastos de Personal Deportivo y no Deportivo (378.415) (32.628) (411.043) Gastos de Personal Deportivo y No Deportivo"
+    },
+    {
+      "label": "Gastos de Operaciones (208.872) (6.599) (215.471) Gastos de Operaciones",
+      "lado": "expense",
+      "page": 70,
+      "section": "",
+      "values": [
+        -255.365
+      ],
+      "origen": "estado 81",
+      "glosa": "Gastos de Operaciones (208.872) (6.599) (215.471) Gastos de Operaciones"
+    },
+    {
+      "label": "Provisión de insolvencia y de riesgos y gastos (16.729) - (16.729) Provisiones de Insolvencia y de Riesgos y Gastos -",
+      "lado": "expense",
+      "page": 70,
+      "section": "",
+      "values": [
+        -16.729
+      ],
+      "origen": "estado 81",
+      "glosa": "Provisión de insolvencia y de riesgos y gastos (16.729) - (16.729) Provisiones de Insolvencia y de Riesgos y Gastos -"
+    },
+    {
+      "label": "Ingresos Financieros",
+      "lado": "revenue",
+      "page": 70,
+      "section": "",
+      "values": [
+        4.072
+      ],
+      "origen": "estado 83",
+      "glosa": "Ingresos Financieros"
+    },
+    {
+      "label": "Gastos Financieros por intereses de préstamos, gastos de avales y otros gastos financieros",
+      "lado": "expense",
+      "page": 70,
+      "section": "",
+      "values": [
+        -1.471
+      ],
+      "origen": "estado 83",
+      "glosa": "Gastos Financieros por intereses de préstamos, gastos de avales y otros gastos financieros"
+    },
+    {
+      "label": "Ingresos Financieros",
+      "lado": "revenue",
+      "page": 70,
+      "section": "",
+      "values": [
+        2.815
+      ],
+      "origen": "estado 83",
+      "glosa": "Ingresos Financieros"
+    },
+    {
+      "label": "Impuesto corriente -",
+      "lado": "expense",
+      "page": 51,
+      "section": "Ingresos y gastos   Variación de impuestos diferidos / Ejercicio 2018/2019 / Cuenta de pérdidas   directamente imputados / Cuenta de pérdidas   directamente imputados / 67.460                          -",
+      "values": [
+        -17.976
+      ],
+      "origen": "estado 41",
+      "glosa": "Impuesto corriente -"
+    },
+    {
+      "label": "Reserva de Capitalización corriente (779) - Retenciones",
+      "lado": null,
+      "page": 51,
+      "section": "Ingresos y gastos   Variación de impuestos diferidos / Ejercicio 2018/2019 / Cuenta de pérdidas   directamente imputados / Cuenta de pérdidas   directamente imputados / 67.460                          -",
+      "values": [
+        1.804
+      ],
+      "origen": "estado 41",
+      "glosa": "Reserva de Capitalización corriente (779) - Retenciones"
+    },
+    {
+      "label": "Pagos a cuenta",
+      "lado": null,
+      "page": 51,
+      "section": "Ingresos y gastos   Variación de impuestos diferidos / Ejercicio 2018/2019 / Cuenta de pérdidas   directamente imputados / Cuenta de pérdidas   directamente imputados / 67.460                          -",
+      "values": [
+        10.97
+      ],
+      "origen": "estado 41",
+      "glosa": "Pagos a cuenta"
+    },
+    {
+      "label": "que la pandemia ha producido en los ingresos y gastos relevan- Ingresos relevantes",
+      "lado": null,
+      "page": 66,
+      "section": "de acuerdo con el artículo 41.4 b) de la Ley del Deporte y en los / la LFP.                                                             Económico de la LFP / establecido una serie de normas de supervisión y control econó- / El resultado total del punto de equilibrio será la suma de los resul- / De acuerdo a estas modificaciones, el cálculo del punto de equi-",
+      "values": [
+        807.855
+      ],
+      "origen": "estado 65",
+      "glosa": "que la pandemia ha producido en los ingresos y gastos relevan- Ingresos relevantes"
+    },
+    {
+      "label": "tes de los clubs. Gastos relevantes",
+      "lado": "expense",
+      "page": 66,
+      "section": "de acuerdo con el artículo 41.4 b) de la Ley del Deporte y en los / la LFP.                                                             Económico de la LFP / establecido una serie de normas de supervisión y control econó- / El resultado total del punto de equilibrio será la suma de los resul- / De acuerdo a estas modificaciones, el cálculo del punto de equi-",
+      "values": [
+        749.289
+      ],
+      "origen": "estado 65",
+      "glosa": "tes de los clubs. Gastos relevantes"
+    },
+    {
+      "label": "Deudas con entidades deportivas c/p",
+      "lado": null,
+      "page": 68,
+      "section": "",
+      "values": [
+        93.44
+      ],
+      "origen": "estado 75",
+      "glosa": "Deudas con entidades deportivas c/p"
+    },
+    {
+      "label": "Otras deudas c/p",
+      "lado": null,
+      "page": 68,
+      "section": "",
+      "values": [
+        57.783
+      ],
+      "origen": "estado 75",
+      "glosa": "Otras deudas c/p"
+    },
+    {
+      "label": "Impuestos",
+      "lado": "expense",
+      "page": 70,
+      "section": "",
+      "values": [
+        -11.216
+      ],
+      "origen": "estado 84",
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Jugadores y técnicos 1º equipo fútbol 301.738 1.625 - 4.165 621 317 308.466 Importe plantilla inscribible LNFP 283.396 1.911 8.472 4.304",
+      "lado": "expense",
+      "page": 59,
+      "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2019/2020",
+      "values": [
+        1.174
+      ],
+      "origen": "estado 49",
+      "glosa": "Jugadores y técnicos 1º equipo fútbol 301.738 1.625 - 4.165 621 317 308.466 Importe plantilla inscribible LNFP 283.396 1.911 8.472 4.304"
+    },
+    {
+      "label": "Jugadores y técnicos 2º equipo fútbol 7.372 - 1.561 - 276 - 9.209 Importe plantilla no inscribible LNFP 37.915 1.846",
+      "lado": "expense",
+      "page": 59,
+      "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2019/2020",
+      "values": [
+        2.47
+      ],
+      "origen": "estado 49",
+      "glosa": "Jugadores y técnicos 2º equipo fútbol 7.372 - 1.561 - 276 - 9.209 Importe plantilla no inscribible LNFP 37.915 1.846"
+    },
+    {
+      "label": "Jugadores y técnicos categorías inferiores fútbol 5.945 - 200 -",
+      "lado": "expense",
+      "page": 59,
+      "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2019/2020",
+      "values": [
+        1.281
+      ],
+      "origen": "estado 49",
+      "glosa": "Jugadores y técnicos categorías inferiores fútbol 5.945 - 200 -"
+    },
+    {
+      "label": "Personal no deportivo 45.016 - 12 - 5.378 1.245 51.651 Total gasto de personal plantilla deportiva",
+      "lado": "expense",
+      "page": 59,
+      "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2019/2020",
+      "values": [
+        321.311
+      ],
+      "origen": "estado 49",
+      "glosa": "Personal no deportivo 45.016 - 12 - 5.378 1.245 51.651 Total gasto de personal plantilla deportiva"
+    },
+    {
+      "label": "Jugadores y técnicos 1º equipo fútbol 283.396 1.911 8.472 4.304",
+      "lado": "expense",
+      "page": 59,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        1.174
+      ],
+      "origen": "estado 52",
+      "glosa": "Jugadores y técnicos 1º equipo fútbol 283.396 1.911 8.472 4.304"
+    },
+    {
+      "label": "Jugadores y técnicos 2º equipo fútbol 8.368 7 - - 319 -",
+      "lado": "expense",
+      "page": 59,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        8.694
+      ],
+      "origen": "estado 52",
+      "glosa": "Jugadores y técnicos 2º equipo fútbol 8.368 7 - - 319 -"
+    },
+    {
+      "label": "Jugadores y técnicos categorías inferiores fútbol 5.045 - 490 -",
+      "lado": "expense",
+      "page": 59,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        1.11
+      ],
+      "origen": "estado 52",
+      "glosa": "Jugadores y técnicos categorías inferiores fútbol 5.045 - 490 -"
+    },
+    {
+      "label": "Personal no deportivo 37.227 - 1.901 -",
+      "lado": "expense",
+      "page": 59,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        4.74
+      ],
+      "origen": "estado 52",
+      "glosa": "Personal no deportivo 37.227 - 1.901 -"
+    }
+  ]
+}

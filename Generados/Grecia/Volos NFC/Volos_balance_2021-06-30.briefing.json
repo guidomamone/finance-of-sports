@@ -1,0 +1,316 @@
+{
+  "club": "volos-nfc",
+  "year": 2021,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Grecia/Volos NFC/Volos_balance_2021-06-30.md",
+  "generatedAt": "2026-09-30T22:03:41.307Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 3,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "## ΒΟΛΟΣ Ν.Π.Σ. ΠΑΕ / ### B. 1,1 ΙΣΟΛΟΓΙΣΜΟΣ ΜΙΚΡΩΝ ΕΠΙΧΕΙΡΗΣΕΩΝ / #### ΜΗ ΚΥΚΛΟΦΟΡΟΥΝΤΑ ΠΕΡΙΟΥΣΙΑΚΑ ΣΤΟΙΧΕΙΑ",
+      "columns": [
+        "Ενσώματα πάγια",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ακίνητα",
+          "values": [
+            "7062,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Μηχανολογικός εξοπλισμός",
+          "values": [
+            "8962,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Μεταφορικά μέσα",
+          "values": [
+            "46933,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Λοιπός εξοπλισμός",
+          "values": [
+            "17047,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Επενδύσεις σε ακίνητα",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Λοιπά ενσώματα στοιχεία",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο",
+          "values": [
+            "80006,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Αυλα πάγια στοιχεία",
+          "values": [
+            "0,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Δαπάνες ανάπτυξης",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Υπεραξία",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Λοιπά άυλα",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο",
+          "values": [
+            "0,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Συμμετοχές σε θυγατρικές και κοινοπραξίες",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Λοιποί συμμετοχικοί τίτλοι",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Λοιπά",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο",
+          "values": [
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο μη κυκλοφορούντων",
+          "values": [
+            "80006,41"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "#### ΚΥΚΛΟΦΟΡΟΥΝΤΑ ΠΕΡΙΟΥΣΙΑΚΑ ΣΤΟΙΧΕΙΑ",
+      "columns": [
+        "Αποθέματα",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Έτοιμα και ημιτελή προϊόντα",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Πρώτες ύλες",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Λοιπά αποθέματα",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο",
+          "values": [
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Χρηματοοικονομικά στοιχεία και προκαταβολές",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Εμπορικές απαιτήσεις",
+          "values": [
+            "146790,36"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Λοιπές απαιτήσεις",
+          "values": [
+            "10003,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Λοιπά χρηματοοικονομικά στοιχεία",
+          "values": [
+            "3000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ταμειακά διαθέσιμα και ισοδύναμα",
+          "values": [
+            "1419533,65"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο",
+          "values": [
+            "1579327,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο κυκλοφορούντων",
+          "values": [
+            "1579327,33"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ΣΥΝΟΛΟ ΕΝΕΡΓΗΤΙΚΟΥ",
+          "values": [
+            "1659333,74"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "#### ΚΑΘΑΡΗ ΘΕΣΗ",
+      "columns": [
+        "Καταβεβλημένα κεφάλαια",
+        "595110,00"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Κεφάλαιο",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο",
+          "values": [
+            "595110,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Αποθεματικά και αποτελέσματα σε νέο",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Αποθεματικά",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Αποτελέσματα εις νέο",
+          "values": [
+            "-136655,63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο",
+          "values": [
+            "-136655,63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο καθαρής θέσης",
+          "values": [
+            "458454,37"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/volos-nfc-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"volos-nfc\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

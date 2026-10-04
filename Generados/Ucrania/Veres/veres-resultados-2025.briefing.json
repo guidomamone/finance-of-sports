@@ -1,0 +1,595 @@
+{
+  "club": "veres",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Ucrania/Veres/veres-resultados-2025.md",
+  "generatedAt": "2026-09-30T22:08:26.011Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 6,
+  "relevantTableCount": 4,
+  "tables": [
+    {
+      "page": 1,
+      "section": null,
+      "columns": [
+        "Дата (рік, місяць, число) за ЄДРПОУ",
+        "Коди",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "2025",
+            "12",
+            "31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "43584706",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "## Звіт про фінансові результати (Звіт про сукупний дохід) / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+      "columns": [
+        "Стаття",
+        "Код рядка",
+        "За звітний період",
+        "За аналогічний період попереднього року"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1",
+          "values": [
+            "2",
+            "3",
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Чистий дохід від реалізації продукції (товарів, робіт, послуг)",
+          "values": [
+            "2000",
+            "43 227",
+            "30 841"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Собівартість реалізованої продукції (товарів, робіт, послуг)",
+          "values": [
+            "2050",
+            "-68 546",
+            "-60 167"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Валовий :",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "прибуток",
+          "values": [
+            "2090",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "збиток",
+          "values": [
+            "2095",
+            "-25 319",
+            "-29 326"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інші операційні доходи",
+          "values": [
+            "2120",
+            "60 946",
+            "17 554"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Адміністративні витрати",
+          "values": [
+            "2130",
+            "-8 110",
+            "-5 545"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Витрати на збут",
+          "values": [
+            "2150",
+            "-2 087",
+            "-3 506"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інші операційні витрати",
+          "values": [
+            "2180",
+            "-431",
+            "-1279"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Фінансовий результат від операційної діяльності:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "прибуток",
+          "values": [
+            "2190",
+            "24 999",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "збиток",
+          "values": [
+            "2195",
+            "-",
+            "-22102"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Дохід від участі в капіталі",
+          "values": [
+            "2200",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інші фінансові доходи",
+          "values": [
+            "2220",
+            "481",
+            "738"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інші доходи",
+          "values": [
+            "2240",
+            "185",
+            "39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Фінансові витрати",
+          "values": [
+            "2250",
+            "-532",
+            "-634"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Втрати від участі в капіталі",
+          "values": [
+            "2255",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інші витрати",
+          "values": [
+            "2270",
+            "-",
+            "-1027"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Фінансовий результат до оподаткування:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "прибуток",
+          "values": [
+            "2290",
+            "25 133",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "збиток",
+          "values": [
+            "2295",
+            "-",
+            "-22 986"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Витрати (дохід) з податку на прибуток",
+          "values": [
+            "2300",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Прибуток (збиток) від припиненої діяльності після оподаткування",
+          "values": [
+            "2305",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Чистий фінансовий результат:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "прибуток",
+          "values": [
+            "2350",
+            "25 133",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "збиток",
+          "values": [
+            "2355",
+            "-",
+            "-22 986"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 1,
+      "section": "### II. СУКУПНИЙ ДОХІД",
+      "columns": [
+        "Найменування показника",
+        "Код рядка",
+        "За звітний період",
+        "За аналогічний період попереднього року"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1",
+          "values": [
+            "2",
+            "3",
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Дооцінка (уцінка) необоротних активів",
+          "values": [
+            "2400",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Дооцінка (уцінка) фінансових інструментів",
+          "values": [
+            "2405",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Накопичені курсові різниці",
+          "values": [
+            "2410",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Частка іншого сукупного доходу асоційованих та спільних підприємств",
+          "values": [
+            "2415",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інший сукупний дохід",
+          "values": [
+            "2445",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інший сукупний дохід до оподаткування",
+          "values": [
+            "2450",
+            "-",
+            "-"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Податок на прибуток, пов'язаний з іншим сукупним доходом",
+          "values": [
+            "2455",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інший сукупний дохід після оподаткування",
+          "values": [
+            "2460",
+            "-",
+            "-"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Сукупний дохід (сума рядків 2350, 2355 та 2460)",
+          "values": [
+            "2465",
+            "25 133",
+            "-22986"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 2,
+      "section": "### III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+      "columns": [
+        "Найменування показника",
+        "Код рядка",
+        "За звітний період",
+        "За аналогічний період попереднього року"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1",
+          "values": [
+            "2",
+            "3",
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Матеріальні витрати",
+          "values": [
+            "2500",
+            "7 294",
+            "5 652"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Витрати на оплату праці",
+          "values": [
+            "2505",
+            "18 305",
+            "10 556"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Відрахування на соціальні заходи",
+          "values": [
+            "2510",
+            "4 040",
+            "2 648"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Амортизація",
+          "values": [
+            "2515",
+            "7 295",
+            "6 296"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інші операційні витрати",
+          "values": [
+            "2520",
+            "42 240",
+            "45 345"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Разом",
+          "values": [
+            "2550",
+            "79 174",
+            "70 497"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 2,
+      "section": "### IV. РОЗРАХУНОК ПОКАЗНИКІВ ПРИБУТКОВОСТІ АКЦІЙ",
+      "columns": [
+        "Назва статті",
+        "Код рядка",
+        "За звітний період",
+        "За аналогічний період попереднього року"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1",
+          "values": [
+            "2",
+            "3",
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Середньорічна кількість простих акцій",
+          "values": [
+            "2600",
+            "560000",
+            "560000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Скоригована середньорічна кількість простих акцій",
+          "values": [
+            "2605",
+            "560000",
+            "560000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Чистий прибуток (збиток) на одну просту акцію",
+          "values": [
+            "2610",
+            "44,88",
+            "-41,05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Скоригований чистий прибуток (збиток) на одну просту акцію",
+          "values": [
+            "2615",
+            "44,88",
+            "-41,05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Дивіденди на одну просту акцію",
+          "values": [
+            "2650",
+            "-",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "Документ підписано у сервісі Вчасно (продовження)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Документ відправлено: 19:00",
+          "values": [
+            "09.03.2026"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Документ отримано (24263164): 19:00",
+          "values": [
+            "09.03.2026"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Документ переглянуто (24263164): 19:02",
+          "values": [
+            "09.03.2026"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/veres-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"veres\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

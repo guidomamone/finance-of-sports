@@ -1,0 +1,1829 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2024.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-02T02:34:06.019Z",
+ "ubicacion": {
+  "estado": [
+   "b35",
+   "b37",
+   "b38",
+   "b39",
+   "b40",
+   "b42",
+   "b43",
+   "b44",
+   "b45",
+   "b46",
+   "b15"
+  ],
+  "notas_ingresos": [
+   "b36"
+  ],
+  "notas_gastos": [
+   "b41"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b35",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala"
+  },
+  {
+   "bloque": "b37",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala"
+  },
+  {
+   "bloque": "b38",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala (continúa en b39 'Expresados en pesos colombianos')"
+  },
+  {
+   "bloque": "b39",
+   "escala": "unidades",
+   "evidencia": "L1125: Expresados en pesos colombianos"
+  },
+  {
+   "bloque": "b40",
+   "escala": "unidades",
+   "evidencia": "L1193: Expresados en pesos colombianos"
+  },
+  {
+   "bloque": "b42",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala (continúa en b43 'Expresados en pesos colombianos')"
+  },
+  {
+   "bloque": "b43",
+   "escala": "unidades",
+   "evidencia": "L1252: Expresados en pesos colombianos"
+  },
+  {
+   "bloque": "b44",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala"
+  },
+  {
+   "bloque": "b45",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala"
+  },
+  {
+   "bloque": "b46",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala"
+  },
+  {
+   "bloque": "b15",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala"
+  },
+  {
+   "bloque": "b36",
+   "escala": "no se sabe",
+   "evidencia": "El bloque no indica escala"
+  },
+  {
+   "bloque": "b41",
+   "escala": "no se sabe",
+   "evidencia": "L1208: importes con '$' sin escala"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b35",
+   "linea": 1055,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "11.439.749",
+   "anterior": "5.349.571",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b35",
+   "linea": 1049,
+   "etiqueta": "Patrocinios (1)",
+   "actual": "4.545.510",
+   "anterior": "3.330.997",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1050,
+   "etiqueta": "Derechos deportivos (2)",
+   "actual": "1.506.472",
+   "anterior": "1.106.210",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1051,
+   "etiqueta": "Boletería",
+   "actual": "4.464.064",
+   "anterior": "400.420",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1052,
+   "etiqueta": "Enseñanza",
+   "actual": "132.000",
+   "anterior": "60.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1053,
+   "etiqueta": "Transportes",
+   "actual": "189.856",
+   "anterior": "217.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b35",
+   "linea": 1054,
+   "etiqueta": "Venta de indumentaria deportiva",
+   "actual": "601.847",
+   "anterior": "234.944",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1073,
+   "etiqueta": "Derechos de televisión nacional",
+   "actual": "1.499.854",
+   "anterior": "1.278.520",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Patrocinios (1)"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1074,
+   "etiqueta": "Federación Colombiana de Futbol",
+   "actual": "174.561",
+   "anterior": "114.800",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Patrocinios (1)"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1075,
+   "etiqueta": "Auxilio hotelero",
+   "actual": "186.067",
+   "anterior": "195.613",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Patrocinios (1)"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1076,
+   "etiqueta": "Convenio entre clubes",
+   "actual": "33.319",
+   "anterior": "140.694",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Patrocinios (1)"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1077,
+   "etiqueta": "Auxilio de arbitraje",
+   "actual": "243.727",
+   "anterior": "129.316",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Patrocinios (1)"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1078,
+   "etiqueta": "Auxilio de transporte",
+   "actual": "16.531",
+   "anterior": "11.013",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Patrocinios (1)"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1079,
+   "etiqueta": "Otros auxilios (*)",
+   "actual": "394.384",
+   "anterior": "950.417",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Patrocinios (1)"
+  },
+  {
+   "bloque": "b36",
+   "linea": 1080,
+   "etiqueta": "Propaganda y publicidad",
+   "actual": "1.997.067",
+   "anterior": "510.624",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Patrocinios (1)"
+  },
+  {
+   "bloque": "b37",
+   "linea": 1096,
+   "etiqueta": "Costo de ventas",
+   "actual": "392.331",
+   "anterior": "132.310",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b37",
+   "linea": 1095,
+   "etiqueta": "Venta de indumentaria",
+   "actual": "392.331",
+   "anterior": "132.310",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1204,
+   "etiqueta": "Gastos de ventas",
+   "actual": "8.890.613",
+   "anterior": "3.135.637",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b38",
+   "linea": 1106,
+   "etiqueta": "Gastos Laborales",
+   "actual": "4.025.365",
+   "anterior": "1.431.541",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1107,
+   "etiqueta": "Sueldos",
+   "actual": "1.639.818",
+   "anterior": "648.297",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1108,
+   "etiqueta": "Auxilio de transporte",
+   "actual": "19.580",
+   "anterior": "29.539",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1109,
+   "etiqueta": "Incapacidades",
+   "actual": "-",
+   "anterior": "33.217",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1110,
+   "etiqueta": "Bonificaciones",
+   "actual": "-",
+   "anterior": "314.797",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1111,
+   "etiqueta": "Cesantías",
+   "actual": "167.656",
+   "anterior": "73.649",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1112,
+   "etiqueta": "Prima de servicios",
+   "actual": "166.492",
+   "anterior": "73.858",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b38",
+   "linea": 1113,
+   "etiqueta": "Intereses sobre cesantías",
+   "actual": "18.565",
+   "anterior": "7.478",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1127,
+   "etiqueta": "Vacaciones",
+   "actual": "169.690",
+   "anterior": "69.690",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1129,
+   "etiqueta": "Bonificaciones",
+   "actual": "1.192.139",
+   "anterior": "20.514",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1130,
+   "etiqueta": "Prima extralegal",
+   "actual": "1.000",
+   "anterior": "500",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1131,
+   "etiqueta": "Fondos pensión",
+   "actual": "265.559",
+   "anterior": "104.850",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1132,
+   "etiqueta": "Fondos EPS",
+   "actual": "25.741",
+   "anterior": "203",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1133,
+   "etiqueta": "Aportes cajas de compensación familiar - Sena - ICBF",
+   "actual": "96.753",
+   "anterior": "29.117",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1134,
+   "etiqueta": "Aportes administradoras de riesgos profesionales",
+   "actual": "43.074",
+   "anterior": "4.593",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1135,
+   "etiqueta": "Indemnizaciones laborales",
+   "actual": "17.950",
+   "anterior": "3.725",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1136,
+   "etiqueta": "Dotación de personal",
+   "actual": "94.222",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1137,
+   "etiqueta": "Médicos y drogas",
+   "actual": "31.529",
+   "anterior": "17.514",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1138,
+   "etiqueta": "Convenios deportivos",
+   "actual": "75.597",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1139,
+   "etiqueta": "Honorarios",
+   "actual": "374.792",
+   "anterior": "247.352",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1140,
+   "etiqueta": "Arbitraje",
+   "actual": "238.811",
+   "anterior": "121.693",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Honorarios"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1141,
+   "etiqueta": "Asesoría jurídica",
+   "actual": "-",
+   "anterior": "11.842",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Honorarios"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1142,
+   "etiqueta": "Asesoría técnica",
+   "actual": "77.357",
+   "anterior": "39.687",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Honorarios"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1143,
+   "etiqueta": "Derechos de formación",
+   "actual": "53.669",
+   "anterior": "44.862",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Honorarios"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1144,
+   "etiqueta": "Otros",
+   "actual": "4.955",
+   "anterior": "29.268",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Honorarios"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1145,
+   "etiqueta": "Arrendamientos",
+   "actual": "1.330.911",
+   "anterior": "391.191",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1146,
+   "etiqueta": "Alquiler construcciones y edificaciones",
+   "actual": "332.199",
+   "anterior": "126.261",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Arrendamientos"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1147,
+   "etiqueta": "Alquiler maquinaria y equipo",
+   "actual": "98.714",
+   "anterior": "45.223",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Arrendamientos"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1148,
+   "etiqueta": "Alquiler Terrenos",
+   "actual": "899.998",
+   "anterior": "219.707",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Arrendamientos"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1149,
+   "etiqueta": "Afiliaciones y sostenimientos",
+   "actual": "239",
+   "anterior": "2.620",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1150,
+   "etiqueta": "Impuestos (1)",
+   "actual": "543.632",
+   "anterior": "38.430",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b41",
+   "linea": 1208,
+   "etiqueta": "Industria y comercio pagados a la Secretaría de Hacienda de Bogotá por $ 35.065",
+   "actual": "35.065",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Impuestos (1)"
+  },
+  {
+   "bloque": "b41",
+   "linea": 1209,
+   "etiqueta": "De espectáculos públicos pagados IDRD por $ 388.776",
+   "actual": "388.776",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Impuestos (1)"
+  },
+  {
+   "bloque": "b41",
+   "linea": 1210,
+   "etiqueta": "IVA descontable por $ 119.791",
+   "actual": "119.791",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Impuestos (1)"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1151,
+   "etiqueta": "Seguros",
+   "actual": "47.515",
+   "anterior": "28.398",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1152,
+   "etiqueta": "Servicios",
+   "actual": "956.647",
+   "anterior": "225.769",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1153,
+   "etiqueta": "Seguridad",
+   "actual": "183.683",
+   "anterior": "4.158",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1154,
+   "etiqueta": "Servicios públicos",
+   "actual": "18.359",
+   "anterior": "13.394",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1155,
+   "etiqueta": "Transporte de Pasajeros",
+   "actual": "-",
+   "anterior": "25.521",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1156,
+   "etiqueta": "Transportes fletes y acarreos",
+   "actual": "242.256",
+   "anterior": "1.014",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1157,
+   "etiqueta": "Publicidad y propaganda",
+   "actual": "48.530",
+   "anterior": "1.382",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1158,
+   "etiqueta": "Médico y ambulancias",
+   "actual": "96.904",
+   "anterior": "58.445",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1159,
+   "etiqueta": "Logística de partidos",
+   "actual": "364.287",
+   "anterior": "121.855",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1160,
+   "etiqueta": "Otros servicios",
+   "actual": "2.628",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1161,
+   "etiqueta": "Legales",
+   "actual": "163.562",
+   "anterior": "91.656",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1162,
+   "etiqueta": "Tramites y licencias",
+   "actual": "96.521",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Legales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1163,
+   "etiqueta": "Derechos deportivos",
+   "actual": "67.041",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Legales"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1164,
+   "etiqueta": "Mantenimiento y adecuaciones",
+   "actual": "143.405",
+   "anterior": "82.664",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1165,
+   "etiqueta": "Terrenos",
+   "actual": "9.354",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mantenimiento y adecuaciones"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1166,
+   "etiqueta": "Construcciones y edificaciones",
+   "actual": "109.658",
+   "anterior": "15.698",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mantenimiento y adecuaciones"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1167,
+   "etiqueta": "Maquinaria y equipo",
+   "actual": "5.974",
+   "anterior": "7.066",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mantenimiento y adecuaciones"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1169,
+   "etiqueta": "Muebles y enseres",
+   "actual": "1.941",
+   "anterior": "1.415",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mantenimiento y adecuaciones"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1170,
+   "etiqueta": "Flota y equipo de transporte",
+   "actual": "16.478",
+   "anterior": "44.323",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mantenimiento y adecuaciones"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1171,
+   "etiqueta": "Reparaciones locativas",
+   "actual": "-",
+   "anterior": "14.162",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mantenimiento y adecuaciones"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1172,
+   "etiqueta": "De viaje",
+   "actual": "624.095",
+   "anterior": "285.803",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1173,
+   "etiqueta": "Alojamiento y manutención",
+   "actual": "364.690",
+   "anterior": "147.991",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "De viaje"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1174,
+   "etiqueta": "Pasajes aéreos y terrestres",
+   "actual": "258.708",
+   "anterior": "137.351",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "De viaje"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1175,
+   "etiqueta": "Peajes",
+   "actual": "697",
+   "anterior": "461",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "De viaje"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1176,
+   "etiqueta": "Diversos",
+   "actual": "580.235",
+   "anterior": "241.443",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1177,
+   "etiqueta": "Comisiones",
+   "actual": "274.650",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1178,
+   "etiqueta": "Combustible",
+   "actual": "7.774",
+   "anterior": "25.412",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1179,
+   "etiqueta": "Taxis y buses",
+   "actual": "50.784",
+   "anterior": "24.056",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1180,
+   "etiqueta": "Casinos y restaurantes",
+   "actual": "70.496",
+   "anterior": "121.033",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b39",
+   "linea": 1181,
+   "etiqueta": "Gastos de representación",
+   "actual": "6.972",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1195,
+   "etiqueta": "Papelería",
+   "actual": "2.785",
+   "anterior": "888",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1197,
+   "etiqueta": "Parqueadero",
+   "actual": "2.120",
+   "anterior": "310",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1198,
+   "etiqueta": "Elementos de aseo y cafetería (Hidratación)",
+   "actual": "83.510",
+   "anterior": "57.697",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1199,
+   "etiqueta": "Implementos Deportivos",
+   "actual": "4.358",
+   "anterior": "936",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1200,
+   "etiqueta": "Diversos",
+   "actual": "76.786",
+   "anterior": "11.111",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diversos"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1201,
+   "etiqueta": "Depreciaciones",
+   "actual": "51.639",
+   "anterior": "53.133",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1202,
+   "etiqueta": "Amortizaciones",
+   "actual": "21.663",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b40",
+   "linea": 1203,
+   "etiqueta": "Deterioro de inventario",
+   "actual": "26.913",
+   "anterior": "15.637",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos de ventas"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1283,
+   "etiqueta": "Gastos administrativos",
+   "actual": "1.698.446",
+   "anterior": "1.023.145",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b42",
+   "linea": 1218,
+   "etiqueta": "Gastos Laborales",
+   "actual": "996.661",
+   "anterior": "586.834",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos administrativos"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1219,
+   "etiqueta": "Sueldos",
+   "actual": "442.722",
+   "anterior": "278.356",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1220,
+   "etiqueta": "Horas extras y recargos",
+   "actual": "5.169",
+   "anterior": "1.970",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1221,
+   "etiqueta": "Incapacidades",
+   "actual": "523",
+   "anterior": "6.109",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1222,
+   "etiqueta": "Auxilio de transporte",
+   "actual": "9.239",
+   "anterior": "6.204",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1223,
+   "etiqueta": "Cesantías",
+   "actual": "37.879",
+   "anterior": "25.249",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1224,
+   "etiqueta": "Intereses sobre cesantías",
+   "actual": "4.199",
+   "anterior": "2.963",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1225,
+   "etiqueta": "Prima de servicios",
+   "actual": "37.462",
+   "anterior": "25.251",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1226,
+   "etiqueta": "Vacaciones",
+   "actual": "24.068",
+   "anterior": "27.140",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1227,
+   "etiqueta": "Prima extralegal",
+   "actual": "-",
+   "anterior": "2.700",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1228,
+   "etiqueta": "Bonificaciones",
+   "actual": "318.431",
+   "anterior": "146.841",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1229,
+   "etiqueta": "Aportes fondo de pensiones",
+   "actual": "59.300",
+   "anterior": "37.096",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1230,
+   "etiqueta": "Aportes caja de compensación familiar",
+   "actual": "20.000",
+   "anterior": "11.660",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1231,
+   "etiqueta": "Aportes de riesgos laborales",
+   "actual": "10.282",
+   "anterior": "1.493",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1232,
+   "etiqueta": "Aportes a entidades promotora de salud",
+   "actual": "5.651",
+   "anterior": "7.512",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1233,
+   "etiqueta": "Dotación y suministros a trabajadores",
+   "actual": "17.036",
+   "anterior": "2.307",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1234,
+   "etiqueta": "Aporte I.C.B.F.",
+   "actual": "750",
+   "anterior": "2.390",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1235,
+   "etiqueta": "Aporte SENA",
+   "actual": "500",
+   "anterior": "1.593",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1236,
+   "etiqueta": "Capacitación personal",
+   "actual": "450",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1237,
+   "etiqueta": "Indemnización al personal",
+   "actual": "3.000",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Laborales"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1238,
+   "etiqueta": "Honorarios",
+   "actual": "119.681",
+   "anterior": "62.832",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos administrativos"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1239,
+   "etiqueta": "Asesoría jurídica",
+   "actual": "91.011",
+   "anterior": "38.182",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Honorarios"
+  },
+  {
+   "bloque": "b42",
+   "linea": 1240,
+   "etiqueta": "Revisoría fiscal",
+   "actual": "28.670",
+   "anterior": "24.650",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Honorarios"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1254,
+   "etiqueta": "Contribuciones y afiliaciones",
+   "actual": "9.581",
+   "anterior": "1.430",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos administrativos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1256,
+   "etiqueta": "Afiliaciones y sostenimientos",
+   "actual": "9.581",
+   "anterior": "1.430",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Contribuciones y afiliaciones"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1257,
+   "etiqueta": "Seguros",
+   "actual": "4.206",
+   "anterior": "-",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos administrativos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1258,
+   "etiqueta": "Seguros todo riesgo",
+   "actual": "4.206",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Seguros"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1259,
+   "etiqueta": "Servicios",
+   "actual": "243.462",
+   "anterior": "205.605",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos administrativos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1260,
+   "etiqueta": "Aseo y vigilancia",
+   "actual": "163.322",
+   "anterior": "146.405",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1261,
+   "etiqueta": "Energía eléctrica",
+   "actual": "72.905",
+   "anterior": "53.949",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1262,
+   "etiqueta": "Teléfono",
+   "actual": "7.235",
+   "anterior": "5.251",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Servicios"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1263,
+   "etiqueta": "Legales",
+   "actual": "2.970",
+   "anterior": "2.133",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos administrativos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1264,
+   "etiqueta": "Registro mercantil",
+   "actual": "2.970",
+   "anterior": "2.074",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Legales"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1265,
+   "etiqueta": "Tramites y licencias",
+   "actual": "-",
+   "anterior": "59",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Legales"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1266,
+   "etiqueta": "Mantenimientos",
+   "actual": "8.838",
+   "anterior": "5.265",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos administrativos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1267,
+   "etiqueta": "Construcciones y edificaciones",
+   "actual": "-",
+   "anterior": "2.040",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mantenimientos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1268,
+   "etiqueta": "Maquinaria y equipo",
+   "actual": "4.048",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mantenimientos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1269,
+   "etiqueta": "Equipo de oficina",
+   "actual": "4.790",
+   "anterior": "3.225",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Mantenimientos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1270,
+   "etiqueta": "De viaje",
+   "actual": "1.955",
+   "anterior": "-",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos administrativos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1271,
+   "etiqueta": "Alojamiento y manutención",
+   "actual": "440",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "De viaje"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1272,
+   "etiqueta": "Pasajes aéreos",
+   "actual": "1.515",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "De viaje"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1273,
+   "etiqueta": "Gastos Diversos",
+   "actual": "25.920",
+   "anterior": "290",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gastos administrativos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1274,
+   "etiqueta": "Combustibles y lubricantes",
+   "actual": "504",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Diversos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1275,
+   "etiqueta": "Útiles, papelería y Fotocopias",
+   "actual": "2.175",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Diversos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1276,
+   "etiqueta": "Parqueaderos",
+   "actual": "75",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Diversos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1277,
+   "etiqueta": "Casino y restaurante",
+   "actual": "3.192",
+   "anterior": "40",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Diversos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1278,
+   "etiqueta": "Diversos",
+   "actual": "19.774",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Diversos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1279,
+   "etiqueta": "Taxis y buses",
+   "actual": "200",
+   "anterior": "250",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos Diversos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1280,
+   "etiqueta": "Depreciaciones",
+   "actual": "135.690",
+   "anterior": "111.553",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos administrativos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1281,
+   "etiqueta": "Deterioro de cartera",
+   "actual": "132.591",
+   "anterior": "33.880",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos administrativos"
+  },
+  {
+   "bloque": "b43",
+   "linea": 1282,
+   "etiqueta": "Amortizaciones",
+   "actual": "16.891",
+   "anterior": "13.323",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gastos administrativos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1296,
+   "etiqueta": "Otros gastos",
+   "actual": "241.822",
+   "anterior": "51.189",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b44",
+   "linea": 1291,
+   "etiqueta": "Gastos no deducibles (1)",
+   "actual": "76.911",
+   "anterior": "21.013",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1292,
+   "etiqueta": "Multas sanciones y litigios (2)",
+   "actual": "78.742",
+   "anterior": "23.391",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1293,
+   "etiqueta": "Impuestos asumidos",
+   "actual": "4.787",
+   "anterior": "475",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1294,
+   "etiqueta": "Ajuste al peso",
+   "actual": "15",
+   "anterior": "5",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos"
+  },
+  {
+   "bloque": "b44",
+   "linea": 1295,
+   "etiqueta": "Intereses de mora",
+   "actual": "81.367",
+   "anterior": "6.305",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1328,
+   "etiqueta": "Otros ingresos",
+   "actual": "766.509",
+   "anterior": "648.898",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b45",
+   "linea": 1322,
+   "etiqueta": "Alquiler deportivo (1)",
+   "actual": "245.014",
+   "anterior": "144.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1323,
+   "etiqueta": "Reintegro de costos y gastos (2)",
+   "actual": "434.006",
+   "anterior": "404.064",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1324,
+   "etiqueta": "Utilidad en propiedad, planta y equipo",
+   "actual": "14.000",
+   "anterior": "100.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1325,
+   "etiqueta": "Aprovechamientos",
+   "actual": "34.770",
+   "anterior": "829",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1326,
+   "etiqueta": "Ajuste al peso",
+   "actual": "21",
+   "anterior": "5",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b45",
+   "linea": 1327,
+   "etiqueta": "Diversos",
+   "actual": "38.698",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1349,
+   "etiqueta": "Costos financieros",
+   "actual": "(106.157)",
+   "anterior": "(46.371)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b46",
+   "linea": 1340,
+   "etiqueta": "Rendimientos financieros",
+   "actual": "497",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Ingresos Financieros"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1341,
+   "etiqueta": "Ingresos por diferencia en cambio (1)",
+   "actual": "15.774",
+   "anterior": "7.220",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Ingresos Financieros"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1342,
+   "etiqueta": "Ingresos Financieros",
+   "actual": "16.271",
+   "anterior": "7.220",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Costos financieros"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1343,
+   "etiqueta": "Diferencia en cambio (1)",
+   "actual": "2.358",
+   "anterior": "6.152",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Costos Financieros"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1344,
+   "etiqueta": "Gravamen a los movimientos financieros",
+   "actual": "45.196",
+   "anterior": "22.228",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Costos Financieros"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1345,
+   "etiqueta": "Comisiones (2)",
+   "actual": "67.860",
+   "anterior": "10.306",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Costos Financieros"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1346,
+   "etiqueta": "Gastos Bancarios",
+   "actual": "6.625",
+   "anterior": "7.968",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Costos Financieros"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1347,
+   "etiqueta": "Intereses",
+   "actual": "389",
+   "anterior": "6.937",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Costos Financieros"
+  },
+  {
+   "bloque": "b46",
+   "linea": 1348,
+   "etiqueta": "Costos Financieros",
+   "actual": "122.428",
+   "anterior": "53.591",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Costos financieros"
+  },
+  {
+   "bloque": "b15",
+   "linea": 713,
+   "etiqueta": "Utilidad contable antes de impuesto",
+   "actual": "876.889",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 731,
+   "etiqueta": "Total Impuesto a Cargo",
+   "actual": "410.566",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 713,
+  "actual": "876.889",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se usan como etiquetas de los renglones del estado los nombres descriptivos tomados del texto introductorio de cada nota (ej. 'Ingresos de actividades ordinarias' de L1045) porque los títulos numerados de las notas no aparecen en la transcripción?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "",
+   "texto": "Los bloques no incluyen el título numerado de cada nota; se usaron nombres derivados de las frases L1045, L1091, L1102, L1214, L1287, L1318, L1336.",
+   "bloques": [
+    "b35",
+    "b37",
+    "b38",
+    "b42",
+    "b44",
+    "b45",
+    "b46"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Los importes están en miles de pesos colombianos y no en pesos como dice 'Expresados en pesos colombianos' (L1125)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ingresos de 11.439.749 pesos serían inverosímilmente bajos para un club profesional; el encabezado podría omitir 'miles'.",
+   "bloques": [
+    "b39",
+    "b40",
+    "b43",
+    "b35"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga 'Total Impuesto a Cargo' 410.566 (L731) como impuesto a las ganancias del ejercicio 2024?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Total Impuesto a Cargo",
+   "texto": "Sale de la conciliación fiscal L731; no hay nota de gasto por impuesto ni año anterior, y puede diferir del gasto contable (diferido).",
+   "bloques": [
+    "b15"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se deja afuera de la carga el resto de la conciliación contable-fiscal (L715-L729)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Utilidad contable antes de impuesto",
+   "texto": "Son partidas de ajuste fiscal que repiten gastos ya cargados en otras notas, no renglones del resultado.",
+   "bloques": [
+    "b15"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado armado con notas: ingresos ordinarios 11.439.749 + otros ingresos 766.509 − costo de ventas 392.331 − gastos de ventas 8.890.613 − administrativos 1.698.446 − otros gastos 241.822 − neto financiero 106.157 = 876.889, coincide con la utilidad antes de impuesto impresa en L713. Los rubros en negrita con desglose se cargaron como subtotales y sus partidas con detalla_a al subtotal. Se omitió L1168 (sin importe en ambos años). El desglose de 'Impuestos (1)' (b41) se tomó del texto L1208-L1210 y suma 543.632."
+}

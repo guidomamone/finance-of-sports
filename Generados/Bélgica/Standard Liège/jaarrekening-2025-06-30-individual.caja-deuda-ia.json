@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Standard Liège/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-02T00:20:19.734Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   344
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Caja: Valeurs disponibles (código 54/58) = 311.835, valor en L344. No se incluyeron las páginas del pasivo del balance (deudas financieras a más de un año / a un año al plus), por lo que no se puede identificar la deuda financiera. El documento no indica la escala explícitamente; los importes parecen expresados en EUR (unidades), ya que el total del balance de 30.104.030 EUR coincide con el rapport de gestion."
+}

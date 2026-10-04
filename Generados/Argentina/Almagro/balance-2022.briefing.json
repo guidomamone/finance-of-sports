@@ -1,0 +1,3173 @@
+{
+  "club": "almagro-ar",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Almagro/balance-2022.md",
+  "generatedAt": "2026-09-30T22:38:12.195Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 243,
+    "eu": 1,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 17,
+  "relevantTableCount": 7,
+  "tables": [
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "columns": [
+        "ACTIVO",
+        "31/10/2022",
+        "31/10/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Activo Corriente",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Disponibilidad",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caja y Bancos (Nota 2.1)",
+          "values": [
+            "3,899,196.81",
+            "281,999.80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Créditos Comerciales (Nota 2.2.1)",
+          "values": [
+            "0.00",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos Fiscales ( Nota 2.2.2 )",
+          "values": [
+            "9,501,312.27",
+            "18,074,925.06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVO CORRIENTE",
+          "values": [
+            "13,400,509.08",
+            "18,356,924.86"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Activo no corriente",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bienes de Uso (ANEXO I A -ANEXO B) (Neto de Amortizaciones)",
+          "values": [
+            "1,097,605,303.92",
+            "1,106,710,715.01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVO NO CORRIENTE",
+          "values": [
+            "1,097,605,303.92",
+            "1,106,710,715.01"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL ACTIVO",
+          "values": [
+            "1,111,005,813.00",
+            "1,125,067,639.87"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PASIVO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Pasivo Corriente",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deudas",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deudas Fiscales (Nota 3.1)",
+          "values": [
+            "1,130,480.53",
+            "1,167,370.42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneraciones y C Sociales ( Nota 3.2)",
+          "values": [
+            "1,735,909.95",
+            "2,483,460.36"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASIVO CORRIENTE",
+          "values": [
+            "2,866,390.48",
+            "3,650,830.78"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Pasivo No Corriente",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "AFA a Pagar (Nota 4.1)",
+          "values": [
+            "2,209,663.82",
+            "87,031.45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASIVO NO CORRIENTE",
+          "values": [
+            "2,209,663.82",
+            "87,031.45"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL PASIVO",
+          "values": [
+            "5,076,054.30",
+            "3,737,862.23"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PATRIMONIO NETO (Según estado respectivo)",
+          "values": [
+            "1,105,929,758.70",
+            "1,121,329,777.64"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL PATRIMONIO NETO",
+          "values": [
+            "1,105,929,758.70",
+            "1,121,329,777.64"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL PASIVO MAS PATRIMONIO NETO",
+          "values": [
+            "1,111,005,813.00",
+            "1,125,067,639.87"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "columns": [
+        "",
+        "31/10/2022",
+        "31/10/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "RECURSOS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CUOTA SOCIALES -Anexo II",
+          "values": [
+            "8,510,154.97",
+            "9,309,010.47"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECAUDACIÓN POR ACTIVIDADES Anexo III",
+          "values": [
+            "135,078,881.67",
+            "109,603,003.09"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DE RECURSOS",
+          "values": [
+            "143,589,036.64",
+            "118,912,013.56"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GASTOS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS ESPECIFICOS -Anexos IV",
+          "values": [
+            "49,200,174.97",
+            "27,543,853.79"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS DE OPERACIONES -Anexos V",
+          "values": [
+            "88,465,980.58",
+            "92,810,380.01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AMORTIZACIÓN Anexo IA Y Anexo IB",
+          "values": [
+            "12,234,038.65",
+            "11,505,805.26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL GASTOS",
+          "values": [
+            "149,900,194.20",
+            "131,860,039.06"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RESULTADO DEL EJERCICIO -GANANCIA -",
+          "values": [
+            "0.00",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESULTADO DEL EJERCICIO - PERDIDA-",
+          "values": [
+            "-6,311,157.56",
+            "-12,948,025.50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado financiero y por tenencia (incluye RECPAM)",
+          "values": [
+            "-7172628.77",
+            "-7425326.65"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESULTADO FINAL -PERDIDA -",
+          "values": [
+            "-13,483,786.33",
+            "-20,373,352.15"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 5,
+      "section": "CUIT: 33-53156200-9 / ANEXO II / CUOTA SOCIALES - ANEXO II- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:84 / CUOTAS SOCIALES",
+      "columns": [
+        "",
+        "31/10/2022",
+        "31/10/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Sede Social- Medrano 522 CABA",
+          "values": [
+            "8,510,154.97",
+            "9,309,010.47"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales",
+          "values": [
+            "8,510,154.97",
+            "9,309,010.47"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "CUIT: 33-53156200-9 / ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84 / RECAUDACIONES POR ACTIVIDAD",
+      "columns": [
+        "",
+        "31/10/2022",
+        "31/10/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Futbol Ingreso por Partidos",
+          "values": [
+            "4585779.13",
+            "3685648.16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingreso A.F.A: dcho tv",
+          "values": [
+            "63,647,867.48",
+            "70,273,256.25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Asignacion Extraordinaria A.F.A",
+          "values": [
+            "0.00",
+            "2360146.78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alquiler de Sede",
+          "values": [
+            "31223947.10",
+            "22283935.02"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Canon por Alquiler Cancha Tenis",
+          "values": [
+            "2710006.86",
+            "3027168.04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad",
+          "values": [
+            "7576691.05",
+            "1404497.31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alquiler de Antena",
+          "values": [
+            "8609140.04",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derecho de Formacion Jugadores",
+          "values": [
+            "4294225.90",
+            "6568351.53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima por Venta Jugadores",
+          "values": [
+            "12,431,224.11",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales",
+          "values": [
+            "135,078,881.67",
+            "109,603,003.09"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 7,
+      "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV- / EJERCICIO ECONÓMICO NRO:84 / GASTOS ESPECÍFICOS",
+      "columns": [
+        "",
+        "31/10/2022",
+        "31/10/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos de mantenimiento",
+          "values": [
+            "13,498,315.92",
+            "8,252,999.87"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios abogados",
+          "values": [
+            "298,349.38",
+            "557,234.89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios Contador",
+          "values": [
+            "597,490.61",
+            "740,265.76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos varios",
+          "values": [
+            "0.00",
+            "150,428.55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Ambulancia para partidos",
+          "values": [
+            "542,001.37",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estadías y traslados",
+          "values": [
+            "12,995,734.70",
+            "11,215,339.56"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comision por compra Jugadores",
+          "values": [
+            "11,999,239.08",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comision por Representante",
+          "values": [
+            "1,491,746.89",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alquiler Vivienda para jugadores",
+          "values": [
+            "7,777,297.02",
+            "6,627,585.15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales",
+          "values": [
+            "49,206,174.97",
+            "27,543,853.79"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 7,
+      "section": "GASTOS OPERACIONALES- ANEXO V",
+      "columns": [
+        "",
+        "31/10/2022",
+        "31/10/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Interese perdidos",
+          "values": [
+            "402,017.04",
+            "275,093.97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos bancarios",
+          "values": [
+            "91,192.81",
+            "263,610.97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto Ley 25413",
+          "values": [
+            "1,272,474.93",
+            "1,357,541.70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Iva no Computable",
+          "values": [
+            "19,011.56",
+            "54,155.78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Cuerpo Medico y Tecnico",
+          "values": [
+            "9,472,592.78",
+            "18,231,672.85"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sueldos y Jornales",
+          "values": [
+            "27,336,178.35",
+            "30,797,971.39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cargas Sociales",
+          "values": [
+            "617,660.45",
+            "672,711.03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cargas Sociales Seg Soc.",
+          "values": [
+            "968,078.55",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multa",
+          "values": [
+            "165,177.98",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Percepciones Perdidas",
+          "values": [
+            "1,836.73",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Primas por contrato privado",
+          "values": [
+            "30,506,616.80",
+            "26,013,412.53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Policía",
+          "values": [
+            "5,005,487.09",
+            "2,505,538.72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juicios",
+          "values": [
+            "10,370,035.17",
+            "8,097,426.03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alquiler para entrenamiento",
+          "values": [
+            "2,237,620.34",
+            "4,541,245.04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "88,465,980.58",
+            "92,810,380.01"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 8,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE USO ANEXO I A - AJUSTADO POR INFLACION / EJERCICIO ECONOMICO NRO: 84",
+      "columns": [
+        "CUENTA PRINCIPAL",
+        "VALORES DE ORIGEN",
+        "",
+        "",
+        "",
+        "AMORTIZACIONES",
+        "",
+        "",
+        "NETO RESULTANTE 31/10/2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "VALOR INICIAL",
+            "ALTAS",
+            "BAJAS",
+            "VALOR AL CIERRE",
+            "ACUMULADA AL INICIO",
+            "DEL EJERCICIO",
+            "ACUMULADAS AL CIERRE",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TERRENOS Medrano",
+          "values": [
+            "642,441,782.57",
+            "0.00",
+            "0.00",
+            "642,441,782.57",
+            "0.00",
+            "0.00",
+            "0.00",
+            "642,441,782.57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INMUEBLES Medrano",
+          "values": [
+            "264,133,722.51",
+            "0.00",
+            "0.00",
+            "264,133,722.51",
+            "95,086,709.97",
+            "5,282,674.45",
+            "100,369,384.42",
+            "163,764,338.09"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RODADOS",
+          "values": [
+            "2,252,021.66",
+            "0.00",
+            "0.00",
+            "2,252,021.66",
+            "1,718,611.19",
+            "177,803.49",
+            "1,896,414.68",
+            "355,606.98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MUEBLES Y UTILES",
+          "values": [
+            "2,582,885.09",
+            "0.00",
+            "0.00",
+            "2,582,885.09",
+            "2,469,127.67",
+            "17306.47",
+            "2,488,434.14",
+            "96,450.95"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MAQUINARIAS",
+          "values": [
+            "140,207.13",
+            "0.00",
+            "0.00",
+            "140,207.13",
+            "140,207.13",
+            "0.00",
+            "140,207.13",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSTALACIONES",
+          "values": [
+            "1,887,015.49",
+            "0.00",
+            "0.00",
+            "1,887,015.49",
+            "1,887,015.49",
+            "0.00",
+            "1,887,015.49",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TERRENOS JI",
+          "values": [
+            "164,426,845.32",
+            "0.00",
+            "0.00",
+            "164,426,845.32",
+            "0.00",
+            "0.00",
+            "0.00",
+            "164,426,845.32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EDIFICIO JI",
+          "values": [
+            "199,908,713.48",
+            "0.00",
+            "0.00",
+            "199,908,713.48",
+            "71,965,706.75",
+            "3,998,174.28",
+            "75,983,881.03",
+            "123,944,832.45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total 2022",
+          "values": [
+            "1,277,773,193.25",
+            "0.00",
+            "0.00",
+            "1,277,773,193.25",
+            "173,267,378.20",
+            "9,475,958.69",
+            "182,743,336.89",
+            "1,095,029,856.36"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": null,
+      "columns": [
+        "CUENTA PRINCIPAL",
+        "VALORES DE ORIGEN",
+        "",
+        "",
+        "",
+        "AMORTIZACIONES",
+        "",
+        "",
+        "NETO RESULTANTE 31/10/2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "VALOR INICIAL",
+            "ALTAS",
+            "BAJAS",
+            "VALOR AL CIERRE",
+            "ACUMULADA AL INICIO",
+            "DEL EJERCICIO",
+            "ACUMULADAS AL CIERRE",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TERRENOS Medrano",
+          "values": [
+            "642,441,782.57",
+            "0.00",
+            "0.00",
+            "642,441,782.57",
+            "0.00",
+            "0.00",
+            "0.00",
+            "642,441,782.57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INMUEBLES Medrano",
+          "values": [
+            "264,133,722.51",
+            "0.00",
+            "0.00",
+            "264,133,722.51",
+            "89,804,035.52",
+            "5,282,674.45",
+            "95,086,709.97",
+            "169,047,012.54"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RODADOS",
+          "values": [
+            "2,252,021.66",
+            "0.00",
+            "0.00",
+            "2,252,021.66",
+            "1,540,807.70",
+            "177,803.49",
+            "1,718,611.19",
+            "533,410.47"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MUEBLES Y UTILES",
+          "values": [
+            "2,514,822.45",
+            "68,062.64",
+            "0.00",
+            "2,582,885.09",
+            "2,451,821.20",
+            "17,306.47",
+            "2,469,127.67",
+            "113,757.42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MAQUINARIAS",
+          "values": [
+            "140,207.13",
+            "0.00",
+            "0.00",
+            "140,207.13",
+            "133,640.51",
+            "6,566.62",
+            "140,207.13",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSTALACIONES",
+          "values": [
+            "1,887,015.49",
+            "0.00",
+            "0.00",
+            "1,887,015.49",
+            "1,887,015.49",
+            "0.00",
+            "1,887,015.49",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TERRENOS JI",
+          "values": [
+            "164,426,845.32",
+            "0.00",
+            "0.00",
+            "164,426,845.32",
+            "0.00",
+            "0.00",
+            "0.00",
+            "164,426,845.32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EDIFICIO JI",
+          "values": [
+            "199,908,713.48",
+            "0.00",
+            "0.00",
+            "199,908,713.48",
+            "67,967,532.47",
+            "3,998,174.28",
+            "71,965,706.75",
+            "127,943,006.73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total 2021",
+          "values": [
+            "1,277,705,130.61",
+            "68,062.64",
+            "0.00",
+            "1,277,773,193.25",
+            "163,784,852.89",
+            "9,482,525.31",
+            "173,267,378.20",
+            "1,104,505,615.05"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE CONSUMO -ANEXO I B- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "columns": [
+        "CUENTA PRINCIPAL",
+        "VALORES DE ORIGEN",
+        "",
+        "",
+        "",
+        "AMORTIZACIONES",
+        "",
+        "",
+        "NETO RESULTANTE B 31/10/2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "VALOR INICIAL",
+            "ALTAS",
+            "BAJAS",
+            "VALOR AL CIERRE",
+            "ACUMULADA AL INICIO",
+            "DEL EJERCICIO",
+            "ACUMULADAS AL CIERRE",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BALONES",
+          "values": [
+            "348,670.32",
+            "0.00",
+            "0.00",
+            "348,670.32",
+            "348,670.32",
+            "0.00",
+            "348,670.32",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ELEMENTOS DE ENTRENAMIENTOS",
+          "values": [
+            "24,783.69",
+            "0.00",
+            "0.00",
+            "24,783.69",
+            "24,783.69",
+            "0.00",
+            "24,783.69",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INDUMENTARIA",
+          "values": [
+            "13,884,749.12",
+            "3,128,627.56",
+            "0.00",
+            "17,013,376.68",
+            "11,679,849.16",
+            "2,758,079.96",
+            "14,437,929.12",
+            "2,575,447.56"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total 2022",
+          "values": [
+            "14,258,203.13",
+            "3,128,627.56",
+            "0.00",
+            "17,386,830.69",
+            "12,053,303.17",
+            "2,758,079.96",
+            "14,811,383.13",
+            "2,575,447.56"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": null,
+      "columns": [
+        "CUENTA PRINCIPAL",
+        "VALORES DE ORIGEN",
+        "",
+        "",
+        "",
+        "AMORTIZACIONES",
+        "",
+        "",
+        "NETO RESULTANTE B 31/10/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "VALOR INICIAL",
+            "ALTAS",
+            "BAJAS",
+            "VALOR AL CIERRE",
+            "ACUMULADA AL INICIO",
+            "DEL EJERCICIO",
+            "ACUMULADAS AL CIERRE",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BALONES",
+          "values": [
+            "348,670.32",
+            "0.00",
+            "0.00",
+            "348,670.32",
+            "348,670.32",
+            "0.00",
+            "348,670.32",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ELEMENTOS DE ENTRENAMIENTOS",
+          "values": [
+            "24,783.69",
+            "0.00",
+            "0.00",
+            "24,783.69",
+            "24,783.69",
+            "0.00",
+            "24,783.69",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INDUMENTARIA",
+          "values": [
+            "12,415,661.48",
+            "1,469,087.64",
+            "0.00",
+            "13,884,749.12",
+            "9,656,569.21",
+            "2,023,279.95",
+            "11,679,849.16",
+            "2,204,899.96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total 2021",
+          "values": [
+            "12,789,115.49",
+            "1,469,087.64",
+            "0.00",
+            "14,258,203.13",
+            "10,030,023.22",
+            "2,023,279.95",
+            "12,053,303.17",
+            "2,204,899.96"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 10,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO -AJUSTADO POR INFLACIÓN / EJERCICIO ECONÓMICO NRO: 84",
+      "columns": [
+        "RUBRO",
+        "CAPITAL SOCIAL",
+        "",
+        "",
+        "RESULTADOS NO ASIGNADOS",
+        "TOTAL P. NETO 31/12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "SUECEPTO",
+            "RESERVATORIO TECNICO",
+            "MUJTE CAPITAL",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Apertura",
+          "values": [
+            "",
+            "419,962,181.00",
+            "",
+            "701,367,596.64",
+            "1,121,329,777.64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dist de Resul no asig",
+          "values": [
+            "",
+            "",
+            "",
+            "-1,916,232.61",
+            "-1,916,232.61"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Area",
+          "values": [
+            "",
+            "",
+            "",
+            "-13,483,786.33",
+            "-13,483,786.33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado del ejercicio",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos Totales Ajustados al 31/12/2022",
+          "values": [
+            "",
+            "419,962,181.00",
+            "0.00",
+            "687,883,810.31",
+            "1,105,929,758.70"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 10,
+      "section": null,
+      "columns": [
+        "RUBRO",
+        "CAPITAL SOCIAL",
+        "",
+        "",
+        "RESULTADOS NO ASIGNADOS",
+        "TOTAL P. NETO 31/12/2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "SUECEPTO",
+            "RESERVATORIO TECNICO",
+            "MUJTE CAPITAL",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Apertura",
+          "values": [
+            "",
+            "419,962,181.00",
+            "",
+            "721,743,948.79",
+            "1,141,706,129.79"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dist de Resul no asig",
+          "values": [
+            "",
+            "",
+            "",
+            "-20,376,352.15",
+            "-20,376,352.15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado del ejercicio Perdida",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos Totales Ajustados al 31/12/2021",
+          "values": [
+            "",
+            "419,962,181.00",
+            "0.00",
+            "701,367,596.64",
+            "1,121,329,777.64"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 11,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE FLUJO EFECTIVO",
+      "columns": [
+        "ESTADO DE FLUJO DE EFECTIVO - metodo Indirecto",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Por el ejercicio anual finalizado el 31/10/2022 comparativo con ejercicio finalizado 31/10/2021",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "al 31/10/2022",
+            "al 31/10/2021"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VARIACION NETA DEL EFECTIVO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Efectivo al inicio del ejercicio",
+          "values": [
+            "281,999.80",
+            "6,993,685.38"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo al cierre del ejercicio",
+          "values": [
+            "3,899,196.81",
+            "281,999.80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variación neto del efectivo Aumento",
+          "values": [
+            "3,617,197.01",
+            "-6,711,685.58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAUSAS DE LAS VARIACIONES DEL EFECTIVO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Resultado del ejercicio",
+          "values": [
+            "-13,483,786.33",
+            "-20,373,352.15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciones",
+          "values": [
+            "12,234,038.65",
+            "11,505,805.26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Ingresos y Egresos",
+          "values": [
+            "-11,021,643.70",
+            "-10,190,670.97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) Disminucion Creditos",
+          "values": [
+            "8,573,612.79",
+            "6,536,999.88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) Disminucion Bienes de Uso",
+          "values": [
+            "9,105,411.09",
+            "9,968,654.98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento ( Disminucion ) Deudas",
+          "values": [
+            "1,338,192.07",
+            "-2,840,988.31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flujo neto de efectivo aplicado en actividades operativas",
+          "values": [
+            "6,745,824.57",
+            "-5,393,551.31"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ACTIVIDADES DE INVERSION",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Pagos por compras de bienes de uso",
+          "values": [
+            "-3,128,627.56",
+            "-1,315,134.27"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagos por Mejoras de Inversiones",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cobros por ventas de bienes de uso",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flujo neto de efectivo aplicado en actividades de inversión",
+          "values": [
+            "-3,128,627.56",
+            "-1,315,134.27"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ACTIVIDADES DE FINANCIACION",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Garantías de Directores",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes en efectivo de los propietarios",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flujo neto de efectivo generado por actividades de financiación",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variación neta del efectivo Aumento",
+          "values": [
+            "3,617,197.01",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Variación neta del efectivo Disminucion",
+          "values": [
+            "",
+            "-6,708,685.58"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 13,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / NOTAS A LOS ESTADOS CONTABLES AL 31/10/2022",
+      "columns": [
+        "Notas Contables",
+        "31/10/2022",
+        "31/10/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ACTIVO CORRIENTE",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2.1 Caja y Banco: En moneda nacional a su valor corriente",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caja",
+          "values": [
+            "2,000,576.01",
+            "219,910.58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valores a Depositar",
+          "values": [
+            "1,893,000.00",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO BBVA",
+          "values": [
+            "5,620.79",
+            "42,408.05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Credicoop Cia. Ltda",
+          "values": [
+            "0.01",
+            "19,681.17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "3,899,196.81",
+            "281,999.80"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "2.2 Creditos: En moneda nacional a su valor corriente / 2.2.1 Creditos comerciales",
+      "columns": [
+        "Deudores Varios",
+        "0.00",
+        "0.00",
+        "0.00",
+        "0.00"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2.2.2 Creditos Fiscales",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "IBB Saldo a Favor CF",
+          "values": [
+            "771,879.05",
+            "",
+            "1,170,781.81",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IBB Saldo a Favor BS AS",
+          "values": [
+            "568,535.27",
+            "",
+            "1,008,202.27",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IVA Saldo a Favor Tecnico",
+          "values": [
+            "0.00",
+            "",
+            "2816066.66",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IVA Saldo Libre Disponibilidad",
+          "values": [
+            "2,997,560.68",
+            "",
+            "6751975.49",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retenciones de Ganancias",
+          "values": [
+            "2,493,732.15",
+            "",
+            "3,664,955.28",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo a Favor Ganancias",
+          "values": [
+            "1,943,636.16",
+            "",
+            "1,626,884.63",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imp. Ley 25413 s/ credito",
+          "values": [
+            "725,968.96",
+            "9,501,312.27",
+            "1,036,058.91",
+            "18,074,925.06"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "3. Deudas Corrientes / 3.1 Deudas Fiscales",
+      "columns": [
+        "Plan mis facilidades Nro G653113 AFIP a pagar",
+        "174,101.69",
+        "",
+        "845,051.98",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Plan mis facilidades Nro J393392 AFIP a pagar",
+          "values": [
+            "0.00",
+            "",
+            "322,318.44",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plan mis facilidades Nro Q233454 AFIP a pagar",
+          "values": [
+            "288,386.78",
+            "",
+            "0.00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plan mis facilidades Nro Q868534 AFIP a pagar",
+          "values": [
+            "541,769.15",
+            "",
+            "0.00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plan mis facilidades Nro P517928 AFIP a pagar",
+          "values": [
+            "39,169.43",
+            "",
+            "0.00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plan mis facilidades Nro P504148 AFIP a pagar",
+          "values": [
+            "87,053.48",
+            "",
+            "0.00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "1,130,480.53",
+            "",
+            "1,167,370.42"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "3.2 Remuneraciones y Cargas Sociales: En moneda nacional a su valor corriente",
+      "columns": [
+        "Sueldos a pagar",
+        "1,609,144.38",
+        "",
+        "2,274,735.78",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Otra Social a pagar",
+          "values": [
+            "94,021.32",
+            "",
+            "126,017.20",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ART a Pagar",
+          "values": [
+            "28,688.36",
+            "",
+            "33,313.59",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sindicato a pagar",
+          "values": [
+            "0.00",
+            "",
+            "7,344.99",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seg de Vida empleados a Pagar",
+          "values": [
+            "4,055.89",
+            "1,735,909.95",
+            "42,048.80",
+            "2,483,460.36"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL ACTIVO CORRIENTE",
+      "target": "13,400,509.08",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL ACTIVO CORRIENTE",
+      "target": "18,356,924.86",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL ACTIVO NO CORRIENTE",
+      "target": "1,097,605,303.92",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL ACTIVO NO CORRIENTE",
+      "target": "1,106,710,715.01",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL ACTIVO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PASIVO CORRIENTE",
+      "target": "2,866,390.48",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PASIVO CORRIENTE",
+      "target": "3,650,830.78",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PASIVO NO CORRIENTE",
+      "target": "2,209,663.82",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PASIVO NO CORRIENTE",
+      "target": "87,031.45",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL PASIVO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PATRIMONIO NETO",
+      "target": "1,105,929,758.70",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PATRIMONIO NETO",
+      "target": "1,121,329,777.64",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE SITUACIÓN PATRIMONIAL - -AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL PASIVO MAS PATRIMONIO NETO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 4,
+      "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL DE RECURSOS",
+      "target": "143,589,036.64",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL DE RECURSOS",
+      "target": "118,912,013.56",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL GASTOS",
+      "target": "149,900,194.20",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL GASTOS",
+      "target": "131,860,039.06",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "CUIT: 33-53156200-9 / ANEXO II / CUOTA SOCIALES - ANEXO II- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:84 / CUOTAS SOCIALES",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales",
+      "target": "8,510,154.97",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "CUIT: 33-53156200-9 / ANEXO II / CUOTA SOCIALES - ANEXO II- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:84 / CUOTAS SOCIALES",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totales",
+      "target": "9,309,010.47",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "CUIT: 33-53156200-9 / ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84 / RECAUDACIONES POR ACTIVIDAD",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales",
+      "target": "135,078,881.67",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "CUIT: 33-53156200-9 / ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84 / RECAUDACIONES POR ACTIVIDAD",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totales",
+      "target": "109,603,003.09",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV- / EJERCICIO ECONÓMICO NRO:84 / GASTOS ESPECÍFICOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales",
+      "target": "49,206,174.97",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "-6000"
+    },
+    {
+      "page": 7,
+      "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV- / EJERCICIO ECONÓMICO NRO:84 / GASTOS ESPECÍFICOS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totales",
+      "target": "27,543,853.79",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "-0.009999997913837433"
+    },
+    {
+      "page": 8,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE USO ANEXO I A - AJUSTADO POR INFLACION / EJERCICIO ECONOMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"VALOR INICIAL\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE USO ANEXO I A - AJUSTADO POR INFLACION / EJERCICIO ECONOMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"ALTAS\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE USO ANEXO I A - AJUSTADO POR INFLACION / EJERCICIO ECONOMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"BAJAS\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE USO ANEXO I A - AJUSTADO POR INFLACION / EJERCICIO ECONOMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"VALOR AL CIERRE\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE USO ANEXO I A - AJUSTADO POR INFLACION / EJERCICIO ECONOMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"ACUMULADA AL INICIO\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE USO ANEXO I A - AJUSTADO POR INFLACION / EJERCICIO ECONOMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"DEL EJERCICIO\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE USO ANEXO I A - AJUSTADO POR INFLACION / EJERCICIO ECONOMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 6,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"ACUMULADAS AL CIERRE\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE USO ANEXO I A - AJUSTADO POR INFLACION / EJERCICIO ECONOMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 7,
+      "totalLabel": "Total 2022",
+      "target": "1,095,029,856.36",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"VALOR INICIAL\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"ALTAS\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"BAJAS\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"VALOR AL CIERRE\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"ACUMULADA AL INICIO\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"DEL EJERCICIO\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 6,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"ACUMULADAS AL CIERRE\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 7,
+      "totalLabel": "Total 2021",
+      "target": "1,104,505,615.05",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "200"
+    },
+    {
+      "page": 9,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE CONSUMO -ANEXO I B- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"VALOR INICIAL\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE CONSUMO -ANEXO I B- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"ALTAS\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE CONSUMO -ANEXO I B- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"BAJAS\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE CONSUMO -ANEXO I B- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"VALOR AL CIERRE\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE CONSUMO -ANEXO I B- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"ACUMULADA AL INICIO\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE CONSUMO -ANEXO I B- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"DEL EJERCICIO\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE CONSUMO -ANEXO I B- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 6,
+      "totalLabel": "Total 2022",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"ACUMULADAS AL CIERRE\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / BIENES DE CONSUMO -ANEXO I B- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 84",
+      "likelyRelevant": false,
+      "column": 7,
+      "totalLabel": "Total 2022",
+      "target": "2,575,447.56",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"VALOR INICIAL\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"ALTAS\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"BAJAS\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"VALOR AL CIERRE\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"ACUMULADA AL INICIO\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"DEL EJERCICIO\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 6,
+      "totalLabel": "Total 2021",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"ACUMULADAS AL CIERRE\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 9,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 7,
+      "totalLabel": "Total 2021",
+      "target": "2,204,899.96",
+      "addendCount": 3,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 51,
+    "results": [
+      {
+        "label": "RECURSOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECURSOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CUOTA SOCIALES -Anexo II",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CUOTA SOCIALES -Anexo II",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECAUDACIÓN POR ACTIVIDADES Anexo III",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECAUDACIÓN POR ACTIVIDADES Anexo III",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Gastos de mantenimiento",
+        "similarity": 50
+      },
+      {
+        "label": "GASTOS ESPECIFICOS -Anexos IV",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS ESPECIFICOS -Anexos IV",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS DE OPERACIONES -Anexos V",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS DE OPERACIONES -Anexos V",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "AMORTIZACIÓN Anexo IA Y Anexo IB",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "AMORTIZACIÓN Anexo IA Y Anexo IB",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "depreciation",
+        "matchedLabel": "Amortización (Anexo I A y I B)",
+        "similarity": 100
+      },
+      {
+        "label": "RESULTADO DEL EJERCICIO -GANANCIA -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RESULTADO DEL EJERCICIO -GANANCIA -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RESULTADO DEL EJERCICIO - PERDIDA-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RESULTADO DEL EJERCICIO - PERDIDA-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado financiero y por tenencia (incluye RECPAM)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado financiero y por tenencia (incluye RECPAM)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RESULTADO FINAL -PERDIDA -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RESULTADO FINAL -PERDIDA -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sede Social- Medrano 522 CABA",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "member_dues",
+        "matchedLabel": "Sede Social- Medrano 522 CABA",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Sede Social- Medrano 522 CABA",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Futbol Ingreso por Partidos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Futbol Ingreso por Partidos",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Futbol Ingreso por Partidos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingreso A.F.A: dcho tv",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Ingreso A.F.A: dcho tv",
+        "years": [
+          "2020",
+          "2021",
+          "2022"
+        ]
+      },
+      {
+        "label": "Ingreso A.F.A: dcho tv",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Asignacion Extraordinaria A.F.A",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Asignacion Extraordinaria A.F.A",
+        "years": [
+          "2021"
+        ]
+      },
+      {
+        "label": "Asignacion Extraordinaria A.F.A",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Alquiler de Sede",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Alquiler de Sede",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Alquiler de Sede",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Canon por Alquiler Cancha Tenis",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_sports",
+        "matchedLabel": "Canon por Alquiler Cancha Tenis",
+        "years": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Canon por Alquiler Cancha Tenis",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Publicidad",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Publicidad",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Alquiler de Antena",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Alquiler de Antena",
+        "years": [
+          "2018",
+          "2020",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Alquiler de Antena",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Derecho de Formacion Jugadores",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Derecho de Formacion Jugadores",
+        "years": [
+          "2021",
+          "2022"
+        ]
+      },
+      {
+        "label": "Derecho de Formacion Jugadores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prima por Venta Jugadores",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Prima por Venta Jugadores",
+        "years": [
+          "2022"
+        ]
+      },
+      {
+        "label": "Prima por Venta Jugadores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de mantenimiento",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de mantenimiento",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Gastos de mantenimiento",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Honorarios abogados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Honorarios abogados",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Honorarios abogados",
+        "years": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Honorarios Contador",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Honorarios Contador",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Honorarios Contador",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Gastos varios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos varios",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Gastos varios",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "Gastos Ambulancia para partidos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos Ambulancia para partidos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Gastos Ambulancia para partidos",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Estadías y traslados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Estadías y traslados",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Estadías y traslados",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Comision por compra Jugadores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Comision por compra Jugadores",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Comision por compra Jugadores",
+        "years": [
+          "2022"
+        ]
+      },
+      {
+        "label": "Comision por Representante",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Comision por Representante",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Comision por Representante",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Alquiler Vivienda para jugadores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Alquiler Vivienda para jugadores",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Alquiler Vivienda para jugadores",
+        "years": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Interese perdidos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Interese perdidos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Interese perdidos",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Gastos bancarios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos bancarios",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Gastos bancarios",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Impuesto Ley 25413",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impuesto Ley 25413",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Impuesto Ley 25413",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Iva no Computable",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Iva no Computable",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Iva no Computable",
+        "years": [
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Gastos Cuerpo Medico y Tecnico",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos Cuerpo Medico y Tecnico",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Gastos Cuerpo Médico y Técnico",
+        "years": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Sueldos y Jornales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sueldos y Jornales",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Sueldos y Jornales",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Cargas Sociales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cargas Sociales",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Cargas Sociales",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Cargas Sociales Seg Soc.",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cargas Sociales Seg Soc.",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Cargas Sociales Seg Soc.",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Multa",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Multa",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Multa",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Percepciones Perdidas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Percepciones Perdidas",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Percepciones Perdidas",
+        "years": [
+          "2022"
+        ]
+      },
+      {
+        "label": "Primas por contrato privado",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Primas por contrato privado",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Primas por contrato privado",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Gastos de Policía",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de Policía",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Gastos de Policía",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Juicios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juicios",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Juicios",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Alquiler para entrenamiento",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Alquiler para entrenamiento",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Alquiler para entrenamiento",
+        "years": [
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Apertura",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Apertura",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dist de Resul no asig",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dist de Resul no asig",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Area",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Area",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado del ejercicio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado del ejercicio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldos Totales Ajustados al 31/12/2022",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldos Totales Ajustados al 31/12/2022",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado del ejercicio Perdida",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado del ejercicio Perdida",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldos Totales Ajustados al 31/12/2021",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldos Totales Ajustados al 31/12/2021",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Almagro",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "31 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

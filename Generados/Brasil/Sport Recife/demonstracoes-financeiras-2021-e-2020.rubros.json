@@ -1,0 +1,498 @@
+{
+  "md": "Clubes/Brasil/Sport Recife/demonstracoes-financeiras-2021-e-2020.md",
+  "pdf": "Clubes/Brasil/Sport Recife/demonstracoes-financeiras-2021-e-2020.pdf",
+  "club": "sportrecife-br",
+  "year": 2021,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:53:58.655Z",
+  "tieOuts": {
+    "cierran": 4,
+    "noCierran": 4
+  },
+  "warnings": [
+    "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 40,
+    "notasUsadas": [
+      "21",
+      "22"
+    ]
+  },
+  "ladoConocido": 36,
+  "rubros": [
+    {
+      "label": "Receita operacional líquida",
+      "lado": "revenue",
+      "page": 11,
+      "section": "Demonstração do resultado",
+      "values": [
+        83.672499
+      ],
+      "origen": "estado 2",
+      "glosa": "Ingresos operativos netos"
+    },
+    {
+      "label": "Despesas de pessoal",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Custo das atividades",
+      "values": [
+        -49.187488
+      ],
+      "origen": "nota 21 (ancla 2)",
+      "ancla": "(-) Custo das atividades",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "(-) Custo das atividades",
+      "lado": "expense",
+      "page": 11,
+      "section": "Demonstração do resultado",
+      "values": [
+        -65.164658
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "(-) Coste de las actividades"
+    },
+    {
+      "label": "Despesas com competição",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Custo das atividades",
+      "values": [
+        -9.011655
+      ],
+      "origen": "nota 21 (ancla 2)",
+      "ancla": "(-) Custo das atividades",
+      "glosa": "Gastos de competición"
+    },
+    {
+      "label": "Despesas com formação de atletas e direitos contratuais",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Custo das atividades",
+      "values": [
+        -6.965516
+      ],
+      "origen": "nota 21 (ancla 2)",
+      "ancla": "(-) Custo das atividades",
+      "glosa": "Gastos de formación de deportistas y derechos contractuales"
+    },
+    {
+      "label": "Despesas de pessoal",
+      "lado": "expense",
+      "page": 28,
+      "section": "24. Despesas administrativas",
+      "values": [
+        -2.517025
+      ],
+      "origen": "nota 22 (ancla 2)",
+      "ancla": "Administrativas",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Administrativas",
+      "lado": null,
+      "page": 11,
+      "section": "Demonstração do resultado",
+      "values": [
+        -10.46709
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Administrativos"
+    },
+    {
+      "label": "Serviços de terceiros",
+      "lado": null,
+      "page": 28,
+      "section": "24. Despesas administrativas",
+      "values": [
+        -4.152001
+      ],
+      "origen": "nota 22 (ancla 2)",
+      "ancla": "Administrativas",
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Provisão para devedores duvidosos",
+      "lado": null,
+      "page": 28,
+      "section": "24. Despesas administrativas",
+      "values": [
+        -2.102566
+      ],
+      "origen": "nota 22 (ancla 2)",
+      "ancla": "Administrativas",
+      "glosa": "Provisión para insolvencias"
+    },
+    {
+      "label": "Despesas gerais",
+      "lado": "expense",
+      "page": 28,
+      "section": "24. Despesas administrativas",
+      "values": [
+        -1.695497
+      ],
+      "origen": "nota 22 (ancla 2)",
+      "ancla": "Administrativas",
+      "glosa": "Gastos generales"
+    },
+    {
+      "label": "Tributárias",
+      "lado": null,
+      "page": 11,
+      "section": "Demonstração do resultado",
+      "values": [
+        -1.285722
+      ],
+      "origen": "estado 2",
+      "glosa": "Tributarias"
+    },
+    {
+      "label": "Provisão para contingências",
+      "lado": null,
+      "page": 11,
+      "section": "Demonstração do resultado",
+      "values": [
+        -29.661049
+      ],
+      "origen": "estado 2",
+      "glosa": "Provisión para contingencias"
+    },
+    {
+      "label": "Depreciação e amortização",
+      "lado": null,
+      "page": 11,
+      "section": "Demonstração do resultado",
+      "values": [
+        -5.59061
+      ],
+      "origen": "estado 2",
+      "glosa": "Depreciación y amortización"
+    },
+    {
+      "label": "Receitas financeiras",
+      "lado": "revenue",
+      "page": 11,
+      "section": "Demonstração do resultado",
+      "values": [
+        0.391541
+      ],
+      "origen": "estado 2",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Despesas financeiras",
+      "lado": "expense",
+      "page": 11,
+      "section": "Demonstração do resultado",
+      "values": [
+        -42.179727
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Futebol",
+      "lado": "revenue",
+      "page": 28,
+      "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+      "values": [
+        17.088133
+      ],
+      "origen": "estado 20",
+      "glosa": "Fútbol"
+    },
+    {
+      "label": "Contribuições associativas",
+      "lado": "revenue",
+      "page": 28,
+      "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+      "values": [
+        3.244856
+      ],
+      "origen": "estado 20",
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Patrimonial",
+      "lado": "revenue",
+      "page": 28,
+      "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+      "values": [
+        0.510091
+      ],
+      "origen": "estado 20",
+      "glosa": "Patrimonial"
+    },
+    {
+      "label": "Marketing",
+      "lado": "revenue",
+      "page": 28,
+      "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+      "values": [
+        68.968734
+      ],
+      "origen": "estado 20",
+      "glosa": "Marketing"
+    },
+    {
+      "label": "Outras receitas",
+      "lado": "revenue",
+      "page": 28,
+      "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+      "values": [
+        4.319331
+      ],
+      "origen": "estado 20",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "INSS sobre faturamento(a)",
+      "lado": "revenue",
+      "page": 28,
+      "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+      "values": [
+        -3.728534
+      ],
+      "origen": "estado 20",
+      "glosa": "INSS sobre facturación (a)"
+    },
+    {
+      "label": "Sindicatos",
+      "lado": "revenue",
+      "page": 28,
+      "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+      "values": [
+        -3.472227
+      ],
+      "origen": "estado 20",
+      "glosa": "Sindicatos"
+    },
+    {
+      "label": "Federações",
+      "lado": "revenue",
+      "page": 28,
+      "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+      "values": [
+        -0.375829
+      ],
+      "origen": "estado 20",
+      "glosa": "Federaciones"
+    },
+    {
+      "label": "Outras deduções",
+      "lado": "revenue",
+      "page": 28,
+      "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+      "values": [
+        -2.882056
+      ],
+      "origen": "estado 20",
+      "glosa": "Otras deducciones"
+    },
+    {
+      "label": "Liga do Nordeste",
+      "lado": "revenue",
+      "page": 26,
+      "section": "19. Receitas antecipadas",
+      "values": [
+        220
+      ],
+      "origen": "estado 18",
+      "glosa": "Liga del Nordeste"
+    },
+    {
+      "label": "Confederação Brasileira de Futebol – CBF",
+      "lado": "revenue",
+      "page": 26,
+      "section": "19. Receitas antecipadas",
+      "values": [
+        133.523
+      ],
+      "origen": "estado 18",
+      "glosa": "Confederación Brasileña de Fútbol – CBF"
+    },
+    {
+      "label": "Federação Pernambucana de Futebol",
+      "lado": "revenue",
+      "page": 26,
+      "section": "19. Receitas antecipadas",
+      "values": [
+        1568.554
+      ],
+      "origen": "estado 18",
+      "glosa": "Federación Pernambucana de Fútbol"
+    },
+    {
+      "label": "Mensalidades",
+      "lado": "revenue",
+      "page": 26,
+      "section": "19. Receitas antecipadas",
+      "values": [
+        31.464
+      ],
+      "origen": "estado 18",
+      "glosa": "Cuotas mensuales"
+    },
+    {
+      "label": "12ª. Vara – TRT",
+      "lado": "revenue",
+      "page": 26,
+      "section": "19. Receitas antecipadas",
+      "values": [
+        42.52
+      ],
+      "origen": "estado 18",
+      "glosa": "12.º Juzgado – TRT"
+    },
+    {
+      "label": "Clube Internacional",
+      "lado": "revenue",
+      "page": 26,
+      "section": "19. Receitas antecipadas",
+      "values": [
+        150
+      ],
+      "origen": "estado 18",
+      "glosa": "Club Internacional"
+    },
+    {
+      "label": "Dass Nordeste",
+      "lado": "revenue",
+      "page": 26,
+      "section": "19. Receitas antecipadas",
+      "values": [
+        13.151
+      ],
+      "origen": "estado 18",
+      "glosa": "Dass Nordeste"
+    },
+    {
+      "label": "Rendas antecipadas – Patrocínios",
+      "lado": "revenue",
+      "page": 26,
+      "section": "19. Receitas antecipadas",
+      "values": [
+        7116.5
+      ],
+      "origen": "estado 18",
+      "glosa": "Ingresos anticipados – Patrocinios"
+    },
+    {
+      "label": "Terrenos",
+      "lado": "expense",
+      "page": 22,
+      "section": "10. Imobilizado",
+      "values": [
+        44.55
+      ],
+      "origen": "estado 8",
+      "glosa": "Terrenos"
+    },
+    {
+      "label": "Estádio",
+      "lado": "expense",
+      "page": 22,
+      "section": "10. Imobilizado",
+      "values": [
+        50.950075
+      ],
+      "origen": "estado 8",
+      "glosa": "Estadio"
+    },
+    {
+      "label": "Rede Social",
+      "lado": "expense",
+      "page": 22,
+      "section": "10. Imobilizado",
+      "values": [
+        27.8
+      ],
+      "origen": "estado 8",
+      "glosa": "Red Social"
+    },
+    {
+      "label": "Ginásio",
+      "lado": "expense",
+      "page": 22,
+      "section": "10. Imobilizado",
+      "values": [
+        16.95062
+      ],
+      "origen": "estado 8",
+      "glosa": "Gimnasio"
+    },
+    {
+      "label": "Parque aquático",
+      "lado": "expense",
+      "page": 22,
+      "section": "10. Imobilizado",
+      "values": [
+        24.5096
+      ],
+      "origen": "estado 8",
+      "glosa": "Parque acuático"
+    },
+    {
+      "label": "Máquinas/equipamentos/ veículos e outros",
+      "lado": "expense",
+      "page": 22,
+      "section": "10. Imobilizado",
+      "values": [
+        3.381229
+      ],
+      "origen": "estado 8",
+      "glosa": "Maquinaria/equipos/vehículos y otros"
+    },
+    {
+      "label": "Benfeitorias em prédio de terceiros",
+      "lado": "expense",
+      "page": 22,
+      "section": "10. Imobilizado",
+      "values": [
+        7.677021
+      ],
+      "origen": "estado 8",
+      "glosa": "Mejoras en inmuebles de terceros"
+    },
+    {
+      "label": "Aluguel do centro de treinamento e taxas de ocupação",
+      "lado": "expense",
+      "page": 22,
+      "section": "Notas explicativas da Administração às demonstrações contábeis / 8. Despesas antecipadas",
+      "values": [
+        2340.205
+      ],
+      "origen": "estado 6",
+      "glosa": "Alquiler del centro de entrenamiento y tasas de ocupación"
+    },
+    {
+      "label": "Circulante",
+      "lado": "expense",
+      "page": 22,
+      "section": "Notas explicativas da Administração às demonstrações contábeis / 8. Despesas antecipadas",
+      "values": [
+        333.534
+      ],
+      "origen": "estado 6",
+      "glosa": "Corriente"
+    },
+    {
+      "label": "Não Circulante",
+      "lado": "expense",
+      "page": 22,
+      "section": "Notas explicativas da Administração às demonstrações contábeis / 8. Despesas antecipadas",
+      "values": [
+        2006.671
+      ],
+      "origen": "estado 6",
+      "glosa": "No corriente"
+    }
+  ]
+}

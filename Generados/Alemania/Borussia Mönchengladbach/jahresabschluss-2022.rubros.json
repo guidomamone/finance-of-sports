@@ -1,0 +1,187 @@
+{
+  "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.md",
+  "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.pdf",
+  "club": "monchengladbach-de",
+  "year": 2022,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:50:18.963Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 15,
+    "notasUsadas": []
+  },
+  "ladoConocido": 10,
+  "rubros": [
+    {
+      "label": "Kaderspieler",
+      "lado": null,
+      "page": 10,
+      "section": "UNTERNEHMENSREGISTER / 4. Erläuterungen zur Gewinn- und Verlustrechnung / 5. Arbeitnehmer",
+      "values": [
+        39
+      ],
+      "origen": "estado 8",
+      "glosa": "Jugadores de la plantilla"
+    },
+    {
+      "label": "Angestellte",
+      "lado": null,
+      "page": 10,
+      "section": "UNTERNEHMENSREGISTER / 4. Erläuterungen zur Gewinn- und Verlustrechnung / 5. Arbeitnehmer",
+      "values": [
+        347
+      ],
+      "origen": "estado 8",
+      "glosa": "Empleados"
+    },
+    {
+      "label": "Aushilfen",
+      "lado": null,
+      "page": 10,
+      "section": "UNTERNEHMENSREGISTER / 4. Erläuterungen zur Gewinn- und Verlustrechnung / 5. Arbeitnehmer",
+      "values": [
+        749
+      ],
+      "origen": "estado 8",
+      "glosa": "Personal temporal"
+    },
+    {
+      "label": "a) Löhne und Gehälter",
+      "lado": null,
+      "page": 5,
+      "section": "# Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2022",
+      "values": [
+        95.811057
+      ],
+      "origen": "estado 4",
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) Soziale Abgaben",
+      "lado": null,
+      "page": 5,
+      "section": "# Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2022",
+      "values": [
+        7.429105
+      ],
+      "origen": "estado 4",
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "8. Sonstige Zinsen und ähnliche Erträge",
+      "lado": "revenue",
+      "page": 6,
+      "section": "UNTERNEHMENSREGISTER",
+      "values": [
+        0.017175
+      ],
+      "origen": "estado 5",
+      "glosa": "8. Otros intereses e ingresos asimilados"
+    },
+    {
+      "label": "9. Zinsen und ähnliche Aufwendungen",
+      "lado": "expense",
+      "page": 6,
+      "section": "UNTERNEHMENSREGISTER",
+      "values": [
+        1.525073
+      ],
+      "origen": "estado 5",
+      "glosa": "9. Intereses y gastos asimilados"
+    },
+    {
+      "label": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+      "lado": "expense",
+      "page": 12,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        19.15247
+      ],
+      "origen": "estado 9",
+      "glosa": "1. Concesiones, derechos de propiedad industrial y derechos y valores similares adquiridos a título oneroso, así como licencias sobre tales derechos y valores"
+    },
+    {
+      "label": "2. Spielerwerte",
+      "lado": "expense",
+      "page": 12,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        173.506935
+      ],
+      "origen": "estado 9",
+      "glosa": "2. Derechos federativos"
+    },
+    {
+      "label": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+      "lado": "expense",
+      "page": 12,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        150.507983
+      ],
+      "origen": "estado 9",
+      "glosa": "1. Terrenos, derechos análogos y construcciones, incluidas las construcciones en terrenos ajenos"
+    },
+    {
+      "label": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+      "lado": "expense",
+      "page": 12,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        15.828028
+      ],
+      "origen": "estado 9",
+      "glosa": "2. Otras instalaciones, equipamiento operativo y de oficina"
+    },
+    {
+      "label": "3. Geleistete Anzahlungen und Anlagen im Bau",
+      "lado": "expense",
+      "page": 12,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        0.226098
+      ],
+      "origen": "estado 9",
+      "glosa": "3. Anticipos e inmovilizado en curso"
+    },
+    {
+      "label": "1. Anteile an verbundenen Unternehmen",
+      "lado": "expense",
+      "page": 12,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        0.3
+      ],
+      "origen": "estado 9",
+      "glosa": "1. Participaciones en empresas del grupo"
+    },
+    {
+      "label": "2. Beteiligungen",
+      "lado": "expense",
+      "page": 12,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        2.44284
+      ],
+      "origen": "estado 9",
+      "glosa": "2. Participaciones"
+    },
+    {
+      "label": "3. Sonstige Finanzanlagen",
+      "lado": "expense",
+      "page": 12,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        0.0006
+      ],
+      "origen": "estado 9",
+      "glosa": "3. Otras inversiones financieras"
+    }
+  ]
+}

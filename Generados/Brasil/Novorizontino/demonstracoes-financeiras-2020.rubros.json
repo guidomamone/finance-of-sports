@@ -1,0 +1,190 @@
+{
+  "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.md",
+  "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.pdf",
+  "club": "novorizontino",
+  "year": 2020,
+  "generatedAt": "2026-10-03T01:55:12.204Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Repasse da federação",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        6.374
+      ],
+      "glosa": "Transferencias de la federación"
+    },
+    {
+      "label": "Negociação e empréstimo de atletas (nota nº6)",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        3.128
+      ],
+      "glosa": "Traspaso y cesión de deportistas (nota nº 6)"
+    },
+    {
+      "label": "Receita com patrocínios",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.314
+      ],
+      "glosa": "Ingresos por patrocinios"
+    },
+    {
+      "label": "Vendas de ingressos e bar",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.349
+      ],
+      "glosa": "Venta de entradas y bar"
+    },
+    {
+      "label": "Subvenções (nota 11)",
+      "lado": "revenue",
+      "page": 25,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.095
+      ],
+      "glosa": "Subvenciones (nota 11)"
+    },
+    {
+      "label": "Outras receitas operacionais",
+      "lado": "revenue",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.002
+      ],
+      "glosa": "Otros ingresos operativos"
+    },
+    {
+      "label": "Salários, ordenados e outros custos com pessoal",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Custos\"",
+      "values": [
+        11.607
+      ],
+      "glosa": "Sueldos, salarios y otros gastos de personal"
+    },
+    {
+      "label": "Gastos com jogos",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Custos\"",
+      "values": [
+        1.256
+      ],
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Aluguéis",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Custos\"",
+      "values": [
+        0.568
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Custos\"",
+      "values": [
+        0.261
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Serviços prestados",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        1.536
+      ],
+      "glosa": "Servicios prestados"
+    },
+    {
+      "label": "Provisão para Perdas (nota nº5)",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        1.5
+      ],
+      "glosa": "Provisión para pérdidas (nota nº 5)"
+    },
+    {
+      "label": "Despesas administrativas",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.901
+      ],
+      "glosa": "Gastos administrativos"
+    },
+    {
+      "label": "Manutenções",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.607
+      ],
+      "glosa": "Mantenimiento"
+    },
+    {
+      "label": "Gastos com negociação de atletas",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.17
+      ],
+      "glosa": "Gastos por negociación de deportistas"
+    },
+    {
+      "label": "Combustível e lubrificantes",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.1
+      ],
+      "glosa": "Combustibles y lubricantes"
+    },
+    {
+      "label": "Depreciação / Amortização",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.096
+      ],
+      "glosa": "Depreciación / Amortización"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 26,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.3
+      ],
+      "glosa": "Otros"
+    }
+  ]
+}

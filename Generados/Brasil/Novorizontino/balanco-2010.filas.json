@@ -1,0 +1,149 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2010.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2010.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T03:08:37.605Z",
+ "ubicacion": {
+  "estado": [
+   "b1"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "L3: \"Balanço Patrimonial encerrado em 31/12/2010 (em reais)\""
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 7,
+   "etiqueta": "Convênio P.M.N.H nº 21/10",
+   "actual": "70.000,00",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 8,
+   "etiqueta": "Doações, Receitas de Patrocínio, Locação de Espaço, e Ev",
+   "actual": "60.350,36",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 9,
+   "etiqueta": "Receita Líquida Operacional",
+   "actual": "130.350,36",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 10,
+   "etiqueta": "Resultado Bruto Operacional",
+   "actual": "130.350,36",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 12,
+   "etiqueta": "Administrativas",
+   "actual": "40.535,53",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 13,
+   "etiqueta": "Despesas Gerais e Manutenção",
+   "actual": "56.757,99",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 14,
+   "etiqueta": "Financeiras Líquidas",
+   "actual": "1.690,90",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Projeto Escola de Futebol -Conv. Nº 21/10",
+   "actual": "66.652,65",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "Despesas Operacionais",
+   "actual": "165.637,07",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "Resultado Líquido Operacional",
+   "actual": "-35.286,71",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 9,
+  "actual": "130.350,36"
+ },
+ "total_gastos": {
+  "linea": 15,
+  "actual": "165.637,07"
+ },
+ "resultado": {
+  "linea": 16,
+  "actual": "-35.286,71",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 165.637,07 de L15 como total de 'Despesas Operacionais' (impreso en la columna derecha de la fila 'Projeto Escola de Futebol') y 66.652,65 como importe de ese proyecto?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Despesas Operacionais",
+   "texto": "En L15 hay dos importes en columnas distintas: el parcial del proyecto y la suma de L12-L15 (165.637,07), que es el total de gastos.",
+   "bloques": [
+    "b1"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Solo hay columna 31/12/2010, sin año anterior. Los gastos parciales (L12-L15) están en la columna intermedia. El total de gastos (165.637,07) aparece en la columna derecha de L15. El resultado del ejercicio es 'Resultado Líquido Operacional' (L16). No hay impuesto a las ganancias."
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/España/CA Osasuna/auditoria2022.md",
+ "generado": "2026-10-02T00:18:48.760Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"deudas a corto plazo\" + \"deudas a largo plazo\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "(Euros)",
+ "caja": {
+  "lineas": [
+   360
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   415,
+   424
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda = Deudas a largo plazo (L415, 35.176.789,52) + Deudas a corto plazo (L424, 10.662.538,61), según criterio del club; caja en L360 (Tesorería 6.029.247,44)."
+}

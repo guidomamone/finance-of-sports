@@ -1,0 +1,855 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.md",
+ "pdf": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2023-fpf.pdf",
+ "club": "ferroviaria",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:52:34.115Z",
+ "tieOuts": {
+  "cierran": 2,
+  "noCierran": 4
+ },
+ "warnings": [
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 83,
+  "notasUsadas": []
+ },
+ "ladoConocido": 59,
+ "rubros": [
+  {
+   "label": "Direitos de transmissão de TV",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    5684.695
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Patrocínio",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    3523.1
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Publicidade",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    873.305
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Arrecadação de jogos",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    521.17
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Cessão temporária dos atletas",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    4520.43
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Cessão definitiva dos atletas",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    393.859
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Direitos econômicos",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    2839.047
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Mecanismo Solidariedade da FIFA",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    150
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Sócio torcedor",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    108.724
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Premiações",
+   "lado": null,
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    405
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Outras receitas",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    137.685
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Impostos incidentes sobre a receita",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    -614.341
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "(-) Custos operacionais",
+   "lado": "expense",
+   "page": 8,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    -20846.232
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Administrativas e gerais",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    -5.09485
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Com pessoal",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    -1.864064
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Atletas não profissionais",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    -3.995818
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Com materiais",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    -0.804482
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Alojamento e moradia",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    -1.188523
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Tributária",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    0.732267
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Outras despesas",
+   "lado": "expense",
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    -0.850559
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Receita financeira",
+   "lado": "revenue",
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    0.321606
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    -1.108934
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Quantidade de ações integralizadas",
+   "lado": null,
+   "page": 9,
+   "section": "Ferroviária S.A.F. / # Demonstrações do resultado / Exercícios findos em 31 de dezembro / Em reais",
+   "values": [
+    17.834019
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Rendimento sobre aplicação financeira",
+   "lado": "revenue",
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "values": [
+    0.012683
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Descontos obtidos",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "values": [
+    0.006517
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Variação cambial",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "values": [
+    0.302405
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Rendas eventuais",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "values": [
+    0.000001
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Encargos financeiros com a F.P.F",
+   "lado": "expense",
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "values": [
+    -0.196935
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Tarifas bancárias",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "values": [
+    -0.062062
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Juros passivos",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "values": [
+    -0.13172
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Variação cambial",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "values": [
+    -0.701236
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Perdas eventuais",
+   "lado": null,
+   "page": 30,
+   "section": "Ferroviária S.A.P. / # 24 Resultado financeiro",
+   "values": [
+    -0.016981
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Serviços de consultoria",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.475674
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Serviços contábeis, advocatícios e auditoria",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.464427
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Serviços de apoio administrativo",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.136734
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Viagens e estadias",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.085947
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Refeitório",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    1.743234
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Premiação",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.0025
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Manutenção e conservação de bens",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.097218
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Propaganda e publicidade",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.091818
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Licença de software",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.051616
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Material de limpeza, higiene, copa e cozinha",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.216455
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Material de escritório",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.020202
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Gestão do programa sócio torcedor",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.002155
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Depreciações",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.10022
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Seguro de vida",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.004261
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Material esportivo",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.102754
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Contingências",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.905946
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Outras",
+   "lado": "expense",
+   "page": 29,
+   "section": "# 23 Despesas administrativas e gerais",
+   "values": [
+    0.593689
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Com pessoal",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    11.891878
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Direito de uso de imagem",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    8.236715
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Com jogos",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    2.171726
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Premiações",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    0.767966
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Viagens e hospedagens",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    0.980618
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    0.833776
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Taxas de federação e confederação",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    0.362178
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Agenciamento de atletas",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    0.89944
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Manutenção e conservação",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    0.02835
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Moradia",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    0.183494
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Material esportivo",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    0.049289
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Amortização de atletas formados",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    0.29076
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Baixa de atletas formados",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    0.063734
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Outros custos",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ferroviária S.A.F. / (Em reais) / # 22 Custos operacionais",
+   "values": [
+    0.275612
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Móveis e utensílios",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "values": [
+    0.308855
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Instalações",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "values": [
+    0.053366
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Equipamentos de informática",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "values": [
+    0.074911
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Equipamentos esportivos",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "values": [
+    0.03947
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Veículos",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "values": [
+    0.209251
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Máquinas e equipamentos",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "values": [
+    0.282039
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Aparelhos de comunicação",
+   "lado": "expense",
+   "page": 23,
+   "section": "# a. Movimentação do custo",
+   "values": [
+    0.002279
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Salários a pagar",
+   "lado": "expense",
+   "page": 26,
+   "section": "Ferroviária S.A.F. / # 14 Salários e encargos a pagar",
+   "values": [
+    0.715794
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "INSS a recolher",
+   "lado": "expense",
+   "page": 26,
+   "section": "Ferroviária S.A.F. / # 14 Salários e encargos a pagar",
+   "values": [
+    2.078356
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "FGTS a recolher",
+   "lado": "expense",
+   "page": 26,
+   "section": "Ferroviária S.A.F. / # 14 Salários e encargos a pagar",
+   "values": [
+    0.223819
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Rescisões a pagar",
+   "lado": "expense",
+   "page": 26,
+   "section": "Ferroviária S.A.F. / # 14 Salários e encargos a pagar",
+   "values": [
+    0.098823
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "PIS sobre folha a recolher",
+   "lado": "expense",
+   "page": 26,
+   "section": "Ferroviária S.A.F. / # 14 Salários e encargos a pagar",
+   "values": [
+    0.073664
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "IRRF a recolher",
+   "lado": "expense",
+   "page": 26,
+   "section": "Ferroviária S.A.F. / # 14 Salários e encargos a pagar",
+   "values": [
+    0.541707
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Marcas e patentes",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 11 Intangível",
+   "values": [
+    2.6
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Direito de uso (i)",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 11 Intangível",
+   "values": [
+    1593.393
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Atletas em formação (ii)",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 11 Intangível",
+   "values": [
+    3166.345
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Atletas profissionais formados (iii)",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 11 Intangível",
+   "values": [
+    212.298
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Atletas profissionais contratados (iii)",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 11 Intangível",
+   "values": [
+    5400
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Banco Bradesco",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Movimentação dos empréstimos:",
+   "values": [
+    0.95884
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Banco SICOOB",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Movimentação dos empréstimos:",
+   "values": [
+    0.194989
+   ],
+   "origen": "estado 14"
+  }
+ ]
+}

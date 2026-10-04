@@ -1,0 +1,185 @@
+{
+ "md": "Clubes/Colombia/Llaneros/estados-financieros-2018.md",
+ "pdf": "Clubes/Colombia/Llaneros/estados-financieros-2018.pdf",
+ "club": "llaneros",
+ "year": 2018,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:59:13.061Z",
+ "tieOuts": {
+  "cierran": 22,
+  "noCierran": 2
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 16,
+  "notasUsadas": []
+ },
+ "ladoConocido": 16,
+ "rubros": [
+  {
+   "label": "*Honorarios*",
+   "lado": "expense",
+   "page": 18,
+   "section": "## NOTA 19. Gastos De Administración",
+   "values": [
+    106166.444
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "*Impuestos*",
+   "lado": "expense",
+   "page": 18,
+   "section": "## NOTA 19. Gastos De Administración",
+   "values": [
+    2480.477
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "*Arrendamientos*",
+   "lado": "expense",
+   "page": 18,
+   "section": "## NOTA 19. Gastos De Administración",
+   "values": [
+    17399.65
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "*Seguros*",
+   "lado": "expense",
+   "page": 18,
+   "section": "## NOTA 19. Gastos De Administración",
+   "values": [
+    1785
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "*Servicios*",
+   "lado": "expense",
+   "page": 18,
+   "section": "## NOTA 19. Gastos De Administración",
+   "values": [
+    13686.681
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "*Gastos legales*",
+   "lado": "expense",
+   "page": 18,
+   "section": "## NOTA 19. Gastos De Administración",
+   "values": [
+    2251.455
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "*Mantenimiento y reparaciones*",
+   "lado": "expense",
+   "page": 18,
+   "section": "## NOTA 19. Gastos De Administración",
+   "values": [
+    2068.328
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "*Gastos de viaje*",
+   "lado": "expense",
+   "page": 18,
+   "section": "## NOTA 19. Gastos De Administración",
+   "values": [
+    3231.877
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "*Otros gastos*",
+   "lado": "expense",
+   "page": 18,
+   "section": "## NOTA 19. Gastos De Administración",
+   "values": [
+    24601.739
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "*Saldo a Enero 1 de 2017*",
+   "lado": "expense",
+   "page": 13,
+   "section": "",
+   "values": [
+    4898.71
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "*Adiciones*",
+   "lado": "expense",
+   "page": 13,
+   "section": "",
+   "values": [
+    1790
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "*Saldo a Enero 1 de 2018*",
+   "lado": "expense",
+   "page": 13,
+   "section": "",
+   "values": [
+    4898.71
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "*Financieros*",
+   "lado": "expense",
+   "page": 19,
+   "section": "## NOTA 21. Otros Gastos",
+   "values": [
+    56503.9
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "*Gastos extraordinarios*",
+   "lado": "expense",
+   "page": 19,
+   "section": "## NOTA 21. Otros Gastos",
+   "values": [
+    283168.695
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "*Gastos diversos*",
+   "lado": "expense",
+   "page": 19,
+   "section": "## NOTA 21. Otros Gastos",
+   "values": [
+    183874.986
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "*Ingresos de actividades ordinarias por prestación de servicios de actividades deportivas*",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Estado de Revelaciones y Políticas Contables Explicativas a los Estados Financieros 2018 / ## NOTA 18. Ingresos Por Actividades Ordinarias",
+   "values": [
+    1426937.811
+   ],
+   "origen": "estado 15"
+  }
+ ]
+}

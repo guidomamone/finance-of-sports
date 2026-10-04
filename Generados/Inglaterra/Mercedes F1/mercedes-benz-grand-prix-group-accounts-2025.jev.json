@@ -1,0 +1,710 @@
+{
+ "md": "Clubes/Inglaterra/Mercedes F1/mercedes-benz-grand-prix-group-accounts-2025.md",
+ "generatedAt": "2026-09-30T01:11:53.070Z",
+ "rubros": [
+  {
+   "label": "Finance income",
+   "page": 18,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / CONSOLIDATED STATEMENT OF PROFIT AND LOSS AND OTHER COMPREHENSIVE INCOME / FOR THE YEAR ENDED 31 DECEMBER 2025",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1297
+  },
+  {
+   "label": "Profit before tax",
+   "page": 18,
+   "section": "Finance expenses 5 (885)",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "other_income",
+     0.22
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Operating profit",
+   "page": 18,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / CONSOLIDATED STATEMENT OF PROFIT AND LOSS AND OTHER COMPREHENSIVE INCOME / FOR THE YEAR ENDED 31 DECEMBER 2025",
+   "choice": "other_income",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "lump_football_operations",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.23
+    ]
+   ],
+   "tokens": 1297
+  },
+  {
+   "label": "Tax on profit",
+   "page": 18,
+   "section": "Finance expenses 5 (885)",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Gross profit .",
+   "page": 18,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / CONSOLIDATED STATEMENT OF PROFIT AND LOSS AND OTHER COMPREHENSIVE INCOME / FOR THE YEAR ENDED 31 DECEMBER 2025",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_income",
+     0.48
+    ],
+    [
+     "lump_football_operations",
+     0.4
+    ],
+    [
+     "sponsorship_commercial",
+     0.08
+    ]
+   ],
+   "tokens": 1298
+  },
+  {
+   "label": "Revenue",
+   "page": 18,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / CONSOLIDATED STATEMENT OF PROFIT AND LOSS AND OTHER COMPREHENSIVE INCOME / FOR THE YEAR ENDED 31 DECEMBER 2025",
+   "choice": "lump_football_operations",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.71
+    ],
+    [
+     "other_income",
+     0.16
+    ],
+    [
+     "sponsorship_commercial",
+     0.08
+    ]
+   ],
+   "tokens": 1296
+  },
+  {
+   "label": "Administrative expenses ’",
+   "page": 18,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / CONSOLIDATED STATEMENT OF PROFIT AND LOSS AND OTHER COMPREHENSIVE INCOME / FOR THE YEAR ENDED 31 DECEMBER 2025",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1301
+  },
+  {
+   "label": "Cost of sales",
+   "page": 18,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / CONSOLIDATED STATEMENT OF PROFIT AND LOSS AND OTHER COMPREHENSIVE INCOME / FOR THE YEAR ENDED 31 DECEMBER 2025",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "lump_football_operations_expense",
+     0.37
+    ],
+    [
+     "match_organisation_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1298
+  },
+  {
+   "label": "Revaluation surplus on tangible fixed assets 9°",
+   "page": 18,
+   "section": "Other comprehensive income for the year / Deferred tax : 11 : 2,086 / Realised utilisation of the revaluation reserve (994)",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1292
+  },
+  {
+   "label": "Other comprehensive income for the year .",
+   "page": 18,
+   "section": "Other comprehensive income for the year / Deferred tax : 11 : 2,086 / Realised utilisation of the revaluation reserve (994)",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.64
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1287
+  },
+  {
+   "label": "Profit for the financial year",
+   "page": 18,
+   "section": "Finance expenses 5 (885)",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "Point in time",
+   "page": 37,
+   "section": "2025 2024* / . £000 £°000 / Timing of revenue recognition",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Overtime . ; . ;",
+   "page": 37,
+   "section": "2025 2024* / . £000 £°000 / Timing of revenue recognition",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "broadcasting",
+     0.03
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "Depreciation and amortisation",
+   "page": 38,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / 3 Expenses and auditor's remuneration",
+   "choice": "depreciation",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "depreciation",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Research and development expensed as incurred",
+   "page": 38,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / 3 Expenses and auditor's remuneration",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Loss on disposal of property, plant and equipment",
+   "page": 38,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / 3 Expenses and auditor's remuneration",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "exceptional_items",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Wages and salaries",
+   "page": 38,
+   "section": "4 Staff numbers and costs",
+   "choice": "wages_squad",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "wages_squad",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Exchange differences",
+   "page": 38,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / 3 Expenses and auditor's remuneration",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Social security costs",
+   "page": 38,
+   "section": "4 Staff numbers and costs",
+   "choice": "other_expenses",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "wages_squad",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ]
+   ],
+   "tokens": 1255
+  },
+  {
+   "label": "Cost of defined contribution scheme",
+   "page": 38,
+   "section": "4 Staff numbers and costs",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "wages_squad",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Deferred tax on IFRS 16 transition",
+   "page": 40,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / Income tax recognised in other comprehensive income",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "other_income",
+     0.1
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Deferred tax on other adjustments",
+   "page": 40,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / Income tax recognised in other comprehensive income",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "other_income",
+     0.06
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Revaluation of property, plant and equipment",
+   "page": 40,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / Income tax recognised in other comprehensive income",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Property, plant and equipment",
+   "page": 49,
+   "section": "Movement in deferred tax during the prior year",
+   "choice": "depreciation",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "depreciation",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "Deferred tax on share-based payments",
+   "page": 40,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / Income tax recognised in other comprehensive income",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "other_income",
+     0.06
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "IFRS adjustments",
+   "page": 49,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "exceptional_items",
+     0.14
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "Share-based payments",
+   "page": 49,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "wages_squad",
+     0.15
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "IFRS transition adjustments",
+   "page": 49,
+   "section": "Movement in deferred tax during the prior year",
+   "choice": "admin_general_expense",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.41
+    ],
+    [
+     "other_income",
+     0.1
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Provisions",
+   "page": 49,
+   "section": "Movement in deferred tax during the prior year",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Equity settled share-based payment expense",
+   "page": 52,
+   "section": "Expense recognised",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ],
+    [
+     "wages_squad",
+     0.11
+    ]
+   ],
+   "tokens": 1255
+  },
+  {
+   "label": "€",
+   "page": 61,
+   "section": "Sensitivity analysis / Group",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1253
+  },
+  {
+   "label": "$",
+   "page": 61,
+   "section": "Sensitivity analysis / Group",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1252
+  }
+ ]
+}

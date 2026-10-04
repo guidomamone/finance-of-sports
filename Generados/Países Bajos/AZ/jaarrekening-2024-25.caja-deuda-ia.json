@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Países Bajos/AZ/jaarrekening-2024-25.md",
+ "generado": "2026-10-02T00:11:34.250Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "€ x 1000",
+ "caja": {
+  "lineas": [
+   768
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   802
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda bancaria no corriente (L802, 6.667); la porción corriente (667) está incluida dentro de 'Overige schulden' corrientes sin línea separada. La lening gemeente Zaanstad (4.306) está dentro de 'Overige schulden' largo plazo (L803), que mezcla otros conceptos, por lo que no se incluyó."
+}

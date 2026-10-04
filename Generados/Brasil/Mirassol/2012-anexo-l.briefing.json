@@ -1,0 +1,345 @@
+{
+  "club": "mirassol",
+  "year": 2012,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Mirassol/2012-anexo-l.md",
+  "generatedAt": "2026-09-30T21:53:27.524Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 4,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 1,
+      "section": "## Demonstração de Superávit ou Déficit / MIRASSOL FUTEBOL CLUBE / CNPJ: 51.352.862/0001-14",
+      "columns": [
+        "Descrição",
+        "",
+        "Valor"
+      ],
+      "rows": [
+        {
+          "rawLabel": "(-) Despesas Administrativas",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Total:",
+            "41.200,13 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Despesas Financeiras",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Total:",
+            "58.868,38 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Despesas Gerais",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Total:",
+            "4.798.989,45 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Despesas Tributárias",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Total:",
+            "11.723,43 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Outras Despesas Operacionais",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Total:",
+            "622.794,55 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Receitas Financeiras",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Total:",
+            "75.166,47 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Outras Receitas Operacionais",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Total:",
+            "5.331.623,17 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Déficit Operacional",
+          "values": [
+            "",
+            "277.119,24 D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(+) Outras Receitas",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Total:",
+            "573,56 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Déficit Contábil Líquido antes da Contribuição Social",
+          "values": [
+            "",
+            "276.545,68 D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "= Déficit Contábil Líquido antes do Imposto de Renda",
+          "values": [
+            "",
+            "276.545,68 D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "= Déficit",
+          "values": [
+            "",
+            "276.545,68 D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "= Déficit Líquido do Período",
+          "values": [
+            "",
+            "276.545,68 D"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 13,
+    "results": [
+      {
+        "label": "(-) Despesas Administrativas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Despesas Administrativas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Despesas Financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Despesas Financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Despesas Gerais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Despesas Gerais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Despesas Tributárias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Despesas Tributárias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Outras Despesas Operacionais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Outras Despesas Operacionais",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Despesas operacionais",
+        "similarity": 67
+      },
+      {
+        "label": "(+) Receitas Financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(+) Receitas Financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(+) Outras Receitas Operacionais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(+) Outras Receitas Operacionais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "= Déficit Operacional",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "= Déficit Operacional",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(+) Outras Receitas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(+) Outras Receitas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "= Déficit Contábil Líquido antes da Contribuição Social",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "= Déficit Contábil Líquido antes da Contribuição Social",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "= Déficit Contábil Líquido antes do Imposto de Renda",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "= Déficit Contábil Líquido antes do Imposto de Renda",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "= Déficit",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "= Déficit",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "= Déficit Líquido do Período",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "= Déficit Líquido do Período",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Mirassol",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

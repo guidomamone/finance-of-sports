@@ -1,0 +1,269 @@
+{
+ "md": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2022-06-30.md",
+ "generatedAt": "2026-09-30T22:49:03.548Z",
+ "rubrosHuella": "2c194aaa37530f793311321121d78f2f92f707b4",
+ "rubros": [
+  {
+   "label": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver<br>*Depreciation, amortisation and impairment of intangible assets and property, plant and equipment*",
+   "lado": null,
+   "page": 19,
+   "section": "# Resultatopgørelse 1. juli - 30. juni",
+   "choice": "depreciation",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Personaleomkostninger<br>*Staff expenses*",
+   "lado": "expense",
+   "page": 19,
+   "section": "# Resultatopgørelse 1. juli - 30. juni",
+   "choice": "wages_squad",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "wages_squad",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Nedskrivninger af immaterielle anlægsaktiver<br>*Impairment of intangible assets*",
+   "lado": null,
+   "page": 29,
+   "section": "# Noter til årsregnskabet / ## 4 Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+   "choice": "player_impairment",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "player_impairment",
+     0.98
+    ],
+    [
+     "depreciation",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1623
+  },
+  {
+   "label": "Andre omkostninger til social sikring<br>*Other social security expenses*",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Noter til årsregnskabet / ## 2 Særlige poster / ## 3 Personaleomkostninger",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.42
+    ],
+    [
+     "wages_squad",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.17
+    ]
+   ],
+   "tokens": 1121
+  },
+  {
+   "label": "Afskrivninger af materielle anlægsaktiver<br>*Depreciation of property, plant and equipment*",
+   "lado": null,
+   "page": 29,
+   "section": "# Noter til årsregnskabet / ## 4 Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1561
+  },
+  {
+   "label": "Finansielle indtægter<br>*Financial income*",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Resultatopgørelse 1. juli - 30. juni",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1094
+  },
+  {
+   "label": "Afskrivninger af immaterielle anlægsaktiver<br>*Amortisation of intangible assets*",
+   "lado": null,
+   "page": 29,
+   "section": "# Noter til årsregnskabet / ## 4 Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+   "choice": "player_amortisation",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "player_amortisation",
+     0.68
+    ],
+    [
+     "other_amortisation",
+     0.26
+    ],
+    [
+     "depreciation",
+     0.04
+    ]
+   ],
+   "tokens": 1614
+  },
+  {
+   "label": "Lønninger<br>*Wages and salaries*",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Noter til årsregnskabet / ## 2 Særlige poster / ## 3 Personaleomkostninger",
+   "choice": "wages_squad",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "wages_squad",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Pensioner<br>*Pensions*",
+   "lado": "expense",
+   "page": 28,
+   "section": "# Noter til årsregnskabet / ## 2 Særlige poster / ## 3 Personaleomkostninger",
+   "choice": "wages_squad",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "wages_squad",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 963
+  },
+  {
+   "label": "Finansielle omkostninger<br>*Financial expenses*",
+   "lado": "expense",
+   "page": 19,
+   "section": "# Resultatopgørelse 1. juli - 30. juni",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Andre finansielle indtægter<br>*Other financial income*",
+   "lado": "revenue",
+   "page": 29,
+   "section": "## 5 Finansielle indtægter",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Grunde og bygninger med en regnskabsmæssig værdi på<br>*Land and buildings with a carrying amount of*",
+   "lado": "expense",
+   "page": 36,
+   "section": "# Noter til årsregnskabet / ## 18 Eventualposter og øvrige økonomiske forpligtelser / Pant og sikkerhedsstillelse / *Charges and security*",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.57
+    ],
+    [
+     "depreciation",
+     0.32
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ]
+   ],
+   "tokens": 1109
+  }
+ ]
+}

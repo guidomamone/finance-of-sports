@@ -1,0 +1,61 @@
+{
+ "md": "Clubes/Bélgica/Club Brugge/jaarrekening-2015-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:36.475Z",
+ "rubrosHuella": "ea71d2d60f483e55ab32c86ddbb945b297ddfa5b",
+ "rubros": [
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 5,
+   "section": "Pensioenen en soortgelijke verplichtingen 160 / Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 5.8 | 163/5 50.000 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Schulden op meer dan één jaar 59 |",
+   "lado": "expense",
+   "page": 5,
+   "section": "Pensioenen en soortgelijke verplichtingen 160 / Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 5.8 | 163/5 50.000 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 5,
+   "section": "Pensioenen en soortgelijke verplichtingen 160 / Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 5.8 | 163/5 50.000 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 20,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 20,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "expense",
+   "page": 20,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.59,
+   "desdeCache": true
+  }
+ ]
+}

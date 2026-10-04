@@ -1,0 +1,820 @@
+{
+  "md": "Clubes/Brasil/Novorizontino/balanco-2015.md",
+  "pdf": "Clubes/Brasil/Novorizontino/balanco-2015.pdf",
+  "club": "novorizontino-br",
+  "year": 2015,
+  "generatedAt": "2026-10-03T03:29:29.511Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "117 3.1.01.01.0009 - DOAÇOES RECEBIDAS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.003576
+      ],
+      "glosa": "117 3.1.01.01.0009 - DONACIONES RECIBIDAS"
+    },
+    {
+      "label": "35 3.1.01.01.0004 - LOCAÇÃO DE CADEIRA S/ASSENTOS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.006076
+      ],
+      "glosa": "35 3.1.01.01.0004 - ALQUILER DE BUTACAS/ASIENTOS"
+    },
+    {
+      "label": "33 3.1.01.01.0002 - PATROCINIO EM PLACAS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.004
+      ],
+      "glosa": "33 3.1.01.01.0002 - PATROCINIO EN VALLAS PUBLICITARIAS"
+    },
+    {
+      "label": "34 3.1.01.01.0003 - PATROCINIO NO ESTÁDIO",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.004385
+      ],
+      "glosa": "34 3.1.01.01.0003 - PATROCINIO EN EL ESTADIO"
+    },
+    {
+      "label": "32 3.1.01.01.0001 - PATROCINIO NO UNIFORME",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.0475
+      ],
+      "glosa": "32 3.1.01.01.0001 - PATROCINIO EN LA INDUMENTARIA"
+    },
+    {
+      "label": "37 3.1.01.01.0006 - RECEITAS DO BAR",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.002766
+      ],
+      "glosa": "37 3.1.01.01.0006 - INGRESOS DEL BAR"
+    },
+    {
+      "label": "39 3.1.01.01.0008 - REPASSE DA FEDERAÇÃO",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.3002
+      ],
+      "glosa": "39 3.1.01.01.0008 - TRANSFERENCIAS DE LA FEDERACIÓN"
+    },
+    {
+      "label": "36 3.1.01.01.0005 - VENDAS DE INGRESSOS",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.377871
+      ],
+      "glosa": "36 3.1.01.01.0005 - VENTA DE ENTRADAS"
+    },
+    {
+      "label": "225 3.1.04.01.0001 - RECUPERACAO DE DESPESA",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con C)",
+      "values": [
+        0.0002
+      ],
+      "glosa": "225 3.1.04.01.0001 - RECUPERACIÓN DE GASTOS"
+    },
+    {
+      "label": "41 4.1.01.01.0002 - AJUDA DE CUSTO",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.03938
+      ],
+      "glosa": "41 4.1.01.01.0002 - ASIGNACIÓN PARA GASTOS"
+    },
+    {
+      "label": "55 4.1.01.01.0016 - ALUGUEL MORADIA COM TECNICA",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.134271
+      ],
+      "glosa": "55 4.1.01.01.0016 - ALQUILER DE VIVIENDA CUERPO TÉCNICO"
+    },
+    {
+      "label": "184 4.1.01.01.0031 - ANUIDADE CBF E FEDER.PAULISTA",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.0242
+      ],
+      "glosa": "184 4.1.01.01.0031 - CUOTA ANUAL CBF Y FEDERACIÓN PAULISTA"
+    },
+    {
+      "label": "207 4.1.01.01.0038 - AUXILIO EDUCACIONAL",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00135
+      ],
+      "glosa": "207 4.1.01.01.0038 - AYUDA ESCOLAR"
+    },
+    {
+      "label": "205 4.1.01.01.0036 - BONIFICACAO/GRATIFICACAO",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.007214
+      ],
+      "glosa": "205 4.1.01.01.0036 - BONIFICACIÓN/GRATIFICACIÓN"
+    },
+    {
+      "label": "58 4.1.01.01.0019 - CAFE DA MANHA",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.060356
+      ],
+      "glosa": "58 4.1.01.01.0019 - DESAYUNOS"
+    },
+    {
+      "label": "214 4.1.01.01.0039 - CONTRIBUICAO CONFEDERATIVA",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000815
+      ],
+      "glosa": "214 4.1.01.01.0039 - CONTRIBUCIÓN CONFEDERATIVA"
+    },
+    {
+      "label": "51 4.1.01.01.0012 - CURSOS E TREINAMENTOS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.003241
+      ],
+      "glosa": "51 4.1.01.01.0012 - CURSOS Y FORMACIÓN"
+    },
+    {
+      "label": "44 4.1.01.01.0005 - DIREITOS DE IMAGEM",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.940674
+      ],
+      "glosa": "44 4.1.01.01.0005 - DERECHOS DE IMAGEN"
+    },
+    {
+      "label": "206 4.1.01.01.0037 - DSR VARIAVEL",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.002243
+      ],
+      "glosa": "206 4.1.01.01.0037 - DESCANSO SEMANAL REMUNERADO VARIABLE"
+    },
+    {
+      "label": "47 4.1.01.01.0008 - FERIAS E 13° SALARIO",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.097798
+      ],
+      "glosa": "47 4.1.01.01.0008 - VACACIONES Y AGUINALDO"
+    },
+    {
+      "label": "46 4.1.01.01.0007 - FGTS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.074062
+      ],
+      "glosa": "46 4.1.01.01.0007 - FGTS (FONDO DE GARANTÍA POR TIEMPO DE SERVICIO)"
+    },
+    {
+      "label": "204 4.1.01.01.0035 - HORAS EXTRAS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.010893
+      ],
+      "glosa": "204 4.1.01.01.0035 - HORAS EXTRAS"
+    },
+    {
+      "label": "87 4.1.01.01.0030 - I.R.R.FONTE S/ FOLHA",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000338
+      ],
+      "glosa": "87 4.1.01.01.0030 - RETENCIÓN IRPF SOBRE NÓMINA"
+    },
+    {
+      "label": "45 4.1.01.01.0006 - INSS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.039575
+      ],
+      "glosa": "45 4.1.01.01.0006 - SEGURIDAD SOCIAL (INSS)"
+    },
+    {
+      "label": "57 4.1.01.01.0018 - LANCHES",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.040058
+      ],
+      "glosa": "57 4.1.01.01.0018 - REFRIGERIOS"
+    },
+    {
+      "label": "62 4.1.01.01.0023 - MATERIAIS ESPORTIVOS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.080253
+      ],
+      "glosa": "62 4.1.01.01.0023 - MATERIAL DEPORTIVO"
+    },
+    {
+      "label": "60 4.1.01.01.0021 - MEDICAMENTOS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.028134
+      ],
+      "glosa": "60 4.1.01.01.0021 - MEDICAMENTOS"
+    },
+    {
+      "label": "195 4.1.01.01.0034 - PENSAO ALIMENTICIA",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00057
+      ],
+      "glosa": "195 4.1.01.01.0034 - PENSIÓN ALIMENTICIA"
+    },
+    {
+      "label": "186 4.1.01.01.0032 - PIS FOLHA PAGAMENTO",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.013363
+      ],
+      "glosa": "186 4.1.01.01.0032 - PIS SOBRE NÓMINA"
+    },
+    {
+      "label": "42 4.1.01.01.0003 - PREMIAÇOES",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.11234
+      ],
+      "glosa": "42 4.1.01.01.0003 - PRIMAS Y RECOMPENSAS"
+    },
+    {
+      "label": "56 4.1.01.01.0017 - REFEIÇÕES",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.45301
+      ],
+      "glosa": "56 4.1.01.01.0017 - COMIDAS Y MANUTENCIÓN"
+    },
+    {
+      "label": "48 4.1.01.01.0009 - RESCISOES E HOMOLOGAÇOES",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.07267
+      ],
+      "glosa": "48 4.1.01.01.0009 - INDEMNIZACIONES Y LIQUIDACIONES POR DESPIDO"
+    },
+    {
+      "label": "40 4.1.01.01.0001 - SALARIOS",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.945142
+      ],
+      "glosa": "40 4.1.01.01.0001 - SUELDOS Y SALARIOS"
+    },
+    {
+      "label": "52 4.1.01.01.0013 - SEGURO PESSOAL",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.004458
+      ],
+      "glosa": "52 4.1.01.01.0013 - SEGURO DE ACCIDENTES PERSONALES"
+    },
+    {
+      "label": "71 4.1.01.01.0025 - SERVIÇOS DE FISIOTERAPIA",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.06315
+      ],
+      "glosa": "71 4.1.01.01.0025 - SERVICIOS DE FISIOTERAPIA"
+    },
+    {
+      "label": "70 4.1.01.01.0024 - SERVIÇOS E EXAMES MÉDICOS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.09552
+      ],
+      "glosa": "70 4.1.01.01.0024 - SERVICIOS Y RECONOCIMIENTOS MÉDICOS"
+    },
+    {
+      "label": "61 4.1.01.01.0022 - SUPLEMENTOS ALIMENTARES",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.007747
+      ],
+      "glosa": "61 4.1.01.01.0022 - SUPLEMENTOS ALIMENTICIOS"
+    },
+    {
+      "label": "89 4.1.01.01.0028 - TAXA DE LIBERAÇÃO DE ATLETAS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00785
+      ],
+      "glosa": "89 4.1.01.01.0028 - DERECHOS DE TRANSFERENCIA/LIBERACIÓN DE JUGADORES"
+    },
+    {
+      "label": "88 4.1.01.01.0027 - TAXA FED PAULISTA,FAAP,CBF/INS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.114554
+      ],
+      "glosa": "88 4.1.01.01.0027 - TASAS FEDERACIÓN PAULISTA, FAAP, CBF/INSCRIPCIÓN"
+    },
+    {
+      "label": "73 5.1.01.01.0008 - ASSESSORIA DE MARKETING",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.010326
+      ],
+      "glosa": "73 5.1.01.01.0008 - ASESORÍA DE MARKETING"
+    },
+    {
+      "label": "76 5.1.01.01.0011 - ASSESSORIA ESPORTIVA",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.898135
+      ],
+      "glosa": "76 5.1.01.01.0011 - ASESORÍA DEPORTIVA"
+    },
+    {
+      "label": "75 5.1.01.01.0010 - ASSESSORIA JURÍDICA",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.064113
+      ],
+      "glosa": "75 5.1.01.01.0010 - ASESORÍA JURÍDICA"
+    },
+    {
+      "label": "97 5.1.01.01.0020 - ASSINATURAS E ANUIDADES",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000602
+      ],
+      "glosa": "97 5.1.01.01.0020 - SUSCRIPCIONES Y CUOTAS"
+    },
+    {
+      "label": "123 5.1.01.01.0026 - COMBUSTIVEIS E LUBRIFICANTES",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.068688
+      ],
+      "glosa": "123 5.1.01.01.0026 - COMBUSTIBLES Y LUBRICANTES"
+    },
+    {
+      "label": "95 5.1.01.01.0018 - CORREIOS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.001716
+      ],
+      "glosa": "95 5.1.01.01.0018 - CORREOS Y MENSAJERÍA"
+    },
+    {
+      "label": "93 5.1.01.01.0017 - DESPESAS CARTORARIAS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000367
+      ],
+      "glosa": "93 5.1.01.01.0017 - GASTOS NOTARIALES Y DE REGISTRO"
+    },
+    {
+      "label": "181 5.1.01.01.0027 - ESTADIAS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.019286
+      ],
+      "glosa": "181 5.1.01.01.0027 - ALOJAMIENTO Y HOSPEDAJE"
+    },
+    {
+      "label": "109 5.1.01.01.0025 - FRETES, CARRETOS E TRANSPORTES",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000249
+      ],
+      "glosa": "109 5.1.01.01.0025 - FLETES, PORTES Y TRANSPORTES"
+    },
+    {
+      "label": "72 5.1.01.01.0007 - HONORARIOS CONTABILIDADE",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.017372
+      ],
+      "glosa": "72 5.1.01.01.0007 - HONORARIOS DE CONTABILIDAD"
+    },
+    {
+      "label": "192 5.1.01.01.0029 - IMPOSTOS E TAXAS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.000705
+      ],
+      "glosa": "192 5.1.01.01.0029 - IMPUESTOS Y TASAS"
+    },
+    {
+      "label": "198 5.1.01.01.0032 - IR RETIDO NA FONTE",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00591
+      ],
+      "glosa": "198 5.1.01.01.0032 - RETENCIÓN DE IMPUESTOS EN LA FUENTE"
+    },
+    {
+      "label": "77 5.1.01.01.0012 - MANUTENÇÃO E HOSPEDAGEM SITE",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00248
+      ],
+      "glosa": "77 5.1.01.01.0012 - MANTENIMIENTO Y HOSPEDAJE WEB"
+    },
+    {
+      "label": "65 5.1.01.01.0003 - MATERIAIS DE ESCRITORIO",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.007049
+      ],
+      "glosa": "65 5.1.01.01.0003 - MATERIAL DE OFICINA"
+    },
+    {
+      "label": "64 5.1.01.01.0002 - MATERIAIS DE HIGIENE E LIMPEZA",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.015808
+      ],
+      "glosa": "64 5.1.01.01.0002 - MATERIALES DE HIGIENE Y LIMPIEZA"
+    },
+    {
+      "label": "68 5.1.01.01.0004 - MATERIAIS DIVERSOS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.074445
+      ],
+      "glosa": "68 5.1.01.01.0004 - MATERIALES DIVERSOS"
+    },
+    {
+      "label": "63 5.1.01.01.0001 - MATERIAS DE MANUTENÇÃO GERAL",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.113613
+      ],
+      "glosa": "63 5.1.01.01.0001 - MATERIALES DE MANTENIMIENTO GENERAL"
+    },
+    {
+      "label": "69 5.1.01.01.0006 - MOVEIS E UTENS. PEQ VALOR",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.015545
+      ],
+      "glosa": "69 5.1.01.01.0006 - MOBILIARIO Y ENSERES DE ESCASO VALOR"
+    },
+    {
+      "label": "94 5.1.01.01.0016 - MULTAS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.006681
+      ],
+      "glosa": "94 5.1.01.01.0016 - MULTAS Y SANCIONES"
+    },
+    {
+      "label": "194 5.1.01.01.0030 - PIS/COFINS/CSLL RETIDO",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.010774
+      ],
+      "glosa": "194 5.1.01.01.0030 - RETENCIONES DE PIS/COFINS/CSLL"
+    },
+    {
+      "label": "191 5.1.01.01.0028 - PRODUTOS FARMACEUTICOS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.003807
+      ],
+      "glosa": "191 5.1.01.01.0028 - PRODUCTOS FARMACÉUTICOS"
+    },
+    {
+      "label": "80 5.1.01.01.0013 - SEGURANÇA PATRIMONIAL",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.034582
+      ],
+      "glosa": "80 5.1.01.01.0013 - SEGURIDAD Y VIGILANCIA PATRIMONIAL"
+    },
+    {
+      "label": "96 5.1.01.01.0019 - TELEFONE",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.03776
+      ],
+      "glosa": "96 5.1.01.01.0019 - TELÉFONO Y COMUNICACIONES"
+    },
+    {
+      "label": "196 5.1.01.01.0031 - VIDEO OBSERVER",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.008224
+      ],
+      "glosa": "196 5.1.01.01.0031 - VIDEOANÁLISIS Y OBSERVACIÓN TÉCNICA"
+    },
+    {
+      "label": "101 5.1.02.02.0013 - ALUGUEL DE ACADEMIA",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.0005
+      ],
+      "glosa": "101 5.1.02.02.0013 - ALQUILER DE GIMNASIO"
+    },
+    {
+      "label": "102 5.1.02.02.0014 - DESPESAS COM JOGOS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.068116
+      ],
+      "glosa": "102 5.1.02.02.0014 - GASTOS DE ORGANIZACIÓN DE PARTIDOS"
+    },
+    {
+      "label": "103 5.1.02.02.0015 - DESPESAS DIVERSAS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.011761
+      ],
+      "glosa": "103 5.1.02.02.0015 - GASTOS DIVERSOS"
+    },
+    {
+      "label": "98 5.1.02.02.0010 - ENERGIA ELETRICA",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.111284
+      ],
+      "glosa": "98 5.1.02.02.0010 - ENERGÍA ELÉCTRICA"
+    },
+    {
+      "label": "190 5.1.02.02.0021 - INTERNET / TV A CABO",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.021866
+      ],
+      "glosa": "190 5.1.02.02.0021 - INTERNET Y TELEVISIÓN POR CABLE"
+    },
+    {
+      "label": "83 5.1.02.02.0004 - LAVANDERIA",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.0984
+      ],
+      "glosa": "83 5.1.02.02.0004 - SERVICIO DE LAVANDERÍA"
+    },
+    {
+      "label": "187 5.1.02.02.0018 - MANUTENCAO DE VEICULOS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.007875
+      ],
+      "glosa": "187 5.1.02.02.0018 - MANTENIMIENTO DE VEHÍCULOS"
+    },
+    {
+      "label": "188 5.1.02.02.0019 - MANUTENCAO DO GRAMADO",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.561236
+      ],
+      "glosa": "188 5.1.02.02.0019 - MANTENIMIENTO DEL CÉSPED"
+    },
+    {
+      "label": "78 5.1.02.02.0002 - MANUTENÇAO GERAL",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.168941
+      ],
+      "glosa": "78 5.1.02.02.0002 - MANTENIMIENTO GENERAL"
+    },
+    {
+      "label": "84 5.1.02.02.0005 - PINTURA DE PLACAS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.028167
+      ],
+      "glosa": "84 5.1.02.02.0005 - PINTURA DE VALLAS PUBLICITARIAS"
+    },
+    {
+      "label": "79 5.1.02.02.0003 - SEGURANÇA E POLICIAMENTO JOGOS",
+      "lado": "expense",
+      "page": 2,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.069379
+      ],
+      "glosa": "79 5.1.02.02.0003 - SEGURIDAD Y SERVICIO POLICIAL EN PARTIDOS"
+    },
+    {
+      "label": "197 5.1.02.02.0022 - SERV.ALMOXARIFADO E ROUPARIA",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.0061
+      ],
+      "glosa": "197 5.1.02.02.0022 - SERVICIOS DE ALMACÉN Y UTILERÍA"
+    },
+    {
+      "label": "189 5.1.02.02.0020 - SERVICO DE DEDETIZACAO",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.00336
+      ],
+      "glosa": "189 5.1.02.02.0020 - SERVICIO DE CONTROL DE PLAGAS Y DESINFECCIÓN"
+    },
+    {
+      "label": "90 5.1.02.02.0007 - TAXA DE ARBITRAGEM",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.029848
+      ],
+      "glosa": "90 5.1.02.02.0007 - HONORARIOS Y TASAS ARBITRALES"
+    },
+    {
+      "label": "91 5.1.02.02.0008 - TAXA DE VISTORIA DO ESTADIO",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.008943
+      ],
+      "glosa": "91 5.1.02.02.0008 - TASA DE INSPECCIÓN DEL ESTADIO"
+    },
+    {
+      "label": "85 5.1.02.02.0006 - TRANSPORTE DE JOGADORES",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.04195
+      ],
+      "glosa": "85 5.1.02.02.0006 - TRANSPORTE DE JUGADORES"
+    },
+    {
+      "label": "92 5.1.02.02.0009 - VIAGENS E ESTADIAS",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.162244
+      ],
+      "glosa": "92 5.1.02.02.0009 - VIAJES Y ESTANCIAS"
+    },
+    {
+      "label": "99 5.1.02.02.0011 - ÁGUA E ESGOTO",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado (lectura 5: hoja con D)",
+      "values": [
+        0.022285
+      ],
+      "glosa": "99 5.1.02.02.0011 - AGUA Y ALCANTARILLADO"
+    }
+  ]
+}

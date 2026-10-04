@@ -1,0 +1,16 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.md",
+ "generado": "2026-10-02T20:58:42.167Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"prestamos y sobregiros bancarios\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "Expresados en pesos colombianos",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El documento solo trae notas, sin balance primario, y las páginas recibidas no incluyen la nota de efectivo ni la de préstamos y sobregiros bancarios, así que no hay líneas para elegir. La escala es dudosa: el documento dice 'Expresados en pesos colombianos', pero el capital de 35.000 acciones a $20.000 (700 millones de pesos) figura como 700.000, lo que indica cifras en miles de pesos."
+}

@@ -1,0 +1,472 @@
+{
+  "md": "Clubes/España/Athletic Club/cuentas-anuales-2021-2022.md",
+  "pdf": "Clubes/España/Athletic Club/cuentas-anuales-2021-2022.pdf",
+  "club": "athleticclub",
+  "year": 2022,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:00:22.150Z",
+  "tieOuts": {
+    "cierran": 20,
+    "noCierran": 26
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "24 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 39,
+    "notasUsadas": [
+      "lista-p1-2"
+    ]
+  },
+  "ladoConocido": 33,
+  "rubros": [
+    {
+      "label": "LNFP - Patrocinios, licencias y quinielas",
+      "lado": null,
+      "page": 34,
+      "section": "ciones dentro de la ayuda total de 990.444,02 euros mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2022                                            30.06.2021",
+      "values": [
+        442.4473
+      ],
+      "origen": "estado 81",
+      "glosa": "LNFP - Patrocinios, licencias y quinielas"
+    },
+    {
+      "label": "LNFP – Gastos COVID",
+      "lado": "expense",
+      "page": 34,
+      "section": "ciones dentro de la ayuda total de 990.444,02 euros mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2022                                            30.06.2021",
+      "values": [
+        -266.41893
+      ],
+      "origen": "estado 81",
+      "glosa": "LNFP – Gastos COVID"
+    },
+    {
+      "label": "RFEF - Cantera de valores",
+      "lado": null,
+      "page": 34,
+      "section": "ciones dentro de la ayuda total de 990.444,02 euros mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2022                                            30.06.2021",
+      "values": [
+        352.96306
+      ],
+      "origen": "estado 81",
+      "glosa": "RFEF - Cantera de valores"
+    },
+    {
+      "label": "RFEF – Programa Elite -",
+      "lado": null,
+      "page": 34,
+      "section": "ciones dentro de la ayuda total de 990.444,02 euros mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2022                                            30.06.2021",
+      "values": [
+        237.5
+      ],
+      "origen": "estado 81",
+      "glosa": "RFEF – Programa Elite -"
+    },
+    {
+      "label": "Participación en selección",
+      "lado": null,
+      "page": 34,
+      "section": "ciones dentro de la ayuda total de 990.444,02 euros mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2022                                            30.06.2021",
+      "values": [
+        303.22433
+      ],
+      "origen": "estado 81",
+      "glosa": "Participación en selección"
+    },
+    {
+      "label": "Resolución 14/2019 (Nota 19) -",
+      "lado": null,
+      "page": 34,
+      "section": "ciones dentro de la ayuda total de 990.444,02 euros mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2022                                            30.06.2021",
+      "values": [
+        -3308.92891
+      ],
+      "origen": "estado 81",
+      "glosa": "Resolución 14/2019 (Nota 19) -"
+    },
+    {
+      "label": "Jugadoras y jugadores",
+      "lado": null,
+      "page": 35,
+      "section": "Nota 22 / Otra información",
+      "values": [
+        139.58
+      ],
+      "origen": "estado 83",
+      "glosa": "Jugadoras y jugadores"
+    },
+    {
+      "label": "Cuerpo técnico y resto",
+      "lado": null,
+      "page": 35,
+      "section": "Nota 22 / Otra información",
+      "values": [
+        197
+      ],
+      "origen": "estado 83",
+      "glosa": "Cuerpo técnico y resto"
+    },
+    {
+      "label": "Maquinaria 187.401,80 - - -",
+      "lado": "expense",
+      "page": 15,
+      "section": "TERRENOS Y CONSTRUCCIONES                       24.327.036,61\t\t\t\t33.341.830,28 / COSTE",
+      "values": [
+        187.4018
+      ],
+      "origen": "estado 35",
+      "glosa": "Maquinaria 187.401,80 - - -"
+    },
+    {
+      "label": "Otras instalaciones 40.696.648,58 93.103,51 -",
+      "lado": "expense",
+      "page": 15,
+      "section": "TERRENOS Y CONSTRUCCIONES                       24.327.036,61\t\t\t\t33.341.830,28 / COSTE",
+      "values": [
+        3510.07842
+      ],
+      "origen": "estado 35",
+      "glosa": "Otras instalaciones 40.696.648,58 93.103,51 -"
+    },
+    {
+      "label": "Mobiliario y material deportivo 2.472.155,15 92.000,00 - -",
+      "lado": "expense",
+      "page": 15,
+      "section": "TERRENOS Y CONSTRUCCIONES                       24.327.036,61\t\t\t\t33.341.830,28 / COSTE",
+      "values": [
+        2564.15515
+      ],
+      "origen": "estado 35",
+      "glosa": "Mobiliario y material deportivo 2.472.155,15 92.000,00 - -"
+    },
+    {
+      "label": "Equipos informáticos 625.003,81 - - -",
+      "lado": "expense",
+      "page": 15,
+      "section": "TERRENOS Y CONSTRUCCIONES                       24.327.036,61\t\t\t\t33.341.830,28 / COSTE",
+      "values": [
+        625.00381
+      ],
+      "origen": "estado 35",
+      "glosa": "Equipos informáticos 625.003,81 - - -"
+    },
+    {
+      "label": "Elementos de transporte 239.555,78 - - -",
+      "lado": "expense",
+      "page": 15,
+      "section": "TERRENOS Y CONSTRUCCIONES                       24.327.036,61\t\t\t\t33.341.830,28 / COSTE",
+      "values": [
+        239.55578
+      ],
+      "origen": "estado 35",
+      "glosa": "Elementos de transporte 239.555,78 - - -"
+    },
+    {
+      "label": "Derechos arbitrajes",
+      "lado": "expense",
+      "page": 32,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2022                                             30.06.2021",
+      "values": [
+        816.33379
+      ],
+      "origen": "estado 76",
+      "glosa": "Derechos arbitrajes"
+    },
+    {
+      "label": "Subvenciones a entidades",
+      "lado": "revenue",
+      "page": 32,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2022                                             30.06.2021",
+      "values": [
+        1727.23784
+      ],
+      "origen": "estado 76",
+      "glosa": "Subvenciones a entidades"
+    },
+    {
+      "label": "LNFP (Nota 21.4)",
+      "lado": "expense",
+      "page": 32,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2022                                             30.06.2021",
+      "values": [
+        5912.99075
+      ],
+      "origen": "estado 76",
+      "glosa": "LNFP (Nota 21.4)"
+    },
+    {
+      "label": "Cuotas entidades deportivas",
+      "lado": "expense",
+      "page": 32,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2022                                             30.06.2021",
+      "values": [
+        593.56857
+      ],
+      "origen": "estado 76",
+      "glosa": "Cuotas entidades deportivas"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 32,
+      "section": "21.3. Otros gastos de gestión corriente: / 30.06.2022                                             30.06.2021",
+      "values": [
+        50.72
+      ],
+      "origen": "estado 76",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Maquinaria 187.401,80 - -",
+      "lado": "expense",
+      "page": 16,
+      "section": "TERRENOS Y CONSTRUCCIONES                   14.218.652,96\t\t\t24.327.036,61 / COSTE",
+      "values": [
+        0.187402
+      ],
+      "origen": "estado 38",
+      "glosa": "Maquinaria 187.401,80 - -"
+    },
+    {
+      "label": "Otras instalaciones",
+      "lado": "expense",
+      "page": 16,
+      "section": "TERRENOS Y CONSTRUCCIONES                   14.218.652,96\t\t\t24.327.036,61 / COSTE",
+      "values": [
+        39.334136
+      ],
+      "origen": "estado 38",
+      "glosa": "Otras instalaciones"
+    },
+    {
+      "label": "Mobiliario y material deportivo 2.456.281,34 15.873,81 -",
+      "lado": "expense",
+      "page": 16,
+      "section": "TERRENOS Y CONSTRUCCIONES                   14.218.652,96\t\t\t24.327.036,61 / COSTE",
+      "values": [
+        2.472155
+      ],
+      "origen": "estado 38",
+      "glosa": "Mobiliario y material deportivo 2.456.281,34 15.873,81 -"
+    },
+    {
+      "label": "Equipos informáticos 618.116,92 6.886,89 -",
+      "lado": "expense",
+      "page": 16,
+      "section": "TERRENOS Y CONSTRUCCIONES                   14.218.652,96\t\t\t24.327.036,61 / COSTE",
+      "values": [
+        0.625004
+      ],
+      "origen": "estado 38",
+      "glosa": "Equipos informáticos 618.116,92 6.886,89 -"
+    },
+    {
+      "label": "Elementos de transporte",
+      "lado": "expense",
+      "page": 16,
+      "section": "TERRENOS Y CONSTRUCCIONES                   14.218.652,96\t\t\t24.327.036,61 / COSTE",
+      "values": [
+        0.043953
+      ],
+      "origen": "estado 38",
+      "glosa": "Elementos de transporte"
+    },
+    {
+      "label": "Aplicaciones informáticas 2.597.212,19 456.519,77 -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        3.053732
+      ],
+      "origen": "estado 29",
+      "glosa": "Aplicaciones informáticas 2.597.212,19 456.519,77 -"
+    },
+    {
+      "label": "Propiedad artística 136.220,82 7.500,00 -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        0.143721
+      ],
+      "origen": "estado 29",
+      "glosa": "Propiedad artística 136.220,82 7.500,00 -"
+    },
+    {
+      "label": "Otros 113.959,50 - -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        0.113959
+      ],
+      "origen": "estado 29",
+      "glosa": "Otros 113.959,50 - -"
+    },
+    {
+      "label": "Aplicaciones informáticas 2.159.929,19 437.283,00 -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        2.597212
+      ],
+      "origen": "estado 31",
+      "glosa": "Aplicaciones informáticas 2.159.929,19 437.283,00 -"
+    },
+    {
+      "label": "Propiedad artística 131.027,88 5.192,94 -",
+      "lado": "expense",
+      "page": 14,
+      "section": "COSTE",
+      "values": [
+        0.136221
+      ],
+      "origen": "estado 31",
+      "glosa": "Propiedad artística 131.027,88 5.192,94 -"
+    },
+    {
+      "label": "Ingresos por retransmisión",
+      "lado": "revenue",
+      "page": 33,
+      "section": "Ingresos por retransmisión: / Presenta el siguiente detalle: / 30.06.2022                                              30.06.2021",
+      "values": [
+        65.81895
+      ],
+      "origen": "estado 78",
+      "glosa": "Ingresos por retransmisión"
+    },
+    {
+      "label": "Ingresos por retransmisión femenino",
+      "lado": "revenue",
+      "page": 33,
+      "section": "Ingresos por retransmisión: / Presenta el siguiente detalle: / 30.06.2022                                              30.06.2021",
+      "values": [
+        0.880548
+      ],
+      "origen": "estado 78",
+      "glosa": "Ingresos por retransmisión femenino"
+    },
+    {
+      "label": "Otras --",
+      "lado": "revenue",
+      "page": 33,
+      "section": "Ingresos por retransmisión: / Presenta el siguiente detalle: / 30.06.2022                                              30.06.2021",
+      "values": [
+        0.02
+      ],
+      "origen": "estado 78",
+      "glosa": "Otras --"
+    },
+    {
+      "label": "Con fecha 28 de junio de 2018, se ejecutó esta ampliación del capi- de ejercicios anteriores",
+      "lado": "expense",
+      "page": 22,
+      "section": "de 5.502.000 participaciones de 1 euro de valor nominal cada una. / sociedad participada facilitados por los órganos de gestión de / capital con aportación no dineraria del Athletic Club, consistente / ejecutar por dicho Socio, con arreglo al valor de los costes inverti- / asumida por el Athletic Club, habiendo renunciado el resto de los",
+      "values": [
+        -18.702
+      ],
+      "origen": "estado 47",
+      "glosa": "Con fecha 28 de junio de 2018, se ejecutó esta ampliación del capi- de ejercicios anteriores"
+    },
+    {
+      "label": "Entidades del grupo y asociadas, deudores",
+      "lado": "expense",
+      "page": 1,
+      "section": "12                 III. Deudores                                                     14.464.195,42     14.816.626,55",
+      "values": [
+        735.901307
+      ],
+      "origen": "nota lista-p1-2 (ancla 47)",
+      "ancla": "tal social en 14.469.396 euros mediante la emisión de",
+      "glosa": "Entidades del grupo y asociadas, deudores"
+    },
+    {
+      "label": "tal social en 14.469.396 euros mediante la emisión de",
+      "lado": "expense",
+      "page": 22,
+      "section": "de 5.502.000 participaciones de 1 euro de valor nominal cada una. / sociedad participada facilitados por los órganos de gestión de / capital con aportación no dineraria del Athletic Club, consistente / ejecutar por dicho Socio, con arreglo al valor de los costes inverti- / asumida por el Athletic Club, habiendo renunciado el resto de los",
+      "values": [
+        14469.396
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "tal social en 14.469.396 euros mediante la emisión de"
+    },
+    {
+      "label": "Entidades Deportivas, deudores",
+      "lado": "expense",
+      "page": 1,
+      "section": "12                 III. Deudores                                                     14.464.195,42     14.816.626,55",
+      "values": [
+        6466.824694
+      ],
+      "origen": "nota lista-p1-2 (ancla 47)",
+      "ancla": "tal social en 14.469.396 euros mediante la emisión de",
+      "glosa": "Entidades Deportivas, deudores"
+    },
+    {
+      "label": "Deudores varios",
+      "lado": "expense",
+      "page": 1,
+      "section": "12                 III. Deudores                                                     14.464.195,42     14.816.626,55",
+      "values": [
+        7261.46944
+      ],
+      "origen": "nota lista-p1-2 (ancla 47)",
+      "ancla": "tal social en 14.469.396 euros mediante la emisión de",
+      "glosa": "Deudores varios"
+    },
+    {
+      "label": "del ejercicio 2019/2020 --",
+      "lado": "revenue",
+      "page": 31,
+      "section": "30.06.2022                                         30.06.2021 / Cuota a devolver del impuesto de Sociedades",
+      "values": [
+        640.20459
+      ],
+      "origen": "estado 72",
+      "glosa": "del ejercicio 2019/2020 --"
+    },
+    {
+      "label": "Otros --",
+      "lado": "revenue",
+      "page": 31,
+      "section": "30.06.2022                                         30.06.2021 / Cuota a devolver del impuesto de Sociedades",
+      "values": [
+        29.81786
+      ],
+      "origen": "estado 72",
+      "glosa": "Otros --"
+    },
+    {
+      "label": "Ventas de existencias en tiendas y museo",
+      "lado": "revenue",
+      "page": 34,
+      "section": "21.5. Ingresos accesorios y otros de gestión corriente: / 30.06.2022                                            30.06.2021",
+      "values": [
+        6362.45835
+      ],
+      "origen": "estado 79",
+      "glosa": "Ventas de existencias en tiendas y museo"
+    },
+    {
+      "label": "Arrendamientos",
+      "lado": "revenue",
+      "page": 34,
+      "section": "21.5. Ingresos accesorios y otros de gestión corriente: / 30.06.2022                                            30.06.2021",
+      "values": [
+        215.94745
+      ],
+      "origen": "estado 79",
+      "glosa": "Arrendamientos"
+    }
+  ]
+}

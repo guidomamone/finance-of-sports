@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Coritiba/demonstracoes-financeiras-2024.md",
+ "generado": "2026-10-02T00:13:40.893Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em Reais)",
+ "caja": {
+  "lineas": [
+   200
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   201,
+   212
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Empréstimos e financiamentos corriente (L201) y no corriente (L212) comparten línea con activos; columna 2024 del pasivo."
+}

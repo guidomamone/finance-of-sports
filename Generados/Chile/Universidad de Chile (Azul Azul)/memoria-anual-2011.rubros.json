@@ -1,0 +1,201 @@
+{
+  "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/memoria-anual-2011.md",
+  "pdf": "Clubes/Chile/Universidad de Chile (Azul Azul)/memoria-anual-2011.pdf",
+  "club": "udechile-cl",
+  "year": 2011,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:57:32.875Z",
+  "tieOuts": {
+    "cierran": 17,
+    "noCierran": 22
+  },
+  "warnings": [
+    "22 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "13 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 16,
+    "notasUsadas": []
+  },
+  "ladoConocido": 15,
+  "rubros": [
+    {
+      "label": "financieros medidos al costo amortizado",
+      "lado": "expense",
+      "page": 46,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos",
+      "values": [
+        -2.5
+      ],
+      "origen": "estado 17",
+      "glosa": "financieros medidos al costo amortizado"
+    },
+    {
+      "label": "Gasto de administración",
+      "lado": "expense",
+      "page": 46,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos",
+      "values": [
+        -2702.374
+      ],
+      "origen": "estado 17",
+      "glosa": "Gasto de administración"
+    },
+    {
+      "label": "Ingresos financieros",
+      "lado": "revenue",
+      "page": 46,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos",
+      "values": [
+        13.151
+      ],
+      "origen": "estado 17",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Costos financieros",
+      "lado": "expense",
+      "page": 46,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos",
+      "values": [
+        -159.54
+      ],
+      "origen": "estado 17",
+      "glosa": "Costos financieros"
+    },
+    {
+      "label": "Gasto por impuestos a las ganancias",
+      "lado": "expense",
+      "page": 46,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos",
+      "values": [
+        -160.8
+      ],
+      "origen": "estado 17",
+      "glosa": "Gasto por impuestos a las ganancias"
+    },
+    {
+      "label": "Borderó (costos directos)",
+      "lado": "expense",
+      "page": 82,
+      "section": "20. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        -1390.635
+      ],
+      "origen": "estado 51",
+      "glosa": "Borderó (costos directos)"
+    },
+    {
+      "label": "Remuneraciones",
+      "lado": "expense",
+      "page": 82,
+      "section": "20. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        -4770.138
+      ],
+      "origen": "estado 51",
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Amortización de pases",
+      "lado": "expense",
+      "page": 82,
+      "section": "20. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        -1643.517
+      ],
+      "origen": "estado 51",
+      "glosa": "Amortización de pases"
+    },
+    {
+      "label": "Costo de venta pases de jugadores",
+      "lado": "expense",
+      "page": 82,
+      "section": "20. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        -743.397
+      ],
+      "origen": "estado 51",
+      "glosa": "Costo de venta pases de jugadores"
+    },
+    {
+      "label": "Otros gastos de operación",
+      "lado": "expense",
+      "page": 82,
+      "section": "20. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        -1429.15
+      ],
+      "origen": "estado 51",
+      "glosa": "Otros gastos de operación"
+    },
+    {
+      "label": "Promedio ponderado de número de acciones",
+      "lado": null,
+      "page": 83,
+      "section": "21. UTILIDAD POR ACCION",
+      "values": [
+        36520.03
+      ],
+      "origen": "estado 52",
+      "glosa": "Promedio ponderado de número de acciones"
+    },
+    {
+      "label": "Borderó",
+      "lado": "revenue",
+      "page": 82,
+      "section": "19. INGRESOS ORDINARIOS",
+      "values": [
+        5110.123
+      ],
+      "origen": "estado 50",
+      "glosa": "Borderó"
+    },
+    {
+      "label": "Publicidad",
+      "lado": "revenue",
+      "page": 82,
+      "section": "19. INGRESOS ORDINARIOS",
+      "values": [
+        2799.437
+      ],
+      "origen": "estado 50",
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Derechos de T.V.",
+      "lado": "revenue",
+      "page": 82,
+      "section": "19. INGRESOS ORDINARIOS",
+      "values": [
+        1541.73
+      ],
+      "origen": "estado 50",
+      "glosa": "Derechos de T.V."
+    },
+    {
+      "label": "Ingresos por transferencias de pases de jugadores",
+      "lado": "revenue",
+      "page": 82,
+      "section": "19. INGRESOS ORDINARIOS",
+      "values": [
+        3420.666
+      ],
+      "origen": "estado 50",
+      "glosa": "Ingresos por transferencias de pases de jugadores"
+    },
+    {
+      "label": "Ingresos varios",
+      "lado": "revenue",
+      "page": 82,
+      "section": "19. INGRESOS ORDINARIOS",
+      "values": [
+        213.594
+      ],
+      "origen": "estado 50",
+      "glosa": "Ingresos varios"
+    }
+  ]
+}

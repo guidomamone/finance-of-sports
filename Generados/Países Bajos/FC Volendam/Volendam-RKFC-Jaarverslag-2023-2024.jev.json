@@ -1,0 +1,167 @@
+{
+ "md": "Clubes/Países Bajos/FC Volendam/Volendam-RKFC-Jaarverslag-2023-2024.md",
+ "generatedAt": "2026-09-30T15:14:12.444Z",
+ "rubros": [
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "page": 7,
+   "section": "## 2.2 Enkelvoudige winst-en-verliesrekening over 2023/2024",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1117
+  },
+  {
+   "label": "Afschrijving vaste activa",
+   "lado": null,
+   "page": 7,
+   "section": "## 2.2 Enkelvoudige winst-en-verliesrekening over 2023/2024",
+   "choice": "depreciation",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "depreciation",
+     0.88
+    ],
+    [
+     "player_amortisation",
+     0.12
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1536
+  },
+  {
+   "label": "Belastingen",
+   "lado": "expense",
+   "page": 7,
+   "section": "## 2.2 Enkelvoudige winst-en-verliesrekening over 2023/2024",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "## 2.2 Enkelvoudige winst-en-verliesrekening over 2023/2024",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Financiële baten en lasten",
+   "lado": null,
+   "page": 7,
+   "section": "## 2.2 Enkelvoudige winst-en-verliesrekening over 2023/2024",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1481
+  },
+  {
+   "label": "Sociale lasten en pensioenen",
+   "lado": null,
+   "page": 7,
+   "section": "## 2.2 Enkelvoudige winst-en-verliesrekening over 2023/2024",
+   "choice": "wages_squad",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "wages_squad",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1497
+  },
+  {
+   "label": "Lonen en salarissen",
+   "lado": null,
+   "page": 7,
+   "section": "## 2.2 Enkelvoudige winst-en-verliesrekening over 2023/2024",
+   "choice": "wages_squad",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "wages_squad",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1508
+  }
+ ]
+}

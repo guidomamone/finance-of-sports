@@ -1,0 +1,312 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.pdf",
+ "generado": "2026-10-03T19:56:46.071Z",
+ "frena": [],
+ "avisos": [],
+ "ejercicio": {
+  "clubId": "aellarissa-gr",
+  "year": 2018,
+  "cierre": "2018-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Κύκλος εργασιών (καθαρός)",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 2.710883,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "(+) Λοιπά συνήθη έσοδα",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.687187,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "(+) Λοιπά έσοδα και κέρδη",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.00201,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 1,
+    "_conf": 0.99
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "(-) Κόστος πωλήσεων",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -1.541699,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "(-) Έξοδα διοίκησης",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.637944,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "(-) Έξοδα διάθεσης",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.478458,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "(-) Λοιπά έξοδα και ζημιές",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.000391,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 1,
+    "_conf": 0.96
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2018-06-30",
+   "sourceId": "aellarissa-gr-ael-notes-elp-2018-06-30",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.011555,
+   "tax": 0,
+   "sinDesglose": [
+    {
+     "renglon": "Κύκλος εργασιών (καθαρός)",
+     "lado": "revenue",
+     "importe": 2.710883,
+     "motivo": "el documento no desglosa este renglón"
+    },
+    {
+     "renglon": "(-) Κόστος πωλήσεων",
+     "lado": "expense",
+     "importe": 1.541699,
+     "motivo": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 3.40008,
+   "officialTotalExpenses": 2.658492,
+   "officialPAT": 0.730033
+  },
+  "source": {
+   "id": "aellarissa-gr-ael-notes-elp-2018-06-30",
+   "clubId": "aellarissa-gr",
+   "title": "Athlitiki Enosi Larissas AEL P.A.E. — AEL_notes_ELP_2018-06-30 (ejercicio 2018)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2018-06-30",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "(Διαχειριστική Χρήση 1 Ιουλίου 2017 έως 30 Ιουνίου 2018)"
+  },
+  "confianza": "alta",
+  "anual": "temporada"
+ },
+ "clubId": "aellarissa-gr",
+ "year": 2018,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 8,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "page": 3,
+   "native": 2.710883,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2.710883,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 2.710883
+  },
+  {
+   "label": "(+) Λοιπά συνήθη έσοδα",
+   "page": 3,
+   "native": 0.687187,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.687187,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.687187
+  },
+  {
+   "label": "(+) Λοιπά έσοδα και κέρδη",
+   "page": 3,
+   "native": 0.00201,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.00201,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.00201
+  },
+  {
+   "label": "(-) Κόστος πωλήσεων",
+   "page": 3,
+   "native": 1.541699,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.541699,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)",
+   "destino": "expense",
+   "amountNative": -1.541699
+  },
+  {
+   "label": "(-) Έξοδα διοίκησης",
+   "page": 3,
+   "native": 0.637944,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.637944,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.637944
+  },
+  {
+   "label": "(-) Έξοδα διάθεσης",
+   "page": 3,
+   "native": 0.478458,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.478458,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)",
+   "destino": "expense",
+   "amountNative": -0.478458
+  },
+  {
+   "label": "(-) Λοιπά έξοδα και ζημιές",
+   "page": 3,
+   "native": 0.000391,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.000391,
+   "cat": "other_expenses",
+   "conf": 0.96,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.000391
+  },
+  {
+   "label": "(-) Χρεωστικοί τόκοι και συναφή έξοδα",
+   "page": null,
+   "native": -0.011555,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 3.40008,
+  "expSum": -2.658492,
+  "officialTotalRevenue": 3.40008,
+  "officialTotalExpenses": 2.658492,
+  "officialPAT": 0.730033,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 0.730033,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 3.40008
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 2.658492
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "EUR@2018-06-30",
+  "fx": 0.85778,
+  "source": "market_close",
+  "label": "Tipo de referencia del Banco Central Europeo, última rueda hábil antes del cierre (2018-06-29, 2018-06-30 no es día hábil)"
+ },
+ "liga": {
+  "valor": "gr-superleague",
+  "fuente": "roster cacheado de \"2017–18 Super League Greece\" (tools/club-league-reference/gr.json), coincidencia única por palabras \"AEL\" = \"AEL Larissa\"",
+  "estado": "ok"
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 3,
+  "lineasGasto": 4,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}

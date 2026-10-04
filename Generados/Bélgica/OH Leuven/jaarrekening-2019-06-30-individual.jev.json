@@ -1,0 +1,489 @@
+{
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.md",
+ "generatedAt": "2026-09-30T04:27:02.091Z",
+ "rubros": [
+  {
+   "label": "Niet-recurrente bedrijfsopbrengsten 76A",
+   "lado": null,
+   "page": 25,
+   "section": "Nr. BE 0668.426.703 VOL 6.12 / OPBRENGSTEN EN KOSTEN VAN UITZONDERLIJKE OMVANG OF UITZONDERLIJKE MATE VAN VOORKOMEN",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1549
+  },
+  {
+   "label": "Schulden op meer dan één jaar 69 |",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 109.020 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 937
+  },
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 109.020 / Uitgestelde belastingen 168",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 871
+  },
+  {
+   "label": "NIET-RECURRENTE OPBRENGSTEN",
+   "lado": null,
+   "page": 25,
+   "section": "Nr. BE 0668.426.703 VOL 6.12 / OPBRENGSTEN EN KOSTEN VAN UITZONDERLIJKE OMVANG OF UITZONDERLIJKE MATE VAN VOORKOMEN",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "NIET-RECURRENTE KOSTEN",
+   "lado": null,
+   "page": 25,
+   "section": "Terugneming van waardeverminderingen op financiële vaste activa 761 / Terugneming van voorzieningen voor uitzonderlijke financiële risico's / en kosten 7621 / Meerwaarden bij de realisatie van financiële vaste activa 7631 / Andere niet-recurrente financiële opbrengsten 769",
+   "choice": "exceptional_items",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "exceptional_items",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "player_impairment",
+     0.01
+    ]
+   ],
+   "tokens": 1593
+  },
+  {
+   "label": "285/8",
+   "lado": "expense",
+   "page": 5,
+   "section": "ACTIVA / OPRICHT INGSKOSTEN 6.1 / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "other_amortisation",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 821
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 109.020 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "admin_general_expense",
+     0.49
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 875
+  },
+  {
+   "label": "29/58",
+   "lado": "expense",
+   "page": 5,
+   "section": "ACTIVA / OPRICHT INGSKOSTEN 6.1 / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "other_amortisation",
+     0.12
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 821
+  },
+  {
+   "label": "Diensten en diverse goederen",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1408
+  },
+  {
+   "label": "Handelsgoederen",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1409
+  },
+  {
+   "label": "Afschrijvingen & waardeverminderingen",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "choice": "depreciation",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "depreciation",
+     0.4
+    ],
+    [
+     "player_amortisation",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.25
+    ]
+   ],
+   "tokens": 1570
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten 66A",
+   "lado": null,
+   "page": 25,
+   "section": "Terugneming van waardeverminderingen op financiële vaste activa 761 / Terugneming van voorzieningen voor uitzonderlijke financiële risico's / en kosten 7621 / Meerwaarden bij de realisatie van financiële vaste activa 7631 / Andere niet-recurrente financiële opbrengsten 769",
+   "choice": "exceptional_items",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "exceptional_items",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "player_impairment",
+     0.05
+    ]
+   ],
+   "tokens": 1588
+  },
+  {
+   "label": "Personeelskosten",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "choice": "wages_squad",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "wages_squad",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.29
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "Nier-recurrente bedrijfskosten",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "choice": "exceptional_items",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "exceptional_items",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "player_impairment",
+     0.05
+    ]
+   ],
+   "tokens": 1507
+  },
+  {
+   "label": "Omzet",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1390
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1500
+  },
+  {
+   "label": "Financieel resultaat",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.8200000000000001
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1334
+  },
+  {
+   "label": "Verlies van het boekjaar voor belasting",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1537
+  },
+  {
+   "label": "Verlies van het boekjaar",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1557
+  },
+  {
+   "label": "Verlies uit gewone bedrijfsoefening",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "lump_football_operations_expense",
+     0.25
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ]
+   ],
+   "tokens": 1328
+  },
+  {
+   "label": "Uitzonderlijke opbrengsten",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.85
+    ],
+    [
+     "exceptional_items",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1369
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+  "club": "karvina",
+  "year": 2007,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/República Checa/Karviná/SL28_2007-priloha.md",
+  "generatedAt": "2026-09-30T22:07:46.513Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": true,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "Příloha účetní závěrky pro podnikatele za rok 2007",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Den zápisu:",
+          "values": [
+            "20.03.2007"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rozvahový den:",
+          "values": [
+            "31.12.2007"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/karvina-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"karvina\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+  ]
+}

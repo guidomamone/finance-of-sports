@@ -1,0 +1,449 @@
+{
+  "club": "operarioferroviario-br",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Operario Ferroviario/demonstracoes-financeiras-2024.md",
+  "generatedAt": "2026-09-30T22:41:51.489Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 10,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 5,
+      "section": "2.5 Outras contas a pagar                                  4                     5 / 2.6 Projetos Incentivo Esporte                         3.354                 2.758 / Não Circulante                                                              Não Circulante / 1.7 Intangível                                 223               245 / Patrimônio Líquido",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "3 Superavit /Deficit Acumulado",
+          "values": [
+            "16.724",
+            "15.580"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superavit /Deficit Exercício (246)",
+          "values": [
+            "1.144"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Operário Ferroviário Esporte Clube / Demonstrações do resultado / Em 31 de dezembro de 2024 e 2023 / (Em milhares de Reais) / 2024            2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita líquida - futebol profissional",
+          "values": [
+            "28.909",
+            "17.300"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3.1 Direitos de transmissão",
+          "values": [
+            "13.480",
+            "6.344"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3.2 Bilheteria",
+          "values": [
+            "3.254",
+            "1.057"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3.3 Patrocínio",
+          "values": [
+            "7.784",
+            "6.342"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3.4 Programa de sócio torcedor",
+          "values": [
+            "3.260",
+            "2.195"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(-) Custos e despesas - futebol profissional",
+          "values": [
+            "(29.052)",
+            "(16.075)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4.1 Salarios e encargos",
+          "values": [
+            "(10.327)",
+            "(6.173)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4.2 Direitos de imagem",
+          "values": [
+            "(7.436)",
+            "(2.366)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "4.11 Serviços de terceiros",
+          "values": [
+            "(2.006)",
+            "(1.359)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4.6 Despesas administrativas",
+          "values": [
+            "(1.405)",
+            "(2.106)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "4.7 Despesas gerais",
+          "values": [
+            "(2.250)",
+            "(1.525)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(=) Déficit futebol profissional (143)",
+          "values": [
+            "1.225"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Demonstrações das mutações do patrimônio líquido / Em 31 de dezembro de 2024 e 2023 / (Em milhares de Reais) / Superavit (Deficit) / acumulados          Total",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldos em 1 de janeiro de 2023",
+          "values": [
+            "15.580",
+            "15.580"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit líquido/(déficit) do exercício",
+          "values": [
+            "1.144",
+            "1.144"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2023",
+          "values": [
+            "16.724",
+            "16.724"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "Aumento (redução) em outras contas a pagar                                  (0)        1 / (Aumento) redução de ativo imobilizado e intangivel                       (78)        44 / (Aumento) redução de investimentos                                         (6)       (59) / Pagamentos de empréstimos e financiamentos                              (1.012)     (631) / Demonstração do aumento do caixa e equivalentes de caixa",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo inicial do caixa e equivalentes de caixa",
+          "values": [
+            "2.270",
+            "1.569"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo final no caixa e equivalentes de caixa",
+          "values": [
+            "1.343",
+            "2.270"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "estimativas e premissas contábeis, quando de sua efetiva realização, podem ser / divergentes, podendo o clube estar exposto a perdas que podem ser materiais. / 4.   Caixa e equivalentes de caixa - em milhares de reais / 2024         2023 / Caixa                                                             6            5",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Banco conta movimento",
+          "values": [
+            "1.337",
+            "2.265"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "1.343",
+            "2.270"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "Movimentação dos Projetos / 31/12/2023    Adições     Baixas      31/12/2024 / Projeto Mesp – 1509859-16            50         4        (1)               53 / Projeto Mesp 2                        1        36          -               37 / Projeto Mesp 3                      247       323        (4)              566",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Projeto Mesp 4 2.460",
+          "values": [
+            "(1.217)",
+            "1.593"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Projeto Mesp 5 - 1.105 -",
+          "values": [
+            "1.105"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "2.758",
+            "1.818",
+            "(1.222)",
+            "3.354"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "natureza de suas atividades e a orientação de seus consultores de seguros. A / cobertura dos seguros, em valores de 31 de dezembro de 2024, é assim / demonstrada: / Cobertura empresarial / Atletas Profissionais",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Morte Natural",
+          "values": [
+            "6.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Morte Acidental",
+          "values": [
+            "12.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Invalidez por Acidente",
+          "values": [
+            "6.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Antecip. Esp. Por Doença",
+          "values": [
+            "6.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 15,
+      "section": "estimativas e premissas contábeis, quando de sua efetiva realização, podem ser / divergentes, podendo o clube estar exposto a perdas que podem ser materiais. / 4.   Caixa e equivalentes de caixa - em milhares de reais / 2024         2023 / Caixa                                                             6            5",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "1.343",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-6"
+    },
+    {
+      "page": 15,
+      "section": "estimativas e premissas contábeis, quando de sua efetiva realização, podem ser / divergentes, podendo o clube estar exposto a perdas que podem ser materiais. / 4.   Caixa e equivalentes de caixa - em milhares de reais / 2024         2023 / Caixa                                                             6            5",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "2.270",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-5"
+    },
+    {
+      "page": 16,
+      "section": "Movimentação dos Projetos / 31/12/2023    Adições     Baixas      31/12/2024 / Projeto Mesp – 1509859-16            50         4        (1)               53 / Projeto Mesp 2                        1        36          -               37 / Projeto Mesp 3                      247       323        (4)              566",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "2.758",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-2870"
+    },
+    {
+      "page": 16,
+      "section": "Movimentação dos Projetos / 31/12/2023    Adições     Baixas      31/12/2024 / Projeto Mesp – 1509859-16            50         4        (1)               53 / Projeto Mesp 2                        1        36          -               37 / Projeto Mesp 3                      247       323        (4)              566",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "1.818",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-225"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 5,
+    "results": [
+      {
+        "label": "Receita líquida - futebol profissional",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita líquida - futebol profissional",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "3.1 Direitos de transmissão",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "broadcasting",
+        "matchedLabel": "Direitos de transmissão",
+        "similarity": 100
+      },
+      {
+        "label": "3.1 Direitos de transmissão",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "3.2 Bilheteria",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "matchday_competition",
+        "matchedLabel": "Bilheteria",
+        "similarity": 100
+      },
+      {
+        "label": "3.2 Bilheteria",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Bilheteria (Custo)",
+        "similarity": 50
+      },
+      {
+        "label": "3.3 Patrocínio",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Patrocínio",
+        "similarity": 100
+      },
+      {
+        "label": "3.3 Patrocínio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "3.4 Programa de sócio torcedor",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "member_dues",
+        "matchedLabel": "Programa de sócio torcedor",
+        "similarity": 100
+      },
+      {
+        "label": "3.4 Programa de sócio torcedor",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Operário Ferroviário",
+    "matches": [
+      {
+        "leagueId": "br-serieB",
+        "year": "2024",
+        "matchedName": "Operário Ferroviário",
+        "wikipediaPage": "2024 Campeonato Brasileiro Série B"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": [
+    "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ]
+}

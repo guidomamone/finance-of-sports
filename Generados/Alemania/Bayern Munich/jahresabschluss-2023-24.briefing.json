@@ -1,0 +1,119 @@
+{
+  "club": "bayernmunich-de",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/Bayern Munich/jahresabschluss-2023-24.md",
+  "generatedAt": "2026-09-30T14:10:55.303Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 4,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 4,
+      "section": "JAHRESABSCHLUSS | SAISON 23124",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Il. Sach- und Finanzanlagen 256,7 544,5 Il. Kapital- und Gewinnrücklage",
+          "values": [
+            "540,5",
+            "570,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Umlaufvermögen 478,2 B. Rückstellungen",
+          "values": [
+            "86,0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "(Forderungen, Anzahlungen, Vorräte, / Bank- und Kassenguthaben)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "C. Rechnungsabgrenzungsposten 79 C. Verbindlichkeiten",
+          "values": [
+            "293,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D. Aktiver Überhang aus Vermögensverrechnung 2,1 D. Rechnungsabgrenzungsposten",
+          "values": [
+            "83,0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "JAHRESABSCHLUSS | SAISON 23124",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Il. Sach- und Finanzanlagen 286,6 574,3 Il. Kapital- und Gewinnrücklage 4911",
+          "values": [
+            "521,1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Umlaufvermögen 336,1 B. Rückstellungen",
+          "values": [
+            "73,2"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "(Forderungen, Anzahlungen, Vorräte, / Bank- und Kassenguthaben)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "C. Rechnungsabgrenzungsposten 6,8 C. Verbindlichkeiten",
+          "values": [
+            "285,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D. Aktiver Überhang aus Vermögensverrechnung 2,1 D. Rechnungsabgrenzungsposten",
+          "values": [
+            "39,7"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver sus RELEVANT_KEYWORDS)."
+  },
+  "league": {
+    "pais": "de",
+    "query": "Bayern Munich",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

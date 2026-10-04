@@ -1,0 +1,774 @@
+{
+  "md": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2021.md",
+  "pdf": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2021.pdf",
+  "club": "fluminense-br",
+  "year": 2021,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:52:49.718Z",
+  "tieOuts": {
+    "cierran": 5,
+    "noCierran": 10
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "8 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 68,
+    "notasUsadas": []
+  },
+  "ladoConocido": 45,
+  "rubros": [
+    {
+      "label": "Exposição líquida em USD",
+      "lado": null,
+      "page": 41,
+      "section": "Risco cambial (continuação) / Análise de sensibilidade / Exposição líquida e impacto / no resultado do exercício / 2021 2020",
+      "values": [
+        -14.76
+      ],
+      "origen": "estado 61",
+      "glosa": "Exposición neta en USD"
+    },
+    {
+      "label": "Valorização do Real em 10%",
+      "lado": null,
+      "page": 41,
+      "section": "Risco cambial (continuação) / Análise de sensibilidade / Exposição líquida e impacto / no resultado do exercício / 2021 2020",
+      "values": [
+        1.476
+      ],
+      "origen": "estado 61",
+      "glosa": "Apreciación del Real en 10%"
+    },
+    {
+      "label": "Depreciação do Real em 25%",
+      "lado": null,
+      "page": 41,
+      "section": "Risco cambial (continuação) / Análise de sensibilidade / Exposição líquida e impacto / no resultado do exercício / 2021 2020",
+      "values": [
+        -3.69
+      ],
+      "origen": "estado 61",
+      "glosa": "Depreciación del Real en 25%"
+    },
+    {
+      "label": "Exposição líquida em Euro",
+      "lado": null,
+      "page": 41,
+      "section": "Risco cambial (continuação) / Análise de sensibilidade / Exposição líquida e impacto / no resultado do exercício / 2021 2020",
+      "values": [
+        8.962
+      ],
+      "origen": "estado 61",
+      "glosa": "Exposición neta en euros"
+    },
+    {
+      "label": "Valorização do Real em 10% (896)",
+      "lado": null,
+      "page": 41,
+      "section": "Risco cambial (continuação) / Análise de sensibilidade / Exposição líquida e impacto / no resultado do exercício / 2021 2020",
+      "values": [
+        -5.34
+      ],
+      "origen": "estado 61",
+      "glosa": "Apreciación del Real en 10% (896)"
+    },
+    {
+      "label": "Depreciação do Real em 25%",
+      "lado": null,
+      "page": 41,
+      "section": "Risco cambial (continuação) / Análise de sensibilidade / Exposição líquida e impacto / no resultado do exercício / 2021 2020",
+      "values": [
+        2.241
+      ],
+      "origen": "estado 61",
+      "glosa": "Depreciación del Real en 25%"
+    },
+    {
+      "label": "Fornecedores e outras obrigações",
+      "lado": null,
+      "page": 43,
+      "section": "Risco de liquidez (continuação) / valor presente: / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total / Em 31 de dezembro de 2021",
+      "values": [
+        10.139
+      ],
+      "origen": "estado 64",
+      "glosa": "Proveedores y otras cuentas por pagar"
+    },
+    {
+      "label": "Contas a pagar na transferência de jogadores",
+      "lado": null,
+      "page": 43,
+      "section": "Risco de liquidez (continuação) / valor presente: / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total / Em 31 de dezembro de 2021",
+      "values": [
+        22.228
+      ],
+      "origen": "estado 64",
+      "glosa": "Cuentas por pagar por traspaso de jugadores"
+    },
+    {
+      "label": "Empréstimos",
+      "lado": null,
+      "page": 43,
+      "section": "Risco de liquidez (continuação) / valor presente: / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total / Em 31 de dezembro de 2021",
+      "values": [
+        17.889
+      ],
+      "origen": "estado 64",
+      "glosa": "Préstamos"
+    },
+    {
+      "label": "Tributos parcelados",
+      "lado": null,
+      "page": 43,
+      "section": "Risco de liquidez (continuação) / valor presente: / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total / Em 31 de dezembro de 2021",
+      "values": [
+        43.364
+      ],
+      "origen": "estado 64",
+      "glosa": "Impuestos fraccionados"
+    },
+    {
+      "label": "Contas a pagar em acordos judiciais",
+      "lado": null,
+      "page": 43,
+      "section": "Risco de liquidez (continuação) / valor presente: / Menos de Entre um e Entre doise A partir de 5 / um ano dois anos cinco anos anos Total / Em 31 de dezembro de 2021",
+      "values": [
+        62.824
+      ],
+      "origen": "estado 64",
+      "glosa": "Cuentas por pagar por acuerdos judiciales"
+    },
+    {
+      "label": "Fornecedores e outras obrigações",
+      "lado": null,
+      "page": 43,
+      "section": "156.444 82.315 61.070 106.496 406.325 / Em 31 de dezembro de 2020",
+      "values": [
+        16.477
+      ],
+      "origen": "estado 65",
+      "glosa": "Proveedores y otras cuentas por pagar"
+    },
+    {
+      "label": "Contas a pagar na transferência de jogadores 56.401",
+      "lado": null,
+      "page": 43,
+      "section": "156.444 82.315 61.070 106.496 406.325 / Em 31 de dezembro de 2020",
+      "values": [
+        56.983
+      ],
+      "origen": "estado 65",
+      "glosa": "Cuentas por pagar por traspaso de jugadores 56.401"
+    },
+    {
+      "label": "Empréstimos 24.193",
+      "lado": null,
+      "page": 43,
+      "section": "156.444 82.315 61.070 106.496 406.325 / Em 31 de dezembro de 2020",
+      "values": [
+        19.597
+      ],
+      "origen": "estado 65",
+      "glosa": "Préstamos 24.193"
+    },
+    {
+      "label": "Tributos parcelados",
+      "lado": null,
+      "page": 43,
+      "section": "156.444 82.315 61.070 106.496 406.325 / Em 31 de dezembro de 2020",
+      "values": [
+        60.365
+      ],
+      "origen": "estado 65",
+      "glosa": "Impuestos fraccionados"
+    },
+    {
+      "label": "Contas a pagar em acordos judiciais",
+      "lado": null,
+      "page": 43,
+      "section": "156.444 82.315 61.070 106.496 406.325 / Em 31 de dezembro de 2020",
+      "values": [
+        31.74
+      ],
+      "origen": "estado 65",
+      "glosa": "Cuentas por pagar por acuerdos judiciales"
+    },
+    {
+      "label": "Receitas financeiras 33.905 (844)",
+      "lado": "revenue",
+      "page": 48,
+      "section": "Superávit antes do resultado financeiro 540 540",
+      "values": [
+        34.749
+      ],
+      "origen": "estado 69",
+      "glosa": "Ingresos financieros 33.905 (844)"
+    },
+    {
+      "label": "Despesas financeiras (37.367)",
+      "lado": "expense",
+      "page": 48,
+      "section": "Superávit antes do resultado financeiro 540 540",
+      "values": [
+        -38.211
+      ],
+      "origen": "estado 69",
+      "glosa": "Gastos financieros (37.367)"
+    },
+    {
+      "label": "Receitas (despesas) financeiras, líquidas",
+      "lado": null,
+      "page": 48,
+      "section": "Superávit antes do resultado financeiro 540 540",
+      "values": [
+        -3.462
+      ],
+      "origen": "estado 69",
+      "glosa": "Ingresos (gastos) financieros netos"
+    },
+    {
+      "label": "Receita operacional líquida 2.1 (a)",
+      "lado": "revenue",
+      "page": 13,
+      "section": "31 de dezembro de 2021 / Em milhares de R$, exceto quando indicado de outra forma / Revisão dos principais indicadores financeiros / Ref. 2021 2020 Variação / Principais indicadores de resultado e geração de caixa",
+      "values": [
+        313.935
+      ],
+      "origen": "estado 12",
+      "glosa": "Ingresos operativos netos 2.1 (a)"
+    },
+    {
+      "label": "Custos e despesas operacionais",
+      "lado": "expense",
+      "page": 13,
+      "section": "31 de dezembro de 2021 / Em milhares de R$, exceto quando indicado de outra forma / Revisão dos principais indicadores financeiros / Ref. 2021 2020 Variação / Principais indicadores de resultado e geração de caixa",
+      "values": [
+        0.0021
+      ],
+      "origen": "estado 12",
+      "glosa": "Costes y gastos operativos"
+    },
+    {
+      "label": "Valor bruto - Contas a receber",
+      "lado": null,
+      "page": 42,
+      "section": "Vencidos Vencidos / até 180 acima de / A vencer dias 180 dias Total / Em 31 de dezembro de 2021 / Taxa de perda esperada -100%",
+      "values": [
+        30.255
+      ],
+      "origen": "estado 62",
+      "glosa": "Importe bruto - Cuentas por cobrar"
+    },
+    {
+      "label": "Contas a receber de clientes",
+      "lado": null,
+      "page": 42,
+      "section": "Vencidos Vencidos / até 180 acima de / A vencer dias 180 dias Total / Em 31 de dezembro de 2021 / Taxa de perda esperada -100%",
+      "values": [
+        5.95
+      ],
+      "origen": "estado 62",
+      "glosa": "Cuentas por cobrar a clientes"
+    },
+    {
+      "label": "Contas a receber na transferência de jogadores",
+      "lado": null,
+      "page": 42,
+      "section": "Vencidos Vencidos / até 180 acima de / A vencer dias 180 dias Total / Em 31 de dezembro de 2021 / Taxa de perda esperada -100%",
+      "values": [
+        24.305
+      ],
+      "origen": "estado 62",
+      "glosa": "Cuentas por cobrar por traspaso de jugadores"
+    },
+    {
+      "label": "Valor bruto - Contas a receber",
+      "lado": null,
+      "page": 42,
+      "section": "Provisão para perdas esperadas (13.958) (13.958) / Em 31 de dezembro de 2020 / Taxa de perda esperada -76%",
+      "values": [
+        80.821
+      ],
+      "origen": "estado 63",
+      "glosa": "Importe bruto - Cuentas por cobrar"
+    },
+    {
+      "label": "Contas a receber de clientes",
+      "lado": null,
+      "page": 42,
+      "section": "Provisão para perdas esperadas (13.958) (13.958) / Em 31 de dezembro de 2020 / Taxa de perda esperada -76%",
+      "values": [
+        14.804
+      ],
+      "origen": "estado 63",
+      "glosa": "Cuentas por cobrar a clientes"
+    },
+    {
+      "label": "Contas a receber na transferência de jogadores",
+      "lado": null,
+      "page": 42,
+      "section": "Provisão para perdas esperadas (13.958) (13.958) / Em 31 de dezembro de 2020 / Taxa de perda esperada -76%",
+      "values": [
+        66.017
+      ],
+      "origen": "estado 63",
+      "glosa": "Cuentas por cobrar por traspaso de jugadores"
+    },
+    {
+      "label": "Salários a atletas e demais funcionários",
+      "lado": "expense",
+      "page": 22,
+      "section": "31 de dezembro de 2021 / Em milhares de R$, exceto quando indicado de outra forma / Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2021 2020",
+      "values": [
+        99.969
+      ],
+      "origen": "estado 25",
+      "glosa": "Sueldos a deportistas y demás empleados"
+    },
+    {
+      "label": "Direito de imagem a atletas",
+      "lado": "expense",
+      "page": 22,
+      "section": "31 de dezembro de 2021 / Em milhares de R$, exceto quando indicado de outra forma / Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2021 2020",
+      "values": [
+        18.068
+      ],
+      "origen": "estado 25",
+      "glosa": "Derechos de imagen de deportistas"
+    },
+    {
+      "label": "Remuneração de prestadores de serviço (Futebol)",
+      "lado": "expense",
+      "page": 22,
+      "section": "31 de dezembro de 2021 / Em milhares de R$, exceto quando indicado de outra forma / Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2021 2020",
+      "values": [
+        6.48
+      ],
+      "origen": "estado 25",
+      "glosa": "Remuneración a prestadores de servicios (Fútbol)"
+    },
+    {
+      "label": "Remuneração de prestadores de serviço (Outras áreas) (i)",
+      "lado": "expense",
+      "page": 22,
+      "section": "31 de dezembro de 2021 / Em milhares de R$, exceto quando indicado de outra forma / Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2021 2020",
+      "values": [
+        5.643
+      ],
+      "origen": "estado 25",
+      "glosa": "Remuneración a prestadores de servicios (Otras áreas) (i)"
+    },
+    {
+      "label": "Prêmios e gratificações",
+      "lado": "expense",
+      "page": 22,
+      "section": "31 de dezembro de 2021 / Em milhares de R$, exceto quando indicado de outra forma / Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2021 2020",
+      "values": [
+        18.694
+      ],
+      "origen": "estado 25",
+      "glosa": "Primas y gratificaciones"
+    },
+    {
+      "label": "Provisão de férias",
+      "lado": "expense",
+      "page": 22,
+      "section": "31 de dezembro de 2021 / Em milhares de R$, exceto quando indicado de outra forma / Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2021 2020",
+      "values": [
+        8.324
+      ],
+      "origen": "estado 25",
+      "glosa": "Provisión para vacaciones"
+    },
+    {
+      "label": "Provisão 130 salário",
+      "lado": "expense",
+      "page": 22,
+      "section": "31 de dezembro de 2021 / Em milhares de R$, exceto quando indicado de outra forma / Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2021 2020",
+      "values": [
+        5.063
+      ],
+      "origen": "estado 25",
+      "glosa": "Provisión decimotercer sueldo"
+    },
+    {
+      "label": "Assistência médica",
+      "lado": "expense",
+      "page": 22,
+      "section": "31 de dezembro de 2021 / Em milhares de R$, exceto quando indicado de outra forma / Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2021 2020",
+      "values": [
+        2.435
+      ],
+      "origen": "estado 25",
+      "glosa": "Asistencia médica"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 22,
+      "section": "31 de dezembro de 2021 / Em milhares de R$, exceto quando indicado de outra forma / Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2021 2020",
+      "values": [
+        5.587
+      ],
+      "origen": "estado 25",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Direitos de transmissão e premiações por performance (i)",
+      "lado": "revenue",
+      "page": 19,
+      "section": "Em milhares de R$, exceto quando indicado de outra forma / 2.1(a) Receita operacional líquida (continuação) / Receita por segmento - Futebol / Nota 2021 2020 / Receita bruta com Futebol",
+      "values": [
+        176.802
+      ],
+      "origen": "estado 20",
+      "glosa": "Derechos de retransmisión y primas por rendimiento (i)"
+    },
+    {
+      "label": "Transferências de atletas e mecanismo de solidariedade (ii)",
+      "lado": "revenue",
+      "page": 19,
+      "section": "Em milhares de R$, exceto quando indicado de outra forma / 2.1(a) Receita operacional líquida (continuação) / Receita por segmento - Futebol / Nota 2021 2020 / Receita bruta com Futebol",
+      "values": [
+        109.593
+      ],
+      "origen": "estado 20",
+      "glosa": "Traspasos de futbolistas y mecanismo de solidaridad (ii)"
+    },
+    {
+      "label": "Patrocínios",
+      "lado": "revenue",
+      "page": 19,
+      "section": "Em milhares de R$, exceto quando indicado de outra forma / 2.1(a) Receita operacional líquida (continuação) / Receita por segmento - Futebol / Nota 2021 2020 / Receita bruta com Futebol",
+      "values": [
+        20.102
+      ],
+      "origen": "estado 20",
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Programa sócio-torcedor",
+      "lado": "revenue",
+      "page": 19,
+      "section": "Em milhares de R$, exceto quando indicado de outra forma / 2.1(a) Receita operacional líquida (continuação) / Receita por segmento - Futebol / Nota 2021 2020 / Receita bruta com Futebol",
+      "values": [
+        8.762
+      ],
+      "origen": "estado 20",
+      "glosa": "Programa de socios abonados"
+    },
+    {
+      "label": "Bilheteria e outras receitas em jogos",
+      "lado": "revenue",
+      "page": 19,
+      "section": "Em milhares de R$, exceto quando indicado de outra forma / 2.1(a) Receita operacional líquida (continuação) / Receita por segmento - Futebol / Nota 2021 2020 / Receita bruta com Futebol",
+      "values": [
+        2.555
+      ],
+      "origen": "estado 20",
+      "glosa": "Taquilla y otros ingresos de partidos"
+    },
+    {
+      "label": "Timemania",
+      "lado": "revenue",
+      "page": 19,
+      "section": "Em milhares de R$, exceto quando indicado de outra forma / 2.1(a) Receita operacional líquida (continuação) / Receita por segmento - Futebol / Nota 2021 2020 / Receita bruta com Futebol",
+      "values": [
+        1.583
+      ],
+      "origen": "estado 20",
+      "glosa": "Timemania"
+    },
+    {
+      "label": "Manchester City Kayky da S. Chagas",
+      "lado": "revenue",
+      "page": 20,
+      "section": "2.1(a) Receita operacional líquida (continuação) / (ii) Transferência de atletas e mecanismo de solidariedade / de vitrine ou mecanismo de solidariedade, principalmente, dos atletas Kayky e Metinho (Em / Gilberto, Pedro e Wendell). / Contraparte Atleta 2021",
+      "values": [
+        63.539
+      ],
+      "origen": "estado 23",
+      "glosa": "Manchester City Kayky da S. Chagas"
+    },
+    {
+      "label": "Eapérance Sportive Metinho Silu",
+      "lado": "revenue",
+      "page": 20,
+      "section": "2.1(a) Receita operacional líquida (continuação) / (ii) Transferência de atletas e mecanismo de solidariedade / de vitrine ou mecanismo de solidariedade, principalmente, dos atletas Kayky e Metinho (Em / Gilberto, Pedro e Wendell). / Contraparte Atleta 2021",
+      "values": [
+        30.201
+      ],
+      "origen": "estado 23",
+      "glosa": "Eapérance Sportive Metinho Silu"
+    },
+    {
+      "label": "Boavista Futebol SAD Paulo Lucas",
+      "lado": "revenue",
+      "page": 20,
+      "section": "2.1(a) Receita operacional líquida (continuação) / (ii) Transferência de atletas e mecanismo de solidariedade / de vitrine ou mecanismo de solidariedade, principalmente, dos atletas Kayky e Metinho (Em / Gilberto, Pedro e Wendell). / Contraparte Atleta 2021",
+      "values": [
+        2.75
+      ],
+      "origen": "estado 23",
+      "glosa": "Boavista Futebol SAD Paulo Lucas"
+    },
+    {
+      "label": "Club Atlético Madrid Marcos Paulo",
+      "lado": "revenue",
+      "page": 20,
+      "section": "2.1(a) Receita operacional líquida (continuação) / (ii) Transferência de atletas e mecanismo de solidariedade / de vitrine ou mecanismo de solidariedade, principalmente, dos atletas Kayky e Metinho (Em / Gilberto, Pedro e Wendell). / Contraparte Atleta 2021",
+      "values": [
+        2.603
+      ],
+      "origen": "estado 23",
+      "glosa": "Club Atlético Madrid Marcos Paulo"
+    },
+    {
+      "label": "Flamengo Pedro Guilherme",
+      "lado": "revenue",
+      "page": 20,
+      "section": "2.1(a) Receita operacional líquida (continuação) / (ii) Transferência de atletas e mecanismo de solidariedade / de vitrine ou mecanismo de solidariedade, principalmente, dos atletas Kayky e Metinho (Em / Gilberto, Pedro e Wendell). / Contraparte Atleta 2021",
+      "values": [
+        2.535
+      ],
+      "origen": "estado 23",
+      "glosa": "Flamengo Pedro Guilherme"
+    },
+    {
+      "label": "Olympique Gerson Santos",
+      "lado": "revenue",
+      "page": 20,
+      "section": "2.1(a) Receita operacional líquida (continuação) / (ii) Transferência de atletas e mecanismo de solidariedade / de vitrine ou mecanismo de solidariedade, principalmente, dos atletas Kayky e Metinho (Em / Gilberto, Pedro e Wendell). / Contraparte Atleta 2021",
+      "values": [
+        1.915
+      ],
+      "origen": "estado 23",
+      "glosa": "Olympique Gerson Santos"
+    },
+    {
+      "label": "Juros e encargos de parcelamento de impostos",
+      "lado": "expense",
+      "page": 25,
+      "section": "Despesa financeira",
+      "values": [
+        -26.505
+      ],
+      "origen": "estado 32",
+      "glosa": "Intereses y recargos por fraccionamiento de impuestos"
+    },
+    {
+      "label": "Juros e encargos de financiamento e antecipação de recebíveis",
+      "lado": "expense",
+      "page": 25,
+      "section": "Despesa financeira",
+      "values": [
+        -15.14
+      ],
+      "origen": "estado 32",
+      "glosa": "Intereses y gastos de financiación y anticipo de cuentas por cobrar"
+    },
+    {
+      "label": "Variação cambial",
+      "lado": "expense",
+      "page": 25,
+      "section": "Despesa financeira",
+      "values": [
+        -5.569
+      ],
+      "origen": "estado 32",
+      "glosa": "Diferencias de cambio"
+    },
+    {
+      "label": "Outras despesas financeiras, líquidas",
+      "lado": "expense",
+      "page": 25,
+      "section": "Despesa financeira",
+      "values": [
+        -3.926
+      ],
+      "origen": "estado 32",
+      "glosa": "Otros gastos financieros netos"
+    },
+    {
+      "label": "Receitas (despesas) financeiras, líquidas",
+      "lado": "expense",
+      "page": 25,
+      "section": "Despesa financeira",
+      "values": [
+        -24.964
+      ],
+      "origen": "estado 32",
+      "glosa": "Ingresos (gastos) financieros netos"
+    },
+    {
+      "label": "Receita operacional bruta",
+      "lado": "revenue",
+      "page": 18,
+      "section": "2.1(a) Receita operacional líquida / 2021 / Clube social / e esportes / Futebol amadores Total",
+      "values": [
+        320.192
+      ],
+      "origen": "estado 18",
+      "glosa": "Ingresos operativos brutos"
+    },
+    {
+      "label": "Impostos e contribuições",
+      "lado": "revenue",
+      "page": 18,
+      "section": "2.1(a) Receita operacional líquida / 2021 / Clube social / e esportes / Futebol amadores Total",
+      "values": [
+        -10.167
+      ],
+      "origen": "estado 18",
+      "glosa": "Impuestos y contribuciones"
+    },
+    {
+      "label": "Direito de arena",
+      "lado": "revenue",
+      "page": 18,
+      "section": "2.1(a) Receita operacional líquida / 2021 / Clube social / e esportes / Futebol amadores Total",
+      "values": [
+        -9.531
+      ],
+      "origen": "estado 18",
+      "glosa": "Derechos de arena"
+    },
+    {
+      "label": "Viagens e estadias",
+      "lado": "expense",
+      "page": 22,
+      "section": "16.025 10.972 / 186.288 112.564 / (i) Outras áreas abrangem esportes olímpicos, “back-office” e outras áreas do Clube. / Transportes e outros gastos com jogos e competições / 2021 2020",
+      "values": [
+        12.196
+      ],
+      "origen": "estado 27",
+      "glosa": "Viajes y estancias"
+    },
+    {
+      "label": "Estádio",
+      "lado": "expense",
+      "page": 22,
+      "section": "16.025 10.972 / 186.288 112.564 / (i) Outras áreas abrangem esportes olímpicos, “back-office” e outras áreas do Clube. / Transportes e outros gastos com jogos e competições / 2021 2020",
+      "values": [
+        7.552
+      ],
+      "origen": "estado 27",
+      "glosa": "Estadio"
+    },
+    {
+      "label": "Serviços de apoio, taxas de federação e outras",
+      "lado": "expense",
+      "page": 22,
+      "section": "16.025 10.972 / 186.288 112.564 / (i) Outras áreas abrangem esportes olímpicos, “back-office” e outras áreas do Clube. / Transportes e outros gastos com jogos e competições / 2021 2020",
+      "values": [
+        3.376
+      ],
+      "origen": "estado 27",
+      "glosa": "Servicios de apoyo, tasas federativas y otros"
+    },
+    {
+      "label": "Despesas médicas",
+      "lado": "expense",
+      "page": 22,
+      "section": "16.025 10.972 / 186.288 112.564 / (i) Outras áreas abrangem esportes olímpicos, “back-office” e outras áreas do Clube. / Transportes e outros gastos com jogos e competições / 2021 2020",
+      "values": [
+        1.818
+      ],
+      "origen": "estado 27",
+      "glosa": "Gastos médicos"
+    },
+    {
+      "label": "Contas a pagar na transferência de jogadores 2.2 (d)",
+      "lado": "expense",
+      "page": 26,
+      "section": "51.780 93.189 / Nota 2021 2020 / Passivos financeiros ao custo amortizado",
+      "values": [
+        26.093
+      ],
+      "origen": "estado 36",
+      "glosa": "Cuentas por pagar por traspaso de jugadores 2.2 (d)"
+    },
+    {
+      "label": "Empréstimos e financiamentos 2.2 (e)",
+      "lado": "expense",
+      "page": 26,
+      "section": "51.780 93.189 / Nota 2021 2020 / Passivos financeiros ao custo amortizado",
+      "values": [
+        33.009
+      ],
+      "origen": "estado 36",
+      "glosa": "Préstamos y financiaciones 2.2 (e)"
+    },
+    {
+      "label": "Tributos parcelados 2.2 (f)",
+      "lado": "expense",
+      "page": 26,
+      "section": "51.780 93.189 / Nota 2021 2020 / Passivos financeiros ao custo amortizado",
+      "values": [
+        250.262
+      ],
+      "origen": "estado 36",
+      "glosa": "Impuestos fraccionados 2.2 (f)"
+    },
+    {
+      "label": "Despesas com conservação e manutenção",
+      "lado": "expense",
+      "page": 24,
+      "section": "Felipe Cardoso 109 / Outros atletas 1.012 / 2.601 / 2.1(e) Gastos gerais / 2021 2020",
+      "values": [
+        5860
+      ],
+      "origen": "estado 30",
+      "glosa": "Gastos de conservación y mantenimiento"
+    },
+    {
+      "label": "Materiais de consumo",
+      "lado": "expense",
+      "page": 24,
+      "section": "Felipe Cardoso 109 / Outros atletas 1.012 / 2.601 / 2.1(e) Gastos gerais / 2021 2020",
+      "values": [
+        4700
+      ],
+      "origen": "estado 30",
+      "glosa": "Materiales de consumo"
+    },
+    {
+      "label": "Luz, telefone, gás e informática",
+      "lado": "expense",
+      "page": 24,
+      "section": "Felipe Cardoso 109 / Outros atletas 1.012 / 2.601 / 2.1(e) Gastos gerais / 2021 2020",
+      "values": [
+        4026
+      ],
+      "origen": "estado 30",
+      "glosa": "Electricidad, teléfono, gas e informática"
+    },
+    {
+      "label": "Receita operacional líquida 301.670",
+      "lado": "revenue",
+      "page": 25,
+      "section": "2021 / Futebol / masculino Clube Social Custos / (profissional Futebol e Esportes administrativos e / e amador) feminimo olímpicos compartilhados Total",
+      "values": [
+        11.855
+      ],
+      "origen": "estado 33",
+      "glosa": "Ingresos operativos netos 301.670"
+    },
+    {
+      "label": "Custos e despesas operacionais",
+      "lado": "expense",
+      "page": 25,
+      "section": "2021 / Futebol / masculino Clube Social Custos / (profissional Futebol e Esportes administrativos e / e amador) feminimo olímpicos compartilhados Total",
+      "values": [
+        -238.502
+      ],
+      "origen": "estado 33",
+      "glosa": "Costes y gastos operativos"
+    }
+  ]
+}

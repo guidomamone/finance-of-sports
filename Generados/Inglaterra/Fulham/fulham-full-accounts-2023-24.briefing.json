@@ -1,0 +1,764 @@
+{
+  "club": "fulham-gb",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Inglaterra/Fulham/fulham-full-accounts-2023-24.md",
+  "generatedAt": "2026-09-30T22:44:48.754Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 22,
+    "eu": 0,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 18,
+  "relevantTableCount": 5,
+  "tables": [
+    {
+      "page": 15,
+      "section": "Company number: 2114486 / As at 30 June 2024 / Notes 2024 2023 / £'000 £’000 / Fixed assets",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intangible assets",
+          "values": [
+            "119,576",
+            "100,437"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tangible assets",
+          "values": [
+            "4,162",
+            "3,582"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "123,738 104,019 / Current assets / Stocks 435 242 / Debtors (includes £2,329,000 (2023: £11,602,000) due",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "after more than one year)",
+          "values": [
+            "46,942",
+            "30,197"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash at bank and in hand",
+          "values": [
+            "32,768",
+            "51,472"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "80,145 81,911",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Creditors: amounts falling due within one year",
+          "values": [
+            "(136,459)",
+            "(74,528)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net current (liabilities)/assets",
+          "values": [
+            "(56,314)",
+            "7,383"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total assets less current liabilities",
+          "values": [
+            "67,424",
+            "111,402"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Creditors: amounts falling due after more than one year",
+          "values": [
+            "(14,411)",
+            "(31,778)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deferred income",
+          "values": [
+            "(19,094)",
+            "(13,490)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net assets",
+          "values": [
+            "33,919",
+            "66,134"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "Capital and reserves",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Called up share capital",
+          "values": [
+            "19,369",
+            "19,369"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profit and loss account",
+          "values": [
+            "14,550",
+            "46,765"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Shareholders’ funds",
+          "values": [
+            "33,919",
+            "66,134"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "Accompanying Notes to the Financial Statements (continued) / For the year ended 30 June 2024 / 2 Turnover / 2024 2023 / £'000 £'000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gate Receipts",
+          "values": [
+            "18,392",
+            "15,170"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Central Awards",
+          "values": [
+            "123,316",
+            "428,513"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Broadcasting",
+          "values": [
+            "11,190",
+            "15,961"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compensation",
+          "values": [
+            "1,137"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sponsorship and other Commercial Activities",
+          "values": [
+            "27,788",
+            "21,544"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "Staff costs 154,754 139,064 / Amounts paid under operating leases / - Plant and machinery 258 263 / - Land and buildings 2,249 2,230 / 2,507 2,493",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Profit on disposal of players’ registrations",
+          "values": [
+            "32,735",
+            "8,743"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciation of fixed assets",
+          "values": [
+            "1,364",
+            "1,094"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortisation of player registrations",
+          "values": [
+            "57,400",
+            "45,617"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 24,
+      "section": "4 Staff costs / Company staff costs during the year {including Directors’ emoluments) amounted to: / 2024 2023 / £'000 £'000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Wages and salaries",
+          "values": [
+            "135,524",
+            "121,511"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Social security costs",
+          "values": [
+            "18,773",
+            "17,129"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 26,
+      "section": "8 Intangible fixed assets / Player / registrations / £°000 / Cost",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "01 July 2023",
+          "values": [
+            "230,863"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Additions",
+          "values": [
+            "88,180"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disposals",
+          "values": [
+            "(65,130)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30 June 2024",
+          "values": [
+            "253,913"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 26,
+      "section": "Amortisation and impairment",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "01 July 2023",
+          "values": [
+            "130,426"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charge for the year",
+          "values": [
+            "57,400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disposals",
+          "values": [
+            "(53,489)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30 June 2024",
+          "values": [
+            "134,337"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "Net book amount",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "30 June 2024",
+          "values": [
+            "119,576"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "01 July 2023",
+          "values": [
+            "100,437"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Fixtures, / fittings, plant / & equipment Total / £°000 £'000 / Cost",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "04 July 2023",
+          "values": [
+            "11,652",
+            "11,652"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Additions",
+          "values": [
+            "1,960",
+            "1,960"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 27,
+      "section": "Disposals (30) (30) / 30 June 2024 13,582 13,582 / Depreciation",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "04 July 2023",
+          "values": [
+            "8,070",
+            "8,070"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charge for the year",
+          "values": [
+            "1,364",
+            "1,364"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Disposals (14) (14) / 30 June 2024 9,420 9,420 / Net book amount",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "30 June 2024",
+          "values": [
+            "4,162",
+            "4,162"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "01 July 2023",
+          "values": [
+            "3,582",
+            "3,582"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "10 Debtors / 2024 2023 / £'000 £000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Trade debtors",
+          "values": [
+            "7,372",
+            "2,698"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Player transfer debtors",
+          "values": [
+            "28,159",
+            "17,838"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other debtors",
+          "values": [
+            "3,357",
+            "3,400"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Amounts due from related parties 561 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Amounts due from immediate parent company",
+          "values": [
+            "1,300",
+            "1,464"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prepayments and accrued income",
+          "values": [
+            "6,193",
+            "4,797"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "14,411 31,778 / due to immediate parent company balance above. / 12 Deferred income / 2024 2023 / £'000 £'000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Season ticket sales in advance",
+          "values": [
+            "9,199",
+            "9,882"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Commercial income and sponsorship",
+          "values": [
+            "9,895",
+            "3,608"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 28,
+      "section": "19,094 13,490 / 13 Share capital / Ordinary shares of £1 each 2024 2023 / Allotted, called up and fully / paid ‘000 ‘000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1 July",
+          "values": [
+            "19,369",
+            "618,339"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Issued in the period -",
+          "values": [
+            "29,026"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Share reduction -",
+          "values": [
+            "(627,996)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30 June",
+          "values": [
+            "19,369",
+            "19,369"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "For the year ended 30 June 2024 / 14 Operating leases / Non-cancellable operating lease rentals are payable by the Company as follows: / 2024 2023 / £000 £7000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Less than one year",
+          "values": [
+            "2,329",
+            "2,460"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Between one and five years",
+          "values": [
+            "2,847",
+            "5,140"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 15,
+      "section": "80,145 81,911",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total assets less current liabilities",
+      "target": "67,424",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-260197"
+    },
+    {
+      "page": 15,
+      "section": "80,145 81,911",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total assets less current liabilities",
+      "target": "111,402",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-178547"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 12,
+    "results": [
+      {
+        "label": "Profit on disposal of players’ registrations",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Profit on disposal of players' registrations",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Profit on disposal of players’ registrations",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciation of fixed assets",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciation of fixed assets",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "depreciation",
+        "matchedLabel": "Depreciation of fixed assets",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Amortisation of player registrations",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortisation of player registrations",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "player_amortisation",
+        "matchedLabel": "Amortisation of player registrations",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Wages and salaries",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Wages and salaries",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Social security costs",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Social security costs",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "01 July 2023",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "01 July 2023",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Additions",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Additions",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Disposals",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Disposals",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "30 June 2024",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "30 June 2024",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "04 July 2023",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "04 July 2023",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Season ticket sales in advance",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Season ticket sales in advance",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Commercial income and sponsorship",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Sponsorship and other Commercial Activities",
+        "similarity": 50
+      },
+      {
+        "label": "Commercial income and sponsorship",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "gb",
+    "query": "Fulham",
+    "matches": [
+      {
+        "leagueId": "gb-premierleague",
+        "year": "2024",
+        "matchedName": "Fulham",
+        "wikipediaPage": "2023–24 Premier League"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [
+    {
+      "page": 4,
+      "line": "Company’s policy is to accept the risk of a movement in the exchange rate to Sterling. No forward purchases of"
+    },
+    {
+      "page": 19,
+      "line": "Transactions in foreign currencies are translated to the company’s functional currency at the foreign exchange rate"
+    },
+    {
+      "page": 19,
+      "line": "sheet date are retranslated to the functional currency at the foreign exchange rate ruling at that date. The Company"
+    }
+  ],
+  "warnings": [
+    "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ]
+}

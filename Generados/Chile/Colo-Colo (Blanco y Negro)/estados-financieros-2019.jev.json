@@ -1,0 +1,320 @@
+{
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2019.md",
+ "generatedAt": "2026-09-30T22:48:48.290Z",
+ "rubrosHuella": "d76c08485f6e5420cc94ba728e3ebfc4953c679b",
+ "rubros": [
+  {
+   "label": "Servicios básicos",
+   "lado": "expense",
+   "page": 71,
+   "section": "0                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesorías",
+   "lado": "expense",
+   "page": 71,
+   "section": "0                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 71,
+   "section": "0                -",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 71,
+   "section": "0                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenciones",
+   "lado": "expense",
+   "page": 71,
+   "section": "0                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración administración",
+   "lado": "expense",
+   "page": 71,
+   "section": "0                -",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos de administración",
+   "lado": "expense",
+   "page": 71,
+   "section": "0                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas jugadores",
+   "lado": "expense",
+   "page": 71,
+   "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 24.   COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración plantel profesional y cuerpo técnico",
+   "lado": "expense",
+   "page": 71,
+   "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 24.   COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización Activos en concesión",
+   "lado": "expense",
+   "page": 71,
+   "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 24.   COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_amortisation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización pases jugadores profesionales",
+   "lado": "expense",
+   "page": 71,
+   "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 24.   COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos de concentración traslados y otros",
+   "lado": "expense",
+   "page": 71,
+   "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 24.   COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros costos",
+   "lado": "expense",
+   "page": 71,
+   "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 24.   COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+   "lado": null,
+   "page": 72,
+   "section": "26.   DIFERENCIA POR TIPO DE CAMBIO",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos financieros",
+   "lado": "expense",
+   "page": 71,
+   "section": "(0)                   -",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por recaudaciones",
+   "lado": "revenue",
+   "page": 70,
+   "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 23.   INGRESOS DE ACTIVIDADES ORDINARIAS Y OTROS INGRESOS POR FUNCION",
+   "choice": "matchday_competition",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por venta de jugadores comprado a terceros",
+   "lado": "revenue",
+   "page": 70,
+   "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 23.   INGRESOS DE ACTIVIDADES ORDINARIAS Y OTROS INGRESOS POR FUNCION",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por venta de jugadores formados por el Club",
+   "lado": "revenue",
+   "page": 70,
+   "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 23.   INGRESOS DE ACTIVIDADES ORDINARIAS Y OTROS INGRESOS POR FUNCION",
+   "choice": "player_sales",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por arriendo/préstamos pase de jugadores",
+   "lado": "revenue",
+   "page": 70,
+   "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 23.   INGRESOS DE ACTIVIDADES ORDINARIAS Y OTROS INGRESOS POR FUNCION",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por publicidad",
+   "lado": "revenue",
+   "page": 70,
+   "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 23.   INGRESOS DE ACTIVIDADES ORDINARIAS Y OTROS INGRESOS POR FUNCION",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 70,
+   "section": "BLANCO Y NEGRO S.A. Y FILIALES / ESTADOS FINANCIEROS CONSOLIDADOS / 23.   INGRESOS DE ACTIVIDADES ORDINARIAS Y OTROS INGRESOS POR FUNCION",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Scotiabank Fondo Mutuo Pesos",
+   "lado": "revenue",
+   "page": 40,
+   "section": "Institución       Tipo          Moneda          N° Cuotas        Cuota       Monto / Scotiabank     Fondo Mutuo        USD               7835,158      128,1261    751.651 / Larraín Vial   Fondo Mutuo        Pesos                 2,6478   2507,2244           6 / Valor / Institución       Tipo          Moneda          N° Cuotas        Cuota       Monto",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Deudores comerciales y otras cuentas por cobrar",
+   "lado": null,
+   "page": 72,
+   "section": "26.   DIFERENCIA POR TIPO DE CAMBIO",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "Otros activos financieros",
+   "lado": null,
+   "page": 72,
+   "section": "26.   DIFERENCIA POR TIPO DE CAMBIO",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1435
+  },
+  {
+   "label": "Otros activos no financieros",
+   "lado": null,
+   "page": 72,
+   "section": "26.   DIFERENCIA POR TIPO DE CAMBIO",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_income",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1436
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 71,
+   "section": "(0)                   -",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1005
+  },
+  {
+   "label": "Otros pasivos no financieros",
+   "lado": null,
+   "page": 72,
+   "section": "26.   DIFERENCIA POR TIPO DE CAMBIO",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "other_income",
+     0.1
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1437
+  }
+ ]
+}

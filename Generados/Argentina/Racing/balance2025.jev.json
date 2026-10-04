@@ -1,0 +1,604 @@
+{
+ "md": "Clubes/Argentina/Racing/balance2025.md",
+ "generatedAt": "2026-09-30T04:25:33.328Z",
+ "rubros": [
+  {
+   "label": "Generales(Anexo III)",
+   "lado": "revenue",
+   "page": 6,
+   "section": "Ejercicio Nro. 123 / 2025                    2024 / Recursos ordinarios",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Específicos (Anexo IV)",
+   "lado": "expense",
+   "page": 6,
+   "section": "Gastos ordinarios",
+   "choice": "match_organisation_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "extranjera (Anexo VI)",
+   "lado": "revenue",
+   "page": 23,
+   "section": "Ingresos cobrados por adelantado en moneda / Acreedores por operaciones de jugadores en moneda / Acreedores por operaciones de jugadores en moneda",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "player_sales",
+     0.06
+    ]
+   ],
+   "tokens": 939
+  },
+  {
+   "label": "Generales (Anexo IV)",
+   "lado": "expense",
+   "page": 6,
+   "section": "Gastos ordinarios",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Aumento / (Disminución) del efectivo",
+   "lado": null,
+   "page": 8,
+   "section": "Flujo neto de efectivo utilizado en las actividades de / Resultados financieros y por tenencia generados por el",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "other_income",
+     0.18000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "Diversos (Anexo III)",
+   "lado": "revenue",
+   "page": 6,
+   "section": "Ejercicio Nro. 123 / 2025                    2024 / Recursos ordinarios",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Específicos(Anexo III)",
+   "lado": "revenue",
+   "page": 6,
+   "section": "Ejercicio Nro. 123 / 2025                    2024 / Recursos ordinarios",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "competition_bonus",
+     0.04
+    ]
+   ],
+   "tokens": 934
+  },
+  {
+   "label": "efectivo (incluyendo RECPAM)",
+   "lado": null,
+   "page": 8,
+   "section": "Flujo neto de efectivo utilizado en las actividades de / Resultados financieros y por tenencia generados por el",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.35000000000000003
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "Juicios y otras contingencias (Anexo V)",
+   "lado": "revenue",
+   "page": 23,
+   "section": "Ingresos cobrados por adelantado en moneda / e)     Previsiones",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Divisas en custodia USD",
+   "lado": "expense",
+   "page": 34,
+   "section": "Divisas en custodia",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "match_organisation_expense",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 891
+  },
+  {
+   "label": "Deudas varias en moneda local",
+   "lado": "revenue",
+   "page": 23,
+   "section": "Ingresos cobrados por adelantado en moneda / Acreedores por operaciones de jugadores en moneda / Acreedores por operaciones de jugadores en moneda",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 850
+  },
+  {
+   "label": "Deudas varias en moneda extranjera (Anexo VI) -",
+   "lado": "revenue",
+   "page": 23,
+   "section": "Ingresos cobrados por adelantado en moneda / Acreedores por operaciones de jugadores en moneda / Acreedores por operaciones de jugadores en moneda",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 945
+  },
+  {
+   "label": "Divisas en custodia €",
+   "lado": "expense",
+   "page": 34,
+   "section": "Divisas en custodia",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "match_organisation_expense",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 891
+  },
+  {
+   "label": "Calcio Catania SPA – Castro €",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "Primas a pagar",
+   "lado": "revenue",
+   "page": 23,
+   "section": "Ingresos cobrados por adelantado en moneda / Acreedores por operaciones de jugadores en moneda / Acreedores por operaciones de jugadores en moneda",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "player_sales",
+     0.29000000000000004
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ]
+   ],
+   "tokens": 848
+  },
+  {
+   "label": "A.C. Siena SPA Préstamo – Martínez €",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Godoy Cruz – Ojeda USD - - -",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "Atlético Mineiro - Zaracho USD - - -",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 826
+  },
+  {
+   "label": "Southampton – Alcaraz USD",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "MLS – Chancalay Tomas USD - - -",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "MLS – Ojeda Axel USD",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 820
+  },
+  {
+   "label": "Cruz Azul - Piovi Gonzalo USD - - -",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 826
+  },
+  {
+   "label": "Palmeiras – Moreno Aníbal € - - -",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 825
+  },
+  {
+   "label": "Beroe Stara Zagora – Ojeda Axel USD",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 827
+  },
+  {
+   "label": "Préstamos jugadores USD",
+   "lado": "revenue",
+   "page": 37,
+   "section": "Otras deudas / Ingresos cobrados por adelantado",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Sponsoreo USD",
+   "lado": "revenue",
+   "page": 37,
+   "section": "Otras deudas / Ingresos cobrados por adelantado",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 829
+  }
+ ]
+}

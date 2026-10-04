@@ -1,0 +1,323 @@
+{
+  "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-associacao-2022-2023.md",
+  "pdf": "Clubes/Brasil/Bahia/demonstracoes-financeiras-associacao-2022-2023.pdf",
+  "club": "bahia-br",
+  "year": 2023,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:51:40.446Z",
+  "tieOuts": {
+    "cierran": 2,
+    "noCierran": 7
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "5 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 27,
+    "notasUsadas": []
+  },
+  "ladoConocido": 25,
+  "rubros": [
+    {
+      "label": "Receita bruta das atividades",
+      "lado": "revenue",
+      "page": 17,
+      "section": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma) / Adicionalmente, cabe destacar que o resultado operacional de 2023 no montante de R$ 65.131 / dos ativos e passivos: / Jan a Abr       Mai a Dez        Saldo em / de 2023         de 2023        31/12/2023",
+      "values": [
+        44.555
+      ],
+      "origen": "estado 18",
+      "glosa": "Ingresos brutos de las actividades"
+    },
+    {
+      "label": "(-) Tributos e contribuições incidentes (2.784) (10)",
+      "lado": "revenue",
+      "page": 17,
+      "section": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma) / Adicionalmente, cabe destacar que o resultado operacional de 2023 no montante de R$ 65.131 / dos ativos e passivos: / Jan a Abr       Mai a Dez        Saldo em / de 2023         de 2023        31/12/2023",
+      "values": [
+        -2.794
+      ],
+      "origen": "estado 18",
+      "glosa": "(-) Tributos y contribuciones aplicables (2.784) (10)"
+    },
+    {
+      "label": "(-) Custos e deduções de vendas (1.408) (3)",
+      "lado": "revenue",
+      "page": 17,
+      "section": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma) / Adicionalmente, cabe destacar que o resultado operacional de 2023 no montante de R$ 65.131 / dos ativos e passivos: / Jan a Abr       Mai a Dez        Saldo em / de 2023         de 2023        31/12/2023",
+      "values": [
+        -1.411
+      ],
+      "origen": "estado 18",
+      "glosa": "(-) Costos y deducciones de ventas (1.408) (3)"
+    },
+    {
+      "label": "(-) Custo das atividades (64.794) (654)",
+      "lado": "expense",
+      "page": 17,
+      "section": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma) / Adicionalmente, cabe destacar que o resultado operacional de 2023 no montante de R$ 65.131 / dos ativos e passivos: / Jan a Abr       Mai a Dez        Saldo em / de 2023         de 2023        31/12/2023",
+      "values": [
+        -65.448
+      ],
+      "origen": "estado 18",
+      "glosa": "(-) Costo de las actividades (64.794) (654)"
+    },
+    {
+      "label": "Despesas gerais e administrativas (5.624) (616)",
+      "lado": "expense",
+      "page": 17,
+      "section": "Receitas e (despesas) operacionais",
+      "values": [
+        -6.24
+      ],
+      "origen": "estado 19",
+      "glosa": "Gastos generales y administrativos (5.624) (616)"
+    },
+    {
+      "label": "Despesas de serviços",
+      "lado": "expense",
+      "page": 17,
+      "section": "Receitas e (despesas) operacionais",
+      "values": [
+        -5.955
+      ],
+      "origen": "estado 19",
+      "glosa": "Gastos por servicios"
+    },
+    {
+      "label": "Despesas tributárias (7.322) (455)",
+      "lado": "expense",
+      "page": 17,
+      "section": "Receitas e (despesas) operacionais",
+      "values": [
+        -7.777
+      ],
+      "origen": "estado 19",
+      "glosa": "Gastos tributarios (7.322) (455)"
+    },
+    {
+      "label": "Depreciação e amortização (1.324) (4)",
+      "lado": null,
+      "page": 17,
+      "section": "Receitas e (despesas) operacionais",
+      "values": [
+        -1.328
+      ],
+      "origen": "estado 19",
+      "glosa": "Depreciación y amortización (1.324) (4)"
+    },
+    {
+      "label": "Perda na recuperação de créditos de sócios",
+      "lado": null,
+      "page": 17,
+      "section": "Receitas e (despesas) operacionais",
+      "values": [
+        -2.685
+      ],
+      "origen": "estado 19",
+      "glosa": "Pérdida por deterioro de créditos de socios"
+    },
+    {
+      "label": "Receitas financeiras 1.889",
+      "lado": "revenue",
+      "page": 17,
+      "section": "Resultado financeiro",
+      "values": [
+        2.242
+      ],
+      "origen": "estado 21",
+      "glosa": "Ingresos financieros 1.889"
+    },
+    {
+      "label": "Despesas financeiras (14.497) (252)",
+      "lado": "expense",
+      "page": 17,
+      "section": "Resultado financeiro",
+      "values": [
+        -14.749
+      ],
+      "origen": "estado 21",
+      "glosa": "Gastos financieros (14.497) (252)"
+    },
+    {
+      "label": "Receitas de transmissão de imagem e de luvas (a)",
+      "lado": "revenue",
+      "page": 43,
+      "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+      "values": [
+        12.107
+      ],
+      "origen": "estado 48",
+      "glosa": "Ingresos por derechos de transmisión y primas de firma (a)"
+    },
+    {
+      "label": "Receitas com negociação de direitos contratuais (b)",
+      "lado": "revenue",
+      "page": 43,
+      "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+      "values": [
+        21.414
+      ],
+      "origen": "estado 48",
+      "glosa": "Ingresos por negociación de derechos contractuales (b)"
+    },
+    {
+      "label": "Sócios patrimonial e contribuinte",
+      "lado": "revenue",
+      "page": 43,
+      "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+      "values": [
+        12.702
+      ],
+      "origen": "estado 48",
+      "glosa": "Socios patrimoniales y abonados"
+    },
+    {
+      "label": "Receitas de patrocínio, publicidade e marketing, doações",
+      "lado": "revenue",
+      "page": 43,
+      "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+      "values": [
+        25.428
+      ],
+      "origen": "estado 48",
+      "glosa": "Ingresos por patrocinio, publicidad, marketing y donaciones"
+    },
+    {
+      "label": "Receitas de acesso garantido, bilheteria e premiações",
+      "lado": "revenue",
+      "page": 43,
+      "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+      "values": [
+        6.869
+      ],
+      "origen": "estado 48",
+      "glosa": "Ingresos por abonos, taquilla y premios"
+    },
+    {
+      "label": "Receitas -das Filiais",
+      "lado": "revenue",
+      "page": 43,
+      "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+      "values": [
+        3.176
+      ],
+      "origen": "estado 48",
+      "glosa": "Ingresos - de las filiales"
+    },
+    {
+      "label": "Loterias",
+      "lado": "revenue",
+      "page": 43,
+      "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+      "values": [
+        1.925
+      ],
+      "origen": "estado 48",
+      "glosa": "Loterías"
+    },
+    {
+      "label": "Patrocínios (a)",
+      "lado": "revenue",
+      "page": 40,
+      "section": "presente data de aprovação dessas demonstrações financeiras. / de criação da Sociedade Anônima do Futebol. / 15. Receitas a Apropriar / 2023         2022 / Receitas a Apropriar",
+      "values": [
+        1.12
+      ],
+      "origen": "estado 41",
+      "glosa": "Patrocinios (a)"
+    },
+    {
+      "label": "Direitos de transmissão (b) -",
+      "lado": "revenue",
+      "page": 40,
+      "section": "presente data de aprovação dessas demonstrações financeiras. / de criação da Sociedade Anônima do Futebol. / 15. Receitas a Apropriar / 2023         2022 / Receitas a Apropriar",
+      "values": [
+        27.166
+      ],
+      "origen": "estado 41",
+      "glosa": "Derechos de transmisión (b) -"
+    },
+    {
+      "label": "CBF - Confederação Brasileira de Futebol (c) -",
+      "lado": "revenue",
+      "page": 40,
+      "section": "presente data de aprovação dessas demonstrações financeiras. / de criação da Sociedade Anônima do Futebol. / 15. Receitas a Apropriar / 2023         2022 / Receitas a Apropriar",
+      "values": [
+        11.9
+      ],
+      "origen": "estado 41",
+      "glosa": "CBF - Confederación Brasileña de Fútbol (c) -"
+    },
+    {
+      "label": "Licenciamentos / Direitos individuais -",
+      "lado": "revenue",
+      "page": 40,
+      "section": "presente data de aprovação dessas demonstrações financeiras. / de criação da Sociedade Anônima do Futebol. / 15. Receitas a Apropriar / 2023         2022 / Receitas a Apropriar",
+      "values": [
+        4.533
+      ],
+      "origen": "estado 41",
+      "glosa": "Licencias / Derechos individuales -"
+    },
+    {
+      "label": "Luvas - Direito de transmissão TV fechada/PPV (d) -",
+      "lado": "revenue",
+      "page": 40,
+      "section": "presente data de aprovação dessas demonstrações financeiras. / de criação da Sociedade Anônima do Futebol. / 15. Receitas a Apropriar / 2023         2022 / Receitas a Apropriar",
+      "values": [
+        4.467
+      ],
+      "origen": "estado 41",
+      "glosa": "Primas de firma - Derechos de transmisión TV por suscripción/PPV (d) -"
+    },
+    {
+      "label": "Luvas - Direito de transmissão TV aberta (d) -",
+      "lado": "revenue",
+      "page": 40,
+      "section": "presente data de aprovação dessas demonstrações financeiras. / de criação da Sociedade Anônima do Futebol. / 15. Receitas a Apropriar / 2023         2022 / Receitas a Apropriar",
+      "values": [
+        2.2
+      ],
+      "origen": "estado 41",
+      "glosa": "Primas de firma - Derechos de transmisión TV en abierto (d) -"
+    },
+    {
+      "label": "Concessionárias (água, energia, telefonia, gás) (336)",
+      "lado": "expense",
+      "page": 45,
+      "section": "Notas Explicativas às Demonstrações Financeiras Referentes aos / Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 20.    (Despesas) Gerais e Administrativas / 2023             2022",
+      "values": [
+        -1178
+      ],
+      "origen": "estado 51",
+      "glosa": "Suministros y servicios públicos (agua, energía, telefonía, gas) (336)"
+    },
+    {
+      "label": "Marketing",
+      "lado": "expense",
+      "page": 45,
+      "section": "Notas Explicativas às Demonstrações Financeiras Referentes aos / Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 20.    (Despesas) Gerais e Administrativas / 2023             2022",
+      "values": [
+        -2459
+      ],
+      "origen": "estado 51",
+      "glosa": "Marketing"
+    },
+    {
+      "label": "Consumo (822)",
+      "lado": "expense",
+      "page": 45,
+      "section": "Notas Explicativas às Demonstrações Financeiras Referentes aos / Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 20.    (Despesas) Gerais e Administrativas / 2023             2022",
+      "values": [
+        -1190
+      ],
+      "origen": "estado 51",
+      "glosa": "Consumo (822)"
+    }
+  ]
+}

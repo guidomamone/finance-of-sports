@@ -1,0 +1,778 @@
+{
+ "md": "Clubes/Bélgica/Sint-Truiden/jaarrekening-2018-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:41.532Z",
+ "rubrosHuella": "1cee157b1d211f5ed8942be92a3a3dd6f676082f",
+ "rubros": [
+  {
+   "label": "Voorraad goederen in bewerking en gereed product en bestellingen in uitvoering: toename (afname) (+)/(-)",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Geproduceerde vaste activa",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Aankopen",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Voorraad: afname (toename) (+)/(-)",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Diensten en diverse goederen",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": null,
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Omzet",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1197
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "depreciation",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "depreciation",
+     0.75
+    ],
+    [
+     "player_amortisation",
+     0.22
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1161
+  },
+  {
+   "label": "Andere bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "player_sales",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "exceptional_items",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1119
+  },
+  {
+   "label": "Bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "lump_football_operations",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.78
+    ],
+    [
+     "other_income",
+     0.16
+    ],
+    [
+     "player_sales",
+     0.05
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "wages_squad",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Niet-recurrente bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1111
+  },
+  {
+   "label": "Bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.65
+    ],
+    [
+     "match_organisation_expense",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1167
+  },
+  {
+   "label": "Als herstructureringskosten geactiveerde bedrijfskosten (-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "other_expenses",
+     0.35000000000000003
+    ],
+    [
+     "exceptional_items",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ]
+   ],
+   "tokens": 1195
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "exceptional_items",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Recurrente financiële opbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Opbrengsten uit vlottende activa",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "player_sales",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Financiële opbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Opbrengsten uit financiële vaste activa",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Niet-recurrente financiële opbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Andere financiële opbrengsten",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Andere financiële kosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Financiële kosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "player_impairment",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1232
+  },
+  {
+   "label": "Recurrente financiële kosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Niet-recurrente financiële kosten",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.47000000000000003
+    ],
+    [
+     "exceptional_items",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Schulden 17/49",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 60.000 / Uitgestelde belastingen 168",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Onttrekking aan de uitgestelde belastingen",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 60.000 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Overboeking naar de uitgestelde belastingen",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8200000000000001
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Kosten van schulden",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "exceptional_items",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1072
+  },
+  {
+   "label": "Belastingen",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Onttrekking aan de belastingvrije reserves",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Schulden op meer dan één jaar 69 |",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 60.000 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Overboeking naar de belastingvrije reserves",
+   "lado": "expense",
+   "page": 7,
+   "section": "Nr. BE 0845.049.251 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1030
+  }
+ ]
+}

@@ -1,0 +1,1684 @@
+{
+ "md": "Clubes/Colombia/Deportes Tolima/estados-financieros-2025.md",
+ "pdf": "Clubes/Colombia/Deportes Tolima/estados-financieros-2025.pdf",
+ "club": "deportes-tolima",
+ "year": 2025,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T21:58:05.104Z",
+ "tieOuts": {
+  "cierran": 23,
+  "noCierran": 18
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "16 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 153,
+  "notasUsadas": [
+   "72",
+   "43",
+   "47",
+   "54",
+   "81",
+   "69",
+   "70",
+   "60",
+   "65"
+  ]
+ },
+ "ladoConocido": 38,
+ "rubros": [
+  {
+   "label": "Grupo Lulive $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.0105
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Atlas Execution $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.193716
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Supermercado Mercacentro $ 673,400 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.65
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Interaseo S. A. ESP $ 52,600 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.05
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Fábrica de Licores del Tolima $ 840,336 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.336134
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Seapto S. A. $ 310,009 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.291904
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Centro Comercial Multicentro $ 324,585 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.315585
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Adriano Diaz y Cia $ 47,340 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.045
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Global Sports GS S. A. $ 1,300,000 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    1.3
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Caja de compensacion (comfatolima) $ 135,000 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.084
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Corredor Empresarial $ 1,438,075 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.765845
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "AF Y C soluciones $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.0384
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Meals Mercadeo de Alimentos de Colombia $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.016807
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Drinks de Colombia S.A.S $ 651,006 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.647125
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Drogerias Copifam de Colombia S.A.S $ 48,000 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.02
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Universidad del Tolima $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.02521
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Patrocinadores Menores de $10.000 $ 57,768 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.00304
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "administracion apartamentos $ 27,326 $",
+   "lado": null,
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.027448
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "participacion derechos economicos $ 20,000 $",
+   "lado": null,
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.08
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "hielo $ 40,454 $",
+   "lado": null,
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.035892
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "implementos deportivos $ 11,494 $",
+   "lado": null,
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.017789
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "multas dimayor $ 122,112 $",
+   "lado": null,
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.142199
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "participaciones liga futbol $ 86,623 $",
+   "lado": null,
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.095209
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "participaciones federacion/dimayor $ 86,623 $",
+   "lado": null,
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.395176
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "subsidio de transporte $ 31,960 $",
+   "lado": "revenue",
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.0412
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "gastos licencias jugadores $ 89,767 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.036425
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "gastos Taquillas Ticketfas $ 328,876 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.430086
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "reconocimiento deportivo mera liberalidad $ 170,310 $",
+   "lado": null,
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.1026
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "otros premios $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.009
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "Otros Gastos deportivos $ 1,001 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "TOTAL COSTO DE SALIDA DE DERECHOS DEPORTIVOS DE / JUGADORES",
+   "values": [
+    0.005693
+   ],
+   "origen": "nota 72 (ancla 65)",
+   "ancla": "otros (e) $ 292,166 $"
+  },
+  {
+   "label": "otros (e) $ 292,166 $",
+   "lado": null,
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.312124
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Convenio Femenino Real Santander $ 290,614 $",
+   "lado": null,
+   "page": 1,
+   "section": "TOTAL COSTO DE SALIDA DE DERECHOS DEPORTIVOS DE / JUGADORES",
+   "values": [
+    0.290614
+   ],
+   "origen": "nota 72 (ancla 65)",
+   "ancla": "otros (e) $ 292,166 $"
+  },
+  {
+   "label": "Castillo Zabala Miguel (Estampados) $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "TOTAL COSTO DE SALIDA DE DERECHOS DEPORTIVOS DE / JUGADORES",
+   "values": [
+    0.015817
+   ],
+   "origen": "nota 72 (ancla 65)",
+   "ancla": "otros (e) $ 292,166 $"
+  },
+  {
+   "label": "gastos medicos $ 19,045 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.007717
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "multas federacion colombiana $ 17,383 $",
+   "lado": null,
+   "page": 1,
+   "section": "mecanismo de Solidaridad                    $       318,113   $             -",
+   "values": [
+    0.0078
+   ],
+   "origen": "estado 65"
+  },
+  {
+   "label": "Rosales Guerra Yilson $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.0025
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Mesa Perlaza Adan Camilo $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.015
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Chaverra Martinez Juan Camilo $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.083852
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Lucumi Mina Jeison Steven $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.202364
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Angulo Trujillo Jeison $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.027072
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Sosa Vegas Eduardo $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.02234
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Serna Villada David Santiago $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.005
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Vasquez Velasquez Johan Estevan $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.005
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Bone Vale Facundo Nicolas $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.053226
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Jaguares Futbol Club (Eduardo Sosa) $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.348099
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Club Deportivo Palmazul (Alejandro Prisco) $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.002892
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Club Educando Talentos (Jordan Martinez) $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.003
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Club Educando Talentos (Sebastian Castro Llanos) $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.004
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "Club Educando Talentos (Samuel Lerma) $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "49 / (d) Se detalla el rubro correspondiente a costo de entrega de derechos deportivos. / Dados de baja derechos deportivos                     dic-25                dic-24",
+   "values": [
+    0.004
+   ],
+   "origen": "estado 71"
+  },
+  {
+   "label": "gastos de personal $ 2,587,228 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "NOTA 20. GASTOS DE ADMINISTRACION / GASTOS DE ADMINISTRACIÓN                          DIC-25             DIC-24",
+   "values": [
+    2.229588
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "honorarios $ 384,270 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 20. GASTOS DE ADMINISTRACION / GASTOS DE ADMINISTRACIÓN                          DIC-25             DIC-24",
+   "values": [
+    0.263903
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "industria y Comercio $ 7,523 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "el 10.44%. Todos medidos a costo de transacción para el giro normal del negocio. / 42 / proporcionalidad de impuestos, Gravamen a los movimientos financieros, Industria y / Comercio, Predial. / IMPUESTOS                                    Dic-25              Dic-24",
+   "values": [
+    0.012912
+   ],
+   "origen": "nota 43 (ancla 41)",
+   "ancla": "impuestos (1) $ 486,756 $"
+  },
+  {
+   "label": "impuestos (1) $ 486,756 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "NOTA 20. GASTOS DE ADMINISTRACION / GASTOS DE ADMINISTRACIÓN                          DIC-25             DIC-24",
+   "values": [
+    0.539671
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "a la Propiedad Raíz $ 2,436 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "el 10.44%. Todos medidos a costo de transacción para el giro normal del negocio. / 42 / proporcionalidad de impuestos, Gravamen a los movimientos financieros, Industria y / Comercio, Predial. / IMPUESTOS                                    Dic-25              Dic-24",
+   "values": [
+    0.004609
+   ],
+   "origen": "nota 43 (ancla 41)",
+   "ancla": "impuestos (1) $ 486,756 $"
+  },
+  {
+   "label": "iva No Descontable $ 242,982 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "el 10.44%. Todos medidos a costo de transacción para el giro normal del negocio. / 42 / proporcionalidad de impuestos, Gravamen a los movimientos financieros, Industria y / Comercio, Predial. / IMPUESTOS                                    Dic-25              Dic-24",
+   "values": [
+    0.332005
+   ],
+   "origen": "nota 43 (ancla 41)",
+   "ancla": "impuestos (1) $ 486,756 $"
+  },
+  {
+   "label": "vehiculos $ 1,987 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "el 10.44%. Todos medidos a costo de transacción para el giro normal del negocio. / 42 / proporcionalidad de impuestos, Gravamen a los movimientos financieros, Industria y / Comercio, Predial. / IMPUESTOS                                    Dic-25              Dic-24",
+   "values": [
+    0.004606
+   ],
+   "origen": "nota 43 (ancla 41)",
+   "ancla": "impuestos (1) $ 486,756 $"
+  },
+  {
+   "label": "impuesto Gravamen Financieros $ 209,419 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "el 10.44%. Todos medidos a costo de transacción para el giro normal del negocio. / 42 / proporcionalidad de impuestos, Gravamen a los movimientos financieros, Industria y / Comercio, Predial. / IMPUESTOS                                    Dic-25              Dic-24",
+   "values": [
+    0.177808
+   ],
+   "origen": "nota 43 (ancla 41)",
+   "ancla": "impuestos (1) $ 486,756 $"
+  },
+  {
+   "label": "otros $ 22,409 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "el 10.44%. Todos medidos a costo de transacción para el giro normal del negocio. / 42 / proporcionalidad de impuestos, Gravamen a los movimientos financieros, Industria y / Comercio, Predial. / IMPUESTOS                                    Dic-25              Dic-24",
+   "values": [
+    0.007731
+   ],
+   "origen": "nota 43 (ancla 41)",
+   "ancla": "impuestos (1) $ 486,756 $"
+  },
+  {
+   "label": "arrendamientos $ 102,520 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 20. GASTOS DE ADMINISTRACION / GASTOS DE ADMINISTRACIÓN                          DIC-25             DIC-24",
+   "values": [
+    0.115152
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "contribuciones y afiliaciones $ 50,768 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 20. GASTOS DE ADMINISTRACION / GASTOS DE ADMINISTRACIÓN                          DIC-25             DIC-24",
+   "values": [
+    0.090512
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "seguros $ 30,118 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 20. GASTOS DE ADMINISTRACION / GASTOS DE ADMINISTRACIÓN                          DIC-25             DIC-24",
+   "values": [
+    0.060798
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "servicios (2) $ 228,695 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 20. GASTOS DE ADMINISTRACION / GASTOS DE ADMINISTRACIÓN                          DIC-25             DIC-24",
+   "values": [
+    0.413307
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "gastos legales $ 59,554 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "NOTA 20. GASTOS DE ADMINISTRACION / GASTOS DE ADMINISTRACIÓN                          DIC-25             DIC-24",
+   "values": [
+    0.072898
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "mantenimiento y reparaciones $ 33,682 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 20. GASTOS DE ADMINISTRACION / GASTOS DE ADMINISTRACIÓN                          DIC-25             DIC-24",
+   "values": [
+    0.298322
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "adecuación e instalación $ 17,304 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 20. GASTOS DE ADMINISTRACION / GASTOS DE ADMINISTRACIÓN                          DIC-25             DIC-24",
+   "values": [
+    0.032825
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "gastos de viaje $ 108,742 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "NOTA 20. GASTOS DE ADMINISTRACION / GASTOS DE ADMINISTRACIÓN                          DIC-25             DIC-24",
+   "values": [
+    0.148248
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "construcciones y Edificaciones $ 371,895 $",
+   "lado": null,
+   "page": 1,
+   "section": "comparación con la depreciación del 2024. / DEPRECIACIONES                               dic-25              dic-24",
+   "values": [
+    0.368364
+   ],
+   "origen": "nota 47 (ancla 41)",
+   "ancla": "depreciaciones (3) $ 684,371 $"
+  },
+  {
+   "label": "depreciaciones (3) $ 684,371 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 20. GASTOS DE ADMINISTRACION / GASTOS DE ADMINISTRACIÓN                          DIC-25             DIC-24",
+   "values": [
+    0.686726
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "maquinaria y Equipo $ 32,473 $",
+   "lado": null,
+   "page": 1,
+   "section": "comparación con la depreciación del 2024. / DEPRECIACIONES                               dic-25              dic-24",
+   "values": [
+    0.032433
+   ],
+   "origen": "nota 47 (ancla 41)",
+   "ancla": "depreciaciones (3) $ 684,371 $"
+  },
+  {
+   "label": "equipo de Oficina $ 13,019 $",
+   "lado": null,
+   "page": 1,
+   "section": "comparación con la depreciación del 2024. / DEPRECIACIONES                               dic-25              dic-24",
+   "values": [
+    0.018851
+   ],
+   "origen": "nota 47 (ancla 41)",
+   "ancla": "depreciaciones (3) $ 684,371 $"
+  },
+  {
+   "label": "equipo de computación $ 31,345 $",
+   "lado": null,
+   "page": 1,
+   "section": "comparación con la depreciación del 2024. / DEPRECIACIONES                               dic-25              dic-24",
+   "values": [
+    0.034602
+   ],
+   "origen": "nota 47 (ancla 41)",
+   "ancla": "depreciaciones (3) $ 684,371 $"
+  },
+  {
+   "label": "equipo Medico $ 89,830 $",
+   "lado": null,
+   "page": 1,
+   "section": "comparación con la depreciación del 2024. / DEPRECIACIONES                               dic-25              dic-24",
+   "values": [
+    0.089554
+   ],
+   "origen": "nota 47 (ancla 41)",
+   "ancla": "depreciaciones (3) $ 684,371 $"
+  },
+  {
+   "label": "flota y Equipo de transporte $ 145,809 $",
+   "lado": null,
+   "page": 1,
+   "section": "comparación con la depreciación del 2024. / DEPRECIACIONES                               dic-25              dic-24",
+   "values": [
+    0.142922
+   ],
+   "origen": "nota 47 (ancla 41)",
+   "ancla": "depreciaciones (3) $ 684,371 $"
+  },
+  {
+   "label": "logisticos $ 1,594,096 $",
+   "lado": null,
+   "page": 1,
+   "section": "servicios de Partidos (a)",
+   "values": [
+    0.563074
+   ],
+   "origen": "estado 57"
+  },
+  {
+   "label": "ambulancias y primeros auxilios $ 73,790 $",
+   "lado": null,
+   "page": 1,
+   "section": "servicios de Partidos (a)",
+   "values": [
+    0.057239
+   ],
+   "origen": "estado 57"
+  },
+  {
+   "label": "arbitrajes $ 367,630 $",
+   "lado": null,
+   "page": 1,
+   "section": "servicios de Partidos (a)",
+   "values": [
+    0.332052
+   ],
+   "origen": "estado 57"
+  },
+  {
+   "label": "refrigerios Partidos $ 114,043 $",
+   "lado": null,
+   "page": 1,
+   "section": "servicios de Partidos (a)",
+   "values": [
+    0.098552
+   ],
+   "origen": "estado 57"
+  },
+  {
+   "label": "instalacion Vallas $ 28,062 $",
+   "lado": null,
+   "page": 1,
+   "section": "servicios de Partidos (a)",
+   "values": [
+    0.017525
+   ],
+   "origen": "estado 57"
+  },
+  {
+   "label": "pantalla Estadio $ 2,175 $",
+   "lado": null,
+   "page": 1,
+   "section": "servicios de Partidos (a)",
+   "values": [
+    0.00166
+   ],
+   "origen": "estado 57"
+  },
+  {
+   "label": "alimentacion (cena,desayunos,almuerzos) $ 121,085 $",
+   "lado": null,
+   "page": 1,
+   "section": "servicios de Partidos (a)",
+   "values": [
+    0.099601
+   ],
+   "origen": "estado 57"
+  },
+  {
+   "label": "voz Estadio $ 4,392 $",
+   "lado": null,
+   "page": 1,
+   "section": "servicios de Partidos (a)",
+   "values": [
+    0.00241
+   ],
+   "origen": "estado 57"
+  },
+  {
+   "label": "animacion Pigjao $ 7,230 $",
+   "lado": null,
+   "page": 1,
+   "section": "servicios de Partidos (a)",
+   "values": [
+    0.006201
+   ],
+   "origen": "estado 57"
+  },
+  {
+   "label": "hidratacion $ 1,755 $",
+   "lado": null,
+   "page": 1,
+   "section": "servicios de Partidos (a)",
+   "values": [
+    0.008769
+   ],
+   "origen": "estado 57"
+  },
+  {
+   "label": "aseo Estadio $ 22,423 $",
+   "lado": null,
+   "page": 1,
+   "section": "servicios de Partidos (a)",
+   "values": [
+    0.020237
+   ],
+   "origen": "estado 57"
+  },
+  {
+   "label": "alquiler Vallas $",
+   "lado": null,
+   "page": 1,
+   "section": "servicios de Partidos (a)",
+   "values": [
+    0.131339
+   ],
+   "origen": "estado 57"
+  },
+  {
+   "label": "taquillas $ 10,422,799 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 19. INGRESOS POR ACTIVIDADES DE OPERACIÓN / INGRESOS ACTIVIDADES DE OPERACIÓN                         DIC-25              DIC-24",
+   "values": [
+    12.934108
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "venta de Derechos Deportivos 1(A) $ 14,933,893 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 19. INGRESOS POR ACTIVIDADES DE OPERACIÓN / INGRESOS ACTIVIDADES DE OPERACIÓN                         DIC-25              DIC-24",
+   "values": [
+    12.473275
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "publicidad y Propaganda 2(A) $ 8,397,992 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 19. INGRESOS POR ACTIVIDADES DE OPERACIÓN / INGRESOS ACTIVIDADES DE OPERACIÓN                         DIC-25              DIC-24",
+   "values": [
+    6.083891
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Dimayor y Federación 3(A) $ 8,270,256 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 19. INGRESOS POR ACTIVIDADES DE OPERACIÓN / INGRESOS ACTIVIDADES DE OPERACIÓN                         DIC-25              DIC-24",
+   "values": [
+    7.650113
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "participación en Eventos 4(A) $ 1,878,540 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 19. INGRESOS POR ACTIVIDADES DE OPERACIÓN / INGRESOS ACTIVIDADES DE OPERACIÓN                         DIC-25              DIC-24",
+   "values": [
+    2.204575
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "venta de Artículos Deportivos $ 5,200,410 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 19. INGRESOS POR ACTIVIDADES DE OPERACIÓN / INGRESOS ACTIVIDADES DE OPERACIÓN                         DIC-25              DIC-24",
+   "values": [
+    4.213603
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "actividades Conexas $ 30,252 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 19. INGRESOS POR ACTIVIDADES DE OPERACIÓN / INGRESOS ACTIVIDADES DE OPERACIÓN                         DIC-25              DIC-24",
+   "values": [
+    0.022689
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "mecanismo de solidaridad $ 328,849 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 19. INGRESOS POR ACTIVIDADES DE OPERACIÓN / INGRESOS ACTIVIDADES DE OPERACIÓN                         DIC-25              DIC-24",
+   "values": [
+    0.032349
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "devoluciones en Artículos Deportivos -$ 132,115 -$",
+   "lado": "revenue",
+   "page": 1,
+   "section": "NOTA 19. INGRESOS POR ACTIVIDADES DE OPERACIÓN / INGRESOS ACTIVIDADES DE OPERACIÓN                         DIC-25              DIC-24",
+   "values": [
+    0.069739
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "gastos de Personal $ 13,512,051 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "NOTA 21. GASTOS DE VENTAS / GASTOS DE VENTAS                                   DIC-25            DIC-24",
+   "values": [
+    14.950177
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "honorarios (1) $ 690,129 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 21. GASTOS DE VENTAS / GASTOS DE VENTAS                                   DIC-25            DIC-24",
+   "values": [
+    0.204122
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "impuestos (2) $ 1,031,242 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "NOTA 21. GASTOS DE VENTAS / GASTOS DE VENTAS                                   DIC-25            DIC-24",
+   "values": [
+    1.106766
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "construcciones y Edificaciones $ 1,355,304 $",
+   "lado": null,
+   "page": 1,
+   "section": "(2) A continuación, se detalla el rubro de impuestos; / IMPUESTOS                                       dic-25               dic-24 / arrendamiento del estadio para partidos de local. / ARRENDAMIENTOS                                     dic-25               dic-24",
+   "values": [
+    1.291568
+   ],
+   "origen": "nota 54 (ancla 51)",
+   "ancla": "arrendamientos (3) $ 1,417,664 $"
+  },
+  {
+   "label": "arrendamientos (3) $ 1,417,664 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 21. GASTOS DE VENTAS / GASTOS DE VENTAS                                   DIC-25            DIC-24",
+   "values": [
+    1.449222
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "equipo de computación $ 7,144 $",
+   "lado": null,
+   "page": 1,
+   "section": "(2) A continuación, se detalla el rubro de impuestos; / IMPUESTOS                                       dic-25               dic-24 / arrendamiento del estadio para partidos de local. / ARRENDAMIENTOS                                     dic-25               dic-24",
+   "values": [
+    0.01526
+   ],
+   "origen": "nota 54 (ancla 51)",
+   "ancla": "arrendamientos (3) $ 1,417,664 $"
+  },
+  {
+   "label": "vallas y sillas $ 47,788 $",
+   "lado": null,
+   "page": 1,
+   "section": "(2) A continuación, se detalla el rubro de impuestos; / IMPUESTOS                                       dic-25               dic-24 / arrendamiento del estadio para partidos de local. / ARRENDAMIENTOS                                     dic-25               dic-24",
+   "values": [
+    0.136764
+   ],
+   "origen": "nota 54 (ancla 51)",
+   "ancla": "arrendamientos (3) $ 1,417,664 $"
+  },
+  {
+   "label": "otros $ 7,428 $",
+   "lado": null,
+   "page": 1,
+   "section": "(2) A continuación, se detalla el rubro de impuestos; / IMPUESTOS                                       dic-25               dic-24 / arrendamiento del estadio para partidos de local. / ARRENDAMIENTOS                                     dic-25               dic-24",
+   "values": [
+    0.00563
+   ],
+   "origen": "nota 54 (ancla 51)",
+   "ancla": "arrendamientos (3) $ 1,417,664 $"
+  },
+  {
+   "label": "contribuciones y Afiliaciones $ 17,612 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 21. GASTOS DE VENTAS / GASTOS DE VENTAS                                   DIC-25            DIC-24",
+   "values": [
+    0.012132
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "seguros $ 109,999 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 21. GASTOS DE VENTAS / GASTOS DE VENTAS                                   DIC-25            DIC-24",
+   "values": [
+    0.025262
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "servicios (4) $ 4,473,216 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 21. GASTOS DE VENTAS / GASTOS DE VENTAS                                   DIC-25            DIC-24",
+   "values": [
+    3.418272
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "gastos Legales $ 154,646 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "NOTA 21. GASTOS DE VENTAS / GASTOS DE VENTAS                                   DIC-25            DIC-24",
+   "values": [
+    0.01261
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "mantenimiento y Reparaciones (5) $ 237,831 $",
+   "lado": null,
+   "page": 1,
+   "section": "NOTA 21. GASTOS DE VENTAS / GASTOS DE VENTAS                                   DIC-25            DIC-24",
+   "values": [
+    0.013592
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "alojamiento y Manutención $ 399,707 $",
+   "lado": null,
+   "page": 1,
+   "section": "46 / aumentaron corresponden al equipo profesional y a las divisiones menores. / GASTOS DE VIAJE                               dic-25              dic-24",
+   "values": [
+    0.328836
+   ],
+   "origen": "estado 60"
+  },
+  {
+   "label": "pasajes Aéreos $ 482,070 $",
+   "lado": null,
+   "page": 1,
+   "section": "46 / aumentaron corresponden al equipo profesional y a las divisiones menores. / GASTOS DE VIAJE                               dic-25              dic-24",
+   "values": [
+    0.335325
+   ],
+   "origen": "estado 60"
+  },
+  {
+   "label": "pasajes Terrestres $ 9,779 $",
+   "lado": null,
+   "page": 1,
+   "section": "46 / aumentaron corresponden al equipo profesional y a las divisiones menores. / GASTOS DE VIAJE                               dic-25              dic-24",
+   "values": [
+    0.017704
+   ],
+   "origen": "estado 60"
+  },
+  {
+   "label": "transporte Urbano $ 4,251 $",
+   "lado": null,
+   "page": 1,
+   "section": "46 / aumentaron corresponden al equipo profesional y a las divisiones menores. / GASTOS DE VIAJE                               dic-25              dic-24",
+   "values": [
+    0.028158
+   ],
+   "origen": "estado 60"
+  },
+  {
+   "label": "peajes $ 1,030 $",
+   "lado": null,
+   "page": 1,
+   "section": "46 / aumentaron corresponden al equipo profesional y a las divisiones menores. / GASTOS DE VIAJE                               dic-25              dic-24",
+   "values": [
+    0.00179
+   ],
+   "origen": "estado 60"
+  },
+  {
+   "label": "hidratacion $ 50 $",
+   "lado": null,
+   "page": 1,
+   "section": "46 / aumentaron corresponden al equipo profesional y a las divisiones menores. / GASTOS DE VIAJE                               dic-25              dic-24",
+   "values": [
+    0.00305
+   ],
+   "origen": "estado 60"
+  },
+  {
+   "label": "maleteros aeropuerto $ 2,369 $",
+   "lado": null,
+   "page": 1,
+   "section": "46 / aumentaron corresponden al equipo profesional y a las divisiones menores. / GASTOS DE VIAJE                               dic-25              dic-24",
+   "values": [
+    0.001513
+   ],
+   "origen": "estado 60"
+  },
+  {
+   "label": "serv. Restaurante $ 546,838 $",
+   "lado": null,
+   "page": 1,
+   "section": "46 / aumentaron corresponden al equipo profesional y a las divisiones menores. / GASTOS DE VIAJE                               dic-25              dic-24",
+   "values": [
+    0.470587
+   ],
+   "origen": "estado 60"
+  },
+  {
+   "label": "Agroind. Molino Sonora $ 63,908 $",
+   "lado": null,
+   "page": 1,
+   "section": "PUBLICIDAD Y PROPAGANDA                               DIC-25             DIC-24",
+   "values": [
+    0.048
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Leon Graficas $ 37,872 $",
+   "lado": null,
+   "page": 1,
+   "section": "PUBLICIDAD Y PROPAGANDA                               DIC-25             DIC-24",
+   "values": [
+    0.036
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Escobar y Martinez (Golty) $ 16,180 $",
+   "lado": null,
+   "page": 1,
+   "section": "PUBLICIDAD Y PROPAGANDA                               DIC-25             DIC-24",
+   "values": [
+    0.015466
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Banco Comercial Av Villas $ 301,546 $",
+   "lado": null,
+   "page": 1,
+   "section": "PUBLICIDAD Y PROPAGANDA                               DIC-25             DIC-24",
+   "values": [
+    0.300807
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Industrias Puropollo $ 1,287,350 $",
+   "lado": null,
+   "page": 1,
+   "section": "PUBLICIDAD Y PROPAGANDA                               DIC-25             DIC-24",
+   "values": [
+    0.7
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Ks Depor Colombia $ 403,072 $",
+   "lado": null,
+   "page": 1,
+   "section": "PUBLICIDAD Y PROPAGANDA                               DIC-25             DIC-24",
+   "values": [
+    0.152776
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "financieros (5) $ 1,995,772 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "",
+   "values": [
+    0.694132
+   ],
+   "origen": "estado 75"
+  },
+  {
+   "label": "intereses derechos de uso $",
+   "lado": "expense",
+   "page": 1,
+   "section": "",
+   "values": [
+    0.05124
+   ],
+   "origen": "estado 75"
+  },
+  {
+   "label": "perdida en Venta y Retiro de Activos $",
+   "lado": "expense",
+   "page": 1,
+   "section": "",
+   "values": [
+    0.036925
+   ],
+   "origen": "estado 75"
+  },
+  {
+   "label": "extraordinarios (6) $ 176,950 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "",
+   "values": [
+    0.062199
+   ],
+   "origen": "estado 75"
+  },
+  {
+   "label": "indemnizaciones $ 19,641 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "OTROS                                  AÑO 2025           AÑO 2024",
+   "values": [
+    0.019641
+   ],
+   "origen": "nota 81 (ancla 75)",
+   "ancla": "otros (7) $ 153,366 $"
+  },
+  {
+   "label": "otros (7) $ 153,366 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "",
+   "values": [
+    0.161706
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "multas Sanciones y litigios $ 3,677 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "OTROS                                  AÑO 2025           AÑO 2024",
+   "values": [
+    0.011302
+   ],
+   "origen": "nota 81 (ancla 75)",
+   "ancla": "otros (7) $ 153,366 $"
+  },
+  {
+   "label": "donaciones $ 47,723 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "OTROS                                  AÑO 2025           AÑO 2024",
+   "values": [
+    0.041191
+   ],
+   "origen": "nota 81 (ancla 75)",
+   "ancla": "otros (7) $ 153,366 $"
+  },
+  {
+   "label": "gastos no deducibles $ 2,300 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "OTROS                                  AÑO 2025           AÑO 2024",
+   "values": [
+    0.089552
+   ],
+   "origen": "nota 81 (ancla 75)",
+   "ancla": "otros (7) $ 153,366 $"
+  },
+  {
+   "label": "Gil Hurtado Brayan Andres $ - $",
+   "lado": "expense",
+   "page": 1,
+   "section": "efectuaron este tipo de negociación. / (b) COSTO DE VENTA DE JUGADORES                     dic-25            dic-24",
+   "values": [
+    0.51856
+   ],
+   "origen": "nota 69 (ancla 64)",
+   "ancla": "costo de venta derechos deportivos (b) $ 4,856,993 $"
+  },
+  {
+   "label": "costo de venta derechos deportivos (b) $ 4,856,993 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "parqueaderos                                $           611   $            251",
+   "values": [
+    2.96765
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "El Equipo del Pueblo S.A (Diego Herazo) $ - $",
+   "lado": "expense",
+   "page": 1,
+   "section": "efectuaron este tipo de negociación. / (b) COSTO DE VENTA DE JUGADORES                     dic-25            dic-24",
+   "values": [
+    2.26667
+   ],
+   "origen": "nota 69 (ancla 64)",
+   "ancla": "costo de venta derechos deportivos (b) $ 4,856,993 $"
+  },
+  {
+   "label": "Alianza Petrolera F.C (Briyab Gil ) $ 1,568,909 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "efectuaron este tipo de negociación. / (b) COSTO DE VENTA DE JUGADORES                     dic-25            dic-24",
+   "values": [
+    0.18242
+   ],
+   "origen": "nota 69 (ancla 64)",
+   "ancla": "costo de venta derechos deportivos (b) $ 4,856,993 $"
+  },
+  {
+   "label": "Barranquilla Futbol Club $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "C) PRESTAMO DE JUGADORES                         dic-25            dic-24",
+   "values": [
+    0.04
+   ],
+   "origen": "nota 70 (ancla 64)",
+   "ancla": "préstamo de Jugadores (c) $ 750,061 $"
+  },
+  {
+   "label": "préstamo de Jugadores (c) $ 750,061 $",
+   "lado": null,
+   "page": 1,
+   "section": "parqueaderos                                $           611   $            251",
+   "values": [
+    0.34
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Atletico Nacional S.A $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "C) PRESTAMO DE JUGADORES                         dic-25            dic-24",
+   "values": [
+    0.3
+   ],
+   "origen": "nota 70 (ancla 64)",
+   "ancla": "préstamo de Jugadores (c) $ 750,061 $"
+  },
+  {
+   "label": "dados de baja derechos deportivos (d) $ 823,416 $",
+   "lado": null,
+   "page": 1,
+   "section": "parqueaderos                                $           611   $            251",
+   "values": [
+    0.448358
+   ],
+   "origen": "estado 64"
+  },
+  {
+   "label": "indemnización por Formación $ 115,205 $",
+   "lado": null,
+   "page": 1,
+   "section": "parqueaderos                                $           611   $            251",
+   "values": [
+    0.023359
+   ],
+   "origen": "estado 64"
+  },
+  {
+   "label": "inscripcion Torneos $ 39,317 $",
+   "lado": null,
+   "page": 1,
+   "section": "parqueaderos                                $           611   $            251",
+   "values": [
+    0.0146
+   ],
+   "origen": "estado 64"
+  },
+  {
+   "label": "transporte utileria $ 7,205 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "46 / aumentaron corresponden al equipo profesional y a las divisiones menores. / GASTOS DE VIAJE                               dic-25              dic-24",
+   "values": [
+    0.00662
+   ],
+   "origen": "nota 60 (ancla 52)",
+   "ancla": "gastos de Viaje (6) $ 1,453,730 $"
+  },
+  {
+   "label": "gastos de Viaje (6) $ 1,453,730 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "",
+   "values": [
+    1.194142
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "amortizaciones $ 5,152,964 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "",
+   "values": [
+    7.737503
+   ],
+   "origen": "estado 52"
+  },
+  {
+   "label": "diversos (7) $ 11,404,741 $",
+   "lado": "expense",
+   "page": 1,
+   "section": "",
+   "values": [
+    7.181616
+   ],
+   "origen": "estado 52"
+  },
+  {
+   "label": "Rovira Ferreira Bryan $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "TOTAL DIVERSOS                              $    11,404,741   $      7,181,616",
+   "values": [
+    0.128
+   ],
+   "origen": "estado 66"
+  },
+  {
+   "label": "Rios Henao Juan David $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "TOTAL DIVERSOS                              $    11,404,741   $      7,181,616",
+   "values": [
+    0.2
+   ],
+   "origen": "estado 66"
+  },
+  {
+   "label": "Filgueira Mendez Gaston $ - $",
+   "lado": "expense",
+   "page": 1,
+   "section": "TOTAL DIVERSOS                              $    11,404,741   $      7,181,616",
+   "values": [
+    0.266092
+   ],
+   "origen": "estado 66"
+  },
+  {
+   "label": "Lozano Gutierrez John Jairo $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "TOTAL DIVERSOS                              $    11,404,741   $      7,181,616",
+   "values": [
+    0.033
+   ],
+   "origen": "estado 66"
+  },
+  {
+   "label": "de terceros $",
+   "lado": null,
+   "page": 1,
+   "section": "INDEMNIZACIONES                                AÑO 2025           AÑO 2024",
+   "values": [
+    0.233454
+   ],
+   "origen": "estado 78"
+  },
+  {
+   "label": "incapacidades ARL $ 56,755 $",
+   "lado": null,
+   "page": 1,
+   "section": "INDEMNIZACIONES                                AÑO 2025           AÑO 2024",
+   "values": [
+    0.020028
+   ],
+   "origen": "estado 78"
+  },
+  {
+   "label": "Derechos de Formación $",
+   "lado": null,
+   "page": 1,
+   "section": "INDEMNIZACIONES                                AÑO 2025           AÑO 2024",
+   "values": [
+    0.378345
+   ],
+   "origen": "estado 78"
+  },
+  {
+   "label": "ingreso por Vendedores $ 150,275 $",
+   "lado": "revenue",
+   "page": 1,
+   "section": "(4) OTROS                                  dic-25             dic-24",
+   "values": [
+    0.120696
+   ],
+   "origen": "estado 79"
+  },
+  {
+   "label": "multas y Recargos $ 155,835 $",
+   "lado": null,
+   "page": 1,
+   "section": "(4) OTROS                                  dic-25             dic-24",
+   "values": [
+    0.0442
+   ],
+   "origen": "estado 79"
+  },
+  {
+   "label": "valores Descontados camisetas $",
+   "lado": null,
+   "page": 1,
+   "section": "(4) OTROS                                  dic-25             dic-24",
+   "values": [
+    0.027428
+   ],
+   "origen": "estado 79"
+  },
+  {
+   "label": "otros $ - $",
+   "lado": null,
+   "page": 1,
+   "section": "(4) OTROS                                  dic-25             dic-24",
+   "values": [
+    0.020885
+   ],
+   "origen": "estado 79"
+  },
+  {
+   "label": "propaganda y Publicidad $ 1,118,000 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    1.741303
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "casa hogar $ 400,350 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.280294
+   ],
+   "origen": "estado 56"
+  },
+  {
+   "label": "auxilio de alimentacion $ 129,197 $",
+   "lado": null,
+   "page": 1,
+   "section": "",
+   "values": [
+    0.114777
+   ],
+   "origen": "estado 56"
+  },
+  {
+   "label": "intereses $ 653,493 $",
+   "lado": null,
+   "page": 1,
+   "section": "transacción. / (1) Se detalla el rubro de los ingresos financieros; / FINANCIEROS                                 dic-25            dic-24",
+   "values": [
+    0.291213
+   ],
+   "origen": "estado 76"
+  },
+  {
+   "label": "diferencia en Cambio -$ 92,161 $",
+   "lado": null,
+   "page": 1,
+   "section": "transacción. / (1) Se detalla el rubro de los ingresos financieros; / FINANCIEROS                                 dic-25            dic-24",
+   "values": [
+    0.505913
+   ],
+   "origen": "estado 76"
+  },
+  {
+   "label": "descuentos Comerciales Condicionados $ 26,682 $",
+   "lado": null,
+   "page": 1,
+   "section": "transacción. / (1) Se detalla el rubro de los ingresos financieros; / FINANCIEROS                                 dic-25            dic-24",
+   "values": [
+    0.153836
+   ],
+   "origen": "estado 76"
+  }
+ ]
+}

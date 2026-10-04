@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2011-12.md",
+ "generado": "2026-10-04T18:00:02.354Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "*Amounts in Euro*",
+ "caja": {
+  "lineas": [
+   1477
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Solo se incluyó la página del activo; la sección de pasivos (préstamos y financiamientos bancarios corrientes y no corrientes) no aparece en las páginas proporcionadas, por lo que no se pueden identificar las líneas de deuda financiera."
+}

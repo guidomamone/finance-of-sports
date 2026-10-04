@@ -1,0 +1,473 @@
+{
+  "md": "Clubes/Croacia/Gorica/financijsko-izvjesce-2021.md",
+  "pdf": "Clubes/Croacia/Gorica/financijsko-izvjesce-2021.pdf",
+  "club": "gorica-hr",
+  "year": 2021,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:59:42.204Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 41,
+    "notasUsadas": []
+  },
+  "ladoConocido": 38,
+  "rubros": [
+    {
+      "label": "Plaće igrača",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -12.981069
+      ],
+      "origen": "estado 2",
+      "glosa": "Salarios de jugadores"
+    },
+    {
+      "label": "Porezi i doprinosi - igrači",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -0.102294
+      ],
+      "origen": "estado 2",
+      "glosa": "Impuestos y cargas sociales - jugadores"
+    },
+    {
+      "label": "Ostali nerazvrstani troškovi primanja igrača",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -0.219642
+      ],
+      "origen": "estado 2",
+      "glosa": "Otros gastos no clasificados de remuneración de jugadores"
+    },
+    {
+      "label": "Plaće ostalih zaposlenika",
+      "lado": null,
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -1.545025
+      ],
+      "origen": "estado 2",
+      "glosa": "Salarios del resto de empleados"
+    },
+    {
+      "label": "Porezi i doprinosi - ostali zaposlenici",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -0.750157
+      ],
+      "origen": "estado 2",
+      "glosa": "Impuestos y cargas sociales - resto de empleados"
+    },
+    {
+      "label": "Ostali nerazvrstani troškovi za primanja ostalih zaposlenika",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -0.325526
+      ],
+      "origen": "estado 2",
+      "glosa": "Otros gastos no clasificados de remuneración del resto de empleados"
+    },
+    {
+      "label": "Amortizacija i umanjenje vrijednosti dugotrajne materijalne imovine",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -0.25076
+      ],
+      "origen": "estado 2",
+      "glosa": "Amortización y deterioro del inmovilizado material"
+    },
+    {
+      "label": "Amortizacija i umanjenje vrijednosti - Ukupno (bez registracija igrača)",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -0.25076
+      ],
+      "origen": "estado 2",
+      "glosa": "Amortización y deterioro - Total (excluidos derechos federativos de jugadores)"
+    },
+    {
+      "label": "Troškovi održavanja utakmica",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -3.960691
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos de organización de partidos"
+    },
+    {
+      "label": "Troškovi sponzorstva i oglašavanja",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -0.264158
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos de patrocinio y publicidad"
+    },
+    {
+      "label": "Troškovi posrednika",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -5.12416
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos de intermediarios"
+    },
+    {
+      "label": "Troškovi imovine i objekata",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -0.835209
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos de instalaciones y propiedades"
+    },
+    {
+      "label": "Ostali nerazvrstani poslovni rashodi",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -6.622565
+      ],
+      "origen": "estado 2",
+      "glosa": "Otros gastos de explotación no clasificados"
+    },
+    {
+      "label": "Poslovni rezultat (bez registracija igrača)",
+      "lado": null,
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -23.582195
+      ],
+      "origen": "estado 2",
+      "glosa": "Resultado de explotación (excluidos derechos federativos de jugadores)"
+    },
+    {
+      "label": "Troškovi za stjecanje registracija igrača",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -3.148845
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos por adquisición de derechos federativos de jugadores"
+    },
+    {
+      "label": "Prihodi od raspolaganja registracijama igrača",
+      "lado": "revenue",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        33.492079
+      ],
+      "origen": "estado 2",
+      "glosa": "Ingresos por enajenación de derechos federativos de jugadores"
+    },
+    {
+      "label": "Financijski prihodi",
+      "lado": "revenue",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        0.020365
+      ],
+      "origen": "estado 2",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Financijski rashodi",
+      "lado": "expense",
+      "page": 10,
+      "section": "Račun dobiti i gubitka",
+      "values": [
+        -0.201219
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Prihodi od ulaznica - Nacionalna natjecanja",
+      "lado": "revenue",
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "values": [
+        0.087378
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por taquilla - Competiciones nacionales"
+    },
+    {
+      "label": "Prihodi od ulaznica - Godišnje ulaznice",
+      "lado": "revenue",
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "values": [
+        0.0141
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por taquilla - Abonos de temporada"
+    },
+    {
+      "label": "Prihodi od ulaznica - Članarine",
+      "lado": "revenue",
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "values": [
+        0.44098
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por taquilla - Cuotas de socios"
+    },
+    {
+      "label": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
+      "lado": "revenue",
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "values": [
+        1.573495
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros ingresos no clasificados de patrocinio y publicidad"
+    },
+    {
+      "label": "Prava emitiranja - Nacionalna natjecanja",
+      "lado": "revenue",
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "values": [
+        1.3842
+      ],
+      "origen": "estado 1",
+      "glosa": "Derechos de retransmisión - Competiciones nacionales"
+    },
+    {
+      "label": "Komercijalni prihodi - Nacionalna natjecanja",
+      "lado": "revenue",
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "values": [
+        0.786
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos comerciales - Competiciones nacionales"
+    },
+    {
+      "label": "Komercijalni prihodi - Prodaja proizvoda",
+      "lado": "revenue",
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "values": [
+        0.550152
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos comerciales - Venta de productos"
+    },
+    {
+      "label": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
+      "lado": "revenue",
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "values": [
+        0.020821
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos comerciales - Uso de instalaciones fuera de días de partido"
+    },
+    {
+      "label": "Ostali nerazvrstani komercijalni prihodi",
+      "lado": "revenue",
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "values": [
+        0.369327
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros ingresos comerciales no clasificados"
+    },
+    {
+      "label": "Uefina klupska natjecanja - solidarne uplate",
+      "lado": null,
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "values": [
+        0.0575
+      ],
+      "origen": "estado 1",
+      "glosa": "Competiciones de clubes de la UEFA - Pagos de solidaridad"
+    },
+    {
+      "label": "Donacije i dotacije ili drugi iznosi od države i lokalne samouprave",
+      "lado": "revenue",
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "values": [
+        3.40975
+      ],
+      "origen": "estado 1",
+      "glosa": "Donaciones y subvenciones u otros importes del Estado y la administración local"
+    },
+    {
+      "label": "Donacije nepovezanih strana",
+      "lado": "revenue",
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "values": [
+        0.5416
+      ],
+      "origen": "estado 1",
+      "glosa": "Donaciones de partes no vinculadas"
+    },
+    {
+      "label": "Ostali nerazvrstani poslovni prihodi",
+      "lado": "revenue",
+      "page": 9,
+      "section": "Naziv izvještajnog subjekta (NK): / Hrvatski nogometni klub Gorica / ### Račun dobiti i gubitka",
+      "values": [
+        0.163758
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros ingresos de explotación no clasificados"
+    },
+    {
+      "label": "Prihodi od kamata po bankovnim računima i danim kreditima",
+      "lado": "revenue",
+      "page": 16,
+      "section": "#### 2. Troškovi financiranja",
+      "values": [
+        14.78
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos por intereses de cuentas bancarias y préstamos concedidos"
+    },
+    {
+      "label": "Pozitivne tečajne razlike",
+      "lado": "revenue",
+      "page": 16,
+      "section": "#### 2. Troškovi financiranja",
+      "values": [
+        2.585
+      ],
+      "origen": "estado 7",
+      "glosa": "Diferencias positivas de cambio"
+    },
+    {
+      "label": "Ostali financijski prihodi",
+      "lado": "revenue",
+      "page": 16,
+      "section": "#### 2. Troškovi financiranja",
+      "values": [
+        3
+      ],
+      "origen": "estado 7",
+      "glosa": "Otros ingresos financieros"
+    },
+    {
+      "label": "Troškovi kamata na prekoračenja po bankovnim računima i zajmovima",
+      "lado": "expense",
+      "page": 16,
+      "section": "#### 2. Troškovi financiranja",
+      "values": [
+        -74.05
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos por intereses en descubiertos bancarios y préstamos"
+    },
+    {
+      "label": "Troškovi kamata - leasing",
+      "lado": "expense",
+      "page": 16,
+      "section": "#### 2. Troškovi financiranja",
+      "values": [
+        -8.7
+      ],
+      "origen": "estado 7",
+      "glosa": "Gastos por intereses - arrendamiento financiero"
+    },
+    {
+      "label": "Negativne tečajne razlike",
+      "lado": "expense",
+      "page": 16,
+      "section": "#### 2. Troškovi financiranja",
+      "values": [
+        -115.358
+      ],
+      "origen": "estado 7",
+      "glosa": "Diferencias negativas de cambio"
+    },
+    {
+      "label": "Ostali financijski troškovi",
+      "lado": "expense",
+      "page": 16,
+      "section": "#### 2. Troškovi financiranja",
+      "values": [
+        -3.111
+      ],
+      "origen": "estado 7",
+      "glosa": "Otros gastos financieros"
+    },
+    {
+      "label": "1. potpore covid",
+      "lado": "revenue",
+      "page": 27,
+      "section": "Hrvatski nogometni klub Gorica / Bilješke uz financijske izvještaje IX / 14. Ostali nerazvrstani poslovni prihodi / *potrebno unijeti sve prihode veće od 10% ukupnog iznosa / Opis Iznos",
+      "values": [
+        133
+      ],
+      "origen": "estado 19",
+      "glosa": "1. Ayudas covid"
+    },
+    {
+      "label": "2. otpis obaveza",
+      "lado": "revenue",
+      "page": 27,
+      "section": "Hrvatski nogometni klub Gorica / Bilješke uz financijske izvještaje IX / 14. Ostali nerazvrstani poslovni prihodi / *potrebno unijeti sve prihode veće od 10% ukupnog iznosa / Opis Iznos",
+      "values": [
+        18.397
+      ],
+      "origen": "estado 19",
+      "glosa": "2. Condonación de pasivos"
+    },
+    {
+      "label": "3. subvencija covid",
+      "lado": "revenue",
+      "page": 27,
+      "section": "Hrvatski nogometni klub Gorica / Bilješke uz financijske izvještaje IX / 14. Ostali nerazvrstani poslovni prihodi / *potrebno unijeti sve prihode veće od 10% ukupnog iznosa / Opis Iznos",
+      "values": [
+        12.361
+      ],
+      "origen": "estado 19",
+      "glosa": "3. Subvención covid"
+    }
+  ]
+}

@@ -1,0 +1,2255 @@
+{
+  "md": "Clubes/Colombia/Envigado/estados-financieros-2022.md",
+  "pdf": "Clubes/Colombia/Envigado/estados-financieros-2022.pdf",
+  "club": "envigado",
+  "year": 2022,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:58:21.109Z",
+  "tieOuts": {
+    "cierran": 49,
+    "noCierran": 8
+  },
+  "warnings": [
+    "3 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "5 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "40 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 200,
+    "notasUsadas": [
+      "41",
+      "21",
+      "8"
+    ]
+  },
+  "ladoConocido": 201,
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 36,
+      "section": "## Nota 25. Reclasificaciones en el estado de resultados integral",
+      "values": [
+        24393.27308
+      ],
+      "origen": "estado 44",
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Costo de ventas mercancías",
+      "lado": "expense",
+      "page": 36,
+      "section": "## Nota 25. Reclasificaciones en el estado de resultados integral",
+      "values": [
+        -104.733454
+      ],
+      "origen": "estado 44",
+      "glosa": "Costo de ventas mercancías"
+    },
+    {
+      "label": "Gastos del equipo",
+      "lado": "expense",
+      "page": 36,
+      "section": "## Nota 25. Reclasificaciones en el estado de resultados integral",
+      "values": [
+        -11678.094582
+      ],
+      "origen": "estado 44",
+      "glosa": "Gastos del equipo"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 36,
+      "section": "## Nota 25. Reclasificaciones en el estado de resultados integral",
+      "values": [
+        750.731918
+      ],
+      "origen": "estado 44",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 36,
+      "section": "## Nota 25. Reclasificaciones en el estado de resultados integral",
+      "values": [
+        -2187.181767
+      ],
+      "origen": "estado 44",
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 36,
+      "section": "## Nota 25. Reclasificaciones en el estado de resultados integral",
+      "values": [
+        -101.888563
+      ],
+      "origen": "estado 44",
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Ingresos financieros, netos",
+      "lado": "revenue",
+      "page": 36,
+      "section": "## Nota 25. Reclasificaciones en el estado de resultados integral",
+      "values": [
+        2698.737227
+      ],
+      "origen": "estado 44",
+      "glosa": "Ingresos financieros, netos"
+    },
+    {
+      "label": "Costos financieros",
+      "lado": "expense",
+      "page": 36,
+      "section": "## Nota 25. Reclasificaciones en el estado de resultados integral",
+      "values": [
+        -1005.824749
+      ],
+      "origen": "estado 44",
+      "glosa": "Costos financieros"
+    },
+    {
+      "label": "Ingreso (gasto) por impuesto a la Renta y Complementarios",
+      "lado": "expense",
+      "page": 36,
+      "section": "## Nota 25. Reclasificaciones en el estado de resultados integral",
+      "values": [
+        -3938.151
+      ],
+      "origen": "estado 44",
+      "glosa": "Ingreso (gasto) por impuesto a la Renta y Complementarios"
+    },
+    {
+      "label": "Ingreso (gasto) por impuestos diferidos",
+      "lado": "expense",
+      "page": 36,
+      "section": "## Nota 25. Reclasificaciones en el estado de resultados integral",
+      "values": [
+        -143.717223
+      ],
+      "origen": "estado 44",
+      "glosa": "Ingreso (gasto) por impuestos diferidos"
+    },
+    {
+      "label": "Cesantías",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        247.547056
+      ],
+      "origen": "estado 36",
+      "glosa": "Cesantías"
+    },
+    {
+      "label": "Intereses sobre cesantías",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        28.896003
+      ],
+      "origen": "estado 36",
+      "glosa": "Intereses sobre cesantías"
+    },
+    {
+      "label": "Prima de servicios",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        245.117394
+      ],
+      "origen": "estado 36",
+      "glosa": "Prima de servicios"
+    },
+    {
+      "label": "Vacaciones",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        252.835338
+      ],
+      "origen": "estado 36",
+      "glosa": "Vacaciones"
+    },
+    {
+      "label": "Auxilios",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        308.459055
+      ],
+      "origen": "estado 36",
+      "glosa": "Auxilios"
+    },
+    {
+      "label": "Bonificaciones",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        281.052335
+      ],
+      "origen": "estado 36",
+      "glosa": "Bonificaciones"
+    },
+    {
+      "label": "Dotación y suministro",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        254.826573
+      ],
+      "origen": "estado 36",
+      "glosa": "Dotación y suministro"
+    },
+    {
+      "label": "Indemnizaciones laborales",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        9.026
+      ],
+      "origen": "estado 36",
+      "glosa": "Indemnizaciones laborales"
+    },
+    {
+      "label": "Capacitación al personal",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        5.315512
+      ],
+      "origen": "estado 36",
+      "glosa": "Capacitación al personal"
+    },
+    {
+      "label": "Gastos deportivos",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        2.872101
+      ],
+      "origen": "estado 36",
+      "glosa": "Gastos deportivos"
+    },
+    {
+      "label": "Aportes A.R. L",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        86.792676
+      ],
+      "origen": "estado 36",
+      "glosa": "Aportes A.R. L"
+    },
+    {
+      "label": "Aportes E.P.S",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        110.602781
+      ],
+      "origen": "estado 36",
+      "glosa": "Aportes E.P.S"
+    },
+    {
+      "label": "Aportes a fondos y pensiones",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        489.630898
+      ],
+      "origen": "estado 36",
+      "glosa": "Aportes a fondos y pensiones"
+    },
+    {
+      "label": "Caja de compensación",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        164.570051
+      ],
+      "origen": "estado 36",
+      "glosa": "Caja de compensación"
+    },
+    {
+      "label": "Aportes al I.C.B.F",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        40.5407
+      ],
+      "origen": "estado 36",
+      "glosa": "Aportes al I.C.B.F"
+    },
+    {
+      "label": "Aportes al Sena",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        27.054
+      ],
+      "origen": "estado 36",
+      "glosa": "Aportes al Sena"
+    },
+    {
+      "label": "Gastos médicos y drogas",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        329.496886
+      ],
+      "origen": "estado 36",
+      "glosa": "Gastos médicos y drogas"
+    },
+    {
+      "label": "Consultoría",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        64.917179
+      ],
+      "origen": "estado 36",
+      "glosa": "Consultoría"
+    },
+    {
+      "label": "Asesoría jurídica",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        261.258428
+      ],
+      "origen": "estado 36",
+      "glosa": "Asesoría jurídica"
+    },
+    {
+      "label": "Asesoría técnica",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        23.255128
+      ],
+      "origen": "estado 36",
+      "glosa": "Asesoría técnica"
+    },
+    {
+      "label": "Honorarios médicos",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        4.2
+      ],
+      "origen": "estado 36",
+      "glosa": "Honorarios médicos"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        0.425
+      ],
+      "origen": "estado 36",
+      "glosa": "Otros"
+    },
+    {
+      "label": "A la propiedad raíz",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        6.02238
+      ],
+      "origen": "estado 36",
+      "glosa": "A la propiedad raíz"
+    },
+    {
+      "label": "De vehículos",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        0.413
+      ],
+      "origen": "estado 36",
+      "glosa": "De vehículos"
+    },
+    {
+      "label": "De espectáculos públicos",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        58.103
+      ],
+      "origen": "estado 36",
+      "glosa": "De espectáculos públicos"
+    },
+    {
+      "label": "Impuesto al consumo",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        15.069016
+      ],
+      "origen": "estado 36",
+      "glosa": "Impuesto al consumo"
+    },
+    {
+      "label": "Construcciones y edificaciones",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        734.95866
+      ],
+      "origen": "estado 36",
+      "glosa": "Construcciones y edificaciones"
+    },
+    {
+      "label": "Muebles y enseres",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        25.520994
+      ],
+      "origen": "estado 36",
+      "glosa": "Muebles y enseres"
+    },
+    {
+      "label": "Equipo de cómputo y comunicación",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        0.4
+      ],
+      "origen": "estado 36",
+      "glosa": "Equipo de cómputo y comunicación"
+    },
+    {
+      "label": "Contribuciones",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        15.32
+      ],
+      "origen": "estado 36",
+      "glosa": "Contribuciones"
+    },
+    {
+      "label": "Afiliaciones y sostenimiento",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        161.884297
+      ],
+      "origen": "estado 36",
+      "glosa": "Afiliaciones y sostenimiento"
+    },
+    {
+      "label": "Vida colectiva",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        39.531972
+      ],
+      "origen": "estado 36",
+      "glosa": "Vida colectiva"
+    },
+    {
+      "label": "Sustracción y hurto",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        12.323662
+      ],
+      "origen": "estado 36",
+      "glosa": "Sustracción y hurto"
+    },
+    {
+      "label": "Responsabilidad civil y extras",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        3.540008
+      ],
+      "origen": "estado 36",
+      "glosa": "Responsabilidad civil y extras"
+    },
+    {
+      "label": "Aseo y vigilancia",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        2.817055
+      ],
+      "origen": "estado 36",
+      "glosa": "Aseo y vigilancia"
+    },
+    {
+      "label": "Acueducto y alcantarillado",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        0.306651
+      ],
+      "origen": "estado 36",
+      "glosa": "Acueducto y alcantarillado"
+    },
+    {
+      "label": "Energía eléctrica",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        0.820085
+      ],
+      "origen": "estado 36",
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Teléfono",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        8.72695
+      ],
+      "origen": "estado 36",
+      "glosa": "Teléfono"
+    },
+    {
+      "label": "Correo portes y telegramas",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        1.646773
+      ],
+      "origen": "estado 36",
+      "glosa": "Correo portes y telegramas"
+    },
+    {
+      "label": "Transporte fletes y acarreos",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        51.971905
+      ],
+      "origen": "estado 36",
+      "glosa": "Transporte fletes y acarreos"
+    },
+    {
+      "label": "Propaganda y publicidad (1)",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        163.125379
+      ],
+      "origen": "estado 36",
+      "glosa": "Propaganda y publicidad (1)"
+    },
+    {
+      "label": "Internet",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        6.656258
+      ],
+      "origen": "estado 36",
+      "glosa": "Internet"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 32,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        0.6
+      ],
+      "origen": "estado 36",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Sueldos",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        645227.21
+      ],
+      "origen": "estado 33",
+      "glosa": "Sueldos"
+    },
+    {
+      "label": "Viáticos",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        250
+      ],
+      "origen": "estado 33",
+      "glosa": "Viáticos"
+    },
+    {
+      "label": "Auxilio de transporte",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        9549.518
+      ],
+      "origen": "estado 33",
+      "glosa": "Auxilio de transporte"
+    },
+    {
+      "label": "Cesantías",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        55964.281
+      ],
+      "origen": "estado 33",
+      "glosa": "Cesantías"
+    },
+    {
+      "label": "Intereses a las cesantías",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        6635.41
+      ],
+      "origen": "estado 33",
+      "glosa": "Intereses a las cesantías"
+    },
+    {
+      "label": "Prima de servicios",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        55296.744
+      ],
+      "origen": "estado 33",
+      "glosa": "Prima de servicios"
+    },
+    {
+      "label": "Vacaciones",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        49144.968
+      ],
+      "origen": "estado 33",
+      "glosa": "Vacaciones"
+    },
+    {
+      "label": "Auxilios",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        21428.333
+      ],
+      "origen": "estado 33",
+      "glosa": "Auxilios"
+    },
+    {
+      "label": "Bonificaciones",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        7000
+      ],
+      "origen": "estado 33",
+      "glosa": "Bonificaciones"
+    },
+    {
+      "label": "Dotación y suministro",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        1104.95
+      ],
+      "origen": "estado 33",
+      "glosa": "Dotación y suministro"
+    },
+    {
+      "label": "Capacitación al personal",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        568.706
+      ],
+      "origen": "estado 33",
+      "glosa": "Capacitación al personal"
+    },
+    {
+      "label": "Gastos deportivos y recreación",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        3360
+      ],
+      "origen": "estado 33",
+      "glosa": "Gastos deportivos y recreación"
+    },
+    {
+      "label": "Aportes A.R. L",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        3710.43
+      ],
+      "origen": "estado 33",
+      "glosa": "Aportes A.R. L"
+    },
+    {
+      "label": "Aportes E.P.S",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        21855.926
+      ],
+      "origen": "estado 33",
+      "glosa": "Aportes E.P.S"
+    },
+    {
+      "label": "Aportes a fondos y pensiones",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        73617.088
+      ],
+      "origen": "estado 33",
+      "glosa": "Aportes a fondos y pensiones"
+    },
+    {
+      "label": "Caja de compensación",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        22548.3
+      ],
+      "origen": "estado 33",
+      "glosa": "Caja de compensación"
+    },
+    {
+      "label": "Aportes al I.C.B.F",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        7009.9
+      ],
+      "origen": "estado 33",
+      "glosa": "Aportes al I.C.B.F"
+    },
+    {
+      "label": "Aportes al Sena",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        4650.8
+      ],
+      "origen": "estado 33",
+      "glosa": "Aportes al Sena"
+    },
+    {
+      "label": "Gastos médicos y drogas",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        15604.759
+      ],
+      "origen": "estado 33",
+      "glosa": "Gastos médicos y drogas"
+    },
+    {
+      "label": "Revisoría fiscal",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        53070
+      ],
+      "origen": "estado 33",
+      "glosa": "Revisoría fiscal"
+    },
+    {
+      "label": "Asesoría jurídica",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        7500
+      ],
+      "origen": "estado 33",
+      "glosa": "Asesoría jurídica"
+    },
+    {
+      "label": "Asesoría financiera",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        15000
+      ],
+      "origen": "estado 33",
+      "glosa": "Asesoría financiera"
+    },
+    {
+      "label": "Asesoría técnica",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        29856.874
+      ],
+      "origen": "estado 33",
+      "glosa": "Asesoría técnica"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        20662.267
+      ],
+      "origen": "estado 33",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Industria y comercio",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        64940.397
+      ],
+      "origen": "estado 33",
+      "glosa": "Industria y comercio"
+    },
+    {
+      "label": "Gravamen movimiento financiero",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        122089.936
+      ],
+      "origen": "estado 33",
+      "glosa": "Gravamen movimiento financiero"
+    },
+    {
+      "label": "Iva descontable (1)",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        189366.666
+      ],
+      "origen": "estado 33",
+      "glosa": "Iva descontable (1)"
+    },
+    {
+      "label": "Impuesto al consumo",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        939.188
+      ],
+      "origen": "estado 33",
+      "glosa": "Impuesto al consumo"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        4860.8
+      ],
+      "origen": "estado 33",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Construcciones y edificaciones",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        37641.059
+      ],
+      "origen": "estado 33",
+      "glosa": "Construcciones y edificaciones"
+    },
+    {
+      "label": "Equipo de computación y comunicación",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        14932.264
+      ],
+      "origen": "estado 33",
+      "glosa": "Equipo de computación y comunicación"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        614.995
+      ],
+      "origen": "estado 33",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Sustracción y hurto",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        2282.065
+      ],
+      "origen": "estado 33",
+      "glosa": "Sustracción y hurto"
+    },
+    {
+      "label": "Aseo y vigilancia",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        2304.046
+      ],
+      "origen": "estado 33",
+      "glosa": "Aseo y vigilancia"
+    },
+    {
+      "label": "Asistencia técnica",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        2341
+      ],
+      "origen": "estado 33",
+      "glosa": "Asistencia técnica"
+    },
+    {
+      "label": "Procesamientos electrónicos",
+      "lado": "expense",
+      "page": 30,
+      "section": "# Nota 20. Gastos de administración y Gastos equipo de fútbol",
+      "values": [
+        1435.797
+      ],
+      "origen": "estado 33",
+      "glosa": "Procesamientos electrónicos"
+    },
+    {
+      "label": "Teléfono",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        6321.445
+      ],
+      "origen": "estado 34",
+      "glosa": "Teléfono"
+    },
+    {
+      "label": "Correo portes y telegramas",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        1173.066
+      ],
+      "origen": "estado 34",
+      "glosa": "Correo portes y telegramas"
+    },
+    {
+      "label": "Transporte fletes y acarreos",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        1758
+      ],
+      "origen": "estado 34",
+      "glosa": "Transporte fletes y acarreos"
+    },
+    {
+      "label": "Internet",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        334.204
+      ],
+      "origen": "estado 34",
+      "glosa": "Internet"
+    },
+    {
+      "label": "Notariales",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        12433.673
+      ],
+      "origen": "estado 34",
+      "glosa": "Notariales"
+    },
+    {
+      "label": "Registro mercantil",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        2401.5
+      ],
+      "origen": "estado 34",
+      "glosa": "Registro mercantil"
+    },
+    {
+      "label": "Tramites y licencias",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        2896.622
+      ],
+      "origen": "estado 34",
+      "glosa": "Tramites y licencias"
+    },
+    {
+      "label": "Construcciones y edificaciones",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        2111.5
+      ],
+      "origen": "estado 34",
+      "glosa": "Construcciones y edificaciones"
+    },
+    {
+      "label": "Maquinaria y equipo",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        396.611
+      ],
+      "origen": "estado 34",
+      "glosa": "Maquinaria y equipo"
+    },
+    {
+      "label": "Equipo de oficina",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        2648.703
+      ],
+      "origen": "estado 34",
+      "glosa": "Equipo de oficina"
+    },
+    {
+      "label": "Equipo de computación y comuna",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        22932.725
+      ],
+      "origen": "estado 34",
+      "glosa": "Equipo de computación y comuna"
+    },
+    {
+      "label": "Flota y equipo de transporte",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        56.5
+      ],
+      "origen": "estado 34",
+      "glosa": "Flota y equipo de transporte"
+    },
+    {
+      "label": "Instalaciones eléctricas",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        1384
+      ],
+      "origen": "estado 34",
+      "glosa": "Instalaciones eléctricas"
+    },
+    {
+      "label": "Alojamiento y manutención",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        9963.226
+      ],
+      "origen": "estado 34",
+      "glosa": "Alojamiento y manutención"
+    },
+    {
+      "label": "Pasajes aéreos",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        33771.552
+      ],
+      "origen": "estado 34",
+      "glosa": "Pasajes aéreos"
+    },
+    {
+      "label": "Pasajes terrestres",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        1191.2
+      ],
+      "origen": "estado 34",
+      "glosa": "Pasajes terrestres"
+    },
+    {
+      "label": "Maquinaria y equipo",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        57680.788
+      ],
+      "origen": "estado 34",
+      "glosa": "Maquinaria y equipo"
+    },
+    {
+      "label": "Equipo de oficina",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        16636.446
+      ],
+      "origen": "estado 34",
+      "glosa": "Equipo de oficina"
+    },
+    {
+      "label": "Equipo de computación",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        22856.282
+      ],
+      "origen": "estado 34",
+      "glosa": "Equipo de computación"
+    },
+    {
+      "label": "Flota y equipo de transporte",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        66999.996
+      ],
+      "origen": "estado 34",
+      "glosa": "Flota y equipo de transporte"
+    },
+    {
+      "label": "Mejoras en propiedades ajenas",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        194837.544
+      ],
+      "origen": "estado 34",
+      "glosa": "Mejoras en propiedades ajenas"
+    },
+    {
+      "label": "Cargos diferidos",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        72523.917
+      ],
+      "origen": "estado 34",
+      "glosa": "Cargos diferidos"
+    },
+    {
+      "label": "Libros y suscripciones",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        399.9
+      ],
+      "origen": "estado 34",
+      "glosa": "Libros y suscripciones"
+    },
+    {
+      "label": "Gastos de representación",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        25280.892
+      ],
+      "origen": "estado 34",
+      "glosa": "Gastos de representación"
+    },
+    {
+      "label": "Elementos de aseo y cafetería",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        3401.57
+      ],
+      "origen": "estado 34",
+      "glosa": "Elementos de aseo y cafetería"
+    },
+    {
+      "label": "Taxis y buses",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        5572.076
+      ],
+      "origen": "estado 34",
+      "glosa": "Taxis y buses"
+    },
+    {
+      "label": "Apoyo movilidad",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        468.688
+      ],
+      "origen": "estado 34",
+      "glosa": "Apoyo movilidad"
+    },
+    {
+      "label": "Casino y restaurante",
+      "lado": "expense",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        16356.641
+      ],
+      "origen": "estado 34",
+      "glosa": "Casino y restaurante"
+    },
+    {
+      "label": "Gastos no deducibles",
+      "lado": "revenue",
+      "page": 31,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        72882.14
+      ],
+      "origen": "estado 34",
+      "glosa": "Gastos no deducibles"
+    },
+    {
+      "label": "Tramites y licencias",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        8.949243
+      ],
+      "origen": "estado 37",
+      "glosa": "Tramites y licencias"
+    },
+    {
+      "label": "Terrenos",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        80.652403
+      ],
+      "origen": "estado 37",
+      "glosa": "Terrenos"
+    },
+    {
+      "label": "Construcciones y edificaciones",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        14.863618
+      ],
+      "origen": "estado 37",
+      "glosa": "Construcciones y edificaciones"
+    },
+    {
+      "label": "Maquinaria y equipo",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        7.051681
+      ],
+      "origen": "estado 37",
+      "glosa": "Maquinaria y equipo"
+    },
+    {
+      "label": "Equipo de oficina",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        2.2999
+      ],
+      "origen": "estado 37",
+      "glosa": "Equipo de oficina"
+    },
+    {
+      "label": "Equipo de computación y comunicación",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        5.459942
+      ],
+      "origen": "estado 37",
+      "glosa": "Equipo de computación y comunicación"
+    },
+    {
+      "label": "Flota y equipo de transporte",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        18.525403
+      ],
+      "origen": "estado 37",
+      "glosa": "Flota y equipo de transporte"
+    },
+    {
+      "label": "Instalaciones eléctricas",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        7.591337
+      ],
+      "origen": "estado 37",
+      "glosa": "Instalaciones eléctricas"
+    },
+    {
+      "label": "Reparaciones locativas",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        36.210962
+      ],
+      "origen": "estado 37",
+      "glosa": "Reparaciones locativas"
+    },
+    {
+      "label": "Alojamiento y manutención",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        494.556154
+      ],
+      "origen": "estado 37",
+      "glosa": "Alojamiento y manutención"
+    },
+    {
+      "label": "Pasajes aéreos",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        188.794418
+      ],
+      "origen": "estado 37",
+      "glosa": "Pasajes aéreos"
+    },
+    {
+      "label": "Pasajes terrestres",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        13.360177
+      ],
+      "origen": "estado 37",
+      "glosa": "Pasajes terrestres"
+    },
+    {
+      "label": "Comisiones",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        1335.966076
+      ],
+      "origen": "estado 37",
+      "glosa": "Comisiones"
+    },
+    {
+      "label": "Gastos de representación",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        35.52887
+      ],
+      "origen": "estado 37",
+      "glosa": "Gastos de representación"
+    },
+    {
+      "label": "Elementos de aseo y cafetería",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        3.981755
+      ],
+      "origen": "estado 37",
+      "glosa": "Elementos de aseo y cafetería"
+    },
+    {
+      "label": "Combustibles y lubricantes",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        16.063315
+      ],
+      "origen": "estado 37",
+      "glosa": "Combustibles y lubricantes"
+    },
+    {
+      "label": "Taxis y buses",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        13.329639
+      ],
+      "origen": "estado 37",
+      "glosa": "Taxis y buses"
+    },
+    {
+      "label": "Estampillas",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        70.564148
+      ],
+      "origen": "estado 37",
+      "glosa": "Estampillas"
+    },
+    {
+      "label": "Casino y restaurante (3)",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        266.158017
+      ],
+      "origen": "estado 37",
+      "glosa": "Casino y restaurante (3)"
+    },
+    {
+      "label": "Parqueaderos y peajes",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        6.41897
+      ],
+      "origen": "estado 37",
+      "glosa": "Parqueaderos y peajes"
+    },
+    {
+      "label": "Logística",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        105.3136
+      ],
+      "origen": "estado 37",
+      "glosa": "Logística"
+    },
+    {
+      "label": "Arbitraje",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        241.503
+      ],
+      "origen": "estado 37",
+      "glosa": "Arbitraje"
+    },
+    {
+      "label": "Transporte",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        2.5585
+      ],
+      "origen": "estado 37",
+      "glosa": "Transporte"
+    },
+    {
+      "label": "Defensa civil",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        33.1025
+      ],
+      "origen": "estado 37",
+      "glosa": "Defensa civil"
+    },
+    {
+      "label": "Divisiones menores",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        557.047433
+      ],
+      "origen": "estado 37",
+      "glosa": "Divisiones menores"
+    },
+    {
+      "label": "Derechos deportivos (5)",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        1166.775195
+      ],
+      "origen": "estado 37",
+      "glosa": "Derechos deportivos (5)"
+    },
+    {
+      "label": "Bonificaciones",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        422.049002
+      ],
+      "origen": "estado 37",
+      "glosa": "Bonificaciones"
+    },
+    {
+      "label": "Gastos no deducibles",
+      "lado": "revenue",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        128.426064
+      ],
+      "origen": "estado 37",
+      "glosa": "Gastos no deducibles"
+    },
+    {
+      "label": "Deterioro de clientes",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        0.036286
+      ],
+      "origen": "estado 37",
+      "glosa": "Deterioro de clientes"
+    },
+    {
+      "label": "Operacionales de ventas",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        13983.457729
+      ],
+      "origen": "estado 37",
+      "glosa": "Operacionales de ventas"
+    },
+    {
+      "label": "Matrículas",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        41.925
+      ],
+      "origen": "estado 32",
+      "glosa": "Matrículas"
+    },
+    {
+      "label": "Mensualidades",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        770.0847
+      ],
+      "origen": "estado 32",
+      "glosa": "Mensualidades"
+    },
+    {
+      "label": "Taquilla",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        580.13
+      ],
+      "origen": "estado 32",
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Abonados",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        66.395
+      ],
+      "origen": "estado 32",
+      "glosa": "Abonados"
+    },
+    {
+      "label": "Venta de derechos deportivos",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        11998.5595
+      ],
+      "origen": "estado 32",
+      "glosa": "Venta de derechos deportivos"
+    },
+    {
+      "label": "Préstamo de derechos deportivo",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        90.639845
+      ],
+      "origen": "estado 32",
+      "glosa": "Préstamo de derechos deportivo"
+    },
+    {
+      "label": "Contribución de solidaridad",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        526.560367
+      ],
+      "origen": "estado 32",
+      "glosa": "Contribución de solidaridad"
+    },
+    {
+      "label": "Publicidad y propaganda",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        717.003
+      ],
+      "origen": "estado 32",
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Dimayor",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        5030.059283
+      ],
+      "origen": "estado 32",
+      "glosa": "Dimayor"
+    },
+    {
+      "label": "Federación colombiana de futbol",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        484.545
+      ],
+      "origen": "estado 32",
+      "glosa": "Federación colombiana de futbol"
+    },
+    {
+      "label": "Donaciones",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        11.933028
+      ],
+      "origen": "estado 32",
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "Patrocinio",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        1517.246545
+      ],
+      "origen": "estado 32",
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "Cuotas de sostenimiento",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        1392.643507
+      ],
+      "origen": "estado 32",
+      "glosa": "Cuotas de sostenimiento"
+    },
+    {
+      "label": "Arrendamientos",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        75
+      ],
+      "origen": "estado 32",
+      "glosa": "Arrendamientos"
+    },
+    {
+      "label": "Venta de mercancías",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        303.491055
+      ],
+      "origen": "estado 32",
+      "glosa": "Venta de mercancías"
+    },
+    {
+      "label": "Otras actividades de servicios",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        1932.04
+      ],
+      "origen": "estado 32",
+      "glosa": "Otras actividades de servicios"
+    },
+    {
+      "label": "Devoluciones rebajas y descuentos",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## Dividendos pagados / ## Nota 19. Ingresos de actividades ordinarias",
+      "values": [
+        -21.49983
+      ],
+      "origen": "estado 32",
+      "glosa": "Devoluciones rebajas y descuentos"
+    },
+    {
+      "label": "Gastos bancarios",
+      "lado": "expense",
+      "page": 34,
+      "section": "",
+      "values": [
+        2015.624
+      ],
+      "origen": "estado 39",
+      "glosa": "Gastos bancarios"
+    },
+    {
+      "label": "Intereses (2)",
+      "lado": "expense",
+      "page": 34,
+      "section": "",
+      "values": [
+        63785.119
+      ],
+      "origen": "estado 39 (su nota queda consumida sin abrir)",
+      "glosa": "Intereses (2)"
+    },
+    {
+      "label": "Comisiones bancarias",
+      "lado": "expense",
+      "page": 34,
+      "section": "",
+      "values": [
+        30005.955
+      ],
+      "origen": "estado 39",
+      "glosa": "Comisiones bancarias"
+    },
+    {
+      "label": "Diferencia en cambio",
+      "lado": "expense",
+      "page": 34,
+      "section": "",
+      "values": [
+        80938.615
+      ],
+      "origen": "estado 39",
+      "glosa": "Diferencia en cambio"
+    },
+    {
+      "label": "Diferencia en cambio no realizada",
+      "lado": "expense",
+      "page": 34,
+      "section": "",
+      "values": [
+        2516.893
+      ],
+      "origen": "estado 39",
+      "glosa": "Diferencia en cambio no realizada"
+    },
+    {
+      "label": "Descuentos financieros",
+      "lado": "expense",
+      "page": 34,
+      "section": "",
+      "values": [
+        3716.852
+      ],
+      "origen": "estado 39",
+      "glosa": "Descuentos financieros"
+    },
+    {
+      "label": "Ingreso financiero, neto",
+      "lado": "revenue",
+      "page": 34,
+      "section": "",
+      "values": [
+        2756661.769
+      ],
+      "origen": "estado 39",
+      "glosa": "Ingreso financiero, neto"
+    },
+    {
+      "label": "Salario integral",
+      "lado": "expense",
+      "page": 31,
+      "section": "(1) El incremento se debió a la reactivación completa posterior al Covid-19.",
+      "values": [
+        1420393.132
+      ],
+      "origen": "estado 35",
+      "glosa": "Salario integral"
+    },
+    {
+      "label": "Sueldos",
+      "lado": "expense",
+      "page": 31,
+      "section": "(1) El incremento se debió a la reactivación completa posterior al Covid-19.",
+      "values": [
+        2585843.614
+      ],
+      "origen": "estado 35",
+      "glosa": "Sueldos"
+    },
+    {
+      "label": "Básico aprendiz",
+      "lado": "expense",
+      "page": 31,
+      "section": "(1) El incremento se debió a la reactivación completa posterior al Covid-19.",
+      "values": [
+        6520
+      ],
+      "origen": "estado 35",
+      "glosa": "Básico aprendiz"
+    },
+    {
+      "label": "Viáticos",
+      "lado": "expense",
+      "page": 31,
+      "section": "(1) El incremento se debió a la reactivación completa posterior al Covid-19.",
+      "values": [
+        660
+      ],
+      "origen": "estado 35",
+      "glosa": "Viáticos"
+    },
+    {
+      "label": "Incapacidades",
+      "lado": "expense",
+      "page": 31,
+      "section": "(1) El incremento se debió a la reactivación completa posterior al Covid-19.",
+      "values": [
+        11556.098
+      ],
+      "origen": "estado 35",
+      "glosa": "Incapacidades"
+    },
+    {
+      "label": "Auxilio de transporte",
+      "lado": "expense",
+      "page": 31,
+      "section": "(1) El incremento se debió a la reactivación completa posterior al Covid-19.",
+      "values": [
+        94215.051
+      ],
+      "origen": "estado 35",
+      "glosa": "Auxilio de transporte"
+    },
+    {
+      "label": "Impuesto sobre la utilidad contable",
+      "lado": "expense",
+      "page": 22,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        4204821.611
+      ],
+      "origen": "nota 21 (ancla 19)",
+      "ancla": "Impuesto de renta 2022",
+      "glosa": "Impuesto sobre la utilidad contable"
+    },
+    {
+      "label": "Impuesto de renta 2022",
+      "lado": "expense",
+      "page": 20,
+      "section": "El gasto de impuesto a la renta comprende:",
+      "values": [
+        3690453.997
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Impuesto de renta 2022"
+    },
+    {
+      "label": "Deducciones De Impuestos (GMF. Patrimonio Vehículos. Entre Otros)",
+      "lado": "expense",
+      "page": 22,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        21365.739
+      ],
+      "origen": "nota 21 (ancla 19)",
+      "ancla": "Impuesto de renta 2022",
+      "glosa": "Deducciones De Impuestos (GMF. Patrimonio Vehículos. Entre Otros)"
+    },
+    {
+      "label": "Donaciones Que No Cumplan Los Requisitos Legales",
+      "lado": "expense",
+      "page": 22,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        210
+      ],
+      "origen": "nota 21 (ancla 19)",
+      "ancla": "Impuesto de renta 2022",
+      "glosa": "Donaciones Que No Cumplan Los Requisitos Legales"
+    },
+    {
+      "label": "Gastos De Vigencias Anteriores",
+      "lado": "expense",
+      "page": 22,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        6191.541
+      ],
+      "origen": "nota 21 (ancla 19)",
+      "ancla": "Impuesto de renta 2022",
+      "glosa": "Gastos De Vigencias Anteriores"
+    },
+    {
+      "label": "Impuestos. Multas. Sanciones. Intereses Moratorios Y Las Condenas No Deducibles",
+      "lado": "expense",
+      "page": 22,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        33528.998
+      ],
+      "origen": "nota 21 (ancla 19)",
+      "ancla": "Impuesto de renta 2022",
+      "glosa": "Impuestos. Multas. Sanciones. Intereses Moratorios Y Las Condenas No Deducibles"
+    },
+    {
+      "label": "Gastos que no guardan relación de causalidad y necesidad con la actividad productora de renta",
+      "lado": "expense",
+      "page": 22,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        17777.731
+      ],
+      "origen": "nota 21 (ancla 19)",
+      "ancla": "Impuesto de renta 2022",
+      "glosa": "Gastos que no guardan relación de causalidad y necesidad con la actividad productora de renta"
+    },
+    {
+      "label": "Otros Gastos No Deducibles De Naturaleza Permanente",
+      "lado": "expense",
+      "page": 22,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        70473.161
+      ],
+      "origen": "nota 21 (ancla 19)",
+      "ancla": "Impuesto de renta 2022",
+      "glosa": "Otros Gastos No Deducibles De Naturaleza Permanente"
+    },
+    {
+      "label": "Propiedades. Planta Y Equipo",
+      "lado": "expense",
+      "page": 22,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        43346.174
+      ],
+      "origen": "nota 21 (ancla 19)",
+      "ancla": "Impuesto de renta 2022",
+      "glosa": "Propiedades. Planta Y Equipo"
+    },
+    {
+      "label": "Pérdidas por diferencia en cambio",
+      "lado": "expense",
+      "page": 22,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        -47656.756
+      ],
+      "origen": "nota 21 (ancla 19)",
+      "ancla": "Impuesto de renta 2022",
+      "glosa": "Pérdidas por diferencia en cambio"
+    },
+    {
+      "label": "Registradas contablemente no deducidas fiscalmente",
+      "lado": "expense",
+      "page": 22,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        -53420.499
+      ],
+      "origen": "nota 21 (ancla 19)",
+      "ancla": "Impuesto de renta 2022",
+      "glosa": "Registradas contablemente no deducidas fiscalmente"
+    },
+    {
+      "label": "Ganancia por diferencia en cambio",
+      "lado": "expense",
+      "page": 22,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021)",
+      "values": [
+        -606183.703
+      ],
+      "origen": "nota 21 (ancla 19)",
+      "ancla": "Impuesto de renta 2022",
+      "glosa": "Ganancia por diferencia en cambio"
+    },
+    {
+      "label": "Impuesto de renta años anteriores",
+      "lado": "expense",
+      "page": 20,
+      "section": "El gasto de impuesto a la renta comprende:",
+      "values": [
+        10397
+      ],
+      "origen": "estado 19",
+      "glosa": "Impuesto de renta años anteriores"
+    },
+    {
+      "label": "Impuesto Diferido",
+      "lado": "expense",
+      "page": 20,
+      "section": "El gasto de impuesto a la renta comprende:",
+      "values": [
+        744403.909
+      ],
+      "origen": "estado 19",
+      "glosa": "Impuesto Diferido"
+    },
+    {
+      "label": "Sociedades nacionales",
+      "lado": "revenue",
+      "page": 23,
+      "section": "(*) INCRNGO - Ingreso No Constitutivo de Renta Ni Ganancia Ocasional",
+      "values": [
+        0.000007
+      ],
+      "origen": "estado 24",
+      "glosa": "Sociedades nacionales"
+    },
+    {
+      "label": "Sociedades, entidades extranjeras y establecimientos permanentes",
+      "lado": "revenue",
+      "page": 23,
+      "section": "(*) INCRNGO - Ingreso No Constitutivo de Renta Ni Ganancia Ocasional",
+      "values": [
+        0.00001
+      ],
+      "origen": "estado 24",
+      "glosa": "Sociedades, entidades extranjeras y establecimientos permanentes"
+    },
+    {
+      "label": "Saldo al 1/1/2021",
+      "lado": "expense",
+      "page": 17,
+      "section": "",
+      "values": [
+        1450000
+      ],
+      "origen": "estado 10",
+      "glosa": "Saldo al 1/1/2021"
+    },
+    {
+      "label": "Incremento por revaluación",
+      "lado": "expense",
+      "page": 17,
+      "section": "# Envigado Fútbol Club S.A. / Estados Financieros / Al 31 de diciembre de 2022 / (Con cifras comparativas al 31 de diciembre de 2021) / # Nota 10. Propiedades planta y equipo",
+      "values": [
+        443600
+      ],
+      "origen": "nota 8 (ancla 10)",
+      "ancla": "Saldo al 31/12/2021",
+      "glosa": "Incremento por revaluación"
+    },
+    {
+      "label": "Saldo al 31/12/2021",
+      "lado": "expense",
+      "page": 17,
+      "section": "",
+      "values": [
+        1893600
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Saldo al 31/12/2021"
+    },
+    {
+      "label": "Saldo al 31/12/2022",
+      "lado": "expense",
+      "page": 17,
+      "section": "",
+      "values": [
+        1893600
+      ],
+      "origen": "estado 10",
+      "glosa": "Saldo al 31/12/2022"
+    },
+    {
+      "label": "Sociedades nacionales",
+      "lado": "revenue",
+      "page": 23,
+      "section": "(*) INGO - Ingreso No Constitutivo de Renta Ni Ganancia Ocasional / e. Las tarifas en materia de dividendos son las siguientes:",
+      "values": [
+        7.5
+      ],
+      "origen": "estado 25",
+      "glosa": "Sociedades nacionales"
+    },
+    {
+      "label": "Personas naturales residentes",
+      "lado": "revenue",
+      "page": 23,
+      "section": "(*) INGO - Ingreso No Constitutivo de Renta Ni Ganancia Ocasional / e. Las tarifas en materia de dividendos son las siguientes:",
+      "values": [
+        10300
+      ],
+      "origen": "estado 25",
+      "glosa": "Personas naturales residentes"
+    },
+    {
+      "label": "Personas naturales no residentes",
+      "lado": "revenue",
+      "page": 23,
+      "section": "(*) INGO - Ingreso No Constitutivo de Renta Ni Ganancia Ocasional / e. Las tarifas en materia de dividendos son las siguientes:",
+      "values": [
+        10
+      ],
+      "origen": "estado 25",
+      "glosa": "Personas naturales no residentes"
+    }
+  ]
+}

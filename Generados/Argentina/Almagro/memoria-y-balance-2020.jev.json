@@ -1,0 +1,1294 @@
+{
+ "md": "Clubes/Argentina/Almagro/memoria-y-balance-2020.md",
+ "generatedAt": "2026-09-30T04:25:20.580Z",
+ "rubros": [
+  {
+   "label": "GASTOS ESPECIFICOS -Anexos IV",
+   "lado": null,
+   "page": 9,
+   "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "choice": "match_organisation_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1522
+  },
+  {
+   "label": "GASTOS DE OPERACIONES -Anexos V",
+   "lado": null,
+   "page": 9,
+   "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1515
+  },
+  {
+   "label": "Resultado del ejercicio",
+   "lado": null,
+   "page": 10,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1514
+  },
+  {
+   "label": "CUOTA SOCIALES -Anexo II",
+   "lado": null,
+   "page": 9,
+   "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1504
+  },
+  {
+   "label": "Apertura Dist.de Resul.no asig",
+   "lado": null,
+   "page": 10,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "exceptional_items",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1328
+  },
+  {
+   "label": "RECAUDACIÓN POR ACTIVIDADES Anexo III",
+   "lado": null,
+   "page": 9,
+   "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "matchday_competition",
+     0.09
+    ],
+    [
+     "depreciation",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1556
+  },
+  {
+   "label": "AMORTIZACIÓN Anexo IA Y Anexo IB",
+   "lado": null,
+   "page": 9,
+   "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "depreciation",
+     0.98
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1573
+  },
+  {
+   "label": "RESULTADO DEL EJERCICIO -GANANCIA -",
+   "lado": null,
+   "page": 9,
+   "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1513
+  },
+  {
+   "label": "Sede Social- Medrano 522 CABA",
+   "lado": "revenue",
+   "page": 13,
+   "section": "CUIT: 33-53156200-9 / # ANEXO II / # CUOTA SOCIALES - ANEXO II- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO:82 / CUOTAS SOCIALES",
+   "choice": "member_dues",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "member_dues",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Derechos TV",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Alquiler de Sede",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "stadium_other",
+     0.28
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1078
+  },
+  {
+   "label": "Premio Copa Argentina",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1124
+  },
+  {
+   "label": "Ingreso A.F.A: dcho tv",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "Futbol Ingreso por Partidos",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1113
+  },
+  {
+   "label": "Ingresos Especiales",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Canon por Alquiler Cancha Tenis",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "choice": "other_sports",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_sports",
+     0.93
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 1091
+  },
+  {
+   "label": "Alquiler de Canchas",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "stadium_other",
+     0.12
+    ],
+    [
+     "other_sports",
+     0.02
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1106
+  },
+  {
+   "label": "Gastos de mantenimiento",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Gastos Administrativos",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "DERECHOS DE SOLIDARIDAD JUGADORES",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1105
+  },
+  {
+   "label": "Alquiler de Antena",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.97
+    ],
+    [
+     "broadcasting",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Honorarios abogados",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Honorarios Contador",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Gastos varios",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Gastos de Limpieza",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Gastos de movilidad",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Impuestos y Contribuciones",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Estadías y traslados",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Gastos de lavandería",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Eventos",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Servicio de Seguridad",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Gastos transmisión radio",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Alquiler equipo electrógeno",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Alquiler Vivienda para jugadores",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Gastos Generales",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Interese perdidos",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 850
+  },
+  {
+   "label": "Impuesto Ley 25413",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 929
+  },
+  {
+   "label": "Gastos bancarios",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Gastos de operación y administrativos",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Cargas Sociales",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Primas por contrato privado",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Gastos Cuerpo Médico y Técnico",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Sueldos y Jornales",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Gastos de Policía",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Juicios",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "Gastos de Representación",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Alquiler para entrenamiento",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Gastos de Servicios de Emergencia",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Tirand 1,20 mts Banda Latex Plana Live UP -Media",
+   "lado": "revenue",
+   "page": 20,
+   "section": "inventario 2020 / Elemento de Entrenamiento",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "broadcasting",
+     0.42
+    ],
+    [
+     "sponsorship_commercial",
+     0.05
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Tirand 1,20 mts banda Latex Plana Live UP- Fuerte",
+   "lado": "revenue",
+   "page": 20,
+   "section": "inventario 2020 / Elemento de Entrenamiento",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ],
+    [
+     "other_sports",
+     0.02
+    ]
+   ],
+   "tokens": 847
+  },
+  {
+   "label": "Tensor de sobre esfuerzo Python Striker- Live Up",
+   "lado": "revenue",
+   "page": 20,
+   "section": "inventario 2020 / Elemento de Entrenamiento",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "other_sports",
+     0.01
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Conos Torugas x20",
+   "lado": "revenue",
+   "page": 20,
+   "section": "inventario 2020 / Elemento de Entrenamiento",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ],
+    [
+     "other_sports",
+     0.01
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Amor.Acum Indumentaria",
+   "lado": "revenue",
+   "page": 20,
+   "section": "inventario 2020 / Elemento de Entrenamiento",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "lump_football_operations",
+     0.18000000000000002
+    ],
+    [
+     "sponsorship_commercial",
+     0.07
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Conos Tortugas x21",
+   "lado": "revenue",
+   "page": 20,
+   "section": "inventario 2020 / Elemento de Entrenamiento",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "youth_football",
+     0.01
+    ]
+   ],
+   "tokens": 836
+  }
+ ]
+}

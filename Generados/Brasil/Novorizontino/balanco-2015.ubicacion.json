@@ -1,0 +1,79 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2015.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2015.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T01:49:07.609Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    13,
+    61
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    77,
+    125
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    141,
+    156
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    185,
+    216
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    232,
+    266
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b1",
+  "b2",
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "No se ve indicación de escala en el índice; probablemente en unidades (reais) por ser demonstrativo contable con cuentas analíticas.",
+ "moneda": "BRL",
+ "columna_ejercicio": "01/01/2015 a 31/12/2015",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes del demonstrativo de resultado (b1-b3) están expresados en reais (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra ninguna línea 'em milhares' ni similar; el demonstrativo contable analítico suele ir en unidades.",
+   "bloques": [
+    "b1",
+    "b2",
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b1-b3 son el demonstrativo de resultado (receitas y despesas por conta contable, plan de cuentas analítico) del período 01/01/2015 a 31/12/2015, continuo en tres páginas; ya incluye el detalle por cuenta, no hay notas separadas. b4-b5 son el balance patrimonial (ativo/passivo), excluidos. Sin columna de año anterior. Entidad única (individual)."
+}

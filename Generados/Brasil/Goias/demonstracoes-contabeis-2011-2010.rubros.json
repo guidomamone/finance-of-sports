@@ -1,0 +1,250 @@
+{
+  "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2011-2010.md",
+  "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2011-2010.pdf",
+  "club": "goias-br",
+  "year": 2011,
+  "generatedAt": "2026-10-03T00:16:10.361Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Arrecadação de jogos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        2.565314
+      ],
+      "glosa": "Recaudación de partidos"
+    },
+    {
+      "label": "Direitos de transmissão de TV",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        8.358125
+      ],
+      "glosa": "Derechos de transmisión de TV"
+    },
+    {
+      "label": "(-) Dedução da receita",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -1.396991
+      ],
+      "glosa": "(-) Deducción de ingresos"
+    },
+    {
+      "label": "Negociação de atestado liberatório de atletas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.103765
+      ],
+      "glosa": "Traspaso de derechos federativos de jugadores"
+    },
+    {
+      "label": "Mensalidade e matrículas de iniciação esportiva",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.973443
+      ],
+      "glosa": "Cuotas y matrículas de iniciación deportiva"
+    },
+    {
+      "label": "Mensalidade de sócio titular",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.563241
+      ],
+      "glosa": "Cuotas de socios titulares"
+    },
+    {
+      "label": "Publicidade e patrocínio",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.541667
+      ],
+      "glosa": "Publicidad y patrocinio"
+    },
+    {
+      "label": "Parceria com patrocinadores e parceiros",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.08
+      ],
+      "glosa": "Alianzas con patrocinadores y colaboradores"
+    },
+    {
+      "label": "Premiação",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.45
+      ],
+      "glosa": "Premios"
+    },
+    {
+      "label": "Participação em loteria esportiva",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.1938
+      ],
+      "glosa": "Participación en loterías deportivas"
+    },
+    {
+      "label": "Patrocínio e parceria",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.192
+      ],
+      "glosa": "Patrocinio y alianzas"
+    },
+    {
+      "label": "Royalties",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.15698
+      ],
+      "glosa": "Regalías"
+    },
+    {
+      "label": "Outros",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.315323
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Despesas com jogos",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.867538
+      ],
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Pessoal",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        16.297246
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Provisões/reversões, acordos e indenizações",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        4.791638
+      ],
+      "glosa": "Provisiones/reversiones, acuerdos e indemnizaciones"
+    },
+    {
+      "label": "Acordos judiciais e extrajudiciais",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.156261
+      ],
+      "glosa": "Acuerdos judiciales y extrajudiciales"
+    },
+    {
+      "label": "Direito de imagem",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3.0503
+      ],
+      "glosa": "Derechos de imagen"
+    },
+    {
+      "label": "Serviços profissionais comissão técnica",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.663231
+      ],
+      "glosa": "Servicios profesionales del cuerpo técnico"
+    },
+    {
+      "label": "Despesas administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.200295
+      ],
+      "glosa": "Gastos administrativos"
+    },
+    {
+      "label": "Materiais",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.419706
+      ],
+      "glosa": "Materiales"
+    },
+    {
+      "label": "Serviços de terceiros",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.064712
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Despesas tributárias",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.435815
+      ],
+      "glosa": "Gastos tributarios"
+    },
+    {
+      "label": "Despesas gerais",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.683319
+      ],
+      "glosa": "Gastos generales"
+    }
+  ]
+}

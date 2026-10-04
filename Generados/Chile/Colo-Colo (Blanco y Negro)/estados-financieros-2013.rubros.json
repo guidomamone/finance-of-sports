@@ -1,0 +1,267 @@
+{
+  "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.md",
+  "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2013.pdf",
+  "club": "colocolo-cl",
+  "year": 2013,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:56:22.547Z",
+  "tieOuts": {
+    "cierran": 13,
+    "noCierran": 17
+  },
+  "warnings": [
+    "17 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 22,
+    "notasUsadas": []
+  },
+  "ladoConocido": 8,
+  "rubros": [
+    {
+      "label": "Servicios básicos",
+      "lado": null,
+      "page": 79,
+      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
+      "values": [
+        0.155467
+      ],
+      "origen": "estado 58",
+      "glosa": "Servicios básicos"
+    },
+    {
+      "label": "Asesorías",
+      "lado": null,
+      "page": 79,
+      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
+      "values": [
+        0.490556
+      ],
+      "origen": "estado 58",
+      "glosa": "Asesorías"
+    },
+    {
+      "label": "Depreciaciones",
+      "lado": null,
+      "page": 79,
+      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
+      "values": [
+        0.345964
+      ],
+      "origen": "estado 58",
+      "glosa": "Depreciaciones"
+    },
+    {
+      "label": "Gastos Legales",
+      "lado": "expense",
+      "page": 79,
+      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
+      "values": [
+        0.238245
+      ],
+      "origen": "estado 58",
+      "glosa": "Gastos Legales"
+    },
+    {
+      "label": "Mantenciones",
+      "lado": null,
+      "page": 79,
+      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
+      "values": [
+        0.020113
+      ],
+      "origen": "estado 58",
+      "glosa": "Mantenciones"
+    },
+    {
+      "label": "Remuneración administración",
+      "lado": null,
+      "page": 79,
+      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
+      "values": [
+        1.208535
+      ],
+      "origen": "estado 58",
+      "glosa": "Remuneración administración"
+    },
+    {
+      "label": "Otros gastos de administración",
+      "lado": "expense",
+      "page": 79,
+      "section": "Costo de ventas                                       8.728.553        8.047.125 / -                - / -                -",
+      "values": [
+        0.671222
+      ],
+      "origen": "estado 58",
+      "glosa": "Otros gastos de administración"
+    },
+    {
+      "label": "Costo de venta jugadores",
+      "lado": "expense",
+      "page": 79,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        0.04166
+      ],
+      "origen": "estado 57",
+      "glosa": "Costo de venta jugadores"
+    },
+    {
+      "label": "Remuneración plantel profesional y cuerpo técnico",
+      "lado": null,
+      "page": 79,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2.855799
+      ],
+      "origen": "estado 57",
+      "glosa": "Remuneración plantel profesional y cuerpo técnico"
+    },
+    {
+      "label": "Amortización Activos en concesión",
+      "lado": null,
+      "page": 79,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        0.701048
+      ],
+      "origen": "estado 57",
+      "glosa": "Amortización Activos en concesión"
+    },
+    {
+      "label": "Amortización pases jugadores profesionales",
+      "lado": null,
+      "page": 79,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2.715242
+      ],
+      "origen": "estado 57",
+      "glosa": "Amortización pases jugadores profesionales"
+    },
+    {
+      "label": "Costos de concentración traslados y otros",
+      "lado": "expense",
+      "page": 79,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2.07772
+      ],
+      "origen": "estado 57",
+      "glosa": "Costos de concentración traslados y otros"
+    },
+    {
+      "label": "Otros costos",
+      "lado": "expense",
+      "page": 79,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        0.337084
+      ],
+      "origen": "estado 57",
+      "glosa": "Otros costos"
+    },
+    {
+      "label": "Larraín Vial",
+      "lado": null,
+      "page": 80,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS",
+      "values": [
+        15937
+      ],
+      "origen": "estado 59",
+      "glosa": "Larraín Vial"
+    },
+    {
+      "label": "Intereses Inversión UBS",
+      "lado": null,
+      "page": 80,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS",
+      "values": [
+        12332
+      ],
+      "origen": "estado 59",
+      "glosa": "Intereses Inversión UBS"
+    },
+    {
+      "label": "Celfin",
+      "lado": null,
+      "page": 80,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS",
+      "values": [
+        1051
+      ],
+      "origen": "estado 59",
+      "glosa": "Celfin"
+    },
+    {
+      "label": "Otros activos financieros corrientes",
+      "lado": null,
+      "page": 80,
+      "section": "26. DIFERENCIA DE CAMBIO",
+      "values": [
+        96289
+      ],
+      "origen": "estado 60",
+      "glosa": "Otros activos financieros corrientes"
+    },
+    {
+      "label": "Deudores comerciales y otras cuentas por cobrar corrientes",
+      "lado": null,
+      "page": 80,
+      "section": "26. DIFERENCIA DE CAMBIO",
+      "values": [
+        -12308
+      ],
+      "origen": "estado 60",
+      "glosa": "Deudores comerciales y otras cuentas por cobrar corrientes"
+    },
+    {
+      "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+      "lado": null,
+      "page": 80,
+      "section": "26. DIFERENCIA DE CAMBIO",
+      "values": [
+        -136927
+      ],
+      "origen": "estado 60",
+      "glosa": "Cuentas por pagar comerciales y otras cuentas por pagar"
+    },
+    {
+      "label": "Club(**)",
+      "lado": "revenue",
+      "page": 78,
+      "section": "Ingresos por venta de jugadores formados por el",
+      "values": [
+        50.782
+      ],
+      "origen": "estado 55",
+      "glosa": "Club(**)"
+    },
+    {
+      "label": "Ingresos por publicidad",
+      "lado": "revenue",
+      "page": 78,
+      "section": "Ingresos por venta de jugadores formados por el",
+      "values": [
+        5639.076
+      ],
+      "origen": "estado 55",
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 78,
+      "section": "Ingresos por venta de jugadores formados por el",
+      "values": [
+        165.492
+      ],
+      "origen": "estado 55",
+      "glosa": "Otros"
+    }
+  ]
+}

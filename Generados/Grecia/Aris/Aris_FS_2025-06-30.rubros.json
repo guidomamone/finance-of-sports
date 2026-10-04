@@ -1,0 +1,432 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_FS_2025-06-30.md",
+ "pdf": "Clubes/Grecia/Aris/Aris_FS_2025-06-30.pdf",
+ "club": "aris",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:02:00.383Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 41,
+  "notasUsadas": []
+ },
+ "ladoConocido": 36,
+ "rubros": [
+  {
+   "label": "Κατάσταση Εισοδήματος (ποσά σε €)",
+   "lado": "revenue",
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "values": [
+    0.03006
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Έσοδα από εισιτήρια",
+   "lado": "revenue",
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "values": [
+    1771.757
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Έσοδα χορηγιών και διαφημίσεων",
+   "lado": "revenue",
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "values": [
+    4839.65
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Έσοδα δικαιωμάτων μεταδοσεων",
+   "lado": "revenue",
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "values": [
+    3449.996
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα",
+   "lado": "revenue",
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "values": [
+    1366.74
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Λοιπά λειτουργικά έσοδα",
+   "lado": "revenue",
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "values": [
+    3083.932
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Κόστος πωλήσεων / υλικών / μη διανεμηθέντα",
+   "lado": "expense",
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "values": [
+    -69.195
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού",
+   "lado": "expense",
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "values": [
+    -283.346
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Απόσβεση λοιπών άυλων στοιχείων του ενεργητικού (εξαιρούνται οι εγγραφές ποδοσφαιριστών)",
+   "lado": "expense",
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "values": [
+    -12
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Λοιπά λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "values": [
+    -6356.694
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "values": [
+    -3459.5
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Χρηματοοικονομικά έξοδα/δαπάνες",
+   "lado": "expense",
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "values": [
+    -194.341
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Υπόλοιπο την 30.06.2022",
+   "lado": null,
+   "page": 26,
+   "section": "ARIS FOOTBALL CLUB / ## 5. ΥΠΟΘΗΚΕΥΜΕΝΑ ΠΕΡΙΟΥΣΙΑΚΑ ΣΤΟΙΧΕΙΑ / ## 6. ΕΠΕΝΔΥΣΕΙΣ / ## 7. ΤΡΑΠΕΖΙΚΑ ΔΑΝΕΙΑ / ## 8. ΕΚΔΟΘΕΝ ΜΕΤΟΧΙΚΟ ΚΕΦΑΛΑΙΟ ΚΑΙ ΑΠΟΘΕΜΑΤΙΚΑ",
+   "values": [
+    348.246
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Εισφορές μετόχων δεσμευμένες για αύξηση Μετοχικού Κεφαλαίου",
+   "lado": null,
+   "page": 26,
+   "section": "ARIS FOOTBALL CLUB / ## 5. ΥΠΟΘΗΚΕΥΜΕΝΑ ΠΕΡΙΟΥΣΙΑΚΑ ΣΤΟΙΧΕΙΑ / ## 6. ΕΠΕΝΔΥΣΕΙΣ / ## 7. ΤΡΑΠΕΖΙΚΑ ΔΑΝΕΙΑ / ## 8. ΕΚΔΟΘΕΝ ΜΕΤΟΧΙΚΟ ΚΕΦΑΛΑΙΟ ΚΑΙ ΑΠΟΘΕΜΑΤΙΚΑ",
+   "values": [
+    1360
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Εισφορές μετόχων δεσμευμένες για αύξηση Μετοχικού Κεφαλαίου",
+   "lado": null,
+   "page": 26,
+   "section": "ARIS FOOTBALL CLUB / ## 5. ΥΠΟΘΗΚΕΥΜΕΝΑ ΠΕΡΙΟΥΣΙΑΚΑ ΣΤΟΙΧΕΙΑ / ## 6. ΕΠΕΝΔΥΣΕΙΣ / ## 7. ΤΡΑΠΕΖΙΚΑ ΔΑΝΕΙΑ / ## 8. ΕΚΔΟΘΕΝ ΜΕΤΟΧΙΚΟ ΚΕΦΑΛΑΙΟ ΚΑΙ ΑΠΟΘΕΜΑΤΙΚΑ",
+   "values": [
+    212.668
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Εισφορές μετόχων δεσμευμένες για αύξηση Μετοχικού Κεφαλαίου",
+   "lado": null,
+   "page": 26,
+   "section": "ARIS FOOTBALL CLUB / ## 5. ΥΠΟΘΗΚΕΥΜΕΝΑ ΠΕΡΙΟΥΣΙΑΚΑ ΣΤΟΙΧΕΙΑ / ## 6. ΕΠΕΝΔΥΣΕΙΣ / ## 7. ΤΡΑΠΕΖΙΚΑ ΔΑΝΕΙΑ / ## 8. ΕΚΔΟΘΕΝ ΜΕΤΟΧΙΚΟ ΚΕΦΑΛΑΙΟ ΚΑΙ ΑΠΟΘΕΜΑΤΙΚΑ",
+   "values": [
+    1398.973
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Ποδοσφαιριστές-ημερομίσθια & μισθοί",
+   "lado": "expense",
+   "page": 28,
+   "section": "Οι αμοιβές προσωπικού και λοιπές παροχές αναλύονται στον κάτωθι πίνακα:",
+   "values": [
+    -7.893951
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Ποδοσφαιριστές-εισφορές κοινωνικής ασφάλισης",
+   "lado": "expense",
+   "page": 28,
+   "section": "Οι αμοιβές προσωπικού και λοιπές παροχές αναλύονται στον κάτωθι πίνακα:",
+   "values": [
+    -0.22381
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Δαπάνες παροχών προς ποδοσφαιριστές",
+   "lado": "expense",
+   "page": 28,
+   "section": "Οι αμοιβές προσωπικού και λοιπές παροχές αναλύονται στον κάτωθι πίνακα:",
+   "values": [
+    -0.044242
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Τεχνικό προσωπικό-ημερομίσθια & μισθοί",
+   "lado": "expense",
+   "page": 28,
+   "section": "Οι αμοιβές προσωπικού και λοιπές παροχές αναλύονται στον κάτωθι πίνακα:",
+   "values": [
+    -0.23224
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Τεχνικό προσωπικό-εισφορές κοινωνικής ασφάλισης",
+   "lado": "expense",
+   "page": 28,
+   "section": "Οι αμοιβές προσωπικού και λοιπές παροχές αναλύονται στον κάτωθι πίνακα:",
+   "values": [
+    -0.03085
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Δαπάνες παροχών προς τεχνικό προσωπικό",
+   "lado": "expense",
+   "page": 28,
+   "section": "Οι αμοιβές προσωπικού και λοιπές παροχές αναλύονται στον κάτωθι πίνακα:",
+   "values": [
+    -0.02779
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Λοιπό προσωπικό-ημερομίσθια & μισθοί",
+   "lado": "expense",
+   "page": 28,
+   "section": "Οι αμοιβές προσωπικού και λοιπές παροχές αναλύονται στον κάτωθι πίνακα:",
+   "values": [
+    -0.07835
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Λοιπό προσωπικό-εισφορές κοινωνικής ασφάλισης",
+   "lado": "expense",
+   "page": 28,
+   "section": "Οι αμοιβές προσωπικού και λοιπές παροχές αναλύονται στον κάτωθι πίνακα:",
+   "values": [
+    -0.01077
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Δαπάνες παροχών προς λοιπό προσωπικό",
+   "lado": "expense",
+   "page": 28,
+   "section": "Οι αμοιβές προσωπικού και λοιπές παροχές αναλύονται στον κάτωθι πίνακα:",
+   "values": [
+    -0.011745
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Αμοιβές Manager",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "values": [
+    -0.628027
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Αθλητρικό υλικό",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "values": [
+    -0.472907
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Δικαστικά έξοδα",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "values": [
+    -0.06473
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Παράβολα συμμετοχής σε διοργανώσεις & επικύρωσης συμβολαίων",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "values": [
+    -0.032976
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Ποσοστά προς απόδοση σε φορείς",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "values": [
+    -0.874194
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Πρόστιμα – Προσαυξήσεις ρυθμίσεων",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "values": [
+    -0.556381
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Ασφάλιστρα ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "values": [
+    -0.034175
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Αμοιβές & παροχές τρίτων",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "values": [
+    -1.152675
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Λοιποί φόροι & τέλη",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "values": [
+    -0.2374
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Έξοδα τέλεσης αγώνων",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / ## 10. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "values": [
+    -0.747961
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Κόστη χορηγιών και διαφημίσεων",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / ## 10. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "values": [
+    -0.149914
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Εμπορικές δαπάνες",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / ## 10. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "values": [
+    -0.164486
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Έξοδα εγκαταστάσεων",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / ## 10. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "values": [
+    -1.240868
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Λοιπά Λειτουργικά Έξοδα",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / ## 10. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "values": [
+    -4.053466
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Διοικητικό και Λοιπό Προσωπικό",
+   "lado": "expense",
+   "page": 28,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / ## 9. ΔΑΠΑΝΕΣ ΠΑΡΟΧΩΝ ΠΡΟΣ ΕΡΓΑΖΟΜΕΝΟΥΣ (ΠΟΔΟΣΦΑΙΡΙΣΤΕΣ & ΛΟΙΠΟΙ ΕΡΓΑΖΟΜΕΝΟΙ)",
+   "values": [
+    0.000033
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Ποδοσφαιριστές",
+   "lado": "expense",
+   "page": 28,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / ## 9. ΔΑΠΑΝΕΣ ΠΑΡΟΧΩΝ ΠΡΟΣ ΕΡΓΑΖΟΜΕΝΟΥΣ (ΠΟΔΟΣΦΑΙΡΙΣΤΕΣ & ΛΟΙΠΟΙ ΕΡΓΑΖΟΜΕΝΟΙ)",
+   "values": [
+    0.000035
+   ],
+   "origen": "estado 11"
+  }
+ ]
+}

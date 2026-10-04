@@ -1,0 +1,143 @@
+{
+  "md": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2017.md",
+  "pdf": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2017.pdf",
+  "club": "fluminense-br",
+  "year": 2017,
+  "numberFormat": "espacio como separador de miles (escandinavo)",
+  "generatedAt": "2026-09-30T21:52:47.190Z",
+  "tieOuts": {
+    "cierran": 3,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 11,
+    "notasUsadas": []
+  },
+  "ladoConocido": 11,
+  "rubros": [
+    {
+      "label": "Receita operacional líquida",
+      "lado": "revenue",
+      "page": 39,
+      "section": "A apresentação do resultado operacional por segmento está indicada a seguir: / 31 de dezembro de 2017 / Futebol Clube Social e / (profissional e Esportes / amador) olímpicos Outros (*) Total",
+      "values": [
+        188.986
+      ],
+      "origen": "estado 32",
+      "glosa": "Ingresos operativos netos"
+    },
+    {
+      "label": "Custos e despesas operacionais",
+      "lado": "expense",
+      "page": 39,
+      "section": "A apresentação do resultado operacional por segmento está indicada a seguir: / 31 de dezembro de 2017 / Futebol Clube Social e / (profissional e Esportes / amador) olímpicos Outros (*) Total",
+      "values": [
+        -210.171
+      ],
+      "origen": "estado 32",
+      "glosa": "Costos y gastos operativos"
+    },
+    {
+      "label": "Receita operacional líquida",
+      "lado": "revenue",
+      "page": 17,
+      "section": "direito econômico do / \"Write-off\" de atleta Diego Souza, / gastos Estorno amortização líquido de / Originalmente Provisão para  capitalizados - de direito econômico amortização / apresentado contingências Flu Samorin superavaliada (Nota 24.4) Reapresentado",
+      "values": [
+        271.896
+      ],
+      "origen": "estado 11",
+      "glosa": "Ingresos operativos netos"
+    },
+    {
+      "label": "Custos e despesas operacionais (237.571) (20.630) (1.167) 2437",
+      "lado": "expense",
+      "page": 17,
+      "section": "direito econômico do / \"Write-off\" de atleta Diego Souza, / gastos Estorno amortização líquido de / Originalmente Provisão para  capitalizados - de direito econômico amortização / apresentado contingências Flu Samorin superavaliada (Nota 24.4) Reapresentado",
+      "values": [
+        -256.102
+      ],
+      "origen": "estado 11",
+      "glosa": "Costos y gastos operativos (237.571) (20.630) (1.167) 2437"
+    },
+    {
+      "label": "Receitas financeiras",
+      "lado": "revenue",
+      "page": 17,
+      "section": "direito econômico do / \"Write-off\" de atleta Diego Souza, / gastos Estorno amortização líquido de / Originalmente Provisão para  capitalizados - de direito econômico amortização / apresentado contingências Flu Samorin superavaliada (Nota 24.4) Reapresentado",
+      "values": [
+        22.766
+      ],
+      "origen": "estado 11",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Despesas financeiras",
+      "lado": "expense",
+      "page": 17,
+      "section": "direito econômico do / \"Write-off\" de atleta Diego Souza, / gastos Estorno amortização líquido de / Originalmente Provisão para  capitalizados - de direito econômico amortização / apresentado contingências Flu Samorin superavaliada (Nota 24.4) Reapresentado",
+      "values": [
+        -48.751
+      ],
+      "origen": "estado 11",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Receitas (despesas) financeiras, líquidas",
+      "lado": "expense",
+      "page": 17,
+      "section": "direito econômico do / \"Write-off\" de atleta Diego Souza, / gastos Estorno amortização líquido de / Originalmente Provisão para  capitalizados - de direito econômico amortização / apresentado contingências Flu Samorin superavaliada (Nota 24.4) Reapresentado",
+      "values": [
+        -25.985
+      ],
+      "origen": "estado 11",
+      "glosa": "Ingresos (gastos) financieros netos"
+    },
+    {
+      "label": "Direitos detransmissão",
+      "lado": "revenue",
+      "page": 36,
+      "section": "17.1.1 Futebol / 31 de 31 de / dezembro de dezembro de / 2017 2016 / Receita bruta com Futebol",
+      "values": [
+        106582
+      ],
+      "origen": "estado 30",
+      "glosa": "Derechos de transmisión"
+    },
+    {
+      "label": "Patrocínio",
+      "lado": "revenue",
+      "page": 36,
+      "section": "17.1.1 Futebol / 31 de 31 de / dezembro de dezembro de / 2017 2016 / Receita bruta com Futebol",
+      "values": [
+        15167
+      ],
+      "origen": "estado 30",
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "Bilheteria de jogos",
+      "lado": "revenue",
+      "page": 36,
+      "section": "17.1.1 Futebol / 31 de 31 de / dezembro de dezembro de / 2017 2016 / Receita bruta com Futebol",
+      "values": [
+        15493
+      ],
+      "origen": "estado 30",
+      "glosa": "Taquilla de partidos"
+    },
+    {
+      "label": "Programa sócio-torcedor",
+      "lado": "revenue",
+      "page": 36,
+      "section": "17.1.1 Futebol / 31 de 31 de / dezembro de dezembro de / 2017 2016 / Receita bruta com Futebol",
+      "values": [
+        4554
+      ],
+      "origen": "estado 30",
+      "glosa": "Programa de socios"
+    }
+  ]
+}

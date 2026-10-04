@@ -1,0 +1,713 @@
+{
+ "md": "Clubes/Bélgica/Gent/jaarrekening-2013-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:39.969Z",
+ "rubrosHuella": "aca5d618c8a15b63a3d7cdc893d49b28b04fe8fc",
+ "rubros": [
+  {
+   "label": "Voorraad goederen in bewerking en gereed product en bestellingen in uitvoering: toename (afname) (+)/(-)",
+   "lado": null,
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Geproduceerde vaste activa",
+   "lado": null,
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen",
+   "lado": null,
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Aankopen",
+   "lado": null,
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Voorraad: afname (toename) (+)/(-)",
+   "lado": null,
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Diensten en diverse goederen",
+   "lado": null,
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": null,
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "player_sales",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "exceptional_items",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "Omzet",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1174
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "depreciation",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "depreciation",
+     0.58
+    ],
+    [
+     "player_amortisation",
+     0.35
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1142
+  },
+  {
+   "label": "Lidgeld, schenkingen, legaten en subsidies",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "member_dues",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "member_dues",
+     0.5700000000000001
+    ],
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "wages_squad",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "wages_squad",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Bedrijfskosten",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.71
+    ],
+    [
+     "match_organisation_expense",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1144
+  },
+  {
+   "label": "Bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "lump_football_operations",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.77
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "player_sales",
+     0.09
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Financiële opbrengsten",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Als herstructureringskosten geactiveerde bedrijfskosten (-)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "exceptional_items",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ]
+   ],
+   "tokens": 1173
+  },
+  {
+   "label": "Opbrengsten uit vlottende activa",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1104
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Terugneming van afschrijvingen en van waardeverminderingen op immateriële en materiële vaste activa",
+   "lado": null,
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "depreciation",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Terugneming van waardeverminderingen op financiële vaste activa",
+   "lado": null,
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Kosten van schulden",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Meerwaarden bij de realisatie van vaste activa",
+   "lado": null,
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Financiële kosten",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 992
+  },
+  {
+   "label": "Opbrengsten uit financiële vaste activa",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1092
+  },
+  {
+   "label": "Andere financiële opbrengsten",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Waardeverminderingen op financiële vaste activa",
+   "lado": null,
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "depreciation",
+   "confidence": 0.35,
+   "desdeCache": true
+  },
+  {
+   "label": "Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "player_impairment",
+     0.01
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1210
+  },
+  {
+   "label": "Minderwaarden bij de realisatie van vaste activa",
+   "lado": null,
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "player_impairment",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere financiële kosten",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Terugneming van voorzieningen voor uitzonderlijke risico's en kosten",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "exceptional_items",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "Uitzonderlijke afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "exceptional_items",
+     0.68
+    ],
+    [
+     "depreciation",
+     0.21
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1150
+  },
+  {
+   "label": "Andere uitzonderlijke opbrengsten",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Voorzieningen voor uitzonderlijke risico's en kosten: toevoegingen (bestellingen) (+)/(-)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "exceptional_items",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1100
+  },
+  {
+   "label": "Uitzonderlijke kosten",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "top3": [
+    [
+     "exceptional_items",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Uitzonderlijke opbrengsten",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Andere uitzonderlijke kosten",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "exceptional_items",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Als herstructureringskosten geactiveerde uitzonderlijke kosten (-)",
+   "lado": "expense",
+   "page": 5,
+   "section": "# RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "exceptional_items",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1146
+  }
+ ]
+}

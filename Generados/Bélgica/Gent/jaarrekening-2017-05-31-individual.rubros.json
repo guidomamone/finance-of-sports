@@ -1,0 +1,209 @@
+{
+  "md": "Clubes/Bélgica/Gent/jaarrekening-2017-05-31-individual.md",
+  "pdf": "Clubes/Bélgica/Gent/jaarrekening-2017-05-31-individual.pdf",
+  "club": "gent-be",
+  "year": 2017,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:55:10.035Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 17,
+    "notasUsadas": []
+  },
+  "ladoConocido": 17,
+  "rubros": [
+    {
+      "label": "Aankoop kledij jeugd",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        319.596
+      ],
+      "origen": "estado 24",
+      "glosa": "Compra de indumentaria deportiva juvenil"
+    },
+    {
+      "label": "Aankoop sportmateriaal jeugd",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        9.365
+      ],
+      "origen": "estado 24",
+      "glosa": "Compra de material deportivo juvenil"
+    },
+    {
+      "label": "Huur terreinen",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        144.261
+      ],
+      "origen": "estado 24",
+      "glosa": "Alquiler de terrenos de juego"
+    },
+    {
+      "label": "Opleidingsvergoeding jeugdspelers amateurclubs",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        60
+      ],
+      "origen": "estado 24",
+      "glosa": "Indemnización por formación de jugadores juveniles a clubes amateurs"
+    },
+    {
+      "label": "Schoolbegeleiding en internaat",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        40.234
+      ],
+      "origen": "estado 24",
+      "glosa": "Apoyo escolar e internado"
+    },
+    {
+      "label": "Stages jeugd",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        68.489
+      ],
+      "origen": "estado 24",
+      "glosa": "Concentraciones y campus de fútbol base"
+    },
+    {
+      "label": "Scheidsrechterskosten jeugd",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        6.61
+      ],
+      "origen": "estado 24",
+      "glosa": "Gastos de arbitraje fútbol base"
+    },
+    {
+      "label": "Opleidingsvergoeding Pro league",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        557.5
+      ],
+      "origen": "estado 24",
+      "glosa": "Indemnización por formación Pro League"
+    },
+    {
+      "label": "Transport jeugd",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        96.207
+      ],
+      "origen": "estado 24",
+      "glosa": "Transporte fútbol juvenil"
+    },
+    {
+      "label": "Ter beschikkingstelling oefencomplex bezetting jeugd 70%<br>206.318 x 70%",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        144.423
+      ],
+      "origen": "estado 24",
+      "glosa": "Cesión del complejo de entrenamiento, ocupación juvenil 70%<br>206.318 x 70%"
+    },
+    {
+      "label": "Dranken en voeding jeugd",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        28.244
+      ],
+      "origen": "estado 24",
+      "glosa": "Alimentación y bebidas fútbol juvenil"
+    },
+    {
+      "label": "Omkadering jeugd – coordinator -begeleider – medisch",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        59.624
+      ],
+      "origen": "estado 24",
+      "glosa": "Personal técnico y de apoyo juvenil – coordinador - tutor - servicios médicos"
+    },
+    {
+      "label": "Afschrijvingen Warmoezenierswegbezetting jeugd 70%<br>289.440 x 70%=",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        202.608
+      ],
+      "origen": "estado 24",
+      "glosa": "Amortizaciones Warmoezeniersweg, ocupación juvenil 70%<br>289.440 x 70%="
+    },
+    {
+      "label": "In aanmerking te nemen totaal voor 50% sociaal oogmerk",
+      "lado": "expense",
+      "page": 36,
+      "section": "Aandeel bestedingen KAA Gent aan jeugdvoetbal: 1.079.296€",
+      "values": [
+        2158.592
+      ],
+      "origen": "estado 24",
+      "glosa": "Total computable para el 50% de finalidad social"
+    },
+    {
+      "label": "toe te rekenen kosten",
+      "lado": "expense",
+      "page": 20,
+      "section": "Nr. BE 0407.885.394 VOL 6.9 / SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN SOCIALE LASTEN / OVERLOPENDE REKENINGEN",
+      "values": [
+        521.038
+      ],
+      "origen": "estado 16",
+      "glosa": "Costes imputables"
+    },
+    {
+      "label": "publiciteit diverse",
+      "lado": "expense",
+      "page": 20,
+      "section": "Nr. BE 0407.885.394 VOL 6.9 / SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN SOCIALE LASTEN / OVERLOPENDE REKENINGEN",
+      "values": [
+        500
+      ],
+      "origen": "estado 16",
+      "glosa": "Publicidad diversa"
+    },
+    {
+      "label": "lidgelden jeugd",
+      "lado": "expense",
+      "page": 20,
+      "section": "Nr. BE 0407.885.394 VOL 6.9 / SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN SOCIALE LASTEN / OVERLOPENDE REKENINGEN",
+      "values": [
+        2.435
+      ],
+      "origen": "estado 16",
+      "glosa": "Cuotas de afiliación juvenil"
+    }
+  ]
+}

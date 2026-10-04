@@ -1,0 +1,661 @@
+{
+ "md": "Clubes/España/Real Betis/cuentas-anuales-individual-2019-2020.md",
+ "generatedAt": "2026-09-30T22:49:11.284Z",
+ "rubrosHuella": "aeb6a7d3153c01b8fd65739de93afe1ea17ef953",
+ "rubros": [
+  {
+   "label": "Arrendamientos y canones",
+   "lado": null,
+   "page": 55,
+   "section": "siendo el detalle a 30 de junio de 2020 y 2019, el siguiente: / 30 de junio de 2020 / 30 de junio de 2019 / 14.4 Servicios Exteriores / El detalle de los servicios exteriores a 30 de junio de 2020 y 2019 es el siguiente:",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Reparaciones y conservación",
+   "lado": null,
+   "page": 55,
+   "section": "siendo el detalle a 30 de junio de 2020 y 2019, el siguiente: / 30 de junio de 2020 / 30 de junio de 2019 / 14.4 Servicios Exteriores / El detalle de los servicios exteriores a 30 de junio de 2020 y 2019 es el siguiente:",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios de profesionales independientes",
+   "lado": null,
+   "page": 55,
+   "section": "siendo el detalle a 30 de junio de 2020 y 2019, el siguiente: / 30 de junio de 2020 / 30 de junio de 2019 / 14.4 Servicios Exteriores / El detalle de los servicios exteriores a 30 de junio de 2020 y 2019 es el siguiente:",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Primas de seguro",
+   "lado": null,
+   "page": 55,
+   "section": "siendo el detalle a 30 de junio de 2020 y 2019, el siguiente: / 30 de junio de 2020 / 30 de junio de 2019 / 14.4 Servicios Exteriores / El detalle de los servicios exteriores a 30 de junio de 2020 y 2019 es el siguiente:",
+   "choice": "wages_squad",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios bancarios y similares",
+   "lado": null,
+   "page": 55,
+   "section": "siendo el detalle a 30 de junio de 2020 y 2019, el siguiente: / 30 de junio de 2020 / 30 de junio de 2019 / 14.4 Servicios Exteriores / El detalle de los servicios exteriores a 30 de junio de 2020 y 2019 es el siguiente:",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad, propaganda y relaciones públicas",
+   "lado": null,
+   "page": 55,
+   "section": "siendo el detalle a 30 de junio de 2020 y 2019, el siguiente: / 30 de junio de 2020 / 30 de junio de 2019 / 14.4 Servicios Exteriores / El detalle de los servicios exteriores a 30 de junio de 2020 y 2019 es el siguiente:",
+   "choice": "admin_general_expense",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Suministros",
+   "lado": null,
+   "page": 55,
+   "section": "siendo el detalle a 30 de junio de 2020 y 2019, el siguiente: / 30 de junio de 2020 / 30 de junio de 2019 / 14.4 Servicios Exteriores / El detalle de los servicios exteriores a 30 de junio de 2020 y 2019 es el siguiente:",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros servicios",
+   "lado": null,
+   "page": 55,
+   "section": "siendo el detalle a 30 de junio de 2020 y 2019, el siguiente: / 30 de junio de 2020 / 30 de junio de 2019 / 14.4 Servicios Exteriores / El detalle de los servicios exteriores a 30 de junio de 2020 y 2019 es el siguiente:",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por competiciones nacionales",
+   "lado": "revenue",
+   "page": 54,
+   "section": "14.    INGRESOS Y GASTOS",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por competiciones europeas -",
+   "lado": "revenue",
+   "page": 54,
+   "section": "14.    INGRESOS Y GASTOS",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por abonados y socios",
+   "lado": "revenue",
+   "page": 54,
+   "section": "14.    INGRESOS Y GASTOS",
+   "choice": "season_tickets",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por retransmisión",
+   "lado": "revenue",
+   "page": 54,
+   "section": "14.    INGRESOS Y GASTOS",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos de comercialización y publicidad",
+   "lado": "revenue",
+   "page": 54,
+   "section": "14.    INGRESOS Y GASTOS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Aprovisionamiento entradas autoconsumo",
+   "lado": null,
+   "page": 54,
+   "section": "84.388.680,93    106.597.584,87 / España, salvo las obtenidas por competiciones europeas. / 14.2      Aprovisionamientos / composición:",
+   "choice": "match_organisation_expense",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Compra material deportivo",
+   "lado": null,
+   "page": 54,
+   "section": "84.388.680,93    106.597.584,87 / España, salvo las obtenidas por competiciones europeas. / 14.2      Aprovisionamientos / composición:",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Compra material sanitario",
+   "lado": null,
+   "page": 54,
+   "section": "84.388.680,93    106.597.584,87 / España, salvo las obtenidas por competiciones europeas. / 14.2      Aprovisionamientos / composición:",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros consumos y gastos externos",
+   "lado": "expense",
+   "page": 54,
+   "section": "84.388.680,93    106.597.584,87 / España, salvo las obtenidas por competiciones europeas. / 14.2      Aprovisionamientos / composición:",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Trabajos realizados por otras empresas",
+   "lado": null,
+   "page": 54,
+   "section": "84.388.680,93    106.597.584,87 / España, salvo las obtenidas por competiciones europeas. / 14.2      Aprovisionamientos / composición:",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Reserva Legal 2.089.805,78 - -",
+   "lado": null,
+   "page": 38,
+   "section": "(Euros) / 10.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución / Ejercicio 30/06/2020",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Reserva de capitalización - 53.847,99 -",
+   "lado": null,
+   "page": 38,
+   "section": "(Euros) / 10.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución / Ejercicio 30/06/2020",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Reservas voluntarias 10.996.194,83 -",
+   "lado": null,
+   "page": 38,
+   "section": "(Euros) / 10.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución / Ejercicio 30/06/2020",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisión para responsabilidades",
+   "lado": null,
+   "page": 39,
+   "section": "Ejercicio 30/06/2019",
+   "choice": "admin_general_expense",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Obligaciones por prestaciones a largo plazo al personal",
+   "lado": null,
+   "page": 39,
+   "section": "Ejercicio 30/06/2019",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Sueldos y Salarios",
+   "lado": null,
+   "page": 54,
+   "section": "3.309.297,28      5.091.528,05 / 14.3      Gastos de personal / El detalle de los gastos de personal a 30 de junio de 2020 y 2019 es el siguiente:",
+   "choice": "wages_squad",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Indemnizaciones",
+   "lado": null,
+   "page": 54,
+   "section": "3.309.297,28      5.091.528,05 / 14.3      Gastos de personal / El detalle de los gastos de personal a 30 de junio de 2020 y 2019 es el siguiente:",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Cargas sociales",
+   "lado": null,
+   "page": 54,
+   "section": "3.309.297,28      5.091.528,05 / 14.3      Gastos de personal / El detalle de los gastos de personal a 30 de junio de 2020 y 2019 es el siguiente:",
+   "choice": "wages_squad",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Construcciones 24.461.678,18 2.805.565,23 (1.698,55) -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Estadios y pabellones deportivos 32.945.065,19 85.869,83 (5.309,95) -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.26,
+   "desdeCache": true
+  },
+  {
+   "label": "Maquinaria 199.107,16 72.126,84 - -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Mobiliario 1.032.567,14 290.755,35 - -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipos para procesos de información 459.613,98 206.482,30 (5.174,06) -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Turismos y furgonetas/Elementos de transporte 59.979,49 - - -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Inmovilizado en curso 196.250,46 22.164,98 - -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Material deportivo -",
+   "lado": "expense",
+   "page": 36,
+   "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Prima fichaje jugadores del primer equipo",
+   "lado": "expense",
+   "page": 36,
+   "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+   "choice": "player_amortisation",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos asociados a la TV -",
+   "lado": "expense",
+   "page": 36,
+   "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses préstamo",
+   "lado": "expense",
+   "page": 36,
+   "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos diversos",
+   "lado": "expense",
+   "page": 36,
+   "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Estadios y Pabellones deportivos",
+   "lado": "expense",
+   "page": 30,
+   "section": "junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / Coste",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Instalaciones técnicas y maquinaria",
+   "lado": "expense",
+   "page": 30,
+   "section": "junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / Coste",
+   "choice": "depreciation",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Otras instalaciones y material deportivo",
+   "lado": "expense",
+   "page": 30,
+   "section": "junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / Coste",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Otro inmovilizado material",
+   "lado": "expense",
+   "page": 30,
+   "section": "junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / Coste",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Radio Real Betis Balompie, S.L.U.",
+   "lado": "expense",
+   "page": 33,
+   "section": "3.011,00            3.011,00 / El detalle de las distintas partidas que componen este epígrafe son los siguientes: / %            Coste de adquisición / Empresa del grupo, asociada o vinculada",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.06999999999999999
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 898
+  },
+  {
+   "label": "Centenario Real Betis Balompié S.L.",
+   "lado": "expense",
+   "page": 33,
+   "section": "3.011,00            3.011,00 / El detalle de las distintas partidas que componen este epígrafe son los siguientes: / %            Coste de adquisición / Empresa del grupo, asociada o vinculada",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "player_amortisation",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 849
+  },
+  {
+   "label": "Provisión por litigios 40.505,03 -",
+   "lado": null,
+   "page": 39,
+   "section": "Ejercicio 30/06/2019",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "exceptional_items",
+     0.24
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1465
+  },
+  {
+   "label": "Patrimonial Real Betis, S.L.U.",
+   "lado": "expense",
+   "page": 33,
+   "section": "3.011,00            3.011,00 / El detalle de las distintas partidas que componen este epígrafe son los siguientes: / %            Coste de adquisición / Empresa del grupo, asociada o vinculada",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "exceptional_items",
+     0.16
+    ]
+   ],
+   "tokens": 1091
+  },
+  {
+   "label": "Instalaciones técnicas 5.615.595,47 - - -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "depreciation",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ]
+   ],
+   "tokens": 880
+  },
+  {
+   "label": "Real Betis Baloncesto, S.A.D.",
+   "lado": "expense",
+   "page": 33,
+   "section": "3.011,00            3.011,00 / El detalle de las distintas partidas que componen este epígrafe son los siguientes: / %            Coste de adquisición / Empresa del grupo, asociada o vinculada",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "player_amortisation",
+     0.22
+    ]
+   ],
+   "tokens": 917
+  },
+  {
+   "label": "Otras instalaciones 1.198.799,87 78.658,74 - -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "depreciation",
+     0.07
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Otro inmovilizado material 182.594,23 58.648,33 - -",
+   "lado": "expense",
+   "page": 29,
+   "section": "Ejercicio 30/06/2019 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "depreciation",
+     0.78
+    ],
+    [
+     "other_amortisation",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1091
+  },
+  {
+   "label": "Estadio Olimpico de Sevilla S.A.",
+   "lado": "expense",
+   "page": 35,
+   "section": "Coste de adquisición / Otras inversiones financieras",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Caja Almendralejo",
+   "lado": "expense",
+   "page": 35,
+   "section": "Coste de adquisición / Otras inversiones financieras",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "youth_other_sports_expense",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "G-12 1ºDivisión A.I.E",
+   "lado": "expense",
+   "page": 35,
+   "section": "Coste de adquisición / Otras inversiones financieras",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "player_amortisation",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Fundación Real Betis Balompié",
+   "lado": "expense",
+   "page": 35,
+   "section": "Coste de adquisición / Otras inversiones financieras",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 799
+  }
+ ]
+}

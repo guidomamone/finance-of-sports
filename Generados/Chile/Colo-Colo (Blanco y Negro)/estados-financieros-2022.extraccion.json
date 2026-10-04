@@ -1,0 +1,463 @@
+{
+ "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2022.pdf",
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2022.md",
+ "cierre": "2022-12-31",
+ "paginas": [
+  7,
+  8,
+  73,
+  74,
+  75,
+  76,
+  77
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:48:11.407Z",
+ "escala": "miles",
+ "filas": [
+  {
+   "pagina": 7,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "importe_impreso": "28.846.935",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Costo de ventas",
+   "importe_impreso": "(21.301.702)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Ganancia (pérdida) bruta",
+   "importe_impreso": "7.545.233",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Otros ingresos, por función",
+   "importe_impreso": "108.593",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Gasto de administración",
+   "importe_impreso": "(5.541.609)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Otros gastos, por función",
+   "importe_impreso": "(404.559)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Ingresos financieros",
+   "importe_impreso": "80.129",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Costos financieros",
+   "importe_impreso": "(1.408.430)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Diferencias de tipo de cambio",
+   "importe_impreso": "(1.211.160)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Ganancia (pérdida), antes de impuestos",
+   "importe_impreso": "(831.803)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Gasto (Ingreso) por Impuesto a las Ganancias",
+   "importe_impreso": "1.623.264",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Ganancia (Pérdida) de Actividades Continuadas después de Impuesto",
+   "importe_impreso": "791.461",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Ganancia (pérdida)",
+   "importe_impreso": "791.461",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Ganancia (pérdida), atribuible a los propietarios de la controladora",
+   "importe_impreso": "539.692",
+   "tipo": "renglon",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Ganancia (pérdida), atribuible a participaciones no controladoras",
+   "importe_impreso": "251.769",
+   "tipo": "renglon",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Ganancia (Pérdida)",
+   "importe_impreso": "791.461",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 73,
+   "etiqueta": "Ingresos por recaudaciones",
+   "importe_impreso": "5.032.509",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "pagina": 73,
+   "etiqueta": "Ingresos por venta de jugadores comprado a terceros",
+   "importe_impreso": "4.830.583",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "pagina": 73,
+   "etiqueta": "Ingresos por venta de jugadores formados por el Club",
+   "importe_impreso": "694.804",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "pagina": 73,
+   "etiqueta": "Ingresos por publicidad",
+   "importe_impreso": "8.641.046",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "pagina": 73,
+   "etiqueta": "Ingresos por derechos de televisión",
+   "importe_impreso": "8.812.894",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "pagina": 73,
+   "etiqueta": "Otros",
+   "importe_impreso": "835.099",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "pagina": 73,
+   "etiqueta": "Totales",
+   "importe_impreso": "28.846.935",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "pagina": 75,
+   "etiqueta": "Dividendos",
+   "importe_impreso": "99.545",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos, por función"
+  },
+  {
+   "pagina": 75,
+   "etiqueta": "Otros ingresos",
+   "importe_impreso": "9.048",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos, por función"
+  },
+  {
+   "pagina": 75,
+   "etiqueta": "Total",
+   "importe_impreso": "108.593",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Otros ingresos, por función"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Costo de ventas jugadores",
+   "importe_impreso": "2.614.370",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Remuneración plantel profesional y cuerpo técnico",
+   "importe_impreso": "11.057.918",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Amortización Activos en concesión",
+   "importe_impreso": "228.204",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Amortización pases jugadores profesionales",
+   "importe_impreso": "2.537.550",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Costos de concentración traslados y otros",
+   "importe_impreso": "4.167.757",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Otros costos",
+   "importe_impreso": "695.903",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Costo de ventas",
+   "importe_impreso": "21.301.702",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Servicios básicos",
+   "importe_impreso": "200.893",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Asesorías",
+   "importe_impreso": "550.526",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Depreciaciones",
+   "importe_impreso": "543.459",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Gastos Legales",
+   "importe_impreso": "399.975",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Mantenciones",
+   "importe_impreso": "49.131",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Remuneración administración",
+   "importe_impreso": "2.430.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Otros gastos de administración",
+   "importe_impreso": "1.367.625",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Gastos de administración",
+   "importe_impreso": "5.541.609",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Gasto de administración"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Otros gastos",
+   "importe_impreso": "27.731",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos, por función"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Intereses y Multas",
+   "importe_impreso": "376.828",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos, por función"
+  },
+  {
+   "pagina": 76,
+   "etiqueta": "Otros gastos, por función",
+   "importe_impreso": "404.559",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Otros gastos, por función"
+  },
+  {
+   "pagina": 77,
+   "etiqueta": "Larraín Vial",
+   "importe_impreso": "74.158",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Ingresos financieros"
+  },
+  {
+   "pagina": 77,
+   "etiqueta": "Scotiabank",
+   "importe_impreso": "5.971",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Ingresos financieros"
+  },
+  {
+   "pagina": 77,
+   "etiqueta": "Totales",
+   "importe_impreso": "80.129",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Ingresos financieros"
+  },
+  {
+   "pagina": 77,
+   "etiqueta": "Otros",
+   "importe_impreso": "193.436",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Costos financieros"
+  },
+  {
+   "pagina": 77,
+   "etiqueta": "Tesorería general de la república",
+   "importe_impreso": "1.214.994",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Costos financieros"
+  },
+  {
+   "pagina": 77,
+   "etiqueta": "Totales",
+   "importe_impreso": "1.408.430",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Costos financieros"
+  },
+  {
+   "pagina": 77,
+   "etiqueta": "Otros activos financieros",
+   "importe_impreso": "(182.433)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Diferencias de tipo de cambio"
+  },
+  {
+   "pagina": 77,
+   "etiqueta": "Deudores comerciales y otras cuentas por cobrar",
+   "importe_impreso": "29.563",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Diferencias de tipo de cambio"
+  },
+  {
+   "pagina": 77,
+   "etiqueta": "Cuentas por pagar comerciales y otras cuentas por pagar",
+   "importe_impreso": "(13.851)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Diferencias de tipo de cambio"
+  },
+  {
+   "pagina": 77,
+   "etiqueta": "Otros pasivos no financieros",
+   "importe_impreso": "(1.044.439)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Diferencias de tipo de cambio"
+  },
+  {
+   "pagina": 77,
+   "etiqueta": "Totales",
+   "importe_impreso": "(1.211.160)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Diferencias de tipo de cambio"
+  }
+ ],
+ "total_ingresos_impreso": null,
+ "total_gastos_impreso": null,
+ "resultado_impreso": "791.461",
+ "observaciones": "El estado no imprime un total de ingresos ni de gastos consolidado; el total de la nota 23 (28.846.935) corresponde solo a ingresos de actividades ordinarias. El impuesto (1.623.264) es positivo (ingreso por impuesto). Se omitieron cuadros alternativos que no desglosan renglones del estado de forma aditiva (oportunidad de reconocimiento pág. 74, venta de jugadores pág. 75 que duplica la nota 23, cobros futuros de arrendamiento), las ganancias por acción y el estado de resultados integral de pág. 8 que repite el resultado (791.461). Ganancia de operaciones discontinuadas con guion, omitida."
+}

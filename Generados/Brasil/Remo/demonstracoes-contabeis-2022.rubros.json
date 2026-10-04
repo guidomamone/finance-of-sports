@@ -1,0 +1,435 @@
+{
+ "md": "Clubes/Brasil/Remo/demonstracoes-contabeis-2022.md",
+ "pdf": "Clubes/Brasil/Remo/demonstracoes-contabeis-2022.pdf",
+ "club": "remo",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:53:53.044Z",
+ "tieOuts": {
+  "cierran": 11,
+  "noCierran": 11
+ },
+ "warnings": [
+  "1 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "10 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 41,
+  "notasUsadas": []
+ },
+ "ladoConocido": 34,
+ "rubros": [
+  {
+   "label": "Receita Bruta Operacional",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    20328.785
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receita de Alugueis",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    798.804
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receita de Estacionamento",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    156.767
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receita de Bilheteria",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    5721.51
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receita Royalties / Lojas",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    1620.263
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receita Patrimoniais/Sociais",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    1413.955
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receita da Atividade Social",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    991.544
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receita Programa Timemania",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    535.692
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receita Programa Socio Torcedor",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    1552.399
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receita de Patrocínio / Marketing",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    5311.429
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receitas Royalties / Licenciados",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    177.819
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receita com Vendas Materiais",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    118.65
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Demais Receitas",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    906.122
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receitas Repasse de Direitos Federativos",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    687.391
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receita de Premiações",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    322.245
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receitas Financeiras",
+   "lado": "revenue",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    14.197
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Despesas Administrativas",
+   "lado": "expense",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    16926.409
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Despesas Administrativas",
+   "lado": "expense",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    436.843
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Comissões",
+   "lado": null,
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    30.512
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Materiais",
+   "lado": null,
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    69.278
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Manutenção",
+   "lado": null,
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    1229.071
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Despesas com eventos esportivos",
+   "lado": "expense",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    6.95
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Custo com Contratação",
+   "lado": "expense",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    122
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Serviço de Terceiros",
+   "lado": null,
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    2700.725
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Materiais esportivos e premiações",
+   "lado": null,
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    103.753
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Amortização dos Débitos Trabalhistas",
+   "lado": null,
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    53.896
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Despesas com tributos",
+   "lado": "expense",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    18.628
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Despesas com depreciação e amortização",
+   "lado": "expense",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    8196.83
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Amortizações - Direitos Econômicos",
+   "lado": null,
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    1482.3
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Despesa com Contingências",
+   "lado": "expense",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    1631.109
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Outras Despesas",
+   "lado": "expense",
+   "page": 5,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício",
+   "values": [
+    844.514
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Despesas com Pessoal",
+   "lado": "expense",
+   "page": 6,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+   "values": [
+    6.436387
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Direito de imagem",
+   "lado": "expense",
+   "page": 6,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+   "values": [
+    2.686106
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Despesas com Jogos e Competições",
+   "lado": "expense",
+   "page": 6,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+   "values": [
+    2.624685
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Despesas Programa Socio Torcedor",
+   "lado": "expense",
+   "page": 6,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+   "values": [
+    0.54908
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Despesas com Passagens e Hospedagens",
+   "lado": "expense",
+   "page": 6,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+   "values": [
+    0.460396
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 6,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+   "values": [
+    0.40641
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Serviço de Terceiros",
+   "lado": "expense",
+   "page": 22,
+   "section": "## 12. Despesas Operacionais",
+   "values": [
+    2.706775
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Despesas com Pessoal",
+   "lado": "expense",
+   "page": 22,
+   "section": "## 12. Despesas Operacionais",
+   "values": [
+    6.739255
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Jogos e Competições",
+   "lado": "expense",
+   "page": 22,
+   "section": "## 12. Despesas Operacionais",
+   "values": [
+    2.630685
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Manutenção",
+   "lado": "expense",
+   "page": 22,
+   "section": "## 12. Despesas Operacionais",
+   "values": [
+    1.229071
+   ],
+   "origen": "estado 18"
+  }
+ ]
+}

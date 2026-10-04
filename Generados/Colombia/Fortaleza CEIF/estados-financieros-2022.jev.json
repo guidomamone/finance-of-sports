@@ -1,0 +1,1387 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.md",
+ "generatedAt": "2026-10-02T20:55:33.320Z",
+ "rubrosHuella": "bb2f2b9b233c3a3c38e9f5fbd9d180623faf3056",
+ "rubros": [
+  {
+   "label": "Auxilio hotelero (*)",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "competition_bonus",
+     0.07
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Auxilio de arbitraje (*)",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "competition_bonus",
+     0.05
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Convenio entre clubes",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "player_sales",
+     0.08
+    ],
+    [
+     "sponsorship_commercial",
+     0.07
+    ]
+   ],
+   "tokens": 1178
+  },
+  {
+   "label": "Derechos de televisión nacional",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Auxilio de transporte (*)",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Federación Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "competition_bonus",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Derechos deportivos (2)",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\"",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "broadcasting",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Otros auxilios",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "broadcasting",
+     0.02
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Diferencia en el documento",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "sponsorship_commercial",
+     0.09
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1195
+  },
+  {
+   "label": "Auxilio protocolos bioseguridad (*)",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Venta de Indumentaria",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Comercio al por mayor y menor (3)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Infraestructura",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "stadium_other",
+     0.02
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 978
+  },
+  {
+   "label": "Transportes",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\"",
+   "choice": "broadcasting",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "broadcasting",
+     0.93
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 902
+  },
+  {
+   "label": "Propaganda y publicidad",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Patrocinios (1)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Venta de boletería en taquilla",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"El siguiente es un detalle de los ingresos de actividades ordinarias por los años terminados\" > desglose de \"Comercio al por mayor y menor (3)\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1108
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "stadium_other",
+     0.02
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Alquiler Deportivo (1)",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\"",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "stadium_other",
+     0.14
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Indemnizaciones",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1142
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\"",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Reintegro De Otros Costos Y Gastos (3)",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Los otros ingresos están conformados al 31 de diciembre de:\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1106
+  },
+  {
+   "label": "Ajuste Al Peso",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "exceptional_items",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 885
+  },
+  {
+   "label": "El costo detallado a continuación corresponde a la comercialización de artículos",
+   "lado": "expense",
+   "page": 26,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1085
+  },
+  {
+   "label": "Gastos Laborales",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "wages_squad",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "wages_squad",
+     0.62
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1176
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 988
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "wages_squad",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Legales",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1105
+  },
+  {
+   "label": "Afiliaciones y sostenimientos",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1075
+  },
+  {
+   "label": "Muebles y enseres",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimiento y adecuaciones\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "depreciation",
+     0.02
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Maquinaria y Equipo",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimientos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Terrenos",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimiento y adecuaciones\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "depreciation",
+     0.19
+    ]
+   ],
+   "tokens": 964
+  },
+  {
+   "label": "Flota y equipo de transporte",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimiento y adecuaciones\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.61
+    ],
+    [
+     "depreciation",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Equipo de Computación Y Comunicación",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimientos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Construcciones y edificaciones",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimiento y adecuaciones\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "depreciation",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 920
+  },
+  {
+   "label": "De viaje",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "Taxis y buses",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 931
+  },
+  {
+   "label": "Casinos y restaurantes",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\"",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.35
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 820
+  },
+  {
+   "label": "Combustible",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 871
+  },
+  {
+   "label": "Parqueadero",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "match_organisation_expense",
+     0.07
+    ]
+   ],
+   "tokens": 819
+  },
+  {
+   "label": "Elementos de aseo y cafetería (Hidratación)",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Estampillas",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 819
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Papelería",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos de ventas del CLUB al 31 de diciembre de:\" > desglose de \"Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "other_amortisation",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_amortisation",
+     0.87
+    ],
+    [
+     "depreciation",
+     0.07
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Contribuciones y afiliaciones",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Equipo De Oficina",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Mantenimientos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Tramites y licencias",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Legales\"",
+   "choice": "other_amortisation",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_amortisation",
+     0.5700000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 941
+  },
+  {
+   "label": "Elementos de Aseo y Cafetería",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Registro Mercantil",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Legales\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 902
+  },
+  {
+   "label": "Útiles Papelería y Fotocopias",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Combustibles y Lubricantes",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1084
+  },
+  {
+   "label": "Parqueaderos",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 915
+  },
+  {
+   "label": "Deterioro de cartera",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1165
+  },
+  {
+   "label": "Casino Y Restaurante",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"El siguiente es un detalle de los gastos administrativos del CLUB al 31 de diciembre de:\" > desglose de \"Gastos Diversos\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.54
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 984
+  },
+  {
+   "label": "Multas sanciones y litigios (2)",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Gastos no Deducibles (1)",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Impuestos Asumidos",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Intereses de mora",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Los otros gastos están conformados al 31 de diciembre de:\"",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "wages_squad",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 909
+  }
+ ]
+}

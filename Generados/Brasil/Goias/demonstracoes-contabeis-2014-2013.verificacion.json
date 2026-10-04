@@ -1,0 +1,388 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2014-2013.pdf",
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2014-2013.md",
+ "generado": "2026-10-03T23:03:05.625Z",
+ "estado": "ok",
+ "clubId": "goias-br",
+ "year": 2014,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2014-2013.pdf",
+   "campo": "anio",
+   "valor": "2014",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2014-2013' es el ejercicio 2014 con 2013 de comparativo, no 2013.",
+   "evidencia": "fecha de cierre 2014-12-31 leída del contenido (periodo.mjs)",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2014-2013.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Despesa com pessoal",
+   "motivo": "Guido 2026-10-02 (propuesta de Claude): la fila abre '(-) Despesas com futebol profissional e amador' (nota de costos del fútbol): son sueldos del plantel. El precedente del club (2023-2024) es la misma etiqueta en la nota de gastos administrativos.",
+   "evidencia": "demonstracoes-contabeis-2014-2013.md L950-973",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2014-2013.pdf",
+   "campo": "cero-real",
+   "valor": "Otras secciones deportivas",
+   "linea": null,
+   "motivo": "CORRIGE el motivo anterior (Claude 2026-10-02): Goiás SÍ tenía esportes olímpicos ese año (cuentas a cobrar / notas), pero el estado de resultados no los separa: van dentro de Receita líquida. El 0 es 'no desglosado por la fuente', no un 0 real; el ajuste solo evita un reintento que no puede encontrar el dato.",
+   "evidencia": "2014.md L507 / 2015.md L429 'Esportes olímpicos' en contas a receber; 2017.md L485",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "62.602773 = 62.602773"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "41.416673 = 41.416673"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2013 de este documento suma ingresos 51.074726; el sitio tiene 51.074726"
+  },
+  {
+   "nombre": "documento del año 2015",
+   "ok": true,
+   "detalle": "ingresos de 2014: 62.602773 en este documento y 62.602773 en demonstracoes-contabeis-2015-2014.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2013",
+   "ok": true,
+   "detalle": "ingresos de 2013: 51.074726 en demonstracoes-contabeis-2013-2012.pdf y 51.074726 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: Las columnas por segmento solo reparten renglones que ya están abiertos en las notas 16 y 17 (b50, b51); los totales coinciden con el estado.",
+  "duda de extraer confirmada por las sumas (cuadro-duplicado, \"(-) CUSTOS E DESPESAS (nota 17)\"): ¿Se deja afuera de la carga el cuadro de la nota 17 'CUSTOS E DESPESAS' (L949-L957), por ser un desglose alternativo que se superpone con los renglones L201-L206 del estado y con las notas 18 y 19?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 62.602773,
+  "gastos": 41.416673,
+  "financiero": -6.077784,
+  "impuesto": 0,
+  "resultadoImpreso": 15.108316,
+  "resultadoParaCargar": 15.108316,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Bilheterias",
+   "lado": "ingreso",
+   "M": 6.160725,
+   "pagina": 19,
+   "linea": 932,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA (nota 16)\""
+  },
+  {
+   "etiqueta": "Direitos de transmissão de TV",
+   "lado": "ingreso",
+   "M": 33.158015,
+   "pagina": 19,
+   "linea": 933,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA (nota 16)\""
+  },
+  {
+   "etiqueta": "Premiação/participações",
+   "lado": "ingreso",
+   "M": 1.02,
+   "pagina": 19,
+   "linea": 934,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA (nota 16)\""
+  },
+  {
+   "etiqueta": "Transação de atletas",
+   "lado": "ingreso",
+   "M": 6.701974,
+   "pagina": 19,
+   "linea": 935,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA (nota 16)\""
+  },
+  {
+   "etiqueta": "Patrocínio/ publicidade/propaganda",
+   "lado": "ingreso",
+   "M": 2.902819,
+   "pagina": 19,
+   "linea": 936,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA (nota 16)\""
+  },
+  {
+   "etiqueta": "Mensalidades",
+   "lado": "ingreso",
+   "M": 3.492262,
+   "pagina": 19,
+   "linea": 937,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA (nota 16)\""
+  },
+  {
+   "etiqueta": "Jogos lotéricos",
+   "lado": "ingreso",
+   "M": 3.151044,
+   "pagina": 19,
+   "linea": 938,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA (nota 16)\""
+  },
+  {
+   "etiqueta": "Receitas patrimoniais",
+   "lado": "ingreso",
+   "M": 0.105828,
+   "pagina": 19,
+   "linea": 939,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA (nota 16)\""
+  },
+  {
+   "etiqueta": "Outras receitas",
+   "lado": "ingreso",
+   "M": 10.02605,
+   "pagina": 19,
+   "linea": 940,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA (nota 16)\""
+  },
+  {
+   "etiqueta": "(-) Deduções da receita",
+   "lado": "ingreso",
+   "M": -4.115943,
+   "pagina": 19,
+   "linea": 941,
+   "origen": "nota que desglosa \"RECEITA LÍQUIDA (nota 16)\""
+  },
+  {
+   "etiqueta": "Alugueis de estádios",
+   "lado": "gasto",
+   "M": 0.298538,
+   "pagina": 19,
+   "linea": 964,
+   "origen": "nota que desglosa \"(-) Despesas com futebol profissional e amador (nota 18)\""
+  },
+  {
+   "etiqueta": "Arbitragens",
+   "lado": "gasto",
+   "M": 0.322062,
+   "pagina": 19,
+   "linea": 965,
+   "origen": "nota que desglosa \"(-) Despesas com futebol profissional e amador (nota 18)\""
+  },
+  {
+   "etiqueta": "Exames antidoping",
+   "lado": "gasto",
+   "M": 0.095376,
+   "pagina": 19,
+   "linea": 966,
+   "origen": "nota que desglosa \"(-) Despesas com futebol profissional e amador (nota 18)\""
+  },
+  {
+   "etiqueta": "Custos e despesas c/ pessoal - Jogos",
+   "lado": "gasto",
+   "M": 0.141368,
+   "pagina": 19,
+   "linea": 967,
+   "origen": "nota que desglosa \"(-) Despesas com futebol profissional e amador (nota 18)\""
+  },
+  {
+   "etiqueta": "Outros custos e despesas - Jogos",
+   "lado": "gasto",
+   "M": 1.474926,
+   "pagina": 19,
+   "linea": 968,
+   "origen": "nota que desglosa \"(-) Despesas com futebol profissional e amador (nota 18)\""
+  },
+  {
+   "etiqueta": "Taxas confederações e federações",
+   "lado": "gasto",
+   "M": 0.648642,
+   "pagina": 19,
+   "linea": 969,
+   "origen": "nota que desglosa \"(-) Despesas com futebol profissional e amador (nota 18)\""
+  },
+  {
+   "etiqueta": "Transportes",
+   "lado": "gasto",
+   "M": 0.482229,
+   "pagina": 19,
+   "linea": 970,
+   "origen": "nota que desglosa \"(-) Despesas com futebol profissional e amador (nota 18)\""
+  },
+  {
+   "etiqueta": "Alimentação e estadias",
+   "lado": "gasto",
+   "M": 0.359502,
+   "pagina": 19,
+   "linea": 971,
+   "origen": "nota que desglosa \"(-) Despesas com futebol profissional e amador (nota 18)\""
+  },
+  {
+   "etiqueta": "Cessão de direitos de atletas",
+   "lado": "gasto",
+   "M": 0.748,
+   "pagina": 19,
+   "linea": 972,
+   "origen": "nota que desglosa \"(-) Despesas com futebol profissional e amador (nota 18)\""
+  },
+  {
+   "etiqueta": "Despesa com pessoal",
+   "lado": "gasto",
+   "M": 21.628163,
+   "pagina": 19,
+   "linea": 973,
+   "origen": "nota que desglosa \"(-) Despesas com futebol profissional e amador (nota 18)\""
+  },
+  {
+   "etiqueta": "(-) Despesas administrativas",
+   "lado": "gasto",
+   "M": 0.439175,
+   "pagina": 6,
+   "linea": 202,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Materiais",
+   "lado": "gasto",
+   "M": 0.5826,
+   "pagina": 6,
+   "linea": 203,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Serviços de terceiros",
+   "lado": "gasto",
+   "M": 1.920709,
+   "pagina": 6,
+   "linea": 204,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "(-) Despesas tributárias",
+   "lado": "gasto",
+   "M": 0.744977,
+   "pagina": 6,
+   "linea": 205,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Água, telefone, energia e internet",
+   "lado": "gasto",
+   "M": 0.524457,
+   "pagina": 20,
+   "linea": 992,
+   "origen": "nota que desglosa \"(-) Despesas gerais (nota 19)\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 0.171916,
+   "pagina": 20,
+   "linea": 993,
+   "origen": "nota que desglosa \"(-) Despesas gerais (nota 19)\""
+  },
+  {
+   "etiqueta": "Lanches e refeições",
+   "lado": "gasto",
+   "M": 0.262487,
+   "pagina": 20,
+   "linea": 994,
+   "origen": "nota que desglosa \"(-) Despesas gerais (nota 19)\""
+  },
+  {
+   "etiqueta": "Livros, revistas e periódicos",
+   "lado": "gasto",
+   "M": 0.011388,
+   "pagina": 20,
+   "linea": 995,
+   "origen": "nota que desglosa \"(-) Despesas gerais (nota 19)\""
+  },
+  {
+   "etiqueta": "Correios",
+   "lado": "gasto",
+   "M": 0.014419,
+   "pagina": 20,
+   "linea": 996,
+   "origen": "nota que desglosa \"(-) Despesas gerais (nota 19)\""
+  },
+  {
+   "etiqueta": "Transportes",
+   "lado": "gasto",
+   "M": 0.00349,
+   "pagina": 20,
+   "linea": 997,
+   "origen": "nota que desglosa \"(-) Despesas gerais (nota 19)\""
+  },
+  {
+   "etiqueta": "Despesas gerais",
+   "lado": "gasto",
+   "M": 0.002955,
+   "pagina": 20,
+   "linea": 998,
+   "origen": "nota que desglosa \"(-) Despesas gerais (nota 19)\""
+  },
+  {
+   "etiqueta": "Outras despesas administrativas",
+   "lado": "gasto",
+   "M": 0.361363,
+   "pagina": 20,
+   "linea": 999,
+   "origen": "nota que desglosa \"(-) Despesas gerais (nota 19)\""
+  },
+  {
+   "etiqueta": "Depreciação e amortização",
+   "lado": "gasto",
+   "M": 6.116818,
+   "pagina": 20,
+   "linea": 1000,
+   "origen": "nota que desglosa \"(-) Despesas gerais (nota 19)\""
+  },
+  {
+   "etiqueta": "Provisões para contingências",
+   "lado": "gasto",
+   "M": 4.061112,
+   "pagina": 20,
+   "linea": 1001,
+   "origen": "nota que desglosa \"(-) Despesas gerais (nota 19)\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "(+) Receitas financeiras",
+   "M": 0.08474,
+   "linea": 208
+  },
+  {
+   "etiqueta": "(-) Despesas financeiras",
+   "M": -6.162524,
+   "linea": 209
+  }
+ ],
+ "impuesto": []
+}

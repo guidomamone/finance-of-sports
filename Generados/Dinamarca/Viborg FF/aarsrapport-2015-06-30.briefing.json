@@ -1,0 +1,900 @@
+{
+  "club": "viborg-dk",
+  "year": 2015,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Dinamarca/Viborg FF/aarsrapport-2015-06-30.md",
+  "generatedAt": "2026-09-30T22:00:12.345Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 136,
+    "space": 2
+  },
+  "scannedWarning": false,
+  "tableCount": 15,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 12,
+      "section": "DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Nettoomsætning",
+          "values": [
+            "33.231.609",
+            "42.682.523"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omkostninger til råvarer og hjælpematerialer",
+          "values": [
+            "-11.762.896",
+            "-13.927.477"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre eksterne omkostninger",
+          "values": [
+            "-1.643.188",
+            "-1.721.855"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bruttofortjeneste",
+          "values": [
+            "19.825.525",
+            "27.033.191"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Personaleomkostninger",
+          "values": [
+            "-16.991.843",
+            "-22.097.723"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat før af- og nedskrivninger",
+          "values": [
+            "2.833.682",
+            "4.935.468"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "Af- og nedskrivninger af materielle og immaterielle",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "anlægsaktiver",
+          "values": [
+            "-812.729",
+            "-752.394"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat af primær drift",
+          "values": [
+            "2.020.953",
+            "4.183.074"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "Andre finansielle indtægter 10.174 386",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Andre finansielle omkostninger",
+          "values": [
+            "-29.453",
+            "-127.447"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat før skat",
+          "values": [
+            "2.001.674",
+            "4.056.013"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 12,
+      "section": "Skat af årets resultat 0 0 / Årets resultat 2.001.674 4.056.013 / Forslag til resultatdisponering",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overført resultat",
+          "values": [
+            "2.001.674",
+            "4.056.013"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I alt",
+          "values": [
+            "2.001.674",
+            "4.056.013"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "AKTIVER / DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Erhvervede rettigheder",
+          "values": [
+            "1.749.861",
+            "2.380.209"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immaterielle anlægsaktiver i alt",
+          "values": [
+            "1.749.861",
+            "2.380.209"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Grunde og bygninger",
+          "values": [
+            "1.695.692",
+            "1.706.424"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre anlæg, driftsmateriel og inventar",
+          "values": [
+            "3.864.183",
+            "3.758.198"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materielle anlægsaktiver i alt",
+          "values": [
+            "5.559.875",
+            "5.464.622"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre værdipapirer og kapitalandele",
+          "values": [
+            "42.818"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre tilgodehavender",
+          "values": [
+            "39.600",
+            "53.700"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansielle anlægsaktiver i alt",
+          "values": [
+            "40.546",
+            "96.518"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anlægsaktiver i alt",
+          "values": [
+            "7.350.282",
+            "7.941.349"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fremstillede færdigvarer og handelsvarer",
+          "values": [
+            "266.613",
+            "171.261"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varebeholdninger i alt",
+          "values": [
+            "266.613",
+            "171.261"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgodehavender fra salg og tjenesteydelser",
+          "values": [
+            "3.555.738",
+            "2.699.220"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Udskudt skatteaktiv",
+          "values": [
+            "4.494.000",
+            "4.494.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre tilgodehavender",
+          "values": [
+            "130.495",
+            "205.379"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodeafgrænsningsposter",
+          "values": [
+            "104.217",
+            "164.477"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgodehavender i alt",
+          "values": [
+            "8.284.450",
+            "7.563.076"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Likvide beholdninger",
+          "values": [
+            "3.833.116",
+            "2.390.733"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omsætningsaktiver i alt",
+          "values": [
+            "12.384.179",
+            "10.125.070"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aktiver i alt",
+          "values": [
+            "19.734.461",
+            "18.066.419"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "PASSIVER / DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Selskabskapital",
+          "values": [
+            "35.394.000",
+            "35.394.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overført resultat",
+          "values": [
+            "-23.899.570",
+            "-25.909.644"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egenkapital i alt",
+          "values": [
+            "11.494.430",
+            "9.484.356"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gæld til realkreditinstitutter",
+          "values": [
+            "1.140.000",
+            "1.140.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Langfristede gældsforpligtelser i alt",
+          "values": [
+            "1.140.000",
+            "1.140.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gæld til kreditinstitutter",
+          "values": [
+            "38.196",
+            "15.431"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leverandører af varer og tjenesteydelser",
+          "values": [
+            "1.712.410",
+            "1.394.947"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anden gæld",
+          "values": [
+            "4.587.027",
+            "5.401.449"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodeafgrænsningsposter",
+          "values": [
+            "762.398",
+            "630.236"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortfristede gældsforpligtelser i alt",
+          "values": [
+            "7.100.031",
+            "7.442.063"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gældsforpligtelser i alt",
+          "values": [
+            "8.240.031",
+            "8.582.063"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passiver i alt",
+          "values": [
+            "19.734.461",
+            "18.066.419"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Lønninger",
+          "values": [
+            "14.788.869",
+            "19.092.545"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensioner",
+          "values": [
+            "1.130.082",
+            "1.098.858"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre omkostninger til social sikring",
+          "values": [
+            "119.429",
+            "124.777"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Personaleomkostninger i øvrigt",
+          "values": [
+            "953.463",
+            "1.781.543"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ialt",
+          "values": [
+            "16.991.843",
+            "22.097.723"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Viborg F.F. Prof. Fodbold A/S / Noter / 3. Immaterielle anlægsaktiver / Erhvervede ret- / Beløb i DKK tigheder",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kostpris pr.",
+          "values": [
+            "30.06.14",
+            "11.094.106"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang i året",
+          "values": [
+            "1.801.944"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afgang i året",
+          "values": [
+            "-9.032.930"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kostpris pr.",
+          "values": [
+            "30.06.15",
+            "3.863.120"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Af- og nedskrivninger pr.",
+          "values": [
+            "30.06.14",
+            "8.714.162"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afskrivninger i året",
+          "values": [
+            "2.192.760"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilbageførsel af af- og nedskrivninger vedr. årets afgang",
+          "values": [
+            "-8.793.663"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Af- og nedskrivninger pr.",
+          "values": [
+            "30.06.15",
+            "2.113.259"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Regnskabsmæssig værdi pr.",
+          "values": [
+            "30.06.15",
+            "1.749.861"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "4. Materielle anlægsaktiver / Andre anlæg, / Grunde og driftsmateriel / Beløb i DKK bygninger og inventar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kostpris pr.",
+          "values": [
+            "30.06.14",
+            "1.717.156",
+            "7.529.050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang i året",
+          "values": [
+            "907.981"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afgang i året",
+          "values": [
+            "-186.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kostpris pr.",
+          "values": [
+            "30.06.15",
+            "1.717.156",
+            "8.250.378"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Af- og nedskrivninger pr.",
+          "values": [
+            "30.06.14",
+            "10.732",
+            "3.770.853"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afskrivninger i året",
+          "values": [
+            "10.732",
+            "801.995"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets af- og nedskrivninger på afhændede aktiver",
+          "values": [
+            "-186.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Af- og nedskrivninger pr.",
+          "values": [
+            "30.06.15",
+            "21.464",
+            "4.386.195"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Regnskabsmæssig værdi pr.",
+          "values": [
+            "30.06.15",
+            "1.695.692",
+            "3.864.183"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "Noter / 5. Finansielle anlægsaktiver / Andre værdipa- / Andre tilgode- pirer og kapital- / Beløb i DKK havender andele",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kostpris pr.",
+          "values": [
+            "30.06.14",
+            "53.700",
+            "44.167"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afgang i året",
+          "values": [
+            "-14.100",
+            "-41.667"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kostpris pr.",
+          "values": [
+            "30.06.15",
+            "39.600",
+            "2.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opskrivninger pr. 30.06.14",
+          "values": [
+            "-1.349"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "Opskrivninger pr. 30.06.15 0 -1.554 / Regnskabsmæssig værdi pr. 30.06.15 39.600 946 / 6. Egenkapital / Selskabs- Overført / Beløb i DKK kapital resultat",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Egenkapitalopgørelse 01.07.13 -",
+          "values": [
+            "30.06.14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo pr.",
+          "values": [
+            "01.07.13",
+            "35.394.000",
+            "-29.982.457"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salg af egne kapitalandele",
+          "values": [
+            "16.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forslag til resultatdisponering",
+          "values": [
+            "4.056.013"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo pr.",
+          "values": [
+            "30.06.14",
+            "35.394.000",
+            "-25.909.644"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egenkapitalopgørelse 01.07.14 -",
+          "values": [
+            "30.06.15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo pr.",
+          "values": [
+            "01.07.14",
+            "35.394.000",
+            "-25.909.644"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salg af egne kapitalandele",
+          "values": [
+            "8.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forslag til resultatdisponering",
+          "values": [
+            "2.001.674"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo pr.",
+          "values": [
+            "30.06.15",
+            "35.394.000",
+            "-23.899.570"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "DKK DKK DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo, primo",
+          "values": [
+            "35.394.000",
+            "35.394.000",
+            "35.394.000",
+            "34.200.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitalforhøjelse 0 0",
+          "values": [
+            "1.194.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo, ultimo",
+          "values": [
+            "35.394.000",
+            "35.394.000",
+            "35.394.000",
+            "35.394.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "Antal værdi / Aktier 35.394 1.000 / Egne kapitalandele består af: / Pålydende Procent af / Antal værdi kapital",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Beholdning af egne kapitalandele pr. 01.07.14",
+          "values": [
+            "591.000",
+            "1,66%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets afgang",
+          "values": [
+            "-8.000",
+            "-0,02%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Beholdning af egne kapitalandele pr. 30.06.15",
+          "values": [
+            "583.000",
+            "1,64%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "ere. / 7. Gældsforpligtelser / Afdrag Restgæld Gæld i alt Gæld i alt",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Beløb i DKK første år efter 5 år",
+          "values": [
+            "30.06.15",
+            "30.06.14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gæld til realkreditinstitutter",
+          "values": [
+            "1.140.000",
+            "1.140.000",
+            "1.140.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "lalt",
+          "values": [
+            "1.140.000",
+            "1.140.000",
+            "1.140.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Næste år",
+          "values": [
+            "1.739.000",
+            "1.393.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2-bår",
+          "values": [
+            "2.406.000",
+            "3.042.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "Andre finansielle omkostninger",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andre finansielle omkostninger",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultat før skat",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultat før skat",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "dk",
+    "query": "Viborg FF",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

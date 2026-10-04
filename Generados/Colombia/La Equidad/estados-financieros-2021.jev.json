@@ -1,0 +1,1915 @@
+{
+ "md": "Clubes/Colombia/La Equidad/estados-financieros-2021.md",
+ "generatedAt": "2026-09-30T04:28:04.005Z",
+ "rubros": [
+  {
+   "label": "Balones",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 7. Inventarios",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "lump_football_operations",
+     0.15
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 885
+  },
+  {
+   "label": "Zapato Deportivo",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 7. Inventarios",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "sponsorship_commercial",
+     0.32
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 936
+  },
+  {
+   "label": "Prendas Para Equipo Profesional",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 7. Inventarios",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "lump_football_operations",
+     0.35
+    ],
+    [
+     "sponsorship_commercial",
+     0.06
+    ]
+   ],
+   "tokens": 1085
+  },
+  {
+   "label": "Walmer Pacheco",
+   "lado": "expense",
+   "page": 21,
+   "section": "# Nombre Jugador Costo Derecho deportivo",
+   "choice": "player_amortisation",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "player_amortisation",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "wages_squad",
+     0.13
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "Prendas Para La Venta Kimo, Saeta, Puma, Otros",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 7. Inventarios",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.53
+    ],
+    [
+     "sponsorship_commercial",
+     0.42
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1148
+  },
+  {
+   "label": "Prensas Profesores",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 7. Inventarios",
+   "choice": "other_income",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_income",
+     0.6900000000000001
+    ],
+    [
+     "education",
+     0.15
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ]
+   ],
+   "tokens": 889
+  },
+  {
+   "label": "Camisetas Para La Venta",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 7. Inventarios",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.67
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Prendas Escuelas Attle",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 7. Inventarios",
+   "choice": "youth_football",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "youth_football",
+     0.66
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "sponsorship_commercial",
+     0.13
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Taquilla - Venta de Boletería",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1140
+  },
+  {
+   "label": "Escuelas de Futbol",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "youth_football",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "youth_football",
+     0.96
+    ],
+    [
+     "education",
+     0.04
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1087
+  },
+  {
+   "label": "Resultado Del Ejercicio",
+   "lado": null,
+   "page": 27,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 20. Resultado del ejercicio",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1517
+  },
+  {
+   "label": "Publicidad y Propaganda",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1105
+  },
+  {
+   "label": "Federacion Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "competition_bonus",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "competition_bonus",
+     0.94
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1118
+  },
+  {
+   "label": "Patrocinio",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Venta y Prestamo de Derechos",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Venta Tienda Virtual",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Dimayor",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "broadcasting",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "broadcasting",
+     0.99
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "Cuota de Sostenimiento",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Venta de Articulos Deportivos",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1108
+  },
+  {
+   "label": "Eventos",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "stadium_other",
+     0.11
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1075
+  },
+  {
+   "label": "Actividades Conexas",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Participación CopaSuramericana",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "Devoluciones en Ventas",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1101
+  },
+  {
+   "label": "Reintegro de Otros Costos y Gastos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1150
+  },
+  {
+   "label": "Costo de Venta Articulos Deportivos",
+   "lado": null,
+   "page": 28,
+   "section": "# Nota 24. Costo de Ventas",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.47
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1519
+  },
+  {
+   "label": "Ingresos Fuerzas Basicas",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 23. Ingresos actividades ordinarias",
+   "choice": "youth_football",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "youth_football",
+     0.95
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Construcciones y Edificaciones",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "stadium_other",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 891
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Ingresos de Ejercicios Anteriores",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Recobro Incapacidades",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 890
+  },
+  {
+   "label": "Subvenciones del Estado",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1121
+  },
+  {
+   "label": "Donaciones Derechos Deportivos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "player_sales",
+     0.49
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Ajuste al Peso",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Rendimientos Financieros",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# Nota 25. Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 833
+  },
+  {
+   "label": "Donacion",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 25. Otros ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 950
+  },
+  {
+   "label": "Intereses Escuelas",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# Nota 25. Ingresos Financieros",
+   "choice": "youth_football",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "youth_football",
+     0.66
+    ],
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "education",
+     0.03
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Diferencia en Cambio",
+   "lado": "expense",
+   "page": 38,
+   "section": "# Nota 28. Otros gastos y gastos financieros / # Otros Gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 995
+  },
+  {
+   "label": "Incumplimiento Contrato Compra",
+   "lado": "revenue",
+   "page": 29,
+   "section": "# Nota 25. Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "player_sales",
+     0.45
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 936
+  },
+  {
+   "label": "Salario Integral",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Viaticos",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "match_organisation_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "wages_squad",
+     0.11
+    ]
+   ],
+   "tokens": 1094
+  },
+  {
+   "label": "Sueldos",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Auxilio de Transporte",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "match_organisation_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.92
+    ],
+    [
+     "wages_squad",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Intereses Sobre Cesantias",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "wages_squad",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1127
+  },
+  {
+   "label": "Prima de Servicios",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "match_organisation_expense",
+     0.25
+    ],
+    [
+     "wages_squad",
+     0.1
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Vacaciones",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.82
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 944
+  },
+  {
+   "label": "Bonificaciones",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 934
+  },
+  {
+   "label": "Auxilio de Rodamiento",
+   "lado": "expense",
+   "page": 30,
+   "section": "31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 26. Gastos de administración / # 26.1 Gastos operacionales de administración / # Gastos Operacionales de Administración",
+   "choice": "match_organisation_expense",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 911
+  },
+  {
+   "label": "Cesantias",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "wages_squad",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "wages_squad",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 861
+  },
+  {
+   "label": "Dotacion y Suministro",
+   "lado": "expense",
+   "page": 30,
+   "section": "31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 26. Gastos de administración / # 26.1 Gastos operacionales de administración / # Gastos Operacionales de Administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 850
+  },
+  {
+   "label": "Capacitacion al Personal",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "wages_squad",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Indemnizaciones Laborales",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Aportes Salud EPS",
+   "lado": "expense",
+   "page": 30,
+   "section": "31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 26. Gastos de administración / # 26.1 Gastos operacionales de administración / # Gastos Operacionales de Administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "match_organisation_expense",
+     0.05
+    ]
+   ],
+   "tokens": 908
+  },
+  {
+   "label": "Aportes administradoras ARL",
+   "lado": "expense",
+   "page": 30,
+   "section": "31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 26. Gastos de administración / # 26.1 Gastos operacionales de administración / # Gastos Operacionales de Administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 973
+  },
+  {
+   "label": "Aportes I.C.B.F.",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "match_organisation_expense",
+     0.29
+    ],
+    [
+     "youth_other_sports_expense",
+     0.16
+    ]
+   ],
+   "tokens": 924
+  },
+  {
+   "label": "sena",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "wages_squad",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "wages_squad",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "education_expense",
+     0.08
+    ]
+   ],
+   "tokens": 860
+  },
+  {
+   "label": "Aportes Cajas de Compensacion",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "match_organisation_expense",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 926
+  },
+  {
+   "label": "Aportes Fondos de Pensiones",
+   "lado": "expense",
+   "page": 30,
+   "section": "31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 26. Gastos de administración / # 26.1 Gastos operacionales de administración / # Gastos Operacionales de Administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "wages_squad",
+     0.03
+    ]
+   ],
+   "tokens": 912
+  },
+  {
+   "label": "Gastos Medicos",
+   "lado": "expense",
+   "page": 30,
+   "section": "31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # Nota 26. Gastos de administración / # 26.1 Gastos operacionales de administración / # Gastos Operacionales de Administración",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Registro Mercantil",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## 26.7 Legales",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 918
+  },
+  {
+   "label": "Tramites y Licencias",
+   "lado": "expense",
+   "page": 36,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # 27.7 Gastos legales",
+   "choice": "admin_general_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "other_amortisation",
+     0.15
+    ]
+   ],
+   "tokens": 933
+  },
+  {
+   "label": "Alojamiento y Manutencion",
+   "lado": "expense",
+   "page": 37,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # 27.10 Gastos de viaje",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 920
+  },
+  {
+   "label": "Pasajes Terrestres",
+   "lado": "expense",
+   "page": 37,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # 27.10 Gastos de viaje",
+   "choice": "match_organisation_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 859
+  },
+  {
+   "label": "Aportes Administradora de Riesgos ARL",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "wages_squad",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 990
+  },
+  {
+   "label": "Dotación al Personal",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "wages_squad",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "wages_squad",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Aportes Salud E.P.S.",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "wages_squad",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 924
+  },
+  {
+   "label": "Auxilios",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "wages_squad",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 860
+  },
+  {
+   "label": "Pasajes Aereos",
+   "lado": "expense",
+   "page": 37,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # 27.10 Gastos de viaje",
+   "choice": "match_organisation_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 859
+  },
+  {
+   "label": "Fondo de Pensiones y Censantias",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "wages_squad",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "wages_squad",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.41
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 868
+  },
+  {
+   "label": "Gastos Legales Otros",
+   "lado": "expense",
+   "page": 36,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # 27.7 Gastos legales",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Gastos Bancarios",
+   "lado": "expense",
+   "page": 38,
+   "section": "# Nota 28. Otros gastos y gastos financieros / # Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Notariales",
+   "lado": "expense",
+   "page": 36,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # 27.7 Gastos legales",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 855
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 38,
+   "section": "# Nota 28. Otros gastos y gastos financieros / # Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 978
+  },
+  {
+   "label": "Gastos Medicos Examenes y Medicamentos",
+   "lado": "expense",
+   "page": 34,
+   "section": "Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / ## Nota 27. Gastos Deportivos / ### 27.1 Gastos deportivos de nómina",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ],
+    [
+     "wages_squad",
+     0.03
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Manutencion Profesional e Inferiores",
+   "lado": "expense",
+   "page": 37,
+   "section": "# Club Deportivo la Equidad Seguros S.A. / Notas a los Estados Financieros – 31 de diciembre de 2021 y / 31 de diciembre de 2020 / (Cifras expresadas en miles de pesos colombianos) / # 27.10 Gastos de viaje",
+   "choice": "other_expenses",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "wages_squad",
+     0.22
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1078
+  },
+  {
+   "label": "Comisiones",
+   "lado": "expense",
+   "page": 38,
+   "section": "# Nota 28. Otros gastos y gastos financieros / # Otros Gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Intereses",
+   "lado": "expense",
+   "page": 38,
+   "section": "# Nota 28. Otros gastos y gastos financieros / # Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 857
+  },
+  {
+   "label": "Multas, Sanciones y Litigios",
+   "lado": "expense",
+   "page": 38,
+   "section": "# Nota 28. Otros gastos y gastos financieros / # Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Costos y Gastos de Ejercicios",
+   "lado": "expense",
+   "page": 38,
+   "section": "# Nota 28. Otros gastos y gastos financieros / # Otros Gastos",
+   "choice": "exceptional_items",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "exceptional_items",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Impuestos Asumidos",
+   "lado": "expense",
+   "page": 38,
+   "section": "# Nota 28. Otros gastos y gastos financieros / # Otros Gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.52
+    ],
+    [
+     "exceptional_items",
+     0.47
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Otro Resultado Integral",
+   "lado": null,
+   "page": 39,
+   "section": "# Nota 30. Otro resultado Integral",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "exceptional_items",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1479
+  },
+  {
+   "label": "La Equidad Seguros De Vida O.C.",
+   "lado": "revenue",
+   "page": 39,
+   "section": "Por ventas y Servicios a:",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.94
+    ],
+    [
+     "sponsorship_commercial",
+     0.06
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 927
+  },
+  {
+   "label": "La Equidad Seguros O.C.",
+   "lado": "revenue",
+   "page": 39,
+   "section": "Por ventas y Servicios a:",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 925
+  },
+  {
+   "label": "Donaciones",
+   "lado": "expense",
+   "page": 38,
+   "section": "# Nota 28. Otros gastos y gastos financieros / # Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 926
+  }
+ ]
+}

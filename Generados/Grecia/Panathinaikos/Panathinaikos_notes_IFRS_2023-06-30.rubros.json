@@ -1,0 +1,511 @@
+{
+  "md": "Clubes/Grecia/Panathinaikos/Panathinaikos_notes_IFRS_2023-06-30.md",
+  "pdf": "Clubes/Grecia/Panathinaikos/Panathinaikos_notes_IFRS_2023-06-30.pdf",
+  "club": "panathinaikos-gr",
+  "year": 2023,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:03:23.206Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 40,
+    "notasUsadas": [
+      "68",
+      "69",
+      "25"
+    ]
+  },
+  "ladoConocido": 42,
+  "rubros": [
+    {
+      "label": "Έσοδα από εισιτήρια",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        3.931829
+      ],
+      "origen": "estado 13",
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Χορηγίες και διαφημίσεις",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        7.108268
+      ],
+      "origen": "estado 13",
+      "glosa": "Patrocinios y publicidad"
+    },
+    {
+      "label": "Δικαιώματα αναμετάδοσης",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        4.896769
+      ],
+      "origen": "estado 13",
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Εμπορικά",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        3.540344
+      ],
+      "origen": "estado 13",
+      "glosa": "Ingresos comerciales"
+    },
+    {
+      "label": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        1.12905
+      ],
+      "origen": "estado 13",
+      "glosa": "Solidaridad de la UEFA y premios"
+    },
+    {
+      "label": "Λοιπά λειτουργικά έσοδα",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        0.92959
+      ],
+      "origen": "estado 13",
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Κόστος πωλήσεων / υλικών",
+      "lado": "expense",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -1.338421
+      ],
+      "origen": "estado 13",
+      "glosa": "Coste de ventas / materiales"
+    },
+    {
+      "label": "Αμοιβές και μισθοί εργαζομένων",
+      "lado": "revenue",
+      "page": 67,
+      "section": "# 21. ΑΜΟΙΒΕΣ ΕΡΓΑΖΟΜΕΝΩΝ ΚΑΙ ΛΟΙΠΕΣ ΠΑΡΟΧΕΣ / # Ποσά σε € ' / Σύνολο αμοιβών εργαζομένων και λοιπών παροχών",
+      "values": [
+        -3.772702
+      ],
+      "origen": "nota 68 (ancla 13)",
+      "ancla": "Αμοιβές εργαζομένων και λοιπές παροχές",
+      "glosa": "Sueldos y salarios del personal"
+    },
+    {
+      "label": "Αμοιβές εργαζομένων και λοιπές παροχές",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -26.301473
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Remuneraciones a empleados y otras prestaciones"
+    },
+    {
+      "label": "Συμβόλαια ποδοσφαιριστών / προπονητών",
+      "lado": "revenue",
+      "page": 67,
+      "section": "# 21. ΑΜΟΙΒΕΣ ΕΡΓΑΖΟΜΕΝΩΝ ΚΑΙ ΛΟΙΠΕΣ ΠΑΡΟΧΕΣ / # Ποσά σε € ' / Σύνολο αμοιβών εργαζομένων και λοιπών παροχών",
+      "values": [
+        -18.687815
+      ],
+      "origen": "nota 68 (ancla 13)",
+      "ancla": "Αμοιβές εργαζομένων και λοιπές παροχές",
+      "glosa": "Contratos de futbolistas / entrenadores"
+    },
+    {
+      "label": "Αποζημιώσεις",
+      "lado": "revenue",
+      "page": 67,
+      "section": "# 21. ΑΜΟΙΒΕΣ ΕΡΓΑΖΟΜΕΝΩΝ ΚΑΙ ΛΟΙΠΕΣ ΠΑΡΟΧΕΣ / # Ποσά σε € ' / Σύνολο αμοιβών εργαζομένων και λοιπών παροχών",
+      "values": [
+        -0.148155
+      ],
+      "origen": "nota 68 (ancla 13)",
+      "ancla": "Αμοιβές εργαζομένων και λοιπές παροχές",
+      "glosa": "Indemnizaciones"
+    },
+    {
+      "label": "Πριμ ποδοσφαιριστών / προπονητών",
+      "lado": "revenue",
+      "page": 67,
+      "section": "# 21. ΑΜΟΙΒΕΣ ΕΡΓΑΖΟΜΕΝΩΝ ΚΑΙ ΛΟΙΠΕΣ ΠΑΡΟΧΕΣ / # Ποσά σε € ' / Σύνολο αμοιβών εργαζομένων και λοιπών παροχών",
+      "values": [
+        -1.89534
+      ],
+      "origen": "nota 68 (ancla 13)",
+      "ancla": "Αμοιβές εργαζομένων και λοιπές παροχές",
+      "glosa": "Primas a futbolistas / entrenadores"
+    },
+    {
+      "label": "Λοιπές Παροχές",
+      "lado": "revenue",
+      "page": 67,
+      "section": "# 21. ΑΜΟΙΒΕΣ ΕΡΓΑΖΟΜΕΝΩΝ ΚΑΙ ΛΟΙΠΕΣ ΠΑΡΟΧΕΣ / # Ποσά σε € ' / Σύνολο αμοιβών εργαζομένων και λοιπών παροχών",
+      "values": [
+        -1.206948
+      ],
+      "origen": "nota 68 (ancla 13)",
+      "ancla": "Αμοιβές εργαζομένων και λοιπές παροχές",
+      "glosa": "Otras prestaciones sociales"
+    },
+    {
+      "label": "Ασφάλιστρα και ιατροφαρμακευτική δαπάνη",
+      "lado": "revenue",
+      "page": 67,
+      "section": "# 21. ΑΜΟΙΒΕΣ ΕΡΓΑΖΟΜΕΝΩΝ ΚΑΙ ΛΟΙΠΕΣ ΠΑΡΟΧΕΣ / # Ποσά σε € ' / Σύνολο αμοιβών εργαζομένων και λοιπών παροχών",
+      "values": [
+        -0.590513
+      ],
+      "origen": "nota 68 (ancla 13)",
+      "ancla": "Αμοιβές εργαζομένων και λοιπές παροχές",
+      "glosa": "Primas de seguros y gastos médicos"
+    },
+    {
+      "label": "Απομείωση και απαξίωση ενσώματων πάγιων στοιχείων του ενεργητικού",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -0.860065
+      ],
+      "origen": "estado 13",
+      "glosa": "Amortización y deterioro del inmovilizado material"
+    },
+    {
+      "label": "Απομείωση και απαξίωση άλλων άυλων στοιχείων του ενεργητικού",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -0.650582
+      ],
+      "origen": "estado 13",
+      "glosa": "Amortización y deterioro de otros activos intangibles"
+    },
+    {
+      "label": "Έξοδα αγώνων",
+      "lado": "expense",
+      "page": 68,
+      "section": "## 22. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -1.571382
+      ],
+      "origen": "nota 69 (ancla 13)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Λοιπά λειτουργικά έξοδα",
+      "lado": "expense",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -9.834196
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Έξοδα χορηγιών και διαφημίσεων",
+      "lado": "expense",
+      "page": 68,
+      "section": "## 22. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.305184
+      ],
+      "origen": "nota 69 (ancla 13)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Gastos de patrocinios y publicidad"
+    },
+    {
+      "label": "Έξοδα εμπορικών δραστηριοτήτων",
+      "lado": "expense",
+      "page": 68,
+      "section": "## 22. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.989966
+      ],
+      "origen": "nota 69 (ancla 13)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Gastos de actividades comerciales"
+    },
+    {
+      "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+      "lado": "expense",
+      "page": 68,
+      "section": "## 22. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.467112
+      ],
+      "origen": "nota 69 (ancla 13)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Gastos de inmuebles e instalaciones"
+    },
+    {
+      "label": "Αμοιβές τρίτων",
+      "lado": "expense",
+      "page": 68,
+      "section": "## 22. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.449866
+      ],
+      "origen": "nota 69 (ancla 13)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Honorarios y servicios de terceros"
+    },
+    {
+      "label": "Επισκευές και συντηρήσεις",
+      "lado": "expense",
+      "page": 68,
+      "section": "## 22. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.771659
+      ],
+      "origen": "nota 69 (ancla 13)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Reparaciones y conservación"
+    },
+    {
+      "label": "Δαπάνες υπηρεσιών κοινής ωφέλειας",
+      "lado": "expense",
+      "page": 68,
+      "section": "## 22. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.589324
+      ],
+      "origen": "nota 69 (ancla 13)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Gastos de suministros"
+    },
+    {
+      "label": "Έξοδα ταξιδίων και μεταφορών",
+      "lado": "expense",
+      "page": 68,
+      "section": "## 22. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.209938
+      ],
+      "origen": "nota 69 (ancla 13)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Gastos de viajes y desplazamientos"
+    },
+    {
+      "label": "Κόστος κτήσης την 30/06/2022",
+      "lado": "expense",
+      "page": 52,
+      "section": "## 2. ΑΣΩΜΑΤΕΣ ΑΚΙΝΗΤΟΠΟΙΗΣΕΙΣ",
+      "values": [
+        4.893172
+      ],
+      "origen": "nota 25 (ancla 13>69)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Coste de adquisición al 30/06/2022"
+    },
+    {
+      "label": "Μείον: Σωρευμένες αποσβέσεις",
+      "lado": "expense",
+      "page": 52,
+      "section": "## 2. ΑΣΩΜΑΤΕΣ ΑΚΙΝΗΤΟΠΟΙΗΣΕΙΣ",
+      "values": [
+        -2.708043
+      ],
+      "origen": "nota 25 (ancla 13>69)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Menos: Amortización acumulada"
+    },
+    {
+      "label": "Λοιποί φόροι - τέλη",
+      "lado": "expense",
+      "page": 68,
+      "section": "## 22. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.274336
+      ],
+      "origen": "nota 69 (ancla 13)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Otros tributos y tasas"
+    },
+    {
+      "label": "Διάφορα έξοδα",
+      "lado": "expense",
+      "page": 68,
+      "section": "## 22. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.33168
+      ],
+      "origen": "nota 69 (ancla 13)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Gastos diversos"
+    },
+    {
+      "label": "Πρόστιμα - Προσαυξήσεις - Ποινές αγώνων",
+      "lado": "expense",
+      "page": 68,
+      "section": "## 22. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -1.179805
+      ],
+      "origen": "nota 69 (ancla 13)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Multas, recargos y sanciones disciplinarias"
+    },
+    {
+      "label": "Συναλλαγματικές διαφορές",
+      "lado": "expense",
+      "page": 68,
+      "section": "## 22. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.03551
+      ],
+      "origen": "nota 69 (ancla 13)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Diferencias de cambio"
+    },
+    {
+      "label": "Έξοδα προηγούμενων χρήσεων",
+      "lado": "expense",
+      "page": 68,
+      "section": "## 22. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.474021
+      ],
+      "origen": "nota 69 (ancla 13)",
+      "ancla": "Λοιπά λειτουργικά έξοδα",
+      "glosa": "Gastos de ejercicios anteriores"
+    },
+    {
+      "label": "Λειτουργικά έξοδα",
+      "lado": "expense",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -38.984737
+      ],
+      "origen": "estado 13",
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "Χρηματοοικονομικά Έξοδα",
+      "lado": "expense",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -0.387994
+      ],
+      "origen": "estado 13",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Αναβαλλόμενος Φόρος",
+      "lado": "expense",
+      "page": 20,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2023 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        0.058725
+      ],
+      "origen": "estado 13",
+      "glosa": "Impuesto diferido"
+    },
+    {
+      "label": "Επιχορηγήσεις από Ομοσπονδίες",
+      "lado": "revenue",
+      "page": 67,
+      "section": "# 20. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ / # Ποσά σε € ' / Σύνολο λοιπών λειτουργικών εσόδων",
+      "values": [
+        113.224
+      ],
+      "origen": "estado 67",
+      "glosa": "Subvenciones de federaciones"
+    },
+    {
+      "label": "Έσοδα από μισθώματα",
+      "lado": "revenue",
+      "page": 67,
+      "section": "# 20. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ / # Ποσά σε € ' / Σύνολο λοιπών λειτουργικών εσόδων",
+      "values": [
+        1.65
+      ],
+      "origen": "estado 67",
+      "glosa": "Ingresos por arrendamientos"
+    },
+    {
+      "label": "Λοιπά παρεπόμενα έσοδα",
+      "lado": "revenue",
+      "page": 67,
+      "section": "# 20. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ / # Ποσά σε € ' / Σύνολο λοιπών λειτουργικών εσόδων",
+      "values": [
+        62.597
+      ],
+      "origen": "estado 67",
+      "glosa": "Otros ingresos accesorios"
+    },
+    {
+      "label": "Συναλλαγματικές διαφορές",
+      "lado": "revenue",
+      "page": 67,
+      "section": "# 20. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ / # Ποσά σε € ' / Σύνολο λοιπών λειτουργικών εσόδων",
+      "values": [
+        2.119
+      ],
+      "origen": "estado 67",
+      "glosa": "Diferencias de cambio"
+    },
+    {
+      "label": "Κρατικές επιχορηγήσεις",
+      "lado": "revenue",
+      "page": 67,
+      "section": "# 20. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ / # Ποσά σε € ' / Σύνολο λοιπών λειτουργικών εσόδων",
+      "values": [
+        750
+      ],
+      "origen": "estado 67",
+      "glosa": "Subvenciones oficiales"
+    },
+    {
+      "label": "Αποσβέσεις εγγραφών ποδοσφαιριστών",
+      "lado": "revenue",
+      "page": 68,
+      "section": "## 23. ΚΕΡΔΟΣ / (ΖΗΜΙΑ) ΑΠΟ ΠΩΛΗΣΗ ΑΥΛΩΝ ΠΕΡΙΟΥΣΙΑΚΩΝ ΣΤΟΙΧΕΙΩΝ – ΠΟΔΟΣΦΑΙΡΙΣΤΕΣ",
+      "values": [
+        -3.656864
+      ],
+      "origen": "estado 70",
+      "glosa": "Amortización de derechos federativos de futbolistas"
+    },
+    {
+      "label": "Λοιπά συνδεδεμένα μέρη",
+      "lado": "revenue",
+      "page": 71,
+      "section": "Οι συναλλαγές του Ομίλου με τα συνδεδεμένα μέρη αναλύονται ως εξής:",
+      "values": [
+        1400
+      ],
+      "origen": "estado 79",
+      "glosa": "Otras partes vinculadas"
+    }
+  ]
+}

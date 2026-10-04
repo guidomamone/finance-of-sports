@@ -1,0 +1,221 @@
+{
+ "md": "Clubes/Turquía/Galatasaray/galatasaray-sportif-bilanco-31-05-2019.md",
+ "pdf": "Clubes/Turquía/Galatasaray/galatasaray-sportif-bilanco-31-05-2019.pdf",
+ "club": "galatasaray",
+ "year": 2019,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:08:16.503Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 17,
+  "notasUsadas": [
+   "40"
+  ]
+ },
+ "ladoConocido": 13,
+ "rubros": [
+  {
+   "label": "UEFA Şampiyonlar ve Avrupa Ligi gelirleri",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "values": [
+    98220.675
+   ],
+   "origen": "estado 42",
+   "glosa": "Ingresos por la Liga de Campeones y la Liga Europa de la UEFA"
+  },
+  {
+   "label": "Mağaza satış gelirleri",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "values": [
+    35867.946
+   ],
+   "origen": "estado 42",
+   "glosa": "Ingresos por ventas en tiendas"
+  },
+  {
+   "label": "Sporcu transfer, kira ve yetiştirme gelirleri",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "values": [
+    20597.114
+   ],
+   "origen": "estado 42",
+   "glosa": "Ingresos por traspaso, cesión y derechos de formación de deportistas"
+  },
+  {
+   "label": "Yayın hakkı gelirleri",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "values": [
+    15905.174
+   ],
+   "origen": "estado 42",
+   "glosa": "Ingresos por derechos de retransmisión"
+  },
+  {
+   "label": "Sponsorluk, isim hakkı ve reklam gelirleri",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "values": [
+    32426.877
+   ],
+   "origen": "estado 42",
+   "glosa": "Ingresos por patrocinio, derechos de denominación y publicidad"
+  },
+  {
+   "label": "Loca, VIP ve kombine satış gelirleri",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "values": [
+    7758.538
+   ],
+   "origen": "estado 42",
+   "glosa": "Ingresos por palcos, asientos VIP y venta de abonos"
+  },
+  {
+   "label": "Satışların maliyeti (-)",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "values": [
+    124071.352
+   ],
+   "origen": "estado 42",
+   "glosa": "Coste de ventas (-)"
+  },
+  {
+   "label": "Galatasaray Spor Kulübü Derneği",
+   "lado": null,
+   "page": 28,
+   "section": "## 10 ÖZKAYNAKLAR / ### 10.1 Sermaye",
+   "values": [
+    13500000
+   ],
+   "origen": "nota 40 (ancla 43)",
+   "ancla": "Ağırlıklı hisse adedi"
+  },
+  {
+   "label": "Ağırlıklı hisse adedi",
+   "lado": null,
+   "page": 30,
+   "section": "## 12 PAY BAŞINA KAZANÇ",
+   "values": [
+    54000000
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Galatasaray Spor Kulübü Derneği",
+   "lado": null,
+   "page": 28,
+   "section": "## 10 ÖZKAYNAKLAR / ### 10.1 Sermaye",
+   "values": [
+    22369220.468
+   ],
+   "origen": "nota 40 (ancla 43)",
+   "ancla": "Ağırlıklı hisse adedi"
+  },
+  {
+   "label": "Halka Açık Kısım",
+   "lado": null,
+   "page": 28,
+   "section": "## 10 ÖZKAYNAKLAR / ### 10.1 Sermaye",
+   "values": [
+    18130779.532
+   ],
+   "origen": "nota 40 (ancla 43)",
+   "ancla": "Ağırlıklı hisse adedi"
+  },
+  {
+   "label": "0,01 TL nominal değerli pay başına (kayıp)",
+   "lado": null,
+   "page": 30,
+   "section": "## 12 PAY BAŞINA KAZANÇ",
+   "values": [
+    0.000002
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Futbol Faaliyeti",
+   "lado": "expense",
+   "page": 19,
+   "section": "",
+   "values": [
+    40.742867
+   ],
+   "origen": "estado 18",
+   "glosa": "Actividad futbolística"
+  },
+  {
+   "label": "Mağazacılık",
+   "lado": "expense",
+   "page": 19,
+   "section": "",
+   "values": [
+    1.297407
+   ],
+   "origen": "estado 18",
+   "glosa": "Merchandising y comercio minorista"
+  },
+  {
+   "label": "Diğer",
+   "lado": "expense",
+   "page": 19,
+   "section": "",
+   "values": [
+    0.038031
+   ],
+   "origen": "estado 18",
+   "glosa": "Otros"
+  },
+  {
+   "label": "Futbol Faaliyeti",
+   "lado": "expense",
+   "page": 19,
+   "section": "",
+   "values": [
+    24.912007
+   ],
+   "origen": "estado 19",
+   "glosa": "Actividad futbolística"
+  },
+  {
+   "label": "Mağazacılık",
+   "lado": "expense",
+   "page": 19,
+   "section": "",
+   "values": [
+    2.23795
+   ],
+   "origen": "estado 19",
+   "glosa": "Merchandising y comercio minorista"
+  },
+  {
+   "label": "Diğer",
+   "lado": "expense",
+   "page": 19,
+   "section": "",
+   "values": [
+    0.030334
+   ],
+   "origen": "estado 19",
+   "glosa": "Otros"
+  }
+ ]
+}

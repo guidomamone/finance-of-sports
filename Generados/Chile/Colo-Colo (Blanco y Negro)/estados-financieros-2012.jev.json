@@ -1,0 +1,205 @@
+{
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2012.md",
+ "generatedAt": "2026-09-30T22:48:46.821Z",
+ "rubrosHuella": "78774fc97a4e8d68d4e6a70c1b4450155fedc1ce",
+ "rubros": [
+  {
+   "label": "Servicios básicos",
+   "lado": null,
+   "page": 75,
+   "section": "Costo de ventas                                       8.047.125       11.890.659 / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesorías",
+   "lado": null,
+   "page": 75,
+   "section": "Costo de ventas                                       8.047.125       11.890.659 / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": null,
+   "page": 75,
+   "section": "Costo de ventas                                       8.047.125       11.890.659 / -                -",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 75,
+   "section": "Costo de ventas                                       8.047.125       11.890.659 / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenciones",
+   "lado": null,
+   "page": 75,
+   "section": "Costo de ventas                                       8.047.125       11.890.659 / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración administración",
+   "lado": null,
+   "page": 75,
+   "section": "Costo de ventas                                       8.047.125       11.890.659 / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos de administración",
+   "lado": "expense",
+   "page": 75,
+   "section": "Costo de ventas                                       8.047.125       11.890.659 / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de venta jugadores",
+   "lado": "expense",
+   "page": 75,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneracion plantel profesional y cuerpo tecnico",
+   "lado": null,
+   "page": 75,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizacion Activos en concesion",
+   "lado": null,
+   "page": 75,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_amortisation",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizacion pases jugadores profesionales",
+   "lado": null,
+   "page": 75,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos de concentracion traslados y otros",
+   "lado": "expense",
+   "page": 75,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros costos",
+   "lado": "expense",
+   "page": 75,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Gasto por impuestos utilizando la tasa legal",
+   "lado": "expense",
+   "page": 69,
+   "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2012     01.01.2011 / 31.12.2012     31.12.2011 / M$            M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Efecto impositivo de gastos no deducidos impositivamente",
+   "lado": "revenue",
+   "page": 69,
+   "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2012     01.01.2011 / 31.12.2012     31.12.2011 / M$            M$",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otro aumento (disminución) en cargo por impuestos legales",
+   "lado": "expense",
+   "page": 69,
+   "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2012     01.01.2011 / 31.12.2012     31.12.2011 / M$            M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros activos financieros corrientes",
+   "lado": null,
+   "page": 76,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS / 26. DIFERENCIA DE CAMBIO / M$            M$              M$                M$",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Deudores comerciales y otras cuentas por cobrar corrientes",
+   "lado": null,
+   "page": 76,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS / 26. DIFERENCIA DE CAMBIO / M$            M$              M$                M$",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+   "lado": null,
+   "page": 76,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 25. INGRESOS FINANCIEROS / 26. DIFERENCIA DE CAMBIO / M$            M$              M$                M$",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Club(**)",
+   "lado": "revenue",
+   "page": 74,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por publicidad",
+   "lado": "revenue",
+   "page": 74,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 74,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

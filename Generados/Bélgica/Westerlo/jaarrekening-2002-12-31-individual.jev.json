@@ -1,0 +1,28 @@
+{
+ "md": "Clubes/Bélgica/Westerlo/jaarrekening-2002-12-31-individual.md",
+ "generatedAt": "2026-09-30T01:11:45.173Z",
+ "rubros": [
+  {
+   "label": "000,00 —",
+   "page": 12,
+   "section": "HERSTRUCTURERINGSKOSTEN : / IMMATERIELE VASTE ACTIVA / MATERIELE VASTE ACTIVA / AFSCHRIJVINGEN GEBOEKT TIJDENS HET BOEKJAAR :",
+   "choice": "depreciation",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "depreciation",
+     0.9
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1303
+  }
+ ]
+}

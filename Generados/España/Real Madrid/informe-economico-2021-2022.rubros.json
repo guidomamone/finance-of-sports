@@ -1,0 +1,473 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2021-2022.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2021-2022.pdf",
+  "club": "realmadrid",
+  "year": 2022,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:01:17.952Z",
+  "tieOuts": {
+    "cierran": 4,
+    "noCierran": 33
+  },
+  "warnings": [
+    "13 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "20 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "12 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 39,
+    "notasUsadas": [
+      "85"
+    ]
+  },
+  "ladoConocido": 38,
+  "rubros": [
+    {
+      "label": "las siguientes partidas: Ingresos Venta tiendas",
+      "lado": "revenue",
+      "page": 64,
+      "section": "Dentro de la cuenta de pérdidas y ganancias adjunta se incluyen",
+      "values": [
+        25.886
+      ],
+      "origen": "estado 51",
+      "glosa": "las siguientes partidas: Ingresos Venta tiendas"
+    },
+    {
+      "label": "liado a la LFP. Los importes requeridos para la inscripción del Pasivo Corriente",
+      "lado": "revenue",
+      "page": 78,
+      "section": "",
+      "values": [
+        335.845
+      ],
+      "origen": "nota 85 (ancla 51)",
+      "ancla": "Ingresos Patrocinios y Licencias",
+      "glosa": "liado a la LFP. Los importes requeridos para la inscripción del Pasivo Corriente"
+    },
+    {
+      "label": "Ingresos Patrocinios y Licencias",
+      "lado": "revenue",
+      "page": 64,
+      "section": "Dentro de la cuenta de pérdidas y ganancias adjunta se incluyen",
+      "values": [
+        231.283
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Ingresos Patrocinios y Licencias"
+    },
+    {
+      "label": "Club para la temporada de inscripión T se refieren a: Menos: Tesorería y Activos Líquidos Equivalentes",
+      "lado": "revenue",
+      "page": 78,
+      "section": "",
+      "values": [
+        -258.122
+      ],
+      "origen": "nota 85 (ancla 51)",
+      "ancla": "Ingresos Patrocinios y Licencias",
+      "glosa": "Club para la temporada de inscripión T se refieren a: Menos: Tesorería y Activos Líquidos Equivalentes"
+    },
+    {
+      "label": "Menos: Deudas Entidades Deportivas (*)",
+      "lado": "revenue",
+      "page": 78,
+      "section": "",
+      "values": [
+        -56.275
+      ],
+      "origen": "nota 85 (ancla 51)",
+      "ancla": "Ingresos Patrocinios y Licencias",
+      "glosa": "Menos: Deudas Entidades Deportivas (*)"
+    },
+    {
+      "label": "Cifras de balance: datos correspondientes a diciembre T-1 Menos: Inversiones Remodelación Estadio (**)",
+      "lado": "revenue",
+      "page": 78,
+      "section": "",
+      "values": [
+        -252.611
+      ],
+      "origen": "nota 85 (ancla 51)",
+      "ancla": "Ingresos Patrocinios y Licencias",
+      "glosa": "Cifras de balance: datos correspondientes a diciembre T-1 Menos: Inversiones Remodelación Estadio (**)"
+    },
+    {
+      "label": "30/06/2021 Ingresos Publicidad",
+      "lado": "revenue",
+      "page": 64,
+      "section": "Dentro de la cuenta de pérdidas y ganancias adjunta se incluyen",
+      "values": [
+        1.284
+      ],
+      "origen": "estado 51",
+      "glosa": "30/06/2021 Ingresos Publicidad"
+    },
+    {
+      "label": "miles € 30/06/2022 (RMCF) Otros Ingresos",
+      "lado": "revenue",
+      "page": 64,
+      "section": "Dentro de la cuenta de pérdidas y ganancias adjunta se incluyen",
+      "values": [
+        31.684
+      ],
+      "origen": "estado 51",
+      "glosa": "miles € 30/06/2022 (RMCF) Otros Ingresos"
+    },
+    {
+      "label": "Importe neto de la cifra de negocios",
+      "lado": "revenue",
+      "page": 64,
+      "section": "Dentro de la cuenta de pérdidas y ganancias adjunta se incluyen",
+      "values": [
+        712.875
+      ],
+      "origen": "estado 51",
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Otros ingresos de explotación",
+      "lado": "revenue",
+      "page": 64,
+      "section": "Dentro de la cuenta de pérdidas y ganancias adjunta se incluyen",
+      "values": [
+        6.903
+      ],
+      "origen": "estado 51",
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Subvenciones (nota 12) 192 192 TOTAL IMPORTE NETO CIFRA NEGOCIOS",
+      "lado": "revenue",
+      "page": 64,
+      "section": "Dentro de la cuenta de pérdidas y ganancias adjunta se incluyen",
+      "values": [
+        712.875
+      ],
+      "origen": "estado 51",
+      "glosa": "Subvenciones (nota 12) 192 192 TOTAL IMPORTE NETO CIFRA NEGOCIOS"
+    },
+    {
+      "label": "Excesos de provisiones (nota 13.1 y 13.2)",
+      "lado": "revenue",
+      "page": 64,
+      "section": "Dentro de la cuenta de pérdidas y ganancias adjunta se incluyen",
+      "values": [
+        1.558
+      ],
+      "origen": "estado 51",
+      "glosa": "Excesos de provisiones (nota 13.1 y 13.2)"
+    },
+    {
+      "label": "Segmentación por el momento en el que se reconoce el ingreso: Anticipos a largo plazo 70.059 - -",
+      "lado": "revenue",
+      "page": 65,
+      "section": "Periodificaciones a largo plazo",
+      "values": [
+        -23.035
+      ],
+      "origen": "estado 54",
+      "glosa": "Segmentación por el momento en el que se reconoce el ingreso: Anticipos a largo plazo 70.059 - -"
+    },
+    {
+      "label": "Ingresos de socios y estadio 668 9.589 10.257 70.059 - -",
+      "lado": "revenue",
+      "page": 65,
+      "section": "Periodificaciones a largo plazo",
+      "values": [
+        -23.035
+      ],
+      "origen": "estado 54",
+      "glosa": "Ingresos de socios y estadio 668 9.589 10.257 70.059 - -"
+    },
+    {
+      "label": "Ingresos de amistosos y competiciones",
+      "lado": "revenue",
+      "page": 65,
+      "section": "Periodificaciones a largo plazo",
+      "values": [
+        106.419
+      ],
+      "origen": "estado 54",
+      "glosa": "Ingresos de amistosos y competiciones"
+    },
+    {
+      "label": "Activos de contratos no corrientes -",
+      "lado": null,
+      "page": 65,
+      "section": "Periodificaciones a corto plazo",
+      "values": [
+        19.25
+      ],
+      "origen": "estado 56",
+      "glosa": "Activos de contratos no corrientes -"
+    },
+    {
+      "label": "Ingresos socios y estadio 29.480 10.777 (15.242) -",
+      "lado": "revenue",
+      "page": 65,
+      "section": "Periodificaciones a corto plazo",
+      "values": [
+        25.015
+      ],
+      "origen": "estado 56",
+      "glosa": "Ingresos socios y estadio 29.480 10.777 (15.242) -"
+    },
+    {
+      "label": "Clientes por ventas y prestación de servicios (nota 8.2)",
+      "lado": null,
+      "page": 65,
+      "section": "Periodificaciones a corto plazo",
+      "values": [
+        15.68
+      ],
+      "origen": "estado 56",
+      "glosa": "Clientes por ventas y prestación de servicios (nota 8.2)"
+    },
+    {
+      "label": "Otros Ingresos",
+      "lado": "revenue",
+      "page": 64,
+      "section": "Ingresos Supercopa de Europa                        -            - / Ingresos Mundial Clubes                             -            - / Ingresos Amistosos                                393            -",
+      "values": [
+        10.589
+      ],
+      "origen": "estado 50",
+      "glosa": "Otros Ingresos"
+    },
+    {
+      "label": "17.1 Ingresos de explotación Total Ingresos Abonados y Socios",
+      "lado": "revenue",
+      "page": 64,
+      "section": "Ingresos Supercopa de Europa                        -            - / Ingresos Mundial Clubes                             -            - / Ingresos Amistosos                                393            -",
+      "values": [
+        37.398
+      ],
+      "origen": "estado 50",
+      "glosa": "17.1 Ingresos de explotación Total Ingresos Abonados y Socios"
+    },
+    {
+      "label": "Importe plantilla inscribible LNFP 297.600 1.625 900 610 429",
+      "lado": "expense",
+      "page": 67,
+      "section": "Sueldos y   Derechos Indemniz./   Primas      Seguridad Otras cargas Total gastos",
+      "values": [
+        301.93
+      ],
+      "origen": "estado 63",
+      "glosa": "Importe plantilla inscribible LNFP 297.600 1.625 900 610 429"
+    },
+    {
+      "label": "Jugadores y técnicos Baloncesto 31.737 573 2.900 2.700 416 825 39.151 Importe plantilla no inscribible LNFP 43.759 529 551 -",
+      "lado": "expense",
+      "page": 67,
+      "section": "Sueldos y   Derechos Indemniz./   Primas      Seguridad Otras cargas Total gastos",
+      "values": [
+        2.626
+      ],
+      "origen": "estado 63",
+      "glosa": "Jugadores y técnicos Baloncesto 31.737 573 2.900 2.700 416 825 39.151 Importe plantilla no inscribible LNFP 43.759 529 551 -"
+    },
+    {
+      "label": "Personal no deportivo baloncesto 1.946 - - 150 131 -",
+      "lado": "expense",
+      "page": 67,
+      "section": "Sueldos y   Derechos Indemniz./   Primas      Seguridad Otras cargas Total gastos",
+      "values": [
+        2.227
+      ],
+      "origen": "estado 63",
+      "glosa": "Personal no deportivo baloncesto 1.946 - - 150 131 -"
+    },
+    {
+      "label": "Ejercicio 2021/2022 Servicios exteriores",
+      "lado": "expense",
+      "page": 68,
+      "section": "interpretado en base a las Normas de elaboración de presupues- / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / tos de los clubes y SADS de la LFP. / 30/06/2021 / miles €                                               30/06/2022        (RMCF)",
+      "values": [
+        135.716
+      ],
+      "origen": "estado 64",
+      "glosa": "Ejercicio 2021/2022 Servicios exteriores"
+    },
+    {
+      "label": "Tributos",
+      "lado": "expense",
+      "page": 68,
+      "section": "interpretado en base a las Normas de elaboración de presupues- / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / tos de los clubes y SADS de la LFP. / 30/06/2021 / miles €                                               30/06/2022        (RMCF)",
+      "values": [
+        4.583
+      ],
+      "origen": "estado 64",
+      "glosa": "Tributos"
+    },
+    {
+      "label": "Desplazamientos",
+      "lado": "expense",
+      "page": 68,
+      "section": "interpretado en base a las Normas de elaboración de presupues- / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / tos de los clubes y SADS de la LFP. / 30/06/2021 / miles €                                               30/06/2022        (RMCF)",
+      "values": [
+        9.164
+      ],
+      "origen": "estado 64",
+      "glosa": "Desplazamientos"
+    },
+    {
+      "label": "Gastos Deterioro / (Ingreso) / Gastos de cesión y adquisición de jugadores",
+      "lado": "expense",
+      "page": 68,
+      "section": "interpretado en base a las Normas de elaboración de presupues- / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / tos de los clubes y SADS de la LFP. / 30/06/2021 / miles €                                               30/06/2022        (RMCF)",
+      "values": [
+        1.853
+      ],
+      "origen": "estado 64",
+      "glosa": "Gastos Deterioro / (Ingreso) / Gastos de cesión y adquisición de jugadores"
+    },
+    {
+      "label": "millones de euros, lo que representa una disminución de",
+      "lado": "expense",
+      "page": 90,
+      "section": "vas dotaciones, por lo que se produce la correspondiente reduc- / ción de gasto en comparación con el ejercicio anterior.",
+      "values": [
+        0.2806
+      ],
+      "origen": "estado 103",
+      "glosa": "millones de euros, lo que representa una disminución de"
+    },
+    {
+      "label": "millones respecto al ejercicio anterior, debido fundamentalmente Gastos de Aprovisionamientos (27.292) (453) (720)",
+      "lado": "expense",
+      "page": 90,
+      "section": "vas dotaciones, por lo que se produce la correspondiente reduc- / ción de gasto en comparación con el ejercicio anterior.",
+      "values": [
+        -28.465
+      ],
+      "origen": "estado 103",
+      "glosa": "millones respecto al ejercicio anterior, debido fundamentalmente Gastos de Aprovisionamientos (27.292) (453) (720)"
+    },
+    {
+      "label": "Patentes, licencias, marcas y similares 1.112 78 - -",
+      "lado": "expense",
+      "page": 40,
+      "section": "Ejercicio 2021/2022 / Incorporación         Altas y / Un resumen del coste de los elementos de inmovilizado intangi- / Coste: / miles €                                                30/06/2022 30/06/2021 (RMCF)",
+      "values": [
+        1.19
+      ],
+      "origen": "estado 23",
+      "glosa": "Patentes, licencias, marcas y similares 1.112 78 - -"
+    },
+    {
+      "label": "Aplicaciones informáticas 12.873 - -",
+      "lado": "expense",
+      "page": 40,
+      "section": "Ejercicio 2021/2022 / Incorporación         Altas y / Un resumen del coste de los elementos de inmovilizado intangi- / Coste: / miles €                                                30/06/2022 30/06/2021 (RMCF)",
+      "values": [
+        13.027
+      ],
+      "origen": "estado 23",
+      "glosa": "Aplicaciones informáticas 12.873 - -"
+    },
+    {
+      "label": "Otro inmovilizado intangible 125.047 - - - 125.047 Concesiones",
+      "lado": "expense",
+      "page": 40,
+      "section": "Ejercicio 2021/2022 / Incorporación         Altas y / Un resumen del coste de los elementos de inmovilizado intangi- / Coste: / miles €                                                30/06/2022 30/06/2021 (RMCF)",
+      "values": [
+        2.103
+      ],
+      "origen": "estado 23",
+      "glosa": "Otro inmovilizado intangible 125.047 - - - 125.047 Concesiones"
+    },
+    {
+      "label": "Jugadores y técnicos 2º equipo fútbol 7.286 - - - 427 -",
+      "lado": "expense",
+      "page": 67,
+      "section": "17.3 Gastos de personal / La distribución por secciones del gasto de personal es la siguiente: / Ejercicio 2021/2022 / de personal de la plantilla deportiva inscribible (jugadores y téc-",
+      "values": [
+        7.713
+      ],
+      "origen": "estado 62",
+      "glosa": "Jugadores y técnicos 2º equipo fútbol 7.286 - - - 427 -"
+    },
+    {
+      "label": "Jugadores y técnicos categorías inferiores fútbol 6.462 - 303",
+      "lado": "expense",
+      "page": 67,
+      "section": "17.3 Gastos de personal / La distribución por secciones del gasto de personal es la siguiente: / Ejercicio 2021/2022 / de personal de la plantilla deportiva inscribible (jugadores y téc-",
+      "values": [
+        1.356
+      ],
+      "origen": "estado 62",
+      "glosa": "Jugadores y técnicos categorías inferiores fútbol 6.462 - 303"
+    },
+    {
+      "label": "Jugadoras y técnicos sección femenina 2.025 - 47 - 380",
+      "lado": "expense",
+      "page": 67,
+      "section": "17.3 Gastos de personal / La distribución por secciones del gasto de personal es la siguiente: / Ejercicio 2021/2022 / de personal de la plantilla deportiva inscribible (jugadores y téc-",
+      "values": [
+        2.471
+      ],
+      "origen": "estado 62",
+      "glosa": "Jugadoras y técnicos sección femenina 2.025 - 47 - 380"
+    },
+    {
+      "label": "Ingresos relevantes (*) 1.160.483 933.065 908.095 Total ingresos de explotación (nota 17.1)",
+      "lado": "revenue",
+      "page": 75,
+      "section": "Ingresos estados financieros",
+      "values": [
+        1100.244
+      ],
+      "origen": "estado 74",
+      "glosa": "Ingresos relevantes (*) 1.160.483 933.065 908.095 Total ingresos de explotación (nota 17.1)"
+    },
+    {
+      "label": "Gastos relevantes (*) 1.002.730 745.036 793.191 Total ingresos financieros (nota 17.6)",
+      "lado": "revenue",
+      "page": 75,
+      "section": "Ingresos estados financieros",
+      "values": [
+        15.897
+      ],
+      "origen": "estado 74",
+      "glosa": "Gastos relevantes (*) 1.002.730 745.036 793.191 Total ingresos financieros (nota 17.6)"
+    },
+    {
+      "label": "Costes financieros y dividendos 18.995 13.156 4.762 Gastos personal asociados a la primera plantilla de fútbol",
+      "lado": "expense",
+      "page": 76,
+      "section": "pere el 70% de los ingresos relevantes de la temporada, tal y como",
+      "values": [
+        404.967
+      ],
+      "origen": "estado 77",
+      "glosa": "Costes financieros y dividendos 18.995 13.156 4.762 Gastos personal asociados a la primera plantilla de fútbol"
+    },
+    {
+      "label": "Menos: Gastos actividades desarrollo cantera no identificables (7.269) (6.483) (7.257) Ingresos relevantes",
+      "lado": "revenue",
+      "page": 76,
+      "section": "pere el 70% de los ingresos relevantes de la temporada, tal y como",
+      "values": [
+        1086.466
+      ],
+      "origen": "estado 77",
+      "glosa": "Menos: Gastos actividades desarrollo cantera no identificables (7.269) (6.483) (7.257) Ingresos relevantes"
+    },
+    {
+      "label": "Menos: Gastos en actividades de desarrollo comunitario",
+      "lado": "expense",
+      "page": 76,
+      "section": "pere el 70% de los ingresos relevantes de la temporada, tal y como",
+      "values": [
+        -3.962
+      ],
+      "origen": "estado 77",
+      "glosa": "Menos: Gastos en actividades de desarrollo comunitario"
+    }
+  ]
+}

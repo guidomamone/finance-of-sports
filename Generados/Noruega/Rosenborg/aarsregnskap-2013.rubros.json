@@ -1,0 +1,774 @@
+{
+ "md": "Clubes/Noruega/Rosenborg/aarsregnskap-2013.md",
+ "pdf": "Clubes/Noruega/Rosenborg/aarsregnskap-2013.pdf",
+ "club": "rosenborg",
+ "year": 2013,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:43.371Z",
+ "tieOuts": {
+  "cierran": 80,
+  "noCierran": 12
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "5 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "7 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "17 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 75,
+  "notasUsadas": [
+   "13"
+  ]
+ },
+ "ladoConocido": 71,
+ "rubros": [
+  {
+   "label": "Billett- og arrangementsinntekter",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    35041.987
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "VIP-inntekter",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    12563.549
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Sponsor- og reklameinntekter",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    53991.237
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Salg / utleie spillere",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    15658.111
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Annen salgsinntekt",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    12878.375
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "UEFA",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    5441.256
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "TV- og mediainntekter",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    19707.492
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Andre inntekter",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    8628.113
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Driftskostnader kamper",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    12295.461
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Reklame-, sponsor og VIP kostnader",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    22787.233
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Spiller- og overgangskostnader",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    1273.978
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Andre kostnader",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    6599.687
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 18,
+   "section": "# Rosenborg Ballklub / ## NOTER TIL ÅRSREGNSKAPET FOR 2013",
+   "values": [
+    77439.906
+   ],
+   "origen": "nota 13 (ancla 8)",
+   "ancla": "Lønnskostnad"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    87613.556
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Arbe-digiveravgift",
+   "lado": "expense",
+   "page": 18,
+   "section": "# Rosenborg Ballklub / ## NOTER TIL ÅRSREGNSKAPET FOR 2013",
+   "values": [
+    7540.503
+   ],
+   "origen": "nota 13 (ancla 8)",
+   "ancla": "Lønnskostnad"
+  },
+  {
+   "label": "Pensjonskostnad",
+   "lado": "expense",
+   "page": 18,
+   "section": "# Rosenborg Ballklub / ## NOTER TIL ÅRSREGNSKAPET FOR 2013",
+   "values": [
+    475.591
+   ],
+   "origen": "nota 13 (ancla 8)",
+   "ancla": "Lønnskostnad"
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 18,
+   "section": "# Rosenborg Ballklub / ## NOTER TIL ÅRSREGNSKAPET FOR 2013",
+   "values": [
+    2157.559
+   ],
+   "origen": "nota 13 (ancla 8)",
+   "ancla": "Lønnskostnad"
+  },
+  {
+   "label": "Av- og nedskrivning",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    16784.004
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Bortekamper, trening, utstyr",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    8585.655
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Drift transp.midler, baner, lokaler",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    8078.638
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Administrasjonskostnader",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    9582.06
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    8316.598
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Momsrefusjon",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    -374.738
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    199.805
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Renteinntekt konsernselskap",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    542.508
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Rentekostnad konsernselskap",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    -48.144
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    -455.256
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Overført til/fra fri egenkapital",
+   "lado": null,
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "values": [
+    -17393.097
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "values": [
+    130.133259
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "values": [
+    33.776861
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "values": [
+    36.48689
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "values": [
+    87.613559
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Avskrivning av driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "values": [
+    16.538592
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "values": [
+    0.245412
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "values": [
+    40.657678
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Renteinntekt fra foretak i samme konsern",
+   "lado": "revenue",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "values": [
+    0.542508
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "values": [
+    0.199805
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Rentekostnad til foretak i samme konsern",
+   "lado": "expense",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "values": [
+    0.048144
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "values": [
+    0.018238
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "values": [
+    0.437018
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Overført fra annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "values": [
+    -17.393097
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "values": [
+    134.17319
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "annen driftsinntekt",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "values": [
+    40.368207
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "values": [
+    92.580819
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Av og nedskrivning",
+   "lado": "expense",
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "values": [
+    22.494887
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Kostnader",
+   "lado": "expense",
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "values": [
+    35.294971
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "values": [
+    30.821168
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Momsrefusjon",
+   "lado": "expense",
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "values": [
+    -0.374738
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "values": [
+    0.537745
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "values": [
+    6.931764
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Finansinntekter/ kostnader",
+   "lado": "expense",
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "values": [
+    0.504978
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Skattekostnad",
+   "lado": "expense",
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "values": [
+    1.141561
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Minoritetsinteresser",
+   "lado": null,
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "values": [
+    1.42423
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Periodisert inntekt",
+   "lado": "revenue",
+   "page": 19,
+   "section": "Note 9 Kundefordringer og andre fordringer",
+   "values": [
+    101.797
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Til gode fra andre klubber ifm spilleroverganger",
+   "lado": "revenue",
+   "page": 19,
+   "section": "Note 9 Kundefordringer og andre fordringer",
+   "values": [
+    -2351.239
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "påløpt renteinntekt",
+   "lado": "revenue",
+   "page": 19,
+   "section": "Note 9 Kundefordringer og andre fordringer",
+   "values": [
+    271.254
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Fordring på Rosenborg Eiendom/Lerkendal Invest",
+   "lado": "revenue",
+   "page": 19,
+   "section": "Note 9 Kundefordringer og andre fordringer",
+   "values": [
+    27490.351
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Andre kortsiktige fordringer",
+   "lado": "revenue",
+   "page": 19,
+   "section": "Note 9 Kundefordringer og andre fordringer",
+   "values": [
+    -214.106
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Årets pensjonsopptjening",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 14 (forts) / #### Lukket kollektiv pensjonsordning",
+   "values": [
+    0.22608
+   ],
+   "origen": "estado 50"
+  },
+  {
+   "label": "Rentekostnad av pensjonsforpliktelsen",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 14 (forts) / #### Lukket kollektiv pensjonsordning",
+   "values": [
+    0.258913
+   ],
+   "origen": "estado 50"
+  },
+  {
+   "label": "Avkastning på pensjonsmidler",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 14 (forts) / #### Lukket kollektiv pensjonsordning",
+   "values": [
+    -0.275793
+   ],
+   "origen": "estado 50"
+  },
+  {
+   "label": "Administrasjonskostnader",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 14 (forts) / #### Lukket kollektiv pensjonsordning",
+   "values": [
+    0.097933
+   ],
+   "origen": "estado 50"
+  },
+  {
+   "label": "Periodisert arbeidsgiveravgift før evt avvik PBO/midler",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 14 (forts) / #### Lukket kollektiv pensjonsordning",
+   "values": [
+    0.043306
+   ],
+   "origen": "estado 50"
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "values": [
+    73752.563
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "values": [
+    11071.651
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Pensjonskostnad",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "values": [
+    885.839
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 27,
+   "section": "",
+   "values": [
+    6870.766
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Driftskostnader kamper",
+   "lado": "expense",
+   "page": 29,
+   "section": "### Ansvarlig lån:",
+   "values": [
+    3270.461
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Reklame-, sponsor og VIP-kostnader",
+   "lado": "expense",
+   "page": 29,
+   "section": "### Ansvarlig lån:",
+   "values": [
+    14763.103
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Kjøp spillere og overgangskostnader",
+   "lado": "expense",
+   "page": 29,
+   "section": "### Ansvarlig lån:",
+   "values": [
+    1273.978
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Andre kostnader",
+   "lado": "expense",
+   "page": 29,
+   "section": "### Ansvarlig lån:",
+   "values": [
+    15987.43
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "Billettinntekter E-cup-kamper",
+   "lado": "revenue",
+   "page": 17,
+   "section": "#### Spillerkontrakter – prinsipp / #### Anleggsmidler – prinsipp / #### Omløpsmidler / #### Varer / #### Pensjon",
+   "values": [
+    0.521609
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Billettinntekter serie- og treningskamper",
+   "lado": "revenue",
+   "page": 17,
+   "section": "#### Spillerkontrakter – prinsipp / #### Anleggsmidler – prinsipp / #### Omløpsmidler / #### Varer / #### Pensjon",
+   "values": [
+    33.259491
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Cup-oppgjør",
+   "lado": "revenue",
+   "page": 17,
+   "section": "#### Spillerkontrakter – prinsipp / #### Anleggsmidler – prinsipp / #### Omløpsmidler / #### Varer / #### Pensjon",
+   "values": [
+    1.260887
+   ],
+   "origen": "estado 10"
+  }
+ ]
+}

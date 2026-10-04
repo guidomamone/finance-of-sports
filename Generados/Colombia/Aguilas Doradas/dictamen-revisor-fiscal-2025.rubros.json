@@ -1,0 +1,315 @@
+{
+ "md": "Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2025.md",
+ "pdf": "Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2025.pdf",
+ "club": "aguilas-doradas",
+ "year": 2025,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T21:57:39.642Z",
+ "tieOuts": {
+  "cierran": 2,
+  "noCierran": 4
+ },
+ "warnings": [
+  "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 42,
+  "notasUsadas": []
+ },
+ "ladoConocido": 29,
+ "rubros": [
+  {
+   "label": "Taquilla-venta de boletería",
+   "lado": "revenue",
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    362870
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Venta derechos deportivos-jugadores",
+   "lado": "revenue",
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    10502948.332
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "lado": "revenue",
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    70661.888
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Dimayor-reintegro de costos y gastos",
+   "lado": "revenue",
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    7317503.223
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Dimayor ingresos diferidos",
+   "lado": "revenue",
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    239521.164
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Federación colombiana de futbol",
+   "lado": "revenue",
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    643867.75
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Actividades conexas",
+   "lado": "revenue",
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    2000000
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "De administración",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    3155711.589
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    222259.5
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    104095.624
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    40467.395
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    33798.593
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    215385.414
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Legales",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    9678.1
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    66936.844
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "De viaje",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    270789.249
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    28616.328
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    684450.116
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Deterioros",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    337459.65
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "De ventas",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    18267441.887
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    267875.194
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    1049776.622
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Contribuciones y afiliaciones",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    31165.73
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    20869.81
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    1303497.275
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    236189.228
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "De viaje",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    950602.148
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    3341891.359
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Derechos deportivos",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    4820209.558
+   ],
+   "origen": "estado 1"
+  }
+ ]
+}

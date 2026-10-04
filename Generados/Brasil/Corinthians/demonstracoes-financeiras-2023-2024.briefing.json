@@ -1,0 +1,2994 @@
+{
+  "club": "corinthians-br",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Corinthians/demonstracoes-financeiras-2023-2024.md",
+  "generatedAt": "2026-09-30T14:11:45.078Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 28,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 51,
+  "relevantTableCount": 17,
+  "tables": [
+    {
+      "page": 8,
+      "section": "(Valores expressos em milhares de reais) / Ativo / Notas 31/12/2024 31/12/2023 / Ativo circulante / Caixa e equivalentes de caixa 4 12.699 736",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "510.308",
+            "362.695"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras contas a receber",
+          "values": [
+            "190.106",
+            "81.699"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estoques",
+          "values": [
+            "1.437",
+            "2.207"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas do exercício seguinte",
+          "values": [
+            "40.054",
+            "75.081"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo circulante",
+          "values": [
+            "754.599",
+            "522.368"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Ativo não circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depósitos judiciais",
+          "values": [
+            "68.278",
+            "18.314"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "441.108",
+            "212.251"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Investimento no Fundo Imobiliário Arena / Corinthians 9 1.332 - / Despesas do exercício seguinte 6 1.477 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total do realizável a longo prazo",
+          "values": [
+            "512.190",
+            "230.565"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado líquido",
+          "values": [
+            "572.651",
+            "572.232"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "203.281",
+            "199.235"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do Imobilizado e intangível",
+          "values": [
+            "775.932",
+            "771.467"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo não circulante",
+          "values": [
+            "1.288.122",
+            "1.002.032"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo",
+          "values": [
+            "2.042.721",
+            "1.524.400"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "os exercícios findos em 31 de dezembro de 2024 e 2023 / (Valores expressos em milhares de reais) / Notas 31/12/2024 31/12/2023 / Segmento futebol / Receita bruta no segmento futebol",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Direitos de transmissão de TV",
+          "values": [
+            "295.064",
+            "307.004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocínios e publicidades",
+          "values": [
+            "253.721",
+            "117.067"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrecadação de jogos",
+          "values": [
+            "93.994",
+            "90.771"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiações, fiel torcedor e loterias e outras",
+          "values": [
+            "70.635",
+            "106.564"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total da receita bruta no segmento futebol 713414",
+          "values": [
+            "621.406"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas com repasses de direitos federativos",
+          "values": [
+            "338.421",
+            "251.027"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total das receitas brutas operacionais no segmento futebol",
+          "values": [
+            "1.051.835",
+            "872.433"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "Deduções das receitas brutas no segmento futebol",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Impostos e contribuições",
+          "values": [
+            "(34.536)",
+            "(34.814)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total da receita operacional líquida no segmento futebol",
+          "values": [
+            "1.017.299",
+            "837.619"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "Receitas (despesas) operacionais no segmento futebol",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pessoal",
+          "values": [
+            "(367.714)",
+            "(348.874)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de terceiros",
+          "values": [
+            "(46.311)",
+            "(31.686)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gerais e administrativas",
+          "values": [
+            "(106.376)",
+            "(50.751)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo com vendas e aquisição de atletas",
+          "values": [
+            "(71.041)",
+            "(68.501)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação e amortização de direitos",
+          "values": [
+            "(82.489)",
+            "(81.083)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Futebol",
+          "values": [
+            "(54.566)",
+            "(66.856)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rateio de despesas administrativas",
+          "values": [
+            "(31.289)",
+            "(31.497)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total das despesas operacionais no segmento futebol",
+          "values": [
+            "(759.786)",
+            "(679.248)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "Superávit operacional do futebol antes das despesas financeiras e",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "resultado de outras receitas (despesas) não operacionais",
+          "values": [
+            "257.513",
+            "158.371"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão de contingências",
+          "values": [
+            "(112.242)",
+            "7.700"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas financeiras líquidas",
+          "values": [
+            "(169.223)",
+            "(42.937)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas (despesas) operacionais",
+          "values": [
+            "1.930",
+            "(2.334)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit líquido (déficit) líquido do exercício no segmento futebol",
+          "values": [
+            "(22.022)",
+            "120.800"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "Segmento clube social e esportes amadores / Receita bruta no segmento clube social e esportes amadores / Receita bruta",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contribuições dos sócios",
+          "values": [
+            "26.991",
+            "25.366"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocínios e publicidades",
+          "values": [
+            "10.828",
+            "11.572"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "Arrecadação de jogos 88 285",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Explorações comerciais",
+          "values": [
+            "3.908",
+            "3.780"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Licenciamento e franquias",
+          "values": [
+            "19.750",
+            "20.017"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiações, fiel torcedor e loterias e outras",
+          "values": [
+            "1.523",
+            "3.232"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Impostos e contribuições (872) (2.046) / Receita operacional líquida no segmento clube social e esportes / amadores 62.216 62.212 / Receitas (despesas) operacionais no segmento clube social e esportes / amadores",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pessoal",
+          "values": [
+            "(60.951)",
+            "(49.451)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de terceiros",
+          "values": [
+            "(42.770)",
+            "(44.188)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gerais e administrativas",
+          "values": [
+            "(35.339)",
+            "(33.418)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação e amortização de direitos",
+          "values": [
+            "(3.065)",
+            "(2.911)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Esportes amadores",
+          "values": [
+            "(1.676)",
+            "(1.705)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rateio das despesas administrativas",
+          "values": [
+            "31.289",
+            "31.497"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total das despesas operacionais no segmento clube social e esportes amadores",
+          "values": [
+            "(112.512)",
+            "(100.176)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "Superávit (déficit) operacional do clube social e esportes amadores antes / das despesas financeiras e do resultado de outras receitas (despesas)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "não operacionais",
+          "values": [
+            "(50.296)",
+            "(37.964)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas financeiras líquidas",
+          "values": [
+            "(109.933)",
+            "(84.445)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas (despesas) operacionais 19",
+          "values": [
+            "2.784"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "Total do Déficit líquido do exercício no segmento clube social e esportes",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "amadores",
+          "values": [
+            "(159.744)",
+            "(119.625)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de Superávit (déficit) do exercício",
+          "values": [
+            "(181.766)",
+            "1.175"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "esportes amadores para os exercícios findos em 31 de dezembro de 2024 e 2023 / (Valores expressos em milhares de reais) / Ajuste de Reserva de / Patrimônio Reserva de Avaliação capital Déficits / Social reavaliação Patrimonial doações acumulados Total",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Em 31 de dezembro de 2022 1 77.805 397.654",
+          "values": [
+            "(589.271)",
+            "(113.780)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit líquido do exercício",
+          "values": [
+            "1.175",
+            "1.175"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de avaliação patrimonial (1.680) -",
+          "values": [
+            "(1.680)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Em 31 de dezembro de 2023 1 77.805 395.974",
+          "values": [
+            "(588.096)",
+            "(114.285)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit líquido do exercício -",
+          "values": [
+            "(181.766)",
+            "(181.766)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixa custos de formação de atletas (ITG2003 R2) -",
+          "values": [
+            "(127.480)",
+            "(127.480)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de avaliação patrimonial (1.681) -",
+          "values": [
+            "(1.681)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Em 31 de dezembro de 2024 1 77.805 394.293",
+          "values": [
+            "(897.342)",
+            "(425.212)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "Reapresentação das demonstrações para o exercício findo em 31 de dezembro de 2023 / (Valores expressos em milhares de reais) / Demonstração dos resultados / Segmento futebol / Receitas (despesas) operacionais no segmento futebol",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pessoal (nota explicativa n.º",
+          "values": [
+            "2.12.1)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de terceiros (nota explicativa n.º",
+          "values": [
+            "2.12.1)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gerais e administrativas (nota explicativa n.º",
+          "values": [
+            "2.12.3)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 26,
+      "section": "Provisão de contingência (nota explicativa n.º 2.12.3) / Total do superávit líquido do exercício no segmento futebol / Segmento clube social e esportes amadores / (Anteriormente / Receita bruta no segmento clube social e esportes amadores",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contribuições dos sócios (nota explicativa n.º",
+          "values": [
+            "2.12.4)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocínios e publicidades (nota explicativa n.º",
+          "values": [
+            "2.12.4)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrecadação de jogos (nota explicativa n.º",
+          "values": [
+            "2.12.4)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Explorações comerciais (nota explicativa n.º",
+          "values": [
+            "2.12.4)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiações, fiel torcedor e loterias e outras (nota explicativa n.º",
+          "values": [
+            "2.12.4)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas com repasses de direitos federativos (nota explicativa n.º",
+          "values": [
+            "2.12.4)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 26,
+      "section": "- 11.572 11.572 / - 285 285 / 14.259 (10.479) 3.780 / 4.874 (1.642) 3.232 / - 6 6",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "64.258 -",
+          "values": [
+            "64.258"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "62.212 -",
+          "values": [
+            "62.212"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "(47.829) (1.622) (49.451) / (45.810) 1.622 (44.188)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(100.176) .",
+          "values": [
+            "(100.176)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.175 -",
+          "values": [
+            "1.175"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "2.13. DRE GERENCIAL AJUSTADO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Direitos de transmissão de TV",
+          "values": [
+            "295.064",
+            "307.004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocínios e publicidades",
+          "values": [
+            "264.549",
+            "128.640"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrecadação de jogos",
+          "values": [
+            "94.081",
+            "91.056"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuições dos sócios",
+          "values": [
+            "26.991",
+            "25.366"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Explorações comerciais",
+          "values": [
+            "3.908",
+            "3.780"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Licenciamento e franquias",
+          "values": [
+            "19.750",
+            "20.017"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiações, fiel torcedor e loterias e outras",
+          "values": [
+            "72.158",
+            "109.797"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total da receita bruta no segmento Futebol/Clube",
+          "values": [
+            "776.501",
+            "685.660"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas com repasses de direitos federativos",
+          "values": [
+            "338.421",
+            "251.033"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total das receitas brutas operacionais no segmento Futebol/Clube",
+          "values": [
+            "1.114.922",
+            "936.693"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Deduções das receitas brutas no segmento Futebol/Clube",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Impostos e contribuições",
+          "values": [
+            "(35.407)",
+            "(36.860)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total da receita operacional líquida no segmento Futebol/Clube",
+          "values": [
+            "1.079.515",
+            "899.833"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo com vendas e aquisição de atletas",
+          "values": [
+            "(71.041)",
+            "(68.501)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do superávit bruto do exercício no segmento Futebol/Clube",
+          "values": [
+            "1.008.474",
+            "831.332"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 28,
+      "section": "Despesas operacionais no segmento Futebol/Clube",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pessoal",
+          "values": [
+            "(428.665)",
+            "(398.325)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de terceiros",
+          "values": [
+            "(89.081)",
+            "(75.874)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gerais e administrativas",
+          "values": [
+            "(141.715)",
+            "(84.169)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Futebol",
+          "values": [
+            "(54.566)",
+            "(66.856)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Esportes amadores",
+          "values": [
+            "(1.676)",
+            "(1.705)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total das despesas operacionais no segmento Futebol/Clube",
+          "values": [
+            "(715.708)",
+            "(626.929)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit operacional do Futebol/Clube - (EBTIDA)",
+          "values": [
+            "292.771",
+            "204.403"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão de Contingências",
+          "values": [
+            "(112.242)",
+            "7.700"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação e amortização de direitos",
+          "values": [
+            "(85.554)",
+            "(83.995)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas financeiras líquidas",
+          "values": [
+            "(279.155)",
+            "(127.383)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 30,
+      "section": "Processos novos Mudanças de . / existentes / Processos antigos Total dívidas / antigas antigos) Vo 2023) Anteriores 2023 / monetária)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contingência Cível - - 6.780 -",
+          "values": [
+            "6.780"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingência Esfera CNRD/FIFA/CAS - -",
+          "values": [
+            "2.359",
+            "4.149",
+            "17.448",
+            "19.238"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingência Trabalhista 2.895 4.597 2.695 -",
+          "values": [
+            "10.187"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingência Tributária - 19.487 |-",
+          "values": [
+            "9.421",
+            "38.785",
+            "48.851"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 35,
+      "section": "5.1. Contas a receber líquidas / 31/12/2024 31/12/2023 / Não Não / Descrição Circulante Circulante Circulante | Circulante / Direitos de transmissão de campeonatos 99.506 - 67.146 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Patrocínios",
+          "values": [
+            "240.051",
+            "409.328",
+            "212.274",
+            "156.318"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clubes desportivos localizados no país e no",
+          "values": [
+            "139.006",
+            "25.291",
+            "78.317",
+            "50.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "exterior (nota explicativa n.º",
+          "values": [
+            "5.3.5)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Licenciados e franqueados",
+          "values": [
+            "36.829",
+            "6.484",
+            "19.068",
+            "5.133"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 36,
+      "section": "Descrição Circulante | circulante Circulante circulante / Modalidades das Receitas Diferidas / Direitos de transmissão de TV dos campeonatos 2.484 - 63.549 - / Patrocínios 181.528 347.289 131.880 153.335 / Projeto incentivado e outros 335 - 110 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Licenciados e franqueados",
+          "values": [
+            "10.303",
+            "25.997",
+            "10.643",
+            "13.469"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total das Receitas a Realizar por Obrigação de",
+          "values": [
+            "194.650",
+            "373.286",
+            "206.182",
+            "166.804"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 39,
+      "section": "Sport Club Corinthians Paulista / Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 dezembro de 2024 e 2023 / (Em milhares de reais, exceto quando indicado de outro modo) / Clube Atleta 31/12/2024 31/12/2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Sport Lisboa Benfica Sad Pedro Henrique (Pedrinho) -",
+          "values": [
+            "2.687"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Football Club Shakhtar Donetsk Pedro Henrique (Pedrinho)",
+          "values": [
+            "3.524",
+            "2.930"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clube de Regatas Vasco da Gama |Lucas Piton, Felipe Bastos, Giovanni",
+          "values": [
+            "5.154",
+            "4.612"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "Augusto",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Sport Club do Recife Felipe Bastos",
+          "values": [
+            "4.080",
+            "4.080"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Botafogo Futebol de Regatas aan neartos! Yago Fernando/ Moises",
+          "values": [
+            "1.978",
+            "1.978"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Major League Soccer (Orlando City) | Gabriel Pereira/Tarciane Karen",
+          "values": [
+            "3.793",
+            "2.541"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "Cuiabá Esporte Clube Marcos Vinícius Sousa Natividade 361 375 / (Marquinhos)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cruzeiro Esporte Clube Matheus Davó -",
+          "values": [
+            "3.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FC ZENIT Malcom Filipe Silva de Oliveira",
+          "values": [
+            "8.396",
+            "1.676"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Al-Rayyan Football Club Co Roger Guedes",
+          "values": [
+            "25.755",
+            "36.915"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Al-Hilal Sandy FC Malcom Filipe Silva de Oliveira",
+          "values": [
+            "1.991",
+            "7.349"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nottingham Forest Football Club Murillo Santiago/Carlos Miguel",
+          "values": [
+            "6.436",
+            "44.011"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "recebimentos ligados aos associados do Clube. / 6. Despesas do Exercício Seguinte / As despesas antecipadas são avaliadas ao custo, acrescidas de atualizações, quando / aplicável. / Descrição 31/12/2024 31/12/2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Encargos financeiros a apropriar",
+          "values": [
+            "19.624",
+            "36.144"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras despesas antecipadas",
+          "values": [
+            "20.241",
+            "38.190"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 40,
+      "section": "acordo com o CPC 27- Ativo Imobilizado. O valor residual e a vida útil de um ativo são / descrita no quadro a seguir. O saldo do imobilizado é composto como segue: / 31/12/2024 31/12/2023 / Taxa Anual de Depreciação aa no / Descrição Depreciação Gusto Acumulada Líquido Líquido",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terrenos - 421.824 -",
+          "values": [
+            "421.824",
+            "421.824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações 4%",
+          "values": [
+            "207.343",
+            "(77.383)",
+            "129.960",
+            "134.112"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e equipamentos 10%",
+          "values": [
+            "5.949",
+            "(4.644)",
+            "1.305",
+            "1.145"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos de informática 10%",
+          "values": [
+            "36.282",
+            "(19.855)",
+            "16.427",
+            "11.898"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "As movimentações do imobilizado para os / 20283 estão demonstradas a seguir: / exercícios findos em 31 / de dezembro de 2024 e / Descrição 31/12/2028 Adições Baixas Transferência | Depreciação 31/12/2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terrenos 421.824 - - - -",
+          "values": [
+            "421.824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações 134.112 1.525 - -",
+          "values": [
+            "(5.679)",
+            "129.958"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "Equipamentos de / informática 11.900 9.377 (17) - (4.831) 16.429 / Máquinas e",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "equipamentos 1.143 416 - - (255)",
+          "values": [
+            "1.304"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios 1.383 306 (1) - (260)",
+          "values": [
+            "1.428"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": "Sport Club Corinthians Paulista / Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 dezembro de 2024 e 2023 / (Em milhares de reais, exceto quando indicado de outro modo) / Descrição 31/12/2022 Adições Baixas Transferência | Depreciação 31/12/2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terrenos 421.824 - - - -",
+          "values": [
+            "421.824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações 136.541 3.154 - -",
+          "values": [
+            "(5.583)",
+            "134.112"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": "Equipamentos de / informática 12.437 3.210 - - (3.747) 11.900 / Máquinas e",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "equipamentos 1.007 380 - - (244)",
+          "values": [
+            "1.143"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios 1.029 620 (1) - (265)",
+          "values": [
+            "1.383"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "2024 2023 / Direitos / Profissionais econômicos íci srmi / contrato Contrato ú “Susto” Amortização cu ido cu ido / Yo",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fausto Veras 70% 25/07/2022 30/06/2026 - - -",
+          "values": [
+            "24.095"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Yuri Alberto Monteiro da Silva 50% 02/01/2023 31/12/2027",
+          "values": [
+            "25.827",
+            "(9.817)",
+            "16.010",
+            "21.346"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Angelo Giovani Araos Lanos 10% 02/01/2023 31/12/2024 7.998 (7.998) -",
+          "values": [
+            "3.999"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "Maicon de Andrade Barberan 0% 02/01/2024 31/12/2024 3.880 (3.880) - - / Riovane Santana do 65% 15/07/2022 31/07/2025 3.334 (2.703) 631 1.712 / Fagner Conserva Lemos 50% 01/07/2024 31/12/2026 3.780 (2.398) 1.382 684",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ryan Gustavo de Lima 85% 15/07/2023 15/07/2026 1.845 (923)",
+          "values": [
+            "1.538"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Quinerme Sucigan Maira 90% 23/03/2023 31/12/2027 1.424 (540) es4",
+          "values": [
+            "1.203"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "Matheus Araujo de Andrade 70% 18/01/2022 31/12/2024 1.032 (1.032) - 324 / Matheus Planelles Donelli 90% 12/06/2024 30/06/2028 1.463 (1.020) 443 291 / coco Eduardo Bltencour da 50% 01/08/2019 31/10/2024 550 (550) - 90 / Arthur Sousa Araujo 60% 16/03/2019 08/09/2025 388 (353) 35 99 / Roni Medeiro de Moura 90% 22/06/2020 31/12/2024 274 (274) - 97",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(e O Lima Beltrão Oliveira 20% 02/01/2023 31/12/2025 1.650 (1.100)",
+          "values": [
+            "1.100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Janderson Santos de Souza 20% 02/01/2023 31/12/2025 1.600 (1.067)",
+          "values": [
+            "1.067"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Junior Nazareno Sornoza 40% 02/01/2023 31/12/2024 4.312 (4.312) -",
+          "values": [
+            "2.156"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Richard Candido Coelho 35% 02/01/2023 31/12/2024 2.822 (2.822) -",
+          "values": [
+            "1.411"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "Alex Paulo Menezes Santana 100% 10/07/2024 31/12/2027 2.659 (380) 2.219 - / Charles Rigon Matos 100% 22/07/2024 31/12/2028 12.136 (1.124) 11.012 - / Talles Magno Bacelar Martins 0% 07/08/2024 30/06/2025 550 (275) 275 - / José A. Martinez Torres 100% 23/08/2024 31/12/2027 10.530 (939) 9.591 - / Memphis Depay 100% 09/09/2024 31/07/2026 25.316 (4.403) 20.913 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Outros (4 e 12 atletas, respectivamente)",
+          "values": [
+            "2.164",
+            "(1.109)",
+            "1.055",
+            "10.141"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subtotal",
+          "values": [
+            "287.883",
+            "(84.602)",
+            "203.281",
+            "71.755"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "Direitos de Imagem -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Atletas em Formação (base) profissionalizados -",
+          "values": [
+            "50.599"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas em formação (base) -",
+          "values": [
+            "76.881"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do Intangível",
+          "values": [
+            "203.281",
+            "199.235"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": "o clube passou a possuir 4.396,30472 cotas. Estas cotas sofreram um ágio de R$ / 481,36992315, passando a totalizar R$ 302,89212982 cada cota. / Assim o clube possui em 2024, 4.396,30472 cotas, perfazendo um total de R$ 1.331.606,10. / O valor das cotas apresentado no ativo, está relacionado abaixo: / Descrição 31/12/2023 Adição cotas Ágio 31/12/2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cotas 1.500,00000000 | 2.896,30472000 -",
+          "values": [
+            "4.396,30472000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valor da cota(R$) (178,477793330) -",
+          "values": [
+            "481,36992315",
+            "302,89212982"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo final (R$) (268)",
+          "values": [
+            "481,36992315",
+            "1.332"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 45,
+      "section": "Banco XP Investimentos CCTVM condições do contrato e a 147.221 . / S/A partir de 12/2025 CDI + 3% ao , / ano / Outros bancos CDI + 0,60% ao mês 6.047 2.839 / Mútuos passivos:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Giuliano Pacheco 1,80% ao mês",
+          "values": [
+            "8.102",
+            "8.102"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "André Cury Marduy 0,60% ao mês",
+          "values": [
+            "6.406",
+            "6.406"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luis Fernando Menezes - -",
+          "values": [
+            "10.935"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 45,
+      "section": "Total do circulante (Instituições 297 799 82.710 / financeiras e mútuos passivos) / Instituições financeiras: / Banco Daycoval S.A 1,96% ao mês 6.159 6.806 / Banco BMG S.A. 1,27% ao mês 4.039 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Giuliano Pacheco 1,50% ao mês",
+          "values": [
+            "6.752",
+            "6.751"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do não circulante",
+          "values": [
+            "16.950",
+            "13.557"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 46,
+      "section": "11. Fornecedores / 31/12/2024 31/12/2023 / Circulante Não Circulante Não circulante / Descrição circulante / Fornecedores de produtos 1.890 - 2.517 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores de serviços",
+          "values": [
+            "194.673",
+            "46.180",
+            "180.555",
+            "39.528"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores de futebol 176.042 -",
+          "values": [
+            "44.494",
+            "9.463"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 46,
+      "section": "classificados pelo Clube como passivos circulantes acrescidos dos eventuais encargos / devidos. / Os valores para os exercícios findos em 31 de dezembro de 2024 e 2023 estão assim / representados: / Exploração de Imagem a pagar 31/12/2024 31/12/2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Direito de imagem a pagar (jogadores)",
+          "values": [
+            "99.777",
+            "111.318"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de imagem a pagar (Comissão técnica)",
+          "values": [
+            "2.978",
+            "2.700"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de Exploração de Imagem a pagar",
+          "values": [
+            "102.755",
+            "114.018"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 46,
+      "section": "13. Obrigações e Encargos Fiscais e Sociais a Recolher / Descrição 31/12/2024 31/12/2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Salários a pagar a funcionários",
+          "values": [
+            "7.819",
+            "14.785"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imposto de Renda Retido na Fonte (IRRF)",
+          "values": [
+            "107.371",
+            "36.040"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fundo de Garantia por Tempo de Serviço (FGTS)",
+          "values": [
+            "35.584",
+            "39.998"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 46,
+      "section": "Férias a pagar - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Provisão de férias e de encargos previdenciários",
+          "values": [
+            "8.683",
+            "7.374"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instituto Nacional de Seguridade Social (INSS)",
+          "values": [
+            "31.361",
+            "8.581"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 46,
+      "section": "Programa de Integração Social (PIS) 3.538 697",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Outras",
+          "values": [
+            "3.722",
+            "4.145"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total das obrigações e dos encargos fiscais e sociais a recolher",
+          "values": [
+            "198.078",
+            "111.620"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 47,
+      "section": "(Em milhares de reais, exceto quando indicado de outro modo) / 14. Tributos Parcelados / 31/12/2024 31/12/2023 / a . Não . Não / Descrição Circulante circulante Circulante circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Parcelamento PROFUT Lei 14.155/2015 (nota 14.1)",
+          "values": [
+            "9.836",
+            "120.429",
+            "2.990",
+            "99.612"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento PERSE- Previdenciário (nota 14.2)",
+          "values": [
+            "29.059",
+            "35.038",
+            "19.578",
+            "43.348"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento PERSE- Federal (nota 14.2)",
+          "values": [
+            "29.712",
+            "258.178",
+            "27.006",
+            "254.791"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento FGTS (nota 14.3)",
+          "values": [
+            "6.500",
+            "23.302",
+            "6.500",
+            "25.839"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento de Impostos Federais (nota 14.4)",
+          "values": [
+            "23.642",
+            "85.588",
+            "22.841",
+            "81.436"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento de PPI (nota 14.5) 4.325 34.485",
+          "values": [
+            "5.886"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 51,
+      "section": "CNRD/FIFA/CAS / CNRD/FIFA/CAS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contingência Tributária - — 48.851 — - 48.851 -",
+          "values": [
+            "48.851"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "total 10.625 -",
+          "values": [
+            "112.243",
+            "(3.243)",
+            "44.348",
+            "163.973",
+            "(68.278)",
+            "95.695"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 51,
+      "section": "Total de Ajustes de Contingência Esfera CNRD/FIFA/CAS, Cível, Trabalhista e Fiscal / E Abertura contingências - Dívidas passadas anteriores a 2024 / Processos a / antigas antigos) , s 2023) Anteriores 2023 ATUAIS / monetária)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contingência Cível - - 6.780 -",
+          "values": [
+            "6.780",
+            "2.182",
+            "8.962"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingência Esfera CNRD/FIFA/CAS - -",
+          "values": [
+            "2.359",
+            "4.149",
+            "17.448",
+            "19.238",
+            "17.717",
+            "36.955"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingência Trabalhista 2.895 4.597 2.695 -",
+          "values": [
+            "10.187",
+            "7.287",
+            "17.474"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingência Tributária - 19.487 |- 9.421 38.785 48.851 -",
+          "values": [
+            "48.851"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 54,
+      "section": "de ativos e passivos monetários denominados em moeda estrangeira são reconhecidos no / resultado dos exercícios findos nas datas indicadas a seguir. / 31/12/2024 31/12/2023 / Total das Receitas Financeiras 37.496 10.920 / (Despesas) Financeiras:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Juros sobre empréstimos e financiamentos a pagar",
+          "values": [
+            "(48.908)",
+            "(40.459)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variação cambial passiva",
+          "values": [
+            "(61.931)",
+            "(3.909)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imposto sobre Operações Financeiras (IOF)",
+          "values": [
+            "(2.200)",
+            "(1.692)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Com atualização monetária de impostos nota",
+          "values": [
+            "(158.541)",
+            "(68.065)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras (despesas) financeiras",
+          "values": [
+            "(45.072)",
+            "(24.177)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total das (Despesas) Financeiras",
+          "values": [
+            "(316.652)",
+            "(138.302)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do Resultado Financeiro Líquido (Devedor)",
+          "values": [
+            "(279.156)",
+            "(127.382)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 54,
+      "section": "Alocações realizadas do resultado financeiro líquido (devedor):",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Alocados ao clube social e esportes amadores",
+          "values": [
+            "(109.933)",
+            "(84.445)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alocados ao futebol",
+          "values": [
+            "(169.223)",
+            "(42.937)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 56,
+      "section": "para os exercícios findos em 31 de dezembro de 2024 e 2028. / Os valores a repassar então foram reduzidos por essa movimentação relativa aos custos / suportados pelo Clube durante esse período. / 31/12/2024 31/12/2023 / Saldo Inicial do Clube - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita bruta de jogos",
+          "values": [
+            "94.081",
+            "91.056"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas conforme boletim financeiro (borderô)",
+          "values": [
+            "(43.222)",
+            "(40.184)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 8,
+      "section": "(Valores expressos em milhares de reais) / Ativo / Notas 31/12/2024 31/12/2023 / Ativo circulante / Caixa e equivalentes de caixa 4 12.699 736",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do ativo circulante",
+      "target": "754.599",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-12694"
+    },
+    {
+      "page": 8,
+      "section": "(Valores expressos em milhares de reais) / Ativo / Notas 31/12/2024 31/12/2023 / Ativo circulante / Caixa e equivalentes de caixa 4 12.699 736",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do ativo circulante",
+      "target": "522.368",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-686"
+    },
+    {
+      "page": 8,
+      "section": "Investimento no Fundo Imobiliário Arena / Corinthians 9 1.332 - / Despesas do exercício seguinte 6 1.477 -",
+      "likelyRelevant": true,
+      "totalLabel": "Total do realizável a longo prazo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 8,
+      "section": "Investimento no Fundo Imobiliário Arena / Corinthians 9 1.332 - / Despesas do exercício seguinte 6 1.477 -",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total do Imobilizado e intangível",
+      "target": "775.932",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": "Investimento no Fundo Imobiliário Arena / Corinthians 9 1.332 - / Despesas do exercício seguinte 6 1.477 -",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total do Imobilizado e intangível",
+      "target": "771.467",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": "Investimento no Fundo Imobiliário Arena / Corinthians 9 1.332 - / Despesas do exercício seguinte 6 1.477 -",
+      "likelyRelevant": true,
+      "totalLabel": "Total do ativo não circulante",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 8,
+      "section": "Investimento no Fundo Imobiliário Arena / Corinthians 9 1.332 - / Despesas do exercício seguinte 6 1.477 -",
+      "likelyRelevant": true,
+      "totalLabel": "Total do ativo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 10,
+      "section": "os exercícios findos em 31 de dezembro de 2024 e 2023 / (Valores expressos em milhares de reais) / Notas 31/12/2024 31/12/2023 / Segmento futebol / Receita bruta no segmento futebol",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total da receita bruta no segmento futebol 713414",
+      "target": "621.406",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "92008"
+    },
+    {
+      "page": 10,
+      "section": "os exercícios findos em 31 de dezembro de 2024 e 2023 / (Valores expressos em milhares de reais) / Notas 31/12/2024 31/12/2023 / Segmento futebol / Receita bruta no segmento futebol",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total das receitas brutas operacionais no segmento futebol",
+      "target": "1.051.835",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-713414"
+    },
+    {
+      "page": 10,
+      "section": "os exercícios findos em 31 de dezembro de 2024 e 2023 / (Valores expressos em milhares de reais) / Notas 31/12/2024 31/12/2023 / Segmento futebol / Receita bruta no segmento futebol",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total das receitas brutas operacionais no segmento futebol",
+      "target": "872.433",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-621406"
+    },
+    {
+      "page": 10,
+      "section": "Deduções das receitas brutas no segmento futebol",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total da receita operacional líquida no segmento futebol",
+      "target": "1.017.299",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-1051835"
+    },
+    {
+      "page": 10,
+      "section": "Deduções das receitas brutas no segmento futebol",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total da receita operacional líquida no segmento futebol",
+      "target": "837.619",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-872433"
+    },
+    {
+      "page": 10,
+      "section": "Receitas (despesas) operacionais no segmento futebol",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total das despesas operacionais no segmento futebol",
+      "target": "(759.786)",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "Receitas (despesas) operacionais no segmento futebol",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total das despesas operacionais no segmento futebol",
+      "target": "(679.248)",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "Impostos e contribuições (872) (2.046) / Receita operacional líquida no segmento clube social e esportes / amadores 62.216 62.212 / Receitas (despesas) operacionais no segmento clube social e esportes / amadores",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total das despesas operacionais no segmento clube social e esportes amadores",
+      "target": "(112.512)",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "Impostos e contribuições (872) (2.046) / Receita operacional líquida no segmento clube social e esportes / amadores 62.216 62.212 / Receitas (despesas) operacionais no segmento clube social e esportes / amadores",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total das despesas operacionais no segmento clube social e esportes amadores",
+      "target": "(100.176)",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "Total do Déficit líquido do exercício no segmento clube social e esportes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total de Superávit (déficit) do exercício",
+      "target": "(181.766)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "22022"
+    },
+    {
+      "page": 10,
+      "section": "Total do Déficit líquido do exercício no segmento clube social e esportes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total de Superávit (déficit) do exercício",
+      "target": "1.175",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-120800"
+    },
+    {
+      "page": 28,
+      "section": "2.13. DRE GERENCIAL AJUSTADO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total da receita bruta no segmento Futebol/Clube",
+      "target": "776.501",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 28,
+      "section": "2.13. DRE GERENCIAL AJUSTADO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total da receita bruta no segmento Futebol/Clube",
+      "target": "685.660",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 28,
+      "section": "2.13. DRE GERENCIAL AJUSTADO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total das receitas brutas operacionais no segmento Futebol/Clube",
+      "target": "1.114.922",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-776501"
+    },
+    {
+      "page": 28,
+      "section": "2.13. DRE GERENCIAL AJUSTADO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total das receitas brutas operacionais no segmento Futebol/Clube",
+      "target": "936.693",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-685660"
+    },
+    {
+      "page": 28,
+      "section": "Deduções das receitas brutas no segmento Futebol/Clube",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total da receita operacional líquida no segmento Futebol/Clube",
+      "target": "1.079.515",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-1114922"
+    },
+    {
+      "page": 28,
+      "section": "Deduções das receitas brutas no segmento Futebol/Clube",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total da receita operacional líquida no segmento Futebol/Clube",
+      "target": "899.833",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-936693"
+    },
+    {
+      "page": 28,
+      "section": "Deduções das receitas brutas no segmento Futebol/Clube",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total do superávit bruto do exercício no segmento Futebol/Clube",
+      "target": "1.008.474",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-1079515"
+    },
+    {
+      "page": 28,
+      "section": "Deduções das receitas brutas no segmento Futebol/Clube",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total do superávit bruto do exercício no segmento Futebol/Clube",
+      "target": "831.332",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-899833"
+    },
+    {
+      "page": 28,
+      "section": "Despesas operacionais no segmento Futebol/Clube",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total das despesas operacionais no segmento Futebol/Clube",
+      "target": "(715.708)",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "5"
+    },
+    {
+      "page": 28,
+      "section": "Despesas operacionais no segmento Futebol/Clube",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total das despesas operacionais no segmento Futebol/Clube",
+      "target": "(626.929)",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "Descrição Circulante | circulante Circulante circulante / Modalidades das Receitas Diferidas / Direitos de transmissão de TV dos campeonatos 2.484 - 63.549 - / Patrocínios 181.528 347.289 131.880 153.335 / Projeto incentivado e outros 335 - 110 -",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total das Receitas a Realizar por Obrigação de",
+      "target": "194.650",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-184347"
+    },
+    {
+      "page": 36,
+      "section": "Descrição Circulante | circulante Circulante circulante / Modalidades das Receitas Diferidas / Direitos de transmissão de TV dos campeonatos 2.484 - 63.549 - / Patrocínios 181.528 347.289 131.880 153.335 / Projeto incentivado e outros 335 - 110 -",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total das Receitas a Realizar por Obrigação de",
+      "target": "373.286",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-347289"
+    },
+    {
+      "page": 36,
+      "section": "Descrição Circulante | circulante Circulante circulante / Modalidades das Receitas Diferidas / Direitos de transmissão de TV dos campeonatos 2.484 - 63.549 - / Patrocínios 181.528 347.289 131.880 153.335 / Projeto incentivado e outros 335 - 110 -",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Total das Receitas a Realizar por Obrigação de",
+      "target": "206.182",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-195539"
+    },
+    {
+      "page": 36,
+      "section": "Descrição Circulante | circulante Circulante circulante / Modalidades das Receitas Diferidas / Direitos de transmissão de TV dos campeonatos 2.484 - 63.549 - / Patrocínios 181.528 347.289 131.880 153.335 / Projeto incentivado e outros 335 - 110 -",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "Total das Receitas a Realizar por Obrigação de",
+      "target": "166.804",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-153335"
+    },
+    {
+      "page": 43,
+      "section": "Alex Paulo Menezes Santana 100% 10/07/2024 31/12/2027 2.659 (380) 2.219 - / Charles Rigon Matos 100% 22/07/2024 31/12/2028 12.136 (1.124) 11.012 - / Talles Magno Bacelar Martins 0% 07/08/2024 30/06/2025 550 (275) 275 - / José A. Martinez Torres 100% 23/08/2024 31/12/2027 10.530 (939) 9.591 - / Memphis Depay 100% 09/09/2024 31/07/2026 25.316 (4.403) 20.913 -",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Subtotal",
+      "target": "287.883",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-285719"
+    },
+    {
+      "page": 43,
+      "section": "Alex Paulo Menezes Santana 100% 10/07/2024 31/12/2027 2.659 (380) 2.219 - / Charles Rigon Matos 100% 22/07/2024 31/12/2028 12.136 (1.124) 11.012 - / Talles Magno Bacelar Martins 0% 07/08/2024 30/06/2025 550 (275) 275 - / José A. Martinez Torres 100% 23/08/2024 31/12/2027 10.530 (939) 9.591 - / Memphis Depay 100% 09/09/2024 31/07/2026 25.316 (4.403) 20.913 -",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Subtotal",
+      "target": "(84.602)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "83493"
+    },
+    {
+      "page": 43,
+      "section": "Alex Paulo Menezes Santana 100% 10/07/2024 31/12/2027 2.659 (380) 2.219 - / Charles Rigon Matos 100% 22/07/2024 31/12/2028 12.136 (1.124) 11.012 - / Talles Magno Bacelar Martins 0% 07/08/2024 30/06/2025 550 (275) 275 - / José A. Martinez Torres 100% 23/08/2024 31/12/2027 10.530 (939) 9.591 - / Memphis Depay 100% 09/09/2024 31/07/2026 25.316 (4.403) 20.913 -",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Subtotal",
+      "target": "203.281",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-202226"
+    },
+    {
+      "page": 43,
+      "section": "Alex Paulo Menezes Santana 100% 10/07/2024 31/12/2027 2.659 (380) 2.219 - / Charles Rigon Matos 100% 22/07/2024 31/12/2028 12.136 (1.124) 11.012 - / Talles Magno Bacelar Martins 0% 07/08/2024 30/06/2025 550 (275) 275 - / José A. Martinez Torres 100% 23/08/2024 31/12/2027 10.530 (939) 9.591 - / Memphis Depay 100% 09/09/2024 31/07/2026 25.316 (4.403) 20.913 -",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Subtotal",
+      "target": "71.755",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-61614"
+    },
+    {
+      "page": 43,
+      "section": "Direitos de Imagem -",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do Intangível",
+      "target": "203.281",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-75801"
+    },
+    {
+      "page": 45,
+      "section": "Total do circulante (Instituições 297 799 82.710 / financeiras e mútuos passivos) / Instituições financeiras: / Banco Daycoval S.A 1,96% ao mês 6.159 6.806 / Banco BMG S.A. 1,27% ao mês 4.039 -",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do não circulante",
+      "target": "16.950",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-10198"
+    },
+    {
+      "page": 45,
+      "section": "Total do circulante (Instituições 297 799 82.710 / financeiras e mútuos passivos) / Instituições financeiras: / Banco Daycoval S.A 1,96% ao mês 6.159 6.806 / Banco BMG S.A. 1,27% ao mês 4.039 -",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do não circulante",
+      "target": "13.557",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-6806"
+    },
+    {
+      "page": 46,
+      "section": "classificados pelo Clube como passivos circulantes acrescidos dos eventuais encargos / devidos. / Os valores para os exercícios findos em 31 de dezembro de 2024 e 2023 estão assim / representados: / Exploração de Imagem a pagar 31/12/2024 31/12/2023",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total de Exploração de Imagem a pagar",
+      "target": "102.755",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 46,
+      "section": "classificados pelo Clube como passivos circulantes acrescidos dos eventuais encargos / devidos. / Os valores para os exercícios findos em 31 de dezembro de 2024 e 2023 estão assim / representados: / Exploração de Imagem a pagar 31/12/2024 31/12/2023",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total de Exploração de Imagem a pagar",
+      "target": "114.018",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 46,
+      "section": "Programa de Integração Social (PIS) 3.538 697",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total das obrigações e dos encargos fiscais e sociais a recolher",
+      "target": "198.078",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-194356"
+    },
+    {
+      "page": 46,
+      "section": "Programa de Integração Social (PIS) 3.538 697",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total das obrigações e dos encargos fiscais e sociais a recolher",
+      "target": "111.620",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-107475"
+    },
+    {
+      "page": 51,
+      "section": "CNRD/FIFA/CAS / CNRD/FIFA/CAS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "total 10.625 -",
+      "target": "112.243",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-63392"
+    },
+    {
+      "page": 54,
+      "section": "de ativos e passivos monetários denominados em moeda estrangeira são reconhecidos no / resultado dos exercícios findos nas datas indicadas a seguir. / 31/12/2024 31/12/2023 / Total das Receitas Financeiras 37.496 10.920 / (Despesas) Financeiras:",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total das (Despesas) Financeiras",
+      "target": "(316.652)",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 54,
+      "section": "de ativos e passivos monetários denominados em moeda estrangeira são reconhecidos no / resultado dos exercícios findos nas datas indicadas a seguir. / 31/12/2024 31/12/2023 / Total das Receitas Financeiras 37.496 10.920 / (Despesas) Financeiras:",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total das (Despesas) Financeiras",
+      "target": "(138.302)",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 54,
+      "section": "de ativos e passivos monetários denominados em moeda estrangeira são reconhecidos no / resultado dos exercícios findos nas datas indicadas a seguir. / 31/12/2024 31/12/2023 / Total das Receitas Financeiras 37.496 10.920 / (Despesas) Financeiras:",
+      "likelyRelevant": true,
+      "totalLabel": "Total do Resultado Financeiro Líquido (Devedor)",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 48,
+    "results": [
+      {
+        "label": "Imobilizado líquido",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Imobilizado líquido",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intangível",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intangível",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direitos de transmissão de TV",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "broadcasting",
+        "matchedLabel": "Direitos de transmissão de TV (segmento futebol)",
+        "similarity": 50
+      },
+      {
+        "label": "Direitos de transmissão de TV",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrocínios e publicidades",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Patrocínios e publicidades (segmento futebol)",
+        "similarity": 50
+      },
+      {
+        "label": "Patrocínios e publicidades",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Arrecadação de jogos",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "matchday_competition",
+        "matchedLabel": "Arrecadação de jogos (segmento futebol)",
+        "similarity": 50
+      },
+      {
+        "label": "Arrecadação de jogos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Premiações, fiel torcedor e loterias e outras",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Premiações, Fiel Torcedor, Loterias e Outras (segmento futebol)",
+        "similarity": 71
+      },
+      {
+        "label": "Premiações, fiel torcedor e loterias e outras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas com repasses de direitos federativos",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "player_sales",
+        "matchedLabel": "Receitas com repasses de direitos federativos (segmento futebol)",
+        "similarity": 71
+      },
+      {
+        "label": "Receitas com repasses de direitos federativos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impostos e contribuições",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Impostos e contribuições (dedução)",
+        "similarity": 67
+      },
+      {
+        "label": "Impostos e contribuições",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pessoal",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pessoal",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços de terceiros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços de terceiros",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Serviços de terceiros (segmento futebol)",
+        "similarity": 50
+      },
+      {
+        "label": "Gerais e administrativas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gerais e administrativas",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gerais e administrativas (segmento futebol)",
+        "similarity": 50
+      },
+      {
+        "label": "Custo com vendas e aquisição de atletas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Custo com vendas e aquisição de atletas",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Custo com vendas e aquisição de atletas",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Depreciação e amortização de direitos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciação e amortização de direitos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Futebol",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Futebol",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Rateio de despesas administrativas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Rateio de despesas administrativas",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Rateio de despesas administrativas (segmento futebol, Nota 17)",
+        "similarity": 50
+      },
+      {
+        "label": "resultado de outras receitas (despesas) não operacionais",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras receitas (despesas) operacionais líquidas",
+        "similarity": 57
+      },
+      {
+        "label": "resultado de outras receitas (despesas) não operacionais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão de contingências",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão de contingências",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas financeiras líquidas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas financeiras líquidas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras receitas (despesas) operacionais",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras receitas (despesas) operacionais líquidas",
+        "similarity": 80
+      },
+      {
+        "label": "Outras receitas (despesas) operacionais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit líquido (déficit) líquido do exercício no segmento futebol",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit líquido (déficit) líquido do exercício no segmento futebol",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contribuições dos sócios",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "member_dues",
+        "matchedLabel": "Contribuições dos sócios (segmento clube social)",
+        "similarity": 50
+      },
+      {
+        "label": "Contribuições dos sócios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Esportes amadores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Esportes amadores",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Esportes amadores",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Rateio das despesas administrativas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Rateio das despesas administrativas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "não operacionais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "não operacionais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras receitas (despesas) operacionais 19",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras receitas (despesas) operacionais líquidas",
+        "similarity": 80
+      },
+      {
+        "label": "Outras receitas (despesas) operacionais 19",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pessoal (nota explicativa n.º",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pessoal (nota explicativa n.º",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços de terceiros (nota explicativa n.º",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços de terceiros (nota explicativa n.º",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gerais e administrativas (nota explicativa n.º",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gerais e administrativas (nota explicativa n.º",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contribuições dos sócios (nota explicativa n.º",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contribuições dos sócios (nota explicativa n.º",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrocínios e publicidades (nota explicativa n.º",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrocínios e publicidades (nota explicativa n.º",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Arrecadação de jogos (nota explicativa n.º",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Arrecadação de jogos (nota explicativa n.º",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Explorações comerciais (nota explicativa n.º",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Explorações comerciais (nota explicativa n.º",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Premiações, fiel torcedor e loterias e outras (nota explicativa n.º",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Premiações, Fiel Torcedor, Loterias e Outras (segmento futebol)",
+        "similarity": 56
+      },
+      {
+        "label": "Premiações, fiel torcedor e loterias e outras (nota explicativa n.º",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas com repasses de direitos federativos (nota explicativa n.º",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "player_sales",
+        "matchedLabel": "Receitas com repasses de direitos federativos (segmento futebol)",
+        "similarity": 56
+      },
+      {
+        "label": "Receitas com repasses de direitos federativos (nota explicativa n.º",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit operacional do Futebol/Clube - (EBTIDA)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit operacional do Futebol/Clube - (EBTIDA)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão de Contingências",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisão de Contingências",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Licenciados e franqueados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Licenciados e franqueados",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Encargos financeiros a apropriar",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Encargos financeiros a apropriar",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras despesas antecipadas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras despesas antecipadas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros sobre empréstimos e financiamentos a pagar",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros sobre empréstimos e financiamentos a pagar",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variação cambial passiva",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variação cambial passiva",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Imposto sobre Operações Financeiras (IOF)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Imposto sobre Operações Financeiras (IOF)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Com atualização monetária de impostos nota",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Com atualização monetária de impostos nota",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras (despesas) financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras (despesas) financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Alocados ao clube social e esportes amadores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Alocados ao clube social e esportes amadores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Alocados ao futebol",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Alocados ao futebol",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita bruta de jogos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita bruta de jogos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas conforme boletim financeiro (borderô)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas conforme boletim financeiro (borderô)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Corinthians",
+    "matches": [
+      {
+        "leagueId": "br-serieA",
+        "year": "2024",
+        "matchedName": "Corinthians",
+        "wikipediaPage": "2024 Campeonato Brasileiro Série A"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": [
+    "14 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "16 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

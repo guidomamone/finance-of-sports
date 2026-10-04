@@ -1,0 +1,200 @@
+{
+  "club": "gimnasiaesgrima-ar",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Gimnasia y Esgrima LP/informe-economico-financiero-dic-2022.md",
+  "generatedAt": "2026-09-30T21:51:00.687Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 41,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 3,
+      "section": "ESTADO ECONÓMICO Y FINANCIERO AL 1/12/2022 / ## COMPOSICIÓN DE LA DEUDA: $2.865 MM",
+      "columns": [
+        "Mutuos y préstamos",
+        "60%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Deuda en moneda extranjera por jugadores",
+          "values": [
+            "20%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salarios adeudados fútbol profesional",
+          "values": [
+            "10%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AFIP",
+          "values": [
+            "5%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proveedores, día del partido y gastos varios",
+          "values": [
+            "5%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "ESTADO ECONÓMICO Y FINANCIERO AL 1/12/2022 / ## COMPOSICIÓN DE LAS DEUDAS EN MONEDA EXTRANJERA POR JUGADORES",
+      "columns": [
+        "Equipo / jugador",
+        "Deuda en USD",
+        "Tipo de cambio",
+        "Total en pesos"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Al-Ettifaq (Alemán)",
+          "values": [
+            "USD 330.734",
+            "173,75",
+            "$57.465.122"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Boston River (Fratta)",
+          "values": [
+            "USD 40.000",
+            "173,75",
+            "$6.950.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Olimpia (Sosa)",
+          "values": [
+            "USD 740.284",
+            "173,75",
+            "$128.624.506"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tembetary (Sosa)",
+          "values": [
+            "USD 1.054.379",
+            "173,75",
+            "$183.198.478"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gestión y MKT Dep LLC (Piris)",
+          "values": [
+            "USD 300.000",
+            "173,75",
+            "$52.125.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sport Manag. LLC (Soldano)",
+          "values": [
+            "USD 159.000",
+            "173,75",
+            "$27.626.250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Representación Soldano",
+          "values": [
+            "USD 38.720",
+            "316,17",
+            "$12.242.102"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Olympiacos (Soldano)",
+          "values": [
+            "USD 493.613",
+            "178,75",
+            "$88.233.448"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Club Unión (Soldano)",
+          "values": [
+            "USD 45.000",
+            "178,75",
+            "$8.043.750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Club Tigre (Cardozo)",
+          "values": [
+            "USD 73.653",
+            "173,75",
+            "$12.797.335"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "USD 3.275.383",
+          "values": [
+            "",
+            "",
+            "$577.305.991"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Gimnasia y Esgrima (La Plata)",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 3,
+      "line": "|  Deuda en moneda extranjera por jugadores | 20%  |"
+    },
+    {
+      "page": 5,
+      "line": "DE JUGADORES EN MONEDA EXTRANJERA**"
+    },
+    {
+      "page": 6,
+      "line": "## COMPOSICIÓN DE LAS DEUDAS EN MONEDA EXTRANJERA POR JUGADORES"
+    },
+    {
+      "page": 6,
+      "line": "|  Equipo / jugador | Deuda en USD | Tipo de cambio | Total en pesos  |"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,93 @@
+{
+ "pdf": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2009.pdf",
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2009.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T16:43:01.540Z",
+ "ubicacion": {
+  "estado": [
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b3",
+   "escala": "miles",
+   "evidencia": "L41: \"2009 M$\""
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b3",
+   "linea": 43,
+   "etiqueta": "Resultado de explotación",
+   "actual": "(921.692)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 44,
+   "etiqueta": "Resultado fuera de explotación",
+   "actual": "(681)",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 45,
+   "etiqueta": "Resultado antes de impuesto a la renta",
+   "actual": "(922.373)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 46,
+   "etiqueta": "Impuesto a la renta",
+   "actual": "194.459",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 47,
+   "etiqueta": "**(Pérdida) del ejercicio**",
+   "actual": "**(727.914)**",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 47,
+  "actual": "(727.914)",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado b3 (L43-L47) solo con resultados resumidos, sin desglose de ingresos y gastos de explotación?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Resultado de explotación",
+   "texto": "El estado (L43) solo muestra el resultado de explotación neto, sin ingresos ni costos, y no hay notas que lo desglosen.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado resumido en M$ (miles de pesos chilenos), solo columna 2009; no hay columna de año anterior ni totales de ingresos/gastos impresos. Resultado: (922.373) + 194.459 = (727.914), consistente."
+}

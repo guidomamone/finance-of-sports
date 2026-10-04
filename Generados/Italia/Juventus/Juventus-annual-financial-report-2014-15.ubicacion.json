@@ -1,0 +1,685 @@
+{
+ "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2014-15.pdf",
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2014-15.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T22:33:45.752Z",
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    53,
+    76
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 12,
+   "lineas": [
+    203,
+    208
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 14,
+   "lineas": [
+    236,
+    242
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 18,
+   "lineas": [
+    369,
+    376
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 40,
+   "lineas": [
+    1017,
+    1028
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 49,
+   "lineas": [
+    1321,
+    1328
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 50,
+   "lineas": [
+    1354,
+    1358
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 51,
+   "lineas": [
+    1388,
+    1396
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 52,
+   "lineas": [
+    1449,
+    1463
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 53,
+   "lineas": [
+    1493,
+    1499
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 53,
+   "lineas": [
+    1505,
+    1520
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 54,
+   "lineas": [
+    1538,
+    1547
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 54,
+   "lineas": [
+    1554,
+    1568
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 54,
+   "lineas": [
+    1576,
+    1581
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 63,
+   "lineas": [
+    1771,
+    1776
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 66,
+   "lineas": [
+    1807,
+    1835
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 67,
+   "lineas": [
+    1843,
+    1873
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 69,
+   "lineas": [
+    1887,
+    1913
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 69,
+   "lineas": [
+    1917,
+    1927
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 70,
+   "lineas": [
+    1937,
+    1947
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 71,
+   "lineas": [
+    1957,
+    2003
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 76,
+   "lineas": [
+    2126,
+    2137
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 84,
+   "lineas": [
+    2445,
+    2450
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 85,
+   "lineas": [
+    2460,
+    2486
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 86,
+   "lineas": [
+    2500,
+    2559
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 87,
+   "lineas": [
+    2569,
+    2587
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 88,
+   "lineas": [
+    2603,
+    2631
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 89,
+   "lineas": [
+    2649,
+    2675
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 89,
+   "lineas": [
+    2681,
+    2687
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 90,
+   "lineas": [
+    2699,
+    2733
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 91,
+   "lineas": [
+    2757,
+    2767
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 92,
+   "lineas": [
+    2791,
+    2803
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 92,
+   "lineas": [
+    2813,
+    2824
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 93,
+   "lineas": [
+    2836,
+    2841
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 93,
+   "lineas": [
+    2855,
+    2864
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 94,
+   "lineas": [
+    2882,
+    2914
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 95,
+   "lineas": [
+    2924,
+    2938
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 96,
+   "lineas": [
+    2968,
+    2975
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 96,
+   "lineas": [
+    2993,
+    3000
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 97,
+   "lineas": [
+    3018,
+    3025
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 97,
+   "lineas": [
+    3047,
+    3055
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 98,
+   "lineas": [
+    3073,
+    3081
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 98,
+   "lineas": [
+    3089,
+    3095
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 99,
+   "lineas": [
+    3111,
+    3175
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 100,
+   "lineas": [
+    3187,
+    3192
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 100,
+   "lineas": [
+    3202,
+    3212
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 101,
+   "lineas": [
+    3250,
+    3260
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 102,
+   "lineas": [
+    3283,
+    3290
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 102,
+   "lineas": [
+    3296,
+    3300
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 102,
+   "lineas": [
+    3314,
+    3321
+   ],
+   "tipo": "tabla"
+  },
+  "b51": {
+   "pagina": 103,
+   "lineas": [
+    3329,
+    3365
+   ],
+   "tipo": "tabla"
+  },
+  "b52": {
+   "pagina": 104,
+   "lineas": [
+    3381,
+    3392
+   ],
+   "tipo": "tabla"
+  },
+  "b53": {
+   "pagina": 104,
+   "lineas": [
+    3404,
+    3429
+   ],
+   "tipo": "tabla"
+  },
+  "b54": {
+   "pagina": 105,
+   "lineas": [
+    3443,
+    3454
+   ],
+   "tipo": "tabla"
+  },
+  "b55": {
+   "pagina": 105,
+   "lineas": [
+    3460,
+    3465
+   ],
+   "tipo": "tabla"
+  },
+  "b56": {
+   "pagina": 105,
+   "lineas": [
+    3471,
+    3480
+   ],
+   "tipo": "tabla"
+  },
+  "b57": {
+   "pagina": 106,
+   "lineas": [
+    3490,
+    3496
+   ],
+   "tipo": "tabla"
+  },
+  "b58": {
+   "pagina": 106,
+   "lineas": [
+    3506,
+    3514
+   ],
+   "tipo": "tabla"
+  },
+  "b59": {
+   "pagina": 106,
+   "lineas": [
+    3520,
+    3534
+   ],
+   "tipo": "tabla"
+  },
+  "b60": {
+   "pagina": 107,
+   "lineas": [
+    3557,
+    3568
+   ],
+   "tipo": "tabla"
+  },
+  "b61": {
+   "pagina": 107,
+   "lineas": [
+    3574,
+    3581
+   ],
+   "tipo": "tabla"
+  },
+  "b62": {
+   "pagina": 108,
+   "lineas": [
+    3601,
+    3606
+   ],
+   "tipo": "tabla"
+  },
+  "b63": {
+   "pagina": 108,
+   "lineas": [
+    3620,
+    3625
+   ],
+   "tipo": "tabla"
+  },
+  "b64": {
+   "pagina": 108,
+   "lineas": [
+    3631,
+    3637
+   ],
+   "tipo": "tabla"
+  },
+  "b65": {
+   "pagina": 109,
+   "lineas": [
+    3647,
+    3655
+   ],
+   "tipo": "tabla"
+  },
+  "b66": {
+   "pagina": 109,
+   "lineas": [
+    3659,
+    3678
+   ],
+   "tipo": "tabla"
+  },
+  "b67": {
+   "pagina": 110,
+   "lineas": [
+    3690,
+    3699
+   ],
+   "tipo": "tabla"
+  },
+  "b68": {
+   "pagina": 110,
+   "lineas": [
+    3711,
+    3715
+   ],
+   "tipo": "tabla"
+  },
+  "b69": {
+   "pagina": 111,
+   "lineas": [
+    3727,
+    3741
+   ],
+   "tipo": "tabla"
+  },
+  "b70": {
+   "pagina": 112,
+   "lineas": [
+    3778,
+    3781
+   ],
+   "tipo": "tabla"
+  },
+  "b71": {
+   "pagina": 112,
+   "lineas": [
+    3789,
+    3805
+   ],
+   "tipo": "tabla"
+  },
+  "b72": {
+   "pagina": 113,
+   "lineas": [
+    3847,
+    3857
+   ],
+   "tipo": "tabla"
+  },
+  "b73": {
+   "pagina": 116,
+   "lineas": [
+    3949,
+    3970
+   ],
+   "tipo": "tabla"
+  },
+  "b74": {
+   "pagina": 117,
+   "lineas": [
+    3982,
+    4002
+   ],
+   "tipo": "tabla"
+  },
+  "b75": {
+   "pagina": 118,
+   "lineas": [
+    4029,
+    4125
+   ],
+   "tipo": "tabla"
+  },
+  "b76": {
+   "pagina": 119,
+   "lineas": [
+    4139,
+    4231
+   ],
+   "tipo": "tabla"
+  },
+  "b77": {
+   "pagina": 134,
+   "lineas": [
+    4506,
+    4511
+   ],
+   "tipo": "texto"
+  },
+  "b78": {
+   "pagina": 134,
+   "lineas": [
+    4536,
+    4544
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b18"
+ ],
+ "notas_ingresos": [
+  "b49",
+  "b50",
+  "b52",
+  "b63"
+ ],
+ "notas_gastos": [
+  "b53",
+  "b54",
+  "b56",
+  "b58",
+  "b60",
+  "b61",
+  "b62",
+  "b64",
+  "b65"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "*Amounts in euro* (encabezado del Income Statement, b18)",
+ "moneda": "EUR",
+ "columna_ejercicio": "2014/2015 Financial Year",
+ "columna_anterior": "2013/2014 Financial Year",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de detalle por jugador de 'Revenues from players' registration rights' (b51)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Revenues from players' registration rights",
+   "texto": "b51 detalla por jugador/club lo que b50 ya abre por categoría.",
+   "bloques": [
+    "b51"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se deja afuera el cuadro 'Auxiliary expenses' por jugador (b59)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Auxiliary non-capitalised expenses for players' registration rights",
+   "texto": "Detalle por jugador de un renglón ya en b58.",
+   "bloques": [
+    "b59"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Estado individual de Juventus FC S.p.A. (no hay consolidado). Las notas están en miles de euro mientras el estado está en euros. Tablas de b6-b8 son del informe de gestión en millones (resúmenes), no se usan. No se ve nota de Ticket sales ni Sponsorship ni amortización de otros activos con tabla; nota 35 (sponsorship) aparenta ser solo texto."
+}

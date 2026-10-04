@@ -1,0 +1,114 @@
+{
+  "md": "Clubes/Dinamarca/Vejle/aarsrapport-2014-12-31.md",
+  "pdf": "Clubes/Dinamarca/Vejle/aarsrapport-2014-12-31.pdf",
+  "club": "vejle-dk",
+  "year": 2014,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:00:09.417Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 10,
+    "notasUsadas": [
+      "5"
+    ]
+  },
+  "ladoConocido": 7,
+  "rubros": [
+    {
+      "label": "Nettoomsætning",
+      "lado": "revenue",
+      "page": 10,
+      "section": "## Resultatopgørelse 1. januar - 31. december",
+      "values": [
+        17.999
+      ],
+      "origen": "estado 1",
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Andre driftsindtægter",
+      "lado": "revenue",
+      "page": 10,
+      "section": "## Resultatopgørelse 1. januar - 31. december",
+      "values": [
+        13.309
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Akkord",
+      "lado": "revenue",
+      "page": 13,
+      "section": "# Noter til årsrapporten",
+      "values": [
+        13.309
+      ],
+      "origen": "nota 5 (ancla 1)",
+      "ancla": "Andre driftsindtægter",
+      "glosa": "Quita por convenio de acreedores"
+    },
+    {
+      "label": "Andre eksterne omkostninger",
+      "lado": "expense",
+      "page": 10,
+      "section": "## Resultatopgørelse 1. januar - 31. december",
+      "values": [
+        -13.008
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros gastos externos"
+    },
+    {
+      "label": "Personaleomkostninger",
+      "lado": "expense",
+      "page": 10,
+      "section": "## Resultatopgørelse 1. januar - 31. december",
+      "values": [
+        -20.419
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+      "lado": null,
+      "page": 10,
+      "section": "## Resultatopgørelse 1. januar - 31. december",
+      "values": [
+        -1.192
+      ],
+      "origen": "estado 1",
+      "glosa": "Amortizaciones y correcciones de valor de inmovilizado inmaterial y material"
+    },
+    {
+      "label": "Finansielle indtægter",
+      "lado": "revenue",
+      "page": 10,
+      "section": "## Resultatopgørelse 1. januar - 31. december",
+      "values": [
+        0.008
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Finansielle omkostninger",
+      "lado": "expense",
+      "page": 10,
+      "section": "## Resultatopgørelse 1. januar - 31. december",
+      "values": [
+        -1.224
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos financieros"
+    }
+  ]
+}

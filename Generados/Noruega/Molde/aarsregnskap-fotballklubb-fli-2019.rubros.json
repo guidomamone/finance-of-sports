@@ -1,0 +1,671 @@
+{
+ "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2019.md",
+ "pdf": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2019.pdf",
+ "club": "molde",
+ "year": 2019,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:39.014Z",
+ "tieOuts": {
+  "cierran": 88,
+  "noCierran": 2
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "15 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 60,
+  "notasUsadas": [
+   "14",
+   "20",
+   "21",
+   "22",
+   "23",
+   "24"
+  ]
+ },
+ "ladoConocido": 61,
+ "rubros": [
+  {
+   "label": "Administrasjon",
+   "lado": "expense",
+   "page": 26,
+   "section": "## Molde Fotballklubb",
+   "values": [
+    4541.637
+   ],
+   "origen": "nota 14 (ancla 0)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Sum kostnader",
+   "lado": "expense",
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "values": [
+    136424.429
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Lønn spillere, trenere, støtteapparat og administrasjon",
+   "lado": "expense",
+   "page": 31,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "values": [
+    68093.535
+   ],
+   "origen": "nota 20 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 31,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "values": [
+    9649.174
+   ],
+   "origen": "nota 20 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Pensjonskostnad",
+   "lado": "expense",
+   "page": 31,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "values": [
+    717.946
+   ],
+   "origen": "nota 20 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 31,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "values": [
+    3332.322
+   ],
+   "origen": "nota 20 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Gjennomsnittlig antall årsverk i 2019",
+   "lado": "expense",
+   "page": 31,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "values": [
+    0.06
+   ],
+   "origen": "nota 20 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Utgifter treningsleir/privatkamper",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 9 Trening utstyr",
+   "values": [
+    2565.441
+   ],
+   "origen": "nota 21 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Leie treningsbaner etc.",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 9 Trening utstyr",
+   "values": [
+    2102.182
+   ],
+   "origen": "nota 21 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Sportsrekvisita",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 9 Trening utstyr",
+   "values": [
+    2386.134
+   ],
+   "origen": "nota 21 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Medisinske tjenester og rekvisita",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 9 Trening utstyr",
+   "values": [
+    260.478
+   ],
+   "origen": "nota 21 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Andre sportslige kostnader",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 9 Trening utstyr",
+   "values": [
+    2299.76
+   ],
+   "origen": "nota 21 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Baneleie serie- og cupkamper",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 10 Egne arrangement",
+   "values": [
+    70.133
+   ],
+   "origen": "nota 22 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Avgift Norges Fotballforbund",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 10 Egne arrangement",
+   "values": [
+    538.243
+   ],
+   "origen": "nota 22 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Annonsering seriekamper",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 10 Egne arrangement",
+   "values": [
+    426.364
+   ],
+   "origen": "nota 22 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Utgifter billettsalg",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 10 Egne arrangement",
+   "values": [
+    962.287
+   ],
+   "origen": "nota 22 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Andre arrangementskostnader",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 10 Egne arrangement",
+   "values": [
+    2931.155
+   ],
+   "origen": "nota 22 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Utgifter cup kamper",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 11 Andres arrangement",
+   "values": [
+    31.653
+   ],
+   "origen": "nota 23 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Utgifter e-cup",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 11 Andres arrangement",
+   "values": [
+    5000.604
+   ],
+   "origen": "nota 23 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Utgifter andre arrangement",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 11 Andres arrangement",
+   "values": [
+    633.087
+   ],
+   "origen": "nota 23 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Reisekostnader seriekamper",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 11 Andres arrangement",
+   "values": [
+    2628.63
+   ],
+   "origen": "nota 23 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Kjøp og leie spillere",
+   "lado": "expense",
+   "page": 26,
+   "section": "## Molde Fotballklubb",
+   "values": [
+    3041.356
+   ],
+   "origen": "nota 14 (ancla 0)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Utgifter Prosjekt/Tiltak",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 12 Andre driftskostnader",
+   "values": [
+    626.724
+   ],
+   "origen": "nota 24 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 12 Andre driftskostnader",
+   "values": [
+    6256.391
+   ],
+   "origen": "nota 24 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Varekjøp og andre kostnader kiosker",
+   "lado": "expense",
+   "page": 32,
+   "section": "# Note 12 Andre driftskostnader",
+   "values": [
+    1177.643
+   ],
+   "origen": "nota 24 (ancla 0>14)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Anleggskostnader",
+   "lado": "expense",
+   "page": 26,
+   "section": "## Molde Fotballklubb",
+   "values": [
+    107.758
+   ],
+   "origen": "nota 14 (ancla 0)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Avskrivninger",
+   "lado": "expense",
+   "page": 26,
+   "section": "## Molde Fotballklubb",
+   "values": [
+    15817.641
+   ],
+   "origen": "nota 14 (ancla 0)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Tap på fordringer",
+   "lado": "expense",
+   "page": 26,
+   "section": "## Molde Fotballklubb",
+   "values": [
+    226.151
+   ],
+   "origen": "nota 14 (ancla 0)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Medlemsinntekter/tilskudd",
+   "lado": "revenue",
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "values": [
+    48678.68
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Kamp- og billettinntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "values": [
+    15983.066
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Avtale MF/sponsor",
+   "lado": "revenue",
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "values": [
+    47741.212
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "values": [
+    8849.141
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "values": [
+    15667.189
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Medlemsinntekter/tilskudd",
+   "lado": "revenue",
+   "page": 41,
+   "section": "# Molde Fotballklubb / BREDDEFOTBALLSTYRET / Resultatregnskap 2019",
+   "values": [
+    2800.419
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "lado": "revenue",
+   "page": 41,
+   "section": "# Molde Fotballklubb / BREDDEFOTBALLSTYRET / Resultatregnskap 2019",
+   "values": [
+    4238.751
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Administrasjon",
+   "lado": "expense",
+   "page": 40,
+   "section": "",
+   "values": [
+    3928.739
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Personalkostnader",
+   "lado": "expense",
+   "page": 40,
+   "section": "",
+   "values": [
+    79872.023
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Trening og utstyr",
+   "lado": "expense",
+   "page": 40,
+   "section": "",
+   "values": [
+    8567.526
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Egne arrangement",
+   "lado": "expense",
+   "page": 40,
+   "section": "",
+   "values": [
+    4327.411
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Andres arrangement",
+   "lado": "expense",
+   "page": 40,
+   "section": "",
+   "values": [
+    8128.509
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Kjøp og leie spillere",
+   "lado": "expense",
+   "page": 40,
+   "section": "",
+   "values": [
+    3024.456
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Kostnader sponosorer/overføringer",
+   "lado": "expense",
+   "page": 40,
+   "section": "",
+   "values": [
+    6503.586
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Avskrivninger",
+   "lado": "expense",
+   "page": 40,
+   "section": "",
+   "values": [
+    15545.913
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Administrasjon",
+   "lado": "expense",
+   "page": 41,
+   "section": "",
+   "values": [
+    655.898
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Personalkostnader",
+   "lado": "expense",
+   "page": 41,
+   "section": "",
+   "values": [
+    1920.954
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Trening og utstyr",
+   "lado": "expense",
+   "page": 41,
+   "section": "",
+   "values": [
+    1046.469
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Egne arrangement",
+   "lado": "expense",
+   "page": 41,
+   "section": "",
+   "values": [
+    646.248
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Andres arrangement",
+   "lado": "expense",
+   "page": 41,
+   "section": "",
+   "values": [
+    165.465
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Kjøp og leie spillere",
+   "lado": "expense",
+   "page": 41,
+   "section": "",
+   "values": [
+    16.9
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Kostnader sponsorer/overføringer",
+   "lado": "expense",
+   "page": 41,
+   "section": "",
+   "values": [
+    1857.172
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Avskrivninger",
+   "lado": "expense",
+   "page": 41,
+   "section": "",
+   "values": [
+    271.728
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Inntekter Seriekamper",
+   "lado": "revenue",
+   "page": 30,
+   "section": "## Note 2 Kamp- og billettinntekter",
+   "values": [
+    12.900146
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Inntekter E-Cup",
+   "lado": "revenue",
+   "page": 30,
+   "section": "## Note 2 Kamp- og billettinntekter",
+   "values": [
+    2.902488
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Oppgjør NM Cup",
+   "lado": "revenue",
+   "page": 30,
+   "section": "## Note 2 Kamp- og billettinntekter",
+   "values": [
+    0.180432
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Publikumssnitt hjemmekamper i Eliteserien",
+   "lado": "revenue",
+   "page": 30,
+   "section": "## Note 2 Kamp- og billettinntekter",
+   "values": [
+    0.006944
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Medlemskontingent",
+   "lado": "revenue",
+   "page": 30,
+   "section": "## Note 3 Medlemsinntekter og tilskudd",
+   "values": [
+    0.222941
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Egenandeler/deltakeravgift",
+   "lado": "revenue",
+   "page": 30,
+   "section": "## Note 3 Medlemsinntekter og tilskudd",
+   "values": [
+    2.691607
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Markedsmidler NFF, NTF og UEFA",
+   "lado": "revenue",
+   "page": 30,
+   "section": "## Note 3 Medlemsinntekter og tilskudd",
+   "values": [
+    43.533739
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Andre tilskudd",
+   "lado": "revenue",
+   "page": 30,
+   "section": "## Note 3 Medlemsinntekter og tilskudd",
+   "values": [
+    2.230392
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Kiosksalg",
+   "lado": "revenue",
+   "page": 30,
+   "section": "## Note 4 Avtale med Molde Fotball AS / ## Note 5 Andre driftsinntekter",
+   "values": [
+    2.228996
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "lado": "revenue",
+   "page": 30,
+   "section": "## Note 4 Avtale med Molde Fotball AS / ## Note 5 Andre driftsinntekter",
+   "values": [
+    6.620145
+   ],
+   "origen": "estado 18"
+  }
+ ]
+}

@@ -1,0 +1,582 @@
+{
+ "md": "Clubes/Colombia/Boyaca Chico/estados-financieros-2022.md",
+ "generatedAt": "2026-09-30T22:48:56.028Z",
+ "rubrosHuella": "cd8d74e9fd554b61d823af3c29c3500bad6759b9",
+ "rubros": [
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 16: Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 995
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 16: Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Gastos de Personal",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 16: Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.67
+    ],
+    [
+     "wages_squad",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 16: Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Mantenimiento y Reparaciones",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 16: Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 16: Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 976
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 16: Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 986
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 16: Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1176
+  },
+  {
+   "label": "Depreciación",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 16: Gastos de administración",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Ingresos por auxilio Hotelero - Dimayor",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# NOTA 13: Ventas",
+   "choice": "broadcasting",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "broadcasting",
+     0.97
+    ],
+    [
+     "competition_bonus",
+     0.03
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Diversos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "NOTA 15: Otros ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Ingresos por auxilio de Transportes - Dimayor",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# NOTA 13: Ventas",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "Ingresos por Auxilios Covid - Dimayor",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# NOTA 13: Ventas",
+   "choice": "competition_bonus",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "competition_bonus",
+     0.56
+    ],
+    [
+     "broadcasting",
+     0.22
+    ],
+    [
+     "other_income",
+     0.19
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Ingresos por Derechos de Televisión",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# NOTA 13: Ventas",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Ingresos por auxilio de Arbitraje - Dimayor",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# NOTA 13: Ventas",
+   "choice": "broadcasting",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "broadcasting",
+     0.95
+    ],
+    [
+     "competition_bonus",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Gastos de Viaje",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 16: Gastos de administración",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 990
+  },
+  {
+   "label": "Ventas por Auxilio de Logística - Dimayor",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# NOTA 13: Ventas",
+   "choice": "broadcasting",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "broadcasting",
+     0.97
+    ],
+    [
+     "competition_bonus",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Costos de Personal y Jugadores",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 14: Costos de ventas",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Honorarios y Arriendos",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 14: Costos de ventas",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 990
+  },
+  {
+   "label": "Ingresos por Auxilio de Mejoramientos - Dimayor",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# NOTA 13: Ventas",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Ingresos por Patrocinios recibidos de terceros",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# NOTA 13: Ventas",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Subsidios Estatales PAEF",
+   "lado": "revenue",
+   "page": 10,
+   "section": "NOTA 15: Otros ingresos",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.63
+    ],
+    [
+     "education",
+     0.37
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 943
+  },
+  {
+   "label": "Partidos y Actividades Deportivas",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 14: Costos de ventas",
+   "choice": "match_organisation_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.52
+    ],
+    [
+     "youth_other_sports_expense",
+     0.4
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Financieros",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 17: Otros Gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 938
+  },
+  {
+   "label": "Gastos diversos",
+   "lado": "expense",
+   "page": 10,
+   "section": "NOTA 17: Otros Gastos",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1016
+  }
+ ]
+}

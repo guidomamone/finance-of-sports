@@ -1,0 +1,86 @@
+{
+  "club": "westerlo-be",
+  "year": 2006,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Westerlo/jaarrekening-2006-12-31-individual.md",
+  "generatedAt": "2026-09-30T21:56:02.393Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 11,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 5,
+      "section": "Nr. BE 0436.473.670 VKT 2.2 / PASSIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "EIGEN VERMOGEN 10/15",
+          "values": [
+            "20.070",
+            "21.544"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaal 5.3 |",
+          "values": [
+            "18.592",
+            "18.592"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geplaatst kapitaal",
+          "values": [
+            "18.592",
+            "18.592"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Niet-opgevraagd kapitaal 101 / Uitgiftepremies 11 / Herwaarderingsmeerwaarden 12",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Reserves",
+          "values": [
+            "1.859",
+            "66.007"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wettelijke reserve",
+          "values": [
+            "1.859",
+            "1.859"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "be",
+    "query": "Westerlo",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

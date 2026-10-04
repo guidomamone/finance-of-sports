@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Países Bajos/AZ/jaarrekening-2023-24.md",
+ "generado": "2026-10-02T00:11:30.254Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "€ x 1000",
+ "caja": {
+  "lineas": [
+   713
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   747,
+   1514
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se toman el préstamo bancario a largo plazo (7.333) y el préstamo de la gemeente Zaanstad (4.511), que forma parte de 'Overige schulden' a largo plazo. La porción corriente de ambos (aprox. 667 y 6) está incluida en 'Overige schulden' corrientes (L754) y no aparece desglosada. Las restantes 'Overige schulden' a largo plazo (6.012, con interés del 4,5-5,25%) podrían ser deudas por transferencias; no se incluyeron."
+}

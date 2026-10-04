@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Bélgica/Club Brugge/jaarrekening-2025-06-30-consolidado.md",
+ "generado": "2026-10-02T00:13:11.234Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "Eigen vermogen en verplichtingen in 000€ per",
+ "caja": {
+  "lineas": [
+   517
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   600,
+   609
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las etiquetas del pasivo y los importes aparecen en columnas separadas; se asignaron por orden: Leningen no corriente 25.954 (L600) y corriente 683 (L609). Se excluyen las leaseverplichtingen (8.128 y 1.431) por no ser préstamos bancarios."
+}

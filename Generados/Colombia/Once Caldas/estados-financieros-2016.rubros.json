@@ -1,0 +1,399 @@
+{
+  "md": "Clubes/Colombia/Once Caldas/estados-financieros-2016.md",
+  "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2016.pdf",
+  "club": "oncecaldas",
+  "year": 2016,
+  "numberFormat": "us (coma miles, punto decimal)",
+  "generatedAt": "2026-09-30T21:59:25.466Z",
+  "tieOuts": {
+    "cierran": 13,
+    "noCierran": 11
+  },
+  "warnings": [
+    "11 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "6 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": false,
+  "seleccion": {
+    "ok": true,
+    "filas": 35,
+    "notasUsadas": []
+  },
+  "ladoConocido": 34,
+  "rubros": [
+    {
+      "label": "FINANCIEROS",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        118992
+      ],
+      "origen": "estado 26",
+      "glosa": "FINANCIEROS"
+    },
+    {
+      "label": "INTERESES",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        16036
+      ],
+      "origen": "estado 26",
+      "glosa": "INTERESES"
+    },
+    {
+      "label": "DIFERENCIA EN CAMBIO",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        39464
+      ],
+      "origen": "estado 26",
+      "glosa": "DIFERENCIA EN CAMBIO"
+    },
+    {
+      "label": "INTERESES NIIF",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        63492
+      ],
+      "origen": "estado 26",
+      "glosa": "INTERESES NIIF"
+    },
+    {
+      "label": "FLOTA Y EQUIPO DE TRANSP",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        8750
+      ],
+      "origen": "estado 26",
+      "glosa": "FLOTA Y EQUIPO DE TRANSP"
+    },
+    {
+      "label": "RECUPERACIONES",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        291776
+      ],
+      "origen": "estado 26",
+      "glosa": "RECUPERACIONES"
+    },
+    {
+      "label": "REINTE DE OTROS COSTOS Y GASTO",
+      "lado": "expense",
+      "page": 17,
+      "section": "",
+      "values": [
+        184938
+      ],
+      "origen": "estado 26",
+      "glosa": "REINTE DE OTROS COSTOS Y GASTO"
+    },
+    {
+      "label": "RECUPERACION INVENTARIO",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        8457
+      ],
+      "origen": "estado 26",
+      "glosa": "RECUPERACION INVENTARIO"
+    },
+    {
+      "label": "REINTREGROS NIIF",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        24496
+      ],
+      "origen": "estado 26",
+      "glosa": "REINTREGROS NIIF"
+    },
+    {
+      "label": "REINTEGRO DE GTOS AQOS ANTERIO",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        73884
+      ],
+      "origen": "estado 26",
+      "glosa": "REINTEGRO DE GTOS AQOS ANTERIO"
+    },
+    {
+      "label": "INDEMNIZACIONES",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        101501
+      ],
+      "origen": "estado 26",
+      "glosa": "INDEMNIZACIONES"
+    },
+    {
+      "label": "POR INCAPACIDADES DEL ISS",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        101501
+      ],
+      "origen": "estado 26",
+      "glosa": "POR INCAPACIDADES DEL ISS"
+    },
+    {
+      "label": "INGRESOS DE EJERCICIOS ANTERIO",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        118300
+      ],
+      "origen": "estado 26",
+      "glosa": "INGRESOS DE EJERCICIOS ANTERIO"
+    },
+    {
+      "label": "DIVERSOS",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        136842
+      ],
+      "origen": "estado 26",
+      "glosa": "DIVERSOS"
+    },
+    {
+      "label": "APROVECHAMIENTOS",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        26773
+      ],
+      "origen": "estado 26",
+      "glosa": "APROVECHAMIENTOS"
+    },
+    {
+      "label": "SUBVENCIONES",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        38169
+      ],
+      "origen": "estado 26",
+      "glosa": "SUBVENCIONES"
+    },
+    {
+      "label": "REGALIAS",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        43785
+      ],
+      "origen": "estado 26",
+      "glosa": "REGALIAS"
+    },
+    {
+      "label": "PREMIOS-GANANCIA OCASIONAL",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        28100
+      ],
+      "origen": "estado 26",
+      "glosa": "PREMIOS-GANANCIA OCASIONAL"
+    },
+    {
+      "label": "AJUSTE AL PESO",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        15
+      ],
+      "origen": "estado 26",
+      "glosa": "AJUSTE AL PESO"
+    },
+    {
+      "label": "INGRESOS POR COBRAR: En ésta se registran los obligaciones correspondiente a la venta de la publicidad, en los contratos queda establecido las fechas de pago, las cuales son normalmente a un año; son obligaciones de excelente comportamiento, a la fecha la obligación más representativa es con LYS, que representa el 87.35%",
+      "lado": "revenue",
+      "page": 8,
+      "section": "",
+      "values": [
+        616.621
+      ],
+      "origen": "estado 4",
+      "glosa": "INGRESOS POR COBRAR: En ésta se registran los obligaciones correspondiente a la venta de la publicidad, en los contratos queda establecido las fechas de pago, las cuales son normalmente a un año; son obligaciones de excelente comportamiento, a la fecha la obligación más representativa es con LYS, que representa el 87.35%"
+    },
+    {
+      "label": "Otros (Publicidad)",
+      "lado": "revenue",
+      "page": 8,
+      "section": "",
+      "values": [
+        616.011
+      ],
+      "origen": "estado 4",
+      "glosa": "Otros (Publicidad)"
+    },
+    {
+      "label": "Intereses de mora- Publicidad",
+      "lado": "revenue",
+      "page": 8,
+      "section": "",
+      "values": [
+        0.61
+      ],
+      "origen": "estado 4",
+      "glosa": "Intereses de mora- Publicidad"
+    },
+    {
+      "label": "Anticipos de Impuestos : los valores de los anticipos de impuesto de renta y anticipo de impuesto del cree, serán solicitada como devolución a la DIAN, la expectativa es recuperarlos en el transcurso del año.",
+      "lado": "expense",
+      "page": 8,
+      "section": "",
+      "values": [
+        555.628
+      ],
+      "origen": "estado 4",
+      "glosa": "Anticipos de Impuestos : los valores de los anticipos de impuesto de renta y anticipo de impuesto del cree, serán solicitada como devolución a la DIAN, la expectativa es recuperarlos en el transcurso del año."
+    },
+    {
+      "label": "Retecree: Este valor corresponde a las autorretenciones que se pagaron durante todo el año, el cual podremos solicitar como devolución, ya que al hacer la provisión del impuesto de renta para la equidad, tendríamos que cancelar la suma de $12.050.000, valor que vamos a cancelar en el momento de presentar la declaración",
+      "lado": "expense",
+      "page": 8,
+      "section": "",
+      "values": [
+        147.568
+      ],
+      "origen": "estado 4",
+      "glosa": "Retecree: Este valor corresponde a las autorretenciones que se pagaron durante todo el año, el cual podremos solicitar como devolución, ya que al hacer la provisión del impuesto de renta para la equidad, tendríamos que cancelar la suma de $12.050.000, valor que vamos a cancelar en el momento de presentar la declaración"
+    },
+    {
+      "label": "Anticipo de impuesto de renta: valor que solicitaremos se nos reintegre, de acuerdo a la normatividad, donde nos permite solicitar la devolución de la retención en la fuente, por estar dentro del proceso de reestructuración",
+      "lado": "expense",
+      "page": 8,
+      "section": "",
+      "values": [
+        408.06
+      ],
+      "origen": "estado 4",
+      "glosa": "Anticipo de impuesto de renta: valor que solicitaremos se nos reintegre, de acuerdo a la normatividad, donde nos permite solicitar la devolución de la retención en la fuente, por estar dentro del proceso de reestructuración"
+    },
+    {
+      "label": "Cuentas por Cobrar a empleados : Valores, descontados directamente de nómina, donde el plazo máximo es de dos meses.",
+      "lado": "revenue",
+      "page": 8,
+      "section": "",
+      "values": [
+        28.138
+      ],
+      "origen": "estado 4",
+      "glosa": "Cuentas por Cobrar a empleados : Valores, descontados directamente de nómina, donde el plazo máximo es de dos meses."
+    },
+    {
+      "label": "Cuentas por cobrar a Empleados- capital",
+      "lado": "revenue",
+      "page": 8,
+      "section": "",
+      "values": [
+        28.138
+      ],
+      "origen": "estado 4",
+      "glosa": "Cuentas por cobrar a Empleados- capital"
+    },
+    {
+      "label": "Deudores Varios : los valores registrados, corresponden a venta de abonos y otros créditos hechos a empresas aliadas del Once Caldas, como es la Corporacion y la Fundacion del Once Caldas, e igualmente a terceros que no se clasifican en las cuentas anteriores. Se registran los intereses por mora, de acuerdo a nuestra política contable.",
+      "lado": "revenue",
+      "page": 8,
+      "section": "",
+      "values": [
+        155.225
+      ],
+      "origen": "estado 4",
+      "glosa": "Deudores Varios : los valores registrados, corresponden a venta de abonos y otros créditos hechos a empresas aliadas del Once Caldas, como es la Corporacion y la Fundacion del Once Caldas, e igualmente a terceros que no se clasifican en las cuentas anteriores. Se registran los intereses por mora, de acuerdo a nuestra política contable."
+    },
+    {
+      "label": "Deudores Varios",
+      "lado": "revenue",
+      "page": 8,
+      "section": "",
+      "values": [
+        142.116
+      ],
+      "origen": "estado 4",
+      "glosa": "Deudores Varios"
+    },
+    {
+      "label": "Intereses- deudores varios",
+      "lado": "revenue",
+      "page": 8,
+      "section": "",
+      "values": [
+        13.109
+      ],
+      "origen": "estado 4",
+      "glosa": "Intereses- deudores varios"
+    },
+    {
+      "label": "COOMEVA EPS",
+      "lado": "revenue",
+      "page": 8,
+      "section": "",
+      "values": [
+        0.806
+      ],
+      "origen": "estado 4",
+      "glosa": "COOMEVA EPS"
+    },
+    {
+      "label": "COLPENSIONES",
+      "lado": "revenue",
+      "page": 8,
+      "section": "",
+      "values": [
+        2.718
+      ],
+      "origen": "estado 4",
+      "glosa": "COLPENSIONES"
+    },
+    {
+      "label": "VALOY RIASCOS JHON EDWARD: Valor correspondiente a la rescisión del contrato, a la fecha nos adeuda lo equivalente a 4 mil dólares",
+      "lado": "revenue",
+      "page": 8,
+      "section": "",
+      "values": [
+        13.049
+      ],
+      "origen": "estado 4",
+      "glosa": "VALOY RIASCOS JHON EDWARD: Valor correspondiente a la rescisión del contrato, a la fecha nos adeuda lo equivalente a 4 mil dólares"
+    },
+    {
+      "label": "GASTOS FINANCIEROS",
+      "lado": "expense",
+      "page": 17,
+      "section": "",
+      "values": [
+        1.507061
+      ],
+      "origen": "estado 27",
+      "glosa": "GASTOS FINANCIEROS"
+    }
+  ]
+}

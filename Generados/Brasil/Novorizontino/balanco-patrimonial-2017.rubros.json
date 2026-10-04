@@ -1,0 +1,242 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/balanco-patrimonial-2017.md",
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-patrimonial-2017.pdf",
+ "club": "novorizontino",
+ "year": 2017,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:53:31.665Z",
+ "tieOuts": {
+  "cierran": 2,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 22,
+  "notasUsadas": []
+ },
+ "ladoConocido": 16,
+ "rubros": [
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    8.02
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Receitas de Jogos, Patrimônios, Locações e outras",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    1.068
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Receita com Negociação de Atleta",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    3.306
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Repasse da Federação Paulista de Futebol",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    3.499
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Receita com Empréstimo de Atleta",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    0.027
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Receita com Exploração de Publicidade",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    0.05
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "RECEITA OPERACIONAL",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    8.02
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-)CUSTO DO DEPARTAMENTO DE FUTEBOL",
+   "lado": "expense",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    -6.694
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-) Custo do Departamento Profissional",
+   "lado": "expense",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    -4.527
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-) Custo do Departamento Amador",
+   "lado": "expense",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    -2.167
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-)DESPESAS OPERACIONAIS",
+   "lado": "expense",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    -3.083
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Administrativa p/ Rateio de Categoria",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    -2.751
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Futebol Profissional",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    -0.332
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas Gerais e de Manutenção p/ Rateio de Categoria",
+   "lado": "expense",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    -2.563
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Futebol Profissional",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    -1.51
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Futebol Amador",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    -1.053
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Outras Despesas Operacionais Administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    -0.466
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Provisões no Exercício",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    -0.414
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas Financeiras Líquidas",
+   "lado": "expense",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    -0.141
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Recuperação de Despesas",
+   "lado": "expense",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    0.056
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Recurso do Projeto",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    0.07
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-) Aplicação do Recurso",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "values": [
+    -0.07
+   ],
+   "origen": "estado 2"
+  }
+ ]
+}

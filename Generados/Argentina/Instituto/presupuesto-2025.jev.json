@@ -1,0 +1,237 @@
+{
+ "md": "Clubes/Argentina/Instituto/presupuesto-2025.md",
+ "generatedAt": "2026-09-30T22:48:21.210Z",
+ "rubrosHuella": "06948c052c82eb42a9ad28e878500943cae5be07",
+ "rubros": [
+  {
+   "label": "3.- RECURSOS POR VENTA DE ABONOS ESTADIO $ 650.000.000 $ 60.000.000 $ 60.000.000 $ 60.000.000 $ 60.000.000 $ 60.000.000 $ 750.000.000 $ 70.000.000 $ 70.000.000 $ 70.000.000 $ 70.000.000 $ 70.000.000 $",
+   "lado": "revenue",
+   "page": 1,
+   "section": "CLUB: INSTITUTO ATLETICO CENTRAL CORDOBA / RECURSOS DE FUNCIONAMIENTO",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "top3": [
+    [
+     "season_tickets",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1223
+  },
+  {
+   "label": "g. COMERCIALIZACION Y OTROS $ 250.000.000 $ 85.000.000 $ 85.000.000 $ 85.000.000 $ 85.000.000 $ 120.000.000 $ 85.000.000 $ 130.000.000 $ 85.000.000 $ 150.000.000 $ 85.000.000 $ 250.000.000 $",
+   "lado": "revenue",
+   "page": 1,
+   "section": "CLUB: INSTITUTO ATLETICO CENTRAL CORDOBA / RECURSOS DE FUNCIONAMIENTO",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1238
+  },
+  {
+   "label": "i. PUBLICIDAD ESTATICA Y DINAMICA $0 $ 50.000.000 $ 4.000.000 $ 4.000.000 $ 4.000.000 $ 4.000.000 $ 4.000.000 $ 4.000.000 $ 4.000.000 $ 4.000.000 $ 4.000.000 $ 4.000.000 $",
+   "lado": "revenue",
+   "page": 1,
+   "section": "CLUB: INSTITUTO ATLETICO CENTRAL CORDOBA / RECURSOS DE FUNCIONAMIENTO",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1185
+  },
+  {
+   "label": "1.- GASTOS EXPLOTACION DEL ESTADIO $ 43.500.000 $ 43.500.000 $ 43.500.000 $ 43.500.000 $ 43.500.000 $ 43.500.000 $ 43.500.000 $ 43.500.000 $ 43.500.000 $ 43.500.000 $ 43.500.000 $ 43.500.000 $",
+   "lado": "expense",
+   "page": 2,
+   "section": "GASTOS DE FUNCIONAMIENTO",
+   "choice": "match_organisation_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1292
+  },
+  {
+   "label": "h. ESPONSORIZACION $ 115.000.000 $ 115.000.000 $ 215.000.000 $ 232.000.000 $ 232.000.000 $ 232.000.000 $ 151.600.000 $ 151.600.000 $ 151.600.000 $ 151.600.000 $ 35.000.000 $ 35.000.000 $",
+   "lado": "revenue",
+   "page": 1,
+   "section": "CLUB: INSTITUTO ATLETICO CENTRAL CORDOBA / RECURSOS DE FUNCIONAMIENTO",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "4.- RETRANSMISION Y DERECHOS DE TV $ 250.000.000 $ 250.000.000 $ 250.000.000 $ 300.000.000 $ 300.000.000 $ 300.000.000 $ 360.000.000 $ 360.000.000 $ 360.000.000 $ 360.000.000 $ 360.000.000 $ 360.000.000 $",
+   "lado": "revenue",
+   "page": 1,
+   "section": "CLUB: INSTITUTO ATLETICO CENTRAL CORDOBA / RECURSOS DE FUNCIONAMIENTO",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1189
+  },
+  {
+   "label": "5.- MARKETING Y PUBLICIDAD $ 365.000.000 $ 250.000.000 $ 304.000.000 $ 321.000.000 $ 321.000.000 $ 356.000.000 $ 240.600.000 $ 285.600.000 $ 240.600.000 $ 305.600.000 $ 124.000.000 $ 289.000.000 $",
+   "lado": "revenue",
+   "page": 1,
+   "section": "CLUB: INSTITUTO ATLETICO CENTRAL CORDOBA / RECURSOS DE FUNCIONAMIENTO",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1197
+  },
+  {
+   "label": "2.- GASTOS POR PARTICIPACION $ 35.000.000 $ 80.000.000 $ 80.000.000 $ 80.000.000 $ 80.000.000 $ 80.000.000 $ 40.000.000 $ 90.000.000 $ 90.000.000 $ 90.000.000 $ 90.000.000 $ 90.000.000 $",
+   "lado": "expense",
+   "page": 2,
+   "section": "GASTOS DE FUNCIONAMIENTO",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1154
+  },
+  {
+   "label": "a. COMPETICIONES OFICIALES L.P.F. $ 35.000.000 $ 80.000.000 $ 80.000.000 $ 80.000.000 $ 80.000.000 $ 80.000.000 $ 40.000.000 $ 90.000.000 $ 90.000.000 $ 90.000.000 $ 90.000.000 $ 90.000.000 $",
+   "lado": "expense",
+   "page": 2,
+   "section": "GASTOS DE FUNCIONAMIENTO",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1446
+  },
+  {
+   "label": "6.- RECURSOS POR VENTA DE JUGADORES $ 150.000.000 $0 $0 $0 $0 $0 $0 $0 $0 $ 400.000.000 $0 $0 $",
+   "lado": "revenue",
+   "page": 1,
+   "section": "CLUB: INSTITUTO ATLETICO CENTRAL CORDOBA / RECURSOS DE FUNCIONAMIENTO",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1126
+  }
+ ]
+}

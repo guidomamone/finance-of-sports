@@ -1,0 +1,535 @@
+{
+ "md": "Clubes/Noruega/Sandefjord/aarsregnskap-sandefjord-fotball-fli-2018.md",
+ "generatedAt": "2026-09-30T12:59:28.482Z",
+ "rubros": [
+  {
+   "label": "Netto finans",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1485
+  },
+  {
+   "label": "DRIFTSRESULTAT",
+   "lado": null,
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Tilskudd",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ],
+    [
+     "education",
+     0.03
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": null,
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1558
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL / # RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Driftsinntekter",
+   "lado": null,
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "choice": "lump_football_operations",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.83
+    ],
+    [
+     "other_income",
+     0.14
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Lønn",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL / # RESULTATREGNSKAP",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "ÅRSRESULTAT",
+   "lado": null,
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Ordinært resultat etter skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL / # RESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "other_income",
+     0.15
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Lønnskostnader",
+   "lado": null,
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Tilskudd Sandefjord Fotball AS",
+   "lado": null,
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "lump_football_operations",
+     0.21000000000000002
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Finansinntekter",
+   "lado": null,
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Finanskostnader",
+   "lado": null,
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "admin_general_expense",
+     0.43
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Netto finansposter",
+   "lado": null,
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1483
+  },
+  {
+   "label": "Lønn og andre naturalytelser",
+   "lado": "expense",
+   "page": 34,
+   "section": "#### b) Omløpsmidler/Kortsiktig gjeld / #### c) Anleggsmidler/Langsiktig gjeld / #### d) Fordringer / #### e) Aksjer / ### Note 2 Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "wages_squad",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1155
+  },
+  {
+   "label": "Avsatt til annen egenkapital",
+   "lado": "expense",
+   "page": 31,
+   "section": "### DISPONERING AV ÅRSRESULTAT",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 977
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 34,
+   "section": "#### b) Omløpsmidler/Kortsiktig gjeld / #### c) Anleggsmidler/Langsiktig gjeld / #### d) Fordringer / #### e) Aksjer / ### Note 2 Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "wages_squad",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Andre lønnsrelaterte ytelser, kantine-vask etc.",
+   "lado": "expense",
+   "page": 34,
+   "section": "#### b) Omløpsmidler/Kortsiktig gjeld / #### c) Anleggsmidler/Langsiktig gjeld / #### d) Fordringer / #### e) Aksjer / ### Note 2 Lønnskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "wages_squad",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1119
+  },
+  {
+   "label": "Administrasjonskostnader",
+   "lado": "expense",
+   "page": 35,
+   "section": "# Note 7 Pensjonsforpliktelser / # Note 8 Spesifikasjon av driftskostnader",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 813
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 35,
+   "section": "# Note 7 Pensjonsforpliktelser / # Note 8 Spesifikasjon av driftskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 812
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 34,
+   "section": "#### b) Omløpsmidler/Kortsiktig gjeld / #### c) Anleggsmidler/Langsiktig gjeld / #### d) Fordringer / #### e) Aksjer / ### Note 2 Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "wages_squad",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 839
+  }
+ ]
+}

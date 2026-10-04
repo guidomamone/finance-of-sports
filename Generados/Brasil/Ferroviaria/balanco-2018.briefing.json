@@ -1,0 +1,1806 @@
+{
+  "club": "ferroviaria",
+  "year": 2018,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Ferroviaria/balanco-2018.md",
+  "generatedAt": "2026-09-30T21:52:29.291Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 25,
+    "space": 0
+  },
+  "scannedWarning": true,
+  "tableCount": 6,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "CNPJ: 06.020.811/0001-30 / # Balanço Patrimonial / ATIVO",
+      "columns": [
+        "Ativo",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ativo Circulante",
+          "values": [
+            "647.438,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disponível",
+          "values": [
+            "135.383,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa Geral",
+          "values": [
+            "17.067,05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa Geral",
+          "values": [
+            "13.726,66"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa",
+          "values": [
+            "13.726,66"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos",
+          "values": [
+            "13.726,66"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos - Conta Corrente",
+          "values": [
+            "3.340,39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Sicoob - c/c 8681-9",
+          "values": [
+            "2.925,18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Bradesco S/A - c/c 7863-8",
+          "values": [
+            "2.924,18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos - Aplicações Liquidez Imediata",
+          "values": [
+            "1,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Bradesco - Invest Fácil c/7863-8",
+          "values": [
+            "415,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demais Contas Ativo Circulante",
+          "values": [
+            "415,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos Diversos",
+          "values": [
+            "118.316,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos Diversos",
+          "values": [
+            "6.470,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a Receber - FPF",
+          "values": [
+            "6.470,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a Receber - Cielo",
+          "values": [
+            "3.041,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a Receber - Pagseguro",
+          "values": [
+            "3.390,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estoque",
+          "values": [
+            "38,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estoque - Filial",
+          "values": [
+            "42.728,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mercadorias",
+          "values": [
+            "42.728,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos",
+          "values": [
+            "42.728,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos a Empregados",
+          "values": [
+            "62.708,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos de Ferias",
+          "values": [
+            "2.385,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos a Fornecedores",
+          "values": [
+            "2.385,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abaco Informática Ltda",
+          "values": [
+            "60.323,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tramontano e Pimentel Lima Adv. Assoc.ME",
+          "values": [
+            "473,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Thiago Luciano Segura",
+          "values": [
+            "24.850,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Promanager Sports Ltda - ME",
+          "values": [
+            "5.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos e Contribuições a Recuperar",
+          "values": [
+            "30.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos e Contribuições a Recuperar",
+          "values": [
+            "6.408,65"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ISS Retido a Recuperar",
+          "values": [
+            "4.496,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Irf s/Salários a Recuperar",
+          "values": [
+            "2.435,54"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS a Recuperar",
+          "values": [
+            "1.006,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos e Contrib. a Recuperar - Filial",
+          "values": [
+            "1.054,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pis a Compensar",
+          "values": [
+            "1.912,39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cofins a Recuperar",
+          "values": [
+            "114,38"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Icms a Recuperar",
+          "values": [
+            "550,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ativo não Circulante",
+          "values": [
+            "1.247,75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos Realizáveis a Longo Prazo",
+          "values": [
+            "512.055,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos Judiciais",
+          "values": [
+            "155.317,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos Judiciais",
+          "values": [
+            "155.317,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bloqueio OJ Oficio 20120000557341-00001",
+          "values": [
+            "155.317,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos Judiciais 2016",
+          "values": [
+            "14.429,02"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dep.Judicial-M 00370-2004-00615005",
+          "values": [
+            "3.819,60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dep.Judicial-1701/04",
+          "values": [
+            "4.431,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bloqueio Judicial",
+          "values": [
+            "4.678,13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dep Jud Evanildo Santana de Oliveira",
+          "values": [
+            "15.184,17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dep Jud Espólio de José Alonso",
+          "values": [
+            "3.946,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos Judiciais 2017",
+          "values": [
+            "2.133,98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "106.693,91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "67.263,39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "67.263,39"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": [
+        "Empresa: FERROVIARIA FUTEBOL S/A",
+        "",
+        "Página: 2"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CNPJ: 06.020.811/0001-30",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Período: 01/01/2018 a 31/12/2018 - CONSOLIDADO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balanço Patrimonial",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "276.362,05",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Utensílios",
+          "values": [
+            "73.121,84",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instalações",
+          "values": [
+            "13.945,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos de Informática",
+          "values": [
+            "5.928,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos Esportivos",
+          "values": [
+            "15.528,21",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "156.750,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Utensílios - Depto. Amador",
+          "values": [
+            "11.089,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Depreciações Acumuladas",
+          "values": [
+            "(209.098,66)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Deprec.Acumul.Móveis e Utensílios",
+          "values": [
+            "(26.444,94)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Deprec.Acumul.Instalações",
+          "values": [
+            "(3.957,94)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Deprec.Acumul.Equip.Informática",
+          "values": [
+            "(5.254,82)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Deprec.Acumul.Equip.Esportivos",
+          "values": [
+            "(5.601,96)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Deprec.Acumul..Veículos",
+          "values": [
+            "(156.750,00)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Deprec.Acumul.Móveis, Ut. Dep.Amador",
+          "values": [
+            "(11.089,00)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "289.475,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "289.475,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "301.475,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marcas e Patentes",
+          "values": [
+            "2.600,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Software Belmar",
+          "values": [
+            "15.000,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de Imagem",
+          "values": [
+            "283.875,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Amortizações Acumuladas",
+          "values": [
+            "(12.000,00)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Amortização Software Belmar",
+          "values": [
+            "(12.000,00)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PASSIVO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Passivo",
+          "values": [
+            "647.438,86",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo Circulante",
+          "values": [
+            "4.075.054,53",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo Circulante",
+          "values": [
+            "4.075.054,53",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instituições Financeiras",
+          "values": [
+            "146.923,56",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e Financiamentos",
+          "values": [
+            "192.065,34",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Bradesco S/A - c/c 3929-2",
+          "values": [
+            "78,57",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Bradesco S/A - Cap. Giro 11006776",
+          "values": [
+            "54.227,60",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Bradesco S/A - Cap. Giro 11178544",
+          "values": [
+            "73.807,23",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Bradesco S/A - Cap. Giro 11240730",
+          "values": [
+            "63.951,94",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros s/Empréstimos e Financiamentos",
+          "values": [
+            "(45.914,18)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros s/Bradesco Cap. Giro 11006776",
+          "values": [
+            "(12.561,04)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros s/Bradesco Cap. Giro 11178544",
+          "values": [
+            "(18.151,20)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros s/Bradesco Cap. Giro 11240730",
+          "values": [
+            "(15.201,94)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cheques a Compensar",
+          "values": [
+            "772,40",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Sicoob - c/c 8681-9",
+          "values": [
+            "772,40",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "70.257,98",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "70.257,98",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C. C. de Mendonça Hotel - EPP",
+          "values": [
+            "8.000,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Castro Assessoria Contábil S/S Ltda EPP",
+          "values": [
+            "7.261,25",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anchieta Peças Lubrificantes Ltda",
+          "values": [
+            "608,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luebe Comércio de Alimentos Ltda - ME",
+          "values": [
+            "4.700,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gran Hotel Nina Ltda",
+          "values": [
+            "1.848,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PWL do Brasil Com. e Marketing Ltda - ME",
+          "values": [
+            "9.000,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vinicius Rovariz T.de Araújo 40858379821",
+          "values": [
+            "3.000,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Quedima Pereira dos Santos 32500827836",
+          "values": [
+            "700,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intellyone Tecnologia & Serviços Ltda",
+          "values": [
+            "75,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LS Com. de Hortifrutigranjeiros Ltda ME",
+          "values": [
+            "2.216,50",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vitor Arisitedes Alves - ME",
+          "values": [
+            "3.715,17",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Campanelli Gramados Esport.Impl.A.Eireli",
+          "values": [
+            "2.500,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juliano Siqueira 26241434837 - MEI",
+          "values": [
+            "3.500,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CASTRO ASSESSORIA CONTABIL SS LTDA EPP",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RUA GONÇALVES DIAS 1428 - ARARAQUARA - SP - 14801-290 - Fone: (18)33354699",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "CNPJ: 06.020.811/0001-30",
+      "columns": [
+        "Limpezaria Comércio de Prod.Limpeza Ltda",
+        "1.155,90"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Sonhar Colchões Comercial Eireli - ME",
+          "values": [
+            "950,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Den Inn Hotel Araraquara Ltda",
+          "values": [
+            "4.556,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RJ Assessoria e Marketing Eireli",
+          "values": [
+            "7.880,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Odecio S Briganti Auto Peças Ltda",
+          "values": [
+            "338,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tend Tudo Papelaria Inform Ltda",
+          "values": [
+            "545,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fergaz Comercio de Gaz Ltda",
+          "values": [
+            "620,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Supermercado 14 Ltda",
+          "values": [
+            "3.463,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Assalve & Assalve Ltda ME",
+          "values": [
+            "105,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terra do Sol Prest de Serviços",
+          "values": [
+            "313,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uebtech Tecnologia da Informação Ltda ME",
+          "values": [
+            "699,80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Palacio das Borrachas Ferr e Par Ltda",
+          "values": [
+            "54,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belmar Tecnologia Esp Ltda",
+          "values": [
+            "366,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Antonio Afonso Dias do Nascimento EPP",
+          "values": [
+            "58,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atacadão S.A.",
+          "values": [
+            "1.828,74"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dias e Dias Araraquara Ltda EPP",
+          "values": [
+            "200,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Débitos Fiscais",
+          "values": [
+            "138.163,43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Débitos Fiscais",
+          "values": [
+            "144.026,87"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PIS a Recolher",
+          "values": [
+            "8.179,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cofins a Recolher",
+          "values": [
+            "42.010,59"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inss a Recolher - Outros",
+          "values": [
+            "12.939,74"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contr Ret Fonte a Rec Lei 10833/2003",
+          "values": [
+            "4.975,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Irf Serv Pessoa Fisica",
+          "values": [
+            "875,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Irf Serv Pessoa Juridica",
+          "values": [
+            "2.170,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ISS Retido a Recolher",
+          "values": [
+            "416,98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF s/Aluguél a Recolher",
+          "values": [
+            "372,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuição Social a Recolher",
+          "values": [
+            "22.656,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRPJ a Recolher",
+          "values": [
+            "38.924,66"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcel 12996/14 PGNF Demais Debitos 4737",
+          "values": [
+            "8.753,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcel 12996/14 RFB Demais Debitos 4750",
+          "values": [
+            "1.751,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas s/Parcelamentos",
+          "values": [
+            "(5.863,44)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas PGNF Demais Deb. 4737",
+          "values": [
+            "(4.837,80)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas RFB Demais Deb. 4750",
+          "values": [
+            "(1.025,64)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Débitos Sociais",
+          "values": [
+            "1.301.997,63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Débitos Sociais",
+          "values": [
+            "1.358.785,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salarios a Pagar",
+          "values": [
+            "123.660,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS a Recolher",
+          "values": [
+            "213.366,13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS a Recolher",
+          "values": [
+            "28.174,96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contr Confederativa a Recolher",
+          "values": [
+            "7.058,84"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contr Sindical a Recolher",
+          "values": [
+            "15.660,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão de Férias",
+          "values": [
+            "348.208,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão INSS Férias",
+          "values": [
+            "15.669,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão FGTS Férias",
+          "values": [
+            "27.857,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rescisões de Contrato de Trabalho",
+          "values": [
+            "156.050,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indenizações a Pagar",
+          "values": [
+            "59.799,98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contr. Negocial a Recolher",
+          "values": [
+            "1.741,11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF s/Salários a Recolher",
+          "values": [
+            "6.130,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PIS s/Folha de Pagamento a Recolher",
+          "values": [
+            "6.391,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão PIS Férias",
+          "values": [
+            "3.481,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento FGTS",
+          "values": [
+            "103.215,79"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento IRRF s/Salários",
+          "values": [
+            "1.555,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento INSS Processo 622128094",
+          "values": [
+            "21.836,36"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento INSS Processo 621125792",
+          "values": [
+            "23.898,94"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "CNPJ: 06.020.811/0001-30",
+      "columns": [
+        "Parcelamento INSS Processo 621153613",
+        "71.929,91"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Parcelamento Previdenciário - PERT",
+          "values": [
+            "15.057,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento RFB - PERT",
+          "values": [
+            "34.038,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento INSS Processo 624355659",
+          "values": [
+            "50.659,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento INSS Processo 627118658",
+          "values": [
+            "23.343,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas s/Parcelamentos",
+          "values": [
+            "(56.787,37)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc.IRRF s/Salários",
+          "values": [
+            "(319,88)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc. INSS 622128094",
+          "values": [
+            "(3.530,41)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc. INSS 621153613",
+          "values": [
+            "(20.976,02)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc. INSS 621125792",
+          "values": [
+            "(3.238,43)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc.Previdenc. PERT",
+          "values": [
+            "(2.476,46)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc. RFB PERT",
+          "values": [
+            "(13.066,77)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc. INSS 624355659",
+          "values": [
+            "(8.962,98)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc. INSS 627118658",
+          "values": [
+            "(4.216,42)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações Diversas",
+          "values": [
+            "2.417.711,93"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Contas a Pagar",
+          "values": [
+            "2.417.711,93"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensão Alimentícia a Pagar",
+          "values": [
+            "378,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos s/Gestão Ativ Esport - Afe",
+          "values": [
+            "81.033,75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FPF Antecipações",
+          "values": [
+            "1.444.679,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Exploração de Direitos de Imagem",
+          "values": [
+            "283.875,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Contas a Pagar",
+          "values": [
+            "361.659,88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cartão de Crédito a Pagar",
+          "values": [
+            "4.229,45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxa de Policiamento a Pagar",
+          "values": [
+            "173.141,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento DAAE a Pagar",
+          "values": [
+            "18.714,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Esporte Clube Noroeste",
+          "values": [
+            "50.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo não Circulante",
+          "values": [
+            "1.397.671,52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo não Circulante",
+          "values": [
+            "1.397.671,52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e Financiamentos",
+          "values": [
+            "4.166,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e Financiamentos",
+          "values": [
+            "5.679,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Bradesco S/A - Cap. Giro 11178544",
+          "values": [
+            "5.679,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros s/Empréstimos e Financiamentos",
+          "values": [
+            "(1.512,44)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros s/Bradesco Cap. Giro 11178544",
+          "values": [
+            "(1.512,44)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos",
+          "values": [
+            "707.665,66"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos",
+          "values": [
+            "956.863,79"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcel 12996/14 PGNF Demais Debitos 4737",
+          "values": [
+            "86.804,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcel 12996/14 RFB Demais Debitos 4750",
+          "values": [
+            "12.696,78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento INSS Processo 622128094",
+          "values": [
+            "57.110,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento INSS Processo 621125792",
+          "values": [
+            "56.989,64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento INSS Processo 621153613",
+          "values": [
+            "171.525,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento Previdenciário - PERT",
+          "values": [
+            "130.136,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento RFB - PERT",
+          "values": [
+            "208.819,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento INSS Processo 624355659",
+          "values": [
+            "151.977,93"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento INSS Processo 627118658",
+          "values": [
+            "80.803,80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas s/Parcelamentos",
+          "values": [
+            "(249.198,13)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas PGNF Demais Deb. 4737",
+          "values": [
+            "(47.974,85)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas RFB Demais Deb. 4750",
+          "values": [
+            "(7.435,89)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc INSS 622128094",
+          "values": [
+            "(9.232,91)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc INSS 621125792",
+          "values": [
+            "(7.721,86)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc INSS 621153613",
+          "values": [
+            "(50.019,45)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc.Previdenc. PERT",
+          "values": [
+            "(21.403,40)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc. RFB PERT",
+          "values": [
+            "(63.926,07)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc INSS 624355659",
+          "values": [
+            "(26.888,64)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Juros e Multas Parc INSS 627118658",
+          "values": [
+            "(14.595,06)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": null,
+      "columns": [
+        "Empresa: FERROVIARIA FUTEBOL S/A",
+        "Página: 5"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CNPJ: 06.020.811/0001-30",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Período: 01/01/2018 a 31/12/2018 - CONSOLIDADO",
+          "values": [
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "### Balanço Patrimonial",
+      "columns": [
+        "Contingencias",
+        "685.839,04"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Contingencias",
+          "values": [
+            "685.839,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão p/Contingencias Trabalhistas",
+          "values": [
+            "486.901,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão p/Contingencias Cíveis",
+          "values": [
+            "198.937,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimonio Líquido",
+          "values": [
+            "(4.825.287,19)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimonio Líquido",
+          "values": [
+            "(4.825.287,19)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital Social Integralizado",
+          "values": [
+            "950.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital Social",
+          "values": [
+            "950.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital Social Subscrito",
+          "values": [
+            "950.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital Autorizado a Subscrever",
+          "values": [
+            "1.550.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital a Subscrever",
+          "values": [
+            "(1.550.000,00)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento Subscrição Capital",
+          "values": [
+            "2.765.734,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento Subscrição Capital",
+          "values": [
+            "2.765.734,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valdir Antonio Massucato",
+          "values": [
+            "11.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carlos Alberto Salmazo",
+          "values": [
+            "82.917,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IESA PROJETOS EQUIP MONTAGENS SA",
+          "values": [
+            "627.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "KNOW HOW LTDA",
+          "values": [
+            "2.044.817,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucros ou Prejuízos Acumulados",
+          "values": [
+            "(8.541.021,19)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucros ou Prejuízos Acumulados",
+          "values": [
+            "(8.541.021,19)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prejuízos Acumulados",
+          "values": [
+            "(8.541.021,19)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/ferroviaria-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"ferroviaria\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+  ]
+}

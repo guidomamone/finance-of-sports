@@ -1,0 +1,255 @@
+{
+ "md": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.md",
+ "pdf": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.pdf",
+ "club": "criciuma",
+ "year": 2012,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:52:08.823Z",
+ "tieOuts": {
+  "cierran": 6,
+  "noCierran": 4
+ },
+ "warnings": [
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 23,
+  "notasUsadas": []
+ },
+ "ladoConocido": 15,
+ "rubros": [
+  {
+   "label": "Juros passivos",
+   "lado": null,
+   "page": 17,
+   "section": "CRICIÚMA E.C. / Despesas financeiras",
+   "values": [
+    -0.000675
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Despesas e comissões bancárias",
+   "lado": "expense",
+   "page": 17,
+   "section": "CRICIÚMA E.C. / Despesas financeiras",
+   "values": [
+    -0.115734
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Encargos sobre tributos em atraso",
+   "lado": "expense",
+   "page": 17,
+   "section": "CRICIÚMA E.C. / Despesas financeiras",
+   "values": [
+    -0.008268
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Juros sobre empréstimos",
+   "lado": null,
+   "page": 17,
+   "section": "CRICIÚMA E.C. / Despesas financeiras",
+   "values": [
+    -0.931848
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Variação monetária passiva",
+   "lado": null,
+   "page": 17,
+   "section": "CRICIÚMA E.C. / Despesas financeiras",
+   "values": [
+    -0.08922
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Descontos concedidos",
+   "lado": null,
+   "page": 17,
+   "section": "CRICIÚMA E.C. / Despesas financeiras",
+   "values": [
+    -0.284634
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Descontos obtidos",
+   "lado": null,
+   "page": 16,
+   "section": "15 Resultado financeiro",
+   "values": [
+    4.165
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Juros ativos",
+   "lado": null,
+   "page": 16,
+   "section": "15 Resultado financeiro",
+   "values": [
+    0.48
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Renda de aplicações financeiras",
+   "lado": null,
+   "page": 16,
+   "section": "15 Resultado financeiro",
+   "values": [
+    53.123
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Variação monetária ativa",
+   "lado": null,
+   "page": 16,
+   "section": "15 Resultado financeiro",
+   "values": [
+    16.56
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "FGTS a recolher",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "values": [
+    54.339
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "INSS a recolher",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "values": [
+    60.06
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "IRRF salários",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "values": [
+    163.658
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "PIS a recolher",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "values": [
+    8.22
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "ICMS a recolher",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "values": [
+    24.328
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "IPTU – PMC",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "values": [
+    6.99
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "values": [
+    2.496
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Brasilux Indústria e Comércio",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "values": [
+    1200
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Criciúma Construções",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "values": [
+    76
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Cristalsul",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "values": [
+    100
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Hypermarcas",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "values": [
+    250
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Seara Alimentos",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "values": [
+    240
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Siecesc - Sindicato das Indústrias de Carvão",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "values": [
+    180
+   ],
+   "origen": "estado 11"
+  }
+ ]
+}

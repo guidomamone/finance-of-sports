@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.md",
+ "generado": "2026-10-03T03:42:13.510Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   12
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   108,
+   110,
+   116
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El documento no indica la escala explícitamente; los valores con centavos (ej. 1.182.626,93) sugieren reales en unidades. Caja tomada como DISPONIBILIDADES (L12), que incluye caja, una cuenta bancaria de recursos públicos (proc. SELJ) e inversiones temporarias; si se excluye la cuenta de recursos públicos quedaría sólo L13 + L17. Deuda: bancos corrientes (Bradesco L108 y B.Brasil recursos públicos L110, dudosa por ser recursos públicos) y préstamos y mutuos no corrientes (L116), mayormente con I-9 Sports Ltda, que podría ser una parte relacionada y no una entidad financiera."
+}

@@ -1,0 +1,88 @@
+{
+  "md": "Clubes/Bélgica/Antwerp/jaarrekening-2020-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Antwerp/jaarrekening-2020-06-30-individual.pdf",
+  "club": "antwerp-be",
+  "year": 2020,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:54:21.719Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 6,
+    "notasUsadas": []
+  },
+  "ladoConocido": 6,
+  "rubros": [
+    {
+      "label": "SCHULDEN 17/49",
+      "lado": "expense",
+      "page": 7,
+      "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 596.972 504.204 / Uitgestelde belastingen 168",
+      "values": [
+        16.396594
+      ],
+      "origen": "estado 4",
+      "glosa": "DEUDAS 17/49"
+    },
+    {
+      "label": "Schulden op meer dan één jaar 69 |",
+      "lado": "expense",
+      "page": 7,
+      "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 596.972 504.204 / Uitgestelde belastingen 168",
+      "values": [
+        2.85703
+      ],
+      "origen": "estado 4",
+      "glosa": "Deudas a más de un año 69 |"
+    },
+    {
+      "label": "Financiële schulden 170/4",
+      "lado": "expense",
+      "page": 7,
+      "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 596.972 504.204 / Uitgestelde belastingen 168",
+      "values": [
+        0.094164
+      ],
+      "origen": "estado 4",
+      "glosa": "Deudas financieras 170/4"
+    },
+    {
+      "label": "Andere niet-recurrente financiële opbrengsten",
+      "lado": "revenue",
+      "page": 24,
+      "section": "Terugneming van waardeverminderingen op financiële vaste activa 761 / Terugneming van voorzieningen voor uitzonderlijke financiële risico's / en kosten 7621 / Meerwaarden bij de realisatie van financiële vaste activa 7631",
+      "values": [
+        997.397
+      ],
+      "origen": "estado 23",
+      "glosa": "Otros ingresos financieros no recurrentes"
+    },
+    {
+      "label": "NIET-RECURRENTE KOSTEN",
+      "lado": "expense",
+      "page": 24,
+      "section": "Terugneming van waardeverminderingen op financiële vaste activa 761 / Terugneming van voorzieningen voor uitzonderlijke financiële risico's / en kosten 7621 / Meerwaarden bij de realisatie van financiële vaste activa 7631",
+      "values": [
+        154.505
+      ],
+      "origen": "estado 23",
+      "glosa": "GASTOS NO RECURRENTES"
+    },
+    {
+      "label": "Niet-recurrente bedrijfskosten 66A",
+      "lado": "expense",
+      "page": 24,
+      "section": "Terugneming van waardeverminderingen op financiële vaste activa 761 / Terugneming van voorzieningen voor uitzonderlijke financiële risico's / en kosten 7621 / Meerwaarden bij de realisatie van financiële vaste activa 7631",
+      "values": [
+        154.505
+      ],
+      "origen": "estado 23",
+      "glosa": "Gastos de explotación no recurrentes 66A"
+    }
+  ]
+}

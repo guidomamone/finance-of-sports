@@ -1,0 +1,346 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.md",
+ "generatedAt": "2026-10-03T23:15:27.776Z",
+ "rubrosHuella": "5721dd181b50df21fa54cc146199b37d15743a08",
+ "rubros": [
+  {
+   "label": "1) REVENUES FROM SALES AND SERVICES",
+   "lado": "revenue",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Income from temporary transfer of players",
+   "lado": "revenue",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "e) Other revenues and income",
+   "lado": "revenue",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Capital gains on disposals",
+   "lado": "revenue",
+   "page": 82,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Official and Technical sponsors",
+   "lado": "revenue",
+   "page": 109,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other sponsorships and other commercial contracts",
+   "lado": "revenue",
+   "page": 109,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Television and radio revenues",
+   "lado": "revenue",
+   "page": 109,
+   "section": "ajuste manual",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "TV revenues percentage from other teams",
+   "lado": "revenue",
+   "page": 109,
+   "section": "ajuste manual",
+   "choice": "broadcasting",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Telephone rights",
+   "lado": "revenue",
+   "page": 109,
+   "section": "ajuste manual",
+   "choice": "broadcasting",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Revenues from U.E.F.A. Champions League",
+   "lado": "revenue",
+   "page": 109,
+   "section": "ajuste manual",
+   "choice": "competition_bonus",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Advertising",
+   "lado": "revenue",
+   "page": 109,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Technical staff and players' image rights",
+   "lado": "revenue",
+   "page": 109,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Sundry income",
+   "lado": "revenue",
+   "page": 109,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "6) RAW MATERIALS, SUPPLIES, CONSUMABLES AND GOODS",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "7) SERVICES",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "8) LEASES AND RENTALS",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Salaries and wages",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Social security contributions",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "c) Employees' severance indemnity",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "e) Other costs",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Amortisation of intangible fixed assets",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Depreciation of tangible fixed assets",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "d) Write-downs of receivables entered under current assets and cash at bank and in hand",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Other risks",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Match organisation expenses",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Official match expenses",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "c) Match registration fees",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "d) Others",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Capital losses on disposals",
+   "lado": "expense",
+   "page": 82,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "c) Others",
+   "lado": "expense",
+   "page": 82,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "b) LNP contributions",
+   "lado": "revenue",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.25,
+   "top3": [
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "broadcasting",
+     0.17
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "c) Other write-downs of assets",
+   "lado": "expense",
+   "page": 81,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_amortisation",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "depreciation",
+     0.03
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "b) Others",
+   "lado": "revenue",
+   "page": 82,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1002
+  }
+ ]
+}

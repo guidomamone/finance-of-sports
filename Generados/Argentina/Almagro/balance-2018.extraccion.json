@@ -1,0 +1,404 @@
+{
+ "pdf": "Clubes/Argentina/Almagro/balance-2018.pdf",
+ "md": "Clubes/Argentina/Almagro/balance-2018.md",
+ "cierre": "2018-10-31",
+ "paginas": [
+  5,
+  6,
+  7,
+  8
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:45:17.925Z",
+ "escala": "unidades",
+ "filas": [
+  {
+   "pagina": 5,
+   "etiqueta": "CUOTA SOCIALES -Anexo II",
+   "importe_impreso": "1,360,000.00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "RECAUDACIÓN POR ACTIVIDADES Anexo III",
+   "importe_impreso": "36,990,264.58",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "TOTAL DE RECURSOS",
+   "importe_impreso": "38,350,264.58",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "GASTOS ESPECIFICOS -Anexos IV",
+   "importe_impreso": "7,066,125.51",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "GASTOS DE OPERACIONES -Anexos V",
+   "importe_impreso": "31,796,015.48",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "AMORTIZACIÓN Anexo IA Y Anexo IB",
+   "importe_impreso": "1,735,199.15",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "TOTAL GASTOS",
+   "importe_impreso": "40,597,340.14",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "RTADO DE LAS OPERACIONES ORDINARIAS-PERDIDA-",
+   "importe_impreso": "-2,247,075.56",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "Resultado financiero y por tenencia (incluye RECPAM)",
+   "importe_impreso": "-60,352,421.59",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 5,
+   "etiqueta": "RESULTADO DEL EJERCICIO -PERDIDA -",
+   "importe_impreso": "-62,599,497.15",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 6,
+   "etiqueta": "Sede Social- Medrano 522 CABA",
+   "importe_impreso": "1,360,000.00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "CUOTA SOCIALES -Anexo II"
+  },
+  {
+   "pagina": 6,
+   "etiqueta": "Totales",
+   "importe_impreso": "1,360,000.00",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "CUOTA SOCIALES -Anexo II"
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Futbol Ingreso por Partidos",
+   "importe_impreso": "1,114,385.34",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECAUDACIÓN POR ACTIVIDADES Anexo III"
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Ingreso A.F.A:",
+   "importe_impreso": "17,996,318.40",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECAUDACIÓN POR ACTIVIDADES Anexo III"
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Alquiler de Sede",
+   "importe_impreso": "8,013,443.19",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECAUDACIÓN POR ACTIVIDADES Anexo III"
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Ingresos Especiales",
+   "importe_impreso": "274,729.92",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECAUDACIÓN POR ACTIVIDADES Anexo III"
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Premio Copa Argentina",
+   "importe_impreso": "1,745,533.00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECAUDACIÓN POR ACTIVIDADES Anexo III"
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Publicidad",
+   "importe_impreso": "4,147,734.73",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECAUDACIÓN POR ACTIVIDADES Anexo III"
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Alquiler de Antena",
+   "importe_impreso": "3,698,120.00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "RECAUDACIÓN POR ACTIVIDADES Anexo III"
+  },
+  {
+   "pagina": 7,
+   "etiqueta": "Totales",
+   "importe_impreso": "36,990,264.58",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "RECAUDACIÓN POR ACTIVIDADES Anexo III"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Gastos de mantenimiento",
+   "importe_impreso": "2,668,559.14",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Gastos Administrativos",
+   "importe_impreso": "5,924.78",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Honorarios Contador",
+   "importe_impreso": "94,294.87",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Gastos varios",
+   "importe_impreso": "127,402.94",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Gastos de lavandería",
+   "importe_impreso": "46,597.00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Gastos de movilidad",
+   "importe_impreso": "89,307.98",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Estadías y traslados",
+   "importe_impreso": "2,510,005.91",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Impuestos y Contribuciones",
+   "importe_impreso": "241,074.80",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Seguros",
+   "importe_impreso": "8,286.56",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Alquileres Vivienda para Jugadores",
+   "importe_impreso": "270,000.00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Gastos Generales",
+   "importe_impreso": "902,925.40",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Gastos transmisión radio",
+   "importe_impreso": "71,000.00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Alquiler equipo electrógeno",
+   "importe_impreso": "30,746.13",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Totales",
+   "importe_impreso": "7,066,125.51",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "GASTOS ESPECIFICOS -Anexos IV"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Interese perdidos",
+   "importe_impreso": "349,387.63",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Gastos bancarios",
+   "importe_impreso": "9,476.03",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Impuesto Ley 25413",
+   "importe_impreso": "266,897.94",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Gastos de alimentos",
+   "importe_impreso": "3,911,226.61",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Honorarios Cuerpo Medico y Tecnico",
+   "importe_impreso": "3,854,014.14",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Sueldos y Jornales",
+   "importe_impreso": "9,919,307.89",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Cargas Sociales",
+   "importe_impreso": "87,015.13",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Primas por contrato privado",
+   "importe_impreso": "10,148,400.00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Gastos de Policía",
+   "importe_impreso": "770,550.00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Juicios",
+   "importe_impreso": "1,777,900.00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Gastos de Representación",
+   "importe_impreso": "288,940.61",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Gastos de Servicios de Emergencia",
+   "importe_impreso": "322,734.19",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "Alquiler para entrenamiento",
+   "importe_impreso": "90,165.31",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  },
+  {
+   "pagina": 8,
+   "etiqueta": "",
+   "importe_impreso": "31,796,015.48",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "GASTOS DE OPERACIONES -Anexos V"
+  }
+ ],
+ "total_ingresos_impreso": "38,350,264.58",
+ "total_gastos_impreso": "40,597,340.14",
+ "resultado_impreso": "-62,599,497.15",
+ "observaciones": "El estado de resultados está titulado erróneamente 'ESTADO DE SITUACIÓN PATRIMONIAL'. Se omitieron renglones sin importe (Sponzorizacion, Derechos TV, Alquiler de Canchas, Prestamos Judadores, Honorarios de Escribanos, Gastos de nafta, Impuesto a la Ganancias, Honorarios Kinesiologo). El total del Anexo V no tiene etiqueta impresa. 'Interese perdidos' se clasificó como financiero aunque está dentro de gastos operativos. La amortización (Anexos IA y IB) no tiene desglose en las páginas provistas."
+}

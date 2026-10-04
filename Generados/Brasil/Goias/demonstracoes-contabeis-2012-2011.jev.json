@@ -1,0 +1,165 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.md",
+ "generatedAt": "2026-10-03T00:13:15.545Z",
+ "rubrosHuella": "3dcd222f8b5d32368e69810cdba823f6fa0000a5",
+ "rubros": [
+  {
+   "label": "Bilheterias",
+   "lado": "revenue",
+   "page": 3,
+   "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos de transmissão de TV",
+   "lado": "revenue",
+   "page": 3,
+   "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiação/participações",
+   "lado": "revenue",
+   "page": 3,
+   "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Transação de atletas",
+   "lado": "revenue",
+   "page": 3,
+   "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínio/ publicidade/propaganda",
+   "lado": "revenue",
+   "page": 3,
+   "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mensalidades",
+   "lado": "revenue",
+   "page": 3,
+   "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Jogos lotéricos",
+   "lado": "revenue",
+   "page": 3,
+   "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas patrimoniais",
+   "lado": "revenue",
+   "page": 3,
+   "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras receitas",
+   "lado": "revenue",
+   "page": 3,
+   "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Deduções da receita",
+   "lado": "revenue",
+   "page": 3,
+   "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas gerais",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com futebol",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "wages_squad",
+     0.07
+    ]
+   ],
+   "tokens": 1047
+  }
+ ]
+}

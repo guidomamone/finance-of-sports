@@ -1,0 +1,435 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2016.pdf",
+ "generado": "2026-10-03T03:30:50.957Z",
+ "frena": [
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "2 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"LOCAÇÃO DE CADEIRA S/ASSENTOS\" -> season_tickets 0.45; \"REPASSE DA FEDERAÇÃO\" -> other_income 0.5"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-03: Guido 2026-10-02: una sola entidad (associação hasta 2023, SAF después); 'Consolidado' es el membrete del auditor (Verdus), no un estado consolidado)",
+  "categorías en 0 aun después del reintento (se carga así): Televisión"
+ ],
+ "ejercicio": {
+  "clubId": "novorizontino-br",
+  "year": 2016,
+  "cierre": "2016-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "PATROCINIO NO UNIFORME",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.19,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "PATROCÍNIO NO ESTÁDIO",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.004,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.95
+   },
+   {
+    "rawLabel": "LOCAÇÃO DE CADEIRA S/ASSENTOS",
+    "normalizedCategory": "season_tickets",
+    "amountNative": 0.02,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.45
+   },
+   {
+    "rawLabel": "VENDAS DE INGRESSOS",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.605,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "RECEITAS DO BAR",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 0.01,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "RECEITA C/ NEGOCIAÇÃO DE ATLETA",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.207,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "REPASSE DA FEDERAÇÃO",
+    "normalizedCategory": "other_income",
+    "amountNative": 2.204,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 2,
+    "_conf": 0.5
+   },
+   {
+    "rawLabel": "Recuperação de Despesas",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.002,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "(-) Ordenados, Salários, Encargos Sociais e Trabalhistas",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -6.206,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.94
+   },
+   {
+    "rawLabel": "Despesas Administrativas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.794,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas e Manutenção",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.945,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.99
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2016-12-31",
+   "sourceId": "novorizontino-br-balanco-2016",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.075,
+   "tax": 0,
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 3.242,
+   "officialTotalExpenses": 9.945,
+   "officialPAT": -6.779
+  },
+  "source": {
+   "id": "novorizontino-br-balanco-2016",
+   "clubId": "novorizontino-br",
+   "title": "Grêmio Novorizontino Sociedade Anônima do Futebol — balanco-2016 (ejercicio 2016)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/balanco-2016.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Brasil/Novorizontino/balanco-2016.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2016-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "novorizontino-br",
+ "year": 2016,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/balanco-2016.pdf",
+   "campo": "confirmado",
+   "valor": "2.204",
+   "linea": 47,
+   "motivo": "Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)",
+   "evidencia": "balanco-2016.md L157: 2,204,550.00",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/balanco-2016.pdf",
+   "campo": "confirmado",
+   "valor": "1.794",
+   "linea": 54,
+   "motivo": "Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)",
+   "evidencia": "balanco-2016.md L216: -1,794,003.90",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/balanco-2016.pdf",
+   "campo": "confirmado",
+   "valor": "1.945",
+   "linea": 55,
+   "motivo": "Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)",
+   "evidencia": "balanco-2016.md L247: -1,945,370.99",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/balanco-2016.pdf",
+   "campo": "confirmado",
+   "valor": "1.422",
+   "linea": 55,
+   "motivo": "Guido 2026-10-02: la versión detallada en reais del mismo PDF confirma el .md (Gemini leyó otro dígito)",
+   "evidencia": "balanco-2016.md L247: -1,422,257.06",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
+ "seleccion": {
+  "filas": 12,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "PATROCINIO NO UNIFORME",
+   "page": 1,
+   "native": 0.19,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.19,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.19
+  },
+  {
+   "label": "PATROCÍNIO NO ESTÁDIO",
+   "page": 1,
+   "native": 0.004,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.004,
+   "cat": "sponsorship_commercial",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.004
+  },
+  {
+   "label": "LOCAÇÃO DE CADEIRA S/ASSENTOS",
+   "page": 1,
+   "native": 0.02,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.02,
+   "cat": "season_tickets",
+   "conf": 0.45,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 0.02
+  },
+  {
+   "label": "VENDAS DE INGRESSOS",
+   "page": 1,
+   "native": 0.605,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.605,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.605
+  },
+  {
+   "label": "RECEITAS DO BAR",
+   "page": 1,
+   "native": 0.01,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.01,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.01
+  },
+  {
+   "label": "RECEITA C/ NEGOCIAÇÃO DE ATLETA",
+   "page": 1,
+   "native": 0.207,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.207,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.207
+  },
+  {
+   "label": "REPASSE DA FEDERAÇÃO",
+   "page": 1,
+   "native": 2.204,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.204,
+   "cat": "other_income",
+   "conf": 0.5,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "revenue",
+   "amountNative": 2.204
+  },
+  {
+   "label": "Recuperação de Despesas",
+   "page": 1,
+   "native": 0.002,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.002,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.002
+  },
+  {
+   "label": "(-) Ordenados, Salários, Encargos Sociais e Trabalhistas",
+   "page": 1,
+   "native": 6.206,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 6.206,
+   "cat": "wages_squad",
+   "conf": 0.94,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -6.206
+  },
+  {
+   "label": "Despesas Administrativas",
+   "page": 1,
+   "native": 1.794,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.794,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.794
+  },
+  {
+   "label": "Despesas e Manutenção",
+   "page": 1,
+   "native": 1.945,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 1.945,
+   "cat": "admin_general_expense",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.945
+  },
+  {
+   "label": "Receitas Financeiras Líquidas",
+   "page": null,
+   "native": -0.075,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 3.242,
+  "expSum": -9.945,
+  "officialTotalRevenue": 3.242,
+  "officialTotalExpenses": 9.945,
+  "officialPAT": -6.779,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -6.779,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 3.242
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 9.945
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no aparece en los rosters cacheados de 2016 (br-serieB): puede haber jugado otra división",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding §17)"
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 8,
+  "lineasGasto": 3,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}

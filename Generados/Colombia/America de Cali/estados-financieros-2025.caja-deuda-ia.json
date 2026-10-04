@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Colombia/America de Cali/estados-financieros-2025.md",
+ "generado": "2026-10-02T00:10:19.429Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(EXPRESADO EN MILES DE PESOS COLOMBIANOS)",
+ "caja": {
+  "lineas": [
+   27
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   92,
+   108
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El valor de caja (870,325, L56) está separado de su etiqueta (L27) por el formato del documento. Se excluye 'Pasivos acuerdo de Reorganizacion' (L110) por no ser explícitamente obligación financiera."
+}

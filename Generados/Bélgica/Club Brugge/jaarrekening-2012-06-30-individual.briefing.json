@@ -1,0 +1,354 @@
+{
+  "club": "clubbrugge-be",
+  "year": 2012,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Club Brugge/jaarrekening-2012-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:54:39.827Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 25,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 10,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 4,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "50/53",
+          "values": [
+            "234.170",
+            "203.888"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "84.652",
+            "180.011"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "12.311",
+            "9.986"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "1.102.874",
+            "1.484.981"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "Nr. BE 0460.444.251 VKT 2.2 / PASSIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "EIGEN VERMOGEN 10/15",
+          "values": [
+            "973.221",
+            "1.021.228"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaal 53 |",
+          "values": [
+            "247.894",
+            "247.894"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geplaatst kapitaal",
+          "values": [
+            "247.894",
+            "247.894"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Niet-opgevraagd kapitaal 101 / Uitgiftepremies 11 / Herwaarderingsmeerwaarden 12",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Reserves",
+          "values": [
+            "424.789",
+            "424.789"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wettelijke reserve",
+          "values": [
+            "24.789",
+            "24.789"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Onbeschikbare reserves 131 / Voor eigen aandelen 1310 / Andere 1311 / Belastingvrije reserves 132",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Beschikbare reserves",
+          "values": [
+            "400.000",
+            "400.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overgedragen winst (verlies) (+/(-)",
+          "values": [
+            "300.538",
+            "348.545"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN 16",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "129.653",
+            "463.753"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 55 |",
+          "values": [
+            "1.405",
+            "24.741"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "1.405",
+            "24.741"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Handelsschulden 175 / Ontvangen vooruitbetalingen op bestellingen 176 / Overige schulden 178/9 / Schulden op ten hoogste één jaar 5.5 | 42/48 128.248 267.173 / Schulden op meer dan één jaar die binnen het jaar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "vervallen",
+          "values": [
+            "23.336",
+            "66.489"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden",
+          "values": [
+            "20.722"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kredietinstellingen 430/8",
+          "values": [
+            "20.722"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Overige leningen 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "63.706",
+            "168.568"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "63.706",
+            "168.568"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 / Schulden met betrekking tot belastingen,",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "bezoldigingen en sociale lasten",
+          "values": [
+            "20.484",
+            "32.117"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "2.398",
+            "2.662"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "18.086",
+            "29.455"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Overige schulden 47/48",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overlopende rekeningen 492/3",
+          "values": [
+            "171.838"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "1.102.874",
+            "1.484.981"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "Nr. BE 0460.444.251 VKT 6 / SOCIALE BALANS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Vrouwen 121 1",
+          "values": [
+            "1,8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "lager onderwijs 1210 1",
+          "values": [
+            "1,8"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 4,
+    "results": [
+      {
+        "label": "50/53",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "50/53",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "54/58",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "54/58",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "490/1",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "490/1",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "20/58",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "20/58",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Club Brugge",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

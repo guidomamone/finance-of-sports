@@ -1,0 +1,734 @@
+{
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.md",
+ "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2021.pdf",
+ "club": "avai",
+ "year": 2021,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:51:32.312Z",
+ "tieOuts": {
+  "cierran": 20,
+  "noCierran": 2
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 71,
+  "notasUsadas": []
+ },
+ "ladoConocido": 67,
+ "rubros": [
+  {
+   "label": "Receita Bruta",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    25.303151
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Receitas do Futebol Profissional",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    25.303151
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Receitas de Mensalidades dos Sócios",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    3.488065
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Receitas de Negociação de Atletas Profissionais",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    2.509456
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Receitas Arrendaments, Patrocínios e Publicidades",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    3.473746
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Receitas de Repasses da Loteria Timemania",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    0.619095
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Receitas de Venda e uso Marca",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    1.12498
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Receitas TV e transmissão jogos",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    12.936521
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Receitas Diversas",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    1.12389
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Receita Financeira",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    0.027397
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Custo Operacional Bruto",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    43.772256
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Custos Futebol Profissional",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    37.345703
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Despesas financeiras deságio",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    3.995456
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Custos Futebol Feminino",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    0.354097
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Custos Esportes Olímpicos",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    0.012103
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Futebol Amador (Custos - Transferência)",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    2.064896
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Custos do Futebol Categoria de Base",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    7.805604
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". ( - ) Transferência para o Imobilizado",
+   "lado": null,
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    -5.740708
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas Operacionais",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    15.142893
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Administrativas",
+   "lado": null,
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    12.192491
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Depreciação e Amortização do Imobilizado",
+   "lado": null,
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    0.260315
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Despesas Financeiras",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    2.690087
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas Avaí Store",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    0.855694
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Materiais e despesas diversas",
+   "lado": "expense",
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    0.096396
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". CMV e Icms",
+   "lado": null,
+   "page": 4,
+   "section": "AVAÍ FUTEBOL CLUBE / Demonstração do Déficit e Superávit / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / (Em reais)",
+   "values": [
+    0.759297
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": ". Salários e Encargos",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    21435.476
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Ajuda de Custo",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    42.3
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Viagens e Hospedagem",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    899.363
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". INSS s/ Receitas",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    134.731
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Aluguel e manuteção dos campos",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    309
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Arbitragem/Federação e Confederação",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    164.052
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Amortização Custo Atletas Profissionais",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    426.441
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Seguros/Plano de Saúde",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    48.029
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Direito de Uso de Imagem",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    6137.833
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Material Esportivo - Patrocínio",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    226.998
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Borderoux de Jogos",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    103.994
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Taxa de Policiamento",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    43.551
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Despesas com jogo",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    36.973
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Alimentação",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    32.48
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Premiação Campeonatos",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    5872.5
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Direito de Arena",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    475.151
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Empréstimos de Atletas",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    15
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Materiais e serviços diversos",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    249.06
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Manutenção, conservação e reformas",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    69.865
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Transportes",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    5.996
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Desp. Teste Covid - 19",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    496.344
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Custos Diversos",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    120.567
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Despesas financeiras deságio",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    3995.456
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Custos Futebol Feminino",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    354.097
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Custos Esportes Olímpicos",
+   "lado": "expense",
+   "page": 26,
+   "section": "22. Custos Futebol Profissional e Esportes Olímpicos / AVAI FUTEBOL CLUBE / Custos do Futebol Profissional / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    12.103
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": ". Receitas de Mensalidades dos Sócios",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    3488.065
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas de Bilheteria com Jogos",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    285.603
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas de Negociação de Atletas Profissionais",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    1921.831
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas de Arrendamentos e Locações",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    357.676
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas de Patrocínio",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    2681.328
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas de Repasses da Loteria Timemania",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    619.095
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas de Publicidade",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    434.742
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas Transmissão Jogos Campeonato Catarinense",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    569.707
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas Premiação",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    47.5
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas de Venda de Material Esportivo",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    1038.064
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas de Uso da Marca",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    86.916
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas de Empréstimos de Jogadores",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    587.625
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas TV Campeonato Brasileiro",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    7884.012
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas de CBF - Copa Brasil",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    4197.2
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receitas Diversas",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    1076.89
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": ". Receita Financeira",
+   "lado": "revenue",
+   "page": 25,
+   "section": "21. Receitas / Receitas Operacionais / Exercícios Findos em 31 de Dezembro de 2021 E 2020",
+   "values": [
+    27.397
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "De base em Formação",
+   "lado": "expense",
+   "page": 16,
+   "section": "8. Gastos com Formação de Atletas / AVAI FUTEBOL CLUBE / Exercícios Findos em 31 de Dezembro de 2020 e 2019 / GASTOS COM FORMAÇÃO DE ATLETAS AMADORES E MOVIMENTAÇÃO DOS PROFISSIONAIS",
+   "values": [
+    9.415042
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Profissionais",
+   "lado": "expense",
+   "page": 16,
+   "section": "8. Gastos com Formação de Atletas / AVAI FUTEBOL CLUBE / Exercícios Findos em 31 de Dezembro de 2020 e 2019 / GASTOS COM FORMAÇÃO DE ATLETAS AMADORES E MOVIMENTAÇÃO DOS PROFISSIONAIS",
+   "values": [
+    3.540915
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Amortização",
+   "lado": "expense",
+   "page": 16,
+   "section": "8. Gastos com Formação de Atletas / AVAI FUTEBOL CLUBE / Exercícios Findos em 31 de Dezembro de 2020 e 2019 / GASTOS COM FORMAÇÃO DE ATLETAS AMADORES E MOVIMENTAÇÃO DOS PROFISSIONAIS",
+   "values": [
+    -1.096042
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "De base em Formação",
+   "lado": "expense",
+   "page": 16,
+   "section": "AVAI FUTEBOL CLUBE / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / GASTOS COM FORMAÇÃO DE ATLETAS AMADORES E MOVIMENTAÇÃO DOS PROFISSIONAIS",
+   "values": [
+    12.433863
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Amortização",
+   "lado": "expense",
+   "page": 16,
+   "section": "AVAI FUTEBOL CLUBE / Exercícios Findos em 31 de Dezembro de 2021 e 2020 / GASTOS COM FORMAÇÃO DE ATLETAS AMADORES E MOVIMENTAÇÃO DOS PROFISSIONAIS",
+   "values": [
+    -1.522483
+   ],
+   "origen": "estado 14"
+  }
+ ]
+}

@@ -1,0 +1,1348 @@
+{
+ "md": "Clubes/Turquía/Beşiktaş/besiktas-futbol-bilanco-31-05-2009.md",
+ "generatedAt": "2026-09-30T01:12:02.874Z",
+ "rubros": [
+  {
+   "label": "Diğer Faaliyet Gelirleri",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "Diğer Faaliyet Giderleri (-)",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Pazarlama, Satış ve Dağıtım Giderleri (-)",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1350
+  },
+  {
+   "label": "Araştırma ve Geliştirme Giderleri (-)",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1346
+  },
+  {
+   "label": "Satışların Maliyeti (-)",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "match_organisation_expense",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "BRÜT KAR/ZARAR",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "lump_football_operations",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.55
+    ],
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1340
+  },
+  {
+   "label": "Genel Yönetim Giderleri (-)",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Satış Gelirleri (net)",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "lump_football_operations",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.89
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ]
+   ],
+   "tokens": 1341
+  },
+  {
+   "label": "FAALİYET KARI/ZARARI",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "lump_football_operations",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Finansal Giderler (-)",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1340
+  },
+  {
+   "label": "VERGİ ÖNCESİ KAR/ZARAR",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1344
+  },
+  {
+   "label": "Finansal Gelirler",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1339
+  },
+  {
+   "label": "Azınlık Payları",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1340
+  },
+  {
+   "label": "Ertelenmiş Vergi Gelir/Gideri",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.62
+    ],
+    [
+     "other_income",
+     0.24
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1345
+  },
+  {
+   "label": "Dönem Vergi Gelir/Gideri",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "DÖNEM KARI/ZARARI",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.6900000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "Hisse Başına Kazanç",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.06999999999999999
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "Yurtiçi satışlar",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "lump_football_operations",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.66
+    ],
+    [
+     "sponsorship_commercial",
+     0.14
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1405
+  },
+  {
+   "label": "Dönem Net Kar/Zararı",
+   "page": 8,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET A. Ş. / 01 Haziran 2008 - 31 Mayıs 2009 / 01 Haziran 2007 - 31 Mayıs 2008 / Dönemleri Konsolide Gelir Tabloları (TL)",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1341
+  },
+  {
+   "label": "Kombine kart ve loca geliri",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "matchday_competition",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "matchday_competition",
+     0.5
+    ],
+    [
+     "season_tickets",
+     0.38
+    ],
+    [
+     "stadium_other",
+     0.08
+    ]
+   ],
+   "tokens": 1405
+  },
+  {
+   "label": "Sponsorluk ve reklam geliri",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1405
+  },
+  {
+   "label": "Yayın gelirleri",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "broadcasting",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "broadcasting",
+     0.93
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1403
+  },
+  {
+   "label": "Futbolcu satış ve kiralama gelirleri",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1408
+  },
+  {
+   "label": "Lisanslı ürün satış gelirleri",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1406
+  },
+  {
+   "label": "Maç hasılatları",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1404
+  },
+  {
+   "label": "İsim hakkı gelirleri, lisans gelirleri",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.9
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1410
+  },
+  {
+   "label": "Sigorta satış gelirleri",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1403
+  },
+  {
+   "label": "Şampiyonlar ligi gelirleri",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "competition_bonus",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "competition_bonus",
+     0.6
+    ],
+    [
+     "broadcasting",
+     0.32
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1406
+  },
+  {
+   "label": "UEFA ve süper kupa katılım gelirleri",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "competition_bonus",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "competition_bonus",
+     0.95
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "broadcasting",
+     0.01
+    ]
+   ],
+   "tokens": 1410
+  },
+  {
+   "label": "Diğer",
+   "page": 41,
+   "section": "NOT 33 – FİNANSAL GİDERLER",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Yurtdışı satışlar",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "player_sales",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "player_sales",
+     0.31
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "other_income",
+     0.22
+    ]
+   ],
+   "tokens": 1407
+  },
+  {
+   "label": "Satış iskontoları(-)",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "other_income",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1405
+  },
+  {
+   "label": "Satıştan iadeler(-)",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ]
+   ],
+   "tokens": 1404
+  },
+  {
+   "label": "Satılan hizmet maliyeti(-)",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "match_organisation_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1405
+  },
+  {
+   "label": "Satılan ticari mallar maliyeti(-)",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "admin_general_expense",
+     0.24000000000000002
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1408
+  },
+  {
+   "label": "Seyahat satış gelirleri",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ],
+    [
+     "sponsorship_commercial",
+     0.12
+    ]
+   ],
+   "tokens": 1404
+  },
+  {
+   "label": "Toplam",
+   "page": 41,
+   "section": "NOT 33 – FİNANSAL GİDERLER",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "lump_football_operations_expense",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Futbolcu Satış Zararı (-)",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "player_sales",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "player_sales",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "player_impairment",
+     0.08
+    ]
+   ],
+   "tokens": 1408
+  },
+  {
+   "label": "Personel Ücret ve Giderleri",
+   "page": 40,
+   "section": "NOT 30 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "wages_squad",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Amortisman Giderleri",
+   "page": 40,
+   "section": "NOT 30 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "depreciation",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "depreciation",
+     0.44
+    ],
+    [
+     "player_amortisation",
+     0.32
+    ],
+    [
+     "other_amortisation",
+     0.23
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Kira giderleri",
+   "page": 39,
+   "section": "# Pazarlama, Satış ve Dağıtım Giderleri",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Diğer giderler",
+   "page": 39,
+   "section": "# Pazarlama, Satış ve Dağıtım Giderleri",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Tan. Org. Fuar ve sergi giderleri",
+   "page": 39,
+   "section": "# Pazarlama, Satış ve Dağıtım Giderleri",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Net",
+   "page": 39,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / 31 MAYIS 2009 TARİHİ İTİBARIYLE SERİ: XI. No: 29 SAYILI TEBLİĞE GÖRE / HAZIRLANMIŞ KONSOLİDE FİNANSAL TABLOLAR VE DİPNOTLARI / # NOT 28 – SATIŞLAR, SATIŞLARIN MALİYETİ VE DİĞER ESAS FAALİYET GELİRLERİ / # SATIŞ GELİRLERİ",
+   "choice": "lump_football_operations",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.77
+    ],
+    [
+     "other_income",
+     0.18
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 1398
+  },
+  {
+   "label": "Yönetim Giderleri",
+   "page": 40,
+   "section": "NOT 30 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Pazarlama, Satış ve Dağıtım Giderleri",
+   "page": 40,
+   "section": "NOT 30 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Diğer olağan gelir ve karlar",
+   "page": 40,
+   "section": "NOT 31 – DİĞER FAALİYETLERDEN GELİR / GİDERLER",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "Konusu Kalmayan Karşılıklar",
+   "page": 40,
+   "section": "NOT 31 – DİĞER FAALİYETLERDEN GELİR / GİDERLER",
+   "choice": "other_income",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_income",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "exceptional_items",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "Çalışılmayan kısım gider ve zararlar",
+   "page": 40,
+   "section": "Diğer Faaliyet Giderleri",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "exceptional_items",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Önceki dönem gelir ve karlar",
+   "page": 40,
+   "section": "NOT 31 – DİĞER FAALİYETLERDEN GELİR / GİDERLER",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1277
+  },
+  {
+   "label": "Diğer Olağandışı Gelir ve Karlar",
+   "page": 40,
+   "section": "NOT 31 – DİĞER FAALİYETLERDEN GELİR / GİDERLER",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "Önceki Dönem Gider ve Zararları",
+   "page": 40,
+   "section": "Diğer Faaliyet Giderleri",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "exceptional_items",
+     0.49
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Karşılık gideri",
+   "page": 40,
+   "section": "Diğer Faaliyet Giderleri",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "player_impairment",
+     0.18000000000000002
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Faiz gelirleri",
+   "page": 41,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / NOT 32 – FİNANSAL GELİRLER",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1297
+  },
+  {
+   "label": "Menkul kıymet satış karları",
+   "page": 41,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / NOT 32 – FİNANSAL GELİRLER",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1303
+  },
+  {
+   "label": "Diğer olağandışı gider ve zararlar",
+   "page": 40,
+   "section": "Diğer Faaliyet Giderleri",
+   "choice": "exceptional_items",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "exceptional_items",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Kambiyo zararları(-)",
+   "page": 41,
+   "section": "NOT 33 – FİNANSAL GİDERLER",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.8200000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Kambiyo karları",
+   "page": 41,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / NOT 32 – FİNANSAL GELİRLER",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1298
+  },
+  {
+   "label": "Kısa vadeli borçlanma giderleri(-)",
+   "page": 41,
+   "section": "NOT 33 – FİNANSAL GİDERLER",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Reeskont faiz gelirleri",
+   "page": 41,
+   "section": "# BEŞİKTAŞ FUTBOL YATIRIMLARI SANAYİ VE TİCARET ANONİM ŞİRKETİ / NOT 32 – FİNANSAL GELİRLER",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1300
+  },
+  {
+   "label": "Reeskont faiz giderleri(-)",
+   "page": 41,
+   "section": "NOT 33 – FİNANSAL GİDERLER",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1267
+  }
+ ]
+}

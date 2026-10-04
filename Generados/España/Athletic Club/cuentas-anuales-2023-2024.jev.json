@@ -1,0 +1,302 @@
+{
+ "md": "Clubes/España/Athletic Club/cuentas-anuales-2023-2024.md",
+ "generatedAt": "2026-09-30T22:49:07.971Z",
+ "rubrosHuella": "ae1bb23b4e622a5f0a7aa5f3e0c3377a240b633b",
+ "rubros": [
+  {
+   "label": "LNFP - Patrocinios, licencias y quinielas -",
+   "lado": null,
+   "page": 32,
+   "section": "21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2024                                         30.06.2023",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "RFEF - Cantera de valores",
+   "lado": null,
+   "page": 32,
+   "section": "21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2024                                         30.06.2023",
+   "choice": "youth_football",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Participación en la selección -",
+   "lado": null,
+   "page": 32,
+   "section": "21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2024                                         30.06.2023",
+   "choice": "competition_bonus",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadoras y jugadores",
+   "lado": null,
+   "page": 32,
+   "section": "21.8. Resultados procedentes del inmovilizado intangible, material y otras: / Presentan el siguiente detalle: / 30.06.2024                                         30.06.2023 / Nota 22 / Otra información",
+   "choice": "player_sales",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuerpo técnico y resto",
+   "lado": null,
+   "page": 32,
+   "section": "21.8. Resultados procedentes del inmovilizado intangible, material y otras: / Presentan el siguiente detalle: / 30.06.2024                                         30.06.2023 / Nota 22 / Otra información",
+   "choice": "wages_squad",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Elementos de transporte 239.555,78 - - -",
+   "lado": "expense",
+   "page": 15,
+   "section": "COSTE",
+   "choice": "depreciation",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos arbitrajes",
+   "lado": "expense",
+   "page": 31,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2024                                              30.06.2023",
+   "choice": "match_organisation_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Subvenciones a entidades",
+   "lado": "revenue",
+   "page": 31,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2024                                              30.06.2023",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "LNFP (Nota 21.4)",
+   "lado": "expense",
+   "page": 31,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2024                                              30.06.2023",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuotas entidades deportivas",
+   "lado": "expense",
+   "page": 31,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2024                                              30.06.2023",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 31,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2024                                              30.06.2023",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Maquinaria 187.401,80 - - -",
+   "lado": "expense",
+   "page": 15,
+   "section": "COSTE",
+   "choice": "depreciation",
+   "confidence": 0.3,
+   "desdeCache": true
+  },
+  {
+   "label": "Otras instalaciones",
+   "lado": "expense",
+   "page": 15,
+   "section": "COSTE",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Mobiliario y material deportivo 2.564.155,15 - - -",
+   "lado": "expense",
+   "page": 15,
+   "section": "COSTE",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipos informáticos 625.003,81 - - -",
+   "lado": "expense",
+   "page": 15,
+   "section": "COSTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Aplicaciones informáticas 3.053.731,96 263.870,37 -",
+   "lado": "expense",
+   "page": 13,
+   "section": "COSTE",
+   "choice": "other_amortisation",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Propiedad artística 143.720,82 - -",
+   "lado": "expense",
+   "page": 13,
+   "section": "COSTE",
+   "choice": "other_amortisation",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros 113.959,50 - -",
+   "lado": "expense",
+   "page": 13,
+   "section": "COSTE",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por retransmisión",
+   "lado": "revenue",
+   "page": 31,
+   "section": "Ingresos por retransmisión: / Presenta el siguiente detalle: / 30.06.2024                                              30.06.2023",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por retransmisión resto de categorías",
+   "lado": "revenue",
+   "page": 31,
+   "section": "Ingresos por retransmisión: / Presenta el siguiente detalle: / 30.06.2024                                              30.06.2023",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "LNFP - Gastos COVID",
+   "lado": "expense",
+   "page": 32,
+   "section": "21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2024                                         30.06.2023",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "exceptional_items",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Otras instalaciones 41.953.104,62 1.573.394,61 -",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "depreciation",
+     0.11
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Mobiliario y material deportivo 2.564.155,15 38.239,44 - -",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "depreciation",
+     0.2
+    ],
+    [
+     "match_organisation_expense",
+     0.19
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Equipos informáticos 625.003,81 65.089,30 - -",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "depreciation",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 912
+  },
+  {
+   "label": "Maquinaria 187.401,80 56.700,00 - -",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "depreciation",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "depreciation",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 807
+  }
+ ]
+}

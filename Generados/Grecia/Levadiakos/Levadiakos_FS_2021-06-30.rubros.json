@@ -1,0 +1,192 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.md",
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.pdf",
+ "club": "levadiakos",
+ "year": 2021,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:02:37.912Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 21,
+  "notasUsadas": []
+ },
+ "ladoConocido": 17,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "values": [
+    0.003081
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "values": [
+    -0.772825
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "values": [
+    0.963746
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "values": [
+    -0.003464
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "values": [
+    -0.243569
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "revenue",
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "values": [
+    0.000037
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "values": [
+    -0.000761
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Συντελεστής απόσβεσης",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    0.008
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Υπόλοιπο 1.7.2019",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    471.78162
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Υπόλοιπο 1.7.2019",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    393.01047
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Αποσβέσεις χρήσεως",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    8.4955
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Αναπόσβεση αξία 30.6.2020",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    70.27565
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Υπόλοιπο 1.7.2020",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    401.50597
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Αποσβέσεις χρήσεως",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    5.88205
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Αναπόσβεση αξία 30.6.2021",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    64.3936
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Πελάτες εσωτερικού",
+   "lado": "expense",
+   "page": 11,
+   "section": "## 5.7.2 Χρηματοοικονομικά περιουσιακά στοιχεία στο κόστος κτήσης / ### 5.7.2.1 Εμπορικές απαιτήσεις",
+   "values": [
+    305.35822
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Αξιόγραφα εμπορικών απαιτήσεων",
+   "lado": "expense",
+   "page": 11,
+   "section": "## 5.7.2 Χρηματοοικονομικά περιουσιακά στοιχεία στο κόστος κτήσης / ### 5.7.2.1 Εμπορικές απαιτήσεις",
+   "values": [
+    300
+   ],
+   "origen": "estado 4"
+  }
+ ]
+}

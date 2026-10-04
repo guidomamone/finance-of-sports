@@ -1,0 +1,367 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf",
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.md",
+ "generado": "2026-10-03T23:03:05.916Z",
+ "estado": "ok",
+ "clubId": "novorizontino-br",
+ "year": 2024,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf",
+   "campo": "categoria",
+   "valor": "other_income",
+   "linea": null,
+   "etiqueta": "Fomento do futebol",
+   "motivo": "Guido 2026-10-02: acepta la propuesta del sistema (ninguna nota lo explica)",
+   "evidencia": "demonstracoes-financeiras-2024.md L219",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf",
+   "campo": "categoria",
+   "valor": "other_income",
+   "linea": null,
+   "etiqueta": "Convênios",
+   "motivo": "Guido 2026-10-02: acepta la propuesta del sistema (0 en 2024)",
+   "evidencia": "L221",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Com pessoal",
+   "motivo": "Guido 2026-10-02: acepta la propuesta del sistema (dentro de los custos operacionais del fútbol profesional, nota 20)",
+   "evidencia": "L995",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf",
+   "campo": "categoria",
+   "valor": "wages_squad",
+   "linea": null,
+   "etiqueta": "Gastos com atletas e comissão técnica",
+   "motivo": "Guido 2026-10-02: acepta la propuesta del sistema (plantel y comisión técnica, nota 20)",
+   "evidencia": "L996",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf",
+   "campo": "categoria",
+   "valor": "other_expenses",
+   "linea": null,
+   "etiqueta": "Material esportivo",
+   "motivo": "Guido 2026-10-02: acepta la propuesta del sistema (nota 20)",
+   "evidencia": "L1001",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf",
+   "campo": "categoria",
+   "valor": "admin_general_expense",
+   "linea": null,
+   "etiqueta": "Acordos trabalhistas e cíveis",
+   "motivo": "Guido 2026-10-02: acepta la propuesta del sistema (nota 20)",
+   "evidencia": "L1003",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "total bruto 40.157783 cierra con los renglones de signo normal; 1 deducción(es) restan aparte (-1.303783)"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 4 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado))"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2023 de este documento suma ingresos 22.072861; el sitio tiene 22.072861"
+  },
+  {
+   "nombre": "documento del año 2025",
+   "ok": true,
+   "detalle": "ingresos de 2024: 38.854 en este documento y 38.854006 en demonstracoes-financeiras-2025.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": true,
+   "detalle": "ingresos de 2023: 22.072861 en demonstracoes-financeiras-2023.pdf y 22.072861 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 4",
+  "duda de localizar ya contestada para el club (columna, \"-\"): descartar, en demonstracoes-financeiras-2023.pdf",
+  "duda de extraer ya contestada para el club (columna, \"-\"): descartar, en demonstracoes-financeiras-2023.pdf",
+  "duda de extraer que no afecta la carga: L260 no trae importe en la columna 2023; la suma de L265 2023 cuadra sin él.",
+  "duda de extraer que no afecta la carga: En L268 la columna Notas desplaza las celdas; el Total coincide con la nota 21 (L1015)."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 38.854,
+  "gastos": 60.316335,
+  "financiero": -1.229677,
+  "impuesto": 0,
+  "resultadoImpreso": -22.692012,
+  "resultadoParaCargar": -22.692012,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Direitos de transmissão de TV",
+   "lado": "ingreso",
+   "M": 9.921046,
+   "pagina": 7,
+   "linea": 214,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Negociação de atletas",
+   "lado": "ingreso",
+   "M": 14.242707,
+   "pagina": 7,
+   "linea": 215,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Publicidade",
+   "lado": "ingreso",
+   "M": 6.240284,
+   "pagina": 7,
+   "linea": 216,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Patrocínio",
+   "lado": "ingreso",
+   "M": 3.619248,
+   "pagina": 7,
+   "linea": 217,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Arrecadação de jogos",
+   "lado": "ingreso",
+   "M": 3.550867,
+   "pagina": 7,
+   "linea": 218,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Fomento do futebol",
+   "lado": "ingreso",
+   "M": 1.671711,
+   "pagina": 7,
+   "linea": 219,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Premiações",
+   "lado": "ingreso",
+   "M": 0.85,
+   "pagina": 7,
+   "linea": 220,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Convênios",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 7,
+   "linea": 221,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outras receitas",
+   "lado": "ingreso",
+   "M": 0.06192,
+   "pagina": 7,
+   "linea": 222,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Impostos incidentes sobre a receita",
+   "lado": "ingreso",
+   "M": -1.303783,
+   "pagina": 7,
+   "linea": 225,
+   "origen": "estado (lectura 4: signo impreso, resta en su lado)"
+  },
+  {
+   "etiqueta": "Com pessoal",
+   "lado": "gasto",
+   "M": 12.632351,
+   "pagina": 25,
+   "linea": 995,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Gastos com atletas e comissão técnica",
+   "lado": "gasto",
+   "M": 19.919406,
+   "pagina": 25,
+   "linea": 996,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Serviços de terceiros",
+   "lado": "gasto",
+   "M": 6.44255,
+   "pagina": 25,
+   "linea": 997,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Com jogos",
+   "lado": "gasto",
+   "M": 4.376999,
+   "pagina": 25,
+   "linea": 998,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Manutenção e conservação",
+   "lado": "gasto",
+   "M": 0.636562,
+   "pagina": 25,
+   "linea": 999,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Aluguéis",
+   "lado": "gasto",
+   "M": 2.428272,
+   "pagina": 25,
+   "linea": 1000,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Material esportivo",
+   "lado": "gasto",
+   "M": 0.347567,
+   "pagina": 25,
+   "linea": 1001,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Premiações",
+   "lado": "gasto",
+   "M": 0.063553,
+   "pagina": 25,
+   "linea": 1002,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Acordos trabalhistas e cíveis",
+   "lado": "gasto",
+   "M": 0.91925,
+   "pagina": 25,
+   "linea": 1003,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Outras",
+   "lado": "gasto",
+   "M": 0.407531,
+   "pagina": 25,
+   "linea": 1004,
+   "origen": "nota que desglosa \"(-) Custos operacionais\""
+  },
+  {
+   "etiqueta": "Com pessoal",
+   "lado": "gasto",
+   "M": 3.834306,
+   "pagina": 8,
+   "linea": 259,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Com jogos",
+   "lado": "gasto",
+   "M": 0.825896,
+   "pagina": 8,
+   "linea": 260,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Administrativas e gerais",
+   "lado": "gasto",
+   "M": 3.625275,
+   "pagina": 8,
+   "linea": 261,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Serviços de terceiros",
+   "lado": "gasto",
+   "M": 2.725749,
+   "pagina": 8,
+   "linea": 262,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos com atletas não profissionais",
+   "lado": "gasto",
+   "M": 1.061937,
+   "pagina": 8,
+   "linea": 263,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tributária",
+   "lado": "gasto",
+   "M": 0.069131,
+   "pagina": 8,
+   "linea": 264,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receita financeira",
+   "M": 0.271777,
+   "linea": 267
+  },
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -1.501454,
+   "linea": 268
+  }
+ ],
+ "impuesto": []
+}

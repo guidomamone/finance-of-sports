@@ -1,0 +1,87 @@
+{
+  "club": "deportivopereira-co",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Deportivo Pereira/dictamen-revisor-fiscal-2025.md",
+  "generatedAt": "2026-09-30T22:43:14.485Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 4,
+      "section": "MINISTERIO DEL DEPORTE:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1er Bimestre: 25 de marzo de",
+          "values": [
+            "2025."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2do Bimestre: 27 de mayo de",
+          "values": [
+            "2025."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3er Bimestre: 28 de julio de",
+          "values": [
+            "2025."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4to Bimestre: 26 de septiembre de",
+          "values": [
+            "2025."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5to Bimestre: 25 de noviembre de",
+          "values": [
+            "2025."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6to Bimestre: 26 de enero de",
+          "values": [
+            "2026."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "co",
+    "query": "Deportivo Pereira",
+    "matches": [
+      {
+        "leagueId": "co-primeraA",
+        "year": "2025",
+        "matchedName": "Deportivo Pereira",
+        "wikipediaPage": "2025 Liga DIMAYOR"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": []
+}

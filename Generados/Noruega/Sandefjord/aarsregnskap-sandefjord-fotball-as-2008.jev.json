@@ -1,0 +1,903 @@
+{
+ "md": "Clubes/Noruega/Sandefjord/aarsregnskap-sandefjord-fotball-as-2008.md",
+ "generatedAt": "2026-09-30T13:16:01.189Z",
+ "rubros": [
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "depreciation",
+     0.96
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1566
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "sponsorship_commercial",
+     0.39
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ]
+   ],
+   "tokens": 1465
+  },
+  {
+   "label": "Renteinntekt fra foretak i samme konsern",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1485
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1482
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "wages_squad",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "wages_squad",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1485
+  },
+  {
+   "label": "Varekostnad",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1515
+  },
+  {
+   "label": "Driftsresultat",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1476
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1452
+  },
+  {
+   "label": "Rentekostnad til foretak i samme konsern",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1508
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 1471
+  },
+  {
+   "label": "Salgsinntekter",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "sponsorship_commercial",
+     0.34
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ]
+   ],
+   "tokens": 1464
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1484
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.94
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1489
+  },
+  {
+   "label": "Årsresultat",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1466
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL AS / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_income",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1470
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Avskrivning varige driftsmidler",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1541
+  },
+  {
+   "label": "Resultat av finansielle poster",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1491
+  },
+  {
+   "label": "Overført annen egenkapital",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1450
+  },
+  {
+   "label": "Folketrygd",
+   "lado": "expense",
+   "page": 10,
+   "section": "Note 2 Lønnskostnader, antall ansatte, godtgjørelse, lån til ansatte m.v.",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.68
+    ],
+    [
+     "wages_squad",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 10,
+   "section": "Note 2 Lønnskostnader, antall ansatte, godtgjørelse, lån til ansatte m.v.",
+   "choice": "wages_squad",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "wages_squad",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 10,
+   "section": "Note 2 Lønnskostnader, antall ansatte, godtgjørelse, lån til ansatte m.v.",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Andre lønnskostnader, herunder sosiale kostnader",
+   "lado": "expense",
+   "page": 10,
+   "section": "Note 2 Lønnskostnader, antall ansatte, godtgjørelse, lån til ansatte m.v.",
+   "choice": "wages_squad",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "wages_squad",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1093
+  },
+  {
+   "label": "Andre kostnader",
+   "lado": "expense",
+   "page": 10,
+   "section": "Note 2 Lønnskostnader, antall ansatte, godtgjørelse, lån til ansatte m.v.",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "wages_squad",
+     0.03
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Anskaffelseskost 01.01.",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.9400000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 855
+  },
+  {
+   "label": "Avgang kostpris",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "player_sales",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 840
+  },
+  {
+   "label": "Tilgang i året",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "player_sales",
+     0.16
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Bokført verdi 31.12.",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Akk. ord. avskr.",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "broadcasting",
+     0.15
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 905
+  },
+  {
+   "label": "Midlertidige forskjeller",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 845
+  },
+  {
+   "label": "Skattemessig verdi 31.12.",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Årets ordn. avskrivn.",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Avskr. sats %",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "broadcasting",
+     0.08
+    ]
+   ],
+   "tokens": 900
+  },
+  {
+   "label": "+ Årets tap",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "- Årets salgsgevinst",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "player_sales",
+     0.17
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1075
+  },
+  {
+   "label": "Netto resultatført",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.94
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Endring midlertidige forskjeller",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 848
+  },
+  {
+   "label": "Årets saldoavskrivn.",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Note 3 Varige driftsmidler og immateriale eiendeler",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1058
+  }
+ ]
+}

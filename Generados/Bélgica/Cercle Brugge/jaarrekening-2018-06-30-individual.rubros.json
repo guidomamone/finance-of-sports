@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Bélgica/Cercle Brugge/jaarrekening-2018-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/Cercle Brugge/jaarrekening-2018-06-30-individual.pdf",
+ "club": "cerclebrugge-be",
+ "year": 2018,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:54:25.873Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "Schulden 17/49",
+   "lado": "expense",
+   "page": 5,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 / Uitgestelde belastingen 168",
+   "values": [
+    2.963507
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Schulden op meer dan één jaar 63 |",
+   "lado": "expense",
+   "page": 5,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 / Uitgestelde belastingen 168",
+   "values": [
+    0.009342
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 5,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 / Uitgestelde belastingen 168",
+   "values": [
+    0.009342
+   ],
+   "origen": "estado 5"
+  }
+ ]
+}

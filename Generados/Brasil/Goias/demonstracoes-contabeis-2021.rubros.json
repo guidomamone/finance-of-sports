@@ -1,0 +1,380 @@
+{
+  "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2021.md",
+  "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2021.pdf",
+  "club": "goias-br",
+  "year": 2021,
+  "generatedAt": "2026-10-03T00:16:10.251Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Bilheterias",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.620535
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Direitos de transmissão de TV",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        29.197496
+      ],
+      "glosa": "Derechos de transmisión de TV"
+    },
+    {
+      "label": "Premiação/participações",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.798176
+      ],
+      "glosa": "Premios y participaciones"
+    },
+    {
+      "label": "Transação de atletas (a)",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        8.428754
+      ],
+      "glosa": "Transferencia de futbolistas (a)"
+    },
+    {
+      "label": "Patrocínio/publicidade/propaganda",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        4.875064
+      ],
+      "glosa": "Patrocinio, publicidad y propaganda"
+    },
+    {
+      "label": "Associados",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.8888
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Esportes Olímpicos",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.540095
+      ],
+      "glosa": "Deportes olímpicos"
+    },
+    {
+      "label": "Iniciação Esportiva",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        1.353467
+      ],
+      "glosa": "Iniciación deportiva"
+    },
+    {
+      "label": "Nação Esmeraldina",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.361836
+      ],
+      "glosa": "Nação Esmeraldina"
+    },
+    {
+      "label": "Jogos lotéricos",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        1.633783
+      ],
+      "glosa": "Juegos de lotería"
+    },
+    {
+      "label": "Receitas patrimoniais",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.140464
+      ],
+      "glosa": "Ingresos patrimoniales"
+    },
+    {
+      "label": "Outras receitas",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        1.561124
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "(-) INSS Receitas de Bilheterias",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.031027
+      ],
+      "glosa": "(-) INSS sobre ingresos de taquilla"
+    },
+    {
+      "label": "(-) Cortez. Ingressos - Campeonato Brasileiro",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.04021
+      ],
+      "glosa": "(-) Cortesías de entradas - Campeonato Brasileño"
+    },
+    {
+      "label": "(-) INSS Competições/Torneios",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -1.485264
+      ],
+      "glosa": "(-) INSS Competiciones/Torneos"
+    },
+    {
+      "label": "(-) Direito de Arena Competições/Torneios",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -1.430108
+      ],
+      "glosa": "(-) Derecho de arena Competiciones/Torneos"
+    },
+    {
+      "label": "(-) INSS Patrocínio/Publicidade/Propaganda",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.199908
+      ],
+      "glosa": "(-) INSS Patrocinio/Publicidad/Propaganda"
+    },
+    {
+      "label": "(-) Deduções de mensalidades",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.009696
+      ],
+      "glosa": "(-) Deducciones de cuotas sociales"
+    },
+    {
+      "label": "(-) Custos e Despesas Nacao Esmeraldina",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.05953
+      ],
+      "glosa": "(-) Costes y gastos Nação Esmeraldina"
+    },
+    {
+      "label": "(-) IRRF Jogos Lotéricos",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.154392
+      ],
+      "glosa": "(-) IRRF Loterías"
+    },
+    {
+      "label": "(-) INSS Jogos Lotéricos",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.081689
+      ],
+      "glosa": "(-) INSS Loterías"
+    },
+    {
+      "label": "(-) Demais deduções da receita",
+      "lado": "revenue",
+      "page": 36,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        -0.048247
+      ],
+      "glosa": "(-) Demás deducciones de ingresos"
+    },
+    {
+      "label": "Arbitragens",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.193143
+      ],
+      "glosa": "Arbitrajes"
+    },
+    {
+      "label": "Exames antidoping",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.015808
+      ],
+      "glosa": "Controles antidopaje"
+    },
+    {
+      "label": "Custos e despesas c/ pessoal - Jogos",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.07314
+      ],
+      "glosa": "Costes y gastos de personal - Partidos"
+    },
+    {
+      "label": "Outros custos e despesas - Jogos",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.660325
+      ],
+      "glosa": "Otros costes y gastos - Partidos"
+    },
+    {
+      "label": "Taxas confederações e federações",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.19065
+      ],
+      "glosa": "Tasas de confederaciones y federaciones"
+    },
+    {
+      "label": "Transportes",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.523624
+      ],
+      "glosa": "Transportes"
+    },
+    {
+      "label": "Alimentação e estadias",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.697646
+      ],
+      "glosa": "Alojamiento y manutención"
+    },
+    {
+      "label": "Despesa com pessoal",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        23.812163
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Amortização de custo de atletas contratados (a)",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        1.379051
+      ],
+      "glosa": "Amortización de costes de futbolistas contratados (a)"
+    },
+    {
+      "label": "Amortização de custo de atletas formados (a)",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        2.664482
+      ],
+      "glosa": "Amortización de costes de futbolistas formados (a)"
+    },
+    {
+      "label": "Cessão de Direitos Imagem",
+      "lado": "expense",
+      "page": 37,
+      "section": "nota que desglosa \"Custo com futebol\"",
+      "values": [
+        0.734997
+      ],
+      "glosa": "Cesión de derechos de imagen"
+    },
+    {
+      "label": "Despesas administrativas e gerais",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        16.69661
+      ],
+      "glosa": "Gastos generales y de administración"
+    },
+    {
+      "label": "Despesas com materiais",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        1.524441
+      ],
+      "glosa": "Gastos de materiales"
+    },
+    {
+      "label": "Despesas com serviços de terceiros",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        3.487771
+      ],
+      "glosa": "Gastos por servicios de terceros"
+    },
+    {
+      "label": "Despesas tributárias",
+      "lado": "expense",
+      "page": 9,
+      "section": "estado",
+      "values": [
+        0.143501
+      ],
+      "glosa": "Gastos tributarios"
+    }
+  ]
+}

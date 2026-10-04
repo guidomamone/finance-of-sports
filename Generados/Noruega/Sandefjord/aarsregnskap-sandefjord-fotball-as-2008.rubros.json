@@ -1,0 +1,147 @@
+{
+ "md": "Clubes/Noruega/Sandefjord/aarsregnskap-sandefjord-fotball-as-2008.md",
+ "pdf": "Clubes/Noruega/Sandefjord/aarsregnskap-sandefjord-fotball-as-2008.pdf",
+ "club": "sandefjord",
+ "year": 2008,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:45.858Z",
+ "tieOuts": {
+  "cierran": 28,
+  "noCierran": 8
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "8 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 17,
+  "notasUsadas": []
+ },
+ "ladoConocido": 11,
+ "rubros": [
+  {
+   "label": "Salgsinntekter",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "values": [
+    36.068413
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "values": [
+    3.226316
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "values": [
+    1.58976
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "values": [
+    1.904014
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Avskrivning varige driftsmidler",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "values": [
+    1.151473
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "values": [
+    52.571529
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "values": [
+    0.020833
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "values": [
+    0.037466
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "values": [
+    0.186977
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Overført annen egenkapital",
+   "lado": null,
+   "page": 5,
+   "section": "# Sandefjord Fotball AS / ## Resultatregnskap",
+   "values": [
+    -18.125657
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Andre lønnskostnader, herunder sosiale kostnader",
+   "lado": "expense",
+   "page": 10,
+   "section": "Note 2 Lønnskostnader, antall ansatte, godtgjørelse, lån til ansatte m.v.",
+   "values": [
+    911.53
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Andre kostnader",
+   "lado": "expense",
+   "page": 10,
+   "section": "Note 2 Lønnskostnader, antall ansatte, godtgjørelse, lån til ansatte m.v.",
+   "values": [
+    992.484
+   ],
+   "origen": "estado 5"
+  }
+ ]
+}

@@ -1,0 +1,522 @@
+{
+ "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2009-10.pdf",
+ "generado": "2026-10-03T23:15:46.141Z",
+ "frena": [],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-03: Guido 2026-10-03: estados separados de Juventus F.C. S.p.A. en todos los años (los consolidados del grupo empiezan en 2020-21); serie 2003-2025 pareja)"
+ ],
+ "ejercicio": {
+  "clubId": "juventus-it",
+  "year": 2010,
+  "cierre": "2010-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Ticket sales",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 18.471393,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Television and radio rights and media revenues",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 151.436256,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Revenues from sponsorship and advertising",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 45.678338,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Revenues from players' registration rights",
+    "normalizedCategory": "player_sales",
+    "amountNative": 14.66472,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Other revenues",
+    "normalizedCategory": "other_income",
+    "amountNative": 9.914903,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Other non recurring revenues and costs",
+    "normalizedCategory": "other_income",
+    "amountNative": 3.134187,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Purchase of materials, supplies and other consumables",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.246618,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "External services",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -27.265348,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Players' wages and technical staff costs",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -127.035001,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Other personnel",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -11.167834,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Expenses from players' registration rights",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -3.42177,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Other costs",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -25.352588,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 1,
+    "_conf": 0.99
+   },
+   {
+    "rawLabel": "Amortisation and write-downs of players' registration rights",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -39.486912,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Other amortisation, write-downs and provisions",
+    "normalizedCategory": "other_amortisation",
+    "amountNative": -2.10402,
+    "disclosureLevel": "aggregated",
+    "_pag": 62,
+    "_escalon": 1,
+    "_conf": 1
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2010-06-30",
+   "sourceId": "juventus-it-annual-financial-report-2009-10",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -3.143865,
+   "tax": -13.043785,
+   "extraRows": [
+    {
+     "label": "Financial income",
+     "value": 3.58352
+    },
+    {
+     "label": "Financial expenses",
+     "value": -6.727385
+    },
+    {
+     "label": "Current taxes",
+     "value": -5.544717
+    },
+    {
+     "label": "Deferred taxes",
+     "value": -7.499068
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 243.299797,
+   "officialTotalExpenses": 238.080091,
+   "officialPAT": -10.967944
+  },
+  "source": {
+   "id": "juventus-it-annual-financial-report-2009-10",
+   "clubId": "juventus-it",
+   "title": "Juventus Football Club S.p.A. — Juventus-annual-financial-report-2009-10 (ejercicio 2010)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Italia/Juventus/Juventus-annual-financial-report-2009-10.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2009-10.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2010-06-30",
+  "evidencia": {
+   "pagina": 60,
+   "texto": "|  ASSETS | Notes | 30/06/2010 | 30/06/2009*  |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "temporada"
+ },
+ "clubId": "juventus-it",
+ "year": 2010,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 18,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Ticket sales",
+   "page": 62,
+   "native": 18.471393,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 18.471393,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 18.471393
+  },
+  {
+   "label": "Television and radio rights and media revenues",
+   "page": 62,
+   "native": 151.436256,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 151.436256,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 151.436256
+  },
+  {
+   "label": "Revenues from sponsorship and advertising",
+   "page": 62,
+   "native": 45.678338,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 45.678338,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 45.678338
+  },
+  {
+   "label": "Revenues from players' registration rights",
+   "page": 62,
+   "native": 14.66472,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 14.66472,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 14.66472
+  },
+  {
+   "label": "Other revenues",
+   "page": 62,
+   "native": 9.914903,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 9.914903,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 9.914903
+  },
+  {
+   "label": "Other non recurring revenues and costs",
+   "page": 62,
+   "native": 3.134187,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))",
+   "signoFijo": 3.134187,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.134187
+  },
+  {
+   "label": "Purchase of materials, supplies and other consumables",
+   "page": 62,
+   "native": 2.246618,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.246618,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-03",
+   "destino": "expense",
+   "amountNative": -2.246618
+  },
+  {
+   "label": "External services",
+   "page": 62,
+   "native": 27.265348,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 27.265348,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -27.265348
+  },
+  {
+   "label": "Players' wages and technical staff costs",
+   "page": 62,
+   "native": 127.035001,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 127.035001,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -127.035001
+  },
+  {
+   "label": "Other personnel",
+   "page": 62,
+   "native": 11.167834,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 11.167834,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-03",
+   "destino": "expense",
+   "amountNative": -11.167834
+  },
+  {
+   "label": "Expenses from players' registration rights",
+   "page": 62,
+   "native": 3.42177,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.42177,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-03: costos de operaciones con jugadores (préstamos, comisiones), no amortización; la amortización va en su propio renglón (52,3 M)",
+   "destino": "expense",
+   "amountNative": -3.42177
+  },
+  {
+   "label": "Other costs",
+   "page": 62,
+   "native": 25.352588,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 25.352588,
+   "cat": "other_expenses",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -25.352588
+  },
+  {
+   "label": "Amortisation and write-downs of players' registration rights",
+   "page": 62,
+   "native": 39.486912,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 39.486912,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -39.486912
+  },
+  {
+   "label": "Other amortisation, write-downs and provisions",
+   "page": 62,
+   "native": 2.10402,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.10402,
+   "cat": "other_amortisation",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.10402
+  },
+  {
+   "label": "Financial income",
+   "page": null,
+   "native": 3.58352,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Financial expenses",
+   "page": null,
+   "native": -6.727385,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Current taxes",
+   "page": null,
+   "native": -5.544717,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  },
+  {
+   "label": "Deferred taxes",
+   "page": null,
+   "native": -7.499068,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion (estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6))": "gastos con signo",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 243.299797,
+  "expSum": -238.080091,
+  "officialTotalRevenue": 243.299797,
+  "officialTotalExpenses": 238.080091,
+  "officialPAT": -10.967944,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -10.967944,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 243.299797
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 238.080091
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "EUR@2010-06-30",
+  "fx": 0.81493,
+  "source": "market_close",
+  "label": "Tipo de referencia del Banco Central Europeo al 2010-06-30"
+ },
+ "liga": {
+  "valor": "it-seriea",
+  "fuente": "roster cacheado de \"2009–10 Serie A\" (tools/club-league-reference/it.json), coincidencia exacta \"Juventus\"",
+  "estado": "ok"
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 6,
+  "lineasGasto": 8,
+  "metaFilas": 4,
+  "excluidas": 0
+ }
+}

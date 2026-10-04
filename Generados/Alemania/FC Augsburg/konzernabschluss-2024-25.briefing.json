@@ -1,0 +1,533 @@
+{
+  "club": "augsburg-de",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/FC Augsburg/konzernabschluss-2024-25.md",
+  "generatedAt": "2026-09-30T22:37:47.879Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 177,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 13,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 1,
+      "section": "AR UNTERNEHMENSREGISTER / AKTIVA / EUR EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte",
+          "values": [
+            "42.091,00",
+            "26.834,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Spielerwerte",
+          "values": [
+            "32.482.388,00",
+            "35.060.411,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "UNTERNEHMENSREGISTER / EUR EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "IV. Konzernbilanzgewinn",
+          "values": [
+            "46.295.943,77",
+            "28.153.865,84"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "V. Nicht beherrschende Anteile",
+          "values": [
+            "2.982.202,39",
+            "3.079.122,74"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "64.853.146,16 46.807.988,58 / B. Unterschiedsbetrag aus der Kapitalkonsolidierung 14.658.293,66 15.729.088,39 / C. Rückstellungen",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Steuerrückstellungen",
+          "values": [
+            "3.132.575,56",
+            "3.184.278",
+            ",33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Sonstige Rückstellungen",
+          "values": [
+            "10.146.664,00",
+            "8.389.093,24"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "13.279.239,56 12.073.371,57 / D. Verbindlichkeiten",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Verbindlichkeiten gegenüber Kreditinstituten",
+          "values": [
+            "0,00",
+            "16,27"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "20.398.638,70",
+            "29.325.972,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Verbindlichkeiten gegenüber verbundenen Unternehmen",
+          "values": [
+            "0,00",
+            "1.876,25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Sonstige Verbindlichkeiten",
+          "values": [
+            "7.411.473,19",
+            "6.159.701,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- davon aus Steuern (T€5.188, Vj.",
+          "values": [
+            "T€4.906)",
+            "27.810.111,89",
+            "35.487",
+            ".566,38"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "UNTERNEHMENSREGISTER / EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "a) Löhne und Gehälter",
+          "values": [
+            "-57.555.508,56",
+            "-55.164.648,87"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) soziale Abgaben",
+          "values": [
+            "-4.738.559,58",
+            "-62.294.068,14",
+            "-4.435.100,81"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "-59.599.749,68 / 5. Abschreibungen",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen",
+          "values": [
+            "-14.610.437,86",
+            "-17.208.200,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6. Sonstige betriebliche Aufwendungen",
+          "values": [
+            "-26.082.290,65",
+            "-22.899.544,63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7. Sonstige Zinsen und ähnliche Erträge",
+          "values": [
+            ".843,03",
+            "807.870,83"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "davon aus verbundenen Unternehmen T€ 156 (Vj. T€84) / 8. Zinsen und ähnliche Aufwendungen -294.859,78 -24.789,24 / davon aus der Aufzinsung T€21 (Vj. T€21)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "9. Steuern vom Einkommen und vom Ertrag",
+          "values": [
+            "-2.990.125,88",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "10. Ergebnis nach Steuern",
+          "values": [
+            "17.950.685,74",
+            "-8.209.434,85"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11. Sonstige Steuern",
+          "values": [
+            "-976.322,89",
+            "-117.629,80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "12. Auflösung Unterschiedsbetrag aus der Kapitalkonsolidierung",
+          "values": [
+            "1.070.794,73",
+            "1.016.696,85"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13. Konzernjahresüberschuss/-fehlbetrag",
+          "values": [
+            "18.045.157,58",
+            "-7.310.367,80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "14. Verlustanteil nicht beherrschende Anteile",
+          "values": [
+            "96.920,35",
+            "92.023,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "15. Konzerngewinnvortrag",
+          "values": [
+            "28.153.865,84",
+            "35.372.209,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "16. Konzernbilanzgewinn",
+          "values": [
+            "46.295",
+            ".943,77",
+            "28.153.865,84"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 8,
+      "section": "UNTERNEHMENSREGISTER / TEUR TEUR TEUR TEUR / TEUR TEUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Verpflichtungen aus Erbbaupacht",
+          "values": [
+            "8.903"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mietverpflichtungen",
+          "values": [
+            "2.238",
+            "2.462"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Herr Thilo Sautter, Diplom-Kaufmann (Vorsitzender seit",
+          "values": [
+            "09.12.24)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Herr Johannes Ruppert, Investor (Mitglied seit 23.09.24, stellv. Vorsitzender seit",
+          "values": [
+            "09.12.24)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "+-",
+          "values": [
+            "3."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/-",
+          "values": [
+            "4."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "+ 5",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "+-",
+          "values": [
+            "6."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+-",
+          "values": [
+            "7."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+-",
+          "values": [
+            "8."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+-",
+          "values": [
+            "9."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Konzernjahresüberschuss",
+          "values": [
+            "-7.310.367,80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand",
+          "values": [
+            "30.06.2024",
+            "46.807.988,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresüberschuss",
+          "values": [
+            "18.045.157,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand",
+          "values": [
+            "30.06.2025",
+            "64.853.146,16"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Der Verlustanteil „nicht beherrschender Anteile‘ beläuft sich auf TEUR",
+          "values": [
+            "-97."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nach Berücksichtigung eines Gewinnvortrags von TEUR 28.154 ergibt sich ein Bilanzgewinn von TEUR",
+          "values": [
+            "46.296."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 8,
+    "results": [
+      {
+        "label": "9. Steuern vom Einkommen und vom Ertrag",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "9. Steuern vom Einkommen und vom Ertrag",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "10. Ergebnis nach Steuern",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "10. Ergebnis nach Steuern",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "11. Sonstige Steuern",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "11. Sonstige Steuern",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Sonstige Steuern",
+        "similarity": 100
+      },
+      {
+        "label": "12. Auflösung Unterschiedsbetrag aus der Kapitalkonsolidierung",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Auflösung Unterschiedsbetrag aus der Kapitalkonsolidierung",
+        "similarity": 100
+      },
+      {
+        "label": "12. Auflösung Unterschiedsbetrag aus der Kapitalkonsolidierung",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "13. Konzernjahresüberschuss/-fehlbetrag",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "13. Konzernjahresüberschuss/-fehlbetrag",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "14. Verlustanteil nicht beherrschende Anteile",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "14. Verlustanteil nicht beherrschende Anteile",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "15. Konzerngewinnvortrag",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "15. Konzerngewinnvortrag",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "16. Konzernbilanzgewinn",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "16. Konzernbilanzgewinn",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "de",
+    "query": "FC Augsburg",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

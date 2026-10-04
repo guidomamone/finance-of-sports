@@ -1,0 +1,1755 @@
+{
+ "md": "Clubes/Portugal/Vitória Guimarães/relatorio-contas-2024-25.md",
+ "generatedAt": "2026-09-30T19:15:47.798Z",
+ "rubrosHuella": "9c36477643aa10acac7a1843cb5d87dc85043ca4",
+ "rubros": [
+  {
+   "label": "Direitos Televisivos",
+   "lado": "revenue",
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Merchandising",
+   "lado": "revenue",
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Sócios e Camarotes",
+   "lado": "revenue",
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "choice": "season_tickets",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "season_tickets",
+     0.74
+    ],
+    [
+     "member_dues",
+     0.18
+    ],
+    [
+     "stadium_other",
+     0.05
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Mec. Solidariedade",
+   "lado": "revenue",
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "choice": "player_sales",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "player_sales",
+     0.89
+    ],
+    [
+     "youth_football",
+     0.06
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Patrocínios",
+   "lado": "revenue",
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Prémios",
+   "lado": "revenue",
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 975
+  },
+  {
+   "label": "Bilhética",
+   "lado": "revenue",
+   "page": 16,
+   "section": "### 3.4.1 Rendimentos",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": null,
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1472
+  },
+  {
+   "label": "CMVMC (mercadorias)",
+   "lado": "expense",
+   "page": 17,
+   "section": "Relatório^{}[] e Contas / Relatório^{}[] de Gestão / 03",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Outros Gastos (exc. Jogadores)",
+   "lado": "expense",
+   "page": 17,
+   "section": "Relatório^{}[] e Contas / Relatório^{}[] de Gestão / 03",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "lado": "expense",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "choice": "wages_squad",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "wages_squad",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.15000000000000002
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Amortizações e depreciações",
+   "lado": null,
+   "page": 21,
+   "section": "### 3.4.5 Resultados",
+   "choice": "depreciation",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "depreciation",
+     0.96
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1538
+  },
+  {
+   "label": "Provisões e imparidades",
+   "lado": "expense",
+   "page": 17,
+   "section": "Relatório^{}[] e Contas / Relatório^{}[] de Gestão / 03",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "player_impairment",
+     0.31
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Jogadores",
+   "lado": "expense",
+   "page": 17,
+   "section": "Relatório^{}[] e Contas / Relatório^{}[] de Gestão / 03",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Gastos Operacionais (exc. Jogadores)",
+   "lado": "expense",
+   "page": 17,
+   "section": "Relatório^{}[] e Contas / Relatório^{}[] de Gestão / 03",
+   "choice": "match_organisation_expense",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.41000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Juros",
+   "lado": null,
+   "page": 21,
+   "section": "### 3.4.5 Resultados",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1363
+  },
+  {
+   "label": "Rendimentos e Gastos",
+   "lado": null,
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "choice": "lump_football_operations",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "other_income",
+     0.27
+    ]
+   ],
+   "tokens": 1465
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 989
+  },
+  {
+   "label": "Custo das mercadorias vendidas e das matérias consumidas",
+   "lado": "expense",
+   "page": 41,
+   "section": "# 8.3 - Quantia de inventários reconhecida como um gasto durante o período",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Subsidios à exploração",
+   "lado": "revenue",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "Imparidade de inventarios",
+   "lado": null,
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "player_impairment",
+     0.02
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "Vendas e serviços prestados",
+   "lado": "revenue",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Imparidade de dívidas a receber",
+   "lado": null,
+   "page": 54,
+   "section": "## 22 – Imparidade ativos",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "player_impairment",
+     0.03
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1513
+  },
+  {
+   "label": "Provisões (aumentos/reduções)",
+   "lado": null,
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "choice": "other_income",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "exceptional_items",
+     0.07
+    ]
+   ],
+   "tokens": 1518
+  },
+  {
+   "label": "Outros rendimentos e ganhos",
+   "lado": "revenue",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Outros gastos e perdas",
+   "lado": "expense",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Gastos/reversões de depreciação e amortização",
+   "lado": "expense",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "choice": "depreciation",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "depreciation",
+     0.92
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Inventários no início do período",
+   "lado": "expense",
+   "page": 41,
+   "section": "# 8.3 - Quantia de inventários reconhecida como um gasto durante o período",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Juros e rendimentos similares obtidos",
+   "lado": "revenue",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Imposto sobre o rendimentos do período",
+   "lado": "expense",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Juros e gastos similares suportados",
+   "lado": "expense",
+   "page": 25,
+   "section": "# 4.2 Demonstração de Resultados",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Inventários no fim do período",
+   "lado": "expense",
+   "page": 41,
+   "section": "# 8.3 - Quantia de inventários reconhecida como um gasto durante o período",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Matéria coletável/coleta",
+   "lado": null,
+   "page": 42,
+   "section": "# 10 - IMPOSTOS SOBRE O RENDIMENTO",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1509
+  },
+  {
+   "label": "Compras",
+   "lado": "expense",
+   "page": 41,
+   "section": "# 8.3 - Quantia de inventários reconhecida como um gasto durante o período",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "player_amortisation",
+     0.29
+    ],
+    [
+     "youth_other_sports_expense",
+     0.16
+    ]
+   ],
+   "tokens": 886
+  },
+  {
+   "label": "Outras componentes do imposto",
+   "lado": "expense",
+   "page": 42,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 971
+  },
+  {
+   "label": "Deduções de perdas fiscais",
+   "lado": "revenue",
+   "page": 42,
+   "section": "# 10 - IMPOSTOS SOBRE O RENDIMENTO",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Ajustamentos para o lucro tributável",
+   "lado": null,
+   "page": 42,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "Imposto corrente",
+   "lado": "expense",
+   "page": 42,
+   "section": "# 10 - IMPOSTOS SOBRE O RENDIMENTO",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Produto do lucro contabilístico (Resultado antes de impostos) multiplicado pela(s) taxa(s) de imposto aplicável(eis)",
+   "lado": "expense",
+   "page": 42,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1219
+  },
+  {
+   "label": "Aplicação resultados 23/24",
+   "lado": null,
+   "page": 49,
+   "section": "# 14.1 – Capital Social / # 14.2 - Resultados Transitados",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "other_income",
+     0.09999999999999999
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1508
+  },
+  {
+   "label": "Saldo a 30-06-2024",
+   "lado": null,
+   "page": 49,
+   "section": "# 14.1 – Capital Social / # 14.2 - Resultados Transitados",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1621
+  },
+  {
+   "label": "Venda de mercadorias",
+   "lado": "revenue",
+   "page": 50,
+   "section": "### 14.3 – Proposta de aplicação de resultados / ### 15 – Vendas e Prestações de serviços",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Prestação de serviços",
+   "lado": "revenue",
+   "page": 50,
+   "section": "### 14.3 – Proposta de aplicação de resultados / ### 15 – Vendas e Prestações de serviços",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Saldo a 30-06-2025",
+   "lado": null,
+   "page": 49,
+   "section": "# 14.1 – Capital Social / # 14.2 - Resultados Transitados",
+   "choice": "other_income",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1573
+  },
+  {
+   "label": "Federação Portuguesa de Futebol",
+   "lado": null,
+   "page": 50,
+   "section": "### 16 – Subsídios",
+   "choice": "competition_bonus",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "competition_bonus",
+     0.6900000000000001
+    ],
+    [
+     "other_income",
+     0.24
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1491
+  },
+  {
+   "label": "Liga Portuguesa Futebol",
+   "lado": null,
+   "page": 50,
+   "section": "### 16 – Subsídios",
+   "choice": "other_income",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "lump_football_operations",
+     0.24000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.2
+    ]
+   ],
+   "tokens": 1465
+  },
+  {
+   "label": "Outras Entidades (IEFP)",
+   "lado": null,
+   "page": 50,
+   "section": "### 16 – Subsídios",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "other_income",
+     0.24000000000000002
+    ],
+    [
+     "education",
+     0.04
+    ]
+   ],
+   "tokens": 1457
+  },
+  {
+   "label": "Remuneração Administração",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Remuneração jogadores",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Remuneração treinadores",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "wages_squad",
+     0.29
+    ],
+    [
+     "lump_football_operations_expense",
+     0.26
+    ]
+   ],
+   "tokens": 919
+  },
+  {
+   "label": "Remuneração pessoal administrativo",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "wages_squad",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Encargos com remunerações",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "wages_squad",
+     0.54
+    ],
+    [
+     "admin_general_expense",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Seguro acidentes trabalho",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "wages_squad",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 844
+  },
+  {
+   "label": "Outros gastos pessoal",
+   "lado": "expense",
+   "page": 52,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "wages_squad",
+     0.07
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Rendimentos suplementares",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## 19 – Outros Rendimentos e Ganhos",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Descontos pronto pagamento obtidos",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## 19 – Outros Rendimentos e Ganhos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Seguros - indemnizações",
+   "lado": "revenue",
+   "page": 53,
+   "section": "A rubrica “Rendimentos Suplementares” está dividida da seguinte forma:",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1164
+  },
+  {
+   "label": "Rendimentos e ganhos em investimentos",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## 19 – Outros Rendimentos e Ganhos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Outros rendimentos Suplementares",
+   "lado": "revenue",
+   "page": 53,
+   "section": "A rubrica “Rendimentos Suplementares” está dividida da seguinte forma:",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "Compensação Financeira",
+   "lado": "revenue",
+   "page": 53,
+   "section": "A rubrica “Rendimentos Suplementares” está dividida da seguinte forma:",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "player_sales",
+     0.09999999999999999
+    ],
+    [
+     "youth_football",
+     0.07
+    ]
+   ],
+   "tokens": 939
+  },
+  {
+   "label": "Ganhos em inventarios",
+   "lado": "revenue",
+   "page": 53,
+   "section": "## 19 – Outros Rendimentos e Ganhos",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 842
+  },
+  {
+   "label": "Descontos pronto pagamento concedidos",
+   "lado": "expense",
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Cedencia Jogadores",
+   "lado": "revenue",
+   "page": 53,
+   "section": "A rubrica “Rendimentos Suplementares” está dividida da seguinte forma:",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Gastos, perdas em investimento não financeiros",
+   "lado": "expense",
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Correções relativas a exercicios anteriores",
+   "lado": "expense",
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "exceptional_items",
+     0.48
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Quotizações (liga)",
+   "lado": "expense",
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "choice": "admin_general_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "match_organisation_expense",
+     0.18
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Donativos",
+   "lado": "expense",
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 926
+  },
+  {
+   "label": "Multas",
+   "lado": "expense",
+   "page": 53,
+   "section": "## 20 – Outros Gastos e Perdas",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Equipamento de transporte",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 21 – Gastos/Reversões de depreciação e de amortização",
+   "choice": "depreciation",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "depreciation",
+     0.47000000000000003
+    ],
+    [
+     "match_organisation_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Equipamento básico",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 21 – Gastos/Reversões de depreciação e de amortização",
+   "choice": "depreciation",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "depreciation",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 881
+  },
+  {
+   "label": "Equipamento administrativo",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 21 – Gastos/Reversões de depreciação e de amortização",
+   "choice": "depreciation",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "depreciation",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Outros ativos fixos tangíveis",
+   "lado": "expense",
+   "page": 54,
+   "section": "## 21 – Gastos/Reversões de depreciação e de amortização",
+   "choice": "depreciation",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "depreciation",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "Passivos financeiros",
+   "lado": null,
+   "page": 55,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1419
+  },
+  {
+   "label": "Imparidades de inventários",
+   "lado": null,
+   "page": 54,
+   "section": "## 22 – Imparidade ativos",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "player_impairment",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1522
+  },
+  {
+   "label": "Ativos financeiros",
+   "lado": null,
+   "page": 55,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1478
+  }
+ ]
+}

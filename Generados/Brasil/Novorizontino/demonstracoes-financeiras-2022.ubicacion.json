@@ -1,0 +1,235 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.pdf",
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T03:07:05.378Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    33,
+    38
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 6,
+   "lineas": [
+    150,
+    153
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 7,
+   "lineas": [
+    185,
+    188
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 8,
+   "lineas": [
+    216,
+    219
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    247,
+    265
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    279,
+    304
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 11,
+   "lineas": [
+    320,
+    327
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 12,
+   "lineas": [
+    343,
+    347
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 13,
+   "lineas": [
+    361,
+    368
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 14,
+   "lineas": [
+    382,
+    413
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 24,
+   "lineas": [
+    741,
+    745
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 24,
+   "lineas": [
+    755,
+    761
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 24,
+   "lineas": [
+    765,
+    770
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 25,
+   "lineas": [
+    783,
+    788
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    792,
+    799
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 25,
+   "lineas": [
+    807,
+    813
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 26,
+   "lineas": [
+    843,
+    862
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    864,
+    883
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 27,
+   "lineas": [
+    899,
+    908
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 27,
+   "lineas": [
+    916,
+    923
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 29,
+   "lineas": [
+    977,
+    985
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 30,
+   "lineas": [
+    999,
+    1020
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 31,
+   "lineas": [
+    1033,
+    1045
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6",
+  "b7"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b21",
+  "b22",
+  "b23"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "moneda": "BRL",
+ "columna_ejercicio": "2022 Total",
+ "columna_anterior": "2021 (reapresentada)",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El encabezado '2022 (reapresentadas)' del cuadro de despesas administrativas (b22) es en realidad la columna 2021 reapresentada, y se carga 'Total' como 2022?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Administrativas e gerais",
+   "texto": "El encabezado de b22 parece mal rotulado; el total del ejercicio debería coincidir con 8.234.931 del estado.",
+   "bloques": [
+    "b22"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿En la nota de resultado financeiro (b23) se toma la columna 'Total' como 2022 y la última como 2021?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "Receita financeira",
+   "texto": "b23 tiene columnas por segmento más Total y 2021; hay que confirmar cuál corresponde al ejercicio.",
+   "bloques": [
+    "b23"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados de la entidad (individual) en b6 (hasta déficit antes del resultado financiero, con columnas por segmento y Total 2022) y su continuación b7 (resultado financiero y déficit). Notas de gastos: b21 abre 'Gastos com atletas e comissão técnica' (cuadra 3.548.601), b22 abre 'Administrativas e gerais', b23 abre receitas/despesas financeiras. No hay notas que abran ingresos. Se excluyen balance, flujo, mutaciones, inmovilizado e intangible."
+}

@@ -1,0 +1,297 @@
+{
+  "club": "raal-la-louviere",
+  "year": 2018,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/RAAL La Louvière/jaarrekening-2018-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:55:26.038Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 29,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 10,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 9,
+      "section": "N° BE 0675.684.677 A 3.1 / COMPTES ANNUELS / BILAN APRES RÉPARTITION / ACTIF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "FRAIS D'ÉTABLISSEMENT",
+          "values": [
+            "2.914"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ACTIFS IMMOBILISÉS 21/28",
+          "values": [
+            "641.780"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immobilisations incorporelles 6.1.1 |",
+          "values": [
+            "195.213"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immobilisations corporelles 6.1.2 | 22/27",
+          "values": [
+            "413.585"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "Terrains et constructions 22",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Installations, machines et outillage",
+          "values": [
+            "109.883"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mobilier et matériel roulant",
+          "values": [
+            "47.491"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "Location-financement et droits similaires 25 / Autres immobilisations corporelles 26",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Immobilisations en cours et acomptes versés",
+          "values": [
+            "256.211"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immobilisations financières 6.1.3 |",
+          "values": [
+            "32.982"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ACTIFS CIRCULANTS 29/58",
+          "values": [
+            "397.606"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "Créances à plus d'un an 29 / Créances commerciales 290 / Autres créances 291",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Stocks et commandes en cours d'exécution",
+          "values": [
+            "1.643"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stocks 30/36",
+          "values": [
+            "1.643"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "Commandes en cours d'exécution 37",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Créances à un an au plus 40/41",
+          "values": [
+            "284.317"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances commerciales",
+          "values": [
+            "203.272"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres créances",
+          "values": [
+            "81.045"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "N° BE 0675.684.677 A 3.2 / PASSIF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CAPITAUX PROPRES 10/15",
+          "values": [
+            "777.993"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital",
+          "values": [
+            "1.017.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital souscrit",
+          "values": [
+            "2.033.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital non appelé",
+          "values": [
+            "1.016.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "PROVISIONS ET IMPÔTS DIFFÉRÉS 16",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "DETTES 17/49",
+          "values": [
+            "264.307"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes à plus d'un an 6.3 |",
+          "values": [
+            "4.081"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Etablissements de crédit, dettes de location- / financement et dettes assimilées 172/3 / Autres emprunts 174/0 / Dettes commerciales 175 / Acomptes reçus sur commandes 176",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Autres dettes 178/9",
+          "values": [
+            "4.081"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes à un an au plus 6.3 | 42/48",
+          "values": [
+            "260.226"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Dettes à plus d'un an échéant dans l'année 42 / Dettes financières 43 / Etablissements de crédit 430/8 / Autres emprunts 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dettes commerciales",
+          "values": [
+            "112.780"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fournisseurs 440/4",
+          "values": [
+            "112.780"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Effets à payer 441 / Acomptes reçus sur commandes 46",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dettes fiscales, salariales et sociales",
+          "values": [
+            "147.446"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impôts 450/3",
+          "values": [
+            "34.887"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rémunérations et charges sociales 454/9",
+          "values": [
+            "112.559"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/raal-la-louviere-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"raal-la-louviere\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

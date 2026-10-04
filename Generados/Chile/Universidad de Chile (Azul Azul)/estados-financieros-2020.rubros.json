@@ -1,0 +1,180 @@
+{
+  "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2020.md",
+  "pdf": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2020.pdf",
+  "club": "udechile-cl",
+  "year": 2020,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:57:27.334Z",
+  "tieOuts": {
+    "cierran": 16,
+    "noCierran": 12
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "10 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 14,
+    "notasUsadas": []
+  },
+  "ladoConocido": 12,
+  "rubros": [
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2020 Y 2019.",
+      "values": [
+        13225.693
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2020 Y 2019.",
+      "values": [
+        -10109.46
+      ],
+      "origen": "estado 8",
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gasto de administración",
+      "lado": "expense",
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2020 Y 2019.",
+      "values": [
+        -2513.695
+      ],
+      "origen": "estado 8",
+      "glosa": "Gasto de administración"
+    },
+    {
+      "label": "Ingresos financieros",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2020 Y 2019.",
+      "values": [
+        6.728
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Costos financieros",
+      "lado": "expense",
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2020 Y 2019.",
+      "values": [
+        -517.782
+      ],
+      "origen": "estado 8",
+      "glosa": "Costos financieros"
+    },
+    {
+      "label": "Borderó (costos directos)",
+      "lado": "expense",
+      "page": 76,
+      "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        306.199
+      ],
+      "origen": "estado 34",
+      "glosa": "Borderó (costos directos)"
+    },
+    {
+      "label": "Remuneraciones",
+      "lado": null,
+      "page": 76,
+      "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        5711.998
+      ],
+      "origen": "estado 34",
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Amortización de pases",
+      "lado": null,
+      "page": 76,
+      "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2134.347
+      ],
+      "origen": "estado 34",
+      "glosa": "Amortización de pases"
+    },
+    {
+      "label": "Costo de venta pases de jugadores",
+      "lado": "expense",
+      "page": 76,
+      "section": "Costo no amortizado por bajas de / 0                        125.458 / pases",
+      "values": [
+        511.388
+      ],
+      "origen": "estado 35",
+      "glosa": "Costo de venta pases de jugadores"
+    },
+    {
+      "label": "Otros gastos de operación",
+      "lado": "expense",
+      "page": 76,
+      "section": "Costo no amortizado por bajas de / 0                        125.458 / pases",
+      "values": [
+        1445.528
+      ],
+      "origen": "estado 35",
+      "glosa": "Otros gastos de operación"
+    },
+    {
+      "label": "Borderó",
+      "lado": "revenue",
+      "page": 75,
+      "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        565.753
+      ],
+      "origen": "estado 32",
+      "glosa": "Borderó"
+    },
+    {
+      "label": "Publicidad",
+      "lado": "revenue",
+      "page": 75,
+      "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        5943.819
+      ],
+      "origen": "estado 32",
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Participación torneos Internacionales",
+      "lado": "revenue",
+      "page": 75,
+      "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        237.819
+      ],
+      "origen": "estado 32",
+      "glosa": "Participación torneos Internacionales"
+    },
+    {
+      "label": "Derechos de T.V.",
+      "lado": "revenue",
+      "page": 75,
+      "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        3989.792
+      ],
+      "origen": "estado 32",
+      "glosa": "Derechos de T.V."
+    }
+  ]
+}

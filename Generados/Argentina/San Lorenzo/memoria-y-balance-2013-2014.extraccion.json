@@ -1,0 +1,145 @@
+{
+ "pdf": "Clubes/Argentina/San Lorenzo/memoria-y-balance-2013-2014.pdf",
+ "md": "Clubes/Argentina/San Lorenzo/memoria-y-balance-2013-2014.md",
+ "cierre": "2014-06-30",
+ "paginas": [
+  4
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:46:08.674Z",
+ "escala": "unidades",
+ "filas": [
+  {
+   "pagina": 4,
+   "etiqueta": "Fútbol (anexo V)",
+   "importe_impreso": "124.988.019",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Administración central (anexo V)",
+   "importe_impreso": "75.469.370",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Ciudad deportiva (anexo V)",
+   "importe_impreso": "5.328.905",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Oíros recursos (anexo V)",
+   "importe_impreso": "27.368.069",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Total Recursos",
+   "importe_impreso": "233.154.363",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Fútbol (anexo VI)",
+   "importe_impreso": "(136.115.811)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Administración central (anexo VI)",
+   "importe_impreso": "(37.631.270)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Ciudad deportiva (anexo VI)",
+   "importe_impreso": "(15.830.241)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Subsedes (anexo VI)",
+   "importe_impreso": "(9.033.083)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Depreciación de bienes de uso (anexo VI)",
+   "importe_impreso": "(2.528.849)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Amortización de activos intangibles (anexo VI)",
+   "importe_impreso": "(19.150.669)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Otros gastos (anexo VI)",
+   "importe_impreso": "(411.839)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Total Gastos",
+   "importe_impreso": "(220.701.762)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Resultados financieros y por tenencia (nota 4)",
+   "importe_impreso": "25.108.904",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "Otros ingresos y egresos (ñola 4)",
+   "importe_impreso": "39.067.369",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "SUPERÁVIT DEL EJERCICIO",
+   "importe_impreso": "76.628.874",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos_impreso": "233.154.363",
+ "total_gastos_impreso": "(220.701.762)",
+ "resultado_impreso": "76.628.874",
+ "observaciones": "Solo se proporcionó la página del estado de recursos y gastos; los anexos V y VI y la nota 4 no están incluidos, por lo que no hay filas de desglose. Columna 2014 tomada de la columna '2014' del estado. Etiquetas con errores de OCR ('Oíros', 'ñola') se transcribieron tal cual. Chequeo: 233.154.363 - 220.701.762 + 25.108.904 + 39.067.369 = 76.628.874, coincide con el superávit."
+}

@@ -1,0 +1,790 @@
+{
+ "md": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2021.md",
+ "pdf": "Clubes/Brasil/Ferroviaria/demonstracoes-financeiras-2021.pdf",
+ "club": "ferroviaria",
+ "year": 2021,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:52:32.629Z",
+ "tieOuts": {
+  "cierran": 2,
+  "noCierran": 4
+ },
+ "warnings": [
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 71,
+  "notasUsadas": [
+   "19",
+   "20",
+   "18"
+  ]
+ },
+ "ladoConocido": 41,
+ "rubros": [
+  {
+   "label": "Serviços de consultoria",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.297788
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Administrativas e gerais",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    -2.089938
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Serviços contábeis, advocatícios e auditoria",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.353887
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Serviços de apoio administrativo",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.106107
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Viagens e estadias",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.072471
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Refeitório",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.460989
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Premiação",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.009313
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Manutenção e conservação de bens",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.276219
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Propaganda e publicidade",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.091358
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Licença de software",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.02326
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Material de limpeza, higiene, copa e cozinha",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.086317
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Material de escritório",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.020701
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Gestão do programa sócio torcedor",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.022946
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Depreciações",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.065332
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Seguro de vida",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.000036
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Reversão das contingências trabalhistas",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    -0.110311
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Outras",
+   "lado": null,
+   "page": 28,
+   "section": "# Ferroviária Futebol S.A. / ### 22 Despesas administrativas e gerais",
+   "values": [
+    0.313525
+   ],
+   "origen": "nota 19 (ancla 2)",
+   "ancla": "Administrativas e gerais"
+  },
+  {
+   "label": "Com pessoal",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    -1.089018
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Atletas não profissionais",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    -1.037524
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Com materiais",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    -0.01116
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Alojamento e moradia",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    -0.049579
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Tributária",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    -0.335045
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Outras despesas",
+   "lado": "expense",
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    -0.948939
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Receita financeira",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    0.439136
+   ],
+   "origen": "estado 2 (su nota queda consumida sin abrir)"
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    -0.567014
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Quantidade de ações integralizadas",
+   "lado": null,
+   "page": 9,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    7.568421
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Direitos de transmissão de TV",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    6238.291
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Patrocínio",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    1572.203
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Publicidade",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    561.709
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Cessão temporária dos atletas",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    4134.75
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Cessão definitiva dos atletas",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    2929.682
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Direitos econômicos",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    1000
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Sócio torcedor",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    119.96
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Premiações",
+   "lado": null,
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    1264.524
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Outras receitas",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    649.988
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Impostos incidentes sobre a receita",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    -516.713
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Com pessoal",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "values": [
+    8960.037
+   ],
+   "origen": "nota 18 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "(-) Custos operacionais",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Ferroviária Futebol S.A. / ## Demonstrações do resultado",
+   "values": [
+    -17372.222
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Direito de uso de imagem",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "values": [
+    3838.099
+   ],
+   "origen": "nota 18 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Com jogos",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "values": [
+    632.558
+   ],
+   "origen": "nota 18 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Premiações",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "values": [
+    411.487
+   ],
+   "origen": "nota 18 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Viagens e hospedagens",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "values": [
+    1160.932
+   ],
+   "origen": "nota 18 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "values": [
+    856.895
+   ],
+   "origen": "nota 18 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Taxas de federação e confederação",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "values": [
+    164.509
+   ],
+   "origen": "nota 18 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Agenciamento de atletas",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "values": [
+    192.8
+   ],
+   "origen": "nota 18 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Manutenção e conservação",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "values": [
+    90.141
+   ],
+   "origen": "nota 18 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Moradia",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "values": [
+    159.44
+   ],
+   "origen": "nota 18 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Material esportivo",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "values": [
+    185.509
+   ],
+   "origen": "nota 18 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Amortização de atletas formados",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "values": [
+    151.472
+   ],
+   "origen": "nota 18 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Outros custos",
+   "lado": "expense",
+   "page": 27,
+   "section": "# Ferroviária Futebol S.A. / ### *Reserva legal* / ### *Dividendos* / ## 21 Custos operacionais",
+   "values": [
+    568.343
+   ],
+   "origen": "nota 18 (ancla 1)",
+   "ancla": "(-) Custos operacionais"
+  },
+  {
+   "label": "Provisões não dedutíveis",
+   "lado": null,
+   "page": 29,
+   "section": "# Ferroviária Futebol S.A. / ### 24 Imposto de renda e contribuição social / #### Reconciliação da despesa de imposto de renda e da contribuição social corrente",
+   "values": [
+    0.005758
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Demais despesas não dedutíveis",
+   "lado": "expense",
+   "page": 29,
+   "section": "# Ferroviária Futebol S.A. / ### 24 Imposto de renda e contribuição social / #### Reconciliação da despesa de imposto de renda e da contribuição social corrente",
+   "values": [
+    0.83287
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Alíquota nominal combinada do imposto de renda e da contribuição social – (%)",
+   "lado": "expense",
+   "page": 29,
+   "section": "# Ferroviária Futebol S.A. / ### 24 Imposto de renda e contribuição social / #### Reconciliação da despesa de imposto de renda e da contribuição social corrente",
+   "values": [
+    0.000034
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Móveis e utensílios",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "values": [
+    173.767
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Instalações",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "values": [
+    53.366
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Equipamentos de informática",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "values": [
+    56.353
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Equipamentos esportivos",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "values": [
+    20.528
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Veículos",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "values": [
+    241.84
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Máquinas e equipamentos",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "values": [
+    236.255
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Aparelhos de comunicação",
+   "lado": "expense",
+   "page": 22,
+   "section": "a. Movimentação do custo",
+   "values": [
+    2.28
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Salários a pagar",
+   "lado": "expense",
+   "page": 25,
+   "section": "### 14 Salários e encargos a pagar",
+   "values": [
+    0.561933
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "INSS a recolher",
+   "lado": "expense",
+   "page": 25,
+   "section": "### 14 Salários e encargos a pagar",
+   "values": [
+    0.109645
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "FGTS a recolher",
+   "lado": "expense",
+   "page": 25,
+   "section": "### 14 Salários e encargos a pagar",
+   "values": [
+    0.096735
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Rescisões a pagar",
+   "lado": "expense",
+   "page": 25,
+   "section": "### 14 Salários e encargos a pagar",
+   "values": [
+    0.126121
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "PIS sobre folha a recolher",
+   "lado": "expense",
+   "page": 25,
+   "section": "### 14 Salários e encargos a pagar",
+   "values": [
+    0.010356
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "IRRF a recolher",
+   "lado": "expense",
+   "page": 25,
+   "section": "### 14 Salários e encargos a pagar",
+   "values": [
+    0.057109
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 25,
+   "section": "### 14 Salários e encargos a pagar",
+   "values": [
+    0.145882
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Marcas e patentes",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11 Intangível",
+   "values": [
+    2.6
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Software",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11 Intangível",
+   "values": [
+    -15
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Atletas em formação (i)",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11 Intangível",
+   "values": [
+    1647.47
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Atletas profissionais formados (ii)",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11 Intangível",
+   "values": [
+    229.655
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Atletas profissionais contratados (ii)",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11 Intangível",
+   "values": [
+    3550
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Banco Bradesco",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Movimentação dos empréstimos:",
+   "values": [
+    1018.695
+   ],
+   "origen": "estado 13"
+  }
+ ]
+}

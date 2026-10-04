@@ -1,0 +1,72 @@
+{
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2022-06-30-individual.md",
+ "generatedAt": "2026-09-30T01:11:42.044Z",
+ "rubros": [
+  {
+   "label": "54/58",
+   "page": 4,
+   "section": "ACTIVA / OPRICHTINGSKOSTEN / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "other_amortisation",
+     0.12
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "20/58",
+   "page": 4,
+   "section": "ACTIVA / OPRICHTINGSKOSTEN / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "choice": "other_income",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.29000000000000004
+    ],
+    [
+     "other_amortisation",
+     0.16
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "490/1",
+   "page": 4,
+   "section": "ACTIVA / OPRICHTINGSKOSTEN / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "choice": "other_income",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "other_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 1282
+  }
+ ]
+}

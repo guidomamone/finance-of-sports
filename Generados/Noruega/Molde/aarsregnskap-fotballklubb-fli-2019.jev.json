@@ -1,0 +1,1238 @@
+{
+ "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2019.md",
+ "generatedAt": "2026-09-30T01:11:59.918Z",
+ "rubros": [
+  {
+   "label": "Avtale MF/sponsor",
+   "page": 39,
+   "section": "## Molde Fotballklubb",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.88
+    ],
+    [
+     "wages_squad",
+     0.04
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Avskrivning",
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "depreciation",
+     0.88
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "Salg spillere/Utleie",
+   "page": 26,
+   "section": "## Molde Fotballklubb",
+   "choice": "player_sales",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "player_sales",
+     0.91
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Administrasjon",
+   "page": 41,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Medlemsinntekter/tilskudd",
+   "page": 41,
+   "section": "# Molde Fotballklubb / BREDDEFOTBALLSTYRET / Resultatregnskap 2019",
+   "choice": "member_dues",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "member_dues",
+     0.95
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Personalkostnad",
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Kamp- og billettinntekter",
+   "page": 40,
+   "section": "# Molde Fotballklubb / HOVEDSTYRET / TOPPFOTBALL / Resultatregnskap 2019",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Egne arrangement",
+   "page": 41,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "sponsorship_commercial",
+     0.14
+    ]
+   ],
+   "tokens": 1244
+  },
+  {
+   "label": "Andres arrangement",
+   "page": 41,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.41
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 1244
+  },
+  {
+   "label": "Trening og utstyr",
+   "page": 41,
+   "section": "",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.41
+    ],
+    [
+     "match_organisation_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Anleggskostnader",
+   "page": 41,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "depreciation",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Andre driftskostnader",
+   "page": 39,
+   "section": "## Molde Fotballklubb",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "lump_football_operations_expense",
+     0.29000000000000004
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Tap på fordringer",
+   "page": 41,
+   "section": "",
+   "choice": "player_impairment",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "player_impairment",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ],
+    [
+     "other_income",
+     0.19
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Kjøp og leie spillere",
+   "page": 41,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "player_amortisation",
+     0.19
+    ]
+   ],
+   "tokens": 1251
+  },
+  {
+   "label": "DRIFTSRESULTAT",
+   "page": 39,
+   "section": "## Molde Fotballklubb",
+   "choice": "other_income",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "lump_football_operations",
+     0.29000000000000004
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Annen finansinntekt",
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "Netto finans",
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.8200000000000001
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1255
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Personalkostnader",
+   "page": 41,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "ÅRSRESULTAT",
+   "page": 39,
+   "section": "## Molde Fotballklubb",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "page": 41,
+   "section": "# Molde Fotballklubb / BREDDEFOTBALLSTYRET / Resultatregnskap 2019",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "Ordinært resultat etter skattekostnad",
+   "page": 2,
+   "section": "## RESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "other_income",
+     0.17
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Avskrivninger",
+   "page": 41,
+   "section": "",
+   "choice": "depreciation",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "depreciation",
+     0.8
+    ],
+    [
+     "player_amortisation",
+     0.1
+    ],
+    [
+     "other_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Inntekter Seriekamper",
+   "page": 30,
+   "section": "## Note 2 Kamp- og billettinntekter",
+   "choice": "matchday_competition",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "matchday_competition",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Overføres til fri egenkapital",
+   "page": 26,
+   "section": "## Molde Fotballklubb",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Netto finansposter",
+   "page": 39,
+   "section": "## Molde Fotballklubb",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Oppgjør NM Cup",
+   "page": 30,
+   "section": "## Note 2 Kamp- og billettinntekter",
+   "choice": "competition_bonus",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "competition_bonus",
+     0.47000000000000003
+    ],
+    [
+     "matchday_competition",
+     0.32
+    ],
+    [
+     "match_organisation_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Andre inntekter privatkamper etc.",
+   "page": 30,
+   "section": "## Note 2 Kamp- og billettinntekter",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "matchday_competition",
+     0.14
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Inntekter E-Cup",
+   "page": 30,
+   "section": "## Note 2 Kamp- og billettinntekter",
+   "choice": "matchday_competition",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "matchday_competition",
+     0.74
+    ],
+    [
+     "competition_bonus",
+     0.17
+    ],
+    [
+     "other_income",
+     0.07
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Medlemskontingent",
+   "page": 30,
+   "section": "## Note 3 Medlemsinntekter og tilskudd",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Publikumssnitt hjemmekamper i Eliteserien",
+   "page": 30,
+   "section": "## Note 2 Kamp- og billettinntekter",
+   "choice": "matchday_competition",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "matchday_competition",
+     0.91
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Markedsmidler NFF, NTF og UEFA",
+   "page": 30,
+   "section": "## Note 3 Medlemsinntekter og tilskudd",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "lump_football_operations",
+     0.21
+    ],
+    [
+     "member_dues",
+     0.16
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Egenandeler/deltakeravgift",
+   "page": 30,
+   "section": "## Note 3 Medlemsinntekter og tilskudd",
+   "choice": "member_dues",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "member_dues",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Andre tilskudd",
+   "page": 30,
+   "section": "## Note 3 Medlemsinntekter og tilskudd",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Lønn spillere, trenere, støtteapparat og administrasjon",
+   "page": 31,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "wages_squad",
+     0.76
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1298
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "page": 31,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "wages_squad",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Kiosksalg",
+   "page": 30,
+   "section": "## Note 4 Avtale med Molde Fotball AS / ## Note 5 Andre driftsinntekter",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_income",
+     0.48
+    ],
+    [
+     "stadium_other",
+     0.45
+    ],
+    [
+     "sponsorship_commercial",
+     0.06
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Andre ytelser",
+   "page": 31,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "wages_squad",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "Gjennomsnittlig antall årsverk i 2019",
+   "page": 31,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "wages_squad",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1292
+  },
+  {
+   "label": "Pensjonskostnad",
+   "page": 31,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "Utgifter Prosjekt/Tiltak",
+   "page": 32,
+   "section": "# Note 12 Andre driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Anskaffelseskost 01.01",
+   "page": 33,
+   "section": "### Note 13 Ordinære driftsmidler",
+   "choice": "other_expenses",
+   "confidence": 0.22,
+   "top3": [
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "player_amortisation",
+     0.22
+    ],
+    [
+     "other_income",
+     0.21000000000000002
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Varekjøp og andre kostnader kiosker",
+   "page": 32,
+   "section": "# Note 12 Andre driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "stadium_other",
+     0.08
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Avgang",
+   "page": 33,
+   "section": "### Note 13 Ordinære driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.2,
+   "top3": [
+    [
+     "depreciation",
+     0.24000000000000002
+    ],
+    [
+     "player_amortisation",
+     0.24000000000000002
+    ],
+    [
+     "player_sales",
+     0.19
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "Akkumulerte avskrivinger 01.01",
+   "page": 33,
+   "section": "### Note 13 Ordinære driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "depreciation",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Tilgang kjøpte driftsmidler",
+   "page": 33,
+   "section": "### Note 13 Ordinære driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.18,
+   "top3": [
+    [
+     "depreciation",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "lump_football_operations_expense",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Akkumulerte avskrivinger 31.12",
+   "page": 33,
+   "section": "### Note 13 Ordinære driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "depreciation",
+     0.98
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Anskaffelseskost 31.12.",
+   "page": 33,
+   "section": "### Note 13 Ordinære driftsmidler",
+   "choice": "other_expenses",
+   "confidence": 0.25,
+   "top3": [
+    [
+     "other_expenses",
+     0.29000000000000004
+    ],
+    [
+     "depreciation",
+     0.21000000000000002
+    ],
+    [
+     "player_amortisation",
+     0.2
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Årets avskrivninger",
+   "page": 33,
+   "section": "### Note 13 Ordinære driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "depreciation",
+     0.97
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Balanseført verdi pr. 31.12.",
+   "page": 33,
+   "section": "### Note 13 Ordinære driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "depreciation",
+     0.11
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Økonomisk levetid",
+   "page": 33,
+   "section": "### Note 13 Ordinære driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "depreciation",
+     0.79
+    ],
+    [
+     "other_amortisation",
+     0.09999999999999999
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Kostnader sponosorer/overføringer",
+   "page": 40,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "lump_football_operations_expense",
+     0.27
+    ],
+    [
+     "player_amortisation",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1253
+  },
+  {
+   "label": "Reklame/sponsorinntekter",
+   "page": 40,
+   "section": "# Molde Fotballklubb / HOVEDSTYRET / TOPPFOTBALL / Resultatregnskap 2019",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Kostnader sponsorer/overføringer",
+   "page": 41,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "lump_football_operations_expense",
+     0.18000000000000002
+    ],
+    [
+     "player_amortisation",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1252
+  },
+  {
+   "label": "Salg spillere/Utleie spillere",
+   "page": 41,
+   "section": "# Molde Fotballklubb / BREDDEFOTBALLSTYRET / Resultatregnskap 2019",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1284
+  }
+ ]
+}

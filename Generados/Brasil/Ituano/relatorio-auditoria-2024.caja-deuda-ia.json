@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Ituano/relatorio-auditoria-2024.md",
+ "generado": "2026-10-02T00:17:05.240Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores expressos em reais)",
+ "caja": {
+  "lineas": [
+   163
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   167,
+   178
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La línea 178 (Emprestimos LP e Antecipação de Direitos) mezcla préstamos con anticipos de derechos; se incluye como deuda financiera no corriente. La línea 176 del pasivo no corriente está vacía."
+}

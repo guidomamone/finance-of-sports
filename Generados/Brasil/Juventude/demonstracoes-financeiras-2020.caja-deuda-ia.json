@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Juventude/demonstracoes-financeiras-2020.md",
+ "generado": "2026-10-02T00:17:12.667Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em reais)",
+ "caja": {
+  "lineas": [
+   228
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   268
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Los valores del pasivo están separados de sus etiquetas por el OCR, lo que hace incierta la asignación de montos; Empréstimos e Financiamentos aparece solo en el pasivo circulante (sin préstamos no circulantes). Los parcelamientos fiscales no se incluyeron como deuda financiera."
+}

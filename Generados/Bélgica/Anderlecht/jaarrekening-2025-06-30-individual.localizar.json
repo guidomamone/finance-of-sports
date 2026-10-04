@@ -1,0 +1,28 @@
+{
+ "pdf": "Clubes/Bélgica/Anderlecht/jaarrekening-2025-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Anderlecht/jaarrekening-2025-06-30-individual.md",
+ "cierre": "2025-06-30",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:54:59.851Z",
+ "paginas_resultados": [
+  9,
+  10
+ ],
+ "paginas_notas_ingresos": [
+  29,
+  31,
+  32
+ ],
+ "paginas_notas_gastos": [
+  29,
+  30,
+  31,
+  32
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "2025 EUR (encabezado del modelo NBB; balance con importes como 34.773.239 sin indicación de miles); en el verslag: \"Resultatenrekening (in EUR)\"",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "perimetro": "individual",
+ "observaciones": "Jaarrekening individual en modelo completo NBB (VOL). Resultatenrekening en VOL-kap 4 (págs. 9-10), columna 'Boekjaar' (ejercicio cerrado 30.06.2025) vs 'Vorig boekjaar'. Notas: 6.10 bedrijfsresultaten (págs. 29-30), 6.11 financiële resultaten (pág. 31), 6.12 niet-recurrente opbrengsten en kosten (pág. 32). El informe del consejo (pág. 47) trae un resumen del resultado en EUR con decimales, columna 30.06.2025. Pág. 33 (impuestos) excluida por ser conciliación/detalle fiscal."
+}

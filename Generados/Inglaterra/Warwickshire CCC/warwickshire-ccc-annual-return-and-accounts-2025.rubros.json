@@ -1,0 +1,44 @@
+{
+ "md": "Clubes/Inglaterra/Warwickshire CCC/warwickshire-ccc-annual-return-and-accounts-2025.md",
+ "pdf": "Clubes/Inglaterra/Warwickshire CCC/warwickshire-ccc-annual-return-and-accounts-2025.pdf",
+ "club": "warwickshire-ccc",
+ "year": 2025,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T22:04:03.113Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 5
+ },
+ "warnings": [
+  "5 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+ ],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 2,
+  "notasUsadas": []
+ },
+ "ladoConocido": 2,
+ "rubros": [
+  {
+   "label": "year, and the strengthening of the Group’s cash Income",
+   "lado": "revenue",
+   "page": 25,
+   "section": "following the restructuring of The Hundred. / Overall, the Group’s net asset position / strengthened significantly during the year, At 31 December 2025 2025 2024 / increasing to £30.7m, reflecting the impact of NOTES / the distribution income recognised during the £ £",
+   "values": [
+    40.389579
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "position. Expenditure 3a",
+   "lado": "expense",
+   "page": 25,
+   "section": "following the restructuring of The Hundred. / Overall, the Group’s net asset position / strengthened significantly during the year, At 31 December 2025 2025 2024 / increasing to £30.7m, reflecting the impact of NOTES / the distribution income recognised during the £ £",
+   "values": [
+    -28.525634
+   ],
+   "origen": "estado 0"
+  }
+ ]
+}

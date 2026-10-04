@@ -1,0 +1,38 @@
+{
+  "club": "racing",
+  "year": 2014,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Racing/presupuesto2013-14.md",
+  "generatedAt": "2026-09-30T22:39:47.194Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 1,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 0,
+  "relevantTableCount": 0,
+  "tables": [],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Racing Club",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 2,
+      "line": "e Tipo de Cambio u$d: Estimamos una evolución del TC de $ 5,80.-"
+    },
+    {
+      "page": 2,
+      "line": "cotización del Euro en torno al 20/25% para el período.-"
+    }
+  ],
+  "warnings": []
+}

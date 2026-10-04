@@ -1,0 +1,153 @@
+{
+ "pdf": "Clubes/Alemania/Hamburger SV/ev-guv-2024-25.pdf",
+ "md": "Clubes/Alemania/Hamburger SV/ev-guv-2024-25.md",
+ "cierre": "2025-06-30",
+ "paginas": [
+  1
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:54:27.538Z",
+ "escala": "unidades",
+ "filas": [
+  {
+   "pagina": 1,
+   "etiqueta": "Umsatzerlöse",
+   "importe_impreso": "12.804.310,45",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "sonstige betriebliche Erträge",
+   "importe_impreso": "864.935,53",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "Materialaufwand Waren",
+   "importe_impreso": "39.536,26",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "a) Löhne und Gehälter",
+   "importe_impreso": "4.061.544,79",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "b) soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",
+   "importe_impreso": "743.483,53",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "Personalaufwand",
+   "importe_impreso": "4.805.028,32",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen",
+   "importe_impreso": "942.642,32",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "sonstige betriebliche Aufwendungen",
+   "importe_impreso": "7.636.512,59",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "sonstige Zinsen und ähnliche Erträge",
+   "importe_impreso": "3.335,64",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "Zinsen und ähnliche Aufwendungen",
+   "importe_impreso": "131.544,62",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "Ergebnis nach Steuern",
+   "importe_impreso": "117.317,51",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "sonstige Steuern",
+   "importe_impreso": "18.245,05",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "Jahresüberschuss",
+   "importe_impreso": "99.072,46",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "Ergebnisvortrag aus dem Vorjahr",
+   "importe_impreso": "136.937,13",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "Einstellung in das Vereinskapital",
+   "importe_impreso": "-36.009,59",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "Einstellung in die Rücklagen",
+   "importe_impreso": "-200.000,00",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 1,
+   "etiqueta": "Ergebnisvortrag",
+   "importe_impreso": "0,00",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos_impreso": null,
+ "total_gastos_impreso": null,
+ "resultado_impreso": "99.072,46",
+ "observaciones": "Atención: el documento corresponde a Hamburger Sport-Verein e.V. (VR 380, Anlage 2, Seite 15), no a HSV Fußball AG & Co. KGaA. La transcripción separa etiquetas e importes; se asignaron por orden y se verificó aritméticamente (ingresos menos gastos operativos y financieros = 117.317,51 Ergebnis nach Steuern; menos sonstige Steuern = 99.072,46). Importes en EUR con decimales (unidades). 'Ergebnis nach Steuern' se imprime antes de 'sonstige Steuern' según el esquema HGB. No se imprimen totales de ingresos ni de gastos. No hay notas de desglose en las páginas provistas."
+}

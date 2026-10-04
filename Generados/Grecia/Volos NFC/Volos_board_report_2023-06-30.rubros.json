@@ -1,0 +1,76 @@
+{
+ "md": "Clubes/Grecia/Volos NFC/Volos_board_report_2023-06-30.md",
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_board_report_2023-06-30.pdf",
+ "club": "volos-nfc",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:03:45.377Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 11,
+  "notasUsadas": [
+   "12"
+  ]
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "(+) ή (-) Υπόλ. Αποτελ./των προηγ. χρήσεων",
+   "lado": null,
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "values": [
+    -0.051532
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Μείον : Φόρος Εισοδήματος",
+   "lado": "expense",
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "values": [
+    0.246872
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "1. Τακτικό Αποθεματικό",
+   "lado": null,
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "values": [
+    0.0561
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Έξοδα διοικήσεως",
+   "lado": "expense",
+   "page": 1,
+   "section": "Ο κύκλος εργασιών της Χρήσεως διαμορφώθηκε κατά και ανήλθε σε, 5.554.851,62 / έναντι 4.829.330,56 της προηγούμενης χρήσης",
+   "values": [
+    4.432912
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Μείον: 1. Έξοδα διοικητικής λειτουργίας",
+   "lado": "expense",
+   "page": 3,
+   "section": "",
+   "values": [
+    4.432912
+   ],
+   "origen": "nota 12 (ancla 2)",
+   "ancla": "Έξοδα διοικήσεως"
+  }
+ ]
+}

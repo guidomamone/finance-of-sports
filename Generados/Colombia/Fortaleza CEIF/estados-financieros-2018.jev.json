@@ -1,0 +1,340 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.md",
+ "generatedAt": "2026-10-02T20:07:38.170Z",
+ "rubrosHuella": "708e341717c61af6dd7381651935e65c45463f8d",
+ "rubros": [
+  {
+   "label": "Actividades Deportivas",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
+   "choice": "other_sports",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros Ingresos",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Venta de Productos",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Devoluciones en Ventas",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos de Ventas",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Costo de Ventas\"",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Operación\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Operación\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Operación\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Operación\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Operación\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Legales",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Operación\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicio de Evaluación",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ],
+    [
+     "education",
+     0.01
+    ]
+   ],
+   "tokens": 834
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Otros Gastos\"",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos Asumidos",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Otros Gastos\"",
+   "choice": "exceptional_items",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Afiliaciones y Sostenimiento",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Operación\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "match_organisation_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Multas, Sanciones y L",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Otros Gastos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Viajes",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Operación\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.82
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1104
+  },
+  {
+   "label": "Depreciaciones y Amortizaciones",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Gastos de Operación\"",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Mantenimiento",
+   "lado": "expense",
+   "page": 17,
+   "section": "nota que desglosa \"Total Gastos de Operación\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Venta Boletería",
+   "lado": "revenue",
+   "page": 15,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Otros Costos",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Costo de Ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Gastos Ejercicios Anteriores",
+   "lado": "expense",
+   "page": 18,
+   "section": "nota que desglosa \"Total Otros Gastos\"",
+   "choice": "exceptional_items",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "exceptional_items",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Nomina",
+   "lado": "expense",
+   "page": 16,
+   "section": "nota que desglosa \"Total Gastos de Operación\"",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 797
+  }
+ ]
+}

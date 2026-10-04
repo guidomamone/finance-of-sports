@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2021-22.md",
+ "generado": "2026-10-04T18:00:38.825Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Amounts in Euro",
+ "caja": {
+  "lineas": [
+   1452
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   4673,
+   4681
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El pasivo del balance consolidado principal (pág. 48) no figura en las páginas provistas; la deuda financiera se toma de la columna 'Consolidated restated at 30 June 2022' del estado pro-forma (L4673 no corriente, L4681 corriente), que coincide con el balance reexpresado sin ajustes pro-forma en esas partidas."
+}

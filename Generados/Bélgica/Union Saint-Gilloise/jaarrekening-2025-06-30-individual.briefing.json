@@ -1,0 +1,752 @@
+{
+  "club": "unionsg-be",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2025-06-30-individual.md",
+  "generatedAt": "2026-09-30T22:42:34.957Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 185,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 23,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 4,
+      "section": "COMPTES ANNUELS / BILAN APRÈS RÉPARTITION / ACTIF / FRAIS D'ÉTABLISSEMENT 61 | 20",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "ACTIFS IMMOBILISÉS 21/28",
+          "values": [
+            "31.215.275",
+            "16.945.076"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immobilisations incorporelles 62 |21",
+          "values": [
+            "28.449.187",
+            "14.915.134"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immobilisations corporelles 68 | 22/27",
+          "values": [
+            "2.761.738",
+            "1.963.467"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrains et constructions",
+          "values": [
+            "724.721",
+            "746.336"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Installations, machines et outillage",
+          "values": [
+            "352.974",
+            "311.303"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mobilier et matériel roulant",
+          "values": [
+            "69.247",
+            "110.765"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "ACTIFS CIRCULANTS / TOTAL DE L'ACTIF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "1.275.320",
+            "2.455.578"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "2.277.171",
+            "101.346"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "54.939.328",
+            "44.089.285"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "PASSIF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CAPITAUX PROPRES 10/15",
+          "values": [
+            "22.147.052",
+            "20.343.677"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Apport 6.7.1 | 10/11",
+          "values": [
+            "36.926.165",
+            "36.926.164"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disponible",
+          "values": [
+            "36.907.573",
+            "36.907.572"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indisponible",
+          "values": [
+            "18.592",
+            "18.592"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "IN° | 0417144936 C-app 3.2 / Ann Codes Exercice Exercice précédent",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "DETTES 17/49",
+          "values": [
+            "32.792.275",
+            "23.745.608"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes à plus d'un an 69 |",
+          "values": [
+            "7.937.373",
+            "4.388.444"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes financières 170/4",
+          "values": [
+            "3.154.000",
+            "3.154.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Autres emprunts 174 3.154.000 3.154.000 / Dettes commerciales 175 / Fournisseurs 1750 / Effets à payer 1751 / Acomptes sur commandes 176",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Autres dettes 178/9",
+          "values": [
+            "4.783.373",
+            "1.234.444"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes à un an au plus 69 | 42/48",
+          "values": [
+            "23.723.214",
+            "18.228.423"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes à plus d'un an échéant dans l'année 42",
+          "values": [
+            "4.470.045"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Dettes financières 43 / Etablissements de crédit 480/8 / Autres emprunts 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dettes commerciales",
+          "values": [
+            "7.986.100",
+            "3.271.330"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fournisseurs 440/4",
+          "values": [
+            "7.986.100",
+            "3.271.330"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Effets à payer 441",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Acomptes sur commandes",
+          "values": [
+            "26.508",
+            "190.402"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes fiscales, salariales et sociales 6.9 |",
+          "values": [
+            "2.513.592",
+            "4.573.692"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impôts 450/3",
+          "values": [
+            "61.413",
+            "891.313"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rémunérations et charges sociales 454/9",
+          "values": [
+            "2.452.180",
+            "3.682.379"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres dettes 47/48",
+          "values": [
+            "13.197.014",
+            "5.722.954"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comptes de régularisation 6.9 | 4923",
+          "values": [
+            "1.131.688",
+            "1.128.740"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DU PASSIF 10/49",
+          "values": [
+            "54.939.328",
+            "44.089.285"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "COMPTE DE RÉSULTATS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "76A",
+          "values": [
+            "20.812.573",
+            "27.732.571"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "60/66A",
+          "values": [
+            "56.128.962",
+            "48.534.985"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "652/9 267.348 344.436 / 66B / 9903 2.139.776 18.954.037 / 780 / 680",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "67/77",
+          "values": [
+            "336.402",
+            "3.193.845"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "670/3",
+          "values": [
+            "340.599",
+            "3.193.845"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "ETAT DES IMMOBILISATIONS CORPORELLES / TERRAINS ET CONSTRUCTIONS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Amortissements et réductions de valeur au terme de l'exercice 8821",
+          "values": [
+            "154.414"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE (22)",
+          "values": [
+            "724,721"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "INSTALLATIONS, MACHINES ET OUTILLAGE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Transferts d'une rubrique à une autre Œ&)O | 8182",
+          "values": [
+            "143.713"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valeur d'acquisition au terme de l'exercice 8192",
+          "values": [
+            "701.777"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "Mutations de l'exercice / Actés 8272 96.004 / Repris 8282 0 / Acquis de tiers 8292 / Annulés à la suite de cessions et désaffectations 8302 0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Transférés d'une rubrique à une autre 0 | 8312",
+          "values": [
+            "125.869"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortissements et réductions de valeur au terme de l'exercice 8822",
+          "values": [
+            "348.803"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE (23)",
+          "values": [
+            "352.974"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "MOBILIER ET MATÉRIEL ROULANT",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Transferts d'une rubrique à une autre 0 | 8183",
+          "values": [
+            "-143.713"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valeur d'acquisition au terme de l'exercice 8193",
+          "values": [
+            "400.235"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "Mutations de l'exercice / Actés 8273 48.813 / Repris 8283 / Acquis de tiers 8293 / Annulés à la suite de cessions et désaffectations 8303 0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Transférés d'une rubrique à une autre 0 | 8313",
+          "values": [
+            "-125.869"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortissements et réductions de valeur au terme de l'exercice 8828",
+          "values": [
+            "330.988"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE (24)",
+          "values": [
+            "69.247"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "AUTRES IMMOBILISATIONS CORPORELLES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Amortissements et réductions de valeur au terme de l'exercice 8825",
+          "values": [
+            "2.105.733"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE (26)",
+          "values": [
+            "1.614.797"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "ETAT DES DETTES ET COMPTES DE RÉGULARISATION DU PASSIF / VENTILATION DES DETTES À L'ORIGINE À PLUS D'UN AN, EN FONCTION DE LEUR DURÉE / RÉSIDUELLE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Autres dettes 8902",
+          "values": [
+            "4.783.373"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total des dettes ayant plus d'un an mais 5 ans au plus à courir 8912",
+          "values": [
+            "7.937.373"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "IMPÔTS ET TAXES / IMPÔTS SUR LE RÉSULTAT",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Impôts sur le résultat de l'exercice 9184",
+          "values": [
+            "340.599"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impôts et précomptes dus ou versés 9135",
+          "values": [
+            "340.599"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "TAXES SUR LA VALEUR AJOUTÉE ET IMPÔTS À CHARGE DE TIERS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "A la société (déductibles) 9145",
+          "values": [
+            "8.206.998",
+            "5.078.771"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Par la société 9146",
+          "values": [
+            "9.427.004",
+            "6.068.963"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "DROITS ET ENGAGEMENTS HORS BILAN / GARANTIES PERSONNELLES CONSTITUÉES OÙ IRRÉVOCABLEMENT PROMISES PAR LA SOCIÉTÉ 9140 / POUR SURETÉ DE DETTES OÙ D'ENGAGEMENTS DE TIERS / GARANTIES RÉELLES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "La valeur comptable des actifs grevés 91811",
+          "values": [
+            "6.650.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Le montant maximum à concurrence duquel la dette est garantie 91821",
+          "values": [
+            "2.394.045"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 52,
+      "section": "[N° 0417144936 C-app 10 / GÉNÉRAL DU PERSONNEL (suite) / A la date de clôture de l'exercice Codes 1. Temps plein 2. Temps partiel : Tmns den / Nombre de travailleurs 105 85 9 89,1 / Par type de contrat de travail",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contrat à durée indéterminée 110 49",
+          "values": [
+            "50,6"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrat à durée déterminée 111 36",
+          "values": [
+            "38,5"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 52,
+      "section": "de niveau secondaire 1211 2 1 2,2 / de niveau supérieur non universitaire 1212 2 2 / de niveau universitaire 1213 6 6 / Par catégorie professionnelle / Personnel de direction 130",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Employés 134 79",
+          "values": [
+            "82,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ouvriers 132 6",
+          "values": [
+            "6,6"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 53,
+      "section": "TABLEAU DES MOUVEMENTS DU PERSONNEL AU COURS DE L'EXERCICE / ENTRÉES / SORTIES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "205 44",
+          "values": [
+            "49,8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "210 6",
+          "values": [
+            "6,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "211 38",
+          "values": [
+            "43,3"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 53,
+      "section": "212 / 213 / . . 8. Total en équivalents / Codes 1. Temps plein 2. Temps partiel qui / temps plein",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "805 36",
+          "values": [
+            "41,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "310 3",
+          "values": [
+            "38,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "311 33",
+          "values": [
+            "37,9"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 7,
+      "section": "Effets à payer 441",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL DU PASSIF 10/49",
+      "target": "54.939.328",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "-35556933"
+    },
+    {
+      "page": 7,
+      "section": "Effets à payer 441",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DU PASSIF 10/49",
+      "target": "44.089.285",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "-27899805"
+    },
+    {
+      "page": 22,
+      "section": "ETAT DES DETTES ET COMPTES DE RÉGULARISATION DU PASSIF / VENTILATION DES DETTES À L'ORIGINE À PLUS D'UN AN, EN FONCTION DE LEUR DURÉE / RÉSIDUELLE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total des dettes ayant plus d'un an mais 5 ans au plus à courir 8912",
+      "target": "7.937.373",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-3154000"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "76A",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "76A",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "60/66A",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "60/66A",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Union Saint-Gilloise",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "3 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ]
+}

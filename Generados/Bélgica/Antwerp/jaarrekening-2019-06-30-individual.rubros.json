@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Bélgica/Antwerp/jaarrekening-2019-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/Antwerp/jaarrekening-2019-06-30-individual.pdf",
+ "club": "antwerp-be",
+ "year": 2019,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:54:20.918Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 7,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 504.204 180.154 / Uitgestelde belastingen 168",
+   "values": [
+    16.143268
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Schulden op meer dan één jaar 63 |",
+   "lado": "expense",
+   "page": 7,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 504.204 180.154 / Uitgestelde belastingen 168",
+   "values": [
+    3.263163
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 7,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 504.204 180.154 / Uitgestelde belastingen 168",
+   "values": [
+    0.094164
+   ],
+   "origen": "estado 4"
+  }
+ ]
+}

@@ -1,0 +1,472 @@
+{
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.pdf",
+ "club": "oh-leuven",
+ "year": 2020,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:55:23.962Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 45,
+  "notasUsadas": []
+ },
+ "ladoConocido": 35,
+ "rubros": [
+  {
+   "label": "Bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.007076
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Omzet",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.00007
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Voorraad goederen in bewerking en gereed product en bestellingen in uitvoering: toename (afname) (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000071
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Geproduceerde vaste activa",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000072
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Andere bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000074
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Niet-recurrente bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000076
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Bedrijfskosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.006066
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.00006
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Aankopen",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.006008
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Voorraad: afname (toename) (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000609
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Diensten en diverse goederen",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000061
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000062
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.00063
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.006314
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.006358
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.006408
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Als herstructureringskosten geactiveerde bedrijfskosten (-)",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000649
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000066
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Financiële opbrengsten",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.007576
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Recurrente financiële opbrengsten",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000075
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Opbrengsten uit financiële vaste activa",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.00075
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Opbrengsten uit vlottende activa",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000751
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Andere financiële opbrengsten",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.007529
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Niet-recurrente financiële opbrengsten",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000076
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Financiële kosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.006566
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Recurrente financiële kosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000065
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Kosten van schulden",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.00065
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000651
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Andere financiële kosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.006529
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Niet-recurrente financiële kosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000066
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Onttrekking aan de uitgestelde belastingen",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.00078
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Overboeking naar de uitgestelde belastingen",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.00068
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Belastingen",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.006703
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000077
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Onttrekking aan de belastingvrije reserves",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000789
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Overboeking naar de belastingvrije reserves",
+   "lado": "expense",
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "values": [
+    0.000689
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Omzet",
+   "lado": "revenue",
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "values": [
+    5.341608
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Uitzonderlijke opbrengsten",
+   "lado": "revenue",
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "values": [
+    0.2288
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Andere bedrijfsopbrengsten",
+   "lado": "revenue",
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "values": [
+    2.057654
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Handelsgoederen",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "values": [
+    -0.568177
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Diensten en diverse goederen",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "values": [
+    -7.550802
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Personeelskosten",
+   "lado": "expense",
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "values": [
+    -9.888374
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Afschrijvingen & waardeverminderingen",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "values": [
+    -3.043015
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "values": [
+    -0.141769
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": "expense",
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "values": [
+    -0.674559
+   ],
+   "origen": "estado 19"
+  }
+ ]
+}

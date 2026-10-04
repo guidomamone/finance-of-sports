@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Bélgica/Charleroi/jaarrekening-2016-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/Charleroi/jaarrekening-2016-06-30-individual.pdf",
+ "club": "charleroi-be",
+ "year": 2016,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:54:30.310Z",
+ "tieOuts": {
+  "cierran": 6,
+  "noCierran": 17
+ },
+ "warnings": [
+  "17 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": false,
+  "motivo": "no se pudo ubicar la columna del ejercicio"
+ },
+ "ladoConocido": 0,
+ "rubros": []
+}

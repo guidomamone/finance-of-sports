@@ -1,0 +1,176 @@
+{
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.md",
+ "pdf": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.pdf",
+ "club": "alverca",
+ "year": 2024,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:07:29.165Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 6
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "88 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 16,
+  "notasUsadas": []
+ },
+ "ladoConocido": 14,
+ "rubros": [
+  {
+   "label": "Vendas e serviços prestados",
+   "lado": "revenue",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "values": [
+    0.069051
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "values": [
+    0.063231
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": null,
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "values": [
+    -1.17136
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "values": [
+    -2.437682
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Outros rendimentos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "values": [
+    0.522592
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Outros gastos",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "values": [
+    -0.247029
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "values": [
+    -0.019459
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Imposto sobre o rendimento do período",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "values": [
+    -0.00983
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Remunerações dos Órgãos Sociais",
+   "lado": "expense",
+   "page": 25,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "values": [
+    15.619
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Remuneração do Pessoal",
+   "lado": "expense",
+   "page": 25,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "values": [
+    1899.121
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Encargos sobre remunerações",
+   "lado": "expense",
+   "page": 25,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "values": [
+    193.792
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Seguros de Acidentes de Trabalho",
+   "lado": "expense",
+   "page": 25,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "values": [
+    98.178
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Indemnizações",
+   "lado": "expense",
+   "page": 25,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "values": [
+    5
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Outros Gastos com Pessoal",
+   "lado": "expense",
+   "page": 25,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "values": [
+    227.971
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Fundo de Compensação do Trabalho",
+   "lado": "expense",
+   "page": 23,
+   "section": "FC ALVERCA FUTEBOL SAD / 11.2.2. Outros investimentos Financeiros",
+   "values": [
+    2.15883
+   ],
+   "origen": "estado 12"
+  }
+ ]
+}

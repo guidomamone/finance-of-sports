@@ -1,0 +1,376 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T13:21:25.077Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b18"
+  ],
+  "notas_gastos": [
+   "b19",
+   "b20",
+   "b21"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con dos decimales (euros con céntimos), p. ej. L76 '2.335.445,53'"
+  },
+  {
+   "bloque": "b18",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con céntimos (L419 '3.086.961,53')"
+  },
+  {
+   "bloque": "b19",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con céntimos (L432 '3.534.818,85')"
+  },
+  {
+   "bloque": "b20",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con céntimos (L438 '21.600,00')"
+  },
+  {
+   "bloque": "b21",
+   "escala": "unidades",
+   "evidencia": "No se indica escala; importes con céntimos (L445 '14.291,15')"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 76,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "2.335.445,53",
+   "anterior": "2.710.883,11",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 77,
+   "etiqueta": "(-) Κόστος πωλήσεων",
+   "actual": "-2.050.194,93",
+   "anterior": "-1.541.698,92",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 78,
+   "etiqueta": "Μικτό αποτέλεσμα",
+   "actual": "285.250,60",
+   "anterior": "1.169.184,19",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 79,
+   "etiqueta": "(+) Λοιπά συνήθη έσοδα",
+   "actual": "751.516,00",
+   "anterior": "687.187,26",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 80,
+   "etiqueta": "",
+   "actual": "1.036.766,60",
+   "anterior": "1.856.371,45",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 81,
+   "etiqueta": "(-) Έξοδα διοίκησης",
+   "actual": "-848.356,52",
+   "anterior": "-637.944,38",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 82,
+   "etiqueta": "(-) Έξοδα διάθεσης",
+   "actual": "-636.267,39",
+   "anterior": "-478.458,28",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 83,
+   "etiqueta": "(-) Λοιπά έξοδα και ζημιές",
+   "actual": "-21.600,00",
+   "anterior": "-390,84",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 84,
+   "etiqueta": "(+) Λοιπά έσοδα και κέρδη",
+   "actual": "0,00",
+   "anterior": "2.010,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 85,
+   "etiqueta": "Αποτελέσματα προ τόκων και φόρων",
+   "actual": "-469.457,32",
+   "anterior": "741.587,95",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 87,
+   "etiqueta": "(-) Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "-14.291,15",
+   "anterior": "-11.554,72",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 88,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "-483.748,47",
+   "anterior": "730.033,23",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 90,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "-483.748,47",
+   "anterior": "730.033,23",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b18",
+   "linea": 415,
+   "etiqueta": "Πωλήσεις λοιπών αποθεμάτων & άχρηστου υλικού",
+   "actual": "16.129,03",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Κύκλος εργασιών (καθαρός)"
+  },
+  {
+   "bloque": "b18",
+   "linea": 416,
+   "etiqueta": "Πωλήσεις υπηρεσιών",
+   "actual": "2.319.316,50",
+   "anterior": "2.710.883,11",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Κύκλος εργασιών (καθαρός)"
+  },
+  {
+   "bloque": "b18",
+   "linea": 417,
+   "etiqueta": "Επιχορηγήσεις & διάφορα έσοδα πωλήσεων",
+   "actual": "366.298,27",
+   "anterior": "415.903,27",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(+) Λοιπά συνήθη έσοδα"
+  },
+  {
+   "bloque": "b18",
+   "linea": 418,
+   "etiqueta": "Έσοδα παρεπόμενων ασχολιών",
+   "actual": "385.217,73",
+   "anterior": "271.283,99",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "(+) Λοιπά συνήθη έσοδα"
+  },
+  {
+   "bloque": "b18",
+   "linea": 419,
+   "etiqueta": "Σύνολο:",
+   "actual": "3.086.961,53",
+   "anterior": "3.398.070,37",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 425,
+   "etiqueta": "Αμοιβές και έξοδα προσωπικού",
+   "actual": "2.462.845,21",
+   "anterior": "1.606.107,17",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 426,
+   "etiqueta": "Αμοιβές και έξοδα τρίτων",
+   "actual": "529.934,27",
+   "anterior": "353.314,57",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 427,
+   "etiqueta": "Παροχές τρίτων",
+   "actual": "116.925,96",
+   "anterior": "142.819,83",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 428,
+   "etiqueta": "Διάφορα έξοδα",
+   "actual": "410.631,58",
+   "anterior": "538.605,51",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 429,
+   "etiqueta": "Αποσβέσεις",
+   "actual": "11.318,05",
+   "anterior": "4.875,67",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 430,
+   "etiqueta": "Προβλέψεις",
+   "actual": "0,00",
+   "anterior": "133,33",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 431,
+   "etiqueta": "Φόροι-τέλη",
+   "actual": "3.163,78",
+   "anterior": "12.245,50",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 432,
+   "etiqueta": "Σύνολο:",
+   "actual": "3.534.818,85",
+   "anterior": "2.657.968,25",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b20",
+   "linea": 438,
+   "etiqueta": "Έκτακτα κι ανόργανα έξοδα",
+   "actual": "21.600,00",
+   "anterior": "390,84",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "(-) Λοιπά έξοδα και ζημιές"
+  },
+  {
+   "bloque": "b20",
+   "linea": 439,
+   "etiqueta": "Σύνολο:",
+   "actual": "21.600,00",
+   "anterior": "390,84",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "(-) Λοιπά έξοδα και ζημιές"
+  },
+  {
+   "bloque": "b21",
+   "linea": 445,
+   "etiqueta": "Διάφορα έξοδα τραπεζών",
+   "actual": "14.291,15",
+   "anterior": "11.554,72",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "(-) Χρεωστικοί τόκοι και συναφή έξοδα"
+  },
+  {
+   "bloque": "b21",
+   "linea": 446,
+   "etiqueta": "Σύνολο:",
+   "actual": "14.291,15",
+   "anterior": "11.554,72",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "(-) Χρεωστικοί τόκοι και συναφή έξοδα"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 419,
+  "actual": "3.086.961,53"
+ },
+ "total_gastos": {
+  "linea": 432,
+  "actual": "3.534.818,85"
+ },
+ "resultado": {
+  "linea": 90,
+  "actual": "-483.748,47",
+  "anterior": "-483.748,47"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga la nota 15 (L425-L432) como desglose por naturaleza del conjunto Κόστος πωλήσεων + Έξοδα διοίκησης + Έξοδα διάθεσης (L77, L81, L82), sin asignar cada partida a un único renglón?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "(-) Κόστος πωλήσεων",
+   "texto": "El total L432 (3.534.818,85) coincide con la suma de L77+L81+L82 (3.534.818,84, diferencia de redondeo), por lo que la nota desglosa tres renglones a la vez y detalla_a quedó null.",
+   "bloques": [
+    "b19",
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Escala no explícita; se asume unidades (euros) por importes con céntimos. El total de ingresos L419 de la nota 14 equivale a Κύκλος εργασιών + Λοιπά συνήθη έσοδα (L76+L79). Las líneas L86 y L89 no tienen importe y se omiten. La fila L80 no tiene etiqueta. Nota: en 'resultado.anterior' se debió consignar 730.033,23 (L90 columna 30/6/2018)."
+}

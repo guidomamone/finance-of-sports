@@ -1,0 +1,466 @@
+{
+ "md": "Clubes/Colombia/Alianza FC/estados-financieros-2024.md",
+ "generatedAt": "2026-09-30T04:27:37.925Z",
+ "rubros": [
+  {
+   "label": "Otros gastos",
+   "lado": null,
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1476
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 15,
+   "section": "## NOTA 27: Ingresos",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "lump_football_operations",
+     0.45
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1005
+  },
+  {
+   "label": "Utilidad Bruta",
+   "lado": null,
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_income",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 1478
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": null,
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Costos de venta",
+   "lado": "expense",
+   "page": 15,
+   "section": "## NOTA 28: Costos",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 15,
+   "section": "## NOTA 27: Ingresos",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Utilidad (Pérdida) operativa",
+   "lado": null,
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_expenses",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "other_income",
+     0.26
+    ],
+    [
+     "lump_football_operations",
+     0.24000000000000002
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": null,
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1459
+  },
+  {
+   "label": "Resultado del ejercicio",
+   "lado": null,
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1453
+  },
+  {
+   "label": "Ingresos financieros",
+   "lado": "revenue",
+   "page": 15,
+   "section": "## NOTA 27: Ingresos",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Utilidad (Pérdida) antes de impuestos de renta",
+   "lado": null,
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "admin_general_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "other_income",
+     0.25
+    ]
+   ],
+   "tokens": 1471
+  },
+  {
+   "label": "Saldo al 31 de diciembre 2023",
+   "lado": null,
+   "page": 5,
+   "section": "## ESTADO DE CAMBIOS EN EL PATRIMONIO COMPARATIVO",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.29000000000000004
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1460
+  },
+  {
+   "label": "Utilidad (Pérdida) Neta del período",
+   "lado": null,
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ]
+   ],
+   "tokens": 1475
+  },
+  {
+   "label": "Costo Financiero Neto",
+   "lado": null,
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1477
+  },
+  {
+   "label": "Gastos financieros",
+   "lado": null,
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1456
+  },
+  {
+   "label": "Gastos impuesto de renta y cree",
+   "lado": "expense",
+   "page": 16,
+   "section": "## NOTA 30: Gastos de impuestos de renta y cree",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Resultados del periodo",
+   "lado": null,
+   "page": 5,
+   "section": "## ESTADO DE CAMBIOS EN EL PATRIMONIO COMPARATIVO",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 1453
+  },
+  {
+   "label": "Saldo al 31 de diciembre de 2024",
+   "lado": null,
+   "page": 5,
+   "section": "## ESTADO DE CAMBIOS EN EL PATRIMONIO COMPARATIVO",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1598
+  },
+  {
+   "label": "Inventarios",
+   "lado": "revenue",
+   "page": 9,
+   "section": "## NOTA 8: Inventarios",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 825
+  },
+  {
+   "label": "cambios en el patriomonio a diciembre 2024",
+   "lado": null,
+   "page": 5,
+   "section": "## ESTADO DE CAMBIOS EN EL PATRIMONIO COMPARATIVO",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1568
+  }
+ ]
+}

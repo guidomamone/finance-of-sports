@@ -1,0 +1,3500 @@
+{
+  "club": "velez",
+  "year": 2015,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Velez Sarsfield/balance-general-2015.md",
+  "generatedAt": "2026-09-30T22:40:32.975Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 4,
+    "eu": 399,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 55,
+  "relevantTableCount": 14,
+  "tables": [
+    {
+      "page": 7,
+      "section": "ACTIVO / ACTIVO CORRIENTE .",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caja y bancos - Notas 2.b) y",
+          "values": [
+            "3.a)",
+            "1.068.075",
+            "1.716.940"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inversiones - Notas 2.8) y",
+          "values": [
+            "3.b)",
+            "174.045",
+            "7.313"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos - Notas 2.c), 2.d) y",
+          "values": [
+            "3.c)",
+            "1.",
+            "52.957.688",
+            "86.611.684"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos intangibles - Notas 2.h) y 3.e) 1. -",
+          "values": [
+            "25.121.345"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del Activo Corriente",
+          "values": [
+            "54.199.808",
+            "113.457.282"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "ACTIVO NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Créditos - Notas 2.c), 2.d) y",
+          "values": [
+            "3.c)",
+            "2.",
+            "21.235.797",
+            "23.711.349"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bienes de uso - Notas 2.) y",
+          "values": [
+            "3.d)",
+            "70.768.753",
+            "68.923.629"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos intangibles - Notas 2.h) y",
+          "values": [
+            "3.e)",
+            "2.",
+            "81.227.785",
+            "67.620.852"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del Activo No Corriente",
+          "values": [
+            "173.232.335",
+            "160.255.830"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del Activo",
+          "values": [
+            "227.432.143",
+            "273.713.112"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "PASIVO / PASIVO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deudas - Notas 2.c) y",
+          "values": [
+            "4.a)",
+            "1.",
+            "149.036.862",
+            "147.528.807"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos cobrados por anticipado - Notas 2.c) y",
+          "values": [
+            "4.b)",
+            "1.",
+            "9.159.396",
+            "17.698.074"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del Pasivo Corriente",
+          "values": [
+            "158.196.258",
+            "165.226.881"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "PASIVO NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deudas - Notas 2.c) y",
+          "values": [
+            "4.a)",
+            "2.",
+            "23.887.407",
+            "30.794.716"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos cobrados por anticipado - Notas 2.c) y",
+          "values": [
+            "4.b)",
+            "2.",
+            "2.987.715",
+            "276.656"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Previsiones - Nota 2.1) y Anexo VII",
+          "values": [
+            "4.737.261",
+            "3.596.052"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del Pasivo No Corriente",
+          "values": [
+            "31.612.383",
+            "34.667.424"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del Pasivo",
+          "values": [
+            "189.808.641",
+            "199.894.305"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "PATRIMONIO NETO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Según estado respectivo - Nota",
+          "values": [
+            "2.)",
+            "37.623.502",
+            "73.818.807"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del Pasivo y Patrimonio Neto",
+          "values": [
+            "227.432.143",
+            "273.713.112"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "Estado de Recursos y Gastos / Correspondiente al ejercicio finalizado el 30 de junio de 2015 / Comparativo con el ejercicio anterior (cifras en pesos, reexpresadas según Nota 1.b) / 2015 2014 / RECURSOS ORDINARIOS - Anexo ll",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Para fines generales",
+          "values": [
+            "48.359.947",
+            "37.035.137"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Para fines específicos",
+          "values": [
+            "222.480.664",
+            "204.550.030"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Para fines diversos",
+          "values": [
+            "12.537.402",
+            "14.870.811"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "GASTOS ORDINARIOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Específicos de sectores - Anexo ll",
+          "values": [
+            "(210.685.807)",
+            "(183.527.035)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Generales de administración - Anexo IV",
+          "values": [
+            "(37.913.202)",
+            "(31.957.681)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizaciones - Nota",
+          "values": [
+            "5.a)",
+            "(34.591.540)",
+            "39.453.974)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "RESULTADOS FINANCIEROS Y POR TENENCIA -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Nota",
+          "values": [
+            "5.b)",
+            "(36.382.769)",
+            "7.509.551"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(DÉFICIT) SUPERÁVIT DEL EJERCICIO",
+          "values": [
+            "(36.195.305)",
+            "9.026.839"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 11,
+      "section": "Correspondiente al ejercicio finalizado el 30 de junio de 2015 / Comparativo con el ejercicio anterior (cifras en pesos, reexpresadas según Nota 1.b) / x-_]_A ___ ___—_— o —_—_—————_— ——— A K—Ká— / 2015 2014 / Variaciones del efectivo",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Efectivo al inicio del ejercicio - Nota",
+          "values": [
+            "3.a)",
+            "1.716.940",
+            "1.443.977"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo al cierre del ejercicio - Nota",
+          "values": [
+            "3.a)",
+            "1.068.075",
+            "1.716.940"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Disminución) aumento neto del efectivo",
+          "values": [
+            "(648.865)",
+            "272.963"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Causas de las variaciones del efectivo / Actividades operativas",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Recursos cobrados - Nota",
+          "values": [
+            "6.a)",
+            "338.001.521",
+            "253.945.280"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagos a proveedores y gastos - Nota",
+          "values": [
+            "6.b)",
+            "(310.570.579)",
+            "(226.747.687)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Flujo neto de efectivo generado por las actividades / operativas 27.430.942 27.197.593 / Actividades de inversión",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pagos por compra de bienes de uso - Nota",
+          "values": [
+            "3.d)",
+            "(4.525.361)",
+            "(542.216)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) disminución de inversiones",
+          "values": [
+            "(166.732)",
+            "117.549"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Flujo neto de efectivo utilizado en las actividades / de inversión (4.692.093) (424.667) / Actividades de financiación",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Disminución de deudas bancarias",
+          "values": [
+            "(653.046)",
+            "(7.831.262)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagos de intereses",
+          "values": [
+            "(21.118.708)",
+            "(18.026.614)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pago de moratoria impositiva",
+          "values": [
+            "(1.615.960)",
+            "(642.087)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Flujo neto de efectivo utilizado en las actividades",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "de financiación",
+          "values": [
+            "(23.387.714)",
+            "(26.499.963)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Disminución) aumento neto del efectivo",
+          "values": [
+            "(648.865)",
+            "272.963"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "£",
+          "values": [],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "NOTA 3 - COMPOSICIÓN DE LOS RUBROS DEL ACTIVO / —3O/O6IZ015 — _3O/OGIZO14 / a) CAJA Y BANCOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caja",
+          "values": [
+            "746.605",
+            "1.581.179"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondos fijos",
+          "values": [
+            "163.949",
+            "86.685"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos",
+          "values": [
+            "157.521",
+            "49.076"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "1.068.075",
+            "1.716.940"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "b) INVERSIONES / c) CRÉDITOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deudores varios (1)",
+          "values": [
+            "28.003.155",
+            "58.891.518"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Documentos a cobrar (2)",
+          "values": [
+            "12.906.239",
+            "9.308.382"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos en garantía >",
+          "values": [
+            "5.000.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "Derechos de formación y mecanismo solidario a cobrar -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Anexo VI y Nota",
+          "values": [
+            "2.d)",
+            "2.312.032",
+            "6.166.842"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cupones de tarjetas de crédito a cobrar",
+          "values": [
+            "940.895",
+            "914.431"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipos a rendir",
+          "values": [
+            "21.448",
+            "179.526"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos a favor impositivos",
+          "values": [
+            "6.205.544",
+            "3.972.429"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses a devengar",
+          "values": [
+            "1.960.487",
+            "1.467.437"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "607.888",
+            "711.119"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "52.957.688",
+            "86.611.684"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "Notas a los Estados Contables al 30 de junio de 2015 / Comparativas con el ejercicio anterior (cifras en pesos, reexpresadas según Nota 1.b) / 30/06/2015 30/06/2014 / (1) Incluye: / Club Atlético Mineiro (Venta Pratto) - Anexo VI 10.005.400 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "F.C. Internacionale Milano (Venta Álvarez) - Anexo VI -",
+          "values": [
+            "10.990.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Real Club Celta de Vigo (Venta A. Femández) - Anexo VI -",
+          "values": [
+            "5.495.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Chiapas Fútbol Club (Venta Bella) - Anexo VI",
+          "values": [
+            "6.547.758",
+            "5.852.040"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Málaga Fútbol Club (Venta Rescaldani) - Anexo VI -",
+          "values": [
+            "1.099.080"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FC Porto - Portugal (Venta Otamendi) - Anexo VI -",
+          "values": [
+            "3.183.672"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clube De Regatas Do Flamengo (Via. Canteros) - Anexo VI -",
+          "values": [
+            "22.492.400"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 16,
+      "section": "Créditos AFA 1.767.795 . / Medios y Contenidos S.A. 433.808 - / Subvención municipal a cobrar 2.257.236 1.958.356 / Indemnización Pellerano - Anexo VI 1.348.200 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Crédito Conmebol -",
+          "values": [
+            "2.373.998"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alpargotas S.A.",
+          "values": [
+            "446.676",
+            "395.152"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad y Concesiones",
+          "values": [
+            "731.750",
+            "809.508"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varios",
+          "values": [
+            "4.464.532",
+            "4.247.112"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "28.003.155",
+            "50.891.518"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "(2) Incluye:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cheques diferidos",
+          "values": [
+            "12.727.980",
+            "9.155.828"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "178.259",
+            "152,554"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "12.906.239",
+            "9.308.382"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "2. No Corriente / Deudores varios (3) 10.005.400 - / Derechos de formación y mecanismo solidario a cobrar -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Anexo VI y Nota",
+          "values": [
+            "2.d)",
+            "11.230.397",
+            "23.711.349"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "21.235.797",
+            "23.711.349"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "d) BIENES DE USO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terrenos 18.285.096 - -",
+          "values": [
+            "18.285.096"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificios",
+          "values": [
+            "88.273.624",
+            "2.105.263",
+            "383.938",
+            "90.762.825"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Villa Olimpica 10.523.693 -",
+          "values": [
+            "165.000",
+            "10.688.693"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Muebles y útiles 5.397.233 312.215 -",
+          "values": [
+            "5.709.448"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas y herramientas 516.353 - -",
+          "values": [
+            "516.353"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gimnasio polifuncional 386.504 - =",
+          "values": [
+            "386.504"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mini estadio de básquet 365.342 - -",
+          "values": [
+            "365.342"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instalaciones 2.958.799 191.201 .",
+          "values": [
+            "3.150.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros bienes 672.894 22.500 -",
+          "values": [
+            "695.394"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obras en curso",
+          "values": [
+            "18.000",
+            "1.894.182",
+            "(548.938)",
+            "1.363.244"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total 2015 127.397.538 4.525.361 -",
+          "values": [
+            "131.922.899"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total 2014 126.855.322 542.216 -",
+          "values": [
+            "127.397.538"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "Amortizaciones Neto / RUBRO Acumuladas Del Acumuladas resultante / al inicio ejercicio (4) al cierre",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terrenos - - -",
+          "values": [
+            "18.285.096"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificios",
+          "values": [
+            "49.965.535",
+            "1.815.571",
+            "51.781.106",
+            "38.981.719"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Villa Olímpica",
+          "values": [
+            "2.032.177",
+            "227.182",
+            "2.259.359",
+            "8.429.334"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Muebles y útiles",
+          "values": [
+            "3.896.664",
+            "290.586",
+            "4.187.250",
+            "1.522.198"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas y herramientas 514,211",
+          "values": [
+            "514.517",
+            "1.836"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gimnasio polifuncional",
+          "values": [
+            "123.556",
+            "7.730",
+            "131.286",
+            "255.218"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mini estadio de básquet",
+          "values": [
+            "116.865",
+            "7.307",
+            "124.172",
+            "241,170"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instalaciones",
+          "values": [
+            "1.357.545",
+            "292.103",
+            "1.649.648",
+            "1.500.352"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros bienes",
+          "values": [
+            "467.356",
+            "39.452",
+            "506.808",
+            "188.586"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "_Obras en curso - - -",
+          "values": [
+            "1.363.244"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total 2015",
+          "values": [
+            "58.473.909",
+            "2.680.237",
+            "61.154.146",
+            "70.768.753"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total 2014",
+          "values": [
+            "55.904.945",
+            "2.568.964",
+            "58.473.909",
+            "68.923.629"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(4) Ver Nota",
+          "values": [
+            "5.a)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "e) ACTIVOS INTANGIBLES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Plantel profesional de fútbol - Anexo 1 (5) -",
+          "values": [
+            "25.121.345."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total -",
+          "values": [
+            "25.121.345"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "Plantel profesional de fútbol - Anexo | 97.335.593 67.755.656 / Regularización valuación Plantel Profesional de fútbol / Ejercicio 2011 - Nota 2.h) - (161.787) / Regularización valuación Plantel Profesional de fútbol / Ejercicio 2015 - Nota 2.h) (16.134.791 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Subtotal",
+          "values": [
+            "81.200.802",
+            "67.593.869"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tiempo compartido",
+          "values": [
+            "26.983",
+            "26.983"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "81.227.785",
+            "67.620.852"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "NOTA 4 - COMPOSICIÓN DE LOS RUBROS DEL PASIVO / PASIVO CORRIENTE / a) DEUDAS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "jugadores y cuerpo técnico por premios y primas (6)",
+          "values": [
+            "9.302.760",
+            "25.957.925"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas por transf. y préstamo de jugadores - Anexo VI -",
+          "values": [
+            "4.682.632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retribuciones al personal",
+          "values": [
+            "13.912.224",
+            "14.787.945"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cargas sociales",
+          "values": [
+            "1.785.769",
+            "1.627.241"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas bancarias",
+          "values": [
+            "11.979.887",
+            "12.632.933"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proveedores",
+          "values": [
+            "9.424.026",
+            "11.530.570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cheques de pago diferido",
+          "values": [
+            "77.183.424",
+            "49.420.396"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte",
+          "values": [
+            "123.588.090",
+            "120.639.642"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Club Atlético VÉLEZ SARSFIELD / Notas a los Estados Contables al 30 de junio de 2015 / Comparativas con el ejercicio anterior (cifras en pesos, reexpresadas según Nota 1.b) / — 30/06/2015 _3O/OG/2014",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Transporte",
+          "values": [
+            "123.588.090",
+            "120.639.642"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Asociación del Fútbol Argentino",
+          "values": [
+            "3.984.325",
+            "1.514.673"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda Terreno Villa Olímpica",
+          "values": [
+            "773.986",
+            "773.986"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gobierno de la Ciudad Autónoma de Bs. As.",
+          "values": [
+            "6.437",
+            "1,135,774"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Moratoria Impositiva",
+          "values": [
+            "1.820.930",
+            "1.615.968"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AFIP - Retenciones a depositar",
+          "values": [
+            "3.267.849",
+            "3.675.136"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda previsional consolidada Dec. 1212 - Nota",
+          "values": [
+            "650.729",
+            "422.570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acreedores por compra jugadores (7)",
+          "values": [
+            "14.944.516",
+            "17.751.058"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "149.036.862",
+            "147.528.807"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "(7) Incluye: / Rofinogro SADP - Rangers de Talca (Caraglio) - Anexo VI 1.352.508 - / Club Deportivo River Plate - Ecuador (Velez Cedeño) — / Anexo VÍ 1.817.600 - / Celta de Vigo (Augusto Fernández) - Anexo VI 253.488 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Club Independiente de Santa Fe S.A. (Copete) - Anexo VI",
+          "values": [
+            "472.620",
+            "473.754"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "'Gonoa Cricket and Football Club Spa. (Pralto) - Anexo VI",
+          "values": [
+            "10.139.500",
+            "11.147.900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sosa Silva, Carlos Sebastián - Anexo VI",
+          "values": [
+            "908.800",
+            "4.066.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Twenty Two S.A. (Prato) - Anexo VI -",
+          "values": [
+            "2.062.904"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "14.944.516",
+            "17.751.058"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "2. No Corriente",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Asociación del Fútbol Argentino",
+          "values": [
+            "1.567.289",
+            "5.958.723"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Moratoria Impositiva",
+          "values": [
+            "21.891.167",
+            "23.712.089"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda previsional consolidada Dec. 1212 - Nota 8 428.951 _",
+          "values": [
+            "1.123.904"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "23.887.407",
+            "30.794.716"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "— 30/06/2015 _3O/OGIZ014 / b) INGRESOS COBRADOS POR ANTICIPADO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Derechos de televisación -",
+          "values": [
+            "3.344.133"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recitales.a devengar en moneda extranjera - Anexo VI -",
+          "values": [
+            "5.806.837"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad Estática Internacional",
+          "values": [
+            "685.500",
+            "1.005.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Coca Cola Femsa",
+          "values": [
+            "3.500.004",
+            "1.025.002"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Samsung - Anexo VI",
+          "values": [
+            "757.333",
+            "4.744.250"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 20,
+      "section": "Dass -Umbro 2.250.000 =",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "1.966.559",
+            "1.772.452"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "9.159.396",
+            "17.698.074"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "2. No Corriente / Recitales a devengar en moneda local 1.237.719 - / Coca Cola Femsa 1.749.996 .",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros -",
+          "values": [
+            "276.656"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "2.987.715.",
+            "276.656"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "NOTA 5 - COMPOSICIÓN DE ALGUNOS RUBROS DEL ESTADO DE RECURSOS Y / GASTOS / a) AMORTIZACIONES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Subtotal",
+          "values": [
+            "31.911.303",
+            "36.885.010"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bienes de uso - Nota",
+          "values": [
+            "3.d)",
+            "2.680.237",
+            "2.568.964"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "34.591.540",
+            "39.453.974"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "b) RESULTADOS FINANCIEROS Y POR TENENCIA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intereses perdidos",
+          "values": [
+            "(18,163,279)",
+            "(14.731.311)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses deudas previsionales e impositivas",
+          "values": [
+            "(2.955.429)",
+            "(3.295.303)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultados por tenencia jugadores prof. propios - Anexo |",
+          "values": [
+            "78.528",
+            "20.407.660"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos incobrables",
+          "values": [
+            "(15.860.657)",
+            "(1.702.924)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencias de cambio",
+          "values": [
+            "518.068",
+            "6.831.429"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "(36.382.769)",
+            "7.509.551"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "NOTA 6 — CAUSAS DE LAS VARIACIONES DEL EFECTIVO / a) RECURSOS COBRADOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos para fines generales",
+          "values": [
+            "48.359.947",
+            "37.035.137"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos para fines específicos",
+          "values": [
+            "222.480.664",
+            "204.550.030"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "Transferencia y préstamo de",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "jugadores",
+          "values": [
+            "22.816.660",
+            "28.193.272"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de televisación",
+          "values": [
+            "54.392.400",
+            "45.139.660"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Otros derechos de fútbol",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "profesional",
+          "values": [
+            "30.885.549",
+            "24.813.048"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "114.386.055",
+            "106.404.050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos para fines diversos",
+          "values": [
+            "12.537.402",
+            "14.870.811"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencias de cambio",
+          "values": [
+            "518.068",
+            "6.831.429"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Valor residual de bajas por ventas de futbolistas / profesionales 33.836.549 47.637.171 / Cambios en activos operativos:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Disminución (aumento) de créditos",
+          "values": [
+            "20.268.891",
+            "(56.979.298)."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "338.001.521",
+            "253.945.280"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 22,
+      "section": "b) PAGOS A PROVEEDORES Y GASTOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos generales de administración",
+          "values": [
+            "(18.801.790)",
+            "(16.583.208)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos específicos",
+          "values": [
+            "(60.088.351)",
+            "(66.723.798)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de sueldos y cargas sociales",
+          "values": [
+            "(169.708.868)",
+            "(132.177.710)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 22,
+      "section": "fondos: / Valor residual desvinculaciones del plantel profesional 2.086.361 1.218.455 / Valor residual regularización valuación plantel , / profesional - (424.691) / Menos:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pago por altas de intangibles del ejercicio",
+          "values": [
+            "(56.241.273)",
+            "(49.045.938)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento de previsión para juicios - Anexo VII",
+          "values": [
+            "2.049.653",
+            "2.222.998"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utilización de previsiones - Anexo VII",
+          "values": [
+            "(908.444)",
+            "(196.462)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "Cambios en pasivos operativos: / (Disminución) aumento deuda plantel profesional de / fútbol (16.655.165) 3.956.872 / (Disminución) aumento deudas por transferencia y",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "préstamo de jugadores",
+          "values": [
+            "(4.682.632)",
+            "4.682.632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disminución de deudas por compra de jugadores",
+          "values": [
+            "(2.806.542)",
+            "(3.185.943)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Disminución) aumento de deudas sociales",
+          "values": [
+            "(1.183.987)",
+            "2.974.391"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "(Disminución) aumento de deudas Asociación del Fútbol",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Argentino",
+          "values": [
+            "(1.921.782)",
+            "7.398.021"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Disminución) aumento de deudas fiscales",
+          "values": [
+            "(1.536.624)",
+            "446.061"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento de otras deudas",
+          "values": [
+            "25.656.484",
+            "45.078.402"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disminución ingresos anticipados",
+          "values": [
+            "(5.827.619)",
+            "(26.387.769)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "(310.570.579)",
+            "(226.747.687)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2% Trimestre 842.550 18.497.571 2.764.139",
+          "values": [],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "3\" Trimestre",
+          "values": [
+            "6.051.128",
+            "5.225.842",
+            "1.602.079"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "40 Trimestre",
+          "values": [
+            "287.554",
+            "3.658.241",
+            "887.361"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A más de 1 año",
+          "values": [
+            "297,",
+            "887.407",
+            "2.987.715"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "NOTA 10 - HECHOS RELACIONADOS CON EL FUTURO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "+ Caseres, Ramiro Julián, sin cargo y sin opción de compra, hasta el 31 de diciembre de",
+          "values": [
+            "2015."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "» Jerez, Eric Emmanuel, sin cargo y sin opción de compra, hasta el 31 de diciembre de",
+          "values": [
+            "2015."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Mertell, Sebastián Alejandro, sin cargo y con opción de compra de U$S 300.000, hasta el 30 de junio de",
+          "values": [
+            "2016."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "el 30 de junto de 2016.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "10 se junio de",
+          "values": [
+            "2016,"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ villalba, Leonardo Enríque, sín cargo y con opción de compra de € 800.000 hasta e! 30 de junio de",
+          "values": [
+            "2016."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Chacón Quiroz, Iván Alfredo, sin cargo y con opción de compra de € 150.000 hasta el 30 de junio de",
+          "values": [
+            "2016."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Maberkorn, Federico Nicolás, sin cargo y con opción de compra de U$S 250.000 hasta el 30 de junio de",
+          "values": [
+            "2016."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "na >",
+          "values": [],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "b) INGRESOS GENERADOS EN EL EJERCICIO POR LAS OPERACIONES DE Anexo | / TRANSFERENCIA Y PRÉSTAMO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pratto, Lucas 30.489.936 -",
+          "values": [
+            "(8.636.676)",
+            "21.853.260"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otamendi, Nicolás Hernán (1) 963.400 - -",
+          "values": [
+            "963.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total 2015 —",
+          "values": [
+            "58.366.361",
+            "(1.713.152)",
+            "(33.836.549)",
+            "22.816.660."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total 2014",
+          "values": [
+            "73,197,901",
+            "(1.546.719)",
+            "(43.457.910)",
+            "28.193.272"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 29,
+      "section": "FEO NEC E : / A 388 Z SE 2” BE / BIE ESERISAES ENS $",
+      "columns": [
+        "ji i -ú ñi"
+      ],
+      "rows": [
+        {
+          "rawLabel": "IN »",
+          "values": [],
+          "bold": false
+        },
+        {
+          "rawLabel": ".",
+          "values": [],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "Gastos Generales de Administración / Correspondiente al ejercicio finalizado el 30 de junio de 2015 / Comparativo con el ejercicio anterior (cifras en pesos, reexpresadas según Nota 1.b) / Anexo IV / Remuneraciones al personal - Administración y",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "cobranzas",
+          "values": [
+            "15.613.167",
+            "12.575.145"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cargas sociales",
+          "values": [
+            "3.498.245",
+            "2.799.328"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios y retribuciones por servicios",
+          "values": [
+            "1.379.722",
+            "1.442.510"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos y comisiones bancarias",
+          "values": [
+            "8.327.504",
+            "5.989.283"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Papeleria, impresiones y útiles de escritorio",
+          "values": [
+            "817.886",
+            "991.677"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros, juicios y gastos relacionados",
+          "values": [
+            "2.164.582",
+            "2.269.914"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Viáticos, comidas y refrigerios",
+          "values": [
+            "640.075",
+            "631.903"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reparaciones y mantenimiento",
+          "values": [
+            "832.990",
+            "964.552"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguridad y vigilancia",
+          "values": [
+            "22.433",
+            "16.045"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios públicos",
+          "values": [
+            "579.539",
+            "615.644"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varios",
+          "values": [
+            "4.037.059",
+            "3.661.680"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "[Teta area]",
+          "values": [
+            "31.957.681]"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 32,
+      "section": "FÚTBOL Y OTRAS| ACTIVIDADES / ACTIVIDADES DE TOTAL / DEPORTIVAS ENSEÑANZA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Recursos especificos de sectores (Anexo II)",
+          "values": [
+            "229.720.107",
+            "53.657.906",
+            "283.378.013"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos específicos de sectores (Anexo 111)",
+          "values": [
+            "(167.308.120)",
+            "(43.377.687)|",
+            "(210.685.807)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit de Sectores 2015",
+          "values": [
+            "62.411.987",
+            "10.280.219",
+            "72.692.206"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit de Sectores 2014",
+          "values": [
+            "59.872.826",
+            "7.560.717",
+            "67.433.543"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "ACTIVO / ACTIVO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "* F.C. Internacionale Milano (Venta Álvarez) Eur - - - |",
+          "values": [
+            "10.990.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "* Real Club Celta de Vigo (Venta A. Fernández) Eur - - -|",
+          "values": [
+            "5.495.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "* Chiapas Fútbol Club (Venta Bella) Uss",
+          "values": [
+            "728.500|",
+            "8,9880]",
+            "6.547.758|",
+            "5.852.040"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "* Málaga Fútbol Club (Venta Rescaldani) Eur = E -|",
+          "values": [
+            "1.099.080"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "* FC Porto - Portugal (Venta Otamendi) Eur a - -|",
+          "values": [
+            "3.183.672"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "* Clube De Regatas Do Flamengo (Venta",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Canteros) USS - . -|",
+          "values": [
+            "22.492.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "* Indemnización Pellerano U$S",
+          "values": [
+            "150.000|",
+            "8,9880|",
+            "1.348.200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de form. y mec. solidario a cobrar U$s",
+          "values": [
+            "44.921",
+            "8,9880",
+            "403.754",
+            "99.826"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eur",
+          "values": [
+            "190.725|",
+            "10,0054",
+            "1.908.278|",
+            "6.067.016"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 33,
+      "section": "ACTIVO NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Derechos de form. y mec. solidario a cobrar U$S",
+          "values": [
+            "332.974|",
+            "8,9880|",
+            "2.992.768|",
+            "10.451.947"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eur",
+          "values": [
+            "823.318|",
+            "10,0054|",
+            "8.237.629]",
+            "13.259.402"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "(q (€_OA<ANAH<HPHP._ XX / PASIVO / PASIVO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "por premios y primas U$s - - -",
+          "values": [
+            "9.561.635"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas por transferencia y préstamo de jugadores “U$S - - -",
+          "values": [
+            "4.682.632"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Acreedores por compra jugadores / * Rojinegro SADP (Caraglio) U$s 148.824| 9,0880 1.352.508 - / * Club Deportivo River Plate — Ecuador (Velez / Cedeño) USSs 200.000| 9,0880 1.817.600 - / * Real Club Celta de Vigo (Fernández) Eur 25.000 | 10,1395 253.488 =",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "* Club Independiente de Santa Fe S.A. (Copete) U$S",
+          "values": [
+            "52.005|",
+            "9,0880",
+            "472.620",
+            "473.754"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "* Genoa Cricket and Football Club Spa. (Pratto) Eur",
+          "values": [
+            "1.000.000|",
+            "10,1395|",
+            "10.139.500",
+            "11.147.900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "* Sosa Silva, Carlos Sebastián USs",
+          "values": [
+            "100.000|",
+            "9,0880",
+            "908.800",
+            "4.066.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "* Twenty Two S.A. (Pratto) Eur - - -",
+          "values": [
+            "2.062.904"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Ingresos anticipados",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "* Recitales a devengar USs - - -",
+          "values": [
+            "5.806.837"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "* Samsung USS",
+          "values": [
+            "83.333|",
+            "9,0880",
+            "757.333",
+            "4.744.250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3 Total Pasivo PT” Y | tsrorss]",
+          "values": [
+            "ezsac.ar2]"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 35,
+      "section": "MMMM |",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Para juicios y otras contingencias 3.596.052| 2.049.653 (2) (908.444) (1)|",
+          "values": [
+            "4.737.261"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales 2015 3.506.052| 2.049.653 | (908.440 |",
+          "values": [
+            "4.737.261|"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales 2014 1.569.516] 2.222.998 (2)[ (196.462) (1)|",
+          "values": [
+            "3.596.052"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 7,
+      "section": "ACTIVO / ACTIVO CORRIENTE .",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total del Activo Corriente",
+      "skipped": true,
+      "reason": "3 de 4 valor(es) del segmento no parecen números (ej. \"3.a)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 7,
+      "section": "ACTIVO / ACTIVO CORRIENTE .",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total del Activo Corriente",
+      "target": "113.457.282",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-112215161"
+    },
+    {
+      "page": 7,
+      "section": "ACTIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total del Activo No Corriente",
+      "skipped": true,
+      "reason": "3 de 3 valor(es) del segmento no parecen números (ej. \"3.c)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 7,
+      "section": "ACTIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total del Activo No Corriente",
+      "target": "160.255.830",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-89487073"
+    },
+    {
+      "page": 7,
+      "section": "ACTIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "totalLabel": "Total del Activo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 8,
+      "section": "PASIVO / PASIVO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total del Pasivo Corriente",
+      "skipped": true,
+      "reason": "2 de 2 valor(es) del segmento no parecen números (ej. \"4.a)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": "PASIVO / PASIVO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total del Pasivo Corriente",
+      "target": "165.226.881",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-165226879"
+    },
+    {
+      "page": 8,
+      "section": "PASIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total del Pasivo No Corriente",
+      "skipped": true,
+      "reason": "2 de 3 valor(es) del segmento no parecen números (ej. \"4.a)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": "PASIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total del Pasivo No Corriente",
+      "target": "34.667.424",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-31071368"
+    },
+    {
+      "page": 8,
+      "section": "PASIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "totalLabel": "Total del Pasivo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 8,
+      "section": "PATRIMONIO NETO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total del Pasivo y Patrimonio Neto",
+      "target": "227.432.143",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-227432141"
+    },
+    {
+      "page": 8,
+      "section": "PATRIMONIO NETO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total del Pasivo y Patrimonio Neto",
+      "target": "273.713.112",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-236089610"
+    },
+    {
+      "page": 15,
+      "section": "NOTA 3 - COMPOSICIÓN DE LOS RUBROS DEL ACTIVO / —3O/O6IZ015 — _3O/OGIZO14 / a) CAJA Y BANCOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "1.068.075",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "NOTA 3 - COMPOSICIÓN DE LOS RUBROS DEL ACTIVO / —3O/O6IZ015 — _3O/OGIZO14 / a) CAJA Y BANCOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "1.716.940",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "Derechos de formación y mecanismo solidario a cobrar -",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 6 valor(es) del segmento no parecen números (ej. \"2.d)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 15,
+      "section": "Derechos de formación y mecanismo solidario a cobrar -",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "86.611.684",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "-77054710"
+    },
+    {
+      "page": 16,
+      "section": "Créditos AFA 1.767.795 . / Medios y Contenidos S.A. 433.808 - / Subvención municipal a cobrar 2.257.236 1.958.356 / Indemnización Pellerano - Anexo VI 1.348.200 -",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "28.003.155",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-19986199"
+    },
+    {
+      "page": 16,
+      "section": "Créditos AFA 1.767.795 . / Medios y Contenidos S.A. 433.808 - / Subvención municipal a cobrar 2.257.236 1.958.356 / Indemnización Pellerano - Anexo VI 1.348.200 -",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "50.891.518",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-45439746"
+    },
+    {
+      "page": 16,
+      "section": "(2) Incluye:",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "12.906.239",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "(2) Incluye:",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "9.308.382",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "2. No Corriente / Deudores varios (3) 10.005.400 - / Derechos de formación y mecanismo solidario a cobrar -",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 1 valor(es) del segmento no parecen números (ej. \"2.d)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "2. No Corriente / Deudores varios (3) 10.005.400 - / Derechos de formación y mecanismo solidario a cobrar -",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "23.711.349",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-12480952"
+    },
+    {
+      "page": 17,
+      "section": "d) BIENES DE USO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total 2015 127.397.538 4.525.361 -",
+      "target": "131.922.899",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "-14358138"
+    },
+    {
+      "page": 17,
+      "section": "d) BIENES DE USO",
+      "likelyRelevant": false,
+      "totalLabel": "Total 2014 126.855.322 542.216 -",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 17,
+      "section": "Amortizaciones Neto / RUBRO Acumuladas Del Acumuladas resultante / al inicio ejercicio (4) al cierre",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total 2015",
+      "target": "58.473.909",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "19648646"
+    },
+    {
+      "page": 17,
+      "section": "Amortizaciones Neto / RUBRO Acumuladas Del Acumuladas resultante / al inicio ejercicio (4) al cierre",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total 2015",
+      "target": "2.680.237",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "1530"
+    },
+    {
+      "page": 17,
+      "section": "Amortizaciones Neto / RUBRO Acumuladas Del Acumuladas resultante / al inicio ejercicio (4) al cierre",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total 2015",
+      "target": "61.154.146",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "-514517"
+    },
+    {
+      "page": 17,
+      "section": "Amortizaciones Neto / RUBRO Acumuladas Del Acumuladas resultante / al inicio ejercicio (4) al cierre",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total 2015",
+      "target": "70.768.753",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "-19650176"
+    },
+    {
+      "page": 17,
+      "section": "Amortizaciones Neto / RUBRO Acumuladas Del Acumuladas resultante / al inicio ejercicio (4) al cierre",
+      "likelyRelevant": false,
+      "totalLabel": "Total 2014",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 18,
+      "section": "e) ACTIVOS INTANGIBLES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total -",
+      "target": "25.121.345",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-25121319.879"
+    },
+    {
+      "page": 18,
+      "section": "Plantel profesional de fútbol - Anexo | 97.335.593 67.755.656 / Regularización valuación Plantel Profesional de fútbol / Ejercicio 2011 - Nota 2.h) - (161.787) / Regularización valuación Plantel Profesional de fútbol / Ejercicio 2015 - Nota 2.h) (16.134.791 -",
+      "likelyRelevant": false,
+      "totalLabel": "Subtotal",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 18,
+      "section": "Plantel profesional de fútbol - Anexo | 97.335.593 67.755.656 / Regularización valuación Plantel Profesional de fútbol / Ejercicio 2011 - Nota 2.h) - (161.787) / Regularización valuación Plantel Profesional de fútbol / Ejercicio 2015 - Nota 2.h) (16.134.791 -",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "81.227.785",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-81200802"
+    },
+    {
+      "page": 18,
+      "section": "Plantel profesional de fútbol - Anexo | 97.335.593 67.755.656 / Regularización valuación Plantel Profesional de fútbol / Ejercicio 2011 - Nota 2.h) - (161.787) / Regularización valuación Plantel Profesional de fútbol / Ejercicio 2015 - Nota 2.h) (16.134.791 -",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "67.620.852",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-67593869"
+    },
+    {
+      "page": 19,
+      "section": "Club Atlético VÉLEZ SARSFIELD / Notas a los Estados Contables al 30 de junio de 2015 / Comparativas con el ejercicio anterior (cifras en pesos, reexpresadas según Nota 1.b) / — 30/06/2015 _3O/OG/2014",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "149.036.862",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "Club Atlético VÉLEZ SARSFIELD / Notas a los Estados Contables al 30 de junio de 2015 / Comparativas con el ejercicio anterior (cifras en pesos, reexpresadas según Nota 1.b) / — 30/06/2015 _3O/OG/2014",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "147.528.807",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "(7) Incluye: / Rofinogro SADP - Rangers de Talca (Caraglio) - Anexo VI 1.352.508 - / Club Deportivo River Plate - Ecuador (Velez Cedeño) — / Anexo VÍ 1.817.600 - / Celta de Vigo (Augusto Fernández) - Anexo VI 253.488 -",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "14.944.516",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-1360692"
+    },
+    {
+      "page": 19,
+      "section": "(7) Incluye: / Rofinogro SADP - Rangers de Talca (Caraglio) - Anexo VI 1.352.508 - / Club Deportivo River Plate - Ecuador (Velez Cedeño) — / Anexo VÍ 1.817.600 - / Celta de Vigo (Augusto Fernández) - Anexo VI 253.488 -",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "17.751.058",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-2062904"
+    },
+    {
+      "page": 19,
+      "section": "2. No Corriente",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "23.887.407",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "694953"
+    },
+    {
+      "page": 19,
+      "section": "2. No Corriente",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "30.794.716",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-1123904"
+    },
+    {
+      "page": 20,
+      "section": "Dass -Umbro 2.250.000 =",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "9.159.396",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-7192837"
+    },
+    {
+      "page": 20,
+      "section": "Dass -Umbro 2.250.000 =",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "17.698.074",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-15925622"
+    },
+    {
+      "page": 20,
+      "section": "2. No Corriente / Recitales a devengar en moneda local 1.237.719 - / Coca Cola Femsa 1.749.996 .",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "2.987.715.",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "276653.013"
+    },
+    {
+      "page": 20,
+      "section": "NOTA 5 - COMPOSICIÓN DE ALGUNOS RUBROS DEL ESTADO DE RECURSOS Y / GASTOS / a) AMORTIZACIONES",
+      "likelyRelevant": true,
+      "totalLabel": "Subtotal",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 20,
+      "section": "NOTA 5 - COMPOSICIÓN DE ALGUNOS RUBROS DEL ESTADO DE RECURSOS Y / GASTOS / a) AMORTIZACIONES",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 1 valor(es) del segmento no parecen números (ej. \"3.d)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 20,
+      "section": "NOTA 5 - COMPOSICIÓN DE ALGUNOS RUBROS DEL ESTADO DE RECURSOS Y / GASTOS / a) AMORTIZACIONES",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "39.453.974",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-36773737"
+    },
+    {
+      "page": 21,
+      "section": "b) RESULTADOS FINANCIEROS Y POR TENENCIA",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "(36.382.769)",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "b) RESULTADOS FINANCIEROS Y POR TENENCIA",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "7.509.551",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "Valor residual de bajas por ventas de futbolistas / profesionales 33.836.549 47.637.171 / Cambios en activos operativos:",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "338.001.521",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-317732630"
+    },
+    {
+      "page": 21,
+      "section": "Valor residual de bajas por ventas de futbolistas / profesionales 33.836.549 47.637.171 / Cambios en activos operativos:",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 1 valor(es) del segmento no parecen números (ej. \"(56.979.298).\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 22,
+      "section": "(Disminución) aumento de deudas Asociación del Fútbol",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "(310.570.579)",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "326941038"
+    },
+    {
+      "page": 22,
+      "section": "(Disminución) aumento de deudas Asociación del Fútbol",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "(226.747.687)",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "253282402"
+    },
+    {
+      "page": 27,
+      "section": "b) INGRESOS GENERADOS EN EL EJERCICIO POR LAS OPERACIONES DE Anexo | / TRANSFERENCIA Y PRÉSTAMO",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total 2015 —",
+      "target": "58.366.361",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-66039637"
+    },
+    {
+      "page": 27,
+      "section": "b) INGRESOS GENERADOS EN EL EJERCICIO POR LAS OPERACIONES DE Anexo | / TRANSFERENCIA Y PRÉSTAMO",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total 2015 —",
+      "target": "(1.713.152)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "23566412"
+    },
+    {
+      "page": 27,
+      "section": "b) INGRESOS GENERADOS EN EL EJERCICIO POR LAS OPERACIONES DE Anexo | / TRANSFERENCIA Y PRÉSTAMO",
+      "likelyRelevant": true,
+      "totalLabel": "Total 2014",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 35,
+      "section": "MMMM |",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales 2015 3.506.052| 2.049.653 | (908.440 |",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"4.737.261|\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 35,
+      "section": "MMMM |",
+      "likelyRelevant": false,
+      "totalLabel": "Totales 2014 1.569.516] 2.222.998 (2)[ (196.462) (1)|",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 52,
+    "results": [
+      {
+        "label": "Para fines generales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines generales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines específicos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines específicos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines diversos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines diversos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Específicos de sectores - Anexo ll",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Específicos de sectores - Anexo ll",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generales de administración - Anexo IV",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generales de administración - Anexo IV",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizaciones - Nota",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizaciones - Nota",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Nota",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Nota",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(DÉFICIT) SUPERÁVIT DEL EJERCICIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(DÉFICIT) SUPERÁVIT DEL EJERCICIO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "F.C. Internacionale Milano (Venta Álvarez) - Anexo VI -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "F.C. Internacionale Milano (Venta Álvarez) - Anexo VI -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Real Club Celta de Vigo (Venta A. Femández) - Anexo VI -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Real Club Celta de Vigo (Venta A. Femández) - Anexo VI -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Chiapas Fútbol Club (Venta Bella) - Anexo VI",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Chiapas Fútbol Club (Venta Bella) - Anexo VI",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Málaga Fútbol Club (Venta Rescaldani) - Anexo VI -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Málaga Fútbol Club (Venta Rescaldani) - Anexo VI -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FC Porto - Portugal (Venta Otamendi) - Anexo VI -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FC Porto - Portugal (Venta Otamendi) - Anexo VI -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Clube De Regatas Do Flamengo (Via. Canteros) - Anexo VI -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Clube De Regatas Do Flamengo (Via. Canteros) - Anexo VI -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Derechos de televisación -",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Derechos de televisación",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Derechos de televisación -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Recitales.a devengar en moneda extranjera - Anexo VI -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Recitales.a devengar en moneda extranjera - Anexo VI -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad Estática Internacional",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad Estática Internacional",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Coca Cola Femsa",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Coca Cola Femsa",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Samsung - Anexo VI",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Samsung - Anexo VI",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bienes de uso - Nota",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bienes de uso - Nota",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "depreciation",
+        "matchedLabel": "Amortización de bienes de uso",
+        "similarity": 50
+      },
+      {
+        "label": "Intereses perdidos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses perdidos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses deudas previsionales e impositivas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses deudas previsionales e impositivas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultados por tenencia jugadores prof. propios - Anexo |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultados por tenencia jugadores prof. propios - Anexo |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Créditos incobrables",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Créditos incobrables",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencias de cambio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencias de cambio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos para fines generales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos para fines generales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos para fines específicos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos para fines específicos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Disminución (aumento) de créditos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Disminución (aumento) de créditos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos generales de administración",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos generales de administración",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos específicos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos específicos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de sueldos y cargas sociales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de sueldos y cargas sociales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pratto, Lucas 30.489.936 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pratto, Lucas 30.489.936 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otamendi, Nicolás Hernán (1) 963.400 - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otamendi, Nicolás Hernán (1) 963.400 - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "cobranzas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "cobranzas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cargas sociales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cargas sociales",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Cargas sociales (administración)",
+        "similarity": 67
+      },
+      {
+        "label": "Honorarios y retribuciones por servicios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Honorarios y retribuciones por servicios",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Honorarios y retribuciones por servicios (sectores)",
+        "similarity": 80
+      },
+      {
+        "label": "Gastos y comisiones bancarias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos y comisiones bancarias",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos y comisiones bancarias",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Papeleria, impresiones y útiles de escritorio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Papeleria, impresiones y útiles de escritorio",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Papelería, impresiones y útiles de escritorio (sectores)",
+        "similarity": 80
+      },
+      {
+        "label": "Seguros, juicios y gastos relacionados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Seguros, juicios y gastos relacionados",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Seguros, juicios y gastos relacionados",
+        "years": [
+          "2015",
+          "2016",
+          "2017",
+          "2018",
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Viáticos, comidas y refrigerios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Viáticos, comidas y refrigerios",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Viáticos, comidas y refrigerios (sectores)",
+        "similarity": 75
+      },
+      {
+        "label": "Reparaciones y mantenimiento",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reparaciones y mantenimiento",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Reparaciones y mantenimiento (sectores)",
+        "similarity": 67
+      },
+      {
+        "label": "Seguridad y vigilancia",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Seguridad y vigilancia",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Seguridad y vigilancia (sectores)",
+        "similarity": 67
+      },
+      {
+        "label": "Servicios públicos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Servicios públicos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Servicios públicos (sectores)",
+        "similarity": 67
+      },
+      {
+        "label": "Varios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Varios",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Varios",
+        "years": [
+          "2016",
+          "2017"
+        ]
+      },
+      {
+        "label": "[Teta area]",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "[Teta area]",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Canteros) USS - . -|",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Canteros) USS - . -|",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "* Indemnización Pellerano U$S",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "* Indemnización Pellerano U$S",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Derechos de form. y mec. solidario a cobrar U$s",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Derechos de form. y mec. solidario a cobrar U$s",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Eur",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Eur",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "* Recitales a devengar USs - - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "* Recitales a devengar USs - - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "* Samsung USS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "* Samsung USS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "3 Total Pasivo PT” Y | tsrorss]",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "3 Total Pasivo PT” Y | tsrorss]",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Vélez Sarsfield",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 12,
+      "line": "a) Moneda extranjera"
+    },
+    {
+      "page": 12,
+      "line": "Los activos y pasivos denominados en moneda extranjera fueron convertidos a pesos utilizando los tipos de cambio comprador +:"
+    },
+    {
+      "page": 18,
+      "line": "(6) Al 30 de junio de 2014 incluía 9.561.635 en moneda extranjera - Anexo VI"
+    },
+    {
+      "page": 20,
+      "line": "Recitales.a devengar en moneda extranjera - Anexo VI - 5.806.837"
+    },
+    {
+      "page": 24,
+      "line": "cido dicho plazo la cláusula de rescisión se estableció en U$S 5.000.000 a favor del Club, la cual podrá ser abonada en pesos a la cotización"
+    },
+    {
+      "page": 33,
+      "line": "Activos y pasivos en moneda extranjera"
+    },
+    {
+      "page": 33,
+      "line": "moneda extranjera | vigente moneda moneda"
+    },
+    {
+      "page": 34,
+      "line": "Activos y pasivos en moneda extranjera"
+    },
+    {
+      "page": 34,
+      "line": "moneda extranjera moneda moneda"
+    }
+  ],
+  "warnings": [
+    "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "27 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "17 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

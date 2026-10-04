@@ -1,0 +1,293 @@
+{
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2017.md",
+ "generatedAt": "2026-09-30T22:48:47.873Z",
+ "rubrosHuella": "a6baf3726e052bbcbf9bea3a91643ee94d6fd945",
+ "rubros": [
+  {
+   "label": "Servicios básicos",
+   "lado": "expense",
+   "page": 69,
+   "section": "-                - / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesorías",
+   "lado": "expense",
+   "page": 69,
+   "section": "-                - / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 69,
+   "section": "-                - / -                -",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 69,
+   "section": "-                - / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenciones",
+   "lado": "expense",
+   "page": 69,
+   "section": "-                - / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración administración",
+   "lado": "expense",
+   "page": 69,
+   "section": "-                - / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos de administración",
+   "lado": "expense",
+   "page": 69,
+   "section": "-                - / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos de concentración traslados y otros",
+   "lado": "expense",
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 23 . COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros costos",
+   "lado": "expense",
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 23 . COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros activos financieros corrientes",
+   "lado": null,
+   "page": 70,
+   "section": "25. DIFERENCIA DE CAMBIO",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Deudores comerciales y otras cuentas por cobrar corrientes",
+   "lado": null,
+   "page": 70,
+   "section": "25. DIFERENCIA DE CAMBIO",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+   "lado": null,
+   "page": 70,
+   "section": "25. DIFERENCIA DE CAMBIO",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Celfin",
+   "lado": null,
+   "page": 70,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. INGRESOS FINANCIEROS",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 68,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Club(**)",
+   "lado": "revenue",
+   "page": 68,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por arriendo pase de jugadores(***) -",
+   "lado": "revenue",
+   "page": 68,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "player_sales",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por publicidad",
+   "lado": "revenue",
+   "page": 68,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Prov.PPUA",
+   "lado": "revenue",
+   "page": 68,
+   "section": "pertenencia del Club que los recibe. / El siguiente es el detalle de los otros ingresos por función: / 01.01.2017            01.01.2016 / 31.12.2017            31.12.2016 / Detalle de otros ingresos, por función               M$                    M$",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 68,
+   "section": "pertenencia del Club que los recibe. / El siguiente es el detalle de los otros ingresos por función: / 01.01.2017            01.01.2016 / 31.12.2017            31.12.2016 / Detalle de otros ingresos, por función               M$                    M$",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas jugadores",
+   "lado": "expense",
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 23 . COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Contribuciones",
+   "lado": "expense",
+   "page": 69,
+   "section": "-                - / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1116
+  },
+  {
+   "label": "Amortización Activos en concesión",
+   "lado": "expense",
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 23 . COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_amortisation",
+     0.99
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Remuneración plantel profesional y cuerpo técnico",
+   "lado": "expense",
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 23 . COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Amortización pases jugadores profesionales",
+   "lado": "expense",
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 23 . COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1080
+  }
+ ]
+}

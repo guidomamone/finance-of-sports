@@ -1,0 +1,2030 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-30.06.2018.md",
+ "generatedAt": "2026-09-30T04:30:26.732Z",
+ "rubros": [
+  {
+   "label": "4) incrementi di immobilizzazioni per lavori interni",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "admin_general_expense",
+     0.15000000000000002
+    ],
+    [
+     "depreciation",
+     0.11
+    ]
+   ],
+   "tokens": 1326
+  },
+  {
+   "label": "7) per servizi",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "admin_general_expense",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "lump_football_operations_expense",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1315
+  },
+  {
+   "label": "1) ricavi delle vendite e delle prestazioni",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "lump_football_operations",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.87
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "PARMA CALCIO SERVIZI SRL",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "other_income",
+     0.1
+    ]
+   ],
+   "tokens": 1251
+  },
+  {
+   "label": "Altri",
+   "lado": null,
+   "page": 37,
+   "section": "## Proventi e oneri finanziari / ### Ripartizione degli interessi e altri oneri finanziari per tipologia di debiti",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "8) per godimento di beni di terzi",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "other_income",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "NUOVO INIZIO SRL",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1249
+  },
+  {
+   "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "a) salari e stipendi",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "b) oneri sociali",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "member_dues",
+     0.02
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "e) altri costi",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "b) ammortamento delle immobilizzazioni materiali",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "depreciation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "depreciation",
+     0.98
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_amortisation",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_amortisation",
+     0.62
+    ],
+    [
+     "depreciation",
+     0.23
+    ],
+    [
+     "player_amortisation",
+     0.14
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "player_impairment",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "c) trattamento di fine rapporto",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "wages_squad",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "wages_squad",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1526
+  },
+  {
+   "label": "14) oneri diversi di gestione",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "da imprese controllate",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Differenza tra valore e costi della produzione (A - B)",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "lump_football_operations",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "21) Utile (perdita) dell'esercizio",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "verso imprese controllanti",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "other_income",
+     0.18000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Risultato prima delle imposte (A - B + - C + - D)",
+   "lado": null,
+   "page": 13,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_income",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ]
+   ],
+   "tokens": 1333
+  },
+  {
+   "label": "Costo",
+   "lado": "expense",
+   "page": 23,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni immateriali / #### Movimenti delle immobilizzazioni immateriali",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Ammortamenti (Fondo ammortamento)",
+   "lado": "expense",
+   "page": 23,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni immateriali / #### Movimenti delle immobilizzazioni immateriali",
+   "choice": "other_amortisation",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_amortisation",
+     0.58
+    ],
+    [
+     "depreciation",
+     0.29
+    ],
+    [
+     "player_amortisation",
+     0.1
+    ]
+   ],
+   "tokens": 839
+  },
+  {
+   "label": "Valore di bilancio",
+   "lado": "expense",
+   "page": 23,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni immateriali / #### Movimenti delle immobilizzazioni immateriali",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "other_amortisation",
+     0.14
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 835
+  },
+  {
+   "label": "Incrementi per acquisizioni",
+   "lado": "expense",
+   "page": 23,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni immateriali / #### Movimenti delle immobilizzazioni immateriali",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Ammortamento dell'esercizio",
+   "lado": "expense",
+   "page": 23,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni immateriali / #### Movimenti delle immobilizzazioni immateriali",
+   "choice": "other_amortisation",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_amortisation",
+     0.73
+    ],
+    [
+     "player_amortisation",
+     0.17
+    ],
+    [
+     "depreciation",
+     0.09
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Valore di fine esercizio",
+   "lado": "expense",
+   "page": 29,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Fondi per rischi e oneri",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "exceptional_items",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 811
+  },
+  {
+   "label": "Altre variazioni",
+   "lado": "expense",
+   "page": 29,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Fondi per rischi e oneri",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "exceptional_items",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 808
+  },
+  {
+   "label": "Valore di inizio esercizio",
+   "lado": "expense",
+   "page": 29,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Fondi per rischi e oneri",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "exceptional_items",
+     0.06999999999999999
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 812
+  },
+  {
+   "label": "-Gare Ufficiali Coppa Italia",
+   "lado": null,
+   "page": 32,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ## Valore della produzione",
+   "choice": "match_organisation_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.74
+    ],
+    [
+     "matchday_competition",
+     0.09
+    ],
+    [
+     "competition_bonus",
+     0.07
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "-Gare Ufficiali Campionato",
+   "lado": null,
+   "page": 32,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ## Valore della produzione",
+   "choice": "match_organisation_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.73
+    ],
+    [
+     "matchday_competition",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "Biglietti museo",
+   "lado": null,
+   "page": 32,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ## Valore della produzione",
+   "choice": "stadium_other",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "stadium_other",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "other_income",
+     0.29
+    ]
+   ],
+   "tokens": 1324
+  },
+  {
+   "label": "Abbonamenti",
+   "lado": null,
+   "page": 32,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ## Valore della produzione",
+   "choice": "season_tickets",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "season_tickets",
+     0.99
+    ],
+    [
+     "member_dues",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "Ricavi merchandising",
+   "lado": null,
+   "page": 32,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ## Valore della produzione",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Incrementi Imm. Lav. Interni",
+   "lado": "revenue",
+   "page": 32,
+   "section": "I ricavi delle vendite e delle prestazioni sono così suddivisi:",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ],
+    [
+     "player_sales",
+     0.05
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "Altri Ricavi e proventi",
+   "lado": "revenue",
+   "page": 32,
+   "section": "I ricavi delle vendite e delle prestazioni sono così suddivisi:",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Ricavi vendite e prestazioni",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Suddivisione dei ricavi delle vendite e delle prestazioni per categoria di attività",
+   "choice": "lump_football_operations",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.88
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "-Gare Amichevoli e tornei",
+   "lado": null,
+   "page": 32,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ## Valore della produzione",
+   "choice": "match_organisation_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.68
+    ],
+    [
+     "other_income",
+     0.1
+    ],
+    [
+     "matchday_competition",
+     0.07
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Costi per tesserati",
+   "lado": "expense",
+   "page": 34,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "wages_squad",
+     0.16
+    ]
+   ],
+   "tokens": 810
+  },
+  {
+   "label": "Costi specifici tecnici",
+   "lado": "expense",
+   "page": 34,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 811
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "lado": "expense",
+   "page": 34,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.91
+    ],
+    [
+     "match_organisation_expense",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 810
+  },
+  {
+   "label": "Costi vitto, alloggio, locomozione gare",
+   "lado": "expense",
+   "page": 34,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 818
+  },
+  {
+   "label": "Assicurative e previdenziali",
+   "lado": "expense",
+   "page": 34,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "wages_squad",
+     0.13
+    ]
+   ],
+   "tokens": 812
+  },
+  {
+   "label": "Servizio biglietteria, controllo ingressi",
+   "lado": "expense",
+   "page": 34,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
+   "choice": "match_organisation_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 815
+  },
+  {
+   "label": "Spese varie per organizzazioni gare",
+   "lado": "expense",
+   "page": 36,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Oneri diversi di gestione*",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 812
+  },
+  {
+   "label": "Tasse iscrizione gare",
+   "lado": "expense",
+   "page": 36,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Oneri diversi di gestione*",
+   "choice": "match_organisation_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 808
+  },
+  {
+   "label": "Amministrative, pubblicitarie e generali",
+   "lado": "expense",
+   "page": 34,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi per prestazioni di servizi*",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 816
+  },
+  {
+   "label": "Minusvalenze Cessione Calciatori",
+   "lado": "expense",
+   "page": 36,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Oneri diversi di gestione*",
+   "choice": "other_expenses",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "player_impairment",
+     0.28
+    ],
+    [
+     "exceptional_items",
+     0.28
+    ]
+   ],
+   "tokens": 813
+  },
+  {
+   "label": "Altri oneri gestione Calciatori",
+   "lado": "expense",
+   "page": 36,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Oneri diversi di gestione*",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "wages_squad",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ]
+   ],
+   "tokens": 811
+  },
+  {
+   "label": "Costi acquisizione temporanea prestazione calciatori",
+   "lado": "expense",
+   "page": 36,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Oneri diversi di gestione*",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "lump_football_operations_expense",
+     0.36
+    ],
+    [
+     "wages_squad",
+     0.1
+    ]
+   ],
+   "tokens": 816
+  },
+  {
+   "label": "Altri oneri gestione",
+   "lado": "expense",
+   "page": 36,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Oneri diversi di gestione*",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 808
+  },
+  {
+   "label": "Costi della produzione (costi non finanziari)",
+   "lado": "revenue",
+   "page": 46,
+   "section": "Il conto economico presenta, in sintesi, i seguenti valori:",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ],
+    [
+     "other_sports",
+     0.01
+    ]
+   ],
+   "tokens": 964
+  },
+  {
+   "label": "Differenza",
+   "lado": "revenue",
+   "page": 46,
+   "section": "Il conto economico presenta, in sintesi, i seguenti valori:",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "Proventi e oneri finanziari",
+   "lado": "revenue",
+   "page": 46,
+   "section": "Il conto economico presenta, in sintesi, i seguenti valori:",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Risultato prima delle imposte",
+   "lado": "revenue",
+   "page": 46,
+   "section": "Il conto economico presenta, in sintesi, i seguenti valori:",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "lump_football_operations",
+     0.18
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 885
+  },
+  {
+   "label": "Imposte sul reddito",
+   "lado": "revenue",
+   "page": 46,
+   "section": "Il conto economico presenta, in sintesi, i seguenti valori:",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 898
+  },
+  {
+   "label": "Baraye Yves Bertand",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "wages_squad",
+     0.06
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Utile (Perdita) dell'esercizio",
+   "lado": "revenue",
+   "page": 46,
+   "section": "Il conto economico presenta, in sintesi, i seguenti valori:",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Calaio' Emanuele",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "wages_squad",
+     0.41
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 798
+  },
+  {
+   "label": "Ceravolo Giovanni Fabio",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "wages_squad",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Barillà Antonino",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "wages_squad",
+     0.06
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Carriero Giuseppe Mattia",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "wages_squad",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Dezi Jacopo",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "wages_squad",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Di Gaudio Antonio",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "wages_squad",
+     0.24000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Evacuo Felice",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "exceptional_items",
+     0.13
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Gagliolo Riccardo",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 798
+  },
+  {
+   "label": "Frediani Marco",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "wages_squad",
+     0.09
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "Galuppini Francesco",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "wages_squad",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Gazzola Marcello",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "wages_squad",
+     0.09
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Lescano Facundo",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "wages_squad",
+     0.38
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Iacoponi Simone",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.69
+    ],
+    [
+     "wages_squad",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Longo Sebastiano",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "wages_squad",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Mastaj Davide",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0.11
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Mazzocchi Pasquale",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.6799999999999999
+    ],
+    [
+     "wages_squad",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 798
+  },
+  {
+   "label": "Pinto Giovanni",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0.09
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "Nocciolini Manuel",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "wages_squad",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Saporetti Lorenzo",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "wages_squad",
+     0.18
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Ramos Juan Manuel",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Scaglia Luigi Albero",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ],
+    [
+     "wages_squad",
+     0.07
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Ricci Giacomo",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "wages_squad",
+     0.1
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Scavone Manuel",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "wages_squad",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Scozzarella Matteo",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "wages_squad",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Silingardi Luca",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "wages_squad",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Simonetti Lorenzo",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.15000000000000002
+    ],
+    [
+     "wages_squad",
+     0.11
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Vacca Antonio Junior",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "wages_squad",
+     0.26
+    ],
+    [
+     "youth_other_sports_expense",
+     0.15
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Giocatori settore Giovanile",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.94
+    ],
+    [
+     "wages_squad",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 798
+  },
+  {
+   "label": "Da Cruz Alessio",
+   "lado": "expense",
+   "page": 50,
+   "section": "APPENDICE PER MANUALE LICENZA UEFA (*)",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "wages_squad",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 796
+  }
+ ]
+}

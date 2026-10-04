@@ -1,0 +1,404 @@
+{
+ "md": "Clubes/Colombia/Alianza FC/estados-financieros-2022.md",
+ "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2022.pdf",
+ "club": "alianza-fc",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:57:49.275Z",
+ "tieOuts": {
+  "cierran": 25,
+  "noCierran": 0
+ },
+ "warnings": [
+  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 42,
+  "notasUsadas": []
+ },
+ "ladoConocido": 38,
+ "rubros": [
+  {
+   "label": "OPERACIONALES",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    11818751.94
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Taquilla",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    740400.25
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Escuelas de Formacion Deportiva",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    6926.5
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    1276124.79
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Dimayor",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    5184369.715
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Venta Derechos Deportivos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    3422021.332
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Prestamos Derechos Deportivos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    350000
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Federacion Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    630780
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Venta articulos deportivos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    24075.686
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Actividades Conexas",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    163859.667
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Subsidio PAEF",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    20194
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "NO OPERACIONALES",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    113668.381
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Arrendamiento",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    12890.757
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Recuperaciones",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    99520.401
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Financieros",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    28.413
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Ingresos por Diferencia en Cambio",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    1172.914
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Diversos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "POLÍTICAS CUENTAS DE INGRESO",
+   "values": [
+    55.896
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    216874.54
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    84680.146
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    38538.546
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    258838.403
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    2251.6
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    2944.271
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Gastos de viaje",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    523147.237
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    2486205.216
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    116426.796
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "OPERACIONALES DE VENTA",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    5044808.512
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Gastos de personal",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    4678239.116
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Amortizacion de Derechos Deportivos",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    366569.396
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "GASTOS NO OPERACIONALES",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    1058865.61
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Financieros",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    240320.794
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Gastos Extraordinarios",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    128519.304
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Gastos Diversos",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    446936.761
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Impuesto de Renta (año anterior)",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    238008.751
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Costos (De Articulos Deportivos)",
+   "lado": "expense",
+   "page": 11,
+   "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+   "values": [
+    5080
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "GASTOS OPERACIONALES",
+   "lado": "expense",
+   "page": 10,
+   "section": "GASTOS",
+   "values": [
+    6221677.842
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Gastos de personal",
+   "lado": "expense",
+   "page": 10,
+   "section": "GASTOS",
+   "values": [
+    1955181.596
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 10,
+   "section": "GASTOS",
+   "values": [
+    536589.491
+   ],
+   "origen": "estado 17"
+  }
+ ]
+}

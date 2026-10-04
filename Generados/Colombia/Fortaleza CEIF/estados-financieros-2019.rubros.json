@@ -1,0 +1,415 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.md",
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf",
+ "club": "fortalezaceif-co",
+ "year": 2019,
+ "generatedAt": "2026-10-02T20:51:22.897Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Venta De Derechos Deportivos (1)",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\"",
+   "values": [
+    1096.48
+   ]
+  },
+  {
+   "label": "Derechos De Televisión Nacional (2)",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\"",
+   "values": [
+    827.456
+   ]
+  },
+  {
+   "label": "Venta De Boletería (3)",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\"",
+   "values": [
+    467.677
+   ]
+  },
+  {
+   "label": "Auxilio Hotelero (4)",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\"",
+   "values": [
+    112.286
+   ]
+  },
+  {
+   "label": "Infraestructura",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\"",
+   "values": [
+    94
+   ]
+  },
+  {
+   "label": "Auxilio Arbitraje",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\"",
+   "values": [
+    54.063
+   ]
+  },
+  {
+   "label": "Aux Mejoramiento De Gestión Organizacional Clubes",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\"",
+   "values": [
+    27.273
+   ]
+  },
+  {
+   "label": "Auxilio Análisis Deportivo",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\"",
+   "values": [
+    21
+   ]
+  },
+  {
+   "label": "Auxilio Transporte",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\"",
+   "values": [
+    20.683
+   ]
+  },
+  {
+   "label": "Federación Colombiana De Futbol",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\"",
+   "values": [
+    19.038
+   ]
+  },
+  {
+   "label": "Convenio Entre Clubes",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\"",
+   "values": [
+    16.807
+   ]
+  },
+  {
+   "label": "Propaganda Y Publicidad",
+   "lado": "revenue",
+   "page": 21,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\"",
+   "values": [
+    0.3
+   ]
+  },
+  {
+   "label": "Venta De Indumentaria (1)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Venta De Productos (2)\"",
+   "values": [
+    214.991
+   ]
+  },
+  {
+   "label": "Devoluciones De Productos Comercializados",
+   "lado": "revenue",
+   "page": 22,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Venta De Productos (2)\"",
+   "values": [
+    -1.176
+   ]
+  },
+  {
+   "label": "Por Incumplimiento De Contratos (1)",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Total Otros Ingresos\"",
+   "values": [
+    265.62
+   ]
+  },
+  {
+   "label": "Arrendamientos De Inmuebles (2)",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Total Otros Ingresos\"",
+   "values": [
+    150.073
+   ]
+  },
+  {
+   "label": "Intereses Por Mora (3)",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Total Otros Ingresos\"",
+   "values": [
+    55.745
+   ]
+  },
+  {
+   "label": "Diferencia En Cambio",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Total Otros Ingresos\"",
+   "values": [
+    13.229
+   ]
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Total Otros Ingresos\"",
+   "values": [
+    5.499
+   ]
+  },
+  {
+   "label": "Reintegro De Otros Costos Y Gastos",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Total Otros Ingresos\"",
+   "values": [
+    2.052
+   ]
+  },
+  {
+   "label": "Otros Ingresos",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Total Otros Ingresos\"",
+   "values": [
+    0.84
+   ]
+  },
+  {
+   "label": "Ajuste Al Peso",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Total Otros Ingresos\"",
+   "values": [
+    0.011
+   ]
+  },
+  {
+   "label": "Total Costo de Ventas",
+   "lado": "expense",
+   "page": 22,
+   "section": "estado",
+   "values": [
+    137.713
+   ]
+  },
+  {
+   "label": "Gastos Laborales",
+   "lado": "expense",
+   "page": 22,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "values": [
+    1162.652
+   ]
+  },
+  {
+   "label": "Gastos de Viaje",
+   "lado": "expense",
+   "page": 23,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "values": [
+    180.573
+   ]
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 23,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "values": [
+    53.7
+   ]
+  },
+  {
+   "label": "Prestación de Servicios Deportivos",
+   "lado": "expense",
+   "page": 23,
+   "section": "nota que desglosa \"Total Gastos de Ventas\"",
+   "values": [
+    214.465
+   ]
+  },
+  {
+   "label": "Gastos Laborales",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "values": [
+    526.714
+   ]
+  },
+  {
+   "label": "Gastos por Honorarios",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "values": [
+    151.847
+   ]
+  },
+  {
+   "label": "Gastos por Impuestos",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "values": [
+    35.491
+   ]
+  },
+  {
+   "label": "Gastos por Arrendamientos",
+   "lado": "expense",
+   "page": 24,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "values": [
+    182.886
+   ]
+  },
+  {
+   "label": "Gastos por Seguros",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "values": [
+    5.439
+   ]
+  },
+  {
+   "label": "Gastos por Servicios",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "values": [
+    385.986
+   ]
+  },
+  {
+   "label": "Gastos por Legales",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "values": [
+    7.361
+   ]
+  },
+  {
+   "label": "Gastos por Mantenimiento",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "values": [
+    62.566
+   ]
+  },
+  {
+   "label": "Gastos de Viajes",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "values": [
+    5.099
+   ]
+  },
+  {
+   "label": "Gastos por Depreciación",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "values": [
+    47.474
+   ]
+  },
+  {
+   "label": "Gastos por Amortización",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "values": [
+    127.617
+   ]
+  },
+  {
+   "label": "Gastos Diversos",
+   "lado": "expense",
+   "page": 25,
+   "section": "nota que desglosa \"Total Gastos de Administración\"",
+   "values": [
+    85.967
+   ]
+  },
+  {
+   "label": "Gastos No Deducibles (1)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Total Otros Gastos\"",
+   "values": [
+    64.674
+   ]
+  },
+  {
+   "label": "Donaciones (2)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Total Otros Gastos\"",
+   "values": [
+    5
+   ]
+  },
+  {
+   "label": "Multas Sanciones Y Litigios (3)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Total Otros Gastos\"",
+   "values": [
+    2.79
+   ]
+  },
+  {
+   "label": "Indemnizaciones",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Total Otros Gastos\"",
+   "values": [
+    2.734
+   ]
+  },
+  {
+   "label": "Impuestos Asumidos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Total Otros Gastos\"",
+   "values": [
+    1.412
+   ]
+  },
+  {
+   "label": "Ajuste Al Peso",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Total Otros Gastos\"",
+   "values": [
+    0.015
+   ]
+  }
+ ]
+}

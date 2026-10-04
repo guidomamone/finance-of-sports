@@ -1,0 +1,418 @@
+{
+  "md": "Clubes/Bélgica/Club Brugge/jaarrekening-2018-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Club Brugge/jaarrekening-2018-06-30-individual.pdf",
+  "club": "clubbrugge-be",
+  "year": 2018,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:54:46.392Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 36,
+    "notasUsadas": []
+  },
+  "ladoConocido": 29,
+  "rubros": [
+    {
+      "label": "Bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.007076
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos de explotación"
+    },
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.00007
+      ],
+      "origen": "estado 8",
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Voorraad goederen in bewerking en gereed product en bestellingen in uitvoering: toename (afname) (+)/(-)",
+      "lado": null,
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000071
+      ],
+      "origen": "estado 8",
+      "glosa": "Variación de existencias de productos en curso y terminados y pedidos en curso: aumento (disminución) (+)/(-)"
+    },
+    {
+      "label": "Geproduceerde vaste activa",
+      "lado": null,
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000072
+      ],
+      "origen": "estado 8",
+      "glosa": "Trabajos realizados por la empresa para su activo"
+    },
+    {
+      "label": "Andere bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000074
+      ],
+      "origen": "estado 8",
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000076
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos de explotación no recurrentes"
+    },
+    {
+      "label": "Bedrijfskosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.006066
+      ],
+      "origen": "estado 8",
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "Handelsgoederen, grond- en hulpstoffen",
+      "lado": null,
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.00006
+      ],
+      "origen": "estado 8",
+      "glosa": "Mercaderías, materias primas y materias auxiliares"
+    },
+    {
+      "label": "Aankopen",
+      "lado": null,
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.006008
+      ],
+      "origen": "estado 8",
+      "glosa": "Aprovisionamientos"
+    },
+    {
+      "label": "Voorraad: afname (toename) (+)/(-)",
+      "lado": null,
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000609
+      ],
+      "origen": "estado 8",
+      "glosa": "Existencias: disminución (aumento) (+)/(-)"
+    },
+    {
+      "label": "Diensten en diverse goederen",
+      "lado": null,
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000061
+      ],
+      "origen": "estado 8",
+      "glosa": "Servicios y otros bienes"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000062
+      ],
+      "origen": "estado 8",
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.00063
+      ],
+      "origen": "estado 8",
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": null,
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.006314
+      ],
+      "origen": "estado 8",
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.006358
+      ],
+      "origen": "estado 8",
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.006408
+      ],
+      "origen": "estado 8",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Als herstructureringskosten geactiveerde bedrijfskosten (-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000649
+      ],
+      "origen": "estado 8",
+      "glosa": "Gastos de explotación activados como gastos de reestructuración (-)"
+    },
+    {
+      "label": "Niet-recurrente bedrijfskosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000066
+      ],
+      "origen": "estado 8",
+      "glosa": "Gastos de explotación no recurrentes"
+    },
+    {
+      "label": "Financiële opbrengsten",
+      "lado": "revenue",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.007576
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Recurrente financiële opbrengsten",
+      "lado": "revenue",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000075
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos financieros recurrentes"
+    },
+    {
+      "label": "Opbrengsten uit financiële vaste activa",
+      "lado": "revenue",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.00075
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos del inmovilizado financiero"
+    },
+    {
+      "label": "Opbrengsten uit vlottende activa",
+      "lado": "revenue",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000751
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos del activo corriente"
+    },
+    {
+      "label": "Andere financiële opbrengsten",
+      "lado": "revenue",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.007529
+      ],
+      "origen": "estado 8",
+      "glosa": "Otros ingresos financieros"
+    },
+    {
+      "label": "Niet-recurrente financiële opbrengsten",
+      "lado": "revenue",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000076
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos financieros no recurrentes"
+    },
+    {
+      "label": "Financiële kosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.006566
+      ],
+      "origen": "estado 8",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Recurrente financiële kosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000065
+      ],
+      "origen": "estado 8",
+      "glosa": "Gastos financieros recurrentes"
+    },
+    {
+      "label": "Kosten van schulden",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.00065
+      ],
+      "origen": "estado 8",
+      "glosa": "Gastos de la deuda"
+    },
+    {
+      "label": "Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000651
+      ],
+      "origen": "estado 8",
+      "glosa": "Correcciones de valor sobre activos corrientes distintos de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere financiële kosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.006529
+      ],
+      "origen": "estado 8",
+      "glosa": "Otros gastos financieros"
+    },
+    {
+      "label": "Niet-recurrente financiële kosten",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000066
+      ],
+      "origen": "estado 8",
+      "glosa": "Gastos financieros no recurrentes"
+    },
+    {
+      "label": "Onttrekking aan de uitgestelde belastingen",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.00078
+      ],
+      "origen": "estado 8",
+      "glosa": "Disposición de impuestos diferidos"
+    },
+    {
+      "label": "Overboeking naar de uitgestelde belastingen",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.00068
+      ],
+      "origen": "estado 8",
+      "glosa": "Transferencia a impuestos diferidos"
+    },
+    {
+      "label": "Belastingen",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.006703
+      ],
+      "origen": "estado 8",
+      "glosa": "Impuestos sobre beneficios"
+    },
+    {
+      "label": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000077
+      ],
+      "origen": "estado 8",
+      "glosa": "Regularización de impuestos y reversión de provisiones tributarias"
+    },
+    {
+      "label": "Onttrekking aan de belastingvrije reserves",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000789
+      ],
+      "origen": "estado 8",
+      "glosa": "Disposición de reservas exentas de impuestos"
+    },
+    {
+      "label": "Overboeking naar de belastingvrije reserves",
+      "lado": "expense",
+      "page": 7,
+      "section": "Nr. BE 0460.444.251 | VOL 4 / ## RESULTATENREKENING",
+      "values": [
+        0.000689
+      ],
+      "origen": "estado 8",
+      "glosa": "Transferencia a reservas exentas de impuestos"
+    }
+  ]
+}

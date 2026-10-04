@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/España/RCD Espanyol/cuentas-anuales-2024-2025.md",
+ "generado": "2026-10-02T00:14:46.101Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euros",
+ "caja": {
+  "lineas": [
+   361
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   398
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deudas con entidades de crédito (L398) es 0 en 2025; se excluyen deudas con empresas del grupo (L400, 7.000.000), otros pasivos financieros (L390) y deudas con características especiales (L393, L410), que podrían considerarse financieras según criterio más amplio."
+}

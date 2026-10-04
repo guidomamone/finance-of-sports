@@ -1,0 +1,2158 @@
+{
+ "md": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.md",
+ "pdf": "Clubes/Italia/AS Roma/AS-Roma-bilancio-2019.pdf",
+ "club": "as-roma",
+ "year": 2019,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:04:24.081Z",
+ "tieOuts": {
+  "cierran": 368,
+  "noCierran": 93
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "33 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "60 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "148 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 209,
+  "notasUsadas": [
+   "45",
+   "105",
+   "187",
+   "5",
+   "55",
+   "134",
+   "143",
+   "144",
+   "72",
+   "13",
+   "61",
+   "179"
+  ]
+ },
+ "ladoConocido": 197,
+ "rubros": [
+  {
+   "label": "Sponsorizzazioni",
+   "lado": "revenue",
+   "page": 69,
+   "section": "PROSPETTI CONTABILI / AS • ROMA / ## Bilancio Consolidato Gruppo A.S. Roma",
+   "values": [
+    24.22
+   ],
+   "origen": "nota 45 (ancla 40)",
+   "ancla": "Altri ricavi e proventi"
+  },
+  {
+   "label": "Altri ricavi e proventi",
+   "lado": "revenue",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    158.753
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Diritti centralizzati LNP Serie A",
+   "lado": "revenue",
+   "page": 133,
+   "section": "",
+   "values": [
+    78.402
+   ],
+   "origen": "nota 105 (ancla 40>45)",
+   "ancla": "Altri ricavi e proventi"
+  },
+  {
+   "label": "Diritti audiovisivi UEFA",
+   "lado": "revenue",
+   "page": 133,
+   "section": "",
+   "values": [
+    25.106
+   ],
+   "origen": "nota 105 (ancla 40>45)",
+   "ancla": "Altri ricavi e proventi"
+  },
+  {
+   "label": "Diritti televisivi TIM Cup",
+   "lado": "revenue",
+   "page": 133,
+   "section": "",
+   "values": [
+    0.906
+   ],
+   "origen": "nota 105 (ancla 40>45)",
+   "ancla": "Altri ricavi e proventi"
+  },
+  {
+   "label": "Commercializzazione *Library AS Roma*",
+   "lado": "revenue",
+   "page": 133,
+   "section": "",
+   "values": [
+    3.615
+   ],
+   "origen": "nota 105 (ancla 40>45)",
+   "ancla": "Altri ricavi e proventi"
+  },
+  {
+   "label": "Proventi Media Center",
+   "lado": "revenue",
+   "page": 133,
+   "section": "",
+   "values": [
+    2.687
+   ],
+   "origen": "nota 105 (ancla 40>45)",
+   "ancla": "Altri ricavi e proventi"
+  },
+  {
+   "label": "Commercializzazione segnale TV",
+   "lado": "revenue",
+   "page": 133,
+   "section": "",
+   "values": [
+    1.203
+   ],
+   "origen": "nota 105 (ancla 40>45)",
+   "ancla": "Altri ricavi e proventi"
+  },
+  {
+   "label": "Pubblicità",
+   "lado": "revenue",
+   "page": 69,
+   "section": "PROSPETTI CONTABILI / AS • ROMA / ## Bilancio Consolidato Gruppo A.S. Roma",
+   "values": [
+    11.395
+   ],
+   "origen": "nota 45 (ancla 40)",
+   "ancla": "Altri ricavi e proventi"
+  },
+  {
+   "label": "Altri",
+   "lado": "revenue",
+   "page": 69,
+   "section": "PROSPETTI CONTABILI / AS • ROMA / ## Bilancio Consolidato Gruppo A.S. Roma",
+   "values": [
+    11.219
+   ],
+   "origen": "nota 45 (ancla 40)",
+   "ancla": "Altri ricavi e proventi"
+  },
+  {
+   "label": "Plusvalenze/Minusvalenze e svalutazioni",
+   "lado": "revenue",
+   "page": 224,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / NOTE ILLUSTRATIVE",
+   "values": [
+    128.757
+   ],
+   "origen": "nota 187 (ancla 40)",
+   "ancla": "Ricavi netti da gestione dei diritti pluriennali prestazioni calciatori"
+  },
+  {
+   "label": "Ricavi netti da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "revenue",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    132.328
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Proventi/Oneri solidarietà FIFA",
+   "lado": "revenue",
+   "page": 224,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / NOTE ILLUSTRATIVE",
+   "values": [
+    -2.933
+   ],
+   "origen": "nota 187 (ancla 40)",
+   "ancla": "Ricavi netti da gestione dei diritti pluriennali prestazioni calciatori"
+  },
+  {
+   "label": "Cessioni temporanee DPS",
+   "lado": "revenue",
+   "page": 224,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / NOTE ILLUSTRATIVE",
+   "values": [
+    2.186
+   ],
+   "origen": "nota 187 (ancla 40)",
+   "ancla": "Ricavi netti da gestione dei diritti pluriennali prestazioni calciatori"
+  },
+  {
+   "label": "Premi carriera, preparazione, addestramento e formazione tecnica",
+   "lado": "revenue",
+   "page": 224,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / NOTE ILLUSTRATIVE",
+   "values": [
+    -0.366
+   ],
+   "origen": "nota 187 (ancla 40)",
+   "ancla": "Ricavi netti da gestione dei diritti pluriennali prestazioni calciatori"
+  },
+  {
+   "label": "Altri proventi e oneri",
+   "lado": "revenue",
+   "page": 224,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / NOTE ILLUSTRATIVE",
+   "values": [
+    4.684
+   ],
+   "origen": "nota 187 (ancla 40)",
+   "ancla": "Ricavi netti da gestione dei diritti pluriennali prestazioni calciatori"
+  },
+  {
+   "label": "Ricavi da gare",
+   "lado": "revenue",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    66.284
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Ricavi delle vendite commerciali e *licensing*",
+   "lado": "revenue",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    7.716
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Acquisti materie di consumo",
+   "lado": "expense",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -7.195
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Variazione delle rimanenze",
+   "lado": "expense",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    0.163
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Spese per servizi",
+   "lado": "expense",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -54.784
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Spese per godimento beni di terzi",
+   "lado": "expense",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -10.866
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Spese per il personale",
+   "lado": "expense",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -184.42
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Altri costi",
+   "lado": "expense",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -7.367
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Ammortamenti e svalutazioni",
+   "lado": "expense",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -87.412
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Accantonamenti per rischi",
+   "lado": null,
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -0.6
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Proventi finanziari",
+   "lado": "revenue",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    2.614
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Oneri finanziari",
+   "lado": "expense",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -30.706
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Oneri finanziari netti",
+   "lado": "expense",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -28.092
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "EBITDA*esclusa gestione operativa calciatori*",
+   "lado": "expense",
+   "page": 22,
+   "section": "RELAZIONE SULLA GESTIONE / #### Commenti all'andamento economico / #### Principali dati economici consolidati",
+   "values": [
+    -31.715
+   ],
+   "origen": "nota 5 (ancla 40)",
+   "ancla": "Perdite prima delle imposte"
+  },
+  {
+   "label": "Perdite prima delle imposte",
+   "lado": "expense",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -15.492
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Ricavi da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "expense",
+   "page": 94,
+   "section": "# BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / ## NOTE ILLUSTRATIVE",
+   "values": [
+    148.262
+   ],
+   "origen": "nota 55 (ancla 40>5)",
+   "ancla": "Perdite prima delle imposte"
+  },
+  {
+   "label": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "expense",
+   "page": 94,
+   "section": "# BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / ## NOTE ILLUSTRATIVE",
+   "values": [
+    -15.934
+   ],
+   "origen": "nota 55 (ancla 40>5)",
+   "ancla": "Perdite prima delle imposte"
+  },
+  {
+   "label": "Gestione finanziaria",
+   "lado": "expense",
+   "page": 22,
+   "section": "RELAZIONE SULLA GESTIONE / #### Commenti all'andamento economico / #### Principali dati economici consolidati",
+   "values": [
+    -28.092
+   ],
+   "origen": "nota 5 (ancla 40)",
+   "ancla": "Perdite prima delle imposte"
+  },
+  {
+   "label": "Imposte correnti",
+   "lado": "expense",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -8.921
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Imposte differite",
+   "lado": "expense",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -0.043
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Imposte dell'esercizio",
+   "lado": "expense",
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -8.964
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Perdite attuariali iscritte a riserva benefici a dipendenti",
+   "lado": null,
+   "page": 64,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / PROSPETTI CONTABILI / # Bilancio Consolidato Gruppo A.S. Roma / # CONTO ECONOMICO COMPLESSIVO CONSOLIDATO (\\*)",
+   "values": [
+    -0.692
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Ricavi da gare",
+   "lado": "revenue",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    66283.871
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Sponsorizzazioni",
+   "lado": "revenue",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    18035
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Diritti televisivi e diritti d'immagine",
+   "lado": "revenue",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    105366.419
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Altri",
+   "lado": "revenue",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    14387.122
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Acquisti materie di consumo",
+   "lado": "expense",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -3894.29
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Spese per servizi",
+   "lado": "expense",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -51788.544
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Spese per godimento beni di terzi",
+   "lado": "expense",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -8963.136
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Spese per il personale",
+   "lado": "expense",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -176908.143
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Altri costi",
+   "lado": "expense",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -7112.59
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Ammortamenti e svalutazioni",
+   "lado": "expense",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -84612.719
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Ricavi da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "revenue",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    148262.019
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Oneri da gestione dei diritti pluriennali prestazioni calciatori",
+   "lado": "revenue",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -15934.464
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Accantonamenti per rischi",
+   "lado": null,
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -600
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Proventi finanziari",
+   "lado": "revenue",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    3822.789
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Oneri finanziari",
+   "lado": "expense",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -21226.052
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Oneri finanziari netti",
+   "lado": "expense",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -17403.263
+   ],
+   "origen": "estado 129 (su nota queda consumida sin abrir)"
+  },
+  {
+   "label": "Perdite prima delle imposte",
+   "lado": "expense",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -14882.718
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Imposte correnti",
+   "lado": "expense",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -5116.182
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Imposte dell'esercizio",
+   "lado": "expense",
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -5116.182
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Perdite attuariali iscritte nella Riserva benefici ai dipendenti",
+   "lado": null,
+   "page": 156,
+   "section": "BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / PROSPETTI CONTABILI / # Bilancio A.S. Roma S.p.A. / # CONTO ECONOMICO COMPLESSIVO (\\*)",
+   "values": [
+    -399.707
+   ],
+   "origen": "estado 129"
+  },
+  {
+   "label": "Ricavi da Gare",
+   "lado": "revenue",
+   "page": 131,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA / ## ANALISI DELLE VOCI DEL CONTO ECONOMICO COMPLESSIVO / ### RICAVI CONSOLIDATI",
+   "values": [
+    0.0285
+   ],
+   "origen": "estado 100"
+  },
+  {
+   "label": "Altri Ricavi delle Vendite e delle Prestazioni",
+   "lado": "revenue",
+   "page": 131,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA / ## ANALISI DELLE VOCI DEL CONTO ECONOMICO COMPLESSIVO / ### RICAVI CONSOLIDATI",
+   "values": [
+    0.0033
+   ],
+   "origen": "estado 100"
+  },
+  {
+   "label": "Sponsorizzazioni",
+   "lado": "revenue",
+   "page": 131,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA / ## ANALISI DELLE VOCI DEL CONTO ECONOMICO COMPLESSIVO / ### RICAVI CONSOLIDATI",
+   "values": [
+    0.0104
+   ],
+   "origen": "estado 100"
+  },
+  {
+   "label": "Diritti televisivi e diritti d'immagine",
+   "lado": "revenue",
+   "page": 131,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA / ## ANALISI DELLE VOCI DEL CONTO ECONOMICO COMPLESSIVO / ### RICAVI CONSOLIDATI",
+   "values": [
+    0.0481
+   ],
+   "origen": "estado 100"
+  },
+  {
+   "label": "Proventi pubblicitari",
+   "lado": "revenue",
+   "page": 131,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA / ## ANALISI DELLE VOCI DEL CONTO ECONOMICO COMPLESSIVO / ### RICAVI CONSOLIDATI",
+   "values": [
+    0.0049
+   ],
+   "origen": "estado 100"
+  },
+  {
+   "label": "Altri proventi",
+   "lado": "revenue",
+   "page": 131,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA / ## ANALISI DELLE VOCI DEL CONTO ECONOMICO COMPLESSIVO / ### RICAVI CONSOLIDATI",
+   "values": [
+    0.0048
+   ],
+   "origen": "estado 100"
+  },
+  {
+   "label": "Ricavi da Gare",
+   "lado": "revenue",
+   "page": 213,
+   "section": "NOTE ILLUSTRATIVE / AS•ROMA / ## CONTO ECONOMICO / ### RICAVI D'ESERCIZIO",
+   "values": [
+    0.03248
+   ],
+   "origen": "estado 174"
+  },
+  {
+   "label": "- Sponsorizzazioni",
+   "lado": "revenue",
+   "page": 213,
+   "section": "NOTE ILLUSTRATIVE / AS•ROMA / ## CONTO ECONOMICO / ### RICAVI D'ESERCIZIO",
+   "values": [
+    0.00884
+   ],
+   "origen": "estado 174"
+  },
+  {
+   "label": "- Diritti televisivi e diritti d'immagine",
+   "lado": "revenue",
+   "page": 213,
+   "section": "NOTE ILLUSTRATIVE / AS•ROMA / ## CONTO ECONOMICO / ### RICAVI D'ESERCIZIO",
+   "values": [
+    0.05163
+   ],
+   "origen": "estado 174"
+  },
+  {
+   "label": "- Altri",
+   "lado": "revenue",
+   "page": 213,
+   "section": "NOTE ILLUSTRATIVE / AS•ROMA / ## CONTO ECONOMICO / ### RICAVI D'ESERCIZIO",
+   "values": [
+    0.00705
+   ],
+   "origen": "estado 174"
+  },
+  {
+   "label": "TOTALE DPS Calciatori",
+   "lado": "expense",
+   "page": 101,
+   "section": "NOTE ILLUSTRATIVE / AS•ROMA",
+   "values": [
+    346.944
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "ALESSON",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    8.3
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "ANOCIC",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.4
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "ANTONUCCI",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.25
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "BESUIJEN",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.27
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "BIANDA",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    6.245
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "CAPRADOSSI",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.16
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "CARGNELUTTI",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.025
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "CELAR",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.75
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "CENGIZ UNDER",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    15.601
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "COLY SIDY KEBA",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.168
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "CORIC",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    9
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "CORLU",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.19
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "DEFREL",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    17.491
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "DZEKO",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    21.053
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "EL SHARAAWY",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    13
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "FAZIO",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    3.2
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "FLORENZI",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    2.5
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "GERSON",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    20.1
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "GONALONS",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    8.2
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "GYOMBER",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    1.5
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "JUAN JESUS",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    8.847
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "KARSDORP",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    16.6
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "KLUIVERT",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    21.25
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "KOLAROV",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    5.563
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "MANOLAS",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    16.6
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "MASANGU",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.457
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "MIRANTE",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    4.45
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "MENDEZ",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    1.397
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "NANI",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    1.361
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "NURA",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    2.575
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "OMBIOGNO",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.059
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "OMIC",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.085
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "PASTORE",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    25.661
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "PELLEGRINI LORENZO",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    13.165
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "PELLEGRINI LUCA",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    1.1
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "PERES",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    13.469
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "PEROTTI",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    12.6
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "PONCE",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    7.029
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "RADONJIC",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    4.14
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "RICCARDI",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.06
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "RICCI MATTEO",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.1
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "SADIQ",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    2.5
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "SANTON",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    10
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "SCHICK",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    20.623
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "SECK",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    1
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "STROOTMAN",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    21.95
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "VERDE",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    0.2
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "ZANIOLO",
+   "lado": "expense",
+   "page": 188,
+   "section": "# BILANCIO D'ESERCIZIO A.S. ROMA S.P.A. / # NOTE ILLUSTRATIVE",
+   "values": [
+    5.7
+   ],
+   "origen": "nota 143 (ancla 61)",
+   "ancla": "TOTALE DPS Calciatori"
+  },
+  {
+   "label": "Attualizzazione IFRS",
+   "lado": "expense",
+   "page": 101,
+   "section": "NOTE ILLUSTRATIVE / AS•ROMA",
+   "values": [
+    -9.411
+   ],
+   "origen": "estado 61"
+  },
+  {
+   "label": "ANOCIC",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    0.15
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "TOTALI",
+   "lado": "expense",
+   "page": 102,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE",
+   "values": [
+    263.108
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "BESUIJEN",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    0.14
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "BIANDA",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    6
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "BUSO",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    0.009
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "CAPRADOSSI",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    0.13
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "CELAR",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    0.7
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "CENGIZ UNDER",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    15.533
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "CERANTOLA FUZATO",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    0.5
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "CORIC",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    8
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "CRISTANTE",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    27
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "GERSON",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    18.6
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "GONALONS",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    5
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "KARSDORP",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    16
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "KLUIVERT",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    17.25
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "KOLAROV",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    5.263
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "MIRANTE",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    4
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "NANI",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    0.298
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "NZONZI",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    27.931
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "OLSEN",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    9
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "PASTORE",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    24.661
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "PELLEGRINI Lorenzo",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    10
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "PEROTTI",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    12
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "PERSSON",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    0.05
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "UEFA",
+   "lado": "expense",
+   "page": 109,
+   "section": "### Crediti verso Sponsor Ufficiali / ### Crediti verso Enti di Settore",
+   "values": [
+    0.468
+   ],
+   "origen": "nota 72 (ancla 62>144)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "FIGC",
+   "lado": "expense",
+   "page": 109,
+   "section": "### Crediti verso Sponsor Ufficiali / ### Crediti verso Enti di Settore",
+   "values": [
+    0.002
+   ],
+   "origen": "nota 72 (ancla 62>144)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "LNP Serie A",
+   "lado": "expense",
+   "page": 109,
+   "section": "### Crediti verso Sponsor Ufficiali / ### Crediti verso Enti di Settore",
+   "values": [
+    9.03
+   ],
+   "origen": "nota 72 (ancla 62>144)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "Sport e Salute",
+   "lado": "expense",
+   "page": 109,
+   "section": "### Crediti verso Sponsor Ufficiali / ### Crediti verso Enti di Settore",
+   "values": [
+    0.003
+   ],
+   "origen": "nota 72 (ancla 62>144)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "SCHICK",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    38.393
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "ZANIOLO",
+   "lado": "expense",
+   "page": 189,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA",
+   "values": [
+    4.5
+   ],
+   "origen": "nota 144 (ancla 62)",
+   "ancla": "TOTALI"
+  },
+  {
+   "label": "Altre passività finanziarie non correnti",
+   "lado": "expense",
+   "page": 130,
+   "section": "# BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / ## NOTE ILLUSTRATIVE",
+   "values": [
+    0.211819
+   ],
+   "origen": "estado 99"
+  },
+  {
+   "label": "Altre passività non correnti",
+   "lado": "expense",
+   "page": 130,
+   "section": "# BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / ## NOTE ILLUSTRATIVE",
+   "values": [
+    0.010765
+   ],
+   "origen": "estado 99"
+  },
+  {
+   "label": "Passività finanziarie correnti",
+   "lado": "expense",
+   "page": 130,
+   "section": "# BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / ## NOTE ILLUSTRATIVE",
+   "values": [
+    0.043632
+   ],
+   "origen": "estado 99"
+  },
+  {
+   "label": "Altre passività correnti",
+   "lado": "expense",
+   "page": 130,
+   "section": "# BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / ## NOTE ILLUSTRATIVE",
+   "values": [
+    0.053123
+   ],
+   "origen": "estado 99"
+  },
+  {
+   "label": "Debiti commerciali",
+   "lado": "expense",
+   "page": 130,
+   "section": "# BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / ## NOTE ILLUSTRATIVE",
+   "values": [
+    0.228494
+   ],
+   "origen": "estado 99"
+  },
+  {
+   "label": "Altre passività finanziarie non correnti",
+   "lado": "expense",
+   "page": 130,
+   "section": "# BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / ## NOTE ILLUSTRATIVE",
+   "values": [
+    0.228631
+   ],
+   "origen": "estado 99"
+  },
+  {
+   "label": "Altre passività non correnti",
+   "lado": "expense",
+   "page": 130,
+   "section": "# BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / ## NOTE ILLUSTRATIVE",
+   "values": [
+    0.010593
+   ],
+   "origen": "estado 99"
+  },
+  {
+   "label": "Passività finanziarie correnti",
+   "lado": "expense",
+   "page": 130,
+   "section": "# BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / ## NOTE ILLUSTRATIVE",
+   "values": [
+    0.037762
+   ],
+   "origen": "estado 99"
+  },
+  {
+   "label": "Altre passività correnti",
+   "lado": "expense",
+   "page": 130,
+   "section": "# BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / ## NOTE ILLUSTRATIVE",
+   "values": [
+    0.052648
+   ],
+   "origen": "estado 99"
+  },
+  {
+   "label": "Debiti commerciali",
+   "lado": "expense",
+   "page": 130,
+   "section": "# BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / ## NOTE ILLUSTRATIVE",
+   "values": [
+    0.235124
+   ],
+   "origen": "estado 99"
+  },
+  {
+   "label": "- verso altri finanziatori correlati",
+   "lado": "revenue",
+   "page": 96,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / # *Ricavi da sponsor* / ## GESTIONE DEI RISCHI FINANZIARI / # - Rischi connessi all'indebitamento finanziario del Gruppo AS Roma",
+   "values": [
+    -24.4
+   ],
+   "origen": "estado 58"
+  },
+  {
+   "label": "- verso altri finanziatori non correlati",
+   "lado": "revenue",
+   "page": 96,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / # *Ricavi da sponsor* / ## GESTIONE DEI RISCHI FINANZIARI / # - Rischi connessi all'indebitamento finanziario del Gruppo AS Roma",
+   "values": [
+    -187.419
+   ],
+   "origen": "estado 58"
+  },
+  {
+   "label": "Indebitamento finanziario netto a lungo termine",
+   "lado": "revenue",
+   "page": 96,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / # *Ricavi da sponsor* / ## GESTIONE DEI RISCHI FINANZIARI / # - Rischi connessi all'indebitamento finanziario del Gruppo AS Roma",
+   "values": [
+    -211.819
+   ],
+   "origen": "estado 58"
+  },
+  {
+   "label": "- Disponibilità liquide",
+   "lado": "revenue",
+   "page": 96,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / # *Ricavi da sponsor* / ## GESTIONE DEI RISCHI FINANZIARI / # - Rischi connessi all'indebitamento finanziario del Gruppo AS Roma",
+   "values": [
+    18.091
+   ],
+   "origen": "estado 58"
+  },
+  {
+   "label": "- verso Banche",
+   "lado": "revenue",
+   "page": 96,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / # *Ricavi da sponsor* / ## GESTIONE DEI RISCHI FINANZIARI / # - Rischi connessi all'indebitamento finanziario del Gruppo AS Roma",
+   "values": [
+    -22.388
+   ],
+   "origen": "estado 58"
+  },
+  {
+   "label": "- verso altri finanziatori correlati",
+   "lado": "revenue",
+   "page": 96,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / # *Ricavi da sponsor* / ## GESTIONE DEI RISCHI FINANZIARI / # - Rischi connessi all'indebitamento finanziario del Gruppo AS Roma",
+   "values": [
+    -4.68
+   ],
+   "origen": "estado 58"
+  },
+  {
+   "label": "- verso altri finanziatori non correlati",
+   "lado": "revenue",
+   "page": 96,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / # *Ricavi da sponsor* / ## GESTIONE DEI RISCHI FINANZIARI / # - Rischi connessi all'indebitamento finanziario del Gruppo AS Roma",
+   "values": [
+    -16.565
+   ],
+   "origen": "estado 58"
+  },
+  {
+   "label": "Indebitamento finanziario netto a breve termine",
+   "lado": "revenue",
+   "page": 96,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / # *Ricavi da sponsor* / ## GESTIONE DEI RISCHI FINANZIARI / # - Rischi connessi all'indebitamento finanziario del Gruppo AS Roma",
+   "values": [
+    -25.541
+   ],
+   "origen": "estado 58 (su nota queda consumida sin abrir)"
+  },
+  {
+   "label": "INDEBITAMENTO FINANZIARIO NETTO",
+   "lado": "revenue",
+   "page": 96,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / # *Ricavi da sponsor* / ## GESTIONE DEI RISCHI FINANZIARI / # - Rischi connessi all'indebitamento finanziario del Gruppo AS Roma",
+   "values": [
+    -237.36
+   ],
+   "origen": "estado 58"
+  },
+  {
+   "label": "(Dati in migliaia di Euro)",
+   "lado": "expense",
+   "page": 136,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / 26. SPESE PER SERVIZI",
+   "values": [
+    0.00003
+   ],
+   "origen": "estado 109"
+  },
+  {
+   "label": "Costi per tesserati",
+   "lado": "expense",
+   "page": 136,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / 26. SPESE PER SERVIZI",
+   "values": [
+    0.001575
+   ],
+   "origen": "estado 109"
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "lado": "expense",
+   "page": 136,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / 26. SPESE PER SERVIZI",
+   "values": [
+    0.00609
+   ],
+   "origen": "estado 109"
+  },
+  {
+   "label": "Costi specifici tecnici",
+   "lado": "expense",
+   "page": 136,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / 26. SPESE PER SERVIZI",
+   "values": [
+    0.006325
+   ],
+   "origen": "estado 109"
+  },
+  {
+   "label": "Costi vitto, alloggio, locomozione e trasferte",
+   "lado": "expense",
+   "page": 136,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / 26. SPESE PER SERVIZI",
+   "values": [
+    0.001894
+   ],
+   "origen": "estado 109"
+  },
+  {
+   "label": "Spese assicurative",
+   "lado": "expense",
+   "page": 136,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / 26. SPESE PER SERVIZI",
+   "values": [
+    0.007182
+   ],
+   "origen": "estado 109"
+  },
+  {
+   "label": "Amministrative e generali",
+   "lado": "expense",
+   "page": 136,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / 26. SPESE PER SERVIZI",
+   "values": [
+    0.025768
+   ],
+   "origen": "estado 109"
+  },
+  {
+   "label": "Spese di pubblicità e promozione",
+   "lado": "expense",
+   "page": 136,
+   "section": "BILANCIO CONSOLIDATO GRUPPO A.S. ROMA / NOTE ILLUSTRATIVE / 26. SPESE PER SERVIZI",
+   "values": [
+    0.00595
+   ],
+   "origen": "estado 109"
+  },
+  {
+   "label": "Altre attività non correnti",
+   "lado": "expense",
+   "page": 129,
+   "section": "",
+   "values": [
+    3.85
+   ],
+   "origen": "estado 97"
+  },
+  {
+   "label": "Crediti commerciali",
+   "lado": "expense",
+   "page": 129,
+   "section": "",
+   "values": [
+    102.442
+   ],
+   "origen": "estado 97"
+  },
+  {
+   "label": "Attività finanziarie immobilizzate",
+   "lado": "expense",
+   "page": 129,
+   "section": "",
+   "values": [
+    16.732
+   ],
+   "origen": "estado 97"
+  },
+  {
+   "label": "Altre attività correnti",
+   "lado": "expense",
+   "page": 129,
+   "section": "",
+   "values": [
+    15.973
+   ],
+   "origen": "estado 97"
+  },
+  {
+   "label": "Disponibilità liquide e mezzi equivalenti",
+   "lado": "expense",
+   "page": 129,
+   "section": "",
+   "values": [
+    18.092
+   ],
+   "origen": "estado 97"
+  },
+  {
+   "label": "Altre attività non correnti",
+   "lado": "expense",
+   "page": 129,
+   "section": "",
+   "values": [
+    4.55
+   ],
+   "origen": "estado 98"
+  },
+  {
+   "label": "Crediti commerciali",
+   "lado": "expense",
+   "page": 129,
+   "section": "",
+   "values": [
+    122.284
+   ],
+   "origen": "estado 98"
+  },
+  {
+   "label": "Altre attività correnti",
+   "lado": "expense",
+   "page": 129,
+   "section": "",
+   "values": [
+    34.559
+   ],
+   "origen": "estado 98"
+  },
+  {
+   "label": "Disponibilità liquide e mezzi equivalenti",
+   "lado": "expense",
+   "page": 129,
+   "section": "",
+   "values": [
+    30.898
+   ],
+   "origen": "estado 98"
+  },
+  {
+   "label": "Diritti Pluriennali",
+   "lado": "expense",
+   "page": 99,
+   "section": "## ALTRE INFORMAZIONI / ## ANALISI DELLE VOCI DELLA SITUAZIONE PATRIMONIALE CONSOLIDATA / ### ATTIVO / #### ATTIVITA' NON CORRENTI / #### 1. ATTIVITÀ IMMATERIALI",
+   "values": [
+    0.337533
+   ],
+   "origen": "estado 60"
+  },
+  {
+   "label": "Altre immobilizzazioni immateriali",
+   "lado": "expense",
+   "page": 99,
+   "section": "## ALTRE INFORMAZIONI / ## ANALISI DELLE VOCI DELLA SITUAZIONE PATRIMONIALE CONSOLIDATA / ### ATTIVO / #### ATTIVITA' NON CORRENTI / #### 1. ATTIVITÀ IMMATERIALI",
+   "values": [
+    0.026508
+   ],
+   "origen": "estado 60"
+  },
+  {
+   "label": "Immobilizzazioni immateriali in corso e acconti",
+   "lado": "expense",
+   "page": 99,
+   "section": "## ALTRE INFORMAZIONI / ## ANALISI DELLE VOCI DELLA SITUAZIONE PATRIMONIALE CONSOLIDATA / ### ATTIVO / #### ATTIVITA' NON CORRENTI / #### 1. ATTIVITÀ IMMATERIALI",
+   "values": [
+    0.003545
+   ],
+   "origen": "estado 60"
+  },
+  {
+   "label": "ALISSON",
+   "lado": "expense",
+   "page": 101,
+   "section": "NOTE ILLUSTRATIVE / AS•ROMA",
+   "values": [
+    8.3
+   ],
+   "origen": "nota 61 (ancla 142)",
+   "ancla": "Totale"
+  },
+  {
+   "label": "Totale",
+   "lado": "expense",
+   "page": 187,
+   "section": "AS • ROMA / # ANALISI DELLE VOCI DELLO STATO PATRIMONIALE / # ATTIVO / # ATTIVITA' NON CORRENTI / # 1. Attività immateriali",
+   "values": [
+    346.931
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "DEFREI",
+   "lado": "expense",
+   "page": 101,
+   "section": "NOTE ILLUSTRATIVE / AS•ROMA",
+   "values": [
+    17.491
+   ],
+   "origen": "nota 61 (ancla 142)",
+   "ancla": "Totale"
+  },
+  {
+   "label": "KLUVERT",
+   "lado": "expense",
+   "page": 101,
+   "section": "NOTE ILLUSTRATIVE / AS•ROMA",
+   "values": [
+    21.25
+   ],
+   "origen": "nota 61 (ancla 142)",
+   "ancla": "Totale"
+  },
+  {
+   "label": "ZANJOLO",
+   "lado": "expense",
+   "page": 101,
+   "section": "NOTE ILLUSTRATIVE / AS•ROMA",
+   "values": [
+    5.7
+   ],
+   "origen": "nota 61 (ancla 142)",
+   "ancla": "Totale"
+  },
+  {
+   "label": "(Dati in Euro/000)",
+   "lado": "expense",
+   "page": 187,
+   "section": "AS • ROMA / # ANALISI DELLE VOCI DELLO STATO PATRIMONIALE / # ATTIVO / # ATTIVITA' NON CORRENTI / # 1. Attività immateriali",
+   "values": [
+    0.03006
+   ],
+   "origen": "estado 142"
+  },
+  {
+   "label": "(Dati in migliaia di Euro)",
+   "lado": "revenue",
+   "page": 215,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA / ## 22. Altri ricavi",
+   "values": [
+    0.03006
+   ],
+   "origen": "estado 178"
+  },
+  {
+   "label": "Sponsorizzazioni",
+   "lado": "revenue",
+   "page": 215,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA / ## 22. Altri ricavi",
+   "values": [
+    18.035
+   ],
+   "origen": "estado 178"
+  },
+  {
+   "label": "Diritti Audiovisivi Tim Cup",
+   "lado": "revenue",
+   "page": 215,
+   "section": "",
+   "values": [
+    0.906
+   ],
+   "origen": "nota 179 (ancla 178)",
+   "ancla": "Proventi da Diritti audiovisivi"
+  },
+  {
+   "label": "Proventi da Diritti audiovisivi",
+   "lado": "revenue",
+   "page": 215,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA / ## 22. Altri ricavi",
+   "values": [
+    105.366
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Proventi accessori LNP Serie A",
+   "lado": "revenue",
+   "page": 215,
+   "section": "",
+   "values": [
+    0.952
+   ],
+   "origen": "nota 179 (ancla 178)",
+   "ancla": "Proventi da Diritti audiovisivi"
+  },
+  {
+   "label": "Altri",
+   "lado": "revenue",
+   "page": 215,
+   "section": "NOTE ILLUSTRATIVE / AS • ROMA / ## 22. Altri ricavi",
+   "values": [
+    14.387
+   ],
+   "origen": "estado 178"
+  },
+  {
+   "label": "*At a point in time*",
+   "lado": "revenue",
+   "page": 131,
+   "section": "",
+   "values": [
+    73.317
+   ],
+   "origen": "estado 101"
+  },
+  {
+   "label": "*Over time*",
+   "lado": "revenue",
+   "page": 131,
+   "section": "",
+   "values": [
+    11.902
+   ],
+   "origen": "estado 101"
+  }
+ ]
+}

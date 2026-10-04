@@ -1,0 +1,34 @@
+{
+ "pdf": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2015.pdf",
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2015.md",
+ "modo": "escaneo",
+ "motivoModo": "el PDF trae texto parcial (143 números contra 603 en el .md)",
+ "generado": "2026-10-01T18:26:18.710Z",
+ "fuentes": {
+  "8": "guardada",
+  "56": "guardada",
+  "58": "guardada",
+  "59": "gemini"
+ },
+ "confirmados": 251,
+ "noConfirmados": [
+  {
+   "bloque": "b67",
+   "pagina": 59,
+   "linea": 1948,
+   "numero": "7.593.046",
+   "segundaLeyo": "9593046",
+   "sinSegunda": false,
+   "texto": "|  **TOTAL COSTOS DE VENTAS (SERVICIOS) DE ACTIVIDADES ORDINARIAS** | **(8.974.247)** | **(7.141.777)** | **(618.799)** | **(499.481)** | **(7.593.046)** | **(7"
+  },
+  {
+   "bloque": "b67",
+   "pagina": 59,
+   "linea": 1959,
+   "numero": "1.576.329",
+   "segundaLeyo": "1576320",
+   "sinSegunda": false,
+   "texto": "|  **TOTAL OTROS GASTOS** | **(1.184.467)** | **(1.138.177)** | **(605.964)** | **(438.143)** | **(1.790.431)** | **(1.576.329)**  |"
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "md": "Clubes/Colombia/Once Caldas/estados-financieros-2021.md",
+ "generatedAt": "2026-09-30T22:49:00.068Z",
+ "rubrosHuella": "8b68fbdcdcf663533dcd7dcc59a459f5ba2586c6",
+ "rubros": [
+  {
+   "label": "FINANCIEROS",
+   "lado": "revenue",
+   "page": 19,
+   "section": "NOTA 23",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "INTERESES",
+   "lado": "revenue",
+   "page": 19,
+   "section": "NOTA 23",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DIFERENCIA EN CAMBIO",
+   "lado": "revenue",
+   "page": 19,
+   "section": "NOTA 23",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "RECUPERACIONES",
+   "lado": "revenue",
+   "page": 19,
+   "section": "NOTA 23",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DE PROVISIONES",
+   "lado": "revenue",
+   "page": 19,
+   "section": "NOTA 23",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "REINTE DE OTROS COSTOS Y GASTO",
+   "lado": "expense",
+   "page": 19,
+   "section": "NOTA 23",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS NO OPERACIONALES",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS FINANCIEROS",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS EXTRAORDINARIOS",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS DIVERSOS",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

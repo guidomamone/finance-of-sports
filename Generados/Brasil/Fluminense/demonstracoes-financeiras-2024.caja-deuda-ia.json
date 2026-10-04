@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2024.md",
+ "generado": "2026-10-02T00:15:24.712Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"emprestimos e financiamentos\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "Informações em milhares de Reais",
+ "caja": {
+  "lineas": [
+   701
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   721,
+   733
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda = empréstimos e financiamentos corriente (1.479) + no corriente (30.000) = 31.479, coincide con la nota de instrumentos financieros."
+}

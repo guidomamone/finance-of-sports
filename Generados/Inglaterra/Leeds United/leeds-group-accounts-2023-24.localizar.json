@@ -1,0 +1,23 @@
+{
+ "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2023-24.pdf",
+ "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2023-24.md",
+ "cierre": "2025-03-28",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:52:25.129Z",
+ "paginas_resultados": [
+  15
+ ],
+ "paginas_notas_ingresos": [
+  25
+ ],
+ "paginas_notas_gastos": [
+  25,
+  26
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "2024 2023 Note £ £",
+ "moneda": "GBP",
+ "columna_ejercicio": "2024",
+ "perimetro": "consolidado",
+ "observaciones": "El documento corresponde al ejercicio cerrado el 30 de junio de 2024, no al que cierra el 2025-03-28. No hay ningún estado de resultados del ejercicio 2025 en el texto, así que se indican las páginas del ejercicio 2024 disponible (columna '2024'). Solo hay estado de resultados consolidado (pág. 15). La escala en libras enteras se deduce de los estados de situación financiera (pág. 16-17) y de las notas, con importes en '£' sin abreviar. La nota 4 de Turnover empieza antes de la pág. 25 (pág. 24 o una no transcripta), pero de esa nota solo se ve la continuación. La pág. 25 incluye la nota de Operating loss y la pág. 26 la de remuneración de directores. Puede faltar la nota de staff costs en páginas no mostradas."
+}

@@ -1,0 +1,291 @@
+{
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2010.md",
+ "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2010.pdf",
+ "club": "aalesund",
+ "year": 2010,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:05:58.078Z",
+ "tieOuts": {
+  "cierran": 107,
+  "noCierran": 28
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "10 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "18 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "27 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 27,
+  "notasUsadas": []
+ },
+ "ladoConocido": 21,
+ "rubros": [
+  {
+   "label": "Salgsinntekter",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Resultatregnskap - konsern",
+   "values": [
+    81627.346
+   ],
+   "origen": "estado 7",
+   "glosa": "Ingresos por ventas"
+  },
+  {
+   "label": "Varekostnader",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap - konsern",
+   "values": [
+    3159.362
+   ],
+   "origen": "estado 7",
+   "glosa": "Consumo de mercaderías"
+  },
+  {
+   "label": "Lønnskostnader m.m.",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap - konsern",
+   "values": [
+    7341.747
+   ],
+   "origen": "estado 7",
+   "glosa": "Gastos de personal y otros"
+  },
+  {
+   "label": "Avskrivning på driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap - konsern",
+   "values": [
+    7456.483
+   ],
+   "origen": "estado 7",
+   "glosa": "Amortización del inmovilizado material e intangible"
+  },
+  {
+   "label": "Nedskrivning av driftsmidler og immaterielle driftsmidler",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap - konsern",
+   "values": [
+    1398.719
+   ],
+   "origen": "estado 7",
+   "glosa": "Deterioro del inmovilizado material e intangible"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap - konsern",
+   "values": [
+    64813.218
+   ],
+   "origen": "estado 7",
+   "glosa": "Otros gastos de explotación"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Resultatregnskap - konsern",
+   "values": [
+    177.338
+   ],
+   "origen": "estado 7",
+   "glosa": "Otros ingresos por intereses"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Resultatregnskap - konsern",
+   "values": [
+    3951.832
+   ],
+   "origen": "estado 7",
+   "glosa": "Otros ingresos financieros"
+  },
+  {
+   "label": "Nedskrivning av andre finansielle anleggsmidler",
+   "lado": null,
+   "page": 8,
+   "section": "# Resultatregnskap - konsern",
+   "values": [
+    1136.667
+   ],
+   "origen": "estado 7",
+   "glosa": "Deterioro de otros activos financieros no corrientes"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap - konsern",
+   "values": [
+    101.886
+   ],
+   "origen": "estado 7",
+   "glosa": "Otros gastos por intereses"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Resultatregnskap - konsern",
+   "values": [
+    255.643
+   ],
+   "origen": "estado 7",
+   "glosa": "Otros gastos financieros"
+  },
+  {
+   "label": "Avsatt til annen egenkapital",
+   "lado": null,
+   "page": 8,
+   "section": "# Resultatregnskap - konsern",
+   "values": [
+    94.884
+   ],
+   "origen": "estado 7",
+   "glosa": "Dotación a otros fondos propios"
+  },
+  {
+   "label": "Salgsinntekter",
+   "lado": "revenue",
+   "page": 31,
+   "section": "# Resultatregnskap",
+   "values": [
+    71951.865
+   ],
+   "origen": "estado 44",
+   "glosa": "Ingresos por ventas"
+  },
+  {
+   "label": "Lønnskostnader m.m.",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Resultatregnskap",
+   "values": [
+    7379.628
+   ],
+   "origen": "estado 44",
+   "glosa": "Gastos de personal y otros"
+  },
+  {
+   "label": "Avskrivning på driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Resultatregnskap",
+   "values": [
+    7428.953
+   ],
+   "origen": "estado 44",
+   "glosa": "Amortización del inmovilizado material e intangible"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Resultatregnskap",
+   "values": [
+    55176.496
+   ],
+   "origen": "estado 44",
+   "glosa": "Otros gastos de explotación"
+  },
+  {
+   "label": "Inntekt på investering i datterselskap",
+   "lado": "revenue",
+   "page": 31,
+   "section": "# Resultatregnskap",
+   "values": [
+    202.495
+   ],
+   "origen": "estado 44",
+   "glosa": "Ingresos por inversiones en empresas del grupo"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 31,
+   "section": "# Resultatregnskap",
+   "values": [
+    628.735
+   ],
+   "origen": "estado 44",
+   "glosa": "Otros ingresos por intereses"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 31,
+   "section": "# Resultatregnskap",
+   "values": [
+    3351.832
+   ],
+   "origen": "estado 44",
+   "glosa": "Otros ingresos financieros"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Resultatregnskap",
+   "values": [
+    101.061
+   ],
+   "origen": "estado 44",
+   "glosa": "Otros gastos por intereses"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Resultatregnskap",
+   "values": [
+    251.495
+   ],
+   "origen": "estado 44",
+   "glosa": "Otros gastos financieros"
+  },
+  {
+   "label": "Avsatt til annen egenkapital",
+   "lado": null,
+   "page": 31,
+   "section": "# Resultatregnskap",
+   "values": [
+    102.544
+   ],
+   "origen": "estado 44",
+   "glosa": "Dotación a otros fondos propios"
+  },
+  {
+   "label": "Lovpålagt revisjon (inkl. teknisk bistand med årsregnskap)",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "values": [
+    245.123
+   ],
+   "origen": "estado 36",
+   "glosa": "Auditoría legal (incl. asistencia técnica en cuentas anuales)"
+  },
+  {
+   "label": "Annen bistand",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "values": [
+    42.3
+   ],
+   "origen": "estado 36",
+   "glosa": "Otras asistencias"
+  }
+ ]
+}

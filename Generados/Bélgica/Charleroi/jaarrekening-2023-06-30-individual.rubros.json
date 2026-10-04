@@ -1,0 +1,410 @@
+{
+  "md": "Clubes/Bélgica/Charleroi/jaarrekening-2023-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Charleroi/jaarrekening-2023-06-30-individual.pdf",
+  "club": "charleroi-be",
+  "year": 2023,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:54:31.332Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 2
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 35,
+    "notasUsadas": []
+  },
+  "ladoConocido": 27,
+  "rubros": [
+    {
+      "label": "Produits financiers",
+      "lado": "revenue",
+      "page": 9,
+      "section": "",
+      "values": [
+        7.576
+      ],
+      "origen": "estado 5",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Produits financiers récurrents",
+      "lado": "revenue",
+      "page": 9,
+      "section": "",
+      "values": [
+        0.075
+      ],
+      "origen": "estado 5",
+      "glosa": "Ingresos financieros recurrentes"
+    },
+    {
+      "label": "Produits des immobilisations financières",
+      "lado": "revenue",
+      "page": 9,
+      "section": "",
+      "values": [
+        0.75
+      ],
+      "origen": "estado 5",
+      "glosa": "Ingresos del inmovilizado financiero"
+    },
+    {
+      "label": "Produits des actifs circulants",
+      "lado": "revenue",
+      "page": 9,
+      "section": "",
+      "values": [
+        0.751
+      ],
+      "origen": "estado 5",
+      "glosa": "Ingresos del activo corriente"
+    },
+    {
+      "label": "Autres produits financiers",
+      "lado": "revenue",
+      "page": 9,
+      "section": "",
+      "values": [
+        7.529
+      ],
+      "origen": "estado 5",
+      "glosa": "Otros ingresos financieros"
+    },
+    {
+      "label": "Produits financiers non récurrents",
+      "lado": "revenue",
+      "page": 9,
+      "section": "",
+      "values": [
+        0.076
+      ],
+      "origen": "estado 5",
+      "glosa": "Ingresos financieros no recurrentes"
+    },
+    {
+      "label": "Charges financières",
+      "lado": "expense",
+      "page": 9,
+      "section": "",
+      "values": [
+        6.566
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Charges financières récurrentes",
+      "lado": "expense",
+      "page": 9,
+      "section": "",
+      "values": [
+        0.065
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos financieros recurrentes"
+    },
+    {
+      "label": "Charges des dettes",
+      "lado": "expense",
+      "page": 9,
+      "section": "",
+      "values": [
+        0.65
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos por deudas"
+    },
+    {
+      "label": "Réductions de valeur sur actifs circulants autres que stocks, commandes en cours et créances commerciales: dotations (reprises)",
+      "lado": null,
+      "page": 9,
+      "section": "",
+      "values": [
+        0.651
+      ],
+      "origen": "estado 5",
+      "glosa": "Deterioros de valor de activos corrientes distintos de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
+    },
+    {
+      "label": "Autres charges financières",
+      "lado": "expense",
+      "page": 9,
+      "section": "",
+      "values": [
+        6.529
+      ],
+      "origen": "estado 5",
+      "glosa": "Otros gastos financieros"
+    },
+    {
+      "label": "Charges financières non récurrentes",
+      "lado": "expense",
+      "page": 9,
+      "section": "",
+      "values": [
+        0.066
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos financieros no recurrentes"
+    },
+    {
+      "label": "Prélèvement sur les impôts différés",
+      "lado": "expense",
+      "page": 9,
+      "section": "",
+      "values": [
+        0.78
+      ],
+      "origen": "estado 5",
+      "glosa": "Disposición de impuestos diferidos"
+    },
+    {
+      "label": "Transfert aux impôts différés",
+      "lado": "expense",
+      "page": 9,
+      "section": "",
+      "values": [
+        0.68
+      ],
+      "origen": "estado 5",
+      "glosa": "Transferencia a impuestos diferidos"
+    },
+    {
+      "label": "Impôts",
+      "lado": "expense",
+      "page": 9,
+      "section": "",
+      "values": [
+        6.703
+      ],
+      "origen": "estado 5",
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Régularisation d'impôts et reprise de provisions fiscales",
+      "lado": "expense",
+      "page": 9,
+      "section": "",
+      "values": [
+        0.077
+      ],
+      "origen": "estado 5",
+      "glosa": "Regularización de impuestos y reversión de provisiones fiscales"
+    },
+    {
+      "label": "Prélèvement sur les réserves immunisées",
+      "lado": null,
+      "page": 9,
+      "section": "",
+      "values": [
+        0.789
+      ],
+      "origen": "estado 5",
+      "glosa": "Disposición de reservas exentas de impuestos"
+    },
+    {
+      "label": "Transfert aux réserves immunisées",
+      "lado": null,
+      "page": 9,
+      "section": "",
+      "values": [
+        0.689
+      ],
+      "origen": "estado 5",
+      "glosa": "Transferencia a reservas exentas de impuestos"
+    },
+    {
+      "label": "Ventes et prestations",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        7.076
+      ],
+      "origen": "estado 4",
+      "glosa": "Ventas y prestaciones de servicios"
+    },
+    {
+      "label": "Chiffre d'affaires",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.07
+      ],
+      "origen": "estado 4",
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "En-cours de fabrication, produits finis et commandes en cours d'exécution: augmentation (réduction)",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.071
+      ],
+      "origen": "estado 4",
+      "glosa": "Productos en curso, productos terminados y pedidos en curso de ejecución: aumento (disminución)"
+    },
+    {
+      "label": "Production immobilisée",
+      "lado": null,
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.072
+      ],
+      "origen": "estado 4",
+      "glosa": "Trabajos realizados por la empresa para su activo"
+    },
+    {
+      "label": "Autres produits d'exploitation",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.074
+      ],
+      "origen": "estado 4",
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Produits d'exploitation non récurrents",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.076
+      ],
+      "origen": "estado 4",
+      "glosa": "Ingresos de explotación no recurrentes"
+    },
+    {
+      "label": "Coût des ventes et des prestations",
+      "lado": "expense",
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        6.066
+      ],
+      "origen": "estado 4",
+      "glosa": "Coste de las ventas y prestaciones de servicios"
+    },
+    {
+      "label": "Approvisionnements et marchandises",
+      "lado": null,
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.06
+      ],
+      "origen": "estado 4",
+      "glosa": "Aprovisionamientos y mercancías"
+    },
+    {
+      "label": "Achats",
+      "lado": null,
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        6.008
+      ],
+      "origen": "estado 4",
+      "glosa": "Compras"
+    },
+    {
+      "label": "Stocks: réduction (augmentation)",
+      "lado": null,
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.609
+      ],
+      "origen": "estado 4",
+      "glosa": "Existencias: disminución (aumento)"
+    },
+    {
+      "label": "Services et biens divers",
+      "lado": null,
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.061
+      ],
+      "origen": "estado 4",
+      "glosa": "Servicios y bienes diversos"
+    },
+    {
+      "label": "Rémunérations, charges sociales et pensions",
+      "lado": "expense",
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.0061
+      ],
+      "origen": "estado 4",
+      "glosa": "Remuneraciones, cargas sociales y pensiones"
+    },
+    {
+      "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+      "lado": "expense",
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.63
+      ],
+      "origen": "estado 4",
+      "glosa": "Amortizaciones y deterioros de valor de gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+      "lado": "expense",
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.0061
+      ],
+      "origen": "estado 4",
+      "glosa": "Deterioros de valor de existencias, pedidos en curso de ejecución y créditos comerciales: dotaciones (reversiones)"
+    },
+    {
+      "label": "Provisions pour risques et charges: dotations (utilisations et reprises)",
+      "lado": "expense",
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.0061
+      ],
+      "origen": "estado 4",
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones)"
+    },
+    {
+      "label": "Autres charges d'exploitation",
+      "lado": "expense",
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.0061
+      ],
+      "origen": "estado 4",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Charges d'exploitation non récurrentes",
+      "lado": "expense",
+      "page": 8,
+      "section": "## COMPTE DE RÉSULTATS",
+      "values": [
+        0.066
+      ],
+      "origen": "estado 4",
+      "glosa": "Gastos de explotación no recurrentes"
+    }
+  ]
+}

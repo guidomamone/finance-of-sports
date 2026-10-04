@@ -1,0 +1,334 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.pdf",
+ "generado": "2026-10-03T03:30:50.709Z",
+ "frena": [
+  {
+   "etapa": "categoria-en-cola",
+   "motivo": "3 fila(s) esperan categoría en la cola humana (node tools/cola.mjs): \"(-) Ordenados, Salários, Encargos Sociai\" -> wages_squad 0.55; \"Provisões no Exercício\" -> admin_general_expense 0.65; \"(-) DESPESAS OPERACIONAIS PAGAS COM RECU\" -> other_expenses 0.45"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-03: Guido 2026-10-02: una sola entidad (associação hasta 2023, SAF después); 'Consolidado' es el membrete del auditor (Verdus), no un estado consolidado)"
+ ],
+ "ejercicio": {
+  "clubId": "novorizontino-br",
+  "year": 2017,
+  "cierre": "2017-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "RENDAS DE JOGOS, PATROCÍNIOS, LOCAÇÕES E OUTRAS RECEITAS OPERACIONAIS",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 8.019563,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Recuperação de Despesas",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.05615,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "RECURSOS PUBLICOS",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.070526,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 0.9
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "(-) Ordenados, Salários, Encargos Sociais e Trabalhistas e Outros",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -6.604131,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 2,
+    "_conf": 0.55
+   },
+   {
+    "rawLabel": "Despesas Administrativas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.128041,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas Gerais e de Manutenção",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2.5637,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Provisões no Exercício",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.414148,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 2,
+    "_conf": 0.65
+   },
+   {
+    "rawLabel": "(-) DESPESAS OPERACIONAIS PAGAS COM RECURSOS PÚBLICOS",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.070526,
+    "disclosureLevel": "aggregated",
+    "_pag": 5,
+    "_escalon": 2,
+    "_conf": 0.45
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2017-12-31",
+   "sourceId": "novorizontino-br-dre-e-fluxo-de-caixa-2017",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.140202,
+   "tax": 0,
+   "sinDesglose": [
+    {
+     "renglon": "RENDAS DE JOGOS, PATROCÍNIOS, LOCAÇÕES E OUTRAS RECEITAS OPERACIONAIS",
+     "lado": "revenue",
+     "importe": 8.019563,
+     "motivo": "el documento no desglosa este renglón"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 8.146239,
+   "officialTotalExpenses": 12.780546,
+   "officialPAT": -4.774509
+  },
+  "source": {
+   "id": "novorizontino-br-dre-e-fluxo-de-caixa-2017",
+   "clubId": "novorizontino-br",
+   "title": "Grêmio Novorizontino Sociedade Anônima do Futebol — dre-e-fluxo-de-caixa-2017 (ejercicio 2017)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2017-12-31",
+  "evidencia": {
+   "pagina": 1,
+   "texto": "BALANÇO PATRIMONIAL | Período: 01/01/2017 a 31/12/2017 | PÁGINA: 0000"
+  },
+  "confianza": "alta",
+  "anual": "calendario"
+ },
+ "clubId": "novorizontino-br",
+ "year": 2017,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "RENDAS DE JOGOS, PATROCÍNIOS, LOCAÇÕES E OUTRAS RECEITAS OPERACIONAIS",
+   "page": 5,
+   "native": 8.019563,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 8.019563,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "ajuste manual (Admin/ajustes-manuales.jsonl, 2026-10-03): Guido 2026-10-02: el documento 2017 junta jogos, patrocínios, locações y el repasse de la federación (TV) en un solo renglón; el 2018 dice que 3.499 mil de 2017 eran repasse",
+   "enLista": true,
+   "ladoRechazado": false,
+   "destino": "revenue",
+   "amountNative": 8.019563
+  },
+  {
+   "label": "Recuperação de Despesas",
+   "page": 5,
+   "native": 0.05615,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.05615,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.05615
+  },
+  {
+   "label": "RECURSOS PUBLICOS",
+   "page": 5,
+   "native": 0.070526,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.070526,
+   "cat": "other_income",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.070526
+  },
+  {
+   "label": "(-) Ordenados, Salários, Encargos Sociais e Trabalhistas e Outros",
+   "page": 5,
+   "native": 6.604131,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 6.604131,
+   "cat": "wages_squad",
+   "conf": 0.55,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -6.604131
+  },
+  {
+   "label": "Despesas Administrativas",
+   "page": 5,
+   "native": 3.128041,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 3.128041,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.128041
+  },
+  {
+   "label": "Despesas Gerais e de Manutenção",
+   "page": 5,
+   "native": 2.5637,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 2.5637,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.5637
+  },
+  {
+   "label": "Provisões no Exercício",
+   "page": 5,
+   "native": 0.414148,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.414148,
+   "cat": "admin_general_expense",
+   "conf": 0.65,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.414148
+  },
+  {
+   "label": "(-) DESPESAS OPERACIONAIS PAGAS COM RECURSOS PÚBLICOS",
+   "page": 5,
+   "native": 0.070526,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado (lectura 5: hoja))",
+   "signoFijo": 0.070526,
+   "cat": "other_expenses",
+   "conf": 0.45,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "enCola": true,
+   "destino": "expense",
+   "amountNative": -0.070526
+  },
+  {
+   "label": "Receitas Financeiras Líquidas",
+   "page": null,
+   "native": -0.140202,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado (lectura 5: hoja))": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 8.146239,
+  "expSum": -12.780546,
+  "officialTotalRevenue": 8.146239,
+  "officialTotalExpenses": 12.780546,
+  "officialPAT": -4.774509,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -4.774509,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 8.146239
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 12.780546
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no aparece en los rosters cacheados de 2017 (br-serieA, br-serieB): puede haber jugado otra división",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding §17)"
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 3,
+  "lineasGasto": 5,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}

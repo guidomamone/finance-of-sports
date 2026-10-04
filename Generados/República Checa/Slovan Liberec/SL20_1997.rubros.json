@@ -1,0 +1,54 @@
+{
+ "md": "Clubes/República Checa/Slovan Liberec/SL20_1997.md",
+ "pdf": "Clubes/República Checa/Slovan Liberec/SL20_1997.pdf",
+ "club": "slovan-liberec",
+ "year": 1997,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:52.075Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "Tribuna",
+   "lado": "revenue",
+   "page": 14,
+   "section": "Odpisy - a.s. odepisuje daňově podle §31 + §32 Zákona o daních z příjmu. / - ocenitelná práva odepisuje účetně 5let-daňově podle §31 / HIM - 021 (v tis.Kč)",
+   "values": [
+    7.864
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Umělá tráva",
+   "lado": "revenue",
+   "page": 14,
+   "section": "Odpisy - a.s. odepisuje daňově podle §31 + §32 Zákona o daních z příjmu. / - ocenitelná práva odepisuje účetně 5let-daňově podle §31 / HIM - 021 (v tis.Kč)",
+   "values": [
+    8.043
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Oplocení",
+   "lado": "revenue",
+   "page": 14,
+   "section": "Odpisy - a.s. odepisuje daňově podle §31 + §32 Zákona o daních z příjmu. / - ocenitelná práva odepisuje účetně 5let-daňově podle §31 / HIM - 021 (v tis.Kč)",
+   "values": [
+    0.28
+   ],
+   "origen": "estado 11"
+  }
+ ]
+}

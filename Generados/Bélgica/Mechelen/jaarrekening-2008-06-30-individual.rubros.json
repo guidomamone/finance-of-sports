@@ -1,0 +1,62 @@
+{
+ "md": "Clubes/Bélgica/Mechelen/jaarrekening-2008-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/Mechelen/jaarrekening-2008-06-30-individual.pdf",
+ "club": "mechelen-be",
+ "year": 2008,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:55:12.239Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 4,
+  "notasUsadas": []
+ },
+ "ladoConocido": 4,
+ "rubros": [
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen … … nues",
+   "lado": "expense",
+   "page": 12,
+   "section": "Personeelskosten",
+   "values": [
+    2.162589
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen … …… … nnen neren neen",
+   "lado": "expense",
+   "page": 12,
+   "section": "Personeelskosten",
+   "values": [
+    0.203878
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen … …… nn.",
+   "lado": "expense",
+   "page": 12,
+   "section": "Personeelskosten",
+   "values": [
+    0.361596
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Andere personeelskosten … … … vn",
+   "lado": "expense",
+   "page": 12,
+   "section": "Personeelskosten",
+   "values": [
+    0.169237
+   ],
+   "origen": "estado 2"
+  }
+ ]
+}

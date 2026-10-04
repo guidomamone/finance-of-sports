@@ -1,0 +1,3627 @@
+{
+  "club": "anderlecht-be",
+  "year": 2011,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Anderlecht/jaarrekening-2011-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:54:13.676Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 158,
+    "space": 3
+  },
+  "scannedWarning": false,
+  "tableCount": 30,
+  "relevantTableCount": 3,
+  "tables": [
+    {
+      "page": 5,
+      "section": "BILAN APRES RÉPARTITION / ACTIF / ACTIFS IMMOBILISES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Immobilisations financières",
+          "values": [
+            "5.4/5.5.1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Entreprises liées",
+          "values": [
+            "5.14"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "ACTIFS CIRCULANTS / TOTAL DE L'ACTIF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "285/8",
+          "values": [
+            "125.543"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "29/58",
+          "values": [
+            "18.111.024"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "40/41 5.888.529 / 40 5.735.284 / 41 153.245 / 50/53 5.899.579 / 50",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "51/53",
+          "values": [
+            "5.899.579"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "416.705"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "4.233.390"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "35.437.036"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "N° BE 0823.379.451 C22 / PASSIF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CAPITAUX PROPRES 10/15",
+          "values": [
+            "1.315.417"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital 5.7 |",
+          "values": [
+            "2.500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital souscrit",
+          "values": [
+            "10.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital non appelé",
+          "values": [
+            "7.500.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Réserves immunisées 132 / Réserves disponibles 133 / Bénéfice (Perte) reporté(e) (#)/(-) 14 -1.184.583 / Subsides en capital 15 / Avance aux associés sur répartition de l'actif net 19",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "PROVISIONS ET IMPÔTS DIFFÉRÉS",
+          "values": [
+            "128.767"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisions pour risques et charges 160/5",
+          "values": [
+            "128.767"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Pensions et obligations similaires 160 / Charges fiscales 161 / Grosses réparations et gros entretien 162 / Autres risques et charges 5.8 | 163/5 128.767 / Impôts différés 168",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "DETTES 17/49",
+          "values": [
+            "33.992.852"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes à plus d'un an 59 |",
+          "values": [
+            "8.129.210"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes financières 170/4",
+          "values": [
+            "6.854.210"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "Emprunts subordonnés 170 / Emprunts obligataires non subordonnés 171 / Dettes de location-financement et assimilées 172",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Etablissements de crédit",
+          "values": [
+            "5.974.210"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres emprunts",
+          "values": [
+            "880.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes commerciales",
+          "values": [
+            "1.275.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Fournisseurs 1750 / Effets à payer 1751 1.275.000 / Acomptes recus sur commandes 176 / Autres dettes 178/9",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dettes à un an au plus 42/48",
+          "values": [
+            "16.743.483"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes à plus d'un an échéant dans l'année 59 |",
+          "values": [
+            "4.937.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes financières",
+          "values": [
+            "889.960"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Etablissements de crédit 430/8",
+          "values": [
+            "669.960"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres emprunts",
+          "values": [
+            "220.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes commerciales",
+          "values": [
+            "6.033.688"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fournisseurs 440/4",
+          "values": [
+            "6.033.688"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Effets à payer A41 / Acomptes recus sur commandes 46",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dettes fiscales, salariales et sociales 59 |",
+          "values": [
+            "4.872.495"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impôts 450/3",
+          "values": [
+            "1.946.200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rémunérations et charges sociales 454/9",
+          "values": [
+            "2.926.295"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres dettes 47/48",
+          "values": [
+            "9.841"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comptes de régularisation 5.9 | 492/3",
+          "values": [
+            "9.120.159"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DU PASSIF 10/49",
+          "values": [
+            "35.437.036"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "N° BE 0823.379.451 | C 3 / COMPTE DE RÉSULTATS",
+      "columns": [
+        "",
+        "Ann.",
+        "Codes",
+        "Exercice",
+        "Exercice précédent"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ventes et prestations",
+          "values": [
+            "",
+            "70/74",
+            "39.147.147",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Chiffre d'affaires",
+          "values": [
+            "5.10",
+            "70",
+            "31.775.511",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "En-cours de fabrication, produits finis et commandes en cours d'exécution: augmentation (réduction) (+)/(-)",
+          "values": [
+            "",
+            "71",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Production immobilisée",
+          "values": [
+            "",
+            "72",
+            "57.064",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres produits d'exploitation",
+          "values": [
+            "5.10",
+            "74",
+            "7.314.571",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Coût des ventes et des prestations",
+          "values": [
+            "",
+            "60/64",
+            "43.215.955",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Approvisionnements et marchandises",
+          "values": [
+            "",
+            "60",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Achats",
+          "values": [
+            "",
+            "600/8",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stocks: réduction (augmentation) (+)/(-)",
+          "values": [
+            "",
+            "609",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Services et biens divers",
+          "values": [
+            "",
+            "61",
+            "10.567.581",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rémunérations, charges sociales et pensions (+)/(-)",
+          "values": [
+            "5.10",
+            "62",
+            "24.421.769",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+          "values": [
+            "",
+            "630",
+            "5.171.003",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises) (+)/(-)",
+          "values": [
+            "",
+            "631/4",
+            "942.704",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisions pour risques et charges: dotations (utilisations et reprises) (+)/(-)",
+          "values": [
+            "5.10",
+            "635/7",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres charges d'exploitation",
+          "values": [
+            "5.10",
+            "640/8",
+            "2.112.899",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charges d'exploitation portées à l'actif au titre de frais de restructuration (-)",
+          "values": [
+            "",
+            "649",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bénéfice (Perte) d'exploitation (+)/(-)",
+          "values": [
+            "",
+            "9901",
+            "-4.068.808",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Produits financiers",
+          "values": [
+            "",
+            "75",
+            "53.395",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Produits des immobilisations financières",
+          "values": [
+            "",
+            "750",
+            "49.353",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Produits des actifs circulants",
+          "values": [
+            "",
+            "751",
+            "928",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres produits financiers",
+          "values": [
+            "5.11",
+            "752/9",
+            "3.113",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charges financières",
+          "values": [
+            "5.11",
+            "65",
+            "221.406",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Charges des dettes",
+          "values": [
+            "",
+            "650",
+            "196.301",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Réductions de valeur sur actifs circulants autres que stocks, commandes en cours et créances commerciales: dotations (reprises) (+)/(-)",
+          "values": [
+            "",
+            "651",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres charges financières",
+          "values": [
+            "",
+            "652/9",
+            "25.105",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bénéfice (Perte) courant(e) avant impôts (+)/(-)",
+          "values": [
+            "",
+            "9902",
+            "-4.236.820",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Produits exceptionnels",
+          "values": [
+            "",
+            "76",
+            "3.181.004",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Reprises d'amortissements et de réductions de valeur sur immobilisations incorporelles et corporelles",
+          "values": [
+            "",
+            "760",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reprises de réductions de valeur sur immobilisations financières",
+          "values": [
+            "",
+            "761",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reprises de provisions pour risques et charges exceptionnels",
+          "values": [
+            "",
+            "762",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plus-values sur réalisation d'actifs immobilisés",
+          "values": [
+            "",
+            "763",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres produits exceptionnels",
+          "values": [
+            "5.11",
+            "764/9",
+            "3.181.004",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charges exceptionnelles",
+          "values": [
+            "",
+            "66",
+            "128.767",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Amortissements et réductions de valeur exceptionnels sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+          "values": [
+            "",
+            "660",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Réductions de valeur sur immobilisations financières",
+          "values": [
+            "",
+            "661",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisions pour risques et charges exceptionnels: dotations (utilisations) (+)/(-)",
+          "values": [
+            "",
+            "662",
+            "128.767",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Moins-values sur réalisation d'actifs immobilisés",
+          "values": [
+            "",
+            "663",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres charges exceptionnelles",
+          "values": [
+            "5.11",
+            "664/8",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charges exceptionnelles portées à l'actif au titre de frais de restructuration (-)",
+          "values": [
+            "",
+            "669",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bénéfice (Perte) de l'exercice avant impôts (+)/(-)",
+          "values": [
+            "",
+            "9903",
+            "-1.184.583",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Prélèvements sur les impôts différés",
+          "values": [
+            "",
+            "780",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Transfert aux impôts différés",
+          "values": [
+            "",
+            "680",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Impôts sur le résultat (+)/(-)",
+          "values": [
+            "5.12",
+            "67/77",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Impôts",
+          "values": [
+            "",
+            "670/3",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 13,
+      "section": "N° BE 0823.379.451 | C 5.3.2",
+      "columns": [
+        "",
+        "Codes",
+        "Exercice",
+        "Exercice précédent"
+      ],
+      "rows": [
+        {
+          "rawLabel": "INSTALLATIONS, MACHINES ET OUTILLAGE",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Valeur d'acquisition au terme de l'exercice",
+          "values": [
+            "8192P",
+            "XXXXXXXXXX",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutations de l'exercice",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Acquisitions, y compris la production immobilisée",
+          "values": [
+            "8162",
+            "230.948",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cessions et désaffectations",
+          "values": [
+            "8172",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferts d'une rubrique à une autre (+)/(-)",
+          "values": [
+            "8182",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valeur d'acquisition au terme de l'exercice",
+          "values": [
+            "8192",
+            "230.948",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Plus-values au terme de l'exercice",
+          "values": [
+            "8252P",
+            "XXXXXXXXXX",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutations de l'exercice",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actées",
+          "values": [
+            "8212",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acquises de tiers",
+          "values": [
+            "8222",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annulées",
+          "values": [
+            "8232",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transférées d'une rubrique à une autre (+)/(-)",
+          "values": [
+            "8242",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plus-values au terme de l'exercice",
+          "values": [
+            "8252",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Amortissements et réductions de valeur au terme de l'exercice",
+          "values": [
+            "8322P",
+            "XXXXXXXXXX",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutations de l'exercice",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actés",
+          "values": [
+            "8272",
+            "11.016",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Repris",
+          "values": [
+            "8282",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acquis de tiers",
+          "values": [
+            "8292",
+            "173.415",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annulés à la suite de cessions et désaffectations",
+          "values": [
+            "8302",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transférés d'une rubrique à une autre (+)/(-)",
+          "values": [
+            "8312",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortissements et réductions de valeur au terme de l'exercice",
+          "values": [
+            "8322",
+            "184.431",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE",
+          "values": [
+            "23",
+            "46.517",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "N° BE 0823.379.451 | C 5.3.3",
+      "columns": [
+        "",
+        "Codes",
+        "Exercice",
+        "Exercice précédent"
+      ],
+      "rows": [
+        {
+          "rawLabel": "MOBILIER ET MATÉRIEL ROULANT",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Valeur d'acquisition au terme de l'exercice",
+          "values": [
+            "8193P",
+            "XXXXXXXXXX",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutations de l'exercice",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Acquisitions, y compris la production immobilisée",
+          "values": [
+            "8163",
+            "930.901",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cessions et désaffectations",
+          "values": [
+            "8173",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferts d'une rubrique à une autre (+)/(-)",
+          "values": [
+            "8183",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valeur d'acquisition au terme de l'exercice",
+          "values": [
+            "8193",
+            "930.901",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Plus-values au terme de l'exercice",
+          "values": [
+            "8253P",
+            "XXXXXXXXXX",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutations de l'exercice",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actées",
+          "values": [
+            "8213",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acquises de tiers",
+          "values": [
+            "8223",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annulées",
+          "values": [
+            "8233",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transférées d'une rubrique à une autre (+)/(-)",
+          "values": [
+            "8243",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plus-values au terme de l'exercice",
+          "values": [
+            "8253",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Amortissements et réductions de valeur au terme de l'exercice",
+          "values": [
+            "8323P",
+            "XXXXXXXXXX",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutations de l'exercice",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actés",
+          "values": [
+            "8273",
+            "63.039",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Repris",
+          "values": [
+            "8283",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acquis de tiers",
+          "values": [
+            "8293",
+            "614.771",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annulés à la suite de cessions et désaffectations",
+          "values": [
+            "8303",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transférés d'une rubrique à une autre (+)/(-)",
+          "values": [
+            "8313",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortissements et réductions de valeur au terme de l'exercice",
+          "values": [
+            "8323",
+            "677.811",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE",
+          "values": [
+            "24",
+            "253.090",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": "N° BE 0823.379.451 | C 5.7 / ETAT DU CAPITAL ET STRUCTURE DE L'ACTIONNARIAT",
+      "columns": [
+        "",
+        "Codes",
+        "Exercice",
+        "Exercice précédent"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ETAT DU CAPITAL",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Capital social",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Capital souscrit au terme de l'exercice",
+          "values": [
+            "100P",
+            "XXXXXXXXXX",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital souscrit au terme de l'exercice",
+          "values": [
+            "100",
+            "10.000.000",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": null,
+      "columns": [
+        "",
+        "Codes",
+        "Montants",
+        "Nombre d'actions"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Modifications au cours de l'exercice",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Constitution de la société",
+          "values": [
+            "",
+            "10.000.000",
+            "2.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Représentation du capital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Catégories d'actions",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Actions sans désignation de valeur nominale",
+          "values": [
+            "",
+            "10.000.000",
+            "2.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Actions nominatives",
+          "values": [
+            "8702",
+            "XXXXXXXXXX",
+            "2.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Actions au porteur et/ou dématérialisées",
+          "values": [
+            "8703",
+            "XXXXXXXXXX",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": null,
+      "columns": [
+        "",
+        "Codes",
+        "Montant non appelé",
+        "Montant appelé non versé"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capital non libéré",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Capital non appelé",
+          "values": [
+            "101",
+            "7.500.000",
+            "XXXXXXXXXX"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital appelé, non versé",
+          "values": [
+            "8712",
+            "XXXXXXXXXX",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Actionnaires redevables de libération",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Roger Vanden Stock",
+          "values": [
+            "",
+            "1.425.000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Philippe Collin",
+          "values": [
+            "",
+            "375.000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COBOCO, société civile",
+          "values": [
+            "",
+            "645.000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Julie Vanden Stock",
+          "values": [
+            "",
+            "750.000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Claire Vanden Stock",
+          "values": [
+            "",
+            "750.000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Philippe Collin et CORO, société civile de droit commun.",
+          "values": [
+            "",
+            "450.000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alexandre Van Damme",
+          "values": [
+            "",
+            "187.500",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Etienne Davignon",
+          "values": [
+            "",
+            "183.750",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vincent Davignon",
+          "values": [
+            "",
+            "3.750",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MV CONSTRUCT sprl",
+          "values": [
+            "",
+            "750.000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Paul Goosens",
+          "values": [
+            "",
+            "375.000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "David Mourlon Beernaert",
+          "values": [
+            "",
+            "187.500",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Samantha Mourlon Beernaert",
+          "values": [
+            "",
+            "187.500",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tanguy Mourlon Beernaert",
+          "values": [
+            "",
+            "187.500",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Emmanuel Van Innis",
+          "values": [
+            "",
+            "187.500",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HOLDING IMMOTUR SCA",
+          "values": [
+            "",
+            "187.500",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Oliver Davignon",
+          "values": [
+            "",
+            "375.000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pascal Minne",
+          "values": [
+            "",
+            "187.500",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NELISSEN GRADE sprl",
+          "values": [
+            "",
+            "37.500",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Michel Cornelis",
+          "values": [
+            "",
+            "37.500",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Frans Callewaert",
+          "values": [
+            "",
+            "3.750",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Willy De Louvien",
+          "values": [
+            "",
+            "3.750",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Félix Désiron",
+          "values": [
+            "",
+            "3.750",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jean Dewinne",
+          "values": [
+            "",
+            "3.750",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Roger Francq",
+          "values": [
+            "",
+            "3.750",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Paul Huybens",
+          "values": [
+            "",
+            "3.750",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HUYLEBROEK SPORTSMED bvba",
+          "values": [
+            "",
+            "3.750",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Emile Servranckx",
+          "values": [
+            "",
+            "3.750",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": null,
+      "columns": [
+        "",
+        "Codes",
+        "Exercice"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Actions propres",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Détenues par la société elle-même",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Montant du capital détenu",
+          "values": [
+            "8721",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nombre d'actions correspondantes",
+          "values": [
+            "8722",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Détenues par ses filiales",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Montant du capital détenu",
+          "values": [
+            "8731",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nombre d'actions correspondantes",
+          "values": [
+            "8732",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Engagement d'émission d'actions",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Suite à l'exercice de droits de conversion",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Montant des emprunts convertibles en cours",
+          "values": [
+            "8740",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "N° BE 0823.379.451 C5.9 / ETAT DES DETTES ET COMPTES DE REGULARISATION DU PASSIF / VENTILATION DES DETTES À L'ORIGINE À PLUS D'UN AN, EN FONCTION DE LEUR DURÉE / RÉSIDUELLE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dettes commerciales 8861",
+          "values": [
+            "4.937.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fournisseurs 8871",
+          "values": [
+            "4.937.500"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "Dettes ayant plus de 5 ans à courir / Dettes financières 8803 6.854.210 / Emprunts subordonnés 8813 / Emprunts obligataires non subordonnés 8823 / Dettes de location-financement et assimilées 8833",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Etablissements de crédit 8843",
+          "values": [
+            "5.974.210"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres emprunts 8853",
+          "values": [
+            "880.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes commerciales 8863",
+          "values": [
+            "1.275.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "IMPÔTS ET TAXES / IMPÔTS SUR LE RÉSULTAT",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Latences actives 9141",
+          "values": [
+            "901.017"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pertes fiscales cumulées, déductibles des bénéfices taxables ultérieurs 9142",
+          "values": [
+            "901.017"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "TAXES SUR LA VALEUR AJOUTÉE ET IMPÔTS À CHARGE DE TIERS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "A l'entreprise (déductibles) 9145",
+          "values": [
+            "3.038.511"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Par l'entreprise 9146",
+          "values": [
+            "4.396.188"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": null,
+      "columns": [
+        "ENTREPRISES LIÉES",
+        "Codes",
+        "Exercice",
+        "Exercice précédent"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Immobilisations financières",
+          "values": [
+            "280/1",
+            "321.987",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Participations",
+          "values": [
+            "280",
+            "321.987",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances subordonnées",
+          "values": [
+            "9271",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres créances",
+          "values": [
+            "9281",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances sur les entreprises liées",
+          "values": [
+            "9291",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A plus d'un an",
+          "values": [
+            "9301",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A un an au plus",
+          "values": [
+            "9311",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Placements de trésorerie",
+          "values": [
+            "9321",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actions",
+          "values": [
+            "9331",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances",
+          "values": [
+            "9341",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes",
+          "values": [
+            "9351",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A plus d'un an",
+          "values": [
+            "9361",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A un an au plus",
+          "values": [
+            "9371",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Garanties personnelles et réelles",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Constituées ou irrévocablement promises par l'entreprise pour sûreté de dettes ou d'engagements d'entreprises liées",
+          "values": [
+            "9381",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Constituées ou irrévocablement promises par des entreprises liées pour sûreté de dettes ou d'engagements de l'entreprise",
+          "values": [
+            "9391",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres engagements financiers significatifs",
+          "values": [
+            "9401",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Résultats financiers",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Produits des immobilisations financières",
+          "values": [
+            "9421",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Produits des actifs circulants",
+          "values": [
+            "9431",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres produits financiers",
+          "values": [
+            "9441",
+            "3.113",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charges des dettes",
+          "values": [
+            "9461",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres charges financières",
+          "values": [
+            "9471",
+            "25.105",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cession d'actifs immobilisés",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Plus-values réalisées",
+          "values": [
+            "9481",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Moins-values réalisées",
+          "values": [
+            "9491",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ENTREPRISES AVEC UN LIEN DE PARTICIPATION",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Immobilisations financières",
+          "values": [
+            "282/3",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Participations",
+          "values": [
+            "282",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances subordonnées",
+          "values": [
+            "9272",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres créances",
+          "values": [
+            "9282",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créances",
+          "values": [
+            "9292",
+            "227.883",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A plus d'un an",
+          "values": [
+            "9302",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A un an au plus",
+          "values": [
+            "9312",
+            "227.883",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes",
+          "values": [
+            "9352",
+            "98.876",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A plus d'un an",
+          "values": [
+            "9362",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A un an au plus",
+          "values": [
+            "9372",
+            "98.876",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 29,
+      "section": null,
+      "columns": [
+        "TRANSACTIONS AVEC DES PARTIES LIÉES EFFECTUÉES DANS DES CONDITIONS AUTRES QUE CELLES DU MARCHÉ",
+        "Exercice"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Mention de telles transactions, si elles sont significatives, y compris le montant et indication de la nature des rapports avec la partie liée, ainsi que toute autre information sur les transactions qui serait nécessaire pour obtenir une meilleure compréhension de la position financière de la société",
+          "values": [
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "N° BE 0823.379.451 | C 6 / BILAN SOCIAL / Etat des personnes occupées / Travailleurs inscrits au registre du personnel",
+      "columns": [
+        "Au cours de l'exercice et de l'exercice précédent",
+        "Codes",
+        "1. Temps plein (exercice)",
+        "2. Temps partiel (exercice)",
+        "3. Total (T) ou total en équivalents temps plein (ETP) (exercice)",
+        "3P. Total (T) ou total en équivalents temps plein (ETP) (exercice précédent)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Nombre moyen de travailleurs",
+          "values": [
+            "100",
+            "25,5",
+            "22,9",
+            "35,6 ETP",
+            "ETP"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nombre d'heures effectivement prestées",
+          "values": [
+            "101",
+            "39.062",
+            "16.040",
+            "55.102 T",
+            "T"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Frais de personnel",
+          "values": [
+            "102",
+            "24.004.827",
+            "416.942",
+            "24.421.769 T",
+            "T"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Montant des avantages accordés en sus du salaire",
+          "values": [
+            "103",
+            "XXXXXXX",
+            "XXXXXXX",
+            "6.093 T",
+            "T"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": null,
+      "columns": [
+        "A la date de clôture de l'exercice",
+        "Codes",
+        "1. Temps plein",
+        "2. Temps partiel",
+        "3. Total en équivalents temps plein"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Nombre de travailleurs inscrits au registre du personnel",
+          "values": [
+            "105",
+            "102",
+            "92",
+            "142,4"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Par type de contrat de travail",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Contrat à durée indéterminée",
+          "values": [
+            "110",
+            "99",
+            "31",
+            "113"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrat à durée déterminée",
+          "values": [
+            "111",
+            "3",
+            "61",
+            "29,4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrat pour l'exécution d'un travail nettement défini",
+          "values": [
+            "112",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrat de remplacement",
+          "values": [
+            "113",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Par sexe et niveau d'études",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Hommes",
+          "values": [
+            "120",
+            "82",
+            "41",
+            "98,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau primaire",
+          "values": [
+            "1200",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau secondaire",
+          "values": [
+            "1201",
+            "82",
+            "41",
+            "98,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau supérieur non universitaire",
+          "values": [
+            "1202",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau universitaire",
+          "values": [
+            "1203",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Femmes",
+          "values": [
+            "121",
+            "20",
+            "51",
+            "44,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau primaire",
+          "values": [
+            "1210",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau secondaire",
+          "values": [
+            "1211",
+            "20",
+            "51",
+            "44,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau supérieur non universitaire",
+          "values": [
+            "1212",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "de niveau universitaire",
+          "values": [
+            "1213",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Par catégorie professionnelle",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Personnel de direction",
+          "values": [
+            "130",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Employés",
+          "values": [
+            "134",
+            "86",
+            "89",
+            "124,6"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ouvriers",
+          "values": [
+            "132",
+            "16",
+            "3",
+            "17,8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres",
+          "values": [
+            "133",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 32,
+      "section": "N° BE 0823.379.451 | C 6 / Personnel intérimaire et personnes mises à la disposition de l'entreprise",
+      "columns": [
+        "Au cours de l'exercice",
+        "Codes",
+        "1. Personnel intérimaire",
+        "2. Personnes mises à la disposition de l'entreprise"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Nombre moyen de personnes occupées",
+          "values": [
+            "150",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nombre d'heures effectivement prestées",
+          "values": [
+            "151",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Frais pour l'entreprise",
+          "values": [
+            "152",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 32,
+      "section": "Tableau des mouvements du personnel au cours de l'exercice / Entrées",
+      "columns": [
+        "",
+        "Codes",
+        "1. Temps plein",
+        "2. Temps partiel",
+        "3. Total en équivalents temps plein"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Nombre de travailleurs inscrits au registre du personnel au cours de l'exercice",
+          "values": [
+            "205",
+            "103",
+            "92",
+            "143,4"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Par type de contrat de travail",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Contrat à durée indéterminée",
+          "values": [
+            "210",
+            "100",
+            "31",
+            "114"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrat à durée déterminée",
+          "values": [
+            "211",
+            "3",
+            "61",
+            "29,4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrat pour l'exécution d'un travail nettement défini",
+          "values": [
+            "212",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrat de remplacement",
+          "values": [
+            "213",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 32,
+      "section": "Sorties",
+      "columns": [
+        "",
+        "Codes",
+        "1. Temps plein",
+        "2. Temps partiel",
+        "3. Total en équivalents temps plein"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Nombre de travailleurs dont la date de fin de contrat a été inscrite au registre du personnel au cours de l'exercice",
+          "values": [
+            "305",
+            "3",
+            "",
+            "3"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Par type de contrat de travail",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Contrat à durée indéterminée",
+          "values": [
+            "310",
+            "3",
+            "",
+            "3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrat à durée déterminée",
+          "values": [
+            "311",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrat pour l'exécution d'un travail nettement défini",
+          "values": [
+            "312",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrat de remplacement",
+          "values": [
+            "313",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Par motif de fin de contrat",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Pension",
+          "values": [
+            "340",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prépension",
+          "values": [
+            "341",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Licenciement",
+          "values": [
+            "342",
+            "1",
+            "",
+            "1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autre motif",
+          "values": [
+            "343",
+            "2",
+            "",
+            "2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dont: le nombre de personnes qui continuent, au moins à mi-temps, à prester des services au profit de l'entreprise comme indépendants",
+          "values": [
+            "350",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": "Bilan après répartition",
+      "columns": [
+        "ACTIF",
+        "30.06.2011",
+        "%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Actifs immobilisés",
+          "values": [
+            "17.326.012,35",
+            "48.89"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Créances à plus d'un an",
+          "values": [
+            "1.672.820,80",
+            "4.72"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Sous-total",
+          "values": [
+            "18.998.833,15",
+            "53.61"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actifs circulants à un an au plus",
+          "values": [
+            "16.438.203,16",
+            "46.39"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL DE L'ACTIF",
+          "values": [
+            "35.437.036,31",
+            "100.00"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": null,
+      "columns": [
+        "PASSIF",
+        "30.06.2011",
+        "%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capitaux propres",
+          "values": [
+            "1.315.417,17",
+            "3.71"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Provisions et impôts différés",
+          "values": [
+            "128.767,18",
+            "0.36"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Dettes à plus d'un an",
+          "values": [
+            "8.129.210,00",
+            "22.94"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Sous-total",
+          "values": [
+            "9.573.394,35",
+            "27.01"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Dettes à un an au plus",
+          "values": [
+            "16.743.483,34",
+            "47.25"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Comptes de régularisation",
+          "values": [
+            "9.120.158,62",
+            "25.74"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL DU PASSIF",
+          "values": [
+            "35.437.036,31",
+            "100.00"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": null,
+      "columns": [
+        "Compte de résultats",
+        "30.06.2011",
+        "%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Chiffre d'affaires",
+          "values": [
+            "31.775.511,25",
+            "81.17"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Autres Produits",
+          "values": [
+            "7.371.635,35",
+            "18.83"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total Ventes et Prestations",
+          "values": [
+            "39.147.146,60",
+            "100.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Frais de personnel",
+          "values": [
+            "24.421.768,73",
+            "62.38"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Amortissements",
+          "values": [
+            "5.171.003,32",
+            "13.21"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Autres charges d'exploitation",
+          "values": [
+            "13.623.183,00",
+            "34.80"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bénéfice (Perte) d'exploitation",
+          "values": [
+            "-4.068.808,45",
+            "-10.39"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Résultat financier",
+          "values": [
+            "-168.011,29",
+            "-0.43"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Produits exceptionnels",
+          "values": [
+            "3.181.004,09",
+            "8.13"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Charges exceptionnelles",
+          "values": [
+            "-128.767,18",
+            "-0.33"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Impôt sur le résultat",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bénéfice (Perte) de l'exercice",
+          "values": [
+            "-1.184.582,83",
+            "-3.03"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bénéfice (perte) de l'exercice à affecter",
+          "values": [
+            "-1.184.582,83",
+            "-3.03"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 6,
+      "section": "Effets à payer A41 / Acomptes recus sur commandes 46",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL DU PASSIF 10/49",
+      "target": "35.437.036",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-16562046"
+    },
+    {
+      "page": 37,
+      "section": "Bilan après répartition",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL DE L'ACTIF",
+      "target": "35.437.036,31",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "18998833.14999999"
+    },
+    {
+      "page": 37,
+      "section": "Bilan après répartition",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DE L'ACTIF",
+      "target": "100.00",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "53.610000000000014"
+    },
+    {
+      "page": 37,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL DU PASSIF",
+      "target": "35.437.036,31",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "9573394.349999994"
+    },
+    {
+      "page": 37,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DU PASSIF",
+      "target": "100.00",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "27.010000000000005"
+    },
+    {
+      "page": 37,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Ventes et Prestations",
+      "target": "39.147.146,60",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Ventes et Prestations",
+      "target": "100.00",
+      "addendCount": 2,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 55,
+    "results": [
+      {
+        "label": "DETTES 17/49",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DETTES 17/49",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dettes à plus d'un an 59 |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dettes à plus d'un an 59 |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dettes financières 170/4",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dettes financières 170/4",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ventes et prestations",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ventes et prestations",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Chiffre d'affaires",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Chiffre d'affaires",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "En-cours de fabrication, produits finis et commandes en cours d'exécution: augmentation (réduction) (+)/(-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "En-cours de fabrication, produits finis et commandes en cours d'exécution: augmentation (réduction) (+)/(-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Production immobilisée",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Production immobilisée",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres produits d'exploitation",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres produits d'exploitation",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Coût des ventes et des prestations",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Coût des ventes et des prestations",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Approvisionnements et marchandises",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Approvisionnements et marchandises",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Achats",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Achats",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Stocks: réduction (augmentation) (+)/(-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Stocks: réduction (augmentation) (+)/(-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Services et biens divers",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Services et biens divers",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Rémunérations, charges sociales et pensions (+)/(-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Rémunérations, charges sociales et pensions (+)/(-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises) (+)/(-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises) (+)/(-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisions pour risques et charges: dotations (utilisations et reprises) (+)/(-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisions pour risques et charges: dotations (utilisations et reprises) (+)/(-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres charges d'exploitation",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres charges d'exploitation",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Charges d'exploitation portées à l'actif au titre de frais de restructuration (-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Charges d'exploitation portées à l'actif au titre de frais de restructuration (-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bénéfice (Perte) d'exploitation (+)/(-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bénéfice (Perte) d'exploitation (+)/(-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Produits financiers",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Produits financiers",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Produits des immobilisations financières",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Produits des immobilisations financières",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Produits des actifs circulants",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Produits des actifs circulants",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres produits financiers",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres produits financiers",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Charges financières",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Charges financières",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Charges des dettes",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Charges des dettes",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Réductions de valeur sur actifs circulants autres que stocks, commandes en cours et créances commerciales: dotations (reprises) (+)/(-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Réductions de valeur sur actifs circulants autres que stocks, commandes en cours et créances commerciales: dotations (reprises) (+)/(-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres charges financières",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres charges financières",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bénéfice (Perte) courant(e) avant impôts (+)/(-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bénéfice (Perte) courant(e) avant impôts (+)/(-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Produits exceptionnels",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Produits exceptionnels",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reprises d'amortissements et de réductions de valeur sur immobilisations incorporelles et corporelles",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reprises d'amortissements et de réductions de valeur sur immobilisations incorporelles et corporelles",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reprises de réductions de valeur sur immobilisations financières",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reprises de réductions de valeur sur immobilisations financières",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reprises de provisions pour risques et charges exceptionnels",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reprises de provisions pour risques et charges exceptionnels",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Plus-values sur réalisation d'actifs immobilisés",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Plus-values sur réalisation d'actifs immobilisés",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres produits exceptionnels",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres produits exceptionnels",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Charges exceptionnelles",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Charges exceptionnelles",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortissements et réductions de valeur exceptionnels sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortissements et réductions de valeur exceptionnels sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Réductions de valeur sur immobilisations financières",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Réductions de valeur sur immobilisations financières",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisions pour risques et charges exceptionnels: dotations (utilisations) (+)/(-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisions pour risques et charges exceptionnels: dotations (utilisations) (+)/(-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Moins-values sur réalisation d'actifs immobilisés",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Moins-values sur réalisation d'actifs immobilisés",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres charges exceptionnelles",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres charges exceptionnelles",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Charges exceptionnelles portées à l'actif au titre de frais de restructuration (-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Charges exceptionnelles portées à l'actif au titre de frais de restructuration (-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bénéfice (Perte) de l'exercice avant impôts (+)/(-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bénéfice (Perte) de l'exercice avant impôts (+)/(-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prélèvements sur les impôts différés",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prélèvements sur les impôts différés",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transfert aux impôts différés",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transfert aux impôts différés",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impôts sur le résultat (+)/(-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impôts sur le résultat (+)/(-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impôts",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impôts",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres Produits",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Autres Produits",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Frais de personnel",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Frais de personnel",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortissements",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortissements",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bénéfice (Perte) d'exploitation",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bénéfice (Perte) d'exploitation",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Résultat financier",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Résultat financier",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impôt sur le résultat",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impôt sur le résultat",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bénéfice (Perte) de l'exercice",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bénéfice (Perte) de l'exercice",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bénéfice (perte) de l'exercice à affecter",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bénéfice (perte) de l'exercice à affecter",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Anderlecht",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "5 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ]
+}

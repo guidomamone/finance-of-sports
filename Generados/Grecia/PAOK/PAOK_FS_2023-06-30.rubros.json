@@ -1,0 +1,362 @@
+{
+ "md": "Clubes/Grecia/PAOK/PAOK_FS_2023-06-30.md",
+ "pdf": "Clubes/Grecia/PAOK/PAOK_FS_2023-06-30.pdf",
+ "club": "paok",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:03:09.511Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 34,
+  "notasUsadas": []
+ },
+ "ladoConocido": 30,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών",
+   "lado": "revenue",
+   "page": 16,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ χρήσης 1/7/2022-30/06/2023",
+   "values": [
+    27.845233
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Κόστος Λειτουργίας Ποδοσφαιρικού Τμήματος",
+   "lado": "expense",
+   "page": 16,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ χρήσης 1/7/2022-30/06/2023",
+   "values": [
+    -42.256606
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 16,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ χρήσης 1/7/2022-30/06/2023",
+   "values": [
+    0.365796
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 16,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ χρήσης 1/7/2022-30/06/2023",
+   "values": [
+    -5.071168
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 16,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ χρήσης 1/7/2022-30/06/2023",
+   "values": [
+    -2.645996
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "revenue",
+   "page": 16,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ χρήσης 1/7/2022-30/06/2023",
+   "values": [
+    0.000111
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 16,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ χρήσης 1/7/2022-30/06/2023",
+   "values": [
+    -0.558923
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Υπόλοιπα 1/7/2021",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΗΣ ΓΙΑ ΤΗ ΧΡΗΣΗ 30/06/2023",
+   "values": [
+    116257.4574
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Μεταβολές στοιχείων στην περίοδο",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΗΣ ΓΙΑ ΤΗ ΧΡΗΣΗ 30/06/2023",
+   "values": [
+    3599.997
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Υπόλοιπα 1/7/2022",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΗΣ ΓΙΑ ΤΗ ΧΡΗΣΗ 30/06/2023",
+   "values": [
+    119857.4544
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Μεταβολές στοιχείων στην περίοδο",
+   "lado": null,
+   "page": 17,
+   "section": "PAOK FE / # ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΗΣ ΓΙΑ ΤΗ ΧΡΗΣΗ 30/06/2023",
+   "values": [
+    8499.699
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Κόστος τρέχουσας υπηρεσίας",
+   "lado": "expense",
+   "page": 29,
+   "section": "Τα ποσά, τα οποία έχουν καταχωριστεί στην κατάσταση αποτελεσμάτων αναλύονται παρακάτω:",
+   "values": [
+    0.0249
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Χρηματοοικονομικό κόστος",
+   "lado": "expense",
+   "page": 29,
+   "section": "Τα ποσά, τα οποία έχουν καταχωριστεί στην κατάσταση αποτελεσμάτων αναλύονται παρακάτω:",
+   "values": [
+    0.00234
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Κόστος περικοπών/διακανονισμού/τερματισμού υπηρεσίας",
+   "lado": "expense",
+   "page": 29,
+   "section": "Τα ποσά, τα οποία έχουν καταχωριστεί στην κατάσταση αποτελεσμάτων αναλύονται παρακάτω:",
+   "values": [
+    0.093444
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Αμοιβές προσωπικού",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Ποδοσφαιρικού Τμήματος",
+   "values": [
+    4242.05683
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Αμοιβές τρίτων",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Ποδοσφαιρικού Τμήματος",
+   "values": [
+    27593.51495
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Ποδοσφαιρικού Τμήματος",
+   "values": [
+    1551.47263
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Φόροι-Τέλη",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Ποδοσφαιρικού Τμήματος",
+   "values": [
+    124.71186
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Ποδοσφαιρικού Τμήματος",
+   "values": [
+    3194.41448
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Αποσβέσεις",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Ποδοσφαιρικού Τμήματος",
+   "values": [
+    5254.00473
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Αγορές Αναλωσίμων",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Ποδοσφαιρικού Τμήματος",
+   "values": [
+    296.43101
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Αμοιβές προσωπικού",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Διοίκησης",
+   "values": [
+    1667.32598
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Αμοιβές τρίτων",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Διοίκησης",
+   "values": [
+    1136.05694
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Διοίκησης",
+   "values": [
+    247.67897
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Φόροι-Τέλη",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Διοίκησης",
+   "values": [
+    255.49802
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Διοίκησης",
+   "values": [
+    1469.59514
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Αποσβέσεις",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Διοίκησης",
+   "values": [
+    211.21164
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Λοιπές Προβλέψεις",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Έξοδα Διοίκησης",
+   "values": [
+    83.80142
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Πρόστιμα αθλητικών φορέων",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Λοιπά Έξοδα",
+   "values": [
+    325.62
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Φορολογικά Πρόστιμα & προσαυξήσεις",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Λοιπά Έξοδα",
+   "values": [
+    112.60008
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Λοιπά έκτακτα έξοδα",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Λοιπά Έξοδα",
+   "values": [
+    511.8998
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Φόροι και προσαυξήσεις προηγ. Χρήσεων",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Λοιπά Έξοδα",
+   "values": [
+    55.90798
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Λοιπά έξοδα προηγ. Χρήσεων",
+   "lado": "expense",
+   "page": 33,
+   "section": "#### Λοιπά Έξοδα",
+   "values": [
+    21.62881
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Λοιπά έκτακτα έσοδα",
+   "lado": "revenue",
+   "page": 33,
+   "section": "#### Λοιπά Έσοδα και Κέρδη",
+   "values": [
+    426.28003
+   ],
+   "origen": "estado 28"
+  }
+ ]
+}

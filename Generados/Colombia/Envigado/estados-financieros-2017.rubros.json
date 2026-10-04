@@ -1,0 +1,960 @@
+{
+  "md": "Clubes/Colombia/Envigado/estados-financieros-2017.md",
+  "pdf": "Clubes/Colombia/Envigado/estados-financieros-2017.pdf",
+  "club": "envigado",
+  "year": 2017,
+  "numberFormat": "us (coma miles, punto decimal)",
+  "generatedAt": "2026-09-30T21:58:09.225Z",
+  "tieOuts": {
+    "cierran": 66,
+    "noCierran": 11
+  },
+  "warnings": [
+    "11 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "6 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": false,
+  "seleccion": {
+    "ok": true,
+    "filas": 91,
+    "notasUsadas": []
+  },
+  "ladoConocido": 85,
+  "rubros": [
+    {
+      "label": "SUELDOS",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        520138.687
+      ],
+      "origen": "estado 27",
+      "glosa": "SUELDOS"
+    },
+    {
+      "label": "BASICO APRENDIZ",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        8065.706
+      ],
+      "origen": "estado 27",
+      "glosa": "BASICO APRENDIZ"
+    },
+    {
+      "label": "VIATICOS",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        10081.423
+      ],
+      "origen": "estado 27",
+      "glosa": "VIATICOS"
+    },
+    {
+      "label": "AUXILIO DE TRANSPORTE",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        6637.343
+      ],
+      "origen": "estado 27",
+      "glosa": "AUXILIO DE TRANSPORTE"
+    },
+    {
+      "label": "CESANTIAS",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        45575.229
+      ],
+      "origen": "estado 27",
+      "glosa": "CESANTIAS"
+    },
+    {
+      "label": "INTERESES A LAS CESANTIAS",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        5045.874
+      ],
+      "origen": "estado 27",
+      "glosa": "INTERESES A LAS CESANTIAS"
+    },
+    {
+      "label": "PRIMA DE SERVICIOS",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        46068.029
+      ],
+      "origen": "estado 27",
+      "glosa": "PRIMA DE SERVICIOS"
+    },
+    {
+      "label": "VACACIONES",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        23861.884
+      ],
+      "origen": "estado 27",
+      "glosa": "VACACIONES"
+    },
+    {
+      "label": "BONIFICACIONES",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        19391.526
+      ],
+      "origen": "estado 27",
+      "glosa": "BONIFICACIONES"
+    },
+    {
+      "label": "DOTACION Y SUMINISTRO ATRABAJA",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        2433.167
+      ],
+      "origen": "estado 27",
+      "glosa": "DOTACION Y SUMINISTRO ATRABAJA"
+    },
+    {
+      "label": "INDEMNIZACIONES LABORALES",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        31205.171
+      ],
+      "origen": "estado 27",
+      "glosa": "INDEMNIZACIONES LABORALES"
+    },
+    {
+      "label": "CAPACITACION AL PERSONAL",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        895
+      ],
+      "origen": "estado 27",
+      "glosa": "CAPACITACION AL PERSONAL"
+    },
+    {
+      "label": "GASTOS DEPORTIVOS Y RECREACION",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        16371.5
+      ],
+      "origen": "estado 27",
+      "glosa": "GASTOS DEPORTIVOS Y RECREACION"
+    },
+    {
+      "label": "APORTES ADMINIS DE RIESGOS PRO",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        2784.387
+      ],
+      "origen": "estado 27",
+      "glosa": "APORTES ADMINIS DE RIESGOS PRO"
+    },
+    {
+      "label": "APORTES A E.P.S",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        22557.6
+      ],
+      "origen": "estado 27",
+      "glosa": "APORTES A E.P.S"
+    },
+    {
+      "label": "APORTES A FONDOS Y PENSIONES",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        54703.104
+      ],
+      "origen": "estado 27",
+      "glosa": "APORTES A FONDOS Y PENSIONES"
+    },
+    {
+      "label": "CAJA DE COMPENSACION",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        21731.463
+      ],
+      "origen": "estado 27",
+      "glosa": "CAJA DE COMPENSACION"
+    },
+    {
+      "label": "APORTES AL I.C.B.F",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        7620
+      ],
+      "origen": "estado 27",
+      "glosa": "APORTES AL I.C.B.F"
+    },
+    {
+      "label": "APORTES AL SENA",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        5080
+      ],
+      "origen": "estado 27",
+      "glosa": "APORTES AL SENA"
+    },
+    {
+      "label": "GASTOS MEDICOS Y DROGAS",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        54.15
+      ],
+      "origen": "estado 27",
+      "glosa": "GASTOS MEDICOS Y DROGAS"
+    },
+    {
+      "label": "OTROS",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        4141.671
+      ],
+      "origen": "estado 27",
+      "glosa": "OTROS"
+    },
+    {
+      "label": "REVISORIA FISCAL",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        32784.563
+      ],
+      "origen": "estado 27",
+      "glosa": "REVISORIA FISCAL"
+    },
+    {
+      "label": "AVALUOS",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        1400
+      ],
+      "origen": "estado 27",
+      "glosa": "AVALUOS"
+    },
+    {
+      "label": "ASESORIA JURIDICA",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        974609.343
+      ],
+      "origen": "estado 27",
+      "glosa": "ASESORIA JURIDICA"
+    },
+    {
+      "label": "ASESORIA FINANCIERA",
+      "lado": "expense",
+      "page": 24,
+      "section": "22. Gastos Operacionales / GASTOS ADMINISTRACION",
+      "values": [
+        79266.666
+      ],
+      "origen": "estado 27",
+      "glosa": "ASESORIA FINANCIERA"
+    },
+    {
+      "label": "DE CLIENTES",
+      "lado": "revenue",
+      "page": 17,
+      "section": "16. Anticipos y avances recibidos e ingresos para terceros",
+      "values": [
+        130
+      ],
+      "origen": "estado 15",
+      "glosa": "DE CLIENTES"
+    },
+    {
+      "label": "DE CLIENTES",
+      "lado": "revenue",
+      "page": 17,
+      "section": "16. Anticipos y avances recibidos e ingresos para terceros",
+      "values": [
+        100
+      ],
+      "origen": "estado 15",
+      "glosa": "DE CLIENTES"
+    },
+    {
+      "label": "DE CLIENTES",
+      "lado": "revenue",
+      "page": 17,
+      "section": "16. Anticipos y avances recibidos e ingresos para terceros",
+      "values": [
+        120
+      ],
+      "origen": "estado 15",
+      "glosa": "DE CLIENTES"
+    },
+    {
+      "label": "DE CLIENTES",
+      "lado": "revenue",
+      "page": 17,
+      "section": "16. Anticipos y avances recibidos e ingresos para terceros",
+      "values": [
+        2056146.186
+      ],
+      "origen": "estado 15",
+      "glosa": "DE CLIENTES"
+    },
+    {
+      "label": "DE CLIENTES",
+      "lado": "revenue",
+      "page": 17,
+      "section": "16. Anticipos y avances recibidos e ingresos para terceros",
+      "values": [
+        160
+      ],
+      "origen": "estado 15",
+      "glosa": "DE CLIENTES"
+    },
+    {
+      "label": "TAQUILLA",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        349.294
+      ],
+      "origen": "estado 20",
+      "glosa": "TAQUILLA"
+    },
+    {
+      "label": "ABONADOS",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        12.56
+      ],
+      "origen": "estado 20",
+      "glosa": "ABONADOS"
+    },
+    {
+      "label": "ESCUELAS DE FUTBOL",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        144.2015
+      ],
+      "origen": "estado 20",
+      "glosa": "ESCUELAS DE FUTBOL"
+    },
+    {
+      "label": "VENTA DE DERECHOS DEPORTIVOS -",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        14481.08931
+      ],
+      "origen": "estado 20",
+      "glosa": "VENTA DE DERECHOS DEPORTIVOS -"
+    },
+    {
+      "label": "PRESTAMO DE DERECHOS DEPORTIVO",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        9.2
+      ],
+      "origen": "estado 20",
+      "glosa": "PRESTAMO DE DERECHOS DEPORTIVO"
+    },
+    {
+      "label": "CONTRIBUCION DE SOLIDARIDAD",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        2898.32695
+      ],
+      "origen": "estado 20",
+      "glosa": "CONTRIBUCION DE SOLIDARIDAD"
+    },
+    {
+      "label": "DERECHOS TELEVISION ABIERTA",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        442.299797
+      ],
+      "origen": "estado 20",
+      "glosa": "DERECHOS TELEVISION ABIERTA"
+    },
+    {
+      "label": "DERECHOS TELEVISION INTERNACIONAL",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        140.194444
+      ],
+      "origen": "estado 20",
+      "glosa": "DERECHOS TELEVISION INTERNACIONAL"
+    },
+    {
+      "label": "DERECHOS TELEVISION ABIERT RCN",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        408.323832
+      ],
+      "origen": "estado 20",
+      "glosa": "DERECHOS TELEVISION ABIERT RCN"
+    },
+    {
+      "label": "DERECHOS TELEVISION CERRADA",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        1243.071065
+      ],
+      "origen": "estado 20",
+      "glosa": "DERECHOS TELEVISION CERRADA"
+    },
+    {
+      "label": "DERECHOS TELEVISION WIN SPORTS",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        802.689103
+      ],
+      "origen": "estado 20",
+      "glosa": "DERECHOS TELEVISION WIN SPORTS"
+    },
+    {
+      "label": "ARBITRAJE",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        18.258
+      ],
+      "origen": "estado 20",
+      "glosa": "ARBITRAJE"
+    },
+    {
+      "label": "FEDERACION COLOMBIANA DE FUTBOL",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        30.305819
+      ],
+      "origen": "estado 20",
+      "glosa": "FEDERACION COLOMBIANA DE FUTBOL"
+    },
+    {
+      "label": "CUOTAS DE SOSTENIMIENTO",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        465.228445
+      ],
+      "origen": "estado 20",
+      "glosa": "CUOTAS DE SOSTENIMIENTO"
+    },
+    {
+      "label": "PARTICIPACION EN EVENTOS NACIONALES",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        46.174548
+      ],
+      "origen": "estado 20",
+      "glosa": "PARTICIPACION EN EVENTOS NACIONALES"
+    },
+    {
+      "label": "VENTA DE ARTICULOS DEPORTIVOS",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        44.209071
+      ],
+      "origen": "estado 20",
+      "glosa": "VENTA DE ARTICULOS DEPORTIVOS"
+    },
+    {
+      "label": "ENTRETENIMIENTO Y ESPARCIMIENTO",
+      "lado": "revenue",
+      "page": 21,
+      "section": "CUENTAS DE INGRESO / 19. Ingresos de actividades ordinarias",
+      "values": [
+        2000
+      ],
+      "origen": "estado 20",
+      "glosa": "ENTRETENIMIENTO Y ESPARCIMIENTO"
+    },
+    {
+      "label": "SALARIO INTEGRAL",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        527091.679
+      ],
+      "origen": "estado 30",
+      "glosa": "SALARIO INTEGRAL"
+    },
+    {
+      "label": "SUELDOS",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        1659649.132
+      ],
+      "origen": "estado 30",
+      "glosa": "SUELDOS"
+    },
+    {
+      "label": "AUXILIO DE TRANSPORTE",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        42546.295
+      ],
+      "origen": "estado 30",
+      "glosa": "AUXILIO DE TRANSPORTE"
+    },
+    {
+      "label": "CESANTIAS",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        164176.135
+      ],
+      "origen": "estado 30",
+      "glosa": "CESANTIAS"
+    },
+    {
+      "label": "INTERESES SOBRE CESANTIAS",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        16003.426
+      ],
+      "origen": "estado 30",
+      "glosa": "INTERESES SOBRE CESANTIAS"
+    },
+    {
+      "label": "PRIMA DE SERVICIOS",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        157441.679
+      ],
+      "origen": "estado 30",
+      "glosa": "PRIMA DE SERVICIOS"
+    },
+    {
+      "label": "VACACIONES",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        143324.35
+      ],
+      "origen": "estado 30",
+      "glosa": "VACACIONES"
+    },
+    {
+      "label": "BONIFICACIONES",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        254695.894
+      ],
+      "origen": "estado 30",
+      "glosa": "BONIFICACIONES"
+    },
+    {
+      "label": "DOTACION Y SUMINISTRO A TRABAJ",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        127437.622
+      ],
+      "origen": "estado 30",
+      "glosa": "DOTACION Y SUMINISTRO A TRABAJ"
+    },
+    {
+      "label": "INDEMNIZACIONES LABORALES",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        104501.612
+      ],
+      "origen": "estado 30",
+      "glosa": "INDEMNIZACIONES LABORALES"
+    },
+    {
+      "label": "CAPACITACION AL PERSONAL",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        3401
+      ],
+      "origen": "estado 30",
+      "glosa": "CAPACITACION AL PERSONAL"
+    },
+    {
+      "label": "GASTOS DEPORTIVOS Y DE RECREAC",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        3703.279
+      ],
+      "origen": "estado 30",
+      "glosa": "GASTOS DEPORTIVOS Y DE RECREAC"
+    },
+    {
+      "label": "APORTES ADMINISTRADORA DE RIES",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        49837.013
+      ],
+      "origen": "estado 30",
+      "glosa": "APORTES ADMINISTRADORA DE RIES"
+    },
+    {
+      "label": "APORTES AL I.S.S",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        65628.354
+      ],
+      "origen": "estado 30",
+      "glosa": "APORTES AL I.S.S"
+    },
+    {
+      "label": "FONDO DE PENSIONES Y/O CESANTI",
+      "lado": "expense",
+      "page": 26,
+      "section": "GASTOS EQUIPO PROFESIONAL",
+      "values": [
+        282171.184
+      ],
+      "origen": "estado 30",
+      "glosa": "FONDO DE PENSIONES Y/O CESANTI"
+    },
+    {
+      "label": "GASTOS BANCARIOS",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+      "values": [
+        3537.624
+      ],
+      "origen": "estado 33",
+      "glosa": "GASTOS BANCARIOS"
+    },
+    {
+      "label": "COMISIONES",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+      "values": [
+        2782.784
+      ],
+      "origen": "estado 33",
+      "glosa": "COMISIONES"
+    },
+    {
+      "label": "INTERESES",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+      "values": [
+        52054.705
+      ],
+      "origen": "estado 33",
+      "glosa": "INTERESES"
+    },
+    {
+      "label": "DIFERENCIA EN CAMBIO",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+      "values": [
+        3517.58
+      ],
+      "origen": "estado 33",
+      "glosa": "DIFERENCIA EN CAMBIO"
+    },
+    {
+      "label": "DESCUENTOS COMERCIALES",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+      "values": [
+        800.498
+      ],
+      "origen": "estado 33",
+      "glosa": "DESCUENTOS COMERCIALES"
+    },
+    {
+      "label": "GRAVAMEN A LOS MOVIMIENTOS F",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+      "values": [
+        31548.269
+      ],
+      "origen": "estado 33",
+      "glosa": "GRAVAMEN A LOS MOVIMIENTOS F"
+    },
+    {
+      "label": "COSTAS Y PROCESOS JUDICIALES",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+      "values": [
+        39398.732
+      ],
+      "origen": "estado 33",
+      "glosa": "COSTAS Y PROCESOS JUDICIALES"
+    },
+    {
+      "label": "IMPUESTOS ASUMIDOS",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+      "values": [
+        68508
+      ],
+      "origen": "estado 33",
+      "glosa": "IMPUESTOS ASUMIDOS"
+    },
+    {
+      "label": "DEMANDAS LABORALES",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+      "values": [
+        130000
+      ],
+      "origen": "estado 33",
+      "glosa": "DEMANDAS LABORALES"
+    },
+    {
+      "label": "MULTAS SANCIONES Y LITIGIOS",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+      "values": [
+        170572.43
+      ],
+      "origen": "estado 33",
+      "glosa": "MULTAS SANCIONES Y LITIGIOS"
+    },
+    {
+      "label": "DONACIONES",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+      "values": [
+        3000
+      ],
+      "origen": "estado 33",
+      "glosa": "DONACIONES"
+    },
+    {
+      "label": "AJUSTE AL PESO",
+      "lado": "expense",
+      "page": 28,
+      "section": "23. Gastos no Operacionales / GASTOS NO OPERACIONALES",
+      "values": [
+        1414.376
+      ],
+      "origen": "estado 33",
+      "glosa": "AJUSTE AL PESO"
+    },
+    {
+      "label": "INTERES",
+      "lado": "revenue",
+      "page": 23,
+      "section": "20. Otros ingresos",
+      "values": [
+        2128507.696
+      ],
+      "origen": "estado 25",
+      "glosa": "INTERES"
+    },
+    {
+      "label": "DESCTOS COMERCIALES CONDICIONA",
+      "lado": "revenue",
+      "page": 23,
+      "section": "20. Otros ingresos",
+      "values": [
+        4171.468
+      ],
+      "origen": "estado 25",
+      "glosa": "DESCTOS COMERCIALES CONDICIONA"
+    },
+    {
+      "label": "REINTEGRO DE OTROS COSTOS Y GASTOS",
+      "lado": "expense",
+      "page": 23,
+      "section": "20. Otros ingresos",
+      "values": [
+        285430.334
+      ],
+      "origen": "estado 25",
+      "glosa": "REINTEGRO DE OTROS COSTOS Y GASTOS"
+    },
+    {
+      "label": "POR INCUMPLIMIENTO DE CONTRATO",
+      "lado": "revenue",
+      "page": 23,
+      "section": "20. Otros ingresos",
+      "values": [
+        2400
+      ],
+      "origen": "estado 25",
+      "glosa": "POR INCUMPLIMIENTO DE CONTRATO"
+    },
+    {
+      "label": "POR INCAPACIDADES I.S.S.",
+      "lado": "revenue",
+      "page": 23,
+      "section": "20. Otros ingresos",
+      "values": [
+        7963.28
+      ],
+      "origen": "estado 25",
+      "glosa": "POR INCAPACIDADES I.S.S."
+    },
+    {
+      "label": "APROVECHAMIENTOS",
+      "lado": "revenue",
+      "page": 23,
+      "section": "20. Otros ingresos",
+      "values": [
+        0.877
+      ],
+      "origen": "estado 25",
+      "glosa": "APROVECHAMIENTOS"
+    },
+    {
+      "label": "AJUSTE AL PESO",
+      "lado": "revenue",
+      "page": 23,
+      "section": "20. Otros ingresos",
+      "values": [
+        5.219
+      ],
+      "origen": "estado 25",
+      "glosa": "AJUSTE AL PESO"
+    },
+    {
+      "label": "VENTA DE DERECHOS DEPORTIVOS",
+      "lado": "revenue",
+      "page": 21,
+      "section": "VENTA DE DERECHOS DEPORTIVOS",
+      "values": [
+        3123935.31
+      ],
+      "origen": "estado 21",
+      "glosa": "VENTA DE DERECHOS DEPORTIVOS"
+    },
+    {
+      "label": "VENTA DE DERECHOS DEPORTIVOS",
+      "lado": "revenue",
+      "page": 21,
+      "section": "VENTA DE DERECHOS DEPORTIVOS",
+      "values": [
+        3206700
+      ],
+      "origen": "estado 21",
+      "glosa": "VENTA DE DERECHOS DEPORTIVOS"
+    },
+    {
+      "label": "VENTA DE DERECHOS DEPORTIVOS",
+      "lado": "revenue",
+      "page": 21,
+      "section": "VENTA DE DERECHOS DEPORTIVOS",
+      "values": [
+        5861778
+      ],
+      "origen": "estado 21",
+      "glosa": "VENTA DE DERECHOS DEPORTIVOS"
+    },
+    {
+      "label": "COSTO AMORTIZADO",
+      "lado": "expense",
+      "page": 24,
+      "section": "21. Ingresos Financieros",
+      "values": [
+        549904.072
+      ],
+      "origen": "estado 26",
+      "glosa": "COSTO AMORTIZADO"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+ "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2016-17.pdf",
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2016-17.md",
+ "generado": "2026-10-03T23:03:06.738Z",
+ "estado": "ok",
+ "clubId": "juventus-it",
+ "year": 2017,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2016 de este documento suma ingresos 398.539542; el sitio tiene 398.539542"
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2017: 563.061054 en este documento y 563.061054 en Juventus-annual-financial-report-2017-18.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": true,
+   "detalle": "ingresos de 2016: 398.539542 en Juventus-annual-financial-report-2015-16.pdf y 398.539542 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Other revenues\" (9 filas) no suma la fila: quedó la fila",
+  "el desglose de \"Other expenses\" (11 filas) no suma la fila: quedó la fila",
+  "la lectura base no cerraba; cerró con la lectura 6",
+  "duda de localizar que no afecta la carga: Es detalle por jugador/contraparte del renglón ya abierto en b52.",
+  "duda de localizar que no afecta la carga: Detalle por jugador de renglones ya abiertos en b61.",
+  "duda de extraer que no afecta la carga: Deferred taxes del estado (4,482,874) = Total deferred taxes 3,156 + 1,327 (L3841, L3843), pero la nota no los agrupa explícitamente.",
+  "duda de extraer que no afecta la carga: Verificación: los renglones de b64 suman 10,525, consistentes con L3758; se deja la duda solo por control."
+ ],
+ "reintentar": [
+  {
+   "renglon": "Other revenues",
+   "suma": 27.035,
+   "objetivo": 1.152
+  },
+  {
+   "renglon": "Other expenses",
+   "suma": 10.525,
+   "objetivo": 0.457
+  }
+ ],
+ "reintentado": false,
+ "faltasDesglose": [
+  {
+   "renglon": "Other revenues",
+   "suma": 27.035,
+   "objetivo": 1.152
+  },
+  {
+   "renglon": "Other expenses",
+   "suma": 10.525,
+   "objetivo": 0.457
+  }
+ ],
+ "totales": {
+  "ingresos": 563.061054,
+  "gastos": 496.950256,
+  "financiero": -7.696079,
+  "impuesto": -15.846795,
+  "resultadoImpreso": 42.567924,
+  "resultadoParaCargar": 42.567924,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ticket sales",
+   "lado": "ingreso",
+   "M": 57.835297,
+   "pagina": 68,
+   "linea": 1913,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Television and radio rights and media revenues",
+   "lado": "ingreso",
+   "M": 232.773784,
+   "pagina": 68,
+   "linea": 1914,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Revenues from sponsorship and advertising",
+   "lado": "ingreso",
+   "M": 74.718794,
+   "pagina": 68,
+   "linea": 1915,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Revenues from sales of products and licences",
+   "lado": "ingreso",
+   "M": 19.198979,
+   "pagina": 68,
+   "linea": 1916,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Revenues from players' registration rights",
+   "lado": "ingreso",
+   "M": 151.149536,
+   "pagina": 68,
+   "linea": 1917,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Other revenues",
+   "lado": "ingreso",
+   "M": 27.034664,
+   "pagina": 68,
+   "linea": 1918,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Other non-recurring revenues and costs",
+   "lado": "ingreso",
+   "M": 0.35,
+   "pagina": 68,
+   "linea": 1931,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
+  },
+  {
+   "etiqueta": "Purchase of materials, supplies and other consumables",
+   "lado": "gasto",
+   "M": 2.979934,
+   "pagina": 68,
+   "linea": 1920,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Purchases of products for sale",
+   "lado": "gasto",
+   "M": 8.29014,
+   "pagina": 68,
+   "linea": 1921,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "External services",
+   "lado": "gasto",
+   "M": 66.578563,
+   "pagina": 68,
+   "linea": 1922,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Players' wages and technical staff costs",
+   "lado": "gasto",
+   "M": 235.344554,
+   "pagina": 68,
+   "linea": 1923,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Other personnel",
+   "lado": "gasto",
+   "M": 26.481657,
+   "pagina": 68,
+   "linea": 1924,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Expenses from players' registration rights",
+   "lado": "gasto",
+   "M": 50.492316,
+   "pagina": 68,
+   "linea": 1925,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Other expenses",
+   "lado": "gasto",
+   "M": 10.52469,
+   "pagina": 68,
+   "linea": 1926,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Amortisation and write-downs of players' registration rights",
+   "lado": "gasto",
+   "M": 82.949776,
+   "pagina": 68,
+   "linea": 1928,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Depreciation/amortisation of other tangible and intangible assets",
+   "lado": "gasto",
+   "M": 9.934144,
+   "pagina": 68,
+   "linea": 1929,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Provisions, write-downs and release of funds",
+   "lado": "gasto",
+   "M": 2.107849,
+   "pagina": 68,
+   "linea": 1930,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Group's share of results of associates and *joint ventures*",
+   "lado": "gasto",
+   "M": 1.266633,
+   "pagina": 68,
+   "linea": 1935,
+   "origen": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financial income",
+   "M": 4.273061,
+   "linea": 1933
+  },
+  {
+   "etiqueta": "Financial expenses",
+   "M": -11.96914,
+   "linea": 1934
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Current taxes",
+   "M": -11.363921,
+   "linea": 1937
+  },
+  {
+   "etiqueta": "Deferred taxes",
+   "M": -4.482874,
+   "linea": 1938
+  }
+ ]
+}

@@ -1,0 +1,560 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+ "generado": "2026-10-03T00:18:21.339Z",
+ "frena": [],
+ "avisos": [],
+ "ejercicio": {
+  "clubId": "goias-br",
+  "year": 2012,
+  "cierre": "2012-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Bilheterias",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 3.740004,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Direitos de transmissão de TV",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 36.720144,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Premiação/participações",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 0.94,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Transação de atletas",
+    "normalizedCategory": "player_sales",
+    "amountNative": 4.72165,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Patrocínio/ publicidade/propaganda",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 0.948071,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Mensalidades",
+    "normalizedCategory": "member_dues",
+    "amountNative": 3.324434,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Jogos lotéricos",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.947704,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Receitas patrimoniais",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.074509,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Outras receitas",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.708595,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "(-) Deduções da receita",
+    "normalizedCategory": "other_income",
+    "amountNative": -4.386347,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Despesas com futebol",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -35.830361,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas administrativas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.147616,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Materiais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.558845,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Serviços de terceiros",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -1.880989,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas tributárias",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.450007,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas gerais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.096477,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2012-12-31",
+   "sourceId": "goias-br-demonstracoes-contabeis-2012-2011",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -5.360016,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Receitas financeiras",
+     "value": 0.022641
+    },
+    {
+     "label": "Despesas financeiras",
+     "value": -5.382657
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Despesas com futebol",
+     "lado": "expense",
+     "importe": 35.830361,
+     "motivo": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)"
+    },
+    {
+     "renglon": "Serviços de terceiros",
+     "lado": "expense",
+     "importe": 1.880989,
+     "motivo": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 48.738763,
+   "officialTotalExpenses": 41.964296,
+   "officialPAT": 1.414451
+  },
+  "source": {
+   "id": "goias-br-demonstracoes-contabeis-2012-2011",
+   "clubId": "goias-br",
+   "title": "Goiás Esporte Clube — demonstracoes-contabeis-2012-2011 (ejercicio 2012)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2012-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "goias-br",
+ "year": 2012,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+   "campo": "anio",
+   "valor": "2012",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2012-2011' es el ejercicio 2012 con 2011 de comparativo, no 2011.",
+   "evidencia": "fecha de cierre 2012-12-31 leída del contenido (periodo.mjs)",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  }
+ ],
+ "seleccion": {
+  "filas": 18,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Bilheterias",
+   "page": 3,
+   "native": 3.740004,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\")",
+   "signoFijo": 3.740004,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.740004
+  },
+  {
+   "label": "Direitos de transmissão de TV",
+   "page": 3,
+   "native": 36.720144,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\")",
+   "signoFijo": 36.720144,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 36.720144
+  },
+  {
+   "label": "Premiação/participações",
+   "page": 3,
+   "native": 0.94,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\")",
+   "signoFijo": 0.94,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.94
+  },
+  {
+   "label": "Transação de atletas",
+   "page": 3,
+   "native": 4.72165,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\")",
+   "signoFijo": 4.72165,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.72165
+  },
+  {
+   "label": "Patrocínio/ publicidade/propaganda",
+   "page": 3,
+   "native": 0.948071,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\")",
+   "signoFijo": 0.948071,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.948071
+  },
+  {
+   "label": "Mensalidades",
+   "page": 3,
+   "native": 3.324434,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\")",
+   "signoFijo": 3.324434,
+   "cat": "member_dues",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.324434
+  },
+  {
+   "label": "Jogos lotéricos",
+   "page": 3,
+   "native": 1.947704,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\")",
+   "signoFijo": 1.947704,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.947704
+  },
+  {
+   "label": "Receitas patrimoniais",
+   "page": 3,
+   "native": 0.074509,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\")",
+   "signoFijo": 0.074509,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "revenue",
+   "amountNative": 0.074509
+  },
+  {
+   "label": "Outras receitas",
+   "page": 3,
+   "native": 0.708595,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\")",
+   "signoFijo": 0.708595,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.708595
+  },
+  {
+   "label": "(-) Deduções da receita",
+   "page": 3,
+   "native": 4.386347,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\")",
+   "signoFijo": -4.386347,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -4.386347
+  },
+  {
+   "label": "Despesas com futebol",
+   "page": 1,
+   "native": 35.830361,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 35.830361,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)",
+   "destino": "expense",
+   "amountNative": -35.830361
+  },
+  {
+   "label": "Despesas administrativas",
+   "page": 1,
+   "native": 0.147616,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.147616,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.147616
+  },
+  {
+   "label": "Materiais",
+   "page": 1,
+   "native": 0.558845,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.558845,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)",
+   "destino": "expense",
+   "amountNative": -0.558845
+  },
+  {
+   "label": "Serviços de terceiros",
+   "page": 1,
+   "native": 1.880989,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 1.880989,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "expense",
+   "amountNative": -1.880989
+  },
+  {
+   "label": "Despesas tributárias",
+   "page": 1,
+   "native": 0.450007,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.450007,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.450007
+  },
+  {
+   "label": "Despesas gerais",
+   "page": 1,
+   "native": 3.096477,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.096477,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.096477
+  },
+  {
+   "label": "Receitas financeiras",
+   "page": null,
+   "native": 0.022641,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Despesas financeiras",
+   "page": null,
+   "native": -5.382657,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 48.738764,
+  "expSum": -41.964295,
+  "officialTotalRevenue": 48.738763,
+  "officialTotalExpenses": 41.964296,
+  "officialPAT": 1.414451,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 1.414451,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 48.738763
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 41.964296
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "BRL@2012-12-31",
+  "fx": 2.0435,
+  "source": "market_close",
+  "label": "PTAX de cierre (venda) del Banco Central do Brasil al 2012-12-31"
+ },
+ "liga": {
+  "valor": "br-serieB",
+  "fuente": "roster cacheado de \"2012 Campeonato Brasileiro Série B\" (tools/club-league-reference/br.json), coincidencia exacta \"Goiás\"",
+  "estado": "ok"
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 10,
+  "lineasGasto": 6,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

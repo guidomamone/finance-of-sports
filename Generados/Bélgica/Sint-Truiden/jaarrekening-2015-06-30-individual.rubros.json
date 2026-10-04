@@ -1,0 +1,63 @@
+{
+ "md": "Clubes/Bélgica/Sint-Truiden/jaarrekening-2015-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/Sint-Truiden/jaarrekening-2015-06-30-individual.pdf",
+ "club": "sinttruiden-be",
+ "year": 2015,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:55:30.605Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": false,
+  "motivo": "no se pudo ubicar la columna del ejercicio"
+ },
+ "ladoConocido": 4,
+ "rubros": [
+  {
+   "label": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN",
+   "lado": "expense",
+   "page": 6,
+   "section": "Beschikbare reserves 133 / Overgedragen winst (verlies) (+/(-) 14 -6.543.868 -3.103.020 / Kapitaalsubsidies 15 / Voorschot aan de vennoten op de verdeling van het / netto-actief 19",
+   "values": [
+    "315.000",
+    "197.000"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Voorzieningen voor risico's en kosten 5.4 | 160/5",
+   "lado": "expense",
+   "page": 6,
+   "section": "Beschikbare reserves 133 / Overgedragen winst (verlies) (+/(-) 14 -6.543.868 -3.103.020 / Kapitaalsubsidies 15 / Voorschot aan de vennoten op de verdeling van het / netto-actief 19",
+   "values": [
+    "315.000",
+    "197.000"
+   ],
+   "columns": null
+  },
+  {
+   "label": "uitrusting* L NG 10,00 - 33,33 10,00 -",
+   "lado": "expense",
+   "page": 18,
+   "section": "OPRICHTINGSKOSTEN / HERSTRUCTURERINGSKOSTEN / IMMATERIELE VASTE ACTIVA / MATERIELE VASTE ACTIVA / AFSCHRIJVINGEN GEBOEKT TIJDENS HET BOEKJAAR :",
+   "values": [
+    "33,33"
+   ],
+   "columns": null
+  },
+  {
+   "label": "5. Rollend materieel* L NG 20,00 - 33,33 20,00 -",
+   "lado": "expense",
+   "page": 18,
+   "section": "OPRICHTINGSKOSTEN / HERSTRUCTURERINGSKOSTEN / IMMATERIELE VASTE ACTIVA / MATERIELE VASTE ACTIVA / AFSCHRIJVINGEN GEBOEKT TIJDENS HET BOEKJAAR :",
+   "values": [
+    "33,33"
+   ],
+   "columns": null
+  }
+ ]
+}

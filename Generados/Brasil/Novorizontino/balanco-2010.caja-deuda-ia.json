@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/balanco-2010.md",
+ "generado": "2026-10-03T03:41:55.133Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(em reais)",
+ "caja": {
+  "lineas": [
+   22
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   22,
+   25
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La tabla perdió los importes del pasivo; la línea 22 combina Disponibilidades (activo, 13,60) con Empréstimos e Financiamentos corrientes (Banco Bradesco), y la línea 25 corresponde a los préstamos no corrientes (mútuos I-9 Sports y personas físicas en L26), cuyos valores no son visibles."
+}

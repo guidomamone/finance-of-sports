@@ -1,0 +1,430 @@
+{
+  "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2025.md",
+  "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2025.pdf",
+  "club": "novorizontino-br",
+  "year": 2025,
+  "generatedAt": "2026-10-03T02:56:33.770Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Direitos de transmissão de TV",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        36.984915
+      ],
+      "glosa": "Derechos de transmisión televisiva"
+    },
+    {
+      "label": "Negociação de atletas",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        17.103865
+      ],
+      "glosa": "Traspaso de jugadores"
+    },
+    {
+      "label": "Publicidade",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.12
+      ],
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Patrocínio",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        5.902023
+      ],
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "Arrecadação de jogos",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        3.421619
+      ],
+      "glosa": "Recaudación de partidos"
+    },
+    {
+      "label": "Fomento do futebol",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "Fomento del fútbol"
+    },
+    {
+      "label": "Premiações",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        1.01
+      ],
+      "glosa": "Premios"
+    },
+    {
+      "label": "Timemania",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        2.587711
+      ],
+      "glosa": "Timemania"
+    },
+    {
+      "label": "Mecanismo de solidariedade",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.345669
+      ],
+      "glosa": "Mecanismo de solidaridad"
+    },
+    {
+      "label": "Convênios",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.972619
+      ],
+      "glosa": "Convenios"
+    },
+    {
+      "label": "Outras receitas",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado",
+      "values": [
+        0.09438
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Impostos incidentes sobre a receita",
+      "lado": "revenue",
+      "page": 7,
+      "section": "estado (lectura 4: signo impreso, resta en su lado)",
+      "values": [
+        -1.978549
+      ],
+      "glosa": "Impuestos sobre los ingresos"
+    },
+    {
+      "label": "Com pessoal",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        18.017444
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Direito de imagem",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        23.30482
+      ],
+      "glosa": "Derechos de imagen"
+    },
+    {
+      "label": "Gastos com negociação de atletas",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        3.4913
+      ],
+      "glosa": "Gastos por traspaso de jugadores"
+    },
+    {
+      "label": "Assessoria esportiva",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        8.279581
+      ],
+      "glosa": "Asesoría deportiva"
+    },
+    {
+      "label": "Premiações",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        5.865759
+      ],
+      "glosa": "Premios"
+    },
+    {
+      "label": "Com jogos",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        4.670353
+      ],
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Aluguel de imóveis",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        3.953369
+      ],
+      "glosa": "Alquiler de inmuebles"
+    },
+    {
+      "label": "Manutenção e conservação",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        1.732136
+      ],
+      "glosa": "Mantenimiento y conservación"
+    },
+    {
+      "label": "Lanches e refeições",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        1.560188
+      ],
+      "glosa": "Comidas y refrigerios"
+    },
+    {
+      "label": "Energia elétrica",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.192539
+      ],
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Taxa da FPF e CBF",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.232674
+      ],
+      "glosa": "Tasas de la FPF y CBF"
+    },
+    {
+      "label": "Lavanderia",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.327762
+      ],
+      "glosa": "Lavandería"
+    },
+    {
+      "label": "Amortização dos atletas formados",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.334027
+      ],
+      "glosa": "Amortización de jugadores formados"
+    },
+    {
+      "label": "Serviços e exames médicos",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.400558
+      ],
+      "glosa": "Servicios y exámenes médicos"
+    },
+    {
+      "label": "Material esportivo",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.240909
+      ],
+      "glosa": "Material deportivo"
+    },
+    {
+      "label": "Segurança patrimonial",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.205072
+      ],
+      "glosa": "Seguridad patrimonial"
+    },
+    {
+      "label": "Água e esgoto",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.075275
+      ],
+      "glosa": "Agua y alcantarillado"
+    },
+    {
+      "label": "Acordos trabalhistas e cíveis",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.162989
+      ],
+      "glosa": "Acuerdos laborales y civiles"
+    },
+    {
+      "label": "Medicamentos",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.10307
+      ],
+      "glosa": "Medicamentos"
+    },
+    {
+      "label": "Materiais de escritório e de limpeza",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.014285
+      ],
+      "glosa": "Materiales de oficina y limpieza"
+    },
+    {
+      "label": "Telefone e internet",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.067665
+      ],
+      "glosa": "Teléfono e internet"
+    },
+    {
+      "label": "Gás",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.013017
+      ],
+      "glosa": "Gas"
+    },
+    {
+      "label": "Outras despesas",
+      "lado": "expense",
+      "page": 25,
+      "section": "nota que desglosa \"(-) Custos operacionais\"",
+      "values": [
+        0.56566
+      ],
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Com pessoal",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        1.974967
+      ],
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Com jogos",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.437908
+      ],
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Administrativas e gerais",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        3.905545
+      ],
+      "glosa": "Administrativos y generales"
+    },
+    {
+      "label": "Serviços de terceiros",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        1.524045
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Gastos com atletas não profissionais",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        7.318188
+      ],
+      "glosa": "Gastos con deportistas no profesionales"
+    },
+    {
+      "label": "Tributária",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.097091
+      ],
+      "glosa": "Gastos tributarios"
+    },
+    {
+      "label": "Outras despesas",
+      "lado": "expense",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.42879
+      ],
+      "glosa": "Otros gastos"
+    }
+  ]
+}

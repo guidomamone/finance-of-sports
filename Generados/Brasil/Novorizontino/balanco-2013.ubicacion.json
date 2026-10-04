@@ -1,0 +1,72 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2013.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2013.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T01:53:11.791Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    12,
+    36
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    52,
+    78
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 2,
+   "lineas": [
+    88,
+    95
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 3,
+   "lineas": [
+    112,
+    166
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 4,
+   "lineas": [
+    182,
+    223
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 4,
+   "lineas": [
+    228,
+    232
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b4",
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes con centavos (ej. 'PREJUÍZO 728.230,75'); no hay indicación de miles.",
+ "moneda": "BRL",
+ "columna_ejercicio": "VALOR",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "b1 y b2 son el balance patrimonial (ativo/passivo). b4 y b5 forman la demonstração do resultado (receitas operacionais y despesas, a nivel de cuenta contable), con una única columna VALOR y sin año anterior. El resultado es un prejuicio de 728.230,75 (texto sobre b6). b3 y b6 son firmas."
+}

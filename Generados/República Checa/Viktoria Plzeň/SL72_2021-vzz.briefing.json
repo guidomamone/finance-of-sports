@@ -1,0 +1,248 @@
+{
+  "club": "viktoria-plzen",
+  "year": 2021,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/República Checa/Viktoria Plzeň/SL72_2021-vzz.md",
+  "generatedAt": "2026-09-30T22:07:53.364Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": true,
+  "tableCount": 3,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 1,
+      "section": "## VÝKAZ ZISKU A ZTRÁTY",
+      "columns": [
+        "Rok",
+        "Měsíc",
+        "IČ"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2021",
+          "values": [
+            "",
+            "29105463"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+      "columns": [
+        "TEXT b",
+        "číslo řádku c",
+        "Skutečnost v účetním období",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "běžném 1",
+            "minulém 2"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Výkonová spotřeba Součet A.1. až A.3.",
+          "values": [
+            "3",
+            "556",
+            "8"
+          ],
+          "bold": false,
+          "codigo": "A."
+        },
+        {
+          "rawLabel": "Služby",
+          "values": [
+            "6",
+            "556",
+            "8"
+          ],
+          "bold": false,
+          "codigo": "A. 3."
+        },
+        {
+          "rawLabel": "Ostatní provozní náklady Součet F.1. až F.5.",
+          "values": [
+            "24",
+            "3",
+            ""
+          ],
+          "bold": false,
+          "codigo": "F."
+        },
+        {
+          "rawLabel": "Daně a poplatky",
+          "values": [
+            "27",
+            "3",
+            ""
+          ],
+          "bold": false,
+          "codigo": "F. 3."
+        },
+        {
+          "rawLabel": "Provozní výsledek hospodaření (+/-) I. + II. - A. - B. - C. - D. - E. + III. - F.",
+          "values": [
+            "30",
+            "-559",
+            "-8"
+          ],
+          "bold": false,
+          "codigo": "*"
+        },
+        {
+          "rawLabel": "Výnosové úroky a podobné výnosy Součet VI.1. až VI.2.",
+          "values": [
+            "39",
+            "106",
+            "40"
+          ],
+          "bold": false,
+          "codigo": "VI."
+        },
+        {
+          "rawLabel": "Výnosové úroky a podobné výnosy – ovládaná nebo ovládající osoba",
+          "values": [
+            "40",
+            "106",
+            "40"
+          ],
+          "bold": false,
+          "codigo": "VI. 1."
+        },
+        {
+          "rawLabel": "Ostatní finanční náklady",
+          "values": [
+            "47",
+            "1",
+            "1"
+          ],
+          "bold": false,
+          "codigo": "K."
+        },
+        {
+          "rawLabel": "Finanční výsledek hospodaření (+/-) IV. - G. + V. - H. + VI. - I. - J. + VII. - K.",
+          "values": [
+            "48",
+            "105",
+            "39"
+          ],
+          "bold": false,
+          "codigo": "*"
+        },
+        {
+          "rawLabel": "Výsledek hospodaření před zdaněním (+/-) * (ř. 30) + * (ř. 48)",
+          "values": [
+            "49",
+            "-454",
+            "31"
+          ],
+          "bold": true,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Daň z příjmů Součet L.1. až L.2.",
+          "values": [
+            "50",
+            "11",
+            "6"
+          ],
+          "bold": false,
+          "codigo": "L."
+        },
+        {
+          "rawLabel": "Daň z příjmů splatná",
+          "values": [
+            "51",
+            "11",
+            "6"
+          ],
+          "bold": false,
+          "codigo": "L. 1."
+        },
+        {
+          "rawLabel": "Výsledek hospodaření po zdanění (+/-)  (ř. 49) - L.",
+          "values": [
+            "53",
+            "-465",
+            "25"
+          ],
+          "bold": true,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Výsledek hospodaření za účetní období (+/-)  (ř. 53) - M.",
+          "values": [
+            "55",
+            "-465",
+            "25"
+          ],
+          "bold": true,
+          "codigo": "*"
+        },
+        {
+          "rawLabel": "Čistý obrat za účetní období I. + II. + III. + IV. + V. + VI. + VII.",
+          "values": [
+            "56",
+            "106",
+            "40"
+          ],
+          "bold": false,
+          "codigo": "*"
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 1,
+      "section": null,
+      "columns": [
+        "Sestaveno dne: 28.04.2022",
+        "",
+        "Podpisový záznam statutárního orgánu účetní jednotky nebo podpisový vzor fyzické osoby, která je účetní jednotkou",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Právní forma účetní jednotky",
+          "values": [
+            "Předmět podnikání Pronájem nemovitostí",
+            "Pozn.:",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/viktoria-plzen-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"viktoria-plzen\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+  ]
+}

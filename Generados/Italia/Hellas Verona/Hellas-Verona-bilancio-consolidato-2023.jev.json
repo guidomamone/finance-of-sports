@@ -1,0 +1,397 @@
+{
+ "md": "Clubes/Italia/Hellas Verona/Hellas-Verona-bilancio-consolidato-2023.md",
+ "generatedAt": "2026-09-30T04:30:24.535Z",
+ "rubros": [
+  {
+   "label": "a) Contributi in conto esercizio",
+   "lado": "revenue",
+   "page": 8,
+   "section": "5.760.917        5.160.497 / 5) Altri ricavi e proventi:",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 858
+  },
+  {
+   "label": "4) Altri",
+   "lado": "expense",
+   "page": 6,
+   "section": "B                FONDI PER RISCHI ED ONERI",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "b) Proventi da sponsorizzazioni",
+   "lado": "revenue",
+   "page": 8,
+   "section": "5.760.917        5.160.497 / 5) Altri ricavi e proventi:",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 859
+  },
+  {
+   "label": "b) Abbonamenti",
+   "lado": null,
+   "page": 8,
+   "section": "CONTO ECONOMICO / VALORE DELLA PRODUZIONE",
+   "choice": "season_tickets",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "season_tickets",
+     0.99
+    ],
+    [
+     "member_dues",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "a) Ricavi da gare",
+   "lado": null,
+   "page": 8,
+   "section": "CONTO ECONOMICO / VALORE DELLA PRODUZIONE",
+   "choice": "matchday_competition",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "matchday_competition",
+     0.67
+    ],
+    [
+     "lump_football_operations",
+     0.27
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "c) Corrispettivi Store",
+   "lado": null,
+   "page": 8,
+   "section": "CONTO ECONOMICO / VALORE DELLA PRODUZIONE",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.95
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "2) Per imposte, anche differite",
+   "lado": "expense",
+   "page": 6,
+   "section": "B                FONDI PER RISCHI ED ONERI",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "6) Per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "expense",
+   "page": 8,
+   "section": "COSTI DELLA PRODUZIONE",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "8) Per godimento di beni di terzi",
+   "lado": "expense",
+   "page": 8,
+   "section": "COSTI DELLA PRODUZIONE",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "7) Per servizi",
+   "lado": "expense",
+   "page": 8,
+   "section": "COSTI DELLA PRODUZIONE",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ],
+    [
+     "match_organisation_expense",
+     0.06
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "b) Costi per acquisizione temporanea prestazioni calciatori",
+   "lado": "expense",
+   "page": 8,
+   "section": "24.373.326        20.113.813 / 14) Oneri diversi di gestione",
+   "choice": "other_expenses",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "lump_football_operations_expense",
+     0.38
+    ],
+    [
+     "wages_squad",
+     0.1
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "c) Minusvalenze da cessione diritti prestazioni calciatori",
+   "lado": "expense",
+   "page": 8,
+   "section": "24.373.326        20.113.813 / 14) Oneri diversi di gestione",
+   "choice": "exceptional_items",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "exceptional_items",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "player_impairment",
+     0.25
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "a) Oneri da organizzazione competizioni",
+   "lado": "expense",
+   "page": 8,
+   "section": "24.373.326        20.113.813 / 14) Oneri diversi di gestione",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "c) Imposte differite",
+   "lado": null,
+   "page": 9,
+   "section": "PROVENTI E ONERI FINANZIARI / RETTIFICHE DI VALORE DI ATTIVITA FINANZIARIE",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "a) Imposte correnti",
+   "lado": null,
+   "page": 9,
+   "section": "PROVENTI E ONERI FINANZIARI / RETTIFICHE DI VALORE DI ATTIVITA FINANZIARIE",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "d) Altri oneri da trasferimento diritti calciatori",
+   "lado": "expense",
+   "page": 8,
+   "section": "24.373.326        20.113.813 / 14) Oneri diversi di gestione",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "lump_football_operations_expense",
+     0.15
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "d) Imposte anticipate",
+   "lado": null,
+   "page": 9,
+   "section": "PROVENTI E ONERI FINANZIARI / RETTIFICHE DI VALORE DI ATTIVITA FINANZIARIE",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "other_income",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1279
+  }
+ ]
+}

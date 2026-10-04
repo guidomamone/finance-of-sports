@@ -1,0 +1,300 @@
+{
+  "club": "hoffenheim-de",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2021-22.md",
+  "generatedAt": "2026-09-30T21:50:39.181Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 148,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 6,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 7,
+      "section": "UNTERNEHMENSREGISTER / EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "I. Immaterielle Vermögensgegenstände",
+          "values": [
+            "30.895.597,00",
+            "53.434.232,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+          "values": [
+            "30.895.597,00",
+            "53.434.232,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Sachanlagen",
+          "values": [
+            "63.315.188,00",
+            "66.933.551,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+          "values": [
+            "58.819.419,00",
+            "62.015.868,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. technische Anlagen und Maschinen",
+          "values": [
+            "2.012.364,00",
+            "2.474.092,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "2.482.148,00",
+            "2.438.372,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. geleistete Anzahlungen und Anlagen im Bau",
+          "values": [
+            "1.257,00",
+            "5.219,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Finanzanlagen",
+          "values": [
+            "25.000,00",
+            "25.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Anteile an verbundenen Unternehmen",
+          "values": [
+            "25.000,00",
+            "25.000,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "UNTERNEHMENSREGISTER / EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "a) Aufwendungen für Roh-, Hilfs- und Betriebsstoffe und für bezogene Waren",
+          "values": [
+            "1.652.942,00",
+            "716.674,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Löhne und Gehälter",
+          "values": [
+            "83.266.569,00",
+            "81.052.814,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung",
+          "values": [
+            "4.097.369,00",
+            "3.297.417,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "anderen Gesellschaftern zustehender Gewinn 1.065.298,00 / Konzernkapitalflussrechnung nach DRS 21 / 2021/22 / TE / Jahresergebnis -523",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Abschreibungen auf das Anlagevermögen",
+          "values": [
+            "25.503"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme / Abnahme (-) der Rückstellungen",
+          "values": [
+            "-8.127"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "sonstige zahlungsunwirksame Aufwendungen / Erträge (-)",
+          "values": [
+            "3.664"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Zunahme / Abnahme (-) der Verbindlichkeiten aus Lieferungen und Leistungen sowie anderer Passiva",
+          "values": [
+            "-9.559"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gewinn (-) / Verlust aus dem Abgang von Anlagevermögen",
+          "values": [
+            "1.528"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zinsaufwendungen / Zinserträge (-)",
+          "values": [
+            "-1.860"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Periodenergebnis",
+          "values": [
+            "1.088.437",
+            "-23.139",
+            "1.065.298",
+            "-40.807.157"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand zum",
+          "values": [
+            "30.06.2022",
+            "58.479.248",
+            "60.635",
+            "58.539.883",
+            "202.415.807"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte",
+          "values": [
+            "58.819.419",
+            "62.015.868"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. technische Anlagen und Maschinen",
+          "values": [
+            "2.012.364",
+            "2.474.092"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "2.482.148",
+            "2.438.372"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. geleistete Anzahlungen",
+          "values": [
+            "1.257",
+            "5.219"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 3,
+    "results": [
+      {
+        "label": "Abschreibungen auf das Anlagevermögen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Abschreibungen auf das Anlagevermögen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Zunahme / Abnahme (-) der Rückstellungen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Zunahme / Abnahme (-) der Rückstellungen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "sonstige zahlungsunwirksame Aufwendungen / Erträge (-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "sonstige zahlungsunwirksame Aufwendungen / Erträge (-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "de",
+    "query": "TSG Hoffenheim",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

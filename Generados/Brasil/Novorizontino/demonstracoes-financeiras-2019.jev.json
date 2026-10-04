@@ -1,0 +1,178 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2019.md",
+ "generatedAt": "2026-10-03T01:57:21.601Z",
+ "rubrosHuella": "9083eee6802e971713005e1f6ccf3959182f836f",
+ "rubros": [
+  {
+   "label": "Repasse da federação",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Negociação e empréstimo de atletas",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com patrocínios",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Vendas de ingressos e bar",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "matchday_competition",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Subvenções (nota 11)",
+   "lado": "revenue",
+   "page": 27,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Recuperação de despesas",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Outras receitas operacionais\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Reversão de provisão de contingências",
+   "lado": "revenue",
+   "page": 29,
+   "section": "nota que desglosa \"Outras receitas operacionais\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Salários, ordenados e outros custos com pessoal",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Custos\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos com jogos",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Custos\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Aluguéis",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Custos\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços prestados",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisão para contingências (nota 13)",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas administrativas",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Manutenções",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Salários, ordenados e outras despesas com pessoal",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos com negociação de atletas",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Combustível e lubrificantes",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciação",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

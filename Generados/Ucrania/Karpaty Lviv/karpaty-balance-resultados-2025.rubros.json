@@ -1,0 +1,165 @@
+{
+ "md": "Clubes/Ucrania/Karpaty Lviv/karpaty-balance-resultados-2025.md",
+ "pdf": "Clubes/Ucrania/Karpaty Lviv/karpaty-balance-resultados-2025.pdf",
+ "club": "karpaty-lviv",
+ "year": 2025,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:08:21.615Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 21,
+  "notasUsadas": []
+ },
+ "ladoConocido": 13,
+ "rubros": [
+  {
+   "label": "Чистий дохід від реалізації продукції (товарів, робіт, послуг)",
+   "lado": "revenue",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.127193
+   ],
+   "origen": "estado 6",
+   "glosa": "Importe neto de la cifra de negocios (productos, bienes, trabajos, servicios)"
+  },
+  {
+   "label": "Собівартість реалізованої продукції (товарів, робіт, послуг)",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.51163
+   ],
+   "origen": "estado 6",
+   "glosa": "Coste de ventas de productos (bienes, trabajos, servicios)"
+  },
+  {
+   "label": "Інші операційні доходи",
+   "lado": "revenue",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.081375
+   ],
+   "origen": "estado 6",
+   "glosa": "Otros ingresos de explotación"
+  },
+  {
+   "label": "Адміністративні витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.108312
+   ],
+   "origen": "estado 6",
+   "glosa": "Gastos de administración"
+  },
+  {
+   "label": "Інші операційні витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.352122
+   ],
+   "origen": "estado 6",
+   "glosa": "Otros gastos de explotación"
+  },
+  {
+   "label": "Інші доходи",
+   "lado": "revenue",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.091336
+   ],
+   "origen": "estado 6",
+   "glosa": "Otros ingresos"
+  },
+  {
+   "label": "Фінансові витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.036868
+   ],
+   "origen": "estado 6",
+   "glosa": "Gastos financieros"
+  },
+  {
+   "label": "Інші витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ЗВІТ ПРО ФІНАНСОВІ РЕЗУЛЬТАТИ (Звіт про сукупний дохід) за 2025 рік / ### I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "values": [
+    0.004705
+   ],
+   "origen": "estado 6",
+   "glosa": "Otros gastos"
+  },
+  {
+   "label": "Матеріальні витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "### III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "values": [
+    0.027373
+   ],
+   "origen": "estado 8",
+   "glosa": "Gastos de materiales"
+  },
+  {
+   "label": "Витрати на оплату праці",
+   "lado": "expense",
+   "page": 3,
+   "section": "### III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "values": [
+    0.28765
+   ],
+   "origen": "estado 8",
+   "glosa": "Gastos de personal"
+  },
+  {
+   "label": "Відрахування на соціальні заходи",
+   "lado": "expense",
+   "page": 3,
+   "section": "### III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "values": [
+    0.029562
+   ],
+   "origen": "estado 8",
+   "glosa": "Cargas sociales"
+  },
+  {
+   "label": "Амортизація",
+   "lado": "expense",
+   "page": 3,
+   "section": "### III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "values": [
+    0.079103
+   ],
+   "origen": "estado 8",
+   "glosa": "Amortización"
+  },
+  {
+   "label": "Інші операційні витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "### III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "values": [
+    0.431313
+   ],
+   "origen": "estado 8",
+   "glosa": "Otros gastos de explotación"
+  }
+ ]
+}

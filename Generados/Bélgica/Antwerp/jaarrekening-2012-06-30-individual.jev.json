@@ -1,0 +1,145 @@
+{
+ "md": "Clubes/Bélgica/Antwerp/jaarrekening-2012-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:34.941Z",
+ "rubrosHuella": "d627ec27cbb36af55f0040f8bd058bff93562da1",
+ "rubros": [
+  {
+   "label": "Overige schulden 47/48",
+   "lado": "expense",
+   "page": 5,
+   "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 / Schulden met betrekking tot belastingen, / bezoldigingen en sociale lasten 45 8.938 / Belastingen 450/3",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1075
+  },
+  {
+   "label": "Financiële schulden",
+   "lado": "expense",
+   "page": 5,
+   "section": "Handelsschulden 175 / Ontvangen vooruitbetalingen op bestellingen 176 / Overige schulden 178/9 / Schulden op ten hoogste één jaar 5.5 | 42/48 1.873.171 / Schulden op meer dan één jaar die binnen het jaar",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.82
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 875
+  },
+  {
+   "label": "Kredietinstellingen 430/8",
+   "lado": "expense",
+   "page": 5,
+   "section": "Handelsschulden 175 / Ontvangen vooruitbetalingen op bestellingen 176 / Overige schulden 178/9 / Schulden op ten hoogste één jaar 5.5 | 42/48 1.873.171 / Schulden op meer dan één jaar die binnen het jaar",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1170
+  },
+  {
+   "label": "Bezoldigingen en sociale lasten 454/9",
+   "lado": "expense",
+   "page": 5,
+   "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 / Schulden met betrekking tot belastingen, / bezoldigingen en sociale lasten 45 8.938 / Belastingen 450/3",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "wages_squad",
+     0.74
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1101
+  },
+  {
+   "label": "Overlopende rekeningen 492/3",
+   "lado": "expense",
+   "page": 5,
+   "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 / Schulden met betrekking tot belastingen, / bezoldigingen en sociale lasten 45 8.938 / Belastingen 450/3",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 870
+  },
+  {
+   "label": "vervallen",
+   "lado": "expense",
+   "page": 5,
+   "section": "Handelsschulden 175 / Ontvangen vooruitbetalingen op bestellingen 176 / Overige schulden 178/9 / Schulden op ten hoogste één jaar 5.5 | 42/48 1.873.171 / Schulden op meer dan één jaar die binnen het jaar",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 871
+  }
+ ]
+}

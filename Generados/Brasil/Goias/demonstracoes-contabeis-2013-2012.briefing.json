@@ -1,0 +1,3874 @@
+{
+  "club": "goias",
+  "year": 2012,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.md",
+  "generatedAt": "2026-09-30T21:52:58.413Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 370,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 28,
+  "relevantTableCount": 5,
+  "tables": [
+    {
+      "page": 4,
+      "section": "CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / # BALANÇOS PATRIMONIAIS / LEVANTADOS EM 31 DE DEZEMBRO DE 2013 E 2012 / (EM REAIS)",
+      "columns": [
+        "ATIVO",
+        "Notas Explicativas",
+        "2013",
+        "2012 (Reclassificado)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CIRCULANTE",
+          "values": [
+            "",
+            "5.956.707,58",
+            "13.663.873,94"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa",
+          "values": [
+            "4",
+            "259.243,61",
+            "9.051.718,30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "5",
+            "5.538.386,97",
+            "4.503.100,64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos a recuperar",
+          "values": [
+            "",
+            "152.219,71",
+            "102.158,63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas antecipadas",
+          "values": [
+            "",
+            "6.857,29",
+            "6.896,37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NÃO CIRCULANTE",
+          "values": [
+            "",
+            "18.137.360,46",
+            "10.470.426,83"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Realizável a longo prazo",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos judiciais",
+          "values": [
+            "6",
+            "471.561,59",
+            "709.807,24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros créditos",
+          "values": [
+            "",
+            "513.828,35",
+            "789.433,77"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "7",
+            "12.106.307,99",
+            "5.811.107,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "8",
+            "5.045.662,53",
+            "3.160.078,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DO ATIVO",
+          "values": [
+            "",
+            "24.094.068,04",
+            "24.134.300,77"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / # BALANÇOS PATRIMONIAIS / LEVANTADOS EM 31 DE DEZEMBRO DE 2013 E 2012 / (EM REAIS)",
+      "columns": [
+        "PASSIVO E PATRIMÔNIO SOCIAL",
+        "Notas Explicativas",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CIRCULANTE",
+          "values": [
+            "",
+            "59.578.754,85",
+            "46.504.965,86"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "9",
+            "7.095.034,55",
+            "3.442.688,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "",
+            "1.413.191,29",
+            "716.402,73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas e sociais",
+          "values": [
+            "10",
+            "34.277.894,95",
+            "30.173.124,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de imagem a pagar",
+          "values": [
+            "",
+            "2.622.353,98",
+            "250.128,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos a recolher",
+          "values": [
+            "11",
+            "6.989.107,60",
+            "4.501.698,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar",
+          "values": [
+            "",
+            "417.268,17",
+            "939.256,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas antecipadas",
+          "values": [
+            "12",
+            "6.763.904,31",
+            "6.481.666,75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NAO CIRCULANTE",
+          "values": [
+            "",
+            "43.618.695,66",
+            "49.239.288,95"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Títulos a pagar",
+          "values": [
+            "14",
+            "3.145.309,00",
+            "3.145.309,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "9",
+            "5.424.560,15",
+            "7.950,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos parcelados",
+          "values": [
+            "15",
+            "6.358.664,13",
+            "7.110.522,05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros valores a pagar",
+          "values": [
+            "",
+            "553.232,35",
+            "863.552,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas antecipadas",
+          "values": [
+            "12",
+            "23.593.750,00",
+            "29.187.500,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para contingências",
+          "values": [
+            "13",
+            "4.543.180,03",
+            "8.924.455,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PATRIMÔNIO SOCIAL A DESCOBERTO",
+          "values": [
+            "16",
+            "(79.103.382,47)",
+            "(71.609.954,04)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fundo patrimonial",
+          "values": [
+            "",
+            "1.053.600,00",
+            "1.053.600,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultados Sociais",
+          "values": [
+            "",
+            "(80.156.982,47)",
+            "(72.663.554,04)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DO PASSIVO E PATRIMÔNIO SOCIAL",
+          "values": [
+            "",
+            "24.094.068,04",
+            "24.134.300,77"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 6,
+      "section": "CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / # DEMONSTRAÇÕES DO RESULTADO / PARA OS EXERCÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2013 E 2012 / (EM REAIS)",
+      "columns": [
+        "DESCRIÇÃO",
+        "Notas Explicativas",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "RECEITA LÍQUIDA",
+          "values": [
+            "17",
+            "51.074.726,19",
+            "48.738.762,97"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(-) CUSTOS E DESPESAS",
+          "values": [
+            "18",
+            "(54.518.463,37)",
+            "(41.964.295,92)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(-) Despesas com futebol profissional e amador",
+          "values": [
+            "",
+            "(44.649.622,96)",
+            "(35.830.361,44)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Despesas administrativas",
+          "values": [
+            "",
+            "(204.453,22)",
+            "(147.616,41)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Materiais",
+          "values": [
+            "",
+            "(697.355,79)",
+            "(558.845,02)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Serviços de terceiros",
+          "values": [
+            "",
+            "(3.262.262,38)",
+            "(1.880.988,65)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Despesas tributárias",
+          "values": [
+            "",
+            "(837.323,37)",
+            "(450.007,01)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Despesas gerais",
+          "values": [
+            "",
+            "(4.867.445,65)",
+            "(3.096.477,39)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESULTADO ANTES DAS RECEITAS E DESPESAS FINANCEIRAS",
+          "values": [
+            "",
+            "(3.443.737,18)",
+            "6.774.467,05"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(+) Receitas financeiras",
+          "values": [
+            "",
+            "74.210,35",
+            "22.641,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Despesas financeiras",
+          "values": [
+            "",
+            "(4.123.901,60)",
+            "(5.382.656,93)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUPERÁVIT (DÉFICIT) DO EXERCÍCIO",
+          "values": [
+            "",
+            "(7.493.428,43)",
+            "1.414.451,24"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 7,
+      "section": "CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / # DEMONSTRAÇÃO DAS MUTAÇÕES DO PATRIMÔNIO SOCIAL / PARA OS EXECÍCIOS FINDOS EM 31 DE DEZEMBRO DE 2013 E 2012 / (EM REAIS)",
+      "columns": [
+        "DESCRIÇÃO",
+        "Notas Explicativas",
+        "FUNDO PATRIMONIAL",
+        "RESULTADOS SOCIAIS",
+        "TOTAL"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo em 31 de dezembro de 2011",
+          "values": [
+            "",
+            "1.053.600,00",
+            "(69.918.284,54)",
+            "(68.864.684,54)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Superávit do exercício",
+          "values": [
+            "",
+            "-",
+            "1.414.451,24",
+            "1.414.451,24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes de exercícios anteriores",
+          "values": [
+            "",
+            "-",
+            "(4.159.720,74)",
+            "(4.159.720,74)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31 de dezembro de 2012",
+          "values": [
+            "",
+            "1.053.600,00",
+            "(72.663.554,04)",
+            "(71.609.954,04)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Déficit do exercício",
+          "values": [
+            "",
+            "",
+            "(7.493.428,43)",
+            "(7.493.428,43)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31 de dezembro de 2013",
+          "values": [
+            "16",
+            "1.053.600,00",
+            "(80.156.982,47)",
+            "(79.103.382,47)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012",
+      "columns": [
+        "",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "FLUXOS DE CAIXA DAS ATIVIDADES OPERACIONAIS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(Déficit) superávit líquido do exercício",
+          "values": [
+            "(7.493.428,43)",
+            "1.414.451,24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes para conciliação do resultado:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Provisão (reversão) para contingências",
+          "values": [
+            "(1.871.814,03)",
+            "(4.094.140,13)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciações e amortizações",
+          "values": [
+            "4.711.825,01",
+            "739.871,93"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixa de ativo imobilizado e intangível",
+          "values": [
+            "2.358.685,76",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juros sobre empréstimos e outras operações que não envolvem caixa",
+          "values": [
+            "1.062.289,36",
+            "(202.455,91)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variações nos ativos e passivos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(Aumento) nas contas a receber",
+          "values": [
+            "(1.417.710,02)",
+            "(4.547.639,43)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Redução (aumento) em depósitos judiciais",
+          "values": [
+            "238.245,65",
+            "1.156.245,03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) redução em adiantamentos",
+          "values": [
+            "227.429,11",
+            "(889.184,45)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) em tributos a recuperar",
+          "values": [
+            "(50.061,08)",
+            "(29.690,64)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Redução em valores a apropriar",
+          "values": [
+            "430.639,08",
+            "1.618.983,24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Redução) em fornecedores",
+          "values": [
+            "(117.854,41)",
+            "(714.573,07)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento em obrigações trabalhistas e previdenciárias",
+          "values": [
+            "195.607,01",
+            "1.209.680,34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Redução) em direitos de imagem",
+          "values": [
+            "(236.378,51)",
+            "(1.539.583,73)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento em obrigações tributárias",
+          "values": [
+            "3.780.030,33",
+            "4.080.689,80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento em outras contas a pagar",
+          "values": [
+            "(241.638,14)",
+            "741.715,75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Redução) em obrigações com terceiros",
+          "values": [
+            "(302.500,00)",
+            "(249.833,33)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento em valores a apropriar",
+          "values": [
+            "282.237,56",
+            "1.137.916,75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Redução) das provisões para contingências - acordos",
+          "values": [
+            "(922.596,90)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Redução) aumento em receitas/despesas diferidas",
+          "values": [
+            "(5.593.750,00)",
+            "13.156.250,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamento de juros sobre empréstimos",
+          "values": [
+            "(326.339,94)",
+            "(107.561,26)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido gerado nas atividades operacionais",
+          "values": [
+            "(5.287.082,59)",
+            "12.881.142,13"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "FLUXOS DE CAIXA DAS ATIVIDADES DE INVESTIMENTO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aquisições de imobilizado",
+          "values": [
+            "(5.834.812,58)",
+            "(1.992.409,29)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Formação de intangível (custo com atletas em formação)",
+          "values": [
+            "(6.003.585,94)",
+            "(943.698,26)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recebimento na venda de imobilizado",
+          "values": [
+            "775,00",
+            "79.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido gerado nas atividades de investimento",
+          "values": [
+            "(11.837.623,52)",
+            "(2.857.107,55)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "FLUXO DE CAIXA DAS ATIVIDADES DE FINANCIAMENTO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Amortização de empréstimos - principal",
+          "values": [
+            "(941.578,91)",
+            "(1.077.703,51)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos tomados",
+          "values": [
+            "9.273.810,33",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido gerado nas atividades de financiamento",
+          "values": [
+            "8.332.231,42",
+            "(1.077.703,51)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(REDUÇÃO) AUMENTO LÍQUIDO DE CAIXA E EQUIVALENTES DE CAIXA",
+          "values": [
+            "(8.792.474,69)",
+            "8.946.331,07"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa no início do exercício",
+          "values": [
+            "9.051.718,30",
+            "105.387,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa no fim do exercício",
+          "values": [
+            "259.243,61",
+            "9.051.718,30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(REDUÇÃO) AUMENTO LÍQUIDO DE CAIXA E EQUIVALENTES DE CAIXA",
+          "values": [
+            "(8.792.474,69)",
+            "8.946.331,07"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 11,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / 4 – CAIXA E EQUIVALENTES DE CAIXA",
+      "columns": [
+        "DESCRIÇÃO",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caixa geral",
+          "values": [
+            "6.160,27",
+            "4.096,19"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fundo fixo - superintendência adm.",
+          "values": [
+            "34.440,75",
+            "12.916,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Bradesco S/A",
+          "values": [
+            "564,67",
+            "1.266,69"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa Econômica Federal",
+          "values": [
+            "64.292,34",
+            "95.477,92"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Indusval & Partners S/A",
+          "values": [
+            "1.964,21",
+            "2.103,60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco BMG S/A",
+          "values": [
+            "-",
+            "5.854,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco do Brasil",
+          "values": [
+            "1.821,37",
+            "2,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cheques Administrativos",
+          "values": [
+            "150.000,00",
+            "8.930.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "259.243,61",
+            "9.051.718,30"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 11,
+      "section": "5 – CONTAS A RECEBER",
+      "columns": [
+        "DESCRIÇÃO",
+        "2013",
+        "2012 (Reclassificado)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Títulos sócio proprietário",
+          "values": [
+            "7.000,00",
+            "7.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mensalidades sócio proprietário",
+          "values": [
+            "942.500,00",
+            "1.236.300,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Esportes olímpicos",
+          "values": [
+            "92.091,08",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / ## DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012",
+      "columns": [
+        "Iniciação esportiva",
+        "339.633,02",
+        "-"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Patrocínios",
+          "values": [
+            "837.500,00",
+            "125.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Globosat Programadora Ltda.",
+          "values": [
+            "278.038,00",
+            "505.532,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clube dos Treze",
+          "values": [
+            "1.549.615,15",
+            "1.549.615,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) INSS televisionamento de jogos",
+          "values": [
+            "(337.026,91)",
+            "(348.401,60)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Direito de arena telev. jogos",
+          "values": [
+            "(337.026,91)",
+            "(348.401,60)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bilheterias",
+          "values": [
+            "222.893,26",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiações e participações",
+          "values": [
+            "270.000,00",
+            "270.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Títulos de capitalização",
+          "values": [
+            "216.474,68",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valores a receber",
+          "values": [
+            "493.418,45",
+            "205.007,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propaganda e publicidade",
+          "values": [
+            "60.083,33",
+            "34.380,45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos",
+          "values": [
+            "866.824,09",
+            "1.104.366,74"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros valores a receber",
+          "values": [
+            "36.369,73",
+            "162.702,19"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "5.538.386,97",
+            "4.503.100,64"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "## 6 – DEPÓSITOS JUDICIAIS",
+      "columns": [
+        "DESCRIÇÃO",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Marcelo José da Silva",
+          "values": [
+            "-",
+            "277.300,91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósito recursal trabalhista",
+          "values": [
+            "15.404,54",
+            "2.550,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Player Empreendimentos Esportivos e Culturais Ltda",
+          "values": [
+            "425.176,00",
+            "425.176,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PGFN - Procuradoria Geral da Fazenda Nacional",
+          "values": [
+            "30.981,05",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Protefer - Proteção e Ferramentas Ltda",
+          "values": [
+            "-",
+            "4.780,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "471.561,59",
+            "709.807,24"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "## 7 - IMOBILIZADO",
+      "columns": [
+        "DESCRIÇÃO",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "258.268,04",
+            "258.268,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações",
+          "values": [
+            "6.623.241,55",
+            "6.623.241,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "841.949,29",
+            "829.449,29"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e equipamentos",
+          "values": [
+            "1.513.383,49",
+            "1.289.842,79"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e utensílios",
+          "values": [
+            "455.178,26",
+            "339.803,54"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ferramentas",
+          "values": [
+            "10.034,10",
+            "10.034,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos de informática",
+          "values": [
+            "169.775,45",
+            "150.332,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Programas de computadores",
+          "values": [
+            "-",
+            "69.711,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos de comunicação",
+          "values": [
+            "55.026,64",
+            "46.226,64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos médicos",
+          "values": [
+            "405.557,99",
+            "180.360,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizações em andamento",
+          "values": [
+            "7.181.138,09",
+            "999.948,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Depreciação acumulada",
+          "values": [
+            "(5.407.244,91)",
+            "(4.986.110,95)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "12.106.307,99",
+            "5.811.107,72"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "GOIÁS ESPORTE CLUBE - CNPJ/MF:",
+          "values": [
+            "01.665.256/0001-80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avenida Edmundo Pinheiro de Abreu, nº 721, Setor Bela Vista, Goiânia/GO, CEP",
+          "values": [
+            "74.823-030."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "7.1 – CONCILIAÇÃO DO IMOBILIZADO",
+      "columns": [
+        "Descrição",
+        "Terrenos",
+        "Edificações",
+        "Veículos",
+        "Máquinas e equipamentos",
+        "Móveis e Utensílios",
+        "Ferramentas",
+        "Equipamentos de Informática",
+        "Programas de Computadores",
+        "Equipamentos de Comunicação",
+        "Equipamentos Médicos",
+        "Imobilizações em Curso",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Custo:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2012",
+          "values": [
+            "258.268,04",
+            "6.623.241,55",
+            "829.449,29",
+            "1.289.842,79",
+            "339.803,54",
+            "10.034,10",
+            "150.332,33",
+            "69.711,28",
+            "46.226,64",
+            "180.360,99",
+            "999.948,12",
+            "10.797.218,67"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adições 2013",
+          "values": [
+            "-",
+            "-",
+            "12.500,00",
+            "187.026,30",
+            "19.940,00",
+            "-",
+            "27.252,42",
+            "-",
+            "8.800,00",
+            "78.665,00",
+            "6.464.301,09",
+            "6.798.484,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixas 2013",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "(4.030,00)",
+            "(600,00)",
+            "-",
+            "(7.809,30)",
+            "-",
+            "-",
+            "-",
+            "-",
+            "(12.439,30)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferências 2013",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "40.544,40",
+            "96.034,72",
+            "-",
+            "-",
+            "(69.711,28)",
+            "-",
+            "146.532,00",
+            "(283.111,12)",
+            "(69.711,28)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2013",
+          "values": [
+            "258.268,04",
+            "6.623.241,55",
+            "841.949,29",
+            "1.513.383,49",
+            "455.178,26",
+            "10.034,10",
+            "169.775,45",
+            "-",
+            "55.026,64",
+            "405.557,99",
+            "7.181.138,09",
+            "17.513.552,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2012",
+          "values": [
+            "-",
+            "(3.181.558,21)",
+            "(774.142,44)",
+            "(551.654,61)",
+            "(209.182,36)",
+            "(9.132,84)",
+            "(94.986,85)",
+            "(41.239,96)",
+            "(22.916,51)",
+            "(101.297,17)",
+            "-",
+            "(4.986.110,95)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação 2013",
+          "values": [
+            "-",
+            "(264.929,64)",
+            "(10.461,82)",
+            "(108.838,01)",
+            "(31.361,73)",
+            "(213,90)",
+            "(21.914,27)",
+            "-",
+            "(4.406,76)",
+            "(31.857,09)",
+            "-",
+            "(473.983,22)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixas 2013",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "4.030,00",
+            "600,00",
+            "-",
+            "6.979,30",
+            "-",
+            "-",
+            "-",
+            "-",
+            "11.609,30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferências 2013",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "41.239,96",
+            "-",
+            "-",
+            "-",
+            "41.239,96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2013",
+          "values": [
+            "-",
+            "(3.446.487,85)",
+            "(784.604,26)",
+            "(656.462,62)",
+            "(239.944,09)",
+            "(9.346,74)",
+            "(109.921,82)",
+            "-",
+            "(27.323,27)",
+            "(133.154,26)",
+            "-",
+            "(5.407.244,91)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado líquido:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2012",
+          "values": [
+            "258.268,04",
+            "3.441.683,34",
+            "55.306,85",
+            "738.188,18",
+            "130.621,18",
+            "901,26",
+            "55.345,48",
+            "28.471,32",
+            "23.310,13",
+            "79.063,82",
+            "999.948,12",
+            "5.811.107,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2013",
+          "values": [
+            "258.268,04",
+            "3.176.753,70",
+            "57.345,03",
+            "856.920,87",
+            "215.234,17",
+            "687,36",
+            "59.853,63",
+            "-",
+            "27.703,37",
+            "272.403,73",
+            "7.181.138,09",
+            "12.106.307,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tax. deprec. anual:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2012",
+          "values": [
+            "-",
+            "4,00%",
+            "4,16%-6,14%",
+            "10,00%",
+            "10,00%",
+            "10,00%",
+            "20,00%",
+            "20,00%",
+            "10,00%",
+            "10,00%",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2013",
+          "values": [
+            "-",
+            "4,00%",
+            "4,16%-6,14%",
+            "10,00%",
+            "10,00%",
+            "10,00%",
+            "20,00%",
+            "20,00%",
+            "10,00%",
+            "10,00%",
+            "-",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "8 – INTANGÍVEL",
+      "columns": [
+        "DESCRIÇÃO",
+        "",
+        "2013",
+        "2012 (Reclassificado)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Atletas contratados:",
+          "values": [
+            "(a)",
+            "-",
+            "3.000,00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Atletas contratados",
+          "values": [
+            "",
+            "3.364.418,32",
+            "3.044.100,64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Amortização atletas contratados",
+          "values": [
+            "(b)",
+            "(3.364.418,32)",
+            "(3.041.100,64)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas formados:",
+          "values": [
+            "(a)",
+            "195.489,54",
+            "450.225,70"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Atletas formados",
+          "values": [
+            "",
+            "1.028.681,59",
+            "982.279,24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Amortização atletas formados",
+          "values": [
+            "(b)",
+            "(833.192,05)",
+            "(532.053,54)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas em formação:",
+          "values": [
+            "(a)",
+            "2.481.465,84",
+            "2.541.852,40"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Atletas sub 20",
+          "values": [
+            "",
+            "349.113,48",
+            "318.385,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas sub 18",
+          "values": [
+            "",
+            "649.815,31",
+            "581.462,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas sub 17",
+          "values": [
+            "",
+            "968.058,30",
+            "59.587,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas sub 16",
+          "values": [
+            "",
+            "-",
+            "1.095.438,17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas sub 15",
+          "values": [
+            "",
+            "514.478,75",
+            "486.978,22"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de Uso de Imagem",
+          "values": [
+            "(a)",
+            "2.332.115,04",
+            "165.000,00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Direito de uso de imagem",
+          "values": [
+            "",
+            "5.644.648,98",
+            "165.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Amortização de uso de direito de imagem",
+          "values": [
+            "(b)",
+            "(3.312.533,94)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Programas de computadores",
+          "values": [
+            "(a)",
+            "36.592,11",
+            "-"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Softwares em operação",
+          "values": [
+            "",
+            "69.711,28",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "GOIÁS ESPORTE CLUBE - CNPJ/MF:",
+          "values": [
+            "01.665.256/0001-80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avenida Edmundo Pinheiro de Abreu, nº 721, Setor Bela Vista, Goiânia/GO, CEP",
+          "values": [
+            "74.823-030."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "14",
+      "columns": [
+        "DESCRIÇÃO",
+        "",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Softwares em desenvolvimento",
+          "values": [
+            "(b)",
+            "15.937,50",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Amortização de softwares em operação",
+          "values": [
+            "(b)",
+            "(49.056,67)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "",
+            "5.045.662,53",
+            "3.160.078,10"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "8.1 – CONCILIAÇÃO DO INTANGÍVEL",
+      "columns": [
+        "Descrição",
+        "Atletas contratados",
+        "Atletas formados",
+        "Atletas em formação",
+        "Softwares em operação",
+        "Softwares em desenvolvimento",
+        "Direito de uso de imagem",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Custo:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2012",
+          "values": [
+            "3.044.100,64",
+            "982.279,24",
+            "2.541.852,40",
+            "-",
+            "-",
+            "-",
+            "6.568.232,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adições 2013",
+          "values": [
+            "320.317,68",
+            "-",
+            "2.344.701,55",
+            "-",
+            "15.937,50",
+            "5.479.648,98",
+            "8.160.605,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixas 2013",
+          "values": [
+            "-",
+            "-",
+            "(2.358.685,76)",
+            "-",
+            "-",
+            "-",
+            "(2.358.685,76)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferências 2013",
+          "values": [
+            "-",
+            "46.402,35",
+            "(46.402,35)",
+            "69.711,28",
+            "-",
+            "165.000,00",
+            "234.711,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2013",
+          "values": [
+            "3.364.418,32",
+            "1.028.681,59",
+            "2.481.465,84",
+            "69.711,28",
+            "15.937,50",
+            "5.644.648,98",
+            "12.604.863,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2012",
+          "values": [
+            "(3.041.100,64)",
+            "(532.053,54)",
+            "-",
+            "-",
+            "-",
+            "-",
+            "(3.573.154,18)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação 2013",
+          "values": [
+            "(323.317,68)",
+            "(301.138,51)",
+            "-",
+            "(7.816,71)",
+            "-",
+            "-",
+            "(632.272,90)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixas 2013",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferências 2013",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "(41.239,96)",
+            "-",
+            "(3.312.533,94)",
+            "(3.353.773,90)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2013",
+          "values": [
+            "(3.364.418,32)",
+            "(833.192,05)",
+            "-",
+            "(49.056,67)",
+            "-",
+            "(3.312.533,94)",
+            "(7.559.200,98)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado líquido:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2012",
+          "values": [
+            "3.000,00",
+            "450.225,70",
+            "2.541.852,40",
+            "-",
+            "-",
+            "-",
+            "2.995.078,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31/12/2013",
+          "values": [
+            "-",
+            "195.489,54",
+            "2.481.465,84",
+            "20.654,61",
+            "15.937,50",
+            "2.332.115,04",
+            "5.045.662,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tax. amort. anual:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2012",
+          "values": [
+            "20,00% - 100,00%",
+            "20,00% - 100,00%",
+            "-",
+            "20,00%",
+            "-",
+            "20,00% - 100,00%",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2013",
+          "values": [
+            "20,00% - 100,00%",
+            "20,00% - 100,00%",
+            "20,00%",
+            "20,00%",
+            "-",
+            "20,00% - 100,00%",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "9 – EMPRÉSTIMOS E FINANCIAMENTOS",
+      "columns": [
+        "DESCRIÇÃO",
+        "TAXA (%)",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Empréstimos:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Banco industrial e comercial S/A",
+          "values": [
+            "1,0% + CDI a.m.",
+            "-",
+            "983.797,20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco BMG S/A",
+          "values": [
+            "2,1% a.m.",
+            "",
+            "141.476,96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CBF – Confederação Brasileira de Futebol",
+          "values": [
+            "1,0% a.m.",
+            "2.000.000,00",
+            "2.000.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco de Crédito e Varejo",
+          "values": [
+            "1,56% a.m.",
+            "10.049.083,29",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiamentos:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Banco Finasa BMC S/A",
+          "values": [
+            "8% a.a.",
+            "16.974,45",
+            "57.713,13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Safra S/A",
+          "values": [
+            "8% a.a.",
+            "-",
+            "17.498,91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Encargos a apropriar",
+          "values": [
+            "",
+            "(9.024,45)",
+            "(30.683,13)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas garantidas:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bradesco S/A - (33-7)",
+          "values": [
+            "2,05% a.m.",
+            "453.812,18",
+            "270.843,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bradesco S/A - (4810-0)",
+          "values": [
+            "2,05% a.m.",
+            "179,15",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bradesco S/A - (22700-5)",
+          "values": [
+            "2,05% a.m.",
+            "8.570,08",
+            "9.992,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CIRCULANTE",
+          "values": [
+            "",
+            "7.095.034,55",
+            "3.442.688,86"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "NÃO CIRCULANTE",
+          "values": [
+            "",
+            "5.424.560,15",
+            "7.950,00"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / ## 10 – OBRIGAÇÕES TRABALHISTAS E SOCIAIS",
+      "columns": [
+        "DESCRIÇÃO",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Proventos:",
+          "values": [
+            "4.937.399,90",
+            "3.220.510,49"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Salários a pagar",
+          "values": [
+            "626.484,44",
+            "638.344,61"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13º salário a pagar",
+          "values": [
+            "918.989,20",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rescisões a pagar",
+          "values": [
+            "467.607,17",
+            "83.567,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensão alimentícia a pagar",
+          "values": [
+            "14.485,55",
+            "1.244,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Férias a pagar",
+          "values": [
+            "942.365,03",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bolsa estágio",
+          "values": [
+            "-",
+            "2.924,60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bolsa aprendizagem",
+          "values": [
+            "10.350,00",
+            "13.550,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estimativa de férias",
+          "values": [
+            "812.687,91",
+            "817.547,03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos Trabalhistas",
+          "values": [
+            "1.144.430,60",
+            "1.663.332,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Encargos sociais:",
+          "values": [
+            "5.091.222,31",
+            "3.667.685,99"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "INSS a pagar",
+          "values": [
+            "706.578,25",
+            "261.499,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS a pagar",
+          "values": [
+            "315.109,39",
+            "406.082,39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF folha de pagamento",
+          "values": [
+            "3.883.201,28",
+            "1.767.438,19"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF - conta corrente RFB",
+          "values": [
+            "-",
+            "1.035.628,96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuição sindical a recolher",
+          "values": [
+            "16.636,16",
+            "16.794,30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuição assistencial a recolher",
+          "values": [
+            "9.539,49",
+            "9.645,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuição social a recolher",
+          "values": [
+            "1.914,54",
+            "1.934,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PIS - folha de pagamento",
+          "values": [
+            "48.700,67",
+            "58.299,54"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS s/ estimativa de férias",
+          "values": [
+            "36.570,96",
+            "36.788,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS s/ estimativa de férias",
+          "values": [
+            "64.844,79",
+            "65.400,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PIS s/ estimativa de férias",
+          "values": [
+            "8.126,78",
+            "8.174,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dívida Ativa:",
+          "values": [
+            "24.249.272,74",
+            "23.284.928,07"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "INSS",
+          "values": [
+            "5.662.654,66",
+            "6.738.751,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF",
+          "values": [
+            "18.586.618,08",
+            "16.546.177,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "34.277.894,95",
+            "30.173.124,55"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "## 11 – TRIBUTOS A RECOLHER",
+      "columns": [
+        "DESCRIÇÃO",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Impostos:",
+          "values": [
+            "442.581,91",
+            "402.904,15"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ISS - retenções",
+          "values": [
+            "33.481,42",
+            "13.666,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF",
+          "values": [
+            "1.238,03",
+            "3.627,13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IPTU",
+          "values": [
+            "407.862,46",
+            "385.610,69"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuições:",
+          "values": [
+            "25.659,36",
+            "104.398,87"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "INSS mão de obra terceirizada",
+          "values": [
+            "24.884,34",
+            "101.420,17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PIS/COFINS/CSLL Lei 10.833/03",
+          "values": [
+            "775,02",
+            "2.978,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos parcelados:",
+          "values": [
+            "2.865.949,40",
+            "1.424.408,50"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Parcelamento dívida ativa CLT",
+          "values": [
+            "74.671,46",
+            "71.260,37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento ISS",
+          "values": [
+            "-",
+            "239.964,97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento Timemania – RFB",
+          "values": [
+            "198.180,00",
+            "255.055,57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento Timemania – INSS",
+          "values": [
+            "1.769.571,73",
+            "197.152,69"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento Timemania – FGTS",
+          "values": [
+            "275.112,00",
+            "273.457,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento PIS folha – RFB",
+          "values": [
+            "67.011,72",
+            "62.308,44"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / ## DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012",
+      "columns": [
+        "Parcelamento PIS folha – PGFN",
+        "104.916,38",
+        "98.798,00"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Parcelamento CSRF – RFB",
+          "values": [
+            "67.775,91",
+            "131.713,84"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento IRRF - PGFN",
+          "values": [
+            "104.274,31",
+            "94.697,30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento INSS - Ordinário PGFN",
+          "values": [
+            "204.435,89",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": null,
+      "columns": [
+        "Dívida Ativa:",
+        "3.654.916,93",
+        "2.569.986,63"
+      ],
+      "rows": [
+        {
+          "rawLabel": "IPTU",
+          "values": [
+            "3.060.453,00",
+            "2.353.093,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CSRF",
+          "values": [
+            "440.916,33",
+            "216.893,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CLT",
+          "values": [
+            "153.547,60",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "6.989.107,60",
+            "4.501.698,15"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "## 12 – RECEITAS ANTECIPADAS",
+      "columns": [
+        "DESCRIÇÃO",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Circulante:",
+          "values": [
+            "6.763.904,31",
+            "6.481.666,75"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mensalidade sócio proprietário",
+          "values": [
+            "282.900,00",
+            "870.500,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FR Incorporadora Ltda.",
+          "values": [
+            "77.083,31",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Companhia de Bebidas das Américas - AMBEV",
+          "values": [
+            "250.000,00",
+            "250.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Britânia Eletrodomésticos Ltda.",
+          "values": [
+            "750.000,00",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Globo Comunicações e Participações S.A. (a)",
+          "values": [
+            "4.625.000,00",
+            "4.625.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Globosat Programadora Ltda. (b)",
+          "values": [
+            "1.000.000,00",
+            "1.000.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propaganda e publicidade",
+          "values": [
+            "57.000,00",
+            "17.416,67"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cessão de Direito de Atletas",
+          "values": [
+            "40.671,00",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) INSS Televisionamento de jogos",
+          "values": [
+            "(318.750,00)",
+            "(281.249,92)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante:",
+          "values": [
+            "23.593.750,00",
+            "29.187.500,00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Companhia de Bebidas das Américas - AMBEV",
+          "values": [
+            "250.000,00",
+            "500.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Globo Comunicações e Participações S.A. (a)",
+          "values": [
+            "17.825.000,00",
+            "22.450.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Globosat Programadora Ltda. (b)",
+          "values": [
+            "7.800.000,00",
+            "8.800.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) INSS Televisionamento de jogos",
+          "values": [
+            "(1.281.250,00)",
+            "(1.562.500,00)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Direito de arena",
+          "values": [
+            "(1.000.000,00)",
+            "(1.000.000,00)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / ## Composição:",
+      "columns": [
+        "DESCRIÇÃO",
+        "",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Fiscais",
+          "values": [
+            "(a)",
+            "-",
+            "1.538.188,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cíveis",
+          "values": [
+            "(a)",
+            "88.138,97",
+            "814.507,30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trabalhistas",
+          "values": [
+            "(a)",
+            "227.562,85",
+            "2.344.281,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrativas",
+          "values": [
+            "(a)",
+            "4.227.478,21",
+            "4.227.478,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "",
+            "4.543.180,03",
+            "8.924.455,55"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": null,
+      "columns": [
+        "NATUREZA",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cíveis",
+          "values": [
+            "18.141.970,65",
+            "17.964.907,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trabalhistas",
+          "values": [
+            "250.000,00",
+            "250.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "18.391.970,65",
+            "18.214.907,70"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "## 14 – TÍTULOS A PAGAR / ## 15 – TRIBUTOS PARCELADOS",
+      "columns": [
+        "DESCRIÇÃO",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Parcelamento Timemania – RFB",
+          "values": [
+            "2.387.512,88",
+            "2.764.246,22"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento INSS – Ordinário PGFN",
+          "values": [
+            "691.936,88",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento Timemania – FGTS",
+          "values": [
+            "2.742.505,92",
+            "3.290.433,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento PIS folha – RFB",
+          "values": [
+            "106.101,89",
+            "160.963,47"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento PIS folha – PGFN",
+          "values": [
+            "137.765,18",
+            "229.984,25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento Dívida Ativa CLT",
+          "values": [
+            "80.415,42",
+            "141.933,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento CSRF – RFB",
+          "values": [
+            "90.367,88",
+            "312.940,96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamento IRRF – PGFN",
+          "values": [
+            "122.058,08",
+            "210.019,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "6.358.664,13",
+            "7.110.522,05"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / ## DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / ### 16 – PATRIMÔNIO SOCIAL A DESCOBERTO / ### 17. RECEITA LÍQUIDA",
+      "columns": [
+        "DESCRIÇÃO",
+        "FUTEBOL PROFISSIONAL",
+        "",
+        "FUTEBOL DE BASE",
+        "",
+        "SOCIAL E ADMINISTRATIVO",
+        "",
+        "TOTAL",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "2013",
+            "2012",
+            "2013",
+            "2012",
+            "2013",
+            "2012",
+            "2013",
+            "2012"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECEITAS:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bilheterias",
+          "values": [
+            "8.417.189,52",
+            "3.740.004,00",
+            "-",
+            "-",
+            "-",
+            "-",
+            "8.417.189,52",
+            "3.740.004,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de transmissão de TV",
+          "values": [
+            "30.648.014,90",
+            "36.720.143,90",
+            "-",
+            "-",
+            "-",
+            "-",
+            "30.648.014,90",
+            "36.720.143,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiação/participações",
+          "values": [
+            "4.300.000,00",
+            "940.000,00",
+            "-",
+            "-",
+            "-",
+            "-",
+            "4.300.000,00",
+            "940.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transação de atletas",
+          "values": [
+            "253.333,34",
+            "4.595.399,84",
+            "-",
+            "126.249,92",
+            "-",
+            "-",
+            "253.333,34",
+            "4.721.649,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocínio/ publicidade/propaganda",
+          "values": [
+            "1.536.360,69",
+            "926.071,33",
+            "250.000,00",
+            "22.000,00",
+            "53.416,63",
+            "-",
+            "1.839.777,32",
+            "948.071,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mensalidades",
+          "values": [
+            "-",
+            "247.387,00",
+            "-",
+            "-",
+            "3.535.146,09",
+            "3.077.046,70",
+            "3.535.146,09",
+            "3.324.433,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jogos lotéricos",
+          "values": [
+            "1.928.792,07",
+            "1.947.703,86",
+            "-",
+            "-",
+            "-",
+            "-",
+            "1.928.792,07",
+            "1.947.703,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas patrimoniais",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-",
+            "39.340,00",
+            "74.508,90",
+            "39.340,00",
+            "74.508,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas",
+          "values": [
+            "1.349.557,57",
+            "622.470,22",
+            "1.732,00",
+            "-",
+            "3.159.301,99",
+            "86.124,72",
+            "4.510.591,56",
+            "708.594,94"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Deduções da receita",
+          "values": [
+            "(4.385.432,48)",
+            "(4.357.130,59)",
+            "-",
+            "-",
+            "(12.026,13)",
+            "(29.216,83)",
+            "(4.397.458,61)",
+            "(4.386.347,42)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECEITA LÍQUIDA",
+          "values": [
+            "44.047.815,61",
+            "45.382.049,56",
+            "251.732,00",
+            "148.249,92",
+            "6.775.178,58",
+            "3.208.463,49",
+            "51.074.726,19",
+            "48.738.762,97"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 18,
+      "section": "### 18. CUSTOS E DESPESAS",
+      "columns": [
+        "DESCRIÇÃO",
+        "FUTEBOL PROFISSIONAL",
+        "",
+        "FUTEBOL DE BASE",
+        "",
+        "SOCIAL E ADMINISTRATIVO",
+        "",
+        "TOTAL",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "2013",
+            "2012",
+            "2013",
+            "2012",
+            "2013",
+            "2012",
+            "2013",
+            "2012"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CUSTOS E DESPESAS:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Despesas com jogos",
+          "values": [
+            "(5.203.185,27)",
+            "(3.382.965,77)",
+            "-",
+            "(1.107,64)",
+            "-",
+            "-",
+            "(5.203.185,27)",
+            "(3.384.073,41)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com pessoal",
+          "values": [
+            "(31.850.227,07)",
+            "(25.454.582,42)",
+            "-",
+            "-",
+            "(5.230.738,03)",
+            "(4.180.386,28)",
+            "(37.080.965,10)",
+            "(29.634.968,70)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas administrativas",
+          "values": [
+            "(62.877,70)",
+            "(145.338,67)",
+            "-",
+            "-",
+            "(163.903,52)",
+            "(378.854,82)",
+            "(226.781,22)",
+            "(524.193,49)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiais",
+          "values": [
+            "(93.080,66)",
+            "(74.592,72)",
+            "-",
+            "-",
+            "(604.275,13)",
+            "(484.252,30)",
+            "(697.355,79)",
+            "(558.845,02)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de terceiros",
+          "values": [
+            "(5.447.602,96)",
+            "(3.101.509,86)",
+            "-",
+            "-",
+            "(1.746.285,03)",
+            "(994.220,81)",
+            "(7.193.887,99)",
+            "(4.095.730,67)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas tributárias",
+          "values": [
+            "(271.921,48)",
+            "(3.042,05)",
+            "-",
+            "-",
+            "(565.401,89)",
+            "(446.964,96)",
+            "(837.323,37)",
+            "(450.007,01)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas gerais",
+          "values": [
+            "(174.735,52)",
+            "(452.529,12)",
+            "(2.669.274,27)",
+            "(1.134.398,27)",
+            "(2.023.435,86)",
+            "(1.509.550,00)",
+            "(4.867.445,65)",
+            "(3.096.477,39)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões para contingências",
+          "values": [
+            "863.919,06",
+            "(178.585,75)",
+            "-",
+            "-",
+            "724.561,96",
+            "(41.414,48)",
+            "1.588.481,02",
+            "(220.000,23)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "(42.239.711,61)",
+            "(32.793.146,36)",
+            "(2.669.274,27)",
+            "(1.135.505,91)",
+            "(9.609.477,49)",
+            "(8.035.643,65)",
+            "(54.518.463,37)",
+            "(41.964.295,92)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 19,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / ## 19 – RECLASSIFICAÇÕES",
+      "columns": [
+        "Balanço patrimonial (ativo)",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "ATIVO",
+          "values": [
+            "2012 (Reclassificado)",
+            "Reclassificações",
+            "2012 (Publicado)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CIRCULANTE",
+          "values": [
+            "13.663.873,94",
+            "(165.000,00)",
+            "13.828.873,94"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa",
+          "values": [
+            "9.051.718,30",
+            "",
+            "9.051.718,30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber (a)",
+          "values": [
+            "4.503.100,64",
+            "(6.896,37)",
+            "4.509.997,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos a recuperar",
+          "values": [
+            "102.158,63",
+            "",
+            "102.158,63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de uso de imagem (b)",
+          "values": [
+            "-",
+            "(165.000,00)",
+            "165.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas antecipadas (a)",
+          "values": [
+            "6.896,37",
+            "6.896,37",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NÃO CIRCULANTE",
+          "values": [
+            "10.470.426,83",
+            "165.000,00",
+            "10.305.426,83"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Realizável a longo prazo",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos judiciais",
+          "values": [
+            "709.807,24",
+            "",
+            "709.807,24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros créditos",
+          "values": [
+            "789.433,77",
+            "",
+            "789.433,77"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "5.811.107,72",
+            "",
+            "5.811.107,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível (b)",
+          "values": [
+            "3.160.078,10",
+            "165.000,00",
+            "2.995.078,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DO ATIVO (b)",
+          "values": [
+            "24.134.300,77",
+            "-",
+            "24.134.300,77"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 4,
+      "section": "CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / # BALANÇOS PATRIMONIAIS / LEVANTADOS EM 31 DE DEZEMBRO DE 2013 E 2012 / (EM REAIS)",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DO ATIVO",
+      "target": "24.094.068,04",
+      "addendCount": 8,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / # BALANÇOS PATRIMONIAIS / LEVANTADOS EM 31 DE DEZEMBRO DE 2013 E 2012 / (EM REAIS)",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL DO ATIVO",
+      "target": "24.134.300,77",
+      "addendCount": 8,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / # BALANÇOS PATRIMONIAIS / LEVANTADOS EM 31 DE DEZEMBRO DE 2013 E 2012 / (EM REAIS)",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DO PASSIVO E PATRIMÔNIO SOCIAL",
+      "target": "24.094.068,04",
+      "addendCount": 15,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / # BALANÇOS PATRIMONIAIS / LEVANTADOS EM 31 DE DEZEMBRO DE 2013 E 2012 / (EM REAIS)",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL DO PASSIVO E PATRIMÔNIO SOCIAL",
+      "target": "24.134.300,77",
+      "addendCount": 15,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / 4 – CAIXA E EQUIVALENTES DE CAIXA",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "259.243,61",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / 4 – CAIXA E EQUIVALENTES DE CAIXA",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "9.051.718,30",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / ## DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "5.538.386,97",
+      "addendCount": 12,
+      "closes": false,
+      "diff": "-1381224.0999999996"
+    },
+    {
+      "page": 12,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / ## DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "4.503.100,64",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "-1243300"
+    },
+    {
+      "page": 12,
+      "section": "## 6 – DEPÓSITOS JUDICIAIS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "471.561,59",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "## 6 – DEPÓSITOS JUDICIAIS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "709.807,24",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "## 7 - IMOBILIZADO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "12.106.307,99",
+      "addendCount": 11,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "## 7 - IMOBILIZADO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "5.811.107,72",
+      "addendCount": 12,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": "14",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "5.045.662,53",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-5078781.7"
+    },
+    {
+      "page": 15,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / ## 10 – OBRIGAÇÕES TRABALHISTAS E SOCIAIS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "34.277.894,95",
+      "addendCount": 20,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / ## 10 – OBRIGAÇÕES TRABALHISTAS E SOCIAIS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "30.173.124,55",
+      "addendCount": 20,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "6.989.107,60",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-3334190.6699999995"
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "4.501.698,15",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-1931711.5200000005"
+    },
+    {
+      "page": 17,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / ## Composição:",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "4.543.180,03",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / ## Composição:",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "target": "8.924.455,55",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "18.391.970,65",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "18.214.907,70",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "## 14 – TÍTULOS A PAGAR / ## 15 – TRIBUTOS PARCELADOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "6.358.664,13",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "## 14 – TÍTULOS A PAGAR / ## 15 – TRIBUTOS PARCELADOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "7.110.522,05",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "### 18. CUSTOS E DESPESAS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "(42.239.711,61)",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "2013.0099999979138"
+    },
+    {
+      "page": 18,
+      "section": "### 18. CUSTOS E DESPESAS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "(32.793.146,36)",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "2011.9999999962747"
+    },
+    {
+      "page": 18,
+      "section": "### 18. CUSTOS E DESPESAS",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "target": "(2.669.274,27)",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "2013"
+    },
+    {
+      "page": 18,
+      "section": "### 18. CUSTOS E DESPESAS",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "(1.135.505,91)",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "2012"
+    },
+    {
+      "page": 18,
+      "section": "### 18. CUSTOS E DESPESAS",
+      "likelyRelevant": true,
+      "column": 4,
+      "totalLabel": "TOTAL",
+      "target": "(9.609.477,49)",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "2012.9900000002235"
+    },
+    {
+      "page": 18,
+      "section": "### 18. CUSTOS E DESPESAS",
+      "likelyRelevant": true,
+      "column": 5,
+      "totalLabel": "TOTAL",
+      "target": "(8.035.643,65)",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "2012.0000000009313"
+    },
+    {
+      "page": 18,
+      "section": "### 18. CUSTOS E DESPESAS",
+      "likelyRelevant": true,
+      "column": 6,
+      "totalLabel": "TOTAL",
+      "target": "(54.518.463,37)",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "2013"
+    },
+    {
+      "page": 18,
+      "section": "### 18. CUSTOS E DESPESAS",
+      "likelyRelevant": true,
+      "column": 7,
+      "totalLabel": "TOTAL",
+      "target": "(41.964.295,92)",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "2012.0000000074506"
+    },
+    {
+      "page": 19,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / ## 19 – RECLASSIFICAÇÕES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL DO ATIVO (b)",
+      "skipped": true,
+      "reason": "1 de 11 valor(es) del segmento no parecen números (ej. \"2012 (Reclassificado)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 19,
+      "section": "# GOIÁS ESPORTE CLUBE / CNPJ: 01.665.256/0001-80 / DEMONSTRAÇÕES CONTÁBEIS DOS EXERCÍCIOS SOCIAIS DE 2013 E 2012 / ## 19 – RECLASSIFICAÇÕES",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL DO ATIVO (b)",
+      "skipped": true,
+      "reason": "1 de 11 valor(es) del segmento no parecen números (ej. \"2012 (Publicado)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/goias-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"goias\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "8 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "5 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

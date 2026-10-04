@@ -1,0 +1,230 @@
+{
+ "md": "Clubes/Rusia/Rubin Kazan/2023-poyasneniya.md",
+ "pdf": "Clubes/Rusia/Rubin Kazan/2023-poyasneniya.pdf",
+ "club": "rubin-kazan",
+ "year": 2023,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:08:05.991Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 19,
+  "notasUsadas": []
+ },
+ "ladoConocido": 17,
+ "rubros": [
+  {
+   "label": "Амортизация, начисленная на право пользование активом",
+   "lado": null,
+   "page": 13,
+   "section": "Суммы, признанные в отчете о финансовых результатах: / (тыс. руб.)",
+   "values": [
+    -0.036352
+   ],
+   "origen": "estado 4",
+   "glosa": "Amortización de activos por derecho de uso"
+  },
+  {
+   "label": "Процентные расходы по обязательствам по аренде",
+   "lado": "expense",
+   "page": 13,
+   "section": "Суммы, признанные в отчете о финансовых результатах: / (тыс. руб.)",
+   "values": [
+    -0.00909
+   ],
+   "origen": "estado 4",
+   "glosa": "Gastos por intereses de pasivos por arrendamiento"
+  },
+  {
+   "label": "Отток денежных средств по аренде",
+   "lado": null,
+   "page": 13,
+   "section": "Суммы, признание в отчете о движении денежных средств: / (тыс. руб.)",
+   "values": [
+    -0.03968
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Проценты к уплате",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "values": [
+    0.014723
+   ],
+   "origen": "estado 19",
+   "glosa": "Gastos por intereses"
+  },
+  {
+   "label": "Курсовые разницы",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "values": [
+    0.487997
+   ],
+   "origen": "estado 19",
+   "glosa": "Diferencias de cambio"
+  },
+  {
+   "label": "Компенсация по трансферному контракту",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "values": [
+    0.375677
+   ],
+   "origen": "estado 19",
+   "glosa": "Indemnización por contrato de transferencia"
+  },
+  {
+   "label": "Списание агентских РБП в связи с расторжением контракта",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "values": [
+    0.046797
+   ],
+   "origen": "estado 19",
+   "glosa": "Baja de gastos anticipados por intermediación por rescisión de contrato"
+  },
+  {
+   "label": "Списание трансферных РБП в связи с расторжением контракта",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "values": [
+    0.010797
+   ],
+   "origen": "estado 19",
+   "glosa": "Baja de gastos anticipados por transferencias por rescisión de contrato"
+  },
+  {
+   "label": "Компенсация по трансферному контракту на условиях аренды",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "values": [
+    0.005977
+   ],
+   "origen": "estado 19",
+   "glosa": "Indemnización por contrato de cesión"
+  },
+  {
+   "label": "Списание резерва по сомнительным долгам",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "values": [
+    0.34136
+   ],
+   "origen": "estado 19",
+   "glosa": "Aplicación de provisión para deudas de dudoso cobro"
+  },
+  {
+   "label": "Солидарные взносы",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "values": [
+    0.017471
+   ],
+   "origen": "estado 19",
+   "glosa": "Mecanismo de solidaridad"
+  },
+  {
+   "label": "Прочие расходы",
+   "lado": "expense",
+   "page": 18,
+   "section": "### Прочие расходы",
+   "values": [
+    0.0858
+   ],
+   "origen": "estado 19",
+   "glosa": "Otros gastos"
+  },
+  {
+   "label": "Материальные затраты",
+   "lado": "expense",
+   "page": 17,
+   "section": "#### Затраты на производство",
+   "values": [
+    0.093256
+   ],
+   "origen": "estado 16",
+   "glosa": "Consumo de materiales"
+  },
+  {
+   "label": "Расходы на оплату труда",
+   "lado": "expense",
+   "page": 17,
+   "section": "#### Затраты на производство",
+   "values": [
+    1.76947
+   ],
+   "origen": "estado 16",
+   "glosa": "Gastos de personal"
+  },
+  {
+   "label": "Отчисления на социальные нужды",
+   "lado": "expense",
+   "page": 17,
+   "section": "#### Затраты на производство",
+   "values": [
+    0.230071
+   ],
+   "origen": "estado 16",
+   "glosa": "Cargas sociales"
+  },
+  {
+   "label": "Амортизация",
+   "lado": "expense",
+   "page": 17,
+   "section": "#### Затраты на производство",
+   "values": [
+    0.042593
+   ],
+   "origen": "estado 16",
+   "glosa": "Amortización"
+  },
+  {
+   "label": "Прочие затраты",
+   "lado": "expense",
+   "page": 17,
+   "section": "#### Затраты на производство",
+   "values": [
+    0.822054
+   ],
+   "origen": "estado 16",
+   "glosa": "Otros gastos de explotación"
+  },
+  {
+   "label": "Расходы по трансферным, агентским договорам, связанным с приобретением регистраций игроков (в том числе на условиях аренды)",
+   "lado": "expense",
+   "page": 14,
+   "section": "### 3.5. Расшифровка статьи 1210 «Запасы» / ### 3.6. Расшифровка статьи «Расходы будущих периодов»",
+   "values": [
+    0.832789
+   ],
+   "origen": "estado 7",
+   "glosa": "Gastos por contratos de transferencia e intermediación vinculados a la adquisición de derechos federativos (incluidas cesiones)"
+  },
+  {
+   "label": "Расходы будущих периодов по текущей хозяйственной деятельности",
+   "lado": "expense",
+   "page": 14,
+   "section": "Таблица 7 / Краткосрочные расходы будущих периодов / (тыс. руб.)",
+   "values": [
+    0.00008
+   ],
+   "origen": "estado 8",
+   "glosa": "Gastos anticipados de la actividad ordinaria corriente"
+  }
+ ]
+}

@@ -1,0 +1,195 @@
+{
+  "club": "hamburgersv-de",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/Hamburger SV/fussball-ag-jahresabschluss-2024-25.md",
+  "generatedAt": "2026-09-30T22:37:52.350Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 150,
+    "space": 2
+  },
+  "scannedWarning": false,
+  "tableCount": 5,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 6,
+      "section": "JAHRESABSCHLUSS / GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT / VOM 1. JULI 2024 BIS ZUM 30. JUNI 2025 / EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "des Anlagevermögens und Sachanlagen ._ .... (0.19810,52 _",
+          "values": [
+            "8.115.072,17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "‚6. Sonstige betriebliche Aufwendungen 57. 362. 852,27 a.",
+          "values": [
+            "016.142,95"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "JAHRESABSCHLUSS / TEUR TEUR TEUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Summe",
+          "values": [
+            "11.940",
+            "10.266",
+            "1.674"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Vorjahr)",
+          "values": [
+            "(10.212)",
+            "(9.026)",
+            "(1.186)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "JAHRESABSCHLUSS / ENTWICKLUNG DES ANLAGEVERMÖGENS / VoM 1. JULI 2024 BIS ZUM 30. JUNI 2025 / EUR EUR EUR EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Spielernutzungsrechte",
+          "values": [
+            "21.163.076,02",
+            "11.671.496,97",
+            "430.000,00",
+            "7.201.586,755",
+            "26.062.986,24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Markenwerte",
+          "values": [
+            "41.221.628,66",
+            "87.000,00",
+            "0,00",
+            "0,00",
+            "41.308.628,66"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Entgeltlich erworbene Software",
+          "values": [
+            "1.332.514,94",
+            "0,00",
+            "0,00",
+            "0,00",
+            "1.332.514,94"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "3. Geleistete Anzahlungen und Anlagen / im Bau 19.941,18 65.762,35 -19.941,18 0,00 65.762,35 / 165.708.578,74 2.814.412,41 0,00 740,00 168.522.251,15 / Il. Finanzanlagen / 1. Ausleihungen an verbundene",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Unternehmen",
+          "values": [
+            "0,00",
+            "1.000.000,00",
+            "0,00",
+            "11.667,00",
+            "988.333,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Beteiligungen",
+          "values": [
+            "141.645,66",
+            "0,00",
+            "0,00",
+            "0,00",
+            "141.645,66"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "LAGEBERICHT",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bundesliga um 1,4 Prozentpunkte auf 40,6%. In der",
+          "values": [
+            "2."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bundesliga wurde das Eigenkapital der Clubs auf EUR",
+          "values": [
+            "1,3"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "des Anlagevermögens und Sachanlagen ._ .... (0.19810,52 _",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "des Anlagevermögens und Sachanlagen ._ .... (0.19810,52 _",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "‚6. Sonstige betriebliche Aufwendungen 57. 362. 852,27 a.",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "‚6. Sonstige betriebliche Aufwendungen 57. 362. 852,27 a.",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Sonstige betriebliche Aufwendungen — Verwaltungsaufwendungen",
+        "similarity": 50
+      }
+    ]
+  },
+  "league": {
+    "pais": "de",
+    "query": "Hamburger SV",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

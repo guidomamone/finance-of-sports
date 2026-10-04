@@ -1,0 +1,324 @@
+{
+  "md": "Clubes/Grecia/Panathinaikos/Panathinaikos_notes_IFRS_2020-06-30.md",
+  "pdf": "Clubes/Grecia/Panathinaikos/Panathinaikos_notes_IFRS_2020-06-30.pdf",
+  "club": "panathinaikos-gr",
+  "year": 2020,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:03:18.908Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 26,
+    "notasUsadas": [
+      "34"
+    ]
+  },
+  "ladoConocido": 25,
+  "rubros": [
+    {
+      "label": "Αποσβέσεις από δικαιώματα χρήσης περιουσιακών στοιχείων",
+      "lado": null,
+      "page": 35,
+      "section": "# • Κατάσταση Αποτελεσμάτων",
+      "values": [
+        425.444
+      ],
+      "origen": "estado 31",
+      "glosa": "Amortización de activos por derecho de uso"
+    },
+    {
+      "label": "Τόκοι από υποχρεώσεις μισθωμάτων",
+      "lado": null,
+      "page": 35,
+      "section": "# • Κατάσταση Αποτελεσμάτων",
+      "values": [
+        228.242
+      ],
+      "origen": "estado 31",
+      "glosa": "Intereses por pasivos por arrendamiento"
+    },
+    {
+      "label": "Κόστος κτήσης την 30/06/2020",
+      "lado": "expense",
+      "page": 58,
+      "section": "## 2 ΑΣΩΜΑΤΕΣ ΑΚΙΝΗΤΟΠΟΙΗΣΕΙΣ",
+      "values": [
+        11249.016
+      ],
+      "origen": "nota 34 (ancla 31)",
+      "ancla": "Έξοδα ενοικίων από βραχυπρόθεσμα συμβόλαια και περιουσιακά στοιχεία χαμηλής αξίας",
+      "glosa": "Coste de adquisición al 30/06/2020"
+    },
+    {
+      "label": "Έξοδα ενοικίων από βραχυπρόθεσμα συμβόλαια και περιουσιακά στοιχεία χαμηλής αξίας",
+      "lado": "expense",
+      "page": 35,
+      "section": "# • Κατάσταση Αποτελεσμάτων",
+      "values": [
+        217.472
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Gastos por arrendamiento de contratos a corto plazo y activos de bajo valor"
+    },
+    {
+      "label": "Μείον: Σωρευμένες αποσβέσεις",
+      "lado": "expense",
+      "page": 58,
+      "section": "## 2 ΑΣΩΜΑΤΕΣ ΑΚΙΝΗΤΟΠΟΙΗΣΕΙΣ",
+      "values": [
+        -11031.576
+      ],
+      "origen": "nota 34 (ancla 31)",
+      "ancla": "Έξοδα ενοικίων από βραχυπρόθεσμα συμβόλαια και περιουσιακά στοιχεία χαμηλής αξίας",
+      "glosa": "Menos: Amortización acumulada"
+    },
+    {
+      "label": "Έσοδα από εισιτήρια",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        1.018194
+      ],
+      "origen": "estado 12",
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Χορηγίες και διαφημίσεις",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        6.687932
+      ],
+      "origen": "estado 12",
+      "glosa": "Patrocinios y publicidad"
+    },
+    {
+      "label": "Δικαιώματα αναμετάδοσης",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        2.661818
+      ],
+      "origen": "estado 12",
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Εμπορικά",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        0.321137
+      ],
+      "origen": "estado 12",
+      "glosa": "Comercial"
+    },
+    {
+      "label": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        0.377088
+      ],
+      "origen": "estado 12",
+      "glosa": "Fondos de solidaridad y premios de la UEFA"
+    },
+    {
+      "label": "Λοιπά λειτουργικά έσοδα",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        1.460344
+      ],
+      "origen": "estado 12",
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Κόστος πωλήσεων / υλικών",
+      "lado": "expense",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -0.744997
+      ],
+      "origen": "estado 12",
+      "glosa": "Coste de ventas / materiales"
+    },
+    {
+      "label": "Αμοιβές εργαζομένων και λοιπές παροχές",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -12.502652
+      ],
+      "origen": "estado 12",
+      "glosa": "Gastos de personal y otras retribuciones"
+    },
+    {
+      "label": "Απομείωση και απαξίωση ενσώματων πάγιων στοιχείων του ενεργητικού",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -0.43238
+      ],
+      "origen": "estado 12",
+      "glosa": "Amortización y deterioro del inmovilizado material"
+    },
+    {
+      "label": "Απομείωση και απαξίωση άλλων άυλων στοιχείων του ενεργητικού",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -1.170093
+      ],
+      "origen": "estado 12",
+      "glosa": "Amortización y deterioro de otros activos intangibles"
+    },
+    {
+      "label": "Λοιπά λειτουργικά έξοδα",
+      "lado": "expense",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -4.101171
+      ],
+      "origen": "estado 12",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Λειτουργικά έξοδα",
+      "lado": "expense",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -18.951293
+      ],
+      "origen": "estado 12",
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "Χρηματοοικονομικά Έξοδα",
+      "lado": "expense",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -0.594016
+      ],
+      "origen": "estado 12",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Αναβαλλόμενος Φόρος",
+      "lado": "expense",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -0.403844
+      ],
+      "origen": "estado 12",
+      "glosa": "Impuesto diferido"
+    },
+    {
+      "label": "Συνεισφορά αλληλεγγύης ομάδων",
+      "lado": "revenue",
+      "page": 70,
+      "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        22.347
+      ],
+      "origen": "estado 65",
+      "glosa": "Contribución de solidaridad entre clubes"
+    },
+    {
+      "label": "Επιχορηγήσεις από Ομοσπονδίες",
+      "lado": "revenue",
+      "page": 70,
+      "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        22.683
+      ],
+      "origen": "estado 65",
+      "glosa": "Subvenciones de federaciones"
+    },
+    {
+      "label": "Έσοδα από μισθώματα",
+      "lado": "revenue",
+      "page": 70,
+      "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        0.94
+      ],
+      "origen": "estado 65",
+      "glosa": "Ingresos por arrendamientos"
+    },
+    {
+      "label": "Έσοδα από μισθώσεις σουίτων-Booth",
+      "lado": "revenue",
+      "page": 70,
+      "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        20
+      ],
+      "origen": "estado 65",
+      "glosa": "Ingresos por alquiler de palcos y cabinas"
+    },
+    {
+      "label": "Λοιπά παρεπόμενα έσοδα",
+      "lado": "revenue",
+      "page": 70,
+      "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        280.16
+      ],
+      "origen": "estado 65",
+      "glosa": "Otros ingresos accesorios"
+    },
+    {
+      "label": "Συναλλαγματικές διαφορές",
+      "lado": "revenue",
+      "page": 70,
+      "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        0.206
+      ],
+      "origen": "estado 65",
+      "glosa": "Diferencias de cambio"
+    },
+    {
+      "label": "Κρατικές επιχορηγήσεις",
+      "lado": "revenue",
+      "page": 70,
+      "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        0.918
+      ],
+      "origen": "estado 65",
+      "glosa": "Subvenciones oficiales"
+    },
+    {
+      "label": "Έσοδα από αναστροφή προβλέψεων/τακτοποίηση υποχρεώσεων",
+      "lado": "revenue",
+      "page": 70,
+      "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        1113.089
+      ],
+      "origen": "estado 65",
+      "glosa": "Ingresos por reversión de provisiones / liquidación de pasivos"
+    }
+  ]
+}

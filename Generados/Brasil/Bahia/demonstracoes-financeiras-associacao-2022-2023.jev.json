@@ -1,0 +1,362 @@
+{
+ "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-associacao-2022-2023.md",
+ "generatedAt": "2026-09-30T22:48:22.532Z",
+ "rubrosHuella": "50f71ca4c3de6e81f2a04b8afa060b839cf1aa37",
+ "rubros": [
+  {
+   "label": "Despesas de serviços",
+   "lado": "expense",
+   "page": 17,
+   "section": "Receitas e (despesas) operacionais",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciação e amortização (1.324) (4)",
+   "lado": null,
+   "page": 17,
+   "section": "Receitas e (despesas) operacionais",
+   "choice": "depreciation",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Perda na recuperação de créditos de sócios",
+   "lado": null,
+   "page": 17,
+   "section": "Receitas e (despesas) operacionais",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Custos e deduções de vendas (1.408) (3)",
+   "lado": "revenue",
+   "page": 17,
+   "section": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma) / Adicionalmente, cabe destacar que o resultado operacional de 2023 no montante de R$ 65.131 / dos ativos e passivos: / Jan a Abr       Mai a Dez        Saldo em / de 2023         de 2023        31/12/2023",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1164
+  },
+  {
+   "label": "Receitas de transmissão de imagem e de luvas (a)",
+   "lado": "revenue",
+   "page": 43,
+   "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com negociação de direitos contratuais (b)",
+   "lado": "revenue",
+   "page": 43,
+   "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Sócios patrimonial e contribuinte",
+   "lado": "revenue",
+   "page": 43,
+   "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+   "choice": "member_dues",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas de patrocínio, publicidade e marketing, doações",
+   "lado": "revenue",
+   "page": 43,
+   "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas de acesso garantido, bilheteria e premiações",
+   "lado": "revenue",
+   "page": 43,
+   "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+   "choice": "matchday_competition",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas -das Filiais",
+   "lado": "revenue",
+   "page": 43,
+   "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Loterias",
+   "lado": "revenue",
+   "page": 43,
+   "section": "Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.    Receita Líquida das Atividades Operacionais / 2023            2022 / Receita bruta das atividades operacionais",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínios (a)",
+   "lado": "revenue",
+   "page": 40,
+   "section": "presente data de aprovação dessas demonstrações financeiras. / de criação da Sociedade Anônima do Futebol. / 15. Receitas a Apropriar / 2023         2022 / Receitas a Apropriar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos de transmissão (b) -",
+   "lado": "revenue",
+   "page": 40,
+   "section": "presente data de aprovação dessas demonstrações financeiras. / de criação da Sociedade Anônima do Futebol. / 15. Receitas a Apropriar / 2023         2022 / Receitas a Apropriar",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "CBF - Confederação Brasileira de Futebol (c) -",
+   "lado": "revenue",
+   "page": 40,
+   "section": "presente data de aprovação dessas demonstrações financeiras. / de criação da Sociedade Anônima do Futebol. / 15. Receitas a Apropriar / 2023         2022 / Receitas a Apropriar",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Licenciamentos / Direitos individuais -",
+   "lado": "revenue",
+   "page": 40,
+   "section": "presente data de aprovação dessas demonstrações financeiras. / de criação da Sociedade Anônima do Futebol. / 15. Receitas a Apropriar / 2023         2022 / Receitas a Apropriar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Luvas - Direito de transmissão TV fechada/PPV (d) -",
+   "lado": "revenue",
+   "page": 40,
+   "section": "presente data de aprovação dessas demonstrações financeiras. / de criação da Sociedade Anônima do Futebol. / 15. Receitas a Apropriar / 2023         2022 / Receitas a Apropriar",
+   "choice": "broadcasting",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Luvas - Direito de transmissão TV aberta (d) -",
+   "lado": "revenue",
+   "page": 40,
+   "section": "presente data de aprovação dessas demonstrações financeiras. / de criação da Sociedade Anônima do Futebol. / 15. Receitas a Apropriar / 2023         2022 / Receitas a Apropriar",
+   "choice": "broadcasting",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Concessionárias (água, energia, telefonia, gás) (336)",
+   "lado": "expense",
+   "page": 45,
+   "section": "Notas Explicativas às Demonstrações Financeiras Referentes aos / Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 20.    (Despesas) Gerais e Administrativas / 2023             2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Marketing",
+   "lado": "expense",
+   "page": 45,
+   "section": "Notas Explicativas às Demonstrações Financeiras Referentes aos / Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 20.    (Despesas) Gerais e Administrativas / 2023             2022",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Consumo (822)",
+   "lado": "expense",
+   "page": 45,
+   "section": "Notas Explicativas às Demonstrações Financeiras Referentes aos / Exercícios Findos em 31 de dezembro de 2023 e 2022 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 20.    (Despesas) Gerais e Administrativas / 2023             2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas financeiras (14.497) (252)",
+   "lado": "expense",
+   "page": 17,
+   "section": "Resultado financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "(-) Custo das atividades (64.794) (654)",
+   "lado": "expense",
+   "page": 17,
+   "section": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma) / Adicionalmente, cabe destacar que o resultado operacional de 2023 no montante de R$ 65.131 / dos ativos e passivos: / Jan a Abr       Mai a Dez        Saldo em / de 2023         de 2023        31/12/2023",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1145
+  },
+  {
+   "label": "Despesas gerais e administrativas (5.624) (616)",
+   "lado": "expense",
+   "page": 17,
+   "section": "Receitas e (despesas) operacionais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1085
+  },
+  {
+   "label": "(-) Tributos e contribuições incidentes (2.784) (10)",
+   "lado": "revenue",
+   "page": 17,
+   "section": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma) / Adicionalmente, cabe destacar que o resultado operacional de 2023 no montante de R$ 65.131 / dos ativos e passivos: / Jan a Abr       Mai a Dez        Saldo em / de 2023         de 2023        31/12/2023",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1176
+  },
+  {
+   "label": "Receita bruta das atividades",
+   "lado": "revenue",
+   "page": 17,
+   "section": "(Valores expressos em milhares de reais, exceto quando indicado de outra forma) / Adicionalmente, cabe destacar que o resultado operacional de 2023 no montante de R$ 65.131 / dos ativos e passivos: / Jan a Abr       Mai a Dez        Saldo em / de 2023         de 2023        31/12/2023",
+   "choice": "lump_football_operations",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.83
+    ],
+    [
+     "other_income",
+     0.16
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1127
+  },
+  {
+   "label": "Despesas tributárias (7.322) (455)",
+   "lado": "expense",
+   "page": 17,
+   "section": "Receitas e (despesas) operacionais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Receitas financeiras 1.889",
+   "lado": "revenue",
+   "page": 17,
+   "section": "Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1031
+  }
+ ]
+}

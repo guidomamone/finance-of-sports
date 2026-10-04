@@ -1,0 +1,4737 @@
+{
+  "club": "la-equidad",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/La Equidad/estados-financieros-2025.md",
+  "generatedAt": "2026-09-30T21:59:11.504Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 156,
+    "space": 37
+  },
+  "scannedWarning": false,
+  "tableCount": 50,
+  "relevantTableCount": 15,
+  "tables": [
+    {
+      "page": 9,
+      "section": "BOGOTÁ / AFILIADO A: / FCF / ## Separación de Terrenos y Edificios / ### ACTIVO VIDA ÚTIL ESTIMADA EN AÑOS",
+      "columns": [
+        "a) Terrenos",
+        "Indefinida"
+      ],
+      "rows": [
+        {
+          "rawLabel": "b) Edificaciones",
+          "values": [
+            "45 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "c) Maquinaria",
+          "values": [
+            "10 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "d) Muebles y enceres",
+          "values": [
+            "10 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "e) Equipo de oficina",
+          "values": [
+            "10 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "f) Equipo de cómputo",
+          "values": [
+            "5 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "g) Equipo de comunicaciones",
+          "values": [
+            "5 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "h) Vehículos",
+          "values": [
+            "10 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "i) Sillas de oficina",
+          "values": [
+            "10 años"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "j) Mejoras en propiedades ajenas",
+          "values": [
+            "Tiempo del contrato"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "k) Componentes",
+          "values": [
+            "Tiempo de uso esperado"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "AFILIADO A: / FCF / FUNDACIÓN DE FORTES / ## Arrendadores Arrendamiento Operativo / ### 5. Efectivo y Equivalentes",
+      "columns": [
+        "Efectivo y Equivalente",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caja Dolares",
+          "values": [
+            "1.074",
+            "37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cajas Menor",
+          "values": [
+            "7",
+            "3.900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inversiones A Corto Plazo",
+          "values": [
+            "832.845",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos Moneda Nacional",
+          "values": [
+            "278.438",
+            "62.704"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas De Ahorro",
+          "values": [
+            "340",
+            "902"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Efectivo y Equivalente",
+          "values": [
+            "1.112.705",
+            "67.543"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": null,
+      "columns": [
+        "Bancolombia",
+        "Fiducuenta",
+        "$ 832.842"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Banco de Bogotá",
+          "values": [
+            "Cuenta Corriente",
+            "$ 171.803"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancoomeva",
+          "values": [
+            "Cuenta Corriente",
+            "$ 84.048"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Coopcentral",
+          "values": [
+            "Cuenta Corriente",
+            "$ 1.177"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco de Bogotá",
+          "values": [
+            "Centa Ahorros",
+            "$ 126"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancolombia",
+          "values": [
+            "Cuenta Corriente",
+            "$ 21.282"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Bancos Moneda Nacional $278.438",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "AFILIADO A: / ## 6. Cuentas comerciales por cobrar y otras cuentas por cobrar",
+      "columns": [
+        "Cuentas comerciales por cobrar y otras cuentas por cobrar",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cuentas por cobrar a Trabajadores",
+          "values": [
+            "219.216",
+            "37.021"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes Nacionales",
+          "values": [
+            "2.051.977",
+            "2.509.657"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes Del Exterior",
+          "values": [
+            "1.520.512",
+            "900.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudores comerciales",
+          "values": [
+            "38",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por Cobrar Fondos de ARL",
+          "values": [
+            "159.081",
+            "111.710"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipos",
+          "values": [
+            "81.223",
+            "16.697"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisiones",
+          "values": [
+            "-626.715",
+            "-626.715"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Cuentas Comerciales Por Cobrar y Otras Cuentas Por Cobrar",
+          "values": [
+            "3.405.332",
+            "2.948.370"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "A continuación, se desglosan los componentes que hacen parte de esta partida",
+      "columns": [
+        "Detalle clientes Nacionales",
+        "No Vencida",
+        "1 a 90 días",
+        "91 a 180 días",
+        "180 días a 360 días",
+        "Mayor a 360 días",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Otras Clientes",
+          "values": [
+            "15.483",
+            "",
+            "",
+            "",
+            "",
+            "15.483"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caso Peralta Equidad Seguros",
+          "values": [
+            "850.000",
+            "",
+            "",
+            "",
+            "",
+            "850.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Escuelas de Formación",
+          "values": [
+            "2.898",
+            "",
+            "",
+            "",
+            "",
+            "2.898"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cartera Corporativa",
+          "values": [
+            "",
+            "215.684",
+            "",
+            "381.197",
+            "586.715",
+            "1.183.596"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Clientes Nacionales",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "2.051.977",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "### Detalle Cartera Corporativa",
+      "columns": [
+        "BENEFICIARIO",
+        "VALOR"
+      ],
+      "rows": [
+        {
+          "rawLabel": "DIVISION MAYOR DEL FUTBOL COLOMBIANO - DIMAYOR",
+          "values": [
+            "$ 115.484"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FONTALVO RAMIREZ BRYAN YUZMITH",
+          "values": [
+            "$ 200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ZX VENTURES COLOMBIA SAS",
+          "values": [
+            "$ 59.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SMARTGAME SG S.A.S",
+          "values": [
+            "$ 40.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INVERSIONES COOMOTOR S.A.",
+          "values": [
+            "$ 158.934"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COOPERATIVA DE MOTORISTA DEL HUILA Y CAQUETA COOMOTOR",
+          "values": [
+            "$ 222.263"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GLOBAL SPORTS GS S.A.S. - Provisionada",
+          "values": [
+            "$ 586.715"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Cartera Corporativa",
+          "values": [
+            "$ 1.183.596"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+      "columns": [
+        "Beneficiario",
+        "Valor",
+        "Días De Mora"
+      ],
+      "rows": [
+        {
+          "rawLabel": "FIFA - Caso Diego Valoyes",
+          "values": [
+            "900.000",
+            "411"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impulsadora Del Deportivo Necaxa S.A De C.V",
+          "values": [
+            "620.512",
+            "196"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Clientes del Exterior",
+          "values": [
+            "1.520.512",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "#### Nota 7. Inventarios",
+      "columns": [
+        "Inventarios",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Prendas Escuelas Attle",
+          "values": [
+            "0",
+            "78.270"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balones",
+          "values": [
+            "13.863",
+            "5.121"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prendas Para La Venta Kimo, Saeta, Puma, Otros",
+          "values": [
+            "0",
+            "178.850"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prendas Attle Equipo Profesional",
+          "values": [
+            "0",
+            "123.779"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prendas Attle Fuerzas Básicas",
+          "values": [
+            "282.682",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zapato Deportivo",
+          "values": [
+            "0",
+            "9.680"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indumentaria Deportiva",
+          "values": [
+            "627.140",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indumentaria Deportiva",
+          "values": [
+            "232.416",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indumentaria Umbro Femenino",
+          "values": [
+            "53.640",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indumentaria Umbro Fuerzas Básicas",
+          "values": [
+            "282.682",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Inventarios",
+          "values": [
+            "1.209.741",
+            "395.700"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "#### Nota 8. Activo por impuestos corrientes",
+      "columns": [
+        "Activo por Impuestos Corrientes",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo a favor IVA",
+          "values": [
+            "117.620",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Iva Retenido",
+          "values": [
+            "0",
+            "3.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipo de Renta sin Solicitud de Devolución",
+          "values": [
+            "1.213.560",
+            "52.332"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Activo Por Impuestos Corrientes",
+          "values": [
+            "1.331.180",
+            "56.132"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO N° / FCF / ## Nota 9. Propiedad Planta y Equipo más propiedades de Inversión",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Urbanos",
+          "values": [
+            "11.383.000",
+            "11.383.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mejoras en Bien Ajeno",
+          "values": [
+            "348.453",
+            "348.453"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propiedades de Inversión",
+          "values": [
+            "315.077",
+            "315.077"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria",
+          "values": [
+            "52.001",
+            "50.376"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Muebles y Enseres",
+          "values": [
+            "74.933",
+            "62.947"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipos de Computación y Comunicación",
+          "values": [
+            "288.772",
+            "199.812"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Restaurante Y Cafetería",
+          "values": [
+            "25.482",
+            "20.092"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de hotel",
+          "values": [
+            "224.333",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo Medico",
+          "values": [
+            "1.132.237",
+            "1.077.089"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autos, Camionetas y Camperos",
+          "values": [
+            "0",
+            "126.496"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total antes de Depreciaciones",
+          "values": [
+            "13.844.288",
+            "13.583.342"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Construcciones y Edificaciones",
+          "values": [
+            "-117.489",
+            "-109.746"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria y Equipo",
+          "values": [
+            "-43.200",
+            "-38.823"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Oficina",
+          "values": [
+            "-69.569",
+            "-55.942"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Computación y Comunicación",
+          "values": [
+            "-165.511",
+            "-139.572"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Restaurante Y Cafetería",
+          "values": [
+            "-21.945",
+            "-17.492"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo Medico Científico",
+          "values": [
+            "-353.255",
+            "-242.652"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autos, Camionetas y Camperos",
+          "values": [
+            "0",
+            "-82.222"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "-770.970",
+            "-686.448"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Propiedad Planta y Equipo, Propiedad de Inversión",
+          "values": [
+            "13.073.318",
+            "12.896.893"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO AL / FCF / FUNDACIÓN DE FORTES",
+      "columns": [
+        "Propiedad Planta y Equipo",
+        "Terenos",
+        "Detalle Propiedad Planta y Equipo a 31 Diciembre 2025",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "Construcciones Y Edificaciones",
+            "Propiedad De Inversión",
+            "Maquinaria Y Equipo",
+            "Equipo De Oficina",
+            "Equipo De Computación Y Comunicación",
+            "Equipo Medico - Científico",
+            "Flota Y Equipo De Transporte",
+            "Restaurante Y Cafetería",
+            "Equipo Hotel",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo al 01 ene 2024",
+          "values": [
+            "11.383.000",
+            "348.453",
+            "315.077",
+            "50.376",
+            "62.947",
+            "199.812",
+            "1.077.089",
+            "126.496",
+            "20.092",
+            "0",
+            "",
+            "13.583.342"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiciones del periodo",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "1.626",
+            "11.986",
+            "88.960",
+            "55.148",
+            "-126.496",
+            "5.390",
+            "224.333",
+            "",
+            "260.946"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo a 31 dic 2025",
+          "values": [
+            "11.383.000",
+            "348.453",
+            "315.077",
+            "52.001",
+            "74.933",
+            "288.772",
+            "1.132.237",
+            "0",
+            "25.482",
+            "224.333",
+            "",
+            "13.844.288"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Depreciación acumulada o perdida por deterioro saldo a 01 enero 2024",
+          "values": [
+            "0",
+            "-109.746",
+            "0",
+            "-38.823",
+            "-55.942",
+            "-139.572",
+            "-242.652",
+            "-82.222",
+            "-17.492",
+            "0",
+            "",
+            "-686.448"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación o perdida por deterioro del periodo",
+          "values": [
+            "0",
+            "-7.743",
+            "0",
+            "-4.378",
+            "-13.626",
+            "-25.939",
+            "-106.865",
+            "82.222",
+            "-4.454",
+            "-3.739",
+            "",
+            "-84.521"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo depreciación al 31 diciembre 2025",
+          "values": [
+            "0",
+            "-117.489",
+            "0",
+            "-43.200",
+            "-69.569",
+            "-165.511",
+            "-349.516",
+            "0",
+            "-21.945",
+            "-3.739",
+            "",
+            "-770.970"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo a 31 diciembre 2025",
+          "values": [
+            "11.383.000",
+            "465.942",
+            "315.077",
+            "95.201",
+            "144.502",
+            "454.283",
+            "1.481.753",
+            "0",
+            "47.427",
+            "228.072",
+            "",
+            "13.073.318"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "## Nota 10. Activos intangibles distintos de la plusvalía / ### Activos Intangibles Distintos de la Plusvalía",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Afiliación Dimayor",
+          "values": [
+            "2.483.500",
+            "2.483.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marca",
+          "values": [
+            "15.656",
+            "7.314"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jugadores Profesionales",
+          "values": [
+            "4.111.606",
+            "600.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos Deportivos Recibidos en Donación",
+          "values": [
+            "725.200",
+            "1.841.200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "7.335.962",
+            "4.932.014"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jugadores Profesionales",
+          "values": [
+            "-307.406",
+            "-600.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización Derechos Recibidos en Donación",
+          "values": [
+            "-470.517",
+            "-1.482.917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afiliación Dimayor",
+          "values": [
+            "-581.245",
+            "-528.404"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "-1.359.168",
+            "-2.611.321"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Activos intangibles Distintos a la Plusvalía",
+          "values": [
+            "5.976.794",
+            "2.320.693"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "A continuación, desglosamos los componentes del rubro activos intangibles",
+      "columns": [
+        "Activos Intangibles distintos a la plusvalía",
+        "Derechos deportivos",
+        "Marcas",
+        "Derechos deportivos recibidos",
+        "Derechos de afiliación",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo a 31 dic 2024",
+          "values": [
+            "600.000",
+            "7.314",
+            "725.200",
+            "2.483.500",
+            "3.816.014"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización Acumulada a 31 diciembre 2024",
+          "values": [
+            "-600.000",
+            "0",
+            "-366.917",
+            "-528.404",
+            "-1.495.321"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total activos intangibles a 31 diciembre 2024",
+          "values": [
+            "0",
+            "7.314",
+            "358.283",
+            "1.955.096",
+            "2.320.693"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Adiciones 2025",
+          "values": [
+            "4.111.606",
+            "8.342",
+            "0",
+            "0",
+            "4.119.948"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baja en cuentas, venta o retiros",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total activos intangibles",
+          "values": [
+            "4.111.606",
+            "15.656",
+            "358.283",
+            "1.955.096",
+            "6.440.641"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Amortización acumulada a 31 dic 2025",
+          "values": [
+            "-307.406",
+            "0",
+            "-103.600",
+            "-52.840",
+            "-463.847"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo amortización al 31 dic 2025",
+          "values": [
+            "-307.406",
+            "",
+            "-103.600",
+            "-52.840",
+            "-463.847"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo a 31 dic 2025 intangibles",
+          "values": [
+            "3.804.200",
+            "15.656",
+            "254.683",
+            "1.902.255",
+            "5.976.794"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+      "columns": [
+        "Nombre",
+        "Valor de compra",
+        "Vida Útil",
+        "% Compra",
+        "Valor amortizado",
+        "Saldo en Libros"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Eduard Restrepo",
+          "values": [
+            "30.000",
+            "84",
+            "70%",
+            "1.964",
+            "28.036"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Samir Mayo",
+          "values": [
+            "1.146.465",
+            "84",
+            "70%",
+            "78.706",
+            "1.067.759"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gomez Yulian",
+          "values": [
+            "560.000",
+            "84",
+            "40%",
+            "40.000",
+            "520.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carlos Vivas",
+          "values": [
+            "811.141",
+            "84",
+            "75%",
+            "57.939",
+            "753.202"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juan Longa",
+          "values": [
+            "1.435.000",
+            "84",
+            "75%",
+            "119.583",
+            "1.315.417"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jean Colorado",
+          "values": [
+            "129.000",
+            "84",
+            "5%",
+            "9.214",
+            "119.786"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total General",
+          "values": [
+            "4.111.606",
+            "",
+            "",
+            "307.406",
+            "3.804.200"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "## Nota 11. Otros Activos / ### Otros Activos",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Acumulado Prestamo Jugadores",
+          "values": [
+            "110.267",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Cargos Diferidos",
+          "values": [
+            "110.267",
+            "-"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "BOGOTÁ / AFILIADO A: / FCF / FUNDACIÓN DE / BOGOTÁ",
+      "columns": [
+        "Nombre Jugador",
+        "Fecha Adquisición",
+        "Saldo inicial",
+        "Amortización",
+        "Saldo en libros"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Juan Castilla",
+          "values": [
+            "jul-25",
+            "123.000",
+            "61.500",
+            "61.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Johan Caballero",
+          "values": [
+            "dic-25",
+            "4.767",
+            "0",
+            "4.767"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Irazoque Ezequiel",
+          "values": [
+            "dic-25",
+            "4.000",
+            "0",
+            "4.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sanguinetti Fabrick",
+          "values": [
+            "dic-25",
+            "13.000",
+            "0",
+            "13.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Facundo Bone",
+          "values": [
+            "dic-25",
+            "27.000",
+            "0",
+            "27.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo en libros",
+          "values": [
+            "",
+            "",
+            "",
+            "110.267"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "## Nota 12. Obligaciones financieras / ### Obligaciones Financieras",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Sobregiros",
+          "values": [
+            "0",
+            "157.393"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Creditos",
+          "values": [
+            "0",
+            "190.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obligaciones Financiera Coopcentral",
+          "values": [
+            "1.166.667",
+            "3.964.502"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prestamos Vinculados",
+          "values": [
+            "1.528.196",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tarjetas de Credito",
+          "values": [
+            "31.337",
+            "45.063"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Obligaciones Financieras",
+          "values": [
+            "2.726.200",
+            "4.356.957"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A: / FCF / FUNDACIÓN DE FORTES",
+      "columns": [
+        "Fecha desembolso",
+        "Fecha Terminación de crédito",
+        "No Obligación",
+        "Tasa pactada",
+        "Valor obligación",
+        "Saldo credito"
+      ],
+      "rows": [
+        {
+          "rawLabel": "29/10/2025",
+          "values": [
+            "29/10/2026",
+            "*5820",
+            "IBR + 2,30%",
+            "800.000",
+            "666.666"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "15/12/2025",
+          "values": [
+            "15/12/2026",
+            "*2280",
+            "IBR + 2,30%",
+            "500.000",
+            "500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Obligacion Bancoocentral",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "1.166.666"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": null,
+      "columns": [
+        "# Tarjeta",
+        "Tasa Promedio",
+        "Cupo Total",
+        "Total Obligacion",
+        "Cupo Disponible"
+      ],
+      "rows": [
+        {
+          "rawLabel": "TC * 0670",
+          "values": [
+            "21,48%",
+            "10.000",
+            "3.878",
+            "6.122"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TC * 3688",
+          "values": [
+            "22,56%",
+            "95.000",
+            "27.460",
+            "67.540"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total obligación por TC",
+          "values": [
+            "",
+            "",
+            "31.337",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "### Nota 13. Beneficios a empleados",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salarios por Pagar",
+          "values": [
+            "0",
+            "2.193"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Liquidaciones por Pagar",
+          "values": [
+            "222.823",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cesantías Consolidadas",
+          "values": [
+            "207.531",
+            "141.145"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses Sobre Cesantías",
+          "values": [
+            "21.133",
+            "16.417"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vacaciones Consolidadas",
+          "values": [
+            "164.560",
+            "72.906"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obligaciones Laborales - Parafiscales",
+          "values": [
+            "88.281",
+            "46.585"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Beneficios a Empleados",
+          "values": [
+            "704.328",
+            "279.245"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 26,
+      "section": "AFILIADO A: / ## Nota 14. Cuentas comerciales por pagar y otras cuentas por pagar / ### Cuentas Comerciales Por Pagar y Otras Cuentas por Pagar",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Proveedores Nacionales",
+          "values": [
+            "767.378",
+            "125.973"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prestamo Derechos Deportivos",
+          "values": [
+            "1.920.076",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Embargos Ejecutivos",
+          "values": [
+            "0",
+            "3.847"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comisiones",
+          "values": [
+            "84.044",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "152.440",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "121.466",
+            "129.517"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transportes, Fletes Y Acarreos",
+          "values": [
+            "4.881",
+            "3.075"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios Publicos",
+          "values": [
+            "9.472",
+            "1.984"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "650",
+            "1.150"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "1.882.944",
+            "731.153"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retenciones Por Pagar",
+          "values": [
+            "360.893",
+            "236.494"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes A Salud",
+          "values": [
+            "79.999",
+            "58.950"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes A Arp",
+          "values": [
+            "13.612",
+            "5.020"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondos De Cesantías Y/O Pensiones",
+          "values": [
+            "146.911",
+            "93.558"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Libranza",
+          "values": [
+            "3.335",
+            "4.515"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Cuentas Comerciales por Pagar",
+          "values": [
+            "5.548.099",
+            "1.395.235"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 26,
+      "section": "### Detalle Prestamos derechos deportivos",
+      "columns": [
+        "BENEFICIARIO",
+        "No Vencida",
+        "1 a 90 días",
+        "91 a 180 días",
+        "180 días a 360 días",
+        "Mayor a 360 días",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Sanguinetti Fernandez Fabricio Damian",
+          "values": [
+            "12.675",
+            "0",
+            "0",
+            "0",
+            "0",
+            "12.675"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leones Futbol Club S.A.",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "709.216",
+            "0",
+            "709.216"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cartulua Futbol Club S.A.",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "62.888",
+            "0",
+            "62.888"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletico Nacional S.A.",
+          "values": [
+            "0",
+            "0",
+            "49.068",
+            "0",
+            "0",
+            "49.068"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Orsomarso Sport Club S.A",
+          "values": [
+            "0",
+            "0",
+            "567.620",
+            "0",
+            "0",
+            "567.620"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Asociacion Civil Deportivo Tachira",
+          "values": [
+            "0",
+            "0",
+            "2.640",
+            "0",
+            "0",
+            "2.640"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gomez Mosquera Yulian Andres",
+          "values": [
+            "400.000",
+            "0",
+            "0",
+            "0",
+            "0",
+            "400.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fort Tabor D.O.O.",
+          "values": [
+            "32.240",
+            "0",
+            "0",
+            "0",
+            "0",
+            "32.240"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Febran S.A",
+          "values": [
+            "0",
+            "0",
+            "83.730",
+            "0",
+            "0",
+            "83.730"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "444.915",
+            "0",
+            "703.058",
+            "772.103",
+            "0",
+            "1.920.076"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 27,
+      "section": "BOGOTÁ / AFILIADO AL / FCF / FUNDACIÓN DE FORTES / # Detalle Otras Cuentas por pagar",
+      "columns": [
+        "BENEFICIARIO",
+        "No Vencida",
+        "1 a 90 días",
+        "91 a 180 días",
+        "180 días a 360 días",
+        "Mayor a 360 días",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Peralta Barrios Carlos Andres",
+          "values": [
+            "850.000",
+            "0",
+            "",
+            "0",
+            "0",
+            "850.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Colcan S.A.S",
+          "values": [
+            "27",
+            "0",
+            "",
+            "0",
+            "0",
+            "27"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Combustibles Unigas Sas",
+          "values": [
+            "37",
+            "0",
+            "",
+            "0",
+            "0",
+            "37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aerovias De Integración Regional S.A",
+          "values": [
+            "960",
+            "0",
+            "",
+            "0",
+            "0",
+            "960"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inversiones Jinca S.A.S",
+          "values": [
+            "1.845",
+            "0",
+            "",
+            "0",
+            "0",
+            "1.845"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inter Rapidsimo S.A",
+          "values": [
+            "40",
+            "0",
+            "",
+            "0",
+            "0",
+            "40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saavedra Saavedra Victoria Consuelo",
+          "values": [
+            "3",
+            "0",
+            "",
+            "0",
+            "0",
+            "3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Makro Supermayorista S.A.S",
+          "values": [
+            "134",
+            "0",
+            "",
+            "0",
+            "0",
+            "134"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cme Sport S. A. S.",
+          "values": [
+            "1.305",
+            "0",
+            "",
+            "0",
+            "0",
+            "1.305"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Real Soacha Cundinamarca S.A.",
+          "values": [
+            "5.011",
+            "0",
+            "",
+            "0",
+            "0",
+            "5.011"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Open Logistica S.A.S.",
+          "values": [
+            "117.300",
+            "0",
+            "",
+            "0",
+            "0",
+            "117.300"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prados Torres Sas",
+          "values": [
+            "3.883",
+            "0",
+            "",
+            "0",
+            "0",
+            "3.883"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diptongo Sas",
+          "values": [
+            "7.666",
+            "0",
+            "",
+            "0",
+            "0",
+            "7.666"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mediexpress S.A.S.",
+          "values": [
+            "30",
+            "0",
+            "",
+            "0",
+            "0",
+            "30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impresos Gama Sas",
+          "values": [
+            "4.442",
+            "0",
+            "",
+            "0",
+            "0",
+            "4.442"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingealimentos Saneamiento Ambiental S A S",
+          "values": [
+            "582",
+            "0",
+            "",
+            "0",
+            "0",
+            "582"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contralar Salud Integral S.A.S",
+          "values": [
+            "1.811",
+            "0",
+            "",
+            "0",
+            "0",
+            "1.811"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instagram S.A.S",
+          "values": [
+            "30.629",
+            "0",
+            "",
+            "0",
+            "0",
+            "30.629"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Antartica Dj Sas",
+          "values": [
+            "677",
+            "0",
+            "",
+            "0",
+            "0",
+            "677"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ups Servicios Expresos S.A.S.",
+          "values": [
+            "118",
+            "0",
+            "",
+            "0",
+            "0",
+            "118"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gonzalez Lopez Cristian Fernando",
+          "values": [
+            "347",
+            "0",
+            "",
+            "0",
+            "0",
+            "347"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lapar S.A.S.",
+          "values": [
+            "627",
+            "0",
+            "",
+            "0",
+            "0",
+            "627"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Industrias Amare Dio S.A.S",
+          "values": [
+            "0",
+            "18.647",
+            "",
+            "0",
+            "0",
+            "18.647"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comercializadora Mecatto Ltda",
+          "values": [
+            "0",
+            "2.691",
+            "",
+            "0",
+            "0",
+            "2.691"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eventos Medicos Salud S.A.S.",
+          "values": [
+            "0",
+            "12.754",
+            "",
+            "0",
+            "0",
+            "12.754"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eurocapital S.A.S",
+          "values": [
+            "0",
+            "128.345",
+            "",
+            "0",
+            "0",
+            "128.345"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Buentipo Colombia Sas",
+          "values": [
+            "0",
+            "30.288",
+            "",
+            "0",
+            "0",
+            "30.288"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Club Deportivo Escuela De Fútbol Carlos Sarmiento Lora",
+          "values": [
+            "0",
+            "256.030",
+            "",
+            "0",
+            "0",
+            "256.030"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Azcarate Martinez Daniel",
+          "values": [
+            "0",
+            "125.490",
+            "",
+            "0",
+            "0",
+            "125.490"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inacsa Sas",
+          "values": [
+            "0",
+            "190.963",
+            "",
+            "0",
+            "0",
+            "190.963"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Corredor Mariño Jorge Orlando",
+          "values": [
+            "0",
+            "0",
+            "562",
+            "0",
+            "0",
+            "562"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Chaverra Angulo Francisco Javier",
+          "values": [
+            "0",
+            "0",
+            "",
+            "0",
+            "89.700",
+            "89.700"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 27,
+      "section": "# Detalle proveedores Nacionales",
+      "columns": [
+        "Beneficiario",
+        "Valor",
+        "Días De Mora",
+        "No Vencida"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ks Deport Colombia Ltda",
+          "values": [
+            "767.378",
+            "8",
+            "767.378"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "767.378",
+            "",
+            "767.378"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A: / ## Nota 15. Pasivo por impuestos corrientes",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Iva Saldo Por Pagar",
+          "values": [
+            "0",
+            "21.131"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provision Renta",
+          "values": [
+            "0",
+            "426.521"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Industria y Comercio Por pagar",
+          "values": [
+            "41.620",
+            "21.797"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Impuestos, Gravámenes y Tasas",
+          "values": [
+            "41.620",
+            "469.449"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": "## Nota 16. Otros pasivos no financieros",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ingresos rebidos por anticipado",
+          "values": [
+            "235.886",
+            "205.661"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Impuestos, Gravámenes y Tasas",
+          "values": [
+            "235.886",
+            "205.661"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "AFILIADO AL / ## Nota 17. Obligaciones Largo Plazo",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "acreedores varios",
+          "values": [
+            "625.396",
+            "1.155.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Obligaciones Financieras a L.P.",
+          "values": [
+            "625.396",
+            "1.155.000"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "## Nota 18. Pasivo por impuesto diferido",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Pasivo Por Impuesto Diferido",
+          "values": [
+            "490.873",
+            "490.873"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Otros Pasivos",
+          "values": [
+            "490.873",
+            "490.873"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "continuación, se desglosa el detalle del impuesto diferido año 2025:",
+      "columns": [
+        "Concepto",
+        "Dif Temporaria",
+        "Tasa",
+        "Impuesto diferido",
+        "",
+        "Tipo"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "Activo",
+            "Pasivo",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Urbanos",
+          "values": [
+            "4.383.000",
+            "15%",
+            "0",
+            "657.450",
+            "DP"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propiedad de inversión",
+          "values": [
+            "265.253",
+            "15%",
+            "0",
+            "39.788",
+            "DP"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes corporativos",
+          "values": [
+            "-589.615",
+            "35%",
+            "-206.365",
+            "0",
+            "DA"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Neto Diferido Pasivo a 31 diciembre 2025",
+          "values": [
+            "",
+            "",
+            "",
+            "490.873",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "## Nota 19. Patrimonio",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capital Autorizado",
+          "values": [
+            "8.750.000",
+            "1.650.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital Por Suscribir (Db) Acciones Propias en Cartera",
+          "values": [
+            "-135.700",
+            "-135.700"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Capital Pagado",
+          "values": [
+            "8.614.300",
+            "1.514.300"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": "INTERNACIONAL DE / BOGOTÁ / APILIADO A: / FCF / FUNDACIÓN DE LA COMPAÑÍA",
+      "columns": [
+        "ACCIONISTAS",
+        "N° ACCIONES",
+        "% PARTICIPACION",
+        "CAPITAL"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Menos del 1% de participación",
+          "values": [
+            "2.860",
+            "0,17%",
+            "$ 14.300.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NX FOOTBALL LLC 'USA'",
+          "values": [
+            "84.700",
+            "4,92%",
+            "$ 423.500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NX COLOMBIA LLC 'USA'",
+          "values": [
+            "1.635.300",
+            "94,92%",
+            "$ 8.176.500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "1.722.860",
+            "100,00%",
+            "$ 8.614.300.000"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": "## Resultado del ejercicio",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Resultado Del Ejercicio",
+          "values": [
+            "-1.585.976",
+            "3.927.702"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Resultado del Ejercicio",
+          "values": [
+            "-1.585.976",
+            "3.927.702"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": "## Aplicación de los resultados / ## Reserva Legal",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Reserva Legal",
+          "values": [
+            "703.185",
+            "703.185"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Reserva Legal",
+          "values": [
+            "703.185",
+            "703.185"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A: / ### Otros componentes del patrimonio / #### Otros componentes del patrimonio",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Utilidades Acumuladas",
+          "values": [
+            "4.076.711",
+            "149.009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes Por Primera Vez Niif",
+          "values": [
+            "230.865",
+            "230.865"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Convergencia Niif",
+          "values": [
+            "-595.437",
+            "-595.437"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otro Resultado Integral",
+          "values": [
+            "4.403.287",
+            "4.403.287"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Otros Componentes del Patrimonio",
+          "values": [
+            "8.115.426",
+            "4.187.724"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Taquilla - Venta de Boletería",
+          "values": [
+            "4.102.414",
+            "3.923.290"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Escuelas de Futbol",
+          "values": [
+            "1.830.768",
+            "1.689.249"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad y Propaganda",
+          "values": [
+            "614.210",
+            "1.082.173"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dimayor",
+          "values": [
+            "7.245.343",
+            "6.922.108"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Federacion Colombiana de Futbol",
+          "values": [
+            "680.148",
+            "752.373"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocinio",
+          "values": [
+            "4.916.600",
+            "5.054.877"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta de Artículos Deportivos",
+          "values": [
+            "252.372",
+            "220.085"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Devoluciones en Ventas",
+          "values": [
+            "0",
+            "-560"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Actividades Conexas",
+          "values": [
+            "950.381",
+            "927.758"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos Fuerzas Basicas",
+          "values": [
+            "20.000",
+            "43.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Ingresos Operacionales",
+          "values": [
+            "20.612.236",
+            "20.614.852"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 32,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+      "columns": [
+        "Ingresos Dimayor",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Reembolso Arbitrajes",
+          "values": [
+            "308.905",
+            "292.226"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos Tv Cerrada Dimayor",
+          "values": [
+            "2.001.016",
+            "1.901.821"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos Tv Rcn Abierta Dimayor",
+          "values": [
+            "968.510",
+            "920.636"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos Tv Internal",
+          "values": [
+            "263.783",
+            "271.560"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilio Hotelero",
+          "values": [
+            "462.513",
+            "410.635"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilio Transporte",
+          "values": [
+            "22.417",
+            "22.690"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos Tv Variable Cerradawin Sport",
+          "values": [
+            "711.358",
+            "876.476"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos Tv Variable On Line Win Sports",
+          "values": [
+            "91.243",
+            "84.484"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos Tv Cerrada Variable Canal Premium",
+          "values": [
+            "2.156.249",
+            "1.884.445"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrato Genius Videos Ofic. Para Apuestas",
+          "values": [
+            "90.720",
+            "84.435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilio Logístico",
+          "values": [
+            "168.630",
+            "172.700"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Dimayor",
+          "values": [
+            "7.245.343",
+            "6.922.108"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 32,
+      "section": null,
+      "columns": [
+        "Actividades Conexas",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Participacion Torneos Escuela",
+          "values": [
+            "0",
+            "7.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Certificaciones / Paz Y Salvo",
+          "values": [
+            "5.168",
+            "9.780"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferencia Definitiva",
+          "values": [
+            "0",
+            "14.815"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondos Equip No Clasificados",
+          "values": [
+            "144.000",
+            "118.490"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Participacion En Torneos Nacionales",
+          "values": [
+            "801.078",
+            "679.592"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Congreso Medico",
+          "values": [
+            "0",
+            "97.582"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Actividades Conexas",
+          "values": [
+            "950.246",
+            "927.758"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 32,
+      "section": null,
+      "columns": [
+        "Publicidad y Propaganda",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Bet Play",
+          "values": [
+            "841.600",
+            "40.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Colanta",
+          "values": [
+            "1.000.000",
+            "900.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comedal Cooperativa Medica De Ar",
+          "values": [
+            "275.000",
+            "275.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Congreso Medico",
+          "values": [
+            "0",
+            "739.877"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "La Equidad",
+          "values": [
+            "2.500.000",
+            "1.250.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocinio Cootrafa",
+          "values": [
+            "0",
+            "1.100.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "W Play / Aquila",
+          "values": [
+            "0",
+            "750.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocinio Equipo Femenino",
+          "values": [
+            "300.000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Ingreso Publicidad",
+          "values": [
+            "4.916.600",
+            "5.054.877"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 33,
+      "section": "INTERNACIONAL DE BOGOTÁ / AFILIADO A:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "IV) Por Escuelas de formación se recibió",
+          "values": [
+            "$1.830.768"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "V) Actividades conexas como torneos, certificaciones y transferencias del programa de formación por",
+          "values": [
+            "$950.381."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "## Nota 21. Costo de Ventas",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Costo de Venta Artículos Deportivos",
+          "values": [
+            "555.558",
+            "127.399"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Costo de Ventas",
+          "values": [
+            "555.558",
+            "127.399"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 33,
+      "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Reintegro de Otros Costos y Gastos",
+          "values": [
+            "946.032",
+            "1.011.579"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recobro Incapacidades",
+          "values": [
+            "212.890",
+            "308.490"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos de Ejercicios Anteriores",
+          "values": [
+            "0",
+            "500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta Derechos Deportivos",
+          "values": [
+            "10.549.680",
+            "12.723.100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aprovechamientos",
+          "values": [
+            "54",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financieros",
+          "values": [
+            "116.083",
+            "14.855"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "1.072",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste al Peso",
+          "values": [
+            "8",
+            "69"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Otros Ingresos",
+          "values": [
+            "11.825.819",
+            "14.058.593"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 34,
+      "section": "AFILIADO AL",
+      "columns": [
+        "Ingresos Financieros",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Rendimientos Financieros",
+          "values": [
+            "11.963",
+            "11.791"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencia En Cambio",
+          "values": [
+            "26",
+            "488"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Descuentos Comerciales Condicionados",
+          "values": [
+            "0",
+            "2.576"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Ingresos Financieros",
+          "values": [
+            "11.989",
+            "14.855"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 34,
+      "section": "### Nota 23. Gastos de administración",
+      "columns": [
+        "Gastos de administración",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos De Personal",
+          "values": [
+            "1.797.543",
+            "1.667.382"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "199.876",
+            "309.467"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "213.478",
+            "161.031"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "10.355",
+            "7.966"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuciones",
+          "values": [
+            "1.100",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "17",
+            "5.719"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "178.150",
+            "137.426"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Legales",
+          "values": [
+            "82.146",
+            "2.879"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento Y Reparaciones",
+          "values": [
+            "29.445",
+            "20.310"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adecuación E Instalación",
+          "values": [
+            "33.717",
+            "8.956"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de viaje",
+          "values": [
+            "1.303",
+            "24.154"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciaciones",
+          "values": [
+            "160.080",
+            "82.556"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "56.096",
+            "43.732"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Gastos Administración",
+          "values": [
+            "2.763.306",
+            "2.471.578"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 35,
+      "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos De Personal",
+          "values": [
+            "15.860.461",
+            "10.995.776"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "647.428",
+            "108.454"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "895.461",
+            "756.178"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "1.995.877",
+            "1.804.719"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "84.008",
+            "89.226"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "1.067.210",
+            "834.213"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Legales",
+          "values": [
+            "28.772",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento Y Reparaciones",
+          "values": [
+            "69.220",
+            "53.166"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adecuacion E Instalacion",
+          "values": [
+            "3.323",
+            "7.757"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos De Viaje",
+          "values": [
+            "860.237",
+            "732.936"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciaciones",
+          "values": [
+            "8.772",
+            "7.743"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizaciones",
+          "values": [
+            "1.129.732",
+            "307.882"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizaciones Donaciones Derechos",
+          "values": [
+            "138.133",
+            "581.886"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos Deportivos",
+          "values": [
+            "2.107.770",
+            "1.038.775"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "4.116.533",
+            "6.470.296"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provision",
+          "values": [
+            "0",
+            "626.715"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Gastos Deportivos",
+          "values": [
+            "29.012.937",
+            "24.415.721"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 35,
+      "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos Bancarios",
+          "values": [
+            "8.906",
+            "7.929"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comisiones",
+          "values": [
+            "25.276",
+            "29.176"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses",
+          "values": [
+            "343.268",
+            "1.121.836"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencia en Cambio",
+          "values": [
+            "441",
+            "4.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costas y procesos Juridicos",
+          "values": [
+            "850.000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costos y Gastos de Ejercicios",
+          "values": [
+            "3.430",
+            "1.159"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos Asumidos",
+          "values": [
+            "226.016",
+            "3.008"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas, Sanciones y Litigios",
+          "values": [
+            "18.677",
+            "37.237"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Donaciones",
+          "values": [
+            "9.113",
+            "10.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "164.175",
+            "267.639"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Otros Gastos",
+          "values": [
+            "1.649.301",
+            "1.482.984"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 36,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO N° / ## Nota 26. Gasto por impuesto / ### Impuesto de Renta",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Impuestos Renta Periodos anteriores",
+          "values": [
+            "42.928",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto Diferido Activo",
+          "values": [
+            "0",
+            "-206.365"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto de Renta Y Complementarios",
+          "values": [
+            "0",
+            "2.454.426"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Impuesto de Renta",
+          "values": [
+            "42.928",
+            "2.248.061"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 36,
+      "section": "## Nota 27. Saldo y transacciones con partes relacionadas / ## Nota 28. Detalle ingresos y gastos EQUIPO FEMENINO",
+      "columns": [
+        "Ingresos",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Conmebol - Federación Colombiana",
+          "values": [
+            "",
+            "206.978"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dimayor",
+          "values": [
+            "68.814",
+            "25.765"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos No Operacionales",
+          "values": [
+            "3.293",
+            "7.879"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Ingresos",
+          "values": [
+            "1.845",
+            "319"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad y Patrocinio de Vallas",
+          "values": [
+            "300.051",
+            "150.050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taquillas",
+          "values": [
+            "32.623",
+            "31.875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "406.625",
+            "422.867"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 36,
+      "section": null,
+      "columns": [
+        "Recurso Humano",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cuerpo Técnico",
+          "values": [
+            "203.089",
+            "144.427"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo Femenino Profesional",
+          "values": [
+            "1.037.061",
+            "494.206"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1.240.149",
+            "638.632"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": "FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN DE / FUNDACIÓN",
+      "columns": [
+        "Gastos Operativos",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos Equipo Profesional Y Divisiones Menores",
+          "values": [
+            "150.578",
+            "121.922"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos No Operacionales",
+          "values": [
+            "58",
+            "56"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "22.282",
+            "28.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento y Reparaciones",
+          "values": [
+            "487",
+            "1.849"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Gastos",
+          "values": [
+            "14.161",
+            "13.772"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "650",
+            "300"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "188.216",
+            "165.898"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 37,
+      "section": null,
+      "columns": [
+        "Otros Gastos",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Servi. Pub. - Aseo Y Otros",
+          "values": [
+            "34.470",
+            "30.382"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Viaje",
+          "values": [
+            "56.213",
+            "48.152"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "34.470",
+            "30.382"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 18,
+      "section": "AFILIADO A: / FCF / FUNDACIÓN DE FORTES / ## Arrendadores Arrendamiento Operativo / ### 5. Efectivo y Equivalentes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Efectivo y Equivalente",
+      "target": "1.112.705",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 5 rubros enteros)"
+    },
+    {
+      "page": 18,
+      "section": "AFILIADO A: / FCF / FUNDACIÓN DE FORTES / ## Arrendadores Arrendamiento Operativo / ### 5. Efectivo y Equivalentes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Efectivo y Equivalente",
+      "target": "67.543",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "AFILIADO A: / ## 6. Cuentas comerciales por cobrar y otras cuentas por cobrar",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Cuentas Comerciales Por Cobrar y Otras Cuentas Por Cobrar",
+      "target": "3.405.332",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "AFILIADO A: / ## 6. Cuentas comerciales por cobrar y otras cuentas por cobrar",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Cuentas Comerciales Por Cobrar y Otras Cuentas Por Cobrar",
+      "target": "2.948.370",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "A continuación, se desglosan los componentes que hacen parte de esta partida",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total Clientes Nacionales",
+      "target": "2.051.977",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-1465262"
+    },
+    {
+      "page": 19,
+      "section": "### Detalle Cartera Corporativa",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Cartera Corporativa",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$ 1.183.596\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 20,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Clientes del Exterior",
+      "target": "1.520.512",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "#### Nota 7. Inventarios",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Inventarios",
+      "target": "1.209.741",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "282682"
+    },
+    {
+      "page": 20,
+      "section": "#### Nota 7. Inventarios",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Inventarios",
+      "target": "395.700",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "#### Nota 8. Activo por impuestos corrientes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Activo Por Impuestos Corrientes",
+      "target": "1.331.180",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "#### Nota 8. Activo por impuestos corrientes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Activo Por Impuestos Corrientes",
+      "target": "56.132",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO N° / FCF / ## Nota 9. Propiedad Planta y Equipo más propiedades de Inversión",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total antes de Depreciaciones",
+      "target": "13.844.288",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO N° / FCF / ## Nota 9. Propiedad Planta y Equipo más propiedades de Inversión",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total antes de Depreciaciones",
+      "target": "13.583.342",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO N° / FCF / ## Nota 9. Propiedad Planta y Equipo más propiedades de Inversión",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Propiedad Planta y Equipo, Propiedad de Inversión",
+      "target": "13.073.318",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "-14615257"
+    },
+    {
+      "page": 21,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO N° / FCF / ## Nota 9. Propiedad Planta y Equipo más propiedades de Inversión",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Propiedad Planta y Equipo, Propiedad de Inversión",
+      "target": "12.896.893",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "-14269790"
+    },
+    {
+      "page": 22,
+      "section": "## Nota 10. Activos intangibles distintos de la plusvalía / ### Activos Intangibles Distintos de la Plusvalía",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Activos intangibles Distintos a la Plusvalía",
+      "target": "5.976.794",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "5976794"
+    },
+    {
+      "page": 22,
+      "section": "## Nota 10. Activos intangibles distintos de la plusvalía / ### Activos Intangibles Distintos de la Plusvalía",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Activos intangibles Distintos a la Plusvalía",
+      "target": "2.320.693",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "2320693"
+    },
+    {
+      "page": 22,
+      "section": "A continuación, desglosamos los componentes del rubro activos intangibles",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total activos intangibles a 31 diciembre 2024",
+      "target": "0",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "A continuación, desglosamos los componentes del rubro activos intangibles",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total activos intangibles a 31 diciembre 2024",
+      "target": "7.314",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "A continuación, desglosamos los componentes del rubro activos intangibles",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total activos intangibles a 31 diciembre 2024",
+      "target": "358.283",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "A continuación, desglosamos los componentes del rubro activos intangibles",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total activos intangibles a 31 diciembre 2024",
+      "target": "1.955.096",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "A continuación, desglosamos los componentes del rubro activos intangibles",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total activos intangibles a 31 diciembre 2024",
+      "target": "2.320.693",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "A continuación, desglosamos los componentes del rubro activos intangibles",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total activos intangibles",
+      "target": "4.111.606",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "A continuación, desglosamos los componentes del rubro activos intangibles",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total activos intangibles",
+      "target": "15.656",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-7314"
+    },
+    {
+      "page": 22,
+      "section": "A continuación, desglosamos los componentes del rubro activos intangibles",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total activos intangibles",
+      "target": "358.283",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-358283"
+    },
+    {
+      "page": 22,
+      "section": "A continuación, desglosamos los componentes del rubro activos intangibles",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total activos intangibles",
+      "target": "1.955.096",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-1955096"
+    },
+    {
+      "page": 22,
+      "section": "A continuación, desglosamos los componentes del rubro activos intangibles",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total activos intangibles",
+      "target": "6.440.641",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-2320693"
+    },
+    {
+      "page": 23,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total General",
+      "target": "4.111.606",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total General",
+      "target": "307.406",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total General",
+      "target": "3.804.200",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "## Nota 11. Otros Activos / ### Otros Activos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Cargos Diferidos",
+      "target": "110.267",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "## Nota 12. Obligaciones financieras / ### Obligaciones Financieras",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Obligaciones Financieras",
+      "target": "2.726.200",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "## Nota 12. Obligaciones financieras / ### Obligaciones Financieras",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Obligaciones Financieras",
+      "target": "4.356.957",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 5 rubros enteros)"
+    },
+    {
+      "page": 25,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A: / FCF / FUNDACIÓN DE FORTES",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total Obligacion Bancoocentral",
+      "target": "1.166.666",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total obligación por TC",
+      "target": "31.337",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 2 rubros enteros)"
+    },
+    {
+      "page": 25,
+      "section": "### Nota 13. Beneficios a empleados",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Beneficios a Empleados",
+      "target": "704.328",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "### Nota 13. Beneficios a empleados",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Beneficios a Empleados",
+      "target": "279.245",
+      "addendCount": 6,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 6 rubros enteros)"
+    },
+    {
+      "page": 26,
+      "section": "AFILIADO A: / ## Nota 14. Cuentas comerciales por pagar y otras cuentas por pagar / ### Cuentas Comerciales Por Pagar y Otras Cuentas por Pagar",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Cuentas Comerciales por Pagar",
+      "target": "5.548.099",
+      "addendCount": 15,
+      "closes": true,
+      "diff": "2",
+      "how": "redondeo (diferencia 2 en 15 rubros enteros)"
+    },
+    {
+      "page": 26,
+      "section": "AFILIADO A: / ## Nota 14. Cuentas comerciales por pagar y otras cuentas por pagar / ### Cuentas Comerciales Por Pagar y Otras Cuentas por Pagar",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Cuentas Comerciales por Pagar",
+      "target": "1.395.235",
+      "addendCount": 15,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 15 rubros enteros)"
+    },
+    {
+      "page": 28,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A: / ## Nota 15. Pasivo por impuestos corrientes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Impuestos, Gravámenes y Tasas",
+      "target": "41.620",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 28,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A: / ## Nota 15. Pasivo por impuestos corrientes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Impuestos, Gravámenes y Tasas",
+      "target": "469.449",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 28,
+      "section": "## Nota 16. Otros pasivos no financieros",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Impuestos, Gravámenes y Tasas",
+      "target": "235.886",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 28,
+      "section": "## Nota 16. Otros pasivos no financieros",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Impuestos, Gravámenes y Tasas",
+      "target": "205.661",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "AFILIADO AL / ## Nota 17. Obligaciones Largo Plazo",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Obligaciones Financieras a L.P.",
+      "target": "625.396",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "AFILIADO AL / ## Nota 17. Obligaciones Largo Plazo",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Obligaciones Financieras a L.P.",
+      "target": "1.155.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "## Nota 18. Pasivo por impuesto diferido",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Otros Pasivos",
+      "target": "490.873",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "## Nota 18. Pasivo por impuesto diferido",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Otros Pasivos",
+      "target": "490.873",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "continuación, se desglosa el detalle del impuesto diferido año 2025:",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total Neto Diferido Pasivo a 31 diciembre 2025",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"Pasivo\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 29,
+      "section": "## Nota 19. Patrimonio",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Capital Pagado",
+      "target": "8.614.300",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "## Nota 19. Patrimonio",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Capital Pagado",
+      "target": "1.514.300",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 30,
+      "section": "INTERNACIONAL DE / BOGOTÁ / APILIADO A: / FCF / FUNDACIÓN DE LA COMPAÑÍA",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "1.722.860",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 30,
+      "section": "INTERNACIONAL DE / BOGOTÁ / APILIADO A: / FCF / FUNDACIÓN DE LA COMPAÑÍA",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"100,00%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 30,
+      "section": "INTERNACIONAL DE / BOGOTÁ / APILIADO A: / FCF / FUNDACIÓN DE LA COMPAÑÍA",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$ 8.614.300.000\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 30,
+      "section": "## Resultado del ejercicio",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Resultado del Ejercicio",
+      "target": "-1.585.976",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 30,
+      "section": "## Resultado del ejercicio",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Resultado del Ejercicio",
+      "target": "3.927.702",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 30,
+      "section": "## Aplicación de los resultados / ## Reserva Legal",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Reserva Legal",
+      "target": "703.185",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 30,
+      "section": "## Aplicación de los resultados / ## Reserva Legal",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Reserva Legal",
+      "target": "703.185",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A: / ### Otros componentes del patrimonio / #### Otros componentes del patrimonio",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Otros Componentes del Patrimonio",
+      "target": "8.115.426",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A: / ### Otros componentes del patrimonio / #### Otros componentes del patrimonio",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Otros Componentes del Patrimonio",
+      "target": "4.187.724",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Ingresos Operacionales",
+      "target": "20.612.236",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "### Nota 20. Ingresos de actividades ordinarias / #### Ingresos Operacionales",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Ingresos Operacionales",
+      "target": "20.614.852",
+      "addendCount": 10,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 10 rubros enteros)"
+    },
+    {
+      "page": 32,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Dimayor",
+      "target": "7.245.343",
+      "addendCount": 11,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 11 rubros enteros)"
+    },
+    {
+      "page": 32,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO A:",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Dimayor",
+      "target": "6.922.108",
+      "addendCount": 11,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Actividades Conexas",
+      "target": "950.246",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Actividades Conexas",
+      "target": "927.758",
+      "addendCount": 6,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 6 rubros enteros)"
+    },
+    {
+      "page": 32,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Ingreso Publicidad",
+      "target": "4.916.600",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Ingreso Publicidad",
+      "target": "5.054.877",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "## Nota 21. Costo de Ventas",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Costo de Ventas",
+      "target": "555.558",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "## Nota 21. Costo de Ventas",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Costo de Ventas",
+      "target": "127.399",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Otros Ingresos",
+      "target": "11.825.819",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "## Nota 22. Otros Ingresos – Ingresos Financieros",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Otros Ingresos",
+      "target": "14.058.593",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 34,
+      "section": "AFILIADO AL",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Ingresos Financieros",
+      "target": "11.989",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 34,
+      "section": "AFILIADO AL",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Ingresos Financieros",
+      "target": "14.855",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 34,
+      "section": "### Nota 23. Gastos de administración",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Gastos Administración",
+      "target": "2.763.306",
+      "addendCount": 13,
+      "closes": true
+    },
+    {
+      "page": 34,
+      "section": "### Nota 23. Gastos de administración",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Gastos Administración",
+      "target": "2.471.578",
+      "addendCount": 13,
+      "closes": true
+    },
+    {
+      "page": 35,
+      "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Gastos Deportivos",
+      "target": "29.012.937",
+      "addendCount": 16,
+      "closes": true
+    },
+    {
+      "page": 35,
+      "section": "BOGOTÁ / AFILIADO AL / FCF / ## Nota 24. Gastos Deportivos / ### Gastos Deportivos",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Gastos Deportivos",
+      "target": "24.415.721",
+      "addendCount": 16,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 16 rubros enteros)"
+    },
+    {
+      "page": 35,
+      "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Otros Gastos",
+      "target": "1.649.301",
+      "addendCount": 10,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 10 rubros enteros)"
+    },
+    {
+      "page": 35,
+      "section": "## Nota 25. Otros Gastos – Gastos Financieros / ### Otros Gastos",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Otros Gastos",
+      "target": "1.482.984",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO N° / ## Nota 26. Gasto por impuesto / ### Impuesto de Renta",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Impuesto de Renta",
+      "target": "42.928",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "INTERNACIONAL DE / BOGOTÁ / AFILIADO N° / ## Nota 26. Gasto por impuesto / ### Impuesto de Renta",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Impuesto de Renta",
+      "target": "2.248.061",
+      "addendCount": 3,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/la-equidad-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"la-equidad\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "10 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

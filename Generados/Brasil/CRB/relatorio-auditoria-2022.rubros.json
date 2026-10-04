@@ -1,0 +1,254 @@
+{
+ "md": "Clubes/Brasil/CRB/relatorio-auditoria-2022.md",
+ "pdf": "Clubes/Brasil/CRB/relatorio-auditoria-2022.pdf",
+ "club": "crb",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:51:50.405Z",
+ "tieOuts": {
+  "cierran": 17,
+  "noCierran": 4
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 19,
+  "notasUsadas": [
+   "17",
+   "18"
+  ]
+ },
+ "ladoConocido": 20,
+ "rubros": [
+  {
+   "label": "RECEITA LÍQUIDA",
+   "lado": "revenue",
+   "page": 16,
+   "section": "CLUBE DE REGATAS BRASIL / CLUBE DE REGATAS BRASIL - CRB / CNPJ nº 12.159.281/0001-09 / DEMONSTRAÇÕES DOS RESULTADOS DO EXERCICIO / Findas em 31 de dezembro de 2022 e 2021",
+   "values": [
+    14.799
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-) CUSTOS DOS PRODUTOS E SERVIÇOS VENDIDOS",
+   "lado": "expense",
+   "page": 16,
+   "section": "CLUBE DE REGATAS BRASIL / CLUBE DE REGATAS BRASIL - CRB / CNPJ nº 12.159.281/0001-09 / DEMONSTRAÇÕES DOS RESULTADOS DO EXERCICIO / Findas em 31 de dezembro de 2022 e 2021",
+   "values": [
+    -6.975
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-) DESPESAS / RECEITAS DA ATIVIDADE CONTINUADA",
+   "lado": null,
+   "page": 16,
+   "section": "CLUBE DE REGATAS BRASIL / CLUBE DE REGATAS BRASIL - CRB / CNPJ nº 12.159.281/0001-09 / DEMONSTRAÇÕES DOS RESULTADOS DO EXERCICIO / Findas em 31 de dezembro de 2022 e 2021",
+   "values": [
+    -7.929
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(-) Despesas Gerais e Administrativas",
+   "lado": "expense",
+   "page": 16,
+   "section": "CLUBE DE REGATAS BRASIL / CLUBE DE REGATAS BRASIL - CRB / CNPJ nº 12.159.281/0001-09 / DEMONSTRAÇÕES DOS RESULTADOS DO EXERCICIO / Findas em 31 de dezembro de 2022 e 2021",
+   "values": [
+    -3.288
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Direito de Arena/Imagem/Bônus Desportivos",
+   "lado": "expense",
+   "page": 29,
+   "section": "CLUBE DE REGATAS BRASIL",
+   "values": [
+    12.904
+   ],
+   "origen": "nota 17 (ancla 2)",
+   "ancla": "(-) Despesas com Pessoal"
+  },
+  {
+   "label": "(-) Despesas com Pessoal",
+   "lado": "expense",
+   "page": 16,
+   "section": "CLUBE DE REGATAS BRASIL / CLUBE DE REGATAS BRASIL - CRB / CNPJ nº 12.159.281/0001-09 / DEMONSTRAÇÕES DOS RESULTADOS DO EXERCICIO / Findas em 31 de dezembro de 2022 e 2021",
+   "values": [
+    -18.425
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Ordenados e Salários",
+   "lado": "expense",
+   "page": 29,
+   "section": "CLUBE DE REGATAS BRASIL",
+   "values": [
+    3.099
+   ],
+   "origen": "nota 17 (ancla 2)",
+   "ancla": "(-) Despesas com Pessoal"
+  },
+  {
+   "label": "Indenizaçoes Trabalhista",
+   "lado": "expense",
+   "page": 29,
+   "section": "CLUBE DE REGATAS BRASIL",
+   "values": [
+    1.129
+   ],
+   "origen": "nota 17 (ancla 2)",
+   "ancla": "(-) Despesas com Pessoal"
+  },
+  {
+   "label": "Férias",
+   "lado": "expense",
+   "page": 29,
+   "section": "CLUBE DE REGATAS BRASIL",
+   "values": [
+    0.311
+   ],
+   "origen": "nota 17 (ancla 2)",
+   "ancla": "(-) Despesas com Pessoal"
+  },
+  {
+   "label": "Emprestimos de Passes de Atletas",
+   "lado": "expense",
+   "page": 29,
+   "section": "CLUBE DE REGATAS BRASIL",
+   "values": [
+    0.259
+   ],
+   "origen": "nota 17 (ancla 2)",
+   "ancla": "(-) Despesas com Pessoal"
+  },
+  {
+   "label": "Fgts",
+   "lado": "expense",
+   "page": 29,
+   "section": "CLUBE DE REGATAS BRASIL",
+   "values": [
+    0.254
+   ],
+   "origen": "nota 17 (ancla 2)",
+   "ancla": "(-) Despesas com Pessoal"
+  },
+  {
+   "label": "13º Salário",
+   "lado": "expense",
+   "page": 29,
+   "section": "CLUBE DE REGATAS BRASIL",
+   "values": [
+    0.239
+   ],
+   "origen": "nota 17 (ancla 2)",
+   "ancla": "(-) Despesas com Pessoal"
+  },
+  {
+   "label": "Inss",
+   "lado": "expense",
+   "page": 29,
+   "section": "CLUBE DE REGATAS BRASIL",
+   "values": [
+    0.142
+   ],
+   "origen": "nota 17 (ancla 2)",
+   "ancla": "(-) Despesas com Pessoal"
+  },
+  {
+   "label": "Outras despesas com pessoal",
+   "lado": "expense",
+   "page": 29,
+   "section": "CLUBE DE REGATAS BRASIL",
+   "values": [
+    0.088
+   ],
+   "origen": "nota 17 (ancla 2)",
+   "ancla": "(-) Despesas com Pessoal"
+  },
+  {
+   "label": "Patrocínios/Marketing/Royalties/Emendas Parlamentares",
+   "lado": "revenue",
+   "page": 29,
+   "section": "16. Outras Receitas",
+   "values": [
+    13.593
+   ],
+   "origen": "nota 18 (ancla 2)",
+   "ancla": "(-) Outras Receitas"
+  },
+  {
+   "label": "(-) Outras Receitas",
+   "lado": "revenue",
+   "page": 16,
+   "section": "CLUBE DE REGATAS BRASIL / CLUBE DE REGATAS BRASIL - CRB / CNPJ nº 12.159.281/0001-09 / DEMONSTRAÇÕES DOS RESULTADOS DO EXERCICIO / Findas em 31 de dezembro de 2022 e 2021",
+   "values": [
+    13.784
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Doaçoes/contribuições voluntarias",
+   "lado": "revenue",
+   "page": 29,
+   "section": "16. Outras Receitas",
+   "values": [
+    0.127
+   ],
+   "origen": "nota 18 (ancla 2)",
+   "ancla": "(-) Outras Receitas"
+  },
+  {
+   "label": "Ajudas de custo/CBF/COVID",
+   "lado": "revenue",
+   "page": 29,
+   "section": "16. Outras Receitas",
+   "values": [
+    0.048
+   ],
+   "origen": "nota 18 (ancla 2)",
+   "ancla": "(-) Outras Receitas"
+  },
+  {
+   "label": "Recuperação de despesas",
+   "lado": "revenue",
+   "page": 29,
+   "section": "16. Outras Receitas",
+   "values": [
+    0.016
+   ],
+   "origen": "nota 18 (ancla 2)",
+   "ancla": "(-) Outras Receitas"
+  },
+  {
+   "label": "(-) Despesas Financeiras",
+   "lado": "expense",
+   "page": 16,
+   "section": "CLUBE DE REGATAS BRASIL / CLUBE DE REGATAS BRASIL - CRB / CNPJ nº 12.159.281/0001-09 / DEMONSTRAÇÕES DOS RESULTADOS DO EXERCICIO / Findas em 31 de dezembro de 2022 e 2021",
+   "values": [
+    -0.018
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "(+) Receitas Financeiras",
+   "lado": "revenue",
+   "page": 16,
+   "section": "CLUBE DE REGATAS BRASIL / CLUBE DE REGATAS BRASIL - CRB / CNPJ nº 12.159.281/0001-09 / DEMONSTRAÇÕES DOS RESULTADOS DO EXERCICIO / Findas em 31 de dezembro de 2022 e 2021",
+   "values": [
+    0.148
+   ],
+   "origen": "estado 2"
+  }
+ ]
+}

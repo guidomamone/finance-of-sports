@@ -1,0 +1,213 @@
+{
+ "md": "Clubes/Estados Unidos/Green Bay Packers/green-bay-packers-annual-report-2016-17.md",
+ "generatedAt": "2026-09-30T04:28:52.310Z",
+ "rubros": [
+  {
+   "label": "Local",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "matchday_competition",
+     0.25
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Player costs",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 981
+  },
+  {
+   "label": "Operations & maintenance, net*",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "lump_football_operations",
+     0.27
+    ],
+    [
+     "matchday_competition",
+     0.06
+    ]
+   ],
+   "tokens": 883
+  },
+  {
+   "label": "Sales & marketing",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Profit from operations",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "lump_football_operations",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.64
+    ],
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "matchday_competition",
+     0.05
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Team",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "lump_football_operations",
+     0.33
+    ],
+    [
+     "other_sports",
+     0.05
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "National",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.64
+    ],
+    [
+     "lump_football_operations",
+     0.21
+    ],
+    [
+     "broadcasting",
+     0.1
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "General & administrative",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "other_sports",
+     0.03
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "Net income",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1006
+  }
+ ]
+}

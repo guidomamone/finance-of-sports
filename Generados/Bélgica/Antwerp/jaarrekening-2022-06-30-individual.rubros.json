@@ -1,0 +1,62 @@
+{
+ "md": "Clubes/Bélgica/Antwerp/jaarrekening-2022-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/Antwerp/jaarrekening-2022-06-30-individual.pdf",
+ "club": "antwerp-be",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:54:22.529Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 4,
+  "notasUsadas": []
+ },
+ "ladoConocido": 4,
+ "rubros": [
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 26,
+   "section": "Personeelskosten",
+   "values": [
+    30.70488
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 26,
+   "section": "Personeelskosten",
+   "values": [
+    3.03248
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "expense",
+   "page": 26,
+   "section": "Personeelskosten",
+   "values": [
+    4.030732
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Andere personeelskosten",
+   "lado": "expense",
+   "page": 26,
+   "section": "Personeelskosten",
+   "values": [
+    0.609419
+   ],
+   "origen": "estado 29"
+  }
+ ]
+}

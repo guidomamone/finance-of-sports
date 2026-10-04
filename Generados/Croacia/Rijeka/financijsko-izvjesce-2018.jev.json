@@ -1,0 +1,904 @@
+{
+ "md": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2018.md",
+ "generatedAt": "2026-09-30T22:49:02.509Z",
+ "rubrosHuella": "a1775ec6fb400abfdd6848c8fdc46ac939757ca2",
+ "rubros": [
+  {
+   "label": "Pripreme igrača",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 19 Materijalni troškovi",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Roba za ambulantu",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 19 Materijalni troškovi",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "wages_squad",
+     0.03
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Intelektualne usluge",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 19 Materijalni troškovi",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Ostalo",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 22 Ostali troškovi",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 974
+  },
+  {
+   "label": "Trošak održavanja utakmica",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 19 Materijalni troškovi",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Naknade igračima i trenerima",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 19 Materijalni troškovi",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Sportska oprema",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 19 Materijalni troškovi",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "match_organisation_expense",
+     0.32
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Utrošene sirovine i materijal",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 19 Materijalni troškovi",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Najam",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 19 Materijalni troškovi",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Vanjske usluge",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 19 Materijalni troškovi",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Marketinški troškovi",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 19 Materijalni troškovi",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Ostale usluge",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 19 Materijalni troškovi",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 986
+  },
+  {
+   "label": "Na dan 1. siječnja",
+   "lado": "expense",
+   "page": 23,
+   "section": "5 Nematerijalna imovina / Troškovi / stjecanja igrača Ukupno / 000'kn 000'kn / Nabavna vrijednost",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "player_amortisation",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "Povećanja",
+   "lado": "expense",
+   "page": 23,
+   "section": "5 Nematerijalna imovina / Troškovi / stjecanja igrača Ukupno / 000'kn 000'kn / Nabavna vrijednost",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "lump_football_operations_expense",
+     0.23
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "Prodaja",
+   "lado": "expense",
+   "page": 23,
+   "section": "5 Nematerijalna imovina / Troškovi / stjecanja igrača Ukupno / 000'kn 000'kn / Nabavna vrijednost",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Naknade i kazne savezima",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 22 Ostali troškovi",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "match_organisation_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Na dan 31. prosinca",
+   "lado": "expense",
+   "page": 23,
+   "section": "5 Nematerijalna imovina / Troškovi / stjecanja igrača Ukupno / 000'kn 000'kn / Nabavna vrijednost",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "player_amortisation",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "Porezi i doprinosi koji ne ovise o rezultatu",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 22 Ostali troškovi",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Dnevnice i putni troškovi",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 22 Ostali troškovi",
+   "choice": "match_organisation_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Reprezentacija",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 22 Ostali troškovi",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Prijevozne usluge",
+   "lado": "expense",
+   "page": 29,
+   "section": "### 19 Materijalni troškovi",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Naknade za transfere igrača",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 22 Ostali troškovi",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "UEFA nagrade i solidarne uplate",
+   "lado": "revenue",
+   "page": 29,
+   "section": "HNK Rijeka s.d.d. / ## Bilješke uz financijske izvještaje *(nastavak)* / ### 18 Ostali poslovni prihodi",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "Inozemne donacije",
+   "lado": "revenue",
+   "page": 29,
+   "section": "HNK Rijeka s.d.d. / ## Bilješke uz financijske izvještaje *(nastavak)* / ### 18 Ostali poslovni prihodi",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Prihodi od članarina",
+   "lado": "revenue",
+   "page": 29,
+   "section": "HNK Rijeka s.d.d. / ## Bilješke uz financijske izvještaje *(nastavak)* / ### 18 Ostali poslovni prihodi",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1085
+  },
+  {
+   "label": "Donacije u zemlji",
+   "lado": "revenue",
+   "page": 29,
+   "section": "HNK Rijeka s.d.d. / ## Bilješke uz financijske izvještaje *(nastavak)* / ### 18 Ostali poslovni prihodi",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "competition_bonus",
+     0.02
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Ostali nespomenuti prihodi",
+   "lado": "revenue",
+   "page": 29,
+   "section": "HNK Rijeka s.d.d. / ## Bilješke uz financijske izvještaje *(nastavak)* / ### 18 Ostali poslovni prihodi",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Prihodi s osnove kamata iz odnosa s poduzetnicima unutar grupe",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### 24 Financijski prihodi",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Besplatne ulaznice",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 22 Ostali troškovi",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "match_organisation_expense",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Tečajne razlike i ostali financijski prihodi iz odnosa s poduzetnicima unutar grupe",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### 24 Financijski prihodi",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Ostali prihodi s osnove kamata",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### 24 Financijski prihodi",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Ostali financijski prihodi",
+   "lado": "revenue",
+   "page": 31,
+   "section": "### 24 Financijski prihodi",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Prihodi od sponzorstava",
+   "lado": "revenue",
+   "page": 28,
+   "section": "2.363 / ulaznica i članarina te razgraničenje TV prava. / 17 Prihodi od prodaje / 2018. / 000'kn",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Troškovi poreza i doprinosa iz plaća",
+   "lado": "expense",
+   "page": 30,
+   "section": "HNK Rijeka s.d.d. / ## Bilješke uz financijske izvještaje *(nastavak)* / ### 20 Troškovi osoblja",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "wages_squad",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Neto plaće i nadnice",
+   "lado": "expense",
+   "page": 30,
+   "section": "HNK Rijeka s.d.d. / ## Bilješke uz financijske izvještaje *(nastavak)* / ### 20 Troškovi osoblja",
+   "choice": "wages_squad",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "wages_squad",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Rashodi s osnove kamata i slični rashodi",
+   "lado": "expense",
+   "page": 31,
+   "section": "### 25 Financijski rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Doprinosi na plaće",
+   "lado": "expense",
+   "page": 30,
+   "section": "HNK Rijeka s.d.d. / ## Bilješke uz financijske izvještaje *(nastavak)* / ### 20 Troškovi osoblja",
+   "choice": "wages_squad",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "wages_squad",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Tečajne razlike i drugi rashodi",
+   "lado": "expense",
+   "page": 31,
+   "section": "### 25 Financijski rashodi",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Prihodi od TV prava",
+   "lado": "revenue",
+   "page": 28,
+   "section": "2.363 / ulaznica i članarina te razgraničenje TV prava. / 17 Prihodi od prodaje / 2018. / 000'kn",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1080
+  }
+ ]
+}

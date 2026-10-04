@@ -1,0 +1,581 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2023-06-30.md",
+ "generatedAt": "2026-09-30T04:30:07.921Z",
+ "rubros": [
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1328
+  },
+  {
+   "label": "Μικτό αποτέλεσμα",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "lump_football_operations",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1318
+  },
+  {
+   "label": "- Τα Λοιπά συνήθη έσοδα για το 2022/2023 ανήλθαν σε € 4.254.506,16 έναντι € 2.674.408,01 το 2021/2022 παρουσιάζοντας αύξηση κατά €",
+   "lado": null,
+   "page": 3,
+   "section": "# Έκθεση Διαχείρισης του Διοικητικού Συμβουλίου / # επί των οικονομικών καταστάσεων / # Κατά την 30η Ιουνίου 2023 και για τη χρήση 1η Ιουλίου 2022 έως 30η Ιουνίου 2023 / # 1. ΕΤΗΣΙΟΣ ΟΙΚΟΝΟΜΙΚΟΣ ΑΠΟΛΟΓΙΣΜΟΣ 2022/2023 / # Αποτελέσματα χρήσης",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1691
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "match_organisation_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1326
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1326
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "match_organisation_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1325
+  },
+  {
+   "label": "- Ο κύκλος εργασιών για το 2022/2023 ανήλθε σε € 444.411,96 έναντι € 224.781,13 το 2021/2022, παρουσιάζοντας αύξηση κατά €",
+   "lado": null,
+   "page": 3,
+   "section": "# Έκθεση Διαχείρισης του Διοικητικού Συμβουλίου / # επί των οικονομικών καταστάσεων / # Κατά την 30η Ιουνίου 2023 και για τη χρήση 1η Ιουλίου 2022 έως 30η Ιουνίου 2023 / # 1. ΕΤΗΣΙΟΣ ΟΙΚΟΝΟΜΙΚΟΣ ΑΠΟΛΟΓΙΣΜΟΣ 2022/2023 / # Αποτελέσματα χρήσης",
+   "choice": "lump_football_operations",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.93
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1685
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1328
+  },
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "lump_football_operations",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.87
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1334
+  },
+  {
+   "label": "Αποτελέσματα προ τόκων και φόρων",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.47000000000000003
+    ],
+    [
+     "lump_football_operations",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1336
+  },
+  {
+   "label": "Λοιπά έξοδα και ζημίες",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "exceptional_items",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1329
+  },
+  {
+   "label": "Φόροι εισοδήματος",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1328
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1339
+  },
+  {
+   "label": "Αποτέλεσμα προ φόρων",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "other_income",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.18
+    ]
+   ],
+   "tokens": 1328
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1339
+  },
+  {
+   "label": "Κρατήσεις Τηλεοπτικών για ΕΠΟ-SL-Αστυνομία",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 7.4 Προπληρωμένα έξοδα",
+   "choice": "match_organisation_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 839
+  },
+  {
+   "label": "ΟΤΕ Α.Ε. έσοδα προβολής",
+   "lado": "revenue",
+   "page": 31,
+   "section": "[LOGO]",
+   "choice": "broadcasting",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "broadcasting",
+     0.51
+    ],
+    [
+     "sponsorship_commercial",
+     0.45
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "GIANTO SRL Ρουχισμός",
+   "lado": "expense",
+   "page": 28,
+   "section": "## 7.4 Προπληρωμένα έξοδα",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "lump_football_operations_expense",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 816
+  },
+  {
+   "label": "GIANTO SRL έσοδα προβολής",
+   "lado": "revenue",
+   "page": 31,
+   "section": "[LOGO]",
+   "choice": "broadcasting",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "broadcasting",
+     0.82
+    ],
+    [
+     "sponsorship_commercial",
+     0.12
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 833
+  },
+  {
+   "label": "Σύνολο",
+   "lado": "expense",
+   "page": 31,
+   "section": "#### 11. Λοιπά έξοδα και ζημίες",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "exceptional_items",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 809
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "lado": "expense",
+   "page": 31,
+   "section": "#### 11. Λοιπά έξοδα και ζημίες",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 816
+  },
+  {
+   "label": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ 1$^{ης}$ ΙΟΥΛΙΟΥ 2022 – 30$^{ης}$ ΙΟΥΝΙΟΥ 2023",
+   "choice": "other_income",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.18
+    ]
+   ],
+   "tokens": 1338
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "lado": "expense",
+   "page": 31,
+   "section": "#### 11. Λοιπά έξοδα και ζημίες",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 815
+  },
+  {
+   "label": "Φόροι και τέλη",
+   "lado": "expense",
+   "page": 31,
+   "section": "#### 11. Λοιπά έξοδα και ζημίες",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 813
+  },
+  {
+   "label": "Φορολογικά και ασφαλιστικά πρόστιμα & προσαυξήσεις",
+   "lado": "expense",
+   "page": 31,
+   "section": "#### 11. Λοιπά έξοδα και ζημίες",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "exceptional_items",
+     0.15
+    ]
+   ],
+   "tokens": 846
+  }
+ ]
+}

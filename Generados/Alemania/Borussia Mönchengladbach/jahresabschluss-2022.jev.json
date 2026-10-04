@@ -1,0 +1,142 @@
+{
+ "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2022.md",
+ "generatedAt": "2026-09-30T22:48:16.342Z",
+ "rubrosHuella": "6d161e80f249565d4c32445b0af4e69d14eb7cf0",
+ "rubros": [
+  {
+   "label": "Kaderspieler",
+   "lado": null,
+   "page": 10,
+   "section": "UNTERNEHMENSREGISTER / 4. Erläuterungen zur Gewinn- und Verlustrechnung / 5. Arbeitnehmer",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Angestellte",
+   "lado": null,
+   "page": 10,
+   "section": "UNTERNEHMENSREGISTER / 4. Erläuterungen zur Gewinn- und Verlustrechnung / 5. Arbeitnehmer",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Aushilfen",
+   "lado": null,
+   "page": 10,
+   "section": "UNTERNEHMENSREGISTER / 4. Erläuterungen zur Gewinn- und Verlustrechnung / 5. Arbeitnehmer",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Löhne und Gehälter",
+   "lado": null,
+   "page": 5,
+   "section": "# Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2022",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Soziale Abgaben",
+   "lado": null,
+   "page": 5,
+   "section": "# Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2022",
+   "choice": "wages_squad",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "8. Sonstige Zinsen und ähnliche Erträge",
+   "lado": "revenue",
+   "page": 6,
+   "section": "UNTERNEHMENSREGISTER",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "9. Zinsen und ähnliche Aufwendungen",
+   "lado": "expense",
+   "page": 6,
+   "section": "UNTERNEHMENSREGISTER",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "1. Entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+   "lado": "expense",
+   "page": 12,
+   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+   "choice": "other_amortisation",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "2. Spielerwerte",
+   "lado": "expense",
+   "page": 12,
+   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+   "choice": "player_amortisation",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+   "lado": "expense",
+   "page": 12,
+   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+   "choice": "depreciation",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+   "lado": "expense",
+   "page": 12,
+   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "3. Geleistete Anzahlungen und Anlagen im Bau",
+   "lado": "expense",
+   "page": 12,
+   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "1. Anteile an verbundenen Unternehmen",
+   "lado": "expense",
+   "page": 12,
+   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "2. Beteiligungen",
+   "lado": "expense",
+   "page": 12,
+   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "3. Sonstige Finanzanlagen",
+   "lado": "expense",
+   "page": 12,
+   "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  }
+ ]
+}

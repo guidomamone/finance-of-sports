@@ -1,0 +1,516 @@
+{
+ "md": "Clubes/República Checa/Sigma Olomouc/SL08_1997.md",
+ "pdf": "Clubes/República Checa/Sigma Olomouc/SL08_1997.pdf",
+ "club": "sigma-olomouc",
+ "year": 1997,
+ "numberFormat": "ambiguo",
+ "generatedAt": "2026-09-30T22:07:49.178Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": false,
+  "motivo": "no se pudo ubicar la columna del ejercicio"
+ },
+ "ladoConocido": 17,
+ "rubros": [
+  {
+   "label": "Tržby za prodej zboží",
+   "lado": "revenue",
+   "page": 5,
+   "section": "",
+   "values": [
+    "01",
+    "6 598",
+    "1 917"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Náklady vynaložené na prodané zboží",
+   "lado": "expense",
+   "page": 5,
+   "section": "",
+   "values": [
+    "02",
+    "5 961",
+    "1 610"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Obchodní marže (ř. 01 – 02)",
+   "lado": null,
+   "page": 5,
+   "section": "",
+   "values": [
+    "03",
+    "638",
+    "307"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Výkony (ř. 05 + 06 + 07)",
+   "lado": null,
+   "page": 5,
+   "section": "",
+   "values": [
+    "04",
+    "21 740",
+    "24 547"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Tržby za prodej vlastních výrobků a služeb",
+   "lado": "revenue",
+   "page": 5,
+   "section": "",
+   "values": [
+    "05",
+    "21 740",
+    "24 547"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Změna stavu vnitropodnikových zásob vlastní výroby",
+   "lado": null,
+   "page": 5,
+   "section": "",
+   "values": [
+    "06",
+    "–",
+    "–"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Aktivace",
+   "lado": null,
+   "page": 5,
+   "section": "",
+   "values": [
+    "07",
+    "–",
+    "–"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Výkonová spotřeba (ř. 09 + 10)",
+   "lado": null,
+   "page": 5,
+   "section": "",
+   "values": [
+    "08",
+    "42 769",
+    "23 462"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Spotřeba materiálu a energie",
+   "lado": null,
+   "page": 5,
+   "section": "",
+   "values": [
+    "09",
+    "2 622",
+    "2 271"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Služby",
+   "lado": null,
+   "page": 5,
+   "section": "",
+   "values": [
+    "10",
+    "40 146",
+    "21 191"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Přidaná hodnota (ř. 03 + 04 – 08)",
+   "lado": null,
+   "page": 5,
+   "section": "",
+   "values": [
+    "11",
+    "- 20 391",
+    "1 392"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Osobní náklady (ř. 13 až 16)",
+   "lado": "expense",
+   "page": 5,
+   "section": "",
+   "values": [
+    "12",
+    "7 490",
+    "5 835"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Mzdové náklady",
+   "lado": "expense",
+   "page": 5,
+   "section": "",
+   "values": [
+    "13",
+    "5 470",
+    "4 273"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Odměny členům orgánů společnosti a družstva",
+   "lado": null,
+   "page": 5,
+   "section": "",
+   "values": [
+    "14",
+    "–",
+    "–"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Náklady na sociální zabezpečení",
+   "lado": "expense",
+   "page": 5,
+   "section": "",
+   "values": [
+    "15",
+    "1 826",
+    "1 467"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Sociální náklady",
+   "lado": "expense",
+   "page": 5,
+   "section": "",
+   "values": [
+    "16",
+    "193",
+    "96"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Daně a poplatky",
+   "lado": "expense",
+   "page": 5,
+   "section": "",
+   "values": [
+    "17",
+    "444",
+    "89"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Odpisy nehmotného a hmotného investičního majetku",
+   "lado": null,
+   "page": 5,
+   "section": "",
+   "values": [
+    "18",
+    "1 053",
+    "559"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Tržby z prodeje investičního majetku a materiálu",
+   "lado": "revenue",
+   "page": 5,
+   "section": "",
+   "values": [
+    "19",
+    "562",
+    "285"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Zůstatková cena prodaného investičního majetku a materiálu",
+   "lado": null,
+   "page": 5,
+   "section": "",
+   "values": [
+    "20",
+    "613",
+    "339"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Zúčtování rezerv a časového rozlišení provozních nákladů",
+   "lado": "expense",
+   "page": 5,
+   "section": "",
+   "values": [
+    "21",
+    "–",
+    "–"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Tvorba rezerv a časového rozlišení provozních nákladů",
+   "lado": "expense",
+   "page": 5,
+   "section": "",
+   "values": [
+    "22",
+    "375",
+    "–"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Zúčtování opravných položek do provozních výnosů",
+   "lado": "revenue",
+   "page": 5,
+   "section": "",
+   "values": [
+    "23",
+    "–",
+    "–"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Zúčtování opravných položek do provozních nákladů",
+   "lado": "expense",
+   "page": 5,
+   "section": "",
+   "values": [
+    "24",
+    "–",
+    "–"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Ostatní provozní výnosy",
+   "lado": "revenue",
+   "page": 5,
+   "section": "",
+   "values": [
+    "25",
+    "67 135",
+    "8 550"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Ostatní provozní náklady",
+   "lado": "expense",
+   "page": 5,
+   "section": "",
+   "values": [
+    "26",
+    "37 001",
+    "3 687"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Převod provozních výnosů",
+   "lado": "revenue",
+   "page": 5,
+   "section": "",
+   "values": [
+    "27",
+    "–",
+    "–"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Převod provozních nákladů",
+   "lado": "expense",
+   "page": 5,
+   "section": "",
+   "values": [
+    "28",
+    "–",
+    "–"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Provozní hospodářský výsledek [ř. 11 – 12 – 17 – 18 + 19 – 20 + 21 – 22 + 23 – 24 + 25 – 26 + (–27) – (–28)]",
+   "lado": null,
+   "page": 5,
+   "section": "",
+   "values": [
+    "29",
+    "380",
+    "- 282"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  }
+ ]
+}

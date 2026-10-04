@@ -1,0 +1,358 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_AGM_minutes_2021-01-30.md",
+ "generatedAt": "2026-09-30T01:11:48.851Z",
+ "rubros": [
+  {
+   "label": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "page": 14,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "page": 14,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Κέρδη / (ζημιές) χρήσης",
+   "page": 14,
+   "section": "#### ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΗΣ ΚΑΘΑΡΗΣ ΘΕΣΗΣ",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Φόροι εισοδήματος",
+   "page": 14,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Αποτέλεσμα προ φόρων",
+   "page": 14,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Αύξηση Μετοχικού Κεφαλαίου",
+   "page": 14,
+   "section": "#### ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΗΣ ΚΑΘΑΡΗΣ ΘΕΣΗΣ",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1298
+  },
+  {
+   "label": "Υπόλοιπο την 30/06/2018",
+   "page": 14,
+   "section": "#### ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΗΣ ΚΑΘΑΡΗΣ ΘΕΣΗΣ",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "page": 14,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Εισφορές μετόχων δεσμευμένες για αύξηση Μετοχικού Κεφαλαίου",
+   "page": 14,
+   "section": "#### ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΗΣ ΚΑΘΑΡΗΣ ΘΕΣΗΣ",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "member_dues",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1325
+  },
+  {
+   "label": "Υπόλοιπο Αποτελεσμάτων κερδών/(ζημιών) προηγούμενων χρήσεων",
+   "page": 19,
+   "section": "#### ΘΕΜΑ 2ο",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1305
+  },
+  {
+   "label": "Μείωση Μ.Κ. με συμψηφισμό ζημιών παρελθούσων χρήσεων",
+   "page": 14,
+   "section": "#### ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΗΣ ΚΑΘΑΡΗΣ ΘΕΣΗΣ",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "other_income",
+     0.24
+    ],
+    [
+     "exceptional_items",
+     0.13
+    ]
+   ],
+   "tokens": 1319
+  },
+  {
+   "label": "Υπόλοιπο την 30.06.2019",
+   "page": 14,
+   "section": "#### ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΗΣ ΚΑΘΑΡΗΣ ΘΕΣΗΣ",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.06999999999999999
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Μείον Φόρος εισοδήματος",
+   "page": 19,
+   "section": "#### ΘΕΜΑ 2ο",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Κέρδη /(Ζημίες) προ φόρων (-) Διαφορές φορολογικού ελέγχου προηγ. Χρήσεων",
+   "page": 19,
+   "section": "#### ΘΕΜΑ 2ο",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "other_income",
+     0.09
+    ]
+   ],
+   "tokens": 1311
+  },
+  {
+   "label": "Κέρδη /(Ζημίες) εις νέο",
+   "page": 19,
+   "section": "#### ΘΕΜΑ 2ο",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Διανομή μερισμάτων",
+   "page": 14,
+   "section": "#### ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΗΣ ΚΑΘΑΡΗΣ ΘΕΣΗΣ",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "other_income",
+     0.06
+    ]
+   ],
+   "tokens": 1291
+  }
+ ]
+}

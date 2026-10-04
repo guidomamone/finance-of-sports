@@ -1,0 +1,182 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2025-06-30.md",
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2025-06-30.pdf",
+ "club": "levadiakos",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:02:41.094Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 16,
+  "notasUsadas": []
+ },
+ "ladoConocido": 16,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    2978.1599
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 5,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -4664.28337
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 5,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    2516.92915
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 5,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -34.28363
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 5,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -392.45517
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "revenue",
+   "page": 5,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    0.00155
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 5,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -9.42951
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Φόρος εισοδήματος",
+   "lado": "expense",
+   "page": 5,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -92.85227
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 17,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥ ΑΠΟ 1/7/2024 έως 30/6/2025",
+   "values": [
+    2.97816
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 17,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥ ΑΠΟ 1/7/2024 έως 30/6/2025",
+   "values": [
+    -4.664283
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 17,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥ ΑΠΟ 1/7/2024 έως 30/6/2025",
+   "values": [
+    2.516929
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 17,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥ ΑΠΟ 1/7/2024 έως 30/6/2025",
+   "values": [
+    -0.034284
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 17,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥ ΑΠΟ 1/7/2024 έως 30/6/2025",
+   "values": [
+    -0.392455
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "revenue",
+   "page": 17,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥ ΑΠΟ 1/7/2024 έως 30/6/2025",
+   "values": [
+    0.000002
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 17,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥ ΑΠΟ 1/7/2024 έως 30/6/2025",
+   "values": [
+    -0.00943
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Φόρος εισοδήματος",
+   "lado": "expense",
+   "page": 17,
+   "section": "[LOGO] / LEVADIAKOS F.C. / # 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥ ΑΠΟ 1/7/2024 έως 30/6/2025",
+   "values": [
+    -0.092852
+   ],
+   "origen": "estado 5"
+  }
+ ]
+}

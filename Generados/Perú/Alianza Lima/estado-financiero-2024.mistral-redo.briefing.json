@@ -1,0 +1,722 @@
+{
+  "club": "alianzalima-pe",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Perú/Alianza Lima/estado-financiero-2024.mistral-redo.md",
+  "generatedAt": "2026-09-30T14:16:51.502Z",
+  "numberFormat": "espacio como separador de miles (escandinavo)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 63
+  },
+  "scannedWarning": false,
+  "tableCount": 3,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 2,
+      "section": "# CLUB ALIANZA LIMA / ## Estados de situación financiera / ### ACTIVOS",
+      "columns": [
+        "",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Activos corrientes :",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Efectivo y equivalentes de efectivo (Nota 5)",
+          "values": [
+            "2 709 729",
+            "3 371 734"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar comerciales (Nota 6)",
+          "values": [
+            "7 337 584",
+            "4 088 957"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras cuentas por cobrar (Nota 7)",
+          "values": [
+            "17 325 722",
+            "16 950 435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inventarios (Nota 8)",
+          "values": [
+            "2 198 481",
+            "1 760 280"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios y otros contratados por anticipado (Nota 9)",
+          "values": [
+            "705 612",
+            "445 769"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total activo corriente",
+          "values": [
+            "30 277 128",
+            "26 617 175"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Otras cuentas por cobrar (Nota 7)",
+          "values": [
+            "574 720",
+            "237 120"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inmueble, mobiliario y equipo, neto (Nota 10)",
+          "values": [
+            "141 720 089",
+            "141 905 401"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangibles, neto (Nota 11)",
+          "values": [
+            "4 288 606",
+            "6 456 112"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total activo no corriente",
+          "values": [
+            "146 583 415",
+            "148 598 633"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL ACTIVO",
+          "values": [
+            "176 860 543",
+            "175 215 808"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "### PASIVO Y PATRIMONIO",
+      "columns": [
+        "",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Pasivo corriente :",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Cuentas por pagar comerciales (Nota 12)",
+          "values": [
+            "3 719 104",
+            "1 776 438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda concursal (Nota 13)",
+          "values": [
+            "4 000 000",
+            "4 776 833"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras cuentas por pagar (Nota 14)",
+          "values": [
+            "12 037 257",
+            "13 190 431"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos diferidos (Nota 15)",
+          "values": [
+            "7 976 370",
+            "4 090 610"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obligaciones Financieras",
+          "values": [
+            "992 767",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total pasivo corriente",
+          "values": [
+            "28 725 498",
+            "23 834 312"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Pasivo no corriente :",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Deuda concursal (Nota 13)",
+          "values": [
+            "43 233 336",
+            "42 250 943"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras cuentas por pagar (Nota 14)",
+          "values": [
+            "2 736 127",
+            "5 543 154"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras obligaciones",
+          "values": [
+            "-",
+            "57 433"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total pasivo no corriente",
+          "values": [
+            "45 969 463",
+            "47 851 530"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Patrimonio (Nota 16):",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aporte de socios (Nota 16 a)",
+          "values": [
+            "4 629 188",
+            "4 629 188"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Excedente de revaluación (Nota 16 b)",
+          "values": [
+            "109 791 249",
+            "111 107 435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultados acumulados",
+          "values": [
+            "(12 254 855)",
+            "(12 206 657)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total patrimonio",
+          "values": [
+            "102 165 582",
+            "103 529 966"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL PASIVO Y PATRIMONIO",
+          "values": [
+            "176 860 543",
+            "175 215 808"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# Estados de resultados integrales",
+      "columns": [
+        "",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ACTIVIDADES INSTITUCIONALES Y DEPORTIVAS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ingresos por derechos de transmisión televisiva",
+          "values": [
+            "27 106 486",
+            "26 718 158"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos por auspicio publicitarios",
+          "values": [
+            "34 139 985",
+            "27 643 857"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos por participación en torneos nacionales",
+          "values": [
+            "202 988",
+            "1 719 874"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos por participación en torneos internacionales",
+          "values": [
+            "1 836 950",
+            "12 941 076"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros ingresos (Nota 17)",
+          "values": [
+            "57 179 317",
+            "39 191 233"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COSTOS Y GASTOS INSTITUCIONALES Y DEPORTIVOS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Costos deportivos (Nota 18)",
+          "values": [
+            "(92 697 274)",
+            "(80 506 543)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos administrativos (Nota 19)",
+          "values": [
+            "(17 027 913)",
+            "(12 265 510)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de marketing (Nota 20)",
+          "values": [
+            "(10 075 328)",
+            "(8 189 132)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado operativo",
+          "values": [
+            "665 211",
+            "7 253 013"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ingresos y gastos financieros, neto",
+          "values": [
+            "(1 810 517)",
+            "( 687 669)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencia en cambio, neto (Nota 21)",
+          "values": [
+            "( 219 316)",
+            "( 826 722)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado neto",
+          "values": [
+            "(1 364 622)",
+            "5 738 622"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 2,
+      "section": "# CLUB ALIANZA LIMA / ## Estados de situación financiera / ### ACTIVOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total activo corriente",
+      "target": "30 277 128",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "# CLUB ALIANZA LIMA / ## Estados de situación financiera / ### ACTIVOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total activo corriente",
+      "target": "26 617 175",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "# CLUB ALIANZA LIMA / ## Estados de situación financiera / ### ACTIVOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total activo no corriente",
+      "target": "146 583 415",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "# CLUB ALIANZA LIMA / ## Estados de situación financiera / ### ACTIVOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total activo no corriente",
+      "target": "148 598 633",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "# CLUB ALIANZA LIMA / ## Estados de situación financiera / ### ACTIVOS",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL ACTIVO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 2,
+      "section": "### PASIVO Y PATRIMONIO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total pasivo corriente",
+      "target": "28 725 498",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "### PASIVO Y PATRIMONIO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total pasivo corriente",
+      "target": "23 834 312",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "### PASIVO Y PATRIMONIO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total pasivo no corriente",
+      "target": "45 969 463",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "### PASIVO Y PATRIMONIO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total pasivo no corriente",
+      "target": "47 851 530",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "### PASIVO Y PATRIMONIO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total patrimonio",
+      "target": "102 165 582",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "### PASIVO Y PATRIMONIO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total patrimonio",
+      "target": "103 529 966",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "### PASIVO Y PATRIMONIO",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL PASIVO Y PATRIMONIO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 14,
+    "results": [
+      {
+        "label": "ACTIVIDADES INSTITUCIONALES Y DEPORTIVAS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ACTIVIDADES INSTITUCIONALES Y DEPORTIVAS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos por derechos de transmisión televisiva",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Ingresos por derechos de transmisión televisiva",
+        "years": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Ingresos por derechos de transmisión televisiva",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos por auspicio publicitarios",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Ingresos por auspicios publicitarios",
+        "similarity": 60
+      },
+      {
+        "label": "Ingresos por auspicio publicitarios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos por participación en torneos nacionales",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "competition_bonus",
+        "matchedLabel": "Ingresos por participación en torneos nacionales",
+        "years": [
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Ingresos por participación en torneos nacionales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos por participación en torneos internacionales",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "competition_bonus",
+        "matchedLabel": "Ingresos por participación en torneos internacionales",
+        "years": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Ingresos por participación en torneos internacionales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros ingresos (Nota 17)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "lump_football_operations",
+        "matchedLabel": "Otros ingresos",
+        "similarity": 67
+      },
+      {
+        "label": "Otros ingresos (Nota 17)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COSTOS Y GASTOS INSTITUCIONALES Y DEPORTIVOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COSTOS Y GASTOS INSTITUCIONALES Y DEPORTIVOS",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "lump_football_operations_expense",
+        "matchedLabel": "Costos deportivos",
+        "similarity": 50
+      },
+      {
+        "label": "Costos deportivos (Nota 18)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costos deportivos (Nota 18)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "lump_football_operations_expense",
+        "matchedLabel": "Costos deportivos",
+        "similarity": 67
+      },
+      {
+        "label": "Gastos administrativos (Nota 19)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos administrativos (Nota 19)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos administrativos",
+        "similarity": 67
+      },
+      {
+        "label": "Gastos de marketing (Nota 20)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de marketing (Nota 20)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos de marketing",
+        "similarity": 67
+      },
+      {
+        "label": "Resultado operativo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado operativo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos y gastos financieros, neto",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos y gastos financieros, neto",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencia en cambio, neto (Nota 21)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencia en cambio, neto (Nota 21)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado neto",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado neto",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "pe",
+    "query": "Alianza Lima",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

@@ -1,0 +1,181 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.pdf",
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T01:44:01.305Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    41,
+    44
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    77,
+    80
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    105,
+    108
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    139,
+    142
+   ],
+   "tipo": "texto"
+  },
+  "b5": {
+   "pagina": 8,
+   "lineas": [
+    195,
+    216
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 9,
+   "lineas": [
+    231,
+    242
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    260,
+    264
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 11,
+   "lineas": [
+    280,
+    286
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 12,
+   "lineas": [
+    302,
+    333
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 21,
+   "lineas": [
+    589,
+    593
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 22,
+   "lineas": [
+    603,
+    607
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 22,
+   "lineas": [
+    615,
+    620
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 23,
+   "lineas": [
+    634,
+    639
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 24,
+   "lineas": [
+    661,
+    668
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 25,
+   "lineas": [
+    690,
+    701
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 26,
+   "lineas": [
+    713,
+    719
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 26,
+   "lineas": [
+    727,
+    737
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 26,
+   "lineas": [
+    741,
+    745
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 27,
+   "lineas": [
+    753,
+    764
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b6"
+ ],
+ "notas_ingresos": [
+  "b15",
+  "b18"
+ ],
+ "notas_gastos": [
+  "b16",
+  "b17"
+ ],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2020",
+ "columna_anterior": "2019",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados: 'Demonstração dos déficits' (b6), en miles de reais. Notas: 14 Receita líquida (b15), 15 Custos (b16), 16 Despesas gerais e administrativas (b17) y 17 Outras receitas operacionais (b18). La demostración de resultados abrangentes (b7) solo repite el déficit y no se carga. Las notas usan los encabezados 31/12/2020 y 31/12/2019. No hay nota de resultado financiero indexada."
+}

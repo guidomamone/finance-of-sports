@@ -1,0 +1,582 @@
+{
+ "md": "Clubes/Turquía/Galatasaray/galatasaray-sportif-bilanco-31-05-2019.md",
+ "generatedAt": "2026-09-30T19:15:52.012Z",
+ "rubrosHuella": "17fec6a23ad931a85bb7881b2247f55a2ae7c551",
+ "rubros": [
+  {
+   "label": "Hasılat",
+   "lado": "revenue",
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "lump_football_operations",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.51
+    ],
+    [
+     "other_income",
+     0.47000000000000003
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Pazarlama Giderleri (-)",
+   "lado": "expense",
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Finansman Giderleri (-)",
+   "lado": "expense",
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Esas Faaliyetlerden Diğer Gelirler",
+   "lado": "revenue",
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1098
+  },
+  {
+   "label": "Genel Yönetim Giderleri (-)",
+   "lado": "expense",
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Satışların maliyeti (-)",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ],
+    [
+     "player_amortisation",
+     0.1
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Finansman Gelirleri",
+   "lado": "revenue",
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Esas Faaliyetlerden Diğer Giderler (-)",
+   "lado": "expense",
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Dönem Vergi Gideri",
+   "lado": "expense",
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Ertelenmiş Vergi Geliri / (Gideri)",
+   "lado": "expense",
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Kontrol Gücü Olmayan Paylar",
+   "lado": null,
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1489
+  },
+  {
+   "label": "Vergi Geliri / (Gideri)",
+   "lado": "expense",
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1108
+  },
+  {
+   "label": "Pay Başına Kazanç/(Kayıp)",
+   "lado": null,
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1552
+  },
+  {
+   "label": "DÖNEM NET KARI / (ZARARI)",
+   "lado": null,
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1543
+  },
+  {
+   "label": "Ana Ortaklık Payları",
+   "lado": null,
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "Çalışanlara Sağlanan Faydalara İlişkin Aktüeryal Kayıplar",
+   "lado": null,
+   "page": 6,
+   "section": "# Galatasaray Sportif Sınai ve Ticari Yatırımlar A.Ş. ve Bağlı Ortaklıkları",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "wages_squad",
+     0.07
+    ]
+   ],
+   "tokens": 1556
+  },
+  {
+   "label": "Diğer",
+   "lado": null,
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "UEFA Şampiyonlar ve Avrupa Ligi gelirleri",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "choice": "competition_bonus",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "competition_bonus",
+     0.96
+    ],
+    [
+     "broadcasting",
+     0.04
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1125
+  },
+  {
+   "label": "Futbol Faaliyeti",
+   "lado": "expense",
+   "page": 19,
+   "section": "",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 985
+  },
+  {
+   "label": "Mağazacılık",
+   "lado": "expense",
+   "page": 19,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 928
+  },
+  {
+   "label": "Mağaza satış gelirleri",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.7
+    ],
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1100
+  },
+  {
+   "label": "Yayın hakkı gelirleri",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1118
+  },
+  {
+   "label": "Sponsorluk, isim hakkı ve reklam gelirleri",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1135
+  },
+  {
+   "label": "Loca, VIP ve kombine satış gelirleri",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "choice": "season_tickets",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "season_tickets",
+     0.82
+    ],
+    [
+     "matchday_competition",
+     0.15
+    ],
+    [
+     "stadium_other",
+     0.03
+    ]
+   ],
+   "tokens": 1142
+  },
+  {
+   "label": "Sporcu transfer, kira ve yetiştirme gelirleri",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 10.3 Geçmiş yıl kar / zararları ve kontrol gücü olmayan paylar / #### Geçmiş yıl kar / zararları / #### Kontrol gücü olmayan paylar / ## 11 HASILAT VE SATIŞLARIN MALİYETİ / ### Hasılat ve satışların maliyeti",
+   "choice": "player_sales",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "player_sales",
+     0.97
+    ],
+    [
+     "youth_football",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1138
+  }
+ ]
+}

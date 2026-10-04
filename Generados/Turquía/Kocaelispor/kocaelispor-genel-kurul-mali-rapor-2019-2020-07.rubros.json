@@ -1,0 +1,42 @@
+{
+ "md": "Clubes/Turquía/Kocaelispor/kocaelispor-genel-kurul-mali-rapor-2019-2020-07.md",
+ "pdf": "Clubes/Turquía/Kocaelispor/kocaelispor-genel-kurul-mali-rapor-2019-2020-07.pdf",
+ "club": "kocaelispor",
+ "year": 2020,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:08:17.517Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 2,
+ "rubros": [
+  {
+   "label": "8-Birikmiş Amor smanlar (-)",
+   "lado": "expense",
+   "page": 15,
+   "section": "3-Binalar                                     3.033.640,00     2-Gider Tahakkukları / 6-Demirbaşlar                                  148.051,15      2-Tesise Ka lma Payları",
+   "values": [
+    0.14805
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "9-Yapılmakta Olan Ya rımlar V-ÖZ KAYNAKLAR",
+   "lado": "expense",
+   "page": 15,
+   "section": "3-Binalar                                     3.033.640,00     2-Gider Tahakkukları / 6-Demirbaşlar                                  148.051,15      2-Tesise Ka lma Payları",
+   "values": [
+    -28.685524
+   ],
+   "origen": "estado 13"
+  }
+ ]
+}

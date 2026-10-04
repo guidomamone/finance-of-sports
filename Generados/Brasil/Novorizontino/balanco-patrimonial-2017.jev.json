@@ -1,0 +1,604 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/balanco-patrimonial-2017.md",
+ "generatedAt": "2026-09-30T04:26:42.237Z",
+ "rubros": [
+  {
+   "label": "(-)CUSTO DO DEPARTAMENTO DE FUTEBOL",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "wages_squad",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "wages_squad",
+     0.67
+    ],
+    [
+     "lump_football_operations_expense",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1480
+  },
+  {
+   "label": "Receitas de Jogos, Patrimônios, Locações e outras",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ],
+    [
+     "matchday_competition",
+     0.12
+    ]
+   ],
+   "tokens": 1469
+  },
+  {
+   "label": "Receita com Exploração de Publicidade",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1472
+  },
+  {
+   "label": "Receita com Negociação de Atleta",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1472
+  },
+  {
+   "label": "RECEITA OPERACIONAL",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1472
+  },
+  {
+   "label": "Repasse da Federação Paulista de Futebol",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "match_organisation_expense",
+     0.29000000000000004
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1481
+  },
+  {
+   "label": "Receita com Empréstimo de Atleta",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "player_sales",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "player_sales",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "(-) Custo do Departamento Profissional",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.76
+    ],
+    [
+     "wages_squad",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1474
+  },
+  {
+   "label": "RESULTADO OPERACIONAL BRUTO",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "lump_football_operations",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "lump_football_operations",
+     0.43
+    ],
+    [
+     "lump_football_operations_expense",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "Despesas Gerais e de Manutenção p/ Rateio de Categoria",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "youth_other_sports_expense",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "(-)DESPESAS OPERACIONAIS",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1489
+  },
+  {
+   "label": "Departamento Futebol Profissional",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.83
+    ],
+    [
+     "wages_squad",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1512
+  },
+  {
+   "label": "Administrativa p/ Rateio de Categoria",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "youth_other_sports_expense",
+     0.04
+    ],
+    [
+     "youth_football",
+     0.02
+    ]
+   ],
+   "tokens": 1456
+  },
+  {
+   "label": "Departamento Futebol Amador",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.93
+    ],
+    [
+     "youth_football",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1504
+  },
+  {
+   "label": "(-) Custo do Departamento Amador",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1463
+  },
+  {
+   "label": "Outras Despesas Operacionais Administrativas",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "admin_general_expense",
+     0.41
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Provisões no Exercício",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "player_impairment",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1410
+  },
+  {
+   "label": "Resultado antes das Provisões, Depr., Receita/Despesa Financ",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1469
+  },
+  {
+   "label": "Resultado Operacional Líquido",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.5700000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1494
+  },
+  {
+   "label": "Recuperação de Despesas",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1472
+  },
+  {
+   "label": "Recurso do Projeto",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "member_dues",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "member_dues",
+     0.77
+    ],
+    [
+     "other_income",
+     0.21000000000000002
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1314
+  },
+  {
+   "label": "Despesas Financeiras Líquidas",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1484
+  },
+  {
+   "label": "(-) Aplicação do Recurso",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "lump_football_operations_expense",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "DÉFICIT DO PERÍODO",
+   "lado": null,
+   "page": 1,
+   "section": "Resultados dos Exercícios Findos",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Resultados dos Exercícios Findos",
+   "lado": null,
+   "page": 1,
+   "section": "Demonstração dos Resultados Abrangentes dos Exercícios findos em 31/12/2017 e 31/12/2016",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ]
+   ],
+   "tokens": 1504
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.md",
+ "generado": "2026-10-02T20:58:46.138Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"prestamos y sobregiros bancarios\" (o sus equivalentes en este documento).",
+ "escala": "miles",
+ "escala_evidencia": "Expresados en pesos colombianos",
+ "caja": {
+  "lineas": [
+   510
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   512
+  ],
+  "ninguna": false
+ },
+ "observaciones": "No se incluyó el estado de situación financiera principal; se usan las líneas de la nota 5 de instrumentos financieros (efectivo 19.742; préstamos y sobregiros bancarios 110.000). El documento solo dice 'Expresados en pesos colombianos' sin indicar miles, pero las magnitudes (p.ej. 1.609.817 de utilidad) sugieren que las cifras están en miles de pesos; la escala es dudosa."
+}

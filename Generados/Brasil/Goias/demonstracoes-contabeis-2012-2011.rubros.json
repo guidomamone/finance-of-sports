@@ -1,0 +1,170 @@
+{
+  "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.md",
+  "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2012-2011.pdf",
+  "club": "goias-br",
+  "year": 2012,
+  "generatedAt": "2026-10-03T00:16:10.346Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Bilheterias",
+      "lado": "revenue",
+      "page": 3,
+      "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+      "values": [
+        3.740004
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Direitos de transmissão de TV",
+      "lado": "revenue",
+      "page": 3,
+      "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+      "values": [
+        36.720144
+      ],
+      "glosa": "Derechos de transmisión de TV"
+    },
+    {
+      "label": "Premiação/participações",
+      "lado": "revenue",
+      "page": 3,
+      "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+      "values": [
+        0.94
+      ],
+      "glosa": "Premios / participaciones"
+    },
+    {
+      "label": "Transação de atletas",
+      "lado": "revenue",
+      "page": 3,
+      "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+      "values": [
+        4.72165
+      ],
+      "glosa": "Transferencia de futbolistas"
+    },
+    {
+      "label": "Patrocínio/ publicidade/propaganda",
+      "lado": "revenue",
+      "page": 3,
+      "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+      "values": [
+        0.948071
+      ],
+      "glosa": "Patrocinio / publicidad / propaganda"
+    },
+    {
+      "label": "Mensalidades",
+      "lado": "revenue",
+      "page": 3,
+      "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+      "values": [
+        3.324434
+      ],
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Jogos lotéricos",
+      "lado": "revenue",
+      "page": 3,
+      "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+      "values": [
+        1.947704
+      ],
+      "glosa": "Juegos de lotería"
+    },
+    {
+      "label": "Receitas patrimoniais",
+      "lado": "revenue",
+      "page": 3,
+      "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+      "values": [
+        0.074509
+      ],
+      "glosa": "Ingresos patrimoniales"
+    },
+    {
+      "label": "Outras receitas",
+      "lado": "revenue",
+      "page": 3,
+      "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+      "values": [
+        0.708595
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "(-) Deduções da receita",
+      "lado": "revenue",
+      "page": 3,
+      "section": "nota que desglosa \"RECEITAS LÍQUIDAS (nota 19)\"",
+      "values": [
+        -4.386347
+      ],
+      "glosa": "(-) Deducciones de ingresos"
+    },
+    {
+      "label": "Despesas com futebol",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        35.830361
+      ],
+      "glosa": "Gastos de fútbol"
+    },
+    {
+      "label": "Despesas administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.147616
+      ],
+      "glosa": "Gastos administrativos"
+    },
+    {
+      "label": "Materiais",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.558845
+      ],
+      "glosa": "Materiales"
+    },
+    {
+      "label": "Serviços de terceiros",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.880989
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Despesas tributárias",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.450007
+      ],
+      "glosa": "Gastos tributarios"
+    },
+    {
+      "label": "Despesas gerais",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3.096477
+      ],
+      "glosa": "Gastos generales"
+    }
+  ]
+}

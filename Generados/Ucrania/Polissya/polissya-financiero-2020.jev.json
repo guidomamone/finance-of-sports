@@ -1,0 +1,996 @@
+{
+ "md": "Clubes/Ucrania/Polissya/polissya-financiero-2020.md",
+ "generatedAt": "2026-09-30T19:15:53.736Z",
+ "rubrosHuella": "c231baeecefd4ea4c608b54f4f2186c1ef601340",
+ "rubros": [
+  {
+   "label": "Чисті зароблені страхові премії",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "wages_squad",
+     0.04
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1540
+  },
+  {
+   "label": "Собівартість реалізованої продукції (товарів, робіт, послуг)",
+   "lado": "expense",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1148
+  },
+  {
+   "label": "Чистий дохід від реалізації продукції (товарів, робіт, послуг)",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1164
+  },
+  {
+   "label": "зміна частки перестраховиків у резерві незароблених премій",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1580
+  },
+  {
+   "label": "премії підписані, валова сума",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1540
+  },
+  {
+   "label": "Чисті понесені збитки за страховими виплатами",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "exceptional_items",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1541
+  },
+  {
+   "label": "премії, передані у перестрахування",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1545
+  },
+  {
+   "label": "зміна резерву незароблених премій, валова сума",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "wages_squad",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "wages_squad",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1580
+  },
+  {
+   "label": "зміна інших страхових резервів, валова сума",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "other_income",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1561
+  },
+  {
+   "label": "дохід від первісного визнання біологічних активів і сільськогосподарської продукції",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1148
+  },
+  {
+   "label": "дохід від використання коштів, вивільнених від оподаткування",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1128
+  },
+  {
+   "label": "Дохід (витрати) від зміни інших страхових резервів",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1559
+  },
+  {
+   "label": "Інші операційні доходи",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "зміна частки перестраховиків в інших страхових резервах",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "other_income",
+     0.35000000000000003
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1588
+  },
+  {
+   "label": "Дохід (витрати) від зміни у резервах довгострокових зобов'язань",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1578
+  },
+  {
+   "label": "Адміністративні витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Витрати на збут",
+   "lado": "expense",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Доход від участі в капіталі",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1106
+  },
+  {
+   "label": "Інші доходи",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Фінансові витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Інші фінансові доходи",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "витрати від первісного визнання біологічних активів і сільськогосподарської продукції",
+   "lado": "expense",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1137
+  },
+  {
+   "label": "Інші операційні витрати",
+   "lado": "expense",
+   "page": 4,
+   "section": "## III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.94
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Втрати від участі в капіталі",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1572
+  },
+  {
+   "label": "Інші витрати",
+   "lado": "expense",
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Прибуток (збиток) від впливу інфляції на монетарні статті",
+   "lado": null,
+   "page": 3,
+   "section": "Рік 2020 / р. / Форма N2 Код за ДКУД / 1801003 / I. ФІНАНСОВІ РЕЗУЛЬТАТИ",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "exceptional_items",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1568
+  },
+  {
+   "label": "Прибуток (збиток) від припиненої діяльності після оподаткування",
+   "lado": null,
+   "page": 4,
+   "section": "Продовження додатка 2",
+   "choice": "other_income",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "exceptional_items",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1518
+  },
+  {
+   "label": "Дооцінка (уцінка) фінансових інструментів",
+   "lado": "revenue",
+   "page": 4,
+   "section": "## II. СУКУПНИЙ ДОХІД",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Дооцінка (уцінка) необоротних активів",
+   "lado": "revenue",
+   "page": 4,
+   "section": "## II. СУКУПНИЙ ДОХІД",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1114
+  },
+  {
+   "label": "Накопичені курсові різниці",
+   "lado": "revenue",
+   "page": 4,
+   "section": "## II. СУКУПНИЙ ДОХІД",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 862
+  },
+  {
+   "label": "Витрати (дохід) з податку на прибуток",
+   "lado": "expense",
+   "page": 4,
+   "section": "Продовження додатка 2",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "Частка іншого сукупного доходу асоційованих та спільних підприємств",
+   "lado": "revenue",
+   "page": 4,
+   "section": "## II. СУКУПНИЙ ДОХІД",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1102
+  },
+  {
+   "label": "Податок на прибуток, пов'язаний з іншим сукупним доходом",
+   "lado": "expense",
+   "page": 4,
+   "section": "## II. СУКУПНИЙ ДОХІД",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "exceptional_items",
+     0.07
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Сукупний дохід (сума рядків 2350, 2355 та 2460)",
+   "lado": "revenue",
+   "page": 4,
+   "section": "## II. СУКУПНИЙ ДОХІД",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.62
+    ],
+    [
+     "lump_football_operations",
+     0.38
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1163
+  },
+  {
+   "label": "Витрати на оплату праці",
+   "lado": "expense",
+   "page": 4,
+   "section": "## III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "choice": "wages_squad",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "wages_squad",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Матеріальні витрати",
+   "lado": "expense",
+   "page": 4,
+   "section": "## III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Амортизація",
+   "lado": "expense",
+   "page": 4,
+   "section": "## III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "choice": "depreciation",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "depreciation",
+     0.68
+    ],
+    [
+     "other_amortisation",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Відрахування на соціальні заходи",
+   "lado": "expense",
+   "page": 4,
+   "section": "## III. ЕЛЕМЕНТИ ОПЕРАЦІЙНИХ ВИТРАТ",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.43
+    ],
+    [
+     "wages_squad",
+     0.4
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Скоригована середньорічна кількість простих акцій",
+   "lado": null,
+   "page": 4,
+   "section": "## IV. РОЗРАХУНОК ПОКАЗНИКІВ ПРИБУТКОВОСТІ АКЦІЙ",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1419
+  },
+  {
+   "label": "Скоригований чистий прибуток (збиток) на одну просту акцію",
+   "lado": null,
+   "page": 4,
+   "section": "## IV. РОЗРАХУНОК ПОКАЗНИКІВ ПРИБУТКОВОСТІ АКЦІЙ",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "other_income",
+     0.35
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1598
+  },
+  {
+   "label": "Середньорічна кількість простих акцій",
+   "lado": null,
+   "page": 4,
+   "section": "## IV. РОЗРАХУНОК ПОКАЗНИКІВ ПРИБУТКОВОСТІ АКЦІЙ",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1406
+  },
+  {
+   "label": "Чистий прибуток (збиток) на одну просту акцію",
+   "lado": null,
+   "page": 4,
+   "section": "## IV. РОЗРАХУНОК ПОКАЗНИКІВ ПРИБУТКОВОСТІ АКЦІЙ",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1585
+  },
+  {
+   "label": "Дивіденди на одну просту акцію",
+   "lado": null,
+   "page": 4,
+   "section": "## IV. РОЗРАХУНОК ПОКАЗНИКІВ ПРИБУТКОВОСТІ АКЦІЙ",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1522
+  }
+ ]
+}

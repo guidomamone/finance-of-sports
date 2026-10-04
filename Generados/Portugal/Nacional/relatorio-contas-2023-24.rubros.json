@@ -1,0 +1,537 @@
+{
+ "md": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.md",
+ "pdf": "Clubes/Portugal/Nacional/relatorio-contas-2023-24.pdf",
+ "club": "nacional",
+ "year": 2024,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:07:36.223Z",
+ "tieOuts": {
+  "cierran": 34,
+  "noCierran": 2
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "30 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 44,
+  "notasUsadas": [
+   "31"
+  ]
+ },
+ "ladoConocido": 38,
+ "rubros": [
+  {
+   "label": "Vendas e serviços prestados",
+   "lado": "revenue",
+   "page": 4,
+   "section": "# Demonstração dos Resultados",
+   "values": [
+    0.842638
+   ],
+   "origen": "estado 6",
+   "glosa": "Ventas y prestaciones de servicios"
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 4,
+   "section": "# Demonstração dos Resultados",
+   "values": [
+    0.880088
+   ],
+   "origen": "estado 6",
+   "glosa": "Subvenciones a la explotación"
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": null,
+   "page": 4,
+   "section": "# Demonstração dos Resultados",
+   "values": [
+    -1.229127
+   ],
+   "origen": "estado 6",
+   "glosa": "Servicios exteriores"
+  },
+  {
+   "label": "Remunerações órgãos sociais",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 18. Gastos com o pessoal",
+   "values": [
+    0.1212
+   ],
+   "origen": "nota 31 (ancla 6)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Remuneraciones de los órganos de gobierno"
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "lado": "expense",
+   "page": 4,
+   "section": "# Demonstração dos Resultados",
+   "values": [
+    -2.446879
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true,
+   "glosa": "Gastos de personal"
+  },
+  {
+   "label": "Remunerações do Pessoal - Funcionários",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 18. Gastos com o pessoal",
+   "values": [
+    0.309052
+   ],
+   "origen": "nota 31 (ancla 6)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Remuneraciones del personal - Empleados"
+  },
+  {
+   "label": "Remunerações do Pessoal - Jogadores",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 18. Gastos com o pessoal",
+   "values": [
+    1.474667
+   ],
+   "origen": "nota 31 (ancla 6)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Remuneraciones del personal - Jugadores"
+  },
+  {
+   "label": "Remunerações do Pessoal - Treinadores",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 18. Gastos com o pessoal",
+   "values": [
+    0.20989
+   ],
+   "origen": "nota 31 (ancla 6)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Remuneraciones del personal - Entrenadores"
+  },
+  {
+   "label": "Enc. s/rem.-orgãos sociais",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 18. Gastos com o pessoal",
+   "values": [
+    0.028785
+   ],
+   "origen": "nota 31 (ancla 6)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Cargas s/remun. - órganos de gobierno"
+  },
+  {
+   "label": "Enc. s/rem.-pessoal - Funcionários",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 18. Gastos com o pessoal",
+   "values": [
+    0.058185
+   ],
+   "origen": "nota 31 (ancla 6)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Cargas s/remun. personal - Empleados"
+  },
+  {
+   "label": "Enc. s/rem.-pessoal - Treinadores",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 18. Gastos com o pessoal",
+   "values": [
+    0.039516
+   ],
+   "origen": "nota 31 (ancla 6)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Cargas s/remun. personal - Entrenadores"
+  },
+  {
+   "label": "Enc. s/rem.-pessoal - Jogadores",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 18. Gastos com o pessoal",
+   "values": [
+    0.041713
+   ],
+   "origen": "nota 31 (ancla 6)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Cargas s/remun. personal - Jugadores"
+  },
+  {
+   "label": "Seg.ac.trb - pessoal",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 18. Gastos com o pessoal",
+   "values": [
+    0.00018
+   ],
+   "origen": "nota 31 (ancla 6)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Seguro de accidentes de trabajo - personal"
+  },
+  {
+   "label": "Seg.ac.trb - Jogadores",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 18. Gastos com o pessoal",
+   "values": [
+    0.125546
+   ],
+   "origen": "nota 31 (ancla 6)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Seguro de accidentes de trabajo - Jugadores"
+  },
+  {
+   "label": "Outros Custos com Pessoal - Jogadores",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 18. Gastos com o pessoal",
+   "values": [
+    0.03551
+   ],
+   "origen": "nota 31 (ancla 6)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Otros costes de personal - Jugadores"
+  },
+  {
+   "label": "Outros Custos com Pessoal - Outros",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 18. Gastos com o pessoal",
+   "values": [
+    0.001117
+   ],
+   "origen": "nota 31 (ancla 6)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Otros costes de personal - Otros"
+  },
+  {
+   "label": "Outros Custos com Pessoal - Outros",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 18. Gastos com o pessoal",
+   "values": [
+    0.001518
+   ],
+   "origen": "nota 31 (ancla 6)",
+   "ancla": "Gastos com o pessoal",
+   "glosa": "Otros costes de personal - Otros"
+  },
+  {
+   "label": "Provisões (aumentos/reduções)",
+   "lado": null,
+   "page": 4,
+   "section": "# Demonstração dos Resultados",
+   "values": [
+    -0.422414
+   ],
+   "origen": "estado 6",
+   "glosa": "Provisiones (aumentos/reducciones)"
+  },
+  {
+   "label": "Outros rendimentos",
+   "lado": "revenue",
+   "page": 4,
+   "section": "# Demonstração dos Resultados",
+   "values": [
+    1.407889
+   ],
+   "origen": "estado 6",
+   "glosa": "Otros ingresos"
+  },
+  {
+   "label": "Outros gastos",
+   "lado": "expense",
+   "page": 4,
+   "section": "# Demonstração dos Resultados",
+   "values": [
+    -0.081732
+   ],
+   "origen": "estado 6",
+   "glosa": "Otros gastos"
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "lado": "expense",
+   "page": 4,
+   "section": "# Demonstração dos Resultados",
+   "values": [
+    -0.08125
+   ],
+   "origen": "estado 6",
+   "glosa": "Gastos/reversiones de amortización y depreciación"
+  },
+  {
+   "label": "Juros e gastos similares suportados",
+   "lado": "expense",
+   "page": 4,
+   "section": "# Demonstração dos Resultados",
+   "values": [
+    -0.003882
+   ],
+   "origen": "estado 6",
+   "glosa": "Intereses y gastos asimilados soportados"
+  },
+  {
+   "label": "Imposto sobre rendimento do período",
+   "lado": "expense",
+   "page": 4,
+   "section": "# Demonstração dos Resultados",
+   "values": [
+    0.162097
+   ],
+   "origen": "estado 6",
+   "glosa": "Impuesto sobre beneficios del período"
+  },
+  {
+   "label": "Encargos com descontos de letras",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 19. Outros gastos e perdas",
+   "values": [
+    10.81
+   ],
+   "origen": "estado 32",
+   "glosa": "Gastos por descuento de efectos"
+  },
+  {
+   "label": "Correções relativas a períodos anteriores",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 19. Outros gastos e perdas",
+   "values": [
+    16.971
+   ],
+   "origen": "estado 32",
+   "glosa": "Ajustes de ejercicios anteriores"
+  },
+  {
+   "label": "Quotizações",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 19. Outros gastos e perdas",
+   "values": [
+    2.262
+   ],
+   "origen": "estado 32",
+   "glosa": "Cuotas de socios"
+  },
+  {
+   "label": "Transferências de jogadores",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 19. Outros gastos e perdas",
+   "values": [
+    10.5
+   ],
+   "origen": "estado 32",
+   "glosa": "Traspasos de jugadores"
+  },
+  {
+   "label": "Custas, tribunal, etc",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 19. Outros gastos e perdas",
+   "values": [
+    12.307
+   ],
+   "origen": "estado 32",
+   "glosa": "Costas judiciales, litigios, etc."
+  },
+  {
+   "label": "Outros não especificados",
+   "lado": "expense",
+   "page": 24,
+   "section": "# 19. Outros gastos e perdas",
+   "values": [
+    28.882
+   ],
+   "origen": "estado 32",
+   "glosa": "Otros no especificados"
+  },
+  {
+   "label": "Posição no início do período: 01.07.2022",
+   "lado": null,
+   "page": 6,
+   "section": "# Demonstração das Alterações dos Capitais Próprios",
+   "values": [
+    -1315.153
+   ],
+   "origen": "estado 8",
+   "glosa": "Saldo al inicio del período: 01.07.2022"
+  },
+  {
+   "label": "Outras alterações",
+   "lado": null,
+   "page": 6,
+   "section": "# Demonstração das Alterações dos Capitais Próprios",
+   "values": [
+    -14.908
+   ],
+   "origen": "estado 8",
+   "glosa": "Otras variaciones"
+  },
+  {
+   "label": "Posição no fim do período: 30.06.2023",
+   "lado": null,
+   "page": 6,
+   "section": "# Demonstração das Alterações dos Capitais Próprios",
+   "values": [
+    -1769.358
+   ],
+   "origen": "estado 8",
+   "glosa": "Saldo al cierre del período: 30.06.2023"
+  },
+  {
+   "label": "Posição no início do período: 01.07.2023",
+   "lado": null,
+   "page": 6,
+   "section": "",
+   "values": [
+    -1769.358
+   ],
+   "origen": "estado 9",
+   "glosa": "Saldo al inicio del período: 01.07.2023"
+  },
+  {
+   "label": "Posição no fim do período: 31.12.2023",
+   "lado": null,
+   "page": 6,
+   "section": "",
+   "values": [
+    -2187.887
+   ],
+   "origen": "estado 9",
+   "glosa": "Saldo al cierre del período: 31.12.2023"
+  },
+  {
+   "label": "Rendimentos suplementares",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# 15.2 Outros Rendimentos e Ganhos",
+   "values": [
+    11.557
+   ],
+   "origen": "estado 28",
+   "glosa": "Ingresos accesorios"
+  },
+  {
+   "label": "Prémios - LPFP Apostas Desportivas Placard",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# 15.2 Outros Rendimentos e Ganhos",
+   "values": [
+    463.426
+   ],
+   "origen": "estado 28",
+   "glosa": "Premios - LPFP Apuestas Deportivas Placard"
+  },
+  {
+   "label": "Prémios Federação Portuguesa de Futebol",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# 15.2 Outros Rendimentos e Ganhos",
+   "values": [
+    422.276
+   ],
+   "origen": "estado 28",
+   "glosa": "Premios Federación Portuguesa de Fútbol"
+  },
+  {
+   "label": "Prémios - Mecanismo de Solidariedade",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# 15.2 Outros Rendimentos e Ganhos",
+   "values": [
+    0.564
+   ],
+   "origen": "estado 28",
+   "glosa": "Premios - Mecanismo de solidaridad"
+  },
+  {
+   "label": "Correções relativas a períodos anteriores",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# 15.2 Outros Rendimentos e Ganhos",
+   "values": [
+    229.792
+   ],
+   "origen": "estado 28",
+   "glosa": "Ajustes de ejercicios anteriores"
+  },
+  {
+   "label": "Excesso da estimativa para impostos",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# 15.2 Outros Rendimentos e Ganhos",
+   "values": [
+    0.604
+   ],
+   "origen": "estado 28",
+   "glosa": "Exceso de estimación para impuestos"
+  },
+  {
+   "label": "Comparticipação tarifa residente",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# 15.2 Outros Rendimentos e Ganhos",
+   "values": [
+    242.545
+   ],
+   "origen": "estado 28",
+   "glosa": "Bonificación tarifa de residente"
+  },
+  {
+   "label": "Outros não especificados",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# 15.2 Outros Rendimentos e Ganhos",
+   "values": [
+    37.125
+   ],
+   "origen": "estado 28",
+   "glosa": "Otros no especificados"
+  },
+  {
+   "label": "Bilhetes, Camarotes",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# 15. Rédito / # 15.1 Vendas e Prestações de Serviços",
+   "values": [
+    48.23
+   ],
+   "origen": "estado 27",
+   "glosa": "Taquilla y palcos"
+  },
+  {
+   "label": "Publicidade",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# 15. Rédito / # 15.1 Vendas e Prestações de Serviços",
+   "values": [
+    294.408
+   ],
+   "origen": "estado 27",
+   "glosa": "Publicidad"
+  },
+  {
+   "label": "Direitos Televisivos",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# 15. Rédito / # 15.1 Vendas e Prestações de Serviços",
+   "values": [
+    500
+   ],
+   "origen": "estado 27",
+   "glosa": "Derechos televisivos"
+  }
+ ]
+}

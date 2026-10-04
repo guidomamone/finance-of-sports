@@ -1,0 +1,121 @@
+{
+ "md": "Clubes/Bélgica/Sint-Truiden/jaarrekening-2013-06-30-individual.md",
+ "generatedAt": "2026-09-30T04:27:04.363Z",
+ "rubros": [
+  {
+   "label": "631/4",
+   "lado": null,
+   "page": 7,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.21,
+   "top3": [
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "other_income",
+     0.15
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "uitrusting* L NG 20,00 — 33,33 20,00 —",
+   "lado": "expense",
+   "page": 18,
+   "section": "OPRICHTINGSKOSTEN / HERSTRUCTURERINGSKOSTEN / IMMATERIELE VASTE ACTIVA / MATERIELE VASTE ACTIVA / AFSCHRIJVINGEN GEBOEKT TIJDENS HET BOEKJAAR :",
+   "choice": "depreciation",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "depreciation",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 866
+  },
+  {
+   "label": "635/7",
+   "lado": null,
+   "page": 7,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.25,
+   "top3": [
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "5. Rollend materieel* L NG 20,00 - 33,33 20,00 -",
+   "lado": "expense",
+   "page": 18,
+   "section": "OPRICHTINGSKOSTEN / HERSTRUCTURERINGSKOSTEN / IMMATERIELE VASTE ACTIVA / MATERIELE VASTE ACTIVA / AFSCHRIJVINGEN GEBOEKT TIJDENS HET BOEKJAAR :",
+   "choice": "depreciation",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "depreciation",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 869
+  },
+  {
+   "label": "640/8",
+   "lado": null,
+   "page": 7,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.19,
+   "top3": [
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "other_income",
+     0.18
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1259
+  }
+ ]
+}

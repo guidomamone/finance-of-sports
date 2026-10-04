@@ -1,0 +1,774 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2015.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2015.md",
+ "generado": "2026-10-03T23:03:05.796Z",
+ "estado": "ok",
+ "clubId": "novorizontino-br",
+ "year": 2015,
+ "escala": {
+  "valor": "no se sabe",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/balanco-2015.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: balancete con la Demonstração do Resultado completa; la lectura 5 cierra exacto con el PREJUÍZO impreso",
+   "evidencia": "Versión 414-415",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna 2014"
+  },
+  {
+   "nombre": "documento del año 2016",
+   "ok": true,
+   "detalle": "ingresos de 2015: 0.746574 en este documento y 0.747 en balanco-2016.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2014",
+   "ok": null,
+   "detalle": "no se puede comparar: este documento no trae la columna del año anterior"
+  }
+ ],
+ "notas": [
+  "resultado impreso fuera de los bloques (escalón 2): \"**PREJUIZO: 5.598.142,50**\" (L158); cierra exacto",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar ya contestada para el club (escala, \"-\"): aceptar, en balanco-2014-b.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 0.746574,
+  "gastos": 6.315721,
+  "financiero": -0.028996,
+  "impuesto": 0,
+  "resultadoImpreso": -5.598142,
+  "resultadoParaCargar": -5.598142,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "117 3.1.01.01.0009 - DOAÇOES RECEBIDAS",
+   "lado": "ingreso",
+   "M": 0.003576,
+   "pagina": 1,
+   "linea": 19,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "35 3.1.01.01.0004 - LOCAÇÃO DE CADEIRA S/ASSENTOS",
+   "lado": "ingreso",
+   "M": 0.006076,
+   "pagina": 1,
+   "linea": 20,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "33 3.1.01.01.0002 - PATROCINIO EM PLACAS",
+   "lado": "ingreso",
+   "M": 0.004,
+   "pagina": 1,
+   "linea": 21,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "34 3.1.01.01.0003 - PATROCINIO NO ESTÁDIO",
+   "lado": "ingreso",
+   "M": 0.004385,
+   "pagina": 1,
+   "linea": 22,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "32 3.1.01.01.0001 - PATROCINIO NO UNIFORME",
+   "lado": "ingreso",
+   "M": 0.0475,
+   "pagina": 1,
+   "linea": 23,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "37 3.1.01.01.0006 - RECEITAS DO BAR",
+   "lado": "ingreso",
+   "M": 0.002766,
+   "pagina": 1,
+   "linea": 24,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "39 3.1.01.01.0008 - REPASSE DA FEDERAÇÃO",
+   "lado": "ingreso",
+   "M": 0.3002,
+   "pagina": 1,
+   "linea": 25,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "36 3.1.01.01.0005 - VENDAS DE INGRESSOS",
+   "lado": "ingreso",
+   "M": 0.377871,
+   "pagina": 1,
+   "linea": 26,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "225 3.1.04.01.0001 - RECUPERACAO DE DESPESA",
+   "lado": "ingreso",
+   "M": 0.0002,
+   "pagina": 1,
+   "linea": 33,
+   "origen": "estado (lectura 5: hoja con C)"
+  },
+  {
+   "etiqueta": "41 4.1.01.01.0002 - AJUDA DE CUSTO",
+   "lado": "gasto",
+   "M": 0.03938,
+   "pagina": 1,
+   "linea": 38,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "55 4.1.01.01.0016 - ALUGUEL MORADIA COM TECNICA",
+   "lado": "gasto",
+   "M": 0.134271,
+   "pagina": 1,
+   "linea": 39,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "184 4.1.01.01.0031 - ANUIDADE CBF E FEDER.PAULISTA",
+   "lado": "gasto",
+   "M": 0.0242,
+   "pagina": 1,
+   "linea": 40,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "207 4.1.01.01.0038 - AUXILIO EDUCACIONAL",
+   "lado": "gasto",
+   "M": 0.00135,
+   "pagina": 1,
+   "linea": 41,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "205 4.1.01.01.0036 - BONIFICACAO/GRATIFICACAO",
+   "lado": "gasto",
+   "M": 0.007214,
+   "pagina": 1,
+   "linea": 42,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "58 4.1.01.01.0019 - CAFE DA MANHA",
+   "lado": "gasto",
+   "M": 0.060356,
+   "pagina": 1,
+   "linea": 43,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "214 4.1.01.01.0039 - CONTRIBUICAO CONFEDERATIVA",
+   "lado": "gasto",
+   "M": 0.000815,
+   "pagina": 1,
+   "linea": 44,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "51 4.1.01.01.0012 - CURSOS E TREINAMENTOS",
+   "lado": "gasto",
+   "M": 0.003241,
+   "pagina": 1,
+   "linea": 45,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "44 4.1.01.01.0005 - DIREITOS DE IMAGEM",
+   "lado": "gasto",
+   "M": 0.940674,
+   "pagina": 1,
+   "linea": 46,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "206 4.1.01.01.0037 - DSR VARIAVEL",
+   "lado": "gasto",
+   "M": 0.002243,
+   "pagina": 1,
+   "linea": 47,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "47 4.1.01.01.0008 - FERIAS E 13° SALARIO",
+   "lado": "gasto",
+   "M": 0.097798,
+   "pagina": 1,
+   "linea": 48,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "46 4.1.01.01.0007 - FGTS",
+   "lado": "gasto",
+   "M": 0.074062,
+   "pagina": 1,
+   "linea": 49,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "204 4.1.01.01.0035 - HORAS EXTRAS",
+   "lado": "gasto",
+   "M": 0.010893,
+   "pagina": 1,
+   "linea": 50,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "87 4.1.01.01.0030 - I.R.R.FONTE S/ FOLHA",
+   "lado": "gasto",
+   "M": 0.000338,
+   "pagina": 1,
+   "linea": 51,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "45 4.1.01.01.0006 - INSS",
+   "lado": "gasto",
+   "M": 0.039575,
+   "pagina": 1,
+   "linea": 52,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "57 4.1.01.01.0018 - LANCHES",
+   "lado": "gasto",
+   "M": 0.040058,
+   "pagina": 1,
+   "linea": 53,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "62 4.1.01.01.0023 - MATERIAIS ESPORTIVOS",
+   "lado": "gasto",
+   "M": 0.080253,
+   "pagina": 1,
+   "linea": 54,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "60 4.1.01.01.0021 - MEDICAMENTOS",
+   "lado": "gasto",
+   "M": 0.028134,
+   "pagina": 1,
+   "linea": 55,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "195 4.1.01.01.0034 - PENSAO ALIMENTICIA",
+   "lado": "gasto",
+   "M": 0.00057,
+   "pagina": 1,
+   "linea": 56,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "186 4.1.01.01.0032 - PIS FOLHA PAGAMENTO",
+   "lado": "gasto",
+   "M": 0.013363,
+   "pagina": 1,
+   "linea": 57,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "42 4.1.01.01.0003 - PREMIAÇOES",
+   "lado": "gasto",
+   "M": 0.11234,
+   "pagina": 1,
+   "linea": 58,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "56 4.1.01.01.0017 - REFEIÇÕES",
+   "lado": "gasto",
+   "M": 0.45301,
+   "pagina": 1,
+   "linea": 59,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "48 4.1.01.01.0009 - RESCISOES E HOMOLOGAÇOES",
+   "lado": "gasto",
+   "M": 0.07267,
+   "pagina": 1,
+   "linea": 60,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "40 4.1.01.01.0001 - SALARIOS",
+   "lado": "gasto",
+   "M": 0.945142,
+   "pagina": 1,
+   "linea": 61,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "52 4.1.01.01.0013 - SEGURO PESSOAL",
+   "lado": "gasto",
+   "M": 0.004458,
+   "pagina": 2,
+   "linea": 79,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "71 4.1.01.01.0025 - SERVIÇOS DE FISIOTERAPIA",
+   "lado": "gasto",
+   "M": 0.06315,
+   "pagina": 2,
+   "linea": 80,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "70 4.1.01.01.0024 - SERVIÇOS E EXAMES MÉDICOS",
+   "lado": "gasto",
+   "M": 0.09552,
+   "pagina": 2,
+   "linea": 81,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "61 4.1.01.01.0022 - SUPLEMENTOS ALIMENTARES",
+   "lado": "gasto",
+   "M": 0.007747,
+   "pagina": 2,
+   "linea": 82,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "89 4.1.01.01.0028 - TAXA DE LIBERAÇÃO DE ATLETAS",
+   "lado": "gasto",
+   "M": 0.00785,
+   "pagina": 2,
+   "linea": 83,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "88 4.1.01.01.0027 - TAXA FED PAULISTA,FAAP,CBF/INS",
+   "lado": "gasto",
+   "M": 0.114554,
+   "pagina": 2,
+   "linea": 84,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "73 5.1.01.01.0008 - ASSESSORIA DE MARKETING",
+   "lado": "gasto",
+   "M": 0.010326,
+   "pagina": 2,
+   "linea": 89,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "76 5.1.01.01.0011 - ASSESSORIA ESPORTIVA",
+   "lado": "gasto",
+   "M": 0.898135,
+   "pagina": 2,
+   "linea": 90,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "75 5.1.01.01.0010 - ASSESSORIA JURÍDICA",
+   "lado": "gasto",
+   "M": 0.064113,
+   "pagina": 2,
+   "linea": 91,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "97 5.1.01.01.0020 - ASSINATURAS E ANUIDADES",
+   "lado": "gasto",
+   "M": 0.000602,
+   "pagina": 2,
+   "linea": 92,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "123 5.1.01.01.0026 - COMBUSTIVEIS E LUBRIFICANTES",
+   "lado": "gasto",
+   "M": 0.068688,
+   "pagina": 2,
+   "linea": 93,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "95 5.1.01.01.0018 - CORREIOS",
+   "lado": "gasto",
+   "M": 0.001716,
+   "pagina": 2,
+   "linea": 94,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "93 5.1.01.01.0017 - DESPESAS CARTORARIAS",
+   "lado": "gasto",
+   "M": 0.000367,
+   "pagina": 2,
+   "linea": 95,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "181 5.1.01.01.0027 - ESTADIAS",
+   "lado": "gasto",
+   "M": 0.019286,
+   "pagina": 2,
+   "linea": 96,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "109 5.1.01.01.0025 - FRETES, CARRETOS E TRANSPORTES",
+   "lado": "gasto",
+   "M": 0.000249,
+   "pagina": 2,
+   "linea": 97,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "72 5.1.01.01.0007 - HONORARIOS CONTABILIDADE",
+   "lado": "gasto",
+   "M": 0.017372,
+   "pagina": 2,
+   "linea": 98,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "192 5.1.01.01.0029 - IMPOSTOS E TAXAS",
+   "lado": "gasto",
+   "M": 0.000705,
+   "pagina": 2,
+   "linea": 99,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "198 5.1.01.01.0032 - IR RETIDO NA FONTE",
+   "lado": "gasto",
+   "M": 0.00591,
+   "pagina": 2,
+   "linea": 100,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "77 5.1.01.01.0012 - MANUTENÇÃO E HOSPEDAGEM SITE",
+   "lado": "gasto",
+   "M": 0.00248,
+   "pagina": 2,
+   "linea": 101,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "65 5.1.01.01.0003 - MATERIAIS DE ESCRITORIO",
+   "lado": "gasto",
+   "M": 0.007049,
+   "pagina": 2,
+   "linea": 102,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "64 5.1.01.01.0002 - MATERIAIS DE HIGIENE E LIMPEZA",
+   "lado": "gasto",
+   "M": 0.015808,
+   "pagina": 2,
+   "linea": 103,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "68 5.1.01.01.0004 - MATERIAIS DIVERSOS",
+   "lado": "gasto",
+   "M": 0.074445,
+   "pagina": 2,
+   "linea": 104,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "63 5.1.01.01.0001 - MATERIAS DE MANUTENÇÃO GERAL",
+   "lado": "gasto",
+   "M": 0.113613,
+   "pagina": 2,
+   "linea": 105,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "69 5.1.01.01.0006 - MOVEIS E UTENS. PEQ VALOR",
+   "lado": "gasto",
+   "M": 0.015545,
+   "pagina": 2,
+   "linea": 106,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "94 5.1.01.01.0016 - MULTAS",
+   "lado": "gasto",
+   "M": 0.006681,
+   "pagina": 2,
+   "linea": 107,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "194 5.1.01.01.0030 - PIS/COFINS/CSLL RETIDO",
+   "lado": "gasto",
+   "M": 0.010774,
+   "pagina": 2,
+   "linea": 108,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "191 5.1.01.01.0028 - PRODUTOS FARMACEUTICOS",
+   "lado": "gasto",
+   "M": 0.003807,
+   "pagina": 2,
+   "linea": 109,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "80 5.1.01.01.0013 - SEGURANÇA PATRIMONIAL",
+   "lado": "gasto",
+   "M": 0.034582,
+   "pagina": 2,
+   "linea": 110,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "96 5.1.01.01.0019 - TELEFONE",
+   "lado": "gasto",
+   "M": 0.03776,
+   "pagina": 2,
+   "linea": 111,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "196 5.1.01.01.0031 - VIDEO OBSERVER",
+   "lado": "gasto",
+   "M": 0.008224,
+   "pagina": 2,
+   "linea": 112,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "101 5.1.02.02.0013 - ALUGUEL DE ACADEMIA",
+   "lado": "gasto",
+   "M": 0.0005,
+   "pagina": 2,
+   "linea": 115,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "102 5.1.02.02.0014 - DESPESAS COM JOGOS",
+   "lado": "gasto",
+   "M": 0.068116,
+   "pagina": 2,
+   "linea": 116,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "103 5.1.02.02.0015 - DESPESAS DIVERSAS",
+   "lado": "gasto",
+   "M": 0.011761,
+   "pagina": 2,
+   "linea": 117,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "98 5.1.02.02.0010 - ENERGIA ELETRICA",
+   "lado": "gasto",
+   "M": 0.111284,
+   "pagina": 2,
+   "linea": 118,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "190 5.1.02.02.0021 - INTERNET / TV A CABO",
+   "lado": "gasto",
+   "M": 0.021866,
+   "pagina": 2,
+   "linea": 119,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "83 5.1.02.02.0004 - LAVANDERIA",
+   "lado": "gasto",
+   "M": 0.0984,
+   "pagina": 2,
+   "linea": 120,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "187 5.1.02.02.0018 - MANUTENCAO DE VEICULOS",
+   "lado": "gasto",
+   "M": 0.007875,
+   "pagina": 2,
+   "linea": 121,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "188 5.1.02.02.0019 - MANUTENCAO DO GRAMADO",
+   "lado": "gasto",
+   "M": 0.561236,
+   "pagina": 2,
+   "linea": 122,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "78 5.1.02.02.0002 - MANUTENÇAO GERAL",
+   "lado": "gasto",
+   "M": 0.168941,
+   "pagina": 2,
+   "linea": 123,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "84 5.1.02.02.0005 - PINTURA DE PLACAS",
+   "lado": "gasto",
+   "M": 0.028167,
+   "pagina": 2,
+   "linea": 124,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "79 5.1.02.02.0003 - SEGURANÇA E POLICIAMENTO JOGOS",
+   "lado": "gasto",
+   "M": 0.069379,
+   "pagina": 2,
+   "linea": 125,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "197 5.1.02.02.0022 - SERV.ALMOXARIFADO E ROUPARIA",
+   "lado": "gasto",
+   "M": 0.0061,
+   "pagina": 3,
+   "linea": 143,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "189 5.1.02.02.0020 - SERVICO DE DEDETIZACAO",
+   "lado": "gasto",
+   "M": 0.00336,
+   "pagina": 3,
+   "linea": 144,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "90 5.1.02.02.0007 - TAXA DE ARBITRAGEM",
+   "lado": "gasto",
+   "M": 0.029848,
+   "pagina": 3,
+   "linea": 145,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "91 5.1.02.02.0008 - TAXA DE VISTORIA DO ESTADIO",
+   "lado": "gasto",
+   "M": 0.008943,
+   "pagina": 3,
+   "linea": 146,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "85 5.1.02.02.0006 - TRANSPORTE DE JOGADORES",
+   "lado": "gasto",
+   "M": 0.04195,
+   "pagina": 3,
+   "linea": 147,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "92 5.1.02.02.0009 - VIAGENS E ESTADIAS",
+   "lado": "gasto",
+   "M": 0.162244,
+   "pagina": 3,
+   "linea": 148,
+   "origen": "estado (lectura 5: hoja con D)"
+  },
+  {
+   "etiqueta": "99 5.1.02.02.0011 - ÁGUA E ESGOTO",
+   "lado": "gasto",
+   "M": 0.022285,
+   "pagina": 3,
+   "linea": 149,
+   "origen": "estado (lectura 5: hoja con D)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "116 3.1.03.01.0002 - DESCONTOS FINANCEIROS",
+   "M": 0.002244,
+   "linea": 29
+  },
+  {
+   "etiqueta": "115 3.1.03.01.0001 - RENDAS DE APLIC FINANCEIRAS",
+   "M": 0.00001,
+   "linea": 30
+  },
+  {
+   "etiqueta": "114 5.1.04.01.0005 - DESCONTOS CONCEDIDOS",
+   "M": -0.000469,
+   "linea": 152
+  },
+  {
+   "etiqueta": "110 5.1.04.01.0001 - DESPESAS E TARIFAS BANCARIAS",
+   "M": -0.013029,
+   "linea": 153
+  },
+  {
+   "etiqueta": "112 5.1.04.01.0003 - IOF",
+   "M": -0.003651,
+   "linea": 154
+  },
+  {
+   "etiqueta": "113 5.1.04.01.0004 - IRRF S/ RENDAS DE APLIC FINANC",
+   "M": -0.000002,
+   "linea": 155
+  },
+  {
+   "etiqueta": "111 5.1.04.01.0002 - JUROS E MULTAS",
+   "M": -0.014099,
+   "linea": 156
+  }
+ ],
+ "impuesto": []
+}

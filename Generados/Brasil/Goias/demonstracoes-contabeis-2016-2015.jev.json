@@ -1,0 +1,107 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.md",
+ "generatedAt": "2026-10-03T00:25:04.214Z",
+ "rubrosHuella": "3cdee609e857dabdcdc9e4ef46b4a6b437cda094",
+ "rubros": [
+  {
+   "label": "Outras receitas e despesas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas gerais (nota 19)",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "RECEITA LÍQUIDA DAS ATIVIDADES (nota 17)",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.95
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Despesas com futebol profissional e amador (nota 18)",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1061
+  }
+ ]
+}

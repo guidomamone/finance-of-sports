@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/Mirassol/relatorio-auditoria-contabil-2024.md",
+ "generado": "2026-10-02T00:18:14.505Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "totaliza R$ 11.583.747,40",
+ "caja": {
+  "lineas": [
+   132
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "No es un balance formal sino un análisis narrativo; la caja surge del texto (L132). El pasivo no circulante es cero y el circulante solo menciona proveedores e impuestos, pero sin el balance completo no se puede confirmar la ausencia de préstamos."
+}

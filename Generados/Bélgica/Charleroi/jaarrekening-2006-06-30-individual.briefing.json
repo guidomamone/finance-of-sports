@@ -1,0 +1,1020 @@
+{
+  "club": "charleroi-be",
+  "year": 2006,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Charleroi/jaarrekening-2006-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:54:26.660Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 29,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 5,
+      "section": "2. COMPTE DE RESULTATS",
+      "columns": [
+        "",
+        "Codes",
+        "Exercice",
+        "Exercice précédent"
+      ],
+      "rows": [
+        {
+          "rawLabel": "I. Ventes et prestations",
+          "values": [
+            "70/74",
+            "7.267",
+            "5.786"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A. Chiffre d'affaires (annexe XII, A)",
+          "values": [
+            "70",
+            "6.865",
+            "5.496"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Variation des en-cours de fabrication, des produits finis et des commandes en cours d'exécution (augmentation +, réduction -)",
+          "values": [
+            "71",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C. Production immobilisée",
+          "values": [
+            "72",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D. Autres produits d'exploitation (ann. XII, B)",
+          "values": [
+            "74",
+            "402",
+            "290"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Coût des ventes et des prestations (-)",
+          "values": [
+            "60/64",
+            "( 6.352)",
+            "( 6.254)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A. Approvisionnements et marchandises",
+          "values": [
+            "60",
+            "31",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Achats",
+          "values": [
+            "600/8",
+            "74",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Variation des stocks (augmentation -, réduction +)",
+          "values": [
+            "609",
+            "( 43)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Services et biens divers",
+          "values": [
+            "61",
+            "2.644",
+            "2.752"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C. Rémunérations, charges sociales et pensions (ann. XII, C2)",
+          "values": [
+            "62",
+            "3.061",
+            "3.002"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D. Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+          "values": [
+            "630",
+            "249",
+            "273"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "E. Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales (dotations +, reprises -) (ann. XII, D)",
+          "values": [
+            "631/4",
+            "12",
+            "16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "F. Provisions pour risques et charges (dotations +, utilisations et reprises -) (ann. XII, C3 et E)",
+          "values": [
+            "635/7",
+            "119",
+            "144"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "G. Autres charges d'exploitation (ann. XII, F)",
+          "values": [
+            "640/8",
+            "236",
+            "67"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "H. Charges d'exploitation portées à l'actif au titre de frais de restructuration (-)",
+          "values": [
+            "649",
+            "( )",
+            "( )"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Bénéfice d'exploitation (+)",
+          "values": [
+            "70/64",
+            "915",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Perte d'exploitation (-)",
+          "values": [
+            "64/70",
+            "( )",
+            "( 468)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IV. Produits financiers",
+          "values": [
+            "75",
+            "29",
+            "13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A. Produits des immobilisations financières",
+          "values": [
+            "750",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Produits des actifs circulants",
+          "values": [
+            "751",
+            "2",
+            "3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C. Autres produits financiers (ann. XIII, A)",
+          "values": [
+            "752/9",
+            "27",
+            "10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "V. Charges financières (-)",
+          "values": [
+            "65",
+            "( 545)",
+            "( 544)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A. Charges des dettes (ann. XIII, B et C)",
+          "values": [
+            "650",
+            "521",
+            "509"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Réductions de valeur sur actifs circulants autres que ceux visés sub. II.E. (dotations +, reprises -) (ann. XIII, D)",
+          "values": [
+            "651",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C. Autres charges financières (ann. XIII, E)",
+          "values": [
+            "652/9",
+            "24",
+            "35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VI. Bénéfice courant avant impôts (+)",
+          "values": [
+            "70/65",
+            "399",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Perte courante avant impôts (-)",
+          "values": [
+            "65/70",
+            "( )",
+            "( 999)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 10,
+      "section": "IV. ETAT DES IMMOBILISATIONS FINANCIERES (rubrique 28 de l'actif)",
+      "columns": [
+        "",
+        "Codes",
+        "1. Entreprises liées",
+        "2. Entreprises avec un lien de participation",
+        "3. Autres entreprises"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1. PARTICIPATIONS, ACTIONS ET PARTS",
+          "values": [
+            "",
+            "(rubrique 280)",
+            "(rubrique 282)",
+            "(rubrique 284)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "a) VALEUR D'ACQUISITION",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Au terme de l'exercice précédent",
+          "values": [
+            "835",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutations de l'exercice :",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Acquisitions",
+          "values": [
+            "836",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Cessions et retraits (-)",
+          "values": [
+            "837",
+            "( )",
+            "( )",
+            "( )"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Transferts d'une rubrique à une autre (+) (-)",
+          "values": [
+            "838",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Au terme de l'exercice",
+          "values": [
+            "839",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) PLUS-VALUES",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Au terme de l'exercice précédent",
+          "values": [
+            "840",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutations de l'exercice :",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Actées",
+          "values": [
+            "841",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Acquises de tiers",
+          "values": [
+            "842",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Annulées (-)",
+          "values": [
+            "843",
+            "( )",
+            "( )",
+            "( )"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Transférées d'une rubrique à une autre (+) (-)",
+          "values": [
+            "844",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Au terme de l'exercice",
+          "values": [
+            "845",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "c) REDUCTIONS DE VALEUR",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Au terme de l'exercice précédent",
+          "values": [
+            "846",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutations de l'exercice :",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Actées",
+          "values": [
+            "847",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Reprises car excédentaires (-)",
+          "values": [
+            "848",
+            "( )",
+            "( )",
+            "( )"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Acquises de tiers",
+          "values": [
+            "849",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Annulées à la suite de cessions et retraits (-)",
+          "values": [
+            "850",
+            "( )",
+            "( )",
+            "( )"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Transférées d'une rubrique à une autre (+) (-)",
+          "values": [
+            "851",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Au terme de l'exercice",
+          "values": [
+            "852",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "d) MONTANTS NON APPELES",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Au terme de l'exercice précédent",
+          "values": [
+            "853",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutations de l'exercice (+) (-)",
+          "values": [
+            "854",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Au terme de l'exercice",
+          "values": [
+            "855",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE (a) + (b) - (c) - (d)",
+          "values": [
+            "856",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2. CREANCES",
+          "values": [
+            "",
+            "(rubrique 281)",
+            "(rubrique 283)",
+            "(rubrique 285/8)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE PRECEDENT",
+          "values": [
+            "857",
+            "",
+            "",
+            "35"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutations de l'exercice :",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Additions",
+          "values": [
+            "858",
+            "",
+            "",
+            "8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Remboursements (-)",
+          "values": [
+            "859",
+            "( )",
+            "( )",
+            "( 12)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Réductions de valeur actées (-)",
+          "values": [
+            "860",
+            "( )",
+            "( )",
+            "( )"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Réductions de valeur reprises",
+          "values": [
+            "861",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Différences de change (+) (-)",
+          "values": [
+            "862",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": ". Autres (+) (-)",
+          "values": [
+            "863",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE",
+          "values": [
+            "864",
+            "",
+            "",
+            "31"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "REDUCTIONS DE VALEUR CUMULEES SUR CREANCES AU TERME DE L'EXERCICE",
+          "values": [
+            "865",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 28,
+    "results": [
+      {
+        "label": "I. Ventes et prestations",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "I. Ventes et prestations",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "A. Chiffre d'affaires (annexe XII, A)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "lump_football_operations",
+        "matchedLabel": "Chiffre d'affaires",
+        "similarity": 50
+      },
+      {
+        "label": "A. Chiffre d'affaires (annexe XII, A)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "B. Variation des en-cours de fabrication, des produits finis et des commandes en cours d'exécution (augmentation +, réduction -)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "B. Variation des en-cours de fabrication, des produits finis et des commandes en cours d'exécution (augmentation +, réduction -)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "C. Production immobilisée",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "C. Production immobilisée",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "D. Autres produits d'exploitation (ann. XII, B)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Autres produits d'exploitation",
+        "similarity": 60
+      },
+      {
+        "label": "D. Autres produits d'exploitation (ann. XII, B)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "II. Coût des ventes et des prestations (-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "II. Coût des ventes et des prestations (-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "A. Approvisionnements et marchandises",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "A. Approvisionnements et marchandises",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Approvisionnements et marchandises",
+        "similarity": 100
+      },
+      {
+        "label": "1. Achats",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1. Achats",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2. Variation des stocks (augmentation -, réduction +)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2. Variation des stocks (augmentation -, réduction +)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "B. Services et biens divers",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "B. Services et biens divers",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Services et biens divers",
+        "similarity": 100
+      },
+      {
+        "label": "C. Rémunérations, charges sociales et pensions (ann. XII, C2)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "C. Rémunérations, charges sociales et pensions (ann. XII, C2)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Rémunérations, charges sociales et pensions",
+        "similarity": 67
+      },
+      {
+        "label": "D. Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "D. Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "E. Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales (dotations +, reprises -) (ann. XII, D)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "E. Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales (dotations +, reprises -) (ann. XII, D)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "F. Provisions pour risques et charges (dotations +, utilisations et reprises -) (ann. XII, C3 et E)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "F. Provisions pour risques et charges (dotations +, utilisations et reprises -) (ann. XII, C3 et E)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "G. Autres charges d'exploitation (ann. XII, F)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "G. Autres charges d'exploitation (ann. XII, F)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Autres charges d'exploitation",
+        "similarity": 60
+      },
+      {
+        "label": "H. Charges d'exploitation portées à l'actif au titre de frais de restructuration (-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "H. Charges d'exploitation portées à l'actif au titre de frais de restructuration (-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "III. Bénéfice d'exploitation (+)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "III. Bénéfice d'exploitation (+)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Perte d'exploitation (-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Perte d'exploitation (-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IV. Produits financiers",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IV. Produits financiers",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "A. Produits des immobilisations financières",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "A. Produits des immobilisations financières",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "B. Produits des actifs circulants",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "B. Produits des actifs circulants",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "C. Autres produits financiers (ann. XIII, A)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "C. Autres produits financiers (ann. XIII, A)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "V. Charges financières (-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "V. Charges financières (-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "A. Charges des dettes (ann. XIII, B et C)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "A. Charges des dettes (ann. XIII, B et C)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "B. Réductions de valeur sur actifs circulants autres que ceux visés sub. II.E. (dotations +, reprises -) (ann. XIII, D)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "B. Réductions de valeur sur actifs circulants autres que ceux visés sub. II.E. (dotations +, reprises -) (ann. XIII, D)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "C. Autres charges financières (ann. XIII, E)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "C. Autres charges financières (ann. XIII, E)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "VI. Bénéfice courant avant impôts (+)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "VI. Bénéfice courant avant impôts (+)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Perte courante avant impôts (-)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Perte courante avant impôts (-)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Charleroi",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

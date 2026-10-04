@@ -1,0 +1,345 @@
+{
+ "md": "Clubes/Colombia/Alianza FC/estados-financieros-2019.md",
+ "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2019.pdf",
+ "club": "alianza-fc",
+ "year": 2019,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:57:44.604Z",
+ "tieOuts": {
+  "cierran": 38,
+  "noCierran": 2
+ },
+ "warnings": [
+  "1 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 37,
+  "notasUsadas": []
+ },
+ "ladoConocido": 32,
+ "rubros": [
+  {
+   "label": "Gastos de personal",
+   "lado": "expense",
+   "page": 11,
+   "section": "## GASTOS / ### Gastos Operacionales",
+   "values": [
+    1576466.978
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 11,
+   "section": "## GASTOS / ### Gastos Operacionales",
+   "values": [
+    341693.359
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 11,
+   "section": "## GASTOS / ### Gastos Operacionales",
+   "values": [
+    218865.431
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 11,
+   "section": "## GASTOS / ### Gastos Operacionales",
+   "values": [
+    86422.905
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 11,
+   "section": "## GASTOS / ### Gastos Operacionales",
+   "values": [
+    4118.665
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 11,
+   "section": "## GASTOS / ### Gastos Operacionales",
+   "values": [
+    367204.022
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 11,
+   "section": "## GASTOS / ### Gastos Operacionales",
+   "values": [
+    4168.684
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "lado": "expense",
+   "page": 11,
+   "section": "## GASTOS / ### Gastos Operacionales",
+   "values": [
+    44088.745
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Gastos de viaje",
+   "lado": "expense",
+   "page": 11,
+   "section": "## GASTOS / ### Gastos Operacionales",
+   "values": [
+    740264.545
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 11,
+   "section": "## GASTOS / ### Gastos Operacionales",
+   "values": [
+    3079966.145
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 11,
+   "section": "## GASTOS / ### Gastos Operacionales",
+   "values": [
+    31713.23
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Taquilla",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO / ### Ingresos Operacionales",
+   "values": [
+    1071033.5
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Escuelas de Formación Deportiva",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO / ### Ingresos Operacionales",
+   "values": [
+    146197.379
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO / ### Ingresos Operacionales",
+   "values": [
+    988647.059
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Dimayor",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO / ### Ingresos Operacionales",
+   "values": [
+    5316609.739
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Venta Derechos Deportivos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO / ### Ingresos Operacionales",
+   "values": [
+    1111166.125
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Prestamos Derechos Deportivos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO / ### Ingresos Operacionales",
+   "values": [
+    750919.195
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Venta artículos deportivos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## POLÍTICAS CUENTAS DE INGRESO / ### Ingresos Operacionales",
+   "values": [
+    65182.607
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Arrendamiento",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### Ingresos No Operacionales",
+   "values": [
+    28352.857
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Recuperaciones",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### Ingresos No Operacionales",
+   "values": [
+    575098.9
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Federación Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### Ingresos No Operacionales",
+   "values": [
+    286000
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Financieros",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### Ingresos No Operacionales",
+   "values": [
+    486.892
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Subvenciones",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### Ingresos No Operacionales",
+   "values": [
+    85000
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Multas y Recargos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "### Ingresos No Operacionales",
+   "values": [
+    5881.046
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Financieros",
+   "lado": "expense",
+   "page": 11,
+   "section": "### Gastos No Operacionales",
+   "values": [
+    261874.585
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Gastos Extraordinarios",
+   "lado": "expense",
+   "page": 11,
+   "section": "### Gastos No Operacionales",
+   "values": [
+    104109.237
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Gastos Diversos",
+   "lado": "expense",
+   "page": 11,
+   "section": "### Gastos No Operacionales",
+   "values": [
+    88193
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Impuesto de Renta (año anterior)",
+   "lado": "expense",
+   "page": 11,
+   "section": "### Gastos No Operacionales",
+   "values": [
+    237936.303
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Caja",
+   "lado": "revenue",
+   "page": 4,
+   "section": "## Políticas contables para la cuenta de Ingresos / ## ACTIVO / ### Efectivo y equivalentes de efectivo",
+   "values": [
+    1.450573
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Bancos",
+   "lado": "revenue",
+   "page": 4,
+   "section": "## Políticas contables para la cuenta de Ingresos / ## ACTIVO / ### Efectivo y equivalentes de efectivo",
+   "values": [
+    34.036491
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Costos (De Boletería)",
+   "lado": "expense",
+   "page": 11,
+   "section": "### Costos",
+   "values": [
+    52507.714
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Costos (Artículos Deportivos)",
+   "lado": "expense",
+   "page": 11,
+   "section": "### Costos",
+   "values": [
+    38325
+   ],
+   "origen": "estado 20"
+  }
+ ]
+}

@@ -1,0 +1,445 @@
+{
+ "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2016.md",
+ "generatedAt": "2026-09-30T22:48:54.141Z",
+ "rubrosHuella": "75cf1cb2eb3753402eecd62cd9178b5b35f35823",
+ "rubros": [
+  {
+   "label": "Borderó (costos directos)",
+   "lado": "expense",
+   "page": 80,
+   "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "match_organisation_expense",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneraciones",
+   "lado": "expense",
+   "page": 80,
+   "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización de pases",
+   "lado": "expense",
+   "page": 80,
+   "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de venta pases de jugadores",
+   "lado": "expense",
+   "page": 80,
+   "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos de operación",
+   "lado": "expense",
+   "page": 80,
+   "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos financieros",
+   "lado": "expense",
+   "page": 7,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo no amortizado",
+   "lado": "expense",
+   "page": 80,
+   "section": "Al 31 de Diciembre de 2016 y 31 de Diciembre de 2015 el detalle de los costos de venta / de pases de jugadores: / 31.12.2016       31.12.2015 / Costo de Venta Pases Jugadores                         M$               M$",
+   "choice": "player_amortisation",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Indemnización por término anticipado de contrato",
+   "lado": null,
+   "page": 80,
+   "section": "Al 31 de Diciembre de 2016 y 31 de Diciembre de 2015 el detalle de los costos de venta / de pases de jugadores: / 31.12.2016       31.12.2015 / Costo de Venta Pases Jugadores                         M$               M$",
+   "choice": "player_amortisation",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros costos (1)",
+   "lado": "expense",
+   "page": 80,
+   "section": "Al 31 de Diciembre de 2016 y 31 de Diciembre de 2015 el detalle de los costos de venta / de pases de jugadores: / 31.12.2016       31.12.2015 / Costo de Venta Pases Jugadores                         M$               M$",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR EL PERIODO DE 1 DE ENERO AL 31 DE DICIEMBRE DE 2016 Y 2015 (RE-EXPRESADO)",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Pérdida Tributaria",
+   "lado": "revenue",
+   "page": 70,
+   "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 948
+  },
+  {
+   "label": "Provisión deudores incobrables",
+   "lado": "revenue",
+   "page": 70,
+   "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Total de activos no corrientes",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Activos no corrientes o grupos de activos / 106.378         43.722         30.500 / para su disposición clasificados como / mantenidos para la venta / Activos no corrientes",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.94
+    ],
+    [
+     "player_sales",
+     0.04
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1098
+  },
+  {
+   "label": "Propiedades, Planta y Equipo 2.965.012 3.435.931 0 0 0",
+   "lado": "revenue",
+   "page": 83,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "stadium_other",
+     0.05
+    ]
+   ],
+   "tokens": 979
+  },
+  {
+   "label": "Activos intangibles distintos de la plusvalía 13.965.102 10.916.296 0 0 0",
+   "lado": "revenue",
+   "page": 83,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "player_sales",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 959
+  },
+  {
+   "label": "Otros activos financieros no corrientes 9",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Activos no corrientes o grupos de activos / 106.378         43.722         30.500 / para su disposición clasificados como / mantenidos para la venta / Activos no corrientes",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Concesión",
+   "lado": "revenue",
+   "page": 22,
+   "section": "Activo Disponible para la venta                          -200                  0",
+   "choice": "stadium_other",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Pago Deuda Tesorería",
+   "lado": "revenue",
+   "page": 22,
+   "section": "Activo Disponible para la venta                          -200                  0",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Borderó",
+   "lado": "revenue",
+   "page": 79,
+   "section": "21. INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 79,
+   "section": "21. INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos de T.V.",
+   "lado": "revenue",
+   "page": 79,
+   "section": "21. INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "jugadores",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos por transferencias de pases de",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos varios",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos por transferencias de pases de",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros Activos no financieros no corrientes 953.936 1.002.856 0 0 0",
+   "lado": "revenue",
+   "page": 83,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Ingresos percibidos por adelantados",
+   "lado": "revenue",
+   "page": 70,
+   "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "season_tickets",
+     0.23
+    ],
+    [
+     "member_dues",
+     0.06
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Provisión reposición Propiedad, Planta y Equipo",
+   "lado": "revenue",
+   "page": 70,
+   "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1108
+  },
+  {
+   "label": "Propiedad, Planta y Equipo",
+   "lado": "revenue",
+   "page": 70,
+   "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 975
+  },
+  {
+   "label": "Pases de Jugadores",
+   "lado": "revenue",
+   "page": 70,
+   "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+   "choice": "player_sales",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "player_sales",
+     0.89
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Provisión vacaciones",
+   "lado": "revenue",
+   "page": 70,
+   "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "other_sports",
+     0.11
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Deuda de Tesorería",
+   "lado": "revenue",
+   "page": 70,
+   "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 892
+  }
+ ]
+}

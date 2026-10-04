@@ -1,0 +1,154 @@
+{
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.md",
+ "generatedAt": "2026-10-03T13:26:02.284Z",
+ "rubrosHuella": "bfca46ad4e21f4f89adcc7fd83702b8b6752ff7d",
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 3,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": "revenue",
+   "page": 3,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "match_organisation_expense",
+     0.09
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Λοιπά έξοδα και ζημιές",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 3,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1030
+  }
+ ]
+}

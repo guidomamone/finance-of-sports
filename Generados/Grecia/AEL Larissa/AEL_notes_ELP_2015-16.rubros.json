@@ -1,0 +1,80 @@
+{
+  "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.md",
+  "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.pdf",
+  "club": "aellarissa-gr",
+  "year": 2016,
+  "generatedAt": "2026-10-03T19:55:48.294Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Κύκλος εργασιών (καθαρός)",
+      "lado": "revenue",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.596069
+      ],
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Λοιπά συνήθη έσοδα",
+      "lado": "revenue",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.374833
+      ],
+      "glosa": "Otros ingresos ordinarios"
+    },
+    {
+      "label": "Λοιπά έσοδα και κέρδη",
+      "lado": "revenue",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.030362
+      ],
+      "glosa": "Otros ingresos y ganancias"
+    },
+    {
+      "label": "Κόστος πωλήσεων",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.726277
+      ],
+      "glosa": "Coste de ventas"
+    },
+    {
+      "label": "Έξοδα διοίκησης",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.300528
+      ],
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Έξοδα διάθεσης",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.225396
+      ],
+      "glosa": "Gastos de distribución"
+    },
+    {
+      "label": "Λοιπά έξοδα και ζημιές",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.099591
+      ],
+      "glosa": "Otros gastos y pérdidas"
+    }
+  ]
+}

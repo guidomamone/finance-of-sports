@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/balanco-2013.md",
+ "generado": "2026-10-03T03:41:59.298Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "UM MILHAO E SEISCENTOS E SETENTA E SEIS MIL E QUATROCENTOS E SESSENTA",
+ "caja": {
+  "lineas": [
+   16
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   68
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las disponibilidades (L16) incluyen 1.102.609,54 en cuenta bancaria con restricción (convenio gubernamental). La deuda (L68) corresponde a mutuos con I-9 Sports Ltda y una persona física, no con bancos; se excluyen los recursos públicos de convenio (L72). La escala se infiere de los valores en reales con centavos."
+}

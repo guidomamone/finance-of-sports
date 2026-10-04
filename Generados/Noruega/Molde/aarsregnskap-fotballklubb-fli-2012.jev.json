@@ -1,0 +1,1248 @@
+{
+ "md": "Clubes/Noruega/Molde/aarsregnskap-fotballklubb-fli-2012.md",
+ "generatedAt": "2026-09-30T04:30:49.457Z",
+ "rubros": [
+  {
+   "label": "Salgsinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "lump_football_operations",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.73
+    ],
+    [
+     "other_income",
+     0.14
+    ],
+    [
+     "matchday_competition",
+     0.07
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Driftsresultat",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "depreciation",
+     0.75
+    ],
+    [
+     "player_amortisation",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1697
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Netto finans",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1484
+  },
+  {
+   "label": "Inntekter E-Cup",
+   "lado": null,
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Forhold til Molde Fotball AS / ## Forholdet til NoRo Fotball AS og Gjelsten Invest II AS / ### Note 2 Kamp- og billettinntekter",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "competition_bonus",
+     0.27
+    ],
+    [
+     "matchday_competition",
+     0.21
+    ]
+   ],
+   "tokens": 1374
+  },
+  {
+   "label": "Årsresultat",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1506
+  },
+  {
+   "label": "Inntekter NM Cup",
+   "lado": null,
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Forhold til Molde Fotball AS / ## Forholdet til NoRo Fotball AS og Gjelsten Invest II AS / ### Note 2 Kamp- og billettinntekter",
+   "choice": "competition_bonus",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "competition_bonus",
+     0.45
+    ],
+    [
+     "matchday_competition",
+     0.38
+    ],
+    [
+     "other_income",
+     0.17
+    ]
+   ],
+   "tokens": 1373
+  },
+  {
+   "label": "Ordinært resultat etter skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "MOLDE FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.47000000000000003
+    ],
+    [
+     "other_income",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Oppgjør NM Cup",
+   "lado": null,
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Forhold til Molde Fotball AS / ## Forholdet til NoRo Fotball AS og Gjelsten Invest II AS / ### Note 2 Kamp- og billettinntekter",
+   "choice": "competition_bonus",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "competition_bonus",
+     0.3
+    ],
+    [
+     "match_organisation_expense",
+     0.29000000000000004
+    ],
+    [
+     "other_income",
+     0.26
+    ]
+   ],
+   "tokens": 1373
+  },
+  {
+   "label": "Inntekter Seriekamper",
+   "lado": null,
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Forhold til Molde Fotball AS / ## Forholdet til NoRo Fotball AS og Gjelsten Invest II AS / ### Note 2 Kamp- og billettinntekter",
+   "choice": "matchday_competition",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "matchday_competition",
+     0.96
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1309
+  },
+  {
+   "label": "Andre inntekter privatkamper etc.",
+   "lado": null,
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Forhold til Molde Fotball AS / ## Forholdet til NoRo Fotball AS og Gjelsten Invest II AS / ### Note 2 Kamp- og billettinntekter",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 1575
+  },
+  {
+   "label": "Medlemskontigent",
+   "lado": null,
+   "page": 18,
+   "section": "### Note 3 Medlemsinntekter og tilskudd",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Publikumssnitt hjemmekamper i Tippeligaen",
+   "lado": null,
+   "page": 18,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Forhold til Molde Fotball AS / ## Forholdet til NoRo Fotball AS og Gjelsten Invest II AS / ### Note 2 Kamp- og billettinntekter",
+   "choice": "matchday_competition",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "matchday_competition",
+     0.92
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1316
+  },
+  {
+   "label": "Andre tilskudd",
+   "lado": null,
+   "page": 18,
+   "section": "### Note 3 Medlemsinntekter og tilskudd",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "member_dues",
+     0.06
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1556
+  },
+  {
+   "label": "Kiosksalg",
+   "lado": null,
+   "page": 18,
+   "section": "### Note 4 Avtale med Molde Fotball AS / ### Note 5 Andre driftsinntekter",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_income",
+     0.49
+    ],
+    [
+     "stadium_other",
+     0.45
+    ],
+    [
+     "sponsorship_commercial",
+     0.05
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Lønn spillere, trenere, støtteapparat og administrasjon",
+   "lado": null,
+   "page": 19,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "wages_squad",
+     0.76
+    ],
+    [
+     "lump_football_operations_expense",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1298
+  },
+  {
+   "label": "Markedsmidler NFF, NTF og UEFA",
+   "lado": null,
+   "page": 18,
+   "section": "### Note 3 Medlemsinntekter og tilskudd",
+   "choice": "competition_bonus",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "competition_bonus",
+     0.41000000000000003
+    ],
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ]
+   ],
+   "tokens": 1537
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "lado": null,
+   "page": 29,
+   "section": "# Molde Fotballklubb / BREDDEFOTBALLSTYRET / Resultatregnskap 2012",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1573
+  },
+  {
+   "label": "Egenandeler/deltakeravgift",
+   "lado": null,
+   "page": 18,
+   "section": "### Note 3 Medlemsinntekter og tilskudd",
+   "choice": "member_dues",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "member_dues",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Pensjonskostnad",
+   "lado": null,
+   "page": 19,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "wages_squad",
+     0.45
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": null,
+   "page": 19,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "wages_squad",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": null,
+   "page": 27,
+   "section": "Sum driftsinntekter / 81 808 000 / 93 894 537 / 67 338 000 / # DRIFTSKOSTNADER",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1595
+  },
+  {
+   "label": "Anskaffelseskost 01.01",
+   "lado": null,
+   "page": 21,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Note 13 Ordinære driftsmidler",
+   "choice": "player_amortisation",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "player_amortisation",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "other_income",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1287
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": null,
+   "page": 19,
+   "section": "## Note 8 Personalkostnader, antall ansatte, godtgjørelser, m.m. / ### Lønnskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "wages_squad",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1575
+  },
+  {
+   "label": "Tilgang kjøpte driftsmidler",
+   "lado": null,
+   "page": 21,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Note 13 Ordinære driftsmidler",
+   "choice": "other_expenses",
+   "confidence": 0.21,
+   "top3": [
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "lump_football_operations_expense",
+     0.2
+    ],
+    [
+     "depreciation",
+     0.15
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "Varekjøp og andre kostnader kiosker",
+   "lado": null,
+   "page": 20,
+   "section": "## Note 12 Andre driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "stadium_other",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1561
+  },
+  {
+   "label": "Utgifter Prosjekt/Tiltak",
+   "lado": null,
+   "page": 20,
+   "section": "## Note 12 Andre driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ],
+    [
+     "match_organisation_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Akkumulerte avskrivinger 01.01",
+   "lado": null,
+   "page": 21,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Note 13 Ordinære driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "depreciation",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1290
+  },
+  {
+   "label": "Balanseført verdi pr. 31.12.",
+   "lado": null,
+   "page": 21,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Note 13 Ordinære driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_income",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ]
+   ],
+   "tokens": 1289
+  },
+  {
+   "label": "Kamp- og billettinntekter",
+   "lado": null,
+   "page": 28,
+   "section": "# Molde Fotballklubb / HOVEDSTYRET / TOPPFOTBALL HERRER / Resultatregnskap 2012",
+   "choice": "matchday_competition",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "matchday_competition",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1344
+  },
+  {
+   "label": "Anskaffelseskost 31.12.",
+   "lado": null,
+   "page": 21,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Note 13 Ordinære driftsmidler",
+   "choice": "other_expenses",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "player_amortisation",
+     0.23
+    ],
+    [
+     "depreciation",
+     0.13
+    ]
+   ],
+   "tokens": 1287
+  },
+  {
+   "label": "Akkumulerte avskrivinger 31.12",
+   "lado": null,
+   "page": 21,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Note 13 Ordinære driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "depreciation",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1290
+  },
+  {
+   "label": "Økonomisk levetid",
+   "lado": null,
+   "page": 21,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Note 13 Ordinære driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "depreciation",
+     0.54
+    ],
+    [
+     "player_amortisation",
+     0.17
+    ],
+    [
+     "other_amortisation",
+     0.12
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "Årets avskrivninger",
+   "lado": null,
+   "page": 21,
+   "section": "# Årsberetning Molde Fotballklubb 2012 / ## Note 13 Ordinære driftsmidler",
+   "choice": "depreciation",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "depreciation",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1566
+  },
+  {
+   "label": "Salg spillere/Utleie",
+   "lado": null,
+   "page": 27,
+   "section": "# Totalbudsjett 2013 / # DRIFTSINNTEKTER",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1379
+  },
+  {
+   "label": "Avtale MF/sponsor",
+   "lado": null,
+   "page": 27,
+   "section": "# Totalbudsjett 2013 / # DRIFTSINNTEKTER",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1329
+  },
+  {
+   "label": "Personalkostnader",
+   "lado": null,
+   "page": 29,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Kjøp og leie spillere",
+   "lado": null,
+   "page": 29,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "lump_football_operations_expense",
+     0.36
+    ],
+    [
+     "player_amortisation",
+     0.19
+    ]
+   ],
+   "tokens": 1251
+  },
+  {
+   "label": "Egne arrangement",
+   "lado": null,
+   "page": 29,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.23,
+   "top3": [
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "match_organisation_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1244
+  },
+  {
+   "label": "Trening og utstyr",
+   "lado": null,
+   "page": 29,
+   "section": "",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "match_organisation_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Andres arrangement",
+   "lado": null,
+   "page": 29,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "other_income",
+     0.21
+    ],
+    [
+     "player_amortisation",
+     0.14
+    ]
+   ],
+   "tokens": 1244
+  },
+  {
+   "label": "Anleggskostnader",
+   "lado": null,
+   "page": 29,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "depreciation",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Medlemsinntekter/tilskudd",
+   "lado": null,
+   "page": 29,
+   "section": "# Molde Fotballklubb / BREDDEFOTBALLSTYRET / Resultatregnskap 2012",
+   "choice": "member_dues",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "member_dues",
+     0.93
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Avskrivninger",
+   "lado": null,
+   "page": 29,
+   "section": "",
+   "choice": "depreciation",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "depreciation",
+     0.73
+    ],
+    [
+     "other_amortisation",
+     0.13
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Reklame/sponsorinntekter",
+   "lado": null,
+   "page": 28,
+   "section": "# Molde Fotballklubb / HOVEDSTYRET / TOPPFOTBALL HERRER / Resultatregnskap 2012",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1363
+  },
+  {
+   "label": "Salg spillere/Utleie spillere",
+   "lado": null,
+   "page": 28,
+   "section": "# Molde Fotballklubb / HOVEDSTYRET / TOPPFOTBALL HERRER / Resultatregnskap 2012",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1394
+  },
+  {
+   "label": "Kostnader sponosorer/overføringer",
+   "lado": null,
+   "page": 28,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "lump_football_operations_expense",
+     0.24000000000000002
+    ],
+    [
+     "player_amortisation",
+     0.16
+    ]
+   ],
+   "tokens": 1253
+  },
+  {
+   "label": "Administrasjon",
+   "lado": null,
+   "page": 29,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Kostnader sponsorer/overføringer",
+   "lado": null,
+   "page": 29,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "player_amortisation",
+     0.2
+    ],
+    [
+     "lump_football_operations_expense",
+     0.19
+    ]
+   ],
+   "tokens": 1339
+  }
+ ]
+}

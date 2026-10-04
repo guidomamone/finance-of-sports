@@ -1,0 +1,302 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2021-06-30.md",
+ "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2021-06-30.pdf",
+ "club": "panetolikos",
+ "year": 2021,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:03:28.829Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 28,
+  "notasUsadas": [
+   "31",
+   "32"
+  ]
+ },
+ "ladoConocido": 16,
+ "rubros": [
+  {
+   "label": "Προβλέψεις για παροχές σε εργαζομένους",
+   "lado": null,
+   "page": 19,
+   "section": "[LOGO] / # Αποθεματικά και αποτελέσματα εις νέο",
+   "values": [
+    0.014529
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Λοιπές μακροπρόθεσμες υποχρεώσεις",
+   "lado": null,
+   "page": 19,
+   "section": "[LOGO] / # Αποθεματικά και αποτελέσματα εις νέο",
+   "values": [
+    0.015711
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Προμηθευτές εσωτερικού",
+   "lado": null,
+   "page": 32,
+   "section": "### 9.4 Βραχυπρόθεσμες Υποχρεώσεις / #### 9.4.1 Εμπορικές υποχρεώσεις",
+   "values": [
+    0.036253
+   ],
+   "origen": "nota 31 (ancla 12)",
+   "ancla": "Εμπορικές υποχρεώσεις"
+  },
+  {
+   "label": "Εμπορικές υποχρεώσεις",
+   "lado": null,
+   "page": 19,
+   "section": "[LOGO] / # Αποθεματικά και αποτελέσματα εις νέο",
+   "values": [
+    0.106339
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Προμηθευτές εξωτερικού",
+   "lado": null,
+   "page": 32,
+   "section": "### 9.4 Βραχυπρόθεσμες Υποχρεώσεις / #### 9.4.1 Εμπορικές υποχρεώσεις",
+   "values": [
+    0.066411
+   ],
+   "origen": "nota 31 (ancla 12)",
+   "ancla": "Εμπορικές υποχρεώσεις"
+  },
+  {
+   "label": "Επιταγές πληρωτέες",
+   "lado": null,
+   "page": 32,
+   "section": "### 9.4 Βραχυπρόθεσμες Υποχρεώσεις / #### 9.4.1 Εμπορικές υποχρεώσεις",
+   "values": [
+    0.003675
+   ],
+   "origen": "nota 31 (ancla 12)",
+   "ancla": "Εμπορικές υποχρεώσεις"
+  },
+  {
+   "label": "Φόρος εισοδήματος",
+   "lado": "expense",
+   "page": 19,
+   "section": "[LOGO] / # Αποθεματικά και αποτελέσματα εις νέο",
+   "values": [
+    0.0014
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Λοιποί φόροι και τέλη",
+   "lado": "expense",
+   "page": 19,
+   "section": "[LOGO] / # Αποθεματικά και αποτελέσματα εις νέο",
+   "values": [
+    0.567402
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Οργανισμοί κοινωνικής ασφάλισης",
+   "lado": null,
+   "page": 19,
+   "section": "[LOGO] / # Αποθεματικά και αποτελέσματα εις νέο",
+   "values": [
+    0.09167
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Υποχρ από μεταγρ & ανανεώσεις συμβολαίων",
+   "lado": null,
+   "page": 32,
+   "section": "#### 9.3.2 Λοιπές υποχρεώσεις",
+   "values": [
+    1.140722
+   ],
+   "origen": "nota 32 (ancla 12)",
+   "ancla": "Λοιπές υποχρεώσεις"
+  },
+  {
+   "label": "Λοιπές υποχρεώσεις",
+   "lado": null,
+   "page": 19,
+   "section": "[LOGO] / # Αποθεματικά και αποτελέσματα εις νέο",
+   "values": [
+    1.267501
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Πιστωτές Διάφοροι",
+   "lado": null,
+   "page": 32,
+   "section": "#### 9.3.2 Λοιπές υποχρεώσεις",
+   "values": [
+    0.126779
+   ],
+   "origen": "nota 32 (ancla 12)",
+   "ancla": "Λοιπές υποχρεώσεις"
+  },
+  {
+   "label": "Έξοδα χρήσεως δουλευμένα",
+   "lado": "expense",
+   "page": 19,
+   "section": "[LOGO] / # Αποθεματικά και αποτελέσματα εις νέο",
+   "values": [
+    0.026077
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Έσοδα επόμενων χρήσεων",
+   "lado": "revenue",
+   "page": 19,
+   "section": "[LOGO] / # Αποθεματικά και αποτελέσματα εις νέο",
+   "values": [
+    0.028296
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "ποσά σε €",
+   "lado": null,
+   "page": 17,
+   "section": "[LOGO] / # Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    0.00003
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 17,
+   "section": "[LOGO] / # Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    0.604192
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 17,
+   "section": "[LOGO] / # Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    4.498578
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 17,
+   "section": "[LOGO] / # Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    3.839185
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 17,
+   "section": "[LOGO] / # Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    -0.274993
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 17,
+   "section": "[LOGO] / # Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    -0.021783
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "revenue",
+   "page": 17,
+   "section": "[LOGO] / # Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    0.000457
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 17,
+   "section": "[LOGO] / # Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    -0.004912
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Μικτές αποδοχές",
+   "lado": "expense",
+   "page": 34,
+   "section": "γ) Το συνολικό κόστος μισθοδοσίας του προσωπικού αναλύεται στον παρακάτω πίνακα:",
+   "values": [
+    0.555388
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Εργοδοτικές εισφορές",
+   "lado": "expense",
+   "page": 34,
+   "section": "γ) Το συνολικό κόστος μισθοδοσίας του προσωπικού αναλύεται στον παρακάτω πίνακα:",
+   "values": [
+    0.116899
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Λοιπές παροχές",
+   "lado": "expense",
+   "page": 34,
+   "section": "γ) Το συνολικό κόστος μισθοδοσίας του προσωπικού αναλύεται στον παρακάτω πίνακα:",
+   "values": [
+    0.614287
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Αποζημιώσεις απολύσεως ή εξόδου",
+   "lado": "expense",
+   "page": 34,
+   "section": "γ) Το συνολικό κόστος μισθοδοσίας του προσωπικού αναλύεται στον παρακάτω πίνακα:",
+   "values": [
+    0.00196
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "ΡΟΥΧΙΣΜΟΣ ΟΜΑΔΑΣ",
+   "lado": "expense",
+   "page": 28,
+   "section": "",
+   "values": [
+    55.2831
+   ],
+   "origen": "estado 23"
+  }
+ ]
+}

@@ -1,0 +1,3778 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2021-individual.md",
+ "generatedAt": "2026-09-30T04:30:30.397Z",
+ "rubros": [
+  {
+   "label": "MONTE DELLE VIGNE SRL",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "sponsorship_commercial",
+     0.11
+    ]
+   ],
+   "tokens": 1250
+  },
+  {
+   "label": "VIETTI SRL",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "other_income",
+     0.26
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "ENRICO SERAFINO SRL",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.29000000000000004
+    ],
+    [
+     "sponsorship_commercial",
+     0.11
+    ]
+   ],
+   "tokens": 1249
+  },
+  {
+   "label": "PARMA CALCIO SERVIZI SRL",
+   "lado": null,
+   "page": 13,
+   "section": "### Attività di ricerca e sviluppo",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "youth_football",
+     0.25
+    ],
+    [
+     "youth_other_sports_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "IMPRESA PIZZAROTTI E C SPA",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "sponsorship_commercial",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1313
+  },
+  {
+   "label": "BARILLA SPA",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.87
+    ],
+    [
+     "other_income",
+     0.06999999999999999
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1244
+  },
+  {
+   "label": "GRUPPO GENTILE SRL",
+   "lado": null,
+   "page": 13,
+   "section": "### Attività di ricerca e sviluppo",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "youth_football",
+     0.15
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "ERREA SPA",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1244
+  },
+  {
+   "label": "PARMA PARTECIPAZIONI CALCISTICHE SPA",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 1255
+  },
+  {
+   "label": "1) ricavi delle vendite e delle prestazioni",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "lump_football_operations",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.87
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "S.S.D.A.R.L. ACADEMY PARMA CALCIO 1913",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "youth_football",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "youth_football",
+     0.55
+    ],
+    [
+     "other_income",
+     0.18000000000000002
+    ],
+    [
+     "youth_other_sports_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "BAR CENTRALE COLLECCHIO SRL",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "stadium_other",
+   "confidence": 0.24,
+   "top3": [
+    [
+     "stadium_other",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "other_income",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1253
+  },
+  {
+   "label": "PROGETTO STADIO PARMA SRL",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "stadium_other",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "stadium_other",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1251
+  },
+  {
+   "label": "NUOVO INIZIO SRL",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "other_income",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1249
+  },
+  {
+   "label": "4) incrementi di immobilizzazioni per lavori interni",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "depreciation",
+     0.13
+    ]
+   ],
+   "tokens": 1326
+  },
+  {
+   "label": "altri",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "c) trattamento di fine rapporto",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "wages_squad",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "wages_squad",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "7) per servizi",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "admin_general_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "match_organisation_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1315
+  },
+  {
+   "label": "b) oneri sociali",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "a) salari e stipendi",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_amortisation",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_amortisation",
+     0.61
+    ],
+    [
+     "depreciation",
+     0.21
+    ],
+    [
+     "player_amortisation",
+     0.17
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "8) per godimento di beni di terzi",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "b) ammortamento delle immobilizzazioni materiali",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "depreciation",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "depreciation",
+     0.96
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "other_amortisation",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1526
+  },
+  {
+   "label": "12) accantonamenti per rischi",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "exceptional_items",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1322
+  },
+  {
+   "label": "14) oneri diversi di gestione",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "21) Utile (perdita) dell'esercizio",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "Fabbricati",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "choice": "depreciation",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "depreciation",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "Risultato prima delle imposte (A - B + - C + - D)",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ]
+   ],
+   "tokens": 1333
+  },
+  {
+   "label": "Differenza tra valore e costi della produzione (A - B)",
+   "lado": null,
+   "page": 20,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico",
+   "choice": "other_income",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "lump_football_operations",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "Impianti generici",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "choice": "other_expenses",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "depreciation",
+     0.23
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "Attrezzature varie",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "depreciation",
+     0.11
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "Hospitality stadio",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Attrezzature sanitarie",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Coppe e trofei",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "youth_other_sports_expense",
+     0.06
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "Ammortamenti (Fondo ammortamento)",
+   "lado": "expense",
+   "page": 30,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "choice": "depreciation",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "depreciation",
+     0.44
+    ],
+    [
+     "other_amortisation",
+     0.43
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ]
+   ],
+   "tokens": 833
+  },
+  {
+   "label": "Autovetture",
+   "lado": "expense",
+   "page": 27,
+   "section": "PARMA CALCIO 1913 S.R.L. / ### *Costi del vivaio* / ### *Migliorie su beni terzi* / ### IMMOBILIZZAZIONI MATERIALI",
+   "choice": "admin_general_expense",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "depreciation",
+     0.2
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "Valore di bilancio",
+   "lado": "expense",
+   "page": 30,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "player_amortisation",
+     0.11
+    ],
+    [
+     "other_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Incrementi per acquisizioni",
+   "lado": "expense",
+   "page": 30,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "player_amortisation",
+     0.11
+    ],
+    [
+     "other_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "Decrementi per alienazioni e dismissioni (del valore di bilancio)",
+   "lado": "expense",
+   "page": 30,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.47
+    ],
+    [
+     "other_amortisation",
+     0.21
+    ],
+    [
+     "exceptional_items",
+     0.17
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Valore di inizio esercizio",
+   "lado": "expense",
+   "page": 35,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Ammortamento dell'esercizio",
+   "lado": "expense",
+   "page": 30,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "choice": "other_amortisation",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_amortisation",
+     0.66
+    ],
+    [
+     "player_amortisation",
+     0.21
+    ],
+    [
+     "depreciation",
+     0.11
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "Accantonamento nell'esercizio",
+   "lado": "expense",
+   "page": 35,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "other_amortisation",
+     0.12
+    ],
+    [
+     "player_impairment",
+     0.1
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Utilizzo nell'esercizio",
+   "lado": "expense",
+   "page": 35,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "lump_football_operations_expense",
+     0.23
+    ],
+    [
+     "player_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "Valore di fine esercizio",
+   "lado": "expense",
+   "page": 35,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ],
+    [
+     "player_impairment",
+     0.05
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "Incrementi Imm. Lav. Interni",
+   "lado": "revenue",
+   "page": 38,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ### Valore della produzione / ### Suddivisione dei ricavi delle vendite e delle prestazioni per categoria di attività",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "lump_football_operations",
+     0.21
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 873
+  },
+  {
+   "label": "Altri Ricavi",
+   "lado": "revenue",
+   "page": 38,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ### Valore della produzione / ### Suddivisione dei ricavi delle vendite e delle prestazioni per categoria di attività",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 867
+  },
+  {
+   "label": "Ricavi vendite e prestazioni",
+   "lado": "revenue",
+   "page": 38,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, conto economico / ### Valore della produzione / ### Suddivisione dei ricavi delle vendite e delle prestazioni per categoria di attività",
+   "choice": "lump_football_operations",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.91
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 870
+  },
+  {
+   "label": "Costo",
+   "lado": "expense",
+   "page": 30,
+   "section": "PARMA CALCIO 1913 S.R.L. / ## Nota integrativa, attivo / ### Immobilizzazioni / #### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_expenses",
+     0.8
+    ],
+    [
+     "player_amortisation",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Gare Ufficiali Campionato",
+   "lado": "revenue",
+   "page": 38,
+   "section": "### RICAVI DELLE VENDITE E DELLE PRESTAZIONI",
+   "choice": "matchday_competition",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "matchday_competition",
+     0.5
+    ],
+    [
+     "competition_bonus",
+     0.21
+    ],
+    [
+     "lump_football_operations",
+     0.15
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Gare Amichevoli e tornei",
+   "lado": "revenue",
+   "page": 38,
+   "section": "### RICAVI DELLE VENDITE E DELLE PRESTAZIONI",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "matchday_competition",
+     0.32
+    ],
+    [
+     "lump_football_operations",
+     0.21
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Abbonamenti",
+   "lado": "revenue",
+   "page": 38,
+   "section": "### RICAVI DELLE VENDITE E DELLE PRESTAZIONI",
+   "choice": "season_tickets",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "season_tickets",
+     0.99
+    ],
+    [
+     "member_dues",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "Ricavi e proventi diversi",
+   "lado": "revenue",
+   "page": 39,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Proventi da sponsorizzazioni",
+   "lado": "revenue",
+   "page": 38,
+   "section": "### ALTRI RICAVI E PROVENTI",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "Proventi pubblicitari",
+   "lado": "revenue",
+   "page": 38,
+   "section": "### ALTRI RICAVI E PROVENTI",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.94
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 828
+  },
+  {
+   "label": "Proventi commerciali e royalties",
+   "lado": "revenue",
+   "page": 38,
+   "section": "### ALTRI RICAVI E PROVENTI",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Proventi da cessione diritti audiovisivi",
+   "lado": "revenue",
+   "page": 38,
+   "section": "### ALTRI RICAVI E PROVENTI",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "broadcasting",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 833
+  },
+  {
+   "label": "Altri proventi gestione calciatori",
+   "lado": "revenue",
+   "page": 39,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "player_sales",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ]
+   ],
+   "tokens": 833
+  },
+  {
+   "label": "Contributi in conto esercizio",
+   "lado": "revenue",
+   "page": 39,
+   "section": "PARMA CALCIO 1913 S.R.L.",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "sponsorship_commercial",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Fitti Passivi",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### *Costi per godimento beni di terzi*",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### *Costi per godimento beni di terzi*",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.74
+    ],
+    [
+     "match_organisation_expense",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Altri costi per il godimento dei beni di terzi",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### *Costi per godimento beni di terzi*",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 804
+  },
+  {
+   "label": "Costi per noleggi",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### *Costi per godimento beni di terzi*",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Salari e Stipendi",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### *Costi per il personale*",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 793
+  },
+  {
+   "label": "Oneri Sociali",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### *Costi per il personale*",
+   "choice": "wages_squad",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "wages_squad",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 792
+  },
+  {
+   "label": "Spese per organizzazione gare",
+   "lado": "expense",
+   "page": 41,
+   "section": "### *Oneri diversi di gestione*",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "TFR",
+   "lado": "expense",
+   "page": 40,
+   "section": "#### *Costi per il personale*",
+   "choice": "wages_squad",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "wages_squad",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 789
+  },
+  {
+   "label": "Oneri Specifici verso squadre ospitate",
+   "lado": "expense",
+   "page": 41,
+   "section": "### *Oneri diversi di gestione*",
+   "choice": "match_organisation_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "Costi acq. Temporanea calciatori",
+   "lado": "expense",
+   "page": 41,
+   "section": "### *Oneri diversi di gestione*",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "lump_football_operations_expense",
+     0.26
+    ],
+    [
+     "player_amortisation",
+     0.23
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "Tasse iscrizione gare",
+   "lado": "expense",
+   "page": 41,
+   "section": "### *Oneri diversi di gestione*",
+   "choice": "match_organisation_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 793
+  },
+  {
+   "label": "Altri oneri gestione calciatori",
+   "lado": "expense",
+   "page": 41,
+   "section": "### *Oneri diversi di gestione*",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "lump_football_operations_expense",
+     0.23
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Altri oneri di gestione",
+   "lado": "expense",
+   "page": 41,
+   "section": "### *Oneri diversi di gestione*",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "Costi valorizzazione calciatori",
+   "lado": "expense",
+   "page": 41,
+   "section": "Gli altri oneri per la gestione dei calciatori sono così costituiti:",
+   "choice": "player_amortisation",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "player_amortisation",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "player_impairment",
+     0.09
+    ]
+   ],
+   "tokens": 806
+  },
+  {
+   "label": "Costi accessori campagna trasferimenti",
+   "lado": "expense",
+   "page": 41,
+   "section": "Gli altri oneri per la gestione dei calciatori sono così costituiti:",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "lump_football_operations_expense",
+     0.32
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 807
+  },
+  {
+   "label": "Minusvalenze cessioni calciatori",
+   "lado": "expense",
+   "page": 41,
+   "section": "Gli altri oneri per la gestione dei calciatori sono così costituiti:",
+   "choice": "player_impairment",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "player_impairment",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "exceptional_items",
+     0.21
+    ]
+   ],
+   "tokens": 806
+  },
+  {
+   "label": "Alastra Fabrizio",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Carannante Gabriele",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "wages_squad",
+     0.29
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Buffon Gianluigi",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "wages_squad",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Adorante Andrea",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "wages_squad",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Baraye Yves Bertand",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Carriero Giuseppe Mattia",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "wages_squad",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Cavazza Paolo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "wages_squad",
+     0.24000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Castaldo Antonio",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "wages_squad",
+     0.24
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Cheddira Walid",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "wages_squad",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Corvi Edoardo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "wages_squad",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Colombi Simone",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "wages_squad",
+     0.38
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Dermaku Kaistriot",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "wages_squad",
+     0.25
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Cipoletti Davide",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "wages_squad",
+     0.35
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Cucci Matteo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "wages_squad",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Dezi Jacopo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "wages_squad",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Dini Andrea",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "wages_squad",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Frediani Marco",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "wages_squad",
+     0.21
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Gagliolo Riccardo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "wages_squad",
+     0.36
+    ],
+    [
+     "player_amortisation",
+     0.14
+    ]
+   ],
+   "tokens": 804
+  },
+  {
+   "label": "Galuppini Francesco",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Golfo Matteo Francesco",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "wages_squad",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Iacoponi Daniele",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Grassi Alberto",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "wages_squad",
+     0.35000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Iacoponi Simone",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "wages_squad",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Kasa Redi",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Inglese Roberto",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "wages_squad",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Lanini Eric",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "wages_squad",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "player_amortisation",
+     0.12
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Laraspata Michele",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "wages_squad",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Longo Sebastiano",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "wages_squad",
+     0.34
+    ],
+    [
+     "player_amortisation",
+     0.1
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Martella Alessandro",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "wages_squad",
+     0.26
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Mastaj Davide",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "wages_squad",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Matino Emmanuele",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "wages_squad",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Mustacciolo Vincenzo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Napolitano Paolo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "wages_squad",
+     0.26
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Pavone Fabian",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0.38
+    ],
+    [
+     "player_amortisation",
+     0.1
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Nocciolini Manuel",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "wages_squad",
+     0.35
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Pellè Graziano",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "wages_squad",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "player_amortisation",
+     0.14
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Palmucci Stefano",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.57
+    ],
+    [
+     "wages_squad",
+     0.24
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Pezzella Giuseppe",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "wages_squad",
+     0.47
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "player_amortisation",
+     0.15
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Ricci Giacomo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Primavera Luca",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.63
+    ],
+    [
+     "wages_squad",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Rinaldi Filippo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "wages_squad",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Schiattarella Pasquale",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "wages_squad",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 805
+  },
+  {
+   "label": "Scozzarella Matteo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "wages_squad",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Sepe Luigi",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Silingardi Luca",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "wages_squad",
+     0.31
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Sprocati Mattia",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "wages_squad",
+     0.38
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Tutino Gennaro",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "wages_squad",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Balogh Boton",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "wages_squad",
+     0.18000000000000002
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Vaglica Giovanni",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "wages_squad",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Bonny Ange Yoan",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "wages_squad",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "player_amortisation",
+     0.1
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Brugman Duarte Gaston",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "wages_squad",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Benedyczak Adrian Dawid",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0.43
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 804
+  },
+  {
+   "label": "Coulibaly Woyo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "wages_squad",
+     0.3
+    ],
+    [
+     "player_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Busi Maxime",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "wages_squad",
+     0.29
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Cornelius Andreas",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "wages_squad",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Cyprien Wylan",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "wages_squad",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "player_amortisation",
+     0.2
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Dierckx Daan",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "wages_squad",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Fiath Bence",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "wages_squad",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Da Cruz Alessio",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Gervais Yao Kouassi",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "wages_squad",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "player_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 804
+  },
+  {
+   "label": "Karamoh Yann",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "wages_squad",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "player_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Hernani Azevedo Junior",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "wages_squad",
+     0.35000000000000003
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 804
+  },
+  {
+   "label": "Kone Moussa",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "wages_squad",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "player_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Kucka Juraj",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "wages_squad",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "player_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Laurini Vincent Alain",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "wages_squad",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Laragera Danilo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "wages_squad",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Kurtic Jasmin",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "wages_squad",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Maliszewski Bartolomiej",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "wages_squad",
+     0.36
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 805
+  },
+  {
+   "label": "Lopes Andre' Silva",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "wages_squad",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.41
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 1116
+  },
+  {
+   "label": "Man Dennis Delfin",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "wages_squad",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Mir Garcia Matias",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "wages_squad",
+     0.43
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Marsetic Enej",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "wages_squad",
+     0.22
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Osorio Yordan Hernando Paredes",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "wages_squad",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 807
+  },
+  {
+   "label": "Regulfe Alves Bruno Eduardo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "wages_squad",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Mihai Valentin Mihaila",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "wages_squad",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 805
+  },
+  {
+   "label": "Sits Dario",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "wages_squad",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Sahitaj Ledjan",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "wages_squad",
+     0.41000000000000003
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Sohm Simon",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "wages_squad",
+     0.32
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Stanko Juric",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "wages_squad",
+     0.38
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Tehe Muhamed",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "wages_squad",
+     0.21000000000000002
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Traore Aliou Badara",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "wages_squad",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "player_amortisation",
+     0.14
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Traore Chaka",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "wages_squad",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Turk Martin",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Vazquez Franco Darmian",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "wages_squad",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Valenti Lautaro Rodrigo",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "wages_squad",
+     0.38
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Zagaritis Vasileios",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "wages_squad",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Settore giovanile",
+   "lado": "expense",
+   "page": 49,
+   "section": "Aggiornamento alla data del: 31/12/2021",
+   "choice": "youth_other_sports_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 802
+  }
+ ]
+}

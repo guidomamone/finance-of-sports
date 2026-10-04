@@ -1,0 +1,3092 @@
+{
+  "club": "atleticomineiro-br",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Atletico Mineiro/demonstracoes-financeiras-saf-2024.md",
+  "generatedAt": "2026-09-30T22:41:13.699Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 124,
+    "space": 20
+  },
+  "scannedWarning": false,
+  "tableCount": 63,
+  "relevantTableCount": 14,
+  "tables": [
+    {
+      "page": 10,
+      "section": "RECEITA BRUTA 180 488 4183 461 6/4 / OPERACIONAL (97) (1) (75) (96) 2 / VENDA DE ATLETAS 28 99 88 112 183 / COMPRA DE ATLETAS (290) (112) (148) (119) (218) / RESULTADO FINANCEIRO (32) (61) (141) (275) (219)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "ENDIVIDAMENTO LÍQUIDO",
+          "values": [
+            "1.234",
+            "1.512",
+            "2.011",
+            "1.150",
+            "1.369"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ENDIV. LÍQUIDO / RECEITA 6,9 3,1",
+          "values": [
+            "2,5",
+            "2,0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 56,
+      "section": "ATLETICO MINEIRO S.A.F.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caixa e equivalentes de caixa 7 3.382 191.231 9.890 211.532 Fornecedores e outras obrigações",
+          "values": [
+            "43.068",
+            "50.537",
+            "60.179",
+            "140.931"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Títulos e valores mobiliários 8 - - 9.920 9.438 Empréstimos e financiamentos",
+          "values": [
+            "285.563",
+            "145.102",
+            "650.395",
+            "584.594"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber nas transferências de jogadores 9 93.362 57.488 93.362 57.488 Tributos e contribuições sociais a recolher",
+          "values": [
+            "88.113",
+            "49.367",
+            "89.967",
+            "51.558"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber 10 22.684 30.122 63.189 68.096 Obrigações trabalhistas e sociais",
+          "values": [
+            "29.289",
+            "27.672",
+            "29.294",
+            "27.675"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros ativos 8.705 15.198 18.031 32.660 Contas a pagar na transferência de jogadores",
+          "values": [
+            "187.680",
+            "102.804",
+            "187.680",
+            "102.804"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "128.133 294.039 194.392 379.214 Receita antecipada",
+          "values": [
+            "84.106",
+            "82.343",
+            "120.776",
+            "114.579"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 56,
+      "section": "Partes relacionadas 15 353 - 353 - / Operações de debêntures 22 13.548 - 13.548 - / 731.720 457.825 1.152.192 1.022.141 / Não circulante Não circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a receber nas transferências de jogadores 9 98.698 10.072 98.698 10.072 Fornecedores e outras obrigações",
+          "values": [
+            "16.192",
+            "32.519",
+            "16.192",
+            "32.519"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber 10 3.250 4.875 111.361 145.369 Empréstimos e financiamentos",
+          "values": [
+            "210.168",
+            "320.285",
+            "291.439",
+            "408.159"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros ativos não circulante - 150 9.805 13.771 Tributos e contribuições sociais a recolher",
+          "values": [
+            "295.327",
+            "276.392",
+            "297.982",
+            "276.392"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos judiciais 11 31.163 31.862 31.164 31.862 Contas a pagar na transferência de jogadores",
+          "values": [
+            "104.293",
+            "59.449",
+            "104.293",
+            "59.449"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 56,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Investimentos 12 97.818 147.299 - - Provisão para contingências",
+          "values": [
+            "32.881",
+            "43.981",
+            "32.962",
+            "43.981"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado 13 145.840 129.544 1.198.948 1.168.407 Receita antecipada",
+          "values": [
+            "60.678",
+            "19.859",
+            "433.360",
+            "418.415"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível 14 1.583.725 1.534.026 1.583.725 1.534.026 Partes relacionadas 15 2.780 -",
+          "values": [
+            "3.097",
+            "2.800"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 57,
+      "section": "ATLETICO MINEIRO S.A.F.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Custos com pessoal/direito de imagem/comissão",
+          "values": [
+            "(323.366)",
+            "(43.455)",
+            "(323.366)",
+            "(43.455)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custos com atividades do futebol",
+          "values": [
+            "(246.247)",
+            "(27.256)",
+            "(255.038)",
+            "(27.257)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custos gerais",
+          "values": [
+            "(41.546)",
+            "(8.389)",
+            "(41.546)",
+            "(8.389)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 57,
+      "section": "(611.159) (79.100) (619.950) (79.101) / Custos com atividades patrimoniais / Custo com pessoal 28 (3.800) (605) (3.800) (605) / Custos gerais 29 (20.578) (59) (21.198) (730)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(24.378) (664)",
+          "values": [
+            "(24.998)",
+            "(1.335)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo com projetos",
+          "values": [
+            "(1.159)",
+            "(1.159)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 57,
+      "section": "(1.159) - (1.159) -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Custos das atividades esportivas, sociais e patrimoniais",
+          "values": [
+            "(636.696)",
+            "(79.764)",
+            "(646.107)",
+            "(80.436)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado bruto",
+          "values": [
+            "(239.402)",
+            "(4.421)",
+            "(201.480)",
+            "5.101"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas gerais e administrativas",
+          "values": [
+            "(35.592)",
+            "(11.471)",
+            "(45.616)",
+            "(20.216)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 57,
+      "section": "Despesas com contingências (15.532) - (15.613) - / (51.124) (11.471) (61.229) (20.216) / Outras receitas operacionais 26 182.838 229 182.838 229 / Resultado equivalência patrimonial 12 (51.738) - - - / 131.100 229 182.838 229",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Resultado antes do resultado financeiro",
+          "values": [
+            "(159.426)",
+            "(15.663)",
+            "(79.871)",
+            "(14.886)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas financeiras",
+          "values": [
+            "35.037",
+            "31.370",
+            "38.515",
+            "31.858"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas financeiras",
+          "values": [
+            "(174.965)",
+            "(56.890)",
+            "(257.998)",
+            "(139.282)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas/(despesas) financeiras, líquidas",
+          "values": [
+            "(139.928)",
+            "(25.520)",
+            "(219.483)",
+            "(107.424)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado antes dos tributos sobre o lucro",
+          "values": [
+            "(299.354)",
+            "(41.183)",
+            "(299.354)",
+            "(122.310)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 57,
+      "section": "Imposto de renda e contribuição social corrente e diferido - - - (3)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Prejuízo do exercício",
+          "values": [
+            "(299.354)",
+            "(41.183)",
+            "(299.354)",
+            "(122.313)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prejuízo básico/diluído por ação - R$",
+          "values": [
+            "(0,0518)",
+            "(0,0101)",
+            "(0,0518)",
+            "(0,0101)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 61,
+      "section": "ATLETICO MINEIRO S.A.F.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita Bruta e Outras Receitas",
+          "values": [
+            "621.822",
+            "86.667",
+            "674.075",
+            "97.814"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita futebol profissional",
+          "values": [
+            "613.143",
+            "86.667",
+            "613.143",
+            "86.667"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas patrimoniais/sociais",
+          "values": [
+            "7.480",
+            "59.853",
+            "11.211"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 61,
+      "section": "Receitas com Projetos Sociais 196 196 / Receita de venda no manto 1.003 1.003 - / Devolução de vendas - (120) (64)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Insumos Adquiridos de Terceiros",
+          "values": [
+            "(151.539)",
+            "(22.851)",
+            "(168.820)",
+            "(29.917)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiais, serviços, utilidades e outros",
+          "values": [
+            "(151.539)",
+            "(22.851)",
+            "(168.820)",
+            "(29.917)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valor Adicionado Bruto",
+          "values": [
+            "470.283",
+            "63.816",
+            "505.255",
+            "67.897"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retenções",
+          "values": [
+            "(180.105)",
+            "(18.557)",
+            "(182.206)",
+            "(20.835)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com depreciação (629) (85)",
+          "values": [
+            "(2.730)",
+            "(2.364)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização/baixa de contrato de atletas profissionais",
+          "values": [
+            "(172.075)",
+            "(17.252)",
+            "(172.075)",
+            "(17.251)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 61,
+      "section": "Amortização do custo de atletas formados (5.420) (348) (5.420) (348) / Baixa do custo de atletas em formação (1.981) (872) (1.981) (872)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Valor Adicionado Líquido Produzido Pelo Clube",
+          "values": [
+            "290.178",
+            "45.259",
+            "323.049",
+            "47.062"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valor Adicionado Recebido em Transferência",
+          "values": [
+            "(16.701)",
+            "31.369",
+            "38.520",
+            "31.857"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas financeiras",
+          "values": [
+            "35.037",
+            "31.369",
+            "38.520",
+            "31.857"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 61,
+      "section": "Equivalência patrimonial (51.738) - - - / Valor Adicionado Distribuído 273.477 76.628 361.569 78.919 / Distribuição do valor adicionado / Pessoal",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Remuneração direta",
+          "values": [
+            "304.321",
+            "42.299",
+            "304.355",
+            "42.340"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benefícios 6.146",
+          "values": [
+            "6.158",
+            "1.019"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS",
+          "values": [
+            "20.069",
+            "1.891",
+            "20.069",
+            "1.889"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 61,
+      "section": "Estaduais 4.885 254 4.885 254 / Municipais 3.220 153 3.220 153 / Remuneração de capital de terceiros / Juros/atualizações de parcelamentos 175.133 58.845 258.171 141.236 / Prejuízo do exercício",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Prejuízo do exercício",
+          "values": [
+            "(299.354)",
+            "(41.183)",
+            "(299.354)",
+            "(122.313)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valor adicionado distribuído",
+          "values": [
+            "273.477",
+            "76.628",
+            "361.569",
+            "78.919"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 67,
+      "section": "Participação total - % / Controladas diretas e indiretas Principal Atividade País Sede 2024 2023 / Fundo de investimento imobiliário - Fundo de ; / AVM FII (a) investimento Brasil 100,00 100,00 / Arena Vencer Complexo Esportivo Locação e alienação :",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Multiuso SPE Ltda. (b) de arena multiuso Brasil",
+          "values": [
+            "100,00",
+            "100,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arena Vencer Eventos SPE Ltda. (c) Produção de eventos Brasil",
+          "values": [
+            "100,00",
+            "100,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 67,
+      "section": "na Avenida Presidente Juscelino Kubitschek, número 7250, Bairro Califórnia, CEP / 30.855-450. / (c) A Arena Vencer Eventos SPE LTDA, sociedade limitada e têm como atividades a / realização, promoção, organização produção, agenciamento, programação, gestão, / administração, operação, execução e exploração da Arena Vencer Complexo Esportivo",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Multiuso SPE Ltda. A Arena Eventos tem sua sede na Rua Christina Maria Assis, nº",
+          "values": [
+            "450,"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bairro Califórnia, CEP",
+          "values": [
+            "30.855-440."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 68,
+      "section": "ATLÉTICO MINEIRO S.A.F.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Transferências de Atletas 73.215 73.215 Empréstimos e Financiamentos",
+          "values": [
+            "162.863",
+            "(111.847)",
+            "51.016"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a Receber 62.658 62.658 Obrigações Trabalhistas e Sociais 23.589 -",
+          "values": [
+            "23.589"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 68,
+      "section": "Contas a Pagar a Transferências de",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Estoques e Almoxarifado 3.635 3.635 Jogadores",
+          "values": [
+            "29.267",
+            "29.267"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Antecipadas 5.199 5.199 Adiantamentos Recebidos 18.800 -",
+          "values": [
+            "18.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos 302 302 Receita Antecipada",
+          "values": [
+            "45.308",
+            "(21.055)",
+            "24.253"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 68,
+      "section": "Imobilizado 129.581 129.581 Jogadores 6.344 - 6.344 / Intangível 1.603.937 1.603.937 Partes Relacionadas 57.315 (57.315) - / 1.966.174 - 1.966.174 Adiantamentos Recebidos 4.000 - 4.000 / 193.721 (183.377) 10.344 / Patrimônio líquido",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Capital Social",
+          "values": [
+            "373.752",
+            "916.280",
+            "1.290.031"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Capital a Integralizar -",
+          "values": [
+            "(94.097)",
+            "(94.097)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 69,
+      "section": "O Atlético S.A.F ao assumir as dívidas torna-se legalmente responsável pelo / pagamento dessas obrigações. Isso inclui o cumprimento de todos os termos e / condições estabelecidas nos contratos de dívidas. / O saldo da assunção de dívidas é composto conforme quadro abaixo: / 31/12/2024 31/12/2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores e outras obrigações",
+          "values": [
+            "5.127"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "174.820",
+            "145.102"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos e contribuições sociais a recolher",
+          "values": [
+            "33.049",
+            "30.422"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas e sociais",
+          "values": [
+            "3.041",
+            "10.237"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar na transferência de jogadores",
+          "values": [
+            "92.910",
+            "111.914"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "183.127",
+            "320.285"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar na transferência de jogadores",
+          "values": [
+            "36.962",
+            "82.944"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos e contribuições sociais a recolher",
+          "values": [
+            "266.360",
+            "276.392"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para contingências",
+          "values": [
+            "32.257",
+            "43.981"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita antecipada",
+          "values": [
+            "19.859",
+            "19.859"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "842.878",
+            "1.046.263"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 77,
+      "section": "01/01/2027. / 7. Caixa e equivalentes de caixa / O caixa e equivalente de caixa estão compostos da seguinte forma: / Controladora Consolidado / 31/12/2024 31/12/2023 31/12/2024 31/12/2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caixa e bancos 430",
+          "values": [
+            "6.842",
+            "6.319"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicações financeiras",
+          "values": [
+            "2.952",
+            "190.777",
+            "3.048",
+            "205.213"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 78,
+      "section": "ATLÉTICO MINEIRO S.A.F. RO Gio",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Títulos e valores mobiliários - -",
+          "values": [
+            "9.920",
+            "9.438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- -",
+          "values": [
+            "9.920",
+            "9.438"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 78,
+      "section": "Clube Desportivo Santa Clara 550 457 550 457 / Clube Regatas Do Flamengo - 20.197 - 20.197 / Esperance Sportive Troyes Aube Champagne 9.249 - 9.249 - / Esporte Clube Bahia - 2.917 - 2.917 / Esporte Clube Juventude - 54 - 54",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fluminense Football Club",
+          "values": [
+            "6.398",
+            "12.746",
+            "6.398",
+            "12.746"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fortaleza Esporte Clube 125 3.125",
+          "values": [
+            "3.125"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Futbolniy Klub Metalist",
+          "values": [
+            "4.854",
+            "3.795",
+            "4.854",
+            "3.795"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 78,
+      "section": "Santos Futebol Clube 6.192 200 6.192 200 / Sao Paulo Futebol Clube - Spfc 2.120 2.120 2.120 2.120 / Sociedade Esportiva Palmeiras 131.863 - 131.863 - / Vasco Da Gama Sociedade Anonima Do Futebol, 11.878 6.551 11.878 6.551 / 192.060 67.560 192.060 67.560",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "93.362",
+            "57.488",
+            "93.362",
+            "57.488"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "98.698",
+            "10.072",
+            "98.698",
+            "10.072"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 79,
+      "section": "10. / O aging list do contas a receber na transferência de jogadores, está composto / conforme a seguir: / Controladora Consolidado / 2024 2023 2024 2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "A vencer até 30 dias",
+          "values": [
+            "8.177",
+            "17.960",
+            "8.177",
+            "17.960"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A vencer entre 31 e 60 dias",
+          "values": [
+            "1.497",
+            "4.097",
+            "1.497",
+            "4.097"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 79,
+      "section": "A vencer entre 61 e 90 dias 437 - 437 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "A vencer entre 91 e 180 dias",
+          "values": [
+            "23.363",
+            "9.535",
+            "23.363",
+            "9.535"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A vencer após 180 dias",
+          "values": [
+            "132.228",
+            "26.438",
+            "132.228",
+            "26.438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vencidos até 30 dias",
+          "values": [
+            "4.752",
+            "1.228",
+            "4.752",
+            "1.228"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 79,
+      "section": "Vencidos entre 31 e 60 dias 2.091 100 2.091 100 / Vencidos entre 61 e 90 dias 3.550 1.452 3.550 1.452 / Vencidos entre 91 e 180 dias 1.731 361 1.731 361",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Vencidos acima de 180 dias",
+          "values": [
+            "14.234",
+            "6.389",
+            "14.234",
+            "6.389"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "192.060",
+            "67.560",
+            "192.060",
+            "67.560"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 79,
+      "section": "(correspondente ao valor da venda faturado), diminuídas ao valor / recuperável, quando necessário. As contas a receber estão compostas da / seguinte forma: / Controladora Consolidado / 31/12/2024 31/12/2023 31/12/2024 31/12/2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cartões de crédito 903 9.947",
+          "values": [
+            "9.947"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimoniais",
+          "values": [
+            "4.384",
+            "4.367",
+            "4.384",
+            "4.369"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocínio / marketing",
+          "values": [
+            "2.660",
+            "1.252",
+            "2.660",
+            "1.252"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transmissões compet. esportivas",
+          "values": [
+            "9.868",
+            "5.409",
+            "9.868",
+            "5.409"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cadeiras Cativas - -",
+          "values": [
+            "58.112",
+            "75.764"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Camarotes - -",
+          "values": [
+            "4.801",
+            "8.043"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estacionamento - -",
+          "values": [
+            "1.624"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 79,
+      "section": "Contratos de Patrocínios e Sector Naming",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Rights - -",
+          "values": [
+            "9.420",
+            "12.907"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Naming Rights MRV -",
+          "values": [
+            "79.702",
+            "87.409"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros valores a receber",
+          "values": [
+            "8.119",
+            "14.022",
+            "9.005",
+            "14.155"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Ajuste a valor presente - -",
+          "values": [
+            "(4.939)",
+            "(7.414)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 79,
+      "section": "25.934 34.997 174.550 213.465",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "22.684",
+            "30.122",
+            "63.189",
+            "68.096"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "3.250",
+            "4.875",
+            "111.361",
+            "145.369"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 80,
+      "section": "ATLÉTICO MINEIRO S.A.F. O Gio",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "A vencer até 30 dias",
+          "values": [
+            "1.661",
+            "7.917",
+            "1.661",
+            "7.917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A vencer entre 31 e 60 dias 51 2.723",
+          "values": [
+            "4.633"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A vencer entre 61 e 90 dias - 1.992 -",
+          "values": [
+            "2.164"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A vencer entre 91 e 180 dias -",
+          "values": [
+            "2.083",
+            "1.629",
+            "2.083"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A vencer após 180 dias",
+          "values": [
+            "4.819",
+            "9.047",
+            "151.866",
+            "185.433"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vencidos até 30 dias",
+          "values": [
+            "3.521",
+            "1.196",
+            "3.521",
+            "1.196"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vencidos entre 31 e 60 dias - 4.673 -",
+          "values": [
+            "4.673"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 80,
+      "section": "Vencidos entre 61 e 90 dias 489 821 489 821 / Vencidos entre 91 e 180 dias 5.215 546 5.215 546",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Vencidos acima de 180 dias",
+          "values": [
+            "10.118",
+            "3.999",
+            "10.118",
+            "3.999"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "25.934",
+            "34.997",
+            "174.550",
+            "213.465"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 83,
+      "section": "ATLÉTICO MINEIRO S.A.F. o",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Imóveis - Edificações 24.581 (591)",
+          "values": [
+            "23.990",
+            "1.029.579",
+            "(6.594)",
+            "1.022.985"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imóveis - Terrenos 105.000 - 105.000 130.212 -",
+          "values": [
+            "130.212"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado em Andamento 14.950 - 14.950 43.762 -",
+          "values": [
+            "43.762"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "146.553 (713)",
+          "values": [
+            "145.840",
+            "1.205.814",
+            "(6.866)",
+            "1.198.948"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 84,
+      "section": "ATLÉTICO MINEIRO S.A.F.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dezembro de 2023 130.212 1.026.948 8 63",
+          "values": [
+            "11.075",
+            "1.168.407"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aquisição - - 183",
+          "values": [
+            "1.001",
+            "32.687",
+            "34.661"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação - (3.963) (10) (93) (54)",
+          "values": [
+            "(4.120)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 85,
+      "section": "Exercício findo em 2024 e do período de 14 de setembro a 31 de dezembro de / 2023 / (Em milhares de Reais) / (a) A composição dos terrenos é como segue: / 31/12/2024 | 31/12/2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terreno Arena",
+          "values": [
+            "20.900",
+            "20.900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terreno M. Morcegos (a)",
+          "values": [
+            "4.212",
+            "4.212"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 85,
+      "section": "vigência contratual, de acordo com o CPC 04 (R1) / IAS 38. Anualmente, o / Atlético S.A.F avalia a recuperabilidade desses ativos, nos termos do CPC 01 / (R1) / IAS 36, reconhecendo perdas no resultado quando aplicável. / Controladora Consolidado / 31/12/2024 31/12/2023 31/12/2024 31/12/2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Atletas profissionais formados 14.1 a)",
+          "values": [
+            "2.813",
+            "9.777",
+            "2.813",
+            "9.777"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas adquiridos 14.1 a)",
+          "values": [
+            "196.527",
+            "139.807",
+            "196.527",
+            "139.807"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 86,
+      "section": "Atletas adquiridos 403.535 17.064 - (37.989) 382.610 218.048 (159.020) 441.638 / Marcas e patentes 57 - - - 57 40 (97) - / Valor justo - departamento de futebol 1.384.385 - - - 1.384.385 - - 1.384.385 / 1.836.049 21.987 - (75.386) 1.782.650 218.525 (165.913) 1.835.262 / Amortização",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Amortização Atletas profissionais formados (5.865) (349) -",
+          "values": [
+            "(5.821)",
+            "(5.419)",
+            "4.814",
+            "(6.426)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização Atletas adquiridos (226.247) (16.556) - -",
+          "values": [
+            "(242.803)",
+            "(107.416)",
+            "105.108",
+            "(245.111)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 87,
+      "section": "ATLÉTICO MINEIRO S.A.F. Jéti",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Arena Complexo Vencer (i)",
+          "values": [
+            "261.988",
+            "77.670"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Preto e Branco",
+          "values": [
+            "6.966",
+            "6.966"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 87,
+      "section": "Controladora / Consolidado / 31/12/2024 31/12/2023 31/12/2024 31/12/2023 / Clube Atlético Mineiro 2.780 2.780 / Instituto Galo 353 317",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Mello Azevedo",
+          "values": [
+            "2.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3.133 -",
+          "values": [
+            "3.097",
+            "2.800"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 88,
+      "section": "ATLÉTICO MINEIRO S.A.F.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "43.068",
+            "50.537",
+            "60.179",
+            "140.931"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "16.192",
+            "32.519",
+            "16.192",
+            "32.519"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 88,
+      "section": "seguir: / Controladora / está composto conforme a / Consolidado / 2024 2023 2024 2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "A vencer até 30 dias",
+          "values": [
+            "7.623",
+            "9.987",
+            "9.655",
+            "15.538"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A vencer entre 31 e 60 dias",
+          "values": [
+            "2.673",
+            "1.890",
+            "2.673",
+            "2.486"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A vencer entre 61 e 90 dias",
+          "values": [
+            "2.490",
+            "1.740",
+            "2.490",
+            "2.244"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A vencer entre 91 e 180 dias",
+          "values": [
+            "8.183",
+            "3.879",
+            "8.199",
+            "5.257"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A vencer após 180 dias",
+          "values": [
+            "23.846",
+            "49.245",
+            "32.067",
+            "91.090"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vencidos até 30 dias 3.578",
+          "values": [
+            "1.938",
+            "6.978"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vencidos entre 31 e 60 dias 135 11.691",
+          "values": [
+            "18.431"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vencidos entre 61 e 90 dias",
+          "values": [
+            "8.999"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vencidos entre 91 e 180 dias 483",
+          "values": [
+            "2.225",
+            "12.682"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vencidos acima de 180 dias",
+          "values": [
+            "10.249",
+            "3.231",
+            "16.834",
+            "9.745"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "59.260",
+            "83.056",
+            "76.371",
+            "173.450"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 89,
+      "section": "(Em milhares de Reais) / Controladora Consolidado / Instituições financeiras Referência 31/12/2024 31/12/2023 31/12/2024 31/12/2023 / Capital de giro A 495.731 461.975 941.834 989.341 / Terceiros",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pessoas jurídicas não financeiras - 3.412 -",
+          "values": [
+            "3.412"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total dos empréstimos/financiamentos",
+          "values": [
+            "495.731",
+            "465.387",
+            "941.834",
+            "992.753"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "285.563",
+            "145.102",
+            "650.395",
+            "584.594"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não Circulante",
+          "values": [
+            "210.168",
+            "320.285",
+            "291.439",
+            "408.159"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 91,
+      "section": "empréstimos e financiamentos, efetuando a reclassificação da dívida para o curto / prazo. / Tributos e contribuições sociais a recolher / Controladora Consolidado / 31/12/2024 31/12/2023 31/12/2024 31/12/2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contribuições sociais",
+          "values": [
+            "7.332",
+            "3.131",
+            "7.340",
+            "3.357"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos federais",
+          "values": [
+            "39.101",
+            "16.019",
+            "40.041",
+            "17.793"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 91,
+      "section": "Tributos Estaduais 85 - 85 - / Tributos municipais 1.163 798 1.175 989 / Tributos Parcelados 335.759 305.811 339.308 305.811 / 383.440 325.759 387.949 327.950",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "88.113",
+            "49.367",
+            "89.967",
+            "51.558"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "295.327",
+            "276.392",
+            "297.982",
+            "276.392"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 94,
+      "section": "Controladora Consolidado / 31/12/2024 31/12/2023 31/12/2024 31/12/2023 / Patrocínio / Marketing /Naming Rights | / Receita antecipada (a) 37.703 33.458 159.656 172.094 / Sócio Torcedor | Receita antecipada",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(b)",
+          "values": [
+            "18.370",
+            "16.788",
+            "18.370",
+            "16.788"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transmissão | Receita antecipada (c)",
+          "values": [
+            "59.299",
+            "30.185",
+            "59.299",
+            "30.185"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 94,
+      "section": "Ingresso | Receita antecipada 154 154 154 154 / Cadeiras Cativas | Receita antecipada",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(e) - -",
+          "values": [
+            "179.360",
+            "186.699"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Camarotes | Receita antecipada (e) - -",
+          "values": [
+            "101.020",
+            "100.500"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 94,
+      "section": "Estacionamento | Receita antecipada / (e) - - 11.103 11.481 / Ajuste a valor presente | Receita / antecipada - - (4.939) (7.414) / Adiantamentos | Jogos vendas direta 62 61 62 61",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Granito | Receita antecipada - 1.697 -",
+          "values": [
+            "1.697"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros recebimentos (d)",
+          "values": [
+            "13.239",
+            "19.859",
+            "14.094",
+            "20.749"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 94,
+      "section": "Adiantamentos | Manto 9.335 - 9.335 - / Adiantamentos | Clientes 2 - 2 - / Adiantamentos | Campeonatos 6.620 - 6.620 - / 144.784 102.202 554.136 532.994",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "84.106",
+            "82.343",
+            "120.776",
+            "114.579"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "60.678",
+            "19.859",
+            "433.360",
+            "418.415"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 95,
+      "section": "Operações de debêntures / Controladora e Consolidado / Taxas % Vencimento 31/12/2024 / Debêntures 3,50% a.a 25/09/2027 58.971 / 58.971",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "13.548"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "45.423"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 95,
+      "section": "prováveis perdas, foram constituídas levando-se em consideração as / avaliações de seus assessores jurídicos. Os passivos contingentes podem ser / assim demonstrados: / Controladora Consolidado / 31/12/2024 31/12/2023 31/12/2024 31/12/2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contingências trabalhistas",
+          "values": [
+            "3.547",
+            "1.535",
+            "3.547",
+            "1.535"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingências trabalhistas cíveis",
+          "values": [
+            "29.334",
+            "42.446",
+            "29.415",
+            "42.446"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 96,
+      "section": "Existem processos em andamento de natureza cíveis e trabalhistas nas esferas / judicial e administrativa com probabilidade de perda possivel, que / representam demandas passivas no montante de: / Controladora e Consolidado / Natureza Valor",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cível",
+          "values": [
+            "89.354"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trabalhista",
+          "values": [
+            "36.453"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 96,
+      "section": "Total 126.740 / A seguir demonstra-se a movimentação dos processos provisionados / classificados como de risco de perda provável: / Controladora Consolidado / 31/12/2024 31/12/2023 31/12/2024 31/12/2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo em 1º de janeiro",
+          "values": [
+            "43.981",
+            "56.399",
+            "43.981",
+            "56.399"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adições",
+          "values": [
+            "16.241",
+            "27.047",
+            "16.322",
+            "27.047"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reversões",
+          "values": [
+            "(27.341)",
+            "(39.465)",
+            "(27.341)",
+            "(39.465)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo em 31 de dezembro",
+          "values": [
+            "32.881",
+            "43.981",
+            "32.962",
+            "43.981"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 100,
+      "section": "27. Custo com atividades esportivas / Controladora Consolidado / 14/09/2023 a 14/09/2023 a / 31/12/2024 31/12/2023 31/12/2024 31/12/2023 / Direito de imagem atletas /",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "comissão técnica",
+          "values": [
+            "(79.720)",
+            "(11.036)",
+            "(79.720)",
+            "(11.036)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salários / encargos sociais",
+          "values": [
+            "(243.646)",
+            "(32.418)",
+            "(243.646)",
+            "(32.418)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 100,
+      "section": "Amortização dos direitos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "econômicos",
+          "values": [
+            "(112.578)",
+            "(16.904)",
+            "(112.578)",
+            "(16.904)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo com atletas negociados",
+          "values": [
+            "(66.898)",
+            "(1.567)",
+            "(66.898)",
+            "(1.567)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com competições",
+          "values": [
+            "(50.723)",
+            "(5.332)",
+            "(59.513)",
+            "(5.332)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros custos com futebol",
+          "values": [
+            "(16.047)",
+            "(3.453)",
+            "(16.047)",
+            "(3.453)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 101,
+      "section": "ATLÉTICO MINEIRO S.A.F.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas administrativas",
+          "values": [
+            "(21.681)",
+            "(9.230)",
+            "(29.551)",
+            "(15.628)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com depreciação (629) (85)",
+          "values": [
+            "(2.730)",
+            "(2.364)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com pessoal",
+          "values": [
+            "(12.853)",
+            "(2.103)",
+            "(12.906)",
+            "(2.176)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 105,
+      "section": "financeiro Imediato 3 meses Meses Anos > 5 anos Total / Tributos e 3.432.540 6.959.642  40.330.788 272.788.699 204.786.356 528.298.025 / Parcelamentos / Empréstimos e 28.665.937  60.767.092 250.092.613 234.460.129 - 573.985.771 / fnanciamentos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Debêntures 706.818 3.344.801 22.238.290 45.896.076 -",
+          "values": [
+            "72.185.985"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "32.805.295",
+            "71.071.535",
+            "312.661.691",
+            "553.144.904",
+            "204.786,356",
+            "1.174.469.781"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 108,
+      "section": "resultado resultado / Caixa e equivalentes de 3.382 - 3.382 9.890 - 9.890 / caixa / Contas a receber na 192.060 = 192.060 192.060 . 192.060 / transferência de jogadores",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a receber 25.934 - 25.934 174.550 -",
+          "values": [
+            "174.550"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Títulos mantidos a valor",
+          "values": [
+            "97.818",
+            "97.818"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 108,
+      "section": "491.879 97.818 589.697 385.015 - 385.015 / Passivos financeiros / Fornecedores e outras 59.260 - 59.260 76.371 - 76.371 / obrigações / Empréstimos e",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "financiamentos 495.731 . 495.731 941.834 -",
+          "values": [
+            "941.834"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Oberações de debêntures 58.971 - 58.971 58.971 -",
+          "values": [
+            "58.971"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar na 291.973 = 291.973 291.973 -",
+          "values": [
+            "291.973"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 112,
+      "section": "(Em milhares de Reais) / Taxa de performance - o regulamento do Fundo não prevê a cobrança de taxa / de desempenho. / Encargos debitados ao Fundo / Encargos 31/12/2024 % sobre o PL 31/12/2023 % sobre o PL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Taxa de administração",
+          "values": [
+            "0,30%",
+            "1.247",
+            "0,54%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Consultoria e assessoria 80 0,03%",
+          "values": [
+            "0,03%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 112,
+      "section": "Outras despesas",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "administrativas 35 0,02%",
+          "values": [
+            "0,02%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auditoria - 0,00%",
+          "values": [
+            "0,00%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 112,
+      "section": "Rentabilidade CDI / Patrimônio Valor / Líquido Unitário da Rentabilidade Rentabilidade Rentabilidade ' Rentabilidade / Data Médio Cota (R$) - % Acumulada % -% Acumulada % / 31/12/2023 - 67,088008 - - - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "31/01/2024",
+          "values": [
+            "229.551",
+            "67,068610",
+            "(0,03)",
+            "(0,03)",
+            "0,97",
+            "0,97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "29/02/2024",
+          "values": [
+            "229.486",
+            "67,050715",
+            "(0,03)",
+            "(0,06)",
+            "0,80",
+            "1,78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31/03/2024",
+          "values": [
+            "229.422",
+            "67,031980",
+            "(0,03)",
+            "(0,08)",
+            "0,83",
+            "2,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30/04/2024",
+          "values": [
+            "229.355",
+            "67,011589",
+            "(0,03)",
+            "(0,11)",
+            "0,89",
+            "3,54"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31/05/2024",
+          "values": [
+            "229.287",
+            "66,992037",
+            "(0,03)",
+            "(0,14)",
+            "0,83",
+            "4,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30/06/2024",
+          "values": [
+            "229.221",
+            "66,973332",
+            "(0,03)",
+            "(0,17)",
+            "0,79",
+            "5,22"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31/07/2024",
+          "values": [
+            "229.153",
+            "66,952114",
+            "(0,03)",
+            "(0,20)",
+            "0,91",
+            "6,18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31/08/2024",
+          "values": [
+            "229.082",
+            "66,931744",
+            "(0,03)",
+            "(0,23)",
+            "0,87",
+            "7,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30/09/2024",
+          "values": [
+            "229.013",
+            "66,912211",
+            "(0,03)",
+            "(0,26)",
+            "0,84",
+            "8,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31/10/2024",
+          "values": [
+            "228.944",
+            "66,891012",
+            "(0,03)",
+            "(0,29)",
+            "0,93",
+            "9,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30/11/2024",
+          "values": [
+            "228.877",
+            "66,873160",
+            "(0,03)",
+            "(0,32)",
+            "0,79",
+            "9,87"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31/12/2024",
+          "values": [
+            "228.920",
+            "67,513561",
+            "0,96",
+            ",63",
+            "0,93",
+            "10,89"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 112,
+      "section": "Evolução do valor da cota e da rentabilidade do Fundo Rentabilidade CDI / Valor / Patrimônio Unitário da Rentabilidade - Rentabilidade Rentabilidade - Rentabilidade / Data Líquido Médio Cota (R$) % Acumulada % % Acumulada % / 31/12/2022 - 67,088008",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "31/01/2023",
+          "values": [
+            "981.757",
+            "286,860000",
+            "(0,01)",
+            "53,75",
+            "1,07",
+            "2,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "28/02/2023",
+          "values": [
+            "981.631",
+            "286,840000",
+            "(0,01)",
+            "53,74",
+            "0,87",
+            "3,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31/03/2023",
+          "values": [
+            "981.536",
+            "286,810000",
+            "(0,01)",
+            "53,73",
+            "1,12",
+            "4,36"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30/04/2023",
+          "values": [
+            "981.400",
+            "286,770000",
+            "(0,01)",
+            "53,71",
+            "0,87",
+            "5,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31/05/2023",
+          "values": [
+            "981.322",
+            "286,750000",
+            "(0,01)",
+            "53,69",
+            "1,07",
+            "6,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30/06/2023",
+          "values": [
+            "981.218",
+            "286,710000",
+            "(0,01)",
+            "53,67",
+            "1,02",
+            "7,64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31/07/2023",
+          "values": [
+            "981.104",
+            "286,680000",
+            "(0,01)",
+            "53,66",
+            "1,02",
+            "8,79"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 113,
+      "section": "ATLÉTICO MINEIRO S.A.F. 4",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "31/08/2023",
+          "values": [
+            "980.984",
+            "286,640000",
+            "(0,01)",
+            "53,64",
+            "1,09",
+            "10,03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30/09/2023",
+          "values": [
+            "980.859",
+            "286,610000",
+            "(0,01)",
+            "53,62",
+            "0,92",
+            "11,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31/10/2023",
+          "values": [
+            "980.730",
+            "286,570000",
+            "(0,01)",
+            "53,60",
+            "0,95",
+            "12,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30/11/2023",
+          "values": [
+            "980.595",
+            "286,530000",
+            "(0,01)",
+            "53,58",
+            "0,87",
+            "13,24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31/12/2023",
+          "values": [
+            "229.655",
+            "67,088008",
+            "(76,59)",
+            "(64,04)",
+            "0,85",
+            "14,25"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 57,
+      "section": "(1.159) - (1.159) -",
+      "likelyRelevant": false,
+      "totalLabel": "Total Custos das atividades esportivas, sociais e patrimoniais",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 69,
+      "section": "O Atlético S.A.F ao assumir as dívidas torna-se legalmente responsável pelo / pagamento dessas obrigações. Isso inclui o cumprimento de todos os termos e / condições estabelecidas nos contratos de dívidas. / O saldo da assunção de dívidas é composto conforme quadro abaixo: / 31/12/2024 31/12/2023",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "842.878",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "4634"
+    },
+    {
+      "page": 69,
+      "section": "O Atlético S.A.F ao assumir as dívidas torna-se legalmente responsável pelo / pagamento dessas obrigações. Isso inclui o cumprimento de todos os termos e / condições estabelecidas nos contratos de dívidas. / O saldo da assunção de dívidas é composto conforme quadro abaixo: / 31/12/2024 31/12/2023",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "1.046.263",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "-5127"
+    },
+    {
+      "page": 79,
+      "section": "Vencidos entre 31 e 60 dias 2.091 100 2.091 100 / Vencidos entre 61 e 90 dias 3.550 1.452 3.550 1.452 / Vencidos entre 91 e 180 dias 1.731 361 1.731 361",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "192.060",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-177826"
+    },
+    {
+      "page": 79,
+      "section": "Vencidos entre 31 e 60 dias 2.091 100 2.091 100 / Vencidos entre 61 e 90 dias 3.550 1.452 3.550 1.452 / Vencidos entre 91 e 180 dias 1.731 361 1.731 361",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "67.560",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-61171"
+    },
+    {
+      "page": 79,
+      "section": "Vencidos entre 31 e 60 dias 2.091 100 2.091 100 / Vencidos entre 61 e 90 dias 3.550 1.452 3.550 1.452 / Vencidos entre 91 e 180 dias 1.731 361 1.731 361",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total",
+      "target": "192.060",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-177826"
+    },
+    {
+      "page": 79,
+      "section": "Vencidos entre 31 e 60 dias 2.091 100 2.091 100 / Vencidos entre 61 e 90 dias 3.550 1.452 3.550 1.452 / Vencidos entre 91 e 180 dias 1.731 361 1.731 361",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total",
+      "target": "67.560",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-61171"
+    },
+    {
+      "page": 80,
+      "section": "Vencidos entre 61 e 90 dias 489 821 489 821 / Vencidos entre 91 e 180 dias 5.215 546 5.215 546",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "25.934",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-15816"
+    },
+    {
+      "page": 80,
+      "section": "Vencidos entre 61 e 90 dias 489 821 489 821 / Vencidos entre 91 e 180 dias 5.215 546 5.215 546",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "34.997",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-30998"
+    },
+    {
+      "page": 80,
+      "section": "Vencidos entre 61 e 90 dias 489 821 489 821 / Vencidos entre 91 e 180 dias 5.215 546 5.215 546",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total",
+      "target": "174.550",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-164432"
+    },
+    {
+      "page": 80,
+      "section": "Vencidos entre 61 e 90 dias 489 821 489 821 / Vencidos entre 91 e 180 dias 5.215 546 5.215 546",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total",
+      "target": "213.465",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-209466"
+    },
+    {
+      "page": 88,
+      "section": "seguir: / Controladora / está composto conforme a / Consolidado / 2024 2023 2024 2023",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "59.260",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "27397"
+    },
+    {
+      "page": 88,
+      "section": "seguir: / Controladora / está composto conforme a / Consolidado / 2024 2023 2024 2023",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "83.056",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "6576"
+    },
+    {
+      "page": 88,
+      "section": "seguir: / Controladora / está composto conforme a / Consolidado / 2024 2023 2024 2023",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total",
+      "target": "76.371",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "-4453"
+    },
+    {
+      "page": 88,
+      "section": "seguir: / Controladora / está composto conforme a / Consolidado / 2024 2023 2024 2023",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total",
+      "target": "173.450",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "-47090"
+    },
+    {
+      "page": 89,
+      "section": "(Em milhares de Reais) / Controladora Consolidado / Instituições financeiras Referência 31/12/2024 31/12/2023 31/12/2024 31/12/2023 / Capital de giro A 495.731 461.975 941.834 989.341 / Terceiros",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total dos empréstimos/financiamentos",
+      "target": "495.731",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-492319"
+    },
+    {
+      "page": 105,
+      "section": "financeiro Imediato 3 meses Meses Anos > 5 anos Total / Tributos e 3.432.540 6.959.642  40.330.788 272.788.699 204.786.356 528.298.025 / Parcelamentos / Empréstimos e 28.665.937  60.767.092 250.092.613 234.460.129 - 573.985.771 / fnanciamentos",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "32.805.295",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "39380690"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 40,
+    "results": [
+      {
+        "label": "ENDIVIDAMENTO LÍQUIDO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ENDIVIDAMENTO LÍQUIDO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ENDIV. LÍQUIDO / RECEITA 6,9 3,1",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ENDIV. LÍQUIDO / RECEITA 6,9 3,1",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(24.378) (664)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(24.378) (664)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Custo com projetos",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Receitas com Projetos",
+        "similarity": 50
+      },
+      {
+        "label": "Custo com projetos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Custo com projetos",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Resultado antes do resultado financeiro",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado antes do resultado financeiro",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas/(despesas) financeiras, líquidas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas/(despesas) financeiras, líquidas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado antes dos tributos sobre o lucro",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado antes dos tributos sobre o lucro",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Insumos Adquiridos de Terceiros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Insumos Adquiridos de Terceiros",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Materiais, serviços, utilidades e outros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Materiais, serviços, utilidades e outros",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Valor Adicionado Bruto",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Valor Adicionado Bruto",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Retenções",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Retenções",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com depreciação (629) (85)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com depreciação (629) (85)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "depreciation",
+        "matchedLabel": "Despesas com depreciação",
+        "similarity": 75
+      },
+      {
+        "label": "Amortização/baixa de contrato de atletas profissionais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização/baixa de contrato de atletas profissionais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Valor Adicionado Líquido Produzido Pelo Clube",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Valor Adicionado Líquido Produzido Pelo Clube",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Valor Adicionado Recebido em Transferência",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Valor Adicionado Recebido em Transferência",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cartões de crédito 903 9.947",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cartões de crédito 903 9.947",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrimoniais",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Receitas Patrimoniais",
+        "similarity": 50
+      },
+      {
+        "label": "Patrimoniais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrocínio / marketing",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrocínio / marketing",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transmissões compet. esportivas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transmissões compet. esportivas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cadeiras Cativas - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cadeiras Cativas - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Camarotes - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Camarotes - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Estacionamento - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Estacionamento - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas profissionais formados 14.1 a)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas profissionais formados 14.1 a)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas adquiridos 14.1 a)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas adquiridos 14.1 a)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(b)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(b)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transmissão | Receita antecipada (c)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transmissão | Receita antecipada (c)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(e) - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(e) - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Camarotes | Receita antecipada (e) - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Camarotes | Receita antecipada (e) - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Granito | Receita antecipada - 1.697 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Granito | Receita antecipada - 1.697 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros recebimentos (d)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros recebimentos (d)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "comissão técnica",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "comissão técnica",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Salários / encargos sociais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Salários / encargos sociais",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Salários / encargos sociais (futebol)",
+        "similarity": 75
+      },
+      {
+        "label": "Contas a receber 25.934 - 25.934 174.550 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contas a receber 25.934 - 25.934 174.550 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Títulos mantidos a valor",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Títulos mantidos a valor",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Taxa de administração",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Taxa de administração",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Consultoria e assessoria 80 0,03%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Consultoria e assessoria 80 0,03%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "administrativas 35 0,02%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "administrativas 35 0,02%",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Despesas administrativas",
+        "similarity": 50
+      },
+      {
+        "label": "Auditoria - 0,00%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Auditoria - 0,00%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Atlético Mineiro",
+    "matches": [
+      {
+        "leagueId": "br-serieA",
+        "year": "2024",
+        "matchedName": "Atlético Mineiro",
+        "wikipediaPage": "2024 Campeonato Brasileiro Série A"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": [
+    "16 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

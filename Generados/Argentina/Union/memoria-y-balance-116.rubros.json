@@ -1,0 +1,279 @@
+{
+  "md": "Clubes/Argentina/Union/memoria-y-balance-116.md",
+  "pdf": "Clubes/Argentina/Union/memoria-y-balance-116.pdf",
+  "club": "union",
+  "year": 0,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:51:19.746Z",
+  "tieOuts": {
+    "cierran": 17,
+    "noCierran": 18
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "16 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": false,
+  "seleccion": {
+    "ok": true,
+    "filas": 24,
+    "notasUsadas": []
+  },
+  "ladoConocido": 23,
+  "rubros": [
+    {
+      "label": "Sueldos y Jornales de Fútbol",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        427827.99784
+      ],
+      "origen": "estado 6",
+      "glosa": "Sueldos y Jornales de Fútbol"
+    },
+    {
+      "label": "Sueldos y Cargas Soc. de Administración",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        19695.93545
+      ],
+      "origen": "estado 6",
+      "glosa": "Sueldos y Cargas Soc. de Administración"
+    },
+    {
+      "label": "Sueldos y Jornales de Maestranza",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        164082.46583
+      ],
+      "origen": "estado 6",
+      "glosa": "Sueldos y Jornales de Maestranza"
+    },
+    {
+      "label": "Sueldos y Jornales p/ Reunión",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        12108.47223
+      ],
+      "origen": "estado 6",
+      "glosa": "Sueldos y Jornales p/ Reunión"
+    },
+    {
+      "label": "Gastos Administrativos",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        72916.60512
+      ],
+      "origen": "estado 6",
+      "glosa": "Gastos Administrativos"
+    },
+    {
+      "label": "Gastos del Estadio Cubierto",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        8081.72902
+      ],
+      "origen": "estado 6",
+      "glosa": "Gastos del Estadio Cubierto"
+    },
+    {
+      "label": "Gastos del Estadio de Fútbol",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        83677.84347
+      ],
+      "origen": "estado 6",
+      "glosa": "Gastos del Estadio de Fútbol"
+    },
+    {
+      "label": "Gastos de Fútbol",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        440912.68026
+      ],
+      "origen": "estado 6",
+      "glosa": "Gastos de Fútbol"
+    },
+    {
+      "label": "Gastos de partidos oficiales",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        38168.47056
+      ],
+      "origen": "estado 6",
+      "glosa": "Gastos de partidos oficiales"
+    },
+    {
+      "label": "Gastos de Vigilancia",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        22559.58784
+      ],
+      "origen": "estado 6",
+      "glosa": "Gastos de Vigilancia"
+    },
+    {
+      "label": "Comisiones y gtos bancarios",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        37391.98367
+      ],
+      "origen": "estado 6",
+      "glosa": "Comisiones y gtos bancarios"
+    },
+    {
+      "label": "Amortizaciones ( Anexo I )",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        23630.67801
+      ],
+      "origen": "estado 6",
+      "glosa": "Amortizaciones ( Anexo I )"
+    },
+    {
+      "label": "Gastos de Mantenimiento",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        40408.64508
+      ],
+      "origen": "estado 6",
+      "glosa": "Gastos de Mantenimiento"
+    },
+    {
+      "label": "Energía Eléctrica, Gas, Agua, Telefonos.",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        21167.48045
+      ],
+      "origen": "estado 6",
+      "glosa": "Energía Eléctrica, Gas, Agua, Telefonos."
+    },
+    {
+      "label": "Gastos por Prestamos y Ventas de Jugadores",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        108522.94402
+      ],
+      "origen": "estado 6",
+      "glosa": "Gastos por Prestamos y Ventas de Jugadores"
+    },
+    {
+      "label": "Gastos del Complejo La Tatenguita",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        1173.24444
+      ],
+      "origen": "estado 6",
+      "glosa": "Gastos del Complejo La Tatenguita"
+    },
+    {
+      "label": "Amortizaciones de Activos Intangibles ( Anexo II )",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        118881.79866
+      ],
+      "origen": "estado 6",
+      "glosa": "Amortizaciones de Activos Intangibles ( Anexo II )"
+    },
+    {
+      "label": "Seguros",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        850.47871
+      ],
+      "origen": "estado 6",
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Departamento para la Actividad Educativa",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        259498.99669
+      ],
+      "origen": "estado 6",
+      "glosa": "Departamento para la Actividad Educativa"
+    },
+    {
+      "label": "Egresos de Subcomisiones",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        97570.39792
+      ],
+      "origen": "estado 6",
+      "glosa": "Egresos de Subcomisiones"
+    },
+    {
+      "label": "Gastos Generales",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        6307.86273
+      ],
+      "origen": "estado 6",
+      "glosa": "Gastos Generales"
+    },
+    {
+      "label": "IVA no computable",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        45257.03046
+      ],
+      "origen": "estado 6",
+      "glosa": "IVA no computable"
+    },
+    {
+      "label": "Quebrantos por Incobrables y otras Contingencias",
+      "lado": "expense",
+      "page": 42,
+      "section": "CLUB ATLÉTICO UNIÓN / Informe Sobre el Rubro Gastos y su Aplicación (Rectificativo)",
+      "values": [
+        16800
+      ],
+      "origen": "estado 6",
+      "glosa": "Quebrantos por Incobrables y otras Contingencias"
+    }
+  ]
+}

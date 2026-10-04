@@ -1,0 +1,666 @@
+{
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2010.md",
+ "generatedAt": "2026-09-30T22:48:46.443Z",
+ "rubrosHuella": "4c7ec764d1ac2706346cf6463f554c33f9554925",
+ "rubros": [
+  {
+   "label": "Diferencias de cambio (486.760) (553.928) 84 (35.629) -",
+   "lado": null,
+   "page": 52,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios básicos",
+   "lado": null,
+   "page": 48,
+   "section": "Costo de ventas                                              7.953.110      7.990.897",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesorías",
+   "lado": null,
+   "page": 48,
+   "section": "Costo de ventas                                              7.953.110      7.990.897",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": null,
+   "page": 48,
+   "section": "Costo de ventas                                              7.953.110      7.990.897",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 48,
+   "section": "Costo de ventas                                              7.953.110      7.990.897",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenciones",
+   "lado": null,
+   "page": 48,
+   "section": "Costo de ventas                                              7.953.110      7.990.897",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración administración",
+   "lado": null,
+   "page": 48,
+   "section": "Costo de ventas                                              7.953.110      7.990.897",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos de administración",
+   "lado": "expense",
+   "page": 48,
+   "section": "Costo de ventas                                              7.953.110      7.990.897",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de venta jugadores",
+   "lado": "expense",
+   "page": 48,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneracion plantel profesional y cuerpo tecnico",
+   "lado": null,
+   "page": 48,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizacion Activos en concesion",
+   "lado": null,
+   "page": 48,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_amortisation",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizacion pases jugadores profesionales",
+   "lado": null,
+   "page": 48,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos de concentracion traslados y otros",
+   "lado": "expense",
+   "page": 48,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros costos",
+   "lado": "expense",
+   "page": 48,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 24. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos financieros 357.456 1.028.496 603 -",
+   "lado": "revenue",
+   "page": 52,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Gasto (Ingreso) por Impuesto a las Ganancias 730.863 608.295 (166.625) (290.068) 39.422 -",
+   "lado": "expense",
+   "page": 52,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1102
+  },
+  {
+   "label": "Costo de ventas 7.100.016 7.348.336 853.094 642.561 - -",
+   "lado": "expense",
+   "page": 52,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+   "choice": "player_amortisation",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "player_amortisation",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 52,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "lump_football_operations",
+     0.21000000000000002
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Otros ingresos, por función 100.590 489.369 3 - -",
+   "lado": "revenue",
+   "page": 52,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Larrain Vial",
+   "lado": null,
+   "page": 48,
+   "section": "25. INGRESOS FINANCIEROS",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "sponsorship_commercial",
+     0.18000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Otros gastos, por función (377.717) (121.021) (3.376) (1.841) (37)",
+   "lado": "expense",
+   "page": 52,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "Celfin",
+   "lado": null,
+   "page": 48,
+   "section": "25. INGRESOS FINANCIEROS",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "sponsorship_commercial",
+     0.12
+    ],
+    [
+     "broadcasting",
+     0.09
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Efectivo y Equivalentes al Efectivo",
+   "lado": null,
+   "page": 53,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 29. MONEDA EXTRANJERA",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1293
+  },
+  {
+   "label": "Pesos -",
+   "lado": null,
+   "page": 53,
+   "section": "Euros            -          -              -",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1255
+  },
+  {
+   "label": "Fondos Mutos -",
+   "lado": null,
+   "page": 48,
+   "section": "25. INGRESOS FINANCIEROS",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "member_dues",
+     0.04
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Pesos",
+   "lado": null,
+   "page": 54,
+   "section": "Euros        -            -       -            -       -             -",
+   "choice": "other_income",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Otros activos financieros corrientes Dolares",
+   "lado": null,
+   "page": 53,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 29. MONEDA EXTRANJERA",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1461
+  },
+  {
+   "label": "Gasto de administración",
+   "lado": "expense",
+   "page": 52,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / ESTADO DE RESULTADOS INTEGRALES",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Otros activos financieros corrientes",
+   "lado": null,
+   "page": 53,
+   "section": "Euros            -          -              -",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1429
+  },
+  {
+   "label": "Ingresos por recaudaciones y venta de jugadores",
+   "lado": "revenue",
+   "page": 47,
+   "section": "23. INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "player_sales",
+   "confidence": 0.32,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por publicidad",
+   "lado": "revenue",
+   "page": 47,
+   "section": "23. INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 47,
+   "section": "23. INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Activos por impuestos corrientes",
+   "lado": "expense",
+   "page": 53,
+   "section": "Euros           -          -              - / Pesos         33.025     66.051           - / Euros           -          -              -",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Dolares 407.003 - - 86.058 -",
+   "lado": null,
+   "page": 54,
+   "section": "Pesos       128.369      -         201.834       -      349.551         - / Euros          -         -            -          -         -            - / Pesos       118.268      -         145.263       -         -            - / Euros          -         -            -          -         -            - / Pesos          -         -           3.500       -         -            -",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_income",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 1378
+  },
+  {
+   "label": "Activos por impuestos diferidos",
+   "lado": "expense",
+   "page": 53,
+   "section": "Euros           -            -            -",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 991
+  },
+  {
+   "label": "Euros - - - 16.717 -",
+   "lado": null,
+   "page": 54,
+   "section": "Pesos       128.369      -         201.834       -      349.551         - / Euros          -         -            -          -         -            - / Pesos       118.268      -         145.263       -         -            - / Euros          -         -            -          -         -            - / Pesos          -         -           3.500       -         -            -",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1370
+  },
+  {
+   "label": "Pasivo por impuestos diferidos",
+   "lado": "expense",
+   "page": 54,
+   "section": "Euros        -            -       -            -       -             -",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Intereses Inversion UBS",
+   "lado": null,
+   "page": 48,
+   "section": "25. INGRESOS FINANCIEROS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Deudores comerciales y otras cuentas por cobrar corrienteDolares",
+   "lado": null,
+   "page": 53,
+   "section": "Euros            -          -              -",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1484
+  }
+ ]
+}

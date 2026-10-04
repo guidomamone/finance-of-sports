@@ -1,0 +1,1316 @@
+{
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2025.md",
+ "pdf": "Clubes/Brasil/Avai/demonstracoes-contabeis-2025.pdf",
+ "club": "avai",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:51:36.322Z",
+ "tieOuts": {
+  "cierran": 84,
+  "noCierran": 4
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 117,
+  "notasUsadas": [
+   "49",
+   "50",
+   "42",
+   "38",
+   "9",
+   "53",
+   "54",
+   "21",
+   "17"
+  ]
+ },
+ "ladoConocido": 106,
+ "rubros": [
+  {
+   "label": "Descontos ativos",
+   "lado": "revenue",
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "values": [
+    0.044
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Outras receitas financeiras",
+   "lado": "revenue",
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "values": [
+    0.006
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Rendimentos de aplicações financeiras",
+   "lado": "revenue",
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "values": [
+    0.068
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Ajuste a valor presente dívidas RJ",
+   "lado": "revenue",
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "values": [
+    0.888
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Juros passivos",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "values": [
+    -0.338
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Encargos de empréstimos",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "values": [
+    -0.978
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "IOF",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "values": [
+    -0.161
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Descontos passivos",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "values": [
+    -0.385
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "IRRF s/aplicação Financeira",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "values": [
+    -0.023
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Tarifas bancárias",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "values": [
+    -0.202
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Atualização dívida tributária",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "values": [
+    -41.706
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Arrendamentos",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "values": [
+    2.567
+   ],
+   "origen": "nota 49 (ancla 2)",
+   "ancla": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "label": "RECEITA LÍQUIDA DAS ATIVIDADES",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "values": [
+    39.22
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Bilheteria",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "values": [
+    3.04
+   ],
+   "origen": "nota 49 (ancla 2)",
+   "ancla": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "label": "Cota TV e transmissão jogos",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "values": [
+    11.064
+   ],
+   "origen": "nota 49 (ancla 2)",
+   "ancla": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "label": "Mensalidades dos Sócios",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "values": [
+    9.83
+   ],
+   "origen": "nota 49 (ancla 2)",
+   "ancla": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "label": "Patrocínios",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "values": [
+    6.182
+   ],
+   "origen": "nota 49 (ancla 2)",
+   "ancla": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "label": "Participações em competições",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "values": [
+    0.013
+   ],
+   "origen": "nota 49 (ancla 2)",
+   "ancla": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "label": "Publicidades",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "values": [
+    3.903
+   ],
+   "origen": "nota 49 (ancla 2)",
+   "ancla": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "label": "Receitas de locações",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "values": [
+    2.371
+   ],
+   "origen": "nota 49 (ancla 2)",
+   "ancla": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "label": "Repasses da Loteria Timemania",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "values": [
+    0.312
+   ],
+   "origen": "nota 49 (ancla 2)",
+   "ancla": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "label": "Venda de Material Esportivo",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "values": [
+    0.036
+   ],
+   "origen": "nota 49 (ancla 2)",
+   "ancla": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "label": "Venda e uso da Marca",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "values": [
+    0.233
+   ],
+   "origen": "nota 49 (ancla 2)",
+   "ancla": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "label": "(-) Deduções da Receita operacional",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "values": [
+    -0.331
+   ],
+   "origen": "nota 49 (ancla 2)",
+   "ancla": "RECEITA LÍQUIDA DAS ATIVIDADES"
+  },
+  {
+   "label": "Salários",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -17.479
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "CUSTOS DO FUTEBOL PROFISSIONAL",
+   "lado": "expense",
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "values": [
+    -55.029
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Direito de uso de imagem",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -11.168
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Auxílio moradia",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -3.173
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Férias",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -2.758
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Associação de atletas profissionais",
+   "lado": "expense",
+   "page": 31,
+   "section": "### 24. Provisão para Contingências – ações cíveis / #### a) ações com classificação de risco provável",
+   "values": [
+    1.55
+   ],
+   "origen": "nota 42 (ancla 2>50)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Entes públicos municipais",
+   "lado": "expense",
+   "page": 31,
+   "section": "### 24. Provisão para Contingências – ações cíveis / #### a) ações com classificação de risco provável",
+   "values": [
+    0.171
+   ],
+   "origen": "nota 42 (ancla 2>50)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Patrocínio",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 20. Receitas Diferidas",
+   "values": [
+    0.952
+   ],
+   "origen": "nota 38 (ancla 2>50)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Adiantamento de salários",
+   "lado": "expense",
+   "page": 18,
+   "section": "### 6. Adiantamentos (AC)",
+   "values": [
+    0.034
+   ],
+   "origen": "nota 9 (ancla 2>50>38)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Adiantamento para viagens",
+   "lado": "expense",
+   "page": 18,
+   "section": "### 6. Adiantamentos (AC)",
+   "values": [
+    0.033
+   ],
+   "origen": "nota 9 (ancla 2>50>38)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Adiantamento Fornecedores (bens e serviços)",
+   "lado": "expense",
+   "page": 18,
+   "section": "### 6. Adiantamentos (AC)",
+   "values": [
+    0.348
+   ],
+   "origen": "nota 9 (ancla 2>50>38)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Luvas",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 20. Receitas Diferidas",
+   "values": [
+    0.3
+   ],
+   "origen": "nota 38 (ancla 2>50)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Contribuição Sócios",
+   "lado": "expense",
+   "page": 30,
+   "section": "### 20. Receitas Diferidas",
+   "values": [
+    0.012
+   ],
+   "origen": "nota 38 (ancla 2>50)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Premiação por desempenho",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -1.51
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "FGTS",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -1.377
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Honorários profissionais",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -1.208
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Comissões de negociação de atletas",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.984
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "INSS",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.981
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Empréstimos de jogadores",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.914
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Viagens",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.849
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Bônus contratuais",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.845
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "13 Salário",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.833
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Direitos econômicos profissionais",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.517
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Borderô de jogos",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.496
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Outros custos profissionais",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.384
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Taxa de registro de atletas",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.364
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Material esportivo",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.311
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Hospedagens",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.283
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Luvas",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.268
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Ajuda de custo",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.24
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Alimentação",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.218
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Pis sobre folha",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.215
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Concentração",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.156
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Comissões sobre vendas",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.127
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Gratificações",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.113
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Software e consultorias",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.093
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Futebol feminino",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -1.801
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Esportes Olímpicos",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -0.06
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "Outros Custos",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "values": [
+    -1.902
+   ],
+   "origen": "nota 50 (ancla 2)",
+   "ancla": "CUSTOS DO FUTEBOL PROFISSIONAL"
+  },
+  {
+   "label": "CUSTOS DO FUTEBOL DE FORMAÇÃO",
+   "lado": "expense",
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "values": [
+    -9.759
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "OUTRAS RECEITAS OPERACIONAIS",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "values": [
+    4.631
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Administrativas",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "values": [
+    -5.675
+   ],
+   "origen": "nota 53 (ancla 2)",
+   "ancla": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "label": "DESPESAS GERAIS E ADMINISTRATIVAS",
+   "lado": "expense",
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "values": [
+    -19.704
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Alimentação",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "values": [
+    -0.348
+   ],
+   "origen": "nota 53 (ancla 2)",
+   "ancla": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "label": "Comercialização",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "values": [
+    -0.14
+   ],
+   "origen": "nota 53 (ancla 2)",
+   "ancla": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "label": "Comunicação",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "values": [
+    -0.341
+   ],
+   "origen": "nota 53 (ancla 2)",
+   "ancla": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "label": "Depreciação/Amortização",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "values": [
+    -3.079
+   ],
+   "origen": "nota 53 (ancla 2)",
+   "ancla": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "label": "Infraestrutura",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "values": [
+    -6.32
+   ],
+   "origen": "nota 53 (ancla 2)",
+   "ancla": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "label": "Logística de eventos",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "values": [
+    -1.374
+   ],
+   "origen": "nota 53 (ancla 2)",
+   "ancla": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "label": "Marketing",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "values": [
+    -0.371
+   ],
+   "origen": "nota 53 (ancla 2)",
+   "ancla": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "label": "Negócios",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "values": [
+    -1.692
+   ],
+   "origen": "nota 53 (ancla 2)",
+   "ancla": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "label": "Plano de Saúde",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "values": [
+    -0.328
+   ],
+   "origen": "nota 53 (ancla 2)",
+   "ancla": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "values": [
+    -0.036
+   ],
+   "origen": "nota 53 (ancla 2)",
+   "ancla": "DESPESAS GERAIS E ADMINISTRATIVAS"
+  },
+  {
+   "label": "RECEITAS FINANCEIRAS",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "values": [
+    1.006
+   ],
+   "origen": "estado 2 (su nota queda consumida sin abrir)"
+  },
+  {
+   "label": "DESPESAS FINANCEIRAS",
+   "lado": "expense",
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "values": [
+    -2.088
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "ATUALIZAÇÃO DAS OBRIGAÇÕES TRIBUTÁRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "values": [
+    -41.706
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "**4.1 Passivo Circulante (2025): R$",
+   "lado": null,
+   "page": 44,
+   "section": "#### 4. Evolução do Passivo e do Patrimônio Líquido:",
+   "values": [
+    0.00006
+   ],
+   "origen": "estado 66"
+  },
+  {
+   "label": "- Fornecedores: R$",
+   "lado": null,
+   "page": 44,
+   "section": "#### 4. Evolução do Passivo e do Patrimônio Líquido:",
+   "values": [
+    0.016658
+   ],
+   "origen": "estado 66"
+  },
+  {
+   "label": "- Empréstimos e financiamentos circulantes: R$",
+   "lado": null,
+   "page": 44,
+   "section": "#### 4. Evolução do Passivo e do Patrimônio Líquido:",
+   "values": [
+    0.007708
+   ],
+   "origen": "estado 66"
+  },
+  {
+   "label": "- Empréstimo de Terceiros = R$",
+   "lado": null,
+   "page": 44,
+   "section": "#### 4. Evolução do Passivo e do Patrimônio Líquido:",
+   "values": [
+    0.004272
+   ],
+   "origen": "estado 66"
+  },
+  {
+   "label": "- Obrigações trabalhistas: R$",
+   "lado": null,
+   "page": 44,
+   "section": "#### 4. Evolução do Passivo e do Patrimônio Líquido:",
+   "values": [
+    0.014139
+   ],
+   "origen": "estado 66"
+  },
+  {
+   "label": "- Obrigações tributárias e previdenciárias: R$",
+   "lado": null,
+   "page": 44,
+   "section": "#### 4. Evolução do Passivo e do Patrimônio Líquido:",
+   "values": [
+    0.005394
+   ],
+   "origen": "estado 66"
+  },
+  {
+   "label": "- Direito de Imagem = R$",
+   "lado": null,
+   "page": 44,
+   "section": "#### 4. Evolução do Passivo e do Patrimônio Líquido:",
+   "values": [
+    0.007804
+   ],
+   "origen": "estado 66"
+  },
+  {
+   "label": "- Credores CNRD (órgão credenciado CBF) = R$",
+   "lado": null,
+   "page": 44,
+   "section": "#### 4. Evolução do Passivo e do Patrimônio Líquido:",
+   "values": [
+    0.001599
+   ],
+   "origen": "estado 66"
+  },
+  {
+   "label": "13 Salário",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.707
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Ajuda de custo",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.558
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Alimentação",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    1.007
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Aluguéis de campos",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.021
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Auxílio moradia",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.501
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Comissão em negociações de atletas",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.112
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Direito de imagem",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.189
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Empréstimos de jogadores",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.047
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Férias",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.692
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "FGTS",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.297
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Honorários profissionais",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.333
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Hospedagens",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.407
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Impostos e taxas",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.253
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "INSS",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.372
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Material de consumo",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.027
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Material esportivo",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.024
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Material médico",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.023
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Outros custos categoria de formação (Base)",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.06
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Pis sobre folha",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.039
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Salários",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    3.143
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.08
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Taxas de registro de atletas",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.222
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Transporte",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.271
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Viagens",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "values": [
+    0.274
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "Saldo em 1º de janeiro de 2023",
+   "lado": "expense",
+   "page": 23,
+   "section": "#### b) Transição da ITG 2003 (R2) e posição em 31 de dezembro de 2023",
+   "values": [
+    7.346
+   ],
+   "origen": "nota 17 (ancla 16>21)",
+   "ancla": "Direitos profissionais de atletas"
+  },
+  {
+   "label": "Direitos profissionais de atletas",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11. Intangível / #### a) Composição do intangível",
+   "values": [
+    8.758
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Adições",
+   "lado": "expense",
+   "page": 23,
+   "section": "#### b) Transição da ITG 2003 (R2) e posição em 31 de dezembro de 2023",
+   "values": [
+    2.35
+   ],
+   "origen": "nota 17 (ancla 16>21)",
+   "ancla": "Direitos profissionais de atletas"
+  },
+  {
+   "label": "Baixas e atletas dispensados",
+   "lado": "expense",
+   "page": 23,
+   "section": "#### b) Transição da ITG 2003 (R2) e posição em 31 de dezembro de 2023",
+   "values": [
+    -1.238
+   ],
+   "origen": "nota 17 (ancla 16>21)",
+   "ancla": "Direitos profissionais de atletas"
+  },
+  {
+   "label": "Adições",
+   "lado": "expense",
+   "page": 24,
+   "section": "#### d) Movimentação do intangível no exercício de 2025",
+   "values": [
+    1.05
+   ],
+   "origen": "nota 21 (ancla 16)",
+   "ancla": "Direitos profissionais de atletas"
+  },
+  {
+   "label": "Baixas",
+   "lado": "expense",
+   "page": 24,
+   "section": "#### d) Movimentação do intangível no exercício de 2025",
+   "values": [
+    -0.75
+   ],
+   "origen": "nota 21 (ancla 16)",
+   "ancla": "Direitos profissionais de atletas"
+  },
+  {
+   "label": "Direitos de exploração comercial - LFU",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11. Intangível / #### a) Composição do intangível",
+   "values": [
+    24.132
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Software",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11. Intangível / #### a) Composição do intangível",
+   "values": [
+    0.352
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Deságio recuperação judicial",
+   "lado": "revenue",
+   "page": 35,
+   "section": "### 32. Outras receitas operacionais",
+   "values": [
+    19.688
+   ],
+   "origen": "estado 52"
+  }
+ ]
+}

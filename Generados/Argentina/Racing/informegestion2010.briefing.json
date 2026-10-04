@@ -1,0 +1,167 @@
+{
+  "club": "racing",
+  "year": 2010,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Racing/informegestion2010.md",
+  "generatedAt": "2026-09-30T22:39:46.733Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 2,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 66,
+      "section": "5191         SOCIOS DE FILIALES / 2756        ADHERENTES / 2435        ACTIVOS / INGRESO DE SOCIOS NUEVOS 2010 / MES         CANTIDAD          RECAUDADO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "ENERO 144 $",
+          "values": [
+            "11.845"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FEBRERO 184 $",
+          "values": [
+            "15.640"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MARZO 86 $",
+          "values": [
+            "6.660"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ABRIL 91 $",
+          "values": [
+            "7.150"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MAYO 200 $",
+          "values": [
+            "13.540"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 66,
+      "section": "JUNIO                 9               $ 585",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "JULIO 63 $",
+          "values": [
+            "4.335"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AGOSTO 494 $",
+          "values": [
+            "39.240"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SEPTIEMBRE 155 $",
+          "values": [
+            "12.385"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OCTUBRE 100 $",
+          "values": [
+            "10.340"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NOVIEMBRE 96 $",
+          "values": [
+            "10.680"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 5,
+    "results": [
+      {
+        "label": "ENERO 144 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ENERO 144 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FEBRERO 184 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FEBRERO 184 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "MARZO 86 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "MARZO 86 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ABRIL 91 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ABRIL 91 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "MAYO 200 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "MAYO 200 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Racing Club",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

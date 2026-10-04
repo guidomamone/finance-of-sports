@@ -1,0 +1,974 @@
+{
+ "md": "Clubes/Noruega/Viking/aarsregnskap-fotballklubb-fli-2015.md",
+ "generatedAt": "2026-09-30T01:12:01.103Z",
+ "rubros": [
+  {
+   "label": "Annen driftsinntekt inkl fotballskole og egenandeler",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "education",
+     0.33
+    ],
+    [
+     "youth_football",
+     0.09
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Inntekter fra fotballturnering",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "competition_bonus",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "competition_bonus",
+     0.87
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Sponsorinntekter",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Inntekter fra bingo og spilleautomater",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "stadium_other",
+     0.02
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Medlemskontigenter",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Tilskudd / gaver / spillemidler",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ],
+    [
+     "player_sales",
+     0.04
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Inntekter for dugnad bodsalg Viking Stadion",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "stadium_other",
+     0.17
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Inntekter FFO",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "lump_football_operations",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.51
+    ],
+    [
+     "other_income",
+     0.19
+    ],
+    [
+     "member_dues",
+     0.06
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Refundert lønn, pensjon, arb. avg. mm. Viking ASA",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "wages_squad",
+     0.2
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "Lønn, pensjon, arb. avg. mm. Viking ASA",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "wages_squad",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "wages_squad",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1277
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "depreciation",
+     0.98
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Utgifter fotballturnering",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Lønnskostnader andre ansatte Viking FK",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "wages_squad",
+     0.08
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Utgifter til deltakelse turneringer og reiseutgifter trenere",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Idrettsutstyr mm",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "lump_football_operations_expense",
+     0.24000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Andre driftskostnader",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Vedlikehold Vikinghuset",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Annen renteinntekt",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Netto finans",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Driftsresultat",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "other_income",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Annen rentekostnad",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "page": 2,
+   "section": "VIKING FOTBALLKLUBB / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "lump_football_operations",
+     0.24000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Årsresultat",
+   "page": 11,
+   "section": "# Note 1: Regnskapsprinsipper og virkning av prinsippendringer / # Note 2: Bankinnskudd / # Note 3: Egenkapital / # Årets endring",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_income",
+     0.73
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Overført fra spillerutviklingsfond",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "youth_football",
+     0.28
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Overført fra anleggsfond",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Medlemskontingenter",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "page": 3,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1254
+  },
+  {
+   "label": "Lønn, pensjon, arb.g.avg. mm spillere/trenere",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Refundert lønn, pensjon, arb.avg. mm. Viking ASA",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0.12
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Idrettsutstyr m.m",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "lump_football_operations_expense",
+     0.24000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Inntekter fotballturnering",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "competition_bonus",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "competition_bonus",
+     0.7
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Egenkapital pr 01.01.2015",
+   "page": 11,
+   "section": "# Note 1: Regnskapsprinsipper og virkning av prinsippendringer / # Note 2: Bankinnskudd / # Note 3: Egenkapital / # Årets endring",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1305
+  },
+  {
+   "label": "Overført fra:",
+   "page": 11,
+   "section": "# Note 1: Regnskapsprinsipper og virkning av prinsippendringer / # Note 2: Bankinnskudd / # Note 3: Egenkapital / # Årets endring",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1295
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "page": 12,
+   "section": "# Viking F.K. / # Note 5: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "choice": "wages_squad",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "wages_squad",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Lønn, honorar, sign on fee",
+   "page": 12,
+   "section": "# Viking F.K. / # Note 5: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "choice": "wages_squad",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "wages_squad",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1288
+  },
+  {
+   "label": "Egenkapital pr 31.12.2015",
+   "page": 11,
+   "section": "# Note 1: Regnskapsprinsipper og virkning av prinsippendringer / # Note 2: Bankinnskudd / # Note 3: Egenkapital / # Årets endring",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1305
+  },
+  {
+   "label": "Offentlig tjenestepensjonsforsikring",
+   "page": 12,
+   "section": "# Viking F.K. / # Note 5: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "wages_squad",
+     0.35000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ]
+   ],
+   "tokens": 1290
+  },
+  {
+   "label": "Netto kostnad Viking FK",
+   "page": 12,
+   "section": "# Viking F.K. / # Note 5: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "choice": "wages_squad",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "wages_squad",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "Overført til/fra annen egenkapital",
+   "page": 8,
+   "section": "# Resultatregnskap / ## Viking F.K.",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Andre ansatte i Viking FK:",
+   "page": 12,
+   "section": "# Viking F.K. / # Note 5: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "choice": "admin_general_expense",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "wages_squad",
+     0.18
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "Lønn",
+   "page": 12,
+   "section": "# Viking F.K. / # Note 5: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "wages_squad",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Antall årsverk knyttet til spillere og trenere:",
+   "page": 12,
+   "section": "# Viking F.K. / # Note 5: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1293
+  },
+  {
+   "label": "Antall årsverk knyttet til øvrig drift Viking FK:",
+   "page": 12,
+   "section": "# Viking F.K. / # Note 5: Lønnskostnader, antall ansatte, godtgjørelser til daglig leder m.v.",
+   "choice": "admin_general_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1293
+  }
+ ]
+}

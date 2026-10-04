@@ -1,0 +1,22 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.pdf",
+ "generado": "2026-10-03T01:57:39.944Z",
+ "frena": [
+  {
+   "etapa": "club",
+   "motivo": "el club no existe en el sitio: es un alta (tools/alta-club.mjs), fuera del alcance de esta etapa"
+  }
+ ],
+ "avisos": [],
+ "ejercicio": null,
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2020.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2020-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ }
+}

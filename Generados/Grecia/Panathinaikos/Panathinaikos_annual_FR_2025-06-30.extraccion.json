@@ -1,0 +1,565 @@
+{
+ "pdf": "Clubes/Grecia/Panathinaikos/Panathinaikos_annual_FR_2025-06-30.pdf",
+ "md": "Clubes/Grecia/Panathinaikos/Panathinaikos_annual_FR_2025-06-30.md",
+ "cierre": "2025-06-30",
+ "paginas": [
+  21,
+  22,
+  68,
+  69,
+  70
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:58:43.473Z",
+ "escala": "unidades",
+ "filas": [
+  {
+   "pagina": 21,
+   "etiqueta": "Έσοδα από εισιτήρια",
+   "importe_impreso": "19.325.224",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Χορηγίες και διαφημίσεις",
+   "importe_impreso": "15.874.890",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Δικαιώματα αναμετάδοσης",
+   "importe_impreso": "5.393.990",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Εμπορικά",
+   "importe_impreso": "6.535.351",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+   "importe_impreso": "9.953.051",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Επιχορηγήσεις από εθνικό φορέα ποδοσφαίρου ή κυβέρνηση",
+   "importe_impreso": "2.652.279",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Λοιπά λειτουργικά έσοδα",
+   "importe_impreso": "498.484",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Λειτουργικά έσοδα",
+   "importe_impreso": "60.233.268",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Κόστος πωλήσεων / υλικών",
+   "importe_impreso": "(1.938.319)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Αμοιβές εργαζομένων και λοιπές παροχές",
+   "importe_impreso": "(51.462.638)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Απομείωση και απαξίωση ενσώματων πάγιων στοιχείων του ενεργητικού",
+   "importe_impreso": "(1.162.003)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Απομείωση και απαξίωση άλλων άυλων στοιχείων του ενεργητικού",
+   "importe_impreso": "(55.860)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Λοιπά λειτουργικά έξοδα",
+   "importe_impreso": "(20.454.434)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Λειτουργικά έξοδα",
+   "importe_impreso": "(75.073.255)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Κέρδη / (ζημιές) από λειτουργικά αποτελέσματα",
+   "importe_impreso": "(14.839.986)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Αποτελέσματα εκμετάλλευσης προ φόρων, χρηματοδοτικών και επενδυτικών αποτελεσμάτων",
+   "importe_impreso": "(14.839.986)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Χρηματοοικονομικά Έξοδα",
+   "importe_impreso": "(453.328)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Κέρδη / ζημιές κατά την διάθεση ενσώματων παγίων στοιχείων",
+   "importe_impreso": "330",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Κέρδη/ ζημιές κατά τη διάθεση άυλων περιουσιακών στοιχείων - ποδοσφαιριστές",
+   "importe_impreso": "(10.983.661)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Κέρδη / (ζημιές) προ φόρων",
+   "importe_impreso": "(26.276.646)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Αναβαλλόμενος Φόρος",
+   "importe_impreso": "53.134",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Κέρδη / (ζημιές) χρήσης μετά φόρων από συνεχιζόμενες δραστηριότητες",
+   "importe_impreso": "(26.223.512)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Αποτέλεσμα περιόδου από διακοπείσες δραστηριότητες",
+   "importe_impreso": "(123.595)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 21,
+   "etiqueta": "Κέρδη / (ζημιές) χρήσης μετά φόρων",
+   "importe_impreso": "(26.347.106)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 22,
+   "etiqueta": "Αναλογιστικά κέρδη /(ζημιές) από προγράμματα καθορισμένων παροχών",
+   "importe_impreso": "(13.699)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 22,
+   "etiqueta": "Λοιπά συνολικά έσοδα / (έξοδα) χρήσης μετά φόρων",
+   "importe_impreso": "(13.699)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 22,
+   "etiqueta": "Συγκεντρωτικά συνολικά αποτελέσματα χρήσης",
+   "importe_impreso": "(26.360.805)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 22,
+   "etiqueta": "Ιδιοκτήτες της μητρικής",
+   "importe_impreso": "(26.360.805)",
+   "tipo": "renglon",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 68,
+   "etiqueta": "Έσοδα από μισθώματα",
+   "importe_impreso": "426.280",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Λοιπά λειτουργικά έσοδα"
+  },
+  {
+   "pagina": 68,
+   "etiqueta": "Λοιπά παρεπόμενα έσοδα",
+   "importe_impreso": "71.639",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Λοιπά λειτουργικά έσοδα"
+  },
+  {
+   "pagina": 68,
+   "etiqueta": "Συναλλαγματικές διαφορές",
+   "importe_impreso": "565",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Λοιπά λειτουργικά έσοδα"
+  },
+  {
+   "pagina": 68,
+   "etiqueta": "Σύνολο λοιπών λειτουργικών εσόδων",
+   "importe_impreso": "498.484",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Λοιπά λειτουργικά έσοδα"
+  },
+  {
+   "pagina": 68,
+   "etiqueta": "Αμοιβές και μισθοί εργαζομένων",
+   "importe_impreso": "(5.065.774)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Αμοιβές εργαζομένων και λοιπές παροχές"
+  },
+  {
+   "pagina": 68,
+   "etiqueta": "Συμβόλαια ποδοσφαιριστών / προπονητών",
+   "importe_impreso": "(44.018.972)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Αμοιβές εργαζομένων και λοιπές παροχές"
+  },
+  {
+   "pagina": 68,
+   "etiqueta": "Αποζημιώσεις",
+   "importe_impreso": "(99.196)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Αμοιβές εργαζομένων και λοιπές παροχές"
+  },
+  {
+   "pagina": 68,
+   "etiqueta": "Πριμ ποδοσφαιριστών / προπονητών",
+   "importe_impreso": "(534.500)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Αμοιβές εργαζομένων και λοιπές παροχές"
+  },
+  {
+   "pagina": 68,
+   "etiqueta": "Λοιπές Παροχές",
+   "importe_impreso": "(1.580.077)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Αμοιβές εργαζομένων και λοιπές παροχές"
+  },
+  {
+   "pagina": 68,
+   "etiqueta": "Ασφάλιστρα και ιατροφαρμακευτική δαπάνη",
+   "importe_impreso": "(164.120)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Αμοιβές εργαζομένων και λοιπές παροχές"
+  },
+  {
+   "pagina": 68,
+   "etiqueta": "Σύνολο αμοιβών εργαζομένων και λοιπών παροχών",
+   "importe_impreso": "(51.462.638)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Αμοιβές εργαζομένων και λοιπές παροχές"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Έξοδα αγώνων",
+   "importe_impreso": "(3.653.286)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Έξοδα χορηγιών και διαφημίσεων",
+   "importe_impreso": "(1.246.266)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Έξοδα εμπορικών δραστηριοτήτων",
+   "importe_impreso": "(921.428)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Έξοδα ακινήτων & εγκαταστάσεων",
+   "importe_impreso": "(949.209)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Αμοιβές τρίτων",
+   "importe_impreso": "(1.150.253)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Επισκευές και συντηρήσεις",
+   "importe_impreso": "(1.566.193)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Δαπάνες υπηρεσιών κοινής ωφέλειας",
+   "importe_impreso": "(553.243)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Έξοδα ταξιδίων και μεταφορών",
+   "importe_impreso": "(40.814)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Διάφορα έξοδα Α' & Β' ομάδας και Ακαδημίας",
+   "importe_impreso": "(5.142.642)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Λοιποί φόροι - τέλη",
+   "importe_impreso": "(442.312)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Διάφορα έξοδα",
+   "importe_impreso": "(1.845.841)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Πρόστιμα - Προσαυξήσεις - Ποινές αγώνων",
+   "importe_impreso": "(2.840.515)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Συναλλαγματικές διαφορές",
+   "importe_impreso": "(1.527)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Έξοδα προηγούμενων χρήσεων",
+   "importe_impreso": "(100.905)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Σύνολο λειτουργικών εξόδων",
+   "importe_impreso": "(20.454.434)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Λοιπά λειτουργικά έξοδα"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Κέρδη/(Ζημιές) από πώληση ποδοσφαιριστών",
+   "importe_impreso": "(1.139.146)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Κέρδη/ ζημιές κατά τη διάθεση άυλων περιουσιακών στοιχείων - ποδοσφαιριστές"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Αποσβέσεις εγγραφών ποδοσφαιριστών",
+   "importe_impreso": "(9.844.516)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Κέρδη/ ζημιές κατά τη διάθεση άυλων περιουσιακών στοιχείων - ποδοσφαιριστές"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Σύνολο",
+   "importe_impreso": "(10.983.661)",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "Κέρδη/ ζημιές κατά τη διάθεση άυλων περιουσιακών στοιχείων - ποδοσφαιριστές"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Κέρδη από εκποίηση/τακτοποίηση πάγιων περιουσιακών στοιχείων",
+   "importe_impreso": "330",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Κέρδη / ζημιές κατά την διάθεση ενσώματων παγίων στοιχείων"
+  },
+  {
+   "pagina": 69,
+   "etiqueta": "Σύνολο",
+   "importe_impreso": "330",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "Κέρδη / ζημιές κατά την διάθεση ενσώματων παγίων στοιχείων"
+  },
+  {
+   "pagina": 70,
+   "etiqueta": "Χρηματοοικονομικό κόστος μισθώσεων",
+   "importe_impreso": "(163.884)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά Έξοδα"
+  },
+  {
+   "pagina": 70,
+   "etiqueta": "Χρηματοοικονομικό κόστος προεξόφλησης μακροπρόθεσμων υποχρεώσεων",
+   "importe_impreso": "(88.714)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά Έξοδα"
+  },
+  {
+   "pagina": 70,
+   "etiqueta": "Χρηματοοικονομικό κόστος παροχών προσωπικού",
+   "importe_impreso": "(4.970)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά Έξοδα"
+  },
+  {
+   "pagina": 70,
+   "etiqueta": "Προμήθειες εγγυητικών επιστολών",
+   "importe_impreso": "(5.950)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά Έξοδα"
+  },
+  {
+   "pagina": 70,
+   "etiqueta": "Λοιπά έξοδα τραπεζών",
+   "importe_impreso": "(134.614)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά Έξοδα"
+  },
+  {
+   "pagina": 70,
+   "etiqueta": "Τόκοι υπερημερίας",
+   "importe_impreso": "(55.197)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά Έξοδα"
+  },
+  {
+   "pagina": 70,
+   "etiqueta": "Σύνολο",
+   "importe_impreso": "(453.328)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Χρηματοοικονομικά Έξοδα"
+  },
+  {
+   "pagina": 70,
+   "etiqueta": "Αναβαλλόμενος Φόρος",
+   "importe_impreso": "53.134",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Αναβαλλόμενος Φόρος"
+  },
+  {
+   "pagina": 70,
+   "etiqueta": "Σύνολο",
+   "importe_impreso": "53.134",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Αναβαλλόμενος Φόρος"
+  }
+ ],
+ "total_ingresos_impreso": "60.233.268",
+ "total_gastos_impreso": "(75.073.255)",
+ "resultado_impreso": "(26.347.106)",
+ "observaciones": "Se tomó la columna del Grupo (Ο ΟΜΙΛΟΣ) 01/07/2024 - 30/06/2025; el documento también presenta la columna de la Sociedad (Η ΕΤΑΙΡΕΙΑ), no extraída. Se omitieron filas con guion (Χρηματοοικονομικά Έσοδα, Φόρος εισοδήματος, Κέρδη / ζημιές κατά την διάθεση άυλων στοιχείων/επενδύσεων, Μη ελέγχουσες συμμετοχές y renglones de notas con '-'). Resultado del ejercicio después de impuestos (26.347.106); resultado integral total (26.360.805). Los gastos operativos totales no incluyen el resultado por jugadores (10.983.661) ni financieros."
+}

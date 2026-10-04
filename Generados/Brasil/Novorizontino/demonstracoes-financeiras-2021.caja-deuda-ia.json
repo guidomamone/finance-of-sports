@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md",
+ "generado": "2026-10-03T03:42:26.937Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "caja": {
+  "lineas": [
+   174
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   174,
+   187
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las líneas 174 y 187 contienen tanto activo como pasivo; la caja es 952 y los empréstimos e financiamentos son 87 (corriente) y 12 (no corriente). Se excluyen los débitos com partes relacionadas (51.785), que son muy relevantes pero no son deuda bancaria."
+}

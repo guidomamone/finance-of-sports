@@ -1,0 +1,260 @@
+{
+  "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
+  "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2018.pdf",
+  "club": "oncecaldas",
+  "year": 2018,
+  "numberFormat": "us (coma miles, punto decimal)",
+  "generatedAt": "2026-09-30T21:59:30.162Z",
+  "tieOuts": {
+    "cierran": 15,
+    "noCierran": 20
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "18 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": false,
+  "seleccion": {
+    "ok": true,
+    "filas": 25,
+    "notasUsadas": [
+      "7",
+      "6"
+    ]
+  },
+  "ladoConocido": 21,
+  "rubros": [
+    {
+      "label": "FINANCIEROS",
+      "lado": "revenue",
+      "page": 19,
+      "section": "",
+      "values": [
+        1.106432
+      ],
+      "origen": "estado 28 (su nota queda consumida sin abrir)",
+      "glosa": "FINANCIEROS"
+    },
+    {
+      "label": "INTERESES",
+      "lado": "revenue",
+      "page": 19,
+      "section": "",
+      "values": [
+        0.010768
+      ],
+      "origen": "estado 28 (su nota queda consumida sin abrir)",
+      "glosa": "INTERESES"
+    },
+    {
+      "label": "DIFERENCIA EN CAMBIO",
+      "lado": "revenue",
+      "page": 19,
+      "section": "",
+      "values": [
+        1.094307
+      ],
+      "origen": "estado 28",
+      "glosa": "DIFERENCIA EN CAMBIO"
+    },
+    {
+      "label": "DESC COMERCIALES CONDICIONADOS",
+      "lado": "revenue",
+      "page": 19,
+      "section": "",
+      "values": [
+        0.001357
+      ],
+      "origen": "estado 28",
+      "glosa": "DESC COMERCIALES CONDICIONADOS"
+    },
+    {
+      "label": "RECUPERACIONES",
+      "lado": "revenue",
+      "page": 19,
+      "section": "",
+      "values": [
+        1.357782
+      ],
+      "origen": "estado 28",
+      "glosa": "RECUPERACIONES"
+    },
+    {
+      "label": "REINTE DE OTROS COSTOS Y GASTO",
+      "lado": "expense",
+      "page": 19,
+      "section": "",
+      "values": [
+        0.004861
+      ],
+      "origen": "estado 28",
+      "glosa": "REINTE DE OTROS COSTOS Y GASTO"
+    },
+    {
+      "label": "RECUPERACION PROVISIONES",
+      "lado": "revenue",
+      "page": 19,
+      "section": "",
+      "values": [
+        0.217867
+      ],
+      "origen": "estado 28",
+      "glosa": "RECUPERACION PROVISIONES"
+    },
+    {
+      "label": "REINTEGROS NIIF",
+      "lado": "revenue",
+      "page": 19,
+      "section": "",
+      "values": [
+        0.930534
+      ],
+      "origen": "estado 28",
+      "glosa": "REINTEGROS NIIF"
+    },
+    {
+      "label": "REINTEGRO DE GTOS ANOS ANTERIO",
+      "lado": "revenue",
+      "page": 19,
+      "section": "",
+      "values": [
+        0.19417
+      ],
+      "origen": "estado 28",
+      "glosa": "REINTEGRO DE GTOS ANOS ANTERIO"
+    },
+    {
+      "label": "INDEMNIZACIONES",
+      "lado": "revenue",
+      "page": 19,
+      "section": "",
+      "values": [
+        0.011916
+      ],
+      "origen": "estado 28",
+      "glosa": "INDEMNIZACIONES"
+    },
+    {
+      "label": "POR INCAPACIDADES DEL ISS",
+      "lado": "revenue",
+      "page": 20,
+      "section": "",
+      "values": [
+        11.916
+      ],
+      "origen": "estado 29",
+      "glosa": "POR INCAPACIDADES DEL ISS"
+    },
+    {
+      "label": "INGRESOS DE EJERCICIOS ANTERIORES",
+      "lado": "revenue",
+      "page": 20,
+      "section": "",
+      "values": [
+        0.09
+      ],
+      "origen": "estado 29",
+      "glosa": "INGRESOS DE EJERCICIOS ANTERIORES"
+    },
+    {
+      "label": "DIVERSOS",
+      "lado": "revenue",
+      "page": 20,
+      "section": "",
+      "values": [
+        688.841
+      ],
+      "origen": "estado 29",
+      "glosa": "DIVERSOS"
+    },
+    {
+      "label": "APROVECHAMIENTOS",
+      "lado": "revenue",
+      "page": 20,
+      "section": "",
+      "values": [
+        11.886
+      ],
+      "origen": "estado 29",
+      "glosa": "APROVECHAMIENTOS"
+    },
+    {
+      "label": "SUBVENCIONES",
+      "lado": "revenue",
+      "page": 20,
+      "section": "",
+      "values": [
+        676.945
+      ],
+      "origen": "estado 29",
+      "glosa": "SUBVENCIONES"
+    },
+    {
+      "label": "AJUSTE AL PESO",
+      "lado": "revenue",
+      "page": 20,
+      "section": "",
+      "values": [
+        0.01
+      ],
+      "origen": "estado 29",
+      "glosa": "AJUSTE AL PESO"
+    },
+    {
+      "label": "GASTOS NO OPERACIONALES",
+      "lado": "expense",
+      "page": 20,
+      "section": "",
+      "values": [
+        1723.822
+      ],
+      "origen": "estado 30",
+      "glosa": "GASTOS NO OPERACIONALES"
+    },
+    {
+      "label": "GASTOS FINANCIEROS",
+      "lado": "expense",
+      "page": 20,
+      "section": "",
+      "values": [
+        820.054
+      ],
+      "origen": "estado 30",
+      "glosa": "GASTOS FINANCIEROS"
+    },
+    {
+      "label": "GASTOS EXTRAORDINARIOS",
+      "lado": "expense",
+      "page": 20,
+      "section": "",
+      "values": [
+        713.284
+      ],
+      "origen": "estado 30",
+      "glosa": "GASTOS EXTRAORDINARIOS"
+    },
+    {
+      "label": "GASTOS DIVERSOS",
+      "lado": "expense",
+      "page": 20,
+      "section": "",
+      "values": [
+        190.484
+      ],
+      "origen": "estado 30",
+      "glosa": "GASTOS DIVERSOS"
+    },
+    {
+      "label": "IMTPO DIFERIDO NIIF",
+      "lado": "expense",
+      "page": 20,
+      "section": "",
+      "values": [
+        1744.104
+      ],
+      "origen": "estado 30",
+      "glosa": "IMTPO DIFERIDO NIIF"
+    }
+  ]
+}

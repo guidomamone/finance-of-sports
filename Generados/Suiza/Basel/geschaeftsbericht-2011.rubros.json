@@ -1,0 +1,366 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2011.md",
+ "pdf": "Clubes/Suiza/Basel/geschaeftsbericht-2011.pdf",
+ "club": "basel",
+ "year": 2011,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:08:10.634Z",
+ "tieOuts": {
+  "cierran": 3,
+  "noCierran": 8
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "14 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 36,
+  "notasUsadas": []
+ },
+ "ladoConocido": 33,
+ "rubros": [
+  {
+   "label": "Personalaufwand",
+   "lado": "expense",
+   "page": 23,
+   "section": "",
+   "values": [
+    -34.907672
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Organisationskosten Heimspiele",
+   "lado": "expense",
+   "page": 23,
+   "section": "",
+   "values": [
+    -9.279408
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Übriger Spielbetrieb",
+   "lado": "expense",
+   "page": 23,
+   "section": "",
+   "values": [
+    -3.298231
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Transferaufwand",
+   "lado": "expense",
+   "page": 23,
+   "section": "",
+   "values": [
+    -7.28146
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Warenaufwand",
+   "lado": "expense",
+   "page": 23,
+   "section": "",
+   "values": [
+    -1.474219
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Werbung",
+   "lado": "expense",
+   "page": 23,
+   "section": "",
+   "values": [
+    -1.961059
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Administration",
+   "lado": "expense",
+   "page": 23,
+   "section": "",
+   "values": [
+    -2.612039
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Abschreibungen",
+   "lado": "expense",
+   "page": 23,
+   "section": "",
+   "values": [
+    -0.027249
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Aufwand Leistungsfussball Nachwuchs",
+   "lado": "expense",
+   "page": 23,
+   "section": "",
+   "values": [
+    -0.37302
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Übriger Aufwand",
+   "lado": "expense",
+   "page": 23,
+   "section": "",
+   "values": [
+    -0.703202
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Finanzertrag",
+   "lado": "revenue",
+   "page": 23,
+   "section": "",
+   "values": [
+    0.052324
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Finanzaufwand",
+   "lado": "expense",
+   "page": 23,
+   "section": "",
+   "values": [
+    -0.201133
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Steuern",
+   "lado": "expense",
+   "page": 23,
+   "section": "",
+   "values": [
+    -0.046226
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Mitglieder",
+   "lado": "revenue",
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    0.705444
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Diverses",
+   "lado": "revenue",
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    0.287133
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Personalaufwand",
+   "lado": "expense",
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    0.431184
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Administration",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    0.149443
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Übriger Aufwand",
+   "lado": "expense",
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    0.406426
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Finanzertrag",
+   "lado": "revenue",
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    0.000644
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Finanzaufwand",
+   "lado": "expense",
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    0.002176
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Steuern",
+   "lado": "expense",
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    0.002457
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Matcheinnahmen",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    21.109809
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "*aus Meisterschaft*",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    12.901097
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "*aus UEFA-Spielen*",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    7.807819
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "*aus Cup-Spielen*",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    0.168935
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "*aus übrigen Spielen*",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    0.231958
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Business Seats",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    5.511196
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Sponsoring, Werbung",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    8.090958
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Transferertrag",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    9.783834
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "TV-Entschädigungen",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    1.325143
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Merchandising, Licensing",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    2.912901
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Verbandseinnahmen",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    16.64521
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Einnahmen Leistungsfussball Nachwuchs",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    0.637962
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Diverses",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "values": [
+    1.623838
+   ],
+   "origen": "estado 5"
+  }
+ ]
+}

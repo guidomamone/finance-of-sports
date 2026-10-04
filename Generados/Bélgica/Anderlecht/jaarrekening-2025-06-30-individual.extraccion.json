@@ -1,0 +1,438 @@
+{
+ "pdf": "Clubes/Bélgica/Anderlecht/jaarrekening-2025-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Anderlecht/jaarrekening-2025-06-30-individual.md",
+ "cierre": "2025-06-30",
+ "paginas": [
+  9,
+  10,
+  29,
+  30,
+  31,
+  32
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:55:32.194Z",
+ "escala": "unidades",
+ "filas": [
+  {
+   "pagina": 9,
+   "etiqueta": "Bedrijfsopbrengsten",
+   "importe_impreso": "111.008.609",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Omzet",
+   "importe_impreso": "91.304.983",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Andere bedrijfsopbrengsten",
+   "importe_impreso": "19.517.775",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Niet-recurrente bedrijfsopbrengsten",
+   "importe_impreso": "185.851",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Bedrijfskosten",
+   "importe_impreso": "109.357.006",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Handelsgoederen, grond- en hulpstoffen",
+   "importe_impreso": "3.983.067",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Aankopen",
+   "importe_impreso": "2.907.397",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Voorraad: afname (toename)",
+   "importe_impreso": "1.075.670",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Diensten en diverse goederen",
+   "importe_impreso": "35.897.374",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Bezoldigingen, sociale lasten en pensioenen",
+   "importe_impreso": "53.328.314",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "importe_impreso": "10.832.766",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)",
+   "importe_impreso": "505.416",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)",
+   "importe_impreso": "199.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Andere bedrijfskosten",
+   "importe_impreso": "1.662.686",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Niet-recurrente bedrijfskosten",
+   "importe_impreso": "2.948.383",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 9,
+   "etiqueta": "Bedrijfswinst (Bedrijfsverlies)",
+   "importe_impreso": "1.651.602",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Financiële opbrengsten",
+   "importe_impreso": "167.880",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Recurrente financiële opbrengsten",
+   "importe_impreso": "167.880",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Opbrengsten uit vlottende activa",
+   "importe_impreso": "3.287",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Andere financiële opbrengsten",
+   "importe_impreso": "164.550",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Financiële kosten",
+   "importe_impreso": "1.477.749",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Recurrente financiële kosten",
+   "importe_impreso": "1.477.749",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Kosten van schulden",
+   "importe_impreso": "982.904",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Andere financiële kosten",
+   "importe_impreso": "494.845",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Winst (Verlies) van het boekjaar vóór belasting",
+   "importe_impreso": "341.734",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Belastingen op het resultaat",
+   "importe_impreso": "232.140",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Belastingen",
+   "importe_impreso": "266.119",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+   "importe_impreso": "33.979",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Winst (Verlies) van het boekjaar",
+   "importe_impreso": "109.593",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 10,
+   "etiqueta": "Te bestemmen winst (verlies) van het boekjaar",
+   "importe_impreso": "109.593",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 29,
+   "etiqueta": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "importe_impreso": "45.110.291",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen"
+  },
+  {
+   "pagina": 29,
+   "etiqueta": "Werkgeversbijdragen voor sociale verzekeringen",
+   "importe_impreso": "5.824.630",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen"
+  },
+  {
+   "pagina": 29,
+   "etiqueta": "Andere personeelskosten",
+   "importe_impreso": "2.393.393",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Bezoldigingen, sociale lasten en pensioenen"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Op voorraden en bestellingen in uitvoering - Geboekt",
+   "importe_impreso": "251.482",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Op voorraden en bestellingen in uitvoering - Teruggenomen",
+   "importe_impreso": "212.956",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Op handelsvorderingen - Geboekt",
+   "importe_impreso": "611.468",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Op handelsvorderingen - Teruggenomen",
+   "importe_impreso": "144.579",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen)"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Toevoegingen",
+   "importe_impreso": "199.000",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen)"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Bedrijfsbelastingen en -taksen",
+   "importe_impreso": "1.485.262",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Andere bedrijfskosten"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Andere",
+   "importe_impreso": "177.425",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Andere bedrijfskosten"
+  },
+  {
+   "pagina": 30,
+   "etiqueta": "Kosten voor de vennootschap",
+   "importe_impreso": "345.943",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Diensten en diverse goederen"
+  },
+  {
+   "pagina": 31,
+   "etiqueta": "Gerealiseerde wisselkoersverschillen",
+   "importe_impreso": "150.384",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andere financiële opbrengsten"
+  },
+  {
+   "pagina": 31,
+   "etiqueta": "Betalingsverschillen",
+   "importe_impreso": "5.453",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andere financiële opbrengsten"
+  },
+  {
+   "pagina": 31,
+   "etiqueta": "Nalatigheidsinteresten",
+   "importe_impreso": "8.714",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andere financiële opbrengsten"
+  },
+  {
+   "pagina": 31,
+   "etiqueta": "Gerealiseerde wisselkoersverschillen",
+   "importe_impreso": "6.709",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andere financiële kosten"
+  },
+  {
+   "pagina": 31,
+   "etiqueta": "Resultaten uit de omrekening van vreemde valuta",
+   "importe_impreso": "134.547",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andere financiële kosten"
+  },
+  {
+   "pagina": 31,
+   "etiqueta": "Bankkosten",
+   "importe_impreso": "104.581",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andere financiële kosten"
+  },
+  {
+   "pagina": 31,
+   "etiqueta": "Betalingsverschillen",
+   "importe_impreso": "18.582",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andere financiële kosten"
+  },
+  {
+   "pagina": 31,
+   "etiqueta": "Diverse financiële kosten",
+   "importe_impreso": "230.426",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Andere financiële kosten"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Andere niet-recurrente bedrijfsopbrengsten",
+   "importe_impreso": "185.851",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Niet-recurrente bedrijfsopbrengsten"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Niet-recurrente afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "importe_impreso": "2.379.846",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Niet-recurrente bedrijfskosten"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Andere niet-recurrente bedrijfskosten",
+   "importe_impreso": "568.537",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Niet-recurrente bedrijfskosten"
+  }
+ ],
+ "total_ingresos_impreso": "111.008.609",
+ "total_gastos_impreso": "109.357.006",
+ "resultado_impreso": "109.593",
+ "observaciones": "Escala en unidades (EUR). Valores negativos del resultado no indicados con signo; en pág. 9 y 10 las columnas se asignaron por códigos. Pág. 31: la asignación de importes sin código (5.453, 8.714, 104.581, 18.582, 230.426) y de 150.384 (código 754) a sublíneas es por posición; 150.384 podría corresponder a 'Gerealiseerde wisselkoersverschillen' de ingresos financieros. Ingresos financieros: códigos 750 (43) y 751 (3.287) ambiguos por la transcripción; se tomó 3.287 en 751 y se omitió 43 por dudoso. Pág. 32: subtotales NIET-RECURRENTE OPBRENGSTEN/KOSTEN repetidos omitidos por duplicar el estado. Pág. 29: datos de personal (211, 165,5, 270.737) no monetarios omitidos; 617 (uitzendkrachten) asignado a Diensten en diverse goederen. Impuestos 232.140 es neto (266.119-33.979)."
+}

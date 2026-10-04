@@ -1,0 +1,387 @@
+{
+ "md": "Clubes/Brasil/Ituano/2016-anexo-b.md",
+ "generatedAt": "2026-09-30T22:48:30.122Z",
+ "rubrosHuella": "5755957b9c22a14a5bb3efaea1f6fadc0ee512f1",
+ "rubros": [
+  {
+   "label": "Premiações em Campeonatos (CBF)",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de Transmissão de TV (FPF)",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínio e Publicidades",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrecadação de Jogos",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de Terceiros (Prêmios, Mídia, Serviços de PJ e PF)",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita de Projetos e Incentivos Fiscais",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Despesas com Pessoal (Salários e encargos)",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "wages_squad",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1116
+  },
+  {
+   "label": "DESPESAS - FUTEBOL PROFISSIONAL E DE BASE",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.68
+    ],
+    [
+     "wages_squad",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1100
+  },
+  {
+   "label": "(-) Impostos Incidentes s/ Vendas e Serviços",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1163
+  },
+  {
+   "label": "Água, Luz, Telefone, e Internet (sede do Clube)",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de Terceiros - Advogado, Contador, Assessores",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras Receitas e Despesas Administrativas",
+   "lado": null,
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos c/ Atletas (Viagens, Uniformes, Taxas CBF-FPF)",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "Loteiras e Outras Receitas",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Amortização",
+   "lado": "expense",
+   "page": 16,
+   "section": "### D) AMORTIZAÇÕES DE GASTOS",
+   "choice": "other_amortisation",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "RECEITA - FUTEBOL PROFISSIONAL E DE BASE",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "lump_football_operations",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.9
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "youth_football",
+     0.02
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "Outras Despesas (Eventos e Partidas- Estádio e Alojamento)",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1092
+  },
+  {
+   "label": "Despesas com formação e contratação de atletas",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Receita com Repasses de Direitos Federativos",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "Encargos Financeiros",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "DESPESAS ADMINISTRATIVAS",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Impostos e Taxas diversas",
+   "lado": "expense",
+   "page": 7,
+   "section": "AUDIT / # ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2016",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1046
+  }
+ ]
+}

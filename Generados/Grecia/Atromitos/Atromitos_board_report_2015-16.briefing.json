@@ -1,0 +1,145 @@
+{
+  "club": "atromitos",
+  "year": 2016,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Grecia/Atromitos/Atromitos_board_report_2015-16.md",
+  "generatedAt": "2026-09-30T22:02:23.757Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 10,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 2,
+      "section": "### Αριθμοδείκτες (Μ.Ο 2 ετών)",
+      "columns": [
+        "A. Οικονομικής Διάρθρωσης",
+        "2015-2016",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "1. ΚΥΚΛΟΦΟΡΟΥΝ ΕΝΕΡΓΗΤΙΚΟ",
+          "values": [
+            "766.370,10",
+            "44,29%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ΣΥΝΟΛΟ ΕΝΕΡΓΗΤΙΚΟΥ",
+          "values": [
+            "1.730.269,13",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. ΙΔΙΑ ΚΕΦΑΛΑΙΑ",
+          "values": [
+            "-481.249,73",
+            "-22,02%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ΣΥΝΟΛΟ ΥΠΟΧΡΕΩΣΕΩΝ",
+          "values": [
+            "2.185.244,82",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. ΚΥΚΛΟΦΟΡΟΥΝ ΕΝΕΡΓΗΤΙΚΟ",
+          "values": [
+            "766.370,10",
+            "35,92%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ΒΡΑΧΥΠ.ΥΠΟΧΡΕΩΣΕΙΣ",
+          "values": [
+            "2.133.798,67",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. ΣΥΝΟΛΟ ΥΠΟΧΡΕΩΣΕΩΝ",
+          "values": [
+            "2.185.244,82",
+            "126,30%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ΣΥΝΟΛΟ ΠΑΘΗΤΙΚΟΥ",
+          "values": [
+            "1.730.269,13",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Αποδόσεως & Αποδοτικότητας",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. ΚΑΘΑΡΑ ΑΠΟΤΕΛ. ΕΚΜΕΤ.",
+          "values": [
+            "-280.390,14",
+            "7,23%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ΠΩΛΗΣΕΙΣ ΥΠΗΡΕΣΙΩΝ",
+          "values": [
+            "3.877.007,09",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. ΚΑΘΑΡΑ ΑΠΟΤ. ΧΡΗΣ",
+          "values": [
+            "-280.390,14",
+            "-58,26%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ΙΔΙΑ ΚΕΦΑΛΑΙΑ",
+          "values": [
+            "-481.249,73",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/atromitos-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"atromitos\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

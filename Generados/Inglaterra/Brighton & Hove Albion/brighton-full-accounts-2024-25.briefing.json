@@ -1,0 +1,858 @@
+{
+  "club": "brighton-gb",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2024-25.md",
+  "generatedAt": "2026-09-30T22:44:43.111Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 16,
+    "eu": 0,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 20,
+  "relevantTableCount": 6,
+  "tables": [
+    {
+      "page": 4,
+      "section": "Principal activity / Association, and the Premier League. / Business review / 2025 . 2024 / £000 £ 000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Turnover",
+          "values": [
+            "221,063",
+            "221,293"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other operating income",
+          "values": [
+            "5,000",
+            "2,450"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrative and operational costs",
+          "values": [
+            "(44,274)",
+            "(42,700)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operating profit before football costs and depreciation",
+          "values": [
+            "181,789",
+            "181,043"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciation",
+          "values": [
+            "(1,410)",
+            "(1,397)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Player trading :",
+          "values": [
+            "(24,929)",
+            "68,169"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Football costs",
+          "values": [
+            "(186,755)",
+            "(163,102)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operating (loss)/profit before interest and taxation",
+          "values": [
+            "(31,305)",
+            "84,713"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Financial Highlights / ¢ Turnover decrease: 0.10% / « Administrative and operational cost increase: 3.7% / * Operating profit before football costs and depreciation increase: 0.41%",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "* Player trading results decrease to a loss of £24.9m from a profit of",
+          "values": [
+            "£68.2m"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "* Football costs increase:",
+          "values": [
+            "14.5%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 18,
+      "section": "excluding (As restated) / player Player / trading trading Total Total / 2025 2025 2025 2024 / Note £ 000 £ 000 £000 £ 000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Turnover 3 221,063 -",
+          "values": [
+            "221,063",
+            "221,293"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cost of sales (6,625) -",
+          "values": [
+            "(6,625)",
+            "(6,681)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gross profit 214,438 -",
+          "values": [
+            "214,438",
+            "214,612"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operating expenses",
+          "values": [
+            "(225,814)",
+            "(81,840)",
+            "(307,654)",
+            "(242,644)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Player trading -",
+          "values": [
+            "56,911",
+            "56,911",
+            "110,295"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other operating income 4 5,000 -",
+          "values": [
+            "5,000",
+            "2,450"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "before interest and / taxation 5 (6,376) (24,929) (31,305) 84,713 / Interest receivable and / similar income 9 1,803 4,314 6,117 7,289 / Interest payable and similar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "expenses 10 (534)",
+          "values": [
+            "(6,283)",
+            "(6,817)",
+            "(3,745)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1,269 (1,969) (700)",
+          "values": [
+            "3,544"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 18,
+      "section": "‘(Loss)/profit before - ;",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "taxation",
+          "values": [
+            "(5,107)",
+            "(26,898)",
+            "(32,005)",
+            "88,257"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tax on (loss)/profit 11 3,400 -",
+          "values": [
+            "3,400",
+            "(14,888)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Loss)/profit after taxation",
+          "values": [
+            "(1,707)",
+            "(26,898)",
+            "(28,605)",
+            "73,369"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Note / (As restated) (As restated) / 2025 2025 2024 2024 / £000 £ 000 £000 £ 000 / Fixed assets",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intangible assets",
+          "values": [
+            "288,910",
+            "167,896"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tangible assets",
+          "values": [
+            "3,853",
+            "2,909"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Current assets / Stocks 14 3,383 574 / Debtors: amounts falling due / after more than one year 15 16,170 26,443 / Debtors: amounts falling due",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "within one year",
+          "values": [
+            "185,381",
+            "187,233"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash at bank and in hand 16 ___39,836_ ___",
+          "values": [
+            "14,966"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "244,770 229,216 / Creditors: Amounts falling",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "due within one year",
+          "values": [
+            "(494,357)",
+            "(369,466)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net current liabilities",
+          "values": [
+            "(249,587)",
+            "(140,250)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Total assets less current / liabilities 43,176 30,555 / Creditors: Amounts falling / due after more than one",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "year",
+          "values": [
+            "(61,579)",
+            "(16,953)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisions for liabilities",
+          "values": [
+            "(10,970)",
+            "(14,370)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Financial reporting standard 102 - reduced disclosure exemptions / Republic of Ireland”: / - the requirements of Section 4 Statement of Financial Position paragraph 4.12(a)(iv); / - the requirements of Section 7 Statement of Cash Flows; / - the requirements of Section 3 Financial Statement Presentation paragraph 3.17(d);",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- the requirements of Section 11 Financial Instruments paragraphs",
+          "values": [
+            "11.41(b),",
+            "11.41(c),",
+            "11.41(e),"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11.41(f); 11.42, 11.44 to 11.46, 11.47, 11.48(a)(iii), 11.48 (a)(iv), 11.48(b) and",
+          "values": [
+            "11.48(0);"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "the impairment of player registrations are described in note 1. / 3 Turnover / The analysis of the company's turnover for the year by class of business is as follows: / 2025 2024 / £ 000 £000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Matchday",
+          "values": [
+            "27,534",
+            "27,722"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Broadcasting",
+          "values": [
+            "150,638",
+            "163,478"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Commercial",
+          "values": [
+            "22,414",
+            "20,188"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other",
+          "values": [
+            "20,477",
+            "9,905"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Other income 5,000 2,450 / 5 Operating (loss)/profit / Arrived at after charging / 2025 2024 / £000 £000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depreciation expense",
+          "values": [
+            "1,410",
+            "1,397"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortisation expense",
+          "values": [
+            "81,840",
+            "39,342"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impairment loss -",
+          "values": [
+            "2,784"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 29,
+      "section": "All other services 28 14 / 7 ~=Staff costs / The aggregate payroll costs (including directors’ remuneration) were as follows: . / 2025 2024 / £ 000 £000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Wages and salaries",
+          "values": [
+            "139,300",
+            "125,300"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Social security costs",
+          "values": [
+            "18,923",
+            "16,396"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 30,
+      "section": "Remuneration - 2,657 3,195 / Company contributions to money purchase pension schemes 10 10 / 9 Interest receivable and similar income / 2025 2024 / ; pann £000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Interest income on bank deposits",
+          "values": [
+            "1,803",
+            "1,428"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Unwinding of discount on transfer fees receivable",
+          "values": [
+            "4,314",
+            "5,861"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 31,
+      "section": "2025 2024 / £000 £ 000 / ’ Current taxation / UK corporation tax adjustment to prior periods - 518 / Deferred taxation",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Arising from origination and reversal of timing differences",
+          "values": [
+            "(3,400)",
+            "14,370"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tax (receipt)/expense in the income statement",
+          "values": [
+            "(3,400)",
+            "14,888"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "(2024 - higher than the standard rate of corporation tax in the UK) of 25% (2024 - 25%). / The differences are reconciled below: / 2025 2024 / £ 000 £000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(Loss)/profit before tax ‘",
+          "values": [
+            "(32,005)",
+            "88,257"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Corporation tax at standard rate",
+          "values": [
+            "(8,001)",
+            "22,064"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "Fixed asset differences 127 (201) / Expenses not deductible for tax purposes _ 57 100 / Group relief (832) (2,256) / Adjustment to tax charge in previous period - current tax - 518",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deferred tax not recognised -",
+          "values": [
+            "-(14,310)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reinvestment relief on player disposals",
+          "values": [
+            "10,460"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Movement on unutilised tax losses",
+          "values": [
+            "5,108",
+            "(1,487)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total tax (credit)/charge",
+          "values": [
+            "(3,400)",
+            "14,888"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 33,
+      "section": "£000 £000 / Goods for resale 3,383 574 / 15 Debtors / 2025 2024 / Amounts falling due within one year £ 000 £ 000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Trade debtors",
+          "values": [
+            "16,690",
+            "14,528"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfers receivable within one year",
+          "values": [
+            "47,894",
+            "86,207"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amounts owed by related parties",
+          "values": [
+            "117,071",
+            "79,631"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other debtors",
+          "values": [
+            "3,503"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prepayments ;",
+          "values": [
+            "3,411",
+            "3,364."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Notes to the Financial Statements for the Year Ended 30 June 2025 (continued) / 17 Creditors / 2025 2024 / £000 £000 / Amounts falling due within one year",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Trade creditors",
+          "values": [
+            "2,929",
+            "1,621"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfers payable",
+          "values": [
+            "90,112",
+            "86,676"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amounts due to related parties",
+          "values": [
+            "336,069",
+            "229,200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Social security and other taxes",
+          "values": [
+            "16,003",
+            "6,698"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 35,
+      "section": "10,970 14,370 / 21 Commitments under operating leases / as follows: / 2025 2024 / £ 000 £000",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Not later than one year",
+          "values": [
+            "1,352",
+            "1,350"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Later than one year and not later than five years",
+          "values": [
+            "5,532",
+            "5,376"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Later than five years",
+          "values": [
+            "142,842",
+            "144,175"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 31,
+      "section": "Fixed asset differences 127 (201) / Expenses not deductible for tax purposes _ 57 100 / Group relief (832) (2,256) / Adjustment to tax charge in previous period - current tax - 518",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total tax (credit)/charge",
+      "skipped": true,
+      "reason": "1 de 3 valor(es) del segmento no parecen números (ej. \"-(14,310)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 31,
+      "section": "Fixed asset differences 127 (201) / Expenses not deductible for tax purposes _ 57 100 / Group relief (832) (2,256) / Adjustment to tax charge in previous period - current tax - 518",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total tax (credit)/charge",
+      "target": "14,888",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-16375"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 14,
+    "results": [
+      {
+        "label": "* Player trading results decrease to a loss of £24.9m from a profit of",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "* Player trading results decrease to a loss of £24.9m from a profit of",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "* Football costs increase:",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "* Football costs increase:",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "expenses 10 (534)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "expenses 10 (534)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1,269 (1,969) (700)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1,269 (1,969) (700)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciation expense",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciation expense",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortisation expense",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortisation expense",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impairment loss -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impairment loss -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Wages and salaries",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Wages and salaries",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Social security costs",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Social security costs",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Interest income on bank deposits",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Interest income on bank deposits",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Unwinding of discount on transfer fees receivable",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Unwinding of discount on transfer fees receivable",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Deferred tax not recognised -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Deferred tax not recognised -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reinvestment relief on player disposals",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reinvestment relief on player disposals",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Movement on unutilised tax losses",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Movement on unutilised tax losses",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "gb",
+    "query": "Brighton",
+    "matches": [
+      {
+        "leagueId": "gb-premierleague",
+        "year": "2025",
+        "matchedName": "Brighton & Hove Albion",
+        "wikipediaPage": "2024–25 Premier League"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": [
+    "1 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

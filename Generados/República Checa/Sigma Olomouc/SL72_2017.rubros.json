@@ -1,0 +1,668 @@
+{
+ "md": "Clubes/República Checa/Sigma Olomouc/SL72_2017.md",
+ "pdf": "Clubes/República Checa/Sigma Olomouc/SL72_2017.pdf",
+ "club": "sigma-olomouc",
+ "year": 2017,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:07:49.874Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": false,
+  "motivo": "sin estado de resultados"
+ },
+ "ladoConocido": 21,
+ "rubros": [
+  {
+   "label": "Tržby za prodej výrobků a služeb",
+   "lado": "revenue",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "1",
+    "60 684",
+    "33 749",
+    "43 697"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Tržby za prodej zboží",
+   "lado": "revenue",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "2",
+    "1 201",
+    "533",
+    "625"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Výkonová spotřeba",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "3",
+    "65 304",
+    "41 689",
+    "54 792"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Náklady vynaložené na prodané zboží",
+   "lado": "expense",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "4",
+    "683",
+    "292",
+    "383"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Spotřeba materiálu a energie",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "5",
+    "6 771",
+    "3 839",
+    "6 222"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Služby",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "6",
+    "57 850",
+    "37 558",
+    "48 187"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Změna stavu zásob vlastní činnosti (+/-)",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "7",
+    "",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Aktivace (-)",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "8",
+    "",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Osobní náklady",
+   "lado": "expense",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "9",
+    "10 107",
+    "8 098",
+    "9 232"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Mzdové náklady",
+   "lado": "expense",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "10",
+    "8 253",
+    "6 237",
+    "7 280"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Náklady na soc. zabezpečení, zdr. pojištění a ost. náklady",
+   "lado": "expense",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "11",
+    "1 854",
+    "1 861",
+    "1 952"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Náklady na sociální zabezpečení a zdravotní pojištění",
+   "lado": "expense",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "12",
+    "1 613",
+    "1 538",
+    "1 709"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Ostatní náklady",
+   "lado": "expense",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "13",
+    "241",
+    "323",
+    "243"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Úpravy hodnot v provozní oblasti",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "14",
+    "6 953",
+    "2 513",
+    "2 508"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Úpravy hodnot dlouhodobého nehmotného a hmotného majetku",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "15",
+    "6 953",
+    "2 539",
+    "2 604"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Úpravy hodnot dlouhodobého nehmot. a hmot. majetku - trvalé",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "16",
+    "6 953",
+    "2 539",
+    "2 604"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Úpravy hodnot dlouhodobého nehmot. a hmot. majetku - dočasné",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "17",
+    "",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Úpravy hodnot zásob",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "18",
+    "",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Úpravy hodnot pohledávek",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "19",
+    "",
+    "-26",
+    "-96"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Ostatní provozní výnosy",
+   "lado": "revenue",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "20",
+    "156 399",
+    "77 160",
+    "15 244"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Tržby z prodaného dlouhodobého majetku",
+   "lado": "revenue",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "21",
+    "154 900",
+    "71 602",
+    "15 109"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Tržby z prodaného materiálu",
+   "lado": "revenue",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "22",
+    "24",
+    "14",
+    "93"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Jiné provozní výnosy",
+   "lado": "revenue",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "23",
+    "1 475",
+    "5 544",
+    "42"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Ostatní provozní náklady",
+   "lado": "expense",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "24",
+    "120 416",
+    "12 221",
+    "15 847"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Zůstatková cena prodaného dlouhodobého majetku",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "25",
+    "119 088",
+    "10 775",
+    "13 670"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Zůstatková cena prodaného materiálu",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "26",
+    "24",
+    "",
+    "52"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Daně a poplatky z provozní oblasti",
+   "lado": "expense",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "27",
+    "277",
+    "168",
+    "213"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Rezervy v provozní oblasti a komplexní náklady příštích období",
+   "lado": "expense",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "28",
+    "",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Jiné provozní náklady",
+   "lado": "expense",
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "29",
+    "1 027",
+    "1 278",
+    "[ilegible]"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "Provozní výsledek hospodaření (+/-)",
+   "lado": null,
+   "page": 27,
+   "section": "1.7.2017 - 30.6.2018 / SK Sigma Olomouc, a.s. / Legionářská 12 / 779 00 Olomouc / IČ  61974633",
+   "values": [
+    "30",
+    "15 504",
+    "46 921",
+    "[ilegible]"
+   ],
+   "columns": [
+    "TEXT",
+    "č.ř.",
+    "Skutečnost v účetním období – běžném",
+    "– minulém",
+    "– předminulém"
+   ]
+  },
+  {
+   "label": "výnos 641 - prodej Androva stadionu",
+   "lado": "revenue",
+   "page": 32,
+   "section": "4. Výnosy a náklady mimořádné svým objemem či původem",
+   "values": [
+    "144 900",
+    ""
+   ],
+   "columns": [
+    "Výnos náklad",
+    "Tis. Kč",
+    "Komentář"
+   ]
+  },
+  {
+   "label": "náklad 541 - zůstat. cena Androva stadionu",
+   "lado": "expense",
+   "page": 32,
+   "section": "4. Výnosy a náklady mimořádné svým objemem či původem",
+   "values": [
+    "115 293",
+    ""
+   ],
+   "columns": [
+    "Výnos náklad",
+    "Tis. Kč",
+    "Komentář"
+   ]
+  },
+  {
+   "label": "výnos 641 - prodej jednotky sev.t.-Fitness",
+   "lado": "revenue",
+   "page": 32,
+   "section": "4. Výnosy a náklady mimořádné svým objemem či původem",
+   "values": [
+    "10 000",
+    ""
+   ],
+   "columns": [
+    "Výnos náklad",
+    "Tis. Kč",
+    "Komentář"
+   ]
+  },
+  {
+   "label": "náklad 541 - zůstat.cena jednotky sev.t.",
+   "lado": "expense",
+   "page": 32,
+   "section": "4. Výnosy a náklady mimořádné svým objemem či původem",
+   "values": [
+    "3 795",
+    ""
+   ],
+   "columns": [
+    "Výnos náklad",
+    "Tis. Kč",
+    "Komentář"
+   ]
+  },
+  {
+   "label": "náklad - 592 - odložená daň",
+   "lado": "expense",
+   "page": 32,
+   "section": "4. Výnosy a náklady mimořádné svým objemem či původem",
+   "values": [
+    "-1 662",
+    ""
+   ],
+   "columns": [
+    "Výnos náklad",
+    "Tis. Kč",
+    "Komentář"
+   ]
+  }
+ ]
+}

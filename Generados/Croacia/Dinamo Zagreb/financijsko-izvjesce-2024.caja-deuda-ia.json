@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2024.md",
+ "generado": "2026-10-02T00:14:17.563Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Kratkotrajna imovina EUR EUR",
+ "caja": {
+  "lineas": [
+   544
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   566,
+   567,
+   582
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Cifras en EUR sin indicación de miles; deuda financiera: préstamos bancarios y otros corrientes 3.700.000 (L567), sobregiros (L566) y no corrientes (L582) en 0. Se excluyeron las obligaciones por factoring de transferencias (L586, en 0) y las líneas de transferencias de jugadores con texto OCR dañado (L570-571, L585)."
+}

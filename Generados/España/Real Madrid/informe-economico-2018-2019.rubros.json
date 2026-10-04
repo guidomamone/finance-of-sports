@@ -1,0 +1,565 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2018-2019.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2018-2019.pdf",
+  "club": "realmadrid",
+  "year": 2019,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:01:06.660Z",
+  "tieOuts": {
+    "cierran": 3,
+    "noCierran": 27
+  },
+  "warnings": [
+    "7 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "20 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "11 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 49,
+    "notasUsadas": []
+  },
+  "ladoConocido": 30,
+  "rubros": [
+    {
+      "label": "Jugadores y técnicos 1º equipo fútbol 280.795 2.786 - 54.858",
+      "lado": null,
+      "page": 55,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        1.01
+      ],
+      "origen": "estado 51",
+      "glosa": "Jugadores y técnicos 1º equipo fútbol 280.795 2.786 - 54.858"
+    },
+    {
+      "label": "Importe plantilla inscribible LNFP 339.935 80.258",
+      "lado": null,
+      "page": 55,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        -7.205
+      ],
+      "origen": "estado 51",
+      "glosa": "Importe plantilla inscribible LNFP 339.935 80.258"
+    },
+    {
+      "label": "Jugadores y técnicos 2º equipo fútbol 6.425 54 19 - 348 -",
+      "lado": null,
+      "page": 55,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        6.846
+      ],
+      "origen": "estado 51",
+      "glosa": "Jugadores y técnicos 2º equipo fútbol 6.425 54 19 - 348 -"
+    },
+    {
+      "label": "Importe plantilla no inscribible LNFP 48.385 4.664 112",
+      "lado": null,
+      "page": 55,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        53.596
+      ],
+      "origen": "estado 51",
+      "glosa": "Importe plantilla no inscribible LNFP 48.385 4.664 112"
+    },
+    {
+      "label": "Jugadores y técnicos categorías inferiores fútbol 5.218 22 - -",
+      "lado": null,
+      "page": 55,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        1.8
+      ],
+      "origen": "estado 51",
+      "glosa": "Jugadores y técnicos categorías inferiores fútbol 5.218 22 - -"
+    },
+    {
+      "label": "Personal no deportivo 34.035 - 113 1.150 4.273",
+      "lado": null,
+      "page": 55,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        40.293
+      ],
+      "origen": "estado 51",
+      "glosa": "Personal no deportivo 34.035 - 113 1.150 4.273"
+    },
+    {
+      "label": "Gastos totales plantilla deportiva 388.320 84.922",
+      "lado": "expense",
+      "page": 55,
+      "section": "Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        -6.77
+      ],
+      "origen": "estado 51",
+      "glosa": "Gastos totales plantilla deportiva 388.320 84.922"
+    },
+    {
+      "label": "Importe plantilla inscribible LNFP 283.396 1.911 8.472 4.304",
+      "lado": "expense",
+      "page": 55,
+      "section": "baloncesto) en la LNFP es la siguiente: / Ejercicio 2018/2019 / Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        1.174
+      ],
+      "origen": "estado 50",
+      "glosa": "Importe plantilla inscribible LNFP 283.396 1.911 8.472 4.304"
+    },
+    {
+      "label": "Importe plantilla no inscribible LNFP 37.915 1.846 490 2.470 1.922 2.874 47.517 Importe plantilla inscribible LNFP",
+      "lado": "expense",
+      "page": 55,
+      "section": "baloncesto) en la LNFP es la siguiente: / Ejercicio 2018/2019 / Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        299.807
+      ],
+      "origen": "estado 50",
+      "glosa": "Importe plantilla no inscribible LNFP 37.915 1.846 490 2.470 1.922 2.874 47.517 Importe plantilla inscribible LNFP"
+    },
+    {
+      "label": "Importe plantilla no inscribible LNFP 47.517 2.724 357",
+      "lado": "expense",
+      "page": 55,
+      "section": "baloncesto) en la LNFP es la siguiente: / Ejercicio 2018/2019 / Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        51.267
+      ],
+      "origen": "estado 50",
+      "glosa": "Importe plantilla no inscribible LNFP 47.517 2.724 357"
+    },
+    {
+      "label": "Gastos totales plantilla deportiva",
+      "lado": "expense",
+      "page": 55,
+      "section": "baloncesto) en la LNFP es la siguiente: / Ejercicio 2018/2019 / Sueldos y   Derechos Indemniz./   Primas    Seguridad Otras cargas Total gastos",
+      "values": [
+        347.324
+      ],
+      "origen": "estado 50",
+      "glosa": "Gastos totales plantilla deportiva"
+    },
+    {
+      "label": "Arrendamientos de activos (nota 6.3)",
+      "lado": null,
+      "page": 56,
+      "section": "inmovilizado y otros excepcionales” es el siguiente: / Dentro del epígrafe “Otros gastos de gestión corriente” se inclu- / en el R/D 5/2015 (ver Nota 17.1.5), así como provisiones de de- / miles €                                           30/06/2019   30/06/2018",
+      "values": [
+        2.203
+      ],
+      "origen": "estado 55",
+      "glosa": "Arrendamientos de activos (nota 6.3)"
+    },
+    {
+      "label": "Otros arrendamientos, cánones y otros servicios",
+      "lado": null,
+      "page": 56,
+      "section": "inmovilizado y otros excepcionales” es el siguiente: / Dentro del epígrafe “Otros gastos de gestión corriente” se inclu- / en el R/D 5/2015 (ver Nota 17.1.5), así como provisiones de de- / miles €                                           30/06/2019   30/06/2018",
+      "values": [
+        61.35
+      ],
+      "origen": "estado 55",
+      "glosa": "Otros arrendamientos, cánones y otros servicios"
+    },
+    {
+      "label": "Reparaciones y conservación",
+      "lado": null,
+      "page": 56,
+      "section": "inmovilizado y otros excepcionales” es el siguiente: / Dentro del epígrafe “Otros gastos de gestión corriente” se inclu- / en el R/D 5/2015 (ver Nota 17.1.5), así como provisiones de de- / miles €                                           30/06/2019   30/06/2018",
+      "values": [
+        28.964
+      ],
+      "origen": "estado 55",
+      "glosa": "Reparaciones y conservación"
+    },
+    {
+      "label": "Servicios profesionales",
+      "lado": null,
+      "page": 56,
+      "section": "inmovilizado y otros excepcionales” es el siguiente: / Dentro del epígrafe “Otros gastos de gestión corriente” se inclu- / en el R/D 5/2015 (ver Nota 17.1.5), así como provisiones de de- / miles €                                           30/06/2019   30/06/2018",
+      "values": [
+        35.711
+      ],
+      "origen": "estado 55",
+      "glosa": "Servicios profesionales"
+    },
+    {
+      "label": "Retenciones y pagos a cuenta a devolver",
+      "lado": null,
+      "page": 46,
+      "section": "• Anticipos a largo plazo                                          16. SITUACIÓN FISCAL / pendientes de devengo relativos a diversos contratos de patro- / Hacienda Pública, deudora por devolución de impuestos                    10           12 / pérdidas y ganancias del ejercicio 2018/2019 correspondiente a",
+      "values": [
+        3.881
+      ],
+      "origen": "estado 37",
+      "glosa": "Retenciones y pagos a cuenta a devolver"
+    },
+    {
+      "label": "la actualización de los anticipos recibidos asciende a 231 miles Activos por impuesto corriente (nota 8.2)",
+      "lado": "expense",
+      "page": 46,
+      "section": "• Anticipos a largo plazo                                          16. SITUACIÓN FISCAL / pendientes de devengo relativos a diversos contratos de patro- / Hacienda Pública, deudora por devolución de impuestos                    10           12 / pérdidas y ganancias del ejercicio 2018/2019 correspondiente a",
+      "values": [
+        3.881
+      ],
+      "origen": "estado 37",
+      "glosa": "la actualización de los anticipos recibidos asciende a 231 miles Activos por impuesto corriente (nota 8.2)"
+    },
+    {
+      "label": "de euros (365 miles de euros en el ejercicio",
+      "lado": null,
+      "page": 46,
+      "section": "• Anticipos a largo plazo                                          16. SITUACIÓN FISCAL / pendientes de devengo relativos a diversos contratos de patro- / Hacienda Pública, deudora por devolución de impuestos                    10           12 / pérdidas y ganancias del ejercicio 2018/2019 correspondiente a",
+      "values": [
+        20172.018
+      ],
+      "origen": "estado 37",
+      "glosa": "de euros (365 miles de euros en el ejercicio"
+    },
+    {
+      "label": "Activos por diferencias temporarias deducibles",
+      "lado": "revenue",
+      "page": 46,
+      "section": "• Anticipos a largo plazo                                          16. SITUACIÓN FISCAL / pendientes de devengo relativos a diversos contratos de patro- / Hacienda Pública, deudora por devolución de impuestos                    10           12 / pérdidas y ganancias del ejercicio 2018/2019 correspondiente a",
+      "values": [
+        19.111
+      ],
+      "origen": "estado 37",
+      "glosa": "Activos por diferencias temporarias deducibles"
+    },
+    {
+      "label": "Diferimiento plusvalías 2.895 (82) -",
+      "lado": null,
+      "page": 49,
+      "section": "miles € / Deducción           Deducción         Crédito fiscal / 12.407                   636                   -       13.043 / Pasivos por impuesto diferido / Pasivos por diferencias temporarias deducibles",
+      "values": [
+        2.813
+      ],
+      "origen": "estado 41",
+      "glosa": "Diferimiento plusvalías 2.895 (82) -"
+    },
+    {
+      "label": "Diferimiento plusvalías por pago aplazado 8.052 2.545 -",
+      "lado": null,
+      "page": 49,
+      "section": "miles € / Deducción           Deducción         Crédito fiscal / 12.407                   636                   -       13.043 / Pasivos por impuesto diferido / Pasivos por diferencias temporarias deducibles",
+      "values": [
+        10.597
+      ],
+      "origen": "estado 41",
+      "glosa": "Diferimiento plusvalías por pago aplazado 8.052 2.545 -"
+    },
+    {
+      "label": "Libertad de amortización 1.172 (76) -",
+      "lado": null,
+      "page": 49,
+      "section": "miles € / Deducción           Deducción         Crédito fiscal / 12.407                   636                   -       13.043 / Pasivos por impuesto diferido / Pasivos por diferencias temporarias deducibles",
+      "values": [
+        1.096
+      ],
+      "origen": "estado 41",
+      "glosa": "Libertad de amortización 1.172 (76) -"
+    },
+    {
+      "label": "Subvenciones (Nota 6.4) 1.522 - (48)",
+      "lado": "revenue",
+      "page": 49,
+      "section": "miles € / Deducción           Deducción         Crédito fiscal / 12.407                   636                   -       13.043 / Pasivos por impuesto diferido / Pasivos por diferencias temporarias deducibles",
+      "values": [
+        1.474
+      ],
+      "origen": "estado 41",
+      "glosa": "Subvenciones (Nota 6.4) 1.522 - (48)"
+    },
+    {
+      "label": "Impuesto corriente",
+      "lado": "expense",
+      "page": 48,
+      "section": "Variación de impuestos diferidos / Cuenta de pérdidas   directamente imputados / 53.416                          - / El cálculo del impuesto sobre beneficios a devolver o pagar es el / siguiente:",
+      "values": [
+        -17.976
+      ],
+      "origen": "estado 40",
+      "glosa": "Impuesto corriente"
+    },
+    {
+      "label": "Reserva de capitalización (685) - Retenciones y pagos a cuenta",
+      "lado": null,
+      "page": 48,
+      "section": "Variación de impuestos diferidos / Cuenta de pérdidas   directamente imputados / 53.416                          - / El cálculo del impuesto sobre beneficios a devolver o pagar es el / siguiente:",
+      "values": [
+        21.857
+      ],
+      "origen": "estado 40",
+      "glosa": "Reserva de capitalización (685) - Retenciones y pagos a cuenta"
+    },
+    {
+      "label": "Ajuste Reserva de capitalización ejercicio anterior (11) - Deducciones años anteriores aplicadas en el ejercicio -",
+      "lado": "revenue",
+      "page": 48,
+      "section": "Variación de impuestos diferidos / Cuenta de pérdidas   directamente imputados / 53.416                          - / El cálculo del impuesto sobre beneficios a devolver o pagar es el / siguiente:",
+      "values": [
+        1.111
+      ],
+      "origen": "estado 40",
+      "glosa": "Ajuste Reserva de capitalización ejercicio anterior (11) - Deducciones años anteriores aplicadas en el ejercicio -"
+    },
+    {
+      "label": "obtenidos y la implantación social, medida por la recaudación en Jugadores y técnicos baloncesto 24.502 1.839 - 2.470",
+      "lado": "revenue",
+      "page": 54,
+      "section": "tegoría (Primera o Segunda División), los resultados deportivos",
+      "values": [
+        1018
+      ],
+      "origen": "estado 49",
+      "glosa": "obtenidos y la implantación social, medida por la recaudación en Jugadores y técnicos baloncesto 24.502 1.839 - 2.470"
+    },
+    {
+      "label": "abonos y taquilla media y la aportación relativa en la generación Personal no deportivo baloncesto 1.732 - - 130 124",
+      "lado": null,
+      "page": 54,
+      "section": "tegoría (Primera o Segunda División), los resultados deportivos",
+      "values": [
+        2016
+      ],
+      "origen": "estado 49",
+      "glosa": "abonos y taquilla media y la aportación relativa en la generación Personal no deportivo baloncesto 1.732 - - 130 124"
+    },
+    {
+      "label": "de recursos por la comercialización de las retransmisiones tele- Total Baloncesto 26.234 1.839 - 2.600",
+      "lado": "revenue",
+      "page": 54,
+      "section": "tegoría (Primera o Segunda División), los resultados deportivos",
+      "values": [
+        1048
+      ],
+      "origen": "estado 49",
+      "glosa": "de recursos por la comercialización de las retransmisiones tele- Total Baloncesto 26.234 1.839 - 2.600"
+    },
+    {
+      "label": "Jugadores y técnicos baloncesto 23.257 2.760 - 6.306 403",
+      "lado": null,
+      "page": 55,
+      "section": "",
+      "values": [
+        33.603
+      ],
+      "origen": "estado 52",
+      "glosa": "Jugadores y técnicos baloncesto 23.257 2.760 - 6.306 403"
+    },
+    {
+      "label": "Personal no deportivo baloncesto 1.686 - - 300 124",
+      "lado": null,
+      "page": 55,
+      "section": "",
+      "values": [
+        2.138
+      ],
+      "origen": "estado 52",
+      "glosa": "Personal no deportivo baloncesto 1.686 - - 300 124"
+    },
+    {
+      "label": "Concesiones 3.159 - - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Correcciones por deterioro: / Ejercicio 2017/2018 / Altas y / Coste:",
+      "values": [
+        3.159
+      ],
+      "origen": "estado 14",
+      "glosa": "Concesiones 3.159 - - -"
+    },
+    {
+      "label": "Patentes, licencias, marcas y similares 1.526 140 - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Correcciones por deterioro: / Ejercicio 2017/2018 / Altas y / Coste:",
+      "values": [
+        1.666
+      ],
+      "origen": "estado 14",
+      "glosa": "Patentes, licencias, marcas y similares 1.526 140 - -"
+    },
+    {
+      "label": "Aplicaciones informáticas 14.400 518 -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Correcciones por deterioro: / Ejercicio 2017/2018 / Altas y / Coste:",
+      "values": [
+        15.331
+      ],
+      "origen": "estado 14",
+      "glosa": "Aplicaciones informáticas 14.400 518 -"
+    },
+    {
+      "label": "Otro inmovilizado intangible 125.047 - - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Correcciones por deterioro: / Ejercicio 2017/2018 / Altas y / Coste:",
+      "values": [
+        125.047
+      ],
+      "origen": "estado 14",
+      "glosa": "Otro inmovilizado intangible 125.047 - - -"
+    },
+    {
+      "label": "Anticipos 1.461 658 - (413)",
+      "lado": "expense",
+      "page": 31,
+      "section": "Correcciones por deterioro: / Ejercicio 2017/2018 / Altas y / Coste:",
+      "values": [
+        1.706
+      ],
+      "origen": "estado 14",
+      "glosa": "Anticipos 1.461 658 - (413)"
+    },
+    {
+      "label": "Costes financieros y dividendos",
+      "lado": "expense",
+      "page": 63,
+      "section": "Se considerará indicativo de una posible situación de desequili- / brio económico financiero futuro cuando el montante económico / 30/06/2019    30/06/2018    30/06/2017 / anual de los gastos de personal asociados a la primera plantilla / Económico de la LFP.",
+      "values": [
+        1.599
+      ],
+      "origen": "estado 67",
+      "glosa": "Costes financieros y dividendos"
+    },
+    {
+      "label": "Gastos personal asociados a la primera plantilla de fútbol",
+      "lado": "expense",
+      "page": 63,
+      "section": "Se considerará indicativo de una posible situación de desequili- / brio económico financiero futuro cuando el montante económico / 30/06/2019    30/06/2018    30/06/2017 / anual de los gastos de personal asociados a la primera plantilla / Económico de la LFP.",
+      "values": [
+        301.699
+      ],
+      "origen": "estado 67",
+      "glosa": "Gastos personal asociados a la primera plantilla de fútbol"
+    },
+    {
+      "label": "Gastos actividades desarrollo cantera no identificables",
+      "lado": "expense",
+      "page": 63,
+      "section": "Se considerará indicativo de una posible situación de desequili- / brio económico financiero futuro cuando el montante económico / 30/06/2019    30/06/2018    30/06/2017 / anual de los gastos de personal asociados a la primera plantilla / Económico de la LFP.",
+      "values": [
+        -7.365
+      ],
+      "origen": "estado 67",
+      "glosa": "Gastos actividades desarrollo cantera no identificables"
+    },
+    {
+      "label": "Ingresos relevantes",
+      "lado": "revenue",
+      "page": 63,
+      "section": "Se considerará indicativo de una posible situación de desequili- / brio económico financiero futuro cuando el montante económico / 30/06/2019    30/06/2018    30/06/2017 / anual de los gastos de personal asociados a la primera plantilla / Económico de la LFP.",
+      "values": [
+        848.002
+      ],
+      "origen": "estado 67",
+      "glosa": "Ingresos relevantes"
+    },
+    {
+      "label": "Gastos en actividades de desarrollo comunitario",
+      "lado": "expense",
+      "page": 63,
+      "section": "Se considerará indicativo de una posible situación de desequili- / brio económico financiero futuro cuando el montante económico / 30/06/2019    30/06/2018    30/06/2017 / anual de los gastos de personal asociados a la primera plantilla / Económico de la LFP.",
+      "values": [
+        -2.768
+      ],
+      "origen": "estado 67",
+      "glosa": "Gastos en actividades de desarrollo comunitario"
+    },
+    {
+      "label": "Amortización/desvalorización inmovilizado inmaterial no deportivo, material e inmobiliario",
+      "lado": "expense",
+      "page": 63,
+      "section": "Se considerará indicativo de una posible situación de desequili- / brio económico financiero futuro cuando el montante económico / 30/06/2019    30/06/2018    30/06/2017 / anual de los gastos de personal asociados a la primera plantilla / Económico de la LFP.",
+      "values": [
+        -18.046
+      ],
+      "origen": "estado 67",
+      "glosa": "Amortización/desvalorización inmovilizado inmaterial no deportivo, material e inmobiliario"
+    },
+    {
+      "label": "Ingresos de estadio",
+      "lado": "revenue",
+      "page": 45,
+      "section": "tas de socios/abonados, se cobran el 30 de junio las del ejercicio / Ingresos de retransmisión                    23.501       14.825 / sentará ningún pago ya que se realizará vía ingresos del ejercicio",
+      "values": [
+        67637
+      ],
+      "origen": "estado 36",
+      "glosa": "Ingresos de estadio"
+    },
+    {
+      "label": "siguiente. En el caso de los abonos de palcos y zonas VIP, así Ingresos de marketing",
+      "lado": "revenue",
+      "page": 45,
+      "section": "tas de socios/abonados, se cobran el 30 de junio las del ejercicio / Ingresos de retransmisión                    23.501       14.825 / sentará ningún pago ya que se realizará vía ingresos del ejercicio",
+      "values": [
+        34239
+      ],
+      "origen": "estado 36",
+      "glosa": "siguiente. En el caso de los abonos de palcos y zonas VIP, así Ingresos de marketing"
+    },
+    {
+      "label": "como de algunos patrocinadores, una parte de los cobros se han Ingresos de competiciones",
+      "lado": "revenue",
+      "page": 45,
+      "section": "tas de socios/abonados, se cobran el 30 de junio las del ejercicio / Ingresos de retransmisión                    23.501       14.825 / sentará ningún pago ya que se realizará vía ingresos del ejercicio",
+      "values": [
+        4001
+      ],
+      "origen": "estado 36",
+      "glosa": "como de algunos patrocinadores, una parte de los cobros se han Ingresos de competiciones"
+    },
+    {
+      "label": "producido con anterioridad al cierre de la temporada, mientras",
+      "lado": "revenue",
+      "page": 45,
+      "section": "tas de socios/abonados, se cobran el 30 de junio las del ejercicio / Ingresos de retransmisión                    23.501       14.825 / sentará ningún pago ya que se realizará vía ingresos del ejercicio",
+      "values": [
+        129378
+      ],
+      "origen": "estado 36",
+      "glosa": "producido con anterioridad al cierre de la temporada, mientras"
+    },
+    {
+      "label": "30 de junio",
+      "lado": "expense",
+      "page": 34,
+      "section": "formalizado en 1992, inicialmente por un periodo de 20 años y / ejercicio. Este contrato de cesión y explotación ha generado / Altas y / de aproximadamente 376 miles de euros (467 miles de euros a / Coste",
+      "values": [
+        2.018
+      ],
+      "origen": "estado 18",
+      "glosa": "30 de junio"
+    },
+    {
+      "label": "Terrenos 13.620 - - -",
+      "lado": "expense",
+      "page": 34,
+      "section": "formalizado en 1992, inicialmente por un periodo de 20 años y / ejercicio. Este contrato de cesión y explotación ha generado / Altas y / de aproximadamente 376 miles de euros (467 miles de euros a / Coste",
+      "values": [
+        13.62
+      ],
+      "origen": "estado 18",
+      "glosa": "Terrenos 13.620 - - -"
+    },
+    {
+      "label": "Construcciones 15.024 - - -",
+      "lado": "expense",
+      "page": 34,
+      "section": "formalizado en 1992, inicialmente por un periodo de 20 años y / ejercicio. Este contrato de cesión y explotación ha generado / Altas y / de aproximadamente 376 miles de euros (467 miles de euros a / Coste",
+      "values": [
+        15.024
+      ],
+      "origen": "estado 18",
+      "glosa": "Construcciones 15.024 - - -"
+    }
+  ]
+}

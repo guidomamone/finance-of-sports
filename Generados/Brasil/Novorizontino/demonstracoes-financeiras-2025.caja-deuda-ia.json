@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2025.md",
+ "generado": "2026-10-03T03:42:42.932Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "caja": {
+  "lineas": [
+   201
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   201
+  ],
+  "ninguna": false
+ },
+ "observaciones": "L201 contiene tanto Caixa e equivalentes (1.482.725) como Empréstimos bancários (8.436) en la misma fila; las Aplicações financeiras de projetos incentivados (L210) son recursos restringidos y no se incluyeron en caja; Partes relacionadas no circulante (L214, 145 millones) podría ser financiamiento del accionista pero no se clasificó como deuda bancaria."
+}

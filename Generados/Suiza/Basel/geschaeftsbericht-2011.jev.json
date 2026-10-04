@@ -1,0 +1,1133 @@
+{
+ "md": "Clubes/Suiza/Basel/geschaeftsbericht-2011.md",
+ "generatedAt": "2026-09-30T12:59:42.802Z",
+ "rubros": [
+  {
+   "label": "Diverses",
+   "lado": null,
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Mitglieder",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "member_dues",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "member_dues",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Übriger Aufwand",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Ergebnis vor Zinsen, ausserordentlichen Posten und Steuern",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "lump_football_operations",
+     0.18000000000000002
+    ],
+    [
+     "other_income",
+     0.16
+    ]
+   ],
+   "tokens": 1595
+  },
+  {
+   "label": "Betrieblicher Gesamtertrag",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "lump_football_operations",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.72
+    ],
+    [
+     "other_income",
+     0.26
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Personalaufwand",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "wages_squad",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "wages_squad",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1537
+  },
+  {
+   "label": "Administration",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1386
+  },
+  {
+   "label": "Finanzertrag",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Finanzaufwand",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Ergebnis vor ausserordentlichen Posten und Steuern",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ]
+   ],
+   "tokens": 1591
+  },
+  {
+   "label": "Defizitgarantie FC Basel 1893 AG",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "exceptional_items",
+     0.17
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "Steuern",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1461
+  },
+  {
+   "label": "Ergebnis vor Steuern",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "other_income",
+     0.24
+    ]
+   ],
+   "tokens": 1574
+  },
+  {
+   "label": "Matcheinnahmen",
+   "lado": null,
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "matchday_competition",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Jahresgewinn",
+   "lado": null,
+   "page": 17,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "*aus Meisterschaft*",
+   "lado": null,
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "competition_bonus",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "competition_bonus",
+     0.59
+    ],
+    [
+     "other_income",
+     0.18000000000000002
+    ],
+    [
+     "broadcasting",
+     0.13
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "*aus UEFA-Spielen*",
+   "lado": null,
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "broadcasting",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "broadcasting",
+     0.77
+    ],
+    [
+     "competition_bonus",
+     0.2
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "*aus Cup-Spielen*",
+   "lado": null,
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "competition_bonus",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "competition_bonus",
+     0.52
+    ],
+    [
+     "other_income",
+     0.26
+    ],
+    [
+     "matchday_competition",
+     0.16
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "*aus übrigen Spielen*",
+   "lado": null,
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "matchday_competition",
+     0.21000000000000002
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Business Seats",
+   "lado": null,
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.7
+    ],
+    [
+     "stadium_other",
+     0.19
+    ],
+    [
+     "season_tickets",
+     0.1
+    ]
+   ],
+   "tokens": 1373
+  },
+  {
+   "label": "Transferertrag",
+   "lado": null,
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "player_sales",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "player_sales",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "TV-Entschädigungen",
+   "lado": null,
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Merchandising, Licensing",
+   "lado": null,
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1478
+  },
+  {
+   "label": "Sponsoring, Werbung",
+   "lado": null,
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1523
+  },
+  {
+   "label": "Einnahmen Leistungsfussball Nachwuchs",
+   "lado": null,
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "youth_football",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "youth_football",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1453
+  },
+  {
+   "label": "Verbandseinnahmen",
+   "lado": null,
+   "page": 23,
+   "section": "## ERFOLGSRECHNUNGEN 2011 UND 2010",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_income",
+     0.49
+    ],
+    [
+     "competition_bonus",
+     0.24000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "– davon Kaderspieler",
+   "lado": null,
+   "page": 32,
+   "section": "#### O. Einnahmen Leistungsfussball Nachwuchs / #### P. Diverser Ertrag / #### Q. Personalaufwand",
+   "choice": "wages_squad",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "wages_squad",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "youth_football",
+     0.02
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "– davon Trainer/Assistenten",
+   "lado": null,
+   "page": 32,
+   "section": "#### O. Einnahmen Leistungsfussball Nachwuchs / #### P. Diverser Ertrag / #### Q. Personalaufwand",
+   "choice": "wages_squad",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "wages_squad",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "lump_football_operations_expense",
+     0.19
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "– davon Medico",
+   "lado": null,
+   "page": 32,
+   "section": "#### O. Einnahmen Leistungsfussball Nachwuchs / #### P. Diverser Ertrag / #### Q. Personalaufwand",
+   "choice": "admin_general_expense",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.55
+    ],
+    [
+     "wages_squad",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "– davon Support",
+   "lado": null,
+   "page": 32,
+   "section": "#### O. Einnahmen Leistungsfussball Nachwuchs / #### P. Diverser Ertrag / #### Q. Personalaufwand",
+   "choice": "other_income",
+   "confidence": 0.2,
+   "top3": [
+    [
+     "other_income",
+     0.24000000000000002
+    ],
+    [
+     "sponsorship_commercial",
+     0.22
+    ],
+    [
+     "youth_football",
+     0.15
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "*Geschäftsstelle/Administration*",
+   "lado": null,
+   "page": 32,
+   "section": "#### O. Einnahmen Leistungsfussball Nachwuchs / #### P. Diverser Ertrag / #### Q. Personalaufwand",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1458
+  },
+  {
+   "label": "– davon Nachwuchsspieler mit Vertrag",
+   "lado": null,
+   "page": 32,
+   "section": "#### O. Einnahmen Leistungsfussball Nachwuchs / #### P. Diverser Ertrag / #### Q. Personalaufwand",
+   "choice": "wages_squad",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "wages_squad",
+     0.44
+    ],
+    [
+     "youth_other_sports_expense",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1378
+  },
+  {
+   "label": "*Leistungsfussball Nachwuchs*",
+   "lado": null,
+   "page": 32,
+   "section": "#### O. Einnahmen Leistungsfussball Nachwuchs / #### P. Diverser Ertrag / #### Q. Personalaufwand",
+   "choice": "youth_football",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "youth_football",
+     0.91
+    ],
+    [
+     "youth_other_sports_expense",
+     0.05
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1288
+  },
+  {
+   "label": "2001",
+   "lado": "expense",
+   "page": 33,
+   "section": "Grafik 4: Personalaufwand (in CHF)",
+   "choice": "wages_squad",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "wages_squad",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "2000",
+   "lado": "expense",
+   "page": 33,
+   "section": "Grafik 4: Personalaufwand (in CHF)",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "wages_squad",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "2005",
+   "lado": null,
+   "page": 33,
+   "section": "Grafik 5: Personalaufwand in % des Gesamtumsatzes",
+   "choice": "wages_squad",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "wages_squad",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "2003",
+   "lado": "expense",
+   "page": 33,
+   "section": "Grafik 4: Personalaufwand (in CHF)",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "wages_squad",
+     0.17
+    ]
+   ],
+   "tokens": 858
+  },
+  {
+   "label": "2002",
+   "lado": "expense",
+   "page": 33,
+   "section": "Grafik 4: Personalaufwand (in CHF)",
+   "choice": "wages_squad",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "wages_squad",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.29000000000000004
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "2004",
+   "lado": "expense",
+   "page": 33,
+   "section": "Grafik 4: Personalaufwand (in CHF)",
+   "choice": "wages_squad",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "wages_squad",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "2006",
+   "lado": "expense",
+   "page": 34,
+   "section": "Tabelle 2:",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 787
+  },
+  {
+   "label": "2007",
+   "lado": "expense",
+   "page": 34,
+   "section": "Tabelle 2:",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 787
+  },
+  {
+   "label": "2008",
+   "lado": "expense",
+   "page": 34,
+   "section": "Tabelle 2:",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "depreciation",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 787
+  },
+  {
+   "label": "2010",
+   "lado": "expense",
+   "page": 34,
+   "section": "Tabelle 2:",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 787
+  },
+  {
+   "label": "2011",
+   "lado": "expense",
+   "page": 34,
+   "section": "Tabelle 2:",
+   "choice": "player_amortisation",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "player_amortisation",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 854
+  },
+  {
+   "label": "03/04",
+   "lado": null,
+   "page": 33,
+   "section": "Grafik 5: Personalaufwand in % des Gesamtumsatzes",
+   "choice": "wages_squad",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "wages_squad",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "01/02",
+   "lado": null,
+   "page": 33,
+   "section": "Grafik 5: Personalaufwand in % des Gesamtumsatzes",
+   "choice": "wages_squad",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "wages_squad",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "02/03",
+   "lado": null,
+   "page": 33,
+   "section": "Grafik 5: Personalaufwand in % des Gesamtumsatzes",
+   "choice": "wages_squad",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "wages_squad",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "2009",
+   "lado": "expense",
+   "page": 34,
+   "section": "Tabelle 2:",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 787
+  },
+  {
+   "label": "2009*",
+   "lado": null,
+   "page": 33,
+   "section": "Grafik 5: Personalaufwand in % des Gesamtumsatzes",
+   "choice": "wages_squad",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "wages_squad",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1264
+  }
+ ]
+}

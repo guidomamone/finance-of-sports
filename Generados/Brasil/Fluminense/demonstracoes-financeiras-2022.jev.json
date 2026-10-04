@@ -1,0 +1,1084 @@
+{
+ "md": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2022.md",
+ "generatedAt": "2026-09-30T22:48:28.132Z",
+ "rubrosHuella": "650e4bd6df931f3be1b7ec7a66528a88f448f8c1",
+ "rubros": [
+  {
+   "label": "Bilheteria e outras receitas em jogos",
+   "lado": "revenue",
+   "page": 17,
+   "section": "5 Resultado do exercício (continuação) / S(a) Receita operacional líquida (continuação) / Receita por segmento - Futebol / Nota 2022 2021 / Receita bruta com Futebol",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Manchester City Venda de direitos Kayky da S. Chagas",
+   "lado": "revenue",
+   "page": 18,
+   "section": "Receita por segmento — Futebol (continuação) / (ii) Transferência de atletas e mecanismo de solidariedade (continuação) / incerteza sobre a carreira dos jogadores e a política contábil do Clube. / A seguir, as informações sobre as vendas de direitos de atletas do exercício de 2021: / Contraparte Referente a Atleta 2021",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Eapérance Sportive Venda de direitos Metinho Silu",
+   "lado": "revenue",
+   "page": 18,
+   "section": "Receita por segmento — Futebol (continuação) / (ii) Transferência de atletas e mecanismo de solidariedade (continuação) / incerteza sobre a carreira dos jogadores e a política contábil do Clube. / A seguir, as informações sobre as vendas de direitos de atletas do exercício de 2021: / Contraparte Referente a Atleta 2021",
+   "choice": "player_sales",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Boavista Futebol SAD Venda de direitos Paulo Lucas",
+   "lado": "revenue",
+   "page": 18,
+   "section": "Receita por segmento — Futebol (continuação) / (ii) Transferência de atletas e mecanismo de solidariedade (continuação) / incerteza sobre a carreira dos jogadores e a política contábil do Clube. / A seguir, as informações sobre as vendas de direitos de atletas do exercício de 2021: / Contraparte Referente a Atleta 2021",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Transferências de atletas e mecanismo de solidariedade (ii)",
+   "lado": null,
+   "page": 17,
+   "section": "5 Resultado do exercício (continuação) / S(a) Receita operacional líquida (continuação) / Receita por segmento - Futebol / Nota 2022 2021 / Receita bruta com Futebol",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1547
+  },
+  {
+   "label": "Juros e encargos de parcelamento de impostos",
+   "lado": "expense",
+   "page": 21,
+   "section": "Despesa financeira",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Juros e encargos de financiamento e antecipação de recebíveis",
+   "lado": "expense",
+   "page": 21,
+   "section": "Despesa financeira",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Variação cambial",
+   "lado": "expense",
+   "page": 21,
+   "section": "Despesa financeira",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras despesas financeiras, líquidas",
+   "lado": "expense",
+   "page": 21,
+   "section": "Despesa financeira",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas (despesas) financeiras, líquidas",
+   "lado": null,
+   "page": 21,
+   "section": "Despesa financeira",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Inflação do saldo inicial reconhecida na variação da provisão",
+   "lado": null,
+   "page": 32,
+   "section": "Movimentação do passivo contingente e acordos judiciais / demonstração de resultados (2021 — perda de R$ 13.869). / 2022 2021 / Saldo inicial de acordos judiciais e provisão para contingências 269.179 262.043 / Variações com impacto na demonstração do resultado",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Novos processos",
+   "lado": null,
+   "page": 32,
+   "section": "Movimentação do passivo contingente e acordos judiciais / demonstração de resultados (2021 — perda de R$ 13.869). / 2022 2021 / Saldo inicial de acordos judiciais e provisão para contingências 269.179 262.043 / Variações com impacto na demonstração do resultado",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Alteração do valor ou prognóstico de risco",
+   "lado": null,
+   "page": 32,
+   "section": "Movimentação do passivo contingente e acordos judiciais / demonstração de resultados (2021 — perda de R$ 13.869). / 2022 2021 / Saldo inicial de acordos judiciais e provisão para contingências 269.179 262.043 / Variações com impacto na demonstração do resultado",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Pagamentos",
+   "lado": null,
+   "page": 32,
+   "section": "Movimentação do passivo contingente e acordos judiciais / demonstração de resultados (2021 — perda de R$ 13.869). / 2022 2021 / Saldo inicial de acordos judiciais e provisão para contingências 269.179 262.043 / Variações com impacto na demonstração do resultado",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Saldo final de acordos judiciais e provisão para contingências",
+   "lado": null,
+   "page": 32,
+   "section": "Movimentação do passivo contingente e acordos judiciais / demonstração de resultados (2021 — perda de R$ 13.869). / 2022 2021 / Saldo inicial de acordos judiciais e provisão para contingências 269.179 262.043 / Variações com impacto na demonstração do resultado",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Flamengo Mecanismo de solidariedade Pedro Guilherme",
+   "lado": null,
+   "page": 18,
+   "section": "Receita por segmento — Futebol (continuação) / (ii) Transferência de atletas e mecanismo de solidariedade (continuação) / incerteza sobre a carreira dos jogadores e a política contábil do Clube. / A seguir, as informações sobre as vendas de direitos de atletas do exercício de 2021: / Contraparte Referente a Atleta 2021",
+   "choice": "player_sales",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "player_sales",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1574
+  },
+  {
+   "label": "Club Atlético Madrid Compensação de treinamento Marcos Paulo",
+   "lado": null,
+   "page": 18,
+   "section": "Receita por segmento — Futebol (continuação) / (ii) Transferência de atletas e mecanismo de solidariedade (continuação) / incerteza sobre a carreira dos jogadores e a política contábil do Clube. / A seguir, as informações sobre as vendas de direitos de atletas do exercício de 2021: / Contraparte Referente a Atleta 2021",
+   "choice": "player_sales",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "player_sales",
+     0.83
+    ],
+    [
+     "youth_football",
+     0.14
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1622
+  },
+  {
+   "label": "Patrocínios",
+   "lado": null,
+   "page": 17,
+   "section": "5 Resultado do exercício (continuação) / S(a) Receita operacional líquida (continuação) / Receita por segmento - Futebol / Nota 2022 2021 / Receita bruta com Futebol",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "Programa sócio-torcedor",
+   "lado": null,
+   "page": 17,
+   "section": "5 Resultado do exercício (continuação) / S(a) Receita operacional líquida (continuação) / Receita por segmento - Futebol / Nota 2022 2021 / Receita bruta com Futebol",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1549
+  },
+  {
+   "label": "Olympique Mecanismo de solidariedade Gerson Santos",
+   "lado": null,
+   "page": 18,
+   "section": "Receita por segmento — Futebol (continuação) / (ii) Transferência de atletas e mecanismo de solidariedade (continuação) / incerteza sobre a carreira dos jogadores e a política contábil do Clube. / A seguir, as informações sobre as vendas de direitos de atletas do exercício de 2021: / Contraparte Referente a Atleta 2021",
+   "choice": "player_sales",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "player_sales",
+     0.97
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1576
+  },
+  {
+   "label": "Direitos de transmissão e premiações por performance (i)",
+   "lado": null,
+   "page": 17,
+   "section": "5 Resultado do exercício (continuação) / S(a) Receita operacional líquida (continuação) / Receita por segmento - Futebol / Nota 2022 2021 / Receita bruta com Futebol",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1537
+  },
+  {
+   "label": "Timemania",
+   "lado": null,
+   "page": 17,
+   "section": "5 Resultado do exercício (continuação) / S(a) Receita operacional líquida (continuação) / Receita por segmento - Futebol / Nota 2022 2021 / Receita bruta com Futebol",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1461
+  },
+  {
+   "label": "Direitos de tansmissão fixos",
+   "lado": null,
+   "page": 17,
+   "section": "2021 / Campeonato Campeonato Copa do Copa Copa Campeonato / Brasileiro Brasileiro Brasil Libertadores Sudamericana Carioca / de 2020 de 2021 de 2021 de 2021 de 2021 de 2021 Total / Direitos de transmissão e performance",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1523
+  },
+  {
+   "label": "Exposição",
+   "lado": null,
+   "page": 17,
+   "section": "2021 / Campeonato Campeonato Copa do Copa Copa Campeonato / Brasileiro Brasileiro Brasil Libertadores Sudamericana Carioca / de 2020 de 2021 de 2021 de 2021 de 2021 de 2021 Total / Direitos de transmissão e performance",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "broadcasting",
+     0.99
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1393
+  },
+  {
+   "label": "Luvas",
+   "lado": null,
+   "page": 17,
+   "section": "2022 / Campeonato Copa do Copa Copa Campeonato / Brasileiro Brasil Libertadores Sudamericana Carioca / de 2022 de 2022 de 2022 de 2022 de 2022 Total / Direitos de transmissão e performance",
+   "choice": "wages_squad",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "wages_squad",
+     0.4
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "broadcasting",
+     0.24000000000000002
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "Premiações por performance",
+   "lado": null,
+   "page": 17,
+   "section": "2021 / Campeonato Campeonato Copa do Copa Copa Campeonato / Brasileiro Brasileiro Brasil Libertadores Sudamericana Carioca / de 2020 de 2021 de 2021 de 2021 de 2021 de 2021 Total / Direitos de transmissão e performance",
+   "choice": "competition_bonus",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "competition_bonus",
+     0.95
+    ],
+    [
+     "broadcasting",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1560
+  },
+  {
+   "label": "Pay-per-vew",
+   "lado": null,
+   "page": 17,
+   "section": "2021 / Campeonato Campeonato Copa do Copa Copa Campeonato / Brasileiro Brasileiro Brasil Libertadores Sudamericana Carioca / de 2020 de 2021 de 2021 de 2021 de 2021 de 2021 Total / Direitos de transmissão e performance",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1515
+  },
+  {
+   "label": "Premiações por performance 40.749 16.861 4.912 5.668",
+   "lado": null,
+   "page": 17,
+   "section": "2022 / Campeonato Copa do Copa Copa Campeonato / Brasileiro Brasil Libertadores Sudamericana Carioca / de 2022 de 2022 de 2022 de 2022 de 2022 Total / Direitos de transmissão e performance",
+   "choice": "competition_bonus",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "competition_bonus",
+     0.93
+    ],
+    [
+     "broadcasting",
+     0.06
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1644
+  },
+  {
+   "label": "Udinese Venda de direitos Matheus Martins",
+   "lado": "revenue",
+   "page": 17,
+   "section": "36.527 101.780 7.909 28.386, 2.200 176.802 / (ii) Transferência de atletas e mecanismo de solidariedade / depende do cumprimento de determinadas obrigações de performance. / Contraparte Referente a Atleta 2022",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1126
+  },
+  {
+   "label": "Comissão na assinatura e/ou renovações de contratos",
+   "lado": null,
+   "page": 21,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5 Resultado do exercício (continuação) / 5(d) Serviços de terceiros / 2022 2021",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de limpeza, manutenção e segurança",
+   "lado": null,
+   "page": 21,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5 Resultado do exercício (continuação) / 5(d) Serviços de terceiros / 2022 2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Honorários advocatícios",
+   "lado": null,
+   "page": 21,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5 Resultado do exercício (continuação) / 5(d) Serviços de terceiros / 2022 2021",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com conservação e manutenção",
+   "lado": "expense",
+   "page": 21,
+   "section": "Demais serviços de terceiros 1.982 878 / 22.981 18.524 / 5(e) Gastos gerais / 2022 2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Real Betis Venda de direitos Luiz Henrique",
+   "lado": "revenue",
+   "page": 17,
+   "section": "36.527 101.780 7.909 28.386, 2.200 176.802 / (ii) Transferência de atletas e mecanismo de solidariedade / depende do cumprimento de determinadas obrigações de performance. / Contraparte Referente a Atleta 2022",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1126
+  },
+  {
+   "label": "Clube Bahia Venda de direitos Gabriel Teixeira",
+   "lado": "revenue",
+   "page": 17,
+   "section": "36.527 101.780 7.909 28.386, 2.200 176.802 / (ii) Transferência de atletas e mecanismo de solidariedade / depende do cumprimento de determinadas obrigações de performance. / Contraparte Referente a Atleta 2022",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1129
+  },
+  {
+   "label": "Receita operacional líquida 5(a)",
+   "lado": "revenue",
+   "page": 12,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 e informações relevantes / Informações em milhares de Reais, exceto quando indicado de outra forma / Revisão dos principais indicadores financeiros / Ref. 2022 2021 Variação / Principais indicadores de resultado e geração de caixa",
+   "choice": "lump_football_operations",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.94
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1135
+  },
+  {
+   "label": "FIFA (*) Mecanismo de solidariedade Richarlison",
+   "lado": null,
+   "page": 17,
+   "section": "36.527 101.780 7.909 28.386, 2.200 176.802 / (ii) Transferência de atletas e mecanismo de solidariedade / depende do cumprimento de determinadas obrigações de performance. / Contraparte Referente a Atleta 2022",
+   "choice": "player_sales",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "player_sales",
+     0.93
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "youth_football",
+     0.02
+    ]
+   ],
+   "tokens": 1573
+  },
+  {
+   "label": "Custos e despesas operacionais 5(b) a 5(e)",
+   "lado": "expense",
+   "page": 12,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 e informações relevantes / Informações em milhares de Reais, exceto quando indicado de outra forma / Revisão dos principais indicadores financeiros / Ref. 2022 2021 Variação / Principais indicadores de resultado e geração de caixa",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1122
+  },
+  {
+   "label": "Luz, telefone, gás e informática",
+   "lado": null,
+   "page": 21,
+   "section": "Demais serviços de terceiros 1.982 878 / 22.981 18.524 / 5(e) Gastos gerais / 2022 2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1558
+  },
+  {
+   "label": "Salários a atletas e demais funcionários",
+   "lado": "expense",
+   "page": 20,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5(b) Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2022 2021",
+   "choice": "wages_squad",
+   "confidence": 0.37,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de imagem a atletas",
+   "lado": "expense",
+   "page": 20,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5(b) Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2022 2021",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneração de prestadores de serviço (Futebol)",
+   "lado": "expense",
+   "page": 20,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5(b) Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2022 2021",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneração de prestadores de serviço (Outras áreas) (i)",
+   "lado": "expense",
+   "page": 20,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5(b) Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2022 2021",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Prêmios e gratificações",
+   "lado": "expense",
+   "page": 20,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5(b) Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2022 2021",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisão de férias",
+   "lado": "expense",
+   "page": 20,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5(b) Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2022 2021",
+   "choice": "wages_squad",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisão 130 salário",
+   "lado": "expense",
+   "page": 20,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5(b) Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2022 2021",
+   "choice": "wages_squad",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Assistência médica",
+   "lado": "expense",
+   "page": 20,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5(b) Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2022 2021",
+   "choice": "wages_squad",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 20,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5(b) Salários, encargos e benefícios com atletas e demais funcionários / Os custos e despesas são reconhecidos de acordo com o regime de competência. / 2022 2021",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Viagens e estadias",
+   "lado": "expense",
+   "page": 20,
+   "section": "17.291 16.025 / 208.711 186.288 / (i) Outras áreas abrangem esportes olímpicos, “back-office” e outras áreas do Clube. / 5(c) Transportes e outros gastos com jogos e competições / 2022 2021",
+   "choice": "match_organisation_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Estádio",
+   "lado": "expense",
+   "page": 20,
+   "section": "17.291 16.025 / 208.711 186.288 / (i) Outras áreas abrangem esportes olímpicos, “back-office” e outras áreas do Clube. / 5(c) Transportes e outros gastos com jogos e competições / 2022 2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.33,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de apoio, taxas de federação e outras",
+   "lado": "expense",
+   "page": 20,
+   "section": "17.291 16.025 / 208.711 186.288 / (i) Outras áreas abrangem esportes olímpicos, “back-office” e outras áreas do Clube. / 5(c) Transportes e outros gastos com jogos e competições / 2022 2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas médicas",
+   "lado": "expense",
+   "page": 20,
+   "section": "17.291 16.025 / 208.711 186.288 / (i) Outras áreas abrangem esportes olímpicos, “back-office” e outras áreas do Clube. / 5(c) Transportes e outros gastos com jogos e competições / 2022 2021",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Lanches e refeições",
+   "lado": "expense",
+   "page": 20,
+   "section": "17.291 16.025 / 208.711 186.288 / (i) Outras áreas abrangem esportes olímpicos, “back-office” e outras áreas do Clube. / 5(c) Transportes e outros gastos com jogos e competições / 2022 2021",
+   "choice": "wages_squad",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros gastos com jogos e competições",
+   "lado": "expense",
+   "page": 20,
+   "section": "17.291 16.025 / 208.711 186.288 / (i) Outras áreas abrangem esportes olímpicos, “back-office” e outras áreas do Clube. / 5(c) Transportes e outros gastos com jogos e competições / 2022 2021",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita operacional bruta",
+   "lado": "revenue",
+   "page": 16,
+   "section": "5(a) Receita operacional líquida / 2022 / Clube social / e esportes / Futebol amadores Total",
+   "choice": "lump_football_operations",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Impostos e contribuições",
+   "lado": "revenue",
+   "page": 16,
+   "section": "5(a) Receita operacional líquida / 2022 / Clube social / e esportes / Futebol amadores Total",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de arena",
+   "lado": "revenue",
+   "page": 16,
+   "section": "5(a) Receita operacional líquida / 2022 / Clube social / e esportes / Futebol amadores Total",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Fomecedores e outras obrigações",
+   "lado": "expense",
+   "page": 23,
+   "section": "88.656 51.780 / Nota 2022 2021 / Passivos financeiros ao custo amortizado",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Comissão em vendas de direitos econômicos",
+   "lado": "revenue",
+   "page": 21,
+   "section": "Notas explicativas das demonstrações financeiras de 2022 informações financeiras / Informações em milhares de Reais, exceto quando indicado de outra forma / 5 Resultado do exercício (continuação) / 5(d) Serviços de terceiros / 2022 2021",
+   "choice": "player_sales",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "player_sales",
+     0.8200000000000001
+    ],
+    [
+     "other_income",
+     0.18
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1118
+  },
+  {
+   "label": "Contas a pagar na transferência de jogadores",
+   "lado": "expense",
+   "page": 23,
+   "section": "88.656 51.780 / Nota 2022 2021 / Passivos financeiros ao custo amortizado",
+   "choice": "player_amortisation",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Materiais de consumo",
+   "lado": null,
+   "page": 21,
+   "section": "Demais serviços de terceiros 1.982 878 / 22.981 18.524 / 5(e) Gastos gerais / 2022 2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1520
+  },
+  {
+   "label": "Empréstimos e financiamentos",
+   "lado": "expense",
+   "page": 23,
+   "section": "88.656 51.780 / Nota 2022 2021 / Passivos financeiros ao custo amortizado",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Tributos parcelados",
+   "lado": "expense",
+   "page": 23,
+   "section": "88.656 51.780 / Nota 2022 2021 / Passivos financeiros ao custo amortizado",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Caixa e equivalentes de caixa",
+   "lado": "expense",
+   "page": 23,
+   "section": "Ativos e passivos financeiros / contábeis. / Instrumentos financeiros por categoria / Nota 2022 2021 / Ativos financeiros ao custo amortizado",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Contas a receber",
+   "lado": "expense",
+   "page": 23,
+   "section": "Ativos e passivos financeiros / contábeis. / Instrumentos financeiros por categoria / Nota 2022 2021 / Ativos financeiros ao custo amortizado",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Contas a receber na transferência de jogadores",
+   "lado": "expense",
+   "page": 23,
+   "section": "Ativos e passivos financeiros / contábeis. / Instrumentos financeiros por categoria / Nota 2022 2021 / Ativos financeiros ao custo amortizado",
+   "choice": "player_amortisation",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "FIFA (*) Mecanismo de solidariedade Gerson Santos",
+   "lado": null,
+   "page": 17,
+   "section": "36.527 101.780 7.909 28.386, 2.200 176.802 / (ii) Transferência de atletas e mecanismo de solidariedade / depende do cumprimento de determinadas obrigações de performance. / Contraparte Referente a Atleta 2022",
+   "choice": "player_sales",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "player_sales",
+     0.85
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "youth_football",
+     0.04
+    ]
+   ],
+   "tokens": 1571
+  },
+  {
+   "label": "Provisão para perdas com recebíveis",
+   "lado": null,
+   "page": 21,
+   "section": "Demais serviços de terceiros 1.982 878 / 22.981 18.524 / 5(e) Gastos gerais / 2022 2021",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1584
+  },
+  {
+   "label": "Escolinhas esportivas",
+   "lado": null,
+   "page": 18,
+   "section": "Outros 6.050 / 109.593 / Receita por segmento — Clube social e esportes amadores / 2022 2021 / Receita bruta do clube social e esportes amadores",
+   "choice": "other_sports",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_sports",
+     0.8
+    ],
+    [
+     "youth_football",
+     0.15
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "Parcela classificada no Circulante",
+   "lado": "expense",
+   "page": 26,
+   "section": "52.028 25.865 / Ajuste a valor presente (1.782) (457) / 50.246 25.408 / Outras contas 1.255 685",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 957
+  },
+  {
+   "label": "Quadro social",
+   "lado": null,
+   "page": 18,
+   "section": "Outros 6.050 / 109.593 / Receita por segmento — Clube social e esportes amadores / 2022 2021 / Receita bruta do clube social e esportes amadores",
+   "choice": "member_dues",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "member_dues",
+     0.89
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1509
+  },
+  {
+   "label": "Parcela classificada no Não circulante",
+   "lado": "expense",
+   "page": 26,
+   "section": "52.028 25.865 / Ajuste a valor presente (1.782) (457) / 50.246 25.408 / Outras contas 1.255 685",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "exceptional_items",
+     0.21
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1098
+  },
+  {
+   "label": "Outras",
+   "lado": null,
+   "page": 18,
+   "section": "Outros 6.050 / 109.593 / Receita por segmento — Clube social e esportes amadores / 2022 2021 / Receita bruta do clube social e esportes amadores",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1489
+  }
+ ]
+}

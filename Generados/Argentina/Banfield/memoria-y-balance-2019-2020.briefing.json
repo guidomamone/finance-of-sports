@@ -1,0 +1,2455 @@
+{
+  "club": "banfield-ar",
+  "year": 2020,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Banfield/memoria-y-balance-2019-2020.md",
+  "generatedAt": "2026-09-30T22:38:27.926Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 465,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 31,
+  "relevantTableCount": 7,
+  "tables": [
+    {
+      "page": 31,
+      "section": "ACTIVO / ACTIVO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caja y Bancos (Nota 2)",
+          "values": [
+            "8.578.019,85",
+            "72.313.458,66"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos (Nota 3)",
+          "values": [
+            "229.342.540,15",
+            "253.914.684,13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Activo Corriente",
+          "values": [
+            "237.920.560,00",
+            "326.228.142,79"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "ACTIVO NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Créditos (Nota 3)",
+          "values": [
+            "24.019.645,92",
+            "2.428.826,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bienes Intangibles (Nota 4 Anexo I)",
+          "values": [
+            "195.161.163,05",
+            "166.930.077,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bienes de Uso (Nota 5 Anexo II)",
+          "values": [
+            "796.046.376,81",
+            "792.501.954,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Activo No Corriente",
+          "values": [
+            "1.015.227.185,78",
+            "961.860.858,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del Activo",
+          "values": [
+            "1.253.147.745,78",
+            "1.288.089.000,91"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "PASIVO / PASIVO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deudas Generales (Nota 6)",
+          "values": [
+            "31.821.621,75",
+            "134.347.941,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas Bancarias y Financieras (Nota 7)",
+          "values": [
+            "73.288.918,83",
+            "86.443.096,25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas Sociales y Fiscales (Nota 8)",
+          "values": [
+            "91.698.579,86",
+            "79.526.747,45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingencias (Nota 9 y 10)",
+          "values": [
+            "38.131.974,87",
+            "34.437.967,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Pasivo Corriente",
+          "values": [
+            "234.941.095,31",
+            "334.755.752,60"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "PASIVO NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deudas Sociales y Fiscales (Nota 8)",
+          "values": [
+            "49.248.501,28",
+            "14.773.436,29"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingencias (Nota 9)",
+          "values": [
+            "27.046.306,22",
+            "76.821.545,13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Pasivo No Corriente",
+          "values": [
+            "76.294.807,50",
+            "91.594.981,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total del Pasivo",
+          "values": [
+            "311.235.902,81",
+            "426.350.734,02"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "PATRIMONIO NETO",
+          "values": [
+            "941.911.842,97",
+            "861.738.266,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de Pasivo y Patrimonio Neto",
+          "values": [
+            "1.253.147.745,78",
+            "1.288.089.000,91"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "RECURSOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Para Fines Generales (Anexo III)",
+          "values": [
+            "300.909.855,58",
+            "348.633.767,78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Para Fines Específicos (Anexo III)",
+          "values": [
+            "52.913.071,52",
+            "43.187.956,80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Para Fines Diversos (Anexo III)",
+          "values": [
+            "351.971.487,51",
+            "172.950.249,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Recursos",
+          "values": [
+            "705.794.414,61",
+            "564.771.974,39"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 32,
+      "section": "GASTOS ESPECIFICOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Sector Fútbol Profesional (Anexo IV)",
+          "values": [
+            "204.927.334,97",
+            "196.018.718,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sector Fútbol Amateur (Anexo V)",
+          "values": [
+            "120.335.465,08",
+            "51.181.348,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Apropiación de Costos Fútbol Amateur (Nota 4)",
+          "values": [
+            "(120.335.465,08)",
+            "(51.181.348,01)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sector Estadio (Anexo VI)",
+          "values": [
+            "20.695.882,83",
+            "13.709.317,87"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sector Administración Sede Social (Anexo VII)",
+          "values": [
+            "36.532.338,72",
+            "27.325.944,96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sector Predio (Anexo VIII)",
+          "values": [
+            "69.869.856,52",
+            "57.646.622,38"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sector Departamento Deportes (Anexo IX)",
+          "values": [
+            "33.551.356,71",
+            "29.704.522,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instituto CAB (Anexo X)",
+          "values": [
+            "39.533.546,11",
+            "26.801.263,69"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 32,
+      "section": "GASTOS IMPOSITIVOS, FINANCIEROS Y GRALES.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Impositivos y Financieros (Anexo XI)",
+          "values": [
+            "49.803.210,63",
+            "21.860.699,52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Generales (Anexo XII)",
+          "values": [
+            "240.372.992,58",
+            "173.035.264,02"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 32,
+      "section": "290.176.203,21          194.895.963,55",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "R.E.C.P.A.M.",
+          "values": [
+            "69.665.680,54",
+            "19.828.576,88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste Global del Resultado del Ejercicio",
+          "values": [
+            "26.657.548,12"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "Legajo Dirección de Personas Jurídicas: 1.730 / Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Estado de Evolución del Patrimonio Neto / Detalle                      Capital",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldos al Inicio",
+          "values": [
+            "0,01",
+            "28.484.726,56",
+            "273.156.998,98",
+            "560.096.541,34",
+            "861.738.266,89",
+            "646.114.136,77"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Revaluación",
+          "values": [
+            "0,00",
+            "0,00",
+            "150.468.383,94"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "Resultado / Ejercicio",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "0,01",
+            "28.484.726,56",
+            "359.156.719,06",
+            "554.270.397,34",
+            "941.911.842,97",
+            "861.738.266,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30/06/2019",
+          "values": [
+            "0,01",
+            "28.484.726,56",
+            "273.156.998,98",
+            "560.096.541,34",
+            "861.738.266,89"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 34,
+      "section": "Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Estado de Flujo de Efectivo / 30/06/2020              30/06/2019 / Detalle / Variaciones del Efectivo",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Efectivo al Inicio del Ejercicio",
+          "values": [
+            "72.313.458,66",
+            "6.578.236,18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo al Cierre del Ejercicio",
+          "values": [
+            "8.578.019,85",
+            "50.654.309,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento Neto del Efectivo",
+          "values": [
+            "(63.735.438,81)",
+            "44.076.073,35"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Causas de las Variaciones del Efectivo / Actividades Operativas / Más Partidas que No Significan Variaciones de Efectivo:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depreciación y Bajas del Plantel Profesional",
+          "values": [
+            "92.104.379,15",
+            "79.825.275,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación y Bajas de Bienes de Uso",
+          "values": [
+            "21.861.353,30",
+            "7.223.255,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variación Patrimonio Neto",
+          "values": [
+            "0,00",
+            "7.142.259,40"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Más (Menos) Variaciones en Activos y Pasivos Operativos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(Aumento) Disminución en Créditos",
+          "values": [
+            "2.981.324,64",
+            "(71.191.729,41)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Disminución) Aumento en Deudas Bancarias y Fin.",
+          "values": [
+            "(13.154.177,42)",
+            "(25.234.372,05)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Disminución) Aumento en Deudas Sociales y Fiscales",
+          "values": [
+            "46.646.897,40",
+            "(22.031.132,71)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Disminución) Aumento en Contingencias",
+          "values": [
+            "(46.081.231,80)",
+            "36.219.781,60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Disminución) Aumento en Deudas Varias",
+          "values": [
+            "(102.526.319,39)",
+            "45.748.311,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flujo Neto de Efectivo Utilizado en Actividades Operativas",
+          "values": [
+            "82.005.801,95",
+            "96.199.846,99"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Actividades de Inversión",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aumento Bienes Intangibles",
+          "values": [
+            "(120.335.465,08)",
+            "(51.181.348,01)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento Bienes de Uso",
+          "values": [
+            "(25.405.775,68)",
+            "(942.425,62)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flujo Neto de Efectivo Utilizado en Actividades de Inversión",
+          "values": [
+            "(145.741.240,76)",
+            "(52.123.773,63)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "Denominación de la Sociedad: Club Atlético Banfield (Sociedad Civil) / Legajo Dirección de Personas Jurídicas: 1.730 / Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Detalle",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fútbol Amateur 2017 124.901.895,74 124.901.895,74 83.267.930,49 41.633.965,25 124.901.895,74 -",
+          "values": [
+            "29.163.862,48"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fútbol Amateur 2018",
+          "values": [
+            "78.345.389,50",
+            "78.345.389,50",
+            "26.115.129,83",
+            "26.115.129,83",
+            "52.230.259,66",
+            "26.115.129,84",
+            "36.586.380,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fútbol Amateur 2019 73.065.852,20 73.065.852,20 -",
+          "values": [
+            "24.355.284,07",
+            "24.355.284,07",
+            "48.710.568,13",
+            "51.181.348,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fútbol Amateur 2020 120.335.465,08 120.335.465,08 - - -",
+          "values": [
+            "120.335.465,08"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALES",
+          "values": [
+            "753.346.915,45",
+            "120.335.465,08",
+            "873.682.380,53",
+            "586.416.838,33",
+            "92.104.379,15",
+            "0,00",
+            "678.521.217,48",
+            "195.161.163,05",
+            "116.931.591,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30/06/2019",
+          "values": [
+            "476.524.953,79",
+            "51.181.348,01",
+            "527.706.301,80",
+            "330.949.434,62",
+            "79.825.275,83",
+            "0,00",
+            "410.774.710,45",
+            "116.931.591,35"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Aumentos / Rubros                                      y / Bajas",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Estadio",
+          "values": [
+            "261.500.000,00",
+            "111.814.128,95",
+            "373.314.128,95",
+            "10.810.740,17",
+            "2.681.749,96",
+            "1.046.000,00",
+            "14.538.490,13",
+            "358.775.638,82",
+            "250.689.259,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Predio",
+          "values": [
+            "176.350.000,00",
+            "75.405.054,08",
+            "251.755.054,08",
+            "8.787.781,29",
+            "3.167.001,58",
+            "2.821.600,00",
+            "14.776.382,88",
+            "236.978.671,20",
+            "167.562.218,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sede Social",
+          "values": [
+            "122.409.000,00",
+            "52.340.557,21",
+            "174.749.557,21",
+            "9.137.853,13",
+            "4.741.797,36",
+            "1.958.544,00",
+            "15.838.194,49",
+            "158.911.362,72",
+            "113.271.146,87"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instal.y Mejoras Estadio",
+          "values": [
+            "14.715.274,99",
+            "13.263.976,05",
+            "27.979.251,04",
+            "3.473.740,40",
+            "1.882.566,90",
+            "5.356.307,30",
+            "22.622.943,74",
+            "11.241.534,59"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instal.y Mejoras Predio",
+          "values": [
+            "5.166.069,86",
+            "3.611.017,51",
+            "8.777.087,37",
+            "846.398,95",
+            "491.983,03",
+            "1.338.381,98",
+            "7.438.705,39",
+            "4.319.670,91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Escuela CABanfield",
+          "values": [
+            "3.159.177,78",
+            "1.892.357,64",
+            "5.051.535,42",
+            "390.968,10",
+            "239.417,76",
+            "630.385,86",
+            "4.421.149,56",
+            "2.768.209,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ampliación Dormys",
+          "values": [
+            "1.794.881,45",
+            "767.468,86",
+            "2.562.350,31",
+            "396.944,86",
+            "205.626,29",
+            "602.571,15",
+            "1.959.779,16",
+            "1.397.936,59"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Muebles y Utiles",
+          "values": [
+            "3.197.623,78",
+            "1.367.263,93",
+            "4.564.887,71",
+            "1.861.873,60",
+            "1.115.876,24",
+            "2.977.749,84",
+            "1.587.137,87",
+            "1.335.750,18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construcción Rincón",
+          "values": [
+            "630.219,29",
+            "269.473,89",
+            "899.693,18",
+            "30.648,29",
+            "25.709,22",
+            "56.357,51",
+            "843.335,67",
+            "599.571,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instal.y Mejoras Sede",
+          "values": [
+            "839.568,27",
+            "683.625,35",
+            "1.523.193,62",
+            "322.949,98",
+            "144.693,03",
+            "467.643,01",
+            "1.055.550,61",
+            "516.618,29"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cancha Hockey",
+          "values": [
+            "2.713.990,10",
+            "0,00",
+            "2.713.990,10",
+            "2.311.717,61",
+            "402.272,49",
+            "2.713.990,10",
+            "0,00",
+            "402.272,49"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Muebles y U.Predio",
+          "values": [
+            "1.082.570,87",
+            "462.893,76",
+            "1.545.464,63",
+            "726.798,26",
+            "419.026,93",
+            "1.145.825,19",
+            "399.639,44",
+            "355.772,61"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Microestadio",
+          "values": [
+            "532.133,05",
+            "246.767,07",
+            "778.900,12",
+            "190.324,00",
+            "92.298,19",
+            "282.622,19",
+            "496.277,93",
+            "341.809,05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas",
+          "values": [
+            "418.184,50",
+            "242.035,25",
+            "660.219,75",
+            "250.310,52",
+            "154.848,10",
+            "405.158,62",
+            "255.061,13",
+            "167.873,98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aparatos p/Deportes",
+          "values": [
+            "417.965,40",
+            "301.143,42",
+            "719.108,82",
+            "324.940,12",
+            "191.514,49",
+            "516.454,61",
+            "202.654,21",
+            "93.025,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vestuarios Tenis",
+          "values": [
+            "95.654,10",
+            "40.900,50",
+            "136.554,60",
+            "49.740,11",
+            "23.181,33",
+            "72.921,44",
+            "63.633,16",
+            "45.913,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cerco Perimetral Predio",
+          "values": [
+            "52.366,17",
+            "22.391,12",
+            "74.757,29",
+            "27.230,37",
+            "12.690,69",
+            "39.921,06",
+            "34.836,23",
+            "25.135,80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Canchas Tenis",
+          "values": [
+            "74.007,81",
+            "31.644,81",
+            "105.652,62",
+            "74.007,81",
+            "31.644,81",
+            "105.652,62",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amob.Deptos.Jugadores",
+          "values": [
+            "26.452,80",
+            "11.310,89",
+            "37.763,69",
+            "26.452,78",
+            "11.310,89",
+            "37.763,67",
+            "(0,00)",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALES",
+          "values": [
+            "595.175.140,22",
+            "262.774.010,28",
+            "857.949.150,50",
+            "40.041.420,35",
+            "16.035.209,30",
+            "5.826.144,00",
+            "61.902.773,65",
+            "796.046.376,81",
+            "555.133.719,85"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30/06/2019",
+          "values": [
+            "356.577.892,60",
+            "238.597.247,62",
+            "595.175.140,22",
+            "32.818.165,31",
+            "1.324.698,97",
+            "5.898.556,09",
+            "40.041.420,37",
+            "555.133.719,85"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "Legajo Dirección de Personas Jurídicas: 1.730 / Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Para               Para              Para              Total            Total / Generales         Específicos         Diversos         (Ajustado)      (No ajustado)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Transferencias y Préstamos",
+          "values": [
+            "132.687.500,00",
+            "132.687.500,00",
+            "163.439.139,43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos por Socios",
+          "values": [
+            "63.385.042,26",
+            "63.385.042,26",
+            "51.583.270,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Formación de Jugadores",
+          "values": [
+            "50.305.976,77",
+            "50.305.976,77",
+            "45.859.343,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Competencias Internacionales",
+          "values": [
+            "0,00",
+            "0,00",
+            "30.661.188,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad",
+          "values": [
+            "27.699.427,94",
+            "27.699.427,94",
+            "25.786.789,18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Entradas Grales., Plateas, Palcos y Abonos",
+          "values": [
+            "22.284.826,23",
+            "22.284.826,23",
+            "23.242.337,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fútbol Amateur - Derechos",
+          "values": [
+            "4.547.082,38",
+            "4.547.082,38",
+            "6.227.160,43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Copa Argentina",
+          "values": [
+            "0,00",
+            "0,00",
+            "1.834.539,22"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "Predio",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pileta Natación",
+          "values": [
+            "2.987.267,33",
+            "2.987.267,33",
+            "1.950.128,45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estacionamiento",
+          "values": [
+            "1.471.149,93",
+            "1.471.149,93",
+            "2.059.493,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Colonia",
+          "values": [
+            "983.501,28",
+            "983.501,28",
+            "922.254,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acceso a Predio",
+          "values": [
+            "137.239,93",
+            "137.239,93",
+            "215.845,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alquiler",
+          "values": [
+            "31.559,35",
+            "31.559,35",
+            "292.274,30"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "Departamento Deportes",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Escuela de Fútbol",
+          "values": [
+            "6.346.065,77",
+            "6.346.065,77",
+            "4.588.413,85"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hockey",
+          "values": [
+            "5.258.900,02",
+            "5.258.900,02",
+            "5.168.323,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Futsal",
+          "values": [
+            "1.281.824,33",
+            "1.281.824,33",
+            "1.086.045,95"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voley",
+          "values": [
+            "1.184.147,40",
+            "1.184.147,40",
+            "926.179,49"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tenis",
+          "values": [
+            "1.144.881,71",
+            "1.144.881,71",
+            "1.150.467,60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handball",
+          "values": [
+            "1.125.939,51",
+            "1.125.939,51",
+            "850.817,34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Liga de fútbol",
+          "values": [
+            "1.039.320,00",
+            "1.039.320,00",
+            "1.248.348,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patín",
+          "values": [
+            "710.011,19",
+            "710.011,19",
+            "631.230,74"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gimnasia Deportiva",
+          "values": [
+            "688.740,82",
+            "688.740,82",
+            "793.563,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fútbol femenino",
+          "values": [
+            "184.003,98",
+            "184.003,98",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taekwondo",
+          "values": [
+            "161.673,02",
+            "161.673,02",
+            "154.362,56"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acondicionamiento Físico",
+          "values": [
+            "76.092,44",
+            "76.092,44",
+            "36.721,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajedrez",
+          "values": [
+            "51.626,89",
+            "51.626,89",
+            "86.631,90"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "Instituto CAB / Ingresos Varios",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Televisaciones",
+          "values": [
+            "164.620.004,60",
+            "164.620.004,60",
+            "110.244.382,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos Varios",
+          "values": [
+            "187.351.482,91",
+            "187.351.482,91",
+            "62.705.867,31"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 42,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "300.909.855,58",
+            "52.913.071,52",
+            "351.971.487,51",
+            "705.794.414,61"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30/06/2019",
+          "values": [
+            "348.633.767,78",
+            "43.187.956,80",
+            "172.950.249,81",
+            "564.771.974,39"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / 30/06/2020       30/06/2019 / Detalle / (Ajustado)      (No Ajustado)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Concentraciones, Entrenamientos y Alquileres",
+          "values": [
+            "4.305.517,60",
+            "2.745.331,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costo y Custodia Espectáculo",
+          "values": [
+            "25.804.759,78",
+            "22.287.597,34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dpto. Médico, Estudios, Medicamentos y Accesorios",
+          "values": [
+            "6.326.138,54",
+            "5.221.386,03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indumentaria y Elementos Deportivos",
+          "values": [
+            "382.299,98",
+            "2.333.843,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Primas Anuales",
+          "values": [
+            "93.350.381,06",
+            "91.752.134,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prop. Mant. Administración y Gastos Generales",
+          "values": [
+            "15.137.767,61",
+            "15.925.924,02"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proveduría",
+          "values": [
+            "5.080.914,97",
+            "4.201.344,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguro y Viáticos Jugadores",
+          "values": [
+            "689.111,32",
+            "608.386,52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sueldos y Cargas Sociales",
+          "values": [
+            "51.461.733,52",
+            "47.460.125,69"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Traslados Partidos y Pretemporadas",
+          "values": [
+            "2.388.710,59",
+            "3.482.645,63"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / 30/06/2020       30/06/2019 / Detalle / (Ajustado)      (No Ajustado)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Alquileres, Alojamientos y Seguros",
+          "values": [
+            "2.096.879,82",
+            "850.790,85"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comidas y Cocina Pensionados Dormys",
+          "values": [
+            "7.033.705,74",
+            "4.203.791,22"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Convenio Liga",
+          "values": [
+            "2.007.871,80",
+            "709.439,46"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dpto. Médico, Estudios, Medicamentos y Accesorios",
+          "values": [
+            "12.802.727,04",
+            "4.670.168,64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indumentaria y Elementos Deportivos",
+          "values": [
+            "62.964,13",
+            "900.286,73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inscripción Contratos",
+          "values": [
+            "102.328,08",
+            "47.421,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Matenimiento, Administración y Reformas",
+          "values": [
+            "46.084.856,12",
+            "16.612.991,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Partidos Divisiones Inferiores",
+          "values": [
+            "574.849,81",
+            "79.442,34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salarios, Honorarios, Innovación y Tecnología",
+          "values": [
+            "47.373.758,22",
+            "21.500.100,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Traslados y Viáticos Jugadores",
+          "values": [
+            "2.195.524,32",
+            "1.606.915,61"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / 30/06/2020       30/06/2019 / Detalle / (Ajustado)      (No Ajustado)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gtos.Generales, Mantenimiento y Reparaciones",
+          "values": [
+            "9.187.673,72",
+            "3.198.378,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios (Teléfono, Agua, Gas, Electricidad)",
+          "values": [
+            "2.536.533,04",
+            "2.284.675,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sueldos y Cargas Sociales",
+          "values": [
+            "8.971.676,07",
+            "8.226.264,68"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 45,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / 30/06/2020       30/06/2019 / Detalle / (Ajustado)      (No Ajustado)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos e Intereses Bancarios",
+          "values": [
+            "978.271,91",
+            "1.432.639,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Generales",
+          "values": [
+            "522.662,79",
+            "126.895,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "142.396,98",
+            "63.151,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento y Reparaciones",
+          "values": [
+            "347.012,20",
+            "247.698,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneraciones y Cargas Sociales",
+          "values": [
+            "33.433.677,21",
+            "24.590.500,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios (Teléfono, Agua, Gas, Electricidad)",
+          "values": [
+            "1.108.317,63",
+            "865.058,99"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 45,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / 30/06/2020       30/06/2019 / Detalle / (Ajustado)      (No Ajustado)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos Generales y Administración",
+          "values": [
+            "12.554.649,05",
+            "1.039.134,88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proyecto formación de Jugadores Extranjeros",
+          "values": [
+            "6.364.599,79",
+            "18.129.081,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneraciones y Cargas Sociales",
+          "values": [
+            "43.892.419,57",
+            "32.028.629,34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reparaciones y Mantenimiento",
+          "values": [
+            "3.286.247,03",
+            "3.799.578,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios (Electricidad, Teléfono, Agua, Gas)",
+          "values": [
+            "3.771.941,08",
+            "2.650.198,49"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 46,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / 30/06/2020       30/06/2019 / Detalle / (Ajustado)      (No Ajustado)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Acondicionamiento físico",
+          "values": [
+            "120.815,93",
+            "100.340,91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajedrez",
+          "values": [
+            "266.613,41",
+            "172.047,92"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Colonia Vacaciones",
+          "values": [
+            "474.394,39",
+            "940.846,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Escuela de Fútbol",
+          "values": [
+            "4.509.135,25",
+            "4.107.530,44"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fútbol femenino",
+          "values": [
+            "1.035.389,04",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Futsal",
+          "values": [
+            "2.119.345,45",
+            "1.826.576,09"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Departamento de Deportes",
+          "values": [
+            "2.630.265,63",
+            "2.210.115,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gimnasia Deportiva",
+          "values": [
+            "1.499.303,84",
+            "1.055.429,67"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handball",
+          "values": [
+            "1.521.199,00",
+            "1.592.777,46"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hockey",
+          "values": [
+            "7.874.298,65",
+            "8.535.370,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Liga de fútbol",
+          "values": [
+            "2.222.728,93",
+            "1.551.343,13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patín",
+          "values": [
+            "1.967.645,84",
+            "1.623.950,38"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pileta Natación",
+          "values": [
+            "1.562.513,32",
+            "1.149.339,34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taekwondo",
+          "values": [
+            "474.431,58",
+            "194.601,54"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tenis",
+          "values": [
+            "2.656.003,03",
+            "2.118.695,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voley",
+          "values": [
+            "2.617.273,42",
+            "2.525.557,04"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 46,
+      "section": "Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Gastos Específicos Instituto CAB                                                  ANEXO X / 30/06/2020       30/06/2019 / Detalle / (Ajustado)      (No Ajustado)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos Varios",
+          "values": [
+            "4.571.453,15",
+            "2.872.800,63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneraciones y Cargas Sociales",
+          "values": [
+            "34.962.092,96",
+            "23.928.463,06"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 47,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / 30/06/2020       30/06/2019 / Detalle / (Ajustado)      (No Ajustado)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "AFIP Intereses y Otros",
+          "values": [
+            "22.989.707,49",
+            "8.439.691,41"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dif. Cambio, Financiación y Otros",
+          "values": [
+            "18.922.605,52",
+            "8.697.208,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses e Impuestos Bancarios",
+          "values": [
+            "7.890.897,62",
+            "4.723.799,71"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 47,
+      "section": "Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Gastos Generales                                                       ANEXO XII / 30/06/2020       30/06/2019 / Detalle / (Ajustado)      (No Ajustado)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Abonos, Mantenimiento y Otros gastos",
+          "values": [
+            "12.383.573,94",
+            "8.180.535,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciaciones",
+          "values": [
+            "113.965.732,45",
+            "87.048.530,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "6.720.166,02",
+            "11.204.668,25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Insumos Generales",
+          "values": [
+            "715.779,56",
+            "237.952,74"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juicios",
+          "values": [
+            "73.552.707,54",
+            "43.437.085,77"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Objetivos",
+          "values": [
+            "25.469.312,28",
+            "18.354.848,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Socios, Comunicación y otros",
+          "values": [
+            "7.565.720,79",
+            "4.571.642,55"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 31,
+      "section": "ACTIVO / ACTIVO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Activo Corriente",
+      "target": "237.920.560,00",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "ACTIVO / ACTIVO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Activo Corriente",
+      "target": "326.228.142,79",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "ACTIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Activo No Corriente",
+      "target": "1.015.227.185,78",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "ACTIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Activo No Corriente",
+      "target": "961.860.858,12",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "ACTIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "totalLabel": "Total del Activo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 31,
+      "section": "PASIVO / PASIVO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Pasivo Corriente",
+      "target": "234.941.095,31",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "PASIVO / PASIVO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Pasivo Corriente",
+      "target": "334.755.752,60",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "PASIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Pasivo No Corriente",
+      "target": "76.294.807,50",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "PASIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Pasivo No Corriente",
+      "target": "91.594.981,42",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "PASIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "totalLabel": "Total del Pasivo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 31,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total de Pasivo y Patrimonio Neto",
+      "target": "1.253.147.745,78",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-311235902.80999994"
+    },
+    {
+      "page": 31,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total de Pasivo y Patrimonio Neto",
+      "target": "1.288.089.000,91",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-426350734.0200001"
+    },
+    {
+      "page": 32,
+      "section": "RECURSOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Recursos",
+      "target": "705.794.414,61",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "RECURSOS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Recursos",
+      "target": "564.771.974,39",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "Resultado / Ejercicio",
+      "likelyRelevant": true,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 40,
+      "section": "Denominación de la Sociedad: Club Atlético Banfield (Sociedad Civil) / Legajo Dirección de Personas Jurídicas: 1.730 / Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Detalle",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALES",
+      "target": "753.346.915,45",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-501146914.32000005"
+    },
+    {
+      "page": 40,
+      "section": "Denominación de la Sociedad: Club Atlético Banfield (Sociedad Civil) / Legajo Dirección de Personas Jurídicas: 1.730 / Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Detalle",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALES",
+      "target": "120.335.465,08",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-17634791.510000005"
+    },
+    {
+      "page": 40,
+      "section": "Denominación de la Sociedad: Club Atlético Banfield (Sociedad Civil) / Legajo Dirección de Personas Jurídicas: 1.730 / Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Detalle",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTALES",
+      "target": "873.682.380,53",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-798856682.5699999"
+    },
+    {
+      "page": 40,
+      "section": "Denominación de la Sociedad: Club Atlético Banfield (Sociedad Civil) / Legajo Dirección de Personas Jurídicas: 1.730 / Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Detalle",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTALES",
+      "target": "586.416.838,33",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-509120360.49"
+    },
+    {
+      "page": 40,
+      "section": "Denominación de la Sociedad: Club Atlético Banfield (Sociedad Civil) / Legajo Dirección de Personas Jurídicas: 1.730 / Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Detalle",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "TOTALES",
+      "target": "92.104.379,15",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-39874119.49000001"
+    },
+    {
+      "page": 40,
+      "section": "Denominación de la Sociedad: Club Atlético Banfield (Sociedad Civil) / Legajo Dirección de Personas Jurídicas: 1.730 / Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Detalle",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "TOTALES",
+      "target": "0,00",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "26115129.84"
+    },
+    {
+      "page": 40,
+      "section": "Denominación de la Sociedad: Club Atlético Banfield (Sociedad Civil) / Legajo Dirección de Personas Jurídicas: 1.730 / Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Detalle",
+      "likelyRelevant": false,
+      "column": 6,
+      "totalLabel": "TOTALES",
+      "target": "678.521.217,48",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-641934836.62"
+    },
+    {
+      "page": 41,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Aumentos / Rubros                                      y / Bajas",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALES",
+      "target": "595.175.140,22",
+      "addendCount": 19,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Aumentos / Rubros                                      y / Bajas",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALES",
+      "target": "262.774.010,28",
+      "addendCount": 19,
+      "closes": false,
+      "diff": "0.009999960660934448"
+    },
+    {
+      "page": 41,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Aumentos / Rubros                                      y / Bajas",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTALES",
+      "target": "857.949.150,50",
+      "addendCount": 19,
+      "closes": false,
+      "diff": "0.009999990463256836"
+    },
+    {
+      "page": 41,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Aumentos / Rubros                                      y / Bajas",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTALES",
+      "target": "40.041.420,35",
+      "addendCount": 19,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Aumentos / Rubros                                      y / Bajas",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "TOTALES",
+      "target": "16.035.209,30",
+      "addendCount": 19,
+      "closes": false,
+      "diff": "-0.010000001639127731"
+    },
+    {
+      "page": 41,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Aumentos / Rubros                                      y / Bajas",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "TOTALES",
+      "target": "5.826.144,00",
+      "addendCount": 19,
+      "closes": false,
+      "diff": "16749706.15000001"
+    },
+    {
+      "page": 41,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Aumentos / Rubros                                      y / Bajas",
+      "likelyRelevant": false,
+      "column": 6,
+      "totalLabel": "TOTALES",
+      "target": "61.902.773,65",
+      "addendCount": 19,
+      "closes": false,
+      "diff": "24630997.949999996"
+    },
+    {
+      "page": 41,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Aumentos / Rubros                                      y / Bajas",
+      "likelyRelevant": false,
+      "column": 7,
+      "totalLabel": "TOTALES",
+      "target": "796.046.376,81",
+      "addendCount": 19,
+      "closes": false,
+      "diff": "-17769609.630000114"
+    },
+    {
+      "page": 41,
+      "section": "Estado de Situación Patrimonial al 30 de junio de 2020 / Comparativo con el ejercicio finalizado al 30 de junio de 2019 / Aumentos / Rubros                                      y / Bajas",
+      "likelyRelevant": false,
+      "column": 8,
+      "totalLabel": "TOTALES",
+      "target": "555.133.719,85",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-23611094.439999998"
+    },
+    {
+      "page": 42,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 25,
+    "results": [
+      {
+        "label": "Para Fines Generales (Anexo III)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para Fines Generales (Anexo III)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para Fines Específicos (Anexo III)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para Fines Específicos (Anexo III)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para Fines Diversos (Anexo III)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para Fines Diversos (Anexo III)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sector Fútbol Profesional (Anexo IV)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sector Fútbol Profesional (Anexo IV)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sector Fútbol Amateur (Anexo V)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sector Fútbol Amateur (Anexo V)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Apropiación de Costos Fútbol Amateur (Nota 4)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Apropiación de Costos Fútbol Amateur (Nota 4)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Apropiación de Costos Fútbol Amateur (reversión por capitalización, Nota 4)",
+        "similarity": 63
+      },
+      {
+        "label": "Sector Estadio (Anexo VI)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sector Estadio (Anexo VI)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sector Administración Sede Social (Anexo VII)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sector Administración Sede Social (Anexo VII)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Sector Administración Sede Social",
+        "similarity": 67
+      },
+      {
+        "label": "Sector Predio (Anexo VIII)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sector Predio (Anexo VIII)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Sector Predio",
+        "similarity": 50
+      },
+      {
+        "label": "Sector Departamento Deportes (Anexo IX)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sector Departamento Deportes (Anexo IX)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Instituto CAB (Anexo X)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Instituto CAB (Anexo X)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impositivos y Financieros (Anexo XI)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impositivos y Financieros (Anexo XI)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generales (Anexo XII)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generales (Anexo XII)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "30/06/2019",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "30/06/2019",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Televisaciones",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Televisaciones",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "Televisaciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos Varios",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Ingresos Varios",
+        "years": [
+          "2020"
+        ]
+      },
+      {
+        "label": "Ingresos Varios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos Varios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos Varios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Remuneraciones y Cargas Sociales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Remuneraciones y Cargas Sociales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Abonos, Mantenimiento y Otros gastos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Abonos, Mantenimiento y Otros gastos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciaciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciaciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Honorarios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Honorarios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Insumos Generales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Insumos Generales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juicios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juicios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Objetivos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Objetivos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Socios, Comunicación y otros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Socios, Comunicación y otros",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Banfield",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "16 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

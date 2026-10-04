@@ -1,0 +1,8411 @@
+{
+  "club": "parma",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Italia/Parma/Parma-bilancio-31.12.2022-consolidato.md",
+  "generatedAt": "2026-09-30T22:05:18.160Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 645,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 35,
+  "relevantTableCount": 10,
+  "tables": [
+    {
+      "page": 7,
+      "section": "### Organizzazione aziendale / ### Riepilogo operazioni di trasferimento dei giocatori",
+      "columns": [
+        "VOCE DI BILANCIO",
+        "IMPORTO € 000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ammortamento dei diritti pluriennali alle prestazioni dei calciatori",
+          "values": [
+            "- 39.515"
+          ],
+          "bold": false,
+          "codigo": "A"
+        },
+        {
+          "rawLabel": "Svalutazione dei diritti pluriennali alle prestazioni dei calciatori",
+          "values": [
+            "- 780"
+          ],
+          "bold": false,
+          "codigo": "B"
+        },
+        {
+          "rawLabel": "Costi per l’acquisizione di calciatori (prestiti, bonus, etc..)",
+          "values": [
+            "- 913"
+          ],
+          "bold": false,
+          "codigo": "C"
+        },
+        {
+          "rawLabel": "Plusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori",
+          "values": [
+            "50"
+          ],
+          "bold": false,
+          "codigo": "D"
+        },
+        {
+          "rawLabel": "Minusvalenze da cessione dei diritti pluriennali alle prestazioni dei calciatori",
+          "values": [
+            "- 9.472"
+          ],
+          "bold": false,
+          "codigo": "E"
+        },
+        {
+          "rawLabel": "Ricavi da cessione di calciatori (prestiti, bonus, etc..)",
+          "values": [
+            "1.821"
+          ],
+          "bold": false,
+          "codigo": "F"
+        },
+        {
+          "rawLabel": "Risultato netto delle operazioni connesse alle attività relative ai diritti pluriennali alle prestazioni dei calciatori (somma da A a F)",
+          "values": [
+            "- 48.810"
+          ],
+          "bold": false,
+          "codigo": "G"
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": "# Commento ed analisi degli indicatori di risultato",
+      "columns": [
+        "ATTIVO",
+        "31/12/2022",
+        "31/12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Liquidità Immediata",
+          "values": [
+            "15.786.022",
+            "13.748.136"
+          ],
+          "bold": true,
+          "codigo": "(LI)"
+        },
+        {
+          "rawLabel": "Crediti a breve termine",
+          "values": [
+            "19.146.511",
+            "30.295.222"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Attività finanziaria non immobilizzate",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Ratei e risconti attivi",
+          "values": [
+            "2.054.194",
+            "3.724.880"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Liquidità Differite",
+          "values": [
+            "21.200.705",
+            "34.020.102"
+          ],
+          "bold": true,
+          "codigo": "(LD)"
+        },
+        {
+          "rawLabel": "Rimanenze",
+          "values": [
+            "315.259",
+            "382.068"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Totale Attività correnti",
+          "values": [
+            "37.301.986",
+            "48.150.306"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Immobilizzazioni immateriali",
+          "values": [
+            "79.806.489",
+            "113.455.627"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Immobilizzazioni materiali",
+          "values": [
+            "14.306.255",
+            "9.615.716"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Immobilizzazioni finanziarie",
+          "values": [
+            "96.370",
+            "-"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Crediti a m/l termine",
+          "values": [
+            "4.762.963",
+            "3.697.987"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Attività Fisse",
+          "values": [
+            "98.972.077",
+            "126.769.330"
+          ],
+          "bold": true,
+          "codigo": "(AF)"
+        },
+        {
+          "rawLabel": "Totale Capitale Investito",
+          "values": [
+            "136.274.063",
+            "174.919.636"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": null,
+      "columns": [
+        "PASSIVO",
+        "31/12/2022",
+        "31/12/2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Debiti a breve",
+          "values": [
+            "42.126.116",
+            "58.107.303"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Ratei e risconti passivi",
+          "values": [
+            "2.654.810",
+            "13.892.278"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Passività Correnti",
+          "values": [
+            "44.780.926",
+            "71.999.581"
+          ],
+          "bold": true,
+          "codigo": "(PC)"
+        },
+        {
+          "rawLabel": "Debiti a medio e lungo",
+          "values": [
+            "74.638.336",
+            "88.282.860"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Trattamento di Fine Rapporto",
+          "values": [
+            "648.058",
+            "586.636"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Fondi per rischi e oneri",
+          "values": [
+            "2.741.369",
+            "2.327.468"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Passività Consolidate",
+          "values": [
+            "78.027.763",
+            "91.196.964"
+          ],
+          "bold": true,
+          "codigo": "(PF)"
+        },
+        {
+          "rawLabel": "Capitale Netto",
+          "values": [
+            "13.465.084",
+            "11.723.090"
+          ],
+          "bold": true,
+          "codigo": "(CN)"
+        },
+        {
+          "rawLabel": "Totale Fonti di Finanziamento",
+          "values": [
+            "136.273.773",
+            "174.919.635"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": null,
+      "columns": [
+        "CONTO ECONOMICO A VALORE AGGIUNTO",
+        "31/12/2022 (12 mesi)",
+        "31/12/2021 (12 mesi)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ricavi per la vendita di beni e servizi",
+          "values": [
+            "1.373.306",
+            "1.456.465"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Variazione Prodotti Finiti, semilavorati ecc.",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Variazione immobilizzazioni prodotte internamente",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Altri proventi vari",
+          "values": [
+            "31.134.488",
+            "39.306.851"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Valore della produzione tipica",
+          "values": [
+            "32.507.794",
+            "40.763.316"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Costi per materie prime, sussidiarie e di consumo",
+          "values": [
+            "1.667.571",
+            "1.820.638"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Var. rimanenze materie prime, sussidiarie e di consumo",
+          "values": [
+            "- 310.789",
+            "112.467"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Costo del venduto",
+          "values": [
+            "1.356.782",
+            "1.933.105"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "MARGINE LORDO REALIZZATO",
+          "values": [
+            "31.151.012",
+            "38.830.211"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Costi per servizi",
+          "values": [
+            "14.197.493",
+            "12.755.539"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Costi per godimento beni di terzi",
+          "values": [
+            "925.826",
+            "740.292"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Altri oneri vari",
+          "values": [
+            "15.478.206",
+            "9.797.450"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Costi esterni",
+          "values": [
+            "30.601.525",
+            "23.293.281"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "VALORE AGGIUNTO",
+          "values": [
+            "549.487",
+            "15.536.930"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Costi del lavoro",
+          "values": [
+            "54.876.237",
+            "60.383.099"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "MARGINE OPERATIVO LORDO (EBITDA)",
+          "values": [
+            "- 54.326.750",
+            "- 44.846.169"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Ammortamenti",
+          "values": [
+            "43.557.876",
+            "42.759.959"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Svalutazioni",
+          "values": [
+            "98.301",
+            "-"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Accantonamenti",
+          "values": [
+            "-",
+            "15.000"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "RISULTATO DELLA GESTIONE OPERATIVA (EBIT)",
+          "values": [
+            "- 97.982.927",
+            "- 87.621.128"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Ricavi della gestione finanziaria",
+          "values": [
+            "1.204",
+            "216.025"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Costi della gestione finanziaria",
+          "values": [
+            "97.287",
+            "53.357"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "RISULTATO PRIMA DELLE IMPOSTE",
+          "values": [
+            "- 98.079.010",
+            "- 87.458.460"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Risultato della gestione tributaria",
+          "values": [
+            "-",
+            "39.071"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "REDDITO NETTO",
+          "values": [
+            "- 98.079.010",
+            "- 87.497.531"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Indice liquidità ((Liquidità immediata+Crediti a breve)/Debiti a breve)",
+          "values": [
+            "0,8",
+            "0,8"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Costi del lavoro/Valore della produzione",
+          "values": [
+            "1,7",
+            "1,5"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 13,
+      "section": "### Attività di ricerca e sviluppo",
+      "columns": [
+        "CONTROPARTE",
+        "NATURA RAPPORTO",
+        "CREDITI",
+        "DEBITI",
+        "RICAVI",
+        "COSTI",
+        "INTERESSI PASSIVI",
+        "INTERESSI ATTIVI"
+      ],
+      "rows": [
+        {
+          "rawLabel": "KRAUSE GROUP ITALIA",
+          "values": [
+            "Finanziario/ commerciale",
+            "-",
+            "63.404",
+            "-",
+            "666",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARMA CALCIO 2022",
+          "values": [
+            "Finanziario/ commerciale",
+            "1.366",
+            "1.500",
+            "300",
+            "200",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARMA CALCIO SERVIZI SRL",
+          "values": [
+            "Finanziario/ commerciale",
+            "1",
+            "2",
+            "",
+            "787",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALE AL 31/12/2022",
+          "values": [
+            "",
+            "1.367",
+            "64.907",
+            "300",
+            "1.653",
+            "-",
+            "-"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": null,
+      "columns": [
+        "CONTROPARTE",
+        "NATURA RAPPORTO",
+        "CREDITI",
+        "DEBITI",
+        "RICAVI",
+        "COSTI",
+        "INTERESSI PASSIVI",
+        "INTERESSI ATTIVI"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ENRICO SERAFINO SRL",
+          "values": [
+            "Commerciale",
+            "0",
+            "21",
+            "19",
+            "52",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VIETTI SRL",
+          "values": [
+            "Commerciale",
+            "-",
+            "-",
+            "-",
+            "2",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BARILLA SPA",
+          "values": [
+            "Commerciale",
+            "1",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ERREA SPA",
+          "values": [
+            "Commerciale",
+            "5",
+            "190",
+            "425",
+            "1.097",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARMA PARTECIPAZIONI CALCISTICHE SPA",
+          "values": [
+            "Commerciale",
+            "-",
+            "-",
+            "-",
+            "12",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "S.S.D.A.R.L. ACADEMY PARMA CALCIO 1913",
+          "values": [
+            "Commerciale",
+            "6",
+            "-",
+            "104",
+            "172",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NUOVO INIZIO SRL",
+          "values": [
+            "Commerciale",
+            "186",
+            "104",
+            "22",
+            "166",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BAR CENTRALE COLLECCHIO SRL",
+          "values": [
+            "Commerciale",
+            "-",
+            "159",
+            "-",
+            "659",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALE AL 31/12/2022",
+          "values": [
+            "",
+            "198",
+            "474",
+            "570",
+            "2.159",
+            "-",
+            "-"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "columns": [
+        "",
+        "BILANCIO CONSOLIDATO al 31 dicembre 2022",
+        "BILANCIO CONSOLIDATO al 31 dicembre 2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "STATO PATRIMONIALE ATTIVO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "B) IMMOBILIZZAZIONI",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "I. IMMOBILIZZAZIONI IMMATERIALI",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1) Costi d'impianto e di ampliamento:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Costi d'impianto e di ampliamento",
+          "values": [
+            "371.285",
+            "578.273"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Fondo ammortamento costi di impianto e di ampliamento",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "371.285",
+            "578.273"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3) Diritti di brevetto industriale e diritti di utilizzazione delle opere dell'ingegno:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Diritti di brevetto industriale e diritti di utilizzazione delle opere dell'ingegno",
+          "values": [
+            "4.454",
+            "20.108"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Fondo ammortamento diritti di brevetto industriale e diritti di utilizzazione delle opere dell'ingegno",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "4.454",
+            "20.108"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4) Concessioni, licenze, marchi e diritti simili:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Concessioni, licenze, marchi e diritti simili",
+          "values": [
+            "5.698.158",
+            "6.504.931"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Fondo ammortamento concessioni, licenze, marchi e diritti simili",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5) Avviamento (disavanzo di consolidamento)",
+          "values": [
+            "706.550",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Avviamento",
+          "values": [
+            "706.550",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Fondo ammortamento avviamento",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "6.404.708",
+            "6.504.931"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6) Immobilizzazioni in corso e acconti",
+          "values": [
+            "3.971.555",
+            "3.319.731"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7) Altre immobilizzazioni immateriali:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Altre immobilizzazioni immateriali",
+          "values": [
+            "182.040",
+            "427.483"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Fondo ammortamento altre immobilizzazioni",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "c) On. Diritti pluriennali prestazioni calciatori",
+          "values": [
+            "68.872.447",
+            "102.605.101"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "d) Fondo Diritti pluriennali prestazioni calciatori",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "69.054.487",
+            "103.032.584"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale I",
+          "values": [
+            "79.806.489",
+            "113.455.627"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "II. IMMOBILIZZAZIONI MATERIALI",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1) Terreni e fabbricati:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Terreni e fabbricati",
+          "values": [
+            "11.581.172",
+            "5.855.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Fondo ammortamento terreni e fabbricati",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "11.581.172",
+            "5.855.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2) Impianti e macchinario:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Impianti e macchinario",
+          "values": [
+            "1.893.099",
+            "2.421.615"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Fondo ammortamento impianti e macchinario",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1.893.099",
+            "2.421.615"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 17,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "columns": [
+        "",
+        "BILANCIO CONSOLIDATO al 31 dicembre 2022",
+        "BILANCIO CONSOLIDATO al 31 dicembre 2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "3) Attrezzature industriali e commerciali:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Attrezzature industriali e commerciali",
+          "values": [
+            "425.697",
+            "369.313"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Fondo ammortamento attrezzature industriali e commerciali",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "425.697",
+            "369.313"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4) Altri beni materiali:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Altri beni materiali",
+          "values": [
+            "406.287",
+            "969.455"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Fondo ammortamento altri beni materiali",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "406.287",
+            "969.455"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5) Immobilizzazioni in corso e acconti",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale II",
+          "values": [
+            "14.306.255",
+            "9.615.716"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "III. IMMOBILIZZAZIONI FINANZIARIE",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Partecipazioni imprese controllate",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2) Crediti:",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) verso imprese controllate",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili oltre l'esercizio successivo",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "c) verso imprese controllanti",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili oltre l'esercizio successivo",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "d-bis) verso altri",
+          "values": [
+            "96.370",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "96.370",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Totale III",
+            "96.370"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "94.209.114",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALE IMMOBILIZZAZIONI (B)",
+          "values": [
+            "94.209.114",
+            "123.071.343"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "columns": [
+        "",
+        "BILANCIO CONSOLIDATO al 31 dicembre 2022",
+        "BILANCIO CONSOLIDATO al 31 dicembre 2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "C) ATTIVO CIRCOLANTE",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "I. RIMANENZE",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "4) Prodotti finiti e merci",
+          "values": [
+            "315.259",
+            "382.068"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale I",
+          "values": [
+            "315.259",
+            "382.068"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "II. CREDITI",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1) Verso clienti",
+          "values": [
+            "4.517.001",
+            "4.731.899"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "4.517.001",
+            "4.731.899"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "c) verso imprese controllanti",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2) Verso imprese controllate",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5-bis) Crediti tributari",
+          "values": [
+            "6.921.481",
+            "15.110"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "esigibili entro l'esercizio successivo",
+          "values": [
+            "6.921.481",
+            "15.110"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5-quater) Verso altri",
+          "values": [
+            "1.203.660",
+            "2.524.544"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "esigibili entro l'esercizio successivo",
+          "values": [
+            "916.317",
+            "2.467.406"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili oltre l'esercizio successivo",
+          "values": [
+            "287.633",
+            "57.138"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5-quinquies) Verso Ente Specifico",
+          "values": [
+            "11.267.042",
+            "26.721.656"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "esigibili entro l'esercizio successivo",
+          "values": [
+            "6.791.712",
+            "23.080.807"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "esigibili oltre l'esercizio successivo",
+          "values": [
+            "4.475.330",
+            "3.640.849"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale II",
+          "values": [
+            "23.909.184",
+            "33.993.209"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "IV. DISPONIBILITA' LIQUIDE",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1) Depositi bancari e postali",
+          "values": [
+            "15.766.674",
+            "13.726.477"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3) Denaro e valori in cassa",
+          "values": [
+            "19.348",
+            "21.659"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale IV",
+          "values": [
+            "15.786.022",
+            "13.748.136"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTALE ATTIVO CIRCOLANTE (C)",
+          "values": [
+            "40.010.465",
+            "48.123.413"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "D) RATEI E RISCONTI",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1) Ratei attivi",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2) Risconti attivi",
+          "values": [
+            "2.054.194",
+            "3.724.880"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALE RATEI E RISCONTI (D)",
+          "values": [
+            "2.054.194",
+            "3.724.880"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTALE ATTIVO",
+          "values": [
+            "136.273.773",
+            "174.919.636"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "STATO PATRIMONIALE PASSIVO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A) PATRIMONIO NETTO DI GRUPPO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "I. Capitale",
+          "values": [
+            "150.000",
+            "150.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Riserva da sovrapprezzo delle azioni",
+          "values": [
+            "6.308.816",
+            "829.378"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IV. Riserva legale",
+          "values": [
+            "3.292",
+            "3.292"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VI. Altre riserve",
+          "values": [
+            "214.606.956",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Riserve facoltative",
+          "values": [
+            "81.956",
+            "5.585.347"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Versamenti in conto futuro aumento capitale",
+          "values": [
+            "214.525.000",
+            "114.659.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VII. Utili (perdite) portate a nuovo",
+          "values": [
+            "-110.212.603",
+            "-22.006.395"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VIII. Utili (perdita) portati a nuovo",
+          "values": [
+            "687.633",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IX. Utili (perdita) dell'esercizio",
+          "values": [
+            "-98.079.010",
+            "-87.497.532"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALE PATRIMONIO NETTO DI GRUPPO (A)",
+          "values": [
+            "13.465.084",
+            "11.723.090"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "B) FONDI PER RISCHI E ONERI",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1) per trattamento di quiescenza e obblighi simili",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4) Altri fondi",
+          "values": [
+            "2.741.369",
+            "2.327.468"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALE FONDI PER RISCHI E ONERI (B)",
+          "values": [
+            "2.741.369",
+            "2.327.468"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "C) TRATTAMENTO DI FINE RAPPORTO DI LAVORO SUBORDINATO",
+          "values": [
+            "648.058",
+            "586.636"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "columns": [
+        "",
+        "BILANCIO CONSOLIDATO al 31 dicembre 2022",
+        "BILANCIO CONSOLIDATO al 31 dicembre 2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "D) DEBITI",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "3) Debiti verso soci per finanziamenti",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili oltre l'esercizio successivo",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4) Debiti verso banche",
+          "values": [
+            "1.632.651",
+            "1.839.794"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "153.905",
+            "158.518"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili oltre l'esercizio successivo",
+          "values": [
+            "1.478.746",
+            "1.681.276"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5) Debiti verso altri finanziatori",
+          "values": [
+            "0",
+            "28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "0",
+            "28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6) Accordi",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7) Debiti verso fornitori",
+          "values": [
+            "10.988.450",
+            "15.184.877"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "8.730.950",
+            "11.508.127"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili oltre l'esercizio successivo",
+          "values": [
+            "2.257.500",
+            "3.676.750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11) Debiti verso controllanti",
+          "values": [
+            "63.012.242",
+            "59.816.002"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili oltre l'esercizio successivo",
+          "values": [
+            "63.012.242",
+            "59.816.002"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11 bis) Debiti verso imprese sottoposte al controllo delle controllanti",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "12) Debiti tributari",
+          "values": [
+            "2.158.309",
+            "4.239.468"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "2.158.309",
+            "3.945.266"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili oltre l'esercizio successivo",
+          "values": [
+            "0",
+            "294.202"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13) Debiti verso istituti di previdenza e di sicurezza sociale",
+          "values": [
+            "978.365",
+            "1.820.576"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "978.365",
+            "1.610.361"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili oltre l'esercizio successivo",
+          "values": [
+            "0",
+            "210.215"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "14) Altri debiti",
+          "values": [
+            "4.889.878",
+            "4.223.412"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "4.889.878",
+            "4.223.411"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili oltre l'esercizio successivo",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "15) Debiti verso ente specifico",
+          "values": [
+            "33.104.557",
+            "59.266.007"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili entro l'esercizio successivo",
+          "values": [
+            "25.214.709",
+            "36.661.592"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- esigibili oltre l'esercizio successivo",
+          "values": [
+            "7.889.848",
+            "22.604.416"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALE DEBITI (D)",
+          "values": [
+            "116.764.452",
+            "146.390.164"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "E) RATEI E RISCONTI",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1) Ratei passivi",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2) Risconti passivi",
+          "values": [
+            "2.654.810",
+            "13.892.278"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALE RATEI E RISCONTI (E)",
+          "values": [
+            "2.654.810",
+            "13.892.278"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTALE PASSIVO",
+          "values": [
+            "136.273.773",
+            "174.919.636"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "columns": [
+        "",
+        "BILANCIO CONSOLIDATO al 31 dicembre 2022",
+        "BILANCIO CONSOLIDATO al 31 dicembre 2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CONTO ECONOMICO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A) VALORE DELLA PRODUZIONE",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1) Ricavi delle vendite e delle prestazioni",
+          "values": [
+            "1.373.306",
+            "1.456.465"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4) Incrementi di immobilizzazioni per lavori interni",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5) Altri ricavi e proventi",
+          "values": [
+            "31.134.488",
+            "39.306.851"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Proventi da Sponsorizzazioni",
+          "values": [
+            "2.200.339",
+            "2.640.706"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "c) Proventi pubblicitari",
+          "values": [
+            "2.631.202",
+            "3.075.404"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "d) Proventi commerciali e royalties",
+          "values": [
+            "50.929",
+            "106.859"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "e) Proventi da cessione diritti televisivi",
+          "values": [
+            "3.055.420",
+            "15.062.040"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "h) Plusvalenze cess. diritti pluriennali prest. giocatori",
+          "values": [
+            "49.782",
+            "1.394.738"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "i) Altri proventi gest. giocatori",
+          "values": [
+            "1.820.531",
+            "759.780"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "l) Ricavi e proventi diversi",
+          "values": [
+            "21.326.285",
+            "16.267.324"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale altri ricavi e proventi",
+          "values": [
+            "31.134.488",
+            "39.306.851"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTALE VALORE DELLA PRODUZIONE (A)",
+          "values": [
+            "32.507.794",
+            "40.763.316"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "B) COSTI DELLA PRODUZIONE",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "6) Per materie prime, sussidiarie, di consumo e di merci",
+          "values": [
+            "-1.667.571",
+            "-1.820.638"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7) Per servizi",
+          "values": [
+            "-14.197.493",
+            "-12.755.539"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8) Per godimento di beni di terzi",
+          "values": [
+            "-925.826",
+            "-740.292"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "9) Per il personale:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Salari e stipendi",
+          "values": [
+            "-49.969.951",
+            "-56.022.959"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Oneri sociali",
+          "values": [
+            "-4.117.940",
+            "-3.623.449"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "c) Trattamento di fine rapporto",
+          "values": [
+            "-788.346",
+            "-736.691"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "e) Altri costi",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale personale",
+          "values": [
+            "-54.876.237",
+            "-60.383.099"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "10) Ammortamenti e svalutazioni:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Ammortamento delle immobilizzazioni immateriali imm.",
+          "values": [
+            "-2.388.974",
+            "-2.404.463"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Ammortamento delle immobilizzazioni materiali mat.",
+          "values": [
+            "-873.275",
+            "-811.855"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "c) Altre svalutazioni delle immobilizzazioni",
+          "values": [
+            "-780.217",
+            "-212.430"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "d) Svalutazione crediti",
+          "values": [
+            "-98.301",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "e) Ammortamento costi diritti pluriennali prestazioni calciatori",
+          "values": [
+            "-39.515.410",
+            "-39.331.210,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "-43.656.177",
+            "-42.759.958"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "11) Variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+          "values": [
+            "310.789",
+            "-112.467"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "12) Accantonamenti per rischi",
+          "values": [
+            "0",
+            "-15.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13) Altri accantonamenti",
+          "values": [
+            "-977.598",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "14) Oneri diversi di gestione",
+          "values": [
+            "-14.500.608",
+            "-9.797.450"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "-14.500.608",
+            "-9.797.450"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTALE COSTI DELLA PRODUZIONE (B)",
+          "values": [
+            "-130.490.721",
+            "-128.384.443"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DIFFERENZA TRA VALORE E COSTI DELLA PRODUZIONE (A-B)",
+          "values": [
+            "-97.982.927",
+            "-87.621.127"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 21,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "columns": [
+        "",
+        "BILANCIO CONSOLIDATO al 31 dicembre 2022",
+        "BILANCIO CONSOLIDATO al 31 dicembre 2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "C) PROVENTI E ONERI FINANZIARI",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "16) Altri proventi finanziari:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) da crediti iscritti nelle immobilizzazioni:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verso controllate",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Altri",
+          "values": [
+            "1.204",
+            "216.025"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "d) proventi diversi dai precedenti:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Da imprese controllate",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "1.204",
+            "216.025"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "17) Interessi e altri oneri finanziari:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verso imprese controllanti",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verso imprese socie",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altri",
+          "values": [
+            "-97.287",
+            "-53.357"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALE PROVENTI E ONERI FINANZIARI (15 + 16 - 17 + - 17-bis)",
+          "values": [
+            "-96.083",
+            "162.668"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RISULTATO PRIMA DELLE IMPOSTE (A - B + - C + - D)",
+          "values": [
+            "-98.079.010",
+            "-87.458.459"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Imposte",
+          "values": [
+            "0",
+            "-39.071"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "21) UTILE (PERDITA) DELL'ESERCIZIO",
+          "values": [
+            "-98.079.010",
+            "-87.497.530"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Risultato di pertinenza del gruppo",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 22,
+      "section": null,
+      "columns": [
+        "RENDICONTO FINANZIARIO*",
+        "31.12.2022",
+        "31.12.2021"
+      ],
+      "rows": [
+        {
+          "rawLabel": "A. Flussi finanziari derivanti dall'attività operativa",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Utile (perdita) dell'esercizio",
+          "values": [
+            "-98.079.010",
+            "-87.497.532"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imposte sul reddito",
+          "values": [
+            "0",
+            "39.071"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Interessi passivi/(interessi attivi)",
+          "values": [
+            "96.083",
+            "-162.668"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Dividendi)",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Plusvalenze)/minusvalenze derivanti dalla cessione di diritti pluriennali alle prestazioni dei calciatori",
+          "values": [
+            "9.422.515",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Plusvalenze)/minusvalenze derivanti dalla cessione di altre attività",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Utile (perdita) dell'esercizio prima d'imposta sul reddito, interessi, dividendi e plus/minusvalenze da cessione",
+          "values": [
+            "-88.560.412",
+            "-87.621.129"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "*Rettifiche per elementi non monetari che non hanno avuto contropartita nel capitale circolante netto*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Accantonamenti ai fondi",
+          "values": [
+            "1.765.944",
+            "751.691"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ammortamenti delle immobilizzazioni",
+          "values": [
+            "42.777.659",
+            "42.547.529"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Svalutazioni per perdite durevoli di valore",
+          "values": [
+            "780.217",
+            "212.430"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altre rettifiche per elementi non monetari",
+          "values": [
+            "98.301",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Flusso finanziario prima delle variazioni del CCN",
+          "values": [
+            "45.422.121",
+            "43.511.650"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "*Variazioni del capitale circolante netto*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Decremento/(incremento) delle rimanenze",
+          "values": [
+            "66.809",
+            "112.467"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Decremento/(incremento) dei crediti vs clienti",
+          "values": [
+            "116.597",
+            "6.488.554"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Incremento/(decremento) dei debiti verso fornitori",
+          "values": [
+            "-4.196.427",
+            "-2.049.362"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Decremento/(incremento) ratei e risconti attivi",
+          "values": [
+            "1.670.686",
+            "355.320"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Incremento/(decremento) ratei e risconti passivi",
+          "values": [
+            "-11.237.468",
+            "5.874.326"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altre variazioni del capitale circolante netto",
+          "values": [
+            "-18.549.224",
+            "-8.590.611"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Flusso finanziario dopo le variazioni del CCN",
+          "values": [
+            "-32.129.027",
+            "2.190.694"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "*Altre rettifiche*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Interessi incassati/(pagati)",
+          "values": [
+            "-96.083",
+            "162.668"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Imposte sul reddito pagate)",
+          "values": [
+            "0",
+            "-39.071"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dividendi incassati",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Utilizzo dei fondi)",
+          "values": [
+            "-1.290.621",
+            "553.541"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale Altre rettifiche",
+          "values": [
+            "-1.386.704",
+            "677.138"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Flusso finanziario dell'attività operativa (A)",
+          "values": [
+            "-76.654.022",
+            "-41.241.647"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "B. Flussi finanziari derivanti dall'attività di investimento",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "*Immobilizzazioni materiali*",
+          "values": [
+            "-5.563.814",
+            "-1.165.944"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Investimenti)",
+          "values": [
+            "-5.563.814",
+            "-1.165.944"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disinvestimenti",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Diritti pluriennali alle prestazioni dei calciatori*",
+          "values": [
+            "-16.160.265",
+            "-75.331.608"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Acquisizione) diritti pluriennali alle prestazioni dei calciatori",
+          "values": [
+            "-16.160.265",
+            "-75.331.608"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cessione diritti pluriennali alle prestazioni dei calciatori",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Altre immobilizzazioni immateriali*",
+          "values": [
+            "-2.297.713",
+            "-3.722.277"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Investimenti)",
+          "values": [
+            "-2.297.713",
+            "-3.722.277"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disinvestimenti",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Immobilizzazioni finanziarie*",
+          "values": [
+            "-96.370",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Investimenti)",
+          "values": [
+            "-96.370",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disinvestimenti",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Attività Finanziarie non immobilizzate*",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Investimenti)",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disinvestimenti",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Totale Altre attività di investimento*",
+          "values": [
+            "-2.394.083",
+            "-3.722.277"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flusso finanziario dell'attività di investimento (B)",
+          "values": [
+            "-24.118.162",
+            "-80.219.829"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "C. Flussi finanziari derivanti dall'attività di finanziamento",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "*Mezzi di terzi*",
+          "values": [
+            "-207.171",
+            "-3.112.861"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Incremento (decremento) debiti a breve verso banche",
+          "values": [
+            "-28",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Accensione finanziamenti",
+          "values": [
+            "0",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Rimborso finanziamenti)",
+          "values": [
+            "-207.143",
+            "-3.112.861"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Finanziamenti soci*",
+          "values": [
+            "3.196.240",
+            "18.227.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Accensione finanziamenti",
+          "values": [
+            "3.196.240",
+            "18.227.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Rimborso finanziamenti)",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Mezzi propri*",
+          "values": [
+            "99.821.001",
+            "114.699.392"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento di capitale a pagamento",
+          "values": [
+            "99.821.001",
+            "114.699.392"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Rimborso di capitale)",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cessione (acquisto) di azioni proprie",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Dividendi (e acconti su dividendi) pagati)",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Altre entrate (uscite) da attività di finanziamento*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flusso finanziario dell'attività di finanziamento (C)",
+          "values": [
+            "102.810.070",
+            "129.813.531"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Incremento (decremento) delle disponibilità liquide (A ± B ± C)",
+          "values": [
+            "2.037.886",
+            "8.352.055"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Disponibilità liquide all'inizio dell'esercizio",
+          "values": [
+            "13.748.136",
+            "5.396.081"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disponibilità liquide alla fine dell'esercizio",
+          "values": [
+            "15.786.022",
+            "13.748.136"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo a pareggio",
+          "values": [
+            "2.037.886",
+            "8.352.055"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 32,
+      "section": "Le aliquote annuali di ammortamento utilizzate sono riportate nella tabella sottostante:",
+      "columns": [
+        "(i) Cespite",
+        "(ii) Aliquota"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Fabbricati",
+          "values": [
+            "3%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impianti generici",
+          "values": [
+            "15%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Attrezzature sanitarie",
+          "values": [
+            "12,50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Attrezzature varie",
+          "values": [
+            "20%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hospitality stadio",
+          "values": [
+            "20%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Coppe e trofei",
+          "values": [
+            "20%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autovetture",
+          "values": [
+            "20%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altri beni",
+          "values": [
+            "20%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 35,
+      "section": "## *Nota Integrativa Attivo* / ### *Immobilizzazioni* / ### *Immobilizzazioni immateriali* / #### *Movimenti delle immobilizzazioni immateriali*",
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Costi di impianto e di ampliamento",
+          "values": [
+            "371.285",
+            "578.273",
+            "-206.988"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diritti di brevetto ind., diritti utilizzazione opere dell’ingegno",
+          "values": [
+            "4.454",
+            "20.108",
+            "-15.654"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Concessioni, licenze, marchi e diritti simili",
+          "values": [
+            "5.698.158",
+            "6.504.931",
+            "-806.773"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disavanzo da consolidamento",
+          "values": [
+            "706.550",
+            "",
+            "706.550"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imm. immateriali in corso e acconti",
+          "values": [
+            "3.971.555",
+            "3.319.731",
+            "651.824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altre Immobilizzazioni immateriali",
+          "values": [
+            "69.054.487",
+            "103.032.584",
+            "-33.978.097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "79.806.489",
+            "113.455.627",
+            "-33.649.138"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 36,
+      "section": null,
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Terreni e Fabbricati",
+          "values": [
+            "11.581.172",
+            "5.855.333",
+            "5.725.839"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impianti e macchinari",
+          "values": [
+            "1.893.099",
+            "2.421.615",
+            "-528.516"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Attrezzature industriali e commerciali",
+          "values": [
+            "425.697",
+            "369.313",
+            "56.384"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altri beni materiali",
+          "values": [
+            "406.287",
+            "969.454",
+            "-563.167"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "14.306.255",
+            "9.615.715",
+            "4.690.540"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": null,
+      "columns": [
+        "Crediti Verso Ente specifico",
+        "Bilancio al 31.12.2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Lega C/Trasferimenti",
+          "values": [
+            "5.162.045"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Società di calcio estere",
+          "values": [
+            "4.357.857"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Internazionale Milano",
+          "values": [
+            "26.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Società di calcio nazionali",
+          "values": [
+            "769.296"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lecce",
+          "values": [
+            "400.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altri",
+          "values": [
+            "551.044"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "11.267.042"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": null,
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Clienti",
+          "values": [
+            "5.093.192",
+            "5.293.343",
+            "-200.151"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(F.do Svalutazione Crediti)",
+          "values": [
+            "-576.191",
+            "-561.444",
+            "-14.747"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "4.517.001",
+            "4.731.899",
+            "-214.898"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": "Le disponibilità liquide ammontano ad Euro 15.786.022 e sono così costituite:",
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Depositi bancari",
+          "values": [
+            "15.766.674",
+            "13.726.477",
+            "2.040.197"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Denaro in cassa",
+          "values": [
+            "19.348",
+            "21.659",
+            "-2.311"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "15.786.022",
+            "13.748.136",
+            "2.037.886"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 39,
+      "section": "# Nota Integrativa Passivo e patrimonio netto di Gruppo / ## Patrimonio netto di Gruppo",
+      "columns": [
+        "Patrimonio Netto",
+        "Consistenza al 31.12.2021",
+        "Incrementi",
+        "Decrementi",
+        "Consistenza al 31.12.2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capitale Sociale",
+          "values": [
+            "150.000",
+            "0",
+            "0",
+            "150.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altre riserve",
+          "values": [
+            "121.077.409",
+            "99.841.655",
+            "0",
+            "220.919.064"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utile/perd. portati a nuovo",
+          "values": [
+            "-22.006.787",
+            "687.633",
+            "88.205.816",
+            "-109.524.970"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utile/perd.d' es.",
+          "values": [
+            "-87.497.532",
+            "0",
+            "10.581.478",
+            "-98.079.010"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tot. Patrim. Netto",
+          "values": [
+            "11.723.090",
+            "114.699.392",
+            "87.497.532",
+            "13.465.084"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 39,
+      "section": null,
+      "columns": [
+        "",
+        "Risultato d'esercizio 31.12.2022",
+        "Patrimonio Netto 31.12.2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Patrimonio Netto e Risultato dell'esercizio Parma Calcio 1913 S.r.l.",
+          "values": [
+            "-96.503.543",
+            "14.955.303"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eliminazione del valore di carico delle partecipazioni consolidate: - Risultati delle partecipate",
+          "values": [
+            "-1.575.467",
+            "1.490.219"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimonio Netto e Risultati consolidati di Gruppo",
+          "values": [
+            "-98.079.010",
+            "13.465.084"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 40,
+      "section": "# *Trattamento di fine rapporto lavoro* / ### Informazioni sul trattamento di fine rapporto di lavoro subordinato / # *Debiti* / ## Variazioni e scadenza dei debiti",
+      "columns": [
+        "Debiti Verso Ente specifico Entro esercizio",
+        "Bilancio al 31.12.2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Società di calcio Estere",
+          "values": [
+            "14.314.398"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Società di calcio Nazionali",
+          "values": [
+            "18.118.084"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ASD Pro Piacenza 1919",
+          "values": [
+            "9.200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lega Serie B",
+          "values": [
+            "662.847"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altri",
+          "values": [
+            "27"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "33.104.556"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 41,
+      "section": null,
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Fornitori Vari",
+          "values": [
+            "9.238.087",
+            "4.448.790",
+            "4.789.297"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forn. Lav. Aut. – Prof.",
+          "values": [
+            "78.920",
+            "25.567",
+            "53.353"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forn. C/FT. da Ricevere Procuratori",
+          "values": [
+            "1.322.590",
+            "9.471.654",
+            "-8.149.064"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forn. C/FT. da Ricevere",
+          "values": [
+            "348.853",
+            "1.238.866",
+            "-890.013"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALE",
+          "values": [
+            "10.988.450",
+            "15.184.877",
+            "-4.196.427"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 41,
+      "section": null,
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Erario C/Rit. Redd. Lav. Dip",
+          "values": [
+            "2.420.548",
+            "4.561.540",
+            "-2.140.992"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erario C/Rit. Redd. Lav. Aut",
+          "values": [
+            "87.148",
+            "190.660",
+            "-103.512"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erario C/Rit. Altri",
+          "values": [
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRAP",
+          "values": [
+            "-349.378",
+            "-512.722",
+            "163.344"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erario C/IVA",
+          "values": [
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erario C/Rit. Interessi Attivi Bancari",
+          "values": [
+            "-9",
+            "-9",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALE",
+          "values": [
+            "2.158.309",
+            "4.239.469",
+            "-2.081.160"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 41,
+      "section": null,
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Contributi INPS Dipendenti",
+          "values": [
+            "571.370",
+            "1.375.472",
+            "-804.102"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contributi ENASARCO",
+          "values": [
+            "5.375",
+            "16.248",
+            "-10.873"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contributi INAIL",
+          "values": [
+            "72.861",
+            "302.813",
+            "-229.952"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altri Contributi",
+          "values": [
+            "328.759",
+            "126.042",
+            "202.717"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALE",
+          "values": [
+            "978.365",
+            "1.820.575",
+            "-842.210"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 42,
+      "section": "# Nota Integrativa al Conto Economico Consolidato / ## Valore della produzione",
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ricavi vendite e prestazioni",
+          "values": [
+            "1.373.306",
+            "1.456.465",
+            "-83.159"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altri Ricavi e proventi",
+          "values": [
+            "31.134.488",
+            "39.306.851",
+            "-8.172.363"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "32.507.794",
+            "40.763.316",
+            "-8.255.522"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 42,
+      "section": "I ricavi delle vendite e prestazioni sono così costituiti:",
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ricavi da gare in casa prima squadra:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Gare Campionato",
+          "values": [
+            "810.341",
+            "526.551",
+            "283.790"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abbonamenti",
+          "values": [
+            "562.965",
+            "228.302",
+            "334.663"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ricavi e proventi diversi",
+          "values": [
+            "",
+            "701.612",
+            "-701.612"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "1.373.306",
+            "1.456.465",
+            "-83.159"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 42,
+      "section": "Gli “altri ricavi e proventi” sono così costituiti:",
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Proventi da sponsorizzazioni",
+          "values": [
+            "2.200.339",
+            "2.640.706",
+            "-440.367"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proventi pubblicitari",
+          "values": [
+            "2.631.202",
+            "3.075.404",
+            "-444.202"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proventi commerciali e royalties",
+          "values": [
+            "50.929",
+            "106.859",
+            "-55.930"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proventi da cessione diritti televisivi",
+          "values": [
+            "3.055.420",
+            "15.062.040",
+            "-12.006.620"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proventi da cessione diritti pluriennali prestazioni Calciatori",
+          "values": [
+            "49.782",
+            "1.394.738",
+            "-1.344.956"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altri Proventi gestione Calciatori",
+          "values": [
+            "1.820.531",
+            "759.780",
+            "1.060.751"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contributi in conto esercizio",
+          "values": [
+            "17.526.423",
+            "14.272.881",
+            "-14.272.881"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altri ricavi e proventi",
+          "values": [
+            "3.799.862",
+            "1.994.443",
+            "19.331.842"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "31.134.488",
+            "39.306.851",
+            "-8.172.363"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 44,
+      "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Costi per attività sportiva",
+          "values": [
+            "2.141.724",
+            "3.113.622",
+            "-971.898"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costi specifici Tecnici",
+          "values": [
+            "999.176",
+            "494.667",
+            "504.509"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costi per intermediazioni",
+          "values": [
+            "1.074.298",
+            "1.372.730",
+            "-298.432"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costi per prestazione servizi personale",
+          "values": [
+            "342.330",
+            "432.246",
+            "-89.916"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costi vitto, alloggio e locomozione gare",
+          "values": [
+            "1.935.330",
+            "738.192",
+            "1.197.138"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compensi e rimborsi spesa a terzi",
+          "values": [
+            "376.255",
+            "323.351",
+            "52.904"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costi per servizio biglietteria, controllo ingressi",
+          "values": [
+            "318.927",
+            "89.825",
+            "229.102"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costi per pubblicità e propaganda",
+          "values": [
+            "870.350",
+            "800.362",
+            "69.988"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costi assicurativi",
+          "values": [
+            "1.324.238",
+            "430.940",
+            "893.298"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costi per utenze e spese generali",
+          "values": [
+            "1.282.394",
+            "2.171.059",
+            "-1.907.125"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costi per manutenzioni e riparazioni",
+          "values": [
+            "1.073.871",
+            "602.668",
+            "471.203"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costi per servizio da banche e finanz.",
+          "values": [
+            "25.354",
+            "841.009",
+            "-815.655"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Legali e Amministrativi",
+          "values": [
+            "1.991.920",
+            "1.018.460",
+            "1.991.920"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altri",
+          "values": [
+            "441.326",
+            "326.408",
+            "114.918"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "14.197.493",
+            "12.755.539",
+            "1.441.954"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 45,
+      "section": "### *Costi per godimento beni di terzi* / ### *Costi per il personale*",
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salari e Stipendi",
+          "values": [
+            "49.969.951",
+            "56.022.959",
+            "-6.053.008"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Oneri Sociali",
+          "values": [
+            "4.117.940",
+            "3.623.449",
+            "494.491"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TFR",
+          "values": [
+            "788.346",
+            "736.691",
+            "51.655"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "54.876.237",
+            "60.383.099",
+            "-5.506.862"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 45,
+      "section": "### *Ammortamenti e svalutazioni*",
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Amm. Imm. Immateriali",
+          "values": [
+            "41.904.384",
+            "41.735.673",
+            "168.711"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amm. Imm. Materiali",
+          "values": [
+            "873.275",
+            "811.855",
+            "61.420"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Svalutazione Immobilizzaz.",
+          "values": [
+            "780.217",
+            "212.430",
+            "567.787"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Svalutazione Crediti",
+          "values": [
+            "98.301",
+            "0",
+            "98.301"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "43.656.177",
+            "42.759.958",
+            "896.219"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 46,
+      "section": "### *Oneri diversi di gestione*",
+      "columns": [
+        "Descrizione",
+        "Bilancio al 31.12.2022",
+        "Bilancio al 31.12.2021",
+        "Variazione"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Spese varie per organizzazioni gare",
+          "values": [
+            "799.618",
+            "553.709",
+            "245.909"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tasse iscrizione gare",
+          "values": [
+            "6.524",
+            "12.945",
+            "-6.421"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costi acq. temporanea calciatori",
+          "values": [
+            "523.434",
+            "2.563.786",
+            "-2.040.352"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altri oneri gestione calciatori",
+          "values": [
+            "10.722.485",
+            "2.220.238",
+            "8.502.247"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Altri oneri di gestione",
+          "values": [
+            "2.448.547",
+            "4.446.773",
+            "-1.998.226"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "14.500.608",
+            "9.797.451",
+            "4.703.157"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 47,
+      "section": "# *Imposte sul reddito d'esercizio, correnti differite e anticipate* / ### *Imposte correnti differite e anticipate* / ## *Nota Integrativa Altre Informazioni* / ### *Dati sull'occupazione*",
+      "columns": [
+        "",
+        "Calciatori",
+        "Allenatori e Staff Tecnico",
+        "Dirigenti",
+        "Quadri",
+        "Impiegati",
+        "Operai",
+        "TOTALE"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Media",
+          "values": [
+            "78",
+            "74",
+            "3",
+            "1",
+            "34",
+            "11",
+            "201"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Al 31 dicembre 2022",
+          "values": [
+            "76",
+            "69",
+            "3",
+            "2",
+            "35",
+            "12",
+            "197"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 48,
+      "section": "## *Informazioni sugli strumenti finanziari emessi dalla società* / ### Importo complessivo degli impegni delle garanzie e delle passività potenziali",
+      "columns": [
+        "Emittente",
+        "Importo",
+        "Beneficiario"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Generali",
+          "values": [
+            "6.246.400",
+            "Lega Serie B"
+          ],
+          "bold": false,
+          "codigo": "1"
+        },
+        {
+          "rawLabel": "Generali",
+          "values": [
+            "8.500.000",
+            "Lega Serie B"
+          ],
+          "bold": false,
+          "codigo": "2"
+        },
+        {
+          "rawLabel": "Generali",
+          "values": [
+            "800.000",
+            "Lega Serie B"
+          ],
+          "bold": false,
+          "codigo": "3"
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "15.546.400",
+            ""
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "columns": [
+        "Calciatore",
+        "Data nascita",
+        "Età",
+        "Data Inizio",
+        "Data Fine",
+        "Data Acquisto",
+        "Società (Provenienza)",
+        "Data Cessione",
+        "Società (Destinazione)",
+        "Costo storico (1)",
+        "Fondo ammortamento (2)",
+        "Netto (3)",
+        "Acquisti (4)",
+        "Cessioni (5)",
+        "Ammort.ti (6)",
+        "F.do ammortamento utilizzo (7)",
+        "Svalutaz. (8)",
+        "Minus. (9)",
+        "Plus. (10)",
+        "Costo storico (1+4-5) (11)",
+        "F.do amm.to (2+6-7) (12)",
+        "Netto (11-12) (13)",
+        "Compenso Agenti",
+        "Altri costi acquisizione",
+        "Valore sell on fee"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ansaldi Cristian Daniel",
+          "values": [
+            "20/09/86",
+            "36",
+            "22/08/22",
+            "30/06/23",
+            "22/08/22",
+            "Svincolato",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "275.000",
+            "",
+            "115.974",
+            "",
+            "-",
+            "-",
+            "-",
+            "275.000",
+            "115.974",
+            "159.026",
+            "275.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adorante Andrea",
+          "values": [
+            "05/02/00",
+            "22",
+            "28/06/19",
+            "30/06/23",
+            "28/06/19",
+            "F.C. INTERNAZIONALE MILANO SPA",
+            "13/07/22",
+            "TRIESTINA",
+            "4.141.050",
+            "2.568.343",
+            "1.572.707",
+            "-",
+            "-",
+            "551.947",
+            "3.120.290",
+            "",
+            "1.006.660",
+            "-",
+            "-",
+            "-",
+            "-",
+            "88.700",
+            "-",
+            "25%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baraye Yves Bertand",
+          "values": [
+            "22/06/92",
+            "30",
+            "10/08/16",
+            "30/06/21",
+            "00/01/00",
+            "Svincolato",
+            "",
+            "",
+            "218.400",
+            "218.400",
+            "-",
+            "",
+            "",
+            "",
+            "218.400",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Borriello Francesco",
+          "values": [
+            "25/07/05",
+            "17",
+            "31/01/22",
+            "30/06/24",
+            "30/01/22",
+            "CATANIA",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "150.000",
+            "-",
+            "56.867",
+            "",
+            "-",
+            "-",
+            "-",
+            "150.000",
+            "56.867",
+            "93.133",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Basili Damiano",
+          "values": [
+            "02/02/04",
+            "18",
+            "09/08/21",
+            "30/06/24",
+            "09/08/21",
+            "",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "40.000",
+            "-",
+            "15.982",
+            "",
+            "-",
+            "-",
+            "-",
+            "40.000",
+            "15.982",
+            "24.018",
+            "40.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Buffon Gianluigi",
+          "values": [
+            "28/01/78",
+            "44",
+            "01/07/21",
+            "30/06/24",
+            "01/07/21",
+            "F.C. JUVENTUS SPA",
+            "",
+            "",
+            "400.000",
+            "100.412",
+            "299.588",
+            "200.000",
+            "-",
+            "249.220",
+            "",
+            "-",
+            "-",
+            "-",
+            "600.000",
+            "349.632",
+            "250.368",
+            "600.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Castaldo Antonio",
+          "values": [
+            "14/02/06",
+            "16",
+            "07/09/20",
+            "30/06/25",
+            "07/09/20",
+            "A.S. CITTADELLA S.R.L.",
+            "",
+            "",
+            "15.000",
+            "3.416",
+            "11.584",
+            "-",
+            "-",
+            "3.002",
+            "",
+            "-",
+            "-",
+            "-",
+            "15.000",
+            "6.418",
+            "8.582",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carannante Gabriele",
+          "values": [
+            "27/02/99",
+            "23",
+            "27/06/19",
+            "30/06/21",
+            "197/2018",
+            "Svincolato",
+            "",
+            "",
+            "66.443",
+            "66.443",
+            "",
+            "",
+            "",
+            "",
+            "66.443",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cavazza Paolo",
+          "values": [
+            "17/01/03",
+            "19",
+            "02/09/19",
+            "30/06/23",
+            "02/09/19",
+            "CARPI F.C. 1909 SRL",
+            "",
+            "",
+            "220.000",
+            "134.150",
+            "85.850",
+            "-",
+            "-",
+            "38.007",
+            "",
+            "-",
+            "-",
+            "-",
+            "220.000",
+            "172.157",
+            "47.843",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cheddira Walid",
+          "values": [
+            "22/01/98",
+            "24",
+            "04/07/19",
+            "30/06/24",
+            "04/07/19",
+            "SANGIUSTESE",
+            "30/06/22",
+            "S.S.C. BARI SPA",
+            "223.400",
+            "98.505",
+            "124.895",
+            "-",
+            "150.000",
+            "24.678",
+            "123.183",
+            "-",
+            "",
+            "49.783",
+            "-",
+            "-",
+            "-",
+            "25.000",
+            "-",
+            "5%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cipolletti Davide",
+          "values": [
+            "30/03/01",
+            "21",
+            "31/01/20",
+            "30/06/24",
+            "31/01/20",
+            "DELFINO PESCARA 1936 SPA",
+            "",
+            "",
+            "1.210.000",
+            "524.642",
+            "685.358",
+            "105.958",
+            "-",
+            "316.179",
+            "-",
+            "448.209",
+            "-",
+            "-",
+            "1.315.958",
+            "840.821",
+            "475.137",
+            "40.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Circati Alessandro",
+          "values": [
+            "10/10/03",
+            "19",
+            "10/01/22",
+            "30/06/24",
+            "10/01/22",
+            "Svincolato",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "128.671",
+            "-",
+            "51.602",
+            "",
+            "-",
+            "-",
+            "-",
+            "128.671",
+            "51.602",
+            "77.069",
+            "30.000",
+            "98.671",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Colombi Simone",
+          "values": [
+            "01/07/91",
+            "31",
+            "12/07/19",
+            "30/06/23",
+            "12/07/19",
+            "CARPI F.C. 1909 SRL",
+            "19/07/22",
+            "REGGINA 1914 S.R.L.",
+            "181.000",
+            "87.848",
+            "93.152",
+            "-",
+            "-",
+            "34.013",
+            "121.861",
+            "",
+            "59.139",
+            "-",
+            "-",
+            "-",
+            "-",
+            "130.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Corvi Edoardo",
+          "values": [
+            "23/03/01",
+            "21",
+            "01/07/20",
+            "30/06/24",
+            "01/07/20",
+            "sett. Giovanile",
+            "",
+            "",
+            "35.800",
+            "5.983",
+            "29.817",
+            "-",
+            "-",
+            "11.882",
+            "",
+            "-",
+            "-",
+            "-",
+            "35.800",
+            "17.865",
+            "17.935",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cucci Matteo",
+          "values": [
+            "20/02/01",
+            "21",
+            "31/01/20",
+            "30/06/24",
+            "31/01/20",
+            "U.S. LECCE SPA",
+            "",
+            "",
+            "720.000",
+            "312.184",
+            "407.816",
+            "-",
+            "-",
+            "162.947",
+            "",
+            "-",
+            "-",
+            "-",
+            "720.000",
+            "475.131",
+            "244.869",
+            "-",
+            "-",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "De Rinaldis Matteo",
+          "values": [
+            "01/04/03",
+            "19",
+            "26/01/22",
+            "30/06/24",
+            "26/01/22",
+            "PARMA CALCIO 1913 SRL",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "27.766",
+            "-",
+            "6.583",
+            "",
+            "-",
+            "-",
+            "-",
+            "27.766",
+            "6.583",
+            "21.183",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Delprato Enrico",
+          "values": [
+            "10/11/99",
+            "23",
+            "31/08/21",
+            "30/06/26",
+            "01/07/22",
+            "ATALANTA B.C. SPA",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "3.150.000",
+            "-",
+            "396.715",
+            "",
+            "-",
+            "-",
+            "-",
+            "3.150.000",
+            "396.715",
+            "2.753.285",
+            "400.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Golfo Francesco Matteo",
+          "values": [
+            "05/09/94",
+            "28",
+            "05/07/18",
+            "30/06/23",
+            "05/07/18",
+            "PIANESE",
+            "01/08/22",
+            "AZ PICERNO srl",
+            "119.200",
+            "65.131",
+            "54.069",
+            "-",
+            "-",
+            "17.062",
+            "82.192",
+            "",
+            "27.008",
+            "-",
+            "-",
+            "-",
+            "-",
+            "50.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Grassi Alberto",
+          "values": [
+            "07/03/95",
+            "27",
+            "09/07/19",
+            "30/06/24",
+            "09/07/19",
+            "S.S.C. NAPOLI S.P.A.",
+            "",
+            "",
+            "9.126.000",
+            "4.452.790",
+            "4.673.210",
+            "(200.000)",
+            "-",
+            "1.737.503",
+            "",
+            "-",
+            "-",
+            "-",
+            "8.926.000",
+            "6.190.293",
+            "2.735.707",
+            "676.000",
+            "-",
+            "20%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Iacoponi Daniele",
+          "values": [
+            "25/03/02",
+            "20",
+            "05/07/21",
+            "30/06/25",
+            "05/07/21",
+            "AREZZO",
+            "",
+            "",
+            "500.000",
+            "110.908",
+            "389.092",
+            "22.500",
+            "-",
+            "113.650",
+            "",
+            "-",
+            "-",
+            "-",
+            "522.500",
+            "224.558",
+            "297.942",
+            "500.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Iacoponi Simone",
+          "values": [
+            "30/04/87",
+            "35",
+            "31/01/17",
+            "30/06/23",
+            "31/01/17",
+            "VIRTUS ENTELLA S.R.L.",
+            "31/01/22",
+            "",
+            "90.000",
+            "70.902",
+            "19.098",
+            "30.000",
+            "-",
+            "1.061",
+            "71.963",
+            "",
+            "48.037",
+            "-",
+            "-",
+            "-",
+            "-",
+            "20.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inglese Roberto",
+          "values": [
+            "12/11/91",
+            "31",
+            "16/07/19",
+            "30/06/24",
+            "16/07/19",
+            "S.S.C. NAPOLI S.P.A.",
+            "",
+            "",
+            "21.829.000",
+            "10.744.949",
+            "11.084.051",
+            "129.000",
+            "-",
+            "4.447.499",
+            "",
+            "-",
+            "-",
+            "-",
+            "21.958.000",
+            "15.192.448",
+            "6.765.552",
+            "1.958.000",
+            "-",
+            "25%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kasa Redi",
+          "values": [
+            "01/09/01",
+            "21",
+            "01/07/20",
+            "30/06/22",
+            "01/07/20",
+            "sett. Giovanile",
+            "",
+            "",
+            "19.705",
+            "13.161",
+            "6.544",
+            "-",
+            "-",
+            "6.544",
+            "",
+            "-",
+            "-",
+            "-",
+            "19.705",
+            "19.705",
+            "-",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lanini Eric",
+          "values": [
+            "25/02/94",
+            "28",
+            "31/01/20",
+            "30/06/24",
+            "31/01/20",
+            "F.C. JUVENTUS SPA",
+            "",
+            "",
+            "2.960.000",
+            "1.177.299",
+            "1.782.701",
+            "-",
+            "-",
+            "712.298",
+            "",
+            "-",
+            "-",
+            "-",
+            "2.960.000",
+            "1.889.596",
+            "1.070.404",
+            "50.000",
+            "-",
+            "10%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Laraspata Michele",
+          "values": [
+            "02/06/01",
+            "21",
+            "31/01/20",
+            "30/06/24",
+            "31/01/20",
+            "A.S.D. NICK CALCIO BARI",
+            "30/08/22",
+            "",
+            "935.030",
+            "402.807",
+            "532.223",
+            "-",
+            "-",
+            "140.797",
+            "543.603",
+            "",
+            "391.427",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mallamo Andrea",
+          "values": [
+            "22/10/02",
+            "20",
+            "26/07/21",
+            "30/06/24",
+            "26/07/21",
+            "ATALANTA B.C. SPA",
+            "",
+            "",
+            "0",
+            "0",
+            "-",
+            "25.000",
+            "-",
+            "4.559",
+            "",
+            "-",
+            "-",
+            "-",
+            "25.000",
+            "4.559",
+            "20.441",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Martella Alessandro",
+          "values": [
+            "30/11/00",
+            "22",
+            "28/06/19",
+            "30/06/24",
+            "28/06/19",
+            "DELFINO PESCARA 1936 SPA",
+            "",
+            "",
+            "530.030",
+            "260.662",
+            "269.368",
+            "13.900",
+            "-",
+            "113.183",
+            "-",
+            "160.446",
+            "-",
+            "-",
+            "543.930",
+            "373.845",
+            "170.085",
+            "-",
+            "-",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Napoletano Paolo",
+          "values": [
+            "04/02/02",
+            "20",
+            "31/01/19",
+            "30/06/24",
+            "31/01/19",
+            "DELFINO PESCARA 1936 SPA",
+            "",
+            "",
+            "1.009.578",
+            "589.358",
+            "420.220",
+            "38.665",
+            "-",
+            "178.386",
+            "",
+            "-",
+            "-",
+            "-",
+            "1.048.243",
+            "767.744",
+            "280.499",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Palmucci Stefano",
+          "values": [
+            "22/05/01",
+            "21",
+            "31/01/20",
+            "30/06/24",
+            "31/01/20",
+            "DELFINO PESCARA 1936 SPA",
+            "",
+            "",
+            "3.161.241",
+            "1.362.541",
+            "1.798.700",
+            "118.125",
+            "-",
+            "765.888",
+            "",
+            "-",
+            "-",
+            "-",
+            "3.279.366",
+            "2.128.430",
+            "1.150.936",
+            "120.000",
+            "-",
+            "0%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pavone Fabian",
+          "values": [
+            "05/02/00",
+            "22",
+            "28/06/19",
+            "30/06/24",
+            "28/06/19",
+            "DELFINO PESCARA 1936 SPA",
+            "",
+            "",
+            "1.866.676",
+            "922.387",
+            "944.289",
+            "53.100",
+            "-",
+            "390.703",
+            "",
+            "-",
+            "-",
+            "-",
+            "1.919.776",
+            "1.313.090",
+            "606.686",
+            "-",
+            "-",
+            "50%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pezzella Giuseppe",
+          "values": [
+            "29/11/97",
+            "25",
+            "27/08/19",
+            "30/06/24",
+            "27/08/19",
+            "UDINESE CALCIO SPA",
+            "",
+            "",
+            "6.250.000",
+            "2.920.084",
+            "3.329.916",
+            "-",
+            "-",
+            "1.330.504",
+            "",
+            "-",
+            "-",
+            "-",
+            "6.250.000",
+            "4.250.588",
+            "1.999.412",
+            "250.000",
+            "-",
+            "10%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Primavera Luca",
+          "values": [
+            "08/04/05",
+            "17",
+            "17/08/21",
+            "30/06/24",
+            "17/08/21",
+            "DELFINO PESCARA 1936 SPA",
+            "",
+            "",
+            "190.800",
+            "25.796",
+            "165.004",
+            "-",
+            "-",
+            "65.929",
+            "",
+            "-",
+            "-",
+            "-",
+            "190.800",
+            "91.725",
+            "99.075",
+            "20.800",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Romagnoli Simone",
+          "values": [
+            "09/02/90",
+            "32",
+            "24/06/22",
+            "30/06/24",
+            "24/06/22",
+            "EMPOLI F.B.C. S.P.A.",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "300.000",
+            "-",
+            "75.513",
+            "-",
+            "62.344",
+            "-",
+            "-",
+            "300.000",
+            "75.513",
+            "224.487",
+            "300.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rinaldi Filippo",
+          "values": [
+            "04/12/02",
+            "20",
+            "31/12/20",
+            "30/06/25",
+            "31/12/20",
+            "sett. Giovanile",
+            "",
+            "",
+            "133.100",
+            "20.954",
+            "112.146",
+            "27.000",
+            "-",
+            "36.421",
+            "",
+            "-",
+            "-",
+            "-",
+            "160.100",
+            "57.375",
+            "102.725",
+            "75.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rispoli Andrea",
+          "values": [
+            "29/09/88",
+            "34",
+            "09/12/21",
+            "30/06/22",
+            "09/12/21",
+            "0",
+            "",
+            "",
+            "0",
+            "-",
+            "-",
+            "-",
+            "-",
+            "0",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rossi Alberto",
+          "values": [
+            "22/07/03",
+            "19",
+            "31/12/21",
+            "30/06/23",
+            "01/07/21",
+            "",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "27.766",
+            "-",
+            "13.448",
+            "-",
+            "11.866",
+            "-",
+            "-",
+            "27.766",
+            "13.448",
+            "14.318",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Santurro Antonio",
+          "values": [
+            "29/02/92",
+            "30",
+            "03/11/22",
+            "30/06/23",
+            "31/10/22",
+            "PARMA CALCIO 1913 SRL",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "0",
+            "-",
+            "0",
+            "",
+            "-",
+            "-",
+            "",
+            "0",
+            "0",
+            "-",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schiattarella Pasquale",
+          "values": [
+            "30/05/87",
+            "35",
+            "07/08/21",
+            "30/06/23",
+            "07/08/21",
+            "BENEVENTO CALCIO S.R.L.",
+            "01/09/22",
+            "BENEVENTO CALCIO S.R.L.",
+            "235.000",
+            "49.581",
+            "185.419",
+            "100.000",
+            "-",
+            "82.989",
+            "132.569",
+            "",
+            "202.431",
+            "-",
+            "-",
+            "-",
+            "-",
+            "335.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sepe Luigi",
+          "values": [
+            "08/06/91",
+            "31",
+            "09/07/19",
+            "30/06/24",
+            "09/07/19",
+            "S.S.C. NAPOLI S.P.A.",
+            "22/05/22",
+            "US SALERNITANA SPA",
+            "4.580.000",
+            "2.292.317",
+            "2.287.683",
+            "-",
+            "1.000",
+            "452.013",
+            "2.744.330",
+            "",
+            "1.534.670",
+            "-",
+            "-",
+            "-",
+            "-",
+            "580.000",
+            "-",
+            "15%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Siligardi Luca",
+          "values": [
+            "26/01/88",
+            "34",
+            "17/07/17",
+            "30/06/22",
+            "17/07/17",
+            "HELLAS VERONA F.C. S.P.A.",
+            "31/01/22",
+            "FERALPISALO SRL",
+            "551.000",
+            "498.946",
+            "52.054",
+            "-",
+            "-",
+            "8.676",
+            "507.622",
+            "",
+            "43.378",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sprocati Mattia",
+          "values": [
+            "30/11/93",
+            "29",
+            "04/07/19",
+            "30/06/23",
+            "04/07/19",
+            "S.S. LAZIO S.P.A.",
+            "25/05/22",
+            "",
+            "3.080.000",
+            "1.911.070",
+            "1.168.930",
+            "45.000",
+            "-",
+            "321.724",
+            "2.232.794",
+            "",
+            "892.206",
+            "-",
+            "-",
+            "-",
+            "-",
+            "80.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tutino Gennaro",
+          "values": [
+            "20/08/96",
+            "26",
+            "01/08/21",
+            "30/06/25",
+            "03/09/21",
+            "S.S.C. NAPOLI S.P.A.",
+            "",
+            "",
+            "5.750.000",
+            "568.102",
+            "5.181.898",
+            "-",
+            "-",
+            "1.478.222",
+            "",
+            "-",
+            "-",
+            "-",
+            "5.750.000",
+            "2.046.323",
+            "3.703.677",
+            "750.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vaglica Giovanni",
+          "values": [
+            "06/02/03",
+            "19",
+            "31/12/20",
+            "30/06/25",
+            "31/12/20",
+            "sett. Giovanile",
+            "",
+            "",
+            "175.000",
+            "21.935",
+            "153.065",
+            "19.110",
+            "-",
+            "46.741",
+            "",
+            "-",
+            "-",
+            "-",
+            "194.110",
+            "68.676",
+            "125.434",
+            "175.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amoran Toluwanimi Peter",
+          "values": [
+            "22/05/04",
+            "18",
+            "01/09/22",
+            "30/06/25",
+            "01/09/22",
+            "OSTERSUNDS FK",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "345.000",
+            "-",
+            "40.706",
+            "",
+            "-",
+            "-",
+            "-",
+            "345.000",
+            "40.706",
+            "304.294",
+            "45.000",
+            "14.286",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Azevedo Junior Hernani",
+          "values": [
+            "27/03/94",
+            "28",
+            "11/07/19",
+            "30/06/23",
+            "11/07/19",
+            "FC ZENIT",
+            "",
+            "",
+            "6.933.095",
+            "4.248.217",
+            "2.684.878",
+            "-",
+            "-",
+            "1.793.203",
+            "",
+            "-",
+            "-",
+            "-",
+            "6.933.095",
+            "6.041.420",
+            "891.675",
+            "1.148.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bernabe' Garcia Adrian",
+          "values": [
+            "26/05/01",
+            "21",
+            "07/01/22",
+            "30/06/24",
+            "07/01/22",
+            "Manchester City",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "180.000",
+            "-",
+            "72.097",
+            "",
+            "-",
+            "-",
+            "-",
+            "180.000",
+            "72.097",
+            "107.903",
+            "-",
+            "180.000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Buayi Kiala Nathan",
+          "values": [
+            "29/02/04",
+            "18",
+            "01/07/22",
+            "30/06/26",
+            "10/05/22",
+            "LOSC LILLE",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "530.000",
+            "-",
+            "66.749",
+            "",
+            "-",
+            "-",
+            "-",
+            "530.000",
+            "66.749",
+            "463.251",
+            "340.000",
+            "190.000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balogh Botond",
+          "values": [
+            "06/06/02",
+            "20",
+            "15/10/19",
+            "30/06/25",
+            "15/10/19",
+            "Svincolato",
+            "",
+            "",
+            "251.864",
+            "63.065",
+            "188.799",
+            "-",
+            "-",
+            "53.858",
+            "",
+            "-",
+            "-",
+            "-",
+            "251.864",
+            "116.923",
+            "134.941",
+            "160.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benedyczak Adrian Dawid",
+          "values": [
+            "24/11/00",
+            "22",
+            "01/07/21",
+            "30/06/25",
+            "01/07/21",
+            "MKS POGON SZCZECIN S.A.",
+            "",
+            "",
+            "2.417.356",
+            "300.822",
+            "2.116.534",
+            "201.736",
+            "-",
+            "661.324",
+            "",
+            "-",
+            "-",
+            "-",
+            "2.619.092",
+            "962.146",
+            "1.656.946",
+            "400.000",
+            "82.847",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bonny Ange-Yoan Laurent",
+          "values": [
+            "25/10/03",
+            "19",
+            "28/08/21",
+            "30/06/24",
+            "28/08/21",
+            "Svincolato",
+            "",
+            "",
+            "482.740",
+            "58.189",
+            "424.550",
+            "-",
+            "-",
+            "169.634",
+            "",
+            "-",
+            "-",
+            "-",
+            "482.740",
+            "227.823",
+            "254.917",
+            "300.000",
+            "182.740",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Brugman Gaston",
+          "values": [
+            "07/09/92",
+            "30",
+            "23/01/20",
+            "30/06/23",
+            "23/01/20",
+            "DELFINO PESCARA 1936 SPA",
+            "01/07/22",
+            "LA GALAXY",
+            "2.550.000",
+            "1.427.398",
+            "1.122.602",
+            "-",
+            "-",
+            "370.768",
+            "1.798.165",
+            "",
+            "751.835",
+            "-",
+            "-",
+            "-",
+            "-",
+            "150.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Busi Maxime",
+          "values": [
+            "14/10/99",
+            "23",
+            "08/10/20",
+            "30/06/25",
+            "08/10/20",
+            "SPORTING DU PAYS DE CHARLEROI",
+            "01/05/22",
+            "STADE DE REIMS",
+            "6.881.250",
+            "1.805.110",
+            "5.076.140",
+            "-",
+            "2.000.000",
+            "716.070",
+            "2.521.180",
+            "",
+            "2.110.070",
+            "-",
+            "-",
+            "-",
+            "-",
+            "885.000",
+            "-",
+            "10%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charpentier Gabriel Andre",
+          "values": [
+            "17/05/99",
+            "23",
+            "30/08/22",
+            "30/06/25",
+            "30/08/22",
+            "GENOA CRICKET AND F.C.SPA",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "1.497.169",
+            "-",
+            "179.198",
+            "",
+            "-",
+            "-",
+            "-",
+            "1.497.169",
+            "179.198",
+            "1.317.971",
+            "50.000",
+            "47.169",
+            "10%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Chichizola Leandro",
+          "values": [
+            "27/03/90",
+            "32",
+            "14/07/22",
+            "30/06/24",
+            "14/07/22",
+            "A. C. PERUGIA CALCIO S.R.L.",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "937.622",
+            "-",
+            "197.132",
+            "",
+            "-",
+            "-",
+            "-",
+            "937.622",
+            "197.132",
+            "740.490",
+            "100.000",
+            "37.622",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Coulibaly Aboubacar-Sama",
+          "values": [
+            "28/02/06",
+            "16",
+            "09/03/22",
+            "30/06/25",
+            "09/03/22",
+            "AULNAY C.S.L. FC",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "47.863",
+            "-",
+            "6.722",
+            "",
+            "-",
+            "-",
+            "-",
+            "47.863",
+            "6.722",
+            "41.141",
+            "-",
+            "47.863",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Camara Drissa",
+          "values": [
+            "18/02/02",
+            "20",
+            "31/12/20",
+            "30/06/25",
+            "31/12/20",
+            "0",
+            "",
+            "",
+            "0",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "",
+            "",
+            "0",
+            "0",
+            "-",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cobbaut Elias",
+          "values": [
+            "24/11/77",
+            "45",
+            "25/08/21",
+            "30/06/25",
+            "29/05/22",
+            "RSC Anderlecht",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "3.462.438",
+            "-",
+            "987.718",
+            "",
+            "-",
+            "-",
+            "-",
+            "3.462.438",
+            "987.718",
+            "2.474.720",
+            "350.000",
+            "112.438",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Coulibaly Woyo",
+          "values": [
+            "26/05/99",
+            "23",
+            "29/08/21",
+            "30/06/25",
+            "29/08/21",
+            "SASP HC FOOTBALL",
+            "",
+            "",
+            "1.500.000",
+            "134.711",
+            "1.365.289",
+            "-",
+            "-",
+            "389.471",
+            "",
+            "-",
+            "-",
+            "-",
+            "1.500.000",
+            "524.182",
+            "975.818",
+            "-",
+            "75.000",
+            "7.5%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cyprien Wylan",
+          "values": [
+            "29/01/95",
+            "27",
+            "03/10/20",
+            "30/06/25",
+            "03/10/20",
+            "OGC NICE",
+            "",
+            "",
+            "8.650.000",
+            "2.228.586",
+            "6.421.414",
+            "100.000",
+            "-",
+            "1.845.368",
+            "",
+            "-",
+            "-",
+            "-",
+            "8.750.000",
+            "4.073.955",
+            "4.676.045",
+            "1.100.000",
+            "-",
+            "10%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Da Cruz Alessio",
+          "values": [
+            "18/01/97",
+            "25",
+            "09/01/18",
+            "30/06/23",
+            "09/01/18",
+            "NOVARA CALCIO SPA",
+            "12/07/22",
+            "YELLOW RED K.V. MECHELEN",
+            "3.475.000",
+            "2.786.712",
+            "688.288",
+            "50.000",
+            "-",
+            "243.624",
+            "3.030.336",
+            "",
+            "494.664",
+            "-",
+            "-",
+            "-",
+            "-",
+            "225.000",
+            "-",
+            "15%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dierckx Daan",
+          "values": [
+            "24/02/03",
+            "19",
+            "04/01/21",
+            "30/06/25",
+            "04/01/21",
+            "",
+            "",
+            "",
+            "128.000",
+            "24.678",
+            "103.322",
+            "-",
+            "-",
+            "29.474",
+            "",
+            "-",
+            "-",
+            "-",
+            "128.000",
+            "54.152",
+            "73.848",
+            "128.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estevez Alvarez Nahuel",
+          "values": [
+            "14/11/95",
+            "27",
+            "07/07/22",
+            "30/06/25",
+            "06/07/22",
+            "F.C. CROTONE S.R.L.",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "1.285.000",
+            "-",
+            "209.844",
+            "",
+            "-",
+            "-",
+            "-",
+            "1.285.000",
+            "209.844",
+            "1.075.156",
+            "235.000",
+            "50.000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fatu Rares Daniel",
+          "values": [
+            "17/01/06",
+            "16",
+            "18/01/22",
+            "30/06/24",
+            "18/01/22",
+            "",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "42.589",
+            "-",
+            "17.137",
+            "",
+            "-",
+            "-",
+            "-",
+            "42.589",
+            "17.137",
+            "25.452",
+            "-",
+            "42.589",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flex Flintholm Frederik",
+          "values": [
+            "11/03/04",
+            "18",
+            "17/11/21",
+            "30/06/25",
+            "17/11/21",
+            "",
+            "",
+            "",
+            "20.000",
+            "4.000",
+            "16.000",
+            "92.808",
+            "-",
+            "15.422",
+            "",
+            "-",
+            "-",
+            "-",
+            "112.808",
+            "19.422",
+            "93.386",
+            "85.000",
+            "7.808",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fiath Bence",
+          "values": [
+            "18/01/04",
+            "18",
+            "27/01/20",
+            "30/06/23",
+            "27/01/20",
+            "VASAS ACADEMIA",
+            "",
+            "",
+            "100.896",
+            "75.324",
+            "25.572",
+            "-",
+            "-",
+            "25.572",
+            "",
+            "-",
+            "-",
+            "-",
+            "100.896",
+            "100.896",
+            "-",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hainaut Antoine",
+          "values": [
+            "18/02/02",
+            "20",
+            "29/01/22",
+            "30/06/26",
+            "29/01/22",
+            "US BOULOGNE",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "555.244",
+            "-",
+            "97.763",
+            "",
+            "-",
+            "-",
+            "-",
+            "555.244",
+            "97.763",
+            "457.481",
+            "230.000",
+            "5.244",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juric Stanko",
+          "values": [
+            "16/08/96",
+            "26",
+            "01/07/21",
+            "30/06/25",
+            "01/07/21",
+            "HNK HAJDUC SPLIT",
+            "",
+            "",
+            "1.899.605",
+            "248.052",
+            "1.651.554",
+            "50.000",
+            "-",
+            "485.396",
+            "",
+            "-",
+            "-",
+            "-",
+            "1.949.605",
+            "733.448",
+            "1.216.157",
+            "300.000",
+            "81.986",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Karamoh Yann",
+          "values": [
+            "08/07/98",
+            "24",
+            "16/07/19",
+            "30/06/23",
+            "16/07/19",
+            "F.C. INTERNAZIONALE MILANO SPA",
+            "01/09/22",
+            "TORINO",
+            "8.006.768",
+            "5.021.682",
+            "2.985.086",
+            "-",
+            "-",
+            "1.325.488",
+            "6.347.170",
+            "",
+            "1.659.598",
+            "-",
+            "-",
+            "-",
+            "-",
+            "560.000",
+            "-",
+            "45%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kone Moussa",
+          "values": [
+            "19/11/00",
+            "22",
+            "01/07/19",
+            "30/06/24",
+            "01/07/19",
+            "sett. Giovanile",
+            "31/08/22",
+            "",
+            "36.542",
+            "9.173",
+            "27.369",
+            "40.000",
+            "-",
+            "10.713",
+            "19.886",
+            "",
+            "56.656",
+            "-",
+            "-",
+            "-",
+            "-",
+            "40.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kucka Juraj",
+          "values": [
+            "26/02/87",
+            "35",
+            "15/01/19",
+            "30/06/22",
+            "15/01/19",
+            "TRABZONSPOR FUTBOL",
+            "",
+            "",
+            "6.410.000",
+            "5.484.179",
+            "925.821",
+            "-",
+            "-",
+            "925.821",
+            "",
+            "-",
+            "-",
+            "-",
+            "6.410.000",
+            "6.410.000",
+            "-",
+            "1.412.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kurtic Jasmin",
+          "values": [
+            "10/01/89",
+            "33",
+            "10/01/20",
+            "30/06/23",
+            "10/01/20",
+            "SPAL",
+            "",
+            "",
+            "5.260.000",
+            "3.030.667",
+            "2.229.333",
+            "-",
+            "-",
+            "1.488.949",
+            "",
+            "-",
+            "-",
+            "-",
+            "5.260.000",
+            "4.519.616",
+            "740.384",
+            "860.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Larangeira Danilo",
+          "values": [
+            "10/05/84",
+            "38",
+            "31/08/21",
+            "30/06/22",
+            "31/08/21",
+            "BOLOGNA F.C.SPA",
+            "",
+            "",
+            "225.000",
+            "90.594",
+            "134.406",
+            "0",
+            "-",
+            "134.406",
+            "",
+            "-",
+            "-",
+            "-",
+            "225.000",
+            "225.000",
+            "-",
+            "225.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Laurini Vincent",
+          "values": [
+            "10/06/89",
+            "33",
+            "08/07/19",
+            "30/06/23",
+            "08/07/19",
+            "FIORENTINA",
+            "01/09/22",
+            "",
+            "440.000",
+            "282.326",
+            "157.674",
+            "100.000",
+            "-",
+            "70.342",
+            "352.668",
+            "",
+            "187.332",
+            "-",
+            "-",
+            "-",
+            "-",
+            "530.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lopes Andrè",
+          "values": [
+            "18/03/03",
+            "19",
+            "20/05/19",
+            "30/06/23",
+            "20/05/19",
+            "SC FARENSE",
+            "01/09/22",
+            "",
+            "21.000",
+            "12.074",
+            "8.926",
+            "4.000",
+            "-",
+            "5.739",
+            "17.814",
+            "",
+            "7.186",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maliszewski Bartolomiej",
+          "values": [
+            "12/02/04",
+            "18",
+            "05/10/20",
+            "30/06/23",
+            "05/10/20",
+            "JAGIELLONIA",
+            "",
+            "",
+            "500.000",
+            "227.054",
+            "272.946",
+            "-",
+            "-",
+            "182.298",
+            "-",
+            "75.123",
+            "-",
+            "-",
+            "500.000",
+            "409.352",
+            "90.648",
+            "-",
+            "-",
+            "15%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Man Dennis",
+          "values": [
+            "26/08/98",
+            "24",
+            "28/01/21",
+            "30/06/25",
+            "28/01/21",
+            "FC FCSB",
+            "",
+            "",
+            "12.000.000",
+            "2.499.690",
+            "9.500.310",
+            "-",
+            "-",
+            "2.710.120",
+            "",
+            "-",
+            "-",
+            "-",
+            "12.000.000",
+            "5.209.810",
+            "6.790.190",
+            "1.000.000",
+            "550.000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Manisa Lenny",
+          "values": [
+            "04/02/02",
+            "20",
+            "30/08/22",
+            "30/06/23",
+            "30/08/22",
+            "Paris St Germain FC",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "90.000",
+            "-",
+            "36.590",
+            "",
+            "-",
+            "-",
+            "-",
+            "90.000",
+            "36.590",
+            "53.410",
+            "90.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mir Garcia Matias",
+          "values": [
+            "26/05/03",
+            "19",
+            "15/04/21",
+            "30/06/24",
+            "15/04/21",
+            "CA PENAROL",
+            "",
+            "",
+            "279.726",
+            "14.607",
+            "265.119",
+            "-",
+            "-",
+            "105.931",
+            "",
+            "-",
+            "-",
+            "-",
+            "279.726",
+            "120.538",
+            "159.188",
+            "100.000",
+            "180.145",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marsetic Enej",
+          "values": [
+            "04/12/04",
+            "18",
+            "30/01/21",
+            "30/06/23",
+            "30/01/21",
+            "FC KOPER",
+            "",
+            "",
+            "500.000",
+            "190.125",
+            "309.875",
+            "-",
+            "-",
+            "206.963",
+            "",
+            "-",
+            "-",
+            "-",
+            "500.000",
+            "397.087",
+            "102.913",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mihaila Valentin",
+          "values": [
+            "02/02/00",
+            "22",
+            "03/10/20",
+            "30/06/25",
+            "03/10/20",
+            "U CRAIOVA 1948",
+            "",
+            "",
+            "9.124.342",
+            "2.393.251",
+            "6.731.091",
+            "50.000",
+            "-",
+            "1.934.418",
+            "",
+            "-",
+            "-",
+            "-",
+            "9.174.342",
+            "4.327.669",
+            "4.846.673",
+            "638.000",
+            "50.003",
+            "10%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Oosterwolde Jayden",
+          "values": [
+            "26/04/01",
+            "21",
+            "28/01/22",
+            "30/06/25",
+            "28/01/22",
+            "FC TWENTE",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "3.300.000",
+            "-",
+            "949.753",
+            "",
+            "-",
+            "-",
+            "-",
+            "3.300.000",
+            "949.753",
+            "2.350.247",
+            "300.000",
+            "112.438",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Osorio Jordan Hernando",
+          "values": [
+            "10/05/94",
+            "28",
+            "05/10/20",
+            "30/06/24",
+            "05/10/20",
+            "FC DO PORTO",
+            "",
+            "",
+            "4.129.470",
+            "1.372.744",
+            "2.756.725",
+            "-",
+            "-",
+            "1.101.480",
+            "",
+            "-",
+            "-",
+            "-",
+            "4.129.470",
+            "2.474.224",
+            "1.655.246",
+            "329.500",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pandev Goran",
+          "values": [
+            "27/07/83",
+            "39",
+            "31/01/22",
+            "30/06/22",
+            "31/01/22",
+            "GENOA CRICKET AND F.C.SPA",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "130.000",
+            "-",
+            "130.000",
+            "",
+            "-",
+            "-",
+            "-",
+            "130.000",
+            "130.000",
+            "-",
+            "130.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Regulfe Alves Bruno Eduardo",
+          "values": [
+            "27/11/81",
+            "41",
+            "12/07/18",
+            "30/06/21",
+            "12/07/18",
+            "Svincolato",
+            "",
+            "",
+            "347.200",
+            "347.200",
+            "",
+            "",
+            "",
+            "",
+            "347.200",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sahitaj Ledjan",
+          "values": [
+            "12/01/04",
+            "18",
+            "23/07/21",
+            "30/06/24",
+            "23/07/21",
+            "Grasshopper Club",
+            "",
+            "",
+            "133.945",
+            "20.098",
+            "113.847",
+            "80.000",
+            "-",
+            "77.454",
+            "",
+            "-",
+            "-",
+            "-",
+            "213.945",
+            "97.552",
+            "116.393",
+            "80.000",
+            "133.945",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sits Dario",
+          "values": [
+            "04/02/04",
+            "18",
+            "01/10/20",
+            "30/06/26",
+            "01/10/20",
+            "FS METTA",
+            "",
+            "",
+            "55.000",
+            "8.075",
+            "46.925",
+            "85.000",
+            "-",
+            "25.661",
+            "",
+            "-",
+            "-",
+            "-",
+            "140.000",
+            "33.736",
+            "106.264",
+            "60.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sohm Simon",
+          "values": [
+            "11/04/01",
+            "21",
+            "01/10/20",
+            "30/06/25",
+            "01/10/20",
+            "FC ZURICH",
+            "",
+            "",
+            "6.350.000",
+            "1.665.454",
+            "4.684.547",
+            "-",
+            "-",
+            "1.336.344",
+            "",
+            "-",
+            "-",
+            "-",
+            "6.350.000",
+            "3.001.798",
+            "3.348.202",
+            "350.000",
+            "-",
+            "15%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tehe Olawale",
+          "values": [
+            "22/02/99",
+            "23",
+            "30/01/20",
+            "30/06/23",
+            "30/01/20",
+            "PONSACCO",
+            "",
+            "",
+            "77.400",
+            "36.603",
+            "40.797",
+            "8.000",
+            "-",
+            "32.591",
+            "",
+            "-",
+            "-",
+            "-",
+            "85.400",
+            "69.194",
+            "16.206",
+            "8.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Traore Aliou Badara",
+          "values": [
+            "08/01/01",
+            "21",
+            "07/09/21",
+            "30/06/22",
+            "07/09/21",
+            "MANCHESTER UTD",
+            "",
+            "",
+            "50.000",
+            "19.426",
+            "30.574",
+            "-",
+            "-",
+            "30.574",
+            "",
+            "-",
+            "-",
+            "-",
+            "50.000",
+            "50.000",
+            "-",
+            "50.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Turk Martin",
+          "values": [
+            "21/08/03",
+            "19",
+            "21/08/19",
+            "30/06/25",
+            "21/08/19",
+            "PARMA CALCIO 1913 SRL",
+            "",
+            "",
+            "335.192",
+            "244.784",
+            "90.408",
+            "-",
+            "-",
+            "90.408",
+            "",
+            "-",
+            "-",
+            "-",
+            "335.192",
+            "335.192",
+            "0",
+            "200.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valenti Lautaro",
+          "values": [
+            "14/01/99",
+            "23",
+            "22/09/20",
+            "30/06/25",
+            "22/09/20",
+            "CLUB ATLETICO LANUS",
+            "",
+            "",
+            "10.530.303",
+            "2.760.049",
+            "7.770.254",
+            "-",
+            "-",
+            "2.216.593",
+            "",
+            "-",
+            "-",
+            "-",
+            "10.530.303",
+            "4.976.642",
+            "5.553.661",
+            "1.000.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vazquez Franco Damian",
+          "values": [
+            "22/02/89",
+            "33",
+            "19/07/21",
+            "30/06/23",
+            "19/07/21",
+            "SIVIGLIA FC",
+            "",
+            "",
+            "1.248.000",
+            "201.290",
+            "1.046.710",
+            "-",
+            "-",
+            "699.087",
+            "",
+            "-",
+            "-",
+            "-",
+            "1.248.000",
+            "900.377",
+            "347.623",
+            "1.248.000",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zadran Roman",
+          "values": [
+            "08/03/05",
+            "17",
+            "01/01/22",
+            "30/06/24",
+            "05/08/21",
+            "MALMO FF",
+            "",
+            "",
+            "-",
+            "-",
+            "-",
+            "76.822",
+            "-",
+            "30.695",
+            "",
+            "-",
+            "-",
+            "-",
+            "76.822",
+            "30.695",
+            "46.127",
+            "-",
+            "76.822",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zagaritis Vasilios",
+          "values": [
+            "04/05/01",
+            "21",
+            "19/01/21",
+            "30/06/24",
+            "19/01/21",
+            "PANATHINAIKOS FC",
+            "",
+            "",
+            "802.652",
+            "218.645",
+            "584.007",
+            "4.500",
+            "-",
+            "234.310",
+            "",
+            "-",
+            "-",
+            "-",
+            "807.152",
+            "452.955",
+            "354.197",
+            "420.000",
+            "7.152",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diritti prest. calc. Sett. Giovanile",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "590.665",
+            "172.407",
+            "418.258",
+            "367.980",
+            "-",
+            "171.522",
+            "-",
+            "21.660",
+            "-",
+            "-",
+            "958.645",
+            "343.928",
+            "614.716",
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "173.265.465",
+            "72.329.065",
+            "100.936.399",
+            "18.540.332",
+            "2.151.000",
+            "39.515.410",
+            "24.399.669",
+            "779.648",
+            "9.472.297",
+            "49.783",
+            "155.258.513",
+            "87.444.806",
+            "67.813.707",
+            "23.430.000",
+            "2.366.768",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 8,
+      "section": "# Commento ed analisi degli indicatori di risultato",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale Attività correnti",
+      "target": "37.301.986",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "21200705"
+    },
+    {
+      "page": 8,
+      "section": "# Commento ed analisi degli indicatori di risultato",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale Attività correnti",
+      "target": "48.150.306",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "34020102"
+    },
+    {
+      "page": 8,
+      "section": "# Commento ed analisi degli indicatori di risultato",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale Capitale Investito",
+      "target": "136.274.063",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "61670091"
+    },
+    {
+      "page": 8,
+      "section": "# Commento ed analisi degli indicatori di risultato",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale Capitale Investito",
+      "target": "174.919.636",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "78619024"
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale Fonti di Finanziamento",
+      "target": "136.273.773",
+      "addendCount": 3,
+      "how": "solo-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale Fonti di Finanziamento",
+      "target": "174.919.635",
+      "addendCount": 3,
+      "how": "solo-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 13,
+      "section": "### Attività di ricerca e sviluppo",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTALE AL 31/12/2022",
+      "target": "1.367",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 13,
+      "section": "### Attività di ricerca e sviluppo",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "TOTALE AL 31/12/2022",
+      "target": "64.907",
+      "addendCount": 3,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 3 rubros enteros)"
+    },
+    {
+      "page": 13,
+      "section": "### Attività di ricerca e sviluppo",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "TOTALE AL 31/12/2022",
+      "target": "300",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 13,
+      "section": "### Attività di ricerca e sviluppo",
+      "likelyRelevant": true,
+      "column": 4,
+      "totalLabel": "TOTALE AL 31/12/2022",
+      "target": "1.653",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTALE AL 31/12/2022",
+      "target": "198",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "TOTALE AL 31/12/2022",
+      "target": "474",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "TOTALE AL 31/12/2022",
+      "target": "570",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 4,
+      "totalLabel": "TOTALE AL 31/12/2022",
+      "target": "2.159",
+      "addendCount": 7,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 7 rubros enteros)"
+    },
+    {
+      "page": 16,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale I",
+      "target": "79.806.489",
+      "addendCount": 18,
+      "closes": false,
+      "diff": "76541484"
+    },
+    {
+      "page": 16,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale I",
+      "target": "113.455.627",
+      "addendCount": 12,
+      "closes": false,
+      "diff": "110135896"
+    },
+    {
+      "page": 17,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale II",
+      "target": "14.306.255",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "-12642287"
+    },
+    {
+      "page": 17,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale II",
+      "target": "9.615.716",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-6938180"
+    },
+    {
+      "page": 17,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALE IMMOBILIZZAZIONI (B)",
+      "skipped": true,
+      "reason": "1 de 9 valor(es) del segmento no parecen números (ej. \"Totale III\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 17,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALE IMMOBILIZZAZIONI (B)",
+      "target": "123.071.343",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-122974973"
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale I",
+      "target": "315.259",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale I",
+      "target": "382.068",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale II",
+      "target": "23.909.184",
+      "addendCount": 13,
+      "closes": false,
+      "diff": "23909474"
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale II",
+      "target": "33.993.209",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "33993209"
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale IV",
+      "target": "15.786.022",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale IV",
+      "target": "13.748.136",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "totalLabel": "TOTALE ATTIVO CIRCOLANTE (C)",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALE RATEI E RISCONTI (D)",
+      "target": "2.054.194",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALE RATEI E RISCONTI (D)",
+      "target": "3.724.880",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "totalLabel": "TOTALE ATTIVO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALE PATRIMONIO NETTO DI GRUPPO (A)",
+      "target": "13.465.084",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "214606956"
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALE PATRIMONIO NETTO DI GRUPPO (A)",
+      "target": "11.723.090",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALE FONDI PER RISCHI E ONERI (B)",
+      "target": "2.741.369",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALE FONDI PER RISCHI E ONERI (B)",
+      "target": "2.327.468",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALE DEBITI (D)",
+      "target": "116.764.452",
+      "addendCount": 27,
+      "closes": false,
+      "diff": "116764452"
+    },
+    {
+      "page": 19,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALE DEBITI (D)",
+      "target": "146.390.164",
+      "addendCount": 24,
+      "closes": false,
+      "diff": "146390164"
+    },
+    {
+      "page": 19,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALE RATEI E RISCONTI (E)",
+      "target": "2.654.810",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALE RATEI E RISCONTI (E)",
+      "target": "13.892.278",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "# Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "totalLabel": "TOTALE PASSIVO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 20,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale altri ricavi e proventi",
+      "target": "31.134.488",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "32507794"
+    },
+    {
+      "page": 20,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale altri ricavi e proventi",
+      "target": "39.306.851",
+      "addendCount": 10,
+      "closes": false,
+      "diff": "40763316"
+    },
+    {
+      "page": 20,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "totalLabel": "TOTALE VALORE DELLA PRODUZIONE (A)",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 20,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale personale",
+      "target": "-54.876.237",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "-16790890"
+    },
+    {
+      "page": 20,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale personale",
+      "target": "-60.383.099",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "-15316469"
+    },
+    {
+      "page": 20,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "-43.656.177",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "-42.759.958",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-0.10000000149011612"
+    },
+    {
+      "page": 20,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "-14.500.608",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-666809"
+    },
+    {
+      "page": 20,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "-9.797.450",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-127467"
+    },
+    {
+      "page": 20,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "totalLabel": "TOTALE COSTI DELLA PRODUZIONE (B)",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 21,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "1.204",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "216.025",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALE PROVENTI E ONERI FINANZIARI (15 + 16 - 17 + - 17-bis)",
+      "target": "-96.083",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-1204"
+    },
+    {
+      "page": 21,
+      "section": "Bilancio Consolidato al 31.12.2022",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALE PROVENTI E ONERI FINANZIARI (15 + 16 - 17 + - 17-bis)",
+      "target": "162.668",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-216025"
+    },
+    {
+      "page": 22,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale Altre rettifiche",
+      "target": "-1.386.704",
+      "addendCount": 22,
+      "closes": false,
+      "diff": "-150534636"
+    },
+    {
+      "page": 22,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale Altre rettifiche",
+      "target": "677.138",
+      "addendCount": 22,
+      "closes": false,
+      "diff": "-83837570"
+    },
+    {
+      "page": 35,
+      "section": "## *Nota Integrativa Attivo* / ### *Immobilizzazioni* / ### *Immobilizzazioni immateriali* / #### *Movimenti delle immobilizzazioni immateriali*",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "79.806.489",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 35,
+      "section": "## *Nota Integrativa Attivo* / ### *Immobilizzazioni* / ### *Immobilizzazioni immateriali* / #### *Movimenti delle immobilizzazioni immateriali*",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "113.455.627",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 35,
+      "section": "## *Nota Integrativa Attivo* / ### *Immobilizzazioni* / ### *Immobilizzazioni immateriali* / #### *Movimenti delle immobilizzazioni immateriali*",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Totale",
+      "target": "-33.649.138",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "14.306.255",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "9.615.715",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Totale",
+      "target": "4.690.540",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "11.267.042",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "4.517.001",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "4.731.899",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Totale",
+      "target": "-214.898",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "Le disponibilità liquide ammontano ad Euro 15.786.022 e sono così costituite:",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "15.786.022",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "Le disponibilità liquide ammontano ad Euro 15.786.022 e sono così costituite:",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "13.748.136",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "Le disponibilità liquide ammontano ad Euro 15.786.022 e sono così costituite:",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Totale",
+      "target": "2.037.886",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 40,
+      "section": "# *Trattamento di fine rapporto lavoro* / ### Informazioni sul trattamento di fine rapporto di lavoro subordinato / # *Debiti* / ## Variazioni e scadenza dei debiti",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "33.104.556",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALE",
+      "target": "10.988.450",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALE",
+      "target": "15.184.877",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTALE",
+      "target": "-4.196.427",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALE",
+      "target": "2.158.309",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALE",
+      "target": "4.239.469",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTALE",
+      "target": "-2.081.160",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALE",
+      "target": "978.365",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALE",
+      "target": "1.820.575",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTALE",
+      "target": "-842.210",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 42,
+      "section": "# Nota Integrativa al Conto Economico Consolidato / ## Valore della produzione",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "32.507.794",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 42,
+      "section": "# Nota Integrativa al Conto Economico Consolidato / ## Valore della produzione",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "40.763.316",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 42,
+      "section": "# Nota Integrativa al Conto Economico Consolidato / ## Valore della produzione",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Totale",
+      "target": "-8.255.522",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 42,
+      "section": "I ricavi delle vendite e prestazioni sono così costituiti:",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "1.373.306",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 42,
+      "section": "I ricavi delle vendite e prestazioni sono così costituiti:",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "1.456.465",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 42,
+      "section": "I ricavi delle vendite e prestazioni sono così costituiti:",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Totale",
+      "target": "-83.159",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 42,
+      "section": "Gli “altri ricavi e proventi” sono così costituiti:",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "31.134.488",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 42,
+      "section": "Gli “altri ricavi e proventi” sono così costituiti:",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "39.306.851",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 42,
+      "section": "Gli “altri ricavi e proventi” sono così costituiti:",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Totale",
+      "target": "-8.172.363",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 44,
+      "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "14.197.493",
+      "addendCount": 14,
+      "closes": true
+    },
+    {
+      "page": 44,
+      "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "12.755.539",
+      "addendCount": 14,
+      "closes": true
+    },
+    {
+      "page": 44,
+      "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Totale",
+      "target": "1.441.954",
+      "addendCount": 14,
+      "closes": true
+    },
+    {
+      "page": 45,
+      "section": "### *Costi per godimento beni di terzi* / ### *Costi per il personale*",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "54.876.237",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 45,
+      "section": "### *Costi per godimento beni di terzi* / ### *Costi per il personale*",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "60.383.099",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 45,
+      "section": "### *Costi per godimento beni di terzi* / ### *Costi per il personale*",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Totale",
+      "target": "-5.506.862",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 45,
+      "section": "### *Ammortamenti e svalutazioni*",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "43.656.177",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 45,
+      "section": "### *Ammortamenti e svalutazioni*",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "42.759.958",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 45,
+      "section": "### *Ammortamenti e svalutazioni*",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Totale",
+      "target": "896.219",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 46,
+      "section": "### *Oneri diversi di gestione*",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "14.500.608",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 46,
+      "section": "### *Oneri diversi di gestione*",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totale",
+      "target": "9.797.451",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 46,
+      "section": "### *Oneri diversi di gestione*",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Totale",
+      "target": "4.703.157",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 48,
+      "section": "## *Informazioni sugli strumenti finanziari emessi dalla società* / ### Importo complessivo degli impegni delle garanzie e delle passività potenziali",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale",
+      "target": "15.546.400",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 8,
+      "totalLabel": "Totale",
+      "target": "173.265.465",
+      "addendCount": 72,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 72 rubros enteros)"
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 9,
+      "totalLabel": "Totale",
+      "target": "72.329.065",
+      "addendCount": 70,
+      "closes": true,
+      "diff": "2",
+      "how": "redondeo (diferencia 2 en 70 rubros enteros)"
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 10,
+      "totalLabel": "Totale",
+      "target": "100.936.399",
+      "addendCount": 66,
+      "closes": true,
+      "diff": "-2",
+      "how": "redondeo (diferencia -2 en 66 rubros enteros)"
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 11,
+      "totalLabel": "Totale",
+      "target": "18.540.332",
+      "addendCount": 53,
+      "closes": true
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 12,
+      "totalLabel": "Totale",
+      "target": "2.151.000",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 13,
+      "totalLabel": "Totale",
+      "target": "39.515.410",
+      "addendCount": 91,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 91 rubros enteros)"
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 14,
+      "totalLabel": "Totale",
+      "target": "24.399.669",
+      "addendCount": 20,
+      "closes": true
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 15,
+      "totalLabel": "Totale",
+      "target": "779.648",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 16,
+      "totalLabel": "Totale",
+      "target": "9.472.297",
+      "addendCount": 16,
+      "closes": true
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 17,
+      "totalLabel": "Totale",
+      "target": "49.783",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 18,
+      "totalLabel": "Totale",
+      "target": "155.258.513",
+      "addendCount": 74,
+      "closes": true
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 19,
+      "totalLabel": "Totale",
+      "target": "87.444.806",
+      "addendCount": 74,
+      "closes": true,
+      "diff": "-2",
+      "how": "redondeo (diferencia -2 en 74 rubros enteros)"
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 20,
+      "totalLabel": "Totale",
+      "target": "67.813.707",
+      "addendCount": 66,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 66 rubros enteros)"
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 21,
+      "totalLabel": "Totale",
+      "target": "23.430.000",
+      "addendCount": 65,
+      "closes": true
+    },
+    {
+      "page": 51,
+      "section": "Aggiornamento alla data del: 31/12/2022",
+      "likelyRelevant": true,
+      "column": 22,
+      "totalLabel": "Totale",
+      "target": "2.366.768",
+      "addendCount": 23,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/parma-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"parma\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "25 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "6 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

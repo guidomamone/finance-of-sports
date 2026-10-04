@@ -1,0 +1,182 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.md",
+ "generado": "2026-10-03T23:03:06.293Z",
+ "estado": "ok",
+ "clubId": "aellarissa-gr",
+ "year": 2019,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "3.086962 = 3.086962"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "el total de la nota b19 (3.534819) cierra con sus filas; además se suman 1 línea(s) fuera de esa nota (0.0216)"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 2 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2018 de este documento suma ingresos 3.40008; el sitio tiene 3.40008"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 3.086962 en este documento y 3.086962 en AEL_notes_ELP_2020-06-30.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2018: 3.40008 en AEL_notes_ELP_2018-06-30.pdf y 3.40008 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "escalón 1 de las notas: la nota b19 (sin renglón) suma el grupo \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (3.534819); se usa si la lectura que gana abre notas",
+  "la nota de \"(-) Λοιπά έξοδα και ζημιές\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "la lectura base no cerraba; cerró con la lectura 2",
+  "duda de extraer resuelta por el escalón 1 de las notas (la nota suma el grupo): ¿Se carga la nota 15 (L425-L432) como desglose por naturaleza del conjunto Κόστος πωλήσεων + Έξοδα διοίκησης + Έξοδα διάθεσης (L77, L81, L82), sin asignar cada partida a un único renglón?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 3.086962,
+  "gastos": 3.556419,
+  "financiero": -0.014291,
+  "impuesto": 0,
+  "resultadoImpreso": -0.483748,
+  "resultadoParaCargar": -0.483748,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Πωλήσεις λοιπών αποθεμάτων & άχρηστου υλικού",
+   "lado": "ingreso",
+   "M": 0.016129,
+   "pagina": 14,
+   "linea": 415,
+   "origen": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\""
+  },
+  {
+   "etiqueta": "Πωλήσεις υπηρεσιών",
+   "lado": "ingreso",
+   "M": 2.319316,
+   "pagina": 14,
+   "linea": 416,
+   "origen": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\""
+  },
+  {
+   "etiqueta": "Επιχορηγήσεις & διάφορα έσοδα πωλήσεων",
+   "lado": "ingreso",
+   "M": 0.366298,
+   "pagina": 14,
+   "linea": 417,
+   "origen": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\""
+  },
+  {
+   "etiqueta": "Έσοδα παρεπόμενων ασχολιών",
+   "lado": "ingreso",
+   "M": 0.385218,
+   "pagina": 14,
+   "linea": 418,
+   "origen": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\""
+  },
+  {
+   "etiqueta": "(+) Λοιπά έσοδα και κέρδη",
+   "lado": "ingreso",
+   "M": 0,
+   "pagina": 3,
+   "linea": 84,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Αμοιβές και έξοδα προσωπικού",
+   "lado": "gasto",
+   "M": 2.462845,
+   "pagina": 14,
+   "linea": 425,
+   "origen": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)"
+  },
+  {
+   "etiqueta": "Αμοιβές και έξοδα τρίτων",
+   "lado": "gasto",
+   "M": 0.529934,
+   "pagina": 14,
+   "linea": 426,
+   "origen": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)"
+  },
+  {
+   "etiqueta": "Παροχές τρίτων",
+   "lado": "gasto",
+   "M": 0.116926,
+   "pagina": 14,
+   "linea": 427,
+   "origen": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)"
+  },
+  {
+   "etiqueta": "Διάφορα έξοδα",
+   "lado": "gasto",
+   "M": 0.410632,
+   "pagina": 14,
+   "linea": 428,
+   "origen": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)"
+  },
+  {
+   "etiqueta": "Αποσβέσεις",
+   "lado": "gasto",
+   "M": 0.011318,
+   "pagina": 14,
+   "linea": 429,
+   "origen": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)"
+  },
+  {
+   "etiqueta": "Φόροι-τέλη",
+   "lado": "gasto",
+   "M": 0.003164,
+   "pagina": 14,
+   "linea": 431,
+   "origen": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)"
+  },
+  {
+   "etiqueta": "(-) Λοιπά έξοδα και ζημιές",
+   "lado": "gasto",
+   "M": 0.0216,
+   "pagina": 3,
+   "linea": 83,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "(-) Χρεωστικοί τόκοι και συναφή έξοδα",
+   "M": -0.014291,
+   "linea": 87
+  }
+ ],
+ "impuesto": []
+}

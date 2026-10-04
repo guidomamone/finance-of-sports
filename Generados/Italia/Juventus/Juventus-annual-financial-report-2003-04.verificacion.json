@@ -1,0 +1,577 @@
+{
+ "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.md",
+ "generado": "2026-10-03T23:14:05.217Z",
+ "estado": "ok",
+ "clubId": "juventus-it",
+ "year": 2004,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "-3,026,244",
+   "linea": 2454,
+   "etiqueta": "d) from others",
+   "lado": "financiero",
+   "reemplaza": "d) from others",
+   "motivo": "Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "5,043,852",
+   "linea": 2463,
+   "etiqueta": "a) capital gains on disposals",
+   "lado": "ingreso",
+   "reemplaza": "a) capital gains on disposals",
+   "motivo": "Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "215,006",
+   "linea": 2464,
+   "etiqueta": "b) use of reserve ex art. 26 of the Company By-Laws",
+   "lado": "ingreso",
+   "reemplaza": "b) use of reserve ex art. 26 of the Company By-Laws",
+   "motivo": "Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "103,318",
+   "linea": 2465,
+   "etiqueta": "d) others",
+   "lado": "ingreso",
+   "reemplaza": "d) others",
+   "motivo": "Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "1,314,812",
+   "linea": 2467,
+   "etiqueta": "a) capital losses on disposals",
+   "lado": "gasto",
+   "reemplaza": "a) capital losses on disposals",
+   "motivo": "Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "3,121,282",
+   "linea": 2468,
+   "etiqueta": "c) others",
+   "lado": "gasto",
+   "reemplaza": "c) others",
+   "motivo": "Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "32578000",
+   "linea": 3396,
+   "etiqueta": "Official and technical sponsors",
+   "lado": "ingreso",
+   "reemplaza": "d) Sponsorship and other revenues",
+   "motivo": "Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3396)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "17782000",
+   "linea": 3397,
+   "etiqueta": "Other sponsorships and other commercial contracts",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3397)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "84968975",
+   "linea": 3398,
+   "etiqueta": "Television revenues",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3398) (incluye -25 € de redondeo de la nota en miles)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "3530000",
+   "linea": 3399,
+   "etiqueta": "TV revenues percentage from visiting team",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3399)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "6720000",
+   "linea": 3400,
+   "etiqueta": "Telephonic rights",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3400)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "14927000",
+   "linea": 3401,
+   "etiqueta": "Revenues from U.E.F.A. Champions League",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3401)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "1052000",
+   "linea": 3402,
+   "etiqueta": "Advertising",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3402)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "2353000",
+   "linea": 3403,
+   "etiqueta": "Players' and coach image rights",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3403)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2003-04.pdf",
+   "campo": "fila",
+   "valor": "392000",
+   "linea": 3404,
+   "etiqueta": "Sundry income",
+   "lado": "ingreso",
+   "reemplaza": null,
+   "motivo": "Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3404)",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 5 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales)"
+  },
+  {
+   "nombre": "documento del año 2005",
+   "ok": true,
+   "detalle": "ingresos de 2004: 215.951335 en este documento y 215.951335 en Juventus-annual-financial-report-2004-05.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2003",
+   "ok": true,
+   "detalle": "ingresos de 2003: 218.322299 en Juventus-annual-financial-report-2002-03.pdf y 218.322299 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2003: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "ajuste manual: fila \"d) from others\" (financiero) -3,026,244, en lugar de \"d) from others\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios))",
+  "ajuste manual: fila \"a) capital gains on disposals\" (ingreso) 5,043,852, en lugar de \"a) capital gains on disposals\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios))",
+  "ajuste manual: fila \"b) use of reserve ex art. 26 of the Company By-Laws\" (ingreso) 215,006, en lugar de \"b) use of reserve ex art. 26 of the Company By-Laws\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios))",
+  "ajuste manual: fila \"d) others\" (ingreso) 103,318, en lugar de \"d) others\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios))",
+  "ajuste manual: fila \"a) capital losses on disposals\" (gasto) 1,314,812, en lugar de \"a) capital losses on disposals\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios))",
+  "ajuste manual: fila \"c) others\" (gasto) 3,121,282, en lugar de \"c) others\" (2026-10-03, Guido 2026-10-03: formato italiano viejo, el signo lo da el encabezado (17) gastos financieros / 20) ingresos / 21) gastos extraordinarios))",
+  "ajuste manual: fila \"Official and technical sponsors\" (ingreso) 32578000, en lugar de \"d) Sponsorship and other revenues\" (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3396))",
+  "ajuste manual: fila \"Other sponsorships and other commercial contracts\" (ingreso) 17782000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3397))",
+  "ajuste manual: fila \"Television revenues\" (ingreso) 84968975 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3398) (incluye -25 € de redondeo de la nota en miles))",
+  "ajuste manual: fila \"TV revenues percentage from visiting team\" (ingreso) 3530000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3399))",
+  "ajuste manual: fila \"Telephonic rights\" (ingreso) 6720000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3400))",
+  "ajuste manual: fila \"Revenues from U.E.F.A. Champions League\" (ingreso) 14927000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3401))",
+  "ajuste manual: fila \"Advertising\" (ingreso) 1052000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3402))",
+  "ajuste manual: fila \"Players' and coach image rights\" (ingreso) 2353000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3403))",
+  "ajuste manual: fila \"Sundry income\" (ingreso) 392000 (2026-10-03, Guido 2026-10-03: se abre \"d) Sponsorship and other revenues\" con su nota (€/000, línea 3404))",
+  "la lectura base no cerraba; cerró con la lectura 5",
+  "duda de localizar que no afecta la carga: b20 es una reclasificación sin etiquetas de renglón que repite importes ya abiertos en el estado oficial b25-b26 y sus notas.",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"1) REVENUES FROM SALES AND SERVICES\"): aceptar, en Juventus-annual-financial-report-2005-06.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"a) Salaries and wages\"): aceptar, en Juventus-annual-financial-report-2005-06.pdf",
+  "duda de extraer ya contestada para el club (cuadro-duplicado, \"d) Others\"): aceptar, en Juventus-annual-financial-report-2005-06.pdf"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 221.313511,
+  "gastos": 238.943528,
+  "financiero": -2.3404,
+  "impuesto": 1.511262,
+  "resultadoImpreso": -18.459155,
+  "resultadoParaCargar": -18.459155,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "1) REVENUES FROM SALES AND SERVICES",
+   "lado": "ingreso",
+   "M": 17.612596,
+   "pagina": 74,
+   "linea": 2404,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) Income from temporary transfer of players",
+   "lado": "ingreso",
+   "M": 0.91,
+   "pagina": 74,
+   "linea": 2406,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "e) Other revenues and income",
+   "lado": "ingreso",
+   "M": 33.125764,
+   "pagina": 74,
+   "linea": 2408,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) capital gains on disposals",
+   "lado": "ingreso",
+   "M": 5.043852,
+   "pagina": 75,
+   "linea": 2463,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "b) use of reserve ex art. 26 of the Company By-Laws",
+   "lado": "ingreso",
+   "M": 0.215006,
+   "pagina": 75,
+   "linea": 2464,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "d) others",
+   "lado": "ingreso",
+   "M": 0.103318,
+   "pagina": 75,
+   "linea": 2465,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Official and technical sponsors",
+   "lado": "ingreso",
+   "M": 32.578,
+   "pagina": 95,
+   "linea": 3396,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Other sponsorships and other commercial contracts",
+   "lado": "ingreso",
+   "M": 17.782,
+   "pagina": 95,
+   "linea": 3397,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Television revenues",
+   "lado": "ingreso",
+   "M": 84.968975,
+   "pagina": 95,
+   "linea": 3398,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "TV revenues percentage from visiting team",
+   "lado": "ingreso",
+   "M": 3.53,
+   "pagina": 95,
+   "linea": 3399,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Telephonic rights",
+   "lado": "ingreso",
+   "M": 6.72,
+   "pagina": 95,
+   "linea": 3400,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Revenues from U.E.F.A. Champions League",
+   "lado": "ingreso",
+   "M": 14.927,
+   "pagina": 95,
+   "linea": 3401,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Advertising",
+   "lado": "ingreso",
+   "M": 1.052,
+   "pagina": 95,
+   "linea": 3402,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Players' and coach image rights",
+   "lado": "ingreso",
+   "M": 2.353,
+   "pagina": 95,
+   "linea": 3403,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "Sundry income",
+   "lado": "ingreso",
+   "M": 0.392,
+   "pagina": 95,
+   "linea": 3404,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "6) RAW MATERIALS, SUPPLIES, CONSUMABLES AND GOODS",
+   "lado": "gasto",
+   "M": 2.889909,
+   "pagina": 74,
+   "linea": 2411,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "7) SERVICES",
+   "lado": "gasto",
+   "M": 24.243997,
+   "pagina": 74,
+   "linea": 2412,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "8) LEASES AND RENTALS",
+   "lado": "gasto",
+   "M": 3.889311,
+   "pagina": 74,
+   "linea": 2413,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) Salaries and wages",
+   "lado": "gasto",
+   "M": 113.70405,
+   "pagina": 74,
+   "linea": 2415,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) Social security contributions",
+   "lado": "gasto",
+   "M": 2.817063,
+   "pagina": 74,
+   "linea": 2416,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "c) Employees' severance indemnity",
+   "lado": "gasto",
+   "M": 0.473703,
+   "pagina": 74,
+   "linea": 2417,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "e) Other costs",
+   "lado": "gasto",
+   "M": 0.089351,
+   "pagina": 74,
+   "linea": 2418,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) Amortisation of intangible fixed assets",
+   "lado": "gasto",
+   "M": 64.274145,
+   "pagina": 74,
+   "linea": 2420,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) Depreciation of tangible fixed assets",
+   "lado": "gasto",
+   "M": 0.92213,
+   "pagina": 74,
+   "linea": 2421,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "d) Write-downs of receivables entered under current assets and cash at bank and in hand",
+   "lado": "gasto",
+   "M": 0.51726,
+   "pagina": 74,
+   "linea": 2422,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) Match organisation expenses",
+   "lado": "gasto",
+   "M": 0.172906,
+   "pagina": 74,
+   "linea": 2426,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "b) Official match expenses",
+   "lado": "gasto",
+   "M": 0.110419,
+   "pagina": 74,
+   "linea": 2427,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "c) Match registration fees",
+   "lado": "gasto",
+   "M": 0.001182,
+   "pagina": 74,
+   "linea": 2428,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "d) Others",
+   "lado": "gasto",
+   "M": 20.402008,
+   "pagina": 74,
+   "linea": 2429,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "a) capital losses on disposals",
+   "lado": "gasto",
+   "M": 1.314812,
+   "pagina": 75,
+   "linea": 2467,
+   "origen": "ajuste manual"
+  },
+  {
+   "etiqueta": "c) others",
+   "lado": "gasto",
+   "M": 3.121282,
+   "pagina": 75,
+   "linea": 2468,
+   "origen": "ajuste manual"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "c) from securities entered under current assets other than equity investments",
+   "M": 0.034475,
+   "linea": 2448
+  },
+  {
+   "etiqueta": "- from subsidiary companies",
+   "M": 0.070998,
+   "linea": 2450
+  },
+  {
+   "etiqueta": "- from parent companies",
+   "M": 0.191687,
+   "linea": 2451
+  },
+  {
+   "etiqueta": "- from others",
+   "M": 0.388684,
+   "linea": 2452
+  },
+  {
+   "etiqueta": "d) from others",
+   "M": -3.026244,
+   "linea": 2454
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "a) current taxes",
+   "M": -5.727157,
+   "linea": 2472
+  },
+  {
+   "etiqueta": "b) deferred taxes",
+   "M": 7.238419,
+   "linea": 2473
+  }
+ ]
+}

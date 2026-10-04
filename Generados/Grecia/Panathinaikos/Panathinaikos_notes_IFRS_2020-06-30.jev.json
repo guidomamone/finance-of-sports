@@ -1,0 +1,306 @@
+{
+ "md": "Clubes/Grecia/Panathinaikos/Panathinaikos_notes_IFRS_2020-06-30.md",
+ "generatedAt": "2026-09-30T22:49:23.690Z",
+ "rubrosHuella": "6c0c30a215ea17e70a4a3f54ffb1b8711343b6a1",
+ "rubros": [
+  {
+   "label": "Αποσβέσεις από δικαιώματα χρήσης περιουσιακών στοιχείων",
+   "lado": null,
+   "page": 35,
+   "section": "# • Κατάσταση Αποτελεσμάτων",
+   "choice": "player_amortisation",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Τόκοι από υποχρεώσεις μισθωμάτων",
+   "lado": null,
+   "page": 35,
+   "section": "# • Κατάσταση Αποτελεσμάτων",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Μείον: Σωρευμένες αποσβέσεις",
+   "lado": "expense",
+   "page": 58,
+   "section": "## 2 ΑΣΩΜΑΤΕΣ ΑΚΙΝΗΤΟΠΟΙΗΣΕΙΣ",
+   "choice": "depreciation",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από εισιτήρια",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Χορηγίες και διαφημίσεις",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Δικαιώματα αναμετάδοσης",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Εμπορικά",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά λειτουργικά έσοδα",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Κόστος πωλήσεων / υλικών",
+   "lado": "expense",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Αμοιβές εργαζομένων και λοιπές παροχές",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "match_organisation_expense",
+   "confidence": 0.29,
+   "desdeCache": true
+  },
+  {
+   "label": "Χρηματοοικονομικά Έξοδα",
+   "lado": "expense",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Αναβαλλόμενος Φόρος",
+   "lado": "expense",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Συνεισφορά αλληλεγγύης ομάδων",
+   "lado": "revenue",
+   "page": 70,
+   "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Επιχορηγήσεις από Ομοσπονδίες",
+   "lado": "revenue",
+   "page": 70,
+   "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από μισθώματα",
+   "lado": "revenue",
+   "page": 70,
+   "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "stadium_other",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από μισθώσεις σουίτων-Booth",
+   "lado": "revenue",
+   "page": 70,
+   "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "stadium_other",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά παρεπόμενα έσοδα",
+   "lado": "revenue",
+   "page": 70,
+   "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Συναλλαγματικές διαφορές",
+   "lado": "revenue",
+   "page": 70,
+   "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Κρατικές επιχορηγήσεις",
+   "lado": "revenue",
+   "page": 70,
+   "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από αναστροφή προβλέψεων/τακτοποίηση υποχρεώσεων",
+   "lado": "revenue",
+   "page": 70,
+   "section": "## 19 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα ενοικίων από βραχυπρόθεσμα συμβόλαια και περιουσιακά στοιχεία χαμηλής αξίας",
+   "lado": "expense",
+   "page": 35,
+   "section": "# • Κατάσταση Αποτελεσμάτων",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "player_amortisation",
+     0.17
+    ],
+    [
+     "other_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Απομείωση και απαξίωση ενσώματων πάγιων στοιχείων του ενεργητικού",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1223
+  },
+  {
+   "label": "Απομείωση και απαξίωση άλλων άυλων στοιχείων του ενεργητικού",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2020 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1154
+  },
+  {
+   "label": "Κόστος κτήσης την 30/06/2020",
+   "lado": "expense",
+   "page": 58,
+   "section": "## 2 ΑΣΩΜΑΤΕΣ ΑΚΙΝΗΤΟΠΟΙΗΣΕΙΣ",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "player_amortisation",
+     0.26
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1065
+  }
+ ]
+}

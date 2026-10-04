@@ -1,0 +1,299 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2010.pdf",
+ "generado": "2026-10-03T03:12:17.718Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "novorizontino-br ya tiene el ejercicio 2010 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['novorizontino-br-balanco-2010'] ya existe"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (ajuste manual del club, 2026-10-03: Guido 2026-10-02: una sola entidad (associação hasta 2023, SAF después); 'Consolidado' es el membrete del auditor (Verdus), no un estado consolidado)",
+  "\"Salarios del plantel\" en 0: real, por ajuste manual (2026-10-03, Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio)",
+  "\"Televisión\" en 0: real, por ajuste manual (2026-10-03, Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio)",
+  "\"Estadio\" en 0: real, por ajuste manual (2026-10-03, Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio)"
+ ],
+ "ejercicio": {
+  "clubId": "novorizontino-br",
+  "year": 2010,
+  "cierre": "2010-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Convênio P.M.N.H nº 21/10",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.07,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Doações, Receitas de Patrocínio, Locação de Espaço, e Ev",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.06035,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.9
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Administrativas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.040536,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas Gerais e Manutenção",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.056758,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.98
+   },
+   {
+    "rawLabel": "Projeto Escola de Futebol -Conv. Nº 21/10",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -0.066653,
+    "disclosureLevel": "aggregated",
+    "_pag": 1,
+    "_escalon": 1,
+    "_conf": 0.9
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2010-12-31",
+   "sourceId": "novorizontino-br-balanco-2010",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": 0.001691,
+   "tax": 0,
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 0.13035,
+   "officialTotalExpenses": 0.163946,
+   "officialPAT": -0.035287
+  },
+  "source": {
+   "id": "novorizontino-br-balanco-2010",
+   "clubId": "novorizontino-br",
+   "title": "Grêmio Novorizontino Sociedade Anônima do Futebol — balanco-2010 (ejercicio 2010)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Novorizontino/balanco-2010.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Brasil/Novorizontino/balanco-2010.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": null,
+  "evidencia": null,
+  "confianza": "baja"
+ },
+ "clubId": "novorizontino-br",
+ "year": 2010,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/balanco-2010.pdf",
+   "campo": "reportType",
+   "valor": "official_balance_sheet",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: la página 1 trae la Demonstração do Resultado completa (pocas filas numéricas porque el club recién se fundaba)",
+   "evidencia": "balanco-2010.md L5-17",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/balanco-2010.pdf",
+   "campo": "cero-real",
+   "valor": "Salarios del plantel",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio",
+   "evidencia": "balanco-2010.md L5-17",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/balanco-2010.pdf",
+   "campo": "cero-real",
+   "valor": "Televisión",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio",
+   "evidencia": "balanco-2010.md L5-17",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/balanco-2010.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: año de fundación del club (R$ 130 mil de ingresos: convenio municipal y patrocinios); sin plantel profesional, sin TV ni estadio",
+   "evidencia": "balanco-2010.md L5-17",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
+ "seleccion": {
+  "filas": 6,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Convênio P.M.N.H nº 21/10",
+   "page": 1,
+   "native": 0.07,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.07,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02: otros ingresos (convenio municipal, inmaterial)",
+   "destino": "revenue",
+   "amountNative": 0.07
+  },
+  {
+   "label": "Doações, Receitas de Patrocínio, Locação de Espaço, e Ev",
+   "page": 1,
+   "native": 0.06035,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.06035,
+   "cat": "other_income",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.06035
+  },
+  {
+   "label": "Administrativas",
+   "page": 1,
+   "native": 0.040536,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.040536,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.040536
+  },
+  {
+   "label": "Despesas Gerais e Manutenção",
+   "page": 1,
+   "native": 0.056758,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.056758,
+   "cat": "admin_general_expense",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.056758
+  },
+  {
+   "label": "Projeto Escola de Futebol -Conv. Nº 21/10",
+   "page": 1,
+   "native": 0.066653,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.066653,
+   "cat": "youth_other_sports_expense",
+   "conf": 0.9,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.066653
+  },
+  {
+   "label": "Financeiras Líquidas",
+   "page": null,
+   "native": 0.001691,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 0.13035,
+  "expSum": -0.163947,
+  "officialTotalRevenue": 0.13035,
+  "officialTotalExpenses": 0.163946,
+  "officialPAT": -0.035287,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.035287,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 0.13035
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 0.163946
+  }
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding §17)"
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 3,
+  "lineasIngreso": 2,
+  "lineasGasto": 3,
+  "metaFilas": 1,
+  "excluidas": 0
+ }
+}

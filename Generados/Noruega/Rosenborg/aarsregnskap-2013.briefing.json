@@ -1,0 +1,6054 @@
+{
+  "club": "rosenborg",
+  "year": 2013,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Noruega/Rosenborg/aarsregnskap-2013.md",
+  "generatedAt": "2026-09-30T22:06:43.334Z",
+  "numberFormat": "espacio como separador de miles (escandinavo)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 6,
+    "space": 650
+  },
+  "scannedWarning": true,
+  "tableCount": 56,
+  "relevantTableCount": 15,
+  "tables": [
+    {
+      "page": 2,
+      "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+      "columns": [
+        "Beløp i: NOK",
+        "Note",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Inntekter",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Salgsinntekt",
+          "values": [
+            "1, 2",
+            "130 133 259",
+            "155 099 857"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen driftsinntekt",
+          "values": [
+            "",
+            "33 776 861",
+            "46 134 427"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum inntekter",
+          "values": [
+            "",
+            "163 910 120",
+            "201 234 284"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Varekostnad",
+          "values": [
+            "",
+            "36 486 890",
+            "33 047 533"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lønnskostnad",
+          "values": [
+            "3, 4",
+            "87 613 559",
+            "94 130 253"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avskrivning av driftsmidler og immaterielle eiendeler",
+          "values": [
+            "5, 6",
+            "16 538 592",
+            "22 120 145"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+          "values": [
+            "",
+            "245 412",
+            "7 122 918"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen driftskostnad",
+          "values": [
+            "13",
+            "40 657 678",
+            "44 166 557"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum kostnader",
+          "values": [
+            "",
+            "181 542 131",
+            "200 587 406"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Driftsresultat",
+          "values": [
+            "",
+            "-17 632 011",
+            "646 878"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Finansinntekter og finanskostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Renteinntekt fra foretak i samme konsern",
+          "values": [
+            "",
+            "542 508",
+            "958 178"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen renteinntekt",
+          "values": [
+            "",
+            "199 805",
+            "247 832"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finansinntekt",
+          "values": [
+            "",
+            "",
+            "52 280 819"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum finansinntekter",
+          "values": [
+            "",
+            "742 313",
+            "53 486 829"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Rentekostnad til foretak i samme konsern",
+          "values": [
+            "",
+            "48 144",
+            "96 763"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen rentekostnad",
+          "values": [
+            "",
+            "18 238",
+            "85 609"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finanskostnad",
+          "values": [
+            "",
+            "437 018",
+            "4 714 438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum finanskostnader",
+          "values": [
+            "",
+            "503 400",
+            "4 896 810"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Netto finans",
+          "values": [
+            "",
+            "238 913",
+            "48 590 019"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ordinært resultat før skattekostnad",
+          "values": [
+            "",
+            "-17 393 098",
+            "49 236 897"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ordinært resultat etter skattekostnad",
+          "values": [
+            "",
+            "-17 393 098",
+            "49 236 897"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årsresultat",
+          "values": [
+            "",
+            "-17 393 098",
+            "49 236 897"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Overføringer og disponeringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Avsatt til annen egenkapital",
+          "values": [
+            "",
+            "",
+            "49 236 898"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overført fra annen egenkapital",
+          "values": [
+            "10",
+            "-17 393 097",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum overføringer og disponeringer",
+          "values": [
+            "",
+            "-17 393 097",
+            "49 236 898"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "columns": [
+        "Beløp i: NOK",
+        "Note",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "EIENDELER",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Immaterielle eiendeler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konsesjoner, patenter o.l.",
+          "values": [
+            "5",
+            "34 823 655",
+            "25 957 297"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum immaterielle eiendeler",
+          "values": [
+            "",
+            "34 823 655",
+            "25 957 297"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varige driftsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Tomter, bygninger o.a. fast eiendom",
+          "values": [
+            "",
+            "33 646 844",
+            "37 756 565"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Driftsløsøre, inventar o. a. utstyr",
+          "values": [
+            "",
+            "3 718 706",
+            "5 908 037"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum varige driftsmidler",
+          "values": [
+            "6",
+            "37 365 550",
+            "43 664 602"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansielle anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Investering i datterselskap",
+          "values": [
+            "7",
+            "41 140 857",
+            "36 132 650"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lån til foretak i samme konsern",
+          "values": [
+            "8",
+            "25 632 565",
+            "15 500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer i aksjer og andeler",
+          "values": [
+            "",
+            "3 100 004",
+            "3 100 004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum finansielle anleggsmidler",
+          "values": [
+            "",
+            "69 873 426",
+            "54 732 654"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum anleggsmidler",
+          "values": [
+            "",
+            "142 062 631",
+            "124 354 553"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omløpsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Varer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "varelager",
+          "values": [
+            "",
+            "3 708 424",
+            "5 802 704"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum varer",
+          "values": [
+            "",
+            "3 708 424",
+            "5 802 704"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fordringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kundefordringer",
+          "values": [
+            "9",
+            "8 040 978",
+            "3 178 226"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre kortsiktige fordringer",
+          "values": [
+            "9",
+            "25 298 057",
+            "56 518 078"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum fordringer",
+          "values": [
+            "",
+            "33 339 035",
+            "59 696 304"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bankinnskudd, kontanter og lignende",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bankinnskudd, kontanter o. l.",
+          "values": [
+            "14",
+            "7 681 683",
+            "18 886 089"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum bankinnskudd, kontanter og lignende",
+          "values": [
+            "",
+            "7 681 683",
+            "18 886 089"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum omløpsmidler",
+          "values": [
+            "",
+            "44 729 142",
+            "84 385 097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM EIENDELER",
+          "values": [
+            "",
+            "186 791 773",
+            "208 739 650"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "# Egenkapital / # Innskutt egenkapital",
+      "columns": [
+        "Annen innskutt egenkapital",
+        "141 654 017",
+        "159 665 157"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Sum innskutt egenkapital",
+          "values": [
+            "141 654 017",
+            "159 665 157"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "# Langsiktig gjeld / # Annen langsiktig gjeld",
+      "columns": [
+        "Øvrig langsiktig gjeld",
+        "8",
+        "900 000",
+        "1 260 000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Sum annen langsiktig gjeld",
+          "values": [
+            "",
+            "900 000",
+            "1 260 000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "# Kortsiktig gjeld",
+      "columns": [
+        "Leverandørgjeld",
+        "",
+        "18 497 879",
+        "13 690 501"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Skyldig offentlige avgifter",
+          "values": [
+            "11",
+            "8 249 407",
+            "8 729 166"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen kortsiktig gjeld",
+          "values": [
+            "12",
+            "17 490 470",
+            "25 394 826"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum kortsiktig gjeld",
+          "values": [
+            "",
+            "44 237 756",
+            "47 814 493"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "## KONSERNRESULTATREGNSKAP",
+      "columns": [
+        "Beløp i: NOK",
+        "Note",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Inntekter",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Salgsinntekt",
+          "values": [
+            "",
+            "134 173 190",
+            "161 464 379"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "annen driftsinntekt",
+          "values": [
+            "",
+            "40 368 207",
+            "54 130 849"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum inntekter",
+          "values": [
+            "1",
+            "174 541 397",
+            "215 595 228"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Lønnskostnad",
+          "values": [
+            "2",
+            "92 580 819",
+            "100 197 435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Av og nedskrivning",
+          "values": [
+            "3,4,5",
+            "22 494 887",
+            "35 724 723"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kostnader",
+          "values": [
+            "8",
+            "35 294 971",
+            "36 849 274"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen driftskostnad",
+          "values": [
+            "10",
+            "30 821 168",
+            "31 905 780"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Momsrefusjon",
+          "values": [
+            "",
+            "-374 738",
+            "-173 896"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum kostnader",
+          "values": [
+            "",
+            "180 817 107",
+            "204 503 316"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Driftsresultat",
+          "values": [
+            "",
+            "-6 275 710",
+            "11 091 912"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Finansinntekter og finanskostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Annen renteinntekt",
+          "values": [
+            "",
+            "537 745",
+            "734 185"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum finansinntekter",
+          "values": [
+            "",
+            "537 745",
+            "734 185"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Annen rentekostnad",
+          "values": [
+            "",
+            "6 931 764",
+            "7 349 201"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansinntekter/ kostnader",
+          "values": [
+            "",
+            "504 978",
+            "-51 110 415"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum finanskostnader",
+          "values": [
+            "",
+            "7 436 742",
+            "-43 761 214"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Netto finans",
+          "values": [
+            "",
+            "-6 898 997",
+            "44 495 399"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ordinært resultat før skattekostnad",
+          "values": [
+            "",
+            "-13 174 707",
+            "55 587 311"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Skattekostnad",
+          "values": [
+            "11",
+            "1 141 561",
+            "781 926"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ordinært resultat etter skattekostnad",
+          "values": [
+            "",
+            "-14 316 268",
+            "54 805 385"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Årsresultat",
+          "values": [
+            "",
+            "-14 316 268",
+            "54 805 385"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Minoritetsinteresser",
+          "values": [
+            "",
+            "1 424 230",
+            "1 448 507"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årsresultat etter minoritetsinteresser",
+          "values": [
+            "",
+            "-15 740 498",
+            "53 356 878"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "columns": [
+        "Beløp i: NOK",
+        "Note",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "EIENDELER",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immaterielle eiendeler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spillerkontrakter",
+          "values": [
+            "3",
+            "34 823 655",
+            "25 957 297"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utsatt skattefordel",
+          "values": [
+            "11",
+            "3 355 615",
+            "3 132 091"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum immaterielle eiendeler",
+          "values": [
+            "",
+            "38 179 270",
+            "29 089 388"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varige driftsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tomter, bygninger og annen fast eiendom",
+          "values": [
+            "4",
+            "306 787 478",
+            "274 282 061"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transportmidler, inventar, kontormaskiner",
+          "values": [
+            "5",
+            "7 860 618",
+            "6 967 403"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum varige driftsmidler",
+          "values": [
+            "",
+            "314 648 096",
+            "281 249 464"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansielle anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investering i aksjer og andeler",
+          "values": [
+            "",
+            "3 100 004",
+            "3 100 004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum finansielle anleggsmidler",
+          "values": [
+            "",
+            "3 100 004",
+            "3 100 004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum anleggsmidler",
+          "values": [
+            "",
+            "355 927 370",
+            "313 438 856"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omløpsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varelager",
+          "values": [
+            "",
+            "4 017 220",
+            "5 939 455"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum varer",
+          "values": [
+            "",
+            "4 017 220",
+            "5 939 455"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fordringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kundefordringer",
+          "values": [
+            "",
+            "10 026 069",
+            "4 637 391"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre fordringer",
+          "values": [
+            "",
+            "22 288 895",
+            "57 273 641"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum fordringer",
+          "values": [
+            "",
+            "32 314 964",
+            "61 911 032"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bankinnskudd, kontanter og lignende",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kasse, bank og postgiro",
+          "values": [
+            "12",
+            "35 397 226",
+            "43 313 661"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum bankinnskudd, kontanter og lignende",
+          "values": [
+            "",
+            "35 397 226",
+            "43 313 661"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum omløpsmidler",
+          "values": [
+            "",
+            "71 729 410",
+            "111 164 148"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM EIENDELER",
+          "values": [
+            "",
+            "427 656 780",
+            "424 603 004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EGENKAPITAL OG GJELD",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Innskutt egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opptjent egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": null,
+      "columns": [
+        "Annen egenkapital",
+        "9",
+        "180 707 971",
+        "197 066 744"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Minoritetsinteresser",
+          "values": [
+            "",
+            "54 342 639",
+            "50 418 176"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum opptjent egenkapital",
+          "values": [
+            "",
+            "235 050 610",
+            "247 484 920"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum egenkapital",
+          "values": [
+            "",
+            "235 050 610",
+            "247 484 920"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Langsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensjonsforpliktelser",
+          "values": [
+            "9,14",
+            "3 446 559",
+            "3 190 725"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utsatt skatt",
+          "values": [
+            "11",
+            "4 698 962",
+            "3 574 227"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum avsetninger for forpliktelser",
+          "values": [
+            "",
+            "8 145 521",
+            "6 764 952"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen langsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gjeld til kredittinstitusjoner",
+          "values": [
+            "7",
+            "118 111 500",
+            "123 360 900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Øvrig langsiktig gjeld",
+          "values": [
+            "7",
+            "2 500 000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum annen langsiktig gjeld",
+          "values": [
+            "",
+            "120 611 500",
+            "123 360 900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum langsiktig gjeld",
+          "values": [
+            "",
+            "128 757 021",
+            "130 125 852"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kassekreditt / byggelån",
+          "values": [
+            "7",
+            "20 187 713",
+            "5 655 498"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leverandørgjeld",
+          "values": [
+            "",
+            "15 100 360",
+            "6 256 557"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Betalbar skatt",
+          "values": [
+            "11",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skyldig offentlige avgifter",
+          "values": [
+            "",
+            "11 381 277",
+            "14 187 930"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen kortsiktig gjeld",
+          "values": [
+            "",
+            "17 179 799",
+            "20 892 248"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum kortsiktig gjeld",
+          "values": [
+            "",
+            "63 849 149",
+            "46 992 233"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum gjeld",
+          "values": [
+            "",
+            "192 606 170",
+            "177 118 085"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM EGENKAPITAL OG GJELD",
+          "values": [
+            "",
+            "427 656 780",
+            "424 603 005"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "# Rosenborg Ballklub",
+      "columns": [
+        "RESULTATREGNSKAP",
+        "NOTER",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salgsinntekt",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Billett- og arrangementsinntekter",
+          "values": [
+            "1",
+            "35 041 987",
+            "33 150 101"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VIP-inntekter",
+          "values": [
+            "",
+            "12 563 549",
+            "18 705 999"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sponsor- og reklameinntekter",
+          "values": [
+            "",
+            "53 991 237",
+            "52 988 095"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salg / utleie spillere",
+          "values": [
+            "2",
+            "15 658 111",
+            "38 785 655"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen salgsinntekt",
+          "values": [
+            "",
+            "12 878 375",
+            "11 470 007"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen driftsinntekt",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "UEFA",
+          "values": [
+            "",
+            "5 441 256",
+            "20 135 529"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TV- og mediainntekter",
+          "values": [
+            "",
+            "19 707 492",
+            "17 501 120"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre inntekter",
+          "values": [
+            "",
+            "8 628 113",
+            "8 497 778"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM DRIFTSINNTEKTER",
+          "values": [
+            "",
+            "163 910 121",
+            "201 234 284"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Driftskostnader kamper",
+          "values": [
+            "",
+            "12 295 461",
+            "12 708 925"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reklame-, sponsor og VIP kostnader",
+          "values": [
+            "",
+            "22 787 233",
+            "22 038 569"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spiller- og overgangskostnader",
+          "values": [
+            "3",
+            "1 273 978",
+            "1 496 991"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre kostnader",
+          "values": [
+            "",
+            "6 599 687",
+            "8 021 535"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lønnskostnad",
+          "values": [
+            "4",
+            "87 613 556",
+            "94 130 253"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Av- og nedskrivning",
+          "values": [
+            "5, 6",
+            "16 784 004",
+            "29 243 063"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Annen driftskostnad",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bortekamper, trening, utstyr",
+          "values": [
+            "",
+            "8 585 655",
+            "12 995 510"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Drift transp.midler, baner, lokaler",
+          "values": [
+            "",
+            "8 078 638",
+            "5 187 971"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrasjonskostnader",
+          "values": [
+            "13",
+            "9 582 060",
+            "11 937 894"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre driftskostnader",
+          "values": [
+            "",
+            "8 316 598",
+            "3 000 591"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Momsrefusjon",
+          "values": [
+            "",
+            "-374 738",
+            "-173 896"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM DRIFTSKOSTNADER",
+          "values": [
+            "",
+            "181 542 132",
+            "200 587 406"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DRIFTSRESULTAT",
+          "values": [
+            "",
+            "-17 632 011",
+            "646 878"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Annen renteinntekt",
+          "values": [
+            "",
+            "199 805",
+            "247 832"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Renteinntekt konsernselskap",
+          "values": [
+            "",
+            "542 508",
+            "958 178"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen rentekostnad",
+          "values": [
+            "",
+            "0",
+            "-55 043"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rentekostnad konsernselskap",
+          "values": [
+            "",
+            "-48 144",
+            "-96 763"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finansinntekt",
+          "values": [
+            "",
+            "0",
+            "52 280 819"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finanskostnad",
+          "values": [
+            "",
+            "-455 256",
+            "-4 745 004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESULTAT FINANS",
+          "values": [
+            "",
+            "238 914",
+            "48 590 020"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ÅRSRESULTAT",
+          "values": [
+            "",
+            "-17 393 097",
+            "49 236 898"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Behandling av årets resultat",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Overført til/fra fri egenkapital",
+          "values": [
+            "10",
+            "-17 393 097",
+            "49 236 898"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 16,
+      "section": "# Rosenborg Ballklub",
+      "columns": [
+        "BALANSE 31. DESEMBER",
+        "NOTER",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "EIENDELER",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ANLEGGSMIDLER",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Immaterielle eiendeler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spillerkontrakter",
+          "values": [
+            "5",
+            "34 823 655",
+            "25 957 297"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varige driftsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tomter, grunnarealer",
+          "values": [
+            "6",
+            "32 439 001",
+            "32 439 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transp.midler, inventar, kontormaskiner",
+          "values": [
+            "6",
+            "4 926 549",
+            "11 225 602"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansielle anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer i datterselskap",
+          "values": [
+            "7",
+            "41 140 857",
+            "36 132 650"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lån til foretak i samme konsern",
+          "values": [
+            "8",
+            "25 632 565",
+            "15 500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer i aksjer og andeler",
+          "values": [
+            "",
+            "3 100 004",
+            "3 100 004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM ANLEGGSMIDLER",
+          "values": [
+            "",
+            "142 062 631",
+            "124 354 553"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "OMLØPSMIDLER",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Varelager",
+          "values": [
+            "",
+            "3 708 425",
+            "5 802 704"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fordringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kundefordringer",
+          "values": [
+            "9",
+            "8 040 978",
+            "3 178 226"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre fordringer",
+          "values": [
+            "9",
+            "25 298 057",
+            "56 518 078"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bankinnskudd, kontanter o.l.",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kasse, bank, postgiro",
+          "values": [
+            "14",
+            "7 681 683",
+            "18 886 089"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM OMLØPSMIDLER",
+          "values": [
+            "",
+            "44 729 143",
+            "84 385 097"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "SUM EIENDELER",
+          "values": [
+            "",
+            "186 791 773",
+            "208 739 650"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "EGENKAPITAL OG GJELD",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "EGENKAPITAL",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fri egenkapital",
+          "values": [
+            "10",
+            "141 654 017",
+            "159 665 157"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM EGENKAPITAL",
+          "values": [
+            "",
+            "141 654 017",
+            "159 665 157"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GJELD",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Langsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gjeld til foretak i samme konsern",
+          "values": [
+            "8",
+            "900 000",
+            "1 260 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Leverandørgjeld",
+          "values": [
+            "",
+            "18 497 879",
+            "13 690 501"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skyldig offentlige avgifter",
+          "values": [
+            "11",
+            "8 249 407",
+            "8 729 166"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen kortsiktig gjeld",
+          "values": [
+            "12",
+            "17 490 470",
+            "25 394 826"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM GJELD",
+          "values": [
+            "",
+            "45 137 756",
+            "49 074 493"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "SUM EGENKAPITAL OG GJELD",
+          "values": [
+            "",
+            "186 791 773",
+            "208 739 650"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "#### Spillerkontrakter – prinsipp / #### Anleggsmidler – prinsipp / #### Omløpsmidler / #### Varer / #### Pensjon",
+      "columns": [
+        "Billett- og arrangementsinntekter",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Billettinntekter E-cup-kamper",
+          "values": [
+            "521 609",
+            "6 556 817"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Billettinntekter serie- og treningskamper",
+          "values": [
+            "33 259 491",
+            "26 096 574"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Cup-oppgjør",
+          "values": [
+            "1 260 887",
+            "496 710"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Billett- og arrangementsinntekter",
+          "values": [
+            "35 041 987",
+            "33 150 101"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 17,
+      "section": null,
+      "columns": [
+        "Salg/utleie spillere",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gevinst ved spillersalg",
+          "values": [
+            "15 658 111",
+            "38 723 155"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Utleie spillere",
+          "values": [
+            "-",
+            "62 500"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Inntekt i regnskapet",
+          "values": [
+            "15 658 111",
+            "38 785 655"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": null,
+      "columns": [
+        "Kjøp/leie spillere",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Brutto kjøp i året",
+          "values": [
+            "33 596 419",
+            "29 195 631"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Aktiverte nye spillerkontrakter",
+          "values": [
+            "-32 322 441",
+            "-27 698 640"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Kostnad i regnskapet",
+          "values": [
+            "1 273 978",
+            "1 496 991"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "# Rosenborg Ballklub / ## NOTER TIL ÅRSREGNSKAPET FOR 2013",
+      "columns": [
+        "Lønnskostnad",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Spesifikasjon av lønnskostnad:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Lønninger",
+          "values": [
+            "77 439 906",
+            "82 169 630"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Arbe-digiveravgift",
+          "values": [
+            "7 540 503",
+            "8 613 314"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Pensjonskostnad",
+          "values": [
+            "475 591",
+            "393 007"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Andre ytelser",
+          "values": [
+            "2 157 559",
+            "2 954 302"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Sum lønnskostnad",
+          "values": [
+            "87 613 559",
+            "94 130 253"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 18,
+      "section": "### Note 5 Spillerkontrakter, aktivering/avskrivning/nedskrivning",
+      "columns": [
+        "",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anskaffelseskost pr. 01.01.",
+          "values": [
+            "53 221 986",
+            "73 102 292"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang i året",
+          "values": [
+            "32 322 441",
+            "27 698 640"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avgang i året",
+          "values": [
+            "29 020 997",
+            "15 940 351"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Akk. av-/nedskrivning pr. 31.12.",
+          "values": [
+            "21 699 774",
+            "58 903 284"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verdi pr. 31.12.",
+          "values": [
+            "34 823 655",
+            "25 957 297"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets av-/nedskrivning",
+          "values": [
+            "13 584 479",
+            "21 733 180"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "### Note 6 Tomter, annen fast eiendom og driftsløsøre",
+      "columns": [
+        "",
+        "Tomter og grunnarealer",
+        "Drifts-løsøre",
+        "SUM"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anskaffelseskost 1.1.13",
+          "values": [
+            "32 439 000",
+            "32 932 937",
+            "65 371 937"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang i året",
+          "values": [
+            "1",
+            "406 242",
+            "406 243"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilskudd spillemidler",
+          "values": [
+            "",
+            "(565 000)",
+            "(565 000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avgang i året",
+          "values": [
+            "",
+            "(2 940 772)",
+            "(2 940 772)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anskaffelseskost 31.12.13",
+          "values": [
+            "32 439 001",
+            "29 833 407",
+            "62 272 408"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Akk. av og nedskr 31.12.13",
+          "values": [
+            "-",
+            "24 906 860",
+            "24 906 860"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balanseført verdi 31.12.13",
+          "values": [
+            "32 439 001",
+            "4 926 549",
+            "37 365 550"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Årets av- og nedskrivninger",
+          "values": [
+            "-",
+            "3 199 524",
+            "3 199 524"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "Rosenborg Ballklub / NOTER TIL ÅRSREGNSKAPET FOR 2013 / Note 7 Investeringer i datterselskap / Rosenborg Arena AS",
+      "columns": [
+        "500 aksjer til pålydende kr 1.000,-",
+        "500 000",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Overkurs",
+          "values": [
+            "3 600 000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nedskrivning av aksjeverdi 2012",
+          "values": [
+            "(3 575 000)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verdi pr. 31.12.13 500 aksjer, eierandel 100%",
+          "values": [
+            "",
+            "525 000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "Rosenborg Sport AS",
+      "columns": [
+        "450 aksjer til pålydende kr 1.000,-",
+        "450 000",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Overtatt fra Fokus Bank i år 2000, 50 aksjer a kr 1.030,-",
+          "values": [
+            "51 500",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verdi pr. 31.12.13 500 aksjer, eierandel 100%",
+          "values": [
+            "",
+            "501 500"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "Aksjer i Lerkendal Stadion AS",
+      "columns": [
+        "Aksjekapital i Lerkendal Stadion AS pr. 01.01.13",
+        "110 500 000",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Aksjekapital i selskapet pr. 31.12.13",
+          "values": [
+            "110 500 000",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "Rosenborg Ballklub aksjepost til pålydende:",
+      "columns": [
+        "Pr. 01.01.13 61.250 aksjer a pålydende kr 1.000,-",
+        "61 250 000",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Kjøpt 3666 aksjer a pålydende kr 1.000,-, den 15. mars 2010",
+          "values": [
+            "3 666 000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eierandel pr. 31.12.13 58,75 %",
+          "values": [
+            "64 916 000",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "Spesifikasjon av den bokført verdi av RBKs aksjepost:",
+      "columns": [
+        "",
+        "16 273 150",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Kjøp av aksjer 2001, 16250 aksjer a kr 1.000,-",
+          "values": [
+            "16 250 000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kjøp av aksjer 2004, 2500 aksjer a kr 300,-",
+          "values": [
+            "750 000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kjøp av aksjer 2010, 3666 aksjer a kr 500,-",
+          "values": [
+            "1 833 000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "35 106 150",
+            "35 106 150"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "Abrahallen AS",
+      "columns": [
+        "Kjøp i 2013, 667000 aksjer til pålydende kr 1,-",
+        "667 000",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Overkurs",
+          "values": [
+            "4 341 207",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eierandel pr. 31.12.13 66,7 %",
+          "values": [
+            "5 008 207",
+            "5 008 207"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "41 140 857"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "Note 8 Lån/gjeld til foretak i samme konsern / Lån",
+      "columns": [
+        "Rosenborg Sport AS (Klubbhus)",
+        "14 500 000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Rosenborg Arena AS",
+          "values": [
+            "1 000 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abrahallen AS",
+          "values": [
+            "10 132 565"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum lån pr. 31.12.13",
+          "values": [
+            "25 632 565"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "Gjeld",
+      "columns": [
+        "Lerkendal Stadion AS",
+        "900 000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Sum gjeld pr. 31.12.13",
+          "values": [
+            "900 000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "Note 9 Kundefordringer og andre fordringer",
+      "columns": [
+        "Periodisert inntekt",
+        "101 797"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Til gode fra andre klubber ifm spilleroverganger",
+          "values": [
+            "(2 351 239)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "påløpt renteinntekt",
+          "values": [
+            "271 254"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fordring på Rosenborg Eiendom/Lerkendal Invest",
+          "values": [
+            "27 490 351"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre kortsiktige fordringer",
+          "values": [
+            "(214 106)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum andre fordringer",
+          "values": [
+            "25 298 057"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "# Rosenborg Ballklub / ### NOTER TIL ÅRSREGNSKAPET FOR 2013",
+      "columns": [
+        "Egenkapital",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Fri egenkapital"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Ifølge regnskapet pr. 01.01.2013",
+          "values": [
+            "159 665 157"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Overføring av årets overskudd",
+          "values": [
+            "(17 393 097)"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Netto pensjonsforpliktelse viderebelastet fra Rosenborg Sport AS",
+          "values": [
+            "(618 042)"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Egenkapital pr. 31.12.2013",
+          "values": [
+            "141 654 017"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": null,
+      "columns": [
+        "Spesifikasjon av skyldige offentlige avgifter",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Forskuddstrekk termin 06",
+          "values": [
+            "5 715 760"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Arbeidsgiveravgift termin 06",
+          "values": [
+            "2 187 176"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Påløpt arbeidsgiveravgift",
+          "values": [
+            "780 053"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Til gode mva termin 06",
+          "values": [
+            "(433 582)"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Sum",
+          "values": [
+            "8 249 407"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": null,
+      "columns": [
+        "Spesifikasjon av annen kortsiktig gjeld",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Påløpte feriepenger",
+          "values": [
+            "5 523 952"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Mellomværende konsernselskaper",
+          "values": [
+            "0"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Forskuddsbetalte sesongkort 2014",
+          "values": [
+            "8 321 988"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Periodisert inntekt",
+          "values": [
+            "-766 733"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Påløpt lønn/bonus/honorar",
+          "values": [
+            "859 840"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Kortsiktig lån Rosenborg Sport AS",
+          "values": [
+            "3 823 641"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Annet",
+          "values": [
+            "310 879"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Avsetning for påløpte kostnader",
+          "values": [
+            "-583 097"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Sum annen kortsiktig gjeld",
+          "values": [
+            "17 490 470"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": null,
+      "columns": [
+        "Note 13",
+        "Godtgjørelse til revisor"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Det er kostnadsført godtgjørelser til Deloitte AS med til sammen kr 318 225,-, hvorav kr 128 000 knytter seg til lovpålagt revisjon. Godtgjørelse til Deloitte Advokatfirma AS er kostnadsført med kr 28 100,-."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": null,
+      "columns": [
+        "Note 14",
+        "Bankinnskudd"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Av dette utgjør bundne midler (skattetrekk) kr 6.156.954,-."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": null,
+      "columns": [
+        "Note 15",
+        "Gjeld som er sikret ved pant:"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Rosenborg Sport AS har trekkrettigheter i Sparebank 1 SMN.<br>Trekkrettighetene er på 15 mill kr<br><br>Rosenborg Ballklub har stillet selvskyldnerkausjon."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "## KONTANTSTRØMOPPSTILLING",
+      "columns": [
+        "Drift:",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Årsresultat",
+          "values": [
+            "-17 393 097",
+            "49 236 898"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Av-/nedskrivninger",
+          "values": [
+            "16 784 004",
+            "32 928 063"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gevinst ved salg spillerkontrakter",
+          "values": [
+            "-15 658 111",
+            "-38 723 155"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gevinst/tap ved salg anleggsmidler",
+          "values": [
+            "-2 523 400",
+            "-110 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gevinst ved salg av finansielle eiendeler",
+          "values": [
+            "0",
+            "-52 258 243"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endring i varelager",
+          "values": [
+            "2 094 279",
+            "-313 663"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endring kundefordringer/andre fordringer",
+          "values": [
+            "26 357 269",
+            "-49 940 768"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endring leverandørgjeld",
+          "values": [
+            "4 807 378",
+            "471 928"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direkte postering mot egenkapitalen",
+          "values": [
+            "-618 043",
+            "-2 297 322"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endring tidsavgrensninger",
+          "values": [
+            "-18 876 680",
+            "7 972 507"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Netto kontantstrøm fra operasjonelle aktiviteter",
+          "values": [
+            "-5 026 401",
+            "-53 033 755"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "### Investeringer:",
+      "columns": [
+        "Innbetalinger ved salg av varige driftsmidler",
+        "5 464 172",
+        "110 000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Utbetalinger ved kjøp av varige driftsmidler",
+          "values": [
+            "-406 243",
+            "-10 937 221"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Innbetalinger ved salg spillerkontrakter",
+          "values": [
+            "25 529 714",
+            "51 092 024"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utbetalinger ved kjøp av finansielle eiendeler",
+          "values": [
+            "-5 008 207",
+            "-500 004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utbetalinger ved kjøp spillerkontrakter",
+          "values": [
+            "-32 322 441",
+            "-27 698 640"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Innbetalinger ved salg av finansielle eiendeler",
+          "values": [
+            "0",
+            "54 508 243"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Innbetalinger tilskudd spillemidler",
+          "values": [
+            "565 000",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": null,
+      "columns": [
+        "Netto kontantstrøm fra investeringsaktiviteter",
+        "-6 178 005",
+        "66 574 402"
+      ],
+      "rows": [
+        {
+          "rawLabel": "= Netto endring likviditet",
+          "values": [
+            "-11 204 406",
+            "13 540 647"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "## Rosenborg Ballklub konsern",
+      "columns": [
+        "RESULTATREGNSKAP",
+        "NOTER",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salgsinntekt",
+          "values": [
+            "",
+            "134 173 190",
+            "161 464 379"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen driftsinntekt",
+          "values": [
+            "",
+            "40 368 207",
+            "54 130 849"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM DRIFTSINNTEKTER",
+          "values": [
+            "1",
+            "174 541 397",
+            "215 595 228"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kostnader",
+          "values": [
+            "8",
+            "35 294 971",
+            "36 849 274"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lønnskostnad",
+          "values": [
+            "2",
+            "92 580 819",
+            "100 197 435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Av- og nedskrivning",
+          "values": [
+            "3, 4, 5",
+            "22 494 887",
+            "35 724 723"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen driftskostnad",
+          "values": [
+            "10",
+            "30 821 168",
+            "31 905 781"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Momsrefusjon",
+          "values": [
+            "",
+            "-374 738",
+            "-173 896"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM DRIFTSKOSTNADER",
+          "values": [
+            "",
+            "180 817 107",
+            "204 503 316"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DRIFTSRESULTAT",
+          "values": [
+            "",
+            "-6 275 710",
+            "11 091 912"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen renteinntekt",
+          "values": [
+            "",
+            "537 745",
+            "734 185"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansinntekter/kostnader",
+          "values": [
+            "",
+            "-504 978",
+            "51 110 415"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen rentekostnad",
+          "values": [
+            "",
+            "-6 931 764",
+            "-7 349 201"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTO FINANSRESULTAT",
+          "values": [
+            "",
+            "-6 898 997",
+            "44 495 399"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ORDINÆRT RESULTAT FØR SKATT",
+          "values": [
+            "",
+            "-13 174 707",
+            "55 587 311"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skattekostnad",
+          "values": [
+            "11",
+            "1 141 561",
+            "781 926"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ÅRSRESULTAT",
+          "values": [
+            "",
+            "-14 316 268",
+            "54 805 385"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MINORITETENS RESULTATANDEL",
+          "values": [
+            "",
+            "1 424 231",
+            "1 448 507"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MAJORITETENS RESULTATANDEL",
+          "values": [
+            "",
+            "-15 740 498",
+            "53 356 878"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 24,
+      "section": "# Rosenborg Ballklub konsern",
+      "columns": [
+        "BALANSE 31. DESEMBER",
+        "NOTER",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "EIENDELER",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ANLEGGSMIDLER",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Immatrielle eiendeler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Spillerkontrakter",
+          "values": [
+            "3",
+            "34 823 655",
+            "25 957 297"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utsatt skattefordel",
+          "values": [
+            "11",
+            "3 355 615",
+            "3 132 091"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varige driftsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Tomter, bygninger og annen fast eiendom",
+          "values": [
+            "4",
+            "306 787 478",
+            "274 282 061"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transp.midler, inventar, kontormaskiner",
+          "values": [
+            "5",
+            "7 860 618",
+            "6 967 403"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansielle anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Investeringer i datterselskap",
+          "values": [
+            "6",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer i aksjer og andeler",
+          "values": [
+            "",
+            "3 100 004",
+            "3 100 004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM ANLEGGSMIDLER",
+          "values": [
+            "",
+            "355 927 370",
+            "313 438 856"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "OMLØPSMIDLER",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Varelager",
+          "values": [
+            "",
+            "4 017 220",
+            "5 939 455"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fordringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kundefordringer",
+          "values": [
+            "",
+            "10 026 069",
+            "4 637 391"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre fordringer",
+          "values": [
+            "",
+            "22 288 895",
+            "57 273 641"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bankinnskudd, kontanter o.l.",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kasse, bank, postgiro",
+          "values": [
+            "12",
+            "35 397 226",
+            "43 313 661"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM OMLØPSMIDLER",
+          "values": [
+            "",
+            "71 729 410",
+            "111 164 148"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "SUM EIENDELER",
+          "values": [
+            "",
+            "427 656 780",
+            "424 603 004"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "# Rosenborg Ballklub konsern",
+      "columns": [
+        "BALANSE 31. DESEMBER",
+        "NOTER",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "EGENKAPITAL OG GJELD",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "EGENKAPITAL",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Opptjent egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen egenkapital",
+          "values": [
+            "9",
+            "180 707 971",
+            "197 066 744"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konsernets egenkapital",
+          "values": [
+            "",
+            "180 707 971",
+            "197 066 744"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Minoritetsinteresser",
+          "values": [
+            "",
+            "54 342 639",
+            "50 418 176"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM EGENKAPITAL",
+          "values": [
+            "",
+            "235 050 610",
+            "247 484 920"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GJELD",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Avsetning for forpliktelser",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utsatt skatt",
+          "values": [
+            "11",
+            "4 698 962",
+            "3 574 227"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensjonsforpliktelser",
+          "values": [
+            "9, 14",
+            "3 446 559",
+            "3 190 725"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen langsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Øvrig langsiktig gjeld",
+          "values": [
+            "7",
+            "2 500 000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gjeld til kredittinstitusjoner",
+          "values": [
+            "7",
+            "118 111 500",
+            "123 360 900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leverandørgjeld",
+          "values": [
+            "",
+            "15 100 360",
+            "6 256 557"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kassekreditt/byggelån",
+          "values": [
+            "7",
+            "20 187 713",
+            "5 655 498"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Betalbar skatt",
+          "values": [
+            "11",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skyldig offentlige avgifter",
+          "values": [
+            "",
+            "11 381 277",
+            "14 187 930"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen kortsiktig gjeld",
+          "values": [
+            "",
+            "17 179 799",
+            "20 892 248"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM GJELD",
+          "values": [
+            "",
+            "192 606 169",
+            "177 118 083"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "SUM GJELD OG EGENKAPITAL",
+          "values": [
+            "",
+            "427 656 780",
+            "424 603 004"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 27,
+      "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013",
+      "columns": [
+        "Driftsinntekt",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Billett- og arrangementsinntekter",
+          "values": [
+            "35 041 987",
+            "33 150 101"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "VIP-inntekter",
+          "values": [
+            "12 563 549",
+            "18 705 998"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Sponsor- og reklameinntekter",
+          "values": [
+            "53 991 237",
+            "52 657 350"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Salg og utleie spillere",
+          "values": [
+            "15 658 111",
+            "38 785 655"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "TV-inntekt",
+          "values": [
+            "19 707 492",
+            "17 501 120"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "UEFA-inntekt",
+          "values": [
+            "5 441 256",
+            "20 135 529"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Ekstern utleie LS AS",
+          "values": [
+            "4 739 943",
+            "5 292 690"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Lisensprodukter",
+          "values": [
+            "7 843 620",
+            "8 249 601"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Annen inntekt",
+          "values": [
+            "19 554 202",
+            "21 117 184"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "SUM driftsinntekt",
+          "values": [
+            "174 541 397",
+            "215 595 228"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 27,
+      "section": null,
+      "columns": [
+        "Lønnskostnader",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Lønninger",
+          "values": [
+            "73 752 563",
+            "78 851 808"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Arbeidsgiveravgift",
+          "values": [
+            "11 071 651",
+            "12 100 273"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Pensjonskostnad",
+          "values": [
+            "885 839",
+            "1 859 543"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Andre ytelser",
+          "values": [
+            "6 870 766",
+            "7 385 811"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "SUM lønnskostnader",
+          "values": [
+            "92 580 819",
+            "100 197 435"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 27,
+      "section": "### Note 3 Spillerkontrakter",
+      "columns": [
+        "",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anskaffelseskost pr. 01.01.",
+          "values": [
+            "53 221 986",
+            "73 102 292"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang i året",
+          "values": [
+            "32 322 441",
+            "27 698 640"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avgang i året",
+          "values": [
+            "29 020 997",
+            "15 940 351"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Akk. av-/nedskrivning pr. 31.12.",
+          "values": [
+            "21 699 774",
+            "58 903 284"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verdi pr. 31.12.",
+          "values": [
+            "34 823 655",
+            "25 957 297"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets av-/nedskrivning",
+          "values": [
+            "13 584 479",
+            "21 733 180"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 27,
+      "section": "### Note 4 Tomter, bygninger og annen fast eiendom",
+      "columns": [
+        "",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anskaffelseskost pr. 01.01.",
+          "values": [
+            "366 935 515",
+            "399 982 055"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang i året",
+          "values": [
+            "42 938 489",
+            "273 029"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avgang i året",
+          "values": [
+            "-",
+            "24 535 244"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Akk av-/nedskrivning pr. 31.12.",
+          "values": [
+            "103 086 526",
+            "101 437 779"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verdi pr. 31.12.",
+          "values": [
+            "306 787 478",
+            "274 282 061"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets av-/nedskrivning",
+          "values": [
+            "4 972 084",
+            "5 965 928"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avskrivningsplan",
+          "values": [
+            "0-10%",
+            "0-10%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 5 / #### Driftsløsøre",
+      "columns": [
+        "",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anskaffelseskost pr. 01.01.",
+          "values": [
+            "37 267 950",
+            "27 740 096"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang i året",
+          "values": [
+            "2 876 321",
+            "743 529"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilskudd spillemidler",
+          "values": [
+            "-565 000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avgang i året",
+          "values": [
+            "-2 940 772",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Akk av-/nedskrivning pr. 31.12.",
+          "values": [
+            "28 777 881",
+            "21 516 222"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verdi pr. 31.12.",
+          "values": [
+            "7 860 618",
+            "6 967 403"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets av-/nedskrivning",
+          "values": [
+            "3 938 323",
+            "8 025 615"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avskrivningsplan",
+          "values": [
+            "10-30%",
+            "10-30%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": "### Note 6 / #### Datterselskap av Rosenborg Ballklub",
+      "columns": [
+        "",
+        "Ant aksjer",
+        "Pålydende",
+        "Eierandel",
+        "Aksjekapital"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Rosenborg Sport AS",
+          "values": [
+            "500",
+            "1 000",
+            "100 %",
+            "500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rosenborg Arena AS",
+          "values": [
+            "500",
+            "1 000",
+            "100 %",
+            "500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lerkendal Stadion AS",
+          "values": [
+            "64 916",
+            "1 000",
+            "58,75 %",
+            "110 500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abrahallen AS",
+          "values": [
+            "667 000",
+            "1",
+            "66,70 %",
+            "667 000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": "#### Lerkendal Stadion as – verdien av og fordelingen av aksjene i selskapet:",
+      "columns": [
+        "",
+        "TOTAL AK pr 31 12 13"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Rosenborg Ballklub",
+          "values": [
+            "64 916 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trondheim kommune",
+          "values": [
+            "12 500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DnB Livsforsikring ASA",
+          "values": [
+            "8 544 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fokus Bank ASA",
+          "values": [
+            "8 540 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Siemens AS",
+          "values": [
+            "5 500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skanska Bolig AS",
+          "values": [
+            "2 500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IK Lykke AS",
+          "values": [
+            "5 000 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eiendomsspar AS",
+          "values": [
+            "3 000 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM",
+          "values": [
+            "110 500 000"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "**Note 7** Byggelån kr 16 844 748,- i Abrahallen AS. Pant i eiendom på festet grunn, driftstilbehør og factoringspant stilt som sikkerhet for gjelden: 25",
+          "values": [
+            "000,-."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I tillegg har Rosenborg Ballklub stillet selvskyldnerkausjon til kr 19",
+          "values": [
+            "000,-."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 29,
+      "section": "### Rentebinding:",
+      "columns": [
+        "Beløp",
+        "Nominell rentesats",
+        "Varighet"
+      ],
+      "rows": [
+        {
+          "rawLabel": "15 125 000",
+          "values": [
+            "5,62 %",
+            "28.11.2016"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "33 148 750",
+          "values": [
+            "5,69 %",
+            "16.10.2017"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "### Ansvarlig lån:",
+      "columns": [
+        "Variable kostnader",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Driftskostnader kamper",
+          "values": [
+            "3 270 461",
+            "3 773 929"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Reklame-, sponsor og VIP-kostnader",
+          "values": [
+            "14 763 103",
+            "13 338 777"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Kjøp spillere og overgangskostnader",
+          "values": [
+            "1 273 978",
+            "1 496 991"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Andre kostnader",
+          "values": [
+            "15 987 430",
+            "18 239 577"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Sum variable kostnader",
+          "values": [
+            "35 294 971",
+            "36 849 274"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 29,
+      "section": "### Note 9 Egenkapital",
+      "columns": [
+        "Annen egenkapital:",
+        "majoritet",
+        "minoritet",
+        "total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Annen egenkapital 01.01.13",
+          "values": [
+            "197 066 744",
+            "50 418 176",
+            "247 484 920"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets resultat",
+          "values": [
+            "(15 740 498)",
+            "1 424 231",
+            "(14 316 268)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Innarbeidelse av pensjonsforpliktelse",
+          "values": [
+            "(618 042)",
+            "",
+            "(618 042)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Minoritetseler i Abrahallen AS stiftet i 2013",
+          "values": [
+            "",
+            "2 500 000",
+            "2 500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum annen egenkapital 31.12.13",
+          "values": [
+            "180 708 204",
+            "54 342 407",
+            "235 050 610"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "### Note 10 Godtgjørelse til revisor",
+      "columns": [
+        "Godtgjørelse til revisor for hele konsernet",
+        "567 457"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Dette fordeler seg slik:",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lovpålagt revisjon",
+          "values": [
+            "302 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Attestasjonstjenester og konsulentbistand",
+          "values": [
+            "237 357"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Godtgjørelse til Deloitte Advokatfirma AS utgjør",
+          "values": [
+            "28 100"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "### Note 11 Skatt",
+      "columns": [
+        "",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Grunnlag for betalbar skatt",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets skattekostnad",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Betalbar skatt 28%",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endring utsatt skatt",
+          "values": [
+            "950 963",
+            "-111 477"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endring utsatt skatt som følge av ny skattesats 27 %",
+          "values": [
+            "-49 753",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Innarbeidet pensjonsforpliktelse, se note 9",
+          "values": [
+            "240 350",
+            "893 403"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skattekostnad i regnskapet",
+          "values": [
+            "1 141 561",
+            "781 926"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 14 (forts) / #### Lukket kollektiv pensjonsordning",
+      "columns": [
+        "PENSJONSKOSTNAD",
+        "2012",
+        "2013"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Årets pensjonsopptjening",
+          "values": [
+            "0",
+            "226 080"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rentekostnad av pensjonsforpliktelsen",
+          "values": [
+            "0",
+            "258 913"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avkastning på pensjonsmidler",
+          "values": [
+            "0",
+            "-275 793"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrasjonskostnader",
+          "values": [
+            "0",
+            "97 933"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodisert arbeidsgiveravgift før evt avvik PBO/midler",
+          "values": [
+            "0",
+            "43 306"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultatført pensjonskostnad",
+          "values": [
+            "0",
+            "350 438"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 31,
+      "section": "#### DEMOGRAFISKE DATA",
+      "columns": [
+        "Antall ansatte aktive",
+        "0",
+        "5"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Antall pensjonister",
+          "values": [
+            "0",
+            "2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totalt antall medlemmer, ansatte",
+          "values": [
+            "0",
+            "7"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "#### ØKONOMISKE FORUTSETNINGER",
+      "columns": [
+        "Diskonteringsrente",
+        "3,90 %",
+        "4,00 %"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Forventet årlig avkastning på pensjonsmidlene",
+          "values": [
+            "4,80 %",
+            "4,40 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forventet årlig lønnsregulering",
+          "values": [
+            "4,00 %",
+            "2,50 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inflasjon",
+          "values": [
+            "2,50 %",
+            "2,50 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forv. årlig regulering av grunnbeløpet i Folketrygden G",
+          "values": [
+            "3,75 %",
+            "3,50 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forventet årlig pensjonsregulering",
+          "values": [
+            "0,70 %",
+            "0,60 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arbeidsgiveravgift sats",
+          "values": [
+            "14,10 %",
+            "14,10 %"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "#### AKTUARMESSIGE FORUTSETNINGER",
+      "columns": [
+        "Uførehetsskala",
+        "IR73",
+        "IR73"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Dødelighetsskala ektefellepensjon",
+          "values": [
+            "K2005",
+            "K2013"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dødelighetsskala alderspensjon",
+          "values": [
+            "K2005",
+            "K2013"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "#### UTVIKLING AV BALANSEN",
+      "columns": [
+        "Påløpte pensjonsforpliktelser",
+        "-6 175 571",
+        "-6 545 653"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Pensjonsmidler",
+          "values": [
+            "5 423 255",
+            "6 204 130"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Netto pensjonsforpliktelser før AGA",
+          "values": [
+            "-752 316",
+            "-341 523"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Periodisert arbeidsgiveravgift",
+          "values": [
+            "-106 077",
+            "-48 155"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Netto pensjonsforpliktelser etter AGA",
+          "values": [
+            "-858 392",
+            "-389 678"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ikke resultatførte estimatendringer og avvik",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ikke resultatført planendring",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Netto pensjonsforpliktelser/midler",
+          "values": [
+            "-858 392",
+            "-389 678"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 32,
+      "section": "# Rosenborg Ballklub konsern",
+      "columns": [
+        "Drift",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Resultat før skatt",
+          "values": [
+            "-13 174 707",
+            "55 587 311"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodens betalte skatt",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Av- /nedskrivninger",
+          "values": [
+            "22 494 887",
+            "35 834 723"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gevinst ved salg spillerkontrakter",
+          "values": [
+            "-15 658 111",
+            "-38 723 155"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gevinst / tap ved salg anleggsmidler",
+          "values": [
+            "-2 523 400",
+            "-110 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endring i varelager",
+          "values": [
+            "1 922 235",
+            "-188 756"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endring kundefordringer / andre fordringer",
+          "values": [
+            "29 596 068",
+            "-38 740 438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endringer leverandørgjeld",
+          "values": [
+            "8 843 803",
+            "-2 327 282"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endring i kassakreditt",
+          "values": [
+            "14 532 215",
+            "-21 864 265"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endring i langsiktig gjeld",
+          "values": [
+            "-2 749 400",
+            "-8 834 717"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direkte postering mot egenkapitalen",
+          "values": [
+            "-618 042",
+            "-2 297 322"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Justering av aksjesalgsgevinst Rosenborg Eiendom",
+          "values": [
+            "0",
+            "-8 910 762"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endring pensjonsforpliktelse",
+          "values": [
+            "15 484",
+            "3 190 725"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Endring tidsavgrensninger",
+          "values": [
+            "-6 519 102",
+            "-220 051"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Netto kontantstrøm fra operasjonelle aktiviteter",
+          "values": [
+            "36 161 930",
+            "-27 603 989"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Investeringer",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Innbetalinger Abrahallen fra Malvik IL",
+          "values": [
+            "2 500 000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utbetalinger ved kjøp av varige driftsmidler",
+          "values": [
+            "-45 814 810",
+            "-906 558"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Innbetalinger ved salg av varige driftsmidler",
+          "values": [
+            "5 464 172",
+            "24 645 244"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Innbetalinger ved salg av immaterielle eiendeler",
+          "values": [
+            "25 529 714",
+            "51 092 024"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utbetalinger ved kjøp av immaterielle eiendeler",
+          "values": [
+            "-32 322 441",
+            "-27 698 640"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Innbetalinger tilskudd spillemidler",
+          "values": [
+            "565 000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utbetalinger vedr finansielle eiendeler",
+          "values": [
+            "0",
+            "-500 004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Netto kontantstrøm fra investeringsaktiviteter",
+          "values": [
+            "-44 078 365",
+            "46 632 066"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "= Netto endring likviditet",
+          "values": [
+            "-7 916 435",
+            "19 028 077"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "IB kontanter og finansielle omløpsmidler",
+          "values": [
+            "43 313 661",
+            "24 285 584"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "UB kontanter og finansielle omløpsmidler",
+          "values": [
+            "35 397 226",
+            "43 313 661"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 2,
+      "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum inntekter",
+      "target": "163 910 120",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum inntekter",
+      "target": "201 234 284",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum kostnader",
+      "target": "181 542 131",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum kostnader",
+      "target": "200 587 406",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum finansinntekter",
+      "target": "742 313",
+      "addendCount": 2,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum finansinntekter",
+      "target": "53 486 829",
+      "addendCount": 3,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum finanskostnader",
+      "target": "503 400",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum finanskostnader",
+      "target": "4 896 810",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum overføringer og disponeringer",
+      "target": "-17 393 097",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-51940381"
+    },
+    {
+      "page": 2,
+      "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum overføringer og disponeringer",
+      "target": "49 236 898",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "196300710"
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "34 823 655",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "25 957 297",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "37 365 550",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "43 664 602",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "69 873 426",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "54 732 654",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "totalLabel": "Sum anleggsmidler",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum varer",
+      "target": "3 708 424",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum varer",
+      "target": "5 802 704",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum fordringer",
+      "target": "33 339 035",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum fordringer",
+      "target": "59 696 304",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum bankinnskudd, kontanter og lignende",
+      "target": "7 681 683",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum bankinnskudd, kontanter og lignende",
+      "target": "18 886 089",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "totalLabel": "Sum omløpsmidler",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 4,
+      "section": "## BALANSE",
+      "likelyRelevant": false,
+      "totalLabel": "SUM EIENDELER",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 5,
+      "section": "# Egenkapital / # Innskutt egenkapital",
+      "likelyRelevant": false,
+      "totalLabel": "Sum innskutt egenkapital",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 5,
+      "section": "# Langsiktig gjeld / # Annen langsiktig gjeld",
+      "likelyRelevant": false,
+      "totalLabel": "Sum annen langsiktig gjeld",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 5,
+      "section": "# Kortsiktig gjeld",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "44 237 756",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-18497879"
+    },
+    {
+      "page": 5,
+      "section": "# Kortsiktig gjeld",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "47 814 493",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-13690501"
+    },
+    {
+      "page": 6,
+      "section": "## KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum inntekter",
+      "target": "174 541 397",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "## KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum inntekter",
+      "target": "215 595 228",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "## KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum kostnader",
+      "target": "180 817 107",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "## KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum kostnader",
+      "target": "204 503 316",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "## KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum finansinntekter",
+      "target": "537 745",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-6275710"
+    },
+    {
+      "page": 6,
+      "section": "## KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum finansinntekter",
+      "target": "734 185",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "11091912"
+    },
+    {
+      "page": 6,
+      "section": "## KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum finanskostnader",
+      "target": "7 436 742",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "## KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum finanskostnader",
+      "target": "-43 761 214",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "38 179 270",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "29 089 388",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "314 648 096",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "281 249 464",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "3 100 004",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "3 100 004",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "totalLabel": "Sum anleggsmidler",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum varer",
+      "target": "4 017 220",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum varer",
+      "target": "5 939 455",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum fordringer",
+      "target": "32 314 964",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum fordringer",
+      "target": "61 911 032",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum bankinnskudd, kontanter og lignende",
+      "target": "35 397 226",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum bankinnskudd, kontanter og lignende",
+      "target": "43 313 661",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "totalLabel": "Sum omløpsmidler",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 7,
+      "section": "ROSENBORG BALLKLUB / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "totalLabel": "SUM EIENDELER",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum opptjent egenkapital",
+      "target": "235 050 610",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-180707971"
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum opptjent egenkapital",
+      "target": "247 484 920",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-197066744"
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Sum egenkapital",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum avsetninger for forpliktelser",
+      "target": "8 145 521",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum avsetninger for forpliktelser",
+      "target": "6 764 952",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum annen langsiktig gjeld",
+      "target": "120 611 500",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum annen langsiktig gjeld",
+      "target": "123 360 900",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Sum langsiktig gjeld",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "63 849 149",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "46 992 233",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Sum gjeld",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 8,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "SUM EGENKAPITAL OG GJELD",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 15,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "SUM DRIFTSINNTEKTER",
+      "target": "163 910 121",
+      "addendCount": 8,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 8 rubros enteros)"
+    },
+    {
+      "page": 15,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "SUM DRIFTSINNTEKTER",
+      "target": "201 234 284",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "SUM DRIFTSKOSTNADER",
+      "target": "181 542 132",
+      "addendCount": 11,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "SUM DRIFTSKOSTNADER",
+      "target": "200 587 406",
+      "addendCount": 11,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "SUM ANLEGGSMIDLER",
+      "target": "142 062 631",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "SUM ANLEGGSMIDLER",
+      "target": "124 354 553",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "SUM OMLØPSMIDLER",
+      "target": "44 729 143",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "SUM OMLØPSMIDLER",
+      "target": "84 385 097",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": false,
+      "totalLabel": "SUM EIENDELER",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 16,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "SUM EGENKAPITAL",
+      "target": "141 654 017",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "SUM EGENKAPITAL",
+      "target": "159 665 157",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "SUM GJELD",
+      "target": "45 137 756",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "SUM GJELD",
+      "target": "49 074 493",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# Rosenborg Ballklub",
+      "likelyRelevant": false,
+      "totalLabel": "SUM EGENKAPITAL OG GJELD",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 18,
+      "section": "# Rosenborg Ballklub / ## NOTER TIL ÅRSREGNSKAPET FOR 2013",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Sum lønnskostnad",
+      "target": "87 613 559",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# Rosenborg Ballklub / ## NOTER TIL ÅRSREGNSKAPET FOR 2013",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum lønnskostnad",
+      "target": "94 130 253",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "Note 8 Lån/gjeld til foretak i samme konsern / Lån",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Sum lån pr. 31.12.13",
+      "target": "25 632 565",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-14500000"
+    },
+    {
+      "page": 19,
+      "section": "Gjeld",
+      "likelyRelevant": false,
+      "totalLabel": "Sum gjeld pr. 31.12.13",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 19,
+      "section": "Note 9 Kundefordringer og andre fordringer",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Sum andre fordringer",
+      "target": "25 298 057",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-101797"
+    },
+    {
+      "page": 20,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Sum",
+      "target": "8 249 407",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Sum annen kortsiktig gjeld",
+      "target": "17 490 470",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "## Rosenborg Ballklub konsern",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "SUM DRIFTSINNTEKTER",
+      "target": "174 541 397",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "## Rosenborg Ballklub konsern",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "SUM DRIFTSINNTEKTER",
+      "target": "215 595 228",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "## Rosenborg Ballklub konsern",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "SUM DRIFTSKOSTNADER",
+      "target": "180 817 107",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "## Rosenborg Ballklub konsern",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "SUM DRIFTSKOSTNADER",
+      "target": "204 503 316",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 5 rubros enteros)"
+    },
+    {
+      "page": 24,
+      "section": "# Rosenborg Ballklub konsern",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "SUM ANLEGGSMIDLER",
+      "target": "355 927 370",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "# Rosenborg Ballklub konsern",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "SUM ANLEGGSMIDLER",
+      "target": "313 438 856",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "# Rosenborg Ballklub konsern",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "SUM OMLØPSMIDLER",
+      "target": "71 729 410",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "# Rosenborg Ballklub konsern",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "SUM OMLØPSMIDLER",
+      "target": "111 164 148",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "# Rosenborg Ballklub konsern",
+      "likelyRelevant": false,
+      "totalLabel": "SUM EIENDELER",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 25,
+      "section": "# Rosenborg Ballklub konsern",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "SUM EGENKAPITAL",
+      "target": "235 050 610",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "180707971"
+    },
+    {
+      "page": 25,
+      "section": "# Rosenborg Ballklub konsern",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "SUM EGENKAPITAL",
+      "target": "247 484 920",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "197066744"
+    },
+    {
+      "page": 25,
+      "section": "# Rosenborg Ballklub konsern",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "SUM GJELD",
+      "target": "192 606 169",
+      "addendCount": 9,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 9 rubros enteros)"
+    },
+    {
+      "page": 25,
+      "section": "# Rosenborg Ballklub konsern",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "SUM GJELD",
+      "target": "177 118 083",
+      "addendCount": 9,
+      "closes": true,
+      "diff": "2",
+      "how": "redondeo (diferencia 2 en 9 rubros enteros)"
+    },
+    {
+      "page": 25,
+      "section": "# Rosenborg Ballklub konsern",
+      "likelyRelevant": false,
+      "totalLabel": "SUM GJELD OG EGENKAPITAL",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 27,
+      "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "SUM driftsinntekt",
+      "target": "174 541 397",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 27,
+      "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "SUM driftsinntekt",
+      "target": "215 595 228",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 27,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "SUM lønnskostnader",
+      "target": "92 580 819",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 27,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "SUM lønnskostnader",
+      "target": "100 197 435",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 28,
+      "section": "#### Lerkendal Stadion as – verdien av og fordelingen av aksjene i selskapet:",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "SUM",
+      "target": "110 500 000",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "### Ansvarlig lån:",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Sum variable kostnader",
+      "target": "35 294 971",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    },
+    {
+      "page": 29,
+      "section": "### Ansvarlig lån:",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum variable kostnader",
+      "target": "36 849 274",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "### Note 9 Egenkapital",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Sum annen egenkapital 31.12.13",
+      "target": "180 708 204",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "### Note 9 Egenkapital",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum annen egenkapital 31.12.13",
+      "target": "54 342 407",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "### Note 9 Egenkapital",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum annen egenkapital 31.12.13",
+      "target": "235 050 610",
+      "addendCount": 4,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/rosenborg-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"rosenborg\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+    "5 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "7 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "17 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

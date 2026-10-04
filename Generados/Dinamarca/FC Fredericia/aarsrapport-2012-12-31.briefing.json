@@ -1,0 +1,243 @@
+{
+  "club": "fredericia-dk",
+  "year": 2012,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Dinamarca/FC Fredericia/aarsrapport-2012-12-31.md",
+  "generatedAt": "2026-09-30T21:59:46.800Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 105,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 6,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 12,
+      "section": "DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Selskabskapital",
+          "values": [
+            "2.093.415",
+            "2.093.415"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overført resultat",
+          "values": [
+            "1.416.680",
+            "5.631.554"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egenkapital",
+          "values": [
+            "3.510.095",
+            "7.724.969"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leverandører af varer og tjenesteydelser",
+          "values": [
+            "410.745",
+            "487.861"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anden gæld",
+          "values": [
+            "1.561.192",
+            "955.027"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodeafgrænsningsposter",
+          "values": [
+            "396.250",
+            "402.250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortfristet gæld",
+          "values": [
+            "2.368.187",
+            "1.845.138"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gældsforpligtelser",
+          "values": [
+            "2.368.187",
+            "1.845.138"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passiver",
+          "values": [
+            "5.878.282",
+            "9.570.107"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "DKK DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Egenkapital 1. januar",
+          "values": [
+            "2.093.415",
+            "5.631.554",
+            "7.724.969"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets resultat",
+          "values": [
+            "-4.214.874",
+            "-4.214.874"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egenkapital 31. december",
+          "values": [
+            "2.093.415",
+            "1.416.680",
+            "3.510.095"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "DKK DKK DKK DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Selskabskapital 1. januar",
+          "values": [
+            "2.093.415",
+            "1.024.915",
+            "810.049",
+            "810.049",
+            "519.676"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitalforhøjelse 0 1.068.500 214.866",
+          "values": [
+            "290.373"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "Kapitalnedsættelse 0 0 0 0 0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Selskabskapital",
+          "values": [
+            "31."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "december",
+          "values": [
+            "2.093.415",
+            "2.093.415",
+            "1.024.915",
+            "810.049",
+            "810.049"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Materielle anlægsaktiver",
+          "values": [
+            "44.896",
+            "44.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgodehavender fra salg og tjenesteydelser",
+          "values": [
+            "-62.010",
+            "-43.800"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "Ikke aktiveret udskudt skatteaktiv 1.928.585 0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Skattemæssigt underskud til fremførsel",
+          "values": [
+            "-1.911.471",
+            "-1.001.464"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overført til udskudt skatteaktiv",
+          "values": [
+            "1.000.664"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "dk",
+    "query": "FC Fredericia",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

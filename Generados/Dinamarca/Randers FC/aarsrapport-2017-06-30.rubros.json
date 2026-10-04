@@ -1,0 +1,209 @@
+{
+  "md": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.md",
+  "pdf": "Clubes/Dinamarca/Randers FC/aarsrapport-2017-06-30.pdf",
+  "club": "randers-dk",
+  "year": 2017,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:59:59.631Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 17,
+    "notasUsadas": []
+  },
+  "ladoConocido": 17,
+  "rubros": [
+    {
+      "label": "Sponsorindtægter",
+      "lado": "revenue",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        29.350146
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por patrocinio"
+    },
+    {
+      "label": "TV-indtægter",
+      "lado": "revenue",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        19.083597
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por derechos de televisión"
+    },
+    {
+      "label": "Entré og kampindtægter",
+      "lado": "revenue",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        5.964431
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por taquilla y partidos"
+    },
+    {
+      "label": "Øvrige indtægter",
+      "lado": "revenue",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        11.092966
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Sponsorudgifter",
+      "lado": "expense",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        -5.583897
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de patrocinio"
+    },
+    {
+      "label": "Kampafvikling",
+      "lado": "expense",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        -8.77269
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de organización de partidos"
+    },
+    {
+      "label": "Sportslige udgifter i øvrigt",
+      "lado": "expense",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        -3.864448
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros gastos deportivos"
+    },
+    {
+      "label": "Talentudvikling",
+      "lado": "expense",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        -3.435689
+      ],
+      "origen": "estado 1",
+      "glosa": "Desarrollo de talento"
+    },
+    {
+      "label": "Transferudgifter og leje af spillere",
+      "lado": "expense",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        -0.478185
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de traspasos y cesión de jugadores"
+    },
+    {
+      "label": "Løn- og personaleomkostninger",
+      "lado": "expense",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        -28.641254
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Øvrige udgifter",
+      "lado": "expense",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        -0.137186
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Udgifter Lounge og Skybokse",
+      "lado": "expense",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        -3.813358
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de salas VIP y palcos"
+    },
+    {
+      "label": "Løn- og personaleomkostninger, administration",
+      "lado": "expense",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        -8.232858
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de personal, administración"
+    },
+    {
+      "label": "Administrationsomkostninger",
+      "lado": "expense",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        -2.482747
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Afskrivninger, anlægsaktiver",
+      "lado": "expense",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        -5.665981
+      ],
+      "origen": "estado 1",
+      "glosa": "Amortización de activos fijos"
+    },
+    {
+      "label": "Finansielle indtægter",
+      "lado": "revenue",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        0.186003
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Finansielle omkostninger",
+      "lado": "expense",
+      "page": 11,
+      "section": "Randers FC A/S",
+      "values": [
+        -0.909622
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos financieros"
+    }
+  ]
+}

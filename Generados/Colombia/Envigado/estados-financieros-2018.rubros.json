@@ -1,0 +1,2272 @@
+{
+  "md": "Clubes/Colombia/Envigado/estados-financieros-2018.md",
+  "pdf": "Clubes/Colombia/Envigado/estados-financieros-2018.pdf",
+  "club": "envigado",
+  "year": 2018,
+  "numberFormat": "us (coma miles, punto decimal)",
+  "generatedAt": "2026-09-30T21:58:12.324Z",
+  "tieOuts": {
+    "cierran": 48,
+    "noCierran": 12
+  },
+  "warnings": [
+    "11 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "76 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 205,
+    "notasUsadas": [
+      "46"
+    ]
+  },
+  "ladoConocido": 204,
+  "rubros": [
+    {
+      "label": "Diferencias en cambio en negocios del extranjero (Ingreso)",
+      "lado": "revenue",
+      "page": 31,
+      "section": "## 29. Estado de resultados – Otro Resultado Integral",
+      "values": [
+        1419.162838
+      ],
+      "origen": "estado 50",
+      "glosa": "Diferencias en cambio en negocios del extranjero (Ingreso)"
+    },
+    {
+      "label": "Diferencias en cambio en negocios del extranjero (Gasto)",
+      "lado": "expense",
+      "page": 31,
+      "section": "## 29. Estado de resultados – Otro Resultado Integral",
+      "values": [
+        -96.619373
+      ],
+      "origen": "estado 50",
+      "glosa": "Diferencias en cambio en negocios del extranjero (Gasto)"
+    },
+    {
+      "label": "Construcciones y edificaciones",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        644826.191
+      ],
+      "origen": "estado 46",
+      "glosa": "Construcciones y edificaciones"
+    },
+    {
+      "label": "Muebles y enseres",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        16112.664
+      ],
+      "origen": "estado 46",
+      "glosa": "Muebles y enseres"
+    },
+    {
+      "label": "Afiliaciones y sostenimiento",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        119866.687
+      ],
+      "origen": "estado 46",
+      "glosa": "Afiliaciones y sostenimiento"
+    },
+    {
+      "label": "Sustracción y hurto",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        933.706
+      ],
+      "origen": "estado 46",
+      "glosa": "Sustracción y hurto"
+    },
+    {
+      "label": "Flota y equipo de transporte",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        1275.9
+      ],
+      "origen": "estado 46",
+      "glosa": "Flota y equipo de transporte"
+    },
+    {
+      "label": "Responsabilidad civil y extra",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        1426.612
+      ],
+      "origen": "estado 46",
+      "glosa": "Responsabilidad civil y extra"
+    },
+    {
+      "label": "Vuelo",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        1219.241
+      ],
+      "origen": "estado 46",
+      "glosa": "Vuelo"
+    },
+    {
+      "label": "Aseo y vigilancia",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        526
+      ],
+      "origen": "estado 46",
+      "glosa": "Aseo y vigilancia"
+    },
+    {
+      "label": "Asistencia técnica",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        33267.027
+      ],
+      "origen": "estado 46",
+      "glosa": "Asistencia técnica"
+    },
+    {
+      "label": "Acueducto y alcantarillado",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        3277.946
+      ],
+      "origen": "estado 46",
+      "glosa": "Acueducto y alcantarillado"
+    },
+    {
+      "label": "Teléfono",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        1997.312
+      ],
+      "origen": "estado 46",
+      "glosa": "Teléfono"
+    },
+    {
+      "label": "Correo portes",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        1769.969
+      ],
+      "origen": "estado 46",
+      "glosa": "Correo portes"
+    },
+    {
+      "label": "Transporte fletes",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        86429.765
+      ],
+      "origen": "estado 46",
+      "glosa": "Transporte fletes"
+    },
+    {
+      "label": "Gas",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        67
+      ],
+      "origen": "estado 46",
+      "glosa": "Gas"
+    },
+    {
+      "label": "Propaganda y publicidad",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        127036.302
+      ],
+      "origen": "estado 46",
+      "glosa": "Propaganda y publicidad"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        68
+      ],
+      "origen": "estado 46",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Notariales",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        93.642
+      ],
+      "origen": "estado 46",
+      "glosa": "Notariales"
+    },
+    {
+      "label": "Tramites y licencias",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        7119.013
+      ],
+      "origen": "estado 46",
+      "glosa": "Tramites y licencias"
+    },
+    {
+      "label": "Terrenos",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        47445.137
+      ],
+      "origen": "estado 46",
+      "glosa": "Terrenos"
+    },
+    {
+      "label": "Construcciones y edificaciones",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        1736.101
+      ],
+      "origen": "estado 46",
+      "glosa": "Construcciones y edificaciones"
+    },
+    {
+      "label": "Maquinaria y equipo",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        1475.395
+      ],
+      "origen": "estado 46",
+      "glosa": "Maquinaria y equipo"
+    },
+    {
+      "label": "Flota y equipo de transporte",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        40789.928
+      ],
+      "origen": "estado 46",
+      "glosa": "Flota y equipo de transporte"
+    },
+    {
+      "label": "Instalaciones eléctricas",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        1150
+      ],
+      "origen": "estado 46",
+      "glosa": "Instalaciones eléctricas"
+    },
+    {
+      "label": "Reparaciones locativas",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        955.6
+      ],
+      "origen": "estado 46",
+      "glosa": "Reparaciones locativas"
+    },
+    {
+      "label": "Alojamiento y manutención",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        349826.383
+      ],
+      "origen": "estado 46",
+      "glosa": "Alojamiento y manutención"
+    },
+    {
+      "label": "Pasajes aéreos",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        167777.693
+      ],
+      "origen": "estado 46",
+      "glosa": "Pasajes aéreos"
+    },
+    {
+      "label": "Pasajes terrestres",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        3654
+      ],
+      "origen": "estado 46",
+      "glosa": "Pasajes terrestres"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        460
+      ],
+      "origen": "estado 46",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Comisiones",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        435658.791
+      ],
+      "origen": "estado 46",
+      "glosa": "Comisiones"
+    },
+    {
+      "label": "Gastos de representación",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        16865.802
+      ],
+      "origen": "estado 46",
+      "glosa": "Gastos de representación"
+    },
+    {
+      "label": "Elementos de aseo.",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        4482.94
+      ],
+      "origen": "estado 46",
+      "glosa": "Elementos de aseo."
+    },
+    {
+      "label": "Combustibles y lubricantes",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        9446.508
+      ],
+      "origen": "estado 46",
+      "glosa": "Combustibles y lubricantes"
+    },
+    {
+      "label": "Taxis y buses",
+      "lado": "expense",
+      "page": 29,
+      "section": "",
+      "values": [
+        216
+      ],
+      "origen": "estado 46",
+      "glosa": "Taxis y buses"
+    },
+    {
+      "label": "Contribuciones",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        3881
+      ],
+      "origen": "estado 43",
+      "glosa": "Contribuciones"
+    },
+    {
+      "label": "Afiliaciones y sostenimiento",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        13929.242
+      ],
+      "origen": "estado 43",
+      "glosa": "Afiliaciones y sostenimiento"
+    },
+    {
+      "label": "Vuelo",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        84.543
+      ],
+      "origen": "estado 43",
+      "glosa": "Vuelo"
+    },
+    {
+      "label": "Aseo y vigilancia",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        284.8
+      ],
+      "origen": "estado 43",
+      "glosa": "Aseo y vigilancia"
+    },
+    {
+      "label": "Acueducto y alcantarillado",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        1284.816
+      ],
+      "origen": "estado 43",
+      "glosa": "Acueducto y alcantarillado"
+    },
+    {
+      "label": "Energía eléctrica",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        421.406
+      ],
+      "origen": "estado 43",
+      "glosa": "Energía eléctrica"
+    },
+    {
+      "label": "Teléfono",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        17414.773
+      ],
+      "origen": "estado 43",
+      "glosa": "Teléfono"
+    },
+    {
+      "label": "Correo portes y telegramas",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        868.057
+      ],
+      "origen": "estado 43",
+      "glosa": "Correo portes y telegramas"
+    },
+    {
+      "label": "Transporte fletes y acarreos",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        6094.75
+      ],
+      "origen": "estado 43",
+      "glosa": "Transporte fletes y acarreos"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        3345
+      ],
+      "origen": "estado 43",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Notariales",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        25.704
+      ],
+      "origen": "estado 43",
+      "glosa": "Notariales"
+    },
+    {
+      "label": "Registro mercantil",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        2988.7
+      ],
+      "origen": "estado 43",
+      "glosa": "Registro mercantil"
+    },
+    {
+      "label": "Tramites y licencias",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        32.284
+      ],
+      "origen": "estado 43",
+      "glosa": "Tramites y licencias"
+    },
+    {
+      "label": "Construcciones y edificaciones",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        32779.189
+      ],
+      "origen": "estado 43",
+      "glosa": "Construcciones y edificaciones"
+    },
+    {
+      "label": "Maquinaria y equipo",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        243.42
+      ],
+      "origen": "estado 43",
+      "glosa": "Maquinaria y equipo"
+    },
+    {
+      "label": "Flota y equipo de transporte",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        28.2
+      ],
+      "origen": "estado 43",
+      "glosa": "Flota y equipo de transporte"
+    },
+    {
+      "label": "Instalaciones eléctricas",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        2985.7
+      ],
+      "origen": "estado 43",
+      "glosa": "Instalaciones eléctricas"
+    },
+    {
+      "label": "Reparaciones locativas",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        373.8
+      ],
+      "origen": "estado 43",
+      "glosa": "Reparaciones locativas"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        167.227
+      ],
+      "origen": "estado 43",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Alojamiento y manutención",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        29444.358
+      ],
+      "origen": "estado 43",
+      "glosa": "Alojamiento y manutención"
+    },
+    {
+      "label": "Pasajes aéreos",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        92641.099
+      ],
+      "origen": "estado 43",
+      "glosa": "Pasajes aéreos"
+    },
+    {
+      "label": "Pasajes terrestres",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        54
+      ],
+      "origen": "estado 43",
+      "glosa": "Pasajes terrestres"
+    },
+    {
+      "label": "Equipo de oficina",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        53480.26
+      ],
+      "origen": "estado 43",
+      "glosa": "Equipo de oficina"
+    },
+    {
+      "label": "Equipo de computación y comunicación",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        21317.688
+      ],
+      "origen": "estado 43",
+      "glosa": "Equipo de computación y comunicación"
+    },
+    {
+      "label": "Flota y equipo de transporte",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        16749.999
+      ],
+      "origen": "estado 43",
+      "glosa": "Flota y equipo de transporte"
+    },
+    {
+      "label": "Intangibles",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        27711.138
+      ],
+      "origen": "estado 43",
+      "glosa": "Intangibles"
+    },
+    {
+      "label": "Cargos diferidos",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        8116.996
+      ],
+      "origen": "estado 43",
+      "glosa": "Cargos diferidos"
+    },
+    {
+      "label": "Comisiones",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        1500
+      ],
+      "origen": "estado 43",
+      "glosa": "Comisiones"
+    },
+    {
+      "label": "Gastos de representación",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        13948.074
+      ],
+      "origen": "estado 43",
+      "glosa": "Gastos de representación"
+    },
+    {
+      "label": "Elementos de aseo y cafetería",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        1217.639
+      ],
+      "origen": "estado 43",
+      "glosa": "Elementos de aseo y cafetería"
+    },
+    {
+      "label": "Combustibles y lubricantes",
+      "lado": "expense",
+      "page": 27,
+      "section": "",
+      "values": [
+        669.121
+      ],
+      "origen": "estado 43",
+      "glosa": "Combustibles y lubricantes"
+    },
+    {
+      "label": "Sueldos",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        478045.336
+      ],
+      "origen": "estado 42",
+      "glosa": "Sueldos"
+    },
+    {
+      "label": "Viáticos",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        3058.26
+      ],
+      "origen": "estado 42",
+      "glosa": "Viáticos"
+    },
+    {
+      "label": "Incapacidades",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        27533.333
+      ],
+      "origen": "estado 42",
+      "glosa": "Incapacidades"
+    },
+    {
+      "label": "Auxilio de transporte",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        10291.277
+      ],
+      "origen": "estado 42",
+      "glosa": "Auxilio de transporte"
+    },
+    {
+      "label": "Cesantías",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        44819.482
+      ],
+      "origen": "estado 42",
+      "glosa": "Cesantías"
+    },
+    {
+      "label": "Intereses a las cesantías",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        5101.438
+      ],
+      "origen": "estado 42",
+      "glosa": "Intereses a las cesantías"
+    },
+    {
+      "label": "Prima de servicios",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        44331.931
+      ],
+      "origen": "estado 42",
+      "glosa": "Prima de servicios"
+    },
+    {
+      "label": "Vacaciones",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        26289.186
+      ],
+      "origen": "estado 42",
+      "glosa": "Vacaciones"
+    },
+    {
+      "label": "Auxilios",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        2683.333
+      ],
+      "origen": "estado 42",
+      "glosa": "Auxilios"
+    },
+    {
+      "label": "Bonificaciones",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        7779.333
+      ],
+      "origen": "estado 42",
+      "glosa": "Bonificaciones"
+    },
+    {
+      "label": "Dotación y suministro a trabaja",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        4245.833
+      ],
+      "origen": "estado 42",
+      "glosa": "Dotación y suministro a trabaja"
+    },
+    {
+      "label": "Indemnizaciones laborales",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        14246.295
+      ],
+      "origen": "estado 42",
+      "glosa": "Indemnizaciones laborales"
+    },
+    {
+      "label": "Capacitación al personal",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        1000
+      ],
+      "origen": "estado 42",
+      "glosa": "Capacitación al personal"
+    },
+    {
+      "label": "Aportes administradores de riesgos pro",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        3250.177
+      ],
+      "origen": "estado 42",
+      "glosa": "Aportes administradores de riesgos pro"
+    },
+    {
+      "label": "Aportes a E.P.S",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        18275
+      ],
+      "origen": "estado 42",
+      "glosa": "Aportes a E.P.S"
+    },
+    {
+      "label": "Aportes a fondos y pensiones",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        56700.098
+      ],
+      "origen": "estado 42",
+      "glosa": "Aportes a fondos y pensiones"
+    },
+    {
+      "label": "Caja de compensación",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        19334.609
+      ],
+      "origen": "estado 42",
+      "glosa": "Caja de compensación"
+    },
+    {
+      "label": "Aportes al I.C.B.F",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        6450
+      ],
+      "origen": "estado 42",
+      "glosa": "Aportes al I.C.B.F"
+    },
+    {
+      "label": "Aportes al Sena",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        4300
+      ],
+      "origen": "estado 42",
+      "glosa": "Aportes al Sena"
+    },
+    {
+      "label": "Gastos médicos y drogas",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        3009.253
+      ],
+      "origen": "estado 42",
+      "glosa": "Gastos médicos y drogas"
+    },
+    {
+      "label": "Revisoría fiscal",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        33444.134
+      ],
+      "origen": "estado 42",
+      "glosa": "Revisoría fiscal"
+    },
+    {
+      "label": "Consultoría",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        24215
+      ],
+      "origen": "estado 42",
+      "glosa": "Consultoría"
+    },
+    {
+      "label": "Asesoría jurídica",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        42053
+      ],
+      "origen": "estado 42",
+      "glosa": "Asesoría jurídica"
+    },
+    {
+      "label": "Asesoría financiera",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        72800
+      ],
+      "origen": "estado 42",
+      "glosa": "Asesoría financiera"
+    },
+    {
+      "label": "Asesoría técnica",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        22680
+      ],
+      "origen": "estado 42",
+      "glosa": "Asesoría técnica"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        328
+      ],
+      "origen": "estado 42",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Industria y comercio",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        55395.4
+      ],
+      "origen": "estado 42",
+      "glosa": "Industria y comercio"
+    },
+    {
+      "label": "De timbres",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        1.82
+      ],
+      "origen": "estado 42",
+      "glosa": "De timbres"
+    },
+    {
+      "label": "Iva descontable",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        295221.162
+      ],
+      "origen": "estado 42",
+      "glosa": "Iva descontable"
+    },
+    {
+      "label": "Impuesto al consumo",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        12028.842
+      ],
+      "origen": "estado 42",
+      "glosa": "Impuesto al consumo"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        3122.4
+      ],
+      "origen": "estado 42",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Construcciones y edificaciones",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        132232.12
+      ],
+      "origen": "estado 42",
+      "glosa": "Construcciones y edificaciones"
+    },
+    {
+      "label": "Equipo de oficina",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        450
+      ],
+      "origen": "estado 42",
+      "glosa": "Equipo de oficina"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 26,
+      "section": "## 26. Gastos Operacionales",
+      "values": [
+        737.054
+      ],
+      "origen": "estado 42",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Salario integral",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        534056.005
+      ],
+      "origen": "estado 45",
+      "glosa": "Salario integral"
+    },
+    {
+      "label": "Sueldos",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        1920931.186
+      ],
+      "origen": "estado 45",
+      "glosa": "Sueldos"
+    },
+    {
+      "label": "Básico aprendiz",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        16614.414
+      ],
+      "origen": "estado 45",
+      "glosa": "Básico aprendiz"
+    },
+    {
+      "label": "Viáticos",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        7604.647
+      ],
+      "origen": "estado 45",
+      "glosa": "Viáticos"
+    },
+    {
+      "label": "Auxilio de transporte",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        57193.81
+      ],
+      "origen": "estado 45",
+      "glosa": "Auxilio de transporte"
+    },
+    {
+      "label": "Cesantías",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        171900.179
+      ],
+      "origen": "estado 45",
+      "glosa": "Cesantías"
+    },
+    {
+      "label": "Intereses sobre cesantías",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        18297.147
+      ],
+      "origen": "estado 45",
+      "glosa": "Intereses sobre cesantías"
+    },
+    {
+      "label": "Prima de servicios",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        170593.281
+      ],
+      "origen": "estado 45",
+      "glosa": "Prima de servicios"
+    },
+    {
+      "label": "Vacaciones",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        190072.502
+      ],
+      "origen": "estado 45",
+      "glosa": "Vacaciones"
+    },
+    {
+      "label": "Auxilios",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        35503.333
+      ],
+      "origen": "estado 45",
+      "glosa": "Auxilios"
+    },
+    {
+      "label": "Bonificaciones",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        360201.727
+      ],
+      "origen": "estado 45",
+      "glosa": "Bonificaciones"
+    },
+    {
+      "label": "Dotación y suministro",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        112401.491
+      ],
+      "origen": "estado 45",
+      "glosa": "Dotación y suministro"
+    },
+    {
+      "label": "Indemnizaciones laborales",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        53032.228
+      ],
+      "origen": "estado 45",
+      "glosa": "Indemnizaciones laborales"
+    },
+    {
+      "label": "Capacitación al personal",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        2435
+      ],
+      "origen": "estado 45",
+      "glosa": "Capacitación al personal"
+    },
+    {
+      "label": "Gastos deportivos y recreación",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        4811.562
+      ],
+      "origen": "estado 45",
+      "glosa": "Gastos deportivos y recreación"
+    },
+    {
+      "label": "Aportes administradoras riesgos",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        54110.423
+      ],
+      "origen": "estado 45",
+      "glosa": "Aportes administradoras riesgos"
+    },
+    {
+      "label": "Aportes E.P.S.",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        63213.259
+      ],
+      "origen": "estado 45",
+      "glosa": "Aportes E.P.S."
+    },
+    {
+      "label": "Fondo de pensiones",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        300540.27
+      ],
+      "origen": "estado 45",
+      "glosa": "Fondo de pensiones"
+    },
+    {
+      "label": "Aportes cajas de compensación",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        105572.991
+      ],
+      "origen": "estado 45",
+      "glosa": "Aportes cajas de compensación"
+    },
+    {
+      "label": "Aportes I.C.B.F.",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        28526.1
+      ],
+      "origen": "estado 45",
+      "glosa": "Aportes I.C.B.F."
+    },
+    {
+      "label": "Sena",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        19017.8
+      ],
+      "origen": "estado 45",
+      "glosa": "Sena"
+    },
+    {
+      "label": "Gastos médicos y drogas",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        116865.757
+      ],
+      "origen": "estado 45",
+      "glosa": "Gastos médicos y drogas"
+    },
+    {
+      "label": "Consultoría",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        1400
+      ],
+      "origen": "estado 45",
+      "glosa": "Consultoría"
+    },
+    {
+      "label": "Asesoría técnica",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        71594.133
+      ],
+      "origen": "estado 45",
+      "glosa": "Asesoría técnica"
+    },
+    {
+      "label": "Honorarios médicos",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        19832.673
+      ],
+      "origen": "estado 45",
+      "glosa": "Honorarios médicos"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        72
+      ],
+      "origen": "estado 45",
+      "glosa": "Otros"
+    },
+    {
+      "label": "A la propiedad raíz",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        4612.131
+      ],
+      "origen": "estado 45",
+      "glosa": "A la propiedad raíz"
+    },
+    {
+      "label": "De vehículos",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        324
+      ],
+      "origen": "estado 45",
+      "glosa": "De vehículos"
+    },
+    {
+      "label": "De espectáculos públicos",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        33742.655
+      ],
+      "origen": "estado 45",
+      "glosa": "De espectáculos públicos"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        658037.987
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        166666.667
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        33835.71
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        252000
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        450000
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        860310.433
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        108000
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        41587.644
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        59920.873
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        42470.711
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        36746.607
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        2904
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        2420
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        1150
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        1900
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        360000
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        514864.535
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        81166.123
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        30563.758
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "DIMAYOR",
+      "lado": "revenue",
+      "page": 24,
+      "section": "### Cuotas de sostenimiento",
+      "values": [
+        7962.516
+      ],
+      "origen": "estado 40",
+      "glosa": "DIMAYOR"
+    },
+    {
+      "label": "Escuelas de fútbol",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        310.168446
+      ],
+      "origen": "estado 36",
+      "glosa": "Escuelas de fútbol"
+    },
+    {
+      "label": "Taquilla",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        382.6165
+      ],
+      "origen": "estado 36",
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Abonados",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        15.0577
+      ],
+      "origen": "estado 36",
+      "glosa": "Abonados"
+    },
+    {
+      "label": "Venta de derechos deportivos",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        4394.284702
+      ],
+      "origen": "estado 36",
+      "glosa": "Venta de derechos deportivos"
+    },
+    {
+      "label": "Préstamo de derechos deportivo",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        974.925
+      ],
+      "origen": "estado 36",
+      "glosa": "Préstamo de derechos deportivo"
+    },
+    {
+      "label": "Contribución de solidaridad",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        391.641939
+      ],
+      "origen": "estado 36",
+      "glosa": "Contribución de solidaridad"
+    },
+    {
+      "label": "Publicidad y propaganda",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        8.91663
+      ],
+      "origen": "estado 36",
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Derechos televisión internacional(1)",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        155.633
+      ],
+      "origen": "estado 36",
+      "glosa": "Derechos televisión internacional(1)"
+    },
+    {
+      "label": "Derechos televisión abierta RCN(1)",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        638.655765
+      ],
+      "origen": "estado 36",
+      "glosa": "Derechos televisión abierta RCN(1)"
+    },
+    {
+      "label": "Derechos televisión cerrada Win Sports(1)",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        2353.613376
+      ],
+      "origen": "estado 36",
+      "glosa": "Derechos televisión cerrada Win Sports(1)"
+    },
+    {
+      "label": "Arbitraje",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        80.9946
+      ],
+      "origen": "estado 36",
+      "glosa": "Arbitraje"
+    },
+    {
+      "label": "Federación colombiana de fútbol",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        285.6
+      ],
+      "origen": "estado 36",
+      "glosa": "Federación colombiana de fútbol"
+    },
+    {
+      "label": "Patrocinio",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        155.552
+      ],
+      "origen": "estado 36",
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "Cuotas de sostenimiento",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        3717.831564
+      ],
+      "origen": "estado 36",
+      "glosa": "Cuotas de sostenimiento"
+    },
+    {
+      "label": "Venta de artículos deportivos",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        37.785976
+      ],
+      "origen": "estado 36",
+      "glosa": "Venta de artículos deportivos"
+    },
+    {
+      "label": "Entretenimiento y esparcimiento",
+      "lado": "revenue",
+      "page": 22,
+      "section": "## 24. Ingresos de actividades ordinarias",
+      "values": [
+        2000.000002
+      ],
+      "origen": "estado 36",
+      "glosa": "Entretenimiento y esparcimiento"
+    },
+    {
+      "label": "Casino y restaurante",
+      "lado": "expense",
+      "page": 30,
+      "section": "",
+      "values": [
+        122.097337
+      ],
+      "origen": "estado 47",
+      "glosa": "Casino y restaurante"
+    },
+    {
+      "label": "Parqueaderos",
+      "lado": "expense",
+      "page": 30,
+      "section": "",
+      "values": [
+        2.5023
+      ],
+      "origen": "estado 47",
+      "glosa": "Parqueaderos"
+    },
+    {
+      "label": "Logística",
+      "lado": "expense",
+      "page": 30,
+      "section": "",
+      "values": [
+        62.053115
+      ],
+      "origen": "estado 47",
+      "glosa": "Logística"
+    },
+    {
+      "label": "Arbitraje",
+      "lado": "expense",
+      "page": 30,
+      "section": "",
+      "values": [
+        141.541
+      ],
+      "origen": "estado 47",
+      "glosa": "Arbitraje"
+    },
+    {
+      "label": "Defensa civil",
+      "lado": "expense",
+      "page": 30,
+      "section": "",
+      "values": [
+        13.434
+      ],
+      "origen": "estado 47",
+      "glosa": "Defensa civil"
+    },
+    {
+      "label": "Auxilios fuerzas básicas",
+      "lado": "expense",
+      "page": 30,
+      "section": "",
+      "values": [
+        578.760572
+      ],
+      "origen": "estado 47",
+      "glosa": "Auxilios fuerzas básicas"
+    },
+    {
+      "label": "Auxilios especiales equipo profesional",
+      "lado": "expense",
+      "page": 30,
+      "section": "",
+      "values": [
+        23.899609
+      ],
+      "origen": "estado 47",
+      "glosa": "Auxilios especiales equipo profesional"
+    },
+    {
+      "label": "Derechos deportivos",
+      "lado": "expense",
+      "page": 30,
+      "section": "",
+      "values": [
+        181.986
+      ],
+      "origen": "estado 47",
+      "glosa": "Derechos deportivos"
+    },
+    {
+      "label": "Bonificaciones",
+      "lado": "expense",
+      "page": 30,
+      "section": "",
+      "values": [
+        159.23775
+      ],
+      "origen": "estado 47",
+      "glosa": "Bonificaciones"
+    },
+    {
+      "label": "Gastos no deducibles",
+      "lado": "revenue",
+      "page": 30,
+      "section": "",
+      "values": [
+        1.511844
+      ],
+      "origen": "estado 47",
+      "glosa": "Gastos no deducibles"
+    },
+    {
+      "label": "Intereses",
+      "lado": "revenue",
+      "page": 25,
+      "section": "### Otras revelaciones de Ingresos: / ### 25. Otros ingresos",
+      "values": [
+        247952.813
+      ],
+      "origen": "estado 41",
+      "glosa": "Intereses"
+    },
+    {
+      "label": "Diferencia en cambio",
+      "lado": "revenue",
+      "page": 25,
+      "section": "### Otras revelaciones de Ingresos: / ### 25. Otros ingresos",
+      "values": [
+        317205.594
+      ],
+      "origen": "estado 41",
+      "glosa": "Diferencia en cambio"
+    },
+    {
+      "label": "Descuentos comerciales condicionales",
+      "lado": "revenue",
+      "page": 25,
+      "section": "### Otras revelaciones de Ingresos: / ### 25. Otros ingresos",
+      "values": [
+        12960.004
+      ],
+      "origen": "estado 41",
+      "glosa": "Descuentos comerciales condicionales"
+    },
+    {
+      "label": "Arrendamientos",
+      "lado": "revenue",
+      "page": 25,
+      "section": "### Otras revelaciones de Ingresos: / ### 25. Otros ingresos",
+      "values": [
+        684.7
+      ],
+      "origen": "estado 41",
+      "glosa": "Arrendamientos"
+    },
+    {
+      "label": "Recuperación gastos bancarios",
+      "lado": "revenue",
+      "page": 25,
+      "section": "### Otras revelaciones de Ingresos: / ### 25. Otros ingresos",
+      "values": [
+        381.08
+      ],
+      "origen": "estado 41",
+      "glosa": "Recuperación gastos bancarios"
+    },
+    {
+      "label": "Reintegro de otros costos y gastos",
+      "lado": "revenue",
+      "page": 25,
+      "section": "### Otras revelaciones de Ingresos: / ### 25. Otros ingresos",
+      "values": [
+        314011.724
+      ],
+      "origen": "estado 41",
+      "glosa": "Reintegro de otros costos y gastos"
+    },
+    {
+      "label": "Por incapacidades",
+      "lado": "revenue",
+      "page": 25,
+      "section": "### Otras revelaciones de Ingresos: / ### 25. Otros ingresos",
+      "values": [
+        33917.336
+      ],
+      "origen": "estado 41",
+      "glosa": "Por incapacidades"
+    },
+    {
+      "label": "Ajuste al peso",
+      "lado": "revenue",
+      "page": 25,
+      "section": "### Otras revelaciones de Ingresos: / ### 25. Otros ingresos",
+      "values": [
+        6.077
+      ],
+      "origen": "estado 41",
+      "glosa": "Ajuste al peso"
+    },
+    {
+      "label": "Intereses moratorios DIAN",
+      "lado": "expense",
+      "page": 30,
+      "section": "## 28. Otros Gastos",
+      "values": [
+        415552
+      ],
+      "origen": "estado 49",
+      "glosa": "Intereses moratorios DIAN"
+    },
+    {
+      "label": "Multas sanciones y litigios",
+      "lado": "expense",
+      "page": 30,
+      "section": "## 28. Otros Gastos",
+      "values": [
+        65233.698
+      ],
+      "origen": "estado 49",
+      "glosa": "Multas sanciones y litigios"
+    },
+    {
+      "label": "Impuestos asumidos",
+      "lado": "expense",
+      "page": 30,
+      "section": "## 28. Otros Gastos",
+      "values": [
+        6290.5
+      ],
+      "origen": "estado 49",
+      "glosa": "Impuestos asumidos"
+    },
+    {
+      "label": "Ajuste al peso",
+      "lado": "expense",
+      "page": 30,
+      "section": "## 28. Otros Gastos",
+      "values": [
+        0.98
+      ],
+      "origen": "estado 49",
+      "glosa": "Ajuste al peso"
+    },
+    {
+      "label": "Costas y procesos judiciales",
+      "lado": "expense",
+      "page": 30,
+      "section": "## 28. Otros Gastos",
+      "values": [
+        15834.585
+      ],
+      "origen": "estado 49",
+      "glosa": "Costas y procesos judiciales"
+    },
+    {
+      "label": "Costos y gastos de ejercicios (1)",
+      "lado": "expense",
+      "page": 30,
+      "section": "## 28. Otros Gastos",
+      "values": [
+        587972.737
+      ],
+      "origen": "estado 49",
+      "glosa": "Costos y gastos de ejercicios (1)"
+    },
+    {
+      "label": "Casino y restaurante",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        7211.477
+      ],
+      "origen": "estado 44",
+      "glosa": "Casino y restaurante"
+    },
+    {
+      "label": "Parqueaderos",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        261.986
+      ],
+      "origen": "estado 44",
+      "glosa": "Parqueaderos"
+    },
+    {
+      "label": "Gastos no deducibles",
+      "lado": "revenue",
+      "page": 28,
+      "section": "",
+      "values": [
+        83.9
+      ],
+      "origen": "estado 44",
+      "glosa": "Gastos no deducibles"
+    },
+    {
+      "label": "Provisiones - deudores",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        13017.3
+      ],
+      "origen": "estado 44",
+      "glosa": "Provisiones - deudores"
+    },
+    {
+      "label": "Gastos bancarios",
+      "lado": "expense",
+      "page": 30,
+      "section": "## 27. Gastos financieros",
+      "values": [
+        2659.847
+      ],
+      "origen": "estado 48",
+      "glosa": "Gastos bancarios"
+    },
+    {
+      "label": "Comisiones",
+      "lado": "expense",
+      "page": 30,
+      "section": "## 27. Gastos financieros",
+      "values": [
+        5177.633
+      ],
+      "origen": "estado 48",
+      "glosa": "Comisiones"
+    },
+    {
+      "label": "Intereses",
+      "lado": "expense",
+      "page": 30,
+      "section": "## 27. Gastos financieros",
+      "values": [
+        245533.979
+      ],
+      "origen": "estado 48",
+      "glosa": "Intereses"
+    },
+    {
+      "label": "Diferencia en cambio",
+      "lado": "expense",
+      "page": 30,
+      "section": "## 27. Gastos financieros",
+      "values": [
+        327027.943
+      ],
+      "origen": "estado 48",
+      "glosa": "Diferencia en cambio"
+    },
+    {
+      "label": "Descuentos comerciales",
+      "lado": "expense",
+      "page": 30,
+      "section": "## 27. Gastos financieros",
+      "values": [
+        3317.71
+      ],
+      "origen": "estado 48",
+      "glosa": "Descuentos comerciales"
+    },
+    {
+      "label": "Gravamen a los movimientos financieros",
+      "lado": "expense",
+      "page": 30,
+      "section": "## 27. Gastos financieros",
+      "values": [
+        46384.348
+      ],
+      "origen": "estado 48",
+      "glosa": "Gravamen a los movimientos financieros"
+    },
+    {
+      "label": "Venta de derechos deportivos",
+      "lado": "revenue",
+      "page": 23,
+      "section": "#### Venta de derechos deportivos",
+      "values": [
+        1164808.582
+      ],
+      "origen": "estado 37",
+      "glosa": "Venta de derechos deportivos"
+    },
+    {
+      "label": "Venta de derechos deportivos",
+      "lado": "revenue",
+      "page": 23,
+      "section": "#### Venta de derechos deportivos",
+      "values": [
+        954651.12
+      ],
+      "origen": "estado 37",
+      "glosa": "Venta de derechos deportivos"
+    },
+    {
+      "label": "Venta de derechos deportivos",
+      "lado": "revenue",
+      "page": 23,
+      "section": "#### Venta de derechos deportivos",
+      "values": [
+        2274825
+      ],
+      "origen": "estado 37",
+      "glosa": "Venta de derechos deportivos"
+    },
+    {
+      "label": "Saldo inicial 2017",
+      "lado": "expense",
+      "page": 14,
+      "section": "## 9. Propiedad Planta y Equipo: / ### Propiedad, planta y equipo - Costo",
+      "values": [
+        165764.394
+      ],
+      "origen": "estado 8",
+      "glosa": "Saldo inicial 2017"
+    },
+    {
+      "label": "Compras",
+      "lado": "expense",
+      "page": 14,
+      "section": "## 9. Propiedad Planta y Equipo: / ### Propiedad, planta y equipo - Costo",
+      "values": [
+        40465.387
+      ],
+      "origen": "estado 8",
+      "glosa": "Compras"
+    }
+  ]
+}

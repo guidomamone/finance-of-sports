@@ -1,0 +1,210 @@
+{
+  "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md",
+  "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.pdf",
+  "club": "novorizontino",
+  "year": 2021,
+  "generatedAt": "2026-10-03T01:55:12.183Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Repasse da federação",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        7.614
+      ],
+      "glosa": "Transferencias de la federación"
+    },
+    {
+      "label": "Negociação e empréstimo de atletas (nota nº6)",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.645
+      ],
+      "glosa": "Traspaso y cesión de jugadores (nota n.º 6)"
+    },
+    {
+      "label": "Receita com patrocínios",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.29
+      ],
+      "glosa": "Ingresos por patrocinios"
+    },
+    {
+      "label": "Vendas de ingressos e bar",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.033
+      ],
+      "glosa": "Venta de entradas y bar"
+    },
+    {
+      "label": "Subvenções (nota 11)",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.432
+      ],
+      "glosa": "Subvenciones (nota 11)"
+    },
+    {
+      "label": "Receita do bar",
+      "lado": "revenue",
+      "page": 28,
+      "section": "nota que desglosa \"Receita líquida\"",
+      "values": [
+        0.006
+      ],
+      "glosa": "Ingresos del bar"
+    },
+    {
+      "label": "Outras receitas operacionais",
+      "lado": "revenue",
+      "page": 8,
+      "section": "estado",
+      "values": [
+        0.035
+      ],
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Salários, ordenados e outros custos com pessoal",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos\"",
+      "values": [
+        14.546
+      ],
+      "glosa": "Sueldos, salarios y otros gastos de personal"
+    },
+    {
+      "label": "Gastos com jogos",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos\"",
+      "values": [
+        1.188
+      ],
+      "glosa": "Gastos de partidos"
+    },
+    {
+      "label": "Aluguéis",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos\"",
+      "values": [
+        0.594
+      ],
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 28,
+      "section": "nota que desglosa \"Custos\"",
+      "values": [
+        0.245
+      ],
+      "glosa": "Otros"
+    },
+    {
+      "label": "Serviços prestados (i)",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        2.242
+      ],
+      "glosa": "Servicios prestados (i)"
+    },
+    {
+      "label": "Despesas administrativas (ii)",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        1.122
+      ],
+      "glosa": "Gastos administrativos (ii)"
+    },
+    {
+      "label": "Manutenções (ii)",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        1.015
+      ],
+      "glosa": "Mantenimiento (ii)"
+    },
+    {
+      "label": "Gastos com negociação de atletas",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.574
+      ],
+      "glosa": "Gastos por traspaso y negociación de jugadores"
+    },
+    {
+      "label": "Salários, ordenados e outros custos - Projeto Sub 15 e 17",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.432
+      ],
+      "glosa": "Sueldos, salarios y otros costes - Proyecto Sub-15 y Sub-17"
+    },
+    {
+      "label": "Ganhos/perdas com atletas",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.409
+      ],
+      "glosa": "Ganancias/pérdidas por jugadores"
+    },
+    {
+      "label": "Combustível e lubrificantes",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.134
+      ],
+      "glosa": "Combustibles y lubricantes"
+    },
+    {
+      "label": "Depreciação / Amortização",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.16
+      ],
+      "glosa": "Depreciación / Amortización"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 29,
+      "section": "nota que desglosa \"Despesas gerais e administrativas\"",
+      "values": [
+        0.205
+      ],
+      "glosa": "Otros"
+    }
+  ]
+}

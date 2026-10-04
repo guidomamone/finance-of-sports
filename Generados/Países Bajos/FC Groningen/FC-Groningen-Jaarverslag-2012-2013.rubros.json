@@ -1,0 +1,402 @@
+{
+ "md": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2012-2013.md",
+ "pdf": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2012-2013.pdf",
+ "club": "fc-groningen",
+ "year": 2013,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:07:23.305Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 34,
+  "notasUsadas": [
+   "34"
+  ]
+ },
+ "ladoConocido": 29,
+ "rubros": [
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "values": [
+    17946.602
+   ],
+   "origen": "estado 17",
+   "glosa": "Importe neto de la cifra de negocios"
+  },
+  {
+   "label": "Inkoopwaarde van de omzet",
+   "lado": "expense",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "values": [
+    430.164
+   ],
+   "origen": "estado 17",
+   "glosa": "Coste de las ventas"
+  },
+  {
+   "label": "Contractspelers A-selectie & Jong FC Groningen",
+   "lado": "expense",
+   "page": 32,
+   "section": "FINANCIËEL JAARVERSLAG 2012/2013 / JAARREKENING",
+   "values": [
+    6694.748
+   ],
+   "origen": "nota 34 (ancla 17)",
+   "ancla": "Personeelskosten",
+   "glosa": "Jugadores con contrato del primer equipo y Jong FC Groningen"
+  },
+  {
+   "label": "Personeelskosten",
+   "lado": "expense",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "values": [
+    10952.445
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true,
+   "glosa": "Gastos de personal"
+  },
+  {
+   "label": "Technische & medische staf",
+   "lado": "expense",
+   "page": 32,
+   "section": "FINANCIËEL JAARVERSLAG 2012/2013 / JAARREKENING",
+   "values": [
+    1850.386
+   ],
+   "origen": "nota 34 (ancla 17)",
+   "ancla": "Personeelskosten",
+   "glosa": "Cuerpo técnico y médico"
+  },
+  {
+   "label": "Kantoorpersoneel",
+   "lado": "expense",
+   "page": 32,
+   "section": "FINANCIËEL JAARVERSLAG 2012/2013 / JAARREKENING",
+   "values": [
+    2407.311
+   ],
+   "origen": "nota 34 (ancla 17)",
+   "ancla": "Personeelskosten",
+   "glosa": "Personal de administración"
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "lado": "expense",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "values": [
+    116.6
+   ],
+   "origen": "estado 17",
+   "glosa": "Amortización del inmovilizado material"
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "values": [
+    7876.432
+   ],
+   "origen": "estado 17",
+   "glosa": "Otros gastos de explotación"
+  },
+  {
+   "label": "Bijzondere lasten",
+   "lado": "expense",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "values": [
+    160
+   ],
+   "origen": "estado 17",
+   "glosa": "Gastos extraordinarios"
+  },
+  {
+   "label": "Afschrijving vergoedingssommen",
+   "lado": null,
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "values": [
+    -3616.12
+   ],
+   "origen": "estado 17",
+   "glosa": "Amortización de derechos de traspaso"
+  },
+  {
+   "label": "Wedstrijdopbrengsten",
+   "lado": "revenue",
+   "page": 30,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / ## Toelichting op de winst-en-verliesrekening / ### Netto-omzet",
+   "values": [
+    4.197156
+   ],
+   "origen": "estado 31",
+   "glosa": "Ingresos por partidos"
+  },
+  {
+   "label": "Sponsoring en reclame",
+   "lado": null,
+   "page": 30,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / ## Toelichting op de winst-en-verliesrekening / ### Netto-omzet",
+   "values": [
+    8.558843
+   ],
+   "origen": "estado 31",
+   "glosa": "Patrocinio y publicidad"
+  },
+  {
+   "label": "Televisierechten",
+   "lado": null,
+   "page": 30,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / ## Toelichting op de winst-en-verliesrekening / ### Netto-omzet",
+   "values": [
+    3.773185
+   ],
+   "origen": "estado 31",
+   "glosa": "Derechos de televisión"
+  },
+  {
+   "label": "Merchandising",
+   "lado": null,
+   "page": 30,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / ## Toelichting op de winst-en-verliesrekening / ### Netto-omzet",
+   "values": [
+    0.462503
+   ],
+   "origen": "estado 31",
+   "glosa": "Merchandising"
+  },
+  {
+   "label": "Organisatiebureau",
+   "lado": null,
+   "page": 30,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / ## Toelichting op de winst-en-verliesrekening / ### Netto-omzet",
+   "values": [
+    0.153552
+   ],
+   "origen": "estado 31",
+   "glosa": "Agencia de organización de eventos"
+  },
+  {
+   "label": "Overige baten",
+   "lado": "revenue",
+   "page": 30,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / ## Toelichting op de winst-en-verliesrekening / ### Netto-omzet",
+   "values": [
+    0.801363
+   ],
+   "origen": "estado 31",
+   "glosa": "Otros ingresos"
+  },
+  {
+   "label": "Inkoopwaarde v/d omzet",
+   "lado": "expense",
+   "page": 11,
+   "section": "FINANCIËLE - JANVERSLAG 2012/2013 / JANVERSLAG / ## Bedrijfslasten",
+   "values": [
+    0.43
+   ],
+   "origen": "estado 13",
+   "glosa": "Coste de las ventas"
+  },
+  {
+   "label": "Personeelskosten",
+   "lado": "expense",
+   "page": 11,
+   "section": "FINANCIËLE - JANVERSLAG 2012/2013 / JANVERSLAG / ## Bedrijfslasten",
+   "values": [
+    10.953
+   ],
+   "origen": "estado 13",
+   "glosa": "Gastos de personal"
+  },
+  {
+   "label": "Afschrijvingen",
+   "lado": "expense",
+   "page": 11,
+   "section": "FINANCIËLE - JANVERSLAG 2012/2013 / JANVERSLAG / ## Bedrijfslasten",
+   "values": [
+    0.117
+   ],
+   "origen": "estado 13",
+   "glosa": "Amortizaciones"
+  },
+  {
+   "label": "Wedstrijdkosten",
+   "lado": "expense",
+   "page": 11,
+   "section": "FINANCIËLE - JANVERSLAG 2012/2013 / JANVERSLAG / ## Bedrijfslasten",
+   "values": [
+    2.261
+   ],
+   "origen": "estado 13",
+   "glosa": "Gastos de partidos"
+  },
+  {
+   "label": "Huisvestingskosten",
+   "lado": "expense",
+   "page": 11,
+   "section": "FINANCIËLE - JANVERSLAG 2012/2013 / JANVERSLAG / ## Bedrijfslasten",
+   "values": [
+    3.296
+   ],
+   "origen": "estado 13",
+   "glosa": "Gastos de instalaciones"
+  },
+  {
+   "label": "Overige bedrijfslasten",
+   "lado": "expense",
+   "page": 11,
+   "section": "FINANCIËLE - JANVERSLAG 2012/2013 / JANVERSLAG / ## Bedrijfslasten",
+   "values": [
+    2.319
+   ],
+   "origen": "estado 13",
+   "glosa": "Otros gastos de explotación"
+  },
+  {
+   "label": "Bijzondere lasten",
+   "lado": "expense",
+   "page": 11,
+   "section": "FINANCIËLE - JANVERSLAG 2012/2013 / JANVERSLAG / ## Bedrijfslasten",
+   "values": [
+    0.16
+   ],
+   "origen": "estado 13",
+   "glosa": "Gastos extraordinarios"
+  },
+  {
+   "label": "Wedstrijdkosten",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Overige bedrijfslasten",
+   "values": [
+    2260.843
+   ],
+   "origen": "estado 35",
+   "glosa": "Gastos de partidos"
+  },
+  {
+   "label": "Huisvestingskosten",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Overige bedrijfslasten",
+   "values": [
+    3296.265
+   ],
+   "origen": "estado 35",
+   "glosa": "Gastos de instalaciones"
+  },
+  {
+   "label": "Verkoopkosten",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Overige bedrijfslasten",
+   "values": [
+    1362.092
+   ],
+   "origen": "estado 35",
+   "glosa": "Gastos de comercialización"
+  },
+  {
+   "label": "Algemene kosten",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Overige bedrijfslasten",
+   "values": [
+    675.153
+   ],
+   "origen": "estado 35",
+   "glosa": "Gastos generales"
+  },
+  {
+   "label": "KNVB-heffingen",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Overige bedrijfslasten",
+   "values": [
+    282.079
+   ],
+   "origen": "estado 35",
+   "glosa": "Tasas de la KNVB"
+  },
+  {
+   "label": "Lonen en salarissen",
+   "lado": "expense",
+   "page": 31,
+   "section": "### Personeelskosten",
+   "values": [
+    8.845694
+   ],
+   "origen": "estado 33",
+   "glosa": "Sueldos y salarios"
+  },
+  {
+   "label": "Pensioenen",
+   "lado": "expense",
+   "page": 31,
+   "section": "### Personeelskosten",
+   "values": [
+    0.124753
+   ],
+   "origen": "estado 33",
+   "glosa": "Planes de pensiones"
+  },
+  {
+   "label": "Sociale lasten en vergoedingen",
+   "lado": "expense",
+   "page": 31,
+   "section": "### Personeelskosten",
+   "values": [
+    1.371443
+   ],
+   "origen": "estado 33",
+   "glosa": "Cargas sociales e indemnizaciones"
+  },
+  {
+   "label": "Overige personeelskosten",
+   "lado": "expense",
+   "page": 31,
+   "section": "### Personeelskosten",
+   "values": [
+    0.610555
+   ],
+   "origen": "estado 33",
+   "glosa": "Otros gastos de personal"
+  },
+  {
+   "label": "Merchandise",
+   "lado": "revenue",
+   "page": 31,
+   "section": "FINANCEEL JARVERSLAG 2012/2013 / JAARREKENING / ### Inkoopwaarde van de omzet",
+   "values": [
+    0.343872
+   ],
+   "origen": "estado 32",
+   "glosa": "Merchandising"
+  },
+  {
+   "label": "Organisatiebureau",
+   "lado": "revenue",
+   "page": 31,
+   "section": "FINANCEEL JARVERSLAG 2012/2013 / JAARREKENING / ### Inkoopwaarde van de omzet",
+   "values": [
+    0.086292
+   ],
+   "origen": "estado 32",
+   "glosa": "Agencia de organización de eventos"
+  }
+ ]
+}

@@ -1,0 +1,440 @@
+{
+  "md": "Clubes/Bélgica/Gent/jaarrekening-2013-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Gent/jaarrekening-2013-06-30-individual.pdf",
+  "club": "gent-be",
+  "year": 2013,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:55:08.914Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 38,
+    "notasUsadas": []
+  },
+  "ladoConocido": 26,
+  "rubros": [
+    {
+      "label": "Bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        7.074
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos de explotación"
+    },
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.07
+      ],
+      "origen": "estado 3",
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Voorraad goederen in bewerking en gereed product en bestellingen in uitvoering: toename (afname) (+)/(-)",
+      "lado": null,
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.071
+      ],
+      "origen": "estado 3",
+      "glosa": "Variación de existencias de productos en curso y terminados y pedidos en curso: aumento (disminución) (+)/(-)"
+    },
+    {
+      "label": "Geproduceerde vaste activa",
+      "lado": null,
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.072
+      ],
+      "origen": "estado 3",
+      "glosa": "Trabajos realizados por la empresa para su activo"
+    },
+    {
+      "label": "Lidgeld, schenkingen, legaten en subsidies",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.073
+      ],
+      "origen": "estado 3",
+      "glosa": "Cuotas de socios, donaciones, legados y subvenciones"
+    },
+    {
+      "label": "Andere bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.074
+      ],
+      "origen": "estado 3",
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Bedrijfskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        6.064
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "Handelsgoederen, grond- en hulpstoffen",
+      "lado": null,
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.06
+      ],
+      "origen": "estado 3",
+      "glosa": "Mercaderías, materias primas y materias auxiliares"
+    },
+    {
+      "label": "Aankopen",
+      "lado": null,
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        6.008
+      ],
+      "origen": "estado 3",
+      "glosa": "Compras"
+    },
+    {
+      "label": "Voorraad: afname (toename) (+)/(-)",
+      "lado": null,
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.609
+      ],
+      "origen": "estado 3",
+      "glosa": "Existencias: disminución (aumento) (+)/(-)"
+    },
+    {
+      "label": "Diensten en diverse goederen",
+      "lado": null,
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.061
+      ],
+      "origen": "estado 3",
+      "glosa": "Servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.062
+      ],
+      "origen": "estado 3",
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.63
+      ],
+      "origen": "estado 3",
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, de inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": null,
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        6.314
+      ],
+      "origen": "estado 3",
+      "glosa": "Correcciones de valor de existencias, de pedidos en curso y de créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        6.358
+      ],
+      "origen": "estado 3",
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (utilizaciones y reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        6.408
+      ],
+      "origen": "estado 3",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Als herstructureringskosten geactiveerde bedrijfskosten (-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.649
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos de explotación capitalizados como gastos de reestructuración (-)"
+    },
+    {
+      "label": "Financiële opbrengsten",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.075
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Opbrengsten uit financiële vaste activa",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.75
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos del inmovilizado financiero"
+    },
+    {
+      "label": "Opbrengsten uit vlottende activa",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.751
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos del activo circulante"
+    },
+    {
+      "label": "Andere financiële opbrengsten",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        7.529
+      ],
+      "origen": "estado 3",
+      "glosa": "Otros ingresos financieros"
+    },
+    {
+      "label": "Financiële kosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.065
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Kosten van schulden",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.65
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos por deudas"
+    },
+    {
+      "label": "Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.651
+      ],
+      "origen": "estado 3",
+      "glosa": "Correcciones de valor del activo circulante distintas de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere financiële kosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        6.529
+      ],
+      "origen": "estado 3",
+      "glosa": "Otros gastos financieros"
+    },
+    {
+      "label": "Uitzonderlijke opbrengsten",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.076
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos extraordinarios"
+    },
+    {
+      "label": "Terugneming van afschrijvingen en van waardeverminderingen op immateriële en materiële vaste activa",
+      "lado": null,
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.76
+      ],
+      "origen": "estado 3",
+      "glosa": "Reversión de amortizaciones y de correcciones de valor del inmovilizado intangible y material"
+    },
+    {
+      "label": "Terugneming van waardeverminderingen op financiële vaste activa",
+      "lado": null,
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.761
+      ],
+      "origen": "estado 3",
+      "glosa": "Reversión de correcciones de valor del inmovilizado financiero"
+    },
+    {
+      "label": "Terugneming van voorzieningen voor uitzonderlijke risico's en kosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.762
+      ],
+      "origen": "estado 3",
+      "glosa": "Reversión de provisiones para riesgos y gastos extraordinarios"
+    },
+    {
+      "label": "Meerwaarden bij de realisatie van vaste activa",
+      "lado": null,
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.763
+      ],
+      "origen": "estado 3",
+      "glosa": "Plusvalías por enajenación de inmovilizado"
+    },
+    {
+      "label": "Andere uitzonderlijke opbrengsten",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        7.649
+      ],
+      "origen": "estado 3",
+      "glosa": "Otros ingresos extraordinarios"
+    },
+    {
+      "label": "Uitzonderlijke kosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.066
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos extraordinarios"
+    },
+    {
+      "label": "Uitzonderlijke afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.66
+      ],
+      "origen": "estado 3",
+      "glosa": "Amortizaciones y correcciones de valor extraordinarias de gastos de constitución, de inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op financiële vaste activa",
+      "lado": null,
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.661
+      ],
+      "origen": "estado 3",
+      "glosa": "Correcciones de valor del inmovilizado financiero"
+    },
+    {
+      "label": "Voorzieningen voor uitzonderlijke risico's en kosten: toevoegingen (bestellingen) (+)/(-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.662
+      ],
+      "origen": "estado 3",
+      "glosa": "Provisiones para riesgos y gastos extraordinarios: dotaciones (utilizaciones) (+)/(-)"
+    },
+    {
+      "label": "Minderwaarden bij de realisatie van vaste activa",
+      "lado": null,
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.663
+      ],
+      "origen": "estado 3",
+      "glosa": "Pérdidas por enajenación de inmovilizado"
+    },
+    {
+      "label": "Andere uitzonderlijke kosten",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        6.648
+      ],
+      "origen": "estado 3",
+      "glosa": "Otros gastos extraordinarios"
+    },
+    {
+      "label": "Als herstructureringskosten geactiveerde uitzonderlijke kosten (-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.669
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos extraordinarios capitalizados como gastos de reestructuración (-)"
+    }
+  ]
+}

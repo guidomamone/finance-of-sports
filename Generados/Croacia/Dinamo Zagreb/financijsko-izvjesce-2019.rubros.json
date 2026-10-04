@@ -1,0 +1,683 @@
+{
+  "md": "Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2019.md",
+  "pdf": "Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2019.pdf",
+  "club": "dinamozagreb-hr",
+  "year": 2019,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:59:39.739Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 57,
+    "notasUsadas": [
+      "0",
+      "14",
+      "11",
+      "12"
+    ]
+  },
+  "ladoConocido": 53,
+  "rubros": [
+    {
+      "label": "Odgovornost za godišnje konsolidirane financijske izvještaje",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # S A D R Ž A J",
+      "values": [
+        1
+      ],
+      "origen": "nota 0 (ancla 1)",
+      "ancla": "Prihodi od ulaznica - ukupno",
+      "glosa": "Responsabilidad por los estados financieros consolidados anuales"
+    },
+    {
+      "label": "Prihodi od ulaznica - ukupno",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        24.173601
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Ingresos por taquilla - total"
+    },
+    {
+      "label": "Prihodi od kamata po bankovnim računima i danim kreditima",
+      "lado": "revenue",
+      "page": 21,
+      "section": "# 7. Troškovi financiranja",
+      "values": [
+        0.031484
+      ],
+      "origen": "nota 14 (ancla 1>0)",
+      "ancla": "Prihodi od ulaznica - ukupno",
+      "glosa": "Ingresos por intereses de cuentas bancarias y préstamos concedidos"
+    },
+    {
+      "label": "Pozitivne tečajne razlike",
+      "lado": "revenue",
+      "page": 21,
+      "section": "# 7. Troškovi financiranja",
+      "values": [
+        4.930572
+      ],
+      "origen": "nota 14 (ancla 1>0)",
+      "ancla": "Prihodi od ulaznica - ukupno",
+      "glosa": "Diferencias positivas de cambio"
+    },
+    {
+      "label": "Ostali financijski prihodi",
+      "lado": "revenue",
+      "page": 21,
+      "section": "# 7. Troškovi financiranja",
+      "values": [
+        0.18011
+      ],
+      "origen": "nota 14 (ancla 1>0)",
+      "ancla": "Prihodi od ulaznica - ukupno",
+      "glosa": "Otros ingresos financieros"
+    },
+    {
+      "label": "Troškovi kamata na prekoračenja po bankovnim računima i zajmove",
+      "lado": "revenue",
+      "page": 21,
+      "section": "# 7. Troškovi financiranja",
+      "values": [
+        -3.292372
+      ],
+      "origen": "nota 14 (ancla 1>0)",
+      "ancla": "Prihodi od ulaznica - ukupno",
+      "glosa": "Gastos por intereses por descubiertos en cuentas bancarias y préstamos"
+    },
+    {
+      "label": "Konsolidirani Izvještaj o novčanim tokovima",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # S A D R Ž A J",
+      "values": [
+        10
+      ],
+      "origen": "nota 0 (ancla 1)",
+      "ancla": "Prihodi od ulaznica - ukupno",
+      "glosa": "Estado de flujos de efectivo consolidado"
+    },
+    {
+      "label": "Bilješke uz konsolidirane financijske izvještaje",
+      "lado": "revenue",
+      "page": 2,
+      "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # S A D R Ž A J",
+      "values": [
+        11
+      ],
+      "origen": "nota 0 (ancla 1)",
+      "ancla": "Prihodi od ulaznica - ukupno",
+      "glosa": "Notas a los estados financieros consolidados"
+    },
+    {
+      "label": "Prihod od sponzorstva i oglašavanja - Proizvođač opreme",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        0.887256
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por patrocinio y publicidad - Patrocinador técnico"
+    },
+    {
+      "label": "Prihod od sponzorstva i oglašavanja - Glavni sponzor",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        1.092
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos por patrocinio y publicidad - Patrocinador principal"
+    },
+    {
+      "label": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        5.07528
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros ingresos no clasificados por patrocinio y publicidad"
+    },
+    {
+      "label": "Prava emitiranja - Nacionalna natjecanja",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        2.271428
+      ],
+      "origen": "estado 1",
+      "glosa": "Derechos de retransmisión - Competiciones nacionales"
+    },
+    {
+      "label": "Ostali nerazvrstani prihodi od emitiranja",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        1.098739
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros ingresos no clasificados por retransmisión"
+    },
+    {
+      "label": "Komercijalni prihodi - Nacionalna natjecanja",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        0.214166
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos comerciales - Competiciones nacionales"
+    },
+    {
+      "label": "Komercijalni prihodi - Prodaja proizvoda",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        12.388594
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos comerciales - Venta de productos"
+    },
+    {
+      "label": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        0.659483
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos comerciales - Uso de instalaciones fuera de días de partido"
+    },
+    {
+      "label": "Ostali nerazvrstani komercijalni prihodi",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        0.090918
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros ingresos comerciales no clasificados"
+    },
+    {
+      "label": "Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        220.44069
+      ],
+      "origen": "estado 1",
+      "glosa": "Competiciones de clubes de la UEFA - derechos de retransmisión, ingresos comerciales y premios"
+    },
+    {
+      "label": "Uefina nagrade i solidarne uplate - nerazvrstano",
+      "lado": null,
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        0.185425
+      ],
+      "origen": "estado 1",
+      "glosa": "Premios y pagos de solidaridad de la UEFA - no clasificados"
+    },
+    {
+      "label": "Donacije i dotacije ili drugi iznosi od države i lokalne samouprave",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        14.132809
+      ],
+      "origen": "estado 1",
+      "glosa": "Donaciones y subvenciones u otros importes del Estado y de la administración local"
+    },
+    {
+      "label": "Ostali nerazvrstani poslovni prihodi",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        3.35786
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Otros ingresos de explotación no clasificados"
+    },
+    {
+      "label": "Prihodi od bonova za ručak",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE - nastavak / # BILJEŠKE UZ RAČUN DOBITI I GUBITKA / # 4. Ostali nerazvrstani poslovni prihodi",
+      "values": [
+        0.81816
+      ],
+      "origen": "nota 11 (ancla 1)",
+      "ancla": "Ostali nerazvrstani poslovni prihodi",
+      "glosa": "Ingresos por vales de comida"
+    },
+    {
+      "label": "Prihodi od refundacija",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE - nastavak / # BILJEŠKE UZ RAČUN DOBITI I GUBITKA / # 4. Ostali nerazvrstani poslovni prihodi",
+      "values": [
+        0.800167
+      ],
+      "origen": "nota 11 (ancla 1)",
+      "ancla": "Ostali nerazvrstani poslovni prihodi",
+      "glosa": "Ingresos por reembolsos"
+    },
+    {
+      "label": "Otpis obveza",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE - nastavak / # BILJEŠKE UZ RAČUN DOBITI I GUBITKA / # 4. Ostali nerazvrstani poslovni prihodi",
+      "values": [
+        0.078279
+      ],
+      "origen": "nota 11 (ancla 1)",
+      "ancla": "Ostali nerazvrstani poslovni prihodi",
+      "glosa": "Baja de pasivos"
+    },
+    {
+      "label": "Prihod od dohotka u naravi",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE - nastavak / # BILJEŠKE UZ RAČUN DOBITI I GUBITKA / # 4. Ostali nerazvrstani poslovni prihodi",
+      "values": [
+        0.173988
+      ],
+      "origen": "nota 11 (ancla 1)",
+      "ancla": "Ostali nerazvrstani poslovni prihodi",
+      "glosa": "Ingresos por retribuciones en especie"
+    },
+    {
+      "label": "Prihod od naknadno odobrenih popusta",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE - nastavak / # BILJEŠKE UZ RAČUN DOBITI I GUBITKA / # 4. Ostali nerazvrstani poslovni prihodi",
+      "values": [
+        1.117951
+      ],
+      "origen": "nota 11 (ancla 1)",
+      "ancla": "Ostali nerazvrstani poslovni prihodi",
+      "glosa": "Ingresos por descuentos posteriores obtenidos"
+    },
+    {
+      "label": "Ostali prihodi",
+      "lado": "revenue",
+      "page": 20,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE - nastavak / # BILJEŠKE UZ RAČUN DOBITI I GUBITKA / # 4. Ostali nerazvrstani poslovni prihodi",
+      "values": [
+        0.369315
+      ],
+      "origen": "nota 11 (ancla 1)",
+      "ancla": "Ostali nerazvrstani poslovni prihodi",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Plaće igrača",
+      "lado": "expense",
+      "page": 8,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -126.760608
+      ],
+      "origen": "estado 2",
+      "glosa": "Salarios de jugadores"
+    },
+    {
+      "label": "Porezi i doprinosi - igrači",
+      "lado": "expense",
+      "page": 8,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -19.364126
+      ],
+      "origen": "estado 2",
+      "glosa": "Impuestos y cargas sociales - jugadores"
+    },
+    {
+      "label": "Plaće ostalih zaposlenika",
+      "lado": null,
+      "page": 8,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -42.661155
+      ],
+      "origen": "estado 2",
+      "glosa": "Salarios del resto de empleados"
+    },
+    {
+      "label": "Porezi i doprinosi - ostali zaposlenici",
+      "lado": "expense",
+      "page": 8,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -11.899812
+      ],
+      "origen": "estado 2",
+      "glosa": "Impuestos y cargas sociales - resto de empleados"
+    },
+    {
+      "label": "Ostali nerazvrstani troškovi zaposlenika",
+      "lado": "expense",
+      "page": 8,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -4.189629
+      ],
+      "origen": "estado 2",
+      "glosa": "Otros gastos de personal no clasificados"
+    },
+    {
+      "label": "Amortizacija i umanjenje vrijednosti dugotrajne materijalne imovine",
+      "lado": "expense",
+      "page": 8,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -0.87446
+      ],
+      "origen": "estado 2",
+      "glosa": "Amortización y deterioro de valor del inmovilizado material"
+    },
+    {
+      "label": "Amortizacija ostale nematerijalne imovine (bez registracije igrača)",
+      "lado": "expense",
+      "page": 8,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -2.338969
+      ],
+      "origen": "estado 2",
+      "glosa": "Amortización de otros activos intangibles (excluidas las inscripciones de jugadores)"
+    },
+    {
+      "label": "Smanjenje vrijednosti i amortizacija - Ukupno (bez registracija igrača)",
+      "lado": "expense",
+      "page": 8,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -3.213429
+      ],
+      "origen": "estado 2",
+      "glosa": "Deterioro de valor y amortización - Total (excluidas las inscripciones de jugadores)"
+    },
+    {
+      "label": "Troškovi održavanja utakmica",
+      "lado": "expense",
+      "page": 8,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -14.348244
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos de organización de partidos"
+    },
+    {
+      "label": "Troškovi sponzorstva i oglašavanja",
+      "lado": "expense",
+      "page": 8,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -1.927601
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos de patrocinio y publicidad"
+    },
+    {
+      "label": "Troškovi imovine i objekata",
+      "lado": "expense",
+      "page": 8,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -6.954958
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos de instalaciones y mantenimiento"
+    },
+    {
+      "label": "Donacije",
+      "lado": "expense",
+      "page": 20,
+      "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        2.239499
+      ],
+      "origen": "nota 12 (ancla 2)",
+      "ancla": "Ostali nerazvrstani poslovni rashodi",
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "Ostali nerazvrstani poslovni rashodi",
+      "lado": "expense",
+      "page": 8,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -53.171645
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Otros gastos de explotación no clasificados"
+    },
+    {
+      "label": "Troškovi najmova",
+      "lado": "expense",
+      "page": 20,
+      "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        2.885433
+      ],
+      "origen": "nota 12 (ancla 2)",
+      "ancla": "Ostali nerazvrstani poslovni rashodi",
+      "glosa": "Gastos por arrendamientos"
+    },
+    {
+      "label": "Troškovi službenih putovanja",
+      "lado": "expense",
+      "page": 20,
+      "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        4.567611
+      ],
+      "origen": "nota 12 (ancla 2)",
+      "ancla": "Ostali nerazvrstani poslovni rashodi",
+      "glosa": "Gastos de viajes y desplazamientos"
+    },
+    {
+      "label": "Troškovi energije",
+      "lado": "expense",
+      "page": 20,
+      "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        3.117357
+      ],
+      "origen": "nota 12 (ancla 2)",
+      "ancla": "Ostali nerazvrstani poslovni rashodi",
+      "glosa": "Gastos de energía"
+    },
+    {
+      "label": "Troškovi komunalnih usluga",
+      "lado": "expense",
+      "page": 20,
+      "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        1.938301
+      ],
+      "origen": "nota 12 (ancla 2)",
+      "ancla": "Ostali nerazvrstani poslovni rashodi",
+      "glosa": "Gastos de servicios públicos y municipales"
+    },
+    {
+      "label": "Troškovi reprezentacije",
+      "lado": "expense",
+      "page": 20,
+      "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        5.318725
+      ],
+      "origen": "nota 12 (ancla 2)",
+      "ancla": "Ostali nerazvrstani poslovni rashodi",
+      "glosa": "Gastos de representación"
+    },
+    {
+      "label": "Troškovi intelektualnih usluga",
+      "lado": "expense",
+      "page": 20,
+      "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        12.808702
+      ],
+      "origen": "nota 12 (ancla 2)",
+      "ancla": "Ostali nerazvrstani poslovni rashodi",
+      "glosa": "Gastos por servicios profesionales independientes"
+    },
+    {
+      "label": "Naknade šteta po sudskim sporovima i kazne",
+      "lado": "expense",
+      "page": 20,
+      "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        0.724832
+      ],
+      "origen": "nota 12 (ancla 2)",
+      "ancla": "Ostali nerazvrstani poslovni rashodi",
+      "glosa": "Indemnizaciones por litigios y sanciones"
+    },
+    {
+      "label": "Troškovi prijevoza",
+      "lado": "expense",
+      "page": 20,
+      "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        2.825113
+      ],
+      "origen": "nota 12 (ancla 2)",
+      "ancla": "Ostali nerazvrstani poslovni rashodi",
+      "glosa": "Gastos de transporte"
+    },
+    {
+      "label": "Troškovi premije osiguranja",
+      "lado": "expense",
+      "page": 20,
+      "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        0.404712
+      ],
+      "origen": "nota 12 (ancla 2)",
+      "ancla": "Ostali nerazvrstani poslovni rashodi",
+      "glosa": "Gastos por primas de seguros"
+    },
+    {
+      "label": "Naknade i kazne savezima",
+      "lado": "expense",
+      "page": 20,
+      "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        2.941221
+      ],
+      "origen": "nota 12 (ancla 2)",
+      "ancla": "Ostali nerazvrstani poslovni rashodi",
+      "glosa": "Cuotas y sanciones federativas"
+    },
+    {
+      "label": "Usluge banaka",
+      "lado": "expense",
+      "page": 20,
+      "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        0.773274
+      ],
+      "origen": "nota 12 (ancla 2)",
+      "ancla": "Ostali nerazvrstani poslovni rashodi",
+      "glosa": "Servicios bancarios y comisiones"
+    },
+    {
+      "label": "Ostali poslovni rashodi",
+      "lado": "expense",
+      "page": 20,
+      "section": "# 5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        12.626865
+      ],
+      "origen": "nota 12 (ancla 2)",
+      "ancla": "Ostali nerazvrstani poslovni rashodi",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Poslovni rezultat (bez registracija igrača)",
+      "lado": null,
+      "page": 8,
+      "section": "# GRADANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -15.384897
+      ],
+      "origen": "estado 2",
+      "glosa": "Resultado de explotación (excluidas las inscripciones de jugadores)"
+    },
+    {
+      "label": "Amortizacija dugotrajne nematerijalne imovine (registracije igrača)",
+      "lado": null,
+      "page": 9,
+      "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -38.458783
+      ],
+      "origen": "estado 3",
+      "glosa": "Amortización del inmovilizado intangible (inscripciones de jugadores)"
+    },
+    {
+      "label": "Financijski prihodi",
+      "lado": "expense",
+      "page": 9,
+      "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        5.142166
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Financijski rashodi",
+      "lado": "expense",
+      "page": 9,
+      "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -5.612081
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Porezni rashod",
+      "lado": "expense",
+      "page": 9,
+      "section": "# GRAĐANSKI NOGOMETNI KLUB DINAMO / # KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -3.523635
+      ],
+      "origen": "estado 3",
+      "glosa": "Gasto por impuesto sobre beneficios"
+    }
+  ]
+}

@@ -1,0 +1,208 @@
+{
+  "club": "aguilas-doradas",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2024.md",
+  "generatedAt": "2026-09-30T21:57:38.619Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 16,
+    "eu": 22,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 3,
+      "section": "OMAR GIRALDO LOPEZ",
+      "columns": [
+        "Concepto ingreso",
+        "Año 2024",
+        "Año 2023",
+        "Diferencia",
+        "%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Actividades deportivas",
+          "values": [
+            "26.735.985.527",
+            "25.947.194.896",
+            "788.791.013",
+            "2.58%"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Taquilla-venta de boletería",
+          "values": [
+            "337,653,000",
+            "1.007.745.896",
+            "-670,092,896",
+            "-66.49%"
+          ],
+          "bold": false,
+          "codigo": "410505"
+        },
+        {
+          "rawLabel": "Venta derechos deportivos-jugadores",
+          "values": [
+            "12,110,170,057",
+            "13.499.142.392",
+            "-1,388,972,335",
+            "-10.29%"
+          ],
+          "bold": false,
+          "codigo": "410515"
+        },
+        {
+          "rawLabel": "Préstamo derechos deportivos-jugadores",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0.00%"
+          ],
+          "bold": false,
+          "codigo": "410520"
+        },
+        {
+          "rawLabel": "Publicidad y propaganda",
+          "values": [
+            "308,044,000",
+            "2.077.225.008",
+            "-1,769,181,008",
+            "-85.17%"
+          ],
+          "bold": false,
+          "codigo": "410525"
+        },
+        {
+          "rawLabel": "Dimayor-reintegro de costos y gastos",
+          "values": [
+            "7,038,294,689",
+            "7.153.701.054",
+            "-115,406,365",
+            "-1.61%"
+          ],
+          "bold": false,
+          "codigo": "410530"
+        },
+        {
+          "rawLabel": "Dimayor ingresos diferidos",
+          "values": [
+            "239,521,164",
+            "239.521.164",
+            "0",
+            "0.00%"
+          ],
+          "bold": false,
+          "codigo": "410531"
+        },
+        {
+          "rawLabel": "Dimayor participaciones",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0.00%"
+          ],
+          "bold": false,
+          "codigo": "410532"
+        },
+        {
+          "rawLabel": "Dimayor apoyo logístico",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0.00%"
+          ],
+          "bold": false,
+          "codigo": "410533"
+        },
+        {
+          "rawLabel": "Federación colombiana de futbol",
+          "values": [
+            "533,337,000",
+            "500.009.000",
+            "33,328,000",
+            "6.67%"
+          ],
+          "bold": false,
+          "codigo": "410535"
+        },
+        {
+          "rawLabel": "Donaciones",
+          "values": [
+            "0",
+            "420.000.000",
+            "-420,000,000",
+            "-100.00%"
+          ],
+          "bold": false,
+          "codigo": "410540"
+        },
+        {
+          "rawLabel": "Patrocinios",
+          "values": [
+            "4,287,179,487",
+            "0",
+            "4,287,179,487",
+            "100.00%"
+          ],
+          "bold": false,
+          "codigo": "410545"
+        },
+        {
+          "rawLabel": "Cuotas de sostenimiento",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0.00%"
+          ],
+          "bold": false,
+          "codigo": "410550"
+        },
+        {
+          "rawLabel": "Participación en eventos nacionales e internacionales",
+          "values": [
+            "1,881,786,130",
+            "1.049.850.000",
+            "831,936,130",
+            "79.24%"
+          ],
+          "bold": false,
+          "codigo": "410555"
+        },
+        {
+          "rawLabel": "Actividades conexas",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0.00%"
+          ],
+          "bold": false,
+          "codigo": "410595"
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/aguilas-doradas-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"aguilas-doradas\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

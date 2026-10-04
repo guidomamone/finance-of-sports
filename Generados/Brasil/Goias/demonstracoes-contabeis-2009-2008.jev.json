@@ -1,0 +1,371 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2009-2008.md",
+ "generatedAt": "2026-10-03T00:13:15.019Z",
+ "rubrosHuella": "6ee457ceea9e1d455df5fc53248032de67c444c6",
+ "rubros": [
+  {
+   "label": "Arrecadação de jogos",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos de transmissão de TV",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras receitas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidade e patrocínio",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiação",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocinio e parceria",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Treinamento de atletas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "youth_football",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Royalties",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com jogos",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Pessoal",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de arena",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Acordos judiciais e extrajudiciais",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "exceptional_items",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Mensalidade de sócio titular",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Serviços profissionais comissão técnica",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortização/baixa de contratos de atletas profissionais",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas gerais",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Parceria com patrocinadores e parceiros",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Negociação de atestado liberatório de atletas",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Participação em loteria esportiva",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Provisões, Acordos e indenizações trabalhistas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Mensalidade e matrículas de iniciação esportiva",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "youth_football",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_football",
+     0.99
+    ],
+    [
+     "member_dues",
+     0.01
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Direito de imagem",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "(-)Dedução da receita",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado (lectura 4: signo impreso, resta en su lado)",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "member_dues",
+     0.04
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1078
+  }
+ ]
+}

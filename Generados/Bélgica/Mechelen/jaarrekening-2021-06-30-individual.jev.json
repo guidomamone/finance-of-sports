@@ -1,0 +1,130 @@
+{
+ "md": "Clubes/Bélgica/Mechelen/jaarrekening-2021-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:40.669Z",
+ "rubrosHuella": "25b6e4b9658687092eecfcc5b5d22f3285d02532",
+ "rubros": [
+  {
+   "label": "VASTE ACTIVA 21/28",
+   "lado": "expense",
+   "page": 5,
+   "section": "BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 20",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Immateriële vaste activa 6.2",
+   "lado": "expense",
+   "page": 5,
+   "section": "BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 20",
+   "choice": "player_amortisation",
+   "confidence": 0.3,
+   "desdeCache": true
+  },
+  {
+   "label": "Materiële vaste activa 6.3 22/27",
+   "lado": "expense",
+   "page": 5,
+   "section": "BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 20",
+   "choice": "depreciation",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Terreinen en gebouwen",
+   "lado": "expense",
+   "page": 5,
+   "section": "BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 20",
+   "choice": "other_expenses",
+   "confidence": 0.31,
+   "desdeCache": true
+  },
+  {
+   "label": "Installaties, machines en uitrusting",
+   "lado": "expense",
+   "page": 5,
+   "section": "BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 20",
+   "choice": "other_expenses",
+   "confidence": 0.29,
+   "desdeCache": true
+  },
+  {
+   "label": "Meubilair en rollend materieel",
+   "lado": "expense",
+   "page": 5,
+   "section": "BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 20",
+   "choice": "admin_general_expense",
+   "confidence": 0.23,
+   "desdeCache": true
+  },
+  {
+   "label": "Financiële kosten 65/66B",
+   "lado": "expense",
+   "page": 10,
+   "section": "Opbrengsten uit financiële vaste activa 750 / Opbrengsten uit vlottende activa 751 53 16 / Andere financiële opbrengsten 6.11 752/9 3.682 11.020 / Niet-recurrente financiële opbrengsten 6.12 76B",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "Recurrente financiële kosten 6.11",
+   "lado": "expense",
+   "page": 10,
+   "section": "Opbrengsten uit financiële vaste activa 750 / Opbrengsten uit vlottende activa 751 53 16 / Andere financiële opbrengsten 6.11 752/9 3.682 11.020 / Niet-recurrente financiële opbrengsten 6.12 76B",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1094
+  },
+  {
+   "label": "Kosten van schulden",
+   "lado": "expense",
+   "page": 10,
+   "section": "Opbrengsten uit financiële vaste activa 750 / Opbrengsten uit vlottende activa 751 53 16 / Andere financiële opbrengsten 6.11 752/9 3.682 11.020 / Niet-recurrente financiële opbrengsten 6.12 76B",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1085
+  }
+ ]
+}

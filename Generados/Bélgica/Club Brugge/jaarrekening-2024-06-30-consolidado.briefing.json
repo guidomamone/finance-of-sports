@@ -1,0 +1,5021 @@
+{
+  "club": "clubbrugge-be",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Club Brugge/jaarrekening-2024-06-30-consolidado.md",
+  "generatedAt": "2026-09-30T21:54:49.896Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 27,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 43,
+  "relevantTableCount": 9,
+  "tables": [
+    {
+      "page": 4,
+      "section": "## Inhoud",
+      "columns": [
+        "Rapporterende entiteit",
+        "1"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Grondslagen van verslaggeving",
+          "values": [
+            "1"
+          ],
+          "bold": true,
+          "codigo": "2"
+        },
+        {
+          "rawLabel": "Verklaring van overeenstemming",
+          "values": [
+            "1"
+          ],
+          "bold": false,
+          "codigo": "2.1"
+        },
+        {
+          "rawLabel": "Waarderingsgrondslag",
+          "values": [
+            "1"
+          ],
+          "bold": false,
+          "codigo": "2.2"
+        },
+        {
+          "rawLabel": "Functionele valuta en rapporteringsvaluta",
+          "values": [
+            "1"
+          ],
+          "bold": false,
+          "codigo": "2.3"
+        },
+        {
+          "rawLabel": "Alternatieve prestatiemaatstaven",
+          "values": [
+            "1"
+          ],
+          "bold": false,
+          "codigo": "2.4"
+        },
+        {
+          "rawLabel": "Gebruik van schattingen en beoordelingen",
+          "values": [
+            "2"
+          ],
+          "bold": false,
+          "codigo": "2.5"
+        },
+        {
+          "rawLabel": "Belangrijke grondslagen voor financiële verslaggeving",
+          "values": [
+            "3"
+          ],
+          "bold": true,
+          "codigo": "3"
+        },
+        {
+          "rawLabel": "Consolidatie",
+          "values": [
+            "4"
+          ],
+          "bold": false,
+          "codigo": "3.1"
+        },
+        {
+          "rawLabel": "Spelersregistratierechten",
+          "values": [
+            "4"
+          ],
+          "bold": false,
+          "codigo": "3.2"
+        },
+        {
+          "rawLabel": "Overige immateriële activa",
+          "values": [
+            "6"
+          ],
+          "bold": false,
+          "codigo": "3.3"
+        },
+        {
+          "rawLabel": "Materiële vaste activa",
+          "values": [
+            "6"
+          ],
+          "bold": false,
+          "codigo": "3.4"
+        },
+        {
+          "rawLabel": "Recht-op-gebruik activa en leaseverplichtingen (leaseovereenkomsten)",
+          "values": [
+            "7"
+          ],
+          "bold": false,
+          "codigo": "3.5"
+        },
+        {
+          "rawLabel": "Bijzondere waardevermindering van activa",
+          "values": [
+            "8"
+          ],
+          "bold": false,
+          "codigo": "3.6"
+        },
+        {
+          "rawLabel": "Vorderingen bij de verkoop van Spelersregistratierechten",
+          "values": [
+            "10"
+          ],
+          "bold": false,
+          "codigo": "3.7"
+        },
+        {
+          "rawLabel": "Voorraden",
+          "values": [
+            "10"
+          ],
+          "bold": false,
+          "codigo": "3.8"
+        },
+        {
+          "rawLabel": "Handels- en andere vorderingen",
+          "values": [
+            "11"
+          ],
+          "bold": false,
+          "codigo": "3.9"
+        },
+        {
+          "rawLabel": "Geldmiddelen en kasequivalenten",
+          "values": [
+            "11"
+          ],
+          "bold": false,
+          "codigo": "3.10"
+        },
+        {
+          "rawLabel": "Activa aangehouden voor verkoop",
+          "values": [
+            "12"
+          ],
+          "bold": false,
+          "codigo": "3.11"
+        },
+        {
+          "rawLabel": "Personeelsvoordelen",
+          "values": [
+            "12"
+          ],
+          "bold": false,
+          "codigo": "3.12"
+        },
+        {
+          "rawLabel": "Financiële verplichtingen",
+          "values": [
+            "14"
+          ],
+          "bold": false,
+          "codigo": "3.13"
+        },
+        {
+          "rawLabel": "Schulden bij de aankoop van Spelersregistratierechten",
+          "values": [
+            "14"
+          ],
+          "bold": false,
+          "codigo": "3.14"
+        },
+        {
+          "rawLabel": "Omrekening van posten in vreemde valuta",
+          "values": [
+            "14"
+          ],
+          "bold": false,
+          "codigo": "3.15"
+        },
+        {
+          "rawLabel": "Totale inkomstenbelasting",
+          "values": [
+            "15"
+          ],
+          "bold": false,
+          "codigo": "3.16"
+        },
+        {
+          "rawLabel": "Actuele belastingen",
+          "values": [
+            "15"
+          ],
+          "bold": false,
+          "codigo": "3.16.1"
+        },
+        {
+          "rawLabel": "Uitgestelde belastingen",
+          "values": [
+            "15"
+          ],
+          "bold": false,
+          "codigo": "3.16.2"
+        },
+        {
+          "rawLabel": "Opbrengsten",
+          "values": [
+            "16"
+          ],
+          "bold": false,
+          "codigo": "3.17"
+        },
+        {
+          "rawLabel": "Wedstrijdopbrengsten",
+          "values": [
+            "16"
+          ],
+          "bold": false,
+          "codigo": "3.17.1"
+        },
+        {
+          "rawLabel": "Opbrengsten uit mediarechten",
+          "values": [
+            "17"
+          ],
+          "bold": false,
+          "codigo": "3.17.2"
+        },
+        {
+          "rawLabel": "Commerciële opbrengsten",
+          "values": [
+            "17"
+          ],
+          "bold": false,
+          "codigo": "3.17.3"
+        },
+        {
+          "rawLabel": "Overdracht van Spelersregistratierechten: meer- of minderwaarden",
+          "values": [
+            "18"
+          ],
+          "bold": false,
+          "codigo": "3.18"
+        },
+        {
+          "rawLabel": "Nieuwe standaarden en interpretaties die nog niet zijn toegepast",
+          "values": [
+            "18"
+          ],
+          "bold": true,
+          "codigo": "4"
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 8,
+      "section": "## GECONSOLIDEERDE FINANCIELE STATEN / ### Geconsolideerde balans",
+      "columns": [
+        "Activa in 000€ per",
+        "Toelichting",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Vaste activa",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Spelersregistratierechten, netto",
+          "values": [
+            "5.1",
+            "63.734",
+            "79.022"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige immateriële activa",
+          "values": [
+            "5.2",
+            "884",
+            "930"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiële vaste activa",
+          "values": [
+            "6",
+            "23.410",
+            "24.720"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recht-op-gebruik activa",
+          "values": [
+            "7",
+            "8.741",
+            "6.473"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorderingen bij de verkoop van spelersregistratierechten",
+          "values": [
+            "10",
+            "42.551",
+            "19.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige vaste activa",
+          "values": [
+            "",
+            "751",
+            "787"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal vaste activa",
+          "values": [
+            "",
+            "140.070",
+            "131.733"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Vlottende activa",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Voorraden",
+          "values": [
+            "8",
+            "912",
+            "1.346"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handels- en andere vorderingen",
+          "values": [
+            "9",
+            "9.290",
+            "6.890"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorderingen bij de verkoop van spelersregistratierechten",
+          "values": [
+            "10",
+            "33.735",
+            "22.932"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geldmiddelen en kasequivalenten",
+          "values": [
+            "11",
+            "5.001",
+            "15.231"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal vlottende activa",
+          "values": [
+            "",
+            "48.938",
+            "46.399"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAAL ACTIVA",
+          "values": [
+            "",
+            "189.009",
+            "178.133"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": null,
+      "columns": [
+        "Eigen vermogen en verplichtingen in 000€ per",
+        "Toelichting",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Eigen vermogen",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aandelenkapitaal",
+          "values": [
+            "12.1",
+            "34.715",
+            "34.715"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geconsolideerde reserves",
+          "values": [
+            "12.1",
+            "48.497",
+            "46.897"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Herwaarderingsreserve voor pensioenen",
+          "values": [
+            "",
+            "122",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal eigen vermogen",
+          "values": [
+            "",
+            "83.334",
+            "81.612"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Langlopende verplichtingen",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Leningen",
+          "values": [
+            "13",
+            "26.637",
+            "27.306"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leaseverplichtingen",
+          "values": [
+            "14",
+            "7.799",
+            "5.981"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden bij de aankoop van spelersregistratierechten",
+          "values": [
+            "16",
+            "10.549",
+            "9.668"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uitgestelde belastingschulden",
+          "values": [
+            "17.6",
+            "1.258",
+            "1.690"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensioenverplichtingen",
+          "values": [
+            "26",
+            "14",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige langlopende verplichtingen",
+          "values": [
+            "",
+            "55",
+            "70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorzieningen",
+          "values": [
+            "20",
+            "1.979",
+            "2.429"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal langlopende verplichtingen",
+          "values": [
+            "",
+            "48.291",
+            "47.144"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kortlopende verplichtingen",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Leningen",
+          "values": [
+            "13",
+            "669",
+            "655"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leaseverplichtingen",
+          "values": [
+            "14",
+            "1.217",
+            "629"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handels- en andere schulden",
+          "values": [
+            "15",
+            "17.414",
+            "8.903"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden bij de aankoop van spelersregistratierechten",
+          "values": [
+            "16",
+            "24.006",
+            "29.092"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingschulden",
+          "values": [
+            "17.2",
+            "3.820",
+            "482"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contractuele verplichtingen",
+          "values": [
+            "18",
+            "9.260",
+            "8.298"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige kortlopende verplichtingen",
+          "values": [
+            "19",
+            "998",
+            "1.318"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal kortlopende verplichtingen",
+          "values": [
+            "",
+            "57.384",
+            "49.377"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAAL PASSIVA",
+          "values": [
+            "",
+            "189.009",
+            "178.133"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 10,
+      "section": null,
+      "columns": [
+        "In € '000",
+        "Toelichting",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Wedstrijdopbrengsten",
+          "values": [
+            "21.1",
+            "22.353",
+            "22.569"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opbrengsten uit mediarechten",
+          "values": [
+            "21.2",
+            "23.881",
+            "55.007"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Binnenlands*",
+          "values": [
+            "",
+            "*11.480*",
+            "*9.937*"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Europees*",
+          "values": [
+            "",
+            "*12.402*",
+            "*45.070*"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Commerciële opbrengsten",
+          "values": [
+            "21.3",
+            "18.801",
+            "17.792"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige opbrengsten",
+          "values": [
+            "21.4",
+            "3.581",
+            "4.217"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Meerwaarde bij de overdracht van spelersregistratierechten",
+          "values": [
+            "5.1",
+            "72.855",
+            "52.177"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige bedrijfsopbrengsten",
+          "values": [
+            "22",
+            "654",
+            "369"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale bedrijfsopbrengsten",
+          "values": [
+            "",
+            "142.125",
+            "152.130"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aankoop van materialen, benodigdheden en overige verbruiksgoederen",
+          "values": [
+            "",
+            "-2.384",
+            "-2.048"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige bedrijfskosten",
+          "values": [
+            "23",
+            "-32.440",
+            "-26.280"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lonen van spelers en kosten van technische staf",
+          "values": [
+            "24",
+            "-53.931",
+            "-62.451"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige personeelskosten",
+          "values": [
+            "25",
+            "-10.352",
+            "-8.084"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Minderwaarde bij de overdracht van spelersregistratierechten",
+          "values": [
+            "5.1",
+            "-1.536",
+            "-1.029"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen van spelersregistratierechten",
+          "values": [
+            "5.1",
+            "-29.848",
+            "-29.284"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen van van overige immateriële activa en materiële vaste activa",
+          "values": [
+            "5.2/6",
+            "-3.570",
+            "-3.403"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen en waardevermindering van een recht-op-gebruik activa",
+          "values": [
+            "7",
+            "-1.652",
+            "-1.467"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige niet-kaskosten",
+          "values": [
+            "",
+            "112",
+            "-1.963"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale bedrijfskosten",
+          "values": [
+            "",
+            "-135.601",
+            "-136.009"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bedrijfswinst",
+          "values": [
+            "",
+            "6.524",
+            "16.121"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "EBITDA",
+          "values": [
+            "2.4",
+            "41.594",
+            "50.274"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Financiële opbrengsten",
+          "values": [
+            "27",
+            "2.208",
+            "2.042"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële kosten",
+          "values": [
+            "27",
+            "-1.822",
+            "-1.098"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financieel resultaat",
+          "values": [
+            "",
+            "386",
+            "944"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Winst (verlies) vóór belastingen",
+          "values": [
+            "",
+            "6.910",
+            "17.065"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actuele belastingen",
+          "values": [
+            "17.1",
+            "-5.914",
+            "-4.166"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uitgestelde belastingen",
+          "values": [
+            "17.1",
+            "473",
+            "-551"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal inkomstenbelastingen",
+          "values": [
+            "",
+            "-5.442",
+            "-4.717"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Winst (verlies) voor de periode",
+          "values": [
+            "",
+            "1.468",
+            "12.348"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "*Toerekenbaar aan de aandeelhouders van Club Brugge NV*",
+          "values": [
+            "",
+            "*1.468*",
+            "*12.348*"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Toerekenbaar aan minderheidsbelangen*",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere gerealiseerde en niet-gerealiseerde resultaten niet verwerkt in de resultatenrekening",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Herwaardering van de toegezegde-pensioenverplichtingen",
+          "values": [
+            "17.4",
+            "122",
+            "-48"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Actuariële winsten/verliezen ontstaan tijdens de periode*",
+          "values": [
+            "17.4",
+            "162",
+            "-64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Belastingeffect*",
+          "values": [
+            "17.4",
+            "-41",
+            "16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal niet-gerealiseerde resultaten",
+          "values": [
+            "",
+            "122",
+            "-48"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Totaal winst (verlies) van het boekjaar",
+          "values": [
+            "",
+            "1.590",
+            "12.300"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "*Toerekenbaar aan de aandeelhouders van Club Brugge NV*",
+          "values": [
+            "",
+            "*1.590*",
+            "*12.300*"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Toerekenbaar aan minderheidsbelangen*",
+          "values": [
+            "",
+            "*0*",
+            "*0*"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 11,
+      "section": "### Geconsolideerd mutatieoverzicht van het eigen vermogen voor het boekjaar afgesloten op",
+      "columns": [
+        "In € '000",
+        "Toelichting",
+        "Aandelenkapitaal",
+        "Uitgiftepremies",
+        "Geconsolideerde reserves",
+        "Herwaarderingsreserve voor pensioenen",
+        "Totaal eigen vermogen"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo per 30 juni 2022",
+          "values": [
+            "",
+            "35.247",
+            "0",
+            "36.978",
+            "48",
+            "72.273"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Winst( verlies) voor de periode",
+          "values": [
+            "",
+            "",
+            "",
+            "12.348",
+            "",
+            "12.348"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere gerealiseerde en niet-gerealiseerde resultaten",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "-48",
+            "-48"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale winst (verlies) van het boekjaar",
+          "values": [
+            "",
+            "",
+            "",
+            "12.348",
+            "-48",
+            "12.300"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Transacties met eigenaars van de Vennootschap",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dividenden",
+          "values": [
+            "",
+            "-533",
+            "",
+            "-2.718",
+            "",
+            "-3.251"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Op aandelen gebaseerde betalingsregelingen",
+          "values": [
+            "",
+            "",
+            "",
+            "290",
+            "",
+            "290"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal bijdragen en uitkeringen",
+          "values": [
+            "",
+            "-533",
+            "0",
+            "-2428",
+            "0",
+            "-2961"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo per 30 juni 2023",
+          "values": [
+            "",
+            "34.715",
+            "0",
+            "46.898",
+            "0",
+            "81.612"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Winst ( verlies) voor de periode",
+          "values": [
+            "",
+            "",
+            "",
+            "1.468",
+            "",
+            "1.468"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere gerealiseerde en niet-gerealiseerde resultaten",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "122",
+            "122"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale winst (verlies) van het boekjaar",
+          "values": [
+            "",
+            "",
+            "",
+            "1.468",
+            "122",
+            "1.590"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Transacties met eigenaars van de Vennootschap",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dividenden",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Op aandelen gebaseerde betalingsregelingen",
+          "values": [
+            "",
+            "",
+            "",
+            "131",
+            "",
+            "131"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal bijdragen en uitkeringen",
+          "values": [
+            "",
+            "0",
+            "0",
+            "131",
+            "0",
+            "131"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo per 30 juni 2024",
+          "values": [
+            "",
+            "34.715",
+            "0",
+            "48.497",
+            "122",
+            "83.334"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 12,
+      "section": "### Geconsolideerd kasstroomoverzicht voor het boekjaar afgesloten op",
+      "columns": [
+        "In € '000",
+        "Toelichting",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Kasstroom uit operationele activiteiten",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Winst (verlies) voor de periode",
+          "values": [
+            "",
+            "1.468",
+            "12.348"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aanpassingen voor:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Afschrijvingen, waardeverminderingen en bijzondere waardeverminderingen",
+          "values": [
+            "",
+            "35.070",
+            "34.139"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Overige niet-kaskosten",
+          "values": [
+            "",
+            "-112",
+            "1.978"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Meerwaarde bij de overdracht van spelersregistratierechten",
+          "values": [
+            "5.1",
+            "-72.855",
+            "-52.177"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Minderwaarde bij de overdracht van spelersregistratierechten",
+          "values": [
+            "5.1",
+            "1.536",
+            "1.029"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Pensioenverplichtingen",
+          "values": [
+            "",
+            "176",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Nettofinancieringskosten",
+          "values": [
+            "27",
+            "-387",
+            "-945"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Inkomstenbelasting",
+          "values": [
+            "17.1",
+            "5.442",
+            "4.717"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "-29.662",
+            "1.089"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wijzigingen in:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Voorraden",
+          "values": [
+            "",
+            "597",
+            "-454"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Handels- en andere vorderingen",
+          "values": [
+            "",
+            "-2.397",
+            "-3.166"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Overige activa",
+          "values": [
+            "",
+            "35",
+            "-195"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Handels- en andere schulden",
+          "values": [
+            "",
+            "8.495",
+            "912"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Contractuele verplichtingen",
+          "values": [
+            "18",
+            "962",
+            "-188"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Overige verplichtingen",
+          "values": [
+            "",
+            "-320",
+            "-130"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kasstroom uit operationele activiteiten",
+          "values": [
+            "",
+            "-22.288",
+            "-2.132"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Betaalde rente",
+          "values": [
+            "",
+            "-880",
+            "-565"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Betaalde inkomstenbelasting",
+          "values": [
+            "",
+            "-2.589",
+            "-3.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nettokasstromen uit / (gebruikt voor) operationele activiteiten",
+          "values": [
+            "",
+            "-25.757",
+            "-5.696"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kasstroom uit Investeringsactiviteiten",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Inkomsten uit de verkoop van spelersregistratierechten",
+          "values": [
+            "",
+            "61.360",
+            "52.581"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verwerving van spelersregistratierechten",
+          "values": [
+            "",
+            "-41.677",
+            "-59.022"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verwerving van overige immateriële activa",
+          "values": [
+            "5.2",
+            "-465",
+            "-851"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verwerving van materiële vaste activa",
+          "values": [
+            "",
+            "-1.731",
+            "-4.535"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ontvangen rente",
+          "values": [
+            "",
+            "359",
+            "-4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nettokasstromen uit / (gebruikt voor) investeringsactiviteiten",
+          "values": [
+            "",
+            "17.848",
+            "-11.832"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kasstroom uit financieringsactiviteiten",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aflossing van leningen",
+          "values": [
+            "13",
+            "-655",
+            "-642"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Betaling van leaseverplichtingen",
+          "values": [
+            "14",
+            "-1.514",
+            "-1.401"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Betaling van eigen aandelen",
+          "values": [
+            "17",
+            "",
+            "-3.251"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transacties met eigenaars van de vennootschap",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet-beschikbare banktegoeden",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige",
+          "values": [
+            "",
+            "-150",
+            "-304"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nettokasstromen uit / (gebruikt voor) financieringsactiviteiten",
+          "values": [
+            "",
+            "-2.319",
+            "-5.598"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Nettostijging / (-daling) in geldmiddelen en kasequivalenten",
+          "values": [
+            "",
+            "-10.230",
+            "-23.126"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geldmiddelen en kasequivalenten per 1 juli",
+          "values": [
+            "11",
+            "15.231",
+            "38.357"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geldmiddelen en kasequivalenten per 30 juni",
+          "values": [
+            "11",
+            "5.001",
+            "15.231"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 14,
+      "section": null,
+      "columns": [
+        "EBITDA-aansluiting voor het boekjaar afgesloten op",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "In € '000",
+          "values": [
+            "30 juni 2024",
+            "30 juni 2023"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Winst (verlies) voor de periode",
+          "values": [
+            "1.468",
+            "12.348"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inkomstenbelastingen",
+          "values": [
+            "5.442",
+            "4.717"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financieel resultaat",
+          "values": [
+            "-386",
+            "-944"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen van spelersregistratierechten",
+          "values": [
+            "29.848",
+            "29.284"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen van overige immateriële activa en",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen van materiële vaste activa",
+          "values": [
+            "3.570",
+            "3.403"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen van recht-op-gebruik activa",
+          "values": [
+            "1.652",
+            "1.467"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EBITDA",
+          "values": [
+            "41.594",
+            "50.274"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 32,
+      "section": "De details zijn als volgt: / Spelersregistratierechten, netto / Gecumuleerde / Aanschaffingswaarde afschrijvingen en Netto boekwaarde / in 000€ waardeverminderingen",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Per 30 juni 2022",
+          "values": [
+            "106.654",
+            "38.945",
+            "67.710"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "51.440",
+            "29.284"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervreemdingen",
+          "values": [
+            "-26.068",
+            "-15.225"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2023",
+          "values": [
+            "132.026",
+            "53.004",
+            "79.022"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "31.265",
+            "29.848"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervreemdingen",
+          "values": [
+            "-41.665",
+            "-24.958"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2024",
+          "values": [
+            "121.627",
+            "57.893",
+            "63.734"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "### 5.2 Overige immateriële activa",
+      "columns": [
+        "Overige immateriële activa in 000€",
+        "Aanschaffingswaarde",
+        "Gecumuleerde afschrijvingen en waardeverminderingen",
+        "Netto boekwaarde"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Per 30 juni 2022",
+          "values": [
+            "1.100",
+            "649",
+            "452"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "851",
+            "372",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervreemdingen",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2023",
+          "values": [
+            "1.952",
+            "1.021",
+            "930"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "465",
+            "512",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervreemdingen",
+          "values": [
+            "4",
+            "4",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2024",
+          "values": [
+            "2.412",
+            "1.528",
+            "884"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 35,
+      "section": null,
+      "columns": [
+        "Terreinen en gebouwen in 000€",
+        "Aanschaffings waarde",
+        "Gecumuleerde afschrijvingen",
+        "Netto boekwaarde"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Per 30 juni 2022",
+          "values": [
+            "10.753",
+            "1.862",
+            "8.891"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "162",
+            "460",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervreemdingen",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfers",
+          "values": [
+            "-",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2023",
+          "values": [
+            "10.915",
+            "2.322",
+            "8.593"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "5",
+            "460",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervreemdingen",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfers",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2024",
+          "values": [
+            "10.920",
+            "2.782",
+            "8.138"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 35,
+      "section": null,
+      "columns": [
+        "Machines, uitrusting, kantoorm eubilair en overige materiële vaste activa in 000€",
+        "Aanschaffings waarde",
+        "Gecumulee rde afschrijvi ngen",
+        "Netto boekw aarde"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Per 30 juni 2022",
+          "values": [
+            "24.254",
+            "14.032",
+            "10.222"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "959",
+            "2.571",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervreemdingen",
+          "values": [
+            "-149",
+            "-106",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfers",
+          "values": [
+            "-",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2023",
+          "values": [
+            "25.066",
+            "16.497",
+            "8.568"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "1.267",
+            "2.598",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervreemdingen",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfers",
+          "values": [
+            "-",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2024",
+          "values": [
+            "26.332",
+            "19.095",
+            "7.237"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 35,
+      "section": null,
+      "columns": [
+        "Activa in aanbouw in 000€",
+        "Aanschaffings waarde"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Per 30 juni 2022",
+          "values": [
+            "5.005"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "2.554"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervreemdingen",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfers",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2023",
+          "values": [
+            "7.559"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "476"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervreemdingen",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfers",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2024",
+          "values": [
+            "8.034"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 35,
+      "section": null,
+      "columns": [
+        "TOTAAL",
+        "TOTAAL Aanschaffin gswaarde",
+        "TOTAAL Gecumuleerd e afschrijvingen",
+        "TOTAAL Netto boekwaarde"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Per 30 juni 2022",
+          "values": [
+            "40.012",
+            "15.894",
+            "24.118"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "3.676",
+            "3.031",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervreemdingen",
+          "values": [
+            "-149",
+            "-106",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfers",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2023",
+          "values": [
+            "43.539",
+            "18.819",
+            "24.720"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "1.747",
+            "3.058",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervreemdingen",
+          "values": [
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfers",
+          "values": [
+            "-",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2024",
+          "values": [
+            "46.286",
+            "21.877",
+            "23.410"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 36,
+      "section": "### 7 Recht-op-gebruik activa",
+      "columns": [
+        "Recht-op-gebruik activa in 000€",
+        "Terreinen en gebouwen",
+        "",
+        "",
+        "Auto's",
+        "",
+        "",
+        "Huurovereenkomsten voor inkomende spelers",
+        "",
+        "",
+        "Overige",
+        "",
+        "",
+        "Totaal",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Aanschaffingswaarde",
+            "Gecum. Afschr.",
+            "Netto boekwaarde",
+            "Aanschaffingswaarde",
+            "Gecum. Afschr.",
+            "Netto boekwaarde",
+            "Aanschaffingswaarde",
+            "Gecum. Afschr.",
+            "Netto boekwaarde",
+            "Aanschaffingswaarde",
+            "Gecum. Afschr.",
+            "Netto boekwaarde",
+            "Aanschaffingswaarde",
+            "Gecum. Afschr.",
+            "Netto boekwaarde"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2022",
+          "values": [
+            "6.450",
+            "252",
+            "6.198",
+            "552",
+            "188",
+            "364",
+            "0",
+            "0",
+            "0",
+            "484",
+            "435",
+            "49",
+            "7.486",
+            "875",
+            "6.611"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "192",
+            "302",
+            "",
+            "1.116",
+            "1.113",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "52",
+            "",
+            "1.308",
+            "1.467",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overdrachten",
+          "values": [
+            "",
+            "",
+            "",
+            "-953",
+            "-953",
+            "",
+            "",
+            "",
+            "",
+            "-339",
+            "-360",
+            "",
+            "-1.292",
+            "-1.313",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2023",
+          "values": [
+            "6.642",
+            "554",
+            "6.088",
+            "716",
+            "349",
+            "367",
+            "0",
+            "0",
+            "0",
+            "145",
+            "127",
+            "18",
+            "7.503",
+            "1.030",
+            "6.473"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "82",
+            "320",
+            "",
+            "3.334",
+            "865",
+            "",
+            "425",
+            "425",
+            "",
+            "53",
+            "42",
+            "",
+            "3.469",
+            "1.227",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overdrachten",
+          "values": [
+            "",
+            "",
+            "",
+            "-367",
+            "-367",
+            "",
+            "-425",
+            "-425",
+            "",
+            "0",
+            "-25",
+            "",
+            "-367",
+            "-392",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2024",
+          "values": [
+            "6.724",
+            "874",
+            "5.850",
+            "3.683",
+            "847",
+            "2.836",
+            "0",
+            "0",
+            "0",
+            "198",
+            "144",
+            "54",
+            "10.605",
+            "1.865",
+            "8.741"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": "### 8 Voorraden",
+      "columns": [
+        "Voorraden in 000€ per",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Handelsgoederen",
+          "values": [
+            "1.075",
+            "1.404"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorzieningen voor verouderde voorraden",
+          "values": [
+            "-163",
+            "-57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorraden",
+          "values": [
+            "912",
+            "1.346"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": "### 9 Handels- en andere vorderingen",
+      "columns": [
+        "Handels- en andere vorderingen in 000€ per",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Handelsvorderingen",
+          "values": [
+            "7.853",
+            "3.950"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorziening voor dubieuze debiteuren",
+          "values": [
+            "-69",
+            "-56"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vooruitbetaalde kosten",
+          "values": [
+            "1.208",
+            "1.831"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige vorderingen",
+          "values": [
+            "298",
+            "1.165"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handels- en andere vorderingen",
+          "values": [
+            "9.290",
+            "6.890"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 38,
+      "section": "De vervaldagenbalans van de handelsvorderingen op de verslagdatum zag er als volgt uit:",
+      "columns": [
+        "Handelsvorderingen - vervaldagenbalans in 000€ per",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Niet vervallen",
+          "values": [
+            "3.854",
+            "3.586"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervallen 0 - 30 dagen",
+          "values": [
+            "3.303",
+            "334"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervallen 31 - 90 dagen",
+          "values": [
+            "644",
+            "18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervallen > 90 dagen",
+          "values": [
+            "51",
+            "13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handelsvorderingen",
+          "values": [
+            "7.853",
+            "3.950"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 39,
+      "section": "### 10 Vorderingen bij de verkoop van Spelersregistratierechten",
+      "columns": [
+        "Vorderingen bij de verkoop van spelersregistratierechten in 000€ per 30 juni",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Te ontvangen in het jaar 2026/2027",
+          "values": [
+            "6.458",
+            "6.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Te ontvangen in het jaar 2025/2026",
+          "values": [
+            "36.093",
+            "9.458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Te ontvangen in het jaar 2024/2025",
+          "values": [
+            "33.735",
+            "4.342"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Te ontvangen in het jaar 2023/2024",
+          "values": [
+            "0",
+            "22.932"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorderingen bij de verkoop van spelersregistratierechten",
+          "values": [
+            "76.286",
+            "42.732"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Langlopend",
+          "values": [
+            "42.551",
+            "19.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortlopend",
+          "values": [
+            "33.735",
+            "22.932"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorderingen bij de verkoop van spelersregistratierechten",
+          "values": [
+            "76.286",
+            "42.732"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 41,
+      "section": "## 11 Geldmiddelen en kasequivalenten",
+      "columns": [
+        "Cash middelen en cash equivalenten",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Banksaldi",
+          "values": [
+            "4.966",
+            "15.215"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kasgeld",
+          "values": [
+            "35",
+            "16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geldmiddelen en kasequivalenten",
+          "values": [
+            "5.001",
+            "15.231"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 43,
+      "section": "## 13 Leningen",
+      "columns": [
+        "Leningen: langlopend in 000€ per",
+        "Nominale intrestvoet",
+        "Vervaldatum",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Lening Club Brugge Foundation VZW",
+          "values": [
+            "1,00%",
+            "30/06/2052",
+            "15.000",
+            "15.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Externe banklening (Belfius)",
+          "values": [
+            "2,06%*",
+            "31/03/2040",
+            "11.637",
+            "12.306"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rentedragende schulden langlopend",
+          "values": [
+            "",
+            "",
+            "26.637",
+            "27.306"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 43,
+      "section": null,
+      "columns": [
+        "Rentedragende schulden: kortlopend in 000€ per",
+        "Nominale intrestvoet",
+        "Vervaldatum",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Externe banklening (Belfius)",
+          "values": [
+            "2,06%*",
+            "31/03/2040",
+            "669",
+            "655"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rentedragende schulden kortlopend",
+          "values": [
+            "",
+            "",
+            "669",
+            "655"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 43,
+      "section": null,
+      "columns": [
+        "Kasstroomtabel rentedragende schulden in 000€",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Nettomutaties kortlopende en langlopende rentedragende schulden",
+          "values": [
+            "-655",
+            "-642"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kasstroommutatie",
+          "values": [
+            "-655",
+            "-642"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Link met kasstroomtabel:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Opname van leningen",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aflossing van leningen",
+          "values": [
+            "-655",
+            "-642"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nettomutatie",
+          "values": [
+            "-655",
+            "-642"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 45,
+      "section": null,
+      "columns": [
+        "",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "< 1 jaar",
+          "values": [
+            "150",
+            "150"
+          ],
+          "bold": false,
+          "codigo": "Lening Club Brugge Foundation VZW"
+        },
+        {
+          "rawLabel": "1-5 jaar",
+          "values": [
+            "600",
+            "600"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": ">5 jaar",
+          "values": [
+            "18.450",
+            "18.600"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "< 1 jaar",
+          "values": [
+            "917",
+            "917"
+          ],
+          "bold": false,
+          "codigo": "Externe banklening"
+        },
+        {
+          "rawLabel": "1-5 jaar",
+          "values": [
+            "3.668",
+            "3.668"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": ">5 jaar",
+          "values": [
+            "9.857",
+            "10.774"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 46,
+      "section": "## 14 Leaseverplichtingen",
+      "columns": [
+        "Leaseverplichtingen in 000€",
+        "Terreinen en gebouwen",
+        "Auto's",
+        "Huur inkomende spelers",
+        "Overige",
+        "Totaal",
+        "Korte termijn",
+        "Lange termijn"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Per 30 juni 2022",
+          "values": [
+            "6.264",
+            "364",
+            "0",
+            "55",
+            "6.682",
+            "625",
+            "6.058"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "192",
+            "1.116",
+            "",
+            "",
+            "1.308",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terugbetalingen",
+          "values": [
+            "-234",
+            "-1.113",
+            "",
+            "-34",
+            "-1.380",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2023",
+          "values": [
+            "6.223",
+            "367",
+            "0",
+            "21",
+            "6.610",
+            "629",
+            "5.981"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toevoegingen",
+          "values": [
+            "82",
+            "2.890",
+            "425",
+            "53",
+            "3.026",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terugbetalingen",
+          "values": [
+            "-234",
+            "-367",
+            "-425",
+            "-19",
+            "-619",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per 30 juni 2024",
+          "values": [
+            "6.071",
+            "2.890",
+            "0",
+            "56",
+            "9.016",
+            "1.217",
+            "7.799"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 46,
+      "section": "Leaseverplichtingen zijn als volgt betaalbaar:",
+      "columns": [
+        "Leaseverplichtingen in 000€",
+        "Toekomstige minimale betalingen",
+        "Rente",
+        "Contante waarde van minimale betalingen",
+        "Toekomstige minimale betalingen",
+        "Rente",
+        "Contante waarde van minimale betalingen"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "30 juni 2024",
+            "2024",
+            "30 juni 2024",
+            "30 juni 2023",
+            "2023",
+            "30 juni 2023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Minder dan één jaar",
+          "values": [
+            "1.387",
+            "169",
+            "1.217",
+            "752",
+            "122",
+            "629"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tussen één en vijf jaar",
+          "values": [
+            "3.521",
+            "477",
+            "3.045",
+            "1.465",
+            "437",
+            "1.028"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Meer dan vijf jaar",
+          "values": [
+            "6.023",
+            "1.269",
+            "4.755",
+            "6.298",
+            "1.345",
+            "4.953"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal leasing",
+          "values": [
+            "10.932",
+            "1.914",
+            "9.016",
+            "8.514",
+            "1.904",
+            "6.610"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 47,
+      "section": "## 15 Handels- en andere schulden",
+      "columns": [
+        "Handels- en andere schulden in 000€ per",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "7.708",
+            "4.415"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Btw-schulden",
+          "values": [
+            "1.257",
+            "-4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Personeelsgerelateerde schulden",
+          "values": [
+            "8.365",
+            "4.410"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Toe te rekenen kosten",
+          "values": [
+            "84",
+            "81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handels- en andere schulden",
+          "values": [
+            "17.414",
+            "8.903"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 47,
+      "section": "## 16 Schulden bij de aankoop van Spelersregistratierechten",
+      "columns": [
+        "Schulden bij de aankoop van spelersregistratierechten in 000€ per",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Te betalen in het jaar 2026/2027",
+          "values": [
+            "1.805",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Te betalen in het jaar 2025/2026",
+          "values": [
+            "8.744",
+            "2.564"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Te betalen in het jaar 2024/2025",
+          "values": [
+            "24.006",
+            "7.104"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Te betalen in het jaar 2023/2024",
+          "values": [
+            "0",
+            "29.092"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spelersregistratieschulden",
+          "values": [
+            "34.555",
+            "38.761"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Langlopend",
+          "values": [
+            "10.549",
+            "9.668"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortlopend",
+          "values": [
+            "24.006",
+            "29.092"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spelersregistratieschulden",
+          "values": [
+            "34.555",
+            "38.761"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 50,
+      "section": null,
+      "columns": [
+        "In 000€",
+        "30 juni 2024",
+        "30 juni 2023",
+        "Mutatie",
+        "Uitgestelde belastingen 25,00%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Tijdelijk verschil op balansniveau",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Spelersregistratierechten, netto",
+          "values": [
+            "5.371",
+            "7.397",
+            "-2.026",
+            "-506"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorderingen bij de verkoop van spelersregistratierechten",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden bij de aankoop van spelersregistratierechten",
+          "values": [
+            "-50",
+            "-500",
+            "450",
+            "-113"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige tijdelijke verschillen",
+          "values": [
+            "-289",
+            "-137",
+            "-152",
+            "38"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impact verandering van belastingtarief",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impact op balans",
+          "values": [
+            "5.032",
+            "6.760",
+            "-1.728",
+            "432"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Uitgestelde belastingen",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Uitgestelde belastingschulden",
+          "values": [
+            "-1.258",
+            "-1.690",
+            "432",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subtotaal uitgestelde belastingen",
+          "values": [
+            "-1.258",
+            "-1.690",
+            "432",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Totale impact op balans",
+          "values": [
+            "3.774",
+            "5.070",
+            "-1.296",
+            "432"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Uitgestelde belastingen in de totale Winst / (verlies) van het boekjaar",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Uitgestelde belastingen in resultatenrekening",
+          "values": [
+            "473",
+            "-551",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uitgestelde belastingen in niet-gerealiseerde resultaten",
+          "values": [
+            "-41",
+            "16",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale impact op de totale Winst / (verlies) van het boekjaar",
+          "values": [
+            "432",
+            "-535",
+            "",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 50,
+      "section": "### 17.4 Bedragen opgenomen in de andere gerealiseerde en niet-gerealiseerde resultaten",
+      "columns": [
+        "Actuariële winsten/verliezen van de toegezegde-pensioenregeling in 000€ voor het boekjaar afgesloten op 30 juni",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Bedrag voor belastingen",
+          "values": [
+            "162",
+            "-64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belasting (kost) opbrengst",
+          "values": [
+            "-41",
+            "16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Na belastingen",
+          "values": [
+            "122",
+            "-48"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 51,
+      "section": "### 17.5 Aansluiting van het effectieve belastingtarief",
+      "columns": [
+        "In 000€ voor het boekjaar afgesloten op 30 juni",
+        "30 juni 2024 in %",
+        "30 juni 2024 € '000",
+        "30 juni 2023 in %",
+        "30 juni 2023 € '000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Winst (verlies) voor de periode",
+          "values": [
+            "",
+            "1.468",
+            "",
+            "12.348"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lasten uit hoofde van inkomstenbelasting",
+          "values": [
+            "",
+            "-5.442",
+            "",
+            "-4.717"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Winst exclusief belastingen",
+          "values": [
+            "",
+            "6.910",
+            "",
+            "17.065"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Belastingtarief",
+          "values": [
+            "-25,00%",
+            "-1.727",
+            "-25,00%",
+            "-4.266"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet-aftrekbare uitgaven",
+          "values": [
+            "",
+            "-1.045",
+            "",
+            "-360"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastbare voorzieningen",
+          "values": [
+            "",
+            "-17",
+            "",
+            "-17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Te lage (te hoge) voorziening in vorige periodes",
+          "values": [
+            "",
+            "-37",
+            "",
+            "-16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verliezen in het huidige jaar waarvoor er geen uitgestelde belastingvordering was opgenomen (Subs)",
+          "values": [
+            "",
+            "-41",
+            "",
+            "-58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ontoereikende vooruitbetalingen",
+          "values": [
+            "",
+            "-84",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aanpassing actuele belastingen voor vorige periodes",
+          "values": [
+            "",
+            "-2.490",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "-78.75%",
+            "-5.442",
+            "-27.64%",
+            "-4.717"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 52,
+      "section": "(BAS). Per arbitrale uitspraak van 5 augustus 2024, aldus na afloop van het / besproken boekjaar, werd de vordering van de Vennootschap ongegrond verklaard. / Opbrengsten / Opbrengsten Eert art / In 000€ voor het boekjaar afgesloten op tigris, Stoner UE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Wedstrijdopbrengsten",
+          "values": [
+            "22.353",
+            "22.569"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opbrengsten uit mediarechten",
+          "values": [
+            "23.881",
+            "55.007"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Binnenlands",
+          "values": [
+            "11.480",
+            "9.937"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Europees",
+          "values": [
+            "12.402",
+            "45.070"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Commerciële opbrengsten",
+          "values": [
+            "18.801",
+            "17.792"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige opbrengsten",
+          "values": [
+            "3.581",
+            "4.217"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal",
+          "values": [
+            "68.616",
+            "99.584"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 54,
+      "section": "### 21.2 Opbrengsten uit mediarechten",
+      "columns": [
+        "In 000€",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Opbrengsten uit mediarechten - Binnenlands",
+          "values": [
+            "11.480",
+            "9.937"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opbrengsten uit mediarechten - Europees",
+          "values": [
+            "12.402",
+            "45.070"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 56,
+      "section": "## 22 Overige bedrijfsopbrengsten",
+      "columns": [
+        "Overige bedrijfsopbrengsten in 000€ voor het boekjaar afgesloten op",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Lidgeld",
+          "values": [
+            "48",
+            "51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Giften",
+          "values": [
+            "41",
+            "100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige",
+          "values": [
+            "565",
+            "218"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige bedrijfsopbrengsten",
+          "values": [
+            "654",
+            "369"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 56,
+      "section": "## 23 Overige bedrijfskosten",
+      "columns": [
+        "Overige bedrijfskosten in 000€ voor het boekjaar afgesloten op",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Algemene administratie",
+          "values": [
+            "6.754",
+            "6.363"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Huur en andere diensten",
+          "values": [
+            "2.253",
+            "2.069"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Organisatie, apparatuur en beveiliging",
+          "values": [
+            "9.976",
+            "8.543"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reiskosten",
+          "values": [
+            "2.728",
+            "1.981"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nutsvoorzieningen, onderhoud en reparatie",
+          "values": [
+            "3.467",
+            "3.360"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hotels, restaurants en recepties",
+          "values": [
+            "2.339",
+            "1.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Consulting- en andere advieskosten",
+          "values": [
+            "1.940",
+            "1.120"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Interim",
+          "values": [
+            "488",
+            "222"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige belastingen",
+          "values": [
+            "2.496",
+            "968"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige bedrijfskosten",
+          "values": [
+            "32.440",
+            "26.280"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 57,
+      "section": "24 / Lonen van spelers en kosten van technische staf / Lonen van spelers en kosten van technische staf / In 000€ voor het boekjaar afgesloten op SAE, <10 AP",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Lonen van spelers en kosten van technische staf",
+          "values": [
+            "61.736",
+            "68.634"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Socialezekerheidsbijdragen",
+          "values": [
+            "7.697",
+            "8.850"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Toegezegde-pensioenregelingskosten",
+          "values": [
+            "5.396",
+            "6.248"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige kosten -189",
+          "values": [
+            "1.352"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vrijstelling doorstorting bedrijfsvoorheffing",
+          "values": [
+            "-20.710",
+            "-22.633"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lonen van spelers en kosten van technische staf",
+          "values": [
+            "53.931",
+            "62.451"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 58,
+      "section": "## 25 Overige personeelskosten",
+      "columns": [
+        "Overige personeelskosten",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Overige personeelskosten",
+          "values": [
+            "7.224",
+            "5.806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "op aandelen gebaseerde betalingen",
+          "values": [
+            "132",
+            "229"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Socialezekerheidsbijdragen",
+          "values": [
+            "1.998",
+            "1.526"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Toegezegde-pensioenregelingskosten",
+          "values": [
+            "292",
+            "243"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige kosten",
+          "values": [
+            "706",
+            "281"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige personeelskosten",
+          "values": [
+            "10.352",
+            "8.084"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 60,
+      "section": null,
+      "columns": [
+        "",
+        "Tranche 1",
+        "Tranche 2"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Reële waarde op datum van toekenning",
+          "values": [
+            "4,64 EUR",
+            "1,78 EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uitoefenprijs",
+          "values": [
+            "17 EUR",
+            "17 EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verwachte looptijd",
+          "values": [
+            "5,5 jaar",
+            "5,5 jaar"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verwachte dividend",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verwachte volatiliteit",
+          "values": [
+            "33,4%",
+            "33,4%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Risicovrije rentevoet (gebaseerd op overheidsobligaties)",
+          "values": [
+            "0,1%",
+            "0,1%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 60,
+      "section": "#### C. Overzicht van uitstaande aandelenopties",
+      "columns": [
+        "",
+        "30/06/2024 Aantal opties",
+        "30/06/2024 Uitoefenprijs (€)",
+        "30/06/2023 Aantal opties",
+        "30/06/2023 Uitoefenprijs (€)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Uitstaand per 01/07/2023",
+          "values": [
+            "161.160",
+            "17",
+            "244.963",
+            "17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Toegekend tijdens het jaar",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opgegeven tijdens het jaar",
+          "values": [
+            "-",
+            "-",
+            "83.303",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uitgeoefend tijdens het jaar",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vervallen tijdens het jaar",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uitstaand per 30/06/2024",
+          "values": [
+            "161.160",
+            "17",
+            "161.160",
+            "17"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Uitoefenbaar 30/06/2022",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 60,
+      "section": "## 26 Pensioenverplichtingen na uitdiensttreding",
+      "columns": [
+        "Personeelsvergoeding",
+        "30 juni 2024",
+        "30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Nettoactief/(nettoverplichting) uit hoofde van toegezegde pensioenrechten",
+          "values": [
+            "-14",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 62,
+      "section": null,
+      "columns": [
+        "In 000€ voor het boekjaar afgesloten op",
+        "Brutoverplichting uit hoofde van toegezegde pensioenrechten 30 juni 2024",
+        "Brutoverplichting uit hoofde van toegezegde pensioenrechten 30 juni 2023",
+        "Reële waarde van fondsbeleggingen 30 juni 2024",
+        "Reële waarde van fondsbeleggingen 30 juni 2023",
+        "Nettoactief (nettoverplichting) uit hoofde van toegezegde pensioenrechten 30 juni 2024",
+        "Nettoactief (nettoverplichting) uit hoofde van toegezegde pensioenrechten 30 juni 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo per 1 juli",
+          "values": [
+            "-45.138",
+            "-39.401",
+            "45.138",
+            "39.401",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opgenomen in de resultatenrekening",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aan het boekjaar toegerekende pensioenbijdragen",
+          "values": [
+            "-5.097",
+            "-8.064",
+            "",
+            "",
+            "-5.097",
+            "-8.064"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensioenbijdragen van vorige periodes",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rentebaten (/ -lasten)",
+          "values": [
+            "-1.569",
+            "-987",
+            "1.664",
+            "1.033",
+            "95",
+            "46"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opgenomen in de niet-gerealiseerde resultaten",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Herwaarderingswinsten/(-verliezen)",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Actuariële winst/(verlies) uit:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- demografische veronderstellingen",
+          "values": [
+            "-2",
+            "53",
+            "",
+            "",
+            "-2",
+            "53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- financiële veronderstellingen",
+          "values": [
+            "846",
+            "339",
+            "",
+            "",
+            "846",
+            "339"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- ervaringsaanpassingen",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- rendement op fondsbeleggingen zonder rentebaten",
+          "values": [
+            "",
+            "",
+            "-953",
+            "-438",
+            "-953",
+            "-438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Effect van wisselkoerswijzigingen",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bijdragen betaald door de werkgever",
+          "values": [
+            "",
+            "",
+            "5.097",
+            "8.064",
+            "5.097",
+            "8.064"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uitbetaalde vergoedingen",
+          "values": [
+            "3.661",
+            "1.961",
+            "-3.661",
+            "-1.961",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen op bijdragen",
+          "values": [
+            "596",
+            "944",
+            "-596",
+            "-944",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verzekeringspremies in verband met risicodekkingen",
+          "values": [
+            "23",
+            "17",
+            "-23",
+            "-17",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo per 30 juni",
+          "values": [
+            "-46.679",
+            "-45.138",
+            "46.665",
+            "45.138",
+            "-14",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 63,
+      "section": "Gevoeligheidsanalyse / Redelijke mogelijke veranderingen in één van de relevante actuariële veronderstellingen / op de verslagdatum, waarbij andere veronderstellingen constant blijven, zouden leiden / tot brutoverplichtingen uit hoofde van toegezegde pensioenrechten zoals hieronder / weergegeven.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Uitstappercentage van 15% voor de spelers -46",
+          "values": [
+            "-45,143"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uitstappercentage van 35% voor de spelers",
+          "values": [
+            "-46.676",
+            "-45.135"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Daling van de verdisconteringsvoet met 0,50% -46",
+          "values": [
+            "-45.156"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stijging van de verdisconteringsvoet met",
+          "values": [
+            "0,50%",
+            "-46.675",
+            "-45.434"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 64,
+      "section": "— Uitstappercentage spelers: een lager dan verwacht uitstappercentage leidt tot een / stijging van de verplichtingen. / Financieel resultaat / Financiële opbrengsten 30 juni 2024 30 juni 2023 / Bankrente 357 3",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Andere financiële opbrengsten",
+          "values": [
+            "1.852",
+            "2.039"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële opbrengsten",
+          "values": [
+            "2.208",
+            "2.042"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 70,
+      "section": "### 30.2 Transacties met verbonden partijen",
+      "columns": [
+        "",
+        "30 juni 2024 Totale bedrijfsopbrengsten",
+        "30 juni 2024 Uitstaand e vordering en",
+        "30 juni 2024 Totale bedrijfs-kosten",
+        "30 juni 2024 Investeringen",
+        "30 juni 2024 Uitstaande schulden",
+        "30 juni 2023 Totale bedrijfsopbrengsten",
+        "30 juni 2023 Uitstaand e vordering en",
+        "30 juni 2023 Totale bedrijfs-kosten",
+        "30 juni 2023 Investeringen",
+        "30 juni 2023 Uitstaande schulden"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Aandeelhouders",
+          "values": [
+            "284",
+            "0",
+            "-575",
+            "",
+            "-236",
+            "14",
+            "0",
+            "-533",
+            "",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uitvoerend management",
+          "values": [
+            "38",
+            "11",
+            "-1.238",
+            "",
+            "-263",
+            "36",
+            "0",
+            "-832",
+            "",
+            "-34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige",
+          "values": [
+            "174",
+            "0",
+            "-566",
+            "157",
+            "-15.029",
+            "182",
+            "0",
+            "-372",
+            "138",
+            "-15.179"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 4,
+      "section": "## Inhoud",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale inkomstenbelasting",
+      "target": "15",
+      "addendCount": 22,
+      "closes": false,
+      "diff": "138"
+    },
+    {
+      "page": 10,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale bedrijfsopbrengsten",
+      "skipped": true,
+      "reason": "2 de 8 valor(es) del segmento no parecen números (ej. \"*11.480*\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 10,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Totale bedrijfsopbrengsten",
+      "skipped": true,
+      "reason": "2 de 8 valor(es) del segmento no parecen números (ej. \"*9.937*\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 10,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale bedrijfskosten",
+      "target": "-135.601",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Totale bedrijfskosten",
+      "target": "-136.009",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": "### Geconsolideerd mutatieoverzicht van het eigen vermogen voor het boekjaar afgesloten op",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Totale winst (verlies) van het boekjaar",
+      "target": "12.348",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "36978"
+    },
+    {
+      "page": 11,
+      "section": "### Geconsolideerd mutatieoverzicht van het eigen vermogen voor het boekjaar afgesloten op",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Totale winst (verlies) van het boekjaar",
+      "target": "-48",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "48"
+    },
+    {
+      "page": 11,
+      "section": "### Geconsolideerd mutatieoverzicht van het eigen vermogen voor het boekjaar afgesloten op",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Totale winst (verlies) van het boekjaar",
+      "target": "12.300",
+      "addendCount": 2,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": "### Geconsolideerd mutatieoverzicht van het eigen vermogen voor het boekjaar afgesloten op",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Totale winst (verlies) van het boekjaar",
+      "target": "1.468",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "42042"
+    },
+    {
+      "page": 11,
+      "section": "### Geconsolideerd mutatieoverzicht van het eigen vermogen voor het boekjaar afgesloten op",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Totale winst (verlies) van het boekjaar",
+      "target": "122",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": "### Geconsolideerd mutatieoverzicht van het eigen vermogen voor het boekjaar afgesloten op",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Totale winst (verlies) van het boekjaar",
+      "target": "1.590",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "75690"
+    },
+    {
+      "page": 50,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale impact op balans",
+      "target": "3.774",
+      "addendCount": 5,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 50,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale impact op balans",
+      "target": "5.070",
+      "addendCount": 5,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 50,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Totale impact op balans",
+      "target": "-1.296",
+      "addendCount": 5,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 50,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Totale impact op balans",
+      "target": "432",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-581"
+    },
+    {
+      "page": 50,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totale impact op de totale Winst / (verlies) van het boekjaar",
+      "target": "432",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 50,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totale impact op de totale Winst / (verlies) van het boekjaar",
+      "target": "-535",
+      "addendCount": 2,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 38,
+    "results": [
+      {
+        "label": "Bedrag voor belastingen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bedrag voor belastingen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Belasting (kost) opbrengst",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Belasting (kost) opbrengst",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Na belastingen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Na belastingen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Wedstrijdopbrengsten",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Wedstrijdopbrengsten",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Wedstrijdopbrengsten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Opbrengsten uit mediarechten",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Opbrengsten uit mediarechten",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Opbrengsten uit mediarechten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Binnenlands",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Binnenlands",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Europees",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Europees",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Commerciële opbrengsten",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Commerciële opbrengsten",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Commerciële opbrengsten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Overige opbrengsten",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Overige opbrengsten",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Overige opbrengsten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Totaal",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Totaal",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Opbrengsten uit mediarechten - Binnenlands",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "broadcasting",
+        "matchedLabel": "Opbrengsten uit mediarechten",
+        "similarity": 75
+      },
+      {
+        "label": "Opbrengsten uit mediarechten - Binnenlands",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Opbrengsten uit mediarechten - Europees",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "broadcasting",
+        "matchedLabel": "Opbrengsten uit mediarechten",
+        "similarity": 75
+      },
+      {
+        "label": "Opbrengsten uit mediarechten - Europees",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Lidgeld",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Lidgeld",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Giften",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Giften",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Overige",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Overige opbrengsten",
+        "similarity": 50
+      },
+      {
+        "label": "Overige",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Overige personeelskosten",
+        "similarity": 50
+      },
+      {
+        "label": "Overige bedrijfsopbrengsten",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Overige bedrijfsopbrengsten",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Overige bedrijfsopbrengsten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Algemene administratie",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Algemene administratie",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Huur en andere diensten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Huur en andere diensten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Organisatie, apparatuur en beveiliging",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Organisatie, apparatuur en beveiliging",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reiskosten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reiskosten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Nutsvoorzieningen, onderhoud en reparatie",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Nutsvoorzieningen, onderhoud en reparatie",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Hotels, restaurants en recepties",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Hotels, restaurants en recepties",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Consulting- en andere advieskosten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Consulting- en andere advieskosten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Interim",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Interim",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Overige belastingen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Overige belastingen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Overige bedrijfskosten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Overige bedrijfskosten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Lonen van spelers en kosten van technische staf",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Lonen van spelers en kosten van technische staf",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Lonen van spelers en kosten van technische staf",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Socialezekerheidsbijdragen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Socialezekerheidsbijdragen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Toegezegde-pensioenregelingskosten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Toegezegde-pensioenregelingskosten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Overige kosten -189",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Overige kosten -189",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Vrijstelling doorstorting bedrijfsvoorheffing",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Vrijstelling doorstorting bedrijfsvoorheffing",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Overige personeelskosten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Overige personeelskosten",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Overige personeelskosten",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "op aandelen gebaseerde betalingen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "op aandelen gebaseerde betalingen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Overige kosten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Overige kosten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andere financiële opbrengsten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andere financiële opbrengsten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financiële opbrengsten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financiële opbrengsten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aandeelhouders",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aandeelhouders",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Uitvoerend management",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Uitvoerend management",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Club Brugge",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

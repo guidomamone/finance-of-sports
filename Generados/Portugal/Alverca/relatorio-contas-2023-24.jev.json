@@ -1,0 +1,558 @@
+{
+ "md": "Clubes/Portugal/Alverca/relatorio-contas-2023-24.md",
+ "generatedAt": "2026-09-30T13:16:03.956Z",
+ "rubros": [
+  {
+   "label": "Outros gastos",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "choice": "admin_general_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "match_organisation_expense",
+     0.11
+    ]
+   ],
+   "tokens": 971
+  },
+  {
+   "label": "Outros rendimentos",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 995
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "choice": "wages_squad",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "wages_squad",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "choice": "depreciation",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "depreciation",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Resultado antes de depreciações, gastos de financiamentos e impostos",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "depreciation",
+     0.06
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Vendas e serviços prestados",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.8200000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Resultado operacional (antes de gastos de financiamento e impostos)",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Juros e gastos similares suportados",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.94
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Clientes",
+   "lado": "expense",
+   "page": 22,
+   "section": "11. INSTRUMENTOS FINANCEIROS",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "player_impairment",
+     0.01
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "Imposto sobre o rendimento do período",
+   "lado": "expense",
+   "page": 10,
+   "section": "FC ALVERCA FUTEBOL SAD / FUTEBOL CLUBE ALVERCA - FUTEBOL SAD",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Fornecedores",
+   "lado": "expense",
+   "page": 22,
+   "section": "11. INSTRUMENTOS FINANCEIROS",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Outros créditos a receber",
+   "lado": "expense",
+   "page": 22,
+   "section": "11. INSTRUMENTOS FINANCEIROS",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 980
+  },
+  {
+   "label": "Outros Passivos Correntes",
+   "lado": "expense",
+   "page": 22,
+   "section": "11. INSTRUMENTOS FINANCEIROS",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 982
+  },
+  {
+   "label": "Fundo de Compensação do Trabalho",
+   "lado": "expense",
+   "page": 23,
+   "section": "FC ALVERCA FUTEBOL SAD / 11.2.2. Outros investimentos Financeiros",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "wages_squad",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Financiamentos Obtidos",
+   "lado": "expense",
+   "page": 24,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "exceptional_items",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Remuneração do Pessoal",
+   "lado": "expense",
+   "page": 25,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "choice": "wages_squad",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "wages_squad",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "[ilegible]",
+   "lado": "expense",
+   "page": 24,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 790
+  },
+  {
+   "label": "Remunerações dos Órgãos Sociais",
+   "lado": "expense",
+   "page": 25,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Encargos sobre remunerações",
+   "lado": "expense",
+   "page": 25,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "wages_squad",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Seguros de Acidentes de Trabalho",
+   "lado": "expense",
+   "page": 25,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "choice": "admin_general_expense",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 985
+  },
+  {
+   "label": "Indemnizações",
+   "lado": "expense",
+   "page": 25,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 914
+  },
+  {
+   "label": "Outros Gastos com Pessoal",
+   "lado": "expense",
+   "page": 25,
+   "section": "FC ALVERCA FUTEBOL SAD",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "wages_squad",
+     0.23
+    ]
+   ],
+   "tokens": 1012
+  }
+ ]
+}

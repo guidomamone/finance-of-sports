@@ -1,0 +1,435 @@
+{
+  "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2021.md",
+  "pdf": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2021.pdf",
+  "club": "udechile-cl",
+  "year": 2021,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:57:30.263Z",
+  "tieOuts": {
+    "cierran": 25,
+    "noCierran": 26
+  },
+  "warnings": [
+    "3 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "23 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "6 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 34,
+    "notasUsadas": [
+      "42",
+      "29"
+    ]
+  },
+  "ladoConocido": 27,
+  "rubros": [
+    {
+      "label": "Borderó",
+      "lado": "revenue",
+      "page": 72,
+      "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        80.897
+      ],
+      "origen": "nota 42 (ancla 10)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Borderó"
+    },
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2021 Y 2020.",
+      "values": [
+        12884.811
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Publicidad",
+      "lado": "revenue",
+      "page": 72,
+      "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        7333.622
+      ],
+      "origen": "nota 42 (ancla 10)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Participación torneos Internacionales",
+      "lado": "revenue",
+      "page": 72,
+      "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        375.952
+      ],
+      "origen": "nota 42 (ancla 10)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Participación torneos Internacionales"
+    },
+    {
+      "label": "Derechos de T.V.",
+      "lado": "revenue",
+      "page": 72,
+      "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        4044.016
+      ],
+      "origen": "nota 42 (ancla 10)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Derechos de T.V."
+    },
+    {
+      "label": "Ingresos por transferencias de pases de jugadores",
+      "lado": "revenue",
+      "page": 72,
+      "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        508.317
+      ],
+      "origen": "nota 42 (ancla 10)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Ingresos por transferencias de pases de jugadores"
+    },
+    {
+      "label": "Ingresos varios",
+      "lado": "revenue",
+      "page": 72,
+      "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        542.007
+      ],
+      "origen": "nota 42 (ancla 10)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Ingresos varios"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2021 Y 2020.",
+      "values": [
+        -10633.999
+      ],
+      "origen": "estado 10",
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Gasto de administración",
+      "lado": "expense",
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2021 Y 2020.",
+      "values": [
+        -3220.307
+      ],
+      "origen": "estado 10",
+      "glosa": "Gasto de administración"
+    },
+    {
+      "label": "Ingresos financieros",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2021 Y 2020.",
+      "values": [
+        4.676
+      ],
+      "origen": "estado 10",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Costos financieros",
+      "lado": "expense",
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2021 Y 2020.",
+      "values": [
+        -587.883
+      ],
+      "origen": "estado 10",
+      "glosa": "Costos financieros"
+    },
+    {
+      "label": "Diferencia de cambio",
+      "lado": null,
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2021 Y 2020.",
+      "values": [
+        -451.872
+      ],
+      "origen": "estado 10",
+      "glosa": "Diferencia de cambio"
+    },
+    {
+      "label": "Borderó (costos directos)",
+      "lado": "expense",
+      "page": 73,
+      "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        429.277
+      ],
+      "origen": "estado 43",
+      "glosa": "Borderó (costos directos)"
+    },
+    {
+      "label": "Remuneraciones",
+      "lado": "expense",
+      "page": 73,
+      "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        6338.718
+      ],
+      "origen": "estado 43",
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Amortización de pases",
+      "lado": "expense",
+      "page": 73,
+      "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        1915.129
+      ],
+      "origen": "estado 43",
+      "glosa": "Amortización de pases"
+    },
+    {
+      "label": "Costo de venta pases de jugadores",
+      "lado": "expense",
+      "page": 73,
+      "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        511.388
+      ],
+      "origen": "estado 43",
+      "glosa": "Costo de venta pases de jugadores"
+    },
+    {
+      "label": "Otros gastos de operación",
+      "lado": "expense",
+      "page": 73,
+      "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        1950.875
+      ],
+      "origen": "estado 43",
+      "glosa": "Otros gastos de operación"
+    },
+    {
+      "label": "Mantenciones",
+      "lado": null,
+      "page": 73,
+      "section": "Arriendos                                             10.740                     0",
+      "values": [
+        103.216
+      ],
+      "origen": "estado 46",
+      "glosa": "Mantenciones"
+    },
+    {
+      "label": "Remuneraciones Administración",
+      "lado": null,
+      "page": 73,
+      "section": "Arriendos                                             10.740                     0",
+      "values": [
+        1185.22
+      ],
+      "origen": "estado 46",
+      "glosa": "Remuneraciones Administración"
+    },
+    {
+      "label": "Otros Gastos de Administración",
+      "lado": "expense",
+      "page": 73,
+      "section": "Arriendos                                             10.740                     0",
+      "values": [
+        690.453
+      ],
+      "origen": "estado 46",
+      "glosa": "Otros Gastos de Administración"
+    },
+    {
+      "label": "Indemnización por término anticipado de contrato",
+      "lado": null,
+      "page": 73,
+      "section": "Al 31 de diciembre de 2021 y 2020 el detalle de los costos de venta de pases de / jugadores: / 31-12-2021          31-12-2020 / M$                  M$",
+      "values": [
+        0.502914
+      ],
+      "origen": "estado 44",
+      "glosa": "Indemnización por término anticipado de contrato"
+    },
+    {
+      "label": "Otros costos (1)",
+      "lado": "expense",
+      "page": 73,
+      "section": "Al 31 de diciembre de 2021 y 2020 el detalle de los costos de venta de pases de / jugadores: / 31-12-2021          31-12-2020 / M$                  M$",
+      "values": [
+        0.008474
+      ],
+      "origen": "estado 44",
+      "glosa": "Otros costos (1)"
+    },
+    {
+      "label": "Servicios básicos",
+      "lado": null,
+      "page": 73,
+      "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2021               31-12-2020 / Gastos de administración / M$                    M$",
+      "values": [
+        0.075226
+      ],
+      "origen": "estado 45",
+      "glosa": "Servicios básicos"
+    },
+    {
+      "label": "Asesorías",
+      "lado": null,
+      "page": 73,
+      "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2021               31-12-2020 / Gastos de administración / M$                    M$",
+      "values": [
+        0.540319
+      ],
+      "origen": "estado 45",
+      "glosa": "Asesorías"
+    },
+    {
+      "label": "Depreciaciones y amortizaciones",
+      "lado": null,
+      "page": 73,
+      "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2021               31-12-2020 / Gastos de administración / M$                    M$",
+      "values": [
+        0.615133
+      ],
+      "origen": "estado 45",
+      "glosa": "Depreciaciones y amortizaciones"
+    },
+    {
+      "label": "Aportes programa Crece (1)",
+      "lado": null,
+      "page": 74,
+      "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        10940
+      ],
+      "origen": "estado 47",
+      "glosa": "Aportes programa Crece (1)"
+    },
+    {
+      "label": "Otros",
+      "lado": null,
+      "page": 74,
+      "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        7262
+      ],
+      "origen": "estado 47",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Activos por derecho de uso 709.337 758.257 0 0 0",
+      "lado": "revenue",
+      "page": 78,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados / como mantenidos para la venta o como / mantenidos para distribuir a los propietarios / Activos no corrientes",
+      "values": [
+        709.337
+      ],
+      "origen": "estado 51",
+      "glosa": "Activos por derecho de uso 709.337 758.257 0 0 0"
+    },
+    {
+      "label": "Activos intangibles distintos de la plusvalía 7.000.953 7.381.601 0 0 0",
+      "lado": "revenue",
+      "page": 78,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados / como mantenidos para la venta o como / mantenidos para distribuir a los propietarios / Activos no corrientes",
+      "values": [
+        7000.953
+      ],
+      "origen": "estado 51",
+      "glosa": "Activos intangibles distintos de la plusvalía 7.000.953 7.381.601 0 0 0"
+    },
+    {
+      "label": "Monto Bruto",
+      "lado": "revenue",
+      "page": 61,
+      "section": "12.- PROPIEDADES, PLANTAS Y EQUIPOS",
+      "values": [
+        4627.247
+      ],
+      "origen": "nota 29 (ancla 51)",
+      "ancla": "Propiedades, Planta y Equipo 2.443.538 2.708.800 0 0 0",
+      "glosa": "Monto Bruto"
+    },
+    {
+      "label": "Propiedades, Planta y Equipo 2.443.538 2.708.800 0 0 0",
+      "lado": "revenue",
+      "page": 78,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados / como mantenidos para la venta o como / mantenidos para distribuir a los propietarios / Activos no corrientes",
+      "values": [
+        2443.538
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Propiedades, Planta y Equipo 2.443.538 2.708.800 0 0 0"
+    },
+    {
+      "label": "Depreciación acumulada",
+      "lado": "revenue",
+      "page": 61,
+      "section": "12.- PROPIEDADES, PLANTAS Y EQUIPOS",
+      "values": [
+        -2183.709
+      ],
+      "origen": "nota 29 (ancla 51)",
+      "ancla": "Propiedades, Planta y Equipo 2.443.538 2.708.800 0 0 0",
+      "glosa": "Depreciación acumulada"
+    },
+    {
+      "label": "Activos por impuestos diferidos 8.335.513 8.418.082 391.636 358.903 0",
+      "lado": "expense",
+      "page": 78,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados / como mantenidos para la venta o como / mantenidos para distribuir a los propietarios / Activos no corrientes",
+      "values": [
+        8727.149
+      ],
+      "origen": "estado 51",
+      "glosa": "Activos por impuestos diferidos 8.335.513 8.418.082 391.636 358.903 0"
+    },
+    {
+      "label": "Importe en libros 0 -1.249.367",
+      "lado": "revenue",
+      "page": 54,
+      "section": "Bajas o ventas",
+      "values": [
+        -1249.367
+      ],
+      "origen": "estado 24",
+      "glosa": "Importe en libros 0 -1.249.367"
+    },
+    {
+      "label": "Amortización Acumulada 0 1.006.276",
+      "lado": "revenue",
+      "page": 54,
+      "section": "Bajas o ventas",
+      "values": [
+        1006.276
+      ],
+      "origen": "estado 24",
+      "glosa": "Amortización Acumulada 0 1.006.276"
+    },
+    {
+      "label": "Gastos por amortización",
+      "lado": "expense",
+      "page": 54,
+      "section": "Bajas o ventas",
+      "values": [
+        -305.813
+      ],
+      "origen": "estado 24",
+      "glosa": "Gastos por amortización"
+    }
+  ]
+}

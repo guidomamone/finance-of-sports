@@ -1,0 +1,402 @@
+{
+ "md": "Clubes/Noruega/Start/aarsregnskap-2009.md",
+ "pdf": "Clubes/Noruega/Start/aarsregnskap-2009.pdf",
+ "club": "start",
+ "year": 2009,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:59.417Z",
+ "tieOuts": {
+  "cierran": 36,
+  "noCierran": 8
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "8 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "9 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 36,
+  "notasUsadas": [
+   "6"
+  ]
+ },
+ "ladoConocido": 35,
+ "rubros": [
+  {
+   "label": "Medlemsinntekter",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    125.45
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Tilskudd NFF/UEFA",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    750.921
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Tilskudd Cultiva",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    6000
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Arrangementsinntekter",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    157.8
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Salgsinntekt kiosk med mer",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    2728.897
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Leie markedsrettigheter ST AS",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    39923.746
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Andre inntekter",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    1045.315
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Deltakelse andres arrangement",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    2877.878
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Egne stevner/arrangement",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    2511.364
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Trening/instruksjon",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    1085.075
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Utstyr, lege, fysioter. Etc.",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    1852.066
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Lønn og bonus",
+   "lado": "expense",
+   "page": 9,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "values": [
+    27042.434
+   ],
+   "origen": "nota 6 (ancla 4)",
+   "ancla": "Lønnskostnad"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    30560.784
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Folketrygdavgift",
+   "lado": "expense",
+   "page": 9,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "values": [
+    3518.35
+   ],
+   "origen": "nota 6 (ancla 4)",
+   "ancla": "Lønnskostnad"
+  },
+  {
+   "label": "Gjennomsnittlig antall årsverk",
+   "lado": "expense",
+   "page": 9,
+   "section": "# IK START / # Årsregnskap 2009 / # Noter til regnskapet",
+   "values": [
+    0.0364
+   ],
+   "origen": "nota 6 (ancla 4)",
+   "ancla": "Lønnskostnad"
+  },
+  {
+   "label": "Andre ytelser ansatte",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    2211.674
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Møter styret og spillere, kurs",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    377.408
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Fremmed tjenester",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    1036.933
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Administrasjonsutgifter",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    274.923
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Øvrige driftskostnader",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    1930.096
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "ordinære avskrivinger",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    200.458
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Renteinntekter fra foretak i samme konsern",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    245.004
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    46.367
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    -11.898
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    -15.979
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Avsatt til egenkapital",
+   "lado": null,
+   "page": 5,
+   "section": "# Idrettsklubben Start / ## Resultatregnskap",
+   "values": [
+    6084.875
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "values": [
+    42.652643
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "values": [
+    8.087397
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "values": [
+    8.326383
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "values": [
+    30.560784
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "values": [
+    0.200458
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "values": [
+    5.831034
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Inntekt på investering i datterselskap og tilknyttet selskap",
+   "lado": "revenue",
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "values": [
+    0.245004
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Inntekt på andre investeringer",
+   "lado": "revenue",
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "values": [
+    0.046367
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "values": [
+    0.011898
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "values": [
+    0.015979
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "IDRETTSKLUBBEN START / # RESULTATREGNSKAP",
+   "values": [
+    6.084875
+   ],
+   "origen": "estado 1"
+  }
+ ]
+}

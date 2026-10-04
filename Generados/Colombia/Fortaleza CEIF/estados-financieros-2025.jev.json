@@ -1,0 +1,654 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.md",
+ "generatedAt": "2026-10-02T02:41:58.716Z",
+ "rubrosHuella": "016788d3471c30e0d27fe564423f89aa6efced54",
+ "rubros": [
+  {
+   "label": "Derechos de televisión nacional",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Federación Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Convenio entre clubes",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros auxilios (*)",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "broadcasting",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Propaganda y publicidad",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos deportivos (2)",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\"",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Boletería",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Alquiler deportivo (1)",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Reintegro de costos y gastos (2)",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ajuste al peso",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Otros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Gastos equipo profesional femenino\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "COSTO DE VENTAS",
+   "lado": "expense",
+   "page": 25,
+   "section": "estado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Gastos equipo profesional femenino\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Afiliaciones y sostenimientos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "INDUSTRIA Y COMERCIO",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\" > desglose de \"Impuestos (3)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilio de transporte (*)",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "competition_bonus",
+     0.72
+    ],
+    [
+     "sponsorship_commercial",
+     0.14
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Auxilio de arbitraje (*)",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "competition_bonus",
+     0.92
+    ],
+    [
+     "broadcasting",
+     0.04
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Uso de marca",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "De personal",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos equipo profesional femenino\"",
+   "choice": "wages_squad",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "wages_squad",
+     0.43
+    ],
+    [
+     "youth_other_sports_expense",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ]
+   ],
+   "tokens": 986
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Legales",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenimiento y adecuaciones",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Auxilio hotelero (*)",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\"",
+   "choice": "competition_bonus",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "competition_bonus",
+     0.78
+    ],
+    [
+     "broadcasting",
+     0.12
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "other_amortisation",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Comisiones",
+   "lado": "revenue",
+   "page": 30,
+   "section": "nota que desglosa \"Otros ingresos\"",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 967
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Gastos equipo profesional femenino\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "De viaje",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Laborales",
+   "lado": "expense",
+   "page": 28,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "wages_squad",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "DE ESPECTACULOS PUBLICOS (I.D.R.D)",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\" > desglose de \"Impuestos (3)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.69
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "match_organisation_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Contribuciones y afiliaciones",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Venta de indumentaria deportiva (3)",
+   "lado": "revenue",
+   "page": 24,
+   "section": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Gastos Diversos",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Deterioro de cartera",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos no deducibles (1)",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Otros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "BOMBEROS",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\" > desglose de \"Impuestos (3)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "match_organisation_expense",
+     0.19
+    ]
+   ],
+   "tokens": 814
+  },
+  {
+   "label": "Impuestos asumidos",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Otros gastos\"",
+   "choice": "exceptional_items",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "MOVILIDAD",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\" > desglose de \"Impuestos (3)\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "De viaje (8)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "IVA DESCONTABLE",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\" > desglose de \"Impuestos (3)\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 906
+  },
+  {
+   "label": "Alquileres",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 988
+  },
+  {
+   "label": "Deterioro de inventario (11)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "player_impairment",
+     0.02
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1160
+  },
+  {
+   "label": "Mantenimientos y reparaciones",
+   "lado": "expense",
+   "page": 29,
+   "section": "nota que desglosa \"Gastos de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 985
+  },
+  {
+   "label": "Multas y sanciones (2)",
+   "lado": "expense",
+   "page": 30,
+   "section": "nota que desglosa \"Otros gastos\"",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1027
+  }
+ ]
+}

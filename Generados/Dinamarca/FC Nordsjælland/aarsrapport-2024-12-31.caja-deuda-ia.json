@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2024-12-31.md",
+ "generado": "2026-10-02T00:18:27.772Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Amounts concerning 2024: DKK.",
+ "caja": {
+  "lineas": [
+   1543
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1577,
+   1604
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La columna 2024 está en DKK (unidades) mientras que 2023 está en miles de DKK; la porción corriente de la deuda a largo plazo (L1604) se asume que corresponde al préstamo bancario."
+}

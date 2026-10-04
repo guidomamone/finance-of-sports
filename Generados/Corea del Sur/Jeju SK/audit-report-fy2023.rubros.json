@@ -1,0 +1,262 @@
+{
+ "md": "Clubes/Corea del Sur/Jeju SK/audit-report-fy2023.md",
+ "pdf": "Clubes/Corea del Sur/Jeju SK/audit-report-fy2023.pdf",
+ "club": "jeju-sk",
+ "year": 2023,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T21:59:36.758Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 24,
+  "notasUsadas": []
+ },
+ "ladoConocido": 2,
+ "rubros": [
+  {
+   "label": "광고수입",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    21414430.412
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "입장권수입",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    1020320.19
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "이적료수입",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    1670000
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "기타수입",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    1322132.097
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "선수단운영원가",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    21167002.391
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "경기진행원가",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    1658902.991
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "퇴직급여",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    267232.878
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "복리후생비",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    272841.406
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "사무용품비",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    10650.395
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "접대비",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    39021.2
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "교육훈련비",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    1649
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "세금과공과",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    40611.43
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "감가상각비",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    78795.234
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "차량유지비",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    51531.635
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "회의비",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    150894.845
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "협회비",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    155000
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "지급수수료",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    153331.215
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "무형고정자산상각비",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    600
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "광고선전비",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    86763.309
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "여비교통비",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    121678.597
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "이자수익",
+   "lado": "revenue",
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    41829.022
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "외환차익",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    9008.359
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "임대수익",
+   "lado": "revenue",
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    9272.723
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "외환차손",
+   "lado": null,
+   "page": 8,
+   "section": "## 손익계산서",
+   "values": [
+    27559.6
+   ],
+   "origen": "estado 3"
+  }
+ ]
+}

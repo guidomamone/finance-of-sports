@@ -1,0 +1,1415 @@
+{
+ "md": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.md",
+ "pdf": "Clubes/Italia/Parma/Parma-bilancio-31.12.2025-consolidato.pdf",
+ "club": "parma",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:05:30.028Z",
+ "tieOuts": {
+  "cierran": 98,
+  "noCierran": 37
+ },
+ "warnings": [
+  "14 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "23 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "9 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 131,
+  "notasUsadas": [
+   "28",
+   "29",
+   "30",
+   "33"
+  ]
+ },
+ "ladoConocido": 131,
+ "rubros": [
+  {
+   "label": "- Gare Campionato",
+   "lado": "revenue",
+   "page": 36,
+   "section": "I ricavi delle vendite e prestazioni sono così costituiti:",
+   "values": [
+    2.924983
+   ],
+   "origen": "nota 28 (ancla 11)",
+   "ancla": "1) ricavi delle vendite e delle prestazioni"
+  },
+  {
+   "label": "1) ricavi delle vendite e delle prestazioni",
+   "lado": "revenue",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    6.680033
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Abbonamenti",
+   "lado": "revenue",
+   "page": 36,
+   "section": "I ricavi delle vendite e prestazioni sono così costituiti:",
+   "values": [
+    2.768707
+   ],
+   "origen": "nota 28 (ancla 11)",
+   "ancla": "1) ricavi delle vendite e delle prestazioni"
+  },
+  {
+   "label": "Ricavi e proventi diversi",
+   "lado": "revenue",
+   "page": 36,
+   "section": "I ricavi delle vendite e prestazioni sono così costituiti:",
+   "values": [
+    0.986343
+   ],
+   "origen": "nota 28 (ancla 11)",
+   "ancla": "1) ricavi delle vendite e delle prestazioni"
+  },
+  {
+   "label": "Proventi da sponsorizzazioni",
+   "lado": "revenue",
+   "page": 36,
+   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
+   "values": [
+    5.768603
+   ],
+   "origen": "nota 29 (ancla 11)",
+   "ancla": "5) altri ricavi e proventi altri"
+  },
+  {
+   "label": "5) altri ricavi e proventi altri",
+   "lado": "revenue",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    118.887215
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Proventi pubblicitari",
+   "lado": "revenue",
+   "page": 36,
+   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
+   "values": [
+    5.838179
+   ],
+   "origen": "nota 29 (ancla 11)",
+   "ancla": "5) altri ricavi e proventi altri"
+  },
+  {
+   "label": "Proventi commerciali e royalties",
+   "lado": "revenue",
+   "page": 36,
+   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
+   "values": [
+    0.172701
+   ],
+   "origen": "nota 29 (ancla 11)",
+   "ancla": "5) altri ricavi e proventi altri"
+  },
+  {
+   "label": "Proventi da cessione diritti audiovisivi",
+   "lado": "revenue",
+   "page": 36,
+   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
+   "values": [
+    30.702866
+   ],
+   "origen": "nota 29 (ancla 11)",
+   "ancla": "5) altri ricavi e proventi altri"
+  },
+  {
+   "label": "Proventi da cessione diritti prestazioni calciatori",
+   "lado": "revenue",
+   "page": 36,
+   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
+   "values": [
+    69.449543
+   ],
+   "origen": "nota 29 (ancla 11)",
+   "ancla": "5) altri ricavi e proventi altri"
+  },
+  {
+   "label": "Altri Proventi gestione calciatori",
+   "lado": "revenue",
+   "page": 36,
+   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
+   "values": [
+    1.811268
+   ],
+   "origen": "nota 29 (ancla 11)",
+   "ancla": "5) altri ricavi e proventi altri"
+  },
+  {
+   "label": "Contributi in conto esercizio",
+   "lado": "revenue",
+   "page": 36,
+   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
+   "values": [
+    1.925497
+   ],
+   "origen": "nota 29 (ancla 11)",
+   "ancla": "5) altri ricavi e proventi altri"
+  },
+  {
+   "label": "Ricavi e proventi diversi",
+   "lado": "revenue",
+   "page": 36,
+   "section": "Gli “altri ricavi e proventi” sono così costituiti:",
+   "values": [
+    3.218559
+   ],
+   "origen": "nota 29 (ancla 11)",
+   "ancla": "5) altri ricavi e proventi altri"
+  },
+  {
+   "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "lado": "expense",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    3.093108
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "lado": "expense",
+   "page": 38,
+   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+   "values": [
+    4.860235
+   ],
+   "origen": "nota 30 (ancla 11)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "7) per servizi",
+   "lado": "expense",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    24.313603
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Costi specifici Tecnici",
+   "lado": "expense",
+   "page": 38,
+   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+   "values": [
+    1.128595
+   ],
+   "origen": "nota 30 (ancla 11)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi per intermediazioni",
+   "lado": "expense",
+   "page": 38,
+   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+   "values": [
+    3.664783
+   ],
+   "origen": "nota 30 (ancla 11)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi per prestazioni servizi personale",
+   "lado": "expense",
+   "page": 38,
+   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+   "values": [
+    0.282863
+   ],
+   "origen": "nota 30 (ancla 11)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi vitto, alloggio e locomozione gare",
+   "lado": "expense",
+   "page": 38,
+   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+   "values": [
+    2.526791
+   ],
+   "origen": "nota 30 (ancla 11)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Compensi e rimborsi spesa a terzi",
+   "lado": "expense",
+   "page": 38,
+   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+   "values": [
+    0.421785
+   ],
+   "origen": "nota 30 (ancla 11)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi per servizio biglietteria, controllo ingressi",
+   "lado": "expense",
+   "page": 38,
+   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+   "values": [
+    0.355502
+   ],
+   "origen": "nota 30 (ancla 11)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi per pubblicità e propaganda",
+   "lado": "expense",
+   "page": 38,
+   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+   "values": [
+    2.469662
+   ],
+   "origen": "nota 30 (ancla 11)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi Assicurativi",
+   "lado": "expense",
+   "page": 38,
+   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+   "values": [
+    0.531496
+   ],
+   "origen": "nota 30 (ancla 11)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi per utenze e spese generali",
+   "lado": "expense",
+   "page": 38,
+   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+   "values": [
+    1.177725
+   ],
+   "origen": "nota 30 (ancla 11)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Costi per manutenzioni e riparazioni",
+   "lado": "expense",
+   "page": 38,
+   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+   "values": [
+    2.507091
+   ],
+   "origen": "nota 30 (ancla 11)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Legali e Amministrativi",
+   "lado": "expense",
+   "page": 38,
+   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+   "values": [
+    1.554378
+   ],
+   "origen": "nota 30 (ancla 11)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "Altri",
+   "lado": "expense",
+   "page": 38,
+   "section": "## *Costi di Produzione* / ### *Costi per acquisto materiale di consumo e di merci* / ### *Costi per prestazioni di servizi*",
+   "values": [
+    2.832697
+   ],
+   "origen": "nota 30 (ancla 11)",
+   "ancla": "7) per servizi"
+  },
+  {
+   "label": "8) per godimento di beni di terzi",
+   "lado": "expense",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    1.560568
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "a) salari e stipendi",
+   "lado": "expense",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    54.745878
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "b) oneri sociali",
+   "lado": "expense",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    5.400458
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "c) trattamento di fine rapporto",
+   "lado": "expense",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    1.012199
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": null,
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    23.264855
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "b) ammortamento delle immobilizzazioni materiali",
+   "lado": null,
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    1.189103
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "c) altre svalutazioni delle immobilizzazioni",
+   "lado": null,
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    0.063893
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "d) svalutazioni dei crediti compresi nell'attivo circolante e delle disponibilità liquide",
+   "lado": null,
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    0.062345
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "11) variazioni delle rimanenze di materie prime, sussidiarie, di consumo e merci",
+   "lado": "expense",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    0.153386
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "13) altri accantonamenti",
+   "lado": "expense",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    3.077454
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Spese per organizzazione gare",
+   "lado": "expense",
+   "page": 40,
+   "section": "### *Oneri diversi di gestione*",
+   "values": [
+    1.602138
+   ],
+   "origen": "nota 33 (ancla 11)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "14) oneri diversi di gestione",
+   "lado": "expense",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    7.487072
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Tasse iscrizione gare",
+   "lado": "expense",
+   "page": 40,
+   "section": "### *Oneri diversi di gestione*",
+   "values": [
+    0.037713
+   ],
+   "origen": "nota 33 (ancla 11)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "Oneri Specifici verso squadre ospitate",
+   "lado": "expense",
+   "page": 40,
+   "section": "### *Oneri diversi di gestione*",
+   "values": [
+    0.032989
+   ],
+   "origen": "nota 33 (ancla 11)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "Costi acq. Temporanea calciatori",
+   "lado": "expense",
+   "page": 40,
+   "section": "### *Oneri diversi di gestione*",
+   "values": [
+    1.088962
+   ],
+   "origen": "nota 33 (ancla 11)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "Altri oneri gestione calciatori",
+   "lado": "expense",
+   "page": 40,
+   "section": "### *Oneri diversi di gestione*",
+   "values": [
+    0.987818
+   ],
+   "origen": "nota 33 (ancla 11)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "Altri oneri di gestione",
+   "lado": "expense",
+   "page": 40,
+   "section": "### *Oneri diversi di gestione*",
+   "values": [
+    3.737452
+   ],
+   "origen": "nota 33 (ancla 11)",
+   "ancla": "14) oneri diversi di gestione"
+  },
+  {
+   "label": "Differenza tra valore e costi della produzione (A - B)",
+   "lado": "revenue",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    0.143326
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "d) proventi diversi dai precedenti da imprese controllate",
+   "lado": "revenue",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    0.033854
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "17) interessi e altri oneri finanziari altri",
+   "lado": "expense",
+   "page": 16,
+   "section": "PARMA CALCIO 1913 S.R.L. / # Conto economico consolidato",
+   "values": [
+    0.010461
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Cardinali Alessandro",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    10.1
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Casentini Gabriele",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    140.307
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Castaldo Antonio",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    140.206
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Ciardi Alessandro",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    70.107
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Circati Alessandro",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    101.003
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Conde Bernardo",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    260.906
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Corvi Edoardo",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    230.301
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "D Intino Roberto",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    110.306
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Delprato Enrico",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    101.199
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Di Chiara Gianluca",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    261.293
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Gemello Andrea",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    10.406
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Iacoponi Daniele",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    250.302
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Leoni Giovanni",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    211.206
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Marcone Richard Gabriel",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    210.193
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Morisoli Gabriel",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    170.708
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Partipilo Anthony",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    271.094
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Plicco Elia",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    10.207
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Rinaldi Filippo",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    41.202
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Sartori Francesco",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    280.706
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Trabucchi Nicolas",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    170.807
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Valeri Emanuele",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    71.298
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Varali Ludovico",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    170.109
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Venturi Lorenzo Edoardo",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    30.308
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Almeida Semedo Afonso Dinis",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    261.108
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Almqvist Pontus",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    100.799
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Amoran Toluwanimi Peter",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    220.504
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Avramescu Ianis Andrei",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    271.008
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Azevedo Junior Hernani",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    270.394
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Balogh Botond",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    60.602
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Begic Tjas",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    300.603
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Benedyczak Adrian Dawid",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    241.1
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Bernabe' Garcia Adrian",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    260.501
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Bonny Ange-Yoan Laurent",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    251.003
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Britschgi Sascha",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    270.806
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Camara Drissa",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    180.202
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Charpentier Gabriel Andre",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    170.599
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Chichizola Leandro",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    270.39
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Coulibaly Aboubacar-Sama",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    280.206
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Coulibaly Woyo",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    260.599
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Cyprien Wylan",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    290.195
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Diallo Djibril",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    90.309
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Diop Doro",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    180.107
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Djuric Milan",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    220.59
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Drobnic Dominik",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    50.407
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Estevez Alvarez Nahuel",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    141.195
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Fatu Rares Daniel",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    170.106
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Flex Flintholm Frederik",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    110.304
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Frigan Matija",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    110.203
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Guaita Vicente",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    100.187
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Hainaut Antoine",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    180.202
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Haj Mohamed Anas",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    260.305
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Joujou Antoine",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    120.303
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Keita Mandela",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    100.502
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Konate Abdou-Salam",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    251.106
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Kouda Rachid",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    250.702
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Kowalski Mateusz",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    210.705
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Lovik Mathias Johan Fjortoft",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    61.203
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Man Dennis",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    260.898
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Mena Martinez",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    10.1
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Mihaila Valentin",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    20.2
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Mikolajewski Daniel",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    240.106
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Ndiaye Abdoulaye Niakhate",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    100.402
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Nwajei Melvin Ifeanyi",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    290.506
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Ondrejka Jacob Axel Per",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    20.902
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Ordonez Christian Nahuel",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    240.704
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Osorio Jordan Hernando",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    100.594
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Pajsar Karlo",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    70.308
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Pellegrino Mateo Casalanguila",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    221.001
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Schreiber Fabio Christian",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    50.909
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Sits Dario",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    40.204
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Sohm Simon",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    110.401
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Sorensen Oliver",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    100.302
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Terrnava Dren",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    210.505
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Troilo Mariano Emir",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    280.603
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Valenti Lautaro",
+   "lado": "expense",
+   "page": 44,
+   "section": "Aggiornamento alla data del: 31/12/2025",
+   "values": [
+    140.199
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Fabbricati",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi del vivaio / ### Migliorie su beni terzi / ## IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.000003
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Impianti generici",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi del vivaio / ### Migliorie su beni terzi / ## IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.000015
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Attrezzature sanitarie",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi del vivaio / ### Migliorie su beni terzi / ## IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.000012
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Attrezzature varie",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi del vivaio / ### Migliorie su beni terzi / ## IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.00002
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Hospitality stadio",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi del vivaio / ### Migliorie su beni terzi / ## IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.00002
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Coppe e trofei",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi del vivaio / ### Migliorie su beni terzi / ## IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.00002
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Autovetture",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi del vivaio / ### Migliorie su beni terzi / ## IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.00002
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Altri beni",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi del vivaio / ### Migliorie su beni terzi / ## IMMOBILIZZAZIONI MATERIALI",
+   "values": [
+    0.00002
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Società di calcio Estere",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Informazioni sui fondi per rischi e oneri / ## Trattamento di fine rapporto lavoro / ### Informazioni sul trattamento di fine rapporto di lavoro subordinato / ## Debiti / ### Variazioni e scadenza dei debiti",
+   "values": [
+    48.087373
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Società di calcio Nazionali",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Informazioni sui fondi per rischi e oneri / ## Trattamento di fine rapporto lavoro / ### Informazioni sul trattamento di fine rapporto di lavoro subordinato / ## Debiti / ### Variazioni e scadenza dei debiti",
+   "values": [
+    7.356983
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Lega Serie A e Serie B",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Informazioni sui fondi per rischi e oneri / ## Trattamento di fine rapporto lavoro / ### Informazioni sul trattamento di fine rapporto di lavoro subordinato / ## Debiti / ### Variazioni e scadenza dei debiti",
+   "values": [
+    0.018803
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Altri",
+   "lado": "expense",
+   "page": 34,
+   "section": "### Informazioni sui fondi per rischi e oneri / ## Trattamento di fine rapporto lavoro / ### Informazioni sul trattamento di fine rapporto di lavoro subordinato / ## Debiti / ### Variazioni e scadenza dei debiti",
+   "values": [
+    0.014227
+   ],
+   "origen": "estado 23"
+  }
+ ]
+}

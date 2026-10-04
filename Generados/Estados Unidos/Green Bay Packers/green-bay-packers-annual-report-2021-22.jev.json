@@ -1,0 +1,328 @@
+{
+ "md": "Clubes/Estados Unidos/Green Bay Packers/green-bay-packers-annual-report-2021-22.md",
+ "generatedAt": "2026-09-30T04:28:53.144Z",
+ "rubros": [
+  {
+   "label": "Local",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "choice": "matchday_competition",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "matchday_competition",
+     0.6900000000000001
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "season_tickets",
+     0.05
+    ]
+   ],
+   "tokens": 834
+  },
+  {
+   "label": "Sales, marketing & fan engagement",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Player costs",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "choice": "other_income",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 986
+  },
+  {
+   "label": "Facilities, net*",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "choice": "stadium_other",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "stadium_other",
+     0.73
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "Team",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "choice": "lump_football_operations",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.56
+    ],
+    [
+     "other_income",
+     0.35
+    ],
+    [
+     "other_sports",
+     0.08
+    ]
+   ],
+   "tokens": 834
+  },
+  {
+   "label": "General & administrative",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "other_sports",
+     0.02
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Profit (loss) from Operations",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.5700000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.42
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "National",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_income",
+     0.5
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "broadcasting",
+     0.21
+    ]
+   ],
+   "tokens": 834
+  },
+  {
+   "label": "2019",
+   "lado": "revenue",
+   "page": 25,
+   "section": "## NET INCOME",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ],
+    [
+     "other_sports",
+     0.02
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "Net Income",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Investment Fund gain (loss)",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS / Statement of Income†",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 911
+  },
+  {
+   "label": "2020",
+   "lado": "revenue",
+   "page": 25,
+   "section": "## NET INCOME",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_income",
+     0.85
+    ],
+    [
+     "broadcasting",
+     0.1
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 913
+  },
+  {
+   "label": "2022",
+   "lado": "revenue",
+   "page": 25,
+   "section": "## NET INCOME",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ],
+    [
+     "other_sports",
+     0.03
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "2021",
+   "lado": "revenue",
+   "page": 25,
+   "section": "## NET INCOME",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ],
+    [
+     "other_sports",
+     0.03
+    ]
+   ],
+   "tokens": 823
+  }
+ ]
+}

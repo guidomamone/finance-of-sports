@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Cercle Brugge/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-02T00:12:50.369Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR",
+ "caja": {
+  "lineas": [
+   282
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas del pasivo (VOL-inb 3.2) no están incluidas; solo aparece el resumen del jaarverslag con 'Schulden op meer dan één jaar' y 'op ten hoogste één jaar' sin desglose de deuda financiera, por lo que no se puede identificar la deuda bancaria/financiera. Las cifras del balance oficial se presentan en euros sin decimales (unidades); la evidencia 'EUR' proviene del resumen del informe de gestión (L2287)."
+}

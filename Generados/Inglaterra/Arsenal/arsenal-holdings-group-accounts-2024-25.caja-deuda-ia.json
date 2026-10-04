@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Arsenal/arsenal-holdings-group-accounts-2024-25.md",
+ "generado": "2026-10-02T00:10:48.287Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000",
+ "caja": {
+  "lineas": [
+   1457
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance solo muestra los totales de acreedores a menos y a más de un año (L1459 y L1466), que incluyen deudas comerciales y otros conceptos; la nota de acreedores con el detalle de préstamos (por ejemplo, préstamos de KSE o de bancos) no se incluye en las páginas, por lo que no puede identificarse una línea de deuda financiera. Los importes están en miles de libras (encabezado OCR '£7000', interpretado como £'000)."
+}

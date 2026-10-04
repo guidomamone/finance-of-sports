@@ -1,0 +1,333 @@
+{
+ "md": "Clubes/Argentina/Los Andes/balance-ejercicio-94-2009-10.md",
+ "pdf": "Clubes/Argentina/Los Andes/balance-ejercicio-94-2009-10.pdf",
+ "club": "losandes-ar",
+ "year": 2010,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:51:03.271Z",
+ "tieOuts": {
+  "cierran": 20,
+  "noCierran": 7
+ },
+ "warnings": [
+  "7 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 33,
+  "notasUsadas": []
+ },
+ "ladoConocido": 20,
+ "rubros": [
+  {
+   "label": "Cuotas Sociales",
+   "lado": null,
+   "page": 4,
+   "section": "CLUB ATLETICO LOS ANDES / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010",
+   "values": [
+    377.9412
+   ],
+   "origen": "estado 1",
+   "glosa": "Cuotas Sociales"
+  },
+  {
+   "label": "Futbol",
+   "lado": null,
+   "page": 4,
+   "section": "CLUB ATLETICO LOS ANDES / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010",
+   "values": [
+    149.9736
+   ],
+   "origen": "estado 1",
+   "glosa": "Futbol"
+  },
+  {
+   "label": "Ingresos por TV",
+   "lado": "revenue",
+   "page": 4,
+   "section": "CLUB ATLETICO LOS ANDES / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010",
+   "values": [
+    1440.5
+   ],
+   "origen": "estado 1",
+   "glosa": "Ingresos por TV"
+  },
+  {
+   "label": "Recupero gastos",
+   "lado": "expense",
+   "page": 4,
+   "section": "CLUB ATLETICO LOS ANDES / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010",
+   "values": [
+    11.31419
+   ],
+   "origen": "estado 1",
+   "glosa": "Recupero gastos"
+  },
+  {
+   "label": "Otros Ingresos",
+   "lado": "revenue",
+   "page": 4,
+   "section": "CLUB ATLETICO LOS ANDES / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010",
+   "values": [
+    1.8
+   ],
+   "origen": "estado 1",
+   "glosa": "Otros Ingresos"
+  },
+  {
+   "label": "Tenis (concesión)",
+   "lado": null,
+   "page": 4,
+   "section": "CLUB ATLETICO LOS ANDES / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010",
+   "values": [
+    66.15072
+   ],
+   "origen": "estado 1",
+   "glosa": "Tenis (concesión)"
+  },
+  {
+   "label": "Transferencia de Jug.",
+   "lado": null,
+   "page": 4,
+   "section": "CLUB ATLETICO LOS ANDES / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010",
+   "values": [
+    968.4702
+   ],
+   "origen": "estado 1",
+   "glosa": "Transferencia de Jug."
+  },
+  {
+   "label": "Canon Conc. Estadio",
+   "lado": null,
+   "page": 4,
+   "section": "CLUB ATLETICO LOS ANDES / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010",
+   "values": [
+    36.36664
+   ],
+   "origen": "estado 1",
+   "glosa": "Canon Conc. Estadio"
+  },
+  {
+   "label": "Cañon Bingo del Oeste",
+   "lado": null,
+   "page": 4,
+   "section": "CLUB ATLETICO LOS ANDES / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010",
+   "values": [
+    421.01539
+   ],
+   "origen": "estado 1",
+   "glosa": "Cañon Bingo del Oeste"
+  },
+  {
+   "label": "Revaluación Pl.Profesional",
+   "lado": null,
+   "page": 4,
+   "section": "CLUB ATLETICO LOS ANDES / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010",
+   "values": [
+    1330.6575
+   ],
+   "origen": "estado 1",
+   "glosa": "Revaluación Pl.Profesional"
+  },
+  {
+   "label": "Sponsor Planteles Fútbol",
+   "lado": null,
+   "page": 4,
+   "section": "CLUB ATLETICO LOS ANDES / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010",
+   "values": [
+    547.435
+   ],
+   "origen": "estado 1",
+   "glosa": "Sponsor Planteles Fútbol"
+  },
+  {
+   "label": "Gastos (s/ anexo VII)",
+   "lado": "expense",
+   "page": 4,
+   "section": "CLUB ATLETICO LOS ANDES / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010",
+   "values": [
+    4191.13429
+   ],
+   "origen": "estado 1",
+   "glosa": "Gastos (s/ anexo VII)"
+  },
+  {
+   "label": "Gastos administrativos (s/anexo VII)",
+   "lado": "expense",
+   "page": 4,
+   "section": "CLUB ATLETICO LOS ANDES / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2010",
+   "values": [
+    1449.17167
+   ],
+   "origen": "estado 1",
+   "glosa": "Gastos administrativos (s/anexo VII)"
+  },
+  {
+   "label": "Sueldos y Jornales",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    2.619328
+   ],
+   "origen": "estado 3",
+   "glosa": "Sueldos y Jornales"
+  },
+  {
+   "label": "Cargas Sociales",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.596509
+   ],
+   "origen": "estado 3",
+   "glosa": "Cargas Sociales"
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.156438
+   ],
+   "origen": "estado 3",
+   "glosa": "Honorarios"
+  },
+  {
+   "label": "Seguridad Deportiva (Polad)",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.06427
+   ],
+   "origen": "estado 3",
+   "glosa": "Seguridad Deportiva (Polad)"
+  },
+  {
+   "label": "Conserv. y Mantenimiento",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.367493
+   ],
+   "origen": "estado 3",
+   "glosa": "Conserv. y Mantenimiento"
+  },
+  {
+   "label": "Contingencias Concurso",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.510747
+   ],
+   "origen": "estado 3",
+   "glosa": "Contingencias Concurso"
+  },
+  {
+   "label": "Gts. y Com. Bancarios",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.04302
+   ],
+   "origen": "estado 3",
+   "glosa": "Gts. y Com. Bancarios"
+  },
+  {
+   "label": "Gastos financieros",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.059064
+   ],
+   "origen": "estado 3",
+   "glosa": "Gastos financieros"
+  },
+  {
+   "label": "Gts. Funcionamiento Adm.",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.155989
+   ],
+   "origen": "estado 3",
+   "glosa": "Gts. Funcionamiento Adm."
+  },
+  {
+   "label": "Egresos Varios",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.086285
+   ],
+   "origen": "estado 3",
+   "glosa": "Egresos Varios"
+  },
+  {
+   "label": "Gastos Otros Dptos.",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.087876
+   ],
+   "origen": "estado 3",
+   "glosa": "Gastos Otros Dptos."
+  },
+  {
+   "label": "Servicios Públicos",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.032154
+   ],
+   "origen": "estado 3",
+   "glosa": "Servicios Públicos"
+  },
+  {
+   "label": "Gts. Plantel Profesional",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.51815
+   ],
+   "origen": "estado 3",
+   "glosa": "Gts. Plantel Profesional"
+  },
+  {
+   "label": "Egresos por encuentros A.F.A.",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.055893
+   ],
+   "origen": "estado 3",
+   "glosa": "Egresos por encuentros A.F.A."
+  },
+  {
+   "label": "Amortización del ejercicio",
+   "lado": "expense",
+   "page": 6,
+   "section": "DENOMINACION DE LA ENTIDAD / CLUB ATLETICO LOS ANDES / ANEXO VII / EJERCICIO FINALIZADO EL: 30 DE JUNIO DE 2010",
+   "values": [
+    0.287091
+   ],
+   "origen": "estado 3",
+   "glosa": "Amortización del ejercicio"
+  }
+ ]
+}

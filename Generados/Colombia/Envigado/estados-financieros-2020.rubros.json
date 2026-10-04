@@ -1,0 +1,1342 @@
+{
+  "md": "Clubes/Colombia/Envigado/estados-financieros-2020.md",
+  "pdf": "Clubes/Colombia/Envigado/estados-financieros-2020.pdf",
+  "club": "envigado",
+  "year": 2020,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:58:17.975Z",
+  "tieOuts": {
+    "cierran": 55,
+    "noCierran": 1
+  },
+  "warnings": [
+    "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "53 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 116,
+    "notasUsadas": [
+      "36",
+      "27"
+    ]
+  },
+  "ladoConocido": 116,
+  "rubros": [
+    {
+      "label": "Matriculas",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        20.3303
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Matriculas"
+    },
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 6,
+      "section": "# Estado del Resultado Integral",
+      "values": [
+        14204.20628
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Mensualidades",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        357.38628
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Mensualidades"
+    },
+    {
+      "label": "Taquilla (1)",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        22.464
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Taquilla (1)"
+    },
+    {
+      "label": "Abonados",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        16.966
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Abonados"
+    },
+    {
+      "label": "Venta de derechos deportivos (2)",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        6067.265
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Venta de derechos deportivos (2)"
+    },
+    {
+      "label": "Préstamo de derechos deportivo",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        38.636
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Préstamo de derechos deportivo"
+    },
+    {
+      "label": "Contribución de solidaridad (3)",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        2700.231542
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Contribución de solidaridad (3)"
+    },
+    {
+      "label": "Publicidad y propaganda",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        502.10084
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Dimayor (4)",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        2476.836605
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Dimayor (4)"
+    },
+    {
+      "label": "Federación colombiana de futbol",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        370.135
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Federación colombiana de futbol"
+    },
+    {
+      "label": "Patrocinio",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        766.656
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "Cuotas de sostenimiento",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        334.313822
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Cuotas de sostenimiento"
+    },
+    {
+      "label": "Venta de mercancías",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        127.475004
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Venta de mercancías"
+    },
+    {
+      "label": "Otras actividades de servicios (5)",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        463.82084
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Otras actividades de servicios (5)"
+    },
+    {
+      "label": "Devoluciones rebajas y descuentos",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Reservas. / (1) Reserva Legal / (2) Reserva para el desarrollo deportivo / ### Nota 20. Ingresos de actividades ordinarias",
+      "values": [
+        -60.410953
+      ],
+      "origen": "nota 36 (ancla 4)",
+      "ancla": "Ingresos de actividades ordinarias",
+      "glosa": "Devoluciones rebajas y descuentos"
+    },
+    {
+      "label": "Costo de ventas mercancías",
+      "lado": "expense",
+      "page": 6,
+      "section": "# Estado del Resultado Integral",
+      "values": [
+        -104.319587
+      ],
+      "origen": "estado 4",
+      "glosa": "Costo de ventas mercancías"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 6,
+      "section": "# Estado del Resultado Integral",
+      "values": [
+        539.004959
+      ],
+      "origen": "estado 4",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Gasto equipo de fútbol",
+      "lado": "expense",
+      "page": 6,
+      "section": "# Estado del Resultado Integral",
+      "values": [
+        -8723.106131
+      ],
+      "origen": "estado 4",
+      "glosa": "Gasto equipo de fútbol"
+    },
+    {
+      "label": "Gastos de administración",
+      "lado": "expense",
+      "page": 6,
+      "section": "# Estado del Resultado Integral",
+      "values": [
+        -2337.469368
+      ],
+      "origen": "estado 4",
+      "glosa": "Gastos de administración"
+    },
+    {
+      "label": "Otros gastos",
+      "lado": "expense",
+      "page": 6,
+      "section": "# Estado del Resultado Integral",
+      "values": [
+        -30.549728
+      ],
+      "origen": "estado 4",
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Ingresos financieros",
+      "lado": "revenue",
+      "page": 6,
+      "section": "# Estado del Resultado Integral",
+      "values": [
+        877.391702
+      ],
+      "origen": "estado 4",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Costos financieros",
+      "lado": "expense",
+      "page": 6,
+      "section": "# Estado del Resultado Integral",
+      "values": [
+        -405.916583
+      ],
+      "origen": "estado 4",
+      "glosa": "Costos financieros"
+    },
+    {
+      "label": "Ingreso (gasto) por impuesto a la Renta y Complementarios",
+      "lado": "expense",
+      "page": 6,
+      "section": "# Estado del Resultado Integral",
+      "values": [
+        -1406.963
+      ],
+      "origen": "estado 4",
+      "glosa": "Ingreso (gasto) por impuesto a la Renta y Complementarios"
+    },
+    {
+      "label": "Ingreso (gasto) por impuestos diferidos",
+      "lado": "expense",
+      "page": 6,
+      "section": "# Estado del Resultado Integral",
+      "values": [
+        -12.888048
+      ],
+      "origen": "estado 4",
+      "glosa": "Ingreso (gasto) por impuestos diferidos"
+    },
+    {
+      "label": "Diferencias de cambio por conversión",
+      "lado": null,
+      "page": 6,
+      "section": "# Estado del Resultado Integral",
+      "values": [
+        31.792923
+      ],
+      "origen": "estado 4",
+      "glosa": "Diferencias de cambio por conversión"
+    },
+    {
+      "label": "Sueldos",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        594538.666
+      ],
+      "origen": "estado 37",
+      "glosa": "Sueldos"
+    },
+    {
+      "label": "Viáticos",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        1120
+      ],
+      "origen": "estado 37",
+      "glosa": "Viáticos"
+    },
+    {
+      "label": "Incapacidades",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        184.454
+      ],
+      "origen": "estado 37",
+      "glosa": "Incapacidades"
+    },
+    {
+      "label": "Auxilio de transporte",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        7816.898
+      ],
+      "origen": "estado 37",
+      "glosa": "Auxilio de transporte"
+    },
+    {
+      "label": "Cesantías",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        51941.187
+      ],
+      "origen": "estado 37",
+      "glosa": "Cesantías"
+    },
+    {
+      "label": "Intereses a las cesantías",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        6003.361
+      ],
+      "origen": "estado 37",
+      "glosa": "Intereses a las cesantías"
+    },
+    {
+      "label": "Prima de servicios",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        51149.467
+      ],
+      "origen": "estado 37",
+      "glosa": "Prima de servicios"
+    },
+    {
+      "label": "Vacaciones",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        24973.051
+      ],
+      "origen": "estado 37",
+      "glosa": "Vacaciones"
+    },
+    {
+      "label": "Auxilios",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        13386.567
+      ],
+      "origen": "estado 37",
+      "glosa": "Auxilios"
+    },
+    {
+      "label": "Bonificaciones",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        66960.292
+      ],
+      "origen": "estado 37",
+      "glosa": "Bonificaciones"
+    },
+    {
+      "label": "Dotación y suministro",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        67.5
+      ],
+      "origen": "estado 37",
+      "glosa": "Dotación y suministro"
+    },
+    {
+      "label": "Capacitación al personal",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        1174.95
+      ],
+      "origen": "estado 37",
+      "glosa": "Capacitación al personal"
+    },
+    {
+      "label": "Gastos deportivos y recreación",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        240
+      ],
+      "origen": "estado 37",
+      "glosa": "Gastos deportivos y recreación"
+    },
+    {
+      "label": "Aportes A.R. L",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        3925.17
+      ],
+      "origen": "estado 37",
+      "glosa": "Aportes A.R. L"
+    },
+    {
+      "label": "Aportes E.P.S",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        16605.6
+      ],
+      "origen": "estado 37",
+      "glosa": "Aportes E.P.S"
+    },
+    {
+      "label": "Aportes a fondos y pensiones",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        63166.222
+      ],
+      "origen": "estado 37",
+      "glosa": "Aportes a fondos y pensiones"
+    },
+    {
+      "label": "Caja de compensación",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        22264.313
+      ],
+      "origen": "estado 37",
+      "glosa": "Caja de compensación"
+    },
+    {
+      "label": "Aportes al I.C.B.F",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        5860.8
+      ],
+      "origen": "estado 37",
+      "glosa": "Aportes al I.C.B.F"
+    },
+    {
+      "label": "Aportes al Sena",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        3907.2
+      ],
+      "origen": "estado 37",
+      "glosa": "Aportes al Sena"
+    },
+    {
+      "label": "Gastos médicos y drogas",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        2953.62
+      ],
+      "origen": "estado 37",
+      "glosa": "Gastos médicos y drogas"
+    },
+    {
+      "label": "Revisoría fiscal",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        48028.2
+      ],
+      "origen": "estado 37",
+      "glosa": "Revisoría fiscal"
+    },
+    {
+      "label": "Consultoría",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        44322.769
+      ],
+      "origen": "estado 37",
+      "glosa": "Consultoría"
+    },
+    {
+      "label": "Asesoría jurídica",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        39315.791
+      ],
+      "origen": "estado 37",
+      "glosa": "Asesoría jurídica"
+    },
+    {
+      "label": "Asesoría financiera (1)",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        327153.5
+      ],
+      "origen": "estado 37",
+      "glosa": "Asesoría financiera (1)"
+    },
+    {
+      "label": "Asesoría técnica",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        30741
+      ],
+      "origen": "estado 37",
+      "glosa": "Asesoría técnica"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        200
+      ],
+      "origen": "estado 37",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Industria y comercio",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        28667.1
+      ],
+      "origen": "estado 37",
+      "glosa": "Industria y comercio"
+    },
+    {
+      "label": "Iva descontable (2)",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        48661.567
+      ],
+      "origen": "estado 37",
+      "glosa": "Iva descontable (2)"
+    },
+    {
+      "label": "Impuesto al consumo",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        4865.98
+      ],
+      "origen": "estado 37",
+      "glosa": "Impuesto al consumo"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        3507.8
+      ],
+      "origen": "estado 37",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Construcciones y edificaciones",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        137410.703
+      ],
+      "origen": "estado 37",
+      "glosa": "Construcciones y edificaciones"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        818.148
+      ],
+      "origen": "estado 37",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Contribuciones",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        877.803
+      ],
+      "origen": "estado 37",
+      "glosa": "Contribuciones"
+    },
+    {
+      "label": "Sustracción y hurto",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        648.548
+      ],
+      "origen": "estado 37",
+      "glosa": "Sustracción y hurto"
+    },
+    {
+      "label": "Pasan…",
+      "lado": "expense",
+      "page": 36,
+      "section": "### Nota 21. Gastos equipo de fútbol y de administración / #### 21.1 Gastos de Administración",
+      "values": [
+        1653458.227
+      ],
+      "origen": "estado 37",
+      "glosa": "Pasan…"
+    },
+    {
+      "label": "Salario integral (1)",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        1252.427451
+      ],
+      "origen": "estado 39",
+      "glosa": "Salario integral (1)"
+    },
+    {
+      "label": "Sueldos (1)",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        1878.146621
+      ],
+      "origen": "estado 39",
+      "glosa": "Sueldos (1)"
+    },
+    {
+      "label": "Básico aprendiz",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        6.422593
+      ],
+      "origen": "estado 39",
+      "glosa": "Básico aprendiz"
+    },
+    {
+      "label": "Viáticos",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        0.45
+      ],
+      "origen": "estado 39",
+      "glosa": "Viáticos"
+    },
+    {
+      "label": "Incapacidades",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        151.671857
+      ],
+      "origen": "estado 39",
+      "glosa": "Incapacidades"
+    },
+    {
+      "label": "Auxilio de transporte",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        51.021508
+      ],
+      "origen": "estado 39",
+      "glosa": "Auxilio de transporte"
+    },
+    {
+      "label": "Cesantías",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        176.402926
+      ],
+      "origen": "estado 39",
+      "glosa": "Cesantías"
+    },
+    {
+      "label": "Intereses sobre cesantías",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        18.553124
+      ],
+      "origen": "estado 39",
+      "glosa": "Intereses sobre cesantías"
+    },
+    {
+      "label": "Prima de servicios",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        185.062815
+      ],
+      "origen": "estado 39",
+      "glosa": "Prima de servicios"
+    },
+    {
+      "label": "Vacaciones",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        219.836669
+      ],
+      "origen": "estado 39",
+      "glosa": "Vacaciones"
+    },
+    {
+      "label": "Auxilios",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        120.816153
+      ],
+      "origen": "estado 39",
+      "glosa": "Auxilios"
+    },
+    {
+      "label": "Bonificaciones (1)",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        24.617606
+      ],
+      "origen": "estado 39",
+      "glosa": "Bonificaciones (1)"
+    },
+    {
+      "label": "Dotación y suministro (1)",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        133.177857
+      ],
+      "origen": "estado 39",
+      "glosa": "Dotación y suministro (1)"
+    },
+    {
+      "label": "Indemnizaciones laborales",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        94.355831
+      ],
+      "origen": "estado 39",
+      "glosa": "Indemnizaciones laborales"
+    },
+    {
+      "label": "Gastos deportivos",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        0.66675
+      ],
+      "origen": "estado 39",
+      "glosa": "Gastos deportivos"
+    },
+    {
+      "label": "Aportes A.R.L",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        69.46953
+      ],
+      "origen": "estado 39",
+      "glosa": "Aportes A.R.L"
+    },
+    {
+      "label": "Aportes E.P.S",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        137.697713
+      ],
+      "origen": "estado 39",
+      "glosa": "Aportes E.P.S"
+    },
+    {
+      "label": "Aportes a fondos y pensiones",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        355.872097
+      ],
+      "origen": "estado 39",
+      "glosa": "Aportes a fondos y pensiones"
+    },
+    {
+      "label": "Caja de compensación",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        125.343887
+      ],
+      "origen": "estado 39",
+      "glosa": "Caja de compensación"
+    },
+    {
+      "label": "Aportes al I.C.B.F",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        41.996
+      ],
+      "origen": "estado 39",
+      "glosa": "Aportes al I.C.B.F"
+    },
+    {
+      "label": "Aportes al Sena",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        27.9977
+      ],
+      "origen": "estado 39",
+      "glosa": "Aportes al Sena"
+    },
+    {
+      "label": "Gastos médicos y drogas",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        263.530524
+      ],
+      "origen": "estado 39",
+      "glosa": "Gastos médicos y drogas"
+    },
+    {
+      "label": "Consultoría",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        14.060613
+      ],
+      "origen": "estado 39",
+      "glosa": "Consultoría"
+    },
+    {
+      "label": "Asesoría jurídica",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        343.155655
+      ],
+      "origen": "estado 39",
+      "glosa": "Asesoría jurídica"
+    },
+    {
+      "label": "Asesoría técnica",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        16.746666
+      ],
+      "origen": "estado 39",
+      "glosa": "Asesoría técnica"
+    },
+    {
+      "label": "Honorarios",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        0.25
+      ],
+      "origen": "estado 39",
+      "glosa": "Honorarios"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        0.15
+      ],
+      "origen": "estado 39",
+      "glosa": "Otros"
+    },
+    {
+      "label": "A la propiedad raíz",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        3.062148
+      ],
+      "origen": "estado 39",
+      "glosa": "A la propiedad raíz"
+    },
+    {
+      "label": "De vehículos",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        0.377
+      ],
+      "origen": "estado 39",
+      "glosa": "De vehículos"
+    },
+    {
+      "label": "De espectáculos públicos",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        0.1476
+      ],
+      "origen": "estado 39",
+      "glosa": "De espectáculos públicos"
+    },
+    {
+      "label": "Construcciones y edificaciones (3)",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        518.836447
+      ],
+      "origen": "estado 39",
+      "glosa": "Construcciones y edificaciones (3)"
+    },
+    {
+      "label": "Muebles y enseres",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        8.81546
+      ],
+      "origen": "estado 39",
+      "glosa": "Muebles y enseres"
+    },
+    {
+      "label": "Pasan…",
+      "lado": "expense",
+      "page": 38,
+      "section": "#### 21.2 Gastos de equipo de fútbol",
+      "values": [
+        6241.138801
+      ],
+      "origen": "estado 39",
+      "glosa": "Pasan…"
+    },
+    {
+      "label": "Intereses (1)",
+      "lado": "expense",
+      "page": 41,
+      "section": "Costos financieros",
+      "values": [
+        144138.517
+      ],
+      "origen": "estado 43",
+      "glosa": "Intereses (1)"
+    },
+    {
+      "label": "Comisiones bancarias",
+      "lado": "expense",
+      "page": 41,
+      "section": "Costos financieros",
+      "values": [
+        24481.731
+      ],
+      "origen": "estado 43",
+      "glosa": "Comisiones bancarias"
+    },
+    {
+      "label": "Diferencia en cambio",
+      "lado": "expense",
+      "page": 41,
+      "section": "Costos financieros",
+      "values": [
+        172899.405
+      ],
+      "origen": "estado 43",
+      "glosa": "Diferencia en cambio"
+    },
+    {
+      "label": "Descuentos financieros",
+      "lado": "expense",
+      "page": 41,
+      "section": "Costos financieros",
+      "values": [
+        27
+      ],
+      "origen": "estado 43",
+      "glosa": "Descuentos financieros"
+    },
+    {
+      "label": "GMF",
+      "lado": "expense",
+      "page": 41,
+      "section": "Costos financieros",
+      "values": [
+        64369.93
+      ],
+      "origen": "estado 43",
+      "glosa": "GMF"
+    },
+    {
+      "label": "Costos y gastos de ejercicios",
+      "lado": "expense",
+      "page": 41,
+      "section": "Otros gastos",
+      "values": [
+        397.109
+      ],
+      "origen": "estado 45",
+      "glosa": "Costos y gastos de ejercicios"
+    },
+    {
+      "label": "Impuestos asumidos",
+      "lado": "expense",
+      "page": 41,
+      "section": "Otros gastos",
+      "values": [
+        5453.634
+      ],
+      "origen": "estado 45",
+      "glosa": "Impuestos asumidos"
+    },
+    {
+      "label": "Multas sanciones y litigios",
+      "lado": "expense",
+      "page": 41,
+      "section": "Otros gastos",
+      "values": [
+        24509.137
+      ],
+      "origen": "estado 45",
+      "glosa": "Multas sanciones y litigios"
+    },
+    {
+      "label": "Ajuste al peso",
+      "lado": "expense",
+      "page": 41,
+      "section": "Otros gastos",
+      "values": [
+        189.848
+      ],
+      "origen": "estado 45",
+      "glosa": "Ajuste al peso"
+    },
+    {
+      "label": "Sociedades nacionales",
+      "lado": "revenue",
+      "page": 33,
+      "section": "(*) INGO – Ingreso Constitutivo de Renta Ni Ganancia Ocasional",
+      "values": [
+        0.000007
+      ],
+      "origen": "estado 32",
+      "glosa": "Sociedades nacionales"
+    },
+    {
+      "label": "Sociedades, entidades extranjeras y establecimientos permanentes",
+      "lado": "revenue",
+      "page": 33,
+      "section": "(*) INGO – Ingreso Constitutivo de Renta Ni Ganancia Ocasional",
+      "values": [
+        0.00001
+      ],
+      "origen": "estado 32",
+      "glosa": "Sociedades, entidades extranjeras y establecimientos permanentes"
+    },
+    {
+      "label": "Tarifa de impuesto del año",
+      "lado": "expense",
+      "page": 31,
+      "section": "",
+      "values": [
+        0.032
+      ],
+      "origen": "nota 27 (ancla 25)",
+      "ancla": "Impuesto de renta",
+      "glosa": "Tarifa de impuesto del año"
+    },
+    {
+      "label": "Impuesto de renta",
+      "lado": "expense",
+      "page": 30,
+      "section": "El gasto de impuesto a la renta comprende:",
+      "values": [
+        1406963
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Impuesto de renta"
+    },
+    {
+      "label": "Impuesto sobre la utilidad contable",
+      "lado": "expense",
+      "page": 31,
+      "section": "",
+      "values": [
+        1286157.294
+      ],
+      "origen": "nota 27 (ancla 25)",
+      "ancla": "Impuesto de renta",
+      "glosa": "Impuesto sobre la utilidad contable"
+    },
+    {
+      "label": "Deducciones de Impuestos (GMF, de Vehículos, entre Otros)",
+      "lado": "expense",
+      "page": 31,
+      "section": "",
+      "values": [
+        21347.644
+      ],
+      "origen": "nota 27 (ancla 25)",
+      "ancla": "Impuesto de renta",
+      "glosa": "Deducciones de Impuestos (GMF, de Vehículos, entre Otros)"
+    },
+    {
+      "label": "Gastos menores",
+      "lado": "expense",
+      "page": 31,
+      "section": "",
+      "values": [
+        101.335
+      ],
+      "origen": "nota 27 (ancla 25)",
+      "ancla": "Impuesto de renta",
+      "glosa": "Gastos menores"
+    },
+    {
+      "label": "Gastos de vigencias anteriores",
+      "lado": "expense",
+      "page": 31,
+      "section": "",
+      "values": [
+        127.075
+      ],
+      "origen": "nota 27 (ancla 25)",
+      "ancla": "Impuesto de renta",
+      "glosa": "Gastos de vigencias anteriores"
+    },
+    {
+      "label": "Otros gastos financieros no deducibles",
+      "lado": "expense",
+      "page": 31,
+      "section": "",
+      "values": [
+        26910.397
+      ],
+      "origen": "nota 27 (ancla 25)",
+      "ancla": "Impuesto de renta",
+      "glosa": "Otros gastos financieros no deducibles"
+    },
+    {
+      "label": "Impuestos, multas, sanciones, intereses moratorios y las condenas no deducibles",
+      "lado": "expense",
+      "page": 31,
+      "section": "",
+      "values": [
+        7842.924
+      ],
+      "origen": "nota 27 (ancla 25)",
+      "ancla": "Impuesto de renta",
+      "glosa": "Impuestos, multas, sanciones, intereses moratorios y las condenas no deducibles"
+    },
+    {
+      "label": "Otros gastos no deducibles de naturaleza permanente",
+      "lado": "expense",
+      "page": 31,
+      "section": "",
+      "values": [
+        60.751
+      ],
+      "origen": "nota 27 (ancla 25)",
+      "ancla": "Impuesto de renta",
+      "glosa": "Otros gastos no deducibles de naturaleza permanente"
+    },
+    {
+      "label": "Propiedades. Planta Y Equipo",
+      "lado": "expense",
+      "page": 31,
+      "section": "",
+      "values": [
+        54857.74
+      ],
+      "origen": "nota 27 (ancla 25)",
+      "ancla": "Impuesto de renta",
+      "glosa": "Propiedades. Planta Y Equipo"
+    },
+    {
+      "label": "Otras provisiones asociadas a pasivos de monto o fecha Inciertos",
+      "lado": "expense",
+      "page": 31,
+      "section": "",
+      "values": [
+        9558.19
+      ],
+      "origen": "nota 27 (ancla 25)",
+      "ancla": "Impuesto de renta",
+      "glosa": "Otras provisiones asociadas a pasivos de monto o fecha Inciertos"
+    },
+    {
+      "label": "Impuesto diferido",
+      "lado": "expense",
+      "page": 30,
+      "section": "El gasto de impuesto a la renta comprende:",
+      "values": [
+        12888.048
+      ],
+      "origen": "estado 25",
+      "glosa": "Impuesto diferido"
+    }
+  ]
+}

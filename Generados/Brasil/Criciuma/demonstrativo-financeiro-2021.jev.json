@@ -1,0 +1,880 @@
+{
+ "md": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2021.md",
+ "generatedAt": "2026-09-30T04:26:00.821Z",
+ "rubros": [
+  {
+   "label": "Departamento de Patrimônio",
+   "lado": null,
+   "page": 8,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1470
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": null,
+   "page": 8,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Departamento Futebol Feminino",
+   "lado": null,
+   "page": 8,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.97
+    ],
+    [
+     "womens_football",
+     0.03
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1497
+  },
+  {
+   "label": "CUSTOS E DESPESAS OPERACIONAIS",
+   "lado": null,
+   "page": 8,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.48
+    ],
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1520
+  },
+  {
+   "label": "Departamento Futebol de Base",
+   "lado": null,
+   "page": 8,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.89
+    ],
+    [
+     "youth_football",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "Departamento Futebol Profissional",
+   "lado": null,
+   "page": 8,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.91
+    ],
+    [
+     "wages_squad",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1531
+  },
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": null,
+   "page": 8,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1509
+  },
+  {
+   "label": "Departamento Administrativo",
+   "lado": null,
+   "page": 8,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1478
+  },
+  {
+   "label": "SUPERÁVIT / DÉFICIT DO EXERCÍCIO",
+   "lado": null,
+   "page": 8,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "choice": "other_expenses",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_expenses",
+     0.35000000000000003
+    ],
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "lump_football_operations",
+     0.26
+    ]
+   ],
+   "tokens": 1386
+  },
+  {
+   "label": "RESULTADO FINANCEIRO",
+   "lado": null,
+   "page": 8,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Déficit / Superávit do Exercício",
+   "lado": null,
+   "page": 10,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO ABRANGENTE DO EXERCÍCIO",
+   "choice": "other_expenses",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "lump_football_operations",
+     0.27
+    ]
+   ],
+   "tokens": 1388
+  },
+  {
+   "label": "Receitas Financeiras",
+   "lado": null,
+   "page": 8,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1464
+  },
+  {
+   "label": "Despesas Financeiras",
+   "lado": null,
+   "page": 8,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1489
+  },
+  {
+   "label": "SUPERÁVIT / DÉFICIT ANTES DO RESULTADO FINANCEIRO",
+   "lado": null,
+   "page": 8,
+   "section": "LINEAR AUDITORES / CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "exceptional_items",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1500
+  },
+  {
+   "label": "Saldo Inicial",
+   "lado": "expense",
+   "page": 17,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.57
+    ],
+    [
+     "youth_other_sports_expense",
+     0.29
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ]
+   ],
+   "tokens": 865
+  },
+  {
+   "label": "Descrição",
+   "lado": "expense",
+   "page": 17,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "education_expense",
+     0.03
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Gastos com Formação",
+   "lado": "expense",
+   "page": 17,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Projeto de Formação de Atletas Amadores",
+   "lado": "revenue",
+   "page": 17,
+   "section": "9 Receitas de subvenções a realizar",
+   "choice": "youth_football",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "youth_football",
+     0.8
+    ],
+    [
+     "other_sports",
+     0.1
+    ],
+    [
+     "other_income",
+     0.07
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Projeto de Construção CT – MESP",
+   "lado": "revenue",
+   "page": 17,
+   "section": "9 Receitas de subvenções a realizar",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ]
+   ],
+   "tokens": 889
+  },
+  {
+   "label": "Amortização",
+   "lado": "expense",
+   "page": 17,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "choice": "player_amortisation",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "player_amortisation",
+     0.66
+    ],
+    [
+     "other_amortisation",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Projeto de Construção CT – PMC",
+   "lado": "revenue",
+   "page": 17,
+   "section": "9 Receitas de subvenções a realizar",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ]
+   ],
+   "tokens": 888
+  },
+  {
+   "label": "Atletas Profissionalizados",
+   "lado": "expense",
+   "page": 17,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "choice": "wages_squad",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "wages_squad",
+     0.41000000000000003
+    ],
+    [
+     "youth_other_sports_expense",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Receita com transmissão",
+   "lado": "revenue",
+   "page": 20,
+   "section": "14 Receitas Operacionais Brutas",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Receita com sócios",
+   "lado": "revenue",
+   "page": 20,
+   "section": "14 Receitas Operacionais Brutas",
+   "choice": "member_dues",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "member_dues",
+     0.86
+    ],
+    [
+     "season_tickets",
+     0.13
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Receita de subvenções",
+   "lado": "revenue",
+   "page": 20,
+   "section": "14 Receitas Operacionais Brutas",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "sponsorship_commercial",
+     0.05
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Atletas Dispensados",
+   "lado": "expense",
+   "page": 17,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "choice": "player_amortisation",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "player_amortisation",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "player_impairment",
+     0.14
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Reversão contingências – Termo de Rescisão Parcial GA",
+   "lado": "revenue",
+   "page": 20,
+   "section": "14 Receitas Operacionais Brutas",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Receita com jogos",
+   "lado": "revenue",
+   "page": 20,
+   "section": "14 Receitas Operacionais Brutas",
+   "choice": "matchday_competition",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "matchday_competition",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Receita com patrocínios",
+   "lado": "revenue",
+   "page": 20,
+   "section": "14 Receitas Operacionais Brutas",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Receita com negociação de atletas",
+   "lado": "revenue",
+   "page": 20,
+   "section": "14 Receitas Operacionais Brutas",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Demais Receitas",
+   "lado": "revenue",
+   "page": 20,
+   "section": "14 Receitas Operacionais Brutas",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Demais receitas financeiras",
+   "lado": null,
+   "page": 20,
+   "section": "15 Resultado Financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1445
+  },
+  {
+   "label": "Descontos obtidos",
+   "lado": null,
+   "page": 20,
+   "section": "15 Resultado Financeiro",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1311
+  },
+  {
+   "label": "Despesas e comissões bancárias",
+   "lado": null,
+   "page": 20,
+   "section": "15 Resultado Financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.82
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1474
+  },
+  {
+   "label": "Juros sobre empréstimos",
+   "lado": null,
+   "page": 20,
+   "section": "15 Resultado Financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1479
+  },
+  {
+   "label": "Encargos s/ tributos em atraso",
+   "lado": null,
+   "page": 20,
+   "section": "15 Resultado Financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1467
+  },
+  {
+   "label": "Juros passivos",
+   "lado": null,
+   "page": 20,
+   "section": "15 Resultado Financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1311
+  },
+  {
+   "label": "Descontos concedidos",
+   "lado": null,
+   "page": 20,
+   "section": "15 Resultado Financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1335
+  }
+ ]
+}

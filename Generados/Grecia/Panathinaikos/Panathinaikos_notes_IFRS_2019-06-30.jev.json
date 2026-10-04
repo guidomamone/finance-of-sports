@@ -1,0 +1,522 @@
+{
+ "md": "Clubes/Grecia/Panathinaikos/Panathinaikos_notes_IFRS_2019-06-30.md",
+ "generatedAt": "2026-09-30T22:49:23.302Z",
+ "rubrosHuella": "5d7fab571b7325a6a1519e86ddce9bce9752950b",
+ "rubros": [
+  {
+   "label": "Έσοδα από εισιτήρια",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Χορηγίες και διαφημίσεις",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Δικαιώματα αναμετάδοσης",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Εμπορικά",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά λειτουργικά έσοδα",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Κόστος πωλήσεων / υλικών",
+   "lado": "expense",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Αμοιβές και μισθοί εργαζομένων",
+   "lado": "revenue",
+   "page": 68,
+   "section": "## 22 ΑΜΟΙΒΕΣ ΕΡΓΑΖΟΜΕΝΩΝ ΚΑΙ ΛΟΙΠΕΣ ΠΑΡΟΧΕΣ",
+   "choice": "other_income",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Αμοιβές εργαζομένων και λοιπές παροχές",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Συμβόλαια ποδοσφαιριστών / προπονητών",
+   "lado": "revenue",
+   "page": 68,
+   "section": "## 22 ΑΜΟΙΒΕΣ ΕΡΓΑΖΟΜΕΝΩΝ ΚΑΙ ΛΟΙΠΕΣ ΠΑΡΟΧΕΣ",
+   "choice": "other_income",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπές Παροχές",
+   "lado": "revenue",
+   "page": 68,
+   "section": "## 22 ΑΜΟΙΒΕΣ ΕΡΓΑΖΟΜΕΝΩΝ ΚΑΙ ΛΟΙΠΕΣ ΠΑΡΟΧΕΣ",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Απομείωση και απόσβεση",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Απομείωση παγίων περιουσιακών στοιχείων",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα αγώνων",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα χορηγιών και διαφημίσεων",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα εμπορικών δραστηριοτήτων",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα ακινήτων & εγκαταστάσεων",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Έκτακτα έξοδα",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "exceptional_items",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Αμοιβές τρίτων",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Επισκευές και συντηρήσεις",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Δαπάνες υπηρεσιών κοινής ωφέλειας",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Έξοδα ταξιδίων και μεταφορών",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "match_organisation_expense",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Διάφορα έξοδα Α' ομάδας και Ακαδημίας",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιποί φόροι - τέλη",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Έκτακτα έξοδα - Πρόστιμα - Προσαυξήσεις",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "exceptional_items",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπές προβλέψεις",
+   "lado": "expense",
+   "page": 68,
+   "section": "## 23 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Λειτουργικά έξοδα",
+   "lado": "expense",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "match_organisation_expense",
+   "confidence": 0.29,
+   "desdeCache": true
+  },
+  {
+   "label": "Χρηματοοικονομικά Έξοδα",
+   "lado": "expense",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Χρηματοοικονομικά Έσοδα",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Απομείωση Υπεραξίας",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Αναβαλλόμενος Φόρος",
+   "lado": "expense",
+   "page": 70,
+   "section": "## 27 ΔΑΠΑΝΕΣ ΦΟΡΟΛΟΓΙΑΣ",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Κόστος κτήσης την 30/06/2018",
+   "lado": "expense",
+   "page": 55,
+   "section": "# Η ΕΤΑΙΡΕΙΑ",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Μείον: Σωρευμένες αποσβέσεις",
+   "lado": "expense",
+   "page": 55,
+   "section": "# Η ΕΤΑΙΡΕΙΑ",
+   "choice": "depreciation",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Προσθήκες",
+   "lado": "expense",
+   "page": 55,
+   "section": "# Η ΕΤΑΙΡΕΙΑ",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Πωλήσεις / διαγραφές",
+   "lado": "revenue",
+   "page": 55,
+   "section": "# Η ΕΤΑΙΡΕΙΑ",
+   "choice": "player_sales",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Αποσβέσεις χρήσης",
+   "lado": "expense",
+   "page": 55,
+   "section": "# Η ΕΤΑΙΡΕΙΑ",
+   "choice": "depreciation",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Αποσβέσεις πωληθέντων / διαγραφέντων",
+   "lado": "expense",
+   "page": 55,
+   "section": "# Η ΕΤΑΙΡΕΙΑ",
+   "choice": "player_amortisation",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Κόστος κτήσης την 30/06/2019",
+   "lado": "expense",
+   "page": 55,
+   "section": "# Η ΕΤΑΙΡΕΙΑ",
+   "choice": "player_amortisation",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Συνεισφορά αλληλεγγύης ομάδων",
+   "lado": "revenue",
+   "page": 67,
+   "section": "## 21 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Επιχορηγήσεις από Ομοσπονδίες",
+   "lado": "revenue",
+   "page": 67,
+   "section": "## 21 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από μισθώματα",
+   "lado": "revenue",
+   "page": 67,
+   "section": "## 21 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "stadium_other",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα από μισθώσεις σουίτων-Booth",
+   "lado": "revenue",
+   "page": 67,
+   "section": "## 21 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "stadium_other",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Λοιπά παρεπόμενα έσοδα",
+   "lado": "revenue",
+   "page": 67,
+   "section": "## 21 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Συναλλαγματικές διαφορές",
+   "lado": "revenue",
+   "page": 67,
+   "section": "## 21 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα τόκων τραπεζών",
+   "lado": "revenue",
+   "page": 70,
+   "section": "Τα χρηματοοικονομικά έσοδα του Ομίλου και της Εταιρείας αναλύονται ως εξής:",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Επανεκτίμηση αναβαλλόμενου φόρου - Αλλαγή φορολογικού συντελεστή",
+   "lado": "expense",
+   "page": 70,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Πριμ ποδοσφαιριστών / προπονητών",
+   "lado": "revenue",
+   "page": 68,
+   "section": "## 22 ΑΜΟΙΒΕΣ ΕΡΓΑΖΟΜΕΝΩΝ ΚΑΙ ΛΟΙΠΕΣ ΠΑΡΟΧΕΣ",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "competition_bonus",
+     0.26
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ]
+   ],
+   "tokens": 949
+  },
+  {
+   "label": "Φορολογική επίδραση εξόδων που δεν εκπίπτουν για φορολογικούς σκοπούς",
+   "lado": "expense",
+   "page": 70,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1061
+  },
+  {
+   "label": "Φόρος εισοδήματος",
+   "lado": "expense",
+   "page": 18,
+   "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2019 / # Κατάσταση Συνολικών Εσόδων",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1122
+  }
+ ]
+}

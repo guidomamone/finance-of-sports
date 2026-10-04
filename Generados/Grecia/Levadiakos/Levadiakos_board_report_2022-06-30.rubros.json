@@ -1,0 +1,82 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_board_report_2022-06-30.md",
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_board_report_2022-06-30.pdf",
+ "club": "levadiakos",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:02:44.127Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 8,
+  "notasUsadas": []
+ },
+ "ladoConocido": 6,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    0.036775
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    -1.354066
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    1.372613
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    -0.025341
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    -0.190877
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "values": [
+    -0.005185
+   ],
+   "origen": "estado 1"
+  }
+ ]
+}

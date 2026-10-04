@@ -1,0 +1,290 @@
+{
+  "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2016.md",
+  "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2016.pdf",
+  "club": "colocolo-cl",
+  "year": 2016,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:56:29.454Z",
+  "tieOuts": {
+    "cierran": 26,
+    "noCierran": 14
+  },
+  "warnings": [
+    "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "8 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 24,
+    "notasUsadas": []
+  },
+  "ladoConocido": 11,
+  "rubros": [
+    {
+      "label": "Servicios básicos",
+      "lado": null,
+      "page": 69,
+      "section": "-                 - / -                 -",
+      "values": [
+        0.195828
+      ],
+      "origen": "estado 56",
+      "glosa": "Servicios básicos"
+    },
+    {
+      "label": "Asesorías",
+      "lado": null,
+      "page": 69,
+      "section": "-                 - / -                 -",
+      "values": [
+        0.454234
+      ],
+      "origen": "estado 56",
+      "glosa": "Asesorías"
+    },
+    {
+      "label": "Depreciaciones",
+      "lado": null,
+      "page": 69,
+      "section": "-                 - / -                 -",
+      "values": [
+        0.514759
+      ],
+      "origen": "estado 56",
+      "glosa": "Depreciaciones"
+    },
+    {
+      "label": "Gastos Legales",
+      "lado": "expense",
+      "page": 69,
+      "section": "-                 - / -                 -",
+      "values": [
+        0.178408
+      ],
+      "origen": "estado 56",
+      "glosa": "Gastos Legales"
+    },
+    {
+      "label": "Mantenciones",
+      "lado": null,
+      "page": 69,
+      "section": "-                 - / -                 -",
+      "values": [
+        0.007565
+      ],
+      "origen": "estado 56",
+      "glosa": "Mantenciones"
+    },
+    {
+      "label": "Remuneración administración",
+      "lado": null,
+      "page": 69,
+      "section": "-                 - / -                 -",
+      "values": [
+        1.137154
+      ],
+      "origen": "estado 56",
+      "glosa": "Remuneración administración"
+    },
+    {
+      "label": "Prov. Incobrable -",
+      "lado": null,
+      "page": 69,
+      "section": "-                 - / -                 -",
+      "values": [
+        1.036396
+      ],
+      "origen": "estado 56",
+      "glosa": "Prov. Incobrable -"
+    },
+    {
+      "label": "Remuneración plantel profesional y cuerpo técnico",
+      "lado": null,
+      "page": 69,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        5666.329
+      ],
+      "origen": "estado 55",
+      "glosa": "Remuneración plantel profesional y cuerpo técnico"
+    },
+    {
+      "label": "Amortización Activos en concesión",
+      "lado": null,
+      "page": 69,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        669.89
+      ],
+      "origen": "estado 55",
+      "glosa": "Amortización Activos en concesión"
+    },
+    {
+      "label": "Amortización pases jugadores profesionales",
+      "lado": null,
+      "page": 69,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        3822.584
+      ],
+      "origen": "estado 55",
+      "glosa": "Amortización pases jugadores profesionales"
+    },
+    {
+      "label": "Costos de concentración traslados y otros",
+      "lado": "expense",
+      "page": 69,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2593.75
+      ],
+      "origen": "estado 55",
+      "glosa": "Costos de concentración traslados y otros"
+    },
+    {
+      "label": "Otros costos",
+      "lado": "expense",
+      "page": 69,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        427.429
+      ],
+      "origen": "estado 55",
+      "glosa": "Otros costos"
+    },
+    {
+      "label": "Costo de ventas",
+      "lado": "expense",
+      "page": 69,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22 .            COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        13375.93
+      ],
+      "origen": "estado 55",
+      "glosa": "Costo de ventas"
+    },
+    {
+      "label": "Otros activos financieros corrientes",
+      "lado": null,
+      "page": 70,
+      "section": "24. DIFERENCIA DE CAMBIO",
+      "values": [
+        52249
+      ],
+      "origen": "estado 60",
+      "glosa": "Otros activos financieros corrientes"
+    },
+    {
+      "label": "Deudores comerciales y otras cuentas por cobrar corrientes",
+      "lado": null,
+      "page": 70,
+      "section": "24. DIFERENCIA DE CAMBIO",
+      "values": [
+        -25002
+      ],
+      "origen": "estado 60",
+      "glosa": "Deudores comerciales y otras cuentas por cobrar corrientes"
+    },
+    {
+      "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+      "lado": null,
+      "page": 70,
+      "section": "24. DIFERENCIA DE CAMBIO",
+      "values": [
+        -189136
+      ],
+      "origen": "estado 60",
+      "glosa": "Cuentas por pagar comerciales y otras cuentas por pagar"
+    },
+    {
+      "label": "Gastos financieros",
+      "lado": "expense",
+      "page": 69,
+      "section": "-                 -",
+      "values": [
+        0.619903
+      ],
+      "origen": "estado 58",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Otros(*) -",
+      "lado": null,
+      "page": 69,
+      "section": "-                 -",
+      "values": [
+        0.431157
+      ],
+      "origen": "estado 58",
+      "glosa": "Otros(*) -"
+    },
+    {
+      "label": "Otros gastos, por función",
+      "lado": "expense",
+      "page": 69,
+      "section": "-                 -",
+      "values": [
+        0.619903
+      ],
+      "origen": "estado 58",
+      "glosa": "Otros gastos, por función"
+    },
+    {
+      "label": "Ingresos por futbol formativo (ii) -",
+      "lado": "revenue",
+      "page": 68,
+      "section": "El siguiente es el detalle de los otros ingresos por función: / 01.01.2016                 01.01.2015 / 31.12.2016                 31.12.2015 / Detalle de otros ingresos, por función                M$                       M$ / Prov.PPUA(i)                                        1.274.515                        -",
+      "values": [
+        0.429699
+      ],
+      "origen": "estado 54",
+      "glosa": "Ingresos por futbol formativo (ii) -"
+    },
+    {
+      "label": "Pases por pagar provisionados (iii) -",
+      "lado": "revenue",
+      "page": 68,
+      "section": "El siguiente es el detalle de los otros ingresos por función: / 01.01.2016                 01.01.2015 / 31.12.2016                 31.12.2015 / Detalle de otros ingresos, por función                M$                       M$ / Prov.PPUA(i)                                        1.274.515                        -",
+      "values": [
+        0.787024
+      ],
+      "origen": "estado 54",
+      "glosa": "Pases por pagar provisionados (iii) -"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 68,
+      "section": "El siguiente es el detalle de los otros ingresos por función: / 01.01.2016                 01.01.2015 / 31.12.2016                 31.12.2015 / Detalle de otros ingresos, por función                M$                       M$ / Prov.PPUA(i)                                        1.274.515                        -",
+      "values": [
+        0.02607
+      ],
+      "origen": "estado 54",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Ingresos por publicidad",
+      "lado": "revenue",
+      "page": 68,
+      "section": "Ingresos por venta de jugadores formados por el",
+      "values": [
+        9961.259
+      ],
+      "origen": "estado 52",
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 68,
+      "section": "Ingresos por venta de jugadores formados por el",
+      "values": [
+        123.217
+      ],
+      "origen": "estado 52",
+      "glosa": "Otros"
+    }
+  ]
+}

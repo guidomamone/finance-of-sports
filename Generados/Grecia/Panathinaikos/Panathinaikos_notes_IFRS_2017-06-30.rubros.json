@@ -1,0 +1,330 @@
+{
+  "md": "Clubes/Grecia/Panathinaikos/Panathinaikos_notes_IFRS_2017-06-30.md",
+  "pdf": "Clubes/Grecia/Panathinaikos/Panathinaikos_notes_IFRS_2017-06-30.pdf",
+  "club": "panathinaikos-gr",
+  "year": 2017,
+  "numberFormat": "us (coma miles, punto decimal)",
+  "generatedAt": "2026-09-30T22:03:14.601Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 28,
+    "notasUsadas": []
+  },
+  "ladoConocido": 28,
+  "rubros": [
+    {
+      "label": "Λοιπά συνολικά έσοδα / (έξοδα) χρήσης μετά φόρων",
+      "lado": "expense",
+      "page": 16,
+      "section": "## Κατάσταση Συνολικού Εισοδήματος (συνέχεια)",
+      "values": [
+        0.041208
+      ],
+      "origen": "estado 8",
+      "glosa": "Otro resultado global del ejercicio después de impuestos"
+    },
+    {
+      "label": "Αμοιβές τρίτων",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -1.22791
+      ],
+      "origen": "estado 69",
+      "glosa": "Servicios de profesionales y terceros"
+    },
+    {
+      "label": "Επισκευές και συντηρήσεις",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.188773
+      ],
+      "origen": "estado 69",
+      "glosa": "Reparaciones y conservación"
+    },
+    {
+      "label": "Μισθώματα",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.505226
+      ],
+      "origen": "estado 69",
+      "glosa": "Arrendamientos y cánones"
+    },
+    {
+      "label": "Έξοδα τέλεσης αγώνων",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -1.684918
+      ],
+      "origen": "estado 69",
+      "glosa": "Gastos de organización de partidos"
+    },
+    {
+      "label": "Έξοδα ανταποδοτικών χορηγιών και διαφήμισης",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.335839
+      ],
+      "origen": "estado 69",
+      "glosa": "Gastos de patrocinio y publicidad"
+    },
+    {
+      "label": "Διάφορα έξοδα Α' ομάδας και Ακαδημίας",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -2.975935
+      ],
+      "origen": "estado 69",
+      "glosa": "Gastos diversos del primer equipo y cantera"
+    },
+    {
+      "label": "Έξοδα ταξιδίων και μεταφορών",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.10819
+      ],
+      "origen": "estado 69",
+      "glosa": "Gastos de viajes y desplazamientos"
+    },
+    {
+      "label": "Διάφορα έξοδα",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.099385
+      ],
+      "origen": "estado 69",
+      "glosa": "Otros gastos diversos"
+    },
+    {
+      "label": "Έξοδα Αυξήσεων Μετοχικού Κεφαλαίου",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.18
+      ],
+      "origen": "estado 69",
+      "glosa": "Gastos de ampliación de capital social"
+    },
+    {
+      "label": "Ασφάλιστρα",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.025914
+      ],
+      "origen": "estado 69",
+      "glosa": "Primas de seguros"
+    },
+    {
+      "label": "Δαπάνες υπηρεσιών κοινής ωφέλειας",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.210438
+      ],
+      "origen": "estado 69",
+      "glosa": "Gastos por suministros"
+    },
+    {
+      "label": "Έξοδα προηγούμενων χρήσεων",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.547624
+      ],
+      "origen": "estado 69",
+      "glosa": "Gastos de ejercicios anteriores"
+    },
+    {
+      "label": "Λοιπές προβλέψεις",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.470788
+      ],
+      "origen": "estado 69",
+      "glosa": "Otras provisiones"
+    },
+    {
+      "label": "Έκτακτα και ανόργανα έξοδα",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -1.085739
+      ],
+      "origen": "estado 69",
+      "glosa": "Gastos extraordinarios y excepcionales"
+    },
+    {
+      "label": "Λοιποί φόροι – τέλη",
+      "lado": "expense",
+      "page": 75,
+      "section": "## 25 ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+      "values": [
+        -0.120703
+      ],
+      "origen": "estado 69",
+      "glosa": "Otros tributos y tasas"
+    },
+    {
+      "label": "Συνεισφορά αλληλεγγύης ομάδων",
+      "lado": "revenue",
+      "page": 73,
+      "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        121.443
+      ],
+      "origen": "estado 67",
+      "glosa": "Contribución de solidaridad"
+    },
+    {
+      "label": "Ειδικές επιχορηγήσεις",
+      "lado": "revenue",
+      "page": 73,
+      "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        160.86
+      ],
+      "origen": "estado 67",
+      "glosa": "Subvenciones especiales"
+    },
+    {
+      "label": "Έσοδα από μισθώματα",
+      "lado": "revenue",
+      "page": 73,
+      "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        496.9
+      ],
+      "origen": "estado 67",
+      "glosa": "Ingresos por arrendamientos"
+    },
+    {
+      "label": "Έσοδα από αχρησιμοποίητες προβλέψεις",
+      "lado": "revenue",
+      "page": 73,
+      "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        26.123
+      ],
+      "origen": "estado 67",
+      "glosa": "Ingresos por reversión de provisiones"
+    },
+    {
+      "label": "Έσοδα από τακτοποίηση υποχρεώσεων",
+      "lado": "revenue",
+      "page": 73,
+      "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        731.499
+      ],
+      "origen": "estado 67",
+      "glosa": "Ingresos por liquidación de deudas"
+    },
+    {
+      "label": "Λοιπά παρεπόμενα έσοδα",
+      "lado": "revenue",
+      "page": 73,
+      "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        530.178
+      ],
+      "origen": "estado 67",
+      "glosa": "Otros ingresos accesorios"
+    },
+    {
+      "label": "Έκτακτα και ανόργανα έσοδα",
+      "lado": "revenue",
+      "page": 73,
+      "section": "## 23  2ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΣΟΔΑ",
+      "values": [
+        28.054
+      ],
+      "origen": "estado 67",
+      "glosa": "Ingresos extraordinarios y excepcionales"
+    },
+    {
+      "label": "Προεξόφληση από αποτίμηση υποχρεώσεων",
+      "lado": "revenue",
+      "page": 76,
+      "section": "Τα χρηματοοικονομικά έσοδα του Ομίλου και της Εταιρείας αναλύονται ως εξής:",
+      "values": [
+        0.450915
+      ],
+      "origen": "estado 73",
+      "glosa": "Actualización financiera por valoración de pasivos"
+    },
+    {
+      "label": "Τόκοι χορηγηθέντων δανείων",
+      "lado": "revenue",
+      "page": 76,
+      "section": "Τα χρηματοοικονομικά έσοδα του Ομίλου και της Εταιρείας αναλύονται ως εξής:",
+      "values": [
+        0.040443
+      ],
+      "origen": "estado 73",
+      "glosa": "Intereses de préstamos concedidos"
+    },
+    {
+      "label": "Έσοδα τόκων τραπεζών",
+      "lado": "revenue",
+      "page": 76,
+      "section": "Τα χρηματοοικονομικά έσοδα του Ομίλου και της Εταιρείας αναλύονται ως εξής:",
+      "values": [
+        0.000313
+      ],
+      "origen": "estado 73",
+      "glosa": "Ingresos por intereses bancarios"
+    },
+    {
+      "label": "Αποσβέσεις εγγραφών ποδοσφαιριστών",
+      "lado": "revenue",
+      "page": 75,
+      "section": "## 26 ΚΕΡΔΟΣ / (ΖΗΜΙΑ) ΑΠΟ ΠΩΛΗΣΗ ΑΥΛΩΝ ΠΕΡΙΟΥΣΙΑΚΩΝ ΣΤΟΙΧΕΙΩΝ – ΠΟΔΟΣΦΑΙΡΙΣΤΕΣ",
+      "values": [
+        -2691.429
+      ],
+      "origen": "estado 70",
+      "glosa": "Amortización de derechos federativos de futbolistas"
+    },
+    {
+      "label": "Αναβαλλόμενος Φόρος",
+      "lado": "expense",
+      "page": 77,
+      "section": "## 29 ΔΑΠΑΝΕΣ ΦΟΡΟΛΟΓΙΑΣ",
+      "values": [
+        -2.507464
+      ],
+      "origen": "estado 74",
+      "glosa": "Impuesto diferido"
+    }
+  ]
+}

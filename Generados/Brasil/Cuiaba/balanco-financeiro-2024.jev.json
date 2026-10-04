@@ -1,0 +1,1409 @@
+{
+ "md": "Clubes/Brasil/Cuiaba/balanco-financeiro-2024.md",
+ "generatedAt": "2026-09-30T04:26:05.437Z",
+ "rubros": [
+  {
+   "label": "PLACAS DE PUBLICIDADE",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1518
+  },
+  {
+   "label": "DIREITOS ECONÔMICOS DE ATLETAS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "player_amortisation",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "player_amortisation",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1553
+  },
+  {
+   "label": "RECEITA FUTEBOL PROFISSIONAL",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "lump_football_operations",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.75
+    ],
+    [
+     "matchday_competition",
+     0.25
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1565
+  },
+  {
+   "label": "PATROCÍNIOS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1526
+  },
+  {
+   "label": "BILHETERIA/JOGOS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1532
+  },
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1540
+  },
+  {
+   "label": "COTAS/TV",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1459
+  },
+  {
+   "label": "SÓCIO TORCEDOR",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1529
+  },
+  {
+   "label": "DEMAIS RECEITAS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1496
+  },
+  {
+   "label": "ESCOLINHA",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "youth_football",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "youth_football",
+     0.96
+    ],
+    [
+     "education",
+     0.02
+    ],
+    [
+     "youth_other_sports_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1365
+  },
+  {
+   "label": "OUTRAS RECEITAS C/ FUTEBOL",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1514
+  },
+  {
+   "label": "(-) DEDUÇÕES DAS RECEITAS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "other_income",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "OUTRAS RECEITAS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1504
+  },
+  {
+   "label": "(-) DIREITOS ECONOMICOS/ CUSTO INTANGÍVEL",
+   "lado": null,
+   "page": 2,
+   "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2024 / Valores Expressos em Reais (R$)",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1571
+  },
+  {
+   "label": "LICENCIAMENTOS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1387
+  },
+  {
+   "label": "LOTERIAS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1477
+  },
+  {
+   "label": "LUCRO BRUTO",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "lump_football_operations",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.8
+    ],
+    [
+     "other_income",
+     0.18
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1468
+  },
+  {
+   "label": "DESPESAS TRIBUTÁRIAS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1520
+  },
+  {
+   "label": "(-) CUSTOS FUTEBOL PROFISSIONAL",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 1544
+  },
+  {
+   "label": "RECEITA OPERACIONAL LÍQUIDA",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1541
+  },
+  {
+   "label": "OUTROS CUSTOS COM FUTEBOL",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "wages_squad",
+     0.14
+    ],
+    [
+     "match_organisation_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1528
+  },
+  {
+   "label": "CUSTOS COM PESSOAL",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "wages_squad",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "wages_squad",
+     0.65
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1545
+  },
+  {
+   "label": "CUSTOS COM AMORTIZAÇÃO DE CONTRATOS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     0.99
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1538
+  },
+  {
+   "label": "CUSTOS COM JOGOS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1533
+  },
+  {
+   "label": "(-) DESPESAS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "lump_football_operations_expense",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1520
+  },
+  {
+   "label": "DESPESAS GERAIS CATEGORIA DE BASE",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "youth_football",
+     0.01
+    ]
+   ],
+   "tokens": 1559
+  },
+  {
+   "label": "DESPESAS ADMINISTRATIVAS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1544
+  },
+  {
+   "label": "DESPESAS COM PESSOAL",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "wages_squad",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "wages_squad",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1554
+  },
+  {
+   "label": "DESPESAS COM VENDAS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "admin_general_expense",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "player_sales",
+     0.06
+    ]
+   ],
+   "tokens": 1532
+  },
+  {
+   "label": "DESPESAS DEPRECIAÇÃO",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1519
+  },
+  {
+   "label": "DESPESAS GERAIS ESCOLINHA",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "education_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "education_expense",
+     0.63
+    ],
+    [
+     "youth_other_sports_expense",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1546
+  },
+  {
+   "label": "DESPESAS GERAIS FUTEBOL FEMININO",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "womens_football",
+     0.01
+    ]
+   ],
+   "tokens": 1568
+  },
+  {
+   "label": "RESULTADO DA ATIVIDADE",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "lump_football_operations",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.37
+    ],
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "(+/-) DESPESAS/(RECEITAS) OPERACIONAIS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "other_income",
+     0.15
+    ]
+   ],
+   "tokens": 1556
+  },
+  {
+   "label": "LUCRO OPERACIONAL",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.46
+    ],
+    [
+     "lump_football_operations",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1548
+  },
+  {
+   "label": "LUCRO LÍQUIDO DO EXERCÍCIO",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1471
+  },
+  {
+   "label": "RESULTADO ANTES DA PROVISÃO DO IR/CS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "admin_general_expense",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "other_income",
+     0.29000000000000004
+    ],
+    [
+     "other_expenses",
+     0.25
+    ]
+   ],
+   "tokens": 1521
+  },
+  {
+   "label": "(-) DIREITOS ECONÔMICOS/ CUSTO INTANGÍVEL",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1554
+  },
+  {
+   "label": "(I) Sobras líquidas do exercício",
+   "lado": null,
+   "page": 10,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado abrangente / Exercícios findos em 31 de dezembro de 2024 e 2023 / (Em Reais)",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.8200000000000001
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 1613
+  },
+  {
+   "label": "DESPESAS/(RECEITAS) FINANCEIRAS",
+   "lado": null,
+   "page": 9,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado / Exercícios findos em 31 de dezembro de 2024 e 2023 / Valores expressos em Reais",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1552
+  },
+  {
+   "label": "Caixa",
+   "lado": "revenue",
+   "page": 19,
+   "section": "###### iii. Receitas de publicidade (Patrocínios diretos) / ###### iv. Receitas de royalties (Licenciamento de produtos) / ###### v. Receitas com associados / ###### vi. Receitas de bilheteria / #### 4. Caixa e equivalentes de caixa",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 879
+  },
+  {
+   "label": "Bancos conta movimento",
+   "lado": "revenue",
+   "page": 19,
+   "section": "###### iii. Receitas de publicidade (Patrocínios diretos) / ###### iv. Receitas de royalties (Licenciamento de produtos) / ###### v. Receitas com associados / ###### vi. Receitas de bilheteria / #### 4. Caixa e equivalentes de caixa",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 882
+  },
+  {
+   "label": "Sobras líquidas do exercício",
+   "lado": null,
+   "page": 10,
+   "section": "CUIABÁ ESPORTE CLUBE - SOCIEDADE ANÔNIMA DO FUTEBOL / Demonstrações do resultado abrangente / Exercícios findos em 31 de dezembro de 2024 e 2023 / (Em Reais)",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 1611
+  },
+  {
+   "label": "Aplicações financeiras (i)",
+   "lado": "revenue",
+   "page": 19,
+   "section": "###### iii. Receitas de publicidade (Patrocínios diretos) / ###### iv. Receitas de royalties (Licenciamento de produtos) / ###### v. Receitas com associados / ###### vi. Receitas de bilheteria / #### 4. Caixa e equivalentes de caixa",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 887
+  },
+  {
+   "label": "Salários e ordenados",
+   "lado": null,
+   "page": 22,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / Exercícios findos em 31 de dezembro de 2024 e 2023 / (Em Reais) / #### 13. Despesas, receitas e custos / ##### (i) Custos e despesas com Pessoal",
+   "choice": "wages_squad",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "wages_squad",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1555
+  },
+  {
+   "label": "FGTS",
+   "lado": null,
+   "page": 22,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / Exercícios findos em 31 de dezembro de 2024 e 2023 / (Em Reais) / #### 13. Despesas, receitas e custos / ##### (i) Custos e despesas com Pessoal",
+   "choice": "wages_squad",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "wages_squad",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1401
+  },
+  {
+   "label": "Décimo terceiro salário",
+   "lado": null,
+   "page": 22,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / Exercícios findos em 31 de dezembro de 2024 e 2023 / (Em Reais) / #### 13. Despesas, receitas e custos / ##### (i) Custos e despesas com Pessoal",
+   "choice": "wages_squad",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "wages_squad",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "INSS",
+   "lado": null,
+   "page": 22,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / Exercícios findos em 31 de dezembro de 2024 e 2023 / (Em Reais) / #### 13. Despesas, receitas e custos / ##### (i) Custos e despesas com Pessoal",
+   "choice": "admin_general_expense",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "wages_squad",
+     0.12
+    ]
+   ],
+   "tokens": 1582
+  },
+  {
+   "label": "Férias",
+   "lado": null,
+   "page": 22,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / Exercícios findos em 31 de dezembro de 2024 e 2023 / (Em Reais) / #### 13. Despesas, receitas e custos / ##### (i) Custos e despesas com Pessoal",
+   "choice": "wages_squad",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "wages_squad",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1398
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 22,
+   "section": "##### (ii) Despesas Administrativas",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 988
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 22,
+   "section": "##### (ii) Despesas Administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Manutenção predial",
+   "lado": "expense",
+   "page": 22,
+   "section": "##### (ii) Despesas Administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Depreciação",
+   "lado": "expense",
+   "page": 22,
+   "section": "##### (ii) Despesas Administrativas",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Contabilidade, auditoria e assessoria jurídica",
+   "lado": "expense",
+   "page": 22,
+   "section": "##### (ii) Despesas Administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 930
+  },
+  {
+   "label": "Viagens",
+   "lado": "expense",
+   "page": 22,
+   "section": "##### (ii) Despesas Administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.52
+    ],
+    [
+     "match_organisation_expense",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Receitas com serviços publicidade e propaganda",
+   "lado": "revenue",
+   "page": 22,
+   "section": "#### 14. Receitas operacionais",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Rendimentos de aplicações financeiras",
+   "lado": null,
+   "page": 22,
+   "section": "#### 15. Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Juros ativos",
+   "lado": null,
+   "page": 22,
+   "section": "#### 15. Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1400
+  },
+  {
+   "label": "Descontos obtidos",
+   "lado": null,
+   "page": 22,
+   "section": "#### 15. Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1310
+  },
+  {
+   "label": "Descontos concedidos",
+   "lado": null,
+   "page": 22,
+   "section": "#### 15. Resultado financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1334
+  },
+  {
+   "label": "IOF",
+   "lado": null,
+   "page": 22,
+   "section": "#### 15. Resultado financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1256
+  }
+ ]
+}

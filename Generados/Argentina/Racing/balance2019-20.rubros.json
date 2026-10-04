@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Argentina/Racing/balance2019-20.md",
+ "pdf": "Clubes/Argentina/Racing/balance2019-20.pdf",
+ "club": "racing",
+ "year": 2019,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T01:15:29.285Z",
+ "tieOuts": {
+  "cierran": 32,
+  "noCierran": 30
+ },
+ "warnings": [
+  "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "28 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "11 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": false,
+ "ladoConocido": 0,
+ "rubros": []
+}

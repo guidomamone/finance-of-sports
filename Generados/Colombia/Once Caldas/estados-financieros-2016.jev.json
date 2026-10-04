@@ -1,0 +1,719 @@
+{
+ "md": "Clubes/Colombia/Once Caldas/estados-financieros-2016.md",
+ "generatedAt": "2026-09-30T22:48:59.661Z",
+ "rubrosHuella": "087b12bd7ce63de3c94fa96bcebb8234c63c3420",
+ "rubros": [
+  {
+   "label": "FINANCIEROS",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "INTERESES",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DIFERENCIA EN CAMBIO",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "RECUPERACIONES",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "RECUPERACION INVENTARIO",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 974
+  },
+  {
+   "label": "REINTEGRO DE GTOS AQOS ANTERIO",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "POR INCAPACIDADES DEL ISS",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "INTERESES NIIF",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 867
+  },
+  {
+   "label": "REINTREGROS NIIF",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 815
+  },
+  {
+   "label": "FLOTA Y EQUIPO DE TRANSP",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "lump_football_operations",
+     0.21
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 954
+  },
+  {
+   "label": "REINTE DE OTROS COSTOS Y GASTO",
+   "lado": "expense",
+   "page": 17,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 989
+  },
+  {
+   "label": "INDEMNIZACIONES",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1117
+  },
+  {
+   "label": "DIVERSOS",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "REGALIAS",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.79
+    ],
+    [
+     "other_income",
+     0.18
+    ],
+    [
+     "broadcasting",
+     0.03
+    ]
+   ],
+   "tokens": 929
+  },
+  {
+   "label": "AJUSTE AL PESO",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 940
+  },
+  {
+   "label": "SUBVENCIONES",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "APROVECHAMIENTOS",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 995
+  },
+  {
+   "label": "PREMIOS-GANANCIA OCASIONAL",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "competition_bonus",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "competition_bonus",
+     0.82
+    ],
+    [
+     "other_income",
+     0.18
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1169
+  },
+  {
+   "label": "INGRESOS DE EJERCICIOS ANTERIO",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "INGRESOS POR COBRAR: En ésta se registran los obligaciones correspondiente a la venta de la publicidad, en los contratos queda establecido las fechas de pago, las cuales son normalmente a un año; son obligaciones de excelente comportamiento, a la fecha la obligación más representativa es con LYS, que representa el 87.35%",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1111
+  },
+  {
+   "label": "Intereses de mora- Publicidad",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.72
+    ],
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Otros (Publicidad)",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Cuentas por cobrar a Empleados- capital",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Anticipos de Impuestos : los valores de los anticipos de impuesto de renta y anticipo de impuesto del cree, serán solicitada como devolución a la DIAN, la expectativa es recuperarlos en el transcurso del año.",
+   "lado": "expense",
+   "page": 8,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1174
+  },
+  {
+   "label": "Retecree: Este valor corresponde a las autorretenciones que se pagaron durante todo el año, el cual podremos solicitar como devolución, ya que al hacer la provisión del impuesto de renta para la equidad, tendríamos que cancelar la suma de $12.050.000, valor que vamos a cancelar en el momento de presentar la declaración",
+   "lado": "expense",
+   "page": 8,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Anticipo de impuesto de renta: valor que solicitaremos se nos reintegre, de acuerdo a la normatividad, donde nos permite solicitar la devolución de la retención en la fuente, por estar dentro del proceso de reestructuración",
+   "lado": "expense",
+   "page": 8,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.47
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1231
+  },
+  {
+   "label": "GASTOS FINANCIEROS",
+   "lado": "expense",
+   "page": 17,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuentas por Cobrar a empleados : Valores, descontados directamente de nómina, donde el plazo máximo es de dos meses.",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Deudores Varios : los valores registrados, corresponden a venta de abonos y otros créditos hechos a empresas aliadas del Once Caldas, como es la Corporacion y la Fundacion del Once Caldas, e igualmente a terceros que no se clasifican en las cuentas anteriores. Se registran los intereses por mora, de acuerdo a nuestra política contable.",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "season_tickets",
+     0.39
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1171
+  },
+  {
+   "label": "Intereses- deudores varios",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "COOMEVA EPS",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.58
+    ],
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "member_dues",
+     0.03
+    ]
+   ],
+   "tokens": 813
+  },
+  {
+   "label": "VALOY RIASCOS JHON EDWARD: Valor correspondiente a la rescisión del contrato, a la fecha nos adeuda lo equivalente a 4 mil dólares",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "choice": "player_sales",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "player_sales",
+     0.87
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "COLPENSIONES",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 813
+  },
+  {
+   "label": "Deudores Varios",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1015
+  }
+ ]
+}

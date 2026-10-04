@@ -1,0 +1,312 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2014-2015.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2014-2015.pdf",
+  "club": "realmadrid",
+  "year": 2015,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:01:00.139Z",
+  "tieOuts": {
+    "cierran": 3,
+    "noCierran": 30
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "28 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "12 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 26,
+    "notasUsadas": []
+  },
+  "ladoConocido": 12,
+  "rubros": [
+    {
+      "label": "al ejercicio anual terminado el 30 de junio de 2015 y al ejercicio Otros activos y pasivos no corrientes",
+      "lado": null,
+      "page": 14,
+      "section": "",
+      "values": [
+        -7.681
+      ],
+      "origen": "estado 10",
+      "glosa": "al ejercicio anual terminado el 30 de junio de 2015 y al ejercicio Otros activos y pasivos no corrientes"
+    },
+    {
+      "label": "Otros flujos de efectivo de las actividades de explotación",
+      "lado": null,
+      "page": 14,
+      "section": "",
+      "values": [
+        -22.678
+      ],
+      "origen": "estado 10",
+      "glosa": "Otros flujos de efectivo de las actividades de explotación"
+    },
+    {
+      "label": "anual terminado el 30 de junio de",
+      "lado": null,
+      "page": 14,
+      "section": "",
+      "values": [
+        2.014
+      ],
+      "origen": "estado 10",
+      "glosa": "anual terminado el 30 de junio de"
+    },
+    {
+      "label": "Pagos de intereses",
+      "lado": null,
+      "page": 14,
+      "section": "",
+      "values": [
+        -5.109
+      ],
+      "origen": "estado 10",
+      "glosa": "Pagos de intereses"
+    },
+    {
+      "label": "Miles € Cobros de intereses",
+      "lado": null,
+      "page": 14,
+      "section": "",
+      "values": [
+        3.163
+      ],
+      "origen": "estado 10",
+      "glosa": "Miles € Cobros de intereses"
+    },
+    {
+      "label": "8.2,16 119.839 101.342 Deudas a corto plazo",
+      "lado": null,
+      "page": 13,
+      "section": "16         25.888     20.036 / diferido / 15         27.130     31.923 / plazo / Deterioro, resultado por enajenaciones del inmovilizado y otros excepcionales",
+      "values": [
+        111.167
+      ],
+      "origen": "estado 4",
+      "glosa": "8.2,16 119.839 101.342 Deudas a corto plazo"
+    },
+    {
+      "label": "Amortización del inmovilizado",
+      "lado": null,
+      "page": 14,
+      "section": "NOTAS    EJERCICIO 2014/2015             EJERCICIO 2013/2014 / NOTAS          EJERCICIO 2014/2015            EJERCICIO 2013/2014",
+      "values": [
+        139.684
+      ],
+      "origen": "estado 6",
+      "glosa": "Amortización del inmovilizado"
+    },
+    {
+      "label": "Correcciones valorativas por deterioro",
+      "lado": null,
+      "page": 14,
+      "section": "NOTAS    EJERCICIO 2014/2015             EJERCICIO 2013/2014 / NOTAS          EJERCICIO 2014/2015            EJERCICIO 2013/2014",
+      "values": [
+        10.518
+      ],
+      "origen": "estado 6",
+      "glosa": "Correcciones valorativas por deterioro"
+    },
+    {
+      "label": "Variación de provisiones 13,",
+      "lado": null,
+      "page": 14,
+      "section": "NOTAS    EJERCICIO 2014/2015             EJERCICIO 2013/2014 / NOTAS          EJERCICIO 2014/2015            EJERCICIO 2013/2014",
+      "values": [
+        3.988
+      ],
+      "origen": "estado 6",
+      "glosa": "Variación de provisiones 13,"
+    },
+    {
+      "label": "Ingresos de socios y estadios",
+      "lado": "revenue",
+      "page": 15,
+      "section": "NOTA PREVIA / NOTAS     EJERCICIO 2014/2015 / CONSOLIDADO",
+      "values": [
+        151.284
+      ],
+      "origen": "estado 14",
+      "glosa": "Ingresos de socios y estadios"
+    },
+    {
+      "label": "dientes estados consolidados del ejercicio 2013/2014. Ingresos de amistosos y competiciones",
+      "lado": "revenue",
+      "page": 15,
+      "section": "NOTA PREVIA / NOTAS     EJERCICIO 2014/2015 / CONSOLIDADO",
+      "values": [
+        51.561
+      ],
+      "origen": "estado 14",
+      "glosa": "dientes estados consolidados del ejercicio 2013/2014. Ingresos de amistosos y competiciones"
+    },
+    {
+      "label": "Ingresos de retransmisión",
+      "lado": "revenue",
+      "page": 15,
+      "section": "NOTA PREVIA / NOTAS     EJERCICIO 2014/2015 / CONSOLIDADO",
+      "values": [
+        163.484
+      ],
+      "origen": "estado 14",
+      "glosa": "Ingresos de retransmisión"
+    },
+    {
+      "label": "Ingresos de marketing",
+      "lado": "revenue",
+      "page": 15,
+      "section": "NOTA PREVIA / NOTAS     EJERCICIO 2014/2015 / CONSOLIDADO",
+      "values": [
+        208.082
+      ],
+      "origen": "estado 14",
+      "glosa": "Ingresos de marketing"
+    },
+    {
+      "label": "Consumo de materias primas y otras materias consumibles",
+      "lado": null,
+      "page": 15,
+      "section": "CONSOLIDADO                                                        CONSOLIDADO",
+      "values": [
+        -24.93
+      ],
+      "origen": "estado 15",
+      "glosa": "Consumo de materias primas y otras materias consumibles"
+    },
+    {
+      "label": "ACTIVO NO CORRIENTE 794.274 706.380 PATRIMONIO NETO",
+      "lado": null,
+      "page": 15,
+      "section": "CONSOLIDADO                                                        CONSOLIDADO",
+      "values": [
+        412.113
+      ],
+      "origen": "estado 15",
+      "glosa": "ACTIVO NO CORRIENTE 794.274 706.380 PATRIMONIO NETO"
+    },
+    {
+      "label": "Inmovilizado intangible Otros ingresos de explotación",
+      "lado": "revenue",
+      "page": 15,
+      "section": "CONSOLIDADO                                                        CONSOLIDADO",
+      "values": [
+        2.37
+      ],
+      "origen": "estado 15",
+      "glosa": "Inmovilizado intangible Otros ingresos de explotación"
+    },
+    {
+      "label": "4 365.263 316.116 Fondos propios",
+      "lado": null,
+      "page": 15,
+      "section": "CONSOLIDADO                                                        CONSOLIDADO",
+      "values": [
+        407.26
+      ],
+      "origen": "estado 15",
+      "glosa": "4 365.263 316.116 Fondos propios"
+    },
+    {
+      "label": "ACTIVO CORRIENTE 237.416 266.047 PASIVO CORRIENTE",
+      "lado": null,
+      "page": 15,
+      "section": "financieros / Pasivos por impuesto                                                Ingresos financieros / 16         25.888         20.036 / Periodificaciones a largo / 15         27.130         31.923",
+      "values": [
+        372.171
+      ],
+      "origen": "estado 19",
+      "glosa": "ACTIVO CORRIENTE 237.416 266.047 PASIVO CORRIENTE"
+    },
+    {
+      "label": "Existencias 9 2.442 2.402 Provisiones a corto plazo",
+      "lado": null,
+      "page": 15,
+      "section": "financieros / Pasivos por impuesto                                                Ingresos financieros / 16         25.888         20.036 / Periodificaciones a largo / 15         27.130         31.923",
+      "values": [
+        2.68
+      ],
+      "origen": "estado 19",
+      "glosa": "Existencias 9 2.442 2.402 Provisiones a corto plazo"
+    },
+    {
+      "label": "Importe plantilla inscribible LNFP",
+      "lado": "expense",
+      "page": 49,
+      "section": "OTRAS                                                                        GASTOS / CARGAS                                                                      PERSONAL / SOCIALES",
+      "values": [
+        213.926
+      ],
+      "origen": "estado 60",
+      "glosa": "Importe plantilla inscribible LNFP"
+    },
+    {
+      "label": "Jugadores y técnicos 1º equipo Fútbol 145.130 22.556 6.703 31.660 444",
+      "lado": "expense",
+      "page": 49,
+      "section": "OTRAS                                                                        GASTOS / CARGAS                                                                      PERSONAL / SOCIALES",
+      "values": [
+        206.574
+      ],
+      "origen": "estado 60",
+      "glosa": "Jugadores y técnicos 1º equipo Fútbol 145.130 22.556 6.703 31.660 444"
+    },
+    {
+      "label": "Importe plantilla no inscribible LNFP 26.416 2.101 853 -",
+      "lado": "expense",
+      "page": 49,
+      "section": "OTRAS                                                                        GASTOS / CARGAS                                                                      PERSONAL / SOCIALES",
+      "values": [
+        29.37
+      ],
+      "origen": "estado 60",
+      "glosa": "Importe plantilla no inscribible LNFP 26.416 2.101 853 -"
+    },
+    {
+      "label": "Jugadores y técnicos 2º equipo Fútbol 5.081 588 876 424 383 -",
+      "lado": "expense",
+      "page": 49,
+      "section": "OTRAS                                                                        GASTOS / CARGAS                                                                      PERSONAL / SOCIALES",
+      "values": [
+        7.352
+      ],
+      "origen": "estado 60",
+      "glosa": "Jugadores y técnicos 2º equipo Fútbol 5.081 588 876 424 383 -"
+    },
+    {
+      "label": "Jugadores y técnicos categorías GASTOS TOTALES PLANTILLA DEPORTIVA",
+      "lado": "expense",
+      "page": 49,
+      "section": "OTRAS                                                                        GASTOS / CARGAS                                                                      PERSONAL / SOCIALES",
+      "values": [
+        240.342
+      ],
+      "origen": "estado 60",
+      "glosa": "Jugadores y técnicos categorías GASTOS TOTALES PLANTILLA DEPORTIVA"
+    },
+    {
+      "label": "Provisiones a largo plazo 13.1 21.240 13.807 Otros gastos de gestión corriente",
+      "lado": "expense",
+      "page": 13,
+      "section": "diferido                                                     y legados recibidos / Otros gastos de explotación",
+      "values": [
+        -132.667
+      ],
+      "origen": "estado 3",
+      "glosa": "Provisiones a largo plazo 13.1 21.240 13.807 Otros gastos de gestión corriente"
+    },
+    {
+      "label": "Deudas a largo plazo",
+      "lado": "expense",
+      "page": 13,
+      "section": "diferido                                                     y legados recibidos / Otros gastos de explotación",
+      "values": [
+        173.148
+      ],
+      "origen": "estado 3",
+      "glosa": "Deudas a largo plazo"
+    }
+  ]
+}

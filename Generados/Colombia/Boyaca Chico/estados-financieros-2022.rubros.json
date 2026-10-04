@@ -1,0 +1,310 @@
+{
+  "md": "Clubes/Colombia/Boyaca Chico/estados-financieros-2022.md",
+  "pdf": "Clubes/Colombia/Boyaca Chico/estados-financieros-2022.pdf",
+  "club": "boyacachico-co",
+  "year": 2022,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:58:02.410Z",
+  "tieOuts": {
+    "cierran": 39,
+    "noCierran": 0
+  },
+  "warnings": [
+    "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": false,
+  "seleccion": {
+    "ok": true,
+    "filas": 26,
+    "notasUsadas": []
+  },
+  "ladoConocido": 26,
+  "rubros": [
+    {
+      "label": "Gastos de Personal",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 16: Gastos de administración",
+      "values": [
+        315808.044
+      ],
+      "origen": "estado 22",
+      "glosa": "Gastos de Personal"
+    },
+    {
+      "label": "Honorarios",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 16: Gastos de administración",
+      "values": [
+        199495.508
+      ],
+      "origen": "estado 22",
+      "glosa": "Honorarios"
+    },
+    {
+      "label": "Impuestos",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 16: Gastos de administración",
+      "values": [
+        36211.99
+      ],
+      "origen": "estado 22",
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Arrendamientos",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 16: Gastos de administración",
+      "values": [
+        33277.31
+      ],
+      "origen": "estado 22",
+      "glosa": "Arrendamientos"
+    },
+    {
+      "label": "Seguros",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 16: Gastos de administración",
+      "values": [
+        2553.707
+      ],
+      "origen": "estado 22",
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Servicios",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 16: Gastos de administración",
+      "values": [
+        17022.629
+      ],
+      "origen": "estado 22",
+      "glosa": "Servicios"
+    },
+    {
+      "label": "Gastos Legales",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 16: Gastos de administración",
+      "values": [
+        2208.887
+      ],
+      "origen": "estado 22",
+      "glosa": "Gastos Legales"
+    },
+    {
+      "label": "Mantenimiento y Reparaciones",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 16: Gastos de administración",
+      "values": [
+        3311.143
+      ],
+      "origen": "estado 22",
+      "glosa": "Mantenimiento y Reparaciones"
+    },
+    {
+      "label": "Gastos de Viaje",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 16: Gastos de administración",
+      "values": [
+        1216.8
+      ],
+      "origen": "estado 22",
+      "glosa": "Gastos de Viaje"
+    },
+    {
+      "label": "Depreciación",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 16: Gastos de administración",
+      "values": [
+        12531.863
+      ],
+      "origen": "estado 22",
+      "glosa": "Depreciación"
+    },
+    {
+      "label": "Diversos",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 16: Gastos de administración",
+      "values": [
+        4668
+      ],
+      "origen": "estado 22",
+      "glosa": "Diversos"
+    },
+    {
+      "label": "Ingresos por Derechos de Televisión",
+      "lado": "revenue",
+      "page": 9,
+      "section": "# NOTA 13: Ventas",
+      "values": [
+        4790.538116
+      ],
+      "origen": "estado 19",
+      "glosa": "Ingresos por Derechos de Televisión"
+    },
+    {
+      "label": "Ingresos por Auxilios Covid - Dimayor",
+      "lado": "revenue",
+      "page": 9,
+      "section": "# NOTA 13: Ventas",
+      "values": [
+        9.03
+      ],
+      "origen": "estado 19",
+      "glosa": "Ingresos por Auxilios Covid - Dimayor"
+    },
+    {
+      "label": "Ingresos por auxilio Hotelero - Dimayor",
+      "lado": "revenue",
+      "page": 9,
+      "section": "# NOTA 13: Ventas",
+      "values": [
+        227.339399
+      ],
+      "origen": "estado 19",
+      "glosa": "Ingresos por auxilio Hotelero - Dimayor"
+    },
+    {
+      "label": "Ingresos por auxilio de Transportes - Dimayor",
+      "lado": "revenue",
+      "page": 9,
+      "section": "# NOTA 13: Ventas",
+      "values": [
+        120.7977
+      ],
+      "origen": "estado 19",
+      "glosa": "Ingresos por auxilio de Transportes - Dimayor"
+    },
+    {
+      "label": "Ingresos por auxilio de Arbitraje - Dimayor",
+      "lado": "revenue",
+      "page": 9,
+      "section": "# NOTA 13: Ventas",
+      "values": [
+        50.3735
+      ],
+      "origen": "estado 19",
+      "glosa": "Ingresos por auxilio de Arbitraje - Dimayor"
+    },
+    {
+      "label": "Ventas por Auxilio de Logística - Dimayor",
+      "lado": "revenue",
+      "page": 9,
+      "section": "# NOTA 13: Ventas",
+      "values": [
+        19.5
+      ],
+      "origen": "estado 19",
+      "glosa": "Ventas por Auxilio de Logística - Dimayor"
+    },
+    {
+      "label": "Ingresos por Auxilio de Mejoramientos - Dimayor",
+      "lado": "revenue",
+      "page": 9,
+      "section": "# NOTA 13: Ventas",
+      "values": [
+        295.684837
+      ],
+      "origen": "estado 19",
+      "glosa": "Ingresos por Auxilio de Mejoramientos - Dimayor"
+    },
+    {
+      "label": "Ingresos por Patrocinios recibidos de terceros",
+      "lado": "revenue",
+      "page": 9,
+      "section": "# NOTA 13: Ventas",
+      "values": [
+        300
+      ],
+      "origen": "estado 19",
+      "glosa": "Ingresos por Patrocinios recibidos de terceros"
+    },
+    {
+      "label": "Costos de Personal y Jugadores",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 14: Costos de ventas",
+      "values": [
+        1352.25438
+      ],
+      "origen": "estado 20",
+      "glosa": "Costos de Personal y Jugadores"
+    },
+    {
+      "label": "Partidos y Actividades Deportivas",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 14: Costos de ventas",
+      "values": [
+        2507.73236
+      ],
+      "origen": "estado 20",
+      "glosa": "Partidos y Actividades Deportivas"
+    },
+    {
+      "label": "Honorarios y Arriendos",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 14: Costos de ventas",
+      "values": [
+        286.533061
+      ],
+      "origen": "estado 20",
+      "glosa": "Honorarios y Arriendos"
+    },
+    {
+      "label": "Subsidios Estatales PAEF",
+      "lado": "revenue",
+      "page": 10,
+      "section": "NOTA 15: Otros ingresos",
+      "values": [
+        57929.579
+      ],
+      "origen": "estado 21",
+      "glosa": "Subsidios Estatales PAEF"
+    },
+    {
+      "label": "Diversos",
+      "lado": "revenue",
+      "page": 10,
+      "section": "NOTA 15: Otros ingresos",
+      "values": [
+        4.514
+      ],
+      "origen": "estado 21",
+      "glosa": "Diversos"
+    },
+    {
+      "label": "Financieros",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 17: Otros Gastos",
+      "values": [
+        54278.918
+      ],
+      "origen": "estado 23",
+      "glosa": "Financieros"
+    },
+    {
+      "label": "Gastos diversos",
+      "lado": "expense",
+      "page": 10,
+      "section": "NOTA 17: Otros Gastos",
+      "values": [
+        30817.719
+      ],
+      "origen": "estado 23",
+      "glosa": "Gastos diversos"
+    }
+  ]
+}

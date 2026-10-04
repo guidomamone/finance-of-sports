@@ -1,0 +1,330 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.pdf",
+ "generado": "2026-10-03T19:56:45.693Z",
+ "frena": [],
+ "avisos": [],
+ "ejercicio": {
+  "clubId": "aellarissa-gr",
+  "year": 2016,
+  "cierre": "2016-06-30",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Κύκλος εργασιών (καθαρός)",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 0.596069,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Λοιπά συνήθη έσοδα",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.374833,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Λοιπά έσοδα και κέρδη",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.030362,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 1,
+    "_conf": 0.99
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Κόστος πωλήσεων",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -0.726277,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Έξοδα διοίκησης",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.300528,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Έξοδα διάθεσης",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.225396,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Λοιπά έξοδα και ζημιές",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -0.099591,
+    "disclosureLevel": "aggregated",
+    "_pag": 3,
+    "_escalon": 1,
+    "_conf": 0.95
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "EUR",
+   "fxRef": "EUR@2016-06-30",
+   "sourceId": "aellarissa-gr-ael-notes-elp-2015-16",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -0.002402,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+     "value": -0.002402
+    },
+    {
+     "label": "Φόροι εισοδήματος",
+     "value": 0
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Κύκλος εργασιών (καθαρός)",
+     "lado": "revenue",
+     "importe": 0.596069,
+     "motivo": "el documento no desglosa este renglón"
+    },
+    {
+     "renglon": "Κόστος πωλήσεων",
+     "lado": "expense",
+     "importe": 0.726277,
+     "motivo": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 1.001265,
+   "officialTotalExpenses": 1.351793,
+   "officialPAT": -0.352929
+  },
+  "source": {
+   "id": "aellarissa-gr-ael-notes-elp-2015-16",
+   "clubId": "aellarissa-gr",
+   "title": "Athlitiki Enosi Larissas AEL P.A.E. — AEL_notes_ELP_2015-16 (ejercicio 2016)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2016-06-30",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "temporada"
+ },
+ "clubId": "aellarissa-gr",
+ "year": 2016,
+ "ajustes": null,
+ "seleccion": {
+  "filas": 9,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "page": 3,
+   "native": 0.596069,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.596069,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.596069
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "page": 3,
+   "native": 0.374833,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.374833,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.374833
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "page": 3,
+   "native": 0.030362,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.030362,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.030362
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "page": 3,
+   "native": 0.726277,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.726277,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)",
+   "destino": "expense",
+   "amountNative": -0.726277
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "page": 3,
+   "native": 0.300528,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.300528,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.300528
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "page": 3,
+   "native": 0.225396,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.225396,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-03: acepta las 7 categorías de AEL (decisiones 1-7)",
+   "destino": "expense",
+   "amountNative": -0.225396
+  },
+  {
+   "label": "Λοιπά έξοδα και ζημιές",
+   "page": 3,
+   "native": 0.099591,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.099591,
+   "cat": "other_expenses",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.099591
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "page": null,
+   "native": -0.002402,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Φόροι εισοδήματος",
+   "page": null,
+   "native": 0,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 1.001264,
+  "expSum": -1.351792,
+  "officialTotalRevenue": 1.001265,
+  "officialTotalExpenses": 1.351793,
+  "officialPAT": -0.352929,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -0.352929,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 1.001265
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 1.351793
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "EUR@2016-06-30",
+  "fx": 0.900739,
+  "source": "market_close",
+  "label": "Tipo de referencia del Banco Central Europeo al 2016-06-30"
+ },
+ "liga": {
+  "valor": "gr-superleague2",
+  "fuente": "roster cacheado de \"2015–16 Football League (Greece)\" (tools/club-league-reference/gr.json), coincidencia única por palabras \"AEL\" = \"AEL Larissa\"",
+  "estado": "ok"
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 3,
+  "lineasGasto": 4,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

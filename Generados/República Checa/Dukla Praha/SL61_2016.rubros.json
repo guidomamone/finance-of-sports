@@ -1,0 +1,104 @@
+{
+ "md": "Clubes/República Checa/Dukla Praha/SL61_2016.md",
+ "pdf": "Clubes/República Checa/Dukla Praha/SL61_2016.pdf",
+ "club": "dukla-praha",
+ "year": 2016,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:43.169Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 9,
+  "notasUsadas": []
+ },
+ "ladoConocido": 4,
+ "rubros": [
+  {
+   "label": "Stroje a zařízení",
+   "lado": null,
+   "page": 23,
+   "section": "# 3 DOPLŇUJÍCÍ ÚDAJE K ROZVAZE A VÝKAZU ZISKU A ZTRÁTY / # 3.1 Pohledávky za upsaný vlastní kapitál / # 3.2 Dlouhodobý majetek / # 3.2.1 Dlouhodobý nehmotný majetek / # 3.2.2 Dlouhodobý hmotný majetek",
+   "values": [
+    0.010878
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Dopravní prostředky",
+   "lado": null,
+   "page": 23,
+   "section": "# 3 DOPLŇUJÍCÍ ÚDAJE K ROZVAZE A VÝKAZU ZISKU A ZTRÁTY / # 3.1 Pohledávky za upsaný vlastní kapitál / # 3.2 Dlouhodobý majetek / # 3.2.1 Dlouhodobý nehmotný majetek / # 3.2.2 Dlouhodobý hmotný majetek",
+   "values": [
+    0.004867
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Inventář",
+   "lado": null,
+   "page": 23,
+   "section": "# 3 DOPLŇUJÍCÍ ÚDAJE K ROZVAZE A VÝKAZU ZISKU A ZTRÁTY / # 3.1 Pohledávky za upsaný vlastní kapitál / # 3.2 Dlouhodobý majetek / # 3.2.1 Dlouhodobý nehmotný majetek / # 3.2.2 Dlouhodobý hmotný majetek",
+   "values": [
+    0.001273
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Jiný DHM – Umělecká díla a sbírky",
+   "lado": null,
+   "page": 23,
+   "section": "# 3 DOPLŇUJÍCÍ ÚDAJE K ROZVAZE A VÝKAZU ZISKU A ZTRÁTY / # 3.1 Pohledávky za upsaný vlastní kapitál / # 3.2 Dlouhodobý majetek / # 3.2.1 Dlouhodobý nehmotný majetek / # 3.2.2 Dlouhodobý hmotný majetek",
+   "values": [
+    0.000542
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Samostatné movité věci",
+   "lado": "expense",
+   "page": 23,
+   "section": "Odpisy dlouhodobého hmotného majetku zaúčtované do nákladů",
+   "values": [
+    0.001045
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Stroje a zařízení",
+   "lado": "expense",
+   "page": 23,
+   "section": "Odpisy dlouhodobého hmotného majetku zaúčtované do nákladů",
+   "values": [
+    0.000532
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Dopravní prostředky - ostatní",
+   "lado": "expense",
+   "page": 23,
+   "section": "Odpisy dlouhodobého hmotného majetku zaúčtované do nákladů",
+   "values": [
+    0.000449
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Inventář",
+   "lado": "expense",
+   "page": 23,
+   "section": "Odpisy dlouhodobého hmotného majetku zaúčtované do nákladů",
+   "values": [
+    0.000064
+   ],
+   "origen": "estado 20"
+  }
+ ]
+}

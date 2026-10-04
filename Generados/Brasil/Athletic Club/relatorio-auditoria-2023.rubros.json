@@ -1,0 +1,799 @@
+{
+ "md": "Clubes/Brasil/Athletic Club/relatorio-auditoria-2023.md",
+ "pdf": "Clubes/Brasil/Athletic Club/relatorio-auditoria-2023.pdf",
+ "club": "athletic-club",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:51:25.936Z",
+ "tieOuts": {
+  "cierran": 20,
+  "noCierran": 10
+ },
+ "warnings": [
+  "10 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 75,
+  "notasUsadas": [
+   "30"
+  ]
+ },
+ "ladoConocido": 56,
+ "rubros": [
+  {
+   "label": "Receita c/ Venda Loja Estádio",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 16. Receita Operacional Liquida",
+   "values": [
+    120.945
+   ],
+   "origen": "nota 30 (ancla 3)",
+   "ancla": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    7456.58
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Receita Venda de Jogadores",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 16. Receita Operacional Liquida",
+   "values": [
+    150
+   ],
+   "origen": "nota 30 (ancla 3)",
+   "ancla": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "label": "Receita Escolinha",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 16. Receita Operacional Liquida",
+   "values": [
+    161.57
+   ],
+   "origen": "nota 30 (ancla 3)",
+   "ancla": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "label": "Receitas de Mensalidades Sócio Torcedor",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 16. Receita Operacional Liquida",
+   "values": [
+    6.625
+   ],
+   "origen": "nota 30 (ancla 3)",
+   "ancla": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "label": "Receita de Entradas Eventos Esportivos - Ingressos",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 16. Receita Operacional Liquida",
+   "values": [
+    609.659
+   ],
+   "origen": "nota 30 (ancla 3)",
+   "ancla": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "label": "Receita com Publicidade",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 16. Receita Operacional Liquida",
+   "values": [
+    18.815
+   ],
+   "origen": "nota 30 (ancla 3)",
+   "ancla": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "label": "Receita Premiação Confederação/Federação de Futebol",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 16. Receita Operacional Liquida",
+   "values": [
+    2745.382
+   ],
+   "origen": "nota 30 (ancla 3)",
+   "ancla": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "label": "Receita de Patrocínios",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 16. Receita Operacional Liquida",
+   "values": [
+    3568.084
+   ],
+   "origen": "nota 30 (ancla 3)",
+   "ancla": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "label": "Doações Recebidas",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 16. Receita Operacional Liquida",
+   "values": [
+    15
+   ],
+   "origen": "nota 30 (ancla 3)",
+   "ancla": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "label": "Receita de Locação Espaço",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 16. Receita Operacional Liquida",
+   "values": [
+    30.5
+   ],
+   "origen": "nota 30 (ancla 3)",
+   "ancla": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "label": "Gratificações de Intermediações",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 16. Receita Operacional Liquida",
+   "values": [
+    30
+   ],
+   "origen": "nota 30 (ancla 3)",
+   "ancla": "RECEITA OPERACIONAL BRUTA"
+  },
+  {
+   "label": "VENDAS LOJA",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    120.945
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "VENDA DE ATLETAS",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    150
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ESCOLINHA",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    161.57
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "MENSALIDADES SÓCIO TORCEDOR",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    6.625
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ENTRADAS DE EVENTOS ESPORTIVOS",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    609.659
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "PUBLICIDADE",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    18.815
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "PREMIAÇÕES",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    2745.382
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "PATROCINIOS",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    3568.084
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "LOCAÇÃO DE ESPAÇO",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    30.5
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "GRATIFICAÇÕES E INTERMEDIAÇÕES",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    30
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "DEDUÇÕES",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -371.483
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "(-) IMPOSTO TEF 5%",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -371.483
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "RECEITA OPERACIONAL LIQUIDA",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    7085.097
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "DESPESAS OPERACIONAIS",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -7803.501
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "DESPESAS COM PESSOAL",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -1651.724
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "MANUTENÇAO E CONSERVAÇÃO",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -73.094
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ALUGUEL",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -287.805
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ALIMENTAÇÃO / VIAGENS /COMBUSTIVEL E EVENTOS",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -1792.313
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "SERVIÇOS DE TERCEIROS",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -4404.326
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "OUTRAS DESPESAS",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -1228.796
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "DESPESAS COM IMPOSTOS E TAXAS",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -417.069
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "COMIÇÃO DE INTERMEDIAÇÕES",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -621.125
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "AMORTIZAÇAO DIREITO ECONOMICO DE ATLETAS",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -219.902
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "PREMIAÇÕESS",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -914.004
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "DIREITO DE IMAGEM",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -187.141
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "DOAÇÕES EFETUADAS",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -102.894
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "INDEDNIZAAÇÕES PROCESSUAIS",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -101.32
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "(-) CUSTO FORMAÇÃO DE ATLETAS",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    4198.012
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "RECEITAS FINANCEIRAS",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    1.496
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "RENDIMENTOS S/ APLICAÇÃO FINANCEIRA",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    0.086
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "DESCONTOS OBTIDOS",
+   "lado": null,
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    1.41
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "DESPESAS FINANCEIRAS",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -328.481
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "ENCARGOS E JUROS DE MORA",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -301.65
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "DESPESAS BANCARIAS",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Demonstração de Resultado do Exercício / ### Em 31 de Dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -26.831
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Reultado Abrangente do Período",
+   "lado": null,
+   "page": 12,
+   "section": "# Demonstração dos Resultados Abrangentes / ### Em 31 de dezembro de 2023 e 2022 / (Expresso em reais)",
+   "values": [
+    -1.045389
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "DESPESAS COM PESSOAL",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    -1.651724
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "MANUTENÇAO E CONSERVAÇÃO",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    -0.073094
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "ALUGUEL",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    -0.287805
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "ALIMENTAÇÃO / VIAGENS/COMBUSTIVEL E EVENTOS",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    -1.792313
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "SERVIÇOS DE TERCEIROS",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    -4.404326
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "OUTRAS DESPESAS",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    -1.228796
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "DESPESAS COM IMPOSTOS E TAXAS",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    -0.417069
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "COMIÇÃO DE INTERMEDIAÇÕES",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    -0.621125
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "AMORTIZAÇAO DIREITO ECONOMICO DE ATLETAS",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    -0.219902
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "PREMIAÇÕESS",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    -0.914004
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "DIREITO DE IMAGEM",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    -0.187141
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "DOAÇÕES EFETUADAS",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    -0.102894
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "INDEDNIZAAÇÕES PROCESSUAIS",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    -0.10132
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "(-) CUSTOS FORMAÇÃO DE ATLETAS",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 17. (Despesas) por natureza",
+   "values": [
+    4.198012
+   ],
+   "origen": "estado 31"
+  },
+  {
+   "label": "Valor Patrocínio Papelaria Leblon Ltda - Conforme Contrato R$",
+   "lado": "revenue",
+   "page": 24,
+   "section": "2135 - Receita de Patrocínios",
+   "values": [
+    7.2
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "parcela R$",
+   "lado": "revenue",
+   "page": 24,
+   "section": "2135 - Receita de Patrocínios",
+   "values": [
+    0.6
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "saldo R$",
+   "lado": "revenue",
+   "page": 24,
+   "section": "2135 - Receita de Patrocínios",
+   "values": [
+    4.8
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "PATROCÍNIO CONECTA DE SAO JOÃO DEL REI Conforme Contrato R$",
+   "lado": "revenue",
+   "page": 25,
+   "section": "``` / 2135 - Receita de Patrocínios",
+   "values": [
+    1200
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "parcela R$",
+   "lado": "revenue",
+   "page": 25,
+   "section": "``` / 2135 - Receita de Patrocínios",
+   "values": [
+    584.57668
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "parcela R$",
+   "lado": "revenue",
+   "page": 25,
+   "section": "``` / 2135 - Receita de Patrocínios",
+   "values": [
+    62.66666
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "saldo R$",
+   "lado": "revenue",
+   "page": 25,
+   "section": "``` / 2135 - Receita de Patrocínios",
+   "values": [
+    490.09
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Encargos e juros de mora",
+   "lado": "expense",
+   "page": 34,
+   "section": "",
+   "values": [
+    -0.31165
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Despesas bancárias",
+   "lado": "expense",
+   "page": 34,
+   "section": "",
+   "values": [
+    -0.026831
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Referente Novawave Technology N.V. Conforme Contrato R$",
+   "lado": "revenue",
+   "page": 25,
+   "section": "2135 - Receita de Patrocínios",
+   "values": [
+    360
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "parcela R$",
+   "lado": "revenue",
+   "page": 25,
+   "section": "2135 - Receita de Patrocínios",
+   "values": [
+    90
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "saldo R$",
+   "lado": "revenue",
+   "page": 25,
+   "section": "2135 - Receita de Patrocínios",
+   "values": [
+    270
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "PATROCÍNIOS Asproauto Proteção Veicular Conforme Contrato R$",
+   "lado": "revenue",
+   "page": 25,
+   "section": "2135 - Receita de Patrocínios / PATROCÍNIOS SICREDI LIBERAÇÃO DE CRÉDITO Conforme Contrato     R$ 800.000,00 / parcela                                                    23750 / saldo                                                      R$ 776.250,00 / 2135 - Receita de Patrocínios",
+   "values": [
+    36
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "parcela R$",
+   "lado": "revenue",
+   "page": 25,
+   "section": "2135 - Receita de Patrocínios / PATROCÍNIOS SICREDI LIBERAÇÃO DE CRÉDITO Conforme Contrato     R$ 800.000,00 / parcela                                                    23750 / saldo                                                      R$ 776.250,00 / 2135 - Receita de Patrocínios",
+   "values": [
+    3
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "saldo R$",
+   "lado": "revenue",
+   "page": 25,
+   "section": "2135 - Receita de Patrocínios / PATROCÍNIOS SICREDI LIBERAÇÃO DE CRÉDITO Conforme Contrato     R$ 800.000,00 / parcela                                                    23750 / saldo                                                      R$ 776.250,00 / 2135 - Receita de Patrocínios",
+   "values": [
+    33
+   ],
+   "origen": "estado 16"
+  }
+ ]
+}

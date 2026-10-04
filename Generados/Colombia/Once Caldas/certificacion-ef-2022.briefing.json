@@ -1,0 +1,36 @@
+{
+  "club": "oncecaldas",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Once Caldas/certificacion-ef-2022.md",
+  "generatedAt": "2026-09-30T14:11:07.268Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 0,
+  "relevantTableCount": 0,
+  "tables": [],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver sus RELEVANT_KEYWORDS)."
+  },
+  "league": {
+    "pais": "co",
+    "query": "Once Caldas",
+    "matches": [
+      {
+        "leagueId": "co-primeraA",
+        "year": "2022",
+        "matchedName": "Once Caldas",
+        "wikipediaPage": "2022 Liga DIMAYOR"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": []
+}

@@ -1,0 +1,3519 @@
+{
+  "club": "udechile-cl",
+  "year": 2016,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2016.md",
+  "generatedAt": "2026-09-30T21:57:23.676Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 631,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 72,
+  "relevantTableCount": 11,
+  "tables": [
+    {
+      "page": 5,
+      "section": "AZUL AZUL S.A. Y FILIAL / DICIEMBRE DE 2015 (RE-EXPRESADO)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Inventarios",
+          "values": [
+            "18.385",
+            "10.909",
+            "35.884"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos por impuestos corrientes",
+          "values": [
+            "668.505",
+            "580.330",
+            "650.078"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Activos no corrientes o grupos de activos / 106.378         43.722         30.500 / para su disposición clasificados como / mantenidos para la venta / Activos no corrientes",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros activos financieros no corrientes 9",
+          "values": [
+            "332.936",
+            "310.373"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros activos no financieros no corrientes",
+          "values": [
+            "953.936",
+            "1.002.856",
+            "1.051.785"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos intangibles distintos de la plusvalía",
+          "values": [
+            "13.965.102",
+            "10.916.296",
+            "11.923.956"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propiedades, planta y equipo",
+          "values": [
+            "2.965.012",
+            "3.435.931",
+            "3.435.518"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos por impuestos diferidos",
+          "values": [
+            "6.511.757",
+            "4.733.782",
+            "3.220.238"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de activos no corrientes",
+          "values": [
+            "24.395.807",
+            "20.421.801",
+            "19.941.870"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "AZUL AZUL S.A. Y FILIAL / DICIEMBRE DE 2015 (RE – EXPRESADO)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "como mantenidos para la venta",
+          "values": [
+            "9.639.397",
+            "4.902.122",
+            "4.070.399"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivos corrientes totales",
+          "values": [
+            "9.639.397",
+            "4.902.122",
+            "4.070.399"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Pasivos no corrientes / Otros pasivos no financieros no",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "corrientes",
+          "values": [
+            "4.693.171",
+            "4.627.193",
+            "4.684.915"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras provisiones a largo plazo",
+          "values": [
+            "17.885",
+            "17.885",
+            "17.885"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivo por impuestos diferidos",
+          "values": [
+            "1.712.341",
+            "1.870.547",
+            "1.856.588"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total de pasivos no corrientes",
+          "values": [
+            "7.431.381",
+            "7.083.752",
+            "6.559.388"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total pasivos",
+          "values": [
+            "17.070.778",
+            "11.985.874",
+            "10.629.787"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Patrimonio / Ganancias (pérdidas)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "acumuladas",
+          "values": [
+            "-6.482.189",
+            "-3.492.877",
+            "-1.048.426"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Primas de emisión",
+          "values": [
+            "74.820",
+            "2.974.773",
+            "2.974.773"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras reservas",
+          "values": [
+            "291.800",
+            "1.584.873",
+            "1.584.873"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Patrimonio atribuible a los",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Patrimonio total",
+          "values": [
+            "12.469.326",
+            "13.461.971",
+            "26.536.209"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de patrimonio y pasivos",
+          "values": [
+            "29.540.105",
+            "25.447.844",
+            "26.536.209"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR EL PERIODO DE 1 DE ENERO AL 31 DE DICIEMBRE DE 2016 Y 2015 (RE-EXPRESADO)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos de actividades ordinarias",
+          "values": [
+            "12.792.767",
+            "13.669.430"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costo de ventas",
+          "values": [
+            "-15.064.181",
+            "-14.039.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ganancia bruta",
+          "values": [
+            "-2.271.414",
+            "-370.223"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 7,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo / amortizado",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gasto de administración",
+          "values": [
+            "-3.773.375",
+            "-3.072.017"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos financieros",
+          "values": [
+            "32.295",
+            "37.125"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 7,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Costos financieros",
+          "values": [
+            "-423.329",
+            "-125.475"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultados por unidades de reajuste",
+          "values": [
+            "-182.747",
+            "-30.926"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ganancia (pérdida), antes de impuestos",
+          "values": [
+            "-6.583.157",
+            "-3.561.516"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gasto (utilidad) por impuestos a las ganancias",
+          "values": [
+            "2.079.405",
+            "1.172.486"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ganancia (pérdida) procedente de operaciones continuadas",
+          "values": [
+            "-4.503.751",
+            "-2.389.030"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS (CONTINUACION) / POR EL PERIODO DE 1 DE ENERO AL 31 DE DICIEMBRE DE 2016 Y 2015 (RE-EXPRESADO)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Resultado integral atribuible a",
+          "values": [
+            "-4.503.751",
+            "-2.389.030"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado integral atribuible a los propietarios de la controladora",
+          "values": [
+            "-4.503.751",
+            "-2.389.030"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE FLUJOS DE EFECTIVO CONSOLIDADOS (DIRECTO) / POR LOS PERIODOS TERMINADOS EL 31 DE DICIEMBRE 2016 Y 2015",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pagos a proveedores por el suministro de bienes y servicios",
+          "values": [
+            "-9.054.374",
+            "-9.338.054"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagos a y por cuenta de los empleados",
+          "values": [
+            "-6.975.557",
+            "-6.671.291"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros cobros por actividades de operación",
+          "values": [
+            "111.317",
+            "540.442"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "-6.355.229          -2.037.786 / de inversión / Flujos de efectivo procedentes de (utilizados en) actividades / -6.355.229          -2.037.786 / de inversión",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Importes provenientes de la emisión de acciones",
+          "values": [
+            "3.289.739"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Préstamos entidades relacionadas",
+          "values": [
+            "4.614.893"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pagos de préstamos",
+          "values": [
+            "-411.197",
+            "-447.930"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "316.138"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE CAMBIOS EN EL PATRIMONIO NETO CONSOLIDADOS / POR EL PERIODO TERMINADO DEL 1 DE ENERO AL 31 DE DICIEMBRE DE 2015 (RE-EXPRESADO)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total de cambios en patrimonio -2.389.030 -2.389.030",
+          "values": [
+            "-2.389.030"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo Final Período Actual 31/12/2015 12.395.202 2.974.773 1.584.873 -3.492.877 13.461.971",
+          "values": [
+            "13.461.971"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "M$             M$                M$           M$              M$                  M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Efectivo y Equivalentes al Efectivo",
+          "values": [
+            "700.823",
+            "700.823",
+            "160.523",
+            "160.523"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros activos no financieros corrientes",
+          "values": [
+            "185.337",
+            "185.337",
+            "173.921",
+            "173.921"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Deudores comerciales y otras cuentas por cobrar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "corrientes",
+          "values": [
+            "3.445.432",
+            "3.445.432",
+            "5.497.867",
+            "5.497.867"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por Cobrar a Entidades Relacionadas, Corriente",
+          "values": [
+            "59.491",
+            "59.491",
+            "45.566",
+            "45.566"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inventarios",
+          "values": [
+            "10.909",
+            "10.909",
+            "35.884",
+            "35.884"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos por impuestos corrientes",
+          "values": [
+            "580.330",
+            "580.330",
+            "650.078",
+            "650.078"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos corrientes distintos de los mantenidos para la venta",
+          "values": [
+            "4.982.322",
+            "4.982.322",
+            "6.563.839",
+            "6.563.839"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Activos no corrientes o grupos de activos para su / disposición",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "clasificados como mantenidos para la venta",
+          "values": [
+            "43.722",
+            "43.722",
+            "30.500",
+            "30.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos corrientes totales",
+          "values": [
+            "5.026.044",
+            "5.026.044",
+            "6.594.339",
+            "6.594.339"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Activos no corrientes",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros activos financieros no corrientes",
+          "values": [
+            "332.936",
+            "332.936",
+            "310.373",
+            "310.373"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros activos no financieros no corrientes",
+          "values": [
+            "1.002.856",
+            "1.002.856",
+            "1.051.785",
+            "1.051.785"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos intangibles distintos de la plusvalía",
+          "values": [
+            "10.916.296",
+            "10.916.296",
+            "11.923.956",
+            "11.923.956"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propiedades, Planta y Equipo",
+          "values": [
+            "3.435.931",
+            "3.435.931",
+            "3.435.518",
+            "3.435.518"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos por impuestos diferidos",
+          "values": [
+            "5.309.884",
+            "4.733.782",
+            "-576.102",
+            "2.905.629",
+            "3.220.238",
+            "314.609"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de activos no corrientes",
+          "values": [
+            "20.997.903",
+            "20.421.801",
+            "-576.102",
+            "19.627.261",
+            "19.941.870",
+            "314.609"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "31.12.2015                                          01.01.2015 / Cuentas por pagar comerciales y otras cuentas por",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "pagar",
+          "values": [
+            "4.448.454",
+            "4.448.454",
+            "3.500.207",
+            "3.500.207"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivos por Impuestos corrientes",
+          "values": [
+            "327.499",
+            "327.499",
+            "383.467",
+            "383.467"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Beneficios a los empleadoss",
+          "values": [
+            "126.169",
+            "126.169",
+            "186.725",
+            "186.725"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivos corrientes totales",
+          "values": [
+            "4.902.122",
+            "4.902.122",
+            "4.070.399",
+            "4.070.399"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "Pasivos no Corrientes / Cuentas por pagar comerciales y otras cuentas por",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros pasivos no financieros no corrientes",
+          "values": [
+            "4.627.193",
+            "4.627.193",
+            "4.684.915",
+            "4.684.915"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras provisiones no corrientes",
+          "values": [
+            "17.885",
+            "17.885",
+            "17.885",
+            "17.885"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivo por impuestos diferidos",
+          "values": [
+            "921.056",
+            "1.870.547",
+            "949.491",
+            "97.845",
+            "1.856.588",
+            "1.758.743"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de pasivos no corrientes",
+          "values": [
+            "6.134.261",
+            "7.083.752",
+            "949.491",
+            "4.800.645",
+            "6.559.388",
+            "1.758.743"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total pasivos",
+          "values": [
+            "11.036.383",
+            "11.985.874",
+            "949.491",
+            "8.871.044",
+            "10.629.787",
+            "1.758.743"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "Patrimonio",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Capital Emitido",
+          "values": [
+            "12.395.202",
+            "12.395.202",
+            "12.395.202",
+            "12.395.202"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ganancias (pérdidas) acumuladas",
+          "values": [
+            "-1.967.284",
+            "-3.492.877",
+            "-1.525.593",
+            "395.708",
+            "-1.048.426",
+            "-1.444.134"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Primas de Emisión",
+          "values": [
+            "2.974.773",
+            "2.974.773",
+            "2.974.773",
+            "2.974.773"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras reservas",
+          "values": [
+            "1.584.873",
+            "1.584.873",
+            "1.584.873",
+            "1.584.873"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimonio atribuible a los propietarios de la",
+          "values": [
+            "14.987.564",
+            "13.461.971",
+            "-1.525.593",
+            "17.350.556",
+            "15.906.422",
+            "-1.444.134"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Acumulado / Acumulado Inicial                                                  Diferencias / Reexpresado / 31.12.2015                     31.12.2015                  31.12.2015 / Nota               M$                         M$                          M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos de actividades ordinarias",
+          "values": [
+            "13.669.430",
+            "13.669.430"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costo de ventas",
+          "values": [
+            "-14.039.653",
+            "-14.039.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ganancia bruta",
+          "values": [
+            "-370.223",
+            "-370.223"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gasto de administración",
+          "values": [
+            "-3.072.017",
+            "-3.072.017"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos financieros",
+          "values": [
+            "37.125",
+            "37.125"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Otros ganancias o pérdidas",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Costos financieros",
+          "values": [
+            "-125.475",
+            "-125.475"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultados por unidades de reajuste",
+          "values": [
+            "-30.926",
+            "-30.926"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ganancia (pérdida), antes de impuestos",
+          "values": [
+            "-3.561.516",
+            "-3.561.516"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Ganancia (pérdida), atribuible a participaciones no / controladoras / - / Resumen de ajustes contables / Resumen Efectos Acumulados 2015                   Resumen Efectos Acumulados 2014",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Activos por Impuestos Diferidos A",
+          "values": [
+            "5.309.884",
+            "4.733.782",
+            "-576.102",
+            "2.905.629",
+            "3.220.238",
+            "314.609"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivos por Impuestos Diferidos B",
+          "values": [
+            "921.056",
+            "1.870.547",
+            "-949.491",
+            "97.845",
+            "1.856.588",
+            "-1.758.743"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Efectos Acumulados                     Efectos del Ejercicio / Efecto en / Rubro de",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Conceptos Balance",
+          "values": [
+            "2.015",
+            "2.014",
+            "2.015"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A Activos no corrientes",
+          "values": [
+            "-576.102",
+            "314.609",
+            "-1.020.908"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B Pasivos no corrientes",
+          "values": [
+            "-949.491",
+            "-1.758.743",
+            "809.252"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "01.01.2015           31.12.2015 / Monto Ajuste         Monto Ajuste / Conceptos de Diferencias Temporarias            $                    $",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Provisión deudores incobrables",
+          "values": [
+            "2.461",
+            "41.507"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos percibidos por adelantados",
+          "values": [
+            "11.563",
+            "-50.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisión vacaciones",
+          "values": [
+            "15.119",
+            "10.043"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pérdida Tributaria",
+          "values": [
+            "-654.384",
+            "180.669"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propiedad, Planta y Equipo",
+          "values": [
+            "107.458",
+            "-28.294"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pases de Jugadores",
+          "values": [
+            "111.592",
+            "625.055"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "Provisión reposición Propiedad, Planta y",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Equipo",
+          "values": [
+            "4.024",
+            "194.155"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda de Tesorería",
+          "values": [
+            "1.257.904",
+            "-12.317"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Concesión",
+          "values": [
+            "-540.927",
+            "74.449"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "Activo Disponible para la venta                          -200                  0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Impuestos Diferidos de Activos",
+          "values": [
+            "314.607",
+            "1.034.868"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Concesión",
+          "values": [
+            "1.856.588",
+            "715.708"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pago Deuda Tesorería",
+          "values": [
+            "(97.845)",
+            "107.503"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 51,
+      "section": "4. EFECTIVO Y EQUIVALENTE DE EFECTIVO / 5. OTROS ACTIVOS NO FINANCIEROS CORRIENTES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Garantía de arriendo",
+          "values": [
+            "41.800",
+            "41.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Gastos pagados por anticipado",
+          "values": [
+            "204.774",
+            "90.512"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales",
+          "values": [
+            "295.913",
+            "185.337"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 52,
+      "section": "6. DEUDORES COMERCIALES Y OTRAS CUENTAS POR COBRAR / M$                    M$                 M$                 M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo Inicial",
+          "values": [
+            "202.202",
+            "164.043"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento de provisiones",
+          "values": [
+            "103.784",
+            "38.159"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 54,
+      "section": "6. DEUDORES COMERCIALES Y OTRAS CUENTAS POR COBRAR / CARTERA NO SECURITIZADA                                          CARTERA SECURITIZADA / M$                            M$            M$                                          M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1-30 días 32.429 0 0 0 0 0",
+          "values": [
+            "32.429"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31-60 días 50.792 0 0 0 0 0",
+          "values": [
+            "50.792"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "61-90 días 50.380 0 0 0 0 0",
+          "values": [
+            "50.380"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "91-120 días 50.380 0 0 0 0 0",
+          "values": [
+            "50.380"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "121-150 días 49.379 0 0 0 0 0",
+          "values": [
+            "49.379"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "151-180 días 157.420 0 0 0 0 0",
+          "values": [
+            "157.420"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 57,
+      "section": "8. ACTIVOS POR IMPUESTOS CORRIENTES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros Impuestos Por Recuperar",
+          "values": [
+            "2.149",
+            "2.146"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "668.504",
+            "580.330"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 58,
+      "section": "11. ACTIVOS INTANGIBLES DISTINTOS A LA PLUSVALIA / M$            M$              M$         M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Valor bruto",
+          "values": [
+            "9.298.423",
+            "7.563.558",
+            "103.373",
+            "16.965.354"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización acumulada",
+          "values": [
+            "-2.628.977",
+            "-3.385.641",
+            "-34.440",
+            "-6.049.058"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo neto al",
+          "values": [
+            "31.12.2015",
+            "6.669.446",
+            "4.177.917",
+            "68.933",
+            "10.916.296"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 58,
+      "section": "Valores al 31 de Diciembre de 2016",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Valor bruto",
+          "values": [
+            "9.298.423",
+            "14.757.241",
+            "117.895",
+            "24.173.559"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización acumulada",
+          "values": [
+            "-2.939.183",
+            "-7.229.255",
+            "-40.019",
+            "-10.208.457"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo neto al",
+          "values": [
+            "31.12.2016",
+            "6.359.240",
+            "7.527.986",
+            "77.876",
+            "13.965.102"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 59,
+      "section": "11. ACTIVOS INTANGIBLES DISTINTOS A LA PLUSVALIA / M$            M$               M$        M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo al",
+          "values": [
+            "31.12.2014",
+            "6.979.653",
+            "4.908.282",
+            "36.021",
+            "11.923.956"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiciones",
+          "values": [
+            "2.725.089",
+            "38.418",
+            "2.763.507"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 59,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bajas o ventas 0 -5.466.522",
+          "values": [
+            "-5.466.522"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por amortización",
+          "values": [
+            "-310.207",
+            "-2.699.179",
+            "-5.506",
+            "-3.014.892"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bajas de amortización Acumulada 0 4.710.247",
+          "values": [
+            "4.710.247"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 59,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo al",
+          "values": [
+            "31.12.2015",
+            "6.669.446",
+            "4.177.917",
+            "68.933",
+            "10.916.296"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiciones",
+          "values": [
+            "7.738.559",
+            "14.632",
+            "7.753.191"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 59,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bajas o ventas 0 -544.876",
+          "values": [
+            "-544.876"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por amortización",
+          "values": [
+            "-310.206",
+            "-4.094.686",
+            "-5.689",
+            "-4.410.581"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 62,
+      "section": "11. ACTIVOS INTANGIBLES DISTINTOS A LA PLUSVALIA / M$               M$            M$          M$          M$             M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2017 6 882.565 -458.089 74.288 -293.804",
+          "values": [
+            "204.960"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2018 20 2.937.708 -2.916.973 6.196.867 0",
+          "values": [
+            "6.217.602"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2019 5 0 -224.177 1.300.286 0",
+          "values": [
+            "1.076.109"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2020 1 0 -3.989 33.304 0",
+          "values": [
+            "29.315"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "32 4.177.917 -4.094.684 7.738.557 -293.804",
+          "values": [
+            "7.527.986"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 62,
+      "section": "M$               M$            M$          M$          M$             M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2016 8 1.145.872 -892.864 118.368 -13.733",
+          "values": [
+            "357.643"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2017 7 1.284.961 -422.525 544.877 -524.748",
+          "values": [
+            "882.565"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2018 y posteriores 11 1.891.063 -763.019 1.809.665 0",
+          "values": [
+            "2.937.709"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 66,
+      "section": "12. ARRENDAMIENTOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Beatriz N°100 Local 1, Comuna de Providencia, el pago corresponde a UF",
+          "values": [
+            "52,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "mensuales. La vigencia del contrato es indefinida a partir del 15 de julio de",
+          "values": [
+            "2012."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 67,
+      "section": "13. PROPIEDADES, PLANTAS Y EQUIPOS / M$          M$                          M$                       M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Adiciones 180.301 318.653 0 17.609",
+          "values": [
+            "7.152",
+            "9.776",
+            "533.491"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bajas -293.685 0 0 0 0",
+          "values": [
+            "-293.685"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por depreciación",
+          "values": [
+            "-185.503",
+            "-10.102",
+            "-10.848",
+            "-26.099",
+            "-6.841",
+            "-239.393"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 67,
+      "section": "Saldo Final (neto) al",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Adiciones 45.413 0 18.794 31.912 58.223",
+          "values": [
+            "154.342"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bajas -370.815 0 -23.604 0 0",
+          "values": [
+            "-394.419"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por depreciación",
+          "values": [
+            "-185.503",
+            "-9.790",
+            "-10.392",
+            "-31.903",
+            "-7.890",
+            "-245.478"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bajas de dep. acum. 0 0 14.636 0 0",
+          "values": [
+            "14.636"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 70,
+      "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Provisión deudores incobrables",
+          "values": [
+            "77.015",
+            "48.528"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos percibidos por adelantados",
+          "values": [
+            "179.249",
+            "185.596"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisión vacaciones",
+          "values": [
+            "33.756",
+            "30.281"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pérdida Tributaria",
+          "values": [
+            "4.651.407",
+            "2.808.348"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propiedad, Planta y Equipo",
+          "values": [
+            "160.547",
+            "137.667"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pases de Jugadores",
+          "values": [
+            "82.824",
+            "178.892"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisión reposición Propiedad, Planta y Equipo",
+          "values": [
+            "4.471",
+            "4.292"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda de Tesorería",
+          "values": [
+            "1.319.336",
+            "1.340.177"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 70,
+      "section": "b) A continuación se presenta el gasto registrado por el citado impuesto / en el estado de resultados consolidados, el detalle es el siguiente: / 31.12.2016        31.12.2015 / M$                M$ / Efecto por activos o pasivos por impuestos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "diferidos del ejercicio",
+          "values": [
+            "2.079.405",
+            "1.499.584"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALES",
+          "values": [
+            "2.079.405",
+            "1.172.486"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 71,
+      "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Resultado antes de impto.",
+          "values": [
+            "-6.583.157",
+            "-3.561.516"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto a la renta y diferidos 1.579.957 24%",
+          "values": [
+            "676.688",
+            "22.5%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 72,
+      "section": "15. CUENTAS POR PAGAR COMERCIALES Y OTRAS CUENTAS POR PAGAR / M$             M$                M$             M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cuentas por pagar (1)",
+          "values": [
+            "2.429.939",
+            "1.007.984",
+            "2.396.492",
+            "568.127"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda Fiscal (2)",
+          "values": [
+            "204.629",
+            "4.693.171",
+            "411.197",
+            "4.627.193"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 73,
+      "section": "16. CUENTAS POR PAGAR A EMPRESAS RELACIONADAS, corriente. / El detalle de las cuentas por pagar a empresas relacionadas, corrientes al 30 de / Septiembre de 2016 corresponde a un pagaré a favor de Inversiones Alpes e / Inmobiliara DSE Ltda. / Mensual                           M$            M$            MS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "19-01-2016 13-01-2017 0,65% INVERSIONES ALPES",
+          "values": [
+            "2.214.893",
+            "166.522",
+            "2.381.415"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "15-07-2016 15-07-2017 0,65% INVERSIONES ALPES",
+          "values": [
+            "1.800.000",
+            "65.911",
+            "1.865.911"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "15-07-2016 15-07-2017 0,65% INMOBILIARIA DSE",
+          "values": [
+            "600.000",
+            "21.970",
+            "621.970"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales",
+          "values": [
+            "4.614.893",
+            "254.403",
+            "4.869.296"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 74,
+      "section": "18. PROVISIONES POR BENEFICIOS A LOS EMPLEADOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Provisión de vacaciones",
+          "values": [
+            "134.702",
+            "126.169"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales",
+          "values": [
+            "134.702",
+            "126.169"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 74,
+      "section": "El movimiento de estas provisiones al 31 de Diciembre de 2016 y 31 de diciembre de / 2015, corresponde a provisión por vacaciones del personal de la Sociedad, su / movimiento fue el siguiente:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo al",
+          "values": [
+            "31.12.2015",
+            "126.169"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento de provisiones existentes",
+          "values": [
+            "8.533"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 76,
+      "section": "20. PATRIMONIO NETO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "ii) Se acordó aumentar el capital social de M$15.369.975 divido en",
+          "values": [
+            "36.520.030"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "acciones, que se distribuye en una acción preferente serie A, y en",
+          "values": [
+            "36.520.029"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 78,
+      "section": "20. PATRIMONIO NETO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Primas por emisión de acciones",
+          "values": [
+            "74.820",
+            "2.974.773"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Primas por emisión",
+          "values": [
+            "74.820",
+            "2.974.773"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 78,
+      "section": "Total Otras reservas                                   291.800       1.584.873 / f)    Ganancias o Pérdidas acumuladas / 31.12.2016       31.12.2015 / Concepto / M$              M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Incremento (disminución) por correcciones de errores",
+          "values": [
+            "221.366",
+            "-1.499.555"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ganancias o pérdidas del ejercicio.",
+          "values": [
+            "-4.503.751",
+            "-2.389.030"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 79,
+      "section": "21. INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Borderó",
+          "values": [
+            "3.575.900",
+            "3.278.939"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad",
+          "values": [
+            "5.239.207",
+            "4.957.230"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de T.V.",
+          "values": [
+            "3.012.071",
+            "2.980.541"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 79,
+      "section": "Ingresos por transferencias de pases de",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "jugadores",
+          "values": [
+            "314.004",
+            "2.036.988"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos varios",
+          "values": [
+            "651.585",
+            "415.732"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Ingresos",
+          "values": [
+            "12.792.767",
+            "13.669.430"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 80,
+      "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Borderó (costos directos)",
+          "values": [
+            "995.389",
+            "1.094.160"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneraciones",
+          "values": [
+            "7.624.582",
+            "7.584.710"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización de pases",
+          "values": [
+            "4.094.686",
+            "2.699.179"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costo de venta pases de jugadores",
+          "values": [
+            "788.834",
+            "1.021.594"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros gastos de operación",
+          "values": [
+            "1.560.690",
+            "1.640.010"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Gastos",
+          "values": [
+            "15.064.181",
+            "14.039.653"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 80,
+      "section": "Al 31 de Diciembre de 2016 y 31 de Diciembre de 2015 el detalle de los costos de venta / de pases de jugadores: / 31.12.2016       31.12.2015 / Costo de Venta Pases Jugadores                         M$               M$",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Costo no amortizado",
+          "values": [
+            "494.029",
+            "726.159"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indemnización por término anticipado de contrato",
+          "values": [
+            "33.113",
+            "3.208"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros costos (1)",
+          "values": [
+            "261.692",
+            "292.227"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo Final",
+          "values": [
+            "788.834",
+            "1.021.594"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 82,
+      "section": "24. INFORMACION POR SEGMENTOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos Ordinario Total",
+          "values": [
+            "3.887.800",
+            "5.315.283",
+            "8.414.157",
+            "8.061.407",
+            "490.810",
+            "292.740",
+            "12.792.767",
+            "13.669.430"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costo de Ventas -13.554.845 -12.369.280 -1.509.336 -1.650.759",
+          "values": [
+            "-19.614",
+            "-15.064.181",
+            "-14.039.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Margen Bruto",
+          "values": [
+            "-9.667.045",
+            "-7.053.997",
+            "6.904.821",
+            "6.410.648",
+            "490.810",
+            "273.126",
+            "-2.271.414",
+            "-370.223"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 82,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos Financieros 22.606 25.987 9.689 11.138",
+          "values": [
+            "32.295",
+            "37.125"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos financieros -423.329 -125.475",
+          "values": [
+            "-423.329",
+            "-125.475"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado por unidades de reajuste -199.284 31.939 16.537 -62.865",
+          "values": [
+            "-182.747",
+            "-30.926"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado no operacional -2.909.079 -2.185.473 -1.402.664 -1.005.820 0",
+          "values": [
+            "-4.311.743",
+            "-3.191.293"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 83,
+      "section": "24. INFORMACION POR SEGMENTOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Efectivo y Equivalentes al Efectivo 369.981 700.333 23.676 490 0",
+          "values": [
+            "393.657",
+            "700.823"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros activos no financieros no corrientes 205.193 94.617 90.720 90.720 0",
+          "values": [
+            "295.913",
+            "185.337"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 83,
+      "section": "Deudores comerciales y otras cuentas por cobrar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "corrientes 2.838.321 2.741.687 676.073 703.745 15.671",
+          "values": [
+            "3.530.065",
+            "3.445.432"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar a entidades relacionadas 0 131395 59.491 0",
+          "values": [
+            "131.395",
+            "59.491"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos por impuestos corrientes 20.822 128.566 647.683 451.764 0",
+          "values": [
+            "668.505",
+            "580.330"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inventarios 0 0 18.385 10.909 0",
+          "values": [
+            "18.385",
+            "10.909"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 83,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados como / mantenidos para la venta o como mantenidos para",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "distribuir a los propietarios 106378 43.722 0 0 0",
+          "values": [
+            "106.378",
+            "43.722"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos Corrientes totales 3.540.695 3.708.925 1.587.932 1.317.119 15.671",
+          "values": [
+            "5.144.298",
+            "5.026.044"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 83,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros Activos financieros no corrientes 0 332.936 0 0 0 0",
+          "values": [
+            "332.936"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Activos no financieros no corrientes 953.936 1.002.856 0 0 0",
+          "values": [
+            "953.936",
+            "1.002.856"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos intangibles distintos de la plusvalía 13.965.102 10.916.296 0 0 0",
+          "values": [
+            "13.965.102",
+            "10.916.296"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propiedades, Planta y Equipo 2.965.012 3.435.931 0 0 0",
+          "values": [
+            "2.965.012",
+            "3.435.931"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos por impuestos diferidos 6.511.757 5.263.266 0 46.618 0",
+          "values": [
+            "6.511.757",
+            "5.309.884"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de activos no corrientes 24.395.807 20.951.285 0 46.618 0",
+          "values": [
+            "24.395.807",
+            "20.997.903"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de activos 27.936.502 24.660.210 1.587.932 1.363.737 15.671",
+          "values": [
+            "29.540.105",
+            "26.023.947"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 84,
+      "section": "24. INFORMACION POR SEGMENTOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cuentas por pagar no corrientes 1.007.984 568.127 0 0 0",
+          "values": [
+            "1.007.984",
+            "568.127"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros pasivos no financieros no corrientes 4.693.171 4.627.193 0 0 0",
+          "values": [
+            "4.693.171",
+            "4.627.193"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras provisiones a largo plazo 17.885 17.885 0 0 0",
+          "values": [
+            "17.885",
+            "17.885"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivo por impuestos diferidos 1.712.342 921.056 0 0 0",
+          "values": [
+            "1.712.342",
+            "921.056"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 84,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total de pasivos no corrientes 7.431.381 6.134.261 0 0 0",
+          "values": [
+            "7.431.381",
+            "6.134.261"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total pasivos 16.370.422 10.285.073 700.356 751.310 0",
+          "values": [
+            "17.070.778",
+            "11.036.383"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 85,
+      "section": "25. MONEDA EXTRANJERA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Efectivo y efectivo equivalente Dólares",
+          "values": [
+            "-15.737",
+            "695.943"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Euros",
+          "values": [
+            "27.643",
+            "24.938"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pesos",
+          "values": [
+            "381.751",
+            "-20.058"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 85,
+      "section": "Euros                          0                 0 / Pesos                          0                 0 / Euros                          0                 0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pesos",
+          "values": [
+            "295.913",
+            "185.337"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudores comerciales y otras cuentas por cobrar Dólares",
+          "values": [
+            "762.609",
+            "1.515.416"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 85,
+      "section": "Pesos                    131.395           59.491 / Euros                          0                0 / Pesos                     18.385           10.909 / Euros                          0                0 / Pesos                    668.505         580.330",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "venta Pesos",
+          "values": [
+            "106.378",
+            "43.722"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos corrientes totales",
+          "values": [
+            "5.144.298",
+            "5.026.044"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 85,
+      "section": "Euros                           0                0 / Pesos                    953.936        1.002.856 / Euros                           0                0 / Pesos                   6.511.757       4.733.782 / Total de activos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dólares",
+          "values": [
+            "746.872",
+            "2.211.359"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Euros",
+          "values": [
+            "27.643",
+            "24.938"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pesos",
+          "values": [
+            "28.765.590",
+            "23.211.548"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 86,
+      "section": "25. MONEDA EXTRANJERA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total pasivos no corrientes",
+          "values": [
+            "7.431.381",
+            "6.134.261"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de pasivos",
+          "values": [
+            "17.259.638",
+            "11.036.383"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 5,
+      "section": "Activos no corrientes o grupos de activos / 106.378         43.722         30.500 / para su disposición clasificados como / mantenidos para la venta / Activos no corrientes",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total de activos no corrientes",
+      "target": "24.395.807",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "332936"
+    },
+    {
+      "page": 5,
+      "section": "Activos no corrientes o grupos de activos / 106.378         43.722         30.500 / para su disposición clasificados como / mantenidos para la venta / Activos no corrientes",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total de activos no corrientes",
+      "target": "20.421.801",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-22563"
+    },
+    {
+      "page": 5,
+      "section": "Activos no corrientes o grupos de activos / 106.378         43.722         30.500 / para su disposición clasificados como / mantenidos para la venta / Activos no corrientes",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Total de activos no corrientes",
+      "target": "19.941.870",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-310373"
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Total de pasivos no corrientes",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 6,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Total pasivos",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 6,
+      "section": "Patrimonio atribuible a los",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total de patrimonio y pasivos",
+      "target": "29.540.105",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-17070779"
+    },
+    {
+      "page": 6,
+      "section": "Patrimonio atribuible a los",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total de patrimonio y pasivos",
+      "target": "25.447.844",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-11985873"
+    },
+    {
+      "page": 6,
+      "section": "Patrimonio atribuible a los",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total de patrimonio y pasivos",
+      "target": "26.536.209",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE CAMBIOS EN EL PATRIMONIO NETO CONSOLIDADOS / POR EL PERIODO TERMINADO DEL 1 DE ENERO AL 31 DE DICIEMBRE DE 2015 (RE-EXPRESADO)",
+      "likelyRelevant": false,
+      "totalLabel": "Total de cambios en patrimonio -2.389.030 -2.389.030",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 19,
+      "section": "Activos no corrientes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total de activos no corrientes",
+      "target": "20.997.903",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "Activos no corrientes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total de activos no corrientes",
+      "target": "20.421.801",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "Activos no corrientes",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total de activos no corrientes",
+      "target": "-576.102",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "16721632"
+    },
+    {
+      "page": 19,
+      "section": "Activos no corrientes",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total de activos no corrientes",
+      "target": "19.627.261",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "Activos no corrientes",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total de activos no corrientes",
+      "target": "19.941.870",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-16721632"
+    },
+    {
+      "page": 19,
+      "section": "Activos no corrientes",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total de activos no corrientes",
+      "target": "314.609",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "Pasivos no Corrientes / Cuentas por pagar comerciales y otras cuentas por",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total de pasivos no corrientes",
+      "target": "6.134.261",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-568127"
+    },
+    {
+      "page": 20,
+      "section": "Pasivos no Corrientes / Cuentas por pagar comerciales y otras cuentas por",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total de pasivos no corrientes",
+      "target": "7.083.752",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-568127"
+    },
+    {
+      "page": 20,
+      "section": "Pasivos no Corrientes / Cuentas por pagar comerciales y otras cuentas por",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total de pasivos no corrientes",
+      "target": "949.491",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "4702800"
+    },
+    {
+      "page": 20,
+      "section": "Pasivos no Corrientes / Cuentas por pagar comerciales y otras cuentas por",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total de pasivos no corrientes",
+      "target": "4.800.645",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "Pasivos no Corrientes / Cuentas por pagar comerciales y otras cuentas por",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total de pasivos no corrientes",
+      "target": "6.559.388",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-4702800"
+    },
+    {
+      "page": 20,
+      "section": "Pasivos no Corrientes / Cuentas por pagar comerciales y otras cuentas por",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total de pasivos no corrientes",
+      "target": "1.758.743",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "Pasivos no Corrientes / Cuentas por pagar comerciales y otras cuentas por",
+      "likelyRelevant": false,
+      "totalLabel": "Total pasivos",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 22,
+      "section": "Activo Disponible para la venta                          -200                  0",
+      "likelyRelevant": true,
+      "totalLabel": "Total Impuestos Diferidos de Activos",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 51,
+      "section": "4. EFECTIVO Y EQUIVALENTE DE EFECTIVO / 5. OTROS ACTIVOS NO FINANCIEROS CORRIENTES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales",
+      "target": "295.913",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-49339"
+    },
+    {
+      "page": 51,
+      "section": "4. EFECTIVO Y EQUIVALENTE DE EFECTIVO / 5. OTROS ACTIVOS NO FINANCIEROS CORRIENTES",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totales",
+      "target": "185.337",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-53025"
+    },
+    {
+      "page": 57,
+      "section": "8. ACTIVOS POR IMPUESTOS CORRIENTES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "668.504",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-666355"
+    },
+    {
+      "page": 57,
+      "section": "8. ACTIVOS POR IMPUESTOS CORRIENTES",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "580.330",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-578184"
+    },
+    {
+      "page": 70,
+      "section": "b) A continuación se presenta el gasto registrado por el citado impuesto / en el estado de resultados consolidados, el detalle es el siguiente: / 31.12.2016        31.12.2015 / M$                M$ / Efecto por activos o pasivos por impuestos",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTALES",
+      "target": "2.079.405",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 70,
+      "section": "b) A continuación se presenta el gasto registrado por el citado impuesto / en el estado de resultados consolidados, el detalle es el siguiente: / 31.12.2016        31.12.2015 / M$                M$ / Efecto por activos o pasivos por impuestos",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTALES",
+      "target": "1.172.486",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "327098"
+    },
+    {
+      "page": 73,
+      "section": "16. CUENTAS POR PAGAR A EMPRESAS RELACIONADAS, corriente. / El detalle de las cuentas por pagar a empresas relacionadas, corrientes al 30 de / Septiembre de 2016 corresponde a un pagaré a favor de Inversiones Alpes e / Inmobiliara DSE Ltda. / Mensual                           M$            M$            MS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales",
+      "target": "4.614.893",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 73,
+      "section": "16. CUENTAS POR PAGAR A EMPRESAS RELACIONADAS, corriente. / El detalle de las cuentas por pagar a empresas relacionadas, corrientes al 30 de / Septiembre de 2016 corresponde a un pagaré a favor de Inversiones Alpes e / Inmobiliara DSE Ltda. / Mensual                           M$            M$            MS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totales",
+      "target": "254.403",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 73,
+      "section": "16. CUENTAS POR PAGAR A EMPRESAS RELACIONADAS, corriente. / El detalle de las cuentas por pagar a empresas relacionadas, corrientes al 30 de / Septiembre de 2016 corresponde a un pagaré a favor de Inversiones Alpes e / Inmobiliara DSE Ltda. / Mensual                           M$            M$            MS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Totales",
+      "target": "4.869.296",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 74,
+      "section": "18. PROVISIONES POR BENEFICIOS A LOS EMPLEADOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales",
+      "target": "134.702",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 74,
+      "section": "18. PROVISIONES POR BENEFICIOS A LOS EMPLEADOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totales",
+      "target": "126.169",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 78,
+      "section": "20. PATRIMONIO NETO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Primas por emisión",
+      "target": "74.820",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 78,
+      "section": "20. PATRIMONIO NETO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Primas por emisión",
+      "target": "2.974.773",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 79,
+      "section": "Ingresos por transferencias de pases de",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Ingresos",
+      "target": "12.792.767",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-11827178"
+    },
+    {
+      "page": 79,
+      "section": "Ingresos por transferencias de pases de",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Ingresos",
+      "target": "13.669.430",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-11216710"
+    },
+    {
+      "page": 80,
+      "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Gastos",
+      "target": "15.064.181",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 80,
+      "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Gastos",
+      "target": "14.039.653",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 82,
+      "section": "24. INFORMACION POR SEGMENTOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Margen Bruto",
+      "target": "-9.667.045",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "13535231"
+    },
+    {
+      "page": 82,
+      "section": "24. INFORMACION POR SEGMENTOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Margen Bruto",
+      "target": "-7.053.997",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-2694901"
+    },
+    {
+      "page": 82,
+      "section": "24. INFORMACION POR SEGMENTOS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Margen Bruto",
+      "target": "6.904.821",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-12530317"
+    },
+    {
+      "page": 82,
+      "section": "24. INFORMACION POR SEGMENTOS",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total Margen Bruto",
+      "target": "6.410.648",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "1650759"
+    },
+    {
+      "page": 82,
+      "section": "24. INFORMACION POR SEGMENTOS",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total Margen Bruto",
+      "target": "490.810",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 82,
+      "section": "24. INFORMACION POR SEGMENTOS",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total Margen Bruto",
+      "target": "273.126",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "19614"
+    },
+    {
+      "page": 82,
+      "section": "24. INFORMACION POR SEGMENTOS",
+      "likelyRelevant": false,
+      "column": 6,
+      "totalLabel": "Total Margen Bruto",
+      "target": "-2.271.414",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "15064181"
+    },
+    {
+      "page": 82,
+      "section": "24. INFORMACION POR SEGMENTOS",
+      "likelyRelevant": false,
+      "column": 7,
+      "totalLabel": "Total Margen Bruto",
+      "target": "-370.223",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "14039653"
+    },
+    {
+      "page": 83,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total de activos no corrientes 24.395.807 20.951.285 0 46.618 0",
+      "target": "24.395.807",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "332936"
+    },
+    {
+      "page": 83,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total de activos no corrientes 24.395.807 20.951.285 0 46.618 0",
+      "target": "20.997.903",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-332936"
+    },
+    {
+      "page": 83,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Total de activos 27.936.502 24.660.210 1.587.932 1.363.737 15.671",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 84,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Total de pasivos no corrientes 7.431.381 6.134.261 0 0 0",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 84,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Total pasivos 16.370.422 10.285.073 700.356 751.310 0",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 86,
+      "section": "25. MONEDA EXTRANJERA",
+      "likelyRelevant": false,
+      "totalLabel": "Total pasivos no corrientes",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 86,
+      "section": "25. MONEDA EXTRANJERA",
+      "likelyRelevant": false,
+      "totalLabel": "Total de pasivos",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 31,
+    "results": [
+      {
+        "label": "Otros activos financieros no corrientes 9",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros activos financieros no corrientes 9",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros activos no financieros no corrientes",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros activos no financieros no corrientes",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Activos intangibles distintos de la plusvalía",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Activos intangibles distintos de la plusvalía",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Propiedades, planta y equipo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Propiedades, planta y equipo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Activos por impuestos diferidos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Activos por impuestos diferidos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos de actividades ordinarias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos de actividades ordinarias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costo de ventas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costo de ventas",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Costo de Ventas: Remuneraciones",
+        "similarity": 67
+      },
+      {
+        "label": "Ganancia bruta",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ganancia bruta",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gasto de administración",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gasto de administración",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gasto de Administración: Asesorías",
+        "similarity": 67
+      },
+      {
+        "label": "Ingresos financieros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos financieros",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado integral atribuible a",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado integral atribuible a",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado integral atribuible a los propietarios de la controladora",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado integral atribuible a los propietarios de la controladora",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Concesión",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Concesión",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pago Deuda Tesorería",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pago Deuda Tesorería",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "diferidos del ejercicio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "diferidos del ejercicio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Borderó",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Borderó",
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Borderó",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Publicidad",
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Publicidad",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Derechos de T.V.",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Derechos de T.V.",
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Derechos de T.V.",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "jugadores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "jugadores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos varios",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Ingresos varios",
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Ingresos varios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Borderó (costos directos)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Borderó (costos directos)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Costo de Ventas: Borderó (costos directos)",
+        "similarity": 60
+      },
+      {
+        "label": "Remuneraciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Remuneraciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortización de pases",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortización de pases",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Costo de Ventas: Amortización de pases",
+        "similarity": 50
+      },
+      {
+        "label": "Costo de venta pases de jugadores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costo de venta pases de jugadores",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Costo de Ventas: Costo de venta de pases de jugadores",
+        "similarity": 80
+      },
+      {
+        "label": "Otros gastos de operación",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros gastos de operación",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Costo de Ventas: Otros gastos de operación",
+        "similarity": 60
+      },
+      {
+        "label": "Costo no amortizado",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costo no amortizado",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Indemnización por término anticipado de contrato",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Indemnización por término anticipado de contrato",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Costo de Ventas: Costo de venta de pases de jugadores (indemnización por término anticipado de contrato)",
+        "similarity": 50
+      },
+      {
+        "label": "Otros costos (1)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros costos (1)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldo Final",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldo Final",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "distribuir a los propietarios 106378 43.722 0 0 0",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "distribuir a los propietarios 106378 43.722 0 0 0",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Activos Corrientes totales 3.540.695 3.708.925 1.587.932 1.317.119 15.671",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Activos Corrientes totales 3.540.695 3.708.925 1.587.932 1.317.119 15.671",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "cl",
+    "query": "Universidad de Chile",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 12,
+      "line": "25           Moneda Extranjera                                                    78"
+    },
+    {
+      "page": 27,
+      "line": "2.4.4 Transacciones en Moneda Extranjera"
+    },
+    {
+      "page": 27,
+      "line": "monetarios expresados en moneda extranjera son convertidos a las tasas de cambio"
+    },
+    {
+      "page": 27,
+      "line": "de cierre del estado de situación. Las pérdidas y ganancias en moneda extranjera"
+    },
+    {
+      "page": 50,
+      "line": "CINIIF 22 Operaciones en moneda extranjera y consideración                    Periodos"
+    },
+    {
+      "page": 50,
+      "line": "“Transacciones en moneda extranjera y consideraciones sobre prepago”        de enero de"
+    },
+    {
+      "page": 50,
+      "line": "una suma por adelantado en una moneda extranjera."
+    },
+    {
+      "page": 72,
+      "line": "de segunda categoría, Cotizaciones previsionales por pagar y otras retenciones."
+    },
+    {
+      "page": 85,
+      "line": "25. MONEDA EXTRANJERA"
+    },
+    {
+      "page": 86,
+      "line": "25. MONEDA EXTRANJERA"
+    },
+    {
+      "page": 91,
+      "line": "interés, tipo de cambio, precios de productos, etc., produzcan pérdidas económicas"
+    },
+    {
+      "page": 91,
+      "line": "de las variables que inciden en los niveles de tipo de cambio e interés."
+    },
+    {
+      "page": 92,
+      "line": "c.    Riesgo de tipo de cambio"
+    },
+    {
+      "page": 92,
+      "line": "La sociedad tiene operaciones en moneda extranjera (Dólares de Estados Unidos de"
+    },
+    {
+      "page": 92,
+      "line": "base una variación de + / - 10% en el tipo de cambio de cierre sobre el peso chileno,"
+    },
+    {
+      "page": 92,
+      "line": "una variación de + / - 10% en el tipo de cambio del dólar sobre el peso chileno."
+    },
+    {
+      "page": 92,
+      "line": "Nuestras deudas en moneda extranjera representan un 25% del total de las deudas,"
+    },
+    {
+      "page": 92,
+      "line": "dólares, cuentas por cobrar en moneda extranjera."
+    }
+  ],
+  "warnings": [
+    "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "21 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "10 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

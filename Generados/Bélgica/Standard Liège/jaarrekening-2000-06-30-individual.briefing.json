@@ -1,0 +1,181 @@
+{
+  "club": "standardliege-be",
+  "year": 2000,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Standard Liège/jaarrekening-2000-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:55:37.173Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 54,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 5,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 13,
+      "section": "CONVERSION ! ! ! ! / SOUSCRIPTION ! ! ! ! / E. CAPITAL AUTORISE NON SOUSCRIT .! 8751 ! ! ! / F. PARTS NON REPRESENTATIVES DU CAPITAL .! 876 ! ! ! / IX. PROVISIONS POUR AUTRES RISQUES ET CHARGES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Provision pour risques & charges",
+          "values": [
+            "12.875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provision pour risques & litiges",
+          "values": [
+            "28.133"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 15,
+      "section": "RESULTATS D'EXPLOITATION / TRAVAILLEURS INSCRITS AU REGISTRE DU PERSONNEL / PROVISIONS POUR RISQUES ET CHARGES / PERSONNEL INTERIMAIRE ET PERSONNES MISES A LA / DISPOSITION DE L'ENTREPRISE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "9087 ! 58,3 !",
+          "values": [
+            "59,7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "9088 ! 102.544 !",
+          "values": [
+            "111.525"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 15,
+      "section": "! ! / ! !",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "620 ! 305.223 !",
+          "values": [
+            "260.780"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "621 ! 21.744 !",
+          "values": [
+            "19.823"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "! ! / 9115 ! 36.232 ! 202 / 9116 ! 1.002) ! ( ) / ! ! / ! !",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "640 ! 8.158 !",
+          "values": [
+            "5.750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "641/8 ! 30.500 !",
+          "values": [
+            "23.138"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "! ! / ! ! / ! ! / 9096 ! 6 ! 4 / 9097 ! 6 ! 2",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "9098 ! 5.250 !",
+          "values": [
+            "3.308"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "617 ! 4.034 !",
+          "values": [
+            "2.686"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 4,
+    "results": [
+      {
+        "label": "Provision pour risques & charges",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provision pour risques & charges",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provision pour risques & litiges",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provision pour risques & litiges",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "9087 ! 58,3 !",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "9087 ! 58,3 !",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "9088 ! 102.544 !",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "9088 ! 102.544 !",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Standard Liège",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

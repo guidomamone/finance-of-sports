@@ -1,0 +1,825 @@
+{
+ "md": "Clubes/Argentina/Almagro/memoria-y-balance-2020.md",
+ "pdf": "Clubes/Argentina/Almagro/memoria-y-balance-2020.pdf",
+ "club": "almagro",
+ "year": 2020,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T14:32:50.988Z",
+ "tieOuts": {
+  "cierran": 25,
+  "noCierran": 0
+ },
+ "warnings": [
+  "17 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "ladoConocido": 53,
+ "rubros": [
+  {
+   "label": "CUOTA SOCIALES -Anexo II",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "values": [
+    "2,107,500.00",
+    "1,948,000.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "RECAUDACIÓN POR ACTIVIDADES Anexo III",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "values": [
+    "52,365,133.15",
+    "47,489,301.49"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "GASTOS ESPECIFICOS -Anexos IV",
+   "lado": "expense",
+   "page": 9,
+   "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "values": [
+    "5,926,802.65",
+    "9,161,250.77"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "GASTOS DE OPERACIONES -Anexos V",
+   "lado": "expense",
+   "page": 9,
+   "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "values": [
+    "43,365,586.18",
+    "35,912,278.18"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "AMORTIZACIÓN Anexo IA Y Anexo IB",
+   "lado": "expense",
+   "page": 9,
+   "section": "# CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE RESULTADO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "values": [
+    "717,215.54",
+    "280,820.34"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Apertura Dist.de Resul.no asig",
+   "lado": null,
+   "page": 10,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / # ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO - COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82",
+   "values": [
+    "",
+    "6,560,631.01",
+    "",
+    "6,827,281.00",
+    "13,387,912.01",
+    "9,304,959.81"
+   ],
+   "columns": [
+    "RUBRO",
+    "CAPITAL SOCIAL",
+    "",
+    "",
+    "RESULTADOS NO ASIGNADOS",
+    "TOTAL P NETO 31/10/2020",
+    "TOTAL P NETO 31/12/2019"
+   ]
+  },
+  {
+   "label": "Sede Social- Medrano 522 CABA",
+   "lado": "revenue",
+   "page": 13,
+   "section": "CUIT: 33-53156200-9 / # ANEXO II / # CUOTA SOCIALES - ANEXO II- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO:82 / CUOTAS SOCIALES",
+   "values": [
+    "2,107,500.00",
+    "1,948,000.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Futbol Ingreso por Partidos",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "133,800.00",
+    "793,120.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Ingreso A.F.A: dcho tv",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "30,300,000.00",
+    "22,685,984.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Alquiler de Sede",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "7,574,380.15",
+    "8,326,446.29"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Derechos TV",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "0.00",
+    "5,833,707.31"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Ingresos Especiales",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "1,125,370.00",
+    "95,600.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Premio Copa Argentina",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "1,578,299.00",
+    "3,635,227.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Canon por Alquiler Cancha Tenis",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "425,000.00",
+    "1,080,000.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Alquiler de Canchas",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "425,000.00",
+    "1,200,000.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "2,407,220.00",
+    "3,839,216.89"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Alquiler de Antena",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "8,175,000.00",
+    ""
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "DERECHOS DE SOLIDARIDAD JUGADORES",
+   "lado": "revenue",
+   "page": 14,
+   "section": "CUIT: 33-53156200-9 / # ANEXO III / # RECAUDACIONES POR ACTIVIDADES- ANEXO III- COMPARATIVO CON EL EJERCICIO ANTERIOR / EJERCICIO ECONÓMICO NRO: 82 / # RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "221,064.00",
+    ""
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos de mantenimiento",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "1,681,381.71",
+    "1,264,000.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos Administrativos",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "2,677.19",
+    "433.06"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Honorarios abogados",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "222,106.00",
+    "140,000.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Honorarios Contador",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "66,115.72",
+    "64,462.81"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos varios",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "205,119.64",
+    "20,224.87"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos de Limpieza",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "35,650.00",
+    "71,143.05"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos de lavandería",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "94,200.00",
+    "98,600.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos de movilidad",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "309,646.27",
+    "255,830.28"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Estadías y traslados",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "784,797.50",
+    "4,936,510.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Impuestos y Contribuciones",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "961,236.91",
+    "315,566.74"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Servicio de Seguridad",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "15,681.14",
+    "10,839.34"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Eventos",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "0.00",
+    "410,294.64"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "0.00",
+    ""
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos Generales",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "52,890.57",
+    "39,545.98"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos transmisión radio",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "0.00",
+    "96,000.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Alquiler Vivienda para jugadores",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "1,495,300.00",
+    "1,431,300.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Alquiler equipo electrógeno",
+   "lado": "expense",
+   "page": 15,
+   "section": "CUIT: 33-53156200-9 / # ANEXO IV- ANEXO V / # GASTOS ESPECÍFICOS ANEXO IV- / # EJERCICIO ECONÓMICO NRO:82 / # GASTOS ESPECÍFICOS",
+   "values": [
+    "0.00",
+    "6,500.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Interese perdidos",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "169,330.15",
+    "289,077.10"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos bancarios",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "8,811.80",
+    "27,544.67"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Impuesto Ley 25413",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "156,417.56",
+    "282,108.61"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos de operación y administrativos",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "7,799,781.36",
+    "8,481,568.78"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos Cuerpo Médico y Técnico",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "5,431,000.00",
+    "4,380,000.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Sueldos y Jornales",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "11,563,453.30",
+    "9,576,342.62"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Cargas Sociales",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "165,475.81",
+    "98,667.60"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Primas por contrato privado",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "13,441,619.00",
+    "10,050,000.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos de Policía",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "622,820.00",
+    "1,311,598.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Juicios",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "3,773,241.00",
+    "1,173,600.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos de Representación",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "0.00",
+    "158,608.71"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Gastos de Servicios de Emergencia",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "3,636.20",
+    "72,005.06"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Alquiler para entrenamiento",
+   "lado": "expense",
+   "page": 15,
+   "section": "# GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "230,000.00",
+    "11,157.03"
+   ],
+   "columns": [
+    "",
+    "31/10/2020",
+    "31/10/2019"
+   ]
+  },
+  {
+   "label": "Tirand 1,20 mts Banda Latex Plana Live UP -Media",
+   "lado": "revenue",
+   "page": 20,
+   "section": "inventario 2020 / Elemento de Entrenamiento",
+   "values": [
+    "525.00"
+   ],
+   "columns": [
+    "Concepto",
+    "Importe"
+   ]
+  },
+  {
+   "label": "Tirand 1,20 mts banda Latex Plana Live UP- Fuerte",
+   "lado": "revenue",
+   "page": 20,
+   "section": "inventario 2020 / Elemento de Entrenamiento",
+   "values": [
+    "410.00"
+   ],
+   "columns": [
+    "Concepto",
+    "Importe"
+   ]
+  },
+  {
+   "label": "Tensor de sobre esfuerzo Python Striker- Live Up",
+   "lado": "revenue",
+   "page": 20,
+   "section": "inventario 2020 / Elemento de Entrenamiento",
+   "values": [
+    "2784.01"
+   ],
+   "columns": [
+    "Concepto",
+    "Importe"
+   ]
+  },
+  {
+   "label": "Conos Torugas x20",
+   "lado": "revenue",
+   "page": 20,
+   "section": "inventario 2020 / Elemento de Entrenamiento",
+   "values": [
+    "293.39"
+   ],
+   "columns": [
+    "Concepto",
+    "Importe"
+   ]
+  },
+  {
+   "label": "Conos Tortugas x21",
+   "lado": "revenue",
+   "page": 20,
+   "section": "inventario 2020 / Elemento de Entrenamiento",
+   "values": [
+    "880.17"
+   ],
+   "columns": [
+    "Concepto",
+    "Importe"
+   ]
+  },
+  {
+   "label": "Amor.Acum Indumentaria",
+   "lado": "revenue",
+   "page": 20,
+   "section": "inventario 2020 / Elemento de Entrenamiento",
+   "values": [
+    "-3261.72"
+   ],
+   "columns": [
+    "Concepto",
+    "Importe"
+   ]
+  }
+ ]
+}

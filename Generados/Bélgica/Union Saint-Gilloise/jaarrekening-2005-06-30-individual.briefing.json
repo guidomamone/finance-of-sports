@@ -1,0 +1,52 @@
+{
+  "club": "unionsg-be",
+  "year": 2005,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2005-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:55:46.746Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 18,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 14,
+      "section": "FRAIS DE RESTRUCTURATION / TIMMOBILISATIONS INCORPORELLES : / TMMOBILISATIONS CORPORELLES : / AMORTISSEMENTS ACTES PENDANT L'EXERCICE :",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Matériel roulant L NR 005,00 - 020,00 005,00 -",
+          "values": [
+            "020,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "* Matériel roulant L NR 020,00 - 020,00 020,00 -",
+          "values": [
+            "020,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "be",
+    "query": "Union Saint-Gilloise",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

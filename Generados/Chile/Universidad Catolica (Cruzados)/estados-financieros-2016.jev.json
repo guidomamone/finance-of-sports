@@ -1,0 +1,383 @@
+{
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2016.md",
+ "generatedAt": "2026-10-01T16:43:34.820Z",
+ "rubrosHuella": "5c52255191fcf57fe72aa07e86c5f2ec9859ffb6",
+ "rubros": [
+  {
+   "label": "Ingresos por A.N.F.P.",
+   "lado": "revenue",
+   "page": 57,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "choice": "other_income",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por Derechos de TV",
+   "lado": "revenue",
+   "page": 57,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por Borderó (Recaudación Entradas)",
+   "lado": "revenue",
+   "page": 57,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por Préstamo de Jugadores",
+   "lado": "revenue",
+   "page": 57,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "choice": "player_sales",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por venta de Jugadores",
+   "lado": "revenue",
+   "page": 57,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por Derechos de Solidaridad",
+   "lado": "revenue",
+   "page": 57,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "choice": "player_sales",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 57,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos Cuotas Socios Fútbol",
+   "lado": "revenue",
+   "page": 61,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\"",
+   "choice": "member_dues",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos Matrículas de Escuelas de Fútbol",
+   "lado": "revenue",
+   "page": 61,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\"",
+   "choice": "youth_football",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por Publicidad y Auspicios",
+   "lado": "revenue",
+   "page": 61,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por Ventas de Productos Tienda UC",
+   "lado": "revenue",
+   "page": 61,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por Derechos de Merchandising",
+   "lado": "revenue",
+   "page": 61,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros ingresos por función",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneraciones",
+   "lado": "expense",
+   "page": 60,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "wages_squad",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de Operación",
+   "lado": "expense",
+   "page": 59,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización pases de jugadores profesionales (*)",
+   "lado": "expense",
+   "page": 59,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización Concesión",
+   "lado": "expense",
+   "page": 59,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "depreciation",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización Licencias",
+   "lado": "expense",
+   "page": 59,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "other_amortisation",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de torneos y otros",
+   "lado": "expense",
+   "page": 59,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Gasto por Préstamo de Jugadores",
+   "lado": "expense",
+   "page": 59,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Gasto por Transferencia de Jugadores",
+   "lado": "expense",
+   "page": 59,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "player_amortisation",
+   "confidence": 0.54,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciación",
+   "lado": "expense",
+   "page": 59,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos de ventas productos",
+   "lado": "expense",
+   "page": 59,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros Gastos por función",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Patentes y Contribuciones",
+   "lado": "expense",
+   "page": 60,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios de Terceros",
+   "lado": "expense",
+   "page": 60,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Arriendo de Bienes",
+   "lado": "expense",
+   "page": 60,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios Contratados",
+   "lado": "expense",
+   "page": 60,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros Gastos",
+   "lado": "expense",
+   "page": 60,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisiones No Operacionales",
+   "lado": "expense",
+   "page": 60,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Servicios de Mantención, Impresión y Reparación",
+   "lado": "expense",
+   "page": 60,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1005
+  },
+  {
+   "label": "Servicios de Aseo y Seguridad",
+   "lado": "expense",
+   "page": 60,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 986
+  },
+  {
+   "label": "TV Cable, Internet y Telefonía",
+   "lado": "expense",
+   "page": 60,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Gas, Agua y Electricidad",
+   "lado": "expense",
+   "page": 60,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1043
+  }
+ ]
+}

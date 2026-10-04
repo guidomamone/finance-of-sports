@@ -1,0 +1,861 @@
+{
+  "md": "Clubes/España/Real Betis/cuentas-anuales-consolidadas-2019-2020.md",
+  "pdf": "Clubes/España/Real Betis/cuentas-anuales-consolidadas-2019-2020.pdf",
+  "club": "realbetis",
+  "year": 2020,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:00:37.423Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 8
+  },
+  "warnings": [
+    "8 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "6 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 76,
+    "notasUsadas": []
+  },
+  "ladoConocido": 48,
+  "rubros": [
+    {
+      "label": "Arrendamientos y canones",
+      "lado": null,
+      "page": 56,
+      "section": "16.4 Servicios Exteriores",
+      "values": [
+        1.389969
+      ],
+      "origen": "estado 77",
+      "glosa": "Arrendamientos y canones"
+    },
+    {
+      "label": "Reparaciones y conservación",
+      "lado": null,
+      "page": 56,
+      "section": "16.4 Servicios Exteriores",
+      "values": [
+        1.383544
+      ],
+      "origen": "estado 77",
+      "glosa": "Reparaciones y conservación"
+    },
+    {
+      "label": "Servicios de profesionales independientes",
+      "lado": null,
+      "page": 56,
+      "section": "16.4 Servicios Exteriores",
+      "values": [
+        4.369632
+      ],
+      "origen": "estado 77",
+      "glosa": "Servicios de profesionales independientes"
+    },
+    {
+      "label": "Primas de seguro",
+      "lado": null,
+      "page": 56,
+      "section": "16.4 Servicios Exteriores",
+      "values": [
+        0.415367
+      ],
+      "origen": "estado 77",
+      "glosa": "Primas de seguro"
+    },
+    {
+      "label": "Servicios bancarios y similares",
+      "lado": null,
+      "page": 56,
+      "section": "16.4 Servicios Exteriores",
+      "values": [
+        0.245775
+      ],
+      "origen": "estado 77",
+      "glosa": "Servicios bancarios y similares"
+    },
+    {
+      "label": "Publicidad, propaganda y relaciones públicas",
+      "lado": null,
+      "page": 56,
+      "section": "16.4 Servicios Exteriores",
+      "values": [
+        1.23994
+      ],
+      "origen": "estado 77",
+      "glosa": "Publicidad, propaganda y relaciones públicas"
+    },
+    {
+      "label": "Suministros",
+      "lado": null,
+      "page": 56,
+      "section": "16.4 Servicios Exteriores",
+      "values": [
+        0.282302
+      ],
+      "origen": "estado 77",
+      "glosa": "Suministros"
+    },
+    {
+      "label": "Otros servicios",
+      "lado": null,
+      "page": 56,
+      "section": "16.4 Servicios Exteriores",
+      "values": [
+        5.170527
+      ],
+      "origen": "estado 77",
+      "glosa": "Otros servicios"
+    },
+    {
+      "label": "Provisión por litigios 40.505,03 - - (25.481,40) -",
+      "lado": null,
+      "page": 41,
+      "section": "13.          PROVISIONES Y CONTINGENCIAS",
+      "values": [
+        15.02363
+      ],
+      "origen": "estado 50",
+      "glosa": "Provisión por litigios 40.505,03 - - (25.481,40) -"
+    },
+    {
+      "label": "Provisión para responsabilidades 574.494,85 - - (567.217,41) -",
+      "lado": null,
+      "page": 41,
+      "section": "13.          PROVISIONES Y CONTINGENCIAS",
+      "values": [
+        7.27744
+      ],
+      "origen": "estado 50",
+      "glosa": "Provisión para responsabilidades 574.494,85 - - (567.217,41) -"
+    },
+    {
+      "label": "Provisiones para impuestos 70.547,00 - - - -",
+      "lado": "expense",
+      "page": 41,
+      "section": "13.          PROVISIONES Y CONTINGENCIAS",
+      "values": [
+        70.547
+      ],
+      "origen": "estado 50",
+      "glosa": "Provisiones para impuestos 70.547,00 - - - -"
+    },
+    {
+      "label": "Obligaciones por prestaciones a largo plazo al personal 1.536.788,95 - - (1.036.538,50) -",
+      "lado": null,
+      "page": 41,
+      "section": "13.          PROVISIONES Y CONTINGENCIAS",
+      "values": [
+        500.25045
+      ],
+      "origen": "estado 50",
+      "glosa": "Obligaciones por prestaciones a largo plazo al personal 1.536.788,95 - - (1.036.538,50) -"
+    },
+    {
+      "label": "Ingresos por competiciones nacionales",
+      "lado": "revenue",
+      "page": 55,
+      "section": "16.       INGRESOS Y GASTOS",
+      "values": [
+        3.041915
+      ],
+      "origen": "estado 74",
+      "glosa": "Ingresos por competiciones nacionales"
+    },
+    {
+      "label": "Ingresos por competiciones europeas -",
+      "lado": "revenue",
+      "page": 55,
+      "section": "16.       INGRESOS Y GASTOS",
+      "values": [
+        13.72476
+      ],
+      "origen": "estado 74",
+      "glosa": "Ingresos por competiciones europeas -"
+    },
+    {
+      "label": "Ingresos por abonados y socios",
+      "lado": "revenue",
+      "page": 55,
+      "section": "16.       INGRESOS Y GASTOS",
+      "values": [
+        11.925617
+      ],
+      "origen": "estado 74",
+      "glosa": "Ingresos por abonados y socios"
+    },
+    {
+      "label": "Ingresos por retransmisión",
+      "lado": "revenue",
+      "page": 55,
+      "section": "16.       INGRESOS Y GASTOS",
+      "values": [
+        57.59948
+      ],
+      "origen": "estado 74",
+      "glosa": "Ingresos por retransmisión"
+    },
+    {
+      "label": "Ingresos de comercialización y publicidad",
+      "lado": "revenue",
+      "page": 55,
+      "section": "16.       INGRESOS Y GASTOS",
+      "values": [
+        13.734387
+      ],
+      "origen": "estado 74",
+      "glosa": "Ingresos de comercialización y publicidad"
+    },
+    {
+      "label": "Aprovisionamiento entradas autoconsumo",
+      "lado": null,
+      "page": 55,
+      "section": "86.301.398,51         107.269.706,02 / España. / 16.2 Aprovisionamientos / composición:",
+      "values": [
+        0.350499
+      ],
+      "origen": "estado 75",
+      "glosa": "Aprovisionamiento entradas autoconsumo"
+    },
+    {
+      "label": "Compra material deportivo",
+      "lado": null,
+      "page": 55,
+      "section": "86.301.398,51         107.269.706,02 / España. / 16.2 Aprovisionamientos / composición:",
+      "values": [
+        0.984392
+      ],
+      "origen": "estado 75",
+      "glosa": "Compra material deportivo"
+    },
+    {
+      "label": "Compra material sanitario",
+      "lado": null,
+      "page": 55,
+      "section": "86.301.398,51         107.269.706,02 / España. / 16.2 Aprovisionamientos / composición:",
+      "values": [
+        0.13573
+      ],
+      "origen": "estado 75",
+      "glosa": "Compra material sanitario"
+    },
+    {
+      "label": "Otros consumos y gastos externos",
+      "lado": "expense",
+      "page": 55,
+      "section": "86.301.398,51         107.269.706,02 / España. / 16.2 Aprovisionamientos / composición:",
+      "values": [
+        0.549985
+      ],
+      "origen": "estado 75",
+      "glosa": "Otros consumos y gastos externos"
+    },
+    {
+      "label": "Trabajos realizados por otras empresas",
+      "lado": null,
+      "page": 55,
+      "section": "86.301.398,51         107.269.706,02 / España. / 16.2 Aprovisionamientos / composición:",
+      "values": [
+        1.328733
+      ],
+      "origen": "estado 75",
+      "glosa": "Trabajos realizados por otras empresas"
+    },
+    {
+      "label": "Reserva Legal 2.089.805,78 - -",
+      "lado": null,
+      "page": 40,
+      "section": "junio de 2020 y 2019 a 2.208.408,49 euros. / 12.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución de / Ejercicio 30/06/2020",
+      "values": [
+        2.089806
+      ],
+      "origen": "estado 48",
+      "glosa": "Reserva Legal 2.089.805,78 - -"
+    },
+    {
+      "label": "Reservas voluntarias 10.996.194,83 -",
+      "lado": null,
+      "page": 40,
+      "section": "junio de 2020 y 2019 a 2.208.408,49 euros. / 12.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución de / Ejercicio 30/06/2020",
+      "values": [
+        0.174196
+      ],
+      "origen": "estado 48",
+      "glosa": "Reservas voluntarias 10.996.194,83 -"
+    },
+    {
+      "label": "Reservas de capitalización - 53.847,99 -",
+      "lado": null,
+      "page": 40,
+      "section": "junio de 2020 y 2019 a 2.208.408,49 euros. / 12.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución de / Ejercicio 30/06/2020",
+      "values": [
+        0.053848
+      ],
+      "origen": "estado 48",
+      "glosa": "Reservas de capitalización - 53.847,99 -"
+    },
+    {
+      "label": "Reservas consolidadas",
+      "lado": null,
+      "page": 40,
+      "section": "junio de 2020 y 2019 a 2.208.408,49 euros. / 12.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución de / Ejercicio 30/06/2020",
+      "values": [
+        -2.305446
+      ],
+      "origen": "estado 48",
+      "glosa": "Reservas consolidadas"
+    },
+    {
+      "label": "Reservas voluntarias 10.996.194,83 - -",
+      "lado": null,
+      "page": 40,
+      "section": "10.780.554,17           287.659,64        3.404.976,42     14.473.190,23 / (7.516.666,31)                                               405.516,94 / Ejercicio 30/06/2019",
+      "values": [
+        10.996195
+      ],
+      "origen": "estado 49",
+      "glosa": "Reservas voluntarias 10.996.194,83 - -"
+    },
+    {
+      "label": "Reservas consolidadas 941.434,00 -",
+      "lado": null,
+      "page": 40,
+      "section": "10.780.554,17           287.659,64        3.404.976,42     14.473.190,23 / (7.516.666,31)                                               405.516,94 / Ejercicio 30/06/2019",
+      "values": [
+        -3.24688
+      ],
+      "origen": "estado 49",
+      "glosa": "Reservas consolidadas 941.434,00 -"
+    },
+    {
+      "label": "Provisión por litigios 40.505,03 - - - -",
+      "lado": null,
+      "page": 41,
+      "section": "Ejercicio 30/06/2019",
+      "values": [
+        0.040505
+      ],
+      "origen": "estado 51",
+      "glosa": "Provisión por litigios 40.505,03 - - - -"
+    },
+    {
+      "label": "Provisión para responsabilidades",
+      "lado": null,
+      "page": 41,
+      "section": "Ejercicio 30/06/2019",
+      "values": [
+        1.159506
+      ],
+      "origen": "estado 51",
+      "glosa": "Provisión para responsabilidades"
+    },
+    {
+      "label": "Provisiones para impuestos 175.500,00 - - (104.953,00) -",
+      "lado": "expense",
+      "page": 41,
+      "section": "Ejercicio 30/06/2019",
+      "values": [
+        0.070547
+      ],
+      "origen": "estado 51",
+      "glosa": "Provisiones para impuestos 175.500,00 - - (104.953,00) -"
+    },
+    {
+      "label": "Obligaciones por prestaciones a largo plazo al personal 575.250,45 1.261.538,50 - (300.000,00) -",
+      "lado": null,
+      "page": 41,
+      "section": "Ejercicio 30/06/2019",
+      "values": [
+        1.536789
+      ],
+      "origen": "estado 51",
+      "glosa": "Obligaciones por prestaciones a largo plazo al personal 575.250,45 1.261.538,50 - (300.000,00) -"
+    },
+    {
+      "label": "Sueldos y Salarios",
+      "lado": null,
+      "page": 55,
+      "section": "3.349.338,20          5.125.750,03 / 16.3       Gastos de personal",
+      "values": [
+        80.179431
+      ],
+      "origen": "estado 76",
+      "glosa": "Sueldos y Salarios"
+    },
+    {
+      "label": "Indemnizaciones",
+      "lado": null,
+      "page": 55,
+      "section": "3.349.338,20          5.125.750,03 / 16.3       Gastos de personal",
+      "values": [
+        1.833809
+      ],
+      "origen": "estado 76",
+      "glosa": "Indemnizaciones"
+    },
+    {
+      "label": "Cargas sociales",
+      "lado": null,
+      "page": 55,
+      "section": "3.349.338,20          5.125.750,03 / 16.3       Gastos de personal",
+      "values": [
+        3.451046
+      ],
+      "origen": "estado 76",
+      "glosa": "Cargas sociales"
+    },
+    {
+      "label": "Otras cargas sociales",
+      "lado": null,
+      "page": 55,
+      "section": "3.349.338,20          5.125.750,03 / 16.3       Gastos de personal",
+      "values": [
+        0.043618
+      ],
+      "origen": "estado 76",
+      "glosa": "Otras cargas sociales"
+    },
+    {
+      "label": "Construcciones 27.265.544,86 7.450,25 - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2020 / Coste",
+      "values": [
+        27.272995
+      ],
+      "origen": "estado 29",
+      "glosa": "Construcciones 27.265.544,86 7.450,25 - -"
+    },
+    {
+      "label": "Estadios y pabellones deportivos 33.025.625,07 975.441,07 (8.345,35) -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2020 / Coste",
+      "values": [
+        33.992721
+      ],
+      "origen": "estado 29",
+      "glosa": "Estadios y pabellones deportivos 33.025.625,07 975.441,07 (8.345,35) -"
+    },
+    {
+      "label": "Instalaciones técnicas 6.505.095,47 181.941,40 - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2020 / Coste",
+      "values": [
+        6.687037
+      ],
+      "origen": "estado 29",
+      "glosa": "Instalaciones técnicas 6.505.095,47 181.941,40 - -"
+    },
+    {
+      "label": "Maquinaria 271.234,00 - - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2020 / Coste",
+      "values": [
+        0.271234
+      ],
+      "origen": "estado 29",
+      "glosa": "Maquinaria 271.234,00 - - -"
+    },
+    {
+      "label": "Otras instalaciones 1.558.108,53 126.718,94 - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2020 / Coste",
+      "values": [
+        1.684827
+      ],
+      "origen": "estado 29",
+      "glosa": "Otras instalaciones 1.558.108,53 126.718,94 - -"
+    },
+    {
+      "label": "Mobiliario 1.323.322,49 69.684,56 - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2020 / Coste",
+      "values": [
+        1.393007
+      ],
+      "origen": "estado 29",
+      "glosa": "Mobiliario 1.323.322,49 69.684,56 - -"
+    },
+    {
+      "label": "Equipos para procesos de información 660.922,22 93.947,73 (1.155,57) -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2020 / Coste",
+      "values": [
+        0.753714
+      ],
+      "origen": "estado 29",
+      "glosa": "Equipos para procesos de información 660.922,22 93.947,73 (1.155,57) -"
+    },
+    {
+      "label": "Turismos y furgonetas/Elementos de transporte 59.979,49 - - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2020 / Coste",
+      "values": [
+        0.059979
+      ],
+      "origen": "estado 29",
+      "glosa": "Turismos y furgonetas/Elementos de transporte 59.979,49 - - -"
+    },
+    {
+      "label": "Otro inmovilizado material 245.867,10 122.552,56 - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2020 / Coste",
+      "values": [
+        0.36842
+      ],
+      "origen": "estado 29",
+      "glosa": "Otro inmovilizado material 245.867,10 122.552,56 - -"
+    },
+    {
+      "label": "Inmovilizado en curso 218.415,90 - (0,46) -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2020 / Coste",
+      "values": [
+        0.218415
+      ],
+      "origen": "estado 29",
+      "glosa": "Inmovilizado en curso 218.415,90 - (0,46) -"
+    },
+    {
+      "label": "Construcciones 24.461.678,18 2.805.565,23 (1.698,55) -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2019 / Coste",
+      "values": [
+        27.265545
+      ],
+      "origen": "estado 31",
+      "glosa": "Construcciones 24.461.678,18 2.805.565,23 (1.698,55) -"
+    },
+    {
+      "label": "Estadios y pabellones deportivos 32.945.065,19 85.869,83 (5.309,95) -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2019 / Coste",
+      "values": [
+        33.025625
+      ],
+      "origen": "estado 31",
+      "glosa": "Estadios y pabellones deportivos 32.945.065,19 85.869,83 (5.309,95) -"
+    },
+    {
+      "label": "Instalaciones técnicas 6.489.595,47 15.500,00 - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2019 / Coste",
+      "values": [
+        6.505095
+      ],
+      "origen": "estado 31",
+      "glosa": "Instalaciones técnicas 6.489.595,47 15.500,00 - -"
+    },
+    {
+      "label": "Maquinaria 199.107,16 72.126,84 - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2019 / Coste",
+      "values": [
+        0.271234
+      ],
+      "origen": "estado 31",
+      "glosa": "Maquinaria 199.107,16 72.126,84 - -"
+    },
+    {
+      "label": "Otras instalaciones 1.477.962,87 80.145,66 - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2019 / Coste",
+      "values": [
+        1.558109
+      ],
+      "origen": "estado 31",
+      "glosa": "Otras instalaciones 1.477.962,87 80.145,66 - -"
+    },
+    {
+      "label": "Mobiliario 1.032.567,14 290.755,35 - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2019 / Coste",
+      "values": [
+        1.323322
+      ],
+      "origen": "estado 31",
+      "glosa": "Mobiliario 1.032.567,14 290.755,35 - -"
+    },
+    {
+      "label": "Equipos para procesos de información 459.613,98 206.482,30 (5.174,06) -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2019 / Coste",
+      "values": [
+        0.660922
+      ],
+      "origen": "estado 31",
+      "glosa": "Equipos para procesos de información 459.613,98 206.482,30 (5.174,06) -"
+    },
+    {
+      "label": "Otro inmovilizado material 187.219,23 58.647,87 - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2019 / Coste",
+      "values": [
+        0.245867
+      ],
+      "origen": "estado 31",
+      "glosa": "Otro inmovilizado material 187.219,23 58.647,87 - -"
+    },
+    {
+      "label": "Inmovilizado en curso 196.250,46 22.164,98 - -",
+      "lado": "expense",
+      "page": 31,
+      "section": "Ejercicio 30/06/2019 / Coste",
+      "values": [
+        0.218415
+      ],
+      "origen": "estado 31",
+      "glosa": "Inmovilizado en curso 196.250,46 22.164,98 - -"
+    },
+    {
+      "label": "Derechos federativos de jugadores",
+      "lado": "expense",
+      "page": 29,
+      "section": "Altas y / Ejercicio 30/06/2020 / Coste",
+      "values": [
+        115.603863
+      ],
+      "origen": "estado 23",
+      "glosa": "Derechos federativos de jugadores"
+    },
+    {
+      "label": "Aplicaciones informáticas 574.405,25 70.338,40 -",
+      "lado": "expense",
+      "page": 29,
+      "section": "Altas y / Ejercicio 30/06/2020 / Coste",
+      "values": [
+        0.644744
+      ],
+      "origen": "estado 23",
+      "glosa": "Aplicaciones informáticas 574.405,25 70.338,40 -"
+    },
+    {
+      "label": "Concesiones administrativas 391.562,49 648.977,65 -",
+      "lado": "expense",
+      "page": 29,
+      "section": "Altas y / Ejercicio 30/06/2020 / Coste",
+      "values": [
+        1.04054
+      ],
+      "origen": "estado 23",
+      "glosa": "Concesiones administrativas 391.562,49 648.977,65 -"
+    },
+    {
+      "label": "Patentes, licencias y marcas 3.402,00 - -",
+      "lado": "expense",
+      "page": 29,
+      "section": "Altas y / Ejercicio 30/06/2020 / Coste",
+      "values": [
+        0.003402
+      ],
+      "origen": "estado 23",
+      "glosa": "Patentes, licencias y marcas 3.402,00 - -"
+    },
+    {
+      "label": "Derecho de participación en competiciones 110.000,00 - -",
+      "lado": "expense",
+      "page": 29,
+      "section": "Altas y / Ejercicio 30/06/2020 / Coste",
+      "values": [
+        0.11
+      ],
+      "origen": "estado 23",
+      "glosa": "Derecho de participación en competiciones 110.000,00 - -"
+    },
+    {
+      "label": "Derechos deportivos de jugadores - 90.000,00 -",
+      "lado": "expense",
+      "page": 29,
+      "section": "Altas y / Ejercicio 30/06/2020 / Coste",
+      "values": [
+        0.09
+      ],
+      "origen": "estado 23",
+      "glosa": "Derechos deportivos de jugadores - 90.000,00 -"
+    },
+    {
+      "label": "Estadios y Pabellones deportivos",
+      "lado": "expense",
+      "page": 32,
+      "section": "de junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / en uso, con el siguiente detalle:",
+      "values": [
+        6.072461
+      ],
+      "origen": "estado 33",
+      "glosa": "Estadios y Pabellones deportivos"
+    },
+    {
+      "label": "Instalaciones técnicas y maquinaria",
+      "lado": "expense",
+      "page": 32,
+      "section": "de junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / en uso, con el siguiente detalle:",
+      "values": [
+        4.948963
+      ],
+      "origen": "estado 33",
+      "glosa": "Instalaciones técnicas y maquinaria"
+    },
+    {
+      "label": "Mobiliario",
+      "lado": "expense",
+      "page": 32,
+      "section": "de junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / en uso, con el siguiente detalle:",
+      "values": [
+        0.171617
+      ],
+      "origen": "estado 33",
+      "glosa": "Mobiliario"
+    },
+    {
+      "label": "Equipos para procesos de información",
+      "lado": "expense",
+      "page": 32,
+      "section": "de junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / en uso, con el siguiente detalle:",
+      "values": [
+        0.054651
+      ],
+      "origen": "estado 33",
+      "glosa": "Equipos para procesos de información"
+    },
+    {
+      "label": "Otras instalaciones y material deportivo",
+      "lado": "expense",
+      "page": 32,
+      "section": "de junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / en uso, con el siguiente detalle:",
+      "values": [
+        1.057168
+      ],
+      "origen": "estado 33",
+      "glosa": "Otras instalaciones y material deportivo"
+    },
+    {
+      "label": "Otro inmovilizado material",
+      "lado": "expense",
+      "page": 32,
+      "section": "de junio de 2020 y 2019. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / en uso, con el siguiente detalle:",
+      "values": [
+        0.215468
+      ],
+      "origen": "estado 33",
+      "glosa": "Otro inmovilizado material"
+    },
+    {
+      "label": "Material deportivo -",
+      "lado": "expense",
+      "page": 38,
+      "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+      "values": [
+        -731.5155
+      ],
+      "origen": "estado 46",
+      "glosa": "Material deportivo -"
+    },
+    {
+      "label": "Prima fichaje jugadores del primer equipo",
+      "lado": "expense",
+      "page": 38,
+      "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+      "values": [
+        -1663.32814
+      ],
+      "origen": "estado 46",
+      "glosa": "Prima fichaje jugadores del primer equipo"
+    },
+    {
+      "label": "Gastos asociados a la TV -",
+      "lado": "expense",
+      "page": 38,
+      "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+      "values": [
+        -353
+      ],
+      "origen": "estado 46",
+      "glosa": "Gastos asociados a la TV -"
+    },
+    {
+      "label": "Intereses préstamo",
+      "lado": "expense",
+      "page": 38,
+      "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+      "values": [
+        -553.63446
+      ],
+      "origen": "estado 46",
+      "glosa": "Intereses préstamo"
+    },
+    {
+      "label": "Gastos diversos",
+      "lado": "expense",
+      "page": 38,
+      "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+      "values": [
+        -110.41562
+      ],
+      "origen": "estado 46",
+      "glosa": "Gastos diversos"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 38,
+      "section": "El detalle de los gastos anticipados es el siguiente: / Periodificaciones largo plazo / Periodificaciones corto plazo",
+      "values": [
+        -0.10626
+      ],
+      "origen": "estado 46",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Derechos federativos de jugadores",
+      "lado": "expense",
+      "page": 29,
+      "section": "(31.261.627,95) (36.824.267,17)     5.879.269,62             (62.206.625,51) / Ejercicio 30/06/2019 / Coste",
+      "values": [
+        65.545428
+      ],
+      "origen": "estado 25",
+      "glosa": "Derechos federativos de jugadores"
+    },
+    {
+      "label": "Aplicaciones informáticas 482.121,50 92.283,75 -",
+      "lado": "expense",
+      "page": 29,
+      "section": "(31.261.627,95) (36.824.267,17)     5.879.269,62             (62.206.625,51) / Ejercicio 30/06/2019 / Coste",
+      "values": [
+        0.574405
+      ],
+      "origen": "estado 25",
+      "glosa": "Aplicaciones informáticas 482.121,50 92.283,75 -"
+    },
+    {
+      "label": "Concesiones administrativas - 391.562,49 -",
+      "lado": "expense",
+      "page": 29,
+      "section": "(31.261.627,95) (36.824.267,17)     5.879.269,62             (62.206.625,51) / Ejercicio 30/06/2019 / Coste",
+      "values": [
+        0.391562
+      ],
+      "origen": "estado 25",
+      "glosa": "Concesiones administrativas - 391.562,49 -"
+    }
+  ]
+}

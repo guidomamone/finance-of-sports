@@ -1,0 +1,299 @@
+{
+ "md": "Clubes/España/Real Madrid/informe-economico-2020-2021.md",
+ "generatedAt": "2026-09-30T22:49:18.415Z",
+ "rubrosHuella": "79737d5b02d8b2e9593599cb8c672d06c2089b5c",
+ "rubros": [
+  {
+   "label": "Jugadores y técnicos 1ºequipo fútbol 299.213 1.625 1.450 610 605 766 304.269 Importe plantilla inscribible LNFP 301.738 1.625 - 4.165 621",
+   "lado": "expense",
+   "page": 60,
+   "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2020/2021",
+   "choice": "wages_squad",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadores y técnicos 2º equipo fútbol 6.785 - - - 434 - 7.219 Importe plantilla no inscribible LNFP 39.956",
+   "lado": "expense",
+   "page": 60,
+   "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2020/2021",
+   "choice": "wages_squad",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadores y técnicos categorías inferiores fútbol 6.309 - 1 -",
+   "lado": "expense",
+   "page": 60,
+   "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2020/2021",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadoras y técnicos sección femenina 1.701 - - - 335 -",
+   "lado": "expense",
+   "page": 60,
+   "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2020/2021",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Personal no deportivo 43.415 - 31 - 5.478",
+   "lado": "expense",
+   "page": 60,
+   "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2020/2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos de explotación",
+   "lado": "expense",
+   "page": 68,
+   "section": "Ingresos estados financieros",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Diferencia 164.393 85.762 (8.608) Amortización del inmovilizado",
+   "lado": "revenue",
+   "page": 68,
+   "section": "Ingresos estados financieros",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Concesiones",
+   "lado": "expense",
+   "page": 34,
+   "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangi- / miles €                                       30/06/2021           30/06/2020",
+   "choice": "other_amortisation",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadores y técnicos 1º equipo fútbol 301.738 1.625 - 4.165 621",
+   "lado": "expense",
+   "page": 60,
+   "section": "Sueldos y   Derechos Indemniz./   Primas      Seguridad Otras cargas Total gastos",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadores y técnicos 2º equipo fútbol 7.372 - 1.561 - 276 -",
+   "lado": "expense",
+   "page": 60,
+   "section": "Sueldos y   Derechos Indemniz./   Primas      Seguridad Otras cargas Total gastos",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadores y técnicos categorías inferiores fútbol 5.945 - 200 -",
+   "lado": "expense",
+   "page": 60,
+   "section": "Sueldos y   Derechos Indemniz./   Primas      Seguridad Otras cargas Total gastos",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Personal no deportivo 45.016 - 12 -",
+   "lado": "expense",
+   "page": 60,
+   "section": "Sueldos y   Derechos Indemniz./   Primas      Seguridad Otras cargas Total gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "se han imputado en la temporada 2020/2021 (Ver nota 2.2). Activos por diferencias temporarias deducibles",
+   "lado": "expense",
+   "page": 50,
+   "section": "El saldo de la temporada anterior correspondía a la parte de / Activos por impuesto corriente (nota 8.2)                         2.085       12.774 / ingresos correspondientes a la temporada 2019/2020 que",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1238
+  },
+  {
+   "label": "Créditos fiscales",
+   "lado": "expense",
+   "page": 50,
+   "section": "El saldo de la temporada anterior correspondía a la parte de / Activos por impuesto corriente (nota 8.2)                         2.085       12.774 / ingresos correspondientes a la temporada 2019/2020 que",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 991
+  },
+  {
+   "label": "Hasta un año",
+   "lado": "expense",
+   "page": 37,
+   "section": "mientos operativos son los siguientes: / Ejercicio 2019/2020 / miles €                                     30/06/2021   30/06/2020 / Amortización   Valor neto / miles €                                Coste     acumulada     contable",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "depreciation",
+     0.12
+    ],
+    [
+     "other_amortisation",
+     0.1
+    ]
+   ],
+   "tokens": 918
+  },
+  {
+   "label": "Construcciones",
+   "lado": "expense",
+   "page": 37,
+   "section": "mientos operativos son los siguientes: / Ejercicio 2019/2020 / miles €                                     30/06/2021   30/06/2020 / Amortización   Valor neto / miles €                                Coste     acumulada     contable",
+   "choice": "depreciation",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "depreciation",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 921
+  },
+  {
+   "label": "Otro inmovilizado intangible (125.045) - - -",
+   "lado": "expense",
+   "page": 34,
+   "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangi- / miles €                                       30/06/2021           30/06/2020",
+   "choice": "other_amortisation",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_amortisation",
+     0.7
+    ],
+    [
+     "depreciation",
+     0.29
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1127
+  },
+  {
+   "label": "Entre uno y cinco años",
+   "lado": "expense",
+   "page": 37,
+   "section": "mientos operativos son los siguientes: / Ejercicio 2019/2020 / miles €                                     30/06/2021   30/06/2020 / Amortización   Valor neto / miles €                                Coste     acumulada     contable",
+   "choice": "other_expenses",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "other_amortisation",
+     0.31
+    ],
+    [
+     "player_amortisation",
+     0.3
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Partidas conciliatorias Gastos financieros",
+   "lado": "expense",
+   "page": 68,
+   "section": "Ingresos estados financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 990
+  },
+  {
+   "label": "Aplicaciones informáticas (15.210) (485) 4.304 -",
+   "lado": "expense",
+   "page": 34,
+   "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangi- / miles €                                       30/06/2021           30/06/2020",
+   "choice": "other_amortisation",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_amortisation",
+     0.68
+    ],
+    [
+     "depreciation",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 961
+  }
+ ]
+}

@@ -1,0 +1,265 @@
+{
+ "md": "Clubes/República Checa/Hradec Králové/SL51_2022.md",
+ "pdf": "Clubes/República Checa/Hradec Králové/SL51_2022.pdf",
+ "club": "hradec-kralove",
+ "year": 2022,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:44.608Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 44,
+  "notasUsadas": [
+   "24"
+  ]
+ },
+ "ladoConocido": 14,
+ "rubros": [
+  {
+   "label": "Ostatní finanční výnosy",
+   "lado": "revenue",
+   "page": 19,
+   "section": "",
+   "values": [
+    0.000146
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Ostatní finanční náklady",
+   "lado": "expense",
+   "page": 19,
+   "section": "",
+   "values": [
+    0.000262
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Tržby z prodeje výrobků a služeb",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.041548
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Výkonová spotřeba (součet A.1. až A.3.)",
+   "lado": null,
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.07754
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Spotřeba materiálu a energie",
+   "lado": null,
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.008422
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Služby",
+   "lado": null,
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.069118
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Osobní náklady (součet D.1. až D.2.)",
+   "lado": "expense",
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.014196
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Mzdové náklady",
+   "lado": "expense",
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.011394
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Náklady na sociální zabezpečení, zdravotní pojištění a ostatní náklady",
+   "lado": "expense",
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.002802
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Náklady na sociální zabezpečení a zdravotní pojištění",
+   "lado": "expense",
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.002802
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Úpravy hodnot v provozní oblasti (součet E.1. až E.3.)",
+   "lado": null,
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.008077
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Úpravy hodnot dlouhodobého nehmotného a hmotného majetku",
+   "lado": null,
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.008077
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Úpravy hodnot dlouhodobého nehmotného a hmotného majetku - trvalé",
+   "lado": null,
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.008077
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Ostatní provozní výnosy (součet III.1 až III.3.)",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.07338
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Tržby z prodaného dlouhodobého majetku",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.033431
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Tržby z prodaného materiálu",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.00022
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Jiné provozní výnosy",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.039729
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Ostatní provozní náklady (součet F.1. až F.5.)",
+   "lado": "expense",
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.008366
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Zůstatková cena prodaného dlouhodobého majetku",
+   "lado": null,
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.001283
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Daně a poplatky",
+   "lado": "expense",
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.000009
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Jiné provozní náklady",
+   "lado": "expense",
+   "page": 18,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY, druhové členění",
+   "values": [
+    0.007074
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Základní kapitál",
+   "lado": null,
+   "page": 26,
+   "section": "# 7.3. Údaje o pohledávkách a závazcích z titulu uplatnění zástavního a zajišťovacího / # 7.4. Závazky nesledované v účetnictví a neuvedené v rozvaze / # 8. Sestavení výkazu zisku a ztráty / # 9. Vlastní kapitál / # 9.1. Složky vlastního kapitálu",
+   "values": [
+    17
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Ostatní kapitál. fondy",
+   "lado": null,
+   "page": 26,
+   "section": "# 7.3. Údaje o pohledávkách a závazcích z titulu uplatnění zástavního a zajišťovacího / # 7.4. Závazky nesledované v účetnictví a neuvedené v rozvaze / # 8. Sestavení výkazu zisku a ztráty / # 9. Vlastní kapitál / # 9.1. Složky vlastního kapitálu",
+   "values": [
+    5.101
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Zákonný rezervní fond",
+   "lado": null,
+   "page": 26,
+   "section": "# 7.3. Údaje o pohledávkách a závazcích z titulu uplatnění zástavního a zajišťovacího / # 7.4. Závazky nesledované v účetnictví a neuvedené v rozvaze / # 8. Sestavení výkazu zisku a ztráty / # 9. Vlastní kapitál / # 9.1. Složky vlastního kapitálu",
+   "values": [
+    1.481
+   ],
+   "origen": "estado 22"
+  }
+ ]
+}

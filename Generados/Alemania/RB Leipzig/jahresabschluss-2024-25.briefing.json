@@ -1,0 +1,215 @@
+{
+  "club": "rbleipzig-de",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/RB Leipzig/jahresabschluss-2024-25.md",
+  "generatedAt": "2026-09-30T22:37:57.111Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 51,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 5,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 4,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Erhaltene Anzahlungen auf Bestellungen",
+          "values": [
+            "100.829,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "6.458.219,47"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Verbindlichkeiten aus Transfer",
+          "values": [
+            "192.890.292,95"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht (Gesellschafter)",
+          "values": [
+            "163.976.903,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Sonstige Verbindlichkeiten",
+          "values": [
+            "7.140.003,68"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "UNTERNEHMENSREGISTER / EUR EUR TEUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "14. Gewinnvortrag aus dem Vorjahr",
+          "values": [
+            "15.992.218,38",
+            "15.992"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "15. Ausschüttung",
+          "values": [
+            "1.600.938,78",
+            "4.690"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "16. Bilanzgewinn",
+          "values": [
+            "15.992.218,38",
+            "15.992"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "UNTERNEHMENSREGISTER / In TEUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "3. Verbindlichkeiten aus Transfers",
+          "values": [
+            "120.252"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht",
+          "values": [
+            "14.314"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Sonstige Verbindlichkeiten",
+          "values": [
+            "7.024"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gesamt",
+          "values": [
+            "147.678"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "In TEUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Erhaltene Anzahlungen auf Bestellungen",
+          "values": [
+            "1.424"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "7.637"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Verbindlichkeiten aus Transfers",
+          "values": [
+            "106.565"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Verbindlichkeiten gegenüber Unternehmen, mit denen ein Beteiligungsverhältnis besteht",
+          "values": [
+            "29.788"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Sonstige Verbindlichkeiten",
+          "values": [
+            "10.343"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gesamt",
+          "values": [
+            "155.757"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "UNTERNEHMENSREGISTER / TEUR TEUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Bauten auf fremden Grundstücken",
+          "values": [
+            "4.728",
+            "5.767"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "8.957",
+            "9.373"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "de",
+    "query": "RB Leipzig",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

@@ -1,0 +1,1628 @@
+{
+  "club": "anderlecht-be",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Anderlecht/jaarrekening-2025-06-30-individual.md",
+  "generatedAt": "2026-09-30T22:42:22.843Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 265,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 43,
+  "relevantTableCount": 5,
+  "tables": [
+    {
+      "page": 6,
+      "section": "N° | 0823379451 VOL-kap 3.1 / Toel. Codes Boekjaar Vorig boekjaar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "VLOTTENDE ACTIVA 29/58",
+          "values": [
+            "34.773.239",
+            "33.328.181"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorderingen op meer dan één jaar",
+          "values": [
+            "5.743.123",
+            "9.010.274"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handelsvorderingen",
+          "values": [
+            "5.743.123",
+            "9.010.274"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Overige vorderingen 291",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Voorraden en bestellingen in uitvoering",
+          "values": [
+            "313.083",
+            "1.427.279"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorraden 30/36",
+          "values": [
+            "313.083",
+            "1.427.279"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Gereed product 33 / Handelsgoederen 34 313.083 1.427.279 / Onroerende goederen bestemd voor verkoop 35 / Vooruitbetalingen 36 / Bestellingen in uitvoering 37",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Vorderingen op ten hoogste één jaar 40/41",
+          "values": [
+            "26.355.927",
+            "20.891.328"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handelsvorderingen",
+          "values": [
+            "24.926.931",
+            "18.571.820"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige vorderingen",
+          "values": [
+            "1.428.996",
+            "2.319.508"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Geldbeleggingen 6.5.1/6.6 | 50/53 / Eigen aandelen 50 / Overige beleggingen 51/53",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Liquide middelen 54/58",
+          "values": [
+            "1.516.035",
+            "701.999"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 6.6 | 490/1",
+          "values": [
+            "845.072",
+            "1.297.301"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE ACTIVA 20/58",
+          "values": [
+            "73.063.219",
+            "65.408.675"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "PASSIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "EIGEN VERMOGEN 10/15",
+          "values": [
+            "5.195.994",
+            "5.086.401"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inbreng 67.1 f 10/11",
+          "values": [
+            "102.840.000",
+            "102.840.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaal",
+          "values": [
+            "102.840.000",
+            "102.840.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geplaatst kapitaal",
+          "values": [
+            "102.840.000",
+            "102.840.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Niet-opgevraagd kapitaal 101 / Buiten kapitaal IL / Uitgiftepremies 1100/10 / Andere 1109/19 / Herwaarderingsmeerwaarden 12",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Reserves",
+          "values": [
+            "228.106",
+            "228.106"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Onbeschikbare reserves 130/1",
+          "values": [
+            "209.356",
+            "209.356"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wettelijke reserve",
+          "values": [
+            "209.356",
+            "209.356"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Beschikbare reserves 133 / Overgedragen winst (verlies) @/O 14 -97.872.112 -97.981.705 / Kapitaalsubsidies 15 / Voorschot aan de vennoten op de verdeling van het netto- 49 / actief",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN",
+          "values": [
+            "2.143.270",
+            "1.944.270"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorzieningen voor risico's en kosten 160/5",
+          "values": [
+            "2.143.270",
+            "1.944.270"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 8,
+      "section": "[N° 0823379451 VOL-kap 3.2 / Toel. Codes Boekjaar Vorig boekjaar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "65.723.955",
+            "58.378.004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 69 |",
+          "values": [
+            "16.298.798",
+            "16.395.732"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "287.548",
+            "862.564"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Achtergestelde leningen 170 / Niet-achtergestelde obligatieleningen 171 / Leasingschulden en soortgelijke schulden 172 / Kredietinstellingen 173 287.548 862.564 / Overige leningen 174",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "15.411.250",
+            "14.303.667"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 1750",
+          "values": [
+            "15.411.250",
+            "14.303.667"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Te betalen wissels 1751 / Vooruitbetalingen op bestellingen 176",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige schulden 178/9",
+          "values": [
+            "600.000",
+            "1.229.502"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op ten hoogste één jaar 6.9 | 42/48",
+          "values": [
+            "40.767.437",
+            "35.641.569"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar die binnen het jaar vervallen",
+          "values": [
+            "14.565.549",
+            "11.903.711"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Financiële schulden 43 / Kredietinstellingen 430/8 / Overige leningen 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "17.052.848",
+            "13.286.771"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "17.052.848",
+            "13.286.771"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Te betalen wissels 441 / Vooruitbetalingen op bestellingen 46",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Schulden met betrekking tot belastingen, bezoldigingen en sociale lasten 69 |",
+          "values": [
+            "6.939.714",
+            "8.226.761"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "1.251.786",
+            "3.056.592"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "5.687.928",
+            "5.170.169"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige schulden 47148",
+          "values": [
+            "2.209.326",
+            "2.224.326"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 69 | 492/3",
+          "values": [
+            "8.657.720",
+            "6.340.703"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "73.063.219",
+            "65.408.675"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "RESULTATENREKENING",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "76A",
+          "values": [
+            "185.851",
+            "8.099"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "60/656A",
+          "values": [
+            "109.357.006",
+            "102.017.188"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "600/8 2.907.397 2.279.173 / 609 1.075.670 63.184 / 61 35.897.374 32.547.385 / 62 53.328.314 49.231.691 / 630 10.832.766 10.911.511",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "631/4",
+          "values": [
+            "505.416",
+            "-158.232"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "635/8",
+          "values": [
+            "199.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "640/8",
+          "values": [
+            "1.662.686",
+            "3.295.017"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "76B / 65/66B 1.477.749 1.171.255 / 65 1.477.749 1.086.254 / 650 982.904 742.704 / 651",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "652/9",
+          "values": [
+            "494.845",
+            "343.551"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "66B",
+          "values": [
+            "85.001"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "9903 341.734 2.710.476 / 780 / 680",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "67/77",
+          "values": [
+            "232.140",
+            "1.122.186"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "670/3",
+          "values": [
+            "266.119",
+            "1.139.825"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "TOELICHTING / STAAT VAN DE IMMATERIËLE VASTE ACTIVA / CONCESSIES, OCTROOIEN, LICENTIES, KNOWHOW, MERKEN EN / SOORTGELIJKE RECHTEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overboekingen van een post naar een andere (@/() | 8042",
+          "values": [
+            "9.403"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aanschaffingswaarde per einde van het boekjaar 8052",
+          "values": [
+            "48.062.560"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen per einde van het boekjaar 8122p KXXKKKKKKK",
+          "values": [
+            "16.716.242"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "Geboekt 8072 11.725.634 / Teruggenomen 8082 / Verworven van derden 8092 / Afgeboekt na overdrachten en buitengebruikstellingen 8102 7.996.130 / Overgeboekt van een post naar een andere @I) | 8112",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen per einde van het boekjaar 8122",
+          "values": [
+            "20.445.746"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR",
+          "values": [
+            "27.616.814"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "GOODWILL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aanschaffingswaarde per einde van het boekjaar 8053",
+          "values": [
+            "21.917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen per einde van het boekjaar 8123p KXXKKKKKKK",
+          "values": [
+            "21.917"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "STAAT VAN DE MATERIËLE VASTE ACTIVA / TERREINEN EN GEBOUWEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overboekingen van een post naar een andere (@I) | 8181",
+          "values": [
+            "463.031"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aanschaffingswaarde per einde van het boekjaar 8191",
+          "values": [
+            "65.519.635"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "Geboekt 8271 1.100.245 / Teruggenomen 8281 / Verworven van derden 8291 / Afgeboekt na overdrachten en buitengebruikstellingen 8301 566.925 / Overgeboekt van een post naar een andere @I) | 8311",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen per einde van het boekjaar 8321",
+          "values": [
+            "57.730.907"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR (22)",
+          "values": [
+            "7.788.728"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "INSTALLATIES, MACHINES EN UITRUSTING",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overboekingen van een post naar een andere @I() | 8182",
+          "values": [
+            "8.503"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aanschaffingswaarde per einde van het boekjaar 8192",
+          "values": [
+            "7.284.977"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "Geboekt 8272 381.649 / Teruggenomen 8282 / Verworven van derden 8292 / Afgeboekt na overdrachten en buitengebruikstellingen 8302 / Overgeboekt van een post naar een andere @I() | 8312",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen per einde van het boekjaar 8322",
+          "values": [
+            "5.749.566"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR (23)",
+          "values": [
+            "1.535.411"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "MEUBILAIR EN ROLLEND MATERIEEL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen per einde van het boekjaar 8323",
+          "values": [
+            "1.492.234"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR (24)",
+          "values": [
+            "8.562"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "ACTIVA IN AANBOUW EN VOORUITBETALINGEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overboekingen van een post naar een andere (@I() | 8186",
+          "values": [
+            "-480.937"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aanschaffingswaarde per einde van het boekjaar 8196",
+          "values": [
+            "1.288.462"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "STAAT VAN HET KAPITAAL EN DE AANDEELHOUDERSSTRUCTUUR / STAAT VAN HET KAPITAAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aandelen zonder nominale waarde",
+          "values": [
+            "102.840.000",
+            "9.128"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aandelen op naam 8702 DO 0",
+          "values": [
+            "9.218"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "STAAT VAN DE SCHULDEN EN OVERLOPENDE REKENINGEN (PASSIVA) / UITSPLITSING VAN DE SCHULDEN MET EEN OORSPRONKELIJKE LOOPTIJD VAN MEER DAN EÉN / JAAR, NAARGELANG HUN RESTERENDE LOOPTIJD",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden 8861",
+          "values": [
+            "13.260.259"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 8871",
+          "values": [
+            "13.260.259"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Te betalen wissels 8881 / Vooruitbetalingen op bestellingen 8891",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige schulden 8901",
+          "values": [
+            "778.192"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal der schulden op meer dan één jaar die binnen het jaar vervallen (42)",
+          "values": [
+            "14.565.549"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Achtergestelde leningen 8812 / Niet-achtergestelde obligatieleningen 8822 / Leasingschulden en soortgelijke schulden 8832 / Kredietinstellingen 8842 287.548 / Overige leningen 8852",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden 8862",
+          "values": [
+            "15.411.250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 8872",
+          "values": [
+            "15.411.250"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Te betalen wissels 8882 / Vooruitbetalingen op bestellingen 8892",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige schulden 8902",
+          "values": [
+            "400.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal der schulden met een resterende looptijd van meer dan één jaar doch hoogstens 5 jaar 8912",
+          "values": [
+            "16.098.798"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "GEWAARBORGDE SCHULDEN (BEGREPEN IN DE POSTEN 17 EN 42/48 VAN DE PASSIVA) / SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN SOCIALE LASTEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Niet-vervallen belastingschulden 9073",
+          "values": [
+            "1.001.786"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geraamde belastingschulden",
+          "values": [
+            "250.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 28,
+      "section": "OVERLOPENDE REKENINGEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Over te dragen opbrengsten",
+          "values": [
+            "7.745.736"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Toe te rekenen kosten",
+          "values": [
+            "911.984"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "BELASTINGEN EN TAKSEN / BELASTINGEN OP HET RESULTAAT",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Geraamde belastingsupplementen 9137",
+          "values": [
+            "250.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen op het resultaat van vorige boekjaren 9138",
+          "values": [
+            "16.119"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verschuldigde of betaalde belastingsupplementen 9139",
+          "values": [
+            "16.119"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "jaarrekening, en de geraamde belastbare winst / Verworpen uitgaven 1.191.662 / Boekjaar / Codes Boekjaar / Bronnen van belastinglatenties",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Actieve latenties 9141",
+          "values": [
+            "88.876.033"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gecumuleerde fiscale verliezen die aftrekbaar zijn van latere belastbare winsten 9142",
+          "values": [
+            "88.876.033"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 33,
+      "section": "BELASTING OP DE TOEGEVOEGDE WAARDE EN BELASTINGEN TEN LASTE / VAN DERDEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aan de vennootschap (aftrekbaar) 9145",
+          "values": [
+            "9.571.175",
+            "9.645.160"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Door de vennootschap 9146",
+          "values": [
+            "12.644.288",
+            "11.619.500"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 37,
+      "section": "AAN- OF VERKOOPVERBINTENISSEN DIE DE VENNOOTSCHAP ALS OPTIESCHRIJVER VAN CALL- EN / PUTOPTIES HEEFT / AARD, ZAKELIJK DOEL EN FINANCIËLE GEVOLGEN VAN BUITENBALANS REGELINGEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Borgstellingskrediet ten voordele van Concaardis",
+          "values": [
+            "70.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "De Vennootschap heeft voorwaardelijke verplichtingen die pas van kracht worden na vervulling van bepaalde resultaten en/of",
+          "values": [
+            "33.479.187"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 46,
+      "section": "ROYAL SPORTING CLUB ANDERLECHT NV / BTW BEO823.379.451 / 1.1. COMMENTAAR BĲ DE JAARREKENING",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Vaste Activa",
+          "values": [
+            "38.289.979,62",
+            "|52,41%",
+            "[32.080.493,61",
+            "|49,05%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vordering op meer dan één jaar 5.743.123,24 |",
+          "values": [
+            "7,86%",
+            "9.010.274,02",
+            "13,78%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subtotaal 44.033.102,86 [60,27% | 41.090.767,63 |",
+          "values": [
+            "62,82%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vlottende activa op ten hoogste één jaar 29.030.116,00 | 39,73% [24.317.907,34 |",
+          "values": [
+            "37,18%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE ACTIVA 73.063.218,86 [ 100,00% | 65.408.674,97 |",
+          "values": [
+            "100,00%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 46,
+      "section": "Passiva 30.06.2025 % 30.06.2024 %",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Eigen vermogen",
+          "values": [
+            "5.195.993,95",
+            "[7,11%",
+            "5.086.400,76",
+            "[7,78%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorzieningen en uitgestelde belastingen",
+          "values": [
+            "2.143.270,00",
+            "[2,93%",
+            "1.944.270,00",
+            "[2,97%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 16.298.798,01 f22,31% [16.395.732,34 |",
+          "values": [
+            "25,07%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subtotaal 23.638.061,96 |[32,35% [23.426.403,10 |",
+          "values": [
+            "35,82%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op ten hoogste één jaar 40.767.437,36 | 55,80% [35.641.568,61 |",
+          "values": [
+            "54,49%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen",
+          "values": [
+            "8.657.719,54",
+            "11,85%",
+            "|6.340.703,26",
+            "[9,69%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 73.063.218,86 | 100,00% [|",
+          "values": [
+            "65.408.674,97",
+            "[100,00%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 47,
+      "section": "Docusign Envelope ID: 522F27E1-05B0-41C5-AA15-E4EEA340A11C / Resultatenrekening (in EUR) 30.06.2025 % 30.06.2024 %",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Omzet 91.304.982,79 [82,25% |67.903.898,29 |",
+          "values": [
+            "64,21%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere bedrijfsopbrengsten",
+          "values": [
+            "19.517.775,25",
+            "|17,58%",
+            "|37.833.992,59",
+            "[35,78%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet-reccurente bedrijfsopbrengsten",
+          "values": [
+            "185.850,59",
+            "0,17%",
+            "8.099,15",
+            "0,01%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totale bedrijfsopbrengsten 111.008.608,63 | 100,00% | 105.745.990,03 |",
+          "values": [
+            "100,00%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aankopen handelsgoederen",
+          "values": [
+            "-3.983.067,00",
+            "[3,59%",
+            "-2.342.357,18",
+            "[2,22%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diensten en diverse goederen -35.897.373,88 [| 32,34% |-32.547.384,94 |",
+          "values": [
+            "30,78%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen -53.328.313,69 | 48,04% |-49.231.691,08 |",
+          "values": [
+            "46,56%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen -11.338.182,13 | 10,21% |-10.753.278,97 |",
+          "values": [
+            "10,17%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere bedrijfskosten -1.662.686,49 [1,50% -3.295.017,44 |",
+          "values": [
+            "3,12%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorzieningen voor risico’s en kosten",
+          "values": [
+            "-199.000,00",
+            "0,18%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet-recurrente bedrijfskosten",
+          "values": [
+            "-2.948.383,02",
+            "[2,66%",
+            "-3.847.457,73",
+            "[3,64%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bedrijfswinst(Bedrijfsverlies)",
+          "values": [
+            "1.651.602,42",
+            "1,49%",
+            "3.728.802,09",
+            "3,53%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financieel resultaat",
+          "values": [
+            "-1.309.868,79",
+            "[-1,18%",
+            "-933.325,12",
+            "-0,88%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet-recurrente financiële opbrengsten",
+          "values": [
+            "0,00",
+            "0,00%",
+            "0,00",
+            "0,00%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet-recurrente financiële kosten",
+          "values": [
+            "0,00",
+            "0,00%",
+            "85.001,00",
+            "-0,08%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen op het resultaat",
+          "values": [
+            "-232.140,44",
+            "-0,21%",
+            "[-1.122.186,39",
+            "|-1,06%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Te bestemmen winst (verlies) van het boekjaar",
+          "values": [
+            "109.593,19",
+            "0,10%",
+            "1.588.289,58",
+            "1,50%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 59,
+      "section": "TABEL VAN HET PERSONEELSVERLOOP TIJDENS HET BOEKJAAR / INGETREDEN / UITGETREDEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "205 58",
+          "values": [
+            "75,7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "210 27",
+          "values": [
+            "30,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "211 31",
+          "values": [
+            "45,5"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 59,
+      "section": "212 / 213 / … … 3. Totaal in voltij / Codes 1. Voltijds 2. Deeltijds . oitijdse / equivalenten",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "305 46",
+          "values": [
+            "63,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "310 22",
+          "values": [
+            "22,9"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "311 24",
+          "values": [
+            "40,4"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 59,
+      "section": "312 / 313 / 340 / 341",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "342 5",
+          "values": [
+            "5,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "343 41",
+          "values": [
+            "57,8"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 60,
+      "section": "INLICHTINGEN OVER DE OPLEIDINGEN VOOR DE WERKNEMERS TIJDENS HET BOEKJAAR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Nettokosten voor de vennootschap 5803 14.668 | 5813",
+          "values": [
+            "6.642"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "waarvan brutokosten rechtstreeks verbonden met de opleiding 58031 14.668 | 58131",
+          "values": [
+            "6.642"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 47,
+      "section": "Docusign Envelope ID: 522F27E1-05B0-41C5-AA15-E4EEA340A11C / Resultatenrekening (in EUR) 30.06.2025 % 30.06.2024 %",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totale bedrijfsopbrengsten 111.008.608,63 | 100,00% | 105.745.990,03 |",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"100,00%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 24,
+    "results": [
+      {
+        "label": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Voorzieningen voor risico's en kosten 160/5",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Voorzieningen voor risico's en kosten 160/5",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "exceptional_items",
+        "matchedLabel": "Voorzieningen voor risico's en kosten",
+        "similarity": 80
+      },
+      {
+        "label": "76A",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "76A",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "60/656A",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "60/656A",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-vervallen belastingschulden 9073",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-vervallen belastingschulden 9073",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Geraamde belastingschulden",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Geraamde belastingschulden",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Actieve latenties 9141",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Actieve latenties 9141",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gecumuleerde fiscale verliezen die aftrekbaar zijn van latere belastbare winsten 9142",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gecumuleerde fiscale verliezen die aftrekbaar zijn van latere belastbare winsten 9142",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Omzet 91.304.982,79 [82,25% |67.903.898,29 |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Omzet 91.304.982,79 [82,25% |67.903.898,29 |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andere bedrijfsopbrengsten",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Andere bedrijfsopbrengsten",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Andere bedrijfsopbrengsten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-reccurente bedrijfsopbrengsten",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Niet-recurrente bedrijfsopbrengsten",
+        "similarity": 50
+      },
+      {
+        "label": "Niet-reccurente bedrijfsopbrengsten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aankopen handelsgoederen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aankopen handelsgoederen",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Aankopen handelsgoederen, grond- en hulpstoffen",
+        "similarity": 50
+      },
+      {
+        "label": "Diensten en diverse goederen -35.897.373,88 [| 32,34% |-32.547.384,94 |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diensten en diverse goederen -35.897.373,88 [| 32,34% |-32.547.384,94 |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bezoldigingen -53.328.313,69 | 48,04% |-49.231.691,08 |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bezoldigingen -53.328.313,69 | 48,04% |-49.231.691,08 |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Afschrijvingen en waardeverminderingen -11.338.182,13 | 10,21% |-10.753.278,97 |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Afschrijvingen en waardeverminderingen -11.338.182,13 | 10,21% |-10.753.278,97 |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andere bedrijfskosten -1.662.686,49 [1,50% -3.295.017,44 |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andere bedrijfskosten -1.662.686,49 [1,50% -3.295.017,44 |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Voorzieningen voor risico’s en kosten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Voorzieningen voor risico’s en kosten",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "exceptional_items",
+        "matchedLabel": "Voorzieningen voor risico's en kosten",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Niet-recurrente bedrijfskosten",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Niet-recurrente bedrijfsopbrengsten",
+        "similarity": 50
+      },
+      {
+        "label": "Niet-recurrente bedrijfskosten",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "player_impairment",
+        "matchedLabel": "Niet-recurrente bedrijfskosten",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Bedrijfswinst(Bedrijfsverlies)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bedrijfswinst(Bedrijfsverlies)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financieel resultaat",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financieel resultaat",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-recurrente financiële opbrengsten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-recurrente financiële opbrengsten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-recurrente financiële kosten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-recurrente financiële kosten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Belastingen op het resultaat",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Belastingen op het resultaat",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Te bestemmen winst (verlies) van het boekjaar",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Te bestemmen winst (verlies) van het boekjaar",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Anderlecht",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

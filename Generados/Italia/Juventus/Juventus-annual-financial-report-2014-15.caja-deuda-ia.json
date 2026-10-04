@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2014-15.md",
+ "generado": "2026-10-04T18:00:14.265Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "*Amounts in euro*",
+ "caja": {
+  "lineas": [
+   1827
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Solo se incluyó la página del activo; falta la página del pasivo del balance, por lo que no se pueden identificar las líneas de deuda financiera (préstamos corrientes y no corrientes). La tabla de partes relacionadas (L3968) muestra 'Loans and other financial payables' corrientes por 149.501,0 miles de euros, pero no es una línea del balance y no incluye la porción no corriente."
+}

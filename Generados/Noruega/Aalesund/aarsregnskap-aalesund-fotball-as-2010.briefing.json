@@ -1,0 +1,7983 @@
+{
+  "club": "aalesund",
+  "year": 2010,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2010.md",
+  "generatedAt": "2026-09-30T22:05:58.043Z",
+  "numberFormat": "espacio como separador de miles (escandinavo)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 7,
+    "space": 724
+  },
+  "scannedWarning": true,
+  "tableCount": 53,
+  "relevantTableCount": 11,
+  "tables": [
+    {
+      "page": 1,
+      "section": "# ÅRSREGNSKAP FOR REGNSKAPSÅRET 2010 - GENERELL INFORMASJON / # Enheten",
+      "columns": [
+        "Organisasjonsnummer:",
+        "970 976 787"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Organisasjonsform:",
+          "values": [
+            "Aksjeselskap"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Foretaksnavn:",
+          "values": [
+            "ÅLESUND FOTBALL AS"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forretningsadresse:",
+          "values": [
+            "Sjømannsvegen 14 6008 ÅLESUND"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+      "columns": [
+        "Beløp i: NOK",
+        "Note",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Inntekter",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Salgsinntekter",
+          "values": [
+            "1",
+            "71 951 865",
+            "72 039 467"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum inntekter",
+          "values": [
+            "",
+            "71 951 865",
+            "72 039 467"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Varekostnader",
+          "values": [
+            "",
+            "3 159 362",
+            "4 633 806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lønnskostnader m.m.",
+          "values": [
+            "14",
+            "7 379 628",
+            "7 015 735"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avskrivning på driftsmidler og immaterielle eiendeler",
+          "values": [
+            "1, 2",
+            "7 428 953",
+            "8 270 695"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+          "values": [
+            "1",
+            "1 398 719",
+            "292 551"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen driftskostnad",
+          "values": [
+            "",
+            "55 176 496",
+            "59 043 942"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum kostnader",
+          "values": [
+            "",
+            "74 543 159",
+            "79 256 728"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Driftsresultat",
+          "values": [
+            "",
+            "-2 591 294",
+            "-7 217 261"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Finansinntekter og finanskostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Inntekt på investering i datterselskap",
+          "values": [
+            "",
+            "202 495",
+            "217 097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen renteinntekt",
+          "values": [
+            "",
+            "628 735",
+            "43 626"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finansinntekt",
+          "values": [
+            "18",
+            "3 351 832",
+            "1 298 759"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nedskrivning av andre finansielle anleggsmidler",
+          "values": [
+            "18",
+            "1 136 667",
+            "500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen rentekostnad",
+          "values": [
+            "",
+            "101 061",
+            "276 683"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finanskostnad",
+          "values": [
+            "",
+            "251 495",
+            "138 242"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Netto finans",
+          "values": [
+            "",
+            "2 693 838",
+            "644 556"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ordinært resultat før skattekostnad",
+          "values": [
+            "",
+            "102 544",
+            "-6 572 704"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Skattekostnad på ordinært resultat",
+          "values": [
+            "12",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årsresultat",
+          "values": [
+            "",
+            "102 544",
+            "-6 572 704"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Overføringer og disponeringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Avsatt til annen egenkapital",
+          "values": [
+            "",
+            "102 544",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overført fra overkursfond",
+          "values": [
+            "",
+            "",
+            "6 572 704"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum overføringer og disponeringer",
+          "values": [
+            "",
+            "102 544",
+            "-6 572 704"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "columns": [
+        "Beløp i: NOK",
+        "Note",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "EIENDELER",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immaterielle eiendeler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spillerlisenser, agenthonorar, sign on",
+          "values": [
+            "1",
+            "4 941 231",
+            "10 787 400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum immaterielle eiendeler",
+          "values": [
+            "",
+            "4 941 231",
+            "10 787 400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varige driftsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tomter, bygninger o.a. fast eiendom",
+          "values": [
+            "2, 5",
+            "7 469 331",
+            "7 561 140"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Driftsløsøre, inventar o. a. utstyr",
+          "values": [
+            "2, 5",
+            "1 425 227",
+            "1 855 250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum varige driftsmidler",
+          "values": [
+            "",
+            "8 894 558",
+            "9 416 390"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansielle anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investering i datterselskap",
+          "values": [
+            "3",
+            "110 000",
+            "110 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer i aksjer og andeler",
+          "values": [
+            "18",
+            "4 273 333",
+            "2 910 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obligasjoner",
+          "values": [
+            "5",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre fordringer",
+          "values": [
+            "5",
+            "10 000 000",
+            "10 000 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum finansielle anleggsmidler",
+          "values": [
+            "",
+            "14 383 333",
+            "13 020 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum anleggsmidler",
+          "values": [
+            "",
+            "28 219 122",
+            "33 223 790"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omløpsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum varer",
+          "values": [
+            "4, 5",
+            "1 025 182",
+            "1 144 824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fordringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kundefordringer",
+          "values": [
+            "5",
+            "19 509 862",
+            "3 535 262"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre fordringer",
+          "values": [
+            "",
+            "5 293 911",
+            "7 694 766"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum fordringer",
+          "values": [
+            "",
+            "24 803 773",
+            "11 230 028"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Markedsbaserte aksjer",
+          "values": [
+            "7",
+            "849 086",
+            "708 816"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum investeringer",
+          "values": [
+            "",
+            "849 086",
+            "708 816"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bankinnskudd, kontanter o. l.",
+          "values": [
+            "8",
+            "1 755 876",
+            "3 140 093"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum omløpsmidler",
+          "values": [
+            "",
+            "28 433 917",
+            "16 223 762"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM EIENDELER",
+          "values": [
+            "",
+            "56 653 040",
+            "49 447 551"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": null,
+      "columns": [
+        "Aksjekapital 16556 á 1000",
+        "10",
+        "16 556 000",
+        "16 556 000"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Overkursfond",
+          "values": [
+            "",
+            "2 056 632",
+            "2 056 632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum innskutt egenkapital",
+          "values": [
+            "",
+            "18 612 632",
+            "18 612 632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opptjent egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen egenkapital",
+          "values": [
+            "",
+            "102 544",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum opptjent egenkapital",
+          "values": [
+            "",
+            "102 544",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum egenkapital",
+          "values": [
+            "9",
+            "18 715 176",
+            "18 612 632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Langsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utsatt skatt",
+          "values": [
+            "12",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen langsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gjeld til",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "kredittinstitusjoner",
+          "values": [
+            "5",
+            "772 899",
+            "794 560"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Øvrig langsiktig gjeld",
+          "values": [
+            "5",
+            "5 261 986",
+            "5 202 856"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum annen langsiktig gjeld",
+          "values": [
+            "",
+            "6 034 885",
+            "5 997 416"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leverandørgjeld",
+          "values": [
+            "",
+            "9 917 784",
+            "8 377 439"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skyldig offentlige avgifter",
+          "values": [
+            "",
+            "653 880",
+            "735 023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen kortsiktig gjeld",
+          "values": [
+            "19",
+            "21 331 315",
+            "15 725 042"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum kortsiktig gjeld",
+          "values": [
+            "",
+            "31 902 979",
+            "24 837 504"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum gjeld",
+          "values": [
+            "",
+            "37 937 863",
+            "30 834 919"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM EGENKAPITAL OG GJELD",
+          "values": [
+            "",
+            "56 653 040",
+            "49 447 551"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNRESULTATREGNSKAP",
+      "columns": [
+        "Beløp i: NOK",
+        "Note",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Inntekter",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Salgsinntekter",
+          "values": [
+            "1",
+            "81 627 346",
+            "82 321 458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum inntekter",
+          "values": [
+            "",
+            "81 627 346",
+            "82 321 458"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Varekostnader",
+          "values": [
+            "",
+            "3 159 362",
+            "4 633 806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lønnskostnader m.m.",
+          "values": [
+            "14",
+            "7 341 747",
+            "7 135 433"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avskrivning på driftsmidler og immaterielle eiendeler",
+          "values": [
+            "1, 2",
+            "7 456 483",
+            "8 298 322"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+          "values": [
+            "1",
+            "1 398 719",
+            "292 551"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen driftskostnad",
+          "values": [
+            "",
+            "64 813 218",
+            "69 118 821"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum kostnader",
+          "values": [
+            "",
+            "84 169 530",
+            "89 478 933"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Driftsresultat",
+          "values": [
+            "",
+            "-2 542 183",
+            "-7 157 475"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Finansinntekter og finanskostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Annen renteinntekt",
+          "values": [
+            "",
+            "177 338",
+            "203 504"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finansinntekt",
+          "values": [
+            "18",
+            "3 951 832",
+            "1 299 161"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nedskrivning av andre finansielle anleggsmidler",
+          "values": [
+            "18",
+            "1 136 667",
+            "500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen rentekostnad",
+          "values": [
+            "",
+            "101 886",
+            "276 683"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finanskostnad",
+          "values": [
+            "",
+            "255 643",
+            "143 478"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Netto finans",
+          "values": [
+            "",
+            "2 634 974",
+            "582 504"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ordinært resultat før skattekostnad",
+          "values": [
+            "",
+            "92 790",
+            "-6 574 971"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Skattekostnad på ordinært resultat",
+          "values": [
+            "12",
+            "-2 094",
+            "-717"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ordinært resultat etter skattekostnad",
+          "values": [
+            "",
+            "94 884",
+            "-6 574 254"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Årsresultat",
+          "values": [
+            "",
+            "94 884",
+            "-6 574 254"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Overføringer og disponeringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Udekket tap",
+          "values": [
+            "",
+            "",
+            "6 574 254"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avsatt til annen egenkapital",
+          "values": [
+            "",
+            "94 884",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum overføringer og disponeringer",
+          "values": [
+            "",
+            "94 884",
+            "-6 574 254"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "columns": [
+        "Beløp i: NOK",
+        "Note",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "EIENDELER",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immaterielle eiendeler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spillere, agenthonorar, sign on",
+          "values": [
+            "1",
+            "4 941 231",
+            "10 787 400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum immaterielle eiendeler",
+          "values": [
+            "",
+            "4 941 231",
+            "10 787 400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varige driftsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tomter, bygninger o.a. fast eiendom",
+          "values": [
+            "2, 5",
+            "7 598 801",
+            "7 718 140"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Driftsløsøre, inventar o. a. utstyr",
+          "values": [
+            "2, 5",
+            "1 425 227",
+            "1 855 250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum varige driftsmidler",
+          "values": [
+            "",
+            "9 024 028",
+            "9 573 389"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansielle anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investering i datterselskap",
+          "values": [
+            "3",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer i aksjer og andeler",
+          "values": [
+            "18",
+            "4 273 333",
+            "2 910 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obligasjoner",
+          "values": [
+            "5",
+            "10 000 000",
+            "10 000 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum finansielle anleggsmidler",
+          "values": [
+            "",
+            "14 273 333",
+            "12 910 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum anleggsmidler",
+          "values": [
+            "",
+            "28 238 592",
+            "33 270 789"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omløpsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum varer",
+          "values": [
+            "4, 5",
+            "1 025 182",
+            "1 144 824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fordringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kundefordringer",
+          "values": [
+            "5",
+            "19 550 011",
+            "4 251 216"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre fordringer",
+          "values": [
+            "",
+            "5 005 306",
+            "7 534 896"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum fordringer",
+          "values": [
+            "",
+            "24 555 317",
+            "11 786 112"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Markedsbaserte aksjer",
+          "values": [
+            "7",
+            "849 086",
+            "708 816"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum investeringer",
+          "values": [
+            "",
+            "849 086",
+            "708 816"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bankinnskudd, kontanter o. l.",
+          "values": [
+            "8",
+            "2 110 133",
+            "3 394 817"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum omløpsmidler",
+          "values": [
+            "",
+            "28 539 718",
+            "17 034 570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM EIENDELER",
+          "values": [
+            "",
+            "56 778 310",
+            "50 305 359"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EGENKAPITAL OG GJELD",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Innskutt egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aksjekapital",
+          "values": [
+            "10",
+            "16 556 000",
+            "16 556 000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": null,
+      "columns": [
+        "Overkursfond",
+        "",
+        "2 175 770",
+        "2 175 770"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Sum innskutt egenkapital",
+          "values": [
+            "",
+            "18 731 770",
+            "18 731 770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opptjent egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen egenkapital",
+          "values": [
+            "",
+            "94 885",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum opptjent egenkapital",
+          "values": [
+            "",
+            "94 885",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum egenkapital",
+          "values": [
+            "9",
+            "18 826 654",
+            "18 731 770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Langsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utsatt skatt",
+          "values": [
+            "12",
+            "13 792",
+            "15 886"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum avsetninger for forpliktelser",
+          "values": [
+            "",
+            "13 792",
+            "15 886"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen langsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gjeld til kredittinstitusjoner",
+          "values": [
+            "5",
+            "772 899",
+            "794 560"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Øvrig langsiktig gjeld",
+          "values": [
+            "5",
+            "5 261 986",
+            "5 202 856"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum annen langsiktig gjeld",
+          "values": [
+            "",
+            "6 034 885",
+            "5 997 416"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leverandørgjeld",
+          "values": [
+            "",
+            "9 917 784",
+            "8 015 377"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skyldig offentlige avgifter",
+          "values": [
+            "",
+            "653 880",
+            "1 550 868"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen kortsiktig gjeld",
+          "values": [
+            "19",
+            "21 331 315",
+            "15 994 042"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum kortsiktig gjeld",
+          "values": [
+            "",
+            "31 902 979",
+            "25 560 287"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum gjeld",
+          "values": [
+            "",
+            "37 951 656",
+            "31 573 589"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUM EGENKAPITAL OG GJELD",
+          "values": [
+            "",
+            "56 778 310",
+            "50 305 359"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": "# Resultatregnskap - konsern",
+      "columns": [
+        "",
+        "Note",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Driftsinntekter og driftskostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Salgsinntekter",
+          "values": [
+            "1",
+            "81 627 346",
+            "82 321 458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum driftsinntekter",
+          "values": [
+            "",
+            "81 627 346",
+            "82 321 458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varekostnader",
+          "values": [
+            "",
+            "3 159 362",
+            "4 633 806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lønnskostnader m.m.",
+          "values": [
+            "14",
+            "7 341 747",
+            "7 135 433"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avskrivning på driftsmidler og immaterielle eiendeler",
+          "values": [
+            "1, 2",
+            "7 456 483",
+            "8 298 322"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nedskrivning av driftsmidler og immaterielle driftsmidler",
+          "values": [
+            "1",
+            "1 398 719",
+            "292 551"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen driftskostnad",
+          "values": [
+            "",
+            "64 813 218",
+            "69 118 821"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum driftskostnader",
+          "values": [
+            "",
+            "84 169 530",
+            "89 478 932"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Driftsresultat",
+          "values": [
+            "",
+            "-2 542 183",
+            "-7 157 475"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansinntekter og finanskostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen renteinntekt",
+          "values": [
+            "",
+            "177 338",
+            "203 504"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finansinntekt",
+          "values": [
+            "18",
+            "3 951 832",
+            "1 299 161"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nedskrivning av andre finansielle anleggsmidler",
+          "values": [
+            "18",
+            "1 136 667",
+            "500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen rentekostnad",
+          "values": [
+            "",
+            "101 886",
+            "276 683"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finanskostnad",
+          "values": [
+            "",
+            "255 643",
+            "143 478"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat av finansposter",
+          "values": [
+            "",
+            "2 634 974",
+            "582 504"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat for skattekostnad",
+          "values": [
+            "",
+            "92 790",
+            "-6 574 971"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skattekostnad på ordinært resultat",
+          "values": [
+            "12",
+            "-2 094",
+            "-717"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ordinært resultat",
+          "values": [
+            "",
+            "94 884",
+            "-6 574 254"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årsresultat",
+          "values": [
+            "",
+            "94 884",
+            "-6 574 254"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overforinger",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avsatt til annen egenkapital",
+          "values": [
+            "",
+            "94 884",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overført fra overkursfond",
+          "values": [
+            "",
+            "0",
+            "6 574 254"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum disponert",
+          "values": [
+            "",
+            "94 884",
+            "-6 574 254"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "columns": [
+        "",
+        "Note",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Eiendeler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immaterielle eiendeler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spillere, agenthonorar, sign on",
+          "values": [
+            "1",
+            "4 941 231",
+            "10 787 400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum immaterielle eiendeler",
+          "values": [
+            "",
+            "4 941 231",
+            "10 787 400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varige driftsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tomter, bygninger o.a. fast eiendom",
+          "values": [
+            "2, 5",
+            "7 598 801",
+            "7 718 140"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Driftslosore, inventar o.a. utstyr",
+          "values": [
+            "2, 5",
+            "1 425 227",
+            "1 855 250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum varige driftsmidler",
+          "values": [
+            "",
+            "9 024 028",
+            "9 573 389"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansielle anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer i aksjer og andeler",
+          "values": [
+            "18",
+            "4 273 333",
+            "2 910 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre fordringer",
+          "values": [
+            "5",
+            "10 000 000",
+            "10 000 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum finansielle anleggsmidler",
+          "values": [
+            "",
+            "14 273 333",
+            "12 910 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum anleggsmidler",
+          "values": [
+            "",
+            "28 238 592",
+            "33 270 789"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omlopsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lager av varer og annen beholdning",
+          "values": [
+            "4, 5",
+            "1 025 182",
+            "1 144 824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fordringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kundefordringer",
+          "values": [
+            "5",
+            "19 550 011",
+            "4 251 216"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre fordringer",
+          "values": [
+            "",
+            "5 005 306",
+            "7 534 896"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum fordringer",
+          "values": [
+            "",
+            "24 555 317",
+            "11 786 112"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Markedsbaserte aksjer",
+          "values": [
+            "7",
+            "849 086",
+            "708 816"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum investeringer",
+          "values": [
+            "",
+            "849 086",
+            "708 816"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bankinnskudd, kontanter o.l.",
+          "values": [
+            "8",
+            "2 110 133",
+            "3 394 817"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum omlopsmidler",
+          "values": [
+            "",
+            "28 539 718",
+            "17 034 570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum eiendeler",
+          "values": [
+            "",
+            "56 778 310",
+            "50 305 359"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "columns": [
+        "",
+        "Note",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Egenkapital og gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Innskutt egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aksjekapital",
+          "values": [
+            "10",
+            "16 556 000",
+            "16 556 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overkursfond",
+          "values": [
+            "",
+            "2 175 770",
+            "2 175 770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum innskutt egenkapital",
+          "values": [
+            "",
+            "18 731 770",
+            "18 731 770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opptjent egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen egenkapital",
+          "values": [
+            "",
+            "94 885",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum opptjent egenkapital",
+          "values": [
+            "",
+            "94 885",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum egenkapital",
+          "values": [
+            "9",
+            "18 826 654",
+            "18 731 770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avsetning for forpliktelser",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utsatt skatt",
+          "values": [
+            "12",
+            "13 792",
+            "15 886"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum avsetning for forpliktelser",
+          "values": [
+            "",
+            "13 792",
+            "15 886"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen langsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gjeld til kredittinstitusjoner",
+          "values": [
+            "5",
+            "772 899",
+            "794 560"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Øvrig langsiktig gjeld",
+          "values": [
+            "5",
+            "5 261 986",
+            "5 202 856"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum annen langsiktig gjeld",
+          "values": [
+            "",
+            "6 034 885",
+            "5 997 416"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leverandorgjeld",
+          "values": [
+            "",
+            "9 917 784",
+            "8 015 377"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skyldig offentlige avgifter",
+          "values": [
+            "",
+            "653 880",
+            "1 550 868"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen kortsiktig gjeld",
+          "values": [
+            "19",
+            "21 331 315",
+            "15 994 042"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum kortsiktig gjeld",
+          "values": [
+            "",
+            "31 902 979",
+            "25 560 287"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum gjeld",
+          "values": [
+            "",
+            "37 951 656",
+            "31 573 589"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum egenkapital og gjeld",
+          "values": [
+            "",
+            "56 778 310",
+            "50 305 359"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "# Indirekte kontantstrømsanalyse",
+      "columns": [
+        "",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Kontantstrømmer fra operasjonelle aktiviteter",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat for skattekostnad",
+          "values": [
+            "92 790",
+            "-6 574 971"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Tap/gevinst ved salg av anleggsmidler",
+          "values": [
+            "-9 854 873",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Ordinære avskrivninger",
+          "values": [
+            "7 456 483",
+            "8 298 322"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Nedskrivning anleggsmidler",
+          "values": [
+            "1 398 719",
+            "292 551"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Endring i varelager",
+          "values": [
+            "119 642",
+            "-150 777"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Endring i kundefordringer",
+          "values": [
+            "-15 298 795",
+            "1 537 172"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Endring i leverandørgjeld",
+          "values": [
+            "1 902 407",
+            "-1 011 473"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Nedskrivning investering andeler",
+          "values": [
+            "1 136 667",
+            "500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Verdijustering og gevinst aksjer",
+          "values": [
+            "-334 620",
+            "-245 996"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Endring i andre tidsavgrensningsposter",
+          "values": [
+            "6 969 875",
+            "4 105 710"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Netto kontantstrøm fra operasjonelle aktiviteter",
+          "values": [
+            "-6 411 704",
+            "6 750 538"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kontantstrømmer fra investeringsaktiviteter",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Innbetalinger ved salg av varige driftsmidler",
+          "values": [
+            "11 123 957",
+            "6 075 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Utbetalinger ved kjøp av varige driftsmidler",
+          "values": [
+            "3 728 171",
+            "11 829 636"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Innbetalinger ved salg av aksjer og andeler i andre foretak",
+          "values": [
+            "193 766",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Utbetalinger ved kjøp av andre investeringer",
+          "values": [
+            "2 500 000",
+            "1 910 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Netto kontantstrøm fra investeringsaktiviteter",
+          "values": [
+            "5 089 552",
+            "-7 664 636"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kontantstrømmer fra finansieringsaktiviteter",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Innbetalinger ved opptak av ny langsiktig gjeld",
+          "values": [
+            "59 130",
+            "800 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Utbetalinger ved nedbetaling av langsiktig gjeld",
+          "values": [
+            "21 661",
+            "177 314"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Netto kontantstrøm fra finansieringsaktiviteter",
+          "values": [
+            "37 469",
+            "622 686"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Netto endring i kontanter og kontantekvivalenter",
+          "values": [
+            "-1 284 683",
+            "-291 412"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Beh. av kont. og kontantekvivalenter ved per. begynnelse",
+          "values": [
+            "3 394 817",
+            "3 686 228"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Beh. av kont. og kontantekvivalenter ved per. slutt",
+          "values": [
+            "2 110 133",
+            "3 394 817"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "Følgende aksjonærer eier mer enn 10% av aksjekapitalen:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Aalesunds Fotballklubb - 5527 aksjer, tilsvarende",
+          "values": [
+            "33,81%."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Olav Nils Sunde - 5000 aksjer, tilsvarende",
+          "values": [
+            "30,2%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Sparebanken Møre - 2000 aksjer, tilsvarende",
+          "values": [
+            "12,08%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "# Konsernet Ålesund Fotball AS / ## Note 1 Immaterielle eiendeler",
+      "columns": [
+        "Morselskap",
+        "Spillere",
+        "Sign on fee",
+        "Sum"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anskaffelseskost 01.01.",
+          "values": [
+            "15 751 902",
+            "4 732 000",
+            "20 483 902"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang",
+          "values": [
+            "3 417 750",
+            "0",
+            "3 417 750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avgang",
+          "values": [
+            "5 710 602",
+            "0",
+            "5 710 602"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anskaffelseskost 31.12.",
+          "values": [
+            "13 459 050",
+            "4 732 000",
+            "18 191 050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Akkumulerte avskrivninger 31.12.",
+          "values": [
+            "8 538 700",
+            "3 312 400",
+            "11 851 100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Akkumulerte nedskrivninger 31.12.",
+          "values": [
+            "1 398 719",
+            "0",
+            "1 398 719"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balansefort verdi 31.12.",
+          "values": [
+            "3 521 631",
+            "1 419 600",
+            "4 941 231"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Årets avskrivninger",
+          "values": [
+            "6 575 819",
+            "1 419 600",
+            "7 995 419"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forventet økonomisk levetid",
+          "values": [
+            "2-4 år",
+            "3-4 år",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avskrivningsplan",
+          "values": [
+            "Lineær",
+            "Lineær",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "Selskapet har i 2010 solgt spillerlisenser med kr. 7.159.514,- i gevinst.",
+      "columns": [
+        "Konsernet",
+        "Spillere",
+        "Sign on fee",
+        "Sum"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anskaffelseskost 01.01.",
+          "values": [
+            "15 751 902",
+            "4 732 000",
+            "20 483 902"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang",
+          "values": [
+            "3 417 750",
+            "0",
+            "3 417 750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avgang",
+          "values": [
+            "5 710 602",
+            "0",
+            "5 710 602"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anskaffelseskost 31.12.",
+          "values": [
+            "13 459 050",
+            "4 732 000",
+            "18 191 050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Akkumulerte avskrivninger 31.12.",
+          "values": [
+            "8 538 700",
+            "3 312 400",
+            "11 851 100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Akkumulerte nedskrivninger 31.12.",
+          "values": [
+            "1 398 719",
+            "0",
+            "1 398 719"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balansefort verdi 31.12.",
+          "values": [
+            "3 521 631",
+            "1 419 600",
+            "4 941 231"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Årets avskrivninger",
+          "values": [
+            "6 575 819",
+            "1 419 600",
+            "7 995 419"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forventet økonomisk levetid",
+          "values": [
+            "2-4 år",
+            "3-4 år",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avskrivningsplan",
+          "values": [
+            "Lineær",
+            "Lineær",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "# Konsernet Ålesund Fotball AS / ## Note 2 Varige driftsmidler / ### Morselskapet",
+      "columns": [
+        "",
+        "Leiligheter",
+        "Innredning",
+        "Driftsløsøre",
+        "Sum"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anskaffelseskost 01.01.",
+          "values": [
+            "6 237 640",
+            "2 254 063",
+            "3 236 405",
+            "11 728 108"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang",
+          "values": [
+            "0",
+            "140 242",
+            "170 179",
+            "310 421"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avgang",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anskaffelseskost 31.12.",
+          "values": [
+            "6 237 640",
+            "2 394 305",
+            "3 406 584",
+            "12 038 529"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Akkumulerte avskrivninger 31.12.",
+          "values": [
+            "0",
+            "1 162 614",
+            "1 981 357",
+            "3 143 971"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balanseført verdi 31.12.",
+          "values": [
+            "6 237 640",
+            "1 231 691",
+            "1 425 227",
+            "8 894 558"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Årets avskrivninger",
+          "values": [
+            "0",
+            "232 051",
+            "600 202",
+            "832 253"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forventet økonomisk levetid",
+          "values": [
+            "",
+            "10 år",
+            "4-7 år",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avskrivningsplan",
+          "values": [
+            "",
+            "Lineær",
+            "Lineær",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "### Konsernet",
+      "columns": [
+        "",
+        "Leiligheter",
+        "Innredning",
+        "Driftsløsøre",
+        "Sum"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anskaffelseskost 01.01.",
+          "values": [
+            "6 237 640",
+            "2 529 359",
+            "3 236 405",
+            "12 003 404"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang",
+          "values": [
+            "0",
+            "140 242",
+            "170 179",
+            "310 421"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avgang",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anskaffelseskost 31.12.",
+          "values": [
+            "6 237 640",
+            "2 669 601",
+            "3 406 584",
+            "12 313 825"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Akkumulerte avskrivninger 31.12.",
+          "values": [
+            "0",
+            "1 308 440",
+            "1 981 357",
+            "3 289 797"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balanseført verdi 31.12.",
+          "values": [
+            "6 237 640",
+            "1 361 161",
+            "1 425 227",
+            "9 024 028"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Årets avskrivninger",
+          "values": [
+            "0",
+            "1 361 161",
+            "1 425 227",
+            "2 786 388"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forventet økonomisk levetid",
+          "values": [
+            "",
+            "10 år",
+            "4-7 år",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avskrivningsplan",
+          "values": [
+            "",
+            "Lineær",
+            "Lineær",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "## Note 3 Datterselskap / ### Morselskapet",
+      "columns": [
+        "Datterselskap",
+        "Forretnings-kontor",
+        "Eier-/stemme-andel",
+        "Egenkapital siste år (100 %)",
+        "Resultat siste år (100 %)",
+        "Balanseført verdi"
+      ],
+      "rows": [
+        {
+          "rawLabel": "AaFK Sponsorservice AS",
+          "values": [
+            "Ålesund",
+            "100 %",
+            "221 478",
+            "138 136",
+            "110 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balanseført verdi 31.12.",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "110 000"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "# Konsernet Ålesund Fotball AS",
+      "columns": [
+        "Morselskapet",
+        "",
+        "",
+        "Konsernet",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "2010",
+          "values": [
+            "2009",
+            "",
+            "2010",
+            "2009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "738 997",
+          "values": [
+            "932 060",
+            "Supporterutstyr",
+            "738 997",
+            "932 060"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "154 940",
+          "values": [
+            "140 109",
+            "Kioskvarer",
+            "154 940",
+            "140 109"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "131 244",
+          "values": [
+            "72 655",
+            "Sesongkort/billetter",
+            "131 244",
+            "72 655"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1 025 181",
+          "values": [
+            "1 144 824",
+            "Sum",
+            "1 025 181",
+            "1 144 824"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "Note 5 Fordringer og gjeld",
+      "columns": [
+        "Morselskapet",
+        "",
+        "",
+        "Konsernet",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "2010",
+          "values": [
+            "2009",
+            "Kundefordringer",
+            "2010",
+            "2009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "19 509 862",
+          "values": [
+            "3 535 262",
+            "Kundefordringer til pålydende",
+            "19 550 011",
+            "4 251 216"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "0",
+          "values": [
+            "75 000",
+            "Avsetning til tap på kundefordringer",
+            "0",
+            "75 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "19 509 862",
+          "values": [
+            "3 610 262",
+            "Kundefordringer i balansen",
+            "19 550 011",
+            "4 326 216"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": null,
+      "columns": [
+        "Morselskapet",
+        "",
+        "",
+        "Konsernet",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "2010",
+          "values": [
+            "2009",
+            "Fordringer med forfall senere enn ett år",
+            "2010",
+            "2009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "10 000 000",
+          "values": [
+            "10 000 000",
+            "Fordring Ålesund Fotballstadion AS",
+            "10 000 000",
+            "10 000 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "10 000 000",
+          "values": [
+            "10 000 000",
+            "Sum",
+            "10 000 000",
+            "10 000 000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": null,
+      "columns": [
+        "Langsiktig gjeld med forfall senere enn 5 år",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "2010",
+          "values": [
+            "2009",
+            "",
+            "2010",
+            "2009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "646 894",
+          "values": [
+            "668 555",
+            "Gjeld til kredittinstitusjoner",
+            "646 894",
+            "668 555"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4 738 680",
+          "values": [
+            "4 824 590",
+            "Annen langsiktig gjeld (spesifiseres)",
+            "4 738 680",
+            "4 824 590"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5 385 574",
+          "values": [
+            "5 493 145",
+            "Sum",
+            "5 385 574",
+            "5 493 145"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": null,
+      "columns": [
+        "2010",
+        "2009",
+        "",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "5 385 574",
+          "values": [
+            "5 493 145",
+            "Gjeld sikret ved pant",
+            "5 385 574",
+            "5 493 145"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": null,
+      "columns": [
+        "Balansefort verdi av pantsatte eiendeler",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "6 237 640",
+          "values": [
+            "6 237 640",
+            "Varige driftsmidler",
+            "6 237 640",
+            "6 237 640"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1 425 227",
+          "values": [
+            "1 855 250",
+            "Driftsløsøre",
+            "1 425 227",
+            "1 855 250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1 025 182",
+          "values": [
+            "1 144 824",
+            "Varer",
+            "1 025 182",
+            "1 144 824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "19 509 862",
+          "values": [
+            "3 535 262",
+            "Kundefordringer",
+            "19 550 011",
+            "4 251 216"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "28 197 911",
+          "values": [
+            "12 772 976",
+            "Sum",
+            "28 238 060",
+            "13 488 930"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "# Konsernet Ålesund Fotball AS / ## Note 6 Mellomværende med selskap i samme konsern m.v. / ### Morselskapet",
+      "columns": [
+        "",
+        "Kundefordringer",
+        "",
+        "Andre fordringer",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "2010",
+            "2009",
+            "2010",
+            "2009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Foretak i samme konsern m.v.",
+          "values": [
+            "42 317",
+            "66 950",
+            "202 495",
+            "217 097"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "## Note 7 Investeringer i børsnoterte aksjer",
+      "columns": [
+        "Morselskapet",
+        "Anskaff. kost",
+        "Periodens verdi- endring",
+        "Balansefort verdi"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Hexagon ASA",
+          "values": [
+            "528 162",
+            "320 924",
+            "849 086"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konsernet",
+          "values": [
+            "Anskaff. kost",
+            "Periodens verdi- endring",
+            "Balansefort verdi"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hexagon ASA",
+          "values": [
+            "528 162",
+            "320 924",
+            "849 086"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "## Note 8 Bundne bankinnskudd, trekkrettigheter",
+      "columns": [
+        "Morselskapet",
+        "",
+        "Bundne bankinnskudd",
+        "Konsernet",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "2010",
+          "values": [
+            "2009",
+            "",
+            "2010",
+            "2009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "385 443",
+          "values": [
+            "378 265",
+            "Talentutviklingskonto",
+            "385 443",
+            "378 265"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "380 726",
+          "values": [
+            "410 564",
+            "Skattetrekksmidler",
+            "380 726",
+            "410 564"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "766 169",
+          "values": [
+            "788 829",
+            "Sum",
+            "766 169",
+            "788 829"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 25,
+      "section": "## Note 9 Egenkapital / ### Morselskapet",
+      "columns": [
+        "Årets endring i egenkapital",
+        "Aksjekapital",
+        "Overkurs- fond",
+        "Annen innskutt egenkapital",
+        "Annen egenkapital",
+        "Sum"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Egenkapital 01.01.",
+          "values": [
+            "16 556 000",
+            "2 056 632",
+            "0",
+            "0",
+            "18 612 632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets resultat",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "102 544",
+            "102 544"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avsatt utbytte",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egenkapital 31.12.",
+          "values": [
+            "16 556 000",
+            "2 056 632",
+            "0",
+            "102 544",
+            "18 715 176"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 26,
+      "section": "# Konsernet Ålesund Fotball AS / ## Konsernet",
+      "columns": [
+        "Årets endring i egenkapital",
+        "Aksjekapital",
+        "Overkurs-fond",
+        "Annen innskutt egenkapital",
+        "Annen egenkapital",
+        "Sum"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Egenkapital 01.01.",
+          "values": [
+            "16 556 000",
+            "2 175 770",
+            "0",
+            "0",
+            "18 731 770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets resultat",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "94 884",
+            "94 884"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avsatt utbytte",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egenkapital 31.12.",
+          "values": [
+            "16 556 000",
+            "2 175 770",
+            "0",
+            "94 884",
+            "18 826 654"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 26,
+      "section": "## Note 10 Aksjekapital og aksjonærinformasjon / ## Oversikt over de største aksjonærene 31.12.",
+      "columns": [
+        "",
+        "Antall",
+        "Eierandel"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Aalesunds Fotballklubb",
+          "values": [
+            "5598",
+            "33,8 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sunde, Olav Nils",
+          "values": [
+            "5000",
+            "30,2 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sparebanken Møre",
+          "values": [
+            "2000",
+            "12,1 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Farstad Shipping ASA",
+          "values": [
+            "636",
+            "3,8 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tafjord Kraft AS",
+          "values": [
+            "500",
+            "3,0 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Brødrene Jangaard AS",
+          "values": [
+            "500",
+            "3,0 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hagenæs J. Shipping AS",
+          "values": [
+            "500",
+            "3,0 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gjørnt H. I. Sønner AS",
+          "values": [
+            "250",
+            "1,5 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Waagan Holding AS",
+          "values": [
+            "163",
+            "1,0 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ålesund Elektro AS",
+          "values": [
+            "152",
+            "0,9 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum",
+          "values": [
+            "15 299",
+            "92,4 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Øvrige (eierandel < 1%)",
+          "values": [
+            "1 257",
+            "7,6 %"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totalt antall aksjer",
+          "values": [
+            "16 556",
+            "100,0 %"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 26,
+      "section": "## Aksjer eiet direkte/indirekte av daglig leder og styrets medlemmer:",
+      "columns": [
+        "Bjarne Haagensen",
+        "500 aksjer"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Jon Kjetil Gjørnt",
+          "values": [
+            "15 aksjer"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Per Waagan",
+          "values": [
+            "163 aksjer"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Henrik Hoff",
+          "values": [
+            "24 aksjer"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 27,
+      "section": "# Note 12 Skatt",
+      "columns": [
+        "Morselskapet",
+        "",
+        "",
+        "Konsernet",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "2010",
+          "values": [
+            "2009",
+            "",
+            "2010",
+            "2009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Midlertidige forskjeller",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-1 224 032",
+          "values": [
+            "548 837",
+            "Anleggsmidler/Immaterielle eiendeler",
+            "-1 174 774",
+            "605 573"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "0",
+          "values": [
+            "-75 000",
+            "Kundefordringer",
+            "0",
+            "-75 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1 080 371",
+          "values": [
+            "1 350 465",
+            "Gevinst- og tapskonto",
+            "1 080 371",
+            "1 350 465"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-488 400",
+          "values": [
+            "-634 000",
+            "Ubenyttet godtgjørelse utbytter",
+            "-488 400",
+            "-634 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-1 636 667",
+          "values": [
+            "-500 000",
+            "Verdijustering finansiell investering",
+            "-1 636 667",
+            "-500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "0",
+          "values": [
+            "0",
+            "",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-2 268 728",
+          "values": [
+            "690 302",
+            "Netto midlertidige forskjeller",
+            "-2 219 470",
+            "747 038"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-15 573 021",
+          "values": [
+            "-18 268 025",
+            "Underskudd til fremføring",
+            "-15 573 021",
+            "-18 268 025"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-17 841 749",
+          "values": [
+            "-17 577 723",
+            "Grunnlag for utsatt skatt",
+            "-17 792 491",
+            "-17 520 987"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-4 995 690",
+          "values": [
+            "-4 921 762",
+            "28 % utsatt skatt",
+            "-4 981 897",
+            "-4 905 876"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4 995 690",
+          "values": [
+            "4 921 762",
+            "Herav ikke balanseført utsatt skattefordel",
+            "4 995 690",
+            "4 921 762"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "0",
+          "values": [
+            "0",
+            "Utsatt skatt i balansen",
+            "13 793",
+            "15 886"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 27,
+      "section": "Grunnlag for skattekostnad, endring i utsatt skatt og betalbar skatt",
+      "columns": [
+        "Grunnlag for betalbar skatt",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "102 544",
+          "values": [
+            "-6 572 704",
+            "Resultat før skattekostnad",
+            "92 790",
+            "-6 574 971"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "841 594",
+          "values": [
+            "451 378",
+            "Permanente forskjeller",
+            "843 871",
+            "451 082"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "944 138",
+          "values": [
+            "-6 121 326",
+            "Grunnlag for skattekostnad på årets resultat",
+            "936 661",
+            "-6 123 889"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1 967 961",
+          "values": [
+            "109 667",
+            "Endring i midlertidige forskjeller",
+            "1 975 438",
+            "112 228"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2 912 099",
+          "values": [
+            "-6 011 659",
+            "Gr.lag for bet.bar skatt i res.regnskapet",
+            "2 912 099",
+            "-6 011 661"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-2 912 099",
+          "values": [
+            "0",
+            "Benyttet fremførbart underskudd",
+            "-2 912 099",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skattepliktig inntekt (grunnlag for betalbar skatt i balansen)",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "0",
+          "values": [
+            "-6 011 659",
+            "",
+            "0",
+            "-6 011 661"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 27,
+      "section": null,
+      "columns": [
+        "Morselskapet",
+        "",
+        "",
+        "Konsernet",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "2010",
+          "values": [
+            "2009",
+            "",
+            "2010",
+            "2009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fordeling av skattekostnaden",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "0",
+          "values": [
+            "0",
+            "Betalbar skatt (28 % av grunnlag for betalbar skatt i resultatregnskapet)",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "0",
+          "values": [
+            "0",
+            "For mye, for lite avsatt i fjor",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "0",
+          "values": [
+            "0",
+            "Sum betalbar skatt",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "0",
+          "values": [
+            "0",
+            "Endring i utsatt skatt",
+            "-2 094",
+            "-717"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "0",
+          "values": [
+            "0",
+            "Skattekostnad",
+            "-2 094",
+            "-717"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "0 %",
+          "values": [
+            "0 %",
+            "Skattekostnad i prosent av resultat før skatt",
+            "-2 %",
+            "0 %"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": "# Konsernet Ålesund Fotball AS",
+      "columns": [
+        "Morselskapet",
+        "",
+        "",
+        "Konsernet",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "2010",
+          "values": [
+            "2009",
+            "",
+            "2010",
+            "2009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "71 951 865",
+          "values": [
+            "72 039 467",
+            "Salgsinntekter",
+            "81 627 346",
+            "82 321 458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "0",
+          "values": [
+            "0",
+            "Andre driftsinntekter",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "71 951 865",
+          "values": [
+            "72 039 467",
+            "Sum",
+            "81 627 346",
+            "82 321 458"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": "Note 14 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+      "columns": [
+        "Morselskapet",
+        "",
+        "",
+        "Konsernet",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "2010",
+          "values": [
+            "2009",
+            "Lønnskostnader",
+            "2010",
+            "2009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6 028 226",
+          "values": [
+            "5 943 796",
+            "Lønninger",
+            "6 028 226",
+            "5 943 796"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "826 795",
+          "values": [
+            "921 244",
+            "Arbeidsgiveravgift",
+            "826 795",
+            "921 244"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "90 824",
+          "values": [
+            "88 712",
+            "Pensjonskostnader",
+            "90 824",
+            "88 712"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "433 783",
+          "values": [
+            "61 983",
+            "Andre ytelser",
+            "395 902",
+            "181 681"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7 379 628",
+          "values": [
+            "7 015 735",
+            "Sum",
+            "7 341 747",
+            "7 135 433"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13",
+          "values": [
+            "13",
+            "Sysselsatte årsverk i regnskapsåret har vært",
+            "13",
+            "13"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": null,
+      "columns": [
+        "Ytelser til ledende personer",
+        "Daglig leder",
+        "Styret"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Lønn",
+          "values": [
+            "932 461",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensjonsutgifter",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen godtgjørelse",
+          "values": [
+            "6 000",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": null,
+      "columns": [
+        "Kostnadsført godtgjørelse til revisor",
+        "Morselskap",
+        "Konsern"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Lovpålagt revisjon (inkl. teknisk bistand med årsregnskap)",
+          "values": [
+            "245 123",
+            "272 923"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre attestasjonstjenester",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skatterådgivning (inkl. teknisk bistand med ligningspapirer)",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen bistand",
+          "values": [
+            "42 300",
+            "48 800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum",
+          "values": [
+            "287 423",
+            "321 723"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "# Konsernet Ålesund Fotball AS / ## Note 15 Leasing og leieavtaler",
+      "columns": [
+        "",
+        "",
+        "Konsernet",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gjenst. leieperiode",
+          "values": [
+            "Leasing objekter (årlig leie)",
+            "2010",
+            "Gjenst. leieperiode"
+          ],
+          "bold": false,
+          "codigo": "2010"
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Storskjermer CLS",
+            "381 324",
+            "94 mnd"
+          ],
+          "bold": false,
+          "codigo": "0"
+        },
+        {
+          "rawLabel": "48 mnd",
+          "values": [
+            "Kopimaskin",
+            "53 076",
+            "48 mnd"
+          ],
+          "bold": false,
+          "codigo": "53 076"
+        },
+        {
+          "rawLabel": "17 mnd",
+          "values": [
+            "Varebil",
+            "51 600",
+            "17 mnd"
+          ],
+          "bold": false,
+          "codigo": "51 600"
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Sum finansinntekter",
+            "486 000",
+            ""
+          ],
+          "bold": true,
+          "codigo": "104 676"
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "## Morselskap",
+      "columns": [
+        "Selskapet leier arealer på CLS",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Kostnadsført leie",
+          "values": [
+            "7 399 296",
+            "7 333 258"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "## Konsernregnskap",
+      "columns": [
+        "Konsernet leier arealer på CLS",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Kostnadsført leie",
+          "values": [
+            "12 908 196",
+            "12 771 959"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 29,
+      "section": "## Note 16 Samarbeidsavtale Ålesund Fotball AS og Aalesunds Fotballklubb / ### Morselskapet",
+      "columns": [
+        "",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Overførsel iht. avtale",
+          "values": [
+            "29 261 570",
+            "29 672 297"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": "# Note 17 Samarbeidsavtale Ålesund Fotball AS og AaFK Sponsorservice AS / # Morselskapet",
+      "columns": [
+        "",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Overførsel iht. avtale",
+          "values": [
+            "19 081 348",
+            "21 267 800"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": "# Note 18 Investering i andeler TANGO / # Konsernet/Morselskapet",
+      "columns": [
+        "",
+        "Eier-/ stemme-andel",
+        "Utbytter",
+        "Kostpris",
+        "Nedskrevet",
+        "Balanseført verdi"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Tango 2009",
+          "values": [
+            "25 %",
+            "0",
+            "1 500 000",
+            "1 000 000",
+            "500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tango 2010",
+          "values": [
+            "32 %",
+            "2 834 769",
+            "1 910 000",
+            "636 666",
+            "1 273 334"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tango 2011",
+          "values": [
+            "Ikke ferdigtegnet",
+            "0",
+            "2 500 000",
+            "0",
+            "2 500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balanseført verdi 31.12.",
+          "values": [
+            "",
+            "2 834 769",
+            "5 910 000",
+            "1 636 666",
+            "4 273 334"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": "# Note 19 Annen kortsiktig gjeld",
+      "columns": [
+        "Morselskapet",
+        "",
+        "Annen kortsiktig gjeld",
+        "Konsernet",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "2010",
+          "values": [
+            "2009",
+            "",
+            "2010",
+            "2009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6 070 263",
+          "values": [
+            "0",
+            "Gjeld Tango 2010",
+            "6 070 263",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "567 559",
+          "values": [
+            "543 708",
+            "Feriepenger",
+            "567 559",
+            "543 708"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11 896 955",
+          "values": [
+            "12 123 197",
+            "Forskudds betalte sesongkort",
+            "11 896 955",
+            "12 123 197"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2 533 257",
+          "values": [
+            "2 505 837",
+            "Forpliktelser overgang",
+            "2 533 257",
+            "2 505 837"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "263 280",
+          "values": [
+            "552 300",
+            "Andre forpliktelser",
+            "263 280",
+            "821 300"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "21 331 314",
+          "values": [
+            "15 725 042",
+            "Sum",
+            "21 331 314",
+            "15 994 042"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "# Resultatregnskap",
+      "columns": [
+        "Driftsinntekter og driftskostnader",
+        "Note",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salgsinntekter",
+          "values": [
+            "1",
+            "71 951 865",
+            "72 039 467"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum driftsinntekter",
+          "values": [
+            "",
+            "71 951 865",
+            "72 039 467"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varekostnader",
+          "values": [
+            "",
+            "3 159 362",
+            "4 633 806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lønnskostnader m.m.",
+          "values": [
+            "14",
+            "7 379 628",
+            "7 015 735"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avskrivning på driftsmidler og immaterielle eiendeler",
+          "values": [
+            "1, 2",
+            "7 428 953",
+            "8 270 695"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nedskrivning av driftsmidler og immaterielle driftsmidler",
+          "values": [
+            "",
+            "1 398 719",
+            "292 551"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen driftskostnad",
+          "values": [
+            "",
+            "55 176 496",
+            "59 043 942"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum driftskostnader",
+          "values": [
+            "",
+            "74 543 159",
+            "79 256 728"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Driftsresultat",
+          "values": [
+            "",
+            "-2 591 294",
+            "-7 217 261"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansinntekter og finanskostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inntekt på investering i datterselskap",
+          "values": [
+            "",
+            "202 495",
+            "217 097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen renteinntekt",
+          "values": [
+            "",
+            "628 735",
+            "43 626"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finansinntekt",
+          "values": [
+            "18",
+            "3 351 832",
+            "1 298 759"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nedskrivning av andre finansielle anleggsmidler",
+          "values": [
+            "18",
+            "1 136 667",
+            "500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen rentekostnad",
+          "values": [
+            "",
+            "101 061",
+            "276 683"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finanskostnad",
+          "values": [
+            "",
+            "251 495",
+            "138 242"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat av finansposter",
+          "values": [
+            "",
+            "2 693 838",
+            "644 556"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat for skattekostnad",
+          "values": [
+            "",
+            "102 544",
+            "-6 572 704"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årsresultat",
+          "values": [
+            "",
+            "102 544",
+            "-6 572 704"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overforinger",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avsatt til annen egenkapital",
+          "values": [
+            "",
+            "102 544",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overført fra overkursfond",
+          "values": [
+            "",
+            "0",
+            "6 572 704"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum overforinger",
+          "values": [
+            "",
+            "102 544",
+            "-6 572 704"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "columns": [
+        "Eiendeler",
+        "Note",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immaterielle eiendeler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spillerlisenser, agenthonorar, sign on",
+          "values": [
+            "1",
+            "4 941 231",
+            "10 787 400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum immaterielle eiendeler",
+          "values": [
+            "",
+            "4 941 231",
+            "10 787 400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varige driftsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tomter, bygninger o.a. fast eiendom",
+          "values": [
+            "2, 5",
+            "7 469 331",
+            "7 561 140"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Driftslosore, inventar o.a. utstyr",
+          "values": [
+            "2, 5",
+            "1 425 227",
+            "1 855 250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum varige driftsmidler",
+          "values": [
+            "",
+            "8 894 558",
+            "9 416 390"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansielle anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer i datterselskap",
+          "values": [
+            "3",
+            "110 000",
+            "110 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer i aksjer og andeler",
+          "values": [
+            "18",
+            "4 273 333",
+            "2 910 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre fordringer",
+          "values": [
+            "5",
+            "10 000 000",
+            "10 000 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum finansielle anleggsmidler",
+          "values": [
+            "",
+            "14 383 333",
+            "13 020 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum anleggsmidler",
+          "values": [
+            "",
+            "28 219 122",
+            "33 223 790"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omlopsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lager av varer og annen beholdning",
+          "values": [
+            "4, 5",
+            "1 025 182",
+            "1 144 824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fordringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kundefordringer",
+          "values": [
+            "5",
+            "19 509 862",
+            "3 535 262"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre fordringer",
+          "values": [
+            "",
+            "5 293 911",
+            "7 694 766"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum fordringer",
+          "values": [
+            "",
+            "24 803 773",
+            "11 230 028"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Markedsbaserte aksjer",
+          "values": [
+            "7",
+            "849 086",
+            "708 816"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum investeringer",
+          "values": [
+            "",
+            "849 086",
+            "708 816"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bankinnskudd, kontanter o.l.",
+          "values": [
+            "8",
+            "1 755 876",
+            "3 140 093"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum omlopsmidler",
+          "values": [
+            "",
+            "28 433 917",
+            "16 223 762"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum eiendeler",
+          "values": [
+            "",
+            "56 653 040",
+            "49 447 551"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 33,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "columns": [
+        "Egenkapital og gjeld",
+        "Note",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Innskutt egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aksjekapital 16556 á 1000",
+          "values": [
+            "10",
+            "16 556 000",
+            "16 556 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overkursfond",
+          "values": [
+            "",
+            "2 056 632",
+            "2 056 632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum innskutt egenkapital",
+          "values": [
+            "",
+            "18 612 632",
+            "18 612 632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opptjent egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen egenkapital",
+          "values": [
+            "",
+            "102 544",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum opptjent egenkapital",
+          "values": [
+            "",
+            "102 544",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum egenkapital",
+          "values": [
+            "9",
+            "18 715 176",
+            "18 612 632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen langsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gjeld til kredittinstitusjoner",
+          "values": [
+            "5",
+            "772 899",
+            "794 560"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Øvrig langsiktig gjeld",
+          "values": [
+            "5",
+            "5 261 986",
+            "5 202 856"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum annen langsiktig gjeld",
+          "values": [
+            "",
+            "6 034 885",
+            "5 997 416"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leverandørgjeld",
+          "values": [
+            "",
+            "9 917 784",
+            "8 377 439"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skyldig offentlige avgifter",
+          "values": [
+            "",
+            "653 880",
+            "735 023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen kortsiktig gjeld",
+          "values": [
+            "19",
+            "21 331 315",
+            "15 725 042"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum kortsiktig gjeld",
+          "values": [
+            "",
+            "31 902 979",
+            "24 837 504"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum gjeld",
+          "values": [
+            "",
+            "37 937 863",
+            "30 834 919"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum egenkapital og gjeld",
+          "values": [
+            "",
+            "56 653 040",
+            "49 447 551"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 33,
+      "section": "Ålesund / Styret i Ålesund Fotball AS",
+      "columns": [
+        "Bjarne Haagensen Styrets leder",
+        "Jon Kjetil Gjortz Styremedlem",
+        "Torill Hole Standal Styremedlem"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Torstein Stavseng Styremedlem",
+          "values": [
+            "Per Waagan Styremedlem",
+            "Ola Engvik Styremedlem"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Henrik Hoff Daglig leder",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 34,
+      "section": "# Indirekte kontantstrøm",
+      "columns": [
+        "",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Kontantstrømmer fra operasjonelle aktiviteter",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat for skattekostnad",
+          "values": [
+            "102 544",
+            "-6 572 704"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Tap/gevinst ved salg av anleggsmidler",
+          "values": [
+            "-9 854 873",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Ordinære avskrivninger",
+          "values": [
+            "7 428 953",
+            "8 270 695"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Nedskrivning anleggsmidler",
+          "values": [
+            "1 398 719",
+            "292 551"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Endring i varelager",
+          "values": [
+            "119 642",
+            "-150 777"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Endring i kundefordringer",
+          "values": [
+            "-15 974 600",
+            "2 320 435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Endring i leverandørgjeld",
+          "values": [
+            "1 540 345",
+            "-602 363"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Nedskrivning investering i andeler",
+          "values": [
+            "1 136 667",
+            "500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Verdijustering og gevinst aksjer",
+          "values": [
+            "-334 620",
+            "-245 996"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Poster klassifisert som invest.- eller finans.aktiviteter",
+          "values": [
+            "-202 495",
+            "-217 097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Endring i andre tidsavgrensningsposter",
+          "values": [
+            "7 925 985",
+            "3 026 302"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Netto kontantstrøm fra operasjonelle aktiviteter",
+          "values": [
+            "-6 713 732",
+            "6 621 045"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kontantstrømmer fra investeringsaktiviteter",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Innbetalinger ved salg av varige driftsmidler",
+          "values": [
+            "11 123 957",
+            "6 075 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Utbetalinger ved kjøp av varige driftsmidler",
+          "values": [
+            "3 728 171",
+            "11 829 636"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Innbetalinger ved salg av aksjer og andeler i andre foretak",
+          "values": [
+            "193 766",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Utbetalinger ved kjøp av aksjer og andeler i andre foretak",
+          "values": [
+            "2 500 000",
+            "1 910 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Netto kontantstrøm fra investeringsaktiviteter",
+          "values": [
+            "5 089 552",
+            "-7 664 636"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kontantstrømmer fra finansieringsaktiviteter",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Innbetalinger ved opptak av ny langsiktig gjeld",
+          "values": [
+            "59 130",
+            "800 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Utbetalinger ved nedbetaling av langsiktig gjeld",
+          "values": [
+            "21 661",
+            "177 314"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Mottatt konsernbidrag",
+          "values": [
+            "202 495",
+            "217 097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Netto kontantstrøm fra finansieringsaktiviteter",
+          "values": [
+            "239 964",
+            "839 783"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Netto endring i kontanter og kontantekvivalenter",
+          "values": [
+            "-1 384 216",
+            "-203 808"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Beh. av kont. og kontantekvivalenter ved per. begynnelse",
+          "values": [
+            "3 140 093",
+            "3 343 901"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Beh. av kont. og kontantekvivalenter ved per. slutt",
+          "values": [
+            "1 755 877",
+            "3 140 093"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 35,
+      "section": "# Resultatregnskap - konsern",
+      "columns": [
+        "",
+        "Note",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Driftsinntekter og driftskostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Salgsinntekter",
+          "values": [
+            "1",
+            "81 627 346",
+            "82 321 458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum driftsinntekter",
+          "values": [
+            "",
+            "81 627 346",
+            "82 321 458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varekostnader",
+          "values": [
+            "",
+            "3 159 362",
+            "4 633 806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lønnskostnader m.m.",
+          "values": [
+            "14",
+            "7 341 747",
+            "7 135 433"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avskrivning på driftsmidler og immaterielle eiendeler",
+          "values": [
+            "1, 2",
+            "7 456 483",
+            "8 298 322"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nedskrivning av driftsmidler og immaterielle driftsmidler",
+          "values": [
+            "1",
+            "1 398 719",
+            "292 551"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen driftskostnad",
+          "values": [
+            "",
+            "64 813 218",
+            "69 118 821"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum driftskostnader",
+          "values": [
+            "",
+            "84 169 530",
+            "89 478 932"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Driftsresultat",
+          "values": [
+            "",
+            "-2 542 183",
+            "-7 157 475"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansinntekter og finanskostnader",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen renteinntekt",
+          "values": [
+            "",
+            "177 338",
+            "203 504"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finansinntekt",
+          "values": [
+            "18",
+            "3 951 832",
+            "1 299 161"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nedskrivning av andre finansielle anleggsmidler",
+          "values": [
+            "18",
+            "1 136 667",
+            "500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen rentekostnad",
+          "values": [
+            "",
+            "101 886",
+            "276 683"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen finanskostnad",
+          "values": [
+            "",
+            "255 643",
+            "143 478"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat av finansposter",
+          "values": [
+            "",
+            "2 634 974",
+            "582 504"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat for skattekostnad",
+          "values": [
+            "",
+            "92 790",
+            "-6 574 971"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skattekostnad på ordinært resultat",
+          "values": [
+            "12",
+            "-2 094",
+            "-717"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ordinært resultat",
+          "values": [
+            "",
+            "94 884",
+            "-6 574 254"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årsresultat",
+          "values": [
+            "",
+            "94 884",
+            "-6 574 254"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overforinger",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avsatt til annen egenkapital",
+          "values": [
+            "",
+            "94 884",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overført fra overkursfond",
+          "values": [
+            "",
+            "0",
+            "6 574 254"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum disponert",
+          "values": [
+            "",
+            "94 884",
+            "-6 574 254"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "columns": [
+        "",
+        "Note",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Eiendeler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immaterielle eiendeler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spillere, agenthonorar, sign on",
+          "values": [
+            "1",
+            "4 941 231",
+            "10 787 400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum immaterielle eiendeler",
+          "values": [
+            "",
+            "4 941 231",
+            "10 787 400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varige driftsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tomter, bygninger o.a. fast eiendom",
+          "values": [
+            "2, 5",
+            "7 598 801",
+            "7 718 140"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Driftsløsøre, inventar o.a. utstyr",
+          "values": [
+            "2, 5",
+            "1 425 227",
+            "1 855 250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum varige driftsmidler",
+          "values": [
+            "",
+            "9 024 028",
+            "9 573 389"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansielle anleggsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer i aksjer og andeler",
+          "values": [
+            "18",
+            "4 273 333",
+            "2 910 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre fordringer",
+          "values": [
+            "5",
+            "10 000 000",
+            "10 000 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum finansielle anleggsmidler",
+          "values": [
+            "",
+            "14 273 333",
+            "12 910 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum anleggsmidler",
+          "values": [
+            "",
+            "28 238 592",
+            "33 270 789"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omløpsmidler",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lager av varer og annen beholdning",
+          "values": [
+            "4, 5",
+            "1 025 182",
+            "1 144 824"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fordringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kundefordringer",
+          "values": [
+            "5",
+            "19 550 011",
+            "4 251 216"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre fordringer",
+          "values": [
+            "",
+            "5 005 306",
+            "7 534 896"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum fordringer",
+          "values": [
+            "",
+            "24 555 317",
+            "11 786 112"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringer",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Markedsbaserte aksjer",
+          "values": [
+            "7",
+            "849 086",
+            "708 816"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum investeringer",
+          "values": [
+            "",
+            "849 086",
+            "708 816"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bankinnskudd, kontanter o.l.",
+          "values": [
+            "8",
+            "2 110 133",
+            "3 394 817"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum omløpsmidler",
+          "values": [
+            "",
+            "28 539 718",
+            "17 034 570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum eiendeler",
+          "values": [
+            "",
+            "56 778 310",
+            "50 305 359"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "columns": [
+        "",
+        "Note",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Egenkapital og gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Innskutt egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aksjekapital",
+          "values": [
+            "10",
+            "16 556 000",
+            "16 556 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overkursfond",
+          "values": [
+            "",
+            "2 175 770",
+            "2 175 770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum innskutt egenkapital",
+          "values": [
+            "",
+            "18 731 770",
+            "18 731 770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opptjent egenkapital",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen egenkapital",
+          "values": [
+            "",
+            "94 885",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum opptjent egenkapital",
+          "values": [
+            "",
+            "94 885",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum egenkapital",
+          "values": [
+            "9",
+            "18 826 654",
+            "18 731 770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avsetning for forpliktelser",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utsatt skatt",
+          "values": [
+            "12",
+            "13 792",
+            "15 886"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum avsetning for forpliktelser",
+          "values": [
+            "",
+            "13 792",
+            "15 886"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen langsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gjeld til kredittinstitusjoner",
+          "values": [
+            "5",
+            "772 899",
+            "794 560"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Øvrig langsiktig gjeld",
+          "values": [
+            "5",
+            "5 261 986",
+            "5 202 856"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum annen langsiktig gjeld",
+          "values": [
+            "",
+            "6 034 885",
+            "5 997 416"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortsiktig gjeld",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leverandorgjeld",
+          "values": [
+            "",
+            "9 917 784",
+            "8 015 377"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Skyldig offentlige avgifter",
+          "values": [
+            "",
+            "653 880",
+            "1 550 868"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Annen kortsiktig gjeld",
+          "values": [
+            "19",
+            "21 331 315",
+            "15 994 042"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum kortsiktig gjeld",
+          "values": [
+            "",
+            "31 902 979",
+            "25 560 287"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum gjeld",
+          "values": [
+            "",
+            "37 951 656",
+            "31 573 589"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sum egenkapital og gjeld",
+          "values": [
+            "",
+            "56 778 310",
+            "50 305 359"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 39,
+      "section": "# Indirekte kontantstrømsanalyse",
+      "columns": [
+        "",
+        "2010",
+        "2009"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Kontantstrømmer fra operasjonelle aktiviteter",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat for skattekostnad",
+          "values": [
+            "92 790",
+            "-6 574 971"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Tap/gevinst ved salg av anleggsmidler",
+          "values": [
+            "-9 854 873",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Ordinære avskrivninger",
+          "values": [
+            "7 456 483",
+            "8 298 322"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Nedskrivning anleggsmidler",
+          "values": [
+            "1 398 719",
+            "292 551"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Endring i varelager",
+          "values": [
+            "119 642",
+            "-150 777"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Endring i kundefordringer",
+          "values": [
+            "-15 298 795",
+            "1 537 172"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Endring i leverandørgjeld",
+          "values": [
+            "1 902 407",
+            "-1 011 473"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Nedskrivning investering andeler",
+          "values": [
+            "1 136 667",
+            "500 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Verdijustering og gevinst aksjer",
+          "values": [
+            "-334 620",
+            "-245 996"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Endring i andre tidsavgrensningsposter",
+          "values": [
+            "6 969 875",
+            "4 105 710"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Netto kontantstrøm fra operasjonelle aktiviteter",
+          "values": [
+            "-6 411 704",
+            "6 750 538"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kontantstrømmer fra investeringsaktiviteter",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Innbetalinger ved salg av varige driftsmidler",
+          "values": [
+            "11 123 957",
+            "6 075 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Utbetalinger ved kjøp av varige driftsmidler",
+          "values": [
+            "3 728 171",
+            "11 829 636"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Innbetalinger ved salg av aksjer og andeler i andre foretak",
+          "values": [
+            "193 766",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Utbetalinger ved kjøp av andre investeringer",
+          "values": [
+            "2 500 000",
+            "1 910 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Netto kontantstrøm fra investeringsaktiviteter",
+          "values": [
+            "5 089 552",
+            "-7 664 636"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kontantstrømmer fra finansieringsaktiviteter",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Innbetalinger ved opptak av ny langsiktig gjeld",
+          "values": [
+            "59 130",
+            "800 000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Utbetalinger ved nedbetaling av langsiktig gjeld",
+          "values": [
+            "21 661",
+            "177 314"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Netto kontantstrøm fra finansieringsaktiviteter",
+          "values": [
+            "37 469",
+            "622 686"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Netto endring i kontanter og kontantekvivalenter",
+          "values": [
+            "-1 284 683",
+            "-291 412"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Beh. av kont. og kontantekvivalenter ved per. begynnelse",
+          "values": [
+            "3 394 817",
+            "3 686 228"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "= Beh. av kont. og kontantekvivalenter ved per. slutt",
+          "values": [
+            "2 110 133",
+            "3 394 817"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 2,
+      "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum inntekter",
+      "target": "71 951 865",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum inntekter",
+      "target": "72 039 467",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 2,
+      "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum kostnader",
+      "target": "74 543 159",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 5 rubros enteros)"
+    },
+    {
+      "page": 2,
+      "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum kostnader",
+      "target": "79 256 728",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 5 rubros enteros)"
+    },
+    {
+      "page": 2,
+      "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum overføringer og disponeringer",
+      "target": "102 544",
+      "addendCount": 11,
+      "closes": false,
+      "diff": "5979917"
+    },
+    {
+      "page": 2,
+      "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum overføringer og disponeringer",
+      "target": "-6 572 704",
+      "addendCount": 11,
+      "closes": false,
+      "diff": "-4098298"
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "4 941 231",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "10 787 400",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "8 894 558",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "9 416 390",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "14 383 333",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "13 020 000",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "totalLabel": "Sum anleggsmidler",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum fordringer",
+      "target": "24 803 773",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum fordringer",
+      "target": "11 230 028",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum investeringer",
+      "target": "849 086",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum investeringer",
+      "target": "708 816",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum omløpsmidler",
+      "target": "28 433 917",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-26678041"
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum omløpsmidler",
+      "target": "16 223 762",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-13083669"
+    },
+    {
+      "page": 3,
+      "section": "ÅLESUND FOTBALL AS / # BALANSE",
+      "likelyRelevant": false,
+      "totalLabel": "SUM EIENDELER",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum innskutt egenkapital",
+      "target": "18 612 632",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-16556000"
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum innskutt egenkapital",
+      "target": "18 612 632",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-16556000"
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum opptjent egenkapital",
+      "target": "102 544",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Sum egenkapital",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum annen langsiktig gjeld",
+      "target": "6 034 885",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum annen langsiktig gjeld",
+      "target": "5 997 416",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "31 902 979",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "24 837 504",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Sum gjeld",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "SUM EGENKAPITAL OG GJELD",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 5,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum inntekter",
+      "target": "81 627 346",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum inntekter",
+      "target": "82 321 458",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum kostnader",
+      "target": "84 169 530",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 5 rubros enteros)"
+    },
+    {
+      "page": 5,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum kostnader",
+      "target": "89 478 933",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum overføringer og disponeringer",
+      "target": "94 884",
+      "addendCount": 12,
+      "closes": false,
+      "diff": "5996621"
+    },
+    {
+      "page": 5,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNRESULTATREGNSKAP",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum overføringer og disponeringer",
+      "target": "-6 574 254",
+      "addendCount": 12,
+      "closes": false,
+      "diff": "-10727833"
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "4 941 231",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "10 787 400",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "9 024 028",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "9 573 389",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 2 rubros enteros)"
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "14 273 333",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "12 910 000",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "totalLabel": "Sum anleggsmidler",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum fordringer",
+      "target": "24 555 317",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum fordringer",
+      "target": "11 786 112",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum investeringer",
+      "target": "849 086",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum investeringer",
+      "target": "708 816",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum omløpsmidler",
+      "target": "28 539 718",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-26429585"
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum omløpsmidler",
+      "target": "17 034 570",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-13639753"
+    },
+    {
+      "page": 6,
+      "section": "ÅLESUND FOTBALL AS / # KONSERNBALANSE",
+      "likelyRelevant": false,
+      "totalLabel": "SUM EIENDELER",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Sum innskutt egenkapital",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum opptjent egenkapital",
+      "target": "94 885",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Sum egenkapital",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum avsetninger for forpliktelser",
+      "target": "13 792",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum avsetninger for forpliktelser",
+      "target": "15 886",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum annen langsiktig gjeld",
+      "target": "6 034 885",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum annen langsiktig gjeld",
+      "target": "5 997 416",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "31 902 979",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "25 560 287",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Sum gjeld",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "SUM EGENKAPITAL OG GJELD",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 8,
+      "section": "# Resultatregnskap - konsern",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum driftsinntekter",
+      "target": "81 627 346",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": "# Resultatregnskap - konsern",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum driftsinntekter",
+      "target": "82 321 458",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": "# Resultatregnskap - konsern",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum driftskostnader",
+      "target": "84 169 530",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 5 rubros enteros)"
+    },
+    {
+      "page": 8,
+      "section": "# Resultatregnskap - konsern",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum driftskostnader",
+      "target": "89 478 932",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 5 rubros enteros)"
+    },
+    {
+      "page": 8,
+      "section": "# Resultatregnskap - konsern",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum disponert",
+      "target": "94 884",
+      "addendCount": 13,
+      "closes": false,
+      "diff": "5996621"
+    },
+    {
+      "page": 8,
+      "section": "# Resultatregnskap - konsern",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum disponert",
+      "target": "-6 574 254",
+      "addendCount": 13,
+      "closes": false,
+      "diff": "-10727833"
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "4 941 231",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "10 787 400",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "9 024 028",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "9 573 389",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 2 rubros enteros)"
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "14 273 333",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "12 910 000",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum anleggsmidler",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum fordringer",
+      "target": "24 555 317",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "1025182"
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum fordringer",
+      "target": "11 786 112",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "1144824"
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum investeringer",
+      "target": "849 086",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum investeringer",
+      "target": "708 816",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum omlopsmidler",
+      "target": "28 539 718",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-26429585"
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum omlopsmidler",
+      "target": "17 034 570",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-13639753"
+    },
+    {
+      "page": 9,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum eiendeler",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum innskutt egenkapital",
+      "target": "18 731 770",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum innskutt egenkapital",
+      "target": "18 731 770",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum opptjent egenkapital",
+      "target": "94 885",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum opptjent egenkapital",
+      "target": "0",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum egenkapital",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum avsetning for forpliktelser",
+      "target": "13 792",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum avsetning for forpliktelser",
+      "target": "15 886",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum annen langsiktig gjeld",
+      "target": "6 034 885",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum annen langsiktig gjeld",
+      "target": "5 997 416",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "31 902 979",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "25 560 287",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum gjeld",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 10,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum egenkapital og gjeld",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 26,
+      "section": "## Note 10 Aksjekapital og aksjonærinformasjon / ## Oversikt over de største aksjonærene 31.12.",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Sum",
+      "target": "15 299",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 26,
+      "section": "## Note 10 Aksjekapital og aksjonærinformasjon / ## Oversikt over de største aksjonærene 31.12.",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"92,4 %\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 28,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Sum",
+      "target": "287 423",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 28,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum",
+      "target": "321 723",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "# Resultatregnskap",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum driftsinntekter",
+      "target": "71 951 865",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "# Resultatregnskap",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum driftsinntekter",
+      "target": "72 039 467",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 31,
+      "section": "# Resultatregnskap",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum driftskostnader",
+      "target": "74 543 159",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 5 rubros enteros)"
+    },
+    {
+      "page": 31,
+      "section": "# Resultatregnskap",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum driftskostnader",
+      "target": "79 256 728",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 5 rubros enteros)"
+    },
+    {
+      "page": 31,
+      "section": "# Resultatregnskap",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum overforinger",
+      "target": "102 544",
+      "addendCount": 12,
+      "closes": false,
+      "diff": "5979917"
+    },
+    {
+      "page": 31,
+      "section": "# Resultatregnskap",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum overforinger",
+      "target": "-6 572 704",
+      "addendCount": 12,
+      "closes": false,
+      "diff": "-4098298"
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "4 941 231",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "10 787 400",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "8 894 558",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "9 416 390",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "14 383 333",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "13 020 000",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum anleggsmidler",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum fordringer",
+      "target": "24 803 773",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "1025182"
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum fordringer",
+      "target": "11 230 028",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "1144824"
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum investeringer",
+      "target": "849 086",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum investeringer",
+      "target": "708 816",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum omlopsmidler",
+      "target": "28 433 917",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-26678041"
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum omlopsmidler",
+      "target": "16 223 762",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-13083669"
+    },
+    {
+      "page": 32,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum eiendeler",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 33,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum innskutt egenkapital",
+      "target": "18 612 632",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum innskutt egenkapital",
+      "target": "18 612 632",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum opptjent egenkapital",
+      "target": "102 544",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum opptjent egenkapital",
+      "target": "0",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum egenkapital",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 33,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum annen langsiktig gjeld",
+      "target": "6 034 885",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum annen langsiktig gjeld",
+      "target": "5 997 416",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "31 902 979",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "24 837 504",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 33,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum gjeld",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 33,
+      "section": "# Balanse / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum egenkapital og gjeld",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 35,
+      "section": "# Resultatregnskap - konsern",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum driftsinntekter",
+      "target": "81 627 346",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 35,
+      "section": "# Resultatregnskap - konsern",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum driftsinntekter",
+      "target": "82 321 458",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 35,
+      "section": "# Resultatregnskap - konsern",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum driftskostnader",
+      "target": "84 169 530",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 5 rubros enteros)"
+    },
+    {
+      "page": 35,
+      "section": "# Resultatregnskap - konsern",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum driftskostnader",
+      "target": "89 478 932",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 5 rubros enteros)"
+    },
+    {
+      "page": 35,
+      "section": "# Resultatregnskap - konsern",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Sum disponert",
+      "target": "94 884",
+      "addendCount": 13,
+      "closes": false,
+      "diff": "5996621"
+    },
+    {
+      "page": 35,
+      "section": "# Resultatregnskap - konsern",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Sum disponert",
+      "target": "-6 574 254",
+      "addendCount": 13,
+      "closes": false,
+      "diff": "-10727833"
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "4 941 231",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum immaterielle eiendeler",
+      "target": "10 787 400",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "9 024 028",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum varige driftsmidler",
+      "target": "9 573 389",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 2 rubros enteros)"
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "14 273 333",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum finansielle anleggsmidler",
+      "target": "12 910 000",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum anleggsmidler",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum fordringer",
+      "target": "24 555 317",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "1025182"
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum fordringer",
+      "target": "11 786 112",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "1144824"
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum investeringer",
+      "target": "849 086",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum investeringer",
+      "target": "708 816",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum omløpsmidler",
+      "target": "28 539 718",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-26429585"
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum omløpsmidler",
+      "target": "17 034 570",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-13639753"
+    },
+    {
+      "page": 36,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum eiendeler",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum innskutt egenkapital",
+      "target": "18 731 770",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum innskutt egenkapital",
+      "target": "18 731 770",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum opptjent egenkapital",
+      "target": "94 885",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum opptjent egenkapital",
+      "target": "0",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum egenkapital",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum avsetning for forpliktelser",
+      "target": "13 792",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum avsetning for forpliktelser",
+      "target": "15 886",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum annen langsiktig gjeld",
+      "target": "6 034 885",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum annen langsiktig gjeld",
+      "target": "5 997 416",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "31 902 979",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Sum kortsiktig gjeld",
+      "target": "25 560 287",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum gjeld",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 37,
+      "section": "# Balanse - konsern / ## Ålesund Fotball AS",
+      "likelyRelevant": false,
+      "totalLabel": "Sum egenkapital og gjeld",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/aalesund-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"aalesund\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+    "10 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "18 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "27 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

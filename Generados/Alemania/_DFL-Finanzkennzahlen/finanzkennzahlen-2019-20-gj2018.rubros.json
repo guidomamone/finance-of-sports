@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Alemania/_DFL-Finanzkennzahlen/finanzkennzahlen-2019-20-gj2018.md",
+ "pdf": "Clubes/Alemania/_DFL-Finanzkennzahlen/finanzkennzahlen-2019-20-gj2018.pdf",
+ "club": "dfl-finanzkennzahlen",
+ "year": 2020,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T21:50:41.378Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 2,
+ "rubros": [
+  {
+   "label": "2. Personalaufwand",
+   "lado": "expense",
+   "page": 1,
+   "section": "FC / 1. FC Union / Letzter Abschluss (Geschäftsjahr entspricht der Saison 2017-18 oder dem Kalenderjahr 2018) / 10. (Konzern)jahresüberschuss/(Konzern)jahresfehlbetrag / Gewinn- und Verlustrechnung Hertha BSC . ” SC Freiburg . 1.FCKöln RBLeipzig . . .",
+   "values": [
+    -0.032413
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "3. Abschreibungen -13.155 -9.427 -4.604 -13.543 -90.556 -1.215 -14.666 -12.917 -19.886 -20.297 -57.468 -48.588 -13.371 -38.381 -90.090 -355",
+   "lado": null,
+   "page": 1,
+   "section": "FC / 1. FC Union / Letzter Abschluss (Geschäftsjahr entspricht der Saison 2017-18 oder dem Kalenderjahr 2018) / 10. (Konzern)jahresüberschuss/(Konzern)jahresfehlbetrag / Gewinn- und Verlustrechnung Hertha BSC . ” SC Freiburg . 1.FCKöln RBLeipzig . . .",
+   "values": [
+    -0.056284
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "4. Sonstige betriebliche Aufwendungen",
+   "lado": "expense",
+   "page": 1,
+   "section": "FC / 1. FC Union / Letzter Abschluss (Geschäftsjahr entspricht der Saison 2017-18 oder dem Kalenderjahr 2018) / 10. (Konzern)jahresüberschuss/(Konzern)jahresfehlbetrag / Gewinn- und Verlustrechnung Hertha BSC . ” SC Freiburg . 1.FCKöln RBLeipzig . . .",
+   "values": [
+    -0.030082
+   ],
+   "origen": "estado 2"
+  }
+ ]
+}

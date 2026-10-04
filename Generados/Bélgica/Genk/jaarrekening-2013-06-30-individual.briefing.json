@@ -1,0 +1,718 @@
+{
+  "club": "genk-be",
+  "year": 2013,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Genk/jaarrekening-2013-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:55:06.006Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 166,
+    "space": 2
+  },
+  "scannedWarning": false,
+  "tableCount": 18,
+  "relevantTableCount": 6,
+  "tables": [
+    {
+      "page": 3,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / VASTE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Financiële vaste activa",
+          "values": [
+            "4.4/4.5.A"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbonden entiteiten",
+          "values": [
+            "4.13"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 3,
+      "section": "VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "285/8",
+          "values": [
+            "34.995",
+            "30.033"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "29/58",
+          "values": [
+            "28.184.007",
+            "30.437.944"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "37 / 40/41 11.483.603 13.970.390 / 40 11.203.248 13.289.350 / 41 280.356 681.040 / 415",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "50/53",
+          "values": [
+            "1.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "54/58",
+          "values": [
+            "15.624.054",
+            "14.345.096"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "1.076.350",
+            "1.120.957"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "51.067.975",
+            "50.632.898"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "PASSIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "EIGEN VERMOGEN 10/15",
+          "values": [
+            "40.344.039",
+            "38.176.103"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondsen van de vereniging",
+          "values": [
+            "144.130",
+            "144.330"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Beginvermogen",
+          "values": [
+            "144.130",
+            "144.330"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Permanente financiering 101 / Herwaarderingsmeerwaarden 12 / Bestemde fondsen 47 | 13",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overgedragen winst (verlies) (+)/(-)",
+          "values": [
+            "39.959.909",
+            "37.761.773"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaalsubsidies",
+          "values": [
+            "240.000",
+            "270.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VOORZIENINGEN",
+          "values": [
+            "250.000",
+            "250.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorzieningen voor risico's en kosten 160/5",
+          "values": [
+            "250.000",
+            "250.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 4.7 | 163/5 250.000 250.000 / Voorzieningen voor schenkingen en legaten met / terugnemingsrecht 4.7 | 168",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "10.473.936",
+            "12.206.796"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 48 |",
+          "values": [
+            "2.696.060",
+            "3.379.575"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "2.694.060",
+            "3.377.975"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 4,
+      "section": "Ontvangen vooruitbetalingen op bestellingen 176 / Overige schulden 179 2.000 1.600 / Rentedragend 1790 / Niet-rentedragend of gekoppeld aan een abnormaal / lage rente 1791",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Borgtochten ontvangen in contanten 1792",
+          "values": [
+            "2.000",
+            "1.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op ten hoogste één jaar 42/48",
+          "values": [
+            "6.915.334",
+            "8.717.976"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Schulden op meer dan één jaar die binnen het jaar / vervallen 48 | 42 672.420 648.883 / Financiële schulden 43 / Kredietinstellingen 430/8 / Overige leningen 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "2.329.006",
+            "4.600.249"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "2.329.006",
+            "4.600.249"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46 2.154.844 1.859.000 / Schulden met betrekking tot belastingen,",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "bezoldigingen en sociale lasten 48 |",
+          "values": [
+            "1.499.515",
+            "1.295.753"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "752.923",
+            "287.277"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "746.592",
+            "1.008.475"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diverse schulden",
+          "values": [
+            "259.551",
+            "314.091"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Vervallen obligaties, coupons en borgtochten / ontvangen in contanten 480/8 / Andere rentedragende schulden 4890 / Andere schulden, niet-rentedragend of gekoppeld",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "aan een abnormaal lage rente 4891",
+          "values": [
+            "259.551",
+            "314.091"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 4.8 | _492/3",
+          "values": [
+            "862.542",
+            "109.245"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "51.067.975",
+            "50.632.898"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "STAAT VAN DE SCHULDEN EN OVERLOPENDE REKENINGEN (PASSIVA) / UITSPLITSING VAN DE SCHULDEN MET EEN OORSPRONKELIJKE LOOPTIJD VAN MEER DAN EEN / JAAR, NAARGELANG HUN RESTERENDE LOOPTIJD",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige schulden 8903",
+          "values": [
+            "2.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal der schulden met een resterende looptijd van meer dan 5 jaar 8913",
+          "values": [
+            "29.635"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN SOCIALE LASTEN / OVERLOPENDE REKENINGEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Toe te rekenen kosten",
+          "values": [
+            "99.042"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Over te dragen opbrengsten",
+          "values": [
+            "763.500"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 19,
+      "section": "BEDRIJFSRESULTATEN / BEDRIJFSOPBRENGSTEN / BEDRIJFSKOSTEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gemiddeld personeelsbestand berekend in voltijdse equivalenten 9087",
+          "values": [
+            "76,1",
+            "65,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aantal daadwerkelijk gepresteerde uren 9088",
+          "values": [
+            "136.870",
+            "123.001"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 19,
+      "section": "Personeelskosten",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bezoldigingen en rechtstreekse sociale voordelen",
+          "values": [
+            "13.483.390",
+            "15.217.412"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Werkgeversbijdragen voor sociale verzekeringen",
+          "values": [
+            "1.426.519",
+            "862.723"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+          "values": [
+            "78.768",
+            "54.183"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere personeelskosten",
+          "values": [
+            "887.672",
+            "671.546"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ouderdoms- en overlevingspensioenen",
+          "values": [
+            "2.425.218",
+            "2.811.701"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 19,
+      "section": "Waardeverminderingen / Op voorraden en bestellingen in uitvoering / Geboekt 9110 / Teruggenomen 9111 / Op handelsvorderingen",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Geboekt 9112",
+          "values": [
+            "213.742",
+            "298.855"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Teruggenomen 9113",
+          "values": [
+            "119.070",
+            "1.480"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Voorzieningen voor risico's en kosten / Toevoegingen 9115 / Bestedingen en terugnemingen 9116 / Andere bedrijfskosten",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bedrijfsbelastingen en -taksen",
+          "values": [
+            "529.333",
+            "317.218"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere 641/8",
+          "values": [
+            "194.054",
+            "62.731"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 19,
+      "section": "Uitzendkrachten en ter beschikking van de vereniging gestelde / personen / Totaal aantal op de afsluitingsdatum 9096",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gemiddeld aantal berekend in voltijdse equivalenten 9097",
+          "values": [
+            "3,1",
+            "3,6"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aantal daadwerkelijk gepresteerde uren 9098",
+          "values": [
+            "6.081",
+            "7.144"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kosten voor de vereniging",
+          "values": [
+            "112.804",
+            "130.777"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "NIET IN DE BALANS OPGENOMEN RECHTEN EN VERPLICHTINGEN / DOOR DE VERENIGING GESTELDE OF ONHERROEPELIJK BELOOFDE PERSOONLIJKE / ZEKERHEDEN ALS WAARBORG VOOR SCHULDEN OF VERPLICHTINGEN VAN DERDEN 9149 / ZAKELIJKE ZEKERHEDEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Boekwaarde van de bezwaarde activa 9161",
+          "values": [
+            "10.526.291"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bedrag van de inschrijving 9171",
+          "values": [
+            "1.363.414"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 16,
+    "results": [
+      {
+        "label": "Financiële vaste activa",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financiële vaste activa",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Verbonden entiteiten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Verbonden entiteiten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SCHULDEN 17/49",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SCHULDEN 17/49",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Schulden op meer dan één jaar 48 |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Schulden op meer dan één jaar 48 |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financiële schulden 170/4",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financiële schulden 170/4",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Toe te rekenen kosten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Toe te rekenen kosten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Over te dragen opbrengsten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Over te dragen opbrengsten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gemiddeld personeelsbestand berekend in voltijdse equivalenten 9087",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gemiddeld personeelsbestand berekend in voltijdse equivalenten 9087",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aantal daadwerkelijk gepresteerde uren 9088",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aantal daadwerkelijk gepresteerde uren 9088",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Werkgeversbijdragen voor sociale verzekeringen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Werkgeversbijdragen voor sociale verzekeringen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andere personeelskosten",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andere personeelskosten",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ouderdoms- en overlevingspensioenen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ouderdoms- en overlevingspensioenen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bedrijfsbelastingen en -taksen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bedrijfsbelastingen en -taksen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andere 641/8",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Andere 641/8",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Genk",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

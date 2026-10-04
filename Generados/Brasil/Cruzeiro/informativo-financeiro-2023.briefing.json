@@ -1,0 +1,1674 @@
+{
+  "club": "cruzeiro",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Cruzeiro/informativo-financeiro-2023.md",
+  "generatedAt": "2026-09-30T14:11:40.614Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 14,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 40,
+  "relevantTableCount": 5,
+  "tables": [
+    {
+      "page": 3,
+      "section": "Nota                Em 31/12/2023       Em 31/12/2022 / (Reapresentado – / Nota 1.4) / Ativo / Circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caixa e equivalentes de caixa",
+          "values": [
+            "67.239",
+            "15.598"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber – terceiros",
+          "values": [
+            "61.048",
+            "18.665"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber na transferência de jogadores",
+          "values": [
+            "9.262",
+            "1.920"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "Não Circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intangível – Atletas",
+          "values": [
+            "84.088",
+            "31.989"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível – Aquisição do negócio de futebol",
+          "values": [
+            "629.315",
+            "680.531"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "226.950",
+            "220.353"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Nota           Em 31/12/2023        Em 31/12/2022 / (Reapresentado – / Nota 1.4) / Passivo e Patrimônio Líquido / Circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores e outras obrigações",
+          "values": [
+            "10.256",
+            "9.146"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas e sociais",
+          "values": [
+            "5.924",
+            "8.132"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos e contribuições",
+          "values": [
+            "6.271",
+            "4.540"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "15.009",
+            "5.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento de clientes",
+          "values": [
+            "1.999",
+            "1.060"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luvas e intermediação de atletas a pagar",
+          "values": [
+            "30.505",
+            "18.296"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar na transferência de jogadores",
+          "values": [
+            "16.232",
+            "2.563"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingências e acordos judiciais",
+          "values": [
+            "8.698",
+            "7.938"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas a apropriar",
+          "values": [
+            "38.108",
+            "30.056"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações com partes relacionadas",
+          "values": [
+            "4.429",
+            "22.694"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Obrigações com partes relacionadas - Auxílio financeiro / Obrigações com partes relacionadas - centros de / Não circulante / Obrigações com partes relacionadas - Auxílio Financeiro",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "ao Cruzeiro Associação",
+          "values": [
+            "462.165",
+            "687.830"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações com partes relacionadas - centros de treinamento",
+          "values": [
+            "185.271",
+            "196.112"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Patrimônio Líquido                                                      14",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Capital social",
+          "values": [
+            "72.920",
+            "72.920"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucros (Prejuízos) acumulados",
+          "values": [
+            "205.045",
+            "(55.071)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Período entre / Exercício findo           04/02/2022 e / Nota               em 31/12/2023              31/12/2022 / (Reapresentado – / Nota 1.4)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Lucro Bruto",
+          "values": [
+            "34.304",
+            "37.901"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas gerais e administrativas",
+          "values": [
+            "(114.828)",
+            "(93.758)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita financeira",
+          "values": [
+            "183.685",
+            "1.422"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesa financeira",
+          "values": [
+            "(10.292)",
+            "(1.133)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "(Reapresentado – / Nota 1.4) / Fluxos de caixa das atividades operacionais / Ajustes para reconciliar o lucro líquido ao fluxo de caixa das / atividades operacionais:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depreciação",
+          "values": [
+            "3.312",
+            "1.773"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização",
+          "values": [
+            "81.918",
+            "65.321"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixa de intangível - atletas",
+          "values": [
+            "19.719",
+            "17.957"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões a Pagar",
+          "values": [
+            "20.196",
+            "7.938"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Variações nos ativos e passivos:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Partes relacionadas a receber / a pagar",
+          "values": [
+            "(65.944)",
+            "(102.773)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber de clientes",
+          "values": [
+            "5.814",
+            "(18.665)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber por venda de jogador",
+          "values": [
+            "(7.342)",
+            "(1.920)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Outros ativos",
+          "values": [
+            "(1.127)",
+            "2.101"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "1.110",
+            "9.146"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar na transferência de jogador",
+          "values": [
+            "39.730",
+            "20.859"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos e contribuições a pagar",
+          "values": [
+            "4.029",
+            "4.540"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas e sociais",
+          "values": [
+            "(2.208)",
+            "8.132"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita diferida",
+          "values": [
+            "33.053",
+            "30.056"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Fluxo de caixa originado das (aplicado nas) atividades / Atividades de investimentos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aquisições de bens do imobilizado",
+          "values": [
+            "(9.910)",
+            "(5.399)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aquisições de intangível - Atletas",
+          "values": [
+            "(102.520)",
+            "(38.717)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Atividades de financiamentos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Empréstimos e financiamentos obtidos",
+          "values": [
+            "37.500",
+            "20.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamentos de juros de empréstimos e financiamentos",
+          "values": [
+            "(5.993)",
+            "(1.036)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fluxo de caixa originado das atividades de financiamento",
+          "values": [
+            "59.007",
+            "68.974"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento no caixa e equivalentes de caixa",
+          "values": [
+            "51.641",
+            "15.598"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Demonstrações financeiras / Em milhares de Reais, exceto quando indicado de outra forma / 1.1     Efeitos contábeis da cisão parcial do Cruzeiro Associação",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "22.910 em direitos econômicos de atletas, em contrapartida a um aumento de capital social de R$",
+          "values": [
+            "22.920."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Informações adicionais sobre integralização de capital inicial na Companhia estão descritas na Nota explicativa",
+          "values": [
+            "14."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "adquirido é um negócio. / de suas obrigações. / pagamento de obrigações emergenciais vencidas no início de 2022. / adquiridos e passivos assumidos reconhecidos na data de aquisição: / Total da contraprestação",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Auxílio financeiro ao Cruzeiro Associação",
+          "values": [
+            "736.421"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Assunção de obrigações tributárias",
+          "values": [
+            "216.727"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Demonstrações financeiras / Em milhares de Reais, exceto quando indicado de outra forma / a seguir: / Ativos identificáveis adquiridos e passivos assumidos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a receber - partes relacionadas",
+          "values": [
+            "75.782"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "216.727"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Ativos intangíveis",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Marca",
+          "values": [
+            "151.071"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos econômicos de atletas",
+          "values": [
+            "60.843"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contratos de patrocínio",
+          "values": [
+            "55.092"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sócio-torcedor",
+          "values": [
+            "16.080"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros ativos intangíveis",
+          "values": [
+            "24.161"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita diferida",
+          "values": [
+            "(74.591)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar de luvas e comissões a terceiros",
+          "values": [
+            "(12.321)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros passivos",
+          "values": [
+            "(1.191)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de ativos identificáveis, líquidos",
+          "values": [
+            "511.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ágio",
+          "values": [
+            "441.495"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "Patrimônio     Resultado do / Nota          Ativos         Passivos        líquido         período / No período findo em 31 de dezembro de 2022 / Reconhecimento do passivo financeiro oriundo da combinação de negócios / e ativos oriundos da referida combinação, líquido dos valores correspondentes",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Reversão da despesa com auxílio financeiro registrada originalmente -",
+          "values": [
+            "(25.461)",
+            "25.461",
+            "25.461"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização de ativos intangíveis oriundos da combinação de negócios",
+          "values": [
+            "(55.890)",
+            "(55.890)",
+            "(55.890)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 12,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total dos ajustes de refazimento",
+          "values": [
+            "668.147",
+            "698.576",
+            "(30.429)",
+            "(30.429)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo no período findo em 31 de dezembro de 2022, ajustado",
+          "values": [
+            "1.055.126",
+            "1.037.277",
+            "17.849",
+            "(55.071)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "CPC 03 (R2).",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Recursos em caixa e depósitos bancários",
+          "values": [
+            "3.992"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicações financeiras de alta liquidez",
+          "values": [
+            "67.154",
+            "11.606"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "6. Intangível / conforme política contábil descrita na Nota explicativa 2.7 às demonstrações financeiras. / Em 31/12/2023 / Amortização / Custo           acumulada           Valor líquido",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Atletas profissionais",
+          "values": [
+            "96.144",
+            "(27.258)",
+            "68.886"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas em formação 15.202 -",
+          "values": [
+            "15.202"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intangível - Aquisição do negócio de futebol",
+          "values": [
+            "736.420",
+            "(107.107)",
+            "629.315"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sócios torcedores",
+          "values": [
+            "16.081",
+            "(3.082)",
+            "12.999"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contratos de transmissão",
+          "values": [
+            "8.431",
+            "(5.541)",
+            "2.890"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Marcas 151.071 -",
+          "values": [
+            "151.071"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ágio em combinação de negócios 441.494 -",
+          "values": [
+            "441.494"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Em 31/12/2022 / (Reapresentado - / Nota 1.4 / Amortização / Custo           acumulada           Valor líquido",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intangível – Atletas",
+          "values": [
+            "37.762",
+            "(5.773)",
+            "31.989"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas profissionais",
+          "values": [
+            "29.165",
+            "(5.773)",
+            "23.392"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas em formação 8.597 -",
+          "values": [
+            "8.597"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intangível - Outros intangíveis",
+          "values": [
+            "736.420",
+            "(55.891)",
+            "680.529"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sócios torcedores",
+          "values": [
+            "16.080",
+            "(1.474)",
+            "14.606"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contratos de transmissão",
+          "values": [
+            "8.431",
+            "(2.650)",
+            "5.781"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Licenciamentos e royalties",
+          "values": [
+            "3.409",
+            "(2.344)",
+            "1.065"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transações de jogadores",
+          "values": [
+            "60.843",
+            "(19.122)",
+            "41.721"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contratos de patrocínio",
+          "values": [
+            "55.092",
+            "(30.301)",
+            "24.791"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marcas 151.071 -",
+          "values": [
+            "151.071"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ágio em combinação de negócios 441.494 -",
+          "values": [
+            "441.494"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "Em milhares de Reais, exceto quando indicado de outra forma / A movimentação no período foi a seguinte: / Em 31/12/2023 / Em 31/12/2022              Adições             Baixas           Em 31/12/2023 / Custo dos direitos dos atletas profissionais e",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "em formação",
+          "values": [
+            "37.762",
+            "102.521",
+            "(28.934)",
+            "111.347"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização acumulada",
+          "values": [
+            "(5.773)",
+            "(30.702)",
+            "9.216",
+            "(27.259)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 22,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intangível - Outros intangíveis 736.421 - -",
+          "values": [
+            "736.421"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização acumulada (55.890) (51.216) -",
+          "values": [
+            "(107.106)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "Saldo Inicial      refazim ento pelo / Adições                Baixas     Em 31/12/2022 / em 2022          reconhecim ento / da com binação de / negócios (Nota 1.2)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Custo dos direitos dos atletas profissionais e em formação 20.660 -",
+          "values": [
+            "38.717",
+            "(21.615)",
+            "37.762"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização acumulada - -",
+          "values": [
+            "(9.431)",
+            "3.658",
+            "(5.773)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intangível - Outros intangíveis - 736.421 - -",
+          "values": [
+            "736.421"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização acumulada - (55.890) - -",
+          "values": [
+            "(55.890)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ativo intangível líquido",
+          "values": [
+            "20.660",
+            "680.531",
+            "29.286",
+            "(17.957)",
+            "712.520"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "9. Empréstimos e financiamentos / a) Composição / Capital de Giro / Em moeda nacional / Empréstimos e financiamentos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Juros de CDI + 6% a.a. CONTA GARANTIDA 24/03/2023 -",
+          "values": [
+            "5.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juros de CDI + 7% a.a. CCB 27/09/2024",
+          "values": [
+            "15.009",
+            "14.719"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "15.009              19.719",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "15.009",
+            "5.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não Circulante -",
+          "values": [
+            "14.719"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "Demonstrações financeiras / Em milhares de Reais, exceto quando indicado de outra forma / 10.Impostos e contribuições / Em 31/12/2023           Em 31/12/2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "IRRF sobre folha",
+          "values": [
+            "3.918",
+            "2.106"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributação Específica do Futebol",
+          "values": [
+            "3.910",
+            "1.981"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "8.569               4.540 / específicas e as contribuições de terceiros de 4,5% incidente sobre a folha de salários. / 11.Obrigações trabalhistas e sociais / Ref.:              Em 31/12/2023        Em 31/12/2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Salários a pagar",
+          "values": [
+            "1.726",
+            "2.253"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiações por performance coletiva a pagar (i) -",
+          "values": [
+            "2.386"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rescisões a pagar",
+          "values": [
+            "1.555"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões de férias",
+          "values": [
+            "2.174",
+            "1.288"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "15.Receita operacional líquida / Período entre / 04/02/2022 e / Ref.:               Em 31/12/2023           31/12/2022 / Receita operacional bruta",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bilheteria (i)",
+          "values": [
+            "28.624",
+            "31.937"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Programa sócio torcedor",
+          "values": [
+            "31.045",
+            "30.324"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocínio e publicidade",
+          "values": [
+            "48.580",
+            "32.631"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de transmissão fixos e premiações por performance (ii)",
+          "values": [
+            "101.728",
+            "28.710"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferência de atletas e mecanismo de solidariedade (iii)",
+          "values": [
+            "20.714",
+            "16.233"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas com royalties e licenciamento",
+          "values": [
+            "11.813",
+            "10.339"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 28,
+      "section": "28.624                 (453)                 28.171             26 / (ii) Direitos de transmissão fixos e premiações por performance / Período entre / 04/02/2022 e / Em 31/12/2023             31/12/2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Campeonato Brasileiro",
+          "values": [
+            "91.678",
+            "17.944"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Campeonato Mineiro",
+          "values": [
+            "4.484",
+            "3.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Copa do Brasil",
+          "values": [
+            "5.400",
+            "7.731"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "Em milhares de Reais, exceto quando indicado de outra forma / (iii) Transferência de atletas e mecanismo de solidariedade / Período entre / 04/02/2022 e / Ref.             Em 31/12/2023          31/12/2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Rescisão contratual",
+          "values": [
+            "10.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venda de direitos econômicos de atletas (a)",
+          "values": [
+            "16.809",
+            "4.431"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "curto prazo ou do endividamento bancário. / Risco de liquidez / com risco de prejudicar a reputação do Cruzeiro SAF. / estratégicas discorridas na Nota explicativa 1.2. / um ano          dois anos      cinco anos              anos       Total",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "10.256",
+            "10.256"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos",
+          "values": [
+            "15.009",
+            "15.009"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar de transferência de jogadores",
+          "values": [
+            "16.232",
+            "13.852",
+            "30.084"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luvas e intermediação de atletas a pagar",
+          "values": [
+            "30.505",
+            "30.505"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento a clientes",
+          "values": [
+            "1.999",
+            "1.999"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos e contribuições 6.271",
+          "values": [
+            "1.711",
+            "8.569"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas e sociais",
+          "values": [
+            "5.924",
+            "5.924"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingências e acordos judiciais",
+          "values": [
+            "8.698",
+            "7.802",
+            "11.634",
+            "28.134"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas a apropriar",
+          "values": [
+            "38.108",
+            "5.000",
+            "15.000",
+            "5.000",
+            "63.108"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações com partes relacionadas",
+          "values": [
+            "4.429",
+            "4.429"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Obrigações com partes relacionadas - Auxílio Financeiro ao",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cruzeiro Associação",
+          "values": [
+            "43.752",
+            "39.025",
+            "145.320",
+            "277.820",
+            "505.917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Títulos Emitidos",
+          "values": [
+            "1.505",
+            "1.505"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AFAC",
+          "values": [
+            "70.000",
+            "70.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações com partes relacionadas - centro de treinamento",
+          "values": [
+            "12.609",
+            "29.491",
+            "63.286",
+            "92.494",
+            "197.880"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "um ano          dois anos      cinco anos              anos       Total",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "9.146",
+            "9.146"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos",
+          "values": [
+            "5.000",
+            "14.719",
+            "19.719"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar de transferência de jogadores",
+          "values": [
+            "2.563",
+            "2.563"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luvas e intermediação de atletas a pagar",
+          "values": [
+            "18.296",
+            "18.296"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento a clientes",
+          "values": [
+            "1.060",
+            "1.060"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos e contribuições",
+          "values": [
+            "4.540",
+            "4.540"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas e sociais",
+          "values": [
+            "8.132",
+            "8.132"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contingências e acordos judiciais",
+          "values": [
+            "7.938",
+            "7.938"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas a apropriar",
+          "values": [
+            "30.056",
+            "30.056"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações com partes relacionadas",
+          "values": [
+            "22.694",
+            "22.694"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Obrigações com partes relacionadas - Auxílio Financeiro ao",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cruzeiro Associação",
+          "values": [
+            "16.463",
+            "43.752",
+            "152.403",
+            "491.675",
+            "704.293"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações com partes relacionadas - centro de treinamento",
+          "values": [
+            "12.726",
+            "12.726",
+            "63.522",
+            "119.864",
+            "208.838"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 11,
+      "section": "Ativos intangíveis",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total de ativos identificáveis, líquidos",
+      "target": "511.653",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "-292509"
+    },
+    {
+      "page": 12,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Total dos ajustes de refazimento",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 14,
+    "results": [
+      {
+        "label": "Reversão da despesa com auxílio financeiro registrada originalmente -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reversão da despesa com auxílio financeiro registrada originalmente -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização de ativos intangíveis oriundos da combinação de negócios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização de ativos intangíveis oriundos da combinação de negócios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas profissionais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas profissionais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas em formação 15.202 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas em formação 15.202 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intangível – Atletas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intangível – Atletas",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Amortizações do intangível (atletas)",
+        "similarity": 67
+      },
+      {
+        "label": "Atletas em formação 8.597 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas em formação 8.597 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "em formação",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "em formação",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização acumulada",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização acumulada",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bilheteria (i)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "matchday_competition",
+        "matchedLabel": "Bilheteria",
+        "similarity": 100
+      },
+      {
+        "label": "Bilheteria (i)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Programa sócio torcedor",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "member_dues",
+        "matchedLabel": "Programa sócio-torcedor",
+        "years": [
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Programa sócio torcedor",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrocínio e publicidade",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Patrocínio e publicidade",
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Patrocínio e publicidade",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direitos de transmissão fixos e premiações por performance (ii)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "broadcasting",
+        "matchedLabel": "Direitos de transmissão fixos e premiações por performance",
+        "similarity": 100
+      },
+      {
+        "label": "Direitos de transmissão fixos e premiações por performance (ii)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transferência de atletas e mecanismo de solidariedade (iii)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outros (transferência de atletas e mecanismo de solidariedade)",
+        "similarity": 67
+      },
+      {
+        "label": "Transferência de atletas e mecanismo de solidariedade (iii)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas com royalties e licenciamento",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Receitas com royalties e licenciamento",
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Receitas com royalties e licenciamento",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Cruzeiro",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

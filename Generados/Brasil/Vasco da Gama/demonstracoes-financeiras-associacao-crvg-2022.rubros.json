@@ -1,0 +1,669 @@
+{
+  "md": "Clubes/Brasil/Vasco da Gama/demonstracoes-financeiras-associacao-crvg-2022.md",
+  "pdf": "Clubes/Brasil/Vasco da Gama/demonstracoes-financeiras-associacao-crvg-2022.pdf",
+  "club": "vascodagama-br",
+  "year": 2022,
+  "numberFormat": "ambiguo",
+  "generatedAt": "2026-09-30T21:54:08.662Z",
+  "tieOuts": {
+    "cierran": 2,
+    "noCierran": 4
+  },
+  "warnings": [
+    "1 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "3 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 57,
+    "notasUsadas": [
+      "58"
+    ]
+  },
+  "ladoConocido": 31,
+  "rubros": [
+    {
+      "label": "Caixa e equivalentes de caixa 4 504 1.249 Fornecedores 12",
+      "lado": null,
+      "page": 17,
+      "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+      "values": [
+        9.912
+      ],
+      "origen": "estado 2",
+      "glosa": "Efectivo y equivalentes de efectivo 4 504 1.249 Proveedores 12"
+    },
+    {
+      "label": "Contas a receber 5 856 54.255 Obrigações trabalhistas 13",
+      "lado": null,
+      "page": 17,
+      "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+      "values": [
+        31.485
+      ],
+      "origen": "estado 2",
+      "glosa": "Cuentas por cobrar 5 856 54.255 Obligaciones laborales 13"
+    },
+    {
+      "label": "Estoques 6 - 1.485 Tributos e contribuições a recolher 14",
+      "lado": null,
+      "page": 17,
+      "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+      "values": [
+        2.327
+      ],
+      "origen": "estado 2",
+      "glosa": "Existencias 6 - 1.485 Tributos y contribuciones a pagar 14"
+    },
+    {
+      "label": "Despesas Antecipadas 7 - 378 Imagem e Comissões a Pagar 15 -",
+      "lado": "expense",
+      "page": 17,
+      "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+      "values": [
+        6.909
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos anticipados 7 - 378 Derechos de imagen y comisiones por pagar 15 -"
+    },
+    {
+      "label": "Tributos e contribuições a recuperar 1 - Acordos Cíveis e Trabalhistas 16 -",
+      "lado": null,
+      "page": 17,
+      "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+      "values": [
+        19.915
+      ],
+      "origen": "estado 2",
+      "glosa": "Tributos y contribuciones a recuperar 1 - Acuerdos civiles y laborales 16 -"
+    },
+    {
+      "label": "Plano Regime Centralizado de Execuções 16 -",
+      "lado": null,
+      "page": 17,
+      "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+      "values": [
+        30.973
+      ],
+      "origen": "estado 2",
+      "glosa": "Plan de Régimen Centralizado de Ejecuciones 16 -"
+    },
+    {
+      "label": "Parcelamentos 17 -",
+      "lado": null,
+      "page": 17,
+      "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+      "values": [
+        15.094
+      ],
+      "origen": "estado 2",
+      "glosa": "Aplazamientos y fraccionamientos 17 -"
+    },
+    {
+      "label": "Obrigações com Entidades Esportivas 18 -",
+      "lado": null,
+      "page": 17,
+      "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+      "values": [
+        3.558
+      ],
+      "origen": "estado 2",
+      "glosa": "Obligaciones con entidades deportivas 18 -"
+    },
+    {
+      "label": "Empréstimos e adiantamentos 19 -",
+      "lado": null,
+      "page": 17,
+      "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+      "values": [
+        82.459
+      ],
+      "origen": "estado 2",
+      "glosa": "Préstamos y anticipos 19 -"
+    },
+    {
+      "label": "Receitas Diferidas 20 -",
+      "lado": "revenue",
+      "page": 17,
+      "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+      "values": [
+        36.47
+      ],
+      "origen": "estado 2",
+      "glosa": "Ingresos diferidos 20 -"
+    },
+    {
+      "label": "Contas a receber 5 - 7.800 Acordos Cíveis e Trabalhistas 16 -",
+      "lado": null,
+      "page": 17,
+      "section": "",
+      "values": [
+        34.954
+      ],
+      "origen": "estado 3",
+      "glosa": "Cuentas por cobrar 5 - 7.800 Acuerdos civiles y laborales 16 -"
+    },
+    {
+      "label": "Depósitos Judiciais 8 180 19.790 Plano Regime Centralizado de Execuções",
+      "lado": null,
+      "page": 17,
+      "section": "",
+      "values": [
+        35.406
+      ],
+      "origen": "estado 3",
+      "glosa": "Depósitos judiciales 8 180 19.790 Plan de Régimen Centralizado de Ejecuciones"
+    },
+    {
+      "label": "Investimentos",
+      "lado": null,
+      "page": 17,
+      "section": "",
+      "values": [
+        291.578
+      ],
+      "origen": "estado 3",
+      "glosa": "Inversiones"
+    },
+    {
+      "label": "Imobilizado 10 144.800 158.774 Contingências 16 -",
+      "lado": null,
+      "page": 17,
+      "section": "",
+      "values": [
+        18.267
+      ],
+      "origen": "estado 3",
+      "glosa": "Inmovilizado material 10 144.800 158.774 Contingencias 16 -"
+    },
+    {
+      "label": "Intangível 11 - 23.945 Parcelamentos",
+      "lado": null,
+      "page": 17,
+      "section": "",
+      "values": [
+        15.141
+      ],
+      "origen": "estado 3",
+      "glosa": "Inmovilizado intangible 11 - 23.945 Aplazamientos y fraccionamientos"
+    },
+    {
+      "label": "Obrigações com Entidades Esportivas 18 -",
+      "lado": null,
+      "page": 17,
+      "section": "",
+      "values": [
+        12.749
+      ],
+      "origen": "estado 3",
+      "glosa": "Obligaciones con entidades deportivas 18 -"
+    },
+    {
+      "label": "Empréstimos e adiantamentos 19 -",
+      "lado": null,
+      "page": 17,
+      "section": "",
+      "values": [
+        39.522
+      ],
+      "origen": "estado 3",
+      "glosa": "Préstamos y anticipos 19 -"
+    },
+    {
+      "label": "Receitas Diferidas 20 -",
+      "lado": "revenue",
+      "page": 17,
+      "section": "",
+      "values": [
+        29
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos diferidos 20 -"
+    },
+    {
+      "label": "(+/-) Custo/Despesas operacionais - Clube social e esportes amadores",
+      "lado": "expense",
+      "page": 18,
+      "section": "",
+      "values": [
+        836.268
+      ],
+      "origen": "estado 11",
+      "glosa": "(+/-) Costes/Gastos de explotación - Club social y deportes amateurs"
+    },
+    {
+      "label": "Outros custos e despesas",
+      "lado": "expense",
+      "page": 18,
+      "section": "",
+      "values": [
+        -18.551
+      ],
+      "origen": "estado 11",
+      "glosa": "Otros costes y gastos"
+    },
+    {
+      "label": "Transporte e outros gastos com competição",
+      "lado": "expense",
+      "page": 18,
+      "section": "",
+      "values": [
+        -7.459
+      ],
+      "origen": "estado 11",
+      "glosa": "Transporte y otros gastos de competición"
+    },
+    {
+      "label": "Depreciação",
+      "lado": null,
+      "page": 18,
+      "section": "",
+      "values": [
+        -1.114
+      ],
+      "origen": "estado 11",
+      "glosa": "Depreciación"
+    },
+    {
+      "label": "Outras receitas (despesas) operacionais",
+      "lado": null,
+      "page": 18,
+      "section": "",
+      "values": [
+        861.536
+      ],
+      "origen": "estado 11",
+      "glosa": "Otros ingresos (gastos) de explotación"
+    },
+    {
+      "label": "Desconto obtido na PGFN",
+      "lado": null,
+      "page": 18,
+      "section": "",
+      "values": [
+        15.447
+      ],
+      "origen": "estado 11",
+      "glosa": "Descuento obtenido en la PGFN"
+    },
+    {
+      "label": "Receita bruta de Futebol",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+      "values": [
+        61.486
+      ],
+      "origen": "estado 25",
+      "glosa": "Ingresos brutos de fútbol"
+    },
+    {
+      "label": "Direitos de Transmissão",
+      "lado": null,
+      "page": 35,
+      "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+      "values": [
+        13.559
+      ],
+      "origen": "estado 25",
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Repasse de Direitos Federativos",
+      "lado": null,
+      "page": 35,
+      "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+      "values": [
+        23.182
+      ],
+      "origen": "estado 25",
+      "glosa": "Traspaso de derechos federativos"
+    },
+    {
+      "label": "Bilheteria",
+      "lado": null,
+      "page": 35,
+      "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+      "values": [
+        7.784
+      ],
+      "origen": "estado 25",
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Marketing",
+      "lado": null,
+      "page": 35,
+      "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+      "values": [
+        11.802
+      ],
+      "origen": "estado 25",
+      "glosa": "Marketing"
+    },
+    {
+      "label": "Mecanismo de Solidariedade",
+      "lado": null,
+      "page": 35,
+      "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+      "values": [
+        2.718
+      ],
+      "origen": "estado 25",
+      "glosa": "Mecanismo de solidaridad"
+    },
+    {
+      "label": "Receitas Diversas",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+      "values": [
+        1.072
+      ],
+      "origen": "estado 25",
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "Receitas com Premiação",
+      "lado": "revenue",
+      "page": 35,
+      "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+      "values": [
+        1.37
+      ],
+      "origen": "estado 25",
+      "glosa": "Ingresos por premios y competiciones"
+    },
+    {
+      "label": "(-) Custo/Despesas operacionais - futebol profissional",
+      "lado": "expense",
+      "page": 18,
+      "section": "",
+      "values": [
+        -47.907
+      ],
+      "origen": "estado 10",
+      "glosa": "(-) Costes/Gastos de explotación - fútbol profesional"
+    },
+    {
+      "label": "Outros custos e despesas",
+      "lado": "expense",
+      "page": 18,
+      "section": "",
+      "values": [
+        -10.807
+      ],
+      "origen": "estado 10",
+      "glosa": "Otros costes y gastos"
+    },
+    {
+      "label": "Transporte e outros gastos com competição",
+      "lado": "expense",
+      "page": 18,
+      "section": "",
+      "values": [
+        -2.274
+      ],
+      "origen": "estado 10",
+      "glosa": "Transporte y otros gastos de competición"
+    },
+    {
+      "label": "Amortização",
+      "lado": null,
+      "page": 18,
+      "section": "",
+      "values": [
+        -1.137
+      ],
+      "origen": "estado 10",
+      "glosa": "Amortización"
+    },
+    {
+      "label": "Baixa Custos de Atletas 11 (773)",
+      "lado": "expense",
+      "page": 18,
+      "section": "",
+      "values": [
+        -8.933
+      ],
+      "origen": "estado 10",
+      "glosa": "Baja de costes de deportistas 11 (773)"
+    },
+    {
+      "label": "Receitas Operacionais",
+      "lado": "revenue",
+      "page": 10,
+      "section": "4.2.    A DEMONSTRAÇÃO DE RESULTADO DA ASSOCIAÇÃO EM 31/12/2022",
+      "values": [
+        77.358
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos de explotación"
+    },
+    {
+      "label": "Despesas Operacionais",
+      "lado": "expense",
+      "page": 10,
+      "section": "4.2.    A DEMONSTRAÇÃO DE RESULTADO DA ASSOCIAÇÃO EM 31/12/2022",
+      "values": [
+        -100.585
+      ],
+      "origen": "estado 1",
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "Passivo a descoberto",
+      "lado": null,
+      "page": 17,
+      "section": "",
+      "values": [
+        794.736
+      ],
+      "origen": "estado 4",
+      "glosa": "Patrimonio neto negativo (fondos propios negativos)"
+    },
+    {
+      "label": "Patrimônio social",
+      "lado": null,
+      "page": 17,
+      "section": "",
+      "values": [
+        -595.63
+      ],
+      "origen": "estado 4",
+      "glosa": "Patrimonio social"
+    },
+    {
+      "label": "Avaliação patrimonial",
+      "lado": null,
+      "page": 17,
+      "section": "",
+      "values": [
+        127.676
+      ],
+      "origen": "estado 4",
+      "glosa": "Ajustes por valoración patrimonial"
+    },
+    {
+      "label": "(-) Deduções das Receitas",
+      "lado": "revenue",
+      "page": 18,
+      "section": "",
+      "values": [
+        -4.931
+      ],
+      "origen": "estado 9",
+      "glosa": "(-) Deducciones de los ingresos"
+    },
+    {
+      "label": "Impostos e contribuições",
+      "lado": "expense",
+      "page": 18,
+      "section": "",
+      "values": [
+        -1.564
+      ],
+      "origen": "estado 9",
+      "glosa": "Impuestos y contribuciones"
+    },
+    {
+      "label": "Outras deduções",
+      "lado": "revenue",
+      "page": 18,
+      "section": "",
+      "values": [
+        -3.367
+      ],
+      "origen": "estado 9",
+      "glosa": "Otras deducciones"
+    },
+    {
+      "label": "(=) Receita operacional líquida",
+      "lado": "revenue",
+      "page": 18,
+      "section": "",
+      "values": [
+        77.358
+      ],
+      "origen": "estado 9",
+      "glosa": "(=) Ingresos de explotación netos"
+    },
+    {
+      "label": "Despesas financeiras (49.195) (4.505) (e)",
+      "lado": "expense",
+      "page": 35,
+      "section": "",
+      "values": [
+        -53.7
+      ],
+      "origen": "estado 30",
+      "glosa": "Gastos financieros (49.195) (4.505) (e)"
+    },
+    {
+      "label": "Receitas financeiras 41.737 -",
+      "lado": "revenue",
+      "page": 35,
+      "section": "",
+      "values": [
+        41.737
+      ],
+      "origen": "estado 30",
+      "glosa": "Ingresos financieros 41.737 -"
+    },
+    {
+      "label": "Talles Magno 85% Major League Soccer/ NY City FC mai/21",
+      "lado": "expense",
+      "page": 51,
+      "section": "(Em milhares de Reais) / 23. Repasse de Direitos Econômicos / Dir. Econômicos / Atletas                               Clube destinatário          Data     2022      2021 / Transferidos",
+      "values": [
+        9.861
+      ],
+      "origen": "nota 58 (ancla 65)",
+      "ancla": "Salário",
+      "glosa": "Talles Magno 85% Major League Soccer/ NY City FC may/21"
+    },
+    {
+      "label": "Salário",
+      "lado": "expense",
+      "page": 55,
+      "section": "Notas explicativas da administração às demonstrações contábeis / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 30. Salários, encargos e benefícios / 31/12/2022            31/12/2021",
+      "values": [
+        -26.043
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Marrony 20% Atletico Mineiro ago/21 -",
+      "lado": "expense",
+      "page": 51,
+      "section": "(Em milhares de Reais) / 23. Repasse de Direitos Econômicos / Dir. Econômicos / Atletas                               Clube destinatário          Data     2022      2021 / Transferidos",
+      "values": [
+        3.941
+      ],
+      "origen": "nota 58 (ancla 65)",
+      "ancla": "Salário",
+      "glosa": "Marrony 20% Atletico Mineiro ago/21 -"
+    },
+    {
+      "label": "Arthur Sales 80% Voetbalclub Lommel SK NV ago/21 -",
+      "lado": "expense",
+      "page": 51,
+      "section": "(Em milhares de Reais) / 23. Repasse de Direitos Econômicos / Dir. Econômicos / Atletas                               Clube destinatário          Data     2022      2021 / Transferidos",
+      "values": [
+        12.226
+      ],
+      "origen": "nota 58 (ancla 65)",
+      "ancla": "Salário",
+      "glosa": "Arthur Sales 80% Voetbalclub Lommel SK NV ago/21 -"
+    },
+    {
+      "label": "Direito de Imagem",
+      "lado": "expense",
+      "page": 55,
+      "section": "Notas explicativas da administração às demonstrações contábeis / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 30. Salários, encargos e benefícios / 31/12/2022            31/12/2021",
+      "values": [
+        -4.857
+      ],
+      "origen": "estado 65",
+      "glosa": "Derechos de imagen"
+    },
+    {
+      "label": "Férias",
+      "lado": "expense",
+      "page": 55,
+      "section": "Notas explicativas da administração às demonstrações contábeis / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 30. Salários, encargos e benefícios / 31/12/2022            31/12/2021",
+      "values": [
+        -2.807
+      ],
+      "origen": "estado 65",
+      "glosa": "Vacaciones"
+    },
+    {
+      "label": "13º Salário",
+      "lado": "expense",
+      "page": 55,
+      "section": "Notas explicativas da administração às demonstrações contábeis / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 30. Salários, encargos e benefícios / 31/12/2022            31/12/2021",
+      "values": [
+        -2.425
+      ],
+      "origen": "estado 65",
+      "glosa": "Paga extraordinaria (13.er salario)"
+    },
+    {
+      "label": "Depósitos Civis -",
+      "lado": "expense",
+      "page": 40,
+      "section": "7. Despesas Antecipadas / 31/12/2022            31/12/2021 / -                    378 / 8. Depósitos/bloqueios judiciais / 31/12/2022            31/12/2021",
+      "values": [
+        6.111
+      ],
+      "origen": "estado 40",
+      "glosa": "Depósitos civiles -"
+    },
+    {
+      "label": "Depósitos Trabalhistas (i)",
+      "lado": "expense",
+      "page": 40,
+      "section": "7. Despesas Antecipadas / 31/12/2022            31/12/2021 / -                    378 / 8. Depósitos/bloqueios judiciais / 31/12/2022            31/12/2021",
+      "values": [
+        3.584
+      ],
+      "origen": "estado 40",
+      "glosa": "Depósitos laborales (i)"
+    },
+    {
+      "label": "Depósitos Fiscais -",
+      "lado": "expense",
+      "page": 40,
+      "section": "7. Despesas Antecipadas / 31/12/2022            31/12/2021 / -                    378 / 8. Depósitos/bloqueios judiciais / 31/12/2022            31/12/2021",
+      "values": [
+        6.338
+      ],
+      "origen": "estado 40",
+      "glosa": "Depósitos fiscales -"
+    }
+  ]
+}

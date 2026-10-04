@@ -1,0 +1,2162 @@
+{
+ "md": "Clubes/Brasil/Botafogo/demonstracoes-financeiras-2025.md",
+ "generatedAt": "2026-09-30T01:11:37.536Z",
+ "rubros": [
+  {
+   "label": "EBIT",
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ]
+   ],
+   "tokens": 1252
+  },
+  {
+   "label": "Receita",
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "choice": "lump_football_operations",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.83
+    ],
+    [
+     "other_income",
+     0.14
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1252
+  },
+  {
+   "label": "EBITDA",
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ]
+   ],
+   "tokens": 1253
+  },
+  {
+   "label": "(-/+) Despesa/ Receita Financeira",
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "(-) Baixa Ativo Intangível",
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "choice": "other_amortisation",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_amortisation",
+     0.43
+    ],
+    [
+     "player_impairment",
+     0.33
+    ],
+    [
+     "player_amortisation",
+     0.12
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "(-) Despesas Operacionais",
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.17
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "(-) Contingência",
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "exceptional_items",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "(-) Depreciação e Amortização",
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "choice": "depreciation",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "depreciation",
+     0.85
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Lucro/ Prejuízo",
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Receitas transações de direitos de atletas",
+   "page": 32,
+   "section": "Outras despesas operacionais (498) (623) (498) (622) / Outras receitas operacionais 23 52.436 49.223 52.536 49.223 / Resultado de equivalência patrimonial (6.544) (6.509) - - / Resultado Operacional Antes da Alienação (274.066) (160.119) (267.753) (153.616) / de Ativos",
+   "choice": "player_sales",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "player_sales",
+     0.91
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1404
+  },
+  {
+   "label": "Capital Social",
+   "page": 31,
+   "section": "Receita diferida 17 86.191 - 86.191 -",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Prejuízo acumulado",
+   "page": 31,
+   "section": "Receita diferida 17 86.191 - 86.191 -",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Outras receitas e despesas operacionais",
+   "page": 32,
+   "section": "Outras despesas operacionais (498) (623) (498) (622) / Outras receitas operacionais 23 52.436 49.223 52.536 49.223 / Resultado de equivalência patrimonial (6.544) (6.509) - - / Resultado Operacional Antes da Alienação (274.066) (160.119) (267.753) (153.616) / de Ativos",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1402
+  },
+  {
+   "label": "Resultado do exercício",
+   "page": 31,
+   "section": "Receita diferida 17 86.191 - 86.191 -",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "lump_football_operations",
+     0.06999999999999999
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Resultado financeiro líquido",
+   "page": 32,
+   "section": "Outras despesas operacionais (498) (623) (498) (622) / Outras receitas operacionais 23 52.436 49.223 52.536 49.223 / Resultado de equivalência patrimonial (6.544) (6.509) - - / Resultado Operacional Antes da Alienação (274.066) (160.119) (267.753) (153.616) / de Ativos",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1396
+  },
+  {
+   "label": "Gastos na transação de direitos de atletas",
+   "page": 32,
+   "section": "Outras despesas operacionais (498) (623) (498) (622) / Outras receitas operacionais 23 52.436 49.223 52.536 49.223 / Resultado de equivalência patrimonial (6.544) (6.509) - - / Resultado Operacional Antes da Alienação (274.066) (160.119) (267.753) (153.616) / de Ativos",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ],
+    [
+     "exceptional_items",
+     0.11
+    ]
+   ],
+   "tokens": 1404
+  },
+  {
+   "label": "Prejuízo do exercício",
+   "page": 32,
+   "section": "Outras despesas operacionais (498) (623) (498) (622) / Outras receitas operacionais 23 52.436 49.223 52.536 49.223 / Resultado de equivalência patrimonial (6.544) (6.509) - - / Resultado Operacional Antes da Alienação (274.066) (160.119) (267.753) (153.616) / de Ativos",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.6900000000000001
+    ],
+    [
+     "exceptional_items",
+     0.21
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1399
+  },
+  {
+   "label": "Cessão de Atletas",
+   "page": 55,
+   "section": "SAF BOTAFOGO / g) Considerações adicionais sobre transações intragrupo / 8. Despesa Antecipada",
+   "choice": "player_sales",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "player_sales",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ],
+    [
+     "player_amortisation",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Contrato de Comodato",
+   "page": 55,
+   "section": "SAF BOTAFOGO / g) Considerações adicionais sobre transações intragrupo / 8. Despesa Antecipada",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "other_amortisation",
+     0.15000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Contrato de Transmissão",
+   "page": 55,
+   "section": "SAF BOTAFOGO / g) Considerações adicionais sobre transações intragrupo / 8. Despesa Antecipada",
+   "choice": "broadcasting",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "broadcasting",
+     0.61
+    ],
+    [
+     "other_amortisation",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "Seguros",
+   "page": 55,
+   "section": "SAF BOTAFOGO / g) Considerações adicionais sobre transações intragrupo / 8. Despesa Antecipada",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Direito de Uso de Veículos 3.870",
+   "page": 56,
+   "section": "10. Direito de Uso / 10.1 - Ativo de Direito de Uso / Controladora / Consolidado / 31/12/2024 31/12/2025 / Líquido Custo Depreciação Líquido",
+   "choice": "depreciation",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "depreciation",
+     0.6
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1327
+  },
+  {
+   "label": "Outros",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Contrato de Licenciamento",
+   "page": 55,
+   "section": "SAF BOTAFOGO / g) Considerações adicionais sobre transações intragrupo / 8. Despesa Antecipada",
+   "choice": "other_expenses",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "other_amortisation",
+     0.29000000000000004
+    ],
+    [
+     "sponsorship_commercial",
+     0.25
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Direito de Uso Nilton Santos 10.3 4.761 383 (818)",
+   "page": 56,
+   "section": "10. Direito de Uso / 10.1 - Ativo de Direito de Uso / Controladora / Consolidado / 31/12/2024 31/12/2025 / Líquido Custo Depreciação Líquido",
+   "choice": "depreciation",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "depreciation",
+     0.62
+    ],
+    [
+     "stadium_other",
+     0.17
+    ],
+    [
+     "other_amortisation",
+     0.12
+    ]
+   ],
+   "tokens": 1339
+  },
+  {
+   "label": "Programas e software 5.692 869 -",
+   "page": 59,
+   "section": "12. Intangível / Movimentação do ativo intangível em 2025: / Controladora / Consolidado / 2024 Adições Baixas 2025 / Custo",
+   "choice": "other_amortisation",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_amortisation",
+     0.54
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "depreciation",
+     0.14
+    ]
+   ],
+   "tokens": 1316
+  },
+  {
+   "label": "Recompra 10% direto de transmissão - 80.333 -",
+   "page": 59,
+   "section": "12. Intangível / Movimentação do ativo intangível em 2025: / Controladora / Consolidado / 2024 Adições Baixas 2025 / Custo",
+   "choice": "broadcasting",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "broadcasting",
+     0.83
+    ],
+    [
+     "other_amortisation",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1319
+  },
+  {
+   "label": "Atletas profissionais",
+   "page": 59,
+   "section": "12. Intangível / Movimentação do ativo intangível em 2025: / Controladora / Consolidado / 2024 Adições Baixas 2025 / Custo",
+   "choice": "player_amortisation",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "player_amortisation",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1304
+  },
+  {
+   "label": "Direito de Uso de Imóveis",
+   "page": 56,
+   "section": "10. Direito de Uso / 10.1 - Ativo de Direito de Uso / Controladora / Consolidado / 31/12/2024 31/12/2025 / Líquido Custo Depreciação Líquido",
+   "choice": "depreciation",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "depreciation",
+     0.75
+    ],
+    [
+     "other_amortisation",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "Publicidade",
+   "page": 64,
+   "section": "otimização da estrutura de capital e no equilíbrio financeiro de longo prazo da Companhia. / 17. Receita Diferida/Obrigações contratuais / Controladora / Consolidado / 31/12/2025 31/12/2024 / Patrocínios 17.2 61.764 765",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.94
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1339
+  },
+  {
+   "label": "Transmissão",
+   "page": 64,
+   "section": "otimização da estrutura de capital e no equilíbrio financeiro de longo prazo da Companhia. / 17. Receita Diferida/Obrigações contratuais / Controladora / Consolidado / 31/12/2025 31/12/2024 / Patrocínios 17.2 61.764 765",
+   "choice": "broadcasting",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "broadcasting",
+     0.95
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1340
+  },
+  {
+   "label": "Cessão definitiva de atleta",
+   "page": 64,
+   "section": "otimização da estrutura de capital e no equilíbrio financeiro de longo prazo da Companhia. / 17. Receita Diferida/Obrigações contratuais / Controladora / Consolidado / 31/12/2025 31/12/2024 / Patrocínios 17.2 61.764 765",
+   "choice": "player_sales",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "player_sales",
+     0.8200000000000001
+    ],
+    [
+     "sponsorship_commercial",
+     0.09
+    ],
+    [
+     "other_income",
+     0.09
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "(-) Impostos e contribuições",
+   "page": 67,
+   "section": "SAF BOTAFOGO / 20. Receita Operacional, líquida",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Cessão temporária de atleta -",
+   "page": 64,
+   "section": "otimização da estrutura de capital e no equilíbrio financeiro de longo prazo da Companhia. / 17. Receita Diferida/Obrigações contratuais / Controladora / Consolidado / 31/12/2025 31/12/2024 / Patrocínios 17.2 61.764 765",
+   "choice": "other_income",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_income",
+     0.46
+    ],
+    [
+     "player_sales",
+     0.23
+    ],
+    [
+     "sponsorship_commercial",
+     0.22
+    ]
+   ],
+   "tokens": 1345
+  },
+  {
+   "label": "Receita operacional bruta",
+   "page": 67,
+   "section": "SAF BOTAFOGO / 20. Receita Operacional, líquida",
+   "choice": "lump_football_operations",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.92
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "(-) Direito de arena",
+   "page": 68,
+   "section": "111.175 100.982 / (-) Deduções da Receita Bruta",
+   "choice": "match_organisation_expense",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.29000000000000004
+    ],
+    [
+     "stadium_other",
+     0.19
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "(-) Outras deduções",
+   "page": 67,
+   "section": "SAF BOTAFOGO / 20. Receita Operacional, líquida",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "other_income",
+     0.12
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Receita líquida",
+   "page": 67,
+   "section": "SAF BOTAFOGO / 20. Receita Operacional, líquida",
+   "choice": "lump_football_operations",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.89
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Direitos de Transmissão",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Televisionamento",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Patrocínios",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Participação em competições",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "competition_bonus",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "competition_bonus",
+     0.84
+    ],
+    [
+     "match_organisation_expense",
+     0.06
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Premiação",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Publicidade em placas",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "stadium_other",
+     0.01
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "Mídias digitais",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "broadcasting",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "broadcasting",
+     0.52
+    ],
+    [
+     "other_income",
+     0.41
+    ],
+    [
+     "sponsorship_commercial",
+     0.07
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Bilheteria",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Camisa 7",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "sponsorship_commercial",
+     0.28
+    ],
+    [
+     "player_sales",
+     0.05
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Camisa 6",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "other_income",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "sponsorship_commercial",
+     0.38
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "Cessão temporária",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "player_sales",
+     0.23
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Licenciamento",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.61
+    ],
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Venda de mercadorias",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.87
+    ],
+    [
+     "other_income",
+     0.12
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Mecanismo de solidariedade",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "broadcasting",
+     0.15000000000000002
+    ],
+    [
+     "competition_bonus",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Outros tipos de receita",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "Operação em estádio",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "matchday_competition",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "matchday_competition",
+     0.56
+    ],
+    [
+     "stadium_other",
+     0.32
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Locações",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "choice": "stadium_other",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "stadium_other",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1259
+  },
+  {
+   "label": "(-) Tributação específica do Futebol (TEF) *",
+   "page": 68,
+   "section": "111.175 100.982 / (-) Deduções da Receita Bruta",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1287
+  },
+  {
+   "label": "7.752 (10.138) (2.386) -31%",
+   "page": 70,
+   "section": "2025 / do resultado / Renda Bruta Custos diretos Resultado é ) U Quantidade de Média de / dos jogos dos jogos líquido ladiagobre a jogos úblico / 108 Jog q renda bruta jog p",
+   "choice": "lump_football_operations",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.34
+    ],
+    [
+     "matchday_competition",
+     0.22
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1325
+  },
+  {
+   "label": "Receita líquida de transmissão",
+   "page": 68,
+   "section": "111.175 100.982 / (-) Deduções da Receita Bruta",
+   "choice": "broadcasting",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "broadcasting",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "4.262 (2.635) 1.627 38%",
+   "page": 70,
+   "section": "2025 / do resultado / Renda Bruta Custos diretos Resultado é ) U Quantidade de Média de / dos jogos dos jogos líquido ladiagobre a jogos úblico / 108 Jog q renda bruta jog p",
+   "choice": "lump_football_operations",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.42
+    ],
+    [
+     "matchday_competition",
+     0.25
+    ],
+    [
+     "other_income",
+     0.13
+    ]
+   ],
+   "tokens": 1323
+  },
+  {
+   "label": "1.472 (1.285) 187 13%",
+   "page": 70,
+   "section": "2025 / do resultado / Renda Bruta Custos diretos Resultado é ) U Quantidade de Média de / dos jogos dos jogos líquido ladiagobre a jogos úblico / 108 Jog q renda bruta jog p",
+   "choice": "lump_football_operations",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.37
+    ],
+    [
+     "matchday_competition",
+     0.29000000000000004
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "1.849 (640) 1.209 65%",
+   "page": 70,
+   "section": "2025 / do resultado / Renda Bruta Custos diretos Resultado é ) U Quantidade de Média de / dos jogos dos jogos líquido ladiagobre a jogos úblico / 108 Jog q renda bruta jog p",
+   "choice": "lump_football_operations",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.49
+    ],
+    [
+     "matchday_competition",
+     0.27
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "2.092 (1.173) 919 44%",
+   "page": 70,
+   "section": "2025 / do resultado / Renda Bruta Custos diretos Resultado é ) U Quantidade de Média de / dos jogos dos jogos líquido ladiagobre a jogos úblico / 108 Jog q renda bruta jog p",
+   "choice": "lump_football_operations",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.46
+    ],
+    [
+     "matchday_competition",
+     0.25
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "67 (150) (83) -123%",
+   "page": 70,
+   "section": "2025 / do resultado / Renda Bruta Custos diretos Resultado é ) U Quantidade de Média de / dos jogos dos jogos líquido ladiagobre a jogos úblico / 108 Jog q renda bruta jog p",
+   "choice": "lump_football_operations",
+   "confidence": 0.22,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.26
+    ],
+    [
+     "matchday_competition",
+     0.22
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1317
+  },
+  {
+   "label": "Custo venda de mercadoria",
+   "page": 72,
+   "section": "pela torcida alvinegra. / direitos de exposição de marca e outros benefícios comerciais. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "sponsorship_commercial",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1313
+  },
+  {
+   "label": "17.494 16.020 1.474 8%",
+   "page": 70,
+   "section": "2025 / do resultado / Renda Bruta Custos diretos Resultado é ) U Quantidade de Média de / dos jogos dos jogos líquido ladiagobre a jogos úblico / 108 Jog q renda bruta jog p",
+   "choice": "lump_football_operations",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.4
+    ],
+    [
+     "matchday_competition",
+     0.39
+    ],
+    [
+     "other_income",
+     0.09
+    ]
+   ],
+   "tokens": 1323
+  },
+  {
+   "label": "Salários, encargos e benefícios",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "wages_squad",
+     0.41
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Amortização de atletas",
+   "page": 72,
+   "section": "pela torcida alvinegra. / direitos de exposição de marca e outros benefícios comerciais. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1313
+  },
+  {
+   "label": "Materiais",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Locação",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Serviços com terceiros",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Depreciação e amortização",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "choice": "depreciation",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "depreciation",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Impostos e taxas",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Concessionárias",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.72
+    ],
+    [
+     "stadium_other",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Despesas comerciais",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Viagens e estadas",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.74
+    ],
+    [
+     "match_organisation_expense",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Despesa com contingências",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "exceptional_items",
+     0.12
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Gastos com atletas",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "choice": "wages_squad",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "wages_squad",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Diversos",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Recuperação de gastos",
+   "page": 73,
+   "section": "23. Outras receitas operacionais",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Cessão definitiva de atletas",
+   "page": 74,
+   "section": "Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO / (Valores expressos em milhares de reais) / 24. Resultado com transações de direitos de atletas / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1359
+  },
+  {
+   "label": "Outras receitas operacionais",
+   "page": 73,
+   "section": "23. Outras receitas operacionais",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Licenciamento de programas",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "(-) Mecanismo de solidariedade",
+   "page": 74,
+   "section": "Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO / (Valores expressos em milhares de reais) / 24. Resultado com transações de direitos de atletas / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ],
+    [
+     "youth_football",
+     0.07
+    ]
+   ],
+   "tokens": 1363
+  },
+  {
+   "label": "(-) Baixa de atletas",
+   "page": 74,
+   "section": "Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO / (Valores expressos em milhares de reais) / 24. Resultado com transações de direitos de atletas / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "choice": "player_amortisation",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "player_amortisation",
+     0.31
+    ],
+    [
+     "player_sales",
+     0.28
+    ],
+    [
+     "player_impairment",
+     0.2
+    ]
+   ],
+   "tokens": 1359
+  },
+  {
+   "label": "(-) Despesa na cessão de atletas",
+   "page": 74,
+   "section": "Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO / (Valores expressos em milhares de reais) / 24. Resultado com transações de direitos de atletas / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "choice": "other_expenses",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "player_sales",
+     0.29000000000000004
+    ],
+    [
+     "lump_football_operations_expense",
+     0.18
+    ]
+   ],
+   "tokens": 1363
+  },
+  {
+   "label": "Juros e encargos sobre empréstimos",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Juros e multas",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Desconto concedido",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Variação cambial",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.06999999999999999
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Atualização monetária",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "Resultado da Alienação de Ativos (1)",
+   "page": 74,
+   "section": "Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO / (Valores expressos em milhares de reais) / 24. Resultado com transações de direitos de atletas / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "choice": "player_sales",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "player_sales",
+     0.6900000000000001
+    ],
+    [
+     "other_income",
+     0.29
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1364
+  },
+  {
+   "label": "Taxa de antecipação",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "Tarifa bancária",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Descontos obtidos",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Juros sobre arrendamento",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Receitas (despesas) financeiras, líquidas",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Rendimento sobre aplicações financeiras",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "Ajuste a valor justo",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "exceptional_items",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1276
+  }
+ ]
+}

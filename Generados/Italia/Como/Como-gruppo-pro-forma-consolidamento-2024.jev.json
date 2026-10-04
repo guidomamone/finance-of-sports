@@ -1,0 +1,2582 @@
+{
+ "md": "Clubes/Italia/Como/Como-gruppo-pro-forma-consolidamento-2024.md",
+ "generatedAt": "2026-09-30T04:30:21.644Z",
+ "rubros": [
+  {
+   "label": "Accantonamenti per rischi",
+   "lado": "expense",
+   "page": 3,
+   "section": "La composizione dei Costi della Produzione dell'esercizio è stata la seguente:",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 806
+  },
+  {
+   "label": "Costi per servizi",
+   "lado": "expense",
+   "page": 3,
+   "section": "La composizione dei Costi della Produzione dell'esercizio è stata la seguente:",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "Oneri diversi di gestione",
+   "lado": "expense",
+   "page": 3,
+   "section": "La composizione dei Costi della Produzione dell'esercizio è stata la seguente:",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 804
+  },
+  {
+   "label": "Minusvalenze cessione diritti prestazioni calciatori",
+   "lado": "expense",
+   "page": 3,
+   "section": "La composizione dei Costi della Produzione dell'esercizio è stata la seguente:",
+   "choice": "exceptional_items",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "exceptional_items",
+     0.44
+    ],
+    [
+     "player_impairment",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 811
+  },
+  {
+   "label": "Ammortamenti e svalutazioni",
+   "lado": "expense",
+   "page": 3,
+   "section": "La composizione dei Costi della Produzione dell'esercizio è stata la seguente:",
+   "choice": "depreciation",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "depreciation",
+     0.65
+    ],
+    [
+     "other_amortisation",
+     0.15
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 807
+  },
+  {
+   "label": "Costo del personale",
+   "lado": "expense",
+   "page": 3,
+   "section": "La composizione dei Costi della Produzione dell'esercizio è stata la seguente:",
+   "choice": "wages_squad",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "wages_squad",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Consumo, materie prime",
+   "lado": "expense",
+   "page": 3,
+   "section": "La composizione dei Costi della Produzione dell'esercizio è stata la seguente:",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Godimento beni di terzi",
+   "lado": "expense",
+   "page": 3,
+   "section": "La composizione dei Costi della Produzione dell'esercizio è stata la seguente:",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 804
+  },
+  {
+   "label": "b) sponsorizzazioni",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "a) ricavi da gare",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "matchday_competition",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "matchday_competition",
+     0.7
+    ],
+    [
+     "lump_football_operations",
+     0.24000000000000002
+    ],
+    [
+     "competition_bonus",
+     0.03
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "d) proventi commerciali e royalties",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1468
+  },
+  {
+   "label": "a) contributi in conto esercizio",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_income",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "member_dues",
+     0.17
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "c) proventi pubblicitari",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "2) Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "i) altri ricavi e proventi diversi",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "b) abbonamenti",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "season_tickets",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "season_tickets",
+     0.93
+    ],
+    [
+     "member_dues",
+     0.06
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "7) Per servizi",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "match_organisation_expense",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1311
+  },
+  {
+   "label": "8) Per godimento di beni di terzi",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "stadium_other",
+     0.14
+    ]
+   ],
+   "tokens": 1317
+  },
+  {
+   "label": "b) oneri sociali",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "6) Per materie prime, sussidiarie, di consumo",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1494
+  },
+  {
+   "label": "b) ammortamento delle immobilizzazioni materiali",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "depreciation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "depreciation",
+     0.97
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "a) ammortamento delle immobilizzazioni immateriali",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_amortisation",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_amortisation",
+     0.64
+    ],
+    [
+     "depreciation",
+     0.24000000000000002
+    ],
+    [
+     "player_amortisation",
+     0.12
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "a) salari e stipendi",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "c) trattamento di fine rapporto",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "wages_squad",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "wages_squad",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "c) altre svalutazioni delle immobilizzazioni",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "player_impairment",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "player_impairment",
+     0.36
+    ],
+    [
+     "other_amortisation",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "b) costi per acquisizione temporanea prestazione calciatori",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_expenses",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "player_amortisation",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.24000000000000002
+    ]
+   ],
+   "tokens": 1323
+  },
+  {
+   "label": "12) Accantonamenti per rischi",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "exceptional_items",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1318
+  },
+  {
+   "label": "d) altri oneri da gestione calciatori",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "lump_football_operations_expense",
+     0.29000000000000004
+    ],
+    [
+     "wages_squad",
+     0.06
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "a) oneri da organizzazione competizioni",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "c) minusvalenze cessione diritti prestaz.calciatori",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "player_impairment",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "player_impairment",
+     0.53
+    ],
+    [
+     "exceptional_items",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "e) altri oneri diversi e sopravvenienze passive",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "exceptional_items",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Differenza fra valore e costi della produzione (A - B)",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_income",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "lump_football_operations",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1362
+  },
+  {
+   "label": "17-bis) Utile e perdite su cambi",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "e) altri oneri finanziari",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "a) di partecipazioni",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "- altri proventi diversi",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Risultato prima delle imposte",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_income",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ]
+   ],
+   "tokens": 1319
+  },
+  {
+   "label": "Utile (Perdita) del periodo",
+   "lado": null,
+   "page": 8,
+   "section": "Como 1907 - Prospetto Pro-forma di Consolidamento",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1472
+  },
+  {
+   "label": "Costi di impianto e di ampliamento",
+   "lado": "expense",
+   "page": 16,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Stato Patrimoniale - ATTIVO / ### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "choice": "other_amortisation",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_amortisation",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ]
+   ],
+   "tokens": 828
+  },
+  {
+   "label": "Concessioni, licenze e marchi",
+   "lado": "expense",
+   "page": 16,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Stato Patrimoniale - ATTIVO / ### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "choice": "other_amortisation",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_amortisation",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 827
+  },
+  {
+   "label": "Diritti pluriennali prestazioni calciatori",
+   "lado": "expense",
+   "page": 16,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Stato Patrimoniale - ATTIVO / ### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "choice": "player_amortisation",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "player_amortisation",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Terreni e fabbricati",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "depreciation",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "depreciation",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.35
+    ],
+    [
+     "other_expenses",
+     0.23
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "Altre",
+   "lado": "expense",
+   "page": 16,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Stato Patrimoniale - ATTIVO / ### Immobilizzazioni / #### Immobilizzazioni immateriali",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "other_amortisation",
+     0.22
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 819
+  },
+  {
+   "label": "- Fabbricati",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "admin_general_expense",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "depreciation",
+     0.41
+    ],
+    [
+     "admin_general_expense",
+     0.41
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 791
+  },
+  {
+   "label": "- Costruzioni leggere",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "depreciation",
+     0.02
+    ]
+   ],
+   "tokens": 791
+  },
+  {
+   "label": "- Terreni",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "admin_general_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.15
+    ]
+   ],
+   "tokens": 789
+  },
+  {
+   "label": "- Attrezzature commerciali",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 793
+  },
+  {
+   "label": "Attrezzature industriali e commerciali",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "depreciation",
+     0.06
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Impianti e macchinari",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "admin_general_expense",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.39
+    ],
+    [
+     "depreciation",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.26
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "Altri beni",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 790
+  },
+  {
+   "label": "- impianti generici",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "admin_general_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "depreciation",
+     0.09
+    ]
+   ],
+   "tokens": 792
+  },
+  {
+   "label": "- macchine uff. elettroniche",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "depreciation",
+     0.05
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "- mobilio",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "depreciation",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "depreciation",
+     0.41000000000000003
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ]
+   ],
+   "tokens": 790
+  },
+  {
+   "label": "- automezzi",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "admin_general_expense",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.35000000000000003
+    ],
+    [
+     "match_organisation_expense",
+     0.15
+    ]
+   ],
+   "tokens": 790
+  },
+  {
+   "label": "Immobilizzazioni in corso e acconti",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Debiti verso soci per finanziamenti",
+   "lado": "expense",
+   "page": 22,
+   "section": "## Analisi delle voci di Stato Patrimoniale – PASSIVO / ### Patrimonio netto / ### Fondi per rischi e oneri / ### Trattamento di fine rapporto di lavoro subordinato / ### Debiti",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 834
+  },
+  {
+   "label": "Acconti",
+   "lado": "expense",
+   "page": 22,
+   "section": "## Analisi delle voci di Stato Patrimoniale – PASSIVO / ### Patrimonio netto / ### Fondi per rischi e oneri / ### Trattamento di fine rapporto di lavoro subordinato / ### Debiti",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Debiti verso imprese controllanti",
+   "lado": "expense",
+   "page": 22,
+   "section": "## Analisi delle voci di Stato Patrimoniale – PASSIVO / ### Patrimonio netto / ### Fondi per rischi e oneri / ### Trattamento di fine rapporto di lavoro subordinato / ### Debiti",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.9400000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 835
+  },
+  {
+   "label": "- impianti specifici",
+   "lado": "expense",
+   "page": 18,
+   "section": "GRUPPO COMO 1907",
+   "choice": "other_expenses",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "lump_football_operations_expense",
+     0.22
+    ]
+   ],
+   "tokens": 793
+  },
+  {
+   "label": "Debiti tributari",
+   "lado": "expense",
+   "page": 22,
+   "section": "## Analisi delle voci di Stato Patrimoniale – PASSIVO / ### Patrimonio netto / ### Fondi per rischi e oneri / ### Trattamento di fine rapporto di lavoro subordinato / ### Debiti",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "Debiti verso fornitori",
+   "lado": "expense",
+   "page": 22,
+   "section": "## Analisi delle voci di Stato Patrimoniale – PASSIVO / ### Patrimonio netto / ### Fondi per rischi e oneri / ### Trattamento di fine rapporto di lavoro subordinato / ### Debiti",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "Debiti verso istituti di previdenza e di sicurezza sociale",
+   "lado": "expense",
+   "page": 22,
+   "section": "## Analisi delle voci di Stato Patrimoniale – PASSIVO / ### Patrimonio netto / ### Fondi per rischi e oneri / ### Trattamento di fine rapporto di lavoro subordinato / ### Debiti",
+   "choice": "other_expenses",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "wages_squad",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Altri debiti",
+   "lado": "expense",
+   "page": 22,
+   "section": "## Analisi delle voci di Stato Patrimoniale – PASSIVO / ### Patrimonio netto / ### Fondi per rischi e oneri / ### Trattamento di fine rapporto di lavoro subordinato / ### Debiti",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.9400000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "- Ricavi da gare",
+   "lado": "revenue",
+   "page": 25,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Conto Economico – VALORE DELLA PRODUZIONE / ### Ricavi delle vendite e delle prestazioni",
+   "choice": "matchday_competition",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "matchday_competition",
+     0.81
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ],
+    [
+     "competition_bonus",
+     0.03
+    ]
+   ],
+   "tokens": 858
+  },
+  {
+   "label": "Gare Campionato",
+   "lado": "revenue",
+   "page": 25,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Conto Economico – VALORE DELLA PRODUZIONE / ### Ricavi delle vendite e delle prestazioni",
+   "choice": "matchday_competition",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "matchday_competition",
+     0.63
+    ],
+    [
+     "competition_bonus",
+     0.23
+    ],
+    [
+     "broadcasting",
+     0.05
+    ]
+   ],
+   "tokens": 858
+  },
+  {
+   "label": "Debiti verso enti settore specifico",
+   "lado": "expense",
+   "page": 22,
+   "section": "## Analisi delle voci di Stato Patrimoniale – PASSIVO / ### Patrimonio netto / ### Fondi per rischi e oneri / ### Trattamento di fine rapporto di lavoro subordinato / ### Debiti",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "match_organisation_expense",
+     0.18000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 833
+  },
+  {
+   "label": "Percentuale squadra ospite",
+   "lado": "revenue",
+   "page": 25,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Conto Economico – VALORE DELLA PRODUZIONE / ### Ricavi delle vendite e delle prestazioni",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "matchday_competition",
+     0.35
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 859
+  },
+  {
+   "label": "Tornei e amichevoli",
+   "lado": "revenue",
+   "page": 25,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Conto Economico – VALORE DELLA PRODUZIONE / ### Ricavi delle vendite e delle prestazioni",
+   "choice": "matchday_competition",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "matchday_competition",
+     0.52
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 860
+  },
+  {
+   "label": "- Abbonamenti",
+   "lado": "revenue",
+   "page": 25,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Conto Economico – VALORE DELLA PRODUZIONE / ### Ricavi delle vendite e delle prestazioni",
+   "choice": "season_tickets",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "season_tickets",
+     0.91
+    ],
+    [
+     "member_dues",
+     0.09
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 856
+  },
+  {
+   "label": "Sponsorizzazioni",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti / ### Altri ricavi e proventi",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 849
+  },
+  {
+   "label": "Contributi in conto esercizio",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti / ### Altri ricavi e proventi",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "lump_football_operations",
+     0.09999999999999999
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 852
+  },
+  {
+   "label": "Proventi pubblicitari",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti / ### Altri ricavi e proventi",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.94
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 850
+  },
+  {
+   "label": "Altri ricavi e proventi diversi",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti / ### Altri ricavi e proventi",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 853
+  },
+  {
+   "label": "Proventi commerciali e royalties",
+   "lado": "revenue",
+   "page": 25,
+   "section": "### Variazioni delle rimanenze di prodotti in corso di lavorazione, semilavorati e finiti / ### Altri ricavi e proventi",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Materiale di consumo",
+   "lado": "expense",
+   "page": 26,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Conto Economico – COSTI DELLA PRODUZIONE / ### Costi per materie prime, sussidiarie, di consumo e di merci",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Materiale sanitario",
+   "lado": "expense",
+   "page": 26,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Conto Economico – COSTI DELLA PRODUZIONE / ### Costi per materie prime, sussidiarie, di consumo e di merci",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "lump_football_operations_expense",
+     0.21
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "Materiale tecnico",
+   "lado": "expense",
+   "page": 26,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Conto Economico – COSTI DELLA PRODUZIONE / ### Costi per materie prime, sussidiarie, di consumo e di merci",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "lump_football_operations_expense",
+     0.21
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Materiale per la vendita",
+   "lado": "expense",
+   "page": 26,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Conto Economico – COSTI DELLA PRODUZIONE / ### Costi per materie prime, sussidiarie, di consumo e di merci",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 833
+  },
+  {
+   "label": "Altri",
+   "lado": "expense",
+   "page": 26,
+   "section": "GRUPPO COMO 1907 / ## Analisi delle voci di Conto Economico – COSTI DELLA PRODUZIONE / ### Costi per materie prime, sussidiarie, di consumo e di merci",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "Assicurative e previdenziali",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi per servizi",
+   "choice": "admin_general_expense",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.41000000000000003
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "wages_squad",
+     0.15
+    ]
+   ],
+   "tokens": 791
+  },
+  {
+   "label": "Costi specifici tecnici",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi per servizi",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "wages_squad",
+     0.05
+    ]
+   ],
+   "tokens": 790
+  },
+  {
+   "label": "Costi per attività sportiva",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi per servizi",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.92
+    ],
+    [
+     "match_organisation_expense",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 789
+  },
+  {
+   "label": "Amministrative - pubblicitarie e generali",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi per servizi",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Costi accessori campagna trasferimenti",
+   "lado": "expense",
+   "page": 27,
+   "section": "I costi specifici tecnici comprendono:",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Servizio biglietteria, controllo ingressi",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi per servizi",
+   "choice": "match_organisation_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "Costi vitto, alloggio, locomozione",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Costi per servizi",
+   "choice": "match_organisation_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Osservazione calciatori",
+   "lado": "expense",
+   "page": 27,
+   "section": "I costi specifici tecnici comprendono:",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.41
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "wages_squad",
+     0.09
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Canoni leasing operativo",
+   "lado": "expense",
+   "page": 27,
+   "section": "### Costi per godimento di beni di terzi",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 870
+  },
+  {
+   "label": "Affitti passivi",
+   "lado": "expense",
+   "page": 27,
+   "section": "### Costi per godimento di beni di terzi",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 793
+  },
+  {
+   "label": "Affitto stadio Sinigaglia",
+   "lado": "expense",
+   "page": 27,
+   "section": "### Costi per godimento di beni di terzi",
+   "choice": "admin_general_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.52
+    ],
+    [
+     "match_organisation_expense",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Canoni noleggio",
+   "lado": "expense",
+   "page": 27,
+   "section": "### Costi per godimento di beni di terzi",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "Oneri da organizzazione competizioni",
+   "lado": "expense",
+   "page": 28,
+   "section": "### Ammortamenti e svalutazioni / ### Accantonamenti per rischi / ### Gli oneri diversi di gestione",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 816
+  },
+  {
+   "label": "Canoni licenze",
+   "lado": "expense",
+   "page": 27,
+   "section": "### Costi per godimento di beni di terzi",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "lump_football_operations_expense",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 793
+  },
+  {
+   "label": "Concessione impianti sportivi",
+   "lado": "expense",
+   "page": 27,
+   "section": "### Costi per godimento di beni di terzi",
+   "choice": "admin_general_expense",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.35000000000000003
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Costi per acquisizione temporanea prestazione calciatori",
+   "lado": "expense",
+   "page": 28,
+   "section": "### Ammortamenti e svalutazioni / ### Accantonamenti per rischi / ### Gli oneri diversi di gestione",
+   "choice": "player_amortisation",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "player_amortisation",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "lump_football_operations_expense",
+     0.15
+    ]
+   ],
+   "tokens": 819
+  },
+  {
+   "label": "Minusvalenze da cessione diritti pluriennali",
+   "lado": "expense",
+   "page": 28,
+   "section": "### Ammortamenti e svalutazioni / ### Accantonamenti per rischi / ### Gli oneri diversi di gestione",
+   "choice": "exceptional_items",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "exceptional_items",
+     0.47
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "player_impairment",
+     0.15
+    ]
+   ],
+   "tokens": 819
+  },
+  {
+   "label": "- Contributi Lega",
+   "lado": "expense",
+   "page": 28,
+   "section": "### Ammortamenti e svalutazioni / ### Accantonamenti per rischi / ### Gli oneri diversi di gestione",
+   "choice": "match_organisation_expense",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.17
+    ]
+   ],
+   "tokens": 810
+  },
+  {
+   "label": "Altri oneri da gestione calciatori",
+   "lado": "expense",
+   "page": 28,
+   "section": "### Ammortamenti e svalutazioni / ### Accantonamenti per rischi / ### Gli oneri diversi di gestione",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 814
+  },
+  {
+   "label": "- Oneri tributari indiretti",
+   "lado": "expense",
+   "page": 28,
+   "section": "### Ammortamenti e svalutazioni / ### Accantonamenti per rischi / ### Gli oneri diversi di gestione",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 813
+  },
+  {
+   "label": "- Oneri precedenti esercizi",
+   "lado": "expense",
+   "page": 28,
+   "section": "### Ammortamenti e svalutazioni / ### Accantonamenti per rischi / ### Gli oneri diversi di gestione",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "exceptional_items",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 814
+  },
+  {
+   "label": "- Spese, ammende e multe gare",
+   "lado": "expense",
+   "page": 28,
+   "section": "### Ammortamenti e svalutazioni / ### Accantonamenti per rischi / ### Gli oneri diversi di gestione",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "exceptional_items",
+     0.2
+    ],
+    [
+     "match_organisation_expense",
+     0.19
+    ]
+   ],
+   "tokens": 813
+  },
+  {
+   "label": "Sent Entertainment Limited",
+   "lado": "expense",
+   "page": 29,
+   "section": "GRUPPO COMO 1907 / ## RETTIFICHE DI VALORE DI ATTIVITA’ FINANZIARIE / ## IMPOSTE SUL REDDITO DELL’ESERCIZIO / ## Rapporti con parti correlate",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 834
+  },
+  {
+   "label": "Sent Entertainment Limited Branch",
+   "lado": "expense",
+   "page": 29,
+   "section": "GRUPPO COMO 1907 / ## RETTIFICHE DI VALORE DI ATTIVITA’ FINANZIARIE / ## IMPOSTE SUL REDDITO DELL’ESERCIZIO / ## Rapporti con parti correlate",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 835
+  },
+  {
+   "label": "PT Global Media Visual",
+   "lado": "expense",
+   "page": 29,
+   "section": "GRUPPO COMO 1907 / ## RETTIFICHE DI VALORE DI ATTIVITA’ FINANZIARIE / ## IMPOSTE SUL REDDITO DELL’ESERCIZIO / ## Rapporti con parti correlate",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.42
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 835
+  },
+  {
+   "label": "- Diversi",
+   "lado": "expense",
+   "page": 28,
+   "section": "### Ammortamenti e svalutazioni / ### Accantonamenti per rischi / ### Gli oneri diversi di gestione",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 808
+  },
+  {
+   "label": "Sent Academy S.r.l.",
+   "lado": "expense",
+   "page": 29,
+   "section": "GRUPPO COMO 1907 / ## RETTIFICHE DI VALORE DI ATTIVITA’ FINANZIARIE / ## IMPOSTE SUL REDDITO DELL’ESERCIZIO / ## Rapporti con parti correlate",
+   "choice": "other_expenses",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "other_expenses",
+     0.35000000000000003
+    ],
+    [
+     "education_expense",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Valore della produzione",
+   "lado": null,
+   "page": 35,
+   "section": "Il Conto Economico presenta, in sintesi, i seguenti valori:",
+   "choice": "lump_football_operations",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.75
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Costi della produzione",
+   "lado": null,
+   "page": 35,
+   "section": "Il Conto Economico presenta, in sintesi, i seguenti valori:",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Proventi e oneri finanziari",
+   "lado": null,
+   "page": 35,
+   "section": "Il Conto Economico presenta, in sintesi, i seguenti valori:",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Risultato d'Esercizio",
+   "lado": null,
+   "page": 35,
+   "section": "Il Conto Economico presenta, in sintesi, i seguenti valori:",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Risultato ante-imposte",
+   "lado": null,
+   "page": 35,
+   "section": "Il Conto Economico presenta, in sintesi, i seguenti valori:",
+   "choice": "admin_general_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.41000000000000003
+    ],
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Rettifiche di valore di attività e passività finanziarie",
+   "lado": null,
+   "page": 35,
+   "section": "Il Conto Economico presenta, in sintesi, i seguenti valori:",
+   "choice": "other_income",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_income",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "exceptional_items",
+     0.11
+    ]
+   ],
+   "tokens": 1275
+  }
+ ]
+}

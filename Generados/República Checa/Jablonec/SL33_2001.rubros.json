@@ -1,0 +1,529 @@
+{
+ "md": "Clubes/República Checa/Jablonec/SL33_2001.md",
+ "pdf": "Clubes/República Checa/Jablonec/SL33_2001.pdf",
+ "club": "jablonec",
+ "year": 2001,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:07:45.310Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": false,
+  "motivo": "no se pudo ubicar la columna del ejercicio"
+ },
+ "ladoConocido": 17,
+ "rubros": [
+  {
+   "label": "Tržby za prodej zboží",
+   "lado": "revenue",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "01",
+    "85",
+    "34"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Náklady vynaložené na prodané zboží",
+   "lado": "expense",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "02",
+    "46",
+    "23"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Obchodní marže (ř. 01 - 02)",
+   "lado": null,
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "03",
+    "39",
+    "11"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Výkony (ř. 05 + 06 + 07)",
+   "lado": null,
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "04",
+    "1517",
+    "1624"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Tržby za prodej vlastních výrobků a služeb",
+   "lado": "revenue",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "05",
+    "1517",
+    "1624"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Změna stavu vnitropodnikových zásob vlastní výroby",
+   "lado": null,
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "06",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Aktivace",
+   "lado": null,
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "07",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Výkonová spotřeba (ř. 09 + 10)",
+   "lado": null,
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "08",
+    "20507",
+    "16069"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Spotřeba materiálu a energie",
+   "lado": null,
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "09",
+    "2178",
+    "3155"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Služby",
+   "lado": null,
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "10",
+    "18329",
+    "12914"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Přidaná hodnota (ř. 03 + 04 - 08)",
+   "lado": null,
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "11",
+    "-18951",
+    "-14434"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Osobní náklady (ř. 13 až 16)",
+   "lado": "expense",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "12",
+    "3638",
+    "2346"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Mzdové náklady",
+   "lado": "expense",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "13",
+    "2657",
+    "1690"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Odměny členům orgánů společnosti a družstva",
+   "lado": null,
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "14",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Náklady na sociální zabezpečení",
+   "lado": "expense",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "15",
+    "915",
+    "585"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Sociální náklady",
+   "lado": "expense",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "16",
+    "66",
+    "71"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Daně a poplatky",
+   "lado": "expense",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "17",
+    "174",
+    "48"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Odpisy dlouhodobého nehmotného a hmotného majetku",
+   "lado": null,
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "18",
+    "876",
+    "808"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Tržby z prodeje dlouhodobého majetku a materiálu",
+   "lado": "revenue",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "19",
+    "1026",
+    "4377"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Zůstatková cena prodaného dlouhodobého majetku a materiálu",
+   "lado": null,
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "20",
+    "4000",
+    "5129"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Zúčtování rezerv a časového rozlišení provozních výnosů",
+   "lado": "revenue",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "21",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Tvorba rezerv a časového rozlišení provozních nákladů",
+   "lado": "expense",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "22",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Zúčtování opravných položek do provozních výnosů",
+   "lado": "revenue",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "23",
+    "12759",
+    "126"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Zúčtování opravných položek do provozních nákladů",
+   "lado": "expense",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "24",
+    "2818",
+    "16124"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Ostatní provozní výnosy",
+   "lado": "revenue",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "25",
+    "75789",
+    "69856"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Ostatní provozní náklady",
+   "lado": "expense",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "26",
+    "54721",
+    "46567"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Převod provozních výnosů",
+   "lado": "revenue",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "27",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Převod provozních nákladů",
+   "lado": "expense",
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "28",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "Provozní hospodářský výsledek [(ř.11-12-17-18+19-20+21-22+23-24+25-26+(-27)-(-28)]",
+   "lado": null,
+   "page": 15,
+   "section": "FK JABLONEC 97 a.s.",
+   "values": [
+    "29",
+    "4396",
+    "-11097"
+   ],
+   "columns": [
+    "TEXT b",
+    "Číslo řádku c",
+    "Skutečnost v účetním období – sledovaném 1",
+    "Skutečnost v účetním období – minulém 2"
+   ]
+  },
+  {
+   "label": "a/ Pohledávky po lhůtě splatnosti",
+   "lado": null,
+   "page": 21,
+   "section": "",
+   "values": [
+    "2621 tis.Kč"
+   ],
+   "columns": [
+    "Společnost nenabyla majetku v cizí měně, kurzové rozdíly výsledkové nebyly zúčtovány.",
+    ""
+   ]
+  }
+ ]
+}

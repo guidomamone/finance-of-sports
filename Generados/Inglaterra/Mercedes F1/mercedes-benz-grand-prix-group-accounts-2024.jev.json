@@ -1,0 +1,213 @@
+{
+ "md": "Clubes/Inglaterra/Mercedes F1/mercedes-benz-grand-prix-group-accounts-2024.md",
+ "generatedAt": "2026-09-30T04:30:15.061Z",
+ "rubros": [
+  {
+   "label": "Dividends: Equity capital",
+   "lado": null,
+   "page": 26,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / COMPANY STATEMENT OF CHANGES IN EQUITY / FOR THE YEAR ENDED 31 DECEMBER 2024",
+   "choice": "other_income",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1388
+  },
+  {
+   "label": "Other reserves movement",
+   "lado": null,
+   "page": 26,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / COMPANY STATEMENT OF CHANGES IN EQUITY / FOR THE YEAR ENDED 31 DECEMBER 2024",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1459
+  },
+  {
+   "label": "At 1 January 2023",
+   "lado": null,
+   "page": 26,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / COMPANY STATEMENT OF CHANGES IN EQUITY / FOR THE YEAR ENDED 31 DECEMBER 2024",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1446
+  },
+  {
+   "label": "Shares issued during the year",
+   "lado": null,
+   "page": 26,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / COMPANY STATEMENT OF CHANGES IN EQUITY / FOR THE YEAR ENDED 31 DECEMBER 2024",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1530
+  },
+  {
+   "label": "At 31 December 2024",
+   "lado": null,
+   "page": 26,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / COMPANY STATEMENT OF CHANGES IN EQUITY / FOR THE YEAR ENDED 31 DECEMBER 2024",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1584
+  },
+  {
+   "label": "Profit for the year",
+   "lado": null,
+   "page": 26,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / COMPANY STATEMENT OF CHANGES IN EQUITY / FOR THE YEAR ENDED 31 DECEMBER 2024",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1580
+  },
+  {
+   "label": "At 1 January 2024",
+   "lado": null,
+   "page": 26,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / COMPANY STATEMENT OF CHANGES IN EQUITY / FOR THE YEAR ENDED 31 DECEMBER 2024",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1583
+  },
+  {
+   "label": "Revaluation reserve",
+   "lado": null,
+   "page": 26,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / COMPANY STATEMENT OF CHANGES IN EQUITY / FOR THE YEAR ENDED 31 DECEMBER 2024",
+   "choice": "exceptional_items",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "exceptional_items",
+     0.52
+    ],
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1341
+  },
+  {
+   "label": "Dividends",
+   "lado": "expense",
+   "page": 40,
+   "section": "Factors that may affect future tax charges / 10. Dividends",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 799
+  }
+ ]
+}

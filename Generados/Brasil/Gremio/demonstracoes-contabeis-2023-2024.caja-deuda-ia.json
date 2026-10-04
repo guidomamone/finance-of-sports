@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Gremio/demonstracoes-contabeis-2023-2024.md",
+ "generado": "2026-10-02T00:16:21.441Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "caja": {
+  "lineas": [
+   301
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   302,
+   313
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se toman 'Instituições financeiras' corriente y no corriente; los 'Mútuos - Outros empréstimos' (83.303) están dentro de 'Outras obrigações' (L309/L319, mezclados con otros conceptos) y no se incluyen."
+}

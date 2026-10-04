@@ -1,0 +1,481 @@
+{
+ "md": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.md",
+ "pdf": "Clubes/Portugal/Famalicão/relatorio-contas-2021-22.pdf",
+ "club": "famalicao",
+ "year": 2022,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:31.425Z",
+ "tieOuts": {
+  "cierran": 36,
+  "noCierran": 6
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "23 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 49,
+  "notasUsadas": [
+   "32",
+   "33"
+  ]
+ },
+ "ladoConocido": 36,
+ "rubros": [
+  {
+   "label": "Vendas e serviços prestados",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "values": [
+    5.553689
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Subsídios à exploração",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "values": [
+    0.167736
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Ganhos/perdas imputados de subsidiárias, associadas e empre",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "values": [
+    0.004579
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Custo das mercadorias vendidas",
+   "lado": "expense",
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "values": [
+    -0.109644
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Fornecimentos e serviços externos",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "values": [
+    -2.980343
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Remunerações do pessoal",
+   "lado": "expense",
+   "page": 34,
+   "section": "Futebol Clube / Famalicão / Demonstrações Financeiras Individuais / Época 2021/2022",
+   "values": [
+    10.029738
+   ],
+   "origen": "nota 32 (ancla 12)",
+   "ancla": "Gastos com o pessoal"
+  },
+  {
+   "label": "Gastos com o pessoal",
+   "lado": "expense",
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "values": [
+    -13.571856
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Indemnizações",
+   "lado": "expense",
+   "page": 34,
+   "section": "Futebol Clube / Famalicão / Demonstrações Financeiras Individuais / Época 2021/2022",
+   "values": [
+    1.010529
+   ],
+   "origen": "nota 32 (ancla 12)",
+   "ancla": "Gastos com o pessoal"
+  },
+  {
+   "label": "Encargos sobre remunerações",
+   "lado": "expense",
+   "page": 34,
+   "section": "Futebol Clube / Famalicão / Demonstrações Financeiras Individuais / Época 2021/2022",
+   "values": [
+    0.831429
+   ],
+   "origen": "nota 32 (ancla 12)",
+   "ancla": "Gastos com o pessoal"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 34,
+   "section": "Futebol Clube / Famalicão / Demonstrações Financeiras Individuais / Época 2021/2022",
+   "values": [
+    1.120376
+   ],
+   "origen": "nota 32 (ancla 12)",
+   "ancla": "Gastos com o pessoal"
+  },
+  {
+   "label": "Gastos de ação social",
+   "lado": "expense",
+   "page": 34,
+   "section": "Futebol Clube / Famalicão / Demonstrações Financeiras Individuais / Época 2021/2022",
+   "values": [
+    0.076881
+   ],
+   "origen": "nota 32 (ancla 12)",
+   "ancla": "Gastos com o pessoal"
+  },
+  {
+   "label": "Outros gastos com pessoal",
+   "lado": "expense",
+   "page": 34,
+   "section": "Futebol Clube / Famalicão / Demonstrações Financeiras Individuais / Época 2021/2022",
+   "values": [
+    0.502903
+   ],
+   "origen": "nota 32 (ancla 12)",
+   "ancla": "Gastos com o pessoal"
+  },
+  {
+   "label": "Imparidade de dívidas a receber (perdas/reversões)",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "values": [
+    -0.00041
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Provisões (aumentos/reduções)",
+   "lado": null,
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "values": [
+    -0.0351
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Outros rendimentos",
+   "lado": "revenue",
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "values": [
+    5.141805
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 34,
+   "section": "## 25. Outros rendimentos / ## 26. Outros gastos",
+   "values": [
+    0.006895
+   ],
+   "origen": "nota 33 (ancla 12)",
+   "ancla": "Outros gastos"
+  },
+  {
+   "label": "Outros gastos",
+   "lado": "expense",
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "values": [
+    -0.213538
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Descontos de pronto pagamento concedidos",
+   "lado": "expense",
+   "page": 34,
+   "section": "## 25. Outros rendimentos / ## 26. Outros gastos",
+   "values": [
+    0.00003
+   ],
+   "origen": "nota 33 (ancla 12)",
+   "ancla": "Outros gastos"
+  },
+  {
+   "label": "Gastos e perdas em inv. não financeiros",
+   "lado": "expense",
+   "page": 34,
+   "section": "## 25. Outros rendimentos / ## 26. Outros gastos",
+   "values": [
+    0.087186
+   ],
+   "origen": "nota 33 (ancla 12)",
+   "ancla": "Outros gastos"
+  },
+  {
+   "label": "Outros gastos e perdas",
+   "lado": "expense",
+   "page": 34,
+   "section": "## 25. Outros rendimentos / ## 26. Outros gastos",
+   "values": [
+    0.119427
+   ],
+   "origen": "nota 33 (ancla 12)",
+   "ancla": "Outros gastos"
+  },
+  {
+   "label": "Gastos/reversões de depreciação e de amortização",
+   "lado": "expense",
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "values": [
+    -1.23441
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Juros e gastos similares suportados",
+   "lado": "expense",
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "values": [
+    -2.067547
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Imposto sobre o rendimento do período",
+   "lado": "expense",
+   "page": 18,
+   "section": "# FUTEBOL CLUBE DE FAMALICÃO - FUTEBOL S.A.D. / # Demonstração dos Resultados Individuais / Exercício findo em 30 de junho de 2022",
+   "values": [
+    -0.057691
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Juros",
+   "lado": null,
+   "page": 7,
+   "section": "## Resultados",
+   "values": [
+    -2067547
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Impostos",
+   "lado": "expense",
+   "page": 7,
+   "section": "## Resultados",
+   "values": [
+    -57691
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Empréstimos bancários",
+   "lado": null,
+   "page": 31,
+   "section": "FUTURO, S.A. / ### 13. Resultados transitados / ### 14. Outras variações no capital próprio / ### 15. Financiamentos obtidos",
+   "values": [
+    1500
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Locações financeiras",
+   "lado": null,
+   "page": 31,
+   "section": "FUTURO, S.A. / ### 13. Resultados transitados / ### 14. Outras variações no capital próprio / ### 15. Financiamentos obtidos",
+   "values": [
+    99.04531
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Suprimentos",
+   "lado": null,
+   "page": 31,
+   "section": "FUTURO, S.A. / ### 13. Resultados transitados / ### 14. Outras variações no capital próprio / ### 15. Financiamentos obtidos",
+   "values": [
+    15380
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Vendas de mercadorias",
+   "lado": "revenue",
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "values": [
+    153.58446
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Prestações de serviços",
+   "lado": "revenue",
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "values": [
+    5354.86861
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Ingressos",
+   "lado": "revenue",
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "values": [
+    175.65007
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Competições",
+   "lado": "revenue",
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "values": [
+    159.3495
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Publicidade",
+   "lado": "revenue",
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "values": [
+    389.36189
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Patrocinios",
+   "lado": "revenue",
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "values": [
+    225
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Direitos Clube",
+   "lado": "revenue",
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "values": [
+    3600
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Apostas desportivas",
+   "lado": "revenue",
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "values": [
+    347.89387
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Outras receitas desportivas",
+   "lado": "revenue",
+   "page": 32,
+   "section": "# 18. Provisões / # 19. Participações financeiras – método da equivalência patrimonial / # 20. Vendas e serviços prestados",
+   "values": [
+    457.61328
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Alienações e cedências (jogadores)",
+   "lado": "revenue",
+   "page": 5,
+   "section": "## Rendimentos",
+   "values": [
+    5336338
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Direitos Televisivos",
+   "lado": "revenue",
+   "page": 5,
+   "section": "## Rendimentos",
+   "values": [
+    3600000
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Publicidade e Patrocínios",
+   "lado": "revenue",
+   "page": 5,
+   "section": "## Rendimentos",
+   "values": [
+    656505
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Apostas desportivas",
+   "lado": "revenue",
+   "page": 5,
+   "section": "## Rendimentos",
+   "values": [
+    347894
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Ingressos e camarotes",
+   "lado": "revenue",
+   "page": 5,
+   "section": "## Rendimentos",
+   "values": [
+    175650
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Subsídios",
+   "lado": "revenue",
+   "page": 5,
+   "section": "## Rendimentos",
+   "values": [
+    167736
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Merchandising",
+   "lado": "revenue",
+   "page": 5,
+   "section": "## Rendimentos",
+   "values": [
+    154177
+   ],
+   "origen": "estado 0"
+  }
+ ]
+}

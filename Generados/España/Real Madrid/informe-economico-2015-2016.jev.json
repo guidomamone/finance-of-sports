@@ -1,0 +1,235 @@
+{
+ "md": "Clubes/España/Real Madrid/informe-economico-2015-2016.md",
+ "generatedAt": "2026-09-30T22:49:15.489Z",
+ "rubrosHuella": "5a936e176382885f1125c4b427e38c1ef6d3b297",
+ "rubros": [
+  {
+   "label": "Ingresos Financieros",
+   "lado": "revenue",
+   "page": 61,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otro inmovilizado intangible",
+   "lado": "expense",
+   "page": 27,
+   "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangible / no deportivo totalmente amortizados es como sigue: / Miles € / 30/06/2016    30/06/2015     Correcciones por deterioro:",
+   "choice": "other_amortisation",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "de jugadores, su pago se efectúa en dos plazos semestrales, en Ingresos de estadio",
+   "lado": "revenue",
+   "page": 40,
+   "section": "67 millones de euros de periodificaciones de cuotas socios/abo- / de euros fichas/otros personal, 68 millones de euros de periodifi- / 22.152       27.130 / gativo existente al cierre del periodo. / Periodificaciones a corto plazo",
+   "choice": "matchday_competition",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "enero y en julio. En el caso de las cuotas de socios/abonados, se Ingresos de marketing",
+   "lado": "revenue",
+   "page": 40,
+   "section": "67 millones de euros de periodificaciones de cuotas socios/abo- / de euros fichas/otros personal, 68 millones de euros de periodifi- / 22.152       27.130 / gativo existente al cierre del periodo. / Periodificaciones a corto plazo",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "cobran el 30 de junio las del ejercicio siguiente, generando una Ingresos de competiciones",
+   "lado": "revenue",
+   "page": 40,
+   "section": "67 millones de euros de periodificaciones de cuotas socios/abo- / de euros fichas/otros personal, 68 millones de euros de periodifi- / 22.152       27.130 / gativo existente al cierre del periodo. / Periodificaciones a corto plazo",
+   "choice": "competition_bonus",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "periodificación acreedora cuya cancelación se irá realizando a lo",
+   "lado": "revenue",
+   "page": 40,
+   "section": "67 millones de euros de periodificaciones de cuotas socios/abo- / de euros fichas/otros personal, 68 millones de euros de periodifi- / 22.152       27.130 / gativo existente al cierre del periodo. / Periodificaciones a corto plazo",
+   "choice": "other_income",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "Diferencias de cambio negativas no realizadas",
+   "lado": "expense",
+   "page": 51,
+   "section": "9.158             3.959 / Gastos financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de intereses y préstamos",
+   "lado": "expense",
+   "page": 51,
+   "section": "9.158             3.959 / Gastos financieros",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Gtos. Financ. de actualización de pasivos financieros (Notas 14.1 y 15)",
+   "lado": "expense",
+   "page": 51,
+   "section": "9.158             3.959 / Gastos financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "T-2, siendo T el periodo contable anual, respecto del que se haya Total ingresos financieros (nota 17.6)",
+   "lado": "revenue",
+   "page": 57,
+   "section": "dos del punto de equilibrio de cada periodo contable cubierto por / Ingresos estados financieros / el periodo de seguimiento, a saber, los periodos contables T, T-1 y",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Financieros por intereses de préstamos, gastos de avales y otros gastos financieros",
+   "lado": "expense",
+   "page": 61,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Gastos Financieros por coste implícito derivado del pago aplazado en la adquisición de jugadores",
+   "lado": "expense",
+   "page": 61,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "player_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Aplicaciones informáticas",
+   "lado": "expense",
+   "page": 27,
+   "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangible / no deportivo totalmente amortizados es como sigue: / Miles € / 30/06/2016    30/06/2015     Correcciones por deterioro:",
+   "choice": "other_amortisation",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_amortisation",
+     0.88
+    ],
+    [
+     "depreciation",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 963
+  },
+  {
+   "label": "Concesiones",
+   "lado": "expense",
+   "page": 27,
+   "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangible / no deportivo totalmente amortizados es como sigue: / Miles € / 30/06/2016    30/06/2015     Correcciones por deterioro:",
+   "choice": "other_amortisation",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_amortisation",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 854
+  },
+  {
+   "label": "Patentes, licencias, marcas y similares 769 726 VALOR NETO 319.248 5.025 (671) -",
+   "lado": "expense",
+   "page": 27,
+   "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangible / no deportivo totalmente amortizados es como sigue: / Miles € / 30/06/2016    30/06/2015     Correcciones por deterioro:",
+   "choice": "other_amortisation",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_amortisation",
+     0.87
+    ],
+    [
+     "depreciation",
+     0.06999999999999999
+    ],
+    [
+     "player_impairment",
+     0.04
+    ]
+   ],
+   "tokens": 1164
+  },
+  {
+   "label": "Construcciones y otro inmovilizado material (11.573) (499) 751 -",
+   "lado": "expense",
+   "page": 27,
+   "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangible / no deportivo totalmente amortizados es como sigue: / Miles € / 30/06/2016    30/06/2015     Correcciones por deterioro:",
+   "choice": "depreciation",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "depreciation",
+     0.93
+    ],
+    [
+     "other_amortisation",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1143
+  }
+ ]
+}

@@ -1,0 +1,687 @@
+{
+ "md": "Clubes/Colombia/Millonarios/informe-gestion-2023.md",
+ "generatedAt": "2026-09-30T22:48:58.756Z",
+ "rubrosHuella": "171f15337286f3a55e75ddf7b3ef24b2e056c9c4",
+ "rubros": [
+  {
+   "label": "Pasivos por impuestos corrientes",
+   "lado": "expense",
+   "page": 37,
+   "section": "Cambios en los activos y pasivos de operación, netos:",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Pasivos estimados, provisiones y otros activos",
+   "lado": null,
+   "page": 37,
+   "section": "Cambios en los activos y pasivos de operación, netos:",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1467
+  },
+  {
+   "label": "Inventarios corrientes",
+   "lado": null,
+   "page": 37,
+   "section": "Cambios en los activos y pasivos de operación, netos:",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1372
+  },
+  {
+   "label": "Activos por impuestos corrientes",
+   "lado": "expense",
+   "page": 37,
+   "section": "Cambios en los activos y pasivos de operación, netos:",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Otros activos financieros corrientes",
+   "lado": null,
+   "page": 37,
+   "section": "Cambios en los activos y pasivos de operación, netos:",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1436
+  },
+  {
+   "label": "Cuentas comerciales por cobrar y otras cuentas por cobrar",
+   "lado": null,
+   "page": 37,
+   "section": "Cambios en los activos y pasivos de operación, netos:",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Otros pasivos no financieros corrientes",
+   "lado": null,
+   "page": 37,
+   "section": "Cambios en los activos y pasivos de operación, netos:",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1438
+  },
+  {
+   "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+   "lado": null,
+   "page": 37,
+   "section": "Cambios en los activos y pasivos de operación, netos:",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Otros pasivos no financieros no corrientes",
+   "lado": null,
+   "page": 37,
+   "section": "Cambios en los activos y pasivos de operación, netos:",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1439
+  },
+  {
+   "label": "Ingresos por actividades deportivas $ 87.704.672 $",
+   "lado": "revenue",
+   "page": 35,
+   "section": "AZUL & BLANCO MILLONARIOS FC S.A. / ESTADOS DE RESULTADOS INTEGRALES / POR LOS AÑOS TERMINADOS EL 31 DE DICIEMBRE DE 2023 Y 2022",
+   "choice": "lump_football_operations",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.5700000000000001
+    ],
+    [
+     "other_sports",
+     0.29
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1075
+  },
+  {
+   "label": "Gasto de personal y honorarios.",
+   "lado": "expense",
+   "page": 35,
+   "section": "Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos e impuestos",
+   "lado": "expense",
+   "page": 35,
+   "section": "Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Gasto de personal y honorarios $ (6.071.500) $",
+   "lado": "expense",
+   "page": 80,
+   "section": "24. GASTOS DE ADMINISTRACION.",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 80,
+   "section": "24. GASTOS DE ADMINISTRACION.",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 80,
+   "section": "24. GASTOS DE ADMINISTRACION.",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 80,
+   "section": "24. GASTOS DE ADMINISTRACION.",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos de viaje",
+   "lado": "expense",
+   "page": 80,
+   "section": "24. GASTOS DE ADMINISTRACION.",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Castigo Deudores",
+   "lado": "expense",
+   "page": 80,
+   "section": "24. GASTOS DE ADMINISTRACION.",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Contribuciones y afiliaciones",
+   "lado": "expense",
+   "page": 80,
+   "section": "24. GASTOS DE ADMINISTRACION.",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 80,
+   "section": "24. GASTOS DE ADMINISTRACION.",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenimiento, seguros y gastos legales",
+   "lado": "expense",
+   "page": 80,
+   "section": "24. GASTOS DE ADMINISTRACION.",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos y gastos de ejercicios anteriores",
+   "lado": "expense",
+   "page": 76,
+   "section": "$         40.324.461                  $     8.736.384 / Beneficio (perdida) antes de impuestos en operaciones / continuas (a) / Efecto impositivo de los gastos que no son deducibles / para determinar la ganancia o (perdida) fiscal",
+   "choice": "exceptional_items",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Impuestos asumidos",
+   "lado": "expense",
+   "page": 76,
+   "section": "$         40.324.461                  $     8.736.384 / Beneficio (perdida) antes de impuestos en operaciones / continuas (a) / Efecto impositivo de los gastos que no son deducibles / para determinar la ganancia o (perdida) fiscal",
+   "choice": "exceptional_items",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Deterioros deudores",
+   "lado": "expense",
+   "page": 76,
+   "section": "$         40.324.461                  $     8.736.384 / Beneficio (perdida) antes de impuestos en operaciones / continuas (a) / Efecto impositivo de los gastos que no son deducibles / para determinar la ganancia o (perdida) fiscal",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Diferencia en cambio",
+   "lado": "expense",
+   "page": 81,
+   "section": "Inversiones virtuales Bancolombia, relacionado con los excedentes de caja. / 2023                   2022 / Gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por venta de articulos deportivos",
+   "lado": "revenue",
+   "page": 35,
+   "section": "AZUL & BLANCO MILLONARIOS FC S.A. / ESTADOS DE RESULTADOS INTEGRALES / POR LOS AÑOS TERMINADOS EL 31 DE DICIEMBRE DE 2023 Y 2022",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Intereses $ (5.010) $",
+   "lado": "expense",
+   "page": 81,
+   "section": "Inversiones virtuales Bancolombia, relacionado con los excedentes de caja. / 2023                   2022 / Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Intereses pasivos por derechos de uso",
+   "lado": "expense",
+   "page": 81,
+   "section": "Inversiones virtuales Bancolombia, relacionado con los excedentes de caja. / 2023                   2022 / Gastos",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos bancarios",
+   "lado": "expense",
+   "page": 81,
+   "section": "Inversiones virtuales Bancolombia, relacionado con los excedentes de caja. / 2023                   2022 / Gastos",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "HFL Colombia Ltda. -",
+   "lado": "revenue",
+   "page": 61,
+   "section": "8.3. Ingresos no Facturados / Central Cervecera de Colombia S.A.S (a)                     $ 100.000           $ 190.000 / Gastronomía Italiana en Colombia S.A.S (b)                     45.000                   - / Banco Av Villas                                                11.282              11.071 / Otros                                                           9.200                    -",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Adidas Colombia Ltda. -",
+   "lado": "revenue",
+   "page": 61,
+   "section": "8.3. Ingresos no Facturados / Central Cervecera de Colombia S.A.S (a)                     $ 100.000           $ 190.000 / Gastronomía Italiana en Colombia S.A.S (b)                     45.000                   - / Banco Av Villas                                                11.282              11.071 / Otros                                                           9.200                    -",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Sutex -",
+   "lado": "revenue",
+   "page": 61,
+   "section": "8.3. Ingresos no Facturados / Central Cervecera de Colombia S.A.S (a)                     $ 100.000           $ 190.000 / Gastronomía Italiana en Colombia S.A.S (b)                     45.000                   - / Banco Av Villas                                                11.282              11.071 / Otros                                                           9.200                    -",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Aprovechamientos $ 101.277 $",
+   "lado": "revenue",
+   "page": 80,
+   "section": "25. OTROS INGRESOS",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Utilidad en venta de derechos deportivos",
+   "lado": "revenue",
+   "page": 35,
+   "section": "AZUL & BLANCO MILLONARIOS FC S.A. / ESTADOS DE RESULTADOS INTEGRALES / POR LOS AÑOS TERMINADOS EL 31 DE DICIEMBRE DE 2023 Y 2022",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "Otros (a)",
+   "lado": "revenue",
+   "page": 80,
+   "section": "25. OTROS INGRESOS",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Participación en eventos internacionales",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Otros Ingresos relacionados con derechos / 4.067.953                     - / deportivos",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Regalías y otras actividades de estadio.",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Otros Ingresos relacionados con derechos / 4.067.953                     - / deportivos",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos extraordinarios (a) $ (3.196.937) $",
+   "lado": "expense",
+   "page": 80,
+   "section": "26. OTROS GASTOS",
+   "choice": "exceptional_items",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Gravamen a los movimientos financieros",
+   "lado": "expense",
+   "page": 80,
+   "section": "26. OTROS GASTOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de actividades deportivas",
+   "lado": "expense",
+   "page": 35,
+   "section": "",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.6
+    ],
+    [
+     "lump_football_operations_expense",
+     0.26
+    ],
+    [
+     "match_organisation_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Ingresos por actividades de academias",
+   "lado": "revenue",
+   "page": 35,
+   "section": "AZUL & BLANCO MILLONARIOS FC S.A. / ESTADOS DE RESULTADOS INTEGRALES / POR LOS AÑOS TERMINADOS EL 31 DE DICIEMBRE DE 2023 Y 2022",
+   "choice": "youth_football",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "youth_football",
+     0.88
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "education",
+     0.06
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Traslados (30.739.866) - (8.960.349) -",
+   "lado": null,
+   "page": 36,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1477
+  },
+  {
+   "label": "Gastos no deducibles",
+   "lado": "revenue",
+   "page": 80,
+   "section": "26. OTROS GASTOS",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Apropiación de la reserval legal - 896.035 - - -",
+   "lado": null,
+   "page": 36,
+   "section": "",
+   "choice": "exceptional_items",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "exceptional_items",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ]
+   ],
+   "tokens": 1393
+  },
+  {
+   "label": "Reintegro de otros costos y gastos",
+   "lado": "expense",
+   "page": 80,
+   "section": "25. OTROS INGRESOS",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Costo de venta articulos deportivos",
+   "lado": "expense",
+   "page": 35,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1040
+  }
+ ]
+}

@@ -1,0 +1,393 @@
+{
+ "pdf": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2021.pdf",
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2021.md",
+ "generado": "2026-10-03T23:03:06.086Z",
+ "estado": "ok",
+ "clubId": "catolica-cl",
+ "year": 2021,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": null,
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 15421.985; el sitio tiene 15421.985"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 14157.951 en este documento y 14157.952 en estados-financieros-2022.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 15421.985 en estados-financieros-2020.pdf y 15421.985 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de localizar que no afecta la carga: Probablemente solo repite renglones ya presentes en el estado (b6); se incluyó provisionalmente pero puede no aportar apertura.",
+  "duda de localizar que no afecta la carga: La nota 20 (b50) ya abre el costo de ventas con los mismos conceptos; el segmento parece repetir importes.",
+  "duda de extraer que no afecta la carga: Esas partidas ya están en el estado (L190-L195) y el cuadro reparte por segmento sin desglosar un renglón; su total L4034 mezcla ingresos y diferencias de cambio.",
+  "duda de extraer que no afecta la carga: Repiten exactamente las partidas de b48 (L3772-L3778) que ya se cargan como desglose de Ingresos de actividades ordinarias."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 14157.951,
+  "gastos": 17413.635,
+  "financiero": -282.617,
+  "impuesto": 0,
+  "resultadoImpreso": -3538.301,
+  "resultadoParaCargar": -3538.301,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ingresos por A.N.F.P. (1)",
+   "lado": "ingreso",
+   "M": 3521.475,
+   "pagina": 77,
+   "linea": 3772,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Ingresos por Derechos de TV (2)",
+   "lado": "ingreso",
+   "M": 2953.727,
+   "pagina": 77,
+   "linea": 3773,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Ingresos por Borderó (Recaudación Entradas)",
+   "lado": "ingreso",
+   "M": 623.084,
+   "pagina": 77,
+   "linea": 3774,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Ingresos por Préstamo de Jugadores",
+   "lado": "ingreso",
+   "M": 315.641,
+   "pagina": 77,
+   "linea": 3775,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Ingresos por venta de Jugadores",
+   "lado": "ingreso",
+   "M": 82.622,
+   "pagina": 77,
+   "linea": 3776,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Ingresos por Derechos de Solidaridad",
+   "lado": "ingreso",
+   "M": 31.329,
+   "pagina": 77,
+   "linea": 3777,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Otros",
+   "lado": "ingreso",
+   "M": 11.334,
+   "pagina": 77,
+   "linea": 3778,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Ingresos Cuotas Socios Fútbol",
+   "lado": "ingreso",
+   "M": 233.028,
+   "pagina": 82,
+   "linea": 4006,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\""
+  },
+  {
+   "etiqueta": "Ingresos Matrículas de Escuelas de Fútbol",
+   "lado": "ingreso",
+   "M": 238.414,
+   "pagina": 82,
+   "linea": 4007,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\""
+  },
+  {
+   "etiqueta": "Ingresos por Publicidad y Auspicios",
+   "lado": "ingreso",
+   "M": 5241.433,
+   "pagina": 82,
+   "linea": 4008,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\""
+  },
+  {
+   "etiqueta": "Ingresos por Ventas de Productos Tienda UC",
+   "lado": "ingreso",
+   "M": 575.407,
+   "pagina": 82,
+   "linea": 4009,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\""
+  },
+  {
+   "etiqueta": "Ingresos por Derechos de Merchandising",
+   "lado": "ingreso",
+   "M": 253.864,
+   "pagina": 82,
+   "linea": 4010,
+   "origen": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\""
+  },
+  {
+   "etiqueta": "Otros ingresos por función",
+   "lado": "ingreso",
+   "M": 76.593,
+   "pagina": 8,
+   "linea": 190,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Remuneraciones",
+   "lado": "gasto",
+   "M": 8036.278,
+   "pagina": 80,
+   "linea": 3901,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Gastos de Operación",
+   "lado": "gasto",
+   "M": 1913.147,
+   "pagina": 80,
+   "linea": 3902,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Amortización pases de jugadores profesionales (*)",
+   "lado": "gasto",
+   "M": 3820.607,
+   "pagina": 80,
+   "linea": 3903,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Amortización Concesión",
+   "lado": "gasto",
+   "M": 151.068,
+   "pagina": 80,
+   "linea": 3904,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Gastos de torneos y otros",
+   "lado": "gasto",
+   "M": 708.836,
+   "pagina": 80,
+   "linea": 3905,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Gasto por Préstamo de Jugadores",
+   "lado": "gasto",
+   "M": 52.88,
+   "pagina": 80,
+   "linea": 3906,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Gasto por Transferencia de Jugadores",
+   "lado": "gasto",
+   "M": 162.048,
+   "pagina": 80,
+   "linea": 3907,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Depreciación",
+   "lado": "gasto",
+   "M": 302.961,
+   "pagina": 80,
+   "linea": 3908,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Costos de ventas productos",
+   "lado": "gasto",
+   "M": 403.074,
+   "pagina": 80,
+   "linea": 3909,
+   "origen": "nota que desglosa \"Costo de ventas\""
+  },
+  {
+   "etiqueta": "Otros Gastos por función",
+   "lado": "gasto",
+   "M": 150.434,
+   "pagina": 8,
+   "linea": 191,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Remuneración",
+   "lado": "gasto",
+   "M": 722.353,
+   "pagina": 81,
+   "linea": 3937,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Indemnización",
+   "lado": "gasto",
+   "M": 0.305,
+   "pagina": 81,
+   "linea": 3938,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Gastos Generales",
+   "lado": "gasto",
+   "M": 89.854,
+   "pagina": 81,
+   "linea": 3939,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Combustible y Lubricantes",
+   "lado": "gasto",
+   "M": 7.651,
+   "pagina": 81,
+   "linea": 3940,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Servicios Contratados",
+   "lado": "gasto",
+   "M": 504.725,
+   "pagina": 81,
+   "linea": 3941,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Servicios de Seguridad",
+   "lado": "gasto",
+   "M": 60.689,
+   "pagina": 81,
+   "linea": 3942,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Servicios de Aseo",
+   "lado": "gasto",
+   "M": 39.642,
+   "pagina": 81,
+   "linea": 3943,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Arriendo de Bienes",
+   "lado": "gasto",
+   "M": 3.164,
+   "pagina": 81,
+   "linea": 3944,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Servicios de Terceros",
+   "lado": "gasto",
+   "M": 27.846,
+   "pagina": 81,
+   "linea": 3945,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Materiales de Mantención y Reparación",
+   "lado": "gasto",
+   "M": 14.458,
+   "pagina": 81,
+   "linea": 3946,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Servicios de Mantención y Reparación",
+   "lado": "gasto",
+   "M": 33.932,
+   "pagina": 81,
+   "linea": 3947,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Patentes y Contribuciones",
+   "lado": "gasto",
+   "M": 94.129,
+   "pagina": 81,
+   "linea": 3948,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Materiales de Oficina y Otros",
+   "lado": "gasto",
+   "M": 71.952,
+   "pagina": 81,
+   "linea": 3950,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  },
+  {
+   "etiqueta": "Feriado Legal",
+   "lado": "gasto",
+   "M": 41.602,
+   "pagina": 81,
+   "linea": 3951,
+   "origen": "nota que desglosa \"Gasto de administración\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Ingresos financieros",
+   "M": 483.208,
+   "linea": 193
+  },
+  {
+   "etiqueta": "Costos financieros",
+   "M": -149.384,
+   "linea": 194
+  },
+  {
+   "etiqueta": "Diferencias de cambio",
+   "M": -616.441,
+   "linea": 195
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Ingreso (Gasto) por impuestos a las ganancias",
+   "M": null,
+   "linea": 197
+  }
+ ]
+}

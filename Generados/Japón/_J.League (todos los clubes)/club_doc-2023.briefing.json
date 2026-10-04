@@ -1,0 +1,264 @@
+{
+  "club": "j-league-todos-los-clubes",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Japón/_J.League (todos los clubes)/club_doc-2023.md",
+  "generatedAt": "2026-09-30T22:05:47.190Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 2,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 6,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 7,
+      "section": "２－３．売上高の推移 / ◼ 売上高が増加したクラブは44クラブ（76%）、減少したクラブは14クラブ（24%）である。 / ◼ 増加したクラブの内訳は、Ｊ１が16クラブ、Ｊ２が19クラブ、Ｊ３が9クラブである。 / 群馬       637      717       790      +73             平均       663      728      655",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "57クラブ 58クラブ 60クラブ 合計",
+          "values": [
+            "35,752",
+            "39,840",
+            "45,045",
+            "+5,205"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "総合計 123,957 137,578 151,772 +14,194 平均",
+          "values": [
+            "1,702",
+            "1,811",
+            "2,048"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "平均",
+          "values": [
+            "2,175",
+            "2,372",
+            "2,530"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 8,
+      "section": "◼ スポンサー収入が増加したクラブは38クラブ（66%）、減少したクラブは20クラブ（34%）で / ある。 / ◼ 増加したクラブの内訳は、Ｊ１が13クラブ、Ｊ２が16クラブ、Ｊ３が9クラブである。 / 群馬       323      344       350       +6             合計     6,546   6,316   6,947    +631 / 東京Ｖ       957      560       343    ▲217              平均       364     351     347",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "57クラブ 58クラブ 60クラブ 合計",
+          "values": [
+            "20,405",
+            "21,422",
+            "23,661",
+            "+2,239"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "総合計 63,043 66,142 70,706 +4,564 平均 972",
+          "values": [
+            "1,076"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "平均",
+          "values": [
+            "1,106",
+            "1,140",
+            "1,178"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 16,
+      "section": "４－１．Ｊ１・Ｊ２・Ｊ３クラブ合計 / （百万円） / Ｊ１合計                        Ｊ２合計                      Ｊ３合計                   Ｊ１+Ｊ２+Ｊ３合計",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "売上高",
+          "values": [
+            "87,546",
+            "93,619",
+            "+6,073",
+            "38,017",
+            "45,045",
+            "+7,028",
+            "12,015",
+            "13,108",
+            "+1,093",
+            "137,578",
+            "151,772",
+            "+14,194"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "スポンサー収入 41,092 40,098 ▲994 18,607 23,661 +5,054 6,443 6,947 +504",
+          "values": [
+            "66,142",
+            "70,706",
+            "+4,564"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "入場料収入 12,674 17,293 +4,619 3,847 5,410 +1,563 931 1,126 +195",
+          "values": [
+            "17,452",
+            "23,829",
+            "+6,377"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ｊリーグ配分金 8,809 6,197 ▲2,612 4,073 2,968 ▲1,105 921 720 ▲201",
+          "values": [
+            "13,803",
+            "9,885",
+            "▲3,918"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "物販収入 7,509 10,012 +2,503 2,579 3,318 +739 918 1,061 +143",
+          "values": [
+            "11,006",
+            "14,391",
+            "+3,385"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "その他収入 14,668 16,708 +2,040 6,545 7,198 +653 1,852 2,070 +218",
+          "values": [
+            "23,065",
+            "25,976",
+            "+2,911"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "売上原価",
+          "values": [
+            "71,041",
+            "72,464",
+            "+1,423",
+            "28,750",
+            "34,560",
+            "+5,810",
+            "8,606",
+            "10,837",
+            "+2,231",
+            "108,397",
+            "117,861",
+            "+9,464"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "トップチーム人件費 43,855 42,237 ▲1,618 14,854 17,733 +2,879 3,866 4,709 +843",
+          "values": [
+            "62,575",
+            "64,679",
+            "+2,104"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "試合関連経費（ホームゲーム開催費） 5,599 6,133 +534 2,653 3,585 +932 997 1,469 +472",
+          "values": [
+            "9,249",
+            "11,187",
+            "+1,938"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "４－５．１試合当たりの平均入場者数(リーグ戦のみ)の推移",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "◼",
+          "values": [
+            "Ｊ１の平均入場者数は18,993人(19年度対比約92％)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "◼",
+          "values": [
+            "Ｊ２の平均入場者数は6,904人(19年度対比約96％)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "◼",
+          "values": [
+            "Ｊ３の平均入場者数は3,003人(19年度対比約125%)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "経常利益（▲損失）        ▲ 115 / 税引前当期利益（▲損失）     ▲ 115         ① 5,600万円以上の増資 / 法人税および住民税等 / 当期純利益（▲損失）       ▲ 116 / 1",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "②",
+          "values": [
+            "5,600万円以上の当期純利益"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "２．貸借対照表 ③",
+          "values": [
+            "増資と利益の合計が5,600万円以上"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/j-league-todos-los-clubes-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"j-league-todos-los-clubes\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

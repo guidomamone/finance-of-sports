@@ -1,0 +1,213 @@
+{
+ "md": "Clubes/Inglaterra/Aston Martin F1/amr-gp-full-accounts-2024.md",
+ "generatedAt": "2026-09-30T04:30:14.740Z",
+ "rubros": [
+  {
+   "label": "Operating lease rentals",
+   "lado": null,
+   "page": 28,
+   "section": "Included within other operating income is UK Government grants. / 6. Operating loss / The operating loss is stated after (crediting)/charging: / 2024 2023 / £000 £000",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.46
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1484
+  },
+  {
+   "label": "Exchange differences",
+   "lado": null,
+   "page": 28,
+   "section": "Included within other operating income is UK Government grants. / 6. Operating loss / The operating loss is stated after (crediting)/charging: / 2024 2023 / £000 £000",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1299
+  },
+  {
+   "label": "At 1 January 2024",
+   "lado": null,
+   "page": 19,
+   "section": "Statement of Changes in Equity / For the Year Ended 31 December 2024 / Called up Share premium Profit and loss / share capital account account Total equity / £000 £000 £000 £000",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1598
+  },
+  {
+   "label": "At 31 December 2024",
+   "lado": null,
+   "page": 19,
+   "section": "Statement of Changes in Equity / For the Year Ended 31 December 2024 / Called up Share premium Profit and loss / share capital account account Total equity / £000 £000 £000 £000",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1599
+  },
+  {
+   "label": "Loss for the year - :",
+   "lado": null,
+   "page": 19,
+   "section": "Statement of Changes in Equity / For the Year Ended 31 December 2024 / Called up Share premium Profit and loss / share capital account account Total equity / £000 £000 £000 £000",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1606
+  },
+  {
+   "label": "Loss for the year - -",
+   "lado": null,
+   "page": 19,
+   "section": "Statement of Changes in Equity / For the Year Ended 31 December 2024 / Called up Share premium Profit and loss / share capital account account Total equity / £000 £000 £000 £000",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1606
+  },
+  {
+   "label": "At 1 January 2023",
+   "lado": null,
+   "page": 19,
+   "section": "Statement of Changes in Equity / For the Year Ended 31 December 2024 / Called up Share premium Profit and loss / share capital account account Total equity / £000 £000 £000 £000",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1461
+  },
+  {
+   "label": "Depreciation ,",
+   "lado": null,
+   "page": 28,
+   "section": "Included within other operating income is UK Government grants. / 6. Operating loss / The operating loss is stated after (crediting)/charging: / 2024 2023 / £000 £000",
+   "choice": "depreciation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "depreciation",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1478
+  },
+  {
+   "label": "Amortisation",
+   "lado": null,
+   "page": 28,
+   "section": "Included within other operating income is UK Government grants. / 6. Operating loss / The operating loss is stated after (crediting)/charging: / 2024 2023 / £000 £000",
+   "choice": "player_amortisation",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "player_amortisation",
+     0.67
+    ],
+    [
+     "other_amortisation",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1528
+  }
+ ]
+}

@@ -1,0 +1,162 @@
+{
+ "md": "Clubes/Brasil/Botafogo-SP/demonstracoes-financeiras-2019-2020.md",
+ "generatedAt": "2026-09-30T22:48:23.150Z",
+ "rubrosHuella": "a6bbb959cd57d7be6fabe016a698b7a46f42f7c1",
+ "rubros": [
+  {
+   "label": "financeiro (11.994)",
+   "lado": null,
+   "page": 14,
+   "section": "(6.748)          651             (6.097) / Resultado operacional antes do resultado",
+   "choice": "admin_general_expense",
+   "confidence": 0.33,
+   "desdeCache": true
+  },
+  {
+   "label": "Marca 6.970 6.970 - -",
+   "lado": "expense",
+   "page": 27,
+   "section": "b       Movimentação do custo e amortização acumulada / Aquisição/ / Subscrição     31/12/2019      Aquisição         Baixas      31/12/2020 / Custo",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de competição 5.030 5.030 - -",
+   "lado": "expense",
+   "page": 27,
+   "section": "b       Movimentação do custo e amortização acumulada / Aquisição/ / Subscrição     31/12/2019      Aquisição         Baixas      31/12/2020 / Custo",
+   "choice": "match_organisation_expense",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Atletas em formação - - 1.694 -",
+   "lado": "expense",
+   "page": 27,
+   "section": "b       Movimentação do custo e amortização acumulada / Aquisição/ / Subscrição     31/12/2019      Aquisição         Baixas      31/12/2020 / Custo",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Cotas de participação (i)",
+   "lado": "revenue",
+   "page": 31,
+   "section": "16      Receita operacional líquida / 2020            2019 / Receita operacional bruta",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínios e publicidade (ii)",
+   "lado": "revenue",
+   "page": 31,
+   "section": "16      Receita operacional líquida / 2020            2019 / Receita operacional bruta",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Sócio torcedor (iii)",
+   "lado": "revenue",
+   "page": 31,
+   "section": "16      Receita operacional líquida / 2020            2019 / Receita operacional bruta",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Custos com atletas, comissão técnica e jogos",
+   "lado": "expense",
+   "page": 3,
+   "section": "Demonstração do resultado / Exercícios findos em 31 de dezembro de 2020 e de 2019 / Em milhares de reais / Nota   31/12/2020       31/12/2019 / (reapresentado)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "wages_squad",
+     0.21
+    ]
+   ],
+   "tokens": 1132
+  },
+  {
+   "label": "Receita operacional líquida",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Demonstração do resultado / Exercícios findos em 31 de dezembro de 2020 e de 2019 / Em milhares de reais / Nota   31/12/2020       31/12/2019 / (reapresentado)",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1218
+  },
+  {
+   "label": "Receita operacional líquida 14.159 -",
+   "lado": "revenue",
+   "page": 14,
+   "section": "b.       Demonstração do resultado / 31/12/2019 / Anteriormente / apresentado       Ajustes       Reapresentado",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1202
+  },
+  {
+   "label": "Custos com atletas, comissão técnica e jogos (19.405) -",
+   "lado": "expense",
+   "page": 14,
+   "section": "b.       Demonstração do resultado / 31/12/2019 / Anteriormente / apresentado       Ajustes       Reapresentado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "match_organisation_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1118
+  }
+ ]
+}

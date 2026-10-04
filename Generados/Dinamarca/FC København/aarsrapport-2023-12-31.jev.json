@@ -1,0 +1,305 @@
+{
+ "md": "Clubes/Dinamarca/FC København/aarsrapport-2023-12-31.md",
+ "generatedAt": "2026-09-30T22:49:02.854Z",
+ "rubrosHuella": "be6a8da571d8577270c06ca314bff996a1517f99",
+ "rubros": [
+  {
+   "label": "Finansielle poster, netto",
+   "lado": null,
+   "page": 8,
+   "section": "Hovedtal og nøgletal / 2023 / t.kr. / Resultatopgørelse:",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Nettoomsætning",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Hovedtal og nøgletal / 2023 / t.kr. / Resultatopgørelse:",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1211
+  },
+  {
+   "label": "Virksomhedskapital",
+   "lado": null,
+   "page": 15,
+   "section": "Balance 31. december / Passiver / Note 2023 / Egenkapital",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "member_dues",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1477
+  },
+  {
+   "label": "Investeringer i materielle anlægsaktiver",
+   "lado": null,
+   "page": 8,
+   "section": "Balance:",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "depreciation",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1547
+  },
+  {
+   "label": "Soliditetsgrad",
+   "lado": null,
+   "page": 8,
+   "section": "Medarbejdere: / Gennemsnitligt antal heltidsansatte medarbejdere 545 / Nøgletal i %:",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "Lønninger og gager",
+   "lado": "expense",
+   "page": 17,
+   "section": "marked / 3... Honorar til generalforsamlingsvalgt revisor / oplysningerne er indeholdt i koncernregnskabet for PARKEN Sport & Entertainment A/S. / 2023 / 4. Personaleomkostninger",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Pensioner",
+   "lado": "expense",
+   "page": 17,
+   "section": "marked / 3... Honorar til generalforsamlingsvalgt revisor / oplysningerne er indeholdt i koncernregnskabet for PARKEN Sport & Entertainment A/S. / 2023 / 4. Personaleomkostninger",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "page": 17,
+   "section": "marked / 3... Honorar til generalforsamlingsvalgt revisor / oplysningerne er indeholdt i koncernregnskabet for PARKEN Sport & Entertainment A/S. / 2023 / 4. Personaleomkostninger",
+   "choice": "wages_squad",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Personaleomkostninger i øvrigt",
+   "lado": "expense",
+   "page": 17,
+   "section": "marked / 3... Honorar til generalforsamlingsvalgt revisor / oplysningerne er indeholdt i koncernregnskabet for PARKEN Sport & Entertainment A/S. / 2023 / 4. Personaleomkostninger",
+   "choice": "wages_squad",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Balancesum",
+   "lado": null,
+   "page": 8,
+   "section": "Balance:",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1522
+  },
+  {
+   "label": "Likviditetsgrad",
+   "lado": null,
+   "page": 8,
+   "section": "Medarbejdere: / Gennemsnitligt antal heltidsansatte medarbejdere 545 / Nøgletal i %:",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "Egenkapital",
+   "lado": null,
+   "page": 8,
+   "section": "Balance:",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1522
+  },
+  {
+   "label": "Afkastningsgrad",
+   "lado": null,
+   "page": 8,
+   "section": "Medarbejdere: / Gennemsnitligt antal heltidsansatte medarbejdere 545 / Nøgletal i %:",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1289
+  },
+  {
+   "label": "Overkurs ved emission",
+   "lado": null,
+   "page": 15,
+   "section": "Balance 31. december / Passiver / Note 2023 / Egenkapital",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "member_dues",
+     0.08
+    ],
+    [
+     "player_sales",
+     0.04
+    ]
+   ],
+   "tokens": 1429
+  },
+  {
+   "label": "Overført resultat",
+   "lado": null,
+   "page": 15,
+   "section": "Balance 31. december / Passiver / Note 2023 / Egenkapital",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1497
+  },
+  {
+   "label": "Foreslået udbytte for regnskabsåret",
+   "lado": null,
+   "page": 15,
+   "section": "Balance 31. december / Passiver / Note 2023 / Egenkapital",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1508
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+  "club": "river",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/River/memoria-2018-2019.md",
+  "generatedAt": "2026-09-30T21:51:05.311Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 1,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 18,
+      "section": "• Es el segundo jugador de River Plate que más pases completó en las / últimas cuatro ediciones de la Libertadores (1019), detrás de Ponzio (1295). / • Realizó 70 intercepciones en las últimas cuatro ediciones de la Libertadores / en River Plate. Sólo Ponzio lo supera (72); en 2015 lideró ese rubro (28). / • Realizó 155 despejes para River Plate en las últimas cuatro ediciones de la",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Libertadores, más que cualquier otro jugador; lideró el rubro en 2015",
+          "values": [
+            "(39),"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2017 (31) y 2018",
+          "values": [
+            "(75)."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "GOLES:                                    41 / PARTIDOS COMO TITULAR:                  122 / GOLES / TÍTULOS OFICIALES / SUPERCOPA ARGENTINA                        2017",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "• Tuvo dos etapas en River Plate: la primera, entre julio de 2012 y diciembre de 2013. La segunda, entre julio de 2014 y diciembre de",
+          "values": [
+            "2018."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Además de los jugadores de la Copa Libertadores 2015 y de la histórica Copa de",
+          "values": [
+            "2018,"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "ar",
+    "query": "River Plate",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

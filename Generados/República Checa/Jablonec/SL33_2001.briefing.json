@@ -1,0 +1,2505 @@
+{
+  "club": "jablonec",
+  "year": 2001,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/República Checa/Jablonec/SL33_2001.md",
+  "generatedAt": "2026-09-30T22:07:45.291Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 2,
+    "space": 0
+  },
+  "scannedWarning": true,
+  "tableCount": 14,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 6,
+      "section": "# Předmět podnikání: / # Rozsah auditu:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "> inventorazaci uctu tridy 0-Dlouhodoby investi ci majetek k",
+          "values": [
+            "31.12.2001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "> inventorazaci uctu tridy 1-Zasoby k",
+          "values": [
+            "31.12.2001"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "# ROZVAHA v plném rozsahu",
+      "columns": [
+        "Čís.f.",
+        "IKF",
+        "Rok",
+        "Měsíc",
+        "IČO"
+      ],
+      "rows": [
+        {
+          "rawLabel": "01",
+          "values": [
+            "602095",
+            "2001",
+            "12",
+            "25023144"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 11,
+      "section": "FK JABLONEC 97 a.s.",
+      "columns": [
+        "AKTIVA b",
+        "řád. c",
+        "Běžné účetní období – Brutto 1",
+        "Běžné účetní období – Korekce 2",
+        "Běžné účetní období – Netto 3",
+        "Minulé úč. období – Netto 4"
+      ],
+      "rows": [
+        {
+          "rawLabel": "AKTIVA CELKEM (ř. 02 + 03 + 28 + 55)",
+          "values": [
+            "001",
+            "56941",
+            "-11865",
+            "45076",
+            "64791"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Pohledávky za upsaný vlastní kapitál",
+          "values": [
+            "002",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "A."
+        },
+        {
+          "rawLabel": "Stálá aktiva (ř. 04 + 12 + 22)",
+          "values": [
+            "003",
+            "36004",
+            "-9644",
+            "26360",
+            "33136"
+          ],
+          "bold": false,
+          "codigo": "B."
+        },
+        {
+          "rawLabel": "Dlouhodobý nehmotný majetek (ř. 05 až 11)",
+          "values": [
+            "004",
+            "25",
+            "-25",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "B. I."
+        },
+        {
+          "rawLabel": "Zřizovací výdaje",
+          "values": [
+            "005",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "B. I. 1."
+        },
+        {
+          "rawLabel": "Nehmotné výsledky výzkumu a vývoje",
+          "values": [
+            "006",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Software",
+          "values": [
+            "007",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Ocenitelná práva",
+          "values": [
+            "008",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "4."
+        },
+        {
+          "rawLabel": "Jiný dlouhodobý nehmotný majetek",
+          "values": [
+            "009",
+            "25",
+            "-25",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "5."
+        },
+        {
+          "rawLabel": "Nedokončený dlouhodobý nehmotný majetek",
+          "values": [
+            "010",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "6."
+        },
+        {
+          "rawLabel": "Poskytnuté zálohy na dlouhodobý nehmotný majetek",
+          "values": [
+            "011",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "7."
+        },
+        {
+          "rawLabel": "Dlouhodobý hmotný majetek (ř. 13 až 21)",
+          "values": [
+            "012",
+            "35979",
+            "-9619",
+            "26360",
+            "33136"
+          ],
+          "bold": false,
+          "codigo": "B. II."
+        },
+        {
+          "rawLabel": "Pozemky",
+          "values": [
+            "013",
+            "",
+            "",
+            "",
+            "170"
+          ],
+          "bold": false,
+          "codigo": "B. II. 1."
+        },
+        {
+          "rawLabel": "Stavby",
+          "values": [
+            "014",
+            "",
+            "",
+            "",
+            "965"
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Samostatné movité věci a soubory movitých věcí",
+          "values": [
+            "015",
+            "4272",
+            "-2125",
+            "2147",
+            "2731"
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Pěstitelské celky trvalých porostů",
+          "values": [
+            "016",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "4."
+        },
+        {
+          "rawLabel": "Základní stádo a tažná zvířata",
+          "values": [
+            "017",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "5."
+        },
+        {
+          "rawLabel": "Jiný dlouhodobý hmotný majetek",
+          "values": [
+            "018",
+            "125",
+            "-125",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "6."
+        },
+        {
+          "rawLabel": "Nedokončený dlouhodobý hmotný majetek",
+          "values": [
+            "019",
+            "",
+            "",
+            "",
+            "2952"
+          ],
+          "bold": false,
+          "codigo": "7."
+        },
+        {
+          "rawLabel": "Poskytnuté zálohy na dlouhodobý hmotný majetek",
+          "values": [
+            "020",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "8."
+        },
+        {
+          "rawLabel": "Opravná položka k nabytému majetku",
+          "values": [
+            "021",
+            "31582",
+            "-7369",
+            "24213",
+            "26318"
+          ],
+          "bold": false,
+          "codigo": "9."
+        },
+        {
+          "rawLabel": "Dlouhodobý finanční majetek (ř. 23 až 27)",
+          "values": [
+            "022",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "B. III."
+        },
+        {
+          "rawLabel": "Podílové cenné papíry a vklady v podnicích s rozhodujícím vlivem",
+          "values": [
+            "023",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "B. III. 1."
+        },
+        {
+          "rawLabel": "Podílové cenné papíry a vklady v podnicích s podstatným vlivem",
+          "values": [
+            "024",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Ostatní dlouhodobé cenné papíry a vklady",
+          "values": [
+            "025",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Půjčky podnikům ve skupině",
+          "values": [
+            "026",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "4."
+        },
+        {
+          "rawLabel": "Jiný dlouhodobý finanční majetek",
+          "values": [
+            "027",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "5."
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": null,
+      "columns": [
+        "AKTIVA",
+        "řád.",
+        "Běžné účetní období Brutto 1",
+        "Běžné účetní období Korekce 2",
+        "Běžné účetní období Netto 3",
+        "Minulé úč. období Netto 4"
+      ],
+      "rows": [
+        {
+          "rawLabel": "b",
+          "values": [
+            "c",
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "bold": false,
+          "codigo": "a"
+        },
+        {
+          "rawLabel": "Oběžná aktiva (ř. 29 + 36 + 42 + 51)",
+          "values": [
+            "028",
+            "18692",
+            "-2221",
+            "16471",
+            "30470"
+          ],
+          "bold": false,
+          "codigo": "C."
+        },
+        {
+          "rawLabel": "Zásoby (ř. 30 až 35)",
+          "values": [
+            "029",
+            "224",
+            "",
+            "224",
+            "567"
+          ],
+          "bold": false,
+          "codigo": "C. I."
+        },
+        {
+          "rawLabel": "Materiál",
+          "values": [
+            "030",
+            "125",
+            "",
+            "125",
+            "455"
+          ],
+          "bold": false,
+          "codigo": "C. I. 1."
+        },
+        {
+          "rawLabel": "Nedokončená výroba a polotovary",
+          "values": [
+            "031",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Výrobky",
+          "values": [
+            "032",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Zvířata",
+          "values": [
+            "033",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "4."
+        },
+        {
+          "rawLabel": "Zboží",
+          "values": [
+            "034",
+            "99",
+            "",
+            "99",
+            "112"
+          ],
+          "bold": false,
+          "codigo": "5."
+        },
+        {
+          "rawLabel": "Poskytnuté zálohy na zásoby",
+          "values": [
+            "035",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "6."
+        },
+        {
+          "rawLabel": "Dlouhodobé pohledávky (ř. 37 až 41)",
+          "values": [
+            "036",
+            "18277",
+            "-2221",
+            "16056",
+            "16500"
+          ],
+          "bold": false,
+          "codigo": "C. II."
+        },
+        {
+          "rawLabel": "Pohledávky z obchodního styku",
+          "values": [
+            "037",
+            "18238",
+            "-2221",
+            "16017",
+            "16500"
+          ],
+          "bold": false,
+          "codigo": "C. II. 1."
+        },
+        {
+          "rawLabel": "Pohledávky ke společníkům a sdružení",
+          "values": [
+            "038",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Pohledávky v podnicích s rozhod. vlivem",
+          "values": [
+            "039",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Pohledávky v podnicích s podstat. vlivem",
+          "values": [
+            "040",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "4."
+        },
+        {
+          "rawLabel": "Jiné pohledávky",
+          "values": [
+            "041",
+            "39",
+            "",
+            "39",
+            ""
+          ],
+          "bold": false,
+          "codigo": "5."
+        },
+        {
+          "rawLabel": "Krátkodobé pohledávky (ř. 43 až 50)",
+          "values": [
+            "042",
+            "",
+            "",
+            "",
+            "12881"
+          ],
+          "bold": false,
+          "codigo": "C. III."
+        },
+        {
+          "rawLabel": "Pohledávky z obchodního styku",
+          "values": [
+            "043",
+            "",
+            "",
+            "",
+            "12635"
+          ],
+          "bold": false,
+          "codigo": "C. III. 1."
+        },
+        {
+          "rawLabel": "Pohledávky ke společníkům a sdružení",
+          "values": [
+            "044",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Sociální zabezpečení",
+          "values": [
+            "045",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Stát - daňové pohledávky",
+          "values": [
+            "046",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "4."
+        },
+        {
+          "rawLabel": "Odložená daňová pohledávka",
+          "values": [
+            "047",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "5."
+        },
+        {
+          "rawLabel": "Pohledávky v podnicích s rozhod. vlivem",
+          "values": [
+            "048",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "6."
+        },
+        {
+          "rawLabel": "Pohledávky v podnicích s podstat. vlivem",
+          "values": [
+            "049",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "7."
+        },
+        {
+          "rawLabel": "Jiné pohledávky",
+          "values": [
+            "050",
+            "",
+            "",
+            "",
+            "246"
+          ],
+          "bold": false,
+          "codigo": "8."
+        },
+        {
+          "rawLabel": "Finanční majetek (ř. 52 až 54)",
+          "values": [
+            "051",
+            "191",
+            "",
+            "191",
+            "522"
+          ],
+          "bold": false,
+          "codigo": "C. IV."
+        },
+        {
+          "rawLabel": "Peníze",
+          "values": [
+            "052",
+            "43",
+            "",
+            "43",
+            "94"
+          ],
+          "bold": false,
+          "codigo": "C. IV. 1."
+        },
+        {
+          "rawLabel": "Účty v bankách",
+          "values": [
+            "053",
+            "148",
+            "",
+            "148",
+            "428"
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Krátkodobý finanční majetek",
+          "values": [
+            "054",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Ostatní aktiva - přechodné účty aktiv (ř. 56 až 60)",
+          "values": [
+            "055",
+            "2245",
+            "",
+            "2245",
+            "1185"
+          ],
+          "bold": false,
+          "codigo": "D."
+        },
+        {
+          "rawLabel": "Časové rozlišení (ř. 57 až 59)",
+          "values": [
+            "056",
+            "2245",
+            "",
+            "2245",
+            "1180"
+          ],
+          "bold": false,
+          "codigo": "D. I."
+        },
+        {
+          "rawLabel": "Náklady příštích období",
+          "values": [
+            "057",
+            "1712",
+            "",
+            "1712",
+            "587"
+          ],
+          "bold": false,
+          "codigo": "D. I. 1."
+        },
+        {
+          "rawLabel": "Příjmy příštích období",
+          "values": [
+            "058",
+            "533",
+            "",
+            "533",
+            "593"
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Kursové rozdíly aktivní",
+          "values": [
+            "059",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Dohadné účty aktivní",
+          "values": [
+            "060",
+            "",
+            "",
+            "",
+            "5"
+          ],
+          "bold": false,
+          "codigo": "D. II."
+        },
+        {
+          "rawLabel": "Kontrolní číslo (ř. 01 až 60)",
+          "values": [
+            "999",
+            "227764",
+            "-47460",
+            "180304",
+            "259159"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": null,
+      "columns": [
+        "PASIVA b",
+        "řád. c",
+        "Stav v běžném účet. období 5",
+        "Stav v minulém účet. období 6"
+      ],
+      "rows": [
+        {
+          "rawLabel": "PASIVA CELKEM (ř. 62 + 79 + 105)",
+          "values": [
+            "061",
+            "45076",
+            "64791"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Vlastní kapitál (ř. 63 + 56 + 71 + 75 + 78)",
+          "values": [
+            "062",
+            "17653",
+            "15061"
+          ],
+          "bold": false,
+          "codigo": "A."
+        },
+        {
+          "rawLabel": "Základní kapitál (ř. 64 + 65)",
+          "values": [
+            "063",
+            "30000",
+            "30000"
+          ],
+          "bold": false,
+          "codigo": "A. I."
+        },
+        {
+          "rawLabel": "Základní kapitál",
+          "values": [
+            "064",
+            "30000",
+            "30000"
+          ],
+          "bold": false,
+          "codigo": "A. I. 1."
+        },
+        {
+          "rawLabel": "Vlastní akcie a vlastní obchodní podíly",
+          "values": [
+            "065",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Kapitálové fondy (ř. 67 až 70)",
+          "values": [
+            "066",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "A. II."
+        },
+        {
+          "rawLabel": "Emisní éžio",
+          "values": [
+            "067",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "A. II. 1."
+        },
+        {
+          "rawLabel": "Ostatní kapitálové fondy",
+          "values": [
+            "068",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Oceňovací rozdíly z přecenění majetku",
+          "values": [
+            "069",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "070",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "4."
+        },
+        {
+          "rawLabel": "Fondy ze zisku (ř. 72 + 73 + 74)",
+          "values": [
+            "071",
+            "27",
+            "27"
+          ],
+          "bold": false,
+          "codigo": "A. III."
+        },
+        {
+          "rawLabel": "Zákonný rezervní fond",
+          "values": [
+            "072",
+            "27",
+            "27"
+          ],
+          "bold": false,
+          "codigo": "A. III. 1."
+        },
+        {
+          "rawLabel": "Nedělitelný fond",
+          "values": [
+            "073",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Statutární a ostatní fondy",
+          "values": [
+            "074",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Hospodářský výsledek minulých let (ř. 76 + 77)",
+          "values": [
+            "075",
+            "-14967",
+            "-712"
+          ],
+          "bold": false,
+          "codigo": "A. IV."
+        },
+        {
+          "rawLabel": "Nerozdělený zisk minulých let",
+          "values": [
+            "076",
+            "103",
+            "103"
+          ],
+          "bold": false,
+          "codigo": "A. IV. 1."
+        },
+        {
+          "rawLabel": "Neuhrazená ztráta minulých let",
+          "values": [
+            "077",
+            "-15070",
+            "-815"
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Hospodářský výsledek běžného účetního období (+/-) (ř. 01 - (+56 - 59 + 64 + 68 + 72 + 98))",
+          "values": [
+            "078",
+            "2593",
+            "-14254"
+          ],
+          "bold": false,
+          "codigo": "A. V."
+        },
+        {
+          "rawLabel": "Cizí zdroje (ř. 80 + 84 + 91 + 101)",
+          "values": [
+            "079",
+            "16401",
+            "30684"
+          ],
+          "bold": false,
+          "codigo": "B."
+        },
+        {
+          "rawLabel": "Rezervy (ř. 81 + 82 + 83)",
+          "values": [
+            "080",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "B. I."
+        },
+        {
+          "rawLabel": "Rezervy zákonné",
+          "values": [
+            "081",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "B. I. 1."
+        },
+        {
+          "rawLabel": "Rezerva na kursové ztráty",
+          "values": [
+            "082",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Ostatní rezervy",
+          "values": [
+            "083",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Dlouhodobé závazky (ř. 85 až 90)",
+          "values": [
+            "084",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "B. II."
+        },
+        {
+          "rawLabel": "Závazky k podnikům s rozhodujícím vlivem",
+          "values": [
+            "085",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "B. II. 1."
+        },
+        {
+          "rawLabel": "Závazky k podnikům s podstatným vlivem",
+          "values": [
+            "086",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Dlouhodobé přijaté zálohy",
+          "values": [
+            "087",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Emitované dluhopisy",
+          "values": [
+            "088",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "4."
+        },
+        {
+          "rawLabel": "Dlouhodobé směnky k úhradě",
+          "values": [
+            "089",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "5."
+        },
+        {
+          "rawLabel": "Jiné dlouhodobé závazky",
+          "values": [
+            "090",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "6."
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 14,
+      "section": null,
+      "columns": [
+        "PASIVA b",
+        "řád. c",
+        "Stav v běžném účet. období 5",
+        "Stav v minulém účet. období 6"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Krátkodobé závazky (ř. 92 až 100)",
+          "values": [
+            "091",
+            "12651",
+            "25682"
+          ],
+          "bold": false,
+          "codigo": "B. III."
+        },
+        {
+          "rawLabel": "Závazky z obchodního styku",
+          "values": [
+            "092",
+            "9053",
+            "9974"
+          ],
+          "bold": false,
+          "codigo": "B. III. 1."
+        },
+        {
+          "rawLabel": "Závazky ke společníkům a sdružení",
+          "values": [
+            "093",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Závazky k zaměstnancům",
+          "values": [
+            "094",
+            "87",
+            "77"
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Závazky ze sociálního zabezpečení",
+          "values": [
+            "095",
+            "226",
+            "83"
+          ],
+          "bold": false,
+          "codigo": "4."
+        },
+        {
+          "rawLabel": "Stát - daňové závazky a dotace",
+          "values": [
+            "096",
+            "138",
+            "3034"
+          ],
+          "bold": false,
+          "codigo": "5."
+        },
+        {
+          "rawLabel": "Odložený daňový závazek",
+          "values": [
+            "097",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "6."
+        },
+        {
+          "rawLabel": "Závazky k podnikům s rozhodujícím vlivem",
+          "values": [
+            "098",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "7."
+        },
+        {
+          "rawLabel": "Závazky k podnikům s podstatným vlivem",
+          "values": [
+            "099",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "8."
+        },
+        {
+          "rawLabel": "Jiné závazky",
+          "values": [
+            "100",
+            "3147",
+            "12514"
+          ],
+          "bold": false,
+          "codigo": "9."
+        },
+        {
+          "rawLabel": "Bankovní úvěry a výpomoci (ř. 102 až 104)",
+          "values": [
+            "101",
+            "3750",
+            "5002"
+          ],
+          "bold": false,
+          "codigo": "B. IV."
+        },
+        {
+          "rawLabel": "Bankovní úvěry dlouhodobé",
+          "values": [
+            "102",
+            "3750",
+            "5001"
+          ],
+          "bold": false,
+          "codigo": "B. IV. 1."
+        },
+        {
+          "rawLabel": "Běžné bankovní úvěry",
+          "values": [
+            "103",
+            "",
+            "1"
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Krátkodobé finanční výpomoci",
+          "values": [
+            "104",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Ostatní pasiva - přechodné účty pasiv (ř. 106 + 110)",
+          "values": [
+            "105",
+            "11022",
+            "19046"
+          ],
+          "bold": false,
+          "codigo": "C."
+        },
+        {
+          "rawLabel": "Časové rozlišení (ř. 107 až 109)",
+          "values": [
+            "106",
+            "10791",
+            "18100"
+          ],
+          "bold": false,
+          "codigo": "C. I."
+        },
+        {
+          "rawLabel": "Výdaje příštích období",
+          "values": [
+            "107",
+            "958",
+            "18100"
+          ],
+          "bold": false,
+          "codigo": "C. I. 1."
+        },
+        {
+          "rawLabel": "Výnosy příštích období",
+          "values": [
+            "108",
+            "9833",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Kursové rozdíly pasivní",
+          "values": [
+            "109",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Dohadné účty pasivní",
+          "values": [
+            "110",
+            "231",
+            "946"
+          ],
+          "bold": false,
+          "codigo": "C. II."
+        },
+        {
+          "rawLabel": "Kontrolní číslo (ř. 61 až 110)",
+          "values": [
+            "999",
+            "177480",
+            "272472"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": null,
+      "columns": [
+        "Odesláno dne:",
+        "Podpis statutárního orgánu nebo fyzické osoby, která je účetní jednotkou",
+        "Osoba odpovědná za účetnictví (jméno a podpis)",
+        "Osoba odpovědná za účetní závěrku (jméno a podpis)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "28.2.2002",
+          "values": [
+            "[podpis]",
+            "[podpis] P. Peřina",
+            "[podpis] P. Peřina; tel.: ; linka:"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "# VÝKAZ ZISKŮ A ZTRÁT v plném rozsahu",
+      "columns": [
+        "Čís.f.",
+        "IKF",
+        "Rok",
+        "Měsíc",
+        "IČO"
+      ],
+      "rows": [
+        {
+          "rawLabel": "01",
+          "values": [
+            "803095",
+            "2001",
+            "12",
+            "25023144"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "FK JABLONEC 97 a.s.",
+      "columns": [
+        "TEXT b",
+        "Číslo řádku c",
+        "Skutečnost v účetním období – sledovaném 1",
+        "Skutečnost v účetním období – minulém 2"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Tržby za prodej zboží",
+          "values": [
+            "01",
+            "85",
+            "34"
+          ],
+          "bold": false,
+          "codigo": "I."
+        },
+        {
+          "rawLabel": "Náklady vynaložené na prodané zboží",
+          "values": [
+            "02",
+            "46",
+            "23"
+          ],
+          "bold": false,
+          "codigo": "A."
+        },
+        {
+          "rawLabel": "Obchodní marže (ř. 01 - 02)",
+          "values": [
+            "03",
+            "39",
+            "11"
+          ],
+          "bold": false,
+          "codigo": "+"
+        },
+        {
+          "rawLabel": "Výkony (ř. 05 + 06 + 07)",
+          "values": [
+            "04",
+            "1517",
+            "1624"
+          ],
+          "bold": false,
+          "codigo": "II."
+        },
+        {
+          "rawLabel": "Tržby za prodej vlastních výrobků a služeb",
+          "values": [
+            "05",
+            "1517",
+            "1624"
+          ],
+          "bold": false,
+          "codigo": "II. 1."
+        },
+        {
+          "rawLabel": "Změna stavu vnitropodnikových zásob vlastní výroby",
+          "values": [
+            "06",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Aktivace",
+          "values": [
+            "07",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Výkonová spotřeba (ř. 09 + 10)",
+          "values": [
+            "08",
+            "20507",
+            "16069"
+          ],
+          "bold": false,
+          "codigo": "B."
+        },
+        {
+          "rawLabel": "Spotřeba materiálu a energie",
+          "values": [
+            "09",
+            "2178",
+            "3155"
+          ],
+          "bold": false,
+          "codigo": "B. 1."
+        },
+        {
+          "rawLabel": "Služby",
+          "values": [
+            "10",
+            "18329",
+            "12914"
+          ],
+          "bold": false,
+          "codigo": "B. 2."
+        },
+        {
+          "rawLabel": "Přidaná hodnota (ř. 03 + 04 - 08)",
+          "values": [
+            "11",
+            "-18951",
+            "-14434"
+          ],
+          "bold": false,
+          "codigo": "+"
+        },
+        {
+          "rawLabel": "Osobní náklady (ř. 13 až 16)",
+          "values": [
+            "12",
+            "3638",
+            "2346"
+          ],
+          "bold": false,
+          "codigo": "C."
+        },
+        {
+          "rawLabel": "Mzdové náklady",
+          "values": [
+            "13",
+            "2657",
+            "1690"
+          ],
+          "bold": false,
+          "codigo": "C. 1."
+        },
+        {
+          "rawLabel": "Odměny členům orgánů společnosti a družstva",
+          "values": [
+            "14",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "C. 2."
+        },
+        {
+          "rawLabel": "Náklady na sociální zabezpečení",
+          "values": [
+            "15",
+            "915",
+            "585"
+          ],
+          "bold": false,
+          "codigo": "C. 3."
+        },
+        {
+          "rawLabel": "Sociální náklady",
+          "values": [
+            "16",
+            "66",
+            "71"
+          ],
+          "bold": false,
+          "codigo": "C. 4."
+        },
+        {
+          "rawLabel": "Daně a poplatky",
+          "values": [
+            "17",
+            "174",
+            "48"
+          ],
+          "bold": false,
+          "codigo": "D."
+        },
+        {
+          "rawLabel": "Odpisy dlouhodobého nehmotného a hmotného majetku",
+          "values": [
+            "18",
+            "876",
+            "808"
+          ],
+          "bold": false,
+          "codigo": "E."
+        },
+        {
+          "rawLabel": "Tržby z prodeje dlouhodobého majetku a materiálu",
+          "values": [
+            "19",
+            "1026",
+            "4377"
+          ],
+          "bold": false,
+          "codigo": "III."
+        },
+        {
+          "rawLabel": "Zůstatková cena prodaného dlouhodobého majetku a materiálu",
+          "values": [
+            "20",
+            "4000",
+            "5129"
+          ],
+          "bold": false,
+          "codigo": "F."
+        },
+        {
+          "rawLabel": "Zúčtování rezerv a časového rozlišení provozních výnosů",
+          "values": [
+            "21",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "IV."
+        },
+        {
+          "rawLabel": "Tvorba rezerv a časového rozlišení provozních nákladů",
+          "values": [
+            "22",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "G."
+        },
+        {
+          "rawLabel": "Zúčtování opravných položek do provozních výnosů",
+          "values": [
+            "23",
+            "12759",
+            "126"
+          ],
+          "bold": false,
+          "codigo": "V."
+        },
+        {
+          "rawLabel": "Zúčtování opravných položek do provozních nákladů",
+          "values": [
+            "24",
+            "2818",
+            "16124"
+          ],
+          "bold": false,
+          "codigo": "H."
+        },
+        {
+          "rawLabel": "Ostatní provozní výnosy",
+          "values": [
+            "25",
+            "75789",
+            "69856"
+          ],
+          "bold": false,
+          "codigo": "VI."
+        },
+        {
+          "rawLabel": "Ostatní provozní náklady",
+          "values": [
+            "26",
+            "54721",
+            "46567"
+          ],
+          "bold": false,
+          "codigo": "I."
+        },
+        {
+          "rawLabel": "Převod provozních výnosů",
+          "values": [
+            "27",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "VII."
+        },
+        {
+          "rawLabel": "Převod provozních nákladů",
+          "values": [
+            "28",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "J."
+        },
+        {
+          "rawLabel": "Provozní hospodářský výsledek [(ř.11-12-17-18+19-20+21-22+23-24+25-26+(-27)-(-28)]",
+          "values": [
+            "29",
+            "4396",
+            "-11097"
+          ],
+          "bold": false,
+          "codigo": "*"
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 16,
+      "section": null,
+      "columns": [
+        "TEXT b",
+        "Číslo řádku c",
+        "Skutečnost v účetním období – sledovaném 1",
+        "Skutečnost v účetním období – minulém 2"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Tržby z prodeje cenných papírů a vkladů",
+          "values": [
+            "30",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "VIII."
+        },
+        {
+          "rawLabel": "Prodané cenné papíry a vklady",
+          "values": [
+            "31",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "K."
+        },
+        {
+          "rawLabel": "Výnosy z dlouhodobého finančního majetku (ř. 33 + 34 + 35)",
+          "values": [
+            "32",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "IX."
+        },
+        {
+          "rawLabel": "Výnosy z cenných papírů a vkladů v podnicích ve skupině",
+          "values": [
+            "33",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "IX. 1."
+        },
+        {
+          "rawLabel": "Výnosy z ostatních dlouhodobých cenných papírů a vkladů",
+          "values": [
+            "34",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Výnosy z ostatního dlouhodobého finančního majetku",
+          "values": [
+            "35",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "3."
+        },
+        {
+          "rawLabel": "Výnosy z krátkodobého finančního majetku",
+          "values": [
+            "36",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "X."
+        },
+        {
+          "rawLabel": "Zúčtování rezerv do finančních výnosů",
+          "values": [
+            "37",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "XI."
+        },
+        {
+          "rawLabel": "Tvorba rezerv na finanční náklady",
+          "values": [
+            "38",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "L."
+        },
+        {
+          "rawLabel": "Zúčtování opravných položek do finančních výnosů",
+          "values": [
+            "39",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "XII."
+        },
+        {
+          "rawLabel": "Zúčtování opravných položek do finančních nákladů",
+          "values": [
+            "40",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "M."
+        },
+        {
+          "rawLabel": "Výnosové úroky",
+          "values": [
+            "41",
+            "",
+            "1"
+          ],
+          "bold": false,
+          "codigo": "XIII."
+        },
+        {
+          "rawLabel": "Nákladové úroky",
+          "values": [
+            "42",
+            "1902",
+            "2357"
+          ],
+          "bold": false,
+          "codigo": "N."
+        },
+        {
+          "rawLabel": "Ostatní finanční výnosy",
+          "values": [
+            "43",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "XIV."
+        },
+        {
+          "rawLabel": "Ostatní finanční náklady",
+          "values": [
+            "44",
+            "406",
+            "380"
+          ],
+          "bold": false,
+          "codigo": "O."
+        },
+        {
+          "rawLabel": "Převod finančních výnosů",
+          "values": [
+            "45",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "XV."
+        },
+        {
+          "rawLabel": "Převod finančních nákladů",
+          "values": [
+            "46",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "P."
+        },
+        {
+          "rawLabel": "Hospodářský výsledek z finančních operací [(ř.30-31+32+38+37-38+39-40+41-42+43-44+(-45)-(-46)]",
+          "values": [
+            "47",
+            "-2308",
+            "-2736"
+          ],
+          "bold": false,
+          "codigo": "*"
+        },
+        {
+          "rawLabel": "Daň z příjmů za běžnou činnost (ř. 49 + 50)",
+          "values": [
+            "48",
+            "",
+            "532"
+          ],
+          "bold": false,
+          "codigo": "R."
+        },
+        {
+          "rawLabel": "- splatná",
+          "values": [
+            "49",
+            "",
+            "532"
+          ],
+          "bold": false,
+          "codigo": "R. 1."
+        },
+        {
+          "rawLabel": "- odložená",
+          "values": [
+            "50",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "51",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Hospodářský výsledek za běžnou činnost (ř. 29 + 47 - 48)",
+          "values": [
+            "52",
+            "2088",
+            "-14365"
+          ],
+          "bold": true,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Mimořádné výnosy",
+          "values": [
+            "53",
+            "811",
+            "111"
+          ],
+          "bold": false,
+          "codigo": "XVI."
+        },
+        {
+          "rawLabel": "Mimořádné náklady",
+          "values": [
+            "54",
+            "306",
+            ""
+          ],
+          "bold": false,
+          "codigo": "S."
+        },
+        {
+          "rawLabel": "Daň z příjmů z mimořádné činnosti (ř. 56 + 57)",
+          "values": [
+            "55",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "T."
+        },
+        {
+          "rawLabel": "- splatná",
+          "values": [
+            "56",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "T. 1."
+        },
+        {
+          "rawLabel": "- odložená",
+          "values": [
+            "57",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "2."
+        },
+        {
+          "rawLabel": "Mimořádný hospodářský výsledek (ř. 53 - 54 - 55)",
+          "values": [
+            "58",
+            "505",
+            "111"
+          ],
+          "bold": false,
+          "codigo": "*"
+        },
+        {
+          "rawLabel": "Převod podílu na hospodářském výsledku společníkům (+ / -)",
+          "values": [
+            "59",
+            "",
+            ""
+          ],
+          "bold": false,
+          "codigo": "U."
+        },
+        {
+          "rawLabel": "Hospodářský výsledek za účetní období (+ / -) (ř. 52 + 58 - 59)",
+          "values": [
+            "60",
+            "2593",
+            "-14254"
+          ],
+          "bold": true,
+          "codigo": "*"
+        },
+        {
+          "rawLabel": "Hospodářský výsledek před zdaněním (+ / -) (ř. 29 + 47 + 53 - 54)",
+          "values": [
+            "61",
+            "2593",
+            "-13722"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Kontrolní číslo (ř. 01 až 61)",
+          "values": [
+            "99",
+            "197998",
+            "116597"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 16,
+      "section": null,
+      "columns": [
+        "Odesláno dne:",
+        "Podpis statutárního orgánu nebo fyzické osoby, která je účetní jednotkou",
+        "Osoba odpovědná za účetnictví (jméno a podpis)",
+        "Osoba odpovědná za účetní závěrku (jméno a podpis)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "28.2.2002",
+          "values": [
+            "",
+            "[podpis] P. Peřina",
+            "[podpis] P. Peřina; tel.: ; linka:"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": null,
+      "columns": [
+        "Společnost nenabyla majetku v cizí měně, kurzové rozdíly výsledkové nebyly zúčtovány.",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "III. Doplňující informace k rozvaze a výkazu zisků a ztrát obsažené v příloze.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a/ Souhrná výše majetku neuvedená v rozvaze v poř. cenách: společnost nemá takový majetek",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b/ Rozpis hmotného majetku, který je zatížen zástavním právem: - společnost nemá takový majetek",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "c/ Majetek v operativním nájmu zachycený v operativní evidenci. - společnost nemá majetek ve finančním nájmu,",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "d/ Přehled majetku, jehož tržní ocenění se výrazně liší od ocenění v účetnictví. - společnost nemá takový majetek",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "e/ Počet a nominální hodnota investičních majetkových cenných papírů:",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Majetkové CP a investice (včetně fin. výnosů) a/ v tuzemsku : ne b/ v zahraničí : ne",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "f/ Rozdíl mezi vstupní cenou ve smyslu par. 29 odst. 1 písm.c/ zák. č. 586/92 Sb. o daních z příjmu a pořizovací cenou uvedenou v účetnictví u nepeněžních vkladů do obchodních společností. - všechny vklady byly peněžní",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Pohledávky z obchodního styku:",
+          "values": [
+            "18238 tis.Kč"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a/ Pohledávky po lhůtě splatnosti",
+          "values": [
+            "2621 tis.Kč"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b/ Pohledávky v cizí měně: společnost nemá pohledávky v cizí měně",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "c/ Pohledávky vyúčtované podnikům ve skupině, popř. půjčky apod.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "d/ Pohledávky kryté zástavním právem: ne",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3/ Vlastní kapitál: a/ Popis změn vlastního kapitálu v průběhu účetního období: Vlastní kapitál společnosti se k 31.12.2001: a/ zvýšil hodnotu zisku vykázaného k 31.12.2000.",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b/ Rozdělení zisku: - společnost nevytvořila zisk za rok 2001, nenastal případ",
+          "values": [
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 23,
+      "section": "# Přehled o peněžních tocích / ### k 31.12. 2001",
+      "columns": [
+        "Rok",
+        "Měsíc",
+        "IČO"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2001",
+          "values": [
+            "12",
+            "25023144"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "Název a sídlo účetní jednotky / FK JABLONEC 97 a.s.",
+      "columns": [
+        "Položka výkazu",
+        "v tisících Kč"
+      ],
+      "rows": [
+        {
+          "rawLabel": "P. Stav peněžních prostř. a peněžních ekvivalentů na začátku účetního období",
+          "values": [
+            "522"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Z. Účetní zisk nebo ztráta z běžné činnosti před zdaněním",
+          "values": [
+            "2088"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.1 Úpravy o nepeněžní operace",
+          "values": [
+            "-16432"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.1.1 Odpisy stálých aktiv, pohledávek a umořování opr. položky k majetku",
+          "values": [
+            "2981"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.1.2 Změna stavu opravných položek, rezerv a změna zůstatků časového rozlišení",
+          "values": [
+            "-21315"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.1.3 Zisk (-), ztráta (+) z prodeje stálých aktiv",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.1.4 Výnosy z dividend a podílů na zisku",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.1.5 Vyúčtované nákladové a výnosové úroky",
+          "values": [
+            "1902"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.* Čistý peněžní tok z provozní činnosti před zdaněním, změnami pracovního kapitálu a mimořádnými položkami",
+          "values": [
+            "-14344"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.2 Změna potřeby pracovního kapitálu",
+          "values": [
+            "12682"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.2.1 Změna stavu pohledávek z provozní činnosti",
+          "values": [
+            "25371"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.2.2 Změna stavu krátkodobých závazků z provozní činnosti",
+          "values": [
+            "-13032"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.2.3 Změna stavu zásob",
+          "values": [
+            "343"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A. Čistý peněžní tok z provozní činnosti před zdaněním a mimořádnými položkami",
+          "values": [
+            "-1662"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A.3 Výdaje z plateb úroků s výjimkou kapitalizovaných úroků",
+          "values": [
+            "-1902"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.4 Přijaté úroky",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.5 Zaplacená daň z příjmu za běžnou činnost a za doměrky daně za minulá období",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.6 Příjmy a výdaje spojené s mimořádnými účetními případy",
+          "values": [
+            "505"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A.* Čistý peněžní tok z provozní činnosti",
+          "values": [
+            "-3059"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "B.1 Výdaje spojené s pořízením stálých aktiv",
+          "values": [
+            "3979"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B.2 Příjmy z prodeje stálých aktiv",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B.3 Půjčky a úvěry spřízněným osobám",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B.* Čistý peněžní tok vztahující se k investiční činnosti",
+          "values": [
+            "3979"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "C.1 Změna stavu dlouhodobých, popř. krátkodobých závazků",
+          "values": [
+            "-1251"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C.2 Dopady změn vlastního kapitálu na peněžní prostředky",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C.2.1 Zvýšení peněžních prostředků a peněž. ekvivalentů z titulu zvýšení základního kapitálu, event. rezervního fondu včetně složených záloh na toto zvýšení",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C.2.2 Vyplacení podílu na vlastním kapitálu společníkům",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C.2.3 Peněžní dary a dotace do vlastního kapitálu a další vklady pen. prostředků společníků a akcionářů",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C.2.4 Úhrada ztráty společníky",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C.2.5 Přímé platby na vrub fondů",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C.2.6 Vyplacené dividendy nebo podíly na zisku včetně zaplacené srážkové daně",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C.3 Přijaté dividendy a podíly na zisku",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C.* Čistý peněžní tok vztahující se k finanční činnosti",
+          "values": [
+            "-1251"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "F. Čisté zvýšení, resp. snížení peněžních prostředků",
+          "values": [
+            "-331"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R. Stav peněžních prostředků a pen. ekvivalentů na konci období",
+          "values": [
+            "191"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/jablonec-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"jablonec\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+  ]
+}

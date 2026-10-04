@@ -1,0 +1,259 @@
+{
+  "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2017.md",
+  "pdf": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2017.pdf",
+  "club": "udechile-cl",
+  "year": 2017,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:57:25.514Z",
+  "tieOuts": {
+    "cierran": 14,
+    "noCierran": 11
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "9 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 21,
+    "notasUsadas": [
+      "42"
+    ]
+  },
+  "ladoConocido": 20,
+  "rubros": [
+    {
+      "label": "Gasto de administración",
+      "lado": "expense",
+      "page": 7,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al / costo amortizado",
+      "values": [
+        -3445.718
+      ],
+      "origen": "estado 10",
+      "glosa": "Gasto de administración"
+    },
+    {
+      "label": "Ingresos financieros",
+      "lado": "revenue",
+      "page": 7,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al / costo amortizado",
+      "values": [
+        53.907
+      ],
+      "origen": "estado 10",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Costos financieros",
+      "lado": "expense",
+      "page": 7,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al / costo amortizado",
+      "values": [
+        -369.247
+      ],
+      "origen": "estado 10",
+      "glosa": "Costos financieros"
+    },
+    {
+      "label": "Borderó (costos directos)",
+      "lado": "expense",
+      "page": 72,
+      "section": "22.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        1163.051
+      ],
+      "origen": "estado 42",
+      "glosa": "Borderó (costos directos)"
+    },
+    {
+      "label": "Remuneraciones",
+      "lado": "expense",
+      "page": 72,
+      "section": "22.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        7378.61
+      ],
+      "origen": "estado 42",
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Amortización de pases",
+      "lado": "expense",
+      "page": 72,
+      "section": "22.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        4203.964
+      ],
+      "origen": "estado 42",
+      "glosa": "Amortización de pases"
+    },
+    {
+      "label": "Costo de venta pases de jugadores",
+      "lado": "expense",
+      "page": 72,
+      "section": "22.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        1172.17
+      ],
+      "origen": "estado 42",
+      "glosa": "Costo de venta pases de jugadores"
+    },
+    {
+      "label": "Otros gastos de operación",
+      "lado": "expense",
+      "page": 72,
+      "section": "22.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        1948.75
+      ],
+      "origen": "estado 42",
+      "glosa": "Otros gastos de operación"
+    },
+    {
+      "label": "Costo no amortizado",
+      "lado": "expense",
+      "page": 72,
+      "section": "Al 31 de Diciembre de 2017 y 2016 el detalle de los costos de venta de pases de / jugadores: / 31.12.2017        31.12.2016 / M$                   M$",
+      "values": [
+        0.968179
+      ],
+      "origen": "estado 43",
+      "glosa": "Costo no amortizado"
+    },
+    {
+      "label": "Indemnización por término anticipado de contrato",
+      "lado": null,
+      "page": 72,
+      "section": "Al 31 de Diciembre de 2017 y 2016 el detalle de los costos de venta de pases de / jugadores: / 31.12.2017        31.12.2016 / M$                   M$",
+      "values": [
+        0.031503
+      ],
+      "origen": "estado 43",
+      "glosa": "Indemnización por término anticipado de contrato"
+    },
+    {
+      "label": "Otros costos (1)",
+      "lado": "expense",
+      "page": 72,
+      "section": "Al 31 de Diciembre de 2017 y 2016 el detalle de los costos de venta de pases de / jugadores: / 31.12.2017        31.12.2016 / M$                   M$",
+      "values": [
+        0.172488
+      ],
+      "origen": "estado 43",
+      "glosa": "Otros costos (1)"
+    },
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR EL PERIODO DE 1 DE ENERO AL 31 DE DICIEMBRE DE 2017 Y 2016",
+      "values": [
+        15379.286
+      ],
+      "origen": "estado 9",
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros activos no financieros no corrientes",
+      "lado": "revenue",
+      "page": 5,
+      "section": "129.662       106.378 / para su disposición clasificados como / mantenidos para la venta / Activos corrientes totales                                       5.184.195     5.144.298 / Activos no corrientes",
+      "values": [
+        905.016
+      ],
+      "origen": "estado 2",
+      "glosa": "Otros activos no financieros no corrientes"
+    },
+    {
+      "label": "Activos intangibles distintos de la plusvalía",
+      "lado": "revenue",
+      "page": 5,
+      "section": "129.662       106.378 / para su disposición clasificados como / mantenidos para la venta / Activos corrientes totales                                       5.184.195     5.144.298 / Activos no corrientes",
+      "values": [
+        10411.233
+      ],
+      "origen": "estado 2",
+      "glosa": "Activos intangibles distintos de la plusvalía"
+    },
+    {
+      "label": "Propiedades, planta y equipo",
+      "lado": "revenue",
+      "page": 5,
+      "section": "129.662       106.378 / para su disposición clasificados como / mantenidos para la venta / Activos corrientes totales                                       5.184.195     5.144.298 / Activos no corrientes",
+      "values": [
+        2920.903
+      ],
+      "origen": "estado 2",
+      "glosa": "Propiedades, planta y equipo"
+    },
+    {
+      "label": "Activos por impuestos diferidos",
+      "lado": "expense",
+      "page": 5,
+      "section": "129.662       106.378 / para su disposición clasificados como / mantenidos para la venta / Activos corrientes totales                                       5.184.195     5.144.298 / Activos no corrientes",
+      "values": [
+        9431.36
+      ],
+      "origen": "estado 2",
+      "glosa": "Activos por impuestos diferidos"
+    },
+    {
+      "label": "Borderó",
+      "lado": "revenue",
+      "page": 71,
+      "section": "21.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        4395.819
+      ],
+      "origen": "estado 40",
+      "glosa": "Borderó"
+    },
+    {
+      "label": "Publicidad",
+      "lado": "revenue",
+      "page": 71,
+      "section": "21.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        4817.197
+      ],
+      "origen": "estado 40",
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Derechos de T.V.",
+      "lado": "revenue",
+      "page": 71,
+      "section": "21.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        3198.177
+      ],
+      "origen": "estado 40",
+      "glosa": "Derechos de T.V."
+    },
+    {
+      "label": "jugadores",
+      "lado": "revenue",
+      "page": 71,
+      "section": "Ingresos por transferencias de pases de",
+      "values": [
+        2336.867
+      ],
+      "origen": "estado 41",
+      "glosa": "jugadores"
+    },
+    {
+      "label": "Ingresos varios",
+      "lado": "revenue",
+      "page": 71,
+      "section": "Ingresos por transferencias de pases de",
+      "values": [
+        631.226
+      ],
+      "origen": "estado 41",
+      "glosa": "Ingresos varios"
+    }
+  ]
+}

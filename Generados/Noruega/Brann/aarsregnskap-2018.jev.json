@@ -1,0 +1,1524 @@
+{
+ "md": "Clubes/Noruega/Brann/aarsregnskap-2018.md",
+ "generatedAt": "2026-09-30T04:30:43.954Z",
+ "rubros": [
+  {
+   "label": "Inntekt på investering i datterselskap og tilknyttet selskap",
+   "lado": null,
+   "page": 2,
+   "section": "SPORTSKLUBBEN BRANN / ## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "lump_football_operations",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.85
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "matchday_competition",
+     0.04
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Driftsresultat",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.25,
+   "top3": [
+    [
+     "other_income",
+     0.29000000000000004
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.23
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "depreciation",
+     0.74
+    ],
+    [
+     "player_amortisation",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1700
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Forretningsadresse:",
+   "lado": null,
+   "page": 1,
+   "section": "# ÅRSREGNSKAP FOR REGNSKAPSÅRET 2018 - GENERELL INFORMASJON / # Enheten",
+   "choice": "admin_general_expense",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "other_income",
+     0.14
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Ordinært resultat etter skattekostnad",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5700000000000001
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Netto finans",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_income",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "lump_football_operations",
+     0.18000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Årsresultat",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Overføringer til/fra annen egenkapital",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1509
+  },
+  {
+   "label": "Rentekostnad til foretak i samme konsern",
+   "lado": null,
+   "page": 2,
+   "section": "SPORTSKLUBBEN BRANN / ## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1449
+  },
+  {
+   "label": "Varekostnad",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.22,
+   "top3": [
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.24
+    ],
+    [
+     "match_organisation_expense",
+     0.21
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "2017",
+   "lado": "expense",
+   "page": 33,
+   "section": "BRANN / ## Note 23 – Andre driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ],
+    [
+     "wages_squad",
+     0.11
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "15 226 417",
+   "lado": "revenue",
+   "page": 25,
+   "section": "## Note 4 - Andre driftsinntekter",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "broadcasting",
+     0.11
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Skattekostnad på ordinært resultat",
+   "lado": null,
+   "page": 5,
+   "section": "SPORTSKLUBBEN BRANN / # KONSERNRESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "112 286 055",
+   "lado": null,
+   "page": 17,
+   "section": "BRANN / # Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "lump_football_operations",
+     0.31
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "97 059 638",
+   "lado": "revenue",
+   "page": 24,
+   "section": "BRANN / # Note 2 - Bankinnskudd / # Note 3 – Salgsinntekter",
+   "choice": "player_sales",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "player_sales",
+     0.45
+    ],
+    [
+     "lump_football_operations",
+     0.23
+    ],
+    [
+     "other_income",
+     0.21
+    ]
+   ],
+   "tokens": 844
+  },
+  {
+   "label": "0",
+   "lado": "expense",
+   "page": 25,
+   "section": "## Note 5 - Varekostnad",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "wages_squad",
+     0.29
+    ],
+    [
+     "lump_football_operations_expense",
+     0.17
+    ]
+   ],
+   "tokens": 789
+  },
+  {
+   "label": "50 222 347",
+   "lado": "expense",
+   "page": 25,
+   "section": "## Note 7 – Lønnskostnader og godtgjørelser",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 806
+  },
+  {
+   "label": "7 294 391",
+   "lado": null,
+   "page": 17,
+   "section": "BRANN / # Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "lump_football_operations",
+     0.27
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "54 769 136",
+   "lado": "expense",
+   "page": 33,
+   "section": "BRANN / ## Note 23 – Andre driftskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "wages_squad",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "112 285 874",
+   "lado": null,
+   "page": 17,
+   "section": "BRANN / # Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "181",
+   "lado": null,
+   "page": 17,
+   "section": "BRANN / # Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "130 870",
+   "lado": null,
+   "page": 17,
+   "section": "BRANN / # Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "5 868 262",
+   "lado": null,
+   "page": 17,
+   "section": "BRANN / # Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "2 339 920",
+   "lado": null,
+   "page": 17,
+   "section": "BRANN / # Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "3 659 393",
+   "lado": null,
+   "page": 17,
+   "section": "BRANN / # Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "70 917 856",
+   "lado": "revenue",
+   "page": 24,
+   "section": "BRANN / # Note 2 - Bankinnskudd / # Note 3 – Salgsinntekter",
+   "choice": "player_sales",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "player_sales",
+     0.42
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "other_income",
+     0.2
+    ]
+   ],
+   "tokens": 844
+  },
+  {
+   "label": "26 141 782",
+   "lado": "revenue",
+   "page": 24,
+   "section": "BRANN / # Note 2 - Bankinnskudd / # Note 3 – Salgsinntekter",
+   "choice": "player_sales",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "player_sales",
+     0.4
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "other_income",
+     0.21
+    ]
+   ],
+   "tokens": 844
+  },
+  {
+   "label": "1 230 649",
+   "lado": "revenue",
+   "page": 25,
+   "section": "## Note 4 - Andre driftsinntekter",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "broadcasting",
+     0.11
+    ],
+    [
+     "player_sales",
+     0.09
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "3 659 212",
+   "lado": null,
+   "page": 17,
+   "section": "BRANN / # Resultatregnskap",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "lump_football_operations",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "3 475 768",
+   "lado": "revenue",
+   "page": 25,
+   "section": "## Note 4 - Andre driftsinntekter",
+   "choice": "other_income",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "lump_football_operations",
+     0.15
+    ],
+    [
+     "broadcasting",
+     0.1
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "10 520 000",
+   "lado": "revenue",
+   "page": 25,
+   "section": "## Note 4 - Andre driftsinntekter",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.57
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ],
+    [
+     "player_sales",
+     0.11
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "42 074 700",
+   "lado": "expense",
+   "page": 25,
+   "section": "## Note 7 – Lønnskostnader og godtgjørelser",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 806
+  },
+  {
+   "label": "6 855 973",
+   "lado": "expense",
+   "page": 25,
+   "section": "## Note 7 – Lønnskostnader og godtgjørelser",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "wages_squad",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 805
+  },
+  {
+   "label": "255 695",
+   "lado": "expense",
+   "page": 25,
+   "section": "## Note 7 – Lønnskostnader og godtgjørelser",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "50",
+   "lado": "expense",
+   "page": 25,
+   "section": "## Note 7 – Lønnskostnader og godtgjørelser",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 798
+  },
+  {
+   "label": "1 035 979",
+   "lado": "expense",
+   "page": 25,
+   "section": "## Note 7 – Lønnskostnader og godtgjørelser",
+   "choice": "wages_squad",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "wages_squad",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 805
+  },
+  {
+   "label": "Anskaffelseskost 01.01.2018",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Balanseførte leieavtaler vedrører leasing av driftsutstyr.",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 848
+  },
+  {
+   "label": "Tilgang kjøpte driftsmidler",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Balanseførte leieavtaler vedrører leasing av driftsutstyr.",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "stadium_other",
+     0.02
+    ]
+   ],
+   "tokens": 840
+  },
+  {
+   "label": "Avgang solgte driftsmidler",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Balanseførte leieavtaler vedrører leasing av driftsutstyr.",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 839
+  },
+  {
+   "label": "Ferdig avskrevne anleggsmidler - ryddet ut av anleggsregister",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Balanseførte leieavtaler vedrører leasing av driftsutstyr.",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 853
+  },
+  {
+   "label": "Anskaffelseskost 31.12.2018",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Balanseførte leieavtaler vedrører leasing av driftsutstyr.",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 848
+  },
+  {
+   "label": "Akk. avskr./nedskr. 01.01.2018",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Balanseførte leieavtaler vedrører leasing av driftsutstyr.",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 851
+  },
+  {
+   "label": "Akk. avskrivninger 31.12.2018",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Balanseførte leieavtaler vedrører leasing av driftsutstyr.",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 850
+  },
+  {
+   "label": "Korreksjon IB tidligere år",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Balanseførte leieavtaler vedrører leasing av driftsutstyr.",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "Bokført verdi 31.12.2018",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Balanseførte leieavtaler vedrører leasing av driftsutstyr.",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 848
+  },
+  {
+   "label": "Årets avskrivning",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Balanseførte leieavtaler vedrører leasing av driftsutstyr.",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Årets nedskrivning (varekost)",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Balanseførte leieavtaler vedrører leasing av driftsutstyr.",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "lump_football_operations",
+     0.21
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 840
+  },
+  {
+   "label": "Økonomisk levetid",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Balanseførte leieavtaler vedrører leasing av driftsutstyr.",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "Brann Stadion AS",
+   "lado": null,
+   "page": 28,
+   "section": "*Opplysninger om egenkapital og resultat ifølge siste årsregnskap*",
+   "choice": "stadium_other",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "stadium_other",
+     0.72
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "sponsorship_commercial",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1345
+  },
+  {
+   "label": "Stadion Event AS",
+   "lado": null,
+   "page": 28,
+   "section": "*Opplysninger om egenkapital og resultat ifølge siste årsregnskap*",
+   "choice": "stadium_other",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "stadium_other",
+     0.73
+    ],
+    [
+     "sponsorship_commercial",
+     0.22
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1346
+  },
+  {
+   "label": "6 547 133",
+   "lado": "expense",
+   "page": 33,
+   "section": "BRANN / ## Note 23 – Andre driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.21,
+   "top3": [
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "wages_squad",
+     0.19
+    ],
+    [
+     "lump_football_operations_expense",
+     0.19
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "5 693 001",
+   "lado": "expense",
+   "page": 33,
+   "section": "BRANN / ## Note 23 – Andre driftskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.2,
+   "top3": [
+    [
+     "wages_squad",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "lump_football_operations_expense",
+     0.19
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "13 288 211",
+   "lado": "expense",
+   "page": 33,
+   "section": "BRANN / ## Note 23 – Andre driftskostnader",
+   "choice": "wages_squad",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "wages_squad",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "lump_football_operations_expense",
+     0.17
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "18 677 276",
+   "lado": "expense",
+   "page": 33,
+   "section": "BRANN / ## Note 23 – Andre driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.23,
+   "top3": [
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "lump_football_operations_expense",
+     0.21
+    ],
+    [
+     "wages_squad",
+     0.17
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "1 951 444",
+   "lado": "expense",
+   "page": 33,
+   "section": "BRANN / ## Note 23 – Andre driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.25,
+   "top3": [
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "lump_football_operations_expense",
+     0.23
+    ],
+    [
+     "wages_squad",
+     0.17
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "472 223",
+   "lado": "expense",
+   "page": 33,
+   "section": "BRANN / ## Note 23 – Andre driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "lump_football_operations_expense",
+     0.17
+    ],
+    [
+     "other_amortisation",
+     0.12
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "3 534 676",
+   "lado": "expense",
+   "page": 33,
+   "section": "BRANN / ## Note 23 – Andre driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.19,
+   "top3": [
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "wages_squad",
+     0.23
+    ],
+    [
+     "lump_football_operations_expense",
+     0.18
+    ]
+   ],
+   "tokens": 802
+  },
+  {
+   "label": "4 605 173",
+   "lado": "expense",
+   "page": 33,
+   "section": "BRANN / ## Note 23 – Andre driftskostnader",
+   "choice": "other_expenses",
+   "confidence": 0.24,
+   "top3": [
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "lump_football_operations_expense",
+     0.24
+    ],
+    [
+     "wages_squad",
+     0.13
+    ]
+   ],
+   "tokens": 802
+  }
+ ]
+}

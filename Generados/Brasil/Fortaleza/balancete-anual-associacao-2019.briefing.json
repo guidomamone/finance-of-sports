@@ -1,0 +1,113 @@
+{
+  "club": "fortaleza-br",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Fortaleza/balancete-anual-associacao-2019.md",
+  "generatedAt": "2026-09-30T21:52:53.665Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 304,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 2,
+      "section": "2.01.06.09 PREMIAÇÕES A PAGAR 0,00 0,00 1.376.000,00 1.376.000,00 C / 2.01.07 PASSIVO CONTINGENTE 1.633.374,75 C 1.156.897,92 924.090,39 1.400.567,22 C / 2.01.07.01 PASSIVO CONTINGENTE 1.633.374,75 C 1.156.897,92 924.090,39 1.400.567,22 C / 2.01.08 ADIANTAMENTOS 1.520.469,51 C 16.142.035,22 15.761.565,71 1.140.000,00 C / 2.01.08.02 ANTECIPAÇÃO DE COTAS 1.520.469,51 C 9.506.598,21 9.126.128,70 1.140.000,00 C",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2.01.08.03 DIREITO DE TRANSMISSÃO DE JOGOS",
+          "values": [
+            "0,00",
+            "6.631.037,01",
+            "6.631.037,01",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.08.04 ANTECIPACAO DE BILHETAGEM",
+          "values": [
+            "0,00",
+            "4.400,00",
+            "4.400,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "2.01.09 RECEITAS A APROPRIAR 1.634.349,72 C 30.243.530,33 33.812.456,97 5.203.276,36 C",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2.01.09.05 RECEITA C/ CESSÃO DE CAMAROTE",
+          "values": [
+            "0,00",
+            "418.000,00",
+            "418.000,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.09.07 RECEITAS DE ATIVAÇÃO DE MARCA",
+          "values": [
+            "0,00",
+            "15.000,00",
+            "15.000,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "2.01.09.05 RECEITA C/ CESSÃO DE CAMAROTE",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "stadium_other",
+        "matchedLabel": "Cessão de camarote",
+        "similarity": 67
+      },
+      {
+        "label": "2.01.09.05 RECEITA C/ CESSÃO DE CAMAROTE",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2.01.09.07 RECEITAS DE ATIVAÇÃO DE MARCA",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Ativação de marca",
+        "similarity": 67
+      },
+      {
+        "label": "2.01.09.07 RECEITAS DE ATIVAÇÃO DE MARCA",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Fortaleza",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

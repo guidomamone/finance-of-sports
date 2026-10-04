@@ -1,0 +1,167 @@
+{
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.md",
+ "generatedAt": "2026-09-30T04:27:03.772Z",
+ "rubros": [
+  {
+   "label": "Schulden op meer dan één jaar 69 |",
+   "lado": "expense",
+   "page": 6,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 927
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 6,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 / Uitgestelde belastingen 168",
+   "choice": "admin_general_expense",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 865
+  },
+  {
+   "label": "60/66A",
+   "lado": null,
+   "page": 8,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.21,
+   "top3": [
+    [
+     "other_expenses",
+     0.22999999999999998
+    ],
+    [
+     "other_income",
+     0.18
+    ],
+    [
+     "lump_football_operations_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "76A",
+   "lado": null,
+   "page": 8,
+   "section": "RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.39999999999999997
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 1255
+  },
+  {
+   "label": "285/8",
+   "lado": "expense",
+   "page": 5,
+   "section": "ACTIVA / OPRICHT INGSKOSTEN 6.1 / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "other_amortisation",
+     0.21
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 821
+  },
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 6,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 / Uitgestelde belastingen 168",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 861
+  },
+  {
+   "label": "29/58",
+   "lado": "expense",
+   "page": 5,
+   "section": "ACTIVA / OPRICHT INGSKOSTEN 6.1 / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "other_amortisation",
+     0.12
+    ],
+    [
+     "player_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 821
+  }
+ ]
+}

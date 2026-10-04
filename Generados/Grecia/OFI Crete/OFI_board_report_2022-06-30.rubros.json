@@ -1,0 +1,59 @@
+{
+ "md": "Clubes/Grecia/OFI Crete/OFI_board_report_2022-06-30.md",
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_board_report_2022-06-30.pdf",
+ "club": "ofi-crete",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:02:53.727Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": false,
+  "motivo": "no se pudo ubicar la columna del ejercicio"
+ },
+ "ladoConocido": 1,
+ "rubros": [
+  {
+   "label": "Ίδια κεφάλαια",
+   "lado": null,
+   "page": 3,
+   "section": "",
+   "values": [
+    "-2.150.983,43",
+    "",
+    "-386.143,69",
+    ""
+   ],
+   "columns": [
+    "Καθαρά αποτελέσματα χρήσεως προ φόρων",
+    "-2.413.839,74",
+    "112,22%",
+    "-623.571,62",
+    "161,49%"
+   ]
+  },
+  {
+   "label": "Πωλήσεις αποθεμάτων & υπηρεσιών",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Ο αριθμοδείκτης αυτός απεικονίζει την αποδοτικότητα των ιδίων κεφαλαίων της εταιρείας.",
+   "values": [
+    "5.064.440,83",
+    "",
+    "2.692.727,09",
+    ""
+   ],
+   "columns": [
+    "Μικτά αποτελέσματα",
+    "-2.261.353,87",
+    "-44,65%",
+    "-2.936.424,97",
+    "-109,05%"
+   ]
+  }
+ ]
+}

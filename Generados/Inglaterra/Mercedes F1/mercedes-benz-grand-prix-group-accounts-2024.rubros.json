@@ -1,0 +1,36 @@
+{
+ "md": "Clubes/Inglaterra/Mercedes F1/mercedes-benz-grand-prix-group-accounts-2024.md",
+ "pdf": "Clubes/Inglaterra/Mercedes F1/mercedes-benz-grand-prix-group-accounts-2024.pdf",
+ "club": "mercedes-f1",
+ "year": 2024,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T22:03:56.438Z",
+ "tieOuts": {
+  "cierran": 14,
+  "noCierran": 13
+ },
+ "warnings": [
+  "8 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "5 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 1,
+  "notasUsadas": []
+ },
+ "ladoConocido": 1,
+ "rubros": [
+  {
+   "label": "Dividends",
+   "lado": "expense",
+   "page": 40,
+   "section": "Factors that may affect future tax charges / 10. Dividends",
+   "values": [
+    100
+   ],
+   "origen": "estado 15"
+  }
+ ]
+}

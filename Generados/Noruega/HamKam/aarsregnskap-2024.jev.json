@@ -1,0 +1,1110 @@
+{
+ "md": "Clubes/Noruega/HamKam/aarsregnskap-2024.md",
+ "generatedAt": "2026-09-30T04:30:45.713Z",
+ "rubros": [
+  {
+   "label": "Annen driftsinntekt",
+   "lado": null,
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Kamp- og treningskostnader",
+   "lado": null,
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "choice": "match_organisation_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.78
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1332
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "Driftsresultat",
+   "lado": null,
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "choice": "other_income",
+   "confidence": 0.25,
+   "top3": [
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": null,
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "choice": "lump_football_operations",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.8
+    ],
+    [
+     "other_income",
+     0.09999999999999999
+    ],
+    [
+     "matchday_competition",
+     0.05
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler",
+   "lado": null,
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1277
+  },
+  {
+   "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": null,
+   "page": 2,
+   "section": "HAMARKAMERATENE FOTBALL ELITE / RESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "depreciation",
+     0.67
+    ],
+    [
+     "player_impairment",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1700
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": null,
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": null,
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "HAMARKAMERATENE FOTBALL ELITE / RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Andel resultat i HamKamhuset DA",
+   "lado": null,
+   "page": 2,
+   "section": "HAMARKAMERATENE FOTBALL ELITE / RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.85
+    ],
+    [
+     "stadium_other",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Netto finans",
+   "lado": null,
+   "page": 2,
+   "section": "HAMARKAMERATENE FOTBALL ELITE / RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Ordinært resultat etter skattekostnad",
+   "lado": null,
+   "page": 2,
+   "section": "HAMARKAMERATENE FOTBALL ELITE / RESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.56
+    ],
+    [
+     "other_income",
+     0.21000000000000002
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": null,
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Årsresultat etter minoritetsinteresser",
+   "lado": null,
+   "page": 2,
+   "section": "HAMARKAMERATENE FOTBALL ELITE / RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Årsresultat",
+   "lado": null,
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "lump_football_operations",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Avskrivning på spillere",
+   "lado": null,
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "choice": "player_amortisation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "player_amortisation",
+     0.98
+    ],
+    [
+     "depreciation",
+     0.02
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Overført til annen egenkapital",
+   "lado": null,
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1453
+  },
+  {
+   "label": "Resultat av finansposter",
+   "lado": null,
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Salgsinntekter kiosk",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "choice": "stadium_other",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "stadium_other",
+     0.59
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "sponsorship_commercial",
+     0.07
+    ]
+   ],
+   "tokens": 839
+  },
+  {
+   "label": "Billetinntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Andel resultat i Ham Kamhuset DA",
+   "lado": null,
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "stadium_other",
+     0.06999999999999999
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Medlems- og aktivitetsinntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "member_dues",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 842
+  },
+  {
+   "label": "Solidaritetsmidler UEFA",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "choice": "competition_bonus",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "competition_bonus",
+     0.91
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "broadcasting",
+     0.01
+    ]
+   ],
+   "tokens": 1108
+  },
+  {
+   "label": "Marked- og mediaavtale",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "choice": "broadcasting",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "broadcasting",
+     0.52
+    ],
+    [
+     "sponsorship_commercial",
+     0.39
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 840
+  },
+  {
+   "label": "Andre salgsinntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "choice": "player_sales",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "player_sales",
+     0.54
+    ],
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1129
+  },
+  {
+   "label": "NFF Cup",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "choice": "competition_bonus",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "competition_bonus",
+     0.81
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 901
+  },
+  {
+   "label": "Gaver",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Note 2 - Annen driftsinntekt består av:",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 828
+  },
+  {
+   "label": "Sosiale prosjekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Note 2 - Annen driftsinntekt består av:",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "education",
+     0.01
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Tilskudd",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Note 2 - Annen driftsinntekt består av:",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.63
+    ],
+    [
+     "lump_football_operations",
+     0.29000000000000004
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "MVA - kompensasjon",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Note 2 - Annen driftsinntekt består av:",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 833
+  },
+  {
+   "label": "Utleie ansatte",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Note 2 - Annen driftsinntekt består av:",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "Andre inntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Note 2 - Annen driftsinntekt består av:",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.94
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 1121
+  },
+  {
+   "label": "Lønnsrefusjoner",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Note 3 - Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "wages_squad",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 814
+  },
+  {
+   "label": "Leie av spillere",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Note 3 - Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "lump_football_operations_expense",
+     0.25
+    ]
+   ],
+   "tokens": 813
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Note 3 - Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 882
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Note 3 - Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "choice": "wages_squad",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "wages_squad",
+     0.64
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.17
+    ]
+   ],
+   "tokens": 814
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Note 3 - Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "wages_squad",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 811
+  },
+  {
+   "label": "Andre personalkostnader",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Note 3 - Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "choice": "wages_squad",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "wages_squad",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1127
+  },
+  {
+   "label": "Annen bistand",
+   "lado": "expense",
+   "page": 24,
+   "section": "Klubbens pensjonsordninger tilfredsstiller kravene i loven. / Total pensjonskostnad i årets regnskap utgjør kr 685 113.",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "wages_squad",
+     0.05
+    ]
+   ],
+   "tokens": 825
+  },
+  {
+   "label": "Revisjon",
+   "lado": "expense",
+   "page": 24,
+   "section": "Klubbens pensjonsordninger tilfredsstiller kravene i loven. / Total pensjonskostnad i årets regnskap utgjør kr 685 113.",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.29
+    ],
+    [
+     "wages_squad",
+     0.13
+    ]
+   ],
+   "tokens": 824
+  },
+  {
+   "label": "Administrasjonskostnader",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Kostnader reklame/sponsor",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 878
+  },
+  {
+   "label": "Leie av trenings- og kampfasiliteter",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.47
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "match_organisation_expense",
+     0.22
+    ]
+   ],
+   "tokens": 805
+  },
+  {
+   "label": "Felleskostnader NTF",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "choice": "admin_general_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "Andre salgskostnader",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "match_organisation_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1112
+  },
+  {
+   "label": "Annen fremmed tjeneste",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Driftstilskudd Hamarkameratene Kvinner Elite",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.69
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 807
+  }
+ ]
+}

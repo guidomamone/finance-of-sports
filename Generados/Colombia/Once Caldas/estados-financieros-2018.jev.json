@@ -1,0 +1,280 @@
+{
+ "md": "Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
+ "generatedAt": "2026-09-30T22:48:59.876Z",
+ "rubrosHuella": "cf71e45008fe0a32f2282083035d372705be3db4",
+ "rubros": [
+  {
+   "label": "FINANCIEROS",
+   "lado": "revenue",
+   "page": 19,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "INTERESES",
+   "lado": "revenue",
+   "page": 19,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "DIFERENCIA EN CAMBIO",
+   "lado": "revenue",
+   "page": 19,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "RECUPERACIONES",
+   "lado": "revenue",
+   "page": 19,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "REINTE DE OTROS COSTOS Y GASTO",
+   "lado": "expense",
+   "page": 19,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "INDEMNIZACIONES",
+   "lado": "revenue",
+   "page": 19,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "POR INCAPACIDADES DEL ISS",
+   "lado": "revenue",
+   "page": 20,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "DIVERSOS",
+   "lado": "revenue",
+   "page": 20,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "APROVECHAMIENTOS",
+   "lado": "revenue",
+   "page": 20,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "SUBVENCIONES",
+   "lado": "revenue",
+   "page": 20,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "AJUSTE AL PESO",
+   "lado": "revenue",
+   "page": 20,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS NO OPERACIONALES",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS FINANCIEROS",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS EXTRAORDINARIOS",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "GASTOS DIVERSOS",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "RECUPERACION PROVISIONES",
+   "lado": "revenue",
+   "page": 19,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1121
+  },
+  {
+   "label": "IMTPO DIFERIDO NIIF",
+   "lado": "expense",
+   "page": 20,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "other_amortisation",
+     0.15
+    ]
+   ],
+   "tokens": 785
+  },
+  {
+   "label": "DESC COMERCIALES CONDICIONADOS",
+   "lado": "revenue",
+   "page": 19,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.73
+    ],
+    [
+     "sponsorship_commercial",
+     0.27
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 911
+  },
+  {
+   "label": "REINTEGRO DE GTOS ANOS ANTERIO",
+   "lado": "revenue",
+   "page": 19,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "INGRESOS DE EJERCICIOS ANTERIORES",
+   "lado": "revenue",
+   "page": 20,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "REINTEGROS NIIF",
+   "lado": "revenue",
+   "page": 19,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 816
+  }
+ ]
+}

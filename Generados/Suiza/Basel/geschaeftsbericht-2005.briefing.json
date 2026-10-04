@@ -1,0 +1,2053 @@
+{
+  "club": "basel",
+  "year": 2005,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Suiza/Basel/geschaeftsbericht-2005.md",
+  "generatedAt": "2026-09-30T22:08:09.187Z",
+  "numberFormat": "espacio como separador de miles (escandinavo)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 74
+  },
+  "scannedWarning": false,
+  "tableCount": 19,
+  "relevantTableCount": 6,
+  "tables": [
+    {
+      "page": 12,
+      "section": "# Die FCB-Jahresrechnung / ## BILANZEN 31. DEZEMBER 2005 UND 31. DEZEMBER 2004",
+      "columns": [
+        "",
+        "31.12.2005",
+        "31.12.2004"
+      ],
+      "rows": [
+        {
+          "rawLabel": "AKTIVEN",
+          "values": [
+            "CHF",
+            "CHF"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Flüssige Mittel",
+          "values": [
+            "13 725 278.55",
+            "8 822 850.91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wertschriften",
+          "values": [
+            "0.00",
+            "5 116 485.85"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forderungen aus Lieferungen und Leistungen",
+          "values": [
+            "9 638 947.37",
+            "8 963 563.15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*gegenüber Dritten*",
+          "values": [
+            "8 609 577.69",
+            "8 963 563.15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*gegenüber FC Basel Marketing AG*",
+          "values": [
+            "1 029 369.68",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere Forderungen",
+          "values": [
+            "330 928.97",
+            "556 509.49"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aktive Rechnungsabgrenzung",
+          "values": [
+            "1 304 895.90",
+            "600 351.85"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Umlaufvermögen",
+          "values": [
+            "25 000 050.79",
+            "24 059 761.25"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Finanzanlagen",
+          "values": [
+            "2.00",
+            "2.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Wertschriften*",
+          "values": [
+            "1.00",
+            "1.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Beteiligungen*",
+          "values": [
+            "1.00",
+            "1.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sachanlagen",
+          "values": [
+            "525 703.00",
+            "789 902.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anlagevermögen",
+          "values": [
+            "525 705.00",
+            "789 904.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total Aktiven",
+          "values": [
+            "25 525 755.79",
+            "24 849 665.25"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": null,
+      "columns": [
+        "",
+        "31.12.2005",
+        "31.12.2004"
+      ],
+      "rows": [
+        {
+          "rawLabel": "PASSIVEN",
+          "values": [
+            "CHF",
+            "CHF"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "4 326 631.23",
+            "4 234 043.97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*gegenüber Dritten*",
+          "values": [
+            "4 326 631.23",
+            "3 588 368.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*gegenüber FC Basel Marketing AG*",
+          "values": [
+            "0.00",
+            "645 675.97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere Verbindlichkeiten",
+          "values": [
+            "989 446.90",
+            "726 181.15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passive Rechnungsabgrenzung",
+          "values": [
+            "19 374 763.68",
+            "18 984 309.71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rückstellungen",
+          "values": [
+            "232 506.10",
+            "403 916.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fremdkapital",
+          "values": [
+            "24 923 347.91",
+            "24 348 450.83"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Vereinsvermögen",
+          "values": [
+            "602 407.88",
+            "501 214.42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Vortrag aus Vorjahr*",
+          "values": [
+            "501 214.42",
+            "497 297.44"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Jahresgewinn*",
+          "values": [
+            "101 193.46",
+            "3 916.98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eigenkapital",
+          "values": [
+            "602 407.88",
+            "501 214.42"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total Passiven",
+          "values": [
+            "25 525 755.79",
+            "24 849 665.25"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+      "columns": [
+        "",
+        "1.1.2005–31.12.2005",
+        "1.7.2003–31.12.2004"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "CHF",
+            "CHF"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Matcheinnahmen",
+          "values": [
+            "16 127 977.61",
+            "25 956 724.91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*aus Meisterschaft*",
+          "values": [
+            "10 830 074.86",
+            "16 911 271.49"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*aus Champions-League / UEFA-Cup*",
+          "values": [
+            "4 973 398.24",
+            "8 786 517.52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*aus Cup-Spielen*",
+          "values": [
+            "317 069.56",
+            "229 644.20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*aus übrigen Spielen*",
+          "values": [
+            "7 434.95",
+            "29 291.70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Business Seats",
+          "values": [
+            "6 330 115.09",
+            "9 753 994.54"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sponsoring, Werbung",
+          "values": [
+            "4 879 850.25",
+            "5 964 817.37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TV-Entschädigungen",
+          "values": [
+            "1 704 059.90",
+            "2 337 037.50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leihertrag, Ausbildungsentschädigungen",
+          "values": [
+            "888 822.40",
+            "541 647.65"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mitglieder",
+          "values": [
+            "451 475.00",
+            "726 500.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbandseinnahmen",
+          "values": [
+            "333 841.30",
+            "338 954.10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diverses",
+          "values": [
+            "7 501 273.28",
+            "3 392 387.67"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Ertrag",
+          "values": [
+            "38 217 414.83",
+            "49 012 063.74"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 14,
+      "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+      "columns": [
+        "",
+        "1.1.2005–31.12.2005 CHF",
+        "1.7.2003–31.12.2004 CHF"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Personalaufwand",
+          "values": [
+            "–25 078 668.29",
+            "–32 832 981.10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Organisationskosten Heimspiele",
+          "values": [
+            "–7 835 065.30",
+            "–11 419 392.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Übriger Spielbetrieb",
+          "values": [
+            "–1 847 381.28",
+            "–3 137 936.72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leihaufwand, Ausbildungsentschädigungen",
+          "values": [
+            "–94 870.20",
+            "–754 363.55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Werbung",
+          "values": [
+            "–1 099 846.05",
+            "–1 907 554.59"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administration",
+          "values": [
+            "–979 456.09",
+            "–1 452 528.53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abschreibungen",
+          "values": [
+            "–319 066.05",
+            "–391 832.70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Übriger Aufwand",
+          "values": [
+            "–1 590 286.20",
+            "–965 733.68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Aufwand",
+          "values": [
+            "–38 844 639.46",
+            "–52 862 322.87"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ergebnis vor Zinsen und ausserordentlichen Posten",
+          "values": [
+            "–627 224.63",
+            "–3 850 259.13"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Finanzertrag",
+          "values": [
+            "310 974.08",
+            "70 576.31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finanzaufwand",
+          "values": [
+            "–47 262.74",
+            "–24 380.80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ausserordentlicher Ertrag",
+          "values": [
+            "0.00",
+            "2 191 927.30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ausserordentlicher Aufwand",
+          "values": [
+            "0.00",
+            "–193 946.70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ergebnis vor Verlustabdeckung",
+          "values": [
+            "–363 513.29",
+            "–1 806 083.02"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Verlustabdeckung FC Basel Marketing AG",
+          "values": [
+            "470 000.00",
+            "1 810 000.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ergebnis vor Steuern",
+          "values": [
+            "106 486.71",
+            "3 916.98"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Steuern",
+          "values": [
+            "–5 293.25",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jahresgewinn",
+          "values": [
+            "101 193.46",
+            "3 916.98"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 18,
+      "section": "Durchschnittliche Zuschauerzahlen, 1. Phase Saison 2005/2006",
+      "columns": [
+        "",
+        "Zuschauer"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Uebrige Super League Clubs",
+          "values": [
+            "7’774"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FCB Auswärtsspiele",
+          "values": [
+            "10’550"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FCB Heimspiele",
+          "values": [
+            "29’209"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "Verkaufte Jahreskarten",
+      "columns": [
+        "Jahr",
+        "Nicht-VIP",
+        "VIP",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2003",
+          "values": [
+            "22’922",
+            "1’752",
+            "24’674"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2004",
+          "values": [
+            "24’098",
+            "1’819",
+            "25’917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2005",
+          "values": [
+            "22’770",
+            "1’703",
+            "24’473"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2006",
+          "values": [
+            "22’346",
+            "1’696",
+            "24’042"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "Personalaufwand (in TCHF)",
+      "columns": [
+        "Jahr",
+        "TCHF"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1998",
+          "values": [
+            "6’152"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1999",
+          "values": [
+            "6’454"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2000",
+          "values": [
+            "7’515"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2001",
+          "values": [
+            "9’145"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2002",
+          "values": [
+            "16’145"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2003",
+          "values": [
+            "19’267"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2004",
+          "values": [
+            "21’889"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2005",
+          "values": [
+            "25’079"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
+      "columns": [
+        "",
+        "2004",
+        "2005"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Catering",
+          "values": [
+            "4.73",
+            "5.18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sicherheit",
+          "values": [
+            "2.57",
+            "2.95"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Miete",
+          "values": [
+            "2.02",
+            "2.20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vermarktungsrechte",
+          "values": [
+            "1.49",
+            "2.18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Personalkosten Dritte",
+          "values": [
+            "0.94",
+            "1.04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reinigung",
+          "values": [
+            "0.67",
+            "0.68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diverses",
+          "values": [
+            "1.08",
+            "0.92"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "13.50",
+            "15.15"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 26,
+      "section": "## FC Basel 1893 / # Juniorenabteilung in Zahlen (CHF) / 1. Januar 2005 – 31. Dezember 2005 / ### Einnahmen",
+      "columns": [
+        "Transfer-, Leih- und Ausbildungsentschädigungssertrag",
+        "878 300.00"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Verbandsentschädigungen, Öffentliche Zuschüsse",
+          "values": [
+            "274 087.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sponsoren",
+          "values": [
+            "117 544.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spenden",
+          "values": [
+            "117 050.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mitgliederbeiträge",
+          "values": [
+            "44 038.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diverser Ertrag",
+          "values": [
+            "141 650.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Total Einnahmen*",
+          "values": [
+            "*1 572 669.00*"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 26,
+      "section": "### Ausgaben",
+      "columns": [
+        "Personalaufwand",
+        "1 833 817.00"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Spielbetrieb",
+          "values": [
+            "788 041.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mietaufwand Juniorenunterkünfte",
+          "values": [
+            "111 597.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfer-, Leih- und Ausbildungsentschädigungsaufwand",
+          "values": [
+            "91 732.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diverser Aufwand",
+          "values": [
+            "99 143.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Total Ausgaben*",
+          "values": [
+            "*2 924 330.00*"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nettoinvestition in Juniorenabteilung",
+          "values": [
+            "1 351 661.00"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 27,
+      "section": "# Das FCB-Palmarès",
+      "columns": [
+        "Schweizer Meister",
+        "1953",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Schweizer Meister",
+          "values": [
+            "1967",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Meister",
+          "values": [
+            "1969",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Meister",
+          "values": [
+            "1970",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Meister",
+          "values": [
+            "1972",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Meister",
+          "values": [
+            "1973",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Meister",
+          "values": [
+            "1977",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Meister",
+          "values": [
+            "1980",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Meister",
+          "values": [
+            "2002",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Meister",
+          "values": [
+            "2004",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Meister",
+          "values": [
+            "2005",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Cupsieger",
+          "values": [
+            "1933",
+            "FC Basel – Grasshopper-Club Zürich 4:3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Cupsieger",
+          "values": [
+            "1947",
+            "FC Basel – Lausanne-Sports 3:0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Cupsieger",
+          "values": [
+            "1963",
+            "FC Basel – Grasshopper-Club Zürich 2:0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Cupsieger",
+          "values": [
+            "1967",
+            "FC Basel – Lausanne-Sports 3:0 Forfait (2:1, Abbruch)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Cupsieger",
+          "values": [
+            "1975",
+            "FC Basel – FC Winterthur 2:1 n.V."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Cupsieger",
+          "values": [
+            "2002",
+            "FC Basel – Grasshopper-Club Zürich 2:1 n.V."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Cupsieger",
+          "values": [
+            "2003",
+            "FC Basel – Neuchâtel Xamax 6:0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Cupfinalist",
+          "values": [
+            "1942",
+            "FC Basel – Grasshopper-Club Zürich 0:0 und 2:3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Cupfinalist",
+          "values": [
+            "1944",
+            "FC Basel – Lausanne-Sports 0:2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Cupfinalist",
+          "values": [
+            "1970",
+            "FC Basel – FC Zürich 1:4 n.V."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Cupfinalist",
+          "values": [
+            "1972",
+            "FC Basel – FC Zürich 0:1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Cupfinalist",
+          "values": [
+            "1973",
+            "FC Basel – FC Zürich 0:2 n.V."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Cupfinalist",
+          "values": [
+            "1942",
+            "FC Basel – FC Sion 0:1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schweizer Ligacupsieger",
+          "values": [
+            "1972",
+            "FC Basel – FC Winterthur 4:1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finalist UIC",
+          "values": [
+            "2001",
+            "FC Basel – Aston Villa 1:1 und 1:4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sieger Alpencup",
+          "values": [
+            "1969",
+            "FC Basel – AC Bologna 3:1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sieger Alpencup",
+          "values": [
+            "1970",
+            "FC Basel – AC Fiorentina 3:2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sieger Alpencup",
+          "values": [
+            "1981",
+            "FC Basel – FC Sochaux 5:3 Penaltys"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 28,
+      "section": "# Der FCB International, Stand 10. April 2006",
+      "columns": [
+        "Europacup Gesamtbilanz",
+        "29",
+        "Qualifikationen"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "106",
+            "Spiele"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "34",
+            "Siege"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "19",
+            "Unentschieden"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "53",
+            "Niederlagen"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "168 : 209",
+            "Tore"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Champions League",
+          "values": [
+            "3",
+            "Teilnahmen inklusive Qualifikation"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "20",
+            "Spiele"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "7",
+            "Siege"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "6",
+            "Unentschieden"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "7",
+            "Niederlagen"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Europacup der Meister",
+          "values": [
+            "7",
+            "Teilnahmen"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "22",
+            "Spiele"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "9",
+            "Siege"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2",
+            "Unentschieden"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "11",
+            "Niederlagen"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Europacup der Cupsieger",
+          "values": [
+            "2",
+            "Teilnahmen"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "4",
+            "Spiele"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "–",
+            "Siege"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1",
+            "Unentschieden"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "3",
+            "Niederlagen"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "UEFA Cup",
+          "values": [
+            "7",
+            "Teilnahmen"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "37",
+            "Spiele"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "14",
+            "Siege"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "7",
+            "Unentschieden"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "16",
+            "Niederlagen"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Messestädtecup (1954–1969)",
+          "values": [
+            "10",
+            "Teilnahmen"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "23",
+            "Spiele"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2",
+            "Siege"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "3",
+            "Unentschieden"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "18",
+            "Niederlagen"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": "# Die FCB-Führung / ## Vorstand",
+      "columns": [
+        "Präsident",
+        "Werner Edelmann"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Vizepräsidentin Vorstandsmitglied für Nachwuchs und Medizinbereich",
+          "values": [
+            "Gigi Oeri"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Vorstandsmitglied für Finanzen",
+          "values": [
+            "Mathieu S. Jaus"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Vorstandsmitglied für Marketing",
+          "values": [
+            "Werner Schmid"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Vorstandsmitglied für Rechts- und Vertragsangelegenheiten",
+          "values": [
+            "Dr. Bernhard Heusler"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 30,
+      "section": "## Geschäftsstelle",
+      "columns": [
+        "Gesamtverantwortung",
+        "Mathieu S. Jaus, Delegierter des Vorstands"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Assistentin der Geschäftsleitung",
+          "values": [
+            "Barbara Bigler"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Leitung Geschäftsstelle/ Marketing/Eventmanagement",
+          "values": [
+            "Markus Laub"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Öffentlichkeitsbeauftragter/ Medien, Kommunikation",
+          "values": [
+            "Josef Zindel"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Finanz- und Rechnungswesen",
+          "values": [
+            "René Heiniger"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "VIP-Betreuung",
+          "values": [
+            "Corinne Tanner"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": "# Die FCB-Technik / ## Cheftrainer / ### Christian Gross",
+      "columns": [
+        "Karriere",
+        "Junior",
+        "SV Höngg"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Spieler",
+          "values": [
+            "1967–1975",
+            "Grasshopper-Club Zürich 1975–1978 Lausanne-Sports"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1978–1980",
+            "Neuchâtel Xamax FC"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1980–1982",
+            "VfL Bochum (Deutschland)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1982–1985",
+            "FC St. Gallen"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1985–1988",
+            "FC Lugano"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1978",
+            "1 Länderspiel für die Schweiz"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 31,
+      "section": null,
+      "columns": [
+        "Karriere Cheftrainer",
+        "1993–1997",
+        "Grasshopper-Club Zürich Schweizer Meister 1995 Schweizer Meister 1996 Cupsieger 1994 Champions League 1995/96 Champions League 1996/97"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "1998–1999",
+            "Tottenham Hotspurs (England)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1999–",
+            "FC Basel UEFA-Cup 2000/2001 Schweizer Meister 2002 Schweizer Meister 2004 Schweizer Meister 2005 Cupsieger 2002 Cupsieger 2003 Champions League, Haupt- und Zwischenrunde 2002/2003 UEFA Cup 2004/2005 UEFA Cup 2005/2006, Viertelfinals"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 32,
+      "section": "## Technikerstab",
+      "columns": [
+        "Assistenztrainer",
+        "Fritz Schmid"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Konditions- und",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Rehabilitationstrainer",
+          "values": [
+            "Harry Körner"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Teamcoach",
+          "values": [
+            "Gusti Nussbaumer"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Torhütertrainer",
+          "values": [
+            "Romain Crevoisier"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Thomas Grüter"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Chefscout",
+          "values": [
+            "Ruedi Zbinden"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Technischer Leiter Nachwuchs",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Junioren",
+          "values": [
+            "Peter Knäbel"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "U21-Trainer (1. Liga)",
+          "values": [
+            "Heinz Hermann"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "U18-Trainer",
+          "values": [
+            "Patrick Rahmen"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "U16-Trainer",
+          "values": [
+            "Werner Mogg"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "U15-Trainer",
+          "values": [
+            "Remo Gaugler"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 32,
+      "section": "## Medico-Team",
+      "columns": [
+        "Ärzte",
+        "Dr. Markus Weber Dr. Niklaus F. Friederich Dr. Markus Rothweiler Dr. Felix Marti (Hausarzt)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Physio-Therapeuten/",
+          "values": [
+            "Torsten Bathelt"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Medizinische Masseure",
+          "values": [
+            "Peter Hohl Mark Jäger"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 33,
+      "section": "# Das FCB-Spielerkader 2005/2006",
+      "columns": [
+        "Name/Vorname:",
+        "Position:",
+        "Geburtsdatum:",
+        "Nationalität:",
+        "Beim FCB seit:"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1 Zuberbühler, Pascal",
+          "values": [
+            "Tor",
+            "08.01.1971",
+            "Schweiz",
+            "2001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "18 Crayton, Louis",
+          "values": [
+            "Tor",
+            "26.10.1977",
+            "Liberia/Schweiz",
+            "2005 (Juni)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "25 Meili, Riccardo",
+          "values": [
+            "Tor",
+            "17.02.1982",
+            "Schweiz",
+            "2002"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3 Dzombic, Damir",
+          "values": [
+            "Abwehr",
+            "03.01.1985",
+            "Bosnien",
+            "2005 (Juni)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4 Quennoz, Alexandre",
+          "values": [
+            "Abwehr",
+            "21.09.1978",
+            "Schweiz",
+            "1999"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5 Majstorovic, Daniel",
+          "values": [
+            "Abwehr",
+            "05.04.1977",
+            "Schweden",
+            "2006 (Jan)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6 Nakata, Koji",
+          "values": [
+            "Abwehr",
+            "09.07.1979",
+            "Japan",
+            "2006 (Jan)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "15 Yakin, Murat",
+          "values": [
+            "Abwehr",
+            "15.09.1974",
+            "Schweiz",
+            "2001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "24 Berner, Bruno",
+          "values": [
+            "Abwehr",
+            "21.11.1977",
+            "Schweiz",
+            "2005 (Juni)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30 Smiljanic, Boris",
+          "values": [
+            "Abwehr",
+            "08.09.1976",
+            "Schweiz",
+            "2003 (Jan)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "32 Zanni, Reto",
+          "values": [
+            "Abwehr",
+            "09.02.1980",
+            "Schweiz",
+            "2005 (Jan)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8 Sterjovski, Mile",
+          "values": [
+            "Mittelfeld",
+            "27.05.1979",
+            "Australien",
+            "2004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11 Chipperfield, Scott",
+          "values": [
+            "Mittelfeld",
+            "30.12.1975",
+            "Australien",
+            "2001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "12 Ba, Papa Malick",
+          "values": [
+            "Mittelfeld",
+            "11.11.1980",
+            "Senegal",
+            "2005"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "14 Mesbah, Djamel",
+          "values": [
+            "Mittelfeld",
+            "09.10.1984",
+            "Algerien/Frankreich",
+            "2004/2005"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "17 Rakitic, Ivan",
+          "values": [
+            "Mittelfeld",
+            "10.03.1988",
+            "Schweiz/Kroatien",
+            "2005 (Juni)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20 Delgado, Matias Emilio",
+          "values": [
+            "Mittelfeld",
+            "15.12.1982",
+            "Argentinien/Italien",
+            "2003 (Aug)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "21 Degen, David",
+          "values": [
+            "Mittelfeld",
+            "15.02.1983",
+            "Schweiz",
+            "2003"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "22 Ergic, Ivan",
+          "values": [
+            "Mittelfeld",
+            "21.01.1981",
+            "Australien/Jugoslawien",
+            "2000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "27 Kuzmanovic, Zdravko",
+          "values": [
+            "Mittelfeld",
+            "22.09.1987",
+            "Schweiz/Bosnien",
+            "2005 (Juni)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "29 Kulaksizoglu, Baykal",
+          "values": [
+            "Mittelfeld",
+            "12.05.1983",
+            "Schweiz",
+            "2005 (Juni)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "9 Carignano, César Andrés",
+          "values": [
+            "Angriff",
+            "28.09.1982",
+            "Argentinien/Italien",
+            "2004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "10 Petric, Mladen",
+          "values": [
+            "Angriff",
+            "01.01.1981",
+            "Schweiz/Kroatien",
+            "2004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "23 «Eduardo» Adelino da Silva",
+          "values": [
+            "Angriff",
+            "13.10.1979",
+            "Brasilien",
+            "2005 (Juli)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "26 Kavelashvili Mikheil",
+          "values": [
+            "Angriff",
+            "22.07.1971",
+            "Georgien",
+            "2006 (März)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 12,
+      "section": "# Die FCB-Jahresrechnung / ## BILANZEN 31. DEZEMBER 2005 UND 31. DEZEMBER 2004",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Aktiven",
+      "skipped": true,
+      "reason": "1 de 14 valor(es) del segmento no parecen números (ej. \"CHF\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 12,
+      "section": "# Die FCB-Jahresrechnung / ## BILANZEN 31. DEZEMBER 2005 UND 31. DEZEMBER 2004",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Aktiven",
+      "skipped": true,
+      "reason": "1 de 14 valor(es) del segmento no parecen números (ej. \"CHF\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 12,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Passiven",
+      "skipped": true,
+      "reason": "1 de 12 valor(es) del segmento no parecen números (ej. \"CHF\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 12,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Passiven",
+      "skipped": true,
+      "reason": "1 de 12 valor(es) del segmento no parecen números (ej. \"CHF\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 13,
+      "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Ertrag",
+      "skipped": true,
+      "reason": "1 de 13 valor(es) del segmento no parecen números (ej. \"CHF\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 13,
+      "section": "## ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Ertrag",
+      "skipped": true,
+      "reason": "1 de 13 valor(es) del segmento no parecen números (ej. \"CHF\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 14,
+      "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Aufwand",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"–38 844 639.46\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 14,
+      "section": "ERFOLGSRECHNUNGEN 1.1.2005 – 31.12.2005 UND 1.7.2003 – 31.12.2004",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Aufwand",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"–52 862 322.87\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 23,
+      "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "13.50",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "O. Organisationskosten Heimspiele / Organisationskosten pro Zuschauer (in CHF)",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "15.15",
+      "addendCount": 7,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/basel-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"basel\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "8 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

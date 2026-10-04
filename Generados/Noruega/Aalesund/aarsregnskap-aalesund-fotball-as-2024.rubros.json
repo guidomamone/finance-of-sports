@@ -1,0 +1,198 @@
+{
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.md",
+ "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2024.pdf",
+ "club": "aalesund",
+ "year": 2024,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:07.041Z",
+ "tieOuts": {
+  "cierran": 71,
+  "noCierran": 5
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "3 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "12 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 19,
+  "notasUsadas": [
+   "0",
+   "7"
+  ]
+ },
+ "ladoConocido": 15,
+ "rubros": [
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+   "values": [
+    5103.577
+   ],
+   "origen": "nota 0 (ancla 3)",
+   "ancla": "Sum driftskostnad"
+  },
+  {
+   "label": "Sum driftskostnad",
+   "lado": "expense",
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "values": [
+    66284.155
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 13,
+   "section": "Note 2 Gjennomført fusjon mellom Ålesund Fotball AS og AaFK Sponsorservice AS / Note 3 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    5873.14
+   ],
+   "origen": "nota 7 (ancla 3>0)",
+   "ancla": "Sum driftskostnad"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 13,
+   "section": "Note 2 Gjennomført fusjon mellom Ålesund Fotball AS og AaFK Sponsorservice AS / Note 3 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    990.694
+   ],
+   "origen": "nota 7 (ancla 3>0)",
+   "ancla": "Sum driftskostnad"
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 13,
+   "section": "Note 2 Gjennomført fusjon mellom Ålesund Fotball AS og AaFK Sponsorservice AS / Note 3 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    164.773
+   ],
+   "origen": "nota 7 (ancla 3>0)",
+   "ancla": "Sum driftskostnad"
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 13,
+   "section": "Note 2 Gjennomført fusjon mellom Ålesund Fotball AS og AaFK Sponsorservice AS / Note 3 Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    510.002
+   ],
+   "origen": "nota 7 (ancla 3>0)",
+   "ancla": "Sum driftskostnad"
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+   "values": [
+    4478.254
+   ],
+   "origen": "nota 0 (ancla 3)",
+   "ancla": "Sum driftskostnad"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "ÅLESUND FOTBALL AS / ## RESULTATREGNSKAP",
+   "values": [
+    49163.715
+   ],
+   "origen": "nota 0 (ancla 3)",
+   "ancla": "Sum driftskostnad"
+  },
+  {
+   "label": "Salgsinntekter",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "values": [
+    58461.725
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Andre driftsinntekter",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "values": [
+    3667.334
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Renteinntekt fra foretak i samme konsern",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "values": [
+    450
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "values": [
+    171.575
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "values": [
+    5185.079
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Nedskrivning av andre finansielle omløpsmidler",
+   "lado": "expense",
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "values": [
+    969.49
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "values": [
+    27.769
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Overført til udekket tap",
+   "lado": null,
+   "page": 8,
+   "section": "Resultatregnskap / Ålesund Fotball AS",
+   "values": [
+    455.038
+   ],
+   "origen": "estado 3"
+  }
+ ]
+}

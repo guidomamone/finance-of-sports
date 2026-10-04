@@ -1,0 +1,1483 @@
+{
+  "club": "racing",
+  "year": 2009,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Racing/balance2009.md",
+  "generatedAt": "2026-09-30T22:39:18.529Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 330,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 33,
+  "relevantTableCount": 8,
+  "tables": [
+    {
+      "page": 4,
+      "section": "RACING CLUB ASOCIACION CIVIL / ACTIVO / ACTIVO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caja y Bancos (Nota 2.1) $ 7.612.577 $",
+          "values": [
+            "48.030"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inversiones (Nota 2.2) $ 4.217.208 $",
+          "values": [
+            "20.663.007"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos (Nota 2.3) $ 7.305.665 $",
+          "values": [
+            "2.295.231"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "ACTIVO NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bienes de Uso (Anexo I) $ 40.734.971 $",
+          "values": [
+            "40.258.118"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos Blanquiceleste (Nota 2.7) $ 28.102.016 $",
+          "values": [
+            "43.266.594"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "RACING CLUB ASOCIACION CIVIL / PASIVO Y PATRIMONIO NETO / PASIVO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deudas Sociales (Nota 3.1) $ 6.684.311 $",
+          "values": [
+            "2.715.021"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas Comerciales (Nota 3.2) $ 426.276 $",
+          "values": [
+            "2.608.590"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas Fiscales (Nota 3.3) $ 2.300.817 $",
+          "values": [
+            "12.370.200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras Deudas (Nota 3.4) $ 12.589.989 $",
+          "values": [
+            "11.972.315"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Previsiones (Notas 3.5) $ 4.522.094 $",
+          "values": [
+            "350.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "PASIVO NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deudas Comerciales (Nota 3.2) $0 $",
+          "values": [
+            "52.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudas Fiscales (Nota 3.3) $ 3.501.047 $",
+          "values": [
+            "145.893"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras Deudas (Nota 3.4) $ 13.606.944 $",
+          "values": [
+            "95.508"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Previsiones (Nota 3.5) $ 26.628.608 $",
+          "values": [
+            "32.646.694"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "RACING CLUB ASOCIACION CIVIL / ESTADO DE RECURSOS Y GASTOS / RECURSOS ORDINARIOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Generales (Anexo II) $ 18.267.409 $",
+          "values": [
+            "5.552.635"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Especìficos (Anexo II) $ 57.615.284 $",
+          "values": [
+            "9.566.401"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos (Anexo II) $ 2.326.368 $",
+          "values": [
+            "2.002.942"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 7,
+      "section": "Gastos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Generales (Anexo III) $ 21.372.687 $",
+          "values": [
+            "1.477.046"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Especìficos (Anexo III) $ 38.065.448 $",
+          "values": [
+            "11.913.519"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 7,
+      "section": "Resultados Financieros / Ingresos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intereses Financieros $ 58.230 $",
+          "values": [
+            "235.084"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencias de Cambio $ 1.499.065 $",
+          "values": [
+            "5.233.347"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 7,
+      "section": "Egresos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intereses Financieros $ 622.539 $",
+          "values": [
+            "155.033"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencias de Cambio $ 1.096.718 $",
+          "values": [
+            "3.652.603"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 8,
+      "section": "RACING CLUB ASOCIACION CIVIL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Recursos al Inicio del Ejercicio $ 48.030 $",
+          "values": [
+            "19.158"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento de Recursos $ 7.564.547 $",
+          "values": [
+            "28.873"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recursos al Cierre del Ejercicio $ 7.612.577 $",
+          "values": [
+            "48.030"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "RACING CLUB ASOCIACION CIVIL / RECURSOS ORDINARIOS Y EXTRAORDINARIOS - ANEXO II / GENERALES           ESPECIFICOS       DIVERSOS        TOTAL AL        TOTAL AL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cuotas Sociales $ 7.643.229 $ 7.643.229 $",
+          "values": [
+            "1.692.227"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Televisaciòn / Televisiòn AFA $ 14.534.089 $ 14.534.089 $",
+          "values": [
+            "14.714.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Campeonatos Oficiales $ 6.828.116 $ 6.828.116 $",
+          "values": [
+            "2.701.746"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Torneos $ 473.000 $ 473.000 $",
+          "values": [
+            "491.121"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos Alquiler $ 504.617 $ 504.617 $",
+          "values": [
+            "667.541"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos Publicidad $ 5.458.068 $ 5.458.068 $",
+          "values": [
+            "1.289.438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Ingresos Diversos $ 502.250 $ 502.250 $",
+          "values": [
+            "1.323.484"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Ingresos Deportivos $ 727.336 $ 727.336 $",
+          "values": [
+            "53.240"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferencia de Jugadores $ 2.818.447 $ 37.623.127 $ 40.441.574 $",
+          "values": [
+            "4.838.830"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cesiòn de Ingresos $0 -$",
+          "values": [
+            "11.276.200"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "Recursos Extraordinarios",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Resultado Extraordinario s/Quiebra $0 $",
+          "values": [
+            "2.896.129"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Blanquiceleste por cuenta y Orden de Racing $0 $",
+          "values": [
+            "626.218"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Recursos Extraordinarios $0 $ 8.994.400 $ 201.440 $ 9.195.840 $",
+          "values": [
+            "3.522.348"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALES $ 18.267.409 $ 66.609.684 $ 2.527.808 $ 87.404.901 $",
+          "values": [
+            "20.018.107"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "RACING CLUB ASOCIACION CIVIL / DETALLE DE GASTOS - ANEXO III",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Sueldos del Personal $ 14.309.759 $ 14.309.759 $",
+          "values": [
+            "1.205.408"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cargas Sociales $ 2.260.641 $ 2.260.641 $",
+          "values": [
+            "301.676"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Grales Actividades Deportivas / Soc. $ 2.415.828 $ 2.415.828 $",
+          "values": [
+            "39.004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios Organo Fiduciarios $ 32.208 $ 32.208 $",
+          "values": [
+            "295.410"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios y Otras Contribuciones $ 911.643 $ 911.643 $",
+          "values": [
+            "49.034"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento $ 1.214.576 $ 1.214.576 $",
+          "values": [
+            "13.879"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sellados, Multas, Gtos Bancarios $ 260.240 $ 260.240 $",
+          "values": [
+            "16.719"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Colegio $ 958.539 $ 958.539 $",
+          "values": [
+            "408.739"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Indemnizaciones $0 $0 $",
+          "values": [
+            "362.199"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cesiòn Gastos - -$",
+          "values": [
+            "1.215.023"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "ACTIVOS Y PASIVOS EN MONEDA EXTRANJERA / MONEDA EXTRANJERA                                                  TOTAL / CLASE         MONTO         CAMBIO     SUB- TOTAL / ACTIVO / ACTIVO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Blanquic Crèditos Por Ventas/transf Jugadores u$s 2.375.116 $ 3,3480 $ 7.951.888 $ 7.951.888 $",
+          "values": [
+            "7.951.888"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Blanquic Crèditos Por Ventas/transf Jugadores Euros 2.148.000 $ 4,2677 $ 9.167.019 $ 9.167.019 $",
+          "values": [
+            "9.167.019"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "Creditos por Prestamos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Blanquic Crèditos Por Préstamos u$s 219.642 $ 3,3480 $ 735.361 $ 735.361 $",
+          "values": [
+            "735.361"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Blanquic Crèditos Por Préstamos Euros 328.090 $ 4,2677 $ 1.400.191 $ 1.400.191 $",
+          "values": [
+            "1.400.191"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "RACING CLUB ASOCIACION CIVIL / NOTAS A LOS ESTADOS CONTABLES / COMPOSICION DE LOS RUBROS DE ACTIVO CORRIENTE y NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bancos $ 4.482.023 $",
+          "values": [
+            "14.453"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valores a Depositar $ 2.781.693 $",
+          "values": [
+            "20.780"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "2.2) Inversiones",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Inversiones Depósito Plazo Fijo Corriente $ 4.217.208 $",
+          "values": [
+            "20.686.586"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Interes Plazo Fijo Corriente $0 -$",
+          "values": [
+            "23.578"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "2.3) Créditos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Deudores Varios $ 3.385.937 $",
+          "values": [
+            "518.312"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Préstamos al Personal y Anticipos a Rendir $ 44.168 $",
+          "values": [
+            "9.994"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Documentos a Cobrar $ 4.827.800 $",
+          "values": [
+            "950.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "RACING CLUB ASOCIACION CIVIL / NOTAS A LOS ESTADOS CONTABLES / COMPOSICION DE LOS RUBROS DE ACTIVO CORRIENTE y NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "No Corriente $",
+          "values": [
+            "24.595.866"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jugadores Amateurs Valor de Origen $ 3.772.927 $",
+          "values": [
+            "1.074.239"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "Corriente                                 $0 / No Corriente                      $ 3.772.927 / Corriente                                 $0 / No Corriente                            $ 735",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Activo Corriente $",
+          "values": [
+            "874.896"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Activo No Corriente $",
+          "values": [
+            "28.369.528"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "RACING CLUB ASOCIACION CIVIL / NOTAS A LOS ESTADOS CONTABLES / COMPOSICION DE LOS RUBROS DE PASIVO CORRIENTE y NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Remuneraciones $ 1.369.420 $",
+          "values": [
+            "1.244.988"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cargas Sociales $ 1.103.828 $",
+          "values": [
+            "1.470.032"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "3.2) Deudas Comerciales / 3.3) Deudas Fiscales",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Moratoria Impositiva $ 3.878.314 $",
+          "values": [
+            "5.280.775"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Corriente $",
+          "values": [
+            "457.724"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "No Corriente $",
+          "values": [
+            "3.420.590"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Corriente $",
+          "values": [
+            "29.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "No Corriente $",
+          "values": [
+            "80.458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retención Ganancias $ 1.166.865 $",
+          "values": [
+            "2.760.617"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IVA a Pagar $ 646.828 $",
+          "values": [
+            "475.956"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Pasivo Corriente $",
+          "values": [
+            "2.300.817"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Pasivo No Corriente $",
+          "values": [
+            "3.501.048"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "RACING CLUB ASOCIACION CIVIL / NOTAS A LOS ESTADOS CONTABLES / COMPOSICION DE LOS RUBROS DE PASIVO CORRIENTE y NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Premios Jugadores / Cuerpo Técnico $ 8.428 $",
+          "values": [
+            "460.182"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Asociación del Futbol Argentino $ 5.788.958 $",
+          "values": [
+            "3.497.398"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otras Deudas $ 12.657.571 $",
+          "values": [
+            "83.158"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Corriente $",
+          "values": [
+            "3.980.031"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "No Corriente $",
+          "values": [
+            "8.677.540"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras Contingencias Diversas $ 4.629.205 $",
+          "values": [
+            "5.765.022"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "No Corriente $",
+          "values": [
+            "4.629.205"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Corriente $",
+          "values": [
+            "932.472"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "No Corriente $",
+          "values": [
+            "316.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Préstamos Plantel Profesional $ 155.051 $",
+          "values": [
+            "1.364.937"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda todo Concepto Contratos $",
+          "values": [
+            "21.151.843"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "No Corriente $",
+          "values": [
+            "21.151.843"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opción de Compra a Ejercer $",
+          "values": [
+            "20.565.315"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Primas a Pagar $ 9.569.182 $",
+          "values": [
+            "8.829.131"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Corriente $",
+          "values": [
+            "7.608.097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "No Corriente $",
+          "values": [
+            "1.961.086"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jug / Cpo Técnico a Devengar -$",
+          "values": [
+            "1.246.472"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Corriente -$",
+          "values": [
+            "930.472"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "No Corriente -$",
+          "values": [
+            "316.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Primas a Devengar -$ 7.868.088 -$",
+          "values": [
+            "7.932.007"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Corriente -$",
+          "values": [
+            "6.019.321"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "No Corriente -$",
+          "values": [
+            "1.848.767"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opción de Compra a Ejercer -$",
+          "values": [
+            "20.349.915"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Por todo Concepto Contratos -$",
+          "values": [
+            "20.963.963"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "Corriente                                    $0 / No Corriente                       -$ 20.963.963",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Pasivo Corriente $",
+          "values": [
+            "12.589.989"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Pasivo No Corriente $",
+          "values": [
+            "13.606.944"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "RACING CLUB ASOCIACION CIVIL / NOTAS A LOS ESTADOS CONTABLES / COMPOSICION DE LOS RUBROS DE PASIVO CORRIENTE y NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Juicios Diversos $ 4.522.094 $",
+          "values": [
+            "5.890.178"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jucio Quiebra $ 26.628.608 $",
+          "values": [
+            "27.106.515"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "No Corriente $",
+          "values": [
+            "26.628.608"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Pasivo Corriente $",
+          "values": [
+            "4.522.094"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Pasivo No Corriente $",
+          "values": [
+            "26.628.608"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "RACING CLUB ASOCIACION CIVIL / NOTAS A LOS ESTADOS CONTABLES / COMPOSICION DE LOS RUBROS DE PATRIMONIO NETO Y RESULTADOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Resultados Ejercicios Anteriores $ 9.988.930 -$",
+          "values": [
+            "2.540.604"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes Resultado Ejercicio Anterior $0 $",
+          "values": [
+            "4.752.746"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado del Ejercicio (Ganancia) $ 2.687.137 $",
+          "values": [
+            "7.776.788"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 10,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Total Recursos Extraordinarios $0 $ 8.994.400 $ 201.440 $ 9.195.840 $",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 10,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "TOTALES $ 18.267.409 $ 66.609.684 $ 2.527.808 $ 87.404.901 $",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 18,
+      "section": "Corriente                                 $0 / No Corriente                      $ 3.772.927 / Corriente                                 $0 / No Corriente                            $ 735",
+      "likelyRelevant": false,
+      "totalLabel": "Total Activo Corriente $",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 18,
+      "section": "Corriente                                 $0 / No Corriente                      $ 3.772.927 / Corriente                                 $0 / No Corriente                            $ 735",
+      "likelyRelevant": false,
+      "totalLabel": "Total Activo No Corriente $",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 19,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Total Pasivo Corriente $",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 19,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Total Pasivo No Corriente $",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 20,
+      "section": "Corriente                                    $0 / No Corriente                       -$ 20.963.963",
+      "likelyRelevant": false,
+      "totalLabel": "Total Pasivo Corriente $",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 20,
+      "section": "Corriente                                    $0 / No Corriente                       -$ 20.963.963",
+      "likelyRelevant": false,
+      "totalLabel": "Total Pasivo No Corriente $",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 21,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Total Pasivo Corriente $",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 21,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Total Pasivo No Corriente $",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 26,
+    "results": [
+      {
+        "label": "Generales (Anexo II) $ 18.267.409 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generales (Anexo II) $ 18.267.409 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Especìficos (Anexo II) $ 57.615.284 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Especìficos (Anexo II) $ 57.615.284 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diversos (Anexo II) $ 2.326.368 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diversos (Anexo II) $ 2.326.368 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generales (Anexo III) $ 21.372.687 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generales (Anexo III) $ 21.372.687 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Especìficos (Anexo III) $ 38.065.448 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Especìficos (Anexo III) $ 38.065.448 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses Financieros $ 58.230 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses Financieros $ 58.230 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencias de Cambio $ 1.499.065 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencias de Cambio $ 1.499.065 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses Financieros $ 622.539 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses Financieros $ 622.539 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencias de Cambio $ 1.096.718 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencias de Cambio $ 1.096.718 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cuotas Sociales $ 7.643.229 $ 7.643.229 $",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "member_dues",
+        "matchedLabel": "Cuotas sociales",
+        "similarity": 50
+      },
+      {
+        "label": "Cuotas Sociales $ 7.643.229 $ 7.643.229 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Televisaciòn / Televisiòn AFA $ 14.534.089 $ 14.534.089 $",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "broadcasting",
+        "matchedLabel": "Televisación / Televisión AFA",
+        "similarity": 60
+      },
+      {
+        "label": "Televisaciòn / Televisiòn AFA $ 14.534.089 $ 14.534.089 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Campeonatos Oficiales $ 6.828.116 $ 6.828.116 $",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "matchday_competition",
+        "matchedLabel": "Campeonatos oficiales",
+        "similarity": 50
+      },
+      {
+        "label": "Campeonatos Oficiales $ 6.828.116 $ 6.828.116 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros Torneos $ 473.000 $ 473.000 $",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "matchday_competition",
+        "matchedLabel": "Otros torneos",
+        "similarity": 50
+      },
+      {
+        "label": "Otros Torneos $ 473.000 $ 473.000 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos Alquiler $ 504.617 $ 504.617 $",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Ingresos alquiler",
+        "similarity": 50
+      },
+      {
+        "label": "Ingresos Alquiler $ 504.617 $ 504.617 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos Publicidad $ 5.458.068 $ 5.458.068 $",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Ingresos publicidad",
+        "similarity": 50
+      },
+      {
+        "label": "Ingresos Publicidad $ 5.458.068 $ 5.458.068 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros Ingresos Diversos $ 502.250 $ 502.250 $",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Otros ingresos diversos",
+        "similarity": 60
+      },
+      {
+        "label": "Otros Ingresos Diversos $ 502.250 $ 502.250 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros Ingresos Deportivos $ 727.336 $ 727.336 $",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Otros ingresos deportivos",
+        "similarity": 60
+      },
+      {
+        "label": "Otros Ingresos Deportivos $ 727.336 $ 727.336 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transferencia de Jugadores $ 2.818.447 $ 37.623.127 $ 40.441.574 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transferencia de Jugadores $ 2.818.447 $ 37.623.127 $ 40.441.574 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cesiòn de Ingresos $0 -$",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cesiòn de Ingresos $0 -$",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado Extraordinario s/Quiebra $0 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado Extraordinario s/Quiebra $0 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Blanquiceleste por cuenta y Orden de Racing $0 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Blanquiceleste por cuenta y Orden de Racing $0 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sueldos del Personal $ 14.309.759 $ 14.309.759 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sueldos del Personal $ 14.309.759 $ 14.309.759 $",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Sueldos del personal",
+        "similarity": 60
+      },
+      {
+        "label": "Cargas Sociales $ 2.260.641 $ 2.260.641 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cargas Sociales $ 2.260.641 $ 2.260.641 $",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Cargas sociales",
+        "similarity": 50
+      },
+      {
+        "label": "Resultados Ejercicios Anteriores $ 9.988.930 -$",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultados Ejercicios Anteriores $ 9.988.930 -$",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ajustes Resultado Ejercicio Anterior $0 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ajustes Resultado Ejercicio Anterior $0 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado del Ejercicio (Ganancia) $ 2.687.137 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado del Ejercicio (Ganancia) $ 2.687.137 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Racing Club",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 2,
+      "line": "- 55 / 56 - Activos y Pasivos en Moneda Extranjera"
+    },
+    {
+      "page": 12,
+      "line": "Detalle de los Activos y Pasivos en Moneda Extranjera"
+    },
+    {
+      "page": 12,
+      "line": "ACTIVOS Y PASIVOS EN MONEDA EXTRANJERA"
+    },
+    {
+      "page": 12,
+      "line": "MONEDA EXTRANJERA                                                  TOTAL"
+    },
+    {
+      "page": 12,
+      "line": "Caja Moneda Extranjera                                                  Euros              50.000   $ 5,6200           $ 281.000         $ 281.000                $0"
+    },
+    {
+      "page": 13,
+      "line": "Detalle de los Activos y Pasivos en Moneda Extranjera"
+    },
+    {
+      "page": 13,
+      "line": "ACTIVOS Y PASIVOS EN MONEDA EXTRANJERA"
+    },
+    {
+      "page": 13,
+      "line": "MONEDA EXTRANJERA                                                    TOTAL"
+    },
+    {
+      "page": 15,
+      "line": "1.3.2          Moneda Extranjera"
+    },
+    {
+      "page": 15,
+      "line": "Los Activos y Pasivos en moneda extranjera han sido valuados a los tipos de cambio"
+    },
+    {
+      "page": 16,
+      "line": "Caja en Moneda Extranjera EUR                                                 $ 281.000            $0"
+    }
+  ],
+  "warnings": [
+    "10 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

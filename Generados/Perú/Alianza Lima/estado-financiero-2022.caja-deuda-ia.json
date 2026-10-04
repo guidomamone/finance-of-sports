@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Perú/Alianza Lima/estado-financiero-2022.md",
+ "generado": "2026-10-02T00:10:04.801Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"deuda concursal parte corriente\" + \"deuda concursal parte no corriente\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "(Expresado en Soles)",
+ "caja": {
+  "lineas": [
+   74
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   92,
+   97
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Texto del balance mezclado con el dictamen por OCR; la deuda concursal corriente (4,000,000) está en L92 y la no corriente (46,038,719) en L97."
+}

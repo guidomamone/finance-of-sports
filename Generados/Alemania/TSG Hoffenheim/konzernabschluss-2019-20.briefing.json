@@ -1,0 +1,303 @@
+{
+  "club": "hoffenheim-de",
+  "year": 2020,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2019-20.md",
+  "generatedAt": "2026-09-30T21:50:36.823Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 197,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 7,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 4,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Spieltagseinnahmen verzeichneten aufgrund der Nicht-Teilnahme am europäischen Klubwettbewerb (VJ T€3.488) sowie der pandemiebedingten Austragung der letzten 4 Heimspiele ohne Zuschauer einen Rückgang von 34 Prozent. Da sich die Transfererlöse",
+          "values": [
+            "(T€114.184)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "im Vergleich zum Vorjahr (VJ T€22.307) mehr als verfünffacht haben, liegt der Konzern im Ergebnis mit T€228.356 deutlich über dem Vorjahresniveau (VJ T€",
+          "values": [
+            "163.765)."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "UNTERNEHMENSREGISTER / EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "I. Immaterielle Vermögensgegenstände",
+          "values": [
+            "75.358.657,00",
+            "48.919.013,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. entgeltlich erworbene Konzessionen, gewerbliche Schutzrechte und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+          "values": [
+            "75.358.657,00",
+            "48.919.013,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I. Sachanlagen",
+          "values": [
+            "69.515.714,00",
+            "72.594.120,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+          "values": [
+            "63.313.322,00",
+            "66.474.221,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. technische Anlagen und Maschinen",
+          "values": [
+            "2.849.657,00",
+            "3.318.167,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "2.301.762,00",
+            "2.779",
+            "312,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. geleistete Anzahlungen und Anlagen im Bau",
+          "values": [
+            "1.050.973,00",
+            "22.420,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Finanzanlagen",
+          "values": [
+            "25.000,00",
+            "25.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Anteile an verbundenen Unternehmen",
+          "values": [
+            "25.000,00",
+            "25.000,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Periodenergebnis",
+          "values": [
+            "55.569.888",
+            "593.900",
+            "56.163.788"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand zum",
+          "values": [
+            "30.06.2020",
+            "2.500.000",
+            "210.944.281",
+            "-3.671.646",
+            "209.772.635"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Ausgabe von Anteilen 0 0 0 0 / Erwerb/V eräußerung eigener Anteile 0 0 0 0 / Gezahlte Dividende / Entnahmen -4.720.031 0 -4.720.031 -4.720.031 / Änderungen Konsolidierungskreis 0 0 0 0 / Übrige Änderungen 0 0 0 0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Periodenergebnis",
+          "values": [
+            "1.039.380",
+            "3.847",
+            "1.043.227",
+            "57.207.015"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand zum",
+          "values": [
+            "30.06.2020",
+            "65.400.217",
+            "57.145",
+            "65.457.362",
+            "275.229.997"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 13,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Forderungen aus Lieferungen und Leistungen",
+          "values": [
+            "29.154.907,01",
+            "28.500.407,01",
+            "654.500,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Forderungen gegen Verbundene Unternehmen",
+          "values": [
+            "311.346,81",
+            "311.346,81",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Sonstige Vermögensgegenstände",
+          "values": [
+            "60.895.601,24",
+            "860.601,24",
+            "60.035.000,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "90.361.855,06 29.672.355,06 60.689.500,00 0,00",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bei den Steuerrückstellungen handelt es sich um Gewerbesteuer für die Jahre 2015 bis 2020 (T€4.225) sowie Lohnsteuer aus Außenprüfungen für die Jahre 2014 bis 2020",
+          "values": [
+            "(T€4.013)."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Die sonstigen Rückstellungen bestehen im Wesentlichen aus Rückstellungen für Berufsgenossenschaftsbeiträge (T€ 1.376), ausstehende Rechnungen (T€ 1.219), Prämien (T€310), Nachzahlungszinsen auf Steuern (T€360) und Urlaubsrückstellungen",
+          "values": [
+            "(T€437)."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2. technische Anlagen und Maschinen",
+          "values": [
+            "2.849.657",
+            "3.318.167"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "2.301.762",
+            "2.779.312"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Anlagen im Bau",
+          "values": [
+            "1.050.973",
+            "22.420"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "Periodenergebnis",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Periodenergebnis",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Stand zum",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Stand zum",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "de",
+    "query": "TSG Hoffenheim",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Dinamarca/Vejle/aarsrapport-2024-12-31.md",
+ "generado": "2026-10-02T00:21:14.826Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "t.kr.",
+ "caja": {
+  "lineas": [
+   622
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   658,
+   664
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El pasivo tiene las etiquetas separadas de las cifras (L686-L701) y el OCR está dañado, así que el mapeo es incierto. Elegí la línea 'Ansvarlig lånekapital' (préstamo subordinado, 23.203 aprox.) y la porción corriente de deuda de largo plazo (L664). Excluí los arrendamientos (L656) y la deuda con accionistas (L667), aunque esta última podría tener carácter financiero."
+}

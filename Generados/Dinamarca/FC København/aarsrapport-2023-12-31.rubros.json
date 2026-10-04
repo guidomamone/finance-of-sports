@@ -1,0 +1,205 @@
+{
+  "md": "Clubes/Dinamarca/FC København/aarsrapport-2023-12-31.md",
+  "pdf": "Clubes/Dinamarca/FC København/aarsrapport-2023-12-31.pdf",
+  "club": "fckobenhavn-dk",
+  "year": 2023,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:59:55.729Z",
+  "tieOuts": {
+    "cierran": 2,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 15,
+    "notasUsadas": [
+      "6"
+    ]
+  },
+  "ladoConocido": 5,
+  "rubros": [
+    {
+      "label": "Nettoomsætning",
+      "lado": "revenue",
+      "page": 8,
+      "section": "Hovedtal og nøgletal / 2023 / t.kr. / Resultatopgørelse:",
+      "values": [
+        833.492
+      ],
+      "origen": "estado 0",
+      "glosa": "Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Finansielle poster, netto",
+      "lado": null,
+      "page": 8,
+      "section": "Hovedtal og nøgletal / 2023 / t.kr. / Resultatopgørelse:",
+      "values": [
+        -8.509
+      ],
+      "origen": "estado 0",
+      "glosa": "Resultado financiero neto"
+    },
+    {
+      "label": "Likviditetsgrad",
+      "lado": null,
+      "page": 8,
+      "section": "Medarbejdere: / Gennemsnitligt antal heltidsansatte medarbejdere 545 / Nøgletal i %:",
+      "values": [
+        169.1
+      ],
+      "origen": "estado 2",
+      "glosa": "Ratio de liquidez"
+    },
+    {
+      "label": "Soliditetsgrad",
+      "lado": null,
+      "page": 8,
+      "section": "Medarbejdere: / Gennemsnitligt antal heltidsansatte medarbejdere 545 / Nøgletal i %:",
+      "values": [
+        60.8
+      ],
+      "origen": "estado 2",
+      "glosa": "Ratio de solvencia"
+    },
+    {
+      "label": "Afkastningsgrad",
+      "lado": null,
+      "page": 8,
+      "section": "Medarbejdere: / Gennemsnitligt antal heltidsansatte medarbejdere 545 / Nøgletal i %:",
+      "values": [
+        35
+      ],
+      "origen": "estado 2",
+      "glosa": "Rentabilidad económica"
+    },
+    {
+      "label": "Balancesum",
+      "lado": null,
+      "page": 8,
+      "section": "Balance:",
+      "values": [
+        859.559
+      ],
+      "origen": "estado 1",
+      "glosa": "Total activo"
+    },
+    {
+      "label": "Investeringer i materielle anlægsaktiver",
+      "lado": null,
+      "page": 8,
+      "section": "Balance:",
+      "values": [
+        54.375
+      ],
+      "origen": "estado 1",
+      "glosa": "Inversiones en inmovilizado material"
+    },
+    {
+      "label": "Virksomhedskapital",
+      "lado": null,
+      "page": 15,
+      "section": "Balance 31. december / Passiver / Note 2023 / Egenkapital",
+      "values": [
+        30
+      ],
+      "origen": "nota 6 (ancla 1)",
+      "ancla": "Egenkapital",
+      "glosa": "Capital social"
+    },
+    {
+      "label": "Egenkapital",
+      "lado": null,
+      "page": 8,
+      "section": "Balance:",
+      "values": [
+        522.741
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Patrimonio neto"
+    },
+    {
+      "label": "Overkurs ved emission",
+      "lado": null,
+      "page": 15,
+      "section": "Balance 31. december / Passiver / Note 2023 / Egenkapital",
+      "values": [
+        200.484219
+      ],
+      "origen": "nota 6 (ancla 1)",
+      "ancla": "Egenkapital",
+      "glosa": "Prima de emisión"
+    },
+    {
+      "label": "Overført resultat",
+      "lado": null,
+      "page": 15,
+      "section": "Balance 31. december / Passiver / Note 2023 / Egenkapital",
+      "values": [
+        192.256569
+      ],
+      "origen": "nota 6 (ancla 1)",
+      "ancla": "Egenkapital",
+      "glosa": "Resultados acumulados"
+    },
+    {
+      "label": "Foreslået udbytte for regnskabsåret",
+      "lado": null,
+      "page": 15,
+      "section": "Balance 31. december / Passiver / Note 2023 / Egenkapital",
+      "values": [
+        100
+      ],
+      "origen": "nota 6 (ancla 1)",
+      "ancla": "Egenkapital",
+      "glosa": "Dividendo propuesto para el ejercicio"
+    },
+    {
+      "label": "Lønninger og gager",
+      "lado": "expense",
+      "page": 17,
+      "section": "marked / 3... Honorar til generalforsamlingsvalgt revisor / oplysningerne er indeholdt i koncernregnskabet for PARKEN Sport & Entertainment A/S. / 2023 / 4. Personaleomkostninger",
+      "values": [
+        274.109752
+      ],
+      "origen": "estado 9",
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Pensioner",
+      "lado": "expense",
+      "page": 17,
+      "section": "marked / 3... Honorar til generalforsamlingsvalgt revisor / oplysningerne er indeholdt i koncernregnskabet for PARKEN Sport & Entertainment A/S. / 2023 / 4. Personaleomkostninger",
+      "values": [
+        11.870619
+      ],
+      "origen": "estado 9",
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring",
+      "lado": "expense",
+      "page": 17,
+      "section": "marked / 3... Honorar til generalforsamlingsvalgt revisor / oplysningerne er indeholdt i koncernregnskabet for PARKEN Sport & Entertainment A/S. / 2023 / 4. Personaleomkostninger",
+      "values": [
+        1.894439
+      ],
+      "origen": "estado 9",
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Personaleomkostninger i øvrigt",
+      "lado": "expense",
+      "page": 17,
+      "section": "marked / 3... Honorar til generalforsamlingsvalgt revisor / oplysningerne er indeholdt i koncernregnskabet for PARKEN Sport & Entertainment A/S. / 2023 / 4. Personaleomkostninger",
+      "values": [
+        4.92416
+      ],
+      "origen": "estado 9",
+      "glosa": "Otros gastos de personal"
+    }
+  ]
+}

@@ -1,0 +1,2791 @@
+{
+  "club": "ferrocarriloeste-ar",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-119-2022-23.md",
+  "generatedAt": "2026-09-30T22:38:56.930Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 619,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 34,
+  "relevantTableCount": 11,
+  "tables": [
+    {
+      "page": 2,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / ESTADO DE SITUACION PATRIMONIAL / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caja y Bancos ( Nota 4.1) 59.450.677,25 8.415.826,64 Deudas Comerciales (Nota 4.7)",
+          "values": [
+            "293.229.142,73",
+            "274.393.963,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inversiones (Nota 4.2) 2.415.248,15 6.273.570,24 Deudas Financieras (Nota 4.8)",
+          "values": [
+            "175.893.949,71",
+            "200.839.954,64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Creditos ( Nota 4.3) 422.069.857,60 100.426.061,80 Deudas Sociales y Fiscales (Nota 4.9)",
+          "values": [
+            "289.044.510,04",
+            "326.088.759,22"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bienes para consumo ( Nota 4.4) 42.785.200,79 32.123.618,19 Provisiones-Contingencias Judiciales (Nota",
+          "values": [
+            "4.10)",
+            "223.510.961,35",
+            "33.040.897,55"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bienes de Uso ( Anexo A ) 7.458.693.945,29 7.356.773.953,98 Deudas Financieras (Nota 4.8)",
+          "values": [
+            "239.129.381,37",
+            "454.803.307,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costo de jugadores propios ( Nota 4.5 ) 564.527.204,80 448.340.587,24 Deudas Sociales y Fiscales (Nota 4.9)",
+          "values": [
+            "193.212.428,68",
+            "172.177.628,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Activos ( Nota 4.6 ) 13.508.167,59 10.611.892,86 Previsiones-Contingencias Judiciales (Nota",
+          "values": [
+            "4,10)",
+            "56.866.918,22",
+            "44.661.876,31"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2023 / RECURSOS ORDINARIOS:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Para fines generales ( Anexo B )",
+          "values": [
+            "879.624.082,77",
+            "783.729.031,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Específicos ( Anexo B )",
+          "values": [
+            "1.959.106.589,22",
+            "1.481.311.825,13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Recursos Ordinarios",
+          "values": [
+            "2.838.730.671,99",
+            "2.265.040.857,03"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 3,
+      "section": "GASTOS ORDINARIOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Específicos de sectores ( Anexo D )",
+          "values": [
+            "-2.554.742.490,88",
+            "-2.068.346.177,39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Generales de administración ( Anexo E )",
+          "values": [
+            "-358.156.826,45",
+            "-337.083.151,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizaciones de bienes ( Anexo A )",
+          "values": [
+            "-26.148.514,64",
+            "-24.186.202,77"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Gastos Ordinarios",
+          "values": [
+            "-2.939.047.831,97",
+            "-2.429.615.531,42"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / ESTADO DE FLUJO DE EFECTIVO / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Efectivo y Equivalentes al inicio del Ejercicio",
+          "values": [
+            "8.415.826,64",
+            "5.388.802,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo y Equivalentes al cierre del Ejercicio",
+          "values": [
+            "59.450.677,25",
+            "8.415.826,64"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "II- Causas de la Variacion del Efectivo y Equivalentes / Actividades Operativas / Ajustes para arribar al flujo neto de efectivo proveniente de las actividades ordinarias / Cambios en activos y pasivos operativos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aumento / Disminución Inversiones",
+          "values": [
+            "3.858.322,09",
+            "3.189.476,07"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento / Disminución en Créditos",
+          "values": [
+            "-321.643.795,80",
+            "67.845.088,38"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento / Disminución Bs. P/consumo",
+          "values": [
+            "-10.661.582,60",
+            "-20.088.663,37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento / Disminución en Deudas",
+          "values": [
+            "-237.794.201,12",
+            "-88.300.856,95"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento / Disminución Provisiones",
+          "values": [
+            "202.675.105,71",
+            "-37.332.162,91"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Otras causas de variaciones de efectivo",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aumento / Disminución Otros activos",
+          "values": [
+            "-2.896.274,73",
+            "-2.781.245,97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento / Dismunución Costo jugadores propios",
+          "values": [
+            "-116.186.617,56",
+            "-69.565.602,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compra de Bienes de Uso (Anexo A)",
+          "values": [
+            "-205.392.391,86",
+            "-428.005.741,68"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "BIENES DE USO / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terreno",
+          "values": [
+            "3.504.455.430,08",
+            "0,00",
+            "3.504.455.430,08",
+            "0,00",
+            "0,00",
+            "3.504.455.430,08",
+            "3.504.455.430,08"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificios y Construcciones",
+          "values": [
+            "1.275.618.369,54",
+            "0,00",
+            "1.275.618.369,54",
+            "529.801.874,64",
+            "5.974.532,46",
+            "77.323.885,91",
+            "613.100.293,01",
+            "662.518.076,53",
+            "745.816.494,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instalaciones",
+          "values": [
+            "155.373.905,90",
+            "12.846.352,25",
+            "0,00",
+            "168.220.258,15",
+            "101.774.235,59",
+            "11.139.409,14",
+            "0,00",
+            "112.913.644,73",
+            "55.306.613,42",
+            "53.599.670,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Muebles y Utiles",
+          "values": [
+            "40.112.905,93",
+            "3.215.351,84",
+            "0,00",
+            "43.328.257,77",
+            "22.294.982,12",
+            "1.987.096,61",
+            "0,00",
+            "24.282.078,73",
+            "19.046.179,04",
+            "17.817.923,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinarias y Equipos",
+          "values": [
+            "34.594.056,17",
+            "2.929.667,71",
+            "0,00",
+            "37.523.723,88",
+            "19.018.505,95",
+            "2.311.943,61",
+            "0,00",
+            "21.330.449,56",
+            "16.193.274,32",
+            "15.575.550,22"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Herramientas",
+          "values": [
+            "6.330.849,34",
+            "0,00",
+            "0,00",
+            "6.330.849,34",
+            "4.702.455,52",
+            "154.954,39",
+            "0,00",
+            "4.857.409,91",
+            "1.473.439,43",
+            "1.628.393,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aparatos y elementos deport.",
+          "values": [
+            "37.651.669,65",
+            "2.527.787,71",
+            "0,00",
+            "40.179.457,36",
+            "32.088.349,78",
+            "1.533.416,59",
+            "0,00",
+            "33.621.766,37",
+            "6.557.690,99",
+            "5.563.319,87"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipos de sonido y video",
+          "values": [
+            "15.855.831,84",
+            "886.736,28",
+            "0,00",
+            "16.742.568,12",
+            "9.084.031,48",
+            "1.490.701,12",
+            "0,00",
+            "10.574.732,60",
+            "6.167.835,52",
+            "6.771.800,36"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instrumental cientifico",
+          "values": [
+            "2.322.263,00",
+            "221.702,48",
+            "0,00",
+            "2.543.965,48",
+            "2.256.598,57",
+            "97.493,26",
+            "0,00",
+            "2.354.091,83",
+            "189.873,65",
+            "65.664,43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Moblaje",
+          "values": [
+            "32.300.196,29",
+            "2.542.041,47",
+            "0,00",
+            "34.842.237,76",
+            "25.456.069,35",
+            "1.458.967,46",
+            "0,00",
+            "26.915.036,81",
+            "7.927.200,95",
+            "6.844.126,94"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rodados",
+          "values": [
+            "5.812.499,16",
+            "0,00",
+            "0,00",
+            "5.812.499,16",
+            "5.812.499,16",
+            "0,00",
+            "5.812.499,16",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obras en curso",
+          "values": [
+            "2.998.635.579,24",
+            "180.222.752,12",
+            "0,00",
+            "3.178.858.331,36",
+            "0,00",
+            "0,00",
+            "0,00",
+            "3.178.858.331,36",
+            "2.998.635.579,24"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "RECURSOS ORDINARIOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2023 / DETALLE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Servicios a Socios (Anexo C)",
+          "values": [
+            "99.496.063,68",
+            "99.496.063,68",
+            "74.312.705,40",
+            "74.312.705,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos por Actividades Federadas (Anexo C)",
+          "values": [
+            "236.364.697,41",
+            "236.364.697,41",
+            "255.969.960,86",
+            "255.969.960,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingreso por Colonia de Vacaciones",
+          "values": [
+            "191.371.406,86",
+            "191.371.406,86",
+            "165.400.609,09",
+            "165.400.609,09"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingreso por Colegio Instituto Educativo",
+          "values": [
+            "264.637.640,00",
+            "264.637.640,00",
+            "238.822.808,50",
+            "238.822.808,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingreso por Instituto del Deporte",
+          "values": [
+            "811.688,65",
+            "811.688,65",
+            "996.137,84",
+            "996.137,84"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingreso por Escuelas Deportivas (Anexo C)",
+          "values": [
+            "247.443.036,35",
+            "247.443.036,35",
+            "211.719.503,78",
+            "211.719.503,78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos Ponteveedra",
+          "values": [
+            "36.082.914,64",
+            "36.082.914,64",
+            "37.957.189,63",
+            "37.957.189,63"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 7,
+      "section": "Otros Ingresos Ordinarios",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Recaudaciones Eventos Deportivos",
+          "values": [
+            "32.507.326,86",
+            "32.507.326,86",
+            "9.074.705,09",
+            "9.074.705,09"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos por Torneos",
+          "values": [
+            "8.256.661,31",
+            "8.256.661,31",
+            "5.444.427,57",
+            "5.444.427,57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de Television",
+          "values": [
+            "115.609.920,00",
+            "115.609.920,00",
+            "146.876.544,53",
+            "146.876.544,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta de Abonos y Plateas",
+          "values": [
+            "15.491.412,32",
+            "15.491.412,32",
+            "33.210.838,86",
+            "33.210.838,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingreso por Publicidad y Sponsors",
+          "values": [
+            "48.888.311,82",
+            "48.888.311,82",
+            "89.973.851,99",
+            "89.973.851,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos por Alquileres",
+          "values": [
+            "122.049.192,14",
+            "122.049.192,14",
+            "42.558.109,09",
+            "42.558.109,09"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos por Buffet",
+          "values": [
+            "7.150.960,63",
+            "7.150.960,63",
+            "6.457.944,28",
+            "6.457.944,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Futbol Profesional Ventas y Prestamos",
+          "values": [
+            "459.755.137,88",
+            "459.755.137,88",
+            "1.824.794,65",
+            "1.824.794,65"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Ingresos",
+          "values": [
+            "1.140.521,34",
+            "1.140.521,34",
+            "8.654.039,53",
+            "8.654.039,53"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 7,
+      "section": "Ingresos Extraordinarios",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Derechos de Formacion y afines",
+          "values": [
+            "70.979.941,33",
+            "70.979.941,33",
+            "26.173.085,94",
+            "26.173.085,94"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subsidios Recibidos",
+          "values": [
+            "1.069.756,00",
+            "1.069.756,00",
+            "125.884.568,50",
+            "125.884.568,50"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 8,
+      "section": "CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos por Servicios a Socios",
+          "values": [
+            "99.496.063,68",
+            "74.312.705,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Natación",
+          "values": [
+            "40.661.524,69",
+            "32.023.069,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fitnes",
+          "values": [
+            "22.907.303,74",
+            "14.091.514,54"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tenis",
+          "values": [
+            "21.017.293,45",
+            "18.027.302,18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Racquetball",
+          "values": [
+            "1.287.922,55",
+            "929.314,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "13.622.019,25",
+            "9.241.504,80"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos por Actividades Federadas",
+          "values": [
+            "236.364.697,41",
+            "255.969.960,88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Futbol Infantil",
+          "values": [
+            "27.899.284,95",
+            "21.133.382,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Futsal",
+          "values": [
+            "48.212.335,94",
+            "54.031.835,17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hockey",
+          "values": [
+            "36.817.674,52",
+            "39.084.831,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handball",
+          "values": [
+            "34.240.556,90",
+            "41.881.732,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voleyball",
+          "values": [
+            "46.327.993,89",
+            "43.482.217,45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Basquetball",
+          "values": [
+            "21.697.750,30",
+            "36.356.376,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gimnasia Artistica y Ritmica",
+          "values": [
+            "8.800.549,20",
+            "9.343.278,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tenis",
+          "values": [
+            "7.235.033,72",
+            "8.545.708,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Natación",
+          "values": [
+            "1.944.235,15",
+            "1.828.095,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "3.189.282,84",
+            "282.502,31"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingreso por Escuelas Deportivas",
+          "values": [
+            "247.443.036,35",
+            "211.719.503,78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Natación",
+          "values": [
+            "37.909.885,79",
+            "31.146.925,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tenis",
+          "values": [
+            "34.606.378,41",
+            "34.180.766,43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Futsal",
+          "values": [
+            "56.293.535,60",
+            "41.224.507,20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gimnasia Artistica y Ritmica",
+          "values": [
+            "20.494.262,13",
+            "17.493.057,30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hockey",
+          "values": [
+            "19.646.684,20",
+            "19.524.485,38"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Basquetball",
+          "values": [
+            "17.777.268,83",
+            "16.474.617,18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patin",
+          "values": [
+            "4.730.843,69",
+            "4.997.372,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handball",
+          "values": [
+            "9.396.920,52",
+            "6.269.344,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voleyball",
+          "values": [
+            "10.595.363,13",
+            "8.651.413,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fitnes",
+          "values": [
+            "6.799.046,91",
+            "3.641.320,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efi",
+          "values": [
+            "9.419.300,02",
+            "9.602.932,91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Running",
+          "values": [
+            "1.801.829,90",
+            "1.792.087,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Beisbol",
+          "values": [
+            "4.959.551,83",
+            "5.678.327,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taekwondo",
+          "values": [
+            "3.202.844,08",
+            "2.583.330,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Boxeo",
+          "values": [
+            "3.101.309,10",
+            "2.242.301,52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Racquetball",
+          "values": [
+            "632.883,35",
+            "484.224,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Judo/Karate/Lucha y otros deportes de cotacto",
+          "values": [
+            "3.882.332,91",
+            "3.686.415,61"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajedrez",
+          "values": [
+            "568.556,25",
+            "597.148,20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tenis de Mesa",
+          "values": [
+            "1.624.239,70",
+            "1.448.926,01"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "GASTOS ESPECIFICOS DE DEPARTAMENTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Basequetball Profesional",
+          "values": [
+            "124.822.388,37",
+            "118.728.712,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Basquetball",
+          "values": [
+            "38.119.249,60",
+            "47.009.299,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Beisball",
+          "values": [
+            "4.290.060,81",
+            "3.769.564,85"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Boxeo",
+          "values": [
+            "1.971.456,24",
+            "2.224.120,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efi",
+          "values": [
+            "8.810.610,89",
+            "7.195.859,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fitnes",
+          "values": [
+            "18.804.272,23",
+            "19.505.085,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Futsal",
+          "values": [
+            "89.613.699,64",
+            "82.377.420,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gimnasia Artistica y Ritmica",
+          "values": [
+            "29.222.098,01",
+            "22.114.617,46"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handball",
+          "values": [
+            "42.433.094,10",
+            "47.111.850,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hockey",
+          "values": [
+            "36.555.475,12",
+            "32.296.357,97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Judo",
+          "values": [
+            "4.101.989,19",
+            "2.527.267,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Natacion",
+          "values": [
+            "92.500.643,61",
+            "74.249.088,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patin",
+          "values": [
+            "3.414.742,18",
+            "3.400.833,07"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Racquetball",
+          "values": [
+            "683.763,18",
+            "704.667,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taekwondo",
+          "values": [
+            "4.563.729,23",
+            "6.155.831,75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tenis",
+          "values": [
+            "59.515.615,70",
+            "52.189.868,91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tenis de Mesa",
+          "values": [
+            "3.158.849,77",
+            "2.662.232,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voley",
+          "values": [
+            "54.336.465,73",
+            "50.058.598,94"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "30.496.668,76",
+            "28.107.292,16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Departamento Deportes",
+          "values": [
+            "647.414.872,36",
+            "602.388.569,33"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "3- Gastos Especificos Departamento Fútbol",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Departamento de Futbol Profesional",
+          "values": [
+            "766.030.130,67",
+            "587.823.860,07"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Departamento de Futbol Femenino",
+          "values": [
+            "35.148.810,30",
+            "25.927.045,20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Departamento de Futbol Infantil",
+          "values": [
+            "10.741.247,39",
+            "14.755.356,25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Departamento de Futbo Amateur",
+          "values": [
+            "56.548.922,12",
+            "42.975.473,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Departamento de Futbol",
+          "values": [
+            "868.469.110,48",
+            "671.481.735,05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4- Departamento Medico",
+          "values": [
+            "28.051.388,95",
+            "14.054.004,11"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "5- Egresos por Actividades",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Egresos por Instituto Educativo",
+          "values": [
+            "255.842.559,58",
+            "262.121.478,75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egresos por Colonia de Vacaciones",
+          "values": [
+            "32.675.087,63",
+            "42.736.212,94"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egresos por Instituto del Deporte",
+          "values": [
+            "890.963,40",
+            "2.040.108,25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egresos Ponteveedra",
+          "values": [
+            "72.358.611,29",
+            "68.655.879,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Egresos por Actividades",
+          "values": [
+            "361.767.221,90",
+            "375.553.678,98"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "6- Intendencia Campos de Deportes",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Egresos Sede Social",
+          "values": [
+            "91.372.933,06",
+            "46.722.478,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egresos Campo Deportivo",
+          "values": [
+            "198.667.728,39",
+            "97.515.232,85"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egresos Anexos",
+          "values": [
+            "9.041.559,91",
+            "4.482.794,79"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egresos Generales",
+          "values": [
+            "253.639.078,81",
+            "197.962.764,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Intendencia Campos de Deportes",
+          "values": [
+            "552.721.300,17",
+            "346.683.270,88"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "7- Otros Egresos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Egresos Departamento Cultural",
+          "values": [
+            "10.530,40",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Otros Egresos",
+          "values": [
+            "10.530,40",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Gastos Especificos de Departamentos",
+          "values": [
+            "2.554.742.490,88",
+            "2.068.346.177,39"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 12,
+      "section": "ACTIVOS Y PASIVOS EN MONEDA EXTRANJERA / MONEDA EXTRANJERA / ACTIVO / ACTIVO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caja en Moneda Extrajera U$S",
+          "values": [
+            "802,00",
+            "255,00",
+            "204.510,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudores varios en Moneda Extranjera €",
+          "values": [
+            "1.200.000,00",
+            "278,00",
+            "333.600.000,00",
+            "30.418.292,52"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "indicadores. / Nacional de Estadística y Censos (INDEC) alcance o sobrepase el 100 %. / Gobierno (JG) de la Federación Argentina de Consejos Profesionales de Ciencias Económicas",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "significativos. El referido Decreto N° 664/2003 fue derogado tras la promulgación de la Ley N°",
+          "values": [
+            "27.468,"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "el 3 de diciembre de",
+          "values": [
+            "2018."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "profesionales surgidos de las inferiores del Club de acuerdo al siguiente detalle: / División                  Categoría          Cantidad       Total      Valor Activado / Futbol Profesional        En Primera             14 / A préstamo              9          26           46.329.605,17",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pases Comprados 3",
+          "values": [
+            "60.107.434,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "106.437.039,25"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "ACTIVO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CAJA CENTRAL",
+          "values": [
+            "2.162.744,50",
+            "644.211,18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FONDOS FIJOS",
+          "values": [
+            "2.533.657,79",
+            "1.658.935,60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAJA MONEDA EXTRAN",
+          "values": [
+            "204.510,00",
+            "1.210.533,64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VALORES A DEPOSITAR",
+          "values": [
+            "2.708.000,00",
+            "2.522.520,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO CREDICOOP",
+          "values": [
+            "71.807,97",
+            "46.678,69"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO PATAGONIA CUENTA CORRIENTE",
+          "values": [
+            "0,00",
+            "1.624.357,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO COMERCIO CUENTA CORRIENTE",
+          "values": [
+            "0,00",
+            "120.462,27"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "BANCO SUPERVIELLE CUENTA CORRIENTE",
+          "values": [
+            "51.769.956,99",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO SANTANDER CUENTA CORRIENTE",
+          "values": [
+            "0,00",
+            "588.127,95"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "BANCO CIUDAD PLAZO FIJO EN PESOS                 2.419.731,83     6.283.237,05 / INTERESES A DEVENGAR POR PLAZO FIJO                 -4.483,68        -9.666,81",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "DEUDORES VARIOS",
+          "values": [
+            "2.524.055,95",
+            "1.292.557,92"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEUDORES VS EN MONEDA EXTRANJ. (Anexo G)",
+          "values": [
+            "333.600.000,00",
+            "30.418.292,52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEUDORES POR CUOTAS SOC. CORRIENTES",
+          "values": [
+            "69.561.516,11",
+            "82.768.090,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEUDORES POR CUOTA INST. EDUCATIVO",
+          "values": [
+            "14.340.876,56",
+            "10.632.623,49"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TARJETAS DE CREDITO A COBRAR",
+          "values": [
+            "1.670.840,31",
+            "2.251.621,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPUESTOS Y CONTRIB. SALDO A FAVOR",
+          "values": [
+            "1.292.453,83",
+            "4.621.059,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS PAGADOS POR ADELANTADO",
+          "values": [
+            "5.240.028,65",
+            "1.197.873,60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMBARGOS JUDICIALES (Nota 7)",
+          "values": [
+            "10.202.485,58",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPOSITOS EN GARANTIA",
+          "values": [
+            "103.950,00",
+            "509.786,20"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "PREVISION CUOTAS SOC. INCOBRABLES (Anexo F)   -16.466.349,39   -33.265.843,25 / INDUMENTARIA E IMPLEMENTOS DEPORTIVOS           42.785.200,79    32.123.618,19",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "JUGADORES FUTBOL AMATEUR (Nota 3.8)",
+          "values": [
+            "458.090.165,52",
+            "390.208.151,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COSTOS JUGADORES PROFESIONALES (Nota 3.8)",
+          "values": [
+            "106.437.039,28",
+            "58.132.435,34"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 18,
+      "section": "SOFTWARE                                        13.508.167,59    10.611.892,86 / PASIVO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "PROVEEDORES",
+          "values": [
+            "78.400.457,52",
+            "82.215.328,66"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CHEQUES PROPIOS A RECUPERAR (Nota",
+          "values": [
+            "3.9.2)",
+            "438.350,00",
+            "4.047.955,80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ALQU., PUB y ADELANTOS DE CLIENTES",
+          "values": [
+            "118.437.719,00",
+            "86.162.869,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CHEQUES DIFERIDOS A PAGAR",
+          "values": [
+            "95.952.616,21",
+            "101.967.809,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "4.8       Deudas Financieras / Corriente",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "PRESTAMOS BANCARIOS",
+          "values": [
+            "35.483.626,97",
+            "44.541.520,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PRESTAMOS RECIBIDOS EN DOLARES",
+          "values": [
+            "70.494.184,00",
+            "73.724.290,64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PRESTAMOS RECIBIDOS EN PESOS",
+          "values": [
+            "18.955.989,74",
+            "19.740.017,48"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ACREEDORES VARIOS",
+          "values": [
+            "48.742.997,36",
+            "60.682.453,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ADELANTOS EN CUENTA CORRIENTE",
+          "values": [
+            "2.217.151,64",
+            "2.151.672,60"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "175.893.949,71     200.839.954,64 / No Corriente",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "PRESTAMOS BANCARIOS",
+          "values": [
+            "23.727.892,72",
+            "38.308.560,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PRESTAMOS RECIBIDOS EN PESOS",
+          "values": [
+            "215.401.488,65",
+            "416.494.747,48"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "239.129.381,37     454.803.307,83 / 4.9       Deudas Sociales y Fiscales / Corriente",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "REMUNERACIONES A PAGAR",
+          "values": [
+            "136.735.351,74",
+            "163.819.514,52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CARGAS SOCIALES A PAGAR",
+          "values": [
+            "84.135.442,39",
+            "124.638.276,02"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CONVENIOS DE PAGO EXTRAJUDICIALES",
+          "values": [
+            "50.824.433,12",
+            "29.105.983,30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPUESTOS Y CONTRIBUCIONES",
+          "values": [
+            "17.349.282,79",
+            "8.524.985,38"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "289.044.510,04     326.088.759,22 / No Corriente",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CONVENIOS DE PAGO EXTRAJUDICIALES",
+          "values": [
+            "19.699.076,21",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPUESTOS Y CONTRIBUCIONES",
+          "values": [
+            "173.513.352,47",
+            "172.177.628,68"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "193.212.428,68     172.177.628,68 / 4.10      Provisiones - Contingencias / Corriente",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CONTINGENCIAS JUDICIALES (Anexo F)",
+          "values": [
+            "32.160.461,35",
+            "33.040.897,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROVISION GASTOS VENTA JUGADOR",
+          "values": [
+            "191.350.500,00",
+            "0.00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "223.510.961,35      33.040.897,55 / No Corriente / Previsiones - Contingencias Judiciales",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "PASIVO QUIEBRA",
+          "values": [
+            "2.415.248,15",
+            "6.273.570,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CONTINGENCIAS JUDICIALES (Anexo F)",
+          "values": [
+            "54.451.670,07",
+            "38.388.306,08"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "percibir el 15 % del monto neto de la operación. / presente estado contable. / ingreso para el Club. / Nota Nº 10: Diferencias de Cambio dentro del Recpam / extranjera, valuados a moneda de cierre detallamos los mismos a continuación:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Generadas por Activos",
+          "values": [
+            "97.309.920,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Generados por Pasivos",
+          "values": [
+            "-36.299.244,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ganancia Neta",
+          "values": [
+            "61.010.676,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 3,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2023 / RECURSOS ORDINARIOS:",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Recursos Ordinarios",
+      "target": "2.838.730.671,99",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / ESTADO DE RECURSOS Y GASTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2023 / RECURSOS ORDINARIOS:",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Recursos Ordinarios",
+      "target": "2.265.040.857,03",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "GASTOS ORDINARIOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Gastos Ordinarios",
+      "target": "-2.939.047.831,97",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "GASTOS ORDINARIOS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Gastos Ordinarios",
+      "target": "-2.429.615.531,42",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "GASTOS ESPECIFICOS DE DEPARTAMENTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2023",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Departamento Deportes",
+      "target": "647.414.872,36",
+      "addendCount": 19,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "GASTOS ESPECIFICOS DE DEPARTAMENTOS / CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2023",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Departamento Deportes",
+      "target": "602.388.569,33",
+      "addendCount": 19,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "3- Gastos Especificos Departamento Fútbol",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Departamento de Futbol",
+      "target": "868.469.110,48",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "3- Gastos Especificos Departamento Fútbol",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Departamento de Futbol",
+      "target": "671.481.735,05",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "5- Egresos por Actividades",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Egresos por Actividades",
+      "target": "361.767.221,90",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "5- Egresos por Actividades",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Egresos por Actividades",
+      "target": "375.553.678,98",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "6- Intendencia Campos de Deportes",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Intendencia Campos de Deportes",
+      "target": "552.721.300,17",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "6- Intendencia Campos de Deportes",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Intendencia Campos de Deportes",
+      "target": "346.683.270,88",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "7- Otros Egresos",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Otros Egresos",
+      "target": "10.530,40",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "7- Otros Egresos",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Otros Egresos",
+      "target": "0,00",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "7- Otros Egresos",
+      "likelyRelevant": true,
+      "totalLabel": "Total Gastos Especificos de Departamentos",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 16,
+      "section": "profesionales surgidos de las inferiores del Club de acuerdo al siguiente detalle: / División                  Categoría          Cantidad       Total      Valor Activado / Futbol Profesional        En Primera             14 / A préstamo              9          26           46.329.605,17",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "106.437.039,25",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-46329605.13"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 57,
+    "results": [
+      {
+        "label": "Para fines generales ( Anexo B )",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines generales ( Anexo B )",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Específicos ( Anexo B )",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Específicos ( Anexo B )",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Específicos de sectores ( Anexo D )",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Específicos de sectores ( Anexo D )",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generales de administración ( Anexo E )",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generales de administración ( Anexo E )",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos Generales de Administración (Anexo E)",
+        "similarity": 75
+      },
+      {
+        "label": "Amortizaciones de bienes ( Anexo A )",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizaciones de bienes ( Anexo A )",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "depreciation",
+        "matchedLabel": "Amortizaciones de bienes (Anexo A)",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Servicios a Socios (Anexo C)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Servicios a Socios (Anexo C)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos por Actividades Federadas (Anexo C)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos por Actividades Federadas (Anexo C)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingreso por Colonia de Vacaciones",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_sports",
+        "matchedLabel": "Colonia de Vacaciones",
+        "similarity": 50
+      },
+      {
+        "label": "Ingreso por Colonia de Vacaciones",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Egresos por Colonia de Vacaciones",
+        "similarity": 60
+      },
+      {
+        "label": "Ingreso por Colegio Instituto Educativo",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "education",
+        "matchedLabel": "Colegio Instituto Educativo",
+        "similarity": 60
+      },
+      {
+        "label": "Ingreso por Colegio Instituto Educativo",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "education_expense",
+        "matchedLabel": "Egresos por Instituto Educativo",
+        "similarity": 50
+      },
+      {
+        "label": "Ingreso por Instituto del Deporte",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_sports",
+        "matchedLabel": "Instituto del Deporte",
+        "similarity": 60
+      },
+      {
+        "label": "Ingreso por Instituto del Deporte",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Egresos por Instituto del Deporte",
+        "similarity": 67
+      },
+      {
+        "label": "Ingreso por Escuelas Deportivas (Anexo C)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingreso por Escuelas Deportivas (Anexo C)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos Ponteveedra",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_sports",
+        "matchedLabel": "Ingresos Ponteveedra",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Ingresos Ponteveedra",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Recaudaciones Eventos Deportivos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Recaudaciones Eventos Deportivos",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Recaudaciones Eventos Deportivos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos por Torneos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "competition_bonus",
+        "matchedLabel": "Ingresos por Torneos",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Ingresos por Torneos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Derechos de Television",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Derechos de Television",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Derechos de Television",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Venta de Abonos y Plateas",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "season_tickets",
+        "matchedLabel": "Venta de Abonos y Plateas",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Venta de Abonos y Plateas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingreso por Publicidad y Sponsors",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Publicidad y Sponsors",
+        "similarity": 50
+      },
+      {
+        "label": "Ingreso por Publicidad y Sponsors",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos por Alquileres",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Ingresos por Alquileres",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Ingresos por Alquileres",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos por Buffet",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Ingresos por Buffet",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Ingresos por Buffet",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Futbol Profesional Ventas y Prestamos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Fútbol Profesional: Ventas y Préstamos",
+        "years": [
+          "2023"
+        ]
+      },
+      {
+        "label": "Futbol Profesional Ventas y Prestamos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros Ingresos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Otros Ingresos",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Otros Ingresos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Derechos de Formacion y afines",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "youth_football",
+        "matchedLabel": "Derechos de Formación y afines",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Derechos de Formacion y afines",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Subsidios Recibidos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Subsidios Recibidos",
+        "years": [
+          "2023"
+        ]
+      },
+      {
+        "label": "Subsidios Recibidos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Basequetball Profesional",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Basequetball Profesional",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Basquetball",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Basquetball",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Beisball",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Beisball",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Boxeo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Boxeo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Efi",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Efi",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fitnes",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fitnes",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Futsal",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Futsal",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gimnasia Artistica y Ritmica",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gimnasia Artistica y Ritmica",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Handball",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Handball",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Hockey",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Hockey",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Judo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Judo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Natacion",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Natacion",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patin",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patin",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Racquetball",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Racquetball",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Taekwondo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Taekwondo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Tenis",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Tenis",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Tenis de Mesa",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Tenis de Mesa",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Voley",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Voley",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Otros Ingresos",
+        "similarity": 50
+      },
+      {
+        "label": "Otros",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Departamento de Futbol Profesional",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Departamento de Futbol Profesional",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Departamento de Fútbol Profesional",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Departamento de Futbol Femenino",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Departamento de Futbol Femenino",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Departamento de Fútbol Femenino",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Departamento de Futbol Infantil",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Departamento de Futbol Infantil",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Departamento de Fútbol Infantil",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Departamento de Futbo Amateur",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Departamento de Futbo Amateur",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Departamento de Fútbol Amateur",
+        "similarity": 50
+      },
+      {
+        "label": "4- Departamento Medico",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "4- Departamento Medico",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Departamento Médico",
+        "similarity": 100
+      },
+      {
+        "label": "Egresos por Instituto Educativo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Egresos por Instituto Educativo",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "education_expense",
+        "matchedLabel": "Egresos por Instituto Educativo",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Egresos por Colonia de Vacaciones",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_sports",
+        "matchedLabel": "Colonia de Vacaciones",
+        "similarity": 50
+      },
+      {
+        "label": "Egresos por Colonia de Vacaciones",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Egresos por Colonia de Vacaciones",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Egresos por Instituto del Deporte",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_sports",
+        "matchedLabel": "Instituto del Deporte",
+        "similarity": 60
+      },
+      {
+        "label": "Egresos por Instituto del Deporte",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Egresos por Instituto del Deporte",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Egresos Ponteveedra",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Egresos Ponteveedra",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Egresos Ponteveedra",
+        "years": [
+          "2022",
+          "2023"
+        ]
+      },
+      {
+        "label": "Egresos Departamento Cultural",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Egresos Departamento Cultural",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Egresos Departamento Cultural",
+        "years": [
+          "2023"
+        ]
+      },
+      {
+        "label": "JUGADORES FUTBOL AMATEUR (Nota 3.8)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "JUGADORES FUTBOL AMATEUR (Nota 3.8)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COSTOS JUGADORES PROFESIONALES (Nota 3.8)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COSTOS JUGADORES PROFESIONALES (Nota 3.8)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generadas por Activos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generadas por Activos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generados por Pasivos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generados por Pasivos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ganancia Neta",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ganancia Neta",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Ferro Carril Oeste",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 12,
+      "line": "ACTIVOS Y PASIVOS EN MONEDA EXTRANJERA"
+    },
+    {
+      "page": 12,
+      "line": "MONEDA EXTRANJERA"
+    },
+    {
+      "page": 12,
+      "line": "Deudores varios en Moneda Extranjera                                       €                         1.200.000,00    278,00    333.600.000,00          30.418.292,52"
+    },
+    {
+      "page": 15,
+      "line": "En moneda extranjera: a los respectivos tipos de cambio vigentes al cierre del ejercicio tomando como"
+    },
+    {
+      "page": 15,
+      "line": "base el tipo de cambio comprador del Banco de la Nación Argentina."
+    },
+    {
+      "page": 15,
+      "line": "En moneda extranjera a los respectivos tipos de cambio vigentes al cierre del ejercicio (30/06/2023)"
+    },
+    {
+      "page": 15,
+      "line": "tomando como base el tipo de cambio comprador del Banco de la Nación Argentina."
+    },
+    {
+      "page": 16,
+      "line": "En moneda extranjera: a los respectivos tipos de cambio vigentes al cierre del ejercicio tomando como"
+    }
+  ],
+  "warnings": [
+    "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

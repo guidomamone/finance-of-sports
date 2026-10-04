@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Fulham/fulham-full-accounts-2023-24.md",
+ "generado": "2026-10-02T00:15:34.748Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£'000",
+ "caja": {
+  "lineas": [
+   752
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El balance solo muestra 'Creditors' agregados (L754, L757) sin desglose; la deuda financiera (préstamos del accionista/matriz, sin bancos documentados) estaría dentro de la nota 11, que no se incluye, por lo que no se puede identificar una línea específica."
+}

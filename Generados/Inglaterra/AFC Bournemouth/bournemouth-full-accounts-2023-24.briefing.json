@@ -1,0 +1,1318 @@
+{
+  "club": "bournemouth-gb",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Inglaterra/AFC Bournemouth/bournemouth-full-accounts-2023-24.md",
+  "generatedAt": "2026-09-30T22:44:35.622Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 45,
+    "eu": 0,
+    "space": 9
+  },
+  "scannedWarning": false,
+  "tableCount": 33,
+  "relevantTableCount": 4,
+  "tables": [
+    {
+      "page": 7,
+      "section": "AFC BOURNEMOUTH LIMITED / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Turnover (£)",
+          "values": [
+            "160.8m",
+            "141.0m"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operating (loss)/profit (£)",
+          "values": [
+            "(55.8m)",
+            "§2.1m"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "AFC BOURNEMOUTH LIMITED / STATEMENT OF COMPREHENSIVE INCOME / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Turnover",
+          "values": [
+            "160,792",
+            "140,983"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other operating income",
+          "values": [
+            "8,825",
+            "2,035"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Exceptional other operating income 6 -",
+          "values": [
+            "71,444"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profit on disposal of players' registrations 7",
+          "values": [
+            "1,898"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Staff costs",
+          "values": [
+            "(136,170)",
+            "(100,109)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciation and amortisation charge",
+          "values": [
+            "(63,512)",
+            "(42,710)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other operating expenses",
+          "values": [
+            "(26,026)",
+            "(21,471)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operating (loss)/profit",
+          "values": [
+            "(55,840)",
+            "52,070"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 18,
+      "section": "Interest receivable and similar income 11 191 253",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Interest payable and similar expenses",
+          "values": [
+            "(10,502)",
+            "(7,828)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "{Loss)/profit before taxation",
+          "values": [
+            "(66,151)",
+            "44,495"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 19,
+      "section": "AFC BOURNEMOUTH LIMITED / REGISTERED NUMBER: 06632170 / STATEMENT OF FINANCIAL POSITION / AS AT 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intangible assets",
+          "values": [
+            "220,416",
+            "142,316"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tangible assets",
+          "values": [
+            "37,536",
+            "14,983"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "257,952 157,299 / Current assets / Stocks 16 402 642",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Debtors",
+          "values": [
+            "9,275",
+            "11,832"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash at bank and in hand",
+          "values": [
+            "7,104",
+            "5,930"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "16,781 18,404",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Creditors: amounts falling due within one year",
+          "values": [
+            "(196,080)",
+            "(195,194)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net current liabilities",
+          "values": [
+            "(179,299)",
+            "(176,790)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total assets less current liabilities",
+          "values": [
+            "78,653",
+            "(19,491)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Creditors: amounts falling due after more than one year",
+          "values": [
+            "(116,666)",
+            "(76,587)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Provisions for fiabilities / Other provisions 21 (12) (52) / Net liabilities (38,025) (96,130) / Capital and reserves",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Called up share capital",
+          "values": [
+            "145,366",
+            "21,110"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profit and loss account",
+          "values": [
+            "(183,391)",
+            "(117,240)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total shareholders’ deficit",
+          "values": [
+            "(38,025)",
+            "(96,130)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "AFC BOURNEMOUTH LIMITED / STATEMENT OF CHANGES IN EQUITY / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Profit for the financial year ~",
+          "values": [
+            "44,495",
+            "44,495"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total comprehensive income for the financial year -",
+          "values": [
+            "44,495",
+            "44,495"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "Contributions by and distributions to owners",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fair value adjustments on shareholder loans ~",
+          "values": [
+            "7,534",
+            "7,534"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total transactions with owners ~",
+          "values": [
+            "7,534",
+            "7,534"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 30 June 2023 and 1 July 2023",
+          "values": [
+            "21,110",
+            "(117,240)",
+            "(96,130)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "Comprehensive expense for the financial year",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Loss for the financial year ~",
+          "values": [
+            "(66,151)",
+            "(66,151)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total comprehensive expense for the financial year -",
+          "values": [
+            "(66,151)",
+            "(66,151)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 20,
+      "section": "Contributions by and distributions to owners",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Shareholder loans converted to A ordinary shares 124,256 -",
+          "values": [
+            "124,256"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total transactions with owners 124,256 -",
+          "values": [
+            "124,256"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 30 June 2024",
+          "values": [
+            "145,366",
+            "(183,391}",
+            "(38,025)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "AFC BOURNEMOUTH LIMITED / STATEMENT OF CASH FLOWS / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Amortisation of intangible assets",
+          "values": [
+            "61,616",
+            "41,226"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciation of tangible assets",
+          "values": [
+            "1,896",
+            "1,484"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Interest expense",
+          "values": [
+            "10,502",
+            "7,828"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Interest income (191) (253) / Decrease/(increase) in stocks 240 (383)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Increase in debtors",
+          "values": [
+            "(2,881)",
+            "(2,739)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Increase in creditors",
+          "values": [
+            "4,570",
+            "4,335"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "Decrease in provisions (40) (39) / Interest paid (693) (453)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Profit on disposal of players' registrations (251)",
+          "values": [
+            "(1,898)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Exceptional other operating income ~",
+          "values": [
+            "(71,444)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net cash generated from operating activities",
+          "values": [
+            "8,617",
+            "22,159"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Cash flows from investing activities",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Purchase of intangible assets",
+          "values": [
+            "(100,801)",
+            "(53,005)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sale of intangible assets",
+          "values": [
+            "6,958",
+            "14,715"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Purchase of tangible assets",
+          "values": [
+            "(23,455)",
+            "(6,315)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Capitalised interest on tangible assets (996) - / Net cash used in investing activities (118,294) (44,605) / Cash flows from financing activities",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "New secured loans",
+          "values": [
+            "17,200",
+            "22,800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "New shareholder loans",
+          "values": [
+            "98,800",
+            "115,261"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Repayment of other loans",
+          "values": [
+            "(5,149)",
+            "(110,903)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net cash generated from financing activities",
+          "values": [
+            "110,851",
+            "27,158"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Net increase in cash and cash equivalents",
+          "values": [
+            "1,174",
+            "4,712"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash and cash equivalents at the beginning of the financial year",
+          "values": [
+            "5,930",
+            "1,218"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cash and cash equivalents at the end of the financial year",
+          "values": [
+            "7,104",
+            "5,930"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "AFC BOURNEMOUTH LIMITED / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Premier League income",
+          "values": [
+            "135,631",
+            "122,203"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sponsorship and advertising",
+          "values": [
+            "12,120",
+            "8,652"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hospitality and events",
+          "values": [
+            "3,226",
+            "2,267"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Shop merchandise",
+          "values": [
+            "1,542",
+            "1,354"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": "AFC BOURNEMOUTH LIMITED / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depreciation of tangible assets",
+          "values": [
+            "1,896",
+            "1,484"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortisation of intangibles",
+          "values": [
+            "61,616",
+            "41,226"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profit on disposal of players’ registrations (251)",
+          "values": [
+            "(1,898)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "AFC BOURNEMOUTH LIMITED / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "£000",
+          "values": [
+            "£000."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aggregate directors' remuneration",
+          "values": [
+            "3,091",
+            "2,290"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "AFC BOURNEMOUTH LIMITED / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Implied interest on shareholder loans -",
+          "values": [
+            "3,597"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Implied interest on trade creditors with extended payment terms",
+          "values": [
+            "10,054",
+            "3,966"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "£000 £000 / (Loss)profit before taxation (66,151) 44,495 / (Loss)/profit before taxation multiplied by standard rate of corporation / tax in the UK of 25.00 (2023: 20.50%) (16,538) 9,121 / Effects of:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Expenses not deductible",
+          "values": [
+            "1,001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Income not taxable -_",
+          "values": [
+            "(14,644)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deferred tax not provided",
+          "values": [
+            "16,148",
+            "4,522"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "AFC BOURNEMOUTH LIMITED / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "At 1 July 2023 278,576",
+          "values": [
+            "278,933"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Additions 140,953",
+          "values": [
+            "140,986"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disposals (37,245) (98)",
+          "values": [
+            "(37,343)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 30 June 2024 382,284",
+          "values": [
+            "382,576"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "Accumulated amortisation",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "At 1 July 2023 136,373",
+          "values": [
+            "136,617"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charge for the year 61,577",
+          "values": [
+            "61,616"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disposals (35,975) (98)",
+          "values": [
+            "(36,073)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 30 June 2024 161,975",
+          "values": [
+            "162,160"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "Net book value",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "At 30 June 2024 220,309",
+          "values": [
+            "220,416"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 30 June 2023 142,203",
+          "values": [
+            "142,316"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "AFC BOURNEMOUTH LIMITED / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "At 1 July 2023 3,991 3,405 410,318",
+          "values": [
+            "4,221",
+            "3,800",
+            "26,133"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Additions - 4,398 399 299",
+          "values": [
+            "21,694",
+            "24,451"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Disposals - - (7) (54) (216) - (277) / Transfers - 2,885 - - - (2,885) - / At 30 June 2024 3,991 7,688 10,710 643 4,666 22,609 50,307 / Accumulated depreciation",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "At 1 July 2023 - 188 7,416 327 3,219 -",
+          "values": [
+            "11,150"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Charge for the year - 512 951 33 400 -",
+          "values": [
+            "1,896"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "Disposals - - (6) (53) (216) - (275) / At 30 June 2024 - 700 8,361 307 3,403 - 12,771 / Net book value",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "At 30 June 2024 3,991 6,988 2,349",
+          "values": [
+            "1,263",
+            "22,609",
+            "37,536"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 30 June 2023 3,991 3,217 2,902",
+          "values": [
+            "1,002",
+            "3,800",
+            "14,983"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 35,
+      "section": "AFC BOURNEMOUTH LIMITED / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bank loans and overdrafts",
+          "values": [
+            "3,000",
+            "5,149"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trade creditors",
+          "values": [
+            "53,952",
+            "37,660"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amounts owed to group undertakings",
+          "values": [
+            "89,779",
+            "115,261"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxation and social security",
+          "values": [
+            "9,841",
+            "7,942"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 35,
+      "section": "Other creditors 61 48",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Accruals",
+          "values": [
+            "33,358",
+            "22,456"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deferred income",
+          "values": [
+            "6,089",
+            "6,678"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 36,
+      "section": "AFC BOURNEMOUTH LIMITED / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bank loans and overdrafts",
+          "values": [
+            "30,000",
+            "15,800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trade creditors",
+          "values": [
+            "60,561",
+            "44,328"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Accruals",
+          "values": [
+            "26,105",
+            "16,459"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 37,
+      "section": "AFC BOURNEMOUTH LIMITED / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "20,860 (2023: 20,860) Preference shares of £1,000 (2023:",
+          "values": [
+            "£1,000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "each",
+          "values": [
+            "20,860",
+            "20,860"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 38,
+      "section": "AFC BOURNEMOUTH LIMITED / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Later than 1 year and not later than 5 years",
+          "values": [
+            "2,775",
+            "2,992"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Later than 5 years",
+          "values": [
+            "10,040",
+            "10,824"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "AFC BOURNEMOUTH LIMITED / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "a company 40% owned by its immediate parent entity, through purchases of ENil (2023:",
+          "values": [
+            "£20,000,000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "and sales of £979,000 (2023: £Nil). The balance owed to Lorient at 30 June 2024 was",
+          "values": [
+            "£11,516,000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 19,
+      "section": "16,781 18,404",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total assets less current liabilities",
+      "target": "78,653",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-454032"
+    },
+    {
+      "page": 19,
+      "section": "16,781 18,404",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total assets less current liabilities",
+      "target": "(19,491)",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-352493"
+    },
+    {
+      "page": 19,
+      "section": "Provisions for fiabilities / Other provisions 21 (12) (52) / Net liabilities (38,025) (96,130) / Capital and reserves",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total shareholders’ deficit",
+      "target": "(38,025)",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "Provisions for fiabilities / Other provisions 21 (12) (52) / Net liabilities (38,025) (96,130) / Capital and reserves",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total shareholders’ deficit",
+      "target": "(96,130)",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "AFC BOURNEMOUTH LIMITED / STATEMENT OF CHANGES IN EQUITY / FOR THE YEAR ENDED 30 JUNE 2024",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total comprehensive income for the financial year -",
+      "target": "44,495",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "AFC BOURNEMOUTH LIMITED / STATEMENT OF CHANGES IN EQUITY / FOR THE YEAR ENDED 30 JUNE 2024",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total comprehensive income for the financial year -",
+      "target": "44,495",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "Contributions by and distributions to owners",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total transactions with owners ~",
+      "target": "7,534",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "Contributions by and distributions to owners",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total transactions with owners ~",
+      "target": "7,534",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "Comprehensive expense for the financial year",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total comprehensive expense for the financial year -",
+      "target": "(66,151)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "Comprehensive expense for the financial year",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total comprehensive expense for the financial year -",
+      "target": "(66,151)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "Contributions by and distributions to owners",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total transactions with owners 124,256 -",
+      "target": "124,256",
+      "addendCount": 1,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 13,
+    "results": [
+      {
+        "label": "Turnover",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Turnover",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Other operating income",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Other income",
+        "similarity": 67
+      },
+      {
+        "label": "Other operating income",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Other operating expenses",
+        "similarity": 50
+      },
+      {
+        "label": "Exceptional other operating income 6 -",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Other income",
+        "similarity": 50
+      },
+      {
+        "label": "Exceptional other operating income 6 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Profit on disposal of players' registrations 7",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "player_sales",
+        "matchedLabel": "Profit on disposal of players' registrations",
+        "similarity": 100
+      },
+      {
+        "label": "Profit on disposal of players' registrations 7",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Staff costs",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Staff costs",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Staff costs",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Depreciation and amortisation charge",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciation and amortisation charge",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Other operating expenses",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Other operating expenses",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Other operating expenses",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Operating (loss)/profit",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operating (loss)/profit",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Interest payable and similar expenses",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Interest payable and similar expenses",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "{Loss)/profit before taxation",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "{Loss)/profit before taxation",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Loss for the financial year ~",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Loss for the financial year ~",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Increase in debtors",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Increase in debtors",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Increase in creditors",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Increase in creditors",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "gb",
+    "query": "AFC Bournemouth",
+    "matches": [
+      {
+        "leagueId": "gb-premierleague",
+        "year": "2024",
+        "matchedName": "Bournemouth",
+        "wikipediaPage": "2023–24 Premier League"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": [
+    "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ]
+}

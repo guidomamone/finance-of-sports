@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.md",
+ "generado": "2026-10-03T03:42:39.073Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "caja": {
+  "lineas": [
+   167
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   167
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La L167 contiene tanto caja (2.133.179) como Empréstimos bancários (1.400) en el pasivo. El mútuo con parte relacionada I-9 Sports (L179, 111.803.207, sin juros) no se incluyó como deuda financiera bancaria, aunque podría considerarse financiamiento. Las aplicações financeiras de projetos incentivados (L175) son restringidas y no se incluyeron en caja."
+}

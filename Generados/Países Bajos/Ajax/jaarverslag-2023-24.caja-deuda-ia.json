@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Países Bajos/Ajax/jaarverslag-2023-24.md",
+ "generado": "2026-10-02T00:09:44.714Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "BEDRAGEN x EUR 1.000",
+ "caja": {
+  "lineas": [
+   4051
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "Balance consolidado sin préstamos bancarios ni financieros; solo hay leaseverplichtingen (L4024, L4034) y overige schulden (probablemente deudas por transferencias), excluidas según el criterio indicado."
+}

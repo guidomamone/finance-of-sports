@@ -1,0 +1,364 @@
+{
+ "md": "Clubes/Brasil/Criciuma/relatorio-auditoria-2025.md",
+ "pdf": "Clubes/Brasil/Criciuma/relatorio-auditoria-2025.pdf",
+ "club": "criciuma",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:52:14.688Z",
+ "tieOuts": {
+  "cierran": 47,
+  "noCierran": 1
+ },
+ "warnings": [
+  "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 34,
+  "notasUsadas": []
+ },
+ "ladoConocido": 24,
+ "rubros": [
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": "revenue",
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO PERÍODO",
+   "values": [
+    56.280533
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "CUSTOS E DESPESAS OPERACIONAIS",
+   "lado": "expense",
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO PERÍODO",
+   "values": [
+    -80.922136
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Futebol Profissional",
+   "lado": null,
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO PERÍODO",
+   "values": [
+    -64.178298
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Futebol de Base",
+   "lado": null,
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO PERÍODO",
+   "values": [
+    -4.487895
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Futebol Feminino",
+   "lado": null,
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO PERÍODO",
+   "values": [
+    -0.920625
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Administrativo",
+   "lado": null,
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO PERÍODO",
+   "values": [
+    -3.036331
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento de Patrimônio",
+   "lado": null,
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO PERÍODO",
+   "values": [
+    -6.960257
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO PERÍODO",
+   "values": [
+    -1.338729
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas Financeiras",
+   "lado": "expense",
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO PERÍODO",
+   "values": [
+    -1.878701
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Receitas Financeiras",
+   "lado": "revenue",
+   "page": 9,
+   "section": "CRICIÚMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO DO PERÍODO",
+   "values": [
+    1.217231
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Descontos obtidos",
+   "lado": null,
+   "page": 24,
+   "section": "18 Resultado Financeiro",
+   "values": [
+    66892
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Juros Ativos",
+   "lado": null,
+   "page": 24,
+   "section": "18 Resultado Financeiro",
+   "values": [
+    581
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Rendas de aplicações financeiras",
+   "lado": null,
+   "page": 24,
+   "section": "18 Resultado Financeiro",
+   "values": [
+    1149758
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Despesas e comissões bancárias",
+   "lado": "expense",
+   "page": 24,
+   "section": "18 Resultado Financeiro",
+   "values": [
+    -75840
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Descontos concedidos",
+   "lado": null,
+   "page": 24,
+   "section": "18 Resultado Financeiro",
+   "values": [
+    -5518
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Encargos s/ tributos em atraso",
+   "lado": "expense",
+   "page": 24,
+   "section": "18 Resultado Financeiro",
+   "values": [
+    -32441
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Taxa Cobrança – Minha Entrada",
+   "lado": "expense",
+   "page": 24,
+   "section": "18 Resultado Financeiro",
+   "values": [
+    -1753144
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Juros passivos",
+   "lado": null,
+   "page": 24,
+   "section": "18 Resultado Financeiro",
+   "values": [
+    -11757
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Receita com transmissão",
+   "lado": "revenue",
+   "page": 24,
+   "section": "17 Receita operacional bruta",
+   "values": [
+    19562719
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Receita com sócios",
+   "lado": "revenue",
+   "page": 24,
+   "section": "17 Receita operacional bruta",
+   "values": [
+    17899329
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Receita com patrocínios",
+   "lado": "revenue",
+   "page": 24,
+   "section": "17 Receita operacional bruta",
+   "values": [
+    5707084
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Receita de subvenções",
+   "lado": "revenue",
+   "page": 24,
+   "section": "17 Receita operacional bruta",
+   "values": [
+    978593
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Receita com negociação de atletas",
+   "lado": "revenue",
+   "page": 24,
+   "section": "17 Receita operacional bruta",
+   "values": [
+    6337200
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Receita com jogos",
+   "lado": "revenue",
+   "page": 24,
+   "section": "17 Receita operacional bruta",
+   "values": [
+    966982
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Receita com licenciamento – royalties",
+   "lado": "revenue",
+   "page": 24,
+   "section": "17 Receita operacional bruta",
+   "values": [
+    796536
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Receita Timemania - CEF",
+   "lado": "revenue",
+   "page": 24,
+   "section": "17 Receita operacional bruta",
+   "values": [
+    1014457
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Demais Receitas",
+   "lado": "revenue",
+   "page": 24,
+   "section": "17 Receita operacional bruta",
+   "values": [
+    3017633
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Projeto de Formação de Atletas Amadores",
+   "lado": "revenue",
+   "page": 21,
+   "section": "10 Receitas de subvenções a realizar",
+   "values": [
+    2.923662
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Projeto de Construção CT – MESP",
+   "lado": "revenue",
+   "page": 21,
+   "section": "10 Receitas de subvenções a realizar",
+   "values": [
+    0.510628
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Projeto de Construção CT – MESP",
+   "lado": "revenue",
+   "page": 21,
+   "section": "10 Receitas de subvenções a realizar",
+   "values": [
+    2.968362
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Projeto de Construção CT – PMC",
+   "lado": "revenue",
+   "page": 21,
+   "section": "10 Receitas de subvenções a realizar",
+   "values": [
+    0.648143
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Saldo Inicial",
+   "lado": "expense",
+   "page": 20,
+   "section": "\\#1 – Vide Nota Explicativa 13 / Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "values": [
+    0.765608
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Atletas Profissionalizados",
+   "lado": "expense",
+   "page": 20,
+   "section": "\\#1 – Vide Nota Explicativa 13 / Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "values": [
+    1.092772
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Amortização",
+   "lado": "expense",
+   "page": 20,
+   "section": "\\#1 – Vide Nota Explicativa 13 / Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "values": [
+    -0.837506
+   ],
+   "origen": "estado 12"
+  }
+ ]
+}

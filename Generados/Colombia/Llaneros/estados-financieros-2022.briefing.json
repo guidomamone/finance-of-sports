@@ -1,0 +1,40 @@
+{
+  "club": "llaneros",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Llaneros/estados-financieros-2022.md",
+  "generatedAt": "2026-09-30T21:59:15.308Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 209,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 0,
+  "relevantTableCount": 0,
+  "tables": [],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/llaneros-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"llaneros\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [
+    {
+      "page": 7,
+      "line": "denominados en moneda extranjera se convierten a la unidad monetaria (u.m.)"
+    },
+    {
+      "page": 7,
+      "line": "ganancias o pérdidas por cambio de moneda extranjera se incluyen en otros"
+    },
+    {
+      "page": 9,
+      "line": "cotización de mercado al cierre del ejercicio."
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,291 @@
+{
+ "md": "Clubes/Inglaterra/Mercedes F1/mercedes-benz-grand-prix-group-accounts-2025.md",
+ "pdf": "Clubes/Inglaterra/Mercedes F1/mercedes-benz-grand-prix-group-accounts-2025.pdf",
+ "club": "mercedes-f1",
+ "year": 2025,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T22:04:01.933Z",
+ "tieOuts": {
+  "cierran": 73,
+  "noCierran": 32
+ },
+ "warnings": [
+  "1 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "31 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 25,
+  "notasUsadas": [
+   "13"
+  ]
+ },
+ "ladoConocido": 26,
+ "rubros": [
+  {
+   "label": "Sponsorship, branding and racing activities",
+   "lado": "revenue",
+   "page": 37,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED",
+   "values": [
+    541.746
+   ],
+   "origen": "nota 13 (ancla 5)",
+   "ancla": "Revenue"
+  },
+  {
+   "label": "Revenue",
+   "lado": "revenue",
+   "page": 18,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / CONSOLIDATED STATEMENT OF PROFIT AND LOSS AND OTHER COMPREHENSIVE INCOME / FOR THE YEAR ENDED 31 DECEMBER 2025",
+   "values": [
+    633.378
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Other",
+   "lado": "revenue",
+   "page": 37,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED",
+   "values": [
+    91.632
+   ],
+   "origen": "nota 13 (ancla 5)",
+   "ancla": "Revenue"
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 18,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / CONSOLIDATED STATEMENT OF PROFIT AND LOSS AND OTHER COMPREHENSIVE INCOME / FOR THE YEAR ENDED 31 DECEMBER 2025",
+   "values": [
+    -423.537
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Administrative expenses ’",
+   "lado": "expense",
+   "page": 18,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / CONSOLIDATED STATEMENT OF PROFIT AND LOSS AND OTHER COMPREHENSIVE INCOME / FOR THE YEAR ENDED 31 DECEMBER 2025",
+   "values": [
+    -43.134
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Finance income",
+   "lado": "revenue",
+   "page": 18,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / CONSOLIDATED STATEMENT OF PROFIT AND LOSS AND OTHER COMPREHENSIVE INCOME / FOR THE YEAR ENDED 31 DECEMBER 2025",
+   "values": [
+    2.65
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Revaluation of property, plant and equipment",
+   "lado": "expense",
+   "page": 40,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / Income tax recognised in other comprehensive income",
+   "values": [
+    1.41
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Deferred tax on share-based payments",
+   "lado": "expense",
+   "page": 40,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / Income tax recognised in other comprehensive income",
+   "values": [
+    -3.329
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Deferred tax on IFRS 16 transition",
+   "lado": "expense",
+   "page": 40,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / Income tax recognised in other comprehensive income",
+   "values": [
+    -0.167
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Deferred tax recognised directly in equity",
+   "lado": "expense",
+   "page": 40,
+   "section": "Tax recognised directly in equity",
+   "values": [
+    -2.086
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Depreciation and amortisation",
+   "lado": "expense",
+   "page": 38,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / 3 Expenses and auditor's remuneration",
+   "values": [
+    20.73
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Research and development expensed as incurred",
+   "lado": "expense",
+   "page": 38,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / 3 Expenses and auditor's remuneration",
+   "values": [
+    145.86
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Loss on disposal of property, plant and equipment",
+   "lado": "expense",
+   "page": 38,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / 3 Expenses and auditor's remuneration",
+   "values": [
+    -0.063
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Exchange differences",
+   "lado": "expense",
+   "page": 38,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED / 3 Expenses and auditor's remuneration",
+   "values": [
+    5.215
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Wages and salaries",
+   "lado": "expense",
+   "page": 38,
+   "section": "4 Staff numbers and costs",
+   "values": [
+    137.172
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Social security costs",
+   "lado": "expense",
+   "page": 38,
+   "section": "4 Staff numbers and costs",
+   "values": [
+    17.7
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Cost of defined contribution scheme",
+   "lado": "expense",
+   "page": 38,
+   "section": "4 Staff numbers and costs",
+   "values": [
+    2.673
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Property, plant and equipment",
+   "lado": "revenue",
+   "page": 48,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED",
+   "values": [
+    -6.63
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "IFRS transition adjustments",
+   "lado": "revenue",
+   "page": 48,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED",
+   "values": [
+    -7.38
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Provisions",
+   "lado": "revenue",
+   "page": 48,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED",
+   "values": [
+    0.585
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Property, plant and equipment",
+   "lado": "revenue",
+   "page": 49,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED",
+   "values": [
+    -6.729
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "IFRS adjustments",
+   "lado": "revenue",
+   "page": 49,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED",
+   "values": [
+    -7.38
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Provisions",
+   "lado": "revenue",
+   "page": 49,
+   "section": "MERCEDES-BENZ GRAND PRIX LIMITED",
+   "values": [
+    0.583
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Overtime . ; . ;",
+   "lado": "revenue",
+   "page": 37,
+   "section": "2025 2024* / . £000 £°000 / Timing of revenue recognition",
+   "values": [
+    483.859
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Point in time",
+   "lado": "revenue",
+   "page": 37,
+   "section": "2025 2024* / . £000 £°000 / Timing of revenue recognition",
+   "values": [
+    149.519
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Equity settled share-based payment expense",
+   "lado": "expense",
+   "page": 52,
+   "section": "Expense recognised",
+   "values": [
+    1.52
+   ],
+   "origen": "estado 49"
+  }
+ ]
+}

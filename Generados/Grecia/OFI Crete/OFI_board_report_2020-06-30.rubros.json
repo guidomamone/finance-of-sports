@@ -1,0 +1,59 @@
+{
+ "md": "Clubes/Grecia/OFI Crete/OFI_board_report_2020-06-30.md",
+ "pdf": "Clubes/Grecia/OFI Crete/OFI_board_report_2020-06-30.pdf",
+ "club": "ofi-crete",
+ "year": 2020,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:02:51.817Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": false,
+  "motivo": "no se pudo ubicar la columna del ejercicio"
+ },
+ "ladoConocido": 1,
+ "rubros": [
+  {
+   "label": "Ίδια κεφάλαια",
+   "lado": null,
+   "page": 3,
+   "section": "",
+   "values": [
+    "-987.572,07",
+    "",
+    "-2.072.155,63",
+    ""
+   ],
+   "columns": [
+    "Καθαρά αποτελέσματα χρήσεως προ φόρων",
+    "-2.613.092,91",
+    "-264,60%",
+    "-3.514.839,52",
+    "-169,62%"
+   ]
+  },
+  {
+   "label": "Πωλήσεις αποθεμάτων & υπηρεσιών",
+   "lado": "revenue",
+   "page": 3,
+   "section": "Ο αριθμοδείκτης αυτός απεικονίζει την αποδοτικότητα των ιδίων κεφαλαίων της εταιρείας.",
+   "values": [
+    "1.835.448,31",
+    "",
+    "1.399.916,86",
+    ""
+   ],
+   "columns": [
+    "Μικτά αποτελέσματα",
+    "-3.290.458,81",
+    "-179,27%",
+    "-3.443.692,86",
+    "-245,99%"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,305 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_board_report_2021-06-30.md",
+ "generatedAt": "2026-09-30T04:29:35.460Z",
+ "rubros": [
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Μικτό αποτέλεσμα",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "lump_football_operations",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "lump_football_operations",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.83
+    ],
+    [
+     "other_income",
+     0.15
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1291
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "match_organisation_expense",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Άλλα έξοδα και ζημίες",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "exceptional_items",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "admin_general_expense",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6
+    ],
+    [
+     "match_organisation_expense",
+     0.18000000000000002
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1295
+  },
+  {
+   "label": "Αποτέλεσμα προ φόρων",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "admin_general_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.42
+    ],
+    [
+     "other_income",
+     0.29
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1296
+  },
+  {
+   "label": "Φόρος εισοδήματος",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": null,
+   "page": 3,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "admin_general_expense",
+     0.39
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1296
+  }
+ ]
+}

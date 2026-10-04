@@ -1,0 +1,88 @@
+{
+  "md": "Clubes/Bélgica/Club Brugge/jaarrekening-2015-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Club Brugge/jaarrekening-2015-06-30-individual.pdf",
+  "club": "clubbrugge-be",
+  "year": 2015,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:54:44.202Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 6,
+    "notasUsadas": []
+  },
+  "ladoConocido": 6,
+  "rubros": [
+    {
+      "label": "SCHULDEN 17/49",
+      "lado": "expense",
+      "page": 5,
+      "section": "Pensioenen en soortgelijke verplichtingen 160 / Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 5.8 | 163/5 50.000 / Uitgestelde belastingen 168",
+      "values": [
+        28.219809
+      ],
+      "origen": "estado 6",
+      "glosa": "DEUDAS 17/49"
+    },
+    {
+      "label": "Schulden op meer dan één jaar 59 |",
+      "lado": "expense",
+      "page": 5,
+      "section": "Pensioenen en soortgelijke verplichtingen 160 / Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 5.8 | 163/5 50.000 / Uitgestelde belastingen 168",
+      "values": [
+        14.508692
+      ],
+      "origen": "estado 6",
+      "glosa": "Deudas a más de un año 59 |"
+    },
+    {
+      "label": "Financiële schulden 170/4",
+      "lado": "expense",
+      "page": 5,
+      "section": "Pensioenen en soortgelijke verplichtingen 160 / Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 5.8 | 163/5 50.000 / Uitgestelde belastingen 168",
+      "values": [
+        14.508692
+      ],
+      "origen": "estado 6",
+      "glosa": "Deudas financieras 170/4"
+    },
+    {
+      "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+      "lado": "expense",
+      "page": 20,
+      "section": "Personeelskosten",
+      "values": [
+        20904.275
+      ],
+      "origen": "estado 13",
+      "glosa": "Remuneraciones y prestaciones sociales directas"
+    },
+    {
+      "label": "Werkgeversbijdragen voor sociale verzekeringen",
+      "lado": "expense",
+      "page": 20,
+      "section": "Personeelskosten",
+      "values": [
+        4952.535
+      ],
+      "origen": "estado 13",
+      "glosa": "Cotizaciones patronales a la seguridad social"
+    },
+    {
+      "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+      "lado": "expense",
+      "page": 20,
+      "section": "Personeelskosten",
+      "values": [
+        742.087
+      ],
+      "origen": "estado 13",
+      "glosa": "Primas patronales de seguros extralegales"
+    }
+  ]
+}

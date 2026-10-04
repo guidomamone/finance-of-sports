@@ -1,0 +1,667 @@
+{
+  "club": "fortaleza-br",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Fortaleza/balancete-anual-associacao-2025.md",
+  "generatedAt": "2026-09-30T22:41:37.980Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 223,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 11,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 1,
+      "section": "1.01.01.03 APLICAÇÕES FINANCEIRAS D 8.482.412,09 8.153.378,00 574.995,94 D / 1.01.02 CRÉDITOS D 31.110.852,89 30.918.926,25 307.138,00 D / 1.01.02.01 DESPESAS ANTECIPADAS D 37.225,14 70.298,50 0,00 / 1.01.02.02 PATROCINADORES D 14.521.130,09 14.445.130,09 155.000,00 D / 1.01.02.03 CRÉDITOS A RECEBER 149.000,00 0,00 149.000,00 D",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1.01.02.04 ROYALTIES",
+          "values": [
+            "1.154.806,10",
+            "1.154.806,10",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.01.02.05 CESSÃO DE CAMAROTE",
+          "values": [
+            "425.257,91",
+            "425.257,91",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 1,
+      "section": "1.01.02.06 PREMIAÇÕES A RECEBER D 0,00 0,00 3.138,00 D",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1.01.02.08 DIREITO DE TRANSMISSÃO DE JOGOS",
+          "values": [
+            "4.013.816,24",
+            "4.013.816,24",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.01.02.09 CESSÃO TEMPORÁRIA A RECEBER",
+          "values": [
+            "2.506.303,34",
+            "2.506.303,34",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.01.02.14 CESSÃO DEFINITIVA A RECEBER",
+          "values": [
+            "7.825.310,00",
+            "7.825.310,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.01.02.15 CESSÃO ONEROSA TEMPORÁRIA A APROPRIAR",
+          "values": [
+            "108.277,64",
+            "108.277,64",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.01.02.17 MECANISMO DE SOLIDARIEDADE A RECEBER",
+          "values": [
+            "369.726,43",
+            "369.726,43",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "1.01.04 IMPOSTOS A RECUPERAR/COMPENSAR D 797.718,36 116.997,30 1.862.898,24 D / 1.01.04.01 IMPOSTOS A RECUPERAR D 131.407,33 2.402,22 1.311.182,29 D / 1.01.04.02 IMPOSTOS A COMPENSAR 666.311,03 114.595,08 551.715,95 D / 1.01.06 CLIENTES D 19.541.819,88 19.541.033,92 137.459,46 D / 1.01.06.02 CLIENTES - REVENDA DE PRODUTOS D 0,00 0,00 135.308,50 D",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1.01.06.05 MENSALIDADE SÓCIO TORCEDOR",
+          "values": [
+            "13.791.382,88",
+            "13.791.382,88",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.01.06.06 VENDAS DE INGRESSOS - FUTEBOL PROFISSIONA",
+          "values": [
+            "5.749.297,00",
+            "5.749.297,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "1.01.06.07 VENDAS DE INGRESSOS - FUTSAL D 1.140,00 354,04 2.150,96 D",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1.01.07 OUTROS CRÉDITOS D",
+          "values": [
+            "941.400,00",
+            "1.674.283,49",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.01.07.01 VALORES A APROPRIAR",
+          "values": [
+            "536.400,00",
+            "536.400,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.01.07.02 OUTROS CRÉDITOS D",
+          "values": [
+            "0,00",
+            "732.883,49",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.01.07.05 PATROCÍNIOS CONCEDIDOS A APROPRIAR",
+          "values": [
+            "405.000,00",
+            "405.000,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.01.08 CARTÃO DE CRÉDITO",
+          "values": [
+            "21.345.420,50",
+            "21.345.420,50",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.01.08.01 CARTÃO DE CRÉDITO",
+          "values": [
+            "21.345.420,50",
+            "21.345.420,50",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 2,
+      "section": "1.02.04 IMOBILIZADO 780.528,72 D 18.741,90 257.792,25 541.478,37 D / 1.02.04.01 BENS EM OPERAÇÃO 990.879,60 D 18.741,90 0,00 1.009.621,50 D / 1.02.04.02 DEPRECIAÇÃO BENS EM OPERAÇÃO 210.350,88 C 0,00 257.792,25 468.143,13 C / 1.02.05 INTANGÍVEL 62.332,00 D 255.731.526,30 255.731.436,30 62.422,00 D / 1.02.05.01 DIREITOS 62.422,00 D 0,00 0,00 62.422,00 D",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1.02.05.02 (-) AMORTIZAÇÃO 90,00 C",
+          "values": [
+            "90,00",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.02.05.06 GASTOS C/ CONTRATAÇÃO E RENOVAÇÃO",
+          "values": [
+            "0,00",
+            "188.188.692,58",
+            "188.188.692,58",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.02.05.07 (-) AMORTIZAÇÃO DE GASTOS C/ CONTRATAÇÃO IE",
+          "values": [
+            "0,00",
+            "67.032.727,50",
+            "67.032.727,50",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.02.05.09 ATLETAS FORMADOS",
+          "values": [
+            "0,00",
+            "510.016,22",
+            "510.016,22",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "2 PASSIVO 50.220.560,09 C 298.355.643,02 337.923.012,70  89.787.929,77 C / 2.01 PASSIVO CIRCULANTE 40.290.005,58 C 263.730.513,52 230.164.844,88 6.724.336,94 C / 2.01.01 OBRIGAÇÕES DE CURTO PRAZO 524.922,66 C  79.591.605,11  79.106.605,98 39.923,53 C / 2.01.01.01 FORNECEDORES 524.922,66 C  14628.385,73  14.133.386,60 29.923,53 C",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2.01.01.03 DIREITO DE USO DE IMAGEM A PAGAR",
+          "values": [
+            "0,00",
+            "5.988.582,00",
+            "5.988.582,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.01.06 EXIGIBILIDADES COM AGENTES - COMISSÕES",
+          "values": [
+            "0,00",
+            "14.086.174,78",
+            "14.086.174,78",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.01.08 LUVAS A PAGAR",
+          "values": [
+            "0,00",
+            "5.386.105,85",
+            "5.386.105,85",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "2.01.01.09 EXIGIBILIDADE COM OUTROS CLUBES 0,00 39.242.979,00  39.252.979,00 10.000,00 C",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2.01.01.10 COMISSÕES S/ PATROCINIO A PAGAR",
+          "values": [
+            "0,00",
+            "19.281,02",
+            "19.281,02",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.01.11 DIREITOS ECONÔMICOS E FINANCEIROS A PAGAF",
+          "values": [
+            "0,00",
+            "196.925,00",
+            "196.925,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.01.12 MECANISMO DE SOLIDARIEDADE A PAGAR",
+          "values": [
+            "0,00",
+            "43.171,73",
+            "43.171,73",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.02 EMPRÉSTIMOS E FINANCIAMENTOS 36.970.648,03 C",
+          "values": [
+            "139.975.065,13",
+            "103.004.417,10",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.02.01 EMPRÉSTIMOS",
+          "values": [
+            "0,00",
+            "49.751.802,80",
+            "49.751.802,80",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.02.07 CONTROLADORA, CONTROLADAS E COLIGADAS 36.970.648,03 C",
+          "values": [
+            "85.664.022,54",
+            "48.693.374,51",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.02.08 (-) JUROS A APROPRIAR",
+          "values": [
+            "0,00",
+            "4.559.239,79",
+            "4.559.239,79",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "2.01.04 OBRIGAÇÕES TRIBUTÁRIAS 133.919,62 C 4.954.367,60 9.778.914,33 4.958.466,35 C / 2.01.05.01 OBRIGAÇÕES COM O PESSOAL 178.708,64 C 1.734.012,59 1.571.497,54 16.193,59 C / 2.01.05.02 OBRIGAÇÕES SOCIAIS 12.111,91 C 993.061,43 1.001.774,49 20.824,97 C / 2.01.05.03 PROVISÕES 44.707,23 C 799.869,67 949.532,06 194.369,62 C / 2.01.06 OUTRAS OBRIGAÇÕES 438.481,45 C 6.617.690,31 6.752.385,92 573.177,06 C",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2.01.06.02 CONTAS A PAGAR",
+          "values": [
+            "0,00",
+            "3.707.854,47",
+            "3.707.854,47",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.06.03 AÇOES/ACORDOS TRABALHISTAS 125.118,49 C",
+          "values": [
+            "577.552,35",
+            "452.433,86",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.06.06 OUTRAS OBRIGAÇÕES A PAGAR",
+          "values": [
+            "0,00",
+            "31.457,82",
+            "31.457,82",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.06.07 ACORDOS JUDICIAIS A PAGAR",
+          "values": [
+            "0,00",
+            "92.400,00",
+            "92.400,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.06.10 ACORDOS EXTRA JUDICIAIS",
+          "values": [
+            "0,00",
+            "244.636,73",
+            "244.636,73",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.06.15 RECEITA DE CESSÃO TEMPORÁRIA A APROPRIAR",
+          "values": [
+            "0,00",
+            "1.638.788,94",
+            "1.638.788,94",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "2.01.06.16 PATROCINIOS CONCEDIDOS A PAGAR 0,00 325.000,00 405.000,00 80.000,00 C / 2.01.06.18 PROJETOS A REALIZAR 313.362,96 C 0,00 179.814,10 493.177,06 C",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2.01.07 PASSIVO CONTINGENTE 706.883,49 C",
+          "values": [
+            "706.883,49",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.07.01 PASSIVO CONTINGENTE 706.883,49 C",
+          "values": [
+            "706.883,49",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.09 RECEITAS A APROPRIAR 100.273,42 C",
+          "values": [
+            "26.877.745,51",
+            "26.777.472,09",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.09.02 RECEITAS DE PATROCINIOS 64.000,00 C",
+          "values": [
+            "10.084.776,85",
+            "10.020.776,85",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.09.03 RECEITAS ANTECIPADAS - SÓCIO TORCEDOR",
+          "values": [
+            "0,00",
+            "4.579.401,85",
+            "4.579.401,85",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.09.05 RECEITA C/ CESSÃO DE CAMAROTE",
+          "values": [
+            "0,00",
+            "195.000,00",
+            "195.000,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.09.08 RECEITA DE DIREITO DE TRANSMISSÃO DE JOGO:",
+          "values": [
+            "0,00",
+            "11.982.293,39",
+            "11.982.293,39",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.09.13 LUVAS A APROPRIAR 36.273,42 C",
+          "values": [
+            "36.273,42",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "2.02 PASSIVO NÃO-CIRCULANTE 7.437.056,68 C 34.625.129,50 107.758.167,82 80.570.095,00 C / 2.02.01.01 EMPRÉSTIMOS 0,00 2.683.312,52 2.683.312,52 0,00 / 2.02.01.03 PARCELAMENTOS 8.334.051,97 C 735.885,84 439.712,01 8.037.878,14 C / 2.02.01.04 PARCELAMENTOS E AJUIZAMENTOS 269.797,74 C 122.300,37 6.813,16 154.310,53 C",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2.02.01.05 RECEITAS A APROPRIAR - PATROCINIOS",
+          "values": [
+            "0,00",
+            "1.973.529,50",
+            "1.973.529,50",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.02.01.08 EXIGIBILIDADES COM AGENTES - COMISSÕES",
+          "values": [
+            "0,00",
+            "9.371.372,02",
+            "9.371.372,02",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Empresa: FORTALEZA ESPORTE CLUBE - CNPJ: 07.319.551/0001-61",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2.02.01.14 PASSIVO CONTINGENTE",
+          "values": [
+            "0,00",
+            "1.457.718,91",
+            "1.457.718,91",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.02.01.16 EXIGIBILIDADES COM OUTROS CLUBES",
+          "values": [
+            "0,00",
+            "10.415.155,50",
+            "10.415.155,50",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.02.01.19 LUVAS A APROPRIAR 84.638,01 C",
+          "values": [
+            "84.638,01",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 8,
+    "results": [
+      {
+        "label": "1.01.02.04 ROYALTIES",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Royalties",
+        "similarity": 100
+      },
+      {
+        "label": "1.01.02.04 ROYALTIES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1.01.02.05 CESSÃO DE CAMAROTE",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "stadium_other",
+        "matchedLabel": "Cessão de camarote",
+        "similarity": 100
+      },
+      {
+        "label": "1.01.02.05 CESSÃO DE CAMAROTE",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1.01.07 OUTROS CRÉDITOS D",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1.01.07 OUTROS CRÉDITOS D",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1.01.07.01 VALORES A APROPRIAR",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1.01.07.01 VALORES A APROPRIAR",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1.01.07.02 OUTROS CRÉDITOS D",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1.01.07.02 OUTROS CRÉDITOS D",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1.01.07.05 PATROCÍNIOS CONCEDIDOS A APROPRIAR",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1.01.07.05 PATROCÍNIOS CONCEDIDOS A APROPRIAR",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1.01.08 CARTÃO DE CRÉDITO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1.01.08 CARTÃO DE CRÉDITO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1.01.08.01 CARTÃO DE CRÉDITO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1.01.08.01 CARTÃO DE CRÉDITO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Fortaleza",
+    "matches": [
+      {
+        "leagueId": "br-serieA",
+        "year": "2025",
+        "matchedName": "Fortaleza",
+        "wikipediaPage": "2025 Campeonato Brasileiro Série A"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": []
+}

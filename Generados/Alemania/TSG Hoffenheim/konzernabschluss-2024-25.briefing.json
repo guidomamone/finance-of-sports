@@ -1,0 +1,228 @@
+{
+  "club": "hoffenheim-de",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2024-25.md",
+  "generatedAt": "2026-09-30T22:37:59.418Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 116,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 5,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 5,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "a) Löhne und Gehälter",
+          "values": [
+            "88.032.356",
+            "85.064"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) soziale abgaben und Aufwendungen für Altersversorgung und Unterstützung",
+          "values": [
+            "6.838.283",
+            "5.932"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "94.870.639 90.996 / 5. Abschreibungen",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "a) auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen",
+          "values": [
+            "43.885.434",
+            "30.139"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6. Sonstige betriebliche Aufwendungen",
+          "values": [
+            "60.442.856",
+            "54.149"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7. Sonstige Zinsen und ähnliche Erträge",
+          "values": [
+            "4.080.081",
+            "5.163"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "davon aus verbundenen Unternehmen",
+          "values": [
+            "€0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "8. Zinsen und ähnliche Aufwendungen 567.994 445 / 9. Steuern vom Einkommen und Ertrag 280.078 -3 / 10. Ergebnis nach Steuern -26.565.228 -23.160 / 11. sonstige Steuern 88.739 206",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "12. Ergebnis vor Übernahme",
+          "values": [
+            "-26.653.967",
+            "-23.366"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13. Ergebniszuweisung atypisch stille Gesellschafter",
+          "values": [
+            "27.754.237",
+            "24.634"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "14. Konzernjahresüberschuss",
+          "values": [
+            "1.100.270",
+            "1.268"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "15. auf andere Gesellschafter entfallender Gewinn/Verlust",
+          "values": [
+            "-1.289.426",
+            "-1.636"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 7,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bei den Steuerrückstellungen handelt es sich um Gewerbesteuer für die Jahre 2023 (T€ 1.305), 2024 (T€5) und 2025 (T€",
+          "values": [
+            "151)."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Die sonstigen Rückstellungen bestehen im Wesentlichen aus Rückstellungen für drohende Verluste (T€821), ausstehende Rechnungen (T€ 1.650), Berufsgenossenschaftsbeiträge (T€395), und Urlaubsrückstellungen",
+          "values": [
+            "(T€469)."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "UNTERNEHMENSREGISTER / T-EUR T-EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "23. Cashflow aus der Finanzierungstätigkeit",
+          "values": [
+            "72.697",
+            "25.747"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "24. Zahlungswirksame Veränderungen des Finanzmittelfonds",
+          "values": [
+            "6.104",
+            "18.327"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "25. Finanzmittelfonds 1. Juli",
+          "values": [
+            "35.578",
+            "17.251"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 4,
+    "results": [
+      {
+        "label": "12. Ergebnis vor Übernahme",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "12. Ergebnis vor Übernahme",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "13. Ergebniszuweisung atypisch stille Gesellschafter",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "13. Ergebniszuweisung atypisch stille Gesellschafter",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "14. Konzernjahresüberschuss",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "14. Konzernjahresüberschuss",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "15. auf andere Gesellschafter entfallender Gewinn/Verlust",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "15. auf andere Gesellschafter entfallender Gewinn/Verlust",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "de",
+    "query": "TSG Hoffenheim",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

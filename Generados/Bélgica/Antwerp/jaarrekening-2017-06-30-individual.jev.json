@@ -1,0 +1,236 @@
+{
+ "md": "Clubes/Bélgica/Antwerp/jaarrekening-2017-06-30-individual.md",
+ "generatedAt": "2026-09-30T04:26:55.179Z",
+ "rubros": [
+  {
+   "label": "640/8",
+   "lado": null,
+   "page": 8,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.18,
+   "top3": [
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "wages_squad",
+     0.1
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 7,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 189.470 25.000 / Uitgestelde belastingen 168",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 865
+  },
+  {
+   "label": "490/1",
+   "lado": "expense",
+   "page": 6,
+   "section": "ACTIVA / OPRICHTINGSKOSTEN / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "other_amortisation",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 817
+  },
+  {
+   "label": "54/58",
+   "lado": "expense",
+   "page": 6,
+   "section": "ACTIVA / OPRICHTINGSKOSTEN / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "other_amortisation",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 817
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 7,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 189.470 25.000 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.46
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 869
+  },
+  {
+   "label": "635/8",
+   "lado": null,
+   "page": 8,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "other_income",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "20/58",
+   "lado": "expense",
+   "page": 6,
+   "section": "ACTIVA / OPRICHTINGSKOSTEN / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "other_amortisation",
+     0.17
+    ],
+    [
+     "depreciation",
+     0.03
+    ]
+   ],
+   "tokens": 817
+  },
+  {
+   "label": "Schulden op meer dan één jaar 6.3 |",
+   "lado": "expense",
+   "page": 7,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 164/5 189.470 25.000 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "depreciation",
+     0.02
+    ]
+   ],
+   "tokens": 932
+  },
+  {
+   "label": "76B",
+   "lado": null,
+   "page": 14,
+   "section": "RESULTATEN / PERSONEEL EN PERSONEELSKOSTEN / OPBRENGSTEN EN KOSTEN VAN UITZONDERLIJKE OMVANG OF / UITZONDERLIJKE MATE VAN VOORKOMEN / FINANCIËLE RESULTATEN",
+   "choice": "exceptional_items",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "exceptional_items",
+     0.71
+    ],
+    [
+     "other_income",
+     0.15000000000000002
+    ],
+    [
+     "other_expenses",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1312
+  },
+  {
+   "label": "76A",
+   "lado": null,
+   "page": 14,
+   "section": "RESULTATEN / PERSONEEL EN PERSONEELSKOSTEN / OPBRENGSTEN EN KOSTEN VAN UITZONDERLIJKE OMVANG OF / UITZONDERLIJKE MATE VAN VOORKOMEN / FINANCIËLE RESULTATEN",
+   "choice": "exceptional_items",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "exceptional_items",
+     0.74
+    ],
+    [
+     "other_income",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1312
+  }
+ ]
+}

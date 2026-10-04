@@ -1,0 +1,1082 @@
+{
+  "club": "losandes-ar",
+  "year": 2020,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Los Andes/balance-ejercicio-104-2019-20.md",
+  "generatedAt": "2026-09-30T22:39:15.860Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 2,
+    "eu": 92,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 16,
+  "relevantTableCount": 3,
+  "tables": [
+    {
+      "page": 3,
+      "section": "CLUB ATLETICO LOS ANDES / ACTIVO / ACTIVO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caja (Nota 2.1)",
+          "values": [
+            "74.976,00",
+            "8.476,57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos (NOTA 2.2)",
+          "values": [
+            "2.401.240,39",
+            "2.702.255,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuotas a cobrar",
+          "values": [
+            "4.213.800,00",
+            "1.806.020,95"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "lva credito fiscal",
+          "values": [
+            "5.070.178,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros creditos fiscales (NOTA 2.3)",
+          "values": [
+            "8.119.850,50",
+            "518.310,48"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVO CORRIENTE",
+          "values": [
+            "14.809.866,89",
+            "10.105.242,71"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "ACTIVO NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "faltante de caja",
+          "values": [
+            "1.233,514,51",
+            "1.233.514,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prev. Faltante de caja",
+          "values": [
+            "-1.233.514,51",
+            "-1,233.514,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bienes de Uso (Anexo 11)",
+          "values": [
+            "272.814.622,62",
+            "282.142.019,71"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "Bienes Intangibles",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Plantel profesional",
+          "values": [
+            "31.598.221,53",
+            "31.598.221,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plantel futbol amateur",
+          "values": [
+            "6.393.410,26",
+            "6.393,410,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVO NO CORRIENTE",
+          "values": [
+            "310.806.254,41",
+            "320.133.651,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVO",
+          "values": [
+            "325.616.121,30",
+            "330.238.894,21"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "PASIVO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "DEUDAS OPERATIVAS (NOTA 2.4)",
+          "values": [
+            "16.824.397,70",
+            "17.757.249,88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Soc. y previsionales (NOTA 2.5)",
+          "values": [
+            "13.904,109,29",
+            "18.574.720,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASIVO CORRIENTE",
+          "values": [
+            "30.728,506,99",
+            "36.331.970,87"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "PASIVO NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "DEUDAS OPERATIVAS",
+          "values": [
+            "(NOTA2.6)",
+            "25.994.689,39",
+            "28.886.002,09"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTRAS DEUDAS (NOTA 2.7)",
+          "values": [
+            "2.634.848,27",
+            "2.5634.848,27"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROVISIONES PARA JUICIOS (NOTA 2.8)",
+          "values": [
+            "10.026.535,49",
+            "10.359.797,22"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASIVO NO CORRIENTE",
+          "values": [
+            "38.656.073,15",
+            "41.880.647,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DEL PASIVO",
+          "values": [
+            "69.384.580,14",
+            "78.212.618,45"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "PATRIMONIO NETO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "S/ ESTADO RESPECTIVO",
+          "values": [
+            "256.231.541,16",
+            "252.026.275,77"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASIVO MAS PATRIMONIO NETO",
+          "values": [
+            "325.616.121,30",
+            "330.238.894,22"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "CLUB ATLETICO LOS ANDES / RECURSOS 2020 2019",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "cuotas sociales",
+          "values": [
+            "8.271.273,22",
+            "26.267.012,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "futbol",
+          "values": [
+            "805.561,26",
+            "4,714,607,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ingresos Afa",
+          "values": [
+            "13.727.356,61",
+            "37.698.679,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ingresos otras actividades",
+          "values": [
+            "4,143.121,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "colegio",
+          "values": [
+            "13.397.354,49",
+            "20.238.398,09"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "sponsors planteles",
+          "values": [
+            "57.769.495,16",
+            "37.590.735,73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "concesiones",
+          "values": [
+            "2.355.225,25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "otros ingresos",
+          "values": [
+            "2.880.367,71",
+            "13.894.677,84"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL RECURSOS",
+          "values": [
+            "96.851,408,45",
+            "146.902.457,19"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 4,
+      "section": "MENOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos s/ Anexo IV",
+          "values": [
+            "75.761.504,82",
+            "125.470.577,80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "subtotal",
+          "values": [
+            "21.089.903,63",
+            "21.431.879,39"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "MENOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos Administrativos",
+          "values": [
+            "28.558.922,20",
+            "32.511.322,65"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "sutotal",
+          "values": [
+            "-7,469.018,57",
+            "-11.079,443,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REPCAM",
+          "values": [
+            "11.674.283,99",
+            "-219.711,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESULTADO FINAL EJERCICIO",
+          "values": [
+            "4,205.265,42",
+            "-11.299.154,94"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "CLUB ATLÉTICO LOS ANDES / CUADRO DE GASTOS AL 30 DE JUNIO 2020 com; / GASTOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "O EEES IO ll",
+          "values": [
+            "1861.974,23|",
+            "3.607.004,11|",
+            "9.429.27300|",
+            "12.240,700,73|"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "e | 3gaoo000] |",
+          "values": [
+            "1437580.00|",
+            "—1:662500,00|",
+            "3.484.080,00|",
+            "2.270.515,33|"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "A, TRENES EROS ENOEIAO > IED TEE DOTES MORE A / [GASTOS Y COMISIONES BANCARIAS |” 1399030] JO ao0| 195522030] ———155627854|",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "[GASTOS FINANCIEROS E INTERESES] isso] Passo]",
+          "values": [
+            "789,164,63|"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "[GASTOS FUNCIONAMIENTO ADM | asaseoo]—— ]>— 23r2ampo] 2] sorarea00| ————",
+          "values": [
+            "3.138915:5|"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "[EGRESOS VARIOS JO faros 0] 2] asaBa0 9.005.693,00| ———",
+          "values": [
+            "10.585.678,77|"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2a41seoo] | 1«2e3i2o00 13845000",
+          "values": [
+            "1810916.00|",
+            "_____1.348.738,04|"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "[SERVICIOS PUBLICOS Praia] asma] 32952014]",
+          "values": [
+            "1.359.053,68|",
+            "——1355.94151|"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "¡GASTOS PLANTEL PROFESIONAL >] asa JO so",
+          "values": [
+            "13.087.291,88|"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "NOTA 2: DETALLE DE LOS SALDOS DE LAS CUENTAS / 2.1.- CAJA 74.976,00 74.976,00 / 2.2.- BANCOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "BANCO CREDICOOP",
+          "values": [
+            "11.063,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO PROVINCIA",
+          "values": [
+            "9.767,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO COLEGIOS",
+          "values": [
+            "2,102,018,57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO NACION C.A.",
+          "values": [
+            "256.206,08"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO NACION CTA CTE",
+          "values": [
+            "22.184,88",
+            "2.401.240,39"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "2.3.- OTROS CREDITOS FISCALES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1, BRUTOS",
+          "values": [
+            "39.972,45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RETENCION GANANCIAS",
+          "values": [
+            "613.720,74"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "NOTA 3 DEUDAS OPERATIVAS CORRIENTES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "PROVEEDORES",
+          "values": [
+            "799.889,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AFA CTA CE",
+          "values": [
+            "9.484.860,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CHEQUES POSDATADOS BCO NACION",
+          "values": [
+            "678.324,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CHEQUES RECHAZADOS NACION",
+          "values": [
+            "563.824,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RET GANANCIAS A DEPOSITAR",
+          "values": [
+            "60.300,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEUDA FINANCIERA",
+          "values": [
+            "2.060.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ART APAGAR",
+          "values": [
+            "2.181,317,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTRAS DEUDAS FISCALES",
+          "values": [
+            "143.872,64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DERECHOS DE FORMACON",
+          "values": [
+            "564.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMBARGOS A DEPOSITAR",
+          "values": [
+            "24.763,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTRAS",
+          "values": [
+            "263.247,00",
+            "16.824.397,70"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "NOTA4 SOCIALES Y PREVISIONALES / SUELDOS A PAGAR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "UTEDYC",
+          "values": [
+            "4.367.007,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "JUGADORES",
+          "values": [
+            "762.250,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CARGAS SOCIALES A PAGAR",
+          "values": [
+            "8.774.852,29",
+            "13.904.109,29"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "NOTAS DEUDAS OPERATIVAS NO CORRIENTES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "DTO 1212/03",
+          "values": [
+            "23,450.532,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PLAN DE SANEAMIENTO AFA",
+          "values": [
+            "2.544,157,16",
+            "25,994.689,39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NOTA6 DEUDA COMPRA DE SEDE NO CORRIENTE",
+          "values": [
+            "2.634.848,27",
+            "2.634.848,27"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 3,
+      "section": "CLUB ATLETICO LOS ANDES / ACTIVO / ACTIVO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL ACTIVO CORRIENTE",
+      "target": "14.809.866,89",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "5070178.8999999985"
+    },
+    {
+      "page": 3,
+      "section": "CLUB ATLETICO LOS ANDES / ACTIVO / ACTIVO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL ACTIVO CORRIENTE",
+      "target": "10.105.242,71",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-5070178.9"
+    },
+    {
+      "page": 3,
+      "section": "Bienes Intangibles",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL ACTIVO NO CORRIENTE",
+      "target": "310.806.254,41",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-272814622.62"
+    },
+    {
+      "page": 3,
+      "section": "Bienes Intangibles",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL ACTIVO NO CORRIENTE",
+      "target": "320.133.651,50",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-288529036.56"
+    },
+    {
+      "page": 3,
+      "section": "Bienes Intangibles",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL ACTIVO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": "PASIVO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PASIVO CORRIENTE",
+      "target": "30.728,506,99",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "16807573.303"
+    },
+    {
+      "page": 3,
+      "section": "PASIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PASIVO CORRIENTE",
+      "target": "36.331.970,87",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "PASIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PASIVO NO CORRIENTE",
+      "skipped": true,
+      "reason": "1 de 3 valor(es) del segmento no parecen números (ej. \"(NOTA2.6)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "PASIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PASIVO NO CORRIENTE",
+      "target": "41.880.647,58",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "20108687.299999997"
+    },
+    {
+      "page": 3,
+      "section": "PASIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL DEL PASIVO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": "PATRIMONIO NETO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PASIVO MAS PATRIMONIO NETO",
+      "target": "325.616.121,30",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-69384580.14000002"
+    },
+    {
+      "page": 3,
+      "section": "PATRIMONIO NETO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PASIVO MAS PATRIMONIO NETO",
+      "target": "330.238.894,22",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-78212618.45000002"
+    },
+    {
+      "page": 4,
+      "section": "CLUB ATLETICO LOS ANDES / RECURSOS 2020 2019",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL RECURSOS",
+      "target": "96.851,408,45",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "99109786.43512098"
+    },
+    {
+      "page": 4,
+      "section": "CLUB ATLETICO LOS ANDES / RECURSOS 2020 2019",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL RECURSOS",
+      "target": "146.902.457,19",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "-11212949.125999987"
+    },
+    {
+      "page": 4,
+      "section": "MENOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "subtotal",
+      "target": "21.089.903,63",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "54671601.19"
+    },
+    {
+      "page": 4,
+      "section": "MENOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "subtotal",
+      "target": "21.431.879,39",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "104038698.41"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 16,
+    "results": [
+      {
+        "label": "cuotas sociales",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "member_dues",
+        "matchedLabel": "cuotas sociales",
+        "years": [
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "cuotas sociales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "futbol",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "futbol",
+        "years": [
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "futbol",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Seguros (Fútbol)",
+        "similarity": 50
+      },
+      {
+        "label": "ingresos Afa",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Ingresos Afa",
+        "years": [
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "ingresos Afa",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ingresos otras actividades",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "ingresos otras actividades",
+        "years": [
+          "2021"
+        ]
+      },
+      {
+        "label": "ingresos otras actividades",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "colegio",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "education",
+        "matchedLabel": "colegio",
+        "years": [
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "colegio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "sponsors planteles",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Sponsors planteles",
+        "years": [
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "sponsors planteles",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "concesiones",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "stadium_other",
+        "matchedLabel": "concesiones",
+        "years": [
+          "2021"
+        ]
+      },
+      {
+        "label": "concesiones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "otros ingresos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "otros ingresos",
+        "years": [
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "otros ingresos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "O EEES IO ll",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "O EEES IO ll",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "e | 3gaoo000] |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "e | 3gaoo000] |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "[GASTOS FINANCIEROS E INTERESES] isso] Passo]",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "[GASTOS FINANCIEROS E INTERESES] isso] Passo]",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "[GASTOS FUNCIONAMIENTO ADM | asaseoo]—— ]>— 23r2ampo] 2] sorarea00| ————",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "[GASTOS FUNCIONAMIENTO ADM | asaseoo]—— ]>— 23r2ampo] 2] sorarea00| ————",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "[EGRESOS VARIOS JO faros 0] 2] asaBa0 9.005.693,00| ———",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "[EGRESOS VARIOS JO faros 0] 2] asaBa0 9.005.693,00| ———",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2a41seoo] | 1«2e3i2o00 13845000",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2a41seoo] | 1«2e3i2o00 13845000",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "[SERVICIOS PUBLICOS Praia] asma] 32952014]",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "[SERVICIOS PUBLICOS Praia] asma] 32952014]",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "¡GASTOS PLANTEL PROFESIONAL >] asa JO so",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "¡GASTOS PLANTEL PROFESIONAL >] asa JO so",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Gastos Plantel Profesional (Fútbol)",
+        "similarity": 60
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Los Andes",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "10 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

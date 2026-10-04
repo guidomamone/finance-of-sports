@@ -1,0 +1,470 @@
+{
+  "md": "Clubes/Bélgica/Club Brugge/jaarrekening-2024-06-30-consolidado.md",
+  "pdf": "Clubes/Bélgica/Club Brugge/jaarrekening-2024-06-30-consolidado.pdf",
+  "club": "clubbrugge-be",
+  "year": 2024,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:54:49.930Z",
+  "tieOuts": {
+    "cierran": 9,
+    "noCierran": 6
+  },
+  "warnings": [
+    "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": false,
+  "seleccion": {
+    "ok": true,
+    "filas": 38,
+    "notasUsadas": [
+      "31",
+      "36",
+      "25"
+    ]
+  },
+  "ladoConocido": 39,
+  "rubros": [
+    {
+      "label": "Algemene administratie",
+      "lado": "expense",
+      "page": 56,
+      "section": "## 23 Overige bedrijfskosten",
+      "values": [
+        6.754
+      ],
+      "origen": "estado 33",
+      "glosa": "Administración general"
+    },
+    {
+      "label": "Huur en andere diensten",
+      "lado": "expense",
+      "page": 56,
+      "section": "## 23 Overige bedrijfskosten",
+      "values": [
+        2.253
+      ],
+      "origen": "estado 33",
+      "glosa": "Arrendamientos y otros servicios"
+    },
+    {
+      "label": "Organisatie, apparatuur en beveiliging",
+      "lado": "expense",
+      "page": 56,
+      "section": "## 23 Overige bedrijfskosten",
+      "values": [
+        9.976
+      ],
+      "origen": "estado 33",
+      "glosa": "Organización, equipamiento y seguridad"
+    },
+    {
+      "label": "Reiskosten",
+      "lado": "expense",
+      "page": 56,
+      "section": "## 23 Overige bedrijfskosten",
+      "values": [
+        2.728
+      ],
+      "origen": "estado 33",
+      "glosa": "Gastos de viaje"
+    },
+    {
+      "label": "Nutsvoorzieningen, onderhoud en reparatie",
+      "lado": "expense",
+      "page": 56,
+      "section": "## 23 Overige bedrijfskosten",
+      "values": [
+        3.467
+      ],
+      "origen": "estado 33",
+      "glosa": "Suministros, mantenimiento y reparaciones"
+    },
+    {
+      "label": "Hotels, restaurants en recepties",
+      "lado": "expense",
+      "page": 56,
+      "section": "## 23 Overige bedrijfskosten",
+      "values": [
+        2.339
+      ],
+      "origen": "estado 33",
+      "glosa": "Hoteles, restauración y recepciones"
+    },
+    {
+      "label": "Consulting- en andere advieskosten",
+      "lado": "expense",
+      "page": 56,
+      "section": "## 23 Overige bedrijfskosten",
+      "values": [
+        1.94
+      ],
+      "origen": "estado 33",
+      "glosa": "Gastos de consultoría y otros asesoramientos"
+    },
+    {
+      "label": "Interim",
+      "lado": "expense",
+      "page": 56,
+      "section": "## 23 Overige bedrijfskosten",
+      "values": [
+        0.488
+      ],
+      "origen": "estado 33",
+      "glosa": "Personal temporal"
+    },
+    {
+      "label": "Overige belastingen",
+      "lado": "expense",
+      "page": 56,
+      "section": "## 23 Overige bedrijfskosten",
+      "values": [
+        2.496
+      ],
+      "origen": "estado 33",
+      "glosa": "Otros tributos"
+    },
+    {
+      "label": "Wedstrijdopbrengsten",
+      "lado": "revenue",
+      "page": 52,
+      "section": "(BAS). Per arbitrale uitspraak van 5 augustus 2024, aldus na afloop van het / besproken boekjaar, werd de vordering van de Vennootschap ongegrond verklaard. / Opbrengsten / Opbrengsten Eert art / In 000€ voor het boekjaar afgesloten op tigris, Stoner UE",
+      "values": [
+        22.353
+      ],
+      "origen": "estado 30",
+      "glosa": "Ingresos por día de partido"
+    },
+    {
+      "label": "Opbrengsten uit mediarechten - Binnenlands",
+      "lado": "revenue",
+      "page": 54,
+      "section": "### 21.2 Opbrengsten uit mediarechten",
+      "values": [
+        11.48
+      ],
+      "origen": "nota 31 (ancla 30)",
+      "ancla": "Opbrengsten uit mediarechten",
+      "glosa": "Ingresos por derechos audiovisuales - Nacionales"
+    },
+    {
+      "label": "Opbrengsten uit mediarechten",
+      "lado": "revenue",
+      "page": 52,
+      "section": "(BAS). Per arbitrale uitspraak van 5 augustus 2024, aldus na afloop van het / besproken boekjaar, werd de vordering van de Vennootschap ongegrond verklaard. / Opbrengsten / Opbrengsten Eert art / In 000€ voor het boekjaar afgesloten op tigris, Stoner UE",
+      "values": [
+        23.881
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Ingresos por derechos audiovisuales"
+    },
+    {
+      "label": "Opbrengsten uit mediarechten - Europees",
+      "lado": "revenue",
+      "page": 54,
+      "section": "### 21.2 Opbrengsten uit mediarechten",
+      "values": [
+        12.402
+      ],
+      "origen": "nota 31 (ancla 30)",
+      "ancla": "Opbrengsten uit mediarechten",
+      "glosa": "Ingresos por derechos audiovisuales - Europeos"
+    },
+    {
+      "label": "Binnenlands",
+      "lado": "revenue",
+      "page": 52,
+      "section": "(BAS). Per arbitrale uitspraak van 5 augustus 2024, aldus na afloop van het / besproken boekjaar, werd de vordering van de Vennootschap ongegrond verklaard. / Opbrengsten / Opbrengsten Eert art / In 000€ voor het boekjaar afgesloten op tigris, Stoner UE",
+      "values": [
+        11.48
+      ],
+      "origen": "estado 30",
+      "glosa": "Nacional"
+    },
+    {
+      "label": "Europees",
+      "lado": "revenue",
+      "page": 52,
+      "section": "(BAS). Per arbitrale uitspraak van 5 augustus 2024, aldus na afloop van het / besproken boekjaar, werd de vordering van de Vennootschap ongegrond verklaard. / Opbrengsten / Opbrengsten Eert art / In 000€ voor het boekjaar afgesloten op tigris, Stoner UE",
+      "values": [
+        12.402
+      ],
+      "origen": "estado 30",
+      "glosa": "Europeo"
+    },
+    {
+      "label": "Commerciële opbrengsten",
+      "lado": "revenue",
+      "page": 52,
+      "section": "(BAS). Per arbitrale uitspraak van 5 augustus 2024, aldus na afloop van het / besproken boekjaar, werd de vordering van de Vennootschap ongegrond verklaard. / Opbrengsten / Opbrengsten Eert art / In 000€ voor het boekjaar afgesloten op tigris, Stoner UE",
+      "values": [
+        18.801
+      ],
+      "origen": "estado 30",
+      "glosa": "Ingresos comerciales"
+    },
+    {
+      "label": "Overige opbrengsten",
+      "lado": "revenue",
+      "page": 52,
+      "section": "(BAS). Per arbitrale uitspraak van 5 augustus 2024, aldus na afloop van het / besproken boekjaar, werd de vordering van de Vennootschap ongegrond verklaard. / Opbrengsten / Opbrengsten Eert art / In 000€ voor het boekjaar afgesloten op tigris, Stoner UE",
+      "values": [
+        3.581
+      ],
+      "origen": "estado 30",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Reële waarde op datum van toekenning",
+      "lado": "expense",
+      "page": 60,
+      "section": "",
+      "values": [
+        4.64
+      ],
+      "origen": "nota 36 (ancla 34)",
+      "ancla": "Lonen van spelers en kosten van technische staf",
+      "glosa": "Valor razonable en la fecha de concesión"
+    },
+    {
+      "label": "Lonen van spelers en kosten van technische staf",
+      "lado": "expense",
+      "page": 57,
+      "section": "24 / Lonen van spelers en kosten van technische staf / Lonen van spelers en kosten van technische staf / In 000€ voor het boekjaar afgesloten op SAE, <10 AP",
+      "values": [
+        61.736
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Salarios de jugadores y gastos del cuerpo técnico"
+    },
+    {
+      "label": "Handelsschulden",
+      "lado": "expense",
+      "page": 47,
+      "section": "## 15 Handels- en andere schulden",
+      "values": [
+        7.708
+      ],
+      "origen": "nota 25 (ancla 34>36)",
+      "ancla": "Lonen van spelers en kosten van technische staf",
+      "glosa": "Acreedores comerciales"
+    },
+    {
+      "label": "Btw-schulden",
+      "lado": "expense",
+      "page": 47,
+      "section": "## 15 Handels- en andere schulden",
+      "values": [
+        1.257
+      ],
+      "origen": "nota 25 (ancla 34>36)",
+      "ancla": "Lonen van spelers en kosten van technische staf",
+      "glosa": "Deudas por IVA"
+    },
+    {
+      "label": "Personeelsgerelateerde schulden",
+      "lado": "expense",
+      "page": 47,
+      "section": "## 15 Handels- en andere schulden",
+      "values": [
+        8.365
+      ],
+      "origen": "nota 25 (ancla 34>36)",
+      "ancla": "Lonen van spelers en kosten van technische staf",
+      "glosa": "Deudas con el personal"
+    },
+    {
+      "label": "Toe te rekenen kosten",
+      "lado": "expense",
+      "page": 47,
+      "section": "## 15 Handels- en andere schulden",
+      "values": [
+        0.084
+      ],
+      "origen": "nota 25 (ancla 34>36)",
+      "ancla": "Lonen van spelers en kosten van technische staf",
+      "glosa": "Gastos devengados"
+    },
+    {
+      "label": "Verwachte looptijd",
+      "lado": "expense",
+      "page": 60,
+      "section": "",
+      "values": [
+        5.5
+      ],
+      "origen": "nota 36 (ancla 34)",
+      "ancla": "Lonen van spelers en kosten van technische staf",
+      "glosa": "Vida esperada"
+    },
+    {
+      "label": "Verwachte volatiliteit",
+      "lado": "expense",
+      "page": 60,
+      "section": "",
+      "values": [
+        33.4
+      ],
+      "origen": "nota 36 (ancla 34)",
+      "ancla": "Lonen van spelers en kosten van technische staf",
+      "glosa": "Volatilidad esperada"
+    },
+    {
+      "label": "Risicovrije rentevoet (gebaseerd op overheidsobligaties)",
+      "lado": "expense",
+      "page": 60,
+      "section": "",
+      "values": [
+        0.1
+      ],
+      "origen": "nota 36 (ancla 34)",
+      "ancla": "Lonen van spelers en kosten van technische staf",
+      "glosa": "Tipo de interés libre de riesgo (basado en bonos del Estado)"
+    },
+    {
+      "label": "Socialezekerheidsbijdragen",
+      "lado": "expense",
+      "page": 57,
+      "section": "24 / Lonen van spelers en kosten van technische staf / Lonen van spelers en kosten van technische staf / In 000€ voor het boekjaar afgesloten op SAE, <10 AP",
+      "values": [
+        7.697
+      ],
+      "origen": "estado 34",
+      "glosa": "Cotizaciones a la seguridad social"
+    },
+    {
+      "label": "Toegezegde-pensioenregelingskosten",
+      "lado": "expense",
+      "page": 57,
+      "section": "24 / Lonen van spelers en kosten van technische staf / Lonen van spelers en kosten van technische staf / In 000€ voor het boekjaar afgesloten op SAE, <10 AP",
+      "values": [
+        5.396
+      ],
+      "origen": "estado 34",
+      "glosa": "Costes por planes de pensiones de prestaciones definidas"
+    },
+    {
+      "label": "Overige kosten -189",
+      "lado": "expense",
+      "page": 57,
+      "section": "24 / Lonen van spelers en kosten van technische staf / Lonen van spelers en kosten van technische staf / In 000€ voor het boekjaar afgesloten op SAE, <10 AP",
+      "values": [
+        1.352
+      ],
+      "origen": "estado 34",
+      "glosa": "Otros gastos -189"
+    },
+    {
+      "label": "Vrijstelling doorstorting bedrijfsvoorheffing",
+      "lado": "expense",
+      "page": 57,
+      "section": "24 / Lonen van spelers en kosten van technische staf / Lonen van spelers en kosten van technische staf / In 000€ voor het boekjaar afgesloten op SAE, <10 AP",
+      "values": [
+        -20.71
+      ],
+      "origen": "estado 34",
+      "glosa": "Exención del ingreso de retenciones sobre nóminas"
+    },
+    {
+      "label": "Lonen van spelers en kosten van technische staf",
+      "lado": "expense",
+      "page": 57,
+      "section": "24 / Lonen van spelers en kosten van technische staf / Lonen van spelers en kosten van technische staf / In 000€ voor het boekjaar afgesloten op SAE, <10 AP",
+      "values": [
+        53.931
+      ],
+      "origen": "estado 34",
+      "glosa": "Salarios de jugadores y gastos del cuerpo técnico"
+    },
+    {
+      "label": "Overige personeelskosten",
+      "lado": "expense",
+      "page": 58,
+      "section": "## 25 Overige personeelskosten",
+      "values": [
+        0.007224
+      ],
+      "origen": "estado 35",
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "op aandelen gebaseerde betalingen",
+      "lado": "expense",
+      "page": 58,
+      "section": "## 25 Overige personeelskosten",
+      "values": [
+        0.000132
+      ],
+      "origen": "estado 35",
+      "glosa": "Pagos basados en acciones"
+    },
+    {
+      "label": "Socialezekerheidsbijdragen",
+      "lado": "expense",
+      "page": 58,
+      "section": "## 25 Overige personeelskosten",
+      "values": [
+        0.001998
+      ],
+      "origen": "estado 35",
+      "glosa": "Cotizaciones a la seguridad social"
+    },
+    {
+      "label": "Toegezegde-pensioenregelingskosten",
+      "lado": "expense",
+      "page": 58,
+      "section": "## 25 Overige personeelskosten",
+      "values": [
+        0.000292
+      ],
+      "origen": "estado 35",
+      "glosa": "Costes por planes de pensiones de prestaciones definidas"
+    },
+    {
+      "label": "Overige kosten",
+      "lado": "expense",
+      "page": 58,
+      "section": "## 25 Overige personeelskosten",
+      "values": [
+        0.000706
+      ],
+      "origen": "estado 35",
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Lidgeld",
+      "lado": "revenue",
+      "page": 56,
+      "section": "## 22 Overige bedrijfsopbrengsten",
+      "values": [
+        48
+      ],
+      "origen": "estado 32",
+      "glosa": "Cuotas de socios"
+    },
+    {
+      "label": "Giften",
+      "lado": "revenue",
+      "page": 56,
+      "section": "## 22 Overige bedrijfsopbrengsten",
+      "values": [
+        41
+      ],
+      "origen": "estado 32",
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "Overige",
+      "lado": "revenue",
+      "page": 56,
+      "section": "## 22 Overige bedrijfsopbrengsten",
+      "values": [
+        565
+      ],
+      "origen": "estado 32",
+      "glosa": "Otros"
+    }
+  ]
+}

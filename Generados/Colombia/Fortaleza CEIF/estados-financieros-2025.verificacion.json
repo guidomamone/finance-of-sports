@@ -1,0 +1,607 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.md",
+ "generado": "2026-10-03T23:03:06.231Z",
+ "estado": "ok",
+ "clubId": "fortalezaceif-co",
+ "year": 2025,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2025.pdf",
+   "campo": "sin-dudas",
+   "valor": null,
+   "motivo": "Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado antes de impuestos",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 1 (resultado antes de impuestos si no hay resultado final)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2024 de este documento suma ingresos 12206.258; el sitio tiene 12206.258"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2024: 12206.258 en estados-financieros-2024.pdf y 12206.258 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "antes de impuestos 685.847 con el impuesto restado = 313.44, impreso en este documento (L1048; escalón 0)"
+  }
+ ],
+ "notas": [
+  "la lectura base no cerraba; cerró con la lectura 1",
+  "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma la 'Utilidad contable antes de impuesto' de la conciliación fiscal (b12) como resultado antes de impuestos de 2025, aunque solo trae la columna 2025?",
+  "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma 'Resultados del ejercicio' de la nota de patrimonio (b28) como resultado neto del ejercicio 2025 y 2024?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se usan como etiquetas de renglón del estado nombres descriptivos (ej. 'COSTO DE VENTAS', 'Gastos de administración') dado que los títulos numerados de las notas no aparecen en la transcripción?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se deja afuera el detalle de los subrenglones de las notas de gastos (ej. L1127-L1137, L1154-L1194) y se cargan solo los subtotales en negrita?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se carga el impuesto de L725 (372.407) como impuesto del ejercicio aunque proviene de la conciliación fiscal y no del estado?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se ignora la nota (7) en texto de L1232 como detalle de Derechos Deportivos sin cargarla?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 23849.331,
+  "gastos": 22806.941,
+  "financiero": -356.543,
+  "impuesto": 372.407,
+  "resultadoImpreso": 685.847,
+  "resultadoParaCargar": 313.44,
+  "resultadoFinal": {
+   "valor": 313.44,
+   "impuesto": "restado",
+   "escalon": "escalón 0",
+   "donde": "este documento",
+   "linea": 1048
+  },
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Derechos de televisión nacional",
+   "lado": "ingreso",
+   "M": 1563.676,
+   "pagina": 24,
+   "linea": 1071,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Federación Colombiana de Futbol",
+   "lado": "ingreso",
+   "M": 202.748,
+   "pagina": 24,
+   "linea": 1072,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Auxilio hotelero (*)",
+   "lado": "ingreso",
+   "M": 240.988,
+   "pagina": 24,
+   "linea": 1073,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Convenio entre clubes",
+   "lado": "ingreso",
+   "M": 100.362,
+   "pagina": 24,
+   "linea": 1074,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Auxilio de arbitraje (*)",
+   "lado": "ingreso",
+   "M": 344.687,
+   "pagina": 24,
+   "linea": 1075,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Auxilio de transporte (*)",
+   "lado": "ingreso",
+   "M": 19.915,
+   "pagina": 24,
+   "linea": 1076,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Otros auxilios (*)",
+   "lado": "ingreso",
+   "M": 376.977,
+   "pagina": 24,
+   "linea": 1077,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Propaganda y publicidad",
+   "lado": "ingreso",
+   "M": 3221.839,
+   "pagina": 24,
+   "linea": 1078,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Propaganda y publicidad",
+   "lado": "ingreso",
+   "M": 115.03,
+   "pagina": 25,
+   "linea": 1097,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\" > desglose de \"Patrocinios (1)\""
+  },
+  {
+   "etiqueta": "Derechos deportivos (2)",
+   "lado": "ingreso",
+   "M": 11569.768,
+   "pagina": 24,
+   "linea": 1058,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\""
+  },
+  {
+   "etiqueta": "Boletería",
+   "lado": "ingreso",
+   "M": 4296.654,
+   "pagina": 24,
+   "linea": 1059,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\""
+  },
+  {
+   "etiqueta": "Venta de indumentaria deportiva (3)",
+   "lado": "ingreso",
+   "M": 979.871,
+   "pagina": 24,
+   "linea": 1062,
+   "origen": "nota que desglosa \"INGRESOS DE ACTIVIDADES ORDINARIAS\""
+  },
+  {
+   "etiqueta": "Alquiler deportivo (1)",
+   "lado": "ingreso",
+   "M": 442.152,
+   "pagina": 30,
+   "linea": 1413,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Reintegro de costos y gastos (2)",
+   "lado": "ingreso",
+   "M": 300.503,
+   "pagina": 30,
+   "linea": 1414,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Comisiones",
+   "lado": "ingreso",
+   "M": 17,
+   "pagina": 30,
+   "linea": 1416,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Uso de marca",
+   "lado": "ingreso",
+   "M": 54.093,
+   "pagina": 30,
+   "linea": 1417,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Otros",
+   "lado": "ingreso",
+   "M": 1.07,
+   "pagina": 30,
+   "linea": 1418,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Ajuste al peso",
+   "lado": "ingreso",
+   "M": 0.012,
+   "pagina": 30,
+   "linea": 1420,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "Diversos",
+   "lado": "ingreso",
+   "M": 1.986,
+   "pagina": 30,
+   "linea": 1421,
+   "origen": "nota que desglosa \"Otros ingresos\""
+  },
+  {
+   "etiqueta": "COSTO DE VENTAS",
+   "lado": "gasto",
+   "M": 606.635,
+   "pagina": 25,
+   "linea": 1114,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "De personal",
+   "lado": "gasto",
+   "M": 7170.528,
+   "pagina": 25,
+   "linea": 1126,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 536.813,
+   "pagina": 25,
+   "linea": 1133,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
+  },
+  {
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "M": 1655.093,
+   "pagina": 26,
+   "linea": 1153,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
+  },
+  {
+   "etiqueta": "Afiliaciones y sostenimientos",
+   "lado": "gasto",
+   "M": 0.303,
+   "pagina": 26,
+   "linea": 1157,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
+  },
+  {
+   "etiqueta": "INDUSTRIA Y COMERCIO",
+   "lado": "gasto",
+   "M": 55.493,
+   "pagina": 27,
+   "linea": 1222,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\" > desglose de \"Impuestos (3)\""
+  },
+  {
+   "etiqueta": "DE ESPECTACULOS PUBLICOS (I.D.R.D)",
+   "lado": "gasto",
+   "M": 373.032,
+   "pagina": 27,
+   "linea": 1223,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\" > desglose de \"Impuestos (3)\""
+  },
+  {
+   "etiqueta": "BOMBEROS",
+   "lado": "gasto",
+   "M": 143.536,
+   "pagina": 27,
+   "linea": 1224,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\" > desglose de \"Impuestos (3)\""
+  },
+  {
+   "etiqueta": "MOVILIDAD",
+   "lado": "gasto",
+   "M": 1.013,
+   "pagina": 27,
+   "linea": 1225,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\" > desglose de \"Impuestos (3)\""
+  },
+  {
+   "etiqueta": "IVA DESCONTABLE",
+   "lado": "gasto",
+   "M": 359.859,
+   "pagina": 27,
+   "linea": 1226,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\" > desglose de \"Impuestos (3)\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 33.568,
+   "pagina": 26,
+   "linea": 1159,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 1453.576,
+   "pagina": 26,
+   "linea": 1160,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
+  },
+  {
+   "etiqueta": "Legales",
+   "lado": "gasto",
+   "M": 3500.119,
+   "pagina": 26,
+   "linea": 1169,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
+  },
+  {
+   "etiqueta": "Mantenimiento y adecuaciones",
+   "lado": "gasto",
+   "M": 479.854,
+   "pagina": 26,
+   "linea": 1172,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
+  },
+  {
+   "etiqueta": "De viaje (8)",
+   "lado": "gasto",
+   "M": 674.771,
+   "pagina": 26,
+   "linea": 1180,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
+  },
+  {
+   "etiqueta": "Diversos",
+   "lado": "gasto",
+   "M": 1016.505,
+   "pagina": 26,
+   "linea": 1184,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
+  },
+  {
+   "etiqueta": "Depreciaciones",
+   "lado": "gasto",
+   "M": 139.68,
+   "pagina": 26,
+   "linea": 1195,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
+  },
+  {
+   "etiqueta": "Amortizaciones",
+   "lado": "gasto",
+   "M": 209.241,
+   "pagina": 26,
+   "linea": 1196,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
+  },
+  {
+   "etiqueta": "Deterioro de inventario (11)",
+   "lado": "gasto",
+   "M": 29.394,
+   "pagina": 26,
+   "linea": 1197,
+   "origen": "nota que desglosa \"Gastos de ventas Equipo Profesional Masculino y Otros:\""
+  },
+  {
+   "etiqueta": "De personal",
+   "lado": "gasto",
+   "M": 674.055,
+   "pagina": 27,
+   "linea": 1247,
+   "origen": "nota que desglosa \"Gastos equipo profesional femenino\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 46.283,
+   "pagina": 28,
+   "linea": 1267,
+   "origen": "nota que desglosa \"Gastos equipo profesional femenino\""
+  },
+  {
+   "etiqueta": "Arrendamientos",
+   "lado": "gasto",
+   "M": 15.715,
+   "pagina": 28,
+   "linea": 1270,
+   "origen": "nota que desglosa \"Gastos equipo profesional femenino\""
+  },
+  {
+   "etiqueta": "Impuestos",
+   "lado": "gasto",
+   "M": 11.98,
+   "pagina": 28,
+   "linea": 1272,
+   "origen": "nota que desglosa \"Gastos equipo profesional femenino\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 35.05,
+   "pagina": 28,
+   "linea": 1273,
+   "origen": "nota que desglosa \"Gastos equipo profesional femenino\""
+  },
+  {
+   "etiqueta": "De viaje",
+   "lado": "gasto",
+   "M": 13.065,
+   "pagina": 28,
+   "linea": 1277,
+   "origen": "nota que desglosa \"Gastos equipo profesional femenino\""
+  },
+  {
+   "etiqueta": "Diversos",
+   "lado": "gasto",
+   "M": 79.959,
+   "pagina": 28,
+   "linea": 1280,
+   "origen": "nota que desglosa \"Gastos equipo profesional femenino\""
+  },
+  {
+   "etiqueta": "Gastos Laborales",
+   "lado": "gasto",
+   "M": 2234.94,
+   "pagina": 28,
+   "linea": 1295,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Honorarios",
+   "lado": "gasto",
+   "M": 244.744,
+   "pagina": 28,
+   "linea": 1315,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Alquileres",
+   "lado": "gasto",
+   "M": 1.415,
+   "pagina": 29,
+   "linea": 1334,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Contribuciones y afiliaciones",
+   "lado": "gasto",
+   "M": 9.935,
+   "pagina": 29,
+   "linea": 1335,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Seguros",
+   "lado": "gasto",
+   "M": 4.766,
+   "pagina": 29,
+   "linea": 1336,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Servicios",
+   "lado": "gasto",
+   "M": 326.88,
+   "pagina": 29,
+   "linea": 1339,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Legales",
+   "lado": "gasto",
+   "M": 39.211,
+   "pagina": 29,
+   "linea": 1346,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Mantenimientos y reparaciones",
+   "lado": "gasto",
+   "M": 113.956,
+   "pagina": 29,
+   "linea": 1349,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "De viaje",
+   "lado": "gasto",
+   "M": 13.52,
+   "pagina": 29,
+   "linea": 1355,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Gastos Diversos",
+   "lado": "gasto",
+   "M": 85.164,
+   "pagina": 29,
+   "linea": 1359,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Depreciaciones",
+   "lado": "gasto",
+   "M": 176.383,
+   "pagina": 29,
+   "linea": 1369,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Deterioro de cartera",
+   "lado": "gasto",
+   "M": 99.738,
+   "pagina": 29,
+   "linea": 1370,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Amortizaciones",
+   "lado": "gasto",
+   "M": 36.828,
+   "pagina": 29,
+   "linea": 1371,
+   "origen": "nota que desglosa \"Gastos de administración\""
+  },
+  {
+   "etiqueta": "Gastos no deducibles (1)",
+   "lado": "gasto",
+   "M": 9.493,
+   "pagina": 30,
+   "linea": 1396,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Multas y sanciones (2)",
+   "lado": "gasto",
+   "M": 83.5,
+   "pagina": 30,
+   "linea": 1397,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Impuestos asumidos",
+   "lado": "gasto",
+   "M": 11.317,
+   "pagina": 30,
+   "linea": 1398,
+   "origen": "nota que desglosa \"Otros gastos\""
+  },
+  {
+   "etiqueta": "Ajuste al peso",
+   "lado": "gasto",
+   "M": 0.031,
+   "pagina": 30,
+   "linea": 1399,
+   "origen": "nota que desglosa \"Otros gastos\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Costos Financieros (netos)",
+   "M": -356.543,
+   "linea": 1455
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Total, Impuesto a Cargo",
+   "M": -372.407,
+   "linea": 725
+  }
+ ]
+}

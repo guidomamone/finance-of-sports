@@ -1,0 +1,67 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2017-06-30.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2017-06-30.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T13:20:01.790Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    27,
+    66
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    76,
+    92
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 6,
+   "lineas": [
+    170,
+    181
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 7,
+   "lineas": [
+    197,
+    201
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase de escala sobre el estado de resultados (b2).",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2017",
+ "columna_anterior": "30/6/2016",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El estado de resultados (b2, pág. 3) está expresado en euros (unidades)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "No se ve ninguna leyenda de escala arriba de b2; los estados de entidades pequeñas griegas (ELP) suelen ir en euros.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "b1 es el balance (Κατάσταση Οικονομικής Θέσης), b2 es el estado de resultados (Κατάσταση Αποτελεσμάτων Χρήσης) del ejercicio al 30/6/2017. b3 son datos generales del anexo (forma jurídica, domicilio, registro) y b4 son las firmas. No hay notas que desglosen ingresos ni gastos. Estados individuales de la ΠΑΕ."
+}

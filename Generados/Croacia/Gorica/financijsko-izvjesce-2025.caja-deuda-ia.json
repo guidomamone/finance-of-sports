@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Croacia/Gorica/financijsko-izvjesce-2025.md",
+ "generado": "2026-10-02T00:16:16.223Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR EUR",
+ "caja": {
+  "lineas": [
+   756
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   779,
+   780,
+   795
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las etiquetas y los valores aparecen separados; según el orden, el sobregiro bancario (L779) y los préstamos corrientes (L780) figuran en 0 en 2025, y los préstamos no corrientes (L795) ascienden a 2.160.000 EUR. La caja de 2025 es de 2.263 EUR. La asignación de valores es aproximada debido a la extracción desordenada."
+}

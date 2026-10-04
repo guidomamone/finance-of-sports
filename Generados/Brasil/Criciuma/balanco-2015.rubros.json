@@ -1,0 +1,435 @@
+{
+ "md": "Clubes/Brasil/Criciuma/balanco-2015.md",
+ "pdf": "Clubes/Brasil/Criciuma/balanco-2015.pdf",
+ "club": "criciuma",
+ "year": 2015,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:52:00.641Z",
+ "tieOuts": {
+  "cierran": 19,
+  "noCierran": 4
+ },
+ "warnings": [
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "8 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 41,
+  "notasUsadas": []
+ },
+ "ladoConocido": 30,
+ "rubros": [
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": "revenue",
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "values": [
+    18.737555
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Futebol Profissional",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "values": [
+    -18.289053
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Futebol de Base",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "values": [
+    -1.813209
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Administrativo",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "values": [
+    -1.45036
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento de Marketing e Comercial",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "values": [
+    -1.188369
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento de Patrimonio",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "values": [
+    -3.704815
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Jurídico",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "values": [
+    -1.340799
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Departamento Loja - Tigre Maníacos",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "values": [
+    -0.151713
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "values": [
+    -0.264213
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "CUSTOS E DESPESAS OPERACIONAIS",
+   "lado": "expense",
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "values": [
+    -28.202532
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Despesas Financeiras",
+   "lado": "expense",
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "values": [
+    -1.247699
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Receitas Financeiras",
+   "lado": "revenue",
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "values": [
+    0.29864
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Descontos obtidos",
+   "lado": null,
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "values": [
+    276.533
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Rendas de aplicações financeiras",
+   "lado": null,
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "values": [
+    14.04
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Outras receitas financeiras",
+   "lado": "revenue",
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "values": [
+    8.066
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Despesas e comissões bancárias",
+   "lado": "expense",
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "values": [
+    105.929
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Juros sobre Empréstimos",
+   "lado": null,
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "values": [
+    973.636
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Descontos concedidos (perdão de dívidas de sócios)",
+   "lado": null,
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "values": [
+    167.726
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Outras despesas financeiras",
+   "lado": "expense",
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "values": [
+    0.407
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Receita com transmissão televisíveis",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "values": [
+    8776.922
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Receita com mensalidade de sócios",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "values": [
+    6727.476
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Receita de mecanismo de solidariedade",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "values": [
+    2441.524
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Repasse de direitos federativos",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "values": [
+    250
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Venda de mercadorias",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "values": [
+    128.315
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Receitas de royalties",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "values": [
+    68.507
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Receitas Publicidades",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "values": [
+    344.811
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Descrição",
+   "lado": "revenue",
+   "page": 20,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / 6 Patrocínios a receber e receitas de patrocínio a realizar",
+   "values": [
+    0.031
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Deycon Com e Representações Ltda.",
+   "lado": "revenue",
+   "page": 20,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / 6 Patrocínios a receber e receitas de patrocínio a realizar",
+   "values": [
+    98.68
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Nissin – Ajinomoto Alimentos Ltda.",
+   "lado": "revenue",
+   "page": 20,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / 6 Patrocínios a receber e receitas de patrocínio a realizar",
+   "values": [
+    150
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "SIECESC - Sindicato da Indústria do Carvão",
+   "lado": "revenue",
+   "page": 20,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / 6 Patrocínios a receber e receitas de patrocínio a realizar",
+   "values": [
+    225
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Edificações",
+   "lado": "expense",
+   "page": 20,
+   "section": "7 Adiantamentos a fornecedores / 8 Imobilizado / Ano 2015",
+   "values": [
+    0.004
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Veículos",
+   "lado": "expense",
+   "page": 20,
+   "section": "7 Adiantamentos a fornecedores / 8 Imobilizado / Ano 2015",
+   "values": [
+    1.625
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Equipamentos de Informática",
+   "lado": "expense",
+   "page": 20,
+   "section": "7 Adiantamentos a fornecedores / 8 Imobilizado / Ano 2015",
+   "values": [
+    1.15
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Maquinas e Equipamentos",
+   "lado": "expense",
+   "page": 20,
+   "section": "7 Adiantamentos a fornecedores / 8 Imobilizado / Ano 2015",
+   "values": [
+    0.55
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Moveis e Utensílios",
+   "lado": "expense",
+   "page": 20,
+   "section": "7 Adiantamentos a fornecedores / 8 Imobilizado / Ano 2015",
+   "values": [
+    0.55
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Atletas Formados",
+   "lado": "expense",
+   "page": 21,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "values": [
+    428.635
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Atletas em Formação",
+   "lado": "expense",
+   "page": 21,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "values": [
+    4305.591
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Atletas Contratados",
+   "lado": "expense",
+   "page": 21,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "values": [
+    774.332
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Projeto de Formação de Atletas Amadores – (1)",
+   "lado": "revenue",
+   "page": 23,
+   "section": "12 Receitas de subvenções a realizar",
+   "values": [
+    1271.751
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Projeto Construção Centro de Treinamento - PMC",
+   "lado": "revenue",
+   "page": 23,
+   "section": "12 Receitas de subvenções a realizar",
+   "values": [
+    1672.616
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Projeto Construção Centro de Treinamento - MESP",
+   "lado": "revenue",
+   "page": 23,
+   "section": "12 Receitas de subvenções a realizar",
+   "values": [
+    5168.006
+   ],
+   "origen": "estado 19"
+  }
+ ]
+}

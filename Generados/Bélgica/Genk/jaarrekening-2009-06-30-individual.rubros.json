@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Bélgica/Genk/jaarrekening-2009-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/Genk/jaarrekening-2009-06-30-individual.pdf",
+ "club": "genk-be",
+ "year": 2009,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:55:02.729Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 4,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 4.7 | 163/5 800.000 350.000 / Voorzieningen voor schenkingen en legaten met / terugnemingsrecht 4.7 | 168",
+   "values": [
+    15827.595
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Schulden op meer dan één jaar 48 |",
+   "lado": "expense",
+   "page": 4,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 4.7 | 163/5 800.000 350.000 / Voorzieningen voor schenkingen en legaten met / terugnemingsrecht 4.7 | 168",
+   "values": [
+    5178.52
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 4,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 4.7 | 163/5 800.000 350.000 / Voorzieningen voor schenkingen en legaten met / terugnemingsrecht 4.7 | 168",
+   "values": [
+    5177.47
+   ],
+   "origen": "estado 5"
+  }
+ ]
+}

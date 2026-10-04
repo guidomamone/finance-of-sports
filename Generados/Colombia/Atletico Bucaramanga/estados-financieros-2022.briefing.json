@@ -1,0 +1,2208 @@
+{
+  "club": "atletico-bucaramanga",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2022.md",
+  "generatedAt": "2026-09-30T21:57:59.007Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 50,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 44,
+  "relevantTableCount": 15,
+  "tables": [
+    {
+      "page": 9,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "BASES DE ELABORACIÓN Y POLÍTICAS CONTABLES (NIIF PYMES",
+          "values": [
+            "8.2A,",
+            "3.3;"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NIC1.112A, NIC",
+          "values": [
+            "1.16)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "NOTAS A LOS ESTADOS FINANCIEROS / NOTA 1 – EFECTIVO Y EQUIVALENTES A EFECTIVO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caja (a)",
+          "values": [
+            "2.000",
+            "2.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos (b)",
+          "values": [
+            "51.246",
+            "103.303"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depositos judiciales, procesos laborales en curso (c)",
+          "values": [
+            "297.001",
+            "297.001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales",
+          "values": [
+            "$350.247",
+            "$402.304"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "(a) Caja: / Concepto                     2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caja Menor",
+          "values": [
+            "2.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "2.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "Totales                    $ 51.246 / El saldo contable de cada cuenta bancaria a final de mes es igual al extracto bancario. La / mes. / (c) Depósitos Judiciales: / Concepto                                          2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Juzgado 1 laboral Circuito Bucaramanga, proceso # 680012032006",
+          "values": [
+            "250.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juzgado 2 laboral Circuito Bucaramanga, proceso # 680012032002",
+          "values": [
+            "47.001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "297.001"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "NOTA 2 – CUENTAS COMERCIALES POR COBRAR Y OTRAS CUENTAS POR COBRAR / CORRIENTES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Nacionales (a)",
+          "values": [
+            "541.877",
+            "646.317"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipos y avances (b)",
+          "values": [
+            "487.886",
+            "97.994"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros (c)",
+          "values": [
+            "1.294.605",
+            "1.122.659"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 2.324.367 $",
+          "values": [
+            "1.866.971"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "(a) Nacionales / Concepto                                      2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "FRESKALECHE SAS",
+          "values": [
+            "165.952"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIVISION MAYOR DE FUTBOL COLOMBIANO DIMAYOR",
+          "values": [
+            "375.925"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "541.877"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "inmediatamente en resultados una pérdida por deterioro del valor. / (a) Anticipos y avances. / Concepto                       2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Anticipos a Proveedores (1)",
+          "values": [
+            "51.727"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipos a empleados",
+          "values": [
+            "126.588"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "178.315"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 19,
+      "section": "Este rubro registra los valores a favor de la sociedad y a cargo de terceras personas en / desarrollo de su objeto social. / (b) Otros / Concepto                     2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "A accionistas (2)",
+          "values": [
+            "1.294.605"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros (3)",
+          "values": [
+            "309.570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "1.604.175"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "NOTA 3 – ACTIVOS POR IMPUESTOS CORRIENTES.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Anticipos de impuestos y saldos a favor (a)",
+          "values": [
+            "551.199",
+            "433.817"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 551.199 $",
+          "values": [
+            "433.817"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "(a) Activos por impuestos corrientes / Concepto                        2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Retenciones por renta practicadas",
+          "values": [
+            "236.813"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sobrantes de Renta 2021",
+          "values": [
+            "216.575"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autor retenciones por renta",
+          "values": [
+            "97.811"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "551.199"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "NOTA 4 – PROPIEDADES, PLANTA Y EQUIPO.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "24.960",
+            "24.960"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construcciones y edificaciones",
+          "values": [
+            "194.593",
+            "194.593"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Muebles y enseres",
+          "values": [
+            "98.234",
+            "98.234"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de computación y comunicación",
+          "values": [
+            "16.180",
+            "16.180"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo médico instrumental",
+          "values": [
+            "11.979",
+            "11.979"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Buses y busetas",
+          "values": [
+            "685.000",
+            "685.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación acumulada",
+          "values": [
+            "-349.165",
+            "-304.924"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 681.781 $",
+          "values": [
+            "726.022"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "NOTA 5 – INTAGIBLES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Derechos económicos",
+          "values": [
+            "190.246",
+            "529.575"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 190.246 $",
+          "values": [
+            "529.575"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "a) Derechos económicos / Concepto                           2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "FRANCISCO JAVIER MEZA PALMA",
+          "values": [
+            "93.246"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "JHORD BAYRON GARCES MORENO",
+          "values": [
+            "97.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "190.246"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "6 – ACTIVOS POR IMPUESTOS DIFERIDOS / NOTA 7 – CUENTAS POR PAGAR COMERCIALES Y OTRAS CUENTAS POR PAGAR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Nacionales",
+          "values": [
+            "2.448"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas comerciales corrientes (a)",
+          "values": [
+            "300.000",
+            "300.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costos y gastos por pagar (b)",
+          "values": [
+            "335.163",
+            "624.957"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retenciones en la fuente por pagar (c)",
+          "values": [
+            "26.317",
+            "85.476"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Retención por industria y comercio por pagar                     313                   576",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Retenciones y aportes de nómina (d)",
+          "values": [
+            "23.681",
+            "23.681"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondos de Pensiones y cesantías",
+          "values": [
+            "28.044",
+            "37.316"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Iva por pagar",
+          "values": [
+            "31.078",
+            "40.914"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ica por pagar",
+          "values": [
+            "2.146"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 745.058 $",
+          "values": [
+            "1.117.513"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "de 2022 y debe completarse en un plazo máximo de 3 años los cuales se cumplirán el 31 de / marzo de 2025. / (b) Costos y gastos por pagar / Concepto                         2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Derechos económicos por pagar",
+          "values": [
+            "22.834"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos por pagar",
+          "values": [
+            "116.207"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "519.417"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "635.625"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 22,
+      "section": "(c) Retención en la fuente por pagar / Concepto                               2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Retención en la fuente por pagar diciembre 2022",
+          "values": [
+            "26.317"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "26.317"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "(d) Retenciones y aportes de nomina / Concepto                             2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aportes entidades EPS",
+          "values": [
+            "7.609"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes entidades ARL",
+          "values": [
+            "2.207"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes ICBF sena, cajas de compensación",
+          "values": [
+            "6.866"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes a fondos de construcción",
+          "values": [
+            "7.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "23.681"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "NOTA 8 – OTROS PASIVOS NO FINANCIEROS CORRIENTES.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Sueldos $ 177.223 $",
+          "values": [
+            "137.231"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Liquidaciones $ - $",
+          "values": [
+            "72.469"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "cesantías $ 34.244 $",
+          "values": [
+            "16.852"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses a las cesantías $ 3.716 $",
+          "values": [
+            "1.328"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vacaciones $ 978 $",
+          "values": [
+            "51.796"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 216.160 $",
+          "values": [
+            "279.676"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "NOTA 9 – OTRAS PROVISIONES NO CORRIENTES.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Provisiones por demandas laborales (a)",
+          "values": [
+            "818.851",
+            "606.858"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 818.851 $",
+          "values": [
+            "606.858"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "WILLIAM FRANCISCO CONDE GORDILLO 80.000.000 Ordinario Laboral 70%",
+          "values": [
+            "24.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ALVARO SUAREZ VANEGAS 60.000.000 Ordinario Laboral 20%",
+          "values": [
+            "1.858"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VICTOR HUGO ESPINOSA PATIÑO 30.000.000 Ordinario Laboral 15%",
+          "values": [
+            "25.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ANTONIO ALEJANDRO OTERO OREJUELA 500.000.000 Ordinario Laboral 15%",
+          "values": [
+            "425.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "JUAN FERNANDO CASTRO ALEGRIA 60.000.000 Ordinario Laboral 70%",
+          "values": [
+            "42.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "WILLIAM RUIZ GALVIS 30.000.000 Ordinario Laboral 60%",
+          "values": [
+            "12.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HUMBERTO DE JESUS SIERRA 120.000.000 Ordinario Laboral 70%",
+          "values": [
+            "36.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OSCAR PANESSO VALENCIA 50.000.000 Ordinario Laboral 70%",
+          "values": [
+            "15.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REAL CARACOLI 67.059.948 Ordinario Laboral 15%",
+          "values": [
+            "25.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LUIS FERNANDO SUAREZ GUZMAN 423.985.263 Ordinario Laboral 50%",
+          "values": [
+            "211.993"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL CUANTIAS $ 1.421.045.211 $",
+          "values": [
+            "818.851"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 23,
+      "section": "NOTA 10 – PASIVOS POR IMPUESTOS DIFERIDOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pasivo por impuestos diferido",
+          "values": [
+            "212.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 0 $",
+          "values": [
+            "212.400"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "NOTA 11 – PASIVO RESTRINGIDO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Anticipo derechos de TV internacional controlado Dimayor (a)",
+          "values": [
+            "72.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipo derechos TV Win Sports controlado Dimayor (b)",
+          "values": [
+            "137.188",
+            "440.245"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "NOTA 12 – PATRIMONIO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Capital emitido",
+          "values": [
+            "1.000.000",
+            "1.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reserva legal",
+          "values": [
+            "203.974",
+            "203.974"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utilidad y/o pérdidas acumuladas",
+          "values": [
+            "-211.165",
+            "477.823"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Perdida del periodo",
+          "values": [
+            "891.785",
+            "-688.988"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 1.884.593 $",
+          "values": [
+            "992.809"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Taquilla venta de boletería",
+          "values": [
+            "3.840.672",
+            "772.374"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta y préstamo de derechos deportivos",
+          "values": [
+            "336.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad y propaganda",
+          "values": [
+            "261.204",
+            "345.907"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de televisión",
+          "values": [
+            "4.601.728",
+            "4.222.353"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocinios",
+          "values": [
+            "2.588.550",
+            "1.882.530"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Actividades conexas",
+          "values": [
+            "950.823",
+            "544.072"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 12.242.978 $",
+          "values": [
+            "8.103.236"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 25,
+      "section": "NOTA 14 – GASTOS DE ADMINISTACION",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "impuestos (b)",
+          "values": [
+            "24.328",
+            "33.758"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios (c)",
+          "values": [
+            "10.111",
+            "1.828"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 25,
+      "section": "Gastos legales                                               8.215                  0 / Depreciaciones (d)                                          44.241             46.710 / Gastos varios                                                6.169                  0 / Diversos                                                    46.695                789",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Provisiones demandas laborales (nota 9)",
+          "values": [
+            "211.993",
+            "606.858"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 543.987 $",
+          "values": [
+            "903.478"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 26,
+      "section": "(a) Gastos de personal / Concepto                                 2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Salarios",
+          "values": [
+            "97.976"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilio de transporte",
+          "values": [
+            "5.243"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Auxilios",
+          "values": [
+            "17.438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cesantías",
+          "values": [
+            "8.193"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 26,
+      "section": "Intereses de cesantías                                                   724",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Prima de servicios",
+          "values": [
+            "8.117"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vacaciones",
+          "values": [
+            "3.754"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bonificaciones",
+          "values": [
+            "1.540"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes a administradores de riesgos profesionales",
+          "values": [
+            "1.127"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes a entidades promotoras de salud e.p.s",
+          "values": [
+            "2.425"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes a fondos de pensiones y o cesantías",
+          "values": [
+            "10.573"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes cajas de compensación familiar",
+          "values": [
+            "3.854"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "Gastos médicos                                                           113 / Totales                           $           161.076 / (b) Impuestos / Concepto                               2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Industria y comercio",
+          "values": [
+            "24.328"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "24.328"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 26,
+      "section": "Concepto                          2022 / Servicio de administración edificio                          849 / Totales                      $              849 / (d) Depreciaciones / Concepto                          2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Construcciones y edificaciones",
+          "values": [
+            "4.574"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de oficina",
+          "values": [
+            "1.648"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de computación y comunicación",
+          "values": [
+            "2.669"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "Equipo médico científico                                    519",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Flota y equipo de transporte",
+          "values": [
+            "34.831"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "44.241"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "NOTA 15 – GASTOS DE VENTAS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos de personal (a)",
+          "values": [
+            "5.586.992",
+            "5.370.358"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "57.097",
+            "129.147"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos (b)",
+          "values": [
+            "402.683",
+            "78.102"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "212.656",
+            "33.468"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuciones y afiliaciones",
+          "values": [
+            "3.482"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "12.042",
+            "25.661"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios (c)",
+          "values": [
+            "1.556.324",
+            "350.267"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos legales",
+          "values": [
+            "6.170"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento y reparación",
+          "values": [
+            "10.788"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de viaje (d)",
+          "values": [
+            "223.817",
+            "225.192"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos (e)",
+          "values": [
+            "2.225.300",
+            "1.250.088"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 10.277.446 $",
+          "values": [
+            "7.482.722"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 27,
+      "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Salario integral",
+          "values": [
+            "3.001.073"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sueldos Ordinarios",
+          "values": [
+            "839.090"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilio de transporte",
+          "values": [
+            "18.021"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilios de vivienda y sostenimiento",
+          "values": [
+            "475.806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Incapacidades",
+          "values": [
+            "44.727"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cesantías",
+          "values": [
+            "80.072"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses de cesantías",
+          "values": [
+            "7.571"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima de servicios",
+          "values": [
+            "78.701"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vacaciones",
+          "values": [
+            "153.107"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dotación y suministro a trabajadores",
+          "values": [
+            "22.949"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indemnizaciones laborales",
+          "values": [
+            "110.038"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes a administradoras de riesgos profesionales",
+          "values": [
+            "63.834"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes a entidades promotoras de salud EPS",
+          "values": [
+            "75.920"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes a fondo de pensiones y cesantías",
+          "values": [
+            "385.467"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes cajas de compensación",
+          "values": [
+            "126.093"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes ICBF",
+          "values": [
+            "21.912"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes SENA",
+          "values": [
+            "15.033"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Medicamentos y botiquín",
+          "values": [
+            "67.578"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "5.586.992"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 28,
+      "section": "(b) Impuestos / Concepto                          2022 / De espectáculos públicos                                    160.177 / De vehículos                                                    603 / A la propiedad raíz                                             980",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Derechos sobre instrumentos públicos",
+          "values": [
+            "12.562"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "174.322"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "(c) Servicios / Concepto                           2022 / Aseo y vigilancia                                           22.420 / Asistencia técnica                                             280",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Acueducto y alcantarillado.",
+          "values": [
+            "1.718"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Energía eléctrica",
+          "values": [
+            "1.523"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Teléfono Fijo e Internet",
+          "values": [
+            "1.547"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Correo, portes y telegramas                                    364",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Transporte Fletes y Acarreos",
+          "values": [
+            "72.388"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad",
+          "values": [
+            "8.554"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arbitraje",
+          "values": [
+            "277.745"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Logística",
+          "values": [
+            "180.896"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Refrigerios",
+          "values": [
+            "40.659"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alquiler de cancha",
+          "values": [
+            "261.145"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Boletería",
+          "values": [
+            "3.496"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ambulancia",
+          "values": [
+            "2.640"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bomberos",
+          "values": [
+            "48.244"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cruz roja",
+          "values": [
+            "31.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Medicina deportiva",
+          "values": [
+            "13.615"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasajes Dimayor",
+          "values": [
+            "201.914"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas Dimayor equipo masculino",
+          "values": [
+            "119.757"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas Dimayor equipo femenino",
+          "values": [
+            "76.083"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros servicios Sub",
+          "values": [
+            "23.720"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "157.015"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "1.556.324"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "(d) Gastos de viaje / Concepto                        2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Alojamiento y manutención",
+          "values": [
+            "216.141"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasajes Aéreos",
+          "values": [
+            "7.596"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 29,
+      "section": "(e) Diversos / Concepto                         2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Útiles de Papelería",
+          "values": [
+            "3.921"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Elementos de aseo y cafetería",
+          "values": [
+            "28.121"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Combustibles y lubricantes",
+          "values": [
+            "7.402"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxis y buses",
+          "values": [
+            "4.178"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Casino y Restaurantes",
+          "values": [
+            "62.916"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos económicos",
+          "values": [
+            "1.590.204"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de imagen",
+          "values": [
+            "439.438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "89.120"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $",
+          "values": [
+            "2.225.300"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "NOTA 16 – OTROS INGRESOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros ingresos",
+          "values": [
+            "68.994",
+            "153.221"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 68.994 $",
+          "values": [
+            "153.221"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 29,
+      "section": "NOTA 17 – OTROS GASTOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Impuestos asumidos",
+          "values": [
+            "9.308",
+            "16.562"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demandas laborales",
+          "values": [
+            "112.306",
+            "74.388"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas sanciones y litigios",
+          "values": [
+            "17.065"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros gastos",
+          "values": [
+            "11.333",
+            "10.667"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 132.946 $",
+          "values": [
+            "118.682"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 30,
+      "section": "NOTA 18 – INGRESOS FINANCIEROS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos financieros",
+          "values": [
+            "1.221",
+            "1.763"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 1.221 $",
+          "values": [
+            "1.763"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 30,
+      "section": "NOTA 19 – COSTOS FINANCIEROS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bancarios",
+          "values": [
+            "53.900",
+            "37.713"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 53.900 $",
+          "values": [
+            "37.713"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 30,
+      "section": "NOTA 20 – IMPUESTO DE RENTA Y COMPLEMENTARIOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Impuesto Diferido",
+          "values": [
+            "-498.998",
+            "300.373"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto renta",
+          "values": [
+            "582.587",
+            "212.241"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales $ 83.589 $",
+          "values": [
+            "512.614"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 17,
+      "section": "NOTAS A LOS ESTADOS FINANCIEROS / NOTA 1 – EFECTIVO Y EQUIVALENTES A EFECTIVO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$350.247\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 17,
+      "section": "NOTAS A LOS ESTADOS FINANCIEROS / NOTA 1 – EFECTIVO Y EQUIVALENTES A EFECTIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Totales",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"$402.304\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 17,
+      "section": "(a) Caja: / Concepto                     2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "2.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "Totales                    $ 51.246 / El saldo contable de cada cuenta bancaria a final de mes es igual al extracto bancario. La / mes. / (c) Depósitos Judiciales: / Concepto                                          2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "297.001",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "NOTA 2 – CUENTAS COMERCIALES POR COBRAR Y OTRAS CUENTAS POR COBRAR / CORRIENTES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $ 2.324.367 $",
+      "target": "1.866.971",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "457397"
+    },
+    {
+      "page": 18,
+      "section": "(a) Nacionales / Concepto                                      2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "541.877",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "inmediatamente en resultados una pérdida por deterioro del valor. / (a) Anticipos y avances. / Concepto                       2022",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "178.315",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "Este rubro registra los valores a favor de la sociedad y a cargo de terceras personas en / desarrollo de su objeto social. / (b) Otros / Concepto                     2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "1.604.175",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "NOTA 3 – ACTIVOS POR IMPUESTOS CORRIENTES.",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $ 551.199 $",
+      "target": "433.817",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "117382"
+    },
+    {
+      "page": 19,
+      "section": "(a) Activos por impuestos corrientes / Concepto                        2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "551.199",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "NOTA 4 – PROPIEDADES, PLANTA Y EQUIPO.",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $ 681.781 $",
+      "target": "726.022",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "-44241"
+    },
+    {
+      "page": 20,
+      "section": "NOTA 5 – INTAGIBLES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $ 190.246 $",
+      "target": "529.575",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-339329"
+    },
+    {
+      "page": 21,
+      "section": "a) Derechos económicos / Concepto                           2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "190.246",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "Retención por industria y comercio por pagar                     313                   576",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $ 745.058 $",
+      "target": "1.117.513",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-1032564"
+    },
+    {
+      "page": 22,
+      "section": "de 2022 y debe completarse en un plazo máximo de 3 años los cuales se cumplirán el 31 de / marzo de 2025. / (b) Costos y gastos por pagar / Concepto                         2022",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "635.625",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "22833"
+    },
+    {
+      "page": 22,
+      "section": "(c) Retención en la fuente por pagar / Concepto                               2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "26.317",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "(d) Retenciones y aportes de nomina / Concepto                             2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "23.681",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    },
+    {
+      "page": 22,
+      "section": "NOTA 8 – OTROS PASIVOS NO FINANCIEROS CORRIENTES.",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $ 216.160 $",
+      "target": "279.676",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "NOTA 9 – OTRAS PROVISIONES NO CORRIENTES.",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $ 818.851 $",
+      "target": "606.858",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "211993"
+    },
+    {
+      "page": 23,
+      "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL CUANTIAS $ 1.421.045.211 $",
+      "target": "818.851",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "NOTA 10 – PASIVOS POR IMPUESTOS DIFERIDOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $ 0 $",
+      "target": "212.400",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 24,
+      "section": "NOTA 12 – PATRIMONIO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $ 1.884.593 $",
+      "target": "992.809",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "891785"
+    },
+    {
+      "page": 25,
+      "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales $ 12.242.978 $",
+      "target": "8.103.236",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "4475741"
+    },
+    {
+      "page": 25,
+      "section": "Gastos legales                                               8.215                  0 / Depreciaciones (d)                                          44.241             46.710 / Gastos varios                                                6.169                  0 / Diversos                                                    46.695                789",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales $ 543.987 $",
+      "target": "903.478",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-691485"
+    },
+    {
+      "page": 26,
+      "section": "Gastos médicos                                                           113 / Totales                           $           161.076 / (b) Impuestos / Concepto                               2022",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "24.328",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 26,
+      "section": "Equipo médico científico                                    519",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "44.241",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-9410"
+    },
+    {
+      "page": 27,
+      "section": "NOTA 15 – GASTOS DE VENTAS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales $ 10.277.446 $",
+      "target": "7.482.722",
+      "addendCount": 11,
+      "closes": false,
+      "diff": "2814629"
+    },
+    {
+      "page": 27,
+      "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "5.586.992",
+      "addendCount": 18,
+      "closes": true
+    },
+    {
+      "page": 28,
+      "section": "(b) Impuestos / Concepto                          2022 / De espectáculos públicos                                    160.177 / De vehículos                                                    603 / A la propiedad raíz                                             980",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "174.322",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-161760"
+    },
+    {
+      "page": 28,
+      "section": "Correo, portes y telegramas                                    364",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "1.556.324",
+      "addendCount": 16,
+      "closes": false,
+      "diff": "-36853"
+    },
+    {
+      "page": 29,
+      "section": "(e) Diversos / Concepto                         2022",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $",
+      "target": "2.225.300",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "NOTA 16 – OTROS INGRESOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales $ 68.994 $",
+      "target": "153.221",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-84227"
+    },
+    {
+      "page": 29,
+      "section": "NOTA 17 – OTROS GASTOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales $ 132.946 $",
+      "target": "118.682",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "31330"
+    },
+    {
+      "page": 30,
+      "section": "NOTA 18 – INGRESOS FINANCIEROS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales $ 1.221 $",
+      "target": "1.763",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-542"
+    },
+    {
+      "page": 30,
+      "section": "NOTA 19 – COSTOS FINANCIEROS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales $ 53.900 $",
+      "target": "37.713",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "16187"
+    },
+    {
+      "page": 30,
+      "section": "NOTA 20 – IMPUESTO DE RENTA Y COMPLEMENTARIOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Totales $ 83.589 $",
+      "target": "512.614",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-429025"
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/atletico-bucaramanga-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"atletico-bucaramanga\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [
+    {
+      "page": 7,
+      "line": "30. Conversión de la moneda extranjera                             No Aplica"
+    }
+  ],
+  "warnings": [
+    "8 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "11 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

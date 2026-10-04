@@ -1,0 +1,421 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2002-03.md",
+ "generatedAt": "2026-10-03T23:15:27.460Z",
+ "rubrosHuella": "73bde9807d3e1b322fa85f7077e011efb1118ac0",
+ "rubros": [
+  {
+   "label": "1) REVENUES FROM SALES AND SERVICES",
+   "lado": "revenue",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Income from temporary transfer of players",
+   "lado": "revenue",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "e) Other revenues and income",
+   "lado": "revenue",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "a) capital gains on disposals",
+   "lado": "revenue",
+   "page": 68,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "b) use of reserve art. 25 of the Company By-Laws",
+   "lado": "revenue",
+   "page": 68,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "d) Others",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "TV revenues percentage from visiting team",
+   "lado": "revenue",
+   "page": 87,
+   "section": "ajuste manual",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Other sponsorships and other commercial contracts",
+   "lado": "revenue",
+   "page": 87,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "6) PURCHASES",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "7) SERVICE EXPENSES",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "8) LEASE AND RENT COSTS",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Salaries and wages",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Social security contributions",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "c) Severance indemnity",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "e) Other costs",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Amortisation of intangible fixed assets",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Depreciation of tangible fixed assets",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "d) Write-downs of receivables entered under current assets and cash at bank and in hand",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Other risks",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Match organisation expenses",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "b) Official match expenses",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "c) Match registration fees",
+   "lado": "expense",
+   "page": 67,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "c) of securities entered under current assets other than shareholdings",
+   "lado": "expense",
+   "page": 68,
+   "section": "ajuste manual",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "a) capital losses on disposals",
+   "lado": "expense",
+   "page": 68,
+   "section": "ajuste manual",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "c) other extraordinary expenses",
+   "lado": "expense",
+   "page": 68,
+   "section": "ajuste manual",
+   "choice": "exceptional_items",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Players' and coach image rights",
+   "lado": "revenue",
+   "page": 87,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.49
+    ],
+    [
+     "sponsorship_commercial",
+     0.45
+    ],
+    [
+     "broadcasting",
+     0.05
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Revenues from U.E.F.A. Champions League",
+   "lado": "revenue",
+   "page": 87,
+   "section": "ajuste manual",
+   "choice": "competition_bonus",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "competition_bonus",
+     0.97
+    ],
+    [
+     "broadcasting",
+     0.03
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Television revenues",
+   "lado": "revenue",
+   "page": 87,
+   "section": "ajuste manual",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Official and technical sponsors",
+   "lado": "revenue",
+   "page": 87,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Telephonic rights",
+   "lado": "revenue",
+   "page": 87,
+   "section": "ajuste manual",
+   "choice": "broadcasting",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "broadcasting",
+     0.85
+    ],
+    [
+     "other_income",
+     0.15
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "Sundry income",
+   "lado": "revenue",
+   "page": 87,
+   "section": "ajuste manual",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Advertising",
+   "lado": "revenue",
+   "page": 87,
+   "section": "ajuste manual",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1023
+  }
+ ]
+}

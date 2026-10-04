@@ -1,0 +1,3781 @@
+{
+  "club": "pontepreta-br",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Ponte Preta/balanco-2022-2023.mistral-redo.md",
+  "generatedAt": "2026-09-30T01:46:04.830Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 325,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 26,
+  "relevantTableCount": 4,
+  "tables": [
+    {
+      "page": 1,
+      "section": "ASSOCIAÇÃO ATLÉTICA PONTE PRETA / CNPJ (MP) - AL 125.175/0001-26 / # Balanços Patrimoniais em 31/12/2023 e 31/12/2022 (Valores Expressos em reais)",
+      "columns": [
+        "ATIVO",
+        "Nota",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CIRCULANTE",
+          "values": [
+            "",
+            "1.297.641",
+            "1.033.466"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Coixo e Bancos",
+          "values": [
+            "3",
+            "67.135",
+            "43.848"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Projetos",
+          "values": [
+            "4",
+            "148.378",
+            "148.378"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a Receber",
+          "values": [
+            "5",
+            "175.000",
+            "175.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estoques de material de consumo",
+          "values": [
+            "6",
+            "494.221",
+            "483.013"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Créditos a Receber",
+          "values": [
+            "",
+            "412.957",
+            "183.227"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NÃO CIRCULANTE",
+          "values": [
+            "",
+            "232.570.509",
+            "248.444.844"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Depositos/Broqueios Judiciais",
+          "values": [
+            "7",
+            "3.222.194",
+            "1.806.438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "8",
+            "149.613.197",
+            "151.214.447"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "9",
+            "77.735.117",
+            "93.423.939"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DO ATIVO",
+          "values": [
+            "",
+            "233.868.150",
+            "249.478.310"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "As notas explicativas são partes integrantes das demonstrações financeiras",
+      "columns": [
+        "FASSIVO",
+        "Nota",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CIRCULANTE",
+          "values": [
+            "",
+            "50.483.911",
+            "38.369.611"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fornecedores, Prestadores de Serviço e Outros",
+          "values": [
+            "10",
+            "8.104.347",
+            "8.263.039"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Títulos a Pagar",
+          "values": [
+            "10",
+            "8.341.810",
+            "7.781.842"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar",
+          "values": [
+            "10",
+            "1.208.889",
+            "1.208.889"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salário e Indenizações a Pagar",
+          "values": [
+            "11",
+            "6.027.826",
+            "4.731.245"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuições a Recolher",
+          "values": [
+            "12",
+            "17.753.655",
+            "10.187.464"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos de impostos e contribuições",
+          "values": [
+            "13",
+            "2.308.991",
+            "2.195.455"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento",
+          "values": [
+            "14",
+            "2.626.735",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos trabalhistas",
+          "values": [
+            "14",
+            "3.911.658",
+            "3.911.658"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NÃO CIRCULANTE",
+          "values": [
+            "",
+            "156.148.132",
+            "151.203.384"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Provisão para Contingências",
+          "values": [
+            "15",
+            "15.544.789",
+            "9.043.476"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos de impostos e contribuições",
+          "values": [
+            "15",
+            "30.623.021",
+            "30.936.557"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos trabalhistas",
+          "values": [
+            "16",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Títulos a Pagar",
+          "values": [
+            "10",
+            "109.980.202",
+            "111.223.351"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PATRIMÔNIO LÍQUIDO",
+          "values": [
+            "",
+            "27.236.106",
+            "60.000.310"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Patrimônio Social",
+          "values": [
+            "17",
+            "5.771.559",
+            "5.771.559"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avaliação de Afeitos Profissionais",
+          "values": [
+            "17",
+            "69.899.500",
+            "87.500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Avaliação Patrimonial",
+          "values": [
+            "17",
+            "160.711.835",
+            "160.711.835"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit Acumulado",
+          "values": [
+            "17",
+            "(193.978.080)",
+            "(189.447.389)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit (Déficit) do Exercício",
+          "values": [
+            "17",
+            "(15.168.708)",
+            "(4.530.791)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DO PASSIVO",
+          "values": [
+            "",
+            "233.868.150",
+            "249.478.310"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "As notas explicativas são partes integrantes das demonstrações financeiras",
+      "columns": [
+        "DESCRIÇÃO",
+        "PATRIMÔNIO SOCIAL",
+        "RESERVA DE AVALIAÇÃO DO ATLÉTAS"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Em 31 de dezembro de 2.021",
+          "values": [
+            "5.771.559",
+            "67.246.166"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Avaliação de atletas",
+          "values": [
+            "-",
+            "20.253.834"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Exercícios Anteriores",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Realização do ajuste de avaliação patrimonial",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit (Déficit) do Exercício",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Em 31 de dezembro de 2.023",
+          "values": [
+            "5.771.559",
+            "87.500.000"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Avaliação de atletas",
+          "values": [
+            "-",
+            "(17.600.499)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Exercícios Anteriores",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Realização do ajuste de avaliação patrimonial",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit (Déficit) do Exercício",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Em 31 de dezembro de 2.023",
+          "values": [
+            "5.771.559",
+            "69.899.500"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "As notas explicativas são partes integrantes das demonstrações financeiras",
+      "columns": [
+        "AJUSTE DE AVALIAÇÃO PATRIMONIAL",
+        "SUPERÁVIT / DÉFICIT ACUMULADO",
+        "TOTAL"
+      ],
+      "rows": [
+        {
+          "rawLabel": "160.711.835",
+          "values": [
+            "(189.587.873)",
+            "44.141.686"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "-",
+          "values": [
+            "-",
+            "20.253.834"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-",
+          "values": [
+            "140.585",
+            "140.585"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-",
+          "values": [
+            "(4.530.791)",
+            "(4.530.791)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "160.711.835",
+          "values": [
+            "(193.978.079)",
+            "60.000.313"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "-",
+          "values": [
+            "-",
+            "(17.600.499)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-",
+          "values": [
+            "(15.168.708)",
+            "(15.168.708)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "160.711.835",
+          "values": [
+            "(209.146.787)",
+            "27.236.107"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": [
+        "",
+        "Nota",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "RECOITA OPERACIONAIS",
+          "values": [
+            "",
+            "32.375.229",
+            "44.847.100"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Departamentos:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profissional",
+          "values": [
+            "18",
+            "28.689.408",
+            "40.679.209"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrativo - Estado",
+          "values": [
+            "",
+            "991.662",
+            "914.148"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrativo - Jd Palmeiras",
+          "values": [
+            "",
+            "56.213",
+            "38.956"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrativo - Amador",
+          "values": [
+            "",
+            "745.327",
+            "490.304"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Socio / Outros",
+          "values": [
+            "",
+            "1.894.631",
+            "2.724.533"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS OPERACIONAIS",
+          "values": [
+            "",
+            "(47.563.937)",
+            "(49.377.891)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Departamentos:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profissional",
+          "values": [
+            "18",
+            "(39.961.784)",
+            "(41.719.381)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrativo - Estado",
+          "values": [
+            "",
+            "(3.651.649)",
+            "(3.932.300)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrativo - Jd Palmeiras",
+          "values": [
+            "",
+            "(329.421)",
+            "(272.761)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrativo - Jd Eulíria",
+          "values": [
+            "",
+            "(370.469)",
+            "(237.800)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amador",
+          "values": [
+            "",
+            "(3.009.161)",
+            "(2.864.938)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Euro",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Financeiro Líquido",
+          "values": [
+            "",
+            "(221.453)",
+            "(350.711)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUPERAVIT (DÉFICIT) DO EXERCÍCIO",
+          "values": [
+            "",
+            "(15.168.708)",
+            "(4.530.791)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "# NOTA III. CONTEXTO OPERACIONAL: / # NOTA III. DIMONSTRAÇÕES E PRÁTICAS CONTÁBEIS:",
+      "columns": [
+        "",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ATIVIDADES OPERACIONAIS",
+          "values": [
+            "618.028",
+            "2.182.090"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Superávit (Déficit) do Exercício",
+          "values": [
+            "(15.168.708)",
+            "(4.530.791)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras a classificar",
+          "values": [
+            "-",
+            "140.586"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Exercícios Anteriores",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avaliação de Atletas",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação e amortização",
+          "values": [
+            "1.601.386",
+            "1.751.112"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diminuição (Aumento) dos ativos:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Projetos",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efraques de material de consumo",
+          "values": [
+            "(11.208)",
+            "(16.893)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Créditos a receber",
+          "values": [
+            "(229.680)",
+            "(123.959)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Realizável a Longo Prazo",
+          "values": [
+            "(3.415.892)",
+            "(1.024.112)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento (Diminuição) dos passivos",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "(108.692)",
+            "1.211.577"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuições a Recolher",
+          "values": [
+            "7.566.191",
+            "6.621.191"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sólario e Indenizações a Pagar",
+          "values": [
+            "1.306.581",
+            "1.329.664"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Passivos",
+          "values": [
+            "2.626.735",
+            "(2.760.488)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para Contingências",
+          "values": [
+            "6.501.313",
+            "334.076"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos de impostos e contribuições",
+          "values": [
+            "-",
+            "(279.027)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos trabalhistas",
+          "values": [
+            "-",
+            "(470.846)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATIVIDADES DE FINANCIAMENTOS/TERCEIROS",
+          "values": [
+            "(683.081)",
+            "(5.967.610)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fluxas a Pagar",
+          "values": [
+            "(683.081)",
+            "(5.967.610)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Emprezimos e financiamentos",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATIVIDADES DE INVESTIMENTOS",
+          "values": [
+            "88.341",
+            "3.784.978"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aquisição de Imobilizado",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aquisição e Formação de Atletas",
+          "values": [
+            "88.341",
+            "3.784.978"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avaliação de atletas",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aquisição de Intangível",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixa para regulamentação imobilizada",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AUMENTO (REDUÇÃO) CAIXA E EQUIVALENTES",
+          "values": [
+            "23.287",
+            "(541)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Representados por:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo de caixa e bancos no início da ano",
+          "values": [
+            "43.848",
+            "44.388"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo de caixa e bancos no final da ano",
+          "values": [
+            "67.135",
+            "43.848"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AUMENTO (REDUÇÃO) CAIXA E EQUIVALENTES",
+          "values": [
+            "23.287",
+            "(541)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 05. CAIXA 5 BANCOS",
+      "columns": [
+        "Assim representados:",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "DESCRIÇÃO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caixa",
+          "values": [
+            "3.003",
+            "2.115"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos Contra Corrente",
+          "values": [
+            "59.321",
+            "12.022"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicações",
+          "values": [
+            "4.311",
+            "29.711"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "67.135",
+            "43.848"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 06. CONTAS A RECEBIR",
+      "columns": [
+        "Assim representados:",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "DESCRIÇÃO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Assoc.Portug.Esp.",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baoa Esporte (a)",
+          "values": [
+            "175.000",
+            "175.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "175.000",
+            "175.000"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 07. DEPÓSITOS JUDICIAIS",
+      "columns": [
+        "Assim representados:",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Depósitos Judiciais Anteriores",
+          "values": [
+            "1.806.438",
+            "782.324"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Novas Depósitos Judiciais",
+          "values": [
+            "3.378.256",
+            "986.612"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Cúpido para Aluguel",
+          "values": [
+            "37.500",
+            "37.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Levantamentos / Resgates",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "5.222.194",
+            "1.806.438"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 08. IMOBILIZADO",
+      "columns": [
+        "Assim representados:",
+        "2023",
+        "2022",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "DESCRIÇÃO",
+          "values": [
+            "Custo",
+            "Depreciação",
+            "Valor Líquido"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMOBILIZADO ORIGINAL",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Terceno",
+          "values": [
+            "4.358.443",
+            "4.358.443",
+            "4.358.443"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construção",
+          "values": [
+            "1.742.471",
+            "(1.742.471)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinas e Equipamentos",
+          "values": [
+            "253.342",
+            "(253.342)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Informativos e Periféricos",
+          "values": [
+            "127.915",
+            "(112.118)",
+            "15.797"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos Esportivos",
+          "values": [
+            "1.126.537",
+            "(1.126.537)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Utensílios",
+          "values": [
+            "454.938",
+            "(424.278)",
+            "32.659"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "603.129",
+            "(614.232)",
+            "18.897"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "8.758.776",
+            "(4.332.979)",
+            "4.425.797"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMOBILIZADO REAVALIAÇÃO",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Terceno",
+          "values": [
+            "121.547.664",
+            "121.547.664",
+            "121.547.664"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construção",
+          "values": [
+            "40.575.812",
+            "(16.948.216)",
+            "23.625.597"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinas e Equipamentos",
+          "values": [
+            "33.238",
+            "(33.238)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Informativos e Periféricos",
+          "values": [
+            "13.011",
+            "(2.602)",
+            "10.409"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos Esportivos",
+          "values": [
+            "172.849",
+            "(185.196)",
+            "(12.348)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Utensílios",
+          "values": [
+            "17.035",
+            "(2.527)",
+            "14.508"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "2.617",
+            "(1.047)",
+            "1.570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "162.360.226",
+            "(17.172.825)",
+            "145.187.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Imobilizado",
+          "values": [
+            "171.119.001",
+            "(21.656.804)",
+            "149.613.197"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 11. SALARIOS E INDEMNICAÇÕES A PAGAR",
+      "columns": [
+        "Assim representados:",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salários a Pagar",
+          "values": [
+            "4.625.549",
+            "3.663.284"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Féreas a Pagar / Provisão de Férias",
+          "values": [
+            "1.400.277",
+            "1.037.961"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "6.027.826",
+            "4.727.245"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 12. CONTRIBUIÇÕES A RECEBIR",
+      "columns": [
+        "Assim representados:",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "FGTS a Recobrir",
+          "values": [
+            "2.820.754",
+            "1.946.321"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS a Recobrir",
+          "values": [
+            "4.804.151",
+            "2.691.420"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRPF a Recobrir",
+          "values": [
+            "8.722.280",
+            "4.841.656"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Contribuições",
+          "values": [
+            "1.406.471",
+            "708.067"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "17.763.658",
+            "10.187.464"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 13. PARCELAMENTO DE IMPOSTOS E CONTRIBUIÇÕES",
+      "columns": [
+        "Parcelamentos",
+        "2023",
+        "",
+        "",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Circulante",
+            "Não Circulante",
+            "Total",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRPF/PG/CSIP Faiho / PARCEL S/N",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCOS CENTRAL DO BRASIL",
+          "values": [
+            "141.282",
+            "2.077.730",
+            "2.219.012",
+            "2.219.011"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS/PROFUT",
+          "values": [
+            "193.471",
+            "2.497.220",
+            "2.690.691",
+            "2.690.691"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS/PARCELAMENTO SIMPLIFICA",
+          "values": [
+            "875.184",
+            "902.221",
+            "1.777.405",
+            "1.777.405"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS/PROFUT",
+          "values": [
+            "281.582",
+            "5.525.583",
+            "5.807.145",
+            "5.807.145"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS/PARCELAMENTO SIMPLIFICA",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRPF/PROFUT",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CSIP/PROFUT",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS/FOURA/PROFUT",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PERF. PARCELAMENTO",
+          "values": [
+            "89.304",
+            "637.217",
+            "726.521",
+            "726.521"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PERF.PARCELAMENTO INSS",
+          "values": [
+            "76.191",
+            "436.110",
+            "512.302",
+            "512.302"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FG. PARCELAMENTO SIMPLIFICA",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PERSE PARCELAMENTO",
+          "values": [
+            "691.375",
+            "14.727.808",
+            "15.419.233",
+            "15.419.234"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PERSE PARCELAMENTO PREVIDEN",
+          "values": [
+            "160.602",
+            "3.819.081",
+            "3.979.682",
+            "3.979.682"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2.508.991",
+            "30.625.021",
+            "33.132.012",
+            "33.132.012"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 04. PROJETOS",
+      "columns": [
+        "Assim representados:",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "DESCRIÇÃO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bancos do Brasil S A",
+          "values": [
+            "77.198",
+            "77.198"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Projetos",
+          "values": [
+            "(328.000)",
+            "(328.000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bloqueiros Judiciais",
+          "values": [
+            "250.802",
+            "250.802"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos Brasil s/n 28130-8",
+          "values": [
+            "20",
+            "20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos Brasil C/úsp/ Proj Sal Futuro (a)",
+          "values": [
+            "148.358",
+            "148.358"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "148.378",
+            "148.378"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 05. ESTOQUE DE MATERIAL DE COMUMO",
+      "columns": [
+        "Assim representados:",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Alimentação/Refeitos (AL)",
+          "values": [
+            "129.036",
+            "67.179"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Medicamentos (MD)",
+          "values": [
+            "138.754",
+            "140.507"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Material Esportivo (ME)",
+          "values": [
+            "119.867",
+            "135.206"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "106.564",
+            "140.132"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "494.221",
+            "483.013"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 07. INTANGÍVEL",
+      "columns": [
+        "Assim representados:",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Licência uso de Software",
+          "values": [
+            "(a) 193.245",
+            "193.245"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afletias em Formação e Reavaliação",
+          "values": [
+            "(b) 36.282.073",
+            "36.282.080"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afletias Profissionais e Reavaliação",
+          "values": [
+            "(c) 42.759.800",
+            "58.948.634"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "77.733.117",
+            "95.423.959"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "(a) A associação adquiriu o sistema Profusa para o controle de as suas operações.",
+      "columns": [
+        "DESCRIÇÃO",
+        "2023",
+        "",
+        "2022",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Nº Afletias",
+            "Valor",
+            "Nº Afletias",
+            "Valor"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afletias em Formação",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Infantil",
+          "values": [
+            "29",
+            "459.819",
+            "26",
+            "760.435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juvenil",
+          "values": [
+            "27",
+            "859.813",
+            "29",
+            "1.188.465"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Junior",
+          "values": [
+            "33",
+            "763.941",
+            "12",
+            "222.013"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "89",
+            "2.082.573",
+            "67",
+            "2.170.913"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Afletias Profissionais",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Afletias Profissionais/Profissionalizados",
+          "values": [
+            "24",
+            "9.426.800",
+            "24",
+            "3.559.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "113",
+            "11.707.373",
+            "91",
+            "7.730.713"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Reavaliação Afletias do Base",
+          "values": [
+            "-",
+            "32.699.500",
+            "-",
+            "34.111.166"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reavaliação Afletias Profissionais",
+          "values": [
+            "-",
+            "33.135.000",
+            "-",
+            "33.388.854"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Geral",
+          "values": [
+            "113",
+            "77.541.873",
+            "91",
+            "95.230.714"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 10. FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "columns": [
+        "Assim representados:",
+        "2023",
+        "",
+        "2022",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Circulante",
+            "Não Circulante",
+            "Total",
+            "Total"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Fornecedores, Prest. Serviço e Outros",
+          "values": [
+            "8.104.347",
+            "-",
+            "8.104.347",
+            "8.243.029"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Sérgio Camieli (a)",
+          "values": [
+            "-",
+            "84.163.378",
+            "84.163.378",
+            "84.163.378"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Camieli Invest. e Part. Ltda. (a)",
+          "values": [
+            "-",
+            "25.816.945",
+            "25.816.945",
+            "25.816.945"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Enerks Sports",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marcos Vinícius Sanchez Secund",
+          "values": [
+            "3.566.660",
+            "-",
+            "3.566.660",
+            "3.566.660"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vanderlei Aparecida Pereira",
+          "values": [
+            "1.243.029",
+            "-",
+            "1.243.029",
+            "1.243.029"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luís Fernando Assessoria Esportiva Ltda",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Original Line Comercio de Utilidades DOH",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "1.500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Real Sport Soccer",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SPL Sports Planejamento",
+          "values": [
+            "200.000",
+            "-",
+            "200.000",
+            "200.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Odiion G. Nascimento Neto",
+          "values": [
+            "87.822",
+            "-",
+            "87.822",
+            "87.822"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "3.244.299",
+            "-",
+            "3.244.299",
+            "3.427.380"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Títulos a Pagar",
+          "values": [
+            "8.341.810",
+            "109.980.322",
+            "118.322.132",
+            "119.005.213"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Camieli Invest - Repasse Afletias (b)",
+          "values": [
+            "1.208.889",
+            "-",
+            "1.208.889",
+            "1.208.889"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Contas a Pagar",
+          "values": [
+            "1.208.889",
+            "-",
+            "1.208.889",
+            "1.208.889"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL GERAL FORNECEDORES, TÍTULOS A",
+          "values": [
+            "17.655.046",
+            "109.980.322",
+            "127.655.348",
+            "128.477.141"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "# MOVIMEDIÇÃO DOS SALDOS FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "columns": [
+        "Descrição",
+        "SALDO 31/12/2022",
+        "(+) Nóvos Recursos",
+        "(-) Acentos",
+        "SALDO 31/12/2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Total Fornecedores, Prest. Serviço e Outros",
+          "values": [
+            "8.243.029",
+            "-",
+            "-",
+            "8.104.347"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Sérgio Camieli",
+          "values": [
+            "84.163.378",
+            "-",
+            "-",
+            "84.163.378"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Camieli Invest. e Part. Ltda.",
+          "values": [
+            "25.816.945",
+            "-",
+            "-",
+            "25.816.945"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Enerks Sports",
+          "values": [
+            "0",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marcos Vinícius Sanchez Secund",
+          "values": [
+            "3.566.660",
+            "-",
+            "-",
+            "3.566.660"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vanderlei Aparecida Pereira",
+          "values": [
+            "1.243.029",
+            "-",
+            "-",
+            "1.243.029"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luís Fernando Assessoria Esportiva Ltda",
+          "values": [
+            "0",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Original Line Comercio de Utilidades DOH",
+          "values": [
+            "1.500.000",
+            "-",
+            "1.500.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Real Sport Soccer",
+          "values": [
+            "0",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SPL Sports Planejamento",
+          "values": [
+            "200.000",
+            "-",
+            "-",
+            "200.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Odiion G. Nascimento Neto",
+          "values": [
+            "87.822",
+            "-",
+            "-",
+            "87.822"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "3.427.380",
+            "816.919",
+            "-",
+            "3.244.299"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Camieli Invest - Repasse Afletias",
+          "values": [
+            "1.208.889",
+            "-",
+            "-",
+            "1.208.889"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Redução/Aumento Dividas",
+          "values": [
+            "128.477.141",
+            "816.919",
+            "1.500.000",
+            "127.655.348"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 10. RESULGADO DO DEPARTAMENTO PROFISSIONAL",
+      "columns": [
+        "O resultado do Departamento Profissional está assim representado:",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Receitas",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Quotas Odiion Camp.Brasileiro",
+          "values": [
+            "8.625.000",
+            "7.710.225"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Quotas F.F.F",
+          "values": [
+            "1.760.000",
+            "6.238.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premioção Campeonato Paulista",
+          "values": [
+            "400.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita Inamensada",
+          "values": [
+            "3.000.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Quotas Copa do Brasil CBF",
+          "values": [
+            "2.650.000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Receitas",
+          "values": [
+            "5.849.938",
+            "1.364.574"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venda Afletias",
+          "values": [
+            "2.475.000",
+            "21.300.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fublicidade/Propaganda",
+          "values": [
+            "3.899.430",
+            "2.430.518"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 4,
+      "section": "# NOTA 14. ADMINISTRATIVOS",
+      "columns": [
+        "Assim representados:",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Adaminamento F.P.P",
+          "values": [
+            "2.626.735",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Antecipação Quotas Compensando Brasileiro",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "2.626.735,43",
+            "-"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "# NOTA 15. CONTINGÊNCIAS / # NOTA 16. ACORDO/DURADO/REMAJORIA",
+      "columns": [
+        "",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "HANOS LUCIO DUNES DA CODA",
+          "values": [
+            "918.730",
+            "118.780"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LYCOMI RASCAS",
+          "values": [
+            "132.000",
+            "132.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ARPOS GRACILHO DOS SANTOS",
+          "values": [
+            "145.280",
+            "145.280"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GUSTAVO BEBIO",
+          "values": [
+            "442.400",
+            "442.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EDUARDO ALEXANDRE BARITA",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HARCIO MIRANDA DE FREITAS",
+          "values": [
+            "22.500",
+            "22.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GUSTAVO LAGANTE",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "YANDERSON MARQUES PEREIRA",
+          "values": [
+            "225.000",
+            "225.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OUTROS",
+          "values": [
+            "2.025.727",
+            "2.025.727"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "3.911.424",
+            "3.911.424"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "# NOTA 17. PATRIMÔNIO LÍQUIDO",
+      "columns": [
+        "",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Patrimônio Social",
+          "values": [
+            "5.771.339",
+            "5.771.339"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anotação de Afetais Profissionais (a)",
+          "values": [
+            "69.899.500",
+            "87.500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Avaliação Patrimonial (b)",
+          "values": [
+            "160.711.835",
+            "160.711.835"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit Acumulado",
+          "values": [
+            "(193.978.088)",
+            "(189.447.289)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit/Déficit do Exercício",
+          "values": [
+            "(13.168.708)",
+            "(4.500.791)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "27.236.106",
+            "60.000.313"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "# NOTA 19. PERÍOS SUBQUIANTES",
+      "columns": [
+        "",
+        "28.489.408",
+        "40.679.209"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Total",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Custos e Despesas",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldário e Encargos /Outras",
+          "values": [
+            "19 (b)",
+            "(17.599.860)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de Terceiros",
+          "values": [
+            "19 (b)",
+            "(2.067.800)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com Jogos",
+          "values": [
+            "19 (b)",
+            "(3.765.897)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "(3.170.302)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demais Gastos",
+          "values": [
+            "19 (b)",
+            "(16.528.224)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "",
+            "(39.941.760)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Superávit/Déficit Departamento",
+          "values": [
+            "",
+            "(11.375.376)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "(1.040.171)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "18 (a) - O saldo dos \"Demais Gastos\" são compostas da seguinte forma:",
+      "columns": [
+        "Descrição",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cessão de Imagem / Juvas",
+          "values": [
+            "(1.209.600)",
+            "(3.530.365)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intermediação / Comissão",
+          "values": [
+            "(480.725)",
+            "(1.132.324)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos Federativos",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Solidariedade / Compensação Formação",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Viagens / Moradia / Concentração e Afetais / Refeições / Medicamentos",
+          "values": [
+            "(1.602.630)",
+            "(1.505.238)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte de Afetais",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxus CBF / FPF",
+          "values": [
+            "(197.032)",
+            "(330.906)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Despesas (d)",
+          "values": [
+            "(10.585.164)",
+            "(12.968.254)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Custo/ Despesas Departamento Profissional",
+          "values": [
+            "(14.075.171)",
+            "(19.467.107)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Penopas/ INSS (a)",
+          "values": [
+            "(512.392)",
+            "(1.435.930)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização / Depreciação (b)",
+          "values": [
+            "(1.601.386)",
+            "(1.751.112)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Material Esportivo (c)",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordo Trabalhista e outros",
+          "values": [
+            "(339.278)",
+            "(121.947)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Penopas/INSS/ Depreciação/ Mat Esportivo e Acordo Trabalhista",
+          "values": [
+            "(2.453.056)",
+            "(3.308.989)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total Geral - Demais Gastos",
+          "values": [
+            "(16.528.224)",
+            "(22.774.094)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 4,
+      "section": "18 (b) - Composição dos \"Custos/ Despesas Departamento Profissional\"",
+      "columns": [
+        "Descrição",
+        "2023",
+        "2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldário e Encargos /Outras",
+          "values": [
+            "(17.599.860)",
+            "(13.184.274)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de Terceiros (a)",
+          "values": [
+            "(2.067.799)",
+            "(2.588.706)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com Jogos",
+          "values": [
+            "(3.765.897)",
+            "(3.170.302)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Despesas Departamento Profissional",
+          "values": [
+            "(16.528.224)",
+            "(22.774.094)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Custos / Despesas Departamento Profissional",
+          "values": [
+            "(39.941.760)",
+            "(41.719.381)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 1,
+      "section": "ASSOCIAÇÃO ATLÉTICA PONTE PRETA / CNPJ (MP) - AL 125.175/0001-26 / # Balanços Patrimoniais em 31/12/2023 e 31/12/2022 (Valores Expressos em reais)",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DO ATIVO",
+      "target": "233.868.150",
+      "addendCount": 2,
+      "how": "solo-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 1,
+      "section": "ASSOCIAÇÃO ATLÉTICA PONTE PRETA / CNPJ (MP) - AL 125.175/0001-26 / # Balanços Patrimoniais em 31/12/2023 e 31/12/2022 (Valores Expressos em reais)",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL DO ATIVO",
+      "target": "249.478.310",
+      "addendCount": 2,
+      "how": "solo-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 1,
+      "section": "As notas explicativas são partes integrantes das demonstrações financeiras",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DO PASSIVO",
+      "target": "233.868.150",
+      "addendCount": 19,
+      "closes": false,
+      "diff": "233668028"
+    },
+    {
+      "page": 1,
+      "section": "As notas explicativas são partes integrantes das demonstrações financeiras",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL DO PASSIVO",
+      "target": "249.478.310",
+      "addendCount": 18,
+      "closes": false,
+      "diff": "249583185"
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 06. CONTAS A RECEBIR",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "175.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 06. CONTAS A RECEBIR",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "175.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 07. DEPÓSITOS JUDICIAIS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "5.222.194",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 07. DEPÓSITOS JUDICIAIS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "1.806.438",
+      "addendCount": 3,
+      "closes": true,
+      "diff": "-2",
+      "how": "redondeo (diferencia -2 en 3 rubros enteros)"
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 08. IMOBILIZADO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Imobilizado",
+      "skipped": true,
+      "reason": "1 de 17 valor(es) del segmento no parecen números (ej. \"Custo\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 08. IMOBILIZADO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Imobilizado",
+      "skipped": true,
+      "reason": "1 de 17 valor(es) del segmento no parecen números (ej. \"Depreciação\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 08. IMOBILIZADO",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Imobilizado",
+      "skipped": true,
+      "reason": "1 de 13 valor(es) del segmento no parecen números (ej. \"Valor Líquido\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 11. SALARIOS E INDEMNICAÇÕES A PAGAR",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "6.027.826",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-2000"
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 11. SALARIOS E INDEMNICAÇÕES A PAGAR",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "4.727.245",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-26000"
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 12. CONTRIBUIÇÕES A RECEBIR",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "17.763.658",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-10002"
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 12. CONTRIBUIÇÕES A RECEBIR",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "10.187.464",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 05. ESTOQUE DE MATERIAL DE COMUMO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "494.221",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 05. ESTOQUE DE MATERIAL DE COMUMO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "483.013",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "11"
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 07. INTANGÍVEL",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "3 de 3 valor(es) del segmento no parecen números (ej. \"(a) 193.245\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 07. INTANGÍVEL",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "95.423.959",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "(a) A associação adquiriu o sistema Profusa para o controle de as suas operações.",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"Nº Afletias\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "(a) A associação adquiriu o sistema Profusa para o controle de as suas operações.",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"Valor\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "(a) A associação adquiriu o sistema Profusa para o controle de as suas operações.",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"Nº Afletias\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "(a) A associação adquiriu o sistema Profusa para o controle de as suas operações.",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"Valor\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "(a) A associação adquiriu o sistema Profusa para o controle de as suas operações.",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "113",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-89"
+    },
+    {
+      "page": 3,
+      "section": "(a) A associação adquiriu o sistema Profusa para o controle de as suas operações.",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "11.707.373",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-2280573"
+    },
+    {
+      "page": 3,
+      "section": "(a) A associação adquiriu o sistema Profusa para o controle de as suas operações.",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total",
+      "target": "91",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-67"
+    },
+    {
+      "page": 3,
+      "section": "(a) A associação adquiriu o sistema Profusa para o controle de as suas operações.",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total",
+      "target": "7.730.713",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-4170913"
+    },
+    {
+      "page": 3,
+      "section": "(a) A associação adquiriu o sistema Profusa para o controle de as suas operações.",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Geral",
+      "target": "77.541.873",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-11707373"
+    },
+    {
+      "page": 3,
+      "section": "(a) A associação adquiriu o sistema Profusa para o controle de as suas operações.",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total Geral",
+      "target": "95.230.714",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-27730694"
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 10. FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Fornecedores, Prest. Serviço e Outros",
+      "skipped": true,
+      "reason": "1 de 1 valor(es) del segmento no parecen números (ej. \"Circulante\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 10. FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Fornecedores, Prest. Serviço e Outros",
+      "skipped": true,
+      "reason": "1 de 1 valor(es) del segmento no parecen números (ej. \"Total\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 10. FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total Fornecedores, Prest. Serviço e Outros",
+      "skipped": true,
+      "reason": "1 de 1 valor(es) del segmento no parecen números (ej. \"Total\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 10. FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Títulos a Pagar",
+      "target": "8.341.810",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 10. FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Títulos a Pagar",
+      "target": "109.980.322",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 2 rubros enteros)"
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 10. FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Títulos a Pagar",
+      "target": "118.322.132",
+      "addendCount": 7,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 7 rubros enteros)"
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 10. FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total Títulos a Pagar",
+      "target": "119.005.213",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "1000001"
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 10. FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Contas a Pagar",
+      "target": "1.208.889",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 10. FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Contas a Pagar",
+      "target": "1.208.889",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 10. FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total Contas a Pagar",
+      "target": "1.208.889",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 10. FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL GERAL FORNECEDORES, TÍTULOS A",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": "# MOVIMEDIÇÃO DOS SALDOS FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": true,
+      "totalLabel": "Total Fornecedores, Prest. Serviço e Outros",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": "# MOVIMEDIÇÃO DOS SALDOS FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Redução/Aumento Dividas",
+      "target": "128.477.141",
+      "addendCount": 12,
+      "closes": false,
+      "diff": "-7263038"
+    },
+    {
+      "page": 3,
+      "section": "# MOVIMEDIÇÃO DOS SALDOS FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Redução/Aumento Dividas",
+      "target": "816.919",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# MOVIMEDIÇÃO DOS SALDOS FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Total Redução/Aumento Dividas",
+      "target": "1.500.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "# MOVIMEDIÇÃO DOS SALDOS FORNECEDORES, TÍTULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "Total Redução/Aumento Dividas",
+      "target": "127.655.348",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "-8124326"
+    },
+    {
+      "page": 4,
+      "section": "# NOTA 14. ADMINISTRATIVOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "2.626.735,43",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-0.43000000016763806"
+    },
+    {
+      "page": 4,
+      "section": "# NOTA 19. PERÍOS SUBQUIANTES",
+      "likelyRelevant": false,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 4,
+      "section": "# NOTA 19. PERÍOS SUBQUIANTES",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "(39.941.760)",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-3190323"
+    },
+    {
+      "page": 4,
+      "section": "18 (a) - O saldo dos \"Demais Gastos\" são compostas da seguinte forma:",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Custo/ Despesas Departamento Profissional",
+      "target": "(14.075.171)",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "20"
+    },
+    {
+      "page": 4,
+      "section": "18 (a) - O saldo dos \"Demais Gastos\" são compostas da seguinte forma:",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Custo/ Despesas Departamento Profissional",
+      "target": "(19.467.107)",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "20"
+    },
+    {
+      "page": 4,
+      "section": "18 (a) - O saldo dos \"Demais Gastos\" são compostas da seguinte forma:",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Penopas/INSS/ Depreciação/ Mat Esportivo e Acordo Trabalhista",
+      "target": "(2.453.056)",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "18 (a) - O saldo dos \"Demais Gastos\" são compostas da seguinte forma:",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Penopas/INSS/ Depreciação/ Mat Esportivo e Acordo Trabalhista",
+      "target": "(3.308.989)",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "18 (a) - O saldo dos \"Demais Gastos\" são compostas da seguinte forma:",
+      "likelyRelevant": true,
+      "totalLabel": "Total Geral - Demais Gastos",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 4,
+      "section": "18 (b) - Composição dos \"Custos/ Despesas Departamento Profissional\"",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Custos / Despesas Departamento Profissional",
+      "target": "(39.941.760)",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-20020"
+    },
+    {
+      "page": 4,
+      "section": "18 (b) - Composição dos \"Custos/ Despesas Departamento Profissional\"",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Custos / Despesas Departamento Profissional",
+      "target": "(41.719.381)",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "2005"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 37,
+    "results": [
+      {
+        "label": "Sérgio Camieli",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sérgio Camieli",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Camieli Invest. e Part. Ltda.",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Camieli Invest. e Part. Ltda.",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Enerks Sports",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Enerks Sports",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Marcos Vinícius Sanchez Secund",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Marcos Vinícius Sanchez Secund",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Vanderlei Aparecida Pereira",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Vanderlei Aparecida Pereira",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Luís Fernando Assessoria Esportiva Ltda",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Luís Fernando Assessoria Esportiva Ltda",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Original Line Comercio de Utilidades DOH",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Original Line Comercio de Utilidades DOH",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Real Sport Soccer",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Real Sport Soccer",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SPL Sports Planejamento",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SPL Sports Planejamento",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Odiion G. Nascimento Neto",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Odiion G. Nascimento Neto",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Camieli Invest - Repasse Afletias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Camieli Invest - Repasse Afletias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Quotas Odiion Camp.Brasileiro",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "broadcasting",
+        "matchedLabel": "Quotas Globo-Camp Brasileiro",
+        "similarity": 60
+      },
+      {
+        "label": "Quotas Odiion Camp.Brasileiro",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Quotas F.F.F",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "broadcasting",
+        "matchedLabel": "Quotas F.P.F",
+        "similarity": 100
+      },
+      {
+        "label": "Quotas F.F.F",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Premioção Campeonato Paulista",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "competition_bonus",
+        "matchedLabel": "Premiação Campeonato Paulista",
+        "similarity": 50
+      },
+      {
+        "label": "Premioção Campeonato Paulista",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita Inamensada",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita Inamensada",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Quotas Copa do Brasil CBF",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Quotas Copa do Brasil-CBF",
+        "years": [
+          "2023"
+        ]
+      },
+      {
+        "label": "Quotas Copa do Brasil CBF",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros Receitas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros Receitas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Venda Afletias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Venda Afletias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fublicidade/Propaganda",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fublicidade/Propaganda",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cessão de Imagem / Juvas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cessão de Imagem / Juvas",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Cessão de Imagem / Luvas",
+        "similarity": 50
+      },
+      {
+        "label": "Intermediação / Comissão",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intermediação / Comissão",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Intermediação / Comissão",
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Direitos Federativos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direitos Federativos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Solidariedade / Compensação Formação",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Solidariedade / Compensação Formação",
+        "years": [
+          "2022"
+        ]
+      },
+      {
+        "label": "Solidariedade / Compensação Formação",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Viagens / Moradia / Concentração e Afetais / Refeições / Medicamentos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Viagens / Moradia / Concentração e Afetais / Refeições / Medicamentos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Viagens / Moradia / Concentração e Atletas / Refeições / Medicamentos",
+        "similarity": 71
+      },
+      {
+        "label": "Transporte de Afetais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transporte de Afetais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Taxus CBF / FPF",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Taxus CBF / FPF",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Taxas CBF / FPF",
+        "similarity": 50
+      },
+      {
+        "label": "Outros Despesas (d)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros Despesas (d)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Penopas/ INSS (a)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Penopas/ INSS (a)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização / Depreciação (b)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização / Depreciação (b)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "depreciation",
+        "matchedLabel": "Amortização / Depreciação (Profissional)",
+        "similarity": 67
+      },
+      {
+        "label": "Material Esportivo (c)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Material Esportivo (c)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Acordo Trabalhista e outros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Acordo Trabalhista e outros",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Acordo Trabalhista e outros",
+        "years": [
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Saldário e Encargos /Outras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldário e Encargos /Outras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços de Terceiros (a)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços de Terceiros (a)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Serviços de Terceiros (Profissional)",
+        "similarity": 67
+      },
+      {
+        "label": "Despesas com Jogos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com Jogos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Despesas com Jogos",
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Outros Despesas Departamento Profissional",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros Despesas Departamento Profissional",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Ponte Preta",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "15 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "15 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

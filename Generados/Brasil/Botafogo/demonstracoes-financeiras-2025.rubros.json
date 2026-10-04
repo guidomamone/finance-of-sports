@@ -1,0 +1,1541 @@
+{
+ "md": "Clubes/Brasil/Botafogo/demonstracoes-financeiras-2025.md",
+ "pdf": "Clubes/Brasil/Botafogo/demonstracoes-financeiras-2025.pdf",
+ "club": "botafogo",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T14:33:13.943Z",
+ "tieOuts": {
+  "cierran": 58,
+  "noCierran": 6
+ },
+ "warnings": [
+  "3 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "3 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "14 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "ladoConocido": 78,
+ "rubros": [
+  {
+   "label": "Receita",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "values": [
+    "149.335",
+    "571.111",
+    "752.901",
+    "1.440.830"
+   ],
+   "columns": [
+    "Valores em reais (R$)",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "label": "(-) Despesas Operacionais",
+   "lado": "expense",
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "values": [
+    "(303.540)",
+    "(372.898)",
+    "(671.986)",
+    "(837.031)"
+   ],
+   "columns": [
+    "Valores em reais (R$)",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "label": "(-) Depreciação e Amortização",
+   "lado": null,
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "values": [
+    "(77.914)",
+    "(92.575)",
+    "(136.601)",
+    "(247.585)"
+   ],
+   "columns": [
+    "Valores em reais (R$)",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "label": "(-) Baixa Ativo Intangível",
+   "lado": null,
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "values": [
+    "(3.372)",
+    "(15.471)",
+    "(39.819)",
+    "(337.398)"
+   ],
+   "columns": [
+    "Valores em reais (R$)",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "label": "(-/+) Despesa/ Receita Financeira",
+   "lado": null,
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "values": [
+    "(12.797)",
+    "(141.953)",
+    "(157.222)",
+    "(301.350)"
+   ],
+   "columns": [
+    "Valores em reais (R$)",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "label": "(-) Contingência",
+   "lado": null,
+   "page": 8,
+   "section": "# ★ RESULTADOS",
+   "values": [
+    "-",
+    "(4.251)",
+    "(14.090)",
+    "(8.364)"
+   ],
+   "columns": [
+    "Valores em reais (R$)",
+    "2022",
+    "2023",
+    "2024",
+    "2025"
+   ]
+  },
+  {
+   "label": "Capital Social",
+   "lado": "revenue",
+   "page": 31,
+   "section": "Receita diferida 17 86.191 - 86.191 -",
+   "values": [
+    "375.309",
+    "375.309",
+    "375.309",
+    "375.309"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Prejuízo acumulado",
+   "lado": "revenue",
+   "page": 31,
+   "section": "Receita diferida 17 86.191 - 86.191 -",
+   "values": [
+    "(516.328)",
+    "(249.512)",
+    "(516.328)",
+    "(249.512)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Receitas transações de direitos de atletas",
+   "lado": "revenue",
+   "page": 32,
+   "section": "Outras despesas operacionais (498) (623) (498) (622) / Outras receitas operacionais 23 52.436 49.223 52.536 49.223 / Resultado de equivalência patrimonial (6.544) (6.509) - - / Resultado Operacional Antes da Alienação (274.066) (160.119) (267.753) (153.616) / de Ativos",
+   "values": [
+    "733.361",
+    "96.356",
+    "733.361",
+    "96.356"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Gastos na transação de direitos de atletas",
+   "lado": "expense",
+   "page": 32,
+   "section": "Outras despesas operacionais (498) (623) (498) (622) / Outras receitas operacionais 23 52.436 49.223 52.536 49.223 / Resultado de equivalência patrimonial (6.544) (6.509) - - / Resultado Operacional Antes da Alienação (274.066) (160.119) (267.753) (153.616) / de Ativos",
+   "values": [
+    "(448.843)",
+    "(45.832)",
+    "(448.843)",
+    "(45.832)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Outras receitas e despesas operacionais",
+   "lado": null,
+   "page": 32,
+   "section": "Outras despesas operacionais (498) (623) (498) (622) / Outras receitas operacionais 23 52.436 49.223 52.536 49.223 / Resultado de equivalência patrimonial (6.544) (6.509) - - / Resultado Operacional Antes da Alienação (274.066) (160.119) (267.753) (153.616) / de Ativos",
+   "values": [
+    "10.452",
+    "(109.595)",
+    "16.765",
+    "(103.092)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Prejuízo do exercício",
+   "lado": null,
+   "page": 32,
+   "section": "Outras despesas operacionais (498) (623) (498) (622) / Outras receitas operacionais 23 52.436 49.223 52.536 49.223 / Resultado de equivalência patrimonial (6.544) (6.509) - - / Resultado Operacional Antes da Alienação (274.066) (160.119) (267.753) (153.616) / de Ativos",
+   "values": [
+    "(290.898)",
+    "(266.817)",
+    "(290.898)",
+    "(266.817)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Contrato de Comodato",
+   "lado": "expense",
+   "page": 55,
+   "section": "SAF BOTAFOGO / g) Considerações adicionais sobre transações intragrupo / 8. Despesa Antecipada",
+   "values": [
+    "",
+    "-",
+    "165"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado 31/12/2025",
+    "Controladora / Consolidado 31/12/2024"
+   ]
+  },
+  {
+   "label": "Contrato de Transmissão",
+   "lado": "expense",
+   "page": 55,
+   "section": "SAF BOTAFOGO / g) Considerações adicionais sobre transações intragrupo / 8. Despesa Antecipada",
+   "values": [
+    "8.2",
+    "5.000",
+    "2.919"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado 31/12/2025",
+    "Controladora / Consolidado 31/12/2024"
+   ]
+  },
+  {
+   "label": "Contrato de Licenciamento",
+   "lado": "expense",
+   "page": 55,
+   "section": "SAF BOTAFOGO / g) Considerações adicionais sobre transações intragrupo / 8. Despesa Antecipada",
+   "values": [
+    "",
+    "205",
+    "-"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado 31/12/2025",
+    "Controladora / Consolidado 31/12/2024"
+   ]
+  },
+  {
+   "label": "Cessão de Atletas",
+   "lado": "expense",
+   "page": 55,
+   "section": "SAF BOTAFOGO / g) Considerações adicionais sobre transações intragrupo / 8. Despesa Antecipada",
+   "values": [
+    "8.3",
+    "9.164",
+    "3.554"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado 31/12/2025",
+    "Controladora / Consolidado 31/12/2024"
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 55,
+   "section": "SAF BOTAFOGO / g) Considerações adicionais sobre transações intragrupo / 8. Despesa Antecipada",
+   "values": [
+    "",
+    "1.924",
+    "-"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado 31/12/2025",
+    "Controladora / Consolidado 31/12/2024"
+   ]
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 55,
+   "section": "SAF BOTAFOGO / g) Considerações adicionais sobre transações intragrupo / 8. Despesa Antecipada",
+   "values": [
+    "",
+    "202",
+    "-"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado 31/12/2025",
+    "Controladora / Consolidado 31/12/2024"
+   ]
+  },
+  {
+   "label": "Direito de Uso de Veículos 3.870",
+   "lado": "expense",
+   "page": 56,
+   "section": "10. Direito de Uso / 10.1 - Ativo de Direito de Uso / Controladora / Consolidado / 31/12/2024 31/12/2025 / Líquido Custo Depreciação Líquido",
+   "values": [
+    "(2.030)",
+    "1.967"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Direito de Uso de Imóveis",
+   "lado": "expense",
+   "page": 56,
+   "section": "10. Direito de Uso / 10.1 - Ativo de Direito de Uso / Controladora / Consolidado / 31/12/2024 31/12/2025 / Líquido Custo Depreciação Líquido",
+   "values": [
+    "8.212",
+    "1.167",
+    "(1.922)",
+    "7.457"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Direito de Uso Nilton Santos 10.3 4.761 383 (818)",
+   "lado": "expense",
+   "page": 56,
+   "section": "10. Direito de Uso / 10.1 - Ativo de Direito de Uso / Controladora / Consolidado / 31/12/2024 31/12/2025 / Líquido Custo Depreciação Líquido",
+   "values": [
+    "4.326"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Atletas profissionais",
+   "lado": "expense",
+   "page": 59,
+   "section": "12. Intangível / Movimentação do ativo intangível em 2025: / Controladora / Consolidado / 2024 Adições Baixas 2025 / Custo",
+   "values": [
+    "691.329",
+    "788.760",
+    "(459.072)",
+    "1.021.017"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Programas e software 5.692 869 -",
+   "lado": "expense",
+   "page": 59,
+   "section": "12. Intangível / Movimentação do ativo intangível em 2025: / Controladora / Consolidado / 2024 Adições Baixas 2025 / Custo",
+   "values": [
+    "6.561"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Recompra 10% direto de transmissão - 80.333 -",
+   "lado": "expense",
+   "page": 59,
+   "section": "12. Intangível / Movimentação do ativo intangível em 2025: / Controladora / Consolidado / 2024 Adições Baixas 2025 / Custo",
+   "values": [
+    "80.333"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Transmissão",
+   "lado": "revenue",
+   "page": 64,
+   "section": "otimização da estrutura de capital e no equilíbrio financeiro de longo prazo da Companhia. / 17. Receita Diferida/Obrigações contratuais / Controladora / Consolidado / 31/12/2025 31/12/2024 / Patrocínios 17.2 61.764 765",
+   "values": [
+    "20.696",
+    "6.364"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Publicidade",
+   "lado": "revenue",
+   "page": 64,
+   "section": "otimização da estrutura de capital e no equilíbrio financeiro de longo prazo da Companhia. / 17. Receita Diferida/Obrigações contratuais / Controladora / Consolidado / 31/12/2025 31/12/2024 / Patrocínios 17.2 61.764 765",
+   "values": [
+    "26.438",
+    "33.345"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Cessão definitiva de atleta",
+   "lado": "revenue",
+   "page": 64,
+   "section": "otimização da estrutura de capital e no equilíbrio financeiro de longo prazo da Companhia. / 17. Receita Diferida/Obrigações contratuais / Controladora / Consolidado / 31/12/2025 31/12/2024 / Patrocínios 17.2 61.764 765",
+   "values": [
+    "108.397",
+    "379.283"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Cessão temporária de atleta -",
+   "lado": "revenue",
+   "page": 64,
+   "section": "otimização da estrutura de capital e no equilíbrio financeiro de longo prazo da Companhia. / 17. Receita Diferida/Obrigações contratuais / Controladora / Consolidado / 31/12/2025 31/12/2024 / Patrocínios 17.2 61.764 765",
+   "values": [
+    "1.526"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Receita operacional bruta",
+   "lado": "revenue",
+   "page": 67,
+   "section": "SAF BOTAFOGO / 20. Receita Operacional, líquida",
+   "values": [
+    "655.033",
+    "607.322"
+   ],
+   "columns": [
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "(-) Impostos e contribuições",
+   "lado": "revenue",
+   "page": 67,
+   "section": "SAF BOTAFOGO / 20. Receita Operacional, líquida",
+   "values": [
+    "(41.229)",
+    "(34.893)"
+   ],
+   "columns": [
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "(-) Direito de arena",
+   "lado": "revenue",
+   "page": 67,
+   "section": "SAF BOTAFOGO / 20. Receita Operacional, líquida",
+   "values": [
+    "(10.965)",
+    "(16.645)"
+   ],
+   "columns": [
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "(-) Outras deduções",
+   "lado": "revenue",
+   "page": 67,
+   "section": "SAF BOTAFOGO / 20. Receita Operacional, líquida",
+   "values": [
+    "(28.834)",
+    "(3.513)"
+   ],
+   "columns": [
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Receita líquida",
+   "lado": "revenue",
+   "page": 67,
+   "section": "SAF BOTAFOGO / 20. Receita Operacional, líquida",
+   "values": [
+    "574.005",
+    "552.271"
+   ],
+   "columns": [
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Direitos de Transmissão",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "20.1",
+    "",
+    ""
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Televisionamento",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "",
+    "111.175",
+    "100.982"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Premiação",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "20.2",
+    "97.120",
+    "192.485"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Participação em competições",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "20.2",
+    "171.971",
+    "65.019"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Bilheteria",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "20.3",
+    "17.494",
+    "36.356"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Patrocínios",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "20.4",
+    "73.255",
+    "49.026"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Publicidade em placas",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "20.4",
+    "18.669",
+    "6.655"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Mídias digitais",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "",
+    "266",
+    "230"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Camisa 7",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "20.5",
+    "52.013",
+    "48.620"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Camisa 6",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "",
+    "460",
+    "-"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Licenciamento",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "",
+    "3.500",
+    "3.177"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Cessão temporária",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "",
+    "11.324",
+    "2.488"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Mecanismo de solidariedade",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "",
+    "1.272",
+    "1.874"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Outros tipos de receita",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "20.6",
+    "",
+    ""
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Venda de mercadorias",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "",
+    "60.646",
+    "66.379"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Locações",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "",
+    "18.871",
+    "17.040"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Operação em estádio",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "",
+    "4.902",
+    "7.193"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza:",
+   "values": [
+    "",
+    "12.096",
+    "9.798"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora / Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "(-) Tributação específica do Futebol (TEF) *",
+   "lado": "revenue",
+   "page": 68,
+   "section": "111.175 100.982 / (-) Deduções da Receita Bruta",
+   "values": [
+    "(3.517)",
+    "(2.541)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Direito de arena",
+   "lado": "revenue",
+   "page": 68,
+   "section": "111.175 100.982 / (-) Deduções da Receita Bruta",
+   "values": [
+    "(6.136)",
+    "(4.859)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Receita líquida de transmissão",
+   "lado": "revenue",
+   "page": 68,
+   "section": "111.175 100.982 / (-) Deduções da Receita Bruta",
+   "values": [
+    "101.522",
+    "93.582"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Custo venda de mercadoria",
+   "lado": "expense",
+   "page": 72,
+   "section": "pela torcida alvinegra. / direitos de exposição de marca e outros benefícios comerciais. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "values": [
+    "21.694",
+    "22.533"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Salários, encargos e benefícios",
+   "lado": "expense",
+   "page": 72,
+   "section": "pela torcida alvinegra. / direitos de exposição de marca e outros benefícios comerciais. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "values": [
+    "232.577",
+    "289.999"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Amortização de atletas",
+   "lado": "expense",
+   "page": 72,
+   "section": "pela torcida alvinegra. / direitos de exposição de marca e outros benefícios comerciais. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "values": [
+    "236.827",
+    "129.518"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Salários, encargos e benefícios",
+   "lado": "expense",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "values": [
+    "103.401",
+    "67.512",
+    "103.401",
+    "67.512"
+   ],
+   "columns": [
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "values": [
+    "5.169",
+    "5.000",
+    "5.169",
+    "5.000"
+   ],
+   "columns": [
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Locação",
+   "lado": "expense",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "values": [
+    "3.717",
+    "3.701",
+    "3.717",
+    "3.701"
+   ],
+   "columns": [
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Serviços com terceiros",
+   "lado": "expense",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "values": [
+    "52.529",
+    "29.053",
+    "52.529",
+    "29.053"
+   ],
+   "columns": [
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Concessionárias",
+   "lado": "expense",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "values": [
+    "7.092",
+    "5.835",
+    "7.092",
+    "5.835"
+   ],
+   "columns": [
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Despesas comerciais",
+   "lado": "expense",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "values": [
+    "5.352",
+    "9.907",
+    "5.352",
+    "9.907"
+   ],
+   "columns": [
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Depreciação e amortização",
+   "lado": "expense",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "values": [
+    "9.514",
+    "6.164",
+    "9.514",
+    "6.164"
+   ],
+   "columns": [
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Impostos e taxas",
+   "lado": "expense",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "values": [
+    "2.515",
+    "2.017",
+    "2.737",
+    "2.017"
+   ],
+   "columns": [
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Viagens e estadas",
+   "lado": "expense",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "values": [
+    "5.167",
+    "4.429",
+    "5.167",
+    "4.429"
+   ],
+   "columns": [
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Gastos com atletas",
+   "lado": "expense",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "values": [
+    "895",
+    "2.653",
+    "895",
+    "2.653"
+   ],
+   "columns": [
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Licenciamento de programas",
+   "lado": "expense",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "values": [
+    "2.592",
+    "2.184",
+    "2.592",
+    "2.184"
+   ],
+   "columns": [
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Despesa com contingências",
+   "lado": "expense",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "values": [
+    "13.179",
+    "713",
+    "13.179",
+    "713"
+   ],
+   "columns": [
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 73,
+   "section": "SAF BOTAFOGO / 22. Despesas gerais e administrativas",
+   "values": [
+    "7.090",
+    "6.729",
+    "7.199",
+    "6.736"
+   ],
+   "columns": [
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Recuperação de gastos",
+   "lado": "expense",
+   "page": 73,
+   "section": "23. Outras receitas operacionais",
+   "values": [
+    "22.1",
+    "50.490",
+    "48.843",
+    "50.490",
+    "48.843"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Outras receitas operacionais",
+   "lado": "revenue",
+   "page": 73,
+   "section": "23. Outras receitas operacionais",
+   "values": [
+    "",
+    "1.946",
+    "380",
+    "2.046",
+    "380"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Cessão definitiva de atletas",
+   "lado": null,
+   "page": 74,
+   "section": "Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO / (Valores expressos em milhares de reais) / 24. Resultado com transações de direitos de atletas / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "values": [
+    "733.361",
+    "96.356"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Mecanismo de solidariedade",
+   "lado": null,
+   "page": 74,
+   "section": "Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO / (Valores expressos em milhares de reais) / 24. Resultado com transações de direitos de atletas / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "values": [
+    "(18.787)",
+    "(2.837)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Baixa de atletas",
+   "lado": null,
+   "page": 74,
+   "section": "Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO / (Valores expressos em milhares de reais) / 24. Resultado com transações de direitos de atletas / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "values": [
+    "(333.055)",
+    "(28.172)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Despesa na cessão de atletas",
+   "lado": "expense",
+   "page": 74,
+   "section": "Docusign Envelope ID: F214917D-C8C4-8653-8094-BOBEB6FE891C y AF BOTAFOGO / (Valores expressos em milhares de reais) / 24. Resultado com transações de direitos de atletas / Controladora / Consolidado / 31/12/2025 31/12/2024",
+   "values": [
+    "(97.001)",
+    "(14.823)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Juros e encargos sobre empréstimos",
+   "lado": "expense",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "25.1",
+    "(19.763)",
+    "(45.923)",
+    "(30.704)",
+    "(52.594)"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Juros e multas",
+   "lado": "expense",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "25.2",
+    "(39.142)",
+    "(41.513)",
+    "(39.142)",
+    "(42.881)"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Variação cambial",
+   "lado": "expense",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "25.3",
+    "(322.210)",
+    "(142.985)",
+    "(322.210)",
+    "(142.985)"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Desconto concedido",
+   "lado": "expense",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "25.4",
+    "(35.885)",
+    "(7.580)",
+    "(35.885)",
+    "(7.580)"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Atualização monetária",
+   "lado": "expense",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "25.5",
+    "(57.421)",
+    "(8)",
+    "(57.421)",
+    "(8)"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Taxa de antecipação",
+   "lado": "expense",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "25.6",
+    "(141.167)",
+    "(130.123)",
+    "(141.167)",
+    "(130.123)"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Tarifa bancária",
+   "lado": null,
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "",
+    "(9.332)",
+    "(4.701)",
+    "(9.331)",
+    "(4.701)"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Juros sobre arrendamento",
+   "lado": null,
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "",
+    "(2.686)",
+    "(2.501)",
+    "(2.686)",
+    "(2.501)"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "25.7",
+    "(14.820)",
+    "(8.042)",
+    "(14.820)",
+    "(8.042)"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Descontos obtidos",
+   "lado": "revenue",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "25.8",
+    "15.093",
+    "13.581",
+    "15.093",
+    "13.581"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Atualização monetária",
+   "lado": null,
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "",
+    "3",
+    "54.707",
+    "3",
+    "54.707"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Variação cambial",
+   "lado": "revenue",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "25.3",
+    "323.789",
+    "153.252",
+    "323.789",
+    "153.252"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Rendimento sobre aplicações financeiras",
+   "lado": "revenue",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "",
+    "755",
+    "284",
+    "755",
+    "1.820"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Ajuste a valor justo",
+   "lado": null,
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "",
+    "685",
+    "405",
+    "685",
+    "405"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "25.7",
+    "751",
+    "3.925",
+    "5.378",
+    "3.925"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  },
+  {
+   "label": "Receitas (despesas) financeiras, líquidas",
+   "lado": null,
+   "page": 75,
+   "section": "SAF BOTAFOGO / 25. Receitas (Despesas) financeiras, líquidas",
+   "values": [
+    "",
+    "(301.350)",
+    "(157.222)",
+    "(307.663)",
+    "(163.725)"
+   ],
+   "columns": [
+    "",
+    "",
+    "Controladora",
+    "",
+    "Consolidado",
+    ""
+   ]
+  }
+ ]
+}

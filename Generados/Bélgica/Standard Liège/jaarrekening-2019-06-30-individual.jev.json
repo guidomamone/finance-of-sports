@@ -1,0 +1,584 @@
+{
+ "md": "Clubes/Bélgica/Standard Liège/jaarrekening-2019-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:44.187Z",
+ "rubrosHuella": "a5bd88204d76c766665b9821f7ed1d73685c7467",
+ "rubros": [
+  {
+   "label": "Ventes et prestations",
+   "lado": "revenue",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Chiffre d'affaires",
+   "lado": "revenue",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Titres à revenu fixe émis par des établissements de crédit",
+   "lado": "revenue",
+   "page": 17,
+   "section": "N° BE 0433.255.448 C 6.6 / ## PLACEMENTS DE TRÉSORERIE ET COMPTES DE RÉGULARISATION DE L'ACTIF",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Métaux précieux et œuvres d'art",
+   "lado": "revenue",
+   "page": 17,
+   "section": "N° BE 0433.255.448 C 6.6 / ## PLACEMENTS DE TRÉSORERIE ET COMPTES DE RÉGULARISATION DE L'ACTIF",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 962
+  },
+  {
+   "label": "Actions et parts - Valeur comptable augmentée du montant non appelé",
+   "lado": "revenue",
+   "page": 17,
+   "section": "N° BE 0433.255.448 C 6.6 / ## PLACEMENTS DE TRÉSORERIE ET COMPTES DE RÉGULARISATION DE L'ACTIF",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "competition_bonus",
+     0.02
+    ]
+   ],
+   "tokens": 1191
+  },
+  {
+   "label": "Avec une durée résiduelle ou de préavis d'un mois au plus",
+   "lado": "revenue",
+   "page": 17,
+   "section": "N° BE 0433.255.448 C 6.6 / ## PLACEMENTS DE TRÉSORERIE ET COMPTES DE RÉGULARISATION DE L'ACTIF",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "season_tickets",
+     0.02
+    ]
+   ],
+   "tokens": 1124
+  },
+  {
+   "label": "En-cours de fabrication, produits finis et commandes en cours d'exécution: augmentation (réduction) (+)/(-)",
+   "lado": "revenue",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Production immobilisée",
+   "lado": null,
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Autres produits d'exploitation",
+   "lado": "revenue",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Produits d'exploitation non récurrents",
+   "lado": "revenue",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Coût des ventes et des prestations",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Approvisionnements et marchandises",
+   "lado": null,
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Achats",
+   "lado": null,
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Stocks: réduction (augmentation) (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Services et biens divers",
+   "lado": null,
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Rémunérations, charges sociales et pensions (+)/(-)",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "wages_squad",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "lado": null,
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "depreciation",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises) (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisions pour risques et charges: dotations (utilisations et reprises) (+)/(-)",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Autres charges d'exploitation",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Charges d'exploitation portées à l'actif au titre de frais de restructuration (-)",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Charges d'exploitation non récurrentes",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Produits financiers",
+   "lado": "revenue",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Produits financiers récurrents",
+   "lado": "revenue",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Produits des immobilisations financières",
+   "lado": "revenue",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Produits des actifs circulants",
+   "lado": "revenue",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Autres produits financiers",
+   "lado": "revenue",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Produits financiers non récurrents",
+   "lado": "revenue",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Charges financières",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Charges financières récurrentes",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Charges des dettes",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Réductions de valeur sur actifs circulants autres que stocks, commandes en cours et créances commerciales: dotations (reprises) (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Autres charges financières",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Charges financières non récurrentes",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Prélèvements sur les impôts différés",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Transfert aux impôts différés",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Impôts",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Régularisations d'impôts et reprises de provisions fiscales",
+   "lado": "expense",
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Prélèvements sur les réserves immunisées",
+   "lado": null,
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Transfert aux réserves immunisées",
+   "lado": null,
+   "page": 8,
+   "section": "N° BE 0433.255.448 C 4 / ## COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Actions et parts - Montant non appelé",
+   "lado": "revenue",
+   "page": 17,
+   "section": "N° BE 0433.255.448 C 6.6 / ## PLACEMENTS DE TRÉSORERIE ET COMPTES DE RÉGULARISATION DE L'ACTIF",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "member_dues",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1126
+  },
+  {
+   "label": "Actions, parts et placements autres que placements à revenu fixe",
+   "lado": "revenue",
+   "page": 17,
+   "section": "N° BE 0433.255.448 C 6.6 / ## PLACEMENTS DE TRÉSORERIE ET COMPTES DE RÉGULARISATION DE L'ACTIF",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1159
+  },
+  {
+   "label": "Titres à revenu fixe",
+   "lado": "revenue",
+   "page": 17,
+   "section": "N° BE 0433.255.448 C 6.6 / ## PLACEMENTS DE TRÉSORERIE ET COMPTES DE RÉGULARISATION DE L'ACTIF",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 923
+  },
+  {
+   "label": "Autres placements de trésorerie non repris ci-avant",
+   "lado": "revenue",
+   "page": 17,
+   "section": "N° BE 0433.255.448 C 6.6 / ## PLACEMENTS DE TRÉSORERIE ET COMPTES DE RÉGULARISATION DE L'ACTIF",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "de plus d'un an",
+   "lado": "revenue",
+   "page": 17,
+   "section": "N° BE 0433.255.448 C 6.6 / ## PLACEMENTS DE TRÉSORERIE ET COMPTES DE RÉGULARISATION DE L'ACTIF",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1161
+  },
+  {
+   "label": "de plus d'un mois à un an au plus",
+   "lado": "revenue",
+   "page": 17,
+   "section": "N° BE 0433.255.448 C 6.6 / ## PLACEMENTS DE TRÉSORERIE ET COMPTES DE RÉGULARISATION DE L'ACTIF",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1171
+  },
+  {
+   "label": "Comptes à terme détenus auprès des établissements de crédit",
+   "lado": "revenue",
+   "page": 17,
+   "section": "N° BE 0433.255.448 C 6.6 / ## PLACEMENTS DE TRÉSORERIE ET COMPTES DE RÉGULARISATION DE L'ACTIF",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1027
+  }
+ ]
+}

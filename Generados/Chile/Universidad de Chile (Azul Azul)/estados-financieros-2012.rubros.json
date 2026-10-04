@@ -1,0 +1,235 @@
+{
+  "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2012.md",
+  "pdf": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2012.pdf",
+  "club": "udechile-cl",
+  "year": 2012,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:57:13.985Z",
+  "tieOuts": {
+    "cierran": 14,
+    "noCierran": 12
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "10 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 19,
+    "notasUsadas": []
+  },
+  "ladoConocido": 19,
+  "rubros": [
+    {
+      "label": "Gasto de administración",
+      "lado": "expense",
+      "page": 7,
+      "section": "",
+      "values": [
+        -3576.42
+      ],
+      "origen": "estado 7",
+      "glosa": "Gasto de administración"
+    },
+    {
+      "label": "Ingresos financieros",
+      "lado": "revenue",
+      "page": 7,
+      "section": "",
+      "values": [
+        81.187
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Costos financieros",
+      "lado": "expense",
+      "page": 7,
+      "section": "",
+      "values": [
+        -147.103
+      ],
+      "origen": "estado 7",
+      "glosa": "Costos financieros"
+    },
+    {
+      "label": "Gasto por impuestos a las ganancias",
+      "lado": "expense",
+      "page": 7,
+      "section": "",
+      "values": [
+        -1051.69
+      ],
+      "origen": "estado 7",
+      "glosa": "Gasto por impuestos a las ganancias"
+    },
+    {
+      "label": "Borderó (costos directos)",
+      "lado": "expense",
+      "page": 69,
+      "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES.",
+      "values": [
+        1780.961
+      ],
+      "origen": "estado 31",
+      "glosa": "Borderó (costos directos)"
+    },
+    {
+      "label": "Remuneraciones",
+      "lado": "expense",
+      "page": 69,
+      "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES.",
+      "values": [
+        5830.869
+      ],
+      "origen": "estado 31",
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Amortización de pases",
+      "lado": "expense",
+      "page": 69,
+      "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES.",
+      "values": [
+        2051.355
+      ],
+      "origen": "estado 31",
+      "glosa": "Amortización de pases"
+    },
+    {
+      "label": "Costo de venta pases de jugadores",
+      "lado": "expense",
+      "page": 69,
+      "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES.",
+      "values": [
+        5124.495
+      ],
+      "origen": "estado 31",
+      "glosa": "Costo de venta pases de jugadores"
+    },
+    {
+      "label": "Otros gastos de operación",
+      "lado": "expense",
+      "page": 69,
+      "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES.",
+      "values": [
+        2006.685
+      ],
+      "origen": "estado 31",
+      "glosa": "Otros gastos de operación"
+    },
+    {
+      "label": "Otros Activos financieros no corrientes 273.646 260.140 0",
+      "lado": "revenue",
+      "page": 72,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados como / mantenidos para la venta o como mantenidos para",
+      "values": [
+        273.646
+      ],
+      "origen": "estado 34",
+      "glosa": "Otros Activos financieros no corrientes 273.646 260.140 0"
+    },
+    {
+      "label": "Otros Activos no financieros no corrientes 1.149.625 1.198.302 0",
+      "lado": "revenue",
+      "page": 72,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados como / mantenidos para la venta o como mantenidos para",
+      "values": [
+        1149.625
+      ],
+      "origen": "estado 34",
+      "glosa": "Otros Activos no financieros no corrientes 1.149.625 1.198.302 0"
+    },
+    {
+      "label": "Derechos por cobrar no corrientes",
+      "lado": "revenue",
+      "page": 72,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados como / mantenidos para la venta o como mantenidos para",
+      "values": [
+        631.59
+      ],
+      "origen": "estado 34",
+      "glosa": "Derechos por cobrar no corrientes"
+    },
+    {
+      "label": "Activos intangibles distintos de la plusvalía 14.542.534 12.194.544 0",
+      "lado": "revenue",
+      "page": 72,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados como / mantenidos para la venta o como mantenidos para",
+      "values": [
+        14542.534
+      ],
+      "origen": "estado 34",
+      "glosa": "Activos intangibles distintos de la plusvalía 14.542.534 12.194.544 0"
+    },
+    {
+      "label": "Propiedades, Planta y Equipo 3.553.542 3.614.997 0",
+      "lado": "revenue",
+      "page": 72,
+      "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados como / mantenidos para la venta o como mantenidos para",
+      "values": [
+        3553.542
+      ],
+      "origen": "estado 34",
+      "glosa": "Propiedades, Planta y Equipo 3.553.542 3.614.997 0"
+    },
+    {
+      "label": "Borderó",
+      "lado": "revenue",
+      "page": 69,
+      "section": "20. INGRESOS ORDINARIOS.",
+      "values": [
+        5531.689
+      ],
+      "origen": "estado 29",
+      "glosa": "Borderó"
+    },
+    {
+      "label": "Publicidad",
+      "lado": "revenue",
+      "page": 69,
+      "section": "20. INGRESOS ORDINARIOS.",
+      "values": [
+        3288.968
+      ],
+      "origen": "estado 29",
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Derechos de T.V.",
+      "lado": "revenue",
+      "page": 69,
+      "section": "20. INGRESOS ORDINARIOS.",
+      "values": [
+        1880.624
+      ],
+      "origen": "estado 29",
+      "glosa": "Derechos de T.V."
+    },
+    {
+      "label": "jugadores",
+      "lado": "revenue",
+      "page": 69,
+      "section": "Ingresos por transferencias de pases de",
+      "values": [
+        14892.13
+      ],
+      "origen": "estado 30",
+      "glosa": "jugadores"
+    },
+    {
+      "label": "Ingresos varios",
+      "lado": "revenue",
+      "page": 69,
+      "section": "Ingresos por transferencias de pases de",
+      "values": [
+        525.025
+      ],
+      "origen": "estado 30",
+      "glosa": "Ingresos varios"
+    }
+  ]
+}

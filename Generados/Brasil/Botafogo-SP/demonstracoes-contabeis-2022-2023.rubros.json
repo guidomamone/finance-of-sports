@@ -1,0 +1,844 @@
+{
+  "md": "Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2022-2023.md",
+  "pdf": "Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2022-2023.pdf",
+  "club": "botafogosp-br",
+  "year": 2023,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:51:42.778Z",
+  "tieOuts": {
+    "cierran": 20,
+    "noCierran": 19
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "17 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 73,
+    "notasUsadas": [
+      "33"
+    ]
+  },
+  "ladoConocido": 57,
+  "rubros": [
+    {
+      "label": "CIRCULANTE 8.941.067 2.176.584 CIRCULANTE",
+      "lado": null,
+      "page": 3,
+      "section": "BOTAFOGO FUTEBOL S.A. - SAF / DEMONSTRAÇÃO DO RESULTADO PARA OS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO DE 2023 E DE 2022",
+      "values": [
+        14.112624
+      ],
+      "origen": "estado 0",
+      "glosa": "CORRIENTE 8.941.067 2.176.584 CORRIENTE"
+    },
+    {
+      "label": "Caixa e Equivalentes de Caixa 6 115.198 85.860 # Fornecedores",
+      "lado": null,
+      "page": 3,
+      "section": "BOTAFOGO FUTEBOL S.A. - SAF / DEMONSTRAÇÃO DO RESULTADO PARA OS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO DE 2023 E DE 2022",
+      "values": [
+        1.079113
+      ],
+      "origen": "estado 0",
+      "glosa": "Efectivo y Equivalentes de Efectivo 6 115.198 85.860 # Proveedores"
+    },
+    {
+      "label": "Contas a Receber 7 5.855.675 814.474 Obrigações com Pessoal e Sociais",
+      "lado": null,
+      "page": 3,
+      "section": "BOTAFOGO FUTEBOL S.A. - SAF / DEMONSTRAÇÃO DO RESULTADO PARA OS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO DE 2023 E DE 2022",
+      "values": [
+        2.208375
+      ],
+      "origen": "estado 0",
+      "glosa": "Cuentas a Cobrar 7 5.855.675 814.474 Obligaciones Laborales y Sociales"
+    },
+    {
+      "label": "Impostos a Recuperar 8 1.826.234 960.178 Obrigações Tributárias",
+      "lado": "expense",
+      "page": 3,
+      "section": "BOTAFOGO FUTEBOL S.A. - SAF / DEMONSTRAÇÃO DO RESULTADO PARA OS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO DE 2023 E DE 2022",
+      "values": [
+        0.610393
+      ],
+      "origen": "estado 0",
+      "glosa": "Impuestos a Recuperar 8 1.826.234 960.178 Obligaciones Tributarias"
+    },
+    {
+      "label": "Adiantamentos 9 1.006.517 302.892 Obrigações com Arrendamento",
+      "lado": null,
+      "page": 3,
+      "section": "BOTAFOGO FUTEBOL S.A. - SAF / DEMONSTRAÇÃO DO RESULTADO PARA OS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO DE 2023 E DE 2022",
+      "values": [
+        1.527028
+      ],
+      "origen": "estado 0",
+      "glosa": "Anticipos 9 1.006.517 302.892 Obligaciones por Arrendamiento"
+    },
+    {
+      "label": "Outros Créditos 137.443 13.180 Partes Relacionadas",
+      "lado": null,
+      "page": 3,
+      "section": "BOTAFOGO FUTEBOL S.A. - SAF / DEMONSTRAÇÃO DO RESULTADO PARA OS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO DE 2023 E DE 2022",
+      "values": [
+        0.00001
+      ],
+      "origen": "estado 0",
+      "glosa": "Otros Créditos 137.443 13.180 Partes Relacionadas"
+    },
+    {
+      "label": "Outras Obrigações",
+      "lado": null,
+      "page": 3,
+      "section": "BOTAFOGO FUTEBOL S.A. - SAF / DEMONSTRAÇÃO DO RESULTADO PARA OS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO DE 2023 E DE 2022",
+      "values": [
+        6.729658
+      ],
+      "origen": "estado 0",
+      "glosa": "Otras Obligaciones"
+    },
+    {
+      "label": "NÃO CIRCULANTE 47.424.733 46.016.342 NÃO CIRCULANTE",
+      "lado": null,
+      "page": 3,
+      "section": "",
+      "values": [
+        59.060451
+      ],
+      "origen": "estado 1",
+      "glosa": "NO CORRIENTE 47.424.733 46.016.342 NO CORRIENTE"
+    },
+    {
+      "label": "# Obrigações com Arrendamento",
+      "lado": null,
+      "page": 3,
+      "section": "",
+      "values": [
+        11.219521
+      ],
+      "origen": "estado 1",
+      "glosa": "# Obligaciones por Arrendamiento"
+    },
+    {
+      "label": "Realizável a Longo Prazo 1.732.390 855.790 # Partes Relacionadas",
+      "lado": null,
+      "page": 3,
+      "section": "",
+      "values": [
+        0.00001
+      ],
+      "origen": "estado 1",
+      "glosa": "Realizable a Largo Plazo 1.732.390 855.790 # Partes Relacionadas"
+    },
+    {
+      "label": "Bloqueios Judiciais 1.228.420 762.515 # Provisão para Contingências",
+      "lado": null,
+      "page": 3,
+      "section": "",
+      "values": [
+        2.070109
+      ],
+      "origen": "estado 1",
+      "glosa": "Embargos Judiciales 1.228.420 762.515 # Provisión para Contingencias"
+    },
+    {
+      "label": "Partes Relacionadas 10.a 405.696 - # Outras Obrigações",
+      "lado": null,
+      "page": 3,
+      "section": "",
+      "values": [
+        0.472044
+      ],
+      "origen": "estado 1",
+      "glosa": "Partes Relacionadas 10.a 405.696 - # Otras Obligaciones"
+    },
+    {
+      "label": "Outros Créditos",
+      "lado": null,
+      "page": 3,
+      "section": "",
+      "values": [
+        0.098274
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros Créditos"
+    },
+    {
+      "label": "Direito de Uso 11 12.579.882 13.402.482 PATRIMÔNIO LÍQUIDO",
+      "lado": null,
+      "page": 3,
+      "section": "",
+      "values": [
+        -16.807275
+      ],
+      "origen": "estado 2",
+      "glosa": "Derecho de Uso 11 12.579.882 13.402.482 PATRIMONIO NETO"
+    },
+    {
+      "label": "Botafogo Futebol Clube",
+      "lado": null,
+      "page": 24,
+      "section": "18. PATRIMÔNIO LÍQUIDO",
+      "values": [
+        12
+      ],
+      "origen": "nota 33 (ancla 2)",
+      "ancla": "Imobilizado 12 12.933.130 12.745.245 Capital Social",
+      "glosa": "Botafogo Futebol Clube"
+    },
+    {
+      "label": "Imobilizado 12 12.933.130 12.745.245 Capital Social",
+      "lado": null,
+      "page": 3,
+      "section": "",
+      "values": [
+        20
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Inmovilizado 12 12.933.130 12.745.245 Capital Social"
+    },
+    {
+      "label": "Trexx Sports Participações Ltda.",
+      "lado": null,
+      "page": 24,
+      "section": "18. PATRIMÔNIO LÍQUIDO",
+      "values": [
+        8
+      ],
+      "origen": "nota 33 (ancla 2)",
+      "ancla": "Imobilizado 12 12.933.130 12.745.245 Capital Social",
+      "glosa": "Trexx Sports Participações Ltda."
+    },
+    {
+      "label": "Despesas com Pessoal",
+      "lado": "expense",
+      "page": 4,
+      "section": "BOTAFOGO FUTEBOL S.A. - SAF / DEMONSTRAÇÃO DO RESULTADO PARA OS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO DE 2023 E DE 2022 / RECEITAS (DESPESAS) OPERACIONAIS",
+      "values": [
+        -0.635313
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos de Personal"
+    },
+    {
+      "label": "Despesas Administrativas e Gerais",
+      "lado": "expense",
+      "page": 4,
+      "section": "BOTAFOGO FUTEBOL S.A. - SAF / DEMONSTRAÇÃO DO RESULTADO PARA OS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO DE 2023 E DE 2022 / RECEITAS (DESPESAS) OPERACIONAIS",
+      "values": [
+        -4.155342
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos Administrativos y Generales"
+    },
+    {
+      "label": "Outros Receitas (Despesas) Operacionais",
+      "lado": null,
+      "page": 4,
+      "section": "BOTAFOGO FUTEBOL S.A. - SAF / DEMONSTRAÇÃO DO RESULTADO PARA OS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO DE 2023 E DE 2022 / RECEITAS (DESPESAS) OPERACIONAIS",
+      "values": [
+        -3.347374
+      ],
+      "origen": "estado 3",
+      "glosa": "Otros Ingresos (Gastos) de Explotación"
+    },
+    {
+      "label": "Salários",
+      "lado": "expense",
+      "page": 25,
+      "section": "20. CUSTO COM ATLETAS, COMISSÃO TÉCNICA E JOGOS",
+      "values": [
+        -7.806308
+      ],
+      "origen": "estado 36",
+      "glosa": "Sueldos y Salarios"
+    },
+    {
+      "label": "Direito de Imagem",
+      "lado": "expense",
+      "page": 25,
+      "section": "20. CUSTO COM ATLETAS, COMISSÃO TÉCNICA E JOGOS",
+      "values": [
+        -3.206723
+      ],
+      "origen": "estado 36",
+      "glosa": "Derechos de Imagen"
+    },
+    {
+      "label": "Férias",
+      "lado": "expense",
+      "page": 25,
+      "section": "20. CUSTO COM ATLETAS, COMISSÃO TÉCNICA E JOGOS",
+      "values": [
+        -1.0582
+      ],
+      "origen": "estado 36",
+      "glosa": "Vacaciones"
+    },
+    {
+      "label": "INSS e FGTS",
+      "lado": "expense",
+      "page": 25,
+      "section": "20. CUSTO COM ATLETAS, COMISSÃO TÉCNICA E JOGOS",
+      "values": [
+        -1.163675
+      ],
+      "origen": "estado 36",
+      "glosa": "INSS y FGTS"
+    },
+    {
+      "label": "Prêmios e Gratificações",
+      "lado": "expense",
+      "page": 25,
+      "section": "20. CUSTO COM ATLETAS, COMISSÃO TÉCNICA E JOGOS",
+      "values": [
+        -1.325018
+      ],
+      "origen": "estado 36",
+      "glosa": "Primas y Gratificaciones"
+    },
+    {
+      "label": "13º Salário",
+      "lado": "expense",
+      "page": 25,
+      "section": "20. CUSTO COM ATLETAS, COMISSÃO TÉCNICA E JOGOS",
+      "values": [
+        -0.679284
+      ],
+      "origen": "estado 36",
+      "glosa": "Décimo Tercer Salario"
+    },
+    {
+      "label": "Alimentação",
+      "lado": "expense",
+      "page": 25,
+      "section": "20. CUSTO COM ATLETAS, COMISSÃO TÉCNICA E JOGOS",
+      "values": [
+        -0.393071
+      ],
+      "origen": "estado 36",
+      "glosa": "Alimentación"
+    },
+    {
+      "label": "Assistência Médica Odontológica",
+      "lado": "expense",
+      "page": 25,
+      "section": "20. CUSTO COM ATLETAS, COMISSÃO TÉCNICA E JOGOS",
+      "values": [
+        -0.958372
+      ],
+      "origen": "estado 36",
+      "glosa": "Asistencia Médica y Odontológica"
+    },
+    {
+      "label": "Amortização de Direito de Jogadores",
+      "lado": "expense",
+      "page": 25,
+      "section": "20. CUSTO COM ATLETAS, COMISSÃO TÉCNICA E JOGOS",
+      "values": [
+        -1.165905
+      ],
+      "origen": "estado 36",
+      "glosa": "Amortización de Derechos Federativos de Jugadores"
+    },
+    {
+      "label": "Luvas Contratuais",
+      "lado": "expense",
+      "page": 25,
+      "section": "20. CUSTO COM ATLETAS, COMISSÃO TÉCNICA E JOGOS",
+      "values": [
+        -0.416
+      ],
+      "origen": "estado 36",
+      "glosa": "Primas de Fichaje"
+    },
+    {
+      "label": "Ajuda de Custo",
+      "lado": "expense",
+      "page": 25,
+      "section": "20. CUSTO COM ATLETAS, COMISSÃO TÉCNICA E JOGOS",
+      "values": [
+        -1.514833
+      ],
+      "origen": "estado 36",
+      "glosa": "Asignación para Gastos"
+    },
+    {
+      "label": "Outros Custos",
+      "lado": "expense",
+      "page": 25,
+      "section": "20. CUSTO COM ATLETAS, COMISSÃO TÉCNICA E JOGOS",
+      "values": [
+        -0.62293
+      ],
+      "origen": "estado 36",
+      "glosa": "Otros Costes"
+    },
+    {
+      "label": "Amortização do Direito de Uso",
+      "lado": "expense",
+      "page": 26,
+      "section": "22. DESPESAS ADMINISTRATIVAS E GERAIS",
+      "values": [
+        -446.867
+      ],
+      "origen": "estado 40",
+      "glosa": "Amortización del Derecho de Uso"
+    },
+    {
+      "label": "Bens de Pequeno Valor",
+      "lado": "expense",
+      "page": 26,
+      "section": "22. DESPESAS ADMINISTRATIVAS E GERAIS",
+      "values": [
+        -173.06
+      ],
+      "origen": "estado 40",
+      "glosa": "Bienes de Escaso Valor"
+    },
+    {
+      "label": "Bonificação e Doações",
+      "lado": "expense",
+      "page": 26,
+      "section": "22. DESPESAS ADMINISTRATIVAS E GERAIS",
+      "values": [
+        -364.901
+      ],
+      "origen": "estado 40",
+      "glosa": "Bonificaciones y Donaciones"
+    },
+    {
+      "label": "Contingências",
+      "lado": "expense",
+      "page": 26,
+      "section": "22. DESPESAS ADMINISTRATIVAS E GERAIS",
+      "values": [
+        -199.416
+      ],
+      "origen": "estado 40",
+      "glosa": "Contingencias"
+    },
+    {
+      "label": "Depreciação",
+      "lado": "expense",
+      "page": 26,
+      "section": "22. DESPESAS ADMINISTRATIVAS E GERAIS",
+      "values": [
+        -610.369
+      ],
+      "origen": "estado 40",
+      "glosa": "Amortización"
+    },
+    {
+      "label": "Energia Elétrica",
+      "lado": "expense",
+      "page": 26,
+      "section": "22. DESPESAS ADMINISTRATIVAS E GERAIS",
+      "values": [
+        -726.975
+      ],
+      "origen": "estado 40",
+      "glosa": "Energía Eléctrica"
+    },
+    {
+      "label": "Manutenção",
+      "lado": "expense",
+      "page": 26,
+      "section": "22. DESPESAS ADMINISTRATIVAS E GERAIS",
+      "values": [
+        -289.314
+      ],
+      "origen": "estado 40",
+      "glosa": "Mantenimiento"
+    },
+    {
+      "label": "Material de Escritório, Limpeza e Consumo",
+      "lado": "expense",
+      "page": 26,
+      "section": "22. DESPESAS ADMINISTRATIVAS E GERAIS",
+      "values": [
+        -52.275
+      ],
+      "origen": "estado 40",
+      "glosa": "Material de Oficina, Limpieza y Consumo"
+    },
+    {
+      "label": "Publicidade e Propaganda",
+      "lado": "expense",
+      "page": 26,
+      "section": "22. DESPESAS ADMINISTRATIVAS E GERAIS",
+      "values": [
+        -60.256
+      ],
+      "origen": "estado 40",
+      "glosa": "Publicidad y Propaganda"
+    },
+    {
+      "label": "Serviços de Terceiros",
+      "lado": "expense",
+      "page": 26,
+      "section": "22. DESPESAS ADMINISTRATIVAS E GERAIS",
+      "values": [
+        -325.935
+      ],
+      "origen": "estado 40",
+      "glosa": "Servicios de Terceros"
+    },
+    {
+      "label": "Sócio Torcedor",
+      "lado": "expense",
+      "page": 26,
+      "section": "22. DESPESAS ADMINISTRATIVAS E GERAIS",
+      "values": [
+        -517.556
+      ],
+      "origen": "estado 40",
+      "glosa": "Socio Abonado"
+    },
+    {
+      "label": "Cotas de Participação",
+      "lado": "expense",
+      "page": 25,
+      "section": "(457.966)      (191.687) / Custo com Jogos",
+      "values": [
+        -491.122
+      ],
+      "origen": "estado 38",
+      "glosa": "Cuotas de Participación"
+    },
+    {
+      "label": "Serviços Prestado",
+      "lado": "expense",
+      "page": 25,
+      "section": "(457.966)      (191.687) / Custo com Jogos",
+      "values": [
+        -1495.379
+      ],
+      "origen": "estado 38",
+      "glosa": "Servicios Prestados"
+    },
+    {
+      "label": "Aluguéis",
+      "lado": "expense",
+      "page": 25,
+      "section": "(457.966)      (191.687) / Custo com Jogos",
+      "values": [
+        -561.8
+      ],
+      "origen": "estado 38",
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Viagens",
+      "lado": "expense",
+      "page": 25,
+      "section": "(457.966)      (191.687) / Custo com Jogos",
+      "values": [
+        -139.136
+      ],
+      "origen": "estado 38",
+      "glosa": "Viajes"
+    },
+    {
+      "label": "Taxas",
+      "lado": "expense",
+      "page": 25,
+      "section": "(457.966)      (191.687) / Custo com Jogos",
+      "values": [
+        -250.425
+      ],
+      "origen": "estado 38",
+      "glosa": "Tasas"
+    },
+    {
+      "label": "Comissão",
+      "lado": "expense",
+      "page": 25,
+      "section": "(457.966)      (191.687) / Custo com Jogos",
+      "values": [
+        -785.502
+      ],
+      "origen": "estado 38",
+      "glosa": "Comisiones"
+    },
+    {
+      "label": "Viagens e Estadias",
+      "lado": "expense",
+      "page": 25,
+      "section": "(457.966)      (191.687) / Custo com Jogos",
+      "values": [
+        -230.76
+      ],
+      "origen": "estado 38",
+      "glosa": "Viajes y Estancias"
+    },
+    {
+      "label": "Arbitragem",
+      "lado": "expense",
+      "page": 25,
+      "section": "(457.966)      (191.687) / Custo com Jogos",
+      "values": [
+        -92.956
+      ],
+      "origen": "estado 38",
+      "glosa": "Arbitraje"
+    },
+    {
+      "label": "Categoria de Base",
+      "lado": "expense",
+      "page": 25,
+      "section": "(457.966)      (191.687) / Custo com Jogos",
+      "values": [
+        -226.354
+      ],
+      "origen": "estado 38",
+      "glosa": "Fútbol Base"
+    },
+    {
+      "label": "Outros Custos",
+      "lado": "expense",
+      "page": 25,
+      "section": "(457.966)      (191.687) / Custo com Jogos",
+      "values": [
+        -1661.995
+      ],
+      "origen": "estado 38",
+      "glosa": "Otros Costes"
+    },
+    {
+      "label": "Cotas de Participação (i)",
+      "lado": "revenue",
+      "page": 24,
+      "section": "19. RECEITA OPERACIONAL LÍQUIDA",
+      "values": [
+        6235
+      ],
+      "origen": "estado 34",
+      "glosa": "Cuotas de Participación (i)"
+    },
+    {
+      "label": "Patrocínios e Publicidade (ii)",
+      "lado": "revenue",
+      "page": 24,
+      "section": "19. RECEITA OPERACIONAL LÍQUIDA",
+      "values": [
+        3994.127
+      ],
+      "origen": "estado 34",
+      "glosa": "Patrocinios y Publicidad (ii)"
+    },
+    {
+      "label": "Sócio Torcedor (iii)",
+      "lado": "revenue",
+      "page": 24,
+      "section": "19. RECEITA OPERACIONAL LÍQUIDA",
+      "values": [
+        2874.85
+      ],
+      "origen": "estado 34",
+      "glosa": "Socio Abonado (iii)"
+    },
+    {
+      "label": "Transação de Atletas",
+      "lado": "revenue",
+      "page": 24,
+      "section": "19. RECEITA OPERACIONAL LÍQUIDA",
+      "values": [
+        2500
+      ],
+      "origen": "estado 34",
+      "glosa": "Traspaso de Jugadores"
+    },
+    {
+      "label": "Arrecadação de Jogos (iv)",
+      "lado": "revenue",
+      "page": 24,
+      "section": "19. RECEITA OPERACIONAL LÍQUIDA",
+      "values": [
+        4234.223
+      ],
+      "origen": "estado 34",
+      "glosa": "Recaudación de Partidos (iv)"
+    },
+    {
+      "label": "Receita com Eventos e Shows",
+      "lado": "revenue",
+      "page": 24,
+      "section": "19. RECEITA OPERACIONAL LÍQUIDA",
+      "values": [
+        262.32
+      ],
+      "origen": "estado 34",
+      "glosa": "Ingresos por Eventos y Espectáculos"
+    },
+    {
+      "label": "Receita de Aluguel – (v)",
+      "lado": "revenue",
+      "page": 24,
+      "section": "19. RECEITA OPERACIONAL LÍQUIDA",
+      "values": [
+        3131.508
+      ],
+      "origen": "estado 34",
+      "glosa": "Ingresos por Arrendamiento – (v)"
+    },
+    {
+      "label": "Outras Receitas – (vi)",
+      "lado": "revenue",
+      "page": 24,
+      "section": "19. RECEITA OPERACIONAL LÍQUIDA",
+      "values": [
+        1606.373
+      ],
+      "origen": "estado 34",
+      "glosa": "Otros Ingresos – (vi)"
+    },
+    {
+      "label": "Salários",
+      "lado": "expense",
+      "page": 26,
+      "section": "21. DESPESAS COM PESSOAL",
+      "values": [
+        -363.8
+      ],
+      "origen": "estado 39",
+      "glosa": "Sueldos y Salarios"
+    },
+    {
+      "label": "INSS e FGTS",
+      "lado": "expense",
+      "page": 26,
+      "section": "21. DESPESAS COM PESSOAL",
+      "values": [
+        -61.98
+      ],
+      "origen": "estado 39",
+      "glosa": "INSS y FGTS"
+    },
+    {
+      "label": "Férias",
+      "lado": "expense",
+      "page": 26,
+      "section": "21. DESPESAS COM PESSOAL",
+      "values": [
+        -50.378
+      ],
+      "origen": "estado 39",
+      "glosa": "Vacaciones"
+    },
+    {
+      "label": "13º Salário",
+      "lado": "expense",
+      "page": 26,
+      "section": "21. DESPESAS COM PESSOAL",
+      "values": [
+        -34.657
+      ],
+      "origen": "estado 39",
+      "glosa": "Décimo Tercer Salario"
+    },
+    {
+      "label": "Alimentação",
+      "lado": "expense",
+      "page": 26,
+      "section": "21. DESPESAS COM PESSOAL",
+      "values": [
+        -74.975
+      ],
+      "origen": "estado 39",
+      "glosa": "Alimentación"
+    },
+    {
+      "label": "Outras Despesas",
+      "lado": "expense",
+      "page": 26,
+      "section": "21. DESPESAS COM PESSOAL",
+      "values": [
+        -49.523
+      ],
+      "origen": "estado 39",
+      "glosa": "Otros Gastos"
+    },
+    {
+      "label": "Impostos Incidentes sobre Receitas (TEF)",
+      "lado": "revenue",
+      "page": 24,
+      "section": "Direito de Transmissão de Tv                                13.665.000               - / 38.503.401      14.069.526 / Deduções da Receita Bruta:",
+      "values": [
+        -1787.965
+      ],
+      "origen": "estado 35",
+      "glosa": "Impuestos sobre los Ingresos (TEF)"
+    },
+    {
+      "label": "Despesas Sócio Torcedor",
+      "lado": "expense",
+      "page": 24,
+      "section": "Direito de Transmissão de Tv                                13.665.000               - / 38.503.401      14.069.526 / Deduções da Receita Bruta:",
+      "values": [
+        -287.071
+      ],
+      "origen": "estado 35",
+      "glosa": "Gastos de Socios Abonados"
+    },
+    {
+      "label": "Recuperação de Despesas",
+      "lado": "expense",
+      "page": 24,
+      "section": "Direito de Transmissão de Tv                                13.665.000               - / 38.503.401      14.069.526 / Deduções da Receita Bruta:",
+      "values": [
+        396.307
+      ],
+      "origen": "estado 35",
+      "glosa": "Recuperación de Gastos"
+    },
+    {
+      "label": "Repasse de Arrecadação de Jogos",
+      "lado": "revenue",
+      "page": 24,
+      "section": "Direito de Transmissão de Tv                                13.665.000               - / 38.503.401      14.069.526 / Deduções da Receita Bruta:",
+      "values": [
+        -1038.269
+      ],
+      "origen": "estado 35",
+      "glosa": "Transferencia de Recaudación de Partidos"
+    },
+    {
+      "label": "Gastos de Produção",
+      "lado": "expense",
+      "page": 25,
+      "section": "(20.310.319)    (13.753.143) / Custo com Eventos/Shows",
+      "values": [
+        -371.456
+      ],
+      "origen": "estado 37",
+      "glosa": "Gastos de Producción"
+    },
+    {
+      "label": "Serviços Prestados",
+      "lado": "expense",
+      "page": 25,
+      "section": "(20.310.319)    (13.753.143) / Custo com Eventos/Shows",
+      "values": [
+        -86.098
+      ],
+      "origen": "estado 37",
+      "glosa": "Servicios Prestados"
+    },
+    {
+      "label": "Alimentação (412)",
+      "lado": "expense",
+      "page": 25,
+      "section": "(20.310.319)    (13.753.143) / Custo com Eventos/Shows",
+      "values": [
+        -86.714
+      ],
+      "origen": "estado 37",
+      "glosa": "Alimentación (412)"
+    }
+  ]
+}

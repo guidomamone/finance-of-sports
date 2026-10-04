@@ -1,0 +1,1626 @@
+{
+  "club": "thun",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Suiza/Thun/geschaeftsbericht-2019.md",
+  "generatedAt": "2026-09-30T22:08:11.619Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 8,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 3,
+      "section": "# JAHRESBERICHT 2019 – EINLEITUNG / ## INHALTSVERZEICHNIS",
+      "columns": [
+        "Jahresbericht Präsident des Verwaltungsrates",
+        "Markus Lüthi",
+        "Seite 5"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Jahresbericht Sportchef",
+          "values": [
+            "Andres Gerber",
+            "Seite 8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jahresbericht technischer Leiter Nachwuchs",
+          "values": [
+            "Jürg Frey",
+            "Seite 11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jahresbericht Geschäftsleiter Kommerz",
+          "values": [
+            "Joël Kissling",
+            "Seite 12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bilanz per 31.12.2019",
+          "values": [
+            "FC Thun AG",
+            "Seite 15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erfolgsrechnung 2019",
+          "values": [
+            "FC Thun AG",
+            "Seite 16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geldflussrechnung 2019",
+          "values": [
+            "FC Thun AG",
+            "Seite 16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anhang zur Jahresrechnung 2019",
+          "values": [
+            "FC Thun AG",
+            "Seite 17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Revisionsbericht Jahresrechnung 2019",
+          "values": [
+            "FC Thun AG",
+            "Seite 18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lagebericht",
+          "values": [
+            "FC Thun AG",
+            "Seite 19"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "# BILANZ FC THUN AG PER 31.12.2019",
+      "columns": [
+        "AKTIVEN",
+        "31.12.2019 in CHF",
+        "31.12.2018 in CHF",
+        "PASSIVEN",
+        "31.12.2019 in CHF",
+        "31.12.2018 in CHF"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Umlaufvermögen",
+          "values": [
+            "",
+            "",
+            "Fremdkapital",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kasse",
+          "values": [
+            "19'232.20",
+            "8'504.90",
+            "Kreditoren",
+            "707'748.65",
+            "755'925.30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Postkonto",
+          "values": [
+            "3'275.38",
+            "2'676.32",
+            "Gutscheine Ticketing & Fanshop",
+            "17'556.57",
+            "16'342.87"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bankguthaben in CHF",
+          "values": [
+            "1'699'688.89",
+            "187'169.82",
+            "Durchgangskonto",
+            "8'378.08",
+            "5'438.95"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bankguthaben in EUR",
+          "values": [
+            "21'996.75",
+            "21'945.49",
+            "Verbindlichkeiten aus",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Guthaben WIR Bank",
+          "values": [
+            "87'224.55",
+            "109'755.74",
+            "Lieferungen & Leistungen",
+            "733'683.30",
+            "777'707.12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flüssige Mittel",
+          "values": [
+            "1'831'417.77",
+            "330'052.27",
+            "Mehrwertsteuer-Umsatzsteuer",
+            "63'950.60",
+            "95'887.50"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Debitoren",
+          "values": [
+            "1'026'692.25",
+            "1'523'002.35",
+            "Quellensteuer",
+            "14'157.45",
+            "3'473.15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Delkredere",
+          "values": [
+            "-38'000.00",
+            "-25'000.00",
+            "Übrige kurzfristige Verbindlichkeiten",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forderungen aus",
+          "values": [
+            "",
+            "",
+            "ggü. staatlichen Stellen",
+            "78'108.05",
+            "99'360.65"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Lieferungen & Leistungen",
+          "values": [
+            "988'692.25",
+            "1'498'002.35",
+            "Kontokorrent",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Kontokorrent Swiss Football League",
+          "values": [
+            "2'041.13",
+            "2'890.19",
+            "Ausgleichskasse (AHV/IV/EO/FAK)",
+            "71'188.85",
+            "15'015.20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kontokorrent Verein Fussballclub Thun",
+          "values": [
+            "25'231.66",
+            "19'420.32",
+            "Kontokorrent Unfallversicherung",
+            "67'703.10",
+            "93'217.60"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kontokorrent Pensionskasse",
+          "values": [
+            "18'570.35",
+            "10'149.30",
+            "Kontokorrent Krankentaggeldversicherung",
+            "14'964.05",
+            "9'351.40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kautionen Wohnungsmieten",
+          "values": [
+            "26'160.70",
+            "13'078.80",
+            "Darlehen Dritte",
+            "600'000.00",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kautionen Trainerdiplome",
+          "values": [
+            "9'500.00",
+            "20'000.00",
+            "Darlehen Stadt Thun mit Rangrücktritt",
+            "100'000.00",
+            "100'000.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Übrige kurzfristige Forderungen",
+          "values": [
+            "81'503.84",
+            "65'538.61",
+            "Übrige kurzfristige Verbindlichkeiten",
+            "853'856.00",
+            "217'584.20"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aktive Rechnungsabgrenzungen",
+          "values": [
+            "1'497'269.92",
+            "914'554.90",
+            "Passive Rechnungsabgrenzungen",
+            "2'396'999.90",
+            "2'289'727.46"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total Umlaufvermögen",
+          "values": [
+            "4'398'883.78",
+            "2'808'148.13",
+            "Kurzfristige Rückstellungen",
+            "15'000.00",
+            "51'000.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Anlagevermögen",
+          "values": [
+            "",
+            "",
+            "Total kurzfristiges Fremdkapital",
+            "4'077'647.25",
+            "3'435'379.43"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Wertpapiere",
+          "values": [
+            "18'200.00",
+            "18'200.00",
+            "Darlehen Dritte mit Rangrücktritt",
+            "900'000.00",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finanzanlagen",
+          "values": [
+            "18'200.00",
+            "18'200.00",
+            "Langfristige verzinsliche",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mobilien und Einrichtungen",
+          "values": [
+            "20'941.75",
+            "12'125.00",
+            "Verbindlichkeiten",
+            "900'000.00",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Informatik und Büromaschinen",
+          "values": [
+            "374'111.92",
+            "219'113.72",
+            "langfristige Rückstellungen",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geräte Trainingsbetrieb",
+          "values": [
+            "3'000.00",
+            "3'000.00",
+            "Erneuerungsfonds Kunstrasen",
+            "175'000.00",
+            "125'000.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wertberichtigungen Sachanlagen",
+          "values": [
+            "-154'849.88",
+            "-90'821.84",
+            "Darlehen Stadt Thun mit Rangrücktritt",
+            "200'000.00",
+            "300'000.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sachanlagen",
+          "values": [
+            "243'203.79",
+            "143'416.88",
+            "Übrige langfristige Verbindlichkeiten",
+            "375'000.00",
+            "425'000.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Rechte und Werte, Lizenzen",
+          "values": [
+            "1.00",
+            "1.00",
+            "Total langfristiges Fremdkapital",
+            "1'275'000.00",
+            "425'000.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aktivierte Spielerwerte",
+          "values": [
+            "3'118'250.00",
+            "2'622'250.00",
+            "Total Fremdkapital",
+            "5'352'647.25",
+            "3'860'379.43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wertberichtigungen Spielerwerte",
+          "values": [
+            "-1'888'356.99",
+            "-1'403'373.99",
+            "Eigenkapital",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immaterielle Werte",
+          "values": [
+            "1'229'894.01",
+            "1'218'877.01",
+            "Aktienkapital",
+            "120'000.00",
+            "120'000.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total Anlagevermögen",
+          "values": [
+            "1'491'297.80",
+            "1'380'493.89",
+            "Allgemeine gesetzliche Reserve",
+            "273'580.00",
+            "273'580.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total Aktiven",
+          "values": [
+            "5'890'181.58",
+            "4'188'642.02",
+            "Kapitalreserven",
+            "556'770.00",
+            "54'890.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "Total Reserven",
+            "830'350.00",
+            "328'470.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "Eigene Aktien",
+            "-27'570.00",
+            "-16'090.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "Reserven für eigene Aktien",
+            "27'570.00",
+            "16'090.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "Vortrag vom Vorjahr",
+            "-120'207.41",
+            "-170'338.82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "Jahresverlust/-gewinn",
+            "-292'608.26",
+            "50'131.41"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "Bilanzerfolg",
+            "-412'815.67",
+            "-120'207.41"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "Total Eigenkapital",
+            "537'534.33",
+            "328'262.59"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "Total Passiven",
+            "5'890'181.58",
+            "4'188'642.02"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "columns": [
+        "",
+        "2019 01.01.2019-31.12.2019 in CHF",
+        "2018 01.01.2018-31.12.2018 in CHF"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ertrag Eintrittsgelder",
+          "values": [
+            "2'044'604.49",
+            "1'571'391.94"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ertrag Werbung/Sponsoring",
+          "values": [
+            "5'646'215.74",
+            "5'084'442.44"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ertrag Übertragungsrechte",
+          "values": [
+            "3'925'130.16",
+            "2'967'162.22"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferertrag",
+          "values": [
+            "2'563'265.33",
+            "2'722'382.49"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ertrag Ausleihgebühren",
+          "values": [
+            "42'500.00",
+            "6'250.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ertrag Events & Stadionvermietung",
+          "values": [
+            "328'475.84",
+            "270'477.46"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ertrag Handel",
+          "values": [
+            "255'384.64",
+            "286'106.92"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ertrag Mitgliederbeiträge/Spenden",
+          "values": [
+            "133'287.10",
+            "320'390.96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ertrag Amateur-/Jugendfussball",
+          "values": [
+            "343'861.80",
+            "354'662.25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstiger Ertrag",
+          "values": [
+            "193'295.42",
+            "112'425.92"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erlösminderungen",
+          "values": [
+            "-13'000.00",
+            "-10'000.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Nettoerlös aus Lieferungen & Leistungen",
+          "values": [
+            "15'463'020.52",
+            "13'685'692.60"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total Materialaufwand",
+          "values": [
+            "-747'883.48",
+            "-474'572.81"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bruttogewinn I",
+          "values": [
+            "14'715'137.04",
+            "13'211'119.79"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Löhne & Gehälter",
+          "values": [
+            "-6'379'355.60",
+            "-5'570'283.32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sozialversicherungen",
+          "values": [
+            "-1'488'034.40",
+            "-1'077'219.20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Übriger Personalaufwand",
+          "values": [
+            "-862'697.13",
+            "-816'671.55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Personalaufwand",
+          "values": [
+            "-8'730'087.13",
+            "-7'464'174.07"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bruttogewinn II",
+          "values": [
+            "5'985'049.91",
+            "5'746'945.72"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aufwand Spielbetrieb",
+          "values": [
+            "-2'267'667.07",
+            "-1'931'822.72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferaufwand",
+          "values": [
+            "-174'396.00",
+            "-106'543.96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Werbeaufwand",
+          "values": [
+            "-1'030'340.50",
+            "-1'105'006.16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aufwand Events",
+          "values": [
+            "-203'668.98",
+            "-230'723.24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mietaufwand",
+          "values": [
+            "-842'461.47",
+            "-809'906.70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aufwand Verwaltung & Unterhalt",
+          "values": [
+            "-720'666.22",
+            "-671'735.61"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fahrzeugaufwand/Sonstiges",
+          "values": [
+            "-91'199.55",
+            "-100'411.68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total übriger betriebl. Aufwand",
+          "values": [
+            "-5'330'399.79",
+            "-4'956'150.07"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Betriebserfolg (EBITDA)",
+          "values": [
+            "654'650.12",
+            "790'795.65"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Abschreibungen Sachanlagen",
+          "values": [
+            "-64'028.04",
+            "-46'880.80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abschreibungen immaterielle Werte",
+          "values": [
+            "-838'483.00",
+            "-678'124.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Abschreibungen",
+          "values": [
+            "-902'511.04",
+            "-725'004.80"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Betriebserfolg (EBIT)",
+          "values": [
+            "-247'860.92",
+            "65'790.85"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Finanzaufwand",
+          "values": [
+            "-51'139.38",
+            "-18'079.67"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finanzertrag",
+          "values": [
+            "6'953.24",
+            "2'487.73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Finanzerfolg",
+          "values": [
+            "-44'186.14",
+            "-15'591.94"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Betriebserfolg (EBT)",
+          "values": [
+            "-292'047.06",
+            "50'198.91"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total Steuern",
+          "values": [
+            "-561.20",
+            "-67.50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jahresverlust/-gewinn",
+          "values": [
+            "-292'608.26",
+            "50'131.41"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 16,
+      "section": null,
+      "columns": [
+        "",
+        "31.12.2019 in CHF",
+        "31.12.2018 in CHF"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Jahresverlust/-gewinn",
+          "values": [
+            "-292'608.26",
+            "50'131.41"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abschreibungen",
+          "values": [
+            "902'511.04",
+            "725'004.80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme Rückstellungen",
+          "values": [
+            "14'000.00",
+            "34'000.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abnahme/Zunahme Forderungen aus Lieferungen & Leistungen",
+          "values": [
+            "509'310.10",
+            "-863'491.10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme/Abnahme Übrige Forderungen",
+          "values": [
+            "-15'965.23",
+            "162'123.34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abnahme Materialvorräte",
+          "values": [
+            "0.00",
+            "96'000.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme/Abnahme",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aktive Rechnungsabgrenzungen",
+          "values": [
+            "-582'715.02",
+            "308'098.13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abnahme/Zunahme Verbindlichkeiten aus Lieferungen & Leistungen",
+          "values": [
+            "-44'023.82",
+            "233'216.23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme Übrige Verbindlichkeiten",
+          "values": [
+            "615'019.20",
+            "286'872.25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme/Abnahme",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passive Rechnungsabgrenzungen",
+          "values": [
+            "107'272.44",
+            "-237'947.83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geldfluss aus Geschäftstätigkeit",
+          "values": [
+            "1'212'800.45",
+            "794'007.23"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Investitionen Finanzanlagen",
+          "values": [
+            "0.00",
+            "-15'000.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investitionen Sachanlagen",
+          "values": [
+            "-163'814.95",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investitionen immaterielle Anlagen",
+          "values": [
+            "-849'500.00",
+            "-1'126'750.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geldfluss aus Investitionstätigkeit",
+          "values": [
+            "-1'013'314.95",
+            "-1'141'750.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Zunahme Kapitalreserven",
+          "values": [
+            "501'880.00",
+            "18'340.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme/Abnahme Darlehen",
+          "values": [
+            "800'000.00",
+            "-200'000.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geldfluss aus Finanzierungstätigkeit",
+          "values": [
+            "1'301'880.00",
+            "-181'660.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Veränderung der flüssigen Mittel",
+          "values": [
+            "1'501'365.50",
+            "-529'402.77"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "## Bestandesnachweis Flüssige Mittel",
+      "columns": [
+        "Flüssige Mittel",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "01.01.2019 / 01.01.2018",
+          "values": [
+            "330'052.27",
+            "859'455.04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veränderung der flüssigen Mittel",
+          "values": [
+            "1'501'365.50",
+            "-529'402.77"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Flüssige Mittel",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "per 31.12.2019 / 31.12.2018",
+          "values": [
+            "1'831'417.77",
+            "330'052.27"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "## 2. Erläuterungen zu Positionen der Bilanz und Erfolgsrechnung / ### 2.1 Debitoren / ### 2.2 Aktive Rechnungsabgrenzungen / ### 2.3 Passive Rechnungsabgrenzungen / ### 2.4 Aufwand Spielbetrieb",
+      "columns": [
+        "TCHF 511",
+        "Sicherheit, Verkehr"
+      ],
+      "rows": [
+        {
+          "rawLabel": "TCHF 223",
+          "values": [
+            "Ticketing, Technik, IT, Medien und Unterhaltung"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TCHF 127",
+          "values": [
+            "Helfer, Verpflegung"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TCHF 660",
+          "values": [
+            "Catering"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TCHF 262",
+          "values": [
+            "Reise- und Übernachtungskosten"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": null,
+      "columns": [
+        "",
+        "31.12.19 in CHF",
+        "31.12.18 in CHF"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2.5 Fälligkeit langfristige verzinsliche Verbindlichkeiten",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "fällig innerhalb von 1 bis 5 Jahren",
+          "values": [
+            "900'000.00",
+            "0.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.6 Eigene Aktien",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bestand eigene Aktien (Namenaktien)",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bestand eigene Aktien Vorperiode – nominal",
+          "values": [
+            "16'090.00",
+            "17'400.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bestand 31.12.2018: 1'609",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Käufe 01.01.2019-31.12.2019: 0",
+          "values": [
+            "0.00",
+            "0.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Rücknahmen 01.01.2019-31.12.2019: 402",
+          "values": [
+            "4'020.00",
+            "0.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Verkäufe 01.01.2019-31.12.2019: 454",
+          "values": [
+            "-4'540.00",
+            "-1'310.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bestand 31.12.2019: 1'557",
+          "values": [
+            "15'570.00",
+            "16'090.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bestand eigene Aktien (Inhaberaktien)",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bestand 31.12.2018: 0",
+          "values": [
+            "0.00",
+            "0.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bestand 31.12.2019: 6'000",
+          "values": [
+            "12'000.00",
+            "0.00"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bestand eigene Aktien (Nennwert) in % Nominalkapital",
+          "values": [
+            "23.0%",
+            "13.4%"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "3. Weitere Angaben",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "3.1 Leasingverbindlichkeiten",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fahrzeuge > 1 Jahr",
+          "values": [
+            "0.00",
+            "33'621.15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fahrzeuge < 1 Jahr",
+          "values": [
+            "0.00",
+            "3'519.10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3.2 Anzahl Mitarbeitende",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Anzahl Vollzeitstellen im Jahresdurchschnitt",
+          "values": [
+            "unter 250",
+            "unter 250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3.3 Honorar der Revisionsstelle",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Revisionsdienstleistungen",
+          "values": [
+            "11'785.00",
+            "12'180.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "andere Dienstleistungen",
+          "values": [
+            "7'770.00",
+            "8'500.00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3.4 Vergütungen an Agenten und Vermittler",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Vergütungen an Agenten und Vermittler",
+          "values": [
+            "137'000.00",
+            "84'256.96"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "# LAGEBERICHT",
+      "columns": [
+        "Entschädigung VR-Präsidenten für VR-Mandat exkl. Spesen",
+        "CHF/Jahr 7'200"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Entschädigung VR-Präsidenten für Mandat VR-Delegierter/Vorsitz GL",
+          "values": [
+            "34'800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Entschädigung des Verwaltungsrates als Ganzes exkl. Spesen und Präsident",
+          "values": [
+            "9'600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Entschädigung Geschäftsleitung exkl. Spesen und Präsident",
+          "values": [
+            "326'690"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 15,
+      "section": "# BILANZ FC THUN AG PER 31.12.2019",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Umlaufvermögen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"4'398'883.78\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 15,
+      "section": "# BILANZ FC THUN AG PER 31.12.2019",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Umlaufvermögen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"2'808'148.13\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 15,
+      "section": "# BILANZ FC THUN AG PER 31.12.2019",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Umlaufvermögen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"Kurzfristige Rückstellungen\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 15,
+      "section": "# BILANZ FC THUN AG PER 31.12.2019",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total Umlaufvermögen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"15'000.00\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 15,
+      "section": "# BILANZ FC THUN AG PER 31.12.2019",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total Umlaufvermögen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"51'000.00\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 15,
+      "section": "# BILANZ FC THUN AG PER 31.12.2019",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Anlagevermögen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"1'491'297.80\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 15,
+      "section": "# BILANZ FC THUN AG PER 31.12.2019",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Anlagevermögen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"1'380'493.89\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 15,
+      "section": "# BILANZ FC THUN AG PER 31.12.2019",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Anlagevermögen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"Allgemeine gesetzliche Reserve\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 15,
+      "section": "# BILANZ FC THUN AG PER 31.12.2019",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total Anlagevermögen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"273'580.00\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 15,
+      "section": "# BILANZ FC THUN AG PER 31.12.2019",
+      "likelyRelevant": false,
+      "column": 4,
+      "totalLabel": "Total Anlagevermögen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"273'580.00\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 15,
+      "section": "# BILANZ FC THUN AG PER 31.12.2019",
+      "likelyRelevant": false,
+      "totalLabel": "Total Aktiven",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Nettoerlös aus Lieferungen & Leistungen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"15'463'020.52\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Nettoerlös aus Lieferungen & Leistungen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"13'685'692.60\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "likelyRelevant": true,
+      "totalLabel": "Total Materialaufwand",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Personalaufwand",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"-8'730'087.13\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Personalaufwand",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"-7'464'174.07\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total übriger betriebl. Aufwand",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"-5'330'399.79\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total übriger betriebl. Aufwand",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"-4'956'150.07\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Abschreibungen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"-902'511.04\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Abschreibungen",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"-725'004.80\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Finanzerfolg",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"-44'186.14\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Finanzerfolg",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"-15'591.94\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Steuern",
+      "skipped": true,
+      "reason": "1 de 1 valor(es) del segmento no parecen números (ej. \"-292'047.06\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Steuern",
+      "skipped": true,
+      "reason": "1 de 1 valor(es) del segmento no parecen números (ej. \"50'198.91\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/thun-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"thun\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "24 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

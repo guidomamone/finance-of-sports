@@ -1,0 +1,903 @@
+{
+ "md": "Clubes/Grecia/Kifisia/Kifisia_notes_2024-06-30.md",
+ "generatedAt": "2026-09-30T04:29:31.132Z",
+ "rubros": [
+  {
+   "label": "Αγορές εμπορευμάτων και υλικών",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.29000000000000004
+    ],
+    [
+     "match_organisation_expense",
+     0.19
+    ]
+   ],
+   "tokens": 1302
+  },
+  {
+   "label": "Σύνολο εξόδων",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "lump_football_operations_expense",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1289
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1293
+  },
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "lump_football_operations",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.87
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1299
+  },
+  {
+   "label": "Σύνολο εσόδων",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "lump_football_operations",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.72
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1289
+  },
+  {
+   "label": "Αποσβέσεις",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "depreciation",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "depreciation",
+     0.91
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1287
+  },
+  {
+   "label": "Λοιπά έξοδα και ζημίες",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "exceptional_items",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Παροχές σε εργαζόμενους",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "wages_squad",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "wages_squad",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1297
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1293
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "admin_general_expense",
+     0.39
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1304
+  },
+  {
+   "label": "Αποτελέσματα προ τόκων και φόρων",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "other_income",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "lump_football_operations",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.17
+    ]
+   ],
+   "tokens": 1301
+  },
+  {
+   "label": "Υπόλοιπα 9/8/2021",
+   "lado": null,
+   "page": 16,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "admin_general_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.18
+    ]
+   ],
+   "tokens": 1303
+  },
+  {
+   "label": "Αποτέλεσμα προ φόρων",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "admin_general_expense",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.38
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ]
+   ],
+   "tokens": 1293
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1304
+  },
+  {
+   "label": "Φόροι εισοδήματος",
+   "lado": null,
+   "page": 15,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατ’ ΕΙΔΟΣ",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1293
+  },
+  {
+   "label": "Μεταβολές στοιχείων στην περίοδο",
+   "lado": null,
+   "page": 16,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1303
+  },
+  {
+   "label": "Υπόλοιπο Ιδίων Κεφαλαίων την 30/06/2022",
+   "lado": null,
+   "page": 16,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1311
+  },
+  {
+   "label": "Έσοδα εισιτηρίων",
+   "lado": "revenue",
+   "page": 28,
+   "section": "### 11. Έσοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 883
+  },
+  {
+   "label": "Υπόλοιπο Ιδίων Κεφαλαίων την 1/7/2023",
+   "lado": null,
+   "page": 16,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ]
+   ],
+   "tokens": 1461
+  },
+  {
+   "label": "Υπόλοιπο Ιδίων Κεφαλαίων την 30/06/2024",
+   "lado": null,
+   "page": 16,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1600
+  },
+  {
+   "label": "Αποτελέσματα περιόδου",
+   "lado": null,
+   "page": 16,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "choice": "other_income",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "lump_football_operations",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1297
+  },
+  {
+   "label": "Υπόλοιπο Ιδίων Κεφαλαίων την 30/06/2023",
+   "lado": null,
+   "page": 16,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ]
+   ],
+   "tokens": 1463
+  },
+  {
+   "label": "Τηλεοπτικά δικαιώματα",
+   "lado": "revenue",
+   "page": 28,
+   "section": "### 11. Έσοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 888
+  },
+  {
+   "label": "Χορηγίες και διαφήμιση",
+   "lado": "revenue",
+   "page": 28,
+   "section": "### 11. Έσοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 886
+  },
+  {
+   "label": "Έσοδα από δανεισμό ποδοσφαιριστών",
+   "lado": "revenue",
+   "page": 28,
+   "section": "### 11. Έσοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ],
+    [
+     "player_sales",
+     0.12
+    ]
+   ],
+   "tokens": 896
+  },
+  {
+   "label": "Επιχορήγηση από ΕΠΟ από συμμετοχή σε κύπελλο Ελλάδος",
+   "lado": "revenue",
+   "page": 28,
+   "section": "### 11. Έσοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "competition_bonus",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "competition_bonus",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 908
+  },
+  {
+   "label": "Λοιπά έσοδα από παροχή υπηρεσιών σε τρίτους",
+   "lado": "revenue",
+   "page": 28,
+   "section": "### 11. Έσοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.94
+    ],
+    [
+     "stadium_other",
+     0.05
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 902
+  },
+  {
+   "label": "Επιχορήγηση από ΠΑΜΕ ΣΤΟΙΧΗΜΑ",
+   "lado": "revenue",
+   "page": 28,
+   "section": "### 11. Έσοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.52
+    ],
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 892
+  },
+  {
+   "label": "Εκτακτα και ανόργανα έσοδα",
+   "lado": "revenue",
+   "page": 28,
+   "section": "### 11. Έσοδα σημαντικού ποσού ή ιδιαίτερης συχνότητας ή σημασίας",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 889
+  },
+  {
+   "label": "Σύνολο",
+   "lado": "expense",
+   "page": 29,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01 Ιουλίου 2023 έως την 30η Ιουνίου 2024 της ΠΑΕ ΚΗΦΙΣΙΑΣ",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 881
+  },
+  {
+   "label": "ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΠΡΟΣΩΠΙΚΟΥ",
+   "lado": "expense",
+   "page": 29,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01 Ιουλίου 2023 έως την 30η Ιουνίου 2024 της ΠΑΕ ΚΗΦΙΣΙΑΣ",
+   "choice": "wages_squad",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 900
+  },
+  {
+   "label": "ΑΜΟΙΒΕΣ ΚΑΙ ΕΞΟΔΑ ΤΡΙΤΩΝ",
+   "lado": "expense",
+   "page": 29,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01 Ιουλίου 2023 έως την 30η Ιουνίου 2024 της ΠΑΕ ΚΗΦΙΣΙΑΣ",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 896
+  },
+  {
+   "label": "ΠΑΡΟΧΕΣ ΤΡΙΤΩΝ",
+   "lado": "expense",
+   "page": 29,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01 Ιουλίου 2023 έως την 30η Ιουνίου 2024 της ΠΑΕ ΚΗΦΙΣΙΑΣ",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 888
+  },
+  {
+   "label": "ΦΟΡΟΙ - ΤΕΛΗ",
+   "lado": "expense",
+   "page": 29,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01 Ιουλίου 2023 έως την 30η Ιουνίου 2024 της ΠΑΕ ΚΗΦΙΣΙΑΣ",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 885
+  },
+  {
+   "label": "ΤΟΚΟΙ ΚΑΙ ΣΥΝΑΦΗ ΕΞΟΔΑ",
+   "lado": "expense",
+   "page": 29,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01 Ιουλίου 2023 έως την 30η Ιουνίου 2024 της ΠΑΕ ΚΗΦΙΣΙΑΣ",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.8200000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 894
+  },
+  {
+   "label": "ΔΙΑΦΟΡΑ ΕΞΟΔΑ",
+   "lado": "expense",
+   "page": 29,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01 Ιουλίου 2023 έως την 30η Ιουνίου 2024 της ΠΑΕ ΚΗΦΙΣΙΑΣ",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 887
+  },
+  {
+   "label": "ΑΠΟΣΒΕΣΕΙΣ ΠΕΡΙΟΔΟΥ",
+   "lado": "expense",
+   "page": 29,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01 Ιουλίου 2023 έως την 30η Ιουνίου 2024 της ΠΑΕ ΚΗΦΙΣΙΑΣ",
+   "choice": "depreciation",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "depreciation",
+     0.72
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ],
+    [
+     "other_amortisation",
+     0.12
+    ]
+   ],
+   "tokens": 893
+  },
+  {
+   "label": "ΛΟΙΠΑ ΕΚΤΑΚΤΑ & ΑΝΟΡΓ.ΕΞΟΔΑ",
+   "lado": "expense",
+   "page": 29,
+   "section": "ΕΤΗΣΙΕΣ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / Της περιόδου από την 01 Ιουλίου 2023 έως την 30η Ιουνίου 2024 της ΠΑΕ ΚΗΦΙΣΙΑΣ",
+   "choice": "exceptional_items",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "exceptional_items",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 899
+  }
+ ]
+}

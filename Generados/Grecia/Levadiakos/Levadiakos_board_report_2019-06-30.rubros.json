@@ -1,0 +1,92 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_board_report_2019-06-30.md",
+ "pdf": "Clubes/Grecia/Levadiakos/Levadiakos_board_report_2019-06-30.pdf",
+ "club": "levadiakos",
+ "year": 2019,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:02:42.107Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 8,
+  "notasUsadas": []
+ },
+ "ladoConocido": 7,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    0.076361
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -2.256353
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    2.37042
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -0.141222
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -0.315689
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "revenue",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    0.000023
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 3,
+   "section": "[LOGO] / LEVADIAKOS F.C.",
+   "values": [
+    -0.001379
+   ],
+   "origen": "estado 1"
+  }
+ ]
+}

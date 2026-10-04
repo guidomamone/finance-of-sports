@@ -1,0 +1,330 @@
+{
+  "md": "Clubes/Grecia/Panathinaikos/Panathinaikos_notes_IFRS_2022-06-30.md",
+  "pdf": "Clubes/Grecia/Panathinaikos/Panathinaikos_notes_IFRS_2022-06-30.pdf",
+  "club": "panathinaikos-gr",
+  "year": 2022,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:03:21.867Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 28,
+    "notasUsadas": []
+  },
+  "ladoConocido": 26,
+  "rubros": [
+    {
+      "label": "Αποσβέσεις από δικαιώματα χρήσης περιουσιακών στοιχείων",
+      "lado": null,
+      "page": 64,
+      "section": "# • Κατάσταση Αποτελεσμάτων",
+      "values": [
+        0.466139
+      ],
+      "origen": "estado 65",
+      "glosa": "Amortización de activos por derecho de uso"
+    },
+    {
+      "label": "Τόκοι από υποχρεώσεις μισθωμάτων",
+      "lado": null,
+      "page": 64,
+      "section": "# • Κατάσταση Αποτελεσμάτων",
+      "values": [
+        0.193326
+      ],
+      "origen": "estado 65",
+      "glosa": "Intereses de pasivos por arrendamiento"
+    },
+    {
+      "label": "Έξοδα ενοικίων από βραχυπρόθεσμα συμβόλαια και περιουσιακά στοιχεία χαμηλής αξίας",
+      "lado": "expense",
+      "page": 64,
+      "section": "# • Κατάσταση Αποτελεσμάτων",
+      "values": [
+        0.601578
+      ],
+      "origen": "estado 65",
+      "glosa": "Gastos de arrendamiento de contratos a corto plazo y activos de bajo valor"
+    },
+    {
+      "label": "Έσοδα από εισιτήρια",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        1.464537
+      ],
+      "origen": "estado 14",
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Χορηγίες και διαφημίσεις",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        6.432317
+      ],
+      "origen": "estado 14",
+      "glosa": "Patrocinios y publicidad"
+    },
+    {
+      "label": "Δικαιώματα αναμετάδοσης",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        4.90313
+      ],
+      "origen": "estado 14",
+      "glosa": "Derechos de retransmisión"
+    },
+    {
+      "label": "Εμπορικά",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        3.137029
+      ],
+      "origen": "estado 14",
+      "glosa": "Ingresos comerciales"
+    },
+    {
+      "label": "Αλληλεγγύη UEFA και χρηματικά έπαθλα",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        0.4171
+      ],
+      "origen": "estado 14",
+      "glosa": "Solidaridad y premios económicos de la UEFA"
+    },
+    {
+      "label": "Λοιπά λειτουργικά έσοδα",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        2.731449
+      ],
+      "origen": "estado 14",
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Κόστος πωλήσεων / υλικών",
+      "lado": "expense",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -0.953453
+      ],
+      "origen": "estado 14",
+      "glosa": "Coste de ventas / materiales"
+    },
+    {
+      "label": "Αμοιβές εργαζομένων και λοιπές παροχές",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -22.294648
+      ],
+      "origen": "estado 14",
+      "glosa": "Gastos de personal y otras prestaciones"
+    },
+    {
+      "label": "Απομείωση και απαξίωση ενσώματων πάγιων στοιχείων του ενεργητικού",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -1.007885
+      ],
+      "origen": "estado 14",
+      "glosa": "Amortización y deterioro del inmovilizado material"
+    },
+    {
+      "label": "Απομείωση και απαξίωση άλλων άυλων στοιχείων του ενεργητικού",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -0.88989
+      ],
+      "origen": "estado 14",
+      "glosa": "Amortización y deterioro de otros activos intangibles"
+    },
+    {
+      "label": "Λοιπά λειτουργικά έξοδα",
+      "lado": "expense",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -8.590973
+      ],
+      "origen": "estado 14",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Λειτουργικά έξοδα",
+      "lado": "expense",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -33.736849
+      ],
+      "origen": "estado 14",
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "Χρηματοοικονομικά Έξοδα",
+      "lado": "expense",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        -0.26895
+      ],
+      "origen": "estado 14",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Χρηματοοικονομικά Έσοδα",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        0.165252
+      ],
+      "origen": "estado 14",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Αναβαλλόμενος Φόρος",
+      "lado": "expense",
+      "page": 19,
+      "section": "# ΕΤΗΣΙΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ ΑΤΟΜΙΚΕΣ ΚΑΙ ΕΝΟΠΟΙΗΜΕΝΕΣ ΤΗΣ 30ης ΙΟΥΝΙΟΥ 2022 / # Κατάσταση Συνολικών Εσόδων",
+      "values": [
+        0.009319
+      ],
+      "origen": "estado 14",
+      "glosa": "Impuesto diferido"
+    },
+    {
+      "label": "Κόστος κτήσης την 30/06/2021",
+      "lado": "expense",
+      "page": 54,
+      "section": "",
+      "values": [
+        2353.83
+      ],
+      "origen": "estado 34",
+      "glosa": "Coste de adquisición al 30/06/2021"
+    },
+    {
+      "label": "Μείον: Σωρευμένες αποσβέσεις",
+      "lado": "expense",
+      "page": 54,
+      "section": "",
+      "values": [
+        -1276.976
+      ],
+      "origen": "estado 34",
+      "glosa": "Menos: Amortización acumulada"
+    },
+    {
+      "label": "Προσθήκες",
+      "lado": "expense",
+      "page": 54,
+      "section": "",
+      "values": [
+        2879.615
+      ],
+      "origen": "estado 34",
+      "glosa": "Altas"
+    },
+    {
+      "label": "Πωλήσεις / διαγραφές",
+      "lado": "revenue",
+      "page": 54,
+      "section": "",
+      "values": [
+        -422.958
+      ],
+      "origen": "estado 34",
+      "glosa": "Bajas / enajenaciones"
+    },
+    {
+      "label": "Αποσβέσεις χρήσης",
+      "lado": "expense",
+      "page": 54,
+      "section": "",
+      "values": [
+        -1566.255
+      ],
+      "origen": "estado 34",
+      "glosa": "Amortización del ejercicio"
+    },
+    {
+      "label": "Αποσβέσεις πωληθέντων / διαγραφέντων",
+      "lado": "expense",
+      "page": 54,
+      "section": "",
+      "values": [
+        217.873
+      ],
+      "origen": "estado 34",
+      "glosa": "Amortización de bajas / enajenaciones"
+    },
+    {
+      "label": "Κόστος κτήσης την 30/06/2022",
+      "lado": "expense",
+      "page": 54,
+      "section": "",
+      "values": [
+        4810.487
+      ],
+      "origen": "estado 34",
+      "glosa": "Coste de adquisición al 30/06/2022"
+    },
+    {
+      "label": "Μείον: Σωρευμένες αποσβέσεις",
+      "lado": "expense",
+      "page": 54,
+      "section": "",
+      "values": [
+        -2625.358
+      ],
+      "origen": "estado 34",
+      "glosa": "Menos: Amortización acumulada"
+    },
+    {
+      "label": "Αποσβέσεις εγγραφών ποδοσφαιριστών",
+      "lado": "revenue",
+      "page": 68,
+      "section": "## 23 ΚΕΡΔΟΣ / (ΖΗΜΙΑ) ΑΠΟ ΠΩΛΗΣΗ ΑΥΛΩΝ ΠΕΡΙΟΥΣΙΑΚΩΝ ΣΤΟΙΧΕΙΩΝ – ΠΟΔΟΣΦΑΙΡΙΣΤΕΣ",
+      "values": [
+        -1648.94
+      ],
+      "origen": "estado 76",
+      "glosa": "Amortización de derechos de adquisición de futbolistas"
+    },
+    {
+      "label": "Έσοδα τόκων τραπεζών/Λοιπά χρηματοοικονομικά έσοδα",
+      "lado": "revenue",
+      "page": 68,
+      "section": "Τα χρηματοοικονομικά έσοδα του Ομίλου και της Εταιρείας αναλύονται ως εξής:",
+      "values": [
+        165.252
+      ],
+      "origen": "estado 79",
+      "glosa": "Ingresos por intereses bancarios / Otros ingresos financieros"
+    }
+  ]
+}

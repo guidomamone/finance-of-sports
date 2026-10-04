@@ -1,0 +1,90 @@
+{
+  "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.md",
+  "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2016-2015.pdf",
+  "club": "goias-br",
+  "year": 2016,
+  "generatedAt": "2026-10-03T00:24:48.543Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "RECEITA LÍQUIDA DAS ATIVIDADES (nota 17)",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        83.004966
+      ],
+      "glosa": "INGRESOS NETOS DE LAS ACTIVIDADES (nota 17)"
+    },
+    {
+      "label": "Outras receitas e despesas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 3)",
+      "values": [
+        0.018408
+      ],
+      "glosa": "Otros ingresos y gastos"
+    },
+    {
+      "label": "Despesas com futebol profissional e amador (nota 18)",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        38.209386
+      ],
+      "glosa": "Gastos de fútbol profesional y amateur (nota 18)"
+    },
+    {
+      "label": "Despesas administrativas",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.454245
+      ],
+      "glosa": "Gastos administrativos"
+    },
+    {
+      "label": "Materiais",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        0.875578
+      ],
+      "glosa": "Materiales"
+    },
+    {
+      "label": "Serviços de terceiros",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        3.284072
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Despesas tributárias",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        1.454818
+      ],
+      "glosa": "Gastos tributarios"
+    },
+    {
+      "label": "Despesas gerais (nota 19)",
+      "lado": "expense",
+      "page": 1,
+      "section": "estado",
+      "values": [
+        19.707325
+      ],
+      "glosa": "Gastos generales (nota 19)"
+    }
+  ]
+}

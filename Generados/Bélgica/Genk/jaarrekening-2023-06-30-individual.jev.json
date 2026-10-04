@@ -1,0 +1,93 @@
+{
+ "md": "Clubes/Bélgica/Genk/jaarrekening-2023-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:39.277Z",
+ "rubrosHuella": "d4b7ecd20c814745e881f012425cc674224da051",
+ "rubros": [
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 24,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 24,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "expense",
+   "page": 24,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere personeelskosten",
+   "lado": "expense",
+   "page": 24,
+   "section": "Personeelskosten",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Ouderdoms- en overlevingspensioenen",
+   "lado": "expense",
+   "page": 24,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 5,
+   "section": "Milieuverplichtingen 163 / Overige risico's en kosten 6.7 | 164/5 1.750.000 250.000 / Voorzieningen voor terug te betalen subsidies en legaten en 67 | 167 / voor schenkingen met terugnemingsrecht / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 5,
+   "section": "Milieuverplichtingen 163 / Overige risico's en kosten 6.7 | 164/5 1.750.000 250.000 / Voorzieningen voor terug te betalen subsidies en legaten en 67 | 167 / voor schenkingen met terugnemingsrecht / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Schulden op meer dan één jaar 68 |",
+   "lado": "expense",
+   "page": 5,
+   "section": "Milieuverplichtingen 163 / Overige risico's en kosten 6.7 | 164/5 1.750.000 250.000 / Voorzieningen voor terug te betalen subsidies en legaten en 67 | 167 / voor schenkingen met terugnemingsrecht / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1015
+  }
+ ]
+}

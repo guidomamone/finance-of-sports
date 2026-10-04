@@ -1,0 +1,293 @@
+{
+  "md": "Clubes/Bélgica/Sint-Truiden/jaarrekening-2024-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Sint-Truiden/jaarrekening-2024-06-30-individual.pdf",
+  "club": "sinttruiden-be",
+  "year": 2024,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:55:34.986Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 23,
+    "notasUsadas": [
+      "29"
+    ]
+  },
+  "ladoConocido": 21,
+  "rubros": [
+    {
+      "label": "Bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        27.83553
+      ],
+      "origen": "estado 39",
+      "glosa": "Ingresos de explotación"
+    },
+    {
+      "label": "- Omzet",
+      "lado": "revenue",
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        23.327109
+      ],
+      "origen": "estado 39",
+      "glosa": "- Cifra de negocios"
+    },
+    {
+      "label": "- Andere bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        4.488435
+      ],
+      "origen": "estado 39",
+      "glosa": "- Otros ingresos de explotación"
+    },
+    {
+      "label": "- Niet recurente bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.019987
+      ],
+      "origen": "estado 39",
+      "glosa": "- Ingresos de explotación no recurrentes"
+    },
+    {
+      "label": "Bedrijfskosten",
+      "lado": "expense",
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        20.999902
+      ],
+      "origen": "estado 39",
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "- Handelsgoederen, grond- en hulpstoffen",
+      "lado": null,
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.384732
+      ],
+      "origen": "estado 39",
+      "glosa": "- Mercaderías, materias primas y auxiliares"
+    },
+    {
+      "label": "- Diensten en diverse goederen",
+      "lado": null,
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        7.261045
+      ],
+      "origen": "estado 39",
+      "glosa": "- Servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+      "lado": "expense",
+      "page": 26,
+      "section": "Personeelskosten",
+      "values": [
+        9.391893
+      ],
+      "origen": "nota 29 (ancla 39)",
+      "ancla": "- Bezoldigingen, sociale lasten en pensioenen",
+      "glosa": "Remuneraciones y prestaciones sociales directas"
+    },
+    {
+      "label": "- Bezoldigingen, sociale lasten en pensioenen",
+      "lado": "expense",
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        11.703891
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "- Remuneraciones, cargas sociales y pensiones"
+    },
+    {
+      "label": "Werkgeversbijdragen voor sociale verzekeringen",
+      "lado": "expense",
+      "page": 26,
+      "section": "Personeelskosten",
+      "values": [
+        1.391898
+      ],
+      "origen": "nota 29 (ancla 39)",
+      "ancla": "- Bezoldigingen, sociale lasten en pensioenen",
+      "glosa": "Aportaciones patronales a la seguridad social"
+    },
+    {
+      "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+      "lado": "expense",
+      "page": 26,
+      "section": "Personeelskosten",
+      "values": [
+        0.095966
+      ],
+      "origen": "nota 29 (ancla 39)",
+      "ancla": "- Bezoldigingen, sociale lasten en pensioenen",
+      "glosa": "Primas patronales de seguros extralegales"
+    },
+    {
+      "label": "Andere personeelskosten",
+      "lado": "expense",
+      "page": 26,
+      "section": "Personeelskosten",
+      "values": [
+        0.824135
+      ],
+      "origen": "nota 29 (ancla 39)",
+      "ancla": "- Bezoldigingen, sociale lasten en pensioenen",
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "- Afschrijvingen en waardeverminderingen op vaste activa",
+      "lado": null,
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        1.207679
+      ],
+      "origen": "estado 39",
+      "glosa": "- Amortizaciones y correcciones de valor del inmovilizado"
+    },
+    {
+      "label": "- Anderen bedrijfskosten",
+      "lado": "expense",
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.147345
+      ],
+      "origen": "estado 39",
+      "glosa": "- Otros gastos de explotación"
+    },
+    {
+      "label": "- Niet recurente bedrijfskosten",
+      "lado": "expense",
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.29521
+      ],
+      "origen": "estado 39",
+      "glosa": "- Gastos de explotación no recurrentes"
+    },
+    {
+      "label": "- Financiële opbrengsten",
+      "lado": "revenue",
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.177883
+      ],
+      "origen": "estado 39",
+      "glosa": "- Ingresos financieros"
+    },
+    {
+      "label": "- Financiële kosten",
+      "lado": "expense",
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.739499
+      ],
+      "origen": "estado 39",
+      "glosa": "- Gastos financieros"
+    },
+    {
+      "label": "- Uitzonderlijke kosten",
+      "lado": "expense",
+      "page": 44,
+      "section": "# RESULTATENREKENING",
+      "values": [
+        0.811885
+      ],
+      "origen": "estado 39",
+      "glosa": "- Gastos extraordinarios"
+    },
+    {
+      "label": "VASTE ACTIVA 21/28",
+      "lado": "expense",
+      "page": 5,
+      "section": "JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 | 20",
+      "values": [
+        5.897593
+      ],
+      "origen": "estado 0",
+      "glosa": "ACTIVO NO CORRIENTE 21/28"
+    },
+    {
+      "label": "Immateriële vaste activa 62 |",
+      "lado": "expense",
+      "page": 5,
+      "section": "JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 | 20",
+      "values": [
+        5.095824
+      ],
+      "origen": "estado 0",
+      "glosa": "Inmovilizado intangible 62 |"
+    },
+    {
+      "label": "Materiële vaste activa 63 | 22/27",
+      "lado": "expense",
+      "page": 5,
+      "section": "JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 | 20",
+      "values": [
+        0.783533
+      ],
+      "origen": "estado 0",
+      "glosa": "Inmovilizado material 63 | 22/27"
+    },
+    {
+      "label": "Terreinen en gebouwen",
+      "lado": "expense",
+      "page": 5,
+      "section": "JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 | 20",
+      "values": [
+        0.570907
+      ],
+      "origen": "estado 0",
+      "glosa": "Terrenos y construcciones"
+    },
+    {
+      "label": "Installaties, machines en uitrusting",
+      "lado": "expense",
+      "page": 5,
+      "section": "JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 | 20",
+      "values": [
+        0.179338
+      ],
+      "origen": "estado 0",
+      "glosa": "Instalaciones, maquinaria y utillaje"
+    },
+    {
+      "label": "Meubilair en rollend materieel",
+      "lado": "expense",
+      "page": 5,
+      "section": "JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 | 20",
+      "values": [
+        0.033289
+      ],
+      "origen": "estado 0",
+      "glosa": "Mobiliario y elementos de transporte"
+    }
+  ]
+}

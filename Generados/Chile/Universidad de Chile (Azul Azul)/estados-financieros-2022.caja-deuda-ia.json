@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2022.md",
+ "generado": "2026-10-02T00:20:57.340Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Cifras expresadas en miles de pesos – M$)",
+ "caja": {
+  "lineas": [
+   138
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   188,
+   200
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La escala se toma del encabezado del estado de resultados (M$), ya que el balance solo indica 'M$'. 'Otros pasivos financieros' (corriente y no corriente) incluyen deudas reclasificadas desde entidades relacionadas y posiblemente arrendamientos."
+}

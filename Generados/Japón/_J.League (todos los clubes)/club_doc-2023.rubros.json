@@ -1,0 +1,42 @@
+{
+ "md": "Clubes/Japón/_J.League (todos los clubes)/club_doc-2023.md",
+ "pdf": "Clubes/Japón/_J.League (todos los clubes)/club_doc-2023.pdf",
+ "club": "j-league-todos-los-clubes",
+ "year": 2023,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T22:05:47.207Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 2,
+  "notasUsadas": []
+ },
+ "ladoConocido": 2,
+ "rubros": [
+  {
+   "label": "総合計 123,957 137,578 151,772 +14,194 平均",
+   "lado": "revenue",
+   "page": 7,
+   "section": "２－３．売上高の推移 / ◼ 売上高が増加したクラブは44クラブ（76%）、減少したクラブは14クラブ（24%）である。 / ◼ 増加したクラブの内訳は、Ｊ１が16クラブ、Ｊ２が19クラブ、Ｊ３が9クラブである。 / 群馬       637      717       790      +73             平均       663      728      655",
+   "values": [
+    0.001702
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "総合計 63,043 66,142 70,706 +4,564 平均 972",
+   "lado": "revenue",
+   "page": 8,
+   "section": "◼ スポンサー収入が増加したクラブは38クラブ（66%）、減少したクラブは20クラブ（34%）で / ある。 / ◼ 増加したクラブの内訳は、Ｊ１が13クラブ、Ｊ２が16クラブ、Ｊ３が9クラブである。 / 群馬       323      344       350       +6             合計     6,546   6,316   6,947    +631 / 東京Ｖ       957      560       343    ▲217              平均       364     351     347",
+   "values": [
+    0.001076
+   ],
+   "origen": "estado 1"
+  }
+ ]
+}

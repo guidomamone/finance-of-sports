@@ -1,0 +1,627 @@
+{
+ "pdf": "Clubes/España/Athletic Club/cuentas-anuales-2024-2025.pdf",
+ "md": "Clubes/España/Athletic Club/cuentas-anuales-2024-2025.md",
+ "cierre": "2025-06-30",
+ "paginas": [
+  4,
+  32,
+  33
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:49:11.374Z",
+ "escala": "unidades",
+ "filas": [
+  {
+   "pagina": 4,
+   "etiqueta": "1. Importe neto de la cifra de negocios",
+   "importe_impreso": "166.399.357,65",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "a) Ingresos deportivos",
+   "importe_impreso": "139.462.258,70",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "b) Ingresos por abonados y socios",
+   "importe_impreso": "26.937.098,95",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "2. Variación de existencias de productos terminados y en curso de fabricación",
+   "importe_impreso": "-7.074,70",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "4. Aprovisionamientos",
+   "importe_impreso": "-1.479.334,80",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "b) Otros consumos y gastos externos",
+   "importe_impreso": "-1.479.334,80",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "5. Otros ingresos de explotación",
+   "importe_impreso": "3.922.252,14",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "a) Ingresos accesorios y otros de gestión corriente",
+   "importe_impreso": "3.563.424,27",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "b) Subvenciones de explotación incorporadas al resultado del ejercicio",
+   "importe_impreso": "358.827,87",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "6. Gastos de personal",
+   "importe_impreso": "-122.072.537,53",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "a) Sueldos y salarios plantilla deportiva",
+   "importe_impreso": "-100.826.491,11",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "b) Otros Sueldos, salarios y asimilados",
+   "importe_impreso": "-16.375.180,40",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "c) Cargas sociales",
+   "importe_impreso": "-4.870.866,02",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "7. Otros gastos de explotación",
+   "importe_impreso": "-31.083.210,17",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "a) Servicios exteriores",
+   "importe_impreso": "-15.926.376,61",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "b) Tributos",
+   "importe_impreso": "-431.788,05",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "c) Desplazamientos",
+   "importe_impreso": "-4.222.024,85",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "e) Pérdidas, deterioro y variación de provisiones por operaciones comerciales",
+   "importe_impreso": "260.108,71",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "f) Otros gastos de gestión corriente",
+   "importe_impreso": "-10.763.129,37",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "8. Amortización del inmovilizado",
+   "importe_impreso": "-11.089.739,01",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "9. Imputación de subvenciones de inmovilizado no financiero y otras",
+   "importe_impreso": "157.316,05",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "11. Deterioro y resultado por enajenaciones del inmovilizado",
+   "importe_impreso": "2.391.897,85",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "b) Resultados por enajenaciones del inmovilizado intangible, material y otras",
+   "importe_impreso": "2.391.897,85",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "13. Otros Resultados",
+   "importe_impreso": "1.030.427,17",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "A.1) RESULTADO DE EXPLOTACIÓN",
+   "importe_impreso": "8.169.354,65",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "14. Ingresos financieros",
+   "importe_impreso": "584.635,25",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "b2) En terceros",
+   "importe_impreso": "584.635,25",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "15. Gastos financieros",
+   "importe_impreso": "-163.314,74",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "c) Por deudas con terceros",
+   "importe_impreso": "-163.314,74",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "17. Diferencias de cambio",
+   "importe_impreso": "129,28",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "18. Deterioro y resultado por enajenaciones de instrumentos financieros",
+   "importe_impreso": "-898.418,00",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "a) Deterioros y pérdidas",
+   "importe_impreso": "-898.418,00",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "A.2) RESULTADO FINANCIERO",
+   "importe_impreso": "-476.968,21",
+   "tipo": "resultado",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "A.3) RESULTADO ANTES DE IMPUESTOS",
+   "importe_impreso": "7.692.386,44",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "19. Impuestos sobre beneficios",
+   "importe_impreso": "-711.650,66",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "A.4) RESULTADO DEL EJERCICIO PROCEDENTE DE OPERACIONES CONTINUADAS",
+   "importe_impreso": "6.980.735,78",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 4,
+   "etiqueta": "A.5) RESULTADO DEL EJERCICIO",
+   "importe_impreso": "6.980.735,78",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Derechos arbitrajes",
+   "importe_impreso": "1.262.262,73",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "f) Otros gastos de gestión corriente"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Subvenciones a entidades",
+   "importe_impreso": "2.291.154,97",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "f) Otros gastos de gestión corriente"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "LNFP (Nota 21.4)",
+   "importe_impreso": "6.549.122,48",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "f) Otros gastos de gestión corriente"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Cuotas entidades deportivas",
+   "importe_impreso": "479.654,19",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "f) Otros gastos de gestión corriente"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Otros",
+   "importe_impreso": "180.935,00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "f) Otros gastos de gestión corriente"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "TOTAL euros",
+   "importe_impreso": "10.763.129,37",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "f) Otros gastos de gestión corriente"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Ingresos por competición",
+   "importe_impreso": "38.981.106,05",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Ingresos por socios y abonados",
+   "importe_impreso": "26.937.098,95",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Ingresos San Mames VIP Area",
+   "importe_impreso": "8.847.444,71",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Eventos y otros (*)",
+   "importe_impreso": "4.244.511,51",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Ingresos por retransmisión",
+   "importe_impreso": "72.713.424,42",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Ingresos de comercialización y publicidad",
+   "importe_impreso": "14.675.772,01",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "TOTAL euros",
+   "importe_impreso": "166.399.357,65",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Liga",
+   "importe_impreso": "3.725.442,52",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Copa",
+   "importe_impreso": "3.044.277,89",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "UEFA",
+   "importe_impreso": "31.992.810,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Otros",
+   "importe_impreso": "218.575,64",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "TOTAL euros",
+   "importe_impreso": "38.981.106,05",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Ingresos por retransmisión (*)",
+   "importe_impreso": "72.277.508,80",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "Ingresos por retransmisión resto de categorías",
+   "importe_impreso": "435.915,62",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 32,
+   "etiqueta": "TOTAL euros",
+   "importe_impreso": "72.713.424,42",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "1. Importe neto de la cifra de negocios"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "Ventas de existencias en tiendas y museo",
+   "importe_impreso": "2.999.823,74",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "a) Ingresos accesorios y otros de gestión corriente"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "Arrendamientos",
+   "importe_impreso": "467.913,50",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "a) Ingresos accesorios y otros de gestión corriente"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "Ingresos (LNFP)",
+   "importe_impreso": "95.687,03",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "a) Ingresos accesorios y otros de gestión corriente"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "TOTAL euros",
+   "importe_impreso": "3.563.424,27",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "a) Ingresos accesorios y otros de gestión corriente"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "Otros",
+   "importe_impreso": "75.363,74",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) Subvenciones de explotación incorporadas al resultado del ejercicio"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "DFB (Pasa Baloi Neska)",
+   "importe_impreso": "60.000,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) Subvenciones de explotación incorporadas al resultado del ejercicio"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "Arbitraje Femenino (Liga)",
+   "importe_impreso": "223.464,13",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) Subvenciones de explotación incorporadas al resultado del ejercicio"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "TOTAL euros",
+   "importe_impreso": "358.827,87",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "b) Subvenciones de explotación incorporadas al resultado del ejercicio"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "LNFP - Patrocinios, licencias femenino",
+   "importe_impreso": "250.000,00",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "13. Otros Resultados"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "LNFP - Gastos COVID",
+   "importe_impreso": "-263.935,73",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "13. Otros Resultados"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "RFEF - Cantera de valores",
+   "importe_impreso": "280.384,62",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "13. Otros Resultados"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "Castore logística",
+   "importe_impreso": "210.531,04",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "13. Otros Resultados"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "Otros",
+   "importe_impreso": "553.447,24",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "13. Otros Resultados"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "TOTAL euros",
+   "importe_impreso": "1.030.427,17",
+   "tipo": "subtotal",
+   "lado": "otro",
+   "detalla_a": "13. Otros Resultados"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "UEFA EUROCOPA 2024",
+   "importe_impreso": "1.253.031,92",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) Resultados por enajenaciones del inmovilizado intangible, material y otras"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "Jugadores",
+   "importe_impreso": "1.100.000,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) Resultados por enajenaciones del inmovilizado intangible, material y otras"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "Otros",
+   "importe_impreso": "38.865,93",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "b) Resultados por enajenaciones del inmovilizado intangible, material y otras"
+  },
+  {
+   "pagina": 33,
+   "etiqueta": "TOTAL euros",
+   "importe_impreso": "2.391.897,85",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "b) Resultados por enajenaciones del inmovilizado intangible, material y otras"
+  }
+ ],
+ "total_ingresos_impreso": null,
+ "total_gastos_impreso": null,
+ "resultado_impreso": "6.980.735,78",
+ "observaciones": "Escala inferida en unidades (euros con céntimos). El documento no imprime total de ingresos ni total de gastos. El renglón 7.e) Pérdidas, deterioro y variación de provisiones por operaciones comerciales figura con signo positivo (260.108,71), es decir, una reversión neta; se clasificó como gasto por su naturaleza. En 14. Ingresos financieros el subepígrafe 'b) De valores negociables y otros instrumentos financieros' no tiene importe impreso; solo b2) En terceros. Las notas de desglose de Ingresos por competición y por retransmisión detallan subpartidas de la Nota 21.4, asignadas a '1. Importe neto de la cifra de negocios'. Se omitieron filas con guion (ej. Fundación Bizkaia Bizkaialde, MediaPro 2018/2019) y la tabla de personal medio (Nota 22.1) por no ser importes monetarios. Las páginas 4 y 32/33 incluyen números de folio impresos (287, 315, 316) que no son importes."
+}

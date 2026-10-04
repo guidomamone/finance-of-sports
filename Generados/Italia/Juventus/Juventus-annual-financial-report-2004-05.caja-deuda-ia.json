@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2004-05.md",
+ "generado": "2026-10-04T17:59:30.938Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "of which € 15,325,000 collectable after the next financial year.",
+ "caja": {
+  "lineas": [
+   1680
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1715
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance oficial (L1660-L1727) está expresado en euros enteros, sin una frase explícita de escala; la evidencia citada es una nota al pie con importe en euros. El balance reclasificado usa €/000. Para la caja se tomó el total de liquid funds (L1680), que suma las líneas L1678 y L1679. 'Due to banks' es la única deuda financiera."
+}

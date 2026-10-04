@@ -1,0 +1,471 @@
+{
+ "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2021.md",
+ "generatedAt": "2026-09-30T22:48:54.883Z",
+ "rubrosHuella": "3a95d2405418f359fd328002a2916a6d9088d725",
+ "rubros": [
+  {
+   "label": "Borderó",
+   "lado": "revenue",
+   "page": 72,
+   "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2021 Y 2020.",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 72,
+   "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Participación torneos Internacionales",
+   "lado": "revenue",
+   "page": 72,
+   "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos de T.V.",
+   "lado": "revenue",
+   "page": 72,
+   "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por transferencias de pases de jugadores",
+   "lado": "revenue",
+   "page": 72,
+   "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos varios",
+   "lado": "revenue",
+   "page": 72,
+   "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2021 Y 2020.",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Gasto de administración",
+   "lado": "expense",
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2021 Y 2020.",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos financieros",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2021 Y 2020.",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos financieros",
+   "lado": "expense",
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2021 Y 2020.",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Diferencia de cambio",
+   "lado": null,
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2021 Y 2020.",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Borderó (costos directos)",
+   "lado": "expense",
+   "page": 73,
+   "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "match_organisation_expense",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneraciones",
+   "lado": "expense",
+   "page": 73,
+   "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización de pases",
+   "lado": "expense",
+   "page": 73,
+   "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de venta pases de jugadores",
+   "lado": "expense",
+   "page": 73,
+   "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos de operación",
+   "lado": "expense",
+   "page": 73,
+   "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Indemnización por término anticipado de contrato",
+   "lado": null,
+   "page": 73,
+   "section": "Al 31 de diciembre de 2021 y 2020 el detalle de los costos de venta de pases de / jugadores: / 31-12-2021          31-12-2020 / M$                  M$",
+   "choice": "player_amortisation",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros costos (1)",
+   "lado": "expense",
+   "page": 73,
+   "section": "Al 31 de diciembre de 2021 y 2020 el detalle de los costos de venta de pases de / jugadores: / 31-12-2021          31-12-2020 / M$                  M$",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Aportes programa Crece (1)",
+   "lado": null,
+   "page": 74,
+   "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "member_dues",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": null,
+   "page": 74,
+   "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Activos por derecho de uso 709.337 758.257 0 0 0",
+   "lado": "revenue",
+   "page": 78,
+   "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados / como mantenidos para la venta o como / mantenidos para distribuir a los propietarios / Activos no corrientes",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Activos intangibles distintos de la plusvalía 7.000.953 7.381.601 0 0 0",
+   "lado": "revenue",
+   "page": 78,
+   "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados / como mantenidos para la venta o como / mantenidos para distribuir a los propietarios / Activos no corrientes",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Propiedades, Planta y Equipo 2.443.538 2.708.800 0 0 0",
+   "lado": "revenue",
+   "page": 78,
+   "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados / como mantenidos para la venta o como / mantenidos para distribuir a los propietarios / Activos no corrientes",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Servicios básicos",
+   "lado": null,
+   "page": 73,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2021               31-12-2020 / Gastos de administración / M$                    M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1514
+  },
+  {
+   "label": "Mantenciones",
+   "lado": null,
+   "page": 73,
+   "section": "Arriendos                                             10.740                     0",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "stadium_other",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1317
+  },
+  {
+   "label": "Importe en libros 0 -1.249.367",
+   "lado": "revenue",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "choice": "player_sales",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización Acumulada 0 1.006.276",
+   "lado": "revenue",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "choice": "broadcasting",
+   "confidence": 0.36,
+   "desdeCache": true
+  },
+  {
+   "label": "Monto Bruto",
+   "lado": "revenue",
+   "page": 61,
+   "section": "12.- PROPIEDADES, PLANTAS Y EQUIPOS",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "lump_football_operations",
+     0.42
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 989
+  },
+  {
+   "label": "Asesorías",
+   "lado": null,
+   "page": 73,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2021               31-12-2020 / Gastos de administración / M$                    M$",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1374
+  },
+  {
+   "label": "Otros Gastos de Administración",
+   "lado": "expense",
+   "page": 73,
+   "section": "Arriendos                                             10.740                     0",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Remuneraciones Administración",
+   "lado": null,
+   "page": 73,
+   "section": "Arriendos                                             10.740                     0",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 1485
+  },
+  {
+   "label": "Depreciación acumulada",
+   "lado": "revenue",
+   "page": 61,
+   "section": "12.- PROPIEDADES, PLANTAS Y EQUIPOS",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Depreciaciones y amortizaciones",
+   "lado": null,
+   "page": 73,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2021               31-12-2020 / Gastos de administración / M$                    M$",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1527
+  },
+  {
+   "label": "Gastos por amortización",
+   "lado": "expense",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "choice": "other_amortisation",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_amortisation",
+     0.7
+    ],
+    [
+     "player_amortisation",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Activos por impuestos diferidos 8.335.513 8.418.082 391.636 358.903 0",
+   "lado": "expense",
+   "page": 78,
+   "section": "Total de activos corrientes distintos de los activos o / grupos de activos para su disposición clasificados / como mantenidos para la venta o como / mantenidos para distribuir a los propietarios / Activos no corrientes",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1082
+  }
+ ]
+}

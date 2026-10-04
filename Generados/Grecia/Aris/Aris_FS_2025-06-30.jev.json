@@ -1,0 +1,995 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_FS_2025-06-30.md",
+ "generatedAt": "2026-09-30T04:29:04.881Z",
+ "rubros": [
+  {
+   "label": "Έσοδα από εισιτήρια",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1345
+  },
+  {
+   "label": "Κόστος πωλήσεων / υλικών / μη διανεμηθέντα",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "other_expenses",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "lump_football_operations_expense",
+     0.22
+    ],
+    [
+     "match_organisation_expense",
+     0.18
+    ]
+   ],
+   "tokens": 1365
+  },
+  {
+   "label": "Έσοδα χορηγιών και διαφημίσεων",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1355
+  },
+  {
+   "label": "Έσοδα από UEFA αλληλεγγύη και χρηματικά έπαθλα",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1632
+  },
+  {
+   "label": "Σύνολο Εσόδων",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "lump_football_operations",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.76
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "Λοιπά λειτουργικά έσοδα",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1351
+  },
+  {
+   "label": "Εμπορικά έσοδα",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.91
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Έσοδα δικαιωμάτων μεταδοσεων",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1356
+  },
+  {
+   "label": "Σύνολο Δαπανών παροχών προς υπαλλήλους",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "wages_squad",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "wages_squad",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1361
+  },
+  {
+   "label": "Απόσβεση πάγιων ενσώματων στοιχείων του ενεργητικού",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1374
+  },
+  {
+   "label": "Λοιπά Λειτουργικά Έξοδα",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / ## 10. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 844
+  },
+  {
+   "label": "Σύνολο λειτουργικών εξόδων",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1354
+  },
+  {
+   "label": "Απόσβεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1380
+  },
+  {
+   "label": "Κέρδος από την διάθεση άυλων περιουσιακών στοιχείων (εγγραφές παικτών)",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "player_sales",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "player_sales",
+     0.79
+    ],
+    [
+     "other_income",
+     0.21
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1387
+  },
+  {
+   "label": "Απόσβεση λοιπών άυλων στοιχείων του ενεργητικού (εξαιρούνται οι εγγραφές ποδοσφαιριστών)",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "other_amortisation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_amortisation",
+     0.98
+    ],
+    [
+     "depreciation",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1405
+  },
+  {
+   "label": "Καθαρό αποτέλεσμα από την διακίνηση παικτών",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "player_sales",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "player_sales",
+     0.83
+    ],
+    [
+     "other_income",
+     0.15
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1355
+  },
+  {
+   "label": "Χρηματοοικονομικά έξοδα/δαπάνες",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1360
+  },
+  {
+   "label": "Καθαρές Συναλλαγματικές Διαφορές Κέρδη/(Ζημίες)",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1372
+  },
+  {
+   "label": "Καθαρό σύνολο χρηματοοικονομικών εσόδων (δαπάνες)",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "other_income",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_income",
+     0.46
+    ],
+    [
+     "lump_football_operations",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1374
+  },
+  {
+   "label": "Υπόλοιπο την 30.06.2022",
+   "lado": null,
+   "page": 26,
+   "section": "ARIS FOOTBALL CLUB / ## 5. ΥΠΟΘΗΚΕΥΜΕΝΑ ΠΕΡΙΟΥΣΙΑΚΑ ΣΤΟΙΧΕΙΑ / ## 6. ΕΠΕΝΔΥΣΕΙΣ / ## 7. ΤΡΑΠΕΖΙΚΑ ΔΑΝΕΙΑ / ## 8. ΕΚΔΟΘΕΝ ΜΕΤΟΧΙΚΟ ΚΕΦΑΛΑΙΟ ΚΑΙ ΑΠΟΘΕΜΑΤΙΚΑ",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_income",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 1382
+  },
+  {
+   "label": "Κέρδη/(ζημίες) μετά από φόρους",
+   "lado": null,
+   "page": 12,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # ΕΤΗΣΙΕΣ ΕΝΟΠΟΙΗΜΕΝΕΣ ΟΙΚΟΝΟΜΙΚΕΣ ΚΑΤΑΣΤΑΣΕΙΣ / # I. Κατάσταση Αποτελεσμάτων",
+   "choice": "other_income",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_income",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1351
+  },
+  {
+   "label": "Εισφορές μετόχων δεσμευμένες για αύξηση Μετοχικού Κεφαλαίου",
+   "lado": null,
+   "page": 26,
+   "section": "ARIS FOOTBALL CLUB / ## 5. ΥΠΟΘΗΚΕΥΜΕΝΑ ΠΕΡΙΟΥΣΙΑΚΑ ΣΤΟΙΧΕΙΑ / ## 6. ΕΠΕΝΔΥΣΕΙΣ / ## 7. ΤΡΑΠΕΖΙΚΑ ΔΑΝΕΙΑ / ## 8. ΕΚΔΟΘΕΝ ΜΕΤΟΧΙΚΟ ΚΕΦΑΛΑΙΟ ΚΑΙ ΑΠΟΘΕΜΑΤΙΚΑ",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "member_dues",
+     0.03
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1413
+  },
+  {
+   "label": "Κέρδη / (ζημιές) χρήσης",
+   "lado": null,
+   "page": 26,
+   "section": "ARIS FOOTBALL CLUB / ## 5. ΥΠΟΘΗΚΕΥΜΕΝΑ ΠΕΡΙΟΥΣΙΑΚΑ ΣΤΟΙΧΕΙΑ / ## 6. ΕΠΕΝΔΥΣΕΙΣ / ## 7. ΤΡΑΠΕΖΙΚΑ ΔΑΝΕΙΑ / ## 8. ΕΚΔΟΘΕΝ ΜΕΤΟΧΙΚΟ ΚΕΦΑΛΑΙΟ ΚΑΙ ΑΠΟΘΕΜΑΤΙΚΑ",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.64
+    ],
+    [
+     "lump_football_operations",
+     0.18000000000000002
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1382
+  },
+  {
+   "label": "Υπόλοιπο την 30.06.2023",
+   "lado": null,
+   "page": 26,
+   "section": "ARIS FOOTBALL CLUB / ## 5. ΥΠΟΘΗΚΕΥΜΕΝΑ ΠΕΡΙΟΥΣΙΑΚΑ ΣΤΟΙΧΕΙΑ / ## 6. ΕΠΕΝΔΥΣΕΙΣ / ## 7. ΤΡΑΠΕΖΙΚΑ ΔΑΝΕΙΑ / ## 8. ΕΚΔΟΘΕΝ ΜΕΤΟΧΙΚΟ ΚΕΦΑΛΑΙΟ ΚΑΙ ΑΠΟΘΕΜΑΤΙΚΑ",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1534
+  },
+  {
+   "label": "Υπόλοιπο την 30.06.2024",
+   "lado": null,
+   "page": 26,
+   "section": "ARIS FOOTBALL CLUB / ## 5. ΥΠΟΘΗΚΕΥΜΕΝΑ ΠΕΡΙΟΥΣΙΑΚΑ ΣΤΟΙΧΕΙΑ / ## 6. ΕΠΕΝΔΥΣΕΙΣ / ## 7. ΤΡΑΠΕΖΙΚΑ ΔΑΝΕΙΑ / ## 8. ΕΚΔΟΘΕΝ ΜΕΤΟΧΙΚΟ ΚΕΦΑΛΑΙΟ ΚΑΙ ΑΠΟΘΕΜΑΤΙΚΑ",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1671
+  },
+  {
+   "label": "Υπόλοιπο την 30.06.2025",
+   "lado": null,
+   "page": 26,
+   "section": "ARIS FOOTBALL CLUB / ## 5. ΥΠΟΘΗΚΕΥΜΕΝΑ ΠΕΡΙΟΥΣΙΑΚΑ ΣΤΟΙΧΕΙΑ / ## 6. ΕΠΕΝΔΥΣΕΙΣ / ## 7. ΤΡΑΠΕΖΙΚΑ ΔΑΝΕΙΑ / ## 8. ΕΚΔΟΘΕΝ ΜΕΤΟΧΙΚΟ ΚΕΦΑΛΑΙΟ ΚΑΙ ΑΠΟΘΕΜΑΤΙΚΑ",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "other_income",
+     0.29000000000000004
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1623
+  },
+  {
+   "label": "Υπόλοιπα σύμφωνα με κανονισμό Ε.Π.Ο. 30/06/2025",
+   "lado": null,
+   "page": 16,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # V. Συμφωνία Καθαρής Θέσης και Αποτελεσμάτων Βάσει Δ.Π.Χ.Α.",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "other_income",
+     0.18000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1588
+  },
+  {
+   "label": "Αύξηση Μετοχικού Κεφαλαίου",
+   "lado": null,
+   "page": 26,
+   "section": "ARIS FOOTBALL CLUB / ## 5. ΥΠΟΘΗΚΕΥΜΕΝΑ ΠΕΡΙΟΥΣΙΑΚΑ ΣΤΟΙΧΕΙΑ / ## 6. ΕΠΕΝΔΥΣΕΙΣ / ## 7. ΤΡΑΠΕΖΙΚΑ ΔΑΝΕΙΑ / ## 8. ΕΚΔΟΘΕΝ ΜΕΤΟΧΙΚΟ ΚΕΦΑΛΑΙΟ ΚΑΙ ΑΠΟΘΕΜΑΤΙΚΑ",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1386
+  },
+  {
+   "label": "Κόστη χορηγιών και διαφημίσεων",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / ## 10. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 848
+  },
+  {
+   "label": "Έξοδα τέλεσης αγώνων",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / ## 10. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 841
+  },
+  {
+   "label": "Εμπορικές δαπάνες",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / ## 10. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 839
+  },
+  {
+   "label": "Υπόλοιπα σύμφωνα με τα ΕΛΠ της 30/06/2025 Λοιπές τακτοποιητικές εγγραφές",
+   "lado": null,
+   "page": 16,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / # V. Συμφωνία Καθαρής Θέσης και Αποτελεσμάτων Βάσει Δ.Π.Χ.Α.",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "exceptional_items",
+     0.15000000000000002
+    ],
+    [
+     "other_income",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1606
+  },
+  {
+   "label": "Έξοδα εγκαταστάσεων",
+   "lado": "expense",
+   "page": 29,
+   "section": "[LOGO] / ARIS FOOTBALL CLUB / ARIS FOOTBALL CLUB / ## 10. ΛΟΙΠΑ ΛΕΙΤΟΥΡΓΙΚΑ ΕΞΟΔΑ",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 841
+  },
+  {
+   "label": "Αμοιβές Manager",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "wages_squad",
+   "confidence": 0.25,
+   "top3": [
+    [
+     "wages_squad",
+     0.32
+    ],
+    [
+     "lump_football_operations_expense",
+     0.29
+    ],
+    [
+     "other_expenses",
+     0.29
+    ]
+   ],
+   "tokens": 783
+  },
+  {
+   "label": "Αθλητρικό υλικό",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "match_organisation_expense",
+     0.03
+    ]
+   ],
+   "tokens": 789
+  },
+  {
+   "label": "Σύνολο",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 781
+  },
+  {
+   "label": "Δικαστικά έξοδα",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "exceptional_items",
+     0.09
+    ]
+   ],
+   "tokens": 789
+  },
+  {
+   "label": "Παράβολα συμμετοχής σε διοργανώσεις & επικύρωσης συμβολαίων",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 827
+  },
+  {
+   "label": "Ποσοστά προς απόδοση σε φορείς",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "match_organisation_expense",
+     0.17
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Πρόστιμα – Προσαυξήσεις ρυθμίσεων",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "admin_general_expense",
+     0.43
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ]
+   ],
+   "tokens": 806
+  },
+  {
+   "label": "Αμοιβές & παροχές τρίτων",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Ασφάλιστρα ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0.17
+    ],
+    [
+     "player_amortisation",
+     0.14
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "Λοιποί φόροι & τέλη",
+   "lado": "expense",
+   "page": 29,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 791
+  }
+ ]
+}

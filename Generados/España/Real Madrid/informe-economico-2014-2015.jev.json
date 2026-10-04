@@ -1,0 +1,409 @@
+{
+ "md": "Clubes/España/Real Madrid/informe-economico-2014-2015.md",
+ "generatedAt": "2026-09-30T22:49:14.800Z",
+ "rubrosHuella": "16c0574ab1a79d9fa1533d764944dd609c6d7a29",
+ "rubros": [
+  {
+   "label": "Pagos de intereses",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "8.2,16 119.839 101.342 Deudas a corto plazo",
+   "lado": null,
+   "page": 13,
+   "section": "16         25.888     20.036 / diferido / 15         27.130     31.923 / plazo / Deterioro, resultado por enajenaciones del inmovilizado y otros excepcionales",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización del inmovilizado",
+   "lado": null,
+   "page": 14,
+   "section": "NOTAS    EJERCICIO 2014/2015             EJERCICIO 2013/2014 / NOTAS          EJERCICIO 2014/2015            EJERCICIO 2013/2014",
+   "choice": "depreciation",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Correcciones valorativas por deterioro",
+   "lado": null,
+   "page": 14,
+   "section": "NOTAS    EJERCICIO 2014/2015             EJERCICIO 2013/2014 / NOTAS          EJERCICIO 2014/2015            EJERCICIO 2013/2014",
+   "choice": "player_impairment",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Variación de provisiones 13,",
+   "lado": null,
+   "page": 14,
+   "section": "NOTAS    EJERCICIO 2014/2015             EJERCICIO 2013/2014 / NOTAS          EJERCICIO 2014/2015            EJERCICIO 2013/2014",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos de socios y estadios",
+   "lado": "revenue",
+   "page": 15,
+   "section": "NOTA PREVIA / NOTAS     EJERCICIO 2014/2015 / CONSOLIDADO",
+   "choice": "member_dues",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos de retransmisión",
+   "lado": "revenue",
+   "page": 15,
+   "section": "NOTA PREVIA / NOTAS     EJERCICIO 2014/2015 / CONSOLIDADO",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos de marketing",
+   "lado": "revenue",
+   "page": 15,
+   "section": "NOTA PREVIA / NOTAS     EJERCICIO 2014/2015 / CONSOLIDADO",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Consumo de materias primas y otras materias consumibles",
+   "lado": null,
+   "page": 15,
+   "section": "CONSOLIDADO                                                        CONSOLIDADO",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Inmovilizado intangible Otros ingresos de explotación",
+   "lado": "revenue",
+   "page": 15,
+   "section": "CONSOLIDADO                                                        CONSOLIDADO",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Miles € Cobros de intereses",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1444
+  },
+  {
+   "label": "4 365.263 316.116 Fondos propios",
+   "lado": null,
+   "page": 15,
+   "section": "CONSOLIDADO                                                        CONSOLIDADO",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1409
+  },
+  {
+   "label": "anual terminado el 30 de junio de",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1340
+  },
+  {
+   "label": "Jugadores y técnicos 1º equipo Fútbol 145.130 22.556 6.703 31.660 444",
+   "lado": "expense",
+   "page": 49,
+   "section": "OTRAS                                                                        GASTOS / CARGAS                                                                      PERSONAL / SOCIALES",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Importe plantilla no inscribible LNFP 26.416 2.101 853 -",
+   "lado": "expense",
+   "page": 49,
+   "section": "OTRAS                                                                        GASTOS / CARGAS                                                                      PERSONAL / SOCIALES",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadores y técnicos 2º equipo Fútbol 5.081 588 876 424 383 -",
+   "lado": "expense",
+   "page": 49,
+   "section": "OTRAS                                                                        GASTOS / CARGAS                                                                      PERSONAL / SOCIALES",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadores y técnicos categorías GASTOS TOTALES PLANTILLA DEPORTIVA",
+   "lado": "expense",
+   "page": 49,
+   "section": "OTRAS                                                                        GASTOS / CARGAS                                                                      PERSONAL / SOCIALES",
+   "choice": "wages_squad",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisiones a largo plazo 13.1 21.240 13.807 Otros gastos de gestión corriente",
+   "lado": "expense",
+   "page": 13,
+   "section": "diferido                                                     y legados recibidos / Otros gastos de explotación",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "al ejercicio anual terminado el 30 de junio de 2015 y al ejercicio Otros activos y pasivos no corrientes",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.6900000000000001
+    ],
+    [
+     "other_income",
+     0.21000000000000002
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1460
+  },
+  {
+   "label": "ACTIVO NO CORRIENTE 794.274 706.380 PATRIMONIO NETO",
+   "lado": null,
+   "page": 15,
+   "section": "CONSOLIDADO                                                        CONSOLIDADO",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "Otros flujos de efectivo de las actividades de explotación",
+   "lado": null,
+   "page": 14,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1504
+  },
+  {
+   "label": "dientes estados consolidados del ejercicio 2013/2014. Ingresos de amistosos y competiciones",
+   "lado": "revenue",
+   "page": 15,
+   "section": "NOTA PREVIA / NOTAS     EJERCICIO 2014/2015 / CONSOLIDADO",
+   "choice": "competition_bonus",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "competition_bonus",
+     0.93
+    ],
+    [
+     "matchday_competition",
+     0.04
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1114
+  },
+  {
+   "label": "Importe plantilla inscribible LNFP",
+   "lado": "expense",
+   "page": 49,
+   "section": "OTRAS                                                                        GASTOS / CARGAS                                                                      PERSONAL / SOCIALES",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Deudas a largo plazo",
+   "lado": "expense",
+   "page": 13,
+   "section": "diferido                                                     y legados recibidos / Otros gastos de explotación",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "ACTIVO CORRIENTE 237.416 266.047 PASIVO CORRIENTE",
+   "lado": null,
+   "page": 15,
+   "section": "financieros / Pasivos por impuesto                                                Ingresos financieros / 16         25.888         20.036 / Periodificaciones a largo / 15         27.130         31.923",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1564
+  },
+  {
+   "label": "Existencias 9 2.442 2.402 Provisiones a corto plazo",
+   "lado": null,
+   "page": 15,
+   "section": "financieros / Pasivos por impuesto                                                Ingresos financieros / 16         25.888         20.036 / Periodificaciones a largo / 15         27.130         31.923",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.15000000000000002
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1579
+  }
+ ]
+}

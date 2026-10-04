@@ -1,0 +1,1168 @@
+{
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2022.md",
+ "pdf": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2022.pdf",
+ "club": "atletico-bucaramanga",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:57:59.047Z",
+ "tieOuts": {
+  "cierran": 15,
+  "noCierran": 19
+ },
+ "warnings": [
+  "8 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "11 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 114,
+  "notasUsadas": [
+   "33"
+  ]
+ },
+ "ladoConocido": 7,
+ "rubros": [
+  {
+   "label": "Salario integral",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    3.001073
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Sueldos Ordinarios",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.83909
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Auxilio de transporte",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.018021
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Auxilios de vivienda y sostenimiento",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.475806
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Incapacidades",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.044727
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Cesantías",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.080072
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Intereses de cesantías",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.007571
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Prima de servicios",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.078701
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Vacaciones",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.153107
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Dotación y suministro a trabajadores",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.022949
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Indemnizaciones laborales",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.110038
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Aportes a administradoras de riesgos profesionales",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.063834
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Aportes a entidades promotoras de salud EPS",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.07592
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Aportes a fondo de pensiones y cesantías",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.385467
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Aportes cajas de compensación",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.126093
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Aportes ICBF",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.021912
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Aportes SENA",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.015033
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Medicamentos y botiquín",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "values": [
+    0.067578
+   ],
+   "origen": "estado 33"
+  },
+  {
+   "label": "Transporte Fletes y Acarreos",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.072388
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Publicidad",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.008554
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Arbitraje",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.277745
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Logística",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.180896
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Refrigerios",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.040659
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Alquiler de cancha",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.261145
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Boletería",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.003496
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Ambulancia",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.00264
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Bomberos",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.048244
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Cruz roja",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.0316
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Medicina deportiva",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.013615
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Pasajes Dimayor",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.201914
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Multas Dimayor equipo masculino",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.119757
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Multas Dimayor equipo femenino",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.076083
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Otros servicios Sub",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.02372
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Otros",
+   "lado": null,
+   "page": 28,
+   "section": "Correo, portes y telegramas                                    364",
+   "values": [
+    0.157015
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Honorarios",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "values": [
+    0.057097
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Impuestos (b)",
+   "lado": "expense",
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "values": [
+    0.402683
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "values": [
+    0.212656
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Contribuciones y afiliaciones",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "values": [
+    0.003482
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Seguros",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "values": [
+    0.012042
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Servicios (c)",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "values": [
+    1.556324
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Gastos legales",
+   "lado": "expense",
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "values": [
+    0.00617
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Mantenimiento y reparación",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "values": [
+    0.010788
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Gastos de viaje (d)",
+   "lado": "expense",
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "values": [
+    0.223817
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "Diversos (e)",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "values": [
+    2.2253
+   ],
+   "origen": "estado 32"
+  },
+  {
+   "label": "WILLIAM FRANCISCO CONDE GORDILLO 80.000.000 Ordinario Laboral 70%",
+   "lado": null,
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "values": [
+    24
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "ALVARO SUAREZ VANEGAS 60.000.000 Ordinario Laboral 20%",
+   "lado": null,
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "values": [
+    1.858
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "VICTOR HUGO ESPINOSA PATIÑO 30.000.000 Ordinario Laboral 15%",
+   "lado": null,
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "values": [
+    25.5
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "ANTONIO ALEJANDRO OTERO OREJUELA 500.000.000 Ordinario Laboral 15%",
+   "lado": null,
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "values": [
+    425
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "JUAN FERNANDO CASTRO ALEGRIA 60.000.000 Ordinario Laboral 70%",
+   "lado": null,
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "values": [
+    42
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "WILLIAM RUIZ GALVIS 30.000.000 Ordinario Laboral 60%",
+   "lado": null,
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "values": [
+    12
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "HUMBERTO DE JESUS SIERRA 120.000.000 Ordinario Laboral 70%",
+   "lado": null,
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "values": [
+    36
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "OSCAR PANESSO VALENCIA 50.000.000 Ordinario Laboral 70%",
+   "lado": null,
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "values": [
+    15
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "REAL CARACOLI 67.059.948 Ordinario Laboral 15%",
+   "lado": null,
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "values": [
+    25.5
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "LUIS FERNANDO SUAREZ GUZMAN 423.985.263 Ordinario Laboral 50%",
+   "lado": null,
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "values": [
+    211.993
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Elementos de aseo y cafetería",
+   "lado": null,
+   "page": 29,
+   "section": "(e) Diversos / Concepto                         2022",
+   "values": [
+    0.028121
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Combustibles y lubricantes",
+   "lado": null,
+   "page": 29,
+   "section": "(e) Diversos / Concepto                         2022",
+   "values": [
+    0.007402
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Taxis y buses",
+   "lado": "expense",
+   "page": 29,
+   "section": "(e) Diversos / Concepto                         2022",
+   "values": [
+    0.004178
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Casino y Restaurantes",
+   "lado": null,
+   "page": 29,
+   "section": "(e) Diversos / Concepto                         2022",
+   "values": [
+    0.062916
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Derechos económicos",
+   "lado": null,
+   "page": 29,
+   "section": "(e) Diversos / Concepto                         2022",
+   "values": [
+    1.590204
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Derechos de imagen",
+   "lado": null,
+   "page": 29,
+   "section": "(e) Diversos / Concepto                         2022",
+   "values": [
+    0.439438
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Otros",
+   "lado": null,
+   "page": 29,
+   "section": "(e) Diversos / Concepto                         2022",
+   "values": [
+    0.08912
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Terrenos",
+   "lado": null,
+   "page": 20,
+   "section": "NOTA 4 – PROPIEDADES, PLANTA Y EQUIPO.",
+   "values": [
+    24.96
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Construcciones y edificaciones",
+   "lado": null,
+   "page": 20,
+   "section": "NOTA 4 – PROPIEDADES, PLANTA Y EQUIPO.",
+   "values": [
+    194.593
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Muebles y enseres",
+   "lado": null,
+   "page": 20,
+   "section": "NOTA 4 – PROPIEDADES, PLANTA Y EQUIPO.",
+   "values": [
+    98.234
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Equipo de computación y comunicación",
+   "lado": null,
+   "page": 20,
+   "section": "NOTA 4 – PROPIEDADES, PLANTA Y EQUIPO.",
+   "values": [
+    16.18
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Equipo médico instrumental",
+   "lado": null,
+   "page": 20,
+   "section": "NOTA 4 – PROPIEDADES, PLANTA Y EQUIPO.",
+   "values": [
+    11.979
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Buses y busetas",
+   "lado": null,
+   "page": 20,
+   "section": "NOTA 4 – PROPIEDADES, PLANTA Y EQUIPO.",
+   "values": [
+    685
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Depreciación acumulada",
+   "lado": null,
+   "page": 20,
+   "section": "NOTA 4 – PROPIEDADES, PLANTA Y EQUIPO.",
+   "values": [
+    -349.165
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Taquilla venta de boletería",
+   "lado": null,
+   "page": 25,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    3840.672
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Venta y préstamo de derechos deportivos",
+   "lado": null,
+   "page": 25,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    336
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "lado": null,
+   "page": 25,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    261.204
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Derechos de televisión",
+   "lado": null,
+   "page": 25,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    4601.728
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Patrocinios",
+   "lado": null,
+   "page": 25,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    2588.55
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Actividades conexas",
+   "lado": null,
+   "page": 25,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "values": [
+    950.823
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Sueldos $ 177.223 $",
+   "lado": null,
+   "page": 22,
+   "section": "NOTA 8 – OTROS PASIVOS NO FINANCIEROS CORRIENTES.",
+   "values": [
+    137.231
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Liquidaciones $ - $",
+   "lado": null,
+   "page": 22,
+   "section": "NOTA 8 – OTROS PASIVOS NO FINANCIEROS CORRIENTES.",
+   "values": [
+    72.469
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "cesantías $ 34.244 $",
+   "lado": null,
+   "page": 22,
+   "section": "NOTA 8 – OTROS PASIVOS NO FINANCIEROS CORRIENTES.",
+   "values": [
+    16.852
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Intereses a las cesantías $ 3.716 $",
+   "lado": null,
+   "page": 22,
+   "section": "NOTA 8 – OTROS PASIVOS NO FINANCIEROS CORRIENTES.",
+   "values": [
+    1.328
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Vacaciones $ 978 $",
+   "lado": null,
+   "page": 22,
+   "section": "NOTA 8 – OTROS PASIVOS NO FINANCIEROS CORRIENTES.",
+   "values": [
+    51.796
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Retenciones y aportes de nómina (d)",
+   "lado": null,
+   "page": 21,
+   "section": "Retención por industria y comercio por pagar                     313                   576",
+   "values": [
+    23681
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Fondos de Pensiones y cesantías",
+   "lado": null,
+   "page": 21,
+   "section": "Retención por industria y comercio por pagar                     313                   576",
+   "values": [
+    28044
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Iva por pagar",
+   "lado": null,
+   "page": 21,
+   "section": "Retención por industria y comercio por pagar                     313                   576",
+   "values": [
+    31078
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Ica por pagar",
+   "lado": null,
+   "page": 21,
+   "section": "Retención por industria y comercio por pagar                     313                   576",
+   "values": [
+    2146
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Aportes entidades EPS",
+   "lado": null,
+   "page": 22,
+   "section": "(d) Retenciones y aportes de nomina / Concepto                             2022",
+   "values": [
+    7.609
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Aportes entidades ARL",
+   "lado": null,
+   "page": 22,
+   "section": "(d) Retenciones y aportes de nomina / Concepto                             2022",
+   "values": [
+    2.207
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Aportes ICBF sena, cajas de compensación",
+   "lado": null,
+   "page": 22,
+   "section": "(d) Retenciones y aportes de nomina / Concepto                             2022",
+   "values": [
+    6.866
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Aportes a fondos de construcción",
+   "lado": null,
+   "page": 22,
+   "section": "(d) Retenciones y aportes de nomina / Concepto                             2022",
+   "values": [
+    7
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Capital emitido",
+   "lado": null,
+   "page": 24,
+   "section": "NOTA 12 – PATRIMONIO",
+   "values": [
+    1000
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Reserva legal",
+   "lado": null,
+   "page": 24,
+   "section": "NOTA 12 – PATRIMONIO",
+   "values": [
+    203.974
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Retenciones por renta practicadas",
+   "lado": null,
+   "page": 19,
+   "section": "(a) Activos por impuestos corrientes / Concepto                        2022",
+   "values": [
+    236813
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Sobrantes de Renta 2021",
+   "lado": null,
+   "page": 19,
+   "section": "(a) Activos por impuestos corrientes / Concepto                        2022",
+   "values": [
+    216575
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Autor retenciones por renta",
+   "lado": null,
+   "page": 19,
+   "section": "(a) Activos por impuestos corrientes / Concepto                        2022",
+   "values": [
+    97811
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Nacionales",
+   "lado": null,
+   "page": 21,
+   "section": "6 – ACTIVOS POR IMPUESTOS DIFERIDOS / NOTA 7 – CUENTAS POR PAGAR COMERCIALES Y OTRAS CUENTAS POR PAGAR",
+   "values": [
+    2448
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Cuentas comerciales corrientes (a)",
+   "lado": null,
+   "page": 21,
+   "section": "6 – ACTIVOS POR IMPUESTOS DIFERIDOS / NOTA 7 – CUENTAS POR PAGAR COMERCIALES Y OTRAS CUENTAS POR PAGAR",
+   "values": [
+    300000
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Costos y gastos por pagar (b)",
+   "lado": "expense",
+   "page": 21,
+   "section": "6 – ACTIVOS POR IMPUESTOS DIFERIDOS / NOTA 7 – CUENTAS POR PAGAR COMERCIALES Y OTRAS CUENTAS POR PAGAR",
+   "values": [
+    335163
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Retenciones en la fuente por pagar (c)",
+   "lado": null,
+   "page": 21,
+   "section": "6 – ACTIVOS POR IMPUESTOS DIFERIDOS / NOTA 7 – CUENTAS POR PAGAR COMERCIALES Y OTRAS CUENTAS POR PAGAR",
+   "values": [
+    26317
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Derechos económicos por pagar",
+   "lado": null,
+   "page": 22,
+   "section": "de 2022 y debe completarse en un plazo máximo de 3 años los cuales se cumplirán el 31 de / marzo de 2025. / (b) Costos y gastos por pagar / Concepto                         2022",
+   "values": [
+    22.834
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Arrendamientos por pagar",
+   "lado": null,
+   "page": 22,
+   "section": "de 2022 y debe completarse en un plazo máximo de 3 años los cuales se cumplirán el 31 de / marzo de 2025. / (b) Costos y gastos por pagar / Concepto                         2022",
+   "values": [
+    116.207
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Otros",
+   "lado": null,
+   "page": 22,
+   "section": "de 2022 y debe completarse en un plazo máximo de 3 años los cuales se cumplirán el 31 de / marzo de 2025. / (b) Costos y gastos por pagar / Concepto                         2022",
+   "values": [
+    519.417
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Salarios",
+   "lado": null,
+   "page": 26,
+   "section": "(a) Gastos de personal / Concepto                                 2022",
+   "values": [
+    0.097976
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Auxilio de transporte",
+   "lado": null,
+   "page": 26,
+   "section": "(a) Gastos de personal / Concepto                                 2022",
+   "values": [
+    0.005243
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Otros Auxilios",
+   "lado": null,
+   "page": 26,
+   "section": "(a) Gastos de personal / Concepto                                 2022",
+   "values": [
+    0.017438
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Cesantías",
+   "lado": null,
+   "page": 26,
+   "section": "(a) Gastos de personal / Concepto                                 2022",
+   "values": [
+    0.008193
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "Anticipos a Proveedores (1)",
+   "lado": null,
+   "page": 18,
+   "section": "inmediatamente en resultados una pérdida por deterioro del valor. / (a) Anticipos y avances. / Concepto                       2022",
+   "values": [
+    51727
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Anticipos a empleados",
+   "lado": null,
+   "page": 18,
+   "section": "inmediatamente en resultados una pérdida por deterioro del valor. / (a) Anticipos y avances. / Concepto                       2022",
+   "values": [
+    126588
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "A accionistas (2)",
+   "lado": null,
+   "page": 19,
+   "section": "Este rubro registra los valores a favor de la sociedad y a cargo de terceras personas en / desarrollo de su objeto social. / (b) Otros / Concepto                     2022",
+   "values": [
+    1294605
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Otros (3)",
+   "lado": null,
+   "page": 19,
+   "section": "Este rubro registra los valores a favor de la sociedad y a cargo de terceras personas en / desarrollo de su objeto social. / (b) Otros / Concepto                     2022",
+   "values": [
+    309570
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "FRANCISCO JAVIER MEZA PALMA",
+   "lado": null,
+   "page": 21,
+   "section": "a) Derechos económicos / Concepto                           2022",
+   "values": [
+    93246
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "JHORD BAYRON GARCES MORENO",
+   "lado": null,
+   "page": 21,
+   "section": "a) Derechos económicos / Concepto                           2022",
+   "values": [
+    97000
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Acueducto y alcantarillado.",
+   "lado": null,
+   "page": 28,
+   "section": "(c) Servicios / Concepto                           2022 / Aseo y vigilancia                                           22.420 / Asistencia técnica                                             280",
+   "values": [
+    0.001718
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Energía eléctrica",
+   "lado": null,
+   "page": 28,
+   "section": "(c) Servicios / Concepto                           2022 / Aseo y vigilancia                                           22.420 / Asistencia técnica                                             280",
+   "values": [
+    0.001523
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Teléfono Fijo e Internet",
+   "lado": null,
+   "page": 28,
+   "section": "(c) Servicios / Concepto                           2022 / Aseo y vigilancia                                           22.420 / Asistencia técnica                                             280",
+   "values": [
+    0.001547
+   ],
+   "origen": "estado 35"
+  },
+  {
+   "label": "Impuesto Diferido",
+   "lado": "expense",
+   "page": 30,
+   "section": "NOTA 20 – IMPUESTO DE RENTA Y COMPLEMENTARIOS",
+   "values": [
+    -0.498998
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Impuesto renta",
+   "lado": "expense",
+   "page": 30,
+   "section": "NOTA 20 – IMPUESTO DE RENTA Y COMPLEMENTARIOS",
+   "values": [
+    0.582587
+   ],
+   "origen": "estado 43"
+  }
+ ]
+}

@@ -1,0 +1,312 @@
+{
+  "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-associacao-2020-2021.md",
+  "pdf": "Clubes/Brasil/Bahia/demonstracoes-financeiras-associacao-2020-2021.pdf",
+  "club": "bahia-br",
+  "year": 2021,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:51:37.934Z",
+  "tieOuts": {
+    "cierran": 2,
+    "noCierran": 13
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "11 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 26,
+    "notasUsadas": []
+  },
+  "ladoConocido": 24,
+  "rubros": [
+    {
+      "label": "Receita líquida das atividades",
+      "lado": "revenue",
+      "page": 8,
+      "section": "Esporte Clube Bahia / Demonstração dos resultados / para os exercícios findos em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de Reais) / Nota            2021         2020",
+      "values": [
+        193.849
+      ],
+      "origen": "estado 4",
+      "glosa": "Ingresos netos de las actividades"
+    },
+    {
+      "label": "Custo das atividades",
+      "lado": "expense",
+      "page": 8,
+      "section": "Esporte Clube Bahia / Demonstração dos resultados / para os exercícios findos em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de Reais) / Nota            2021         2020",
+      "values": [
+        -158.76
+      ],
+      "origen": "estado 4",
+      "glosa": "Costes de las actividades"
+    },
+    {
+      "label": "Depreciação e amortização",
+      "lado": null,
+      "page": 8,
+      "section": "",
+      "values": [
+        -1.599
+      ],
+      "origen": "estado 6",
+      "glosa": "Depreciación y amortización"
+    },
+    {
+      "label": "Perda na recuperação de créditos de sócios",
+      "lado": null,
+      "page": 8,
+      "section": "",
+      "values": [
+        -2.808
+      ],
+      "origen": "estado 6",
+      "glosa": "Pérdida en la recuperación de créditos de socios"
+    },
+    {
+      "label": "Receita de transmissão de imagem e luvas (a)",
+      "lado": "revenue",
+      "page": 42,
+      "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+      "values": [
+        123.507
+      ],
+      "origen": "estado 42",
+      "glosa": "Ingresos por derechos de retransmisión y primas de firma (a)"
+    },
+    {
+      "label": "Receitas de acesso garantido, bilheteria e premiações",
+      "lado": "revenue",
+      "page": 42,
+      "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+      "values": [
+        2.621
+      ],
+      "origen": "estado 42",
+      "glosa": "Ingresos por abonos, taquilla y premios"
+    },
+    {
+      "label": "Receita de patrocínio, publicidade e marketing",
+      "lado": "revenue",
+      "page": 42,
+      "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+      "values": [
+        18.225
+      ],
+      "origen": "estado 42",
+      "glosa": "Ingresos por patrocinio, publicidad y marketing"
+    },
+    {
+      "label": "Sócios patrimonial e contribuinte",
+      "lado": "revenue",
+      "page": 42,
+      "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+      "values": [
+        20.33
+      ],
+      "origen": "estado 42",
+      "glosa": "Socios patrimoniales y contribuyentes"
+    },
+    {
+      "label": "Loterias",
+      "lado": "revenue",
+      "page": 42,
+      "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+      "values": [
+        1.906
+      ],
+      "origen": "estado 42",
+      "glosa": "Loterías"
+    },
+    {
+      "label": "Receitas com negociação de direitos contratuais (b)",
+      "lado": "revenue",
+      "page": 42,
+      "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+      "values": [
+        35.441
+      ],
+      "origen": "estado 42",
+      "glosa": "Ingresos por negociación de derechos contractuales (b)"
+    },
+    {
+      "label": "Receitas com vendas da filial Loja Esquadrão",
+      "lado": "revenue",
+      "page": 42,
+      "section": "Notas explicativas às demonstrações financeiras referentes aos exercícios findos / em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 18.     Receita líquida das atividades / 2021                   2020",
+      "values": [
+        5.921
+      ],
+      "origen": "estado 42",
+      "glosa": "Ingresos por ventas de la filial Tienda Esquadrão"
+    },
+    {
+      "label": "Luvas - Direito de transmissão TV fechada/PPV",
+      "lado": "revenue",
+      "page": 38,
+      "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 15.     Receitas a apropriar / 2021                  2020 / Receitas a apropriar",
+      "values": [
+        6.7
+      ],
+      "origen": "estado 38",
+      "glosa": "Primas de firma - Derechos de retransmisión TV de pago/PPV"
+    },
+    {
+      "label": "Luvas - Direito de transmissão TV aberta",
+      "lado": "revenue",
+      "page": 38,
+      "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 15.     Receitas a apropriar / 2021                  2020 / Receitas a apropriar",
+      "values": [
+        3.3
+      ],
+      "origen": "estado 38",
+      "glosa": "Primas de firma - Derechos de retransmisión TV en abierto"
+    },
+    {
+      "label": "Licenciamento / Direitos individuais",
+      "lado": "revenue",
+      "page": 38,
+      "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 15.     Receitas a apropriar / 2021                  2020 / Receitas a apropriar",
+      "values": [
+        6.8
+      ],
+      "origen": "estado 38",
+      "glosa": "Licencias / Derechos individuales"
+    },
+    {
+      "label": "Direito de transmissão -",
+      "lado": "revenue",
+      "page": 38,
+      "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 15.     Receitas a apropriar / 2021                  2020 / Receitas a apropriar",
+      "values": [
+        5.814
+      ],
+      "origen": "estado 38",
+      "glosa": "Derechos de retransmisión -"
+    },
+    {
+      "label": "Patrocínio",
+      "lado": "revenue",
+      "page": 38,
+      "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 15.     Receitas a apropriar / 2021                  2020 / Receitas a apropriar",
+      "values": [
+        1.936
+      ],
+      "origen": "estado 38",
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "CBF - Confederação Brasileira de Futebol",
+      "lado": "revenue",
+      "page": 38,
+      "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 15.     Receitas a apropriar / 2021                  2020 / Receitas a apropriar",
+      "values": [
+        3.3
+      ],
+      "origen": "estado 38",
+      "glosa": "CBF - Confederación Brasileña de Fútbol"
+    },
+    {
+      "label": "Saldos em 1º/01/2020 35.027 2.455 538 967 8.111 150 -",
+      "lado": "expense",
+      "page": 30,
+      "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 7.     Imobilizado / Máquinas e         Equipamentos      Móveis e / Custo",
+      "values": [
+        47.248
+      ],
+      "origen": "estado 22",
+      "glosa": "Saldos al 1º/01/2020 35.027 2.455 538 967 8.111 150 -"
+    },
+    {
+      "label": "Adições - 1.123 87 1.065 2.624 -",
+      "lado": "expense",
+      "page": 30,
+      "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 7.     Imobilizado / Máquinas e         Equipamentos      Móveis e / Custo",
+      "values": [
+        4.916
+      ],
+      "origen": "estado 22",
+      "glosa": "Adiciones - 1.123 87 1.065 2.624 -"
+    },
+    {
+      "label": "Baixas (b) (23.240) - - - - - -",
+      "lado": "expense",
+      "page": 30,
+      "section": "em 31 de dezembro de 2021 e de 2020 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 7.     Imobilizado / Máquinas e         Equipamentos      Móveis e / Custo",
+      "values": [
+        -23.24
+      ],
+      "origen": "estado 22",
+      "glosa": "Bajas (b) (23.240) - - - - - -"
+    },
+    {
+      "label": "Custos com negociação e formação de atletas (a)",
+      "lado": "expense",
+      "page": 43,
+      "section": "19.     Custos das atividades / 2021                  2020",
+      "values": [
+        -41.063
+      ],
+      "origen": "estado 46",
+      "glosa": "Costes de negociación y formación de deportistas (a)"
+    },
+    {
+      "label": "Viagens",
+      "lado": "expense",
+      "page": 43,
+      "section": "19.     Custos das atividades / 2021                  2020",
+      "values": [
+        -8.419
+      ],
+      "origen": "estado 46",
+      "glosa": "Viajes"
+    },
+    {
+      "label": "Outros",
+      "lado": "expense",
+      "page": 43,
+      "section": "19.     Custos das atividades / 2021                  2020",
+      "values": [
+        -2.221
+      ],
+      "origen": "estado 46",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Informática",
+      "lado": "expense",
+      "page": 44,
+      "section": "20.     Despesas gerais e administrativas / 2021                    2020 / (8.248)                (5.909) / 21.     Despesas de serviços / 2021                    2020",
+      "values": [
+        -1526
+      ],
+      "origen": "estado 47",
+      "glosa": "Informática"
+    },
+    {
+      "label": "Marketing",
+      "lado": "expense",
+      "page": 44,
+      "section": "20.     Despesas gerais e administrativas / 2021                    2020 / (8.248)                (5.909) / 21.     Despesas de serviços / 2021                    2020",
+      "values": [
+        -1594
+      ],
+      "origen": "estado 47",
+      "glosa": "Marketing"
+    },
+    {
+      "label": "Jurídico",
+      "lado": "expense",
+      "page": 44,
+      "section": "20.     Despesas gerais e administrativas / 2021                    2020 / (8.248)                (5.909) / 21.     Despesas de serviços / 2021                    2020",
+      "values": [
+        -2192
+      ],
+      "origen": "estado 47",
+      "glosa": "Jurídico"
+    }
+  ]
+}

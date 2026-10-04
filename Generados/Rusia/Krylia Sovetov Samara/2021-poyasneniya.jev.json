@@ -1,0 +1,282 @@
+{
+ "md": "Clubes/Rusia/Krylia Sovetov Samara/2021-poyasneniya.md",
+ "generatedAt": "2026-09-30T15:14:18.237Z",
+ "rubros": [
+  {
+   "label": "Прочие доходы",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Доходы от выбытия игроков",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1091
+  },
+  {
+   "label": "Прощение долга",
+   "lado": null,
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1307
+  },
+  {
+   "label": "Безвозмездные поступления",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Продажа билетов и сезонных билетов",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "choice": "matchday_competition",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "matchday_competition",
+     0.9
+    ],
+    [
+     "season_tickets",
+     0.08
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1120
+  },
+  {
+   "label": "Выплаты УЭФА",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "choice": "competition_bonus",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "competition_bonus",
+     0.64
+    ],
+    [
+     "broadcasting",
+     0.19
+    ],
+    [
+     "other_income",
+     0.16
+    ]
+   ],
+   "tokens": 1116
+  },
+  {
+   "label": "Реализация прав на трансляцию",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Реклама",
+   "lado": "revenue",
+   "page": 10,
+   "section": "## 2. Таблица «Отчет о Прибылях и Убытках»:",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Проценты по займам и кредитам",
+   "lado": "expense",
+   "page": 10,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Курсовые разницы",
+   "lado": "expense",
+   "page": 10,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 908
+  },
+  {
+   "label": "Прочие",
+   "lado": "expense",
+   "page": 10,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 970
+  },
+  {
+   "label": "Себестоимость проданных товаров и услуг",
+   "lado": "expense",
+   "page": 10,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1034
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+  "club": "junior-co",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Junior de Barranquilla/dictamen-revisor-fiscal-2025.md",
+  "generatedAt": "2026-09-30T22:43:20.552Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 0,
+  "relevantTableCount": 0,
+  "tables": [],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "co",
+    "query": "Junior de Barranquilla",
+    "matches": [
+      {
+        "leagueId": "co-primeraA",
+        "year": "2025",
+        "matchedName": "Junior",
+        "wikipediaPage": "2025 Liga DIMAYOR"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [
+    {
+      "page": 5,
+      "line": "a los afiliados y a sus ingresos base de cotización, ha sido tomada de"
+    }
+  ],
+  "warnings": []
+}

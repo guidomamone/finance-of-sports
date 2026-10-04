@@ -1,0 +1,72 @@
+{
+ "md": "Clubes/Argentina/Gimnasia y Esgrima LP/presupuesto-2023-2024.md",
+ "club": "gimnasia-y-esgrima-lp",
+ "year": 2024,
+ "generatedAt": "2026-09-30T15:16:20.735Z",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.010704,
+ "rubros": [
+  {
+   "label": "1.- RECURSOS POR VENTA DE ENTRADAS $ 6.996.566,64 $ 5.380.304,32 $ 4.803.443,32 $ 1.650.000,00 $ 3.850.000,00 $ - $ - $ 5.480.000,00 $ 5.940.000,00 $ 7.460.000,00 $ 9.331.000,00 $ 4.554.000,00 $",
+   "lado": null,
+   "section": "CLUB DE GIMNASIA Y ESGRIMA LA PLATA / RECURSOS DE FUNCIONAMIENTO",
+   "page": 2,
+   "pendiente": false,
+   "ya": "matchday_competition",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "matchday_competition",
+   "confianza": 1
+  },
+  {
+   "label": "a. COMPETICIONES OFICIALES L.P.F. $ 6.996.566,64 $ 5.380.304,32 $ 4.803.443,32 $ 1.650.000,00 $ 3.850.000,00 $ - $ - $ 5.480.000,00 $ 5.940.000,00 $ 7.460.000,00 $ 9.331.000,00 $ 4.554.000,00 $",
+   "lado": null,
+   "section": "CLUB DE GIMNASIA Y ESGRIMA LA PLATA / RECURSOS DE FUNCIONAMIENTO",
+   "page": 2,
+   "pendiente": true,
+   "jev": "competition_bonus",
+   "jevConf": 0.41,
+   "escalon": 2,
+   "categoria": "matchday_competition",
+   "confianza": 0.88,
+   "motivo": "Desglose único de 'Recursos por venta de entradas' ya asignado a matchday_competition."
+  },
+  {
+   "label": "1.- GASTOS EXPLOTACION DEL ESTADIO $ 31.977.123,69 $ 37.493.527,35 $ 47.738.131,82 $ 43.002.736,30 $ 44.407.340,77 $ 69.407.917,88 $ 47.071.945,25 $ 56.486.334,30 $ 72.966.967,73 $ 63.466.967,73 $ 75.470.361,28 $ 118.981.492,06 $",
+   "lado": null,
+   "section": "CLUB DE GIMNASIA Y ESGRIMA LA PLATA / GASTOS DE FUNCIONAMIENTO",
+   "page": 3,
+   "pendiente": true,
+   "jev": "admin_general_expense",
+   "jevConf": 0.88,
+   "escalon": 2,
+   "categoria": "match_organisation_expense",
+   "confianza": 0.7,
+   "motivo": "Igual a 'Gastos Explotación del Estadio' de gimnasiaesgrima-ar; vecinas son organización de partidos."
+  },
+  {
+   "label": "2.- GASTOS POR PARTICIPACION $ 10.678.908,58 $ 8.032.643,03 $ 25.012.643,03 $ 9.170.000,00 $ 21.219.000,00 $ 300.000,00 $ 350.000,00 $ 10.895.000,00 $ 32.700.000,00 $ 29.932.500,00 $ 36.575.000,00 $ 25.070.000,00 $",
+   "lado": null,
+   "section": "CLUB DE GIMNASIA Y ESGRIMA LA PLATA / GASTOS DE FUNCIONAMIENTO",
+   "page": 3,
+   "pendiente": false,
+   "ya": "match_organisation_expense",
+   "escalon": 1,
+   "jevConf": 0.97,
+   "categoria": "match_organisation_expense",
+   "confianza": 0.97
+  },
+  {
+   "label": "a. COMPETICIONES OFICIALES L.P.F. $ 10.678.908,58 $ 8.032.643,03 $ 25.012.643,03 $ 9.170.000,00 $ 21.219.000,00 $ 300.000,00 $ 350.000,00 $ 10.895.000,00 $ 32.700.000,00 $ 29.932.500,00 $ 36.575.000,00 $ 25.070.000,00 $",
+   "lado": null,
+   "section": "CLUB DE GIMNASIA Y ESGRIMA LA PLATA / GASTOS DE FUNCIONAMIENTO",
+   "page": 3,
+   "pendiente": false,
+   "ya": "match_organisation_expense",
+   "escalon": 1,
+   "jevConf": 0.97,
+   "categoria": "match_organisation_expense",
+   "confianza": 0.97
+  }
+ ]
+}

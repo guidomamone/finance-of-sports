@@ -1,0 +1,42 @@
+{
+ "pdf": "Clubes/Chile/Universidad Catolica (Cruzados)/memoria-anual-2023.pdf",
+ "generado": "2026-10-01T18:09:57.799Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "registro",
+   "motivo": "el documento no está listo-para-jev (estado cargado, jev -)"
+  },
+  {
+   "etapa": "categorizacion",
+   "motivo": "no hay .categorias.json (etapa 5 del pipeline: jev-categorizar.mjs + categorizar-claude.mjs --listos)"
+  },
+  {
+   "etapa": "año",
+   "motivo": "catolica-cl ya tiene el ejercicio 2023 cargado"
+  },
+  {
+   "etapa": "filas",
+   "motivo": "no hay .verificacion.json (correr tools/lote.mjs o verificar.mjs)"
+  }
+ ],
+ "avisos": [
+  "fecha de cierre 2023-12-31 deducida: estados-financieros-2022.pdf cierra 2022-12-31 y estados-financieros-2024.pdf cierra 2024-12-31",
+  "perímetro heredado del año cargado más cercano (2024, consolidado); el documento trae el consolidado (y también el individual: revisar que no se hayan cargado filas de los dos). Años cargados: 2018 individual, 2019 individual, 2020 individual, 2021 individual, 2022 consolidado, 2023 consolidado, 2024 consolidado, 2025 consolidado"
+ ],
+ "ejercicio": null,
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/memoria-anual-2023.md",
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2023-12-31",
+  "evidencia": null,
+  "confianza": "baja",
+  "cierreDeducido": true
+ },
+ "clubId": "catolica-cl",
+ "year": 2023
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2016-17.md",
+ "generado": "2026-10-04T18:00:21.048Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Amounts in euros",
+ "caja": {
+  "lineas": [
+   1849
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1878,
+   1885
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance expresado en euros (unidades); deuda financiera = 'Loans and other financial payables' no corriente y corriente."
+}

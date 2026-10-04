@@ -1,0 +1,558 @@
+{
+ "md": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.md",
+ "generatedAt": "2026-09-30T04:26:07.896Z",
+ "rubros": [
+  {
+   "label": "Receitas financeiras",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Administrativas",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 883
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1143
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1140
+  },
+  {
+   "label": "Vendas",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "choice": "player_sales",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "player_sales",
+     0.56
+    ],
+    [
+     "other_income",
+     0.19
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Custo com Futebol Profissional",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.5700000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.43
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "Receita operacional líquida",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1108
+  },
+  {
+   "label": "Lucro bruto",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "choice": "lump_football_operations",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.84
+    ],
+    [
+     "other_income",
+     0.15
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Outras Receitas/(Despesas)",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "Lucro Líquido antes dos impostos",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.94
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1129
+  },
+  {
+   "label": "Lucro do Exercício",
+   "lado": null,
+   "page": 9,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração das mutações do patrimônio líquido / (Valores expressos em reais)",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "lump_football_operations",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1407
+  },
+  {
+   "label": "SALDOS EM 31 DE DEZEMBRO DE 2021",
+   "lado": null,
+   "page": 9,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração das mutações do patrimônio líquido / (Valores expressos em reais)",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1322
+  },
+  {
+   "label": "Resultado Abrangente Total",
+   "lado": null,
+   "page": 9,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração das mutações do patrimônio líquido / (Valores expressos em reais)",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "exceptional_items",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1515
+  },
+  {
+   "label": "SALDOS EM 31 DE DEZEMBRO DE 2023",
+   "lado": null,
+   "page": 9,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração das mutações do patrimônio líquido / (Valores expressos em reais)",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1474
+  },
+  {
+   "label": "SALDOS EM 31 DE DEZEMBRO DE 2022",
+   "lado": null,
+   "page": 9,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração das mutações do patrimônio líquido / (Valores expressos em reais)",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1322
+  },
+  {
+   "label": "Outras Receitas",
+   "lado": "revenue",
+   "page": 22,
+   "section": "#### 29 Capital social / #### 30 Receitas operacionais",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Receita com Publicidade/Propaganda",
+   "lado": "revenue",
+   "page": 22,
+   "section": "#### 29 Capital social / #### 30 Receitas operacionais",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Receita com Bilheteria",
+   "lado": "revenue",
+   "page": 22,
+   "section": "#### 29 Capital social / #### 30 Receitas operacionais",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "(-) Deduções Receitas – b)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "#### 29 Capital social / #### 30 Receitas operacionais",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Receitas Cotas de TV",
+   "lado": "revenue",
+   "page": 22,
+   "section": "#### 29 Capital social / #### 30 Receitas operacionais",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Cessão de Direitos Liga Forte União do Futebol Brasileiro (LFF) – a)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "#### 29 Capital social / #### 30 Receitas operacionais",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "broadcasting",
+     0.07
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 1154
+  },
+  {
+   "label": "Despesas Trabalhistas",
+   "lado": "expense",
+   "page": 23,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / #### 31 Despesas",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.63
+    ],
+    [
+     "wages_squad",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Despesas Gerais",
+   "lado": "expense",
+   "page": 23,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / #### 31 Despesas",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Despesas Gerais Com Vendas",
+   "lado": "expense",
+   "page": 23,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / #### 31 Despesas",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1032
+  }
+ ]
+}

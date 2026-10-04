@@ -1,0 +1,1839 @@
+{
+  "club": "instituto",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Instituto/balance-general-2023-2024.md",
+  "generatedAt": "2026-09-30T22:39:13.963Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 432,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 23,
+  "relevantTableCount": 7,
+  "tables": [
+    {
+      "page": 2,
+      "section": "INSTITUTO ATLETICO CENTRAL CORDOBA / BALANCE GENERAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CAJA Y BANCOS (NOTA 2.1.) 450.629.479 347.147.437 ACREEDORES VARIOS (",
+          "values": [
+            "NOTA2.5.)",
+            "2.206.326.995",
+            "567.931.510"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INVERSIONES (NOTA 2.2.) 67.332.617 143.584.955 DEUDAS SOCIALES Y PREVISIONALES (NOTA",
+          "values": [
+            "2.6.)",
+            "485.009.297",
+            "494.242.640"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEUDORES VARIOS (NOTA 2.3.) 382.712.735 662.774.929 DEUDAS IMPOSITIVAS (NOTA",
+          "values": [
+            "2.7.)",
+            "37.215.766",
+            "50.368.514"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTROS CREDITOS (NOTA 2.4.) 79.134.606 7.135.299 DEUDA CONCURSAL (NOTA 3)",
+          "values": [
+            "18.441.641",
+            "56.212.265"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BIENES DE CAMBIO (NOTA 1.2. \"D\") 393.983.460 116.921.241 PREVISIÓN JUICIOS (NOTA 4)",
+          "values": [
+            "391.878.758",
+            "368.717.141"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "DEUDORES VARIOS (NOTA 2.3.) -.- 681.682.696 DEUDAS SOCIALES Y PREVISIONALES (NOTA 2.6.) -.-",
+          "values": [
+            "124.427.601"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BIENES DE USO (ANEXO I y NOTA 1.2. \"C\") 9.818.437.565 8.539.757.287 DEUDAS IMPOSITIVAS (NOTA",
+          "values": [
+            "2.7.)",
+            "5.340.283",
+            "32.570.716"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ACTIVOS INTANGIBLES (ANEXO II) 2.738.353.110 517.013.061 DEUDA CONCURSAL (NOTA 3)",
+          "values": [
+            "12.035.911",
+            "64.856.141"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PREVISIÓN JUICIOS (NOTA 4)",
+          "values": [
+            "180.641.203",
+            "493.500.463"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "INSTITUTO ATLETICO CENTRAL CORDOBA / ESTADO DE RECURSOS Y GASTOS / RECURSOS Y GASTOS ORDINARIOS / RECURSOS ORDINARIOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Para fines generales (Anexo III)",
+          "values": [
+            "2.734.838.041",
+            "4.152.704.303"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Para fines específicos ( Anexo III)",
+          "values": [
+            "15.223.527.458",
+            "7.986.774.473"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total recursos ordinarios",
+          "values": [
+            "17.958.365.499",
+            "12.139.478.776"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 3,
+      "section": "GASTOS ORDINARIOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Generales de administración (Anexo IV)",
+          "values": [
+            "(1.919.810.448)",
+            "(875.150.930)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Especificos de sectores ( Anexo V)",
+          "values": [
+            "(14.203.003.567)",
+            "(9.952.593.726)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación de bienes de uso (Anexo I)",
+          "values": [
+            "(310.502.231)",
+            "(265.187.362)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización de Intangibles (Anexo II)",
+          "values": [
+            "(317.109.648)",
+            "(67.312.111)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total gastos ordinarios",
+          "values": [
+            "(16.750.425.894)",
+            "(11.160.244.129)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 3,
+      "section": "GASTOS EXTRAORDINARIOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "DÉFICIT EXTRAORDINARIO",
+          "values": [
+            "(18.911.650)",
+            "(26.040.936)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUPERÁVIT FINAL",
+          "values": [
+            "1.830.503.804",
+            "1.170.793.014"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "INSTITUTO ATLETICO CENTRAL CÓRDOBA / ESTADO DE FLUJO DE EFECTIVO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Efectivo e inverisiones corriente al inicio del ejercicio",
+          "values": [
+            "490.732.392",
+            "616.963.399"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo e inversiones corriente al cierre del ejercicio",
+          "values": [
+            "517.962.096",
+            "490.732.392"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento / (Disminución) neta del Efectivo e inversiones corriente",
+          "values": [
+            "27.229.704",
+            "(126.231.007)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "CAUSAS DE LAS VARIACIONES DEL EFECTIVO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cobros de recursos para fines generales",
+          "values": [
+            "1.308.708.310",
+            "2.881.302.651"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cobros de recursos para fines especificos",
+          "values": [
+            "9.863.744.312",
+            "5.169.480.485"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos fútbol",
+          "values": [
+            "(5.150.326.603)",
+            "(3.560.757.670)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos otras disciplinas",
+          "values": [
+            "(2.078.724.945)",
+            "(2.168.254.247)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos profesorado y colegio",
+          "values": [
+            "(711.451.441)",
+            "(833.316.298)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos tienda",
+          "values": [
+            "(853.352.666)",
+            "(428.085.108)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de administración",
+          "values": [
+            "(875.908.565)",
+            "(670.803.430)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Disminución) / Aumento de deuda impositiva",
+          "values": [
+            "(36.625.663)",
+            "17.601.948"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses y diferencias de cambio",
+          "values": [
+            "(24.123.156)",
+            "97.385.982"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R.E.C.P.A.M. del efectivo",
+          "values": [
+            "(358.648.097)",
+            "(216.901.336)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Actividades de inversión / Actividades de financiación / Actividades extraordinarias",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aumento de deuda concursal",
+          "values": [
+            "(2.108.916)",
+            "(6.316.659)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos del concurso",
+          "values": [
+            "(10.263.216)",
+            "(14.703.600)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Flujo neto de efectivo (utilizado en) actividades extraordinarias",
+          "values": [
+            "(12.372.132)",
+            "(21.020.259)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento / (Disminución) neta del Efectivo e inversiones corriente",
+          "values": [
+            "27.229.704",
+            "(126.231.007)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "NOTA 2. COMPOSICIÓN DE LOS PRINCIPALES RUBROS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caja",
+          "values": [
+            "323.369.038",
+            "6.602.176"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Credicoop Cta. Cte.",
+          "values": [
+            "11.850.559",
+            "8.604.445"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancor Cta. Cte.",
+          "values": [
+            "1.557.757",
+            "165.606.883"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Santander Cta. Cte.",
+          "values": [
+            "28.750.527",
+            "4.692.297"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Santander Cta. Cte. USD",
+          "values": [
+            "6.839",
+            "101.561"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Roela Cta. Cte.",
+          "values": [
+            "69.240.666",
+            "101.708.283"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Macro Cta. Cte.",
+          "values": [
+            "11.126.832",
+            "59.410.726"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valores en cartera",
+          "values": [
+            "4.727.261",
+            "421.066"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "450.629.479       347.147.437 / 2.2. Inversiones",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "FCI Bco. Santander",
+          "values": [
+            "67.332.617",
+            "50.702.530"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plazo fijo Santander -.-",
+          "values": [
+            "92.882.425"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "67.332.617       143.584.955 / 2.3. Deudores varios / Corriente",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "AFA",
+          "values": [
+            "738.481",
+            "2.743.677"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras cuentas a cobrar",
+          "values": [
+            "141.902.761",
+            "582.787.680"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tarjetas",
+          "values": [
+            "240.071.493",
+            "77.243.572"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "382.712.735       662.774.929 / No corriente / Otras cuentas a cobrar                            -.-     681.682.696 / -.-     681.682.696 / 2.4. Otros créditos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "IIBB saldo a favor",
+          "values": [
+            "32.793",
+            "121.836"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IVA saldo a favor",
+          "values": [
+            "78.021.418",
+            "5.008.991"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ret. y percep. de ganancias",
+          "values": [
+            "1.080.395",
+            "2.004.472"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "79.134.606         7.135.299 / 2.5. Acreedores varios",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otras cuentas por pagar",
+          "values": [
+            "1.426.293.905",
+            "184.481.594"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cheques diferidos",
+          "values": [
+            "776.846.775",
+            "380.397.930"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por pagar a subcomisiones",
+          "values": [
+            "3.186.315",
+            "3.051.986"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "2.206.326.995      567.931.510 / 2.6. Deudas sociales y previsionales / Corriente",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Sueldos y primas a pagar",
+          "values": [
+            "391.181.945",
+            "292.574.870"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cargas sociales a pagar",
+          "values": [
+            "80.513.330",
+            "87.859.037"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Embargos a depositar",
+          "values": [
+            "390.577",
+            "1.447.438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sindicato a pagar",
+          "values": [
+            "12.923.445",
+            "12.819.214"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda sindical sujeta a plan de pago -.-",
+          "values": [
+            "99.542.081"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "NOTA 2. COMPOSICIÓN DE LOS PRINCIPALES RUBROS (Cont.)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Corriente",
+          "values": [
+            "2.024",
+            "2.023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retenciones y percepciones a pagar",
+          "values": [
+            "2.065.979",
+            "7.675.727"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AFIP plan de pago",
+          "values": [
+            "1.068.057",
+            "5.336.826"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros impuestos a pagar",
+          "values": [
+            "34.081.729",
+            "37.355.961"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "37.215.766        50.368.514 / No Corriente / AFIP plan de pago                                  5.340.283         32.570.716 / 5.340.283        32.570.716 / 2.8. Resultados financieros y por tenencia incluido R.E.C.P.A.M.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intereses ganados",
+          "values": [
+            "51.505.392",
+            "38.896.941"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses perdidos",
+          "values": [
+            "(95.724.423)",
+            "(16.935.680)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencias de cambio ganadas -.-",
+          "values": [
+            "90.806.053"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencias de cambio perdidas",
+          "values": [
+            "(89.154.378)",
+            "(15.381.330)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECPAM",
+          "values": [
+            "774.849.258",
+            "120.213.319"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "NOTA 3. CONCURSO PREVENTIVO - HOMOLOGACIÓN (Cont.)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Categoría \"A\"",
+          "values": [
+            "1.281.336",
+            "(349.073)",
+            "69.310",
+            "1.001.573"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Categoría \"B\" 4.100 -.- -.-",
+          "values": [
+            "4.100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Categoría \"C\" 965.738 (51.232) -.-",
+          "values": [
+            "914.506"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Categoría \"D\" 22.780.454 -.- -.-",
+          "values": [
+            "22.780.454"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Categoría \"E\"",
+          "values": [
+            "5.831.525",
+            "(1.811.027)",
+            "33.106",
+            "4.053.604"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tasa de justicia 1.723.315 -.- -.-",
+          "values": [
+            "1.723.315"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL",
+          "values": [
+            "32.586.468",
+            "(2.211.332)",
+            "102.416",
+            "30.477.552"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "INSTITUTO ATLETICO CENTRAL CORDOBA / BIENES DE USO / ANEXO I / VALOR AL                                                           ACUMULADAS AL / COMIENZO                                                             COMIENZO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "TERRENO 1.359.894.035 -.- -.- 1.359.894.035 -.- -.- -.- -.-",
+          "values": [
+            "1.359.894.035",
+            "1.359.894.035"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EDIFICIOS Y CONSTRUCCIONES 11.401.733.767 1.393.348.923 -.- 12.795.082.690 (4.479.351.859) (253.766.185) -.-",
+          "values": [
+            "(4.733.118.044)",
+            "8.061.964.646",
+            "6.922.381.908"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MAQUINAS Y EQUIPOS 99.677.676 195.833.586 -.- 295.511.262 (42.566.597) (28.091.866) -.-",
+          "values": [
+            "(70.658.463)",
+            "224.852.799",
+            "57.111.079"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "MUEBLES Y UTILES 116.722.028 -.- -.- 116.722.028 (87.433.361) (6.447.767) -.-",
+          "values": [
+            "(93.881.128)",
+            "22.840.900",
+            "29.288.667"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSTALACIONES 320.379.732 -.- -.- 320.379.732 (149.298.134) (22.196.413) -.-",
+          "values": [
+            "(171.494.547)",
+            "148.885.185",
+            "171.081.598"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "INSTITUTO ATLETICO CENTRAL CÓRDOBA / RECURSOS ORDINARIOS / ANEXO III",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Centros educativos -.-",
+          "values": [
+            "1.480.506.179",
+            "1.480.506.179",
+            "1.512.028.236"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuotas sociales y abonos deportivos 2.734.838.041 -.-",
+          "values": [
+            "2.734.838.041",
+            "4.152.704.303"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abonos deportivos sede -.-",
+          "values": [
+            "110.393.384",
+            "110.393.384",
+            "60.725.849"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de TV -.-",
+          "values": [
+            "2.283.418.911",
+            "2.283.418.911",
+            "1.234.637.084"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Entradas generales fútbol -.-",
+          "values": [
+            "1.335.932.147",
+            "1.335.932.147",
+            "483.580.621"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Entradas plateas y palcos fútbol -.-",
+          "values": [
+            "1.851.384.253",
+            "1.851.384.253",
+            "428.757.105"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad institucional -.-",
+          "values": [
+            "39.810.623",
+            "39.810.623",
+            "67.591.192"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad otras competencias -.-",
+          "values": [
+            "1.013.662.215",
+            "1.013.662.215",
+            "1.127.613.789"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad y sponsors fútbol -.-",
+          "values": [
+            "2.832.484.669",
+            "2.832.484.669",
+            "1.020.677.639"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recursos predio La Agustina -.-",
+          "values": [
+            "148.864.908",
+            "148.864.908",
+            "130.371.919"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferencias y préstamos de jugadores -.-",
+          "values": [
+            "3.288.129.685",
+            "3.288.129.685",
+            "1.168.977.797"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ventas de salón Gloriamanía -.-",
+          "values": [
+            "816.979.303",
+            "816.979.303",
+            "724.258.525"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subsidios recibidos -.-",
+          "values": [
+            "21.961.181",
+            "21.961.181",
+            "27.554.717"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 16,
+      "section": "INSTITUTO ATLETICO CENTRAL CÓRDOBA / GASTOS GENERALES DE ADMINISTRACIÓN / ANEXO IV",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Remuneraciones y cargas",
+          "values": [
+            "136.389.896",
+            "137.102.063"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "201.457.618",
+            "171.691.001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sevicios, luz, agua, gas, etc.",
+          "values": [
+            "13.049.239",
+            "25.064.200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos bancarios",
+          "values": [
+            "1.140.780.590",
+            "455.772.361"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IVA CF no computable -.-",
+          "values": [
+            "637.681"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de juicios",
+          "values": [
+            "17.865.467",
+            "79.878.886"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Quebranto por Juicios",
+          "values": [
+            "410.267.638",
+            "5.004.738"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 17,
+      "section": "INSTITUTO ATLETICO CENTRAL CORDOBA / GASTOS EPECÍFICOS DE SECTORES / ANEXO V",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Remuneraciones y cargas 2.501.512.775 -.-",
+          "values": [
+            "214.946.875",
+            "170.658.677",
+            "979.100.475",
+            "71.134.791",
+            "3.937.353.593",
+            "3.034.857.718"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros -.- -.- -.- -.- 7.003.365 -.-",
+          "values": [
+            "7.003.365",
+            "8.303.797"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios -.- 833.133.038 171.642.083 33.624.717 80.466.336 -.-",
+          "values": [
+            "1.118.866.174",
+            "1.169.721.442"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "1.123.895.617",
+            "264.516.282",
+            "207.123.376",
+            "142.326.601",
+            "73.671.180",
+            "25.391.667",
+            "1.836.924.723",
+            "972.844.641"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento de bienes de uso 167.652.401 -.- 403.420.203 155.621.600 145.746.239 -.-",
+          "values": [
+            "872.440.443",
+            "879.572.025"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vigilancia sede -.- -.- -.- 91.516.356 -.- -.-",
+          "values": [
+            "91.516.356",
+            "89.112.154"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios de energía, agua, gas, etc.. 13.240.852 -.-",
+          "values": [
+            "76.165.275",
+            "16.249.603",
+            "6.010.492",
+            "6.773.240",
+            "118.439.462",
+            "166.146.992"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos generales por eventos deportivos 729.199.797 -.- 166.412.501 -.- -.- -.-",
+          "values": [
+            "895.612.298",
+            "493.345.104"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Viajes y concentraciones 738.856.611 212.665.845 68.434.314 2.354.094 -.- -.-",
+          "values": [
+            "1.022.310.864",
+            "674.018.688"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compras de mercadería -.- -.- -.- -.- -.-",
+          "values": [
+            "669.262.280",
+            "669.262.280",
+            "441.373.444"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comisiones y acuerdos de rescisión 3.284.765.346 -.- -.- -.- -.- -.-",
+          "values": [
+            "3.284.765.346",
+            "1.636.532.481"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Limpieza y vigilancia -.- -.- -.- 22.460.193 -.- -.-",
+          "values": [
+            "22.460.193",
+            "10.264.462"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compras y préstamos de jugadores 213.545.381 -.- -.- -.- -.- -.-",
+          "values": [
+            "213.545.381",
+            "349.816.445"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vigilancia La Agustina -.- -.- 112.503.089 -.- -.- -.-",
+          "values": [
+            "112.503.089",
+            "26.684.333"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 3,
+      "section": "INSTITUTO ATLETICO CENTRAL CORDOBA / ESTADO DE RECURSOS Y GASTOS / RECURSOS Y GASTOS ORDINARIOS / RECURSOS ORDINARIOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total recursos ordinarios",
+      "target": "17.958.365.499",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "INSTITUTO ATLETICO CENTRAL CORDOBA / ESTADO DE RECURSOS Y GASTOS / RECURSOS Y GASTOS ORDINARIOS / RECURSOS ORDINARIOS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total recursos ordinarios",
+      "target": "12.139.478.776",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "GASTOS ORDINARIOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total gastos ordinarios",
+      "target": "(16.750.425.894)",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "GASTOS ORDINARIOS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total gastos ordinarios",
+      "target": "(11.160.244.129)",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "NOTA 3. CONCURSO PREVENTIVO - HOMOLOGACIÓN (Cont.)",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL",
+      "target": "32.586.468",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "-51232"
+    },
+    {
+      "page": 10,
+      "section": "NOTA 3. CONCURSO PREVENTIVO - HOMOLOGACIÓN (Cont.)",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL",
+      "target": "(2.211.332)",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "51232"
+    },
+    {
+      "page": 10,
+      "section": "NOTA 3. CONCURSO PREVENTIVO - HOMOLOGACIÓN (Cont.)",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "TOTAL",
+      "target": "102.416",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 10,
+      "section": "NOTA 3. CONCURSO PREVENTIVO - HOMOLOGACIÓN (Cont.)",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "TOTAL",
+      "target": "30.477.552",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-25422375"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 47,
+    "results": [
+      {
+        "label": "Para fines generales (Anexo III)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines generales (Anexo III)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines específicos ( Anexo III)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Para fines específicos ( Anexo III)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generales de administración (Anexo IV)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Generales de administración (Anexo IV)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Especificos de sectores ( Anexo V)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Especificos de sectores ( Anexo V)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciación de bienes de uso (Anexo I)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciación de bienes de uso (Anexo I)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "depreciation",
+        "matchedLabel": "Depreciación de bienes de uso",
+        "similarity": 75
+      },
+      {
+        "label": "Amortización de Intangibles (Anexo II)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortización de Intangibles (Anexo II)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DÉFICIT EXTRAORDINARIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DÉFICIT EXTRAORDINARIO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SUPERÁVIT FINAL",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SUPERÁVIT FINAL",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses ganados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses ganados",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses perdidos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses perdidos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencias de cambio ganadas -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencias de cambio ganadas -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencias de cambio perdidas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencias de cambio perdidas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECPAM",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECPAM",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Centros educativos -.-",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "education",
+        "matchedLabel": "Centros educativos",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Centros educativos -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cuotas sociales y abonos deportivos 2.734.838.041 -.-",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "member_dues",
+        "matchedLabel": "Cuotas sociales y abonos deportivos",
+        "similarity": 57
+      },
+      {
+        "label": "Cuotas sociales y abonos deportivos 2.734.838.041 -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Abonos deportivos sede -.-",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "season_tickets",
+        "matchedLabel": "Abonos deportivos sede",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Abonos deportivos sede -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Derechos de TV -.-",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Derechos de TV",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Derechos de TV -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Entradas generales fútbol -.-",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Entradas generales fútbol",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Entradas generales fútbol -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Entradas plateas y palcos fútbol -.-",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Entradas plateas y palcos fútbol",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Entradas plateas y palcos fútbol -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad institucional -.-",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Publicidad institucional",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Publicidad institucional -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad otras competencias -.-",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Publicidad otras competencias",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Publicidad otras competencias -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad y sponsors fútbol -.-",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Publicidad y sponsors fútbol",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Publicidad y sponsors fútbol -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Recursos predio La Agustina -.-",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_sports",
+        "matchedLabel": "Recursos predio La Agustina",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Recursos predio La Agustina -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transferencias y préstamos de jugadores -.-",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Transferencias y préstamos de jugadores",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Transferencias y préstamos de jugadores -.-",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Compras y préstamos de jugadores",
+        "similarity": 50
+      },
+      {
+        "label": "Ventas de salón Gloriamanía -.-",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Ventas de salón Gloriamanía",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Ventas de salón Gloriamanía -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Subsidios recibidos -.-",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Subsidios recibidos",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Subsidios recibidos -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Remuneraciones y cargas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Remuneraciones y cargas",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "education_expense",
+        "matchedLabel": "Remuneraciones y cargas (Colegio)",
+        "similarity": 67
+      },
+      {
+        "label": "Honorarios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Honorarios",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "education_expense",
+        "matchedLabel": "Honorarios (Colegio)",
+        "similarity": 50
+      },
+      {
+        "label": "Sevicios, luz, agua, gas, etc.",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sevicios, luz, agua, gas, etc.",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Servicios, luz, agua, gas, etc. (administración)",
+        "similarity": 57
+      },
+      {
+        "label": "Gastos bancarios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos bancarios",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos bancarios",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "IVA CF no computable -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IVA CF no computable -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de juicios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de juicios",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos de juicios",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Quebranto por Juicios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Quebranto por Juicios",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Quebranto por juicios",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Remuneraciones y cargas 2.501.512.775 -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Remuneraciones y cargas 2.501.512.775 -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Seguros -.- -.- -.- -.- 7.003.365 -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Seguros -.- -.- -.- -.- 7.003.365 -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Honorarios -.- 833.133.038 171.642.083 33.624.717 80.466.336 -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Honorarios -.- 833.133.038 171.642.083 33.624.717 80.466.336 -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diversos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diversos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "education_expense",
+        "matchedLabel": "Diversos (Colegio)",
+        "similarity": 50
+      },
+      {
+        "label": "Mantenimiento de bienes de uso 167.652.401 -.- 403.420.203 155.621.600 145.746.239 -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Mantenimiento de bienes de uso 167.652.401 -.- 403.420.203 155.621.600 145.746.239 -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Vigilancia sede -.- -.- -.- 91.516.356 -.- -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Vigilancia sede -.- -.- -.- 91.516.356 -.- -.-",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Vigilancia sede (Sede)",
+        "similarity": 50
+      },
+      {
+        "label": "Servicios de energía, agua, gas, etc.. 13.240.852 -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Servicios de energía, agua, gas, etc.. 13.240.852 -.-",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "education_expense",
+        "matchedLabel": "Servicios de energía, agua, gas, etc. (Colegio)",
+        "similarity": 63
+      },
+      {
+        "label": "Gastos generales por eventos deportivos 729.199.797 -.- 166.412.501 -.- -.- -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos generales por eventos deportivos 729.199.797 -.- 166.412.501 -.- -.- -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Viajes y concentraciones 738.856.611 212.665.845 68.434.314 2.354.094 -.- -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Viajes y concentraciones 738.856.611 212.665.845 68.434.314 2.354.094 -.- -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Compras de mercadería -.- -.- -.- -.- -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Compras de mercadería -.- -.- -.- -.- -.-",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Compras de mercadería (Tienda)",
+        "similarity": 67
+      },
+      {
+        "label": "Comisiones y acuerdos de rescisión 3.284.765.346 -.- -.- -.- -.- -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Comisiones y acuerdos de rescisión 3.284.765.346 -.- -.- -.- -.- -.-",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Comisiones y acuerdos de rescisión",
+        "similarity": 50
+      },
+      {
+        "label": "Limpieza y vigilancia -.- -.- -.- 22.460.193 -.- -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Limpieza y vigilancia -.- -.- -.- 22.460.193 -.- -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Compras y préstamos de jugadores 213.545.381 -.- -.- -.- -.- -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Compras y préstamos de jugadores 213.545.381 -.- -.- -.- -.- -.-",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Compras y préstamos de jugadores",
+        "similarity": 50
+      },
+      {
+        "label": "Vigilancia La Agustina -.- -.- 112.503.089 -.- -.- -.-",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Vigilancia La Agustina -.- -.- 112.503.089 -.- -.- -.-",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Instituto ACC",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 10,
+      "line": "USD se abonarán en pesos en idénticos plazos y proporciones tomando como tipo de cambio el \"vendedor\" del Banco de la"
+    }
+  ],
+  "warnings": [
+    "3 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ]
+}

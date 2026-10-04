@@ -1,0 +1,1739 @@
+{
+  "club": "telstar",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.md",
+  "generatedAt": "2026-09-30T22:07:28.066Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 8,
+    "space": 0
+  },
+  "scannedWarning": true,
+  "tableCount": 30,
+  "relevantTableCount": 10,
+  "tables": [
+    {
+      "page": 6,
+      "section": "Vaste activa / Immateriële vaste activa",
+      "columns": [
+        "Betaalde vergoedingssommen",
+        "4",
+        "0"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "4",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "Materiële vaste activa",
+      "columns": [
+        "Bedrijfsgebouwen en -terreinen",
+        "1.005",
+        "788"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Overige vaste bedrijfsmiddelen",
+          "values": [
+            "385",
+            "427"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1.390",
+            "1.215"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "Financiële vaste activa",
+      "columns": [
+        "Overige vorderingen",
+        "0",
+        "126"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Latente belastingvorderingen",
+          "values": [
+            "139",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "139",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "Vorderingen",
+      "columns": [
+        "Handelsdebiteuren",
+        "665",
+        "390"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Overige vorderingen en overlopende activa",
+          "values": [
+            "307",
+            "274"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "972",
+            "664"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": "PASSIVA / Eigen vermogen",
+      "columns": [
+        "Geplaatst kapitaal",
+        "1.338",
+        "1.338",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Overige reserves",
+          "values": [
+            "(839)",
+            "(471)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet verdeelde resultaten",
+          "values": [
+            "320",
+            "(367)",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "819",
+            "",
+            "500"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": "Langlopende schulden",
+      "columns": [
+        "Leningen",
+        "53",
+        "157",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Belastingen en betalingsregelingen",
+          "values": [
+            "334",
+            "559",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "387",
+            "",
+            "716"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": "Kortlopende schulden",
+      "columns": [
+        "Schulden aan kredietinstellingen",
+        "0",
+        "4",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Crediteuren",
+          "values": [
+            "565",
+            "222",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen en premies sociale verzekeringen",
+          "values": [
+            "321",
+            "305",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige schulden en overlopende passiva",
+          "values": [
+            "1.006",
+            "718",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1.892",
+            "",
+            "1.249"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "3.098",
+            "",
+            "2.465"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": "# Winst- en verliesrekening over 2024/2025",
+      "columns": [
+        "",
+        "2024/2025",
+        "2023/2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Netto-omzet",
+          "values": [
+            "5.760",
+            "3.996"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Personeelskosten",
+          "values": [
+            "2.864",
+            "2.521"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen materiële vaste activa",
+          "values": [
+            "370",
+            "229"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige bedrijfskosten",
+          "values": [
+            "2.316",
+            "1.581"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Som der kosten",
+          "values": [
+            "5.550",
+            "4.447"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Bedrijfsresultaat",
+          "values": [
+            "210",
+            "(334)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Som der financiële baten en lasten",
+          "values": [
+            "(29)",
+            "(33)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultaat vóór belastingen",
+          "values": [
+            "181",
+            "(367)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Belasting",
+          "values": [
+            "139",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultaat na belastingen",
+          "values": [
+            "320",
+            "(367)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 9,
+      "section": "# Kasstroomoverzicht",
+      "columns": [
+        "",
+        "2024/2025",
+        "2023/2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "*Kasstroom uit operationele activiteiten*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bedrijfsresultaat",
+          "values": [
+            "210",
+            "(334)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Aanpassingen voor:*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen materiële vaste activa",
+          "values": [
+            "370",
+            "229"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Verandering in werkkapitaal:*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorraden",
+          "values": [
+            "(10)",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorderingen",
+          "values": [
+            "(306)",
+            "(64)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortlopende schulden",
+          "values": [
+            "643",
+            "(223)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "327",
+            "(159)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kasstroom uit bedrijfsoperaties",
+          "values": [
+            "907",
+            "(54)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Betaalde interest",
+          "values": [
+            "(29)",
+            "(33)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belasting",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(29)",
+            "(33)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kasstroom uit operationele activiteiten",
+          "values": [
+            "878",
+            "(21)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "*Kasstroom uit investeringsactiviteiten*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutatie immateriële vaste activa",
+          "values": [
+            "(8)",
+            "5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringen materiële vaste activa",
+          "values": [
+            "(544)",
+            "(45)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutatie vordering onder financiële vaste activa",
+          "values": [
+            "126",
+            "(126)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kasstroom uit investeringsactiviteiten",
+          "values": [
+            "(426)",
+            "(166)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "*Kasstroom uit financieringsactiviteiten*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verstrekte leningen",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uitstel belastingen/betalingen",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gestort aandelenkapitaal",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aflossing langlopende schulden",
+          "values": [
+            "(329)",
+            "(368)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kasstroom uit financieringsactiviteiten",
+          "values": [
+            "(329)",
+            "(368)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Toename geldmiddelen",
+          "values": [
+            "123",
+            "(513)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Het verloop van de geldmiddelen is als volgt:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand per 1 juli",
+          "values": [
+            "433",
+            "947"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutatie boekjaar",
+          "values": [
+            "123",
+            "(513)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand per 30 juni",
+          "values": [
+            "556",
+            "433"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "# Toelichting op de balans per 30 juni 2025 / # *Immateriële vaste activa*",
+      "columns": [
+        "Aanschaffingswaarde",
+        "13"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cumulatieve afschrijvingen",
+          "values": [
+            "(13)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Boekwaarde",
+          "values": [
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "Mutaties",
+      "columns": [
+        "Investeringen",
+        "8"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Afschrijvingen immateriële vaste activa",
+          "values": [
+            "(4)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Desinvesteringen aanschaffingswaarde",
+          "values": [
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cumulatieve afschrijvingen desinvesteringen",
+          "values": [
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo",
+          "values": [
+            "4"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "Stand per 30 juni 2025",
+      "columns": [
+        "Aanschaffingswaarde",
+        "8"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cumulatieve afschrijvingen",
+          "values": [
+            "(4)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Boekwaarde",
+          "values": [
+            "4"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "# Toelichting op de balans per 30 juni 2025 / # *Materiële vaste activa*",
+      "columns": [
+        "",
+        "Bedrijfsge- bouwen en -terreinen",
+        "Overige bedrijfs- middelen",
+        "Totaal"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Stand per 1 juli 2024",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aanschaffingswaarde",
+          "values": [
+            "1.777",
+            "1.089",
+            "2.866"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cumulatieve afschrijvingen",
+          "values": [
+            "(989)",
+            "(662)",
+            "(1.651)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Boekwaarden",
+          "values": [
+            "788",
+            "427",
+            "1.215"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Mutaties*",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investeringen",
+          "values": [
+            "387",
+            "158",
+            "544"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Desinvesteringen",
+          "values": [
+            "(715)",
+            "(22)",
+            "(737)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen materiële vaste activa",
+          "values": [
+            "(165)",
+            "(78)",
+            "(243)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen desinvestering",
+          "values": [
+            "595",
+            "15",
+            "610"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo",
+          "values": [
+            "102",
+            "73",
+            "174"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand per 30 juni 2025",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aanschaffingswaarde 30 juni",
+          "values": [
+            "1.449",
+            "1.225",
+            "2.674"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cumulatieve afschrijvingen 30 juni",
+          "values": [
+            "(559)",
+            "(725)",
+            "(1.284)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Boekwaarden",
+          "values": [
+            "890",
+            "500",
+            "1.390"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1",
+            "2",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingspercentages",
+          "values": [
+            "3%-10%",
+            "10-20%",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "### *Financiële vaste activa*",
+      "columns": [
+        "",
+        "30 juni 2025",
+        "30 juni 2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Voorraden",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Voorraad horeca en emballage",
+          "values": [
+            "17",
+            "9"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorraad merchandise",
+          "values": [
+            "19",
+            "17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorraad overig",
+          "values": [
+            "1",
+            "1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "37",
+            "27"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "### *Vorderingen* / #### Overige vorderingen en overlopende activa",
+      "columns": [
+        "Vooruitbetaalde kosten",
+        "132",
+        "75"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Omzetbelasting",
+          "values": [
+            "63",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige vorderingen en overlopende activa",
+          "values": [
+            "160",
+            "275"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "355",
+            "350"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": null,
+      "columns": [
+        "",
+        "30 juni 2025",
+        "30 juni 2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "*Liquide middelen*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Rabobank/ING Bank",
+          "values": [
+            "556",
+            "433"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "556",
+            "433"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "# Eigen vermogen",
+      "columns": [
+        "",
+        "Geplaatst kapitaal",
+        "Overige reserves",
+        "Onverdeeld resultaat",
+        "Totaal"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Stand per 1 juli 2024",
+          "values": [
+            "1.338",
+            "(471)",
+            "(368)",
+            "499"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Uitgifte certificaten",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verdeling resultaat",
+          "values": [
+            "0",
+            "(368)",
+            "368",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultaat boekjaar",
+          "values": [
+            "0",
+            "(0)",
+            "320",
+            "320"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Stand per 30 juni 2025",
+          "values": [
+            "1.338",
+            "(840)",
+            "320",
+            "819"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "# *Langlopende schulden*",
+      "columns": [
+        "",
+        "30 juni 2025",
+        "30 juni 2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Leningen",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Lening KNVB/PSF",
+          "values": [
+            "27",
+            "36"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lening Ceelen Sport Constructies",
+          "values": [
+            "0",
+            "54"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lening Sportveldverlichting",
+          "values": [
+            "23",
+            "34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LEDYouSee",
+          "values": [
+            "3",
+            "33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "52",
+            "157"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "# *Lening PSF* / # *Lening Sportveldverlichting* / # *Lening LEDYouSee B.V.* / # Belastingen en betalingsregelingen looptijd > 1 jaar",
+      "columns": [
+        "Loonheffing",
+        "187",
+        "336"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Omzetbelasting",
+          "values": [
+            "59",
+            "107"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Betalingsregeling NOW/STIK terugbetalingen",
+          "values": [
+            "88",
+            "115"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "334",
+            "558"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "Telstar 1963 N.V., Velsen-Zuid - jaarrekening 2024-2025",
+      "columns": [
+        "",
+        "2024/2025",
+        "2023/2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "*Kortlopende schulden*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "EUR * 1000",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen en premies sociale verzekeringen",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Omzetbelasting",
+          "values": [
+            "0",
+            "107"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Loonheffing",
+          "values": [
+            "319",
+            "197"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige premies",
+          "values": [
+            "2",
+            "1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "321",
+            "305"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige schulden en overlopende passiva",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Vooruitontvangen bedragen",
+          "values": [
+            "278",
+            "343"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nog te betalen accountantskosten",
+          "values": [
+            "25",
+            "25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aflossingsverplichting KNVB PSF",
+          "values": [
+            "9",
+            "9"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aflossingsverplichting Greenfields B.V.",
+          "values": [
+            "0",
+            "11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aflossingsverplichting Ceelen Sport",
+          "values": [
+            "54",
+            "53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aflossingsverplichting Sportveldverlichting",
+          "values": [
+            "11",
+            "11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aflossingsverplichting LEDYou See",
+          "values": [
+            "30",
+            "30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Betalingsregeling NOW terugbetalingen",
+          "values": [
+            "43",
+            "43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Nog te betalen overige bedrijfskosten",
+          "values": [
+            "556",
+            "269"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1.006",
+            "794"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 22,
+      "section": "# Toelichting op de winst- en verliesrekening over 2024/2025",
+      "columns": [
+        "",
+        "2024/2025",
+        "2023/2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "*Netto-omzet*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wedstrijdbaten",
+          "values": [
+            "929",
+            "391"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sponsoring",
+          "values": [
+            "2.354",
+            "1.916"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Media gerelateerde baten",
+          "values": [
+            "825",
+            "548"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Merchandising & Business to Consumer activiteiten",
+          "values": [
+            "87",
+            "45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Food & Beverage",
+          "values": [
+            "904",
+            "595"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultaat vergoedingssommen",
+          "values": [
+            "322",
+            "221"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige baten",
+          "values": [
+            "339",
+            "280"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "5.760",
+            "3.996"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 22,
+      "section": "# Personeelskosten",
+      "columns": [
+        "Lonen en salarissen",
+        "1.503",
+        "1.242"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Sociale lasten",
+          "values": [
+            "306",
+            "275"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensioenlasten",
+          "values": [
+            "26",
+            "25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige",
+          "values": [
+            "1.029",
+            "969"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2.864",
+            "2.521"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "# Afschrijvingen / # Afschrijvingen materiële vaste activa",
+      "columns": [
+        "Bedrijfsgebouwen en -terreinen",
+        "284",
+        "96"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Overige bedrijfsmiddelen",
+          "values": [
+            "86",
+            "133"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "370",
+            "229"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "# *Overige bedrijfskosten*",
+      "columns": [
+        "Verkoopkosten",
+        "915",
+        "536"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Huisvestingskosten",
+          "values": [
+            "386",
+            "396"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wedstrijd- en trainingskosten",
+          "values": [
+            "732",
+            "486"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Algemene kosten",
+          "values": [
+            "283",
+            "163"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2.316",
+            "1.581"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 23,
+      "section": "# *Verkoopkosten*",
+      "columns": [
+        "Kostprijs Food & Beverage",
+        "504",
+        "272"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Kostprijs merchandise",
+          "values": [
+            "52",
+            "39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verkoop",
+          "values": [
+            "83",
+            "44"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sponsoring",
+          "values": [
+            "0",
+            "21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige",
+          "values": [
+            "276",
+            "161"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "915",
+            "536"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "# *Huisvestingskosten*",
+      "columns": [
+        "Huur",
+        "145",
+        "126"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Onderhoud",
+          "values": [
+            "55",
+            "31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gas, water en electra",
+          "values": [
+            "86",
+            "157"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schoonmaakkosten",
+          "values": [
+            "55",
+            "54"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen en zakelijke lasten",
+          "values": [
+            "14",
+            "22"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige huisvestingskosten",
+          "values": [
+            "31",
+            "6"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "386",
+            "396"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 23,
+      "section": "# *Wedstrijd- en trainingskosten*",
+      "columns": [
+        "Wedstrijdkosten",
+        "671",
+        "429"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Trainingskosten",
+          "values": [
+            "61",
+            "57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "732",
+            "486"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "# *Algemene kosten*",
+      "columns": [
+        "Accountants- en juridische advieskosten",
+        "159",
+        "11"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Overige algemene kosten",
+          "values": [
+            "124",
+            "92"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "283",
+            "163"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "# *Som der financiële baten en lasten*",
+      "columns": [
+        "Rentebaten en soortgelijke opbrengsten",
+        "0",
+        "0"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Rentelasten en soortgelijke kosten",
+          "values": [
+            "(29)",
+            "(33)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(29)",
+            "(33)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 24,
+      "section": "# *Belastingen resultaat uit gewone bedrijfsoefening*",
+      "columns": [
+        "Latente belastingvordering",
+        "139",
+        "0"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "139",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/telstar-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"telstar\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+  ]
+}

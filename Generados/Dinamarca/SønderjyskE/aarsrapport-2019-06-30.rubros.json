@@ -1,0 +1,62 @@
+{
+ "md": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2019-06-30.md",
+ "pdf": "Clubes/Dinamarca/SønderjyskE/aarsrapport-2019-06-30.pdf",
+ "club": "sonderjyske-dk",
+ "year": 2019,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:00:07.528Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 4,
+  "notasUsadas": []
+ },
+ "ladoConocido": 4,
+ "rubros": [
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 20,
+   "section": "statustidspunktet omfattet af selskabslovens bestemmelse i & 119 vedrørende kapitaltab. / den daglige drift i regnskabsåret 2019/20. / den fortsatte drift således, at selskabet derigennem kan genvinde den tabte kapital. / kr. 2018/19 2017/18 / Personaleomkostninger",
+   "values": [
+    26.248534
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Pensioner",
+   "lado": "expense",
+   "page": 20,
+   "section": "statustidspunktet omfattet af selskabslovens bestemmelse i & 119 vedrørende kapitaltab. / den daglige drift i regnskabsåret 2019/20. / den fortsatte drift således, at selskabet derigennem kan genvinde den tabte kapital. / kr. 2018/19 2017/18 / Personaleomkostninger",
+   "values": [
+    0.8213
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Andre omkostninger til social sikring",
+   "lado": "expense",
+   "page": 20,
+   "section": "statustidspunktet omfattet af selskabslovens bestemmelse i & 119 vedrørende kapitaltab. / den daglige drift i regnskabsåret 2019/20. / den fortsatte drift således, at selskabet derigennem kan genvinde den tabte kapital. / kr. 2018/19 2017/18 / Personaleomkostninger",
+   "values": [
+    0.388269
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Andre personaleomkostninger",
+   "lado": "expense",
+   "page": 20,
+   "section": "statustidspunktet omfattet af selskabslovens bestemmelse i & 119 vedrørende kapitaltab. / den daglige drift i regnskabsåret 2019/20. / den fortsatte drift således, at selskabet derigennem kan genvinde den tabte kapital. / kr. 2018/19 2017/18 / Personaleomkostninger",
+   "values": [
+    1.91355
+   ],
+   "origen": "estado 3"
+  }
+ ]
+}

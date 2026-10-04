@@ -1,0 +1,397 @@
+{
+ "md": "Clubes/República Checa/Bohemians Praha 1905/SL95_2023.md",
+ "generatedAt": "2026-09-30T12:59:37.655Z",
+ "rubros": [
+  {
+   "label": "2024",
+   "lado": null,
+   "page": 14,
+   "section": "# VÝKAZ ZISKU A ZTRÁTY",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1560
+  },
+  {
+   "label": "Tržby z prodeje výrobků a služeb",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 3.6. Významné události mezi rozvahovým dnem a okamžikem sestavení účetní závěrky",
+   "choice": "lump_football_operations",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.68
+    ],
+    [
+     "other_income",
+     0.18
+    ],
+    [
+     "sponsorship_commercial",
+     0.09
+    ]
+   ],
+   "tokens": 875
+  },
+  {
+   "label": "Ostatní tržby a výnosy",
+   "lado": "revenue",
+   "page": 7,
+   "section": "### 1.3 Vývoj hlavních ukazatelů / #### 1.3.1 Údaje o tržbách",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 866
+  },
+  {
+   "label": "Tržby za služby",
+   "lado": "revenue",
+   "page": 7,
+   "section": "### 1.3 Vývoj hlavních ukazatelů / #### 1.3.1 Údaje o tržbách",
+   "choice": "lump_football_operations",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.48
+    ],
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "matchday_competition",
+     0.05
+    ]
+   ],
+   "tokens": 859
+  },
+  {
+   "label": "Tržby z prodeje zboží",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 3.6. Významné události mezi rozvahovým dnem a okamžikem sestavení účetní závěrky",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.58
+    ],
+    [
+     "other_income",
+     0.29
+    ],
+    [
+     "player_sales",
+     0.07
+    ]
+   ],
+   "tokens": 870
+  },
+  {
+   "label": "Ostatní tržby",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 3.6. Významné události mezi rozvahovým dnem a okamžikem sestavení účetní závěrky",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 866
+  },
+  {
+   "label": "CELKEM",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 3.6. Významné události mezi rozvahovým dnem a okamžikem sestavení účetní závěrky",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 862
+  },
+  {
+   "label": "Tržby z prodeje výrobků",
+   "lado": "revenue",
+   "page": 7,
+   "section": "### 1.3 Vývoj hlavních ukazatelů / #### 1.3.1 Údaje o tržbách",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.51
+    ],
+    [
+     "player_sales",
+     0.17
+    ],
+    [
+     "other_income",
+     0.17
+    ]
+   ],
+   "tokens": 866
+  },
+  {
+   "label": "Rozdělení VH za obd. 2021-2022",
+   "lado": null,
+   "page": 28,
+   "section": "Bohemians Praha 1905, a.s. / Stálo nebo bydliště účetní jednotky a místo podnikání šti-š ke od bydliště / Praha 10 / Vršovická 1489/31 / PSČ 100 00",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "lump_football_operations",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1349
+  },
+  {
+   "label": "VH za rok 2022-2023",
+   "lado": null,
+   "page": 28,
+   "section": "Bohemians Praha 1905, a.s. / Stálo nebo bydliště účetní jednotky a místo podnikání šti-š ke od bydliště / Praha 10 / Vršovická 1489/31 / PSČ 100 00",
+   "choice": "other_expenses",
+   "confidence": 0.18,
+   "top3": [
+    [
+     "other_expenses",
+     0.19999999999999998
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0.12
+    ]
+   ],
+   "tokens": 1495
+  },
+  {
+   "label": "Zůstatky k 1. 7. 2022",
+   "lado": null,
+   "page": 28,
+   "section": "Bohemians Praha 1905, a.s. / Stálo nebo bydliště účetní jednotky a místo podnikání šti-š ke od bydliště / Praha 10 / Vršovická 1489/31 / PSČ 100 00",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1346
+  },
+  {
+   "label": "Konenčné stavy k 30.6.2023",
+   "lado": null,
+   "page": 28,
+   "section": "Bohemians Praha 1905, a.s. / Stálo nebo bydliště účetní jednotky a místo podnikání šti-š ke od bydliště / Praha 10 / Vršovická 1489/31 / PSČ 100 00",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "other_income",
+     0.29000000000000004
+    ],
+    [
+     "admin_general_expense",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1500
+  },
+  {
+   "label": "Příplatek akcionářů mimo ZK",
+   "lado": null,
+   "page": 28,
+   "section": "Bohemians Praha 1905, a.s. / Stálo nebo bydliště účetní jednotky a místo podnikání šti-š ke od bydliště / Praha 10 / Vršovická 1489/31 / PSČ 100 00",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "member_dues",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "VH za rok 2023-2024",
+   "lado": null,
+   "page": 28,
+   "section": "Bohemians Praha 1905, a.s. / Stálo nebo bydliště účetní jednotky a místo podnikání šti-š ke od bydliště / Praha 10 / Vršovická 1489/31 / PSČ 100 00",
+   "choice": "other_income",
+   "confidence": 0.2,
+   "top3": [
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1695
+  },
+  {
+   "label": "korekce-zaokrouhlaní",
+   "lado": null,
+   "page": 28,
+   "section": "Bohemians Praha 1905, a.s. / Stálo nebo bydliště účetní jednotky a místo podnikání šti-š ke od bydliště / Praha 10 / Vršovická 1489/31 / PSČ 100 00",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "other_income",
+     0.21
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1340
+  },
+  {
+   "label": "Rozdělení VH za obd. 2022-2023",
+   "lado": null,
+   "page": 28,
+   "section": "Bohemians Praha 1905, a.s. / Stálo nebo bydliště účetní jednotky a místo podnikání šti-š ke od bydliště / Praha 10 / Vršovická 1489/31 / PSČ 100 00",
+   "choice": "other_expenses",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.18000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "Konenčné stavy k 30.6.2024",
+   "lado": null,
+   "page": 28,
+   "section": "Bohemians Praha 1905, a.s. / Stálo nebo bydliště účetní jednotky a místo podnikání šti-š ke od bydliště / Praha 10 / Vršovická 1489/31 / PSČ 100 00",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1637
+  }
+ ]
+}

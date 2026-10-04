@@ -1,0 +1,255 @@
+{
+  "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2009.md",
+  "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2009.pdf",
+  "club": "colocolo-cl",
+  "year": 2009,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:56:14.948Z",
+  "tieOuts": {
+    "cierran": 6,
+    "noCierran": 2
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 21,
+    "notasUsadas": []
+  },
+  "ladoConocido": 10,
+  "rubros": [
+    {
+      "label": "Servicios básicos",
+      "lado": null,
+      "page": 45,
+      "section": "",
+      "values": [
+        0.1174
+      ],
+      "origen": "estado 42",
+      "glosa": "Servicios básicos"
+    },
+    {
+      "label": "Asesorías",
+      "lado": null,
+      "page": 45,
+      "section": "",
+      "values": [
+        0.385731
+      ],
+      "origen": "estado 42",
+      "glosa": "Asesorías"
+    },
+    {
+      "label": "Depreciaciones",
+      "lado": null,
+      "page": 45,
+      "section": "",
+      "values": [
+        0.380504
+      ],
+      "origen": "estado 42",
+      "glosa": "Depreciaciones"
+    },
+    {
+      "label": "Gastos Legales",
+      "lado": "expense",
+      "page": 45,
+      "section": "",
+      "values": [
+        0.066101
+      ],
+      "origen": "estado 42",
+      "glosa": "Gastos Legales"
+    },
+    {
+      "label": "Mantenciones",
+      "lado": null,
+      "page": 45,
+      "section": "",
+      "values": [
+        0.021966
+      ],
+      "origen": "estado 42",
+      "glosa": "Mantenciones"
+    },
+    {
+      "label": "Remuneración administración",
+      "lado": null,
+      "page": 45,
+      "section": "",
+      "values": [
+        0.728521
+      ],
+      "origen": "estado 42",
+      "glosa": "Remuneración administración"
+    },
+    {
+      "label": "Otros gastos de administración",
+      "lado": "expense",
+      "page": 45,
+      "section": "",
+      "values": [
+        0.30915
+      ],
+      "origen": "estado 42",
+      "glosa": "Otros gastos de administración"
+    },
+    {
+      "label": "Costo de venta jugadores",
+      "lado": "expense",
+      "page": 45,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 23. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        1.641678
+      ],
+      "origen": "estado 41",
+      "glosa": "Costo de venta jugadores"
+    },
+    {
+      "label": "Remuneracion plantel profesional y cuerpo tecnico",
+      "lado": null,
+      "page": 45,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 23. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2.891001
+      ],
+      "origen": "estado 41",
+      "glosa": "Remuneracion plantel profesional y cuerpo tecnico"
+    },
+    {
+      "label": "Amortizacion Activos en concesion",
+      "lado": null,
+      "page": 45,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 23. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        0.589571
+      ],
+      "origen": "estado 41",
+      "glosa": "Amortizacion Activos en concesion"
+    },
+    {
+      "label": "Amortizacion pases jugadores profesionales",
+      "lado": null,
+      "page": 45,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 23. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2.082038
+      ],
+      "origen": "estado 41",
+      "glosa": "Amortizacion pases jugadores profesionales"
+    },
+    {
+      "label": "Costos de concentracion traslados y otros",
+      "lado": "expense",
+      "page": 45,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 23. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        0.71673
+      ],
+      "origen": "estado 41",
+      "glosa": "Costos de concentracion traslados y otros"
+    },
+    {
+      "label": "Otros costos",
+      "lado": "expense",
+      "page": 45,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 23. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        0.069879
+      ],
+      "origen": "estado 41",
+      "glosa": "Otros costos"
+    },
+    {
+      "label": "Saldo al 1º de enero de 2009",
+      "lado": null,
+      "page": 44,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 21. RESULTADOS RETENIDOS",
+      "values": [
+        5754.174
+      ],
+      "origen": "estado 38",
+      "glosa": "Saldo al 1º de enero de 2009"
+    },
+    {
+      "label": "Dividendos",
+      "lado": null,
+      "page": 44,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS PROFORMA / 21. RESULTADOS RETENIDOS",
+      "values": [
+        -990.532
+      ],
+      "origen": "estado 38",
+      "glosa": "Dividendos"
+    },
+    {
+      "label": "Ingresos por recaudaciones y venta de jugadores",
+      "lado": "revenue",
+      "page": 44,
+      "section": "22. INGRESOS ORDINARIOS",
+      "values": [
+        7426.133
+      ],
+      "origen": "estado 39",
+      "glosa": "Ingresos por recaudaciones y venta de jugadores"
+    },
+    {
+      "label": "Ingresos por publicidad",
+      "lado": "revenue",
+      "page": 44,
+      "section": "22. INGRESOS ORDINARIOS",
+      "values": [
+        3858.924
+      ],
+      "origen": "estado 39",
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Otros",
+      "lado": null,
+      "page": 44,
+      "section": "22. INGRESOS ORDINARIOS",
+      "values": [
+        271.309
+      ],
+      "origen": "estado 39",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Larrain Vial",
+      "lado": "revenue",
+      "page": 32,
+      "section": "8.   ACTIVOS FINANCIEROS DISPONIBLES PARA LA VENTA.",
+      "values": [
+        1.170515
+      ],
+      "origen": "estado 22",
+      "glosa": "Larrain Vial"
+    },
+    {
+      "label": "UBS Financial Service INC",
+      "lado": "revenue",
+      "page": 32,
+      "section": "8.   ACTIVOS FINANCIEROS DISPONIBLES PARA LA VENTA.",
+      "values": [
+        1.324543
+      ],
+      "origen": "estado 22",
+      "glosa": "UBS Financial Service INC"
+    },
+    {
+      "label": "Celfin Capital",
+      "lado": "revenue",
+      "page": 32,
+      "section": "8.   ACTIVOS FINANCIEROS DISPONIBLES PARA LA VENTA.",
+      "values": [
+        1.064986
+      ],
+      "origen": "estado 22",
+      "glosa": "Celfin Capital"
+    }
+  ]
+}

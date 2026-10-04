@@ -1,0 +1,372 @@
+{
+  "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2016.md",
+  "pdf": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2016.pdf",
+  "club": "udechile-cl",
+  "year": 2016,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:57:23.728Z",
+  "tieOuts": {
+    "cierran": 18,
+    "noCierran": 27
+  },
+  "warnings": [
+    "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "21 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "10 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 29,
+    "notasUsadas": [
+      "57",
+      "64",
+      "45"
+    ]
+  },
+  "ladoConocido": 29,
+  "rubros": [
+    {
+      "label": "Borderó (costos directos)",
+      "lado": "expense",
+      "page": 80,
+      "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        995.389
+      ],
+      "origen": "estado 57",
+      "glosa": "Borderó (costos directos)"
+    },
+    {
+      "label": "Remuneraciones",
+      "lado": "expense",
+      "page": 80,
+      "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        7624.582
+      ],
+      "origen": "estado 57",
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Amortización de pases",
+      "lado": "expense",
+      "page": 80,
+      "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        4094.686
+      ],
+      "origen": "estado 57",
+      "glosa": "Amortización de pases"
+    },
+    {
+      "label": "Costo de venta pases de jugadores",
+      "lado": "expense",
+      "page": 80,
+      "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        788.834
+      ],
+      "origen": "estado 57",
+      "glosa": "Costo de venta pases de jugadores"
+    },
+    {
+      "label": "Otros gastos de operación",
+      "lado": "expense",
+      "page": 80,
+      "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        1560.69
+      ],
+      "origen": "estado 57",
+      "glosa": "Otros gastos de operación"
+    },
+    {
+      "label": "Costos financieros",
+      "lado": "expense",
+      "page": 7,
+      "section": "",
+      "values": [
+        -423.329
+      ],
+      "origen": "estado 9",
+      "glosa": "Costos financieros"
+    },
+    {
+      "label": "Costo no amortizado",
+      "lado": "expense",
+      "page": 80,
+      "section": "Al 31 de Diciembre de 2016 y 31 de Diciembre de 2015 el detalle de los costos de venta / de pases de jugadores: / 31.12.2016       31.12.2015 / Costo de Venta Pases Jugadores                         M$               M$",
+      "values": [
+        0.494029
+      ],
+      "origen": "estado 58",
+      "glosa": "Costo no amortizado"
+    },
+    {
+      "label": "Indemnización por término anticipado de contrato",
+      "lado": null,
+      "page": 80,
+      "section": "Al 31 de Diciembre de 2016 y 31 de Diciembre de 2015 el detalle de los costos de venta / de pases de jugadores: / 31.12.2016       31.12.2015 / Costo de Venta Pases Jugadores                         M$               M$",
+      "values": [
+        0.033113
+      ],
+      "origen": "estado 58",
+      "glosa": "Indemnización por término anticipado de contrato"
+    },
+    {
+      "label": "Otros costos (1)",
+      "lado": "expense",
+      "page": 80,
+      "section": "Al 31 de Diciembre de 2016 y 31 de Diciembre de 2015 el detalle de los costos de venta / de pases de jugadores: / 31.12.2016       31.12.2015 / Costo de Venta Pases Jugadores                         M$               M$",
+      "values": [
+        0.261692
+      ],
+      "origen": "estado 58",
+      "glosa": "Otros costos (1)"
+    },
+    {
+      "label": "Ingresos de actividades ordinarias",
+      "lado": "revenue",
+      "page": 7,
+      "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR EL PERIODO DE 1 DE ENERO AL 31 DE DICIEMBRE DE 2016 Y 2015 (RE-EXPRESADO)",
+      "values": [
+        12792.767
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos de actividades ordinarias"
+    },
+    {
+      "label": "Otros Activos no financieros no corrientes 953.936 1.002.856 0 0 0",
+      "lado": "revenue",
+      "page": 83,
+      "section": "",
+      "values": [
+        953.936
+      ],
+      "origen": "nota 64 (ancla 1)",
+      "ancla": "Total de activos no corrientes",
+      "glosa": "Otros Activos no financieros no corrientes 953.936 1.002.856 0 0 0"
+    },
+    {
+      "label": "Total de activos no corrientes",
+      "lado": "revenue",
+      "page": 5,
+      "section": "Activos no corrientes o grupos de activos / 106.378         43.722         30.500 / para su disposición clasificados como / mantenidos para la venta / Activos no corrientes",
+      "values": [
+        24395.807
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Total de activos no corrientes"
+    },
+    {
+      "label": "Activos intangibles distintos de la plusvalía 13.965.102 10.916.296 0 0 0",
+      "lado": "revenue",
+      "page": 83,
+      "section": "",
+      "values": [
+        13965.102
+      ],
+      "origen": "nota 64 (ancla 1)",
+      "ancla": "Total de activos no corrientes",
+      "glosa": "Activos intangibles distintos de la plusvalía 13.965.102 10.916.296 0 0 0"
+    },
+    {
+      "label": "Propiedades, Planta y Equipo 2.965.012 3.435.931 0 0 0",
+      "lado": "revenue",
+      "page": 83,
+      "section": "",
+      "values": [
+        2965.012
+      ],
+      "origen": "nota 64 (ancla 1)",
+      "ancla": "Total de activos no corrientes",
+      "glosa": "Propiedades, Planta y Equipo 2.965.012 3.435.931 0 0 0"
+    },
+    {
+      "label": "Provisión deudores incobrables",
+      "lado": "revenue",
+      "page": 70,
+      "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+      "values": [
+        77.015
+      ],
+      "origen": "nota 45 (ancla 1>64)",
+      "ancla": "Total de activos no corrientes",
+      "glosa": "Provisión deudores incobrables"
+    },
+    {
+      "label": "Ingresos percibidos por adelantados",
+      "lado": "revenue",
+      "page": 70,
+      "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+      "values": [
+        179.249
+      ],
+      "origen": "nota 45 (ancla 1>64)",
+      "ancla": "Total de activos no corrientes",
+      "glosa": "Ingresos percibidos por adelantados"
+    },
+    {
+      "label": "Provisión vacaciones",
+      "lado": "revenue",
+      "page": 70,
+      "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+      "values": [
+        33.756
+      ],
+      "origen": "nota 45 (ancla 1>64)",
+      "ancla": "Total de activos no corrientes",
+      "glosa": "Provisión vacaciones"
+    },
+    {
+      "label": "Pérdida Tributaria",
+      "lado": "revenue",
+      "page": 70,
+      "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+      "values": [
+        4651.407
+      ],
+      "origen": "nota 45 (ancla 1>64)",
+      "ancla": "Total de activos no corrientes",
+      "glosa": "Pérdida Tributaria"
+    },
+    {
+      "label": "Propiedad, Planta y Equipo",
+      "lado": "revenue",
+      "page": 70,
+      "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+      "values": [
+        160.547
+      ],
+      "origen": "nota 45 (ancla 1>64)",
+      "ancla": "Total de activos no corrientes",
+      "glosa": "Propiedad, Planta y Equipo"
+    },
+    {
+      "label": "Pases de Jugadores",
+      "lado": "revenue",
+      "page": 70,
+      "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+      "values": [
+        82.824
+      ],
+      "origen": "nota 45 (ancla 1>64)",
+      "ancla": "Total de activos no corrientes",
+      "glosa": "Pases de Jugadores"
+    },
+    {
+      "label": "Provisión reposición Propiedad, Planta y Equipo",
+      "lado": "revenue",
+      "page": 70,
+      "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+      "values": [
+        4.471
+      ],
+      "origen": "nota 45 (ancla 1>64)",
+      "ancla": "Total de activos no corrientes",
+      "glosa": "Provisión reposición Propiedad, Planta y Equipo"
+    },
+    {
+      "label": "Deuda de Tesorería",
+      "lado": "revenue",
+      "page": 70,
+      "section": "14. IMPUESTOS DIFERIDOS E IMPUESTO A LAS GANANCIAS",
+      "values": [
+        1319.336
+      ],
+      "origen": "nota 45 (ancla 1>64)",
+      "ancla": "Total de activos no corrientes",
+      "glosa": "Deuda de Tesorería"
+    },
+    {
+      "label": "Otros activos financieros no corrientes 9",
+      "lado": "revenue",
+      "page": 5,
+      "section": "Activos no corrientes o grupos de activos / 106.378         43.722         30.500 / para su disposición clasificados como / mantenidos para la venta / Activos no corrientes",
+      "values": [
+        332.936
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros activos financieros no corrientes 9"
+    },
+    {
+      "label": "Concesión",
+      "lado": "revenue",
+      "page": 22,
+      "section": "Activo Disponible para la venta                          -200                  0",
+      "values": [
+        1.856588
+      ],
+      "origen": "estado 29",
+      "glosa": "Concesión"
+    },
+    {
+      "label": "Pago Deuda Tesorería",
+      "lado": "revenue",
+      "page": 22,
+      "section": "Activo Disponible para la venta                          -200                  0",
+      "values": [
+        -0.097845
+      ],
+      "origen": "estado 29",
+      "glosa": "Pago Deuda Tesorería"
+    },
+    {
+      "label": "Borderó",
+      "lado": "revenue",
+      "page": 79,
+      "section": "21. INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        3575.9
+      ],
+      "origen": "estado 55",
+      "glosa": "Borderó"
+    },
+    {
+      "label": "Publicidad",
+      "lado": "revenue",
+      "page": 79,
+      "section": "21. INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        5239.207
+      ],
+      "origen": "estado 55",
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Derechos de T.V.",
+      "lado": "revenue",
+      "page": 79,
+      "section": "21. INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        3012.071
+      ],
+      "origen": "estado 55",
+      "glosa": "Derechos de T.V."
+    },
+    {
+      "label": "jugadores",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos por transferencias de pases de",
+      "values": [
+        314.004
+      ],
+      "origen": "estado 56",
+      "glosa": "jugadores"
+    },
+    {
+      "label": "Ingresos varios",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos por transferencias de pases de",
+      "values": [
+        651.585
+      ],
+      "origen": "estado 56",
+      "glosa": "Ingresos varios"
+    }
+  ]
+}

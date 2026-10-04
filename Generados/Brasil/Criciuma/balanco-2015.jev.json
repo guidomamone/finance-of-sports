@@ -1,0 +1,1156 @@
+{
+ "md": "Clubes/Brasil/Criciuma/balanco-2015.md",
+ "generatedAt": "2026-09-30T04:25:55.320Z",
+ "rubros": [
+  {
+   "label": "Departamento de Marketing e Comercial",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.54
+    ],
+    [
+     "admin_general_expense",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "Departamento Jurídico",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1518
+  },
+  {
+   "label": "RECEITA OPERACIONAL BRUTA",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1554
+  },
+  {
+   "label": "Departamento Financeiro",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1518
+  },
+  {
+   "label": "Departamento de Patrimonio",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1513
+  },
+  {
+   "label": "Departamento Administrativo",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1523
+  },
+  {
+   "label": "Departamento Futebol Profissional",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.86
+    ],
+    [
+     "wages_squad",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1576
+  },
+  {
+   "label": "Departamento Futebol de Base",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.87
+    ],
+    [
+     "youth_football",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1556
+  },
+  {
+   "label": "Departamento Loja - Tigre Maníacos",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1517
+  },
+  {
+   "label": "CUSTOS E DESPESAS OPERACIONAIS",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 1565
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1531
+  },
+  {
+   "label": "SUPERAVIT/DEFICIT ANTES DO RESULTADO FINANCEIRO",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "lump_football_operations",
+     0.15000000000000002
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1542
+  },
+  {
+   "label": "Receitas Financeiras",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1509
+  },
+  {
+   "label": "Despesas Financeiras",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.8200000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1534
+  },
+  {
+   "label": "RESULTADO FINANCEIRO LÍQUIDO",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1534
+  },
+  {
+   "label": "Déficit / Superavit do exercício",
+   "lado": null,
+   "page": 6,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DO RESULTADO ABRANGENTE DOS EXERCICIOS FINDOS EM / (Expresso em unidades de reais)",
+   "choice": "other_expenses",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "lump_football_operations",
+     0.32
+    ],
+    [
+     "other_income",
+     0.25
+    ]
+   ],
+   "tokens": 1431
+  },
+  {
+   "label": "Descrição",
+   "lado": "revenue",
+   "page": 20,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / 6 Patrocínios a receber e receitas de patrocínio a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 876
+  },
+  {
+   "label": "Nissin – Ajinomoto Alimentos Ltda.",
+   "lado": "revenue",
+   "page": 20,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / 6 Patrocínios a receber e receitas de patrocínio a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 884
+  },
+  {
+   "label": "Deycon Com e Representações Ltda.",
+   "lado": "revenue",
+   "page": 20,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / 6 Patrocínios a receber e receitas de patrocínio a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.77
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "SUPERAVIT / DEFICIT DO EXERCICIO",
+   "lado": null,
+   "page": 5,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / CRICIUMA ESPORTE CLUBE / DEMONSTRAÇÃO DOS RESULTADOS DOS PERÍODOS DE / (Expresso em unidades de reais)",
+   "choice": "lump_football_operations",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "other_income",
+     0.28
+    ]
+   ],
+   "tokens": 1427
+  },
+  {
+   "label": "Midea – Springer Carrier Ltda",
+   "lado": "revenue",
+   "page": 20,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / 6 Patrocínios a receber e receitas de patrocínio a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 879
+  },
+  {
+   "label": "SIECESC - Sindicato da Indústria do Carvão",
+   "lado": "revenue",
+   "page": 20,
+   "section": "OMV – AUDITORES INDEPENDENTES S/S / CRC/SC – N. 3.628 – CVM AD. 10.028/08 / 6 Patrocínios a receber e receitas de patrocínio a realizar",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "sponsorship_commercial",
+     0.22
+    ],
+    [
+     "member_dues",
+     0.03
+    ]
+   ],
+   "tokens": 952
+  },
+  {
+   "label": "Terreno",
+   "lado": "expense",
+   "page": 20,
+   "section": "Ano 2014",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.35
+    ],
+    [
+     "depreciation",
+     0.13
+    ]
+   ],
+   "tokens": 789
+  },
+  {
+   "label": "Veículos",
+   "lado": "expense",
+   "page": 20,
+   "section": "Ano 2014",
+   "choice": "other_expenses",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "depreciation",
+     0.26
+    ]
+   ],
+   "tokens": 790
+  },
+  {
+   "label": "Edificações",
+   "lado": "expense",
+   "page": 20,
+   "section": "Ano 2014",
+   "choice": "depreciation",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "depreciation",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 792
+  },
+  {
+   "label": "Maquinas e Equipamentos",
+   "lado": "expense",
+   "page": 20,
+   "section": "Ano 2014",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "depreciation",
+     0.07
+    ]
+   ],
+   "tokens": 904
+  },
+  {
+   "label": "Equipamentos de Informática",
+   "lado": "expense",
+   "page": 20,
+   "section": "Ano 2014",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 933
+  },
+  {
+   "label": "Obras em Execução",
+   "lado": "expense",
+   "page": 20,
+   "section": "Ano 2014",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 851
+  },
+  {
+   "label": "Moveis e Utensílios",
+   "lado": "expense",
+   "page": 20,
+   "section": "Ano 2014",
+   "choice": "admin_general_expense",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "depreciation",
+     0.25
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "Atletas Formados",
+   "lado": "expense",
+   "page": 21,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.9
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Atletas em Formação",
+   "lado": "expense",
+   "page": 21,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.83
+    ],
+    [
+     "player_amortisation",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Atletas Contratados",
+   "lado": "expense",
+   "page": 21,
+   "section": "Os gastos com a formação de atletas apresentavam a seguinte movimentação:",
+   "choice": "other_expenses",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "youth_other_sports_expense",
+     0.22
+    ],
+    [
+     "player_amortisation",
+     0.2
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Projeto Construção Centro de Treinamento - PMC",
+   "lado": "revenue",
+   "page": 23,
+   "section": "12 Receitas de subvenções a realizar",
+   "choice": "other_income",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "member_dues",
+     0.21
+    ],
+    [
+     "sponsorship_commercial",
+     0.08
+    ]
+   ],
+   "tokens": 938
+  },
+  {
+   "label": "Projeto de Formação de Atletas Amadores – (1)",
+   "lado": "revenue",
+   "page": 23,
+   "section": "12 Receitas de subvenções a realizar",
+   "choice": "youth_football",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "youth_football",
+     0.83
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "other_sports",
+     0.07
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Receita com transmissão televisíveis",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Projeto Construção Centro de Treinamento - MESP",
+   "lado": "revenue",
+   "page": 23,
+   "section": "12 Receitas de subvenções a realizar",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "member_dues",
+     0.1
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ]
+   ],
+   "tokens": 939
+  },
+  {
+   "label": "Receita de mecanismo de solidariedade",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "choice": "player_sales",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "player_sales",
+     0.92
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "youth_football",
+     0.03
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Receita com mensalidade de sócios",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "choice": "member_dues",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "member_dues",
+     0.96
+    ],
+    [
+     "season_tickets",
+     0.04
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Venda de mercadorias",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Repasse de direitos federativos",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Receitas Publicidades",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Receitas de royalties",
+   "lado": "revenue",
+   "page": 25,
+   "section": "16 Receitas operacionais brutas",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.61
+    ],
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "broadcasting",
+     0.02
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Rendas de aplicações financeiras",
+   "lado": null,
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1315
+  },
+  {
+   "label": "Descontos obtidos",
+   "lado": null,
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1310
+  },
+  {
+   "label": "Outras receitas financeiras",
+   "lado": null,
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1453
+  },
+  {
+   "label": "Juros sobre Empréstimos",
+   "lado": null,
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1479
+  },
+  {
+   "label": "Descontos concedidos (perdão de dívidas de sócios)",
+   "lado": null,
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "choice": "other_income",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ]
+   ],
+   "tokens": 1447
+  },
+  {
+   "label": "Despesas e comissões bancárias",
+   "lado": null,
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1473
+  },
+  {
+   "label": "Resultado Financeiro",
+   "lado": null,
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1463
+  },
+  {
+   "label": "Outras despesas financeiras",
+   "lado": null,
+   "page": 25,
+   "section": "17 Resultado financeiro líquido",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1476
+  }
+ ]
+}

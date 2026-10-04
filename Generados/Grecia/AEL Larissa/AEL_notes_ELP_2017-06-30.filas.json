@@ -1,0 +1,183 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2017-06-30.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2017-06-30.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T13:20:15.394Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala; los importes llevan dos decimales (ej. 1.881.041,86), lo que sugiere unidades (euros)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 78,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "1.881.041,86",
+   "anterior": "596.069,48",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 79,
+   "etiqueta": "(-) Κόστος πωλήσεων",
+   "actual": "-1.477.726,18",
+   "anterior": "-726.277,15",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 80,
+   "etiqueta": "Μικτό αποτέλεσμα",
+   "actual": "403.315,69",
+   "anterior": "-130.207,67",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 81,
+   "etiqueta": "(+) Λοιπά συνήθη έσοδα",
+   "actual": "338.744,03",
+   "anterior": "374.833,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 82,
+   "etiqueta": "",
+   "actual": "742.059,72",
+   "anterior": "244.625,33",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 83,
+   "etiqueta": "(-) Έξοδα διοίκησης",
+   "actual": "-611.472,90",
+   "anterior": "-300.528,48",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 84,
+   "etiqueta": "(-) Έξοδα διάθεσης",
+   "actual": "-458.604,68",
+   "anterior": "-225.396,36",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 85,
+   "etiqueta": "(-) Λοιπά έξοδα και ζημιές",
+   "actual": "-20.178,71",
+   "anterior": "-99.590,58",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 86,
+   "etiqueta": "(+) Λοιπά έσοδα και κέρδη",
+   "actual": "0,00",
+   "anterior": "30.362,50",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 87,
+   "etiqueta": "Αποτελέσματα προ τόκων και φόρων",
+   "actual": "-348.196,57",
+   "anterior": "-350.527,59",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 89,
+   "etiqueta": "(-) Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "-6.263,77",
+   "anterior": "-2.401,53",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 90,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "-354.460,34",
+   "anterior": "-352.929,12",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 91,
+   "etiqueta": "(-) Φόροι εισοδήματος",
+   "actual": "0,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 92,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "-354.460,34",
+   "anterior": "-352.929,12",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 92,
+  "actual": "-354.460,34",
+  "anterior": "-352.929,12"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes del estado (b2) como euros en unidades, ya que no se imprime la escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque b2 no indica escala; los dos decimales sugieren unidades monetarias (L76-L92).",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados sin notas de desglose. L88 (Πιστωτικοί τόκοι) no tiene importes y se omitió. L82 es un subtotal sin etiqueta (margen bruto + otros ingresos ordinarios). No se imprimen totales de ingresos ni de gastos."
+}

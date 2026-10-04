@@ -1,0 +1,147 @@
+{
+ "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2020.md",
+ "generatedAt": "2026-09-30T22:48:54.571Z",
+ "rubrosHuella": "e5f4ba818e4d292fb7c0a483269fd983d832cc50",
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2020 Y 2019.",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Gasto de administración",
+   "lado": "expense",
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2020 Y 2019.",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos financieros",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2020 Y 2019.",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos financieros",
+   "lado": "expense",
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2020 Y 2019.",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Borderó (costos directos)",
+   "lado": "expense",
+   "page": 76,
+   "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "match_organisation_expense",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneraciones",
+   "lado": null,
+   "page": 76,
+   "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización de pases",
+   "lado": null,
+   "page": 76,
+   "section": "21.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de venta pases de jugadores",
+   "lado": "expense",
+   "page": 76,
+   "section": "Costo no amortizado por bajas de / 0                        125.458 / pases",
+   "choice": "player_amortisation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos de operación",
+   "lado": "expense",
+   "page": 76,
+   "section": "Costo no amortizado por bajas de / 0                        125.458 / pases",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Borderó",
+   "lado": "revenue",
+   "page": 75,
+   "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 75,
+   "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Participación torneos Internacionales",
+   "lado": "revenue",
+   "page": 75,
+   "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos de T.V.",
+   "lado": "revenue",
+   "page": 75,
+   "section": "20.- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2020 Y 2019.",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1050
+  }
+ ]
+}

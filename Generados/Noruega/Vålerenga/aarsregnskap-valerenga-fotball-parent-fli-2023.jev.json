@@ -1,0 +1,2214 @@
+{
+ "md": "Clubes/Noruega/Vålerenga/aarsregnskap-valerenga-fotball-parent-fli-2023.md",
+ "generatedAt": "2026-09-30T12:59:32.714Z",
+ "rubros": [
+  {
+   "label": "Medie og ligasponsorinntekter",
+   "lado": null,
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL / # RESULTATREGNSKAP",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Reklame og sponsorinntekter",
+   "lado": null,
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL / # RESULTATREGNSKAP",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1349
+  },
+  {
+   "label": "Medlems og aktivitetsavgifter",
+   "lado": null,
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL / # RESULTATREGNSKAP",
+   "choice": "member_dues",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "member_dues",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Andre salgsinntekter",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "player_sales",
+     0.11
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1561
+  },
+  {
+   "label": "Kampbillettinntekter",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Andre kamps og arrangementsinntekter",
+   "lado": null,
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL / # RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "stadium_other",
+     0.14
+    ],
+    [
+     "matchday_competition",
+     0.12
+    ]
+   ],
+   "tokens": 1567
+  },
+  {
+   "label": "Andre inntekter",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1559
+  },
+  {
+   "label": "Leieinntekter",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "stadium_other",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "stadium_other",
+     0.83
+    ],
+    [
+     "other_income",
+     0.14
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Variable kamp og treningskostnader inkl arr. kost",
+   "lado": null,
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL / # RESULTATREGNSKAP",
+   "choice": "match_organisation_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.95
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1331
+  },
+  {
+   "label": "Leie av faste trenings- og kampfasiliteter",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "other_expenses",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0.3
+    ],
+    [
+     "match_organisation_expense",
+     0.26
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Avskrivning spiller kontrakter",
+   "lado": null,
+   "page": 2,
+   "section": "VÅLERENGA FOTBALL / # RESULTATREGNSKAP",
+   "choice": "player_amortisation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "player_amortisation",
+     0.97
+    ],
+    [
+     "depreciation",
+     0.02
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Avskrivning forøvrig",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "other_amortisation",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_amortisation",
+     0.73
+    ],
+    [
+     "depreciation",
+     0.18000000000000002
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1584
+  },
+  {
+   "label": "Administrasjonskostnader",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Bane og anleggskostnader egne anlegg",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "depreciation",
+     0.06
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Kostnader reklame og sponsor",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "sponsorship_commercial",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1370
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1560
+  },
+  {
+   "label": "Direkte kostnader ved kjøp av spillerrettigheter",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "player_amortisation",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "player_amortisation",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1393
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Netto finans",
+   "lado": null,
+   "page": 6,
+   "section": "VÅLERENGA FOTBALL / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Ordinært resultat før skattekostnad",
+   "lado": null,
+   "page": 6,
+   "section": "VÅLERENGA FOTBALL / # KONSERNRESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Salgskostnader",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "other_expenses",
+   "confidence": 0.25,
+   "top3": [
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.23
+    ],
+    [
+     "match_organisation_expense",
+     0.2
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Driftsresultat",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "lump_football_operations",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Medlemsinntekter",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1277
+  },
+  {
+   "label": "Avskrivning på driftsmidler",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1279
+  },
+  {
+   "label": "Direkte kostnader ved kjøp av spillerrrettigheter",
+   "lado": null,
+   "page": 6,
+   "section": "VÅLERENGA FOTBALL / # KONSERNRESULTATREGNSKAP",
+   "choice": "player_amortisation",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "player_amortisation",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "lump_football_operations_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1389
+  },
+  {
+   "label": "Variable kamp- og treningskostnader",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "match_organisation_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.84
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1336
+  },
+  {
+   "label": "Avskrivning på spillerkontrakter",
+   "lado": null,
+   "page": 6,
+   "section": "VÅLERENGA FOTBALL / # KONSERNRESULTATREGNSKAP",
+   "choice": "player_amortisation",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "player_amortisation",
+     0.93
+    ],
+    [
+     "depreciation",
+     0.03
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Leie av fast trenings- og kampfasiliteter",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "match_organisation_expense",
+     0.23
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Skattekostnad på ordinært resultat",
+   "lado": null,
+   "page": 6,
+   "section": "VÅLERENGA FOTBALL / # KONSERNRESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Lønnskostnader m.m.",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "wages_squad",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "wages_squad",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "Ordinært resultat etter skattekostnad",
+   "lado": null,
+   "page": 6,
+   "section": "VÅLERENGA FOTBALL / # KONSERNRESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.55
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Årsresultat",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "other_income",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_income",
+     0.63
+    ],
+    [
+     "lump_football_operations",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1265
+  },
+  {
+   "label": "Avskrivning av spillerkontrakter",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "player_amortisation",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "player_amortisation",
+     0.93
+    ],
+    [
+     "depreciation",
+     0.03
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "Resultat av finansposter",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.06999999999999999
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Ordinært res. før skattekostnad",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.48
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ]
+   ],
+   "tokens": 1347
+  },
+  {
+   "label": "Ordinært resultat",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Overført til stadionfond",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1455
+  },
+  {
+   "label": "Årsoverskudd",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.85
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Grasrotmidler",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Andre inntekter består av:",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "member_dues",
+     0.28
+    ],
+    [
+     "youth_football",
+     0.13
+    ]
+   ],
+   "tokens": 824
+  },
+  {
+   "label": "Overført fra/til annen egenkapital",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1515
+  },
+  {
+   "label": "Skattekostn. på ordinært resultat",
+   "lado": null,
+   "page": 12,
+   "section": "# Vålerenga Fotball - Konsern / RESULTATREGNSKAPET 2023",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "Mva kompensasjon",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.54
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "player_sales",
+     0.07
+    ]
+   ],
+   "tokens": 815
+  },
+  {
+   "label": "Tilskudd NIF, NFF og Toppfotball Kvinner",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "womens_football",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "womens_football",
+     0.89
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 825
+  },
+  {
+   "label": "Støtte fra kommunen",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Andre inntekter består av:",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "sponsorship_commercial",
+     0.15
+    ],
+    [
+     "education",
+     0.09
+    ]
+   ],
+   "tokens": 913
+  },
+  {
+   "label": "Andre idrettsrelaterte inntekter",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "lump_football_operations",
+     0.15
+    ],
+    [
+     "other_sports",
+     0.08
+    ]
+   ],
+   "tokens": 1110
+  },
+  {
+   "label": "Fakturering av felleskostnader",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 818
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 27,
+   "section": "Personalkostnader består av:",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 863
+  },
+  {
+   "label": "Øvrig støtte og tilskudd",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Andre inntekter består av:",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 827
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 27,
+   "section": "Personalkostnader består av:",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "wages_squad",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 27,
+   "section": "Personalkostnader består av:",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "wages_squad",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 792
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 27,
+   "section": "Personalkostnader består av:",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "wages_squad",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1106
+  },
+  {
+   "label": "Anskaffelseskost 31.12.2023",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Note 5 Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.06999999999999999
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 839
+  },
+  {
+   "label": "Tilgang i året",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Note 5 Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ],
+    [
+     "player_sales",
+     0.04
+    ]
+   ],
+   "tokens": 826
+  },
+  {
+   "label": "Anskaffelseskost 1.1.2023",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Note 5 Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Årets avskrivninger",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Note 5 Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.73
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "other_sports",
+     0.02
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Investeringstilskudd",
+   "lado": "revenue",
+   "page": 18,
+   "section": "Note 4 Aktiverte spillerkontrakter / Note 5 Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ]
+   ],
+   "tokens": 839
+  },
+  {
+   "label": "Akk avskr./nedskr. 31.12.2023",
+   "lado": "revenue",
+   "page": 18,
+   "section": "Note 4 Aktiverte spillerkontrakter / Note 5 Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 852
+  },
+  {
+   "label": "Balanseført verdi pr. 31.12.2023",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Note 5 Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.9400000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 841
+  },
+  {
+   "label": "Økonomisk levetid",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Note 5 Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Endring utsatt skattefordel/utsatt skatt",
+   "lado": "expense",
+   "page": 18,
+   "section": "Av forsiktighetsprinsippet er ikke utsatt skattefordel bokført i regnskapet.",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 818
+  },
+  {
+   "label": "Betalbar skatt",
+   "lado": "expense",
+   "page": 18,
+   "section": "Av forsiktighetsprinsippet er ikke utsatt skattefordel bokført i regnskapet.",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 810
+  },
+  {
+   "label": "Skattekostnad ordinært resultat",
+   "lado": "expense",
+   "page": 18,
+   "section": "Av forsiktighetsprinsippet er ikke utsatt skattefordel bokført i regnskapet.",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 815
+  },
+  {
+   "label": "Endring i midlertidige forskjeller",
+   "lado": "revenue",
+   "page": 18,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 820
+  },
+  {
+   "label": "Ordinært resultat før skatt",
+   "lado": "revenue",
+   "page": 18,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 817
+  },
+  {
+   "label": "Anvendelse av fremførbart underskudd",
+   "lado": "revenue",
+   "page": 18,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 820
+  },
+  {
+   "label": "Skattepliktig inntekt",
+   "lado": "revenue",
+   "page": 18,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "lump_football_operations",
+     0.18
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 816
+  },
+  {
+   "label": "Medlems- og aktivitetsavgifter",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Reklame-/sponsorinntekter",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1347
+  },
+  {
+   "label": "Permanente forskjeller",
+   "lado": "revenue",
+   "page": 18,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.9400000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 815
+  },
+  {
+   "label": "Medle- og ligasponsorinntekter",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "member_dues",
+     0.03
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Andre kamps- og arrangementsinntekter",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "matchday_competition",
+     0.15
+    ],
+    [
+     "stadium_other",
+     0.13
+    ]
+   ],
+   "tokens": 1566
+  },
+  {
+   "label": "Variable kamp og treningskostnader inkl arr.kost",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "match_organisation_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.92
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1329
+  },
+  {
+   "label": "Avskrivning spillerkontrakter",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "player_amortisation",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "player_amortisation",
+     0.9
+    ],
+    [
+     "depreciation",
+     0.05
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1269
+  },
+  {
+   "label": "Resultat før skattekostnad",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Direkte kostnader ved kjap av spillerrettigheter",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "player_amortisation",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "player_amortisation",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1382
+  },
+  {
+   "label": "Skattekostnad på resultat",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Avsatt til annen egenkapital",
+   "lado": null,
+   "page": 23,
+   "section": "## Resultatregnskap / ### Vålerenga Fotball",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1445
+  },
+  {
+   "label": "Mva-kompensasjon",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Andre inntekter består av:",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 826
+  },
+  {
+   "label": "Tilskudd NFF, NTF og NIF",
+   "lado": "revenue",
+   "page": 27,
+   "section": "Andre inntekter består av:",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "Påmeldingsavgifter, liseser mm",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "choice": "match_organisation_expense",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "youth_other_sports_expense",
+     0.15
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "Drakt og utstyr",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "match_organisation_expense",
+     0.06
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "Utdanning trenere",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "choice": "education_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "education_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Vare og innkjøpskostnader",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "match_organisation_expense",
+     0.23
+    ]
+   ],
+   "tokens": 798
+  },
+  {
+   "label": "Reise, bespisning og opphold",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "choice": "match_organisation_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.87
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 798
+  },
+  {
+   "label": "Dommerkostnader",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "choice": "match_organisation_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 793
+  },
+  {
+   "label": "Dugnader og øvrig fremmedtjeneste",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "match_organisation_expense",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Øvrig kamp og treningsrelatert kostnad",
+   "lado": "expense",
+   "page": 27,
+   "section": "Variable kamp og treningskostnader består av",
+   "choice": "match_organisation_expense",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "lump_football_operations_expense",
+     0.17
+    ]
+   ],
+   "tokens": 859
+  },
+  {
+   "label": "Avgang i året",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Note 5 Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "player_sales",
+     0.25
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 826
+  },
+  {
+   "label": "Alk avskrivninger 31.12.2023",
+   "lado": "revenue",
+   "page": 28,
+   "section": "# Note 5 Varige driftsmidler",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ],
+    [
+     "other_sports",
+     0.01
+    ]
+   ],
+   "tokens": 840
+  },
+  {
+   "label": "Overføring til annen egenkapital",
+   "lado": "expense",
+   "page": 52,
+   "section": "# 9. Klubben årsregnskap / ### *Vålerenga Fotball* / ### *Vålerenga Fotball Konsern* / ## Årsresultat og disponeringer / ### *Vålerenga Fotball*",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1024
+  }
+ ]
+}

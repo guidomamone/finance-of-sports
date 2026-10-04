@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Japón/_J.League (todos los clubes)/club_doc-2019.md",
+ "pdf": "Clubes/Japón/_J.League (todos los clubes)/club_doc-2019.pdf",
+ "club": "j-league-todos-los-clubes",
+ "year": 2019,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:05:43.256Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "1 営業収益 85,597 89,115 +3,518 33,894 36,405 +2,511 6,218 6,960 +742",
+   "lado": "revenue",
+   "page": 11,
+   "section": "２－１．決算数値の概要： Ｊ１・Ｊ２・Ｊ３クラブ合計 / ・スポンサー収入640億円(前年比+45億円)、入場料収入216億円(前年比+23億円) / ・チーム人件費644億円(前年比+61億円) / （百万円） / Ｊ１合計                         Ｊ２合計                       Ｊ３合計               Ｊ１+Ｊ２+Ｊ３合計",
+   "values": [
+    0.125709
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "2 スポンサー収入 38,335 39,832 +1,497 17,817 20,411 +2,594 3,380 3,776 +396",
+   "lado": "revenue",
+   "page": 11,
+   "section": "２－１．決算数値の概要： Ｊ１・Ｊ２・Ｊ３クラブ合計 / ・スポンサー収入640億円(前年比+45億円)、入場料収入216億円(前年比+23億円) / ・チーム人件費644億円(前年比+61億円) / （百万円） / Ｊ１合計                         Ｊ２合計                       Ｊ３合計               Ｊ１+Ｊ２+Ｊ３合計",
+   "values": [
+    0.059532
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "3 入場料収入 14,474 16,672 +2,198 4,368 4,381 +13 409 528 +119",
+   "lado": "revenue",
+   "page": 11,
+   "section": "２－１．決算数値の概要： Ｊ１・Ｊ２・Ｊ３クラブ合計 / ・スポンサー収入640億円(前年比+45億円)、入場料収入216億円(前年比+23億円) / ・チーム人件費644億円(前年比+61億円) / （百万円） / Ｊ１合計                         Ｊ２合計                       Ｊ３合計               Ｊ１+Ｊ２+Ｊ３合計",
+   "values": [
+    0.019251
+   ],
+   "origen": "estado 0"
+  }
+ ]
+}

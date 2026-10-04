@@ -1,0 +1,129 @@
+{
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.md",
+ "generatedAt": "2026-10-03T20:30:54.827Z",
+ "rubrosHuella": "ba3dac8291454729488ff03268edfd22dd79057b",
+ "rubros": [
+  {
+   "label": "Πωλήσεις υπηρεσιών",
+   "lado": "revenue",
+   "page": 14,
+   "section": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\"",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Επιχορηγήσεις & διάφορα έσοδα πωλήσεων",
+   "lado": "revenue",
+   "page": 14,
+   "section": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα παρεπόμενων ασχολιών",
+   "lado": "revenue",
+   "page": 14,
+   "section": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\"",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "(+) Λοιπά έσοδα και κέρδη",
+   "lado": "revenue",
+   "page": 3,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Αμοιβές και έξοδα προσωπικού",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+   "choice": "wages_squad",
+   "confidence": 0.36,
+   "desdeCache": true
+  },
+  {
+   "label": "Αμοιβές και έξοδα τρίτων",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Αποσβέσεις",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+   "choice": "other_amortisation",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Φόροι-τέλη",
+   "lado": "expense",
+   "page": 14,
+   "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Λοιπά έξοδα και ζημιές",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Πωλήσεις λοιπών αποθεμάτων & άχρηστου υλικού",
+   "lado": "revenue",
+   "page": 14,
+   "section": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1098
+  }
+ ]
+}

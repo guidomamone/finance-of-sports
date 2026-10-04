@@ -1,0 +1,1047 @@
+{
+  "md": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.md",
+  "pdf": "Clubes/Argentina/Ferro Carril Oeste/balance-ejercicio-121-2024-25.pdf",
+  "club": "ferrocarriloeste-ar",
+  "year": 2025,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:50:56.684Z",
+  "tieOuts": {
+    "cierran": 51,
+    "noCierran": 10
+  },
+  "warnings": [
+    "9 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "7 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 86,
+    "notasUsadas": [
+      "7",
+      "8"
+    ]
+  },
+  "ladoConocido": 87,
+  "rubros": [
+    {
+      "label": "Para fines generales ( Anexo B )",
+      "lado": "revenue",
+      "page": 3,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ### ESTADO DE RECURSOS Y GASTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        4615.086829
+      ],
+      "origen": "estado 1",
+      "glosa": "Para fines generales ( Anexo B )"
+    },
+    {
+      "label": "Específicos ( Anexo B )",
+      "lado": "revenue",
+      "page": 3,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ### ESTADO DE RECURSOS Y GASTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        10025.940515
+      ],
+      "origen": "estado 1",
+      "glosa": "Específicos ( Anexo B )"
+    },
+    {
+      "label": "1- Departamento de Educacion Fisica",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        497.873922
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "1- Departamento de Educacion Fisica"
+    },
+    {
+      "label": "Específicos de sectores ( Anexo D )",
+      "lado": "expense",
+      "page": 3,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ### ESTADO DE RECURSOS Y GASTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        -14002.670362
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Específicos de sectores ( Anexo D )"
+    },
+    {
+      "label": "Basquetball Profesional",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        933.749638
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Basquetball Profesional"
+    },
+    {
+      "label": "Basquetball",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        250.730189
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Basquetball"
+    },
+    {
+      "label": "Beisball",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        17.247432
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Beisball"
+    },
+    {
+      "label": "Boxeo",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        21.676037
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Boxeo"
+    },
+    {
+      "label": "Efi",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        25.91743
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Efi"
+    },
+    {
+      "label": "Fitnes",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        107.08597
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Fitnes"
+    },
+    {
+      "label": "Futsal",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        569.302825
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Futsal"
+    },
+    {
+      "label": "Gimnasia Artistica y Ritmica",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        189.018374
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Gimnasia Artistica y Ritmica"
+    },
+    {
+      "label": "Handball",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        248.661156
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Handball"
+    },
+    {
+      "label": "Hockey",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        179.232651
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Hockey"
+    },
+    {
+      "label": "Judo",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        12.320021
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Judo"
+    },
+    {
+      "label": "Natacion",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        573.953285
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Natacion"
+    },
+    {
+      "label": "Patin",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        18.688497
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Patin"
+    },
+    {
+      "label": "Racquetball",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        1.538671
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Racquetball"
+    },
+    {
+      "label": "Taekwondo",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        25.023415
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Taekwondo"
+    },
+    {
+      "label": "Tenis",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        377.632998
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Tenis"
+    },
+    {
+      "label": "Tenis de Mesa",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        17.851837
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Tenis de Mesa"
+    },
+    {
+      "label": "Voley",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        295.855078
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Voley"
+    },
+    {
+      "label": "Otros",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        152.472642
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Departamento de Futbol Profesional",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        3719.085522
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Departamento de Futbol Profesional"
+    },
+    {
+      "label": "Departamento de Futbol Femenino",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        393.466979
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Departamento de Futbol Femenino"
+    },
+    {
+      "label": "Departamento de Futbol Infantil",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        95.357147
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Departamento de Futbol Infantil"
+    },
+    {
+      "label": "Departamento de Futbol Amateur",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        267.37636
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Departamento de Futbol Amateur"
+    },
+    {
+      "label": "4- Departamento Medico",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        163.377765
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "4- Departamento Medico"
+    },
+    {
+      "label": "Egresos por Instituto Educativo",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        2102.175189
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Egresos por Instituto Educativo"
+    },
+    {
+      "label": "Egresos por Colonia de Vacaciones",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        328.551251
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Egresos por Colonia de Vacaciones"
+    },
+    {
+      "label": "Egresos Ponteveedra",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        318.710273
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Egresos Ponteveedra"
+    },
+    {
+      "label": "Egresos Sede Social",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        302.053794
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Egresos Sede Social"
+    },
+    {
+      "label": "Egresos Campo Deportivo",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        869.90748
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Egresos Campo Deportivo"
+    },
+    {
+      "label": "Egresos Anexos",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        22.15655
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Egresos Anexos"
+    },
+    {
+      "label": "Egresos Generales",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        904.136413
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Egresos Generales"
+    },
+    {
+      "label": "Egresos Departamento Cultural",
+      "lado": "expense",
+      "page": 9,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO D / ### GASTOS ESPECIFICOS DE DEPARTAMENTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        0.483572
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Específicos de sectores ( Anexo D )",
+      "glosa": "Egresos Departamento Cultural"
+    },
+    {
+      "label": "Sueldos al Personal",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        503.781513
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Sueldos al Personal"
+    },
+    {
+      "label": "Generales de administración ( Anexo E )",
+      "lado": "expense",
+      "page": 3,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ### ESTADO DE RECURSOS Y GASTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        -1737.663526
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Generales de administración ( Anexo E )"
+    },
+    {
+      "label": "Honorarios y Otras Retribuciones",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        185.041197
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Honorarios y Otras Retribuciones"
+    },
+    {
+      "label": "Servicios de Telefonia e Internet",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        20.045398
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Servicios de Telefonia e Internet"
+    },
+    {
+      "label": "Provisiones, Previsiones por Juicios e Incobrables",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        379.306063
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Provisiones, Previsiones por Juicios e Incobrables"
+    },
+    {
+      "label": "Cargas Sociales",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        85.062156
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Cargas Sociales"
+    },
+    {
+      "label": "Gastos Bancarios",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        30.441852
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Gastos Bancarios"
+    },
+    {
+      "label": "Gastos por Acreditacion de Tarjetas de Credito",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        105.37378
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Gastos por Acreditacion de Tarjetas de Credito"
+    },
+    {
+      "label": "Movilidad y Viaticos",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        6.055561
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Movilidad y Viaticos"
+    },
+    {
+      "label": "Publicidad Institucional",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        52.092171
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Publicidad Institucional"
+    },
+    {
+      "label": "Gastos Varios",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        4.597514
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Gastos Varios"
+    },
+    {
+      "label": "Papeleria y Utiles",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        7.879977
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Papeleria y Utiles"
+    },
+    {
+      "label": "Insumos Informaticos",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        15.197506
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Insumos Informaticos"
+    },
+    {
+      "label": "Franqueos, Telegramas y Correos",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        0.169561
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Franqueos, Telegramas y Correos"
+    },
+    {
+      "label": "Mantenimiento Infraestructura",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        5.644784
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Mantenimiento Infraestructura"
+    },
+    {
+      "label": "Impuestos / Tasas / Contribuciones",
+      "lado": "expense",
+      "page": 10,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO E / ### GASTOS GENERALES DE ADMINISTRACION / #### Correspondientes al ejercicio finalizado el 30 de junio de 2025",
+      "values": [
+        336.974494
+      ],
+      "origen": "nota 8 (ancla 1)",
+      "ancla": "Generales de administración ( Anexo E )",
+      "glosa": "Impuestos / Tasas / Contribuciones"
+    },
+    {
+      "label": "Amortizaciones de bienes ( Anexo A )",
+      "lado": "expense",
+      "page": 3,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ### ESTADO DE RECURSOS Y GASTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        -169.580738
+      ],
+      "origen": "estado 1",
+      "glosa": "Amortizaciones de bienes ( Anexo A )"
+    },
+    {
+      "label": "Recupero Decreto 510/23",
+      "lado": null,
+      "page": 3,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ### ESTADO DE RECURSOS Y GASTOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        1446.974563
+      ],
+      "origen": "estado 1",
+      "glosa": "Recupero Decreto 510/23"
+    },
+    {
+      "label": "Natación",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        144.651694
+      ],
+      "origen": "estado 6",
+      "glosa": "Natación"
+    },
+    {
+      "label": "Fitnes",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        110.724278
+      ],
+      "origen": "estado 6",
+      "glosa": "Fitnes"
+    },
+    {
+      "label": "Tenis",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        187.283256
+      ],
+      "origen": "estado 6",
+      "glosa": "Tenis"
+    },
+    {
+      "label": "Racquetball",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        10.098617
+      ],
+      "origen": "estado 6",
+      "glosa": "Racquetball"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        109.304667
+      ],
+      "origen": "estado 6",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Futbol Infantil",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        114.673812
+      ],
+      "origen": "estado 6",
+      "glosa": "Futbol Infantil"
+    },
+    {
+      "label": "Futsal",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        258.097897
+      ],
+      "origen": "estado 6",
+      "glosa": "Futsal"
+    },
+    {
+      "label": "Hockey",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        143.717859
+      ],
+      "origen": "estado 6",
+      "glosa": "Hockey"
+    },
+    {
+      "label": "Handball",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        214.745776
+      ],
+      "origen": "estado 6",
+      "glosa": "Handball"
+    },
+    {
+      "label": "Voleyball",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        264.601417
+      ],
+      "origen": "estado 6",
+      "glosa": "Voleyball"
+    },
+    {
+      "label": "Basquetball",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        156.451984
+      ],
+      "origen": "estado 6",
+      "glosa": "Basquetball"
+    },
+    {
+      "label": "Gimnasia Artistica y Ritmica",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        68.393725
+      ],
+      "origen": "estado 6",
+      "glosa": "Gimnasia Artistica y Ritmica"
+    },
+    {
+      "label": "Tenis",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        41.775741
+      ],
+      "origen": "estado 6",
+      "glosa": "Tenis"
+    },
+    {
+      "label": "Natación",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        12.042861
+      ],
+      "origen": "estado 6",
+      "glosa": "Natación"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        39.932556
+      ],
+      "origen": "estado 6",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Natación",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        172.726571
+      ],
+      "origen": "estado 6",
+      "glosa": "Natación"
+    },
+    {
+      "label": "Tenis",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        163.338881
+      ],
+      "origen": "estado 6",
+      "glosa": "Tenis"
+    },
+    {
+      "label": "Futsal",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        369.888637
+      ],
+      "origen": "estado 6",
+      "glosa": "Futsal"
+    },
+    {
+      "label": "Gimnasia Artistica y Ritmica",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        122.921599
+      ],
+      "origen": "estado 6",
+      "glosa": "Gimnasia Artistica y Ritmica"
+    },
+    {
+      "label": "Hockey",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        118.384157
+      ],
+      "origen": "estado 6",
+      "glosa": "Hockey"
+    },
+    {
+      "label": "Basquetball",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        95.289422
+      ],
+      "origen": "estado 6",
+      "glosa": "Basquetball"
+    },
+    {
+      "label": "Patin",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        28.733355
+      ],
+      "origen": "estado 6",
+      "glosa": "Patin"
+    },
+    {
+      "label": "Handball",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        47.74214
+      ],
+      "origen": "estado 6",
+      "glosa": "Handball"
+    },
+    {
+      "label": "Voleyball",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        46.142983
+      ],
+      "origen": "estado 6",
+      "glosa": "Voleyball"
+    },
+    {
+      "label": "Efi",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        29.805102
+      ],
+      "origen": "estado 6",
+      "glosa": "Efi"
+    },
+    {
+      "label": "Running",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        7.601275
+      ],
+      "origen": "estado 6",
+      "glosa": "Running"
+    },
+    {
+      "label": "Beisbol",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        30.231906
+      ],
+      "origen": "estado 6",
+      "glosa": "Beisbol"
+    },
+    {
+      "label": "Taekwondo",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        17.712099
+      ],
+      "origen": "estado 6",
+      "glosa": "Taekwondo"
+    },
+    {
+      "label": "Boxeo",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        18.349104
+      ],
+      "origen": "estado 6",
+      "glosa": "Boxeo"
+    },
+    {
+      "label": "Racquetball",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        5.169429
+      ],
+      "origen": "estado 6",
+      "glosa": "Racquetball"
+    },
+    {
+      "label": "Judo/Karate/Lucha y otros deportes de cotacto",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        14.278527
+      ],
+      "origen": "estado 6",
+      "glosa": "Judo/Karate/Lucha y otros deportes de cotacto"
+    },
+    {
+      "label": "Ajedrez",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        4.349195
+      ],
+      "origen": "estado 6",
+      "glosa": "Ajedrez"
+    },
+    {
+      "label": "Tenis de Mesa",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO C / ### RECURSOS ORDINARIOS - Apertura por Actividad / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        10.241721
+      ],
+      "origen": "estado 6",
+      "glosa": "Tenis de Mesa"
+    },
+    {
+      "label": "Cuotas Sociales Gral",
+      "lado": "revenue",
+      "page": 7,
+      "section": "CLUB FERRO CARRIL OESTE ASOCIACION CIVIL / EJERCICIO ECONOMICO N° 121 - Inspeccion General de Justicia N° 351435/1088 / ANEXO B / ### RECURSOS ORDINARIOS / #### CORRESPONDIENTE AL EJERCICIO FINALIZADO EL 30 DE JUNIO DE 2025",
+      "values": [
+        4615.086829
+      ],
+      "origen": "estado 5",
+      "glosa": "Cuotas Sociales Gral"
+    }
+  ]
+}

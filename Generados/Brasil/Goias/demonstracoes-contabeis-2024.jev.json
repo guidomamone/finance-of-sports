@@ -1,0 +1,621 @@
+{
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2024.md",
+ "generatedAt": "2026-10-02T22:10:38.906Z",
+ "rubrosHuella": "5acc79c023be7074c7d88dcf60a8cff248b4c4fe",
+ "rubros": [
+  {
+   "label": "Receitas Atividades Sociais e Lazer",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Transação de atletas",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras receitas",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Sou Goiás",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Jogos lotéricos",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas patrimoniais",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) INSS Competições/Torneios",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) INSS Patrocínio/Publicidade/Propaganda",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Custos e Despesas Sou Goiás",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Demais deduções da receita",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) IRRF Jogos Lotéricos",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Cortez. Ingressos - Camp. Goiano",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) INSS Jogos Lotéricos",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Cortez. Ingressos - Copa Verde",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesa com pessoal",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "wages_squad",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínio/publicidade/propaganda",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Cessão de Direitos Imagem (a)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Materiais Esportivos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "wages_squad",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Cessão Temporária",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "player_amortisation",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortização de custo de atletas formados",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "player_amortisation",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortização de custo de atletas contratados",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Arbitragens",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Taxas confederações e federações",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Demais custos e despesas operacionais",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros custos com atletas",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Cessão Definitiva",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Custos e despesas c/ pessoal jogos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "wages_squad",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Exames antidoping",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com viagens",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "(-) Fenapaf",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "lump_football_operations",
+     0.24
+    ],
+    [
+     "broadcasting",
+     0.04
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "(-) Deduções das mensalidades",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "member_dues",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "member_dues",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Despesa com pessoal (a)",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisões para contingências",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Administrativas (materiais inclusos)",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Gestão de Bilheteria",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "matchday_competition",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "matchday_competition",
+     0.89
+    ],
+    [
+     "other_income",
+     0.1
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Depreciação e amortização",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Água, telefone, energia e internet",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas legais e judiciais",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos de transmissão de TV",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Bilheterias",
+   "lado": "revenue",
+   "page": 26,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Premiação/participações",
+   "lado": "revenue",
+   "page": 25,
+   "section": "nota que desglosa \"Receita líquida\"",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "competition_bonus",
+     0.99
+    ],
+    [
+     "broadcasting",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Luvas (a)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "wages_squad",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "wages_squad",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "player_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Despesa formação atletas base (b)",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "youth_other_sports_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Outros custos e despesas com jogos",
+   "lado": "expense",
+   "page": 26,
+   "section": "nota que desglosa \"Custo com futebol\"",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Outras Receitas e Despesas",
+   "lado": "expense",
+   "page": 7,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 3)",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Despesas com serviços prestados (b)",
+   "lado": "expense",
+   "page": 27,
+   "section": "nota que desglosa \"Despesas administrativas e gerais\"",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1051
+  }
+ ]
+}

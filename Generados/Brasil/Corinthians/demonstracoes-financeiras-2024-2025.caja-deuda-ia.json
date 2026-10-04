@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Corinthians/demonstracoes-financeiras-2024-2025.md",
+ "generado": "2026-10-02T00:13:30.382Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "caja": {
+  "lineas": [
+   1328
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1358,
+   1369
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La caja (26.019) está en L1328, en la columna de valores separada de los rótulos (L1292); la deuda financiera corresponde a 'Empréstimos e financiamentos' corriente (146.782) y no corriente (103.250). Llama la atención que la nota de riesgo menciona un financiamiento de la Arena con la Caixa de ~R$642.782 mil, que no estaría en el balance del Club por no consolidar la Arena."
+}

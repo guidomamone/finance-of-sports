@@ -1,0 +1,67 @@
+{
+ "pdf": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2009.pdf",
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2009.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T16:41:43.286Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    25,
+    30
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 1,
+   "lineas": [
+    32,
+    37
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 1,
+   "lineas": [
+    41,
+    47
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 1,
+   "lineas": [
+    51,
+    60
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "Balance General al 31 de diciembre de 2009 (En miles de pesos); encabezado 2009 M$",
+ "moneda": "CLP",
+ "columna_ejercicio": "2009 M$",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el estado de resultados resumido (b3) aunque solo muestre resultado de explotación y fuera de explotación, sin desglose de ingresos y gastos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Resultado de explotación",
+   "texto": "El documento es un extracto resumido de una página; b3 no abre ingresos ni gastos y no hay notas.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Documento resumido (publicación de estados financieros de Cruzados SADP). Solo una columna 2009, sin año anterior. Escala tomada del título del balance y del encabezado M$ del estado de resultados. No se indica consolidado; se asume individual."
+}

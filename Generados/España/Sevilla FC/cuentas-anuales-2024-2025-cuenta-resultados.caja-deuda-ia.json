@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/España/Sevilla FC/cuentas-anuales-2024-2025-cuenta-resultados.md",
+ "generado": "2026-10-02T00:20:00.812Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "Cifras en miles de euros.",
+ "caja": {
+  "lineas": [
+   60
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   61,
+   64
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance es solo un extracto: las líneas 61 y 64 son totales de deudas a largo y corto plazo (Nota 13), que incluyen entidades de crédito (1.502 LP y 8.051 CP), préstamo participativo, deudas con entidades deportivas por traspasos, derivados y otros pasivos financieros. No hay líneas separadas solo para la deuda bancaria; si se aplica un criterio estricto, solo serían entidades de crédito más el préstamo participativo."
+}

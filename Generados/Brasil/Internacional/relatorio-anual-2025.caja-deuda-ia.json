@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Internacional/relatorio-anual-2025.md",
+ "generado": "2026-10-02T00:17:02.561Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de Reais - R$)",
+ "caja": {
+  "lineas": [
+   995
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1059,
+   1075
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las etiquetas y los valores están en bloques separados; la asignación se hizo por orden. En el circulante, la nota de Empréstimos e financiamentos aparece como '1' (L1059), probablemente truncada de la nota 12."
+}

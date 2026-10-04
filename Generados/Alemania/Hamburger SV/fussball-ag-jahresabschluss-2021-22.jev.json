@@ -1,0 +1,367 @@
+{
+ "md": "Clubes/Alemania/Hamburger SV/fussball-ag-jahresabschluss-2021-22.md",
+ "generatedAt": "2026-09-30T22:48:16.694Z",
+ "rubrosHuella": "79a4301d31b98fb8a720525f91036ffc1d549e2a",
+ "rubros": [
+  {
+   "label": "Spielbetrieb",
+   "lado": "revenue",
+   "page": 9,
+   "section": "JAHRESABSCHLUSS / IV. ERLÄUTERUNGEN ZUR GEWINN- UND VERLUSTRECHNUNG / ## Umsatzerlöse",
+   "choice": "matchday_competition",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Werbung",
+   "lado": "revenue",
+   "page": 9,
+   "section": "JAHRESABSCHLUSS / IV. ERLÄUTERUNGEN ZUR GEWINN- UND VERLUSTRECHNUNG / ## Umsatzerlöse",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Mediale Verwertungsrechte",
+   "lado": "revenue",
+   "page": 9,
+   "section": "JAHRESABSCHLUSS / IV. ERLÄUTERUNGEN ZUR GEWINN- UND VERLUSTRECHNUNG / ## Umsatzerlöse",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Transferentschädigungen",
+   "lado": "revenue",
+   "page": 9,
+   "section": "JAHRESABSCHLUSS / IV. ERLÄUTERUNGEN ZUR GEWINN- UND VERLUSTRECHNUNG / ## Umsatzerlöse",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Merchandising & Catering",
+   "lado": "revenue",
+   "page": 9,
+   "section": "JAHRESABSCHLUSS / IV. ERLÄUTERUNGEN ZUR GEWINN- UND VERLUSTRECHNUNG / ## Umsatzerlöse",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Sonstige Erlöse",
+   "lado": "revenue",
+   "page": 9,
+   "section": "JAHRESABSCHLUSS / IV. ERLÄUTERUNGEN ZUR GEWINN- UND VERLUSTRECHNUNG / ## Umsatzerlöse",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "a) Löhne und Gehälter",
+   "lado": null,
+   "page": 4,
+   "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen",
+   "lado": null,
+   "page": 4,
+   "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+   "choice": "depreciation",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "1. Umsatzerlöse",
+   "lado": "revenue",
+   "page": 4,
+   "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1174
+  },
+  {
+   "label": "1. Spielernutzungsrechte",
+   "lado": "expense",
+   "page": 13,
+   "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+   "choice": "player_amortisation",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "2. Markenwerte",
+   "lado": "expense",
+   "page": 13,
+   "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+   "choice": "other_amortisation",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "3. Entgeltlich erworbene Software",
+   "lado": "expense",
+   "page": 13,
+   "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "4. Geleistete Anzahlungen auf immaterielle Vermögensgegenstände",
+   "lado": "expense",
+   "page": 13,
+   "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+   "lado": "expense",
+   "page": 13,
+   "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+   "choice": "depreciation",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+   "lado": "expense",
+   "page": 13,
+   "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "3. Geleistete Anzahlungen und Anlagen im Bau",
+   "lado": "expense",
+   "page": 13,
+   "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "2. Ausleihungen an verbundene Unternehmen",
+   "lado": "expense",
+   "page": 13,
+   "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "7. Sonstige Zinsen und ähnliche Erträge",
+   "lado": "revenue",
+   "page": 4,
+   "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1072
+  },
+  {
+   "label": "3. Beteiligungen",
+   "lado": "expense",
+   "page": 13,
+   "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "9. Zinsen und ähnliche Aufwendungen",
+   "lado": "expense",
+   "page": 4,
+   "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1103
+  },
+  {
+   "label": "2. Sonstige betriebliche Erträge",
+   "lado": "revenue",
+   "page": 4,
+   "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1112
+  },
+  {
+   "label": "Aufwendungen für bezogene Waren",
+   "lado": "expense",
+   "page": 4,
+   "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1103
+  },
+  {
+   "label": "b) Soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung – davon für Altersversorgung EUR 52.769,68 (i. Vj. EUR 53.746,06) –",
+   "lado": "expense",
+   "page": 4,
+   "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1255
+  },
+  {
+   "label": "6. Sonstige betriebliche Aufwendungen",
+   "lado": "expense",
+   "page": 4,
+   "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1105
+  },
+  {
+   "label": "12. Sonstige Steuern",
+   "lado": "expense",
+   "page": 4,
+   "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Ausleihungen an verbundene Unternehmen",
+   "lado": "expense",
+   "page": 14,
+   "section": "JAHRESABSCHLUSS",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1015
+  }
+ ]
+}

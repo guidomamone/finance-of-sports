@@ -1,0 +1,531 @@
+{
+ "md": "Clubes/República Checa/Karviná/SL18_2012-rozvaha-vzz.md",
+ "pdf": "Clubes/República Checa/Karviná/SL18_2012-rozvaha-vzz.pdf",
+ "club": "karvina",
+ "year": 2012,
+ "numberFormat": "ambiguo",
+ "generatedAt": "2026-09-30T22:07:45.999Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": false,
+  "motivo": "no se pudo ubicar la columna del ejercicio"
+ },
+ "ladoConocido": 16,
+ "rubros": [
+  {
+   "label": "Tržby za prodej zboží",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "1",
+    "90",
+    "79"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Náklady vynaložené na prodané zboží",
+   "lado": "expense",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "2",
+    "176",
+    "193"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Obchodní marže I. - A.",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "3",
+    "-86",
+    "-114"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Výkony Součet II.1. až II.3.",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "4",
+    "34 745",
+    "28 402"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Tržby za prodej výrobků a služeb",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "5",
+    "34 745",
+    "28 402"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Změna stavu zásob vlastní výroby",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "6",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Aktivace",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "7",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Výkonová spotřeba Součet B.1. až B.2.",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "8",
+    "29 260",
+    "27 319"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Spotřeba materiálu a energie",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "9",
+    "2 795",
+    "3 499"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Služby",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "10",
+    "26 465",
+    "23 820"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Přidaná hodnota I. - A. + II. - B.",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "11",
+    "5 399",
+    "969"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Osobní náklady Součet C.1. až C.4.",
+   "lado": "expense",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "12",
+    "1 334",
+    "1 062"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Mzdové náklady",
+   "lado": "expense",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "13",
+    "1 176",
+    "964"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Odměny členům orgánů společnosti a družstva",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "14",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Náklady na sociální zabezpečení a zdravotní pojištění",
+   "lado": "expense",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "15",
+    "156",
+    "97"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Sociální náklady",
+   "lado": "expense",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "16",
+    "2",
+    "1"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Daně a poplatky",
+   "lado": "expense",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "17",
+    "32",
+    "24"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Odpisy dlouhodobého nehmotného a hmotného majetku",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "18",
+    "868",
+    "855"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Tržby z prodeje dlouhodobého majetku a materiálu Součet III.1. až III.2.",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "19",
+    "839",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Tržby z prodeje dlouhodobého majetku",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "20",
+    "839",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Tržby z prodeje materiálu",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "21",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Zůstatková cena prodaného dlouhodobého majetku a materiálu Součet F.1. až F.2.",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "22",
+    "675",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Zůstatková cena prodaného dlouhodobého majetku",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "23",
+    "675",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Prodaný materiál",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "24",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Změna stavu rezerv a opravných položek v provozní oblasti a komplexních nákladů příštích období",
+   "lado": "expense",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "25",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Ostatní provozní výnosy",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "26",
+    "220",
+    "12"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Ostatní provozní náklady",
+   "lado": "expense",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "27",
+    "97",
+    "391"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Převod provozních výnosů",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "28",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Převod provozních nákladů",
+   "lado": "expense",
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "29",
+    "",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Provozní výsledek hospodaření rozdíl výnosů a nákladů římská I. až písmeno I.",
+   "lado": null,
+   "page": 5,
+   "section": "Obchodní firma nebo jiný název účetní jednotky / MFK OKD Karviná a.s. / Sídlo nebo bydliště účetní jednotky a místo podnikání liší-li se od bydliště / Karviná - Nové Město 735 06",
+   "values": [
+    "30",
+    "3 452",
+    "-1 351"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  }
+ ]
+}

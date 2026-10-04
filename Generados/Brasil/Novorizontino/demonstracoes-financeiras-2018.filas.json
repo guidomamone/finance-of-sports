@@ -1,0 +1,389 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2018.pdf",
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2018.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T01:45:18.595Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [
+   "b17"
+  ],
+  "notas_gastos": [
+   "b18",
+   "b19"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "miles",
+   "evidencia": "L211: (Valores expressos em milhares de reais)"
+  },
+  {
+   "bloque": "b17",
+   "escala": "no se sabe",
+   "evidencia": "La nota no indica escala; sus totales (7.161) coinciden con el estado en milhares"
+  },
+  {
+   "bloque": "b18",
+   "escala": "no se sabe",
+   "evidencia": "La nota no indica escala; total (10.665) coincide con el estado en milhares"
+  },
+  {
+   "bloque": "b19",
+   "escala": "no se sabe",
+   "evidencia": "La nota no indica escala; total (4.692) coincide con el estado en milhares"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 215,
+   "etiqueta": "Receita líquida",
+   "actual": "7.161",
+   "anterior": "8.090",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 216,
+   "etiqueta": "Custos",
+   "actual": "(10.665)",
+   "anterior": "(8.069)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 217,
+   "etiqueta": "Déficit bruto",
+   "actual": "(3.504)",
+   "anterior": "21",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 218,
+   "etiqueta": "Despesas gerais e administrativas",
+   "actual": "(4.692)",
+   "anterior": "(4.655)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 219,
+   "etiqueta": "Déficit antes do resultado financeiro",
+   "actual": "(8.196)",
+   "anterior": "(4.634)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 220,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(349)",
+   "anterior": "(153)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 221,
+   "etiqueta": "Receitas financeiras",
+   "actual": "60",
+   "anterior": "12",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 222,
+   "etiqueta": "Resultado financeiro líquido",
+   "actual": "(289)",
+   "anterior": "(141)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 223,
+   "etiqueta": "Déficit do exercício",
+   "actual": "(8.485)",
+   "anterior": "(4.775)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b17",
+   "linea": 685,
+   "etiqueta": "Repasse da federação",
+   "actual": "3.928",
+   "anterior": "3.499",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b17",
+   "linea": 686,
+   "etiqueta": "Negociação e empréstimo de atletas",
+   "actual": "1.729",
+   "anterior": "3.333",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b17",
+   "linea": 687,
+   "etiqueta": "Receita com patrocínios",
+   "actual": "161",
+   "anterior": "128",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b17",
+   "linea": 688,
+   "etiqueta": "",
+   "actual": "5.818",
+   "anterior": "6.960",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b17",
+   "linea": 690,
+   "etiqueta": "Vendas de ingressos e bar",
+   "actual": "1.093",
+   "anterior": "1.061",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b17",
+   "linea": 691,
+   "etiqueta": "Subvenções (nota 10)",
+   "actual": "250",
+   "anterior": "69",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b17",
+   "linea": 692,
+   "etiqueta": "",
+   "actual": "1.343",
+   "anterior": "1.130",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b17",
+   "linea": 693,
+   "etiqueta": "",
+   "actual": "7.161",
+   "anterior": "8.090",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Receita líquida"
+  },
+  {
+   "bloque": "b18",
+   "linea": 703,
+   "etiqueta": "Salários, ordenados e outros custos com pessoal",
+   "actual": "(8.377)",
+   "anterior": "(6.550)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custos"
+  },
+  {
+   "bloque": "b18",
+   "linea": 704,
+   "etiqueta": "Gastos com jogos",
+   "actual": "(1.459)",
+   "anterior": "(968)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custos"
+  },
+  {
+   "bloque": "b18",
+   "linea": 705,
+   "etiqueta": "Aluguéis",
+   "actual": "(525)",
+   "anterior": "(510)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custos"
+  },
+  {
+   "bloque": "b18",
+   "linea": 706,
+   "etiqueta": "Outros",
+   "actual": "(304)",
+   "anterior": "(41)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Custos"
+  },
+  {
+   "bloque": "b18",
+   "linea": 707,
+   "etiqueta": "",
+   "actual": "(10.665)",
+   "anterior": "(8.069)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Custos"
+  },
+  {
+   "bloque": "b19",
+   "linea": 725,
+   "etiqueta": "Serviços prestados",
+   "actual": "(1.523)",
+   "anterior": "(1.526)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas gerais e administrativas"
+  },
+  {
+   "bloque": "b19",
+   "linea": 726,
+   "etiqueta": "Provisão para contingências (nota 13)",
+   "actual": "(1.227)",
+   "anterior": "(328)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas gerais e administrativas"
+  },
+  {
+   "bloque": "b19",
+   "linea": 727,
+   "etiqueta": "Despesas administrativas",
+   "actual": "(777)",
+   "anterior": "(754)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas gerais e administrativas"
+  },
+  {
+   "bloque": "b19",
+   "linea": 728,
+   "etiqueta": "Manutenções",
+   "actual": "(516)",
+   "anterior": "(475)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas gerais e administrativas"
+  },
+  {
+   "bloque": "b19",
+   "linea": 729,
+   "etiqueta": "Salários, ordenados e outras despesas com pessoal",
+   "actual": "(205)",
+   "anterior": "(206)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas gerais e administrativas"
+  },
+  {
+   "bloque": "b19",
+   "linea": 730,
+   "etiqueta": "Gastos com negociação de atletas",
+   "actual": "(130)",
+   "anterior": "(1.024)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas gerais e administrativas"
+  },
+  {
+   "bloque": "b19",
+   "linea": 731,
+   "etiqueta": "Combustível e lubrificantes",
+   "actual": "(101)",
+   "anterior": "(91)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas gerais e administrativas"
+  },
+  {
+   "bloque": "b19",
+   "linea": 732,
+   "etiqueta": "Depreciação",
+   "actual": "(61)",
+   "anterior": "(52)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas gerais e administrativas"
+  },
+  {
+   "bloque": "b19",
+   "linea": 733,
+   "etiqueta": "Outros",
+   "actual": "(152)",
+   "anterior": "(199)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Despesas gerais e administrativas"
+  },
+  {
+   "bloque": "b19",
+   "linea": 734,
+   "etiqueta": "",
+   "actual": "(4.692)",
+   "anterior": "(4.655)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Despesas gerais e administrativas"
+  }
+ ],
+ "total_ingresos": {
+  "linea": 215,
+  "actual": "7.161"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 223,
+  "actual": "(8.485)",
+  "anterior": "(4.775)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se toman las notas 15, 16 y 17 (b17, b18, b19) en milhares de reais, igual que el estado (L211)?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Las notas no imprimen escala, pero sus totales (L693, L707, L734) coinciden con el estado en milhares.",
+   "bloques": [
+    "b17",
+    "b18",
+    "b19",
+    "b2"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El estado no imprime total de gastos (Custos + Despesas gerais e administrativas se suman). Los subtotales de la nota 15 (L688 Receita de futebol, L692 Outras receitas) no tienen etiqueta en su renglón; corresponden a los encabezados L684 y L689. Todos los totales de notas cuadran con el estado."
+}

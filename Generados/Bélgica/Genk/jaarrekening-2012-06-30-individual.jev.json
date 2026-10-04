@@ -1,0 +1,191 @@
+{
+ "md": "Clubes/Bélgica/Genk/jaarrekening-2012-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:38.943Z",
+ "rubrosHuella": "a052c87e00386e425e6135e84c1093a79c224a1e",
+ "rubros": [
+  {
+   "label": "Schulden op meer dan één jaar 48 |",
+   "lado": "expense",
+   "page": 4,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 4.7 | 163/5 250.000 200.000 / Voorzieningen voor schenkingen en legaten met / terugnemingsrecht 4.7 | 168",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.9400000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 4,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 4.7 | 163/5 250.000 200.000 / Voorzieningen voor schenkingen en legaten met / terugnemingsrecht 4.7 | 168",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.29
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 889
+  },
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 19,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "expense",
+   "page": 19,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "wages_squad",
+     0.62
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 991
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 19,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "wages_squad",
+     0.71
+    ],
+    [
+     "lump_football_operations_expense",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 4,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Overige risico's en kosten 4.7 | 163/5 250.000 200.000 / Voorzieningen voor schenkingen en legaten met / terugnemingsrecht 4.7 | 168",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.29
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 885
+  },
+  {
+   "label": "Andere personeelskosten",
+   "lado": "expense",
+   "page": 19,
+   "section": "Personeelskosten",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Ouderdoms- en overlevingspensioenen",
+   "lado": "expense",
+   "page": 19,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "wages_squad",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.35000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 810
+  }
+ ]
+}

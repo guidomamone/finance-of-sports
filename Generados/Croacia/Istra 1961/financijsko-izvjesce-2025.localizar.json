@@ -1,0 +1,32 @@
+{
+ "pdf": "Clubes/Croacia/Istra 1961/financijsko-izvjesce-2025.pdf",
+ "md": "Clubes/Croacia/Istra 1961/financijsko-izvjesce-2025.md",
+ "cierre": "2025-12-31",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:57:28.740Z",
+ "paginas_resultados": [
+  11,
+  12,
+  13
+ ],
+ "paginas_notas_ingresos": [
+  31,
+  32,
+  33,
+  36,
+  48
+ ],
+ "paginas_notas_gastos": [
+  34,
+  35,
+  36,
+  38,
+  49
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Iznosi u eurima",
+ "moneda": "EUR",
+ "columna_ejercicio": "2025.",
+ "perimetro": "individual",
+ "observaciones": "Estado de resultados (Račun dobiti i gubitka, formato HNS) en págs. 11-13; la escala no figura explícitamente en las páginas del estado, pero las notas indican 'Iznosi u eurima' y los importes coinciden en unidades (ej. amortización 71.042 + 188.576). Pág. 10 y 14 son OCR ilegible (probablemente balance/flujo). Nota 19 (pág. 36) neta ingresos y gastos por traspasos de jugadores. Solo estados individuales de la sociedad."
+}

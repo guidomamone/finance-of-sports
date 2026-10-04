@@ -1,0 +1,333 @@
+{
+  "md": "Clubes/Brasil/Ituano/relatorio-de-auditoria-2018-audit-consult-novo.md",
+  "pdf": "Clubes/Brasil/Ituano/relatorio-de-auditoria-2018-audit-consult-novo.pdf",
+  "club": "ituano",
+  "year": 2018,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:53:24.323Z",
+  "tieOuts": {
+    "cierran": 26,
+    "noCierran": 6
+  },
+  "warnings": [
+    "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 28,
+    "notasUsadas": []
+  },
+  "ladoConocido": 13,
+  "rubros": [
+    {
+      "label": "RECEITA - FUTEBOL PROFISSIONAL E DE BASE",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        24.529416
+      ],
+      "origen": "estado 2",
+      "glosa": "INGRESOS - FÚTBOL PROFESIONAL Y FÚTBOL BASE"
+    },
+    {
+      "label": "Premiações em Campeonatos (CBF)",
+      "lado": null,
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        0.295
+      ],
+      "origen": "estado 2",
+      "glosa": "Premios por campeonatos (CBF)"
+    },
+    {
+      "label": "Direito de Transmissão de TV (FPF)",
+      "lado": null,
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        5.511456
+      ],
+      "origen": "estado 2",
+      "glosa": "Derechos de transmisión de TV (FPF)"
+    },
+    {
+      "label": "Patrocínio e Publicidades",
+      "lado": null,
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        0.358014
+      ],
+      "origen": "estado 2",
+      "glosa": "Patrocinios y publicidad"
+    },
+    {
+      "label": "Arrecadação de Jogos",
+      "lado": null,
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        0.792483
+      ],
+      "origen": "estado 2",
+      "glosa": "Recaudación de partidos"
+    },
+    {
+      "label": "Receita com Cessão Temporária de Direitos Federativos (Empréstimos)",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        0.25
+      ],
+      "origen": "estado 2",
+      "glosa": "Ingresos por cesión temporal de derechos federativos (préstamos)"
+    },
+    {
+      "label": "Cessão de Direito Federativo de Atletas",
+      "lado": null,
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        16.818843
+      ],
+      "origen": "estado 2",
+      "glosa": "Cesión de derechos federativos de deportistas"
+    },
+    {
+      "label": "Receita de Projetos e Incentivos Fiscais",
+      "lado": "revenue",
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        0.723066
+      ],
+      "origen": "estado 2",
+      "glosa": "Ingresos por proyectos e incentivos fiscales"
+    },
+    {
+      "label": "Sócio Torcedor",
+      "lado": null,
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        0.070877
+      ],
+      "origen": "estado 2",
+      "glosa": "Socios abonados"
+    },
+    {
+      "label": "(-) Impostos Incidentes s/ Vendas e Serviços",
+      "lado": "expense",
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        -0.290323
+      ],
+      "origen": "estado 2",
+      "glosa": "(-) Impuestos sobre ventas y servicios"
+    },
+    {
+      "label": "DESPESAS - FUTEBOL PROFISSIONAL E DE BASE",
+      "lado": "expense",
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        -23.43517
+      ],
+      "origen": "estado 2",
+      "glosa": "GASTOS - FÚTBOL PROFESIONAL Y FÚTBOL BASE"
+    },
+    {
+      "label": "Despesas com Pessoal (Salários e Encargos)",
+      "lado": "expense",
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        -2.373926
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos de personal (salarios y cargas sociales)"
+    },
+    {
+      "label": "Serviços de Terceiros (Prémios, Mídia, Serviços de PJ e PF)",
+      "lado": null,
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        -19.198216
+      ],
+      "origen": "estado 2",
+      "glosa": "Servicios de terceros (premios, medios, servicios de personas jurídicas y físicas)"
+    },
+    {
+      "label": "Gastos c/ Atletas (Viagens, Uniformes, Taxas CBF-FPF)",
+      "lado": "expense",
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        -0.548204
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos con deportistas (viajes, uniformes, tasas CBF-FPF)"
+    },
+    {
+      "label": "Outras Despesas (Eventos e Partidas- Estádio e Alojamento)",
+      "lado": "expense",
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        -1.314824
+      ],
+      "origen": "estado 2",
+      "glosa": "Otros gastos (eventos y partidos - estadio y alojamiento)"
+    },
+    {
+      "label": "DESPESAS ADMINISTRATIVAS",
+      "lado": "expense",
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        -2.479745
+      ],
+      "origen": "estado 2",
+      "glosa": "GASTOS ADMINISTRATIVOS"
+    },
+    {
+      "label": "Despesas com Pessoal (Salários e encargos)",
+      "lado": "expense",
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        -1.117846
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos de personal (salarios y cargas sociales)"
+    },
+    {
+      "label": "Água, Luz, Telefone, e Internet (sede do Clube)",
+      "lado": null,
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        -0.16615
+      ],
+      "origen": "estado 2",
+      "glosa": "Agua, luz, teléfono e internet (sede del club)"
+    },
+    {
+      "label": "Serviços de Terceiros - Advogado, Contador, Assessores",
+      "lado": null,
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        -0.310619
+      ],
+      "origen": "estado 2",
+      "glosa": "Servicios de terceros - abogado, contador, asesores"
+    },
+    {
+      "label": "Outras Receitas e Despesas Administrativas",
+      "lado": null,
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        -0.321995
+      ],
+      "origen": "estado 2",
+      "glosa": "Otros ingresos y gastos administrativos"
+    },
+    {
+      "label": "Impostos e Taxas diversas",
+      "lado": "expense",
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        -0.08441
+      ],
+      "origen": "estado 2",
+      "glosa": "Impuestos y tasas diversas"
+    },
+    {
+      "label": "Encargos Financeiros",
+      "lado": "expense",
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        -0.478724
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "RECEITAS E DESPESAS NÃO OPERACIONAIS",
+      "lado": null,
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        0.35425
+      ],
+      "origen": "estado 2",
+      "glosa": "INGRESOS Y GASTOS NO OPERACIONALES"
+    },
+    {
+      "label": "Outras Receitas e Despesas Não Operacionais",
+      "lado": null,
+      "page": 7,
+      "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+      "values": [
+        0.35425
+      ],
+      "origen": "estado 2",
+      "glosa": "Otros ingresos y gastos no operacionales"
+    },
+    {
+      "label": "Saldos em 01/01/2017",
+      "lado": null,
+      "page": 8,
+      "section": "# ITUANO FUTEBOL CLUBE",
+      "values": [
+        9.817636
+      ],
+      "origen": "estado 3",
+      "glosa": "Saldos al 01/01/2017"
+    },
+    {
+      "label": "Realização de Reserva de Reavaliação",
+      "lado": null,
+      "page": 8,
+      "section": "# ITUANO FUTEBOL CLUBE",
+      "values": [
+        3.48594
+      ],
+      "origen": "estado 3",
+      "glosa": "Realización de reserva de revalorización"
+    },
+    {
+      "label": "Realização de Reserva de Reavaliação",
+      "lado": null,
+      "page": 8,
+      "section": "# ITUANO FUTEBOL CLUBE",
+      "values": [
+        2.5
+      ],
+      "origen": "estado 3",
+      "glosa": "Realización de reserva de revalorización"
+    },
+    {
+      "label": "Amortização",
+      "lado": "expense",
+      "page": 16,
+      "section": "### D) AMORTIZAÇÕES DE GASTOS",
+      "values": [
+        -0.999246
+      ],
+      "origen": "estado 15",
+      "glosa": "Amortización"
+    }
+  ]
+}

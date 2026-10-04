@@ -1,0 +1,810 @@
+{
+ "md": "Clubes/Brasil/Sport Recife/demonstracoes-financeiras-2021-e-2020.md",
+ "generatedAt": "2026-09-30T22:48:31.798Z",
+ "rubrosHuella": "b13777090ae6e665c52d046a948b19e656697955",
+ "rubros": [
+  {
+   "label": "Administrativas",
+   "lado": null,
+   "page": 11,
+   "section": "Demonstração do resultado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": null,
+   "page": 28,
+   "section": "24. Despesas administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisão para devedores duvidosos",
+   "lado": null,
+   "page": 28,
+   "section": "24. Despesas administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Tributárias",
+   "lado": null,
+   "page": 11,
+   "section": "Demonstração do resultado",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisão para contingências",
+   "lado": null,
+   "page": 11,
+   "section": "Demonstração do resultado",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciação e amortização",
+   "lado": null,
+   "page": 11,
+   "section": "Demonstração do resultado",
+   "choice": "depreciation",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Custo das atividades",
+   "lado": "expense",
+   "page": 11,
+   "section": "Demonstração do resultado",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Despesas gerais",
+   "lado": "expense",
+   "page": 28,
+   "section": "24. Despesas administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Receita operacional líquida",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Demonstração do resultado",
+   "choice": "lump_football_operations",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1153
+  },
+  {
+   "label": "Despesas com formação de atletas e direitos contratuais",
+   "lado": "expense",
+   "page": 28,
+   "section": "23. Custo das atividades",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.72
+    ],
+    [
+     "player_amortisation",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Despesas com competição",
+   "lado": "expense",
+   "page": 28,
+   "section": "23. Custo das atividades",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Despesas de pessoal",
+   "lado": "expense",
+   "page": 28,
+   "section": "24. Despesas administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.71
+    ],
+    [
+     "wages_squad",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Receitas financeiras",
+   "lado": "revenue",
+   "page": 11,
+   "section": "Demonstração do resultado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 11,
+   "section": "Demonstração do resultado",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Marketing",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Futebol",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+   "choice": "lump_football_operations",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.92
+    ],
+    [
+     "matchday_competition",
+     0.06
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Outras receitas",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Patrimonial",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.53
+    ],
+    [
+     "member_dues",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ]
+   ],
+   "tokens": 845
+  },
+  {
+   "label": "Federação Pernambucana de Futebol",
+   "lado": "revenue",
+   "page": 26,
+   "section": "19. Receitas antecipadas",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Mensalidades",
+   "lado": "revenue",
+   "page": 26,
+   "section": "19. Receitas antecipadas",
+   "choice": "member_dues",
+   "confidence": 0.8,
+   "desdeCache": true
+  },
+  {
+   "label": "Contribuições associativas",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Clube Internacional",
+   "lado": "revenue",
+   "page": 26,
+   "section": "19. Receitas antecipadas",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Dass Nordeste",
+   "lado": "revenue",
+   "page": 26,
+   "section": "19. Receitas antecipadas",
+   "choice": "competition_bonus",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Sindicatos",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.5700000000000001
+    ],
+    [
+     "member_dues",
+     0.25
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ]
+   ],
+   "tokens": 844
+  },
+  {
+   "label": "INSS sobre faturamento(a)",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1102
+  },
+  {
+   "label": "Federações",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+   "choice": "competition_bonus",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "competition_bonus",
+     0.94
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 942
+  },
+  {
+   "label": "Outras deduções",
+   "lado": "revenue",
+   "page": 28,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / 22. Receita operacional líquida",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "12ª. Vara – TRT",
+   "lado": "revenue",
+   "page": 26,
+   "section": "19. Receitas antecipadas",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "season_tickets",
+     0.01
+    ]
+   ],
+   "tokens": 840
+  },
+  {
+   "label": "Liga do Nordeste",
+   "lado": "revenue",
+   "page": 26,
+   "section": "19. Receitas antecipadas",
+   "choice": "competition_bonus",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "competition_bonus",
+     0.8
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Confederação Brasileira de Futebol – CBF",
+   "lado": "revenue",
+   "page": 26,
+   "section": "19. Receitas antecipadas",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.48
+    ],
+    [
+     "lump_football_operations",
+     0.26
+    ],
+    [
+     "competition_bonus",
+     0.11
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Rendas antecipadas – Patrocínios",
+   "lado": "revenue",
+   "page": 26,
+   "section": "19. Receitas antecipadas",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Estádio",
+   "lado": "expense",
+   "page": 22,
+   "section": "10. Imobilizado",
+   "choice": "admin_general_expense",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "match_organisation_expense",
+     0.22
+    ],
+    [
+     "depreciation",
+     0.15
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Terrenos",
+   "lado": "expense",
+   "page": 22,
+   "section": "10. Imobilizado",
+   "choice": "depreciation",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "depreciation",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 908
+  },
+  {
+   "label": "Rede Social",
+   "lado": "expense",
+   "page": 22,
+   "section": "10. Imobilizado",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "depreciation",
+     0.03
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Aluguel do centro de treinamento e taxas de ocupação",
+   "lado": "expense",
+   "page": 22,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / 8. Despesas antecipadas",
+   "choice": "match_organisation_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1130
+  },
+  {
+   "label": "Benfeitorias em prédio de terceiros",
+   "lado": "expense",
+   "page": 22,
+   "section": "10. Imobilizado",
+   "choice": "other_expenses",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.38
+    ],
+    [
+     "other_amortisation",
+     0.12
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Ginásio",
+   "lado": "expense",
+   "page": 22,
+   "section": "10. Imobilizado",
+   "choice": "depreciation",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "depreciation",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ]
+   ],
+   "tokens": 796
+  },
+  {
+   "label": "Parque aquático",
+   "lado": "expense",
+   "page": 22,
+   "section": "10. Imobilizado",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "youth_other_sports_expense",
+     0.1
+    ]
+   ],
+   "tokens": 891
+  },
+  {
+   "label": "Circulante",
+   "lado": "expense",
+   "page": 22,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / 8. Despesas antecipadas",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 909
+  },
+  {
+   "label": "Máquinas/equipamentos/ veículos e outros",
+   "lado": "expense",
+   "page": 22,
+   "section": "10. Imobilizado",
+   "choice": "depreciation",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "depreciation",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 991
+  },
+  {
+   "label": "Não Circulante",
+   "lado": "expense",
+   "page": 22,
+   "section": "Notas explicativas da Administração às demonstrações contábeis / 8. Despesas antecipadas",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1049
+  }
+ ]
+}

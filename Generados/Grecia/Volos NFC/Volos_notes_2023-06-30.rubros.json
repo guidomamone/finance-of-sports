@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Grecia/Volos NFC/Volos_notes_2023-06-30.md",
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_notes_2023-06-30.pdf",
+ "club": "volos-nfc",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:03:51.257Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "Μισθοί και ημερομίσθια (μικτά ποσά)",
+   "lado": "expense",
+   "page": 3,
+   "section": "Το συνολικό κόστος μισθοδοσίας του προσωπικού αναλύεται στον παρακάτω πίνακα.",
+   "values": [
+    0.884768
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Κοινωνικές επιβαρύνσεις (εργοδοτικές εισφορές)",
+   "lado": "expense",
+   "page": 3,
+   "section": "Το συνολικό κόστος μισθοδοσίας του προσωπικού αναλύεται στον παρακάτω πίνακα.",
+   "values": [
+    0.091001
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Κόστος για παροχές μετά την έξοδο από την υπηρεσία",
+   "lado": "expense",
+   "page": 3,
+   "section": "Το συνολικό κόστος μισθοδοσίας του προσωπικού αναλύεται στον παρακάτω πίνακα.",
+   "values": [
+    1.543264
+   ],
+   "origen": "estado 6"
+  }
+ ]
+}

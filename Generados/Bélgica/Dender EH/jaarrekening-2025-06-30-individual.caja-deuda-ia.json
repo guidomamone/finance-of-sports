@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Bélgica/Dender EH/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-02T00:14:06.890Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   163
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   195
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las cifras están en euros (unidades) según el formato estándar belga, sin frase explícita de escala en las páginas. Deuda financiera: 'Overige leningen' a más de un año (L195, igual al subtotal L193). Las deudas financieras corrientes (L201-203) están vacías."
+}

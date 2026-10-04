@@ -1,0 +1,403 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.pdf",
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2010-2009.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T00:00:58.172Z",
+ "ubicacion": {
+  "estado": [
+   "b14",
+   "b15",
+   "b16"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b14",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala; los importes parecen estar en reais (unidades)."
+  },
+  {
+   "bloque": "b15",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala; los importes parecen estar en reais (unidades)."
+  },
+  {
+   "bloque": "b16",
+   "escala": "no se sabe",
+   "evidencia": "No se imprime la escala; los importes parecen estar en reais (unidades)."
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b14",
+   "linea": 343,
+   "etiqueta": "Futebol profissional e de base",
+   "actual": "29.905.994",
+   "anterior": "29.189.007",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 344,
+   "etiqueta": "Arrecadação de jogos",
+   "actual": "5.236.275",
+   "anterior": "5.817.070",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 345,
+   "etiqueta": "Direitos de transmissão de TV",
+   "actual": "13.044.375",
+   "anterior": "12.650.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 346,
+   "etiqueta": "(-) Dedução da receita",
+   "actual": "(2.348.606)",
+   "anterior": "(2.216.082)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 347,
+   "etiqueta": "Negociação de atestado liberatório de atletas",
+   "actual": "2.810.396",
+   "anterior": "3.681.370",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 348,
+   "etiqueta": "Mensalidade e matrículas de iniciação esportiva",
+   "actual": "2.350.298",
+   "anterior": "1.903.416",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 349,
+   "etiqueta": "Mensalidade de sócio titular",
+   "actual": "555.774",
+   "anterior": "41.700",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 350,
+   "etiqueta": "Publicidade e patrocínio",
+   "actual": "3.367.874",
+   "anterior": "3.373.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 351,
+   "etiqueta": "Parceria com patrocinadores e parceiros",
+   "actual": "960.000",
+   "anterior": "1.400.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 352,
+   "etiqueta": "Premiação",
+   "actual": "2.913.373",
+   "anterior": "1.574.641",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 353,
+   "etiqueta": "Participação em loteria esportiva",
+   "actual": "1.016.236",
+   "anterior": "963.893",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 354,
+   "etiqueta": "Sociais e esportes amadores",
+   "actual": "456.990",
+   "anterior": "724.564",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 355,
+   "etiqueta": "Patrocínio e parceria",
+   "actual": "192.000",
+   "anterior": "97.000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 356,
+   "etiqueta": "Treinamento de atletas",
+   "actual": "-",
+   "anterior": "7.160",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 357,
+   "etiqueta": "Royalties",
+   "actual": "145.658",
+   "anterior": "196.604",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 358,
+   "etiqueta": "Outros",
+   "actual": "119.332",
+   "anterior": "423.800",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b14",
+   "linea": 359,
+   "etiqueta": "TOTAL DAS RECEITAS",
+   "actual": "30.362.984",
+   "anterior": "29.913.572",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 365,
+   "etiqueta": "Futebol profissional e de base",
+   "actual": "(29.798.941)",
+   "anterior": "(42.017.605)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 366,
+   "etiqueta": "Despesas com jogos",
+   "actual": "(3.981.832)",
+   "anterior": "(3.009.223)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 367,
+   "etiqueta": "Pessoal",
+   "actual": "(23.218.075)",
+   "anterior": "(28.247.694)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 368,
+   "etiqueta": "Provisões, acordos e indenizações",
+   "actual": "3.355.708",
+   "anterior": "(2.552.778)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 369,
+   "etiqueta": "Acordos judiciais e extrajudiciais",
+   "actual": "(452.889)",
+   "anterior": "(2.418.494)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 370,
+   "etiqueta": "Direito de imagem",
+   "actual": "(4.262.228)",
+   "anterior": "(5.789.414)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 371,
+   "etiqueta": "Serviços profissionais comissão técnica",
+   "actual": "(1.239.625)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 372,
+   "etiqueta": "Despesas administrativas",
+   "actual": "(4.594.376)",
+   "anterior": "(4.988.062)",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 373,
+   "etiqueta": "Despesas administrativas",
+   "actual": "(273.126)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 374,
+   "etiqueta": "Materiais",
+   "actual": "(1.243.092)",
+   "anterior": "(1.142.823)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 375,
+   "etiqueta": "Serviços de terceiros",
+   "actual": "(1.659.554)",
+   "anterior": "(1.215.732)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 376,
+   "etiqueta": "Despesas tributárias",
+   "actual": "(240.843)",
+   "anterior": "(286.807)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 377,
+   "etiqueta": "Despesas gerais",
+   "actual": "(1.177.761)",
+   "anterior": "(2.342.700)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b15",
+   "linea": 378,
+   "etiqueta": "TOTAL DAS DESPESAS",
+   "actual": "(34.393.317)",
+   "anterior": "(47.005.666)",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 384,
+   "etiqueta": "Receitas financeiras",
+   "actual": "10.513",
+   "anterior": "181.964",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 385,
+   "etiqueta": "Despesas financeiras",
+   "actual": "(6.670.515)",
+   "anterior": "(2.418.567)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b16",
+   "linea": 386,
+   "etiqueta": "DÉFICIT DO EXERCÍCIO",
+   "actual": "(10.690.334)",
+   "anterior": "(19.328.697)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 359,
+  "actual": "30.362.984"
+ },
+ "total_gastos": {
+  "linea": 378,
+  "actual": "(34.393.317)"
+ },
+ "resultado": {
+  "linea": 386,
+  "actual": "(10.690.334)",
+  "anterior": "(19.328.697)"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se cargan los importes de b14-b16 (L343-L386) como reais en unidades, aunque no se imprime la escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Ningún bloque indica la escala; por la magnitud parecen reais en unidades.",
+   "bloques": [
+    "b14",
+    "b15",
+    "b16"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "L343 'Futebol profissional e de base' es subtotal de L344-L353 (difiere en 1 por redondeo) y L354 'Sociais e esportes amadores' de L355-L358. En gastos, L365 es subtotal de L366-L371 y L372 'Despesas administrativas' de L373-L377. L368 'Provisões, acordos e indenizações' tiene signo positivo en 2010 (reversión). El déficit L386 surge de receitas - despesas + resultado financiero."
+}

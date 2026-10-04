@@ -1,0 +1,558 @@
+{
+ "md": "Clubes/Grecia/Levadiakos/Levadiakos_FS_2021-06-30.md",
+ "generatedAt": "2026-09-30T04:29:33.173Z",
+ "rubros": [
+  {
+   "label": "Μικτό αποτέλεσμα",
+   "lado": null,
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_income",
+     0.53
+    ],
+    [
+     "lump_football_operations",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1333
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": null,
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "match_organisation_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1341
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": null,
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "match_organisation_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1340
+  },
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": null,
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "choice": "lump_football_operations",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.88
+    ],
+    [
+     "other_income",
+     0.1
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1349
+  },
+  {
+   "label": "Άλλα έξοδα και ζημίες",
+   "lado": null,
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "exceptional_items",
+     0.15000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": null,
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": null,
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": null,
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1341
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": null,
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1354
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": null,
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "admin_general_expense",
+     0.38
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1354
+  },
+  {
+   "label": "Αποτέλεσμα προ φόρων",
+   "lado": null,
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.39
+    ],
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "lado": null,
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.51
+    ],
+    [
+     "other_income",
+     0.24
+    ],
+    [
+     "other_expenses",
+     0.18
+    ]
+   ],
+   "tokens": 1353
+  },
+  {
+   "label": "Συντελεστής απόσβεσης",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "depreciation",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "depreciation",
+     0.44
+    ],
+    [
+     "player_amortisation",
+     0.42
+    ],
+    [
+     "other_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 824
+  },
+  {
+   "label": "Υπόλοιπο 1.7.2019",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 821
+  },
+  {
+   "label": "Αναπροσαρμογή",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "exceptional_items",
+     0.14
+    ],
+    [
+     "other_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 817
+  },
+  {
+   "label": "Φόρος εισοδήματος",
+   "lado": null,
+   "page": 2,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ / ## 4. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΠΕΡΙΟΔΟΥΑΠΟ 1/7/2020 έως 30/6/2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Προσθήκες",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "player_amortisation",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 813
+  },
+  {
+   "label": "Πωλήσεις-διαγραφές-μεταφορές",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "exceptional_items",
+     0.16
+    ],
+    [
+     "player_amortisation",
+     0.14
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Υπόλοιπο 30.6.2020",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 822
+  },
+  {
+   "label": "Αποσβέσεις χρήσεως",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "depreciation",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "depreciation",
+     0.9
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 821
+  },
+  {
+   "label": "Υπόλοιπο 1.7.2020",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 821
+  },
+  {
+   "label": "Αναπόσβεση αξία 30.6.2020",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "player_amortisation",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "player_amortisation",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "depreciation",
+     0.18
+    ]
+   ],
+   "tokens": 828
+  },
+  {
+   "label": "Υπόλοιπο 30.6.2021",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 822
+  },
+  {
+   "label": "Αναπόσβεση αξία 30.6.2021",
+   "lado": "expense",
+   "page": 11,
+   "section": "[LOGO] / # Π.Α.Ε. ΛΕΒΑΔΕΙΑΚΟΣ",
+   "choice": "other_expenses",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "player_amortisation",
+     0.27
+    ],
+    [
+     "depreciation",
+     0.21
+    ]
+   ],
+   "tokens": 828
+  }
+ ]
+}

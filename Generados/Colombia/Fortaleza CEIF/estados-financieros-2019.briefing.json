@@ -1,0 +1,3877 @@
+{
+  "club": "fortaleza-ceif",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.md",
+  "generatedAt": "2026-09-30T21:58:28.287Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 35,
+    "eu": 1,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 36,
+  "relevantTableCount": 13,
+  "tables": [
+    {
+      "page": 5,
+      "section": "## POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ### 5.2.1. Deudores comerciales y cuentas por cobrar / ### 5.2.2. Cuentas y documentos por pagar / ### 5.2.3. Obligaciones Bancarias / ### 5.3. Propiedad Planta y Equipo",
+      "columns": [
+        "Terrenos",
+        "No se deprecia."
+      ],
+      "rows": [
+        {
+          "rawLabel": "Construcciones y edificaciones",
+          "values": [
+            "45 años."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria",
+          "values": [
+            "10 años."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vehículos de motor",
+          "values": [
+            "10 años."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mobiliario y enseres",
+          "values": [
+            "10 años."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de oficina",
+          "values": [
+            "10 años."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de cómputo",
+          "values": [
+            "5 años."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mejoras a propiedades ajenas",
+          "values": [
+            "5 años."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adecuaciones a Construcciones",
+          "values": [
+            "5 años."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remodelaciones",
+          "values": [
+            "5 años."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 11,
+      "section": "POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos) / ### 6.3. Reconocimiento De Ingresos / ## 7. REEXPRESIÓN DE ESTADOS FINANCIEROS / ### Estado de Situación Financiera",
+      "columns": [
+        "Concepto",
+        "Saldo a 31 de Diciembre 2018",
+        "Ajuste del Periodo (Debito-Crédito)",
+        "Saldo a 31 de Diciembre 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Patrimonio",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Capital Social",
+          "values": [
+            "700,000",
+            "-140,220",
+            "559,780"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima de Conversión",
+          "values": [
+            "-",
+            "140,220",
+            "140,220"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Patrimonio",
+          "values": [
+            "700,000",
+            "-",
+            "700,000"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 8. EFECTIVO Y EQUIVALENTE DE EFECTIVO",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Bancos",
+          "values": [
+            "166,879",
+            "1,800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cajas",
+          "values": [
+            "2,769",
+            "917,887"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Efectivo y Equivalente de Efectivo",
+          "values": [
+            "169,648",
+            "919,687"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "## 9. CUENTAS POR COBRAR COMERCIALES Y OTRAS CUENTAS POR COBRAR",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Clientes (1)",
+          "values": [
+            "553,501",
+            "541,205"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipos Y Avances (2)",
+          "values": [
+            "331,395",
+            "33,876"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas Por Cobrar A Terceros (3)",
+          "values": [
+            "52,637",
+            "1,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas Por Cobrar A Trabajadores (4)",
+          "values": [
+            "3,749",
+            "462"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos Por Cobrar",
+          "values": [
+            "838",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Cuentas por Cobrar Comerciales y Otras Cuentas por Cobrar",
+          "values": [
+            "942,121",
+            "576,543"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "1. Las cuentas por cobrar clientes corresponde a los terceros:",
+      "columns": [
+        "Cliente",
+        "Saldo Actual",
+        "%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "GLESA SUMINISTROS Y COMUNICACIONES S.A.S",
+          "values": [
+            "174,960",
+            "31.61%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FORTALEZA ESPORTE CLUBE",
+          "values": [
+            "69,358",
+            "12.53%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIVISION MAYOR DE FUTBOL COLOMBIANO",
+          "values": [
+            "57,035",
+            "10.30%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ALIANZA PETROLERA FC S.A.",
+          "values": [
+            "52,000",
+            "9.39%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INDEPENDIENTE SANTA FE S.A.",
+          "values": [
+            "50,641",
+            "9.15%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CLUB DEPORTIVO CEIF FUTBOL CLUB",
+          "values": [
+            "50,399",
+            "9.11%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CLUB DEPORTIVO FORTALEZA CEIF",
+          "values": [
+            "50,399",
+            "9.11%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PISA FARMACEUTICA DE COLOMBIA S A",
+          "values": [
+            "46,567",
+            "8.41%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LOS NOTARIOS SAS",
+          "values": [
+            "2,142",
+            "0.39%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "553,501",
+            "100%"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos) / ## 10. ACTIVOS POR IMPUESTOS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo A Favor Del Impuesto De Renta",
+          "values": [
+            "138,850",
+            "140,115"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Activos por Impuestos",
+          "values": [
+            "138,850",
+            "140,115"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "Se detalla la liquidación del impuesto:",
+      "columns": [
+        "Concepto",
+        "A 31 de Diciembre de 2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Utilidad Contable",
+          "values": [
+            "(52,122)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Partidas Menor Valor Fiscal",
+          "values": [
+            "-"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS",
+      "columns": [
+        "Partidas Mayor Valor Fiscal",
+        "105,039"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos de Administración",
+          "values": [
+            "10,950"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gastos Médicos Y Drogas",
+          "values": [
+            "322"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gravamen Al Movimiento Financiero",
+          "values": [
+            "10,628"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Gastos",
+          "values": [
+            "76,626"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Impuestos Asumidos Rte Fuente",
+          "values": [
+            "663"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos Asumidos Rte Ica",
+          "values": [
+            "717"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Iva Asumido",
+          "values": [
+            "32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indemnizaciones",
+          "values": [
+            "2,734"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas Sanciones Y Litigios",
+          "values": [
+            "2,790"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Donaciones",
+          "values": [
+            "5,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste Al Peso",
+          "values": [
+            "15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos No Deducibles",
+          "values": [
+            "58,293"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Iva Gastos No Deducibles",
+          "values": [
+            "3,806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses",
+          "values": [
+            "2,576"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gasto / Ingreso Impuesto De Renta Y Complementario Del Periodo",
+          "values": [
+            "17,463"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Impuesto De Renta Y Complementario",
+          "values": [
+            "17,463"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Renta Liquida Fiscal",
+          "values": [
+            "52,918"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Renta Presuntiva Periodo Gravable",
+          "values": [
+            "16,132"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Renta Liquida Gravable",
+          "values": [
+            "52,918"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Tasa de Impuesto Renta",
+          "values": [
+            "33%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Impuesto a cargo",
+          "values": [
+            "17,463"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Anticipo impuesto de renta año gravable anterior",
+          "values": [
+            "-13,288"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo a favor año renta año gravable anterior",
+          "values": [
+            "-75,807"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autorretenciones",
+          "values": [
+            "-27,705"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras Retenciones",
+          "values": [
+            "-39,513"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo a favor",
+          "values": [
+            "(138,850)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 14,
+      "section": "# 11. INVENTARIOS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Indumentaria",
+          "values": [
+            "5,077",
+            "2,097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cafetería y Restaurantes",
+          "values": [
+            "-",
+            "21,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Inventarios",
+          "values": [
+            "5,077",
+            "23,097"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 12. PROPIEDAD, PLANTA Y EQUIPO",
+      "columns": [
+        "Estado de Activos Diciembre 2019",
+        "Costo Historico",
+        "Saldo Inicial Neto",
+        "Vida Util",
+        "- Adicion",
+        "- Retiro",
+        "Depreciación del Periodo",
+        "Valor en Libros"
+      ],
+      "rows": [
+        {
+          "rawLabel": "BUS SBK716",
+          "values": [
+            "80,000",
+            "37,292",
+            "5 años",
+            "-",
+            "-",
+            "15,999",
+            "21,293"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BUSETA UFX588",
+          "values": [
+            "41,000",
+            "31,798",
+            "5 años",
+            "-",
+            "-",
+            "8,200",
+            "23,598"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAMIONETA RAV568",
+          "values": [
+            "94,000",
+            "72,902",
+            "5 años",
+            "-",
+            "-",
+            "18,800",
+            "54,102"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LAVADORA",
+          "values": [
+            "1,667",
+            "1,561",
+            "10 años",
+            "-",
+            "-",
+            "134",
+            "1,427"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LAVADORA 2",
+          "values": [
+            "2,058",
+            "1,952",
+            "10 años",
+            "-",
+            "-",
+            "134",
+            "1,818"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LAVADORA 3",
+          "values": [
+            "1,342",
+            "1,179",
+            "10 años",
+            "-",
+            "-",
+            "206",
+            "973"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SECADORA",
+          "values": [
+            "1,342",
+            "1,210",
+            "10 años",
+            "-",
+            "-",
+            "167",
+            "1,043"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PORTATIL ASUS",
+          "values": [
+            "1,480",
+            "1,332",
+            "5 años",
+            "-",
+            "-",
+            "300",
+            "1,032"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COMPUTADORA",
+          "values": [
+            "3,080",
+            "2,582",
+            "5 años",
+            "-",
+            "-",
+            "612",
+            "1,970"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BIOMETRICO",
+          "values": [
+            "290",
+            "-",
+            "1 año",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CONO ISOINERCIAL",
+          "values": [
+            "3,800",
+            "-",
+            "10 años",
+            "3,800",
+            "-",
+            "285",
+            "3,515"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MAQ. ISOINERCIALES 4",
+          "values": [
+            "14,472",
+            "-",
+            "10 años",
+            "14,472",
+            "-",
+            "482",
+            "13,990"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAMARA CANON",
+          "values": [
+            "1,765",
+            "-",
+            "5 años",
+            "1,765",
+            "-",
+            "147",
+            "1,618"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "M.BOMBA GAS",
+          "values": [
+            "1,260",
+            "-",
+            "1 año",
+            "1,260",
+            "-",
+            "1,260",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPRESORA CANON",
+          "values": [
+            "728",
+            "-",
+            "1 año",
+            "728",
+            "-",
+            "728",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PORTATIL INDUMENT",
+          "values": [
+            "930",
+            "-",
+            "5 años",
+            "930",
+            "-",
+            "20",
+            "910"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PORTATIL TESORERIA",
+          "values": [
+            "2,695",
+            "-",
+            "5 años",
+            "2,695",
+            "-",
+            "-",
+            "2,695"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MEJORAS PROPIEDADES AJENAS",
+          "values": [
+            "141,995",
+            "-",
+            "5 años",
+            "141,995",
+            "-",
+            "-",
+            "141,995"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROMESA",
+          "values": [
+            "-",
+            "-",
+            "0 años",
+            "1,100,000",
+            "-",
+            "-",
+            "1,100,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COMPRAVENTA TERRENO",
+          "values": [
+            "1,100,000",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales",
+          "values": [
+            "1,493,904",
+            "151,807",
+            "-",
+            "1,267,645",
+            "-",
+            "47,474",
+            "1,371,978"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Adquiridas",
+          "values": [
+            "100,000",
+            "100,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afiliaciones a Dimayor y Derechos Deportivos",
+          "values": [
+            "520,000",
+            "520,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Licencias Sistema Contable",
+          "values": [
+            "10,048",
+            "6,184"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización",
+          "values": [
+            "(376,572)",
+            "(248,955)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Intangibles",
+          "values": [
+            "253,476",
+            "377,229"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": null,
+      "columns": [
+        "Estado de Intangibles Diciembre 2019",
+        "Costo Historico",
+        "Saldo Inicial Neto",
+        "Vida Util",
+        "+ Adicion",
+        "- Retiro",
+        "Depreciación del Periodo",
+        "Valor en Libros"
+      ],
+      "rows": [
+        {
+          "rawLabel": "MARCA FORTALEZA",
+          "values": [
+            "100,000",
+            "102,000",
+            "5 años",
+            "-",
+            "-",
+            "34,000",
+            "68,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DERECHOS",
+          "values": [
+            "520,000",
+            "270,000",
+            "5 años",
+            "-",
+            "-",
+            "90,000",
+            "180,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SOFTWARE",
+          "values": [
+            "10,048",
+            "5,229",
+            "5 años",
+            "3,864",
+            "-",
+            "3,617",
+            "5,476"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totales",
+          "values": [
+            "630,048",
+            "377,229",
+            "-",
+            "3,864",
+            "-",
+            "127,617",
+            "253,476"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "# 14. PRESTAMOS Y SOBREGIROS BANCARIOS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Tarjetas de crédito",
+          "values": [
+            "794",
+            "4,398"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Prestamos y Sobregiros Bancarios",
+          "values": [
+            "794",
+            "4,398"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "# 15. CUENTAS POR PAGAR COMERCIALES Y OTRAS CUENTAS POR PAGAR",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Acreedores Varios (1)",
+          "values": [
+            "1,198,760",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proveedores Nacionales (2)",
+          "values": [
+            "150,929",
+            "76,017"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costos Y Gastos Por Pagar (3)",
+          "values": [
+            "109,178",
+            "634,679"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retenciones Y Aportes (4)",
+          "values": [
+            "21,487",
+            "15,749"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras Cuentas por Pagar Gastos Efectuados (5)",
+          "values": [
+            "18,782",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Proveedores Del Exterior (6)",
+          "values": [
+            "7,595",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Cuentas por Pagar Comerciales y Otras Cuentas por Pagar",
+          "values": [
+            "1,506,731",
+            "726,446"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos)",
+      "columns": [
+        "Tercero",
+        "Saldo Actual",
+        "%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "BEJARANO CORRADINE SAS",
+          "values": [
+            "32,203",
+            "21.34%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SOCIEDAD COMERCIAL LA CONEJERA SAS",
+          "values": [
+            "23,864",
+            "15.81%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIAZ BAUTISTA JOHN LEONARDO",
+          "values": [
+            "11,294",
+            "7.48%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIPTONGO SAS",
+          "values": [
+            "9,621",
+            "6.37%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ACONT GROUP SAS",
+          "values": [
+            "8,629",
+            "5.72%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COBASEC LIMITADA",
+          "values": [
+            "7,599",
+            "5.03%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GAS NATURAL CUNDIBOYACENSE S A E S P",
+          "values": [
+            "5,538",
+            "3.67%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "98,748",
+            "65.43%"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "3. Los costos y gastos por pagar corresponden a:",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Servicios Técnicos (1)",
+          "values": [
+            "109,178",
+            "109,178"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "-",
+            "525,501"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Costos y Gastos por Pagar",
+          "values": [
+            "109,178",
+            "634,679"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 16. PASIVO POR IMPUESTOS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Retención En La Fuente",
+          "values": [
+            "10,122",
+            "132,562"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto Sobre La Venta",
+          "values": [
+            "3,384",
+            "633"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto De Industria",
+          "values": [
+            "2,103",
+            "4,433"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retención de ICA",
+          "values": [
+            "1,811",
+            "12,536"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto de Renta y Complementarios",
+          "values": [
+            "-",
+            "40,612"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto Al Consumo",
+          "values": [
+            "-",
+            "16,819"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Pasivos por Impuestos",
+          "values": [
+            "17,421",
+            "207,595"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "# FORTALEZA FUTBOL CLUB SA / ## POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cesantías Consolidadas",
+          "values": [
+            "61,468",
+            "56,306"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses Sobre Las Cesantías",
+          "values": [
+            "7,376",
+            "6,737"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vacaciones Consolidadas",
+          "values": [
+            "5,001",
+            "2,560"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima de Servicios Extralegal",
+          "values": [
+            "1,850",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salarios por Pagar",
+          "values": [
+            "3,440",
+            "20,081"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Pasivos por Beneficios a Empleados",
+          "values": [
+            "79,136",
+            "85,684"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "## 18. OTROS PASIVOS NO FINANCIEROS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anticipos Y Avances Recibidos (1)",
+          "values": [
+            "213,852",
+            "14,180"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos Recibidos Para Terceros",
+          "values": [
+            "38,478",
+            "73,315"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Otros Pasivos no Financieros",
+          "values": [
+            "252,330",
+            "87,496"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "## 19. CAPITAL EMITIDO",
+      "columns": [
+        "Capital",
+        "Valor de Acciones",
+        "No. de acciones",
+        "Valor nominal"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capital Autorizado",
+          "values": [
+            "559,780,000",
+            "27,989",
+            "20,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital Suscrito",
+          "values": [
+            "559,780,000",
+            "27,989",
+            "20,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital Pagado",
+          "values": [
+            "559,780,000",
+            "27,989",
+            "20,000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "# FORTALEZA FUTBOL CLUB SA / ## POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS",
+      "columns": [
+        "Capital",
+        "Valor de Acciones",
+        "No. de acciones",
+        "Valor nominal"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capital Autorizado",
+          "values": [
+            "559,780,000",
+            "27,989",
+            "20,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital Suscrito",
+          "values": [
+            "559,780,000",
+            "27,989",
+            "20,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital Pagado",
+          "values": [
+            "559,780,000",
+            "27,989",
+            "20,000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "### Pagos basados en acciones / ## 20. PRIMA DE CONVERSION",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "140,220",
+            "140,220"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Prima de Conversión",
+          "values": [
+            "140,220",
+            "140,220"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "## 21. RESULTADOS ACUMULADOS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Resultado Año 2017",
+          "values": [
+            "1,347,094",
+            "1,347,094"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Año 2016",
+          "values": [
+            "(331,158)",
+            "(331,158)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Año 2018",
+          "values": [
+            "(639,077)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Resultados Acumulados",
+          "values": [
+            "376,859",
+            "1,015,936"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 21,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / # 22. INGRESO DE ACTIVIDADES ORDINARIAS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Actividades Deportivas (1)",
+          "values": [
+            "2,757,062",
+            "5,879,734"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta De Productos (2)",
+          "values": [
+            "213,814",
+            "541,230"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Ingresos actividades ordinarias",
+          "values": [
+            "2,970,876",
+            "6,420,964"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": "El ingreso ordinario disminuyo en 53.73% con respecto al año anterior. / 1. El ingreso por actividades deportivas corresponden:",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Venta De Derechos Deportivos (1)",
+          "values": [
+            "1,096,480",
+            "4,498,888"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos De Televisión Nacional (2)",
+          "values": [
+            "827,456",
+            "635,566"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta De Boletería (3)",
+          "values": [
+            "467,677",
+            "10,930"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilio Hotelero (4)",
+          "values": [
+            "112,286",
+            "411,063"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Infraestructura",
+          "values": [
+            "94,000",
+            "186,109"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilio Arbitraje",
+          "values": [
+            "54,063",
+            "56,903"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aux Mejoramiento De Gestión Organizacional Clubes",
+          "values": [
+            "27,273",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilio Análisis Deportivo",
+          "values": [
+            "21,000",
+            "19,345"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilio Transporte",
+          "values": [
+            "20,683",
+            "26,398"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Federación Colombiana De Futbol",
+          "values": [
+            "19,038",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Convenio Entre Clubes",
+          "values": [
+            "16,807",
+            "33,531"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propaganda Y Publicidad",
+          "values": [
+            "300",
+            "1,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "2,757,062",
+            "5,879,734"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": null,
+      "columns": [
+        "Nombre Equipo",
+        "Tipo",
+        "Nombre Jugador",
+        "Valor",
+        "%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CLUB ESTUDIANTES DE LA PLATA (ARGENTINA)",
+          "values": [
+            "TRANSFERENCIA",
+            "JUAN FERNEY OTERO",
+            "337,723",
+            "30.80%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "THE LIVERPOOL FOOTBALL",
+          "values": [
+            "TRANSFERENCIA",
+            "ANDERSON ARROYO",
+            "335,884",
+            "30.63%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FORTALEZA ESPORTE CLUBE",
+          "values": [
+            "TRANSFERENCIA",
+            "MARIANO VASQUEZ",
+            "247,129",
+            "22.54%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EL EQUIPO DEL PUEBLO S.A.",
+          "values": [
+            "TRANSFERENCIA",
+            "ANDRES MOSQUERA",
+            "138,000",
+            "12.59%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ASOCIACION DEPORTIVA PASTO",
+          "values": [
+            "PRESTAMO",
+            "BRAYAN TORRES",
+            "18,872",
+            "1.72%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ASOCIACION DEPORTIVA PASTO",
+          "values": [
+            "PRESTAMO",
+            "SEBASTIAN ACOSTA",
+            "18,872",
+            "1.72%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "",
+            "",
+            "1,096,480",
+            "100.00%"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 22,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos)",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Venta De Indumentaria (1)",
+          "values": [
+            "214,991",
+            "260,753"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Devoluciones De Productos Comercializados",
+          "values": [
+            "(1,176)",
+            "(76)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ventas Restaurante",
+          "values": [
+            "-",
+            "280,553"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Ingresos actividades ordinarias",
+          "values": [
+            "213,814",
+            "541,230"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 22,
+      "section": "## 23. COSTO DE VENTAS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Venta De Indumentaria (1)",
+          "values": [
+            "137,713",
+            "60,619"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ventas Restaurante",
+          "values": [
+            "-",
+            "194,818"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Costo de Ventas",
+          "values": [
+            "137,713",
+            "255,437"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Porcentaje sobre ventas",
+          "values": [
+            "4.64%",
+            "3.98%"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 22,
+      "section": "## 24. GASTOS DE VENTAS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos Laborales",
+          "values": [
+            "1,162,652",
+            "1,466,393"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Sueldos",
+          "values": [
+            "646,521",
+            "840,270"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bonificaciones",
+          "values": [
+            "136,809",
+            "125,337"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes A Fondos De Pensiones",
+          "values": [
+            "90,239",
+            "106,224"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dotación Personal",
+          "values": [
+            "62,717",
+            "84,969"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima De Servicios",
+          "values": [
+            "56,518",
+            "75,775"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cesantías",
+          "values": [
+            "53,216",
+            "75,802"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 23,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos)",
+      "columns": [
+        "Auxilio De Transporte",
+        "30,788",
+        "39,750"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Indemnizaciones Laborales",
+          "values": [
+            "27,620",
+            "1,500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes Cajas De Compensación Familiar",
+          "values": [
+            "26,060",
+            "34,207"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes A Administradoras De Riesgos Profesionales",
+          "values": [
+            "15,722",
+            "20,189"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vacaciones",
+          "values": [
+            "8,806",
+            "5,640"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses Sobre Cesantías",
+          "values": [
+            "5,811",
+            "7,945"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Horas Extras Y Recargos",
+          "values": [
+            "1,792",
+            "14,167"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes A Eps",
+          "values": [
+            "33",
+            "124"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Viáticos",
+          "values": [
+            "-",
+            "1,851"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capacitación al Personal",
+          "values": [
+            "-",
+            "380"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Médicos Y Drogas",
+          "values": [
+            "-",
+            "32,263"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Viaje",
+          "values": [
+            "180,573",
+            "172,844"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Alojamiento Y Manutención (1)",
+          "values": [
+            "68,384",
+            "43,864"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taxis Y Buses",
+          "values": [
+            "39,941",
+            "63,704"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasajes Aéreos",
+          "values": [
+            "33,648",
+            "38,669"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parqueaderos",
+          "values": [
+            "16,463",
+            "15,221"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte De Pasajeros",
+          "values": [
+            "13,521",
+            "9,876"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Elementos De Aseo Y Cafetería",
+          "values": [
+            "8,350",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parqueadero",
+          "values": [
+            "179",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Peajes",
+          "values": [
+            "87",
+            "1,510"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Legales",
+          "values": [
+            "53,700",
+            "95,658"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Derechos Deportivos",
+          "values": [
+            "53,700",
+            "95,658"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prestación de Servicios Deportivos",
+          "values": [
+            "214,465",
+            "206,967"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Arbitraje (2)",
+          "values": [
+            "77,228",
+            "68,183"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Logística De Partidos (3)",
+          "values": [
+            "50,832",
+            "29,131"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Médicos Y Ambulancias",
+          "values": [
+            "29,910",
+            "12,410"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terapias Psicológicas",
+          "values": [
+            "27,660",
+            "10,900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas Partidos Dimayor (4)",
+          "values": [
+            "16,884",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Torneos (5)",
+          "values": [
+            "7,392",
+            "32,963"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terapias Desarrollo Muscular",
+          "values": [
+            "2,240",
+            "53,380"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alquiler Maquinaria Y Equipo",
+          "values": [
+            "1,669",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alquiler Terrenos",
+          "values": [
+            "650",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Gastos de Ventas",
+          "values": [
+            "1,611,389",
+            "1,941,860"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Porcentaje sobre ventas",
+          "values": [
+            "54.24%",
+            "30.24%"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 24,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos) / # 25. GASTOS DE ADMINISTRACIÓN",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos Laborales",
+          "values": [
+            "526,714",
+            "-"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Sueldos",
+          "values": [
+            "285,297",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bonificaciones",
+          "values": [
+            "91,056",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes A Fondos De Pensiones",
+          "values": [
+            "35,169",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cesantías",
+          "values": [
+            "25,374",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima De Servicios",
+          "values": [
+            "25,004",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sena",
+          "values": [
+            "20,070",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes Cajas De Compensación Familiar",
+          "values": [
+            "12,708",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes A Administradoras De Riesgos Profesionales",
+          "values": [
+            "7,110",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auxilio De Transporte",
+          "values": [
+            "6,805",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Horas Extras Y Recargos",
+          "values": [
+            "5,944",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vacaciones",
+          "values": [
+            "4,933",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses Sobre Cesantías",
+          "values": [
+            "2,878",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eps Compensar",
+          "values": [
+            "1,706",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indemnizaciones Laborales",
+          "values": [
+            "1,369",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dotación Y Suministro A Trabajadores",
+          "values": [
+            "969",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Médicos Y Drogas",
+          "values": [
+            "322",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por Honorarios",
+          "values": [
+            "151,847",
+            "376,328"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Asesoría Jurídica (1)",
+          "values": [
+            "70,876",
+            "12,707"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Asesoría Financiera",
+          "values": [
+            "48,600",
+            "39,830"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos De Formación",
+          "values": [
+            "22,209",
+            "45,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avalúos (2)",
+          "values": [
+            "8,002",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Asesoría Técnica",
+          "values": [
+            "2,160",
+            "278,791"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por Impuestos",
+          "values": [
+            "35,491",
+            "144,936"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gravamen Al Movimiento Financiero",
+          "values": [
+            "21,249",
+            "31,395"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto Al Consumo",
+          "values": [
+            "9,063",
+            "109,108"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Industria Y Comercio",
+          "values": [
+            "3,754",
+            "4,433"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto Al Consumo",
+          "values": [
+            "1,425",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por Arrendamientos",
+          "values": [
+            "182,886",
+            "1,165,164"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Construcciones Y Edificaciones",
+          "values": [
+            "111,793",
+            "109,964"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "62,508",
+            "1,052,681"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria Y Equipo",
+          "values": [
+            "8,585",
+            "2,519"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por Afiliaciones y Sostenimiento",
+          "values": [
+            "-",
+            "500"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 25,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos)",
+      "columns": [
+        "Afiliaciones y Sostenimiento",
+        "-",
+        "500"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos por Seguros",
+          "values": [
+            "5,439",
+            "5,494"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Flota Y Equipo De Transporte",
+          "values": [
+            "3,980",
+            "4,123"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obligatorio Accidente De Transito",
+          "values": [
+            "759",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Responsabilidad Civil Y Extracontractual",
+          "values": [
+            "475",
+            "1,371"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte De Mercancía",
+          "values": [
+            "100",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cumplimiento",
+          "values": [
+            "125",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por Servicios",
+          "values": [
+            "385,986",
+            "1,490,908"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Restaurantes",
+          "values": [
+            "135,440",
+            "203,821"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aseo Y Vigilancia",
+          "values": [
+            "79,354",
+            "82,428"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Propaganda Y Publicidad",
+          "values": [
+            "64,806",
+            "71,489"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Energía Eléctrica",
+          "values": [
+            "56,990",
+            "48,548"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Asistencia Técnica",
+          "values": [
+            "27,959",
+            "862,514"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transporte Fletes Y Acarreos",
+          "values": [
+            "10,015",
+            "202,564"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tv Cable",
+          "values": [
+            "3,823",
+            "1,866"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Teléfono",
+          "values": [
+            "3,035",
+            "5,335"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acueducto Y Alcantarillado",
+          "values": [
+            "2,578",
+            "2,956"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios Digitación Contable",
+          "values": [
+            "1,166",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gas",
+          "values": [
+            "610",
+            "9,053"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Temporales",
+          "values": [
+            "120",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Procesamiento Electrónico De Datos O Tv",
+          "values": [
+            "90",
+            "334"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por Legales",
+          "values": [
+            "7,361",
+            "62,153"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Transferencia Deportiva",
+          "values": [
+            "5,000",
+            "48,085"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Registro Mercantil",
+          "values": [
+            "1,997",
+            "2,081"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Notariales",
+          "values": [
+            "364",
+            "200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intermediación Deportiva",
+          "values": [
+            "-",
+            "9,200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tramites Y Licencias",
+          "values": [
+            "-",
+            "2,587"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por Mantenimiento",
+          "values": [
+            "62,566",
+            "101,127"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Construcciones Y Edificaciones",
+          "values": [
+            "21,306",
+            "29,379"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reparaciones Locativas (3)",
+          "values": [
+            "12,971",
+            "7,518"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria Y Equipo",
+          "values": [
+            "12,028",
+            "48,210"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flota Y Equipo De Transporte",
+          "values": [
+            "11,472",
+            "8,269"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo De Oficina",
+          "values": [
+            "2,024",
+            "3,304"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "1,966",
+            "3,001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo De Hoteles Y Restaurantes",
+          "values": [
+            "784",
+            "737"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Iva Equipo De Computación Y Comunicación",
+          "values": [
+            "15",
+            "709"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Viajes",
+          "values": [
+            "5,099",
+            "2,639"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Alojamiento Y Manutención",
+          "values": [
+            "5,099",
+            "2,639"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por Depreciación",
+          "values": [
+            "47,474",
+            "44,442"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Flota Y Equipo De Transporte",
+          "values": [
+            "42,999",
+            "42,999"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria Y Equipo",
+          "values": [
+            "2,688",
+            "507"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo De Computación Y Comunicación",
+          "values": [
+            "1,787",
+            "936"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos por Amortización",
+          "values": [
+            "127,617",
+            "124,955"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Intangibles",
+          "values": [
+            "124,000",
+            "124,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Licencias",
+          "values": [
+            "3,617",
+            "955"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Diversos",
+          "values": [
+            "85,967",
+            "761,186"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 26,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS",
+      "columns": [
+        "Elementos De Aseo Y Cafetería",
+        "33,056",
+        "41,726"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Combustibles Y Lubricantes",
+          "values": [
+            "30,956",
+            "30,021"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Útiles Papelería Y Fotocopias",
+          "values": [
+            "10,774",
+            "7,456"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasajes Terrestres",
+          "values": [
+            "8,568",
+            "7,419"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Casino Y Restaurante",
+          "values": [
+            "517",
+            "868"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Libros Suscripciones Periódicos Y Revi",
+          "values": [
+            "764",
+            "646"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Implementos Deportivos",
+          "values": [
+            "615",
+            "344"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parqueaderos",
+          "values": [
+            "280",
+            "519"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Correo Portes Y Telegramas",
+          "values": [
+            "271",
+            "517"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comisiones",
+          "values": [
+            "166",
+            "671,670"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Gastos de Administración",
+          "values": [
+            "1,624,451",
+            "4,279,828"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Porcentaje sobre ventas",
+          "values": [
+            "54.68%",
+            "66.65%"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 26,
+      "section": "## 26. OTROS GASTOS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos No Deducibles (1)",
+          "values": [
+            "64,674",
+            "411,556"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Donaciones (2)",
+          "values": [
+            "5,000",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas Sanciones Y Litigios (3)",
+          "values": [
+            "2,790",
+            "57,460"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indemnizaciones",
+          "values": [
+            "2,734",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos Asumidos",
+          "values": [
+            "1,412",
+            "757"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste Al Peso",
+          "values": [
+            "15",
+            "16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Otros Gastos",
+          "values": [
+            "76,626",
+            "469,789"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 27,
+      "section": "FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 27. OTROS INGRESOS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Por Incumplimiento De Contratos (1)",
+          "values": [
+            "265,620",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos De Inmuebles (2)",
+          "values": [
+            "150,073",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses Por Mora (3)",
+          "values": [
+            "55,745",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencia En Cambio",
+          "values": [
+            "13,229",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aprovechamientos",
+          "values": [
+            "5,499",
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reintegro De Otros Costos Y Gastos",
+          "values": [
+            "2,052",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros Ingresos",
+          "values": [
+            "840",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste Al Peso",
+          "values": [
+            "11",
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Otros Ingresos",
+          "values": [
+            "493,069",
+            "7"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 27,
+      "section": "## 28. COSTOS FINANCIEROS",
+      "columns": [
+        "",
+        "A 31 de Diciembre de 2019",
+        "A 31 de Diciembre de 2018 Reexpresados"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Diferencia En Cambio (1)",
+          "values": [
+            "33,122",
+            "59,233"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comisiones Bancarias (2)",
+          "values": [
+            "13,584",
+            "12,692"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Bancarios",
+          "values": [
+            "1,424",
+            "333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses",
+          "values": [
+            "296",
+            "266"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Costos Financieros",
+          "values": [
+            "48,426",
+            "72,523"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 11,
+      "section": "POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos) / ### 6.3. Reconocimiento De Ingresos / ## 7. REEXPRESIÓN DE ESTADOS FINANCIEROS / ### Estado de Situación Financiera",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Patrimonio",
+      "target": "700,000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": "POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos) / ### 6.3. Reconocimiento De Ingresos / ## 7. REEXPRESIÓN DE ESTADOS FINANCIEROS / ### Estado de Situación Financiera",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Total Patrimonio",
+      "target": "700,000",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 8. EFECTIVO Y EQUIVALENTE DE EFECTIVO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Efectivo y Equivalente de Efectivo",
+      "target": "169,648",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 8. EFECTIVO Y EQUIVALENTE DE EFECTIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Efectivo y Equivalente de Efectivo",
+      "target": "919,687",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "## 9. CUENTAS POR COBRAR COMERCIALES Y OTRAS CUENTAS POR COBRAR",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Cuentas por Cobrar Comerciales y Otras Cuentas por Cobrar",
+      "target": "942,121",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 5 rubros enteros)"
+    },
+    {
+      "page": 12,
+      "section": "## 9. CUENTAS POR COBRAR COMERCIALES Y OTRAS CUENTAS POR COBRAR",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Cuentas por Cobrar Comerciales y Otras Cuentas por Cobrar",
+      "target": "576,543",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "1. Las cuentas por cobrar clientes corresponde a los terceros:",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "553,501",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "1. Las cuentas por cobrar clientes corresponde a los terceros:",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"100%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 13,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos) / ## 10. ACTIVOS POR IMPUESTOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Activos por Impuestos",
+      "target": "138,850",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 13,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos) / ## 10. ACTIVOS POR IMPUESTOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Activos por Impuestos",
+      "target": "140,115",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Impuesto a cargo",
+      "skipped": true,
+      "reason": "1 de 20 valor(es) del segmento no parecen números (ej. \"33%\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 14,
+      "section": "# 11. INVENTARIOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Inventarios",
+      "target": "5,077",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": "# 11. INVENTARIOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Inventarios",
+      "target": "23,097",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 12. PROPIEDAD, PLANTA Y EQUIPO",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales",
+      "target": "1,493,904",
+      "addendCount": 19,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 12. PROPIEDAD, PLANTA Y EQUIPO",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totales",
+      "target": "151,807",
+      "addendCount": 9,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 9 rubros enteros)"
+    },
+    {
+      "page": 15,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 12. PROPIEDAD, PLANTA Y EQUIPO",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "Totales",
+      "target": "1,267,645",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 12. PROPIEDAD, PLANTA Y EQUIPO",
+      "likelyRelevant": true,
+      "column": 5,
+      "totalLabel": "Totales",
+      "target": "47,474",
+      "addendCount": 15,
+      "closes": true
+    },
+    {
+      "page": 15,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 12. PROPIEDAD, PLANTA Y EQUIPO",
+      "likelyRelevant": true,
+      "column": 6,
+      "totalLabel": "Totales",
+      "target": "1,371,978",
+      "addendCount": 16,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 16 rubros enteros)"
+    },
+    {
+      "page": 16,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Intangibles",
+      "target": "253,476",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Intangibles",
+      "target": "377,229",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Totales",
+      "target": "630,048",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Totales",
+      "target": "377,229",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "Totales",
+      "target": "3,864",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 5,
+      "totalLabel": "Totales",
+      "target": "127,617",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 6,
+      "totalLabel": "Totales",
+      "target": "253,476",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# 14. PRESTAMOS Y SOBREGIROS BANCARIOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Prestamos y Sobregiros Bancarios",
+      "target": "794",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# 14. PRESTAMOS Y SOBREGIROS BANCARIOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Prestamos y Sobregiros Bancarios",
+      "target": "4,398",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# 15. CUENTAS POR PAGAR COMERCIALES Y OTRAS CUENTAS POR PAGAR",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Cuentas por Pagar Comerciales y Otras Cuentas por Pagar",
+      "target": "1,506,731",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "# 15. CUENTAS POR PAGAR COMERCIALES Y OTRAS CUENTAS POR PAGAR",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Cuentas por Pagar Comerciales y Otras Cuentas por Pagar",
+      "target": "726,446",
+      "addendCount": 3,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 3 rubros enteros)"
+    },
+    {
+      "page": 17,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos)",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "98,748",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos)",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"65.43%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 17,
+      "section": "3. Los costos y gastos por pagar corresponden a:",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Costos y Gastos por Pagar",
+      "target": "109,178",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "3. Los costos y gastos por pagar corresponden a:",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Costos y Gastos por Pagar",
+      "target": "634,679",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 16. PASIVO POR IMPUESTOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Pasivos por Impuestos",
+      "target": "17,421",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 4 rubros enteros)"
+    },
+    {
+      "page": 18,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 16. PASIVO POR IMPUESTOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Pasivos por Impuestos",
+      "target": "207,595",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "# FORTALEZA FUTBOL CLUB SA / ## POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Pasivos por Beneficios a Empleados",
+      "target": "79,136",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 5 rubros enteros)"
+    },
+    {
+      "page": 19,
+      "section": "# FORTALEZA FUTBOL CLUB SA / ## POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Pasivos por Beneficios a Empleados",
+      "target": "85,684",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "## 18. OTROS PASIVOS NO FINANCIEROS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Otros Pasivos no Financieros",
+      "target": "252,330",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "## 18. OTROS PASIVOS NO FINANCIEROS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Otros Pasivos no Financieros",
+      "target": "87,496",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 2 rubros enteros)"
+    },
+    {
+      "page": 20,
+      "section": "### Pagos basados en acciones / ## 20. PRIMA DE CONVERSION",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Prima de Conversión",
+      "target": "140,220",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "### Pagos basados en acciones / ## 20. PRIMA DE CONVERSION",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Prima de Conversión",
+      "target": "140,220",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "## 21. RESULTADOS ACUMULADOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Resultados Acumulados",
+      "target": "376,859",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "## 21. RESULTADOS ACUMULADOS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Resultados Acumulados",
+      "target": "1,015,936",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / # 22. INGRESO DE ACTIVIDADES ORDINARIAS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Ingresos actividades ordinarias",
+      "target": "2,970,876",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / # 22. INGRESO DE ACTIVIDADES ORDINARIAS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Ingresos actividades ordinarias",
+      "target": "6,420,964",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": "El ingreso ordinario disminuyo en 53.73% con respecto al año anterior. / 1. El ingreso por actividades deportivas corresponden:",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "2,757,062",
+      "addendCount": 12,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 12 rubros enteros)"
+    },
+    {
+      "page": 21,
+      "section": "El ingreso ordinario disminuyo en 53.73% con respecto al año anterior. / 1. El ingreso por actividades deportivas corresponden:",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "5,879,734",
+      "addendCount": 10,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 10 rubros enteros)"
+    },
+    {
+      "page": 21,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total",
+      "target": "1,096,480",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 21,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"100.00%\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 22,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos)",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Ingresos actividades ordinarias",
+      "target": "213,814",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 2 rubros enteros)"
+    },
+    {
+      "page": 22,
+      "section": "# FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos)",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Ingresos actividades ordinarias",
+      "target": "541,230",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "## 23. COSTO DE VENTAS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Costo de Ventas",
+      "target": "137,713",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "## 23. COSTO DE VENTAS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Costo de Ventas",
+      "target": "255,437",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 23,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos)",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Gastos de Ventas",
+      "target": "1,611,389",
+      "addendCount": 28,
+      "closes": false,
+      "diff": "-628069"
+    },
+    {
+      "page": 23,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / (Valores expresados en miles de pesos Colombianos)",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Gastos de Ventas",
+      "target": "1,941,860",
+      "addendCount": 26,
+      "closes": false,
+      "diff": "-872656"
+    },
+    {
+      "page": 26,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Gastos de Administración",
+      "target": "1,624,451",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "-1571540"
+    },
+    {
+      "page": 26,
+      "section": "# FORTALEZA FUTBOL CLUB SA / # POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Gastos de Administración",
+      "target": "4,279,828",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "-3560368"
+    },
+    {
+      "page": 26,
+      "section": "## 26. OTROS GASTOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Otros Gastos",
+      "target": "76,626",
+      "addendCount": 6,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 6 rubros enteros)"
+    },
+    {
+      "page": 26,
+      "section": "## 26. OTROS GASTOS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Otros Gastos",
+      "target": "469,789",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 27,
+      "section": "FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 27. OTROS INGRESOS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Otros Ingresos",
+      "target": "493,069",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 27,
+      "section": "FORTALEZA FUTBOL CLUB SA / POLÍTICAS CONTABLES Y NOTAS EXPLICATIVAS A LOS ESTADOS FINANCIEROS / ## 27. OTROS INGRESOS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Otros Ingresos",
+      "target": "7",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 2 rubros enteros)"
+    },
+    {
+      "page": 27,
+      "section": "## 28. COSTOS FINANCIEROS",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total Costos Financieros",
+      "target": "48,426",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 27,
+      "section": "## 28. COSTOS FINANCIEROS",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total Costos Financieros",
+      "target": "72,523",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 4 rubros enteros)"
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/fortaleza-ceif-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"fortaleza-ceif\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [
+    {
+      "page": 2,
+      "line": "### **Moneda Extranjera**"
+    }
+  ],
+  "warnings": [
+    "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

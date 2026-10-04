@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Charleroi/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-02T00:13:03.798Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "du bilan s’élève à 21.196.284 EUR",
+ "caja": {
+  "lineas": [
+   308
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Faltan las páginas del pasivo del balance, así que no hay líneas de deuda financiera para elegir. El informe de gestión (L2119-L2121) indica deudas financieras a más de un año más la porción que vence en el año por 1.042.154 € al 30/06/25. La caja corresponde a 'Valeurs disponibles' (código 54/58, L308); los placements de trésorerie (L305) se excluyen."
+}

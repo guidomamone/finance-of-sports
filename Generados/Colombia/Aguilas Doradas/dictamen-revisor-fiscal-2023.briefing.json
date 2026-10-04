@@ -1,0 +1,564 @@
+{
+  "club": "aguilas-doradas",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2023.md",
+  "generatedAt": "2026-09-30T21:57:37.924Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 72,
+    "eu": 33,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 3,
+      "section": "OMAR GIRALDO LOPEZ",
+      "columns": [
+        "Concepto ingreso",
+        "Año 2022",
+        "Año 2023",
+        "Diferencia",
+        "%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Actividades deportivas",
+          "values": [
+            "14.204.599.890",
+            "25.947.194.896",
+            "11.742.594.624",
+            "82,7%"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Taquilla-venta de boletería",
+          "values": [
+            "827,326,000",
+            "1.007.745.896",
+            "180.419.896",
+            "21,8%"
+          ],
+          "bold": false,
+          "codigo": "410505"
+        },
+        {
+          "rawLabel": "Vena derechos deportivos-jugadores",
+          "values": [
+            "4,876,838,591",
+            "13.499.142.392",
+            "8.622.303.801",
+            "176,8%"
+          ],
+          "bold": false,
+          "codigo": "410515"
+        },
+        {
+          "rawLabel": "Préstamo derechos deportivos-jugadores",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0,0%"
+          ],
+          "bold": false,
+          "codigo": "410520"
+        },
+        {
+          "rawLabel": "Publicidad y propaganda",
+          "values": [
+            "2,260,496,000",
+            "2.077.225.008",
+            "-183.270.992",
+            "-8,1%"
+          ],
+          "bold": false,
+          "codigo": "410525"
+        },
+        {
+          "rawLabel": "Dimayor-reintegro de costos y gastos",
+          "values": [
+            "5,355,140,074",
+            "7.153.701.054",
+            "1.798.560.980",
+            "33,6%"
+          ],
+          "bold": false,
+          "codigo": "410530"
+        },
+        {
+          "rawLabel": "Dimayor ingresos diferidos",
+          "values": [
+            "159,680,776",
+            "239.521.164",
+            "79.840.388",
+            "50,0%"
+          ],
+          "bold": false,
+          "codigo": "410531"
+        },
+        {
+          "rawLabel": "Dimayor participaciones",
+          "values": [
+            "156,178,500",
+            "0",
+            "-156.178.500",
+            "-100,0%"
+          ],
+          "bold": false,
+          "codigo": "410532"
+        },
+        {
+          "rawLabel": "Dimayor apoyo logístico",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0,0%"
+          ],
+          "bold": false,
+          "codigo": "410533"
+        },
+        {
+          "rawLabel": "Federación colombiana de futbol",
+          "values": [
+            "436,000,000",
+            "500.009.000",
+            "64.009.000",
+            "14,7%"
+          ],
+          "bold": false,
+          "codigo": "410535"
+        },
+        {
+          "rawLabel": "Donaciones",
+          "values": [
+            "0",
+            "420.000.000",
+            "420.000.000",
+            "0,0%"
+          ],
+          "bold": false,
+          "codigo": "410540"
+        },
+        {
+          "rawLabel": "Patrocinios",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0,0%"
+          ],
+          "bold": false,
+          "codigo": "410545"
+        },
+        {
+          "rawLabel": "Cuotas de sostenimiento",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0,0%"
+          ],
+          "bold": false,
+          "codigo": "410550"
+        },
+        {
+          "rawLabel": "Participación en eventos nacionales e internacionales",
+          "values": [
+            "0",
+            "1.049.850.000",
+            "1.049.850.000",
+            "0,0%"
+          ],
+          "bold": false,
+          "codigo": "410555"
+        },
+        {
+          "rawLabel": "Actividades conexas",
+          "values": [
+            "132,939,949",
+            "0",
+            "-132.939.949",
+            "-100,0%"
+          ],
+          "bold": false,
+          "codigo": "410595"
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 4,
+      "section": "OMAR GIRALDO LOPEZ",
+      "columns": [
+        "Concepto gasto",
+        "Año 2022",
+        "Año 2023",
+        "Diferencia",
+        "%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Administración",
+          "values": [
+            "12,654,451,167",
+            "2,096,072,818",
+            "8,899,316,878",
+            "-80.9%"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Salarios de empleados y gastos por beneficios",
+          "values": [
+            "4,958,363,184",
+            "968,773,663",
+            "3,989,589,521",
+            "-80.5%"
+          ],
+          "bold": false,
+          "codigo": "5105"
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "125,050,000",
+            "195,727,000",
+            "-70,677,000",
+            "56.5%"
+          ],
+          "bold": false,
+          "codigo": "5110"
+        },
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "275,315,648",
+            "117,911,496",
+            "157,404,152",
+            "-57.2%"
+          ],
+          "bold": false,
+          "codigo": "5115"
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "410,660,158",
+            "41,356,182",
+            "369,303,976",
+            "-89.9%"
+          ],
+          "bold": false,
+          "codigo": "5120"
+        },
+        {
+          "rawLabel": "Contribuciones y afiliaciones",
+          "values": [
+            "17,526,000",
+            "0",
+            "17,526,000",
+            "-100.0%"
+          ],
+          "bold": false,
+          "codigo": "5125"
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "42,811,617",
+            "38,449,405",
+            "4,362,212",
+            "-10.2%"
+          ],
+          "bold": false,
+          "codigo": "5130"
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "843,383,641",
+            "185,164,229",
+            "658,219,412",
+            "-78.0%"
+          ],
+          "bold": false,
+          "codigo": "5135"
+        },
+        {
+          "rawLabel": "Legales",
+          "values": [
+            "3,977,500",
+            "2,300,200",
+            "1,677,300",
+            "-42.2%"
+          ],
+          "bold": false,
+          "codigo": "5140"
+        },
+        {
+          "rawLabel": "Mantenimiento y reparaciones",
+          "values": [
+            "213,500,928",
+            "37,275,675",
+            "176,225,253",
+            "-82.5%"
+          ],
+          "bold": false,
+          "codigo": "5145"
+        },
+        {
+          "rawLabel": "De viaje",
+          "values": [
+            "651,731,610",
+            "9,872,619",
+            "641,858,991",
+            "-98.5%"
+          ],
+          "bold": false,
+          "codigo": "5155"
+        },
+        {
+          "rawLabel": "Depreciaciones",
+          "values": [
+            "5,966,666",
+            "0",
+            "5,966,666",
+            "-100.0%"
+          ],
+          "bold": false,
+          "codigo": "5160"
+        },
+        {
+          "rawLabel": "Amortizaciones",
+          "values": [
+            "57,232,654",
+            "28,616,318",
+            "28,616,336",
+            "-50.0%"
+          ],
+          "bold": false,
+          "codigo": "5165"
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "3,389,870,090",
+            "470,626,031",
+            "2,919,244,059",
+            "-86.1%"
+          ],
+          "bold": false,
+          "codigo": "5195"
+        },
+        {
+          "rawLabel": "Deterioros",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0.0%!"
+          ],
+          "bold": false,
+          "codigo": "5199"
+        },
+        {
+          "rawLabel": "Ventas",
+          "values": [
+            "1,659,061,471",
+            "15,259,161,116",
+            "13,600,099,645",
+            "819.7%"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Salarios de empleados y gastos por beneficios",
+          "values": [
+            "0",
+            "5,573,639,620",
+            "5,573,639,620",
+            "100%"
+          ],
+          "bold": false,
+          "codigo": "5205"
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "100%"
+          ],
+          "bold": false,
+          "codigo": "5210"
+        },
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "0",
+            "282,080,233",
+            "282,080,233",
+            "100%"
+          ],
+          "bold": false,
+          "codigo": "5215"
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "0",
+            "768,596,769",
+            "768,596,769",
+            "100%"
+          ],
+          "bold": false,
+          "codigo": "5220"
+        },
+        {
+          "rawLabel": "Contribuciones y afiliaciones",
+          "values": [
+            "0",
+            "44,667,284",
+            "44,667,284",
+            "100%"
+          ],
+          "bold": false,
+          "codigo": "5225"
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "0",
+            "12,817,370",
+            "12,817,370",
+            "100%"
+          ],
+          "bold": false,
+          "codigo": "5230"
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "0",
+            "930,896,063",
+            "930,896,063",
+            "100%"
+          ],
+          "bold": false,
+          "codigo": "5235"
+        },
+        {
+          "rawLabel": "Legales",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "100%"
+          ],
+          "bold": false,
+          "codigo": "5240"
+        },
+        {
+          "rawLabel": "Mantenimiento y reparaciones",
+          "values": [
+            "0",
+            "202,967,458",
+            "202,967,458",
+            "100%"
+          ],
+          "bold": false,
+          "codigo": "5245"
+        },
+        {
+          "rawLabel": "De viaje",
+          "values": [
+            "0",
+            "969,639,436",
+            "969,639,436",
+            "100%"
+          ],
+          "bold": false,
+          "codigo": "5255"
+        },
+        {
+          "rawLabel": "Depreciaciones",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "100%"
+          ],
+          "bold": false,
+          "codigo": "5260"
+        },
+        {
+          "rawLabel": "Amortizaciones",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "100%"
+          ],
+          "bold": false,
+          "codigo": "5265"
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "0",
+            "3,704,177,340",
+            "3,704,177,340",
+            "100%"
+          ],
+          "bold": false,
+          "codigo": "5295"
+        },
+        {
+          "rawLabel": "Derechos deportivos",
+          "values": [
+            "1,659,061,471",
+            "2,769,679,543",
+            "1,110,618,072",
+            "66.9%"
+          ],
+          "bold": false,
+          "codigo": "5294"
+        },
+        {
+          "rawLabel": "Deterioros",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0.0%"
+          ],
+          "bold": false,
+          "codigo": "5299"
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/aguilas-doradas-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"aguilas-doradas\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

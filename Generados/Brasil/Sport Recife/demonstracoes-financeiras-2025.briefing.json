@@ -1,0 +1,1592 @@
+{
+  "club": "sportrecife-br",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Sport Recife/demonstracoes-financeiras-2025.md",
+  "generatedAt": "2026-09-30T22:42:08.288Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 1,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 31,
+  "relevantTableCount": 9,
+  "tables": [
+    {
+      "page": 17,
+      "section": "Nota 2025 2024 Nota 2025 2024 / explicativa explicativa / Circulante Circulante / Caixa e equivalentes de caixa 6 2.388 31.018 Fornecedores 12 83.775 53.095 / Créditos a receber 7 29.219 50.075 Empréstimos e Financiamentos - 7",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas Antecipadas 2.692 2.044 Obrigações sociais e trabalhistas",
+          "values": [
+            "33.472",
+            "37.239"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estoques 8 556 801 Obrigações tributárias",
+          "values": [
+            "48.901",
+            "38.570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "34.855 83.938 Empréstimos com terceiros e Mútuos",
+          "values": [
+            "17.661",
+            "7.820"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas a reconhecer",
+          "values": [
+            "11.678",
+            "14.116"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas Antecipadas",
+          "values": [
+            "35.594",
+            "14.104"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "231.081 164.951 / Não Circulante Não Circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depósitos Judiciais 9 6.169 7.657 Fornecedores",
+          "values": [
+            "34.994",
+            "9.548"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos a receber 7 1.888 34.321 Obrigações tributárias",
+          "values": [
+            "47.621",
+            "49.411"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado 11 283.226 287.431 Empréstimos com terceiros e Mútuos",
+          "values": [
+            "9.125",
+            "1.218"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível 10 74.625 14.657 Provisão para contingências",
+          "values": [
+            "48.017",
+            "52.477"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "365.908 344.066 Receitas a reconhecer",
+          "values": [
+            "51.632",
+            "67.548"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "Receitas Antecipadas - 544 / 191.389 180.746 / Patrimonio líquido",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Capital Social",
+          "values": [
+            "149.469",
+            "149.469"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Avaliação Patrimonial",
+          "values": [
+            "123.173",
+            "123.173"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Deficits acumulado)",
+          "values": [
+            "(294.349)",
+            "(190.335)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 18,
+      "section": "RELATÓRIO DO AUDITOR INDEPENDENTE 7)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita operacional líquida",
+          "values": [
+            "174.186",
+            "135.915"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custos operacionais",
+          "values": [
+            "(167.374)",
+            "(92.679)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit (déficit) bruto",
+          "values": [
+            "6.812",
+            "43.236"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "Despesas/receitas operacionais",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas gerais e administrativas",
+          "values": [
+            "(69.629)",
+            "(79.725)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas (despesas)",
+          "values": [
+            "(35.739)",
+            "26.181"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total de despesas/receitas operacionais",
+          "values": [
+            "(105.368)",
+            "(53.544)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit (déficit) operacional antes do resultado financeiro",
+          "values": [
+            "(98.556)",
+            "(10.308)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas financeiras",
+          "values": [
+            "8.558",
+            "6.364"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas financeiras",
+          "values": [
+            "(22.499)",
+            "(12.643)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado financeiro líquido",
+          "values": [
+            "(13.941)",
+            "(6.279)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Déficit) do exercício",
+          "values": [
+            "(112.497)",
+            "(16.587)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 20,
+      "section": "RELATÓRIO DO AUDITOR INDEPENDENTE 7)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2023",
+          "values": [
+            "149.469",
+            "123.173",
+            "(173.748)",
+            "98.894"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit (déficit) do exercício -",
+          "values": [
+            "(16.587)",
+            "(16.587)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2024",
+          "values": [
+            "149.469",
+            "123.173",
+            "(190.335)",
+            "82.307"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(déficit) do exercício -",
+          "values": [
+            "(112.497)",
+            "(112.497)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes de exercicios anteriores",
+          "values": [
+            "8.483",
+            "8.483"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2025",
+          "values": [
+            "149.469",
+            "123.173",
+            "(294.349)",
+            "(21.707)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "RELATÓRIO DO AUDITOR INDEPENDENTE 7)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depreciação e amortização",
+          "values": [
+            "16.561",
+            "18.304"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para contingências",
+          "values": [
+            "(4.460)",
+            "8.819"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Doação do terreno do Centro de Treinamento -",
+          "values": [
+            "(35.000)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Ajustes de exercicios anteriores 8.483 - / Resultado ajustado (91.913) (24.464) / (Acréscimos) decréscimos de ativos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Créditos a receber",
+          "values": [
+            "53.289",
+            "26.107"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos -",
+          "values": [
+            "1.747"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "Depósitos judiciais 1.488 (78) / Despesas antecipadas (648) - / Estoque 245 692 / Acréscimos (decréscimos) de passivos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Obrigações trabalhistas e sociais",
+          "values": [
+            "(3.767)",
+            "(1.305)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações tributárias",
+          "values": [
+            "8.541",
+            "11.678"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "56.126",
+            "30.150"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas a reconhecer",
+          "values": [
+            "(18.354)",
+            "21.731"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas Antecipadas",
+          "values": [
+            "20.946",
+            "(2.905)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido gerado (consumido) nas atividades operacionais",
+          "values": [
+            "25.953",
+            "63.353"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "Fluxo de caixa das atividades de investimentos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aquisição de imobilizado",
+          "values": [
+            "(12.356)",
+            "(17.052)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aquisição de intangível",
+          "values": [
+            "(59.968)",
+            "(22.767)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido gerado (consumido) nas atividades de investimento",
+          "values": [
+            "(72.324)",
+            "(39.819)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Fluxo de caixa das atividades de financiamentos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Novos financiamentos",
+          "values": [
+            "17.748",
+            "9.174"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamento de financiamento (7)",
+          "values": [
+            "(7.788)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido gerado (consumido) nas atividades de financiamento",
+          "values": [
+            "17.741",
+            "1.386"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento (redução) de caixa e equivalentes de caixa",
+          "values": [
+            "(28.630)",
+            "24.920"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa no início do exercício",
+          "values": [
+            "31.018",
+            "6.098"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa no final do exercício",
+          "values": [
+            "2.388",
+            "31.018"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Redução de caixa e equivalentes de caixa",
+          "values": [
+            "(28.630)",
+            "24.920"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "SPORT CLUB DO RECIFE - EM RECUPERAÇÃO JUDICIAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caixa e bancos",
+          "values": [
+            "1.461",
+            "5.967"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicações financeiras",
+          "values": [
+            "25.051"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": "SPORT CLUB DO RECIFE - EM RECUPERAÇÃO JUDICIAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Liga Forte União -",
+          "values": [
+            "30.567"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contratos comerciais e publicidade",
+          "values": [
+            "3.866",
+            "26.625"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferências de jogadores",
+          "values": [
+            "2.642",
+            "25.754"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros créditos",
+          "values": [
+            "24.559",
+            "2.507"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": "PECLD - (1.424)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "29.219",
+            "50.075"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não Circulante",
+          "values": [
+            "1.888",
+            "34.321"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "SPORT CLUB DO RECIFE - EM RECUPERAÇÃO JUDICIAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depósitos judiciais",
+          "values": [
+            "3.346",
+            "5.150"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Penhoras judiciais",
+          "values": [
+            "2.823",
+            "2.507"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "SPORT CLUB DO RECIFE - EM RECUPERAÇÃO JUDICIAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Terrenos - 79.039 -",
+          "values": [
+            "79.039",
+            "78.662"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estádio",
+          "values": [
+            "2,05%",
+            "136.935",
+            "11.505",
+            "125.430",
+            "128.768"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sede Social",
+          "values": [
+            "2,00%",
+            "13.427",
+            "5.358",
+            "8.069",
+            "8.855"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ginásios",
+          "values": [
+            "2,34%",
+            "12.056",
+            "3.609",
+            "8.447",
+            "9.449"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parque Aquático",
+          "values": [
+            "2,00%",
+            "9.611",
+            "4.982",
+            "4.629",
+            "6.075"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máq. / Equip. /Veículos/ outros noi",
+          "values": [
+            "5.006",
+            "1.521",
+            "3.485",
+            "2.545"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado - em andamento E 1.023 -",
+          "values": [
+            "1.023",
+            "1.023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Centro de Treinamento - 53.102 -",
+          "values": [
+            "53.102",
+            "52.054"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": "SPORT CLUB DO RECIFE - EM RECUPERAÇÃO JUDICIAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo no início do exercício",
+          "values": [
+            "287.431",
+            "242.614"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adições",
+          "values": [
+            "3.621",
+            "52.050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciações",
+          "values": [
+            "(7.826)",
+            "(7.234)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo no fim do exercício",
+          "values": [
+            "283.226",
+            "287.431"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": "12. Fornecedores / 2025 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores de serviços",
+          "values": [
+            "110.990",
+            "54.094"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores diversos",
+          "values": [
+            "7.293",
+            "6.600"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores de materiais",
+          "values": [
+            "1.949"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": "118.769 62.643",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "83.775",
+            "53.095"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não Circulante",
+          "values": [
+            "34.994",
+            "9.548"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": "valores foram contabilizados em contas de Fornecedorres homolados na / mediação, em grupos de Longo e Curto prazo conforme abaixo. / Outro fato relevante foi o Ajuste ao Valor presente do saldo final a pagar dos / fornecedores mediado, contabilizados como conta redutora da conta de / Fornecedores Mediados assim demosntrada:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores Mediados (longo prazo)",
+          "values": [
+            "51.580"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Ajuste a valor presente créditos mediados",
+          "values": [
+            "16.586"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo do Grupo de Fornecedores mediados LP",
+          "values": [
+            "34.994"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 45,
+      "section": "SPORT CLUB DO RECIFE - EM RECUPERAÇÃO JUDICIAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Verbas trabalhistas",
+          "values": [
+            "20.644",
+            "24.303"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações sociais",
+          "values": [
+            "12.828",
+            "12.936"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 45,
+      "section": "Parcelamento (em 60 parcelas), que abarcou as dívidas não inscritas como / dívidas ativas à época da Transação, obtendo os mesmos benefícios e / classificando da mesma maneira tais benefícios (Receitas a reconhecer e / Receita financeira a cada parcela paga). / 2025 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Parcelamentos",
+          "values": [
+            "50.271",
+            "53.614"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demais obrigações",
+          "values": [
+            "46.251",
+            "34.367"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 46,
+      "section": "SPORT CLUB DO RECIFE - EM RECUPERAÇÃO JUDICIAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Múltipla Assessoria e Prestadora de Serviços LTDA",
+          "values": [
+            "7.069",
+            "6.792"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "19.266",
+            "1.256"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 46,
+      "section": "por entender que a Recuperação Judicial é soberana e não mais se trata de / uma contigência. Tais créditos, mediante a homologação do Plano de / Recuperação Judicial, que aconteceu em 28 de outubro de 2025, foram / contabilizados em Fornecedores Mediados conforme o Plano de liquidação. / 2025 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Provisões cíveis",
+          "values": [
+            "28.714",
+            "16.984"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões trabalhistas",
+          "values": [
+            "30.260",
+            "32.426"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões desportivas -",
+          "values": [
+            "3.067"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 48,
+      "section": "SPORT CLUB DO RECIFE - EM RECUPERAÇÃO JUDICIAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Direitos televisivos e premiações",
+          "values": [
+            "88.708",
+            "25.175"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comerciais, marketing e publicidade",
+          "values": [
+            "47.335",
+            "19.316"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas em jogos",
+          "values": [
+            "19.682",
+            "14.492"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuições de associados",
+          "values": [
+            "16.626",
+            "15.167"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimoniais",
+          "values": [
+            "3.319",
+            "3.135"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas",
+          "values": [
+            "1.968"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cessão de direitos contratuais",
+          "values": [
+            "6.609",
+            "60.231"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deduções de receita (i)",
+          "values": [
+            "(8.660)",
+            "(3.569)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 48,
+      "section": "sobre suas receitas (Bilheteria/ Jogos, Patrocínios, Licenciamento de Uso de / Marcas e Simbolos, Publicidade, Propaganda, Transmissão de Espetáculos / Desportivos, Loterias e Televisionamentos), à alíquota de 5%. / 19. Custos operacionais / 2025 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos com pessoal do futebol",
+          "values": [
+            "(116.898)",
+            "(63.220)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Competição e viagens",
+          "values": [
+            "(14.094)",
+            "(16.922)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros custos",
+          "values": [
+            "(1.447)",
+            "(1.467)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com formação de atleta e amortização de despesas",
+          "values": [
+            "(34.935)",
+            "(11.070)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 49,
+      "section": "SPORT CLUB DO RECIFE - EM RECUPERAÇÃO JUDICIAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Serviços de terceiros",
+          "values": [
+            "(23.234)",
+            "(19.902)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos com pessoal",
+          "values": [
+            "(15.648)",
+            "(9.345)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação",
+          "values": [
+            "(7.826)",
+            "(7.234)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas gerais",
+          "values": [
+            "(8.659)",
+            "(11.421)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com alimentação",
+          "values": [
+            "(3.884)",
+            "(3.435)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com manutenção",
+          "values": [
+            "(2.985)",
+            "(2.286)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 49,
+      "section": "Despesas c/alugueis (1.525) (500)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas tributárias",
+          "values": [
+            "(5.868)",
+            "(3.425)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Repasse financeiro de direito econômico (i) -",
+          "values": [
+            "(22.177)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 49,
+      "section": "(69.629) (79.725) / (i) Repasse financeiro de percentuais que os jogadores têm em seus próprios / direitos econômicos. / 21. Outras (Despesas)/Receitas Operacionais / 2025 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Liga Forte União",
+          "values": [
+            "(24.993)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com provisão para contingências",
+          "values": [
+            "(97.459)",
+            "(8.819)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas/(despesas) (i)",
+          "values": [
+            "75.756",
+            "35.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 49,
+      "section": "(46.696) 26.181 / 22. Receitas financeiras e despesas financeiras / As receitas financeiras e as despesas financeiras podem assim ser / apresentadas, respectivamente: / 2025 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Descontos obtidos em passivos",
+          "values": [
+            "4.833",
+            "3.623"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variações cambiais positivas",
+          "values": [
+            "2.886",
+            "1.904"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 50,
+      "section": "SPORT CLUB DO RECIFE - EM RECUPERAÇÃO JUDICIAL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas bancárias e outros",
+          "values": [
+            "(2.217)",
+            "(2.910)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Multas",
+          "values": [
+            "(2.234)",
+            "(1.945)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 18,
+      "section": "Despesas/receitas operacionais",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total de despesas/receitas operacionais",
+      "target": "(105.368)",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "Despesas/receitas operacionais",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total de despesas/receitas operacionais",
+      "target": "(53.544)",
+      "addendCount": 2,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 31,
+    "results": [
+      {
+        "label": "Capital Social",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Capital Social",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ajuste de Avaliação Patrimonial",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ajuste de Avaliação Patrimonial",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(Deficits acumulado)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(Deficits acumulado)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas gerais e administrativas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas gerais e administrativas",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Despesas gerais",
+        "similarity": 67
+      },
+      {
+        "label": "Outras receitas (despesas)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras receitas",
+        "similarity": 67
+      },
+      {
+        "label": "Outras receitas (despesas)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit (déficit) operacional antes do resultado financeiro",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit (déficit) operacional antes do resultado financeiro",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado financeiro líquido",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado financeiro líquido",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(Déficit) do exercício",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(Déficit) do exercício",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Créditos a receber",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Créditos a receber",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Adiantamentos -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Adiantamentos -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Obrigações trabalhistas e sociais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Obrigações trabalhistas e sociais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Obrigações tributárias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Obrigações tributárias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fornecedores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fornecedores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas a reconhecer",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas a reconhecer",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas Antecipadas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas Antecipadas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Caixa líquido gerado (consumido) nas atividades operacionais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Caixa líquido gerado (consumido) nas atividades operacionais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Parcelamentos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Parcelamentos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Demais obrigações",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Demais obrigações",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos com pessoal do futebol",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos com pessoal do futebol",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "wages_squad",
+        "matchedLabel": "Gastos com pessoal do futebol",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Competição e viagens",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Competição e viagens",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Competição e viagens",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Outros custos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros custos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Outros custos",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Despesas com formação de atleta e amortização de despesas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com formação de atleta e amortização de despesas",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Despesas com formação de atleta e amortização de despesas de anos anteriores",
+        "similarity": 71
+      },
+      {
+        "label": "Despesas tributárias",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas tributárias",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Despesas tributárias",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Repasse financeiro de direito econômico (i) -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Repasse financeiro de direito econômico (i) -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Liga Forte União",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Liga Forte União",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com provisão para contingências",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com provisão para contingências",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras receitas/(despesas) (i)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras receitas",
+        "similarity": 67
+      },
+      {
+        "label": "Outras receitas/(despesas) (i)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Descontos obtidos em passivos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Descontos obtidos em passivos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variações cambiais positivas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variações cambiais positivas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Sport Recife",
+    "matches": [
+      {
+        "leagueId": "br-serieA",
+        "year": "2025",
+        "matchedName": "Sport",
+        "wikipediaPage": "2025 Campeonato Brasileiro Série A"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": []
+}

@@ -1,0 +1,236 @@
+{
+ "md": "Clubes/Grecia/Panserraikos/Panserraikos_board_minutes_2025-06-30.md",
+ "generatedAt": "2026-09-30T04:30:09.648Z",
+ "rubros": [
+  {
+   "label": "Λοιπά έξοδα και ζημιές",
+   "lado": null,
+   "page": 3,
+   "section": "# ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024/2025 / ΠΕΡΙΟΔΟΣ 1/7/2024 - 30/6/2025 / # ΣΤΟΙΧΕΙΑ ΕΚΘΕΣΗΣ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "exceptional_items",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1383
+  },
+  {
+   "label": "Ζημιές προ φόρων",
+   "lado": "expense",
+   "page": 4,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 790
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": null,
+   "page": 3,
+   "section": "# ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024/2025 / ΠΕΡΙΟΔΟΣ 1/7/2024 - 30/6/2025 / # ΣΤΟΙΧΕΙΑ ΕΚΘΕΣΗΣ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1380
+  },
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": null,
+   "page": 3,
+   "section": "# ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024/2025 / ΠΕΡΙΟΔΟΣ 1/7/2024 - 30/6/2025 / # ΣΤΟΙΧΕΙΑ ΕΚΘΕΣΗΣ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ",
+   "choice": "lump_football_operations",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.93
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1388
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": null,
+   "page": 3,
+   "section": "# ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024/2025 / ΠΕΡΙΟΔΟΣ 1/7/2024 - 30/6/2025 / # ΣΤΟΙΧΕΙΑ ΕΚΘΕΣΗΣ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1382
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": null,
+   "page": 3,
+   "section": "# ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024/2025 / ΠΕΡΙΟΔΟΣ 1/7/2024 - 30/6/2025 / # ΣΤΟΙΧΕΙΑ ΕΚΘΕΣΗΣ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1380
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": null,
+   "page": 3,
+   "section": "# ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024/2025 / ΠΕΡΙΟΔΟΣ 1/7/2024 - 30/6/2025 / # ΣΤΟΙΧΕΙΑ ΕΚΘΕΣΗΣ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1379
+  },
+  {
+   "label": "Λοιπά έσοδα και κέρδη",
+   "lado": null,
+   "page": 3,
+   "section": "# ΕΠΙ ΤΟΥ ΙΣΟΛΟΓΙΣΜΟΥ ΚΑΙ ΤΩΝ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ 2024/2025 / ΠΕΡΙΟΔΟΣ 1/7/2024 - 30/6/2025 / # ΣΤΟΙΧΕΙΑ ΕΚΘΕΣΗΣ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1382
+  },
+  {
+   "label": "Ζημιές μετά από φόρους",
+   "lado": "expense",
+   "page": 4,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.57
+    ],
+    [
+     "admin_general_expense",
+     0.41
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 792
+  },
+  {
+   "label": "Φόρος εισοδήματος",
+   "lado": "expense",
+   "page": 4,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 794
+  }
+ ]
+}

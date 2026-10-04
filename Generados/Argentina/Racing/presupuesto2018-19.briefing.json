@@ -1,0 +1,89 @@
+{
+  "club": "racing",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Racing/presupuesto2018-19.md",
+  "generatedAt": "2026-09-30T22:39:49.340Z",
+  "numberFormat": "espacio como separador de miles (escandinavo)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 8,
+      "section": "3 | | E / y",
+      "columns": [
+        "o."
+      ],
+      "rows": [
+        {
+          "rawLabel": "3",
+          "values": [],
+          "bold": false
+        },
+        {
+          "rawLabel": "3",
+          "values": [],
+          "bold": false
+        },
+        {
+          "rawLabel": "O",
+          "values": [],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "ns ."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2 S S 3 [31 3 ol 3 ol :",
+          "values": [],
+          "bold": false
+        },
+        {
+          "rawLabel": "32 Y 9 lHisio =] S e 32 Emo EE",
+          "values": [],
+          "bold": false
+        },
+        {
+          "rawLabel": "E 4 E pl [Bla lwin 315",
+          "values": [],
+          "bold": false
+        },
+        {
+          "rawLabel": "0 tor 2 soiuninin e] 212121. 3/8",
+          "values": [],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Racing Club",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 2,
+      "line": "e Tipo de Cambio u$d: Estimamos un TC de $ 40.- por u$d 1.- en"
+    }
+  ],
+  "warnings": []
+}

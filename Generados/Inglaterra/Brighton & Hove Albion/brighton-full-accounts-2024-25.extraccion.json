@@ -1,0 +1,147 @@
+{
+ "pdf": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2024-25.pdf",
+ "md": "Clubes/Inglaterra/Brighton & Hove Albion/brighton-full-accounts-2024-25.md",
+ "cierre": "2025-06-30",
+ "paginas": [
+  18,
+  29,
+  31
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:52:17.833Z",
+ "escala": "miles",
+ "filas": [
+  {
+   "pagina": 18,
+   "etiqueta": "Turnover",
+   "importe_impreso": "221,063",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Cost of sales",
+   "importe_impreso": "(6,625)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Gross profit",
+   "importe_impreso": "214,438",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Operating expenses",
+   "importe_impreso": "(307,654)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Player trading",
+   "importe_impreso": "56,911",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Other operating income",
+   "importe_impreso": "5,000",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Operating (loss)/profit before interest and taxation",
+   "importe_impreso": "(31,305)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Interest receivable and similar income",
+   "importe_impreso": "6,117",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Interest payable and similar expenses",
+   "importe_impreso": "(6,817)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "",
+   "importe_impreso": "(700)",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "(Loss)/profit before taxation",
+   "importe_impreso": "(32,005)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Tax on (loss)/profit",
+   "importe_impreso": "3,400",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "(Loss)/profit after taxation",
+   "importe_impreso": "(28,605)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 18,
+   "etiqueta": "Total comprehensive income for the year",
+   "importe_impreso": "(28,605)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 31,
+   "etiqueta": "Arising from origination and reversal of timing differences",
+   "importe_impreso": "(3,400)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on (loss)/profit"
+  },
+  {
+   "pagina": 31,
+   "etiqueta": "Tax (receipt)/expense in the income statement",
+   "importe_impreso": "(3,400)",
+   "tipo": "total",
+   "lado": "impuesto",
+   "detalla_a": "Tax on (loss)/profit"
+  }
+ ],
+ "total_ingresos_impreso": null,
+ "total_gastos_impreso": null,
+ "resultado_impreso": "(28,605)",
+ "observaciones": "Se tomó la columna 'Total 2025'. El subtotal financiero neto (700) no tiene etiqueta impresa. 'Other comprehensive income' figura con guion y se omitió. La nota 7 (staff costs, 158,679) y la nota 6 (honorarios de auditoría) no desglosan directamente un renglón del estado (forman parte de Operating expenses sin conciliación), por lo que no se incluyeron como desglose; la conciliación fiscal de la nota 11 tampoco se incluyó por no ser desglose de renglones. En la nota 11 el signo del impuesto aparece como (3,400) (crédito) mientras que en el estado figura 3,400 positivo. No se imprimen total de ingresos ni total de gastos."
+}

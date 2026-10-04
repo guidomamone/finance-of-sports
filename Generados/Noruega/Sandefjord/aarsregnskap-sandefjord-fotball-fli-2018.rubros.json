@@ -1,0 +1,196 @@
+{
+ "md": "Clubes/Noruega/Sandefjord/aarsregnskap-sandefjord-fotball-fli-2018.md",
+ "pdf": "Clubes/Noruega/Sandefjord/aarsregnskap-sandefjord-fotball-fli-2018.pdf",
+ "club": "sandefjord",
+ "year": 2018,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:06:51.175Z",
+ "tieOuts": {
+  "cierran": 37,
+  "noCierran": 6
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "9 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 15,
+  "notasUsadas": [
+   "28",
+   "24"
+  ]
+ },
+ "ladoConocido": 16,
+ "rubros": [
+  {
+   "label": "Administrasjonskostnader",
+   "lado": "revenue",
+   "page": 35,
+   "section": "# Note 7 Pensjonsforpliktelser / # Note 8 Spesifikasjon av driftskostnader",
+   "values": [
+    0.05786
+   ],
+   "origen": "nota 28 (ancla 0)",
+   "ancla": "Sum inntekter"
+  },
+  {
+   "label": "Sum inntekter",
+   "lado": "revenue",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL / # RESULTATREGNSKAP",
+   "values": [
+    25.038713
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Lønn og andre naturalytelser",
+   "lado": "revenue",
+   "page": 34,
+   "section": "#### b) Omløpsmidler/Kortsiktig gjeld / #### c) Anleggsmidler/Langsiktig gjeld / #### d) Fordringer / #### e) Aksjer / ### Note 2 Lønnskostnader",
+   "values": [
+    21.748809
+   ],
+   "origen": "nota 24 (ancla 0>28)",
+   "ancla": "Sum inntekter"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "revenue",
+   "page": 34,
+   "section": "#### b) Omløpsmidler/Kortsiktig gjeld / #### c) Anleggsmidler/Langsiktig gjeld / #### d) Fordringer / #### e) Aksjer / ### Note 2 Lønnskostnader",
+   "values": [
+    3.122315
+   ],
+   "origen": "nota 24 (ancla 0>28)",
+   "ancla": "Sum inntekter"
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "revenue",
+   "page": 34,
+   "section": "#### b) Omløpsmidler/Kortsiktig gjeld / #### c) Anleggsmidler/Langsiktig gjeld / #### d) Fordringer / #### e) Aksjer / ### Note 2 Lønnskostnader",
+   "values": [
+    0.376458
+   ],
+   "origen": "nota 24 (ancla 0>28)",
+   "ancla": "Sum inntekter"
+  },
+  {
+   "label": "Andre lønnsrelaterte ytelser, kantine-vask etc.",
+   "lado": "revenue",
+   "page": 34,
+   "section": "#### b) Omløpsmidler/Kortsiktig gjeld / #### c) Anleggsmidler/Langsiktig gjeld / #### d) Fordringer / #### e) Aksjer / ### Note 2 Lønnskostnader",
+   "values": [
+    -0.269358
+   ],
+   "origen": "nota 24 (ancla 0>28)",
+   "ancla": "Sum inntekter"
+  },
+  {
+   "label": "Lønn",
+   "lado": "expense",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL / # RESULTATREGNSKAP",
+   "values": [
+    24.978224
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": "expense",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL / # RESULTATREGNSKAP",
+   "values": [
+    0.05786
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL / # RESULTATREGNSKAP",
+   "values": [
+    0.002405
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "SANDEFJORD FOTBALL / # RESULTATREGNSKAP",
+   "values": [
+    0.005034
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Driftsinntekter",
+   "lado": "revenue",
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "values": [
+    4727.823
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Tilskudd Sandefjord Fotball AS",
+   "lado": "revenue",
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "values": [
+    20310.89
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Lønnskostnader",
+   "lado": "expense",
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "values": [
+    24978.224
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": "expense",
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "values": [
+    57.86
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Finansinntekter",
+   "lado": "revenue",
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "values": [
+    2.405
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Finanskostnader",
+   "lado": "expense",
+   "page": 31,
+   "section": "## 17. RESULTATREGNSKAP",
+   "values": [
+    -5.034
+   ],
+   "origen": "estado 20"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2024-25.md",
+ "generado": "2026-10-04T18:00:51.318Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "amounts in thousands of Euro",
+ "caja": {
+  "lineas": [
+   9180
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   9202,
+   9210
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado (miles de euros); el estado individual de la sociedad está en unidades de euro. 'Bank loans and other financial liabilities' puede incluir pasivos por arrendamiento (IFRS 16)."
+}

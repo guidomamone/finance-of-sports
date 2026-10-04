@@ -1,0 +1,121 @@
+{
+  "md": "Clubes/Bélgica/Mechelen/jaarrekening-2021-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Mechelen/jaarrekening-2021-06-30-individual.pdf",
+  "club": "mechelen-be",
+  "year": 2021,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:55:20.581Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 9,
+    "notasUsadas": []
+  },
+  "ladoConocido": 9,
+  "rubros": [
+    {
+      "label": "VASTE ACTIVA 21/28",
+      "lado": "expense",
+      "page": 5,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 20",
+      "values": [
+        34.742024
+      ],
+      "origen": "estado 0",
+      "glosa": "ACTIVO NO CORRIENTE 21/28"
+    },
+    {
+      "label": "Immateriële vaste activa 6.2",
+      "lado": "expense",
+      "page": 5,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 20",
+      "values": [
+        1.698453
+      ],
+      "origen": "estado 0",
+      "glosa": "Inmovilizado intangible 6.2"
+    },
+    {
+      "label": "Materiële vaste activa 6.3 22/27",
+      "lado": "expense",
+      "page": 5,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 20",
+      "values": [
+        33.027961
+      ],
+      "origen": "estado 0",
+      "glosa": "Inmovilizado material 6.3 22/27"
+    },
+    {
+      "label": "Terreinen en gebouwen",
+      "lado": "expense",
+      "page": 5,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 20",
+      "values": [
+        3.919222
+      ],
+      "origen": "estado 0",
+      "glosa": "Terrenos y construcciones"
+    },
+    {
+      "label": "Installaties, machines en uitrusting",
+      "lado": "expense",
+      "page": 5,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 20",
+      "values": [
+        0.413285
+      ],
+      "origen": "estado 0",
+      "glosa": "Instalaciones, maquinaria y equipos"
+    },
+    {
+      "label": "Meubilair en rollend materieel",
+      "lado": "expense",
+      "page": 5,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 20",
+      "values": [
+        0.584754
+      ],
+      "origen": "estado 0",
+      "glosa": "Mobiliario y elementos de transporte"
+    },
+    {
+      "label": "Financiële kosten 65/66B",
+      "lado": "expense",
+      "page": 10,
+      "section": "Opbrengsten uit financiële vaste activa 750 / Opbrengsten uit vlottende activa 751 53 16 / Andere financiële opbrengsten 6.11 752/9 3.682 11.020 / Niet-recurrente financiële opbrengsten 6.12 76B",
+      "values": [
+        1.05227
+      ],
+      "origen": "estado 17",
+      "glosa": "Gastos financieros 65/66B"
+    },
+    {
+      "label": "Recurrente financiële kosten 6.11",
+      "lado": "expense",
+      "page": 10,
+      "section": "Opbrengsten uit financiële vaste activa 750 / Opbrengsten uit vlottende activa 751 53 16 / Andere financiële opbrengsten 6.11 752/9 3.682 11.020 / Niet-recurrente financiële opbrengsten 6.12 76B",
+      "values": [
+        1.05227
+      ],
+      "origen": "estado 17",
+      "glosa": "Gastos financieros recurrentes 6.11"
+    },
+    {
+      "label": "Kosten van schulden",
+      "lado": "expense",
+      "page": 10,
+      "section": "Opbrengsten uit financiële vaste activa 750 / Opbrengsten uit vlottende activa 751 53 16 / Andere financiële opbrengsten 6.11 752/9 3.682 11.020 / Niet-recurrente financiële opbrengsten 6.12 76B",
+      "values": [
+        1.008923
+      ],
+      "origen": "estado 17",
+      "glosa": "Gastos por deudas"
+    }
+  ]
+}

@@ -1,0 +1,440 @@
+{
+  "club": "asteras-tripolis",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Grecia/Asteras Tripolis/Asteras_board_report_2024-06-30.md",
+  "generatedAt": "2026-09-30T22:02:15.392Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 61,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 12,
+  "relevantTableCount": 4,
+  "tables": [
+    {
+      "page": 3,
+      "section": "[LOGO] / # Αριθμοδείκτες οικονομικής διάρθρωσης",
+      "columns": [
+        "",
+        "30.6.2024",
+        "",
+        "30.6.2023",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "ΠΟΣΑ ΣΕ €",
+            "%",
+            "ΠΟΣΑ ΣΕ €",
+            "%"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Κυκλοφορούν ενεργητικό",
+          "values": [
+            "1.221.633,63",
+            "59,13%",
+            "1.224.699,71",
+            "72,52%"
+          ],
+          "bold": false,
+          "codigo": "1"
+        },
+        {
+          "rawLabel": "Σύνολο ενεργητικού",
+          "values": [
+            "2.066.128,54",
+            "",
+            "1.688.706,74",
+            ""
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Πάγιο ενεργητικό",
+          "values": [
+            "844.494,91",
+            "40,87%",
+            "464.007,03",
+            "27,48%"
+          ],
+          "bold": false,
+          "codigo": "2"
+        },
+        {
+          "rawLabel": "Σύνολο ενεργητικού",
+          "values": [
+            "2.066.128,54",
+            "",
+            "1.688.706,74",
+            ""
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": null,
+      "columns": [
+        "3",
+        "Ίδια κεφάλαια",
+        "1.339.630,61",
+        "201,05%",
+        "949.976,94",
+        "136,01%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Σύνολο υποχρεώσεων",
+            "666.330,30",
+            "",
+            "698.460,58",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "Ο παραπάνω δείκτης δείχνει την οικονομική αυτάρκεια της Εταιρείας.",
+      "columns": [
+        "Σύνολο υποχρεώσεων",
+        "666.330,30",
+        "32,25%",
+        "698.460,58",
+        "41,36%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Σύνολο παθητικού",
+          "values": [
+            "2.066.128,54",
+            "",
+            "1.688.706,74",
+            ""
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Ίδια κεφάλαια",
+          "values": [
+            "1.339.630,61",
+            "64,84%",
+            "949.976,94",
+            "56,25%"
+          ],
+          "bold": false,
+          "codigo": "5"
+        },
+        {
+          "rawLabel": "Σύνολο παθητικού",
+          "values": [
+            "2.066.128,54",
+            "",
+            "1.688.706,74",
+            ""
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "Οι παραπάνω δείκτες δείχνουν την εξάρτηση της Εταιρείας από ξένα και ίδια κεφάλαια.",
+      "columns": [
+        "6",
+        "Ίδια κεφάλαια",
+        "1.339.630,61",
+        "158,63%",
+        "949.976,94",
+        "204,73%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Πάγιο ενεργητικό",
+            "844.494,91",
+            "",
+            "464.007,03",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": null,
+      "columns": [
+        "7",
+        "Κυκλοφορούν ενεργητικό",
+        "1.221.633,63",
+        "192,62%",
+        "1.224.699,71",
+        "188,70%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Βραχυπρόθεσμες υποχρεώσεις",
+            "634.214,51",
+            "",
+            "649.021,36",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": null,
+      "columns": [
+        "8",
+        "Κεφάλαιο κινήσεως",
+        "587.419,12",
+        "48,08%",
+        "575.678,35",
+        "47,01%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Κυκλοφορούν ενεργητικό",
+            "1.221.633,63",
+            "",
+            "1.224.699,71",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "[LOGO] / # Αριθμοδείκτες αποδόσεως και αποδοτικότητας",
+      "columns": [
+        "",
+        "1.7.2023-30.6.2024",
+        "",
+        "1.7.2022-30.6.2023",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "ΠΟΣΑ ΣΕ €",
+            "%",
+            "ΠΟΣΑ ΣΕ €",
+            "%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1 Καθαρά αποτελέσματα χρήσεως προ φόρων",
+          "values": [
+            "-1.902.346,33",
+            "-142,87%",
+            "-2.489.270,96",
+            "-240,32%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Κύκλος εργασιών (Έσοδα από αγώνες και από παραχώρηση ποδοσφαιριστών)",
+          "values": [
+            "1.331.498,02",
+            "",
+            "1.035.816,68",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": null,
+      "columns": [
+        "2 Καθαρά αποτελέσματα χρήσεως προ φόρων",
+        "-1.902.346,33",
+        "-40,61%",
+        "-2.489.270,96",
+        "-59,74%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Σύνολο εσόδων",
+          "values": [
+            "4.684.272,26",
+            "",
+            "4.167.156,52",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": null,
+      "columns": [
+        "3 Καθαρά αποτελέσματα χρήσεως προ φόρων",
+        "-1.902.346,33",
+        "-142,01%",
+        "-2.489.270,96",
+        "-262,03%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ίδια κεφάλαια",
+          "values": [
+            "1.339.630,61",
+            "",
+            "949.976,94",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "Ο αριθμοδείκτης αυτός απεικονίζει την αποδοτικότητα των ιδίων κεφαλαίων της εταιρείας.",
+      "columns": [
+        "4 Μικτά αποτελέσματα χρήσεως",
+        "-3.473.489,20",
+        "-260,87%",
+        "-3.980.306,44",
+        "-384,27%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Κύκλος εργασιών (Έσοδα από αγώνες και από παραχώρηση ποδοσφαιριστών)",
+          "values": [
+            "1.331.498,02",
+            "",
+            "1.035.816,68",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": "[LOGO] / # Πίνακας διάθεσης αποτελεσμάτων",
+      "columns": [
+        "",
+        "Χρήση 1.7.2023-30.6.2024 (ποσά σε €)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Καθαρά αποτελέσματα (ζημιές) προ φόρων χρήσεως 1.7.2023-30.6.2024",
+          "values": [
+            "-1.902.346,33"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+/-) Υπόλοιπο αποτελεσμάτων (ζημιών) προηγούμενων χρήσεων",
+          "values": [
+            "-2.490.335,52"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+/-) Διαφορές φορολογικού ελέγχου",
+          "values": [
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Σύνολο",
+          "values": [
+            "-4.392.681,85"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": null,
+      "columns": [
+        "Μείον",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Φόρος εισοδήματος χρήσεως 1.7.2023-30.6.2024",
+          "values": [
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Υπόλοιπο Αποτελεσμάτων (ζημιών) εις νέο",
+          "values": [
+            "-4.392.681,85"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/asteras-tripolis-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"asteras-tripolis\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

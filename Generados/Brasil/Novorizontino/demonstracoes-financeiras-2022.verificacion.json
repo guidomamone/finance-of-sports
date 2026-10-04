@@ -1,0 +1,435 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.pdf",
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.md",
+ "generado": "2026-10-03T23:03:05.875Z",
+ "estado": "ok",
+ "clubId": "novorizontino-br",
+ "year": 2022,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.pdf",
+   "campo": "cierre",
+   "valor": "2022-12-31",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: el detector de período tomó la fecha de la firma (28/04/2023, L17); el ejercicio cierra el 31/12/2022 (29 menciones)",
+   "evidencia": "demonstracoes-financeiras-2022.md L17, L275",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2022.pdf",
+   "campo": "caja",
+   "valor": "146.924",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: la caja de 2022 como la reclasificó el documento 2023 (sin las aplicaciones financieras de proyectos incentivados, 574.806), coherente con 2023-2025; el 2022 imprimía 721.730",
+   "evidencia": "demonstracoes-financeiras-2023.md L173",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": true,
+   "detalle": "30.003234 = 30.003234"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": true,
+   "detalle": "41.218659 = 41.218659"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2021 de este documento suma ingresos 9.019686; el sitio tiene 9.055"
+  },
+  {
+   "nombre": "documento del año 2023",
+   "ok": null,
+   "detalle": "no se puede comparar: demonstracoes-financeiras-2023.pdf no trae la columna del año anterior"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2021: 9.055 en demonstracoes-financeiras-2021.pdf y 9.019686 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de localizar ya contestada para el club (columna, \"Administrativas e gerais\"): aceptar, en demonstracoes-financeiras-2022.pdf",
+  "duda de localizar ya contestada para el club (columna, \"Receita financeira\"): aceptar, en demonstracoes-financeiras-2022.pdf",
+  "duda de extraer que no afecta la carga: L999 rotula la columna comparativa como 2022 pero su total (4.364.341) coincide con 2021 reapresentada del estado (L295).",
+  "duda de extraer que no afecta la carga: L302 figura dentro de despesas operacionais con importe positivo en 2021 y '-' en 2022."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 30.003234,
+  "gastos": 41.218659,
+  "financiero": -2.433943,
+  "impuesto": 0,
+  "resultadoImpreso": -13.649368,
+  "resultadoParaCargar": -13.649368,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Direitos de transmissão de TV",
+   "lado": "ingreso",
+   "M": 11.951683,
+   "pagina": 10,
+   "linea": 283,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Negociação de atletas",
+   "lado": "ingreso",
+   "M": 12.741552,
+   "pagina": 10,
+   "linea": 284,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Publicidade",
+   "lado": "ingreso",
+   "M": 2.038276,
+   "pagina": 10,
+   "linea": 285,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Patrocínio",
+   "lado": "ingreso",
+   "M": 1.0085,
+   "pagina": 10,
+   "linea": 286,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Arrecadação de jogos",
+   "lado": "ingreso",
+   "M": 0.764723,
+   "pagina": 10,
+   "linea": 287,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Premiações",
+   "lado": "ingreso",
+   "M": 0.596,
+   "pagina": 10,
+   "linea": 288,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Convênios",
+   "lado": "ingreso",
+   "M": 0.897625,
+   "pagina": 10,
+   "linea": 289,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outras receitas",
+   "lado": "ingreso",
+   "M": 0.004875,
+   "pagina": 10,
+   "linea": 290,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Com pessoal",
+   "lado": "gasto",
+   "M": 21.71003,
+   "pagina": 10,
+   "linea": 293,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aluguel de imóveis",
+   "lado": "gasto",
+   "M": 1.470969,
+   "pagina": 29,
+   "linea": 979,
+   "origen": "nota que desglosa \"Gastos com atletas e comissão técnica\""
+  },
+  {
+   "etiqueta": "Serviços e exames médicos",
+   "lado": "gasto",
+   "M": 0.464222,
+   "pagina": 29,
+   "linea": 980,
+   "origen": "nota que desglosa \"Gastos com atletas e comissão técnica\""
+  },
+  {
+   "etiqueta": "Taxa da FPF e CBF",
+   "lado": "gasto",
+   "M": 0.219177,
+   "pagina": 29,
+   "linea": 981,
+   "origen": "nota que desglosa \"Gastos com atletas e comissão técnica\""
+  },
+  {
+   "etiqueta": "Gastos com negociação de atletas",
+   "lado": "gasto",
+   "M": 0.736584,
+   "pagina": 29,
+   "linea": 982,
+   "origen": "nota que desglosa \"Gastos com atletas e comissão técnica\""
+  },
+  {
+   "etiqueta": "Multa indenizatória",
+   "lado": "gasto",
+   "M": 0.582358,
+   "pagina": 29,
+   "linea": 983,
+   "origen": "nota que desglosa \"Gastos com atletas e comissão técnica\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.075291,
+   "pagina": 29,
+   "linea": 984,
+   "origen": "nota que desglosa \"Gastos com atletas e comissão técnica\""
+  },
+  {
+   "etiqueta": "Lanches e refeições",
+   "lado": "gasto",
+   "M": 1.043357,
+   "pagina": 30,
+   "linea": 1001,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Assessoria esportiva",
+   "lado": "gasto",
+   "M": 5.540142,
+   "pagina": 30,
+   "linea": 1002,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Assessoria de imprensa",
+   "lado": "gasto",
+   "M": 0.0778,
+   "pagina": 30,
+   "linea": 1003,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Lavanderia",
+   "lado": "gasto",
+   "M": 0.153501,
+   "pagina": 30,
+   "linea": 1004,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Estadias",
+   "lado": "gasto",
+   "M": 0.255755,
+   "pagina": 30,
+   "linea": 1005,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Combustíveis e lubrificantes",
+   "lado": "gasto",
+   "M": 0.159702,
+   "pagina": 30,
+   "linea": 1006,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Energia elétrica",
+   "lado": "gasto",
+   "M": 0.060312,
+   "pagina": 30,
+   "linea": 1007,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Água e esgoto",
+   "lado": "gasto",
+   "M": 0.059144,
+   "pagina": 30,
+   "linea": 1008,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Assessoria jurídica",
+   "lado": "gasto",
+   "M": 0.199767,
+   "pagina": 30,
+   "linea": 1009,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Depreciação",
+   "lado": "gasto",
+   "M": 0.129289,
+   "pagina": 30,
+   "linea": 1010,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Assessoria administrativa",
+   "lado": "gasto",
+   "M": 0.041259,
+   "pagina": 30,
+   "linea": 1011,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Serviços médicos",
+   "lado": "gasto",
+   "M": 0.039559,
+   "pagina": 30,
+   "linea": 1012,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Medicamentos",
+   "lado": "gasto",
+   "M": 0.066936,
+   "pagina": 30,
+   "linea": 1013,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Matriais de escritório e de limpeza",
+   "lado": "gasto",
+   "M": 0.038877,
+   "pagina": 30,
+   "linea": 1014,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Software",
+   "lado": "gasto",
+   "M": 0.093435,
+   "pagina": 30,
+   "linea": 1015,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Serviços contábeis e auditoria",
+   "lado": "gasto",
+   "M": 0.083652,
+   "pagina": 30,
+   "linea": 1016,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Segurança patrimonial",
+   "lado": "gasto",
+   "M": 0.047528,
+   "pagina": 30,
+   "linea": 1017,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Telefone e internet",
+   "lado": "gasto",
+   "M": 0.069927,
+   "pagina": 30,
+   "linea": 1018,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Outras",
+   "lado": "gasto",
+   "M": 0.074989,
+   "pagina": 30,
+   "linea": 1019,
+   "origen": "nota que desglosa \"Administrativas e gerais\""
+  },
+  {
+   "etiqueta": "Com jogos",
+   "lado": "gasto",
+   "M": 2.516472,
+   "pagina": 10,
+   "linea": 296,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Manutenção",
+   "lado": "gasto",
+   "M": 1.935664,
+   "pagina": 10,
+   "linea": 297,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Atletas não profissionais",
+   "lado": "gasto",
+   "M": 2.369901,
+   "pagina": 10,
+   "linea": 298,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Aluguéis",
+   "lado": "gasto",
+   "M": 0.653795,
+   "pagina": 10,
+   "linea": 299,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Material esportivo",
+   "lado": "gasto",
+   "M": 0.231931,
+   "pagina": 10,
+   "linea": 300,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Tributária",
+   "lado": "gasto",
+   "M": 0.017334,
+   "pagina": 10,
+   "linea": 301,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Outras receitas",
+   "lado": "gasto",
+   "M": 0,
+   "pagina": 10,
+   "linea": 302,
+   "origen": "estado"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Receita financeira",
+   "M": 0.007515,
+   "linea": 324
+  },
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -2.441458,
+   "linea": 325
+  }
+ ],
+ "impuesto": []
+}

@@ -1,0 +1,2444 @@
+{
+ "md": "Clubes/Brasil/Avai/demonstracoes-contabeis-2025.md",
+ "generatedAt": "2026-09-30T04:25:41.629Z",
+ "rubros": [
+  {
+   "label": "RECEITAS FINANCEIRAS",
+   "lado": null,
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1543
+  },
+  {
+   "label": "CUSTOS DO FUTEBOL PROFISSIONAL",
+   "lado": null,
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 1588
+  },
+  {
+   "label": "RECEITA LÍQUIDA DAS ATIVIDADES",
+   "lado": null,
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1588
+  },
+  {
+   "label": "DÉFICIT OPERACIONAL",
+   "lado": null,
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1595
+  },
+  {
+   "label": "OUTRAS RECEITAS OPERACIONAIS",
+   "lado": null,
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1581
+  },
+  {
+   "label": "DÉFICIT BRUTO",
+   "lado": null,
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "lump_football_operations",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.47000000000000003
+    ],
+    [
+     "lump_football_operations_expense",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1515
+  },
+  {
+   "label": "DESPESAS GERAIS E ADMINISTRATIVAS",
+   "lado": null,
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1595
+  },
+  {
+   "label": "CUSTOS DO FUTEBOL DE FORMAÇÃO",
+   "lado": null,
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "youth_football",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "youth_football",
+     0.52
+    ],
+    [
+     "youth_other_sports_expense",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1566
+  },
+  {
+   "label": "DESPESAS FINANCEIRAS",
+   "lado": null,
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1567
+  },
+  {
+   "label": "DÉFICIT DO EXERCÍCIO",
+   "lado": null,
+   "page": 8,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado Abrangente (DRA) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1454
+  },
+  {
+   "label": "DÉFICIT ANTES DA ATUALIZAÇÃO DAS OBRIGAÇÕES TRIBUTÁRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "other_income",
+     0.07
+    ]
+   ],
+   "tokens": 1602
+  },
+  {
+   "label": "ATUALIZAÇÃO DAS OBRIGAÇÕES TRIBUTÁRIAS",
+   "lado": null,
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1594
+  },
+  {
+   "label": "RESULTADO ABRANGENTE TOTAL DO EXERCÍCIO",
+   "lado": null,
+   "page": 8,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado Abrangente (DRA) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_income",
+     0.73
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ]
+   ],
+   "tokens": 1574
+  },
+  {
+   "label": "RESULTADO FINANCEIRO ANTES DA ATUALIZAÇÃO TRIBUTÁRIA",
+   "lado": null,
+   "page": 7,
+   "section": "Docusign Envelope ID: 621B4AB7-47FD-847A-8207-081B233AABEC / Avaí Futebol Clube / Demonstração do Resultado do Exercício (DRE) / Exercícios findos em 31 de dezembro de 2025 e 2024 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma)",
+   "choice": "other_income",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_income",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1575
+  },
+  {
+   "label": "Direitos profissionais de atletas",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11. Intangível / #### a) Composição do intangível",
+   "choice": "player_amortisation",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "player_amortisation",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Direitos de exploração comercial - LFU",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11. Intangível / #### a) Composição do intangível",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Patrocínio",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 20. Receitas Diferidas",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Camarote",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 20. Receitas Diferidas",
+   "choice": "season_tickets",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "season_tickets",
+     0.94
+    ],
+    [
+     "stadium_other",
+     0.06
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 892
+  },
+  {
+   "label": "Software",
+   "lado": "expense",
+   "page": 23,
+   "section": "### 11. Intangível / #### a) Composição do intangível",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_amortisation",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Luvas",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "wages_squad",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "wages_squad",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 884
+  },
+  {
+   "label": "Arrendamentos",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "choice": "stadium_other",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "stadium_other",
+     0.65
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 825
+  },
+  {
+   "label": "Contribuição Sócios",
+   "lado": "revenue",
+   "page": 30,
+   "section": "### 20. Receitas Diferidas",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Bilheteria",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1118
+  },
+  {
+   "label": "Patrocínios",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Repasses da Loteria Timemania",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Publicidades",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 955
+  },
+  {
+   "label": "Cota TV e transmissão jogos",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Participações em competições",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "competition_bonus",
+     0.99
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 939
+  },
+  {
+   "label": "Receitas de locações",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "choice": "stadium_other",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "stadium_other",
+     0.52
+    ],
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "season_tickets",
+     0.05
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Mensalidades dos Sócios",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Venda de Material Esportivo",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "(-) Deduções da Receita operacional",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Venda e uso da Marca",
+   "lado": "revenue",
+   "page": 33,
+   "section": "### 29. Receitas operacionais",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Férias",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.52
+    ],
+    [
+     "wages_squad",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 868
+  },
+  {
+   "label": "Salários",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.49
+    ],
+    [
+     "wages_squad",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Rescisões",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "youth_other_sports_expense",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 851
+  },
+  {
+   "label": "Amortização",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "player_amortisation",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "player_amortisation",
+     0.45
+    ],
+    [
+     "other_amortisation",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Auxílio moradia",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.61
+    ],
+    [
+     "match_organisation_expense",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 898
+  },
+  {
+   "label": "Direito de uso de imagem",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Premiação por desempenho",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "wages_squad",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "FGTS",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.54
+    ],
+    [
+     "wages_squad",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 871
+  },
+  {
+   "label": "INSS",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "admin_general_expense",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.44
+    ],
+    [
+     "youth_other_sports_expense",
+     0.35
+    ],
+    [
+     "wages_squad",
+     0.13
+    ]
+   ],
+   "tokens": 913
+  },
+  {
+   "label": "Honorários profissionais",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "youth_other_sports_expense",
+     0.05
+    ],
+    [
+     "education_expense",
+     0.02
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Comissões de negociação de atletas",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Viagens",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "match_organisation_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.68
+    ],
+    [
+     "youth_other_sports_expense",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Empréstimos de jogadores",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "youth_other_sports_expense",
+     0.23
+    ],
+    [
+     "wages_squad",
+     0.14
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Bônus contratuais",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 944
+  },
+  {
+   "label": "13 Salário",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.6
+    ],
+    [
+     "wages_squad",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 957
+  },
+  {
+   "label": "Direitos econômicos profissionais",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "player_amortisation",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "player_amortisation",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Material esportivo",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "match_organisation_expense",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.54
+    ],
+    [
+     "youth_other_sports_expense",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Taxa de registro de atletas",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "player_amortisation",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "player_amortisation",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Hospedagens",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "match_organisation_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.9
+    ],
+    [
+     "youth_other_sports_expense",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 875
+  },
+  {
+   "label": "Outros custos profissionais",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "lump_football_operations_expense",
+     0.19
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Borderô de jogos",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "match_organisation_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.91
+    ],
+    [
+     "wages_squad",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Pis sobre folha",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "youth_other_sports_expense",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Alimentação",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "match_organisation_expense",
+     0.05
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Concentração",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 867
+  },
+  {
+   "label": "Ajuda de custo",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "wages_squad",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "wages_squad",
+     0.85
+    ],
+    [
+     "youth_other_sports_expense",
+     0.09000000000000001
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Comissões sobre vendas",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Software e consultorias",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Futebol feminino",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.99
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Gratificações",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 872
+  },
+  {
+   "label": "Esportes Olímpicos",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.95
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Aluguéis de campos",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.65
+    ],
+    [
+     "youth_other_sports_expense",
+     0.21
+    ],
+    [
+     "match_organisation_expense",
+     0.11
+    ]
+   ],
+   "tokens": 973
+  },
+  {
+   "label": "Comissão em negociações de atletas",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "youth_other_sports_expense",
+     0.04
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Outros Custos",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Impostos e taxas",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "youth_other_sports_expense",
+     0.03
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Custo esportes profissionais",
+   "lado": "expense",
+   "page": 34,
+   "section": "### 30. Custos do futebol profissional",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.87
+    ],
+    [
+     "youth_other_sports_expense",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Direito de imagem",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "wages_squad",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "youth_other_sports_expense",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Material de consumo",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "youth_other_sports_expense",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Material médico",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "youth_other_sports_expense",
+     0.09
+    ]
+   ],
+   "tokens": 985
+  },
+  {
+   "label": "Serviços de terceiros",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "youth_other_sports_expense",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Outros custos categoria de formação (Base)",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Taxas de registro de atletas",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "other_expenses",
+   "confidence": 0.2,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "youth_other_sports_expense",
+     0.26
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Custos futebol categoria de formação",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1021
+  },
+  {
+   "label": "Transporte",
+   "lado": "expense",
+   "page": 35,
+   "section": "### 31. Custos do futebol de formação",
+   "choice": "match_organisation_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.81
+    ],
+    [
+     "youth_other_sports_expense",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 933
+  },
+  {
+   "label": "Deságio recuperação judicial",
+   "lado": "revenue",
+   "page": 35,
+   "section": "### 32. Outras receitas operacionais",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 962
+  },
+  {
+   "label": "Resultado líquido na cessão definitiva de direitos profissionais de atletas",
+   "lado": "revenue",
+   "page": 35,
+   "section": "### 32. Outras receitas operacionais",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Administrativas",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Comunicação",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 882
+  },
+  {
+   "label": "Depreciação/Amortização",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "choice": "depreciation",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "depreciation",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Comercialização",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 798
+  },
+  {
+   "label": "Infraestrutura",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 797
+  },
+  {
+   "label": "Logística de eventos",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "choice": "match_organisation_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Negócios",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 849
+  },
+  {
+   "label": "Marketing",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Plano de Saúde",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 795
+  },
+  {
+   "label": "Descontos ativos",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 1400
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 36,
+   "section": "### 33. Despesas gerais e administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 976
+  },
+  {
+   "label": "Outras receitas financeiras",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1453
+  },
+  {
+   "label": "Rendimentos de aplicações financeiras",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1263
+  },
+  {
+   "label": "Juros passivos",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1310
+  },
+  {
+   "label": "Encargos de empréstimos",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "player_amortisation",
+     0.16
+    ],
+    [
+     "wages_squad",
+     0.08
+    ]
+   ],
+   "tokens": 1494
+  },
+  {
+   "label": "Ajuste a valor presente dívidas RJ",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1508
+  },
+  {
+   "label": "IOF",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Descontos passivos",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.35000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1310
+  },
+  {
+   "label": "IRRF s/aplicação Financeira",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8200000000000001
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "other_income",
+     0.06
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Tarifas bancárias",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1445
+  },
+  {
+   "label": "Resultado financeiro líquido final",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1461
+  },
+  {
+   "label": "Atualização dívida tributária",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1470
+  },
+  {
+   "label": "Variação monetária passiva",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.6900000000000001
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Ou seja: O déficit operacional (sem atualização de tributos e despesa financeira) está abaixo do déficit aprovado pelo Conselho Deliberativo para o ano de",
+   "lado": null,
+   "page": 44,
+   "section": "- Observação: Resultado aferido antes da atualização dos tributos.",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.34
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1521
+  },
+  {
+   "label": "Resultado financeiro antes da atualização da dívida tributária",
+   "lado": null,
+   "page": 36,
+   "section": "### 34. Resultado Financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ]
+   ],
+   "tokens": 1473
+  },
+  {
+   "label": "- Despesa Financeira Liquida = R$ (-)",
+   "lado": null,
+   "page": 44,
+   "section": "- Observação: Resultado aferido antes da atualização dos tributos.",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1508
+  },
+  {
+   "label": "- Atualização dos Tributos em atraso = R$ (-)",
+   "lado": null,
+   "page": 44,
+   "section": "- Observação: Resultado aferido antes da atualização dos tributos.",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1481
+  },
+  {
+   "label": "- Resultado do exercício reconciliado = R$",
+   "lado": null,
+   "page": 44,
+   "section": "- Observação: Resultado aferido antes da atualização dos tributos.",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "exceptional_items",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1486
+  }
+ ]
+}

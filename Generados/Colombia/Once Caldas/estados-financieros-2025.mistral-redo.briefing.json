@@ -1,0 +1,2905 @@
+{
+  "club": "oncecaldas",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Once Caldas/estados-financieros-2025.mistral-redo.md",
+  "generatedAt": "2026-09-30T14:17:07.955Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 136,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 34,
+  "relevantTableCount": 12,
+  "tables": [
+    {
+      "page": 4,
+      "section": "Página 4 de 34",
+      "columns": [
+        "Indicador",
+        "Dimensión",
+        "Fórmula",
+        "Decreto",
+        "Cálculo Realizado",
+        "Conclusión"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Posición patrimonial negativo",
+          "values": [
+            "Deterioro patrimonial",
+            "Patrimonio total < $0",
+            "Actualizado con el decreto 1378",
+            "$25.462.028",
+            "El patrimonio no es menor a cero al cierre del ejercicio, es decir que no existe un deterioro patrimonial"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dos periodos consecutivos de cierre con utilidad negativa en el resultado del ejercicio",
+          "values": [
+            "Deterioro patrimonial",
+            "(resultado del ejercicio anterior <0) y (resultados del último ejercicio < 0)",
+            "Actualizado con el decreto 1378",
+            "Año 2024: $ 4.112.260 Año 2025: $9.138.546",
+            "No se obtuvieron resultados netos negativos en dos periodos consecutivos lo cual no genera alerta."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dos periodos consecutivos de cierre con razón corriente inferior a 1,0",
+          "values": [
+            "Riesgo de insolvencia",
+            "(Activo corriente/ Pasivo Corriente<1,0 del ejercicio anterior) y (Activo corriente /Pasivo Corriente < del último ejercicio)",
+            "Decreto 1378",
+            "Año 2024: $23.078.894/7958967: 2.89 Año 2025: 28.315.215/9.599.561: 2.94",
+            "No se obtuvieron resultados inferiores a 1,0 en dos periodos consecutivos lo cual no genera alerta."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "ONCECALDAS® / DAF DE LA MONTAÑA",
+      "columns": [
+        "Fecha",
+        "Tasa de cambio representativa del mercado (TRM) DÓLAR",
+        "Tasa de cambio representativa del mercado (TRM) EURO"
+      ],
+      "rows": [
+        {
+          "rawLabel": "31/dic/2025",
+          "values": [
+            "$3.757,08",
+            "$4.412,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31/dic/2024",
+          "values": [
+            "$4.409,15",
+            "$4.565,67"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "#### ii. Costos posteriores / #### iii. Depreciación",
+      "columns": [
+        "Activo",
+        "Método Depreciación",
+        "Años Vida Útil",
+        "% Anual"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Maquinaria y Equipo",
+          "values": [
+            "Línea Recta",
+            "10",
+            "10%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipos de transporte",
+          "values": [
+            "Línea Recta",
+            "5 o 10",
+            "20%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Muebles y enseres",
+          "values": [
+            "Línea Recta",
+            "10",
+            "10%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de oficina (incluidos equipos de cómputo y comunicaciones).",
+          "values": [
+            "Línea Recta",
+            "3 o 5",
+            "33%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "ONCE CALDAS® / DAF DE LA MONTAÑA / # ii. Desembolsos posteriores / # iii. Amortización / # Vida Útil y Método de Amortización",
+      "columns": [
+        "Intangible",
+        "Vida útil",
+        "Método Amortización"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Licencias",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Licencias Office",
+          "values": [
+            "3 años",
+            "Línea recta"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Licencias Programas Contables",
+          "values": [
+            "5 años",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Otras Licencias",
+          "values": [
+            "1 año",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Software (Activos Intangibles generados internamente)",
+          "values": [
+            "5 años",
+            "Línea Recta"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Derechos deportivos",
+          "values": [
+            "Según contrato",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "ONCECALDAS® / DAF DE LA MONTAÑA / # i. Contabilidad del arrendatario / # ii. Contabilidad del arrendador / # 4. CAMBIOS NORMATIVOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- Actualización del marco conceptual y definiciones clave alineándose con los requerimientos de las NIIF",
+          "values": [
+            "18."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Sección 23 (actualizada) la cual se alineará con el modelo de 5 pasos de NIIF",
+          "values": [
+            "15."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Secciones 11 y 12 revisadas (Instrumentos financieros) que busca incorporar un enfoque alineado con NIIF 9 (eliminando la opción de aplicar NIC 39, e incluye una nueva sección sobre valor razonable acorde con NIIF",
+          "values": [
+            "13."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "ONCECALDAS® / DAF DE LA MONTAÑA / # Factores de riesgo financiero / # a) Riesgo de mercado / # b) Riesgo de tasa de cambio",
+      "columns": [
+        "",
+        "31 de diciembre de 2025",
+        "",
+        "31 de diciembre de 2024",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "US$",
+            "Equivalente en miles de pesos colombianos",
+            "US$",
+            "Equivalente en miles de pesos colombianos"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos corrientes",
+          "values": [
+            "410.000",
+            "1.540.403",
+            "20.000",
+            "88.183"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivos corrientes",
+          "values": [
+            "7.500",
+            "28.178",
+            "75.000",
+            "330.686"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Posición activa neta",
+          "values": [
+            "402.500",
+            "1.512.230",
+            "-55.000",
+            "-242.503"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "Página 18 de 34",
+      "columns": [
+        "",
+        "31 de diciembre de 2025",
+        "",
+        "31 de diciembre de 2024",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "EUR$",
+            "Equivalente en miles de pesos colombianos",
+            "EUR$",
+            "Equivalente en miles de pesos colombianos"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos corrientes",
+          "values": [
+            "921.608",
+            "4.066.587",
+            "2.294.124",
+            "10.474.223"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivos corrientes",
+          "values": [
+            "278.621",
+            "1.229.416",
+            "744.054",
+            "3.397.109"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Posición activa neta",
+          "values": [
+            "642.987",
+            "2.837.171",
+            "1.550.070",
+            "7.077.114"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "ONCECALDAS® / DAF DE LA MONTAÑA / # f) Principales instrumentos financieros / # 6. EFECTIVO Y EQUIVALENTES DE EFECTIVO",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caja Moneda Nacional",
+          "values": [
+            "11.965",
+            "12.397"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caja Moneda extranjera",
+          "values": [
+            "15.539",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos Moneda nacional",
+          "values": [
+            "694.823",
+            "312.521"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos Moneda extranjera",
+          "values": [
+            "106.041",
+            "2.659.618"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos Fiduciarios",
+          "values": [
+            "6.731.201",
+            "1.596.127"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "7.559.569",
+            "4.580.663"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "# 7. INVERSIONES FINANCIERAS",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Certificado de depósito a término",
+          "values": [
+            "11.241.891",
+            "6.683.247"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "11.241.891",
+            "6.683.247"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "ONCE CALDAS® / DAF DE LA MONTAÑA / # 8. CUENTAS POR COBRAR COMERCIALES Y OTRAS CUENTAS POR COBRAR",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Corriente:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes (1)",
+          "values": [
+            "9.547.546",
+            "11.607.423"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar accionistas",
+          "values": [
+            "603",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipos y avances",
+          "values": [
+            "3.355",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipo impuestos",
+          "values": [
+            "1.549.302",
+            "655.490"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar a trabajadores",
+          "values": [
+            "85.317",
+            "26.814"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros deudores",
+          "values": [
+            "290.359",
+            "541.234"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deterioro (2)",
+          "values": [
+            "(488.850)",
+            "(139.921)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "10.987.632",
+            "12.691.040"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "(1) Correspondientes a:",
+      "columns": [
+        "Moneda nacional",
+        "3.940.556",
+        "1.045.016"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Moneda extranjera",
+          "values": [
+            "5.606.990",
+            "10.562.407"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "9.547.546",
+            "11.607.423"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "(2) El movimiento del deterioro al 31 de diciembre de 2025 es el siguiente:",
+      "columns": [
+        "Saldo inicial",
+        "(139.921)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Provisión del año",
+          "values": [
+            "(348.929)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo final",
+          "values": [
+            "(488.850)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "# 9. INVENTARIOS",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Productos terminados",
+          "values": [
+            "8.123",
+            "53.771"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "8.123",
+            "53.771"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 21,
+      "section": "# 10. CUENTAS POR COBRAR A LARGO PLAZO",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cuentas por cobrar",
+          "values": [
+            "1.482.000",
+            "53.771"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1.482.00",
+            "53.771"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "# 11. PROPIEDADES, PLANTA Y EQUIPO",
+      "columns": [
+        "",
+        "Construcciones y edificaciones",
+        "Maquinaria y equipo",
+        "Equipo de oficina",
+        "Equipo de cómputo",
+        "Flota y equipo de transporte",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Costo",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo al 31 de diciembre de 2024",
+          "values": [
+            "9.634.742",
+            "204.054",
+            "96.019",
+            "171.449",
+            "1.110.939",
+            "11.217.203"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adquisiciones",
+          "values": [
+            "",
+            "60.196",
+            "46.236",
+            "21.715",
+            "417.980",
+            "546.127"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retiros",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "- 40.800",
+            "- 40.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo al 31 de diciembre de 2025",
+          "values": [
+            "9.634.742",
+            "264.250",
+            "142.255",
+            "193.164",
+            "1.488.119",
+            "11.722.530"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación acumulada",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Al 31 de diciembre de 2024",
+          "values": [
+            "33.563",
+            "109.422",
+            "71.380",
+            "164.234",
+            "594.008",
+            "972.607"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gasto del período",
+          "values": [
+            "11.188",
+            "17.044",
+            "24.545",
+            "16.920",
+            "87.623",
+            "157.320"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Al 31 de diciembre de 2025",
+          "values": [
+            "44.751",
+            "126.466",
+            "95.925",
+            "181.154",
+            "681.632",
+            "1.129.928"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costo neto 2024",
+          "values": [
+            "9.601.179",
+            "94.632",
+            "24.639",
+            "7.215",
+            "516.931",
+            "10.244.596"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costo neto 2025",
+          "values": [
+            "9.589.991",
+            "137.784",
+            "46.330",
+            "12.010",
+            "806.487",
+            "10.592.602"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "ONCECALDAS® / DAF DE LA MONTAÑA / # 12. ACTIVOS INTANGIBLES Y PLUSVALÍA",
+      "columns": [
+        "",
+        "Derechos deportivos",
+        "Licencias"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldo al 31 de diciembre de 2024",
+          "values": [
+            "3.472.822",
+            "7.440"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adquisiciones",
+          "values": [
+            "1.040.405",
+            "93.858"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizaciones",
+          "values": [
+            "704.492",
+            "17.346"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo al 31 de diciembre de 2025",
+          "values": [
+            "3.808.735",
+            "83.952"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "# 13. OBLIGACIONES FINANCIERAS Y ACUERDO DE REESTRUCTURACIÓN",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "*Pasivo Corriente*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obligaciones financieras",
+          "values": [
+            "366.562",
+            "337.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "*Pasivo No corriente*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obligaciones financieras a largo plazo",
+          "values": [
+            "-",
+            "337.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CxP acuerdo reestructuración (Ver Nota 15)",
+          "values": [
+            "9.070.113",
+            "9.221.052"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo al final del año",
+          "values": [
+            "9.436.675",
+            "9.896.052"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "# 14. CUENTAS POR PAGAR COMERCIALES",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Proveedores",
+          "values": [
+            "6.354",
+            "8.923"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por pagar comerciales",
+          "values": [
+            "3.232.213",
+            "5.382.386"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dividendos por pagar",
+          "values": [
+            "51.770",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivos por impuestos corrientes",
+          "values": [
+            "5.142.285",
+            "1.167.480"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisiones",
+          "values": [
+            "213.123",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Beneficios a empleados",
+          "values": [
+            "562.254",
+            "628.963"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros pasivos",
+          "values": [
+            "-",
+            "12.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "9.207.999",
+            "7.199.752"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "### *Impuesto sobre la Renta*",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Utilidad contable",
+          "values": [
+            "9.846.710",
+            "4.112.260"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos del exterior (límite del 15%)",
+          "values": [
+            "- 738.791",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos no deducibles",
+          "values": [
+            "5.765.380",
+            "2.868.106"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4XM",
+          "values": [
+            "151.192",
+            "82.509"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingreso por diferencia en cabio",
+          "values": [
+            "- 2.395.463",
+            "- 2.633.376"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gasto por diferencia en cambio",
+          "values": [
+            "2.439.567",
+            "2.012.270"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingreso por diferencia en cambio fiscal (CXC Y CXP)",
+          "values": [
+            "13.085",
+            "406.256"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gasto por diferencia en cambio fiscal (CXC Y CXP)",
+          "values": [
+            "- 1.430.901",
+            "- 1.454.549"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisión cartera",
+          "values": [
+            "- 168.616",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Petroagregados",
+          "values": [
+            "- 148.745",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utilidad fiscal",
+          "values": [
+            "13.333.417",
+            "5.393.476"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compensación pérdida 2024",
+          "values": [
+            "-",
+            "361.188"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto de renta",
+          "values": [
+            "4.666.696",
+            "1.761.301"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": null,
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Impuesto depurado",
+          "values": [
+            "4.666.696",
+            "1.761.301"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Utilidad depurada",
+          "values": [
+            "9.846.710",
+            "4.112.260"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "47%",
+            "42%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "Página 25 de 34",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Impuesto diferido activo",
+          "values": [
+            "232.632",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto diferido pasivo",
+          "values": [
+            "-",
+            "195.091"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "232.632",
+            "195.091"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "### *Impuesto Diferido Activo Reconocido*",
+      "columns": [
+        "Concepto",
+        "Valor",
+        "%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cartera",
+          "values": [
+            "$198.292",
+            "85%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencia en propiedad planta y equipo",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencia en cambio en cuentas por pagar",
+          "values": [
+            "$34.390",
+            "15%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activo por impuesto diferido",
+          "values": [
+            "$ 232.682",
+            "100%"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "# Precios de Transferencia / # Descuento ICA pagado y en IVA pagado en adquisición de bienes de capital / # Impuesto Sobre las Ventas / # Especificaciones Marco Tributario Colombiano / # Impuesto sobre la Renta",
+      "columns": [
+        "Año",
+        "Tarifa General*"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2022 y siguientes.",
+          "values": [
+            "35%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 28,
+      "section": "ONCECALDAS® / DAF DE LA MONTAÑA / # 16. PROVISIONES",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cuentas por pagar acuerdo de reestructuración (1)",
+          "values": [
+            "9.070.112",
+            "9.221.052"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras provisiones (2)",
+          "values": [
+            "635.524",
+            "116.054"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "9.705.636",
+            "9.674.606"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "# 17. BENEFICIOS A EMPLEADOS",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salarios por pagar",
+          "values": [
+            "18.978",
+            "112.177"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cesantías consolidadas",
+          "values": [
+            "196.732",
+            "162.224"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses sobre las cesantías",
+          "values": [
+            "22.335",
+            "16.865"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima de servicios",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vacaciones Consolidadas",
+          "values": [
+            "77.745",
+            "54.544"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes a EPS",
+          "values": [
+            "63.541",
+            "71.434"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes ARL",
+          "values": [
+            "8.618",
+            "8.568"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes ICBF, Sena, cajas",
+          "values": [
+            "42.436",
+            "35.814"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aportes cesantías y/o pensione",
+          "values": [
+            "110.313",
+            "119.909"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Embargos",
+          "values": [
+            "5.115",
+            "4.940"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Libranza",
+          "values": [
+            "663",
+            "704"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Para pagos a terceros",
+          "values": [
+            "357",
+            "4.030"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondos",
+          "values": [
+            "15.422",
+            "37.754"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "562.255",
+            "628.963"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "## 18. INGRESOS DIFERIDOS / ## 19. CAPITAL Y RESERVAS / ### Capital social y primas de emisión",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capital suscrito y pagado",
+          "values": [
+            "7.968.821",
+            "7.968.821"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acciones propias readquiridas",
+          "values": [
+            "(4.188.528)",
+            "(4.188.528)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit de capital",
+          "values": [
+            "7.872.705",
+            "7.872.705"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adopción por primera vez",
+          "values": [
+            "(484.425)",
+            "(484.425)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "11.168.573",
+            "11.168.573"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reservas",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2025",
+            "2024"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Legal",
+          "values": [
+            "525.599",
+            "525.599"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reserva garantía Dian",
+          "values": [
+            "411.226",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "936.825",
+            "525.599"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 30,
+      "section": "ONCECALDAS® / DAF DE LA MONTAÑA / # 20. INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Taquilla - Venta de boletería",
+          "values": [
+            "16.372.622",
+            "12.037.298"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta de derechos deportivos jugadores",
+          "values": [
+            "12.277.477",
+            "1.246.593"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Préstamos derechos deportivos jugadores",
+          "values": [
+            "50.000",
+            "599.657"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad y propaganda",
+          "values": [
+            "759.749",
+            "784.967"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIMAYOR",
+          "values": [
+            "7.652.866",
+            "7.095.459"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Federación Nacional de Fútbol Colombiano",
+          "values": [
+            "721.400",
+            "595.734"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocinio",
+          "values": [
+            "4.159.546",
+            "2.265.877"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Participaciones nacionales e internacionales",
+          "values": [
+            "13.388.395",
+            "81.922"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta de artículos deportivos",
+          "values": [
+            "2.235.906",
+            "1.825.012"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Solidaridad",
+          "values": [
+            "19.913",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Actividades conexas",
+          "values": [
+            "1.172.449",
+            "281.813"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "58.810.323",
+            "26.814.332"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 30,
+      "section": "# 21. COSTO DE VENTAS",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Costos de Ventas productos deportivos",
+          "values": [
+            "1.483.046",
+            "1.276.105"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1.483.046",
+            "1.276.105"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 31,
+      "section": "# 22. GASTOS DE ADMINISTRACIÓN",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos de personal",
+          "values": [
+            "1.424.308",
+            "1.208.958"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "635.150",
+            "134.008"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "160.553",
+            "85.709"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de viaje",
+          "values": [
+            "72.927",
+            "64.091"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "72.663",
+            "71.622"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "53.787",
+            "41.017"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciaciones",
+          "values": [
+            "49.248",
+            "10.173"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "20.263",
+            "8.684"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos legales",
+          "values": [
+            "13.514",
+            "5.746"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento y reparaciones",
+          "values": [
+            "4.386",
+            "2.587"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizaciones",
+          "values": [
+            "2.430",
+            "911"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adecuaciones instalaciones",
+          "values": [
+            "-",
+            "15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "2.509.228",
+            "1.633.521"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 31,
+      "section": "# 23. GASTOS DE VENTAS",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos de personal",
+          "values": [
+            "19.303.075",
+            "10.764.652"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos deportivos",
+          "values": [
+            "7.681.212",
+            "2.528.655"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Logística y preparación evento",
+          "values": [
+            "3.771.072",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de viaje",
+          "values": [
+            "3.258.787",
+            "861.540"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "2.397.058",
+            "1.358.701"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "970.242",
+            "222.430"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisiones",
+          "values": [
+            "774.126",
+            "12.405"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "765.383",
+            "312.845"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos area deportiva",
+          "values": [
+            "722.906",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad",
+          "values": [
+            "531.304",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento y reparaciones",
+          "values": [
+            "339.246",
+            "353.355"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "157.849",
+            "2.381.745"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciaciones",
+          "values": [
+            "108.072",
+            "171.377"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "23.844",
+            "43.431"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "23.489",
+            "64.100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuciones y afiliaciones",
+          "values": [
+            "14.281",
+            "8.974"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizaciones",
+          "values": [
+            "12.827",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adecuaciones e instalaciones",
+          "values": [
+            "5.149",
+            "120"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos legales",
+          "values": [
+            "2.203",
+            "911"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "40.862.125",
+            "19.085.241"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 32,
+      "section": "ONCE CALDAS® / DAF DE LA MONTAÑA / # 24. INGRESOS FINANCIEROS",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Intereses",
+          "values": [
+            "1.353.500",
+            "511.170"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencia en cambio",
+          "values": [
+            "2.519.039",
+            "4.115.259"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Descuentos comerciales condicionados",
+          "values": [
+            "511",
+            "135"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "3.873.050",
+            "4.626.564"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 32,
+      "section": "# 25. OTROS INGRESOS",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Recuperaciones",
+          "values": [
+            "225.608",
+            "109.072"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indemnizaciones",
+          "values": [
+            "34.277",
+            "43.975"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "2.731",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "8.721",
+            "3.661"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "271.337",
+            "156.708"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 32,
+      "section": "# 26. GASTOS FINANCIEROS",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Diferencia en cambio",
+          "values": [
+            "3.454.093",
+            "2.236.204"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses",
+          "values": [
+            "308.260",
+            "537.415"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros (4x1000)",
+          "values": [
+            "302.385",
+            "165.018"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comisiones",
+          "values": [
+            "224.690",
+            "144.155"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos bancarios",
+          "values": [
+            "4.607",
+            "3.998"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "4.294.035",
+            "3.086.790"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 32,
+      "section": "# 27. OTROS GASTOS",
+      "columns": [
+        "",
+        "2025",
+        "2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos diversos",
+          "values": [
+            "205.834",
+            "45.875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos asumidos",
+          "values": [
+            "102.931",
+            "103.801"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pérdida en venta y retiro de bienes",
+          "values": [
+            "20.800",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguridad social asumida",
+          "values": [
+            "19.811",
+            "19.126"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costos y gastos de ejercicios anteriores",
+          "values": [
+            "8.227",
+            "6.665"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos no deducibles",
+          "values": [
+            "1.777",
+            "173.288"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "757",
+            "23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costas y procesos judiciales",
+          "values": [
+            "17",
+            "27"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "360.154",
+            "348.805"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 25,
+      "section": "Página 25 de 34",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "232.632",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 25,
+      "section": "Página 25 de 34",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "195.091",
+      "addendCount": 1,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 61,
+    "results": [
+      {
+        "label": "Maquinaria y Equipo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Maquinaria y Equipo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipos de transporte",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipos de transporte",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Muebles y enseres",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Muebles y enseres",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipo de oficina (incluidos equipos de cómputo y comunicaciones).",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Equipo de oficina (incluidos equipos de cómputo y comunicaciones).",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Productos terminados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Productos terminados",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2022 y siguientes.",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2022 y siguientes.",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Capital suscrito y pagado",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Capital suscrito y pagado",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Acciones propias readquiridas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Acciones propias readquiridas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit de capital",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit de capital",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Adopción por primera vez",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Adopción por primera vez",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reservas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reservas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Legal",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Legal",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reserva garantía Dian",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Reserva garantía Dian",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Taquilla - Venta de boletería",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Taquilla - Venta de boletería",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Taquilla - Venta de boletería",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Venta de derechos deportivos jugadores",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Venta de derechos deportivos jugadores",
+        "years": [
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Venta de derechos deportivos jugadores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Préstamos derechos deportivos jugadores",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Préstamos derechos deportivos jugadores",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Préstamos derechos deportivos jugadores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad y propaganda",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Publicidad y propaganda",
+        "years": [
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Publicidad y propaganda",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DIMAYOR",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "DIMAYOR",
+        "years": [
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "DIMAYOR",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Federación Nacional de Fútbol Colombiano",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "competition_bonus",
+        "matchedLabel": "Federación Nacional de Fútbol Colombiano",
+        "years": [
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Federación Nacional de Fútbol Colombiano",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrocinio",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Patrocinio",
+        "years": [
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Patrocinio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Participaciones nacionales e internacionales",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "competition_bonus",
+        "matchedLabel": "Participaciones nacionales e internacionales",
+        "years": [
+          "2022",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Participaciones nacionales e internacionales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Venta de artículos deportivos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Venta de artículos deportivos",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Venta de artículos deportivos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Costo de Ventas: Venta de artículos deportivos-miscelaneos",
+        "similarity": 50
+      },
+      {
+        "label": "Solidaridad",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Solidaridad",
+        "years": [
+          "2025"
+        ]
+      },
+      {
+        "label": "Solidaridad",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Actividades conexas",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Actividades conexas",
+        "years": [
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Actividades conexas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costos de Ventas productos deportivos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costos de Ventas productos deportivos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Costo de Ventas productos deportivos",
+        "similarity": 60
+      },
+      {
+        "label": "Gastos de personal",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de personal",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Gastos de Ventas: Gastos de personal (plantel)",
+        "similarity": 50
+      },
+      {
+        "label": "Honorarios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Honorarios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diversos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diversos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de viaje",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de viaje",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Arrendamientos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Arrendamientos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Servicios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Servicios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciaciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciaciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Seguros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Seguros",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos legales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos legales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Mantenimiento y reparaciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Mantenimiento y reparaciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizaciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortizaciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impuestos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impuestos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Adecuaciones instalaciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Adecuaciones instalaciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Derechos deportivos",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "player_sales",
+        "matchedLabel": "Venta de derechos deportivos jugadores",
+        "similarity": 50
+      },
+      {
+        "label": "Derechos deportivos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Logística y preparación evento",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Logística y preparación evento",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisiones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Provisiones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diversos area deportiva",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diversos area deportiva",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidad",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Publicidad y propaganda",
+        "similarity": 50
+      },
+      {
+        "label": "Publicidad",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contribuciones y afiliaciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Contribuciones y afiliaciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Adecuaciones e instalaciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Adecuaciones e instalaciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Intereses",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencia en cambio",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencia en cambio",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Descuentos comerciales condicionados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Descuentos comerciales condicionados",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Recuperaciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Recuperaciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Indemnizaciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Indemnizaciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros (4x1000)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros (4x1000)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Comisiones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Comisiones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos bancarios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos bancarios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos diversos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos diversos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Gastos de Ventas: Diversos y provisiones",
+        "similarity": 50
+      },
+      {
+        "label": "Impuestos asumidos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impuestos asumidos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pérdida en venta y retiro de bienes",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Pérdida en venta y retiro de bienes",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Seguridad social asumida",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Seguridad social asumida",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costos y gastos de ejercicios anteriores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costos y gastos de ejercicios anteriores",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos no deducibles",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos no deducibles",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costas y procesos judiciales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Costas y procesos judiciales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "co",
+    "query": "Once Caldas",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 5,
+      "line": "b) Moneda extranjera"
+    },
+    {
+      "page": 5,
+      "line": "i. Transacciones en moneda extranjera"
+    },
+    {
+      "page": 5,
+      "line": "Las diferencias en moneda extranjera que surgen durante la conversión por lo general son reconocidas en resultados."
+    },
+    {
+      "page": 5,
+      "line": "- Las partidas monetarias en moneda extranjera se convertirán utilizando la tasa de cambio de cierre."
+    },
+    {
+      "page": 5,
+      "line": "- Las partidas no monetarias en moneda extranjera, que se midan en términos de costo histórico, se convertirán utilizando la tasa de cambio de la fecha de la transacción original."
+    },
+    {
+      "page": 8,
+      "line": "El costo también puede incluir transferencias desde el otro resultado integral de cualquier ganancia o pérdida en coberturas de flujos de efectivo calificadas de compras de moneda extranjera de propiedades, planta y equipo."
+    },
+    {
+      "page": 17,
+      "line": "La Compañía está expuesta al riesgo de tipo de cambio principalmente por cuentas comerciales por pagar o cuentas por cobrar de actividades ordinarias en moneda extranjera como consecuencia de la compra y venta de jugadores. Las variaciones de estas monedas afectan al resultado de la Compañía."
+    },
+    {
+      "page": 17,
+      "line": "La Compañía tenía los siguientes activos y pasivos en moneda extranjera, contabilizados por su equivalente en miles de pesos:"
+    },
+    {
+      "page": 19,
+      "line": "|  Caja Moneda extranjera | 15.539 | -  |"
+    },
+    {
+      "page": 19,
+      "line": "|  Bancos Moneda extranjera | 106.041 | 2.659.618  |"
+    },
+    {
+      "page": 20,
+      "line": "|  Moneda extranjera | 5.606.990 | 10.562.407  |"
+    }
+  ],
+  "warnings": []
+}

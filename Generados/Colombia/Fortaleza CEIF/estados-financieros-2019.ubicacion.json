@@ -1,0 +1,350 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-02T19:48:12.442Z",
+ "intentoNotasComoEstado": true,
+ "estadoDesdeNotas": true,
+ "intentoNotasConAjuste": true,
+ "bloques": {
+  "b1": {
+   "pagina": 5,
+   "lineas": [
+    165,
+    175
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 11,
+   "lineas": [
+    363,
+    368
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 12,
+   "lineas": [
+    380,
+    384
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 12,
+   "lineas": [
+    394,
+    401
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 12,
+   "lineas": [
+    405,
+    416
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 13,
+   "lineas": [
+    436,
+    439
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 13,
+   "lineas": [
+    453,
+    456
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    466,
+    493
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 14,
+   "lineas": [
+    501,
+    505
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    524,
+    546
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    560,
+    566
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    568,
+    573
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    579,
+    582
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    592,
+    600
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 17,
+   "lineas": [
+    618,
+    627
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 17,
+   "lineas": [
+    631,
+    635
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 18,
+   "lineas": [
+    655,
+    663
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    691,
+    698
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    704,
+    708
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    716,
+    720
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 20,
+   "lineas": [
+    736,
+    740
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    750,
+    753
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    763,
+    768
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 21,
+   "lineas": [
+    780,
+    784
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    790,
+    804
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 21,
+   "lineas": [
+    808,
+    816
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 22,
+   "lineas": [
+    832,
+    837
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 22,
+   "lineas": [
+    845,
+    850
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 22,
+   "lineas": [
+    860,
+    868
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 23,
+   "lineas": [
+    878,
+    912
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 24,
+   "lineas": [
+    936,
+    970
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 25,
+   "lineas": [
+    980,
+    1026
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 26,
+   "lineas": [
+    1036,
+    1048
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 26,
+   "lineas": [
+    1060,
+    1068
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 27,
+   "lineas": [
+    1084,
+    1094
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 27,
+   "lineas": [
+    1104,
+    1110
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b24",
+  "b28",
+  "b29",
+  "b30",
+  "b31",
+  "b32",
+  "b33",
+  "b34",
+  "b35",
+  "b36",
+  "b7"
+ ],
+ "notas_ingresos": [
+  "b25",
+  "b27"
+ ],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expresados en miles de pesos Colombianos)",
+ "moneda": "COP",
+ "columna_ejercicio": "A 31 de Diciembre de 2019",
+ "columna_anterior": "A 31 de Diciembre de 2018 Reexpresados",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera de la carga el cuadro de venta de derechos deportivos por equipo/jugador (b26)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Venta De Derechos Deportivos",
+   "texto": "Es detalle por jugador/contrato de una fila ya abierta en b25.",
+   "bloques": [
+    "b26"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se toma la 'Utilidad Contable' de b7 (52,122 entre paréntesis, pérdida) como resultado antes de impuestos del ejercicio 2019?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Utilidad Contable",
+   "texto": "No hay estado de resultados; el resultado impreso está solo en la liquidación del impuesto (línea 455) y hay gasto de renta de $17.463 aparte.",
+   "bloques": [
+    "b7"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento no trae el estado de resultados, solo notas. Se arma con las notas 22 (ingresos ordinarios b24), 23 costo de ventas (b28), 24 gastos de ventas (b29-b30), 25 gastos de administración (b31-b33), 26 otros gastos (b34), 27 otros ingresos (b35), 28 costos financieros (b36) y el resultado contable impreso en la liquidación del impuesto (b7, (52,122)). Desgloses: b25 abre Actividades Deportivas y b27 abre Venta De Productos. Solo entidad individual Fortaleza Futbol Club SA."
+}

@@ -1,0 +1,155 @@
+{
+ "md": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.md",
+ "pdf": "Clubes/Países Bajos/Telstar/Telstar-Jaarverslag-2024-2025-full.pdf",
+ "club": "telstar",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:07:28.085Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 13,
+  "notasUsadas": [
+   "20",
+   "16",
+   "19"
+  ]
+ },
+ "ladoConocido": 11,
+ "rubros": [
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# Winst- en verliesrekening over 2024/2025",
+   "values": [
+    0.00576
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Sponsoring",
+   "lado": "revenue",
+   "page": 22,
+   "section": "# Toelichting op de winst- en verliesrekening over 2024/2025",
+   "values": [
+    0.002354
+   ],
+   "origen": "nota 20 (ancla 7)",
+   "ancla": "Netto-omzet"
+  },
+  {
+   "label": "Media gerelateerde baten",
+   "lado": "revenue",
+   "page": 22,
+   "section": "# Toelichting op de winst- en verliesrekening over 2024/2025",
+   "values": [
+    0.000825
+   ],
+   "origen": "nota 20 (ancla 7)",
+   "ancla": "Netto-omzet"
+  },
+  {
+   "label": "Merchandising & Business to Consumer activiteiten",
+   "lado": "revenue",
+   "page": 22,
+   "section": "# Toelichting op de winst- en verliesrekening over 2024/2025",
+   "values": [
+    0.000087
+   ],
+   "origen": "nota 20 (ancla 7)",
+   "ancla": "Netto-omzet"
+  },
+  {
+   "label": "Food & Beverage",
+   "lado": "revenue",
+   "page": 22,
+   "section": "# Toelichting op de winst- en verliesrekening over 2024/2025",
+   "values": [
+    0.000904
+   ],
+   "origen": "nota 20 (ancla 7)",
+   "ancla": "Netto-omzet"
+  },
+  {
+   "label": "Resultaat vergoedingssommen",
+   "lado": "revenue",
+   "page": 22,
+   "section": "# Toelichting op de winst- en verliesrekening over 2024/2025",
+   "values": [
+    0.000322
+   ],
+   "origen": "nota 20 (ancla 7)",
+   "ancla": "Netto-omzet"
+  },
+  {
+   "label": "Overige baten",
+   "lado": "revenue",
+   "page": 22,
+   "section": "# Toelichting op de winst- en verliesrekening over 2024/2025",
+   "values": [
+    0.000339
+   ],
+   "origen": "nota 20 (ancla 7)",
+   "ancla": "Netto-omzet"
+  },
+  {
+   "label": "Personeelskosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Winst- en verliesrekening over 2024/2025",
+   "values": [
+    0.002864
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Winst- en verliesrekening over 2024/2025",
+   "values": [
+    0.00037
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Winst- en verliesrekening over 2024/2025",
+   "values": [
+    0.002316
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Som der financiële baten en lasten",
+   "lado": null,
+   "page": 8,
+   "section": "# Winst- en verliesrekening over 2024/2025",
+   "values": [
+    -0.000029
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Belasting",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Winst- en verliesrekening over 2024/2025",
+   "values": [
+    0.000139
+   ],
+   "origen": "estado 7"
+  }
+ ]
+}

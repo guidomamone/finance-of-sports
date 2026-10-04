@@ -1,0 +1,212 @@
+{
+  "md": "Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2009-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2009-06-30-individual.pdf",
+  "club": "unionsg-be",
+  "year": 2009,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:55:50.407Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 4
+  },
+  "warnings": [
+    "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 17,
+    "notasUsadas": []
+  },
+  "ladoConocido": 11,
+  "rubros": [
+    {
+      "label": "Marge brute d'exploitation (+)/(-)",
+      "lado": null,
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        9.9
+      ],
+      "origen": "estado 3",
+      "glosa": "Margen bruto de explotación (+)/(-)"
+    },
+    {
+      "label": "Chiffre d'affaires",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        0.07
+      ],
+      "origen": "estado 3",
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Approvisionnements, marchandises, services et biens divers",
+      "lado": null,
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        6.061
+      ],
+      "origen": "estado 3",
+      "glosa": "Aprovisionamientos, mercancías, servicios y bienes diversos"
+    },
+    {
+      "label": "Rémunérations, charges sociales et pensions (+)/(-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        0.062
+      ],
+      "origen": "estado 3",
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+      "lado": null,
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        0.63
+      ],
+      "origen": "estado 3",
+      "glosa": "Amortizaciones y pérdidas por deterioro de gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises) (+)/(-)",
+      "lado": null,
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        6.314
+      ],
+      "origen": "estado 3",
+      "glosa": "Correcciones de valor de existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Provisions pour risques et charges: dotations (utilisations et reprises) (+)/(-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        6.357
+      ],
+      "origen": "estado 3",
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones) (+)/(-)"
+    },
+    {
+      "label": "Autres charges d'exploitation",
+      "lado": "expense",
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        6.408
+      ],
+      "origen": "estado 3",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Charges d'exploitation portées à l'actif au titre de frais de restructuration (-)",
+      "lado": "expense",
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        0.649
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos de explotación activados como gastos de reestructuración (-)"
+    },
+    {
+      "label": "Produits financiers",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        0.075
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Charges financières",
+      "lado": "expense",
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        0.065
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Produits exceptionnels",
+      "lado": "revenue",
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        0.076
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos excepcionales"
+    },
+    {
+      "label": "Charges exceptionnelles",
+      "lado": "expense",
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        0.066
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos excepcionales"
+    },
+    {
+      "label": "Prélèvements sur les impôts différés",
+      "lado": "expense",
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        0.78
+      ],
+      "origen": "estado 3",
+      "glosa": "Disposición de impuestos diferidos"
+    },
+    {
+      "label": "Transfert aux impôts différés",
+      "lado": "expense",
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        0.68
+      ],
+      "origen": "estado 3",
+      "glosa": "Transferencia a impuestos diferidos"
+    },
+    {
+      "label": "Prélèvements sur les réserves immunisées",
+      "lado": null,
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        0.789
+      ],
+      "origen": "estado 3",
+      "glosa": "Disposición de reservas exentas de impuestos"
+    },
+    {
+      "label": "Transfert aux réserves immunisées",
+      "lado": null,
+      "page": 5,
+      "section": "# COMPTE DE RÉSULTATS",
+      "values": [
+        0.689
+      ],
+      "origen": "estado 3",
+      "glosa": "Transferencia a reservas exentas de impuestos"
+    }
+  ]
+}

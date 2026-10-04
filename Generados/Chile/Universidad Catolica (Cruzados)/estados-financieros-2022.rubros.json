@@ -1,0 +1,352 @@
+{
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2022.md",
+ "pdf": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2022.pdf",
+ "club": "catolica-cl",
+ "year": 2022,
+ "generatedAt": "2026-10-02T20:51:22.038Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Ingresos por A.N.F.P. (1)",
+   "lado": "revenue",
+   "page": 83,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "values": [
+    3951.082
+   ]
+  },
+  {
+   "label": "Ingresos por Derechos de TV",
+   "lado": "revenue",
+   "page": 83,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "values": [
+    3030.675
+   ]
+  },
+  {
+   "label": "Ingresos por Borderó (Recaudación Entradas)",
+   "lado": "revenue",
+   "page": 83,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "values": [
+    1985.955
+   ]
+  },
+  {
+   "label": "Ingresos por Préstamo de Jugadores",
+   "lado": "revenue",
+   "page": 83,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "values": [
+    200.512
+   ]
+  },
+  {
+   "label": "Ingresos por venta de Jugadores",
+   "lado": "revenue",
+   "page": 83,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "values": [
+    6464.187
+   ]
+  },
+  {
+   "label": "Ingresos por Derechos de Solidaridad",
+   "lado": "revenue",
+   "page": 83,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "values": [
+    4.085
+   ]
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 83,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos por Recaudación y otros\"",
+   "values": [
+    792.648
+   ]
+  },
+  {
+   "label": "Ingresos Cuotas Socios Fútbol",
+   "lado": "revenue",
+   "page": 87,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\"",
+   "values": [
+    254.263
+   ]
+  },
+  {
+   "label": "Ingresos Matrículas de Escuelas de Fútbol",
+   "lado": "revenue",
+   "page": 87,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\"",
+   "values": [
+    488.314
+   ]
+  },
+  {
+   "label": "Ingresos por Publicidad y Auspicios",
+   "lado": "revenue",
+   "page": 87,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\"",
+   "values": [
+    5652.315
+   ]
+  },
+  {
+   "label": "Ingresos por Ventas de Productos Tienda UC",
+   "lado": "revenue",
+   "page": 87,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\"",
+   "values": [
+    317.602
+   ]
+  },
+  {
+   "label": "Ingresos por Derechos de Merchandising",
+   "lado": "revenue",
+   "page": 87,
+   "section": "nota que desglosa \"Ingresos de actividades ordinarias\" > desglose de \"Ingresos Comerciales\"",
+   "values": [
+    379.427
+   ]
+  },
+  {
+   "label": "Otros ingresos por función",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "values": [
+    289.863
+   ]
+  },
+  {
+   "label": "Remuneraciones",
+   "lado": "expense",
+   "page": 85,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "values": [
+    9819.826
+   ]
+  },
+  {
+   "label": "Gastos de Operación",
+   "lado": "expense",
+   "page": 85,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "values": [
+    2287.671
+   ]
+  },
+  {
+   "label": "Amortización pases de jugadores profesionales (*)",
+   "lado": "expense",
+   "page": 85,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "values": [
+    1837.734
+   ]
+  },
+  {
+   "label": "Amortización Concesión",
+   "lado": "expense",
+   "page": 85,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "values": [
+    151.068
+   ]
+  },
+  {
+   "label": "Gastos de torneos y otros",
+   "lado": "expense",
+   "page": 85,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "values": [
+    1251.191
+   ]
+  },
+  {
+   "label": "Gasto por Préstamo de Jugadores",
+   "lado": "expense",
+   "page": 85,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "values": [
+    578.028
+   ]
+  },
+  {
+   "label": "Gasto por Transferencia de Jugadores",
+   "lado": "expense",
+   "page": 85,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "values": [
+    2010.506
+   ]
+  },
+  {
+   "label": "Depreciación",
+   "lado": "expense",
+   "page": 85,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "values": [
+    304.106
+   ]
+  },
+  {
+   "label": "Costos de ventas productos",
+   "lado": "expense",
+   "page": 85,
+   "section": "nota que desglosa \"Costo de ventas\"",
+   "values": [
+    220.274
+   ]
+  },
+  {
+   "label": "Otros Gastos por función",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "values": [
+    558.476
+   ]
+  },
+  {
+   "label": "Remuneración",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    855.659
+   ]
+  },
+  {
+   "label": "Indemnización",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    4.598
+   ]
+  },
+  {
+   "label": "Gastos Generales",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    119.777
+   ]
+  },
+  {
+   "label": "Combustible y Lubricantes",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    5.895
+   ]
+  },
+  {
+   "label": "Servicios Contratados",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    604.402
+   ]
+  },
+  {
+   "label": "Servicios de Seguridad",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    65.574
+   ]
+  },
+  {
+   "label": "Servicios de Aseo",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    54.797
+   ]
+  },
+  {
+   "label": "Arriendo de Bienes",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    180.508
+   ]
+  },
+  {
+   "label": "Servicios de Terceros",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    189.404
+   ]
+  },
+  {
+   "label": "Materiales de Mantención y Reparación",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    16.26
+   ]
+  },
+  {
+   "label": "Servicios de Mantención y Reparación",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    93.96
+   ]
+  },
+  {
+   "label": "Patentes y Contribuciones",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    96.316
+   ]
+  },
+  {
+   "label": "Provisión No Operacionales",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    2.202
+   ]
+  },
+  {
+   "label": "Materiales de Oficina y Otros",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    82.394
+   ]
+  },
+  {
+   "label": "Feriado Legal",
+   "lado": "expense",
+   "page": 86,
+   "section": "nota que desglosa \"Gasto de administración\"",
+   "values": [
+    20.338
+   ]
+  }
+ ]
+}

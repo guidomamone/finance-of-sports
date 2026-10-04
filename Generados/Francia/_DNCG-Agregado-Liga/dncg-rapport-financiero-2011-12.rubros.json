@@ -1,0 +1,676 @@
+{
+ "md": "Clubes/Francia/_DNCG-Agregado-Liga/dncg-rapport-financiero-2011-12.md",
+ "pdf": "Clubes/Francia/_DNCG-Agregado-Liga/dncg-rapport-financiero-2011-12.pdf",
+ "club": "dncg-agregado-liga",
+ "year": 2012,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:01:33.158Z",
+ "tieOuts": {
+  "cierran": 81,
+  "noCierran": 21
+ },
+ "warnings": [
+  "1 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "20 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "50 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 65,
+  "notasUsadas": []
+ },
+ "ladoConocido": 53,
+ "rubros": [
+  {
+   "label": "Droits audiovisuels",
+   "lado": null,
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.026603
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Sponsors - Publicité",
+   "lado": null,
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.017012
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Recettes matches",
+   "lado": "revenue",
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.006516
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Autres produits",
+   "lado": "revenue",
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.013585
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Rémunération du personnel",
+   "lado": null,
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.053804
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Charges sociales",
+   "lado": "expense",
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.01493
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Dotations aux amort des indemn de mutation",
+   "lado": null,
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.006535
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Honoraires d'agents",
+   "lado": null,
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.003363
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Frais de déplacement",
+   "lado": null,
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.005292
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Frais d'organisation de matches",
+   "lado": null,
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.003812
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Services extérieurs",
+   "lado": null,
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.022059
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Impôts et taxes",
+   "lado": "expense",
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.00227
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Dotations aux autres amortissements et provisions",
+   "lado": null,
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.003233
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Autres charges",
+   "lado": "expense",
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.007405
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Impôt société",
+   "lado": "expense",
+   "page": 78,
+   "section": "## Compte de résultat cumulé par groupe",
+   "values": [
+    0.000156
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "Droits audiovisuels",
+   "lado": "revenue",
+   "page": 34,
+   "section": "## 2.2.3 COMPTES CUMULÉS PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé",
+   "values": [
+    0.720725
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Sponsors - Publicité",
+   "lado": "revenue",
+   "page": 34,
+   "section": "## 2.2.3 COMPTES CUMULÉS PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé",
+   "values": [
+    0.230487
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Recettes matches",
+   "lado": "revenue",
+   "page": 34,
+   "section": "## 2.2.3 COMPTES CUMULÉS PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé",
+   "values": [
+    0.147111
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Autres produits",
+   "lado": "revenue",
+   "page": 34,
+   "section": "## 2.2.3 COMPTES CUMULÉS PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé",
+   "values": [
+    0.251039
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Rémunération du personnel chargée",
+   "lado": "expense",
+   "page": 34,
+   "section": "## 2.2.3 COMPTES CUMULÉS PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé",
+   "values": [
+    1.036038
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Coûts des mutations",
+   "lado": "expense",
+   "page": 34,
+   "section": "## 2.2.3 COMPTES CUMULÉS PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé",
+   "values": [
+    0.213193
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Autres charges",
+   "lado": "expense",
+   "page": 34,
+   "section": "## 2.2.3 COMPTES CUMULÉS PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé",
+   "values": [
+    0.433532
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Impôt société",
+   "lado": "expense",
+   "page": 34,
+   "section": "## 2.2.3 COMPTES CUMULÉS PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé",
+   "values": [
+    -0.005533
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Abandons et reprises de comptes courants",
+   "lado": null,
+   "page": 34,
+   "section": "## 2.2.3 COMPTES CUMULÉS PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé",
+   "values": [
+    0.061249
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Droits audiovisuels",
+   "lado": "revenue",
+   "page": 36,
+   "section": "## 2.3.1 SYNTHÈSE LIGUE 1 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    612.874
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Sponsors - Publicité",
+   "lado": "revenue",
+   "page": 36,
+   "section": "## 2.3.1 SYNTHÈSE LIGUE 1 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    183.824
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Recettes matches",
+   "lado": "revenue",
+   "page": 36,
+   "section": "## 2.3.1 SYNTHÈSE LIGUE 1 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    124.366
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Autres produits",
+   "lado": "revenue",
+   "page": 36,
+   "section": "## 2.3.1 SYNTHÈSE LIGUE 1 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    214.727
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Rémunération du personnel chargée",
+   "lado": "expense",
+   "page": 36,
+   "section": "## 2.3.1 SYNTHÈSE LIGUE 1 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    841.378
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Coûts des mutations",
+   "lado": "expense",
+   "page": 36,
+   "section": "## 2.3.1 SYNTHÈSE LIGUE 1 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    196.921
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Autres charges",
+   "lado": "expense",
+   "page": 36,
+   "section": "## 2.3.1 SYNTHÈSE LIGUE 1 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    323.572
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Impôt société",
+   "lado": "expense",
+   "page": 36,
+   "section": "## 2.3.1 SYNTHÈSE LIGUE 1 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    -5.994
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Abandons et reprises de comptes courants",
+   "lado": null,
+   "page": 36,
+   "section": "## 2.3.1 SYNTHÈSE LIGUE 1 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    52.215
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Droits audiovisuels",
+   "lado": "revenue",
+   "page": 62,
+   "section": "## 2.4.1 SYNTHÈSE LIGUE 2 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    0.107851
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Sponsors - Publicité",
+   "lado": "revenue",
+   "page": 62,
+   "section": "## 2.4.1 SYNTHÈSE LIGUE 2 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    0.046663
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Recettes matches",
+   "lado": "revenue",
+   "page": 62,
+   "section": "## 2.4.1 SYNTHÈSE LIGUE 2 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    0.022745
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Autres produits",
+   "lado": "revenue",
+   "page": 62,
+   "section": "## 2.4.1 SYNTHÈSE LIGUE 2 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    0.036312
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Rémunération du personnel chargée",
+   "lado": "expense",
+   "page": 62,
+   "section": "## 2.4.1 SYNTHÈSE LIGUE 2 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    0.19466
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Coûts des mutations",
+   "lado": "expense",
+   "page": 62,
+   "section": "## 2.4.1 SYNTHÈSE LIGUE 2 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    0.016272
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Autres charges",
+   "lado": "expense",
+   "page": 62,
+   "section": "## 2.4.1 SYNTHÈSE LIGUE 2 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    0.10996
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Impôt société",
+   "lado": "expense",
+   "page": 62,
+   "section": "## 2.4.1 SYNTHÈSE LIGUE 2 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    0.000461
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Abandons et reprises de comptes courants",
+   "lado": null,
+   "page": 62,
+   "section": "## 2.4.1 SYNTHÈSE LIGUE 2 PÉRIMÈTRE RÉGLEMENTAIRE / ### Compte de résultat cumulé synthétique",
+   "values": [
+    0.009034
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Abonnés",
+   "lado": "revenue",
+   "page": 39,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 1 / ## Recettes matches championnat / ### Analyse spectateurs",
+   "values": [
+    9906
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Payants au match",
+   "lado": "revenue",
+   "page": 39,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 1 / ## Recettes matches championnat / ### Analyse spectateurs",
+   "values": [
+    5132
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Non payants",
+   "lado": "revenue",
+   "page": 39,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 1 / ## Recettes matches championnat / ### Analyse spectateurs",
+   "values": [
+    3832
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Recettes totales M€",
+   "lado": "revenue",
+   "page": 39,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 1 / ## Recettes matches championnat / ### Analyse spectateurs",
+   "values": [
+    119
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Prix moyen tous spectateurs",
+   "lado": "revenue",
+   "page": 39,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 1 / ## Recettes matches championnat / ### Analyse spectateurs",
+   "values": [
+    16.55
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Prix moyen spectateurs payants",
+   "lado": "revenue",
+   "page": 39,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 1 / ## Recettes matches championnat / ### Analyse spectateurs",
+   "values": [
+    20.77
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Prix moyen à l'abonnement",
+   "lado": "revenue",
+   "page": 39,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 1 / ## Recettes matches championnat / ### Analyse spectateurs",
+   "values": [
+    18.59
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Prix moyen spectateurs au match uniquement",
+   "lado": "revenue",
+   "page": 39,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 1 / ## Recettes matches championnat / ### Analyse spectateurs",
+   "values": [
+    24.98
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Abonnés",
+   "lado": "revenue",
+   "page": 65,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 2 / ## Recettes matches championnat / ### Analyse spectateur",
+   "values": [
+    3436
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Payant au match",
+   "lado": "revenue",
+   "page": 65,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 2 / ## Recettes matches championnat / ### Analyse spectateur",
+   "values": [
+    2562
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Non payant",
+   "lado": "revenue",
+   "page": 65,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 2 / ## Recettes matches championnat / ### Analyse spectateur",
+   "values": [
+    2455
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Recettes totales M€",
+   "lado": "revenue",
+   "page": 65,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 2 / ## Recettes matches championnat / ### Analyse spectateur",
+   "values": [
+    24.1
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Prix moyen tous spectateurs",
+   "lado": "revenue",
+   "page": 65,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 2 / ## Recettes matches championnat / ### Analyse spectateur",
+   "values": [
+    7.5
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Prix moyen spectateurs payants",
+   "lado": "revenue",
+   "page": 65,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 2 / ## Recettes matches championnat / ### Analyse spectateur",
+   "values": [
+    10.57
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Prix moyen à l'abonnement",
+   "lado": "revenue",
+   "page": 65,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 2 / ## Recettes matches championnat / ### Analyse spectateur",
+   "values": [
+    10.19
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Prix moyen spectateurs au match uniquement",
+   "lado": "revenue",
+   "page": 65,
+   "section": "SAISON 2011/2012 | 02 LES COMPTES AGRÉGÉS DES CLUBS PROFESSIONNELS / LIGUE 2 / ## Recettes matches championnat / ### Analyse spectateur",
+   "values": [
+    11.08
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Abonnés",
+   "lado": "revenue",
+   "page": 21,
+   "section": "SAISON 2011/2012 | 01 COMPTE RENDU DE LA COMMISSION / ## Recettes matches championnat L1 + L2 / ### Analyse spectateurs",
+   "values": [
+    6671
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Payants au match",
+   "lado": "revenue",
+   "page": 21,
+   "section": "SAISON 2011/2012 | 01 COMPTE RENDU DE LA COMMISSION / ## Recettes matches championnat L1 + L2 / ### Analyse spectateurs",
+   "values": [
+    3847
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Non payants",
+   "lado": "revenue",
+   "page": 21,
+   "section": "SAISON 2011/2012 | 01 COMPTE RENDU DE LA COMMISSION / ## Recettes matches championnat L1 + L2 / ### Analyse spectateurs",
+   "values": [
+    3144
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Recettes totales M€",
+   "lado": "revenue",
+   "page": 21,
+   "section": "SAISON 2011/2012 | 01 COMPTE RENDU DE LA COMMISSION / ## Recettes matches championnat L1 + L2 / ### Analyse spectateurs",
+   "values": [
+    143.1
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Masse salariale chargée",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Charges : détail des écarts",
+   "values": [
+    135
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Amortissements des indemnités de mutation",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Charges : détail des écarts",
+   "values": [
+    28
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Frais généraux",
+   "lado": "expense",
+   "page": 26,
+   "section": "### Charges : détail des écarts",
+   "values": [
+    56.5
+   ],
+   "origen": "estado 7"
+  }
+ ]
+}

@@ -1,0 +1,389 @@
+{
+  "md": "Clubes/España/Atlético de Madrid/cuentas-anuales-2023-2024.md",
+  "pdf": "Clubes/España/Atlético de Madrid/cuentas-anuales-2023-2024.pdf",
+  "club": "atleticomadrid",
+  "year": 2024,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:00:36.209Z",
+  "tieOuts": {
+    "cierran": 30,
+    "noCierran": 62
+  },
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "60 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 35,
+    "notasUsadas": []
+  },
+  "ladoConocido": 22,
+  "rubros": [
+    {
+      "label": "D. SALDO AJUSTADO , INICIO EJERCICIO 2022/2023",
+      "lado": null,
+      "page": 11,
+      "section": "Club Atlético de Madrid, S.A.D. / Subvenciones, / Capital                                            Resultados del      Resultado del / Escriturado                                         ejercicio anterior     ejercicio / legados recibidos",
+      "values": [
+        41.807922
+      ],
+      "origen": "estado 9",
+      "glosa": "D. SALDO AJUSTADO , INICIO EJERCICIO 2022/2023"
+    },
+    {
+      "label": "I. Total ingresos y gastos reconocidos.",
+      "lado": null,
+      "page": 11,
+      "section": "Club Atlético de Madrid, S.A.D. / Subvenciones, / Capital                                            Resultados del      Resultado del / Escriturado                                         ejercicio anterior     ejercicio / legados recibidos",
+      "values": [
+        0.35946
+      ],
+      "origen": "estado 9",
+      "glosa": "I. Total ingresos y gastos reconocidos."
+    },
+    {
+      "label": "E. SALDO, FINAL EJERCICIO 2022/2023",
+      "lado": null,
+      "page": 11,
+      "section": "Club Atlético de Madrid, S.A.D. / Subvenciones, / Capital                                            Resultados del      Resultado del / Escriturado                                         ejercicio anterior     ejercicio / legados recibidos",
+      "values": [
+        41.807922
+      ],
+      "origen": "estado 9",
+      "glosa": "E. SALDO, FINAL EJERCICIO 2022/2023"
+    },
+    {
+      "label": "I. Total ingresos y gastos reconocidos.",
+      "lado": null,
+      "page": 11,
+      "section": "Club Atlético de Madrid, S.A.D. / Subvenciones, / Capital                                            Resultados del      Resultado del / Escriturado                                         ejercicio anterior     ejercicio / legados recibidos",
+      "values": [
+        0.690388
+      ],
+      "origen": "estado 9",
+      "glosa": "I. Total ingresos y gastos reconocidos."
+    },
+    {
+      "label": "III. Otras variaciones del patrimonio neto.",
+      "lado": null,
+      "page": 11,
+      "section": "Club Atlético de Madrid, S.A.D. / Subvenciones, / Capital                                            Resultados del      Resultado del / Escriturado                                         ejercicio anterior     ejercicio / legados recibidos",
+      "values": [
+        0.035946
+      ],
+      "origen": "estado 9",
+      "glosa": "III. Otras variaciones del patrimonio neto."
+    },
+    {
+      "label": "E. SALDO, FINAL EJERCICIO 2023/2024",
+      "lado": null,
+      "page": 11,
+      "section": "Club Atlético de Madrid, S.A.D. / Subvenciones, / Capital                                            Resultados del      Resultado del / Escriturado                                         ejercicio anterior     ejercicio / legados recibidos",
+      "values": [
+        41.807922
+      ],
+      "origen": "estado 9",
+      "glosa": "E. SALDO, FINAL EJERCICIO 2023/2024"
+    },
+    {
+      "label": "Con origen en el ejercicio",
+      "lado": null,
+      "page": 65,
+      "section": "EJERCICIO 2023/2024                          Cuenta Pérdidas y Ganancias / imputados a patrimonio / Permanentes: / Gastos no deducibles                                          558.045,77 / Temporarias:",
+      "values": [
+        22.167686
+      ],
+      "origen": "estado 59",
+      "glosa": "Con origen en el ejercicio"
+    },
+    {
+      "label": "Con origen en ejercicios anteriores",
+      "lado": null,
+      "page": 65,
+      "section": "EJERCICIO 2023/2024                          Cuenta Pérdidas y Ganancias / imputados a patrimonio / Permanentes: / Gastos no deducibles                                          558.045,77 / Temporarias:",
+      "values": [
+        8.558656
+      ],
+      "origen": "estado 59",
+      "glosa": "Con origen en ejercicios anteriores"
+    },
+    {
+      "label": "BASE IMPONIBLE",
+      "lado": null,
+      "page": 65,
+      "section": "EJERCICIO 2023/2024                          Cuenta Pérdidas y Ganancias / imputados a patrimonio / Permanentes: / Gastos no deducibles                                          558.045,77 / Temporarias:",
+      "values": [
+        16.188519
+      ],
+      "origen": "estado 59",
+      "glosa": "BASE IMPONIBLE"
+    },
+    {
+      "label": "Dotación Reserva de revalorización",
+      "lado": null,
+      "page": 65,
+      "section": "EJERCICIO 2023/2024                          Cuenta Pérdidas y Ganancias / imputados a patrimonio / Permanentes: / Gastos no deducibles                                          558.045,77 / Temporarias:",
+      "values": [
+        -0.035946
+      ],
+      "origen": "estado 59",
+      "glosa": "Dotación Reserva de revalorización"
+    },
+    {
+      "label": "Compensación Bases Negativas",
+      "lado": null,
+      "page": 65,
+      "section": "EJERCICIO 2023/2024                          Cuenta Pérdidas y Ganancias / imputados a patrimonio / Permanentes: / Gastos no deducibles                                          558.045,77 / Temporarias:",
+      "values": [
+        -11.331963
+      ],
+      "origen": "estado 59",
+      "glosa": "Compensación Bases Negativas"
+    },
+    {
+      "label": "Ingresos competición UEFA",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        102.316886
+      ],
+      "origen": "estado 78",
+      "glosa": "Ingresos competición UEFA"
+    },
+    {
+      "label": "Otras competiciones y partidos amistosos",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        6.158142
+      ],
+      "origen": "estado 78",
+      "glosa": "Otras competiciones y partidos amistosos"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        0.123095
+      ],
+      "origen": "estado 78",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Ingresos por abonados y socios",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        49.973416
+      ],
+      "origen": "estado 78",
+      "glosa": "Ingresos por abonados y socios"
+    },
+    {
+      "label": "Ingresos por retransmisiones",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        119.801272
+      ],
+      "origen": "estado 78",
+      "glosa": "Ingresos por retransmisiones"
+    },
+    {
+      "label": "Ingresos por comercialización",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        60.169695
+      ],
+      "origen": "estado 78",
+      "glosa": "Ingresos por comercialización"
+    },
+    {
+      "label": "Venta tiendas",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        11.834919
+      ],
+      "origen": "estado 78",
+      "glosa": "Venta tiendas"
+    },
+    {
+      "label": "Patrocinios",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        33.634114
+      ],
+      "origen": "estado 78",
+      "glosa": "Patrocinios"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        14.700662
+      ],
+      "origen": "estado 78",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Ingresos por publicidad",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        29.990608
+      ],
+      "origen": "estado 78",
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Publicidad estática",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        2.56408
+      ],
+      "origen": "estado 78",
+      "glosa": "Publicidad estática"
+    },
+    {
+      "label": "Publicidad dinámica",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        27.053597
+      ],
+      "origen": "estado 78",
+      "glosa": "Publicidad dinámica"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        0.372931
+      ],
+      "origen": "estado 78",
+      "glosa": "Otros"
+    },
+    {
+      "label": "Otros ingresos",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        0.004214
+      ],
+      "origen": "estado 78",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Ingresos por servicios de construcción concesión (nota 5)",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        6.928177
+      ],
+      "origen": "estado 78",
+      "glosa": "Ingresos por servicios de construcción concesión (nota 5)"
+    },
+    {
+      "label": "Importe neto de la cifra de negocio",
+      "lado": "revenue",
+      "page": 79,
+      "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+      "values": [
+        395.100799
+      ],
+      "origen": "estado 78",
+      "glosa": "Importe neto de la cifra de negocio"
+    },
+    {
+      "label": "Créditos empresas grupo - -",
+      "lado": "expense",
+      "page": 51,
+      "section": "Activos a valor razonable           Activos financieros a coste / con cambios en PyG                       amortizado / Créditos, derivados y otros",
+      "values": [
+        5.285461
+      ],
+      "origen": "estado 39",
+      "glosa": "Créditos empresas grupo - -"
+    },
+    {
+      "label": "Créditos entidades deportivas - -",
+      "lado": "expense",
+      "page": 51,
+      "section": "Activos a valor razonable           Activos financieros a coste / con cambios en PyG                       amortizado / Créditos, derivados y otros",
+      "values": [
+        31.722674
+      ],
+      "origen": "estado 39",
+      "glosa": "Créditos entidades deportivas - -"
+    },
+    {
+      "label": "Créditos comerciales - -",
+      "lado": "expense",
+      "page": 51,
+      "section": "Activos a valor razonable           Activos financieros a coste / con cambios en PyG                       amortizado / Créditos, derivados y otros",
+      "values": [
+        86.206409
+      ],
+      "origen": "estado 39",
+      "glosa": "Créditos comerciales - -"
+    },
+    {
+      "label": "Créditos no comerciales - -",
+      "lado": "expense",
+      "page": 51,
+      "section": "Activos a valor razonable           Activos financieros a coste / con cambios en PyG                       amortizado / Créditos, derivados y otros",
+      "values": [
+        13.003675
+      ],
+      "origen": "estado 39",
+      "glosa": "Créditos no comerciales - -"
+    },
+    {
+      "label": "Clubes adscritos a la LNFP",
+      "lado": "expense",
+      "page": 54,
+      "section": "corto plazo                                    largo plazo / coste nominal           coste amortizado         coste nominal        coste amortizado",
+      "values": [
+        12.668247
+      ],
+      "origen": "estado 44",
+      "glosa": "Clubes adscritos a la LNFP"
+    },
+    {
+      "label": "Clubes no adscritos a la LNFP",
+      "lado": "expense",
+      "page": 54,
+      "section": "corto plazo                                    largo plazo / coste nominal           coste amortizado         coste nominal        coste amortizado",
+      "values": [
+        41.012717
+      ],
+      "origen": "estado 44",
+      "glosa": "Clubes no adscritos a la LNFP"
+    }
+  ]
+}

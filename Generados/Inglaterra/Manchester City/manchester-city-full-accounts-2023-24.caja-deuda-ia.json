@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Inglaterra/Manchester City/manchester-city-full-accounts-2023-24.md",
+ "generado": "2026-10-02T00:17:56.685Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£000",
+ "caja": {
+  "lineas": [
+   723
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no muestra préstamos ni obligaciones bancarias como línea separada; podrían estar incluidos dentro de 'Trade and other payables' (notas 17 y 18), pero no se identifican en las páginas provistas. Los arrendamientos tampoco aparecen como línea propia."
+}

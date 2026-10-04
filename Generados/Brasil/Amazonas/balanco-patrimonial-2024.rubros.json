@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Brasil/Amazonas/balanco-patrimonial-2024.md",
+ "pdf": "Clubes/Brasil/Amazonas/balanco-patrimonial-2024.pdf",
+ "club": "amazonas",
+ "year": 2024,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T01:15:43.851Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 1
+ },
+ "warnings": [
+  "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": false,
+ "ladoConocido": 0,
+ "rubros": []
+}

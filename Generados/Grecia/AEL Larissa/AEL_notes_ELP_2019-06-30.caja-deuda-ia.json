@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.md",
+ "generado": "2026-10-03T20:33:16.825Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"δανεια\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   42
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no muestra líneas de δάνεια en el pasivo (L33 'Δάνεια και απαιτήσεις' es un activo). Hay gastos por intereses (L87), pero no hay deuda financiera explícita. Los importes están expresados en euros con decimales, sin una frase que indique la escala, por lo que se asume unidades."
+}

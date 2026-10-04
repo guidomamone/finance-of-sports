@@ -1,0 +1,51 @@
+{
+ "md": "Clubes/Brasil/Mirassol/2012-anexo-l.md",
+ "pdf": "Clubes/Brasil/Mirassol/2012-anexo-l.pdf",
+ "club": "mirassol",
+ "year": 2012,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:53:27.530Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": false,
+  "motivo": "no se pudo ubicar la columna del ejercicio"
+ },
+ "ladoConocido": 1,
+ "rubros": [
+  {
+   "label": "= Déficit Contábil Líquido antes da Contribuição Social",
+   "lado": null,
+   "page": 1,
+   "section": "## Demonstração de Superávit ou Déficit / MIRASSOL FUTEBOL CLUBE / CNPJ: 51.352.862/0001-14",
+   "values": [
+    "",
+    "276.545,68 D"
+   ],
+   "columns": [
+    "Descrição",
+    "",
+    "Valor"
+   ]
+  },
+  {
+   "label": "= Déficit Contábil Líquido antes do Imposto de Renda",
+   "lado": "expense",
+   "page": 1,
+   "section": "## Demonstração de Superávit ou Déficit / MIRASSOL FUTEBOL CLUBE / CNPJ: 51.352.862/0001-14",
+   "values": [
+    "",
+    "276.545,68 D"
+   ],
+   "columns": [
+    "Descrição",
+    "",
+    "Valor"
+   ]
+  }
+ ]
+}

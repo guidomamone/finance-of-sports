@@ -1,0 +1,213 @@
+{
+ "md": "Clubes/República Checa/Dukla Praha/SL61_2016.md",
+ "generatedAt": "2026-09-30T15:14:14.484Z",
+ "rubros": [
+  {
+   "label": "Dopravní prostředky",
+   "lado": null,
+   "page": 23,
+   "section": "# 3 DOPLŇUJÍCÍ ÚDAJE K ROZVAZE A VÝKAZU ZISKU A ZTRÁTY / # 3.1 Pohledávky za upsaný vlastní kapitál / # 3.2 Dlouhodobý majetek / # 3.2.1 Dlouhodobý nehmotný majetek / # 3.2.2 Dlouhodobý hmotný majetek",
+   "choice": "match_organisation_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1645
+  },
+  {
+   "label": "Stroje a zařízení",
+   "lado": "expense",
+   "page": 23,
+   "section": "Odpisy dlouhodobého hmotného majetku zaúčtované do nákladů",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 884
+  },
+  {
+   "label": "Jiný DHM – Umělecká díla a sbírky",
+   "lado": null,
+   "page": 23,
+   "section": "# 3 DOPLŇUJÍCÍ ÚDAJE K ROZVAZE A VÝKAZU ZISKU A ZTRÁTY / # 3.1 Pohledávky za upsaný vlastní kapitál / # 3.2 Dlouhodobý majetek / # 3.2.1 Dlouhodobý nehmotný majetek / # 3.2.2 Dlouhodobý hmotný majetek",
+   "choice": "depreciation",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "depreciation",
+     0.77
+    ],
+    [
+     "other_amortisation",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1649
+  },
+  {
+   "label": "Dopravní prostředky – osobní vozy",
+   "lado": "expense",
+   "page": 23,
+   "section": "Odpisy dlouhodobého hmotného majetku zaúčtované do nákladů",
+   "choice": "depreciation",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "depreciation",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "match_organisation_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1104
+  },
+  {
+   "label": "Běžné účetní období",
+   "lado": "expense",
+   "page": 27,
+   "section": "# 4 ZAMĚSTNANCI, VEDENÍ SPOLEČNOSTI A STATUTÁRNÍ ORGÁNY / # 4.1 Osobní náklady a počet zaměstnanců",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Dopravní prostředky - ostatní",
+   "lado": "expense",
+   "page": 23,
+   "section": "Odpisy dlouhodobého hmotného majetku zaúčtované do nákladů",
+   "choice": "depreciation",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "depreciation",
+     0.51
+    ],
+    [
+     "other_amortisation",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Samostatné movité věci",
+   "lado": "expense",
+   "page": 23,
+   "section": "Odpisy dlouhodobého hmotného majetku zaúčtované do nákladů",
+   "choice": "depreciation",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "depreciation",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Inventář",
+   "lado": "expense",
+   "page": 23,
+   "section": "Odpisy dlouhodobého hmotného majetku zaúčtované do nákladů",
+   "choice": "depreciation",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "depreciation",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Minulé účetní období",
+   "lado": "expense",
+   "page": 27,
+   "section": "# 4 ZAMĚSTNANCI, VEDENÍ SPOLEČNOSTI A STATUTÁRNÍ ORGÁNY / # 4.1 Osobní náklady a počet zaměstnanců",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "wages_squad",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 998
+  }
+ ]
+}

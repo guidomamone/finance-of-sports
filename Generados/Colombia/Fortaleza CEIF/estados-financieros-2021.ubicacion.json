@@ -1,0 +1,452 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2021.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-02T02:36:51.799Z",
+ "intentoNotasComoEstado": true,
+ "estadoDesdeNotas": true,
+ "bloques": {
+  "b1": {
+   "pagina": 8,
+   "lineas": [
+    293,
+    300
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 13,
+   "lineas": [
+    502,
+    507
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    513,
+    517
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    539,
+    546
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    550,
+    554
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    558,
+    573
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    591,
+    603
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    607,
+    614
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 16,
+   "lineas": [
+    644,
+    645
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    647,
+    649
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    653,
+    654
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    656,
+    658
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    665,
+    669
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    673,
+    678
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 17,
+   "lineas": [
+    688,
+    698
+   ],
+   "tipo": "texto"
+  },
+  "b16": {
+   "pagina": 17,
+   "lineas": [
+    702,
+    712
+   ],
+   "tipo": "texto"
+  },
+  "b17": {
+   "pagina": 18,
+   "lineas": [
+    746,
+    752
+   ],
+   "tipo": "texto"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    794,
+    798
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    804,
+    807
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 20,
+   "lineas": [
+    825,
+    835
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 20,
+   "lineas": [
+    841,
+    847
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    855,
+    859
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 21,
+   "lineas": [
+    873,
+    877
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 21,
+   "lineas": [
+    881,
+    883
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    891,
+    898
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 21,
+   "lineas": [
+    902,
+    905
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 21,
+   "lineas": [
+    909,
+    913
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 22,
+   "lineas": [
+    929,
+    960
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 22,
+   "lineas": [
+    964,
+    970
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 23,
+   "lineas": [
+    988,
+    996
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 23,
+   "lineas": [
+    1000,
+    1004
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 23,
+   "lineas": [
+    1010,
+    1016
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 24,
+   "lineas": [
+    1048,
+    1056
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 24,
+   "lineas": [
+    1062,
+    1066
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 25,
+   "lineas": [
+    1084,
+    1093
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 25,
+   "lineas": [
+    1101,
+    1107
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 25,
+   "lineas": [
+    1115,
+    1121
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 26,
+   "lineas": [
+    1137,
+    1151
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 26,
+   "lineas": [
+    1163,
+    1167
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 27,
+   "lineas": [
+    1185,
+    1227
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 28,
+   "lineas": [
+    1241,
+    1260
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 28,
+   "lineas": [
+    1266,
+    1286
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 29,
+   "lineas": [
+    1300,
+    1346
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 30,
+   "lineas": [
+    1360,
+    1380
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 30,
+   "lineas": [
+    1386,
+    1393
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 31,
+   "lineas": [
+    1415,
+    1422
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 31,
+   "lineas": [
+    1432,
+    1442
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 31,
+   "lineas": [
+    1448,
+    1451
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 32,
+   "lineas": [
+    1465,
+    1472
+   ],
+   "tipo": "tabla"
+  },
+  "b50": {
+   "pagina": 32,
+   "lineas": [
+    1480,
+    1482
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b37",
+  "b39",
+  "b40",
+  "b41",
+  "b42",
+  "b43",
+  "b44",
+  "b45",
+  "b46",
+  "b48",
+  "b49",
+  "b15",
+  "b16"
+ ],
+ "notas_ingresos": [
+  "b38"
+ ],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "Expresados en miles de pesos colombianos",
+ "moneda": "COP",
+ "columna_ejercicio": "2.021",
+ "columna_anterior": "2.020",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se toma la 'Perdida contable antes de impuesto' de la conciliación fiscal (b15) como resultado antes de impuestos del ejercicio 2021?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Perdida contable antes de impuesto",
+   "texto": "El documento no trae estado de resultados; el único resultado impreso parece ser el de la conciliación contable-fiscal (b15), transcrita como texto.",
+   "bloques": [
+    "b15",
+    "b16"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento no incluye el estado de resultados, solo notas. Se reconstruye con: ingresos ordinarios (b37, nota 18), costo de ventas (b39), gastos de ventas (b40-b41), gastos de administración (b42-b44), otros gastos (b45), otros ingresos (b46) y costos financieros (b48-b49). El resultado antes de impuesto sale de la conciliación fiscal (b15-b16) y el impuesto de b13. b38 desglosa los patrocinios y otros ingresos de la nota 18. Los detalles por tercero (b47) se excluyen. Estados individuales de Fortaleza Fútbol Club S.A."
+}

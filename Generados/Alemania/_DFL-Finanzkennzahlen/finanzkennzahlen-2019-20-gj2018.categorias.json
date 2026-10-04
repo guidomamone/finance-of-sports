@@ -1,0 +1,60 @@
+{
+ "md": "Clubes/Alemania/_DFL-Finanzkennzahlen/finanzkennzahlen-2019-20-gj2018.md",
+ "club": "dfl-finanzkennzahlen",
+ "year": 2020,
+ "generatedAt": "2026-09-30T15:14:58.060Z",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.009272,
+ "rubros": [
+  {
+   "label": "2. Personalaufwand",
+   "lado": "expense",
+   "section": "FC / 1. FC Union / Letzter Abschluss (Geschäftsjahr entspricht der Saison 2017-18 oder dem Kalenderjahr 2018) / 10. (Konzern)jahresüberschuss/(Konzern)jahresfehlbetrag / Gewinn- und Verlustrechnung Hertha BSC . ” SC Freiburg . 1.FCKöln RBLeipzig . . .",
+   "page": 1,
+   "pendiente": true,
+   "jev": "wages_squad",
+   "jevConf": 0.74,
+   "escalon": 2,
+   "categoria": "wages_squad",
+   "confianza": 0.8,
+   "motivo": "Personalaufwand total sin desglose; otros clubes alemanes lo mapean a wages_squad"
+  },
+  {
+   "label": "3. Abschreibungen -13.155 -9.427 -4.604 -13.543 -90.556 -1.215 -14.666 -12.917 -19.886 -20.297 -57.468 -48.588 -13.371 -38.381 -90.090 -355",
+   "lado": null,
+   "section": "FC / 1. FC Union / Letzter Abschluss (Geschäftsjahr entspricht der Saison 2017-18 oder dem Kalenderjahr 2018) / 10. (Konzern)jahresüberschuss/(Konzern)jahresfehlbetrag / Gewinn- und Verlustrechnung Hertha BSC . ” SC Freiburg . 1.FCKöln RBLeipzig . . .",
+   "page": 1,
+   "pendiente": true,
+   "jev": "depreciation",
+   "jevConf": 0.38,
+   "escalon": 2,
+   "categoria": "player_amortisation",
+   "confianza": 0.45,
+   "motivo": "Abschreibungen agregadas sin desglose; en Bundesliga dominan las de derechos de jugadores, ambiguo con depreciation"
+  },
+  {
+   "label": "4. Sonstige betriebliche Aufwendungen",
+   "lado": "expense",
+   "section": "FC / 1. FC Union / Letzter Abschluss (Geschäftsjahr entspricht der Saison 2017-18 oder dem Kalenderjahr 2018) / 10. (Konzern)jahresüberschuss/(Konzern)jahresfehlbetrag / Gewinn- und Verlustrechnung Hertha BSC . ” SC Freiburg . 1.FCKöln RBLeipzig . . .",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_expenses",
+   "escalon": 1,
+   "jevConf": 1,
+   "categoria": "other_expenses",
+   "confianza": 1
+  },
+  {
+   "label": "Auf andere Gesellschafter entfallender Gewinn/Verlust -3 [6) -24 [6) [6] [6) [6] [6) -386 [6] [6) -17.988 [6] [6) [6] [6) -514",
+   "lado": "revenue",
+   "section": "8. Ergebnis nach Steuern / Aufgrund von Unternehmensverträgen abgeführte Gewinne -247",
+   "page": 1,
+   "pendiente": false,
+   "ya": "other_income",
+   "escalon": 1,
+   "jevConf": 0.97,
+   "categoria": "other_income",
+   "confianza": 0.97
+  }
+ ]
+}

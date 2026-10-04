@@ -1,0 +1,72 @@
+{
+ "md": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarcijfers-2024-2025.md",
+ "pdf": "Clubes/Países Bajos/Excelsior/Excelsior-Jaarcijfers-2024-2025.pdf",
+ "club": "excelsior",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:07:22.298Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 5,
+  "notasUsadas": []
+ },
+ "ladoConocido": 2,
+ "rubros": [
+  {
+   "label": "lonen en salarissen",
+   "lado": null,
+   "page": 9,
+   "section": "## 2.2 Geconsolideerde winst-en-verliesrekening over 2024/2025",
+   "values": [
+    5.19627
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "sociale lasten",
+   "lado": "expense",
+   "page": 9,
+   "section": "## 2.2 Geconsolideerde winst-en-verliesrekening over 2024/2025",
+   "values": [
+    0.752809
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "pensioenen",
+   "lado": null,
+   "page": 9,
+   "section": "## 2.2 Geconsolideerde winst-en-verliesrekening over 2024/2025",
+   "values": [
+    0.058157
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "afschrijving vaste activa",
+   "lado": null,
+   "page": 9,
+   "section": "## 2.2 Geconsolideerde winst-en-verliesrekening over 2024/2025",
+   "values": [
+    0.397665
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "overige bedrijfskosten",
+   "lado": "expense",
+   "page": 9,
+   "section": "## 2.2 Geconsolideerde winst-en-verliesrekening over 2024/2025",
+   "values": [
+    4.169888
+   ],
+   "origen": "estado 4"
+  }
+ ]
+}

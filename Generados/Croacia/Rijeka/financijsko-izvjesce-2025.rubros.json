@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.md",
+ "pdf": "Clubes/Croacia/Rijeka/financijsko-izvjesce-2025.pdf",
+ "club": "rijeka-hr",
+ "year": 2025,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T21:59:46.218Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "Prihodi od prodaje",
+   "lado": "revenue",
+   "page": 10,
+   "section": "HNK Rijeka s.d.d. / Račun dobiti i gubitka / za godinu koja je završila 31. prosinca 2025. / 2025. 2024. / Bilješka 000'EUR 000'EUR",
+   "values": [
+    16.565
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Ostali poslovni prihodi",
+   "lado": "revenue",
+   "page": 10,
+   "section": "HNK Rijeka s.d.d. / Račun dobiti i gubitka / za godinu koja je završila 31. prosinca 2025. / 2025. 2024. / Bilješka 000'EUR 000'EUR",
+   "values": [
+    9.752
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Materijalni troškovi",
+   "lado": "expense",
+   "page": 10,
+   "section": "HNK Rijeka s.d.d. / Račun dobiti i gubitka / za godinu koja je završila 31. prosinca 2025. / 2025. 2024. / Bilješka 000'EUR 000'EUR",
+   "values": [
+    -17.208
+   ],
+   "origen": "estado 2"
+  }
+ ]
+}

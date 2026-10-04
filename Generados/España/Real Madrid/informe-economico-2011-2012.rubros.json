@@ -1,0 +1,389 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2011-2012.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2011-2012.pdf",
+  "club": "realmadrid",
+  "year": 2012,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:00:52.868Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 22
+  },
+  "warnings": [
+    "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "18 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "9 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 33,
+    "notasUsadas": []
+  },
+  "ladoConocido": 14,
+  "rubros": [
+    {
+      "label": "Deudores y otras cuentas a cobrar",
+      "lado": null,
+      "page": 10,
+      "section": "",
+      "values": [
+        4.249
+      ],
+      "origen": "estado 14",
+      "glosa": "Deudores y otras cuentas a cobrar"
+    },
+    {
+      "label": "Otros activos corrientes",
+      "lado": null,
+      "page": 10,
+      "section": "",
+      "values": [
+        -38.668
+      ],
+      "origen": "estado 14",
+      "glosa": "Otros activos corrientes"
+    },
+    {
+      "label": "Acreedores y otras cuentas a pagar",
+      "lado": null,
+      "page": 10,
+      "section": "",
+      "values": [
+        21.764
+      ],
+      "origen": "estado 14",
+      "glosa": "Acreedores y otras cuentas a pagar"
+    },
+    {
+      "label": "Otros pasivos corrientes",
+      "lado": null,
+      "page": 10,
+      "section": "",
+      "values": [
+        -3.242
+      ],
+      "origen": "estado 14",
+      "glosa": "Otros pasivos corrientes"
+    },
+    {
+      "label": "Otros activos y pasivos no corrientes",
+      "lado": null,
+      "page": 10,
+      "section": "",
+      "values": [
+        37.488
+      ],
+      "origen": "estado 14",
+      "glosa": "Otros activos y pasivos no corrientes"
+    },
+    {
+      "label": "b. Estado total de cambios en el patrimonio neto consolidado correspondiente al ejer- Otros flujos de efectivo de las actividades de explotación",
+      "lado": null,
+      "page": 10,
+      "section": "",
+      "values": [
+        -36.404
+      ],
+      "origen": "estado 14",
+      "glosa": "b. Estado total de cambios en el patrimonio neto consolidado correspondiente al ejer- Otros flujos de efectivo de las actividades de explotación"
+    },
+    {
+      "label": "cicio anual terminado el 30 de junio de 2012 y al ejercicio anual terminado el 30 de Pagos de intereses",
+      "lado": null,
+      "page": 10,
+      "section": "",
+      "values": [
+        -11.353
+      ],
+      "origen": "estado 14",
+      "glosa": "cicio anual terminado el 30 de junio de 2012 y al ejercicio anual terminado el 30 de Pagos de intereses"
+    },
+    {
+      "label": "junio de 2011. Cobros de intereses",
+      "lado": null,
+      "page": 10,
+      "section": "",
+      "values": [
+        3.257
+      ],
+      "origen": "estado 14",
+      "glosa": "junio de 2011. Cobros de intereses"
+    },
+    {
+      "label": "FLUJOS DE EFECTIVO DE LAS ACTIVIDADES DE EXPLOTACIÓN",
+      "lado": null,
+      "page": 10,
+      "section": "",
+      "values": [
+        125.984
+      ],
+      "origen": "estado 14",
+      "glosa": "FLUJOS DE EFECTIVO DE LAS ACTIVIDADES DE EXPLOTACIÓN"
+    },
+    {
+      "label": "Aprovisionamientos (3.062) (411)",
+      "lado": "revenue",
+      "page": 40,
+      "section": "",
+      "values": [
+        -19.123
+      ],
+      "origen": "estado 68",
+      "glosa": "Aprovisionamientos (3.062) (411)"
+    },
+    {
+      "label": "Gastos de Personal Deportivo y no Deportivo",
+      "lado": "revenue",
+      "page": 40,
+      "section": "",
+      "values": [
+        -205.216
+      ],
+      "origen": "estado 68",
+      "glosa": "Gastos de Personal Deportivo y no Deportivo"
+    },
+    {
+      "label": "Gastos de Operaciones",
+      "lado": "expense",
+      "page": 40,
+      "section": "",
+      "values": [
+        -49.26
+      ],
+      "origen": "estado 68",
+      "glosa": "Gastos de Operaciones"
+    },
+    {
+      "label": "Provisión de Insolvencia y de Riesgos y Gastos 738 -",
+      "lado": "expense",
+      "page": 40,
+      "section": "",
+      "values": [
+        -10.606
+      ],
+      "origen": "estado 68",
+      "glosa": "Provisión de Insolvencia y de Riesgos y Gastos 738 -"
+    },
+    {
+      "label": "Provisiones a corto plazo 13.2 720",
+      "lado": null,
+      "page": 9,
+      "section": "Pasivos por impuesto diferido                                  16      10.996     19.505 / Periodificaciones a largo plazo                                15      40.917        - / Deterioro, resultado por enajenaciones del inmovilizado y otros excepcionales",
+      "values": [
+        20.147
+      ],
+      "origen": "estado 9",
+      "glosa": "Provisiones a corto plazo 13.2 720"
+    },
+    {
+      "label": "Existencias",
+      "lado": null,
+      "page": 9,
+      "section": "Pasivos por impuesto diferido                                  16      10.996     19.505 / Periodificaciones a largo plazo                                15      40.917        - / Deterioro, resultado por enajenaciones del inmovilizado y otros excepcionales",
+      "values": [
+        1.1
+      ],
+      "origen": "estado 9",
+      "glosa": "Existencias"
+    },
+    {
+      "label": "Deudores comerciales y otras",
+      "lado": null,
+      "page": 9,
+      "section": "Pasivos por impuesto diferido                                  16      10.996     19.505 / Periodificaciones a largo plazo                                15      40.917        - / Deterioro, resultado por enajenaciones del inmovilizado y otros excepcionales",
+      "values": [
+        0.082
+      ],
+      "origen": "estado 9",
+      "glosa": "Deudores comerciales y otras"
+    },
+    {
+      "label": "87.950 98.332 Deudas con entidades de crédito",
+      "lado": null,
+      "page": 9,
+      "section": "Pasivos por impuesto diferido                                  16      10.996     19.505 / Periodificaciones a largo plazo                                15      40.917        - / Deterioro, resultado por enajenaciones del inmovilizado y otros excepcionales",
+      "values": [
+        42.562
+      ],
+      "origen": "estado 9",
+      "glosa": "87.950 98.332 Deudas con entidades de crédito"
+    },
+    {
+      "label": "Cobros y pagos por instrumentos de pasivo financiero",
+      "lado": null,
+      "page": 10,
+      "section": "Distribución de resultados del / ejercicio anterior",
+      "values": [
+        -3.35
+      ],
+      "origen": "estado 16",
+      "glosa": "Cobros y pagos por instrumentos de pasivo financiero"
+    },
+    {
+      "label": "Saldo al 30 de junio de 2011 205.036 8.548 370 31.523 245.477 5.429",
+      "lado": null,
+      "page": 10,
+      "section": "Distribución de resultados del / ejercicio anterior",
+      "values": [
+        251.107
+      ],
+      "origen": "estado 16",
+      "glosa": "Saldo al 30 de junio de 2011 205.036 8.548 370 31.523 245.477 5.429"
+    },
+    {
+      "label": "Devolución y amortización de deudas con entidades de crédito",
+      "lado": null,
+      "page": 10,
+      "section": "Distribución de resultados del / ejercicio anterior",
+      "values": [
+        -3.35
+      ],
+      "origen": "estado 16",
+      "glosa": "Devolución y amortización de deudas con entidades de crédito"
+    },
+    {
+      "label": "correspondientes al ejercicio anual - - - 24.166 24.166 (144)",
+      "lado": null,
+      "page": 10,
+      "section": "Distribución de resultados del / ejercicio anterior",
+      "values": [
+        24.068
+      ],
+      "origen": "estado 16",
+      "glosa": "correspondientes al ejercicio anual - - - 24.166 24.166 (144)"
+    },
+    {
+      "label": "correspondientes al ejercicio anual - - - 31.523 31.523 (144) 40 31.419 Inmovilizado inmaterial deportivo",
+      "lado": null,
+      "page": 10,
+      "section": "Resultado                     Subvenciones, / dominante                       recibidos",
+      "values": [
+        25.86
+      ],
+      "origen": "estado 15",
+      "glosa": "correspondientes al ejercicio anual - - - 31.523 31.523 (144) 40 31.419 Inmovilizado inmaterial deportivo"
+    },
+    {
+      "label": "terminado el 30/06/2011 FLUJOS DE EFECTIVO DE LAS ACTIVIDADES DE INVERSIÓN",
+      "lado": null,
+      "page": 10,
+      "section": "Resultado                     Subvenciones, / dominante                       recibidos",
+      "values": [
+        -107.166
+      ],
+      "origen": "estado 15",
+      "glosa": "terminado el 30/06/2011 FLUJOS DE EFECTIVO DE LAS ACTIVIDADES DE INVERSIÓN"
+    },
+    {
+      "label": "Ingresos de Socios y estadio 130.829 2.653 16.900 150.382 Ingresos Financieros",
+      "lado": "revenue",
+      "page": 40,
+      "section": "22. CUENTA DE PÉRDIDAS Y GANANCIAS POR SECCIONES ANALÍTICAS",
+      "values": [
+        0.004554
+      ],
+      "origen": "estado 67",
+      "glosa": "Ingresos de Socios y estadio 130.829 2.653 16.900 150.382 Ingresos Financieros"
+    },
+    {
+      "label": "Ing. de Amistosos y Competiciones Internacionales 39.949 100 - 40.049 Gastos Financieros",
+      "lado": "expense",
+      "page": 40,
+      "section": "22. CUENTA DE PÉRDIDAS Y GANANCIAS POR SECCIONES ANALÍTICAS",
+      "values": [
+        -0.012964
+      ],
+      "origen": "estado 67",
+      "glosa": "Ing. de Amistosos y Competiciones Internacionales 39.949 100 - 40.049 Gastos Financieros"
+    },
+    {
+      "label": "Ingresos de Retransmisión 157.526 1.666 -",
+      "lado": "revenue",
+      "page": 40,
+      "section": "22. CUENTA DE PÉRDIDAS Y GANANCIAS POR SECCIONES ANALÍTICAS",
+      "values": [
+        0.159192
+      ],
+      "origen": "estado 67",
+      "glosa": "Ingresos de Retransmisión 157.526 1.666 -"
+    },
+    {
+      "label": "Arrendamientos de activos (nota 6.3)",
+      "lado": "expense",
+      "page": 34,
+      "section": "modificaciones en las retribuciones brutas de algunos jugadores derivadas fundamen- / 17.4 Otros gastos de gestión corriente / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / Miles de euros / 30/06/2012                     30/06/2011",
+      "values": [
+        2.515
+      ],
+      "origen": "estado 51",
+      "glosa": "Arrendamientos de activos (nota 6.3)"
+    },
+    {
+      "label": "Reparaciones y conservación",
+      "lado": "expense",
+      "page": 34,
+      "section": "modificaciones en las retribuciones brutas de algunos jugadores derivadas fundamen- / 17.4 Otros gastos de gestión corriente / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / Miles de euros / 30/06/2012                     30/06/2011",
+      "values": [
+        14.707
+      ],
+      "origen": "estado 51",
+      "glosa": "Reparaciones y conservación"
+    },
+    {
+      "label": "Primas de seguro",
+      "lado": "expense",
+      "page": 34,
+      "section": "modificaciones en las retribuciones brutas de algunos jugadores derivadas fundamen- / 17.4 Otros gastos de gestión corriente / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / Miles de euros / 30/06/2012                     30/06/2011",
+      "values": [
+        3.673
+      ],
+      "origen": "estado 51",
+      "glosa": "Primas de seguro"
+    },
+    {
+      "label": "Publicidad, propaganda y relaciones públicas",
+      "lado": "expense",
+      "page": 34,
+      "section": "modificaciones en las retribuciones brutas de algunos jugadores derivadas fundamen- / 17.4 Otros gastos de gestión corriente / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / Miles de euros / 30/06/2012                     30/06/2011",
+      "values": [
+        1.461
+      ],
+      "origen": "estado 51",
+      "glosa": "Publicidad, propaganda y relaciones públicas"
+    },
+    {
+      "label": "este acuerdo será considerado un contrato de licencia por la cesión del derecho de Deudas a corto plazo",
+      "lado": "revenue",
+      "page": 26,
+      "section": "8. Con fecha 17 de febrero de 2012, el club, Real Madrid Gestión de Derechos SL / Débitos y partidas a pagar / mah, cediéndose el derecho de uso del nombre y logo del club durante 22 años hasta / el ejercicio 2034 y a cambio de un importe sustancial de ingresos para el club y So- / 138.926                  79.663                   218.589",
+      "values": [
+        6.836
+      ],
+      "origen": "estado 38",
+      "glosa": "este acuerdo será considerado un contrato de licencia por la cesión del derecho de Deudas a corto plazo"
+    },
+    {
+      "label": "explotación comercial de su nombre y logo. Conforme al contrato, en la fase de pro- Acreedores comerciales y otras cuentas a pagar (*) -",
+      "lado": "revenue",
+      "page": 26,
+      "section": "8. Con fecha 17 de febrero de 2012, el club, Real Madrid Gestión de Derechos SL / Débitos y partidas a pagar / mah, cediéndose el derecho de uso del nombre y logo del club durante 22 años hasta / el ejercicio 2034 y a cambio de un importe sustancial de ingresos para el club y So- / 138.926                  79.663                   218.589",
+      "values": [
+        138.568
+      ],
+      "origen": "estado 38",
+      "glosa": "explotación comercial de su nombre y logo. Conforme al contrato, en la fase de pro- Acreedores comerciales y otras cuentas a pagar (*) -"
+    },
+    {
+      "label": "moción del proyecto, se recibiría un importe que estaría devengado este ejercicio, si",
+      "lado": "revenue",
+      "page": 26,
+      "section": "8. Con fecha 17 de febrero de 2012, el club, Real Madrid Gestión de Derechos SL / Débitos y partidas a pagar / mah, cediéndose el derecho de uso del nombre y logo del club durante 22 años hasta / el ejercicio 2034 y a cambio de un importe sustancial de ingresos para el club y So- / 138.926                  79.663                   218.589",
+      "values": [
+        6.836
+      ],
+      "origen": "estado 38",
+      "glosa": "moción del proyecto, se recibiría un importe que estaría devengado este ejercicio, si"
+    }
+  ]
+}

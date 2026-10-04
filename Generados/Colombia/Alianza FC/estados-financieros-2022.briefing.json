@@ -1,0 +1,1531 @@
+{
+  "club": "alianza-fc",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Alianza FC/estados-financieros-2022.md",
+  "generatedAt": "2026-09-30T21:57:49.260Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 216,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 19,
+  "relevantTableCount": 3,
+  "tables": [
+    {
+      "page": 4,
+      "section": "ACTIVO / EFECTIVO Y EQUIVALENTES DE EFECTIVO",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caja",
+          "values": [
+            "1.802.864",
+            "750.792"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos",
+          "values": [
+            "60.063.433",
+            "180.227.170"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remesas en transito moneda nacional",
+          "values": [
+            "0",
+            "211.344.285"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fiducia",
+          "values": [
+            "0",
+            "498.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL EFECTIVO Y EQUIVALENTES DE EFECTIVO",
+          "values": [
+            "61.866.297",
+            "392.820.247"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "CUENTAS COMERCIALES POR COBRAR Y OTRAS CUENTAS POR COBRAR",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Clientes",
+          "values": [
+            "2.128.955.931",
+            "2.883.856.592"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar a socios",
+          "values": [
+            "482.875.000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipos y avances",
+          "values": [
+            "1.131.427.700",
+            "279.811.756"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ant de impuesto y contribuciones",
+          "values": [
+            "385.253.498",
+            "433.609.671"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar a trabajadores",
+          "values": [
+            "0",
+            "79.989.301"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prestamos a particulares",
+          "values": [
+            "0",
+            "48.135.925"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL CUENTAS POR COBRAR Y OTRAS CUENTAS POR COBRAR",
+          "values": [
+            "4.128.512.129",
+            "3.725.403.245"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": null,
+      "columns": [
+        "C.C/Nit",
+        "Nombre Tercero",
+        "Saldo"
+      ],
+      "rows": [
+        {
+          "rawLabel": "890201900",
+          "values": [
+            "ALCALDIA DE BARRANCABERMEJA",
+            "$ 562.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "901192655",
+          "values": [
+            "ALIADOS COMERCIALES SAS",
+            "$ 41.500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "890305773",
+          "values": [
+            "AMERICA DE CALI SA",
+            "$ 494.962.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "890301160",
+          "values": [
+            "ASOCIACION DEPORTIVO CALI",
+            "$ 605.151.035"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "814000557",
+          "values": [
+            "ASOCIACION DEPORTIVO PASTO",
+            "$ 330.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "890700863",
+          "values": [
+            "CLUB DEPORTES TOLIMA SA",
+            "$ 806.400.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "800118562",
+          "values": [
+            "CLUB DEPORTIVO ATLETICO HUILA SA",
+            "$ 17.800.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "860007410",
+          "values": [
+            "DIMAYOR",
+            "$ 287.016.351"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "890201230",
+          "values": [
+            "ESSA ELECTRIFICADORA DE SANTANDER",
+            "$ 64.506.300"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "91439386",
+          "values": [
+            "EUGENIO MURILLO GALVIS",
+            "$ 21.500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "900906314",
+          "values": [
+            "GLOBAL SPORT GS SAS",
+            "$ 114.999.875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "860009807",
+          "values": [
+            "INDEPENDIENTE SANTA FE",
+            "$ 69.520.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4,71658E+12",
+          "values": [
+            "SAS RACING CLUB DE LENS",
+            "$ 16.358.024"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1047395835",
+          "values": [
+            "WILFRIDO JOSE LOPEZ PEDROZO",
+            "$ 13.580.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(total)",
+            "$ 2.883.856.592"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "OTROS ACTIVOS",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Impuesto Diferido",
+          "values": [
+            "36.746.063",
+            "36.746.063"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL OTROS ACTIVOS",
+          "values": [
+            "36.746.063",
+            "36.746.063"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "ACTIVOS DE INVERSION",
+      "columns": [
+        "Concepto",
+        "Diciembre /21",
+        "Diciembre /22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "23.160.000",
+            "23.160.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVOS DE INVERSION",
+          "values": [
+            "23.160.000",
+            "23.160.000"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "PROPIEDAD, PLANTA Y EQUIPOS",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Construcciones y Edificaciones",
+          "values": [
+            "1.501.150.035",
+            "1.501.150.036"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria y Equipo",
+          "values": [
+            "38.731.228",
+            "38.731.228"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipos de oficinia",
+          "values": [
+            "39.748.917",
+            "59.026.228"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de computacion y comunica",
+          "values": [
+            "4.530.400",
+            "20.629.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flota y Equipo de Transporte",
+          "values": [
+            "390.000.000",
+            "390.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación acumulada",
+          "values": [
+            "-196.581.809",
+            "-360.700.025"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PROPIEDAD PLANTA Y EQ.",
+          "values": [
+            "1.777.578.771",
+            "1.648.836.867"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "✓ Nuevo elemento de equipo de equipo de oficina / ✓ Nuevo elemento de equipo de computación y comunicación",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Derechos Afiliacion Dimayor",
+          "values": [
+            "3.200.547.500",
+            "3.200.547.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos Deportivos",
+          "values": [
+            "1.272.564.103",
+            "1.618.743.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizacion Intangibles",
+          "values": [
+            "-788.550.102",
+            "-933.485.780"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVOS INTANGIBLES Y PLUSVALIA",
+          "values": [
+            "3.684.561.501",
+            "3.885.805.220"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": null,
+      "columns": [
+        "C.C/Nit",
+        "Nombre Tercero",
+        "Saldo"
+      ],
+      "rows": [
+        {
+          "rawLabel": "5824718",
+          "values": [
+            "CLUB DEPORTIVO FAS",
+            "$ 458.743.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "900124662",
+          "values": [
+            "CLUB DEPORTIVO REAL SANTANDER SA",
+            "$ 720.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "900964178",
+          "values": [
+            "FORTALEZA FUTBOL CLUB S.A",
+            "$ 200.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1140841737",
+          "values": [
+            "JOSE LUIS CHUNGA SILVA",
+            "$ 100.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1069730884",
+          "values": [
+            "LEONARDO SALDAÑOA",
+            "$ 100.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "824006447",
+          "values": [
+            "VALLEDUPAR FUTBOL CLUB SA",
+            "$ 40.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "TOTAL",
+            "$ 1.618.743.500"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": "VALORIZACIONES",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "valorización Propiedad, planta y Equipos",
+          "values": [
+            "5.466.580.000",
+            "5.466.580.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Valorizaciones",
+          "values": [
+            "5.466.580.000",
+            "5.466.580.000"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": "PASIVO / PASIVO / CUENTAS COMERCIALES POR PAGAR Y OTRAS CUENTAS POR PAGAR",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Obligaciones Financieras",
+          "values": [
+            "575.124.214",
+            "77.141.336"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compañias de Financiamiento Comercial",
+          "values": [
+            "22.131.700",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salarios por pagar",
+          "values": [
+            "181.685.054",
+            "206.769.050"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costos y gastos por pagar",
+          "values": [
+            "1.712.152.859",
+            "1.842.548.480"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retenciones y aportes de nómina",
+          "values": [
+            "89.906.982",
+            "71.892.055"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retención en la fuente",
+          "values": [
+            "197.712.237",
+            "119.075.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prestamos Dimayor",
+          "values": [
+            "589.365.576",
+            "250.264.822"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL CUENTAS COMERC. POR PAGAR Y OTRAS CTAS POR PAGAR",
+          "values": [
+            "3.368.078.622",
+            "2.567.690.743"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": "PASIVOS POR IMPUESTOS CORRIENTES",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Impuesto a las ventas por pagar",
+          "values": [
+            "76.663.001",
+            "129.114.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retencion impuestos de Ind y Comercio",
+          "values": [
+            "1.107.935",
+            "391.003"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASIVOS POR IMPUESTOS CORRIENTES",
+          "values": [
+            "77.770.936",
+            "129.505.003"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": "PASIVO A MEDIANO Y LARGO PLAZO / OBLIGACIONES LABORALES Y DE SEGURIDAD SOCIAL",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Para obligaciones Laborales",
+          "values": [
+            "166.094.307",
+            "167.904.162"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Para obligaciones Fiscales",
+          "values": [
+            "(en blanco en el original)",
+            "290.933.224"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL OBLIGACIONES LABORALES Y DE SEG SOCIAL",
+          "values": [
+            "166.094.307",
+            "458.837.386"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": "CUENTAS COMERCIALES POR PAGAR Y OTRAS CUENTAS POR PAGAR A LARGO PLAZO",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Deudas con accionistas y socios",
+          "values": [
+            "2.392.080.000",
+            "2.594.580.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": "OTROS PASIVOS",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anticipos y avances",
+          "values": [
+            "86.141.145",
+            "89.652.214"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos Recibidos para Terceros",
+          "values": [
+            "325.552.015",
+            "35.494.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL OTROS PASIVOS",
+          "values": [
+            "411.693.160",
+            "125.146.214"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": "PASIVOS POR IMPUESTO DIFERIDO",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Impuesto Diferido",
+          "values": [
+            "695.286.500",
+            "695.286.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASIVOM POR IMPUESTO DIFERIDO",
+          "values": [
+            "695.286.500",
+            "695.286.500"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": "PATRIMONIO",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capital suscrito y pagado",
+          "values": [
+            "7.285.425.000",
+            "7.285.425.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reserva Legal",
+          "values": [
+            "0",
+            "54.030.456"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima en colocación de acciones",
+          "values": [
+            "361.440.000",
+            "361.440.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Donaciones",
+          "values": [
+            "481.642.481",
+            "481.642.481"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superavit utilidad vigencias anteriores",
+          "values": [
+            "3.186.966",
+            "3.186.966"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima por conversión Corporación",
+          "values": [
+            "58.950.000",
+            "58.950.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado del Ejercicio del Ejercicio NIIF",
+          "values": [
+            "-392.931.643",
+            "486.274.104"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Perdidas acumuladas PCGA locales",
+          "values": [
+            "-2.158.987.924",
+            "-2.158.987.924"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultados Acumulados bajo NIIf",
+          "values": [
+            "-3.037.123.644",
+            "-3.430.055.287"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superavit por Revaluación, prop. Planta y Eq",
+          "values": [
+            "5.466.580.000",
+            "5.466.580.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PATRIMONIO",
+          "values": [
+            "8.068.181.236",
+            "8.608.485.795"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 10,
+      "section": "POLÍTICAS CUENTAS DE INGRESO",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "OPERACIONALES",
+          "values": [
+            "11.818.751.940",
+            "13.070.575.623"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Taquilla",
+          "values": [
+            "740.400.250",
+            "860.670.961"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Escuelas de Formacion Deportiva",
+          "values": [
+            "6.926.500",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidad",
+          "values": [
+            "1.276.124.790",
+            "1.216.908.882"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dimayor",
+          "values": [
+            "5.184.369.715",
+            "5.927.265.397"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta Derechos Deportivos",
+          "values": [
+            "3.422.021.332",
+            "2.881.756.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prestamos Derechos Deportivos",
+          "values": [
+            "350.000.000",
+            "599.750.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Federacion Colombiana de Futbol",
+          "values": [
+            "630.780.000",
+            "458.100.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta articulos deportivos",
+          "values": [
+            "24.075.686",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Donaciones",
+          "values": [
+            "0",
+            "10.130.819"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Actividades Conexas",
+          "values": [
+            "163.859.667",
+            "1.108.793.064"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Convenios",
+          "values": [
+            "0",
+            "7.200.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Subsidio PAEF",
+          "values": [
+            "20.194.000",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NO OPERACIONALES",
+          "values": [
+            "113.668.381",
+            "997.258.453"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Arrendamiento",
+          "values": [
+            "12.890.757",
+            "103.714.326"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recuperaciones",
+          "values": [
+            "99.520.401",
+            "89.850.791"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financieros",
+          "values": [
+            "28.413",
+            "608.949"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indemnizaciones",
+          "values": [
+            "0",
+            "48.565.516"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos por Diferencia en Cambio",
+          "values": [
+            "1.172.914",
+            "(en blanco en el original)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "55.896",
+            "754.518.871"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 10,
+      "section": "GASTOS",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "GASTOS OPERACIONALES",
+          "values": [
+            "6.221.677.842",
+            "8.062.173.727"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gastos de personal",
+          "values": [
+            "1.955.181.596",
+            "1.971.328.811"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Honorarios",
+          "values": [
+            "536.589.491",
+            "406.040.513"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 11,
+      "section": "(continuación de la tabla de GASTOS de la página 10, sección GASTOS OPERACIONALES)",
+      "columns": [
+        "Concepto",
+        "dic-21",
+        "dic-22"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Impuestos",
+          "values": [
+            "216.874.540",
+            "249.359.698"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrendamientos",
+          "values": [
+            "84.680.146",
+            "76.180.062"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguros",
+          "values": [
+            "38.538.546",
+            "46.483.333"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "258.838.403",
+            "356.543.417"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Legales",
+          "values": [
+            "2.251.600",
+            "4.635.937"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mantenimiento y reparaciones",
+          "values": [
+            "2.944.271",
+            "278.233.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de viaje",
+          "values": [
+            "523.147.237",
+            "484.004.173"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "2.486.205.216",
+            "4.025.246.566"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciaciones",
+          "values": [
+            "116.426.796",
+            "164.118.217"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OPERACIONALES DE VENTA",
+          "values": [
+            "5.044.808.512",
+            "4.509.602.501"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gastos de personal",
+          "values": [
+            "4.678.239.116",
+            "4.093.069.387"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derecho Deportivo",
+          "values": [
+            "0",
+            "7.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizacion de Derechos Deportivos",
+          "values": [
+            "366.569.396",
+            "409.533.114"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS NO OPERACIONALES",
+          "values": [
+            "1.058.865.610",
+            "664.820.064"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Financieros",
+          "values": [
+            "240.320.794",
+            "123.665.875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Extraordinarios",
+          "values": [
+            "128.519.304",
+            "129.044.189"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Diversos",
+          "values": [
+            "446.936.761",
+            "21.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto de Renta (año anterior)",
+          "values": [
+            "238.008.751",
+            "391.110.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costos (De Articulos Deportivos)",
+          "values": [
+            "5.080.000",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 4,
+      "section": "ACTIVO / EFECTIVO Y EQUIVALENTES DE EFECTIVO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL EFECTIVO Y EQUIVALENTES DE EFECTIVO",
+      "target": "61.866.297",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "ACTIVO / EFECTIVO Y EQUIVALENTES DE EFECTIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL EFECTIVO Y EQUIVALENTES DE EFECTIVO",
+      "target": "392.820.247",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "CUENTAS COMERCIALES POR COBRAR Y OTRAS CUENTAS POR COBRAR",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL CUENTAS POR COBRAR Y OTRAS CUENTAS POR COBRAR",
+      "target": "4.128.512.129",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": "CUENTAS COMERCIALES POR COBRAR Y OTRAS CUENTAS POR COBRAR",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL CUENTAS POR COBRAR Y OTRAS CUENTAS POR COBRAR",
+      "target": "3.725.403.245",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "OTROS ACTIVOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL OTROS ACTIVOS",
+      "target": "36.746.063",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "OTROS ACTIVOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL OTROS ACTIVOS",
+      "target": "36.746.063",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "ACTIVOS DE INVERSION",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL ACTIVOS DE INVERSION",
+      "target": "23.160.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "ACTIVOS DE INVERSION",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL ACTIVOS DE INVERSION",
+      "target": "23.160.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "PROPIEDAD, PLANTA Y EQUIPOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PROPIEDAD PLANTA Y EQ.",
+      "target": "1.777.578.771",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "PROPIEDAD, PLANTA Y EQUIPOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PROPIEDAD PLANTA Y EQ.",
+      "target": "1.648.836.867",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "✓ Nuevo elemento de equipo de equipo de oficina / ✓ Nuevo elemento de equipo de computación y comunicación",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL ACTIVOS INTANGIBLES Y PLUSVALIA",
+      "target": "3.684.561.501",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "✓ Nuevo elemento de equipo de equipo de oficina / ✓ Nuevo elemento de equipo de computación y comunicación",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL ACTIVOS INTANGIBLES Y PLUSVALIA",
+      "target": "3.885.805.220",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "VALORIZACIONES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Valorizaciones",
+      "target": "5.466.580.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "VALORIZACIONES",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Valorizaciones",
+      "target": "5.466.580.000",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "PASIVO / PASIVO / CUENTAS COMERCIALES POR PAGAR Y OTRAS CUENTAS POR PAGAR",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL CUENTAS COMERC. POR PAGAR Y OTRAS CTAS POR PAGAR",
+      "target": "3.368.078.622",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 7,
+      "section": "PASIVO / PASIVO / CUENTAS COMERCIALES POR PAGAR Y OTRAS CUENTAS POR PAGAR",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL CUENTAS COMERC. POR PAGAR Y OTRAS CTAS POR PAGAR",
+      "target": "2.567.690.743",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": "PASIVOS POR IMPUESTOS CORRIENTES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PASIVOS POR IMPUESTOS CORRIENTES",
+      "target": "77.770.936",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": "PASIVOS POR IMPUESTOS CORRIENTES",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PASIVOS POR IMPUESTOS CORRIENTES",
+      "target": "129.505.003",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 8,
+      "section": "PASIVO A MEDIANO Y LARGO PLAZO / OBLIGACIONES LABORALES Y DE SEGURIDAD SOCIAL",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL OBLIGACIONES LABORALES Y DE SEG SOCIAL",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"(en blanco en el original)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 8,
+      "section": "PASIVO A MEDIANO Y LARGO PLAZO / OBLIGACIONES LABORALES Y DE SEGURIDAD SOCIAL",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL OBLIGACIONES LABORALES Y DE SEG SOCIAL",
+      "target": "458.837.386",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "OTROS PASIVOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL OTROS PASIVOS",
+      "target": "411.693.160",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "OTROS PASIVOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL OTROS PASIVOS",
+      "target": "125.146.214",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "PASIVOS POR IMPUESTO DIFERIDO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PASIVOM POR IMPUESTO DIFERIDO",
+      "target": "695.286.500",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "PASIVOS POR IMPUESTO DIFERIDO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PASIVOM POR IMPUESTO DIFERIDO",
+      "target": "695.286.500",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "PATRIMONIO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PATRIMONIO",
+      "target": "8.068.181.236",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 9,
+      "section": "PATRIMONIO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PATRIMONIO",
+      "target": "8.608.485.795",
+      "addendCount": 10,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 10 rubros enteros)"
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/alianza-fc-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"alianza-fc\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

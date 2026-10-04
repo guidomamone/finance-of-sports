@@ -1,0 +1,244 @@
+{
+ "md": "Clubes/República Checa/Viktoria Plzeň/SL72_2021-vzz.md",
+ "pdf": "Clubes/República Checa/Viktoria Plzeň/SL72_2021-vzz.pdf",
+ "club": "viktoria-plzen",
+ "year": 2021,
+ "numberFormat": "ambiguo",
+ "generatedAt": "2026-09-30T22:07:53.372Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": false,
+  "motivo": "no se pudo ubicar la columna del ejercicio"
+ },
+ "ladoConocido": 7,
+ "rubros": [
+  {
+   "label": "Výkonová spotřeba Součet A.1. až A.3.",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+   "values": [
+    "3",
+    "556",
+    "8"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Ostatní provozní náklady Součet F.1. až F.5.",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+   "values": [
+    "24",
+    "3",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Daně a poplatky",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+   "values": [
+    "27",
+    "3",
+    ""
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Provozní výsledek hospodaření (+/-) I. + II. - A. - B. - C. - D. - E. + III. - F.",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+   "values": [
+    "30",
+    "-559",
+    "-8"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Výnosové úroky a podobné výnosy Součet VI.1. až VI.2.",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+   "values": [
+    "39",
+    "106",
+    "40"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Výnosové úroky a podobné výnosy – ovládaná nebo ovládající osoba",
+   "lado": "revenue",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+   "values": [
+    "40",
+    "106",
+    "40"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Ostatní finanční náklady",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+   "values": [
+    "47",
+    "1",
+    "1"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Výsledek hospodaření před zdaněním (+/-) * (ř. 30) + * (ř. 48)",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+   "values": [
+    "49",
+    "-454",
+    "31"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Daň z příjmů Součet L.1. až L.2.",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+   "values": [
+    "50",
+    "11",
+    "6"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Daň z příjmů splatná",
+   "lado": "expense",
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+   "values": [
+    "51",
+    "11",
+    "6"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Výsledek hospodaření po zdanění (+/-)  (ř. 49) - L.",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+   "values": [
+    "53",
+    "-465",
+    "25"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Výsledek hospodaření za účetní období (+/-)  (ř. 53) - M.",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+   "values": [
+    "55",
+    "-465",
+    "25"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  },
+  {
+   "label": "Čistý obrat za účetní období I. + II. + III. + IV. + V. + VI. + VII.",
+   "lado": null,
+   "page": 1,
+   "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liši-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+   "values": [
+    "56",
+    "106",
+    "40"
+   ],
+   "columns": [
+    "TEXT b",
+    "číslo řádku c",
+    "Skutečnost v účetním období",
+    ""
+   ]
+  }
+ ]
+}

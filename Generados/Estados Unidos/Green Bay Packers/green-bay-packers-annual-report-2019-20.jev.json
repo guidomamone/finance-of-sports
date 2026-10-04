@@ -1,0 +1,397 @@
+{
+ "md": "Clubes/Estados Unidos/Green Bay Packers/green-bay-packers-annual-report-2019-20.md",
+ "generatedAt": "2026-09-30T04:28:52.795Z",
+ "rubros": [
+  {
+   "label": "General & administrative",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "lump_football_operations",
+     0.26
+    ],
+    [
+     "other_sports",
+     0.03
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "Player costs",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_income",
+     0.67
+    ],
+    [
+     "lump_football_operations",
+     0.29
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 981
+  },
+  {
+   "label": "National",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "broadcasting",
+     0.08
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Facilities, net*",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "stadium_other",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "stadium_other",
+     0.71
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 833
+  },
+  {
+   "label": "Team",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "lump_football_operations",
+     0.32
+    ],
+    [
+     "other_sports",
+     0.08
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Profit from operations",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "lump_football_operations",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.64
+    ],
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "matchday_competition",
+     0.05
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Local",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "other_income",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "matchday_competition",
+     0.38
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Sales, marketing & fan engagement",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Property & equipment net",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# NET INCOME / # PRESERVING THE PACKERS FRANCHISE",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "stadium_other",
+     0.02
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 895
+  },
+  {
+   "label": "Net income",
+   "lado": "revenue",
+   "page": 20,
+   "section": "# TREASURER'S REPORT TO SHAREHOLDERS",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Other",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# NET INCOME / # PRESERVING THE PACKERS FRANCHISE",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "Debt",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# NET INCOME / # PRESERVING THE PACKERS FRANCHISE",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Cash & Investments",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# NET INCOME / # PRESERVING THE PACKERS FRANCHISE",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 909
+  },
+  {
+   "label": "Compensation liabilities",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# NET INCOME / # PRESERVING THE PACKERS FRANCHISE",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ]
+   ],
+   "tokens": 913
+  },
+  {
+   "label": "Unamortized signing bonuses, net",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# NET INCOME / # PRESERVING THE PACKERS FRANCHISE",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ],
+    [
+     "other_sports",
+     0.02
+    ]
+   ],
+   "tokens": 839
+  },
+  {
+   "label": "Other liabilities",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# NET INCOME / # PRESERVING THE PACKERS FRANCHISE",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Equity",
+   "lado": "revenue",
+   "page": 21,
+   "section": "# NET INCOME / # PRESERVING THE PACKERS FRANCHISE",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "other_sports",
+     0.01
+    ]
+   ],
+   "tokens": 833
+  }
+ ]
+}

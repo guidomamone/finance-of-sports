@@ -1,0 +1,683 @@
+{
+  "md": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2016.md",
+  "pdf": "Clubes/Brasil/Fluminense/demonstracoes-financeiras-2016.pdf",
+  "club": "fluminense-br",
+  "year": 2016,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:52:45.892Z",
+  "tieOuts": {
+    "cierran": 12,
+    "noCierran": 27
+  },
+  "warnings": [
+    "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "23 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "18 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 56,
+    "notasUsadas": [
+      "5",
+      "21",
+      "19"
+    ]
+  },
+  "ladoConocido": 54,
+  "rubros": [
+    {
+      "label": "RECEITA LÍQUIDA",
+      "lado": "expense",
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        271.896
+      ],
+      "origen": "estado 11",
+      "glosa": "Ingresos netos"
+    },
+    {
+      "label": "Gastos com Pessoal",
+      "lado": "expense",
+      "page": 1,
+      "section": "",
+      "values": [
+        -75.448
+      ],
+      "origen": "nota 5 (ancla 11)",
+      "ancla": "Futebol",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Futebol",
+      "lado": "expense",
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -181.018
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Fútbol"
+    },
+    {
+      "label": "Serviços Profissionais",
+      "lado": "expense",
+      "page": 1,
+      "section": "",
+      "values": [
+        -26.72
+      ],
+      "origen": "nota 5 (ancla 11)",
+      "ancla": "Futebol",
+      "glosa": "Servicios profesionales"
+    },
+    {
+      "label": "Campeonato Estadual",
+      "lado": "expense",
+      "page": 6,
+      "section": "",
+      "values": [
+        2.37
+      ],
+      "origen": "nota 21 (ancla 11>5)",
+      "ancla": "Futebol",
+      "glosa": "Campeonato Estatal"
+    },
+    {
+      "label": "Campeonato Brasileiro",
+      "lado": "expense",
+      "page": 6,
+      "section": "",
+      "values": [
+        3.818
+      ],
+      "origen": "nota 21 (ancla 11>5)",
+      "ancla": "Futebol",
+      "glosa": "Campeonato Brasileño"
+    },
+    {
+      "label": "Copa do Brasil",
+      "lado": "expense",
+      "page": 6,
+      "section": "",
+      "values": [
+        0.588
+      ],
+      "origen": "nota 21 (ancla 11>5)",
+      "ancla": "Futebol",
+      "glosa": "Copa de Brasil"
+    },
+    {
+      "label": "Copa 1ª Liga",
+      "lado": "expense",
+      "page": 6,
+      "section": "",
+      "values": [
+        0.372
+      ],
+      "origen": "nota 21 (ancla 11>5)",
+      "ancla": "Futebol",
+      "glosa": "Copa 1.ª Liga"
+    },
+    {
+      "label": "Outras",
+      "lado": "expense",
+      "page": 6,
+      "section": "",
+      "values": [
+        2.885
+      ],
+      "origen": "nota 21 (ancla 11>5)",
+      "ancla": "Futebol",
+      "glosa": "Otras"
+    },
+    {
+      "label": "Direitos de Imagem e de Arena",
+      "lado": "expense",
+      "page": 1,
+      "section": "",
+      "values": [
+        -24.981
+      ],
+      "origen": "nota 5 (ancla 11)",
+      "ancla": "Futebol",
+      "glosa": "Derechos de imagen y de arena"
+    },
+    {
+      "label": "Amortização Atletas Profissionais Contratação",
+      "lado": "expense",
+      "page": 1,
+      "section": "",
+      "values": [
+        -17.851
+      ],
+      "origen": "nota 5 (ancla 11)",
+      "ancla": "Futebol",
+      "glosa": "Amortización de jugadores profesionales - Contratación"
+    },
+    {
+      "label": "Gastos Gerais",
+      "lado": "expense",
+      "page": 1,
+      "section": "",
+      "values": [
+        -25.985
+      ],
+      "origen": "nota 5 (ancla 11)",
+      "ancla": "Futebol",
+      "glosa": "Gastos generales"
+    },
+    {
+      "label": "Gastos com Jogos e Bonificações",
+      "lado": "expense",
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -10.033
+      ],
+      "origen": "estado 11",
+      "glosa": "Gastos de partidos y primas"
+    },
+    {
+      "label": "Amortização Atletas Profissionais Contratados",
+      "lado": "expense",
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -17.851
+      ],
+      "origen": "estado 11",
+      "glosa": "Amortización de jugadores profesionales contratados"
+    },
+    {
+      "label": "Esporte Olímpico",
+      "lado": "expense",
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -12.022
+      ],
+      "origen": "estado 11",
+      "glosa": "Deportes olímpicos"
+    },
+    {
+      "label": "Gastos com Pessoal",
+      "lado": "expense",
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -5.867
+      ],
+      "origen": "estado 11",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Serviços Profissionais",
+      "lado": "expense",
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -1.43
+      ],
+      "origen": "estado 11",
+      "glosa": "Servicios profesionales"
+    },
+    {
+      "label": "Direitos de Imagem",
+      "lado": "expense",
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -0.294
+      ],
+      "origen": "estado 11",
+      "glosa": "Derechos de imagen"
+    },
+    {
+      "label": "Gastos Gerais",
+      "lado": "expense",
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -4.431
+      ],
+      "origen": "estado 11",
+      "glosa": "Gastos generales"
+    },
+    {
+      "label": "Despesas Operacionais",
+      "lado": "expense",
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -70.514
+      ],
+      "origen": "estado 11",
+      "glosa": "Gastos operativos"
+    },
+    {
+      "label": "Despesas com Pessoal",
+      "lado": "expense",
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -7.457
+      ],
+      "origen": "estado 11",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Serviços Profissionais",
+      "lado": null,
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -12.894
+      ],
+      "origen": "estado 11",
+      "glosa": "Servicios profesionales"
+    },
+    {
+      "label": "Sub-17",
+      "lado": "expense",
+      "page": 4,
+      "section": "",
+      "values": [
+        3.84
+      ],
+      "origen": "nota 19 (ancla 11)",
+      "ancla": "Despesas Gerais e Administrativas",
+      "glosa": "Sub-17"
+    },
+    {
+      "label": "Despesas Gerais e Administrativas",
+      "lado": "expense",
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -5.851
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Gastos generales y administrativos"
+    },
+    {
+      "label": "Sub-15",
+      "lado": "expense",
+      "page": 4,
+      "section": "",
+      "values": [
+        1.907
+      ],
+      "origen": "nota 19 (ancla 11)",
+      "ancla": "Despesas Gerais e Administrativas",
+      "glosa": "Sub-15"
+    },
+    {
+      "label": "Sub-20",
+      "lado": "expense",
+      "page": 4,
+      "section": "",
+      "values": [
+        0.103
+      ],
+      "origen": "nota 19 (ancla 11)",
+      "ancla": "Despesas Gerais e Administrativas",
+      "glosa": "Sub-20"
+    },
+    {
+      "label": "Financeiras Líquidas",
+      "lado": null,
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -25.985
+      ],
+      "origen": "estado 11",
+      "glosa": "Resultado financiero neto"
+    },
+    {
+      "label": "Depreciação e Amortização",
+      "lado": null,
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -2.805
+      ],
+      "origen": "estado 11",
+      "glosa": "Depreciación y amortización"
+    },
+    {
+      "label": "Provisão para contingências",
+      "lado": null,
+      "page": 2,
+      "section": "As notas explicativas da administração são parte integrante das demonstrações contábeis. / DEMONSTRAÇÕES DO RESULTADO EXERCÍCIO EM 31 DE DEZEMBRO (Em milhares de Reais)",
+      "values": [
+        -15.522
+      ],
+      "origen": "estado 11",
+      "glosa": "Provisión para contingencias"
+    },
+    {
+      "label": "Edificações e benfeitorias",
+      "lado": "expense",
+      "page": 3,
+      "section": "5 Imobilizado",
+      "values": [
+        161.486
+      ],
+      "origen": "estado 17",
+      "glosa": "Edificaciones y mejoras"
+    },
+    {
+      "label": "Móveis e utensílios",
+      "lado": "expense",
+      "page": 3,
+      "section": "5 Imobilizado",
+      "values": [
+        0.398
+      ],
+      "origen": "estado 17",
+      "glosa": "Mobiliario y enseres"
+    },
+    {
+      "label": "Veículos",
+      "lado": "expense",
+      "page": 3,
+      "section": "5 Imobilizado",
+      "values": [
+        0.039
+      ],
+      "origen": "estado 17",
+      "glosa": "Vehículos"
+    },
+    {
+      "label": "Equipamentos de processamento",
+      "lado": "expense",
+      "page": 3,
+      "section": "5 Imobilizado",
+      "values": [
+        0.099
+      ],
+      "origen": "estado 17",
+      "glosa": "Equipos de procesamiento de datos"
+    },
+    {
+      "label": "Equipamentos diversos",
+      "lado": "expense",
+      "page": 3,
+      "section": "5 Imobilizado",
+      "values": [
+        1.763
+      ],
+      "origen": "estado 17",
+      "glosa": "Equipos diversos"
+    },
+    {
+      "label": "Pinacoteca e monumentos",
+      "lado": "expense",
+      "page": 3,
+      "section": "5 Imobilizado",
+      "values": [
+        0.727
+      ],
+      "origen": "estado 17",
+      "glosa": "Pinacoteca y monumentos"
+    },
+    {
+      "label": "Terrenos",
+      "lado": "expense",
+      "page": 3,
+      "section": "5 Imobilizado",
+      "values": [
+        152
+      ],
+      "origen": "estado 17",
+      "glosa": "Terrenos"
+    },
+    {
+      "label": "Benfeitorias e instalações",
+      "lado": "expense",
+      "page": 3,
+      "section": "5 Imobilizado",
+      "values": [
+        1.733
+      ],
+      "origen": "estado 17",
+      "glosa": "Mejoras e instalaciones"
+    },
+    {
+      "label": "Móveis e utensílios",
+      "lado": "expense",
+      "page": 3,
+      "section": "5 Imobilizado",
+      "values": [
+        0.078
+      ],
+      "origen": "estado 17",
+      "glosa": "Mobiliario y enseres"
+    },
+    {
+      "label": "Equipamentos de processamento",
+      "lado": "expense",
+      "page": 3,
+      "section": "5 Imobilizado",
+      "values": [
+        0.004
+      ],
+      "origen": "estado 17",
+      "glosa": "Equipos de procesamiento de datos"
+    },
+    {
+      "label": "Equipamentos diversos",
+      "lado": "expense",
+      "page": 3,
+      "section": "5 Imobilizado",
+      "values": [
+        0.172
+      ],
+      "origen": "estado 17",
+      "glosa": "Equipos diversos"
+    },
+    {
+      "label": "Edificações e benfeitorias",
+      "lado": "expense",
+      "page": 3,
+      "section": "5 Imobilizado",
+      "values": [
+        2.244
+      ],
+      "origen": "estado 17",
+      "glosa": "Edificaciones y mejoras"
+    },
+    {
+      "label": "CT Barra",
+      "lado": "expense",
+      "page": 3,
+      "section": "5 Imobilizado",
+      "values": [
+        28.235
+      ],
+      "origen": "estado 17",
+      "glosa": "CT Barra"
+    },
+    {
+      "label": "Bilheteria",
+      "lado": "revenue",
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "values": [
+        11.362
+      ],
+      "origen": "estado 0",
+      "glosa": "Taquilla"
+    },
+    {
+      "label": "Repasse de Direitos Federativos",
+      "lado": "revenue",
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "values": [
+        52.438
+      ],
+      "origen": "estado 0",
+      "glosa": "Traspaso de derechos federativos"
+    },
+    {
+      "label": "Transmissões Televisivas",
+      "lado": "revenue",
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "values": [
+        177.344
+      ],
+      "origen": "estado 0",
+      "glosa": "Retransmisiones televisivas"
+    },
+    {
+      "label": "Publicidade e Patrocínio",
+      "lado": "revenue",
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "values": [
+        15.687
+      ],
+      "origen": "estado 0",
+      "glosa": "Publicidad y patrocinio"
+    },
+    {
+      "label": "Licenciamentos e Franquias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "values": [
+        2.225
+      ],
+      "origen": "estado 0",
+      "glosa": "Licencias y franquicias"
+    },
+    {
+      "label": "Premiações e Loterias",
+      "lado": "revenue",
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "values": [
+        4.961
+      ],
+      "origen": "estado 0",
+      "glosa": "Premios y loterías"
+    },
+    {
+      "label": "Esportes Amadores",
+      "lado": "revenue",
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "values": [
+        2.537
+      ],
+      "origen": "estado 0",
+      "glosa": "Deportes amateurs"
+    },
+    {
+      "label": "Associados",
+      "lado": "revenue",
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "values": [
+        14.463
+      ],
+      "origen": "estado 0",
+      "glosa": "Socios"
+    },
+    {
+      "label": "Aluguéis",
+      "lado": "revenue",
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "values": [
+        1.557
+      ],
+      "origen": "estado 0",
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Socio Futebol",
+      "lado": "revenue",
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "values": [
+        5.479
+      ],
+      "origen": "estado 0",
+      "glosa": "Socio Fútbol"
+    },
+    {
+      "label": "Incentivado",
+      "lado": "revenue",
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "values": [
+        2.375
+      ],
+      "origen": "estado 0",
+      "glosa": "Proyectos incentivados"
+    },
+    {
+      "label": "Outras",
+      "lado": "revenue",
+      "page": 1,
+      "section": "FLUMINENSE FOOTBALL CLUB / CARTA DA ADMINISTRAÇÃO / CNPJ Nº 33.647.553/0001-90 / Introdução / Receitas",
+      "values": [
+        2.766
+      ],
+      "origen": "estado 0",
+      "glosa": "Otras"
+    },
+    {
+      "label": "Edificações",
+      "lado": "expense",
+      "page": 3,
+      "section": "2.2.5 Contas a receber / 2.2.6 Almoxarifado / 2.2.7 Despesas antecipadas / 2.2.8 Demais ativos circulantes e não circulantes / 2.2.9 Imobilizado",
+      "values": [
+        5195
+      ],
+      "origen": "estado 15",
+      "glosa": "Edificaciones"
+    },
+    {
+      "label": "Móveis e utensílios",
+      "lado": "expense",
+      "page": 3,
+      "section": "2.2.5 Contas a receber / 2.2.6 Almoxarifado / 2.2.7 Despesas antecipadas / 2.2.8 Demais ativos circulantes e não circulantes / 2.2.9 Imobilizado",
+      "values": [
+        10
+      ],
+      "origen": "estado 15",
+      "glosa": "Mobiliario y enseres"
+    },
+    {
+      "label": "Equipamentos Processamento",
+      "lado": "expense",
+      "page": 3,
+      "section": "2.2.5 Contas a receber / 2.2.6 Almoxarifado / 2.2.7 Despesas antecipadas / 2.2.8 Demais ativos circulantes e não circulantes / 2.2.9 Imobilizado",
+      "values": [
+        5
+      ],
+      "origen": "estado 15",
+      "glosa": "Equipos de procesamiento"
+    },
+    {
+      "label": "Equipamento Diversos",
+      "lado": "expense",
+      "page": 3,
+      "section": "2.2.5 Contas a receber / 2.2.6 Almoxarifado / 2.2.7 Despesas antecipadas / 2.2.8 Demais ativos circulantes e não circulantes / 2.2.9 Imobilizado",
+      "values": [
+        10
+      ],
+      "origen": "estado 15",
+      "glosa": "Equipos diversos"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+ "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2014.md",
+ "generatedAt": "2026-09-30T22:48:47.122Z",
+ "rubrosHuella": "98ea0466ead5c8269ff6d15a329d2bb2d3e9f8ac",
+ "rubros": [
+  {
+   "label": "Servicios básicos",
+   "lado": null,
+   "page": 75,
+   "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Asesorías",
+   "lado": null,
+   "page": 75,
+   "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": null,
+   "page": 75,
+   "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 75,
+   "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Mantenciones",
+   "lado": null,
+   "page": 75,
+   "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración administración",
+   "lado": null,
+   "page": 75,
+   "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos de administración",
+   "lado": "expense",
+   "page": 75,
+   "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneración plantel profesional y cuerpo técnico",
+   "lado": null,
+   "page": 75,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización Activos en concesión",
+   "lado": null,
+   "page": 75,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_amortisation",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización pases jugadores profesionales",
+   "lado": null,
+   "page": 75,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos de concentración traslados y otros",
+   "lado": "expense",
+   "page": 75,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Gasto por impuestos utilizando la tasa legal",
+   "lado": "expense",
+   "page": 68,
+   "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2014       01.01.2013 / 31.12.2014       31.12.2013 / M$                M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Efecto impositivo de gastos no deducidos impositivamente",
+   "lado": "revenue",
+   "page": 68,
+   "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2014       01.01.2013 / 31.12.2014       31.12.2013 / M$                M$",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otro aumento (disminución) en cargo por impuestos legales",
+   "lado": "expense",
+   "page": 68,
+   "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2014       01.01.2013 / 31.12.2014       31.12.2013 / M$                M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros activos financieros corrientes",
+   "lado": null,
+   "page": 76,
+   "section": "24. DIFERENCIA DE CAMBIO",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Deudores comerciales y otras cuentas por cobrar corrientes",
+   "lado": null,
+   "page": 76,
+   "section": "24. DIFERENCIA DE CAMBIO",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+   "lado": null,
+   "page": 76,
+   "section": "24. DIFERENCIA DE CAMBIO",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Club(**)",
+   "lado": "revenue",
+   "page": 74,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por publicidad",
+   "lado": "revenue",
+   "page": 74,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 74,
+   "section": "Ingresos por venta de jugadores formados por el",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Facturas por pagar",
+   "lado": null,
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 14. CUENTAS POR PAGAR COMERCIALES CORRIENTES",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1483
+  },
+  {
+   "label": "Costo de venta jugadores -",
+   "lado": "expense",
+   "page": 75,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "player_amortisation",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Cuentas por pagar",
+   "lado": null,
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 14. CUENTAS POR PAGAR COMERCIALES CORRIENTES",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1484
+  },
+  {
+   "label": "Retenciones por pagar",
+   "lado": null,
+   "page": 69,
+   "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 14. CUENTAS POR PAGAR COMERCIALES CORRIENTES",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1511
+  }
+ ]
+}

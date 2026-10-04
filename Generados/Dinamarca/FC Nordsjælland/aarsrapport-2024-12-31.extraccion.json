@@ -1,0 +1,186 @@
+{
+ "pdf": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2024-12-31.pdf",
+ "md": "Clubes/Dinamarca/FC Nordsjælland/aarsrapport-2024-12-31.md",
+ "cierre": "2024-12-31",
+ "paginas": [
+  17,
+  25
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:57:24.081Z",
+ "escala": "unidades",
+ "filas": [
+  {
+   "pagina": 17,
+   "etiqueta": "Bruttofortjeneste / Gross profit",
+   "importe_impreso": "366.004.057",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 17,
+   "etiqueta": "Personaleomkostninger / Staff costs",
+   "importe_impreso": "-175.027.070",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 17,
+   "etiqueta": "Af- og nedskrivninger af materielle og immaterielle anlægsaktiver / Depreciation, amortisation, and impairment",
+   "importe_impreso": "-45.144.140",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 17,
+   "etiqueta": "Driftsresultat / Operating profit",
+   "importe_impreso": "145.832.847",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 17,
+   "etiqueta": "Andre finansielle indtægter fra tilknyttede virksomheder / Other financial income from group enterprises",
+   "importe_impreso": "1.168.111",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 17,
+   "etiqueta": "Andre finansielle indtægter / Other financial income",
+   "importe_impreso": "1.631.843",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 17,
+   "etiqueta": "Øvrige finansielle omkostninger / Other financial costs",
+   "importe_impreso": "-5.376.361",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 17,
+   "etiqueta": "Resultat før skat / Pre-tax net profit or løss",
+   "importe_impreso": "143.256.440",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 17,
+   "etiqueta": "Skat af årets resultat / Tax on net profit or loss for the year",
+   "importe_impreso": "-31.778.343",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 17,
+   "etiqueta": "Årets resultat / Net profit or loss for the year",
+   "importe_impreso": "111.478.097",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Lønninger og gager / Salaries and wages",
+   "importe_impreso": "170.037.690",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger / Staff costs"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Pensioner / Pension costs",
+   "importe_impreso": "3.237.569",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger / Staff costs"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Andre omkostninger til social sikring / Other costs for social security",
+   "importe_impreso": "1.751.811",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger / Staff costs"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "(total nota 1)",
+   "importe_impreso": "175.027.070",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Personaleomkostninger / Staff costs"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Direktion og bestyrelse / Executive board and board of directors",
+   "importe_impreso": "2.407.076",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": "Personaleomkostninger / Staff costs"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Finansielle omkostninger, tilknyttede virksomheder / Financial costs, group enterprises",
+   "importe_impreso": "550.000",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Øvrige finansielle omkostninger / Other financial costs"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Andre finansielle omkostninger / Other financial costs",
+   "importe_impreso": "4.826.361",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Øvrige finansielle omkostninger / Other financial costs"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "(total nota 2)",
+   "importe_impreso": "5.376.361",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Øvrige finansielle omkostninger / Other financial costs"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Skat af årets resultat / Tax of the results for the year, parent company",
+   "importe_impreso": "25.582.279",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat / Tax on net profit or loss for the year"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Årets regulering af udskudt skat / Adjustment for the year of deferred tax",
+   "importe_impreso": "6.196.064",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat / Tax on net profit or loss for the year"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "(total nota 3)",
+   "importe_impreso": "31.778.343",
+   "tipo": "subtotal",
+   "lado": "impuesto",
+   "detalla_a": "Skat af årets resultat / Tax on net profit or loss for the year"
+  }
+ ],
+ "total_ingresos_impreso": null,
+ "total_gastos_impreso": null,
+ "resultado_impreso": "111.478.097",
+ "observaciones": "El estado parte de 'Bruttofortjeneste' (ganancia bruta, ya neta de otros costos externos); no se imprime total de ingresos ni de gastos. Las filas de total de cada nota no tienen etiqueta impresa; se rotularon '(total nota N)'. 'Direktion og bestyrelse' es información de remuneración incluida dentro de gastos de personal, no suma adicional. Se omitió 'Average number of employees' (202) por no ser importe. Etiquetas combinan texto danés e inglés tal como impresos; se conserva 'løss' sin corregir. La columna 2023 está en miles de DKK, distinta escala que 2024."
+}

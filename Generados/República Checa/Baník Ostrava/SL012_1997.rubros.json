@@ -1,0 +1,57 @@
+{
+ "md": "Clubes/República Checa/Baník Ostrava/SL012_1997.md",
+ "pdf": "Clubes/República Checa/Baník Ostrava/SL012_1997.pdf",
+ "club": "banik-ostrava",
+ "year": 1997,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:39.603Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "- reklamní činnost",
+   "lado": "revenue",
+   "page": 14,
+   "section": "krátkodobé závazky 28 655 tis. Kč / z toho po lhůtě splatnosti nad 180 dnů 4 038 tis. Kč / (7) Rezervy / Zákonné ani ostatní (účetní) rezervy nebyly v roce 1997 vytvářeny. / (8) Výnosy z běžné činnosti rozvržené podle hlavních činností podniku:",
+   "values": [
+    0.034485
+   ],
+   "origen": "estado 12",
+   "glosa": "- actividad publicitaria"
+  },
+  {
+   "label": "- výchovné klubů",
+   "lado": "revenue",
+   "page": 14,
+   "section": "krátkodobé závazky 28 655 tis. Kč / z toho po lhůtě splatnosti nad 180 dnů 4 038 tis. Kč / (7) Rezervy / Zákonné ani ostatní (účetní) rezervy nebyly v roce 1997 vytvářeny. / (8) Výnosy z běžné činnosti rozvržené podle hlavních činností podniku:",
+   "values": [
+    0.03303
+   ],
+   "origen": "estado 12",
+   "glosa": "- derechos de formación de clubes"
+  },
+  {
+   "label": "- ostatní",
+   "lado": "revenue",
+   "page": 14,
+   "section": "krátkodobé závazky 28 655 tis. Kč / z toho po lhůtě splatnosti nad 180 dnů 4 038 tis. Kč / (7) Rezervy / Zákonné ani ostatní (účetní) rezervy nebyly v roce 1997 vytvářeny. / (8) Výnosy z běžné činnosti rozvržené podle hlavních činností podniku:",
+   "values": [
+    0.00991
+   ],
+   "origen": "estado 12",
+   "glosa": "- otros"
+  }
+ ]
+}

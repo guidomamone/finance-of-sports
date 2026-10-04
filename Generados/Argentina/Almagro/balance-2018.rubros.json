@@ -1,0 +1,477 @@
+{
+ "md": "Clubes/Argentina/Almagro/balance-2018.md",
+ "pdf": "Clubes/Argentina/Almagro/balance-2018.pdf",
+ "club": "almagro",
+ "year": 2018,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T14:32:49.991Z",
+ "tieOuts": {
+  "cierran": 16,
+  "noCierran": 0
+ },
+ "warnings": [
+  "17 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "ladoConocido": 32,
+ "rubros": [
+  {
+   "label": "Futbol Ingreso por Partidos",
+   "lado": "revenue",
+   "page": 7,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ANEXO III / RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "1,114,385.34"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Alquiler de Sede",
+   "lado": "revenue",
+   "page": 7,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ANEXO III / RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "8,013,443.19"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Ingresos Especiales",
+   "lado": "revenue",
+   "page": 7,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ANEXO III / RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "274,729.92"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Premio Copa Argentina",
+   "lado": "revenue",
+   "page": 7,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ANEXO III / RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "1,745,533.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 7,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ANEXO III / RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "4,147,734.73"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Alquiler de Antena",
+   "lado": "revenue",
+   "page": 7,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ANEXO III / RECAUDACIONES POR ACTIVIDAD",
+   "values": [
+    "3,698,120.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Gastos de mantenimiento",
+   "lado": "expense",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "values": [
+    "2,668,559.14"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Gastos Administrativos",
+   "lado": "expense",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "values": [
+    "5,924.78"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Honorarios Contador",
+   "lado": "expense",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "values": [
+    "94,294.87"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Gastos varios",
+   "lado": "expense",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "values": [
+    "127,402.94"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Gastos de lavandería",
+   "lado": "expense",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "values": [
+    "46,597.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Gastos de movilidad",
+   "lado": "expense",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "values": [
+    "89,307.98"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Estadías y traslados",
+   "lado": "expense",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "values": [
+    "2,510,005.91"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Impuestos y Contribuciones",
+   "lado": "expense",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "values": [
+    "241,074.80"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "values": [
+    "8,286.56"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Alquileres Vivienda para Jugadores",
+   "lado": "expense",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "values": [
+    "270,000.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Gastos Generales",
+   "lado": "expense",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "values": [
+    "902,925.40"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Gastos transmisión radio",
+   "lado": "expense",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "values": [
+    "71,000.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Alquiler equipo electrógeno",
+   "lado": "expense",
+   "page": 8,
+   "section": "CUIT: 33-53156200-9 / ANEXO IV- ANEXO V / GASTOS ESPECÍFICOS ANEXO IV-- AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO:80 / ### GASTOS ESPECÍFICOS",
+   "values": [
+    "30,746.13"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Interese perdidos",
+   "lado": "expense",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "349,387.63"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Gastos bancarios",
+   "lado": "expense",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "9,476.03"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Impuesto Ley 25413",
+   "lado": "expense",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "266,897.94"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Gastos de alimentos",
+   "lado": "expense",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "3,911,226.61"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Honorarios Cuerpo Medico y Tecnico",
+   "lado": "expense",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "3,854,014.14"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Sueldos y Jornales",
+   "lado": "expense",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "9,919,307.89"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Cargas Sociales",
+   "lado": "expense",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "87,015.13"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Primas por contrato privado",
+   "lado": "expense",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "10,148,400.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Gastos de Policía",
+   "lado": "expense",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "770,550.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Juicios",
+   "lado": "expense",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "1,777,900.00"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Gastos de Representación",
+   "lado": "expense",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "288,940.61"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Gastos de Servicios de Emergencia",
+   "lado": "expense",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "322,734.19"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Alquiler para entrenamiento",
+   "lado": "expense",
+   "page": 8,
+   "section": "GASTOS OPERACIONALES- ANEXO V",
+   "values": [
+    "90,165.31"
+   ],
+   "columns": [
+    "",
+    "31/10/2018"
+   ]
+  },
+  {
+   "label": "Apertura",
+   "lado": null,
+   "page": 9,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO - AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 80",
+   "values": [
+    "",
+    "6,560,631.01",
+    "64533811.84",
+    "122,067,427.96",
+    "193,161,870.81"
+   ],
+   "columns": [
+    "RUBRO",
+    "CAPITAL SOCIAL",
+    "",
+    "",
+    "RESULTADOS NO ASIGNADOS",
+    "TOTAL P NETO 31/10/2018"
+   ]
+  },
+  {
+   "label": "Area",
+   "lado": null,
+   "page": 9,
+   "section": "CLUB ALMAGRO ASOCIACIÓN CIVIL / CUIT: 33-53156200-9 / ESTADO DE EVOLUCIÓN DEL PATRIMONIO NETO - AJUSTADO POR INFLACION / EJERCICIO ECONÓMICO NRO: 80",
+   "values": [
+    "",
+    "",
+    "",
+    "61,521,846.50",
+    "61,521,846.50"
+   ],
+   "columns": [
+    "RUBRO",
+    "CAPITAL SOCIAL",
+    "",
+    "",
+    "RESULTADOS NO ASIGNADOS",
+    "TOTAL P NETO 31/10/2018"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,167 @@
+{
+ "md": "Clubes/Grecia/Asteras Tripolis/Asteras_board_report_2024-06-30.md",
+ "generatedAt": "2026-09-30T04:29:19.214Z",
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (Έσοδα από αγώνες και από παραχώρηση ποδοσφαιριστών)",
+   "lado": null,
+   "page": 4,
+   "section": "Ο αριθμοδείκτης αυτός απεικονίζει την αποδοτικότητα των ιδίων κεφαλαίων της εταιρείας.",
+   "choice": "lump_football_operations",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.7
+    ],
+    [
+     "player_sales",
+     0.19
+    ],
+    [
+     "matchday_competition",
+     0.07
+    ]
+   ],
+   "tokens": 1370
+  },
+  {
+   "label": "Σύνολο",
+   "lado": null,
+   "page": 7,
+   "section": "[LOGO] / # Πίνακας διάθεσης αποτελεσμάτων",
+   "choice": "lump_football_operations",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.5
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1287
+  },
+  {
+   "label": "(+/-) Υπόλοιπο αποτελεσμάτων (ζημιών) προηγούμενων χρήσεων",
+   "lado": null,
+   "page": 7,
+   "section": "[LOGO] / # Πίνακας διάθεσης αποτελεσμάτων",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "exceptional_items",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1332
+  },
+  {
+   "label": "Ίδια κεφάλαια",
+   "lado": null,
+   "page": 4,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Σύνολο εσόδων",
+   "lado": null,
+   "page": 4,
+   "section": "",
+   "choice": "lump_football_operations",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.8
+    ],
+    [
+     "other_income",
+     0.19
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Καθαρά αποτελέσματα (ζημιές) προ φόρων χρήσεως 1.7.2023-30.6.2024",
+   "lado": null,
+   "page": 7,
+   "section": "[LOGO] / # Πίνακας διάθεσης αποτελεσμάτων",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "lump_football_operations",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1691
+  },
+  {
+   "label": "(+/-) Διαφορές φορολογικού ελέγχου",
+   "lado": null,
+   "page": 7,
+   "section": "[LOGO] / # Πίνακας διάθεσης αποτελεσμάτων",
+   "choice": "admin_general_expense",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "other_income",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1310
+  }
+ ]
+}

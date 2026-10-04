@@ -1,0 +1,143 @@
+{
+  "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.md",
+  "pdf": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2021.pdf",
+  "club": "monchengladbach-de",
+  "year": 2021,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:50:17.750Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 12,
+    "notasUsadas": []
+  },
+  "ladoConocido": 9,
+  "rubros": [
+    {
+      "label": "a) Löhne und Gehälter",
+      "lado": null,
+      "page": 3,
+      "section": "Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2021",
+      "values": [
+        94.307255
+      ],
+      "origen": "estado 4",
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) Soziale Abgaben",
+      "lado": null,
+      "page": 3,
+      "section": "Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2021",
+      "values": [
+        3.78539
+      ],
+      "origen": "estado 4",
+      "glosa": "b) Cargas sociales"
+    },
+    {
+      "label": "8. Sonstige Zinsen und ähnliche Erträge",
+      "lado": "revenue",
+      "page": 3,
+      "section": "Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2021",
+      "values": [
+        0.021611
+      ],
+      "origen": "estado 4",
+      "glosa": "8. Otros intereses e ingresos asimilados"
+    },
+    {
+      "label": "9. Zinsen und ähnliche Aufwendungen",
+      "lado": "expense",
+      "page": 3,
+      "section": "Gewinn- und Verlustrechnung für die Zeit vom 1. Januar bis 31. Dezember 2021",
+      "values": [
+        1.607168
+      ],
+      "origen": "estado 4",
+      "glosa": "9. Intereses y gastos asimilados"
+    },
+    {
+      "label": "2. Spielerwerte",
+      "lado": "expense",
+      "page": 10,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        211.416642
+      ],
+      "origen": "estado 7",
+      "glosa": "2. Derechos federativos"
+    },
+    {
+      "label": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+      "lado": "expense",
+      "page": 10,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        148.306235
+      ],
+      "origen": "estado 7",
+      "glosa": "1. Terrenos, derechos reales sobre bienes inmuebles y construcciones, incluidas las construcciones en terrenos ajenos"
+    },
+    {
+      "label": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+      "lado": "expense",
+      "page": 10,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        14.697204
+      ],
+      "origen": "estado 7",
+      "glosa": "2. Otras instalaciones, utillaje y mobiliario"
+    },
+    {
+      "label": "3. Geleistete Anzahlungen und Anlagen im Bau",
+      "lado": "expense",
+      "page": 10,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        0.157
+      ],
+      "origen": "estado 7",
+      "glosa": "3. Anticipos e inmovilizado en curso"
+    },
+    {
+      "label": "1. Anteile an verbundenen Unternehmen",
+      "lado": "expense",
+      "page": 10,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        0.3
+      ],
+      "origen": "estado 7",
+      "glosa": "1. Participaciones en empresas del grupo"
+    },
+    {
+      "label": "2. Beteiligungen",
+      "lado": "expense",
+      "page": 10,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        2.44284
+      ],
+      "origen": "estado 7",
+      "glosa": "2. Participaciones"
+    },
+    {
+      "label": "3. Sonstige Finanzanlagen",
+      "lado": "expense",
+      "page": 10,
+      "section": "UNTERNEHMENSREGISTER / Anschaffungs- und Herstellungskosten",
+      "values": [
+        0.0006
+      ],
+      "origen": "estado 7",
+      "glosa": "3. Otras inversiones financieras"
+    }
+  ]
+}

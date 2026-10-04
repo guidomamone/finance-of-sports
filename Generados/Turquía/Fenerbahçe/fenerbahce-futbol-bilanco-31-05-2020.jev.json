@@ -1,0 +1,2398 @@
+{
+ "md": "Clubes/Turquía/Fenerbahçe/fenerbahce-futbol-bilanco-31-05-2020.md",
+ "generatedAt": "2026-09-30T04:30:55.611Z",
+ "rubros": [
+  {
+   "label": "Satışların Maliyeti (-)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "ESAS FAALİYET KARI / (ZARARI)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "lump_football_operations",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.55
+    ],
+    [
+     "other_income",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1326
+  },
+  {
+   "label": "Esas Faaliyetlerden Diğer Giderler (-)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1326
+  },
+  {
+   "label": "Pazarlama Giderleri (-)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "admin_general_expense",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ]
+   ],
+   "tokens": 1320
+  },
+  {
+   "label": "BRÜT KAR / (ZARAR)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "lump_football_operations",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.58
+    ],
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "Genel Yönetim Giderleri (-)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1322
+  },
+  {
+   "label": "Esas Faaliyetlerden Diğer Gelirler",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1325
+  },
+  {
+   "label": "Hasılat",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "lump_football_operations",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.92
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 1315
+  },
+  {
+   "label": "Yatırım Faaliyetlerinden Gelirler",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1324
+  },
+  {
+   "label": "Finansman Gelirleri",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1318
+  },
+  {
+   "label": "SÜRDÜRÜLEN FAALİYETLER DÖNEM KARI / (ZARARI)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_income",
+     0.62
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1335
+  },
+  {
+   "label": "SÜRDÜRÜLEN FAALİYETLER VERGİ ÖNCESİ KARI / (ZARARI)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "admin_general_expense",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1338
+  },
+  {
+   "label": "Finansman Giderleri (-)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1319
+  },
+  {
+   "label": "FİNANSMAN GİDERİ ÖNCESİ FAALİYET KARI / (ZARARI)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "lump_football_operations",
+     0.21000000000000002
+    ],
+    [
+     "other_income",
+     0.17
+    ]
+   ],
+   "tokens": 1337
+  },
+  {
+   "label": "- Dönem Vergi Gelir / (Gideri)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1324
+  },
+  {
+   "label": "- Ertelenmiş Vergi Gelir / (Gideri)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1326
+  },
+  {
+   "label": "- Diğer Kapsamlı Gelire İlişkin Vergiler",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1327
+  },
+  {
+   "label": "Kontrol Gücü Olmayan Paylar",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1322
+  },
+  {
+   "label": "Diğer Kapsamlı Gelir / (Gider)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1325
+  },
+  {
+   "label": "Toplam Kapsamlı Gelir / (Gider)",
+   "lado": null,
+   "page": 11,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "lump_football_operations",
+     0.15
+    ]
+   ],
+   "tokens": 1320
+  },
+  {
+   "label": "Ana Ortaklık Payları",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1320
+  },
+  {
+   "label": "1 Haziran 2018",
+   "lado": null,
+   "page": 11,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1316
+  },
+  {
+   "label": "Hisse Başına Kayıp/(Kazanç)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1324
+  },
+  {
+   "label": "- Tanımlanmış Fayda Planları Yeniden Ölçüm Kazançları / (Kayıpları)",
+   "lado": null,
+   "page": 10,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1340
+  },
+  {
+   "label": "Diğer Düzeltmeler",
+   "lado": null,
+   "page": 11,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ],
+    [
+     "exceptional_items",
+     0.08
+    ]
+   ],
+   "tokens": 1316
+  },
+  {
+   "label": "*Diğer Kapsamlı Gelir / (Gider)*",
+   "lado": null,
+   "page": 11,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1322
+  },
+  {
+   "label": "*Dönem Karı / (Zararı)*",
+   "lado": null,
+   "page": 11,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_income",
+     0.68
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1319
+  },
+  {
+   "label": "Transferler",
+   "lado": null,
+   "page": 11,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "player_sales",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "player_sales",
+     0.47000000000000003
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "player_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 1312
+  },
+  {
+   "label": "1 Haziran 2019",
+   "lado": null,
+   "page": 11,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1316
+  },
+  {
+   "label": "31 Mayıs 2019",
+   "lado": null,
+   "page": 11,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.060000000000000005
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1317
+  },
+  {
+   "label": "Sermaye Artırımı(*) (Not 17)",
+   "lado": null,
+   "page": 11,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1441
+  },
+  {
+   "label": "31 Mayıs 2020",
+   "lado": null,
+   "page": 11,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "lump_football_operations",
+     0.060000000000000005
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1407
+  },
+  {
+   "label": "Özel maliyetler",
+   "lado": null,
+   "page": 17,
+   "section": "# NOT 2 – FİNANSAL TABLOLARIN SUNUMUNA İLİŞKİN ESASLAR (devamı) / # 2.3 Önemli muhasebe politikaları özeti (devamı) / # *Ürün satış gelirleri* / # Stoklar / # Maddi duran varlıklar",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "lump_football_operations_expense",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1331
+  },
+  {
+   "label": "Diğer maddi duran varlıklar",
+   "lado": null,
+   "page": 17,
+   "section": "# NOT 2 – FİNANSAL TABLOLARIN SUNUMUNA İLİŞKİN ESASLAR (devamı) / # 2.3 Önemli muhasebe politikaları özeti (devamı) / # *Ürün satış gelirleri* / # Stoklar / # Maddi duran varlıklar",
+   "choice": "depreciation",
+   "confidence": 0.25,
+   "top3": [
+    [
+     "depreciation",
+     0.29000000000000004
+    ],
+    [
+     "other_amortisation",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.22
+    ]
+   ],
+   "tokens": 1337
+  },
+  {
+   "label": "Mobilya ve diğer demirbaşlar",
+   "lado": null,
+   "page": 17,
+   "section": "# NOT 2 – FİNANSAL TABLOLARIN SUNUMUNA İLİŞKİN ESASLAR (devamı) / # 2.3 Önemli muhasebe politikaları özeti (devamı) / # *Ürün satış gelirleri* / # Stoklar / # Maddi duran varlıklar",
+   "choice": "depreciation",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "depreciation",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1336
+  },
+  {
+   "label": "Taşıtlar",
+   "lado": null,
+   "page": 17,
+   "section": "# NOT 2 – FİNANSAL TABLOLARIN SUNUMUNA İLİŞKİN ESASLAR (devamı) / # 2.3 Önemli muhasebe politikaları özeti (devamı) / # *Ürün satış gelirleri* / # Stoklar / # Maddi duran varlıklar",
+   "choice": "depreciation",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "depreciation",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.23
+    ]
+   ],
+   "tokens": 1330
+  },
+  {
+   "label": "Peşin ödenen giderler (*)",
+   "lado": null,
+   "page": 36,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 –PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN / YÜKÜMLÜLÜKLER",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ],
+    [
+     "season_tickets",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1370
+  },
+  {
+   "label": "Verilen avanslar ()",
+   "lado": null,
+   "page": 36,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 –PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN / YÜKÜMLÜLÜKLER",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "season_tickets",
+     0.35000000000000003
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1366
+  },
+  {
+   "label": "Kısa Vadeli Peşin Ödenmiş Giderler",
+   "lado": null,
+   "page": 36,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 –PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN / YÜKÜMLÜLÜKLER",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "season_tickets",
+     0.08
+    ]
+   ],
+   "tokens": 1375
+  },
+  {
+   "label": "Uzun Vadeli Peşin Ödenmiş Giderler",
+   "lado": null,
+   "page": 36,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 –PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN / YÜKÜMLÜLÜKLER",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.21000000000000002
+    ],
+    [
+     "other_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 1374
+  },
+  {
+   "label": "Gelecek aylara ait loca satış gelirleri",
+   "lado": null,
+   "page": 37,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 – PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN",
+   "choice": "season_tickets",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "season_tickets",
+     0.6900000000000001
+    ],
+    [
+     "matchday_competition",
+     0.14
+    ],
+    [
+     "other_income",
+     0.09
+    ]
+   ],
+   "tokens": 1360
+  },
+  {
+   "label": "Gelecek aylara ait reklam ve sponsorluk gelirleri",
+   "lado": null,
+   "page": 37,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 – PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.89
+    ],
+    [
+     "other_income",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1364
+  },
+  {
+   "label": "Diğer",
+   "lado": null,
+   "page": 55,
+   "section": "# NOT 23 –FİNANSAL GELİRLER / GİDERLER",
+   "choice": "other_income",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1268
+  },
+  {
+   "label": "Toplam Peşin Ödenmiş Giderler",
+   "lado": null,
+   "page": 36,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 –PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN / YÜKÜMLÜLÜKLER",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "season_tickets",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1372
+  },
+  {
+   "label": "Alınan avanslar",
+   "lado": null,
+   "page": 37,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 – PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN",
+   "choice": "season_tickets",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "season_tickets",
+     0.66
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1355
+  },
+  {
+   "label": "Kısa vadeli müşteri sözleşmelerinden doğan yükümlülükler",
+   "lado": null,
+   "page": 37,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 – PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN",
+   "choice": "season_tickets",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "season_tickets",
+     0.41000000000000003
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1375
+  },
+  {
+   "label": "Gelecek yıllara ait isim hakkı gelirleri ()",
+   "lado": null,
+   "page": 37,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 – PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.47000000000000003
+    ],
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "lump_football_operations",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1364
+  },
+  {
+   "label": "Gelecek aylara ait yayın ve isim hakkı gelirleri (*)",
+   "lado": null,
+   "page": 37,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 – PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN",
+   "choice": "broadcasting",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "broadcasting",
+     0.8200000000000001
+    ],
+    [
+     "other_income",
+     0.12
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1364
+  },
+  {
+   "label": "Uzun vadeli müşteri sözleşmelerinden doğan yükümlülükler",
+   "lado": null,
+   "page": 37,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 – PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN",
+   "choice": "season_tickets",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "season_tickets",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "other_income",
+     0.13
+    ]
+   ],
+   "tokens": 1374
+  },
+  {
+   "label": "Gelecek yıllara ait loca satış gelirleri",
+   "lado": null,
+   "page": 37,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 – PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN",
+   "choice": "season_tickets",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "season_tickets",
+     0.46
+    ],
+    [
+     "stadium_other",
+     0.3
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1362
+  },
+  {
+   "label": "Gelecek yıllara ait reklam ve sponsorluk gelirleri",
+   "lado": null,
+   "page": 37,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 – PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.92
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1366
+  },
+  {
+   "label": "Cari gelir vergisi gideri",
+   "lado": null,
+   "page": 50,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1250
+  },
+  {
+   "label": "Toplam müşteri sözleşmelerinden doğan yükümlülükler",
+   "lado": null,
+   "page": 37,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 8 – PEŞİN ÖDENMİŞ GİDERLER VE MÜŞTERİ SÖZLEŞMELERİNDEN DOĞAN",
+   "choice": "season_tickets",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "season_tickets",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1372
+  },
+  {
+   "label": "Vergi gideri, net",
+   "lado": null,
+   "page": 50,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1314
+  },
+  {
+   "label": "Ertelenmiş vergi geliri",
+   "lado": null,
+   "page": 50,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "admin_general_expense",
+     0.29000000000000004
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1252
+  },
+  {
+   "label": "Konsolide gelir tablolarındaki vergi öncesi (zarar)",
+   "lado": null,
+   "page": 50,
+   "section": "Dönem vergi giderinin dönem karı ile mutabakatı aşağıdaki gibidir:",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1288
+  },
+  {
+   "label": "Hesaplanan vergi: %22 (2019: %22)",
+   "lado": null,
+   "page": 50,
+   "section": "Dönem vergi giderinin dönem karı ile mutabakatı aşağıdaki gibidir:",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1290
+  },
+  {
+   "label": "Kanunen kabul edilmeyen giderlerin etkisi",
+   "lado": null,
+   "page": 50,
+   "section": "Dönem vergi giderinin dönem karı ile mutabakatı aşağıdaki gibidir:",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "admin_general_expense",
+     0.47
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "Vergiye tabi olmayan farklar ve diğer farklar",
+   "lado": null,
+   "page": 50,
+   "section": "Dönem vergi giderinin dönem karı ile mutabakatı aşağıdaki gibidir:",
+   "choice": "admin_general_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1280
+  },
+  {
+   "label": "Pazarlama giderleri",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1340
+  },
+  {
+   "label": "Genel yönetim giderleri",
+   "lado": null,
+   "page": 55,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1346
+  },
+  {
+   "label": "Satışların maliyeti",
+   "lado": null,
+   "page": 55,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "match_organisation_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1345
+  },
+  {
+   "label": "Niteliklerine Göre Giderler",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "lump_football_operations_expense",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Amortisman ve itfa giderleri",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "depreciation",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "depreciation",
+     0.51
+    ],
+    [
+     "player_amortisation",
+     0.26
+    ],
+    [
+     "other_amortisation",
+     0.21
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Satılan ticari mallar maliyeti",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "sponsorship_commercial",
+     0.07
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Ücret giderleri",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1338
+  },
+  {
+   "label": "Personel giderleri",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "wages_squad",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1339
+  },
+  {
+   "label": "Futbolcu menajer giderleri",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "lump_football_operations_expense",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Futbol takımı giderleri",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1534
+  },
+  {
+   "label": "Tesis kullanım giderleri",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "admin_general_expense",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "stadium_other",
+     0.21000000000000002
+    ]
+   ],
+   "tokens": 1339
+  },
+  {
+   "label": "Ceza ve kesinti giderleri",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "exceptional_items",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1341
+  },
+  {
+   "label": "Vergi, resim ve harçlar",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "Futbolcu kiralama giderleri",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "lump_football_operations_expense",
+     0.26
+    ],
+    [
+     "wages_squad",
+     0.19
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "Güvenlik ve temizlik giderleri",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "match_organisation_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1344
+  },
+  {
+   "label": "Danışmanlık giderleri",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "Futbolcu transferlerine ilişkin giderler",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "player_amortisation",
+     0.21000000000000002
+    ],
+    [
+     "lump_football_operations_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1344
+  },
+  {
+   "label": "Kıdem tazminatı ve izin karşılığı",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "wages_squad",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "wages_squad",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1513
+  },
+  {
+   "label": "Avanslar itfa payı",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "player_amortisation",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "player_amortisation",
+     0.58
+    ],
+    [
+     "other_amortisation",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1386
+  },
+  {
+   "label": "Pazarlama ve promosyon giderleri",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Kira giderleri",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 1338
+  },
+  {
+   "label": "Pazarlama, satış ve dağıtım giderleri",
+   "lado": null,
+   "page": 55,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1351
+  },
+  {
+   "label": "Futbolcu dayanışma katkı payları",
+   "lado": null,
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 20 – NİTELİKLERİNE GÖRE GİDERLER",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "lump_football_operations_expense",
+     0.2
+    ],
+    [
+     "wages_squad",
+     0.16
+    ]
+   ],
+   "tokens": 1347
+  },
+  {
+   "label": "Konusu kalmayan karşılıklar",
+   "lado": null,
+   "page": 55,
+   "section": "# NOT 21 –ESAS FAALİYETLERDEN DİĞER GELİRLER/GİDERLER",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "exceptional_items",
+     0.06999999999999999
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1283
+  },
+  {
+   "label": "Ertelenmiş finansman gelirleri",
+   "lado": null,
+   "page": 55,
+   "section": "# NOT 21 –ESAS FAALİYETLERDEN DİĞER GELİRLER/GİDERLER",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "Ticari işlemlere ilişkin kambiyo karı",
+   "lado": null,
+   "page": 55,
+   "section": "# NOT 21 –ESAS FAALİYETLERDEN DİĞER GELİRLER/GİDERLER",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "Ticari işlemlere ilişkin kambiyo zararı",
+   "lado": null,
+   "page": 55,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Karşılık giderleri",
+   "lado": null,
+   "page": 55,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "player_impairment",
+     0.18000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1250
+  },
+  {
+   "label": "Ertelenmiş finansman giderleri",
+   "lado": null,
+   "page": 55,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1254
+  },
+  {
+   "label": "Faiz gelirleri (*)",
+   "lado": null,
+   "page": 55,
+   "section": "# NOT 23 –FİNANSAL GELİRLER / GİDERLER",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Bonservis satış karı, net",
+   "lado": null,
+   "page": 55,
+   "section": "# NOT 22 –YATIRIM FAALİYETLERİNDEN GELİRLER/GİDERLER",
+   "choice": "player_sales",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "player_sales",
+     0.89
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1345
+  },
+  {
+   "label": "Sabit kıymet satış karı",
+   "lado": null,
+   "page": 55,
+   "section": "# NOT 22 –YATIRIM FAALİYETLERİNDEN GELİRLER/GİDERLER",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "player_sales",
+     0.03
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "Faiz giderleri",
+   "lado": null,
+   "page": 56,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 23 –FİNANSAL GELİRLER / GİDERLER (devamı)",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.31
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1340
+  },
+  {
+   "label": "Kambiyo zararları",
+   "lado": null,
+   "page": 56,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 23 –FİNANSAL GELİRLER / GİDERLER (devamı)",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "Faktoring giderleri",
+   "lado": null,
+   "page": 56,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 23 –FİNANSAL GELİRLER / GİDERLER (devamı)",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "Banka komisyon giderleri ve diğer giderler",
+   "lado": null,
+   "page": 56,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 23 –FİNANSAL GELİRLER / GİDERLER (devamı)",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "admin_general_expense",
+     0.41
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1348
+  },
+  {
+   "label": "FBSK (*)",
+   "lado": null,
+   "page": 58,
+   "section": "(*) Ana ortaklık / () Ana ortağın kontrolündeki şirketler",
+   "choice": "other_income",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "lump_football_operations",
+     0.09999999999999999
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "Fener TV Fener Televizyon Haber ve Görsel Yay. A.Ş. ()",
+   "lado": null,
+   "page": 58,
+   "section": "",
+   "choice": "broadcasting",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "broadcasting",
+     0.93
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Fenerbahçe Spor Okulları Eğt.İşl.San.Tic. Ltd.Şti. ()",
+   "lado": null,
+   "page": 58,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 24 – İLİŞKİLİ TARAF AÇIKLAMALARI (devamı)",
+   "choice": "education",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "education",
+     0.51
+    ],
+    [
+     "other_income",
+     0.26
+    ],
+    [
+     "education_expense",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1446
+  },
+  {
+   "label": "Fenerbahçe Turizm ve Catering İşl.Tic.Ltd.Şti. ()",
+   "lado": null,
+   "page": 58,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 24 – İLİŞKİLİ TARAF AÇIKLAMALARI (devamı)",
+   "choice": "other_income",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "stadium_other",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1534
+  },
+  {
+   "label": "Fenerbahçe İletişim Hizmetleri San. ve Tic. A.Ş. ()",
+   "lado": null,
+   "page": 58,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2020 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 24 – İLİŞKİLİ TARAF AÇIKLAMALARI (devamı)",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1441
+  },
+  {
+   "label": "Fenerbahçe Turizm ve Catering İşl. San. ve Tic. Ltd. Şti. ()",
+   "lado": null,
+   "page": 58,
+   "section": "(*) Ana ortaklık / () Ana ortağın kontrolündeki şirketler",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.5
+    ],
+    [
+     "stadium_other",
+     0.25
+    ],
+    [
+     "sponsorship_commercial",
+     0.15
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Fenerbahçe Spor Okulları Eğt.İşl.San.Tic. Ltd.Şti ()",
+   "lado": null,
+   "page": 58,
+   "section": "(*) Ana ortaklık / () Ana ortağın kontrolündeki şirketler",
+   "choice": "education",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "education",
+     0.43
+    ],
+    [
+     "other_income",
+     0.27
+    ],
+    [
+     "education_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1374
+  },
+  {
+   "label": "Fenerbahçe Eğitim Öğretim İşl. ve Tic. A.Ş. ()",
+   "lado": null,
+   "page": 58,
+   "section": "",
+   "choice": "education_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "education_expense",
+     0.49
+    ],
+    [
+     "education",
+     0.4
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1264
+  },
+  {
+   "label": "Aktif Gençlik Sportif Yat. Yön. Hizm. Tic. A.S.()",
+   "lado": null,
+   "page": 58,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "youth_other_sports_expense",
+     0.21000000000000002
+    ],
+    [
+     "youth_football",
+     0.15
+    ]
+   ],
+   "tokens": 1265
+  }
+ ]
+}

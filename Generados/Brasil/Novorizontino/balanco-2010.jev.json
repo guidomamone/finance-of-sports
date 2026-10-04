@@ -1,0 +1,122 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/balanco-2010.md",
+ "generatedAt": "2026-10-03T03:00:07.500Z",
+ "rubrosHuella": "9cf02a2382a0295511ae057ebcefa764762032da",
+ "rubros": [
+  {
+   "label": "Administrativas",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Doações, Receitas de Patrocínio, Locação de Espaço, e Ev",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "sponsorship_commercial",
+     0.07
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Convênio P.M.N.H nº 21/10",
+   "lado": "revenue",
+   "page": 1,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "sponsorship_commercial",
+     0.09999999999999999
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 915
+  },
+  {
+   "label": "Despesas Gerais e Manutenção",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 990
+  },
+  {
+   "label": "Projeto Escola de Futebol -Conv. Nº 21/10",
+   "lado": "expense",
+   "page": 1,
+   "section": "estado",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.91
+    ],
+    [
+     "education_expense",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1020
+  }
+ ]
+}

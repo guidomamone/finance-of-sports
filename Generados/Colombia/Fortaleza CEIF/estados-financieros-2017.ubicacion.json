@@ -1,0 +1,309 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-02T02:40:52.235Z",
+ "intentoNotasComoEstado": true,
+ "estadoDesdeNotas": true,
+ "bloques": {
+  "b1": {
+   "pagina": 4,
+   "lineas": [
+    135,
+    141
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 8,
+   "lineas": [
+    269,
+    273
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 9,
+   "lineas": [
+    291,
+    300
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    312,
+    316
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 9,
+   "lineas": [
+    322,
+    325
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 10,
+   "lineas": [
+    335,
+    336
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 10,
+   "lineas": [
+    346,
+    351
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    357,
+    362
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 10,
+   "lineas": [
+    364,
+    369
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 11,
+   "lineas": [
+    385,
+    391
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 11,
+   "lineas": [
+    395,
+    400
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 11,
+   "lineas": [
+    412,
+    418
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 12,
+   "lineas": [
+    454,
+    456
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 13,
+   "lineas": [
+    466,
+    475
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 13,
+   "lineas": [
+    481,
+    485
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 13,
+   "lineas": [
+    491,
+    495
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 14,
+   "lineas": [
+    515,
+    518
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 14,
+   "lineas": [
+    526,
+    530
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 14,
+   "lineas": [
+    536,
+    543
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 14,
+   "lineas": [
+    547,
+    552
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 15,
+   "lineas": [
+    562,
+    566
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 15,
+   "lineas": [
+    572,
+    577
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 15,
+   "lineas": [
+    585,
+    606
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 16,
+   "lineas": [
+    616,
+    657
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 17,
+   "lineas": [
+    667,
+    685
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 17,
+   "lineas": [
+    691,
+    710
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 18,
+   "lineas": [
+    720,
+    748
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 18,
+   "lineas": [
+    754,
+    761
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 19,
+   "lineas": [
+    771,
+    772
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 19,
+   "lineas": [
+    778,
+    783
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 19,
+   "lineas": [
+    789,
+    794
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b19",
+  "b22",
+  "b25",
+  "b23",
+  "b24",
+  "b27",
+  "b26",
+  "b28",
+  "b30",
+  "b31",
+  "b18"
+ ],
+ "notas_ingresos": [
+  "b20",
+  "b21"
+ ],
+ "notas_gastos": [],
+ "escala": "miles",
+ "escala_evidencia": "(Valores expresados en miles de pesos Colombianos)",
+ "moneda": "COP",
+ "columna_ejercicio": "A 31 de Diciembre de 2017",
+ "columna_anterior": "A 31 de Diciembre de 2016",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se toma 'Resultado Año 2017' 1,347,094 de la nota 18 (b18) como resultado del ejercicio 2017?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Resultado Año 2017",
+   "texto": "No hay estado de resultados; el único resultado impreso está en la nota de resultados acumulados (b18), que es de patrimonio.",
+   "bloques": [
+    "b18"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El cuadro de otros gastos (b28) no imprime total y se suma tal cual, incluyendo 'Impuestos Asumidos' negativo (1,468)?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Impuestos Asumidos",
+   "texto": "b28 no muestra fila total en el texto visto y el signo de Impuestos Asumidos 2017 es inverso al de 2016.",
+   "bloques": [
+    "b28"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El documento trae solo notas. Gastos de administración en b23-b24-b25 (continuación), gastos de ventas b26-b27. b20/b21 desglosan ingresos ordinarios de b19 sin columna 2016. Etiquetas de totales mal transcritas ('Total Pasivos por Impuestos', 'Total Otros Gastos' en otros ingresos)."
+}

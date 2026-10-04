@@ -1,0 +1,233 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.pdf",
+ "md": "Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T01:45:56.023Z",
+ "ubicacion": {
+  "estado": [
+   "b5"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b5",
+   "escala": "unidades",
+   "evidencia": "Importes impresos con decimales (ej. 8,019,563.48), sin indicación de miles ni millones"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b5",
+   "linea": 165,
+   "etiqueta": "RECEITA OPERACIONAL BRUTA",
+   "actual": "8,019,563.48",
+   "anterior": "3,240,404.99",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 166,
+   "etiqueta": "RENDAS DE JOGOS, PATROCÍNIOS, LOCAÇÕES E OUTRAS RECEITAS OPERACIONAIS",
+   "actual": "8,019,563.48",
+   "anterior": "3,240,404.99",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 167,
+   "etiqueta": "= RECEITA OPERACIONAL LÍQUIDA COM RECURSOS PRÓPRIOS",
+   "actual": "8,019,563.48",
+   "anterior": "3,240,404.99",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 168,
+   "etiqueta": "(-)CUSTOS C/ APLICAÇÃO DE RECURSOS PRÓPRIOS",
+   "actual": "-6,604,130.99",
+   "anterior": "-6,207,219.25",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 169,
+   "etiqueta": "(-) Ordenados, Salários, Encargos Sociais e Trabalhistas e Outros",
+   "actual": "-6,604,130.99",
+   "anterior": "-6,207,219.25",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 170,
+   "etiqueta": "= RESULTADO OPERACIONAL BRUTO",
+   "actual": "1,415,432.49",
+   "anterior": "-2,966,814.26",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 171,
+   "etiqueta": "(-) DESPESAS OPERACIONAIS PAGAS COM RECURSOS PRÓPRIOS",
+   "actual": "-6,189,941.01",
+   "anterior": "-3,812,806.09",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 172,
+   "etiqueta": "Despesas Administrativas",
+   "actual": "-3,128,041.37",
+   "anterior": "-1,794,003.90",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 173,
+   "etiqueta": "Despesas Gerais e de Manutenção",
+   "actual": "-2,563,700.00",
+   "anterior": "-1,945,370.99",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 174,
+   "etiqueta": "Provisões no Exercício",
+   "actual": "-414,147.76",
+   "anterior": "0.00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 175,
+   "etiqueta": "Receitas Financeiras Líquidas",
+   "actual": "-140,201.54",
+   "anterior": "-75,361.20",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 176,
+   "etiqueta": "Recuperação de Despesas",
+   "actual": "56,149.66",
+   "anterior": "1,930.00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 177,
+   "etiqueta": "RESULTADO OPERACIONAL LÍQUIDO",
+   "actual": "-4,774,508.52",
+   "anterior": "-6,779,620.35",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 178,
+   "etiqueta": "RECEITAS DE RECURSOS PÚBLICOS",
+   "actual": "70,525.52",
+   "anterior": "0.00",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 179,
+   "etiqueta": "RECURSOS PUBLICOS",
+   "actual": "70,525.52",
+   "anterior": "0.00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 180,
+   "etiqueta": "APLICAÇÃO DOS RECURSOS PÚBLICOS",
+   "actual": "-70,525.52",
+   "anterior": "0.00",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 181,
+   "etiqueta": "(-) DESPESAS OPERACIONAIS PAGAS COM RECURSOS PÚBLICOS",
+   "actual": "-70,525.52",
+   "anterior": "0.00",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 182,
+   "etiqueta": "RESULTADO ECONÔMICO ANTES DOS IMPOSTOS INCIDENTES",
+   "actual": "-4,774,508.52",
+   "anterior": "-6,779,620.35",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b5",
+   "linea": 183,
+   "etiqueta": "SUPERÁVIT/DÉFICIT DO PERÍODO",
+   "actual": "-4,774,508.52",
+   "anterior": "-6,779,620.35",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 183,
+  "actual": "-4,774,508.52",
+  "anterior": "-6,779,620.35"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga 'Receitas Financeiras Líquidas' (L175, -140,201.54) como resultado financiero neto negativo, pese a llamarse receita?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Receitas Financeiras Líquidas",
+   "texto": "La etiqueta dice receitas pero el importe es negativo dentro de despesas operacionais (L175).",
+   "bloques": [
+    "b5"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "No hay total de ingresos ni de gastos consolidado impreso (los ingresos propios L167 y los recursos públicos L178 van separados); se resuelve sumando. Recursos públicos se compensan exactamente con su aplicación (L178-L181). No hay impuestos: el resultado antes de impuestos es igual al del período."
+}

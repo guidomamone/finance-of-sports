@@ -1,0 +1,788 @@
+{
+ "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2022.md",
+ "generatedAt": "2026-09-30T04:27:35.845Z",
+ "rubros": [
+  {
+   "label": "clasificados como mantenidos para la venta",
+   "lado": "revenue",
+   "page": 5,
+   "section": "Total de activos corrientes distintos de los activos o grupos / de activos para su disposición clasificados como mantenidos / para la venta o como mantenidos para distribuir a los / Activos no corrientes o grupos de activos para su disposición",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "player_sales",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1085
+  },
+  {
+   "label": "Ganancia bruta",
+   "lado": null,
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2022 Y 2021.",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "lump_football_operations",
+     0.31
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1547
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": null,
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2022 Y 2021.",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "Activos corrientes totales",
+   "lado": "revenue",
+   "page": 83,
+   "section": "Pesos         2.119.603        2.167.428 / Dólares               0                0 / Activos no corrientes o grupos de activos para su disposición clasificados / Euros                 0                0 / como mantenidos para la venta",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": null,
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2022 Y 2021.",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.7
+    ],
+    [
+     "lump_football_operations",
+     0.27
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1513
+  },
+  {
+   "label": "Importe en libros - (1.249.367) -",
+   "lado": "revenue",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "choice": "player_sales",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "player_sales",
+     0.67
+    ],
+    [
+     "other_income",
+     0.26
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 947
+  },
+  {
+   "label": "Gasto de administración",
+   "lado": null,
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2022 Y 2021.",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1538
+  },
+  {
+   "label": "Ingresos financieros",
+   "lado": null,
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR LOS PERIODOS TERMINADOS AL 31 DE DICIEMBRE DE 2022 Y 2021.",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "Amortización Acumulada - 1.006.276 -",
+   "lado": "revenue",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "choice": "other_income",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "broadcasting",
+     0.19
+    ],
+    [
+     "player_sales",
+     0.19
+    ]
+   ],
+   "tokens": 901
+  },
+  {
+   "label": "Gastos por amortización",
+   "lado": "revenue",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 76,
+   "section": "21- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1054
+  },
+  {
+   "label": "Amortización Acumulada - 716.175 -",
+   "lado": "revenue",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "broadcasting",
+     0.25
+    ],
+    [
+     "player_sales",
+     0.11
+    ]
+   ],
+   "tokens": 899
+  },
+  {
+   "label": "Derechos de T.V.",
+   "lado": "revenue",
+   "page": 76,
+   "section": "21- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Participación torneos Internacionales",
+   "lado": "revenue",
+   "page": 76,
+   "section": "21- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Borderó",
+   "lado": "revenue",
+   "page": 76,
+   "section": "21- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 926
+  },
+  {
+   "label": "Importe en libros - (1.017.119) -",
+   "lado": "revenue",
+   "page": 54,
+   "section": "Bajas o ventas",
+   "choice": "player_sales",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "player_sales",
+     0.73
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 947
+  },
+  {
+   "label": "Ingresos por transferencias de pases de jugadores",
+   "lado": "revenue",
+   "page": 76,
+   "section": "21- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Borderó (costos directos)",
+   "lado": null,
+   "page": 77,
+   "section": "22.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "match_organisation_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.9
+    ],
+    [
+     "matchday_competition",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "Ingresos varios",
+   "lado": "revenue",
+   "page": 76,
+   "section": "21- INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Amortización de pases",
+   "lado": null,
+   "page": 77,
+   "section": "22.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1532
+  },
+  {
+   "label": "Asesorías",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 918
+  },
+  {
+   "label": "Remuneraciones",
+   "lado": null,
+   "page": 77,
+   "section": "22.- COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "wages_squad",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "lump_football_operations_expense",
+     0.19
+    ]
+   ],
+   "tokens": 1503
+  },
+  {
+   "label": "Otros gastos de operación",
+   "lado": null,
+   "page": 77,
+   "section": "Costo de venta pases de jugadores                       (25.341)                        -",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1496
+  },
+  {
+   "label": "Arriendos -",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 959
+  },
+  {
+   "label": "Depreciaciones y amortizaciones",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Servicios básicos",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Remuneraciones Administración",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1084
+  },
+  {
+   "label": "Mantenciones",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 916
+  },
+  {
+   "label": "Otros Activos no financieros no corrientes 709.337 709.337 - - - -",
+   "lado": "revenue",
+   "page": 81,
+   "section": "Total de activos corrientes distintos de los activos o grupos de / venta o como mantenidos para distribuir a los propietarios / Activos no corrientes",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Activos intangibles distintos de la plusvalía 8.644.081 7.000.953 - - - -",
+   "lado": "revenue",
+   "page": 81,
+   "section": "Total de activos corrientes distintos de los activos o grupos de / venta o como mantenidos para distribuir a los propietarios / Activos no corrientes",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "player_sales",
+     0.04
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "Otros Gastos de Administración",
+   "lado": "expense",
+   "page": 77,
+   "section": "asesorías en transferencias y pagos por colaboración en préstamos de jugadores. / b) El detalle del rubro Gastos de Administración es el siguiente: / 31-12-2022                31-12-2021 / Gastos de administración / M$                     M$",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Activos por impuestos diferidos 7.507.864 7.036.224 700.273 391.636 - -",
+   "lado": "revenue",
+   "page": 81,
+   "section": "Total de activos corrientes distintos de los activos o grupos de / venta o como mantenidos para distribuir a los propietarios / Activos no corrientes",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1084
+  },
+  {
+   "label": "Propiedades, Planta y Equipo 2.197.464 2.443.538 - - - -",
+   "lado": "revenue",
+   "page": 81,
+   "section": "Total de activos corrientes distintos de los activos o grupos de / venta o como mantenidos para distribuir a los propietarios / Activos no corrientes",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "stadium_other",
+     0.07
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Pesos",
+   "lado": "revenue",
+   "page": 83,
+   "section": "Pesos         2.119.603        2.167.428 / Dólares               0                0 / Activos no corrientes o grupos de activos para su disposición clasificados / Euros                 0                0 / como mantenidos para la venta",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 890
+  }
+ ]
+}

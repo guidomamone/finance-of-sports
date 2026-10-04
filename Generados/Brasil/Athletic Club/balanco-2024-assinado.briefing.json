@@ -1,0 +1,3015 @@
+{
+  "club": "athletic-club",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Athletic Club/balanco-2024-assinado.md",
+  "generatedAt": "2026-09-30T21:51:22.623Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 83,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 6,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": null,
+      "columns": [
+        "Empresa: A.C. ESPORTES S.A.F.",
+        "Folha: 0001"
+      ],
+      "rows": [
+        {
+          "rawLabel": "C.N.P.J.: 44.637.793/0001-20",
+          "values": [
+            "Número livro: 0001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Insc. Junta Comercial: 31300143821 Data: 20/12/2021",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balanço encerrado em: 31/12/2024",
+          "values": [
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "### BALANÇO PATRIMONIAL",
+      "columns": [
+        "Código",
+        "Classificação",
+        "Descrição",
+        "Saldo Atual"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1",
+          "values": [
+            "1",
+            "ATIVO",
+            "19.222.369,79D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2",
+          "values": [
+            "1.1",
+            "CIRCULANTE",
+            "5.998.453,72D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "3",
+          "values": [
+            "1.1.01",
+            "DISPONÍVEL",
+            "224.728,36D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "4",
+          "values": [
+            "1.1.01.01",
+            "CAIXA",
+            "9.688,82D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2047",
+          "values": [
+            "1.1.01.01.01",
+            "CAIXA",
+            "9.688,82D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5",
+          "values": [
+            "1.1.01.01.01.0001",
+            "Caixa Matriz",
+            "9.688,82D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7",
+          "values": [
+            "1.1.01.02",
+            "BANCO CONTA MOVIMENTO",
+            "214.645,17D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2045",
+          "values": [
+            "1.1.01.02.02",
+            "BANCOS CONTA MOVIMENTO",
+            "214.645,17D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "10",
+          "values": [
+            "1.1.01.02.02.0005",
+            "Banco Itau",
+            "214.645,17D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11",
+          "values": [
+            "1.1.01.03",
+            "APLICAÇÕES FINANCEIRAS",
+            "394,37D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2046",
+          "values": [
+            "1.1.01.03.02",
+            "APLICAÇÕES FINANCEIRAS",
+            "394,37D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2052",
+          "values": [
+            "1.1.01.03.02.0001",
+            "Banco Sicredi - Conta Poupança",
+            "394,37D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "15",
+          "values": [
+            "1.1.02",
+            "CLIENTES",
+            "2.000.000,00D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "16",
+          "values": [
+            "1.1.02.01",
+            "CLIENTES",
+            "2.000.000,00D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2053",
+          "values": [
+            "1.1.02.01.01",
+            "CLIENTES A RECEBER",
+            "2.000.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1329",
+          "values": [
+            "1.1.02.01.01.0002",
+            "Clientes Vendas de Jogadores",
+            "2.000.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "580",
+          "values": [
+            "1.1.03",
+            "OUTROS CREDITOS",
+            "3.632.139,96D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1328",
+          "values": [
+            "1.1.03.01",
+            "TÍTULOS A RECEBER",
+            "3.553.389,96D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2054",
+          "values": [
+            "1.1.03.01.01",
+            "TÍTULOA A RECEBER",
+            "3.553.389,96D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2137",
+          "values": [
+            "1.1.03.01.01.0001",
+            "Consórcio Energia",
+            "5.444,97D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2144",
+          "values": [
+            "1.1.03.01.01.0002",
+            "Patrocínios Diversos",
+            "2.238.726,24D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2172",
+          "values": [
+            "1.1.03.01.01.0003",
+            "Provisão Participação Campeonatos",
+            "1.309.218,75D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2056",
+          "values": [
+            "1.1.03.03",
+            "ADIANTAMENTOS A TERCEIROS",
+            "78.750,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2055",
+          "values": [
+            "1.1.03.03.01",
+            "ADIANTAMENTOS A FORNECEDORES",
+            "78.750,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1025",
+          "values": [
+            "1.1.03.03.01.0001",
+            "Adiantamentos a Fornecedores",
+            "78.750,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "38",
+          "values": [
+            "1.1.05",
+            "ESTOQUES",
+            "141.585,40D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "39",
+          "values": [
+            "1.1.05.01",
+            "ESTOQUES DE MERCADORIAS",
+            "141.585,40D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2059",
+          "values": [
+            "1.1.05.01.01",
+            "ESTOQUES DE MERCADORIAS MATRIZ/FILIAL",
+            "141.585,40D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "40",
+          "values": [
+            "1.1.05.01.01.0001",
+            "Mercadoria para Revenda",
+            "141.585,40D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "69",
+          "values": [
+            "1.2",
+            "NÃO CIRCULANTE",
+            "13.223.916,07D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "70",
+          "values": [
+            "1.2.01",
+            "REALIZÁVEL A LONGO PRAZO",
+            "733.333,24D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "71",
+          "values": [
+            "1.2.01.01",
+            "CRÉDITOS E VALORES",
+            "733.333,24D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2236",
+          "values": [
+            "1.2.01.01.06",
+            "CLIENTES A RECEBER A LONGO PRAZO",
+            "733.333,24D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2237",
+          "values": [
+            "1.2.01.01.06.0001",
+            "Clientes Vendas de Jogadores",
+            "733.333,24D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "73",
+          "values": [
+            "1.2.05",
+            "ATIVO IMOBILIZADO",
+            "5.274.039,93D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "76",
+          "values": [
+            "1.2.05.01",
+            "ATIVO IMOBILIZADO",
+            "5.274.039,93D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "77",
+          "values": [
+            "1.2.05.01.01",
+            "ATIVO IMOBILIZADO",
+            "5.300.759,39D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "78",
+          "values": [
+            "1.2.05.01.01.0002",
+            "Móveis e utensílios",
+            "118.085,60D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "402",
+          "values": [
+            "1.2.05.01.01.0004",
+            "Maquinas e Equipamentos",
+            "108.431,50D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2105",
+          "values": [
+            "1.2.05.01.01.0005",
+            "Benfeitorias Prédio de Terceiros",
+            "4.854.242,29D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2228",
+          "values": [
+            "1.2.05.01.01.0007",
+            "Terrenos",
+            "220.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "87",
+          "values": [
+            "1.2.05.01.04",
+            "(-) DEPRECIAÇÕES E AMORTIZAÇÕES",
+            "26.719,46C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "88",
+          "values": [
+            "1.2.05.01.04.0002",
+            "(-) Depreciação Acum.móveis e utensílios",
+            "16.170,16C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "89",
+          "values": [
+            "1.2.05.01.04.0004",
+            "(-) Depreciação Acumuladas Maquinas e Equipamentos",
+            "10.549,30C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "83",
+          "values": [
+            "1.2.06",
+            "INTANGÍVEIS",
+            "4.670.307,90D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2061",
+          "values": [
+            "1.2.06.01",
+            "BENS INTANGÍVEIS",
+            "4.670.307,90D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2062",
+          "values": [
+            "1.2.06.01.01",
+            "BENS INTANGÍVEIS",
+            "5.269.458,55D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2063",
+          "values": [
+            "1.2.06.01.01.0001",
+            "Direitos Econômicos Atletas",
+            "5.129.458,55D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2183",
+          "values": [
+            "1.2.06.01.01.0002",
+            "Direito a Participação n/ Campeonatos",
+            "140.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2194",
+          "values": [
+            "1.2.06.01.02",
+            "( - ) AMORTIZAÇÃO INTANGÍVEL",
+            "599.150,65C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2195",
+          "values": [
+            "1.2.06.01.02.0001",
+            "(-) Amortizaçao Bem Intangível",
+            "599.150,65C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2230",
+          "values": [
+            "1.2.07",
+            "INVESTIMENTOS",
+            "2.546.235,00D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2231",
+          "values": [
+            "1.2.07.01",
+            "INVESTIMENTOS",
+            "2.546.235,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2226",
+          "values": [
+            "1.2.07.01.01",
+            "INVESTIMENTOS",
+            "2.546.235,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2227",
+          "values": [
+            "1.2.07.01.01.0001",
+            "Adiantamento Vertentes Empreendimentos Imobiliários Ltda",
+            "2.546.235,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "96",
+          "values": [
+            "2",
+            "PASSIVO",
+            "19.222.369,79C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "97",
+          "values": [
+            "2.1",
+            "CIRCULANTE",
+            "13.499.363,01C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "98",
+          "values": [
+            "2.1.01",
+            "FORNECEDORES",
+            "5.962.251,56C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "99",
+          "values": [
+            "2.1.01.01",
+            "FORNECEDORES",
+            "5.962.251,56C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2064",
+          "values": [
+            "2.1.01.01.01",
+            "FORNECEDORES",
+            "5.962.251,56C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empresa: A.C. ESPORTES S.A.F.",
+          "values": [
+            "Folha: 0002"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C.N.P.J.: 44.637.793/0001-20",
+          "values": [
+            "Número livro: 0001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Insc. Junta Comercial: 31300143821 Data: 20/12/2021",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balanço encerrado em: 31/12/2024",
+          "values": [
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "### BALANÇO PATRIMONIAL",
+      "columns": [
+        "Código",
+        "Classificação",
+        "Descrição",
+        "Saldo Atual"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2212",
+          "values": [
+            "2.1.01.01.01.0002",
+            "Compras de Atletas",
+            "4.039.125,22C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2213",
+          "values": [
+            "2.1.01.01.01.0003",
+            "Empréstimo de Jogadores",
+            "100.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2261",
+          "values": [
+            "2.1.01.01.01.0025",
+            "JR Carvalho Embalagens Ltda",
+            "621,75C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2264",
+          "values": [
+            "2.1.01.01.01.0028",
+            "ELETRO BRAGA LTDA",
+            "895,06C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2266",
+          "values": [
+            "2.1.01.01.01.0030",
+            "POSTO MOTOCAR LTDA EPP",
+            "2.360,68C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2267",
+          "values": [
+            "2.1.01.01.01.0031",
+            "PNEUMASTER COMERCIO DE PNEUS LTDA",
+            "4.753,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2269",
+          "values": [
+            "2.1.01.01.01.0033",
+            "SERGIO ADRIANO LOPES DA SILVA - ME",
+            "716,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2270",
+          "values": [
+            "2.1.01.01.01.0034",
+            "VERTENTES EMBALAGENS LIMPEZA E DESCARTAVEIS LTDA",
+            "9.906,35C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2274",
+          "values": [
+            "2.1.01.01.01.0038",
+            "JULIO CESAR DE AGUIAR 07134392627",
+            "5.388,30C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2276",
+          "values": [
+            "2.1.01.01.01.0040",
+            "COMERCIAL R E LTDA",
+            "1.280,81C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2284",
+          "values": [
+            "2.1.01.01.01.0048",
+            "ESPORTE CLUBE FUTGOL",
+            "70.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2285",
+          "values": [
+            "2.1.01.01.01.0049",
+            "TIAGO LENOIR MOREIRA SOCIEDADE INDIVIDUAL DE ADVOCACIA",
+            "21.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2286",
+          "values": [
+            "2.1.01.01.01.0050",
+            "J9B SPORTS ASSESSORIA SOCIEDADE UNIPESSOAL LTDA",
+            "12.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2289",
+          "values": [
+            "2.1.01.01.01.0053",
+            "SOCCER MANAGEMENT BRAZIL LTDA",
+            "3.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2290",
+          "values": [
+            "2.1.01.01.01.0054",
+            "JOAO HENRIQUE SILVA CASTRO 08824276601",
+            "18.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2294",
+          "values": [
+            "2.1.01.01.01.0058",
+            "26.556.540 CARLOS EDUARDO SILVA",
+            "8.450,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2295",
+          "values": [
+            "2.1.01.01.01.0059",
+            "ERNANI RODRIGUES DOS SANTOS 04803865604",
+            "12.582,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2296",
+          "values": [
+            "2.1.01.01.01.0060",
+            "MARCELUS LIMA GALLI 05180221617",
+            "9.140,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2298",
+          "values": [
+            "2.1.01.01.01.0062",
+            "50.802.386 WELLINGTON ANDERSON PREVIATO GUEDES",
+            "3.200,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2299",
+          "values": [
+            "2.1.01.01.01.0063",
+            "52.481.814 MAIK CESAR APARECIDO RIBEIRO",
+            "22.180,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2300",
+          "values": [
+            "2.1.01.01.01.0064",
+            "52.793.911 JEFFERSON PIRES DA COSTA",
+            "1.248,15C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2302",
+          "values": [
+            "2.1.01.01.01.0066",
+            "53.364.356 SAMUEL FELIPE XAVIER FONSECA",
+            "3.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2305",
+          "values": [
+            "2.1.01.01.01.0069",
+            "54.874.901 DJALMA CELESTINO EVARISTO",
+            "27.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2307",
+          "values": [
+            "2.1.01.01.01.0071",
+            "50.564.705 ALASON AZEVEDO JULIO",
+            "5.683,93C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2308",
+          "values": [
+            "2.1.01.01.01.0072",
+            "53.093.321 LUCAS PASSARELLI",
+            "12.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2310",
+          "values": [
+            "2.1.01.01.01.0074",
+            "53.062.925 LEONARDO CRUZ",
+            "1.500,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2311",
+          "values": [
+            "2.1.01.01.01.0075",
+            "54.592.478 FRANCIVALDO MATEUS NASCIMENTO DA SILVA",
+            "3.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2312",
+          "values": [
+            "2.1.01.01.01.0076",
+            "FGF SPORTS LTDA",
+            "38.595,37C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2315",
+          "values": [
+            "2.1.01.01.01.0079",
+            "OLIVEIRA NETO SPORTS LTDA",
+            "10.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2320",
+          "values": [
+            "2.1.01.01.01.0084",
+            "K9 LOCAçõES E EVENTOS LTDA",
+            "7.284,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2321",
+          "values": [
+            "2.1.01.01.01.0085",
+            "BROTHERS ACADEMIA LTDA",
+            "4.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2323",
+          "values": [
+            "2.1.01.01.01.0087",
+            "R9 MARKETING ESPORTIVO LTDA",
+            "100.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2327",
+          "values": [
+            "2.1.01.01.01.0091",
+            "MERCOMINAS COMERCIO LTDA",
+            "1.472,48C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2328",
+          "values": [
+            "2.1.01.01.01.0092",
+            "M PIRES FERNANDES & CIA LTDA",
+            "3.342,49C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2329",
+          "values": [
+            "2.1.01.01.01.0093",
+            "SERRARIA AGOSTINI LTDA",
+            "269,25C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2330",
+          "values": [
+            "2.1.01.01.01.0094",
+            "XENIA ZECCHIN VENDRAMINI 12290845841",
+            "9.118,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2331",
+          "values": [
+            "2.1.01.01.01.0095",
+            "REAL ELETRICA LTDA",
+            "32,57C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2332",
+          "values": [
+            "2.1.01.01.01.0096",
+            "AGUIA DOURADA MODAS E ACESSORIOS LTDA",
+            "3.947,50C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2333",
+          "values": [
+            "2.1.01.01.01.0097",
+            "43.808.208 WESLEY CASSIANO DA SILVA",
+            "1.050,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2334",
+          "values": [
+            "2.1.01.01.01.0098",
+            "MARIANA BARROS VERISSIMO 09337255669",
+            "6.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2335",
+          "values": [
+            "2.1.01.01.01.0099",
+            "55.058.203 NATHALIA PEREIRA DE SOUZA",
+            "9.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2336",
+          "values": [
+            "2.1.01.01.01.0100",
+            "RITA DO AMOR DIVINO DINIS",
+            "9.351,61C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2337",
+          "values": [
+            "2.1.01.01.01.0101",
+            "HOSPITAL MATER DEI S.A.",
+            "11.247,38C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2340",
+          "values": [
+            "2.1.01.01.01.0104",
+            "REMOCOES RESENDE LTDA",
+            "12.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2342",
+          "values": [
+            "2.1.01.01.01.0106",
+            "CONTABILIDADE G SANTOS EIRELI",
+            "4.100,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2343",
+          "values": [
+            "2.1.01.01.01.0107",
+            "INKPLUS INFORMATICA E CARTUCHOS LTDA - ME",
+            "1.440,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2344",
+          "values": [
+            "2.1.01.01.01.0108",
+            "DEL REI ALARMES, ELETRONICA LTDA - ME",
+            "852,32C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2346",
+          "values": [
+            "2.1.01.01.01.0110",
+            "UNIMED DE S J DEL REI COOP DE TRABALHO MEDICO",
+            "349,86C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2349",
+          "values": [
+            "2.1.01.01.01.0113",
+            "ADEMIR GIAROLA 11233893653",
+            "12.760,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2351",
+          "values": [
+            "2.1.01.01.01.0115",
+            "ZICA COSTA INDUSTRIA E COMERCIO DE CONFECCOES LTDA",
+            "19.138,15C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2352",
+          "values": [
+            "2.1.01.01.01.0116",
+            "COMERCIAL ALMEIDA E RODRIGUES LTDA - EPP",
+            "2.779,05C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2353",
+          "values": [
+            "2.1.01.01.01.0117",
+            "MUNDIAL COMERCIO DE EQUIPAMENTOS DE SEGURANCA E SINALIZACAO",
+            "379,30C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2354",
+          "values": [
+            "2.1.01.01.01.0118",
+            "COMERCIAL MINEIRA DE MAQUINAS LTDA",
+            "529,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2357",
+          "values": [
+            "2.1.01.01.01.0121",
+            "CLINICA DE MEDICINA PERIOPERATORIA UNIDADE CONTORNO LTDA",
+            "2.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2359",
+          "values": [
+            "2.1.01.01.01.0123",
+            "CGC - SERVICOS DE INFORMATICA E APOIO ADMINISTRATIVO LTDA",
+            "208,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2361",
+          "values": [
+            "2.1.01.01.01.0125",
+            "CHA - CADEIA DE HOTEIS PAMPULHA LTDA",
+            "5.500,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2362",
+          "values": [
+            "2.1.01.01.01.0126",
+            "INSTITUTO DE ORTOPEDIA REGENERATIVA E ESPORTE LTDA",
+            "13.800,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2365",
+          "values": [
+            "2.1.01.01.01.0129",
+            "J A Z V EVENTOS LTDA",
+            "50,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2369",
+          "values": [
+            "2.1.01.01.01.0133",
+            "GILSON RICARDO DE JESUS",
+            "7.400,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2372",
+          "values": [
+            "2.1.01.01.01.0136",
+            "RRV DIAGNOSTICOS POR IMAGEM LTDA",
+            "23.215,07C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2373",
+          "values": [
+            "2.1.01.01.01.0137",
+            "RADSQUARE TECNOLOGIA LTDA",
+            "6.100,25C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2378",
+          "values": [
+            "2.1.01.01.01.0142",
+            "LEANDRO SOARES ROCHA",
+            "1.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2382",
+          "values": [
+            "2.1.01.01.01.0146",
+            "GOOGLE CLOUD BRASIL COMPUTACAO E SERVICOS DE DADOS LTDA.",
+            "849,49C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2391",
+          "values": [
+            "2.1.01.01.01.0155",
+            "CARAN SPORTS MARKETING ESPORTIVO LTDA",
+            "5.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2393",
+          "values": [
+            "2.1.01.01.01.0157",
+            "GILSON RICARDO DE JESUS",
+            "3.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2396",
+          "values": [
+            "2.1.01.01.01.0160",
+            "ASSIS & NEVES LTDA ME",
+            "1.466,30C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2397",
+          "values": [
+            "2.1.01.01.01.0161",
+            "RUSSINI & ESPAGLIARI COMERCIO DE ARTIGOS DOMESTICOS LTDA",
+            "195,92C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2398",
+          "values": [
+            "2.1.01.01.01.0162",
+            "MUNDO DA VENDA COMERCIO DE ELETRONICOS LTDA",
+            "315,60C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2399",
+          "values": [
+            "2.1.01.01.01.0163",
+            "UTILIDADES PRO LTDA",
+            "200,65C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2400",
+          "values": [
+            "2.1.01.01.01.0164",
+            "DOMINIO PLASTICO LTDA",
+            "765,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2402",
+          "values": [
+            "2.1.01.01.01.0166",
+            "BACCARINI E CHARBEL LTDA",
+            "396,49C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2405",
+          "values": [
+            "2.1.01.01.01.0169",
+            "HEBROM EMPRESARIADO FUTEBOLISTICOLTDA",
+            "7.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2406",
+          "values": [
+            "2.1.01.01.01.0170",
+            "LEONARDO SAVIO CLEMENTE BRANDAO NOGUEIRA 01729514103",
+            "700,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empresa: A.C. ESPORTES S.A.F.",
+          "values": [
+            "Folha: 0003"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C.N.P.J.: 44.637.793/0001-20",
+          "values": [
+            "Número livro: 0001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Insc. Junta Comercial: 31300143821 Data: 20/12/2021",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balanço encerrado em: 31/12/2024",
+          "values": [
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "### BALANÇO PATRIMONIAL",
+      "columns": [
+        "Código",
+        "Classificação",
+        "Descrição",
+        "Saldo Atual"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2408",
+          "values": [
+            "2.1.01.01.01.0172",
+            "55.596.922 JOAO PAULO ALVES RESENDE",
+            "415,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2409",
+          "values": [
+            "2.1.01.01.01.0173",
+            "35.987.229 DANILO MARCIO NASCIMENTO",
+            "11.340,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2410",
+          "values": [
+            "2.1.01.01.01.0174",
+            "AGRO SAS LTDA - ME",
+            "6.925,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2414",
+          "values": [
+            "2.1.01.01.01.0178",
+            "REYCOR LTDA",
+            "1.214,99C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2415",
+          "values": [
+            "2.1.01.01.01.0179",
+            "POUSADA LAGOS DE MINAS",
+            "2.143,50C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2418",
+          "values": [
+            "2.1.01.01.01.0182",
+            "CAIO HENRIQUE VILELA FERNANDES SOCIEDADE INDIVIDUAL DE ADVOCACIA",
+            "25.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2419",
+          "values": [
+            "2.1.01.01.01.0183",
+            "HOTEL NINA LTDA.",
+            "239,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2424",
+          "values": [
+            "2.1.01.01.01.0188",
+            "ATLANTICA HOTELS INTERNATIONAL BRASIL LTDA",
+            "350,75C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2426",
+          "values": [
+            "2.1.01.01.01.0190",
+            "TEC SPORTS APP S.A",
+            "891,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2430",
+          "values": [
+            "2.1.01.01.01.0194",
+            "GOLDMEN HOTEL MARINGA LTDA",
+            "700,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2432",
+          "values": [
+            "2.1.01.01.01.0196",
+            "INSTITUTO MOOD LTDA",
+            "84,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2433",
+          "values": [
+            "2.1.01.01.01.0197",
+            "RELOJOARIA VIDIGAL LTDA",
+            "8.770,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2434",
+          "values": [
+            "2.1.01.01.01.0198",
+            "MONED COM PRO ALIMENTICIOS LTDA",
+            "1.254,05C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2436",
+          "values": [
+            "2.1.01.01.01.0200",
+            "41.483.576 LUIZ CARLOS DE MOURA SILVA FILHO",
+            "550,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2439",
+          "values": [
+            "2.1.01.01.01.0203",
+            "C. M. DE MELLO NETO SERVICOS DE COMUNICACAO LTDA",
+            "1.900,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2441",
+          "values": [
+            "2.1.01.01.0205",
+            "BJ CONSTRUCAO E MANUTENCAO INDUSTRIAL LTDA",
+            "3.540,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2442",
+          "values": [
+            "2.1.01.01.01.0206",
+            "PABLO COSTA OLIVEIRA STUDIO PERSONALTRAINNING",
+            "1.600,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2447",
+          "values": [
+            "2.1.01.01.01.0211",
+            "MARMORARIA DAVIN INDUSTRIA E COMERCIO LTDA",
+            "950,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2451",
+          "values": [
+            "2.1.01.01.01.0215",
+            "CAMILA CRISTINA PEREIRA BARTOLINI",
+            "27.742,10C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2452",
+          "values": [
+            "2.1.01.01.01.0216",
+            "MOISES FERREIRA DO NASCIMENTO",
+            "249,43C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2453",
+          "values": [
+            "2.1.01.01.01.0217",
+            "CASTRO & PEREIRA LTDA",
+            "1.110,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2454",
+          "values": [
+            "2.1.01.01.01.0218",
+            "ABDR GRAFICA LTDA",
+            "1.045,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2460",
+          "values": [
+            "2.1.01.01.01.0224",
+            "54.619.690 SERGIO CRISTIANO NASCIMENTO",
+            "1.120,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2461",
+          "values": [
+            "2.1.01.01.01.0225",
+            "FERNANDA A DE FREITAS GUIMARAES",
+            "14.960,28C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2463",
+          "values": [
+            "2.1.01.01.01.0227",
+            "JPPR SERVICOS MEDICOS LTDA",
+            "2.700,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2467",
+          "values": [
+            "2.1.01.01.01.0231",
+            "57.922.204 RODRIGO NEVES BALTAR",
+            "350,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2468",
+          "values": [
+            "2.1.01.01.01.0232",
+            "INSTITUTO DAS PEQUENAS MISSIONARIAS DE MARIA IMACULADA",
+            "100,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2475",
+          "values": [
+            "2.1.01.01.01.0239",
+            "TECHREDES ENGENHARIA LTDA",
+            "1.873,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2478",
+          "values": [
+            "2.1.01.01.01.0242",
+            "SANTA CASA DA MISERICORDIA SAO JOAO DEL REI",
+            "722,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2483",
+          "values": [
+            "2.1.01.01.01.0247",
+            "DIAG IMAGEM SERVIÇOS MEDICOS",
+            "174,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2503",
+          "values": [
+            "2.1.01.01.01.0267",
+            "RSC PUBLICIDADE LTDA - ME",
+            "246,30C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2511",
+          "values": [
+            "2.1.01.01.01.0275",
+            "SPORT CENTER FERNANDO MAGNO ESPORTES LTDA -ME",
+            "3.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2512",
+          "values": [
+            "2.1.01.01.01.0276",
+            "DAFI DIAGNOSTICOS ESPECIALIZADOS LTDA",
+            "688,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2516",
+          "values": [
+            "2.1.01.01.01.0280",
+            "PAULO MARCIO MARTINELLI ALMEIDA",
+            "19.548,36C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2520",
+          "values": [
+            "2.1.01.01.01.0284",
+            "DEPOSITO DE MADEIRAS CARVALHO E NOGUEIRA LTDA",
+            "10.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2525",
+          "values": [
+            "2.1.01.01.01.0289",
+            "MARCELO CASTRO SOCIEDADE DE ADVOGADOS - ME",
+            "13.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2526",
+          "values": [
+            "2.1.01.01.01.0290",
+            "FORLASO LTDA",
+            "2.400,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2529",
+          "values": [
+            "2.1.01.01.01.0293",
+            "CLINICA SAUDE AUDITIVA ALMEIDA LTDA",
+            "250,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2531",
+          "values": [
+            "2.1.01.01.01.0295",
+            "MIYAHIRA SERVICOS MEDICOS LTDA - EPP",
+            "400,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2534",
+          "values": [
+            "2.1.01.01.01.0298",
+            "EKIPCAR LTDA",
+            "350,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2536",
+          "values": [
+            "2.1.01.01.01.0300",
+            "CHAVEIRO ESQUINA DO KIBOM LTDA",
+            "70,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2558",
+          "values": [
+            "2.1.01.01.01.0322",
+            "BHFOTO AGENCIA DE IMAGENS LTDA",
+            "500,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2561",
+          "values": [
+            "2.1.01.01.01.0325",
+            "21.311.686 THIAGO DE ANDRADE MORANDI",
+            "1.500,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2574",
+          "values": [
+            "2.1.01.01.01.0338",
+            "PLANO REAL PRODUCOES LTDA",
+            "525.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2575",
+          "values": [
+            "2.1.01.01.01.0339",
+            "DNA SPORTS GESTAO E ASSESSORIA ESPORTIVA LTDA.",
+            "204.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2576",
+          "values": [
+            "2.1.01.01.01.0340",
+            "E. HOTELARIA E TURISMO LTDA",
+            "9.903,25C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2577",
+          "values": [
+            "2.1.01.01.01.0341",
+            "INSTITUTO DE MEDICINA ESPORTIVA E ORTOPEDIA BELO HORIZONTE LTDA",
+            "6.800,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2578",
+          "values": [
+            "2.1.01.01.01.0342",
+            "SCP ADMINISTRADORA HOTEL PAMPULHA",
+            "1.727,25C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2582",
+          "values": [
+            "2.1.01.01.01.0346",
+            "KM 01 SERVIÇOS DE HOTELARIA LTDA",
+            "611,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2590",
+          "values": [
+            "2.1.01.01.01.0354",
+            "ANDERSON DUTRA DE ALMEIDA 38605054832",
+            "300,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2591",
+          "values": [
+            "2.1.01.01.01.0355",
+            "Shopping Ortopedico Orizonti",
+            "170,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2594",
+          "values": [
+            "2.1.01.01.01.0358",
+            "Pisocarp Comercio e Representacoes LTDA",
+            "32.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2595",
+          "values": [
+            "2.1.01.01.01.0359",
+            "Barock Cervejaria Artesanal Ltda",
+            "2.680,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2597",
+          "values": [
+            "2.1.01.01.01.0361",
+            "Triama bd Peças e Serviços Automotivos Ltda",
+            "210,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2605",
+          "values": [
+            "2.1.01.01.01.0369",
+            "Rosana Isabel Siqueira 01549657666",
+            "215,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2607",
+          "values": [
+            "2.1.01.01.01.0371",
+            "Zav Traz Transportes Ltda",
+            "211,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2610",
+          "values": [
+            "2.1.01.01.01.0374",
+            "Luiz Eduardo dos Santos Dolce",
+            "2,50C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2613",
+          "values": [
+            "2.1.01.01.01.0377",
+            "Iolanda Estrambek Natal",
+            "967,45C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2616",
+          "values": [
+            "2.1.01.01.01.0380",
+            "Silva e Misson Ltda",
+            "510,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2617",
+          "values": [
+            "2.1.01.01.01.0381",
+            "Inter Shop BC Ltda",
+            "95,85C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2619",
+          "values": [
+            "2.1.01.01.01.0383",
+            "50.150.974 Luiz Ricardo de Almeida",
+            "550,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2620",
+          "values": [
+            "2.1.01.01.01.0384",
+            "C H Equipamentos Esportivos Ltda",
+            "36.561,82C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2622",
+          "values": [
+            "2.1.01.01.01.0386",
+            "Gelo Udi",
+            "250,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2623",
+          "values": [
+            "2.1.01.01.01.0387",
+            "Comercial Recitran Ltda",
+            "480,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2624",
+          "values": [
+            "2.1.01.01.01.0388",
+            "Veiculos Cruzeiro Comercio Ltda",
+            "284,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2627",
+          "values": [
+            "2.1.01.01.01.0391",
+            "JMD MATERIAIS ELETRICOS LTDA",
+            "165,44C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2628",
+          "values": [
+            "2.1.01.01.01.0392",
+            "Mundo dos Utilitarios Autopecas",
+            "565,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2629",
+          "values": [
+            "2.1.01.01.01.0393",
+            "Alberto Henrique Faria",
+            "1.398,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2634",
+          "values": [
+            "2.1.01.01.01.0398",
+            "MART MINAS DISTRIBUIÇÃO LTDA",
+            "1.747,59C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2636",
+          "values": [
+            "2.1.01.01.01.0400",
+            "QUADRICOR IMPRESSAO DIGITAL E SERVICOS LTDA",
+            "266,95C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2637",
+          "values": [
+            "2.1.01.01.01.0401",
+            "ISOPRENE ARTIGOS EM NEOPRENE E SIMILARES LTDA",
+            "194,16C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2638",
+          "values": [
+            "2.1.01.01.01.0402",
+            "CLAUDINEI AUGUSTO DE ALMEIDA",
+            "10.063,68C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2640",
+          "values": [
+            "2.1.01.01.01.0404",
+            "CASA DO VIDRACEIRO",
+            "114.292,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empresa: A.C. ESPORTES S.A.F.",
+          "values": [
+            "Folha: 0004"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C.N.P.J.: 44.637.793/0001-20",
+          "values": [
+            "Número livro: 0001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Insc. Junta Comercial: 31300143821 Data: 20/12/2021",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balanço encerrado em: 31/12/2024",
+          "values": [
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "### BALANÇO PATRIMONIAL",
+      "columns": [
+        "Código",
+        "Classificação",
+        "Descrição",
+        "Saldo Atual"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2641",
+          "values": [
+            "2.1.01.01.01.0405",
+            "CAMILA MARLISE SANTOS LTDA",
+            "26.433,40C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2642",
+          "values": [
+            "2.1.01.01.01.0406",
+            "CENTERCORE COMERCIO DE PRODUTOS MEDICOS EIRELI",
+            "679,60C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2643",
+          "values": [
+            "2.1.01.01.01.0407",
+            "RENATA CRISTIANE DE OLIVEIRA ALMEIDA",
+            "10.080,08C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2644",
+          "values": [
+            "2.1.01.01.01.0408",
+            "GRAZIELLE ALANE GUIMARAES PINTO LTDA",
+            "149,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2645",
+          "values": [
+            "2.1.01.01.01.0409",
+            "GRAMADO RESTAURANTE DEL REI LTDA",
+            "4.030,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2646",
+          "values": [
+            "2.1.01.01.01.0410",
+            "DEL REY PISCINAS CAMPING E PESCA",
+            "440,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2648",
+          "values": [
+            "2.1.01.01.01.0412",
+            "M&Z ARTESANATOS LTDA",
+            "100,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2650",
+          "values": [
+            "2.1.01.01.01.0414",
+            "Oca Alimentos Ltda",
+            "1.280,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2652",
+          "values": [
+            "2.1.01.01.01.0416",
+            "UP 88 LTDA",
+            "577,40C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2653",
+          "values": [
+            "2.1.01.01.01.0417",
+            "VILAS BOAS E RESENDE LTDA",
+            "15.141,33C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2654",
+          "values": [
+            "2.1.01.01.01.0418",
+            "NET JOY CONTEUDOS DIGITAIS EIRELI SP",
+            "487,08C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2655",
+          "values": [
+            "2.1.01.01.01.0419",
+            "Lillos Pet Max",
+            "867,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2658",
+          "values": [
+            "2.1.01.01.01.0422",
+            "Via Varejo S/A",
+            "7.658,50C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2659",
+          "values": [
+            "2.1.01.01.01.0423",
+            "ACRILPLAS LTDA",
+            "212,50C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2661",
+          "values": [
+            "2.1.01.01.01.0425",
+            "ANTONIO MEDEIROS SIMAS FILHO ME",
+            "20,79C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2662",
+          "values": [
+            "2.1.01.01.01.0426",
+            "LUIZ FERNANDO MELGAR ME",
+            "19,66C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2663",
+          "values": [
+            "2.1.01.01.01.0427",
+            "CKS COM DE MAT DE ESCR LTDA EPP",
+            "115,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2665",
+          "values": [
+            "2.1.01.01.01.0429",
+            "QUALIFOR LTDA",
+            "58,95C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2667",
+          "values": [
+            "2.1.01.01.01.0431",
+            "DUAX ARTIGOS DE USO PROFISSSIONAL E DOMESTICO LTDA",
+            "152,90C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2668",
+          "values": [
+            "2.1.01.01.01.0432",
+            "Bicci e Grechi Ltda",
+            "44,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2669",
+          "values": [
+            "2.1.01.01.01.0433",
+            "PAPELARIA CAMINHO DO SOL LTDA",
+            "78,99C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2671",
+          "values": [
+            "2.1.01.01.01.0435",
+            "MARCIO AVELAR BARONE 06862027670",
+            "129,99C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2672",
+          "values": [
+            "2.1.01.01.01.0436",
+            "ORGANIZA MIX LTDA",
+            "698,85C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2673",
+          "values": [
+            "2.1.01.01.01.0437",
+            "50.037.278 LARISSA LOSSO LIRA",
+            "137,81C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2677",
+          "values": [
+            "2.1.01.01.01.0441",
+            "IMPERIO DECORACOES LTDA",
+            "1.620,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2679",
+          "values": [
+            "2.1.01.01.01.0443",
+            "LUCIANO PEREIRA DA SILVA - VEICULOS ME",
+            "35,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2680",
+          "values": [
+            "2.1.01.01.01.0444",
+            "PAPEL E CIA LTDA",
+            "297,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2681",
+          "values": [
+            "2.1.01.01.01.0445",
+            "VAREJAO SANJOANENSE LTDA",
+            "23,96C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2682",
+          "values": [
+            "2.1.01.01.01.0446",
+            "NZ BRAZIL SPORTS LTDA",
+            "3.265,80C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2683",
+          "values": [
+            "2.1.01.01.01.0447",
+            "LUIZ FERNANDO DA SILVA 62904531653",
+            "1.150,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2685",
+          "values": [
+            "2.1.01.01.01.0449",
+            "ETHIC SERVICOS ADMINISTRATIVOS LTDA",
+            "996,92C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2686",
+          "values": [
+            "2.1.01.01.01.0450",
+            "53.394.159 WEMERSON DE SOUZA TEIXEIRA",
+            "3.800,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2687",
+          "values": [
+            "2.1.01.01.01.0451",
+            "MARCELO HENRIQUE DE SOUSA",
+            "1.050,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2885",
+          "values": [
+            "2.1.01.01.01.0647",
+            "AÇO IDEIAS LTDA",
+            "10.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "116",
+          "values": [
+            "2.1.02",
+            "OBRIGAÇÕES TRABALHISTAS E SOCIAIS",
+            "1.125.278,40C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2065",
+          "values": [
+            "2.1.02.01",
+            "OBRIGAÇÕES TRABALHISTAS",
+            "420.182,65C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2066",
+          "values": [
+            "2.1.02.01.01",
+            "OBRIGAÇÕES TRABALHISTAS",
+            "125.008,94C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "117",
+          "values": [
+            "2.1.02.01.01.0001",
+            "Salários a Pagar",
+            "123.637,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2069",
+          "values": [
+            "2.1.02.01.01.0005",
+            "Pensão Alimentícia",
+            "1.371,94C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2070",
+          "values": [
+            "2.1.02.01.02",
+            "PROVISÃO DE OBRIGAÇÕES TRABALHISTAS",
+            "295.173,71C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "123",
+          "values": [
+            "2.1.02.01.02.0002",
+            "Provisão para Férias",
+            "295.173,71C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2071",
+          "values": [
+            "2.1.02.02",
+            "OBRIGAÇÕES SOCIAIS",
+            "705.095,75C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2072",
+          "values": [
+            "2.1.02.02.01",
+            "OBRIGAÇÕES SOCIAIS A PAGAR",
+            "705.095,75C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "120",
+          "values": [
+            "2.1.02.02.01.0001",
+            "INSS a recolher",
+            "635.463,54C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "121",
+          "values": [
+            "2.1.02.02.01.0002",
+            "FGTS a recolher",
+            "55.645,17C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "115",
+          "values": [
+            "2.1.02.02.01.0004",
+            "INSS Retido a Recolher",
+            "13.987,04C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "103",
+          "values": [
+            "2.1.03",
+            "OBRIGAÇÕES FISCAIS",
+            "1.504.961,35C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2080",
+          "values": [
+            "2.1.03.01",
+            "OBRIGAÇÕES TRIBUTÁRIAS",
+            "1.504.961,35C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2081",
+          "values": [
+            "2.1.03.01.01",
+            "OBRIGAÇÕES TRIBUTÁRIAS A PAGAR",
+            "1.504.961,35C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "112",
+          "values": [
+            "2.1.03.01.01.0001",
+            "IRRF a Recolher s/ Folha",
+            "661.249,57C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "114",
+          "values": [
+            "2.1.03.01.01.0002",
+            "CRF a Recolher",
+            "22.366,78C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2151",
+          "values": [
+            "2.1.03.01.01.0004",
+            "ICMS Diferença de Alíquota",
+            "4.203,49C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "113",
+          "values": [
+            "2.1.03.01.01.0005",
+            "ISSRF a Recolher",
+            "1.098,23C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "104",
+          "values": [
+            "2.1.03.01.01.0008",
+            "ICMS a Recolher",
+            "28.585,20C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2083",
+          "values": [
+            "2.1.03.01.01.0009",
+            "IRRF s/ Serviços de Terceiros",
+            "11.639,21C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2084",
+          "values": [
+            "2.1.03.01.01.0010",
+            "Impostos TEF 5%",
+            "775.818,87C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "101",
+          "values": [
+            "2.1.04",
+            "EMPRÉSTIMOS E FINANCIAMENTOS",
+            "568.521,89C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2085",
+          "values": [
+            "2.1.04.01",
+            "FINANCIAMENTOS E EMPRÉSTIMOS",
+            "568.521,89C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2086",
+          "values": [
+            "2.1.04.01.01",
+            "FINANCIAMENTOS E EMPRÉSTIMOS",
+            "568.521,89C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2111",
+          "values": [
+            "2.1.04.01.01.0002",
+            "Saldo Credor Período Anterior Banco Sicredi 50.831",
+            "99.998,91C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2246",
+          "values": [
+            "2.1.04.01.01.0005",
+            "Empréstimo Oslo Capital Distribuidora de Títulos S.A.",
+            "301.820,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2876",
+          "values": [
+            "2.1.04.01.01.0006",
+            "Saldo Credor Período Anterior Sicredi 57.451",
+            "36,38C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2897",
+          "values": [
+            "2.1.04.01.01.0008",
+            "Empréstimo Sicredi C 429313159",
+            "49.999,98C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2898",
+          "values": [
+            "2.1.04.01.01.0009",
+            "Empréstimo Sicredi C 429308082",
+            "116.666,62C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1021",
+          "values": [
+            "2.1.05",
+            "CREDITO DE TERCEIROS",
+            "4.338.349,81C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2087",
+          "values": [
+            "2.1.05.01",
+            "CREDORES DIVERSOS",
+            "4.338.349,81C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2252",
+          "values": [
+            "2.1.05.01.02",
+            "CONTRATO DE MÚTUOS",
+            "4.338.349,81C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Empresa: A.C. ESPORTES S.A.F.",
+          "values": [
+            "Folha: 0005"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C.N.P.J.: 44.637.793/0001-20",
+          "values": [
+            "Número livro: 0001"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Insc. Junta Comercial: 31300143821 Data: 20/12/2021",
+          "values": [
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balanço encerrado em: 31/12/2024",
+          "values": [
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "### BALANÇO PATRIMONIAL",
+      "columns": [
+        "Código",
+        "Classificação",
+        "Descrição",
+        "Saldo Atual"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2253",
+          "values": [
+            "2.1.05.01.02.0001",
+            "Mútuo Futbráz/ F & P Gestão Esportiva Ltda",
+            "300.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2254",
+          "values": [
+            "2.1.05.01.02.0002",
+            "Mútuo Vinícius Leandro Diniz",
+            "120.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2255",
+          "values": [
+            "2.1.05.01.02.0003",
+            "Mútuo Fábio Ernesto Lima de Campos",
+            "450.550,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2257",
+          "values": [
+            "2.1.05.01.02.0005",
+            "Mútuo Terceiros Diversos",
+            "3.440.226,81C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2258",
+          "values": [
+            "2.1.05.01.02.0006",
+            "Mútuo FPM Sports Ltda",
+            "27.573,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "140",
+          "values": [
+            "2.2",
+            "NÃO CIRCULANTE",
+            "5.082.945,61C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "141",
+          "values": [
+            "2.2.01",
+            "EXIGÍVEL A LONGO PRAZO",
+            "5.082.945,61C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "142",
+          "values": [
+            "2.2.01.01",
+            "EMPRÉSTIMOS E FINANCIAMENTOS - LP",
+            "4.981.625,90C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2154",
+          "values": [
+            "2.2.01.01.01",
+            "EMPRESTIMOS E FINANCIAMENTOS",
+            "4.981.625,90C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2240",
+          "values": [
+            "2.2.01.01.01.0004",
+            "Empréstimo Sicredi C329301299",
+            "2.581.962,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2241",
+          "values": [
+            "2.2.01.01.01.0005",
+            "Empréstimo Sicredi C329300730",
+            "201.774,87C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2896",
+          "values": [
+            "2.2.01.01.01.0006",
+            "Empréstimo Sicredi C 429307965",
+            "966.089,03C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2899",
+          "values": [
+            "2.2.01.01.01.0007",
+            "Empréstimo Sicredi C 429312080",
+            "1.231.800,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2232",
+          "values": [
+            "2.2.01.07",
+            "PROVISÕES A LONGO PRAZO",
+            "101.319,71C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2233",
+          "values": [
+            "2.2.01.07.01",
+            "PROVISÃO DE CONTIGÊNCIAS",
+            "101.319,71C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2234",
+          "values": [
+            "2.2.01.07.01.0001",
+            "Indenizações em Contigências",
+            "101.319,71C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "151",
+          "values": [
+            "2.4",
+            "PATRIMÔNIO LÍQUIDO",
+            "640.061,17C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "152",
+          "values": [
+            "2.4.01",
+            "PATRIMÕNIO LÍQUIDO",
+            "640.061,17C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "153",
+          "values": [
+            "2.4.01.01",
+            "CAPITAL SOCIAL",
+            "11.535.000,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1030",
+          "values": [
+            "2.4.01.01.01",
+            "CAPITAL SOCIAL SUBSCRITO",
+            "11.535.000,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "154",
+          "values": [
+            "2.4.01.01.01.0001",
+            "ATHLETIC CLUB",
+            "50.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2153",
+          "values": [
+            "2.4.01.01.01.0002",
+            "FUTBRÁZ / F & P GESTÃO ESPORTIVA LTDA",
+            "900.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2202",
+          "values": [
+            "2.4.01.01.01.0003",
+            "CONSTRUTORA FELIPÃO LTDA",
+            "50.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2203",
+          "values": [
+            "2.4.01.01.01.0004",
+            "TESTOTRANS HOLDING LTDA",
+            "2.500.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2204",
+          "values": [
+            "2.4.01.01.01.0005",
+            "TIBERIS DO BRASIL HOLDING LTDA",
+            "8.035.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "158",
+          "values": [
+            "2.4.01.02",
+            "RESERVA DE CAPITAL",
+            "81.600,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "159",
+          "values": [
+            "2.4.01.02.01",
+            "ADIANTAMENTO PARA FUTURO AUMENTO DE CAPITAL",
+            "81.600,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "2159",
+          "values": [
+            "2.4.01.02.01.0003",
+            "AFAC - TIBERES",
+            "81.600,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "167",
+          "values": [
+            "2.4.01.04",
+            "LUCROS OU PREJUÍZOS ACUMULADOS",
+            "3.699.061,07D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "168",
+          "values": [
+            "2.4.01.04.01",
+            "LUCROS OU PREJUÍZOS ACUMULADOS",
+            "3.699.061,07D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "169",
+          "values": [
+            "2.4.01.04.01.0001",
+            "Lucros Acumulados / Prejuízos Acumulados",
+            "3.699.061,07D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "548",
+          "values": [
+            "2.4.01.06",
+            "RESULTADO DO EXERCÍCIO",
+            "7.277.477,76D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "549",
+          "values": [
+            "2.4.01.06.01",
+            "RESULTADO DO EXERCÍCIO",
+            "7.277.477,76D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "412",
+          "values": [
+            "2.4.01.06.01.0001",
+            "Lucros do Exercício",
+            "6.921.343,75C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2165",
+          "values": [
+            "2.4.01.06.01.0002",
+            "Prejuízos do Exercício",
+            "14.198.821,51D"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/athletic-club-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"athletic-club\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

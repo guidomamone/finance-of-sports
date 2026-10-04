@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Zulte Waregem/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-02T00:22:20.410Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   247
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas del pasivo (VOL-kap 3.2, deudas financieras) no están incluidas; solo aparecen totales de schulden en el informe de gestión (L2348-L2353), que no son deuda financiera. La escala no se declara explícitamente en el balance; las cifras están en euros (unidades), consistente con el informe del auditor (balanstotaal 30.969.101 EUR)."
+}

@@ -1,0 +1,259 @@
+{
+  "club": "j-league-todos-los-clubes",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Japón/_J.League (todos los clubes)/club_doc-2025.md",
+  "generatedAt": "2026-09-30T22:05:49.164Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 1,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 7,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 8,
+      "section": "3月および6月決算である7クラブ / を除いた53クラブについて / ◼ 売上高が増加したクラブは38クラブ（75%）、減少したクラブは13クラブ（25%）である / ◼ 増加したクラブの内訳は、Ｊ１が15クラブ、Ｊ２が14クラブ、Ｊ３が9クラブである / ※増減およびパーセンテージの試算は、 5か月決算の岡山、Ｊリーグ入会初年度の栃木Ｃを除く51クラブ",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "平均 5,169 5,909 6,514 合計",
+          "values": [
+            "34,466",
+            "37,830",
+            "44,345",
+            "+6,515"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "平均",
+          "values": [
+            "1,814",
+            "1,991",
+            "2,334"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "3月および6月決算である7クラブ / を除いた53クラブについて / ◼ スポンサー収入が増加したクラブは40クラブ（78%）、減少したクラブは11クラブ（22%）である / ◼ 増加したクラブの内訳は、Ｊ１が16クラブ、Ｊ２が17クラブ、Ｊ３が7クラブである / ※増減およびパーセンテージの試算は、 5か月決算の岡山、Ｊリーグ入会初年度の栃木Ｃを除く51クラブ",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "平均 2,198 2,431 2,646 合計",
+          "values": [
+            "18,226",
+            "18,961",
+            "22,666",
+            "+3,705"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "平均 959",
+          "values": [
+            "1,193"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 15,
+      "section": "3-1. Ｊ１・Ｊ２・Ｊ３クラブ合計 / （百万円） / Ｊ１合計                       Ｊ２合計                      Ｊ３合計                 Ｊ１+Ｊ２+Ｊ３合計",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "売上高",
+          "values": [
+            "108,918",
+            "117,248",
+            "+8,330",
+            "38,697",
+            "44,345",
+            "+5,648",
+            "17,293",
+            "14,106",
+            "▲3,187",
+            "164,908",
+            "175,699",
+            "+10,791"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "スポンサー収入",
+          "values": [
+            "44,785",
+            "47,622",
+            "+2,837",
+            "18,742",
+            "22,666",
+            "+3,924",
+            "9,683",
+            "7,963",
+            "▲1,720",
+            "73,210",
+            "78,251",
+            "+5,041"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "入場料収入 20,630 21,822 +1,192 5,364 6,290 +926 1,727 1,449 ▲278",
+          "values": [
+            "27,721",
+            "29,562",
+            "+1,841"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "その他収入 13,392 15,265 +1,873 4,454 4,287 ▲167 2,070 1,587 ▲483",
+          "values": [
+            "19,916",
+            "21,139",
+            "+1,223"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "売上原価",
+          "values": [
+            "83,922",
+            "88,157",
+            "+4,235",
+            "30,165",
+            "34,518",
+            "+4,353",
+            "13,025",
+            "10,922",
+            "▲2,103",
+            "127,112",
+            "133,597",
+            "+6,485"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "トップチーム人件費 38,348 41,126 +2,778 13,481 14,829 +1,348 5,309 4,416 ▲893",
+          "values": [
+            "57,138",
+            "60,370",
+            "+3,232"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "販売費および一般管理費 23,696 27,291 +3,595 9,525 10,401 +876",
+          "values": [
+            "5,601",
+            "3,708",
+            "▲1,893",
+            "38,822",
+            "41,400",
+            "+2,578"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "営業利益（▲損失） 1,300 1,799 +499 ▲ 993 ▲ 574 +419 ▲ 1,334 ▲ 524 +810 ▲ 1,027",
+          "values": [
+            "+1,727"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "営業外費用 591 3,750 +3,159 73 116 +43 75 50 ▲25",
+          "values": [
+            "3,916",
+            "+3,177"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "経常利益（▲損失） 1,585 ▲ 1,044 ▲2,629 ▲ 822 ▲ 326 +496 ▲ 1,250 ▲ 429 +821 ▲ 486 ▲",
+          "values": [
+            "1,799",
+            "▲1,312"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "特別利益 201 2,343 +2,142 1,387 1,978 +591 80 222 +142",
+          "values": [
+            "1,668",
+            "4,543",
+            "+2,875"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "税引前当期利益（▲損失）     ▲ 115        ① 5,600万円以上の増資 / 法人税および住民税等 / 当期純利益（▲損失） / 1 / ▲ 116",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "②",
+          "values": [
+            "5,600万円以上の当期純利益"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. 貸借対照表 ③",
+          "values": [
+            "増資と利益の合計が5,600万円以上"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/j-league-todos-los-clubes-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"j-league-todos-los-clubes\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

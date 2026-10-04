@@ -1,0 +1,167 @@
+{
+ "md": "Clubes/Grecia/Asteras Tripolis/Asteras_board_report_2021-06-30.md",
+ "generatedAt": "2026-09-30T04:29:18.736Z",
+ "rubros": [
+  {
+   "label": "Σύνολο εσόδων",
+   "lado": null,
+   "page": 4,
+   "section": "",
+   "choice": "lump_football_operations",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.78
+    ],
+    [
+     "other_income",
+     0.21
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1256
+  },
+  {
+   "label": "Ίδια κεφάλαια",
+   "lado": null,
+   "page": 4,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "(+/-) Διαφορές φορολογικού ελέγχου",
+   "lado": null,
+   "page": 7,
+   "section": "# Α.Γ.Σ. ΑΣΤΕΡΑΣ ΤΡΙΠΟΛΗΣ ΠΑΕ / # Πίνακας διάθεσης αποτελεσμάτων",
+   "choice": "admin_general_expense",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.61
+    ],
+    [
+     "other_income",
+     0.19
+    ],
+    [
+     "exceptional_items",
+     0.1
+    ]
+   ],
+   "tokens": 1331
+  },
+  {
+   "label": "Κύκλος εργασιών (Εσοδα από αγώνες και από παραχώρηση ποδοσφαιριστών)",
+   "lado": null,
+   "page": 4,
+   "section": "Ο αριθμοδείκτης αυτός απεικονίζει την αποδοτικότητα των ιδίων κεφαλαίων της εταιρείας.",
+   "choice": "lump_football_operations",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.74
+    ],
+    [
+     "player_sales",
+     0.16
+    ],
+    [
+     "matchday_competition",
+     0.07
+    ]
+   ],
+   "tokens": 1370
+  },
+  {
+   "label": "Σύνολο",
+   "lado": null,
+   "page": 7,
+   "section": "# Α.Γ.Σ. ΑΣΤΕΡΑΣ ΤΡΙΠΟΛΗΣ ΠΑΕ / # Πίνακας διάθεσης αποτελεσμάτων",
+   "choice": "lump_football_operations",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "lump_football_operations",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1308
+  },
+  {
+   "label": "(+/-) Υπόλοιπο αποτελεσμάτων (ζημιών) προηγούμενων χρήσεων",
+   "lado": null,
+   "page": 7,
+   "section": "# Α.Γ.Σ. ΑΣΤΕΡΑΣ ΤΡΙΠΟΛΗΣ ΠΑΕ / # Πίνακας διάθεσης αποτελεσμάτων",
+   "choice": "other_income",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "exceptional_items",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1353
+  },
+  {
+   "label": "Καθαρά αποτελέσματα (κέρδη) προ φόρων χρήσεως 1.7.2020-30.6.2021",
+   "lado": null,
+   "page": 7,
+   "section": "# Α.Γ.Σ. ΑΣΤΕΡΑΣ ΤΡΙΠΟΛΗΣ ΠΑΕ / # Πίνακας διάθεσης αποτελεσμάτων",
+   "choice": "other_income",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "lump_football_operations",
+     0.26
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ]
+   ],
+   "tokens": 1449
+  }
+ ]
+}

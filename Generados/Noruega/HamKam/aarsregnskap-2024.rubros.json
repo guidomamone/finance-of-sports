@@ -1,0 +1,410 @@
+{
+ "md": "Clubes/Noruega/HamKam/aarsregnskap-2024.md",
+ "pdf": "Clubes/Noruega/HamKam/aarsregnskap-2024.pdf",
+ "club": "hamkam",
+ "year": 2024,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:25.529Z",
+ "tieOuts": {
+  "cierran": 41,
+  "noCierran": 10
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "12 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 38,
+  "notasUsadas": [
+   "7",
+   "12"
+  ]
+ },
+ "ladoConocido": 36,
+ "rubros": [
+  {
+   "label": "Kamp- og treningskostnader",
+   "lado": "expense",
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "values": [
+    9.771869
+   ],
+   "origen": "nota 7 (ancla 0)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Sum kostnader",
+   "lado": "expense",
+   "page": 2,
+   "section": "HAMARKAMERATENE FOTBALL ELITE / RESULTATREGNSKAP",
+   "values": [
+    74.121004
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Note 3 - Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    37.95397
+   ],
+   "origen": "nota 12 (ancla 0>7)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Note 3 - Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    5.583683
+   ],
+   "origen": "nota 12 (ancla 0>7)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Note 3 - Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    0.685113
+   ],
+   "origen": "nota 12 (ancla 0>7)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Lønnsrefusjoner",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Note 3 - Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    -1.067155
+   ],
+   "origen": "nota 12 (ancla 0>7)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Andre personalkostnader",
+   "lado": "expense",
+   "page": 24,
+   "section": "# Note 3 - Lønnskostnader, antall ansatte, godtgjørelser, lån til ansatte mm.",
+   "values": [
+    1.492323
+   ],
+   "origen": "nota 12 (ancla 0>7)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler",
+   "lado": "expense",
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "values": [
+    0.2548
+   ],
+   "origen": "nota 7 (ancla 0)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Avskrivning på spillere",
+   "lado": "expense",
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "values": [
+    7.156124
+   ],
+   "origen": "nota 7 (ancla 0)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 20,
+   "section": "# RESULTATREGNSKAP / ## HAM ARKAM ERATENE FOTBALL ELITE",
+   "values": [
+    12.290277
+   ],
+   "origen": "nota 7 (ancla 0)",
+   "ancla": "Sum kostnader"
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "HAMARKAMERATENE FOTBALL ELITE / RESULTATREGNSKAP",
+   "values": [
+    48.218511
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "HAMARKAMERATENE FOTBALL ELITE / RESULTATREGNSKAP",
+   "values": [
+    26.884361
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "HAMARKAMERATENE FOTBALL ELITE / RESULTATREGNSKAP",
+   "values": [
+    0.029764
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "HAMARKAMERATENE FOTBALL ELITE / RESULTATREGNSKAP",
+   "values": [
+    0.004825
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Overført til annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "HAMARKAMERATENE FOTBALL ELITE / RESULTATREGNSKAP",
+   "values": [
+    0.900078
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Administrasjonskostnader",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "values": [
+    4438.681
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Felleskostnader NTF",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "values": [
+    1987.521
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Kostnader reklame/sponsor",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "values": [
+    747.745
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Leie av trenings- og kampfasiliteter",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "values": [
+    1465.778
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Annen fremmed tjeneste",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "values": [
+    1316.638
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Andre salgskostnader",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "values": [
+    1222.37
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 25,
+   "section": "# Note 5 - Annen driftskostnad består av:",
+   "values": [
+    1111.544
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Billetinntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "values": [
+    5521.728
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Salgsinntekter kiosk",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "values": [
+    1406.369
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Marked- og mediaavtale",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "values": [
+    34892.931
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Medlems- og aktivitetsinntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "values": [
+    1247.745
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Solidaritetsmidler UEFA",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "values": [
+    4370.645
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "NFF Cup",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "values": [
+    361.693
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Andre salgsinntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Regnskapsprinsipper / # Note 1 - Salgsinntekter består av:",
+   "values": [
+    417.401
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Tilskudd",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Note 2 - Annen driftsinntekt består av:",
+   "values": [
+    20744.496
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Gaver",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Note 2 - Annen driftsinntekt består av:",
+   "values": [
+    1370.189
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Sosiale prosjekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Note 2 - Annen driftsinntekt består av:",
+   "values": [
+    1095
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "MVA - kompensasjon",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Note 2 - Annen driftsinntekt består av:",
+   "values": [
+    818.195
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Utleie ansatte",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Note 2 - Annen driftsinntekt består av:",
+   "values": [
+    1139.155
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Andre inntekter",
+   "lado": "revenue",
+   "page": 23,
+   "section": "# Note 2 - Annen driftsinntekt består av:",
+   "values": [
+    1717.325
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Revisjon",
+   "lado": "expense",
+   "page": 24,
+   "section": "Klubbens pensjonsordninger tilfredsstiller kravene i loven. / Total pensjonskostnad i årets regnskap utgjør kr 685 113.",
+   "values": [
+    0.0616
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Annen bistand",
+   "lado": "expense",
+   "page": 24,
+   "section": "Klubbens pensjonsordninger tilfredsstiller kravene i loven. / Total pensjonskostnad i årets regnskap utgjør kr 685 113.",
+   "values": [
+    0.0249
+   ],
+   "origen": "estado 14"
+  }
+ ]
+}

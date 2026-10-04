@@ -1,0 +1,123 @@
+{
+ "md": "Clubes/Turquía/Alanyaspor/alanyaspor-mali-tablolar-2022-2023.md",
+ "pdf": "Clubes/Turquía/Alanyaspor/alanyaspor-mali-tablolar-2022-2023.pdf",
+ "club": "alanyaspor",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:08:13.312Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 9,
+  "notasUsadas": []
+ },
+ "ladoConocido": 7,
+ "rubros": [
+  {
+   "label": "2- Yurtiçi Satışlar (Reklam Gelirleri)",
+   "lado": "revenue",
+   "page": 6,
+   "section": "# ALANYASPOR KULÜBÜ / AYRINTILI KAR/ZARAR / GELİR TABLOSU",
+   "values": [
+    -145579.16
+   ],
+   "origen": "estado 6",
+   "glosa": "2- Ventas nacionales (Ingresos por publicidad)"
+  },
+  {
+   "label": "I- Ana Sponsorluk Gelirleri",
+   "lado": "revenue",
+   "page": 6,
+   "section": "# ALANYASPOR KULÜBÜ / AYRINTILI KAR/ZARAR / GELİR TABLOSU",
+   "values": [
+    -145579.16
+   ],
+   "origen": "estado 6",
+   "glosa": "I- Ingresos por patrocinio principal"
+  },
+  {
+   "label": "3- Yurtiçi Satışlar (Yayın Hakkı Gelirleri)",
+   "lado": "revenue",
+   "page": 6,
+   "section": "# ALANYASPOR KULÜBÜ / AYRINTILI KAR/ZARAR / GELİR TABLOSU",
+   "values": [
+    -59001.125
+   ],
+   "origen": "estado 6",
+   "glosa": "3- Ventas nacionales (Ingresos por derechos de retransmisión)"
+  },
+  {
+   "label": "a) Ulusal Müsabakalar TV Yayın Geliri",
+   "lado": "revenue",
+   "page": 6,
+   "section": "# ALANYASPOR KULÜBÜ / AYRINTILI KAR/ZARAR / GELİR TABLOSU",
+   "values": [
+    -59001.125
+   ],
+   "origen": "estado 6",
+   "glosa": "a) Ingresos por retransmisión televisiva de competiciones nacionales"
+  },
+  {
+   "label": "c) Türkiye Kupası Katılım Gelirleri",
+   "lado": "revenue",
+   "page": 6,
+   "section": "# ALANYASPOR KULÜBÜ / AYRINTILI KAR/ZARAR / GELİR TABLOSU",
+   "values": [
+    -1491.88
+   ],
+   "origen": "estado 6",
+   "glosa": "c) Ingresos por participación en la Copa de Turquía"
+  },
+  {
+   "label": "d) Diğer Müsabakalar-Turnuvalar Katılım Gelirleri",
+   "lado": "revenue",
+   "page": 6,
+   "section": "# ALANYASPOR KULÜBÜ / AYRINTILI KAR/ZARAR / GELİR TABLOSU",
+   "values": [
+    -7311.857
+   ],
+   "origen": "estado 6",
+   "glosa": "d) Ingresos por participación en otras competiciones y torneos"
+  },
+  {
+   "label": "a) Kulüplerden Transfer (Bonservis) Gelirleri",
+   "lado": "revenue",
+   "page": 6,
+   "section": "# ALANYASPOR KULÜBÜ / AYRINTILI KAR/ZARAR / GELİR TABLOSU",
+   "values": [
+    -35439.115
+   ],
+   "origen": "estado 6",
+   "glosa": "a) Ingresos por indemnizaciones de traspaso procedentes de clubes"
+  },
+  {
+   "label": "7- Bağış ve Yardımlar",
+   "lado": null,
+   "page": 6,
+   "section": "# ALANYASPOR KULÜBÜ / AYRINTILI KAR/ZARAR / GELİR TABLOSU",
+   "values": [
+    -60800.69
+   ],
+   "origen": "estado 6",
+   "glosa": "7- Donaciones y subvenciones"
+  },
+  {
+   "label": "a) Bağış ve Yardımlar - Ulusal Futbol Kurumlarından",
+   "lado": null,
+   "page": 6,
+   "section": "# ALANYASPOR KULÜBÜ / AYRINTILI KAR/ZARAR / GELİR TABLOSU",
+   "values": [
+    -58726.665
+   ],
+   "origen": "estado 6",
+   "glosa": "a) Donaciones y subvenciones de organismos nacionales de fútbol"
+  }
+ ]
+}

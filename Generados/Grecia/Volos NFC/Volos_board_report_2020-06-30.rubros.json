@@ -1,0 +1,102 @@
+{
+ "md": "Clubes/Grecia/Volos NFC/Volos_board_report_2020-06-30.md",
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_board_report_2020-06-30.pdf",
+ "club": "volos-nfc",
+ "year": 2020,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:03:43.370Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 17,
+  "notasUsadas": []
+ },
+ "ladoConocido": 7,
+ "rubros": [
+  {
+   "label": "(+) ή (-) Υπόλ. Αποτελ/των προηγ. χρήσεων",
+   "lado": null,
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "values": [
+    -0.258765
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "1. Έσοδα από πώληση αγαθών και υπηρεσιών",
+   "lado": "revenue",
+   "page": 2,
+   "section": "## 4. Κατεχόμενα χρεόγραφα από την εταιρεία σε ποσοστό άνω του 10% / ## 5. Διαθέσιμο συνάλλαγμα / ## 6. Ακίνητα της Εταιρείας / ## 7. Υποκαταστήματα / ## 8. Αποτελέσματα της χρήσης",
+   "values": [
+    1.454547
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Μείον: Κόστος αγαθών και υπηρεσιών",
+   "lado": "expense",
+   "page": 2,
+   "section": "## 4. Κατεχόμενα χρεόγραφα από την εταιρεία σε ποσοστό άνω του 10% / ## 5. Διαθέσιμο συνάλλαγμα / ## 6. Ακίνητα της Εταιρείας / ## 7. Υποκαταστήματα / ## 8. Αποτελέσματα της χρήσης",
+   "values": [
+    1.402951
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Πλέον: Άλλα έσοδα",
+   "lado": "revenue",
+   "page": 2,
+   "section": "## 4. Κατεχόμενα χρεόγραφα από την εταιρεία σε ποσοστό άνω του 10% / ## 5. Διαθέσιμο συνάλλαγμα / ## 6. Ακίνητα της Εταιρείας / ## 7. Υποκαταστήματα / ## 8. Αποτελέσματα της χρήσης",
+   "values": [
+    0.063431
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Μείον: 1. Έξοδα διοικητικής λειτουργίας",
+   "lado": "expense",
+   "page": 3,
+   "section": "",
+   "values": [
+    0.191065
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "3. Έξοδα λειτουργίας διαθέσεως",
+   "lado": "expense",
+   "page": 3,
+   "section": "",
+   "values": [
+    0.180945
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Πλέον: 1. Πιστωτικοί τόκοι και συναφή έσοδ",
+   "lado": "revenue",
+   "page": 3,
+   "section": "",
+   "values": [
+    0.000019
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Μείον: 3. Χρεωστικοί τόκοι και συναφή έξοδ",
+   "lado": "expense",
+   "page": 3,
+   "section": "",
+   "values": [
+    0.001801
+   ],
+   "origen": "estado 11"
+  }
+ ]
+}

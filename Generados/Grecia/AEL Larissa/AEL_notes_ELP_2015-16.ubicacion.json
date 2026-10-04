@@ -1,0 +1,83 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2015-16.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T13:19:42.167Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    21,
+    52
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    60,
+    72
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    76,
+    94
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    167,
+    177
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    185,
+    187
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 7,
+   "lineas": [
+    194,
+    200
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b3"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά εκφρασμένα σε μονάδες Ευρώ",
+ "moneda": "EUR",
+ "columna_ejercicio": "01/07/2015-30/06/2016",
+ "columna_anterior": null,
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿El estado de resultados b3 tiene una columna del ejercicio anterior (2014-15), además de la del ejercicio 01/07/2015-30/06/2016?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "El índice no muestra los encabezados de columna de b3; es la 2ª χρήση y tiene 32 importes en 16 filas, lo que sugiere dos columnas.",
+   "bloques": [
+    "b3"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Cuentas individuales abreviadas (ΠΑΕ AEL), 2ª χρήση 01/07/2015-30/06/2016. b1-b2 son balance, b4-b5 son notas generales sin desglose de resultados, b6 son firmas. No hay notas que desglosen ingresos o gastos."
+}

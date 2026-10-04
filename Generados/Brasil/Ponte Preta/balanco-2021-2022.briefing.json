@@ -1,0 +1,1618 @@
+{
+  "club": "pontepreta-br",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Ponte Preta/balanco-2021-2022.md",
+  "generatedAt": "2026-09-30T22:41:55.873Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 1,
+    "eu": 344,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 31,
+  "relevantTableCount": 4,
+  "tables": [
+    {
+      "page": 1,
+      "section": "ASSOCIAÇÃO ATLÉTICA PONTE PRETA / CNPJ (MF): 46.125.175/0001-26 / CIRCULANTE 1.033.466 893.154 CIRCULANTE 38.269.611 31.898.686",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Outros Créditos a Receber 183.227 59.268 Contribuições a Recolher",
+          "values": [
+            "10.187.464",
+            "3.566.273"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos de impostos e contribuições",
+          "values": [
+            "2.195.455",
+            "2.788.017"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "NÃO CIRCULANTE 248.444.844 232.702.989 Adiantamento 14 - 2.760.488 / Depositos Judiciais 7 1.806.438 782.326 Acordos traballhistas 16 3.911.658 4.382.503 / Imobilizado 8 151.214.447 152.965.560 NÃO CIRCULANTE 151.203.384 157.555.772",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intangivel 9 95.423.959 78.955.104 Provisão para Contingências",
+          "values": [
+            "9.043.476",
+            "8.709.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos de impostos e contribuições",
+          "values": [
+            "30.936.557",
+            "30.623.021"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "Acordos traballhistas 16 - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Titulos a Pagar",
+          "values": [
+            "111.223.351",
+            "118.223.351"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PATRIMÔNIO LÍQUIDO",
+          "values": [
+            "60.005.315",
+            "44.141.686"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimônio Social",
+          "values": [
+            "5.771.559",
+            "5.771.559"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avaliação de Atletas Profissionais",
+          "values": [
+            "87.500.000",
+            "67.246.166"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Avaliação Patrimonial",
+          "values": [
+            "160.711.835",
+            "160.711.835"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit Acumulado",
+          "values": [
+            "(189.447.289)",
+            "(172.163.985)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit/Déficit do Exercicio",
+          "values": [
+            "(4.530.791)",
+            "(17.423.889)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "Nota 2022 2021 2022 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "RECEITA OPERACIONAIS 44.847.100 28.647.188 ATIVIDADES OPERACIONAIS",
+          "values": [
+            "2.182.091",
+            "(6.586.805)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Departamentos: Superavit (Deficit) do Exercicio",
+          "values": [
+            "(4.530.791)",
+            "(17.423.889)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "Profissional 18 40.679.209 25.679.194 Outros a classificar 140.586 - / Administrativo - Estadio 914.148 797.789 Ajuste de Exercicios Anteriores - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Administrativo- Jd Paineiras 38.906 53.042 Avaliação de Atletas -",
+          "values": [
+            "(1.408.834)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrativo - Amador 490.304 473.899 Depreciaçao e amortizaçao",
+          "values": [
+            "1.751.112",
+            "1.872.950"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Social / Outras",
+          "values": [
+            "2.724.533",
+            "1.643.263"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "DESPESAS OPERACIONAIS (49.377.891) (46.071.077) Diminuição (Aumento) dos ativos: / Departamentos: Contas a receber - 27.000 / Profissional 18 (41.719.381) (36.249.795) Projetos - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Administrativo - Estadio (3.932.300) (3.924.579) Estoques de material de consumo",
+          "values": [
+            "(16.893)",
+            "(51.583)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrativo- Jd Paineiras (272.761) (258.920) Outros Creditos a receber",
+          "values": [
+            "(123.959)",
+            "16.848"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrativo - Jd Eulina (237.800) (236.813) Realizável a Longo Prazo",
+          "values": [
+            "(1.024.112)",
+            "(305.722)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 2,
+      "section": "Amador (2.864.938) (2.760.148) Aumento (Diminuição) dos passivos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Euro - - Fornecedores",
+          "values": [
+            "1.211.577",
+            "1.557.388"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Financeiro Líquido (350.711) (2.640.821) Contribuiçoes a Recolher",
+          "values": [
+            "6.621.191",
+            "(72.054)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUPERAVIT (DÉFICIT) DO EXERCÍCIO (4.530.791) (17.423.889) Sálario e Indenizações a Pagar",
+          "values": [
+            "1.329.664",
+            "619.096"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "As notas explicativas são partes integrantes das demonstrações financeiras Outros Passivos",
+          "values": [
+            "(2.760.488)",
+            "85.490"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para Contingências",
+          "values": [
+            "334.076",
+            "6.545.654"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Notas Explicativas às Demonstrações Contábeis em 31/12/2022 e 31/12/2021 (Valores expressos em reais) Parcelamentos de impostos e contribuições",
+          "values": [
+            "(279.026)",
+            "4.138.749"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos traballhistas",
+          "values": [
+            "(470.846)",
+            "(2.187.898)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NOTA 01. CONTEXTO OPERACIONAL: ATIVIDADES DE FINANCIAMENTOS/TERCEIROS",
+          "values": [
+            "(5.967.610)",
+            "5.594.273"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Titulos a Pagar",
+          "values": [
+            "(5.967.610)",
+            "5.594.273"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "Emprestimos e financiamentos - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "predominância para a prática do Futebol Profissional. Aquisiçao e Formaçao de Atletas",
+          "values": [
+            "3.784.978",
+            "(488.599)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Avaliação de atletas -",
+          "values": [
+            "1.408.834"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "Aquisiçao de Intangivel / NOTA 02. DEMONSTRAÇÕES E PRÁTICAS CONTÁBEIS: Baixa para regularização imobilizado",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "11.941/09) e demais procedimentos técnicos emitidos pelo CPC — Comitê de Pronunciamentos Contábeis, aplicáveis, não havendo, Saldo de caixa € bancos no inicio do ano",
+          "values": [
+            "44.388",
+            "16.684"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo de caixa e bancos no final do ano",
+          "values": [
+            "43.848",
+            "44.388"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "contudo AUMENTO (REDUÇÃO) CAIXA E EQUIVALENTES (541)",
+          "values": [
+            "(72.296)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "NOTA 03. CAIXA E BANCOS / NOTA 04. PROJETOS / DESCRIÇÃO 2022 2021 DESCRIÇÃO 2022 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Banco do Brasil S A",
+          "values": [
+            "77.198",
+            "77.198"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa 2115 33.786 Projetos",
+          "values": [
+            "(328.000)",
+            "(328.000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos Conta Corrente 12.022 10.479 Bloqueios Juduciais",
+          "values": [
+            "250.802",
+            "250.802"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "DESCRIÇÃO 2022 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total 175.000 175.000 Alimentação/Refeitorio (AL)",
+          "values": [
+            "67.179",
+            "64.156"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Medicamentos (MD)",
+          "values": [
+            "140.507",
+            "107.559"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Material Esportivo (ME)",
+          "values": [
+            "135.206",
+            "164.952"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "140.122",
+            "129.453"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(a) O saldo referente ao Boa Esporte corresponde ao empréstimo atleta Raphael da Silva Arruda, notificação enviada em 2021 Total",
+          "values": [
+            "483.013",
+            "466.120"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "NOTA 07. DEPOSITOS JUDICIAIS NOTA 09. INTANGÍVEL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2022 2021 Licênça uso de Software (a)",
+          "values": [
+            "193.245",
+            "193.245"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos Judiciais Anteriores 782.326 476.604 Atletas em Formação e Reavaliação (b)",
+          "values": [
+            "36.282.080",
+            "40.067.059"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Novos Depósitos Judiciais 986.612 268.222 Atletas Profissionais e Reavaliação (c)",
+          "values": [
+            "58.948.634",
+            "38.694.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Calção para Aluguel",
+          "values": [
+            "37.500",
+            "37.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Levantamentos / Resgates Total",
+          "values": [
+            "95.423.959",
+            "78.955.104"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "1.806.438",
+            "782.326"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "NOTA 08. IMOBILIZADO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Informatica e Periféricos 127.915 (107.200) 20.715 25.633 Infantil 26 760.435",
+          "values": [
+            "3.740.126"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos Esportivos 1.126.537 (1.126.537) - - Juvenil 29 1.188.465",
+          "values": [
+            "1.857.462"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Utensílios 456.802 (387.945) 68.857 105.143 Junior 12 222.013",
+          "values": [
+            "358.304"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos 693.129 (674.232) 18.897 18.897 Total 67 2.170.914",
+          "values": [
+            "5.955.892"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "8.758.640 (4.291.727) 4.466.912 4.508.116 Atletas Profissionais",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "IMOBILIZADO REAVALIAÇÃO Atletas Profissionais/Profissionalizados 24 5.559.800",
+          "values": [
+            "5.559.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terreno 121.547.664 - 121.547.664 121.547.664 Total 91 7.730.714",
+          "values": [
+            "11.515.692"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construção",
+          "values": [
+            "40.573.812",
+            "(15.388.081)",
+            "25.185.731",
+            "26.881.566"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinas e Equipamentos 33.238 (33.238) - - Reavaliação Atletas da Base - 34.111.166 -",
+          "values": [
+            "34.111.166"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Informatica e Periféricos 13.011 (2.602) 10.409 10.409 Reavaliação Atletas Profissionais - 53.388.834 -",
+          "values": [
+            "33.135.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipamentos Esportivos 172.849 (185.196) (12.348) 1.727 Total Geral 91 95.230.714",
+          "values": [
+            "78.761.859"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Utensílios",
+          "values": [
+            "17.035",
+            "(2.527)",
+            "14.508",
+            "14.508"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veículos",
+          "values": [
+            "2.617",
+            "(1.047)",
+            "1.570",
+            "1.570"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "Total Imobilizado 171.118.866 (19.904.418) 151.214.447 152.965.560 / Assim representados:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "correspondente a R$ 162.360.226. Total Fornecedores, Prest. Serviço e Outros 8.263.039 -",
+          "values": [
+            "8.263.039",
+            "7.051.463"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sérgio Carnielli (a) -",
+          "values": [
+            "84.163.378",
+            "84.163.378",
+            "84.163.378"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NOTA 11. SALARIOS E INDENIZAÇÕES A PAGAR Carnielli Invest. e Part. Ltda. (a) -",
+          "values": [
+            "25.816.945",
+            "25.816.945",
+            "25.816.945"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Elenko Sports - - -",
+          "values": [
+            "3.000.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "NOTA 12. CONTRIBUIÇÕES A RECOLHER / NOTA 13. PARCELAMENTOS DE IMPOSTOS E CONTRIBUIÇÕES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Marcus Vinicius Sanchez Secund 3.566.660 -",
+          "values": [
+            "3.566.660",
+            "3.708.660"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vanderlei Aparecido Pereira -",
+          "values": [
+            "1.243.029",
+            "1.243.029",
+            "1.243.029"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luis Fernando Assessoria Esportiva Ltda - -",
+          "values": [
+            "4.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Original Line Comercio de Utilidades DOM 1.500.000 -",
+          "values": [
+            "1.500.000",
+            "1.500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Real Sport Soccer - - -",
+          "values": [
+            "500.412"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SPK Sports Planejamento 200.000 -",
+          "values": [
+            "200.000",
+            "200.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Odilon G. Nascimento Neto 87.822 -",
+          "values": [
+            "87.822",
+            "225.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "2.427.380",
+            "2.427.380",
+            "615.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Titulos a Pagar",
+          "values": [
+            "7.781.862",
+            "111.223.351",
+            "119.005.213",
+            "124.972.823"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carnielli Invest - Repasse Atletas (b) 1.208.889 -",
+          "values": [
+            "1.208.889",
+            "1.208.889"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Outros - - - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Contas a Pagar 1.208.889 -",
+          "values": [
+            "1.208.889",
+            "1.208.889"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL GERAL FORNECEDORES, TITULOS A PAGAR e",
+          "values": [
+            "17.253.790",
+            "111.223.351",
+            "128.477.141",
+            "133.233.175"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "MOVIMENTAÇÃO DOS SALDOS FORNECEDORES, TITULOS A PAGAR E CONTAS A PAGAR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Fornecedores, Prest. Serviço e Outros",
+          "values": [
+            "7.051.463",
+            "8.263.039"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sérgio Carnielli 84.163.378 - -",
+          "values": [
+            "84.163.378"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carnielli Invest. e Part. Ltda. 25.816.945 - -",
+          "values": [
+            "25.816.945"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Elenko Sports 3.000.000 - 3.000.000 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Marcus Vinicius Sanchez Secund 3.708.660 -",
+          "values": [
+            "142.000",
+            "3.566.660"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vanderlei Aparecido Pereira 1.243.029 - -",
+          "values": [
+            "1.243.029"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Luis Fernando Assessoria Esportiva Ltda 4.000.000 - 4.000.000 - / Original Line Comercio de Utilidades DOM 1.500.000 - - 1.500.000 / Real Sport Soccer 500.412 - 500.412 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SPK Sports Planejamento 200.000 - -",
+          "values": [
+            "200.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Odilon G. Nascimento Neto 225.400 -",
+          "values": [
+            "137.578",
+            "87.822"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros 615.000 1.812.380 -",
+          "values": [
+            "2.427.380"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Carnielli Invest - Repasse Atletas 1.208.889 - -",
+          "values": [
+            "1.208.889"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Redução/Aumento Dividas",
+          "values": [
+            "133.233.175",
+            "1.812.380",
+            "7.779.990",
+            "128.477.141"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "NOTA 18. RESULTADO DO DEPARTAMENTO PROFISSIONAL / IRRF/PIS/CSRF Folha -PARCEL. SIMPLIFI' - - - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "BANCO CENTRAL DO BRASIL",
+          "values": [
+            "141.282",
+            "2.077.729",
+            "2.219.011",
+            "2.309.821"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS-PROFUT",
+          "values": [
+            "193.471",
+            "2.497.220",
+            "2.690.691",
+            "2.690.691"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS-PARCELAMENTO SIMPLIFICADO",
+          "values": [
+            "875.184",
+            "902.221",
+            "1.777.405",
+            "1.777.405"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS-PROFUT",
+          "values": [
+            "281.582",
+            "5.525.583",
+            "5.807.165",
+            "5.889.312"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 4,
+      "section": "INSS-PARCELAMENTO SIMPLIFICADO - - - - / IRRF-PROFUT - - - - / CSRF-PROFUT - - - / PIS S/ FOLHA-PROFUT - - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "PERT - PARCELAMENTO",
+          "values": [
+            "89.304",
+            "637.217",
+            "726.521",
+            "753.551"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PERT PARCELAMENTO INSS",
+          "values": [
+            "76.191",
+            "436.110",
+            "512.302",
+            "519.840"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "PIS - PARCELAMENTO SIMPLIFICADO - - - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "PERSE PARCELAMENTO",
+          "values": [
+            "377.839",
+            "15.041.395",
+            "15.419.234",
+            "15.478.674"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PERSE PARCELAMENTO PREVIDENCIARI",
+          "values": [
+            "160.602",
+            "3.819.081",
+            "3.979.682",
+            "3.991.744"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "NOTA 14. ADIANTAMENTOS / NOTA 15. CONTINGENCIAS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Quotas Globo-Camp Brasileiro",
+          "values": [
+            "7.710.225",
+            "7.415.150"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Quotas F.P.F",
+          "values": [
+            "6.238.000",
+            "7.608.290"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiação Campeonato Paulista -",
+          "values": [
+            "210.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiação Projeto Excelencia no Futebol/Ouro -",
+          "values": [
+            "80.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Quotas Copa do Brasil-CBF -",
+          "values": [
+            "1.256.700"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Receitas",
+          "values": [
+            "1.364.574",
+            "908.767"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venda Atletas",
+          "values": [
+            "21.300.000",
+            "4.474.149"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidade/Propaganda",
+          "values": [
+            "2.430.518",
+            "2.405.527"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Solidariedade / Compensação Formação",
+          "values": [
+            "1.635.892",
+            "1.320.612"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "40.679.209",
+            "25.679.194"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Custos e Despesas Nota",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Salários e Encargos /Outros",
+          "values": [
+            "19.(b)",
+            "(13.184.276)",
+            "(13.247.856)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicos de Terceiros",
+          "values": [
+            "19.(b)",
+            "(2.588.706)",
+            "(2.445.991)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com Jogos",
+          "values": [
+            "19.(b)",
+            "(3.170.302)",
+            "(2.991.522)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demais Gastos",
+          "values": [
+            "19.(a)",
+            "(22.776.096)",
+            "(17.564.425)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "(1.719.381)",
+            "(36.249.795)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superavit/Déficit Departamento",
+          "values": [
+            "(1.040.171)",
+            "(10.570.601)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "Do saldo provisionado: / 18.(a) - O saldo dos \"Demais Gastos\" são compostos da seguinte forma: / Descrição: / . 2022 2021 / R$ 5.522.803 Processos Trabalhista;",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "R$ 2.322.351 Processos Cíveis; — | . , Cessão de Imagem / Luvas",
+          "values": [
+            "(3.530.385)",
+            "(2.862.235)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R$ 1.198.321 Processos CNRD (Câmara Nacional Resoluções de Disputas) Intermediação / Comissão",
+          "values": [
+            "(1.132.324)",
+            "(937.807)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Solidariedade / Compensação Formação -",
+          "values": [
+            "(487.272)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Viagens / Moradia / Concentraçãod e Atletas / Refeições / Medicamentos",
+          "values": [
+            "(1.505.238)",
+            "(1.600.529)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Transporte de Atletas - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "NOTA 16. ACORDOS/DISTRATOS TRABALHISTA Taxas CBF / FPF",
+          "values": [
+            "(330.906)",
+            "(256.297)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Despesas (d)",
+          "values": [
+            "(12.968.254)",
+            "(6.602.217)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "2022 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Custo/ D Depar Profissional",
+          "values": [
+            "(19.467.107)",
+            "(13.746.356)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MARIO LUCIO DUARTE DA COSTA",
+          "values": [
+            "918.750",
+            "1.068.750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LIVONIR RUSCHEL",
+          "values": [
+            "132.000",
+            "264.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AIRTON GRACILIANO DOS SANTOS 145.280 251.626 Fenapaf/ INSS (a)",
+          "values": [
+            "(1.435.930)",
+            "(1.580.330)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GUSTAVO BUENO 442.400 442.400 Amortização / Depreciação (b)",
+          "values": [
+            "(1.751.112)",
+            "(1.972.950)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "GUSTAVO LAZARETTI - -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "VANDERSON MARQUES PEREIRA 225.000 225.000 Total Fenapaf/INSS/ Depreciação/ Mat.Esportivo e Acordo Trabalhi",
+          "values": [
+            "(3.308.989)",
+            "(3.818.069)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OUTROS",
+          "values": [
+            "2.025.727",
+            "2.025.727"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "NOTA 19. EVENTOS SUBSEQUENTES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Salários e Encargos /Outros",
+          "values": [
+            "(13.184.276)",
+            "(13.247.856)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicos de Terceiros (a)",
+          "values": [
+            "(2.588.706)",
+            "(2.445.991)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com Jogos",
+          "values": [
+            "(3.170.302)",
+            "(2.991.522)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo/ Despesas Departamento Profissional",
+          "values": [
+            "(22.776.096)",
+            "(17.564.425)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 3,
+      "section": "DESCRIÇÃO 2022 2021",
+      "likelyRelevant": false,
+      "totalLabel": "Total 175.000 175.000 Alimentação/Refeitorio (AL)",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": "NOTA 07. DEPOSITOS JUDICIAIS NOTA 09. INTANGÍVEL",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "1.806.438",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "189078980"
+    },
+    {
+      "page": 3,
+      "section": "NOTA 07. DEPOSITOS JUDICIAIS NOTA 09. INTANGÍVEL",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "782.326",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "157165382"
+    },
+    {
+      "page": 4,
+      "section": "NOTA 12. CONTRIBUIÇÕES A RECOLHER / NOTA 13. PARCELAMENTOS DE IMPOSTOS E CONTRIBUIÇÕES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Titulos a Pagar",
+      "target": "7.781.862",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "5743441"
+    },
+    {
+      "page": 4,
+      "section": "NOTA 12. CONTRIBUIÇÕES A RECOLHER / NOTA 13. PARCELAMENTOS DE IMPOSTOS E CONTRIBUIÇÕES",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Titulos a Pagar",
+      "target": "111.223.351",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "-101918882"
+    },
+    {
+      "page": 4,
+      "section": "NOTA 12. CONTRIBUIÇÕES A RECOLHER / NOTA 13. PARCELAMENTOS DE IMPOSTOS E CONTRIBUIÇÕES",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total Titulos a Pagar",
+      "target": "119.005.213",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-117147184"
+    },
+    {
+      "page": 4,
+      "section": "Outros - - - -",
+      "likelyRelevant": false,
+      "totalLabel": "Total Contas a Pagar 1.208.889 -",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 4,
+      "section": "Outros - - - -",
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL GERAL FORNECEDORES, TITULOS A PAGAR e",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 4,
+      "section": "MOVIMENTAÇÃO DOS SALDOS FORNECEDORES, TITULOS A PAGAR E CONTAS A PAGAR",
+      "likelyRelevant": false,
+      "totalLabel": "Total Fornecedores, Prest. Serviço e Outros",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 4,
+      "section": "Luis Fernando Assessoria Esportiva Ltda 4.000.000 - 4.000.000 - / Original Line Comercio de Utilidades DOM 1.500.000 - - 1.500.000 / Real Sport Soccer 500.412 - 500.412 -",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Redução/Aumento Dividas",
+      "target": "133.233.175",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-129259328"
+    },
+    {
+      "page": 4,
+      "section": "Luis Fernando Assessoria Esportiva Ltda 4.000.000 - 4.000.000 - / Original Line Comercio de Utilidades DOM 1.500.000 - - 1.500.000 / Real Sport Soccer 500.412 - 500.412 -",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Redução/Aumento Dividas",
+      "target": "1.812.380",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-1724558"
+    },
+    {
+      "page": 4,
+      "section": "NOTA 14. ADIANTAMENTOS / NOTA 15. CONTINGENCIAS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "40.679.209",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "1546700"
+    },
+    {
+      "page": 4,
+      "section": "NOTA 14. ADIANTAMENTOS / NOTA 15. CONTINGENCIAS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "25.679.194",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "-1546699"
+    },
+    {
+      "page": 4,
+      "section": "Custos e Despesas Nota",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "4 de 4 valor(es) del segmento no parecen números (ej. \"19.(b)\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 4,
+      "section": "Custos e Despesas Nota",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "(36.249.795)",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-5469585"
+    },
+    {
+      "page": 5,
+      "section": "2022 2021",
+      "likelyRelevant": false,
+      "totalLabel": "Total Custo/ D Depar Profissional",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 14,
+    "results": [
+      {
+        "label": "Administrativo - Estadio (3.932.300) (3.924.579) Estoques de material de consumo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Administrativo - Estadio (3.932.300) (3.924.579) Estoques de material de consumo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Administrativo- Jd Paineiras (272.761) (258.920) Outros Creditos a receber",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Administrativo- Jd Paineiras (272.761) (258.920) Outros Creditos a receber",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Administrativo - Jd Eulina (237.800) (236.813) Realizável a Longo Prazo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Administrativo - Jd Eulina (237.800) (236.813) Realizável a Longo Prazo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "BANCO CENTRAL DO BRASIL",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "BANCO CENTRAL DO BRASIL",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FGTS-PROFUT",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FGTS-PROFUT",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FGTS-PARCELAMENTO SIMPLIFICADO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FGTS-PARCELAMENTO SIMPLIFICADO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INSS-PROFUT",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INSS-PROFUT",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Salários e Encargos /Outros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Salários e Encargos /Outros",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Salários e Encargos/Outros (Profissional)",
+        "similarity": 75
+      },
+      {
+        "label": "Servicos de Terceiros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Servicos de Terceiros",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Serviços de Terceiros (Profissional)",
+        "similarity": 67
+      },
+      {
+        "label": "Despesas com Jogos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com Jogos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Despesas com Jogos",
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Demais Gastos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Demais Gastos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Outras Despesas (Demais Gastos)",
+        "similarity": 50
+      },
+      {
+        "label": "Superavit/Déficit Departamento",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superavit/Déficit Departamento",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "R$ 2.322.351 Processos Cíveis; — | . , Cessão de Imagem / Luvas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "R$ 2.322.351 Processos Cíveis; — | . , Cessão de Imagem / Luvas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "R$ 1.198.321 Processos CNRD (Câmara Nacional Resoluções de Disputas) Intermediação / Comissão",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "R$ 1.198.321 Processos CNRD (Câmara Nacional Resoluções de Disputas) Intermediação / Comissão",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Ponte Preta",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "1 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "9 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "6 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

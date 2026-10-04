@@ -1,0 +1,1100 @@
+{
+  "md": "Clubes/Argentina/Boca/presupuesto-22-23-completo.md",
+  "pdf": "Clubes/Argentina/Boca/presupuesto-22-23-completo.pdf",
+  "club": "boca",
+  "year": 0,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:50:52.683Z",
+  "tieOuts": {
+    "cierran": 64,
+    "noCierran": 1
+  },
+  "warnings": [
+    "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "20 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 90,
+    "notasUsadas": [
+      "55",
+      "54",
+      "57",
+      "43",
+      "1"
+    ]
+  },
+  "ladoConocido": 94,
+  "rubros": [
+    {
+      "label": "Remuneraciones S.A.C. y C.S.",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        32624.659
+      ],
+      "origen": "estado 9",
+      "glosa": "Remuneraciones S.A.C. y C.S."
+    },
+    {
+      "label": "Agasajos, Buffet y Refrigerios",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        1004.681
+      ],
+      "origen": "estado 9",
+      "glosa": "Agasajos, Buffet y Refrigerios"
+    },
+    {
+      "label": "Alquiler de Equipos Varios",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        300
+      ],
+      "origen": "estado 9",
+      "glosa": "Alquiler de Equipos Varios"
+    },
+    {
+      "label": "Artículos de Librería",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        130.976
+      ],
+      "origen": "estado 9",
+      "glosa": "Artículos de Librería"
+    },
+    {
+      "label": "Asamblea de Representantes",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        480
+      ],
+      "origen": "estado 9",
+      "glosa": "Asamblea de Representantes"
+    },
+    {
+      "label": "Honorarios",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        9120
+      ],
+      "origen": "estado 9",
+      "glosa": "Honorarios"
+    },
+    {
+      "label": "Obsequios - Indumentaria",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        2820
+      ],
+      "origen": "estado 9",
+      "glosa": "Obsequios - Indumentaria"
+    },
+    {
+      "label": "Obsequios-Merchandising",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        974.573
+      ],
+      "origen": "estado 9",
+      "glosa": "Obsequios-Merchandising"
+    },
+    {
+      "label": "Organización eventos",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        2880
+      ],
+      "origen": "estado 9",
+      "glosa": "Organización eventos"
+    },
+    {
+      "label": "Seguro Caucion",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        4560
+      ],
+      "origen": "estado 9",
+      "glosa": "Seguro Caucion"
+    },
+    {
+      "label": "Servicios y Abonos Varios",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        348
+      ],
+      "origen": "estado 9",
+      "glosa": "Servicios y Abonos Varios"
+    },
+    {
+      "label": "Suscripciones y Abonos Varios",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        84.756
+      ],
+      "origen": "estado 9",
+      "glosa": "Suscripciones y Abonos Varios"
+    },
+    {
+      "label": "Telefonía Celular",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        98.646
+      ],
+      "origen": "estado 9",
+      "glosa": "Telefonía Celular"
+    },
+    {
+      "label": "Teléfono",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        39.16
+      ],
+      "origen": "estado 9",
+      "glosa": "Teléfono"
+    },
+    {
+      "label": "Viajes y Movilidad",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        3720
+      ],
+      "origen": "estado 9",
+      "glosa": "Viajes y Movilidad"
+    },
+    {
+      "label": "Viáticos",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        1172.524
+      ],
+      "origen": "estado 9",
+      "glosa": "Viáticos"
+    },
+    {
+      "label": "Varios",
+      "lado": "expense",
+      "page": 14,
+      "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+      "values": [
+        1560
+      ],
+      "origen": "estado 9",
+      "glosa": "Varios"
+    },
+    {
+      "label": "Remuneraciones S.A.C. y C.S.",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        52673.042
+      ],
+      "origen": "estado 18",
+      "glosa": "Remuneraciones S.A.C. y C.S."
+    },
+    {
+      "label": "Agasajos, Buffet y Refrigerios",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        22179.721
+      ],
+      "origen": "estado 18",
+      "glosa": "Agasajos, Buffet y Refrigerios"
+    },
+    {
+      "label": "Alquiler de Equipos Varios",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        121.5
+      ],
+      "origen": "estado 18",
+      "glosa": "Alquiler de Equipos Varios"
+    },
+    {
+      "label": "Artículos de Librería",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        170.1
+      ],
+      "origen": "estado 18",
+      "glosa": "Artículos de Librería"
+    },
+    {
+      "label": "Atenciones al Personal",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        12890.55
+      ],
+      "origen": "estado 18",
+      "glosa": "Atenciones al Personal"
+    },
+    {
+      "label": "Capacitación",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        5586
+      ],
+      "origen": "estado 18",
+      "glosa": "Capacitación"
+    },
+    {
+      "label": "Honorarios",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        3507.3
+      ],
+      "origen": "estado 18",
+      "glosa": "Honorarios"
+    },
+    {
+      "label": "Mensajería",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        97.2
+      ],
+      "origen": "estado 18",
+      "glosa": "Mensajería"
+    },
+    {
+      "label": "Obsequios - Indumentaria",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        102.6
+      ],
+      "origen": "estado 18",
+      "glosa": "Obsequios - Indumentaria"
+    },
+    {
+      "label": "Obsequios-Merchandising",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        108
+      ],
+      "origen": "estado 18",
+      "glosa": "Obsequios-Merchandising"
+    },
+    {
+      "label": "Telefonía Celular",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        129.6
+      ],
+      "origen": "estado 18",
+      "glosa": "Telefonía Celular"
+    },
+    {
+      "label": "Uniformes Personal",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        2772.306
+      ],
+      "origen": "estado 18",
+      "glosa": "Uniformes Personal"
+    },
+    {
+      "label": "Viajes y Movilidad",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        855.36
+      ],
+      "origen": "estado 18",
+      "glosa": "Viajes y Movilidad"
+    },
+    {
+      "label": "Viáticos",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        405
+      ],
+      "origen": "estado 18",
+      "glosa": "Viáticos"
+    },
+    {
+      "label": "Varios",
+      "lado": "revenue",
+      "page": 17,
+      "section": "# Gerencia de Recursos Humanos",
+      "values": [
+        200
+      ],
+      "origen": "estado 18",
+      "glosa": "Varios"
+    },
+    {
+      "label": "Fútbol Profesional",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        7657998.023
+      ],
+      "origen": "estado 1",
+      "glosa": "Fútbol Profesional"
+    },
+    {
+      "label": "Administración",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        1812368.282
+      ],
+      "origen": "estado 1",
+      "glosa": "Administración"
+    },
+    {
+      "label": "Organización de Espectáculos",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        1494742.724
+      ],
+      "origen": "estado 1",
+      "glosa": "Organización de Espectáculos"
+    },
+    {
+      "label": "IVA",
+      "lado": "expense",
+      "page": 34,
+      "section": "# OTROS GASTOS / # Gastos Generales",
+      "values": [
+        347153.812
+      ],
+      "origen": "nota 55 (ancla 1)",
+      "ancla": "Gastos Generales",
+      "glosa": "IVA"
+    },
+    {
+      "label": "Gastos Generales",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        705093.064
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Gastos Generales"
+    },
+    {
+      "label": "Gastos Bancarios",
+      "lado": "expense",
+      "page": 34,
+      "section": "# OTROS GASTOS / # Gastos Generales",
+      "values": [
+        142243.048
+      ],
+      "origen": "nota 55 (ancla 1)",
+      "ancla": "Gastos Generales",
+      "glosa": "Gastos Bancarios"
+    },
+    {
+      "label": "Diversos",
+      "lado": "expense",
+      "page": 34,
+      "section": "# OTROS GASTOS / # Gastos Generales",
+      "values": [
+        82749.072
+      ],
+      "origen": "nota 55 (ancla 1)",
+      "ancla": "Gastos Generales",
+      "glosa": "Diversos"
+    },
+    {
+      "label": "Sellos",
+      "lado": "expense",
+      "page": 34,
+      "section": "# OTROS GASTOS / # Gastos Generales",
+      "values": [
+        47358.833
+      ],
+      "origen": "nota 55 (ancla 1)",
+      "ancla": "Gastos Generales",
+      "glosa": "Sellos"
+    },
+    {
+      "label": "Remuneraciones S.A.C. y C.S.",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Basket Amateur",
+      "values": [
+        36129.479
+      ],
+      "origen": "nota 54 (ancla 1>55)",
+      "ancla": "Gastos Generales",
+      "glosa": "Remuneraciones S.A.C. y C.S."
+    },
+    {
+      "label": "Agasajos, Buffet y Refrigerios",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Basket Amateur",
+      "values": [
+        910.74
+      ],
+      "origen": "nota 54 (ancla 1>55)",
+      "ancla": "Gastos Generales",
+      "glosa": "Agasajos, Buffet y Refrigerios"
+    },
+    {
+      "label": "Becas",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Basket Amateur",
+      "values": [
+        2460.334
+      ],
+      "origen": "nota 54 (ancla 1>55)",
+      "ancla": "Gastos Generales",
+      "glosa": "Becas"
+    },
+    {
+      "label": "Organización eventos",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Basket Amateur",
+      "values": [
+        511.391
+      ],
+      "origen": "nota 54 (ancla 1>55)",
+      "ancla": "Gastos Generales",
+      "glosa": "Organización eventos"
+    },
+    {
+      "label": "Viajes y Movilidad",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Basket Amateur",
+      "values": [
+        144.192
+      ],
+      "origen": "nota 54 (ancla 1>55)",
+      "ancla": "Gastos Generales",
+      "glosa": "Viajes y Movilidad"
+    },
+    {
+      "label": "Servicios y Abonos Varios",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Basket Amateur",
+      "values": [
+        586.286
+      ],
+      "origen": "nota 54 (ancla 1>55)",
+      "ancla": "Gastos Generales",
+      "glosa": "Servicios y Abonos Varios"
+    },
+    {
+      "label": "Varios",
+      "lado": "expense",
+      "page": 33,
+      "section": "# Basket Amateur",
+      "values": [
+        490
+      ],
+      "origen": "nota 54 (ancla 1>55)",
+      "ancla": "Gastos Generales",
+      "glosa": "Varios"
+    },
+    {
+      "label": "Mutual Jugadores 1%",
+      "lado": "expense",
+      "page": 34,
+      "section": "# OTROS GASTOS / # Gastos Generales",
+      "values": [
+        25627
+      ],
+      "origen": "nota 55 (ancla 1)",
+      "ancla": "Gastos Generales",
+      "glosa": "Mutual Jugadores 1%"
+    },
+    {
+      "label": "Previsión Indemnizaciones",
+      "lado": "expense",
+      "page": 34,
+      "section": "# OTROS GASTOS / # Gastos Generales",
+      "values": [
+        7200
+      ],
+      "origen": "nota 55 (ancla 1)",
+      "ancla": "Gastos Generales",
+      "glosa": "Previsión Indemnizaciones"
+    },
+    {
+      "label": "Previsión para Juicios",
+      "lado": "expense",
+      "page": 34,
+      "section": "# OTROS GASTOS / # Gastos Generales",
+      "values": [
+        6000
+      ],
+      "origen": "nota 55 (ancla 1)",
+      "ancla": "Gastos Generales",
+      "glosa": "Previsión para Juicios"
+    },
+    {
+      "label": "Seguros Varios",
+      "lado": "expense",
+      "page": 34,
+      "section": "# OTROS GASTOS / # Gastos Generales",
+      "values": [
+        5074.235
+      ],
+      "origen": "nota 55 (ancla 1)",
+      "ancla": "Gastos Generales",
+      "glosa": "Seguros Varios"
+    },
+    {
+      "label": "Asambleas y Elecciones",
+      "lado": "expense",
+      "page": 34,
+      "section": "# OTROS GASTOS / # Gastos Generales",
+      "values": [
+        442.116
+      ],
+      "origen": "nota 55 (ancla 1)",
+      "ancla": "Gastos Generales",
+      "glosa": "Asambleas y Elecciones"
+    },
+    {
+      "label": "Comerciales",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        469379.739
+      ],
+      "origen": "estado 1",
+      "glosa": "Comerciales"
+    },
+    {
+      "label": "Amortización Inmuebles",
+      "lado": "expense",
+      "page": 34,
+      "section": "# Otras Amortizaciones",
+      "values": [
+        190251.894
+      ],
+      "origen": "nota 57 (ancla 1)",
+      "ancla": "Otras Amortizaciones",
+      "glosa": "Amortización Inmuebles"
+    },
+    {
+      "label": "Otras Amortizaciones",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        440989.984
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Otras Amortizaciones"
+    },
+    {
+      "label": "Amortización Instalaciones",
+      "lado": "expense",
+      "page": 34,
+      "section": "# Otras Amortizaciones",
+      "values": [
+        148110.449
+      ],
+      "origen": "nota 57 (ancla 1)",
+      "ancla": "Otras Amortizaciones",
+      "glosa": "Amortización Instalaciones"
+    },
+    {
+      "label": "Amortizaciones Varias",
+      "lado": "expense",
+      "page": 34,
+      "section": "# Otras Amortizaciones",
+      "values": [
+        102627.641
+      ],
+      "origen": "nota 57 (ancla 1)",
+      "ancla": "Otras Amortizaciones",
+      "glosa": "Amortizaciones Varias"
+    },
+    {
+      "label": "Otros Deportes",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        340545.004
+      ],
+      "origen": "estado 1",
+      "glosa": "Otros Deportes"
+    },
+    {
+      "label": "Fútbol Juvenil",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        279556.812
+      ],
+      "origen": "estado 1",
+      "glosa": "Fútbol Juvenil"
+    },
+    {
+      "label": "Socios",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        246052.068
+      ],
+      "origen": "estado 1",
+      "glosa": "Socios"
+    },
+    {
+      "label": "Basket",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        240950.666
+      ],
+      "origen": "estado 1",
+      "glosa": "Basket"
+    },
+    {
+      "label": "Eventuales",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        200000
+      ],
+      "origen": "estado 1",
+      "glosa": "Eventuales"
+    },
+    {
+      "label": "Remuneraciones S.A.C. y C.S.",
+      "lado": "expense",
+      "page": 28,
+      "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+      "values": [
+        25333.272
+      ],
+      "origen": "nota 43 (ancla 1)",
+      "ancla": "Fútbol Internacional",
+      "glosa": "Remuneraciones S.A.C. y C.S."
+    },
+    {
+      "label": "Fútbol Internacional",
+      "lado": "expense",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        27573.759
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Fútbol Internacional"
+    },
+    {
+      "label": "Agasajos, Buffet y Refrigerios",
+      "lado": "expense",
+      "page": 28,
+      "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+      "values": [
+        76.5
+      ],
+      "origen": "nota 43 (ancla 1)",
+      "ancla": "Fútbol Internacional",
+      "glosa": "Agasajos, Buffet y Refrigerios"
+    },
+    {
+      "label": "Costo Campus",
+      "lado": "expense",
+      "page": 28,
+      "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+      "values": [
+        540
+      ],
+      "origen": "nota 43 (ancla 1)",
+      "ancla": "Fútbol Internacional",
+      "glosa": "Costo Campus"
+    },
+    {
+      "label": "Costo Escuelas",
+      "lado": "expense",
+      "page": 28,
+      "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+      "values": [
+        396
+      ],
+      "origen": "nota 43 (ancla 1)",
+      "ancla": "Fútbol Internacional",
+      "glosa": "Costo Escuelas"
+    },
+    {
+      "label": "Impresos, Papelería y Fotocopias",
+      "lado": "expense",
+      "page": 28,
+      "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+      "values": [
+        51
+      ],
+      "origen": "nota 43 (ancla 1)",
+      "ancla": "Fútbol Internacional",
+      "glosa": "Impresos, Papelería y Fotocopias"
+    },
+    {
+      "label": "Obsequios - Indumentaria",
+      "lado": "expense",
+      "page": 28,
+      "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+      "values": [
+        450
+      ],
+      "origen": "nota 43 (ancla 1)",
+      "ancla": "Fútbol Internacional",
+      "glosa": "Obsequios - Indumentaria"
+    },
+    {
+      "label": "Viáticos",
+      "lado": "expense",
+      "page": 28,
+      "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+      "values": [
+        66.3
+      ],
+      "origen": "nota 43 (ancla 1)",
+      "ancla": "Fútbol Internacional",
+      "glosa": "Viáticos"
+    },
+    {
+      "label": "Viajes y Movilidad",
+      "lado": "expense",
+      "page": 28,
+      "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+      "values": [
+        460.688
+      ],
+      "origen": "nota 43 (ancla 1)",
+      "ancla": "Fútbol Internacional",
+      "glosa": "Viajes y Movilidad"
+    },
+    {
+      "label": "Gastos Generales",
+      "lado": "revenue",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        705093.064
+      ],
+      "origen": "nota 1 (ancla 0)",
+      "ancla": "TOTAL INGRESOS",
+      "glosa": "Gastos Generales"
+    },
+    {
+      "label": "TOTAL INGRESOS",
+      "lado": "revenue",
+      "page": 9,
+      "section": "# PRESUPUESTO ECONOMICO / INGRESOS",
+      "values": [
+        14161410.595
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "TOTAL INGRESOS"
+    },
+    {
+      "label": "Otras Amortizaciones",
+      "lado": "revenue",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        440989.984
+      ],
+      "origen": "nota 1 (ancla 0)",
+      "ancla": "TOTAL INGRESOS",
+      "glosa": "Otras Amortizaciones"
+    },
+    {
+      "label": "Fútbol Internacional",
+      "lado": "revenue",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        27573.759
+      ],
+      "origen": "nota 1 (ancla 0)",
+      "ancla": "TOTAL INGRESOS",
+      "glosa": "Fútbol Internacional"
+    },
+    {
+      "label": "RESULTADO ECONOMICO",
+      "lado": "revenue",
+      "page": 9,
+      "section": "GASTOS",
+      "values": [
+        246160.469
+      ],
+      "origen": "nota 1 (ancla 0)",
+      "ancla": "TOTAL INGRESOS",
+      "glosa": "RESULTADO ECONOMICO"
+    },
+    {
+      "label": "Socios Activos",
+      "lado": "revenue",
+      "page": 11,
+      "section": "# APERTURA DE INGRESOS",
+      "values": [
+        1754525.514
+      ],
+      "origen": "estado 2",
+      "glosa": "Socios Activos"
+    },
+    {
+      "label": "Adherente AMBA",
+      "lado": "revenue",
+      "page": 11,
+      "section": "# APERTURA DE INGRESOS",
+      "values": [
+        1323483.061
+      ],
+      "origen": "estado 2",
+      "glosa": "Adherente AMBA"
+    },
+    {
+      "label": "Socios Interior",
+      "lado": "revenue",
+      "page": 11,
+      "section": "# APERTURA DE INGRESOS",
+      "values": [
+        575984.086
+      ],
+      "origen": "estado 2",
+      "glosa": "Socios Interior"
+    },
+    {
+      "label": "Adherente Interior",
+      "lado": "revenue",
+      "page": 11,
+      "section": "# APERTURA DE INGRESOS",
+      "values": [
+        543107.519
+      ],
+      "origen": "estado 2",
+      "glosa": "Adherente Interior"
+    },
+    {
+      "label": "Socios Menores",
+      "lado": "revenue",
+      "page": 11,
+      "section": "# APERTURA DE INGRESOS",
+      "values": [
+        380053.193
+      ],
+      "origen": "estado 2",
+      "glosa": "Socios Menores"
+    },
+    {
+      "label": "Socios Activas",
+      "lado": "revenue",
+      "page": 11,
+      "section": "# APERTURA DE INGRESOS",
+      "values": [
+        305311.398
+      ],
+      "origen": "estado 2",
+      "glosa": "Socios Activas"
+    },
+    {
+      "label": "Socios Cadetes",
+      "lado": "revenue",
+      "page": 11,
+      "section": "# APERTURA DE INGRESOS",
+      "values": [
+        105919.931
+      ],
+      "origen": "estado 2",
+      "glosa": "Socios Cadetes"
+    },
+    {
+      "label": "Seguro de Vida",
+      "lado": "revenue",
+      "page": 11,
+      "section": "# APERTURA DE INGRESOS",
+      "values": [
+        35004.3
+      ],
+      "origen": "estado 2",
+      "glosa": "Seguro de Vida"
+    },
+    {
+      "label": "Socio Internacional",
+      "lado": "revenue",
+      "page": 11,
+      "section": "# APERTURA DE INGRESOS",
+      "values": [
+        16029.756
+      ],
+      "origen": "estado 2",
+      "glosa": "Socio Internacional"
+    },
+    {
+      "label": "Carnet Socios",
+      "lado": "revenue",
+      "page": 11,
+      "section": "# APERTURA DE INGRESOS",
+      "values": [
+        3600
+      ],
+      "origen": "estado 2",
+      "glosa": "Carnet Socios"
+    },
+    {
+      "label": "Socios Exterior",
+      "lado": "revenue",
+      "page": 11,
+      "section": "# APERTURA DE INGRESOS",
+      "values": [
+        1571.545
+      ],
+      "origen": "estado 2",
+      "glosa": "Socios Exterior"
+    },
+    {
+      "label": "ABL",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Gastos de estructura administrativa",
+      "values": [
+        15671.261
+      ],
+      "origen": "estado 14",
+      "glosa": "ABL"
+    },
+    {
+      "label": "Agasajos, Buffet y Refrigerios",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Gastos de estructura administrativa",
+      "values": [
+        1200
+      ],
+      "origen": "estado 14",
+      "glosa": "Agasajos, Buffet y Refrigerios"
+    },
+    {
+      "label": "Alquiler de Equipos Varios",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Gastos de estructura administrativa",
+      "values": [
+        4476.019
+      ],
+      "origen": "estado 14",
+      "glosa": "Alquiler de Equipos Varios"
+    },
+    {
+      "label": "Artículos de Librería",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Gastos de estructura administrativa",
+      "values": [
+        379.532
+      ],
+      "origen": "estado 14",
+      "glosa": "Artículos de Librería"
+    },
+    {
+      "label": "Servicios y Abonos Varios",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Gastos de estructura administrativa",
+      "values": [
+        6000
+      ],
+      "origen": "estado 14",
+      "glosa": "Servicios y Abonos Varios"
+    },
+    {
+      "label": "Telefonía Celular",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Gastos de estructura administrativa",
+      "values": [
+        381.897
+      ],
+      "origen": "estado 14",
+      "glosa": "Telefonía Celular"
+    },
+    {
+      "label": "Teléfono",
+      "lado": "expense",
+      "page": 15,
+      "section": "# Gastos de estructura administrativa",
+      "values": [
+        277.659
+      ],
+      "origen": "estado 14",
+      "glosa": "Teléfono"
+    }
+  ]
+}

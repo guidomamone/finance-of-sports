@@ -1,0 +1,144 @@
+{
+ "md": "Clubes/Rusia/Pari Nizhny Novgorod/2023-poyasneniya.md",
+ "pdf": "Clubes/Rusia/Pari Nizhny Novgorod/2023-poyasneniya.pdf",
+ "club": "pari-nizhny-novgorod",
+ "year": 2023,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:08:02.890Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 12,
+  "notasUsadas": []
+ },
+ "ladoConocido": 11,
+ "rubros": [
+  {
+   "label": "Выручка (реализация билетов, абонементов, атрибутики, рекламы) стр.2110 стрстр.3110",
+   "lado": "revenue",
+   "page": 13,
+   "section": "# Финансовый результат по статьям за 2022г и 2023г.",
+   "values": [
+    0.656634
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Проценты к получению",
+   "lado": "revenue",
+   "page": 13,
+   "section": "# Финансовый результат по статьям за 2022г и 2023г.",
+   "values": [
+    0.007988
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Прочие доходы стр.2340",
+   "lado": "revenue",
+   "page": 13,
+   "section": "# Финансовый результат по статьям за 2022г и 2023г.",
+   "values": [
+    0.310394
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Себестоимость продаж стр.2120",
+   "lado": "expense",
+   "page": 13,
+   "section": "# Финансовый результат по статьям за 2022г и 2023г.",
+   "values": [
+    -0.369708
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Коммерческие расходы стр. 2210",
+   "lado": "expense",
+   "page": 13,
+   "section": "# Финансовый результат по статьям за 2022г и 2023г.",
+   "values": [
+    -0.226598
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Прочие расходы стр. 2350",
+   "lado": "expense",
+   "page": 13,
+   "section": "# Финансовый результат по статьям за 2022г и 2023г.",
+   "values": [
+    -0.36714
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Прочее",
+   "lado": null,
+   "page": 13,
+   "section": "# Финансовый результат по статьям за 2022г и 2023г.",
+   "values": [
+    0.003684
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Машины и оборудование",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Амортизация основных средств за 2022г и 2023г.",
+   "values": [
+    0.002022
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Офисное оборудование",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Амортизация основных средств за 2022г и 2023г.",
+   "values": [
+    0.002022
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Производственный и хозяйственный инвентарь",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Амортизация основных средств за 2022г и 2023г.",
+   "values": [
+    0.002022
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Транспортные средства",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Амортизация основных средств за 2022г и 2023г.",
+   "values": [
+    0.002022
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Прочее",
+   "lado": "expense",
+   "page": 11,
+   "section": "# Амортизация основных средств за 2022г и 2023г.",
+   "values": [
+    0.002022
+   ],
+   "origen": "estado 14"
+  }
+ ]
+}

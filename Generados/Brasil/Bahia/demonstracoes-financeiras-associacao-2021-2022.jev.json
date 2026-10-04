@@ -1,0 +1,315 @@
+{
+ "md": "Clubes/Brasil/Bahia/demonstracoes-financeiras-associacao-2021-2022.md",
+ "generatedAt": "2026-09-30T22:48:22.322Z",
+ "rubrosHuella": "ea698e5ab572242e9f9241d637c9c540a1cfabac",
+ "rubros": [
+  {
+   "label": "Despesas gerais e administrativas",
+   "lado": "expense",
+   "page": 7,
+   "section": "(Despesas) Operacionais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas de serviços",
+   "lado": "expense",
+   "page": 7,
+   "section": "(Despesas) Operacionais",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "page": 7,
+   "section": "(Despesas) Operacionais",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciação e amortização",
+   "lado": "expense",
+   "page": 7,
+   "section": "(Despesas) Operacionais",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Perda na recuperação de créditos de sócios",
+   "lado": "expense",
+   "page": 7,
+   "section": "(Despesas) Operacionais",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas de transmissão de imagem e de luvas (a)",
+   "lado": "revenue",
+   "page": 43,
+   "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com negociação de direitos contratuais (b)",
+   "lado": "revenue",
+   "page": 43,
+   "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Sócios patrimonial e contribuinte",
+   "lado": "revenue",
+   "page": 43,
+   "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+   "choice": "member_dues",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas de patrocínio, publicidade e marketing",
+   "lado": "revenue",
+   "page": 43,
+   "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas de acesso garantido, bilheteria e premiações",
+   "lado": "revenue",
+   "page": 43,
+   "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+   "choice": "matchday_competition",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas - Filiais",
+   "lado": "revenue",
+   "page": 43,
+   "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Loterias",
+   "lado": "revenue",
+   "page": 43,
+   "section": "disposições e legislação federal, estadual, municipal e dos desportos. / superávits/déficits acumulados de cada exercício, desde a constituição do ECB. / 18.    Receita Líquida das Atividades Operacionais / 2022                    2021 / Receita bruta das atividades operacionais",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Luvas - Direito de transmissão TV fechada/PPV (b)",
+   "lado": "revenue",
+   "page": 41,
+   "section": "encerrando, em caráter irrevogável e irretratável, a Ação Judicial (Processo nº 0274714- / pelos Devedores Solidários, do valor nominal de R$ 35.000. Vide nota explicativa nº 22. / 15.    Receitas a Apropriar / 2022                   2021 / Receitas a Apropriar",
+   "choice": "broadcasting",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Luvas - Direito de transmissão TV aberta (b)",
+   "lado": "revenue",
+   "page": 41,
+   "section": "encerrando, em caráter irrevogável e irretratável, a Ação Judicial (Processo nº 0274714- / pelos Devedores Solidários, do valor nominal de R$ 35.000. Vide nota explicativa nº 22. / 15.    Receitas a Apropriar / 2022                   2021 / Receitas a Apropriar",
+   "choice": "broadcasting",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Licenciamento / Direitos individuais",
+   "lado": "revenue",
+   "page": 41,
+   "section": "encerrando, em caráter irrevogável e irretratável, a Ação Judicial (Processo nº 0274714- / pelos Devedores Solidários, do valor nominal de R$ 35.000. Vide nota explicativa nº 22. / 15.    Receitas a Apropriar / 2022                   2021 / Receitas a Apropriar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínio",
+   "lado": "revenue",
+   "page": 41,
+   "section": "encerrando, em caráter irrevogável e irretratável, a Ação Judicial (Processo nº 0274714- / pelos Devedores Solidários, do valor nominal de R$ 35.000. Vide nota explicativa nº 22. / 15.    Receitas a Apropriar / 2022                   2021 / Receitas a Apropriar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "CBF - Confederação Brasileira de Futebol (c)",
+   "lado": "revenue",
+   "page": 41,
+   "section": "encerrando, em caráter irrevogável e irretratável, a Ação Judicial (Processo nº 0274714- / pelos Devedores Solidários, do valor nominal de R$ 35.000. Vide nota explicativa nº 22. / 15.    Receitas a Apropriar / 2022                   2021 / Receitas a Apropriar",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Custo e deduções de venda - Loja",
+   "lado": "revenue",
+   "page": 43,
+   "section": "108.346               208.649 / Deduções da receita",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Concessionárias (água, energia, telefonia, gás)",
+   "lado": "expense",
+   "page": 45,
+   "section": "Notas Explicativas às Demonstrações Financeiras Referentes aos / Exercícios Findos em 31 de dezembro de 2022 e 2021 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 20.    Despesas Gerais e Administrativas / 2022                    2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Marketing",
+   "lado": "expense",
+   "page": 45,
+   "section": "Notas Explicativas às Demonstrações Financeiras Referentes aos / Exercícios Findos em 31 de dezembro de 2022 e 2021 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 20.    Despesas Gerais e Administrativas / 2022                    2021",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Consumo",
+   "lado": "expense",
+   "page": 45,
+   "section": "Notas Explicativas às Demonstrações Financeiras Referentes aos / Exercícios Findos em 31 de dezembro de 2022 e 2021 / (Valores expressos em milhares de reais, exceto quando indicado de outra forma) / 20.    Despesas Gerais e Administrativas / 2022                    2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Informática",
+   "lado": "expense",
+   "page": 45,
+   "section": "(7.518)               (8.248) / 21.    Despesas de Serviços / 2022                    2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Marketing (108)",
+   "lado": "expense",
+   "page": 45,
+   "section": "(7.518)               (8.248) / 21.    Despesas de Serviços / 2022                    2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Jurídico",
+   "lado": "expense",
+   "page": 45,
+   "section": "(7.518)               (8.248) / 21.    Despesas de Serviços / 2022                    2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Impostos incidentes - Filiais",
+   "lado": "expense",
+   "page": 43,
+   "section": "108.346               208.649 / Deduções da receita",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Custo das Atividades Operacionais",
+   "lado": "expense",
+   "page": 7,
+   "section": "Esporte Clube Bahia / Demonstração dos Resultados / para os Exercícios Findos em 31 de dezembro de 2022 e de 2021 / (Valores Expressos em Milhares de Reais) / Nota    2022             2021",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1098
+  },
+  {
+   "label": "Receita Líquida das Atividades Operacionais",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Esporte Clube Bahia / Demonstração dos Resultados / para os Exercícios Findos em 31 de dezembro de 2022 e de 2021 / (Valores Expressos em Milhares de Reais) / Nota    2022             2021",
+   "choice": "lump_football_operations",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1122
+  },
+  {
+   "label": "(-) Impostos incidentes",
+   "lado": "expense",
+   "page": 43,
+   "section": "108.346               208.649 / Deduções da receita",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1010
+  }
+ ]
+}

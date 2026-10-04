@@ -1,0 +1,1898 @@
+{
+ "md": "Clubes/Turquía/Fenerbahçe/fenerbahce-futbol-bilanco-31-05-2016.md",
+ "generatedAt": "2026-09-30T01:12:04.835Z",
+ "rubros": [
+  {
+   "label": "BRÜT KAR / (ZARAR)",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "lump_football_operations",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.6
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "Pazarlama Giderleri (-)",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ]
+   ],
+   "tokens": 1320
+  },
+  {
+   "label": "Genel Yönetim Giderleri (-)",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1322
+  },
+  {
+   "label": "Esas Faaliyetlerden Diğer Giderler (-)",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1326
+  },
+  {
+   "label": "Esas Faaliyetlerden Diğer Gelirler",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1325
+  },
+  {
+   "label": "Satışların Maliyeti (-)",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "Hasılat",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "lump_football_operations",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.9
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1315
+  },
+  {
+   "label": "ESAS FAALİYET KARI / (ZARARI)",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "lump_football_operations",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.5700000000000001
+    ],
+    [
+     "other_income",
+     0.29000000000000004
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1326
+  },
+  {
+   "label": "Yatırım Faaliyetlerinden Gelirler",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1324
+  },
+  {
+   "label": "Yatırım Faaliyetlerinden Giderler",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1324
+  },
+  {
+   "label": "FİNANSMAN GİDERİ ÖNCESİ FAALİYET KARI/(ZARARI)",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_expenses",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "lump_football_operations",
+     0.31
+    ],
+    [
+     "other_income",
+     0.14
+    ]
+   ],
+   "tokens": 1336
+  },
+  {
+   "label": "Finansman Gelirleri",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1318
+  },
+  {
+   "label": "Finansman Giderleri (-)",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1319
+  },
+  {
+   "label": "- Ertelenmiş Vergi Gelir/(Gideri)",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1325
+  },
+  {
+   "label": "- Dönem Vergi Gelir/(Gideri)",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1323
+  },
+  {
+   "label": "SÜRDÜRÜLEN FAALİYETLER VERGİ ÖNCESİ KARI / (ZARARI)",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "admin_general_expense",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 1338
+  },
+  {
+   "label": "Ana Ortaklık Payları",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.060000000000000005
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1320
+  },
+  {
+   "label": "Hisse Başına Kayıp/Kazanç",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1323
+  },
+  {
+   "label": "Kontrol Gücü Olmayan Paylar",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1322
+  },
+  {
+   "label": "SÜRDÜRÜLEN FAALİYETLER DÖNEM KARI / (ZARARI)",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1335
+  },
+  {
+   "label": "- Diğer Kapsamlı Gelire İlişkin Vergiler",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1327
+  },
+  {
+   "label": "Toplam Kapsamlı Gelir",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_income",
+     0.78
+    ],
+    [
+     "lump_football_operations",
+     0.21
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1320
+  },
+  {
+   "label": "- Tanımlanmış Fayda Planları Yeniden Ölçüm Kazançları/(Kayıpları)",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_income",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1339
+  },
+  {
+   "label": "Diğer Kapsamlı Gelir",
+   "page": 7,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT KONSOLİDE / KAR VEYA ZARAR VE DİĞER KAPSAMLI GELİR TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "Toplam Kapsamlı Gelir / (Gider)",
+   "page": 8,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN DÖNEME AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.15
+    ]
+   ],
+   "tokens": 1323
+  },
+  {
+   "label": "1 Haziran 2014",
+   "page": 8,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN DÖNEME AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1319
+  },
+  {
+   "label": "Transferler",
+   "page": 8,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN DÖNEME AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "player_sales",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "player_sales",
+     0.48
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1315
+  },
+  {
+   "label": "*Dönem Karı (Zararı)*",
+   "page": 8,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN DÖNEME AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1321
+  },
+  {
+   "label": "*Diğer Kapsamlı Gelir (Gider)*",
+   "page": 8,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN DÖNEME AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1324
+  },
+  {
+   "label": "31 Mayıs 2015",
+   "page": 15,
+   "section": "### 2.4 Önemli muhasebe politikaları özeti (devamı) / #### Fenerbahçe logo ve isim hakkı lisans hakkı avansı / #### Peşin ödenen tesis kullanım giderleri / #### Varlıkların değer düşüklüğü / #### Yabancı para cinsinden işlemler",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "other_amortisation",
+     0.17
+    ]
+   ],
+   "tokens": 1339
+  },
+  {
+   "label": "1 Haziran 2015",
+   "page": 8,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN DÖNEME AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1319
+  },
+  {
+   "label": "Sermaye artırımı (Not 18)",
+   "page": 8,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / # 31 MAYIS 2016 TARİHİNDE SONA EREN DÖNEME AİT / KONSOLİDE ÖZKAYNAKLAR DEĞİŞİM TABLOSU",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1323
+  },
+  {
+   "label": "Peşin ödenen giderler (*)",
+   "page": 33,
+   "section": "## NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1285
+  },
+  {
+   "label": "Kısa vadeli peşin ödenmiş giderler",
+   "page": 33,
+   "section": "## NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1290
+  },
+  {
+   "label": "1 Haziran açılış bakiyesi",
+   "page": 34,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / ## NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER (devamı)",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.42
+    ],
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "admin_general_expense",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1355
+  },
+  {
+   "label": "Uzun vadeli peşin ödenmiş giderler",
+   "page": 33,
+   "section": "## NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "other_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 1289
+  },
+  {
+   "label": "Toplam peşin ödenmiş giderler",
+   "page": 33,
+   "section": "## NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1287
+  },
+  {
+   "label": "Verilen avanslar ()",
+   "page": 33,
+   "section": "## NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "other_income",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1281
+  },
+  {
+   "label": "31 Mayıs 2016",
+   "page": 15,
+   "section": "### 2.4 Önemli muhasebe politikaları özeti (devamı) / #### Fenerbahçe logo ve isim hakkı lisans hakkı avansı / #### Peşin ödenen tesis kullanım giderleri / #### Varlıkların değer düşüklüğü / #### Yabancı para cinsinden işlemler",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "other_amortisation",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1339
+  },
+  {
+   "label": "Dönem sonu kapanış bakiyesi",
+   "page": 34,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / ## NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER (devamı)",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "other_income",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1356
+  },
+  {
+   "label": "Dönem içinde itfa olunan avans (-) (*)",
+   "page": 34,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / ## NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER (devamı)",
+   "choice": "other_amortisation",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_amortisation",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "other_income",
+     0.09
+    ]
+   ],
+   "tokens": 1357
+  },
+  {
+   "label": "Diğer",
+   "page": 56,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / ## NOT 24 –FİNANSAL GELİRLER/GİDERLER",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "Kombine bilet satışlarından alınan avanslar",
+   "page": 35,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER (devamı)",
+   "choice": "season_tickets",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "season_tickets",
+     0.49
+    ],
+    [
+     "matchday_competition",
+     0.34
+    ],
+    [
+     "other_income",
+     0.16
+    ]
+   ],
+   "tokens": 1361
+  },
+  {
+   "label": "Cari gelir vergisi",
+   "page": 49,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1247
+  },
+  {
+   "label": "Yayın hakkı avansı",
+   "page": 35,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER (devamı)",
+   "choice": "broadcasting",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "broadcasting",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1352
+  },
+  {
+   "label": "Reklam satışlarından alınan avanslar",
+   "page": 35,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER (devamı)",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.95
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1359
+  },
+  {
+   "label": "Satışların maliyeti",
+   "page": 54,
+   "section": "",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "player_sales",
+     0.11
+    ]
+   ],
+   "tokens": 1251
+  },
+  {
+   "label": "Ürün satışlarından alınan avanslar",
+   "page": 35,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 9 – PEŞİN ÖDENMİŞ GİDERLER VE ERTELENMİŞ GELİRLER (devamı)",
+   "choice": "other_income",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_income",
+     0.35000000000000003
+    ],
+    [
+     "sponsorship_commercial",
+     0.33
+    ],
+    [
+     "season_tickets",
+     0.21
+    ]
+   ],
+   "tokens": 1359
+  },
+  {
+   "label": "Ertelenmiş vergi (geliri)/gideri",
+   "page": 49,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.71
+    ],
+    [
+     "other_income",
+     0.15000000000000002
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Pazarlama, satış ve dağıtım giderleri",
+   "page": 54,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ]
+   ],
+   "tokens": 1257
+  },
+  {
+   "label": "Ücret giderleri",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "wages_squad",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "wages_squad",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1341
+  },
+  {
+   "label": "Genel yönetim giderleri",
+   "page": 54,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1252
+  },
+  {
+   "label": "Amortisman ve itfa giderleri",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "depreciation",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "depreciation",
+     0.54
+    ],
+    [
+     "other_amortisation",
+     0.22
+    ],
+    [
+     "player_amortisation",
+     0.22
+    ]
+   ],
+   "tokens": 1346
+  },
+  {
+   "label": "Satılan ticari mallar maliyeti",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1346
+  },
+  {
+   "label": "Personel giderleri",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "wages_squad",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "Tesis kullanım giderleri",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "admin_general_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.41000000000000003
+    ],
+    [
+     "stadium_other",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "Futbol takımı giderleri",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1345
+  },
+  {
+   "label": "Futbolcu menajer giderleri",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "lump_football_operations_expense",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1346
+  },
+  {
+   "label": "Futbolcu kiralama giderleri",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.54
+    ],
+    [
+     "lump_football_operations_expense",
+     0.24000000000000002
+    ],
+    [
+     "wages_squad",
+     0.19
+    ]
+   ],
+   "tokens": 1345
+  },
+  {
+   "label": "Kira giderleri",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 1341
+  },
+  {
+   "label": "Futbolcu transferlerine ilişkin giderler",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "player_amortisation",
+     0.2
+    ],
+    [
+     "lump_football_operations_expense",
+     0.18
+    ]
+   ],
+   "tokens": 1347
+  },
+  {
+   "label": "Pazarlama ve promosyon giderleri",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ]
+   ],
+   "tokens": 1346
+  },
+  {
+   "label": "Vergi, resim ve harçlar",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1345
+  },
+  {
+   "label": "Ceza ve kesinti giderleri",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "exceptional_items",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1344
+  },
+  {
+   "label": "Avanslar itfa payı",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "other_amortisation",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_amortisation",
+     0.5700000000000001
+    ],
+    [
+     "player_amortisation",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1343
+  },
+  {
+   "label": "Futbolcu dayanışma katkı payları",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "other_expenses",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_expenses",
+     0.53
+    ],
+    [
+     "wages_squad",
+     0.22
+    ],
+    [
+     "lump_football_operations_expense",
+     0.2
+    ]
+   ],
+   "tokens": 1350
+  },
+  {
+   "label": "Bonservis çıkış maliyeti",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "player_amortisation",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "player_amortisation",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "player_sales",
+     0.06
+    ]
+   ],
+   "tokens": 1346
+  },
+  {
+   "label": "Ticari işlemlere ilişkin kambiyo karı",
+   "page": 55,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 22 –ESAS FAALİYETLERDEN DİĞER GELİRLER/GİDERLER / # Esas Faaliyetlerden Diğer Gelirler",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1366
+  },
+  {
+   "label": "Danışmanlık giderleri",
+   "page": 54,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 21 – NİTELİKLERİNE GÖRE GİDERLER (devamı)",
+   "choice": "admin_general_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1345
+  },
+  {
+   "label": "Ertelenmiş finansman gelirleri",
+   "page": 55,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 22 –ESAS FAALİYETLERDEN DİĞER GELİRLER/GİDERLER / # Esas Faaliyetlerden Diğer Gelirler",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1364
+  },
+  {
+   "label": "Reeskont faiz geliri",
+   "page": 55,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 22 –ESAS FAALİYETLERDEN DİĞER GELİRLER/GİDERLER / # Esas Faaliyetlerden Diğer Gelirler",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1360
+  },
+  {
+   "label": "Ticari işlemlere ilişkin kambiyo zararı",
+   "page": 55,
+   "section": "# Esas faaliyetlerden diğer giderler (-)",
+   "choice": "other_expenses",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "other_expenses",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "exceptional_items",
+     0.06
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "Konusu kalmayan karşılıklar",
+   "page": 55,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 22 –ESAS FAALİYETLERDEN DİĞER GELİRLER/GİDERLER / # Esas Faaliyetlerden Diğer Gelirler",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1363
+  },
+  {
+   "label": "Reeskont faiz giderleri",
+   "page": 55,
+   "section": "# Esas faaliyetlerden diğer giderler (-)",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Sabit kıymet satış karı",
+   "page": 55,
+   "section": "# NOT 23 –YATIRIM FAALİYETLERİNDEN GELİRLER/GİDERLER",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "player_sales",
+     0.04
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1282
+  },
+  {
+   "label": "Faiz gelirleri",
+   "page": 56,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / ## NOT 24 –FİNANSAL GELİRLER/GİDERLER",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1284
+  },
+  {
+   "label": "Ertelenmiş finansman giderleri",
+   "page": 55,
+   "section": "# Esas faaliyetlerden diğer giderler (-)",
+   "choice": "other_expenses",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1270
+  },
+  {
+   "label": "Fenerbahçe İletişim Hizmetleri San. ve Tic. A.Ş.",
+   "page": 58,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 25 – İLİŞKİLİ TARAF AÇIKLAMALARI (devamı)",
+   "choice": "other_income",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1356
+  },
+  {
+   "label": "Radyo Fenerbahçe Medya ve İletişim Hizmetleri A.Ş.",
+   "page": 58,
+   "section": "",
+   "choice": "broadcasting",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "broadcasting",
+     0.7
+    ],
+    [
+     "other_income",
+     0.18000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Fener TV Fener Televizyon Haber ve Görsel Yay. A.Ş",
+   "page": 58,
+   "section": "",
+   "choice": "broadcasting",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "broadcasting",
+     0.93
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "FBSK",
+   "page": 59,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_income",
+     0.47
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ]
+   ],
+   "tokens": 1246
+  },
+  {
+   "label": "Fenerbahçe Eğitim Öğretim İşl. ve Tic. A.Ş.",
+   "page": 58,
+   "section": "",
+   "choice": "education",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "education",
+     0.46
+    ],
+    [
+     "education_expense",
+     0.43
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Fenerbahçe Spor Okulları Eğt.İşl.San.Tic. Ltd.Şti.",
+   "page": 58,
+   "section": "",
+   "choice": "education",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "education",
+     0.48
+    ],
+    [
+     "education_expense",
+     0.39
+    ],
+    [
+     "youth_football",
+     0.08
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "Fenerbahçe Turizm ve Catering İşl. San. ve Tic. Ltd. Şti.",
+   "page": 59,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "stadium_other",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "Fenerbahçe İletişim Hizmetleri San. ve Tic. A.S.",
+   "page": 58,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1261
+  },
+  {
+   "label": "Fenerbahçe Turizm ve Catering İşl.Tic.Ltd.Şti.",
+   "page": 58,
+   "section": "# FENERBAHÇE FUTBOL A.Ş. / 31 MAYIS 2016 TARİHİNDE SONA EREN YILA AİT / KONSOLİDE FİNANSAL TABLOLARA İLİŞKİN DİPNOTLAR / # NOT 25 – İLİŞKİLİ TARAF AÇIKLAMALARI (devamı)",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "other_income",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1357
+  }
+ ]
+}

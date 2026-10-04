@@ -1,0 +1,121 @@
+{
+ "md": "Clubes/Alemania/RB Leipzig/jahresabschluss-2018-19.md",
+ "generatedAt": "2026-09-30T04:25:19.130Z",
+ "rubros": [
+  {
+   "label": "Spielbetrieb",
+   "lado": "revenue",
+   "page": 8,
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Umsatzerlöse aus TEUR",
+   "choice": "matchday_competition",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "matchday_competition",
+     0.84
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "In der vorliegenden Gewinn- und Verlustrechnung werden periodenfremde Erträge ausgewiesen. Diese betreffen im Wesentlichen nachlaufende Vermarktungserlöse von der UEFA in Höhe von TEUR 2.521, nachlaufende Einnahmen Spielbetrieb in Höhe von TEUR",
+   "lado": null,
+   "page": 8,
+   "section": "4.2 Steuern vom Einkommen und vom Ertrag / 4.3 Periodenfremde Aufwendungen und Erträge",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.59
+    ],
+    [
+     "broadcasting",
+     0.39
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1711
+  },
+  {
+   "label": "Sonstigem",
+   "lado": "revenue",
+   "page": 8,
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Umsatzerlöse aus TEUR",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 960
+  },
+  {
+   "label": "Handel",
+   "lado": "revenue",
+   "page": 8,
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Umsatzerlöse aus TEUR",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 970
+  },
+  {
+   "label": "die nachlaufenden Kosten Betrieb des Hauptgebäudes/Nebenkosten des Nachwuchsleistungszentrums TEUR 156 und die Ausgleichszahlungen für Konzertbetrieb in Höhe von TEUR",
+   "lado": null,
+   "page": 8,
+   "section": "4.2 Steuern vom Einkommen und vom Ertrag / 4.3 Periodenfremde Aufwendungen und Erträge",
+   "choice": "admin_general_expense",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "youth_other_sports_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1723
+  }
+ ]
+}

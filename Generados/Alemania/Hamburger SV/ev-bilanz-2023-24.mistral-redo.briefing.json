@@ -1,0 +1,265 @@
+{
+  "club": "hamburgersv-de",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/Hamburger SV/ev-bilanz-2023-24.mistral-redo.md",
+  "generatedAt": "2026-09-30T01:51:12.705Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 24,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "# BILANZ zum 30.06.2024 / # AKTIVA / # PASSIVA",
+      "columns": [
+        "",
+        "30.06.2024 EUR",
+        "30.06.2023 EUR",
+        "",
+        "30.06.2024 EUR",
+        "30.06.2023 EUR"
+      ],
+      "rows": [
+        {
+          "rawLabel": "A. Anlagevermögen",
+          "values": [
+            "",
+            "",
+            "A. Eigenkapital",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "I. Immaterielle Vermögensgegenstände entgeltlich erworbene Software",
+          "values": [
+            "2.670,00",
+            "3.815,00",
+            "I. Vereinskapital",
+            "43.243.819,21",
+            "41.952.087,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Sachanlagen",
+          "values": [
+            "",
+            "",
+            "II. Rücklagen",
+            "1.000.000,00",
+            "1.000.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+          "values": [
+            "12.649.274,40",
+            "12.876.533,40",
+            "III. Ergebnisvortrag",
+            "136.937,13",
+            "1.291.731,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "493.133,15",
+            "549.717,13",
+            "",
+            "44.380.756,34",
+            "44.243.819,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. geleistete Anzahlungen und Anlagen im Bau",
+          "values": [
+            "110.297,16",
+            "365.342,33",
+            "B. Rückstellungen",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "13.252.704,71",
+            "13.791.592,86",
+            "1. Steuerrückstellungen",
+            "56.714,12",
+            "56.714,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Finanzanlagen",
+          "values": [
+            "",
+            "",
+            "2. sonstige Rückstellungen",
+            "195.529,92",
+            "226.569,11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anteile an verbundenen Unternehmen",
+          "values": [
+            "35.494.579,41",
+            "35.494.579,41",
+            "",
+            "252.244,04",
+            "283.283,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Umlaufvermögen",
+          "values": [
+            "",
+            "",
+            "C. Verbindlichkeiten",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "I. Vorräte",
+          "values": [
+            "",
+            "",
+            "1. Verbindlichkeiten gegenüber Kreditinstituten",
+            "3.527.701,08",
+            "3.625.550,41"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Waren",
+          "values": [
+            "29.671,72",
+            "70.885,36",
+            "2. Verbindlichkeiten aus Lieferungen und Leistungen",
+            "541.241,50",
+            "612.934,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Forderungen und sonstige Vermögensgegenstände",
+          "values": [
+            "",
+            "",
+            "3. sonstige Verbindlichkeiten",
+            "435.426,94",
+            "267.487,69"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Forderungen aus Lieferungen und Leistungen",
+          "values": [
+            "463.549,66",
+            "414.727,77",
+            "",
+            "4.504.369,52",
+            "4.505.972,65"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Forderungen gegen verbundene Unternehmen",
+          "values": [
+            "94.891,40",
+            "106.240,09",
+            "D. Rechnungsabgrenzungsposten",
+            "1.670.002,41",
+            "1.792.684,38"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. sonstige Vermögensgegenstände",
+          "values": [
+            "478.232,18",
+            "326.032,00",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1.036.673,24",
+            "846.999,86",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Kassenbestand, Guthaben bei Kreditinstituten",
+          "values": [
+            "952.472,97",
+            "573.323,24",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C. Rechnungsabgrenzungsposten",
+          "values": [
+            "38.600,26",
+            "44.563,74",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "50.807.372,31",
+            "50.825.759,47",
+            "",
+            "50.807.372,31",
+            "50.825.759,47"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver sus RELEVANT_KEYWORDS)."
+  },
+  "league": {
+    "pais": "de",
+    "query": "Hamburger SV",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

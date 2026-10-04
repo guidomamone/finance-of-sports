@@ -1,0 +1,155 @@
+{
+ "md": "Clubes/Colombia/Llaneros/estados-financieros-2023.md",
+ "pdf": "Clubes/Colombia/Llaneros/estados-financieros-2023.pdf",
+ "club": "llaneros",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:59:17.695Z",
+ "tieOuts": {
+  "cierran": 41,
+  "noCierran": 4
+ },
+ "warnings": [
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 15,
+  "notasUsadas": [
+   "21"
+  ]
+ },
+ "ladoConocido": 12,
+ "rubros": [
+  {
+   "label": "*Gastos extraordinarios*",
+   "lado": "expense",
+   "page": 18,
+   "section": "#### NOTA 25. Otros Gastos",
+   "values": [
+    36074.522
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "*Gastos diversos*",
+   "lado": "expense",
+   "page": 18,
+   "section": "#### NOTA 25. Otros Gastos",
+   "values": [
+    253738.892
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "*Cesión de Derechos de TV*",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    1603.043919
+   ],
+   "origen": "nota 21 (ancla 20)",
+   "ancla": "*Ingresos de actividades ordinarias por prestación de servicios de actividades deportivas*"
+  },
+  {
+   "label": "*Ingresos de actividades ordinarias por prestación de servicios de actividades deportivas*",
+   "lado": "revenue",
+   "page": 17,
+   "section": "## NOTA 21. Ingresos Por Actividades Ordinarias",
+   "values": [
+    4304.358047
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "*Contratos Publicidad*",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    1976.376067
+   ],
+   "origen": "nota 21 (ancla 20)",
+   "ancla": "*Ingresos de actividades ordinarias por prestación de servicios de actividades deportivas*"
+  },
+  {
+   "label": "*Auxilio Transporte Dimayor*",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    47.084463
+   ],
+   "origen": "nota 21 (ancla 20)",
+   "ancla": "*Ingresos de actividades ordinarias por prestación de servicios de actividades deportivas*"
+  },
+  {
+   "label": "*Auxilio Arbitraje Dimayor*",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    55.207663
+   ],
+   "origen": "nota 21 (ancla 20)",
+   "ancla": "*Ingresos de actividades ordinarias por prestación de servicios de actividades deportivas*"
+  },
+  {
+   "label": "*Auxilio Hotelero Dimayor*",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    186.952288
+   ],
+   "origen": "nota 21 (ancla 20)",
+   "ancla": "*Ingresos de actividades ordinarias por prestación de servicios de actividades deportivas*"
+  },
+  {
+   "label": "*Mecanismo de Solidaridad*",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    32.540654
+   ],
+   "origen": "nota 21 (ancla 20)",
+   "ancla": "*Ingresos de actividades ordinarias por prestación de servicios de actividades deportivas*"
+  },
+  {
+   "label": "*Taquillas*",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "values": [
+    403.152993
+   ],
+   "origen": "nota 21 (ancla 20)",
+   "ancla": "*Ingresos de actividades ordinarias por prestación de servicios de actividades deportivas*"
+  },
+  {
+   "label": "*Diversos*",
+   "lado": "revenue",
+   "page": 17,
+   "section": "## NOTA 22. Otros Ingresos",
+   "values": [
+    14.301725
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "*Financieros*",
+   "lado": "expense",
+   "page": 18,
+   "section": "#### NOTA 26. Gastos Financieros",
+   "values": [
+    632.64
+   ],
+   "origen": "estado 26"
+  }
+ ]
+}

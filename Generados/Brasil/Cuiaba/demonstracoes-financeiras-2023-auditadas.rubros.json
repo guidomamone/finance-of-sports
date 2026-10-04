@@ -1,0 +1,264 @@
+{
+ "md": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.md",
+ "pdf": "Clubes/Brasil/Cuiaba/demonstracoes-financeiras-2023-auditadas.pdf",
+ "club": "cuiaba",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:52:28.296Z",
+ "tieOuts": {
+  "cierran": 28,
+  "noCierran": 1
+ },
+ "warnings": [
+  "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 22,
+  "notasUsadas": [
+   "23"
+  ]
+ },
+ "ladoConocido": 18,
+ "rubros": [
+  {
+   "label": "Outras Receitas",
+   "lado": "revenue",
+   "page": 22,
+   "section": "#### 29 Capital social / #### 30 Receitas operacionais",
+   "values": [
+    42021.965
+   ],
+   "origen": "nota 23 (ancla 6)",
+   "ancla": "Receita operacional líquida"
+  },
+  {
+   "label": "Receita operacional líquida",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "values": [
+    157933.413
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Receita com Bilheteria",
+   "lado": "revenue",
+   "page": 22,
+   "section": "#### 29 Capital social / #### 30 Receitas operacionais",
+   "values": [
+    16609.467
+   ],
+   "origen": "nota 23 (ancla 6)",
+   "ancla": "Receita operacional líquida"
+  },
+  {
+   "label": "Receita com Publicidade/Propaganda",
+   "lado": "revenue",
+   "page": 22,
+   "section": "#### 29 Capital social / #### 30 Receitas operacionais",
+   "values": [
+    6336
+   ],
+   "origen": "nota 23 (ancla 6)",
+   "ancla": "Receita operacional líquida"
+  },
+  {
+   "label": "Receitas Cotas de TV",
+   "lado": "revenue",
+   "page": 22,
+   "section": "#### 29 Capital social / #### 30 Receitas operacionais",
+   "values": [
+    74835.41
+   ],
+   "origen": "nota 23 (ancla 6)",
+   "ancla": "Receita operacional líquida"
+  },
+  {
+   "label": "Cessão de Direitos Liga Forte União do Futebol Brasileiro (LFF) – a)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "#### 29 Capital social / #### 30 Receitas operacionais",
+   "values": [
+    28730
+   ],
+   "origen": "nota 23 (ancla 6)",
+   "ancla": "Receita operacional líquida"
+  },
+  {
+   "label": "(-) Deduções Receitas – b)",
+   "lado": "revenue",
+   "page": 22,
+   "section": "#### 29 Capital social / #### 30 Receitas operacionais",
+   "values": [
+    -10599.429
+   ],
+   "origen": "nota 23 (ancla 6)",
+   "ancla": "Receita operacional líquida"
+  },
+  {
+   "label": "Custo com Futebol Profissional",
+   "lado": "expense",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "values": [
+    -98846.512
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Vendas",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "values": [
+    -107.449
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Administrativas",
+   "lado": null,
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "values": [
+    -20890.97
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Despesas Tributárias",
+   "lado": "expense",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "values": [
+    -126.468
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "values": [
+    -753.664
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Receitas financeiras",
+   "lado": "revenue",
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "values": [
+    56.178
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Outras Receitas/(Despesas)",
+   "lado": null,
+   "page": 8,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração dos resultados / #### Exercícios findos em 31 de dezembro / (Valores expressos em reais)",
+   "values": [
+    91.488
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "SALDOS EM 31 DE DEZEMBRO DE 2021",
+   "lado": null,
+   "page": 9,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração das mutações do patrimônio líquido / (Valores expressos em reais)",
+   "values": [
+    10
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "SALDOS EM 31 DE DEZEMBRO DE 2022",
+   "lado": null,
+   "page": 9,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração das mutações do patrimônio líquido / (Valores expressos em reais)",
+   "values": [
+    10
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "SALDOS EM 31 DE DEZEMBRO DE 2023",
+   "lado": null,
+   "page": 9,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / ### CUIABÁ ESPORTE CLUBE – SOCIEDADE ANÔNIMA DO FUTEBOL / #### Demonstração das mutações do patrimônio líquido / (Valores expressos em reais)",
+   "values": [
+    10
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Salários a pagar",
+   "lado": "expense",
+   "page": 22,
+   "section": "#### 27 Salários, férias e encargos sociais",
+   "values": [
+    774.172
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "FGTS a pagar",
+   "lado": "expense",
+   "page": 22,
+   "section": "#### 27 Salários, férias e encargos sociais",
+   "values": [
+    344.443
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "INSS a pagar",
+   "lado": "expense",
+   "page": 22,
+   "section": "#### 27 Salários, férias e encargos sociais",
+   "values": [
+    88.579
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Despesas Trabalhistas",
+   "lado": "expense",
+   "page": 23,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / #### 31 Despesas",
+   "values": [
+    -9945.787
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Despesas Gerais",
+   "lado": "expense",
+   "page": 23,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / #### 31 Despesas",
+   "values": [
+    -10945.183
+   ],
+   "origen": "estado 24"
+  },
+  {
+   "label": "Despesas Gerais Com Vendas",
+   "lado": "expense",
+   "page": 23,
+   "section": "# mazars POLEZA AUDITORES INDEPENDENTES / #### 31 Despesas",
+   "values": [
+    -107.449
+   ],
+   "origen": "estado 24"
+  }
+ ]
+}

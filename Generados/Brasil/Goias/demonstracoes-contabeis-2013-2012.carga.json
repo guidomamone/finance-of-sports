@@ -1,0 +1,554 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.pdf",
+ "generado": "2026-10-03T00:18:21.181Z",
+ "frena": [],
+ "avisos": [],
+ "ejercicio": {
+  "clubId": "goias-br",
+  "year": 2013,
+  "cierre": "2013-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Bilheterias",
+    "normalizedCategory": "matchday_competition",
+    "amountNative": 8.41719,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Direitos de transmissão de TV",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 30.648015,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Premiação/participações",
+    "normalizedCategory": "competition_bonus",
+    "amountNative": 4.3,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Transação de atletas",
+    "normalizedCategory": "player_sales",
+    "amountNative": 0.253333,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Patrocínio/ publicidade/propaganda",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 1.839777,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Mensalidades",
+    "normalizedCategory": "member_dues",
+    "amountNative": 3.535146,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 0.98
+   },
+   {
+    "rawLabel": "Jogos lotéricos",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.928792,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 0.98
+   },
+   {
+    "rawLabel": "Receitas patrimoniais",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.03934,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Outras receitas",
+    "normalizedCategory": "other_income",
+    "amountNative": 4.510592,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "(-) Deduções da receita",
+    "normalizedCategory": "other_income",
+    "amountNative": -4.397459,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 1,
+    "_conf": 0.99
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "(-) Despesas com futebol profissional e amador",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -44.649623,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "(-) Despesas administrativas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.204453,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "(-) Materiais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.697356,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 0.91
+   },
+   {
+    "rawLabel": "(-) Serviços de terceiros",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.262262,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "(-) Despesas tributárias",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.837323,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "(-) Despesas gerais",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -4.867446,
+    "disclosureLevel": "aggregated",
+    "_pag": 6,
+    "_escalon": 1,
+    "_conf": 1
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2013-12-31",
+   "sourceId": "goias-br-demonstracoes-contabeis-2013-2012",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -4.049692,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "(+) Receitas financeiras",
+     "value": 0.07421
+    },
+    {
+     "label": "(-) Despesas financeiras",
+     "value": -4.123902
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "(-) Despesas com futebol profissional e amador",
+     "lado": "expense",
+     "importe": 44.649623,
+     "motivo": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 51.074726,
+   "officialTotalExpenses": 54.518463,
+   "officialPAT": -7.493428
+  },
+  "source": {
+   "id": "goias-br-demonstracoes-contabeis-2013-2012",
+   "clubId": "goias-br",
+   "title": "Goiás Esporte Clube — demonstracoes-contabeis-2013-2012 (ejercicio 2013)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2013-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "goias-br",
+ "year": 2013,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2013-2012.pdf",
+   "campo": "anio",
+   "valor": "2013",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: el nombre del archivo de Goiás está mal para el script; '2013-2012' es el ejercicio 2013 con 2012 de comparativo, no 2012.",
+   "evidencia": "fecha de cierre 2013-12-31 leída del contenido (periodo.mjs)",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  }
+ ],
+ "seleccion": {
+  "filas": 18,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Bilheterias",
+   "page": 18,
+   "native": 8.41719,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITA LÍQUIDA\")",
+   "signoFijo": 8.41719,
+   "cat": "matchday_competition",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 8.41719
+  },
+  {
+   "label": "Direitos de transmissão de TV",
+   "page": 18,
+   "native": 30.648015,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITA LÍQUIDA\")",
+   "signoFijo": 30.648015,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 30.648015
+  },
+  {
+   "label": "Premiação/participações",
+   "page": 18,
+   "native": 4.3,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITA LÍQUIDA\")",
+   "signoFijo": 4.3,
+   "cat": "competition_bonus",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.3
+  },
+  {
+   "label": "Transação de atletas",
+   "page": 18,
+   "native": 0.253333,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITA LÍQUIDA\")",
+   "signoFijo": 0.253333,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.253333
+  },
+  {
+   "label": "Patrocínio/ publicidade/propaganda",
+   "page": 18,
+   "native": 1.839777,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITA LÍQUIDA\")",
+   "signoFijo": 1.839777,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.839777
+  },
+  {
+   "label": "Mensalidades",
+   "page": 18,
+   "native": 3.535146,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITA LÍQUIDA\")",
+   "signoFijo": 3.535146,
+   "cat": "member_dues",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 3.535146
+  },
+  {
+   "label": "Jogos lotéricos",
+   "page": 18,
+   "native": 1.928792,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITA LÍQUIDA\")",
+   "signoFijo": 1.928792,
+   "cat": "other_income",
+   "conf": 0.98,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.928792
+  },
+  {
+   "label": "Receitas patrimoniais",
+   "page": 18,
+   "native": 0.03934,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITA LÍQUIDA\")",
+   "signoFijo": 0.03934,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "revenue",
+   "amountNative": 0.03934
+  },
+  {
+   "label": "Outras receitas",
+   "page": 18,
+   "native": 4.510592,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITA LÍQUIDA\")",
+   "signoFijo": 4.510592,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 4.510592
+  },
+  {
+   "label": "(-) Deduções da receita",
+   "page": 18,
+   "native": 4.397459,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"RECEITA LÍQUIDA\")",
+   "signoFijo": -4.397459,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -4.397459
+  },
+  {
+   "label": "(-) Despesas com futebol profissional e amador",
+   "page": 6,
+   "native": 44.649623,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 44.649623,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)",
+   "destino": "expense",
+   "amountNative": -44.649623
+  },
+  {
+   "label": "(-) Despesas administrativas",
+   "page": 6,
+   "native": 0.204453,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.204453,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.204453
+  },
+  {
+   "label": "(-) Materiais",
+   "page": 6,
+   "native": 0.697356,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.697356,
+   "cat": "admin_general_expense",
+   "conf": 0.91,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.697356
+  },
+  {
+   "label": "(-) Serviços de terceiros",
+   "page": 6,
+   "native": 3.262262,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 3.262262,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, categorías de Goiás 2008-2015 en bloque (propuesta de Claude)",
+   "destino": "expense",
+   "amountNative": -3.262262
+  },
+  {
+   "label": "(-) Despesas tributárias",
+   "page": 6,
+   "native": 0.837323,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.837323,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.837323
+  },
+  {
+   "label": "(-) Despesas gerais",
+   "page": 6,
+   "native": 4.867446,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 4.867446,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -4.867446
+  },
+  {
+   "label": "(+) Receitas financeiras",
+   "page": null,
+   "native": 0.07421,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "(-) Despesas financeiras",
+   "page": null,
+   "native": -4.123902,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"RECEITA LÍQUIDA\")": "gastos con signo",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 51.074726,
+  "expSum": -54.518463,
+  "officialTotalRevenue": 51.074726,
+  "officialTotalExpenses": 54.518463,
+  "officialPAT": -7.493428,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "impreso"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -7.493428,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 51.074726
+  },
+  "expImpreso": {
+   "label": "total de gastos (verificado)",
+   "pag": null,
+   "M": 54.518463
+  }
+ },
+ "fxCloseNuevo": {
+  "key": "BRL@2013-12-31",
+  "fx": 2.3426,
+  "source": "market_close",
+  "label": "PTAX de cierre (venda) del Banco Central do Brasil al 2013-12-31"
+ },
+ "liga": {
+  "valor": null,
+  "fuente": "no hay ninguna liga-temporada de br 2013 cacheada",
+  "estado": "pendiente",
+  "nota": "la fila se escribe en null (= nadie lo verificó); bajar el roster con fetch-club-league-reference.mjs (club-or-year-onboarding §17)"
+ },
+ "resumen": {
+  "carga": true,
+  "motivos": 0,
+  "lineasIngreso": 10,
+  "lineasGasto": 6,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

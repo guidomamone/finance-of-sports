@@ -1,0 +1,62 @@
+{
+ "md": "Clubes/Grecia/Aris/Aris_AGM_minutes_2021-01-30.md",
+ "pdf": "Clubes/Grecia/Aris/Aris_AGM_minutes_2021-01-30.pdf",
+ "club": "aris",
+ "year": 2021,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:01:57.058Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 9,
+  "notasUsadas": []
+ },
+ "ladoConocido": 1,
+ "rubros": [
+  {
+   "label": "Υπόλοιπο την 30/06/2018",
+   "lado": null,
+   "page": 14,
+   "section": "#### ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΗΣ ΚΑΘΑΡΗΣ ΘΕΣΗΣ",
+   "values": [
+    -528.369
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Εισφορές μετόχων δεσμευμένες για αύξηση Μετοχικού Κεφαλαίου",
+   "lado": null,
+   "page": 14,
+   "section": "#### ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΗΣ ΚΑΘΑΡΗΣ ΘΕΣΗΣ",
+   "values": [
+    443.145
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Υπόλοιπο την 30.06.2019",
+   "lado": null,
+   "page": 14,
+   "section": "#### ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΗΣ ΚΑΘΑΡΗΣ ΘΕΣΗΣ",
+   "values": [
+    -302.373
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 14,
+   "section": "",
+   "values": [
+    -10.867
+   ],
+   "origen": "estado 7"
+  }
+ ]
+}

@@ -1,0 +1,309 @@
+{
+  "club": "fredericia-dk",
+  "year": 2021,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Dinamarca/FC Fredericia/aarsrapport-2021-12-31.md",
+  "generatedAt": "2026-09-30T21:59:52.429Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 81,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 6,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 9,
+      "section": "DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bruttofortjeneste",
+          "values": [
+            "10.735.834",
+            "10.952.864"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Personaleomkostninger",
+          "values": [
+            "-10.504.589",
+            "-10.039.646"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat før afskrivninger",
+          "values": [
+            "231.245",
+            "913.218"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Af- og nedskrivninger af materielle anlægsaktiver",
+          "values": [
+            "-24.638",
+            "-48.686"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat før finansielle poster",
+          "values": [
+            "206.607",
+            "864.532"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "Finansielle indtægter -34 0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Finansielle omkostninger",
+          "values": [
+            "-174.075",
+            "-169.382"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat før skat",
+          "values": [
+            "32.498",
+            "695.150"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 11,
+      "section": "DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Selskabskapital",
+          "values": [
+            "3.870.000",
+            "1.600.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overført resultat",
+          "values": [
+            "-3.791.458",
+            "-3.823.956"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egenkapital",
+          "values": [
+            "78.542",
+            "-2.223.956"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ansvarlig lånekapital",
+          "values": [
+            "400.000",
+            "2.000.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "Anden gæld 239.673 0 / Langfristet gæld 5 639.673 2.000.000 / Ansvarlig lånekapital 5 100.000 0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Leverandører af varer og tjenesteydelser",
+          "values": [
+            "252.928",
+            "280.914"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anden gæld",
+          "values": [
+            "4.859.779",
+            "3.767.223"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodeafgrænsningsposter",
+          "values": [
+            "876.621",
+            "1.156.544"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortfristet gæld",
+          "values": [
+            "6.089.328",
+            "5.204.681"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gældsforpligtelser",
+          "values": [
+            "6.729.001",
+            "7.204.681"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passiver",
+          "values": [
+            "6.807.543",
+            "4.980.725"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Lønninger",
+          "values": [
+            "9.101.895",
+            "8.798.576"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensioner",
+          "values": [
+            "324.234",
+            "357.736"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre omkostninger til social sikring",
+          "values": [
+            "230.398",
+            "185.910"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre personaleomkostninger",
+          "values": [
+            "848.062",
+            "697.424"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "Materielle anlægsaktiver / Andre anlæg, / driftsmateriel og / inventar / DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kostpris 1. januar",
+          "values": [
+            "728.875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kostpris 31. december",
+          "values": [
+            "728.875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ned- og afskrivninger 1. januar",
+          "values": [
+            "684.204"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Årets afskrivninger",
+          "values": [
+            "24.638"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ned- og afskrivninger 31. december",
+          "values": [
+            "708.842"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Regnskabsmæssig værdi 31. december",
+          "values": [
+            "20.033"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "Finansielle omkostninger",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Finansielle omkostninger",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultat før skat",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultat før skat",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "dk",
+    "query": "FC Fredericia",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

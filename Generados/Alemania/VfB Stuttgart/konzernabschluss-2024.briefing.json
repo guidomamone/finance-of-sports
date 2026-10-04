@@ -1,0 +1,407 @@
+{
+  "club": "stuttgart-de",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/VfB Stuttgart/konzernabschluss-2024.md",
+  "generatedAt": "2026-09-30T22:38:01.678Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 235,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 10,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 6,
+      "section": "UNTERNEHMENSREGISTER / TE VJ TE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "« VfB Stuttgart Marketing GmbH",
+          "values": [
+            "3.658",
+            "4.011"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "« VfB Stuttgart Beteiligungs-GmbH (incl. Ergebnis der Marketing GmbH)",
+          "values": [
+            "3.199",
+            "3.540"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Spielbetrieb",
+          "values": [
+            "53.493",
+            "35.845"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Werbung/Sponsoring",
+          "values": [
+            "39.778",
+            "30.414"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Medienvermarktung",
+          "values": [
+            "89.890",
+            "56.756"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handel und Sonstiges",
+          "values": [
+            "109.498",
+            "81.077"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Konzernjahresüberschuss",
+          "values": [
+            "15.443.275,78",
+            "679.300,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verlustvortrag aus dem Vorjahr",
+          "values": [
+            "-75.944.909,89",
+            "-76.624.209,93"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernbilanzverlust",
+          "values": [
+            "-60.501.634,11",
+            "-75.944.909,89"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Tanja Gönner (Vorsitzende ab 12.03.2024 bis",
+          "values": [
+            "27.09.2024)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Claus Vogt (Vorsitzender bis",
+          "values": [
+            "12.03.2024)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2. Spielerwerte",
+          "values": [
+            "83.246.556,73",
+            "97.658.442,21",
+            "0,00",
+            "30.629.014,06",
+            "150.275.984,88"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Geleistete Anzahlungen",
+          "values": [
+            "79.161,89",
+            "0,00",
+            "0,00",
+            "0,00",
+            "79.161,89"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "9.326.139,22",
+            "26.953.617,44"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Geleistete Anzahlungen und Anlagen im Bau",
+          "values": [
+            "13.468.429,25",
+            "66.629,88"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Jahresergebnis",
+          "values": [
+            "15.533"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Abschreibungen auf Spielerwerte",
+          "values": [
+            "27.499"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Abschreibungen auf sonstige Gegenstände des Anlagevermögens (inkl. Finanzanlagen)",
+          "values": [
+            "3.114"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Zunahme/Abnahme der Rückstellungen",
+          "values": [
+            "2.385"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "-/+ Gewinne/Verluste aus Spielerabgängen (Transfertätigkeit)",
+          "values": [
+            "-56.435"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "-/+ Gewinne/Verluste aus sonstigen Anlagenabgängen -111",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "-/+ Zunahme/Abnahme der Vorräte, Forderungen sowie anderer Aktiva",
+          "values": [
+            "-19.895"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Zunahme/Abnahme der Verbindlichkeiten sowie anderer Passiva",
+          "values": [
+            "24.534"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+/- Zinsaufwendungen/Zinserträge",
+          "values": [
+            "3.910"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "- Erträge von außergew. Größenordnung oder Bedeutung 0 / +/- Ertragsteueraufwand/-ertrag 2.476 / -/+ Ertragsteuerzahlungen -5",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cashflow aus laufender Geschäftstätigkeit",
+          "values": [
+            "3.005"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Einzahlungen aus Spielerabgängen (Transfertätigkeit)",
+          "values": [
+            "49.810"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Einzahlungen aus Abgängen von Gegenständen des immat. AV und des Sachanlagevermögens",
+          "values": [
+            "10.008"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Auszahlungen für Investitionen in das Spielervermögen",
+          "values": [
+            "-48.755"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Auszahlungen für Investitionen in das immat. AV und das Sachanlagevermögen",
+          "values": [
+            "-18.607"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- Auszahlungen für Investitionen in das Finanzanlagevermögen",
+          "values": [
+            "-2.150"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 29,
+      "section": "+ Erhaltene Zinsen 185",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cashflow aus Investitionstätigkeit",
+          "values": [
+            "-9.509"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "+ Einzahlungen aus Eigenkapitalzuführungen",
+          "values": [
+            "41.480"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 6,
+    "results": [
+      {
+        "label": "Cashflow aus laufender Geschäftstätigkeit",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cashflow aus laufender Geschäftstätigkeit",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "+ Einzahlungen aus Spielerabgängen (Transfertätigkeit)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "+ Einzahlungen aus Spielerabgängen (Transfertätigkeit)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "+ Einzahlungen aus Abgängen von Gegenständen des immat. AV und des Sachanlagevermögens",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "+ Einzahlungen aus Abgängen von Gegenständen des immat. AV und des Sachanlagevermögens",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- Auszahlungen für Investitionen in das Spielervermögen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- Auszahlungen für Investitionen in das Spielervermögen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- Auszahlungen für Investitionen in das immat. AV und das Sachanlagevermögen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- Auszahlungen für Investitionen in das immat. AV und das Sachanlagevermögen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- Auszahlungen für Investitionen in das Finanzanlagevermögen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "- Auszahlungen für Investitionen in das Finanzanlagevermögen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "de",
+    "query": "VfB Stuttgart",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

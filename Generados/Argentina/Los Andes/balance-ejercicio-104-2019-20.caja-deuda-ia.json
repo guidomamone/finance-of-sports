@@ -1,0 +1,19 @@
+{
+ "md": "Clubes/Argentina/Los Andes/balance-ejercicio-104-2019-20.md",
+ "generado": "2026-10-02T00:17:50.329Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Expresado en moneda de cierre - Ver nota unidad de medida (NOTA 1)",
+ "caja": {
+  "lineas": [
+   45,
+   46
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "No hay líneas de préstamos bancarios o financieros; el pasivo se compone de deudas operativas, sociales y previsionales, otras deudas y provisiones para juicios. 'Otras deudas' (Nota 2.7) podría incluir deuda financiera, pero no se detalla. La escala se asume en unidades (pesos con decimales); no hay frase explícita de escala, se cita la referencia a moneda de cierre."
+}

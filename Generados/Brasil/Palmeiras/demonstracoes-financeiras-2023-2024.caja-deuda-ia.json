@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Palmeiras/demonstracoes-financeiras-2023-2024.md",
+ "generado": "2026-10-02T00:19:01.401Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais - R$ mil)",
+ "caja": {
+  "lineas": [
+   1248
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1249,
+   1260
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La línea de caja muestra 'Caixa e equivalentes de caixa 214 38.363 14.128': el valor 214 parece ser una referencia a nota mal leída por OCR, de modo que 2024 = 38.363. Los préstamos no corrientes de 2024 figuran como '—' (cero); solo hay préstamos corrientes por 39.759."
+}

@@ -1,0 +1,521 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2023-2024.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2023-2024.pdf",
+  "club": "realmadrid",
+  "year": 2024,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:01:24.643Z",
+  "tieOuts": {
+    "cierran": 4,
+    "noCierran": 27
+  },
+  "warnings": [
+    "13 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "14 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 45,
+    "notasUsadas": []
+  },
+  "ladoConocido": 42,
+  "rubros": [
+    {
+      "label": "Amortizaciones (129.310) (4.171) (402) (7) (525)",
+      "lado": null,
+      "page": 76,
+      "section": "",
+      "values": [
+        -134.419
+      ],
+      "origen": "estado 79",
+      "glosa": "Amortizaciones (129.310) (4.171) (402) (7) (525)"
+    },
+    {
+      "label": "Ingresos financieros",
+      "lado": "revenue",
+      "page": 76,
+      "section": "",
+      "values": [
+        1.111
+      ],
+      "origen": "estado 79",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "De valores negociables y otros instrumentos financieros 17.6 10.191 12.754 terminado el 30/06/2023 - - - - 11.826 11.826 (144) -",
+      "lado": null,
+      "page": 23,
+      "section": "12.708        73.450 / Distribución de resultados del / Total ingresos y gastos reconocidos",
+      "values": [
+        11.682
+      ],
+      "origen": "estado 12",
+      "glosa": "De valores negociables y otros instrumentos financieros 17.6 10.191 12.754 terminado el 30/06/2023 - - - - 11.826 11.826 (144) -"
+    },
+    {
+      "label": "Incorporación gastos financieros al inmovilizado",
+      "lado": "expense",
+      "page": 23,
+      "section": "12.708        73.450 / Distribución de resultados del / Total ingresos y gastos reconocidos",
+      "values": [
+        29.727
+      ],
+      "origen": "estado 12",
+      "glosa": "Incorporación gastos financieros al inmovilizado"
+    },
+    {
+      "label": "Saldo a 30 de junio de 2023 487.997 28.825 13.378 12.403 11.826 554.429 3.700 -",
+      "lado": null,
+      "page": 23,
+      "section": "12.708        73.450 / Distribución de resultados del / Total ingresos y gastos reconocidos",
+      "values": [
+        558.129
+      ],
+      "origen": "estado 12",
+      "glosa": "Saldo a 30 de junio de 2023 487.997 28.825 13.378 12.403 11.826 554.429 3.700 -"
+    },
+    {
+      "label": "tada, sin que, en todo caso, ello altere la obligación de la Agencia Ingresos Liga",
+      "lado": "revenue",
+      "page": 64,
+      "section": "en aplicación de la doctrina jurisprudencial del “doble tiro”. / La distribución del importe neto de la cifra de negocios del Grupo co- / que resulta una deuda tributaria a ingresar por importe de 973 mi-",
+      "values": [
+        77.949
+      ],
+      "origen": "estado 43",
+      "glosa": "tada, sin que, en todo caso, ello altere la obligación de la Agencia Ingresos Liga"
+    },
+    {
+      "label": "Tributaria de devolución de las deudas anteriores. Ingresos Copa SM el Rey",
+      "lado": "revenue",
+      "page": 64,
+      "section": "en aplicación de la doctrina jurisprudencial del “doble tiro”. / La distribución del importe neto de la cifra de negocios del Grupo co- / que resulta una deuda tributaria a ingresar por importe de 973 mi-",
+      "values": [
+        9.289
+      ],
+      "origen": "estado 43",
+      "glosa": "Tributaria de devolución de las deudas anteriores. Ingresos Copa SM el Rey"
+    },
+    {
+      "label": "Ingresos Supercopa de España",
+      "lado": "revenue",
+      "page": 64,
+      "section": "en aplicación de la doctrina jurisprudencial del “doble tiro”. / La distribución del importe neto de la cifra de negocios del Grupo co- / que resulta una deuda tributaria a ingresar por importe de 973 mi-",
+      "values": [
+        7.593
+      ],
+      "origen": "estado 43",
+      "glosa": "Ingresos Supercopa de España"
+    },
+    {
+      "label": "Según las disposiciones legales vigentes, las liquidaciones de impues- Ingresos Champions League",
+      "lado": "revenue",
+      "page": 64,
+      "section": "en aplicación de la doctrina jurisprudencial del “doble tiro”. / La distribución del importe neto de la cifra de negocios del Grupo co- / que resulta una deuda tributaria a ingresar por importe de 973 mi-",
+      "values": [
+        160.895
+      ],
+      "origen": "estado 43",
+      "glosa": "Según las disposiciones legales vigentes, las liquidaciones de impues- Ingresos Champions League"
+    },
+    {
+      "label": "tos no pueden considerarse definitivas hasta que no hayan sido inspec- Ingresos Supercopa de Europa -",
+      "lado": "revenue",
+      "page": 64,
+      "section": "en aplicación de la doctrina jurisprudencial del “doble tiro”. / La distribución del importe neto de la cifra de negocios del Grupo co- / que resulta una deuda tributaria a ingresar por importe de 973 mi-",
+      "values": [
+        4.546
+      ],
+      "origen": "estado 43",
+      "glosa": "tos no pueden considerarse definitivas hasta que no hayan sido inspec- Ingresos Supercopa de Europa -"
+    },
+    {
+      "label": "Ingresos Mundial de Clubes -",
+      "lado": "revenue",
+      "page": 64,
+      "section": "en aplicación de la doctrina jurisprudencial del “doble tiro”. / La distribución del importe neto de la cifra de negocios del Grupo co- / que resulta una deuda tributaria a ingresar por importe de 973 mi-",
+      "values": [
+        4.714
+      ],
+      "origen": "estado 43",
+      "glosa": "Ingresos Mundial de Clubes -"
+    },
+    {
+      "label": "cionadas por las autoridades fiscales o haya transcurrido el plazo de Ingresos amistosos",
+      "lado": "revenue",
+      "page": 64,
+      "section": "en aplicación de la doctrina jurisprudencial del “doble tiro”. / La distribución del importe neto de la cifra de negocios del Grupo co- / que resulta una deuda tributaria a ingresar por importe de 973 mi-",
+      "values": [
+        11.648
+      ],
+      "origen": "estado 43",
+      "glosa": "cionadas por las autoridades fiscales o haya transcurrido el plazo de Ingresos amistosos"
+    },
+    {
+      "label": "prescripción, actualmente establecido en cuatro años. No obstante, de- Ingresos competiciones Baloncesto",
+      "lado": "revenue",
+      "page": 64,
+      "section": "en aplicación de la doctrina jurisprudencial del “doble tiro”. / La distribución del importe neto de la cifra de negocios del Grupo co- / que resulta una deuda tributaria a ingresar por importe de 973 mi-",
+      "values": [
+        10.353
+      ],
+      "origen": "estado 43",
+      "glosa": "prescripción, actualmente establecido en cuatro años. No obstante, de- Ingresos competiciones Baloncesto"
+    },
+    {
+      "label": "bido a las autoliquidaciones presentadas en julio de 2022 para adecuar Otros Ingresos",
+      "lado": "revenue",
+      "page": 64,
+      "section": "en aplicación de la doctrina jurisprudencial del “doble tiro”. / La distribución del importe neto de la cifra de negocios del Grupo co- / que resulta una deuda tributaria a ingresar por importe de 973 mi-",
+      "values": [
+        82.992
+      ],
+      "origen": "estado 43",
+      "glosa": "bido a las autoliquidaciones presentadas en julio de 2022 para adecuar Otros Ingresos"
+    },
+    {
+      "label": "las liquidaciones a los criterios de las actas con acuerdo de la última Total Ingresos Abonados y Socios",
+      "lado": "revenue",
+      "page": 64,
+      "section": "en aplicación de la doctrina jurisprudencial del “doble tiro”. / La distribución del importe neto de la cifra de negocios del Grupo co- / que resulta una deuda tributaria a ingresar por importe de 973 mi-",
+      "values": [
+        60.165
+      ],
+      "origen": "estado 43",
+      "glosa": "las liquidaciones a los criterios de las actas con acuerdo de la última Total Ingresos Abonados y Socios"
+    },
+    {
+      "label": "inspección (nota 16.4.7), se han interrumpido los plazos de prescrip- Tour y RM Experience",
+      "lado": "revenue",
+      "page": 64,
+      "section": "en aplicación de la doctrina jurisprudencial del “doble tiro”. / La distribución del importe neto de la cifra de negocios del Grupo co- / que resulta una deuda tributaria a ingresar por importe de 973 mi-",
+      "values": [
+        30.277
+      ],
+      "origen": "estado 43",
+      "glosa": "inspección (nota 16.4.7), se han interrumpido los plazos de prescrip- Tour y RM Experience"
+    },
+    {
+      "label": "Personal 1º equipo fútbol no inscribible 2.613 - - 1.438 234 -",
+      "lado": "expense",
+      "page": 67,
+      "section": "17.3 Gastos de personal / de personal de la plantilla deportiva inscribible (jugadores y téc-",
+      "values": [
+        4.285
+      ],
+      "origen": "estado 56",
+      "glosa": "Personal 1º equipo fútbol no inscribible 2.613 - - 1.438 234 -"
+    },
+    {
+      "label": "Jugadores y técnicos 2º equipo fútbol 5.524 - - - 478 - 6.002 Importe plantilla inscribible LNFP 309.526 - 6.221 (2.341) 443",
+      "lado": "expense",
+      "page": 67,
+      "section": "17.3 Gastos de personal / de personal de la plantilla deportiva inscribible (jugadores y téc-",
+      "values": [
+        314.823
+      ],
+      "origen": "estado 56",
+      "glosa": "Jugadores y técnicos 2º equipo fútbol 5.524 - - - 478 - 6.002 Importe plantilla inscribible LNFP 309.526 - 6.221 (2.341) 443"
+    },
+    {
+      "label": "Jugadores y técnicos categorías inferiores fútbol 10.833 - 2 100 1.881 2.239 15.055 Importe plantilla no inscribible LNFP 50.808 -",
+      "lado": "expense",
+      "page": 67,
+      "section": "17.3 Gastos de personal / de personal de la plantilla deportiva inscribible (jugadores y téc-",
+      "values": [
+        3.736
+      ],
+      "origen": "estado 56",
+      "glosa": "Jugadores y técnicos categorías inferiores fútbol 10.833 - 2 100 1.881 2.239 15.055 Importe plantilla no inscribible LNFP 50.808 -"
+    },
+    {
+      "label": "Jugadoras y técnicos sección femenina 3.788 - - - 887",
+      "lado": "expense",
+      "page": 67,
+      "section": "17.3 Gastos de personal / de personal de la plantilla deportiva inscribible (jugadores y téc-",
+      "values": [
+        5.271
+      ],
+      "origen": "estado 56",
+      "glosa": "Jugadoras y técnicos sección femenina 3.788 - - - 887"
+    },
+    {
+      "label": "Personal no deportivo 70.449 - 383",
+      "lado": "expense",
+      "page": 67,
+      "section": "17.3 Gastos de personal / de personal de la plantilla deportiva inscribible (jugadores y téc-",
+      "values": [
+        8.311
+      ],
+      "origen": "estado 56",
+      "glosa": "Personal no deportivo 70.449 - 383"
+    },
+    {
+      "label": "(antes enajenación inmovilizado) 1.036.476 1.071 10.536 - 25.129 1.073.212 Gastos de Aprovisionamientos",
+      "lado": "expense",
+      "page": 76,
+      "section": "Total ingresos de explotación",
+      "values": [
+        -45.263
+      ],
+      "origen": "estado 77",
+      "glosa": "(antes enajenación inmovilizado) 1.036.476 1.071 10.536 - 25.129 1.073.212 Gastos de Aprovisionamientos"
+    },
+    {
+      "label": "Gastos de Personal Deportivo y No Deportivo",
+      "lado": "expense",
+      "page": 76,
+      "section": "Total ingresos de explotación",
+      "values": [
+        -458.269
+      ],
+      "origen": "estado 77",
+      "glosa": "Gastos de Personal Deportivo y No Deportivo"
+    },
+    {
+      "label": "Gastos de Aprovisionamientos (62.990) (1.369) (445) (248) (666) (65.718) Gastos de Operaciones",
+      "lado": "expense",
+      "page": 76,
+      "section": "Total ingresos de explotación",
+      "values": [
+        -339.534
+      ],
+      "origen": "estado 77",
+      "glosa": "Gastos de Aprovisionamientos (62.990) (1.369) (445) (248) (666) (65.718) Gastos de Operaciones"
+    },
+    {
+      "label": "Gastos de Personal Deportivo y no Deportivo (438.515) (23.764) (4.585) (1.430) (36.680) (504.974) Provisiones de Insolvencia y de Riesgos y Gastos -",
+      "lado": "expense",
+      "page": 76,
+      "section": "Total ingresos de explotación",
+      "values": [
+        -18.111
+      ],
+      "origen": "estado 77",
+      "glosa": "Gastos de Personal Deportivo y no Deportivo (438.515) (23.764) (4.585) (1.430) (36.680) (504.974) Provisiones de Insolvencia y de Riesgos y Gastos -"
+    },
+    {
+      "label": "Gastos de Operaciones (318.258) (11.296) (2.079) (203)",
+      "lado": "expense",
+      "page": 76,
+      "section": "Total ingresos de explotación",
+      "values": [
+        -9.007
+      ],
+      "origen": "estado 77",
+      "glosa": "Gastos de Operaciones (318.258) (11.296) (2.079) (203)"
+    },
+    {
+      "label": "Provisión de insolvencia y de riesgos y gastos (18.111) - - - - (18.111) Total Gastos de Explotación antes de Amortizaciones",
+      "lado": "expense",
+      "page": 76,
+      "section": "Total ingresos de explotación",
+      "values": [
+        -843.066
+      ],
+      "origen": "estado 77",
+      "glosa": "Provisión de insolvencia y de riesgos y gastos (18.111) - - - - (18.111) Total Gastos de Explotación antes de Amortizaciones"
+    },
+    {
+      "label": "37.053 (8.801) (48) 28.204 Deducciones por doble imposición internacional 633 2.585 10 (665)",
+      "lado": "revenue",
+      "page": 59,
+      "section": "Créditos fiscales / -                     del 10% de la base imponible y, por otra parte, no pueden superar / Pasivos por impuesto diferido / el 25% de la cuota íntegra ajustada por DDI. / Pasivos por diferencias temporarias deducibles",
+      "values": [
+        2563
+      ],
+      "origen": "estado 38",
+      "glosa": "37.053 (8.801) (48) 28.204 Deducciones por doble imposición internacional 633 2.585 10 (665)"
+    },
+    {
+      "label": "Deducciones por inversiones en I+D+I 2.064 2.110 - (901)",
+      "lado": "revenue",
+      "page": 59,
+      "section": "Créditos fiscales / -                     del 10% de la base imponible y, por otra parte, no pueden superar / Pasivos por impuesto diferido / el 25% de la cuota íntegra ajustada por DDI. / Pasivos por diferencias temporarias deducibles",
+      "values": [
+        3273
+      ],
+      "origen": "estado 38",
+      "glosa": "Deducciones por inversiones en I+D+I 2.064 2.110 - (901)"
+    },
+    {
+      "label": "Ejercicio 2022/2023 Deducciones por donaciones 1.633 1.371 - (598)",
+      "lado": "revenue",
+      "page": 59,
+      "section": "Créditos fiscales / -                     del 10% de la base imponible y, por otra parte, no pueden superar / Pasivos por impuesto diferido / el 25% de la cuota íntegra ajustada por DDI. / Pasivos por diferencias temporarias deducibles",
+      "values": [
+        2406
+      ],
+      "origen": "estado 38",
+      "glosa": "Ejercicio 2022/2023 Deducciones por donaciones 1.633 1.371 - (598)"
+    },
+    {
+      "label": "Otras deducciones y bonificaciones 3.697 3.481 -",
+      "lado": "revenue",
+      "page": 59,
+      "section": "Créditos fiscales / -                     del 10% de la base imponible y, por otra parte, no pueden superar / Pasivos por impuesto diferido / el 25% de la cuota íntegra ajustada por DDI. / Pasivos por diferencias temporarias deducibles",
+      "values": [
+        1498
+      ],
+      "origen": "estado 38",
+      "glosa": "Otras deducciones y bonificaciones 3.697 3.481 -"
+    },
+    {
+      "label": "cas del Grupo establecen los límites mínimos de liquidez que se Deudores comerciales (*) 170.044 6.451 15.259 -",
+      "lado": "expense",
+      "page": 73,
+      "section": "mientos contractuales de los activos financieros: / El riesgo de liquidez se produce por la posibilidad de que el / en la cuantía suficiente y al coste adecuado, para hacer frente en",
+      "values": [
+        191.754
+      ],
+      "origen": "estado 69",
+      "glosa": "cas del Grupo establecen los límites mínimos de liquidez que se Deudores comerciales (*) 170.044 6.451 15.259 -"
+    },
+    {
+      "label": "deben mantener en todo momento. Entidades deportivas deudoras 44.192 18.803 36.875 -",
+      "lado": "expense",
+      "page": 73,
+      "section": "mientos contractuales de los activos financieros: / El riesgo de liquidez se produce por la posibilidad de que el / en la cuantía suficiente y al coste adecuado, para hacer frente en",
+      "values": [
+        99.87
+      ],
+      "origen": "estado 69",
+      "glosa": "deben mantener en todo momento. Entidades deportivas deudoras 44.192 18.803 36.875 -"
+    },
+    {
+      "label": "Otros activos financieros (**) 7.827 46.798 6.878",
+      "lado": "expense",
+      "page": 73,
+      "section": "mientos contractuales de los activos financieros: / El riesgo de liquidez se produce por la posibilidad de que el / en la cuantía suficiente y al coste adecuado, para hacer frente en",
+      "values": [
+        62.392
+      ],
+      "origen": "estado 69",
+      "glosa": "Otros activos financieros (**) 7.827 46.798 6.878"
+    },
+    {
+      "label": "Los vencimientos contractuales de los pasivos financieros son Administraciones Públicas deudoras 31.749 52.000 - -",
+      "lado": "expense",
+      "page": 73,
+      "section": "mientos contractuales de los activos financieros: / El riesgo de liquidez se produce por la posibilidad de que el / en la cuantía suficiente y al coste adecuado, para hacer frente en",
+      "values": [
+        83.749
+      ],
+      "origen": "estado 69",
+      "glosa": "Los vencimientos contractuales de los pasivos financieros son Administraciones Públicas deudoras 31.749 52.000 - -"
+    },
+    {
+      "label": "Gastos de Aprovisionamientos (60.294) (1.715) (550) (248) (650)",
+      "lado": "expense",
+      "page": 89,
+      "section": "-\t\u0007El gasto por intereses de préstamos, avales y otros costes fi- / nancieros aumenta en 40,2 millones de euros, debido en su / lizarse en este ejercicio los gastos financieros derivados de / considerado a efectos contables en curso de ejecución.",
+      "values": [
+        -63.457
+      ],
+      "origen": "estado 92",
+      "glosa": "Gastos de Aprovisionamientos (60.294) (1.715) (550) (248) (650)"
+    },
+    {
+      "label": "- \u0007El gasto por coste implícito derivado del pago aplazado en Gastos de Personal Deportivo y No Deportivo",
+      "lado": "expense",
+      "page": 89,
+      "section": "-\t\u0007El gasto por intereses de préstamos, avales y otros costes fi- / nancieros aumenta en 40,2 millones de euros, debido en su / lizarse en este ejercicio los gastos financieros derivados de / considerado a efectos contables en curso de ejecución.",
+      "values": [
+        -413.83
+      ],
+      "origen": "estado 92",
+      "glosa": "- \u0007El gasto por coste implícito derivado del pago aplazado en Gastos de Personal Deportivo y No Deportivo"
+    },
+    {
+      "label": "la adquisición de jugadores disminuye 1,6 millones de euros Gastos de Operaciones (339.306) (11.170) (2.339) (241)",
+      "lado": "expense",
+      "page": 89,
+      "section": "-\t\u0007El gasto por intereses de préstamos, avales y otros costes fi- / nancieros aumenta en 40,2 millones de euros, debido en su / lizarse en este ejercicio los gastos financieros derivados de / considerado a efectos contables en curso de ejecución.",
+      "values": [
+        -9.149
+      ],
+      "origen": "estado 92",
+      "glosa": "la adquisición de jugadores disminuye 1,6 millones de euros Gastos de Operaciones (339.306) (11.170) (2.339) (241)"
+    },
+    {
+      "label": "como consecuencia de la disminución del importe del saldo de Provisiones Insolvencia y de Riesgos y Gastos (4.000) 0 0",
+      "lado": "expense",
+      "page": 89,
+      "section": "-\t\u0007El gasto por intereses de préstamos, avales y otros costes fi- / nancieros aumenta en 40,2 millones de euros, debido en su / lizarse en este ejercicio los gastos financieros derivados de / considerado a efectos contables en curso de ejecución.",
+      "values": [
+        -4
+      ],
+      "origen": "estado 92",
+      "glosa": "como consecuencia de la disminución del importe del saldo de Provisiones Insolvencia y de Riesgos y Gastos (4.000) 0 0"
+    },
+    {
+      "label": "Amortización acumulada (400.760) (117.258) 53.199 - -",
+      "lado": "revenue",
+      "page": 38,
+      "section": "CORRIENTES MANTENIDOS PARA LA VENTA",
+      "values": [
+        -464.819
+      ],
+      "origen": "estado 16",
+      "glosa": "Amortización acumulada (400.760) (117.258) 53.199 - -"
+    },
+    {
+      "label": "Corrección por deterioro - (8.249) - - -",
+      "lado": "revenue",
+      "page": 38,
+      "section": "CORRIENTES MANTENIDOS PARA LA VENTA",
+      "values": [
+        -8.249
+      ],
+      "origen": "estado 16",
+      "glosa": "Corrección por deterioro - (8.249) - - -"
+    },
+    {
+      "label": "Valor neto contable 324.753 113.288 (254) 11.192 -",
+      "lado": "revenue",
+      "page": 38,
+      "section": "CORRIENTES MANTENIDOS PARA LA VENTA",
+      "values": [
+        448.979
+      ],
+      "origen": "estado 16",
+      "glosa": "Valor neto contable 324.753 113.288 (254) 11.192 -"
+    },
+    {
+      "label": "para futuras temporadas, en cuyo caso la remuneración a percibir y Deudas a corto plazo",
+      "lado": "expense",
+      "page": 52,
+      "section": "que, de acuerdo con el criterio del Club, y en relación a la temporada / Pasivos financieros a coste amortizado / 76.573          843.722     920.295 / Asimismo, en el acuerdo firmado con IPIC se contemplaba la posi- / Pasivos financieros corrientes",
+      "values": [
+        38.509
+      ],
+      "origen": "estado 29",
+      "glosa": "para futuras temporadas, en cuyo caso la remuneración a percibir y Deudas a corto plazo"
+    },
+    {
+      "label": "Acreedores comerciales y otras cuentas a pagar (*) -",
+      "lado": "expense",
+      "page": 52,
+      "section": "que, de acuerdo con el criterio del Club, y en relación a la temporada / Pasivos financieros a coste amortizado / 76.573          843.722     920.295 / Asimismo, en el acuerdo firmado con IPIC se contemplaba la posi- / Pasivos financieros corrientes",
+      "values": [
+        271.763
+      ],
+      "origen": "estado 29",
+      "glosa": "Acreedores comerciales y otras cuentas a pagar (*) -"
+    },
+    {
+      "label": "el plazo de duración serían significativamente superiores.",
+      "lado": "expense",
+      "page": 52,
+      "section": "que, de acuerdo con el criterio del Club, y en relación a la temporada / Pasivos financieros a coste amortizado / 76.573          843.722     920.295 / Asimismo, en el acuerdo firmado con IPIC se contemplaba la posi- / Pasivos financieros corrientes",
+      "values": [
+        38.509
+      ],
+      "origen": "estado 29",
+      "glosa": "el plazo de duración serían significativamente superiores."
+    }
+  ]
+}

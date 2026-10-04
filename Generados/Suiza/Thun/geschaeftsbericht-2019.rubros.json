@@ -1,0 +1,324 @@
+{
+ "md": "Clubes/Suiza/Thun/geschaeftsbericht-2019.md",
+ "pdf": "Clubes/Suiza/Thun/geschaeftsbericht-2019.pdf",
+ "club": "thun",
+ "year": 2019,
+ "numberFormat": "ambiguo",
+ "generatedAt": "2026-09-30T22:08:11.635Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "24 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 30,
+  "notasUsadas": []
+ },
+ "ladoConocido": 0,
+ "rubros": [
+  {
+   "label": "Ertrag Eintrittsgelder",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    2044.60449
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Ertrag Werbung/Sponsoring",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    5646.21574
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Ertrag Übertragungsrechte",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    3925.13016
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Transferertrag",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    2563.26533
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Ertrag Ausleihgebühren",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    42.5
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Ertrag Events & Stadionvermietung",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    328.47584
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Ertrag Handel",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    255.38464
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Ertrag Mitgliederbeiträge/Spenden",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    133.2871
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Ertrag Amateur-/Jugendfussball",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    343.8618
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Sonstiger Ertrag",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    193.29542
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Erlösminderungen",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -13
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Löhne & Gehälter",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -6379.3556
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Sozialversicherungen",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -1488.0344
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Übriger Personalaufwand",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -862.69713
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Bruttogewinn II",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    5985.04991
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Aufwand Spielbetrieb",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -2267.66707
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Transferaufwand",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -174.396
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Werbeaufwand",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -1030.3405
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Aufwand Events",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -203.66898
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Mietaufwand",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -842.46147
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Aufwand Verwaltung & Unterhalt",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -720.66622
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Fahrzeugaufwand/Sonstiges",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -91.19955
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Betriebserfolg (EBITDA)",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    654.65012
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Abschreibungen Sachanlagen",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -64.02804
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Abschreibungen immaterielle Werte",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -838.483
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Betriebserfolg (EBIT)",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -247.86092
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Finanzaufwand",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -51.13938
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Finanzertrag",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    6.95324
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Betriebserfolg (EBT)",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -292.04706
+   ],
+   "origen": "actual"
+  },
+  {
+   "label": "Jahresverlust/-gewinn",
+   "lado": null,
+   "page": 16,
+   "section": "# ERFOLGSRECHNUNG / # GELDFLUSSRECHNUNG",
+   "values": [
+    -292.60826
+   ],
+   "origen": "actual"
+  }
+ ]
+}

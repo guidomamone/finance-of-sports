@@ -1,0 +1,1064 @@
+{
+ "md": "Clubes/Argentina/Boca/presupuesto-22-23-completo.md",
+ "generatedAt": "2026-09-30T22:48:19.675Z",
+ "rubrosHuella": "658cb6c1e045abdb0723292c55c737f87a109f6c",
+ "rubros": [
+  {
+   "label": "Remuneraciones S.A.C. y C.S.",
+   "lado": "expense",
+   "page": 28,
+   "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+   "choice": "wages_squad",
+   "confidence": 0.27,
+   "desdeCache": true
+  },
+  {
+   "label": "Agasajos, Buffet y Refrigerios",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Gastos de estructura administrativa",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "desdeCache": true
+  },
+  {
+   "label": "Asamblea de Representantes",
+   "lado": "expense",
+   "page": 14,
+   "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 809
+  },
+  {
+   "label": "Servicios y Abonos Varios",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Gastos de estructura administrativa",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "desdeCache": true
+  },
+  {
+   "label": "Artículos de Librería",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Gastos de estructura administrativa",
+   "choice": "admin_general_expense",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 926
+  },
+  {
+   "label": "Obsequios - Indumentaria",
+   "lado": "expense",
+   "page": 28,
+   "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "match_organisation_expense",
+     0.36
+    ],
+    [
+     "wages_squad",
+     0.06
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Alquiler de Equipos Varios",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Gastos de estructura administrativa",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "match_organisation_expense",
+     0.04
+    ]
+   ],
+   "tokens": 982
+  },
+  {
+   "label": "Seguro Caucion",
+   "lado": "expense",
+   "page": 14,
+   "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "match_organisation_expense",
+     0.07
+    ]
+   ],
+   "tokens": 859
+  },
+  {
+   "label": "Organización eventos",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Basket Amateur",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.41000000000000003
+    ],
+    [
+     "match_organisation_expense",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1003
+  },
+  {
+   "label": "Varios",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Basket Amateur",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Obsequios-Merchandising",
+   "lado": "revenue",
+   "page": 17,
+   "section": "# Gerencia de Recursos Humanos",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.93
+    ],
+    [
+     "other_income",
+     0.07
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Honorarios",
+   "lado": "revenue",
+   "page": 17,
+   "section": "# Gerencia de Recursos Humanos",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.85
+    ],
+    [
+     "lump_football_operations",
+     0.15
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 821
+  },
+  {
+   "label": "Viáticos",
+   "lado": "expense",
+   "page": 28,
+   "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+   "choice": "match_organisation_expense",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "wages_squad",
+     0.03
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Teléfono",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Gastos de estructura administrativa",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 788
+  },
+  {
+   "label": "Fútbol Profesional",
+   "lado": "expense",
+   "page": 9,
+   "section": "GASTOS",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Administración",
+   "lado": "expense",
+   "page": 9,
+   "section": "GASTOS",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Organización de Espectáculos",
+   "lado": "expense",
+   "page": 9,
+   "section": "GASTOS",
+   "choice": "match_organisation_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "IVA",
+   "lado": "expense",
+   "page": 34,
+   "section": "# OTROS GASTOS / # Gastos Generales",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Suscripciones y Abonos Varios",
+   "lado": "expense",
+   "page": 14,
+   "section": "# APERTURA DE GASTOS / ## ADMINISTRACIÓN / ### Comisión Directiva",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Gastos Bancarios",
+   "lado": "expense",
+   "page": 34,
+   "section": "# OTROS GASTOS / # Gastos Generales",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Viajes y Movilidad",
+   "lado": "expense",
+   "page": 28,
+   "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+   "choice": "match_organisation_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Sellos",
+   "lado": "expense",
+   "page": 34,
+   "section": "# OTROS GASTOS / # Gastos Generales",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Capacitación",
+   "lado": "revenue",
+   "page": 17,
+   "section": "# Gerencia de Recursos Humanos",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ],
+    [
+     "education",
+     0.07
+    ]
+   ],
+   "tokens": 822
+  },
+  {
+   "label": "Mutual Jugadores 1%",
+   "lado": "expense",
+   "page": 34,
+   "section": "# OTROS GASTOS / # Gastos Generales",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "Previsión Indemnizaciones",
+   "lado": "expense",
+   "page": 34,
+   "section": "# OTROS GASTOS / # Gastos Generales",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Previsión para Juicios",
+   "lado": "expense",
+   "page": 34,
+   "section": "# OTROS GASTOS / # Gastos Generales",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguros Varios",
+   "lado": "expense",
+   "page": 34,
+   "section": "# OTROS GASTOS / # Gastos Generales",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Uniformes Personal",
+   "lado": "revenue",
+   "page": 17,
+   "section": "# Gerencia de Recursos Humanos",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "Gastos Generales",
+   "lado": "revenue",
+   "page": 9,
+   "section": "GASTOS",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.94
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Telefonía Celular",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Gastos de estructura administrativa",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 974
+  },
+  {
+   "label": "Atenciones al Personal",
+   "lado": "revenue",
+   "page": 17,
+   "section": "# Gerencia de Recursos Humanos",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "lump_football_operations",
+     0.2
+    ],
+    [
+     "other_sports",
+     0.01
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 34,
+   "section": "# OTROS GASTOS / # Gastos Generales",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Becas",
+   "lado": "expense",
+   "page": 33,
+   "section": "# Basket Amateur",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Mensajería",
+   "lado": "revenue",
+   "page": 17,
+   "section": "# Gerencia de Recursos Humanos",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 822
+  },
+  {
+   "label": "Fútbol Juvenil",
+   "lado": "expense",
+   "page": 9,
+   "section": "GASTOS",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Socios",
+   "lado": "expense",
+   "page": 9,
+   "section": "GASTOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Basket",
+   "lado": "expense",
+   "page": 9,
+   "section": "GASTOS",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Eventuales",
+   "lado": "expense",
+   "page": 9,
+   "section": "GASTOS",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Asambleas y Elecciones",
+   "lado": "expense",
+   "page": 34,
+   "section": "# OTROS GASTOS / # Gastos Generales",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 850
+  },
+  {
+   "label": "Amortizaciones Varias",
+   "lado": "expense",
+   "page": 34,
+   "section": "# Otras Amortizaciones",
+   "choice": "other_amortisation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_amortisation",
+     0.99
+    ],
+    [
+     "depreciation",
+     0.01
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "Amortización Instalaciones",
+   "lado": "expense",
+   "page": 34,
+   "section": "# Otras Amortizaciones",
+   "choice": "depreciation",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "depreciation",
+     0.94
+    ],
+    [
+     "other_amortisation",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Otras Amortizaciones",
+   "lado": "revenue",
+   "page": 9,
+   "section": "GASTOS",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Amortización Inmuebles",
+   "lado": "expense",
+   "page": 34,
+   "section": "# Otras Amortizaciones",
+   "choice": "depreciation",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "depreciation",
+     0.95
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Comerciales",
+   "lado": "expense",
+   "page": 9,
+   "section": "GASTOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 973
+  },
+  {
+   "label": "Socios Activos",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# APERTURA DE INGRESOS",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Adherente AMBA",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# APERTURA DE INGRESOS",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Socios Interior",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# APERTURA DE INGRESOS",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Adherente Interior",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# APERTURA DE INGRESOS",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Socios Menores",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# APERTURA DE INGRESOS",
+   "choice": "member_dues",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros Deportes",
+   "lado": "expense",
+   "page": 9,
+   "section": "GASTOS",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 967
+  },
+  {
+   "label": "Socios Cadetes",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# APERTURA DE INGRESOS",
+   "choice": "member_dues",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Seguro de Vida",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# APERTURA DE INGRESOS",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "desdeCache": true
+  },
+  {
+   "label": "Socio Internacional",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# APERTURA DE INGRESOS",
+   "choice": "member_dues",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Carnet Socios",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# APERTURA DE INGRESOS",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Socios Exterior",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# APERTURA DE INGRESOS",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Fútbol Internacional",
+   "lado": "revenue",
+   "page": 9,
+   "section": "GASTOS",
+   "choice": "lump_football_operations",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.77
+    ],
+    [
+     "other_income",
+     0.12
+    ],
+    [
+     "matchday_competition",
+     0.09
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Costo Campus",
+   "lado": "expense",
+   "page": 28,
+   "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+   "choice": "education_expense",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "education_expense",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "youth_other_sports_expense",
+     0.2
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "TOTAL INGRESOS",
+   "lado": "revenue",
+   "page": 9,
+   "section": "# PRESUPUESTO ECONOMICO / INGRESOS",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "lump_football_operations",
+     0.29
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "RESULTADO ECONOMICO",
+   "lado": "revenue",
+   "page": 9,
+   "section": "GASTOS",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "player_sales",
+     0.05
+    ]
+   ],
+   "tokens": 1105
+  },
+  {
+   "label": "Costo Escuelas",
+   "lado": "expense",
+   "page": 28,
+   "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+   "choice": "education_expense",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "education_expense",
+     0.7
+    ],
+    [
+     "youth_other_sports_expense",
+     0.17
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1011
+  },
+  {
+   "label": "ABL",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Gastos de estructura administrativa",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "match_organisation_expense",
+     0.06
+    ]
+   ],
+   "tokens": 786
+  },
+  {
+   "label": "Impresos, Papelería y Fotocopias",
+   "lado": "expense",
+   "page": 28,
+   "section": "# DEPARTAMENTO DE FUTBOL INTERNACIONAL",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Socios Activas",
+   "lado": "revenue",
+   "page": 11,
+   "section": "# APERTURA DE INGRESOS",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 998
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/España/Elche CF/informe-auditoria-cuentas-anuales-2023-2024.md",
+ "generado": "2026-10-02T00:14:31.409Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Expresado en euros)",
+ "caja": {
+  "lineas": [
+   492
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   509,
+   520
+  ],
+  "ninguna": false
+ },
+ "observaciones": "No hay una línea explícita de deudas con entidades de crédito. Se tomaron los subtotales 'Deudas a largo plazo' (L509) y 'Deudas a corto plazo' (L520), que incluyen arrendamiento financiero y otros pasivos financieros, probablemente deuda concursal. La 'Deuda con características especiales a largo plazo' (L517) podría considerarse también deuda financiera, pero no se incluyó."
+}

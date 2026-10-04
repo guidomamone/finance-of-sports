@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Genk/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-02T00:15:43.333Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "",
+ "caja": {
+  "lineas": [
+   251
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas del pasivo (Passiva, schulden op meer/ten hoogste één jaar, kredietinstellingen) no están incluidas, por lo que no se puede identificar la deuda financiera. Caja = Liquide middelen 3.500.316. El formulario belga se expresa en euros (unidades), según la cifra exacta del commissaris (€ 102.229.325,23), pero no hay una frase explícita de escala en las páginas. Las Geldbeleggingen (1.515.000) no se incluyeron en caja."
+}

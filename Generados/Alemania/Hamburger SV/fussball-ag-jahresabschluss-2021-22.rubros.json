@@ -1,0 +1,320 @@
+{
+  "md": "Clubes/Alemania/Hamburger SV/fussball-ag-jahresabschluss-2021-22.md",
+  "pdf": "Clubes/Alemania/Hamburger SV/fussball-ag-jahresabschluss-2021-22.pdf",
+  "club": "hamburgersv-de",
+  "year": 2022,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:50:22.309Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 30,
+    "notasUsadas": [
+      "4",
+      "6"
+    ]
+  },
+  "ladoConocido": 24,
+  "rubros": [
+    {
+      "label": "Spielbetrieb",
+      "lado": "revenue",
+      "page": 9,
+      "section": "JAHRESABSCHLUSS / IV. ERLÄUTERUNGEN ZUR GEWINN- UND VERLUSTRECHNUNG / ## Umsatzerlöse",
+      "values": [
+        22.598
+      ],
+      "origen": "nota 4 (ancla 2)",
+      "ancla": "1. Umsatzerlöse",
+      "glosa": "Operaciones de partido"
+    },
+    {
+      "label": "1. Umsatzerlöse",
+      "lado": "revenue",
+      "page": 4,
+      "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+      "values": [
+        88.986959
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "1. Importe neto de la cifra de negocios"
+    },
+    {
+      "label": "Werbung",
+      "lado": "revenue",
+      "page": 9,
+      "section": "JAHRESABSCHLUSS / IV. ERLÄUTERUNGEN ZUR GEWINN- UND VERLUSTRECHNUNG / ## Umsatzerlöse",
+      "values": [
+        12.663
+      ],
+      "origen": "nota 4 (ancla 2)",
+      "ancla": "1. Umsatzerlöse",
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Mediale Verwertungsrechte",
+      "lado": "revenue",
+      "page": 9,
+      "section": "JAHRESABSCHLUSS / IV. ERLÄUTERUNGEN ZUR GEWINN- UND VERLUSTRECHNUNG / ## Umsatzerlöse",
+      "values": [
+        22.837
+      ],
+      "origen": "nota 4 (ancla 2)",
+      "ancla": "1. Umsatzerlöse",
+      "glosa": "Derechos audiovisuales"
+    },
+    {
+      "label": "Transferentschädigungen",
+      "lado": "revenue",
+      "page": 9,
+      "section": "JAHRESABSCHLUSS / IV. ERLÄUTERUNGEN ZUR GEWINN- UND VERLUSTRECHNUNG / ## Umsatzerlöse",
+      "values": [
+        9.673
+      ],
+      "origen": "nota 4 (ancla 2)",
+      "ancla": "1. Umsatzerlöse",
+      "glosa": "Compensaciones por traspasos"
+    },
+    {
+      "label": "Merchandising & Catering",
+      "lado": "revenue",
+      "page": 9,
+      "section": "JAHRESABSCHLUSS / IV. ERLÄUTERUNGEN ZUR GEWINN- UND VERLUSTRECHNUNG / ## Umsatzerlöse",
+      "values": [
+        10.693
+      ],
+      "origen": "nota 4 (ancla 2)",
+      "ancla": "1. Umsatzerlöse",
+      "glosa": "Merchandising y catering"
+    },
+    {
+      "label": "Sonstige Erlöse",
+      "lado": "revenue",
+      "page": 9,
+      "section": "JAHRESABSCHLUSS / IV. ERLÄUTERUNGEN ZUR GEWINN- UND VERLUSTRECHNUNG / ## Umsatzerlöse",
+      "values": [
+        10.523
+      ],
+      "origen": "nota 4 (ancla 2)",
+      "ancla": "1. Umsatzerlöse",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "2. Sonstige betriebliche Erträge",
+      "lado": "revenue",
+      "page": 4,
+      "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+      "values": [
+        6.412197
+      ],
+      "origen": "estado 2",
+      "glosa": "2. Otros ingresos de explotación"
+    },
+    {
+      "label": "Aufwendungen für bezogene Waren",
+      "lado": "expense",
+      "page": 4,
+      "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+      "values": [
+        4.102255
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos por mercancías adquiridas"
+    },
+    {
+      "label": "a) Löhne und Gehälter",
+      "lado": null,
+      "page": 4,
+      "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+      "values": [
+        35.000032
+      ],
+      "origen": "estado 2",
+      "glosa": "a) Sueldos y salarios"
+    },
+    {
+      "label": "b) Soziale Abgaben und Aufwendungen für Altersversorgung und für Unterstützung – davon für Altersversorgung EUR 52.769,68 (i. Vj. EUR 53.746,06) –",
+      "lado": "expense",
+      "page": 4,
+      "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+      "values": [
+        4.226481
+      ],
+      "origen": "estado 2",
+      "glosa": "b) Cargas sociales y gastos por pensiones y de asistencia – de los cuales para pensiones 52.769,68 EUR (ej. ant. 53.746,06 EUR) –"
+    },
+    {
+      "label": "5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen",
+      "lado": null,
+      "page": 4,
+      "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+      "values": [
+        8.568552
+      ],
+      "origen": "estado 2",
+      "glosa": "5. Amortización del inmovilizado intangible y material"
+    },
+    {
+      "label": "6. Sonstige betriebliche Aufwendungen",
+      "lado": "expense",
+      "page": 4,
+      "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+      "values": [
+        39.641783
+      ],
+      "origen": "estado 2",
+      "glosa": "6. Otros gastos de explotación"
+    },
+    {
+      "label": "7. Sonstige Zinsen und ähnliche Erträge",
+      "lado": "revenue",
+      "page": 4,
+      "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+      "values": [
+        0.003036
+      ],
+      "origen": "estado 2",
+      "glosa": "7. Otros intereses e ingresos asimilados"
+    },
+    {
+      "label": "9. Zinsen und ähnliche Aufwendungen",
+      "lado": "expense",
+      "page": 4,
+      "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+      "values": [
+        2.60782
+      ],
+      "origen": "estado 2",
+      "glosa": "9. Intereses y gastos asimilados"
+    },
+    {
+      "label": "12. Sonstige Steuern",
+      "lado": "expense",
+      "page": 4,
+      "section": "JAHRESABSCHLUSS / # GEWINN- UND VERLUSTRECHNUNG FÜR DIE ZEIT VOM 1. JULI 2021 BIS 30. JUNI 2022",
+      "values": [
+        0.209083
+      ],
+      "origen": "estado 2",
+      "glosa": "12. Otros impuestos"
+    },
+    {
+      "label": "1. Spielernutzungsrechte",
+      "lado": "expense",
+      "page": 13,
+      "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+      "values": [
+        15.720963
+      ],
+      "origen": "estado 5",
+      "glosa": "1. Derechos federativos de jugadores"
+    },
+    {
+      "label": "2. Markenwerte",
+      "lado": "expense",
+      "page": 13,
+      "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+      "values": [
+        41.221629
+      ],
+      "origen": "estado 5",
+      "glosa": "2. Valor de marca"
+    },
+    {
+      "label": "3. Entgeltlich erworbene Software",
+      "lado": "expense",
+      "page": 13,
+      "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+      "values": [
+        1.332515
+      ],
+      "origen": "estado 5",
+      "glosa": "3. Aplicaciones informáticas adquiridas a título oneroso"
+    },
+    {
+      "label": "4. Geleistete Anzahlungen auf immaterielle Vermögensgegenstände",
+      "lado": "expense",
+      "page": 13,
+      "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+      "values": [
+        2.869987
+      ],
+      "origen": "estado 5",
+      "glosa": "4. Anticipos para inmovilizado intangible"
+    },
+    {
+      "label": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+      "lado": "expense",
+      "page": 13,
+      "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+      "values": [
+        135.274944
+      ],
+      "origen": "estado 5",
+      "glosa": "1. Terrenos, derechos análogos y construcciones, incluidas las construcciones en terrenos ajenos"
+    },
+    {
+      "label": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+      "lado": "expense",
+      "page": 13,
+      "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+      "values": [
+        17.202736
+      ],
+      "origen": "estado 5",
+      "glosa": "2. Otras instalaciones, utillaje y equipamiento comercial"
+    },
+    {
+      "label": "3. Geleistete Anzahlungen und Anlagen im Bau",
+      "lado": "expense",
+      "page": 13,
+      "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+      "values": [
+        2.034589
+      ],
+      "origen": "estado 5",
+      "glosa": "3. Anticipos e inmovilizado en curso"
+    },
+    {
+      "label": "2. Ausleihungen an verbundene Unternehmen",
+      "lado": "expense",
+      "page": 13,
+      "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+      "values": [
+        1.576628
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "2. Créditos a empresas del grupo"
+    },
+    {
+      "label": "Ausleihungen an verbundene Unternehmen",
+      "lado": "expense",
+      "page": 14,
+      "section": "JAHRESABSCHLUSS",
+      "values": [
+        1.576628
+      ],
+      "origen": "nota 6 (ancla 5)",
+      "ancla": "2. Ausleihungen an verbundene Unternehmen",
+      "glosa": "Créditos a empresas del grupo"
+    },
+    {
+      "label": "3. Beteiligungen",
+      "lado": "expense",
+      "page": 13,
+      "section": "JAHRESABSCHLUSS / # ENTWICKLUNG DES ANLAGEVERMÖGENS VOM 1. JULI 2021 BIS 30. JUNI 2022 / Anschaffungs- und Herstellungskosten",
+      "values": [
+        0.292646
+      ],
+      "origen": "estado 5",
+      "glosa": "3. Participaciones"
+    }
+  ]
+}

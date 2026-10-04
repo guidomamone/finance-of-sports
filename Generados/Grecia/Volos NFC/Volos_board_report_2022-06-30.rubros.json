@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Grecia/Volos NFC/Volos_board_report_2022-06-30.md",
+ "pdf": "Clubes/Grecia/Volos NFC/Volos_board_report_2022-06-30.pdf",
+ "club": "volos-nfc",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:03:44.369Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 8,
+  "notasUsadas": []
+ },
+ "ladoConocido": 2,
+ "rubros": [
+  {
+   "label": "(+) ή (-) Υπόλ. Αποτελ./των προηγ. χρήσεων",
+   "lado": null,
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "values": [
+    -0.136656
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Μείον : Φόρος Εισοδήματος",
+   "lado": "expense",
+   "page": 3,
+   "section": "#### 9. Διάθεση των αποτελεσμάτων",
+   "values": [
+    0.027855
+   ],
+   "origen": "estado 13"
+  },
+  {
+   "label": "Έξοδα διοικήσεως",
+   "lado": "expense",
+   "page": 1,
+   "section": "Ο κύκλος εργασιών της Χρήσεως διαμορφώθηκε κατά / έναντι 3.695.343,92 της προηγούμενης χρήσης / και ανήλθε σε, 4.205.279,98",
+   "values": [
+    4.080745
+   ],
+   "origen": "estado 2"
+  }
+ ]
+}

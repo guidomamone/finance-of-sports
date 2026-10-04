@@ -1,0 +1,524 @@
+{
+ "md": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.md",
+ "pdf": "Clubes/Brasil/Remo/demonstracoes-financeiras-2025.pdf",
+ "club": "remo",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:53:54.157Z",
+ "tieOuts": {
+  "cierran": 5,
+  "noCierran": 1
+ },
+ "warnings": [
+  "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 50,
+  "notasUsadas": []
+ },
+ "ladoConocido": 30,
+ "rubros": [
+  {
+   "label": "Depreciação e amortização",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    6.775269
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Ajustes retroativos",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    3.345754
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Contas a receber",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    0.069654
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Impostos a recuperar",
+   "lado": "expense",
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    -0.016852
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Adiantamentos",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    0.150703
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Fornecedores",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    0.574634
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Obrigações trabalhistas",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    -0.796866
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Direitos de imagem a pagar",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    0.602639
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Obrigações tributárias",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    4.971523
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Adiantamentos recebidos",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    0.497295
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Contingências judiciais",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    -2.624171
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Acordos judiciais",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    3.582733
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Outras contas a pagar",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    0.639185
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Aquisição de Imobilizado",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    -0.48775
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Aquisição de licenças de software (intangível)",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    -0.086776
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Caixa líquido das atividades de investimentos",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    -0.574526
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Empréstimos e financiamentos",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    1.355751
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Caixa líquido das atividades de financiamentos",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    1.355751
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Aumento/(redução) líquido de caixa",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    3.591884
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Caixa no início do período",
+   "lado": null,
+   "page": 11,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração dos fluxos de caixa / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    0.150907
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Receita bruta das atividades",
+   "lado": "revenue",
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    82.913332
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receitas de futebol",
+   "lado": "revenue",
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    40.616014
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receitas recorrentes",
+   "lado": "revenue",
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    42.297318
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "(-) Custos das atividades esportivas",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    -41.884585
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Despesas administrativas",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    -56.115841
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    -0.306245
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Outras receitas (despesas)",
+   "lado": null,
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    1.566092
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Receitas financeiras",
+   "lado": "revenue",
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    1.719635
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Despesas financeiras",
+   "lado": "expense",
+   "page": 9,
+   "section": "CLUBE DO REMO / CNPJ: 04.887.097/0001-57 / # Demonstração do resultado do exercício / Em 31 de dezembro de 2025 e 31 de dezembro de 2024 / (Em Reais)",
+   "values": [
+    -2.853232
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Aluguéis",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "values": [
+    1197.447
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Estacionamento",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "values": [
+    888.197
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Royalties de lojas",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "values": [
+    3715.21
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Patrimoniais",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "values": [
+    1789.439
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Atividade sociais e esportivas",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "values": [
+    821.643
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Programa timemania",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "values": [
+    870.607
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Marketing, patrocínio e publicidade",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "values": [
+    23627.425
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Royalties licenciados",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "values": [
+    583.704
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Sócio torcedor",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "values": [
+    6492.978
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Venda de materiais",
+   "lado": "revenue",
+   "page": 24,
+   "section": "# 16. Receitas",
+   "values": [
+    2310.668
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Cessão de direitos sobre atletas",
+   "lado": "revenue",
+   "page": 24,
+   "section": "",
+   "values": [
+    2294.773
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Receita de bilheteria",
+   "lado": "revenue",
+   "page": 24,
+   "section": "",
+   "values": [
+    28225.935
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Receita de premiações",
+   "lado": "revenue",
+   "page": 24,
+   "section": "",
+   "values": [
+    1193.811
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Multas contratuais/compensatórias",
+   "lado": "revenue",
+   "page": 24,
+   "section": "",
+   "values": [
+    922.523
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Receita de direito de transmissão",
+   "lado": "revenue",
+   "page": 24,
+   "section": "",
+   "values": [
+    7978.972
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Despesas judiciais",
+   "lado": "expense",
+   "page": 24,
+   "section": "# CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+   "values": [
+    5926.503
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Jogos e competições",
+   "lado": "expense",
+   "page": 24,
+   "section": "# CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+   "values": [
+    13356.501
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Custos com contratações e direitos de atletas",
+   "lado": "expense",
+   "page": 24,
+   "section": "# CLUBE DO REMO / CNPJ: 04.887.097/0001-57",
+   "values": [
+    6341.779
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Serviço de terceiros",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 15. Custos e despesas",
+   "values": [
+    6421.728
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Despesas com pessoal",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 15. Custos e despesas",
+   "values": [
+    29675.05
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Direitos de imagem",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 15. Custos e despesas",
+   "values": [
+    18313.976
+   ],
+   "origen": "estado 16"
+  }
+ ]
+}

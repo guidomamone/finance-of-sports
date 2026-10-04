@@ -1,0 +1,173 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T13:20:38.561Z",
+ "ubicacion": {
+  "estado": [
+   "b2"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "Importes con decimales de céntimos (ej. 2.710.883,11 en L80); no se imprime leyenda de escala"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b2",
+   "linea": 80,
+   "etiqueta": "Κύκλος εργασιών (καθαρός)",
+   "actual": "2.710.883,11",
+   "anterior": "1.881.041,86",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 81,
+   "etiqueta": "(-) Κόστος πωλήσεων",
+   "actual": "-1.541.698,92",
+   "anterior": "-1.477.726,18",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 82,
+   "etiqueta": "Μικτό αποτέλεσμα",
+   "actual": "1.169.184,19",
+   "anterior": "403.315,69",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 83,
+   "etiqueta": "(+) Λοιπά συνήθη έσοδα",
+   "actual": "687.187,26",
+   "anterior": "338.744,03",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 84,
+   "etiqueta": "",
+   "actual": "1.856.371,45",
+   "anterior": "742.059,72",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 85,
+   "etiqueta": "(-) Έξοδα διοίκησης",
+   "actual": "-637.944,38",
+   "anterior": "-611.472,90",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 86,
+   "etiqueta": "(-) Έξοδα διάθεσης",
+   "actual": "-478.458,28",
+   "anterior": "-458.604,68",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 87,
+   "etiqueta": "(-) Λοιπά έξοδα και ζημιές",
+   "actual": "-390,84",
+   "anterior": "-20.178,71",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 88,
+   "etiqueta": "(+) Λοιπά έσοδα και κέρδη",
+   "actual": "2.010,00",
+   "anterior": "0,00",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 89,
+   "etiqueta": "Αποτελέσματα προ τόκων και φόρων",
+   "actual": "741.587,95",
+   "anterior": "-348.196,57",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 91,
+   "etiqueta": "(-) Χρεωστικοί τόκοι και συναφή έξοδα",
+   "actual": "-11.554,72",
+   "anterior": "-6.263,77",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 92,
+   "etiqueta": "Αποτέλεσμα προ φόρων",
+   "actual": "730.033,23",
+   "anterior": "-354.460,34",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 94,
+   "etiqueta": "Αποτέλεσμα περιόδου μετά από φόρους",
+   "actual": "730.033,23",
+   "anterior": "-354.460,34",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 94,
+  "actual": "730.033,23",
+  "anterior": "-354.460,34"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se confirma que los importes del estado de resultados (L80-L94) están en euros por unidad, sin leyenda de escala?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El bloque no imprime la escala; los importes con céntimos (L80) indican unidades.",
+   "bloques": [
+    "b2"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Renglones sin importe en el ejercicio: L90 (Πιστωτικοί τόκοι, vacío ambos años) omitido; L93 (Φόροι εισοδήματος) vacío en 30/6/2018 y 0,00 en 2017, omitido. L84 es un subtotal sin etiqueta. No hay notas de ingresos ni gastos."
+}

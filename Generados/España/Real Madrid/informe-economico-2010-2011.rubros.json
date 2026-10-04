@@ -1,0 +1,609 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2010-2011.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2010-2011.pdf",
+  "club": "realmadrid",
+  "year": 2011,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:00:51.138Z",
+  "tieOuts": {
+    "cierran": 2,
+    "noCierran": 17
+  },
+  "warnings": [
+    "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "11 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "10 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 53,
+    "notasUsadas": []
+  },
+  "ladoConocido": 30,
+  "rubros": [
+    {
+      "label": "Deudores y otras cuentas a cobrar",
+      "lado": null,
+      "page": 9,
+      "section": "",
+      "values": [
+        -13.833
+      ],
+      "origen": "estado 20",
+      "glosa": "Deudores y otras cuentas a cobrar"
+    },
+    {
+      "label": "Otros activos corrientes",
+      "lado": null,
+      "page": 9,
+      "section": "",
+      "values": [
+        -1.544
+      ],
+      "origen": "estado 20",
+      "glosa": "Otros activos corrientes"
+    },
+    {
+      "label": "Acreedores y otras cuentas a pagar",
+      "lado": null,
+      "page": 9,
+      "section": "",
+      "values": [
+        10.682
+      ],
+      "origen": "estado 20",
+      "glosa": "Acreedores y otras cuentas a pagar"
+    },
+    {
+      "label": "Otros pasivos corrientes",
+      "lado": null,
+      "page": 9,
+      "section": "",
+      "values": [
+        4.584
+      ],
+      "origen": "estado 20",
+      "glosa": "Otros pasivos corrientes"
+    },
+    {
+      "label": "Otros activos y pasivos no corrientes",
+      "lado": null,
+      "page": 9,
+      "section": "",
+      "values": [
+        -3.63
+      ],
+      "origen": "estado 20",
+      "glosa": "Otros activos y pasivos no corrientes"
+    },
+    {
+      "label": "Ingresos de socios y estadios",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS CONSOLIDADA CORRESPONDIENTE",
+      "values": [
+        146.663
+      ],
+      "origen": "estado 7",
+      "glosa": "Ingresos de socios y estadios"
+    },
+    {
+      "label": "Fondo social 205.036 181.195 Ingresos de amistosos y competiciones",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS CONSOLIDADA CORRESPONDIENTE",
+      "values": [
+        27.545
+      ],
+      "origen": "estado 7",
+      "glosa": "Fondo social 205.036 181.195 Ingresos de amistosos y competiciones"
+    },
+    {
+      "label": "Inmovilizado intangible no Ingresos de retransmisión",
+      "lado": "revenue",
+      "page": 8,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS CONSOLIDADA CORRESPONDIENTE",
+      "values": [
+        155.968
+      ],
+      "origen": "estado 7",
+      "glosa": "Inmovilizado intangible no Ingresos de retransmisión"
+    },
+    {
+      "label": "5 6.297 7.451 Reserva de actualización R.D. 7/96",
+      "lado": null,
+      "page": 8,
+      "section": "CUENTA DE PÉRDIDAS Y GANANCIAS CONSOLIDADA CORRESPONDIENTE",
+      "values": [
+        8.548
+      ],
+      "origen": "estado 7",
+      "glosa": "5 6.297 7.451 Reserva de actualización R.D. 7/96"
+    },
+    {
+      "label": "Consumo de materias primas y otras materias consumibles",
+      "lado": null,
+      "page": 8,
+      "section": "deportivo / Reserva de Sociedades Consolidadas por / integración Global",
+      "values": [
+        -18.263
+      ],
+      "origen": "estado 8",
+      "glosa": "Consumo de materias primas y otras materias consumibles"
+    },
+    {
+      "label": "Inversiones inmobiliarias 7 6.888 7.118 Subvenciones, donaciones y legados recibidos",
+      "lado": "revenue",
+      "page": 8,
+      "section": "deportivo / Reserva de Sociedades Consolidadas por / integración Global",
+      "values": [
+        5.429
+      ],
+      "origen": "estado 8",
+      "glosa": "Inversiones inmobiliarias 7 6.888 7.118 Subvenciones, donaciones y legados recibidos"
+    },
+    {
+      "label": "Otros ingresos de explotación",
+      "lado": "revenue",
+      "page": 8,
+      "section": "deportivo / Reserva de Sociedades Consolidadas por / integración Global",
+      "values": [
+        4.174
+      ],
+      "origen": "estado 8",
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Deudas a largo plazo",
+      "lado": null,
+      "page": 8,
+      "section": "(98.065)             (120.464)",
+      "values": [
+        218.589
+      ],
+      "origen": "estado 10",
+      "glosa": "Deudas a largo plazo"
+    },
+    {
+      "label": "Deudas con entidades de crédito 138.926 118.261 Amortización del inmovilizado",
+      "lado": null,
+      "page": 8,
+      "section": "(98.065)             (120.464)",
+      "values": [
+        0.004567
+      ],
+      "origen": "estado 10",
+      "glosa": "Deudas con entidades de crédito 138.926 118.261 Amortización del inmovilizado"
+    },
+    {
+      "label": "Otros pasivos financieros",
+      "lado": null,
+      "page": 8,
+      "section": "(98.065)             (120.464)",
+      "values": [
+        79.663
+      ],
+      "origen": "estado 10",
+      "glosa": "Otros pasivos financieros"
+    },
+    {
+      "label": "Pasivos por impuesto diferido",
+      "lado": "expense",
+      "page": 8,
+      "section": "",
+      "values": [
+        19.505
+      ],
+      "origen": "estado 11",
+      "glosa": "Pasivos por impuesto diferido"
+    },
+    {
+      "label": "Excesos de provisiones 13.1",
+      "lado": null,
+      "page": 8,
+      "section": "",
+      "values": [
+        3.692
+      ],
+      "origen": "estado 11",
+      "glosa": "Excesos de provisiones 13.1"
+    },
+    {
+      "label": "Periodificaciones a largo plazo 15 -",
+      "lado": null,
+      "page": 8,
+      "section": "",
+      "values": [
+        1.454
+      ],
+      "origen": "estado 11",
+      "glosa": "Periodificaciones a largo plazo 15 -"
+    },
+    {
+      "label": "Amortización del inmovilizado",
+      "lado": null,
+      "page": 9,
+      "section": "anual terminado el 30 de junio de 2011 y al ejercicio anual terminado el 30 de junio",
+      "values": [
+        104.519
+      ],
+      "origen": "estado 17",
+      "glosa": "Amortización del inmovilizado"
+    },
+    {
+      "label": "Transferencias a la cuenta de pérdidas y ganancias Ingresos financieros",
+      "lado": "revenue",
+      "page": 9,
+      "section": "",
+      "values": [
+        -13.248
+      ],
+      "origen": "estado 19",
+      "glosa": "Transferencias a la cuenta de pérdidas y ganancias Ingresos financieros"
+    },
+    {
+      "label": "Subvenciones, donaciones y legados recibidos 12 (192) (192) Gastos financieros",
+      "lado": null,
+      "page": 9,
+      "section": "",
+      "values": [
+        12.939
+      ],
+      "origen": "estado 19",
+      "glosa": "Subvenciones, donaciones y legados recibidos 12 (192) (192) Gastos financieros"
+    },
+    {
+      "label": "Pagos de intereses",
+      "lado": null,
+      "page": 9,
+      "section": "b. Estado total de cambios en el patrimonio neto consolidado correspondiente al ejer- / cicio anual terminado el 30 de junio de 2011 y al ejercicio anual terminado el 30 de",
+      "values": [
+        -9.63
+      ],
+      "origen": "estado 21",
+      "glosa": "Pagos de intereses"
+    },
+    {
+      "label": "junio de",
+      "lado": null,
+      "page": 9,
+      "section": "b. Estado total de cambios en el patrimonio neto consolidado correspondiente al ejer- / cicio anual terminado el 30 de junio de 2011 y al ejercicio anual terminado el 30 de",
+      "values": [
+        2.01
+      ],
+      "origen": "estado 21",
+      "glosa": "junio de"
+    },
+    {
+      "label": "Cobros de intereses",
+      "lado": null,
+      "page": 9,
+      "section": "b. Estado total de cambios en el patrimonio neto consolidado correspondiente al ejer- / cicio anual terminado el 30 de junio de 2011 y al ejercicio anual terminado el 30 de",
+      "values": [
+        12.149
+      ],
+      "origen": "estado 21",
+      "glosa": "Cobros de intereses"
+    },
+    {
+      "label": "Pagos por inversiones",
+      "lado": null,
+      "page": 9,
+      "section": "dominante",
+      "values": [
+        -149.422
+      ],
+      "origen": "estado 22",
+      "glosa": "Pagos por inversiones"
+    },
+    {
+      "label": "Inmovilizado inmaterial deportivo",
+      "lado": null,
+      "page": 9,
+      "section": "dominante",
+      "values": [
+        -126.011
+      ],
+      "origen": "estado 22",
+      "glosa": "Inmovilizado inmaterial deportivo"
+    },
+    {
+      "label": "Saldo al 30 de junio de 2009 159.791 8.548 207 21.477 190.023 5.717",
+      "lado": null,
+      "page": 9,
+      "section": "dominante",
+      "values": [
+        195.861
+      ],
+      "origen": "estado 22",
+      "glosa": "Saldo al 30 de junio de 2009 159.791 8.548 207 21.477 190.023 5.717"
+    },
+    {
+      "label": "AUMENTO / DISMINUCIÓN NETA DEL EFECTIVO O EQUIVALENTES",
+      "lado": null,
+      "page": 9,
+      "section": "terminado el 30/06/2011",
+      "values": [
+        5.038
+      ],
+      "origen": "estado 25",
+      "glosa": "AUMENTO / DISMINUCIÓN NETA DEL EFECTIVO O EQUIVALENTES"
+    },
+    {
+      "label": "Efectivo o equivalentes al comienzo del periodo",
+      "lado": null,
+      "page": 9,
+      "section": "terminado el 30/06/2011",
+      "values": [
+        92.731
+      ],
+      "origen": "estado 25",
+      "glosa": "Efectivo o equivalentes al comienzo del periodo"
+    },
+    {
+      "label": "euros (1.454 miles de euros al 30 de junio de",
+      "lado": null,
+      "page": 28,
+      "section": "›› Anticipos recibidos por prestación de servicios / Incluyen los cobros anticipados en efectivo y en especie recibidos en 1992 por la cesión / durante veinte años (hasta el 30 de junio de 2012) del derecho de uso y explotación de los / locales comerciales y aparcamiento conocidos como la “Esquina del Bernabéu” a Centro / Comercial Concha Espina, S.A., cuya imputación a resultados se realiza durante el período",
+      "values": [
+        2010
+      ],
+      "origen": "estado 57",
+      "glosa": "euros (1.454 miles de euros al 30 de junio de"
+    },
+    {
+      "label": "Pasivos por diferencias temporarias deducibles",
+      "lado": "revenue",
+      "page": 28,
+      "section": "›› Anticipos recibidos por prestación de servicios / Incluyen los cobros anticipados en efectivo y en especie recibidos en 1992 por la cesión / durante veinte años (hasta el 30 de junio de 2012) del derecho de uso y explotación de los / locales comerciales y aparcamiento conocidos como la “Esquina del Bernabéu” a Centro / Comercial Concha Espina, S.A., cuya imputación a resultados se realiza durante el período",
+      "values": [
+        19505
+      ],
+      "origen": "estado 57",
+      "glosa": "Pasivos por diferencias temporarias deducibles"
+    },
+    {
+      "label": "›› Ingresos anticipados Pasivos por impuestos diferidos (pasivo no corriente)",
+      "lado": "expense",
+      "page": 28,
+      "section": "›› Anticipos recibidos por prestación de servicios / Incluyen los cobros anticipados en efectivo y en especie recibidos en 1992 por la cesión / durante veinte años (hasta el 30 de junio de 2012) del derecho de uso y explotación de los / locales comerciales y aparcamiento conocidos como la “Esquina del Bernabéu” a Centro / Comercial Concha Espina, S.A., cuya imputación a resultados se realiza durante el período",
+      "values": [
+        19505
+      ],
+      "origen": "estado 57",
+      "glosa": "›› Ingresos anticipados Pasivos por impuestos diferidos (pasivo no corriente)"
+    },
+    {
+      "label": "Arrendamientos de activos (nota 6.3)",
+      "lado": "expense",
+      "page": 34,
+      "section": "30/06/2011                    30/06/2010 / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / Miles de euros / 33.997 / 30/06/2011                     30/06/2010",
+      "values": [
+        2.966
+      ],
+      "origen": "estado 65",
+      "glosa": "Arrendamientos de activos (nota 6.3)"
+    },
+    {
+      "label": "Reparaciones y conservación",
+      "lado": "expense",
+      "page": 34,
+      "section": "30/06/2011                    30/06/2010 / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / Miles de euros / 33.997 / 30/06/2011                     30/06/2010",
+      "values": [
+        13.294
+      ],
+      "origen": "estado 65",
+      "glosa": "Reparaciones y conservación"
+    },
+    {
+      "label": "Servicios profesionales",
+      "lado": "expense",
+      "page": 34,
+      "section": "30/06/2011                    30/06/2010 / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / Miles de euros / 33.997 / 30/06/2011                     30/06/2010",
+      "values": [
+        11.947
+      ],
+      "origen": "estado 65",
+      "glosa": "Servicios profesionales"
+    },
+    {
+      "label": "Primas de seguro",
+      "lado": "expense",
+      "page": 34,
+      "section": "30/06/2011                    30/06/2010 / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / Miles de euros / 33.997 / 30/06/2011                     30/06/2010",
+      "values": [
+        3.921
+      ],
+      "origen": "estado 65",
+      "glosa": "Primas de seguro"
+    },
+    {
+      "label": "Publicidad, propaganda y relaciones públicas",
+      "lado": "expense",
+      "page": 34,
+      "section": "30/06/2011                    30/06/2010 / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / Miles de euros / 33.997 / 30/06/2011                     30/06/2010",
+      "values": [
+        1.397
+      ],
+      "origen": "estado 65",
+      "glosa": "Publicidad, propaganda y relaciones públicas"
+    },
+    {
+      "label": "Suministros",
+      "lado": "expense",
+      "page": 34,
+      "section": "30/06/2011                    30/06/2010 / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / Miles de euros / 33.997 / 30/06/2011                     30/06/2010",
+      "values": [
+        1.573
+      ],
+      "origen": "estado 65",
+      "glosa": "Suministros"
+    },
+    {
+      "label": "Tributos",
+      "lado": "expense",
+      "page": 34,
+      "section": "30/06/2011                    30/06/2010 / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / Miles de euros / 33.997 / 30/06/2011                     30/06/2010",
+      "values": [
+        1.306
+      ],
+      "origen": "estado 65",
+      "glosa": "Tributos"
+    },
+    {
+      "label": "Otros servicios",
+      "lado": "expense",
+      "page": 34,
+      "section": "30/06/2011                    30/06/2010 / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / Miles de euros / 33.997 / 30/06/2011                     30/06/2010",
+      "values": [
+        28.582
+      ],
+      "origen": "estado 65",
+      "glosa": "Otros servicios"
+    },
+    {
+      "label": "30/06/11 30/06/10 Estadios y pabellones deportivos 274.300 - -",
+      "lado": "expense",
+      "page": 18,
+      "section": "Saldo inicial    dotaciones         Bajas         Traspasos       Saldo final / Miles de euros / Coste:",
+      "values": [
+        2.514
+      ],
+      "origen": "estado 28",
+      "glosa": "30/06/11 30/06/10 Estadios y pabellones deportivos 274.300 - -"
+    },
+    {
+      "label": "Terrenos y construcciones 22.549 - - -",
+      "lado": "expense",
+      "page": 18,
+      "section": "Saldo inicial    dotaciones         Bajas         Traspasos       Saldo final / Miles de euros / Coste:",
+      "values": [
+        22.549
+      ],
+      "origen": "estado 28",
+      "glosa": "Terrenos y construcciones 22.549 - - -"
+    },
+    {
+      "label": "Concesiones 2.103 2.103 Instalaciones técnicas y otro inmovilizado material 45.217 1.090 (168)",
+      "lado": "expense",
+      "page": 18,
+      "section": "Saldo inicial    dotaciones         Bajas         Traspasos       Saldo final / Miles de euros / Coste:",
+      "values": [
+        2.61
+      ],
+      "origen": "estado 28",
+      "glosa": "Concesiones 2.103 2.103 Instalaciones técnicas y otro inmovilizado material 45.217 1.090 (168)"
+    },
+    {
+      "label": "Patentes, licencias, marcas y similares 205 182 Inmovilizado en curso y anticipos 5.845 11.289 -",
+      "lado": "expense",
+      "page": 18,
+      "section": "Saldo inicial    dotaciones         Bajas         Traspasos       Saldo final / Miles de euros / Coste:",
+      "values": [
+        -5.124
+      ],
+      "origen": "estado 28",
+      "glosa": "Patentes, licencias, marcas y similares 205 182 Inmovilizado en curso y anticipos 5.845 11.289 -"
+    },
+    {
+      "label": "Aplicaciones informáticas 3.384 2.703 Total coste 347.911 12.379 (168) -",
+      "lado": "expense",
+      "page": 18,
+      "section": "Saldo inicial    dotaciones         Bajas         Traspasos       Saldo final / Miles de euros / Coste:",
+      "values": [
+        360.122
+      ],
+      "origen": "estado 28",
+      "glosa": "Aplicaciones informáticas 3.384 2.703 Total coste 347.911 12.379 (168) -"
+    },
+    {
+      "label": "Otro inmovilizado intangible",
+      "lado": "expense",
+      "page": 18,
+      "section": "Saldo inicial    dotaciones         Bajas         Traspasos       Saldo final / Miles de euros / Coste:",
+      "values": [
+        80.965
+      ],
+      "origen": "estado 28",
+      "glosa": "Otro inmovilizado intangible"
+    },
+    {
+      "label": "Terrenos 488 - 488 Hasta un año",
+      "lado": "expense",
+      "page": 20,
+      "section": "Miles de euros / Miles de euros / Saldo inicial      Altas y dotaciones     Saldo final / 30/06/2011                    30/06/2010 / Coste",
+      "values": [
+        1.765
+      ],
+      "origen": "estado 36",
+      "glosa": "Terrenos 488 - 488 Hasta un año"
+    },
+    {
+      "label": "Construcciones 13.853 - 13.853 Entre uno y cinco años",
+      "lado": "expense",
+      "page": 20,
+      "section": "Miles de euros / Miles de euros / Saldo inicial      Altas y dotaciones     Saldo final / 30/06/2011                    30/06/2010 / Coste",
+      "values": [
+        4.857
+      ],
+      "origen": "estado 36",
+      "glosa": "Construcciones 13.853 - 13.853 Entre uno y cinco años"
+    },
+    {
+      "label": "Instalaciones 37 - 37 Más de cinco años",
+      "lado": "expense",
+      "page": 20,
+      "section": "Miles de euros / Miles de euros / Saldo inicial      Altas y dotaciones     Saldo final / 30/06/2011                    30/06/2010 / Coste",
+      "values": [
+        3.2
+      ],
+      "origen": "estado 36",
+      "glosa": "Instalaciones 37 - 37 Más de cinco años"
+    },
+    {
+      "label": "Construcciones en curso 1.550",
+      "lado": "expense",
+      "page": 20,
+      "section": "Miles de euros / Miles de euros / Saldo inicial      Altas y dotaciones     Saldo final / 30/06/2011                    30/06/2010 / Coste",
+      "values": [
+        1.885
+      ],
+      "origen": "estado 36",
+      "glosa": "Construcciones en curso 1.550"
+    },
+    {
+      "label": "Fútbol",
+      "lado": "expense",
+      "page": 34,
+      "section": "30/06/2011                     30/06/2010 / La distribución por secciones del gasto de personal, incluyendo principalmente sueldos y / salarios, primas y bonificaciones, derechos de imagen y cargas sociales, es la siguiente: / 30/06/2011                    30/06/2010 / Sueldos, salarios y asimilados",
+      "values": [
+        182.586
+      ],
+      "origen": "estado 64",
+      "glosa": "Fútbol"
+    },
+    {
+      "label": "Baloncesto",
+      "lado": "expense",
+      "page": 34,
+      "section": "30/06/2011                     30/06/2010 / La distribución por secciones del gasto de personal, incluyendo principalmente sueldos y / salarios, primas y bonificaciones, derechos de imagen y cargas sociales, es la siguiente: / 30/06/2011                    30/06/2010 / Sueldos, salarios y asimilados",
+      "values": [
+        19.001
+      ],
+      "origen": "estado 64",
+      "glosa": "Baloncesto"
+    },
+    {
+      "label": "Estructura",
+      "lado": "expense",
+      "page": 34,
+      "section": "30/06/2011                     30/06/2010 / La distribución por secciones del gasto de personal, incluyendo principalmente sueldos y / salarios, primas y bonificaciones, derechos de imagen y cargas sociales, es la siguiente: / 30/06/2011                    30/06/2010 / Sueldos, salarios y asimilados",
+      "values": [
+        8.297
+      ],
+      "origen": "estado 64",
+      "glosa": "Estructura"
+    }
+  ]
+}

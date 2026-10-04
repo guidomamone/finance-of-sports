@@ -1,0 +1,1455 @@
+{
+ "md": "Clubes/Colombia/Atletico Bucaramanga/estados-financieros-2022.md",
+ "generatedAt": "2026-09-30T04:27:40.349Z",
+ "rubros": [
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 22,
+   "section": "de 2022 y debe completarse en un plazo máximo de 3 años los cuales se cumplirán el 31 de / marzo de 2025. / (b) Costos y gastos por pagar / Concepto                         2022",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "WILLIAM FRANCISCO CONDE GORDILLO 80.000.000 Ordinario Laboral 70%",
+   "lado": "revenue",
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 898
+  },
+  {
+   "label": "VICTOR HUGO ESPINOSA PATIÑO 30.000.000 Ordinario Laboral 15%",
+   "lado": "revenue",
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "player_sales",
+     0.03
+    ]
+   ],
+   "tokens": 898
+  },
+  {
+   "label": "Anticipos a empleados",
+   "lado": null,
+   "page": 18,
+   "section": "inmediatamente en resultados una pérdida por deterioro del valor. / (a) Anticipos y avances. / Concepto                       2022",
+   "choice": "wages_squad",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "wages_squad",
+     0.41000000000000003
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ]
+   ],
+   "tokens": 1367
+  },
+  {
+   "label": "Arrendamientos por pagar",
+   "lado": "expense",
+   "page": 22,
+   "section": "de 2022 y debe completarse en un plazo máximo de 3 años los cuales se cumplirán el 31 de / marzo de 2025. / (b) Costos y gastos por pagar / Concepto                         2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Anticipos a Proveedores (1)",
+   "lado": null,
+   "page": 18,
+   "section": "inmediatamente en resultados una pérdida por deterioro del valor. / (a) Anticipos y avances. / Concepto                       2022",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "player_impairment",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1292
+  },
+  {
+   "label": "ALVARO SUAREZ VANEGAS 60.000.000 Ordinario Laboral 20%",
+   "lado": "revenue",
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "player_sales",
+     0.13
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 895
+  },
+  {
+   "label": "Derechos económicos por pagar",
+   "lado": "expense",
+   "page": 22,
+   "section": "de 2022 y debe completarse en un plazo máximo de 3 años los cuales se cumplirán el 31 de / marzo de 2025. / (b) Costos y gastos por pagar / Concepto                         2022",
+   "choice": "player_amortisation",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "player_amortisation",
+     0.6900000000000001
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "ANTONIO ALEJANDRO OTERO OREJUELA 500.000.000 Ordinario Laboral 15%",
+   "lado": "revenue",
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 902
+  },
+  {
+   "label": "HUMBERTO DE JESUS SIERRA 120.000.000 Ordinario Laboral 70%",
+   "lado": "revenue",
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 896
+  },
+  {
+   "label": "JUAN FERNANDO CASTRO ALEGRIA 60.000.000 Ordinario Laboral 70%",
+   "lado": "revenue",
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.91
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 896
+  },
+  {
+   "label": "OSCAR PANESSO VALENCIA 50.000.000 Ordinario Laboral 70%",
+   "lado": "revenue",
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "player_sales",
+     0.05
+    ]
+   ],
+   "tokens": 894
+  },
+  {
+   "label": "WILLIAM RUIZ GALVIS 30.000.000 Ordinario Laboral 60%",
+   "lado": "revenue",
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ],
+    [
+     "player_sales",
+     0.06
+    ]
+   ],
+   "tokens": 894
+  },
+  {
+   "label": "REAL CARACOLI 67.059.948 Ordinario Laboral 15%",
+   "lado": "revenue",
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 946
+  },
+  {
+   "label": "LUIS FERNANDO SUAREZ GUZMAN 423.985.263 Ordinario Laboral 50%",
+   "lado": "revenue",
+   "page": 23,
+   "section": "resultado de un suceso pasado, que deba desprenderse de recursos futuros y pueda ser / estimado de forma viable. / informado por el área jurídica a la fecha, dicho valor se tomó así: / % de / Éxito",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.94
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 898
+  },
+  {
+   "label": "Taquilla venta de boletería",
+   "lado": "revenue",
+   "page": 25,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1084
+  },
+  {
+   "label": "Venta y préstamo de derechos deportivos",
+   "lado": "revenue",
+   "page": 25,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "lado": "revenue",
+   "page": 25,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Derechos de televisión",
+   "lado": "revenue",
+   "page": 25,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Patrocinios",
+   "lado": "revenue",
+   "page": 25,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Actividades conexas",
+   "lado": "revenue",
+   "page": 25,
+   "section": "NOTA 13 – INGRESOS POR ACTIVIDADES ORDINARIAS",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Impuestos (b)",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1467
+  },
+  {
+   "label": "Servicios (c)",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.24000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.18
+    ]
+   ],
+   "tokens": 1464
+  },
+  {
+   "label": "Provisiones demandas laborales (nota 9)",
+   "lado": "expense",
+   "page": 25,
+   "section": "Gastos legales                                               8.215                  0 / Depreciaciones (d)                                          44.241             46.710 / Gastos varios                                                6.169                  0 / Diversos                                                    46.695                789",
+   "choice": "exceptional_items",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "exceptional_items",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1105
+  },
+  {
+   "label": "Salarios",
+   "lado": "expense",
+   "page": 26,
+   "section": "(a) Gastos de personal / Concepto                                 2022",
+   "choice": "wages_squad",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "wages_squad",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Auxilio de transporte",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "competition_bonus",
+     0.16
+    ]
+   ],
+   "tokens": 1494
+  },
+  {
+   "label": "Industria y comercio",
+   "lado": "expense",
+   "page": 26,
+   "section": "Gastos médicos                                                           113 / Totales                           $           161.076 / (b) Impuestos / Concepto                               2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.35000000000000003
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 827
+  },
+  {
+   "label": "Honorarios",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1456
+  },
+  {
+   "label": "Gastos de personal (a)",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "wages_squad",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "wages_squad",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1478
+  },
+  {
+   "label": "Otros Auxilios",
+   "lado": "expense",
+   "page": 26,
+   "section": "(a) Gastos de personal / Concepto                                 2022",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 984
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "match_organisation_expense",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1606
+  },
+  {
+   "label": "Cesantías",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.29000000000000004
+    ],
+    [
+     "wages_squad",
+     0.25
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Contribuciones y afiliaciones",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "Seguros",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.18
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1450
+  },
+  {
+   "label": "Gastos legales",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1463
+  },
+  {
+   "label": "Mantenimiento y reparación",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1459
+  },
+  {
+   "label": "Diversos (e)",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1465
+  },
+  {
+   "label": "Salario integral",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "wages_squad",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 1434
+  },
+  {
+   "label": "Gastos de viaje (d)",
+   "lado": null,
+   "page": 27,
+   "section": "NOTA 15 – GASTOS DE VENTAS",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1461
+  },
+  {
+   "label": "Sueldos Ordinarios",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "wages_squad",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "wages_squad",
+     0.56
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1483
+  },
+  {
+   "label": "Auxilios de vivienda y sostenimiento",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.84
+    ],
+    [
+     "broadcasting",
+     0.060000000000000005
+    ],
+    [
+     "wages_squad",
+     0.03
+    ]
+   ],
+   "tokens": 1496
+  },
+  {
+   "label": "Intereses de cesantías",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1354
+  },
+  {
+   "label": "Prima de servicios",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1469
+  },
+  {
+   "label": "Indemnizaciones laborales",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1570
+  },
+  {
+   "label": "Vacaciones",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1372
+  },
+  {
+   "label": "Dotación y suministro a trabajadores",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "wages_squad",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1333
+  },
+  {
+   "label": "Aportes a administradoras de riesgos profesionales",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1500
+  },
+  {
+   "label": "Incapacidades",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "wages_squad",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "Aportes a fondo de pensiones y cesantías",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "wages_squad",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1488
+  },
+  {
+   "label": "Medicamentos y botiquín",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "wages_squad",
+     0.34
+    ],
+    [
+     "match_organisation_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1384
+  },
+  {
+   "label": "Aportes a entidades promotoras de salud EPS",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "admin_general_expense",
+     0.38
+    ],
+    [
+     "sponsorship_commercial",
+     0.02
+    ]
+   ],
+   "tokens": 1412
+  },
+  {
+   "label": "Alojamiento y manutención",
+   "lado": "expense",
+   "page": 28,
+   "section": "(d) Gastos de viaje / Concepto                        2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 867
+  },
+  {
+   "label": "Aportes cajas de compensación",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "other_expenses",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.33
+    ],
+    [
+     "match_organisation_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1401
+  },
+  {
+   "label": "Aportes SENA",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "admin_general_expense",
+     0.18000000000000002
+    ],
+    [
+     "education_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1363
+  },
+  {
+   "label": "Pasajes Aéreos",
+   "lado": "expense",
+   "page": 28,
+   "section": "(d) Gastos de viaje / Concepto                        2022",
+   "choice": "match_organisation_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 807
+  },
+  {
+   "label": "Aportes ICBF",
+   "lado": null,
+   "page": 27,
+   "section": "(a) Gastos de personal de ventas / Concepto                                2022",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "match_organisation_expense",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1364
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 29,
+   "section": "NOTA 16 – OTROS INGRESOS",
+   "choice": "other_income",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "lump_football_operations",
+     0.16
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1009
+  },
+  {
+   "label": "Ingresos financieros",
+   "lado": "revenue",
+   "page": 30,
+   "section": "NOTA 18 – INGRESOS FINANCIEROS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Impuestos asumidos",
+   "lado": "expense",
+   "page": 29,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "choice": "exceptional_items",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "exceptional_items",
+     0.62
+    ],
+    [
+     "admin_general_expense",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1010
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 29,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Bancarios",
+   "lado": "expense",
+   "page": 30,
+   "section": "NOTA 19 – COSTOS FINANCIEROS",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.7
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Multas sanciones y litigios",
+   "lado": "expense",
+   "page": 29,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "choice": "other_expenses",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_expenses",
+     0.94
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1056
+  },
+  {
+   "label": "Demandas laborales",
+   "lado": "expense",
+   "page": 29,
+   "section": "NOTA 17 – OTROS GASTOS",
+   "choice": "admin_general_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.5
+    ],
+    [
+     "exceptional_items",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 960
+  }
+ ]
+}

@@ -1,0 +1,352 @@
+{
+  "club": "ael-larissa",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Grecia/AEL Larissa/AEL_board_report_2022-06-30.md",
+  "generatedAt": "2026-09-30T22:01:47.855Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 28,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 10,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 2,
+      "section": "# Α. ΔΕΙΚΤΕΣ ΟΙΚΟΝΟΜΙΚΗΣ ΔΙΑΡΘΡΩΣΗΣ",
+      "columns": [
+        "",
+        "",
+        "",
+        "30/6/2022",
+        "30/6/2021",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "ΔΕΙΚΤΗΣ ΠΕΡΙΟΥΣΙΑΚΗΣ ΔΙΑΡΘΡΩΣΗΣ",
+          "values": [
+            "Κυκλοφορούντα περιουσιακά στοιχεία",
+            "2.874.894,32",
+            "87,14%",
+            "2.501.909,28",
+            "86,51%"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Σύνολο ενεργητικού",
+            "3.299.076,78",
+            "",
+            "2.892.151,74",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ΔΕΙΚΤΗΣ ΠΕΡΙΟΥΣΙΑΚΗΣ ΔΙΑΡΘΡΩΣΗΣ",
+          "values": [
+            "Μη Κυκλοφορούντα περιουσιακά στοιχεία",
+            "424.182,46",
+            "12,86%",
+            "390.242,46",
+            "13,49%"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Σύνολο ενεργητικού",
+            "3.299.076,78",
+            "",
+            "2.892.151,74",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": [
+        "ΔΕΙΚΤΗΣ ΟΙΚΟΝΟΜΙΚΗΣ ΑΥΤΟΤΕΛΕΙΑΣ",
+        "Ίδια Κεφάλαια",
+        "4.712,01",
+        "0,16%",
+        "67.524,90",
+        "2,72%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Σύνολο Βραχ.Υποχρεώσεων",
+            "2.956.148,50",
+            "",
+            "2.486.410,57",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "Ο παραπάνω δείκτης δείχνει την οικονομική αυτάρκεια της εταιρείας.",
+      "columns": [
+        "ΔΕΙΚΤΗΣ ΔΑΝΕΙΑΚΗΣ ΚΑΛΥΨΗΣ",
+        "Σύνολο υποχρεώσεων",
+        "3.294.364,77",
+        "99,86%",
+        "2.824.626,84",
+        "97,67%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Σύνολο καθαρής θέσης, προβλέψεων και υποχρεώσεων",
+            "3.299.076,78",
+            "",
+            "2.892.151,74",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": [
+        "ΔΕΙΚΤΗΣ ΔΑΝΕΙΑΚΗΣ ΚΑΛΥΨΗΣ",
+        "Ίδια Κεφάλαια",
+        "4.712,01",
+        "0,14%",
+        "67.524,90",
+        "2,33%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Σύνολο καθαρής θέσης, προβλέψεων και υποχρεώσεων",
+            "3.299.076,78",
+            "",
+            "2.892.151,74",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "Οι παραπάνω δείκτες δείχνουν την δανειακή εξάρτηση της εταιρείας",
+      "columns": [
+        "ΔΕΙΚΤΗΣ ΠΑΓΙΟΠΟΙΗΣΕΩΝ ΜΕ ΙΔ.ΚΕΦ.",
+        "Ίδια Κεφάλαια",
+        "4.712,01",
+        "0,01",
+        "67.524,90",
+        "0,17"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Μη Κυκλοφορούντα περιουσιακά στοιχεία",
+            "424.182,46",
+            "",
+            "390.242,46",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "# Β. ΔΕΙΚΤΕΣ ΡΕΥΣΤΟΤΗΤΑΣ",
+      "columns": [
+        "Δείκτης κυκλοφοριακής ρευστότητας",
+        "Κυκλοφορούντα περιουσιακά στοιχεία",
+        "2.874.894,32",
+        "0,97",
+        "2.501.909,28",
+        "1,01"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Βραχυπρ.υποχρεώσεις",
+            "2.956.148,50",
+            "",
+            "2.486.410,57",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": [
+        "Δείκτης κυκλοφοριακής ρευστότητας",
+        "Κεφάλαιο κίνησης",
+        "-81.254,18",
+        "-2,83%",
+        "15.498,71",
+        "0,62%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Κυκλοφορούντα περιουσιακά στοιχεία",
+            "2.874.894,32",
+            "",
+            "2.501.909,28",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "## Γ. ΔΕΙΚΤΕΣ ΑΠΟΔΟΤΙΚΟΤΗΤΑΣ",
+      "columns": [
+        "Καθαρά κέρδη προ τόκων και φόρων",
+        "-54.309,88",
+        "-2,63%",
+        "498.537,34",
+        "23,65%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Κύκλος εργασιών",
+          "values": [
+            "2.068.146,00",
+            "",
+            "2.107.664,56",
+            ""
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Καθαρά κέρδη προ φόρων",
+          "values": [
+            "-59.724,90",
+            "-2,56%",
+            "473.196,61",
+            "10,96%"
+          ],
+          "bold": true,
+          "codigo": "Αποδοτικότητα εσόδων"
+        },
+        {
+          "rawLabel": "Σύνολο εσόδων",
+          "values": [
+            "2.329.785,89",
+            "",
+            "4.318.443,17",
+            ""
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": null,
+      "columns": [
+        "Αποδοτικότητα Ιδίων Κεφαλαίων",
+        "Καθαρά κέρδη προ φόρων",
+        "-59.724,90",
+        "-1267,50%",
+        "473.196,61",
+        "700,77%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Ίδια κεφάλαια",
+            "4.712,01",
+            "",
+            "67.524,90",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "Ο αριθμοδείκτης αυτός απεικονίζει την αποδοτικότητα των ιδίων κεφαλαίων της εταιρείας.",
+      "columns": [
+        "Αποδοτικότητα πωλήσεων",
+        "Μικτά αποτελέσματα",
+        "846.318,45",
+        "40,92%",
+        "50.739,92",
+        "2,41%"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Κύκλος εργασιών",
+            "2.068.146,00",
+            "",
+            "2.107.664,56",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/ael-larissa-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"ael-larissa\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

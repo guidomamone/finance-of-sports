@@ -1,0 +1,488 @@
+{
+ "pdf": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2014.pdf",
+ "md": "Clubes/Chile/Universidad Catolica (Cruzados)/estados-financieros-2014.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T16:38:52.956Z",
+ "ubicacion": {
+  "estado": [
+   "b6",
+   "b7",
+   "b8"
+  ],
+  "notas_ingresos": [
+   "b35",
+   "b40"
+  ],
+  "notas_gastos": [
+   "b38"
+  ]
+ },
+ "escalas": [
+  {
+   "bloque": "b6",
+   "escala": "miles",
+   "evidencia": "L256: M$"
+  },
+  {
+   "bloque": "b7",
+   "escala": "miles",
+   "evidencia": "Continuación del mismo cuadro de b6 (L256: M$)"
+  },
+  {
+   "bloque": "b8",
+   "escala": "miles",
+   "evidencia": "Mismo estado (L256: M$); ganancia por acción en pesos (L279)"
+  },
+  {
+   "bloque": "b35",
+   "escala": "miles",
+   "evidencia": "L2616: M$"
+  },
+  {
+   "bloque": "b40",
+   "escala": "miles",
+   "evidencia": "L2753: M$"
+  },
+  {
+   "bloque": "b38",
+   "escala": "miles",
+   "evidencia": "L2684: M$"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b6",
+   "linea": 258,
+   "etiqueta": "Ingresos de actividades ordinarias",
+   "actual": "9.360.273",
+   "anterior": "9.097.471",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 259,
+   "etiqueta": "Costo de ventas",
+   "actual": "(7.641.258)",
+   "anterior": "(7.670.454)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 260,
+   "etiqueta": "Ganancia bruta",
+   "actual": "1.719.015",
+   "anterior": "1.427.017",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 261,
+   "etiqueta": "Otros ingresos por función",
+   "actual": "53.637",
+   "anterior": "51.839",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b6",
+   "linea": 262,
+   "etiqueta": "Gasto de administración",
+   "actual": "(1.385.292)",
+   "anterior": "(1.188.720)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 263,
+   "etiqueta": "Otros gastos",
+   "actual": "-",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 264,
+   "etiqueta": "Otras ganancias (pérdidas)",
+   "actual": "(288.444)",
+   "anterior": "(346.648)",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 265,
+   "etiqueta": "Ingresos financieros",
+   "actual": "54.312",
+   "anterior": "34.977",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 266,
+   "etiqueta": "Costos financieros",
+   "actual": "(6.895)",
+   "anterior": "(4.573)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 267,
+   "etiqueta": "Diferencias de cambio",
+   "actual": "104.311",
+   "anterior": "83.629",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 268,
+   "etiqueta": "Ganancia (pérdida), antes de impuestos",
+   "actual": "250.644",
+   "anterior": "57.521",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 269,
+   "etiqueta": "Ingreso (Gasto) por impuestos a las ganancias",
+   "actual": "(178.892)",
+   "anterior": "163.095",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b7",
+   "linea": 270,
+   "etiqueta": "Ganancia (pérdida) procedente de operaciones continuadas",
+   "actual": "71.752",
+   "anterior": "220.616",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b8",
+   "linea": 278,
+   "etiqueta": "Ganancia (pérdida)",
+   "actual": "71.752",
+   "anterior": "220.616",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b35",
+   "linea": 2617,
+   "etiqueta": "Ingresos por A.N.F.P.",
+   "actual": "2.270.857",
+   "anterior": "2.028.417",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Recaudación y otros"
+  },
+  {
+   "bloque": "b35",
+   "linea": 2618,
+   "etiqueta": "Ingresos por Derechos de TV",
+   "actual": "89.279",
+   "anterior": "260.900",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Recaudación y otros"
+  },
+  {
+   "bloque": "b35",
+   "linea": 2619,
+   "etiqueta": "Ingresos por Borderó (Recaudación Entradas)",
+   "actual": "1.051.081",
+   "anterior": "1.319.428",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Recaudación y otros"
+  },
+  {
+   "bloque": "b35",
+   "linea": 2620,
+   "etiqueta": "Ingresos por Préstamo de Jugadores",
+   "actual": "703.228",
+   "anterior": "156.666",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Recaudación y otros"
+  },
+  {
+   "bloque": "b35",
+   "linea": 2621,
+   "etiqueta": "Ingresos por venta de Jugadores",
+   "actual": "2.528.219",
+   "anterior": "2.561.546",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Recaudación y otros"
+  },
+  {
+   "bloque": "b35",
+   "linea": 2622,
+   "etiqueta": "Ingresos por Derechos de Solidaridad",
+   "actual": "96.484",
+   "anterior": "409.279",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Recaudación y otros"
+  },
+  {
+   "bloque": "b35",
+   "linea": 2623,
+   "etiqueta": "Otros",
+   "actual": "19.400",
+   "anterior": "4.209",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos por Recaudación y otros"
+  },
+  {
+   "bloque": "b35",
+   "linea": 2624,
+   "etiqueta": "Ingresos por Recaudación y otros",
+   "actual": "6.758.548",
+   "anterior": "6.740.445",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b35",
+   "linea": 2626,
+   "etiqueta": "Ingresos Comerciales",
+   "actual": "2.601.725",
+   "anterior": "2.357.026",
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b35",
+   "linea": 2628,
+   "etiqueta": "Total Ingresos de actividades oridinarias",
+   "actual": "9.360.273",
+   "anterior": "9.097.471",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos de actividades ordinarias"
+  },
+  {
+   "bloque": "b40",
+   "linea": 2762,
+   "etiqueta": "Ingresos Cuotas Socios Fútbol",
+   "actual": "81.940",
+   "anterior": "109.812",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Comerciales"
+  },
+  {
+   "bloque": "b40",
+   "linea": 2763,
+   "etiqueta": "Ingresos Matrículas de Escuelas de Fútbol",
+   "actual": "214.666",
+   "anterior": "158.130",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Comerciales"
+  },
+  {
+   "bloque": "b40",
+   "linea": 2764,
+   "etiqueta": "Ingresos por Publicidad y Auspicios",
+   "actual": "1.995.577",
+   "anterior": "1.810.225",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Comerciales"
+  },
+  {
+   "bloque": "b40",
+   "linea": 2765,
+   "etiqueta": "Ingresos por Ventas de Productos Tienda UC",
+   "actual": "118.906",
+   "anterior": "66.660",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Comerciales"
+  },
+  {
+   "bloque": "b40",
+   "linea": 2766,
+   "etiqueta": "Ingresos por Derechos de Merchandising",
+   "actual": "190.636",
+   "anterior": "197.795",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Comerciales"
+  },
+  {
+   "bloque": "b40",
+   "linea": 2767,
+   "etiqueta": "Otros",
+   "actual": "-",
+   "anterior": "11.527",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Ingresos Comerciales"
+  },
+  {
+   "bloque": "b38",
+   "linea": 2685,
+   "etiqueta": "Remuneraciones",
+   "actual": "3.115.204",
+   "anterior": "2.785.677",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b38",
+   "linea": 2686,
+   "etiqueta": "Gastos de Operación",
+   "actual": "1.203.528",
+   "anterior": "1.046.028",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b38",
+   "linea": 2687,
+   "etiqueta": "Amortización pases de jugadores profesionales (*)",
+   "actual": "1.151.696",
+   "anterior": "1.791.989",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b38",
+   "linea": 2688,
+   "etiqueta": "Amortización Concesión",
+   "actual": "151.068",
+   "anterior": "151.068",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b38",
+   "linea": 2689,
+   "etiqueta": "Gastos de torneos y otros",
+   "actual": "614.033",
+   "anterior": "798.549",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b38",
+   "linea": 2690,
+   "etiqueta": "Gasto por Préstamo de Jugadores",
+   "actual": "843.759",
+   "anterior": "296.323",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b38",
+   "linea": 2691,
+   "etiqueta": "Gasto por Transferencia de Jugadores",
+   "actual": "446.250",
+   "anterior": "723.227",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b38",
+   "linea": 2692,
+   "etiqueta": "Depreciación",
+   "actual": "62.022",
+   "anterior": "46.362",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b38",
+   "linea": 2693,
+   "etiqueta": "Costos de ventas productos",
+   "actual": "53.698",
+   "anterior": "31.231",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  },
+  {
+   "bloque": "b38",
+   "linea": 2695,
+   "etiqueta": "Total Costo de Ventas",
+   "actual": "7.641.258",
+   "anterior": "7.670.454",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": "Costo de ventas"
+  }
+ ],
+ "total_ingresos": null,
+ "total_gastos": null,
+ "resultado": {
+  "linea": 278,
+  "actual": "71.752",
+  "anterior": "220.616"
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se deja afuera la columna Recaudaciones del cuadro por segmento (L2756-L2761, L2767) porque repite el desglose de b35 (L2617-L2623)?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Ingresos por Recaudación y otros",
+   "texto": "La columna Recaudaciones de b40 coincide en 2014 con b35; solo difiere 'Otros' 2013 (7.086 vs 4.209, L2767 vs L2623).",
+   "bloques": [
+    "b40",
+    "b35"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se acepta que en 2013 la suma de la columna Comerciales (L2762-L2767) no coincida con Ingresos Comerciales 2.357.026 (L2626) por una diferencia de 2.877?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Ingresos Comerciales",
+   "texto": "Diferencia del año anterior por reclasificación de 'Otros' entre segmentos (L2767); 2014 cuadra exacto.",
+   "bloques": [
+    "b40",
+    "b35"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "L261-L262 aparecen repetidas en b6 y b7; se cargaron una vez desde b6. Ganancia por acción (L281-L284, en pesos) no se cargó por no ser partida de resultados. No hay total de ingresos ni de gastos impreso en el estado."
+}

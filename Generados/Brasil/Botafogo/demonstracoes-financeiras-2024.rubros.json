@@ -1,0 +1,800 @@
+{
+ "md": "Clubes/Brasil/Botafogo/demonstracoes-financeiras-2024.md",
+ "pdf": "Clubes/Brasil/Botafogo/demonstracoes-financeiras-2024.pdf",
+ "club": "botafogo",
+ "year": 2024,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T01:15:58.819Z",
+ "tieOuts": {
+  "cierran": 21,
+  "noCierran": 31
+ },
+ "warnings": [
+  "5 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "26 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "ladoConocido": 51,
+ "rubros": [
+  {
+   "label": "153% destacou, com um aumento de quase",
+   "lado": "revenue",
+   "page": 6,
+   "section": "FATURAMENTO 2024 / FATURAMENTO",
+   "values": [
+    "476%,"
+   ],
+   "columns": null
+  },
+  {
+   "label": "passando de R$ 8,4 milhões para R$",
+   "lado": "revenue",
+   "page": 6,
+   "section": "FATURAMENTO 2024 / FATURAMENTO",
+   "values": [
+    "48,6"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Outras receitas operacionais 182.048 -",
+   "lado": null,
+   "page": 47,
+   "section": "reais) / •   Demonstração do resultado do exercício / Ref         31/12/2023                       31/12/2023 / Ajustes / (Reapresentado)",
+   "values": [
+    "182.048"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ganho/Perda na venda de atletas 3.1 (i) -",
+   "lado": null,
+   "page": 47,
+   "section": "reais) / •   Demonstração do resultado do exercício / Ref         31/12/2023                       31/12/2023 / Ajustes / (Reapresentado)",
+   "values": [
+    "39.778",
+    "39.778"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Imobilizado líquido 11.025 3.297 (78) -",
+   "lado": "expense",
+   "page": 58,
+   "section": "11. Imobilizado / Controladora / Consolidado / 2023            Adições             Baixas          Transferências       2024 / Custo / Depreciação",
+   "values": [
+    "14.244"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Programas e software 3.549 2.143 -",
+   "lado": "expense",
+   "page": 59,
+   "section": "12. Intangível / Movimentação do ativo intangível em 2024: / Controladora / Consolidado / 2023             Adições           Baixas             2024 / Custo",
+   "values": [
+    "5.692"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Patrocínios",
+   "lado": "revenue",
+   "page": 64,
+   "section": "mais eficiente das suas finanças e contribuindo para o equilíbrio orçamentário. / 17. Receita Diferida/Obrigações contratuais / Controladora           Consolidado / 31/12/2024             31/12/2023 / (Reapresentado)",
+   "values": [
+    "10.250"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Transmissão",
+   "lado": "revenue",
+   "page": 64,
+   "section": "mais eficiente das suas finanças e contribuindo para o equilíbrio orçamentário. / 17. Receita Diferida/Obrigações contratuais / Controladora           Consolidado / 31/12/2024             31/12/2023 / (Reapresentado)",
+   "values": [
+    "6.364",
+    "40.185"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Publicidade",
+   "lado": "revenue",
+   "page": 64,
+   "section": "mais eficiente das suas finanças e contribuindo para o equilíbrio orçamentário. / 17. Receita Diferida/Obrigações contratuais / Controladora           Consolidado / 31/12/2024             31/12/2023 / (Reapresentado)",
+   "values": [
+    "33.345",
+    "25.000"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Impostos e contribuições",
+   "lado": "revenue",
+   "page": 67,
+   "section": "reais) / 20. Receita Operacional, líquida / Controladora / Consolidado / 31/12/2024          31/12/2023 / (Reapresentado)",
+   "values": [
+    "(34.893)",
+    "(23.827)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Direito de arena",
+   "lado": "revenue",
+   "page": 67,
+   "section": "reais) / 20. Receita Operacional, líquida / Controladora / Consolidado / 31/12/2024          31/12/2023 / (Reapresentado)",
+   "values": [
+    "(16.645)",
+    "(7.254)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Outras deduções",
+   "lado": "revenue",
+   "page": 67,
+   "section": "reais) / 20. Receita Operacional, líquida / Controladora / Consolidado / 31/12/2024          31/12/2023 / (Reapresentado)",
+   "values": [
+    "(3.513)",
+    "(1.764)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Televisionamento",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza / Controladora / Consolidado / 31/12/2024          31/12/2023 / (Reapresentado) / Direitos de Transmissão                                  20.1",
+   "values": [
+    "100.982",
+    "83.385"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Streaming -",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Segregação das receitas por natureza / Controladora / Consolidado / 31/12/2024          31/12/2023 / (Reapresentado) / Direitos de Transmissão                                  20.1",
+   "values": [
+    "9.000"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Venda de mercadorias",
+   "lado": "revenue",
+   "page": 67,
+   "section": "4.362                 5.958 / Outros tipos de receita                                  20.6",
+   "values": [
+    "66.379",
+    "23.524"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Locações",
+   "lado": "revenue",
+   "page": 67,
+   "section": "4.362                 5.958 / Outros tipos de receita                                  20.6",
+   "values": [
+    "17.040",
+    "18.946"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Operação em estádio",
+   "lado": "revenue",
+   "page": 67,
+   "section": "4.362                 5.958 / Outros tipos de receita                                  20.6",
+   "values": [
+    "7.193",
+    "7.938"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Outros",
+   "lado": "revenue",
+   "page": 67,
+   "section": "4.362                 5.958 / Outros tipos de receita                                  20.6",
+   "values": [
+    "9.798",
+    "7.265"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Tributação específica do Futebol (TEF) *",
+   "lado": "revenue",
+   "page": 68,
+   "section": "100.982                92.385 / (-) Deduções da Receita Bruta",
+   "values": [
+    "(2.541)",
+    "(3.268)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Direito de arena",
+   "lado": "revenue",
+   "page": 68,
+   "section": "100.982                92.385 / (-) Deduções da Receita Bruta",
+   "values": [
+    "(4.859)",
+    "(3.795)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Copa do Brasil",
+   "lado": "revenue",
+   "page": 69,
+   "section": "20.2 – Premiações e participações / Controladora / Consolidado / 31/12/2024          31/12/2023 / (Reapresentado) / Receita Bruta",
+   "values": [
+    "5.670",
+    "8.500"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Campeonato Brasileiro (b)",
+   "lado": "revenue",
+   "page": 69,
+   "section": "20.2 – Premiações e participações / Controladora / Consolidado / 31/12/2024          31/12/2023 / (Reapresentado) / Receita Bruta",
+   "values": [
+    "48.166",
+    "38.257"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Tributação específica do Futebol (TEF)*",
+   "lado": "revenue",
+   "page": 69,
+   "section": "257.504               61.235 / (-) Deduções da Receita Bruta",
+   "values": [
+    "(11.813)",
+    "(2.623)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Direito de arena",
+   "lado": "revenue",
+   "page": 69,
+   "section": "257.504               61.235 / (-) Deduções da Receita Bruta",
+   "values": [
+    "(11.786)",
+    "(3.459)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Sul-americana 3.804 (2.686) 1.118 29%",
+   "lado": null,
+   "page": 69,
+   "section": "20.3 – Bilheteria / 2023 / % do resultado / líquido sobre a / renda bruta",
+   "values": [
+    "23.615"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Campeonato Carioca 2.108 (1.566) 542 26%",
+   "lado": null,
+   "page": 69,
+   "section": "20.3 – Bilheteria / 2023 / % do resultado / líquido sobre a / renda bruta",
+   "values": [
+    "4.596"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Campeonato Brasileiro 15.300 (10.520) 4.780 31%",
+   "lado": null,
+   "page": 69,
+   "section": "20.3 – Bilheteria / 2023 / % do resultado / líquido sobre a / renda bruta",
+   "values": [
+    "29.398"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Copa do Brasil 1.435 (1.578) (143) -10%",
+   "lado": null,
+   "page": 69,
+   "section": "20.3 – Bilheteria / 2023 / % do resultado / líquido sobre a / renda bruta",
+   "values": [
+    "17.546"
+   ],
+   "columns": null
+  },
+  {
+   "label": "22.647 (16.350) 6.297 28%",
+   "lado": null,
+   "page": 69,
+   "section": "20.3 – Bilheteria / 2023 / % do resultado / líquido sobre a / renda bruta",
+   "values": [
+    "21.935"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Campeonato Brasileiro* 19.420 (10.759) 8.661 45%",
+   "lado": null,
+   "page": 70,
+   "section": "reais) / 2024 / % do resultado / líquido sobre a / renda bruta",
+   "values": [
+    "29.160"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Copa Libertadores 14.006 (4.776) 9.230 66%",
+   "lado": null,
+   "page": 70,
+   "section": "reais) / 2024 / % do resultado / líquido sobre a / renda bruta",
+   "values": [
+    "33.322"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Campeonato Carioca 2.040 (2.144) (104) -5%",
+   "lado": null,
+   "page": 70,
+   "section": "reais) / 2024 / % do resultado / líquido sobre a / renda bruta",
+   "values": [
+    "8.474"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Copa do Brasil 890 (970) (80) -9%",
+   "lado": null,
+   "page": 70,
+   "section": "reais) / 2024 / % do resultado / líquido sobre a / renda bruta",
+   "values": [
+    "19.134"
+   ],
+   "columns": null
+  },
+  {
+   "label": "36.356 (18.649) 17.707 49%",
+   "lado": null,
+   "page": 70,
+   "section": "reais) / 2024 / % do resultado / líquido sobre a / renda bruta",
+   "values": [
+    "25.045"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Patrocínio Master (a)",
+   "lado": "revenue",
+   "page": 70,
+   "section": "Peñarol, do Uruguai, que contou com a presença de quase 43 mil torcedores. / 20.4 – Publicidade e Patrocínios / Controladora / Consolidado / 31/12/2024         31/12/2023 / Receita Bruta",
+   "values": [
+    "37.500",
+    "27.556"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Outros Patrocínios",
+   "lado": "revenue",
+   "page": 70,
+   "section": "Peñarol, do Uruguai, que contou com a presença de quase 43 mil torcedores. / 20.4 – Publicidade e Patrocínios / Controladora / Consolidado / 31/12/2024         31/12/2023 / Receita Bruta",
+   "values": [
+    "11.526",
+    "8.051"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Publicidade (b)",
+   "lado": "revenue",
+   "page": 70,
+   "section": "Peñarol, do Uruguai, que contou com a presença de quase 43 mil torcedores. / 20.4 – Publicidade e Patrocínios / Controladora / Consolidado / 31/12/2024         31/12/2023 / Receita Bruta",
+   "values": [
+    "6.655",
+    "6.050"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Vendas de mercadorias (a)",
+   "lado": "revenue",
+   "page": 71,
+   "section": "20.6 – Outros tipos de receita / Controladora / Consolidado / 31/12/2024           31/12/2023 / (Reapresentado) / Receita Bruta",
+   "values": [
+    "66.379",
+    "23.524"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Locações do estádio Nilton Santos (b)",
+   "lado": "revenue",
+   "page": 71,
+   "section": "20.6 – Outros tipos de receita / Controladora / Consolidado / 31/12/2024           31/12/2023 / (Reapresentado) / Receita Bruta",
+   "values": [
+    "7.463",
+    "10.626"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Operação de estádio (c)",
+   "lado": "revenue",
+   "page": 71,
+   "section": "20.6 – Outros tipos de receita / Controladora / Consolidado / 31/12/2024           31/12/2023 / (Reapresentado) / Receita Bruta",
+   "values": [
+    "7.193",
+    "7.938"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Locações de Camarotes (d)",
+   "lado": "revenue",
+   "page": 71,
+   "section": "20.6 – Outros tipos de receita / Controladora / Consolidado / 31/12/2024           31/12/2023 / (Reapresentado) / Receita Bruta",
+   "values": [
+    "9.577",
+    "8.320"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Permuta (e)",
+   "lado": "revenue",
+   "page": 71,
+   "section": "20.6 – Outros tipos de receita / Controladora / Consolidado / 31/12/2024           31/12/2023 / (Reapresentado) / Receita Bruta",
+   "values": [
+    "7.294",
+    "4.318"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Projetos incentivados",
+   "lado": "revenue",
+   "page": 71,
+   "section": "20.6 – Outros tipos de receita / Controladora / Consolidado / 31/12/2024           31/12/2023 / (Reapresentado) / Receita Bruta",
+   "values": [
+    "1.575",
+    "1.125"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Bonificação de produtos",
+   "lado": "revenue",
+   "page": 71,
+   "section": "20.6 – Outros tipos de receita / Controladora / Consolidado / 31/12/2024           31/12/2023 / (Reapresentado) / Receita Bruta",
+   "values": [
+    "1.816"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Custo venda de mercadoria",
+   "lado": "expense",
+   "page": 72,
+   "section": "foi impulsionado, principalmente, pelo bom desempenho das operações de A&B do estádio. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2024              31/12/2023 / (Reapresentado)",
+   "values": [
+    "22.533",
+    "9.323"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Salários, encargos e benefícios",
+   "lado": "expense",
+   "page": 72,
+   "section": "foi impulsionado, principalmente, pelo bom desempenho das operações de A&B do estádio. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2024              31/12/2023 / (Reapresentado)",
+   "values": [
+    "289.999",
+    "173.839"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Amortização de atletas",
+   "lado": "expense",
+   "page": 72,
+   "section": "foi impulsionado, principalmente, pelo bom desempenho das operações de A&B do estádio. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2024              31/12/2023 / (Reapresentado)",
+   "values": [
+    "129.518",
+    "91.339"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Baixas de intangíveis -",
+   "lado": "expense",
+   "page": 72,
+   "section": "foi impulsionado, principalmente, pelo bom desempenho das operações de A&B do estádio. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2024              31/12/2023 / (Reapresentado)",
+   "values": [
+    "1.828"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Custo de campeonato",
+   "lado": "expense",
+   "page": 72,
+   "section": "foi impulsionado, principalmente, pelo bom desempenho das operações de A&B do estádio. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2024              31/12/2023 / (Reapresentado)",
+   "values": [
+    "23.907",
+    "14.177"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Custo de transação de atletas",
+   "lado": "expense",
+   "page": 72,
+   "section": "foi impulsionado, principalmente, pelo bom desempenho das operações de A&B do estádio. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2024              31/12/2023 / (Reapresentado)",
+   "values": [
+    "12.146",
+    "4.935"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Custo de logística",
+   "lado": "expense",
+   "page": 72,
+   "section": "foi impulsionado, principalmente, pelo bom desempenho das operações de A&B do estádio. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2024              31/12/2023 / (Reapresentado)",
+   "values": [
+    "35.683",
+    "11.482"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 72,
+   "section": "foi impulsionado, principalmente, pelo bom desempenho das operações de A&B do estádio. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2024              31/12/2023 / (Reapresentado)",
+   "values": [
+    "1.742",
+    "1.502"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Direito de imagem",
+   "lado": "expense",
+   "page": 72,
+   "section": "foi impulsionado, principalmente, pelo bom desempenho das operações de A&B do estádio. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2024              31/12/2023 / (Reapresentado)",
+   "values": [
+    "82.501",
+    "57.835"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Outros custos",
+   "lado": "expense",
+   "page": 72,
+   "section": "foi impulsionado, principalmente, pelo bom desempenho das operações de A&B do estádio. / 21. Custo de serviços prestados / Controladora / Consolidado / 31/12/2024              31/12/2023 / (Reapresentado)",
+   "values": [
+    "10.555",
+    "8.574"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Salários, encargos e benefícios",
+   "lado": "expense",
+   "page": 73,
+   "section": "reais) / 22. Despesas gerais e administrativas / Controladora                            Consolidado / 31/12/2024             31/12/2023         31/12/2024          31/12/2023 / (Reapresentado)                        (Reapresentado)",
+   "values": [
+    "67.512",
+    "28.777",
+    "67.512",
+    "28.777"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Materiais",
+   "lado": "expense",
+   "page": 73,
+   "section": "reais) / 22. Despesas gerais e administrativas / Controladora                            Consolidado / 31/12/2024             31/12/2023         31/12/2024          31/12/2023 / (Reapresentado)                        (Reapresentado)",
+   "values": [
+    "5.000",
+    "4.101",
+    "5.000",
+    "4.101"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Receita com a participação na LFU 23.1 -",
+   "lado": "revenue",
+   "page": 73,
+   "section": "145.897               104.410            145.904             104.410 / 23. Outras receitas operacionais / Controladora/Consolidado / 31/12/2024              31/12/2023",
+   "values": [
+    "165.915"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Recuperação de gastos",
+   "lado": "revenue",
+   "page": 73,
+   "section": "145.897               104.410            145.904             104.410 / 23. Outras receitas operacionais / Controladora/Consolidado / 31/12/2024              31/12/2023",
+   "values": [
+    "15.676",
+    "14.359"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Valores pagos pelo BFR -",
+   "lado": "revenue",
+   "page": 73,
+   "section": "145.897               104.410            145.904             104.410 / 23. Outras receitas operacionais / Controladora/Consolidado / 31/12/2024              31/12/2023",
+   "values": [
+    "1.677"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Mecanismo de solidariedade",
+   "lado": "expense",
+   "page": 74,
+   "section": "23.2 – Recuperação de gastos / 24. Resultado com transações de direitos de atletas / Controladora / Consolidado / 31/12/2024               31/12/2023 / (Reapresentado)",
+   "values": [
+    "(2.837)",
+    "(2.769)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Baixa de atletas",
+   "lado": "expense",
+   "page": 74,
+   "section": "23.2 – Recuperação de gastos / 24. Resultado com transações de direitos de atletas / Controladora / Consolidado / 31/12/2024               31/12/2023 / (Reapresentado)",
+   "values": [
+    "(28.172)",
+    "(9.699)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "(-) Despesa na cessão de atletas",
+   "lado": "expense",
+   "page": 74,
+   "section": "23.2 – Recuperação de gastos / 24. Resultado com transações de direitos de atletas / Controladora / Consolidado / 31/12/2024               31/12/2023 / (Reapresentado)",
+   "values": [
+    "(14.823)",
+    "(24.775)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Juros e encargos sobre empréstimos",
+   "lado": null,
+   "page": 75,
+   "section": "de de reais) / reais) / 25. Receitas (Despesas) financeiras, líquidas / Controladora                        Consolidado / (Reapresentado)               (Reapresentado)",
+   "values": [
+    "(45.923)",
+    "(29.793)",
+    "(52.594)",
+    "(29.793)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Juros e multas",
+   "lado": null,
+   "page": 75,
+   "section": "de de reais) / reais) / 25. Receitas (Despesas) financeiras, líquidas / Controladora                        Consolidado / (Reapresentado)               (Reapresentado)",
+   "values": [
+    "(41.513)",
+    "(20.319)",
+    "(42.880)",
+    "(20.319)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Variação cambial",
+   "lado": null,
+   "page": 75,
+   "section": "de de reais) / reais) / 25. Receitas (Despesas) financeiras, líquidas / Controladora                        Consolidado / (Reapresentado)               (Reapresentado)",
+   "values": [
+    "(142.985)",
+    "(16.967)",
+    "(142.985)",
+    "(16.967)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Desconto concedido",
+   "lado": null,
+   "page": 75,
+   "section": "de de reais) / reais) / 25. Receitas (Despesas) financeiras, líquidas / Controladora                        Consolidado / (Reapresentado)               (Reapresentado)",
+   "values": [
+    "(7.580)",
+    "(1.450)",
+    "(7.580)",
+    "(1.450)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Atualização monetária (8) (2.267) (8)",
+   "lado": null,
+   "page": 75,
+   "section": "de de reais) / reais) / 25. Receitas (Despesas) financeiras, líquidas / Controladora                        Consolidado / (Reapresentado)               (Reapresentado)",
+   "values": [
+    "(2.267)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Taxa de antecipação",
+   "lado": null,
+   "page": 75,
+   "section": "de de reais) / reais) / 25. Receitas (Despesas) financeiras, líquidas / Controladora                        Consolidado / (Reapresentado)               (Reapresentado)",
+   "values": [
+    "(130.123)",
+    "(6.350)",
+    "(130.123)",
+    "(6.350)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Tarifa bancária",
+   "lado": null,
+   "page": 75,
+   "section": "de de reais) / reais) / 25. Receitas (Despesas) financeiras, líquidas / Controladora                        Consolidado / (Reapresentado)               (Reapresentado)",
+   "values": [
+    "(4.701)",
+    "(5.433)",
+    "(4.701)",
+    "(5.433)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Outros",
+   "lado": null,
+   "page": 75,
+   "section": "de de reais) / reais) / 25. Receitas (Despesas) financeiras, líquidas / Controladora                        Consolidado / (Reapresentado)               (Reapresentado)",
+   "values": [
+    "(10.543)",
+    "(12.559)",
+    "(10.543)",
+    "(12.559)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Receitas (despesas) financeiras, líquidas",
+   "lado": "revenue",
+   "page": 75,
+   "section": "Receitas financeiras",
+   "values": [
+    "(157.221)",
+    "(77.506)",
+    "(163.723)",
+    "(77.506)"
+   ],
+   "columns": null
+  }
+ ]
+}

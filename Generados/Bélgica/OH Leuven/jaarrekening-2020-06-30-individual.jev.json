@@ -1,0 +1,1409 @@
+{
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2020-06-30-individual.md",
+ "generatedAt": "2026-09-30T04:27:03.555Z",
+ "rubros": [
+  {
+   "label": "Omzet",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1417
+  },
+  {
+   "label": "Niet-recurrente bedrijfsopbrengsten",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1515
+  },
+  {
+   "label": "29/58",
+   "lado": null,
+   "page": 6,
+   "section": "ACTIVA / OPRICHT INGSKOSTEN 6.1 / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "other_income",
+     0.25
+    ],
+    [
+     "other_amortisation",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "Bedrijfsopbrengsten",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "lump_football_operations",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.74
+    ],
+    [
+     "other_income",
+     0.26
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1545
+  },
+  {
+   "label": "285/8",
+   "lado": null,
+   "page": 6,
+   "section": "ACTIVA / OPRICHT INGSKOSTEN 6.1 / VASTE ACTIVA / VLOTTENDE ACTIVA / TOTAAL VAN DE ACTIVA",
+   "choice": "other_expenses",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "depreciation",
+     0.11
+    ]
+   ],
+   "tokens": 1286
+  },
+  {
+   "label": "Andere bedrijfsopbrengsten",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "player_sales",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1518
+  },
+  {
+   "label": "Voorraad goederen in bewerking en gereed product en bestellingen in uitvoering: toename (afname) (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1512
+  },
+  {
+   "label": "Geproduceerde vaste activa",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_income",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "depreciation",
+     0.05
+    ]
+   ],
+   "tokens": 1542
+  },
+  {
+   "label": "Bedrijfskosten",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "lump_football_operations_expense",
+     0.2
+    ],
+    [
+     "admin_general_expense",
+     0.19
+    ]
+   ],
+   "tokens": 1519
+  },
+  {
+   "label": "Aankopen",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1336
+  },
+  {
+   "label": "Handelsgoederen, grond- en hulpstoffen",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1423
+  },
+  {
+   "label": "Voorraad: afname (toename) (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1348
+  },
+  {
+   "label": "Diensten en diverse goederen",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1435
+  },
+  {
+   "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "player_impairment",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1653
+  },
+  {
+   "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "player_amortisation",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "player_amortisation",
+     0.64
+    ],
+    [
+     "depreciation",
+     0.34
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1599
+  },
+  {
+   "label": "Als herstructureringskosten geactiveerde bedrijfskosten (-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "exceptional_items",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "other_amortisation",
+     0.11
+    ]
+   ],
+   "tokens": 1532
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1527
+  },
+  {
+   "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en terugnemingen) (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "exceptional_items",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1570
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "choice": "exceptional_items",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "exceptional_items",
+     0.81
+    ],
+    [
+     "player_impairment",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1554
+  },
+  {
+   "label": "Bedrijfswinst (Bedrijfsverlies) (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_income",
+     0.46
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1288
+  },
+  {
+   "label": "Financiële opbrengsten",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1375
+  },
+  {
+   "label": "Recurrente financiële opbrengsten",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "lump_football_operations",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.48
+    ],
+    [
+     "other_income",
+     0.46
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ]
+   ],
+   "tokens": 1505
+  },
+  {
+   "label": "Opbrengsten uit financiële vaste activa",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1529
+  },
+  {
+   "label": "Niet-recurrente financiële opbrengsten",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1530
+  },
+  {
+   "label": "Opbrengsten uit vlottende activa",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "player_sales",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1512
+  },
+  {
+   "label": "Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ],
+    [
+     "player_impairment",
+     0.04
+    ]
+   ],
+   "tokens": 1661
+  },
+  {
+   "label": "Kosten van schulden",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.32
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1537
+  },
+  {
+   "label": "Financiële kosten",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1548
+  },
+  {
+   "label": "Recurrente financiële kosten",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1510
+  },
+  {
+   "label": "Andere financiële kosten",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1495
+  },
+  {
+   "label": "Andere financiële opbrengsten",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1482
+  },
+  {
+   "label": "Winst (Verlies) van het boekjaar vóór belasting (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1552
+  },
+  {
+   "label": "Niet-recurrente financiële kosten",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "exceptional_items",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1538
+  },
+  {
+   "label": "Onttrekking aan de uitgestelde belastingen",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "admin_general_expense",
+     0.46
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1359
+  },
+  {
+   "label": "Overboeking naar de uitgestelde belastingen",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.42
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1359
+  },
+  {
+   "label": "Belastingen op het resultaat (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1387
+  },
+  {
+   "label": "Belastingen",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1350
+  },
+  {
+   "label": "Winst (Verlies) van het boekjaar (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "lump_football_operations",
+     0.04
+    ]
+   ],
+   "tokens": 1570
+  },
+  {
+   "label": "Onttrekking aan de belastingvrije reserves",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "exceptional_items",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1344
+  },
+  {
+   "label": "Overboeking naar de belastingvrije reserves",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "exceptional_items",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "exceptional_items",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1344
+  },
+  {
+   "label": "Te bestemmen winst (verlies) van het boekjaar (+)/(-)",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1572
+  },
+  {
+   "label": "NIET-RECURRENTE OPBRENGSTEN",
+   "lado": null,
+   "page": 26,
+   "section": "Nr. BE 0668.426.703 VOL 6.12 / OPBRENGSTEN EN KOSTEN VAN UITZONDERLIJKE OMVANG OF UITZONDERLIJKE MATE VAN VOORKOMEN",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+   "lado": null,
+   "page": 8,
+   "section": "Nr. BE 0668.426.703 | VOL 4 / RESULTATENREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.45
+    ],
+    [
+     "exceptional_items",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1558
+  },
+  {
+   "label": "Niet-recurrente bedrijfsopbrengsten 76A",
+   "lado": null,
+   "page": 26,
+   "section": "Nr. BE 0668.426.703 VOL 6.12 / OPBRENGSTEN EN KOSTEN VAN UITZONDERLIJKE OMVANG OF UITZONDERLIJKE MATE VAN VOORKOMEN",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1549
+  },
+  {
+   "label": "NIET-RECURRENTE KOSTEN",
+   "lado": null,
+   "page": 26,
+   "section": "Terugneming van waardeverminderingen op financiële vaste activa 761 / Terugneming van voorzieningen voor uitzonderlijke financiële risico's / en kosten 7621 / Meerwaarden bij de realisatie van financiële vaste activa 7631 / Andere niet-recurrente financiële opbrengsten 769",
+   "choice": "exceptional_items",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "exceptional_items",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.12
+    ],
+    [
+     "player_impairment",
+     0.01
+    ]
+   ],
+   "tokens": 1593
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten 66A",
+   "lado": null,
+   "page": 26,
+   "section": "Terugneming van waardeverminderingen op financiële vaste activa 761 / Terugneming van voorzieningen voor uitzonderlijke financiële risico's / en kosten 7621 / Meerwaarden bij de realisatie van financiële vaste activa 7631 / Andere niet-recurrente financiële opbrengsten 769",
+   "choice": "exceptional_items",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "exceptional_items",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "player_impairment",
+     0.03
+    ]
+   ],
+   "tokens": 1588
+  },
+  {
+   "label": "2. Immateriële vaste activa",
+   "lado": null,
+   "page": 33,
+   "section": "Nr. BE 0668.426.703 | VOL 6.19 / SAMENVATTING VAN DE WAARDERINGSREGELS",
+   "choice": "player_amortisation",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "player_amortisation",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "depreciation",
+     0.14
+    ]
+   ],
+   "tokens": 1570
+  },
+  {
+   "label": "1. Oprichtingskosten",
+   "lado": null,
+   "page": 33,
+   "section": "Nr. BE 0668.426.703 | VOL 6.19 / SAMENVATTING VAN DE WAARDERINGSREGELS",
+   "choice": "other_amortisation",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_amortisation",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "depreciation",
+     0.11
+    ]
+   ],
+   "tokens": 1366
+  },
+  {
+   "label": "4. Installaties, machines en uitrusting (*)",
+   "lado": null,
+   "page": 33,
+   "section": "Nr. BE 0668.426.703 | VOL 6.19 / SAMENVATTING VAN DE WAARDERINGSREGELS",
+   "choice": "depreciation",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "depreciation",
+     0.62
+    ],
+    [
+     "other_amortisation",
+     0.2
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1293
+  },
+  {
+   "label": "3. Industriële, administratieve of commerciële gebouwen (*)",
+   "lado": null,
+   "page": 33,
+   "section": "Nr. BE 0668.426.703 | VOL 6.19 / SAMENVATTING VAN DE WAARDERINGSREGELS",
+   "choice": "depreciation",
+   "confidence": 0.26,
+   "top3": [
+    [
+     "depreciation",
+     0.3
+    ],
+    [
+     "other_income",
+     0.21000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ]
+   ],
+   "tokens": 1356
+  },
+  {
+   "label": "5. Rollend materieel (*)",
+   "lado": null,
+   "page": 33,
+   "section": "Nr. BE 0668.426.703 | VOL 6.19 / SAMENVATTING VAN DE WAARDERINGSREGELS",
+   "choice": "depreciation",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "depreciation",
+     0.53
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ]
+   ],
+   "tokens": 1289
+  },
+  {
+   "label": "Uitzonderlijke opbrengsten",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "choice": "other_income",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "exceptional_items",
+     0.1
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1396
+  },
+  {
+   "label": "6. Kantoormaterieel en meubilair (*)",
+   "lado": null,
+   "page": 33,
+   "section": "Nr. BE 0668.426.703 | VOL 6.19 / SAMENVATTING VAN DE WAARDERINGSREGELS",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.72
+    ],
+    [
+     "depreciation",
+     0.14
+    ],
+    [
+     "other_amortisation",
+     0.1
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Handelsgoederen",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1436
+  },
+  {
+   "label": "Personeelskosten",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "choice": "wages_squad",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "wages_squad",
+     0.47
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1528
+  },
+  {
+   "label": "Afschrijvingen & waardeverminderingen",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "choice": "depreciation",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "depreciation",
+     0.5
+    ],
+    [
+     "player_amortisation",
+     0.29
+    ],
+    [
+     "other_expenses",
+     0.17
+    ]
+   ],
+   "tokens": 1597
+  },
+  {
+   "label": "Verlies uit gewone bedrijfsoefening",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "lump_football_operations_expense",
+     0.4
+    ],
+    [
+     "exceptional_items",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1355
+  },
+  {
+   "label": "Financieel resultaat",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "choice": "other_income",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1361
+  },
+  {
+   "label": "Verlies van het boekjaar voor belasting",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "choice": "other_expenses",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "admin_general_expense",
+     0.35
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1564
+  },
+  {
+   "label": "Belasting op het resultaat",
+   "lado": null,
+   "page": 35,
+   "section": "383.853,77 / 13.164.195,09 / Resultatenrekening / 30/06/2020 / (in Euro)",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1362
+  }
+ ]
+}

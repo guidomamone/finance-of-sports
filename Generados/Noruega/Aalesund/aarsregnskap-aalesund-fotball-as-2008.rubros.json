@@ -1,0 +1,196 @@
+{
+ "md": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2008.md",
+ "pdf": "Clubes/Noruega/Aalesund/aarsregnskap-aalesund-fotball-as-2008.pdf",
+ "club": "aalesund",
+ "year": 2008,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:05:51.895Z",
+ "tieOuts": {
+  "cierran": 30,
+  "noCierran": 13
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "13 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "7 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 17,
+  "notasUsadas": []
+ },
+ "ladoConocido": 15,
+ "rubros": [
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "values": [
+    66.379496
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "values": [
+    0.5512
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "values": [
+    2.52324
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "values": [
+    6.001131
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Avskrivning",
+   "lado": "expense",
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "values": [
+    4.562457
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Nedskrivning",
+   "lado": "expense",
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "values": [
+    0.623381
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "values": [
+    55.787684
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Inntekt på inv. i datterselskap",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "values": [
+    0.217905
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "values": [
+    1.096454
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Verdiendr. finansielle instrumenter, virkelig verdi",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "values": [
+    0.6058
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "values": [
+    0.189437
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Udekket tap",
+   "lado": null,
+   "page": 2,
+   "section": "# Resultatregnskap",
+   "values": [
+    -2.048075
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Lønninger",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Note 11 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "values": [
+    4695.838
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Arbeidsgiveravgift",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Note 11 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "values": [
+    711.319
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Pensjonskostnader",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Note 11 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "values": [
+    79.724
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Andre ytelser",
+   "lado": "expense",
+   "page": 8,
+   "section": "# Note 11 - Lønnskostnader, antall ansatte, lån til ansatte og godtgjørelse til revisor",
+   "values": [
+    514.25
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Lån til foretak i samme konsern",
+   "lado": "revenue",
+   "page": 6,
+   "section": "### Note 2 - Driftsinntekter / ### Note 3 - Talentutviklingsfond / ### Note 4 - Konsernbidrag / ### Note 5 - Mellomværende med selskap i samme konsern og tilknyttet selskap / #### *Fordringer*",
+   "values": [
+    612.708
+   ],
+   "origen": "estado 5"
+  }
+ ]
+}

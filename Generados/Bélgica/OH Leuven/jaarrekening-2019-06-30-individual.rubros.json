@@ -1,0 +1,132 @@
+{
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2019-06-30-individual.pdf",
+ "club": "oh-leuven",
+ "year": 2019,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:55:23.242Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 11,
+  "notasUsadas": []
+ },
+ "ladoConocido": 8,
+ "rubros": [
+  {
+   "label": "Omzet",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "values": [
+    2800.76182
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Handelsgoederen",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "values": [
+    -158.75048
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Diensten en diverse goederen",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "values": [
+    -3422.01909
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Personeelskosten",
+   "lado": "expense",
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "values": [
+    -5341.59663
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Afschrijvingen & waardeverminderingen",
+   "lado": null,
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "values": [
+    -1403.14647
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Andere bedrijfskosten",
+   "lado": "expense",
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "values": [
+    -115.14574
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Nier-recurrente bedrijfskosten",
+   "lado": "expense",
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "values": [
+    -38.76439
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Uitzonderlijke opbrengsten",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Resultatenrekening / 30/06/2019 / {in Euro)",
+   "values": [
+    1.17883
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 109.020 / Uitgestelde belastingen 168",
+   "values": [
+    10733.604
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Schulden op meer dan één jaar 69 |",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 109.020 / Uitgestelde belastingen 168",
+   "values": [
+    8045.372
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 6,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 109.020 / Uitgestelde belastingen 168",
+   "values": [
+    8045.372
+   ],
+   "origen": "estado 4"
+  }
+ ]
+}

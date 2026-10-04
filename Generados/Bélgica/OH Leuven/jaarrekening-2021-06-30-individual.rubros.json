@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2021-06-30-individual.pdf",
+ "club": "oh-leuven",
+ "year": 2021,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:55:24.661Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 6,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 / Uitgestelde belastingen 168",
+   "values": [
+    13651.396
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Schulden op meer dan één jaar 69 |",
+   "lado": "expense",
+   "page": 6,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 / Uitgestelde belastingen 168",
+   "values": [
+    6200
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 6,
+   "section": "Belastingen 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 109.020 / Uitgestelde belastingen 168",
+   "values": [
+    5400
+   ],
+   "origen": "estado 4"
+  }
+ ]
+}

@@ -1,0 +1,198 @@
+{
+ "md": "Clubes/Brasil/Vasco da Gama/dre-balanco-patrimonial-2024.md",
+ "generatedAt": "2026-09-30T22:48:34.065Z",
+ "rubrosHuella": "a7f68db8e91d5c451f582b5fc770b39b514e6e39",
+ "rubros": [
+  {
+   "label": "Terrenos 101.392 - -",
+   "lado": "expense",
+   "page": 41,
+   "section": "9. Imobilizado / 2022     Adições          Baixas         2023 / Custo",
+   "choice": "depreciation",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Imóveis e Benfeitoria 80.687 - -",
+   "lado": "expense",
+   "page": 41,
+   "section": "9. Imobilizado / 2022     Adições          Baixas         2023 / Custo",
+   "choice": "other_expenses",
+   "confidence": 0.33,
+   "desdeCache": true
+  },
+  {
+   "label": "Veículos e Embarcações 2.330 - -",
+   "lado": "expense",
+   "page": 41,
+   "section": "9. Imobilizado / 2022     Adições          Baixas         2023 / Custo",
+   "choice": "depreciation",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros Imobilizados 2.245 34 -",
+   "lado": "expense",
+   "page": 41,
+   "section": "9. Imobilizado / 2022     Adições          Baixas         2023 / Custo",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Outros custos e despesas (8.956) -",
+   "lado": "expense",
+   "page": 32,
+   "section": "(+/-) Custo/Despesas operacionais - Clube / (159.161)                         (170.096) / social e esportes amadores",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Transporte e outros gastos com competição (1.015) -",
+   "lado": "expense",
+   "page": 32,
+   "section": "(+/-) Custo/Despesas operacionais - Clube / (159.161)                         (170.096) / social e esportes amadores",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciação/Amortização (1.766) -",
+   "lado": "expense",
+   "page": 32,
+   "section": "(+/-) Custo/Despesas operacionais - Clube / (159.161)                         (170.096) / social e esportes amadores",
+   "choice": "depreciation",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Abertura das Despesas",
+   "lado": "expense",
+   "page": 49,
+   "section": "21. Custo/Despesas operacionais - Clube social e esportes amadores / Nota         31/12/2024           31/12/2023",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Pessoal",
+   "lado": "expense",
+   "page": 49,
+   "section": "21. Custo/Despesas operacionais - Clube social e esportes amadores / Nota         31/12/2024           31/12/2023",
+   "choice": "admin_general_expense",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Jogos e Competições",
+   "lado": "expense",
+   "page": 49,
+   "section": "21. Custo/Despesas operacionais - Clube social e esportes amadores / Nota         31/12/2024           31/12/2023",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas Gerais",
+   "lado": "expense",
+   "page": 49,
+   "section": "21. Custo/Despesas operacionais - Clube social e esportes amadores / Nota         31/12/2024           31/12/2023",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Partes relacionadas",
+   "lado": null,
+   "page": 43,
+   "section": "174.280               174.408 / Efeito no Resultado de 2024 (DRE) / Movimentações / Saldo em 2023    Despesa em 2024                        Saldo em 2024 / 2024",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.9400000000000001
+    ],
+    [
+     "exceptional_items",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1427
+  },
+  {
+   "label": "Tributária 3.153 (811)",
+   "lado": null,
+   "page": 43,
+   "section": "174.280               174.408 / Efeito no Resultado de 2024 (DRE) / Movimentações / Saldo em 2023    Despesa em 2024                        Saldo em 2024 / 2024",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6900000000000001
+    ],
+    [
+     "exceptional_items",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1561
+  },
+  {
+   "label": "Trabalhista",
+   "lado": null,
+   "page": 43,
+   "section": "174.280               174.408 / Efeito no Resultado de 2024 (DRE) / Movimentações / Saldo em 2023    Despesa em 2024                        Saldo em 2024 / 2024",
+   "choice": "wages_squad",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "wages_squad",
+     0.88
+    ],
+    [
+     "exceptional_items",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1453
+  },
+  {
+   "label": "Cível",
+   "lado": null,
+   "page": 43,
+   "section": "174.280               174.408 / Efeito no Resultado de 2024 (DRE) / Movimentações / Saldo em 2023    Despesa em 2024                        Saldo em 2024 / 2024",
+   "choice": "exceptional_items",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "exceptional_items",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1404
+  }
+ ]
+}

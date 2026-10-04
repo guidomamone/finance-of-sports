@@ -1,0 +1,98 @@
+{
+  "club": "epicentr",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Ucrania/Epicentr/epicentr-auditor-2023.md",
+  "generatedAt": "2026-09-30T22:08:19.563Z",
+  "numberFormat": "espacio como separador de miles (escandinavo)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 1
+  },
+  "scannedWarning": true,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 5,
+      "section": "#### Інші елементи / #### ОСНОВНІ ВІДОМОСТІ ПРО АУДИТОРСЬКУ ФІРМУ ТА АУДИТОРА",
+      "columns": [
+        "Повне найменування",
+        "Товариство з обмеженою відповідальністю 'Тер Аудит'"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Код ЄДРПОУ",
+          "values": [
+            "21141644"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Місцезнаходження",
+          "values": [
+            "46001, Україна, м. Тернопіль, вул. Ст. Ринок, буд. 3/61"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Реєстраційні дані:",
+          "values": [
+            "Зареєстроване Виконавчим комітетом Тернопільської міської ради 06.10.1994 р. за № 1 646 120 0000 000324"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Номер та дата включення до Реєстру аудиторів та суб'єктів аудиторської діяльності",
+          "values": [
+            "Номер реєстрації у Реєстрі 0378, дата включення до Реєстру 31.10.2018 р."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Керівник",
+          "values": [
+            "Лучко Михайло Романович"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інформація про аудитора",
+          "values": [
+            "Сертифікат аудитора - Серія 'А' № 001226, виданий на підставі рішення Аудиторської палати України від 28 квітня 1994 р. за № 14. Номер реєстрації у реєстрі аудиторів №102118, член Ради незалежних бухгалтерів та аудиторів України (посвідчення №9), член Федерації професійних бухгалтерів та аудиторів України."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Контактний телефон, e-mail",
+          "values": [
+            "+38 - 0352 - 43-23-23, boss@teraudit.com"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Страхування аудиторських ризиків",
+          "values": [
+            "Страховий сертифікат до договору добровільного страхування відповідальності аудитора перед третіми особами №002-704482/025ДВ від 31.03.2023 р."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/epicentr-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"epicentr\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+  ]
+}

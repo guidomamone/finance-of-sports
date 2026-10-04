@@ -1,0 +1,294 @@
+{
+  "club": "realmadrid",
+  "year": 2010,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/España/Real Madrid/informe-economico-2009-2010.md",
+  "generatedAt": "2026-09-30T22:00:49.255Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 3,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 7,
+      "section": "REAL MADRID CLUB DE FÚTBOL / Y SOCIEDAD DEPENDIENTE PRESUPUESTO / CONSOLIDADO DE LA TEMPORADA 2010/11",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ingresos de Amistosos y Competiciones Internacionales",
+          "values": [
+            "22.565",
+            "16.698"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos de Retransmisión",
+          "values": [
+            "136.159",
+            "158.090"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos de Marketing",
+          "values": [
+            "134.989",
+            "137.837"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total Ingresos de Explotación (antes enajenación inmovilizado)",
+          "values": [
+            "442.306",
+            "450.018"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Aprovisionamientos",
+          "values": [
+            "(18.025)",
+            "(15.826)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Personal Deportivo y no Deportivo",
+          "values": [
+            "(192.263)",
+            "(208.109)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de Operaciones",
+          "values": [
+            "(115.723)",
+            "(91.450)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total Gastos de Explotación antes de Amortizaciones",
+          "values": [
+            "(330.752)",
+            "(315.385)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado de Explotación antes Amortizaciones y Enajenación de Inmovilizado",
+          "values": [
+            "111.554",
+            "134.632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado por Enajenación de Inmovilizado",
+          "values": [
+            "33.997",
+            "6.924"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Resultado por Enajenación Inmovilizado",
+          "values": [
+            "34.082",
+            "6.924"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado de Explotación antes de Amortización (EBITDA)",
+          "values": [
+            "145.636",
+            "141.556"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización Ordinaria",
+          "values": [
+            "(101.690)",
+            "(108.708)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado de Explotación",
+          "values": [
+            "43.946",
+            "32.848"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos Financieros",
+          "values": [
+            "7.056",
+            "1.452"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Financieros",
+          "values": [
+            "(20.013)",
+            "(15.218)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Financiero",
+          "values": [
+            "(12.957)",
+            "(13.766)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Ordinario",
+          "values": [
+            "30.989",
+            "19.082"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado antes de Impuestos",
+          "values": [
+            "30.989",
+            "19.082"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL INGRESOS (Explotación+Financieros+Enajenación Inmovilizado)",
+          "values": [
+            "483.359",
+            "458.393"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL GASTOS (Explotación+Financieros+Amortizaciones+Deterioro/Baja inmovilizado)",
+          "values": [
+            "(452.370)",
+            "(439.311)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESULTADO ANTES DE IMPUESTOS",
+          "values": [
+            "30.989",
+            "19.082"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 7,
+      "section": "REAL MADRID CLUB DE FÚTBOL / Y SOCIEDAD DEPENDIENTE PRESUPUESTO / CONSOLIDADO DE LA TEMPORADA 2010/11",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total Ingresos de Explotación (antes enajenación inmovilizado)",
+      "target": "442.306",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-148593"
+    },
+    {
+      "page": 7,
+      "section": "REAL MADRID CLUB DE FÚTBOL / Y SOCIEDAD DEPENDIENTE PRESUPUESTO / CONSOLIDADO DE LA TEMPORADA 2010/11",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total Ingresos de Explotación (antes enajenación inmovilizado)",
+      "target": "450.018",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-137393"
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "Total Gastos de Explotación antes de Amortizaciones",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL INGRESOS (Explotación+Financieros+Enajenación Inmovilizado)",
+      "target": "483.359",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "-325321"
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL INGRESOS (Explotación+Financieros+Enajenación Inmovilizado)",
+      "target": "458.393",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "-375141"
+    },
+    {
+      "page": 7,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL GASTOS (Explotación+Financieros+Amortizaciones+Deterioro/Baja inmovilizado)",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "es",
+    "query": "Real Madrid",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

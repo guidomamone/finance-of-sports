@@ -1,0 +1,975 @@
+{
+ "md": "Clubes/Brasil/Corinthians/demonstracoes-financeiras-2020-2021.md",
+ "generatedAt": "2026-09-30T22:48:25.104Z",
+ "rubrosHuella": "730c68309f0438c37e97f2566db2c9ddfbdbd8ca",
+ "rubros": [
+  {
+   "label": "Rateio de despesas administrativas",
+   "lado": "expense",
+   "page": 13,
+   "section": "Insumos adquiridos de terceiros no segmento futebol",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciação e amortização",
+   "lado": null,
+   "page": 13,
+   "section": "Outras receitas e Despesas 1.568 836",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços contratados",
+   "lado": null,
+   "page": 13,
+   "section": "Insumos adquiridos de terceiros no segmento clube social e esportes amadores",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "youth_other_sports_expense",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1477
+  },
+  {
+   "label": "Ajuste de Avaliação Patrimonial",
+   "lado": null,
+   "page": 11,
+   "section": "Ajuste de Reserva de / Patrimônio Reserva de Avaliação capital Déficits Total do / Social reavaliação Patrimonial doações acumulados Patrimônio Líquido / Em 31 de dezembro de 2019 1 77.805 402.696 31 (487.016) (6.483) / Realização da reserva de reavaliação - - - - - -",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "exceptional_items",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1586
+  },
+  {
+   "label": "Ajuste de Avaliação Patrimonial -",
+   "lado": null,
+   "page": 11,
+   "section": "Ajuste de Reserva de / Patrimônio Reserva de Avaliação capital Déficits Total do / Social reavaliação Patrimonial doações acumulados Patrimônio Líquido / Em 31 de dezembro de 2019 1 77.805 402.696 31 (487.016) (6.483) / Realização da reserva de reavaliação - - - - - -",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "exceptional_items",
+     0.14
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1588
+  },
+  {
+   "label": "Despesas gerais e administrativas",
+   "lado": "expense",
+   "page": 13,
+   "section": "Insumos adquiridos de terceiros no segmento clube social e esportes amadores",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.88
+    ],
+    [
+     "youth_other_sports_expense",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Em 31 de dezembro de 2021 1 77.805 399.336",
+   "lado": null,
+   "page": 11,
+   "section": "Ajuste de Reserva de / Patrimônio Reserva de Avaliação capital Déficits Total do / Social reavaliação Patrimonial doações acumulados Patrimônio Líquido / Em 31 de dezembro de 2019 1 77.805 402.696 31 (487.016) (6.483) / Realização da reserva de reavaliação - - - - - -",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1424
+  },
+  {
+   "label": "Em 31 de dezembro de 2020 1 77.805 401.016",
+   "lado": null,
+   "page": 11,
+   "section": "Ajuste de Reserva de / Patrimônio Reserva de Avaliação capital Déficits Total do / Social reavaliação Patrimonial doações acumulados Patrimônio Líquido / Em 31 de dezembro de 2019 1 77.805 402.696 31 (487.016) (6.483) / Realização da reserva de reavaliação - - - - - -",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "broadcasting",
+     0.03
+    ]
+   ],
+   "tokens": 1514
+  },
+  {
+   "label": "Valor adicionado bruto no segmento de futebol",
+   "lado": null,
+   "page": 13,
+   "section": "Insumos adquiridos de terceiros no segmento futebol",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.39
+    ],
+    [
+     "lump_football_operations",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1508
+  },
+  {
+   "label": "Participação em campeonatos",
+   "lado": "revenue",
+   "page": 13,
+   "section": "para os exercícios findos em 31 de dezembro de 2021 e 2020 / (Valores expressos em milhares de reais) / Segmento futebol 31/12/2021 31/12/2020 / Geração do valor adicionado no segmento futebol / Receitas no segmento futebol",
+   "choice": "competition_bonus",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Exploração e uso da marca",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Segmento clube social e esportes amadores / Geração do valor adicionado no segmento clube social e esportes amadores / Receitas no segmento clube social e esportes amadores",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Repasses de direitos federativos",
+   "lado": "revenue",
+   "page": 13,
+   "section": "para os exercícios findos em 31 de dezembro de 2021 e 2020 / (Valores expressos em milhares de reais) / Segmento futebol 31/12/2021 31/12/2020 / Geração do valor adicionado no segmento futebol / Receitas no segmento futebol",
+   "choice": "player_sales",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrecadação de jogos",
+   "lado": "revenue",
+   "page": 13,
+   "section": "para os exercícios findos em 31 de dezembro de 2021 e 2020 / (Valores expressos em milhares de reais) / Segmento futebol 31/12/2021 31/12/2020 / Geração do valor adicionado no segmento futebol / Receitas no segmento futebol",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiações, fiel torcedor, loterias e outras",
+   "lado": "revenue",
+   "page": 13,
+   "section": "para os exercícios findos em 31 de dezembro de 2021 e 2020 / (Valores expressos em milhares de reais) / Segmento futebol 31/12/2021 31/12/2020 / Geração do valor adicionado no segmento futebol / Receitas no segmento futebol",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Quadro associativo",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Segmento clube social e esportes amadores / Geração do valor adicionado no segmento clube social e esportes amadores / Receitas no segmento clube social e esportes amadores",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras receitas",
+   "lado": "revenue",
+   "page": 13,
+   "section": "Segmento clube social e esportes amadores / Geração do valor adicionado no segmento clube social e esportes amadores / Receitas no segmento clube social e esportes amadores",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Valor adicionado bruto no segmento clube social e esportes amadores",
+   "lado": null,
+   "page": 13,
+   "section": "Outras receitas e Despesas 1.568 836",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas financeiras líquidas",
+   "lado": "expense",
+   "page": 10,
+   "section": "social e esportes amadores / Déficit operacional do clube social e esportes amadores / antes das despesas financeiras e resultado de outras (2.826) (14.598) / receitas (despesas) operacionais",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras receitas (despesas) operacionais (305)",
+   "lado": null,
+   "page": 10,
+   "section": "social e esportes amadores / Déficit operacional do clube social e esportes amadores / antes das despesas financeiras e resultado de outras (2.826) (14.598) / receitas (despesas) operacionais",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Custo com vendas e aquisições de atletas (870)",
+   "lado": null,
+   "page": 13,
+   "section": "Insumos adquiridos de terceiros no segmento futebol",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1525
+  },
+  {
+   "label": "Fornecedores",
+   "lado": null,
+   "page": 12,
+   "section": "Aumento (diminuição) no passivo circulante e não circulante",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_expenses",
+     0.55
+    ],
+    [
+     "admin_general_expense",
+     0.24000000000000002
+    ],
+    [
+     "other_income",
+     0.15
+    ]
+   ],
+   "tokens": 1275
+  },
+  {
+   "label": "Impostos e tributos a recolher",
+   "lado": "expense",
+   "page": 12,
+   "section": "Aumento (diminuição) no passivo circulante e não circulante",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1005
+  },
+  {
+   "label": "Depreciação do ativo imobilizado",
+   "lado": null,
+   "page": 12,
+   "section": "31/12/2021 31/12/2020 / Fluxos de caixa das atividades operacionais / Total do superávit (déficit) líquido do exercício 5.690 (123.314) / Ajustes para reconciliar o caixa gerado pelas atividades / operacionais",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1583
+  },
+  {
+   "label": "Obrigações e encargos sociais",
+   "lado": "expense",
+   "page": 12,
+   "section": "Aumento (diminuição) no passivo circulante e não circulante",
+   "choice": "wages_squad",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "wages_squad",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Tributos parcelados",
+   "lado": null,
+   "page": 12,
+   "section": "Aumento (diminuição) no passivo circulante e não circulante",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1486
+  },
+  {
+   "label": "Outras contas a pagar",
+   "lado": null,
+   "page": 12,
+   "section": "Aumento (diminuição) no passivo circulante e não circulante",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "other_income",
+     0.04
+    ]
+   ],
+   "tokens": 1496
+  },
+  {
+   "label": "Amortização do ativo intangível",
+   "lado": null,
+   "page": 12,
+   "section": "31/12/2021 31/12/2020 / Fluxos de caixa das atividades operacionais / Total do superávit (déficit) líquido do exercício 5.690 (123.314) / Ajustes para reconciliar o caixa gerado pelas atividades / operacionais",
+   "choice": "depreciation",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "depreciation",
+     0.47000000000000003
+    ],
+    [
+     "other_amortisation",
+     0.38
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 1592
+  },
+  {
+   "label": "Exploração de imagem a pagar",
+   "lado": null,
+   "page": 12,
+   "section": "Aumento (diminuição) no passivo circulante e não circulante",
+   "choice": "wages_squad",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "wages_squad",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "broadcasting",
+     0.2
+    ]
+   ],
+   "tokens": 1477
+  },
+  {
+   "label": "Encargos sobre empréstimos",
+   "lado": "expense",
+   "page": 12,
+   "section": "31/12/2021 31/12/2020 / Fluxos de caixa das atividades operacionais / Total do superávit (déficit) líquido do exercício 5.690 (123.314) / Ajustes para reconciliar o caixa gerado pelas atividades / operacionais",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "player_amortisation",
+     0.42
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Direitos de transmissão de TV",
+   "lado": "revenue",
+   "page": 10,
+   "section": "para os exercícios findos em 31 de dezembro de 2021 e 2020 / (Valores expressos em milhares de reais) / Notas 31/12/2021 31/12/2020 / Segmento futebol / Receita bruta no segmento futebol",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínios e publicidades",
+   "lado": "revenue",
+   "page": 10,
+   "section": "para os exercícios findos em 31 de dezembro de 2021 e 2020 / (Valores expressos em milhares de reais) / Notas 31/12/2021 31/12/2020 / Segmento futebol / Receita bruta no segmento futebol",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiações, fiel torcedor e loterias e outras",
+   "lado": "revenue",
+   "page": 10,
+   "section": "para os exercícios findos em 31 de dezembro de 2021 e 2020 / (Valores expressos em milhares de reais) / Notas 31/12/2021 31/12/2020 / Segmento futebol / Receita bruta no segmento futebol",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Receitas com repasses de direitos federativos",
+   "lado": "revenue",
+   "page": 10,
+   "section": "para os exercícios findos em 31 de dezembro de 2021 e 2020 / (Valores expressos em milhares de reais) / Notas 31/12/2021 31/12/2020 / Segmento futebol / Receita bruta no segmento futebol",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "IRRF a recolher",
+   "lado": "expense",
+   "page": 43,
+   "section": "Sport Club Corinthians Paulista / 2021 e 2020 / (Em milhares de reais, exceto quando indicado de outro modo) / 13. Obrigações e Encargos Fiscais e Sociais a Recolher / Descrição das Obrigações 31/12/2021 31/12/2020",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "FGTS a recolher",
+   "lado": "expense",
+   "page": 43,
+   "section": "Sport Club Corinthians Paulista / 2021 e 2020 / (Em milhares de reais, exceto quando indicado de outro modo) / 13. Obrigações e Encargos Fiscais e Sociais a Recolher / Descrição das Obrigações 31/12/2021 31/12/2020",
+   "choice": "wages_squad",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras contas a receber",
+   "lado": null,
+   "page": 12,
+   "section": "(Aumento) diminuição no ativo circulante e não circulante",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1495
+  },
+  {
+   "label": "Contas a receber",
+   "lado": null,
+   "page": 12,
+   "section": "(Aumento) diminuição no ativo circulante e não circulante",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_income",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1464
+  },
+  {
+   "label": "INSS a recolher",
+   "lado": "expense",
+   "page": 43,
+   "section": "Sport Club Corinthians Paulista / 2021 e 2020 / (Em milhares de reais, exceto quando indicado de outro modo) / 13. Obrigações e Encargos Fiscais e Sociais a Recolher / Descrição das Obrigações 31/12/2021 31/12/2020",
+   "choice": "wages_squad",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos e uso de imagem",
+   "lado": null,
+   "page": 12,
+   "section": "(Aumento) diminuição no ativo circulante e não circulante",
+   "choice": "wages_squad",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "wages_squad",
+     0.71
+    ],
+    [
+     "broadcasting",
+     0.09999999999999999
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ]
+   ],
+   "tokens": 1476
+  },
+  {
+   "label": "No fim do exercício",
+   "lado": null,
+   "page": 12,
+   "section": "Caixa e equivalentes de caixa",
+   "choice": "other_income",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_income",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1468
+  },
+  {
+   "label": "Direitos de transmissão de TV dos campeonatos 225.145 -",
+   "lado": "revenue",
+   "page": 33,
+   "section": "esportiva auferida em cada período. / 5.2. Receitas a Realizar por Obrigações de Performance / 31/12/2021- Passivos / Circulante Não circulante | Total / Modalidades de Receitas Diferidas",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínios 145.949 -",
+   "lado": "revenue",
+   "page": 33,
+   "section": "esportiva auferida em cada período. / 5.2. Receitas a Realizar por Obrigações de Performance / 31/12/2021- Passivos / Circulante Não circulante | Total / Modalidades de Receitas Diferidas",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Projeto incentivado e outros",
+   "lado": "revenue",
+   "page": 33,
+   "section": "31/12/2020- Passivos / Circulante Não circulante | Total / Modalidades de Receitas Diferidas",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Licenciados e franqueados",
+   "lado": "revenue",
+   "page": 33,
+   "section": "31/12/2020- Passivos / Circulante Não circulante | Total / Modalidades de Receitas Diferidas",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos de transmissão de TV dos campeonatos 165.124 -",
+   "lado": "revenue",
+   "page": 33,
+   "section": "31/12/2020- Passivos / Circulante Não circulante | Total / Modalidades de Receitas Diferidas",
+   "choice": "broadcasting",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínios 78.064 -",
+   "lado": "revenue",
+   "page": 33,
+   "section": "31/12/2020- Passivos / Circulante Não circulante | Total / Modalidades de Receitas Diferidas",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Edificações 4%",
+   "lado": "expense",
+   "page": 37,
+   "section": "da depreciação. / saldo do imobilizado é composto como segue: / 31/12/2021 31/12/2020 / Taxa anual de Depreciação / Descrição da Conta depreciação Custo acumulada Líquido Líquido",
+   "choice": "depreciation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Terrenos - 421.824 -",
+   "lado": "expense",
+   "page": 37,
+   "section": "da depreciação. / saldo do imobilizado é composto como segue: / 31/12/2021 31/12/2020 / Taxa anual de Depreciação / Descrição da Conta depreciação Custo acumulada Líquido Líquido",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Máquinas e equipamentos 10%",
+   "lado": "expense",
+   "page": 37,
+   "section": "da depreciação. / saldo do imobilizado é composto como segue: / 31/12/2021 31/12/2020 / Taxa anual de Depreciação / Descrição da Conta depreciação Custo acumulada Líquido Líquido",
+   "choice": "depreciation",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipamentos de informática 10%",
+   "lado": "expense",
+   "page": 37,
+   "section": "da depreciação. / saldo do imobilizado é composto como segue: / 31/12/2021 31/12/2020 / Taxa anual de Depreciação / Descrição da Conta depreciação Custo acumulada Líquido Líquido",
+   "choice": "depreciation",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Luan Guilherme de Jeseus Vieira 50% | 01/01/2020 | 31/12/2023 | 28.952 (14.476) |",
+   "lado": "expense",
+   "page": 39,
+   "section": "Os saldos em 31/12/2021 (46 Atletas) e 31/12/2020 (61 Atletas) estão assim representados: / Direito 2021 2020 / Término Valor / Nome profissional economicos | Início de de do Amortização Saldo Saldo / % contrato contrato Custo Líquido Líquido",
+   "choice": "player_amortisation",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Ramiro Moschen Benetti 80% | 09/01/2019 | 31/12/2022 | 26.501 (15.648) |",
+   "lado": "expense",
+   "page": 39,
+   "section": "Os saldos em 31/12/2021 (46 Atletas) e 31/12/2020 (61 Atletas) estão assim representados: / Direito 2021 2020 / Término Valor / Nome profissional economicos | Início de de do Amortização Saldo Saldo / % contrato contrato Custo Líquido Líquido",
+   "choice": "player_amortisation",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Bruno Mendez Cittadini 70% | 25/02/2019 | 31/12/2023 |",
+   "lado": "expense",
+   "page": 39,
+   "section": "Os saldos em 31/12/2021 (46 Atletas) e 31/12/2020 (61 Atletas) estão assim representados: / Direito 2021 2020 / Término Valor / Nome profissional economicos | Início de de do Amortização Saldo Saldo / % contrato contrato Custo Líquido Líquido",
+   "choice": "player_amortisation",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Victor Danilo Cantillo Jimenez 70% | 10/01/2020 | 31/12/2023 | 18.812 (8.029) |",
+   "lado": "expense",
+   "page": 39,
+   "section": "Os saldos em 31/12/2021 (46 Atletas) e 31/12/2020 (61 Atletas) estão assim representados: / Direito 2021 2020 / Término Valor / Nome profissional economicos | Início de de do Amortização Saldo Saldo / % contrato contrato Custo Líquido Líquido",
+   "choice": "player_amortisation",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Em 31/12/2021, o saldo remanescente desse parcelamento montava a R$0 (R$8.659 em",
+   "lado": "revenue",
+   "page": 45,
+   "section": "(Em milhares de reais, exceto quando indicado de outro modo) / 14.2. Parcelamento Previdenciários Junto à Receita Federal do Brasil (RFB) / parcelas mensais, atualizadas monetariamente pela taxa SELIC. / Em 20/05/2019 o Clube aderiu ao parcelamento presencial simplificado, representado / liquidados em 60 parcelas mensais, atualizadas monetariamente pela taxa SELIC.",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "segregado entre passivo circulante R$2.362 e passivo não circulante",
+   "lado": "revenue",
+   "page": 45,
+   "section": "(Em milhares de reais, exceto quando indicado de outro modo) / 14.2. Parcelamento Previdenciários Junto à Receita Federal do Brasil (RFB) / parcelas mensais, atualizadas monetariamente pela taxa SELIC. / Em 20/05/2019 o Clube aderiu ao parcelamento presencial simplificado, representado / liquidados em 60 parcelas mensais, atualizadas monetariamente pela taxa SELIC.",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Foi transferido para o parcelamento PERSE o montante de R$",
+   "lado": "revenue",
+   "page": 45,
+   "section": "(Em milhares de reais, exceto quando indicado de outro modo) / 14.2. Parcelamento Previdenciários Junto à Receita Federal do Brasil (RFB) / parcelas mensais, atualizadas monetariamente pela taxa SELIC. / Em 20/05/2019 o Clube aderiu ao parcelamento presencial simplificado, representado / liquidados em 60 parcelas mensais, atualizadas monetariamente pela taxa SELIC.",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "No início do exercício",
+   "lado": null,
+   "page": 12,
+   "section": "Caixa e equivalentes de caixa",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1468
+  },
+  {
+   "label": "Férias a pagar -",
+   "lado": "expense",
+   "page": 43,
+   "section": "Sport Club Corinthians Paulista / 2021 e 2020 / (Em milhares de reais, exceto quando indicado de outro modo) / 13. Obrigações e Encargos Fiscais e Sociais a Recolher / Descrição das Obrigações 31/12/2021 31/12/2020",
+   "choice": "wages_squad",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "wages_squad",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Provisão de férias e de encargos previdenciários",
+   "lado": "expense",
+   "page": 43,
+   "section": "Sport Club Corinthians Paulista / 2021 e 2020 / (Em milhares de reais, exceto quando indicado de outro modo) / 13. Obrigações e Encargos Fiscais e Sociais a Recolher / Descrição das Obrigações 31/12/2021 31/12/2020",
+   "choice": "wages_squad",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "wages_squad",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "PIS a recolher",
+   "lado": "expense",
+   "page": 43,
+   "section": "Sport Club Corinthians Paulista / 2021 e 2020 / (Em milhares de reais, exceto quando indicado de outro modo) / 13. Obrigações e Encargos Fiscais e Sociais a Recolher / Descrição das Obrigações 31/12/2021 31/12/2020",
+   "choice": "admin_general_expense",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.85
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 880
+  },
+  {
+   "label": "Aumento (Diminuição) do Caixa e Equivalentes de Caixa",
+   "lado": null,
+   "page": 12,
+   "section": "Caixa e equivalentes de caixa",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "other_income",
+     0.09
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1442
+  },
+  {
+   "label": "Rateio de despesas",
+   "lado": "expense",
+   "page": 13,
+   "section": "Insumos adquiridos de terceiros no segmento clube social e esportes amadores",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "youth_other_sports_expense",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Salários a pagar a funcionários",
+   "lado": "expense",
+   "page": 43,
+   "section": "Sport Club Corinthians Paulista / 2021 e 2020 / (Em milhares de reais, exceto quando indicado de outro modo) / 13. Obrigações e Encargos Fiscais e Sociais a Recolher / Descrição das Obrigações 31/12/2021 31/12/2020",
+   "choice": "admin_general_expense",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.45
+    ],
+    [
+     "wages_squad",
+     0.39
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1129
+  }
+ ]
+}

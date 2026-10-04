@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Inglaterra/Everton/everton-group-accounts-2023-24.md",
+ "generado": "2026-10-02T00:14:50.313Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "£'000",
+ "caja": {
+  "lineas": [
+   1042
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2708
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance consolidado no desglosa los préstamos: están incluidos dentro de los acreedores corrientes (L1044) y no corrientes (L1048), y las notas 15/16 no se proporcionan. Por eso se toma como deuda financiera la línea 'Other Loans' de la nota 24 (L2708), con £593,772k para el grupo en 2024, consistente con una deuda neta de £567.3m más la caja de £26.4m. La caja del grupo es £26,423k (L1042/L1094)."
+}

@@ -1,0 +1,243 @@
+{
+  "club": "remo",
+  "year": 2020,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Remo/balanco-patrimonial-2020.md",
+  "generatedAt": "2026-09-30T21:53:50.799Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 26,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "# Balanço Patrimonial / DIEGO",
+      "columns": [
+        "Conta",
+        "31/12/2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "* Ativo *",
+          "values": [
+            "39.433.055,31 D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ativo Circulante",
+          "values": [
+            "4.681.549,52 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disponibilidades",
+          "values": [
+            "1.585.173,42 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa",
+          "values": [
+            "336.553,30 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos",
+          "values": [
+            "8.249,49 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "1.240.370,63 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos a Receber",
+          "values": [
+            "3.096.376,10 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos a Receber",
+          "values": [
+            "3.096.376,10 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ativo não Circulante",
+          "values": [
+            "34.751.505,79 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "34.751.505,79 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bens em Operação",
+          "values": [
+            "47.418.218,00 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Depreciações, Amortizações e Quotas de Exaustão",
+          "values": [
+            "12.666.712,21 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "* Passivo *",
+          "values": [
+            "39.433.055,31 C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Passivo Circulante",
+          "values": [
+            "17.988.757,79 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo Circulante",
+          "values": [
+            "17.988.757,79 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações de Curto Prazo",
+          "values": [
+            "1.166.391,03 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações Trabalhistas, Previdenciárias e Fiscais",
+          "values": [
+            "12.266.459,13 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e Financiamentos",
+          "values": [
+            "4.211.051,14 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Antecipação",
+          "values": [
+            "303.417,88 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Contas",
+          "values": [
+            "7.290,37 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões",
+          "values": [
+            "34.148,24 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passivo não Circulante",
+          "values": [
+            "15.204.247,15 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações de Longo Prazo",
+          "values": [
+            "15.204.247,15 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações a Longo Prazo",
+          "values": [
+            "15.204.247,15 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimônio Social",
+          "values": [
+            "6.240.050,37 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimônio Social",
+          "values": [
+            "46.400.099,95 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrimônio Social",
+          "values": [
+            "46.400.099,95 C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Acumulado",
+          "values": [
+            "40.160.049,58 D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado de Exercícios",
+          "values": [
+            "40.160.049,58 D"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/remo-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"remo\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

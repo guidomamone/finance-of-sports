@@ -1,0 +1,772 @@
+{
+ "md": "Clubes/Bélgica/Standard Liège/jaarrekening-2010-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:43.076Z",
+ "rubrosHuella": "7237805cd5774e8dfd99a26230e4f04606b0febd",
+ "rubros": [
+  {
+   "label": "Production immobilisée",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Approvisionnements et marchandises",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Achats",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.47,
+   "desdeCache": true
+  },
+  {
+   "label": "Stocks: réduction (augmentation)",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Services et biens divers",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "depreciation",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Chiffre d'affaires",
+   "lado": "revenue",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1182
+  },
+  {
+   "label": "Ventes et prestations",
+   "lado": "revenue",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "lump_football_operations",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Autres produits d'exploitation",
+   "lado": "revenue",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1075
+  },
+  {
+   "label": "En-cours de fabrication, produits finis et commandes en cours d'exécution: augmentation (réduction)",
+   "lado": "revenue",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1093
+  },
+  {
+   "label": "Rémunérations, charges sociales et pensions",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "wages_squad",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "wages_squad",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Autres charges d'exploitation",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Coût des ventes et des prestations",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "lump_football_operations_expense",
+     0.09
+    ],
+    [
+     "match_organisation_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1092
+  },
+  {
+   "label": "Provisions pour risques et charges: dotations (utilisations et reprises)",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "exceptional_items",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1115
+  },
+  {
+   "label": "Réductions de valeur sur actifs circulants autres que stocks, commandes en cours et créances commerciales: dotations (reprises)",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Produits des immobilisations financières",
+   "lado": "revenue",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1133
+  },
+  {
+   "label": "Produits des actifs circulants",
+   "lado": "revenue",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1125
+  },
+  {
+   "label": "Reprises d'amortissements et de réductions de valeur sur immobilisations incorporelles et corporelles",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "depreciation",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Reprises de réductions de valeur sur immobilisations financières",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Charges d'exploitation portées à l'actif au titre de frais de restructuration",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "exceptional_items",
+     0.19
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1227
+  },
+  {
+   "label": "Plus-values sur réalisation d'actifs immobilisés",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Produits financiers",
+   "lado": "revenue",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Charges financières",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Amortissements et réductions de valeur exceptionnels sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Réductions de valeur sur immobilisations financières",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Autres produits financiers",
+   "lado": "revenue",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1032
+  },
+  {
+   "label": "Moins-values sur réalisation d'actifs immobilisés",
+   "lado": null,
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Charges des dettes",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Autres charges financières",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Reprises de provisions pour risques et charges exceptionnels",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "exceptional_items",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1093
+  },
+  {
+   "label": "Charges exceptionnelles",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "top3": [
+    [
+     "exceptional_items",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Produits exceptionnels",
+   "lado": "revenue",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Autres produits exceptionnels",
+   "lado": "revenue",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Prélèvements sur les réserves immunisées",
+   "lado": null,
+   "page": 7,
+   "section": "N° BE 0433.255.448 | C 3",
+   "choice": "exceptional_items",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Transfert aux réserves immunisées",
+   "lado": null,
+   "page": 7,
+   "section": "N° BE 0433.255.448 | C 3",
+   "choice": "exceptional_items",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "Autres charges exceptionnelles",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "exceptional_items",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Provisions pour risques et charges exceptionnels: dotations (utilisations)",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 1,
+   "top3": [
+    [
+     "exceptional_items",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1106
+  },
+  {
+   "label": "Prélèvements sur les impôts différés",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "exceptional_items",
+     0.14
+    ]
+   ],
+   "tokens": 1034
+  },
+  {
+   "label": "Charges exceptionnelles portées à l'actif au titre de frais de restructuration",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "exceptional_items",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "exceptional_items",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1172
+  },
+  {
+   "label": "Impôts",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Régularisations d'impôts et reprises de provisions fiscales",
+   "lado": "expense",
+   "page": 7,
+   "section": "N° BE 0433.255.448 | C 3",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Transfert aux impôts différés",
+   "lado": "expense",
+   "page": 6,
+   "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1027
+  }
+ ]
+}

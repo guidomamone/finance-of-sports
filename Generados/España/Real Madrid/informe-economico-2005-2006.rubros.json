@@ -1,0 +1,498 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2005-2006.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2005-2006.pdf",
+  "club": "realmadrid",
+  "year": 2006,
+  "numberFormat": "espacio como separador de miles (escandinavo)",
+  "generatedAt": "2026-09-30T22:00:46.898Z",
+  "tieOuts": {
+    "cierran": 78,
+    "noCierran": 34
+  },
+  "warnings": [
+    "1 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "33 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "9 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 41,
+    "notasUsadas": [
+      "26",
+      "35"
+    ]
+  },
+  "ladoConocido": 30,
+  "rubros": [
+    {
+      "label": "Ingresos de Socios y Estadio",
+      "lado": "revenue",
+      "page": 4,
+      "section": "[Página derecha] / ## Cuenta de resultados",
+      "values": [
+        84.865
+      ],
+      "origen": "estado 2",
+      "glosa": "Ingresos de Socios y Estadio"
+    },
+    {
+      "label": "Ingresos de Amistosos y Competiciones Internacionales",
+      "lado": "revenue",
+      "page": 4,
+      "section": "[Página derecha] / ## Cuenta de resultados",
+      "values": [
+        18.671
+      ],
+      "origen": "estado 2",
+      "glosa": "Ingresos de Amistosos y Competiciones Internacionales"
+    },
+    {
+      "label": "Ingresos de Retransmisión",
+      "lado": "revenue",
+      "page": 4,
+      "section": "[Página derecha] / ## Cuenta de resultados",
+      "values": [
+        72.725
+      ],
+      "origen": "estado 2",
+      "glosa": "Ingresos de Retransmisión"
+    },
+    {
+      "label": "Ingresos de Marketing",
+      "lado": "revenue",
+      "page": 4,
+      "section": "[Página derecha] / ## Cuenta de resultados",
+      "values": [
+        115.955
+      ],
+      "origen": "estado 2",
+      "glosa": "Ingresos de Marketing"
+    },
+    {
+      "label": "Fútbol",
+      "lado": "expense",
+      "page": 15,
+      "section": "# 18 INGRESOS Y GASTOS / ### Gastos de Personal",
+      "values": [
+        117.662
+      ],
+      "origen": "nota 26 (ancla 2)",
+      "ancla": "Gastos de Personal Deportivo y No Deportivo",
+      "glosa": "Fútbol"
+    },
+    {
+      "label": "Gastos de Personal Deportivo y No Deportivo",
+      "lado": "expense",
+      "page": 4,
+      "section": "[Página derecha] / ## Cuenta de resultados",
+      "values": [
+        -135.945
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Gastos de Personal Deportivo y No Deportivo"
+    },
+    {
+      "label": "Baloncesto",
+      "lado": "expense",
+      "page": 15,
+      "section": "# 18 INGRESOS Y GASTOS / ### Gastos de Personal",
+      "values": [
+        11.078
+      ],
+      "origen": "nota 26 (ancla 2)",
+      "ancla": "Gastos de Personal Deportivo y No Deportivo",
+      "glosa": "Baloncesto"
+    },
+    {
+      "label": "Estructura",
+      "lado": "expense",
+      "page": 15,
+      "section": "# 18 INGRESOS Y GASTOS / ### Gastos de Personal",
+      "values": [
+        7.205
+      ],
+      "origen": "nota 26 (ancla 2)",
+      "ancla": "Gastos de Personal Deportivo y No Deportivo",
+      "glosa": "Estructura"
+    },
+    {
+      "label": "Gastos de Operación",
+      "lado": "expense",
+      "page": 4,
+      "section": "[Página derecha] / ## Cuenta de resultados",
+      "values": [
+        -98.671
+      ],
+      "origen": "estado 2",
+      "glosa": "Gastos de Operación"
+    },
+    {
+      "label": "Amortizaciones Ordinarias",
+      "lado": null,
+      "page": 4,
+      "section": "[Página derecha] / ## Cuenta de resultados",
+      "values": [
+        -24.089
+      ],
+      "origen": "estado 2",
+      "glosa": "Amortizaciones Ordinarias"
+    },
+    {
+      "label": "Impuestos",
+      "lado": "expense",
+      "page": 4,
+      "section": "[Página derecha] / ## Cuenta de resultados",
+      "values": [
+        -0.86
+      ],
+      "origen": "estado 2",
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Ingresos de Socios y Estadio",
+      "lado": "revenue",
+      "page": 16,
+      "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+      "values": [
+        0.074279
+      ],
+      "origen": "estado 30",
+      "glosa": "Ingresos de Socios y Estadio"
+    },
+    {
+      "label": "Ing. de Amistosos y Competiciones Internac.",
+      "lado": "revenue",
+      "page": 16,
+      "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+      "values": [
+        0.018638
+      ],
+      "origen": "estado 30",
+      "glosa": "Ing. de Amistosos y Competiciones Internac."
+    },
+    {
+      "label": "Ingresos de Retransmisión",
+      "lado": "revenue",
+      "page": 16,
+      "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+      "values": [
+        0.071323
+      ],
+      "origen": "estado 30",
+      "glosa": "Ingresos de Retransmisión"
+    },
+    {
+      "label": "Gastos de aprovisionamientos",
+      "lado": "expense",
+      "page": 16,
+      "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+      "values": [
+        -0.001789
+      ],
+      "origen": "estado 30",
+      "glosa": "Gastos de aprovisionamientos"
+    },
+    {
+      "label": "Gastos de Personal Deportivo y no Deportivo",
+      "lado": "expense",
+      "page": 16,
+      "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+      "values": [
+        -0.117662
+      ],
+      "origen": "estado 30",
+      "glosa": "Gastos de Personal Deportivo y no Deportivo"
+    },
+    {
+      "label": "Gastos de Operaciones",
+      "lado": "expense",
+      "page": 16,
+      "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+      "values": [
+        -0.02861
+      ],
+      "origen": "estado 30",
+      "glosa": "Gastos de Operaciones"
+    },
+    {
+      "label": "Amortización Ordinaria",
+      "lado": "expense",
+      "page": 16,
+      "section": "[COMPOSICIÓN] JUNTA DIRECTIVA / ## 22 CUENTA DE PÉRDIDAS Y GANANCIAS ANALÍTICA POR SECCIONES DEPORTIVAS",
+      "values": [
+        -0.015541
+      ],
+      "origen": "estado 30",
+      "glosa": "Amortización Ordinaria"
+    },
+    {
+      "label": "Inmovilizado",
+      "lado": null,
+      "page": 15,
+      "section": "### c) Moneda extranjera",
+      "values": [
+        31.164
+      ],
+      "origen": "estado 29",
+      "glosa": "Inmovilizado"
+    },
+    {
+      "label": "Gastos de explotación",
+      "lado": "expense",
+      "page": 15,
+      "section": "### c) Moneda extranjera",
+      "values": [
+        4.231
+      ],
+      "origen": "estado 29",
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "Ingresos de explotación",
+      "lado": "revenue",
+      "page": 15,
+      "section": "### c) Moneda extranjera",
+      "values": [
+        16.598
+      ],
+      "origen": "estado 29",
+      "glosa": "Ingresos de explotación"
+    },
+    {
+      "label": "Ingresos extraordinarios",
+      "lado": "revenue",
+      "page": 15,
+      "section": "### c) Moneda extranjera",
+      "values": [
+        0.121
+      ],
+      "origen": "estado 29",
+      "glosa": "Ingresos extraordinarios"
+    },
+    {
+      "label": "Cuentas a cobrar",
+      "lado": null,
+      "page": 15,
+      "section": "### c) Moneda extranjera",
+      "values": [
+        0.294
+      ],
+      "origen": "estado 29",
+      "glosa": "Cuentas a cobrar"
+    },
+    {
+      "label": "Cuentas a pagar",
+      "lado": null,
+      "page": 15,
+      "section": "### c) Moneda extranjera",
+      "values": [
+        0.188
+      ],
+      "origen": "estado 29",
+      "glosa": "Cuentas a pagar"
+    },
+    {
+      "label": "do social",
+      "lado": null,
+      "page": 12,
+      "section": "### FONDOS PROPIOS E INTERESES DE SOCIOS EXTERNOS",
+      "values": [
+        71.699
+      ],
+      "origen": "estado 18",
+      "glosa": "do social"
+    },
+    {
+      "label": "erva actualización R.D. 7/1996",
+      "lado": null,
+      "page": 12,
+      "section": "### FONDOS PROPIOS E INTERESES DE SOCIOS EXTERNOS",
+      "values": [
+        8.548
+      ],
+      "origen": "estado 18",
+      "glosa": "erva actualización R.D. 7/1996"
+    },
+    {
+      "label": "erva soc. consolidadas por integración global o del ejercicio atribuido a la Soc. Dominante",
+      "lado": null,
+      "page": 12,
+      "section": "### FONDOS PROPIOS E INTERESES DE SOCIOS EXTERNOS",
+      "values": [
+        6.01
+      ],
+      "origen": "estado 18",
+      "glosa": "erva soc. consolidadas por integración global o del ejercicio atribuido a la Soc. Dominante"
+    },
+    {
+      "label": "CIOS EXTERNOS",
+      "lado": null,
+      "page": 12,
+      "section": "### FONDOS PROPIOS E INTERESES DE SOCIOS EXTERNOS",
+      "values": [
+        0.024
+      ],
+      "origen": "estado 18",
+      "glosa": "CIOS EXTERNOS"
+    },
+    {
+      "label": "Relacionados con inmovilizado",
+      "lado": null,
+      "page": 12,
+      "section": "### 10 INGRESOS A DISTRIBUIR EN VARIOS EJERCICIOS",
+      "values": [
+        15.434
+      ],
+      "origen": "estado 19",
+      "glosa": "Relacionados con inmovilizado"
+    },
+    {
+      "label": "Relacionados con ing. marketing",
+      "lado": null,
+      "page": 12,
+      "section": "### 10 INGRESOS A DISTRIBUIR EN VARIOS EJERCICIOS",
+      "values": [
+        11.907
+      ],
+      "origen": "estado 19",
+      "glosa": "Relacionados con ing. marketing"
+    },
+    {
+      "label": "[Be]neficio antes de impuestos",
+      "lado": "expense",
+      "page": 21,
+      "section": "",
+      "values": [
+        0.316
+      ],
+      "origen": "nota 35 (ancla 28)",
+      "ancla": "Real Madrid Club de Fútbol",
+      "glosa": "[Be]neficio antes de impuestos"
+    },
+    {
+      "label": "Real Madrid Club de Fútbol",
+      "lado": null,
+      "page": 15,
+      "section": "### Resultado por Sociedades",
+      "values": [
+        19.455
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Real Madrid Club de Fútbol"
+    },
+    {
+      "label": "Impuesto de sociedades",
+      "lado": "expense",
+      "page": 21,
+      "section": "",
+      "values": [
+        19.139
+      ],
+      "origen": "nota 35 (ancla 28)",
+      "ancla": "Real Madrid Club de Fútbol",
+      "glosa": "Impuesto de sociedades"
+    },
+    {
+      "label": "Real Madrid Gestión de Derechos, S.L.",
+      "lado": null,
+      "page": 15,
+      "section": "### Resultado por Sociedades",
+      "values": [
+        0.086
+      ],
+      "origen": "estado 28",
+      "glosa": "Real Madrid Gestión de Derechos, S.L."
+    },
+    {
+      "label": "[Ing]resos de Explotación*",
+      "lado": "revenue",
+      "page": 6,
+      "section": "■ Patrimonio neto / ■ Fondos propios ajustados por efecto de amortización anticipada / ■ Ingresos ordinarios / ■ Endeudamiento neto",
+      "values": [
+        129.063
+      ],
+      "origen": "estado 7",
+      "glosa": "[Ing]resos de Explotación*"
+    },
+    {
+      "label": "[E]ndeudamiento Neto",
+      "lado": "revenue",
+      "page": 6,
+      "section": "■ Patrimonio neto / ■ Fondos propios ajustados por efecto de amortización anticipada / ■ Ingresos ordinarios / ■ Endeudamiento neto",
+      "values": [
+        -245.123
+      ],
+      "origen": "estado 7",
+      "glosa": "[E]ndeudamiento Neto"
+    },
+    {
+      "label": "[RA]TIO ENDEUDAMIENTO FACTURACIÓN",
+      "lado": "revenue",
+      "page": 6,
+      "section": "■ Patrimonio neto / ■ Fondos propios ajustados por efecto de amortización anticipada / ■ Ingresos ordinarios / ■ Endeudamiento neto",
+      "values": [
+        -0.19
+      ],
+      "origen": "estado 7",
+      "glosa": "[RA]TIO ENDEUDAMIENTO FACTURACIÓN"
+    },
+    {
+      "label": "[Fo]ndos Propios ajustados por efecto amortización anticipada",
+      "lado": "revenue",
+      "page": 6,
+      "section": "■ Patrimonio neto / ■ Fondos propios ajustados por efecto de amortización anticipada / ■ Ingresos ordinarios / ■ Endeudamiento neto",
+      "values": [
+        30.267
+      ],
+      "origen": "estado 7",
+      "glosa": "[Fo]ndos Propios ajustados por efecto amortización anticipada"
+    },
+    {
+      "label": "[RA]TIO ENDEUDAMIENTO / FONDOS PROPIOS",
+      "lado": "revenue",
+      "page": 6,
+      "section": "■ Patrimonio neto / ■ Fondos propios ajustados por efecto de amortización anticipada / ■ Ingresos ordinarios / ■ Endeudamiento neto",
+      "values": [
+        -0.81
+      ],
+      "origen": "estado 7",
+      "glosa": "[RA]TIO ENDEUDAMIENTO / FONDOS PROPIOS"
+    },
+    {
+      "label": "Patrimonio neto",
+      "lado": "revenue",
+      "page": 6,
+      "section": "[E]ndeudamiento neto sobre ingresos ordinarios y fondos propios / [Cifr]as en millones de euros",
+      "values": [
+        30
+      ],
+      "origen": "estado 6",
+      "glosa": "Patrimonio neto"
+    },
+    {
+      "label": "Ingresos ordinarios",
+      "lado": "revenue",
+      "page": 6,
+      "section": "[E]ndeudamiento neto sobre ingresos ordinarios y fondos propios / [Cifr]as en millones de euros",
+      "values": [
+        129
+      ],
+      "origen": "estado 6",
+      "glosa": "Ingresos ordinarios"
+    },
+    {
+      "label": "Endeudamiento neto",
+      "lado": "revenue",
+      "page": 6,
+      "section": "[E]ndeudamiento neto sobre ingresos ordinarios y fondos propios / [Cifr]as en millones de euros",
+      "values": [
+        245
+      ],
+      "origen": "estado 6",
+      "glosa": "Endeudamiento neto"
+    }
+  ]
+}

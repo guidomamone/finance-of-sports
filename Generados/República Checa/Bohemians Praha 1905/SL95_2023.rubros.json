@@ -1,0 +1,94 @@
+{
+ "md": "Clubes/República Checa/Bohemians Praha 1905/SL95_2023.md",
+ "pdf": "Clubes/República Checa/Bohemians Praha 1905/SL95_2023.pdf",
+ "club": "bohemians-praha-1905",
+ "year": 2023,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:07:41.756Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 7,
+  "notasUsadas": []
+ },
+ "ladoConocido": 7,
+ "rubros": [
+  {
+   "label": "Tržby z prodeje výrobků",
+   "lado": "revenue",
+   "page": 7,
+   "section": "### 1.3 Vývoj hlavních ukazatelů / #### 1.3.1 Údaje o tržbách",
+   "values": [
+    30.862
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Tržby z prodeje zboží",
+   "lado": "revenue",
+   "page": 7,
+   "section": "### 1.3 Vývoj hlavních ukazatelů / #### 1.3.1 Údaje o tržbách",
+   "values": [
+    8.179
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Tržby za služby",
+   "lado": "revenue",
+   "page": 7,
+   "section": "### 1.3 Vývoj hlavních ukazatelů / #### 1.3.1 Údaje o tržbách",
+   "values": [
+    63.017
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Ostatní tržby a výnosy",
+   "lado": "revenue",
+   "page": 7,
+   "section": "### 1.3 Vývoj hlavních ukazatelů / #### 1.3.1 Údaje o tržbách",
+   "values": [
+    22.846
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Tržby z prodeje zboží",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 3.6. Významné události mezi rozvahovým dnem a okamžikem sestavení účetní závěrky",
+   "values": [
+    0.011667
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Tržby z prodeje výrobků a služeb",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 3.6. Významné události mezi rozvahovým dnem a okamžikem sestavení účetní závěrky",
+   "values": [
+    0.108415
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "Ostatní tržby",
+   "lado": "revenue",
+   "page": 27,
+   "section": "# 3.6. Významné události mezi rozvahovým dnem a okamžikem sestavení účetní závěrky",
+   "values": [
+    0.021435
+   ],
+   "origen": "estado 21"
+  }
+ ]
+}

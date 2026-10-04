@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Alemania/1. FC Köln/jahresabschluss-2024-25.md",
+ "generado": "2026-10-02T00:17:29.125Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR EUR EUR",
+ "caja": {
+  "lineas": [
+   105
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   97,
+   99
+  ],
+  "ninguna": false
+ },
+ "observaciones": "The balance-sheet text is flattened: labels (L46 Kassenbestand, L67 Anleihen, L71 Verbindlichkeiten gegenüber Kreditinstituten) and amounts appear on separate lines. The amounts were assigned by adding up the liabilities to 31.996.690,64: Anleihen 1.073.076,00 (L97) and Kreditinstitute 8.750.000,00 (L99). Cash of 6.197.025,93 (L105) agrees with Liquide Mittel of TEUR 6.197."
+}

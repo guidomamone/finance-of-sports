@@ -1,0 +1,723 @@
+{
+  "club": "nottinghamforest-gb",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Inglaterra/Nottingham Forest/forest-full-accounts-2023-24.md",
+  "generatedAt": "2026-09-30T22:44:57.106Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 4,
+    "eu": 0,
+    "space": 2
+  },
+  "scannedWarning": false,
+  "tableCount": 18,
+  "relevantTableCount": 4,
+  "tables": [
+    {
+      "page": 5,
+      "section": "NOTTINGHAM FOREST FOOTBALL CLUB LIMITED / STRATEGIC REPORT (CONTINUED) / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Turnover (£000)",
+          "values": [
+            "189,552",
+            "154,758",
+            "29,683"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Average match attendance {number}",
+          "values": [
+            "29,363",
+            "28,808",
+            "25,778"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Season tickets sold (number)",
+          "values": [
+            "19,814",
+            "20,029",
+            "20,757"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "NOTTINGHAM FOREST FOOTBALL CLUB LIMITED / STATEMENT OF COMPREHENSIVE INCOME / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Turnover",
+          "values": [
+            "189,552",
+            "154,758"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cost of sales",
+          "values": [
+            "{12,643}",
+            "(11,176)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gross profit",
+          "values": [
+            "176,909",
+            "143,582"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administrative expenses",
+          "values": [
+            "(250,164)",
+            "(203,140)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Operating loss",
+          "values": [
+            "{73,255)",
+            "(59,558)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 14,
+      "section": "Interest receivable and similar income 8 16 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Interest payable and similar expenses",
+          "values": [
+            "{15,193}",
+            "(10,302)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profit on disoosal of player registrations",
+          "values": [
+            "100,531",
+            "2,614"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profiti{loss) before taxation",
+          "values": [
+            "12,099",
+            "(67,246)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 16,
+      "section": "NOTTINGHAM FOREST FOOTBALL CLUB LIMITED / STATEMENT OF CHANGES IN EQUITY / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "- - -",
+          "values": [
+            "(67,246)",
+            "(67,246)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Issue of share capital 22 11,000 - - -",
+          "values": [
+            "11,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balance at 30 June 2023",
+          "values": [
+            "122,144",
+            "70,345",
+            "13,965",
+            "(315,853)",
+            "{109,399)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "Year ended 30 June 2024: / Profit for the year - - - 12,099 12,099 / Other comprehensive income: / Actuarial losses on defined benefit plans / - - - (229) (229)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total comprehensive income for the year - - -",
+          "values": [
+            "11,870",
+            "11,870"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Issue of share capital 22 82,155 - - -",
+          "values": [
+            "82,155"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balance at 30 June 2024",
+          "values": [
+            "204,299",
+            "70,345",
+            "13,965",
+            "(303,983)",
+            "(15,374)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 24,
+      "section": "NOTTINGHAM FOREST FOOTBALL CLUB LIMITED / NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gate receipts",
+          "values": [
+            "14,408",
+            "10,992"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Media related activity",
+          "values": [
+            "130,019",
+            "124,836"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Merchandising",
+          "values": [
+            "8,550",
+            "7,127"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other commercial",
+          "values": [
+            "21,088",
+            "8,148"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Loan fees received",
+          "values": [
+            "15,487",
+            "3,655"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "NOTTINGHAM FOREST FOOTBALL CLUB LIMITED / NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Wages and salaries",
+          "values": [
+            "149,678",
+            "129,718"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Social security costs",
+          "values": [
+            "16,391",
+            "14,929"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "2024 2023 / Operating loss for the year is stated after charging/(crediting): £000 £000 / Exchange losses 28 297 / Depreciation of owned tangible fixed assets 1,159 618 / Loss/profit} on disposal of tangible fixed assets 66 (1)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Amortisation of player registrations",
+          "values": [
+            "61,685",
+            "40,766"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Profit on disposal of player registrations",
+          "values": [
+            "100,531",
+            "2,614"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "NOTTINGHAM FOREST FOOTBALL CLUB LIMITED / NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "of 25.90% (2023:",
+          "values": [
+            "20.50%)",
+            "3,025",
+            "(13,785)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tax effect of expenses that are not deductible in determining taxable profit",
+          "values": [
+            "3,470",
+            "8,411"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "Other permanent differences - 30 / Fixed asset differences 5,772 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Remeasurement of deferred tax for changes in tax rates",
+          "values": [
+            "(10,077)",
+            "(1,175)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Movement in deferred tax not recognised",
+          "values": [
+            "(2,190)",
+            "6,519"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "NOTTINGHAM FOREST FOOTBALL CLUB LIMITED / NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "At 1 July 2023",
+          "values": [
+            "178,503"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Additions",
+          "values": [
+            "139,674"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disposals",
+          "values": [
+            "(59,623)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 30 June 2024",
+          "values": [
+            "258,554"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Amortisation and impairment",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "At 1 July 2023",
+          "values": [
+            "40,296"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortisation charged for the year",
+          "values": [
+            "61,685"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Disposals",
+          "values": [
+            "(31,885)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 30 June 2024",
+          "values": [
+            "70,096"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Carrying amount",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "At 30 June 2024",
+          "values": [
+            "188,458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "At 30 June 2023",
+          "values": [
+            "138,207"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Land and Land and Assets under Plant andFixtures, fittings Motor vehicles Total / buildings buildings construction machinery & equipment / Freehold Leasehold / £000 £000 £000 £000 £000 £000 £000 / Cost",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1 July 2023 6,508 19,949 2,866 2,852 5,215",
+          "values": [
+            "37,556"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Additions 1,455 3,597 3,219 571 1,249",
+          "values": [
+            "10,288"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 28,
+      "section": "Eliminated in / respect of / disposals - - - (3) - - (3) / 30 June 2024 1,527 14,823 - 2,612 4,747 43 23,752 / Carrying amount",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "30 June 2024 6,211 8,723 6,279 806 1,716",
+          "values": [
+            "23,889"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30 June 2023",
+          "values": [
+            "5,108",
+            "5,505",
+            "2,866"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "NOTTINGHAM FOREST FOOTBALL CLUB LIMITED / NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Amounts payable in respect of player transfers",
+          "values": [
+            "73,077",
+            "71,336"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other loans",
+          "values": [
+            "75,997",
+            "44,501"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Other creditors",
+          "values": [
+            "3,414",
+            "3,656"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 33,
+      "section": "NOTTINGHAM FOREST FOOTBALL CLUB LIMITED / NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "The contingent liability from player purchases and First Team management changes amounts to approximately",
+          "values": [
+            "£45.3m"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(2023:",
+          "values": [
+            "£45.7m)."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 35,
+      "section": "NOTTINGHAM FOREST FOOTBALL CLUB LIMITED / NOTES TO THE FINANCIAL STATEMENTS (CONTINUED) / FOR THE YEAR ENDED 30 JUNE 2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "The income of these transfers, taking into account the applicable levies and sell on clauses, is £0.6m (2023:",
+          "values": [
+            "£58.8m)."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "The net cost of these transfers and staff changes, taking into account the applicable levies is £48.5m (2023:",
+          "values": [
+            "£86.5m)."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "These transfers will be accounted for in the year ending 30 June",
+          "values": [
+            "2025."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 16,
+      "section": "Year ended 30 June 2024: / Profit for the year - - - 12,099 12,099 / Other comprehensive income: / Actuarial losses on defined benefit plans / - - - (229) (229)",
+      "likelyRelevant": true,
+      "totalLabel": "Total comprehensive income for the year - - -",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 12,
+    "results": [
+      {
+        "label": "Turnover",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Turnover",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cost of sales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cost of sales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gross profit",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gross profit",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Administrative expenses",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Administrative expenses",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operating loss",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Operating loss",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Interest payable and similar expenses",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Interest payable and similar expenses",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Profit on disoosal of player registrations",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "player_sales",
+        "matchedLabel": "Profit on disposal of player registrations",
+        "similarity": 60
+      },
+      {
+        "label": "Profit on disoosal of player registrations",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Profiti{loss) before taxation",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Profiti{loss) before taxation",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Issue of share capital 22 82,155 - - -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Issue of share capital 22 82,155 - - -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Balance at 30 June 2024",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Balance at 30 June 2024",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1 July 2023 6,508 19,949 2,866 2,852 5,215",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1 July 2023 6,508 19,949 2,866 2,852 5,215",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Additions 1,455 3,597 3,219 571 1,249",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Additions 1,455 3,597 3,219 571 1,249",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "gb",
+    "query": "Nottingham Forest",
+    "matches": [
+      {
+        "leagueId": "gb-premierleague",
+        "year": "2024",
+        "matchedName": "Nottingham Forest",
+        "wikipediaPage": "2023–24 Premier League"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": [
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

@@ -1,0 +1,479 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+ "generado": "2026-10-03T01:23:51.331Z",
+ "frena": [
+  {
+   "etapa": "reintento",
+   "motivo": "categorías en 0 que deberían tener número: Salarios del plantel. Reintento (una vez): node tools/lote.mjs --lista <lista> --ejecutar --reintentar"
+  }
+ ],
+ "avisos": [
+  "--reemplazar: rehace un ejercicio ya cargado",
+  "fortalezaceif-co 2017 ya cargado: se reemplaza",
+  "gastos: ningún total impreso igual a la suma de las líneas (-3628.13); queda la suma, verificada por el resultado del ejercicio",
+  "sources['fortalezaceif-co-estados-financieros-2017'] ya existe: se conserva"
+ ],
+ "ejercicio": {
+  "clubId": "fortalezaceif-co",
+  "year": 2017,
+  "cierre": "2017-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Actividades Deportivas",
+    "normalizedCategory": "lump_football_operations",
+    "amountNative": 4220.658,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Otros Ingresos",
+    "normalizedCategory": "other_income",
+    "amountNative": 1027.45,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.95
+   },
+   {
+    "rawLabel": "Venta de Productos",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 70.183,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Casa Hogar",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.6,
+    "disclosureLevel": "aggregated",
+    "_pag": 14,
+    "_escalon": 1,
+    "_conf": 0.95
+   },
+   {
+    "rawLabel": "Aprovechamientos",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.001,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 0.99
+   },
+   {
+    "rawLabel": "Ajuste al Peso",
+    "normalizedCategory": "other_income",
+    "amountNative": 0.005,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 1
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Costos de Ventas",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -127.783,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Costos Extraordinarios",
+    "normalizedCategory": "exceptional_items",
+    "amountNative": -49.494,
+    "disclosureLevel": "aggregated",
+    "_pag": 15,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Total Gastos de Administración",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -2478.598,
+    "disclosureLevel": "aggregated",
+    "_pag": 17,
+    "_escalon": 1,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Total Gastos de Ventas",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -979.969,
+    "disclosureLevel": "aggregated",
+    "_pag": 18,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Otros gastos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -41.78,
+    "disclosureLevel": "aggregated",
+    "_pag": 19,
+    "_escalon": 1,
+    "_conf": 1
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "COP",
+   "fxRef": "COP@2017-12-31",
+   "sourceId": "fortalezaceif-co-estados-financieros-2017",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -3.581,
+   "tax": -291.598,
+   "extraRows": [
+    {
+     "label": "Costos financieros",
+     "value": -3.581
+    },
+    {
+     "label": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+     "value": -291.598
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Actividades Deportivas",
+     "lado": "revenue",
+     "importe": 4220.658,
+     "motivo": "Guido 2026-10-02: tabla de categorías de Fortaleza aprobada (la propuesta de la IA)."
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 5319.897,
+   "officialTotalExpenses": 3628.13,
+   "officialPAT": 1347.094
+  },
+  "source": {
+   "id": "fortalezaceif-co-estados-financieros-2017",
+   "clubId": "fortalezaceif-co",
+   "title": "FORTALEZA FUTBOL CLUB S.A. — estados-financieros-2017 (ejercicio 2017)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
+ "reemplaza": true,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2017-12-31",
+  "evidencia": {
+   "pagina": 8,
+   "texto": "|   | **A 31 de Diciembre de 2017** | **A 31 de Diciembre de 2016**  |"
+  },
+  "confianza": "media",
+  "cierreDe": "encabezados de tablas (escalón 1)",
+  "anual": "calendario"
+ },
+ "clubId": "fortalezaceif-co",
+ "year": 2017,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "fila",
+   "valor": "41,780",
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "linea": 771,
+   "reemplaza": null,
+   "motivo": "Nota 23 partida por un salto de página: las filas quedaron en la pág. 18 y el total solo en la 19; extraer la dejó afuera. (1.468) + 36.151 + 4.658 + 1 + 1.615 + 823 = 41.780.",
+   "evidencia": "filas pág. 18 del visor, .md L756-761; total pág. 19, L771",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "fila",
+   "valor": "(3,581)",
+   "etiqueta": "Costos financieros",
+   "lado": "financiero",
+   "linea": 794,
+   "reemplaza": "Total Otros Ingresos",
+   "motivo": "El PDF rotula 'Total Otros Ingresos' el total de la nota 25 COSTOS FINANCIEROS (gastos bancarios 389 + comisiones 1.944 + intereses 1.249): es un costo.",
+   "evidencia": "pág. 19 del visor, .md L785-794",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "resultado-final",
+   "valor": "1,347,094",
+   "motivo": "El documento no imprime el impuesto en ningún lado (sin estado de resultados, sin nota de impuesto, sin conciliación fiscal); el resultado final está en la nota de patrimonio y lo repiten 2018-2020. El impuesto se deduce.",
+   "evidencia": "pág. 14 del visor, .md L529 'Resultado Año 2017 1,347,094'; estados-financieros-2018.md L541",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "sin-dudas",
+   "valor": null,
+   "motivo": "Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  }
+ ],
+ "seleccion": {
+  "filas": 13,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Actividades Deportivas",
+   "page": 14,
+   "native": 4220.658,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Total Ingresos actividades ordinarias\")",
+   "signoFijo": 4220.658,
+   "cat": "lump_football_operations",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02: tabla de categorías de Fortaleza aprobada (la propuesta de la IA).",
+   "destino": "revenue",
+   "amountNative": 4220.658
+  },
+  {
+   "label": "Otros Ingresos",
+   "page": 14,
+   "native": 1027.45,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Total Ingresos actividades ordinarias\")",
+   "signoFijo": 1027.45,
+   "cat": "other_income",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1027.45
+  },
+  {
+   "label": "Venta de Productos",
+   "page": 14,
+   "native": 70.183,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Total Ingresos actividades ordinarias\")",
+   "signoFijo": 70.183,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02: tabla de categorías de Fortaleza aprobada (la propuesta de la IA).",
+   "destino": "revenue",
+   "amountNative": 70.183
+  },
+  {
+   "label": "Casa Hogar",
+   "page": 14,
+   "native": 1.6,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Total Ingresos actividades ordinarias\")",
+   "signoFijo": 1.6,
+   "cat": "other_income",
+   "conf": 0.95,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.6
+  },
+  {
+   "label": "Aprovechamientos",
+   "page": 19,
+   "native": 0.001,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Total Otros Gastos\")",
+   "signoFijo": 0.001,
+   "cat": "other_income",
+   "conf": 0.99,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.001
+  },
+  {
+   "label": "Ajuste al Peso",
+   "page": 19,
+   "native": 0.005,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Total Otros Gastos\")",
+   "signoFijo": 0.005,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 0.005
+  },
+  {
+   "label": "Costos de Ventas",
+   "page": 15,
+   "native": 127.783,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Total Costo de Ventas\")",
+   "signoFijo": 127.783,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02: tabla de categorías de Fortaleza aprobada (la propuesta de la IA).",
+   "destino": "expense",
+   "amountNative": -127.783
+  },
+  {
+   "label": "Costos Extraordinarios",
+   "page": 15,
+   "native": 49.494,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Total Costo de Ventas\")",
+   "signoFijo": 49.494,
+   "cat": "exceptional_items",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -49.494
+  },
+  {
+   "label": "Total Gastos de Administración",
+   "page": 17,
+   "native": 2478.598,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 2478.598,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2478.598
+  },
+  {
+   "label": "Total Gastos de Ventas",
+   "page": 18,
+   "native": 979.969,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 979.969,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02: tabla de categorías de Fortaleza aprobada (la propuesta de la IA).",
+   "destino": "expense",
+   "amountNative": -979.969
+  },
+  {
+   "label": "Otros gastos",
+   "page": 19,
+   "native": 41.78,
+   "ladoDoc": "expense",
+   "origen": "verificacion (ajuste manual)",
+   "signoFijo": 41.78,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 1,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -41.78
+  },
+  {
+   "label": "Costos financieros",
+   "page": null,
+   "native": -3.581,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "page": null,
+   "native": -291.598,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "tax"
+  }
+ ],
+ "reintentar": [
+  {
+   "categoria": "Salarios del plantel"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Total Ingresos actividades ordinarias\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Total Otros Gastos\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Total Costo de Ventas\")": "gastos sin signo (se invierten)",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (ajuste manual)": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 5319.897,
+  "expSum": -3628.13,
+  "officialTotalRevenue": 5319.897,
+  "officialTotalExpenses": 3628.13,
+  "officialPAT": 1347.094,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "impreso",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": 1347.094,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  },
+  "revImpreso": {
+   "label": "total de ingresos (verificado)",
+   "pag": null,
+   "M": 5319.897
+  }
+ },
+ "liga": {
+  "valor": "co-primeraB",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 1,
+  "lineasIngreso": 6,
+  "lineasGasto": 5,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

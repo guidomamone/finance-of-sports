@@ -1,0 +1,242 @@
+{
+ "md": "Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2021.md",
+ "pdf": "Clubes/Colombia/Aguilas Doradas/dictamen-revisor-fiscal-2021.pdf",
+ "club": "aguilas-doradas",
+ "year": 2021,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T21:57:36.531Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 28,
+  "notasUsadas": []
+ },
+ "ladoConocido": 2,
+ "rubros": [
+  {
+   "label": "Actividades deportivas",
+   "lado": null,
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    10064300911
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Honorarios",
+   "lado": null,
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    453477580
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    14495841
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": null,
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    348551419
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Contribuciones y afiliaciones",
+   "lado": null,
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    6244200
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Seguros",
+   "lado": null,
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    42358447
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Servicios",
+   "lado": null,
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    585260537
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Legales",
+   "lado": null,
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    9942854
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Mantenimiento y reparaciones",
+   "lado": null,
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    193338909
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "De viaje",
+   "lado": null,
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    622153038
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": null,
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    100299979
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Diversos",
+   "lado": null,
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    2466026242
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Derechos deportivos",
+   "lado": null,
+   "page": 4,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    977353906
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Actividades deportivas",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    10061779524
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Taquilla-venta de boletería",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    1008000
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Vena derechos deportivos-jugadores",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    3334500000
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Publicidad y propaganda",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    925496000
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Dimayor-reintegro de costos y gastos",
+   "lado": "expense",
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    4750923560
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Dimayor participaciones",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    85079000
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Dimayor apoyo logístico",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    266516808
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Federación colombiana de futbol",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    621000000
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Actividades conexas",
+   "lado": null,
+   "page": 3,
+   "section": "OMAR GIRALDO LOPEZ",
+   "values": [
+    77256156
+   ],
+   "origen": "estado 0"
+  }
+ ]
+}

@@ -1,0 +1,52 @@
+{
+  "club": "la-equidad",
+  "year": 2017,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/La Equidad/certificacion-ef-2017.md",
+  "generatedAt": "2026-09-30T21:58:48.056Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 1,
+    "space": 1
+  },
+  "scannedWarning": true,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "## Certificación de Estados Financieros – Carta de Gerencia",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "7. La entidad ha cumplido con la normatividad en materia de Seguridad Social, en virtud del Decreto 1406 de",
+          "values": [
+            "2009."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8. El software utilizado por los equipos de cómputo de la entidad se encuentran debidamente licenciado, por lo tanto se cumple con las normas de derechos de autor establecidas por la ley 603 de",
+          "values": [
+            "2000."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/la-equidad-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"la-equidad\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+  ]
+}

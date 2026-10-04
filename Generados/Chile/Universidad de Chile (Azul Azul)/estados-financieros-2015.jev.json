@@ -1,0 +1,205 @@
+{
+ "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2015.md",
+ "generatedAt": "2026-09-30T22:48:53.324Z",
+ "rubrosHuella": "99ffecc83e8d3223afbe59cea2d6e1d117e88207",
+ "rubros": [
+  {
+   "label": "Gasto de administración",
+   "lado": "expense",
+   "page": 7,
+   "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo / amortizado",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos financieros",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo / amortizado",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos financieros",
+   "lado": "expense",
+   "page": 7,
+   "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo / amortizado",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "desdeCache": true
+  },
+  {
+   "label": "Borderó (costos directos)",
+   "lado": "expense",
+   "page": 68,
+   "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "match_organisation_expense",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneraciones",
+   "lado": "expense",
+   "page": 68,
+   "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 0.52,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización de pases",
+   "lado": "expense",
+   "page": 68,
+   "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de venta pases de jugadores",
+   "lado": "expense",
+   "page": 68,
+   "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros gastos de operación",
+   "lado": "expense",
+   "page": 68,
+   "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo no amortizado",
+   "lado": "expense",
+   "page": 68,
+   "section": "Al 31 de Diciembre de 2015 y 31 de Diciembre de 2014 el detalle de los costos de venta / de pases de jugadores: / 31.12.2015       31.12.2014 / Costo de Venta Pases Jugadores                         M$               M$",
+   "choice": "player_amortisation",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Indemnización por término anticipado de contrato",
+   "lado": null,
+   "page": 68,
+   "section": "Al 31 de Diciembre de 2015 y 31 de Diciembre de 2014 el detalle de los costos de venta / de pases de jugadores: / 31.12.2015       31.12.2014 / Costo de Venta Pases Jugadores                         M$               M$",
+   "choice": "player_amortisation",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros costos (1)",
+   "lado": "expense",
+   "page": 68,
+   "section": "Al 31 de Diciembre de 2015 y 31 de Diciembre de 2014 el detalle de los costos de venta / de pases de jugadores: / 31.12.2015       31.12.2014 / Costo de Venta Pases Jugadores                         M$               M$",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 7,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS DE RESULTADOS INTEGRALES POR FUNCION CONSOLIDADOS / POR EL PERIODO DE 1 DE ENERO AL 31 DE DICIEMBRE DE 2015 Y 2014",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros activos financieros no corrientes",
+   "lado": "revenue",
+   "page": 5,
+   "section": "43.722        30.500 / para su disposición clasificados como / mantenidos para la venta / Activos corrientes totales                                       5.026.044      6.594.339 / Activos no corrientes",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros activos no financieros no corrientes",
+   "lado": "revenue",
+   "page": 5,
+   "section": "43.722        30.500 / para su disposición clasificados como / mantenidos para la venta / Activos corrientes totales                                       5.026.044      6.594.339 / Activos no corrientes",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Activos intangibles distintos de la plusvalía",
+   "lado": "revenue",
+   "page": 5,
+   "section": "43.722        30.500 / para su disposición clasificados como / mantenidos para la venta / Activos corrientes totales                                       5.026.044      6.594.339 / Activos no corrientes",
+   "choice": "other_income",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Propiedades, planta y equipo",
+   "lado": "revenue",
+   "page": 5,
+   "section": "43.722        30.500 / para su disposición clasificados como / mantenidos para la venta / Activos corrientes totales                                       5.026.044      6.594.339 / Activos no corrientes",
+   "choice": "other_income",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "Activos por impuestos diferidos",
+   "lado": "expense",
+   "page": 5,
+   "section": "43.722        30.500 / para su disposición clasificados como / mantenidos para la venta / Activos corrientes totales                                       5.026.044      6.594.339 / Activos no corrientes",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Borderó",
+   "lado": "revenue",
+   "page": 67,
+   "section": "20. INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 67,
+   "section": "20. INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos de T.V.",
+   "lado": "revenue",
+   "page": 67,
+   "section": "20. INGRESOS DE ACTIVIDADES ORDINARIAS",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "jugadores",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Ingresos por transferencias de pases de",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos varios",
+   "lado": "revenue",
+   "page": 67,
+   "section": "Ingresos por transferencias de pases de",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  }
+ ]
+}

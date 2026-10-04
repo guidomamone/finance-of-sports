@@ -1,0 +1,75 @@
+{
+ "md": "Clubes/Colombia/Llaneros/estados-financieros-2024.md",
+ "pdf": "Clubes/Colombia/Llaneros/estados-financieros-2024.pdf",
+ "club": "llaneros",
+ "year": 2024,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:59:19.904Z",
+ "tieOuts": {
+  "cierran": 34,
+  "noCierran": 7
+ },
+ "warnings": [
+  "7 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "9 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 5,
+  "notasUsadas": []
+ },
+ "ladoConocido": 5,
+ "rubros": [
+  {
+   "label": "*Gastos extraordinarios*",
+   "lado": "expense",
+   "page": 18,
+   "section": "#### NOTA 25. Otros Gastos",
+   "values": [
+    144706855
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "*Gastos diversos*",
+   "lado": "expense",
+   "page": 18,
+   "section": "#### NOTA 25. Otros Gastos",
+   "values": [
+    158675907
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "*Ingresos de actividades ordinarias por prestación de servicios de actividades deportivas*",
+   "lado": "revenue",
+   "page": 17,
+   "section": "## INGRESOS CATEGORIA",
+   "values": [
+    5777.1338
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "*Otros Ingresos*",
+   "lado": "revenue",
+   "page": 17,
+   "section": "### NOTA 22. Otros Ingresos",
+   "values": [
+    33.497962
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "*Financieros*",
+   "lado": "expense",
+   "page": 19,
+   "section": "## NOTA 26. Gastos Financieros",
+   "values": [
+    0.380805
+   ],
+   "origen": "estado 23"
+  }
+ ]
+}

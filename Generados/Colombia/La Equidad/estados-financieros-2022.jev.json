@@ -1,0 +1,1662 @@
+{
+ "md": "Clubes/Colombia/La Equidad/estados-financieros-2022.md",
+ "generatedAt": "2026-09-30T04:28:05.564Z",
+ "rubros": [
+  {
+   "label": "Derechos Deportivos",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "player_amortisation",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "player_amortisation",
+     0.89
+    ],
+    [
+     "lump_football_operations_expense",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.04
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Amortizacion Derechos Deportivos Donaciones",
+   "lado": "expense",
+   "page": 19,
+   "section": "### 5.5 Gastos Deportivos",
+   "choice": "player_amortisation",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "player_amortisation",
+     0.94
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Afiliacion Dimayor",
+   "lado": "expense",
+   "page": 19,
+   "section": "### 5.5 Gastos Deportivos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 853
+  },
+  {
+   "label": "Utilidades Acumuladas",
+   "lado": null,
+   "page": 19,
+   "section": "LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ### Nota 5.3 Resultado del periodo / ### 5.4 Ganancias acumuladas",
+   "choice": "other_income",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1356
+  },
+  {
+   "label": "Prendas Escuelas Attie",
+   "lado": "revenue",
+   "page": 22,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 8. Inventarios",
+   "choice": "youth_football",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "youth_football",
+     0.56
+    ],
+    [
+     "sponsorship_commercial",
+     0.26
+    ],
+    [
+     "other_income",
+     0.15
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Prestamo Derechos Deportivos",
+   "lado": "expense",
+   "page": 19,
+   "section": "### 5.5 Gastos Deportivos",
+   "choice": "player_amortisation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "player_amortisation",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Perdidas Acumuladas",
+   "lado": null,
+   "page": 19,
+   "section": "LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ### Nota 5.3 Resultado del periodo / ### 5.4 Ganancias acumuladas",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "Amortizacion Cargos Diferidos",
+   "lado": "expense",
+   "page": 19,
+   "section": "### 5.5 Gastos Deportivos",
+   "choice": "other_amortisation",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_amortisation",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "player_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Prendas Para Equipo Profesional",
+   "lado": "revenue",
+   "page": 22,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 8. Inventarios",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_income",
+     0.51
+    ],
+    [
+     "lump_football_operations",
+     0.39
+    ],
+    [
+     "sponsorship_commercial",
+     0.09
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Taquilla - Venta de Boletería",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "top3": [
+    [
+     "matchday_competition",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1111
+  },
+  {
+   "label": "Resultado Del Ejercicio",
+   "lado": null,
+   "page": 30,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 21. Resultado del ejercicio",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "other_income",
+     0.87
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1487
+  },
+  {
+   "label": "Zapato Deportivo",
+   "lado": "revenue",
+   "page": 22,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 8. Inventarios",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.72
+    ],
+    [
+     "sponsorship_commercial",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 906
+  },
+  {
+   "label": "Escuelas de Futbol",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "youth_football",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "youth_football",
+     0.96
+    ],
+    [
+     "education",
+     0.04
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Balones",
+   "lado": "revenue",
+   "page": 22,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 8. Inventarios",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ],
+    [
+     "sponsorship_commercial",
+     0.03
+    ]
+   ],
+   "tokens": 855
+  },
+  {
+   "label": "Prendas Para La Venta Kimo, Saeta, Puma, Otros",
+   "lado": "revenue",
+   "page": 22,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 8. Inventarios",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.65
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1118
+  },
+  {
+   "label": "Venta y Prestamo de Derechos",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Publicidad y Propaganda",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "Federacion Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "competition_bonus",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "competition_bonus",
+     0.96
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Cuota de Sostenimiento",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 991
+  },
+  {
+   "label": "Participación CopaSuramericana",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Venta de Artículos Deportivos",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Dimayor",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "broadcasting",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "broadcasting",
+     0.99
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1067
+  },
+  {
+   "label": "Patrocinio",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Eventos",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "other_income",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "stadium_other",
+     0.1
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Venta Tienda Virtual",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Ingresos Fuerzas Basicas",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "youth_football",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "youth_football",
+     0.97
+    ],
+    [
+     "other_income",
+     0.03
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Devoluciones en Ventas",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1072
+  },
+  {
+   "label": "Construcciones y Edificaciones",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "stadium_other",
+     0.1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "Costo de Venta Artículos Deportivos",
+   "lado": null,
+   "page": 32,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 25. Costo de Ventas",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "sponsorship_commercial",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1552
+  },
+  {
+   "label": "Actividades Conexas",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Reintegro de Otros Costos y Gastos",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Ingresos de Ejercicios Anteriores",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Recobro Incapacidades",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Venta Derechos Deportivos",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "player_sales",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Donacion",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 897
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Ajuste al Peso",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 960
+  },
+  {
+   "label": "Subvenciones del Estado",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Donaciones Derechos Deportivos",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "choice": "player_sales",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "player_sales",
+     0.62
+    ],
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Diferencia en Cambio",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Intereses Escuelas",
+   "lado": "revenue",
+   "page": 32,
+   "section": "No se presenta variación con el periodo reexpresado 2021 / Para el periodo 2022 el ingreso percibido por venta o prestamos de / derechos deportivos se presenta en el rubro de otros ingresos. / Ingresos Financieros",
+   "choice": "youth_football",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "youth_football",
+     0.72
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "education",
+     0.08
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Incumplimiento Contrato Compra",
+   "lado": "revenue",
+   "page": 32,
+   "section": "No se presenta variación con el periodo reexpresado 2021 / Para el periodo 2022 el ingreso percibido por venta o prestamos de / derechos deportivos se presenta en el rubro de otros ingresos. / Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "player_sales",
+     0.44
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 984
+  },
+  {
+   "label": "Rendimientos Financieros",
+   "lado": "revenue",
+   "page": 32,
+   "section": "No se presenta variación con el periodo reexpresado 2021 / Para el periodo 2022 el ingreso percibido por venta o prestamos de / derechos deportivos se presenta en el rubro de otros ingresos. / Ingresos Financieros",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 881
+  },
+  {
+   "label": "Gastos De Personal",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "wages_squad",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 986
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 995
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1176
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 976
+  },
+  {
+   "label": "Contribuciones Y Afiliaciones",
+   "lado": "expense",
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1120
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 994
+  },
+  {
+   "label": "Mantenimiento Y Reparaciones",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "admin_general_expense",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.64
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Adecuacion E Instalacion",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1229
+  },
+  {
+   "label": "Gastos De Viaje",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 990
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 990
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Amortizaciones Donaciones Derechos",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "other_amortisation",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_amortisation",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "other_amortisation",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "other_amortisation",
+     0.62
+    ],
+    [
+     "player_amortisation",
+     0.21
+    ],
+    [
+     "depreciation",
+     0.13
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Gastos Bancarios",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.62
+    ],
+    [
+     "admin_general_expense",
+     0.38
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Provisiones",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.96
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Costos y Gastos de Ejercicios",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "choice": "exceptional_items",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "exceptional_items",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1055
+  },
+  {
+   "label": "Comisiones",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "choice": "admin_general_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.42
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Intereses",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 887
+  },
+  {
+   "label": "Impuestos Asumidos",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "choice": "exceptional_items",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "exceptional_items",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Donaciones",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 956
+  },
+  {
+   "label": "Multas, Sanciones y Litigios",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Impuesto Diferido Pasivo",
+   "lado": "expense",
+   "page": 34,
+   "section": "## Nota 30. Gasto por impuesto",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 924
+  },
+  {
+   "label": "Otro Resultado Integral",
+   "lado": null,
+   "page": 34,
+   "section": "## Nota 31. Otro resultado Integral",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.93
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1479
+  },
+  {
+   "label": "Impuesto de Renta Y Complentarios",
+   "lado": "expense",
+   "page": 34,
+   "section": "## Nota 30. Gasto por impuesto",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 926
+  },
+  {
+   "label": "La Equidad Seguros De Vida O.C.",
+   "lado": "revenue",
+   "page": 35,
+   "section": "Por ventas y Servicios a:",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "sponsorship_commercial",
+     0.05
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 927
+  },
+  {
+   "label": "La Equidad Seguros O.C.",
+   "lado": "revenue",
+   "page": 35,
+   "section": "Por ventas y Servicios a:",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "sponsorship_commercial",
+     0.04
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 925
+  }
+ ]
+}

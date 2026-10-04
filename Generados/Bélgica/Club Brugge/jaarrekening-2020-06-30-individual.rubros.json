@@ -1,0 +1,87 @@
+{
+  "md": "Clubes/Bélgica/Club Brugge/jaarrekening-2020-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Club Brugge/jaarrekening-2020-06-30-individual.pdf",
+  "club": "clubbrugge-be",
+  "year": 2020,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:54:47.991Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": false,
+    "motivo": "no se pudo ubicar la columna del ejercicio"
+  },
+  "ladoConocido": 5,
+  "rubros": [
+    {
+      "label": "Niet-vervallen belastingschulden 9073",
+      "lado": "expense",
+      "page": 23,
+      "section": "Nr. BE 0460.444.251 VOL 6.9 / SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN / SOCIALE LASTEN",
+      "values": [
+        "529.571"
+      ],
+      "columns": null,
+      "glosa": "Deudas tributarias no vencidas 9073"
+    },
+    {
+      "label": "Geraamde belastingschulden",
+      "lado": "expense",
+      "page": 23,
+      "section": "Nr. BE 0460.444.251 VOL 6.9 / SCHULDEN MET BETREKKING TOT BELASTINGEN, BEZOLDIGINGEN EN / SOCIALE LASTEN",
+      "values": [
+        "4.985.249"
+      ],
+      "columns": null,
+      "glosa": "Deudas tributarias estimadas"
+    },
+    {
+      "label": "NIET-RECURRENTE KOSTEN",
+      "lado": "expense",
+      "page": 26,
+      "section": "Nr. BE 0460.444.251 VOL 6.12 / OPBRENGSTEN EN KOSTEN VAN UITZONDERLIJKE OMVANG OF UITZONDERLIJKE MATE VAN VOORKOMEN / NIET-RECURRENTE OPBRENGSTEN 76",
+      "values": [
+        "256.612"
+      ],
+      "columns": null,
+      "glosa": "GASTOS NO RECURRENTES"
+    },
+    {
+      "label": "Niet-recurrente bedrijfskosten 66A",
+      "lado": "expense",
+      "page": 26,
+      "section": "Nr. BE 0460.444.251 VOL 6.12 / OPBRENGSTEN EN KOSTEN VAN UITZONDERLIJKE OMVANG OF UITZONDERLIJKE MATE VAN VOORKOMEN / NIET-RECURRENTE OPBRENGSTEN 76",
+      "values": [
+        "256.612"
+      ],
+      "columns": null,
+      "glosa": "Gastos de explotación no recurrentes 66A"
+    },
+    {
+      "label": "Verworpen uitgaven",
+      "lado": "expense",
+      "page": 27,
+      "section": "Geraamde belastingsupplementen 9137 4.985.249 / Belastingen op het resultaat van vorige boekjaren 9138 / Verschuldigde of betaalde belastingsupplementen 9139 / Geraamde belastingsupplementen of belastingen waarvoor een voorziening werd gevormd 9140 / uit de jaarrekening, en de geraamde belastbare winst",
+      "values": [
+        "834.418"
+      ],
+      "columns": null,
+      "glosa": "Gastos no deducibles"
+    },
+    {
+      "label": "Notionele intrestaftrek",
+      "lado": null,
+      "page": 27,
+      "section": "Geraamde belastingsupplementen 9137 4.985.249 / Belastingen op het resultaat van vorige boekjaren 9138 / Verschuldigde of betaalde belastingsupplementen 9139 / Geraamde belastingsupplementen of belastingen waarvoor een voorziening werd gevormd 9140 / uit de jaarrekening, en de geraamde belastbare winst",
+      "values": [
+        "-28.507"
+      ],
+      "columns": null,
+      "glosa": "Deducción por intereses nocionales"
+    }
+  ]
+}

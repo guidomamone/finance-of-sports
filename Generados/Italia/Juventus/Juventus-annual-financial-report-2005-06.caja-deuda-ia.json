@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2005-06.md",
+ "generado": "2026-10-04T17:59:34.624Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "of which € 7,250,000 collectable after the next financial year.",
+ "caja": {
+  "lineas": [
+   1929,
+   1930
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1967
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance oficial está en euros (unidades); la caja se compone de cuentas bancarias y postales más efectivo en caja (total 202,266 en L1931). La única deuda financiera es 'Due to banks' (L1967). El balance reclasificado (L1753-L1785) está en miles y muestra montos netos, por lo que no se usó."
+}

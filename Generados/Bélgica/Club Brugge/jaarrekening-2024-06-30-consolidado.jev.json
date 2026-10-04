@@ -1,0 +1,835 @@
+{
+ "md": "Clubes/Bélgica/Club Brugge/jaarrekening-2024-06-30-consolidado.md",
+ "generatedAt": "2026-09-30T22:48:38.632Z",
+ "rubrosHuella": "d0e34d0c58e2e5f10d2cfc7f1a06808377f8aedd",
+ "rubros": [
+  {
+   "label": "Organisatie, apparatuur en beveiliging",
+   "lado": "expense",
+   "page": 56,
+   "section": "## 23 Overige bedrijfskosten",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Huur en andere diensten",
+   "lado": "expense",
+   "page": 56,
+   "section": "## 23 Overige bedrijfskosten",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "match_organisation_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "Interim",
+   "lado": "expense",
+   "page": 56,
+   "section": "## 23 Overige bedrijfskosten",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "wages_squad",
+     0.16
+    ]
+   ],
+   "tokens": 987
+  },
+  {
+   "label": "Hotels, restaurants en recepties",
+   "lado": "expense",
+   "page": 56,
+   "section": "## 23 Overige bedrijfskosten",
+   "choice": "match_organisation_expense",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.65
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 883
+  },
+  {
+   "label": "Reiskosten",
+   "lado": "expense",
+   "page": 56,
+   "section": "## 23 Overige bedrijfskosten",
+   "choice": "match_organisation_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Algemene administratie",
+   "lado": "expense",
+   "page": 56,
+   "section": "## 23 Overige bedrijfskosten",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Nutsvoorzieningen, onderhoud en reparatie",
+   "lado": "expense",
+   "page": 56,
+   "section": "## 23 Overige bedrijfskosten",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Consulting- en andere advieskosten",
+   "lado": "expense",
+   "page": 56,
+   "section": "## 23 Overige bedrijfskosten",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.27
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Overige belastingen",
+   "lado": "expense",
+   "page": 56,
+   "section": "## 23 Overige bedrijfskosten",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1005
+  },
+  {
+   "label": "Wedstrijdopbrengsten",
+   "lado": "revenue",
+   "page": 52,
+   "section": "(BAS). Per arbitrale uitspraak van 5 augustus 2024, aldus na afloop van het / besproken boekjaar, werd de vordering van de Vennootschap ongegrond verklaard. / Opbrengsten / Opbrengsten Eert art / In 000€ voor het boekjaar afgesloten op tigris, Stoner UE",
+   "choice": "matchday_competition",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1107
+  },
+  {
+   "label": "Opbrengsten uit mediarechten",
+   "lado": "revenue",
+   "page": 52,
+   "section": "(BAS). Per arbitrale uitspraak van 5 augustus 2024, aldus na afloop van het / besproken boekjaar, werd de vordering van de Vennootschap ongegrond verklaard. / Opbrengsten / Opbrengsten Eert art / In 000€ voor het boekjaar afgesloten op tigris, Stoner UE",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1130
+  },
+  {
+   "label": "Opbrengsten uit mediarechten - Binnenlands",
+   "lado": "revenue",
+   "page": 54,
+   "section": "### 21.2 Opbrengsten uit mediarechten",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Opbrengsten uit mediarechten - Europees",
+   "lado": "revenue",
+   "page": 54,
+   "section": "### 21.2 Opbrengsten uit mediarechten",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Binnenlands",
+   "lado": "revenue",
+   "page": 52,
+   "section": "(BAS). Per arbitrale uitspraak van 5 augustus 2024, aldus na afloop van het / besproken boekjaar, werd de vordering van de Vennootschap ongegrond verklaard. / Opbrengsten / Opbrengsten Eert art / In 000€ voor het boekjaar afgesloten op tigris, Stoner UE",
+   "choice": "competition_bonus",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "competition_bonus",
+     0.5
+    ],
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ]
+   ],
+   "tokens": 966
+  },
+  {
+   "label": "Europees",
+   "lado": "revenue",
+   "page": 52,
+   "section": "(BAS). Per arbitrale uitspraak van 5 augustus 2024, aldus na afloop van het / besproken boekjaar, werd de vordering van de Vennootschap ongegrond verklaard. / Opbrengsten / Opbrengsten Eert art / In 000€ voor het boekjaar afgesloten op tigris, Stoner UE",
+   "choice": "competition_bonus",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "competition_bonus",
+     0.36
+    ],
+    [
+     "matchday_competition",
+     0.29000000000000004
+    ],
+    [
+     "other_income",
+     0.23
+    ]
+   ],
+   "tokens": 985
+  },
+  {
+   "label": "Commerciële opbrengsten",
+   "lado": "revenue",
+   "page": 52,
+   "section": "(BAS). Per arbitrale uitspraak van 5 augustus 2024, aldus na afloop van het / besproken boekjaar, werd de vordering van de Vennootschap ongegrond verklaard. / Opbrengsten / Opbrengsten Eert art / In 000€ voor het boekjaar afgesloten op tigris, Stoner UE",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1108
+  },
+  {
+   "label": "Btw-schulden",
+   "lado": "expense",
+   "page": 47,
+   "section": "## 15 Handels- en andere schulden",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Overige opbrengsten",
+   "lado": "revenue",
+   "page": 52,
+   "section": "(BAS). Per arbitrale uitspraak van 5 augustus 2024, aldus na afloop van het / besproken boekjaar, werd de vordering van de Vennootschap ongegrond verklaard. / Opbrengsten / Opbrengsten Eert art / In 000€ voor het boekjaar afgesloten op tigris, Stoner UE",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Reële waarde op datum van toekenning",
+   "lado": "expense",
+   "page": 60,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.59
+    ],
+    [
+     "wages_squad",
+     0.19
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Personeelsgerelateerde schulden",
+   "lado": "expense",
+   "page": 47,
+   "section": "## 15 Handels- en andere schulden",
+   "choice": "wages_squad",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "wages_squad",
+     0.46
+    ],
+    [
+     "admin_general_expense",
+     0.29000000000000004
+    ],
+    [
+     "other_expenses",
+     0.24
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Lonen van spelers en kosten van technische staf",
+   "lado": "expense",
+   "page": 57,
+   "section": "24 / Lonen van spelers en kosten van technische staf / Lonen van spelers en kosten van technische staf / In 000€ voor het boekjaar afgesloten op SAE, <10 AP",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Verwachte looptijd",
+   "lado": "expense",
+   "page": 60,
+   "section": "",
+   "choice": "player_amortisation",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "player_amortisation",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "depreciation",
+     0.19
+    ]
+   ],
+   "tokens": 789
+  },
+  {
+   "label": "Toe te rekenen kosten",
+   "lado": "expense",
+   "page": 47,
+   "section": "## 15 Handels- en andere schulden",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Handelsschulden",
+   "lado": "expense",
+   "page": 47,
+   "section": "## 15 Handels- en andere schulden",
+   "choice": "admin_general_expense",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1028
+  },
+  {
+   "label": "Verwachte volatiliteit",
+   "lado": "expense",
+   "page": 60,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 792
+  },
+  {
+   "label": "Risicovrije rentevoet (gebaseerd op overheidsobligaties)",
+   "lado": "expense",
+   "page": 60,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Socialezekerheidsbijdragen",
+   "lado": "expense",
+   "page": 58,
+   "section": "## 25 Overige personeelskosten",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "wages_squad",
+     0.03
+    ]
+   ],
+   "tokens": 1053
+  },
+  {
+   "label": "Vrijstelling doorstorting bedrijfsvoorheffing",
+   "lado": "expense",
+   "page": 57,
+   "section": "24 / Lonen van spelers en kosten van technische staf / Lonen van spelers en kosten van technische staf / In 000€ voor het boekjaar afgesloten op SAE, <10 AP",
+   "choice": "admin_general_expense",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "wages_squad",
+     0.16
+    ]
+   ],
+   "tokens": 1085
+  },
+  {
+   "label": "Toegezegde-pensioenregelingskosten",
+   "lado": "expense",
+   "page": 58,
+   "section": "## 25 Overige personeelskosten",
+   "choice": "other_expenses",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_expenses",
+     0.63
+    ],
+    [
+     "wages_squad",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Overige kosten -189",
+   "lado": "expense",
+   "page": 57,
+   "section": "24 / Lonen van spelers en kosten van technische staf / Lonen van spelers en kosten van technische staf / In 000€ voor het boekjaar afgesloten op SAE, <10 AP",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "wages_squad",
+     0.02
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "op aandelen gebaseerde betalingen",
+   "lado": "expense",
+   "page": 58,
+   "section": "## 25 Overige personeelskosten",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "wages_squad",
+     0.18
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 903
+  },
+  {
+   "label": "Overige kosten",
+   "lado": "expense",
+   "page": 58,
+   "section": "## 25 Overige personeelskosten",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1015
+  },
+  {
+   "label": "Lidgeld",
+   "lado": "revenue",
+   "page": 56,
+   "section": "## 22 Overige bedrijfsopbrengsten",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Overige personeelskosten",
+   "lado": "expense",
+   "page": 58,
+   "section": "## 25 Overige personeelskosten",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Overige",
+   "lado": "revenue",
+   "page": 56,
+   "section": "## 22 Overige bedrijfsopbrengsten",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "womens_football",
+     0
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Giften",
+   "lado": "revenue",
+   "page": 56,
+   "section": "## 22 Overige bedrijfsopbrengsten",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1007
+  }
+ ]
+}

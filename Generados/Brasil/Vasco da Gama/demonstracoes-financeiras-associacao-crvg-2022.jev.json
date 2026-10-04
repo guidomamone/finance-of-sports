@@ -1,0 +1,1002 @@
+{
+ "md": "Clubes/Brasil/Vasco da Gama/demonstracoes-financeiras-associacao-crvg-2022.md",
+ "generatedAt": "2026-09-30T22:48:33.856Z",
+ "rubrosHuella": "46a4ff3863b4b69c857f442a27778445d01644fa",
+ "rubros": [
+  {
+   "label": "Caixa e equivalentes de caixa 4 504 1.249 Fornecedores 12",
+   "lado": null,
+   "page": 17,
+   "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Contas a receber 5 856 54.255 Obrigações trabalhistas 13",
+   "lado": null,
+   "page": 17,
+   "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Estoques 6 - 1.485 Tributos e contribuições a recolher 14",
+   "lado": null,
+   "page": 17,
+   "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Tributos e contribuições a recuperar 1 - Acordos Cíveis e Trabalhistas 16 -",
+   "lado": null,
+   "page": 17,
+   "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.39,
+   "desdeCache": true
+  },
+  {
+   "label": "Plano Regime Centralizado de Execuções 16 -",
+   "lado": null,
+   "page": 17,
+   "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Parcelamentos 17 -",
+   "lado": null,
+   "page": 17,
+   "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+   "choice": "exceptional_items",
+   "confidence": 0.63,
+   "desdeCache": true
+  },
+  {
+   "label": "Obrigações com Entidades Esportivas 18 -",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Empréstimos e adiantamentos 19 -",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "choice": "player_sales",
+   "confidence": 0.33,
+   "desdeCache": true
+  },
+  {
+   "label": "Intangível 11 - 23.945 Parcelamentos",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "choice": "player_amortisation",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "player_amortisation",
+     0.33
+    ],
+    [
+     "other_amortisation",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1567
+  },
+  {
+   "label": "Despesas Antecipadas 7 - 378 Imagem e Comissões a Pagar 15 -",
+   "lado": "expense",
+   "page": 17,
+   "section": "Demonstração do resultado do exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais)",
+   "choice": "admin_general_expense",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "wages_squad",
+     0.29
+    ]
+   ],
+   "tokens": 1137
+  },
+  {
+   "label": "Depósitos Judiciais 8 180 19.790 Plano Regime Centralizado de Execuções",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "exceptional_items",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1573
+  },
+  {
+   "label": "Investimentos",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1298
+  },
+  {
+   "label": "Imobilizado 10 144.800 158.774 Contingências 16 -",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "depreciation",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1531
+  },
+  {
+   "label": "Contas a receber 5 - 7.800 Acordos Cíveis e Trabalhistas 16 -",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "choice": "exceptional_items",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "exceptional_items",
+     0.52
+    ],
+    [
+     "admin_general_expense",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.17
+    ]
+   ],
+   "tokens": 1539
+  },
+  {
+   "label": "Receitas Diferidas 20 -",
+   "lado": "revenue",
+   "page": 17,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "season_tickets",
+     0.16
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Direitos de Transmissão",
+   "lado": null,
+   "page": 35,
+   "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Repasse de Direitos Federativos",
+   "lado": null,
+   "page": 35,
+   "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteria",
+   "lado": null,
+   "page": 35,
+   "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Marketing",
+   "lado": null,
+   "page": 35,
+   "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "desdeCache": true
+  },
+  {
+   "label": "Mecanismo de Solidariedade",
+   "lado": null,
+   "page": 35,
+   "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+   "choice": "player_sales",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "(+/-) Custo/Despesas operacionais - Clube social e esportes amadores",
+   "lado": "expense",
+   "page": 18,
+   "section": "",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1127
+  },
+  {
+   "label": "Transporte e outros gastos com competição",
+   "lado": "expense",
+   "page": 18,
+   "section": "",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Depreciação",
+   "lado": null,
+   "page": 18,
+   "section": "",
+   "choice": "depreciation",
+   "confidence": 1,
+   "top3": [
+    [
+     "depreciation",
+     1
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1450
+  },
+  {
+   "label": "Receita bruta de Futebol",
+   "lado": "revenue",
+   "page": 35,
+   "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+   "choice": "lump_football_operations",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.53
+    ],
+    [
+     "matchday_competition",
+     0.34
+    ],
+    [
+     "other_income",
+     0.13
+    ]
+   ],
+   "tokens": 1112
+  },
+  {
+   "label": "Desconto obtido na PGFN",
+   "lado": null,
+   "page": 18,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_income",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1318
+  },
+  {
+   "label": "Outras receitas (despesas) operacionais",
+   "lado": null,
+   "page": 18,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1505
+  },
+  {
+   "label": "Receitas com Premiação",
+   "lado": "revenue",
+   "page": 35,
+   "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "top3": [
+    [
+     "competition_bonus",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1110
+  },
+  {
+   "label": "Receitas Diversas",
+   "lado": "revenue",
+   "page": 35,
+   "section": "Demonstrações do Resultado do Exercício / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 31/12/2022            Reclassificação        31/12/2022 / (Divulgado)                                 (Reapresentado)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1131
+  },
+  {
+   "label": "Outros custos e despesas",
+   "lado": "expense",
+   "page": 18,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "(-) Custo/Despesas operacionais - futebol profissional",
+   "lado": "expense",
+   "page": 18,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "lump_football_operations_expense",
+     0.35
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Receitas Operacionais",
+   "lado": "revenue",
+   "page": 10,
+   "section": "4.2.    A DEMONSTRAÇÃO DE RESULTADO DA ASSOCIAÇÃO EM 31/12/2022",
+   "choice": "lump_football_operations",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.79
+    ],
+    [
+     "other_income",
+     0.2
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1071
+  },
+  {
+   "label": "Despesas Operacionais",
+   "lado": "expense",
+   "page": 10,
+   "section": "4.2.    A DEMONSTRAÇÃO DE RESULTADO DA ASSOCIAÇÃO EM 31/12/2022",
+   "choice": "admin_general_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "lump_football_operations_expense",
+     0.36
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1052
+  },
+  {
+   "label": "Baixa Custos de Atletas 11 (773)",
+   "lado": "expense",
+   "page": 18,
+   "section": "",
+   "choice": "player_amortisation",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "player_amortisation",
+     0.97
+    ],
+    [
+     "player_impairment",
+     0.02
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Patrimônio social",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "choice": "member_dues",
+   "confidence": 0.5,
+   "top3": [
+    [
+     "member_dues",
+     0.53
+    ],
+    [
+     "admin_general_expense",
+     0.38
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1444
+  },
+  {
+   "label": "Amortização",
+   "lado": null,
+   "page": 18,
+   "section": "",
+   "choice": "player_amortisation",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "player_amortisation",
+     0.52
+    ],
+    [
+     "depreciation",
+     0.31
+    ],
+    [
+     "other_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 1467
+  },
+  {
+   "label": "(-) Deduções das Receitas",
+   "lado": "revenue",
+   "page": 18,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "other_income",
+     0.97
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Impostos e contribuições",
+   "lado": "expense",
+   "page": 18,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Passivo a descoberto",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "other_income",
+     0.11
+    ]
+   ],
+   "tokens": 1501
+  },
+  {
+   "label": "Outras deduções",
+   "lado": "revenue",
+   "page": 18,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "(=) Receita operacional líquida",
+   "lado": "revenue",
+   "page": 18,
+   "section": "",
+   "choice": "lump_football_operations",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.87
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Despesas financeiras (49.195) (4.505) (e)",
+   "lado": "expense",
+   "page": 35,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.87
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Marrony 20% Atletico Mineiro ago/21 -",
+   "lado": "expense",
+   "page": 51,
+   "section": "(Em milhares de Reais) / 23. Repasse de Direitos Econômicos / Dir. Econômicos / Atletas                               Clube destinatário          Data     2022      2021 / Transferidos",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "player_amortisation",
+     0.21000000000000002
+    ],
+    [
+     "lump_football_operations_expense",
+     0.15
+    ]
+   ],
+   "tokens": 850
+  },
+  {
+   "label": "Talles Magno 85% Major League Soccer/ NY City FC mai/21",
+   "lado": "expense",
+   "page": 51,
+   "section": "(Em milhares de Reais) / 23. Repasse de Direitos Econômicos / Dir. Econômicos / Atletas                               Clube destinatário          Data     2022      2021 / Transferidos",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.5
+    ],
+    [
+     "player_amortisation",
+     0.22
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ]
+   ],
+   "tokens": 927
+  },
+  {
+   "label": "Depósitos Civis -",
+   "lado": "expense",
+   "page": 40,
+   "section": "7. Despesas Antecipadas / 31/12/2022            31/12/2021 / -                    378 / 8. Depósitos/bloqueios judiciais / 31/12/2022            31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Depósitos Trabalhistas (i)",
+   "lado": "expense",
+   "page": 40,
+   "section": "7. Despesas Antecipadas / 31/12/2022            31/12/2021 / -                    378 / 8. Depósitos/bloqueios judiciais / 31/12/2022            31/12/2021",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "desdeCache": true
+  },
+  {
+   "label": "Depósitos Fiscais -",
+   "lado": "expense",
+   "page": 40,
+   "section": "7. Despesas Antecipadas / 31/12/2022            31/12/2021 / -                    378 / 8. Depósitos/bloqueios judiciais / 31/12/2022            31/12/2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Salário",
+   "lado": "expense",
+   "page": 55,
+   "section": "Notas explicativas da administração às demonstrações contábeis / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 30. Salários, encargos e benefícios / 31/12/2022            31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "wages_squad",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1098
+  },
+  {
+   "label": "Avaliação patrimonial",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "choice": "exceptional_items",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "exceptional_items",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "player_impairment",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1465
+  },
+  {
+   "label": "Férias",
+   "lado": "expense",
+   "page": 55,
+   "section": "Notas explicativas da administração às demonstrações contábeis / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 30. Salários, encargos e benefícios / 31/12/2022            31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "wages_squad",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "youth_other_sports_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Direito de Imagem",
+   "lado": "expense",
+   "page": 55,
+   "section": "Notas explicativas da administração às demonstrações contábeis / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 30. Salários, encargos e benefícios / 31/12/2022            31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1093
+  },
+  {
+   "label": "Arthur Sales 80% Voetbalclub Lommel SK NV ago/21 -",
+   "lado": "expense",
+   "page": 51,
+   "section": "(Em milhares de Reais) / 23. Repasse de Direitos Econômicos / Dir. Econômicos / Atletas                               Clube destinatário          Data     2022      2021 / Transferidos",
+   "choice": "other_expenses",
+   "confidence": 0.83,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1166
+  },
+  {
+   "label": "Receitas financeiras 41.737 -",
+   "lado": "revenue",
+   "page": 35,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "13º Salário",
+   "lado": "expense",
+   "page": 55,
+   "section": "Notas explicativas da administração às demonstrações contábeis / Em 31 de dezembro de 2022 e 31 de dezembro de 2021 / (Em milhares de Reais) / 30. Salários, encargos e benefícios / 31/12/2022            31/12/2021",
+   "choice": "wages_squad",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "wages_squad",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1114
+  }
+ ]
+}

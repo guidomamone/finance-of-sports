@@ -1,0 +1,255 @@
+{
+ "md": "Clubes/Brasil/Ituano/relatorio-de-auditoria-2018-audit-consult-novo.md",
+ "generatedAt": "2026-09-30T22:48:30.292Z",
+ "rubrosHuella": "2bddb6835400dd1d3cfa0e5525fc019bf518017a",
+ "rubros": [
+  {
+   "label": "RECEITA - FUTEBOL PROFISSIONAL E DE BASE",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "lump_football_operations",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiações em Campeonatos (CBF)",
+   "lado": null,
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "competition_bonus",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Direito de Transmissão de TV (FPF)",
+   "lado": null,
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínio e Publicidades",
+   "lado": null,
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrecadação de Jogos",
+   "lado": null,
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Cessão de Direito Federativo de Atletas",
+   "lado": null,
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "player_sales",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita de Projetos e Incentivos Fiscais",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Sócio Torcedor",
+   "lado": null,
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "member_dues",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Impostos Incidentes s/ Vendas e Serviços",
+   "lado": "expense",
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "desdeCache": true
+  },
+  {
+   "label": "DESPESAS - FUTEBOL PROFISSIONAL E DE BASE",
+   "lado": "expense",
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com Pessoal (Salários e encargos)",
+   "lado": "expense",
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de Terceiros (Prémios, Mídia, Serviços de PJ e PF)",
+   "lado": null,
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "desdeCache": true
+  },
+  {
+   "label": "Gastos c/ Atletas (Viagens, Uniformes, Taxas CBF-FPF)",
+   "lado": "expense",
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "match_organisation_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras Despesas (Eventos e Partidas- Estádio e Alojamento)",
+   "lado": "expense",
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "DESPESAS ADMINISTRATIVAS",
+   "lado": "expense",
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Água, Luz, Telefone, e Internet (sede do Clube)",
+   "lado": null,
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de Terceiros - Advogado, Contador, Assessores",
+   "lado": null,
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras Receitas e Despesas Administrativas",
+   "lado": null,
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "admin_general_expense",
+   "confidence": 0.59,
+   "desdeCache": true
+  },
+  {
+   "label": "Impostos e Taxas diversas",
+   "lado": "expense",
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Encargos Financeiros",
+   "lado": "expense",
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "admin_general_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "RECEITAS E DESPESAS NÃO OPERACIONAIS",
+   "lado": null,
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras Receitas e Despesas Não Operacionais",
+   "lado": null,
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "Saldos em 01/01/2017",
+   "lado": null,
+   "page": 8,
+   "section": "# ITUANO FUTEBOL CLUBE",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "desdeCache": true
+  },
+  {
+   "label": "Realização de Reserva de Reavaliação",
+   "lado": null,
+   "page": 8,
+   "section": "# ITUANO FUTEBOL CLUBE",
+   "choice": "other_income",
+   "confidence": 0.5,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortização",
+   "lado": "expense",
+   "page": 16,
+   "section": "### D) AMORTIZAÇÕES DE GASTOS",
+   "choice": "other_amortisation",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Receita com Cessão Temporária de Direitos Federativos (Empréstimos)",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# ITUANO FUTEBOL CLUBE / # DEMONSTRAÇÕES de RESULTADO / # PARA o EXERCÍCIO FINDO em 31 de DEZEMBRO de 2018",
+   "choice": "player_sales",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "player_sales",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1114
+  }
+ ]
+}

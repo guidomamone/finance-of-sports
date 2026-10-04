@@ -1,0 +1,234 @@
+{
+ "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2010.md",
+ "generatedAt": "2026-09-30T22:48:52.504Z",
+ "rubrosHuella": "ddf76d674bcece02d87cce8aa177821314ee4d50",
+ "rubros": [
+  {
+   "label": "Gasto de administración (1.862.123) -",
+   "lado": "expense",
+   "page": 6,
+   "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Costos financieros (176.623) -",
+   "lado": "expense",
+   "page": 6,
+   "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo",
+   "choice": "admin_general_expense",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Gasto por impuestos a las ganancias",
+   "lado": "expense",
+   "page": 6,
+   "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "directos)",
+   "lado": null,
+   "page": 55,
+   "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "desdeCache": true
+  },
+  {
+   "label": "Remuneraciones",
+   "lado": null,
+   "page": 55,
+   "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "wages_squad",
+   "confidence": 0.56,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortización de pases",
+   "lado": null,
+   "page": 55,
+   "section": "22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros Activos financieros no corrientes",
+   "lado": "revenue",
+   "page": 59,
+   "section": "Total de activos corrientes distintos de los / activos o grupos de activos para su / disposición clasificados como mantenidos / para la venta o como mantenidos para / 0",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros Activos no financieros no corrientes 1.247.221 1.296.374 0",
+   "lado": "revenue",
+   "page": 59,
+   "section": "Total de activos corrientes distintos de los / activos o grupos de activos para su / disposición clasificados como mantenidos / para la venta o como mantenidos para / 0",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Activos intangibles distintos de la plusvalía 12.017.037 11.612.545 0",
+   "lado": "revenue",
+   "page": 59,
+   "section": "Total de activos corrientes distintos de los / activos o grupos de activos para su / disposición clasificados como mantenidos / para la venta o como mantenidos para / 0",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Propiedades, Planta y Equipo 3.690.367 433.611 0",
+   "lado": "revenue",
+   "page": 59,
+   "section": "Total de activos corrientes distintos de los / activos o grupos de activos para su / disposición clasificados como mantenidos / para la venta o como mantenidos para / 0",
+   "choice": "other_income",
+   "confidence": 0.85,
+   "desdeCache": true
+  },
+  {
+   "label": "Borderó",
+   "lado": "revenue",
+   "page": 55,
+   "section": "21. INGRESOS ORDINARIOS",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 55,
+   "section": "21. INGRESOS ORDINARIOS",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos de T.V.",
+   "lado": "revenue",
+   "page": 55,
+   "section": "21. INGRESOS ORDINARIOS",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "jugadores",
+   "lado": "revenue",
+   "page": 55,
+   "section": "Ingresos por transferencias de pases de",
+   "choice": "player_sales",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos varios",
+   "lado": "revenue",
+   "page": 55,
+   "section": "Ingresos por transferencias de pases de",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Costo de ventas 22 (8.222.893) -",
+   "lado": "expense",
+   "page": 6,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS CONSOLIDADO DE RESULTADOS INTEGRALES POR FUNCION / ACUMULADO",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.72
+    ],
+    [
+     "wages_squad",
+     0.14
+    ],
+    [
+     "player_amortisation",
+     0.08
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Ingresos financieros",
+   "lado": "revenue",
+   "page": 6,
+   "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 6,
+   "section": "AZUL AZUL S.A. Y FILIAL / ESTADOS CONSOLIDADO DE RESULTADOS INTEGRALES POR FUNCION / ACUMULADO",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.75
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ],
+    [
+     "matchday_competition",
+     0.02
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Activos por impuestos diferidos",
+   "lado": "expense",
+   "page": 59,
+   "section": "Total de activos corrientes distintos de los / activos o grupos de activos para su / disposición clasificados como mantenidos / para la venta o como mantenidos para / 0",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.68
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1022
+  }
+ ]
+}

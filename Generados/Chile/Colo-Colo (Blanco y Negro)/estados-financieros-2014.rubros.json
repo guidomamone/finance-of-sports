@@ -1,0 +1,289 @@
+{
+  "md": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2014.md",
+  "pdf": "Clubes/Chile/Colo-Colo (Blanco y Negro)/estados-financieros-2014.pdf",
+  "club": "colocolo-cl",
+  "year": 2014,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:56:24.302Z",
+  "tieOuts": {
+    "cierran": 16,
+    "noCierran": 9
+  },
+  "warnings": [
+    "9 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "8 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 24,
+    "notasUsadas": []
+  },
+  "ladoConocido": 10,
+  "rubros": [
+    {
+      "label": "Servicios básicos",
+      "lado": null,
+      "page": 75,
+      "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+      "values": [
+        0.183505
+      ],
+      "origen": "estado 56",
+      "glosa": "Servicios básicos"
+    },
+    {
+      "label": "Asesorías",
+      "lado": null,
+      "page": 75,
+      "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+      "values": [
+        0.718744
+      ],
+      "origen": "estado 56",
+      "glosa": "Asesorías"
+    },
+    {
+      "label": "Depreciaciones",
+      "lado": null,
+      "page": 75,
+      "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+      "values": [
+        0.384721
+      ],
+      "origen": "estado 56",
+      "glosa": "Depreciaciones"
+    },
+    {
+      "label": "Gastos Legales",
+      "lado": "expense",
+      "page": 75,
+      "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+      "values": [
+        0.340566
+      ],
+      "origen": "estado 56",
+      "glosa": "Gastos Legales"
+    },
+    {
+      "label": "Mantenciones",
+      "lado": null,
+      "page": 75,
+      "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+      "values": [
+        0.060725
+      ],
+      "origen": "estado 56",
+      "glosa": "Mantenciones"
+    },
+    {
+      "label": "Remuneración administración",
+      "lado": null,
+      "page": 75,
+      "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+      "values": [
+        1.239972
+      ],
+      "origen": "estado 56",
+      "glosa": "Remuneración administración"
+    },
+    {
+      "label": "Otros gastos de administración",
+      "lado": "expense",
+      "page": 75,
+      "section": "Gastos Tesorería no considerados en convenio (*)          24.757                   - / Otros costos                                             276.816          337.084 / Costo de ventas                                       10.024.755         8.728.553 / -                - / -                -",
+      "values": [
+        0.774845
+      ],
+      "origen": "estado 56",
+      "glosa": "Otros gastos de administración"
+    },
+    {
+      "label": "Costo de venta jugadores -",
+      "lado": "expense",
+      "page": 75,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        0.04166
+      ],
+      "origen": "estado 55",
+      "glosa": "Costo de venta jugadores -"
+    },
+    {
+      "label": "Remuneración plantel profesional y cuerpo técnico",
+      "lado": null,
+      "page": 75,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        4.782475
+      ],
+      "origen": "estado 55",
+      "glosa": "Remuneración plantel profesional y cuerpo técnico"
+    },
+    {
+      "label": "Amortización Activos en concesión",
+      "lado": null,
+      "page": 75,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        0.694647
+      ],
+      "origen": "estado 55",
+      "glosa": "Amortización Activos en concesión"
+    },
+    {
+      "label": "Amortización pases jugadores profesionales",
+      "lado": null,
+      "page": 75,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2.341862
+      ],
+      "origen": "estado 55",
+      "glosa": "Amortización pases jugadores profesionales"
+    },
+    {
+      "label": "Costos de concentración traslados y otros",
+      "lado": "expense",
+      "page": 75,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 22. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        1.904198
+      ],
+      "origen": "estado 55",
+      "glosa": "Costos de concentración traslados y otros"
+    },
+    {
+      "label": "Gasto por impuestos utilizando la tasa legal",
+      "lado": "expense",
+      "page": 68,
+      "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2014       01.01.2013 / 31.12.2014       31.12.2013 / M$                M$",
+      "values": [
+        -0.081458
+      ],
+      "origen": "estado 46",
+      "glosa": "Gasto por impuestos utilizando la tasa legal"
+    },
+    {
+      "label": "Efecto impositivo de gastos no deducidos impositivamente",
+      "lado": "revenue",
+      "page": 68,
+      "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2014       01.01.2013 / 31.12.2014       31.12.2013 / M$                M$",
+      "values": [
+        0.890367
+      ],
+      "origen": "estado 46",
+      "glosa": "Efecto impositivo de gastos no deducidos impositivamente"
+    },
+    {
+      "label": "Otro aumento (disminución) en cargo por impuestos legales",
+      "lado": "expense",
+      "page": 68,
+      "section": "c. Conciliación del resultado contable con el resultado fiscal / que resultaría de aplicar la tasa efectiva: / 01.01.2014       01.01.2013 / 31.12.2014       31.12.2013 / M$                M$",
+      "values": [
+        -0.628847
+      ],
+      "origen": "estado 46",
+      "glosa": "Otro aumento (disminución) en cargo por impuestos legales"
+    },
+    {
+      "label": "Facturas por pagar",
+      "lado": null,
+      "page": 69,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 14. CUENTAS POR PAGAR COMERCIALES CORRIENTES",
+      "values": [
+        0.331126
+      ],
+      "origen": "estado 47",
+      "glosa": "Facturas por pagar"
+    },
+    {
+      "label": "Cuentas por pagar",
+      "lado": null,
+      "page": 69,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 14. CUENTAS POR PAGAR COMERCIALES CORRIENTES",
+      "values": [
+        0.812717
+      ],
+      "origen": "estado 47",
+      "glosa": "Cuentas por pagar"
+    },
+    {
+      "label": "Retenciones por pagar",
+      "lado": null,
+      "page": 69,
+      "section": "BLANCO Y NEGRO S.A. / NOTAS A LOS ESTADOS FINANCIEROS CONSOLIDADOS / 14. CUENTAS POR PAGAR COMERCIALES CORRIENTES",
+      "values": [
+        0.323957
+      ],
+      "origen": "estado 47",
+      "glosa": "Retenciones por pagar"
+    },
+    {
+      "label": "Otros activos financieros corrientes",
+      "lado": null,
+      "page": 76,
+      "section": "24. DIFERENCIA DE CAMBIO",
+      "values": [
+        0.031514
+      ],
+      "origen": "estado 58",
+      "glosa": "Otros activos financieros corrientes"
+    },
+    {
+      "label": "Deudores comerciales y otras cuentas por cobrar corrientes",
+      "lado": null,
+      "page": 76,
+      "section": "24. DIFERENCIA DE CAMBIO",
+      "values": [
+        -0.020516
+      ],
+      "origen": "estado 58",
+      "glosa": "Deudores comerciales y otras cuentas por cobrar corrientes"
+    },
+    {
+      "label": "Cuentas por pagar comerciales y otras cuentas por pagar",
+      "lado": null,
+      "page": 76,
+      "section": "24. DIFERENCIA DE CAMBIO",
+      "values": [
+        -0.534251
+      ],
+      "origen": "estado 58",
+      "glosa": "Cuentas por pagar comerciales y otras cuentas por pagar"
+    },
+    {
+      "label": "Club(**)",
+      "lado": "revenue",
+      "page": 74,
+      "section": "Ingresos por venta de jugadores formados por el",
+      "values": [
+        317.806
+      ],
+      "origen": "estado 53",
+      "glosa": "Club(**)"
+    },
+    {
+      "label": "Ingresos por publicidad",
+      "lado": "revenue",
+      "page": 74,
+      "section": "Ingresos por venta de jugadores formados por el",
+      "values": [
+        10471.425
+      ],
+      "origen": "estado 53",
+      "glosa": "Ingresos por publicidad"
+    },
+    {
+      "label": "Otros",
+      "lado": "revenue",
+      "page": 74,
+      "section": "Ingresos por venta de jugadores formados por el",
+      "values": [
+        283.682
+      ],
+      "origen": "estado 53",
+      "glosa": "Otros"
+    }
+  ]
+}

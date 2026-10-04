@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/España/Levante UD/cuentas-anuales-consolidadas-2024-2025.md",
+ "generado": "2026-10-02T00:17:39.406Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Datos expresados en miles de euros)",
+ "caja": {
+  "lineas": [
+   356
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   377,
+   372,
+   378
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda con entidades de crédito solo a corto plazo (L377); se incluyen 'Otros pasivos financieros' LP y CP (L372, L378), que contienen préstamos participativos de LaLiga (Plan Impulso), aunque podrían incluir deudas por traspasos o concursales. Se excluyen las deudas con empresas del grupo (L373, L379), pese a que incluyen el préstamo participativo de Bizas Capital (4.766,62 miles €)."
+}

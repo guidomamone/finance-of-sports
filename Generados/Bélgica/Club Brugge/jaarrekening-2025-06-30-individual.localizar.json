@@ -1,0 +1,28 @@
+{
+ "pdf": "Clubes/Bélgica/Club Brugge/jaarrekening-2025-06-30-individual.pdf",
+ "md": "Clubes/Bélgica/Club Brugge/jaarrekening-2025-06-30-individual.md",
+ "cierre": "2025-06-30",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:55:37.040Z",
+ "paginas_resultados": [
+  9,
+  10
+ ],
+ "paginas_notas_ingresos": [
+  26,
+  28,
+  29
+ ],
+ "paginas_notas_gastos": [
+  26,
+  27,
+  28,
+  29
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Belgian NBB standard model (VOL) with amounts in euros shown without decimals, e.g. 'VASTE ACTIVA 21/28 74.852.045'; header '2025 EUR'",
+ "moneda": "EUR",
+ "columna_ejercicio": "Boekjaar",
+ "perimetro": "individual",
+ "observaciones": "Statutory (individual) annual accounts filed with the NBB under the full model (VOL). The income statement (Resultatenrekening, VOL-kap 4) runs across pp. 9-10. Notes 6.10 (operating results), 6.11 (financial results) and 6.12 (non-recurring income and expenses) break down the line items. A consolidated set of accounts exists (p. 38) but is not included in this document. The scale is inferred from the standard euro format, not from an explicit phrase."
+}

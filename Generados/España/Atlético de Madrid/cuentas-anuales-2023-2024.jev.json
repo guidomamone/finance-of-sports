@@ -1,0 +1,697 @@
+{
+ "md": "Clubes/España/Atlético de Madrid/cuentas-anuales-2023-2024.md",
+ "generatedAt": "2026-09-30T22:49:08.659Z",
+ "rubrosHuella": "1daf2ea436ac2c17b5ed3438856ac8c2e702a45d",
+ "rubros": [
+  {
+   "label": "Con origen en el ejercicio",
+   "lado": null,
+   "page": 65,
+   "section": "EJERCICIO 2023/2024                          Cuenta Pérdidas y Ganancias / imputados a patrimonio / Permanentes: / Gastos no deducibles                                          558.045,77 / Temporarias:",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1562
+  },
+  {
+   "label": "BASE IMPONIBLE",
+   "lado": null,
+   "page": 65,
+   "section": "EJERCICIO 2023/2024                          Cuenta Pérdidas y Ganancias / imputados a patrimonio / Permanentes: / Gastos no deducibles                                          558.045,77 / Temporarias:",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1539
+  },
+  {
+   "label": "E. SALDO, FINAL EJERCICIO 2022/2023",
+   "lado": null,
+   "page": 11,
+   "section": "Club Atlético de Madrid, S.A.D. / Subvenciones, / Capital                                            Resultados del      Resultado del / Escriturado                                         ejercicio anterior     ejercicio / legados recibidos",
+   "choice": "other_expenses",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_expenses",
+     0.52
+    ],
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1564
+  },
+  {
+   "label": "Con origen en ejercicios anteriores",
+   "lado": null,
+   "page": 65,
+   "section": "EJERCICIO 2023/2024                          Cuenta Pérdidas y Ganancias / imputados a patrimonio / Permanentes: / Gastos no deducibles                                          558.045,77 / Temporarias:",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.61
+    ],
+    [
+     "exceptional_items",
+     0.38
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1644
+  },
+  {
+   "label": "I. Total ingresos y gastos reconocidos.",
+   "lado": null,
+   "page": 11,
+   "section": "Club Atlético de Madrid, S.A.D. / Subvenciones, / Capital                                            Resultados del      Resultado del / Escriturado                                         ejercicio anterior     ejercicio / legados recibidos",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "D. SALDO AJUSTADO , INICIO EJERCICIO 2022/2023",
+   "lado": null,
+   "page": 11,
+   "section": "Club Atlético de Madrid, S.A.D. / Subvenciones, / Capital                                            Resultados del      Resultado del / Escriturado                                         ejercicio anterior     ejercicio / legados recibidos",
+   "choice": "other_income",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_income",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1568
+  },
+  {
+   "label": "E. SALDO, FINAL EJERCICIO 2023/2024",
+   "lado": null,
+   "page": 11,
+   "section": "Club Atlético de Madrid, S.A.D. / Subvenciones, / Capital                                            Resultados del      Resultado del / Escriturado                                         ejercicio anterior     ejercicio / legados recibidos",
+   "choice": "other_income",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1554
+  },
+  {
+   "label": "III. Otras variaciones del patrimonio neto.",
+   "lado": null,
+   "page": 11,
+   "section": "Club Atlético de Madrid, S.A.D. / Subvenciones, / Capital                                            Resultados del      Resultado del / Escriturado                                         ejercicio anterior     ejercicio / legados recibidos",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1511
+  },
+  {
+   "label": "Dotación Reserva de revalorización",
+   "lado": null,
+   "page": 65,
+   "section": "EJERCICIO 2023/2024                          Cuenta Pérdidas y Ganancias / imputados a patrimonio / Permanentes: / Gastos no deducibles                                          558.045,77 / Temporarias:",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "other_amortisation",
+     0.11
+    ],
+    [
+     "depreciation",
+     0.08
+    ]
+   ],
+   "tokens": 1420
+  },
+  {
+   "label": "Compensación Bases Negativas",
+   "lado": null,
+   "page": 65,
+   "section": "EJERCICIO 2023/2024                          Cuenta Pérdidas y Ganancias / imputados a patrimonio / Permanentes: / Gastos no deducibles                                          558.045,77 / Temporarias:",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ]
+   ],
+   "tokens": 1377
+  },
+  {
+   "label": "Ingresos por abonados y socios",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "season_tickets",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "season_tickets",
+     0.93
+    ],
+    [
+     "member_dues",
+     0.03
+    ],
+    [
+     "competition_bonus",
+     0.03
+    ]
+   ],
+   "tokens": 1064
+  },
+  {
+   "label": "Ingresos competición UEFA",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "competition_bonus",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "competition_bonus",
+     0.88
+    ],
+    [
+     "broadcasting",
+     0.11
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1070
+  },
+  {
+   "label": "Otras competiciones y partidos amistosos",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "matchday_competition",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "matchday_competition",
+     0.61
+    ],
+    [
+     "competition_bonus",
+     0.36
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1102
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "competition_bonus",
+     0.15
+    ],
+    [
+     "matchday_competition",
+     0.04
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Ingresos por retransmisiones",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "broadcasting",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "broadcasting",
+     0.95
+    ],
+    [
+     "competition_bonus",
+     0.05
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Ingresos por comercialización",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.94
+    ],
+    [
+     "competition_bonus",
+     0.06
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 1088
+  },
+  {
+   "label": "Venta tiendas",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Ingresos por publicidad",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "competition_bonus",
+     0.03
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1079
+  },
+  {
+   "label": "Patrocinios",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.92
+    ],
+    [
+     "competition_bonus",
+     0.06
+    ],
+    [
+     "other_income",
+     0.02
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "Publicidad estática",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Publicidad dinámica",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "competition_bonus",
+     0.02
+    ]
+   ],
+   "tokens": 1078
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_income",
+     0.6900000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "competition_bonus",
+     0.02
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Importe neto de la cifra de negocio",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "lump_football_operations",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.88
+    ],
+    [
+     "competition_bonus",
+     0.09
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1155
+  },
+  {
+   "label": "Ingresos por servicios de construcción concesión (nota 5)",
+   "lado": "revenue",
+   "page": 79,
+   "section": "Ingresos Copa del Rey                                           3.083.104,91         - / Ingresos Supercopa de España                                   3.400.000,00          -",
+   "choice": "stadium_other",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "stadium_other",
+     0.62
+    ],
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "competition_bonus",
+     0.01
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Créditos comerciales - -",
+   "lado": "expense",
+   "page": 51,
+   "section": "Activos a valor razonable           Activos financieros a coste / con cambios en PyG                       amortizado / Créditos, derivados y otros",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1111
+  },
+  {
+   "label": "Créditos empresas grupo - -",
+   "lado": "expense",
+   "page": 51,
+   "section": "Activos a valor razonable           Activos financieros a coste / con cambios en PyG                       amortizado / Créditos, derivados y otros",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.93
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 961
+  },
+  {
+   "label": "Créditos no comerciales - -",
+   "lado": "expense",
+   "page": 51,
+   "section": "Activos a valor razonable           Activos financieros a coste / con cambios en PyG                       amortizado / Créditos, derivados y otros",
+   "choice": "other_expenses",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1112
+  },
+  {
+   "label": "Clubes adscritos a la LNFP",
+   "lado": "expense",
+   "page": 54,
+   "section": "corto plazo                                    largo plazo / coste nominal           coste amortizado         coste nominal        coste amortizado",
+   "choice": "match_organisation_expense",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.51
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ]
+   ],
+   "tokens": 961
+  },
+  {
+   "label": "Clubes no adscritos a la LNFP",
+   "lado": "expense",
+   "page": 54,
+   "section": "corto plazo                                    largo plazo / coste nominal           coste amortizado         coste nominal        coste amortizado",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.58
+    ],
+    [
+     "match_organisation_expense",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 962
+  },
+  {
+   "label": "Créditos entidades deportivas - -",
+   "lado": "expense",
+   "page": 51,
+   "section": "Activos a valor razonable           Activos financieros a coste / con cambios en PyG                       amortizado / Créditos, derivados y otros",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.75
+    ],
+    [
+     "admin_general_expense",
+     0.21
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1043
+  }
+ ]
+}

@@ -1,0 +1,775 @@
+{
+ "md": "Clubes/Colombia/La Equidad/estados-financieros-2022.md",
+ "pdf": "Clubes/Colombia/La Equidad/estados-financieros-2022.pdf",
+ "club": "la-equidad",
+ "year": 2022,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:59:03.459Z",
+ "tieOuts": {
+  "cierran": 85,
+  "noCierran": 11
+ },
+ "warnings": [
+  "11 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "43 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 81,
+  "notasUsadas": []
+ },
+ "ladoConocido": 61,
+ "rubros": [
+  {
+   "label": "Gastos De Personal",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    9.757586
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    0.186487
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    0.356384
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    1.203566
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    0.042139
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Servicios",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    0.557275
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    0.003835
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Mantenimiento Y Reparaciones",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    0.065013
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Adecuacion E Instalacion",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    0.003791
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Gastos De Viaje",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    0.727469
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    0.007743
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    1.124992
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Amortizaciones Donaciones Derechos",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    1.806643
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Derechos Deportivos",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    0.880999
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Diversos",
+   "lado": "expense",
+   "page": 33,
+   "section": "## Nota 28. Gastos Deportivos",
+   "values": [
+    1.579278
+   ],
+   "origen": "estado 43"
+  },
+  {
+   "label": "Taquilla - Venta de Boletería",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    1409.276
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Escuelas de Futbol",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    1087.716
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Publicidad y Propaganda",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    614.447
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Dimayor",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    5530.554
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Federacion Colombiana de Futbol",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    472.86
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Patrocinio",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    5431.997
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Cuota de Sostenimiento",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    52.021
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Participación CopaSuramericana",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    839.414
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Venta de Artículos Deportivos",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    99.935
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Venta Tienda Virtual",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    1.034
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Eventos",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    125
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Devoluciones en Ventas",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    -19.45
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Actividades Conexas",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    597.805
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Ingresos Fuerzas Basicas",
+   "lado": "revenue",
+   "page": 31,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 24. Ingresos de actividades ordinarias",
+   "values": [
+    55.761
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Gastos De Personal",
+   "lado": "expense",
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "values": [
+    1.215141
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Honorarios",
+   "lado": null,
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "values": [
+    0.265521
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Impuestos",
+   "lado": "expense",
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "values": [
+    0.239461
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": null,
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "values": [
+    0.003683
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Contribuciones Y Afiliaciones",
+   "lado": null,
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "values": [
+    0.000271
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Seguros",
+   "lado": null,
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "values": [
+    0.004941
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Servicios",
+   "lado": null,
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "values": [
+    0.093279
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Gastos Legales",
+   "lado": "expense",
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "values": [
+    0.002763
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Mantenimiento Y Reparaciones",
+   "lado": null,
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "values": [
+    0.001562
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Adecuacion E Instalacion",
+   "lado": null,
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "values": [
+    0.002557
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Gastos De Viaje",
+   "lado": "expense",
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "values": [
+    0.000915
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": null,
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "values": [
+    0.058699
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Diversos",
+   "lado": null,
+   "page": 33,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 27. Gastos de administración",
+   "values": [
+    0.030677
+   ],
+   "origen": "estado 42"
+  },
+  {
+   "label": "Construcciones y Edificaciones",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    3.24
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Reintegro de Otros Costos y Gastos",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    115.519
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Recobro Incapacidades",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    620.972
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Ingresos de Ejercicios Anteriores",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    42.579
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Venta Derechos Deportivos",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    3805.648
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    0.001
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Subvenciones del Estado",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    14.121
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Donacion",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    20.221
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Ajuste al Peso",
+   "lado": "revenue",
+   "page": 32,
+   "section": "## Nota 26. Otros Ingresos – Ingresos Financieros",
+   "values": [
+    0.036
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Gastos Bancarios",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "values": [
+    6.307
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Comisiones",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "values": [
+    32.172
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Intereses",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "values": [
+    1326.378
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Diferencia en Cambio",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "values": [
+    25.971
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "values": [
+    -0.01
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Costos y Gastos de Ejercicios",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "values": [
+    28.588
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Impuestos Asumidos",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "values": [
+    9.059
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Multas, Sanciones y Litigios",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "values": [
+    84.133
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Donaciones",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "values": [
+    0.563
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 34,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COMP / AFILIADO A: / ## Nota 29. Otros Gastos – Gastos Financieros",
+   "values": [
+    64.849
+   ],
+   "origen": "estado 44"
+  },
+  {
+   "label": "Ajustes Por Primera Vez Niif",
+   "lado": null,
+   "page": 30,
+   "section": "## Nota 23. Otros componentes del patrimonio",
+   "values": [
+    0.230865
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Convergencia Niif",
+   "lado": null,
+   "page": 30,
+   "section": "## Nota 23. Otros componentes del patrimonio",
+   "values": [
+    -0.595437
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Rendimientos Financieros",
+   "lado": null,
+   "page": 32,
+   "section": "No se presenta variación con el periodo reexpresado 2021 / Para el periodo 2022 el ingreso percibido por venta o prestamos de / derechos deportivos se presenta en el rubro de otros ingresos. / Ingresos Financieros",
+   "values": [
+    6.131
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "Diferencia en Cambio",
+   "lado": null,
+   "page": 32,
+   "section": "No se presenta variación con el periodo reexpresado 2021 / Para el periodo 2022 el ingreso percibido por venta o prestamos de / derechos deportivos se presenta en el rubro de otros ingresos. / Ingresos Financieros",
+   "values": [
+    39.221
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "Impuesto Diferido Pasivo",
+   "lado": "expense",
+   "page": 34,
+   "section": "## Nota 30. Gasto por impuesto",
+   "values": [
+    497.005
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "Impuesto de Renta Y Complentarios",
+   "lado": "expense",
+   "page": 34,
+   "section": "## Nota 30. Gasto por impuesto",
+   "values": [
+    154.256
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "Reserva Legal",
+   "lado": null,
+   "page": 30,
+   "section": "## Nota 22. Reserva Legal",
+   "values": [
+    0.901994
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "Costo de Venta Artículos Deportivos",
+   "lado": "expense",
+   "page": 32,
+   "section": "CLUB DEPORTIVO / LA EQUIDAD SEGUROS / WWW.EQUIDADCLUBDEPORTIVO.COOP / AFILIADO A: / ## Nota 25. Costo de Ventas",
+   "values": [
+    90.783
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Derechos Deportivos",
+   "lado": "expense",
+   "page": 19,
+   "section": "### 5.5 Gastos Deportivos",
+   "values": [
+    1.326929
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Amortizacion Cargos Diferidos",
+   "lado": "expense",
+   "page": 19,
+   "section": "### 5.5 Gastos Deportivos",
+   "values": [
+    0.054642
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Amortizacion Derechos Deportivos Donaciones",
+   "lado": "expense",
+   "page": 19,
+   "section": "### 5.5 Gastos Deportivos",
+   "values": [
+    0.482088
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Prestamo Derechos Deportivos",
+   "lado": "expense",
+   "page": 19,
+   "section": "### 5.5 Gastos Deportivos",
+   "values": [
+    0.489583
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "La Equidad Seguros De Vida O.C.",
+   "lado": "revenue",
+   "page": 35,
+   "section": "Por ventas y Servicios a:",
+   "values": [
+    367.003
+   ],
+   "origen": "estado 49"
+  },
+  {
+   "label": "La Equidad Seguros O.C.",
+   "lado": "revenue",
+   "page": 35,
+   "section": "Por ventas y Servicios a:",
+   "values": [
+    2012.95
+   ],
+   "origen": "estado 49"
+  }
+ ]
+}

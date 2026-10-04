@@ -1,0 +1,173 @@
+{
+  "club": "ofi-crete",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Grecia/OFI Crete/OFI_notes_2023-06-30.md",
+  "generatedAt": "2026-09-30T22:03:00.845Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 1,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 8,
+      "section": "## 6. Πληροφορίες σχετικά με ενσώματα και άυλα πάγια περιουσιακά στοιχεία / ### 6.1. Ιδιοχρησιμοποιούμενα ενσώματα πάγια περιουσιακά στοιχεία",
+      "columns": [
+        "Πίνακας μεταβολών ενσώματων πάγιων στοιχείων ιδιοχρησιμοποιούμενων",
+        "Λοιπός εξοπλισμός"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Αξία κτήσεως",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Υπόλοιπο 1.7.2021",
+          "values": [
+            "325.800,37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Προσθήκες περιόδου",
+          "values": [
+            "31.225,05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Υπόλοιπο 30.06.2022",
+          "values": [
+            "357.025,42"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Σωρευμένες αποσβέσεις και απομειώσεις",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Υπόλοιπο 1.7.2021",
+          "values": [
+            "75.601,45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Αποσβέσεις περιόδου",
+          "values": [
+            "53.459,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Υπόλοιπο 30.06.2022",
+          "values": [
+            "129.061,21"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Καθαρή λογιστική αξία 30.06.2022",
+          "values": [
+            "227.964,21"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Αξία κτήσεως",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Υπόλοιπο 1.7.2022",
+          "values": [
+            "357.025,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Προσθήκες περιόδου",
+          "values": [
+            "44.331,46"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Υπόλοιπο 30.06.2023",
+          "values": [
+            "401.356,88"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Σωρευμένες αποσβέσεις και απομειώσεις",
+          "values": [
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Υπόλοιπο 1.7.2022",
+          "values": [
+            "129.061,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Αποσβέσεις περιόδου",
+          "values": [
+            "55.591,07"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Μειώσεις αποσβέσεων περιόδου",
+          "values": [
+            "-17.929,37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Υπόλοιπο 30.06.2023",
+          "values": [
+            "166.722,91"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Καθαρή λογιστική αξία 30.06.2023",
+          "values": [
+            "234.633,97"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/ofi-crete-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"ofi-crete\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

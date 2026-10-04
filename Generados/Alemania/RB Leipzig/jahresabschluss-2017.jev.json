@@ -1,0 +1,121 @@
+{
+ "md": "Clubes/Alemania/RB Leipzig/jahresabschluss-2017.md",
+ "generatedAt": "2026-09-30T04:25:18.953Z",
+ "rubros": [
+  {
+   "label": "9. Steuern vom Einkommen und vom Ertrag",
+   "lado": null,
+   "page": 6,
+   "section": "215.044.971,13 117.053 / 7. Sonstige Zinsen und ähnliche Erträge 806,30 1 / 8. Zinsen und ähnliche Aufwendungen 1.012.672,41 593 / -1.011.866,11 -592",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1666
+  },
+  {
+   "label": "Sonstigem",
+   "lado": "revenue",
+   "page": 8,
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Beträge 2017 / Umsatzerlöse aus TEUR",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 969
+  },
+  {
+   "label": "Spielbetrieb",
+   "lado": "revenue",
+   "page": 8,
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Beträge 2017 / Umsatzerlöse aus TEUR",
+   "choice": "matchday_competition",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "matchday_competition",
+     0.87
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1068
+  },
+  {
+   "label": "Handel",
+   "lado": "revenue",
+   "page": 8,
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Beträge 2017 / Umsatzerlöse aus TEUR",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 979
+  },
+  {
+   "label": "10. Ergebnis nach Steuern",
+   "lado": null,
+   "page": 6,
+   "section": "215.044.971,13 117.053 / 7. Sonstige Zinsen und ähnliche Erträge 806,30 1 / 8. Zinsen und ähnliche Aufwendungen 1.012.672,41 593 / -1.011.866,11 -592",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.49
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 1632
+  }
+ ]
+}

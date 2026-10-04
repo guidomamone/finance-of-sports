@@ -1,0 +1,497 @@
+{
+  "md": "Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2021.md",
+  "pdf": "Clubes/Croacia/Dinamo Zagreb/financijsko-izvjesce-2021.pdf",
+  "club": "dinamozagreb-hr",
+  "year": 2021,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:59:40.552Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 43,
+    "notasUsadas": [
+      "21"
+    ]
+  },
+  "ladoConocido": 34,
+  "rubros": [
+    {
+      "label": "Rezervacije i troškovi po sudskim sporovima",
+      "lado": "expense",
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        15.365247
+      ],
+      "origen": "estado 22",
+      "glosa": "Provisiones y gastos por litigios judiciales"
+    },
+    {
+      "label": "Troškovi intelektualnih usluga",
+      "lado": "expense",
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        12.748912
+      ],
+      "origen": "estado 22",
+      "glosa": "Gastos por servicios profesionales"
+    },
+    {
+      "label": "Ispravak vrijednosti i otpis potraživanja",
+      "lado": null,
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        8.168868
+      ],
+      "origen": "estado 22",
+      "glosa": "Corrección de valor y baja de cuentas por cobrar"
+    },
+    {
+      "label": "Troškovi službenih putovanja",
+      "lado": "expense",
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        5.463702
+      ],
+      "origen": "estado 22",
+      "glosa": "Gastos de viajes y desplazamientos"
+    },
+    {
+      "label": "Troškovi energije",
+      "lado": "expense",
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        3.358442
+      ],
+      "origen": "estado 22",
+      "glosa": "Gastos de energía y suministros"
+    },
+    {
+      "label": "Troškovi reprezentacije",
+      "lado": "expense",
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        2.546706
+      ],
+      "origen": "estado 22",
+      "glosa": "Gastos de representación"
+    },
+    {
+      "label": "Donacije",
+      "lado": null,
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        2.487815
+      ],
+      "origen": "estado 22",
+      "glosa": "Donaciones"
+    },
+    {
+      "label": "Troškovi najmova",
+      "lado": "expense",
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        1.991043
+      ],
+      "origen": "estado 22",
+      "glosa": "Gastos por arrendamientos"
+    },
+    {
+      "label": "Obvezni i preventivni zdravstveni pregledi",
+      "lado": null,
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        1.106345
+      ],
+      "origen": "estado 22",
+      "glosa": "Reconocimientos médicos obligatorios y preventivos"
+    },
+    {
+      "label": "Naknade i kazne savezima",
+      "lado": null,
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        1.951194
+      ],
+      "origen": "estado 22",
+      "glosa": "Tasas y sanciones a federaciones"
+    },
+    {
+      "label": "Članarine i kotizacije",
+      "lado": null,
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        0.641475
+      ],
+      "origen": "estado 22",
+      "glosa": "Cuotas de afiliación e inscripción"
+    },
+    {
+      "label": "Sudski troškovi, takse , VIZE",
+      "lado": "expense",
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        0.502182
+      ],
+      "origen": "estado 22",
+      "glosa": "Gastos judiciales, tasas y visados"
+    },
+    {
+      "label": "Troškovi komunalnih usluga I čuvanja imovine",
+      "lado": "expense",
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        0.567298
+      ],
+      "origen": "estado 22",
+      "glosa": "Gastos de servicios municipales y vigilancia de bienes"
+    },
+    {
+      "label": "Ostali poslovni rashodi",
+      "lado": "expense",
+      "page": 19,
+      "section": "5. Ostali nerazvrstani poslovni rashodi",
+      "values": [
+        5.232483
+      ],
+      "origen": "estado 22",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Potpora za očuvanje radnih mjesta (covid 19)",
+      "lado": null,
+      "page": 19,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE ZA POSEBNE NAMJENE / BILJEŠKE UZ RAČUN DOBITI I GUBITKA / 4. Ostali nerazvrstani poslovni prihodi",
+      "values": [
+        0.085589
+      ],
+      "origen": "estado 21",
+      "glosa": "Ayudas para el mantenimiento del empleo (COVID-19)"
+    },
+    {
+      "label": "Prihodi od bonova za ručak",
+      "lado": "revenue",
+      "page": 19,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE ZA POSEBNE NAMJENE / BILJEŠKE UZ RAČUN DOBITI I GUBITKA / 4. Ostali nerazvrstani poslovni prihodi",
+      "values": [
+        0.853225
+      ],
+      "origen": "estado 21",
+      "glosa": "Ingresos por vales de comida"
+    },
+    {
+      "label": "Viškovi robe na zalihi",
+      "lado": null,
+      "page": 19,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE ZA POSEBNE NAMJENE / BILJEŠKE UZ RAČUN DOBITI I GUBITKA / 4. Ostali nerazvrstani poslovni prihodi",
+      "values": [
+        0.127495
+      ],
+      "origen": "estado 21",
+      "glosa": "Sobrantes de existencias"
+    },
+    {
+      "label": "Naplaćeni troškovi po sudskim sporovima",
+      "lado": "expense",
+      "page": 19,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE ZA POSEBNE NAMJENE / BILJEŠKE UZ RAČUN DOBITI I GUBITKA / 4. Ostali nerazvrstani poslovni prihodi",
+      "values": [
+        0.10475
+      ],
+      "origen": "estado 21",
+      "glosa": "Costas y gastos judiciales cobrados"
+    },
+    {
+      "label": "Otpis obveza",
+      "lado": null,
+      "page": 19,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE ZA POSEBNE NAMJENE / BILJEŠKE UZ RAČUN DOBITI I GUBITKA / 4. Ostali nerazvrstani poslovni prihodi",
+      "values": [
+        0.698474
+      ],
+      "origen": "estado 21",
+      "glosa": "Baja de pasivos"
+    },
+    {
+      "label": "Prihod od dohotka u naravi",
+      "lado": "revenue",
+      "page": 19,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE ZA POSEBNE NAMJENE / BILJEŠKE UZ RAČUN DOBITI I GUBITKA / 4. Ostali nerazvrstani poslovni prihodi",
+      "values": [
+        0.21496
+      ],
+      "origen": "estado 21",
+      "glosa": "Ingresos por retribuciones en especie"
+    },
+    {
+      "label": "Ostali prihodi",
+      "lado": "revenue",
+      "page": 19,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / BILJEŠKE UZ KONSOLIDIRANE FINANCIJSKE IZVJEŠTAJE ZA POSEBNE NAMJENE / BILJEŠKE UZ RAČUN DOBITI I GUBITKA / 4. Ostali nerazvrstani poslovni prihodi",
+      "values": [
+        0.216969
+      ],
+      "origen": "estado 21",
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "oglašavanja",
+      "lado": "revenue",
+      "page": 6,
+      "section": "Ostali nerazvrstani prihodi od sponzorstva i",
+      "values": [
+        6.293001
+      ],
+      "origen": "estado 2",
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Prava emitiranja - Nacionalna natjecanja",
+      "lado": "revenue",
+      "page": 6,
+      "section": "Ostali nerazvrstani prihodi od sponzorstva i",
+      "values": [
+        3.18282
+      ],
+      "origen": "estado 2",
+      "glosa": "Derechos de retransmisión - Competiciones nacionales"
+    },
+    {
+      "label": "Ostali nerazvrstani prihodi od emitiranja",
+      "lado": "revenue",
+      "page": 6,
+      "section": "Ostali nerazvrstani prihodi od sponzorstva i",
+      "values": [
+        0.255514
+      ],
+      "origen": "estado 2",
+      "glosa": "Otros ingresos de retransmisión no clasificados"
+    },
+    {
+      "label": "Komercijalni prihodi - Nacionalna natjecanja",
+      "lado": "revenue",
+      "page": 6,
+      "section": "Ostali nerazvrstani prihodi od sponzorstva i",
+      "values": [
+        0.733608
+      ],
+      "origen": "estado 2",
+      "glosa": "Ingresos comerciales - Competiciones nacionales"
+    },
+    {
+      "label": "Komercijalni prihodi - Prodaja proizvoda",
+      "lado": "revenue",
+      "page": 6,
+      "section": "Ostali nerazvrstani prihodi od sponzorstva i",
+      "values": [
+        12.932211
+      ],
+      "origen": "estado 2",
+      "glosa": "Ingresos comerciales - Venta de productos"
+    },
+    {
+      "label": "Plaće igraća",
+      "lado": "expense",
+      "page": 7,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -158.125686
+      ],
+      "origen": "estado 6",
+      "glosa": "Salarios de jugadores"
+    },
+    {
+      "label": "Porezi i doprinosi - igrači",
+      "lado": "expense",
+      "page": 7,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -9.794494
+      ],
+      "origen": "estado 6",
+      "glosa": "Impuestos y cargas sociales - Jugadores"
+    },
+    {
+      "label": "Plaće ostalih zaposlenika",
+      "lado": null,
+      "page": 7,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -42.538341
+      ],
+      "origen": "estado 6",
+      "glosa": "Salarios del resto del personal"
+    },
+    {
+      "label": "Porezi i doprinosi - ostali zaposlenici",
+      "lado": "expense",
+      "page": 7,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        -10.544028
+      ],
+      "origen": "estado 6",
+      "glosa": "Impuestos y cargas sociales - Resto del personal"
+    },
+    {
+      "label": "Prihodi od ulaznica - Nacionalna natjecanja",
+      "lado": "revenue",
+      "page": 6,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        0.80508
+      ],
+      "origen": "estado 0",
+      "glosa": "Ingresos por taquilla - Competiciones nacionales"
+    },
+    {
+      "label": "Prihodi od ulaznica - UEFA klupska natjecanja",
+      "lado": "revenue",
+      "page": 6,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        3.687553
+      ],
+      "origen": "estado 0",
+      "glosa": "Ingresos por taquilla - Competiciones de clubes UEFA"
+    },
+    {
+      "label": "Prihodi od ulaznica - godišnje ulaznice",
+      "lado": "revenue",
+      "page": 6,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        1.364005
+      ],
+      "origen": "estado 0",
+      "glosa": "Ingresos por taquilla - Abonos de temporada"
+    },
+    {
+      "label": "Prihodi od ulaznica - Članarine",
+      "lado": "revenue",
+      "page": 6,
+      "section": "GRAĐANSKI NOGOMETNI KLUB DINAMO / KONSOLIDRANI RAČUN DOBITI I GUBITKA",
+      "values": [
+        1.225376
+      ],
+      "origen": "estado 0",
+      "glosa": "Ingresos por taquilla - Cuotas de socios"
+    },
+    {
+      "label": "samouprave",
+      "lado": "revenue",
+      "page": 6,
+      "section": "Donacije i dotacije ili drugi iznosi od države i lokalne",
+      "values": [
+        11.246214
+      ],
+      "origen": "estado 5",
+      "glosa": "Administración local"
+    },
+    {
+      "label": "Donacije nepovezanih strana",
+      "lado": "revenue",
+      "page": 6,
+      "section": "Donacije i dotacije ili drugi iznosi od države i lokalne",
+      "values": [
+        0.747417
+      ],
+      "origen": "estado 5",
+      "glosa": "Donaciones de partes no vinculadas"
+    },
+    {
+      "label": "zajmove",
+      "lado": "expense",
+      "page": 20,
+      "section": "Troškovi kamata na prekoračenja po bankovnim računima i",
+      "values": [
+        -2.027891
+      ],
+      "origen": "estado 24",
+      "glosa": "Préstamos"
+    },
+    {
+      "label": "Troškovi kamata - financijski leasing",
+      "lado": "expense",
+      "page": 20,
+      "section": "Troškovi kamata na prekoračenja po bankovnim računima i",
+      "values": [
+        -0.004789
+      ],
+      "origen": "estado 24",
+      "glosa": "Gastos por intereses - Arrendamiento financiero"
+    },
+    {
+      "label": "Negativne tečajne razlike",
+      "lado": "expense",
+      "page": 20,
+      "section": "Troškovi kamata na prekoračenja po bankovnim računima i",
+      "values": [
+        -0.562096
+      ],
+      "origen": "estado 24",
+      "glosa": "Diferencias negativas de cambio"
+    },
+    {
+      "label": "Ostali financijski troškovi",
+      "lado": "expense",
+      "page": 20,
+      "section": "Troškovi kamata na prekoračenja po bankovnim računima i",
+      "values": [
+        -0.123025
+      ],
+      "origen": "estado 24",
+      "glosa": "Otros gastos financieros"
+    },
+    {
+      "label": "imovine",
+      "lado": "expense",
+      "page": 10,
+      "section": "Gotovinski primici od prodaje dugotrajne materijalne / imovine 18.500 - / Gotovinski izdaci za stjecanje dugotrajne materijalne",
+      "values": [
+        -3.014841
+      ],
+      "origen": "estado 15",
+      "glosa": "Activos"
+    },
+    {
+      "label": "Ostali gotovinski primici/izdaci od/za ulaganja",
+      "lado": "expense",
+      "page": 10,
+      "section": "Gotovinski primici od prodaje dugotrajne materijalne / imovine 18.500 - / Gotovinski izdaci za stjecanje dugotrajne materijalne",
+      "values": [
+        0.114259
+      ],
+      "origen": "estado 15",
+      "glosa": "Otros cobros/pagos de efectivo por actividades de inversión"
+    },
+    {
+      "label": "Gotovinski priljev/odljev od ulaganja",
+      "lado": "expense",
+      "page": 10,
+      "section": "Gotovinski primici od prodaje dugotrajne materijalne / imovine 18.500 - / Gotovinski izdaci za stjecanje dugotrajne materijalne",
+      "values": [
+        113.422079
+      ],
+      "origen": "estado 15",
+      "glosa": "Flujo de efectivo de actividades de inversión"
+    }
+  ]
+}

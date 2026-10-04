@@ -1,0 +1,177 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2017-18.md",
+ "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2017-18.pdf",
+ "club": "panetolikos",
+ "year": 2018,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:03:26.639Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 15,
+  "notasUsadas": [
+   "19"
+  ]
+ },
+ "ladoConocido": 9,
+ "rubros": [
+  {
+   "label": "ποσά σε €",
+   "lado": null,
+   "page": 15,
+   "section": "Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    0.00003
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 15,
+   "section": "Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    0.377138
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 15,
+   "section": "Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    3.850553
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 15,
+   "section": "Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    2.122479
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 15,
+   "section": "Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    -0.331746
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Διοικητικό προσωπικό",
+   "lado": "expense",
+   "page": 22,
+   "section": "",
+   "values": [
+    0.012
+   ],
+   "origen": "nota 19 (ancla 9)",
+   "ancla": "Έξοδα διάθεσης"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 15,
+   "section": "Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    -0.045497
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Ποδοσφαιριστές",
+   "lado": "expense",
+   "page": 22,
+   "section": "",
+   "values": [
+    0.034
+   ],
+   "origen": "nota 19 (ancla 9)",
+   "ancla": "Έξοδα διάθεσης"
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "revenue",
+   "page": 15,
+   "section": "Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    0.000858
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 15,
+   "section": "Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    -0.009159
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Κάλυψης Παγίας περιουσίας μέσω ιδίων κεφαλαίων",
+   "lado": null,
+   "page": 4,
+   "section": "## Α.ΕΚΘΕΣΗ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ / ### ΟΙΚΟΝΟΜΙΚΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΕΤΑΙΡΕΙΑΣ / ### ΒΑΣΙΚΟΙ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΟΙ ΔΕΙΚΤΕΣ ΑΠΟΔΟΣΗΣ",
+   "values": [
+    3.3441
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Κεφαλαιακής Ανεξαρτησίας",
+   "lado": null,
+   "page": 4,
+   "section": "## Α.ΕΚΘΕΣΗ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ / ### ΟΙΚΟΝΟΜΙΚΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΕΤΑΙΡΕΙΑΣ / ### ΒΑΣΙΚΟΙ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΟΙ ΔΕΙΚΤΕΣ ΑΠΟΔΟΣΗΣ",
+   "values": [
+    3.3441
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Παγιοποίησης Περιουσίας",
+   "lado": null,
+   "page": 4,
+   "section": "## Α.ΕΚΘΕΣΗ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ / ### ΟΙΚΟΝΟΜΙΚΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΕΤΑΙΡΕΙΑΣ / ### ΒΑΣΙΚΟΙ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΟΙ ΔΕΙΚΤΕΣ ΑΠΟΔΟΣΗΣ",
+   "values": [
+    4.330159
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Κυκλοφοριακής Ρευστότητας",
+   "lado": null,
+   "page": 4,
+   "section": "## Α.ΕΚΘΕΣΗ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ / ### ΟΙΚΟΝΟΜΙΚΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΕΤΑΙΡΕΙΑΣ / ### ΒΑΣΙΚΟΙ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΟΙ ΔΕΙΚΤΕΣ ΑΠΟΔΟΣΗΣ",
+   "values": [
+    1.119159
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Κυκλοφοριακής Ταχύτητας Ιδίων κεφαλαίων",
+   "lado": null,
+   "page": 4,
+   "section": "## Α.ΕΚΘΕΣΗ ΔΙΟΙΚΗΤΙΚΟΥ ΣΥΜΒΟΥΛΙΟΥ / ### ΟΙΚΟΝΟΜΙΚΑ ΑΠΟΤΕΛΕΣΜΑΤΑ ΕΤΑΙΡΕΙΑΣ / ### ΒΑΣΙΚΟΙ ΧΡΗΜΑΤΟΟΙΚΟΝΟΜΙΚΟΙ ΔΕΙΚΤΕΣ ΑΠΟΔΟΣΗΣ",
+   "values": [
+    0.377138
+   ],
+   "origen": "estado 1"
+  }
+ ]
+}

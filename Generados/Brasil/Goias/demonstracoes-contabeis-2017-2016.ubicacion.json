@@ -1,0 +1,283 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2017-2016.pdf",
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2017-2016.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-02T22:46:54.593Z",
+ "indiceAmpliado": 2,
+ "bloques": {
+  "b1": {
+   "pagina": 6,
+   "lineas": [
+    116,
+    137
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 7,
+   "lineas": [
+    161,
+    173
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    197,
+    201
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    225,
+    231
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 10,
+   "lineas": [
+    253,
+    291
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 15,
+   "lineas": [
+    509,
+    514
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    520,
+    527
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    531,
+    537
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    547,
+    551
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    571,
+    574
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    580,
+    593
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 17,
+   "lineas": [
+    613,
+    635
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 18,
+   "lineas": [
+    655,
+    674
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 19,
+   "lineas": [
+    698,
+    718
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 20,
+   "lineas": [
+    740,
+    785
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 21,
+   "lineas": [
+    805,
+    812
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 21,
+   "lineas": [
+    816,
+    823
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 21,
+   "lineas": [
+    827,
+    844
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 22,
+   "lineas": [
+    864,
+    869
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 22,
+   "lineas": [
+    875,
+    890
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 22,
+   "lineas": [
+    902,
+    907
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 23,
+   "lineas": [
+    929,
+    934
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 23,
+   "lineas": [
+    942,
+    954
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 23,
+   "lineas": [
+    960,
+    973
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 24,
+   "lineas": [
+    993,
+    1010
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 24,
+   "lineas": [
+    1014,
+    1024
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 25,
+   "lineas": [
+    1042,
+    1070
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 26,
+   "lineas": [
+    1096,
+    1108
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 27,
+   "lineas": [
+    1156,
+    1161
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 27,
+   "lineas": [
+    1174,
+    1178
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [
+  "b23",
+  "b26",
+  "b27"
+ ],
+ "notas_gastos": [
+  "b24",
+  "b25"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "(EM REAIS)",
+ "moneda": "BRL",
+ "columna_ejercicio": "2017",
+ "columna_anterior": "2016",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el cuadro 'Resultado por atividade' (b27) para abrir por segmento (futebol profissional, base, social e administrativo) los renglones del estado?",
+   "propuesta": "sí",
+   "tema": "usar-cuadro-por-segmento",
+   "renglon": "",
+   "texto": "El reintento pide filas de otras secciones; la columna 'Social e administrativo' de b27 puede aportar importes que las notas 18-21 no abren por actividad.",
+   "bloques": [
+    "b27"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Estado de resultados en b2 (pág. 7), en reales. Notas: 18 Receita líquida (b23), 19 Custos futebol (b24), 20 Despesas administrativas (b25), 21 Resultado financeiro (b26). b27 es resultado por atividade con columnas Futebol profissional, Futebol de base, Social e administrativo y Total; se incluye por el pedido de otras secciones. No hay estado consolidado."
+}

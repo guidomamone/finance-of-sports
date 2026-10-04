@@ -1,0 +1,880 @@
+{
+  "club": "viborg-dk",
+  "year": 2012,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Dinamarca/Viborg FF/aarsrapport-2012-06-30.md",
+  "generatedAt": "2026-09-30T22:00:10.129Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 115,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 13,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 10,
+      "section": "DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Nettoomsætning",
+          "values": [
+            "20.348.832",
+            "22.346.592"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omkostninger til råvarer og hjælpematerialer",
+          "values": [
+            "-10.431.322",
+            "-12.117.325"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre eksterne omkostninger",
+          "values": [
+            "-1.123.791",
+            "-1.258.438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bruttofortjeneste",
+          "values": [
+            "8.793.719",
+            "8.970.829"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Personaleomkostninger",
+          "values": [
+            "-9.377.493",
+            "-12.778.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat før af- og nedskrivninger",
+          "values": [
+            "-583.774",
+            "-3.807.671"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Af- og nedskrivninger af materielle og immaterielle",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "anlægsaktiver",
+          "values": [
+            "-721.031",
+            "-930.626"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat af primær drift",
+          "values": [
+            "-1.304.805",
+            "-4.738.297"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre finansielle indtægter",
+          "values": [
+            "380.171",
+            "374.148"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre finansielle omkostninger",
+          "values": [
+            "-427.802",
+            "-627.521"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultat før skat",
+          "values": [
+            "-1.352.436",
+            "-4.991.670"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Skat af årets resultat 0 0 / Årets resultat -1.352.436 -4.991.670 / Forslag til resultatdisponering",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overført resultat",
+          "values": [
+            "-1.352.436",
+            "-4.991.670"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I alt",
+          "values": [
+            "-1.352.436",
+            "-4.991.670"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "AKTIVER / DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Erhvervede rettigheder",
+          "values": [
+            "3.698.757",
+            "5.054.508"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immaterielle anlægsaktiver i alt",
+          "values": [
+            "3.698.757",
+            "5.054.508"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Grunde og bygninger",
+          "values": [
+            "1.717.156",
+            "1.717.156"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre anlæg, driftsmateriel og inventar",
+          "values": [
+            "3.901.015",
+            "4.619.657"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materielle anlægsaktiver i alt",
+          "values": [
+            "5.618.171",
+            "6.336.813"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre værdipapirer og kapitalandele",
+          "values": [
+            "988.447",
+            "911.588"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre tilgodehavender",
+          "values": [
+            "89.710",
+            "207.508"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finansielle anlægsaktiver i alt",
+          "values": [
+            "1.078.157",
+            "1.119.096"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anlægsaktiver i alt",
+          "values": [
+            "10.395.085",
+            "12.510.417"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Råvarer og hjælpematerialer",
+          "values": [
+            "378.156",
+            "408.956"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Varebeholdninger i alt",
+          "values": [
+            "378.156",
+            "408.956"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgodehavender fra salg og tjenesteydelser",
+          "values": [
+            "1.570.712",
+            "3.195.770"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Udskudt skatteaktiv",
+          "values": [
+            "4.494.000",
+            "4.494.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre tilgodehavender",
+          "values": [
+            "150.543",
+            "2.229.555"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodeafgrænsningsposter",
+          "values": [
+            "135.205",
+            "126.944"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgodehavender i alt",
+          "values": [
+            "6.350.460",
+            "10.046.269"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Likvide beholdninger",
+          "values": [
+            "19.418",
+            "51.727"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omsætningsaktiver i alt",
+          "values": [
+            "6.748.034",
+            "10.506.952"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aktiver i alt",
+          "values": [
+            "17.143.119",
+            "23.017.369"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "PASSIVER / DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Selskabskapital",
+          "values": [
+            "35.394.000",
+            "35.394.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overført resultat",
+          "values": [
+            "-30.161.744",
+            "-28.837.608"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egenkapital i alt",
+          "values": [
+            "5.232.256",
+            "6.556.392"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gæld til realkreditinstitutter",
+          "values": [
+            "1.140.000",
+            "1.140.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Langfristede gældsforpligtelser i alt",
+          "values": [
+            "1.140.000",
+            "1.140.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gæld til kreditinstitutter",
+          "values": [
+            "5.707.868",
+            "7.629.598"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leverandører af varer og tjenesteydelser",
+          "values": [
+            "1.340.676",
+            "2.109.724"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anden gæld",
+          "values": [
+            "3.252.258",
+            "3.552.521"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Periodeafgrænsningsposter",
+          "values": [
+            "470.061",
+            "2.029.134"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kortfristede gældsforpligtelser i alt",
+          "values": [
+            "10.770.863",
+            "15.320.977"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gældsforpligtelser i alt",
+          "values": [
+            "11.910.863",
+            "16.460.977"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passiver i alt",
+          "values": [
+            "17.143.119",
+            "23.017.369"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Lønninger",
+          "values": [
+            "7.806.631",
+            "10.712.589"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pensioner",
+          "values": [
+            "513.148",
+            "525.024"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andre omkostninger til social sikring",
+          "values": [
+            "74.780",
+            "102.714"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Personaleomkostninger i øvrigt",
+          "values": [
+            "982.934",
+            "1.438.173"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ialt",
+          "values": [
+            "9.377.493",
+            "12.778.500"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "Viborg F.F. Prof. Fodbold A/S / Noter / 3. Immaterielle anlægsaktiver / Erhvervede ret- / Beløb i DKK tigheder",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kostpris pr.",
+          "values": [
+            "30.06.11",
+            "9.782.466"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang i året",
+          "values": [
+            "442.195"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afgang i året",
+          "values": [
+            "-1.064.140"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kostpris pr.",
+          "values": [
+            "30.06.12",
+            "9.160.521"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Af- og nedskrivninger pr.",
+          "values": [
+            "30.06.11",
+            "4.727.958"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afskrivninger i året",
+          "values": [
+            "1.797.946"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilbageførsel af af- og nedskrivninger vedr. årets afgang",
+          "values": [
+            "-1.064.140"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Af- og nedskrivninger pr.",
+          "values": [
+            "30.06.12",
+            "5.461.764"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Regnskabsmæssig værdi pr.",
+          "values": [
+            "30.06.12",
+            "3.698.757"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "4. Materielle anlægsaktiver / Andre anlæg, / Grunde og driftsmateriel / Beløb i DKK bygninger og inventar",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kostpris pr.",
+          "values": [
+            "30.06.11",
+            "1.717.156",
+            "6.796.047"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilgang i året",
+          "values": [
+            "26.389"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afgang i året",
+          "values": [
+            "-366.563"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kostpris pr.",
+          "values": [
+            "30.06.12",
+            "1.717.156",
+            "6.455.873"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Af- og nedskrivninger pr. 30.06.11",
+          "values": [
+            "2.176.391"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afskrivninger i året",
+          "values": [
+            "721.862"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tilbageførsel af af- og nedskrivninger vedr. årets afgang",
+          "values": [
+            "-349.395"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Af- og nedskrivninger pr. 30.06.12",
+          "values": [
+            "2.554.858"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Regnskabsmæssig værdi pr.",
+          "values": [
+            "30.06.12",
+            "1.717.156",
+            "3.901.015"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Andre tilgode- pirer og kapital- / Beløb i DKK havender andele / Kostpris pr. 30.06.11 207.507 999.653 / Tilgang i året 38.910 0 / Afgang i året -156.707 0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kostpris pr.",
+          "values": [
+            "30.06.12",
+            "89.710",
+            "999.653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opskrivninger pr. 30.06.11",
+          "values": [
+            "-88.064"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opskrivninger i året",
+          "values": [
+            "76.858"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Opskrivninger pr. 30.06.12",
+          "values": [
+            "-11.206"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Regnskabsmæssig værdi pr.",
+          "values": [
+            "30.06.12",
+            "89.710",
+            "988.447"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "6. Egenkapital / Selskabs- Overført / Beløb i DKK kapital resultat",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Egenkapitalopgørelse 01.07.10 -",
+          "values": [
+            "30.06.11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo pr.",
+          "values": [
+            "01.07.10",
+            "34.200.000",
+            "-23.599.344"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Kontant kapitalforhøjelse 1.194.000 0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Omkostninger ved kapitalændringer og udbytteudlodninger",
+          "values": [
+            "-33.544"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Køb af egne kapitalandele",
+          "values": [
+            "-525.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salg af egne kapitalandele",
+          "values": [
+            "254.550"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forslag til resultatdisponering",
+          "values": [
+            "-4.991.670"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overført fra overkurs ved emission",
+          "values": [
+            "57.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo pr.",
+          "values": [
+            "30.06.11",
+            "35.394.000",
+            "-28.837.608"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Egenkapitalopgørelse 01.07.11 -",
+          "values": [
+            "30.06.12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo pr.",
+          "values": [
+            "01.07.11",
+            "35.394.000",
+            "-28.837.608"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salg af egne kapitalandele",
+          "values": [
+            "28.300"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forslag til resultatdisponering",
+          "values": [
+            "-1.352.436"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo pr.",
+          "values": [
+            "30.06.12",
+            "35.394.000",
+            "-30.161.744"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "Viborg F.F. Prof. Fodbold A/S / Noter / 6. Egenkapital - fortsat - / Bevægelser på selskabskapital i regnskabsåret og de 4 foregående regnskabsår: / DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo pr.",
+          "values": [
+            "30.06.07",
+            "10.587.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitalforhøjelse",
+          "values": [
+            "16.07.07",
+            "1.517.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitalforhøjelse",
+          "values": [
+            "28.04.08",
+            "20.896.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitalforhøjelse",
+          "values": [
+            "01.06.10",
+            "1.200.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitalforhøjelse",
+          "values": [
+            "13.05.11",
+            "1.194.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo pr.",
+          "values": [
+            "30.06.12",
+            "35.394.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "DKK DKK",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Næste år",
+          "values": [
+            "1.082.600",
+            "997.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2-bår",
+          "values": [
+            "4.141.295",
+            "2.560.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efter 5 år",
+          "values": [
+            "640.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I alt",
+          "values": [
+            "5.223.895",
+            "4.197.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "dk",
+    "query": "Viborg FF",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

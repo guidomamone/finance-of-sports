@@ -1,0 +1,495 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.md",
+ "generado": "2026-10-03T23:03:06.165Z",
+ "estado": "ok",
+ "clubId": "fortalezaceif-co",
+ "year": 2019,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf",
+   "campo": "resultado-final",
+   "valor": "(52,122)",
+   "linea": 455,
+   "motivo": "Localizar (notas como estado) no vio el resultado impreso y el año quedó como fuente. 'Utilidad Contable' de la liquidación del impuesto 2019; el documento 2020 lo imprime como 'Resultado Año 2019 (52,122)'.",
+   "evidencia": "pág. 13 del visor (sin número al pie), .md L455; estados-financieros-2020.md L829",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf",
+   "campo": "fila",
+   "valor": "(48,426)",
+   "linea": 1110,
+   "etiqueta": "Costos financieros",
+   "lado": "financiero",
+   "reemplaza": "Total Costos Financieros",
+   "motivo": "El total de costos financieros está impreso en positivo y entraba sumando como ingreso; el impuesto calculado daba 114.320 en vez de 17.462.",
+   "evidencia": ".md L1110 'Total Costos Financieros 48,426'",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2019.pdf",
+   "campo": "sin-dudas",
+   "valor": null,
+   "linea": null,
+   "motivo": "Guido 2026-10-02: el año cierra por ajuste manual; las dudas de localizar y extraer no vuelven a la cola.",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "ingresos 3463.947 - gastos 3450.175 ± financiero -48.426 ± impuesto 0 no da el impreso -52.122 → aceptado por ajuste manual (resultado final (52,122))"
+  },
+  {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "-52.122 por ajuste manual ((52,122): Localizar (notas como estado) no vio el resultado impreso y el año quedó como fuente. 'Utilidad Contable' de la liquidación del impuesto 2019; el documento 2020 lo imprime como 'Resultado Año 2019 (52,122)'.); impuesto deducido 17.468 (antes de impuestos -34.654; el documento imprimía 0)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2018 de este documento suma ingresos 6420.971; el sitio tiene 6420.964"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2019: 3463.947 en este documento y 3463.945 en estados-financieros-2020.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2018: 6420.964 en estados-financieros-2018.pdf y 6420.971 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Total Costo de Ventas\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "ajuste manual: fila \"Costos financieros\" (financiero) (48,426), en lugar de \"Total Costos Financieros\" (2026-10-02, El total de costos financieros está impreso en positivo y entraba sumando como ingreso; el impuesto calculado daba 114.320 en vez de 17.462.)",
+  "ajuste manual: resultado final (52,122) (2026-10-02, Localizar (notas como estado) no vio el resultado impreso y el año quedó como fuente. 'Utilidad Contable' de la liquidación del impuesto 2019; el documento 2020 lo imprime como 'Resultado Año 2019 (52,122)'.)",
+  "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se deja afuera de la carga el cuadro de venta de derechos deportivos por equipo/jugador (b26)?",
+  "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma la 'Utilidad Contable' de b7 (52,122 entre paréntesis, pérdida) como resultado antes de impuestos del ejercicio 2019?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se usan como renglones del estado las etiquetas de los totales impresos de cada nota (ej. 'Total Gastos de Ventas'), dado que no se transcribió el título numerado de las notas?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se cargan solo los subtotales de rubro de gastos de ventas y administración (Gastos Laborales, Honorarios, etc.) y no sus partidas individuales (L863-L910, L939-L1046)?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 3463.947,
+  "gastos": 3450.175,
+  "financiero": -48.426,
+  "impuesto": 17.468,
+  "resultadoImpreso": -52.122,
+  "resultadoParaCargar": -52.122,
+  "resultadoFinal": {
+   "valor": -52.122,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0,
+   "impuestoDeducido": 17.468
+  },
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Venta De Derechos Deportivos (1)",
+   "lado": "ingreso",
+   "M": 1096.48,
+   "pagina": 21,
+   "linea": 792,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\""
+  },
+  {
+   "etiqueta": "Derechos De Televisión Nacional (2)",
+   "lado": "ingreso",
+   "M": 827.456,
+   "pagina": 21,
+   "linea": 793,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\""
+  },
+  {
+   "etiqueta": "Venta De Boletería (3)",
+   "lado": "ingreso",
+   "M": 467.677,
+   "pagina": 21,
+   "linea": 794,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\""
+  },
+  {
+   "etiqueta": "Auxilio Hotelero (4)",
+   "lado": "ingreso",
+   "M": 112.286,
+   "pagina": 21,
+   "linea": 795,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\""
+  },
+  {
+   "etiqueta": "Infraestructura",
+   "lado": "ingreso",
+   "M": 94,
+   "pagina": 21,
+   "linea": 796,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\""
+  },
+  {
+   "etiqueta": "Auxilio Arbitraje",
+   "lado": "ingreso",
+   "M": 54.063,
+   "pagina": 21,
+   "linea": 797,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\""
+  },
+  {
+   "etiqueta": "Aux Mejoramiento De Gestión Organizacional Clubes",
+   "lado": "ingreso",
+   "M": 27.273,
+   "pagina": 21,
+   "linea": 798,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\""
+  },
+  {
+   "etiqueta": "Auxilio Análisis Deportivo",
+   "lado": "ingreso",
+   "M": 21,
+   "pagina": 21,
+   "linea": 799,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\""
+  },
+  {
+   "etiqueta": "Auxilio Transporte",
+   "lado": "ingreso",
+   "M": 20.683,
+   "pagina": 21,
+   "linea": 800,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\""
+  },
+  {
+   "etiqueta": "Federación Colombiana De Futbol",
+   "lado": "ingreso",
+   "M": 19.038,
+   "pagina": 21,
+   "linea": 801,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\""
+  },
+  {
+   "etiqueta": "Convenio Entre Clubes",
+   "lado": "ingreso",
+   "M": 16.807,
+   "pagina": 21,
+   "linea": 802,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\""
+  },
+  {
+   "etiqueta": "Propaganda Y Publicidad",
+   "lado": "ingreso",
+   "M": 0.3,
+   "pagina": 21,
+   "linea": 803,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Actividades Deportivas (1)\""
+  },
+  {
+   "etiqueta": "Venta De Indumentaria (1)",
+   "lado": "ingreso",
+   "M": 214.991,
+   "pagina": 22,
+   "linea": 834,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Venta De Productos (2)\""
+  },
+  {
+   "etiqueta": "Devoluciones De Productos Comercializados",
+   "lado": "ingreso",
+   "M": -1.176,
+   "pagina": 22,
+   "linea": 835,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Venta De Productos (2)\""
+  },
+  {
+   "etiqueta": "Por Incumplimiento De Contratos (1)",
+   "lado": "ingreso",
+   "M": 265.62,
+   "pagina": 27,
+   "linea": 1086,
+   "origen": "nota que desglosa \"Total Otros Ingresos\""
+  },
+  {
+   "etiqueta": "Arrendamientos De Inmuebles (2)",
+   "lado": "ingreso",
+   "M": 150.073,
+   "pagina": 27,
+   "linea": 1087,
+   "origen": "nota que desglosa \"Total Otros Ingresos\""
+  },
+  {
+   "etiqueta": "Intereses Por Mora (3)",
+   "lado": "ingreso",
+   "M": 55.745,
+   "pagina": 27,
+   "linea": 1088,
+   "origen": "nota que desglosa \"Total Otros Ingresos\""
+  },
+  {
+   "etiqueta": "Diferencia En Cambio",
+   "lado": "ingreso",
+   "M": 13.229,
+   "pagina": 27,
+   "linea": 1089,
+   "origen": "nota que desglosa \"Total Otros Ingresos\""
+  },
+  {
+   "etiqueta": "Aprovechamientos",
+   "lado": "ingreso",
+   "M": 5.499,
+   "pagina": 27,
+   "linea": 1090,
+   "origen": "nota que desglosa \"Total Otros Ingresos\""
+  },
+  {
+   "etiqueta": "Reintegro De Otros Costos Y Gastos",
+   "lado": "ingreso",
+   "M": 2.052,
+   "pagina": 27,
+   "linea": 1091,
+   "origen": "nota que desglosa \"Total Otros Ingresos\""
+  },
+  {
+   "etiqueta": "Otros Ingresos",
+   "lado": "ingreso",
+   "M": 0.84,
+   "pagina": 27,
+   "linea": 1092,
+   "origen": "nota que desglosa \"Total Otros Ingresos\""
+  },
+  {
+   "etiqueta": "Ajuste Al Peso",
+   "lado": "ingreso",
+   "M": 0.011,
+   "pagina": 27,
+   "linea": 1093,
+   "origen": "nota que desglosa \"Total Otros Ingresos\""
+  },
+  {
+   "etiqueta": "Total Costo de Ventas",
+   "lado": "gasto",
+   "M": 137.713,
+   "pagina": 22,
+   "linea": 849,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Gastos Laborales",
+   "lado": "gasto",
+   "M": 1162.652,
+   "pagina": 22,
+   "linea": 862,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Gastos de Viaje",
+   "lado": "gasto",
+   "M": 180.573,
+   "pagina": 23,
+   "linea": 890,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Gastos Legales",
+   "lado": "gasto",
+   "M": 53.7,
+   "pagina": 23,
+   "linea": 899,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Prestación de Servicios Deportivos",
+   "lado": "gasto",
+   "M": 214.465,
+   "pagina": 23,
+   "linea": 901,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Gastos Laborales",
+   "lado": "gasto",
+   "M": 526.714,
+   "pagina": 24,
+   "linea": 938,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gastos por Honorarios",
+   "lado": "gasto",
+   "M": 151.847,
+   "pagina": 24,
+   "linea": 955,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gastos por Impuestos",
+   "lado": "gasto",
+   "M": 35.491,
+   "pagina": 24,
+   "linea": 961,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gastos por Arrendamientos",
+   "lado": "gasto",
+   "M": 182.886,
+   "pagina": 24,
+   "linea": 966,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gastos por Seguros",
+   "lado": "gasto",
+   "M": 5.439,
+   "pagina": 25,
+   "linea": 982,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gastos por Servicios",
+   "lado": "gasto",
+   "M": 385.986,
+   "pagina": 25,
+   "linea": 988,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gastos por Legales",
+   "lado": "gasto",
+   "M": 7.361,
+   "pagina": 25,
+   "linea": 1002,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gastos por Mantenimiento",
+   "lado": "gasto",
+   "M": 62.566,
+   "pagina": 25,
+   "linea": 1008,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gastos de Viajes",
+   "lado": "gasto",
+   "M": 5.099,
+   "pagina": 25,
+   "linea": 1017,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gastos por Depreciación",
+   "lado": "gasto",
+   "M": 47.474,
+   "pagina": 25,
+   "linea": 1019,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gastos por Amortización",
+   "lado": "gasto",
+   "M": 127.617,
+   "pagina": 25,
+   "linea": 1023,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gastos Diversos",
+   "lado": "gasto",
+   "M": 85.967,
+   "pagina": 25,
+   "linea": 1026,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gastos No Deducibles (1)",
+   "lado": "gasto",
+   "M": 64.674,
+   "pagina": 26,
+   "linea": 1062,
+   "origen": "nota que desglosa \"Total Otros Gastos\""
+  },
+  {
+   "etiqueta": "Donaciones (2)",
+   "lado": "gasto",
+   "M": 5,
+   "pagina": 26,
+   "linea": 1063,
+   "origen": "nota que desglosa \"Total Otros Gastos\""
+  },
+  {
+   "etiqueta": "Multas Sanciones Y Litigios (3)",
+   "lado": "gasto",
+   "M": 2.79,
+   "pagina": 26,
+   "linea": 1064,
+   "origen": "nota que desglosa \"Total Otros Gastos\""
+  },
+  {
+   "etiqueta": "Indemnizaciones",
+   "lado": "gasto",
+   "M": 2.734,
+   "pagina": 26,
+   "linea": 1065,
+   "origen": "nota que desglosa \"Total Otros Gastos\""
+  },
+  {
+   "etiqueta": "Impuestos Asumidos",
+   "lado": "gasto",
+   "M": 1.412,
+   "pagina": 26,
+   "linea": 1066,
+   "origen": "nota que desglosa \"Total Otros Gastos\""
+  },
+  {
+   "etiqueta": "Ajuste Al Peso",
+   "lado": "gasto",
+   "M": 0.015,
+   "pagina": 26,
+   "linea": 1067,
+   "origen": "nota que desglosa \"Total Otros Gastos\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Costos financieros",
+   "M": -48.426,
+   "linea": 1110
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": -17.468
+  }
+ ]
+}

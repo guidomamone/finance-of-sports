@@ -1,0 +1,382 @@
+{
+ "md": "Clubes/Grecia/Atromitos/Atromitos_FS_2025-06-30.md",
+ "pdf": "Clubes/Grecia/Atromitos/Atromitos_FS_2025-06-30.pdf",
+ "club": "atromitos",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:02:21.875Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 44,
+  "notasUsadas": []
+ },
+ "ladoConocido": 34,
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 10,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ",
+   "values": [
+    6.283402
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 10,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ",
+   "values": [
+    -6.312663
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 10,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ",
+   "values": [
+    1.785142
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 10,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ",
+   "values": [
+    -0.533264
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 10,
+   "section": "# ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ κατά ΛΕΙΤΟΥΡΓΙΑ",
+   "values": [
+    -1.021063
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Υπόλοιπα 30/06/2024",
+   "lado": null,
+   "page": 11,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "values": [
+    7470
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Υπόλοιπα 30/06/2025",
+   "lado": null,
+   "page": 11,
+   "section": "## ΚΑΤΑΣΤΑΣΗ ΜΕΤΑΒΟΛΩΝ ΚΑΘΑΡΗΣ ΘΕΣΕΩΣ",
+   "values": [
+    8425
+   ],
+   "origen": "estado 4"
+  },
+  {
+   "label": "Υπόλοιπο 1.7.2023",
+   "lado": "expense",
+   "page": 20,
+   "section": "#### 6.4. Άυλα πάγια περιουσιακά στοιχεία",
+   "values": [
+    39.63588
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Υπόλοιπο 1.7.2023",
+   "lado": "expense",
+   "page": 20,
+   "section": "#### 6.4. Άυλα πάγια περιουσιακά στοιχεία",
+   "values": [
+    30.36042
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Αποσβέσεις περιόδου",
+   "lado": "expense",
+   "page": 20,
+   "section": "#### 6.4. Άυλα πάγια περιουσιακά στοιχεία",
+   "values": [
+    3.73214
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Προσθήκες περιόδου",
+   "lado": "expense",
+   "page": 20,
+   "section": "#### 6.4. Άυλα πάγια περιουσιακά στοιχεία",
+   "values": [
+    14.06
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Υπόλοιπο 1.7.2024",
+   "lado": "expense",
+   "page": 20,
+   "section": "#### 6.4. Άυλα πάγια περιουσιακά στοιχεία",
+   "values": [
+    34.09256
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Αποσβέσεις περιόδου",
+   "lado": "expense",
+   "page": 20,
+   "section": "#### 6.4. Άυλα πάγια περιουσιακά στοιχεία",
+   "values": [
+    3.81284
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Αμοιβές και έξοδα προσωπικού",
+   "lado": "expense",
+   "page": 25,
+   "section": "",
+   "values": [
+    1.139534
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Συμβόλαια Ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 25,
+   "section": "",
+   "values": [
+    2.96262
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Αμοιβές Τρίτων",
+   "lado": "expense",
+   "page": 25,
+   "section": "",
+   "values": [
+    0.301218
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Παροχές τρίτων",
+   "lado": "expense",
+   "page": 25,
+   "section": "",
+   "values": [
+    0.235694
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Φόροι-Τέλη",
+   "lado": "expense",
+   "page": 25,
+   "section": "",
+   "values": [
+    0.277727
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Διάφορα έξοδα",
+   "lado": "expense",
+   "page": 25,
+   "section": "",
+   "values": [
+    1.853662
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 25,
+   "section": "",
+   "values": [
+    1.021063
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Αποσβέσεις manager ποδοσφαιριστών",
+   "lado": "expense",
+   "page": 25,
+   "section": "",
+   "values": [
+    0.068166
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Αποσβέσεις παγίων",
+   "lado": "expense",
+   "page": 25,
+   "section": "",
+   "values": [
+    0.129466
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Προβλέψεις εκμεταλλεύσεως",
+   "lado": "expense",
+   "page": 25,
+   "section": "",
+   "values": [
+    0.001239
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Μείον κόστος αυτοπαραδόσεων",
+   "lado": "expense",
+   "page": 25,
+   "section": "",
+   "values": [
+    -0.123399
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Έσοδα επόμενης χρήσης GAMART",
+   "lado": "revenue",
+   "page": 24,
+   "section": "### 10.2.4 Έσοδα επομένων χρήσεων",
+   "values": [
+    79.99999
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Έσοδα επόμενης χρήσης ETEKA",
+   "lado": "revenue",
+   "page": 24,
+   "section": "### 10.2.4 Έσοδα επομένων χρήσεων",
+   "values": [
+    600
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Έσοδα επόμενης χρήσης PERKAPITA",
+   "lado": "revenue",
+   "page": 24,
+   "section": "### 10.2.4 Έσοδα επομένων χρήσεων",
+   "values": [
+    700
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Εισιτήρια διαρκείας 25-26",
+   "lado": "revenue",
+   "page": 24,
+   "section": "### 10.2.4 Έσοδα επομένων χρήσεων",
+   "values": [
+    8.43553
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Έσοδα επόμενης χρήσης λοιπά",
+   "lado": "revenue",
+   "page": 24,
+   "section": "### 10.2.4 Έσοδα επομένων χρήσεων",
+   "values": [
+    58.16613
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Προκαταβολές εσόδων 25-26 ΕΠΟ (stoixima)",
+   "lado": "revenue",
+   "page": 24,
+   "section": "### 10.2.4 Έσοδα επομένων χρήσεων",
+   "values": [
+    747.78472
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "Λοιπά έκτακτα και ανόργανα",
+   "lado": "revenue",
+   "page": 25,
+   "section": "",
+   "values": [
+    0.011197
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Εγγύηση ενοικίων",
+   "lado": "expense",
+   "page": 21,
+   "section": "## 7.2 Αποτίμηση στο κόστος κτήσεως / ### α) Παράγωγα χρηματοπιστωτικά μέσα / ## 7.2 Λοιπά",
+   "values": [
+    19.66207
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Εγγύηση ΙΧ-Ασφαλ.",
+   "lado": "expense",
+   "page": 21,
+   "section": "## 7.2 Αποτίμηση στο κόστος κτήσεως / ### α) Παράγωγα χρηματοπιστωτικά μέσα / ## 7.2 Λοιπά",
+   "values": [
+    1.971
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Εγγύηση Σουπερλιγκ Συνετ/κη μερίδα",
+   "lado": "expense",
+   "page": 21,
+   "section": "## 7.2 Αποτίμηση στο κόστος κτήσεως / ### α) Παράγωγα χρηματοπιστωτικά μέσα / ## 7.2 Λοιπά",
+   "values": [
+    3
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Εγγύηση αυτοκινήτων",
+   "lado": "expense",
+   "page": 21,
+   "section": "## 7.2 Αποτίμηση στο κόστος κτήσεως / ### α) Παράγωγα χρηματοπιστωτικά μέσα / ## 7.2 Λοιπά",
+   "values": [
+    15.05883
+   ],
+   "origen": "estado 7"
+  },
+  {
+   "label": "Επιχορηγήσεις UEFA",
+   "lado": "revenue",
+   "page": 21,
+   "section": "### 7.2.2 Δουλευμένα έσοδα περιόδου",
+   "values": [
+    185.90909
+   ],
+   "origen": "estado 9"
+  }
+ ]
+}

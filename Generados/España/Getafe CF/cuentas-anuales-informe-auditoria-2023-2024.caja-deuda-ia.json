@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/España/Getafe CF/cuentas-anuales-informe-auditoria-2023-2024.md",
+ "generado": "2026-10-02T00:16:00.810Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "TOTAL PATRIMONIO NETO Y PASIVO 128.781.350,05",
+ "caja": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   533,
+   534,
+   607,
+   608
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Solo se incluye el lado del pasivo, así que no hay una línea de caja visible. La escala no está declarada; se infiere 'unidades' porque los importes van en euros con céntimos. En el pasivo no corriente, los importes están separados de sus etiquetas: entidades de crédito 12.620.000,00 y préstamos participativos 33.533.790,91. Se incluyeron los préstamos participativos como deuda financiera."
+}

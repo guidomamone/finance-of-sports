@@ -1,0 +1,137 @@
+{
+ "md": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2023.md",
+ "pdf": "Clubes/Noruega/Sarpsborg 08/aarsregnskap-fotball-invest-as-2023.pdf",
+ "club": "sarpsborg-08",
+ "year": 2023,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:06:56.768Z",
+ "tieOuts": {
+  "cierran": 39,
+  "noCierran": 10
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+  "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "14 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 13,
+  "notasUsadas": []
+ },
+ "ladoConocido": 10,
+ "rubros": [
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## RESULTATREGNSKAP",
+   "values": [
+    6698.905
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Avskrivning på varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## RESULTATREGNSKAP",
+   "values": [
+    5500
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## RESULTATREGNSKAP",
+   "values": [
+    478.489
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": "revenue",
+   "page": 2,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## RESULTATREGNSKAP",
+   "values": [
+    1.879
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Skattekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## RESULTATREGNSKAP",
+   "values": [
+    25.77
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "SARPSBORG FOTBALL INVEST AS / ## RESULTATREGNSKAP",
+   "values": [
+    -114.367
+   ],
+   "origen": "estado 0"
+  },
+  {
+   "label": "Bokført verdi 1.1",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Salgsinntekter / ### Klassifisering og vurdering av balanseposter / ### Skatt / ### Note 1 - Immaterielle rettigheter i spillere / #### Spesifikasjon av immaterielle eiendeler i spiller-rettigheter",
+   "values": [
+    3446.12
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Investert i året",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Salgsinntekter / ### Klassifisering og vurdering av balanseposter / ### Skatt / ### Note 1 - Immaterielle rettigheter i spillere / #### Spesifikasjon av immaterielle eiendeler i spiller-rettigheter",
+   "values": [
+    5045.286
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Investert i akademi",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Salgsinntekter / ### Klassifisering og vurdering av balanseposter / ### Skatt / ### Note 1 - Immaterielle rettigheter i spillere / #### Spesifikasjon av immaterielle eiendeler i spiller-rettigheter",
+   "values": [
+    3000
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Årets avskrivning",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Salgsinntekter / ### Klassifisering og vurdering av balanseposter / ### Skatt / ### Note 1 - Immaterielle rettigheter i spillere / #### Spesifikasjon av immaterielle eiendeler i spiller-rettigheter",
+   "values": [
+    -5500
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Bokført verdi 31.12",
+   "lado": "revenue",
+   "page": 13,
+   "section": "### Salgsinntekter / ### Klassifisering og vurdering av balanseposter / ### Skatt / ### Note 1 - Immaterielle rettigheter i spillere / #### Spesifikasjon av immaterielle eiendeler i spiller-rettigheter",
+   "values": [
+    5991.406
+   ],
+   "origen": "estado 11"
+  }
+ ]
+}

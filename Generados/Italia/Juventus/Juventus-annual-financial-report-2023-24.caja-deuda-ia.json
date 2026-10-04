@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2023-24.md",
+ "generado": "2026-10-04T18:00:47.529Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Amounts in Euro",
+ "caja": {
+  "lineas": [
+   1536
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1562,
+   1570
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado (montos en euros); la nota L1776 menciona miles de euros, pero el estado de situación patrimonial está expresado en unidades de euro. 'Loans and other financial payables' puede incluir pasivos por arrendamientos."
+}

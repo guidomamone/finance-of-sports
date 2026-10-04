@@ -1,0 +1,862 @@
+{
+ "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf",
+ "generado": "2026-10-03T00:18:18.998Z",
+ "frena": [
+  {
+   "etapa": "registro",
+   "motivo": "el registro dice que el ejercicio ya está cargado en el sitio"
+  },
+  {
+   "etapa": "año",
+   "motivo": "goias-br ya tiene el ejercicio 2025 cargado"
+  },
+  {
+   "etapa": "fuente",
+   "motivo": "sources['goias-br-demonstracoes-contabeis-2025'] ya existe"
+  }
+ ],
+ "avisos": [
+  "perímetro: individual (respuesta de Guido en la cola)",
+  "ingresos: ningún total impreso igual a la suma de las líneas (46.814472); queda la suma, verificada por el resultado del ejercicio",
+  "gastos: ningún total impreso igual a la suma de las líneas (-142.154644); queda la suma, verificada por el resultado del ejercicio"
+ ],
+ "ejercicio": {
+  "clubId": "goias-br",
+  "year": 2025,
+  "cierre": "2025-12-31",
+  "perimetro": "individual",
+  "revenueLines": [
+   {
+    "rawLabel": "Direitos de transmissão de TV",
+    "normalizedCategory": "broadcasting",
+    "amountNative": 16.887449,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Receitas Atividades Sociais e Lazer",
+    "normalizedCategory": "other_income",
+    "amountNative": 9.835889,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Patrocínio/bilheteria/Sócio Torcedor/ Outras",
+    "normalizedCategory": "sponsorship_commercial",
+    "amountNative": 19.931127,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Transação de atletas",
+    "normalizedCategory": "player_sales",
+    "amountNative": 1.084364,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "(-) Demais deduções da receita",
+    "normalizedCategory": "other_income",
+    "amountNative": -2.364205,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Outras Receitas (b)",
+    "normalizedCategory": "other_income",
+    "amountNative": 1.439848,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1
+   }
+  ],
+  "expenseLines": [
+   {
+    "rawLabel": "Despesa com pessoal (a)",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -60.604081,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Cessão de Direitos Imagem",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -14.799284,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Serviços de terceiros (b)",
+    "normalizedCategory": "lump_football_operations_expense",
+    "amountNative": -12.827914,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesa formação atletas base",
+    "normalizedCategory": "youth_other_sports_expense",
+    "amountNative": -2.257512,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Demais custos e despesas operacionais",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.923779,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Materiais Esportivos",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -1.888534,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Amortização de custo de atletas contratados",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -1.471898,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Cessão Temporária",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -1.330526,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Outros custos com jogos e atletas",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -1.291424,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Taxas confederações e federações",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.688253,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Luvas",
+    "normalizedCategory": "wages_squad",
+    "amountNative": -0.598999,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Amortização de custo de atletas formados",
+    "normalizedCategory": "player_amortisation",
+    "amountNative": -0.423305,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Custos e despesas c/ pessoal jogos",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.103989,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Arbitragens",
+    "normalizedCategory": "match_organisation_expense",
+    "amountNative": -0.00035,
+    "disclosureLevel": "aggregated",
+    "_pag": 29,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas Administrativas (a)",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -10.346189,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas com serviços prestados",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -8.729303,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesa com pessoal",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -7.972794,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 2,
+    "_conf": 0.85
+   },
+   {
+    "rawLabel": "Despesas legais e judiciais (b)",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -3.104744,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Depreciação e amortização",
+    "normalizedCategory": "depreciation",
+    "amountNative": -2.521457,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Água, telefone, energia e internet",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -1.096766,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas tributárias",
+    "normalizedCategory": "admin_general_expense",
+    "amountNative": -0.195678,
+    "disclosureLevel": "aggregated",
+    "_pag": 7,
+    "_escalon": 0,
+    "_conf": 1
+   },
+   {
+    "rawLabel": "Despesas com Earn In (a)",
+    "normalizedCategory": "other_expenses",
+    "amountNative": -7.977865,
+    "disclosureLevel": "aggregated",
+    "_pag": 30,
+    "_escalon": 0,
+    "_conf": 1
+   }
+  ],
+  "fiscalYearMeta": {
+   "currency": "BRL",
+   "fxRef": "BRL@2025-12-31",
+   "sourceId": "goias-br-demonstracoes-contabeis-2025",
+   "reportType": "official_balance_sheet",
+   "gestionId": null,
+   "profitOnPlayerSales": 0,
+   "assetSales": 0,
+   "netInterest": -2.769924,
+   "tax": 0,
+   "extraRows": [
+    {
+     "label": "Receitas financeiras",
+     "value": 3.906292
+    },
+    {
+     "label": "Despesas financeiras",
+     "value": -6.676216
+    }
+   ],
+   "sinDesglose": [
+    {
+     "renglon": "Serviços de terceiros (b)",
+     "lado": "expense",
+     "importe": 12.827914,
+     "motivo": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)"
+    }
+   ],
+   "grossDebt": null,
+   "cash": null,
+   "officialTotalRevenue": 46.814472,
+   "officialTotalExpenses": 142.154644,
+   "officialPAT": -98.110093
+  },
+  "source": {
+   "id": "goias-br-demonstracoes-contabeis-2025",
+   "clubId": "goias-br",
+   "title": "Goiás Esporte Clube — demonstracoes-contabeis-2025 (ejercicio 2025)",
+   "type": "official_balance_sheet",
+   "reliability": "primary",
+   "note": "Cargado por tools/cargar.mjs (2026-10-03) desde la transcripción Clubes/Brasil/Goias/demonstracoes-contabeis-2025.md; categorías del pipeline (claude-opus-5-5). Perímetro: individual."
+  }
+ },
+ "md": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.md",
+ "reemplaza": false,
+ "periodo": {
+  "tipo": "anual",
+  "meses": 12,
+  "cierre": "2025-12-31",
+  "evidencia": null,
+  "confianza": "media",
+  "anual": "calendario"
+ },
+ "clubId": "goias-br",
+ "year": 2025,
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf",
+   "campo": "cero-real",
+   "valor": "Estadio",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: el documento 2025 no separa bilheteria ni sócio torcedor: van juntos en 'Patrocínio/bilheteria/Sócio Torcedor/ Outras' 19.931.127. El 0 es del desglose, no un dato perdido; reintentar no lo arregla.",
+   "evidencia": "pág. 29 del visor, .md L1213",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Brasil/Goias/demonstracoes-contabeis-2025.pdf",
+   "campo": "cero-real",
+   "valor": "Cuotas sociales",
+   "linea": null,
+   "motivo": "Guido 2026-10-02: el documento 2025 no separa bilheteria ni sócio torcedor: van juntos en 'Patrocínio/bilheteria/Sócio Torcedor/ Outras' 19.931.127. El 0 es del desglose, no un dato perdido; reintentar no lo arregla.",
+   "evidencia": "pág. 29 del visor, .md L1213",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  }
+ ],
+ "seleccion": {
+  "filas": 30,
+  "notasUsadas": [],
+  "refM": null
+ },
+ "filas": [
+  {
+   "label": "Direitos de transmissão de TV",
+   "page": 29,
+   "native": 16.887449,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Receita líquida\")",
+   "signoFijo": 16.887449,
+   "cat": "broadcasting",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 16.887449
+  },
+  {
+   "label": "Receitas Atividades Sociais e Lazer",
+   "page": 29,
+   "native": 9.835889,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Receita líquida\")",
+   "signoFijo": 9.835889,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "revenue",
+   "amountNative": 9.835889
+  },
+  {
+   "label": "Patrocínio/bilheteria/Sócio Torcedor/ Outras",
+   "page": 29,
+   "native": 19.931127,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Receita líquida\")",
+   "signoFijo": 19.931127,
+   "cat": "sponsorship_commercial",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "revenue",
+   "amountNative": 19.931127
+  },
+  {
+   "label": "Transação de atletas",
+   "page": 29,
+   "native": 1.084364,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Receita líquida\")",
+   "signoFijo": 1.084364,
+   "cat": "player_sales",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.084364
+  },
+  {
+   "label": "(-) Demais deduções da receita",
+   "page": 29,
+   "native": 2.364205,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Receita líquida\")",
+   "signoFijo": -2.364205,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": -2.364205
+  },
+  {
+   "label": "Despesa com pessoal (a)",
+   "page": 29,
+   "native": 60.604081,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 60.604081,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -60.604081
+  },
+  {
+   "label": "Cessão de Direitos Imagem",
+   "page": 29,
+   "native": 14.799284,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 14.799284,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -14.799284
+  },
+  {
+   "label": "Serviços de terceiros (b)",
+   "page": 29,
+   "native": 12.827914,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 12.827914,
+   "cat": "lump_football_operations_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "expense",
+   "amountNative": -12.827914
+  },
+  {
+   "label": "Despesa formação atletas base",
+   "page": 29,
+   "native": 2.257512,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 2.257512,
+   "cat": "youth_other_sports_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.257512
+  },
+  {
+   "label": "Demais custos e despesas operacionais",
+   "page": 29,
+   "native": 1.923779,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 1.923779,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "expense",
+   "amountNative": -1.923779
+  },
+  {
+   "label": "Materiais Esportivos",
+   "page": 29,
+   "native": 1.888534,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 1.888534,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "expense",
+   "amountNative": -1.888534
+  },
+  {
+   "label": "Amortização de custo de atletas contratados",
+   "page": 29,
+   "native": 1.471898,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 1.471898,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.471898
+  },
+  {
+   "label": "Cessão Temporária",
+   "page": 29,
+   "native": 1.330526,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 1.330526,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "expense",
+   "amountNative": -1.330526
+  },
+  {
+   "label": "Outros custos com jogos e atletas",
+   "page": 29,
+   "native": 1.291424,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 1.291424,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "expense",
+   "amountNative": -1.291424
+  },
+  {
+   "label": "Taxas confederações e federações",
+   "page": 29,
+   "native": 0.688253,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 0.688253,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.688253
+  },
+  {
+   "label": "Luvas",
+   "page": 29,
+   "native": 0.598999,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 0.598999,
+   "cat": "wages_squad",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "expense",
+   "amountNative": -0.598999
+  },
+  {
+   "label": "Amortização de custo de atletas formados",
+   "page": 29,
+   "native": 0.423305,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 0.423305,
+   "cat": "player_amortisation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.423305
+  },
+  {
+   "label": "Custos e despesas c/ pessoal jogos",
+   "page": 29,
+   "native": 0.103989,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 0.103989,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "expense",
+   "amountNative": -0.103989
+  },
+  {
+   "label": "Arbitragens",
+   "page": 29,
+   "native": 0.00035,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Custo com futebol\")",
+   "signoFijo": 0.00035,
+   "cat": "match_organisation_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.00035
+  },
+  {
+   "label": "Despesas Administrativas (a)",
+   "page": 30,
+   "native": 10.346189,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Despesas administrativas e gerais\")",
+   "signoFijo": 10.346189,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -10.346189
+  },
+  {
+   "label": "Despesas com serviços prestados",
+   "page": 30,
+   "native": 8.729303,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Despesas administrativas e gerais\")",
+   "signoFijo": 8.729303,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -8.729303
+  },
+  {
+   "label": "Despesa com pessoal",
+   "page": 30,
+   "native": 7.972794,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Despesas administrativas e gerais\")",
+   "signoFijo": 7.972794,
+   "cat": "admin_general_expense",
+   "conf": 0.85,
+   "escalon": 2,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -7.972794
+  },
+  {
+   "label": "Despesas legais e judiciais (b)",
+   "page": 30,
+   "native": 3.104744,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Despesas administrativas e gerais\")",
+   "signoFijo": 3.104744,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -3.104744
+  },
+  {
+   "label": "Depreciação e amortização",
+   "page": 30,
+   "native": 2.521457,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Despesas administrativas e gerais\")",
+   "signoFijo": 2.521457,
+   "cat": "depreciation",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -2.521457
+  },
+  {
+   "label": "Água, telefone, energia e internet",
+   "page": 30,
+   "native": 1.096766,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Despesas administrativas e gerais\")",
+   "signoFijo": 1.096766,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -1.096766
+  },
+  {
+   "label": "Despesas tributárias",
+   "page": 7,
+   "native": 0.195678,
+   "ladoDoc": "expense",
+   "origen": "verificacion (estado)",
+   "signoFijo": 0.195678,
+   "cat": "admin_general_expense",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "expense",
+   "amountNative": -0.195678
+  },
+  {
+   "label": "Despesas com Earn In (a)",
+   "page": 30,
+   "native": 7.977865,
+   "ladoDoc": "expense",
+   "origen": "verificacion (nota que desglosa \"Outras Receitas e Despesas\")",
+   "signoFijo": 7.977865,
+   "cat": "other_expenses",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "respuesta de Guido en la cola",
+   "enLista": true,
+   "notaGuido": "Guido 2026-10-02, respuestas en bloque de Goiás (propuestas de Claude aprobadas)",
+   "destino": "expense",
+   "amountNative": -7.977865
+  },
+  {
+   "label": "Outras Receitas (b)",
+   "page": 30,
+   "native": 1.439848,
+   "ladoDoc": "revenue",
+   "origen": "verificacion (nota que desglosa \"Outras Receitas e Despesas\")",
+   "signoFijo": 1.439848,
+   "cat": "other_income",
+   "conf": 1,
+   "escalon": 0,
+   "fuenteCat": "categorias.json",
+   "enLista": true,
+   "destino": "revenue",
+   "amountNative": 1.439848
+  },
+  {
+   "label": "Receitas financeiras",
+   "page": null,
+   "native": 3.906292,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  },
+  {
+   "label": "Despesas financeiras",
+   "page": null,
+   "native": -6.676216,
+   "ladoDoc": null,
+   "origen": "verificacion",
+   "cat": null,
+   "fuenteCat": "la fila no está en categorias.json ni tiene precedente",
+   "enLista": false,
+   "destino": "netInterest"
+  }
+ ],
+ "signos": {
+  "porTabla": {
+   "verificacion (nota que desglosa \"Receita líquida\")": "gastos con signo",
+   "verificacion (nota que desglosa \"Custo com futebol\")": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Despesas administrativas e gerais\")": "gastos sin signo (se invierten)",
+   "verificacion (estado)": "gastos sin signo (se invierten)",
+   "verificacion (nota que desglosa \"Outras Receitas e Despesas\")": "gastos sin signo (se invierten)",
+   "verificacion": "gastos con signo"
+  },
+  "elegida": "signos de la verificación; financiero/impuesto como su tabla"
+ },
+ "totales": {
+  "revSum": 46.814472,
+  "expSum": -142.154644,
+  "officialTotalRevenue": 46.814472,
+  "officialTotalExpenses": 142.154644,
+  "officialPAT": -98.110093,
+  "verificacion": {
+   "pat": "impreso",
+   "ingresos": "por-resultado",
+   "gastos": "por-resultado"
+  },
+  "patImpreso": {
+   "label": "resultado detectado por proponer-carga",
+   "pag": null,
+   "M": -98.110093,
+   "signos": "signos de la verificación; financiero/impuesto como su tabla"
+  }
+ },
+ "liga": {
+  "valor": "br-serieB",
+  "fuente": "la fila ya existe en data/club-leagues",
+  "estado": "existe"
+ },
+ "resumen": {
+  "carga": false,
+  "motivos": 3,
+  "lineasIngreso": 6,
+  "lineasGasto": 22,
+  "metaFilas": 2,
+  "excluidas": 0
+ }
+}

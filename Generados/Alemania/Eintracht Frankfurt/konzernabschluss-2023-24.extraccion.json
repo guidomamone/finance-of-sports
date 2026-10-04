@@ -1,0 +1,187 @@
+{
+ "pdf": "Clubes/Alemania/Eintracht Frankfurt/konzernabschluss-2023-24.pdf",
+ "md": "Clubes/Alemania/Eintracht Frankfurt/konzernabschluss-2023-24.md",
+ "cierre": "2024-06-30",
+ "paginas": [
+  13,
+  28,
+  29
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:54:07.289Z",
+ "escala": "unidades",
+ "filas": [
+  {
+   "pagina": 13,
+   "etiqueta": "Summe betriebliche Erträge",
+   "importe_impreso": "390.504.819,88",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 13,
+   "etiqueta": "Aufwendungen für bezogene Waren",
+   "importe_impreso": "-12.208.902,21",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 13,
+   "etiqueta": "a) Löhne und Gehälter",
+   "importe_impreso": "-130.491.601,89",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 13,
+   "etiqueta": "b) Soziale Abgaben",
+   "importe_impreso": "-10.886.992 21",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 13,
+   "etiqueta": "",
+   "importe_impreso": "-141.378.594,10",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 13,
+   "etiqueta": "Summe betriebliche Aufwendungen",
+   "importe_impreso": "-353.647.338,19",
+   "tipo": "total",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 13,
+   "etiqueta": "Betriebsergebnis",
+   "importe_impreso": "36.857.481,69",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 13,
+   "etiqueta": "Finanzergebnis",
+   "importe_impreso": "-5.132.041,11",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 13,
+   "etiqueta": "12. Ergebnis nach Steuern",
+   "importe_impreso": "27.526.684,33",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 13,
+   "etiqueta": "14. Konzernjahresüberschuss (i. Vj. Konzernjahresfehlbetrag) vor nicht beherrschenden Anteilen",
+   "importe_impreso": "26.857.788,72",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 13,
+   "etiqueta": "16. Konzernjahresüberschuss (i. Vj. Konzernjahresfehlbetrag) nach nicht beherrschenden Anteilen",
+   "importe_impreso": "26.906.727 ,94",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 28,
+   "etiqueta": "Frauen und Jugendfußball'",
+   "importe_impreso": "7.622",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 28,
+   "etiqueta": "Fußballschule",
+   "importe_impreso": "1.065",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 28,
+   "etiqueta": "Sonstiges",
+   "importe_impreso": "177",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 28,
+   "etiqueta": "Spielbetrieb Lizenzfußball",
+   "importe_impreso": "42.906",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 28,
+   "etiqueta": "Marketing und Kommunikation",
+   "importe_impreso": "57.770",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 28,
+   "etiqueta": "Transfer",
+   "importe_impreso": "38.907",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 28,
+   "etiqueta": "Merchandising",
+   "importe_impreso": "4.784",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 28,
+   "etiqueta": "Verwaltung",
+   "importe_impreso": "13.138",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 29,
+   "etiqueta": "Frauen- und Jugendfußball",
+   "importe_impreso": "7.251",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 29,
+   "etiqueta": "Fußballschule",
+   "importe_impreso": "986",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos_impreso": "390.504.819,88",
+ "total_gastos_impreso": "-353.647.338,19",
+ "resultado_impreso": "26.857.788,72",
+ "observaciones": "La transcripción del estado (pág. 13) está incompleta: faltan Umsatzerlöse, sonstige betriebliche Erträge, Abschreibungen, sonstige betriebliche Aufwendungen, Steuern y la mayoría de los renglones numerados; por eso las filas de notas (en TEURO) no pueden vincularse a la etiqueta exacta del renglón del estado y se dejó detalla_a en null. La tabla de Umsätze de pág. 28 aparece truncada (solo últimas filas). Importes con errores de OCR conservados tal cual ('-10.886.992 21', '26.906.727 ,94'). Fila de -141.378.594,10 sin etiqueta impresa (subtotal de Personalaufwand). Resultado del ejercicio tomado como Konzernjahresüberschuss vor nicht beherrschenden Anteilen (coincide con el estado de flujos). Notas en miles de euros, distinta escala que el estado."
+}

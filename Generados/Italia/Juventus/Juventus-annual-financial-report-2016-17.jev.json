@@ -1,0 +1,183 @@
+{
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2016-17.md",
+ "generatedAt": "2026-10-03T22:57:21.383Z",
+ "rubrosHuella": "4dcbe724fbc66689763df11c9cea9d098c7664c6",
+ "rubros": [
+  {
+   "label": "Ticket sales",
+   "lado": "revenue",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "matchday_competition",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Television and radio rights and media revenues",
+   "lado": "revenue",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Revenues from sponsorship and advertising",
+   "lado": "revenue",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Revenues from sales of products and licences",
+   "lado": "revenue",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Revenues from players' registration rights",
+   "lado": "revenue",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other revenues",
+   "lado": "revenue",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other non-recurring revenues and costs",
+   "lado": "revenue",
+   "page": 68,
+   "section": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Purchase of materials, supplies and other consumables",
+   "lado": "expense",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Purchases of products for sale",
+   "lado": "expense",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "External services",
+   "lado": "expense",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Players' wages and technical staff costs",
+   "lado": "expense",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "wages_squad",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Other personnel",
+   "lado": "expense",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "desdeCache": true
+  },
+  {
+   "label": "Expenses from players' registration rights",
+   "lado": "expense",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Other expenses",
+   "lado": "expense",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Amortisation and write-downs of players' registration rights",
+   "lado": "expense",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "player_amortisation",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Depreciation/amortisation of other tangible and intangible assets",
+   "lado": "expense",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisions, write-downs and release of funds",
+   "lado": "expense",
+   "page": 68,
+   "section": "estado (lectura 5: hoja)",
+   "choice": "other_amortisation",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "Group's share of results of associates and *joint ventures*",
+   "lado": "expense",
+   "page": 68,
+   "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1045
+  }
+ ]
+}

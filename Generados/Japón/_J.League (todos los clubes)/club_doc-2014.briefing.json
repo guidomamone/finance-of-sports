@@ -1,0 +1,153 @@
+{
+  "club": "j-league-todos-los-clubes",
+  "year": 2014,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Japón/_J.League (todos los clubes)/club_doc-2014.md",
+  "generatedAt": "2026-09-30T22:05:38.358Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 1,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 4,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 4,
+      "section": "１－2．決算数値の概要： Ｊ１・Ｊ２・Ｊ３クラブ合計 / 前年比＋約50億円の事業規模拡大 / ・Ｊ１・Ｊ２・Ｊ３合計で営業収益は前年比約54億円増加。同時に営業費用も約52億円増加した / ・広告料収入の伸びが収入規模の拡大に寄与した / （百万円）",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1 営業収益 55,400 59,300 +3,900 23,944 24,570 +626 2,055 2,979 +923",
+          "values": [
+            "81,399",
+            "86,848",
+            "+5,449"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2 広告料収入 25,502 28,747 +3,245 11,723 11,753 +29 1,184 1,700 +516",
+          "values": [
+            "38,409",
+            "42,199",
+            "+3,790"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 4,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "6 その他収入 10,625 11,406 +781 4,524 5,297 +773 434 572 +138",
+          "values": [
+            "15,582",
+            "17,275",
+            "+1,693"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7 営業費用 55,196 59,495 +4,298 24,418 24,302 ▲115",
+          "values": [
+            "2,219",
+            "3,236",
+            "+1,018",
+            "81,833",
+            "87,033",
+            "+5,201"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8 チーム人件費 25,017 27,103 +2,086 10,286 9,832 ▲453 740 1,065 +325",
+          "values": [
+            "36,043",
+            "38,000",
+            "+1,958"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "当期純利益は前期比約13億円増加した / （百万円） / Ｊ１合計                          Ｊ２合計                     Ｊ１+Ｊ２合計 / 2013年度  2014年度                2013年度  2014年度               2013年度  2014年度 / （18クラブ） （18クラブ）      前年比      （22クラブ） （22クラブ）      前年比     （40クラブ） （40クラブ）     前年比",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1 営業収益 55,400 59,300 +3,900 23,944 24,570 +626",
+          "values": [
+            "79,344",
+            "83,870",
+            "+4,526"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2 広告料収入 25,502 28,747 +3,245 11,723 11,753 +29",
+          "values": [
+            "37,225",
+            "40,500",
+            "+3,274"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "6 その他収入 10,625 11,406 +781 4,524 5,297 +773",
+          "values": [
+            "15,149",
+            "16,703",
+            "+1,554"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7 営業費用 55,196 59,495 +4,298 24,418 24,302 ▲115",
+          "values": [
+            "79,614",
+            "83,797",
+            "+4,183"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8 チーム人件費 25,017 27,103 +2,086 10,286 9,832 ▲453",
+          "values": [
+            "35,302",
+            "36,935",
+            "+1,633"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/j-league-todos-los-clubes-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"j-league-todos-los-clubes\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

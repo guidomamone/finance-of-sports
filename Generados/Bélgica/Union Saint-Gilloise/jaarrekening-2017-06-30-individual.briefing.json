@@ -1,0 +1,358 @@
+{
+  "club": "unionsg-be",
+  "year": 2017,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Union Saint-Gilloise/jaarrekening-2017-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:55:54.970Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 52,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 10,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 5,
+      "section": "ACTIF / FRAIS D'ÉTABLISSEMENT / ACTIFS IMMOBILISÉS / ACTIFS CIRCULANTS / COMPTES ANNUELS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "6.1.3 |",
+          "values": [
+            "1.281",
+            "1.281"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "29/58",
+          "values": [
+            "891.995",
+            "197.906"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "40/41 713.062 59.398 / 40 703.518 59.213 / 41 9.544 185 / 50/53 37.144 96.953 / 54/58",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "490/1",
+          "values": [
+            "141.788",
+            "41.556"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "20/58",
+          "values": [
+            "1.489.535",
+            "882.702"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "N° BE 0417.144.936 A 3.2 / PASSIF",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CAPITAUX PROPRES 10/15",
+          "values": [
+            "-85.219",
+            "-1.354.985"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital",
+          "values": [
+            "6.717.054",
+            "4.737.721"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital souscrit",
+          "values": [
+            "6.717.054",
+            "4.737.721"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Réserves immunisées 132 / Réserves disponibles 133 / Bénéfice (Perte) reporté(e) (+)/() 14 -6.802.272 -6.092.706 / Subsides en capital 15 / Avance aux associés sur répartition de l'actif net 19",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "PROVISIONS ET IMPÔTS DIFFÉRÉS",
+          "values": [
+            "20.745",
+            "5.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisions pour risques et charges 160/5",
+          "values": [
+            "20.745",
+            "5.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Charges fiscales 161 / Grosses réparations et gros entretien 162 / Obligations environnementales 163 / Autres risques et charges 164/5 20.745 5.000 / Impôts différés 168",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "DETTES 17/49",
+          "values": [
+            "1.554.008",
+            "2.232.687"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes à plus d'un an 6.3 |",
+          "values": [
+            "942.845",
+            "1.640.222"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "Etablissements de crédit, dettes de / location-financement et dettes assimilées 172/3 / Autres emprunts 174/0 / Dettes commerciales 175 / Acomptes reçus sur commandes 176",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Autres dettes 178/9",
+          "values": [
+            "942.845",
+            "1.640.222"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dettes à un an au plus 6.3 | 42/48",
+          "values": [
+            "458.321",
+            "463.357"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Dettes à plus d'un an échéant dans l'année 42 / Dettes financières 43 / Etablissements de crédit 430/8 / Autres emprunts 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dettes commerciales",
+          "values": [
+            "189.574",
+            "110.103"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fournisseurs 440/4",
+          "values": [
+            "189.574",
+            "110.103"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Effets à payer 441 / Acomptes reçus sur commandes 46",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dettes fiscales, salariales et sociales",
+          "values": [
+            "152.796",
+            "214.162"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impôts 450/3",
+          "values": [
+            "13.144"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rémunérations et charges sociales 454/9",
+          "values": [
+            "152.796",
+            "201.018"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autres dettes 47/48",
+          "values": [
+            "115.950",
+            "139.091"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comptes de régularisation 492/3",
+          "values": [
+            "152.842",
+            "129.109"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DU PASSIF 10/49",
+          "values": [
+            "1.489.535",
+            "882.702"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "N° BE 0417.144.936 A 6.1.2 / ANNEXE / IMMOBILISATIONS CORPORELLES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Amortissements et réductions de valeur au terme de l'exercice 8329",
+          "values": [
+            "597.694"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VALEUR COMPTABLE NETTE AU TERME DE L'EXERCICE 22/27",
+          "values": [
+            "596.259"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "BILAN SOCIAL / 100 27,5 5,9 30,9 ETP 26,5 ETP |",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "105 30",
+          "values": [
+            "33,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "110 5",
+          "values": [
+            "6,6"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "111 25",
+          "values": [
+            "26,9"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 6,
+      "section": "Effets à payer 441 / Acomptes reçus sur commandes 46",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL DU PASSIF 10/49",
+      "target": "1.489.535",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-902007"
+    },
+    {
+      "page": 6,
+      "section": "Effets à payer 441 / Acomptes reçus sur commandes 46",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DU PASSIF 10/49",
+      "target": "882.702",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-199322"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "DETTES 17/49",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DETTES 17/49",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dettes à plus d'un an 6.3 |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dettes à plus d'un an 6.3 |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Union Saint-Gilloise",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ]
+}

@@ -1,0 +1,553 @@
+{
+  "club": "hoffenheim-de",
+  "year": 2014,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/TSG Hoffenheim/konzernabschluss-2013-14.md",
+  "generatedAt": "2026-09-30T21:50:32.348Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 96,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 11,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 2,
+      "section": "UNTERNEHMENS- / REGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2012/13: Platz 15) der sog. Geldrangliste für die erfolgsabhängige TV-Geldverteilung erreicht und damit insgesamt T€25.252 an Medieneinnahmen (In- und Ausland) erlösen können. Im Vergleich zum Vorjahreszeitraum entspricht dies einer Steigerung von ca.",
+          "values": [
+            "48%."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Durch das Erreichen des Viertelfinales im DFB-Pokalwettbewerb sind zudem die Medieneinnahmen aus dem nationalen Pokalwettbewerb deutlich gestiegen auf T€1.415 (Vorjahr Ausscheiden in der ersten Runde:",
+          "values": [
+            "T€84)."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "UNTERNEHMENS- / REGISTER / MEUR MEUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "I. Immaterielle Vermögensgegenstände",
+          "values": [
+            "25.258.893",
+            "28.541.387"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. entgeltlich erworbene Konzessionen, gewerbliche Schutz- und ähnliche Rechte und Werte sowie Lizenzen an solchen Rechten und Werten",
+          "values": [
+            "25.258.893",
+            "28.541.387"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Sachanlagen",
+          "values": [
+            "89.021.272",
+            "89.460.262"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte und Bauten einschließlich der Bauten auf fremden Grundstücken",
+          "values": [
+            "78.806.249",
+            "79.095.621"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. technische Anlagen und Maschinen",
+          "values": [
+            "1.968.808",
+            "2.037.812"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "8.244.195",
+            "8.168.638"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. geleistete Anzahlungen und Anlagen im Bau",
+          "values": [
+            "2.020",
+            "158.191"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "I. Vorräte",
+          "values": [
+            "223.543",
+            "676.816"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. fertige Erzeugnisse und Waren",
+          "values": [
+            "223.543",
+            "676.816"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I. Forderungen und sonstige Vermögensgegenstände",
+          "values": [
+            "11.517.179",
+            "19.217.340"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Forderungen aus Lieferungen und Leistungen",
+          "values": [
+            "10.777.794",
+            "18.665.411"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Forderungen gegen Gesellschafter",
+          "values": [
+            "472.735",
+            "59.173"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. sonstige Vermögensgegenstände",
+          "values": [
+            "266.650",
+            "492.756"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Wertpapiere",
+          "values": [
+            "15.930.736"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IV. Kassenbestand, Bundesbankguthaben, Guthaben bei Kreditinstituten und Schecks",
+          "values": [
+            "87.031.032",
+            "85.614.458"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "UNTERNEHMENS- / REGISTER / MEUR MEUR / MEUR MEUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "A. Eigenkapital",
+          "values": [
+            "198.781.462",
+            "223.766.702"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I. gezeichnetes Kapital",
+          "values": [
+            "2.500.000",
+            "2.500.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Einlagen stiller Gesellschafter mit EK-Charakter",
+          "values": [
+            "110.445.596",
+            "135.145.475"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Verlustvortrag",
+          "values": [
+            "4.739.378",
+            "4.558.275"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IV. Jahresfehlbetrag",
+          "values": [
+            "301.586",
+            "181.103"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "V. Ausgleichsposten für Anteile anderer Gesellschafter, Minderheitenanteile und Anteile Dritter",
+          "values": [
+            "90.876.830",
+            "90.860.605"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Rückstellungen",
+          "values": [
+            "3.240.347",
+            "5.319.744"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1. Steuerrückstellungen",
+          "values": [
+            "15.000",
+            "16.734"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. sonstige Rückstellungen",
+          "values": [
+            "3.225.347",
+            "5.303.010"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C. Verbindlichkeiten",
+          "values": [
+            "14.909.053",
+            "10.535.794"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "1. erhaltene Anzahlungen auf Bestellungen 0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2. Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "2.904.913",
+            "1.474.672"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. sonstige Verbindlichkeiten",
+          "values": [
+            "12.004.140",
+            "9.061.122"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "davon aus Steuern",
+          "values": [
+            "3.623.555",
+            "3.003.434"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a. übrige sonstige Verbindlichkeiten",
+          "values": [
+            "8.380.585",
+            "6.057.688"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D. Rechnungsabgrenzungsposten",
+          "values": [
+            "5.500.179",
+            "7.109.789"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bilanzsumme, Summe Passiva",
+          "values": [
+            "222.431.041",
+            "246.732.029"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "MEUR MEUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Umsatzerlöse aus Zweckbetrieben und anderen wirtschaftlichen Geschäftsbetrieben (GKV)",
+          "values": [
+            "59.855.498",
+            "69.563.440"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. sonstige betriebliche Erträge (GKV)",
+          "values": [
+            "6.659.871",
+            "71.372.547"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Materialaufwand (GK’V)",
+          "values": [
+            "2.369.298",
+            "2.332.843"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Aufwendungen für Roh-, Hilfs- und Betriebsstoffe und für bezogene Waren",
+          "values": [
+            "2.369.298",
+            "2.332.843"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aufwendungen für bezogene Waren",
+          "values": [
+            "2.369.298",
+            "2.332.843"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Personalaufwand (GKV)",
+          "values": [
+            "49.942.222",
+            "48.468.132"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Löhne und Gehälter",
+          "values": [
+            "46.977.513",
+            "45.941.850"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "UNTERNEHMENS- / REGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Abschreibungen auf das Anlagevermögen",
+          "values": [
+            "18.083",
+            "14.421"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Jahres-Cash-Flow",
+          "values": [
+            "17.782",
+            "14.240"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Zunahme (-) / Abnahme (+) der Vorräte, der Forderungen aus Lieferungen",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "und Leistungen sowie anderer Aktiva",
+          "values": [
+            "6.065",
+            "-12.298"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme (+) / Abnahme (-) der Rückstellungen",
+          "values": [
+            "-2.080",
+            "3.515"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Zunahme (+) / Abnahme (-) der Verbindlichkeiten aus Lieferungen und",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Leistungen sowie anderer Passiva",
+          "values": [
+            "2.764",
+            "2.341"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mittelabfluss aus laufender Geschäftstätigkeit",
+          "values": [
+            "6.749",
+            "-6.442"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investitionen (-) in das Anlagevermögen",
+          "values": [
+            "-15.818",
+            "-26.196"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Restbuchwerte der Abgänge von Gegenständen des Anlagevermögens",
+          "values": [
+            "1.456",
+            "5.619"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mittelabfluss aus der Investitionstätigkeit",
+          "values": [
+            "-14.362",
+            "-20.577"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "UNTERNEHMENS- / —— 11 REGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Forderungen aus Lieferung und Leistung",
+          "values": [
+            "10.777.793,93",
+            "10.777.793,93",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Forderungen gegenüber Gesellschafter",
+          "values": [
+            "472.734,89",
+            "472.734,89",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. sonstige Vermögensgegenstände",
+          "values": [
+            "266.650,49",
+            "266.650,49",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "UNTERNEHMENS- / —— 11 REGISTER / T€ T€ T€ T€ / T€ T€ T€ T€ T€",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte etc.",
+          "values": [
+            "79.096",
+            "78.806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "10.206",
+            "10.213"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "de",
+    "query": "TSG Hoffenheim",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

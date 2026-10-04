@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Brasil/Botafogo/demonstracoes-financeiras-2024.md",
+ "generado": "2026-10-02T00:11:57.646Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de reais)",
+ "caja": {
+  "lineas": [
+   1182
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1233
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se toma la columna Consolidado 31/12/2024 como la del cierre más reciente (caja 130.020; empréstimos 115.784, frente a 48.112 en la Controladora). No hay préstamos no corrientes en 2024, por lo que la deuda financiera es solo la línea corriente. La frase de escala aparece duplicada y desordenada por el OCR; se reconstruyó como '(Valores expressos em milhares de reais)', por lo que no es una copia literal del texto extraído."
+}

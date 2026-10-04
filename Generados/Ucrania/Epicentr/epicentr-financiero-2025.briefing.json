@@ -1,0 +1,738 @@
+{
+  "club": "epicentr",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Ucrania/Epicentr/epicentr-financiero-2025.md",
+  "generatedAt": "2026-09-30T22:08:20.546Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": true,
+  "tableCount": 5,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 1,
+      "section": "### Фінансова звітність малого підприємства",
+      "columns": [
+        "",
+        "",
+        "Коди"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Дата (рік, місяць, число)",
+          "values": [
+            "2026 \\",
+            "01 \\",
+            "01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Підприємство: Громадська організація \"Футбольний клуб \"Епіцентр\" м. Кам'янець-Подільський\"",
+          "values": [
+            "за ЄДРПОУ",
+            "43731024"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Територія: ХМЕЛЬНИЦЬКА",
+          "values": [
+            "за КАТОТТГ ¹",
+            "UA68020050010075833"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Організаційно-правова форма господарювання: Громадська організація",
+          "values": [
+            "за КОПФГ",
+            "815"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Вид економічної діяльності: Діяльність інших громадських організацій, н.в.і.у.",
+          "values": [
+            "за КВЕД",
+            "94.99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Середня кількість працівників, осіб: 41",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Одиниця виміру: тис. грн. з одним десятковим знаком",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Адреса, телефон: вулиця Дунайгородська, буд. 2, м. Дунаївці, Кам'янець-Подільський район, Хмельницька обл., 32400, Україна",
+          "values": [
+            "0686461263",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "### 1. Баланс на 31 грудня 2025 р.",
+      "columns": [
+        "Актив",
+        "Код рядка",
+        "На початок звітного року",
+        "На кінець звітного періоду"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1",
+          "values": [
+            "2",
+            "3",
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I. Необоротні активи",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Нематеріальні активи",
+          "values": [
+            "1000",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Первісна вартість",
+          "values": [
+            "1001",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Накопичена амортизація",
+          "values": [
+            "1002",
+            "( - )",
+            "( - )"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Незавершені капітальні інвестиції",
+          "values": [
+            "1005",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Основні засоби :",
+          "values": [
+            "1010",
+            "241,6",
+            "423,7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "первісна вартість",
+          "values": [
+            "1011",
+            "571,3",
+            "1 479,0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "знос",
+          "values": [
+            "1012",
+            "( 329,7 )",
+            "( 1 055,3 )"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Довгострокові біологічні активи",
+          "values": [
+            "1020",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Довгострокові фінансові інвестиції",
+          "values": [
+            "1030",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інші необоротні активи",
+          "values": [
+            "1090",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Усього за розділом I",
+          "values": [
+            "1095",
+            "241,6",
+            "423,7"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "II. Оборотні активи",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Запаси :",
+          "values": [
+            "1100",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "у тому числі готова продукція",
+          "values": [
+            "1103",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Поточні біологічні активи",
+          "values": [
+            "1110",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Дебіторська заборгованість за продукцію, товари, роботи, послуги",
+          "values": [
+            "1125",
+            "-",
+            "1 034,4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Дебіторська заборгованість за розрахунками з бюджетом",
+          "values": [
+            "1135",
+            "-",
+            "7,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "у тому числі з податку на прибуток",
+          "values": [
+            "1136",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інша поточна дебіторська заборгованість",
+          "values": [
+            "1155",
+            "311,1",
+            "2 127,0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Поточні фінансові інвестиції",
+          "values": [
+            "1160",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Гроші та їх еквіваленти",
+          "values": [
+            "1165",
+            "8,8",
+            "829,7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Витрати майбутніх періодів",
+          "values": [
+            "1170",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інші оборотні активи",
+          "values": [
+            "1190",
+            "-",
+            "304,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Усього за розділом II",
+          "values": [
+            "1195",
+            "319,9",
+            "4 302,8"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "III. Необоротні активи, утримувані для продажу, та групи вибуття",
+          "values": [
+            "1200",
+            "-",
+            "-"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Баланс",
+          "values": [
+            "1300",
+            "561,5",
+            "4 726,5"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": [
+        "Пасив",
+        "Код рядка",
+        "На початок звітного року",
+        "На кінець звітного періоду"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1",
+          "values": [
+            "2",
+            "3",
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "I. Власний капітал",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Зареєстрований (пайовий) капітал",
+          "values": [
+            "1400",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Додатковий капітал",
+          "values": [
+            "1410",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Резервний капітал",
+          "values": [
+            "1415",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Нерозподілений прибуток (непокритий збиток)",
+          "values": [
+            "1420",
+            "-",
+            "1 133,6"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Неоплачений капітал",
+          "values": [
+            "1425",
+            "( - )",
+            "( - )"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Усього за розділом I",
+          "values": [
+            "1495",
+            "-",
+            "1 133,6"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "II. Довгострокові зобов'язання, цільове фінансування та забезпечення",
+          "values": [
+            "1595",
+            "-",
+            "-"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "III. Поточні зобов'язання",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Короткострокові кредити банків",
+          "values": [
+            "1600",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Поточна кредиторська заборгованість за:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "довгостроковими зобов'язаннями",
+          "values": [
+            "1610",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "товари, роботи, послуги",
+          "values": [
+            "1615",
+            "-",
+            "30,6"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "розрахунками з бюджетом",
+          "values": [
+            "1620",
+            "104,3",
+            "642,2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "у тому числі з податку на прибуток",
+          "values": [
+            "1621",
+            "-",
+            "328,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "розрахунками зі страхування",
+          "values": [
+            "1625",
+            "98,1",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "розрахунками з оплати праці",
+          "values": [
+            "1630",
+            "359,1",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Доходи майбутніх періодів",
+          "values": [
+            "1665",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інші поточні зобов'язання",
+          "values": [
+            "1690",
+            "-",
+            "2 920,1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Усього за розділом III",
+          "values": [
+            "1695",
+            "561,5",
+            "3 592,9"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "IV. Зобов'язання, пов'язані з необоротними активами, утримуваними для продажу, та групами вибуття",
+          "values": [
+            "1700",
+            "-",
+            "-"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Баланс",
+          "values": [
+            "1900",
+            "561,5",
+            "4 726,5"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 2,
+      "section": "### 2. Звіт про фінансові результати",
+      "columns": [
+        "Стаття",
+        "Код рядка",
+        "За звітний період",
+        "За аналогічний період попереднього року"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1",
+          "values": [
+            "2",
+            "3",
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Чистий дохід від реалізації продукції (товарів, робіт, послуг)",
+          "values": [
+            "2000",
+            "10 935,7",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інші операційні доходи",
+          "values": [
+            "2120",
+            "20 735,6",
+            "10 902,1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інші доходи",
+          "values": [
+            "2240",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Разом доходи (2000 + 2120 + 2240)",
+          "values": [
+            "2280",
+            "31 671,3",
+            "10 902,1"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Собівартість реалізованої продукції (товарів, робіт, послуг)",
+          "values": [
+            "2050",
+            "( - )",
+            "( - )"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інші операційні витрати",
+          "values": [
+            "2180",
+            "( 29 847,6 )",
+            "( 10 902,1 )"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Інші витрати",
+          "values": [
+            "2270",
+            "( - )",
+            "( - )"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Разом витрати (2050 + 2180 + 2270)",
+          "values": [
+            "2285",
+            "( 29 847,6 )",
+            "( 10 902,1 )"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Фінансовий результат до оподаткування (2280 – 2285)",
+          "values": [
+            "2290",
+            "1 823,7",
+            "-"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Податок на прибуток",
+          "values": [
+            "2300",
+            "( 328,3 )",
+            "( - )"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Чистий прибуток (збиток) (2290 – 2300)",
+          "values": [
+            "2350",
+            "1 495,4",
+            "-"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 2,
+      "section": null,
+      "columns": [
+        "Керівник",
+        "[підпис]",
+        "Данів Федір Теодорович<br>*(ініціали, прізвище)*"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Головний бухгалтер",
+          "values": [
+            "[підпис]",
+            "Фафруник Віталій Богданович<br>*(ініціали, прізвище)*"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/epicentr-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"epicentr\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+  ]
+}

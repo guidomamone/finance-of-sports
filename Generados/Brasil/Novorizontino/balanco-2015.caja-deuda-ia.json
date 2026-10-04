@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/balanco-2015.md",
+ "generado": "2026-10-03T03:42:03.419Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "UM MILHAO E VINTE E TRES MIL E SETECENTOS E CINQUENTA E DOIS REAIS E  ",
+ "caja": {
+  "lineas": [
+   189
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   252,
+   256
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Caja tomada como Disponibilidades (caixa 15.683,03 + investimentos temporários 53.248,67); si se quiere solo caixa e equivalentes usar L190. La deuda no corriente (L256) es principalmente un mútuo con I-9 Sports Ltda (parte relacionada) y un mútuo de pessoa física, no bancaria; se incluye por estar rotulada como Empréstimos e Financiamentos. La escala en unidades (reais) se infiere de los importes con centavos y del texto de cierre, no de un encabezado explícito."
+}

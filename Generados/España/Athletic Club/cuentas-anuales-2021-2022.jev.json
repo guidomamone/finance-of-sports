@@ -1,0 +1,689 @@
+{
+ "md": "Clubes/España/Athletic Club/cuentas-anuales-2021-2022.md",
+ "generatedAt": "2026-09-30T22:49:06.767Z",
+ "rubrosHuella": "279582c44924dd4c124a0b0f1eb01c68e9ba7913",
+ "rubros": [
+  {
+   "label": "LNFP - Patrocinios, licencias y quinielas",
+   "lado": null,
+   "page": 34,
+   "section": "ciones dentro de la ayuda total de 990.444,02 euros mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2022                                            30.06.2021",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.83,
+   "desdeCache": true
+  },
+  {
+   "label": "RFEF - Cantera de valores",
+   "lado": null,
+   "page": 34,
+   "section": "ciones dentro de la ayuda total de 990.444,02 euros mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2022                                            30.06.2021",
+   "choice": "youth_football",
+   "confidence": 0.42,
+   "desdeCache": true
+  },
+  {
+   "label": "RFEF – Programa Elite -",
+   "lado": null,
+   "page": 34,
+   "section": "ciones dentro de la ayuda total de 990.444,02 euros mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2022                                            30.06.2021",
+   "choice": "other_income",
+   "confidence": 0.21,
+   "desdeCache": true
+  },
+  {
+   "label": "Participación en selección",
+   "lado": null,
+   "page": 34,
+   "section": "ciones dentro de la ayuda total de 990.444,02 euros mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2022                                            30.06.2021",
+   "choice": "competition_bonus",
+   "confidence": 0.64,
+   "desdeCache": true
+  },
+  {
+   "label": "Resolución 14/2019 (Nota 19) -",
+   "lado": null,
+   "page": 34,
+   "section": "ciones dentro de la ayuda total de 990.444,02 euros mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2022                                            30.06.2021",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Jugadoras y jugadores",
+   "lado": null,
+   "page": 35,
+   "section": "Nota 22 / Otra información",
+   "choice": "player_sales",
+   "confidence": 0.38,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuerpo técnico y resto",
+   "lado": null,
+   "page": 35,
+   "section": "Nota 22 / Otra información",
+   "choice": "wages_squad",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Derechos arbitrajes",
+   "lado": "expense",
+   "page": 32,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2022                                             30.06.2021",
+   "choice": "match_organisation_expense",
+   "confidence": 0.89,
+   "desdeCache": true
+  },
+  {
+   "label": "LNFP (Nota 21.4)",
+   "lado": "expense",
+   "page": 32,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2022                                             30.06.2021",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Cuotas entidades deportivas",
+   "lado": "expense",
+   "page": 32,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2022                                             30.06.2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "desdeCache": true
+  },
+  {
+   "label": "Mobiliario y material deportivo 2.472.155,15 92.000,00 - -",
+   "lado": "expense",
+   "page": 15,
+   "section": "TERRENOS Y CONSTRUCCIONES                       24.327.036,61\t\t\t\t33.341.830,28 / COSTE",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.44
+    ],
+    [
+     "depreciation",
+     0.33
+    ],
+    [
+     "match_organisation_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1082
+  },
+  {
+   "label": "Elementos de transporte 239.555,78 - - -",
+   "lado": "expense",
+   "page": 15,
+   "section": "TERRENOS Y CONSTRUCCIONES                       24.327.036,61\t\t\t\t33.341.830,28 / COSTE",
+   "choice": "depreciation",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "depreciation",
+     0.65
+    ],
+    [
+     "match_organisation_expense",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1088
+  },
+  {
+   "label": "Subvenciones a entidades",
+   "lado": "revenue",
+   "page": 32,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2022                                             30.06.2021",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_income",
+     0.95
+    ],
+    [
+     "lump_football_operations",
+     0.03
+    ],
+    [
+     "education",
+     0.02
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "Equipos informáticos 625.003,81 - - -",
+   "lado": "expense",
+   "page": 15,
+   "section": "TERRENOS Y CONSTRUCCIONES                       24.327.036,61\t\t\t\t33.341.830,28 / COSTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "depreciation",
+     0.02
+    ]
+   ],
+   "tokens": 942
+  },
+  {
+   "label": "Otras instalaciones 40.696.648,58 93.103,51 -",
+   "lado": "expense",
+   "page": 15,
+   "section": "TERRENOS Y CONSTRUCCIONES                       24.327.036,61\t\t\t\t33.341.830,28 / COSTE",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "depreciation",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1062
+  },
+  {
+   "label": "LNFP – Gastos COVID",
+   "lado": "expense",
+   "page": 34,
+   "section": "ciones dentro de la ayuda total de 990.444,02 euros mencionada en la Nota 15. / 21.7. Otros resultados: / Presentan el siguiente detalle: / 30.06.2022                                            30.06.2021",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "exceptional_items",
+     0.24
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Otros",
+   "lado": "expense",
+   "page": 32,
+   "section": "21.3. Otros gastos de gestión corriente: / 30.06.2022                                             30.06.2021",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Maquinaria 187.401,80 - -",
+   "lado": "expense",
+   "page": 16,
+   "section": "TERRENOS Y CONSTRUCCIONES                   14.218.652,96\t\t\t24.327.036,61 / COSTE",
+   "choice": "other_expenses",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "depreciation",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Otras instalaciones",
+   "lado": "expense",
+   "page": 16,
+   "section": "TERRENOS Y CONSTRUCCIONES                   14.218.652,96\t\t\t24.327.036,61 / COSTE",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "other_expenses",
+     0.66
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "depreciation",
+     0.12
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Equipos informáticos 618.116,92 6.886,89 -",
+   "lado": "expense",
+   "page": 16,
+   "section": "TERRENOS Y CONSTRUCCIONES                   14.218.652,96\t\t\t24.327.036,61 / COSTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.91
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "depreciation",
+     0.04
+    ]
+   ],
+   "tokens": 949
+  },
+  {
+   "label": "Elementos de transporte",
+   "lado": "expense",
+   "page": 16,
+   "section": "TERRENOS Y CONSTRUCCIONES                   14.218.652,96\t\t\t24.327.036,61 / COSTE",
+   "choice": "depreciation",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "depreciation",
+     0.5700000000000001
+    ],
+    [
+     "match_organisation_expense",
+     0.29
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1075
+  },
+  {
+   "label": "Ingresos por retransmisión",
+   "lado": "revenue",
+   "page": 33,
+   "section": "Ingresos por retransmisión: / Presenta el siguiente detalle: / 30.06.2022                                              30.06.2021",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Ingresos por retransmisión femenino",
+   "lado": "revenue",
+   "page": 33,
+   "section": "Ingresos por retransmisión: / Presenta el siguiente detalle: / 30.06.2022                                              30.06.2021",
+   "choice": "broadcasting",
+   "confidence": 0.95,
+   "desdeCache": true
+  },
+  {
+   "label": "Otras --",
+   "lado": "revenue",
+   "page": 33,
+   "section": "Ingresos por retransmisión: / Presenta el siguiente detalle: / 30.06.2022                                              30.06.2021",
+   "choice": "broadcasting",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Propiedad artística 136.220,82 7.500,00 -",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "player_amortisation",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "player_amortisation",
+     0.63
+    ],
+    [
+     "other_amortisation",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.12
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Maquinaria 187.401,80 - - -",
+   "lado": "expense",
+   "page": 15,
+   "section": "TERRENOS Y CONSTRUCCIONES                       24.327.036,61\t\t\t\t33.341.830,28 / COSTE",
+   "choice": "depreciation",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "other_expenses",
+     0.36
+    ],
+    [
+     "depreciation",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Mobiliario y material deportivo 2.456.281,34 15.873,81 -",
+   "lado": "expense",
+   "page": 16,
+   "section": "TERRENOS Y CONSTRUCCIONES                   14.218.652,96\t\t\t24.327.036,61 / COSTE",
+   "choice": "other_expenses",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "depreciation",
+     0.3
+    ],
+    [
+     "match_organisation_expense",
+     0.17
+    ]
+   ],
+   "tokens": 1081
+  },
+  {
+   "label": "Aplicaciones informáticas 2.597.212,19 456.519,77 -",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "other_amortisation",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_amortisation",
+     0.68
+    ],
+    [
+     "depreciation",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 918
+  },
+  {
+   "label": "Aplicaciones informáticas 2.159.929,19 437.283,00 -",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "other_amortisation",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_amortisation",
+     0.56
+    ],
+    [
+     "depreciation",
+     0.44
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 918
+  },
+  {
+   "label": "del ejercicio 2019/2020 --",
+   "lado": "revenue",
+   "page": 31,
+   "section": "30.06.2022                                         30.06.2021 / Cuota a devolver del impuesto de Sociedades",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros --",
+   "lado": "revenue",
+   "page": 31,
+   "section": "30.06.2022                                         30.06.2021 / Cuota a devolver del impuesto de Sociedades",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Ventas de existencias en tiendas y museo",
+   "lado": "revenue",
+   "page": 34,
+   "section": "21.5. Ingresos accesorios y otros de gestión corriente: / 30.06.2022                                            30.06.2021",
+   "choice": "other_income",
+   "confidence": 0.71,
+   "desdeCache": true
+  },
+  {
+   "label": "Arrendamientos",
+   "lado": "revenue",
+   "page": 34,
+   "section": "21.5. Ingresos accesorios y otros de gestión corriente: / 30.06.2022                                            30.06.2021",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "desdeCache": true
+  },
+  {
+   "label": "Otros 113.959,50 - -",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 975
+  },
+  {
+   "label": "Con fecha 28 de junio de 2018, se ejecutó esta ampliación del capi- de ejercicios anteriores",
+   "lado": "expense",
+   "page": 22,
+   "section": "de 5.502.000 participaciones de 1 euro de valor nominal cada una. / sociedad participada facilitados por los órganos de gestión de / capital con aportación no dineraria del Athletic Club, consistente / ejecutar por dicho Socio, con arreglo al valor de los costes inverti- / asumida por el Athletic Club, habiendo renunciado el resto de los",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "exceptional_items",
+     0.21
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1207
+  },
+  {
+   "label": "Entidades Deportivas, deudores",
+   "lado": "expense",
+   "page": 1,
+   "section": "12                 III. Deudores                                                     14.464.195,42     14.816.626,55",
+   "choice": "admin_general_expense",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "match_organisation_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1049
+  },
+  {
+   "label": "Propiedad artística 131.027,88 5.192,94 -",
+   "lado": "expense",
+   "page": 14,
+   "section": "COSTE",
+   "choice": "player_amortisation",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "player_amortisation",
+     0.79
+    ],
+    [
+     "other_amortisation",
+     0.08
+    ],
+    [
+     "depreciation",
+     0.06
+    ]
+   ],
+   "tokens": 867
+  },
+  {
+   "label": "Deudores varios",
+   "lado": "expense",
+   "page": 1,
+   "section": "12                 III. Deudores                                                     14.464.195,42     14.816.626,55",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_expenses",
+     0.9400000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Entidades del grupo y asociadas, deudores",
+   "lado": "expense",
+   "page": 1,
+   "section": "12                 III. Deudores                                                     14.464.195,42     14.816.626,55",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "tal social en 14.469.396 euros mediante la emisión de",
+   "lado": "expense",
+   "page": 22,
+   "section": "de 5.502.000 participaciones de 1 euro de valor nominal cada una. / sociedad participada facilitados por los órganos de gestión de / capital con aportación no dineraria del Athletic Club, consistente / ejecutar por dicho Socio, con arreglo al valor de los costes inverti- / asumida por el Athletic Club, habiendo renunciado el resto de los",
+   "choice": "other_expenses",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "exceptional_items",
+     0.05
+    ]
+   ],
+   "tokens": 1146
+  }
+ ]
+}

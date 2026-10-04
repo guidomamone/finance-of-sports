@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Novorizontino/balanco-2016.md",
+ "generado": "2026-10-03T03:42:08.303Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(valores expressos em milhares de reais)",
+ "caja": {
+  "lineas": [
+   14
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   19,
+   22
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance resumido en miles (L10-L30). Caja: 'Caixa e Equivalentes de Caixa' (7); el total 'Disponibilidades' (L13) incluye además 'Investimentos Temporários', que en 2016 es '-' (3,91 reais en el detalle). Deuda: 'Bancos C/ Devedoras' (L19, 28) más 'Empréstimos e Mútuos' (L22, 15.965). Esta última corresponde casi íntegramente a mútuo con I-9 Sports Ltda, aparentemente parte relacionada, más un mútuo con persona física: es deuda financiera no bancaria."
+}

@@ -1,0 +1,223 @@
+{
+ "md": "Clubes/Brasil/Mirassol/2025-notas-explicativas.md",
+ "generatedAt": "2026-09-30T22:48:30.483Z",
+ "rubrosHuella": "79adcff6c62435fd2a30d98049f6ece03dc83abe",
+ "rubros": [
+  {
+   "label": "Pessoal e Encargos Sociais^{1}",
+   "lado": "expense",
+   "page": 3,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## Composição das Despesas Operacionais",
+   "choice": "wages_squad",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Premiações e Prêmios",
+   "lado": "expense",
+   "page": 3,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## Composição das Despesas Operacionais",
+   "choice": "wages_squad",
+   "confidence": 0.58,
+   "desdeCache": true
+  },
+  {
+   "label": "Comissões e Transferências^{2}",
+   "lado": "expense",
+   "page": 3,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## Composição das Despesas Operacionais",
+   "choice": "other_expenses",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Manutenção e Suporte Operacional^{3}",
+   "lado": "expense",
+   "page": 3,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## Composição das Despesas Operacionais",
+   "choice": "admin_general_expense",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos de Uso de Imagem (Adicional)",
+   "lado": "expense",
+   "page": 3,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## Composição das Despesas Operacionais",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras Despesas Operacionais^{4}",
+   "lado": "expense",
+   "page": 3,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## Composição das Despesas Operacionais",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Direitos de Transmissão de TV",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## 1 Receita Operacional / ### Receita operacional",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Patrocínio e Publicidade",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## 1 Receita Operacional / ### Receita operacional",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Transferência de Atletas",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## 1 Receita Operacional / ### Receita operacional",
+   "choice": "player_sales",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Bilheteria e Atividades de Jogos^{1}",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## 1 Receita Operacional / ### Receita operacional",
+   "choice": "matchday_competition",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras Receitas^{2}",
+   "lado": "revenue",
+   "page": 2,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## 1 Receita Operacional / ### Receita operacional",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Encargos de Amortização^{1}",
+   "lado": "expense",
+   "page": 3,
+   "section": "### 3 Despesas Administrativas / ## Composição das Despesas Administrativas",
+   "choice": "other_amortisation",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Infraestrutura e Ocupação^{2}",
+   "lado": "expense",
+   "page": 3,
+   "section": "### 3 Despesas Administrativas / ## Composição das Despesas Administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Serviços de Terceiros e Jurídico^{3}",
+   "lado": "expense",
+   "page": 3,
+   "section": "### 3 Despesas Administrativas / ## Composição das Despesas Administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "Taxas e Registros",
+   "lado": "expense",
+   "page": 3,
+   "section": "### 3 Despesas Administrativas / ## Composição das Despesas Administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Outras Despesas Administrativas^{4}",
+   "lado": "expense",
+   "page": 3,
+   "section": "### 3 Despesas Administrativas / ## Composição das Despesas Administrativas",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "Impostos sobre Operações de Câmbio (IRRF)",
+   "lado": "expense",
+   "page": 4,
+   "section": "## 5 Despesas Financeiras / ### Composição das Despesas Financeiras",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Juros Passivos e Encargos Financeiros^{1}",
+   "lado": "expense",
+   "page": 4,
+   "section": "## 5 Despesas Financeiras / ### Composição das Despesas Financeiras",
+   "choice": "admin_general_expense",
+   "confidence": 0.65,
+   "desdeCache": true
+  },
+  {
+   "label": "Despesas com Operações de Câmbio",
+   "lado": "expense",
+   "page": 4,
+   "section": "## 5 Despesas Financeiras / ### Composição das Despesas Financeiras",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "desdeCache": true
+  },
+  {
+   "label": "Tarifas Bancárias",
+   "lado": "expense",
+   "page": 4,
+   "section": "## 5 Despesas Financeiras / ### Composição das Despesas Financeiras",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "IOF",
+   "lado": "expense",
+   "page": 4,
+   "section": "## 5 Despesas Financeiras / ### Composição das Despesas Financeiras",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "desdeCache": true
+  },
+  {
+   "label": "Rendimentos de Aplicações Financeiras",
+   "lado": "revenue",
+   "page": 4,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## 4 Receitas Financeiras / ### Composição das Receitas Financeiras",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Recuperação de Créditos Baixados",
+   "lado": "revenue",
+   "page": 4,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## 4 Receitas Financeiras / ### Composição das Receitas Financeiras",
+   "choice": "other_income",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Descontos Obtidos",
+   "lado": "revenue",
+   "page": 4,
+   "section": "# MIRASSOL FUTEBOL CLUBE / ## 4 Receitas Financeiras / ### Composição das Receitas Financeiras",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  }
+ ]
+}

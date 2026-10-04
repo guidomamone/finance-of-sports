@@ -1,0 +1,350 @@
+{
+ "md": "Clubes/Inglaterra/Williams Racing/williams-grand-prix-engineering-group-accounts-2024.md",
+ "pdf": "Clubes/Inglaterra/Williams Racing/williams-grand-prix-engineering-group-accounts-2024.pdf",
+ "club": "williams-racing",
+ "year": 2024,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T22:04:04.827Z",
+ "tieOuts": {
+  "cierran": 2,
+  "noCierran": 17
+ },
+ "warnings": [
+  "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "13 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 28,
+  "notasUsadas": [
+   "15",
+   "28",
+   "8"
+  ]
+ },
+ "ladoConocido": 12,
+ "rubros": [
+  {
+   "label": "Revenue",
+   "lado": "revenue",
+   "page": 14,
+   "section": "Williams Grand Prix Engineering Limited / Consolidated Statement of Comprehensive Income for the / Year Ended 31 December 2024 / Note 2024 2023 / £000 £000",
+   "values": [
+    179.776
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Cost of sales",
+   "lado": "expense",
+   "page": 14,
+   "section": "Williams Grand Prix Engineering Limited / Consolidated Statement of Comprehensive Income for the / Year Ended 31 December 2024 / Note 2024 2023 / £000 £000",
+   "values": [
+    -107.2
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Other operating expenses _ (176,180) -",
+   "lado": "expense",
+   "page": 14,
+   "section": "Williams Grand Prix Engineering Limited / Consolidated Statement of Comprehensive Income for the / Year Ended 31 December 2024 / Note 2024 2023 / £000 £000",
+   "values": [
+    -161.172
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Other operating income",
+   "lado": "revenue",
+   "page": 14,
+   "section": "Williams Grand Prix Engineering Limited / Consolidated Statement of Comprehensive Income for the / Year Ended 31 December 2024 / Note 2024 2023 / £000 £000",
+   "values": [
+    61.358
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Called up share capital",
+   "lado": null,
+   "page": 19,
+   "section": "Creditors: Amounts falling due after more than / one year : (42) (42) / Net assets 130,077 67,348 / Capital and reserves",
+   "values": [
+    283.977
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Revaluation reserve",
+   "lado": null,
+   "page": 19,
+   "section": "Creditors: Amounts falling due after more than / one year : (42) (42) / Net assets 130,077 67,348 / Capital and reserves",
+   "values": [
+    1.98
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Retained earnings",
+   "lado": null,
+   "page": 19,
+   "section": "Creditors: Amounts falling due after more than / one year : (42) (42) / Net assets 130,077 67,348 / Capital and reserves",
+   "values": [
+    -154.035
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Balance as at 1 January 2023",
+   "lado": null,
+   "page": 20,
+   "section": "Company Statement of Changes in Equity / As at 31 December 2024 / Called up share Revaluation Retained Total / capital reserve earnings equity / £000 £000 £000 £000",
+   "values": [
+    136.537
+   ],
+   "origen": "nota 15 (ancla 16)",
+   "ancla": "Balance as at 31 December 2023"
+  },
+  {
+   "label": "Balance as at 31 December 2023",
+   "lado": null,
+   "page": 20,
+   "section": "Recognition of Heritage assets - 280 - 280 / Disposal of Heritage assets - (18,140) 18,140 -",
+   "values": [
+    171.537
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Issuance of ordinary share capital 35,000 - -",
+   "lado": null,
+   "page": 20,
+   "section": "Company Statement of Changes in Equity / As at 31 December 2024 / Called up share Revaluation Retained Total / capital reserve earnings equity / £000 £000 £000 £000",
+   "values": [
+    35
+   ],
+   "origen": "nota 15 (ancla 16)",
+   "ancla": "Balance as at 31 December 2023"
+  },
+  {
+   "label": "Balance as at 1 January 2024",
+   "lado": null,
+   "page": 20,
+   "section": "Recognition of Heritage assets - 280 - 280 / Disposal of Heritage assets - (18,140) 18,140 -",
+   "values": [
+    171.537
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Issuance of ordinary share capital 112,440 - -",
+   "lado": null,
+   "page": 20,
+   "section": "Recognition of Heritage assets - 280 - 280 / Disposal of Heritage assets - (18,140) 18,140 -",
+   "values": [
+    112.44
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Intangible assets",
+   "lado": null,
+   "page": 19,
+   "section": "For the Year Ended 31 December 2024 / (Registration number: 01297497) / 2024 2023 / £000 £000 / Non-current assets",
+   "values": [
+    5.779
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "At 1 January 2024",
+   "lado": null,
+   "page": 29,
+   "section": "11 Heritage assets",
+   "values": [
+    3.28
+   ],
+   "origen": "nota 28 (ancla 11)",
+   "ancla": "Heritage assets"
+  },
+  {
+   "label": "Heritage assets",
+   "lado": null,
+   "page": 19,
+   "section": "For the Year Ended 31 December 2024 / (Registration number: 01297497) / 2024 2023 / £000 £000 / Non-current assets",
+   "values": [
+    1.035
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Revaluations",
+   "lado": null,
+   "page": 29,
+   "section": "11 Heritage assets",
+   "values": [
+    0.135
+   ],
+   "origen": "nota 28 (ancla 11)",
+   "ancla": "Heritage assets"
+  },
+  {
+   "label": "Disposals",
+   "lado": null,
+   "page": 29,
+   "section": "11 Heritage assets",
+   "values": [
+    -2.38
+   ],
+   "origen": "nota 28 (ancla 11)",
+   "ancla": "Heritage assets"
+  },
+  {
+   "label": "Tangible assets",
+   "lado": null,
+   "page": 19,
+   "section": "For the Year Ended 31 December 2024 / (Registration number: 01297497) / 2024 2023 / £000 £000 / Non-current assets",
+   "values": [
+    62.011
+   ],
+   "origen": "estado 11"
+  },
+  {
+   "label": "Stocks",
+   "lado": null,
+   "page": 19,
+   "section": "68,825 69,800 / Current assets",
+   "values": [
+    9.853
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Debtors",
+   "lado": null,
+   "page": 19,
+   "section": "68,825 69,800 / Current assets",
+   "values": [
+    73.916
+   ],
+   "origen": "estado 12"
+  },
+  {
+   "label": "Increase/(decrease) in cash and cash equivalents",
+   "lado": null,
+   "page": 17,
+   "section": "Net cash outflow from investing activities (12,027) (914) / Financing activities / Interest received 48 7 / Interest paid (53) -",
+   "values": [
+    12.859
+   ],
+   "origen": "nota 8 (ancla 12)",
+   "ancla": "Cash at bank and in hand"
+  },
+  {
+   "label": "Cash at bank and in hand",
+   "lado": null,
+   "page": 19,
+   "section": "68,825 69,800 / Current assets",
+   "values": [
+    24.957
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Cash and cash equivalents at 1 January",
+   "lado": null,
+   "page": 17,
+   "section": "Net cash outflow from investing activities (12,027) (914) / Financing activities / Interest received 48 7 / Interest paid (53) -",
+   "values": [
+    12.098
+   ],
+   "origen": "nota 8 (ancla 12)",
+   "ancla": "Cash at bank and in hand"
+  },
+  {
+   "label": "Wages and salaries",
+   "lado": "expense",
+   "page": 26,
+   "section": "The aggregate payroll costs were as follows:",
+   "values": [
+    72.961
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Social security costs",
+   "lado": "expense",
+   "page": 26,
+   "section": "The aggregate payroll costs were as follows:",
+   "values": [
+    8.423
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Other pension schemes",
+   "lado": "expense",
+   "page": 26,
+   "section": "The aggregate payroll costs were as follows:",
+   "values": [
+    3.179
+   ],
+   "origen": "estado 20"
+  },
+  {
+   "label": "Bank interest",
+   "lado": "revenue",
+   "page": 27,
+   "section": "7 Interest receivable and similar income",
+   "values": [
+    0.018
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Interest on trade debtors",
+   "lado": "revenue",
+   "page": 27,
+   "section": "7 Interest receivable and similar income",
+   "values": [
+    0.023
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Other interest income",
+   "lado": "revenue",
+   "page": 27,
+   "section": "7 Interest receivable and similar income",
+   "values": [
+    0.007
+   ],
+   "origen": "estado 23"
+  },
+  {
+   "label": "Unwind of discount on deferred lease income",
+   "lado": "revenue",
+   "page": 27,
+   "section": "6 Interest payable and similar expenses",
+   "values": [
+    0.053
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "Entities with control, joint control or significant influence",
+   "lado": "expense",
+   "page": 32,
+   "section": "19 Contingent assets and liabilities / 20 Related party transactions",
+   "values": [
+    126086
+   ],
+   "origen": "estado 39"
+  }
+ ]
+}

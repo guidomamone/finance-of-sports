@@ -1,0 +1,454 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2022.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-02T19:46:01.691Z",
+ "intentoNotasComoEstado": true,
+ "estadoDesdeNotas": true,
+ "intentoNotasConAjuste": true,
+ "bloques": {
+  "b1": {
+   "pagina": 8,
+   "lineas": [
+    372,
+    382
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 13,
+   "lineas": [
+    638,
+    643
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    650,
+    654
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 14,
+   "lineas": [
+    667,
+    674
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    678,
+    682
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    686,
+    702
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 15,
+   "lineas": [
+    710,
+    715
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 15,
+   "lineas": [
+    719,
+    724
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    742,
+    746
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 16,
+   "lineas": [
+    753,
+    756
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 16,
+   "lineas": [
+    769,
+    773
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    777,
+    782
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    787,
+    796
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 17,
+   "lineas": [
+    800,
+    809
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 17,
+   "lineas": [
+    813,
+    816
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 18,
+   "lineas": [
+    898,
+    902
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 19,
+   "lineas": [
+    910,
+    913
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    922,
+    926
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    930,
+    941
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    947,
+    956
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 20,
+   "lineas": [
+    968,
+    977
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    986,
+    990
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    994,
+    998
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 20,
+   "lineas": [
+    1002,
+    1004
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    1008,
+    1011
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 21,
+   "lineas": [
+    1020,
+    1024
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 21,
+   "lineas": [
+    1028,
+    1031
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 21,
+   "lineas": [
+    1037,
+    1059
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 22,
+   "lineas": [
+    1063,
+    1075
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 22,
+   "lineas": [
+    1079,
+    1083
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 22,
+   "lineas": [
+    1087,
+    1095
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 22,
+   "lineas": [
+    1099,
+    1103
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 22,
+   "lineas": [
+    1109,
+    1114
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 23,
+   "lineas": [
+    1118,
+    1120
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 23,
+   "lineas": [
+    1158,
+    1166
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 24,
+   "lineas": [
+    1174,
+    1178
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 24,
+   "lineas": [
+    1186,
+    1192
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 24,
+   "lineas": [
+    1202,
+    1208
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 25,
+   "lineas": [
+    1217,
+    1223
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 25,
+   "lineas": [
+    1227,
+    1240
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 25,
+   "lineas": [
+    1255,
+    1260
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 26,
+   "lineas": [
+    1269,
+    1272
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 26,
+   "lineas": [
+    1280,
+    1306
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 27,
+   "lineas": [
+    1310,
+    1352
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 28,
+   "lineas": [
+    1360,
+    1405
+   ],
+   "tipo": "tabla"
+  },
+  "b46": {
+   "pagina": 29,
+   "lineas": [
+    1409,
+    1431
+   ],
+   "tipo": "tabla"
+  },
+  "b47": {
+   "pagina": 29,
+   "lineas": [
+    1437,
+    1444
+   ],
+   "tipo": "tabla"
+  },
+  "b48": {
+   "pagina": 30,
+   "lineas": [
+    1460,
+    1469
+   ],
+   "tipo": "tabla"
+  },
+  "b49": {
+   "pagina": 30,
+   "lineas": [
+    1485,
+    1495
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b39",
+  "b42",
+  "b43",
+  "b44",
+  "b45",
+  "b46",
+  "b47",
+  "b48",
+  "b49",
+  "b38"
+ ],
+ "notas_ingresos": [
+  "b40",
+  "b41"
+ ],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "El índice no muestra ninguna frase del tipo 'en miles de pesos'; la única mención es el valor nominal de las acciones 'expresados en pesos colombianos'.",
+ "moneda": "COP",
+ "columna_ejercicio": "2.022",
+ "columna_anterior": "2.021",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Las cifras de las notas 19 a 25 están expresadas en miles de pesos colombianos?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "El índice no muestra la leyenda de escala; un resultado impreso de (175.117) sugiere miles de pesos, pero no hay frase que lo confirme.",
+   "bloques": [
+    "b38",
+    "b39"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se toma el resultado del ejercicio de la fila 'Resultados del ejercicio' del cuadro de patrimonio (b38) como resultado impreso, según el ajuste manual?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Resultados del ejercicio",
+   "texto": "No hay estado de resultados; el resultado (175.117) aparece en la nota de patrimonio, en la línea 1207.",
+   "bloques": [
+    "b38"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "El documento no trae estado de resultados, solo sus notas. Se eligen las notas cuyo total es un renglón del estado: ingresos de actividades ordinarias (b39), costo de ventas (b42), gastos de ventas (b43+b44), gastos administrativos (b45+b46), otros gastos (b47), otros ingresos (b48) y costos financieros netos (b49). El resultado del ejercicio se toma del cuadro de patrimonio b38, por ajuste manual. Como notas de ingresos van el desglose de patrocinios (b40) y el de comercio al por mayor y menor (b41). La conciliación fiscal (b13/b14) también trae la pérdida contable antes de impuesto, por si sirve de control. El gasto por impuesto está en b11 y no se eligió porque es una nota fiscal; puede usarse para conciliar. Los cuadros por tercero quedan excluidos. El perímetro es individual (club)."
+}

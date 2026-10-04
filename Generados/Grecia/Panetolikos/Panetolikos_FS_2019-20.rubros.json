@@ -1,0 +1,212 @@
+{
+ "md": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2019-20.md",
+ "pdf": "Clubes/Grecia/Panetolikos/Panetolikos_FS_2019-20.pdf",
+ "club": "panetolikos",
+ "year": 2020,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:03:27.718Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 24,
+  "notasUsadas": []
+ },
+ "ladoConocido": 13,
+ "rubros": [
+  {
+   "label": "Προβλέψεις για παροχές σε εργαζομένους",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "values": [
+    0.014529
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Λοιπές προβλέψεις",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "values": [
+    0.025542
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Εμπορικές υποχρεώσεις",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "values": [
+    0.366543
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Φόρος εισοδήματος",
+   "lado": "expense",
+   "page": 17,
+   "section": "",
+   "values": [
+    0.0014
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Λοιποί φόροι και τέλη",
+   "lado": "expense",
+   "page": 17,
+   "section": "",
+   "values": [
+    0.396721
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Οργανισμοί κοινωνικής ασφάλισης",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "values": [
+    0.062337
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Λοιπές υποχρεώσεις",
+   "lado": null,
+   "page": 17,
+   "section": "",
+   "values": [
+    1.33077
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Έξοδα χρήσεως δουλευμένα",
+   "lado": "expense",
+   "page": 17,
+   "section": "",
+   "values": [
+    0.057519
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "ποσά σε €",
+   "lado": null,
+   "page": 15,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    0.00003
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    1.111543
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    4.428104
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    2.521303
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    -0.555211
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    -0.029052
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Πιστωτικοί τόκοι και συναφή έσοδα",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    0.000761
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Χρεωστικοί τόκοι και συναφή έξοδα",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Γ. ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ",
+   "values": [
+    -0.006169
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Ακίνητα",
+   "lado": "expense",
+   "page": 16,
+   "section": "# ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΙΑ ΠΑΝΑΙΤΩΛΙΚΟΣ ΓΦΣ / (χρηματοοικονομικά στοιχεία στο κόστος κτήσης) / # ΙΣΟΛΟΓΙΣΜΟΣ / # Μη κυκλοφορούντα περιουσιακά στοιχεία / # *Ενσώματα πάγια*",
+   "values": [
+    2926.81087
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Μηχανολογικός εξοπλισμός",
+   "lado": "expense",
+   "page": 16,
+   "section": "# ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΙΑ ΠΑΝΑΙΤΩΛΙΚΟΣ ΓΦΣ / (χρηματοοικονομικά στοιχεία στο κόστος κτήσης) / # ΙΣΟΛΟΓΙΣΜΟΣ / # Μη κυκλοφορούντα περιουσιακά στοιχεία / # *Ενσώματα πάγια*",
+   "values": [
+    4.20968
+   ],
+   "origen": "estado 9"
+  },
+  {
+   "label": "Λοιπός εξοπλισμός",
+   "lado": "expense",
+   "page": 16,
+   "section": "# ΠΟΔΟΣΦΑΙΡΙΚΗ ΑΝΩΝΥΜΗ ΕΤΑΙΡΙΑ ΠΑΝΑΙΤΩΛΙΚΟΣ ΓΦΣ / (χρηματοοικονομικά στοιχεία στο κόστος κτήσης) / # ΙΣΟΛΟΓΙΣΜΟΣ / # Μη κυκλοφορούντα περιουσιακά στοιχεία / # *Ενσώματα πάγια*",
+   "values": [
+    68.88699
+   ],
+   "origen": "estado 9"
+  }
+ ]
+}

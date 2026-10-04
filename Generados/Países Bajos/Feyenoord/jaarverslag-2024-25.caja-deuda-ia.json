@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Países Bajos/Feyenoord/jaarverslag-2024-25.md",
+ "generado": "2026-10-02T00:15:06.114Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "bedragen EUR * 1.000",
+ "caja": {
+  "lineas": [
+   1820
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1801,
+   1812
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se usa el balance consolidado (L1783); también existe balance enkelvoudig (L2734) con cifras distintas. Deuda = schulden aan kredietinstellingen largo plazo (13.850) + corto plazo (7.415); se excluyen transferverplichtingen."
+}

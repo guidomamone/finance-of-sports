@@ -1,0 +1,59 @@
+{
+ "md": "Clubes/Grecia/Asteras Tripolis/Asteras_board_report_2020-06-30.md",
+ "pdf": "Clubes/Grecia/Asteras Tripolis/Asteras_board_report_2020-06-30.pdf",
+ "club": "asteras-tripolis",
+ "year": 2020,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:02:11.440Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": false,
+  "motivo": "no se pudo ubicar la columna del ejercicio"
+ },
+ "ladoConocido": 1,
+ "rubros": [
+  {
+   "label": "Ίδια κεφάλαια",
+   "lado": null,
+   "page": 4,
+   "section": "",
+   "values": [
+    "1.278.221,95",
+    "",
+    "942.581,92",
+    ""
+   ],
+   "columns": [
+    "3 Καθαρά αποτελέσματα χρήσεως προ φόρων",
+    "-1.052.359,97",
+    "-82,33%",
+    "-1.305.074,77",
+    "-138,46%"
+   ]
+  },
+  {
+   "label": "Κύκλος εργασιών (Έσοδα από αγώνες και από παραχώρηση ποδοσφαιριστών)",
+   "lado": "revenue",
+   "page": 4,
+   "section": "Ο αριθμοδείκτης αυτός απεικονίζει την αποδοτικότητα των ιδίων κεφαλαίων της εταιρείας.",
+   "values": [
+    "1.725.977,19",
+    "",
+    "1.725.686,26",
+    ""
+   ],
+   "columns": [
+    "4 Μικτά αποτελέσματα χρήσεως",
+    "-1.421.851,00",
+    "-82,38%",
+    "-1.638.448,42",
+    "-94,94%"
+   ]
+  }
+ ]
+}

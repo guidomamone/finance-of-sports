@@ -1,0 +1,103 @@
+{
+  "club": "river",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/River/memoria-2021-2022.md",
+  "generatedAt": "2026-09-30T21:51:05.953Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 9,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 3,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 30,
+      "section": "MEMORIA CARP 2021-2022         59 / COMPETENCIAS OFICIALES / EQUIPOS A LOS QUE / MÁS ENFRENTÓ",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Boca Juniors:",
+          "values": [
+            "7."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Argentinos:",
+          "values": [
+            "6."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": "EL MEJOR JUGADOR DE AMÉRICA EN 2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(1.0 al arco). Patronato:",
+          "values": [
+            "7."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "226 pases para remate. Alianza Lima:",
+          "values": [
+            "6."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.9 pases para remate por partido. Boca Juniors:",
+          "values": [
+            "3."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "MEMORIA CARP 2021-2022   67",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "a tres goles por partido) y recibieron",
+          "values": [
+            "17,"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "logrando una diferencia de gol de",
+          "values": [
+            "+80."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "ar",
+    "query": "River Plate",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

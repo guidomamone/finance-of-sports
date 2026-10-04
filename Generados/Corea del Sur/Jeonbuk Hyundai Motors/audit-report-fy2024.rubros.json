@@ -1,0 +1,252 @@
+{
+ "md": "Clubes/Corea del Sur/Jeonbuk Hyundai Motors/audit-report-fy2024.md",
+ "pdf": "Clubes/Corea del Sur/Jeonbuk Hyundai Motors/audit-report-fy2024.pdf",
+ "club": "jeonbuk-hyundai-motors",
+ "year": 2024,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T21:59:38.905Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 23,
+  "notasUsadas": []
+ },
+ "ladoConocido": 23,
+ "rubros": [
+  {
+   "label": "상품판매",
+   "lado": "expense",
+   "page": 39,
+   "section": "19. 비용의 성격별 분류 / 보고기간 중 비용의 성격별 분류내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    147869.909
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "종업원급여",
+   "lado": "expense",
+   "page": 39,
+   "section": "19. 비용의 성격별 분류 / 보고기간 중 비용의 성격별 분류내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    2576636.002
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "복리후생비",
+   "lado": "expense",
+   "page": 39,
+   "section": "19. 비용의 성격별 분류 / 보고기간 중 비용의 성격별 분류내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    522027.009
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "세금과공과",
+   "lado": "expense",
+   "page": 39,
+   "section": "19. 비용의 성격별 분류 / 보고기간 중 비용의 성격별 분류내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    84600.49
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "감가상각비",
+   "lado": "expense",
+   "page": 39,
+   "section": "19. 비용의 성격별 분류 / 보고기간 중 비용의 성격별 분류내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    516108.421
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "무형자산상각비",
+   "lado": "expense",
+   "page": 39,
+   "section": "19. 비용의 성격별 분류 / 보고기간 중 비용의 성격별 분류내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    62054.958
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "차량유지비",
+   "lado": "expense",
+   "page": 39,
+   "section": "19. 비용의 성격별 분류 / 보고기간 중 비용의 성격별 분류내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    112602.553
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "여비교통비",
+   "lado": "expense",
+   "page": 39,
+   "section": "19. 비용의 성격별 분류 / 보고기간 중 비용의 성격별 분류내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    170269.18
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "지급수수료",
+   "lado": "expense",
+   "page": 39,
+   "section": "19. 비용의 성격별 분류 / 보고기간 중 비용의 성격별 분류내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    1827571.505
+   ],
+   "origen": "estado 48"
+  },
+  {
+   "label": "기초장부가액",
+   "lado": "revenue",
+   "page": 31,
+   "section": "(*) 양도자산의 처분일까지 당기 감가상각비가 포함되어 있습니다. / 9. 무형자산 / (1) 보고기간 중 무형자산의 변동내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    206433.334
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "감가상각비",
+   "lado": "revenue",
+   "page": 31,
+   "section": "(*) 양도자산의 처분일까지 당기 감가상각비가 포함되어 있습니다. / 9. 무형자산 / (1) 보고기간 중 무형자산의 변동내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    -49200
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "취득원가",
+   "lado": "revenue",
+   "page": 31,
+   "section": "(*) 양도자산의 처분일까지 당기 감가상각비가 포함되어 있습니다. / 9. 무형자산 / (1) 보고기간 중 무형자산의 변동내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    311000
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "상각누계액",
+   "lado": "revenue",
+   "page": 31,
+   "section": "(*) 양도자산의 처분일까지 당기 감가상각비가 포함되어 있습니다. / 9. 무형자산 / (1) 보고기간 중 무형자산의 변동내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    -128849.999
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "국고보조금",
+   "lado": "revenue",
+   "page": 31,
+   "section": "(*) 양도자산의 처분일까지 당기 감가상각비가 포함되어 있습니다. / 9. 무형자산 / (1) 보고기간 중 무형자산의 변동내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    -24916.667
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "경기진행비",
+   "lado": "expense",
+   "page": 38,
+   "section": "(2) 보고기간 중 매출원가의 구성내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    3422345.632
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "상품매출원가",
+   "lado": "expense",
+   "page": 38,
+   "section": "(2) 보고기간 중 매출원가의 구성내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    147869.909
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "선수단운영비",
+   "lado": "expense",
+   "page": 38,
+   "section": "(2) 보고기간 중 매출원가의 구성내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    38836731.525
+   ],
+   "origen": "estado 45"
+  },
+  {
+   "label": "기부금",
+   "lado": "expense",
+   "page": 41,
+   "section": "(2) 보고기간 중 기타비용의 구성내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    112.29041
+   ],
+   "origen": "estado 51"
+  },
+  {
+   "label": "취득원가",
+   "lado": "revenue",
+   "page": 32,
+   "section": "",
+   "values": [
+    80000
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "상각누계액",
+   "lado": "revenue",
+   "page": 32,
+   "section": "",
+   "values": [
+    -49333.333
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "국고보조금",
+   "lado": "revenue",
+   "page": 32,
+   "section": "",
+   "values": [
+    -30666.667
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "법인세부담액",
+   "lado": "expense",
+   "page": 41,
+   "section": "22. 법인세비용 / (1) 보고기간 중 법인세비용의 구성내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    115.13283
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "조정: 자본에 반영된 법인세",
+   "lado": "expense",
+   "page": 41,
+   "section": "22. 법인세비용 / (1) 보고기간 중 법인세비용의 구성내역은 다음과 같습니다. / (단위: 원)",
+   "values": [
+    20.532605
+   ],
+   "origen": "estado 54"
+  }
+ ]
+}

@@ -1,0 +1,812 @@
+{
+  "club": "crb",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/CRB/demonstracoes-contabeis-2024.md",
+  "generatedAt": "2026-09-30T21:51:46.927Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 72,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 5,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 2,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Demonstrações contábeis em 31 de dezembro de 2024 e 2023 / Conteúdo",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Relatório dos auditores independentes sobre as demonstrações",
+          "values": [
+            "contábeis............................................3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Balanços",
+          "values": [
+            "patrimoniais............................................................................................................................6"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demonstrações de resultados dos",
+          "values": [
+            "exercícios.........................................................................................7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demonstrações das mutações do patrimônio",
+          "values": [
+            "líquido.............................................................................8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demonstrações dos fluxos de",
+          "values": [
+            "caixa.........................................................................................................9"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Notas explicativas às demonstrações",
+          "values": [
+            "contábeis....................................................................................10"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "columns": [
+        "ATIVO",
+        "Notas",
+        "2024",
+        "2023",
+        "PASSIVO",
+        "Notas",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "",
+            "",
+            "",
+            "Circulante",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa",
+          "values": [
+            "4",
+            "6.653.358",
+            "4.388.690",
+            "Fornecedores",
+            "",
+            "5.212",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos a terceiros",
+          "values": [
+            "",
+            "716.352",
+            "-",
+            "Impostos e contribuições a recolher",
+            "6",
+            "155.700",
+            "148.097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "Contas a pagar",
+            "",
+            "33.557",
+            "19.812"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "Provisões",
+            "",
+            "-",
+            "13.840"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo circulante",
+          "values": [
+            "",
+            "7.369.709",
+            "4.388.690",
+            "Total do passivo circulante",
+            "",
+            "194.469",
+            "181.749"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Depósitos judiciais",
+          "values": [
+            "",
+            "88.134",
+            "49.685",
+            "Não Circulante",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "5",
+            "8.398.526",
+            "7.335.975",
+            "Tributos parcelados",
+            "",
+            "603.869",
+            "734.661"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo não circulante",
+          "values": [
+            "",
+            "8.486.660",
+            "7.385.661",
+            "Total do passivo não circulante",
+            "",
+            "603.869",
+            "734.661"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "Patrimônio social",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "Fundo patrimonial",
+            "7",
+            "3.283.022",
+            "3.283.022"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "Superávit (déficit) acumulado",
+            "",
+            "7.574.919",
+            "2.779.415"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "Superávit (déficit) do exercício",
+            "",
+            "4.200.090",
+            "4.795.503"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "Total do patrimônio líquido",
+            "",
+            "15.058.031",
+            "10.857.941"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo",
+          "values": [
+            "",
+            "15.856.369",
+            "11.774.351",
+            "Total do passivo e do patrimônio líquido",
+            "",
+            "15.856.369",
+            "11.774.351"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Demonstrações de resultados dos exercícios / Exercícios findos em 31 de dezembro de 2024 e 2023",
+      "columns": [
+        "",
+        "Notas",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Receita operacional líquida",
+          "values": [
+            "8",
+            "60.144.551",
+            "45.563.569"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Custo das atividades sociais e esportivas",
+          "values": [
+            "",
+            "(16.557.833)",
+            "(8.358.054)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado bruto",
+          "values": [
+            "",
+            "43.586.719",
+            "37.205.516"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Despesas com pessoal",
+          "values": [
+            "",
+            "(31.531.998)",
+            "(27.068.659)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas gerais e administrativas",
+          "values": [
+            "9",
+            "(7.923.325)",
+            "(5.038.184)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas tributárias",
+          "values": [
+            "",
+            "(71.413)",
+            "(50.353)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado operacional antes do resultado financeiro",
+          "values": [
+            "",
+            "4.059.984",
+            "5.048.320"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Resultado financeiro",
+          "values": [
+            "",
+            "140.106",
+            "(252.817)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Receitas financeiras",
+          "values": [
+            "",
+            "165.118",
+            "131.346"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas financeiras",
+          "values": [
+            "",
+            "(25.012)",
+            "(384.163)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit (déficit) do exercício",
+          "values": [
+            "",
+            "4.200.090",
+            "4.795.503"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 8,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Demonstrações das mutações do patrimônio social / Exercícios findos em 31 de dezembro de 2024 e 2023",
+      "columns": [
+        "",
+        "Fundo Patrimonial",
+        "Superávits (déficits) Acumulado",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2023",
+          "values": [
+            "3.283.022",
+            "7.574.919",
+            "10.857.941"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Superávit (Déficit) do exercício",
+          "values": [
+            "-",
+            "4.200.090",
+            "4.200.090"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2024",
+          "values": [
+            "3.283.022",
+            "11.775.008",
+            "15.058.031"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Demonstrações dos fluxos de caixa / Exercícios findos em 31 de dezembro de 2024 e 2023",
+      "columns": [
+        "",
+        "Nota",
+        "2024",
+        "2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Fluxo de Caixa das Atividades Operacionais",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Superávit (Déficit) do exercício",
+          "values": [
+            "",
+            "4.200.090",
+            "4.795.503"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação",
+          "values": [
+            "",
+            "54.365",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Déficit do exercício ajustado",
+          "values": [
+            "",
+            "4.254.454",
+            "4.795.503"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) redução de ativos circulantes:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Adiantamentos a terceiros",
+          "values": [
+            "",
+            "(716.352)",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósitos judiciais",
+          "values": [
+            "",
+            "(38.449)",
+            "147.368"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento (redução) de passivos:",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "",
+            "5.212",
+            "(46.445)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos e contribuições a recolher",
+          "values": [
+            "",
+            "7.603",
+            "69.305"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar",
+          "values": [
+            "",
+            "13.745",
+            "(87.781)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões",
+          "values": [
+            "",
+            "(13.840)",
+            "13.840"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tributos parcelados",
+          "values": [
+            "",
+            "(130.792)",
+            "(215.741)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recursos provenientes das atividades operacionais",
+          "values": [
+            "",
+            "3.381.583",
+            "4.676.048"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fluxo de Caixa das Atividades de Investimentos",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "",
+            "(1.116.915)",
+            "(961.471)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recursos provenientes das atividades de investimentos",
+          "values": [
+            "",
+            "(1.116.915)",
+            "(961.471)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fluxo de Caixa das Atividades de Financiamentos",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "",
+            "-",
+            "(1.000.000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recursos utilizados nas atividades de financiamentos",
+          "values": [
+            "",
+            "-",
+            "(1.000.000)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aumento de caixa e equivalentes de caixa",
+          "values": [
+            "",
+            "2.264.668",
+            "2.714.577"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa no início do exercício",
+          "values": [
+            "4",
+            "4.388.690",
+            "1.674.113"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa no final do exercício",
+          "values": [
+            "4",
+            "6.653.358",
+            "4.388.690"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento de caixa e equivalentes de caixa",
+          "values": [
+            "",
+            "2.264.668",
+            "2.714.577"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do ativo circulante",
+      "target": "7.369.709",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 2 rubros enteros)"
+    },
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do ativo circulante",
+      "target": "4.388.690",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total do ativo circulante",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"Total do passivo circulante\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total do ativo circulante",
+      "target": "194.469",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "likelyRelevant": false,
+      "column": 6,
+      "totalLabel": "Total do ativo circulante",
+      "target": "181.749",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do ativo não circulante",
+      "target": "8.486.660",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do ativo não circulante",
+      "target": "7.385.661",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 2 rubros enteros)"
+    },
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total do ativo não circulante",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"Total do passivo não circulante\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total do ativo não circulante",
+      "target": "603.869",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "likelyRelevant": false,
+      "column": 6,
+      "totalLabel": "Total do ativo não circulante",
+      "target": "734.661",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total do ativo",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"Total do passivo e do patrimônio líquido\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "Total do ativo",
+      "target": "15.856.369",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "14259693"
+    },
+    {
+      "page": 6,
+      "section": "AMAC AUDITORES INDEPENDENTES / CLUBE DE REGATAS BRASIL / Balanços patrimoniais / Em 31 de dezembro de 2024 e 2023",
+      "likelyRelevant": false,
+      "column": 6,
+      "totalLabel": "Total do ativo",
+      "target": "11.774.351",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "9941530"
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/crb-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"crb\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "2 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

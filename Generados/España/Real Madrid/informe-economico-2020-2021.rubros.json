@@ -1,0 +1,246 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2020-2021.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2020-2021.pdf",
+  "club": "realmadrid",
+  "year": 2021,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:01:13.373Z",
+  "tieOuts": {
+    "cierran": 3,
+    "noCierran": 23
+  },
+  "warnings": [
+    "7 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "16 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "13 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 20,
+    "notasUsadas": []
+  },
+  "ladoConocido": 20,
+  "rubros": [
+    {
+      "label": "Jugadores y técnicos 1ºequipo fútbol 299.213 1.625 1.450 610 605 766 304.269 Importe plantilla inscribible LNFP 301.738 1.625 - 4.165 621",
+      "lado": "expense",
+      "page": 60,
+      "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2020/2021",
+      "values": [
+        308.466
+      ],
+      "origen": "estado 52",
+      "glosa": "Jugadores y técnicos 1ºequipo fútbol 299.213 1.625 1.450 610 605 766 304.269 Importe plantilla inscribible LNFP 301.738 1.625 - 4.165 621"
+    },
+    {
+      "label": "Jugadores y técnicos 2º equipo fútbol 6.785 - - - 434 - 7.219 Importe plantilla no inscribible LNFP 39.956",
+      "lado": "expense",
+      "page": 60,
+      "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2020/2021",
+      "values": [
+        2.219
+      ],
+      "origen": "estado 52",
+      "glosa": "Jugadores y técnicos 2º equipo fútbol 6.785 - - - 434 - 7.219 Importe plantilla no inscribible LNFP 39.956"
+    },
+    {
+      "label": "Jugadores y técnicos categorías inferiores fútbol 6.309 - 1 -",
+      "lado": "expense",
+      "page": 60,
+      "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2020/2021",
+      "values": [
+        1.227
+      ],
+      "origen": "estado 52",
+      "glosa": "Jugadores y técnicos categorías inferiores fútbol 6.309 - 1 -"
+    },
+    {
+      "label": "Jugadoras y técnicos sección femenina 1.701 - - - 335 -",
+      "lado": "expense",
+      "page": 60,
+      "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2020/2021",
+      "values": [
+        2.036
+      ],
+      "origen": "estado 52",
+      "glosa": "Jugadoras y técnicos sección femenina 1.701 - - - 335 -"
+    },
+    {
+      "label": "Personal no deportivo 43.415 - 31 - 5.478",
+      "lado": "expense",
+      "page": 60,
+      "section": "de personal de la plantilla deportiva inscribible (jugadores y téc- / La distribución por secciones del gasto de personal es la siguiente: / nicos 1ª y 2ª división A) o no inscribible (resto divisiones fútbol y / baloncesto) en la LNFP es la siguiente: / Ejercicio 2020/2021",
+      "values": [
+        49.441
+      ],
+      "origen": "estado 52",
+      "glosa": "Personal no deportivo 43.415 - 31 - 5.478"
+    },
+    {
+      "label": "Otros gastos de explotación",
+      "lado": "expense",
+      "page": 68,
+      "section": "Ingresos estados financieros",
+      "values": [
+        173.797
+      ],
+      "origen": "estado 74",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Diferencia 164.393 85.762 (8.608) Amortización del inmovilizado",
+      "lado": "revenue",
+      "page": 68,
+      "section": "Ingresos estados financieros",
+      "values": [
+        174.466
+      ],
+      "origen": "estado 74",
+      "glosa": "Diferencia 164.393 85.762 (8.608) Amortización del inmovilizado"
+    },
+    {
+      "label": "Partidas conciliatorias Gastos financieros",
+      "lado": "expense",
+      "page": 68,
+      "section": "Ingresos estados financieros",
+      "values": [
+        13.156
+      ],
+      "origen": "estado 74",
+      "glosa": "Partidas conciliatorias Gastos financieros"
+    },
+    {
+      "label": "Aplicaciones informáticas (15.210) (485) 4.304 -",
+      "lado": "expense",
+      "page": 34,
+      "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangi- / miles €                                       30/06/2021           30/06/2020",
+      "values": [
+        -11.391
+      ],
+      "origen": "estado 17",
+      "glosa": "Aplicaciones informáticas (15.210) (485) 4.304 -"
+    },
+    {
+      "label": "Otro inmovilizado intangible (125.045) - - -",
+      "lado": "expense",
+      "page": 34,
+      "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangi- / miles €                                       30/06/2021           30/06/2020",
+      "values": [
+        -125.045
+      ],
+      "origen": "estado 17",
+      "glosa": "Otro inmovilizado intangible (125.045) - - -"
+    },
+    {
+      "label": "Concesiones",
+      "lado": "expense",
+      "page": 34,
+      "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangi- / miles €                                       30/06/2021           30/06/2020",
+      "values": [
+        2.103
+      ],
+      "origen": "estado 17",
+      "glosa": "Concesiones"
+    },
+    {
+      "label": "Jugadores y técnicos 1º equipo fútbol 301.738 1.625 - 4.165 621",
+      "lado": "expense",
+      "page": 60,
+      "section": "Sueldos y   Derechos Indemniz./   Primas      Seguridad Otras cargas Total gastos",
+      "values": [
+        308.466
+      ],
+      "origen": "estado 55",
+      "glosa": "Jugadores y técnicos 1º equipo fútbol 301.738 1.625 - 4.165 621"
+    },
+    {
+      "label": "Jugadores y técnicos 2º equipo fútbol 7.372 - 1.561 - 276 -",
+      "lado": "expense",
+      "page": 60,
+      "section": "Sueldos y   Derechos Indemniz./   Primas      Seguridad Otras cargas Total gastos",
+      "values": [
+        9.209
+      ],
+      "origen": "estado 55",
+      "glosa": "Jugadores y técnicos 2º equipo fútbol 7.372 - 1.561 - 276 -"
+    },
+    {
+      "label": "Jugadores y técnicos categorías inferiores fútbol 5.945 - 200 -",
+      "lado": "expense",
+      "page": 60,
+      "section": "Sueldos y   Derechos Indemniz./   Primas      Seguridad Otras cargas Total gastos",
+      "values": [
+        1.281
+      ],
+      "origen": "estado 55",
+      "glosa": "Jugadores y técnicos categorías inferiores fútbol 5.945 - 200 -"
+    },
+    {
+      "label": "Personal no deportivo 45.016 - 12 -",
+      "lado": "expense",
+      "page": 60,
+      "section": "Sueldos y   Derechos Indemniz./   Primas      Seguridad Otras cargas Total gastos",
+      "values": [
+        5.378
+      ],
+      "origen": "estado 55",
+      "glosa": "Personal no deportivo 45.016 - 12 -"
+    },
+    {
+      "label": "Hasta un año",
+      "lado": "expense",
+      "page": 37,
+      "section": "mientos operativos son los siguientes: / Ejercicio 2019/2020 / miles €                                     30/06/2021   30/06/2020 / Amortización   Valor neto / miles €                                Coste     acumulada     contable",
+      "values": [
+        2.09
+      ],
+      "origen": "estado 19",
+      "glosa": "Hasta un año"
+    },
+    {
+      "label": "Entre uno y cinco años",
+      "lado": "expense",
+      "page": 37,
+      "section": "mientos operativos son los siguientes: / Ejercicio 2019/2020 / miles €                                     30/06/2021   30/06/2020 / Amortización   Valor neto / miles €                                Coste     acumulada     contable",
+      "values": [
+        2.295
+      ],
+      "origen": "estado 19",
+      "glosa": "Entre uno y cinco años"
+    },
+    {
+      "label": "Construcciones",
+      "lado": "expense",
+      "page": 37,
+      "section": "mientos operativos son los siguientes: / Ejercicio 2019/2020 / miles €                                     30/06/2021   30/06/2020 / Amortización   Valor neto / miles €                                Coste     acumulada     contable",
+      "values": [
+        9.607
+      ],
+      "origen": "estado 19",
+      "glosa": "Construcciones"
+    },
+    {
+      "label": "se han imputado en la temporada 2020/2021 (Ver nota 2.2). Activos por diferencias temporarias deducibles",
+      "lado": "expense",
+      "page": 50,
+      "section": "El saldo de la temporada anterior correspondía a la parte de / Activos por impuesto corriente (nota 8.2)                         2.085       12.774 / ingresos correspondientes a la temporada 2019/2020 que",
+      "values": [
+        7.324
+      ],
+      "origen": "estado 39",
+      "glosa": "se han imputado en la temporada 2020/2021 (Ver nota 2.2). Activos por diferencias temporarias deducibles"
+    },
+    {
+      "label": "Créditos fiscales",
+      "lado": "expense",
+      "page": 50,
+      "section": "El saldo de la temporada anterior correspondía a la parte de / Activos por impuesto corriente (nota 8.2)                         2.085       12.774 / ingresos correspondientes a la temporada 2019/2020 que",
+      "values": [
+        24.492
+      ],
+      "origen": "estado 39",
+      "glosa": "Créditos fiscales"
+    }
+  ]
+}

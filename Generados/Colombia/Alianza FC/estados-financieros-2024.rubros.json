@@ -1,0 +1,145 @@
+{
+ "md": "Clubes/Colombia/Alianza FC/estados-financieros-2024.md",
+ "pdf": "Clubes/Colombia/Alianza FC/estados-financieros-2024.pdf",
+ "club": "alianza-fc",
+ "year": 2024,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T21:57:50.318Z",
+ "tieOuts": {
+  "cierran": 7,
+  "noCierran": 3
+ },
+ "warnings": [
+  "3 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 13,
+  "notasUsadas": []
+ },
+ "ladoConocido": 12,
+ "rubros": [
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    19179850.812
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    1482315.216
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Gastos de administración",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    5032716.572
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Gastos de ventas",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    12327615.136
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    632925.17
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Ingresos financieros",
+   "lado": "revenue",
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    10074.536
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Gastos financieros",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    287914.809
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Costo Financiero Neto",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    -277840.273
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Gastos impuesto de renta y cree",
+   "lado": "expense",
+   "page": 3,
+   "section": "## ESTADO DE RESULTADOS INTEGRAL",
+   "values": [
+    1058488.204
+   ],
+   "origen": "estado 2"
+  },
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 15,
+   "section": "## NOTA 27: Ingresos",
+   "values": [
+    19179.850812
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Otros ingresos",
+   "lado": "revenue",
+   "page": 15,
+   "section": "## NOTA 27: Ingresos",
+   "values": [
+    1482.315216
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Ingresos financieros",
+   "lado": "revenue",
+   "page": 15,
+   "section": "## NOTA 27: Ingresos",
+   "values": [
+    10.074536
+   ],
+   "origen": "estado 29"
+  }
+ ]
+}

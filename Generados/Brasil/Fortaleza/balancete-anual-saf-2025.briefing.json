@@ -1,0 +1,217 @@
+{
+  "club": "fortaleza-br",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Fortaleza/balancete-anual-saf-2025.md",
+  "generatedAt": "2026-09-30T22:41:39.046Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 443,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 5,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 2,
+      "section": "1.02.01.06 CAUÇÕES A RECUPERAR 28.500,00 D 0,00 0,00 28.500,00 D / 1.02.02 OUTROS CRÉDITOS 33.148.103,89 D 108.164.399,42 137.693.199,53 3.619.308,78 D / 1.02.02.12 CESSÃO DEFINITIVA A RECEBER 0,00 24.426.617,10 21.125.177,10 3.301.440,00 D / 1.02.02.14 LUVAS A RECEBER 1.396.207,20 D 0,00 1.096.441,32 299.765,88 D / 1.02.02.15 MECANISMO DE SOLIDARIEDADE A REC 56.756,55 D 213.097,90 251.756,55 18.097,90 D",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1.02.03 INVESTIMENTOS",
+          "values": [
+            "0,00",
+            "28.656.892,91",
+            "28.656.892,91",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "1.02.08.01 CONTROLADAS E COLIGADAS - EQUIV. F",
+          "values": [
+            "0,00",
+            "28.656.892,91",
+            "28.656.892,91",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "2.01.05.02 OBRIGAÇÕES SOCIAIS 2.309.698,64 C 13.896.493,65 14.861.531,46 3.274.736,45 OC / 2.01.05.03 PROVISÕES 7.690.840,55 C 24.620.611,62 22.411.557,64 5.481.786,57 C / 2.01.06 OUTRAS OBRIGAÇÕES 8.116.371,81 C 25.770.082,71 33.491.673,80 15.837.962,90 C / 2.01.06.01 ADIANTAMENTOS DE CLIENTES 0,00 250.000,00 2.498.648,24 2.248.648,24 C / 2.01.06.02 CONTAS A PAGAR 3.348.650,96 C 7.280.389,75 5.356.973,09 1.425.234,30 C",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2.01.06.03 AÇOES/ACORDOS TRABALHISTAS",
+          "values": [
+            "0,00",
+            "554.552,34",
+            "554.552,34",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.06.06 OUTRAS OBRIGAÇÕES A PAGAR 2.236.889,65 C",
+          "values": [
+            "2.236.889,65",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.06.07 ACORDOS JUDICIAIS A PAGAR 82.400,00 C",
+          "values": [
+            "570.800,00",
+            "488.400,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "2.01.06.10 ACORDOS EXTRA JUDICIAIS 211.303,41 C 9.068.567,93 18.119.652,24 9.262.387,72 C / 2.01.06.12 ASSESSORIA ESPORTIVA A PAGAR 173.435,80 C 173.435,80 0,00 0,00 / 2.01.06.16 PATROCINIOS CONCEDIDOS A PAGAR 0,00 52.646,62 108.000,00 55.353,38 C / 2.01.07 PASSIVO CONTINGENTE 0,00 0,00 309.300,00 309.300,00 C / 2.01.07.01 PASSIVO CONTINGENTE 0,00 0,00 309.300,00 309.300,00 C",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2.01.08 ADIANTAMENTOS 6.363.636,96 C",
+          "values": [
+            "7.363.636,36",
+            "1.000.000,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.08.03 DIREITO DE TRANSMISSÃO DE JOGOS 6.363.636,36 C",
+          "values": [
+            "6.363.636,36",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.08.07 OUTRAS RECEITAS",
+          "values": [
+            "0,00",
+            "1.000.000,00",
+            "1.000.000,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "2.01.09 RECEITAS A APROPRIAR 15.562.584,36 C 285.098.941,76 280.846.920,99 11.310.563,59 C",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2.01.09.07 RECEITAS DE ATIVAÇÃO DE MARCA",
+          "values": [
+            "0,00",
+            "401.800,00",
+            "401.800,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.09.08 RECEITA DE DIREITO DE TRANSMISSÃO",
+          "values": [
+            "0,00",
+            "1.864.450,00",
+            "1.864.450,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 4,
+      "section": "2.01.09.13 LUVAS A APROPRIAR 1.200.000,00 C 1.133.250,58 1.787.747,36 1.854.496,78 C",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2.01.09.16 CONDOMÍNIO LIGA FORTE UNIÃO",
+          "values": [
+            "0,00",
+            "147.779.647,55",
+            "147.779.647,55",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2.01.09.17 (-) DESPESAS A APROPRIAR",
+          "values": [
+            "0,00",
+            "35.384.371,87",
+            "35.384.371,87",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 2,
+    "results": [
+      {
+        "label": "2.01.09.07 RECEITAS DE ATIVAÇÃO DE MARCA",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Ativação de marca",
+        "similarity": 67
+      },
+      {
+        "label": "2.01.09.07 RECEITAS DE ATIVAÇÃO DE MARCA",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2.01.09.08 RECEITA DE DIREITO DE TRANSMISSÃO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2.01.09.08 RECEITA DE DIREITO DE TRANSMISSÃO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Fortaleza",
+    "matches": [
+      {
+        "leagueId": "br-serieA",
+        "year": "2025",
+        "matchedName": "Fortaleza",
+        "wikipediaPage": "2025 Campeonato Brasileiro Série A"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": []
+}

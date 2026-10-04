@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/Botafogo-SP/demonstracoes-contabeis-2023-2024.md",
+ "generado": "2026-10-02T00:12:05.554Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Em reais)",
+ "caja": {
+  "lineas": [
+   59
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "No hay préstamos bancarios ni financiamientos en el balance; existen mútuos financieros con el accionista Trexx (R$ 47.877.090 no corriente, incluidos en Partes Relacionadas L114 junto con otros conceptos) y obligaciones por arrendamiento (L106, L113), que no se tomaron como deuda bancaria/financiera según el criterio; dudoso si deberían considerarse."
+}

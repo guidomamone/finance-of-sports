@@ -1,0 +1,20 @@
+{
+ "md": "Clubes/Alemania/Borussia Mönchengladbach/jahresabschluss-2024-completo.md",
+ "generado": "2026-10-02T00:18:21.560Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR EUR EUR EUR",
+ "caja": {
+  "lineas": [
+   187
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   206
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El importe de L206 (Verbindlichkeiten gegenüber Kreditinstituten) parece mal leído por OCR: '771.322.541,29' probablemente sea 77.322.541,29, que cuadra con el total de 107.921.967,99. Las Verbindlichkeiten gegenüber Gesellschafter (L209) no se incluyeron como deuda financiera, aunque podrían serlo."
+}

@@ -1,0 +1,1012 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.md",
+ "generado": "2026-10-03T23:03:06.174Z",
+ "estado": "ok",
+ "clubId": "fortalezaceif-co",
+ "year": 2020,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "sin-dudas",
+   "valor": null,
+   "motivo": "Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2020.pdf",
+   "campo": "categoria",
+   "valor": "competition_bonus",
+   "linea": null,
+   "etiqueta": "Auxilio Hotelero (5)",
+   "motivo": "Guido 2026-10-03: coherencia entre años; 'Auxilio hotelero' de los ingresos de actividades ordinarias va como premios de competencia (2019, 2023, 2024 y 2025 ya lo eran).",
+   "evidencia": "estados-financieros-2020, nota de ingresos operacionales",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (financiero e impuesto invertidos)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2019 de este documento suma ingresos 3463.945; el sitio tiene 3463.947"
+  },
+  {
+   "nombre": "documento del año 2021",
+   "ok": true,
+   "detalle": "ingresos de 2020: 2223.737 en este documento y 2223.737 en estados-financieros-2021.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2019",
+   "ok": true,
+   "detalle": "ingresos de 2019: 3463.947 en estados-financieros-2019.pdf y 3463.945 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "la nota de \"Comercio Al Por Mayor Y Al Por Menor (2)\" tiene una sola fila con importe y da el renglón: queda el renglón, sin reintento",
+  "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma la 'Utilidad Contable' de la liquidación del impuesto (b6) como resultado antes de impuestos de 2020?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se carga 'Impuesto De Renta Y Complementario' (8,182) de L511 como ingreso por impuesto (signo a favor), dado que las notas suman -710,605 y la Utilidad Contable es (702,423)?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se usa como etiqueta de cada renglón del estado el rótulo del total impreso (ej. 'Total Gastos de Ventas') porque el título numerado de la nota no está transcripto?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 2223.737,
+  "gastos": 2922.233,
+  "financiero": 12.112,
+  "impuesto": -8.182,
+  "resultadoImpreso": -702.423,
+  "resultadoParaCargar": -702.423,
+  "resultadoFinal": null,
+  "lecturaSignos": "financiero e impuesto invertidos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Derechos De Televisión Nacional (1)",
+   "lado": "ingreso",
+   "M": 544.489,
+   "pagina": 22,
+   "linea": 858,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Operacionales (1)\""
+  },
+  {
+   "etiqueta": "Venta De Derechos Deportivos (2)",
+   "lado": "ingreso",
+   "M": 370.93,
+   "pagina": 22,
+   "linea": 859,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Operacionales (1)\""
+  },
+  {
+   "etiqueta": "Federación Colombiana De Futbol",
+   "lado": "ingreso",
+   "M": 236.057,
+   "pagina": 22,
+   "linea": 860,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Operacionales (1)\""
+  },
+  {
+   "etiqueta": "Venta De Boletería (3)",
+   "lado": "ingreso",
+   "M": 191.189,
+   "pagina": 22,
+   "linea": 861,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Operacionales (1)\""
+  },
+  {
+   "etiqueta": "Subsidio Dimayor-Conmebol",
+   "lado": "ingreso",
+   "M": 107.36,
+   "pagina": 22,
+   "linea": 862,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Operacionales (1)\""
+  },
+  {
+   "etiqueta": "Aux Protocolos Bioseguridad (4)",
+   "lado": "ingreso",
+   "M": 100.538,
+   "pagina": 22,
+   "linea": 863,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Operacionales (1)\""
+  },
+  {
+   "etiqueta": "Auxilio Hotelero (5)",
+   "lado": "ingreso",
+   "M": 94.879,
+   "pagina": 22,
+   "linea": 864,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Operacionales (1)\""
+  },
+  {
+   "etiqueta": "Auxilio Arbitraje",
+   "lado": "ingreso",
+   "M": 67.811,
+   "pagina": 22,
+   "linea": 865,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Operacionales (1)\""
+  },
+  {
+   "etiqueta": "Convenio Entre Clubes",
+   "lado": "ingreso",
+   "M": 50,
+   "pagina": 22,
+   "linea": 866,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Operacionales (1)\""
+  },
+  {
+   "etiqueta": "Auxilio Transporte",
+   "lado": "ingreso",
+   "M": 13.086,
+   "pagina": 22,
+   "linea": 867,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\" > desglose de \"Operacionales (1)\""
+  },
+  {
+   "etiqueta": "Comercio Al Por Mayor Y Al Por Menor (2)",
+   "lado": "ingreso",
+   "M": 76.73,
+   "pagina": 21,
+   "linea": 841,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Alquiler Deportivo (1)",
+   "lado": "ingreso",
+   "M": 148,
+   "pagina": 28,
+   "linea": 1156,
+   "origen": "nota que desglosa \"Total Otros Ingresos\""
+  },
+  {
+   "etiqueta": "Subsidio Nomina Gobierno Nal (2)",
+   "lado": "ingreso",
+   "M": 107.518,
+   "pagina": 28,
+   "linea": 1157,
+   "origen": "nota que desglosa \"Total Otros Ingresos\""
+  },
+  {
+   "etiqueta": "Reintegro De Otros Costos Y Gastos (3)",
+   "lado": "ingreso",
+   "M": 103.617,
+   "pagina": 28,
+   "linea": 1158,
+   "origen": "nota que desglosa \"Total Otros Ingresos\""
+  },
+  {
+   "etiqueta": "Aprovechamientos",
+   "lado": "ingreso",
+   "M": 11.524,
+   "pagina": 28,
+   "linea": 1159,
+   "origen": "nota que desglosa \"Total Otros Ingresos\""
+  },
+  {
+   "etiqueta": "Ajuste Al Peso",
+   "lado": "ingreso",
+   "M": 0.009,
+   "pagina": 28,
+   "linea": 1160,
+   "origen": "nota que desglosa \"Total Otros Ingresos\""
+  },
+  {
+   "etiqueta": "Total Costo de Ventas",
+   "lado": "gasto",
+   "M": 52.995,
+   "pagina": 23,
+   "linea": 918,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Sueldos",
+   "lado": "gasto",
+   "M": 727.972,
+   "pagina": 23,
+   "linea": 932,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Bonificaciones",
+   "lado": "gasto",
+   "M": 101.481,
+   "pagina": 23,
+   "linea": 933,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Cesantías",
+   "lado": "gasto",
+   "M": 67.456,
+   "pagina": 23,
+   "linea": 934,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Prima De Servicios",
+   "lado": "gasto",
+   "M": 71.693,
+   "pagina": 23,
+   "linea": 935,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Fondos Pensión",
+   "lado": "gasto",
+   "M": 89.424,
+   "pagina": 23,
+   "linea": 936,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Vacaciones",
+   "lado": "gasto",
+   "M": 31.713,
+   "pagina": 23,
+   "linea": 937,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Aportes Cajas De Compensación Familiar",
+   "lado": "gasto",
+   "M": 30.797,
+   "pagina": 23,
+   "linea": 938,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Auxilio De Transporte",
+   "lado": "gasto",
+   "M": 29.944,
+   "pagina": 23,
+   "linea": 939,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Aportes A Administradoras De Riesgos Profesionales",
+   "lado": "gasto",
+   "M": 18.71,
+   "pagina": 23,
+   "linea": 940,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Indemnizaciones Laborales",
+   "lado": "gasto",
+   "M": 17.489,
+   "pagina": 23,
+   "linea": 941,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Intereses Sobre Cesantías",
+   "lado": "gasto",
+   "M": 6.876,
+   "pagina": 23,
+   "linea": 942,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Dotación De Personal",
+   "lado": "gasto",
+   "M": 5.886,
+   "pagina": 23,
+   "linea": 943,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Aportes A Entidades Promotoras De Salud",
+   "lado": "gasto",
+   "M": 0.404,
+   "pagina": 24,
+   "linea": 953,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Medico Y Ambulancias (1)",
+   "lado": "gasto",
+   "M": 136.422,
+   "pagina": 24,
+   "linea": 957,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Logística De Partidos (2)",
+   "lado": "gasto",
+   "M": 91.143,
+   "pagina": 24,
+   "linea": 958,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Alojamiento Y Manutención (3)",
+   "lado": "gasto",
+   "M": 49.327,
+   "pagina": 24,
+   "linea": 959,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Arbitraje Art 383 (4)",
+   "lado": "gasto",
+   "M": 45.359,
+   "pagina": 24,
+   "linea": 960,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Transporte De Pasajeros",
+   "lado": "gasto",
+   "M": 30.743,
+   "pagina": 24,
+   "linea": 961,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Elementos De Aseo Y Cafetería",
+   "lado": "gasto",
+   "M": 21.017,
+   "pagina": 24,
+   "linea": 962,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Multas Partidos Dimayor (5)",
+   "lado": "gasto",
+   "M": 7.096,
+   "pagina": 24,
+   "linea": 963,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Derechos Deportivos",
+   "lado": "gasto",
+   "M": 4.8,
+   "pagina": 24,
+   "linea": 964,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Pasajes Aéreos",
+   "lado": "gasto",
+   "M": 2.655,
+   "pagina": 24,
+   "linea": 965,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Combustible",
+   "lado": "gasto",
+   "M": 1.292,
+   "pagina": 24,
+   "linea": 966,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Elementos Papelería",
+   "lado": "gasto",
+   "M": 0.241,
+   "pagina": 24,
+   "linea": 967,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Peajes",
+   "lado": "gasto",
+   "M": 0.228,
+   "pagina": 24,
+   "linea": 968,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Parqueadero",
+   "lado": "gasto",
+   "M": 0.141,
+   "pagina": 24,
+   "linea": 969,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Transportes Fletes Y Acarreos",
+   "lado": "gasto",
+   "M": 0.097,
+   "pagina": 24,
+   "linea": 970,
+   "origen": "nota que desglosa \"Total Gastos de Ventas\""
+  },
+  {
+   "etiqueta": "Sueldos",
+   "lado": "gasto",
+   "M": 257.425,
+   "pagina": 25,
+   "linea": 1002,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Bonificaciones",
+   "lado": "gasto",
+   "M": 29.9,
+   "pagina": 25,
+   "linea": 1003,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Fondos Pensión",
+   "lado": "gasto",
+   "M": 29.598,
+   "pagina": 25,
+   "linea": 1004,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Prima De Servicios",
+   "lado": "gasto",
+   "M": 24.177,
+   "pagina": 25,
+   "linea": 1005,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Cesantías",
+   "lado": "gasto",
+   "M": 23.265,
+   "pagina": 25,
+   "linea": 1006,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Sena",
+   "lado": "gasto",
+   "M": 21.881,
+   "pagina": 25,
+   "linea": 1007,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Vacaciones",
+   "lado": "gasto",
+   "M": 11.833,
+   "pagina": 25,
+   "linea": 1008,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Aportes Cajas De Compensación Familiar",
+   "lado": "gasto",
+   "M": 10.93,
+   "pagina": 25,
+   "linea": 1009,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Aportes Administradoras De Riesgos Profe",
+   "lado": "gasto",
+   "M": 6.625,
+   "pagina": 25,
+   "linea": 1010,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Auxilio De Transporte",
+   "lado": "gasto",
+   "M": 4.501,
+   "pagina": 25,
+   "linea": 1011,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Intereses Sobre Cesantías",
+   "lado": "gasto",
+   "M": 2.788,
+   "pagina": 25,
+   "linea": 1012,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Aportes A Entidades Promotoras De Salud",
+   "lado": "gasto",
+   "M": 1.63,
+   "pagina": 25,
+   "linea": 1013,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Horas Extras Y Recargos",
+   "lado": "gasto",
+   "M": 1.627,
+   "pagina": 25,
+   "linea": 1014,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Dotación Y Suministro A Trabajadores",
+   "lado": "gasto",
+   "M": 0.964,
+   "pagina": 25,
+   "linea": 1015,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Aporte I.C.B.F.",
+   "lado": "gasto",
+   "M": 0.567,
+   "pagina": 25,
+   "linea": 1016,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Asesoría Financiera",
+   "lado": "gasto",
+   "M": 32.683,
+   "pagina": 25,
+   "linea": 1020,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Asesoría Jurídica",
+   "lado": "gasto",
+   "M": 14.292,
+   "pagina": 25,
+   "linea": 1021,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Asesoría Técnica",
+   "lado": "gasto",
+   "M": 0.13,
+   "pagina": 25,
+   "linea": 1022,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gravamen Al Movimiento Financiero",
+   "lado": "gasto",
+   "M": 10.526,
+   "pagina": 25,
+   "linea": 1026,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Impuesto Al Consumo",
+   "lado": "gasto",
+   "M": 4.395,
+   "pagina": 25,
+   "linea": 1027,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Industria Y Comercio",
+   "lado": "gasto",
+   "M": 2.224,
+   "pagina": 25,
+   "linea": 1028,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "De Vehículos",
+   "lado": "gasto",
+   "M": 1.337,
+   "pagina": 25,
+   "linea": 1029,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Construcciones Y Edificaciones",
+   "lado": "gasto",
+   "M": 59.558,
+   "pagina": 25,
+   "linea": 1031,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Terrenos",
+   "lado": "gasto",
+   "M": 38.805,
+   "pagina": 25,
+   "linea": 1032,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Maquinaria Y Equipo",
+   "lado": "gasto",
+   "M": 3.78,
+   "pagina": 25,
+   "linea": 1033,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Flota Y Equipo De Transporte",
+   "lado": "gasto",
+   "M": 3.492,
+   "pagina": 25,
+   "linea": 1035,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Cumplimiento",
+   "lado": "gasto",
+   "M": 2.43,
+   "pagina": 25,
+   "linea": 1036,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Responsabilidad Civil Y Extracontractual",
+   "lado": "gasto",
+   "M": 1.426,
+   "pagina": 25,
+   "linea": 1037,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Aseo Y Vigilancia (1)",
+   "lado": "gasto",
+   "M": 104.252,
+   "pagina": 25,
+   "linea": 1041,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Propaganda Y Publicidad",
+   "lado": "gasto",
+   "M": 50.754,
+   "pagina": 26,
+   "linea": 1051,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Energía Eléctrica",
+   "lado": "gasto",
+   "M": 39.318,
+   "pagina": 26,
+   "linea": 1053,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Servicios Digitación (2)",
+   "lado": "gasto",
+   "M": 13.48,
+   "pagina": 26,
+   "linea": 1054,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Transporte fletes Y Acarreos",
+   "lado": "gasto",
+   "M": 5.134,
+   "pagina": 26,
+   "linea": 1055,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Teléfono",
+   "lado": "gasto",
+   "M": 4.746,
+   "pagina": 26,
+   "linea": 1056,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Tv Cable",
+   "lado": "gasto",
+   "M": 4.619,
+   "pagina": 26,
+   "linea": 1057,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Acueducto Y Alcantarillado",
+   "lado": "gasto",
+   "M": 4.164,
+   "pagina": 26,
+   "linea": 1058,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Asistencia Técnica",
+   "lado": "gasto",
+   "M": 3.231,
+   "pagina": 26,
+   "linea": 1059,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gas",
+   "lado": "gasto",
+   "M": 2.576,
+   "pagina": 26,
+   "linea": 1060,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Procesamiento Electrónico De Datos",
+   "lado": "gasto",
+   "M": 0.049,
+   "pagina": 26,
+   "linea": 1061,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Correo portes Y Telegramas",
+   "lado": "gasto",
+   "M": 0.021,
+   "pagina": 26,
+   "linea": 1062,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Registro Mercantil",
+   "lado": "gasto",
+   "M": 3.777,
+   "pagina": 26,
+   "linea": 1066,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Tramites Y Licencias",
+   "lado": "gasto",
+   "M": 0.054,
+   "pagina": 26,
+   "linea": 1067,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Notariales",
+   "lado": "gasto",
+   "M": 0.052,
+   "pagina": 26,
+   "linea": 1068,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Reparaciones Locativas (3)",
+   "lado": "gasto",
+   "M": 37.747,
+   "pagina": 26,
+   "linea": 1071,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Construcciones Y Edificaciones",
+   "lado": "gasto",
+   "M": 12.209,
+   "pagina": 26,
+   "linea": 1072,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Maquinaria Y Equipo",
+   "lado": "gasto",
+   "M": 8.427,
+   "pagina": 26,
+   "linea": 1073,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Flota Y Equipo De Transporte",
+   "lado": "gasto",
+   "M": 4.296,
+   "pagina": 26,
+   "linea": 1074,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Equipo De Computación Y Comunicación",
+   "lado": "gasto",
+   "M": 1.001,
+   "pagina": 26,
+   "linea": 1075,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Equipo Medico-Científico",
+   "lado": "gasto",
+   "M": 0.18,
+   "pagina": 26,
+   "linea": 1076,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Terrenos",
+   "lado": "gasto",
+   "M": 0.095,
+   "pagina": 26,
+   "linea": 1077,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Pasajes Aéreos",
+   "lado": "gasto",
+   "M": 21.863,
+   "pagina": 26,
+   "linea": 1082,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Pasajes Terrestres",
+   "lado": "gasto",
+   "M": 8.857,
+   "pagina": 26,
+   "linea": 1083,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Mejoras A Propiedades Ajenas",
+   "lado": "gasto",
+   "M": 56.189,
+   "pagina": 26,
+   "linea": 1086,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Flota Y Equipo De Transporte",
+   "lado": "gasto",
+   "M": 43,
+   "pagina": 26,
+   "linea": 1087,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Equipo De Computación Y Comunicación",
+   "lado": "gasto",
+   "M": 4.548,
+   "pagina": 26,
+   "linea": 1088,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Maquinaria Y Equipo",
+   "lado": "gasto",
+   "M": 2.861,
+   "pagina": 26,
+   "linea": 1089,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Intangibles",
+   "lado": "gasto",
+   "M": 122,
+   "pagina": 26,
+   "linea": 1091,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Licencias",
+   "lado": "gasto",
+   "M": 5.743,
+   "pagina": 26,
+   "linea": 1092,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Comisiones (5)",
+   "lado": "gasto",
+   "M": 65.195,
+   "pagina": 26,
+   "linea": 1094,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Elementos De Aseo Y Cafetería",
+   "lado": "gasto",
+   "M": 25.852,
+   "pagina": 26,
+   "linea": 1095,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Combustibles Y Lubricantes",
+   "lado": "gasto",
+   "M": 5.464,
+   "pagina": 26,
+   "linea": 1096,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Libros Suscripciones Periódicos Y Revistas",
+   "lado": "gasto",
+   "M": 2.402,
+   "pagina": 26,
+   "linea": 1097,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Taxis Y Buses",
+   "lado": "gasto",
+   "M": 1.385,
+   "pagina": 26,
+   "linea": 1098,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Útiles Papelería Y Fotocopias",
+   "lado": "gasto",
+   "M": 1.169,
+   "pagina": 27,
+   "linea": 1108,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Parqueaderos",
+   "lado": "gasto",
+   "M": 0.11,
+   "pagina": 27,
+   "linea": 1110,
+   "origen": "nota que desglosa \"Total Gastos de Administración\""
+  },
+  {
+   "etiqueta": "Gastos No Deducibles (1)",
+   "lado": "gasto",
+   "M": 6.034,
+   "pagina": 27,
+   "linea": 1130,
+   "origen": "nota que desglosa \"Total Otros Gastos\""
+  },
+  {
+   "etiqueta": "Multas sanciones Y Litigios (2)",
+   "lado": "gasto",
+   "M": 2.77,
+   "pagina": 27,
+   "linea": 1131,
+   "origen": "nota que desglosa \"Total Otros Gastos\""
+  },
+  {
+   "etiqueta": "Impuestos Asumidos",
+   "lado": "gasto",
+   "M": 0.321,
+   "pagina": 27,
+   "linea": 1132,
+   "origen": "nota que desglosa \"Total Otros Gastos\""
+  },
+  {
+   "etiqueta": "Ajuste Al Peso",
+   "lado": "gasto",
+   "M": 0.098,
+   "pagina": 27,
+   "linea": 1133,
+   "origen": "nota que desglosa \"Total Otros Gastos\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": -1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Total Costos Financieros",
+   "M": -12.112,
+   "linea": 1183
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Impuesto De Renta Y Complementario",
+   "M": 8.182,
+   "linea": 511
+  }
+ ]
+}

@@ -1,0 +1,81 @@
+{
+  "club": "bayernmunich-de",
+  "year": 2021,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/Bayern Munich/jahresabschluss-2020-21.md",
+  "generatedAt": "2026-09-30T22:37:40.147Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "Jahresabschluss der FC Bayern München AG - Konzern / Geschäftsjahr 2020/2021 (01. Juli 2020 bis 30. Juni 2021) / AKTIVA zum 30.6.2021 in Mio. EURO PASSIVA zum 30.6.2021 in Mio. EURO / A. Anlagevermögen A. Eigenkapital / I. Immaterielle Vermögensgegenstände 175,3 I. Gezeichnetes Kapital 30,0",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Il. Sach- und Finanzanlagen 289,2 464,5 Il. Kapital- und Gewinnrücklage 4611",
+          "values": [
+            "491,1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Umlaufvermögen 209,0 B. Rückstellungen",
+          "values": [
+            "42,0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "(Forderungen, Anzahlungen, Vorräte,",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bank- und Kassenguthaben) C. Verbindlichkeiten",
+          "values": [
+            "108,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C. Rechnungsabgrenzungsposten",
+          "values": [
+            "3,8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D. Aktiver Überhang aus Vermögensverrechnung 2.1 D. Rechnungsabgrenzungsposten",
+          "values": [
+            "37,7"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "de",
+    "query": "Bayern Munich",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

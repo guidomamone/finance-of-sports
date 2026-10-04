@@ -1,0 +1,65 @@
+{
+ "md": "Clubes/Colombia/Once Caldas/estados-financieros-2017.md",
+ "pdf": "Clubes/Colombia/Once Caldas/estados-financieros-2017.pdf",
+ "club": "oncecaldas",
+ "year": 2017,
+ "numberFormat": "us (coma miles, punto decimal)",
+ "generatedAt": "2026-09-30T21:59:27.568Z",
+ "tieOuts": {
+  "cierran": 10,
+  "noCierran": 17
+ },
+ "warnings": [
+  "17 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 5,
+  "notasUsadas": []
+ },
+ "ladoConocido": 4,
+ "rubros": [
+  {
+   "label": "FINANCIEROS",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# NOTA 24",
+   "values": [
+    56982
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "INTERESES",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# NOTA 24",
+   "values": [
+    12977
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "DIFERENCIA EN CAMBIO",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# NOTA 24",
+   "values": [
+    40923
+   ],
+   "origen": "estado 27"
+  },
+  {
+   "label": "DESC COMERCIALES CONDICIONADOS",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# NOTA 24",
+   "values": [
+    3082
+   ],
+   "origen": "estado 27"
+  }
+ ]
+}

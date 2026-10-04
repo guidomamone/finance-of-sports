@@ -1,0 +1,75 @@
+{
+ "md": "Clubes/Bélgica/Antwerp/jaarrekening-2020-06-30-individual.md",
+ "generatedAt": "2026-09-30T22:48:35.097Z",
+ "rubrosHuella": "daa58abdf1b5e35438d9c63ad5b7285d333fe71a",
+ "rubros": [
+  {
+   "label": "SCHULDEN 17/49",
+   "lado": "expense",
+   "page": 7,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 596.972 504.204 / Uitgestelde belastingen 168",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Schulden op meer dan één jaar 69 |",
+   "lado": "expense",
+   "page": 7,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 596.972 504.204 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.79,
+   "desdeCache": true
+  },
+  {
+   "label": "Financiële schulden 170/4",
+   "lado": "expense",
+   "page": 7,
+   "section": "Fiscale lasten 161 / Grote herstellings- en onderhoudswerken 162 / Milieuverplichtingen 163 / Overige risico's en kosten 6.8 | 164/5 596.972 504.204 / Uitgestelde belastingen 168",
+   "choice": "other_expenses",
+   "confidence": 0.48,
+   "desdeCache": true
+  },
+  {
+   "label": "NIET-RECURRENTE KOSTEN",
+   "lado": "expense",
+   "page": 24,
+   "section": "Terugneming van waardeverminderingen op financiële vaste activa 761 / Terugneming van voorzieningen voor uitzonderlijke financiële risico's / en kosten 7621 / Meerwaarden bij de realisatie van financiële vaste activa 7631",
+   "choice": "exceptional_items",
+   "confidence": 0.91,
+   "desdeCache": true
+  },
+  {
+   "label": "Niet-recurrente bedrijfskosten 66A",
+   "lado": "expense",
+   "page": 24,
+   "section": "Terugneming van waardeverminderingen op financiële vaste activa 761 / Terugneming van voorzieningen voor uitzonderlijke financiële risico's / en kosten 7621 / Meerwaarden bij de realisatie van financiële vaste activa 7631",
+   "choice": "exceptional_items",
+   "confidence": 0.49,
+   "desdeCache": true
+  },
+  {
+   "label": "Andere niet-recurrente financiële opbrengsten",
+   "lado": "revenue",
+   "page": 24,
+   "section": "Terugneming van waardeverminderingen op financiële vaste activa 761 / Terugneming van voorzieningen voor uitzonderlijke financiële risico's / en kosten 7621 / Meerwaarden bij de realisatie van financiële vaste activa 7631",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1079
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "md": "Clubes/Bélgica/OH Leuven/jaarrekening-2018-12-31-individual.md",
+ "pdf": "Clubes/Bélgica/OH Leuven/jaarrekening-2018-12-31-individual.pdf",
+ "club": "oh-leuven",
+ "year": 2018,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:55:22.550Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 6,
+  "notasUsadas": []
+ },
+ "ladoConocido": 6,
+ "rubros": [
+  {
+   "label": "1. Oprichtingskosten",
+   "lado": "expense",
+   "page": 32,
+   "section": "Nr. BE 0668.426.703 | VOL 6.19 / Waarderingsregels / SAMENVATTING VAN DE WAARDERINGSREGELS",
+   "values": [
+    0.00002
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "2. Immateriële vaste activa",
+   "lado": "expense",
+   "page": 32,
+   "section": "Nr. BE 0668.426.703 | VOL 6.19 / Waarderingsregels / SAMENVATTING VAN DE WAARDERINGSREGELS",
+   "values": [
+    0.00005
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "3. Industriële, administratieve of commerciële gebouwen (*)",
+   "lado": "expense",
+   "page": 32,
+   "section": "Nr. BE 0668.426.703 | VOL 6.19 / Waarderingsregels / SAMENVATTING VAN DE WAARDERINGSREGELS",
+   "values": [
+    0.0001
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "4. Installaties, machines en uitrusting (*)",
+   "lado": "expense",
+   "page": 32,
+   "section": "Nr. BE 0668.426.703 | VOL 6.19 / Waarderingsregels / SAMENVATTING VAN DE WAARDERINGSREGELS",
+   "values": [
+    0.0001
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "5. Rollend materieel (*)",
+   "lado": "expense",
+   "page": 32,
+   "section": "Nr. BE 0668.426.703 | VOL 6.19 / Waarderingsregels / SAMENVATTING VAN DE WAARDERINGSREGELS",
+   "values": [
+    0.0001
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "6. Kantoormaterieel en meubilair (*)",
+   "lado": "expense",
+   "page": 32,
+   "section": "Nr. BE 0668.426.703 | VOL 6.19 / Waarderingsregels / SAMENVATTING VAN DE WAARDERINGSREGELS",
+   "values": [
+    0.0001
+   ],
+   "origen": "estado 17"
+  }
+ ]
+}

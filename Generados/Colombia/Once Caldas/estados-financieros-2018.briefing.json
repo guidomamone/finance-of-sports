@@ -1,0 +1,3637 @@
+{
+  "club": "oncecaldas",
+  "year": 2018,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Colombia/Once Caldas/estados-financieros-2018.md",
+  "generatedAt": "2026-09-30T21:59:30.140Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 99,
+    "eu": 3,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 33,
+  "relevantTableCount": 5,
+  "tables": [
+    {
+      "page": 3,
+      "section": "3.6. Propiedades, planta y equipo",
+      "columns": [
+        "Activo",
+        "Vida útil"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Muebles y enseres",
+          "values": [
+            "10 años"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Maquinaria y equipo",
+          "values": [
+            "10 años"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de cómputo",
+          "values": [
+            "3 años"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flota y equipo de transporte",
+          "values": [
+            "10 años"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": "Los saldo al cierre de cada ejercicio eran los siguientes:",
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CAJA GENERAL",
+          "values": [
+            "2,666",
+            "7,049"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAJAS MENORES",
+          "values": [
+            "2,280",
+            "2,872"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCOS",
+          "values": [
+            "394,490",
+            "89,547"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CUENTA DE AHORRO",
+          "values": [
+            "165,252",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DERECHOS FIDUCIARIOS",
+          "values": [
+            "936,164",
+            "122,608"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EFECTIVO Y EQUIVALENTES DE EFE",
+          "values": [
+            "1,500,851",
+            "222,075"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CLIENTES :",
+          "values": [
+            "11,836,966",
+            "82,440"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CLUB BRIGHON & HOVE ALBIAN F: En el año 2018 fue cancelada esta obligación.",
+          "values": [
+            "0",
+            "137,100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ASOCIACION DEPORTIVO PASTO: valor que nos adeudan por el préstamo de los derechos deportivos del jugador Yuber Alberto Asprilla, quien estuvo en este club en el año 2015. Obligación que se encuentra en mora. A la fecha solo han abonado 25 millones.",
+          "values": [
+            "15,900",
+            "40,900"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ASOCIACION DEPORTIVO CALI: corresponde al Reconocimiento de formación de Carlos Rivas, transacción que se realizó por valor de $ 45 millones aproximadamente, a la fecha nos adeudan alrededor de $11. Millones, este saldo es por concepto de diferencias en la tasa de cambio del día en que recibieron el dinero y a la fecha en que efectivamente fue cancelada la obligación a Once Caldas S.A. Actualmente se encuentra la demanda ante Dimayor, ya que esta entidad no quiere reconocer esta deuda,",
+          "values": [
+            "0",
+            "11,177"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AC CHIEVO VERONA: Valor correspondiente a derechos de formación del jugador Fernando Uribe H. Cancelados en este año",
+          "values": [
+            "0",
+            "14,765"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FEYENOORD ROTTERDAM: Saldo pendiente de la transferencia realizada en el mes de julio del Jugador Luis Fernando Sinisterra, este valor corresponde a 1.700.000 euros, que serán cancelados así: Julio 2019 un millón de euros y 700 mil euros en julio del año 2.020",
+          "values": [
+            "6,248,596",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 10,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "VITORIA SPORT CLUBE FUTEBOL SA: Saldo pendiente de la transferencia del jugador Oscar Estupiñan, que será cancelado en febrero del año 2.019, equivalente a 1.500.000 Euros, ajustado a la tasa representativa a diciembre 31 de 2.017 por $3.577.77",
+          "values": [
+            "5,572,470",
+            "5,366,655"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CUENTAS POR COBRAR A ENTIDADES REGULADAS POR EL FUTBOL COLOMBIANO este valor corresponde a los derechos de televisión de los meses de diciembre de cada año , los cuales quedan pendientes a fin de cada mes y son cancelados en los primeros días del mes siguiente",
+          "values": [
+            "254,701",
+            "345,638"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "INGRESOS POR COBRAR: En ésta se registran los obligaciones correspondiente a la venta de la publicidad, en los contratos queda establecido las fechas de pago, las cuales son normalmente a un año; son obligaciones de excelente comportamiento, a la fecha la obligación más representativa es con PETROAGREGADOS, que representa el80%, el otro 20% de la cartera, ya para el mes de marzo se encontraban pendientes algunas facturas.",
+          "values": [
+            "302,503",
+            "616,621"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Otros (Publicidad)",
+          "values": [
+            "302,503",
+            "236,172"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anticipos de Impuestos: el valor registrado en el año 2.017, hace parte del pago del impuesto de renta de los años 2017 y 2018.",
+          "values": [
+            "0",
+            "332,459"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retención en la fuente : las retenciones de ambos periodos son valores retenidos por lo facturados durante el año, los cuales son anticipo del impuesto",
+          "values": [
+            "0",
+            "193,582"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Autorretenciones Renta, según decreto 2201 de 2016; valores cancelados a la Dian, correspondiente al 0.8% de los ingresos mensuales, y que se cruzan con el impuesto de renta, que debe cancelarse en el año 2.019",
+          "values": [
+            "0",
+            "139,835"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por Cobrar a empleados: Valores, descontados directamente de nómina, donde el plazo máximo es de dos meses.",
+          "values": [
+            "162,114",
+            "11,276"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar a Empleados",
+          "values": [
+            "162,114",
+            "11,276"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudores Varios : Los valores acá registrados, no se les calcula deterioro, ya que de acuerdo a la política del Once Caldas, cuando las obligaciones no superan 90 días, son de una probabilidad alta, de recuperar, de hecho, a la fecha de realización de estos informes, ya estaban cancelados",
+          "values": [
+            "12,346",
+            "75,795"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deudores Varios",
+          "values": [
+            "12,346",
+            "75,795"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DETERIORO",
+          "values": [
+            "-26,242",
+            "-585"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DEUDORES",
+          "values": [
+            "12,542,388",
+            "6,571,352"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Mercancías no fabricadas por la empresa",
+          "values": [
+            "4,533",
+            "80,424"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Menos: provisión",
+          "values": [
+            "-5",
+            "-32,053"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL INVENTARIOS",
+          "values": [
+            "4,528",
+            "48,370"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "NO DEPRECIABLES",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "500,000",
+            "500,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPRECIABLES",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Maquinaria y Equipo",
+          "values": [
+            "81,188",
+            "81,188"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Oficina",
+          "values": [
+            "18,873",
+            "15,659"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo de Computación y Comunicación",
+          "values": [
+            "158,576",
+            "158,356"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flota y Equipo de Transporte",
+          "values": [
+            "294,559",
+            "294,559"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación acumulada",
+          "values": [
+            "-231,628",
+            "-152,713"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVOS DEPRECIABLES",
+          "values": [
+            "321,568",
+            "397,049"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL PROPIEDAD PLANTA Y EQUIPO",
+          "values": [
+            "821,568",
+            "897,049"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 11,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DERECHOS DEPORTIVOS",
+          "values": [
+            "200,000",
+            "2,215,063"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CUADRADO ROMERO JOSE FERNANDO",
+          "values": [
+            "0",
+            "880,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HENAO HURTADO HARRISON STEVE",
+          "values": [
+            "0",
+            "200,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MARIMON BAEZ JESUS DAVID",
+          "values": [
+            "0",
+            "200,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ROMAN PALACIO SERGIO FELIPE",
+          "values": [
+            "0",
+            "1,992"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MORENO PEÑA JOSE LUIS",
+          "values": [
+            "0",
+            "733,072"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "LONDOÑO ASPRILLA KEVIN ALEXAND",
+          "values": [
+            "200,000",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ARANGO AMBUILA JOHAN LEANDRO",
+          "values": [
+            "0",
+            "200,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AMORTIZACION ACUMULADA",
+          "values": [
+            "0",
+            "-2,027,265"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CUADRADO ROMERO JOSE FERNANDO",
+          "values": [
+            "0",
+            "-777,202"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HENAO HURTADO HARRISON STEVE",
+          "values": [
+            "0",
+            "-161,111"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MARIMON BAEZ JESUS DAVID",
+          "values": [
+            "0",
+            "-153,889"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ROMAN PALACIO SERGIO FELIPE",
+          "values": [
+            "0",
+            "-1,992"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MORENO PEÑA JOSE LUIS",
+          "values": [
+            "0",
+            "-733,072"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ARANGO AMBUILA JOHAN LEANDRO",
+          "values": [
+            "0",
+            "-200,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL INTANGIBLES",
+          "values": [
+            "200,000",
+            "187,798"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "GASTOS PAGADOS POR ANTICIPADO",
+          "values": [
+            "287,794",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "S Y TURISMO CLAUDIA RAMIREZ",
+          "values": [
+            "642",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PERALTA GONZALEZ DIEGO",
+          "values": [
+            "0",
+            "5,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS PAGADOS POR ANTICIPADO",
+          "values": [
+            "288,436",
+            "5,000"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": null,
+      "columns": [
+        "Concepto",
+        "N I I F",
+        "FISCAL"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Costos Venta Estupiñan",
+          "values": [
+            "1,443,627",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste Demanda Flefiel",
+          "values": [
+            "1,605,034",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización Derechos Deportivos",
+          "values": [
+            "",
+            "110,982"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Activos Fiscales no NIIF",
+          "values": [
+            "",
+            "5,778"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangibles",
+          "values": [
+            "",
+            "264"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo por compensar -renta",
+          "values": [
+            "",
+            "1,964,032"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTALES",
+          "values": [
+            "3,048,661",
+            "2,081,057"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Impuesto Diferido 34%",
+          "values": [
+            "1,036,545",
+            "707,559"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total impuesto Diferido",
+          "values": [
+            "1,744,104",
+            ""
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": null,
+      "columns": [
+        "CARGOS DIFERIDOS",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "NIIF- ACTIVOS DIFERIDOS",
+          "values": [
+            "0",
+            "1,744,104"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL OTROS ACTIVOS",
+          "values": [
+            "288,436",
+            "1,749,104"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": null,
+      "columns": [
+        "",
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "NOTA 10",
+          "values": [
+            "OBLIGACIONES FINANCIERAS A CORTO PLAZO",
+            "333,333",
+            "333,333"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "El valor acá reportado corresponde a la parte corriente del mismo.",
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "333,333",
+            "333,333"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "PROVEEDORES",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Para compra de la Tienda Deportiva",
+          "values": [
+            "23,045",
+            "204"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PROVEEDORES",
+          "values": [
+            "23,045",
+            "204"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "COMPRA DERECHOS DETIVOS",
+          "values": [
+            "385,935",
+            "331,598"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PRESTAMO DERECHOS DTIVOS",
+          "values": [
+            "32,708",
+            "130,078"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COMISION-VTA-PRESTAMOJUGADORES",
+          "values": [
+            "2,184,984",
+            "125,275"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARTICIPACION EN VTA JUGADORES",
+          "values": [
+            "72,352",
+            "72,352"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DERECHOS DE FORMACION",
+          "values": [
+            "25,625",
+            "60,672"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NIIF-CXP DERECHOS DTIVOS",
+          "values": [
+            "878,975",
+            "916,437"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NIIF-CXP EXTERIOR",
+          "values": [
+            "517,917",
+            "536,666"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COMISIONES",
+          "values": [
+            "247",
+            "3,282"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HONORARIOS",
+          "values": [
+            "18,500",
+            "34,433"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SERVICIOS DE MANTENIMIENTO",
+          "values": [
+            "19,310",
+            "342"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ARRENDAMIENTOS",
+          "values": [
+            "10,849",
+            "4,218"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SERVICIOS PUBLICOS",
+          "values": [
+            "12,858",
+            "4,922"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SEGUROS",
+          "values": [
+            "43,514",
+            "43,758"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS DE VIAJE",
+          "values": [
+            "3,748",
+            "1,564"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LOGISTICA-PREPARA EVENTOS DTIV",
+          "values": [
+            "27,174",
+            "9,801"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTROS",
+          "values": [
+            "388,816",
+            "202,582"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NIIF-COSTOS Y GASTOS POR 171231",
+          "values": [
+            "0",
+            "7,108"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APORTES A EPS",
+          "values": [
+            "25,001",
+            "26,448"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APORTES ARP",
+          "values": [
+            "1,478",
+            "3,203"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APORTES ICBF SENA CAJAS DE COM",
+          "values": [
+            "16,173",
+            "18,994"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APORTES CESANTIAS Y/O PENSIONE",
+          "values": [
+            "44,866",
+            "47,322"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMBARGOS",
+          "values": [
+            "955",
+            "3,309"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LIBRANZAS",
+          "values": [
+            "8,889",
+            "10,404"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "FONDOS",
+          "values": [
+            "35,655",
+            "29,502"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REINTEGROS POR PAGAR",
+          "values": [
+            "11,357",
+            "13,849"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTROS",
+          "values": [
+            "72,757",
+            "72,757"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL CUENTAS POR PAGAR A CORTO PLAZO",
+          "values": [
+            "4,840,643",
+            "2,710,877"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "IMPTO DE INDUSTRIA Y COMERCIO",
+          "values": [
+            "12,169",
+            "11,495"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RETENCION EN LA FUENTE",
+          "values": [
+            "82,771",
+            "57,596"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IVA X PAGAR",
+          "values": [
+            "116,288",
+            "116,481"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTROS",
+          "values": [
+            "7",
+            "5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RENTA Y COMPLEMENTARIOS",
+          "values": [
+            "143,619",
+            "37,289"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL IMPUESTOS POR PAGAR",
+          "values": [
+            "354,853",
+            "222,866"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "SALARIOS POR PAGAR",
+          "values": [
+            "69,969",
+            "280,302"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CESANTIAS CONSOLIDADAS",
+          "values": [
+            "100,353",
+            "105,555"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INTERESES SOBRE LAS CESANTIAS",
+          "values": [
+            "11,817",
+            "12,435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PRIMA DE SERVICIOS",
+          "values": [
+            "0",
+            "799"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VACACIONES CONSOLIDADAS",
+          "values": [
+            "34,337",
+            "175,494"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL OBLIGACIONES LABORALES",
+          "values": [
+            "216,477",
+            "574,585"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ingresos Recibidos por anticipado",
+          "values": [
+            "241,377",
+            "21,285"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Venta de abonos",
+          "values": [
+            "0",
+            "162,910"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ANTICIPOS Y AVANCES RECIBIDOS",
+          "values": [
+            "241,377",
+            "184,195"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ramón Elías Tabares: proceso de reparación directa, la probabilidad de éxito es del 80%, según informe de jurídica",
+          "values": [
+            "0",
+            "150,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Corpereira : reclamación valores transferencia José Izquierdo",
+          "values": [
+            "208,968",
+            "1,044,400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Club Deportivo Estudiantil: reclamación formación del jugador Daniel Rojano",
+          "values": [
+            "0",
+            "40,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROVISIONES DIVERSAS",
+          "values": [
+            "208,968",
+            "1,234,400"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PASIVOS ESTIMADOS Y PROVISIONE",
+          "values": [
+            "208,968",
+            "1,234,400"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CUENTAS POR PAGAR EN REORGANIZACION",
+          "values": [
+            "9,180,472",
+            "10,301,626"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "QUIROGRAFARIOS",
+          "values": [
+            "2,501,458",
+            "3,922,733"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NO RECLAMADOS",
+          "values": [
+            "213,803",
+            "213,803"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INTERESES FISCALES",
+          "values": [
+            "1,057,540",
+            "921,632"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INTERESES ANTES ACUERDO",
+          "values": [
+            "3,252",
+            "6,860"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INTERESES PACTADOS ACUERDO",
+          "values": [
+            "529,098",
+            "361,207"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "QUIROGRAFARIOS-NO RECLAMADOS",
+          "values": [
+            "97,257",
+            "97,327"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OBLIGACION FISCAL RENTA",
+          "values": [
+            "3,042,910",
+            "3,042,910"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OBLIGACION FISCAL IVA",
+          "values": [
+            "336,622",
+            "336,622"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OBLIGACION FISCAL SANCION",
+          "values": [
+            "1,398,532",
+            "1,398,532"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "OBLIGACIONES FINANCIERAS A LARGO PLAZO",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true,
+          "codigo": "NOTA 18"
+        },
+        {
+          "rawLabel": "OTRAS OBLIGACIONES FINANCIERAS: Estas obligaciones, son otorgados por terceros, respaldadas éstas obligaciones con pagares, la obligación de la Dimayor con compromiso de pago de intereses de ley. Otorgados por las siguiente personas:",
+          "values": [
+            "4,581,038",
+            "5,687,353"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Dimayor",
+          "values": [
+            "638,889",
+            "972,222"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Tovar Gamboa Luz Mercedes",
+          "values": [
+            "2,122,078",
+            "2,122,078"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Logistics and Service",
+          "values": [
+            "1,079,224",
+            "449,224"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Pineda Gómez Jaime Alberto",
+          "values": [
+            "740,848",
+            "2,143,830"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "TOTAL OBLIGACIONES FINANCIERAS A LARGO PLAZO",
+          "values": [
+            "4,581,038",
+            "5,687,353"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": null,
+      "columns": [
+        "COMPOSICION DEL PATRIMONIO",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Capital autorizado, corresponde a 15 millones de acciones a $1000 cada una, a partir de agosto del año 2016",
+          "values": [
+            "15,000,000",
+            "15,000,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital por suscribir",
+          "values": [
+            "-7,092,656",
+            "-7,092,656"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital suscrito y pagado",
+          "values": [
+            "7,907,344",
+            "7,907,344"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAPITAL SOCIAL",
+          "values": [
+            "7,907,344",
+            "7,907,344"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "SUPERAVIT DE CAPITAL",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Superávit por conversión",
+          "values": [
+            "7,872,705",
+            "7,872,705"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prima por conversión",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL SUPERAVIT DE CAPITAL",
+          "values": [
+            "7,872,705",
+            "7,872,705"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ganancias (perdidas) acumuladas por adopción NIIF Pymes, de acuerdo con la NIIF para las pymes(párrafo 11.36), una entidad solo dará de baja en cuentas un pasivo financiero( o una parte de un pasivo financiero), cuando se haya extinguido, como es nuestro caso, que los intereses que se causaron por la demanda de Flefield, no se reconocerán, toda vez, que estando en la ley 1116, no se reconocerán intereses distintos a los decretados en el acuerdo",
+          "values": [
+            "-484,425",
+            "-2,089,459"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impactos por conversión a NIIF",
+          "values": [
+            "-484,425",
+            "-2,089,459"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RESULTADO DE EJERCICIOS ANTERIORES",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Pérdidas acumuladas",
+          "values": [
+            "-25,264,280",
+            "-26,053,556"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL RESULTADO DE EJERCICIOS ANTERIORES",
+          "values": [
+            "-25,264,280",
+            "-26,053,556"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "UTILIDAD O PERDIDA DEL EJERCICIO",
+          "values": [
+            "5,346,221",
+            "789,275"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TOTAL PATRIMONIO",
+          "values": [
+            "-4,622,435",
+            "-11,573,690"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "INGRESOS OPERATIVOS",
+          "values": [
+            "21,438,202",
+            "16,672,414"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TAQUILLA-VENTA DE BOLETERIA",
+          "values": [
+            "4,238,680",
+            "2,007,540"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PARTIDOS OFICIALES",
+          "values": [
+            "1,076,086",
+            "1,059,138"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BOLETERIA COPA LIBERTADORES",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BOLETERIA COPA COLOMBIA",
+          "values": [
+            "1,970,844",
+            "830"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VENTA DE ABONOS",
+          "values": [
+            "1,130,317",
+            "936,996"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VENTA DERECHOS DTIVOS-JUGADORE",
+          "values": [
+            "7,817,700",
+            "7,665,080"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "INGRESOS POR SOLIDARIDAD",
+          "values": [
+            "61,629",
+            "137,100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PRESTAMO DERECHOS DTIVOS-JUGAD",
+          "values": [
+            "0",
+            "250,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PUBLICIDAD Y PROPAGANDA",
+          "values": [
+            "602,568",
+            "288,353"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "VALLAS PUBLICITARIAS",
+          "values": [
+            "602,568",
+            "288,353"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIMAYOR",
+          "values": [
+            "4,999,450",
+            "4,479,937"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PARTICIPACIONES DIMAYOR",
+          "values": [
+            "450,000",
+            "1,047,670"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DERECHOS TV ABIERTA 161231",
+          "values": [
+            "763,384",
+            "743,223"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DERECHOS TV CERRADA 161231",
+          "values": [
+            "1,477,935",
+            "1,826,265"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DERECHOS TV INTERNACIONA 161210",
+          "values": [
+            "155,736",
+            "154,500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FONDO EQUIPOS X NO CLASI 161130",
+          "values": [
+            "0",
+            "139,678"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TELEVISION VARIABLE 160506",
+          "values": [
+            "885,166",
+            "501,151"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARTICIPACION TRANSPORTE 161130",
+          "values": [
+            "38,206",
+            "67,450"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARTICIPACION HOSPEDAJE",
+          "values": [
+            "1,229,022",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FEDERACION COLOMBIANA DE FUTBO",
+          "values": [
+            "25,025",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARTICIPACIONES NACIONALES -INTERNACIONALES",
+          "values": [
+            "942,045",
+            "58,800"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PATROCINIO",
+          "values": [
+            "3,225,751",
+            "1,856,120"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "VTA DE ARTICULOS DTIVOS-MISCEL",
+          "values": [
+            "656,513",
+            "406,011"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ACTIVIDADES CONEXAS",
+          "values": [
+            "16,929",
+            "225,591"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CONCESIONES PUESTOS DE VTAS",
+          "values": [
+            "0",
+            "19,037"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VENTAS",
+          "values": [
+            "0",
+            "10,042"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ARRENDAMIENTO CABINAS",
+          "values": [
+            "16,929",
+            "50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ARRENDAMIENTO ESPACIO PUBLICIT",
+          "values": [
+            "0",
+            "196,462"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEVOLUCION VTAS ALMACEN",
+          "values": [
+            "-7,958",
+            "-614"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEVOLUCIONES EN VENTAS",
+          "values": [
+            "0",
+            "-25,210"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEVOL PUBLICIDAD-ARREND",
+          "values": [
+            "-1,140,130",
+            "-27,500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEV VTA DERECHOS DTIVOS",
+          "values": [
+            "0",
+            "-456,750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEV PRESTAMOS DEREC DTI",
+          "values": [
+            "0",
+            "-50,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEV PATROCINADOR",
+          "values": [
+            "0",
+            "-142,045"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 18,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "COSTO DE VENTAS",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true,
+          "codigo": "NOTA 21"
+        },
+        {
+          "rawLabel": "Venta de artículos deportivos-misceláneos",
+          "values": [
+            "508,765",
+            "384,092"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "De derechos deportivos: Costo de los derechos de Oscar Estupiñan",
+          "values": [
+            "0",
+            "889,200"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "TOTAL COSTO DE VENTA",
+          "values": [
+            "508,765",
+            "1,273,292"
+          ],
+          "bold": false,
+          "codigo": ""
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 18,
+      "section": null,
+      "columns": [
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "TOTAL GASTOS OPERACIONALES DE ADMINISTRACION",
+          "values": [
+            "808,345",
+            "943,140"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GASTOS DE PERSONAL",
+          "values": [
+            "678,948",
+            "754,574"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HONORARIOS",
+          "values": [
+            "39,776",
+            "64,422"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPUESTOS",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ARRENDAMIENTOS",
+          "values": [
+            "16,413",
+            "10,814"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SEGUROS",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SERVICIOS",
+          "values": [
+            "32,827",
+            "44,885"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS LEGALES",
+          "values": [
+            "2,208",
+            "2,286"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MANTENIMIENTO Y REPARACIONES",
+          "values": [
+            "330",
+            "873"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ADECUACION E INSTALACION",
+          "values": [
+            "35",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS DE VIAJE",
+          "values": [
+            "22,060",
+            "30,524"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPRECIACIONES",
+          "values": [
+            "1,164",
+            "2,806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIVERSOS",
+          "values": [
+            "14,584",
+            "31,955"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 18,
+      "section": null,
+      "columns": [
+        "GASTOS DE VENTAS",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "TOTAL GASTOS DE VENTAS",
+          "values": [
+            "13,576,188",
+            "13,931,288"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GASTOS DE PERSONAL",
+          "values": [
+            "6,866,963",
+            "7,168,507"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HONORARIOS",
+          "values": [
+            "49,825",
+            "163,339"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPUESTOS",
+          "values": [
+            "492,496",
+            "319,124"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ARRENDAMIENTOS",
+          "values": [
+            "605,806",
+            "536,150"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CONTRIBUCIONES Y AFILIACIONES",
+          "values": [
+            "2,321",
+            "3,586"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SEGUROS",
+          "values": [
+            "7,143",
+            "50,605"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": null,
+      "columns": [
+        "GASTOS DE VENTAS (Continuación)",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "SERVICIOS",
+          "values": [
+            "191,179",
+            "173,314"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS LEGALES",
+          "values": [
+            "514",
+            "1,852"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MANTENIMIENTO Y REPARACIONES",
+          "values": [
+            "66,630",
+            "68,112"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ADECUACION E INSTALACION",
+          "values": [
+            "976",
+            "3,953"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS DE VIAJE",
+          "values": [
+            "454,227",
+            "363,668"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPRECIACIONES",
+          "values": [
+            "86,994",
+            "90,713"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DERECHOS DEPORTIVOS",
+          "values": [
+            "3,649,049",
+            "4,163,162"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIVERSOS",
+          "values": [
+            "1,075,825",
+            "792,562"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROVISIONES",
+          "values": [
+            "26,242",
+            "32,639"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIVERSOS : Registramos los siguientes conceptos",
+          "values": [
+            "1,075,528",
+            "792,542"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "COMISIONES",
+          "values": [
+            "1,353",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS DE REPRESENTACION Y RELACIONES",
+          "values": [
+            "384",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ELEMENTOS DE ASEO Y CAFETERIA",
+          "values": [
+            "7,164",
+            "4,490"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "UTILES PAPELERIA Y FOTOCOPIAS",
+          "values": [
+            "1,810",
+            "1,572"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COMBUSTIBLES Y LUBRICANTES",
+          "values": [
+            "4,918",
+            "13,787"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMBASES Y EMPAQUES",
+          "values": [
+            "0",
+            "239"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TAXIS Y BUSES",
+          "values": [
+            "3,196",
+            "2,829"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CASINO Y RESTAURANTE",
+          "values": [
+            "3,045",
+            "7,062"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARQUEADEROS",
+          "values": [
+            "159",
+            "252"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LOGISTICA PREPARAC EVENTOS DEP",
+          "values": [
+            "520,980",
+            "344,773"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTROS",
+          "values": [
+            "526,985",
+            "411,547"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IVA X DIVERSOS",
+          "values": [
+            "18",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IVA AL CONSUMO",
+          "values": [
+            "5,517",
+            "5,991"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 19,
+      "section": null,
+      "columns": [
+        "INGRESOS NO OPERACIONALES",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "FINANCIEROS",
+          "values": [
+            "1,106,432",
+            "56,982"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "INTERESES",
+          "values": [
+            "10,768",
+            "12,977"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIFERENCIA EN CAMBIO",
+          "values": [
+            "1,094,307",
+            "40,923"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESC COMERCIALES CONDICIONADOS",
+          "values": [
+            "1,357",
+            "3,082"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "UTILIDAD VTA PROPIEDAD PLANTA Y EQUIPO",
+          "values": [
+            "0",
+            "26,875"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "FLOTA Y EQUIPO DE TRANSPORTE",
+          "values": [
+            "0",
+            "26,875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECUPERACIONES",
+          "values": [
+            "1,357,782",
+            "212,029"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DEUDAS MALAS",
+          "values": [
+            "0",
+            "54"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REINTE DE OTROS COSTOS Y GASTO",
+          "values": [
+            "4,861",
+            "19,869"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECUPERACION PROVISIONES",
+          "values": [
+            "217,867",
+            "103,949"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REINTEGROS NIIF",
+          "values": [
+            "930,534",
+            "12,427"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REINTEGRO DE GTOS ANOS ANTERIO",
+          "values": [
+            "194,170",
+            "42,527"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INDEMNIZACIONES",
+          "values": [
+            "11,916",
+            "57,945"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": null,
+      "columns": [
+        "INGRESOS NO OPERACIONALES (Continuación)",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "POR INCAPACIDADES DEL ISS",
+          "values": [
+            "11,916",
+            "57,945"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INGRESOS DE EJERCICIOS ANTERIORES",
+          "values": [
+            "90",
+            "2,828"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "INGRESOS DE EJERCICIOS ANTERIORES",
+          "values": [
+            "90",
+            "2,828"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIVERSOS",
+          "values": [
+            "688,841",
+            "631,387"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "APROVECHAMIENTOS",
+          "values": [
+            "11,886",
+            "8,184"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUBVENCIONES",
+          "values": [
+            "676,945",
+            "604,187"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REGALIAS",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PREMIOS-GANANCIA OCASIONAL",
+          "values": [
+            "0",
+            "19,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AJUSTE AL PESO",
+          "values": [
+            "10",
+            "16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL INGRESOS NO OPERACIONALES",
+          "values": [
+            "3,165,062",
+            "988,046"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 20,
+      "section": null,
+      "columns": [
+        "GASTOS NO OPERACIONALES",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "GASTOS NO OPERACIONALES",
+          "values": [
+            "1,723,822",
+            "2,430,280"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GASTOS FINANCIEROS",
+          "values": [
+            "820,054",
+            "485,927"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PERDIDA-VTA RETIRO DE BIENES",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS EXTRAORDINARIOS",
+          "values": [
+            "713,284",
+            "1,942,153"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GASTOS DIVERSOS",
+          "values": [
+            "190,484",
+            "2,200"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMTPO DIFERIDO NIIF",
+          "values": [
+            "1,744,104",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 20,
+      "section": null,
+      "columns": [
+        "",
+        "CUENTA",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "NOTA 26",
+          "values": [
+            "IMPUESTO DE RENTQ Y COMPLEMENTARIO",
+            "895,818",
+            "37,289"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "IMPUESTO DE RENTA Y COMPLEMENTARIOS",
+            "895,818",
+            "37,289"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": null,
+      "columns": [
+        "CONCEPTO",
+        "Diciembre 31 de 2018",
+        "Diciembre 31 de 2017"
+      ],
+      "rows": [
+        {
+          "rawLabel": "NIIF-INGRESO POR IMPUESTO DIFERIDO",
+          "values": [
+            "0",
+            "1,744,104"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 10,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL DEUDORES",
+      "target": "12,542,388",
+      "addendCount": 12,
+      "closes": false,
+      "diff": "-5787533"
+    },
+    {
+      "page": 10,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DEUDORES",
+      "target": "6,571,352",
+      "addendCount": 12,
+      "closes": false,
+      "diff": "833167"
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL INVENTARIOS",
+      "target": "4,528",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL INVENTARIOS",
+      "target": "48,370",
+      "addendCount": 2,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 2 rubros enteros)"
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL ACTIVOS DEPRECIABLES",
+      "target": "321,568",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "500000"
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL ACTIVOS DEPRECIABLES",
+      "target": "397,049",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "500000"
+    },
+    {
+      "page": 11,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL PROPIEDAD PLANTA Y EQUIPO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 12,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL INTANGIBLES",
+      "target": "200,000",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL INTANGIBLES",
+      "target": "187,798",
+      "addendCount": 8,
+      "closes": false,
+      "diff": "-4042329"
+    },
+    {
+      "page": 12,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTALES",
+      "target": "3,048,661",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTALES",
+      "target": "2,081,057",
+      "addendCount": 4,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 4 rubros enteros)"
+    },
+    {
+      "page": 12,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total impuesto Diferido",
+      "target": "1,744,104",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-707559"
+    },
+    {
+      "page": 12,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL OTROS ACTIVOS",
+      "target": "288,436",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-288436"
+    },
+    {
+      "page": 12,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL OTROS ACTIVOS",
+      "target": "1,749,104",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-5000"
+    },
+    {
+      "page": 13,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PROVEEDORES",
+      "target": "23,045",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 13,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PROVEEDORES",
+      "target": "204",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL CUENTAS POR PAGAR A CORTO PLAZO",
+      "target": "4,840,643",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-4720874"
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL CUENTAS POR PAGAR A CORTO PLAZO",
+      "target": "2,710,877",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-2594769"
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL IMPUESTOS POR PAGAR",
+      "target": "354,853",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "1",
+      "how": "redondeo (diferencia 1 en 5 rubros enteros)"
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL IMPUESTOS POR PAGAR",
+      "target": "222,866",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL OBLIGACIONES LABORALES",
+      "target": "216,477",
+      "addendCount": 5,
+      "closes": true,
+      "diff": "-1",
+      "how": "redondeo (diferencia -1 en 5 rubros enteros)"
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL OBLIGACIONES LABORALES",
+      "target": "574,585",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL ANTICIPOS Y AVANCES RECIBIDOS",
+      "target": "241,377",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL ANTICIPOS Y AVANCES RECIBIDOS",
+      "target": "184,195",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL OBLIGACIONES FINANCIERAS A LARGO PLAZO",
+      "target": "4,581,038",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "4581039"
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL OBLIGACIONES FINANCIERAS A LARGO PLAZO",
+      "target": "5,687,353",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "5687354"
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL SUPERAVIT DE CAPITAL",
+      "target": "7,872,705",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "23722032"
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL SUPERAVIT DE CAPITAL",
+      "target": "7,872,705",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "23722032"
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL RESULTADO DE EJERCICIOS ANTERIORES",
+      "target": "-25,264,280",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-968850"
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL RESULTADO DE EJERCICIOS ANTERIORES",
+      "target": "-26,053,556",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "-4178918"
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PATRIMONIO",
+      "target": "-4,622,435",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "9968656"
+    },
+    {
+      "page": 16,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PATRIMONIO",
+      "target": "-11,573,690",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "12362965"
+    },
+    {
+      "page": 18,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL COSTO DE VENTA",
+      "target": "508,765",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL COSTO DE VENTA",
+      "target": "1,273,292",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL GASTOS OPERACIONALES DE ADMINISTRACION",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 18,
+      "section": null,
+      "likelyRelevant": true,
+      "totalLabel": "TOTAL GASTOS DE VENTAS",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 20,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "TOTAL INGRESOS NO OPERACIONALES",
+      "target": "3,165,062",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "-1775284"
+    },
+    {
+      "page": 20,
+      "section": null,
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "TOTAL INGRESOS NO OPERACIONALES",
+      "target": "988,046",
+      "addendCount": 9,
+      "closes": false,
+      "diff": "338329"
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 55,
+    "results": [
+      {
+        "label": "GASTOS DE PERSONAL",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS DE PERSONAL",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Gastos de Ventas: Gastos de personal (plantel)",
+        "similarity": 50
+      },
+      {
+        "label": "HONORARIOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "HONORARIOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IMPUESTOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IMPUESTOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ARRENDAMIENTOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ARRENDAMIENTOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CONTRIBUCIONES Y AFILIACIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CONTRIBUCIONES Y AFILIACIONES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SEGUROS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SEGUROS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SERVICIOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SERVICIOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS LEGALES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS LEGALES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "MANTENIMIENTO Y REPARACIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "MANTENIMIENTO Y REPARACIONES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ADECUACION E INSTALACION",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ADECUACION E INSTALACION",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS DE VIAJE",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS DE VIAJE",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DEPRECIACIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DEPRECIACIONES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DERECHOS DEPORTIVOS",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "player_sales",
+        "matchedLabel": "Venta de derechos deportivos jugadores",
+        "similarity": 50
+      },
+      {
+        "label": "DERECHOS DEPORTIVOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DIVERSOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DIVERSOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "PROVISIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "PROVISIONES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DIVERSOS : Registramos los siguientes conceptos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DIVERSOS : Registramos los siguientes conceptos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COMISIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COMISIONES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS DE REPRESENTACION Y RELACIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS DE REPRESENTACION Y RELACIONES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ELEMENTOS DE ASEO Y CAFETERIA",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "ELEMENTOS DE ASEO Y CAFETERIA",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "UTILES PAPELERIA Y FOTOCOPIAS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "UTILES PAPELERIA Y FOTOCOPIAS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COMBUSTIBLES Y LUBRICANTES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "COMBUSTIBLES Y LUBRICANTES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "EMBASES Y EMPAQUES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "EMBASES Y EMPAQUES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "TAXIS Y BUSES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "TAXIS Y BUSES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CASINO Y RESTAURANTE",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "CASINO Y RESTAURANTE",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "PARQUEADEROS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "PARQUEADEROS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "LOGISTICA PREPARAC EVENTOS DEP",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "LOGISTICA PREPARAC EVENTOS DEP",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "OTROS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "OTROS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IVA X DIVERSOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IVA X DIVERSOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IVA AL CONSUMO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IVA AL CONSUMO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FINANCIEROS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FINANCIEROS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INTERESES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INTERESES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DIFERENCIA EN CAMBIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DIFERENCIA EN CAMBIO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DESC COMERCIALES CONDICIONADOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DESC COMERCIALES CONDICIONADOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "UTILIDAD VTA PROPIEDAD PLANTA Y EQUIPO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "UTILIDAD VTA PROPIEDAD PLANTA Y EQUIPO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FLOTA Y EQUIPO DE TRANSPORTE",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "FLOTA Y EQUIPO DE TRANSPORTE",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECUPERACIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECUPERACIONES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DEUDAS MALAS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DEUDAS MALAS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REINTE DE OTROS COSTOS Y GASTO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REINTE DE OTROS COSTOS Y GASTO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECUPERACION PROVISIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECUPERACION PROVISIONES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REINTEGROS NIIF",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REINTEGROS NIIF",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REINTEGRO DE GTOS ANOS ANTERIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REINTEGRO DE GTOS ANOS ANTERIO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INDEMNIZACIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INDEMNIZACIONES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "POR INCAPACIDADES DEL ISS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "POR INCAPACIDADES DEL ISS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESOS DE EJERCICIOS ANTERIORES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INGRESOS DE EJERCICIOS ANTERIORES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "APROVECHAMIENTOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "APROVECHAMIENTOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SUBVENCIONES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SUBVENCIONES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REGALIAS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REGALIAS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "PREMIOS-GANANCIA OCASIONAL",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "PREMIOS-GANANCIA OCASIONAL",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "AJUSTE AL PESO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "AJUSTE AL PESO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS NO OPERACIONALES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS NO OPERACIONALES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS FINANCIEROS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS FINANCIEROS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "PERDIDA-VTA RETIRO DE BIENES",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "PERDIDA-VTA RETIRO DE BIENES",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS EXTRAORDINARIOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS EXTRAORDINARIOS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS DIVERSOS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "GASTOS DIVERSOS",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Gastos de Ventas: Diversos y provisiones",
+        "similarity": 50
+      },
+      {
+        "label": "IMTPO DIFERIDO NIIF",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "IMTPO DIFERIDO NIIF",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "co",
+    "query": "Once Caldas",
+    "matches": [
+      {
+        "leagueId": "co-primeraA",
+        "year": "2018",
+        "matchedName": "Once Caldas",
+        "wikipediaPage": "2018 Categoría Primera A season"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [
+    {
+      "page": 1,
+      "line": "**3.2. Conversión de moneda extranjera**"
+    },
+    {
+      "page": 1,
+      "line": "Los saldos en el activo y pasivo expresados en moneda extranjera se ajustan con la tasa representativa del mercado aplicable y vigente en las respectivas fechas, llevando a ganancias y pérdidas los resultados de la liquidación de dichas operaciones"
+    }
+  ],
+  "warnings": [
+    "2 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "18 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

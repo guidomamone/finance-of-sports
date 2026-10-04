@@ -1,0 +1,55 @@
+{
+ "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.pdf",
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2018-06-30.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T13:20:25.557Z",
+ "bloques": {
+  "b1": {
+   "pagina": 2,
+   "lineas": [
+    27,
+    68
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 3,
+   "lineas": [
+    78,
+    94
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 8,
+   "lineas": [
+    196,
+    207
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 9,
+   "lineas": [
+    225,
+    231
+   ],
+   "tipo": "texto"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b2"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Importes impresos con dos decimales (2.710.883,11), en euros sin indicación de miles",
+ "moneda": "EUR",
+ "columna_ejercicio": "30/6/2018",
+ "columna_anterior": "30/6/2017",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "Estado de resultados (ΚΑΤΑΣΤΑΣΗ ΑΠΟΤΕΛΕΣΜΑΤΩΝ ΧΡΗΣΗΣ) en b2, estados individuales de la ΠΑΕ AEL según normas griegas abreviadas. b1 es el balance, b3 son datos generales del anexo y b4 son firmas; no hay notas que desglosen ingresos o gastos."
+}

@@ -1,0 +1,3233 @@
+{
+  "club": "botafogo",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Botafogo/demonstracoes-financeiras-2023.md",
+  "generatedAt": "2026-09-30T22:41:19.718Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 2,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 64,
+  "relevantTableCount": 20,
+  "tables": [
+    {
+      "page": 16,
+      "section": "INDICADORES / FINANCEIROS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Dívida bruta",
+          "values": [
+            "358.871",
+            "20.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Caixa e equivalentes de Caixa",
+          "values": [
+            "16.057",
+            "3.575"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Dívida líquida",
+          "values": [
+            "342.814",
+            "16.625"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "EBITDA AJUSTADO / R$ MIL 2023 2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Prejuízo do exercício",
+          "values": [
+            "(101.095)",
+            "(248.288)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Tributação Especifica do Futebol (TEF)",
+          "values": [
+            "18.965",
+            "6.072"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Depreciação e amortização",
+          "values": [
+            "92.575",
+            "77.778"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+/-) Resultado financeiro líquido",
+          "values": [
+            "57.197",
+            "12.797"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ebitda",
+          "values": [
+            "67.642",
+            "(151.641)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita líquida",
+          "values": [
+            "355.258",
+            "141.688"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "Margem do Ebitda 19% -107%",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(+) Valores referentes ao passivo do Botafogo",
+          "values": [
+            "65.807",
+            "66.581"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ebitda Ajustado",
+          "values": [
+            "131.449",
+            "(85.260)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "Balanço Patrimonial / Exercícios findos em 31 de dezembro de 2023 e 2022 GF BOTAFOGO / (Valores expressos em milhares de reais) / Nota 31/12/2023 31/12/2022 / Circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caixa e equivalentes de caixa K)",
+          "values": [
+            "16.057",
+            "3.975"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "128.393",
+            "40.849"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estoque",
+          "values": [
+            "7.016",
+            "2.492"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "Partes relacionadas 6 569.606 a / Adiantamentos 1.488 2.268 / Imposto a recuperar 205 204",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas antecipadas",
+          "values": [
+            "5.654",
+            "4.286"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo circulante",
+          "values": [
+            "526.417",
+            "52.474"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "Não circulante / Contas a receber 4 151.441 58.970 / Outros ativos 2.015 E",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "11.025",
+            "1.614"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "157.543",
+            "187.874"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo não circulante",
+          "values": [
+            "302.024",
+            "228.458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do Ativo",
+          "values": [
+            "828.441",
+            "280.932"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "Circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores e contas a pagar",
+          "values": [
+            "153.603",
+            "159.278"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos",
+          "values": [
+            "558.871",
+            "16.630"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações trabalhistas",
+          "values": [
+            "24.682",
+            "10.391"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações tributárias",
+          "values": [
+            "51.380",
+            "26.497"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações com partes relacionadas",
+          "values": [
+            "56.198",
+            "42.147"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita diferida",
+          "values": [
+            "97.765",
+            "73.299"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo circulante",
+          "values": [
+            "722.499",
+            "308.242"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "Não circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores e contas a pagar",
+          "values": [
+            "21.613",
+            "13.421"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos 10 Ê",
+          "values": [
+            "4.570"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações tributárias",
+          "values": [
+            "95.687",
+            "21.850"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "Provisão para contingências 14 4.251 =",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita diferida",
+          "values": [
+            "124.631",
+            "54.822"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo não circulante",
+          "values": [
+            "246.182",
+            "93.463"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do Passivo",
+          "values": [
+            "968.681",
+            "401.705"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "Patrimônio Líquido 15 / Capital Social 209.143 127.515 / Prejuízos Acumulados (248.288) 5",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Resultado do período",
+          "values": [
+            "(101.095)",
+            "(248.288)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do patrimônio líquido",
+          "values": [
+            "(140.240)",
+            "(120.773)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo e patrimônio líquido",
+          "values": [
+            "828.441",
+            "280.932"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "Demonstração do Resultado do Exercício / Exercícios findos em 31 de dezembro de 2023 e 2022 ii BOTAFOGO / (Valores expressos em milhares de reais) / Nota 31/12/2023 31/12/2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita Operacional, bruta",
+          "values": [
+            "588.083",
+            "151.905"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deduções sobre a receita",
+          "values": [
+            "(32.845)",
+            "(10.217)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita Operacional, líquida",
+          "values": [
+            "355.238",
+            "141.688"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo das atividades",
+          "values": [
+            "(412.049)",
+            "(256.745)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Bruto",
+          "values": [
+            "(56.811)",
+            "(115.057)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas gerais e administrativas",
+          "values": [
+            "(105.018)",
+            "(61.370)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras despesas operacionais",
+          "values": [
+            "(64.117)",
+            "(66.710)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas operacionais",
+          "values": [
+            "182.048",
+            "7.646"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado operacional antes do resultado financeiro",
+          "values": [
+            "(43.898)",
+            "(235.491)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas financeiras",
+          "values": [
+            "17.653",
+            "4.34]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas financeiras",
+          "values": [
+            "(74.830)",
+            "(17.138)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prejuízo do exercício",
+          "values": [
+            "(101.095)",
+            "(248.288)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 27,
+      "section": "Exercícios findos em 31 de dezembro de 2023 e 2022 ii BOTAFOGO / (Valores expressos em milhares de reais) / E ] Prejuízos / Capital Social ACUREAta Total / Saldos em 31 de dezembro de 2021 1 - 1",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aumento de capital 6.914 -",
+          "values": [
+            "6.914"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Emissão de ações - combinações de negócios 450.000 -",
+          "values": [
+            "350.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Capital a integralizar (229.400) -",
+          "values": [
+            "(229.400)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prejuízo do Exercício a",
+          "values": [
+            "(248.288)",
+            "(248.288)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2022",
+          "values": [
+            "127.515",
+            "(248.288)",
+            "(120.773)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reversão de integralização de capital *",
+          "values": [
+            "(20.600)",
+            "(20.600)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Integralização de capital 102.228 =",
+          "values": [
+            "102.228"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Prejuízo do Exercício -",
+          "values": [
+            "(101.095)",
+            "(101.095)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2023",
+          "values": [
+            "209.143",
+            "(349.383)",
+            "(140.240)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Exercícios findos em 31 de dezembro de 2023 e 2022 ii BOTAFOGO / (Valores expressos em milhares de reais) / Fluxo de caixa das atividades operacionais / Prejuízo do exercício (101.095) (248.288) / Ajustes dos itens que não afetam o caixa",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depreciação e amortização",
+          "values": [
+            "92.575",
+            "77.718"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixa de imobilizado",
+          "values": [
+            "3.954"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Baixa de atletas 16.552 z / Atualização Monetária (2.266) 889 / Diferença de variação cambial líquida 1.943 (1) / 7.725 (166.268) / (Aumento) redução de ativos e aumento (redução) de",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "passivos",
+          "values": [
+            "50.140",
+            "173.635"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "(174.682)",
+            "(64.423)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estoque",
+          "values": [
+            "(4.524)",
+            "(2.492)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Impostos a recuperar 1 (204) / Outros ativos (2.015) =",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Adiantamentos",
+          "values": [
+            "(5.555)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores (539)",
+          "values": [
+            "153.665"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações sociais e trabalhistas",
+          "values": [
+            "14.291",
+            "10.391"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações tributárias",
+          "values": [
+            "74.183",
+            "41.552"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Provisão para contingências 4.251 = / Receita Diferida 94.275 60.640 / Caixa gerado nas operações 5.654 173.574 / Impostos pagos 24.490 465",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Juros (recebidos) pagos",
+          "values": [
+            "19.996",
+            "6.510"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acervo líquido =",
+          "values": [
+            "(6.914)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 28,
+      "section": "Caixa aplicado nas atividades operacionais 57.865 7.367 / Fluxos de caixa das atividades de investimentos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Mútuo com partes relacionadas",
+          "values": [
+            "(375.557)",
+            "42.149"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aquisições do Imobilizado",
+          "values": [
+            "(10.547)",
+            "(1.560)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aquisições do Intangiível",
+          "values": [
+            "(77.676)",
+            "(194.039)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido aplicado nas atividades de investimentos",
+          "values": [
+            "(463.780)",
+            "(153.450)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Fluxo de caixa das atividades de financiamento",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aporte de capital",
+          "values": [
+            "81.628",
+            "127.514"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contratação de empréstimos e financiamentos",
+          "values": [
+            "486.587",
+            "20.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 28,
+      "section": "Pagamentos de empréstimos e financiamentos (37.797) (358) / Juros apropriados (9.720) 358",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Variação cambial realizada",
+          "values": [
+            "(1.901)",
+            "1.943"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido gerado pelas atividades de financiamento",
+          "values": [
+            "418.597",
+            "149.457"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento (Redução) líquido de caixa e equivalentes de caixa",
+          "values": [
+            "12.682",
+            "3.374"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "(Valores expressos em milhares de reais) / 1. Contexto operacional / ITG 2003 (R1) - Entidade Desportiva Profissional. / 1.1- Combinações de negócios / SAF.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "13.285"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo circulante",
+          "values": [
+            "13.285"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "2.875"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "Imobilizado 168",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "74.852"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo não circulante",
+          "values": [
+            "77.895"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do ativo",
+          "values": [
+            "91.180"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "14.529"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas diferidas",
+          "values": [
+            "47.257"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo circulante",
+          "values": [
+            "61.786"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "2.256"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas diferidas",
+          "values": [
+            "20.224"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo não circulante",
+          "values": [
+            "22.480"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do passivo",
+          "values": [
+            "84.266"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acervo Líquido",
+          "values": [
+            "6.914"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "Notas explicativas às demonstrações financeiras / Exercícios findos em 31 de dezembro de 2023 e 2022 ii BOTAFOGO / (Valores expressos em milhares de reais) / premiação obtida no Campeonato Brasileiro, no qual o clube alcançou a 52 colocação. / que em alguns momentos ultrapassou a marca de 60 mil sócios.",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "contrato firmado para a comercialização de espaços publicitários nas placas de publicidade até a temporada",
+          "values": [
+            "2024."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Conforme amplamente divulgado na mídia, a SAF Botafogo firmou contrato com a Brax para as temporadas de 2025 a",
+          "values": [
+            "2029."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 36,
+      "section": "3.1- Política contábil / 3.2 - Operações compromissadas / CDI. / 4. Contas a receber / 31/12/2023 31/12/2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Patrocínio",
+          "values": [
+            "27.917",
+            "51.550"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidade",
+          "values": [
+            "88.257",
+            "12.705"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transmissão",
+          "values": [
+            "43.682",
+            "3.792"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 36,
+      "section": "Venda de direitos comerciais 45 80.533 T",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Transferência de atleta",
+          "values": [
+            "6.750",
+            "2.919"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aluguel de espaço",
+          "values": [
+            "1.793",
+            "1.552"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 39,
+      "section": "Eagle Football Holdings 29.861 = / John Textor 6.1 295.755 = / RWD Moleenbek 6.1 43.990 - / Total a receber de partes relacionadas 369.606 - / Passivo",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Botafogo de Futebol e Regatas",
+          "values": [
+            "(18.541)",
+            "(14.302)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eagle Football Holdings -",
+          "values": [
+            "(27.845)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "OL Brasil (17.657) -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total a pagar de partes relacionadas",
+          "values": [
+            "(36.198)",
+            "(42.147)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo líquido de partes relacionadas",
+          "values": [
+            "333.408",
+            "(42.147)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "PERENE (41) (103) - - (144)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total depreciação (115) (1.120) 7 -",
+          "values": [
+            "(1.228)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado líquido 1.614 9.427 (16) -",
+          "values": [
+            "11.025"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": "Movimentação do ativo intangível em 2022 / Acervo / 2021 incorporado - AGE Adições Baixas 2022 / 22.02.2022 / Custo",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Atletas profissionais -",
+          "values": [
+            "74.852",
+            "185.962",
+            "(12.483)",
+            "248.331"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas em formação = = 5.249 -",
+          "values": [
+            "5.249"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Programas e software = - 2.828 (149)",
+          "values": [
+            "2.679"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total custo -",
+          "values": [
+            "74.852",
+            "194.039",
+            "(12.632)",
+            "256.259"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 41,
+      "section": "Amortização / Atletas profissionais - (36.318) (41.490) 9.757 (68.051) / Programas e software - - (336) 2 (334)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total amortização -",
+          "values": [
+            "(36.318)",
+            "(41.826)",
+            "9.759",
+            "(68.385)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível líquido -",
+          "values": [
+            "38.534",
+            "152.213",
+            "(2.873)",
+            "187.874"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": "Movimentação do ativo intangível em 2023 / 2022 Adições Baixas 2023 / Custo",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Atletas profissionais",
+          "values": [
+            "248.591",
+            "66.541",
+            "(56.356)",
+            "258.516"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas em formação",
+          "values": [
+            "5.249",
+            "10.265",
+            "(3.945)",
+            "11.569"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Programas e software 2.679 870 =",
+          "values": [
+            "3.549"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total custo",
+          "values": [
+            "256.259",
+            "77.676",
+            "(60.301)",
+            "273.634"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 41,
+      "section": "Amortização",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Atletas profissionais",
+          "values": [
+            "(68.052)",
+            "(90.731)",
+            "43.749",
+            "(115.034)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Programas e software (333) (724) -",
+          "values": [
+            "(1.057)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total amortizado",
+          "values": [
+            "(68.385)",
+            "(91.455)",
+            "43.749",
+            "(116.091)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível líquido",
+          "values": [
+            "187.874",
+            "(13.779)",
+            "(16.552)",
+            "157.543"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "Notas explicativas às demonstrações financeiras / Exercícios findos em 31 de dezembro de 2023 e 2022 ii BOTAFOGO / (Valores expressos em milhares de reais) / 9. Fornecedores e contas a pagar / 31/12/2023 31/12/2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a pagar de transferência de jogadores",
+          "values": [
+            "129.694",
+            "119.987"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores nacionais",
+          "values": [
+            "36.091",
+            "27.767"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores Internacionais",
+          "values": [
+            "6.902",
+            "4.909"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "Outras contas a pagar 2.589 6 / 175.216 152.699",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "153.603",
+            "139.278"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não Circulante",
+          "values": [
+            "21.613",
+            "13.421"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 43,
+      "section": "curto e longo prazo. / 9.2 - Contas a pagar de transferência de jogadores / 31/12/2023 31/12/2022 / Aquisição de direito econômico 54.042 43.670 / Repasse direito econômico 18.862 =",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intermediação",
+          "values": [
+            "41.599",
+            "35.250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luvas",
+          "values": [
+            "20.015",
+            "31.335"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de Imagem",
+          "values": [
+            "15.056",
+            "7.126"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mecanismo de solidariedade",
+          "values": [
+            "2.606"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": "dNFBOTAFOGO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Money Plus Capital de Giro 20.000 15/03/2024 Mensal",
+          "values": [
+            "6.688"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "XP Investimentos 10.2 Capital de Giro 359.000 01/07/2024 Mensal",
+          "values": [
+            "440.727"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Daycoval Capital de Giro 10.147 18/06/2024 Mensal",
+          "values": [
+            "9.179"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Daycoval Capital de Giro 6.832 04/03/2024 Mensal",
+          "values": [
+            "2.27]"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "358.871"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": "Em 31 de dezembro de 2021 31/12/2022 / Captação 20.000 / Amortização principal = / Amortização juros (358) / Encargos financeiros 458",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Em 31 de dezembro de 2022",
+          "values": [
+            "20.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Captação",
+          "values": [
+            "586.587"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização principal",
+          "values": [
+            "(36.429)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização juros",
+          "values": [
+            "(1.275)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 44,
+      "section": "Encargos financeiros (92)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Juros a apropriar",
+          "values": [
+            "(9.720)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Em 31 de dezembro de 2023",
+          "values": [
+            "358.871"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 45,
+      "section": "dNFBOTAFOGO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Salários a pagar",
+          "values": [
+            "6.913",
+            "6.045"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões de férias e 13º salário",
+          "values": [
+            "8.421",
+            "3.697"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 45,
+      "section": "Rescisões a pagar 6.220 635 / Benefícios e treinamentos 3.228 14 / 24.682 10.391 / 12. Obrigações tributárias / 31/12/2023 31/12/2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Parcelamento",
+          "values": [
+            "123.070",
+            "27.509"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF",
+          "values": [
+            "9.903",
+            "7.120"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TEF",
+          "values": [
+            "7.029",
+            "6.402"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS",
+          "values": [
+            "3.012",
+            "5.352"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PERSE",
+          "values": [
+            "2.179",
+            "1.550"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 46,
+      "section": "12.2 - PERSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Patrocínios",
+          "values": [
+            "31.933",
+            "58.466"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transmissão",
+          "values": [
+            "74.185",
+            "51.660"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidade",
+          "values": [
+            "113.261",
+            "12.705"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cessão temporária de atleta",
+          "values": [
+            "2.073"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 46,
+      "section": "Projetos Incentivados 1.575 = / Aluguel de espaço 1.292 2.542 / Uso da Marca (530) 75 / 222.396 128.121",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "97.765",
+            "73.299"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "124.631",
+            "54.822"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 48,
+      "section": "dNFBOTAFOGO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita operacional bruta",
+          "values": [
+            "388.083",
+            "151.905"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Impostos e contribuições",
+          "values": [
+            "(23.827)",
+            "(7.012)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Direito de arena",
+          "values": [
+            "(7.254)",
+            "(3.200)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 48,
+      "section": "(-) Outras deduções (1.764) (5)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total deduções sobre a receita",
+          "values": [
+            "(32.845)",
+            "(10.217)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita líquida",
+          "values": [
+            "355.238",
+            "141.688"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 49,
+      "section": "Exercícios findos em 31 de dezembro de 2023 e 2022 ii BOTAFOGO / (Valores expressos em milhares de reais) / 16. Receita Operacional, líquida (continuação) / Segregação das receitas por natureza 31/12/2023 31/12/2022 / Direitos de Transmissão 16.2",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Televisionamento",
+          "values": [
+            "83.582",
+            "80.548"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Streaming",
+          "values": [
+            "9.003",
+            "1.019"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 49,
+      "section": "92.385 81.567 / Competições",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Premiação",
+          "values": [
+            "39.247",
+            "19.469"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Participação em competições",
+          "values": [
+            "21.988",
+            "5.01"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 49,
+      "section": "61.235 24.480 / Matchday",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bilheteria",
+          "values": [
+            "21.667",
+            "11.409"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Camisa 7",
+          "values": [
+            "28.166",
+            "8.436"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Locação de camarotes",
+          "values": [
+            "8.520",
+            "1.020"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 49,
+      "section": "Operação de estádio - Futebol 16.6 3.677 795 / 61.830 21.660 / Publicidade e Marketing",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Patrocínios",
+          "values": [
+            "35.607",
+            "10.414"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidade em placas",
+          "values": [
+            "6.050",
+            "5.500"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 49,
+      "section": "Mídias digitais 174 E / Licenciamento 2147 663 / 43.978 16.577 / Transferência de atletas 16.8 / Cessão definitiva de atletas 78.698 825",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Cessão temporária",
+          "values": [
+            "4.053",
+            "2.096"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mecanismo de solidariedade",
+          "values": [
+            "1.646"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 51,
+      "section": "(Valores expressos em milhares de reais) / 16. Receita Operacional, líquida (continuação) / 16.2 - Direitos de transmissão / 31/12/2023 31/12/2022 / Receita Bruta",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Campeonato Carioca (a)",
+          "values": [
+            "9.000",
+            "1.019"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Campeonato Brasileiro (b)",
+          "values": [
+            "81.857",
+            "78.885"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transmissão internacional",
+          "values": [
+            "1.528",
+            "1.663"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 51,
+      "section": "92.385 81.567 / (-) Deduções da Receita Bruta",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(-) Tributação específica do Futebol (TEF)*",
+          "values": [
+            "(4.561)",
+            "(4.078)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Direito de arena",
+          "values": [
+            "(4.561)",
+            "(4.078)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita líquida de transmissão",
+          "values": [
+            "83.263",
+            "73.410"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 51,
+      "section": "receita auferida. / vigência até a temporada de 2024. / 16.3 - Premiações e participações / 31/12/2023 31/12/2022 / Receita Bruta",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Copa do Brasil (a)",
+          "values": [
+            "8.500",
+            "4.991"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Campeonato Brasileiro (b)",
+          "values": [
+            "98.257",
+            "19.489"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 51,
+      "section": "Copa Sulamericana (c) 14.478 - / 61.235 24.480 / (-) Deduções da Receita Bruta",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "(-) Tributação específica do Futebol (TEF)*",
+          "values": [
+            "(3.062)",
+            "(1.224)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Direito de arena",
+          "values": [
+            "(3.062)",
+            "(1.224)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita líquida de transmissão",
+          "values": [
+            "55.112",
+            "22.032"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 52,
+      "section": "dos jogos : líquido líquido sobre jogos público / jogos / a renda bruta / Campeonato Carioca* 565 (606) (41) 1% 1 8.422 / Amistoso 200 - 200 100% 1 -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Campeonato Brasileiro 10.065 (7.439) 2.626 26%",
+          "values": [
+            "20.861"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Copa do Brasil 579 (680) (101) 17%",
+          "values": [
+            "16.255"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11.409 (8.725) 2.684 24%",
+          "values": [
+            "19.877"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 52,
+      "section": "Renda Bruta á Resultado resultado Quantidade de Média de / a diretos dos ae o, Ê E: / dos jogos E líquido líquido sobre jogos público / jogos / a renda bruta",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Sulamericana 3.804 (2.686) 1.118 29%",
+          "values": [
+            "23.615"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "pad Garças 2.108 (1.566) 542 26%",
+          "values": [
+            "4.596"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OO Conto Brando 14.320 (10.520) 3.800 27%",
+          "values": [
+            "29.398"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Copa do Brasil * 1.435 (1.578) (143) “10%",
+          "values": [
+            "17.546"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "21.667 (16.350) 5.317 25%",
+          "values": [
+            "21.935"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 54,
+      "section": "(Valores expressos em milhares de reais) / 16. Receita Operacional, líquida (continuação) / 16.7 - Publicidade e Patrocínios / 31/12/2023 31/12/2022 / Receita Bruta",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Patrocínio Master (a)",
+          "values": [
+            "27.614",
+            "8.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Patrocínios",
+          "values": [
+            "7.993",
+            "2.414"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidade (b)",
+          "values": [
+            "6.050",
+            "5.500"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 55,
+      "section": "dNFBOTAFOGO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Salários, encargos e benefícios",
+          "values": [
+            "171.41",
+            "110.393"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de imagem",
+          "values": [
+            "57.835",
+            "36.760"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização de atletas",
+          "values": [
+            "91.539",
+            "77.465"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixas de intangíveis",
+          "values": [
+            "11.527",
+            "3.454"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo de campeonato",
+          "values": [
+            "392.647",
+            "25.761"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo de transação de atletas",
+          "values": [
+            "35.187",
+            "1.158"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiais",
+          "values": [
+            "1.502",
+            "2.929"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 55,
+      "section": "Custo venda de mercadoria 9.523 892 / Outros 3.278 RX) / 412.049 256.745 / 18. Despesas gerais e administrativas / 31/12/2023 31/12/2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Salários, encargos e benefícios",
+          "values": [
+            "28.776",
+            "8.806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiais",
+          "values": [
+            "4.101",
+            "2.486"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 55,
+      "section": "Locação 2.905 999",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Serviços com terceiros",
+          "values": [
+            "35.862",
+            "40.309"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Concessionárias",
+          "values": [
+            "5.361",
+            "4.168"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 55,
+      "section": "Impostos e taxas 588 572 / Viagens 6.268 958 / Gastos com atletas 4.351 40 / Licenciamento de programas 2.970 846 / Despesa com contingências 4.251 —",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "3.612",
+            "1.737"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita líquida",
+          "values": [
+            "105.018",
+            "61.370"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 56,
+      "section": "Notas explicativas às demonstrações financeiras / Exercícios findos em 31 de dezembro de 2023 e 2022 ii BOTAFOGO / (Valores expressos em milhares de reais) / 19. Outras despesas operacionais / 31/12/2023 31/12/2022",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Parcelamentos tributários/previdenciários",
+          "values": [
+            "19.375",
+            "25.968"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Regime centralizado de execuções",
+          "values": [
+            "33.259",
+            "25.407"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Demais gastos dívida BFR",
+          "values": [
+            "11.193",
+            "15.006"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 58,
+      "section": "Exercícios findos em 31 de dezembro de 2023 e 2022 ii BOTAFOGO / (Valores expressos em milhares de reais) / 21. Receitas (Despesas) financeiras, líquidas / Despesas financeiras 31/12/2023 31/12/2022 / Juros e encargos sobre empréstimos 21.1 (11.074) (789)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Juros e multas",
+          "values": [
+            "(20.319)",
+            "(6.507)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variação cambial",
+          "values": [
+            "(27.914)",
+            "(9.469)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 58,
+      "section": "Receitas financeiras / Descontos obtidos 161 770 / Atualização monetária 1 889 / Variação cambial 21.3 17.239 2.682 / Outros 232 =",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total receitas financeiras",
+          "values": [
+            "17.633",
+            "4.341"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas (despesas) financeiras, líquidas",
+          "values": [
+            "(57.197)",
+            "(12.797)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 61,
+      "section": "23. Instrumentos financeiros / A composição dos ativos e passivos financeiros em 31 de dezembro de 2023 e 2022: / Categoria Hierarquia do Saldo contábil Saldo contábil / valor justo 31/12/2023 31/12/2022 / Ativos financeiros",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caixa e equivalentes de caixa Valor justo Nível",
+          "values": [
+            "16.057",
+            "3.575"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber Custo amortizado =",
+          "values": [
+            "259.894",
+            "79.821"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 61,
+      "section": "Partes relacionadas Custo amortizado = 371.446 = / 647.337 83.196 / Passivos financeiros",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores e contas a pagar Custo amortizado =",
+          "values": [
+            "175.216",
+            "152.699"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos Valor justo Nível",
+          "values": [
+            "558.871",
+            "20.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Partes relacionadas Custo amortizado =",
+          "values": [
+            "38.038",
+            "42.149"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 24,
+      "section": "Partes relacionadas 6 569.606 a / Adiantamentos 1.488 2.268 / Imposto a recuperar 205 204",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do ativo circulante",
+      "target": "526.417",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-520763"
+    },
+    {
+      "page": 24,
+      "section": "Partes relacionadas 6 569.606 a / Adiantamentos 1.488 2.268 / Imposto a recuperar 205 204",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do ativo circulante",
+      "target": "52.474",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-48188"
+    },
+    {
+      "page": 24,
+      "section": "Não circulante / Contas a receber 4 151.441 58.970 / Outros ativos 2.015 E",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do ativo não circulante",
+      "target": "302.024",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-133456"
+    },
+    {
+      "page": 24,
+      "section": "Não circulante / Contas a receber 4 151.441 58.970 / Outros ativos 2.015 E",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do ativo não circulante",
+      "target": "228.458",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-38970"
+    },
+    {
+      "page": 24,
+      "section": "Não circulante / Contas a receber 4 151.441 58.970 / Outros ativos 2.015 E",
+      "likelyRelevant": false,
+      "totalLabel": "Total do Ativo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 24,
+      "section": "Circulante",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do passivo circulante",
+      "target": "722.499",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "220000"
+    },
+    {
+      "page": 24,
+      "section": "Circulante",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do passivo circulante",
+      "target": "308.242",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "20000"
+    },
+    {
+      "page": 24,
+      "section": "Provisão para contingências 14 4.251 =",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do passivo não circulante",
+      "target": "246.182",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-121551"
+    },
+    {
+      "page": 24,
+      "section": "Provisão para contingências 14 4.251 =",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do passivo não circulante",
+      "target": "93.463",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-38641"
+    },
+    {
+      "page": 24,
+      "section": "Provisão para contingências 14 4.251 =",
+      "likelyRelevant": false,
+      "totalLabel": "Total do Passivo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 24,
+      "section": "Patrimônio Líquido 15 / Capital Social 209.143 127.515 / Prejuízos Acumulados (248.288) 5",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do patrimônio líquido",
+      "target": "(140.240)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "39145"
+    },
+    {
+      "page": 24,
+      "section": "Patrimônio Líquido 15 / Capital Social 209.143 127.515 / Prejuízos Acumulados (248.288) 5",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do patrimônio líquido",
+      "target": "(120.773)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-127515"
+    },
+    {
+      "page": 24,
+      "section": "Patrimônio Líquido 15 / Capital Social 209.143 127.515 / Prejuízos Acumulados (248.288) 5",
+      "likelyRelevant": false,
+      "totalLabel": "Total do passivo e patrimônio líquido",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 29,
+      "section": "(Valores expressos em milhares de reais) / 1. Contexto operacional / ITG 2003 (R1) - Entidade Desportiva Profissional. / 1.1- Combinações de negócios / SAF.",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do ativo circulante",
+      "target": "13.285",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "Imobilizado 168",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do ativo não circulante",
+      "target": "77.895",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-3043"
+    },
+    {
+      "page": 29,
+      "section": "Imobilizado 168",
+      "likelyRelevant": false,
+      "totalLabel": "Total do ativo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 29,
+      "section": "Imobilizado 168",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do passivo circulante",
+      "target": "61.786",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "Imobilizado 168",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total do passivo não circulante",
+      "target": "22.480",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 29,
+      "section": "Imobilizado 168",
+      "likelyRelevant": false,
+      "totalLabel": "Total do passivo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 39,
+      "section": "OL Brasil (17.657) -",
+      "likelyRelevant": false,
+      "totalLabel": "Total a pagar de partes relacionadas",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 40,
+      "section": "PERENE (41) (103) - - (144)",
+      "likelyRelevant": false,
+      "totalLabel": "Total depreciação (115) (1.120) 7 -",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 41,
+      "section": "Movimentação do ativo intangível em 2022 / Acervo / 2021 incorporado - AGE Adições Baixas 2022 / 22.02.2022 / Custo",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total custo -",
+      "target": "74.852",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "7928"
+    },
+    {
+      "page": 41,
+      "section": "Movimentação do ativo intangível em 2022 / Acervo / 2021 incorporado - AGE Adições Baixas 2022 / 22.02.2022 / Custo",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total custo -",
+      "target": "194.039",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-8077"
+    },
+    {
+      "page": 41,
+      "section": "Movimentação do ativo intangível em 2022 / Acervo / 2021 incorporado - AGE Adições Baixas 2022 / 22.02.2022 / Custo",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Total custo -",
+      "target": "(12.632)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "149"
+    },
+    {
+      "page": 41,
+      "section": "Movimentação do ativo intangível em 2022 / Acervo / 2021 incorporado - AGE Adições Baixas 2022 / 22.02.2022 / Custo",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "Total custo -",
+      "target": "256.259",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-7928"
+    },
+    {
+      "page": 41,
+      "section": "Amortização / Atletas profissionais - (36.318) (41.490) 9.757 (68.051) / Programas e software - - (336) 2 (334)",
+      "likelyRelevant": false,
+      "totalLabel": "Total amortização -",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 41,
+      "section": "Movimentação do ativo intangível em 2023 / 2022 Adições Baixas 2023 / Custo",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total custo",
+      "target": "256.259",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "1130"
+    },
+    {
+      "page": 41,
+      "section": "Movimentação do ativo intangível em 2023 / 2022 Adições Baixas 2023 / Custo",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total custo",
+      "target": "77.676",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-870"
+    },
+    {
+      "page": 41,
+      "section": "Movimentação do ativo intangível em 2023 / 2022 Adições Baixas 2023 / Custo",
+      "likelyRelevant": true,
+      "column": 2,
+      "totalLabel": "Total custo",
+      "target": "(60.301)",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": "Movimentação do ativo intangível em 2023 / 2022 Adições Baixas 2023 / Custo",
+      "likelyRelevant": true,
+      "column": 3,
+      "totalLabel": "Total custo",
+      "target": "273.634",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-3549"
+    },
+    {
+      "page": 41,
+      "section": "Amortização",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total amortizado",
+      "target": "(68.385)",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-724"
+    },
+    {
+      "page": 41,
+      "section": "Amortização",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total amortizado",
+      "target": "(91.455)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "724"
+    },
+    {
+      "page": 41,
+      "section": "Amortização",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total amortizado",
+      "target": "43.749",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 41,
+      "section": "Amortização",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total amortizado",
+      "target": "(116.091)",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "1057"
+    },
+    {
+      "page": 48,
+      "section": "(-) Outras deduções (1.764) (5)",
+      "likelyRelevant": false,
+      "totalLabel": "Total deduções sobre a receita",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 58,
+      "section": "Receitas financeiras / Descontos obtidos 161 770 / Atualização monetária 1 889 / Variação cambial 21.3 17.239 2.682 / Outros 232 =",
+      "likelyRelevant": true,
+      "totalLabel": "Total receitas financeiras",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 58,
+    "results": [
+      {
+        "label": "Receita Operacional, bruta",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outros (receita operacional bruta)",
+        "similarity": 75
+      },
+      {
+        "label": "Receita Operacional, bruta",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Deduções sobre a receita",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Deduções sobre a receita",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita Operacional, líquida",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita Operacional, líquida",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Custo das atividades",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Custo das atividades",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado Bruto",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado Bruto",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas gerais e administrativas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas gerais e administrativas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras despesas operacionais",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras receitas operacionais",
+        "similarity": 50
+      },
+      {
+        "label": "Outras despesas operacionais",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Outras despesas operacionais",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Outras receitas operacionais",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Outras receitas operacionais",
+        "years": [
+          "2023",
+          "2025"
+        ]
+      },
+      {
+        "label": "Outras receitas operacionais",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Outras despesas operacionais",
+        "similarity": 50
+      },
+      {
+        "label": "Resultado operacional antes do resultado financeiro",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado operacional antes do resultado financeiro",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prejuízo do exercício",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Prejuízo do exercício",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros (recebidos) pagos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros (recebidos) pagos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Acervo líquido =",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Acervo líquido =",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transferência de atleta",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transferência de atleta",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aluguel de espaço",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aluguel de espaço",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas profissionais -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas profissionais -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas em formação = = 5.249 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas em formação = = 5.249 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Programas e software = - 2.828 (149)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Programas e software = - 2.828 (149)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas profissionais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas profissionais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas em formação",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Atletas em formação",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Programas e software 2.679 870 =",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Programas e software 2.679 870 =",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Em 31 de dezembro de 2022",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Em 31 de dezembro de 2022",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Captação",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Captação",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização principal",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização principal",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização juros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização juros",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros a apropriar",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros a apropriar",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Em 31 de dezembro de 2023",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Em 31 de dezembro de 2023",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Televisionamento",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Televisionamento",
+        "years": [
+          "2023",
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Televisionamento",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Streaming",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Streaming",
+        "years": [
+          "2023"
+        ]
+      },
+      {
+        "label": "Streaming",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Campeonato Carioca (a)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Campeonato Carioca (a)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Campeonato Brasileiro (b)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Campeonato Brasileiro (b)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transmissão internacional",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transmissão internacional",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Tributação específica do Futebol (TEF)*",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Tributação específica do Futebol (TEF)*",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Direito de arena",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Direito de arena",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita líquida de transmissão",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita líquida de transmissão",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Copa do Brasil (a)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Copa do Brasil (a)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sulamericana 3.804 (2.686) 1.118 29%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sulamericana 3.804 (2.686) 1.118 29%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "pad Garças 2.108 (1.566) 542 26%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "pad Garças 2.108 (1.566) 542 26%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "OO Conto Brando 14.320 (10.520) 3.800 27%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "OO Conto Brando 14.320 (10.520) 3.800 27%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Copa do Brasil * 1.435 (1.578) (143) “10%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Copa do Brasil * 1.435 (1.578) (143) “10%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "21.667 (16.350) 5.317 25%",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "21.667 (16.350) 5.317 25%",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrocínio Master (a)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrocínio Master (a)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outros Patrocínios",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Patrocínios",
+        "similarity": 50
+      },
+      {
+        "label": "Outros Patrocínios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Publicidade (b)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Publicidade em placas",
+        "similarity": 50
+      },
+      {
+        "label": "Publicidade (b)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Salários, encargos e benefícios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Salários, encargos e benefícios",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Salários, encargos e benefícios (G&A)",
+        "similarity": 100
+      },
+      {
+        "label": "Materiais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Materiais",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Materiais (G&A)",
+        "similarity": 100
+      },
+      {
+        "label": "Diversos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diversos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Diversos (G&A)",
+        "similarity": 100
+      },
+      {
+        "label": "Receita líquida",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita líquida",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Parcelamentos tributários/previdenciários",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Parcelamentos tributários/previdenciários",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Regime centralizado de execuções",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Regime centralizado de execuções",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Demais gastos dívida BFR",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Demais gastos dívida BFR",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Demais gastos dívida BFR (Nota 19.3)",
+        "similarity": 80
+      },
+      {
+        "label": "Juros e multas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Juros e multas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variação cambial",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Variação cambial",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas (despesas) financeiras, líquidas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas (despesas) financeiras, líquidas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fornecedores e contas a pagar Custo amortizado =",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fornecedores e contas a pagar Custo amortizado =",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Empréstimos e financiamentos Valor justo Nível",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Empréstimos e financiamentos Valor justo Nível",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Partes relacionadas Custo amortizado =",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Partes relacionadas Custo amortizado =",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Botafogo",
+    "matches": [
+      {
+        "leagueId": "br-serieA",
+        "year": "2025",
+        "matchedName": "Botafogo",
+        "wikipediaPage": "2025 Campeonato Brasileiro Série A"
+      },
+      {
+        "leagueId": "br-serieC",
+        "year": "2025",
+        "matchedName": "Botafogo-PB",
+        "wikipediaPage": "2025 Campeonato Brasileiro Série C"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": [
+    "7 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "14 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "10 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

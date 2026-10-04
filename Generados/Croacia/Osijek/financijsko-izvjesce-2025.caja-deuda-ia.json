@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Croacia/Osijek/financijsko-izvjesce-2025.md",
+ "generado": "2026-10-02T00:18:56.788Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(svi iznosi iskazani u eurima)",
+ "caja": {
+  "lineas": [
+   376
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   412,
+   414,
+   470
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Las etiquetas y los valores están separados por el OCR y hay más etiquetas que importes, por lo que la correspondencia es dudosa. Caja: L376 (Novac i novčani ekvivalenti), probablemente 1.585.818 €. Deuda: se incluyen el sobregiro bancario (L412) y los préstamos bancarios corrientes (L414) y no corrientes (L470), estos últimos probablemente 11.470.126 € (nota 9). El faktoring de transferencias (L420) no se incluyó."
+}

@@ -1,0 +1,1478 @@
+{
+ "md": "Clubes/Croacia/Varaždin/financijsko-izvjesce-2025.md",
+ "pdf": "Clubes/Croacia/Varaždin/financijsko-izvjesce-2025.pdf",
+ "club": "vara-din",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T14:36:07.185Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "ladoConocido": 89,
+ "rubros": [
+  {
+   "label": "Prihodi od sponzorstva i oglašavanja - Proizvođač opreme",
+   "lado": "revenue",
+   "page": 7,
+   "section": "RAČUN DOBITI | GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN / PRIHODI",
+   "values": [
+    "299.925",
+    "254.950"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Prihodi od sponzorstva i oglašavanja - Glavni sponzor",
+   "lado": "revenue",
+   "page": 7,
+   "section": "RAČUN DOBITI | GUBITKA NK VARAŽDIN S.D.D. VARAŽDIN / PRIHODI",
+   "values": [
+    "275.360",
+    "192.000"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Prihodi od prava emitiranja - Nacionalna natjecanja",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Prihodi od sponzorstva i oglašavanja - Sponzor za stadion 0 0 / Prihodi od sponzorstva i oglašavanja - Reklamni panoi oko terena 777.719 678.144 / Ostali nerazvrstani prihodi od sponzorstva i oglašavanja 0) 0",
+   "values": [
+    "1.016.900",
+    "868.300"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
+   "lado": "revenue",
+   "page": 7,
+   "section": "UKUPNO PRIHODI OD PRAVA EMITIRANJA PR-3 1.016.900 868.300 / UKUPNO KOMERCIJALNI PRIHODI PR-4 106.646 0",
+   "values": [
+    "45.000",
+    "315.961"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Donacije i dotacije ili drugi iznosi od države i lokalne samouprave",
+   "lado": "revenue",
+   "page": 7,
+   "section": "UKUPNO PRIHODI OD PRAVA EMITIRANJA PR-3 1.016.900 868.300 / UKUPNO KOMERCIJALNI PRIHODI PR-4 106.646 0",
+   "values": [
+    "350.721",
+    "109.236"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Ostali nerazvrstani poslovni prihodi",
+   "lado": "revenue",
+   "page": 7,
+   "section": "Donacije nepovezanih strana 2.374 0 / Donacije i doprinosi povezanih strana 0 0 / Prihodi od nenogometnih djelatnosti 0 13.953 / Izvanredni prihodi 0 0",
+   "values": [
+    "217.272",
+    "100.932"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Troškovi neto plaća ostalih zaposlenika",
+   "lado": "expense",
+   "page": 27,
+   "section": "BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / RA-2c Troškovi primanja ostalih zaposlenika",
+   "values": [
+    "(757.794)",
+    "(550.301)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Troškovi poreza i doprinosa iz i na plaću ostalih zaposlenika",
+   "lado": "expense",
+   "page": 27,
+   "section": "BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / RA-2c Troškovi primanja ostalih zaposlenika",
+   "values": [
+    "(225.889)",
+    "(97.245)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Troškovi prigodnih nagrada, prijevoza i službenih putovanja",
+   "lado": "expense",
+   "page": 27,
+   "section": "BILJEŠKE UZ FINANCIJSKE IZVJEŠTAJE / RAČUNOVODSTVENE METODE I POLITIKE / RA-2c Troškovi primanja ostalih zaposlenika",
+   "values": [
+    "(39.019)",
+    "(18.489)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Troškovi hitne službe, osiguranja, snimanja utakmica, sudaca i delegata",
+   "lado": "expense",
+   "page": 27,
+   "section": "RA-3 Umanjenje vrijednosti i amortizacija / RA-4 Ostali poslovni rashodi",
+   "values": [
+    "(189.024)",
+    "(145.511)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Troškovi prijevoza, prehrane i smještaja igrača",
+   "lado": "expense",
+   "page": 27,
+   "section": "RA-3 Umanjenje vrijednosti i amortizacija / RA-4 Ostali poslovni rashodi",
+   "values": [
+    "(241.290)",
+    "(234.707)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Troškovi najamnine",
+   "lado": "expense",
+   "page": 27,
+   "section": "RA-3 Umanjenje vrijednosti i amortizacija / RA-4 Ostali poslovni rashodi",
+   "values": [
+    "(8.984)",
+    "(18.182)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Troškovi čišćenja",
+   "lado": "expense",
+   "page": 27,
+   "section": "RA-3 Umanjenje vrijednosti i amortizacija / RA-4 Ostali poslovni rashodi",
+   "values": [
+    "(23.350)",
+    "(32.611)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Troškovi imovine i objekta - održavanje",
+   "lado": "expense",
+   "page": 27,
+   "section": "RA-3 Umanjenje vrijednosti i amortizacija / RA-4 Ostali poslovni rashodi",
+   "values": [
+    "(378.705)",
+    "(175.215)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Troškovi sponzorstva i oglašavanja",
+   "lado": "expense",
+   "page": 27,
+   "section": "RA-3 Umanjenje vrijednosti i amortizacija / RA-4 Ostali poslovni rashodi",
+   "values": [
+    "(89.866)",
+    "(93.046)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Troškovi liječničkih pregleda",
+   "lado": "expense",
+   "page": 27,
+   "section": "RA-3 Umanjenje vrijednosti i amortizacija / RA-4 Ostali poslovni rashodi",
+   "values": [
+    "(5.484)",
+    "(7.598)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Troškovi premija osiguranja",
+   "lado": "expense",
+   "page": 27,
+   "section": "RA-3 Umanjenje vrijednosti i amortizacija / RA-4 Ostali poslovni rashodi",
+   "values": [
+    "0",
+    "(13.541)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Troškovi reprezentacije",
+   "lado": "expense",
+   "page": 27,
+   "section": "RA-3 Umanjenje vrijednosti i amortizacija / RA-4 Ostali poslovni rashodi",
+   "values": [
+    "(347.544)",
+    "(53.381)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Troškovi kotizacija i članarina",
+   "lado": "expense",
+   "page": 27,
+   "section": "RA-3 Umanjenje vrijednosti i amortizacija / RA-4 Ostali poslovni rashodi",
+   "values": [
+    "(115.255)",
+    "(105.998)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Ostali troškovi i poslovni rashodi (kazne, donacije, otpisi potraživanja i sl.)",
+   "lado": "expense",
+   "page": 27,
+   "section": "RA-3 Umanjenje vrijednosti i amortizacija / RA-4 Ostali poslovni rashodi",
+   "values": [
+    "(93.525)",
+    "(98.466)"
+   ],
+   "columns": [
+    "",
+    "I-XII 2025. euro",
+    "I-XII 2024. euro"
+   ]
+  },
+  {
+   "label": "Prihodi od ulaznica - Nacionalna natjecanja",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "507.364",
+    "290.813"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Prihodi od ulaznica - UEFA klupska natjecanja",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "27.838",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Prihodi od ulaznica - VIP ulaznice i hospitality",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Prihodi od ulaznica - Godišnje ulaznice",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "19.953",
+    "29.057"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Prihodi od ulaznica - Članarine",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Ostali nerazvrstani prihodi od ulaznica",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Sponzor za opremu (Proizvođač opreme)",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "299.925",
+    "254.950"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Glavni sponzor na opremi",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "275.360",
+    "192.000"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Sponzor za stadion",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Prihod od sponzorstva i oglašavanja - Reklamiranje na panoima oko terena za igru",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "777.719",
+    "678.144"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Ostali nerazvrstani prihodi od sponzorstva i oglašavanja",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Prava emitiranja - Nacionalna natjecanja",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "1.016.900",
+    "868.300"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Prava emitiranja - Ostali nerazvrstani prihodi",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Komercijalni prihodi - Nacionalna natjecanja",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    ""
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Komercijalni prihodi - Prodaja proizvoda",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "41.493",
+    ""
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Komercijalni prihodi od članstva (nevezano za utakmice)",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    ""
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Komercijalni prihodi - Korištenje objekata za vrijeme neodigravanja utakmica",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "65.153",
+    ""
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Ostali nerazvrstani komercijalni prihodi",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    ""
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Uefina klupska natjecanja - prava emitiranja, komercijalni prihodi, nagrade",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Uefina klupska natjecanja - solidarne uplate",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "1.488.194",
+    "971.394"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Uefine nagrade i solidarne uplate - nerazvrstano",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Donacije i dotacije ili drugi iznosi od nacionalnih nogometnih tijela",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "45.000",
+    "315.961"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Donacije i dotacije ili drugi iznosi od države (na teritoriju sjedišta) i lokalne samouprave",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "350.721",
+    "109.236"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Donacije nepovezanih strana",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "2.374",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Donacije i doprinosi povezanih strana",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Prihodi od nenogometnih djelatnosti",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "13.953"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Izvanredni prihodi",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Ostali nerazvrstani poslovni prihodi (Bilješka IX)",
+   "lado": "revenue",
+   "page": 39,
+   "section": "NOGOMETNI KLUB VARAŽDIN, Š.D.D. / Račun dobiti i gubitka",
+   "values": [
+    "217.272",
+    "100.932"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Troškovi prodaje robe/proizvoda - izravni",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(167.793)",
+    "(157.785)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Troškovi prodaje robe/proizvoda - ostali nerazvrstani",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Troškovi prodaje/materijala - Ukupno",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(167.793)",
+    "(157.785)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Plaće igrača",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(1.881.899)",
+    "(1.434.307)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Porezi i doprinosi - igrači",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Ostali nerazvrstani troškovi primanja igrača",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(493.939)",
+    "(135.076)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Troškovi primanja igrača - ukupno",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(2.375.838)",
+    "(1.569.383)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Plaće stručnog stožera",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(490.361)",
+    "(325.307)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Porezi i doprinosi - stručni stožer",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(54.907)",
+    "(35.729)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Ostali nerazvrstani troškovi primanja stručnog stožera",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(108.493)",
+    "(28.047)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Troškovi primanja stručnog stožera - ukupno",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(653.761)",
+    "(389.083)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Plaće ostalih zaposlenika",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(757.794)",
+    "(550.301)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Porezi i doprinosi - ostali zaposlenici",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(225.889)",
+    "(97.245)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Ostali nerazvrstani troškovi za primanja ostalih zaposlenika",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(39.019)",
+    "(18.489)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Trošak primanja ostalih zaposlenika - Ukupno",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(1.022.702)",
+    "(666.035)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Troškovi primanja zaposlenika - ostali / nerazvrstani",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    ""
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Ukupni troškovi primanja zaposlenika",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "[ilegible]",
+    "(2.624.501)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Amortizacija dugotrajne materijalne imovine",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(79.408)",
+    "(34.141)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Umanjenje vrijednosti dugotrajne materijalne imovine",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Amortizacija ostale nematerijalne imovine (bez registracija igrača)",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(67.935)",
+    "(53.038)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Umanjenje vrijednosti ostale nematerijalne imovine (bez registracija igrača)",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Amortizacija i umanjenje vrijednosti - Ukupno (bez registracija igrača)",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(147.343)",
+    "(87.179)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Trošak imovine s pravom korištenja (operativni najam)",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Troškovi utakmica",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(976.424)",
+    "(620.055)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Troškovi sponzorstva i oglašavanja",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(89.866)",
+    "(93.046)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Troškovi komercijalnih aktivnosti",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Troškovi imovine i objekata",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(378.705)",
+    "(175.215)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Troškovi za nenogometne djelatnosti",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Izvanredni troškovi",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Ostali nerazvrstani poslovni rashodi (Bilješka X)",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(48.032)",
+    "(89.940)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Ostali poslovni rashodi - Ukupno",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(1.493.027)",
+    "(978.256)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Poslovni rezultat (bez registracija igrača)",
+   "lado": null,
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(725.198)",
+    "(22.981)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Transferi igrača i ostalog osoblja",
+   "lado": null,
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    ""
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Amortizacija nematerijalne imovine (registracije igrača)",
+   "lado": null,
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Umanjenje vrijednosti nematerijalne imovine (registracije igrača)",
+   "lado": null,
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Dobit od raspolaganja nematerijalnom imovinom (registracije igrača)",
+   "lado": null,
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Gubitak od raspolaganja nematerijalnom imovinom (registracije igrača)",
+   "lado": null,
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Troškovi stjecanja registracija igrača (uključujući troškove ustupanja, solidarne doprinose i naknade za treniranje)",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(253.899)",
+    "(138.678)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Prihod od raspolaganja registracijama igrača ((uključujući prihode od ustupanja, solidarnih doprinosa i naknada za treniranje)",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "2.707.554",
+    "1.903.116"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Amortizacija/umanjenje nematerijalne imovine (ostalo osoblje)",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Dobit / gubitak od ustupanja ostalog osoblja",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Prihod / trošak od ustupanja ostalog osoblja",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Nekapitalizirani troškovi za naknade agentima/posrednicima",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(349.203)",
+    "(90.501)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Troškovi nastali s povezanim stranama",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "0",
+    ""
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Dobit /(gubitak) od raspolaganja dugotrajnom imovinom",
+   "lado": null,
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Dobit /(gubitak) od raspolaganja ostalom nematerijalnom imovinom",
+   "lado": null,
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Financijski prihodi",
+   "lado": "revenue",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "5.573",
+    "9.363"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Financijski rashodi",
+   "lado": "expense",
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(19.059)",
+    "(9.488)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Ukupni neto prihod/rashod od financiranja",
+   "lado": null,
+   "page": 40,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(13.486)",
+    "(125)"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Ukupni neposlovni prihodi/rashodi",
+   "lado": null,
+   "page": 41,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "",
+    "0"
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  },
+  {
+   "label": "Porezni prihod/(rashod)",
+   "lado": "expense",
+   "page": 41,
+   "section": "Račun dobiti i gubitka",
+   "values": [
+    "(160.177)",
+    ""
+   ],
+   "columns": [
+    "",
+    "2025. EUR",
+    "2024. EUR"
+   ]
+  }
+ ]
+}

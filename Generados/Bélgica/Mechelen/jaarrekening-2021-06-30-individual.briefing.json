@@ -1,0 +1,1357 @@
+{
+  "club": "mechelen-be",
+  "year": 2021,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Mechelen/jaarrekening-2021-06-30-individual.md",
+  "generatedAt": "2026-09-30T21:55:20.565Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 172,
+    "space": 1
+  },
+  "scannedWarning": false,
+  "tableCount": 39,
+  "relevantTableCount": 8,
+  "tables": [
+    {
+      "page": 5,
+      "section": "BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 6.1 20",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "VASTE ACTIVA 21/28",
+          "values": [
+            "34.742.024",
+            "34.805.994"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immateriële vaste activa 6.2",
+          "values": [
+            "1.698.453",
+            "1.833.808"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiële vaste activa 6.3 22/27",
+          "values": [
+            "33.027.961",
+            "32.949.864"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terreinen en gebouwen",
+          "values": [
+            "3.919.222",
+            "3.633.626"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Installaties, machines en uitrusting",
+          "values": [
+            "413.285",
+            "242.161"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Meubilair en rollend materieel",
+          "values": [
+            "584.754",
+            "132.074"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "YELLOW RED KV MECHELEN / VLOTTENDE ACTIVA 29/58 11.818.097 9.650.390",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Voorraden en bestellingen in uitvoering",
+          "values": [
+            "56.750",
+            "49.790"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voorraden 30/36",
+          "values": [
+            "56.750",
+            "49.790"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "Gereed product 33 / Handelsgoederen 34 56.750 49.790 / Onroerende goederen bestemd voor verkoop 35 / Vooruitbetalingen 36 / Bestellingen in uitvoering 37",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Vorderingen op ten hoogste één jaar 40/41",
+          "values": [
+            "10.622.131",
+            "7.507.166"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handelsvorderingen",
+          "values": [
+            "10.479.813",
+            "7.299.889"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige vorderingen",
+          "values": [
+            "142.318",
+            "207.277"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "6.5.1/ / Geldbeleggingen 6.6 50/53 / Eigen aandelen 50 / Overige beleggingen 51/53",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Liquide middelen 54/58",
+          "values": [
+            "832.954",
+            "2.030.019"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 6.6 490/1",
+          "values": [
+            "301.262",
+            "63.415"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE ACTIVA 20/58",
+          "values": [
+            "46.560.120",
+            "44.456.384"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "YELLOW RED KV MECHELEN / PASSIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "EIGEN VERMOGEN 10/15",
+          "values": [
+            "4.779.121",
+            "4.549.694"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inbreng 10/11",
+          "values": [
+            "5.625.000",
+            "5.625.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaal 6.7.1",
+          "values": [
+            "5.625.000",
+            "5.625.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geplaatst kapitaal",
+          "values": [
+            "5.625.000",
+            "5.625.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Uitgiftepremies 1100/1 / 0 / Andere 1109/1 / 9 / Herwaarderingsmeerwaarden 12",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Reserves",
+          "values": [
+            "6.532.722",
+            "6.532.722"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Onbeschikbare reserves 130/1",
+          "values": [
+            "6.532.722",
+            "6.532.722"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "YELLOW RED KV MECHELEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "41.780.998",
+            "39.906.690"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 6.9",
+          "values": [
+            "27.356.567",
+            "29.024.206"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "24.878.853",
+            "25.009.923"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Achtergestelde leningen 170 / Niet-achtergestelde obligatieleningen 171 5.962.000 9.712.000 / Leasingschulden en soortgelijke schulden 172",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kredietinstellingen",
+          "values": [
+            "7.888.114",
+            "8.707.466"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige leningen",
+          "values": [
+            "11.028.739",
+            "6.590.457"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Handelsschulden 175 942.000 0 / Leveranciers 1750 942.000 0 / Te betalen wissels 1751 / Ontvangen vooruitbetalingen op bestellingen 176",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige schulden 178/9",
+          "values": [
+            "1.535.714",
+            "4.014.283"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op ten hoogste één jaar 6.9 42/48",
+          "values": [
+            "10.772.967",
+            "7.184.390"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar die binnen het jaar vervallen",
+          "values": [
+            "4.311.621",
+            "2.168.136"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Financiële schulden 43 500.000 0 / Kredietinstellingen 430/8 / Overige leningen 439 500.000 (e)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "4.415.973",
+            "4.145.667"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "4.415.973",
+            "4.145.667"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Te betalen wissels 441 / Ontvangen vooruitbetalingen op bestellingen 46",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Schulden met betrekking tot belastingen, bezoldigingen en sociale lasten 6.9",
+          "values": [
+            "1.256.801",
+            "870.587"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "539.957",
+            "378.530"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "716.844",
+            "492.057"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "Overige schulden 47/48 288.572 (0)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overlopende rekeningen 6.9 492/3",
+          "values": [
+            "3.651.464",
+            "3.698.094"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "46.560.120",
+            "44.456.384"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "YELLOW RED KV MECHELEN / RESULTATENREKENING",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bedrijfsopbrengsten 70/76A",
+          "values": [
+            "25.830.325",
+            "25.340.242"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Omzet 6.10",
+          "values": [
+            "16.697.308",
+            "16.162.237"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 9,
+      "section": "Voorraad goederen in bewerking en gereed product en bestellingen in 71 / uitvoering: toename (afname) (+)/(-) / Geproduceerde vaste activa 72",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Andere bedrijfsopbrengsten 6.10",
+          "values": [
+            "9.131.645",
+            "7.403.047"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet-recurrente bedrijfsopbrengsten 6.12 76A",
+          "values": [
+            "1.373",
+            "1.774.958"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bedrijfskosten 60/66A",
+          "values": [
+            "24.531.317",
+            "24.276.097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handelsgoederen, grond- en hulpstoffen",
+          "values": [
+            "379.012",
+            "1.817.883"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aankopen 600/8",
+          "values": [
+            "379.012",
+            "1.817.883"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "Voorraad: afname (toename) (+)/(-) 609",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Diensten en diverse goederen",
+          "values": [
+            "8.051.018",
+            "7.792.875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen, sociale lasten en pensioenen (+)/(-) 6.10",
+          "values": [
+            "12.980.784",
+            "10.336.756"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op",
+          "values": [
+            "2.876.268",
+            "2.802.431"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 9,
+      "section": "op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-) / Voorzieningen voor risico's en kosten: toevoegingen (bestedingen en 6.10 635/8 / terugnemingen) (+)/(-) / Andere bedrijfskosten 6.10 640/8 186.980 407.791 / Als herstructureringskosten geactiveerde bedrijfskosten (-) 649",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Niet-recurrente bedrijfskosten 6.12 66A",
+          "values": [
+            "26.755",
+            "1.040.917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bedrijfswinst (Bedrijfsverlies) (+)/(-) 9901",
+          "values": [
+            "1.299.008",
+            "1.064.145"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 10,
+      "section": "YELLOW RED KV MECHELEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Financiële opbrengsten 75/76B",
+          "values": [
+            "3.735",
+            "11.036"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recurrente financiële opbrengsten",
+          "values": [
+            "3.735",
+            "11.036"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Opbrengsten uit financiële vaste activa 750 / Opbrengsten uit vlottende activa 751 53 16 / Andere financiële opbrengsten 6.11 752/9 3.682 11.020 / Niet-recurrente financiële opbrengsten 6.12 76B",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Financiële kosten 65/66B",
+          "values": [
+            "1.052.270",
+            "820.813"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Recurrente financiële kosten 6.11",
+          "values": [
+            "1.052.270",
+            "820.813"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kosten van schulden",
+          "values": [
+            "1.008.923",
+            "752.449"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 11,
+      "section": "YELLOW RED KV MECHELEN / RESULTAATVERWERKING",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Te bestemmen winst (verlies) (+)/(-) 9906",
+          "values": [
+            "-7.378.601",
+            "-7.608.028"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Te bestemmen winst (verlies) van het boekjaar (+)/(-) (9905)",
+          "values": [
+            "229.675",
+            "253.651"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overgedragen winst (verlies) van het vorige boekjaar (+)/(-) 14P",
+          "values": [
+            "-7.608.276",
+            "-7.861.679"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Onttrekking aan het eigen vermogen 791/2",
+          "values": [
+            "7.608.028"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "YELLOW RED KV MECHELEN / STAAT VAN DE MATERIËLE VASTE ACTIVA / TERREINEN & GEBOUWEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen per einde van het boekjaar 8321",
+          "values": [
+            "258.548"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR (22)",
+          "values": [
+            "3.919.222"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "YELLOW RED KV MECHELEN / INSTALLATIES, MACHINES EN UITRUSTING",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen per einde van het boekjaar 8322",
+          "values": [
+            "988.427"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR (23)",
+          "values": [
+            "413.288"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "YELLOW RED KV MECHELEN / MEUBILAIR EN ROLLEND MATERIEEL",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aanschaffingen, met inbegrip van de geproduceerde vaste activa 8163",
+          "values": [
+            "542.274"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overdrachten en buitengebruikstellingen 8173",
+          "values": [
+            "3.243"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "Geboekt 8273 89.587 / Teruggenomen 8283 / Verworven van derden 8293 / Afgeboekt na overdrachten en buitengebruikstellingen 8303 3.241 / Overgeboekt van een post naar een andere (+)/(-) 8313",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen per einde van het boekjaar 8323",
+          "values": [
+            "610.259"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR (24)",
+          "values": [
+            "584.759"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "YELLOW RED KV MECHELEN / OVERIGE MATERIËLE VASTE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen per einde van het boekjaar 8325",
+          "values": [
+            "4.871.675"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR (26)",
+          "values": [
+            "28.110.706"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "YELLOW RED KV MECHELEN / STAAT VAN DE SCHULDEN EN OVERLOPENDE REKENINGEN (PASSIVA) / UITSPLITSING VAN DE SCHULDEN MET EEN OORSPRONKELIJKE LOOPTIJD VAN MEER DAN ÉÉN JAAR, / NAARGELANG HUN RESTERENDE LOOPTIJD",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kredietinstellingen 8841",
+          "values": [
+            "961.656"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige leningen 8851",
+          "values": [
+            "1.099.965"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "Handelsschulden 8861 / Leveranciers 8871 / Te betalen wissels 8881 / Ontvangen vooruitbetalingen op bestellingen 8891",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige schulden 8901",
+          "values": [
+            "2.250.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal der schulden op meer dan één jaar die binnen het jaar vervallen (42)",
+          "values": [
+            "4.311.621"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "Schulden met een resterende looptijd van meer dan één jaar doch hoogstens 5 jaar / Financiële schulden 8802 18.029.982 / Achtergestelde leningen 8812 / Niet-achtergestelde obligatieleningen 8822 4.196.000 / Leasingschulden en soortgelijke schulden 8832",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Kredietinstellingen 8842",
+          "values": [
+            "2.805.243"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige leningen 8852",
+          "values": [
+            "11.028.739"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handelsschulden 8862",
+          "values": [
+            "942.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 8872",
+          "values": [
+            "942.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "Te betalen wissels 8882 / Ontvangen vooruitbetalingen op bestellingen 8892",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overige schulden 8902",
+          "values": [
+            "1.535.714"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Totaal der schulden met een resterende looptijd van meer dan één jaar doch hoogstens 5 jaar 8912",
+          "values": [
+            "20.507.696"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "YELLOW RED KV MECHELEN / BEDRIJFSRESULTATEN / BEDRIJFSOPBRENGSTEN / BEDRIJFSKOSTEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gemiddeld personeelsbestand berekend in voltijdse equivalenten 9087",
+          "values": [
+            "67,5",
+            "78,4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aantal daadwerkelijk gepresteerde uren 9088",
+          "values": [
+            "103.508",
+            "110.625"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 27,
+      "section": "Personeelskosten",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bezoldigingen en rechtstreekse sociale voordelen",
+          "values": [
+            "10.176.033",
+            "8.290.665"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Werkgeversbijdragen voor sociale verzekeringen",
+          "values": [
+            "2.241.663",
+            "1.853.309"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 30,
+      "section": "YELLOW RED KV MECHELEN / OPBRENGSTEN EN KOSTEN VAN UITZONDERLIJKE OMVANG OF UITZONDERLIJKE MATE VAN / VOORKOMEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "NIET-RECURRENTE OPBRENGSTEN",
+          "values": [
+            "1.373",
+            "1.774.958"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet-recurrente bedrijfsopbrengsten (76A)",
+          "values": [
+            "1.373",
+            "1.774.958"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terugneming van afschrijvingen en van waardeverminderingen op 760 (e)",
+          "values": [
+            "1.774.958"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 30,
+      "section": "Terugneming van waardeverminderingen op financiële vaste activa 761 / Terugneming van voorzieningen voor uitzonderlijke financiële risico's en 7621 / kosten / Meerwaarden bij de realisatie van financiële vaste activa 7631 / Andere niet-recurrente financiële opbrengsten 769",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "NIET-RECURRENTE KOSTEN",
+          "values": [
+            "26.755",
+            "1.040.917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet-recurrente bedrijfskosten (66A)",
+          "values": [
+            "26.755",
+            "1.040.917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Niet-recurrente afschrijvingen en waardeverminderingen op 660 (0)",
+          "values": [
+            "1.040.917"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 31,
+      "section": "YELLOW RED KV MECHELEN / BELASTINGEN EN TAKSEN / BELASTINGEN OP HET RESULTAAT",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Belastingen op het resultaat van het boekjaar 9134",
+          "values": [
+            "20.798"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verschuldigde of betaalde belastingen en voorheffingen 9135",
+          "values": [
+            "20.798"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "Bronnen van belastinglatenties (codes | Boekjaar |",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Actieve latenties 9141",
+          "values": [
+            "7.373.378"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gecumuleerde fiscale verliezen die aftrekbaar zijn van latere belastbare winsten 9142",
+          "values": [
+            "7.373.378"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "BELASTING OP DE TOEGEVOEGDE WAARDE EN BELASTINGEN TEN LASTE VAN / DERDEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aan de vennootschap (aftrekbaar) 9145",
+          "values": [
+            "2.094.359",
+            "2.369.443"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Door de vennootschap 9146",
+          "values": [
+            "3.306.344",
+            "112.764"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 32,
+      "section": "YELLOW RED KV MECHELEN / NIET IN DE BALANS OPGENOMEN RECHTEN EN VERPLICHTINGEN / DOOR DE VENNOOTSCHAP GESTELDE OF ONHERROEPELIJK BELOOFDE PERSOONLIJKE ZEKERHEDEN | 9149 / ALS WAARBORG VOOR SCHULDEN OF VERPLICHTINGEN VAN DERDEN / ZAKELIJKE ZEKERHEDEN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Boekwaarde van de bezwaarde activa 91611",
+          "values": [
+            "28.110.700"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bedrag van de inschrijving 91621",
+          "values": [
+            "10.025.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Voor de onherroepelijke mandaten tot hypothekeren, het bedrag waarvoor de volmachthebber 91631",
+          "values": [
+            "305.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 50,
+      "section": "YELLOW RED KV MECHELEN / TABEL VAN HET PERSONEELSVERLOOP TIJDENS HET BOEKJAAR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overeenkomst voor een onbepaalde tijd 210 14",
+          "values": [
+            "23,8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overeenkomst voor een bepaalde tijd 211 14",
+          "values": [
+            "14,5"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 50,
+      "section": "Aantal werknemers met een in de DIMONA-verklaring / aangegeven of een in het algemeen personeelsregister 305 30 16 42,30 / opgetekende datum waarop hun overeenkomst tijdens / het boekjaar een einde nam / Volgens de aard van de arbeidsovereenkomst",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overeenkomst voor een onbepaalde tijd 310 24",
+          "values": [
+            "36,1"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overeenkomst voor een bepaalde tijd 311 6",
+          "values": [
+            "6,2"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 50,
+      "section": "Overeenkomst voor een duidelijk omschreven werk 312 / Vervangingsovereenkomst 313 / Volgens de reden van beëindiging van de overeenkomst / Pensioen 340 1 1,0 / Werkloosheid met bedrijfstoeslag 341",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Afdanking 342",
+          "values": [
+            "2,0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Andere reden 343 27",
+          "values": [
+            "39,3"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 23,
+    "results": [
+      {
+        "label": "VASTE ACTIVA 21/28",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "VASTE ACTIVA 21/28",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "depreciation",
+        "matchedLabel": "Afschrijvingen op materiële vaste activa",
+        "similarity": 50
+      },
+      {
+        "label": "Immateriële vaste activa 6.2",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Immateriële vaste activa 6.2",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Afschrijvingen op immateriële vaste activa (spelersregistratierechten)",
+        "similarity": 60
+      },
+      {
+        "label": "Materiële vaste activa 6.3 22/27",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Materiële vaste activa 6.3 22/27",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "depreciation",
+        "matchedLabel": "Afschrijvingen op materiële vaste activa",
+        "similarity": 75
+      },
+      {
+        "label": "Terreinen en gebouwen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Terreinen en gebouwen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Installaties, machines en uitrusting",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Installaties, machines en uitrusting",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Meubilair en rollend materieel",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Meubilair en rollend materieel",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bedrijfsopbrengsten 70/76A",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bedrijfsopbrengsten 70/76A",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Omzet 6.10",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "lump_football_operations",
+        "matchedLabel": "Omzet",
+        "similarity": 100
+      },
+      {
+        "label": "Omzet 6.10",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-recurrente bedrijfskosten 6.12 66A",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-recurrente bedrijfskosten 6.12 66A",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bedrijfswinst (Bedrijfsverlies) (+)/(-) 9901",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bedrijfswinst (Bedrijfsverlies) (+)/(-) 9901",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financiële kosten 65/66B",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Financiële kosten 65/66B",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Recurrente financiële kosten 6.11",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Recurrente financiële kosten 6.11",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Kosten van schulden",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Kosten van schulden",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gemiddeld personeelsbestand berekend in voltijdse equivalenten 9087",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gemiddeld personeelsbestand berekend in voltijdse equivalenten 9087",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aantal daadwerkelijk gepresteerde uren 9088",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Aantal daadwerkelijk gepresteerde uren 9088",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Werkgeversbijdragen voor sociale verzekeringen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Werkgeversbijdragen voor sociale verzekeringen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "NIET-RECURRENTE OPBRENGSTEN",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "NIET-RECURRENTE OPBRENGSTEN",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-recurrente bedrijfsopbrengsten (76A)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-recurrente bedrijfsopbrengsten (76A)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Terugneming van afschrijvingen en van waardeverminderingen op 760 (e)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Terugneming van afschrijvingen en van waardeverminderingen op 760 (e)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "NIET-RECURRENTE KOSTEN",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "NIET-RECURRENTE KOSTEN",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-recurrente bedrijfskosten (66A)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-recurrente bedrijfskosten (66A)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-recurrente afschrijvingen en waardeverminderingen op 660 (0)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Niet-recurrente afschrijvingen en waardeverminderingen op 660 (0)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Mechelen",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

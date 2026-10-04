@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Alemania/FC Augsburg/konzernabschluss-2023-24.md",
+ "generado": "2026-10-02T00:11:19.863Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "EUR",
+ "caja": {
+  "lineas": [
+   117
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El texto del balance está desordenado. La caja se tomó de L117 (15.706.786,39 EUR al 30.06.2024), por la secuencia del activo circulante: existencias L111, créditos L113-L116, caja L117; su rubro es L82 y la cifra de 2023 está en L160. Las páginas llegan solo hasta 'C. Rückstellungen' y no incluyen las Verbindlichkeiten (donde figurarían las deudas con entidades de crédito), por lo que la deuda financiera no se puede identificar."
+}

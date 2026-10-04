@@ -1,0 +1,190 @@
+{
+ "md": "Clubes/Bélgica/Antwerp/jaarrekening-2022-06-30-individual.md",
+ "generatedAt": "2026-09-30T04:26:56.111Z",
+ "rubros": [
+  {
+   "label": "Aantal daadwerkelijk gepresteerde uren 9088",
+   "lado": null,
+   "page": 26,
+   "section": "BEDRIJFSRESULTATEN / BEDRIJFSOPBRENGSTEN / NETTO-OMZET / BEDRIJFSKOSTEN",
+   "choice": "other_expenses",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "wages_squad",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1294
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 26,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "wages_squad",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "60/56A",
+   "lado": null,
+   "page": 9,
+   "section": "RESULTATENREKENING",
+   "choice": "other_expenses",
+   "confidence": 0.23,
+   "top3": [
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1258
+  },
+  {
+   "label": "76A",
+   "lado": null,
+   "page": 9,
+   "section": "RESULTATENREKENING",
+   "choice": "other_income",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 1255
+  },
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 26,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "wages_squad",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 986
+  },
+  {
+   "label": "Andere personeelskosten",
+   "lado": "expense",
+   "page": 26,
+   "section": "Personeelskosten",
+   "choice": "admin_general_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0.07
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "expense",
+   "page": 26,
+   "section": "Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "wages_squad",
+     0.62
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 940
+  },
+  {
+   "label": "Gemiddeld personeelsbestand berekend in voltijdse equivalenten 9087",
+   "lado": null,
+   "page": 26,
+   "section": "BEDRIJFSRESULTATEN / BEDRIJFSOPBRENGSTEN / NETTO-OMZET / BEDRIJFSKOSTEN",
+   "choice": "wages_squad",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "wages_squad",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1300
+  }
+ ]
+}

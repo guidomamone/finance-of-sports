@@ -1,0 +1,249 @@
+{
+  "club": "mirassol",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Mirassol/balancopatrimonial-modelo4-anual-01-12-2024assinado.md",
+  "generatedAt": "2026-09-30T22:41:49.501Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 19,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "CNPJ: 51.352.862/0001-14 / # Balanço Patrimonial",
+      "columns": [
+        "ATIVO",
+        "",
+        "PASSIVO",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "ATIVO",
+          "values": [
+            "32.191.032,96",
+            "PASSIVO",
+            "32.191.032,96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DISPONIBILIDADES",
+          "values": [
+            "11.583.747,40",
+            "PASSIVO CIRCULANTE",
+            "1.923.431,97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NUMERARIO",
+          "values": [
+            "4.292.538,15",
+            "FORNECEDORES",
+            "459.173,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCOS C/MOVIMENTO",
+          "values": [
+            "6.777.982,72",
+            "IMPOSTOS E CONTRIBUIÇÕES A RECOLHER",
+            "586.665,69"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APLICAÇÕES FINANCEIRAS",
+          "values": [
+            "513.226,53",
+            "CONTAS A PAGAR",
+            "672.744,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CREDITOS DE ATIVIDADES",
+          "values": [
+            "5.893.780,43",
+            "RECEITAS ANTECIPADAS",
+            "204.848,08"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TITULOS A RECEBER",
+          "values": [
+            "2.873.581,23",
+            "PATRIMONIO SOCIAL",
+            "30.267.600,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CONTAS A RECEBER",
+          "values": [
+            "3.020.199,20",
+            "RESULTADOS SOCIAIS",
+            "30.267.600,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ADIANTAMENTOS",
+          "values": [
+            "24.967,25",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FUNCIONARIOS",
+          "values": [
+            "24.967,25",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ADIANTAMENTOS A TERCEIROS",
+          "values": [
+            "1.104.452,50",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TERCEIROS",
+          "values": [
+            "1.104.452,50",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPOSTOS E CONTRIBUIÇÕES A RECUPERAR",
+          "values": [
+            "8.442,50",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPOSTOS A RECUPERAR",
+          "values": [
+            "8.442,50",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS ANTECIPADAS",
+          "values": [
+            "54.479,10",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A APROPRIAR",
+          "values": [
+            "54.479,10",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATIVO NÃO CIRCULANTE",
+          "values": [
+            "19.834,32",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REALIZAVEL A LONGO PRAZO",
+          "values": [
+            "19.834,32",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INVESTIMENTOS",
+          "values": [
+            "13.501.329,46",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INVESTIMENTOS",
+          "values": [
+            "4.500,00",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATIVO IMOBILIZADO",
+          "values": [
+            "15.436.376,12",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-)DEPRECIAÇÃO E AMORTIZAÇÃO ACUMULADAS",
+          "values": [
+            "(1.939.546,66)",
+            "",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "br",
+    "query": "Mirassol",
+    "matches": [
+      {
+        "leagueId": "br-serieB",
+        "year": "2024",
+        "matchedName": "Mirassol",
+        "wikipediaPage": "2024 Campeonato Brasileiro Série B"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": []
+}

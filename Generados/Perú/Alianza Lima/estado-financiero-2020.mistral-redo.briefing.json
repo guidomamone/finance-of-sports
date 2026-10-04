@@ -1,0 +1,3321 @@
+{
+  "club": "alianzalima-pe",
+  "year": 2020,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Perú/Alianza Lima/estado-financiero-2020.mistral-redo.md",
+  "generatedAt": "2026-09-30T14:16:52.640Z",
+  "numberFormat": "us (coma miles, punto decimal)",
+  "numberFormatEvidence": {
+    "us": 330,
+    "eu": 0,
+    "space": 2
+  },
+  "scannedWarning": true,
+  "tableCount": 22,
+  "relevantTableCount": 5,
+  "tables": [
+    {
+      "page": 2,
+      "section": "## Contenido",
+      "columns": [
+        "",
+        "Página"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Dictamen de los auditores independientes",
+          "values": [
+            "2"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estados de situación financiera",
+          "values": [
+            "4"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estados de resultados integrales",
+          "values": [
+            "5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estados de cambios en el patrimonio institucional",
+          "values": [
+            "6"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estados de flujos de efectivo",
+          "values": [
+            "7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Notas a los estados financieros",
+          "values": [
+            "8"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "columns": [
+        "",
+        "Notas",
+        "31.12.2020",
+        "31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Efectivo y equivalente de efectivo",
+          "values": [
+            "4",
+            "1,111,894",
+            "1,240,650"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar, parte corriente",
+          "values": [
+            "5",
+            "3,350,735",
+            "11,448,860"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Implementos deportivos",
+          "values": [
+            "",
+            "854,416",
+            "822,653"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos pagados por anticipado",
+          "values": [
+            "",
+            "148,404",
+            "88,445"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total activo corriente",
+          "values": [
+            "",
+            "5,465,449",
+            "13,600,608"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Cuentas por cobrar, parte no corriente",
+          "values": [
+            "5",
+            "723,600",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Inmueble, mobiliario y equipo, neto",
+          "values": [
+            "6",
+            "136,989,453",
+            "137,067,893"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos federativos, neto",
+          "values": [
+            "7",
+            "1,939,620",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total activo no corriente",
+          "values": [
+            "",
+            "139,652,673",
+            "137,067,893"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total activo",
+          "values": [
+            "",
+            "145,118,122",
+            "150,668,501"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Cuentas por pagar comerciales",
+          "values": [
+            "",
+            "650,491",
+            "655,014"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneraciones por pagar",
+          "values": [
+            "8",
+            "318,914",
+            "1,524,218"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos por pagar, parte corriente",
+          "values": [
+            "9",
+            "2,422,497",
+            "3,061,176"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras cuentas por pagar, parte corriente",
+          "values": [
+            "10",
+            "3,695,851",
+            "2,941,788"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda concursal, parte corriente",
+          "values": [
+            "11",
+            "4,400,007",
+            "2,800,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total pasivo corriente",
+          "values": [
+            "",
+            "11,487,760",
+            "10,982,196"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Impuestos por pagar, parte no corriente",
+          "values": [
+            "9",
+            "8,155,935",
+            "8,941,301"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras cuentas por pagar, parte no corriente",
+          "values": [
+            "10",
+            "3,142,024",
+            "2,734,322"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda concursal, parte no corriente",
+          "values": [
+            "11",
+            "44,926,349",
+            "45,869,842"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisiones",
+          "values": [
+            "",
+            "284,088",
+            "401,871"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total pasivo no corriente",
+          "values": [
+            "",
+            "56,508,396",
+            "57,947,336"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total pasivo y provisiones",
+          "values": [
+            "",
+            "67,996,156",
+            "68,929,532"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Aporte de socios",
+          "values": [
+            "12",
+            "4,629,188",
+            "4,629,188"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit de revaluación",
+          "values": [
+            "",
+            "115,055,993",
+            "116,372,179"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultados acumulados",
+          "values": [
+            "13",
+            "(42,563,215)",
+            "(39,262,398)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total patrimonio institucional",
+          "values": [
+            "",
+            "77,121,966",
+            "81,738,969"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total pasivo y patrimonio institucional",
+          "values": [
+            "",
+            "145,118,122",
+            "150,668,501"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "## Estados de resultados integrales",
+      "columns": [
+        "",
+        "Notas",
+        "31.12.2020",
+        "31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Actividades institucionales y deportivas",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Ingresos por derechos de transmisión televisiva",
+          "values": [
+            "",
+            "19,193,625",
+            "18,401,167"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos por auspicios publicitarios",
+          "values": [
+            "",
+            "10,167,672",
+            "12,300,941"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ingresos por participación en torneos internacionales",
+          "values": [
+            "",
+            "411,333",
+            "11,252,943"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros ingresos deportivos",
+          "values": [
+            "14",
+            "15,175,482",
+            "17,421,288"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos deportivos",
+          "values": [
+            "15",
+            "(39,750,555)",
+            "(38,945,731)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos administrativos",
+          "values": [
+            "16",
+            "(6,473,894)",
+            "(6,696,803)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos de marketing",
+          "values": [
+            "",
+            "(1,227,980)",
+            "(852,249)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado operativo",
+          "values": [
+            "",
+            "(2,504,317)",
+            "12,881,556"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Gastos financieros, neto",
+          "values": [
+            "",
+            "(1,230,364)",
+            "(1,602,653)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencia de cambio, neta",
+          "values": [
+            "",
+            "(882,322)",
+            "145,233"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado del periodo",
+          "values": [
+            "",
+            "(4,617,003)",
+            "11,424,136"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Otros resultados integrales",
+          "values": [
+            "",
+            "0",
+            "6,305,226"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado integral del periodo",
+          "values": [
+            "",
+            "(4,617,003)",
+            "17,729,362"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 7,
+      "section": "## Estados de cambios en el patrimonio institucional",
+      "columns": [
+        "",
+        "Aporte de socios",
+        "Superávit de revaluación",
+        "Resultados acumulados",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldos al 31 de diciembre del 2018",
+          "values": [
+            "4,629,188",
+            "111,081,496",
+            "(51,701,077)",
+            "64,009,607"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cambios de estimaciones",
+          "values": [
+            "0",
+            "6,305,226",
+            "0",
+            "6,305,226"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferencia a resultados acumulados",
+          "values": [
+            "0",
+            "(1,014,543)",
+            "1,014,543",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado del periodo",
+          "values": [
+            "0",
+            "0",
+            "11,424,136",
+            "11,424,136"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos al 31 de diciembre del 2019",
+          "values": [
+            "4,629,188",
+            "116,372,179",
+            "(39,262,398)",
+            "81,738,969"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferencia a resultados acumulados",
+          "values": [
+            "0",
+            "(1,316,186)",
+            "1,316,186",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado del periodo",
+          "values": [
+            "0",
+            "0",
+            "(4,617,003)",
+            "(4,617,003)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos al 31 de diciembre del 2020",
+          "values": [
+            "4,629,188",
+            "115,055,993",
+            "(42,563,215)",
+            "77,121,966"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 8,
+      "section": "## Estados de flujos de efectivo",
+      "columns": [
+        "",
+        "31.12.2020",
+        "31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Actividades operativas",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Resultado del periodo",
+          "values": [
+            "(4,617,003)",
+            "11,424,136"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes al resultado que no afectan los flujos de efectivo:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación",
+          "values": [
+            "3,027,523",
+            "2,533,594"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización",
+          "values": [
+            "967,114",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intereses por deuda concursal",
+          "values": [
+            "1,080,045",
+            "1,032,787"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros ajustes",
+          "values": [
+            "1,250,726",
+            "(269,559)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variaciones netas de activos y pasivos operativos:",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar",
+          "values": [
+            "7,374,525",
+            "(371,701)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Implementos deportivos",
+          "values": [
+            "(31,763)",
+            "26,491"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos pagados por anticipado",
+          "values": [
+            "(59,959)",
+            "9,034"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por pagar comerciales",
+          "values": [
+            "(4,523)",
+            "236,436"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneraciones por pagar",
+          "values": [
+            "(1,205,304)",
+            "(286,536)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos por pagar",
+          "values": [
+            "(1,424,045)",
+            "(361,709)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras cuentas por pagar",
+          "values": [
+            "(512,109)",
+            "(3,663,319)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisiones",
+          "values": [
+            "(117,783)",
+            "(142,646)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo y equivalente provisto por actividades operativas",
+          "values": [
+            "5,727,444",
+            "10,167,008"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actividades de inversión",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Desembolsos por adquisición de derechos federativos",
+          "values": [
+            "(2,906,734)",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Desembolsos por adquisición de mobiliario y equipo",
+          "values": [
+            "(1,307,746)",
+            "(2,040,845)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo y equivalente de efectivo usado en actividades de inversión",
+          "values": [
+            "(4,214,480)",
+            "(2,040,845)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Actividades de financiamiento",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Pago de préstamos con cesión de derechos",
+          "values": [
+            "0",
+            "(4,356,030)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pago de cuotas por deuda concursal",
+          "values": [
+            "(1,641,720)",
+            "(2,696,942)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Efectivo y equivalente de efectivo usado en actividades de financiamiento",
+          "values": [
+            "(1,641,720)",
+            "(7,052,972)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Incremento (Disminución) neta de efectivo y equivalente de efectivo",
+          "values": [
+            "(128,756)",
+            "1,073,191"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Saldo de efectivo y equivalente de efectivo al inicio del ejercicio",
+          "values": [
+            "1,240,650",
+            "167,459"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo de efectivo y equivalente de efectivo al final del ejercicio",
+          "values": [
+            "1,111,894",
+            "1,240,650"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "# e. Inmueble, mobiliario y equipo, neto",
+      "columns": [
+        "Edificaciones e instalaciones",
+        "22 años"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Luminarias y leds publicitarios",
+          "values": [
+            "8 años"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Unidades de transporte",
+          "values": [
+            "4 años"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mobiliario y equipo diverso",
+          "values": [
+            "Entre 4 y 10 años"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "### 3. Instrumentos financieros y Administración de riesgos financieros / #### Categorías de activos y pasivos financieros",
+      "columns": [
+        "",
+        "31.12.2020",
+        "31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Activos financieros",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "A valor razonable con efecto en resultados",
+          "values": [
+            "1,111,894",
+            "1,240,650"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Préstamos y cuentas por cobrar al costo amortizado",
+          "values": [
+            "3,350,735",
+            "11,448,860"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "4,462,629",
+            "12,689,510"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivos financieros",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Préstamos y cuentas por pagar al costo amortizado",
+          "values": [
+            "(56,814,722)",
+            "(55,000,966)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "### Administración de riesgos financieros / #### a. Riesgo de liquidez",
+      "columns": [
+        "",
+        "Menos de 1 año",
+        "Entre 1 y más años",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Al 31 de diciembre del 2020",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Cuentas por pagar comerciales",
+          "values": [
+            "650,491",
+            "0",
+            "650,491"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneraciones por pagar",
+          "values": [
+            "318,914",
+            "0",
+            "318,914"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos por pagar",
+          "values": [
+            "2,422,497",
+            "8,155,935",
+            "10,578,432"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras cuentas por pagar",
+          "values": [
+            "3,695,851",
+            "3,142,024",
+            "6,837,875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda concursal",
+          "values": [
+            "4,400,007",
+            "44,926,349",
+            "49,326,356"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "11,487,760",
+            "56,224,308",
+            "67,712,068"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Al 31 de diciembre del 2019",
+          "values": [
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Cuentas por pagar comerciales",
+          "values": [
+            "655,014",
+            "0",
+            "655,014"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneraciones por pagar",
+          "values": [
+            "1,524,218",
+            "0",
+            "1,524,218"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos por pagar",
+          "values": [
+            "3,061,176",
+            "8,941,301",
+            "12,002,477"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras cuentas por pagar",
+          "values": [
+            "2,941,788",
+            "2,734,322",
+            "5,676,110"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda concursal",
+          "values": [
+            "2,800,000",
+            "45,869,842",
+            "48,669,842"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "10,982,196",
+            "57,545,465",
+            "68,527,661"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "#### b. Riesgo de tipo de cambio",
+      "columns": [
+        "",
+        "31.12.2020",
+        "31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Activos monetarios",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Efectivo y equivalente de efectivo",
+          "values": [
+            "229,297",
+            "211,932"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar, neto",
+          "values": [
+            "923,937",
+            "3,277,661"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "1,153,234",
+            "3,489,593"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivos monetarios",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Cuentas por pagar comerciales",
+          "values": [
+            "(29,196)",
+            "(47,730)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneraciones por pagar",
+          "values": [
+            "(35,105)",
+            "(321,790)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras cuentas por pagar",
+          "values": [
+            "(1,092,643)",
+            "(915,635)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Deuda concursal",
+          "values": [
+            "(4,005,617)",
+            "(4,133,596)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(5,162,561)",
+            "(5,418,751)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Posición monetaria pasiva, neta",
+          "values": [
+            "(4,009,327)",
+            "(1,929,158)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "# c. Concentración y riesgo de crédito / # d. Administración de riesgo de capital / #### 4. Efectivo y equivalente de efectivo / #### 5. Cuentas por cobrar, neto",
+      "columns": [
+        "",
+        "31.12.2020",
+        "31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Transferencias de jugadores, corto plazo",
+          "values": [
+            "1,447,200",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Documentos por cobrar a auspiciadores y franquiciados",
+          "values": [
+            "1,066,672",
+            "869,372"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar a Federación Peruana de Futbol",
+          "values": [
+            "396,873",
+            "10,042,263"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derechos de formación por cobrar",
+          "values": [
+            "274,079",
+            "275,332"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Garantías",
+          "values": [
+            "252,080",
+            "251,386"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar al personal",
+          "values": [
+            "108,375",
+            "88,258"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por cobrar a emisoras de tickets",
+          "values": [
+            "78,846",
+            "78,846"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversas",
+          "values": [
+            "83,834",
+            "185,728"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estimación por deterioro",
+          "values": [
+            "(357,224)",
+            "(342,325)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total cuentas por cobrar a corto plazo",
+          "values": [
+            "3,350,735",
+            "11,448,860"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Transferencia de jugadores, largo plazo",
+          "values": [
+            "723,600",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "4,074,335",
+            "11,448,860"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 17,
+      "section": "#### 6. Inmueble, mobiliario y equipo, neto",
+      "columns": [
+        "",
+        "Saldo al 31.12.2019",
+        "Adiciones",
+        "Cambio de estimaciones",
+        "Transferen- cias y ajustes",
+        "Saldo al 31.12.2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Costo",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "95,877,672",
+            "0",
+            "0",
+            "0",
+            "95,877,672"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificaciones e instalaciones",
+          "values": [
+            "70,899,458",
+            "0",
+            "0",
+            "41,492",
+            "70,940,950"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derecho de uso por instalaciones",
+          "values": [
+            "2,264,133",
+            "0",
+            "(2,264,133)",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luminarias y leds publicitarios",
+          "values": [
+            "2,037,122",
+            "3,017,037",
+            "(29,738)",
+            "1,317,721",
+            "6,342,142"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Unidades de transporte",
+          "values": [
+            "5,092",
+            "0",
+            "0",
+            "0",
+            "5,092"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mobiliario",
+          "values": [
+            "468,880",
+            "19,218",
+            "0",
+            "20,950",
+            "509,048"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo diverso",
+          "values": [
+            "1,037,214",
+            "102,113",
+            "0",
+            "300,448",
+            "1,439,775"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luminarias por recibir",
+          "values": [
+            "199,832",
+            "20,950",
+            "0",
+            "(220,782)",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construcciones en curso",
+          "values": [
+            "297,163",
+            "1,165,465",
+            "(2,799)",
+            "(1,459,829)",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "173,086,566",
+            "4,324,783",
+            "(2,296,670)",
+            "0",
+            "175,114,679"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "Club Alianza Lima / 17",
+      "columns": [
+        "",
+        "Saldo al 31.12.2019",
+        "Adiciones",
+        "Cambio de estimaciones",
+        "Transferen- cias y ajustes",
+        "Saldo al 31.12.2020"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Depreciación acumulada",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificaciones e instalaciones",
+          "values": [
+            "(33,807,876)",
+            "(2,136,284)",
+            "0",
+            "0",
+            "(35,944,160)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derecho de uso por instalaciones",
+          "values": [
+            "(920,970)",
+            "0",
+            "920,970",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luminarias y leds publicitarios",
+          "values": [
+            "(594,161)",
+            "(631,770)",
+            "0",
+            "0",
+            "(1,225,931)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Unidades de transporte",
+          "values": [
+            "(5,092)",
+            "0",
+            "0",
+            "0",
+            "(5,092)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mobiliario",
+          "values": [
+            "(358,927)",
+            "(18,073)",
+            "0",
+            "0",
+            "(377,000)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo diverso",
+          "values": [
+            "(331,647)",
+            "(241,396)",
+            "0",
+            "0",
+            "(573,043)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(36,018,673)",
+            "(3,027,523)",
+            "920,970",
+            "0",
+            "(38,125,226)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costo neto",
+          "values": [
+            "137,067,893",
+            "",
+            "",
+            "",
+            "136,989,453"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": null,
+      "columns": [
+        "",
+        "Saldo al 31.12.2018",
+        "Adiciones",
+        "Cambio de estimaciones",
+        "Transferen- cias y ajustes",
+        "Saldo al 31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Costo",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "112,952,444",
+            "0",
+            "(17,074,772)",
+            "0",
+            "95,877,672"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificaciones e instalaciones",
+          "values": [
+            "25,454,991",
+            "80,686",
+            "43,845,994",
+            "1,517,787",
+            "70,899,458"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derecho de uso por instalaciones",
+          "values": [
+            "2,264,133",
+            "0",
+            "0",
+            "0",
+            "2,264,133"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luminarias y leds publicitarios",
+          "values": [
+            "2,037,122",
+            "0",
+            "0",
+            "0",
+            "2,037,122"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Unidades de transporte",
+          "values": [
+            "5,092",
+            "0",
+            "0",
+            "0",
+            "5,092"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mobiliario",
+          "values": [
+            "435,267",
+            "46,796",
+            "0",
+            "(13,183)",
+            "468,880"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo diverso",
+          "values": [
+            "862,126",
+            "169,122",
+            "0",
+            "5,966",
+            "1,037,214"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipos por recibir",
+          "values": [
+            "0",
+            "205,798",
+            "0",
+            "(5,966)",
+            "199,832"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Construcciones en curso",
+          "values": [
+            "276,507",
+            "1,538,443",
+            "0",
+            "(1,517,787)",
+            "297,163"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "144,287,682",
+            "2,040,845",
+            "26,771,222",
+            "(13,183)",
+            "173,086,566"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación acumulada",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificaciones e instalaciones",
+          "values": [
+            "(11,979,301)",
+            "(1,362,579)",
+            "(20,465,996)",
+            "0",
+            "(33,807,876)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Derecho de uso por instalaciones",
+          "values": [
+            "(119,165)",
+            "(801,805)",
+            "0",
+            "0",
+            "(920,970)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luminarias y leds publicitarios",
+          "values": [
+            "(339,520)",
+            "(254,641)",
+            "0",
+            "0",
+            "(594,161)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Unidades de transporte",
+          "values": [
+            "(5,092)",
+            "0",
+            "0",
+            "0",
+            "(5,092)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mobiliario",
+          "values": [
+            "(359,094)",
+            "(13,016)",
+            "0",
+            "13,183",
+            "(358,927)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Equipo diverso",
+          "values": [
+            "(230,094)",
+            "(101,553)",
+            "0",
+            "0",
+            "(331,647)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "(13,032,266)",
+            "(2,533,594)",
+            "(20,465,996)",
+            "13,183",
+            "(36,018,673)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Costo neto",
+          "values": [
+            "131,255,416",
+            "",
+            "",
+            "",
+            "137,067,893"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "## 7. Derechos federativos, neto / ## 8. Remuneraciones por pagar",
+      "columns": [
+        "",
+        "31.12.2020",
+        "31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Premios y remuneraciones por pagar",
+          "values": [
+            "136,138",
+            "1,205,584"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vacaciones por pagar",
+          "values": [
+            "113,606",
+            "243,979"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Beneficios sociales",
+          "values": [
+            "69,171",
+            "74,655"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "318,915",
+            "1,524,218"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "## 9. Impuestos por pagar",
+      "columns": [
+        "",
+        "31.12.2020",
+        "31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Fraccionamientos por pagar, parte corriente",
+          "values": [
+            "785,387",
+            "700,313"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Retenciones y aportaciones",
+          "values": [
+            "767,293",
+            "822,371"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto General a las ventas",
+          "values": [
+            "492,865",
+            "740,350"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuesto a la Renta de quinta categoría",
+          "values": [
+            "376,952",
+            "798,142"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos por pagar a corto plazo",
+          "values": [
+            "2,422,497",
+            "3,061,176"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Resolución INDECOPI por Deuda tributaria",
+          "values": [
+            "7,617,006",
+            "7,617,006"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fraccionamientos por pagar, parte no corriente",
+          "values": [
+            "538,929",
+            "1,324,295"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impuestos por pagar a largo plazo",
+          "values": [
+            "8,155,935",
+            "8,941,301"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "10,578,432",
+            "12,002,477"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "## 10. Otras cuentas por pagar",
+      "columns": [
+        "",
+        "31.12.2020",
+        "31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Pasivo por arrendamiento, corto plazo",
+          "values": [
+            "1,073,425",
+            "717,363"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comisiones por intermediación auspiciadores",
+          "values": [
+            "666,309",
+            "609,948"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferencia a jugadores, corto plazo",
+          "values": [
+            "288,720",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondo Blanquiazul",
+          "values": [
+            "246,911",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por pagar a la FPF",
+          "values": [
+            "104,861",
+            "325,930"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuentas por pagar a la ADFP",
+          "values": [
+            "0",
+            "162,840"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversas",
+          "values": [
+            "1,315,625",
+            "1,283,395"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras cuentas por pagar a corto plazo",
+          "values": [
+            "3,695,851",
+            "3,099,476"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Accidencias no reconocidas en Deuda concursal",
+          "values": [
+            "1,869,518",
+            "1,827,811"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pasivo por arrendamiento, largo plazo",
+          "values": [
+            "1,128,146",
+            "767,578"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transferencia a jugadores, largo plazo",
+          "values": [
+            "144,360",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otras cuentas por pagar a largo plazo",
+          "values": [
+            "3,142,024",
+            "2,595,389"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "6,837,875",
+            "5,694,865"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "## 11. Deuda concursal",
+      "columns": [
+        "",
+        "31.12.2020",
+        "31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Remuneraciones y aportes previsionales",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneraciones y beneficios sociales",
+          "values": [
+            "3,769,154",
+            "4,424,415"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondo Blanquiazul",
+          "values": [
+            "1,391,409",
+            "1,216,720"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "International Group Pegaso Perú S.A.C.",
+          "values": [
+            "1,005,095",
+            "846,578"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Administradora de Fondo de Pensiones – AFP",
+          "values": [
+            "448,264",
+            "424,735"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "6,613,922",
+            "6,912,448"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos tributarios y aportaciones",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fondo Blanquiazul",
+          "values": [
+            "25,189,730",
+            "25,361,027"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Seguro Social de Salud – ESSALUD",
+          "values": [
+            "3,522,518",
+            "3,525,949"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superintendencia Nacional de Administración Tributaria - SUNAT",
+          "values": [
+            "2,175,084",
+            "2,027,098"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "30,887,332",
+            "30,914,074"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros acreedores",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Farfán Guadalupe, Jefferson",
+          "values": [
+            "969,049",
+            "901,808"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Franco Chipoco, Carlos",
+          "values": [
+            "714,721",
+            "665,130"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros",
+          "values": [
+            "10,141,332",
+            "9,276,382"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "11,825,102",
+            "10,843,320"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "49,326,356",
+            "48,669,842"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "Club Alianza Lima / 20",
+      "columns": [
+        "",
+        "31.12.2020",
+        "",
+        "31.12.2019",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Corto plazo",
+            "Largo plazo",
+            "Corto plazo",
+            "Largo plazo"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Créditos tributarios y aportaciones",
+          "values": [
+            "2,050,000",
+            "28,837,332",
+            "1,260,000",
+            "29,654,074"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Remuneraciones y aportes previsionales",
+          "values": [
+            "1,910,007",
+            "4,703,915",
+            "1,260,000",
+            "5,652,448"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros acreedores",
+          "values": [
+            "440,000",
+            "11,385,102",
+            "280,000",
+            "10,563,320"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "4,400,007",
+            "44,926,349",
+            "2,800,000",
+            "45,869,842"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": null,
+      "columns": [
+        "",
+        "2020",
+        "2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldos iniciales",
+          "values": [
+            "48,669,842",
+            "50,603,556"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reconocimiento de intereses",
+          "values": [
+            "1,080,045",
+            "1,032,787"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Desembolso de cuotas ordinarias",
+          "values": [
+            "(1,641,720)",
+            "(2,696,942)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diferencia de cambio",
+          "values": [
+            "1,212,590",
+            "(282,088)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Otros ajustes",
+          "values": [
+            "5,599",
+            "12,529"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos finales",
+          "values": [
+            "49,326,356",
+            "48,669,842"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "#### 14. Otros ingresos deportivos",
+      "columns": [
+        "",
+        "31.12.2020",
+        "31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ingresos por derechos de formación y transferencias",
+          "values": [
+            "5,879,687",
+            "726,000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taquilla por torneos locales",
+          "values": [
+            "3,011,445",
+            "7,260,732"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Taquilla por torneos internacionales y amistosos",
+          "values": [
+            "2,920,665",
+            "3,995,774"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuotas de socios",
+          "values": [
+            "790,199",
+            "1,099,599"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Regalías",
+          "values": [
+            "318,018",
+            "499,810"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Academías de futbol y vóley",
+          "values": [
+            "293,797",
+            "488,110"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Franquicias de academias",
+          "values": [
+            "264,597",
+            "675,986"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Concesionarios",
+          "values": [
+            "132,693",
+            "291,975"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "1,564,381",
+            "2,383,302"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "15,175,482",
+            "17,421,288"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 22,
+      "section": "#### 15. Gastos deportivos",
+      "columns": [
+        "",
+        "31.12.2020",
+        "31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Personal",
+          "values": [
+            "(18,711,159)",
+            "(18,700,778)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "(15,190,865)",
+            "(15,145,809)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciación",
+          "values": [
+            "(3,564,638)",
+            "(2,533,594)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortización",
+          "values": [
+            "(967,114)",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "(1,316,779)",
+            "(2,565,550)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "(39,750,555)",
+            "(38,945,731)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 22,
+      "section": "#### 16. Gastos administrativos",
+      "columns": [
+        "",
+        "31.12.2020",
+        "31.12.2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Servicios",
+          "values": [
+            "(3,033,907)",
+            "(2,358,920)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Personal",
+          "values": [
+            "(2,932,057)",
+            "(3,484,002)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estimaciones contables",
+          "values": [
+            "(507,930)",
+            "(163,419)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Diversos",
+          "values": [
+            "0",
+            "(690,462)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "(6,473,894)",
+            "(6,696,803)"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total activo corriente",
+      "target": "5,465,449",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total activo corriente",
+      "target": "13,600,608",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total activo no corriente",
+      "target": "139,652,673",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total activo no corriente",
+      "target": "137,067,893",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "likelyRelevant": false,
+      "totalLabel": "Total activo",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total pasivo corriente",
+      "target": "11,487,760",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total pasivo corriente",
+      "target": "10,982,196",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total pasivo no corriente",
+      "target": "56,508,396",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total pasivo no corriente",
+      "target": "57,947,336",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "likelyRelevant": false,
+      "totalLabel": "Total pasivo y provisiones",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total patrimonio institucional",
+      "target": "77,121,966",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total patrimonio institucional",
+      "target": "81,738,969",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "## Estados de situación financiera",
+      "likelyRelevant": false,
+      "totalLabel": "Total pasivo y patrimonio institucional",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 16,
+      "section": "### Administración de riesgos financieros / #### a. Riesgo de liquidez",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "11,487,760",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "### Administración de riesgos financieros / #### a. Riesgo de liquidez",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "56,224,308",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "### Administración de riesgos financieros / #### a. Riesgo de liquidez",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total",
+      "target": "67,712,068",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "### Administración de riesgos financieros / #### a. Riesgo de liquidez",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "10,982,196",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "### Administración de riesgos financieros / #### a. Riesgo de liquidez",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "57,545,465",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "### Administración de riesgos financieros / #### a. Riesgo de liquidez",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total",
+      "target": "68,527,661",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "# c. Concentración y riesgo de crédito / # d. Administración de riesgo de capital / #### 4. Efectivo y equivalente de efectivo / #### 5. Cuentas por cobrar, neto",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total cuentas por cobrar a corto plazo",
+      "target": "3,350,735",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "# c. Concentración y riesgo de crédito / # d. Administración de riesgo de capital / #### 4. Efectivo y equivalente de efectivo / #### 5. Cuentas por cobrar, neto",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total cuentas por cobrar a corto plazo",
+      "target": "11,448,860",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "# c. Concentración y riesgo de crédito / # d. Administración de riesgo de capital / #### 4. Efectivo y equivalente de efectivo / #### 5. Cuentas por cobrar, neto",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "4,074,335",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-3350735"
+    },
+    {
+      "page": 17,
+      "section": "# c. Concentración y riesgo de crédito / # d. Administración de riesgo de capital / #### 4. Efectivo y equivalente de efectivo / #### 5. Cuentas por cobrar, neto",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "11,448,860",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-11448860"
+    },
+    {
+      "page": 19,
+      "section": "## 7. Derechos federativos, neto / ## 8. Remuneraciones por pagar",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "318,915",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "## 7. Derechos federativos, neto / ## 8. Remuneraciones por pagar",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "1,524,218",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "## 9. Impuestos por pagar",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "10,578,432",
+      "addendCount": 6,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 19,
+      "section": "## 9. Impuestos por pagar",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "12,002,477",
+      "addendCount": 6,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "## 10. Otras cuentas por pagar",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "6,837,875",
+      "addendCount": 10,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "## 10. Otras cuentas por pagar",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "5,694,865",
+      "addendCount": 10,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 20,
+      "section": "## 11. Deuda concursal",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "49,326,356",
+      "addendCount": 13,
+      "closes": false,
+      "diff": "49326356"
+    },
+    {
+      "page": 20,
+      "section": "## 11. Deuda concursal",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "48,669,842",
+      "addendCount": 13,
+      "closes": false,
+      "diff": "48669842"
+    },
+    {
+      "page": 21,
+      "section": "Club Alianza Lima / 20",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"Corto plazo\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 21,
+      "section": "Club Alianza Lima / 20",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"Largo plazo\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 21,
+      "section": "Club Alianza Lima / 20",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"Corto plazo\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 21,
+      "section": "Club Alianza Lima / 20",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 4 valor(es) del segmento no parecen números (ej. \"Largo plazo\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 22,
+      "section": "#### 14. Otros ingresos deportivos",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "15,175,482",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "#### 14. Otros ingresos deportivos",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "17,421,288",
+      "addendCount": 9,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "#### 15. Gastos deportivos",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "(39,750,555)",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "#### 15. Gastos deportivos",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "(38,945,731)",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "#### 16. Gastos administrativos",
+      "likelyRelevant": true,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "(6,473,894)",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 22,
+      "section": "#### 16. Gastos administrativos",
+      "likelyRelevant": true,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "(6,696,803)",
+      "addendCount": 4,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 33,
+    "results": [
+      {
+        "label": "Actividades institucionales y deportivas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Actividades institucionales y deportivas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos por derechos de transmisión televisiva",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "Ingresos por derechos de transmisión televisiva",
+        "years": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Ingresos por derechos de transmisión televisiva",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos por auspicios publicitarios",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Ingresos por auspicios publicitarios",
+        "years": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Ingresos por auspicios publicitarios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos por participación en torneos internacionales",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "competition_bonus",
+        "matchedLabel": "Ingresos por participación en torneos internacionales",
+        "years": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Ingresos por participación en torneos internacionales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros ingresos deportivos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "lump_football_operations",
+        "matchedLabel": "Otros ingresos deportivos",
+        "years": [
+          "2022"
+        ]
+      },
+      {
+        "label": "Otros ingresos deportivos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos deportivos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos deportivos",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Personal (gastos deportivos)",
+        "similarity": 67
+      },
+      {
+        "label": "Gastos administrativos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos administrativos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos administrativos",
+        "years": [
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Gastos de marketing",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos de marketing",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Gastos de marketing",
+        "years": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ]
+      },
+      {
+        "label": "Resultado operativo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado operativo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos financieros, neto",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos financieros, neto",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencia de cambio, neta",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diferencia de cambio, neta",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado del periodo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado del periodo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros resultados integrales",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Otros resultados integrales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado integral del periodo",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado integral del periodo",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldos al 31 de diciembre del 2018",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldos al 31 de diciembre del 2018",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cambios de estimaciones",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cambios de estimaciones",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transferencia a resultados acumulados",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transferencia a resultados acumulados",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldos al 31 de diciembre del 2019",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldos al 31 de diciembre del 2019",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldos al 31 de diciembre del 2020",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Saldos al 31 de diciembre del 2020",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Ingresos por derechos de formación y transferencias",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Ingresos por derechos de formación y transferencias",
+        "years": [
+          "2019",
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "Ingresos por derechos de formación y transferencias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Taquilla por torneos locales",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Taquilla por torneos locales",
+        "years": [
+          "2019",
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "Taquilla por torneos locales",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Taquilla por torneos internacionales y amistosos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Taquilla por torneos internacionales y amistosos",
+        "years": [
+          "2019",
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "Taquilla por torneos internacionales y amistosos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Cuotas de socios",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "member_dues",
+        "matchedLabel": "Cuotas de socios",
+        "years": [
+          "2019",
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "Cuotas de socios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Regalías",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Regalías",
+        "years": [
+          "2019",
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "Regalías",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Academías de futbol y vóley",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_sports",
+        "matchedLabel": "Academias de fútbol y vóley",
+        "years": [
+          "2019",
+          "2020",
+          "2021"
+        ]
+      },
+      {
+        "label": "Academías de futbol y vóley",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Franquicias de academias",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "youth_football",
+        "matchedLabel": "Franquicias de academias",
+        "years": [
+          "2019",
+          "2020"
+        ]
+      },
+      {
+        "label": "Franquicias de academias",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Concesionarios",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "stadium_other",
+        "matchedLabel": "Concesionarios",
+        "years": [
+          "2019",
+          "2020"
+        ]
+      },
+      {
+        "label": "Concesionarios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diversos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Diversos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Personal",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Personal",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Servicios",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Servicios",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciación",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Depreciación",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortización",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortización",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Estimaciones contables",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Estimaciones contables",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Estimaciones contables (gastos administrativos)",
+        "similarity": 50
+      }
+    ]
+  },
+  "league": {
+    "pais": "pe",
+    "query": "Alianza Lima",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 10,
+      "line": "#### b. Moneda funcional y transacciones en moneda extranjera"
+    },
+    {
+      "page": 16,
+      "line": "#### b. Riesgo de tipo de cambio"
+    },
+    {
+      "page": 16,
+      "line": "La exposición a los tipos de cambio proviene de los saldos monetarios en moneda extranjera mostrados en el Estado de situación financiera, estos conceptos son presentados al tipo de cambio de fin de período."
+    }
+  ],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+    "4 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "7 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

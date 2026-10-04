@@ -1,0 +1,1501 @@
+{
+ "md": "Clubes/Noruega/Rosenborg/aarsregnskap-2013.md",
+ "generatedAt": "2026-09-30T13:16:00.250Z",
+ "rubros": [
+  {
+   "label": "Avskrivning av driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "choice": "depreciation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "depreciation",
+     0.98
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1114
+  },
+  {
+   "label": "Annen driftskostnad",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Rosenborg Ballklub konsern",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Varekostnad",
+   "lado": "expense",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Salgsinntekt",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## Rosenborg Ballklub konsern",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.44
+    ],
+    [
+     "sponsorship_commercial",
+     0.3
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Renteinntekt fra foretak i samme konsern",
+   "lado": "revenue",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1051
+  },
+  {
+   "label": "Nedskrivning av varige driftsmidler og immaterielle eiendeler",
+   "lado": "expense",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_expenses",
+     0.49
+    ],
+    [
+     "depreciation",
+     0.43
+    ],
+    [
+     "other_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Lønnskostnad",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Rosenborg Ballklub konsern",
+   "choice": "wages_squad",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "wages_squad",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Annen driftsinntekt",
+   "lado": "revenue",
+   "page": 23,
+   "section": "## Rosenborg Ballklub konsern",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Annen renteinntekt",
+   "lado": null,
+   "page": 23,
+   "section": "## Rosenborg Ballklub konsern",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1465
+  },
+  {
+   "label": "Annen finansinntekt",
+   "lado": null,
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1441
+  },
+  {
+   "label": "Rentekostnad til foretak i samme konsern",
+   "lado": "expense",
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Avsatt til annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_expenses",
+     0.56
+    ],
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1455
+  },
+  {
+   "label": "Av og nedskrivning",
+   "lado": "expense",
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "choice": "other_amortisation",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_amortisation",
+     0.44
+    ],
+    [
+     "depreciation",
+     0.22
+    ],
+    [
+     "player_impairment",
+     0.14
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Annen finanskostnad",
+   "lado": null,
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1473
+  },
+  {
+   "label": "Overført fra annen egenkapital",
+   "lado": null,
+   "page": 2,
+   "section": "ROSENBORG BALLKLUB / ## RESULTATREGNSKAP",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1451
+  },
+  {
+   "label": "Annen rentekostnad",
+   "lado": null,
+   "page": 23,
+   "section": "## Rosenborg Ballklub konsern",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1481
+  },
+  {
+   "label": "Skattekostnad",
+   "lado": null,
+   "page": 23,
+   "section": "## Rosenborg Ballklub konsern",
+   "choice": "admin_general_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ]
+   ],
+   "tokens": 1523
+  },
+  {
+   "label": "Finansinntekter/ kostnader",
+   "lado": "expense",
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Momsrefusjon",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Rosenborg Ballklub konsern",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.72
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 853
+  },
+  {
+   "label": "Kostnader",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Rosenborg Ballklub konsern",
+   "choice": "other_expenses",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "other_expenses",
+     0.64
+    ],
+    [
+     "lump_football_operations_expense",
+     0.24
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 988
+  },
+  {
+   "label": "Sponsor- og reklameinntekter",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Billett- og arrangementsinntekter",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "matchday_competition",
+     0.41
+    ],
+    [
+     "stadium_other",
+     0.01
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "VIP-inntekter",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "stadium_other",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "stadium_other",
+     0.8
+    ],
+    [
+     "matchday_competition",
+     0.16
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Minoritetsinteresser",
+   "lado": null,
+   "page": 6,
+   "section": "## KONSERNRESULTATREGNSKAP",
+   "choice": "other_expenses",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1346
+  },
+  {
+   "label": "Annen salgsinntekt",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_income",
+     0.6900000000000001
+    ],
+    [
+     "sponsorship_commercial",
+     0.28
+    ],
+    [
+     "player_sales",
+     0.02
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "UEFA",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "broadcasting",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "broadcasting",
+     0.89
+    ],
+    [
+     "competition_bonus",
+     0.11
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "TV- og mediainntekter",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Salg / utleie spillere",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "player_sales",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_sales",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1069
+  },
+  {
+   "label": "Andre inntekter",
+   "lado": "revenue",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "other_income",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Spiller- og overgangskostnader",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "wages_squad",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "wages_squad",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "lump_football_operations_expense",
+     0.27
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Driftskostnader kamper",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Reklame-, sponsor og VIP kostnader",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Av- og nedskrivning",
+   "lado": "expense",
+   "page": 23,
+   "section": "## Rosenborg Ballklub konsern",
+   "choice": "other_amortisation",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "other_amortisation",
+     0.4
+    ],
+    [
+     "depreciation",
+     0.24
+    ],
+    [
+     "player_impairment",
+     0.15
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Andre kostnader",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Drift transp.midler, baner, lokaler",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "match_organisation_expense",
+     0.08
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Bortekamper, trening, utstyr",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "match_organisation_expense",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.6
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Renteinntekt konsernselskap",
+   "lado": null,
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1457
+  },
+  {
+   "label": "Administrasjonskostnader",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 14 (forts) / #### Lukket kollektiv pensjonsordning",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Andre driftskostnader",
+   "lado": "expense",
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1012
+  },
+  {
+   "label": "Overført til/fra fri egenkapital",
+   "lado": null,
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1544
+  },
+  {
+   "label": "Overkurs",
+   "lado": null,
+   "page": 19,
+   "section": "Rosenborg Ballklub / NOTER TIL ÅRSREGNSKAPET FOR 2013 / Note 7 Investeringer i datterselskap / Rosenborg Arena AS",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "player_sales",
+     0.01
+    ],
+    [
+     "member_dues",
+     0.01
+    ]
+   ],
+   "tokens": 1365
+  },
+  {
+   "label": "Verdi pr. 31.12.13 500 aksjer, eierandel 100%",
+   "lado": null,
+   "page": 19,
+   "section": "Rosenborg Ballklub / NOTER TIL ÅRSREGNSKAPET FOR 2013 / Note 7 Investeringer i datterselskap / Rosenborg Arena AS",
+   "choice": "other_income",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "stadium_other",
+     0.16
+    ]
+   ],
+   "tokens": 1549
+  },
+  {
+   "label": "Rentekostnad konsernselskap",
+   "lado": null,
+   "page": 15,
+   "section": "# Rosenborg Ballklub",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1494
+  },
+  {
+   "label": "Nedskrivning av aksjeverdi 2012",
+   "lado": null,
+   "page": 19,
+   "section": "Rosenborg Ballklub / NOTER TIL ÅRSREGNSKAPET FOR 2013 / Note 7 Investeringer i datterselskap / Rosenborg Arena AS",
+   "choice": "other_expenses",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "player_impairment",
+     0.3
+    ],
+    [
+     "other_amortisation",
+     0.15
+    ]
+   ],
+   "tokens": 1517
+  },
+  {
+   "label": "Til gode fra andre klubber ifm spilleroverganger",
+   "lado": "revenue",
+   "page": 19,
+   "section": "Note 9 Kundefordringer og andre fordringer",
+   "choice": "player_sales",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "player_sales",
+     0.95
+    ],
+    [
+     "other_income",
+     0.05
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Fordring på Rosenborg Eiendom/Lerkendal Invest",
+   "lado": "revenue",
+   "page": 19,
+   "section": "Note 9 Kundefordringer og andre fordringer",
+   "choice": "other_income",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "other_income",
+     0.81
+    ],
+    [
+     "stadium_other",
+     0.18
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 850
+  },
+  {
+   "label": "påløpt renteinntekt",
+   "lado": "revenue",
+   "page": 19,
+   "section": "Note 9 Kundefordringer og andre fordringer",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 893
+  },
+  {
+   "label": "Andre kortsiktige fordringer",
+   "lado": "revenue",
+   "page": 19,
+   "section": "Note 9 Kundefordringer og andre fordringer",
+   "choice": "other_income",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_income",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Finansinntekter/kostnader",
+   "lado": null,
+   "page": 23,
+   "section": "## Rosenborg Ballklub konsern",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.81
+    ],
+    [
+     "other_income",
+     0.13
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1464
+  },
+  {
+   "label": "Tilgang i året",
+   "lado": null,
+   "page": 28,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 5 / #### Driftsløsøre",
+   "choice": "player_sales",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "player_sales",
+     0.43
+    ],
+    [
+     "player_amortisation",
+     0.2
+    ],
+    [
+     "other_income",
+     0.17
+    ]
+   ],
+   "tokens": 1506
+  },
+  {
+   "label": "Anskaffelseskost pr. 01.01.",
+   "lado": null,
+   "page": 28,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 5 / #### Driftsløsøre",
+   "choice": "player_amortisation",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "player_amortisation",
+     0.55
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "depreciation",
+     0.06
+    ]
+   ],
+   "tokens": 1530
+  },
+  {
+   "label": "MINORITETENS RESULTATANDEL",
+   "lado": null,
+   "page": 23,
+   "section": "## Rosenborg Ballklub konsern",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "exceptional_items",
+     0.1
+    ]
+   ],
+   "tokens": 1483
+  },
+  {
+   "label": "MAJORITETENS RESULTATANDEL",
+   "lado": null,
+   "page": 23,
+   "section": "## Rosenborg Ballklub konsern",
+   "choice": "other_income",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_income",
+     0.86
+    ],
+    [
+     "exceptional_items",
+     0.09999999999999999
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ]
+   ],
+   "tokens": 1481
+  },
+  {
+   "label": "Avgang i året",
+   "lado": null,
+   "page": 28,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 5 / #### Driftsløsøre",
+   "choice": "player_amortisation",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "player_amortisation",
+     0.56
+    ],
+    [
+     "player_impairment",
+     0.19
+    ],
+    [
+     "player_sales",
+     0.13
+    ]
+   ],
+   "tokens": 1503
+  },
+  {
+   "label": "Tilskudd spillemidler",
+   "lado": null,
+   "page": 28,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 5 / #### Driftsløsøre",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1510
+  },
+  {
+   "label": "Akk av-/nedskrivning pr. 31.12.",
+   "lado": null,
+   "page": 28,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 5 / #### Driftsløsøre",
+   "choice": "depreciation",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "depreciation",
+     0.77
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ],
+    [
+     "other_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 1557
+  },
+  {
+   "label": "Verdi pr. 31.12.",
+   "lado": null,
+   "page": 28,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 5 / #### Driftsløsøre",
+   "choice": "depreciation",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "depreciation",
+     0.41000000000000003
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "other_income",
+     0.2
+    ]
+   ],
+   "tokens": 1543
+  },
+  {
+   "label": "Årets av-/nedskrivning",
+   "lado": null,
+   "page": 28,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 5 / #### Driftsløsøre",
+   "choice": "depreciation",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "depreciation",
+     0.75
+    ],
+    [
+     "other_amortisation",
+     0.13
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 1560
+  },
+  {
+   "label": "Avskrivningsplan",
+   "lado": null,
+   "page": 28,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 5 / #### Driftsløsøre",
+   "choice": "depreciation",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "depreciation",
+     0.73
+    ],
+    [
+     "other_amortisation",
+     0.16
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 1530
+  },
+  {
+   "label": "Årets pensjonsopptjening",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 14 (forts) / #### Lukket kollektiv pensjonsordning",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "wages_squad",
+     0.15
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ]
+   ],
+   "tokens": 1080
+  },
+  {
+   "label": "Avkastning på pensjonsmidler",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 14 (forts) / #### Lukket kollektiv pensjonsordning",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "admin_general_expense",
+     0.29000000000000004
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1086
+  },
+  {
+   "label": "**Note 7** Byggelån kr 16 844 748,- i Abrahallen AS. Pant i eiendom på festet grunn, driftstilbehør og factoringspant stilt som sikkerhet for gjelden: 25",
+   "lado": null,
+   "page": 29,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013",
+   "choice": "other_expenses",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.22
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1698
+  },
+  {
+   "label": "I tillegg har Rosenborg Ballklub stillet selvskyldnerkausjon til kr 19",
+   "lado": null,
+   "page": 29,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013",
+   "choice": "other_expenses",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "other_expenses",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1516
+  },
+  {
+   "label": "Rentekostnad av pensjonsforpliktelsen",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 14 (forts) / #### Lukket kollektiv pensjonsordning",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 1065
+  },
+  {
+   "label": "Periodisert arbeidsgiveravgift før evt avvik PBO/midler",
+   "lado": "expense",
+   "page": 31,
+   "section": "# Rosenborg Ballklub konsern / ## NOTER TIL ÅRSREGNSKAPET FOR 2013 / ### Note 14 (forts) / #### Lukket kollektiv pensjonsordning",
+   "choice": "other_expenses",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_expenses",
+     0.45
+    ],
+    [
+     "wages_squad",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ]
+   ],
+   "tokens": 1111
+  }
+ ]
+}

@@ -1,0 +1,1122 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/balanco-2015.pdf",
+ "md": "Clubes/Brasil/Novorizontino/balanco-2015.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T01:51:06.296Z",
+ "ubicacion": {
+  "estado": [
+   "b1",
+   "b2",
+   "b3"
+  ],
+  "notas_ingresos": [],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b1",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos (ej. 748.828,26 C), sin indicación de miles"
+  },
+  {
+   "bloque": "b2",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos (ej. 2.871.742,85 D)"
+  },
+  {
+   "bloque": "b3",
+   "escala": "unidades",
+   "evidencia": "Importes con centavos (ej. 31.250,24 D)"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b1",
+   "linea": 15,
+   "etiqueta": "3 - RECEITAS OPERACIONAIS",
+   "actual": "748.828,26 C",
+   "anterior": null,
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 16,
+   "etiqueta": "31 - RECEITAS DA ATIVIDADE",
+   "actual": "748.828,26 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 17,
+   "etiqueta": "3101 - ORIGEM DOS RECURSOS",
+   "actual": "746.374,12 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 18,
+   "etiqueta": "310101 - RECURSOS PROPRIOS",
+   "actual": "746.374,12 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 19,
+   "etiqueta": "117 3.1.01.01.0009 - DOAÇOES RECEBIDAS",
+   "actual": "3.576,00 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 20,
+   "etiqueta": "35 3.1.01.01.0004 - LOCAÇÃO DE CADEIRA S/ASSENTOS",
+   "actual": "6.076,00 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 21,
+   "etiqueta": "33 3.1.01.01.0002 - PATROCINIO EM PLACAS",
+   "actual": "4.000,00 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 22,
+   "etiqueta": "34 3.1.01.01.0003 - PATROCINIO NO ESTÁDIO",
+   "actual": "4.385,00 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 23,
+   "etiqueta": "32 3.1.01.01.0001 - PATROCINIO NO UNIFORME",
+   "actual": "47.500,00 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 24,
+   "etiqueta": "37 3.1.01.01.0006 - RECEITAS DO BAR",
+   "actual": "2.766,00 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 25,
+   "etiqueta": "39 3.1.01.01.0008 - REPASSE DA FEDERAÇÃO",
+   "actual": "300.200,00 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 26,
+   "etiqueta": "36 3.1.01.01.0005 - VENDAS DE INGRESSOS",
+   "actual": "377.871,12 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 27,
+   "etiqueta": "3103 - RECEITAS FINANCEIRAS",
+   "actual": "2.254,14 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 28,
+   "etiqueta": "310301 - RECEITAS FINANCEIRAS",
+   "actual": "2.254,14 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 29,
+   "etiqueta": "116 3.1.03.01.0002 - DESCONTOS FINANCEIROS",
+   "actual": "2.244,27 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 30,
+   "etiqueta": "115 3.1.03.01.0001 - RENDAS DE APLIC FINANCEIRAS",
+   "actual": "9,87 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 31,
+   "etiqueta": "3104 - RECEITAS NAO OPERACIONAIS",
+   "actual": "200,00 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 32,
+   "etiqueta": "310401 - RECEITAS NAO OPERACIONAIS",
+   "actual": "200,00 C",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 33,
+   "etiqueta": "225 3.1.04.01.0001 - RECUPERACAO DE DESPESA",
+   "actual": "200,00 C",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 34,
+   "etiqueta": "4 - CUSTOS",
+   "actual": "3.475.227,91 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 35,
+   "etiqueta": "41 - RECURSOS PROPRIOS",
+   "actual": "3.475.227,91 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 36,
+   "etiqueta": "4101 - PESSOAL",
+   "actual": "3.475.227,91 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 37,
+   "etiqueta": "410101 - ORDENADOS, SALARIOS E OUTROS",
+   "actual": "3.475.227,91 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 38,
+   "etiqueta": "41 4.1.01.01.0002 - AJUDA DE CUSTO",
+   "actual": "39.380,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 39,
+   "etiqueta": "55 4.1.01.01.0016 - ALUGUEL MORADIA COM TECNICA",
+   "actual": "134.271,36 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 40,
+   "etiqueta": "184 4.1.01.01.0031 - ANUIDADE CBF E FEDER.PAULISTA",
+   "actual": "24.200,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 41,
+   "etiqueta": "207 4.1.01.01.0038 - AUXILIO EDUCACIONAL",
+   "actual": "1.350,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 42,
+   "etiqueta": "205 4.1.01.01.0036 - BONIFICACAO/GRATIFICACAO",
+   "actual": "7.213,90 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 43,
+   "etiqueta": "58 4.1.01.01.0019 - CAFE DA MANHA",
+   "actual": "60.355,90 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 44,
+   "etiqueta": "214 4.1.01.01.0039 - CONTRIBUICAO CONFEDERATIVA",
+   "actual": "815,44 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 45,
+   "etiqueta": "51 4.1.01.01.0012 - CURSOS E TREINAMENTOS",
+   "actual": "3.241,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 46,
+   "etiqueta": "44 4.1.01.01.0005 - DIREITOS DE IMAGEM",
+   "actual": "940.674,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 47,
+   "etiqueta": "206 4.1.01.01.0037 - DSR VARIAVEL",
+   "actual": "2.242,93 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 48,
+   "etiqueta": "47 4.1.01.01.0008 - FERIAS E 13° SALARIO",
+   "actual": "97.798,04 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 49,
+   "etiqueta": "46 4.1.01.01.0007 - FGTS",
+   "actual": "74.062,39 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 50,
+   "etiqueta": "204 4.1.01.01.0035 - HORAS EXTRAS",
+   "actual": "10.892,70 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 51,
+   "etiqueta": "87 4.1.01.01.0030 - I.R.R.FONTE S/ FOLHA",
+   "actual": "337,62 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 52,
+   "etiqueta": "45 4.1.01.01.0006 - INSS",
+   "actual": "39.575,05 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 53,
+   "etiqueta": "57 4.1.01.01.0018 - LANCHES",
+   "actual": "40.057,55 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 54,
+   "etiqueta": "62 4.1.01.01.0023 - MATERIAIS ESPORTIVOS",
+   "actual": "80.252,86 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 55,
+   "etiqueta": "60 4.1.01.01.0021 - MEDICAMENTOS",
+   "actual": "28.134,21 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 56,
+   "etiqueta": "195 4.1.01.01.0034 - PENSAO ALIMENTICIA",
+   "actual": "570,42 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 57,
+   "etiqueta": "186 4.1.01.01.0032 - PIS FOLHA PAGAMENTO",
+   "actual": "13.362,92 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 58,
+   "etiqueta": "42 4.1.01.01.0003 - PREMIAÇOES",
+   "actual": "112.340,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 59,
+   "etiqueta": "56 4.1.01.01.0017 - REFEIÇÕES",
+   "actual": "453.009,71 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 60,
+   "etiqueta": "48 4.1.01.01.0009 - RESCISOES E HOMOLOGAÇOES",
+   "actual": "72.669,79 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b1",
+   "linea": 61,
+   "etiqueta": "40 4.1.01.01.0001 - SALARIOS",
+   "actual": "945.141,84 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 79,
+   "etiqueta": "52 4.1.01.01.0013 - SEGURO PESSOAL",
+   "actual": "4.458,10 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 80,
+   "etiqueta": "71 4.1.01.01.0025 - SERVIÇOS DE FISIOTERAPIA",
+   "actual": "63.150,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 81,
+   "etiqueta": "70 4.1.01.01.0024 - SERVIÇOS E EXAMES MÉDICOS",
+   "actual": "95.519,56 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 82,
+   "etiqueta": "61 4.1.01.01.0022 - SUPLEMENTOS ALIMENTARES",
+   "actual": "7.746,74 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 83,
+   "etiqueta": "89 4.1.01.01.0028 - TAXA DE LIBERAÇÃO DE ATLETAS",
+   "actual": "7.850,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 84,
+   "etiqueta": "88 4.1.01.01.0027 - TAXA FED PAULISTA,FAAP,CBF/INS",
+   "actual": "114.553,88 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 85,
+   "etiqueta": "5 - DESPESAS",
+   "actual": "2.871.742,85 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 86,
+   "etiqueta": "51 - DESPESAS OPERACIONAIS",
+   "actual": "2.871.742,85 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 87,
+   "etiqueta": "5101 - RECURSOS PROPRIOS",
+   "actual": "1.418.235,55 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 88,
+   "etiqueta": "510101 - ADMINISTRATIVAS",
+   "actual": "1.418.235,55 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 89,
+   "etiqueta": "73 5.1.01.01.0008 - ASSESSORIA DE MARKETING",
+   "actual": "10.326,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 90,
+   "etiqueta": "76 5.1.01.01.0011 - ASSESSORIA ESPORTIVA",
+   "actual": "898.134,67 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 91,
+   "etiqueta": "75 5.1.01.01.0010 - ASSESSORIA JURÍDICA",
+   "actual": "64.113,27 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 92,
+   "etiqueta": "97 5.1.01.01.0020 - ASSINATURAS E ANUIDADES",
+   "actual": "602,20 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 93,
+   "etiqueta": "123 5.1.01.01.0026 - COMBUSTIVEIS E LUBRIFICANTES",
+   "actual": "68.688,16 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 94,
+   "etiqueta": "95 5.1.01.01.0018 - CORREIOS",
+   "actual": "1.716,10 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 95,
+   "etiqueta": "93 5.1.01.01.0017 - DESPESAS CARTORARIAS",
+   "actual": "366,70 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 96,
+   "etiqueta": "181 5.1.01.01.0027 - ESTADIAS",
+   "actual": "19.285,98 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 97,
+   "etiqueta": "109 5.1.01.01.0025 - FRETES, CARRETOS E TRANSPORTES",
+   "actual": "248,67 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 98,
+   "etiqueta": "72 5.1.01.01.0007 - HONORARIOS CONTABILIDADE",
+   "actual": "17.371,60 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 99,
+   "etiqueta": "192 5.1.01.01.0029 - IMPOSTOS E TAXAS",
+   "actual": "704,72 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 100,
+   "etiqueta": "198 5.1.01.01.0032 - IR RETIDO NA FONTE",
+   "actual": "5.910,50 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 101,
+   "etiqueta": "77 5.1.01.01.0012 - MANUTENÇÃO E HOSPEDAGEM SITE",
+   "actual": "2.480,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 102,
+   "etiqueta": "65 5.1.01.01.0003 - MATERIAIS DE ESCRITORIO",
+   "actual": "7.049,35 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 103,
+   "etiqueta": "64 5.1.01.01.0002 - MATERIAIS DE HIGIENE E LIMPEZA",
+   "actual": "15.807,68 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 104,
+   "etiqueta": "68 5.1.01.01.0004 - MATERIAIS DIVERSOS",
+   "actual": "74.444,99 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 105,
+   "etiqueta": "63 5.1.01.01.0001 - MATERIAS DE MANUTENÇÃO GERAL",
+   "actual": "113.613,04 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 106,
+   "etiqueta": "69 5.1.01.01.0006 - MOVEIS E UTENS. PEQ VALOR",
+   "actual": "15.544,72 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 107,
+   "etiqueta": "94 5.1.01.01.0016 - MULTAS",
+   "actual": "6.680,54 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 108,
+   "etiqueta": "194 5.1.01.01.0030 - PIS/COFINS/CSLL RETIDO",
+   "actual": "10.774,05 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 109,
+   "etiqueta": "191 5.1.01.01.0028 - PRODUTOS FARMACEUTICOS",
+   "actual": "3.806,82 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 110,
+   "etiqueta": "80 5.1.01.01.0013 - SEGURANÇA PATRIMONIAL",
+   "actual": "34.581,92 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 111,
+   "etiqueta": "96 5.1.01.01.0019 - TELEFONE",
+   "actual": "37.759,74 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 112,
+   "etiqueta": "196 5.1.01.01.0031 - VIDEO OBSERVER",
+   "actual": "8.224,13 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 113,
+   "etiqueta": "5102 - DESP DE MANUTENCAO E GERAIS",
+   "actual": "1.422.257,06 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 114,
+   "etiqueta": "510202 - DESP DE MANUTENÇAO E GERAIS,",
+   "actual": "1.422.257,06 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 115,
+   "etiqueta": "101 5.1.02.02.0013 - ALUGUEL DE ACADEMIA",
+   "actual": "500,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 116,
+   "etiqueta": "102 5.1.02.02.0014 - DESPESAS COM JOGOS",
+   "actual": "68.115,95 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 117,
+   "etiqueta": "103 5.1.02.02.0015 - DESPESAS DIVERSAS",
+   "actual": "11.761,17 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 118,
+   "etiqueta": "98 5.1.02.02.0010 - ENERGIA ELETRICA",
+   "actual": "111.284,31 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 119,
+   "etiqueta": "190 5.1.02.02.0021 - INTERNET / TV A CABO",
+   "actual": "21.866,48 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 120,
+   "etiqueta": "83 5.1.02.02.0004 - LAVANDERIA",
+   "actual": "98.400,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 121,
+   "etiqueta": "187 5.1.02.02.0018 - MANUTENCAO DE VEICULOS",
+   "actual": "7.875,35 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 122,
+   "etiqueta": "188 5.1.02.02.0019 - MANUTENCAO DO GRAMADO",
+   "actual": "561.236,30 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 123,
+   "etiqueta": "78 5.1.02.02.0002 - MANUTENÇAO GERAL",
+   "actual": "168.941,41 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 124,
+   "etiqueta": "84 5.1.02.02.0005 - PINTURA DE PLACAS",
+   "actual": "28.167,02 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b2",
+   "linea": 125,
+   "etiqueta": "79 5.1.02.02.0003 - SEGURANÇA E POLICIAMENTO JOGOS",
+   "actual": "69.379,32 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 143,
+   "etiqueta": "197 5.1.02.02.0022 - SERV.ALMOXARIFADO E ROUPARIA",
+   "actual": "6.100,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 144,
+   "etiqueta": "189 5.1.02.02.0020 - SERVICO DE DEDETIZACAO",
+   "actual": "3.360,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 145,
+   "etiqueta": "90 5.1.02.02.0007 - TAXA DE ARBITRAGEM",
+   "actual": "29.848,27 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 146,
+   "etiqueta": "91 5.1.02.02.0008 - TAXA DE VISTORIA DO ESTADIO",
+   "actual": "8.942,95 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 147,
+   "etiqueta": "85 5.1.02.02.0006 - TRANSPORTE DE JOGADORES",
+   "actual": "41.950,00 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 148,
+   "etiqueta": "92 5.1.02.02.0009 - VIAGENS E ESTADIAS",
+   "actual": "162.243,67 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 149,
+   "etiqueta": "99 5.1.02.02.0011 - ÁGUA E ESGOTO",
+   "actual": "22.284,86 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 150,
+   "etiqueta": "5104 - DESPESAS FINANCEIRAS",
+   "actual": "31.250,24 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 151,
+   "etiqueta": "510401 - DESPESAS FINANCEIRAS",
+   "actual": "31.250,24 D",
+   "anterior": null,
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 152,
+   "etiqueta": "114 5.1.04.01.0005 - DESCONTOS CONCEDIDOS",
+   "actual": "469,14 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 153,
+   "etiqueta": "110 5.1.04.01.0001 - DESPESAS E TARIFAS BANCARIAS",
+   "actual": "13.029,25 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 154,
+   "etiqueta": "112 5.1.04.01.0003 - IOF",
+   "actual": "3.650,90 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 155,
+   "etiqueta": "113 5.1.04.01.0004 - IRRF S/ RENDAS DE APLIC FINANC",
+   "actual": "2,01 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b3",
+   "linea": 156,
+   "etiqueta": "111 5.1.04.01.0002 - JUROS E MULTAS",
+   "actual": "14.098,94 D",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 15,
+  "actual": "748.828,26 C"
+ },
+ "total_gastos": null,
+ "resultado": null,
+ "dudas": [],
+ "observaciones": "Balancete/DRE analítico de una sola columna (2015), sin año anterior. Ingresos totales 3 - RECEITAS OPERACIONAIS (L15) incluyen financieros y no operacionales. Gastos en dos grupos: 4 - CUSTOS (L34) y 5 - DESPESAS (L85, incluye financieras); no hay total de gastos único ni resultado del ejercicio impreso en los bloques (se resuelve sumando). Escala unidades (reales con centavos); C = crédito, D = débito."
+}

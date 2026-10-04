@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Grecia/Panathinaikos/Panathinaikos_annual_FR_2025-06-30.md",
+ "generado": "2026-10-02T00:19:08.361Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Ποσά σε € '",
+ "caja": {
+  "lineas": [
+   923
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "El balance no muestra préstamos bancarios; solo pasivos por arrendamiento financiero (L938 no corriente, L946 corriente), excluidos por el criterio aunque podrían considerarse deuda financiera si se incluyen arrendamientos. Se toma la columna del Grupo al 30/6/2025; la escala figura como 'Ποσά σε € '' (euros en unidades)."
+}

@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/Brasil/Atletico Mineiro/demonstracoes-financeiras-saf-2024.md",
+ "generado": "2026-10-02T00:11:08.058Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de Reais)",
+ "caja": {
+  "lineas": [
+   2240
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   2241,
+   2251,
+   2247,
+   2258
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance tiene columnas Controladora y Consolidado; las líneas aplican a ambas (se sugiere usar Consolidado: empréstimos 650.395 + 291.439). Se incluyeron las operaciones de debêntures (13.548 corriente y 45.423 no corriente) como deuda financiera, aunque podrían excluirse si se considera solo préstamos bancarios."
+}

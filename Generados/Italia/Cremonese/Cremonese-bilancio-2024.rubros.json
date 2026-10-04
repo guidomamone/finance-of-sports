@@ -1,0 +1,403 @@
+{
+ "md": "Clubes/Italia/Cremonese/Cremonese-bilancio-2024.md",
+ "pdf": "Clubes/Italia/Cremonese/Cremonese-bilancio-2024.pdf",
+ "club": "cremonese",
+ "year": 2024,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T22:04:39.746Z",
+ "tieOuts": {
+  "cierran": 49,
+  "noCierran": 59
+ },
+ "warnings": [
+  "5 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "54 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "14 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 36,
+  "notasUsadas": [
+   "69"
+  ]
+ },
+ "ladoConocido": 19,
+ "rubros": [
+  {
+   "label": "Decremento/(Incremento) dei crediti verso clienti",
+   "lado": null,
+   "page": 5,
+   "section": "derivati che non comportano movimentazione monetarie / Altre rettifiche in aumento/(in diminuzione) per elementi non monetari / contropartita nel capitale circolante netto / Variazioni del capitale circolante netto / Decremento/(Incremento) delle rimanenze",
+   "values": [
+    2170.861
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Incremento/(Decremento) dei debiti verso fornitori",
+   "lado": null,
+   "page": 5,
+   "section": "derivati che non comportano movimentazione monetarie / Altre rettifiche in aumento/(in diminuzione) per elementi non monetari / contropartita nel capitale circolante netto / Variazioni del capitale circolante netto / Decremento/(Incremento) delle rimanenze",
+   "values": [
+    -133.788
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "FIDEIUSSIONI",
+   "lado": null,
+   "page": 30,
+   "section": "BILANCIO DI ESERCIZIO AL 30 GIUGNO 2024 / U.S. CREMONESE S.P.A.",
+   "values": [
+    291.904
+   ],
+   "origen": "nota 69 (ancla 26)",
+   "ancla": "Decremento/(Incremento) dei ratei e risconti attivi"
+  },
+  {
+   "label": "Decremento/(Incremento) dei ratei e risconti attivi",
+   "lado": null,
+   "page": 5,
+   "section": "derivati che non comportano movimentazione monetarie / Altre rettifiche in aumento/(in diminuzione) per elementi non monetari / contropartita nel capitale circolante netto / Variazioni del capitale circolante netto / Decremento/(Incremento) delle rimanenze",
+   "values": [
+    -778.137
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "ASSICURAZIONI",
+   "lado": null,
+   "page": 30,
+   "section": "BILANCIO DI ESERCIZIO AL 30 GIUGNO 2024 / U.S. CREMONESE S.P.A.",
+   "values": [
+    9.975
+   ],
+   "origen": "nota 69 (ancla 26)",
+   "ancla": "Decremento/(Incremento) dei ratei e risconti attivi"
+  },
+  {
+   "label": "MATERIALE SPORTIVO/TECNICO",
+   "lado": null,
+   "page": 30,
+   "section": "BILANCIO DI ESERCIZIO AL 30 GIUGNO 2024 / U.S. CREMONESE S.P.A.",
+   "values": [
+    436.258
+   ],
+   "origen": "nota 69 (ancla 26)",
+   "ancla": "Decremento/(Incremento) dei ratei e risconti attivi"
+  },
+  {
+   "label": "COSTO ANTICIPATO RITIRO ESTIVO",
+   "lado": "expense",
+   "page": 30,
+   "section": "BILANCIO DI ESERCIZIO AL 30 GIUGNO 2024 / U.S. CREMONESE S.P.A.",
+   "values": [
+    40
+   ],
+   "origen": "nota 69 (ancla 26)",
+   "ancla": "Decremento/(Incremento) dei ratei e risconti attivi"
+  },
+  {
+   "label": "Incremento/(Decremento) dei ratei e risconti passivi",
+   "lado": null,
+   "page": 5,
+   "section": "derivati che non comportano movimentazione monetarie / Altre rettifiche in aumento/(in diminuzione) per elementi non monetari / contropartita nel capitale circolante netto / Variazioni del capitale circolante netto / Decremento/(Incremento) delle rimanenze",
+   "values": [
+    -4030.15
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Altri decrementi/(Altri Incrementi) del capitale circolante netto",
+   "lado": null,
+   "page": 5,
+   "section": "derivati che non comportano movimentazione monetarie / Altre rettifiche in aumento/(in diminuzione) per elementi non monetari / contropartita nel capitale circolante netto / Variazioni del capitale circolante netto / Decremento/(Incremento) delle rimanenze",
+   "values": [
+    -903.634
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "3) Flusso finanziario dopo le variazioni del capitale circolante netto",
+   "lado": null,
+   "page": 5,
+   "section": "derivati che non comportano movimentazione monetarie / Altre rettifiche in aumento/(in diminuzione) per elementi non monetari / contropartita nel capitale circolante netto / Variazioni del capitale circolante netto / Decremento/(Incremento) delle rimanenze",
+   "values": [
+    11476.75
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "a) salari e stipendi",
+   "lado": "expense",
+   "page": 4,
+   "section": "9) per il personale",
+   "values": [
+    26.118675
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "b) oneri sociali",
+   "lado": "expense",
+   "page": 4,
+   "section": "9) per il personale",
+   "values": [
+    2.52916
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "c) trattamento di fine rapporto",
+   "lado": "expense",
+   "page": 4,
+   "section": "9) per il personale",
+   "values": [
+    0.461971
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "e) altri costi",
+   "lado": "expense",
+   "page": 4,
+   "section": "9) per il personale",
+   "values": [
+    0.0241
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "altri",
+   "lado": "expense",
+   "page": 5,
+   "section": "17) interessi e altri oneri finanziari",
+   "values": [
+    79.062
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "17-bis) utili e perdite su cambi",
+   "lado": null,
+   "page": 5,
+   "section": "17) interessi e altri oneri finanziari",
+   "values": [
+    -2.2
+   ],
+   "origen": "estado 21"
+  },
+  {
+   "label": "a) Imposte correnti",
+   "lado": "expense",
+   "page": 13,
+   "section": "20) Imposte sul reddito dell'esercizio:",
+   "values": [
+    1.547347
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "c) Imposte anticipate",
+   "lado": "expense",
+   "page": 13,
+   "section": "20) Imposte sul reddito dell'esercizio:",
+   "values": [
+    0.076756
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "anticipate",
+   "lado": null,
+   "page": 13,
+   "section": "20) Imposte sul reddito dell'esercizio:",
+   "values": [
+    0.007347
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "contributi in conto esercizio",
+   "lado": "revenue",
+   "page": 4,
+   "section": "Differenza da arrotondamento all'unità di Euro                                    (1) / 30/06/2024     30/06/2023 / Conto economico / A) Valore della produzione / 5) altri ricavi e proventi",
+   "values": [
+    13.111905
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "altri",
+   "lado": "revenue",
+   "page": 4,
+   "section": "Differenza da arrotondamento all'unità di Euro                                    (1) / 30/06/2024     30/06/2023 / Conto economico / A) Valore della produzione / 5) altri ricavi e proventi",
+   "values": [
+    42.840695
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "14) oneri diversi di gestione",
+   "lado": "expense",
+   "page": 5,
+   "section": "disponibilità liquide",
+   "values": [
+    3042.981
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "Differenza tra valore e costi della produzione (A - B)",
+   "lado": "expense",
+   "page": 5,
+   "section": "disponibilità liquide",
+   "values": [
+    3597.515
+   ],
+   "origen": "estado 19"
+  },
+  {
+   "label": "imposte correnti",
+   "lado": "expense",
+   "page": 5,
+   "section": "20) Imposte sul reddito dell'esercizio, correnti, differite e anticipate",
+   "values": [
+    1547.347
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "imposte differite e anticipate",
+   "lado": "expense",
+   "page": 5,
+   "section": "20) Imposte sul reddito dell'esercizio, correnti, differite e anticipate",
+   "values": [
+    76.756
+   ],
+   "origen": "estado 22"
+  },
+  {
+   "label": "6) per materie prime, sussidiarie, di consumo e di merci",
+   "lado": null,
+   "page": 4,
+   "section": "B) Costi della produzione",
+   "values": [
+    0.547528
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "7) per servizi",
+   "lado": null,
+   "page": 4,
+   "section": "B) Costi della produzione",
+   "values": [
+    7.902355
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "8) per godimento di beni di terzi",
+   "lado": null,
+   "page": 4,
+   "section": "B) Costi della produzione",
+   "values": [
+    0.632628
+   ],
+   "origen": "estado 15"
+  },
+  {
+   "label": "Accantonamenti ai fondi",
+   "lado": null,
+   "page": 5,
+   "section": "dividendi e plus/minusvalenze da cessione / Rettifiche per elementi non monetari che non hanno avuto / contropartita nel capitale circolante netto",
+   "values": [
+    116.484
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Ammortamenti delle immobilizzazioni",
+   "lado": null,
+   "page": 5,
+   "section": "dividendi e plus/minusvalenze da cessione / Rettifiche per elementi non monetari che non hanno avuto / contropartita nel capitale circolante netto",
+   "values": [
+    11993.168
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "Svalutazioni per perdite durevoli di valore",
+   "lado": null,
+   "page": 5,
+   "section": "dividendi e plus/minusvalenze da cessione / Rettifiche per elementi non monetari che non hanno avuto / contropartita nel capitale circolante netto",
+   "values": [
+    832.573
+   ],
+   "origen": "estado 25"
+  },
+  {
+   "label": "a) ricavi da gare",
+   "lado": "revenue",
+   "page": 11,
+   "section": "U.S. CREMONESE S.P.A. / CONTO ECONOMICO AL 30.06.2024 / A) VALORE DELLA PRODUZIONE",
+   "values": [
+    1027.41
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "b) abbonamenti",
+   "lado": "revenue",
+   "page": 11,
+   "section": "U.S. CREMONESE S.P.A. / CONTO ECONOMICO AL 30.06.2024 / A) VALORE DELLA PRODUZIONE",
+   "values": [
+    698.544
+   ],
+   "origen": "estado 46"
+  },
+  {
+   "label": "e) proventi da cessione diritti audiovisivi",
+   "lado": "revenue",
+   "page": 11,
+   "section": "- altri contributi in conto esercizio                                          1.905 / 32.56              45.036 / 3.59               3.922 / 20                  228 / 2.92              33.218",
+   "values": [
+    7.362
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "f) ricavi da cessione temporanea prestazioni calciatori",
+   "lado": "revenue",
+   "page": 11,
+   "section": "- altri contributi in conto esercizio                                          1.905 / 32.56              45.036 / 3.59               3.922 / 20                  228 / 2.92              33.218",
+   "values": [
+    708.25
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "g) plusvalenze da cessione diritti pluriennali calciatori",
+   "lado": null,
+   "page": 11,
+   "section": "- altri contributi in conto esercizio                                          1.905 / 32.56              45.036 / 3.59               3.922 / 20                  228 / 2.92              33.218",
+   "values": [
+    1396.012
+   ],
+   "origen": "estado 47"
+  },
+  {
+   "label": "d) altri oneri finanziari",
+   "lado": "expense",
+   "page": 13,
+   "section": "C) PROVENTI E ONERI FINANZIARI",
+   "values": [
+    -0.079062
+   ],
+   "origen": "estado 53"
+  }
+ ]
+}

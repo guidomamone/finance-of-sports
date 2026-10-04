@@ -1,0 +1,434 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2023.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-02T02:34:16.635Z",
+ "intentoNotasComoEstado": true,
+ "estadoDesdeNotas": true,
+ "bloques": {
+  "b1": {
+   "pagina": 8,
+   "lineas": [
+    295,
+    302
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 13,
+   "lineas": [
+    508,
+    513
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 13,
+   "lineas": [
+    519,
+    523
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 13,
+   "lineas": [
+    533,
+    542
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 14,
+   "lineas": [
+    558,
+    562
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 14,
+   "lineas": [
+    568,
+    582
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 14,
+   "lineas": [
+    588,
+    594
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 14,
+   "lineas": [
+    598,
+    604
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 15,
+   "lineas": [
+    624,
+    636
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 15,
+   "lineas": [
+    640,
+    653
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 15,
+   "lineas": [
+    667,
+    671
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 16,
+   "lineas": [
+    687,
+    690
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 16,
+   "lineas": [
+    698,
+    702
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 16,
+   "lineas": [
+    706,
+    713
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 16,
+   "lineas": [
+    717,
+    724
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 17,
+   "lineas": [
+    738,
+    751
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 18,
+   "lineas": [
+    799,
+    803
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 19,
+   "lineas": [
+    819,
+    822
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 19,
+   "lineas": [
+    830,
+    834
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 19,
+   "lineas": [
+    840,
+    854
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 20,
+   "lineas": [
+    870,
+    879
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 20,
+   "lineas": [
+    887,
+    891
+   ],
+   "tipo": "tabla"
+  },
+  "b23": {
+   "pagina": 20,
+   "lineas": [
+    895,
+    899
+   ],
+   "tipo": "tabla"
+  },
+  "b24": {
+   "pagina": 20,
+   "lineas": [
+    907,
+    912
+   ],
+   "tipo": "tabla"
+  },
+  "b25": {
+   "pagina": 21,
+   "lineas": [
+    928,
+    931
+   ],
+   "tipo": "tabla"
+  },
+  "b26": {
+   "pagina": 21,
+   "lineas": [
+    937,
+    963
+   ],
+   "tipo": "tabla"
+  },
+  "b27": {
+   "pagina": 21,
+   "lineas": [
+    967,
+    971
+   ],
+   "tipo": "tabla"
+  },
+  "b28": {
+   "pagina": 22,
+   "lineas": [
+    989,
+    993
+   ],
+   "tipo": "tabla"
+  },
+  "b29": {
+   "pagina": 22,
+   "lineas": [
+    997,
+    1001
+   ],
+   "tipo": "tabla"
+  },
+  "b30": {
+   "pagina": 22,
+   "lineas": [
+    1007,
+    1013
+   ],
+   "tipo": "tabla"
+  },
+  "b31": {
+   "pagina": 23,
+   "lineas": [
+    1047,
+    1054
+   ],
+   "tipo": "tabla"
+  },
+  "b32": {
+   "pagina": 23,
+   "lineas": [
+    1060,
+    1064
+   ],
+   "tipo": "tabla"
+  },
+  "b33": {
+   "pagina": 23,
+   "lineas": [
+    1070,
+    1078
+   ],
+   "tipo": "tabla"
+  },
+  "b34": {
+   "pagina": 24,
+   "lineas": [
+    1094,
+    1100
+   ],
+   "tipo": "tabla"
+  },
+  "b35": {
+   "pagina": 24,
+   "lineas": [
+    1106,
+    1113
+   ],
+   "tipo": "tabla"
+  },
+  "b36": {
+   "pagina": 24,
+   "lineas": [
+    1117,
+    1129
+   ],
+   "tipo": "tabla"
+  },
+  "b37": {
+   "pagina": 25,
+   "lineas": [
+    1145,
+    1149
+   ],
+   "tipo": "tabla"
+  },
+  "b38": {
+   "pagina": 25,
+   "lineas": [
+    1155,
+    1158
+   ],
+   "tipo": "tabla"
+  },
+  "b39": {
+   "pagina": 25,
+   "lineas": [
+    1166,
+    1189
+   ],
+   "tipo": "tabla"
+  },
+  "b40": {
+   "pagina": 26,
+   "lineas": [
+    1203,
+    1251
+   ],
+   "tipo": "tabla"
+  },
+  "b41": {
+   "pagina": 27,
+   "lineas": [
+    1267,
+    1317
+   ],
+   "tipo": "tabla"
+  },
+  "b42": {
+   "pagina": 28,
+   "lineas": [
+    1331,
+    1339
+   ],
+   "tipo": "tabla"
+  },
+  "b43": {
+   "pagina": 28,
+   "lineas": [
+    1345,
+    1352
+   ],
+   "tipo": "tabla"
+  },
+  "b44": {
+   "pagina": 28,
+   "lineas": [
+    1362,
+    1372
+   ],
+   "tipo": "tabla"
+  },
+  "b45": {
+   "pagina": 29,
+   "lineas": [
+    1396,
+    1406
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b35",
+  "b38",
+  "b39",
+  "b40",
+  "b41",
+  "b42",
+  "b43",
+  "b44",
+  "b45",
+  "b15",
+  "b16"
+ ],
+ "notas_ingresos": [
+  "b36",
+  "b37"
+ ],
+ "notas_gastos": [],
+ "escala": "no se sabe",
+ "escala_evidencia": "Las notas dicen 'Expresados en pesos colombianos', pero importes como 39.687 o 23.391 sugieren que podrían estar en miles de pesos.",
+ "moneda": "COP",
+ "columna_ejercicio": "2.023",
+ "columna_anterior": "2.022",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Los importes de las notas están en miles de pesos aunque el título diga 'Expresados en pesos colombianos'?",
+   "propuesta": "sí",
+   "tema": "escala",
+   "renglon": "",
+   "texto": "Las notas dicen 'Expresados en pesos colombianos', pero importes como 'Asesoría Técnica 39.687' parecen chicos para pesos.",
+   "bloques": [
+    "b40",
+    "b16"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se carga la utilidad contable antes de impuesto de la conciliación fiscal (b15) como resultado antes de impuestos del ejercicio 2023?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Utilidad contable antes de impuesto",
+   "texto": "No hay estado de resultados; el único resultado impreso es el de la conciliación fiscal, que trae solo la columna 2023.",
+   "bloques": [
+    "b15",
+    "b16"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿El cuadro de la nota 25 'Costos financieros' (b45) incluye ingresos por diferencia en cambio que deben cargarse como ingresos financieros y no como costos?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Ingresos por diferencia en cambio",
+   "texto": "La nota 25 mezcla ingresos y costos financieros en el mismo cuadro.",
+   "bloques": [
+    "b45"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "El documento no trae estado de resultados, solo las notas. Se arma con las notas cuyo total es un renglón del estado: 19 ingresos de actividades ordinarias (b35), 20 costo de ventas (b38), 21 gastos de ventas (b39, que continúa en b40), 22 gastos administrativos (b41, que continúa en b42), 23 otros gastos (b43), 24 otros ingresos (b44) y 25 costos financieros (b45). El resultado se toma de la conciliación fiscal (b15 y b16), que trae la utilidad antes de impuesto y el impuesto. b13 trae el gasto por impuesto a las ganancias de 2023. Los desgloses de patrocinios (b36) y de comercio al por mayor y menor (b37) abren renglones de la nota 19. El perímetro es individual."
+}

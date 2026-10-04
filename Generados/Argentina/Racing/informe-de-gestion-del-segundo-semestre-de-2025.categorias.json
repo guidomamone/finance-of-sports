@@ -1,0 +1,88 @@
+{
+ "md": "Clubes/Argentina/Racing/informe-de-gestion-del-segundo-semestre-de-2025.md",
+ "club": "racing",
+ "year": 2025,
+ "generatedAt": "2026-09-30T15:17:30.894Z",
+ "modelo": "claude-opus-5-5",
+ "costUsd": 0.027588,
+ "rubros": [
+  {
+   "label": "o En 2024, por cada peso que ingresó al área se gastaron",
+   "lado": null,
+   "section": "estructura. / •   El mayor control sobre gastos, imputaciones y cajas chicas permitió no solo / gastar menos, sino también saber en qué se gastaba. / •   Mejora sustancial de la relación entre ingresos y egresos del área, comparando / mismo período entre 2024 y 2025",
+   "page": 59,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.55,
+   "escalon": 2,
+   "categoria": "no_es_rubro",
+   "confianza": 0.9,
+   "motivo": "Frase narrativa de ratio de gasto por peso ingresado, no es línea contable"
+  },
+  {
+   "label": "o En 2025, por cada peso que ingresó al área se gastaron",
+   "lado": null,
+   "section": "estructura. / •   El mayor control sobre gastos, imputaciones y cajas chicas permitió no solo / gastar menos, sino también saber en qué se gastaba. / •   Mejora sustancial de la relación entre ingresos y egresos del área, comparando / mismo período entre 2024 y 2025",
+   "page": 59,
+   "pendiente": true,
+   "jev": "other_expenses",
+   "jevConf": 0.6,
+   "escalon": 2,
+   "categoria": "no_es_rubro",
+   "confianza": 0.9,
+   "motivo": "Frase narrativa de ratio de gasto por peso ingresado, no es línea contable"
+  },
+  {
+   "label": "2024 $ 215.000.000 $",
+   "lado": null,
+   "section": "PERÍODO            INGRESOS        EGRESOS             RESULTADO",
+   "page": 59,
+   "pendiente": true,
+   "jev": "other_income",
+   "jevConf": 0.6,
+   "escalon": 2,
+   "categoria": "no_es_rubro",
+   "confianza": 0.85,
+   "motivo": "Fila de tabla resumen por período de un área, no rubro del estado"
+  },
+  {
+   "label": "2025 $",
+   "lado": null,
+   "section": "PERÍODO            INGRESOS        EGRESOS             RESULTADO",
+   "page": 59,
+   "pendiente": true,
+   "jev": "other_income",
+   "jevConf": 0.58,
+   "escalon": 2,
+   "categoria": "no_es_rubro",
+   "confianza": 0.85,
+   "motivo": "Fila de tabla resumen por período de un área, no rubro del estado"
+  },
+  {
+   "label": "• Socios atendidos:",
+   "lado": null,
+   "section": "• Autogestión y servicios asociados / • Gestión de abonos, accesos y capacidad del Estadio / • Soporte tecnológico y mejoras operativas / 1. Acciones realizadas y resultados obtenidos / 1.1. Atención al socio y dispositivos presenciales",
+   "page": 61,
+   "pendiente": true,
+   "jev": "member_dues",
+   "jevConf": 0.38,
+   "escalon": 2,
+   "categoria": "no_es_rubro",
+   "confianza": 0.9,
+   "motivo": "Métrica operativa de atención al socio, no monto contable"
+  },
+  {
+   "label": "• Transacciones presenciales:",
+   "lado": null,
+   "section": "• Autogestión y servicios asociados / • Gestión de abonos, accesos y capacidad del Estadio / • Soporte tecnológico y mejoras operativas / 1. Acciones realizadas y resultados obtenidos / 1.1. Atención al socio y dispositivos presenciales",
+   "page": 61,
+   "pendiente": true,
+   "jev": "season_tickets",
+   "jevConf": 0.45,
+   "escalon": 2,
+   "categoria": "no_es_rubro",
+   "confianza": 0.9,
+   "motivo": "Conteo de transacciones presenciales, no es ingreso ni gasto"
+  }
+ ]
+}

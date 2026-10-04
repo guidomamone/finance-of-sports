@@ -1,0 +1,96 @@
+{
+  "club": "hamburgersv-de",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/Hamburger SV/ev-bilanz-2021-22.md",
+  "generatedAt": "2026-09-30T21:50:19.568Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 23,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "AKTIVA PASSIVA / EUR EUR EUR EUR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "I. Immaterielle Vermögensgegenstände I. Vereinskapital",
+          "values": [
+            "41.945.161,46",
+            "41.930.459,65"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "entgeltlich erworbene Software",
+          "values": [
+            "4.960,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Il. Rücklagen",
+          "values": [
+            "570.000,00",
+            "570.000,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 1,
+      "section": "Il. Sachanlagen",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. Grundstücke, grundstücksgleiche Rechte und Bauten Ill. Bilanzgewinn",
+          "values": [
+            "6.926,43",
+            "14.701,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "einschließlich der Bauten auf fremden Grundstücken",
+          "values": [
+            "13.276.747,40",
+            "13.587.313,40",
+            "42.522.087,89",
+            "42.515.161,46"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "400.639,15",
+            "283.181,95"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "de",
+    "query": "Hamburger SV",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

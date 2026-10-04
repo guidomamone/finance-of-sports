@@ -1,0 +1,521 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2018.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-02T19:49:41.289Z",
+ "ubicacion": {
+  "estado": [
+   "b19",
+   "b21",
+   "b22",
+   "b23",
+   "b24",
+   "b25",
+   "b27",
+   "b17"
+  ],
+  "notas_ingresos": [
+   "b20"
+  ],
+  "notas_gastos": []
+ },
+ "escalas": [
+  {
+   "bloque": "b19",
+   "escala": "miles",
+   "evidencia": "No impreso en el bloque; se asume igual a L660 '(Valores expresados en miles de pesos Colombianos)'"
+  },
+  {
+   "bloque": "b21",
+   "escala": "miles",
+   "evidencia": "Asumido por L660"
+  },
+  {
+   "bloque": "b22",
+   "escala": "miles",
+   "evidencia": "Asumido por L660"
+  },
+  {
+   "bloque": "b23",
+   "escala": "miles",
+   "evidencia": "L660: (Valores expresados en miles de pesos Colombianos)"
+  },
+  {
+   "bloque": "b24",
+   "escala": "miles",
+   "evidencia": "L710: (Valores expresados en miles de pesos Colombianos)"
+  },
+  {
+   "bloque": "b25",
+   "escala": "miles",
+   "evidencia": "Asumido por L710"
+  },
+  {
+   "bloque": "b27",
+   "escala": "miles",
+   "evidencia": "Asumido por L710"
+  },
+  {
+   "bloque": "b17",
+   "escala": "miles",
+   "evidencia": "Asumido por L660"
+  },
+  {
+   "bloque": "b20",
+   "escala": "miles",
+   "evidencia": "Asumido por L660"
+  }
+ ],
+ "filas": [
+  {
+   "bloque": "b19",
+   "linea": 581,
+   "etiqueta": "Total Ingresos actividades ordinarias",
+   "actual": "6,420,964",
+   "anterior": "5,319,891",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b19",
+   "linea": 575,
+   "etiqueta": "Actividades Deportivas",
+   "actual": "5,867,804",
+   "anterior": "4,220,658",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Total Ingresos actividades ordinarias"
+  },
+  {
+   "bloque": "b19",
+   "linea": 576,
+   "etiqueta": "Otros Ingresos",
+   "actual": "1,004",
+   "anterior": "1,027,450",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Total Ingresos actividades ordinarias"
+  },
+  {
+   "bloque": "b19",
+   "linea": 577,
+   "etiqueta": "Venta de Productos",
+   "actual": "535,273",
+   "anterior": "70,183",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Total Ingresos actividades ordinarias"
+  },
+  {
+   "bloque": "b19",
+   "linea": 578,
+   "etiqueta": "Servicio de Evaluación",
+   "actual": "6,029",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Total Ingresos actividades ordinarias"
+  },
+  {
+   "bloque": "b19",
+   "linea": 579,
+   "etiqueta": "Venta Boletería",
+   "actual": "10,930",
+   "anterior": "1,600",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Total Ingresos actividades ordinarias"
+  },
+  {
+   "bloque": "b19",
+   "linea": 580,
+   "etiqueta": "Devoluciones en Ventas",
+   "actual": "(76)",
+   "anterior": "-",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Total Ingresos actividades ordinarias"
+  },
+  {
+   "bloque": "b20",
+   "linea": 585,
+   "etiqueta": "Ingresos Venta Derechos Deportivos",
+   "actual": "4,498,891",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Actividades Deportivas"
+  },
+  {
+   "bloque": "b20",
+   "linea": 586,
+   "etiqueta": "Ingresos Dimayor",
+   "actual": "1,368,916",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Actividades Deportivas"
+  },
+  {
+   "bloque": "b21",
+   "linea": 600,
+   "etiqueta": "Total Costo de Ventas",
+   "actual": "625,557",
+   "anterior": "177,278",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b21",
+   "linea": 598,
+   "etiqueta": "Costos de Ventas",
+   "actual": "459,648",
+   "anterior": "127,783",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Costo de Ventas"
+  },
+  {
+   "bloque": "b21",
+   "linea": 599,
+   "etiqueta": "Otros Costos",
+   "actual": "165,909",
+   "anterior": "49,495",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Costo de Ventas"
+  },
+  {
+   "bloque": "b24",
+   "linea": 734,
+   "etiqueta": "Total Gastos de Operación",
+   "actual": "5,820,173",
+   "anterior": "3,458,567",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b22",
+   "linea": 619,
+   "etiqueta": "Nomina",
+   "actual": "1,412,182",
+   "anterior": "1,691,790",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Gastos de Operación"
+  },
+  {
+   "bloque": "b22",
+   "linea": 639,
+   "etiqueta": "Honorarios",
+   "actual": "444,510",
+   "anterior": "408,234",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Gastos de Operación"
+  },
+  {
+   "bloque": "b22",
+   "linea": 644,
+   "etiqueta": "Impuestos",
+   "actual": "113,541",
+   "anterior": "25,509",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Gastos de Operación"
+  },
+  {
+   "bloque": "b23",
+   "linea": 662,
+   "etiqueta": "Arrendamientos",
+   "actual": "1,165,165",
+   "anterior": "132,566",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Gastos de Operación"
+  },
+  {
+   "bloque": "b23",
+   "linea": 667,
+   "etiqueta": "Afiliaciones y Sostenimiento",
+   "actual": "500",
+   "anterior": "3,892",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Gastos de Operación"
+  },
+  {
+   "bloque": "b23",
+   "linea": 670,
+   "etiqueta": "Seguros",
+   "actual": "5,493",
+   "anterior": "22,793",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Gastos de Operación"
+  },
+  {
+   "bloque": "b23",
+   "linea": 676,
+   "etiqueta": "Servicios",
+   "actual": "1,338,331",
+   "anterior": "177,007",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Gastos de Operación"
+  },
+  {
+   "bloque": "b23",
+   "linea": 692,
+   "etiqueta": "Legales",
+   "actual": "152,810",
+   "anterior": "7,869",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Gastos de Operación"
+  },
+  {
+   "bloque": "b23",
+   "linea": 696,
+   "etiqueta": "Mantenimiento",
+   "actual": "101,126",
+   "anterior": "58,263",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Gastos de Operación"
+  },
+  {
+   "bloque": "b24",
+   "linea": 712,
+   "etiqueta": "Viajes",
+   "actual": "79,441",
+   "anterior": "42,746",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Gastos de Operación"
+  },
+  {
+   "bloque": "b24",
+   "linea": 718,
+   "etiqueta": "Depreciaciones y Amortizaciones",
+   "actual": "169,397",
+   "anterior": "143,299",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Gastos de Operación"
+  },
+  {
+   "bloque": "b24",
+   "linea": 724,
+   "etiqueta": "Otros",
+   "actual": "837,677",
+   "anterior": "744,599",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Gastos de Operación"
+  },
+  {
+   "bloque": "b25",
+   "linea": 750,
+   "etiqueta": "Total Otros Gastos",
+   "actual": "469,789",
+   "anterior": "41,779",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b25",
+   "linea": 743,
+   "etiqueta": "Impuestos Asumidos",
+   "actual": "757",
+   "anterior": "(1,468)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Otros Gastos"
+  },
+  {
+   "bloque": "b25",
+   "linea": 744,
+   "etiqueta": "Gastos Ejercicios Anteriores",
+   "actual": "34,769",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Otros Gastos"
+  },
+  {
+   "bloque": "b25",
+   "linea": 745,
+   "etiqueta": "Multas, Sanciones y L",
+   "actual": "57,460",
+   "anterior": "36,151",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Otros Gastos"
+  },
+  {
+   "bloque": "b25",
+   "linea": 746,
+   "etiqueta": "Seg Social Asumida",
+   "actual": "-",
+   "anterior": "4,658",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Otros Gastos"
+  },
+  {
+   "bloque": "b25",
+   "linea": 747,
+   "etiqueta": "Otros",
+   "actual": "376,803",
+   "anterior": "1",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Otros Gastos"
+  },
+  {
+   "bloque": "b25",
+   "linea": 748,
+   "etiqueta": "Financieros",
+   "actual": "-",
+   "anterior": "1,615",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Otros Gastos"
+  },
+  {
+   "bloque": "b25",
+   "linea": 749,
+   "etiqueta": "Gastos Extraordinario",
+   "actual": "-",
+   "anterior": "823",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Total Otros Gastos"
+  },
+  {
+   "bloque": "b27",
+   "linea": 780,
+   "etiqueta": "Total Otros Ingresos",
+   "actual": "103,918",
+   "anterior": "3,582",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "bloque": "b27",
+   "linea": 776,
+   "etiqueta": "Gastos Bancarios",
+   "actual": "31,728",
+   "anterior": "389",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Total Otros Ingresos"
+  },
+  {
+   "bloque": "b27",
+   "linea": 777,
+   "etiqueta": "Comisiones",
+   "actual": "12,692",
+   "anterior": "1,944",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Total Otros Ingresos"
+  },
+  {
+   "bloque": "b27",
+   "linea": 778,
+   "etiqueta": "Intereses",
+   "actual": "266",
+   "anterior": "1,249",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Total Otros Ingresos"
+  },
+  {
+   "bloque": "b27",
+   "linea": 779,
+   "etiqueta": "Diferencial Cambiario",
+   "actual": "59,233",
+   "anterior": null,
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Total Otros Ingresos"
+  },
+  {
+   "bloque": "b17",
+   "linea": 542,
+   "etiqueta": "Resultado Año 2018",
+   "actual": "(639,077)",
+   "anterior": null,
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  }
+ ],
+ "total_ingresos": {
+  "linea": 581,
+  "actual": "6,420,964"
+ },
+ "total_gastos": null,
+ "resultado": {
+  "linea": 542,
+  "actual": "(639,077)",
+  "anterior": null
+ },
+ "dudas": [
+  {
+   "pregunta": "¿Se carga el total de b27 'Total Otros Ingresos' (L780, 103,918) como gasto financiero, pese a su rótulo?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Total Otros Ingresos",
+   "texto": "La nota dice 'gastos financieros' (L772) pero el total se rotula 'Total Otros Ingresos' (L780).",
+   "bloques": [
+    "b27"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se toma 'Resultado Año 2018' (L542, (639,077)) como resultado del ejercicio 2018, sin valor comparativo 2017?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Resultado Año 2018",
+   "texto": "Sale de un cuadro de resultados acumulados (b17) con total rotulado 'Total Pasivos por Impuestos' (L543); el 2017 sería 1,347,094 de L541 pero en otra fila.",
+   "bloques": [
+    "b17"
+   ],
+   "afecta_carga": true
+  },
+  {
+   "pregunta": "¿Se dejan afuera los subrenglones de las agrupaciones de gastos de operación (L620-L733), cargando solo los subtotales en negrita?",
+   "propuesta": "sí",
+   "tema": "otro",
+   "renglon": "Total Gastos de Operación",
+   "texto": "Son detalle de subtotales ya cargados; además Impuestos (L644) no cuadra con su detalle y la tabla Nomina tampoco cuadra.",
+   "bloques": [
+    "b22",
+    "b23",
+    "b24"
+   ],
+   "afecta_carga": false
+  },
+  {
+   "pregunta": "¿Se dejan afuera las filas de 'DETALLE DE INGRESOS' L587-L590 que repiten renglones de b19?",
+   "propuesta": "sí",
+   "tema": "cuadro-duplicado",
+   "renglon": "Total Ingresos actividades ordinarias",
+   "texto": "Venta de productos (535,197 vs 535,273 neto de devoluciones), taquilla, evaluación y publicidad ya están en b19; solo se cargó el desglose de Actividades Deportivas (L585-L586).",
+   "bloques": [
+    "b20",
+    "b19"
+   ],
+   "afecta_carga": false
+  }
+ ],
+ "observaciones": "Sin estado de resultados; se arma con notas. Escala solo impresa en L660 y L710, se asume miles para todos. No hay total general de gastos ni nota de impuesto."
+}

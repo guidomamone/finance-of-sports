@@ -1,0 +1,455 @@
+{
+ "md": "Clubes/Chile/Palestino/estados-financieros-2018.md",
+ "pdf": "Clubes/Chile/Palestino/estados-financieros-2018.pdf",
+ "club": "palestino",
+ "year": 2018,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:56:41.095Z",
+ "tieOuts": {
+  "cierran": 25,
+  "noCierran": 18
+ },
+ "warnings": [
+  "18 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 43,
+  "notasUsadas": []
+ },
+ "ladoConocido": 21,
+ "rubros": [
+  {
+   "label": "JOSE LUIS MUÑOZ Universidad Católica Préstamo de Pase",
+   "lado": null,
+   "page": 36,
+   "section": "CLUB DEPORTIVO PALESTINO SADP",
+   "values": [
+    44.279
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "ESTEBAN CARVAJAL Iquique Venta de Pase",
+   "lado": null,
+   "page": 36,
+   "section": "CLUB DEPORTIVO PALESTINO SADP",
+   "values": [
+    16.761
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "ROBERTO CERECEDA O\"Higgins Préstamo de Pase",
+   "lado": null,
+   "page": 36,
+   "section": "CLUB DEPORTIVO PALESTINO SADP",
+   "values": [
+    18
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "CESAR CORTES Audax Italiano Préstamo de Pase",
+   "lado": null,
+   "page": 36,
+   "section": "CLUB DEPORTIVO PALESTINO SADP",
+   "values": [
+    37.556
+   ],
+   "origen": "estado 38"
+  },
+  {
+   "label": "Construcciones y obras de infraestructura",
+   "lado": null,
+   "page": 37,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 11. PROPIEDADES, PLANTA Y EQUIPO / M$            M$              M$                M$                 M$         M$",
+   "values": [
+    0.622355
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "M aquinarias y equipos",
+   "lado": null,
+   "page": 37,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 11. PROPIEDADES, PLANTA Y EQUIPO / M$            M$              M$                M$                 M$         M$",
+   "values": [
+    0.113259
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "Vehículos",
+   "lado": null,
+   "page": 37,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 11. PROPIEDADES, PLANTA Y EQUIPO / M$            M$              M$                M$                 M$         M$",
+   "values": [
+    0.015784
+   ],
+   "origen": "estado 41"
+  },
+  {
+   "label": "Ingresos de actividades ordinarias",
+   "lado": "revenue",
+   "page": 8,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / ESTADOS DE RESULTADOS INTEGRALES INTERMEDIOS / Nº         M$            M$             M$           M$",
+   "values": [
+    5198.829
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Costo de ventas",
+   "lado": "expense",
+   "page": 8,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / ESTADOS DE RESULTADOS INTEGRALES INTERMEDIOS / Nº         M$            M$             M$           M$",
+   "values": [
+    -2967.382
+   ],
+   "origen": "estado 5"
+  },
+  {
+   "label": "Otros Ingresos",
+   "lado": "revenue",
+   "page": 8,
+   "section": "",
+   "values": [
+    146.909
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Gasto de administración",
+   "lado": "expense",
+   "page": 8,
+   "section": "",
+   "values": [
+    -476.989
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Costos financieros",
+   "lado": "expense",
+   "page": 8,
+   "section": "",
+   "values": [
+    -43.929
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Incremento (disminución) por correcciones de errores - - - (13.559) (13.559) -",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "values": [
+    -13.559
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Saldo Final Período Actual 30/06/2019 6.262.670 - - (2.062.113) 4.200.557 -",
+   "lado": null,
+   "page": 9,
+   "section": "",
+   "values": [
+    4200.557
+   ],
+   "origen": "estado 10"
+  },
+  {
+   "label": "Incremento (disminución) neto de efectivo y equivalentes al efectivo",
+   "lado": null,
+   "page": 10,
+   "section": "Incremento neto (disminución) en el efectivo y equivalentes al efectivo, / 696.373          (22.273) / antes del efecto de los cambios en la tasa de cambio",
+   "values": [
+    696.373
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "Efectivo y equivalentes al efectivo al principio del período",
+   "lado": null,
+   "page": 10,
+   "section": "Incremento neto (disminución) en el efectivo y equivalentes al efectivo, / 696.373          (22.273) / antes del efecto de los cambios en la tasa de cambio",
+   "values": [
+    856.856
+   ],
+   "origen": "estado 16"
+  },
+  {
+   "label": "CARLOS AGUSTIN FARIAS Fenix Arriendo de pases 100%",
+   "lado": null,
+   "page": 35,
+   "section": "Desde 01.01.2018 al 31.12.2018 / Procedencia o             Descripción de los         Efecto en / Nombre Jugador / Destino           movimientos del ejercicio   resultado en M$",
+   "values": [
+    0.021273
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "ROBERTO CARLOS GUTIERREZ GAMBOA Arriendo de pases 100%",
+   "lado": null,
+   "page": 35,
+   "section": "Desde 01.01.2018 al 31.12.2018 / Procedencia o             Descripción de los         Efecto en / Nombre Jugador / Destino           movimientos del ejercicio   resultado en M$",
+   "values": [
+    0.084918
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "BENJAMIN VIDAL Préstamo",
+   "lado": null,
+   "page": 35,
+   "section": "Desde 01.01.2018 al 31.12.2018 / Procedencia o             Descripción de los         Efecto en / Nombre Jugador / Destino           movimientos del ejercicio   resultado en M$",
+   "values": [
+    0.014875
+   ],
+   "origen": "estado 36"
+  },
+  {
+   "label": "JORGE RODRIGUEZ NUÑEZ Arriendo de pases 100%",
+   "lado": null,
+   "page": 35,
+   "section": "",
+   "values": [
+    0.038786
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "ALEJANDRO GONZALEZ H. Arriendo de pases 100%",
+   "lado": null,
+   "page": 35,
+   "section": "",
+   "values": [
+    0.021807
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "LUIS JIMENEZ GARCES Arriendo de pases 100%",
+   "lado": null,
+   "page": 35,
+   "section": "",
+   "values": [
+    0.041867
+   ],
+   "origen": "estado 37"
+  },
+  {
+   "label": "Venta de Pase",
+   "lado": null,
+   "page": 36,
+   "section": "PAULO DIAZ                                              Al Ahli Saudi Football Club",
+   "values": [
+    1432.18
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "YERKO ROJAS Cesión Derechos",
+   "lado": null,
+   "page": 36,
+   "section": "PAULO DIAZ                                              Al Ahli Saudi Football Club",
+   "values": [
+    2
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "Saldo Final al",
+   "lado": null,
+   "page": 36,
+   "section": "PAULO DIAZ                                              Al Ahli Saudi Football Club",
+   "values": [
+    0.03112
+   ],
+   "origen": "estado 39"
+  },
+  {
+   "label": "ESTEBAN CARVAJAL Unión San Felipe Arriendo de pases 50%",
+   "lado": null,
+   "page": 36,
+   "section": "Destino                    del ejercicio                en M$ / Desde 01.01.2018 al 31.12.2018 / Procedencia o       Descripción de los movimientos   Efecto en resultado / Nombre Jugador / Destino                     del ejercicio                en M$",
+   "values": [
+    61.354
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "SEBASTIAN GORGA Arriendo de pase",
+   "lado": null,
+   "page": 36,
+   "section": "Destino                    del ejercicio                en M$ / Desde 01.01.2018 al 31.12.2018 / Procedencia o       Descripción de los movimientos   Efecto en resultado / Nombre Jugador / Destino                     del ejercicio                en M$",
+   "values": [
+    71.269
+   ],
+   "origen": "estado 40"
+  },
+  {
+   "label": "Abonados",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "values": [
+    0.057995
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Escuela de Futbol",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "values": [
+    0.014013
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Publicidad",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "values": [
+    0.169813
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Recaudación por partidos",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "values": [
+    0.365891
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Televisión",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "values": [
+    1.177604
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Souvenir",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "values": [
+    0.008904
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Ingresos por préstamo Jugador",
+   "lado": "revenue",
+   "page": 45,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 17. INGRESOS ORDINARIOS.",
+   "values": [
+    0.001892
+   ],
+   "origen": "estado 53"
+  },
+  {
+   "label": "Amortizaciones",
+   "lado": "expense",
+   "page": 46,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 18. COMPOSICION DE CUENTAS DE COSTO DE VENTA",
+   "values": [
+    0.343444
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Costo pase jugador",
+   "lado": "expense",
+   "page": 46,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 18. COMPOSICION DE CUENTAS DE COSTO DE VENTA",
+   "values": [
+    0.022874
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Implementación deportiva",
+   "lado": "expense",
+   "page": 46,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 18. COMPOSICION DE CUENTAS DE COSTO DE VENTA",
+   "values": [
+    0.017542
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Gastos de operación(*)",
+   "lado": "expense",
+   "page": 46,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 18. COMPOSICION DE CUENTAS DE COSTO DE VENTA",
+   "values": [
+    1.188856
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Remuneraciones Cuerpo Técnico y Jugadores",
+   "lado": "expense",
+   "page": 46,
+   "section": "CLUB DEPORTIVO PALESTINO SADP / NOTA 18. COMPOSICION DE CUENTAS DE COSTO DE VENTA",
+   "values": [
+    1.394666
+   ],
+   "origen": "estado 54"
+  },
+  {
+   "label": "Servicios basicos",
+   "lado": "expense",
+   "page": 46,
+   "section": "Detalle gastos de operación (*) / 01.01.2019             01.01.2018 / Gastos de operación                               30.06.2019             30.06.2018 / M$                     M$",
+   "values": [
+    0.015657
+   ],
+   "origen": "estado 55"
+  },
+  {
+   "label": "Asesorias",
+   "lado": "expense",
+   "page": 46,
+   "section": "Detalle gastos de operación (*) / 01.01.2019             01.01.2018 / Gastos de operación                               30.06.2019             30.06.2018 / M$                     M$",
+   "values": [
+    0.188136
+   ],
+   "origen": "estado 55"
+  },
+  {
+   "label": "Depreciaciones",
+   "lado": "expense",
+   "page": 46,
+   "section": "Detalle gastos de operación (*) / 01.01.2019             01.01.2018 / Gastos de operación                               30.06.2019             30.06.2018 / M$                     M$",
+   "values": [
+    0.027501
+   ],
+   "origen": "estado 55"
+  },
+  {
+   "label": "Arriendos pagados",
+   "lado": "expense",
+   "page": 46,
+   "section": "Detalle gastos de operación (*) / 01.01.2019             01.01.2018 / Gastos de operación                               30.06.2019             30.06.2018 / M$                     M$",
+   "values": [
+    0.087399
+   ],
+   "origen": "estado 55"
+  }
+ ]
+}

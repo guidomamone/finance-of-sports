@@ -1,0 +1,166 @@
+{
+  "md": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2022-06-30.md",
+  "pdf": "Clubes/Dinamarca/FC Midtjylland/aarsrapport-2022-06-30.pdf",
+  "club": "midtjylland-dk",
+  "year": 2022,
+  "numberFormat": "ambiguo",
+  "generatedAt": "2026-09-30T21:59:57.364Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 10,
+    "notasUsadas": [
+      "6",
+      "7",
+      "9"
+    ]
+  },
+  "ladoConocido": 8,
+  "rubros": [
+    {
+      "label": "Lønninger<br>*Wages and salaries*",
+      "lado": "expense",
+      "page": 28,
+      "section": "# Noter til årsregnskabet / ## 2 Særlige poster / ## 3 Personaleomkostninger",
+      "values": [
+        112.04
+      ],
+      "origen": "nota 6 (ancla 1)",
+      "ancla": "Personaleomkostninger<br>*Staff expenses*",
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Personaleomkostninger<br>*Staff expenses*",
+      "lado": "expense",
+      "page": 19,
+      "section": "# Resultatopgørelse 1. juli - 30. juni",
+      "values": [
+        -119.397
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Pensioner<br>*Pensions*",
+      "lado": "expense",
+      "page": 28,
+      "section": "# Noter til årsregnskabet / ## 2 Særlige poster / ## 3 Personaleomkostninger",
+      "values": [
+        4.63
+      ],
+      "origen": "nota 6 (ancla 1)",
+      "ancla": "Personaleomkostninger<br>*Staff expenses*",
+      "glosa": "Pensiones"
+    },
+    {
+      "label": "Andre omkostninger til social sikring<br>*Other social security expenses*",
+      "lado": "expense",
+      "page": 28,
+      "section": "# Noter til årsregnskabet / ## 2 Særlige poster / ## 3 Personaleomkostninger",
+      "values": [
+        2.727
+      ],
+      "origen": "nota 6 (ancla 1)",
+      "ancla": "Personaleomkostninger<br>*Staff expenses*",
+      "glosa": "Otros gastos de seguridad social"
+    },
+    {
+      "label": "Afskrivninger af immaterielle anlægsaktiver<br>*Amortisation of intangible assets*",
+      "lado": null,
+      "page": 29,
+      "section": "# Noter til årsregnskabet / ## 4 Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+      "values": [
+        60.412
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver<br>*Depreciation, amortisation and impairment of intangible assets and property, plant and equipment*",
+      "glosa": "Amortización del inmovilizado intangible"
+    },
+    {
+      "label": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver<br>*Depreciation, amortisation and impairment of intangible assets and property, plant and equipment*",
+      "lado": null,
+      "page": 19,
+      "section": "# Resultatopgørelse 1. juli - 30. juni",
+      "values": [
+        -89.803
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Amortización y pérdidas por deterioro del inmovilizado material e intangible"
+    },
+    {
+      "label": "Afskrivninger af materielle anlægsaktiver<br>*Depreciation of property, plant and equipment*",
+      "lado": null,
+      "page": 29,
+      "section": "# Noter til årsregnskabet / ## 4 Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+      "values": [
+        3.262
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver<br>*Depreciation, amortisation and impairment of intangible assets and property, plant and equipment*",
+      "glosa": "Amortización del inmovilizado material"
+    },
+    {
+      "label": "Nedskrivninger af immaterielle anlægsaktiver<br>*Impairment of intangible assets*",
+      "lado": null,
+      "page": 29,
+      "section": "# Noter til årsregnskabet / ## 4 Af- og nedskrivninger af immaterielle og materielle anlægsaktiver",
+      "values": [
+        26.129
+      ],
+      "origen": "nota 7 (ancla 1)",
+      "ancla": "Af- og nedskrivninger af immaterielle og materielle anlægsaktiver<br>*Depreciation, amortisation and impairment of intangible assets and property, plant and equipment*",
+      "glosa": "Pérdidas por deterioro del inmovilizado intangible"
+    },
+    {
+      "label": "Finansielle indtægter<br>*Financial income*",
+      "lado": "revenue",
+      "page": 19,
+      "section": "# Resultatopgørelse 1. juli - 30. juni",
+      "values": [
+        0.286
+      ],
+      "origen": "estado 1",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Finansielle omkostninger<br>*Financial expenses*",
+      "lado": "expense",
+      "page": 19,
+      "section": "# Resultatopgørelse 1. juli - 30. juni",
+      "values": [
+        -1.425
+      ],
+      "origen": "estado 1 (su nota queda consumida sin abrir)",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Andre finansielle indtægter<br>*Other financial income*",
+      "lado": "revenue",
+      "page": 29,
+      "section": "## 5 Finansielle indtægter",
+      "values": [
+        286
+      ],
+      "origen": "estado 8",
+      "glosa": "Otros ingresos financieros"
+    },
+    {
+      "label": "Grunde og bygninger med en regnskabsmæssig værdi på<br>*Land and buildings with a carrying amount of*",
+      "lado": "expense",
+      "page": 36,
+      "section": "# Noter til årsregnskabet / ## 18 Eventualposter og øvrige økonomiske forpligtelser / Pant og sikkerhedsstillelse / *Charges and security*",
+      "values": [
+        2.77
+      ],
+      "origen": "estado 14",
+      "glosa": "Terrenos y construcciones con un valor en libros de"
+    }
+  ]
+}

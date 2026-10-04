@@ -1,0 +1,1686 @@
+{
+ "md": "Clubes/Argentina/Boca/Presupuesto 26-27.md",
+ "generatedAt": "2026-09-30T22:48:18.663Z",
+ "rubrosHuella": "93c7d8e94d34b4c3d9de8b5342c66ef593c2594d",
+ "rubros": [
+  {
+   "label": "Remuneraciones Plantel, S.A.C. y Cs. Sociales",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Gastos Pretemporada",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "other_expenses",
+     0.47000000000000003
+    ],
+    [
+     "lump_football_operations_expense",
+     0.25
+    ],
+    [
+     "match_organisation_expense",
+     0.25
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Alquiler Vivienda",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "match_organisation_expense",
+     0.02
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 931
+  },
+  {
+   "label": "Remuneraciones S.A.C. y C.S.",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "wages_squad",
+   "confidence": 0.27,
+   "top3": [
+    [
+     "wages_squad",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Artículos de Deporte",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 968
+  },
+  {
+   "label": "Agasajos, Buffet y Refrigerios",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.87
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 947
+  },
+  {
+   "label": "Gastos Alojamiento",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "match_organisation_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.9400000000000001
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "Honorarios",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 995
+  },
+  {
+   "label": "Mantenimiento Inmueble y Muebles",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Mantenimiento Campo de Juego",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.36
+    ],
+    [
+     "match_organisation_expense",
+     0.31
+    ],
+    [
+     "other_expenses",
+     0.3
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Prima Jugadores",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "player_amortisation",
+     0.33
+    ],
+    [
+     "wages_squad",
+     0.28
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Obsequios",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 804
+  },
+  {
+   "label": "Seguros",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 985
+  },
+  {
+   "label": "Prima cuerpo tecnico",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Servicios y Abonos Varios",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "admin_general_expense",
+     0.28
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Telefonía",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.84
+    ],
+    [
+     "match_organisation_expense",
+     0.09
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 988
+  },
+  {
+   "label": "Tasas y Sellados",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1058
+  },
+  {
+   "label": "Viajes y Viaticos",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "match_organisation_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0.02
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Vigilancia",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "match_organisation_expense",
+     0.32
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Sponsor Indumentaria",
+   "lado": "revenue",
+   "page": 11,
+   "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 884
+  },
+  {
+   "label": "Varios",
+   "lado": "expense",
+   "page": 15,
+   "section": "APERTURA DE GASTOS / FUTBOL PROFESIONAL / CONCEPTO                                IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 997
+  },
+  {
+   "label": "Bocashop",
+   "lado": "revenue",
+   "page": 11,
+   "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 825
+  },
+  {
+   "label": "Sponsor Pecho Futbol Masculino",
+   "lado": "revenue",
+   "page": 11,
+   "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "lump_football_operations",
+     0.02
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "Espalda Futbol Masculino",
+   "lado": "revenue",
+   "page": 11,
+   "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.44
+    ],
+    [
+     "lump_football_operations",
+     0.3
+    ],
+    [
+     "matchday_competition",
+     0.1
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Publicidad Estatica Estadio",
+   "lado": "revenue",
+   "page": 11,
+   "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "stadium_other",
+     0.03
+    ],
+    [
+     "matchday_competition",
+     0.01
+    ]
+   ],
+   "tokens": 1033
+  },
+  {
+   "label": "Museo",
+   "lado": "revenue",
+   "page": 11,
+   "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+   "choice": "other_income",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "other_income",
+     0.8
+    ],
+    [
+     "stadium_other",
+     0.11
+    ],
+    [
+     "sponsorship_commercial",
+     0.07
+    ]
+   ],
+   "tokens": 823
+  },
+  {
+   "label": "Licencias",
+   "lado": "revenue",
+   "page": 11,
+   "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 879
+  },
+  {
+   "label": "Pantalón Futbol Masculino",
+   "lado": "revenue",
+   "page": 11,
+   "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.89
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ],
+    [
+     "other_income",
+     0.05
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Sponsor Digital",
+   "lado": "revenue",
+   "page": 11,
+   "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 882
+  },
+  {
+   "label": "Otros",
+   "lado": "revenue",
+   "page": 11,
+   "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "other_income",
+     0.92
+    ],
+    [
+     "other_sports",
+     0.06
+    ],
+    [
+     "sponsorship_commercial",
+     0.01
+    ]
+   ],
+   "tokens": 999
+  },
+  {
+   "label": "BBVA - Branding",
+   "lado": "revenue",
+   "page": 11,
+   "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 827
+  },
+  {
+   "label": "Fútbol Profesional",
+   "lado": "expense",
+   "page": 34,
+   "section": "GASTOS / CONCEPTO                                   IMPORTE",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.89
+    ],
+    [
+     "wages_squad",
+     0.07
+    ],
+    [
+     "other_expenses",
+     0.03
+    ]
+   ],
+   "tokens": 1004
+  },
+  {
+   "label": "Manga Futbol Masculino",
+   "lado": "revenue",
+   "page": 11,
+   "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.46
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "other_income",
+     0.14
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Administración",
+   "lado": "expense",
+   "page": 34,
+   "section": "GASTOS / CONCEPTO                                   IMPORTE",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 990
+  },
+  {
+   "label": "Mastercard",
+   "lado": "revenue",
+   "page": 11,
+   "section": "INGRESOS COMERCIALES                                                         IMPORTE",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 824
+  },
+  {
+   "label": "Organización de Espectáculos",
+   "lado": "expense",
+   "page": 34,
+   "section": "GASTOS / CONCEPTO                                   IMPORTE",
+   "choice": "match_organisation_expense",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Fútbol Juvenil",
+   "lado": "expense",
+   "page": 34,
+   "section": "GASTOS / CONCEPTO                                   IMPORTE",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1002
+  },
+  {
+   "label": "Otros deportes",
+   "lado": "revenue",
+   "page": 9,
+   "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+   "choice": "other_sports",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_sports",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Socios",
+   "lado": "expense",
+   "page": 9,
+   "section": "GASTOS / CONCEPTO                            IMPORTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "other_amortisation",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 970
+  },
+  {
+   "label": "Gastos Generales",
+   "lado": "expense",
+   "page": 9,
+   "section": "GASTOS / CONCEPTO                            IMPORTE",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1000
+  },
+  {
+   "label": "Basket",
+   "lado": "expense",
+   "page": 34,
+   "section": "GASTOS / CONCEPTO                                   IMPORTE",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 790
+  },
+  {
+   "label": "Otras Amortizaciones",
+   "lado": "expense",
+   "page": 9,
+   "section": "GASTOS / CONCEPTO                            IMPORTE",
+   "choice": "other_amortisation",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_amortisation",
+     0.99
+    ],
+    [
+     "depreciation",
+     0.01
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1025
+  },
+  {
+   "label": "Socios Activos",
+   "lado": "revenue",
+   "page": 11,
+   "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Comerciales",
+   "lado": "revenue",
+   "page": 9,
+   "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.77
+    ],
+    [
+     "other_income",
+     0.23
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 908
+  },
+  {
+   "label": "Adherente AMBA",
+   "lado": "revenue",
+   "page": 11,
+   "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "other_income",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 833
+  },
+  {
+   "label": "Adherente Interior",
+   "lado": "revenue",
+   "page": 11,
+   "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 885
+  },
+  {
+   "label": "Socias Activas",
+   "lado": "revenue",
+   "page": 11,
+   "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Eventuales",
+   "lado": "expense",
+   "page": 9,
+   "section": "GASTOS / CONCEPTO                            IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_expenses",
+     0.6
+    ],
+    [
+     "exceptional_items",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 792
+  },
+  {
+   "label": "Socios Interior",
+   "lado": "revenue",
+   "page": 11,
+   "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "competition_bonus",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Socios Menores",
+   "lado": "revenue",
+   "page": 11,
+   "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+   "choice": "member_dues",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "member_dues",
+     0.79
+    ],
+    [
+     "youth_football",
+     0.2
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Carnet Socios",
+   "lado": "revenue",
+   "page": 11,
+   "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Socios Cadetes",
+   "lado": "revenue",
+   "page": 11,
+   "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+   "choice": "member_dues",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "member_dues",
+     0.93
+    ],
+    [
+     "youth_football",
+     0.06
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Socio Internacional",
+   "lado": "revenue",
+   "page": 11,
+   "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+   "choice": "member_dues",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "member_dues",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1047
+  },
+  {
+   "label": "Aportes a Fundacion Boca Social",
+   "lado": "expense",
+   "page": 24,
+   "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.68
+    ],
+    [
+     "admin_general_expense",
+     0.16
+    ],
+    [
+     "other_expenses",
+     0.16
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Comisiones Tarjetas",
+   "lado": "expense",
+   "page": 24,
+   "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Gastos Bancarios",
+   "lado": "expense",
+   "page": 24,
+   "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 991
+  },
+  {
+   "label": "Socios Exterior",
+   "lado": "revenue",
+   "page": 11,
+   "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "member_dues",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "Diversos",
+   "lado": "revenue",
+   "page": 9,
+   "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1043
+  },
+  {
+   "label": "Seguro de Vida",
+   "lado": "revenue",
+   "page": 11,
+   "section": "APERTURA DE INGRESOS / CUOTAS SOCIALES                                                               IMPORTE",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.57
+    ],
+    [
+     "member_dues",
+     0.43
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "IVA",
+   "lado": "expense",
+   "page": 24,
+   "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 845
+  },
+  {
+   "label": "Previsión para Juicios",
+   "lado": "expense",
+   "page": 24,
+   "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 998
+  },
+  {
+   "label": "Mutual Jugadores 1%",
+   "lado": "expense",
+   "page": 24,
+   "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_expenses",
+     0.47
+    ],
+    [
+     "wages_squad",
+     0.36
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ]
+   ],
+   "tokens": 1007
+  },
+  {
+   "label": "Seguros Varios",
+   "lado": "expense",
+   "page": 24,
+   "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "other_expenses",
+     0.65
+    ],
+    [
+     "admin_general_expense",
+     0.35
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 976
+  },
+  {
+   "label": "Previsión Indemnizaciones",
+   "lado": "expense",
+   "page": 24,
+   "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.97
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1017
+  },
+  {
+   "label": "Plateas",
+   "lado": "revenue",
+   "page": 12,
+   "section": "TOTAL EXHIBICION ESPECTACULOS DEPORTIVOS         43.085.830.000 / ABONOS                                          IMPORTE",
+   "choice": "season_tickets",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "season_tickets",
+     0.9
+    ],
+    [
+     "matchday_competition",
+     0.1
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Exhibición de Espectáculos Deportivos",
+   "lado": "revenue",
+   "page": 9,
+   "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+   "choice": "matchday_competition",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "matchday_competition",
+     0.95
+    ],
+    [
+     "stadium_other",
+     0.04
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Abonos",
+   "lado": "revenue",
+   "page": 9,
+   "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+   "choice": "season_tickets",
+   "confidence": 1,
+   "top3": [
+    [
+     "season_tickets",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1038
+  },
+  {
+   "label": "Sellos",
+   "lado": "expense",
+   "page": 24,
+   "section": "GASTOS GENERALES / CONCEPTO                         IMPORTE",
+   "choice": "admin_general_expense",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 794
+  },
+  {
+   "label": "Palcos Vip y corporativos",
+   "lado": "revenue",
+   "page": 12,
+   "section": "TOTAL EXHIBICION ESPECTACULOS DEPORTIVOS         43.085.830.000 / ABONOS                                          IMPORTE",
+   "choice": "stadium_other",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "stadium_other",
+     0.7
+    ],
+    [
+     "matchday_competition",
+     0.22
+    ],
+    [
+     "season_tickets",
+     0.05
+    ]
+   ],
+   "tokens": 1100
+  },
+  {
+   "label": "Cocheras",
+   "lado": "revenue",
+   "page": 12,
+   "section": "TOTAL EXHIBICION ESPECTACULOS DEPORTIVOS         43.085.830.000 / ABONOS                                          IMPORTE",
+   "choice": "stadium_other",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "stadium_other",
+     0.7
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "season_tickets",
+     0.06
+    ]
+   ],
+   "tokens": 850
+  },
+  {
+   "label": "Futbol Juvenil",
+   "lado": "revenue",
+   "page": 9,
+   "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+   "choice": "youth_football",
+   "confidence": 1,
+   "top3": [
+    [
+     "youth_football",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Basket Profesional",
+   "lado": "revenue",
+   "page": 9,
+   "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+   "choice": "other_sports",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "other_sports",
+     0.94
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Futbol Femenino",
+   "lado": "revenue",
+   "page": 9,
+   "section": "PRESUPUESTO ECONOMICO / INGRESOS / CONCEPTO                            IMPORTE",
+   "choice": "womens_football",
+   "confidence": 1,
+   "top3": [
+    [
+     "womens_football",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1028
+  }
+ ]
+}

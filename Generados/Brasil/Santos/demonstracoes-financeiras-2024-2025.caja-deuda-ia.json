@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Santos/demonstracoes-financeiras-2024-2025.md",
+ "generado": "2026-10-02T00:19:49.926Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Valores expressos em milhares de Reais, exceto quando indicado de outra forma)",
+ "caja": {
+  "lineas": [
+   711
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   743,
+   762
+  ],
+  "ninguna": false
+ },
+ "observaciones": "La línea corriente de deuda combina préstamos con antecipação de recebíveis; la aplicação financeira (L712) se presenta separada del efectivo y no se incluyó en caja."
+}

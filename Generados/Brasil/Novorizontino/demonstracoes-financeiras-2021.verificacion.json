@@ -1,0 +1,267 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.pdf",
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.md",
+ "generado": "2026-10-03T23:03:05.860Z",
+ "estado": "ok",
+ "clubId": "novorizontino-br",
+ "year": 2021,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.pdf",
+   "campo": "categoria",
+   "valor": "matchday_competition",
+   "linea": null,
+   "etiqueta": "Receita do bar",
+   "motivo": "Guido 2026-10-02: como 'Vendas de ingressos e bar' (matchday_competition); R$ 6 mil, inmaterial",
+   "evidencia": "demonstracoes-financeiras-2021.md L805",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  },
+  {
+   "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2021.pdf",
+   "campo": "categoria",
+   "valor": "player_impairment",
+   "linea": null,
+   "etiqueta": "Ganhos/perdas com atletas",
+   "motivo": "Guido 2026-10-02: pérdida con atletas dentro de despesas gerais = baja de pases, no amortización del año",
+   "evidencia": "demonstracoes-financeiras-2021.md L842",
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": true,
+   "detalle": "la columna 2020 de este documento suma ingresos 10.262; el sitio tiene 10.262"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2021: 9.055 en este documento y 9.019686 en demonstracoes-financeiras-2022.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2020",
+   "ok": true,
+   "detalle": "ingresos de 2020: 10.262 en demonstracoes-financeiras-2020.pdf y 10.262 en este documento (columna del año anterior)"
+  }
+ ],
+ "notas": [
+  "duda de extraer que no afecta la carga: Las notas no indican escala pero sus totales (L807, L822, L847) coinciden con el estado expresado en milhares (L208).",
+  "duda de extraer que no afecta la carga: El rótulo aparece desalineado bajo la columna 2021 en L817/L836, pero el estado marca como reapresentado 2020 y los importes 2021 coinciden con el estado."
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 9.055,
+  "gastos": 22.866,
+  "financiero": -0.888,
+  "impuesto": 0,
+  "resultadoImpreso": -14.699,
+  "resultadoParaCargar": -14.699,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Repasse da federação",
+   "lado": "ingreso",
+   "M": 7.614,
+   "pagina": 28,
+   "linea": 798,
+   "origen": "nota que desglosa \"Receita líquida\""
+  },
+  {
+   "etiqueta": "Negociação e empréstimo de atletas (nota nº6)",
+   "lado": "ingreso",
+   "M": 0.645,
+   "pagina": 28,
+   "linea": 799,
+   "origen": "nota que desglosa \"Receita líquida\""
+  },
+  {
+   "etiqueta": "Receita com patrocínios",
+   "lado": "ingreso",
+   "M": 0.29,
+   "pagina": 28,
+   "linea": 800,
+   "origen": "nota que desglosa \"Receita líquida\""
+  },
+  {
+   "etiqueta": "Vendas de ingressos e bar",
+   "lado": "ingreso",
+   "M": 0.033,
+   "pagina": 28,
+   "linea": 803,
+   "origen": "nota que desglosa \"Receita líquida\""
+  },
+  {
+   "etiqueta": "Subvenções (nota 11)",
+   "lado": "ingreso",
+   "M": 0.432,
+   "pagina": 28,
+   "linea": 804,
+   "origen": "nota que desglosa \"Receita líquida\""
+  },
+  {
+   "etiqueta": "Receita do bar",
+   "lado": "ingreso",
+   "M": 0.006,
+   "pagina": 28,
+   "linea": 805,
+   "origen": "nota que desglosa \"Receita líquida\""
+  },
+  {
+   "etiqueta": "Outras receitas operacionais",
+   "lado": "ingreso",
+   "M": 0.035,
+   "pagina": 8,
+   "linea": 216,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Salários, ordenados e outros custos com pessoal",
+   "lado": "gasto",
+   "M": 14.546,
+   "pagina": 28,
+   "linea": 818,
+   "origen": "nota que desglosa \"Custos\""
+  },
+  {
+   "etiqueta": "Gastos com jogos",
+   "lado": "gasto",
+   "M": 1.188,
+   "pagina": 28,
+   "linea": 819,
+   "origen": "nota que desglosa \"Custos\""
+  },
+  {
+   "etiqueta": "Aluguéis",
+   "lado": "gasto",
+   "M": 0.594,
+   "pagina": 28,
+   "linea": 820,
+   "origen": "nota que desglosa \"Custos\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.245,
+   "pagina": 28,
+   "linea": 821,
+   "origen": "nota que desglosa \"Custos\""
+  },
+  {
+   "etiqueta": "Serviços prestados (i)",
+   "lado": "gasto",
+   "M": 2.242,
+   "pagina": 29,
+   "linea": 837,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Despesas administrativas (ii)",
+   "lado": "gasto",
+   "M": 1.122,
+   "pagina": 29,
+   "linea": 838,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Manutenções (ii)",
+   "lado": "gasto",
+   "M": 1.015,
+   "pagina": 29,
+   "linea": 839,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Gastos com negociação de atletas",
+   "lado": "gasto",
+   "M": 0.574,
+   "pagina": 29,
+   "linea": 840,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Salários, ordenados e outros custos - Projeto Sub 15 e 17",
+   "lado": "gasto",
+   "M": 0.432,
+   "pagina": 29,
+   "linea": 841,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Ganhos/perdas com atletas",
+   "lado": "gasto",
+   "M": 0.409,
+   "pagina": 29,
+   "linea": 842,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Combustível e lubrificantes",
+   "lado": "gasto",
+   "M": 0.134,
+   "pagina": 29,
+   "linea": 843,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Depreciação / Amortização",
+   "lado": "gasto",
+   "M": 0.16,
+   "pagina": 29,
+   "linea": 844,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  },
+  {
+   "etiqueta": "Outros",
+   "lado": "gasto",
+   "M": 0.205,
+   "pagina": 29,
+   "linea": 845,
+   "origen": "nota que desglosa \"Despesas gerais e administrativas\""
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Despesas financeiras",
+   "M": -0.888,
+   "linea": 218
+  },
+  {
+   "etiqueta": "Receitas financeiras",
+   "M": null,
+   "linea": 219
+  }
+ ],
+ "impuesto": []
+}

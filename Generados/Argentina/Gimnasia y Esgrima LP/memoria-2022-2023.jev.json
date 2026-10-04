@@ -1,0 +1,995 @@
+{
+ "md": "Clubes/Argentina/Gimnasia y Esgrima LP/memoria-2022-2023.md",
+ "generatedAt": "2026-09-30T04:25:27.593Z",
+ "rubros": [
+  {
+   "label": "Plena/o",
+   "lado": "revenue",
+   "page": 8,
+   "section": "2.7 VALORES DE LAS CUOTAS SOCIALES",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "member_dues",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Plena/o interior",
+   "lado": "revenue",
+   "page": 8,
+   "section": "2.7 VALORES DE LAS CUOTAS SOCIALES",
+   "choice": "member_dues",
+   "confidence": 1,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "season_tickets",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 837
+  },
+  {
+   "label": "Cadete interior",
+   "lado": "revenue",
+   "page": 8,
+   "section": "2.7 VALORES DE LAS CUOTAS SOCIALES",
+   "choice": "member_dues",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "member_dues",
+     0.94
+    ],
+    [
+     "youth_football",
+     0.05
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Grupo familiar",
+   "lado": "revenue",
+   "page": 8,
+   "section": "2.7 VALORES DE LAS CUOTAS SOCIALES",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "member_dues",
+     1
+    ],
+    [
+     "education",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 835
+  },
+  {
+   "label": "Vitalicia/o voluntaria/o",
+   "lado": "revenue",
+   "page": 8,
+   "section": "2.7 VALORES DE LAS CUOTAS SOCIALES",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "member_dues",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 841
+  },
+  {
+   "label": "Vitalicia/o plena/o",
+   "lado": "revenue",
+   "page": 8,
+   "section": "2.7 VALORES DE LAS CUOTAS SOCIALES",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "member_dues",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 839
+  },
+  {
+   "label": "Infantil",
+   "lado": "revenue",
+   "page": 8,
+   "section": "2.7 VALORES DE LAS CUOTAS SOCIALES",
+   "choice": "youth_football",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "youth_football",
+     0.77
+    ],
+    [
+     "member_dues",
+     0.22
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 918
+  },
+  {
+   "label": "Cadete",
+   "lado": "revenue",
+   "page": 8,
+   "section": "2.7 VALORES DE LAS CUOTAS SOCIALES",
+   "choice": "member_dues",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "member_dues",
+     0.88
+    ],
+    [
+     "youth_football",
+     0.11
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 835
+  },
+  {
+   "label": "Socia/o exterior (anual)",
+   "lado": "revenue",
+   "page": 8,
+   "section": "2.7 VALORES DE LAS CUOTAS SOCIALES",
+   "choice": "member_dues",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "member_dues",
+     0.93
+    ],
+    [
+     "player_sales",
+     0.06
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 894
+  },
+  {
+   "label": "Infantil interior",
+   "lado": "revenue",
+   "page": 8,
+   "section": "2.7 VALORES DE LAS CUOTAS SOCIALES",
+   "choice": "youth_football",
+   "confidence": 0.57,
+   "top3": [
+    [
+     "youth_football",
+     0.61
+    ],
+    [
+     "member_dues",
+     0.38
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 919
+  },
+  {
+   "label": "Grupo familiar interior",
+   "lado": "revenue",
+   "page": 8,
+   "section": "2.7 VALORES DE LAS CUOTAS SOCIALES",
+   "choice": "member_dues",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "member_dues",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "10/11/22",
+   "lado": null,
+   "page": 67,
+   "section": "15. VÓLEY / TORNEO METROPOLITANO",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.38
+    ],
+    [
+     "other_sports",
+     0.27
+    ],
+    [
+     "other_income",
+     0.14
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "11/11/22",
+   "lado": null,
+   "page": 67,
+   "section": "15. VÓLEY / TORNEO METROPOLITANO",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.4
+    ],
+    [
+     "other_sports",
+     0.25
+    ],
+    [
+     "other_income",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "04/11/22",
+   "lado": null,
+   "page": 67,
+   "section": "15. VÓLEY / TORNEO METROPOLITANO",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.39
+    ],
+    [
+     "other_sports",
+     0.3
+    ],
+    [
+     "other_income",
+     0.14
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Socia/o al minuto (solo inscripción)",
+   "lado": "revenue",
+   "page": 8,
+   "section": "2.7 VALORES DE LAS CUOTAS SOCIALES",
+   "choice": "member_dues",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "member_dues",
+     0.98
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 927
+  },
+  {
+   "label": "21/01/23",
+   "lado": null,
+   "page": 69,
+   "section": "LIGA ARGENTINA FEMENINA 2023",
+   "choice": "womens_football",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "womens_football",
+     0.61
+    ],
+    [
+     "other_income",
+     0.22
+    ],
+    [
+     "youth_other_sports_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "22/01/23",
+   "lado": null,
+   "page": 69,
+   "section": "LIGA ARGENTINA FEMENINA 2023",
+   "choice": "womens_football",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "womens_football",
+     0.66
+    ],
+    [
+     "other_income",
+     0.21000000000000002
+    ],
+    [
+     "youth_other_sports_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "29/01/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Weekend 2 (pareja GELP-CELP):*",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.47000000000000003
+    ],
+    [
+     "matchday_competition",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.14
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "05/02/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Weekend 3 (CEF N°5):*",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_income",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "matchday_competition",
+     0.06
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "28/01/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Weekend 2 (pareja GELP-CELP):*",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.22
+    ],
+    [
+     "matchday_competition",
+     0.16
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "04/02/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Weekend 3 (CEF N°5):*",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.5700000000000001
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 1273
+  },
+  {
+   "label": "19/02/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Weekend 5 (San José):*",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_income",
+     0.49
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ],
+    [
+     "matchday_competition",
+     0.16
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "18/02/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Weekend 4 (pareja GELP-CELP):*",
+   "choice": "other_income",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "other_income",
+     0.49
+    ],
+    [
+     "matchday_competition",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.13
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "26/02/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Weekend 5 (San José):*",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.16
+    ],
+    [
+     "matchday_competition",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1271
+  },
+  {
+   "label": "04/03/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Weekend 6 (pareja River-Boca):*",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.47000000000000003
+    ],
+    [
+     "matchday_competition",
+     0.33
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "11/03/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Weekend 7 (pareja GELP-CELP):*",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "matchday_competition",
+     0.13
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "05/03/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Weekend 6 (pareja River-Boca):*",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "matchday_competition",
+     0.35000000000000003
+    ],
+    [
+     "other_expenses",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "29/03/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Cuartos de final:*",
+   "choice": "competition_bonus",
+   "confidence": 0.3,
+   "top3": [
+    [
+     "competition_bonus",
+     0.34
+    ],
+    [
+     "other_income",
+     0.29000000000000004
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "24/03/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Cuartos de final:*",
+   "choice": "competition_bonus",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "competition_bonus",
+     0.42
+    ],
+    [
+     "other_income",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "18/03/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Weekend 8:*",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "matchday_competition",
+     0.05
+    ]
+   ],
+   "tokens": 1267
+  },
+  {
+   "label": "12/03/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Weekend 7 (pareja GELP-CELP):*",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_income",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "matchday_competition",
+     0.12
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "09/04/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Semifinales:*",
+   "choice": "competition_bonus",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "competition_bonus",
+     0.35000000000000003
+    ],
+    [
+     "other_income",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.2
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "01/06/23",
+   "lado": null,
+   "page": 70,
+   "section": "COPA METROPOLITANA 2023",
+   "choice": "other_income",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "other_income",
+     0.32
+    ],
+    [
+     "competition_bonus",
+     0.24000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.22
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "05/04/23",
+   "lado": null,
+   "page": 69,
+   "section": "*Semifinales:*",
+   "choice": "other_income",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_income",
+     0.35000000000000003
+    ],
+    [
+     "competition_bonus",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.17
+    ]
+   ],
+   "tokens": 1266
+  },
+  {
+   "label": "08/06/23",
+   "lado": null,
+   "page": 70,
+   "section": "COPA METROPOLITANA 2023",
+   "choice": "other_income",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "match_organisation_expense",
+     0.22
+    ],
+    [
+     "competition_bonus",
+     0.2
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "29/06/23",
+   "lado": null,
+   "page": 70,
+   "section": "COPA METROPOLITANA 2023",
+   "choice": "other_income",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_income",
+     0.36
+    ],
+    [
+     "match_organisation_expense",
+     0.2
+    ],
+    [
+     "competition_bonus",
+     0.19
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "06/07/23",
+   "lado": null,
+   "page": 70,
+   "section": "COPA METROPOLITANA 2023",
+   "choice": "other_income",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "other_income",
+     0.35000000000000003
+    ],
+    [
+     "match_organisation_expense",
+     0.23
+    ],
+    [
+     "competition_bonus",
+     0.19
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "15/06/23",
+   "lado": null,
+   "page": 70,
+   "section": "COPA METROPOLITANA 2023",
+   "choice": "other_income",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "match_organisation_expense",
+     0.24000000000000002
+    ],
+    [
+     "competition_bonus",
+     0.21
+    ]
+   ],
+   "tokens": 1272
+  },
+  {
+   "label": "4/12/22",
+   "lado": "expense",
+   "page": 79,
+   "section": "*Gastón Rodríguez:*",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "wages_squad",
+     0.19
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "18/12/22",
+   "lado": "expense",
+   "page": 79,
+   "section": "*Gastón Rodríguez:*",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.7
+    ],
+    [
+     "wages_squad",
+     0.19
+    ],
+    [
+     "player_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 800
+  },
+  {
+   "label": "21/5/23",
+   "lado": "expense",
+   "page": 79,
+   "section": "*Gastón Rodríguez:*",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "wages_squad",
+     0.2
+    ],
+    [
+     "player_amortisation",
+     0.05
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "25/6/23",
+   "lado": "expense",
+   "page": 79,
+   "section": "*Gastón Rodríguez:*",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.67
+    ],
+    [
+     "wages_squad",
+     0.18
+    ],
+    [
+     "player_amortisation",
+     0.06
+    ]
+   ],
+   "tokens": 799
+  },
+  {
+   "label": "12/3/23",
+   "lado": "expense",
+   "page": 79,
+   "section": "*Gastón Rodríguez:*",
+   "choice": "other_expenses",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "wages_squad",
+     0.17
+    ],
+    [
+     "lump_football_operations_expense",
+     0.04
+    ]
+   ],
+   "tokens": 799
+  }
+ ]
+}

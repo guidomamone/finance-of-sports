@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Perú/Alianza Lima/estado-financiero-2023.md",
+ "generado": "2026-10-02T00:10:09.203Z",
+ "criterioDeuda": "el que el club usa en otros años: la suma de las líneas \"mayo 25 2023 deuda concursal\" + \"nda e arquina (socio) deuda concursal\" + \"cuentas por cobrar comerciales 7 337 584 4 088 957 deuda concursal (nota\" + \"otras cuentas por cobrar 574 720 237 120 deuda concursal (nota\" (o sus equivalentes en este documento).",
+ "escala": "unidades",
+ "escala_evidencia": "(Expresado en Soles)",
+ "caja": {
+  "lineas": [
+   35
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "El criterio del club refiere a 'deuda concursal', que en este balance no aparece como línea separada (probablemente está incluida en 'Otras cuentas por pagar' corriente y no corriente, L36 y L43, junto con otros conceptos); no hay obligaciones financieras explícitas, salvo quizá 'Otras obligaciones' (L44, 57 433), de naturaleza dudosa. Por eso la lista de deuda queda vacía."
+}

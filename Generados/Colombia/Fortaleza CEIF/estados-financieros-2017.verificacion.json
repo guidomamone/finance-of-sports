@@ -1,0 +1,235 @@
+{
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
+ "generado": "2026-10-03T23:03:06.148Z",
+ "estado": "ok",
+ "clubId": "fortalezaceif-co",
+ "year": 2017,
+ "escala": {
+  "valor": "miles",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "fila",
+   "valor": "41,780",
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "linea": 771,
+   "reemplaza": null,
+   "motivo": "Nota 23 partida por un salto de página: las filas quedaron en la pág. 18 y el total solo en la 19; extraer la dejó afuera. (1.468) + 36.151 + 4.658 + 1 + 1.615 + 823 = 41.780.",
+   "evidencia": "filas pág. 18 del visor, .md L756-761; total pág. 19, L771",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "fila",
+   "valor": "(3,581)",
+   "etiqueta": "Costos financieros",
+   "lado": "financiero",
+   "linea": 794,
+   "reemplaza": "Total Otros Ingresos",
+   "motivo": "El PDF rotula 'Total Otros Ingresos' el total de la nota 25 COSTOS FINANCIEROS (gastos bancarios 389 + comisiones 1.944 + intereses 1.249): es un costo.",
+   "evidencia": "pág. 19 del visor, .md L785-794",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "resultado-final",
+   "valor": "1,347,094",
+   "motivo": "El documento no imprime el impuesto en ningún lado (sin estado de resultados, sin nota de impuesto, sin conciliación fiscal); el resultado final está en la nota de patrimonio y lo repiten 2018-2020. El impuesto se deduce.",
+   "evidencia": "pág. 14 del visor, .md L529 'Resultado Año 2017 1,347,094'; estados-financieros-2018.md L541",
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  },
+  {
+   "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+   "campo": "sin-dudas",
+   "valor": null,
+   "motivo": "Guido 2026-10-02: el año cierra (resultado contra lo impreso); las dudas de localizar y extraer las contesta la aritmética o los ajustes del año. No vuelven a la cola.",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-02"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "el documento no lo imprime"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "ingresos 5319.897 - gastos 3677.624 ± financiero -3.581 ± impuesto 0 no da el impreso 1347.094 → aceptado por ajuste manual (resultado final 1,347,094)"
+  },
+  {
+   "nombre": "resultado final",
+   "ok": true,
+   "detalle": "1347.094 por ajuste manual (1,347,094: El documento no imprime el impuesto en ningún lado (sin estado de resultados, sin nota de impuesto, sin conciliación fiscal); el resultado final está en la nota de patrimonio y lo repiten 2018-2020. El impuesto se deduce.); impuesto deducido 291.598 (antes de impuestos 1638.692; el documento imprimía 0)"
+  },
+  {
+   "nombre": "documento del año 2018",
+   "ok": true,
+   "detalle": "ingresos de 2017: 5319.897 en este documento y 5319.891 en estados-financieros-2018.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2016: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "ajuste manual: fila \"Otros gastos\" (gasto) 41,780 (2026-10-02, Nota 23 partida por un salto de página: las filas quedaron en la pág. 18 y el total solo en la 19; extraer la dejó afuera. (1.468) + 36.151 + 4.658 + 1 + 1.615 + 823 = 41.780.)",
+  "ajuste manual: fila \"Costos financieros\" (financiero) (3,581), en lugar de \"Total Otros Ingresos\" (2026-10-02, El PDF rotula 'Total Otros Ingresos' el total de la nota 25 COSTOS FINANCIEROS (gastos bancarios 389 + comisiones 1.944 + intereses 1.249): es un costo.)",
+  "ajuste manual: resultado final 1,347,094 (2026-10-02, El documento no imprime el impuesto en ningún lado (sin estado de resultados, sin nota de impuesto, sin conciliación fiscal); el resultado final está en la nota de patrimonio y lo repiten 2018-2020. El impuesto se deduce.)",
+  "duda de localizar cerrada por ajuste manual (sin-dudas): ¿Se toma 'Resultado Año 2017' 1,347,094 de la nota 18 (b18) como resultado del ejercicio 2017?",
+  "duda de localizar cerrada por ajuste manual (sin-dudas): ¿El cuadro de otros gastos (b28) no imprime total y se suma tal cual, incluyendo 'Impuestos Asumidos' negativo (1,468)?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se cargan las partidas de Gastos de Administración (b23 L587-L606, b24 L616-L657, b25 L667-L683) como detalle de 'Total Gastos de Administración'?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se cargan las partidas de Gastos de Ventas (b26 L693-L710 y b27 L720-L746) como detalle de 'Total Gastos de Ventas'?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se deja afuera la nota de otros gastos (b28 L756-L761) por no tener total impreso?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿El total 'Total Otros Gastos' de b30 (L783) corresponde realmente a otros ingresos, como dice L776?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿El total 'Total Otros Ingresos' de b31 (L794) corresponde a gastos financieros, como dice L787?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se dejan afuera los detalles de ingresos b20/b21 (L547-L566) por no tener columna de año ni coincidir con un renglón de b19?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Se toma 'Resultado Año 2017' (L529, 1,347,094) como resultado del ejercicio aunque la tabla se titule 'Total Pasivos por Impuestos'?",
+  "duda de extraer cerrada por ajuste manual (sin-dudas): ¿Las notas sin frase de escala (b19, b22, b28, b30, b31) están en miles de pesos?"
+ ],
+ "reintentar": null,
+ "reintentado": false,
+ "faltasDesglose": null,
+ "totales": {
+  "ingresos": 5319.897,
+  "gastos": 3677.624,
+  "financiero": -3.581,
+  "impuesto": 291.598,
+  "resultadoImpreso": 1347.094,
+  "resultadoParaCargar": 1347.094,
+  "resultadoFinal": {
+   "valor": 1347.094,
+   "impuesto": "deducido",
+   "escalon": "ajuste manual",
+   "donde": "Admin/ajustes-manuales.jsonl",
+   "impuestoImpreso": 0,
+   "impuestoDeducido": 291.598
+  },
+  "lecturaSignos": null
+ },
+ "lineas": [
+  {
+   "etiqueta": "Actividades Deportivas",
+   "lado": "ingreso",
+   "M": 4220.658,
+   "pagina": 14,
+   "linea": 538,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Otros Ingresos",
+   "lado": "ingreso",
+   "M": 1027.45,
+   "pagina": 14,
+   "linea": 539,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Venta de Productos",
+   "lado": "ingreso",
+   "M": 70.183,
+   "pagina": 14,
+   "linea": 540,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Casa Hogar",
+   "lado": "ingreso",
+   "M": 1.6,
+   "pagina": 14,
+   "linea": 541,
+   "origen": "nota que desglosa \"Total Ingresos actividades ordinarias\""
+  },
+  {
+   "etiqueta": "Aprovechamientos",
+   "lado": "ingreso",
+   "M": 0.001,
+   "pagina": 19,
+   "linea": 780,
+   "origen": "nota que desglosa \"Total Otros Gastos\""
+  },
+  {
+   "etiqueta": "Ajuste al Peso",
+   "lado": "ingreso",
+   "M": 0.005,
+   "pagina": 19,
+   "linea": 782,
+   "origen": "nota que desglosa \"Total Otros Gastos\""
+  },
+  {
+   "etiqueta": "Costos de Ventas",
+   "lado": "gasto",
+   "M": 127.783,
+   "pagina": 15,
+   "linea": 574,
+   "origen": "nota que desglosa \"Total Costo de Ventas\""
+  },
+  {
+   "etiqueta": "Costos Extraordinarios",
+   "lado": "gasto",
+   "M": 49.494,
+   "pagina": 15,
+   "linea": 575,
+   "origen": "nota que desglosa \"Total Costo de Ventas\""
+  },
+  {
+   "etiqueta": "Total Gastos de Administración",
+   "lado": "gasto",
+   "M": 2478.598,
+   "pagina": 17,
+   "linea": 684,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Total Gastos de Ventas",
+   "lado": "gasto",
+   "M": 979.969,
+   "pagina": 18,
+   "linea": 747,
+   "origen": "estado"
+  },
+  {
+   "etiqueta": "Otros gastos",
+   "lado": "gasto",
+   "M": 41.78,
+   "pagina": 19,
+   "linea": 771,
+   "origen": "ajuste manual"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": -1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Costos financieros",
+   "M": -3.581,
+   "linea": 794
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Impuesto (deducido: antes de impuestos − resultado final, por ajuste manual)",
+   "M": -291.598
+  }
+ ]
+}

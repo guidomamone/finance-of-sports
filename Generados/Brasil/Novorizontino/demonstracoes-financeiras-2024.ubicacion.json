@@ -1,0 +1,215 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.pdf",
+ "md": "Clubes/Brasil/Novorizontino/demonstracoes-financeiras-2024.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T01:42:49.340Z",
+ "bloques": {
+  "b1": {
+   "pagina": 3,
+   "lineas": [
+    42,
+    45
+   ],
+   "tipo": "texto"
+  },
+  "b2": {
+   "pagina": 4,
+   "lineas": [
+    87,
+    90
+   ],
+   "tipo": "texto"
+  },
+  "b3": {
+   "pagina": 5,
+   "lineas": [
+    125,
+    128
+   ],
+   "tipo": "texto"
+  },
+  "b4": {
+   "pagina": 6,
+   "lineas": [
+    164,
+    188
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 7,
+   "lineas": [
+    210,
+    229
+   ],
+   "tipo": "tabla"
+  },
+  "b6": {
+   "pagina": 8,
+   "lineas": [
+    254,
+    270
+   ],
+   "tipo": "tabla"
+  },
+  "b7": {
+   "pagina": 9,
+   "lineas": [
+    293,
+    297
+   ],
+   "tipo": "tabla"
+  },
+  "b8": {
+   "pagina": 10,
+   "lineas": [
+    320,
+    329
+   ],
+   "tipo": "tabla"
+  },
+  "b9": {
+   "pagina": 11,
+   "lineas": [
+    352,
+    382
+   ],
+   "tipo": "tabla"
+  },
+  "b10": {
+   "pagina": 20,
+   "lineas": [
+    742,
+    746
+   ],
+   "tipo": "tabla"
+  },
+  "b11": {
+   "pagina": 20,
+   "lineas": [
+    756,
+    763
+   ],
+   "tipo": "tabla"
+  },
+  "b12": {
+   "pagina": 20,
+   "lineas": [
+    767,
+    773
+   ],
+   "tipo": "tabla"
+  },
+  "b13": {
+   "pagina": 21,
+   "lineas": [
+    792,
+    798
+   ],
+   "tipo": "tabla"
+  },
+  "b14": {
+   "pagina": 21,
+   "lineas": [
+    802,
+    807
+   ],
+   "tipo": "tabla"
+  },
+  "b15": {
+   "pagina": 21,
+   "lineas": [
+    819,
+    825
+   ],
+   "tipo": "tabla"
+  },
+  "b16": {
+   "pagina": 22,
+   "lineas": [
+    842,
+    864
+   ],
+   "tipo": "tabla"
+  },
+  "b17": {
+   "pagina": 22,
+   "lineas": [
+    872,
+    883
+   ],
+   "tipo": "tabla"
+  },
+  "b18": {
+   "pagina": 23,
+   "lineas": [
+    902,
+    909
+   ],
+   "tipo": "tabla"
+  },
+  "b19": {
+   "pagina": 23,
+   "lineas": [
+    917,
+    923
+   ],
+   "tipo": "tabla"
+  },
+  "b20": {
+   "pagina": 23,
+   "lineas": [
+    927,
+    932
+   ],
+   "tipo": "tabla"
+  },
+  "b21": {
+   "pagina": 25,
+   "lineas": [
+    993,
+    1005
+   ],
+   "tipo": "tabla"
+  },
+  "b22": {
+   "pagina": 25,
+   "lineas": [
+    1009,
+    1015
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5",
+  "b6"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [
+  "b21",
+  "b22"
+ ],
+ "escala": "unidades",
+ "escala_evidencia": "Em reais",
+ "moneda": "BRL",
+ "columna_ejercicio": "2024",
+ "columna_anterior": "2023",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [
+  {
+   "pregunta": "¿Se toma como columna 2023 la última columna del bloque b6, aunque su encabezado solo muestra '2024' y columnas vacías?",
+   "propuesta": "sí",
+   "tema": "columna",
+   "renglon": "",
+   "texto": "En b6 (continuación) el encabezado no imprime '2023', pero los importes sugieren que hay dos ejercicios.",
+   "bloques": [
+    "b6"
+   ],
+   "afecta_carga": true
+  }
+ ],
+ "observaciones": "Las demonstrações do resultado están en b5 (de receita bruta a lucro bruto) y su continuación en b6 (de despesas operacionais a prejuízo líquido). Las notas 20 (custos operacionais, b21) y 21 (despesas financeiras, b22) desglosan gastos. No se ve una nota de receitas. El encabezado de las notas dice '31 de dezembro de 2023', pero las columnas son 2024/2023. Es una SAF individual."
+}

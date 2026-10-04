@@ -1,0 +1,296 @@
+{
+  "club": "viktoria-plzen",
+  "year": 2022,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/República Checa/Viktoria Plzeň/SL74_2022-vzz.md",
+  "generatedAt": "2026-09-30T22:07:53.918Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": true,
+  "tableCount": 3,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 1,
+      "section": "## VÝKAZ ZISKU A ZTRÁTY",
+      "columns": [
+        "Rok",
+        "Měsíc",
+        "IČ"
+      ],
+      "rows": [
+        {
+          "rawLabel": "2022",
+          "values": [
+            "",
+            "29105463"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": "Sídlo nebo bydliště účetní jednotky / a místo podnikání, liší-li se od bydliště / Štruncovy sady 2741/3 / Plzeň 1 / 301 00",
+      "columns": [
+        "TEXT b",
+        "",
+        "číslo řádku c",
+        "Skutečnost v účetním období",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "běžném 1",
+            "minulém 2"
+          ],
+          "bold": false,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Výkonová spotřeba",
+          "values": [
+            "Součet A.1. až A.3.",
+            "3",
+            "13",
+            "556"
+          ],
+          "bold": false,
+          "codigo": "A."
+        },
+        {
+          "rawLabel": "Služby",
+          "values": [
+            "",
+            "6",
+            "13",
+            "556"
+          ],
+          "bold": false,
+          "codigo": "A. 3."
+        },
+        {
+          "rawLabel": "Ostatní provozní výnosy",
+          "values": [
+            "Součet III.1. až III.3.",
+            "20",
+            "3",
+            ""
+          ],
+          "bold": false,
+          "codigo": "III."
+        },
+        {
+          "rawLabel": "Jiné provozní výnosy",
+          "values": [
+            "",
+            "23",
+            "3",
+            ""
+          ],
+          "bold": false,
+          "codigo": "III. 3."
+        },
+        {
+          "rawLabel": "Ostatní provozní náklady",
+          "values": [
+            "Součet F.1. až F.5.",
+            "24",
+            "174",
+            "3"
+          ],
+          "bold": false,
+          "codigo": "F."
+        },
+        {
+          "rawLabel": "Daně a poplatky",
+          "values": [
+            "",
+            "27",
+            "",
+            "3"
+          ],
+          "bold": false,
+          "codigo": "F. 3."
+        },
+        {
+          "rawLabel": "Jiné provozní náklady",
+          "values": [
+            "",
+            "29",
+            "174",
+            ""
+          ],
+          "bold": false,
+          "codigo": "F. 5."
+        },
+        {
+          "rawLabel": "Provozní výsledek hospodaření (+/-)",
+          "values": [
+            "I. + II. - A. - B. - C. - D. - E. + III. - F.",
+            "30",
+            "-184",
+            "-559"
+          ],
+          "bold": false,
+          "codigo": "*"
+        },
+        {
+          "rawLabel": "Výnosové úroky a podobné výnosy",
+          "values": [
+            "Součet VI.1. až VI.2.",
+            "39",
+            "115",
+            "106"
+          ],
+          "bold": false,
+          "codigo": "VI."
+        },
+        {
+          "rawLabel": "Výnosové úroky a podobné výnosy – ovládaná nebo ovládající osoba",
+          "values": [
+            "",
+            "40",
+            "115",
+            "106"
+          ],
+          "bold": false,
+          "codigo": "VI. 1."
+        },
+        {
+          "rawLabel": "Ostatní finanční náklady",
+          "values": [
+            "",
+            "47",
+            "7",
+            "1"
+          ],
+          "bold": false,
+          "codigo": "K."
+        },
+        {
+          "rawLabel": "Finanční výsledek hospodaření (+/-)",
+          "values": [
+            "IV. - G. + V. - H. + VI. - I. - J. + VII. - K.",
+            "48",
+            "108",
+            "105"
+          ],
+          "bold": false,
+          "codigo": "*"
+        },
+        {
+          "rawLabel": "Výsledek hospodaření před zdaněním (+/-)",
+          "values": [
+            "* (ř. 30) + * (ř. 48)",
+            "49",
+            "-76",
+            "-454"
+          ],
+          "bold": true,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Daň z příjmů",
+          "values": [
+            "Součet L.1. až L.2.",
+            "50",
+            "20",
+            "11"
+          ],
+          "bold": false,
+          "codigo": "L."
+        },
+        {
+          "rawLabel": "Daň z příjmů splatná",
+          "values": [
+            "",
+            "51",
+            "20",
+            "11"
+          ],
+          "bold": false,
+          "codigo": "L. 1."
+        },
+        {
+          "rawLabel": "Výsledek hospodaření po zdanění (+/-)",
+          "values": [
+            "(ř. 49) - L.",
+            "53",
+            "-96",
+            "-465"
+          ],
+          "bold": true,
+          "codigo": ""
+        },
+        {
+          "rawLabel": "Výsledek hospodaření za účetní období (+/-)",
+          "values": [
+            "(ř. 53) - M.",
+            "55",
+            "-96",
+            "-465"
+          ],
+          "bold": true,
+          "codigo": "*"
+        },
+        {
+          "rawLabel": "Čistý obrat za účetní období",
+          "values": [
+            "I. + II. + III. + IV. + V. + VI. + VII.",
+            "56",
+            "118",
+            "106"
+          ],
+          "bold": false,
+          "codigo": "*"
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 1,
+      "section": null,
+      "columns": [
+        "Sestaveno dne: 29.06.2023",
+        "Podpisový záznam statutárního orgánu účetní jednotky nebo podpisový vzor fyzické osoby, která je účetní jednotkou",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Právní forma účetní jednotky",
+          "values": [
+            "Předmět podnikání Pronájem nemovitostí",
+            "Pozn.:"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/viktoria-plzen-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"viktoria-plzen\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+  ]
+}

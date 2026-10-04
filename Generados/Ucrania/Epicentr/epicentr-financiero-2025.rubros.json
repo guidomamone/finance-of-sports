@@ -1,0 +1,54 @@
+{
+ "md": "Clubes/Ucrania/Epicentr/epicentr-financiero-2025.md",
+ "pdf": "Clubes/Ucrania/Epicentr/epicentr-financiero-2025.pdf",
+ "club": "epicentr",
+ "year": 2025,
+ "numberFormat": "ambiguo",
+ "generatedAt": "2026-09-30T22:08:20.573Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "Чистий дохід від реалізації продукції (товарів, робіт, послуг)",
+   "lado": "revenue",
+   "page": 2,
+   "section": "### 2. Звіт про фінансові результати",
+   "values": [
+    0.010936
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Інші операційні доходи",
+   "lado": "revenue",
+   "page": 2,
+   "section": "### 2. Звіт про фінансові результати",
+   "values": [
+    0.020736
+   ],
+   "origen": "estado 3"
+  },
+  {
+   "label": "Інші операційні витрати",
+   "lado": "expense",
+   "page": 2,
+   "section": "### 2. Звіт про фінансові результати",
+   "values": [
+    -0.029848
+   ],
+   "origen": "estado 3"
+  }
+ ]
+}

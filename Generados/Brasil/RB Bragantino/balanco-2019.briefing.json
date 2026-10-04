@@ -1,0 +1,252 @@
+{
+  "club": "rbbragantino-br",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/RB Bragantino/balanco-2019.md",
+  "generatedAt": "2026-09-30T22:41:59.714Z",
+  "numberFormat": "ambiguo",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 6,
+  "relevantTableCount": 3,
+  "tables": [
+    {
+      "page": 2,
+      "section": "RED BULL BRAGANTINO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Custo do departamento de futebol",
+          "values": [
+            "(23.807)",
+            "(3.872)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos com jogos e bonificações",
+          "values": [
+            "(2.470)",
+            "(1.402)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 2,
+      "section": "Custo com departamento amador 13 - (84) / (29.466) (5.656)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Resultado operacional",
+          "values": [
+            "9.705",
+            "4.095"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas gerais e adminstrativas",
+          "values": [
+            "(7.559)",
+            "(5.626)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado antes das receitas e despesas financeiras",
+          "values": [
+            "2.146",
+            "(1.531)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 2,
+      "section": "Receitas financeiras 14 8 (0)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas financeiras",
+          "values": [
+            "(2.010)",
+            "(27.460)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit líquido/(Déficit) do exercício",
+          "values": [
+            "(28.991)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "RED BULL BRAGANTINO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Provisão para créditos de liquidação duvidosa",
+          "values": [
+            "1.042"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão para contingências -",
+          "values": [
+            "(2.766)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 5,
+      "section": "Obrigações tributárias 2.292 217 / Acordos trabalhistas e cíveis (5.449) 3.589 / Receitas antecipadas (425) (35) / Tributos parcelados (275) (213) / Atletas contratados (2.262) 96",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Outras contas a pagar (20)",
+          "values": [
+            "1.424"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido gerado nas atividades operacionais",
+          "values": [
+            "(9.365)",
+            "(27.812)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "Fluxos de caixa das atividades de investimentos / Captação de empréstimos - Terceiros - 177 / Pagamento de empréstimos - Terceiros (201) -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Partes relacionadas",
+          "values": [
+            "30.493",
+            "27.597"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido gerado nas atividades de investimento",
+          "values": [
+            "30.291",
+            "27.774"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 7,
+    "results": [
+      {
+        "label": "Resultado operacional",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado operacional",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas gerais e adminstrativas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas gerais e adminstrativas",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Despesas gerais e administrativas",
+        "similarity": 50
+      },
+      {
+        "label": "Resultado antes das receitas e despesas financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado antes das receitas e despesas financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit líquido/(Déficit) do exercício",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Superávit líquido/(Déficit) do exercício",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras contas a pagar (20)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras contas a pagar (20)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Caixa líquido gerado nas atividades operacionais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Caixa líquido gerado nas atividades operacionais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "RB Bragantino",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

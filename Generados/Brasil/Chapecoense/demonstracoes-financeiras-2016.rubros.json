@@ -1,0 +1,666 @@
+{
+  "md": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2016.md",
+  "pdf": "Clubes/Brasil/Chapecoense/demonstracoes-financeiras-2016.pdf",
+  "club": "chapecoense-br",
+  "year": 2016,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:51:52.698Z",
+  "tieOuts": {
+    "cierran": 1,
+    "noCierran": 30
+  },
+  "warnings": [
+    "10 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "20 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 56,
+    "notasUsadas": [
+      "35"
+    ]
+  },
+  "ladoConocido": 44,
+  "rubros": [
+    {
+      "label": "Descrição",
+      "lado": null,
+      "page": 27,
+      "section": "Com base em contratos firmados, o clube apropria mensalmente ao resultado do / exercício na “Rúbrica de Uso de Imagem” os valores pelo contrato de cessão de direitos, / nos quais representaram em 2016 o valor de R$ 9.624.159 (R$ 9.309.966 em 2015). / 23. Gerais e Administrativas / Composto por:",
+      "values": [
+        2.016
+      ],
+      "origen": "estado 38",
+      "glosa": "Descripción"
+    },
+    {
+      "label": "Multas e Indenizações",
+      "lado": null,
+      "page": 27,
+      "section": "Com base em contratos firmados, o clube apropria mensalmente ao resultado do / exercício na “Rúbrica de Uso de Imagem” os valores pelo contrato de cessão de direitos, / nos quais representaram em 2016 o valor de R$ 9.624.159 (R$ 9.309.966 em 2015). / 23. Gerais e Administrativas / Composto por:",
+      "values": [
+        462.655
+      ],
+      "origen": "estado 38",
+      "glosa": "Multas e indemnizaciones"
+    },
+    {
+      "label": "Propaganda e Publicidade",
+      "lado": null,
+      "page": 27,
+      "section": "Com base em contratos firmados, o clube apropria mensalmente ao resultado do / exercício na “Rúbrica de Uso de Imagem” os valores pelo contrato de cessão de direitos, / nos quais representaram em 2016 o valor de R$ 9.624.159 (R$ 9.309.966 em 2015). / 23. Gerais e Administrativas / Composto por:",
+      "values": [
+        266.607
+      ],
+      "origen": "estado 38",
+      "glosa": "Publicidad y propaganda"
+    },
+    {
+      "label": "Gastos Logísticos",
+      "lado": "expense",
+      "page": 27,
+      "section": "Com base em contratos firmados, o clube apropria mensalmente ao resultado do / exercício na “Rúbrica de Uso de Imagem” os valores pelo contrato de cessão de direitos, / nos quais representaram em 2016 o valor de R$ 9.624.159 (R$ 9.309.966 em 2015). / 23. Gerais e Administrativas / Composto por:",
+      "values": [
+        545.626
+      ],
+      "origen": "estado 38",
+      "glosa": "Gastos logísticos"
+    },
+    {
+      "label": "Provisões Contingência",
+      "lado": null,
+      "page": 27,
+      "section": "Com base em contratos firmados, o clube apropria mensalmente ao resultado do / exercício na “Rúbrica de Uso de Imagem” os valores pelo contrato de cessão de direitos, / nos quais representaram em 2016 o valor de R$ 9.624.159 (R$ 9.309.966 em 2015). / 23. Gerais e Administrativas / Composto por:",
+      "values": [
+        69.754
+      ],
+      "origen": "estado 38",
+      "glosa": "Provisiones para contingencias"
+    },
+    {
+      "label": "Doações/Ajudas de Custo",
+      "lado": "expense",
+      "page": 27,
+      "section": "Com base em contratos firmados, o clube apropria mensalmente ao resultado do / exercício na “Rúbrica de Uso de Imagem” os valores pelo contrato de cessão de direitos, / nos quais representaram em 2016 o valor de R$ 9.624.159 (R$ 9.309.966 em 2015). / 23. Gerais e Administrativas / Composto por:",
+      "values": [
+        104.03
+      ],
+      "origen": "estado 38",
+      "glosa": "Donaciones y ayudas de costes"
+    },
+    {
+      "label": "Água, Luz e Telefone -",
+      "lado": null,
+      "page": 27,
+      "section": "Com base em contratos firmados, o clube apropria mensalmente ao resultado do / exercício na “Rúbrica de Uso de Imagem” os valores pelo contrato de cessão de direitos, / nos quais representaram em 2016 o valor de R$ 9.624.159 (R$ 9.309.966 em 2015). / 23. Gerais e Administrativas / Composto por:",
+      "values": [
+        98.459
+      ],
+      "origen": "estado 38",
+      "glosa": "Agua, luz y teléfono -"
+    },
+    {
+      "label": "Despesas Bancarias",
+      "lado": "expense",
+      "page": 27,
+      "section": "Com base em contratos firmados, o clube apropria mensalmente ao resultado do / exercício na “Rúbrica de Uso de Imagem” os valores pelo contrato de cessão de direitos, / nos quais representaram em 2016 o valor de R$ 9.624.159 (R$ 9.309.966 em 2015). / 23. Gerais e Administrativas / Composto por:",
+      "values": [
+        109.852
+      ],
+      "origen": "estado 38",
+      "glosa": "Gastos bancarios"
+    },
+    {
+      "label": "Mensalidades/Periódicos",
+      "lado": null,
+      "page": 27,
+      "section": "Com base em contratos firmados, o clube apropria mensalmente ao resultado do / exercício na “Rúbrica de Uso de Imagem” os valores pelo contrato de cessão de direitos, / nos quais representaram em 2016 o valor de R$ 9.624.159 (R$ 9.309.966 em 2015). / 23. Gerais e Administrativas / Composto por:",
+      "values": [
+        30.903
+      ],
+      "origen": "estado 38",
+      "glosa": "Cuotas y publicaciones periódicas"
+    },
+    {
+      "label": "Academia",
+      "lado": null,
+      "page": 27,
+      "section": "Com base em contratos firmados, o clube apropria mensalmente ao resultado do / exercício na “Rúbrica de Uso de Imagem” os valores pelo contrato de cessão de direitos, / nos quais representaram em 2016 o valor de R$ 9.624.159 (R$ 9.309.966 em 2015). / 23. Gerais e Administrativas / Composto por:",
+      "values": [
+        1.3
+      ],
+      "origen": "estado 38",
+      "glosa": "Gimnasio"
+    },
+    {
+      "label": "Demais Gastos",
+      "lado": "expense",
+      "page": 27,
+      "section": "Com base em contratos firmados, o clube apropria mensalmente ao resultado do / exercício na “Rúbrica de Uso de Imagem” os valores pelo contrato de cessão de direitos, / nos quais representaram em 2016 o valor de R$ 9.624.159 (R$ 9.309.966 em 2015). / 23. Gerais e Administrativas / Composto por:",
+      "values": [
+        330.601
+      ],
+      "origen": "estado 38",
+      "glosa": "Demás gastos"
+    },
+    {
+      "label": "Descrição",
+      "lado": "expense",
+      "page": 26,
+      "section": "19. Despesas com Pessoal / Composto por:",
+      "values": [
+        0.002016
+      ],
+      "origen": "nota 35 (ancla 5)",
+      "ancla": "Despesa com Pessoal Nota",
+      "glosa": "Descripción"
+    },
+    {
+      "label": "Despesa com Pessoal Nota",
+      "lado": "expense",
+      "page": 9,
+      "section": "DRE – DEMONSTRAÇÃO DOS RESULTADOS / DEMONSTRAÇÃO DO RESULTADO DOS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO / DESPESAS OPERACIONAIS",
+      "values": [
+        -28.186595
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Gastos de personal Nota"
+    },
+    {
+      "label": "Ordenados e Salários",
+      "lado": "expense",
+      "page": 26,
+      "section": "19. Despesas com Pessoal / Composto por:",
+      "values": [
+        17.474536
+      ],
+      "origen": "nota 35 (ancla 5)",
+      "ancla": "Despesa com Pessoal Nota",
+      "glosa": "Sueldos y salarios"
+    },
+    {
+      "label": "Premiação",
+      "lado": "expense",
+      "page": 26,
+      "section": "19. Despesas com Pessoal / Composto por:",
+      "values": [
+        5.459751
+      ],
+      "origen": "nota 35 (ancla 5)",
+      "ancla": "Despesa com Pessoal Nota",
+      "glosa": "Primas e incentivos"
+    },
+    {
+      "label": "Impostos",
+      "lado": "expense",
+      "page": 26,
+      "section": "19. Despesas com Pessoal / Composto por:",
+      "values": [
+        2.24902
+      ],
+      "origen": "nota 35 (ancla 5)",
+      "ancla": "Despesa com Pessoal Nota",
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Custo Transf. Jogadores",
+      "lado": "expense",
+      "page": 26,
+      "section": "19. Despesas com Pessoal / Composto por:",
+      "values": [
+        2.253193
+      ],
+      "origen": "nota 35 (ancla 5)",
+      "ancla": "Despesa com Pessoal Nota",
+      "glosa": "Coste de traspaso de jugadores"
+    },
+    {
+      "label": "Indenizações",
+      "lado": "expense",
+      "page": 26,
+      "section": "19. Despesas com Pessoal / Composto por:",
+      "values": [
+        0.001507
+      ],
+      "origen": "nota 35 (ancla 5)",
+      "ancla": "Despesa com Pessoal Nota",
+      "glosa": "Indemnizaciones"
+    },
+    {
+      "label": "Aluguel",
+      "lado": "expense",
+      "page": 26,
+      "section": "19. Despesas com Pessoal / Composto por:",
+      "values": [
+        0.079056
+      ],
+      "origen": "nota 35 (ancla 5)",
+      "ancla": "Despesa com Pessoal Nota",
+      "glosa": "Alquileres"
+    },
+    {
+      "label": "Alimentação",
+      "lado": "expense",
+      "page": 26,
+      "section": "19. Despesas com Pessoal / Composto por:",
+      "values": [
+        0.007521
+      ],
+      "origen": "nota 35 (ancla 5)",
+      "ancla": "Despesa com Pessoal Nota",
+      "glosa": "Alimentación"
+    },
+    {
+      "label": "Despesas Médicas",
+      "lado": "expense",
+      "page": 26,
+      "section": "19. Despesas com Pessoal / Composto por:",
+      "values": [
+        0.463024
+      ],
+      "origen": "nota 35 (ancla 5)",
+      "ancla": "Despesa com Pessoal Nota",
+      "glosa": "Gastos médicos"
+    },
+    {
+      "label": "Seguros",
+      "lado": "expense",
+      "page": 26,
+      "section": "19. Despesas com Pessoal / Composto por:",
+      "values": [
+        0.140488
+      ],
+      "origen": "nota 35 (ancla 5)",
+      "ancla": "Despesa com Pessoal Nota",
+      "glosa": "Seguros"
+    },
+    {
+      "label": "Outros Gastos c/ Pessoal",
+      "lado": "expense",
+      "page": 26,
+      "section": "19. Despesas com Pessoal / Composto por:",
+      "values": [
+        0.058499
+      ],
+      "origen": "nota 35 (ancla 5)",
+      "ancla": "Despesa com Pessoal Nota",
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Despesa com Materiais",
+      "lado": "expense",
+      "page": 9,
+      "section": "DRE – DEMONSTRAÇÃO DOS RESULTADOS / DEMONSTRAÇÃO DO RESULTADO DOS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO / DESPESAS OPERACIONAIS",
+      "values": [
+        -0.794554
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos de materiales"
+    },
+    {
+      "label": "Despesa com Manutenção Nota",
+      "lado": "expense",
+      "page": 9,
+      "section": "DRE – DEMONSTRAÇÃO DOS RESULTADOS / DEMONSTRAÇÃO DO RESULTADO DOS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO / DESPESAS OPERACIONAIS",
+      "values": [
+        -0.980693
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos de mantenimiento Nota"
+    },
+    {
+      "label": "Gastos com Jogos e Competições Nota",
+      "lado": "expense",
+      "page": 9,
+      "section": "DRE – DEMONSTRAÇÃO DOS RESULTADOS / DEMONSTRAÇÃO DO RESULTADO DOS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO / DESPESAS OPERACIONAIS",
+      "values": [
+        -6.56738
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos de partidos y competiciones Nota"
+    },
+    {
+      "label": "Serviços Terceiros",
+      "lado": null,
+      "page": 9,
+      "section": "DRE – DEMONSTRAÇÃO DOS RESULTADOS / DEMONSTRAÇÃO DO RESULTADO DOS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO / DESPESAS OPERACIONAIS",
+      "values": [
+        -2.563281
+      ],
+      "origen": "estado 5",
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Depreciação e Bens Pq Valor",
+      "lado": null,
+      "page": 9,
+      "section": "DRE – DEMONSTRAÇÃO DOS RESULTADOS / DEMONSTRAÇÃO DO RESULTADO DOS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO / DESPESAS OPERACIONAIS",
+      "values": [
+        -0.431512
+      ],
+      "origen": "estado 5",
+      "glosa": "Amortización y bienes de escaso valor"
+    },
+    {
+      "label": "Direito de Imagem Nota",
+      "lado": null,
+      "page": 9,
+      "section": "DRE – DEMONSTRAÇÃO DOS RESULTADOS / DEMONSTRAÇÃO DO RESULTADO DOS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO / DESPESAS OPERACIONAIS",
+      "values": [
+        -9.624159
+      ],
+      "origen": "estado 5",
+      "glosa": "Derechos de imagen Nota"
+    },
+    {
+      "label": "Gerais e Administrativas Nota",
+      "lado": null,
+      "page": 9,
+      "section": "DRE – DEMONSTRAÇÃO DOS RESULTADOS / DEMONSTRAÇÃO DO RESULTADO DOS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO / DESPESAS OPERACIONAIS",
+      "values": [
+        -1.921328
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos generales y administrativos Nota"
+    },
+    {
+      "label": "Despesas Tributárias",
+      "lado": "expense",
+      "page": 9,
+      "section": "DRE – DEMONSTRAÇÃO DOS RESULTADOS / DEMONSTRAÇÃO DO RESULTADO DOS EXERCÍCIOS / FINDOS EM 31 DE DEZEMBRO / DESPESAS OPERACIONAIS",
+      "values": [
+        -0.435578
+      ],
+      "origen": "estado 5",
+      "glosa": "Gastos tributarios"
+    },
+    {
+      "label": "Receita Financeira Nota",
+      "lado": "revenue",
+      "page": 9,
+      "section": "",
+      "values": [
+        1.452487
+      ],
+      "origen": "estado 6",
+      "glosa": "Ingresos financieros Nota"
+    },
+    {
+      "label": "Despesa Financeira Nota",
+      "lado": "expense",
+      "page": 9,
+      "section": "",
+      "values": [
+        -0.433553
+      ],
+      "origen": "estado 6",
+      "glosa": "Gastos financieros Nota"
+    },
+    {
+      "label": "Outras Receitas Operacionais Nota",
+      "lado": "revenue",
+      "page": 9,
+      "section": "",
+      "values": [
+        7.710062
+      ],
+      "origen": "estado 6",
+      "glosa": "Otros ingresos de explotación Nota"
+    },
+    {
+      "label": "Outras Despesas Operacionais Nota",
+      "lado": "expense",
+      "page": 9,
+      "section": "",
+      "values": [
+        -12.906399
+      ],
+      "origen": "estado 6",
+      "glosa": "Otros gastos de explotación Nota"
+    },
+    {
+      "label": "Receitas Financeiras",
+      "lado": "revenue",
+      "page": 27,
+      "section": "24. Resultado Financeiro / Composto por:",
+      "values": [
+        2.016
+      ],
+      "origen": "estado 39",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Descontos Obtidos",
+      "lado": null,
+      "page": 27,
+      "section": "24. Resultado Financeiro / Composto por:",
+      "values": [
+        5.227
+      ],
+      "origen": "estado 39",
+      "glosa": "Descuentos obtenidos"
+    },
+    {
+      "label": "Juros Recebidos",
+      "lado": null,
+      "page": 27,
+      "section": "24. Resultado Financeiro / Composto por:",
+      "values": [
+        2.85
+      ],
+      "origen": "estado 39",
+      "glosa": "Intereses percibidos"
+    },
+    {
+      "label": "Receitas de Aplicações Financeiras",
+      "lado": "revenue",
+      "page": 27,
+      "section": "24. Resultado Financeiro / Composto por:",
+      "values": [
+        1284.3
+      ],
+      "origen": "estado 39",
+      "glosa": "Ingresos por inversiones financieras"
+    },
+    {
+      "label": "Outras Despesas",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        2.016
+      ],
+      "origen": "estado 43",
+      "glosa": "Otros gastos"
+    },
+    {
+      "label": "Despesas diversas",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        -73.995
+      ],
+      "origen": "estado 43",
+      "glosa": "Gastos diversos"
+    },
+    {
+      "label": "Custo dos Bens Patrimoniais Vendidos",
+      "lado": "expense",
+      "page": 28,
+      "section": "",
+      "values": [
+        -83.818
+      ],
+      "origen": "estado 43",
+      "glosa": "Coste de los bienes patrimoniales vendidos"
+    },
+    {
+      "label": "Receita de Transmissão",
+      "lado": "revenue",
+      "page": 24,
+      "section": "fosse constituída uma reserva para contingências para manutenção e garantia da / continuidade da Entidade no montante de 80% do superávit do exercício que resultou / no valor de R$ 5.400.549 em 2016. / 18. Composição da Receita Líquida: / Composto por:",
+      "values": [
+        30.590115
+      ],
+      "origen": "estado 32",
+      "glosa": "Ingresos por retransmisión"
+    },
+    {
+      "label": "Bilheteria (a)",
+      "lado": "revenue",
+      "page": 24,
+      "section": "fosse constituída uma reserva para contingências para manutenção e garantia da / continuidade da Entidade no montante de 80% do superávit do exercício que resultou / no valor de R$ 5.400.549 em 2016. / 18. Composição da Receita Líquida: / Composto por:",
+      "values": [
+        2.613362
+      ],
+      "origen": "estado 32",
+      "glosa": "Taquilla (a)"
+    },
+    {
+      "label": "Patrocínio",
+      "lado": "revenue",
+      "page": 24,
+      "section": "fosse constituída uma reserva para contingências para manutenção e garantia da / continuidade da Entidade no montante de 80% do superávit do exercício que resultou / no valor de R$ 5.400.549 em 2016. / 18. Composição da Receita Líquida: / Composto por:",
+      "values": [
+        7.009372
+      ],
+      "origen": "estado 32",
+      "glosa": "Patrocinio"
+    },
+    {
+      "label": "Receita de Negociação de Atletas (b)",
+      "lado": "revenue",
+      "page": 24,
+      "section": "fosse constituída uma reserva para contingências para manutenção e garantia da / continuidade da Entidade no montante de 80% do superávit do exercício que resultou / no valor de R$ 5.400.549 em 2016. / 18. Composição da Receita Líquida: / Composto por:",
+      "values": [
+        6.024233
+      ],
+      "origen": "estado 32",
+      "glosa": "Ingresos por traspaso de jugadores (b)"
+    },
+    {
+      "label": "Programa Sócio Torcedor (c)",
+      "lado": "revenue",
+      "page": 24,
+      "section": "fosse constituída uma reserva para contingências para manutenção e garantia da / continuidade da Entidade no montante de 80% do superávit do exercício que resultou / no valor de R$ 5.400.549 em 2016. / 18. Composição da Receita Líquida: / Composto por:",
+      "values": [
+        6.580712
+      ],
+      "origen": "estado 32",
+      "glosa": "Programa de socios abonados (c)"
+    },
+    {
+      "label": "Time-Mania (d)",
+      "lado": "revenue",
+      "page": 24,
+      "section": "fosse constituída uma reserva para contingências para manutenção e garantia da / continuidade da Entidade no montante de 80% do superávit do exercício que resultou / no valor de R$ 5.400.549 em 2016. / 18. Composição da Receita Líquida: / Composto por:",
+      "values": [
+        0.225936
+      ],
+      "origen": "estado 32",
+      "glosa": "Timemania (d)"
+    },
+    {
+      "label": "Direito de Uso de Marca",
+      "lado": "revenue",
+      "page": 24,
+      "section": "fosse constituída uma reserva para contingências para manutenção e garantia da / continuidade da Entidade no montante de 80% do superávit do exercício que resultou / no valor de R$ 5.400.549 em 2016. / 18. Composição da Receita Líquida: / Composto por:",
+      "values": [
+        0.596654
+      ],
+      "origen": "estado 32",
+      "glosa": "Derechos de uso de marca"
+    },
+    {
+      "label": "Receitas Diversas",
+      "lado": "revenue",
+      "page": 24,
+      "section": "fosse constituída uma reserva para contingências para manutenção e garantia da / continuidade da Entidade no montante de 80% do superávit do exercício que resultou / no valor de R$ 5.400.549 em 2016. / 18. Composição da Receita Líquida: / Composto por:",
+      "values": [
+        0.336319
+      ],
+      "origen": "estado 32",
+      "glosa": "Ingresos diversos"
+    },
+    {
+      "label": "Campeonato Catarinense",
+      "lado": "revenue",
+      "page": 25,
+      "section": "(a)      As receitas de Bilheteria ocorreram nas seguintes competições: / Quantidade / Competição                                        Valor / Jogos",
+      "values": [
+        420.675
+      ],
+      "origen": "estado 34",
+      "glosa": "Campeonato Catarinense"
+    },
+    {
+      "label": "Campeonato Brasileiro",
+      "lado": "revenue",
+      "page": 25,
+      "section": "(a)      As receitas de Bilheteria ocorreram nas seguintes competições: / Quantidade / Competição                                        Valor / Jogos",
+      "values": [
+        1562.137
+      ],
+      "origen": "estado 34",
+      "glosa": "Campeonato Brasileño"
+    },
+    {
+      "label": "Copa do Brasil",
+      "lado": "revenue",
+      "page": 25,
+      "section": "(a)      As receitas de Bilheteria ocorreram nas seguintes competições: / Quantidade / Competição                                        Valor / Jogos",
+      "values": [
+        19.59
+      ],
+      "origen": "estado 34",
+      "glosa": "Copa de Brasil"
+    },
+    {
+      "label": "Copa Sul Americana",
+      "lado": "revenue",
+      "page": 25,
+      "section": "(a)      As receitas de Bilheteria ocorreram nas seguintes competições: / Quantidade / Competição                                        Valor / Jogos",
+      "values": [
+        599.39
+      ],
+      "origen": "estado 34",
+      "glosa": "Copa Sudamericana"
+    },
+    {
+      "label": "Cessão p/ Terceiros",
+      "lado": "revenue",
+      "page": 25,
+      "section": "(a)      As receitas de Bilheteria ocorreram nas seguintes competições: / Quantidade / Competição                                        Valor / Jogos",
+      "values": [
+        11.57
+      ],
+      "origen": "estado 34",
+      "glosa": "Cesión a terceros"
+    },
+    {
+      "label": "(-) Deduções Tributárias e Sindicais",
+      "lado": "revenue",
+      "page": 24,
+      "section": "Doações                                             12.389                 - / Receita Federações (e)                         13.532.645                  - / Royalties                                          109.576                 -",
+      "values": [
+        -4.761643
+      ],
+      "origen": "estado 33",
+      "glosa": "(-) Deducciones tributarias y sindicales"
+    },
+    {
+      "label": "(-) Repasse Venda Atleta",
+      "lado": "revenue",
+      "page": 24,
+      "section": "Doações                                             12.389                 - / Receita Federações (e)                         13.532.645                  - / Royalties                                          109.576                 -",
+      "values": [
+        -0.4365
+      ],
+      "origen": "estado 33",
+      "glosa": "(-) Porcentajes a terceros por venta de jugadores"
+    }
+  ]
+}

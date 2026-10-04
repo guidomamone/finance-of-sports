@@ -1,0 +1,202 @@
+{
+  "md": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2014.md",
+  "pdf": "Clubes/Chile/Universidad de Chile (Azul Azul)/estados-financieros-2014.pdf",
+  "club": "udechile-cl",
+  "year": 2014,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:57:18.842Z",
+  "tieOuts": {
+    "cierran": 10,
+    "noCierran": 24
+  },
+  "warnings": [
+    "4 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "20 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "4 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 16,
+    "notasUsadas": []
+  },
+  "ladoConocido": 15,
+  "rubros": [
+    {
+      "label": "Gasto de administración",
+      "lado": "expense",
+      "page": 7,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo / amortizado",
+      "values": [
+        -3177.103
+      ],
+      "origen": "estado 8",
+      "glosa": "Gasto de administración"
+    },
+    {
+      "label": "Ingresos financieros",
+      "lado": "revenue",
+      "page": 7,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo / amortizado",
+      "values": [
+        67.159
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Costos financieros",
+      "lado": "expense",
+      "page": 7,
+      "section": "Pérdidas que surgen de la baja en cuentas de activos financieros medidos al costo / amortizado",
+      "values": [
+        -122.53
+      ],
+      "origen": "estado 8",
+      "glosa": "Costos financieros"
+    },
+    {
+      "label": "Borderó (costos directos)",
+      "lado": "expense",
+      "page": 66,
+      "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        1218.824
+      ],
+      "origen": "estado 43",
+      "glosa": "Borderó (costos directos)"
+    },
+    {
+      "label": "Remuneraciones",
+      "lado": "expense",
+      "page": 66,
+      "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        5653.747
+      ],
+      "origen": "estado 43",
+      "glosa": "Remuneraciones"
+    },
+    {
+      "label": "Amortización de pases",
+      "lado": "expense",
+      "page": 66,
+      "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2903.887
+      ],
+      "origen": "estado 43",
+      "glosa": "Amortización de pases"
+    },
+    {
+      "label": "Costo de venta pases de jugadores",
+      "lado": "expense",
+      "page": 66,
+      "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        2929.145
+      ],
+      "origen": "estado 43",
+      "glosa": "Costo de venta pases de jugadores"
+    },
+    {
+      "label": "Otros gastos de operación",
+      "lado": "expense",
+      "page": 66,
+      "section": "21. COMPOSICION DE CUENTAS DE RESULTADOS RELEVANTES",
+      "values": [
+        1639.736
+      ],
+      "origen": "estado 43",
+      "glosa": "Otros gastos de operación"
+    },
+    {
+      "label": "Costo no amortizado",
+      "lado": "expense",
+      "page": 67,
+      "section": "Al 31 de Diciembre de 2014 y 31 de Diciembre de 2013 el detalle de los costos de / venta de pases de jugadores: / 31.12.2014       31.12.2013 / M$               M$",
+      "values": [
+        1.996108
+      ],
+      "origen": "estado 44",
+      "glosa": "Costo no amortizado"
+    },
+    {
+      "label": "Indemnización por término anticipado de contrato",
+      "lado": null,
+      "page": 67,
+      "section": "Al 31 de Diciembre de 2014 y 31 de Diciembre de 2013 el detalle de los costos de / venta de pases de jugadores: / 31.12.2014       31.12.2013 / M$               M$",
+      "values": [
+        0.703259
+      ],
+      "origen": "estado 44",
+      "glosa": "Indemnización por término anticipado de contrato"
+    },
+    {
+      "label": "Otros costos (1)",
+      "lado": "expense",
+      "page": 67,
+      "section": "Al 31 de Diciembre de 2014 y 31 de Diciembre de 2013 el detalle de los costos de / venta de pases de jugadores: / 31.12.2014       31.12.2013 / M$               M$",
+      "values": [
+        0.229778
+      ],
+      "origen": "estado 44",
+      "glosa": "Otros costos (1)"
+    },
+    {
+      "label": "Borderó",
+      "lado": "revenue",
+      "page": 66,
+      "section": "20. INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        3493.236
+      ],
+      "origen": "estado 41",
+      "glosa": "Borderó"
+    },
+    {
+      "label": "Publicidad",
+      "lado": "revenue",
+      "page": 66,
+      "section": "20. INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        4160.271
+      ],
+      "origen": "estado 41",
+      "glosa": "Publicidad"
+    },
+    {
+      "label": "Derechos de T.V.",
+      "lado": "revenue",
+      "page": 66,
+      "section": "20. INGRESOS DE ACTIVIDADES ORDINARIAS",
+      "values": [
+        2595.219
+      ],
+      "origen": "estado 41",
+      "glosa": "Derechos de T.V."
+    },
+    {
+      "label": "jugadores",
+      "lado": "revenue",
+      "page": 66,
+      "section": "Ingresos por transferencias de pases de",
+      "values": [
+        4249.368
+      ],
+      "origen": "estado 42",
+      "glosa": "jugadores"
+    },
+    {
+      "label": "Ingresos varios",
+      "lado": "revenue",
+      "page": 66,
+      "section": "Ingresos por transferencias de pases de",
+      "values": [
+        365.729
+      ],
+      "origen": "estado 42",
+      "glosa": "Ingresos varios"
+    }
+  ]
+}

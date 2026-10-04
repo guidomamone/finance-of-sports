@@ -1,0 +1,331 @@
+{
+ "pdf": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2023-24.pdf",
+ "md": "Clubes/Inglaterra/Leeds United/leeds-group-accounts-2023-24.md",
+ "cierre": "2025-03-28",
+ "paginas": [
+  15,
+  25,
+  26
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:52:52.240Z",
+ "escala": "unidades",
+ "filas": [
+  {
+   "pagina": 15,
+   "etiqueta": "Turnover",
+   "importe_impreso": "127,558,280",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 15,
+   "etiqueta": "Cost of sales",
+   "importe_impreso": "(26,243,272)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 15,
+   "etiqueta": "Gross profit",
+   "importe_impreso": "101,315,008",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 15,
+   "etiqueta": "Administrative expenses",
+   "importe_impreso": "(177,568,583)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 15,
+   "etiqueta": "Operating loss",
+   "importe_impreso": "(76,253,575)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 15,
+   "etiqueta": "Gain on disposai of players’ registrations",
+   "importe_impreso": "33,694,289",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 15,
+   "etiqueta": "Interest receivable and similar income",
+   "importe_impreso": "3,395,256",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 15,
+   "etiqueta": "Interest payable and similar expenses",
+   "importe_impreso": "(21,647,455)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 15,
+   "etiqueta": "Loss before taxation",
+   "importe_impreso": "(60,811,485)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 15,
+   "etiqueta": "Loss for the financial year and total comprehensive income",
+   "importe_impreso": "(60,811,485)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Amortisation of intangible assets",
+   "importe_impreso": "§9,590,307",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Depreciation of tangible assets",
+   "importe_impreso": "4,855,858",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Administrative expenses",
+   "importe_impreso": "7,475,304",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Gains on disposal of tangible assets",
+   "importe_impreso": "(100)",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Impairment of trade debtors",
+   "importe_impreso": "480",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Foreign exchange differences",
+   "importe_impreso": "(1,080,413)",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Operating lease costs",
+   "importe_impreso": "2,649,057",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Fees payable for the audit of the financial statements",
+   "importe_impreso": "27,778",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Audit-related assurance services",
+   "importe_impreso": "8,550",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Taxation compliance services",
+   "importe_impreso": "24,705",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Other assurance services",
+   "importe_impreso": "11,722",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Fees payable to the company's auditor for other services",
+   "importe_impreso": "44,977",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Wages and salaries",
+   "importe_impreso": "73,952,221",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Social security costs",
+   "importe_impreso": "9,797,841",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Other pension costs",
+   "importe_impreso": "280,374",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "The aggregate payroll costs incurred during the year",
+   "importe_impreso": "84,030,436",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Remuneration",
+   "importe_impreso": "381,978",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Company contributions to defined benefit pension plans",
+   "importe_impreso": "18,821",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Directors' aggregate remuneration",
+   "importe_impreso": "400,799",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Interest receivable and similar income",
+   "importe_impreso": "3,395,256",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Interest on obligations under finance leases contracts",
+   "importe_impreso": "21,933",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Other interest payable and similar charges",
+   "importe_impreso": "21,625,522",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Interest payable and similar expenses",
+   "importe_impreso": "21,647,455",
+   "tipo": "subtotal",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Loss on ordinary activities before taxation",
+   "importe_impreso": "(60,811,485)",
+   "tipo": "resultado",
+   "lado": "impuesto",
+   "detalla_a": "Tax on loss"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Loss on ordinary activities by rate of tax",
+   "importe_impreso": "(15,202,872)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on loss"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Effect of expenses not deductible for tax purposes",
+   "importe_impreso": "574,666",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on loss"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Effect of capital allowances and depreciation",
+   "importe_impreso": "725,865",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on loss"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Unused tax losses",
+   "importe_impreso": "15,794,200",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on loss"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Other timing differences",
+   "importe_impreso": "(1,891,859)",
+   "tipo": "renglon",
+   "lado": "impuesto",
+   "detalla_a": "Tax on loss"
+  }
+ ],
+ "total_ingresos_impreso": null,
+ "total_gastos_impreso": null,
+ "resultado_impreso": "(60,811,485)",
+ "observaciones": "El documento corresponde al ejercicio cerrado el 30 de junio de 2024 (columna 2024), no al que cierra el 2025-03-28 pedido; se extrajo la columna 2024. Tax on loss figura vacío/nil, no se incluyó. El importe de amortización se imprime '§9,590,307' (posible error de OCR, probablemente 89,590,307). En el estado los importes de 2024 y 2023 aparecen desordenados en la transcripción; se asignaron Administrative expenses (177,568,583) y Operating loss (76,253,575) a 2024 por coherencia aritmética. Las filas de notas de operating loss, staff costs y directors son desgloses informativos que no suman a un renglón específico; detalla_a asignado aproximadamente. No hay totales de ingresos ni gastos impresos."
+}

@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Alemania/RB Leipzig/jahresabschluss-2018-19.md",
+ "pdf": "Clubes/Alemania/RB Leipzig/jahresabschluss-2018-19.pdf",
+ "club": "rbleipzig-de",
+ "year": 2019,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:50:26.852Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 0,
+ "rubros": [
+  {
+   "label": "Spielbetrieb",
+   "lado": null,
+   "page": 8,
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Umsatzerlöse aus TEUR",
+   "values": [
+    183.87
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Handel",
+   "lado": null,
+   "page": 8,
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Umsatzerlöse aus TEUR",
+   "values": [
+    5.743
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Sonstigem",
+   "lado": null,
+   "page": 8,
+   "section": "4. Erläuterungen zur Gewinn- und Verlustrechnung / 4.1 Umsatzerlöse / Umsatzerlöse aus TEUR",
+   "values": [
+    78.337
+   ],
+   "origen": "estado 8"
+  }
+ ]
+}

@@ -1,0 +1,462 @@
+{
+  "md": "Clubes/Bélgica/Zulte Waregem/jaarrekening-2020-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Zulte Waregem/jaarrekening-2020-06-30-individual.pdf",
+  "club": "zultewaregem-be",
+  "year": 2020,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:56:12.942Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 0
+  },
+  "warnings": [],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 40,
+    "notasUsadas": []
+  },
+  "ladoConocido": 32,
+  "rubros": [
+    {
+      "label": "Bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        7.076
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos de explotación"
+    },
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.07
+      ],
+      "origen": "estado 3",
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Voorraad goederen in bewerking en gereed product en bestellingen in uitvoering: toename (afname) (+)/(-)",
+      "lado": null,
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.071
+      ],
+      "origen": "estado 3",
+      "glosa": "Variación de existencias de productos en curso y terminados y pedidos en curso: aumento (disminución) (+)/(-)"
+    },
+    {
+      "label": "Geproduceerde vaste activa",
+      "lado": null,
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.072
+      ],
+      "origen": "estado 3",
+      "glosa": "Trabajos realizados por la empresa para su activo"
+    },
+    {
+      "label": "Andere bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.074
+      ],
+      "origen": "estado 3",
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Niet-recurrente bedrijfsopbrengsten",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.076
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos de explotación no recurrentes"
+    },
+    {
+      "label": "Bedrijfskosten",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        6.066
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos de explotación"
+    },
+    {
+      "label": "Handelsgoederen, grond- en hulpstoffen",
+      "lado": null,
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.06
+      ],
+      "origen": "estado 3",
+      "glosa": "Mercaderías, materias primas y materias auxiliares"
+    },
+    {
+      "label": "Aankopen",
+      "lado": null,
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        6.008
+      ],
+      "origen": "estado 3",
+      "glosa": "Compras"
+    },
+    {
+      "label": "Voorraad: afname (toename) (+)/(-)",
+      "lado": null,
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.609
+      ],
+      "origen": "estado 3",
+      "glosa": "Existencias: disminución (aumento) (+)/(-)"
+    },
+    {
+      "label": "Diensten en diverse goederen",
+      "lado": null,
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.061
+      ],
+      "origen": "estado 3",
+      "glosa": "Servicios y bienes diversos"
+    },
+    {
+      "label": "Bezoldigingen, sociale lasten en pensioenen (+)/(-)",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.062
+      ],
+      "origen": "estado 3",
+      "glosa": "Remuneraciones, cargas sociales y pensiones (+)/(-)"
+    },
+    {
+      "label": "Afschrijvingen en waardeverminderingen op oprichtingskosten, op immateriële en materiële vaste activa",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.63
+      ],
+      "origen": "estado 3",
+      "glosa": "Amortizaciones y correcciones de valor de gastos de constitución, inmovilizado intangible y material"
+    },
+    {
+      "label": "Waardeverminderingen op voorraden, op bestellingen in uitvoering en op handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": null,
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        6.314
+      ],
+      "origen": "estado 3",
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y deudores comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Voorzieningen voor risico's en kosten: toevoegingen (bestellingen en terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        6.358
+      ],
+      "origen": "estado 3",
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (utilizaciones y reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere bedrijfskosten",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        6.408
+      ],
+      "origen": "estado 3",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Als herstructureringskosten geactiveerde bedrijfskosten (-)",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.649
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos de explotación activados como gastos de reestructuración (-)"
+    },
+    {
+      "label": "Niet-recurrente bedrijfskosten",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.066
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos de explotación no recurrentes"
+    },
+    {
+      "label": "Financiële opbrengsten",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        7.576
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Recurrente financiële opbrengsten",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.075
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos financieros recurrentes"
+    },
+    {
+      "label": "Opbrengsten uit financiële vaste activa",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.75
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos del inmovilizado financiero"
+    },
+    {
+      "label": "Opbrengsten uit vlottende activa",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.751
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos del activo corriente"
+    },
+    {
+      "label": "Andere financiële opbrengsten",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        7.529
+      ],
+      "origen": "estado 3",
+      "glosa": "Otros ingresos financieros"
+    },
+    {
+      "label": "Niet-recurrente financiële opbrengsten",
+      "lado": "revenue",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.076
+      ],
+      "origen": "estado 3",
+      "glosa": "Ingresos financieros no recurrentes"
+    },
+    {
+      "label": "Financiële kosten",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        6.566
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Recurrente financiële kosten",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.065
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos financieros recurrentes"
+    },
+    {
+      "label": "Kosten van schulden",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.65
+      ],
+      "origen": "estado 3",
+      "glosa": "Costes de la deuda"
+    },
+    {
+      "label": "Waardeverminderingen op vlottende activa andere dan voorraden, bestellingen in uitvoering en handelsvorderingen: toevoegingen (terugnemingen) (+)/(-)",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.651
+      ],
+      "origen": "estado 3",
+      "glosa": "Correcciones de valor de activos corrientes distintos de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones) (+)/(-)"
+    },
+    {
+      "label": "Andere financiële kosten",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        6.529
+      ],
+      "origen": "estado 3",
+      "glosa": "Otros gastos financieros"
+    },
+    {
+      "label": "Niet-recurrente financiële kosten",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.066
+      ],
+      "origen": "estado 3",
+      "glosa": "Gastos financieros no recurrentes"
+    },
+    {
+      "label": "Ontrekking aan de uitgestelde belastingen",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.78
+      ],
+      "origen": "estado 3",
+      "glosa": "Disposición de impuestos diferidos"
+    },
+    {
+      "label": "Overboeking naar de uitgestelde belastingen",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.68
+      ],
+      "origen": "estado 3",
+      "glosa": "Transferencia a impuestos diferidos"
+    },
+    {
+      "label": "Belastingen",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        6.703
+      ],
+      "origen": "estado 3",
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Regularisering van belastingen en terugneming van voorzieningen voor belastingen",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.077
+      ],
+      "origen": "estado 3",
+      "glosa": "Regularización de impuestos y reversión de provisiones fiscales"
+    },
+    {
+      "label": "Ontrekking aan de belastingvrije reserves",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.789
+      ],
+      "origen": "estado 3",
+      "glosa": "Disposición de reservas exentas de impuestos"
+    },
+    {
+      "label": "Overboeking naar de belastingvrije reserves",
+      "lado": "expense",
+      "page": 8,
+      "section": "## RESULTATENREKENING",
+      "values": [
+        0.689
+      ],
+      "origen": "estado 3",
+      "glosa": "Transferencia a reservas exentas de impuestos"
+    },
+    {
+      "label": "Omzet",
+      "lado": "revenue",
+      "page": 34,
+      "section": "GRENSVERLEGGEND NV / # 2. RESULTATENREKENING",
+      "values": [
+        14.476661
+      ],
+      "origen": "estado 58",
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "Personeelskosten",
+      "lado": "expense",
+      "page": 34,
+      "section": "GRENSVERLEGGEND NV / # 2. RESULTATENREKENING",
+      "values": [
+        14.049037
+      ],
+      "origen": "estado 58",
+      "glosa": "Gastos de personal"
+    },
+    {
+      "label": "Afschrijvingen",
+      "lado": null,
+      "page": 34,
+      "section": "GRENSVERLEGGEND NV / # 2. RESULTATENREKENING",
+      "values": [
+        2.544146
+      ],
+      "origen": "estado 58",
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Onttrekking /overboeking aan/naar de uitgestelde belastingen",
+      "lado": "expense",
+      "page": 34,
+      "section": "GRENSVERLEGGEND NV / # 2. RESULTATENREKENING",
+      "values": [
+        0.076034
+      ],
+      "origen": "estado 58",
+      "glosa": "Disposición / transferencia de/a impuestos diferidos"
+    }
+  ]
+}

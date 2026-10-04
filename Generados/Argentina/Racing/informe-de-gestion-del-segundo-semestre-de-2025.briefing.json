@@ -1,0 +1,269 @@
+{
+  "club": "racing",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Racing/informe-de-gestion-del-segundo-semestre-de-2025.md",
+  "generatedAt": "2026-09-30T01:15:38.357Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 12,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 6,
+  "relevantTableCount": 3,
+  "tables": [
+    {
+      "page": 45,
+      "section": "cobertura de la delegación juvenil en el Mundial de Clubes disputado en España. / •    En el mes de octubre, el Club alcanzó por primera vez el tercer lugar en cantidad / total de seguidores, considerando el conjunto de las cinco principales redes / sociales, según el reporte oficial de la Liga Profesional de Fútbol. / Plataforma            Junio                Diciembre              Variación",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "X",
+          "values": [
+            "449.676",
+            "441.227",
+            "-1,87%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Facebook",
+          "values": [
+            "782.000",
+            "823.000",
+            "+5,24%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Instagram",
+          "values": [
+            "927.000",
+            "1.072.332",
+            "+15,67%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TikTok",
+          "values": [
+            "783.500",
+            "806.900",
+            "+2,98%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "YouTube",
+          "values": [
+            "63.600",
+            "68.900",
+            "+8,33%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 59,
+      "section": "estructura. / •   El mayor control sobre gastos, imputaciones y cajas chicas permitió no solo / gastar menos, sino también saber en qué se gastaba. / •   Mejora sustancial de la relación entre ingresos y egresos del área, comparando / mismo período entre 2024 y 2025",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "o En 2024, por cada peso que ingresó al área se gastaron",
+          "values": [
+            "$2,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "o En 2025, por cada peso que ingresó al área se gastaron",
+          "values": [
+            "$1,72"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 59,
+      "section": "PERÍODO            INGRESOS        EGRESOS             RESULTADO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "2024 $ 215.000.000 $",
+          "values": [
+            "520.000.000",
+            "-$305.000.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2025 $",
+          "values": [
+            "580.000.000",
+            "$1.000.000.000",
+            "-$420.000.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 59,
+      "section": "VARIACIÓN / RED SOCIAL           2024           2025            VARIACIÓN",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Instagram 8.520 10.490 +",
+          "values": [
+            "23,10%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Facebook 13.100 14.000 +",
+          "values": [
+            "6,9%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "X 9.200 10.325 +",
+          "values": [
+            "12,2%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 61,
+      "section": "• Autogestión y servicios asociados / • Gestión de abonos, accesos y capacidad del Estadio / • Soporte tecnológico y mejoras operativas / 1. Acciones realizadas y resultados obtenidos / 1.1. Atención al socio y dispositivos presenciales",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "• Socios atendidos:",
+          "values": [
+            "6.294."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "• Transacciones presenciales:",
+          "values": [
+            "19.817."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 61,
+      "section": "o Bot: 62.336 socios únicos / o 0800: 14.101 socios únicos / o RacingPass: 93.362 socios únicos operando por la plataforma / o Transacciones en RacingPass: 633.456 / •   0800 – desempeño",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "o Llamadas atendidas:",
+          "values": [
+            "10.907"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "o Nivel de atención:",
+          "values": [
+            "92,93%"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 6,
+    "results": [
+      {
+        "label": "o En 2024, por cada peso que ingresó al área se gastaron",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "o En 2024, por cada peso que ingresó al área se gastaron",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "o En 2025, por cada peso que ingresó al área se gastaron",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "o En 2025, por cada peso que ingresó al área se gastaron",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2024 $ 215.000.000 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2024 $ 215.000.000 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2025 $",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2025 $",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "• Socios atendidos:",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "• Socios atendidos:",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "• Transacciones presenciales:",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "• Transacciones presenciales:",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Racing Club",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [
+    {
+      "page": 8,
+      "line": "•   Se incorporó la consulta a portales de compras para agilizar cotizaciones de"
+    }
+  ],
+  "warnings": []
+}

@@ -1,0 +1,857 @@
+{
+ "md": "Clubes/Rusia/Baltika Kaliningrad/2025-auditorskoe-zaklyuchenie.md",
+ "generatedAt": "2026-09-30T15:14:16.172Z",
+ "rubros": [
+  {
+   "label": "Другие НМА",
+   "lado": "expense",
+   "page": 18,
+   "section": "",
+   "choice": "other_expenses",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_expenses",
+     0.4
+    ],
+    [
+     "player_amortisation",
+     0.34
+    ],
+    [
+     "other_amortisation",
+     0.25
+    ]
+   ],
+   "tokens": 1022
+  },
+  {
+   "label": "Капитальные вложения на улучшение нематериальных активов - всего",
+   "lado": "expense",
+   "page": 18,
+   "section": "",
+   "choice": "player_amortisation",
+   "confidence": 0.41,
+   "top3": [
+    [
+     "player_amortisation",
+     0.47000000000000003
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "other_amortisation",
+     0.16
+    ]
+   ],
+   "tokens": 1096
+  },
+  {
+   "label": "Программы ЭВМ",
+   "lado": "expense",
+   "page": 18,
+   "section": "",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_amortisation",
+     0.05
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1019
+  },
+  {
+   "label": "из них исключительные права",
+   "lado": null,
+   "page": 17,
+   "section": "# Пояснения к бухгалтерскому балансу и отчету о финансовых результатах / # 3. Нематериальные активы / # 3.1. Наличие и движение нематериальных активов",
+   "choice": "broadcasting",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "broadcasting",
+     0.43
+    ],
+    [
+     "other_amortisation",
+     0.23
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 1590
+  },
+  {
+   "label": "Нематериальные активы - всего",
+   "lado": null,
+   "page": 17,
+   "section": "# Пояснения к бухгалтерскому балансу и отчету о финансовых результатах / # 3. Нематериальные активы / # 3.1. Наличие и движение нематериальных активов",
+   "choice": "player_amortisation",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "player_amortisation",
+     0.44
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "other_amortisation",
+     0.16
+    ]
+   ],
+   "tokens": 1651
+  },
+  {
+   "label": "Произведения науки, литературы и искусства",
+   "lado": null,
+   "page": 17,
+   "section": "# Пояснения к бухгалтерскому балансу и отчету о финансовых результатах / # 3. Нематериальные активы / # 3.1. Наличие и движение нематериальных активов",
+   "choice": "other_amortisation",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_amortisation",
+     0.42
+    ],
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1494
+  },
+  {
+   "label": "Капитальные вложения на создание нематериальных активов - всего",
+   "lado": "expense",
+   "page": 18,
+   "section": "",
+   "choice": "player_amortisation",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "player_amortisation",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.41
+    ],
+    [
+     "other_amortisation",
+     0.04
+    ]
+   ],
+   "tokens": 1088
+  },
+  {
+   "label": "Капитальные вложения на приобретение нематериальных активов - всего",
+   "lado": "expense",
+   "page": 18,
+   "section": "",
+   "choice": "player_amortisation",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "player_amortisation",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1099
+  },
+  {
+   "label": "Запасы - всего",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 6. Запасы / # 6.1. Наличие и движение запасов",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "other_expenses",
+     0.99
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1048
+  },
+  {
+   "label": "Товары",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 6. Запасы / # 6.1. Наличие и движение запасов",
+   "choice": "other_expenses",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "other_expenses",
+     0.98
+    ],
+    [
+     "lump_football_operations_expense",
+     0.01
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 960
+  },
+  {
+   "label": "Сырье и материалы",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 6. Запасы / # 6.1. Наличие и движение запасов",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "admin_general_expense",
+     0
+    ]
+   ],
+   "tokens": 1077
+  },
+  {
+   "label": "Долгосрочная дебиторская задолженность - всего",
+   "lado": "expense",
+   "page": 24,
+   "section": "### 7. Дебиторская задолженность / #### 7.1. Наличие и движение дебиторской задолженности",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.92
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ],
+    [
+     "other_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "в том числе",
+   "lado": "expense",
+   "page": 24,
+   "section": "### 7. Дебиторская задолженность / #### 7.1. Наличие и движение дебиторской задолженности",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ],
+    [
+     "player_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 975
+  },
+  {
+   "label": "Иные виды запасов",
+   "lado": "expense",
+   "page": 23,
+   "section": "# 6. Запасы / # 6.1. Наличие и движение запасов",
+   "choice": "other_expenses",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Расходы будущих периодов",
+   "lado": "expense",
+   "page": 24,
+   "section": "### 7. Дебиторская задолженность / #### 7.1. Наличие и движение дебиторской задолженности",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ],
+    [
+     "other_amortisation",
+     0.07
+    ]
+   ],
+   "tokens": 1073
+  },
+  {
+   "label": "Краткосрочная дебиторская задолженность - всего",
+   "lado": "expense",
+   "page": 24,
+   "section": "### 7. Дебиторская задолженность / #### 7.1. Наличие и движение дебиторской задолженности",
+   "choice": "other_expenses",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "other_expenses",
+     0.95
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "other_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Расчеты с поставщиками и подрядчиками",
+   "lado": "expense",
+   "page": 24,
+   "section": "### 7. Дебиторская задолженность / #### 7.1. Наличие и движение дебиторской задолженности",
+   "choice": "other_expenses",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "lump_football_operations_expense",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ]
+   ],
+   "tokens": 1026
+  },
+  {
+   "label": "Расчеты с покупателями и заказчиками",
+   "lado": "expense",
+   "page": 24,
+   "section": "### 7. Дебиторская задолженность / #### 7.1. Наличие и движение дебиторской задолженности",
+   "choice": "other_expenses",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1023
+  },
+  {
+   "label": "Расчеты по налогам и сборам",
+   "lado": "expense",
+   "page": 24,
+   "section": "### 7. Дебиторская задолженность / #### 7.1. Наличие и движение дебиторской задолженности",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1083
+  },
+  {
+   "label": "Расчеты с разными дебиторами и кредиторами",
+   "lado": "expense",
+   "page": 24,
+   "section": "### 7. Дебиторская задолженность / #### 7.1. Наличие и движение дебиторской задолженности",
+   "choice": "other_expenses",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "admin_general_expense",
+     0.09
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1094
+  },
+  {
+   "label": "Расчеты с персоналом по оплате труда",
+   "lado": "expense",
+   "page": 24,
+   "section": "### 7. Дебиторская задолженность / #### 7.1. Наличие и движение дебиторской задолженности",
+   "choice": "wages_squad",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "wages_squad",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 1113
+  },
+  {
+   "label": "Расчеты с подотчетными лицами",
+   "lado": "expense",
+   "page": 24,
+   "section": "### 7. Дебиторская задолженность / #### 7.1. Наличие и движение дебиторской задолженности",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.79
+    ],
+    [
+     "admin_general_expense",
+     0.2
+    ],
+    [
+     "wages_squad",
+     0.01
+    ]
+   ],
+   "tokens": 1095
+  },
+  {
+   "label": "Авансы по аренде (лизингу)",
+   "lado": "expense",
+   "page": 24,
+   "section": "### 7. Дебиторская задолженность / #### 7.1. Наличие и движение дебиторской задолженности",
+   "choice": "other_expenses",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "admin_general_expense",
+     0.24000000000000002
+    ],
+    [
+     "other_amortisation",
+     0.02
+    ]
+   ],
+   "tokens": 1100
+  },
+  {
+   "label": "Расчеты с персоналом по прочим операциям",
+   "lado": "expense",
+   "page": 24,
+   "section": "### 7. Дебиторская задолженность / #### 7.1. Наличие и движение дебиторской задолженности",
+   "choice": "other_expenses",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_expenses",
+     0.71
+    ],
+    [
+     "wages_squad",
+     0.13
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 1131
+  },
+  {
+   "label": "Амортизация",
+   "lado": "expense",
+   "page": 28,
+   "section": "# 10. Расходы по обычным видам деятельности",
+   "choice": "depreciation",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "depreciation",
+     0.36
+    ],
+    [
+     "other_amortisation",
+     0.27
+    ],
+    [
+     "player_amortisation",
+     0.26
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Материальные затраты",
+   "lado": "expense",
+   "page": 28,
+   "section": "# 10. Расходы по обычным видам деятельности",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.48
+    ],
+    [
+     "admin_general_expense",
+     0.41
+    ],
+    [
+     "lump_football_operations_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Затраты на оплату труда",
+   "lado": "expense",
+   "page": 28,
+   "section": "# 10. Расходы по обычным видам деятельности",
+   "choice": "wages_squad",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "wages_squad",
+     0.89
+    ],
+    [
+     "other_expenses",
+     0.1
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1024
+  },
+  {
+   "label": "Отчисления на социальные нужды",
+   "lado": "expense",
+   "page": 28,
+   "section": "# 10. Расходы по обычным видам деятельности",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Прочие затраты",
+   "lado": "expense",
+   "page": 28,
+   "section": "# 10. Расходы по обычным видам деятельности",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "player_amortisation",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1042
+  },
+  {
+   "label": "Общая сумма всех расходов составила в 2025г -2",
+   "lado": "expense",
+   "page": 41,
+   "section": "### 3.8.Кредиты и займы полученные / ### 3.9. Оценочные обязательства / ### 3.10. Обеспечение обязательств / ### 3.11 Государственная помощь / ### 3.12. Признание доходов и расходов (метод начисления)",
+   "choice": "other_expenses",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "other_expenses",
+     0.68
+    ],
+    [
+     "lump_football_operations_expense",
+     0.21
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1177
+  },
+  {
+   "label": "Изменение остатков (прирост (-), уменьшение (+)): незавершенного производства, готовой продукции",
+   "lado": "expense",
+   "page": 28,
+   "section": "# 10. Расходы по обычным видам деятельности",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1167
+  },
+  {
+   "label": "(в 2024 году-2",
+   "lado": null,
+   "page": 41,
+   "section": "### 3.8.Кредиты и займы полученные / ### 3.9. Оценочные обязательства / ### 3.10. Обеспечение обязательств / ### 3.11 Государственная помощь / ### 3.12. Признание доходов и расходов (метод начисления)",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.43
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1800
+  },
+  {
+   "label": "Расходы на оплату труда",
+   "lado": "expense",
+   "page": 42,
+   "section": "АКЦИОНЕРНОЕ ОБЩЕСТВО «ФУТБОЛЬНЫЙ КЛУБ «БАЛТИКА» / РОССИЯ, 236022, г. КАЛИНИНГРАД, ул. ДМИТРИЯ ДОНСКОГО, 2 / 3.12.1 Доходы и расходы, связанные с деятельностью в области женского футбола. / Доходы от деятельности в области женского футбола в 2025г. отсутствуют. / Понесенные расходы составили 19 574 тыс. руб., в том числе:",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.51
+    ],
+    [
+     "wages_squad",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1239
+  },
+  {
+   "label": "Операционные расходы",
+   "lado": "expense",
+   "page": 42,
+   "section": "АКЦИОНЕРНОЕ ОБЩЕСТВО «ФУТБОЛЬНЫЙ КЛУБ «БАЛТИКА» / РОССИЯ, 236022, г. КАЛИНИНГРАД, ул. ДМИТРИЯ ДОНСКОГО, 2 / 3.12.1 Доходы и расходы, связанные с деятельностью в области женского футбола. / Доходы от деятельности в области женского футбола в 2025г. отсутствуют. / Понесенные расходы составили 19 574 тыс. руб., в том числе:",
+   "choice": "match_organisation_expense",
+   "confidence": 0.25,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.32
+    ],
+    [
+     "youth_other_sports_expense",
+     0.29
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ]
+   ],
+   "tokens": 1237
+  },
+  {
+   "label": "Текущий налог на прибыль",
+   "lado": "expense",
+   "page": 42,
+   "section": "# 3.13 Расчеты по налогу на прибыль",
+   "choice": "admin_general_expense",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Страховые взносы",
+   "lado": null,
+   "page": 42,
+   "section": "АКЦИОНЕРНОЕ ОБЩЕСТВО «ФУТБОЛЬНЫЙ КЛУБ «БАЛТИКА» / РОССИЯ, 236022, г. КАЛИНИНГРАД, ул. ДМИТРИЯ ДОНСКОГО, 2 / 3.12.1 Доходы и расходы, связанные с деятельностью в области женского футбола. / Доходы от деятельности в области женского футбола в 2025г. отсутствуют. / Понесенные расходы составили 19 574 тыс. руб., в том числе:",
+   "choice": "other_expenses",
+   "confidence": 0.29,
+   "top3": [
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "lump_football_operations_expense",
+     0.28
+    ],
+    [
+     "admin_general_expense",
+     0.23
+    ]
+   ],
+   "tokens": 1707
+  },
+  {
+   "label": "Отложенный налог на прибыль",
+   "lado": "expense",
+   "page": 42,
+   "section": "# 3.13 Расчеты по налогу на прибыль",
+   "choice": "admin_general_expense",
+   "confidence": 0.84,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.14
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1055
+  }
+ ]
+}

@@ -1,0 +1,527 @@
+{
+  "club": "dender-be",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Bélgica/Dender EH/jaarrekening-2025-06-30-individual.md",
+  "generatedAt": "2026-09-30T22:42:29.124Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 69,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 14,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 3,
+      "section": "VKT-VZW 3.1 / JAARREKENING / BALANS NA WINSTVERDELING / ACTIVA / OPRICHTINGSKOSTEN 20",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "VASTE ACTIVA 21/28",
+          "values": [
+            "4.307.030",
+            "2.468.642"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immateriële vaste activa 611 |",
+          "values": [
+            "1.442.122",
+            "11.504"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiële vaste activa 612 | 22/27",
+          "values": [
+            "2.841.713",
+            "2.436.583"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terreinen en gebouwen",
+          "values": [
+            "2.282.886",
+            "1.994.326"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Installaties, machines en uitrusting",
+          "values": [
+            "483.061",
+            "395.731"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Meubilair en rollend materieel",
+          "values": [
+            "58.654",
+            "34.293"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 3,
+      "section": "Leasing en soortgelijke rechten 25 / Overige materiële vaste activa 26 17.111 12.233 / Activa in aanbouw en vooruitbetalingen 27",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Financiële vaste activa 613 |",
+          "values": [
+            "23.195",
+            "20.555"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VLOTTENDE ACTIVA 29/58",
+          "values": [
+            "1.884.759",
+            "1.363.137"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorderingen op meer dan één jaar",
+          "values": [
+            "96.000",
+            "108.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "Handelsvorderingen 290 / Overige vorderingen 291 96.000 108.000 / Voorraden en bestellingen in uitvoering 3 / Voorraden 30/36 / Bestellingen in uitvoering 37",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Vorderingen op ten hoogste één jaar 40/41",
+          "values": [
+            "1.081.104",
+            "600.342"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handelsvorderingen",
+          "values": [
+            "1.052.714",
+            "511.553"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige vorderingen",
+          "values": [
+            "28.390",
+            "88.789"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "Geldbeleggingen 50/53",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Liquide middelen 54/58",
+          "values": [
+            "44.976",
+            "52.284"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 490/1",
+          "values": [
+            "662.679",
+            "602.512"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE ACTIVA 20/58",
+          "values": [
+            "6.191.789",
+            "3.831.779"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "[N° 0451438394 VKT-VZW 3.2 / PASSIVA / EIGEN VERMOGEN 10/15 -19.661.148 -14.664.400",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Overgedragen winst (verlies) @NG)",
+          "values": [
+            "-20.347.648",
+            "-15.394.400"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kapitaalsubsidies",
+          "values": [
+            "686.500",
+            "730.000"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "VOORZIENINGEN EN UITGESTELDE BELASTINGEN 6.2 | 16",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "SCHULDEN 17/49",
+          "values": [
+            "25.852.936",
+            "18.496.179"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Schulden op meer dan één jaar 63 |",
+          "values": [
+            "21.682.470",
+            "14.692.042"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële schulden 170/4",
+          "values": [
+            "21.682.470",
+            "14.692.042"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Schulden op ten hoogste één jaar 6.3 | 42/48 2.716.121 2.810.702 / Schulden op meer dan één jaar die binnen het jaar vervallen 42 / Financiële schulden 43 / Kredietinstellingen 430/8 / Overige leningen 439",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Handelsschulden",
+          "values": [
+            "908.618",
+            "1.056.238"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Leveranciers 440/4",
+          "values": [
+            "908.618",
+            "1.056.238"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "Te betalen wissels 441 / Vooruitbetalingen op bestellingen 46",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Somuden met betrekking tot belastingen, bezoldigingen en",
+          "values": [
+            "1.157.554",
+            "1.404.515"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Belastingen 450/3",
+          "values": [
+            "211.000",
+            "154.969"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bezoldigingen en sociale lasten 454/9",
+          "values": [
+            "946.553",
+            "949.546"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overige schulden",
+          "values": [
+            "649.950",
+            "649.950"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Overlopende rekeningen 492/3",
+          "values": [
+            "1.454.345",
+            "993.435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAAL VAN DE PASSIVA 10/49",
+          "values": [
+            "6.191.789",
+            "3.831.779"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "TOELICHTING / STAAT VAN DE VASTE ACTIVA / IMMATERIËLE VASTE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aanschaffingswaarde per einde van het boekjaar 8059",
+          "values": [
+            "1.717.917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen per einde van het boekjaar 8129P XXXKKKKKKK",
+          "values": [
+            "33.813"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "Geboekt 8079 241.982 / Teruggenomen 8089 / Verworven van derden 8099 / Afgeboekt na overdrachten en buitengebruikstellingen 8109 / Overgeboekt van een post naar een andere @I) | 8119",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen per einde van het boekjaar 8129",
+          "values": [
+            "275.795"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR (ei)",
+          "values": [
+            "1.442.122"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "[N° 0451438394 VKT-VZW 6.1.2 | / MATERIËLE VASTE ACTIVA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Afschrijvingen en waardeverminderingen per einde van het boekjaar 8329",
+          "values": [
+            "3.580.012"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NETTOBOEKWAARDE PER EINDE VAN HET BOEKJAAR (22/27)",
+          "values": [
+            "2.841.713"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "VKT-VZW 6.7 / SOCIALE BALANS / INGESCHREVEN IN HET ALGEMEEN PERSONEELSREGISTER",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gemiddeld aantal werknemers",
+          "values": [
+            "42,8",
+            "1,3",
+            "43,3",
+            "38,3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aantal daadwerkelijk gepresteerde uren",
+          "values": [
+            "75.309",
+            "1.073",
+            "76.382",
+            "59.705"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Personeelskosten",
+          "values": [
+            "8.235.977",
+            "33.850",
+            "8.269.828",
+            "5.049.947"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "Overeenkomst voor een onbepaalde tijd 110 46 2 46,9 / Overeenkomst voor een bepaalde tijd 111 0 0 0 / Overeenkomst voor een duidelijk omschreven werk 112 0 0 0 / Vervangingsovereenkomst 113 0 0 0 / Volgens het geslacht en het studieniveau",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Mannen 120 45",
+          "values": [
+            "45,9"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "lager onderwijs 1200 45",
+          "values": [
+            "45,9"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "VKT-VZW 6.7 / TABEL VAN HET PERSONEELSVERLOOP TIJDENS HET BOEKJAAR / INGETREDEN / UITGETREDEN / INLICHTINGEN OVER DE OPLEIDINGEN VOOR DE WERKNEMERS TIJDENS HET BOEKJAAR",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "205 22",
+          "values": [
+            "22,5"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "305 18",
+          "values": [
+            "19,1"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 6,
+    "results": [
+      {
+        "label": "VASTE ACTIVA 21/28",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "VASTE ACTIVA 21/28",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Immateriële vaste activa 611 |",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Immateriële vaste activa 611 |",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Materiële vaste activa 612 | 22/27",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Materiële vaste activa 612 | 22/27",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Terreinen en gebouwen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Terreinen en gebouwen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Installaties, machines en uitrusting",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Installaties, machines en uitrusting",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Meubilair en rollend materieel",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Meubilair en rollend materieel",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "be",
+    "query": "Dender EH",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

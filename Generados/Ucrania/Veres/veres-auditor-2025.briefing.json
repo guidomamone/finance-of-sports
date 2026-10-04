@@ -1,0 +1,117 @@
+{
+  "club": "veres",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Ucrania/Veres/veres-auditor-2025.md",
+  "generatedAt": "2026-09-30T22:08:25.015Z",
+  "numberFormat": "espacio como separador de miles (escandinavo)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 0,
+    "space": 4
+  },
+  "scannedWarning": false,
+  "tableCount": 2,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 9,
+      "section": "## Розділ 2. ЗВІТ ЩОДО ВИМОГ ІНШИХ ЗАКОНОДАВЧИХ ТА НОРМАТИВНИХ АКТІВ / ### ІНФОРМАЦІЯ про суб’єкта аудиторської діяльності та умови договору",
+      "columns": [
+        "Найменування інформації",
+        "Дані для заповнення"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ідентифікаційний код юридичної особи суб’єкта аудиторської діяльності",
+          "values": [
+            "24263164"
+          ],
+          "bold": false,
+          "codigo": "1"
+        },
+        {
+          "rawLabel": "Вебсайт суб’єкта аудиторської діяльності",
+          "values": [
+            "https://seya.com.ua"
+          ],
+          "bold": false,
+          "codigo": "2"
+        },
+        {
+          "rawLabel": "Дата та номер договору на проведення аудиту / огляду та / або виконання завдання з надання обґрунтованої впевненості",
+          "values": [
+            "Договір № 1602/22 від 16.02.2022"
+          ],
+          "bold": false,
+          "codigo": "3"
+        },
+        {
+          "rawLabel": "Дата початку та дата закінчення проведення аудиту / огляду та / або виконання завдання з надання обґрунтованої впевненості",
+          "values": [
+            "Аудит фінансової звітності проведений в періоді з 10.02.2026 по 09.03.2026."
+          ],
+          "bold": false,
+          "codigo": "4"
+        },
+        {
+          "rawLabel": "Обов’язковий аудит фінансової звітності (зазначити так / ні)",
+          "values": [
+            "так"
+          ],
+          "bold": false,
+          "codigo": "5"
+        },
+        {
+          "rawLabel": "Завдання з надання обґрунтованої впевненості (зазначити так / ні)",
+          "values": [
+            "ні"
+          ],
+          "bold": false,
+          "codigo": "6"
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "Документ підписано у сервісі Вчасно (продовження)",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Документ відправлено: 18:58",
+          "values": [
+            "09.03.2026"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Документ отримано (24263164): 18:58",
+          "values": [
+            "09.03.2026"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Документ переглянуто (24263164): 18:59",
+          "values": [
+            "09.03.2026"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/veres-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"veres\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

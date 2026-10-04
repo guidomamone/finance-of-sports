@@ -1,0 +1,112 @@
+{
+ "md": "Clubes/Rusia/Rostov/2021-poyasneniya.md",
+ "pdf": "Clubes/Rusia/Rostov/2021-poyasneniya.pdf",
+ "club": "rostov",
+ "year": 2021,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:08:03.921Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": false,
+ "seleccion": {
+  "ok": true,
+  "filas": 9,
+  "notasUsadas": []
+ },
+ "ladoConocido": 9,
+ "rubros": [
+  {
+   "label": "Сооружения",
+   "lado": "expense",
+   "page": 3,
+   "section": "",
+   "values": [
+    0.002021
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Машины и оборудование (кроме офисного)",
+   "lado": "expense",
+   "page": 3,
+   "section": "",
+   "values": [
+    0.002021
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Офисное оборудование",
+   "lado": "expense",
+   "page": 3,
+   "section": "",
+   "values": [
+    0.002021
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Производственный и хозяйственный инвентарь",
+   "lado": "expense",
+   "page": 3,
+   "section": "",
+   "values": [
+    0.002021
+   ],
+   "origen": "estado 6"
+  },
+  {
+   "label": "Материальные затраты",
+   "lado": "expense",
+   "page": 9,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    0.100843
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Расходы на оплату труда",
+   "lado": "expense",
+   "page": 9,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    1.473968
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Отчисления на социальные нужды",
+   "lado": "expense",
+   "page": 9,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    0.185042
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Амортизация",
+   "lado": "expense",
+   "page": 9,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    0.005243
+   ],
+   "origen": "estado 18"
+  },
+  {
+   "label": "Прочие затраты",
+   "lado": "expense",
+   "page": 9,
+   "section": "## 6. Затраты на производство (расходы на продажу)*",
+   "values": [
+    1.135242
+   ],
+   "origen": "estado 18"
+  }
+ ]
+}

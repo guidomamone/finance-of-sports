@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Brasil/Ponte Preta/balanco-2021-2022.md",
+ "generado": "2026-10-02T00:19:12.159Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(Valores Expressos em reais)",
+ "caja": {
+  "lineas": [
+   16
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": true
+ },
+ "observaciones": "No hay líneas explícitas de empréstimos o financiamentos bancários; 'Titulos a Pagar' (L18, L36) podría incluir obligaciones financieras, pero comparte la nota 10 con fornecedores, así que se tratan como cuentas por pagar. Habría que revisar la nota 10."
+}

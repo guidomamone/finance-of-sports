@@ -1,0 +1,88 @@
+{
+ "md": "Clubes/Grecia/AEL Larissa/AEL_FS_2023-06-30_a.md",
+ "generatedAt": "2026-10-03T13:26:02.075Z",
+ "rubrosHuella": "b7032b2b1b202af46e18cdd66b96dc88474ed207",
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "Επιχορηγήσεις & διάφορα έσοδα πωλήσεων",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\"",
+   "choice": "other_income",
+   "confidence": 0.92,
+   "desdeCache": true
+  },
+  {
+   "label": "Έσοδα παρεπόμενων ασχολιών",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\"",
+   "choice": "other_income",
+   "confidence": 0.94,
+   "desdeCache": true
+  },
+  {
+   "label": "(+) Κέρδη και ζημιές από διάθεση μη κυκλοφορούντων στοιχείων",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.93,
+   "desdeCache": true
+  },
+  {
+   "label": "(+) Λοιπά έσοδα και κέρδη",
+   "lado": "revenue",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Λοιπά έξοδα και ζημιές",
+   "lado": "expense",
+   "page": 8,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  }
+ ]
+}

@@ -1,0 +1,652 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2022-2023.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2022-2023.pdf",
+  "club": "realmadrid",
+  "year": 2023,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:01:22.006Z",
+  "tieOuts": {
+    "cierran": 4,
+    "noCierran": 36
+  },
+  "warnings": [
+    "8 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "28 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "9 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 55,
+    "notasUsadas": [
+      "57"
+    ]
+  },
+  "ladoConocido": 47,
+  "rubros": [
+    {
+      "label": "Acreedores y otras cuentas a pagar",
+      "lado": null,
+      "page": 22,
+      "section": "FLUJOS DE EFECTIVO DE LAS ACTIVIDADES DE EXPLOTACIÓN / 1. COMPOSICIÓN, NATURALEZA Y ACTIVIDADES PRINCIPALES DEL / GRUPO CONSOLIDADO",
+      "values": [
+        -5.674
+      ],
+      "origen": "estado 10",
+      "glosa": "Acreedores y otras cuentas a pagar"
+    },
+    {
+      "label": "realizó con efectos 1 de julio de",
+      "lado": null,
+      "page": 22,
+      "section": "FLUJOS DE EFECTIVO DE LAS ACTIVIDADES DE EXPLOTACIÓN / 1. COMPOSICIÓN, NATURALEZA Y ACTIVIDADES PRINCIPALES DEL / GRUPO CONSOLIDADO",
+      "values": [
+        2.02
+      ],
+      "origen": "estado 10",
+      "glosa": "realizó con efectos 1 de julio de"
+    },
+    {
+      "label": "Otros pasivos corrientes",
+      "lado": null,
+      "page": 22,
+      "section": "FLUJOS DE EFECTIVO DE LAS ACTIVIDADES DE EXPLOTACIÓN / 1. COMPOSICIÓN, NATURALEZA Y ACTIVIDADES PRINCIPALES DEL / GRUPO CONSOLIDADO",
+      "values": [
+        18.227
+      ],
+      "origen": "estado 10",
+      "glosa": "Otros pasivos corrientes"
+    },
+    {
+      "label": "Otros activos y pasivos no corrientes",
+      "lado": null,
+      "page": 22,
+      "section": "FLUJOS DE EFECTIVO DE LAS ACTIVIDADES DE EXPLOTACIÓN / 1. COMPOSICIÓN, NATURALEZA Y ACTIVIDADES PRINCIPALES DEL / GRUPO CONSOLIDADO",
+      "values": [
+        -64.48
+      ],
+      "origen": "estado 10",
+      "glosa": "Otros activos y pasivos no corrientes"
+    },
+    {
+      "label": "Otros flujos de efectivo de las actividades de explotación",
+      "lado": null,
+      "page": 22,
+      "section": "FLUJOS DE EFECTIVO DE LAS ACTIVIDADES DE EXPLOTACIÓN / 1. COMPOSICIÓN, NATURALEZA Y ACTIVIDADES PRINCIPALES DEL / GRUPO CONSOLIDADO",
+      "values": [
+        -33.734
+      ],
+      "origen": "estado 10",
+      "glosa": "Otros flujos de efectivo de las actividades de explotación"
+    },
+    {
+      "label": "Otros gastos de explotación Total ingresos y gastos reconocidos",
+      "lado": null,
+      "page": 21,
+      "section": "Aprovisionamientos / Transferencias a la cuenta de pérdidas y ganancias",
+      "values": [
+        11.682
+      ],
+      "origen": "estado 7",
+      "glosa": "Otros gastos de explotación Total ingresos y gastos reconocidos"
+    },
+    {
+      "label": "Otros gastos de gestión corriente",
+      "lado": "expense",
+      "page": 21,
+      "section": "Aprovisionamientos / Transferencias a la cuenta de pérdidas y ganancias",
+      "values": [
+        -262.299
+      ],
+      "origen": "estado 7",
+      "glosa": "Otros gastos de gestión corriente"
+    },
+    {
+      "label": "Ingresos financieros terminado el 30/06/2022 - - - - 12.936 12.936 (144)",
+      "lado": "revenue",
+      "page": 21,
+      "section": "(262.209)     (289.623) / B)\t\u0007Estado total de cambios en el patrimonio neto consolidado co- / Reservas                                donac. y / 73.450       317.902     Saldo inicial / correspondientes al ejercicio anual",
+      "values": [
+        12.792
+      ],
+      "origen": "estado 8",
+      "glosa": "Ingresos financieros terminado el 30/06/2022 - - - - 12.936 12.936 (144)"
+    },
+    {
+      "label": "De valores negociables y otros instrumentos financieros 17.6 12.754 1.148 Saldo a 30 de junio de 2022 487.517 28.825 13.325 -",
+      "lado": null,
+      "page": 21,
+      "section": "(262.209)     (289.623) / B)\t\u0007Estado total de cambios en el patrimonio neto consolidado co- / Reservas                                donac. y / 73.450       317.902     Saldo inicial / correspondientes al ejercicio anual",
+      "values": [
+        12.936
+      ],
+      "origen": "estado 8",
+      "glosa": "De valores negociables y otros instrumentos financieros 17.6 12.754 1.148 Saldo a 30 de junio de 2022 487.517 28.825 13.325 -"
+    },
+    {
+      "label": "Incorporación gastos financieros al inmovilizado",
+      "lado": "expense",
+      "page": 21,
+      "section": "(262.209)     (289.623) / B)\t\u0007Estado total de cambios en el patrimonio neto consolidado co- / Reservas                                donac. y / 73.450       317.902     Saldo inicial / correspondientes al ejercicio anual",
+      "values": [
+        17.917
+      ],
+      "origen": "estado 8",
+      "glosa": "Incorporación gastos financieros al inmovilizado"
+    },
+    {
+      "label": "AUMENTO / DISMINUCIÓN NETA DEL EFECTIVO O EQUIVALENTES",
+      "lado": null,
+      "page": 22,
+      "section": "2. BASES DE PRESENTACIÓN DE LAS CUENTAS ANUALES",
+      "values": [
+        -519.959
+      ],
+      "origen": "estado 12",
+      "glosa": "AUMENTO / DISMINUCIÓN NETA DEL EFECTIVO O EQUIVALENTES"
+    },
+    {
+      "label": "Efectivo o equivalentes al comienzo del ejercicio",
+      "lado": null,
+      "page": 22,
+      "section": "2. BASES DE PRESENTACIÓN DE LAS CUENTAS ANUALES",
+      "values": [
+        773.316
+      ],
+      "origen": "estado 12",
+      "glosa": "Efectivo o equivalentes al comienzo del ejercicio"
+    },
+    {
+      "label": "las liquidaciones a los criterios de las Actas con acuerdo de la última Ingresos competiciones Baloncesto",
+      "lado": "revenue",
+      "page": 62,
+      "section": "Ingresos Mundial Clubes                             4.714             -",
+      "values": [
+        8.315
+      ],
+      "origen": "estado 42",
+      "glosa": "las liquidaciones a los criterios de las Actas con acuerdo de la última Ingresos competiciones Baloncesto"
+    },
+    {
+      "label": "inspección (nota 16.4.7), se han interrumpido los plazos de prescripción Otros Ingresos",
+      "lado": "revenue",
+      "page": 62,
+      "section": "Ingresos Mundial Clubes                             4.714             -",
+      "values": [
+        6.847
+      ],
+      "origen": "estado 42",
+      "glosa": "inspección (nota 16.4.7), se han interrumpido los plazos de prescripción Otros Ingresos"
+    },
+    {
+      "label": "generales por lo que a 30 de junio de 2023 el Grupo tiene abiertos a Total Ingresos Abonados y Socios",
+      "lado": "revenue",
+      "page": 62,
+      "section": "Ingresos Mundial Clubes                             4.714             -",
+      "values": [
+        51.493
+      ],
+      "origen": "estado 42",
+      "glosa": "generales por lo que a 30 de junio de 2023 el Grupo tiene abiertos a Total Ingresos Abonados y Socios"
+    },
+    {
+      "label": "inspección los impuestos de la renta (IRPF e IRNR) e IVA desde julio de Total Ingresos Explotación de instalaciones",
+      "lado": "expense",
+      "page": 62,
+      "section": "Ingresos Mundial Clubes                             4.714             -",
+      "values": [
+        19.188
+      ],
+      "origen": "estado 42",
+      "glosa": "inspección los impuestos de la renta (IRPF e IRNR) e IVA desde julio de Total Ingresos Explotación de instalaciones"
+    },
+    {
+      "label": "2018 y el impuesto de sociedades a partir del ejercicio 2018/2019. Total Ingresos Retransmisiones",
+      "lado": "expense",
+      "page": 62,
+      "section": "Ingresos Mundial Clubes                             4.714             -",
+      "values": [
+        186.813
+      ],
+      "origen": "estado 42",
+      "glosa": "2018 y el impuesto de sociedades a partir del ejercicio 2018/2019. Total Ingresos Retransmisiones"
+    },
+    {
+      "label": "Ingresos Venta tiendas",
+      "lado": "revenue",
+      "page": 62,
+      "section": "Ingresos Mundial Clubes                             4.714             -",
+      "values": [
+        52.542
+      ],
+      "origen": "estado 42",
+      "glosa": "Ingresos Venta tiendas"
+    },
+    {
+      "label": "Con respecto a estos períodos el Grupo considera que no existen Ingresos Patrocinios y Licencias",
+      "lado": "revenue",
+      "page": 62,
+      "section": "Ingresos Mundial Clubes                             4.714             -",
+      "values": [
+        231.7
+      ],
+      "origen": "estado 42",
+      "glosa": "Con respecto a estos períodos el Grupo considera que no existen Ingresos Patrocinios y Licencias"
+    },
+    {
+      "label": "Ingresos Publicidad",
+      "lado": "revenue",
+      "page": 62,
+      "section": "Ingresos Mundial Clubes                             4.714             -",
+      "values": [
+        1.052
+      ],
+      "origen": "estado 42",
+      "glosa": "Ingresos Publicidad"
+    },
+    {
+      "label": "Aprovisionamientos 44.000 27.778 19.024 Personal 1º equipo fútbol no inscribible",
+      "lado": "expense",
+      "page": 74,
+      "section": "el cálculo del punto de equilibrio anterior. / Gastos estados financieros",
+      "values": [
+        7.782
+      ],
+      "origen": "estado 74",
+      "glosa": "Aprovisionamientos 44.000 27.778 19.024 Personal 1º equipo fútbol no inscribible"
+    },
+    {
+      "label": "Gastos de personal deportivo y no deportivo 452.701 519.030 402.957 Personal no deportivo asociado a 1º equipo fútbol",
+      "lado": "expense",
+      "page": 74,
+      "section": "el cálculo del punto de equilibrio anterior. / Gastos estados financieros",
+      "values": [
+        3.908
+      ],
+      "origen": "estado 74",
+      "glosa": "Gastos de personal deportivo y no deportivo 452.701 519.030 402.957 Personal no deportivo asociado a 1º equipo fútbol"
+    },
+    {
+      "label": "Otros gastos de explotación 262.209 289.623 173.797 Total gastos personal asociados 1º equipo fútbol",
+      "lado": "expense",
+      "page": 74,
+      "section": "el cálculo del punto de equilibrio anterior. / Gastos estados financieros",
+      "values": [
+        326.513
+      ],
+      "origen": "estado 74",
+      "glosa": "Otros gastos de explotación 262.209 289.623 173.797 Total gastos personal asociados 1º equipo fútbol"
+    },
+    {
+      "label": "Amortización del inmovilizado",
+      "lado": "expense",
+      "page": 74,
+      "section": "el cálculo del punto de equilibrio anterior. / Gastos estados financieros",
+      "values": [
+        154.569
+      ],
+      "origen": "estado 74",
+      "glosa": "Amortización del inmovilizado"
+    },
+    {
+      "label": "Gastos financieros 25.083 18.995 13.156 Jugadoras y técnicos fútbol femenino",
+      "lado": "expense",
+      "page": 74,
+      "section": "el cálculo del punto de equilibrio anterior. / Gastos estados financieros",
+      "values": [
+        4.743
+      ],
+      "origen": "estado 74",
+      "glosa": "Gastos financieros 25.083 18.995 13.156 Jugadoras y técnicos fútbol femenino"
+    },
+    {
+      "label": "Personal no deportivo no asociado a 1º equipo fútbol",
+      "lado": "expense",
+      "page": 74,
+      "section": "el cálculo del punto de equilibrio anterior. / Gastos estados financieros",
+      "values": [
+        63.27
+      ],
+      "origen": "estado 74",
+      "glosa": "Personal no deportivo no asociado a 1º equipo fútbol"
+    },
+    {
+      "label": "Diferencia (102.816) (93.212) (21.897) Total gastos de personal",
+      "lado": "expense",
+      "page": 74,
+      "section": "el cálculo del punto de equilibrio anterior. / Gastos estados financieros",
+      "values": [
+        452.701
+      ],
+      "origen": "estado 74",
+      "glosa": "Diferencia (102.816) (93.212) (21.897) Total gastos de personal"
+    },
+    {
+      "label": "Concesiones 2.934 - - -",
+      "lado": "expense",
+      "page": 38,
+      "section": "139.152      138.379 / Ejercicio 2021/2022 / Incorporación        Altas y / Coste:",
+      "values": [
+        2.934
+      ],
+      "origen": "estado 17",
+      "glosa": "Concesiones 2.934 - - -"
+    },
+    {
+      "label": "Patentes, licencias, marcas y similares 1.112 78 - -",
+      "lado": "expense",
+      "page": 38,
+      "section": "139.152      138.379 / Ejercicio 2021/2022 / Incorporación        Altas y / Coste:",
+      "values": [
+        1.19
+      ],
+      "origen": "estado 17",
+      "glosa": "Patentes, licencias, marcas y similares 1.112 78 - -"
+    },
+    {
+      "label": "Aplicaciones informáticas 12.873 - -",
+      "lado": "expense",
+      "page": 38,
+      "section": "139.152      138.379 / Ejercicio 2021/2022 / Incorporación        Altas y / Coste:",
+      "values": [
+        13.027
+      ],
+      "origen": "estado 17",
+      "glosa": "Aplicaciones informáticas 12.873 - -"
+    },
+    {
+      "label": "Otro inmovilizado intangible 125.047 - - -",
+      "lado": "expense",
+      "page": 38,
+      "section": "139.152      138.379 / Ejercicio 2021/2022 / Incorporación        Altas y / Coste:",
+      "values": [
+        125.047
+      ],
+      "origen": "estado 17",
+      "glosa": "Otro inmovilizado intangible 125.047 - - -"
+    },
+    {
+      "label": "Anticipos 764 4.471 - (154)",
+      "lado": "expense",
+      "page": 38,
+      "section": "139.152      138.379 / Ejercicio 2021/2022 / Incorporación        Altas y / Coste:",
+      "values": [
+        5.081
+      ],
+      "origen": "estado 17",
+      "glosa": "Anticipos 764 4.471 - (154)"
+    },
+    {
+      "label": "miles € 30/06/2023 30/06/2022 Mercado nacional",
+      "lado": "revenue",
+      "page": 62,
+      "section": "17.1 Ingresos de explotación",
+      "values": [
+        480.972
+      ],
+      "origen": "estado 44",
+      "glosa": "miles € 30/06/2023 30/06/2022 Mercado nacional"
+    },
+    {
+      "label": "Importe neto de la cifra de negocios 804.498 712.875 Mercado exterior",
+      "lado": "revenue",
+      "page": 62,
+      "section": "17.1 Ingresos de explotación",
+      "values": [
+        323.526
+      ],
+      "origen": "estado 44",
+      "glosa": "Importe neto de la cifra de negocios 804.498 712.875 Mercado exterior"
+    },
+    {
+      "label": "Otros ingresos de explotación",
+      "lado": "revenue",
+      "page": 62,
+      "section": "17.1 Ingresos de explotación",
+      "values": [
+        26.715
+      ],
+      "origen": "estado 44",
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Subvenciones (nota 12) 192 192 TOTAL IMPORTE NETO CIFRA NEGOCIOS",
+      "lado": "revenue",
+      "page": 62,
+      "section": "17.1 Ingresos de explotación",
+      "values": [
+        804.498
+      ],
+      "origen": "estado 44",
+      "glosa": "Subvenciones (nota 12) 192 192 TOTAL IMPORTE NETO CIFRA NEGOCIOS"
+    },
+    {
+      "label": "Excesos de provisiones (nota 13.1 y 13.2)",
+      "lado": "revenue",
+      "page": 62,
+      "section": "17.1 Ingresos de explotación",
+      "values": [
+        11.613
+      ],
+      "origen": "estado 44",
+      "glosa": "Excesos de provisiones (nota 13.1 y 13.2)"
+    },
+    {
+      "label": "del grupo establecen los límites mínimos de liquidez que se de- Deudores comerciales (*) 83.342 - 29.362 -",
+      "lado": "expense",
+      "page": 71,
+      "section": "mientos contractuales de los activos financieros: / El riesgo de liquidez se produce por la posibilidad de que el gru- / cuantía suficiente y al coste adecuado, para hacer frente en todo",
+      "values": [
+        112.704
+      ],
+      "origen": "estado 64",
+      "glosa": "del grupo establecen los límites mínimos de liquidez que se de- Deudores comerciales (*) 83.342 - 29.362 -"
+    },
+    {
+      "label": "ben mantener en todo momento. Entidades deportivas deudoras 55.062 20.589 70.990 -",
+      "lado": "expense",
+      "page": 71,
+      "section": "mientos contractuales de los activos financieros: / El riesgo de liquidez se produce por la posibilidad de que el gru- / cuantía suficiente y al coste adecuado, para hacer frente en todo",
+      "values": [
+        146.641
+      ],
+      "origen": "estado 64",
+      "glosa": "ben mantener en todo momento. Entidades deportivas deudoras 55.062 20.589 70.990 -"
+    },
+    {
+      "label": "Otros activos financieros (**) 8.003 47.679 3.527 -",
+      "lado": "expense",
+      "page": 71,
+      "section": "mientos contractuales de los activos financieros: / El riesgo de liquidez se produce por la posibilidad de que el gru- / cuantía suficiente y al coste adecuado, para hacer frente en todo",
+      "values": [
+        59.209
+      ],
+      "origen": "estado 64",
+      "glosa": "Otros activos financieros (**) 8.003 47.679 3.527 -"
+    },
+    {
+      "label": "Los vencimientos contractuales, no descontados, de los pasivos Administraciones Públicas deudoras - 35.602 61.765 -",
+      "lado": "expense",
+      "page": 71,
+      "section": "mientos contractuales de los activos financieros: / El riesgo de liquidez se produce por la posibilidad de que el gru- / cuantía suficiente y al coste adecuado, para hacer frente en todo",
+      "values": [
+        97.367
+      ],
+      "origen": "estado 64",
+      "glosa": "Los vencimientos contractuales, no descontados, de los pasivos Administraciones Públicas deudoras - 35.602 61.765 -"
+    },
+    {
+      "label": "Otro inmovilizado intangible (125.045) (647) - -",
+      "lado": "expense",
+      "page": 38,
+      "section": "Un resumen del coste de los elementos de inmovilizado intangi- / Amortización acumulada: / ble no deportivo totalmente amortizados es como sigue: / miles €                                        30/06/2023   30/06/2022",
+      "values": [
+        -125.692
+      ],
+      "origen": "estado 15",
+      "glosa": "Otro inmovilizado intangible (125.045) (647) - -"
+    },
+    {
+      "label": "Concesiones",
+      "lado": "expense",
+      "page": 38,
+      "section": "Un resumen del coste de los elementos de inmovilizado intangi- / Amortización acumulada: / ble no deportivo totalmente amortizados es como sigue: / miles €                                        30/06/2023   30/06/2022",
+      "values": [
+        2.103
+      ],
+      "origen": "estado 15",
+      "glosa": "Concesiones"
+    },
+    {
+      "label": "Importe plantilla inscribible LNFP 396.054 155.434 55.366 (2.720) 604.134 Arrendamientos de activos (nota 6.3)",
+      "lado": "expense",
+      "page": 66,
+      "section": "yen, entre otros gastos, las contribuciones obligatorias reguladas / en el R/D 5/2015 (ver Nota 17.1.5), así como provisiones de de- / El detalle de “Servicios exteriores” es el siguiente: / Gastos                  Deterioro /       (Ingreso) / / miles €                                               30/06/2023    30/06/2022",
+      "values": [
+        2.725
+      ],
+      "origen": "nota 57 (ancla 55)",
+      "ancla": "Servicios exteriores",
+      "glosa": "Importe plantilla inscribible LNFP 396.054 155.434 55.366 (2.720) 604.134 Arrendamientos de activos (nota 6.3)"
+    },
+    {
+      "label": "Servicios exteriores",
+      "lado": "expense",
+      "page": 66,
+      "section": "interpretado en base a las normas de elaboración de presupues- / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / tos de los clubes y SAD de la LNFP. / miles €                                               30/06/2023    30/06/2022",
+      "values": [
+        160.124
+      ],
+      "origen": "renglón del estado abierto en una nota",
+      "esAncla": true,
+      "glosa": "Servicios exteriores"
+    },
+    {
+      "label": "Importe plantilla no inscribible LNFP 65.695 8.327 1.411 (2.562) 72.871 Otros arrendamientos, cánones y otros servicios",
+      "lado": "expense",
+      "page": 66,
+      "section": "yen, entre otros gastos, las contribuciones obligatorias reguladas / en el R/D 5/2015 (ver Nota 17.1.5), así como provisiones de de- / El detalle de “Servicios exteriores” es el siguiente: / Gastos                  Deterioro /       (Ingreso) / / miles €                                               30/06/2023    30/06/2022",
+      "values": [
+        56.498
+      ],
+      "origen": "nota 57 (ancla 55)",
+      "ancla": "Servicios exteriores",
+      "glosa": "Importe plantilla no inscribible LNFP 65.695 8.327 1.411 (2.562) 72.871 Otros arrendamientos, cánones y otros servicios"
+    },
+    {
+      "label": "Reparaciones y conservación",
+      "lado": "expense",
+      "page": 66,
+      "section": "yen, entre otros gastos, las contribuciones obligatorias reguladas / en el R/D 5/2015 (ver Nota 17.1.5), así como provisiones de de- / El detalle de “Servicios exteriores” es el siguiente: / Gastos                  Deterioro /       (Ingreso) / / miles €                                               30/06/2023    30/06/2022",
+      "values": [
+        29.652
+      ],
+      "origen": "nota 57 (ancla 55)",
+      "ancla": "Servicios exteriores",
+      "glosa": "Reparaciones y conservación"
+    },
+    {
+      "label": "Gastos totales plantilla deportiva 461.749 163.761 54.777 (5.282) 677.005 Servicios profesionales",
+      "lado": "expense",
+      "page": 66,
+      "section": "yen, entre otros gastos, las contribuciones obligatorias reguladas / en el R/D 5/2015 (ver Nota 17.1.5), así como provisiones de de- / El detalle de “Servicios exteriores” es el siguiente: / Gastos                  Deterioro /       (Ingreso) / / miles €                                               30/06/2023    30/06/2022",
+      "values": [
+        55.906
+      ],
+      "origen": "nota 57 (ancla 55)",
+      "ancla": "Servicios exteriores",
+      "glosa": "Gastos totales plantilla deportiva 461.749 163.761 54.777 (5.282) 677.005 Servicios profesionales"
+    },
+    {
+      "label": "Primas de seguro",
+      "lado": "expense",
+      "page": 66,
+      "section": "yen, entre otros gastos, las contribuciones obligatorias reguladas / en el R/D 5/2015 (ver Nota 17.1.5), así como provisiones de de- / El detalle de “Servicios exteriores” es el siguiente: / Gastos                  Deterioro /       (Ingreso) / / miles €                                               30/06/2023    30/06/2022",
+      "values": [
+        4.182
+      ],
+      "origen": "nota 57 (ancla 55)",
+      "ancla": "Servicios exteriores",
+      "glosa": "Primas de seguro"
+    },
+    {
+      "label": "Publicidad, propaganda y relaciones públicas",
+      "lado": "expense",
+      "page": 66,
+      "section": "yen, entre otros gastos, las contribuciones obligatorias reguladas / en el R/D 5/2015 (ver Nota 17.1.5), así como provisiones de de- / El detalle de “Servicios exteriores” es el siguiente: / Gastos                  Deterioro /       (Ingreso) / / miles €                                               30/06/2023    30/06/2022",
+      "values": [
+        6.729
+      ],
+      "origen": "nota 57 (ancla 55)",
+      "ancla": "Servicios exteriores",
+      "glosa": "Publicidad, propaganda y relaciones públicas"
+    },
+    {
+      "label": "Suministros",
+      "lado": "expense",
+      "page": 66,
+      "section": "yen, entre otros gastos, las contribuciones obligatorias reguladas / en el R/D 5/2015 (ver Nota 17.1.5), así como provisiones de de- / El detalle de “Servicios exteriores” es el siguiente: / Gastos                  Deterioro /       (Ingreso) / / miles €                                               30/06/2023    30/06/2022",
+      "values": [
+        4.432
+      ],
+      "origen": "nota 57 (ancla 55)",
+      "ancla": "Servicios exteriores",
+      "glosa": "Suministros"
+    },
+    {
+      "label": "Ejercicio 2022/2023 Tributos",
+      "lado": "expense",
+      "page": 66,
+      "section": "interpretado en base a las normas de elaboración de presupues- / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / tos de los clubes y SAD de la LNFP. / miles €                                               30/06/2023    30/06/2022",
+      "values": [
+        4.744
+      ],
+      "origen": "estado 55",
+      "glosa": "Ejercicio 2022/2023 Tributos"
+    },
+    {
+      "label": "Desplazamientos",
+      "lado": "expense",
+      "page": 66,
+      "section": "interpretado en base a las normas de elaboración de presupues- / El detalle del epígrafe “Otros gastos de gestión corriente” es el siguiente: / tos de los clubes y SAD de la LNFP. / miles €                                               30/06/2023    30/06/2022",
+      "values": [
+        19.646
+      ],
+      "origen": "estado 55",
+      "glosa": "Desplazamientos"
+    },
+    {
+      "label": "Costes financieros y dividendos 25.083 18.995 13.156 Gastos personal asociados a la primera plantilla de fútbol",
+      "lado": "expense",
+      "page": 74,
+      "section": "pere el 70% de los ingresos relevantes de la temporada, tal y como",
+      "values": [
+        326.513
+      ],
+      "origen": "estado 72",
+      "glosa": "Costes financieros y dividendos 25.083 18.995 13.156 Gastos personal asociados a la primera plantilla de fútbol"
+    },
+    {
+      "label": "Menos: Gastos actividades desarrollo cantera no identificables (8.219) (7.269) (6.483) Ingresos relevantes",
+      "lado": "revenue",
+      "page": 74,
+      "section": "pere el 70% de los ingresos relevantes de la temporada, tal y como",
+      "values": [
+        937.76
+      ],
+      "origen": "estado 72",
+      "glosa": "Menos: Gastos actividades desarrollo cantera no identificables (8.219) (7.269) (6.483) Ingresos relevantes"
+    },
+    {
+      "label": "Menos: Gastos en actividades de desarrollo comunitario",
+      "lado": "expense",
+      "page": 74,
+      "section": "pere el 70% de los ingresos relevantes de la temporada, tal y como",
+      "values": [
+        -3.027
+      ],
+      "origen": "estado 72",
+      "glosa": "Menos: Gastos en actividades de desarrollo comunitario"
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+ "md": "Clubes/Argentina/Racing/balance2025.md",
+ "pdf": "Clubes/Argentina/Racing/balance2025.pdf",
+ "club": "racing",
+ "year": 2025,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T01:15:38.139Z",
+ "tieOuts": {
+  "cierran": 18,
+  "noCierran": 44
+ },
+ "warnings": [
+  "6 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+  "38 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+  "11 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+ ],
+ "estadoDeResultados": true,
+ "ladoConocido": 24,
+ "rubros": [
+  {
+   "label": "Generales(Anexo III)",
+   "lado": "revenue",
+   "page": 6,
+   "section": "Ejercicio Nro. 123 / 2025                    2024 / Recursos ordinarios",
+   "values": [
+    "21.659.002.865",
+    "18.556.949.308"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Específicos(Anexo III)",
+   "lado": "revenue",
+   "page": 6,
+   "section": "Ejercicio Nro. 123 / 2025                    2024 / Recursos ordinarios",
+   "values": [
+    "58.957.531.545",
+    "66.482.556.251"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Diversos (Anexo III)",
+   "lado": "revenue",
+   "page": 6,
+   "section": "Ejercicio Nro. 123 / 2025                    2024 / Recursos ordinarios",
+   "values": [
+    "6.783.082.599",
+    "7.490.440.110"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Generales (Anexo IV)",
+   "lado": "expense",
+   "page": 6,
+   "section": "Gastos ordinarios",
+   "values": [
+    "(20.313.555.790)",
+    "(17.384.216.091)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Específicos (Anexo IV)",
+   "lado": "expense",
+   "page": 6,
+   "section": "Gastos ordinarios",
+   "values": [
+    "(46.914.512.077)",
+    "(60.478.003.921)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "efectivo (incluyendo RECPAM)",
+   "lado": null,
+   "page": 8,
+   "section": "Flujo neto de efectivo utilizado en las actividades de / Resultados financieros y por tenencia generados por el",
+   "values": [
+    "(16.862.678.494)",
+    "(16.413.446.046)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Aumento / (Disminución) del efectivo",
+   "lado": null,
+   "page": 8,
+   "section": "Flujo neto de efectivo utilizado en las actividades de / Resultados financieros y por tenencia generados por el",
+   "values": [
+    "5.054.134.882",
+    "(27.185.280.245)"
+   ],
+   "columns": null
+  },
+  {
+   "label": "extranjera (Anexo VI)",
+   "lado": "revenue",
+   "page": 23,
+   "section": "Ingresos cobrados por adelantado en moneda / Acreedores por operaciones de jugadores en moneda / Acreedores por operaciones de jugadores en moneda",
+   "values": [
+    "17.952.426.307",
+    "17.014.173.312"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Deudas varias en moneda local",
+   "lado": "revenue",
+   "page": 23,
+   "section": "Ingresos cobrados por adelantado en moneda / Acreedores por operaciones de jugadores en moneda / Acreedores por operaciones de jugadores en moneda",
+   "values": [
+    "58.738.400",
+    "446.144"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Deudas varias en moneda extranjera (Anexo VI) -",
+   "lado": "revenue",
+   "page": 23,
+   "section": "Ingresos cobrados por adelantado en moneda / Acreedores por operaciones de jugadores en moneda / Acreedores por operaciones de jugadores en moneda",
+   "values": [
+    "185.428.762"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Primas a pagar",
+   "lado": "revenue",
+   "page": 23,
+   "section": "Ingresos cobrados por adelantado en moneda / Acreedores por operaciones de jugadores en moneda / Acreedores por operaciones de jugadores en moneda",
+   "values": [
+    "507.255.310",
+    "1.064.211.779"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Juicios y otras contingencias (Anexo V)",
+   "lado": "revenue",
+   "page": 23,
+   "section": "Ingresos cobrados por adelantado en moneda / e)     Previsiones",
+   "values": [
+    "8.961.533.333",
+    "9.090.834.231"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Divisas en custodia USD",
+   "lado": "expense",
+   "page": 34,
+   "section": "Divisas en custodia",
+   "values": [
+    "5.307.509",
+    "1.196,0000",
+    "6.347.780.166",
+    "1.373.531"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Divisas en custodia €",
+   "lado": "expense",
+   "page": 34,
+   "section": "Divisas en custodia",
+   "values": [
+    "1.021.608",
+    "1.406,6156",
+    "1.437.009.525",
+    "678.401.979"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Calcio Catania SPA – Castro €",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "values": [
+    "23.367",
+    "1.406,6156",
+    "32.869.090",
+    "31.705.078"
+   ],
+   "columns": null
+  },
+  {
+   "label": "A.C. Siena SPA Préstamo – Martínez €",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "values": [
+    "125.000",
+    "1.406,6156",
+    "175.826.950",
+    "169.600.291"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Godoy Cruz – Ojeda USD - - -",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "values": [
+    "633.664.454"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Atlético Mineiro - Zaracho USD - - -",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "values": [
+    "1.140.596.017"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Southampton – Alcaraz USD",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "values": [
+    "297.108",
+    "1.196,0000",
+    "355.340.665",
+    "5.196.048.524"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Cruz Azul - Piovi Gonzalo USD - - -",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "values": [
+    "1.742.577.249"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Palmeiras – Moreno Aníbal € - - -",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "values": [
+    "5.155.848.851"
+   ],
+   "columns": null
+  },
+  {
+   "label": "MLS – Chancalay Tomas USD - - -",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "values": [
+    "1.866.141.817"
+   ],
+   "columns": null
+  },
+  {
+   "label": "MLS – Ojeda Axel USD",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "values": [
+    "1.500.000",
+    "1.196,0000",
+    "1.794.000.000",
+    "1.805.943.694"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Beroe Stara Zagora – Ojeda Axel USD",
+   "lado": "revenue",
+   "page": 34,
+   "section": "Venta de jugadores",
+   "values": [
+    "1.320.000",
+    "1.196,0000",
+    "1.578.720.000",
+    "1.324.358.709"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Préstamos jugadores USD",
+   "lado": "revenue",
+   "page": 37,
+   "section": "Otras deudas / Ingresos cobrados por adelantado",
+   "values": [
+    "345.469",
+    "1.205,0000",
+    "416.289.844",
+    "65.445.445"
+   ],
+   "columns": null
+  },
+  {
+   "label": "Sponsoreo USD",
+   "lado": "revenue",
+   "page": 37,
+   "section": "Otras deudas / Ingresos cobrados por adelantado",
+   "values": [
+    "1.017.762",
+    "1.205,0000",
+    "1.226.403.688",
+    "140.819.900"
+   ],
+   "columns": null
+  }
+ ]
+}

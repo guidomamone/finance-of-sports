@@ -1,0 +1,673 @@
+{
+ "md": "Clubes/Brasil/Criciuma/demonstrativo-financeiro-2012.md",
+ "generatedAt": "2026-09-30T04:25:58.691Z",
+ "rubros": [
+  {
+   "label": "Atletas em formação",
+   "lado": "expense",
+   "page": 13,
+   "section": "bens. A data de emissão do laudo técnico e os efeitos contábeis desta adoção inicial / ocorreram em 31 de dezembro de 2011. / Atletas em formação / O montante de R$ 1.261.614 refere-se aos gastos com formação de atletas de categoria / o ativo intangível. A movimentação da conta de atletas em formação é como segue:",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.66,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.68
+    ],
+    [
+     "player_amortisation",
+     0.28
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1136
+  },
+  {
+   "label": "IPTU – PMC",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ]
+   ],
+   "tokens": 838
+  },
+  {
+   "label": "IRRF salários",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "choice": "admin_general_expense",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "wages_squad",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Timemania – FGTS",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "choice": "wages_squad",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "wages_squad",
+     0.58
+    ],
+    [
+     "admin_general_expense",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.17
+    ]
+   ],
+   "tokens": 920
+  },
+  {
+   "label": "INSS a recolher",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.65
+    ],
+    [
+     "wages_squad",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.08
+    ]
+   ],
+   "tokens": 962
+  },
+  {
+   "label": "PIS a recolher",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.93
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 840
+  },
+  {
+   "label": "FGTS a recolher",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "choice": "wages_squad",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "wages_squad",
+     0.65
+    ],
+    [
+     "admin_general_expense",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.1
+    ]
+   ],
+   "tokens": 920
+  },
+  {
+   "label": "ICMS a recolher",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "choice": "admin_general_expense",
+   "confidence": 0.91,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.92
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 926
+  },
+  {
+   "label": "Delupo Ferragens",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Outros",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "choice": "other_expenses",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "other_expenses",
+     0.85
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "youth_other_sports_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1031
+  },
+  {
+   "label": "Brasilux Indústria e Comércio",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "member_dues",
+     0
+    ]
+   ],
+   "tokens": 923
+  },
+  {
+   "label": "Timemania – RFB",
+   "lado": "expense",
+   "page": 14,
+   "section": "(i) O clube contratou atletas em fase de formação pelo montante de R$ 7.000. Estes / atletas foram posteriormente profissionalizados sem custos adicionais de formação. / 10 Obrigações fiscais",
+   "choice": "admin_general_expense",
+   "confidence": 0.22,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.3
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "match_organisation_expense",
+     0.16
+    ]
+   ],
+   "tokens": 840
+  },
+  {
+   "label": "Cristalsul",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Seara Alimentos",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "stadium_other",
+     0
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 831
+  },
+  {
+   "label": "Criciúma Construções",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 835
+  },
+  {
+   "label": "Hypermarcas",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "Juros ativos",
+   "lado": null,
+   "page": 16,
+   "section": "15 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1399
+  },
+  {
+   "label": "Siecesc - Sindicato das Indústrias de Carvão",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 995
+  },
+  {
+   "label": "Juros passivos",
+   "lado": "expense",
+   "page": 17,
+   "section": "CRICIÚMA E.C. / Despesas financeiras",
+   "choice": "admin_general_expense",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.77
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 851
+  },
+  {
+   "label": "Variação monetária ativa",
+   "lado": null,
+   "page": 16,
+   "section": "15 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "sponsorship_commercial",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 1262
+  },
+  {
+   "label": "Descontos obtidos",
+   "lado": null,
+   "page": 16,
+   "section": "15 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_income",
+     0.88
+    ],
+    [
+     "other_expenses",
+     0.11
+    ],
+    [
+     "admin_general_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1309
+  },
+  {
+   "label": "Despesas e comissões bancárias",
+   "lado": "expense",
+   "page": 17,
+   "section": "CRICIÚMA E.C. / Despesas financeiras",
+   "choice": "admin_general_expense",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.76
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1014
+  },
+  {
+   "label": "Deycon",
+   "lado": "revenue",
+   "page": 14,
+   "section": "11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.87,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.88
+    ],
+    [
+     "other_income",
+     0.11
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 828
+  },
+  {
+   "label": "Renda de aplicações financeiras",
+   "lado": null,
+   "page": 16,
+   "section": "15 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_impairment",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1260
+  },
+  {
+   "label": "Juros sobre empréstimos",
+   "lado": "expense",
+   "page": 17,
+   "section": "CRICIÚMA E.C. / Despesas financeiras",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1037
+  },
+  {
+   "label": "Encargos sobre tributos em atraso",
+   "lado": "expense",
+   "page": 17,
+   "section": "CRICIÚMA E.C. / Despesas financeiras",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Descontos concedidos",
+   "lado": "expense",
+   "page": 17,
+   "section": "CRICIÚMA E.C. / Despesas financeiras",
+   "choice": "other_expenses",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_expenses",
+     1
+    ],
+    [
+     "exceptional_items",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 855
+  },
+  {
+   "label": "Variação monetária passiva",
+   "lado": "expense",
+   "page": 17,
+   "section": "CRICIÚMA E.C. / Despesas financeiras",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 805
+  },
+  {
+   "label": "Resultado financeiro",
+   "lado": "expense",
+   "page": 17,
+   "section": "CRICIÚMA E.C. / Despesas financeiras",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.77
+    ],
+    [
+     "exceptional_items",
+     0.17
+    ],
+    [
+     "admin_general_expense",
+     0.06
+    ]
+   ],
+   "tokens": 1034
+  }
+ ]
+}

@@ -1,0 +1,858 @@
+{
+ "md": "Clubes/Países Bajos/FC Groningen/FC-Groningen-Jaarverslag-2012-2013.md",
+ "generatedAt": "2026-09-30T19:15:44.296Z",
+ "rubrosHuella": "ab9a2d49ce01f531b665a07a2e9197915d8e6ffe",
+ "rubros": [
+  {
+   "label": "Overige baten",
+   "lado": "revenue",
+   "page": 30,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / ## Toelichting op de winst-en-verliesrekening / ### Netto-omzet",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Sponsoring en reclame",
+   "lado": "revenue",
+   "page": 30,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / ## Toelichting op de winst-en-verliesrekening / ### Netto-omzet",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Organisatiebureau",
+   "lado": "revenue",
+   "page": 31,
+   "section": "FINANCEEL JARVERSLAG 2012/2013 / JAARREKENING / ### Inkoopwaarde van de omzet",
+   "choice": "other_income",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "other_income",
+     0.76
+    ],
+    [
+     "stadium_other",
+     0.24
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1050
+  },
+  {
+   "label": "Personeelskosten",
+   "lado": "expense",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "choice": "wages_squad",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "wages_squad",
+     0.59
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Inkoopwaarde v/d omzet",
+   "lado": "expense",
+   "page": 11,
+   "section": "FINANCIËLE - JANVERSLAG 2012/2013 / JANVERSLAG / ## Bedrijfslasten",
+   "choice": "other_expenses",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "other_expenses",
+     0.91
+    ],
+    [
+     "player_amortisation",
+     0.09
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ]
+   ],
+   "tokens": 1027
+  },
+  {
+   "label": "Wedstrijdbaten",
+   "lado": "revenue",
+   "page": 10,
+   "section": "FINANCIEEL JAARVERSLAG 2012/2013 / JAARVERSLAG / ## Omzet",
+   "choice": "matchday_competition",
+   "confidence": 0.97,
+   "top3": [
+    [
+     "matchday_competition",
+     0.98
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "lump_football_operations",
+     0.01
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Televisierechten",
+   "lado": "revenue",
+   "page": 30,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / ## Toelichting op de winst-en-verliesrekening / ### Netto-omzet",
+   "choice": "broadcasting",
+   "confidence": 1,
+   "top3": [
+    [
+     "broadcasting",
+     1
+    ],
+    [
+     "youth_football",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Merchandise",
+   "lado": "revenue",
+   "page": 31,
+   "section": "FINANCEEL JARVERSLAG 2012/2013 / JAARREKENING / ### Inkoopwaarde van de omzet",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "competition_bonus",
+     0
+    ]
+   ],
+   "tokens": 1057
+  },
+  {
+   "label": "Afschrijvingen",
+   "lado": "expense",
+   "page": 11,
+   "section": "FINANCIËLE - JANVERSLAG 2012/2013 / JANVERSLAG / ## Bedrijfslasten",
+   "choice": "depreciation",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "depreciation",
+     0.41000000000000003
+    ],
+    [
+     "player_amortisation",
+     0.27
+    ],
+    [
+     "other_amortisation",
+     0.25
+    ]
+   ],
+   "tokens": 1039
+  },
+  {
+   "label": "Huisvestingskosten",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Overige bedrijfslasten",
+   "choice": "admin_general_expense",
+   "confidence": 0.78,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 993
+  },
+  {
+   "label": "Overige bedrijfslasten",
+   "lado": "expense",
+   "page": 11,
+   "section": "FINANCIËLE - JANVERSLAG 2012/2013 / JANVERSLAG / ## Bedrijfslasten",
+   "choice": "other_expenses",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "other_expenses",
+     0.83
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1040
+  },
+  {
+   "label": "Wedstrijdkosten",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Overige bedrijfslasten",
+   "choice": "match_organisation_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "match_organisation_expense",
+     1
+    ],
+    [
+     "other_expenses",
+     0
+    ],
+    [
+     "other_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1016
+  },
+  {
+   "label": "Bijzondere lasten",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Overige bedrijfslasten",
+   "choice": "exceptional_items",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "exceptional_items",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1046
+  },
+  {
+   "label": "Netto-omzet",
+   "lado": "revenue",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "top3": [
+    [
+     "lump_football_operations",
+     1
+    ],
+    [
+     "other_sports",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1126
+  },
+  {
+   "label": "Afschrijvingen materiële vaste activa",
+   "lado": null,
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "choice": "depreciation",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "depreciation",
+     0.99
+    ],
+    [
+     "player_amortisation",
+     0.01
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1558
+  },
+  {
+   "label": "Inkoopwaarde van de omzet",
+   "lado": "revenue",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "choice": "other_income",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "other_income",
+     0.71
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "player_sales",
+     0.01
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Bedrijfsresultaat voor afschrijvingen en resultaat van vergoedingssommen",
+   "lado": null,
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "choice": "lump_football_operations",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.51
+    ],
+    [
+     "other_income",
+     0.29000000000000004
+    ],
+    [
+     "lump_football_operations_expense",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1585
+  },
+  {
+   "label": "Som der kosten",
+   "lado": "expense",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "lump_football_operations_expense",
+     0.22
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1018
+  },
+  {
+   "label": "Afschrijving vergoedingssommen",
+   "lado": null,
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "choice": "player_amortisation",
+   "confidence": 1,
+   "top3": [
+    [
+     "player_amortisation",
+     1
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1570
+  },
+  {
+   "label": "Financiële baten en lasten",
+   "lado": null,
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "choice": "admin_general_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.71
+    ],
+    [
+     "other_income",
+     0.18
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1490
+  },
+  {
+   "label": "Bedrijfsresultaat na afschrijvingen en resultaat van vergoedingssommen",
+   "lado": null,
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "choice": "lump_football_operations",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.51
+    ],
+    [
+     "other_income",
+     0.21000000000000002
+    ],
+    [
+     "lump_football_operations_expense",
+     0.15000000000000002
+    ]
+   ],
+   "tokens": 1585
+  },
+  {
+   "label": "Resultaat uit gewone bedrijfs- uitoefening voor belastingen",
+   "lado": "expense",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "choice": "other_expenses",
+   "confidence": 0.65,
+   "top3": [
+    [
+     "other_expenses",
+     0.6900000000000001
+    ],
+    [
+     "admin_general_expense",
+     0.29
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Overige bedrijfskosten",
+   "lado": "expense",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "choice": "other_expenses",
+   "confidence": 0.86,
+   "top3": [
+    [
+     "other_expenses",
+     0.88
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Belastingen resultaat uit gewone bedrijfsuitoefening",
+   "lado": "expense",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1041
+  },
+  {
+   "label": "Nettoresultaat na belastingen",
+   "lado": "expense",
+   "page": 18,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / # Winst-en-verliesrekening",
+   "choice": "admin_general_expense",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.73
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1036
+  },
+  {
+   "label": "Merchandising",
+   "lado": "revenue",
+   "page": 30,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / ## Toelichting op de winst-en-verliesrekening / ### Netto-omzet",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1074
+  },
+  {
+   "label": "Wedstrijdopbrengsten",
+   "lado": "revenue",
+   "page": 30,
+   "section": "FINANCIEEL-JAARVERSLAG 2012/2013 / JAARREKENING / ## Toelichting op de winst-en-verliesrekening / ### Netto-omzet",
+   "choice": "matchday_competition",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "matchday_competition",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "womens_football",
+     0
+    ]
+   ],
+   "tokens": 1060
+  },
+  {
+   "label": "Sociale lasten en vergoedingen",
+   "lado": "expense",
+   "page": 31,
+   "section": "### Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "wages_squad",
+     0.8200000000000001
+    ],
+    [
+     "other_expenses",
+     0.08
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1013
+  },
+  {
+   "label": "Overige personeelskosten",
+   "lado": "expense",
+   "page": 31,
+   "section": "### Personeelskosten",
+   "choice": "admin_general_expense",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.83
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Lonen en salarissen",
+   "lado": "expense",
+   "page": 31,
+   "section": "### Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "wages_squad",
+     0.86
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "admin_general_expense",
+     0.04
+    ]
+   ],
+   "tokens": 1020
+  },
+  {
+   "label": "Pensioenen",
+   "lado": "expense",
+   "page": 31,
+   "section": "### Personeelskosten",
+   "choice": "wages_squad",
+   "confidence": 0.75,
+   "top3": [
+    [
+     "wages_squad",
+     0.78
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 851
+  },
+  {
+   "label": "Contractspelers A-selectie & Jong FC Groningen",
+   "lado": "expense",
+   "page": 32,
+   "section": "FINANCIËEL JAARVERSLAG 2012/2013 / JAARREKENING",
+   "choice": "wages_squad",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "wages_squad",
+     0.63
+    ],
+    [
+     "other_expenses",
+     0.15
+    ],
+    [
+     "player_amortisation",
+     0.13
+    ]
+   ],
+   "tokens": 1155
+  },
+  {
+   "label": "Technische & medische staf",
+   "lado": "expense",
+   "page": 32,
+   "section": "FINANCIËEL JAARVERSLAG 2012/2013 / JAARREKENING",
+   "choice": "wages_squad",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "wages_squad",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "depreciation",
+     0
+    ]
+   ],
+   "tokens": 1045
+  },
+  {
+   "label": "Kantoorpersoneel",
+   "lado": "expense",
+   "page": 32,
+   "section": "FINANCIËEL JAARVERSLAG 2012/2013 / JAARREKENING",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 1029
+  },
+  {
+   "label": "Algemene kosten",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Overige bedrijfslasten",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations_expense",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1006
+  },
+  {
+   "label": "KNVB-heffingen",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Overige bedrijfslasten",
+   "choice": "admin_general_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.82
+    ],
+    [
+     "match_organisation_expense",
+     0.15
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1008
+  },
+  {
+   "label": "Verkoopkosten",
+   "lado": "expense",
+   "page": 32,
+   "section": "### Overige bedrijfslasten",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "wages_squad",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1011
+  }
+ ]
+}

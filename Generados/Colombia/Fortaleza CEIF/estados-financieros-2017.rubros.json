@@ -1,0 +1,109 @@
+{
+ "md": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.md",
+ "pdf": "Clubes/Colombia/Fortaleza CEIF/estados-financieros-2017.pdf",
+ "club": "fortalezaceif-co",
+ "year": 2017,
+ "generatedAt": "2026-10-02T20:51:22.926Z",
+ "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+ "rubros": [
+  {
+   "label": "Actividades Deportivas",
+   "lado": "revenue",
+   "page": 14,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
+   "values": [
+    4220.658
+   ]
+  },
+  {
+   "label": "Otros Ingresos",
+   "lado": "revenue",
+   "page": 14,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
+   "values": [
+    1027.45
+   ]
+  },
+  {
+   "label": "Venta de Productos",
+   "lado": "revenue",
+   "page": 14,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
+   "values": [
+    70.183
+   ]
+  },
+  {
+   "label": "Casa Hogar",
+   "lado": "revenue",
+   "page": 14,
+   "section": "nota que desglosa \"Total Ingresos actividades ordinarias\"",
+   "values": [
+    1.6
+   ]
+  },
+  {
+   "label": "Aprovechamientos",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Total Otros Gastos\"",
+   "values": [
+    0.001
+   ]
+  },
+  {
+   "label": "Ajuste al Peso",
+   "lado": "revenue",
+   "page": 19,
+   "section": "nota que desglosa \"Total Otros Gastos\"",
+   "values": [
+    0.005
+   ]
+  },
+  {
+   "label": "Costos de Ventas",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Costo de Ventas\"",
+   "values": [
+    127.783
+   ]
+  },
+  {
+   "label": "Costos Extraordinarios",
+   "lado": "expense",
+   "page": 15,
+   "section": "nota que desglosa \"Total Costo de Ventas\"",
+   "values": [
+    49.494
+   ]
+  },
+  {
+   "label": "Total Gastos de Administración",
+   "lado": "expense",
+   "page": 17,
+   "section": "estado",
+   "values": [
+    2478.598
+   ]
+  },
+  {
+   "label": "Total Gastos de Ventas",
+   "lado": "expense",
+   "page": 18,
+   "section": "estado",
+   "values": [
+    979.969
+   ]
+  },
+  {
+   "label": "Otros gastos",
+   "lado": "expense",
+   "page": 19,
+   "section": "ajuste manual",
+   "values": [
+    41.78
+   ]
+  }
+ ]
+}

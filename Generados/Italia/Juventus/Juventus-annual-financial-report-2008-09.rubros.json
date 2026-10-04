@@ -1,0 +1,140 @@
+{
+  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2008-09.md",
+  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2008-09.pdf",
+  "club": "juventus-it",
+  "year": 2009,
+  "generatedAt": "2026-10-03T23:14:05.510Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ticket sales",
+      "lado": "revenue",
+      "page": 75,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        18.43599
+      ],
+      "glosa": "Venta de entradas"
+    },
+    {
+      "label": "Television and radio rights and media revenues",
+      "lado": "revenue",
+      "page": 75,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        150.350568
+      ],
+      "glosa": "Derechos de televisión y radio e ingresos de medios"
+    },
+    {
+      "label": "Revenues from sponsorship and advertising",
+      "lado": "revenue",
+      "page": 75,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        46.133442
+      ],
+      "glosa": "Ingresos por patrocinio y publicidad"
+    },
+    {
+      "label": "Revenues from players' registration rights",
+      "lado": "revenue",
+      "page": 75,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        17.270843
+      ],
+      "glosa": "Ingresos por derechos federativos de jugadores"
+    },
+    {
+      "label": "Other revenues",
+      "lado": "revenue",
+      "page": 75,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        8.243297
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Purchase of materials, supplies and other consumables",
+      "lado": "expense",
+      "page": 75,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.299971
+      ],
+      "glosa": "Compras de materiales, suministros y otros consumibles"
+    },
+    {
+      "label": "External services",
+      "lado": "expense",
+      "page": 75,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        27.789763
+      ],
+      "glosa": "Servicios exteriores"
+    },
+    {
+      "label": "Players' wages and technical staff costs",
+      "lado": "expense",
+      "page": 75,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        129.285999
+      ],
+      "glosa": "Salarios de jugadores y costes del cuerpo técnico"
+    },
+    {
+      "label": "Other personnel",
+      "lado": "expense",
+      "page": 75,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        8.477818
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Expenses from players' registration rights",
+      "lado": "expense",
+      "page": 75,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.271636
+      ],
+      "glosa": "Gastos por derechos federativos de jugadores"
+    },
+    {
+      "label": "Other costs",
+      "lado": "expense",
+      "page": 75,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        24.053994
+      ],
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Amortisation and write-downs of players' registration rights",
+      "lado": "expense",
+      "page": 75,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        28.038586
+      ],
+      "glosa": "Amortizaciones y deterioros de derechos federativos de jugadores"
+    },
+    {
+      "label": "Other amortisation, write-downs and provisions",
+      "lado": "expense",
+      "page": 75,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        4.338215
+      ],
+      "glosa": "Otras amortizaciones, deterioros y provisiones"
+    }
+  ]
+}

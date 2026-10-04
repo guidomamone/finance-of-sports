@@ -1,0 +1,21 @@
+{
+ "md": "Clubes/Brasil/Atletico Mineiro/demonstracoes-financeiras-saf-2023.md",
+ "generado": "2026-10-02T00:11:03.765Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Em milhares de Reais)",
+ "caja": {
+  "lineas": [
+   205
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   206,
+   214
+  ],
+  "ninguna": false
+ },
+ "observaciones": "El balance tiene columnas Controladora y Consolidado (ambas 31/12/2023, reapresentado); las líneas elegidas sirven para ambas columnas. Los valores consolidados son caja 211.532 y préstamos 584.594 + 408.159."
+}

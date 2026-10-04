@@ -1,0 +1,731 @@
+{
+ "md": "Clubes/España/Real Betis/cuentas-anuales-consolidadas-2021-2022-informe-auditoria.md",
+ "generatedAt": "2026-09-30T22:49:10.888Z",
+ "rubrosHuella": "bfe9450d1e23099e9cea95081c06907ba9a2a920",
+ "rubros": [
+  {
+   "label": "Reserva Legal 2.089.806 - -",
+   "lado": null,
+   "page": 50,
+   "section": "12.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución / Ejercicio 30/06/2022",
+   "choice": "other_expenses",
+   "confidence": 0.41,
+   "desdeCache": true
+  },
+  {
+   "label": "Reservas voluntarias 3.656.452 - -",
+   "lado": null,
+   "page": 50,
+   "section": "12.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución / Ejercicio 30/06/2022",
+   "choice": "other_expenses",
+   "confidence": 0.62,
+   "desdeCache": true
+  },
+  {
+   "label": "Reservas de capitalización 53.848 -",
+   "lado": null,
+   "page": 50,
+   "section": "12.3      Reserva legal y resultados de ejercicios anteriores / ejercicios anteriores son los siguientes: / Distribución / Ejercicio 30/06/2022",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "desdeCache": true
+  },
+  {
+   "label": "Reservas consolidadas",
+   "lado": null,
+   "page": 50,
+   "section": "6.885.431        (65.019)    (266.426)       6.553.986 / (5.763.818)                                 (42.779.446) / Ejercicio 30/06/2021",
+   "choice": "other_income",
+   "confidence": 0.66,
+   "desdeCache": true
+  },
+  {
+   "label": "Provisión por litigios",
+   "lado": null,
+   "page": 51,
+   "section": "1.186.695     3.222.250             (891.750)   3.517.194 / Ejercicio 30/06/2021",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.73
+    ],
+    [
+     "exceptional_items",
+     0.19
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ]
+   ],
+   "tokens": 1498
+  },
+  {
+   "label": "Provisión para responsabilidades 227.609 1.772.250 -",
+   "lado": null,
+   "page": 51,
+   "section": "13.        PROVISIONES Y CONTINGENCIAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.17
+    ],
+    [
+     "exceptional_items",
+     0.02
+    ]
+   ],
+   "tokens": 1502
+  },
+  {
+   "label": "Obligaciones por prestaciones a largo plazo al personal",
+   "lado": null,
+   "page": 51,
+   "section": "1.186.695     3.222.250             (891.750)   3.517.194 / Ejercicio 30/06/2021",
+   "choice": "other_expenses",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "other_expenses",
+     0.76
+    ],
+    [
+     "wages_squad",
+     0.12
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ]
+   ],
+   "tokens": 1510
+  },
+  {
+   "label": "Provisión por litigios 13.487 - -",
+   "lado": null,
+   "page": 51,
+   "section": "13.        PROVISIONES Y CONTINGENCIAS",
+   "choice": "other_expenses",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "exceptional_items",
+     0.21000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.05
+    ]
+   ],
+   "tokens": 1462
+  },
+  {
+   "label": "Provisión para responsabilidades 7.277 220.332 -",
+   "lado": null,
+   "page": 51,
+   "section": "1.186.695     3.222.250             (891.750)   3.517.194 / Ejercicio 30/06/2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.64,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.28
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ]
+   ],
+   "tokens": 1542
+  },
+  {
+   "label": "Reservas voluntarias 11.170.390 -",
+   "lado": null,
+   "page": 50,
+   "section": "6.885.431        (65.019)    (266.426)       6.553.986 / (5.763.818)                                 (42.779.446) / Ejercicio 30/06/2021",
+   "choice": "other_expenses",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_expenses",
+     0.5700000000000001
+    ],
+    [
+     "other_income",
+     0.29
+    ],
+    [
+     "admin_general_expense",
+     0.07
+    ]
+   ],
+   "tokens": 1342
+  },
+  {
+   "label": "Provisiones para impuestos 52.625 - -",
+   "lado": "expense",
+   "page": 51,
+   "section": "13.        PROVISIONES Y CONTINGENCIAS",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.97
+    ],
+    [
+     "other_expenses",
+     0.03
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1001
+  },
+  {
+   "label": "Provisiones para impuestos 70.547 -",
+   "lado": "expense",
+   "page": 51,
+   "section": "1.186.695     3.222.250             (891.750)   3.517.194 / Ejercicio 30/06/2021",
+   "choice": "admin_general_expense",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.96
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1044
+  },
+  {
+   "label": "Otras instalaciones 1.684.827 117.141 (11.482) -",
+   "lado": "expense",
+   "page": 40,
+   "section": "(38.915.292)    (2.198.364)      100.037      (211.270)      (41.224.890) / Ejercicio 30/06/2021 / Coste",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_expenses",
+     0.51
+    ],
+    [
+     "admin_general_expense",
+     0.38
+    ],
+    [
+     "depreciation",
+     0.06
+    ]
+   ],
+   "tokens": 1097
+  },
+  {
+   "label": "Construcciones 27.272.995 - - -",
+   "lado": "expense",
+   "page": 40,
+   "section": "(38.915.292)    (2.198.364)      100.037      (211.270)      (41.224.890) / Ejercicio 30/06/2021 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.89,
+   "top3": [
+    [
+     "depreciation",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.07
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 933
+  },
+  {
+   "label": "Estadios y pabellones deportivos 34.195.901 350.025 - -",
+   "lado": "expense",
+   "page": 40,
+   "section": "(38.915.292)    (2.198.364)      100.037      (211.270)      (41.224.890) / Ejercicio 30/06/2021 / Coste",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.45
+    ],
+    [
+     "admin_general_expense",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.18
+    ]
+   ],
+   "tokens": 1103
+  },
+  {
+   "label": "Instalaciones técnicas 6.702.272 65.001 (1.250) -",
+   "lado": "expense",
+   "page": 40,
+   "section": "(38.915.292)    (2.198.364)      100.037      (211.270)      (41.224.890) / Ejercicio 30/06/2021 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.7,
+   "top3": [
+    [
+     "depreciation",
+     0.74
+    ],
+    [
+     "other_expenses",
+     0.13
+    ],
+    [
+     "lump_football_operations_expense",
+     0.05
+    ]
+   ],
+   "tokens": 946
+  },
+  {
+   "label": "Maquinaria 271.234 - - -",
+   "lado": "expense",
+   "page": 40,
+   "section": "(38.915.292)    (2.198.364)      100.037      (211.270)      (41.224.890) / Ejercicio 30/06/2021 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "depreciation",
+     0.54
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "admin_general_expense",
+     0.1
+    ]
+   ],
+   "tokens": 867
+  },
+  {
+   "label": "Mobiliario 1.393.007 64.962 - -",
+   "lado": "expense",
+   "page": 40,
+   "section": "(38.915.292)    (2.198.364)      100.037      (211.270)      (41.224.890) / Ejercicio 30/06/2021 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "depreciation",
+     0.49
+    ],
+    [
+     "other_amortisation",
+     0.23
+    ],
+    [
+     "admin_general_expense",
+     0.15
+    ]
+   ],
+   "tokens": 875
+  },
+  {
+   "label": "Equipos para procesos de información 753.714 66.358 (7.865) -",
+   "lado": "expense",
+   "page": 40,
+   "section": "(38.915.292)    (2.198.364)      100.037      (211.270)      (41.224.890) / Ejercicio 30/06/2021 / Coste",
+   "choice": "admin_general_expense",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "depreciation",
+     0.03
+    ]
+   ],
+   "tokens": 1105
+  },
+  {
+   "label": "Derechos federativos de jugadores 164.614.183 6.307.913 (15.566.250) -",
+   "lado": "expense",
+   "page": 38,
+   "section": "Ejercicio 30/06/2021 / Coste",
+   "choice": "player_amortisation",
+   "confidence": 0.81,
+   "top3": [
+    [
+     "player_amortisation",
+     0.83
+    ],
+    [
+     "player_impairment",
+     0.09999999999999999
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1090
+  },
+  {
+   "label": "Reservas de capitalización 53.847,990 -",
+   "lado": null,
+   "page": 50,
+   "section": "6.885.431        (65.019)    (266.426)       6.553.986 / (5.763.818)                                 (42.779.446) / Ejercicio 30/06/2021",
+   "choice": "other_expenses",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_expenses",
+     0.46
+    ],
+    [
+     "youth_other_sports_expense",
+     0.16
+    ],
+    [
+     "other_income",
+     0.13
+    ]
+   ],
+   "tokens": 1420
+  },
+  {
+   "label": "Otro inmovilizado material 368.420 98.918 - -",
+   "lado": "expense",
+   "page": 40,
+   "section": "(38.915.292)    (2.198.364)      100.037      (211.270)      (41.224.890) / Ejercicio 30/06/2021 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "depreciation",
+     0.81
+    ],
+    [
+     "other_amortisation",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.07
+    ]
+   ],
+   "tokens": 1142
+  },
+  {
+   "label": "Turismos y furgonetas/Elementos de transporte 59.979 - - -",
+   "lado": "expense",
+   "page": 40,
+   "section": "(38.915.292)    (2.198.364)      100.037      (211.270)      (41.224.890) / Ejercicio 30/06/2021 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.82,
+   "top3": [
+    [
+     "depreciation",
+     0.84
+    ],
+    [
+     "match_organisation_expense",
+     0.1
+    ],
+    [
+     "other_expenses",
+     0.05
+    ]
+   ],
+   "tokens": 1125
+  },
+  {
+   "label": "Estadios y Pabellones deportivos",
+   "lado": "expense",
+   "page": 41,
+   "section": "junio de 2022 y 2021. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / siguiente detalle:",
+   "choice": "admin_general_expense",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Instalaciones técnicas y maquinaria",
+   "lado": "expense",
+   "page": 41,
+   "section": "junio de 2022 y 2021. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / siguiente detalle:",
+   "choice": "depreciation",
+   "confidence": 0.57,
+   "desdeCache": true
+  },
+  {
+   "label": "Mobiliario",
+   "lado": "expense",
+   "page": 41,
+   "section": "junio de 2022 y 2021. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / siguiente detalle:",
+   "choice": "depreciation",
+   "confidence": 0.46,
+   "desdeCache": true
+  },
+  {
+   "label": "Equipos para procesos de información",
+   "lado": "expense",
+   "page": 41,
+   "section": "junio de 2022 y 2021. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / siguiente detalle:",
+   "choice": "admin_general_expense",
+   "confidence": 0.61,
+   "desdeCache": true
+  },
+  {
+   "label": "Otras instalaciones y material deportivo",
+   "lado": "expense",
+   "page": 41,
+   "section": "junio de 2022 y 2021. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / siguiente detalle:",
+   "choice": "other_expenses",
+   "confidence": 0.75,
+   "desdeCache": true
+  },
+  {
+   "label": "Otro inmovilizado material",
+   "lado": "expense",
+   "page": 41,
+   "section": "junio de 2022 y 2021. / Gastos financieros capitalizados / inmovilizado material. / Bienes totalmente amortizados / siguiente detalle:",
+   "choice": "other_expenses",
+   "confidence": 0.44,
+   "desdeCache": true
+  },
+  {
+   "label": "Sueldos y Salarios",
+   "lado": "expense",
+   "page": 71,
+   "section": "4.086.591     2.787.271 / 16.3      Gastos de personal",
+   "choice": "wages_squad",
+   "confidence": 0.6,
+   "desdeCache": true
+  },
+  {
+   "label": "Indemnizaciones",
+   "lado": "expense",
+   "page": 71,
+   "section": "4.086.591     2.787.271 / 16.3      Gastos de personal",
+   "choice": "other_expenses",
+   "confidence": 0.98,
+   "desdeCache": true
+  },
+  {
+   "label": "Cargas sociales",
+   "lado": "expense",
+   "page": 71,
+   "section": "4.086.591     2.787.271 / 16.3      Gastos de personal",
+   "choice": "wages_squad",
+   "confidence": 0.87,
+   "desdeCache": true
+  },
+  {
+   "label": "Otras cargas sociales",
+   "lado": "expense",
+   "page": 71,
+   "section": "4.086.591     2.787.271 / 16.3      Gastos de personal",
+   "choice": "wages_squad",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "Aplicaciones informáticas 623.368 18.055 - -",
+   "lado": "expense",
+   "page": 38,
+   "section": "Ejercicio 30/06/2021 / Coste",
+   "choice": "depreciation",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "depreciation",
+     0.8
+    ],
+    [
+     "other_amortisation",
+     0.2
+    ],
+    [
+     "exceptional_items",
+     0
+    ]
+   ],
+   "tokens": 925
+  },
+  {
+   "label": "Derechos de emisión de gases 1.007.345 - (229.616) -",
+   "lado": "expense",
+   "page": 38,
+   "section": "Ejercicio 30/06/2021 / Coste",
+   "choice": "other_expenses",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_expenses",
+     0.74
+    ],
+    [
+     "admin_general_expense",
+     0.21000000000000002
+    ],
+    [
+     "player_amortisation",
+     0.03
+    ]
+   ],
+   "tokens": 1059
+  },
+  {
+   "label": "Concesiones administrativas - 900.000 - -",
+   "lado": "expense",
+   "page": 38,
+   "section": "Ejercicio 30/06/2021 / Coste",
+   "choice": "admin_general_expense",
+   "confidence": 0.93,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.94
+    ],
+    [
+     "other_expenses",
+     0.05
+    ],
+    [
+     "match_organisation_expense",
+     0.01
+    ]
+   ],
+   "tokens": 1030
+  },
+  {
+   "label": "Propiedad industrial 21.376 1.725 - -",
+   "lado": "expense",
+   "page": 38,
+   "section": "Ejercicio 30/06/2021 / Coste",
+   "choice": "other_amortisation",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_amortisation",
+     0.54
+    ],
+    [
+     "depreciation",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0
+    ]
+   ],
+   "tokens": 876
+  },
+  {
+   "label": "Derecho de participación en competiciones 110.000 - - -",
+   "lado": "expense",
+   "page": 38,
+   "section": "Ejercicio 30/06/2021 / Coste",
+   "choice": "match_organisation_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "match_organisation_expense",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1203
+  },
+  {
+   "label": "Derechos deportivos de jugadores 90.000 - (60.000) -",
+   "lado": "expense",
+   "page": 38,
+   "section": "Ejercicio 30/06/2021 / Coste",
+   "choice": "player_amortisation",
+   "confidence": 0.92,
+   "top3": [
+    [
+     "player_amortisation",
+     0.93
+    ],
+    [
+     "player_impairment",
+     0.06
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1088
+  },
+  {
+   "label": "Patentes, licencias y marcas 3.402 - - -",
+   "lado": "expense",
+   "page": 38,
+   "section": "Ejercicio 30/06/2021 / Coste",
+   "choice": "other_amortisation",
+   "confidence": 0.71,
+   "top3": [
+    [
+     "other_amortisation",
+     0.75
+    ],
+    [
+     "depreciation",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1057
+  }
+ ]
+}

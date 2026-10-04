@@ -1,0 +1,572 @@
+{
+  "club": "excelsior",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Países Bajos/Excelsior/Excelsior-Jaarcijfers-2024-2025.md",
+  "generatedAt": "2026-09-30T22:07:22.289Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 57,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 6,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 7,
+      "section": "## 2. Jaarrekening 2024/2025 Stichting Betaald Voetbal Excelsior / ### 2.1 Geconsolideerde balans per 30 juni 2025 (na resultaatbestemming)",
+      "columns": [
+        "",
+        "per 30 juni 2025",
+        "per 30 juni 2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ACTIVA (Bedragen in €)",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Vaste activa",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Materiële vaste activa",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "bedrijfsgebouwen en terreinen",
+          "values": [
+            "3.162.701",
+            "2.446.235"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "andere vaste bedrijfsmiddelen",
+          "values": [
+            "232.806",
+            "203.830"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "3.395.507",
+            "2.650.065"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Financiële vaste activa",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "deelneming",
+          "values": [
+            "247.894",
+            "309.742"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "actieve belastinglatentie",
+          "values": [
+            "541.962",
+            "475.920"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "overige vorderingen",
+          "values": [
+            "2.325.556",
+            "277.215"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "3.115.412",
+            "1.062.877"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vlottende activa",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "voorraden",
+          "values": [
+            "104.087",
+            "45.992"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "debiteuren",
+          "values": [
+            "2.459.521",
+            "516.541"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "belastingen",
+          "values": [
+            "187.621",
+            "33.582"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "overige vorderingen en overlopende activa",
+          "values": [
+            "1.402.433",
+            "1.173.800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "4.153.662",
+            "1.769.915"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "liquide middelen",
+          "values": [
+            "2.331.517",
+            "2.566.556"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "12.996.098",
+            "8.049.413"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": "# PASSIVA / # Eigen vermogen",
+      "columns": [
+        "resultaat boekjaar",
+        "2.426.534",
+        "",
+        "456.820",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "overige reserves",
+          "values": [
+            "2.204.442",
+            "",
+            "1.747.622",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "4.630.976",
+            "",
+            "2.204.442"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": "# Langlopende schulden",
+      "columns": [
+        "achtergestelde leningen",
+        "529.000",
+        "",
+        "1.000.701",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "overige langlopende leningen",
+          "values": [
+            "-",
+            "",
+            "602.824",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "529.000",
+            "",
+            "1.603.525"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 8,
+      "section": "# Kortlopende schulden",
+      "columns": [
+        "aflossingsverplichtingen komend boekjaar",
+        "749.151",
+        "",
+        "509.473",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "crediteuren",
+          "values": [
+            "1.886.696",
+            "",
+            "523.572",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "schulden kredietinstellingen",
+          "values": [
+            "-",
+            "",
+            "-",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "belasting en premie sociale verzekeringen",
+          "values": [
+            "996.020",
+            "",
+            "237.121",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "overige schulden en overlopende passiva",
+          "values": [
+            "4.204.255",
+            "",
+            "2.971.280",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "7.836.122",
+            "",
+            "4.241.446"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "12.996.098",
+            "",
+            "8.049.413"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": "## 2.2 Geconsolideerde winst-en-verliesrekening over 2024/2025",
+      "columns": [
+        "lonen en salarissen",
+        "5.196.270",
+        "4.879.159"
+      ],
+      "rows": [
+        {
+          "rawLabel": "sociale lasten",
+          "values": [
+            "752.809",
+            "690.253"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "pensioenen",
+          "values": [
+            "58.157",
+            "52.281"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "afschrijving vaste activa",
+          "values": [
+            "397.665",
+            "402.815"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "overige bedrijfskosten",
+          "values": [
+            "4.169.888",
+            "4.101.825"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "10.574.789",
+            "10.126.333"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 10,
+      "section": "## 2.3 Kasstroomoverzicht over 2024/2025",
+      "columns": [
+        "",
+        "2024/2025",
+        "2023/2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Resultaat boekjaar",
+          "values": [
+            "2.426.534",
+            "456.820"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Afschrijving materiële vaste activa",
+          "values": [
+            "397.665",
+            "402.815"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cashflow",
+          "values": [
+            "2.824.199",
+            "859.635"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "*Andere aanpassingen tot kasstroom uit operationele activiteiten*",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutatie financiële vaste activa",
+          "values": [
+            "-2.052.535",
+            "-862.152"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutaties voorraden",
+          "values": [
+            "-58.095",
+            "-34.317"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutaties vorderingen",
+          "values": [
+            "-2.325.652",
+            "605.822"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutaties kortlopende schulden",
+          "values": [
+            "3.594.676",
+            "-102.785"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutaties overig",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mutatie werkkapitaal (excl. liquide middelen)",
+          "values": [
+            "-841.606",
+            "-393.432"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kasstroom uit operationele activiteiten",
+          "values": [
+            "1.982.593",
+            "466.203"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Netto investeringen in",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiële vaste activa (investeringen)",
+          "values": [
+            "-1.143.107",
+            "-234.917"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Materiële vaste activa (verkoop)",
+          "values": [
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kasstroom uit investeringsactiviteiten",
+          "values": [
+            "-1.143.107",
+            "-234.917"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Financieringsoverschot (-tekort)",
+          "values": [
+            "839.486",
+            "231.286"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutaties overige langlopende schulden",
+          "values": [
+            "-1.074.525",
+            "44.599"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kasstroom uit financieringsactiviteiten",
+          "values": [
+            "-1.074.525",
+            "44.599"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Mutatie geldmiddelen",
+          "values": [
+            "-235.039",
+            "275.885"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Geldmiddelen begin boekjaar",
+          "values": [
+            "2.566.556",
+            "2.290.671"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Geldmiddelen einde boekjaar",
+          "values": [
+            "2.331.517",
+            "2.566.556"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/excelsior-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"excelsior\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

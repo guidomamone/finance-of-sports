@@ -1,0 +1,84 @@
+{
+ "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2017-06-30.md",
+ "generatedAt": "2026-10-03T13:26:02.490Z",
+ "rubrosHuella": "830d60d3b7d1b4cd7fbe344cbb984e46530ae4c4",
+ "rubros": [
+  {
+   "label": "Κύκλος εργασιών (καθαρός)",
+   "lado": "revenue",
+   "page": 3,
+   "section": "estado",
+   "choice": "lump_football_operations",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "(+) Λοιπά έσοδα και κέρδη",
+   "lado": "revenue",
+   "page": 3,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Κόστος πωλήσεων",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.45,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Έξοδα διοίκησης",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Έξοδα διάθεσης",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "desdeCache": true
+  },
+  {
+   "label": "(-) Λοιπά έξοδα και ζημιές",
+   "lado": "expense",
+   "page": 3,
+   "section": "estado",
+   "choice": "other_expenses",
+   "confidence": 0.96,
+   "desdeCache": true
+  },
+  {
+   "label": "(+) Λοιπά συνήθη έσοδα",
+   "lado": "revenue",
+   "page": 3,
+   "section": "estado",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1033
+  }
+ ]
+}

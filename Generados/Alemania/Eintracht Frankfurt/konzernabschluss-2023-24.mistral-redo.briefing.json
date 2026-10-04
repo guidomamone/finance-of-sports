@@ -1,0 +1,5099 @@
+{
+  "club": "eintrachtfrankfurt-de",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Alemania/Eintracht Frankfurt/konzernabschluss-2023-24.mistral-redo.md",
+  "generatedAt": "2026-09-30T01:47:45.895Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 211,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 35,
+  "relevantTableCount": 7,
+  "tables": [
+    {
+      "page": 4,
+      "section": "## 2. Geschäftsverlauf / ## 3. Lage / ### a. Ertragslage / #### Ergebnisentwicklung / #### Ertragsentwicklung",
+      "columns": [
+        "Operative Erträge",
+        "2023/24 in T€",
+        "2022/23 in T€",
+        "Veränderung in T€",
+        "Veränderung in %",
+        "01 bis 06/2023 in T€"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Spielbetrieb",
+          "values": [
+            "24.565",
+            "27.579",
+            "-3.014",
+            "-10,9%",
+            "13.976"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vermarktung",
+          "values": [
+            "84.419",
+            "88.249",
+            "-3.830",
+            "-4,3%",
+            "43.832"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TV-Rechte",
+          "values": [
+            "92.614",
+            "140.290",
+            "-47.676",
+            "-34,0%",
+            "61.508"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spielertransfer",
+          "values": [
+            "143.163",
+            "15.721",
+            "127.442",
+            "810,6%",
+            "1.083"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fußballschule",
+          "values": [
+            "1.065",
+            "646",
+            "419",
+            "64,9%",
+            "328"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Merchandising/Handel",
+          "values": [
+            "27.184",
+            "23.966",
+            "3.218",
+            "13,4%",
+            "10.595"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige",
+          "values": [
+            "17.495",
+            "13.771",
+            "3.724",
+            "27,0%",
+            "6.483"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gesamt",
+          "values": [
+            "390.505",
+            "310.222",
+            "80.283",
+            "25,9%",
+            "137.805"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 5,
+      "section": "UNTERNEHMENSREGISTER / ### Aufwandsentwicklung",
+      "columns": [
+        "Operative Aufwendungen",
+        "2023/24 in T€",
+        "2022/23 in T€",
+        "Veränderung in T€",
+        "Veränderung in %",
+        "01 bis 06/2023 in T€"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Personalaufwand",
+          "values": [
+            "141.379",
+            "119.579",
+            "21.800",
+            "18,2%",
+            "55.899"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abschreibungen",
+          "values": [
+            "34.318",
+            "29.769",
+            "4.549",
+            "15,3%",
+            "14.978"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spielbetrieb",
+          "values": [
+            "42.905",
+            "27.796",
+            "15.109",
+            "54,4%",
+            "13.289"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfer",
+          "values": [
+            "38.907",
+            "13.968",
+            "24.939",
+            "178,5%",
+            "3.514"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amateurfußball",
+          "values": [
+            "4.414",
+            "8.809",
+            "-4.395",
+            "-49,9%",
+            "5.262"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Frauenfußball",
+          "values": [
+            "2.837",
+            "1.350",
+            "1.487",
+            "110,1%",
+            "724"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fußballschule",
+          "values": [
+            "986",
+            "957",
+            "29",
+            "3,0%",
+            "438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marketing und Kommunikation",
+          "values": [
+            "57.770",
+            "58.464",
+            "-694",
+            "-1,2%",
+            "31.225"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Handel",
+          "values": [
+            "16.993",
+            "14.829",
+            "2.164",
+            "14,6%",
+            "5.858"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verwaltung",
+          "values": [
+            "13.138",
+            "14.776",
+            "-1.638",
+            "-11,1%",
+            "8.784"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gesamt",
+          "values": [
+            "353.647",
+            "290.297",
+            "63.350",
+            "21,8%",
+            "139.971"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "UNTERNEHMENSREGISTER / # Kapitalstruktur / # Investitionen",
+      "columns": [
+        "Investitionen",
+        "07/2023 bis 06/2024 in T€",
+        "01 bis 06/2023 in T€"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Spielerwerte",
+          "values": [
+            "88.277",
+            "6.705"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige immaterielle Vermögensgegenstände",
+          "values": [
+            "584",
+            "337"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sachanlagen",
+          "values": [
+            "11.989",
+            "2.435"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finanzanlagen",
+          "values": [
+            "404",
+            "7"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gesamt",
+          "values": [
+            "101.254",
+            "9.484"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "# Liquiditätsanalyse",
+      "columns": [
+        "Angaben in EURO",
+        "1.7.2023-30.6.2024",
+        "1.1.- 30.6.2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Konzernjahresüberschuss/-fehlbetrag (Periodenergebnis)",
+          "values": [
+            "26.857.788,72",
+            "-3.470.498,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abschreibungen auf immaterielle Vermögensgegenstände und Sachanlagen",
+          "values": [
+            "34.318.031,65",
+            "15.002.729,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme (+) / Abnahme (-) der Rückstellungen",
+          "values": [
+            "1.483.785,31",
+            "-443.381,91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige zahlungsunwirksame Aufwendungen (+) und Erträge (-)",
+          "values": [
+            "-1.452.685,70",
+            "-881.098,20"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 7,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "Angaben in EURO",
+        "1.7.2023-30.6.2024",
+        "1.1.- 30.6.2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Verlust (+) / Gewinn (-) aus dem Abgang von Gegenständen des Anlagevermögens",
+          "values": [
+            "-101.998.935,84",
+            "-220.210,77"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme (-) / Abnahme (+) der Vorräte, der Liefer- und Leistungsforderungen sowie anderer Aktiva, die nicht der Investitions- oder Finanzierungstätigkeit zuzuordnen sind",
+          "values": [
+            "-17.169,72",
+            "1.557.137,16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme (+) / Abnahme (-) der Liefer- und Leistungsverbindlichkeiten sowie anderer Passiva, die nicht der Investitions- oder Finanzierungstätigkeit zuzuordnen sind",
+          "values": [
+            "-809.918,24",
+            "-3.702.580,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zinsaufwendungen (+) / Zinserträge (-) / Erträge aus Ausleihungen (-)",
+          "values": [
+            "5.132.041,11",
+            "1.238.167,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ertragsteueraufwand (+) / Ertragsteuerertrag (-)",
+          "values": [
+            "4.198.756,25",
+            "37.565,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ertragsteuerzahlungen",
+          "values": [
+            "-4.992.851,75",
+            "-10.278,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cashflow aus laufender Geschäftstätigkeit",
+          "values": [
+            "-37.281.158,21",
+            "9.107.551,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einzahlungen aus Abgängen des Spielervermögens",
+          "values": [
+            "93.066.205,23",
+            "1.796.770,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einzahlungen aus Abgängen des Sachanlagevermögens",
+          "values": [
+            "4.028,88",
+            "3.311,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einzahlungen aus Abgängen des Finanzanlagevermögens",
+          "values": [
+            "315.600,00",
+            "157.800,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auszahlungen für Investitionen in Spielervermögen",
+          "values": [
+            "-60.022.646,16",
+            "-6.232.485,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auszahlungen für Investitionen in das immaterielle Anlagevermögen",
+          "values": [
+            "-584.223,16",
+            "-336.518,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auszahlungen für Investitionen in das Sachanlagevermögen",
+          "values": [
+            "-11.988.347,14",
+            "-2.435.275,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auszahlungen für Investitionen in das Finanzanlagevermögen",
+          "values": [
+            "-404.010,66",
+            "-7.186,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erhaltene Erträge aus Ausleihungen des Finanzanlagevermögens",
+          "values": [
+            "9.878,90",
+            "7.186,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erhaltene Zinsen",
+          "values": [
+            "167.544,39",
+            "16.747,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cashflow aus Investitionstätigkeit",
+          "values": [
+            "20.564.030,28",
+            "-7.029.649,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zuzahlung in die freie Kapitalrücklage einer Tochtergesellschaft durch Minderheitsgesellschafter",
+          "values": [
+            "152.574,50",
+            "46.946,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gezahlte Zinsen",
+          "values": [
+            "-5.309.464,40",
+            "-1.262.100,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auszahlungen / Einzahlungen aus der Forfaitierung von Forderungen",
+          "values": [
+            "-5.836.236,31",
+            "2.094.987,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einzahlungen / Auszahlungen aus der Aufnahme / Tilgung von Finanzkrediten",
+          "values": [
+            "25.166.256,53",
+            "-19.474.878,45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cashflow aus Finanzierungstätigkeit",
+          "values": [
+            "14.173.130,32",
+            "-18.595.046,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zahlungswirksame Veränderung des Finanzmittelfonds",
+          "values": [
+            "-2.543.997,61",
+            "-16.517.144,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wechselkurs-, konsolidierungskreis- und bewertungsbedingte Änderungen des Finanzmittelfonds",
+          "values": [
+            "7.006,31",
+            "-28.405,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finanzmittelbestand am Anfang der Periode",
+          "values": [
+            "6.203.434,19",
+            "22.748.983,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finanzmittelfonds^{*)} am Ende der Periode",
+          "values": [
+            "3.666.442,89",
+            "6.203.434,19"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": "UNTERNEHMENSREGISTER / #### c. Vermögenslage",
+      "columns": [
+        "",
+        "30/06/2024 in T€",
+        "30/06/2023 in T€",
+        "Veränderung in T€",
+        "Veränderung in %"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Spielerwerte",
+          "values": [
+            "90.006",
+            "46.044",
+            "43.962",
+            "95,5%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Immaterielle Vermögensgegenstände",
+          "values": [
+            "3.367",
+            "4.000",
+            "-633",
+            "-15,8%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sachanlagen",
+          "values": [
+            "58.584",
+            "51.873",
+            "6.711",
+            "12,9%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finanzanlagen",
+          "values": [
+            "979",
+            "891",
+            "88",
+            "9,9%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vorräte (Merchandising)",
+          "values": [
+            "7.460",
+            "7.719",
+            "-259",
+            "-3,4%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forderungen und sonstige Vermögensgegenstände",
+          "values": [
+            "74.633",
+            "30.125",
+            "44.508",
+            "147,7%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Flüssige Mittel",
+          "values": [
+            "3.666",
+            "6.204",
+            "-2.538",
+            "-40,9%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aktive Rechnungsabgrenzungsposten",
+          "values": [
+            "6.283",
+            "6.955",
+            "-672",
+            "-9,7%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gesamt",
+          "values": [
+            "244.978",
+            "153.811",
+            "91.167",
+            "59,3%"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 8,
+      "section": null,
+      "columns": [
+        "",
+        "30/06/2024 in T€",
+        "30/06/2023 in T€",
+        "Veränderung in T€",
+        "Veränderung in %"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Eigenkapital",
+          "values": [
+            "51.662",
+            "24.645",
+            "27.017",
+            "109,6%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Steuerrückstellungen",
+          "values": [
+            "898",
+            "624",
+            "274",
+            "43,9%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige Rückstellungen",
+          "values": [
+            "9.389",
+            "8.302",
+            "1.087",
+            "13,1%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten gegenüber Kreditunternehmen",
+          "values": [
+            "57.069",
+            "31.903",
+            "25.166",
+            "78,9%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erhaltene Anzahlungen auf Bestellungen",
+          "values": [
+            "1.556",
+            "285",
+            "1.271",
+            "446,0%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "22.487",
+            "24.477",
+            "-1.990",
+            "-8,1%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten aus Transfer",
+          "values": [
+            "48.933",
+            "15.276",
+            "33.657",
+            "220,3%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten gegenüber Gesellschaftern",
+          "values": [
+            "3.776",
+            "3.941",
+            "-165",
+            "-4,2%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige Verbindlichkeiten",
+          "values": [
+            "15.041",
+            "12.911",
+            "2.130",
+            "16,5%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Passive Rechnungsabgrenzungsposten",
+          "values": [
+            "34.167",
+            "31.447",
+            "2.720",
+            "8,6%"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gesamt",
+          "values": [
+            "244.978",
+            "153.811",
+            "91.167",
+            "59,3%"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 11,
+      "section": "UNTERNEHMENSREGISTER / # Aktiva",
+      "columns": [
+        "",
+        "30.6.2024",
+        "",
+        "30.6.2023",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "EUR",
+            "EUR",
+            "EUR",
+            "EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A. Anlagevermögen",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "I. Immaterielle Vermögensgegenstände",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Spielerwerte",
+          "values": [
+            "89.946.384,05",
+            "",
+            "45.551.867,26",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Entgeltlich erworbene Lizenzen, Software",
+          "values": [
+            "2.364.954,57",
+            "",
+            "2.988.038,02",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Geschäfts- oder Firmenwert",
+          "values": [
+            "886.200,58",
+            "",
+            "1.004.384,35",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Geleistete Anzahlungen",
+          "values": [
+            "175.425,00",
+            "93.372.964,20",
+            "499.692,12",
+            "50.043.981,75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Sachanlagen",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Bauten auf fremden Grundstücken",
+          "values": [
+            "37.570.053,28",
+            "",
+            "37.858.215,02",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Andere Anlagen, Betriebs- und Geschäftsausstattung",
+          "values": [
+            "19.705.063,49",
+            "",
+            "13.047.529,82",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Technische Anlagen und Maschinen",
+          "values": [
+            "113.694,74",
+            "",
+            "84.766,33",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Geleistete Anzahlungen",
+          "values": [
+            "1.194.501,12",
+            "58.583.312,63",
+            "882.207,69",
+            "51.872.718,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Finanzanlagen",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Ausleihungen an Gesellschafter",
+          "values": [
+            "326.876,53",
+            "",
+            "632.597,63",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Beteiligungen",
+          "values": [
+            "180.000,00",
+            "",
+            "100.000,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Ausleihungen an Unternehmen, mit denen ein Beteiligungsverhältnis besteht",
+          "values": [
+            "130.000,00",
+            "",
+            "0,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Kautionen und Genossenschaftsanteile",
+          "values": [
+            "342.911,50",
+            "979.788,03",
+            "158.630,54",
+            "891.228,17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "152.936.064,86",
+            "",
+            "102.807.928,78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Umlaufvermögen",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "I. Vorräte",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Handelswaren",
+          "values": [
+            "",
+            "7.460.129,02",
+            "",
+            "7.719.258,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Forderungen und sonstige Vermögensgegenstände",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Forderungen aus Lieferungen und Leistungen",
+          "values": [
+            "17.982.488,57",
+            "",
+            "18.391.578,95",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Forderungen aus Transfer",
+          "values": [
+            "54.317.492,33",
+            "",
+            "9.847.310,79",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Forderungen gegen Gesellschafter",
+          "values": [
+            "172.829,69",
+            "",
+            "731.823,77",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Sonstige Vermögensgegenstände",
+          "values": [
+            "2.159.965,00",
+            "74.632.775,59",
+            "1.154.279,20",
+            "30.124.992,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Kassenbestand und Guthaben bei Kreditinstituten",
+          "values": [
+            "",
+            "3.666.442,89",
+            "",
+            "6.203.434,19"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "85.759.347,50",
+            "",
+            "44.047.685,48"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C. Rechnungsabgrenzungsposten",
+          "values": [
+            "",
+            "6.283.235,98",
+            "",
+            "6.954.969,44"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "244.978.648,34",
+            "",
+            "153.810.583,70"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "",
+        "30.6.2024",
+        "",
+        "30.6.2023",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "EUR",
+            "EUR",
+            "EUR",
+            "EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "30.6.2024",
+            "",
+            "30.6.2023"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "EUR",
+            "",
+            "EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A. Eigenkapital",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "I. Gezeichnetes Kapital",
+          "values": [
+            "",
+            "2.802.500,00",
+            "",
+            "2.802.500,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "II. Kapitalrücklage",
+          "values": [
+            "",
+            "38.978.223,96",
+            "",
+            "38.978.223,96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "III. Gewinnrücklagen",
+          "values": [
+            "",
+            "10.598.053,43",
+            "",
+            "10.502.694,37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IV. Währungsausgleichsposten",
+          "values": [
+            "",
+            "-30.762,26",
+            "",
+            "-37.768,57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "V. Bilanzverlust",
+          "values": [
+            "",
+            "-439.829,42",
+            "",
+            "-27.346.557,36"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VI. Ausgleichsposten für nicht beherrschte Anteile",
+          "values": [
+            "",
+            "-245.894,67",
+            "",
+            "-254.170,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "51.662.291,04",
+            "",
+            "24.644.921,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "B. Rückstellungen",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Steuerrückstellungen",
+          "values": [
+            "",
+            "897.501,33",
+            "",
+            "624.035,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Sonstige Rückstellungen",
+          "values": [
+            "",
+            "9.389.483,83",
+            "",
+            "8.302.443,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "10.286.985,16",
+            "",
+            "8.926.478,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "C. Verbindlichkeiten",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "1. Verbindlichkeiten gegenüber Kreditinstituten",
+          "values": [
+            "",
+            "57.069.177,36",
+            "",
+            "31.902.920,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Erhaltene Anzahlungen auf Bestellungen",
+          "values": [
+            "",
+            "1.556.376,34",
+            "",
+            "284.674,65"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "",
+            "22.486.642,89",
+            "",
+            "24.476.699,84"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Verbindlichkeiten aus Transfer",
+          "values": [
+            "",
+            "48.933.196,85",
+            "",
+            "15.275.905,03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Verbindlichkeiten gegenüber Gesellschaftern",
+          "values": [
+            "",
+            "3.775.952,74",
+            "",
+            "3.940.649,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6. Sonstige Verbindlichkeiten",
+          "values": [
+            "",
+            "15.040.828,16",
+            "",
+            "12.911.061,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "148.862.174,34",
+            "",
+            "88.791.911,89"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "D. Rechnungsabgrenzungsposten",
+          "values": [
+            "",
+            "34.167.197,80",
+            "",
+            "31.447.271,72"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "244.978.648,34",
+            "",
+            "153.810.583,70"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 12,
+      "section": "### Konzern-Gewinn- und Verlustrechnung für die Zeit vom 1. Juli 2023 bis 30. Juni 2024",
+      "columns": [
+        "",
+        "1.7.2023- 30.6.2024 EUR",
+        "1.1.- 30.6.2023 EUR"
+      ],
+      "rows": [
+        {
+          "rawLabel": "1. Umsatzerlöse",
+          "values": [
+            "380.808.751,76",
+            "133.946.199,37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "2. Sonstige betriebliche Erträge",
+          "values": [
+            "9.696.068,12",
+            "3.859.148,91"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 13,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "",
+        "1.7.2023- 30.6.2024 EUR",
+        "1.1.- 30.6.2023 EUR"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Summe betriebliche Erträge",
+          "values": [
+            "390.504.819,88",
+            "137.805.348,28"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "3. Materialaufwand",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aufwendungen für bezogene Waren",
+          "values": [
+            "-12.208.902,21",
+            "-3.826.962,25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4. Personalaufwand",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "a) Löhne und Gehälter",
+          "values": [
+            "-130.491.601,89",
+            "-52.111.026,97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b) Soziale Abgaben",
+          "values": [
+            "-10.886.992,21",
+            "-3.787.553,93"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "-141.378.594,10",
+            "-55.898.580,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "5. Abschreibungen auf immaterielle Vermögensgegenstände des Anlagevermögens und Sachanlagen",
+          "values": [
+            "-34.318.031,65",
+            "-14.977.729,42"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6. Sonstige betriebliche Aufwendungen",
+          "values": [
+            "-165.741.810,23",
+            "-65.267.672,39"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Summe betriebliche Aufwendungen",
+          "values": [
+            "-353.647.338,19",
+            "-139.970.944,96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Betriebsergebnis",
+          "values": [
+            "36.857.481,69",
+            "-2.165.596,68"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "7. Erträge aus Ausleihungen des Finanzanlagevermögens",
+          "values": [
+            "9.878,90",
+            "7.186,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "- davon von Gesellschaftern EUR 9.878,90 (i. Vj. EUR 7.186,04) -",
+          "values": [
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "8. Sonstige Zinsen und ähnliche Erträge",
+          "values": [
+            "167.544,39",
+            "16.747,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "9. Abschreibungen auf Finanzanlagen",
+          "values": [
+            "0,00",
+            "-25.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "10. Zinsen und ähnliche Aufwendungen",
+          "values": [
+            "-5.309.464,40",
+            "-1.262.100,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finanzergebnis",
+          "values": [
+            "-5.132.041,11",
+            "-1.263.167,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "11. Steuern vom Einkommen und vom Ertrag",
+          "values": [
+            "-4.198.756,25",
+            "-37.565,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "12. Ergebnis nach Steuern",
+          "values": [
+            "27.526.684,33",
+            "-3.466.329,27"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "13. Sonstige Steuern",
+          "values": [
+            "-668.895,61",
+            "-4.169,49"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "14. Konzernjahresüberschuss (i. Vj. Konzernjahresfehlbetrag) vor nicht beherrschenden Anteilen",
+          "values": [
+            "26.857.788,72",
+            "-3.470.498,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "15. Ergebnisanteil von nicht beherrschenden Anteilen",
+          "values": [
+            "-48.939,22",
+            "-4.652,77"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "16. Konzernjahresüberschuss (i. Vj. Konzernjahresfehlbetrag) nach nicht beherrschenden Anteilen",
+          "values": [
+            "26.906.727,94",
+            "-3.465.845,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "17. Verlustvortrag",
+          "values": [
+            "-27.346.557,36",
+            "-23.880.711,37"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "18. Bilanzverlust",
+          "values": [
+            "-439.829,42",
+            "-27.346.557,36"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 13,
+      "section": "### Konzernkapitalflussrechnung für das Geschäftsjahr 1.7.2023 - 30.6.2024",
+      "columns": [
+        "Angaben in EURO",
+        "1.7.2023-30.6.2024",
+        "1.1.-30.6.2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Konzernjahresüberschuss/-fehlbetrag (Periodenergebnis)",
+          "values": [
+            "26.857.788,72",
+            "-3.470.498,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abschreibungen auf immaterielle Vermögensgegenstände und Sachanlagen",
+          "values": [
+            "34.318.031,65",
+            "15.002.729,42"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "Angaben in EURO",
+        "1.7.2023-30.6.2024",
+        "1.1.-30.6.2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Zunahme (+) / Abnahme (-) der Rückstellungen",
+          "values": [
+            "1.483.785,31",
+            "-443.381,91"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige zahlungsunwirksame Aufwendungen (+) und Erträge (-)",
+          "values": [
+            "-1.452.685,70",
+            "-881.098,20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verlust (+) / Gewinn (-) aus dem Abgang von Gegenständen des Anlagevermögens",
+          "values": [
+            "-101.998.935,84",
+            "-220.210,77"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme (-) / Abnahme (+) der Vorräte, der Liefer- und Leistungsforderungen sowie anderer Aktiva, die nicht der Investitions- oder Finanzierungstätigkeit zuzuordnen sind",
+          "values": [
+            "-17.169,72",
+            "1.557.137,16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zunahme (+) / Abnahme (-) der Liefer- und Leistungsverbindlichkeiten sowie anderer Passiva, die nicht der Investitions- oder Finanzierungstätigkeit zuzuordnen sind",
+          "values": [
+            "-809.918,24",
+            "-3.702.580,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zinsaufwendungen (+) / Zinserträge (-) / Erträge aus Ausleihungen (-)",
+          "values": [
+            "5.132.041,11",
+            "1.238.167,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ertragsteueraufwand (+) / Ertragsteuerertrag (-)",
+          "values": [
+            "4.198.756,25",
+            "37.565,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ertragsteuerzahlungen",
+          "values": [
+            "-4.992.851,75",
+            "-10.278,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cashflow aus laufender Geschäftstätigkeit",
+          "values": [
+            "-37.281.158,21",
+            "9.107.551,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einzahlungen aus Abgängen des Spielervermögens",
+          "values": [
+            "93.066.205,23",
+            "1.796.770,81"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einzahlungen aus Abgängen des Sachanlagevermögens",
+          "values": [
+            "4.028,88",
+            "3.311,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einzahlungen aus Abgängen des Finanzanlagevermögens",
+          "values": [
+            "315.600,00",
+            "157.800,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auszahlungen für Investitionen in Spielervermögen",
+          "values": [
+            "-60.022.646,16",
+            "-6.232.485,86"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auszahlungen für Investitionen in das immaterielle Anlagevermögen",
+          "values": [
+            "-584.223,16",
+            "-336.518,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auszahlungen für Investitionen in das Sachanlagevermögen",
+          "values": [
+            "-11.988.347,14",
+            "-2.435.275,35"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auszahlungen für Investitionen in das Finanzanlagevermögen",
+          "values": [
+            "-404.010,66",
+            "-7.186,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erhaltene Erträge aus Ausleihungen des Finanzanlagevermögens",
+          "values": [
+            "9.878,90",
+            "7.186,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erhaltene Zinsen",
+          "values": [
+            "167.544,39",
+            "16.747,72"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cashflow aus Investitionstätigkeit",
+          "values": [
+            "20.564.030,28",
+            "-7.029.649,23"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zuzahlung in die freie Kapitalrücklage einer Tochtergesellschaft durch Minderheitsgesellschafter",
+          "values": [
+            "152.574,50",
+            "46.946,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gezahlte Zinsen",
+          "values": [
+            "-5.309.464,40",
+            "-1.262.100,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Auszahlungen / Einzahlungen aus der Forfaitierung von Forderungen",
+          "values": [
+            "-5.836.236,31",
+            "2.094.987,12"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einzahlungen / Auszahlungen aus der Aufnahme / Tilgung von Finanzkrediten",
+          "values": [
+            "25.166.256,53",
+            "-19.474.878,45"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cashflow aus Finanzierungstätigkeit",
+          "values": [
+            "14.173.130,32",
+            "-18.595.046,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zahlungswirksame Veränderung des Finanzmittelfonds",
+          "values": [
+            "-2.543.997,61",
+            "-16.517.144,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Wechselkurs-, konsolidierungskreis- und bewertungsbedingte Änderungen des Finanzmittelfonds",
+          "values": [
+            "7.006,31",
+            "-28.405,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finanzmittelbestand am Anfang der Periode",
+          "values": [
+            "6.203.434,19",
+            "22.748.983,55"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Finanzmittelfonds' am Ende der Periode",
+          "values": [
+            "3.666.442,89",
+            "6.203.434,19"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "",
+        "Gezeichnetes Kapital EUR",
+        "Kapitalrücklage EUR",
+        "Gewinnrücklagen Gesetzliche Gewinnrücklage EUR",
+        "Andere freiwillige Gewinnrücklage EUR"
+      ],
+      "rows": [
+        {
+          "rawLabel": "31.12.2022",
+          "values": [
+            "2.802.500,00",
+            "38.978.223,96",
+            "280.000,00",
+            "10.120.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsumrechnung",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zuzahlung in die Kapitalrücklage einer Tochtergesellschaft nach § 272 Abs. 2 Nr. 4 HGB",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einstellung in den Ergebnisvortrag",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresfehlbetrag",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30.6.2023",
+          "values": [
+            "2.802.500,00",
+            "38.978.223,96",
+            "280.000,00",
+            "10.120.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsumrechnung",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zuzahlung in die Kapitalrücklage einer Tochtergesellschaft nach § 272 Abs. 2 Nr. 4 HGB",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einstellung in den Ergebnisvortrag",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresüberschuss",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30.6.2024",
+          "values": [
+            "2.802.500,00",
+            "38.978.223,96",
+            "280.000,00",
+            "10.120.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gewinnrücklagen",
+          "values": [
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "Sonstige andere Gewinnrücklage EUR",
+            "",
+            "Währungsausgleichsposten EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31.12.2022",
+          "values": [
+            "",
+            "73.353,12",
+            "",
+            "-9.363,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsumrechnung",
+          "values": [
+            "",
+            "0,00",
+            "",
+            "-28.405,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zuzahlung in die Kapitalrücklage einer Tochtergesellschaft nach § 272 Abs. 2 Nr. 4 HGB",
+          "values": [
+            "",
+            "29.341,25",
+            "",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einstellung in den Ergebnisvortrag",
+          "values": [
+            "",
+            "0,00",
+            "",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresfehlbetrag",
+          "values": [
+            "",
+            "0,00",
+            "",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30.6.2023",
+          "values": [
+            "",
+            "102.694,37",
+            "",
+            "-37.768,57"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsumrechnung",
+          "values": [
+            "",
+            "0,00",
+            "",
+            "7.006,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zuzahlung in die Kapitalrücklage einer Tochtergesellschaft nach § 272 Abs. 2 Nr. 4 HGB",
+          "values": [
+            "",
+            "95.359,06",
+            "",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einstellung in den Ergebnisvortrag",
+          "values": [
+            "",
+            "0,00",
+            "",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresüberschuss",
+          "values": [
+            "",
+            "0,00",
+            "",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30.6.2024",
+          "values": [
+            "",
+            "198.053,43",
+            "",
+            "-30.762,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Ergebnisvortrag EUR",
+            "Konzernjahresergebnis EUR",
+            "Bilanzergebnis EUR",
+            "Erwirtschaftetes Konzerneigenkapital EUR"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31.12.2022",
+          "values": [
+            "-9.838.859,34",
+            "-14.041.852,03",
+            "-23.880.711,37",
+            "28.364.002,18"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "",
+        "Ergebnisvortrag EUR",
+        "Konzernjahresergebnis EUR",
+        "Bilanzergebnis EUR",
+        "Erwirtschaftetes Konzerneigenkapital EUR"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Währungsumrechnung",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "-28.405,04"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zuzahlung in die Kapitalrücklage einer Tochtergesellschaft nach § 272 Abs. 2 Nr. 4 HGB",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "29.341,25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einstellung in den Ergebnisvortrag",
+          "values": [
+            "-14.041.852,03",
+            "14.041.852,03",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresfehlbetrag",
+          "values": [
+            "0,00",
+            "-3.465.845,99",
+            "-3.465.845,99",
+            "-3.465.845,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30.6.2023",
+          "values": [
+            "-23.880.711,37",
+            "-3.465.845,99",
+            "-27.346.557,36",
+            "24.899.092,40"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsumrechnung",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "7.006,31"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zuzahlung in die Kapitalrücklage einer Tochtergesellschaft nach § 272 Abs. 2 Nr. 4 HGB",
+          "values": [
+            "0,00",
+            "0,00",
+            "0,00",
+            "95.359,06"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einstellung in den Ergebnisvortrag",
+          "values": [
+            "-3.465.845,99",
+            "3.465.845,99",
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresüberschuss",
+          "values": [
+            "0,00",
+            "26.906.727,94",
+            "26.906.727,94",
+            "26.906.727,94"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30.6.2024",
+          "values": [
+            "-27.346.557,36",
+            "26.906.727,94",
+            "-439.829,42",
+            "51.908.185,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "Kapital nicht beherrschender Anteile EUR",
+            "",
+            "Eigenkapital gemäß Konzernbilanz EUR",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "31.12.2022",
+          "values": [
+            "-267.122,87",
+            "",
+            "28.096.879,31",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsumrechnung",
+          "values": [
+            "0,00",
+            "",
+            "-28.405,04",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zuzahlung in die Kapitalrücklage einer Tochtergesellschaft nach § 272 Abs. 2 Nr. 4 HGB",
+          "values": [
+            "17.604,75",
+            "",
+            "46.946,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einstellung in den Ergebnisvortrag",
+          "values": [
+            "0,00",
+            "",
+            "0,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresfehlbetrag",
+          "values": [
+            "-4.652,77",
+            "",
+            "-3.470.498,76",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30.6.2023",
+          "values": [
+            "-254.170,89",
+            "",
+            "24.644.921,51",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsumrechnung",
+          "values": [
+            "0,00",
+            "",
+            "7.006,31",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zuzahlung in die Kapitalrücklage einer Tochtergesellschaft nach § 272 Abs. 2 Nr. 4 HGB",
+          "values": [
+            "57.215,44",
+            "",
+            "152.574,50",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Einstellung in den Ergebnisvortrag",
+          "values": [
+            "0,00",
+            "",
+            "0,00",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Konzernjahresüberschuss",
+          "values": [
+            "-48.939,22",
+            "",
+            "26.857.788,72",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "30.6.2024",
+          "values": [
+            "-245.894,67",
+            "",
+            "51.662.291,04",
+            ""
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 17,
+      "section": "UNTERNEHMENSREGISTER / ## 1. Allgemeine Angaben / ## 2. Konsolidierungskreis",
+      "columns": [
+        "Name der Gesellschaft",
+        "Sitz",
+        "Anteil am Kapital / Stimmrechte %"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Eintracht Frankfurt Museum GmbH",
+          "values": [
+            "Frankfurt am Main",
+            "100,0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eintracht Frankfurt Football (Beijing) Co. Ltd.",
+          "values": [
+            "Beijing, China",
+            "100,0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EintrachtTech GmbH^{1}",
+          "values": [
+            "Frankfurt am Main",
+            "100,0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eintracht Frankfurt Stadion GmbH^{1}",
+          "values": [
+            "Frankfurt am Main",
+            "100,0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eintracht Frankfurt Event GmbH^{1}",
+          "values": [
+            "Frankfurt am Main",
+            "100,0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "studio fifty-nine GmbH^{1}",
+          "values": [
+            "Frankfurt am Main",
+            "100,0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eintracht Frankfurt Service GmbH^{1}",
+          "values": [
+            "Frankfurt am Main",
+            "100,0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eintracht Frankfurt NLZ GmbH^{1}",
+          "values": [
+            "Frankfurt am Main",
+            "100,0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Eintracht Frankfurt Sportpark Dreieich GmbH^{1}",
+          "values": [
+            "Dreieich",
+            "62,5"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "Angaben in TEURO",
+        "Spielerwerte Männer",
+        "Spielerwerte Frauen",
+        "Spielerwerte NLZ",
+        "Entgeltlich erworbene Lizen- zen, Software"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anschaffungskosten 30.06.2023",
+          "values": [
+            "103.361",
+            "142",
+            "0",
+            "5.621"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zugänge",
+          "values": [
+            "88.052",
+            "55",
+            "110",
+            "476"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abgänge",
+          "values": [
+            "60.205",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Umbuchung",
+          "values": [
+            "483",
+            "10",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsdifferenzen",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anschaffungskosten 30.06.2024",
+          "values": [
+            "131.691",
+            "207",
+            "110",
+            "6.097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kum. Abschreibungen 30.06.2023",
+          "values": [
+            "57.851",
+            "101",
+            "0",
+            "2.633"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abschreibungen",
+          "values": [
+            "27.759",
+            "43",
+            "21",
+            "1.099"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abgänge",
+          "values": [
+            "43.713",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsdifferenzen",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kum. Abschreibungen 30.06.2024",
+          "values": [
+            "41.897",
+            "144",
+            "21",
+            "3.732"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Buchwerte 30.06.2023",
+          "values": [
+            "45.510",
+            "41",
+            "0",
+            "2.988"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Buchwerte 30.06.2024",
+          "values": [
+            "89.794",
+            "63",
+            "89",
+            "2.365"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Angaben in TEURO",
+          "values": [
+            "Geschäfts- oder Firmenwert",
+            "",
+            "Geleistete Anzahlungen",
+            "Summe"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anschaffungskosten 30.06.2023",
+          "values": [
+            "1.182",
+            "",
+            "500",
+            "110.806"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zugänge",
+          "values": [
+            "0",
+            "",
+            "168",
+            "88.861"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abgänge",
+          "values": [
+            "0",
+            "",
+            "0",
+            "60.205"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Umbuchung",
+          "values": [
+            "0",
+            "",
+            "-493",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsdifferenzen",
+          "values": [
+            "0",
+            "",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anschaffungskosten 30.06.2024",
+          "values": [
+            "1.182",
+            "",
+            "175",
+            "139.462"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kum. Abschreibungen 30.06.2023",
+          "values": [
+            "178",
+            "",
+            "0",
+            "60.763"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abschreibungen",
+          "values": [
+            "118",
+            "",
+            "0",
+            "29.040"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abgänge",
+          "values": [
+            "0",
+            "",
+            "0",
+            "43.713"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsdifferenzen",
+          "values": [
+            "0",
+            "",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kum. Abschreibungen 30.06.2024",
+          "values": [
+            "296",
+            "",
+            "0",
+            "46.090"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Buchwerte 30.06.2023",
+          "values": [
+            "1.004",
+            "",
+            "500",
+            "50.043"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Buchwerte 30.06.2024",
+          "values": [
+            "886",
+            "",
+            "175",
+            "93.372"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "UNTERNEHMENSREGISTER / ## 6. Sachanlagen",
+      "columns": [
+        "Angaben in TEURO",
+        "Bauten auf fremden Grundstücken",
+        "Tech. Anlagen und Maschinen",
+        "Andere Anlagen, Betriebs- und Geschäftsausstattung",
+        "Geleistete Anzahlungen",
+        "Summe"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anschaffungskosten 30.06.2023",
+          "values": [
+            "40.513",
+            "104",
+            "24.350",
+            "883",
+            "65.850"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zugänge",
+          "values": [
+            "1.167",
+            "49",
+            "10.460",
+            "312",
+            "11.988"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abgänge",
+          "values": [
+            "0",
+            "0",
+            "3",
+            "0",
+            "3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Umbuchung",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsdifferenzen",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anschaffungskosten 30.06.2024",
+          "values": [
+            "41.680",
+            "153",
+            "34.807",
+            "1.195",
+            "77.835"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kumulierte Abschreibungen 30.06.2023",
+          "values": [
+            "2.655",
+            "19",
+            "11.303",
+            "0",
+            "13.977"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zugänge",
+          "values": [
+            "1.455",
+            "21",
+            "3.802",
+            "0",
+            "5.278"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abgänge",
+          "values": [
+            "0",
+            "0",
+            "3",
+            "0",
+            "3"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsdifferenzen",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kumulierte Abschreibungen 30.06.2024",
+          "values": [
+            "4.110",
+            "40",
+            "15.102",
+            "0",
+            "19.252"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Buchwerte 30.06.2023",
+          "values": [
+            "37.858",
+            "85",
+            "13.047",
+            "883",
+            "51.873"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Buchwerte 30.06.2024",
+          "values": [
+            "37.570",
+            "113",
+            "19.705",
+            "1.195",
+            "58.583"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 20,
+      "section": "## 7. Finanzanlagen",
+      "columns": [
+        "Angaben in TEURO",
+        "Ausleihungen an Gesellschafter",
+        "Beteiligungen",
+        "Ausleihungen an Beteiligungs- unternehmen",
+        "Kautionen und Genossen- schaftsanteile",
+        "Summe"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Anschaffungskosten 30.06.2023",
+          "values": [
+            "632",
+            "100",
+            "0",
+            "184",
+            "916"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zugänge",
+          "values": [
+            "10",
+            "80",
+            "130",
+            "184",
+            "404"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abgänge",
+          "values": [
+            "315",
+            "0",
+            "0",
+            "0",
+            "315"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 21,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "Angaben in TEURO",
+        "Ausleihungen an Gesellschafter",
+        "Beteiligungen",
+        "Ausleihungen an Beteiligungs- unternehmen",
+        "Kautionen und Genossen- schaftsanteile",
+        "Summe"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Währungsdifferenzen",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anschaffungskosten 30.06.2024",
+          "values": [
+            "327",
+            "180",
+            "130",
+            "368",
+            "1.005"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kumulierte Abschreibungen 30.06.2023",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "25",
+            "25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zugänge",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Abgänge",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Währungsdifferenzen",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Veränderung Konsolidierungskreis",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Kumulierte Abschreibungen 30.06.2024",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "25",
+            "25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Buchwerte 30.06.2023",
+          "values": [
+            "632",
+            "100",
+            "0",
+            "159",
+            "891"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Buchwerte 30.06.2024",
+          "values": [
+            "327",
+            "180",
+            "130",
+            "343",
+            "980"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "Angaben in TEURO",
+        "30.06.2023",
+        "",
+        "",
+        "30.06.2024",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Fälligkeit",
+            "",
+            "",
+            "Fälligkeit",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "bis 1 Jahr",
+            "1 bis 5 Jahre",
+            "größer 5 Jahre",
+            "bis 1 Jahr",
+            "1 bis 5 Jahre",
+            "größer 5 Jahre"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forderungen aus Lieferungen und Leistungen",
+          "values": [
+            "18.392",
+            "0",
+            "0",
+            "17.982",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forderungen aus Transfer",
+          "values": [
+            "5.922",
+            "3.925",
+            "0",
+            "49.637",
+            "4.680",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forderungen gegen Gesellschafter",
+          "values": [
+            "732",
+            "0",
+            "0",
+            "173",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige Vermögensgegenstände",
+          "values": [
+            "1.154",
+            "0",
+            "0",
+            "2.160",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "26.200",
+            "3.925",
+            "0",
+            "69.952",
+            "4.680",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 22,
+      "section": null,
+      "columns": [
+        "Angaben in TEURO",
+        "30.06.23",
+        "",
+        "Restlaufzeit",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "bis 31.12.23",
+            "bis 30.06.24",
+            "nach 30.06.24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forderungen aus Lieferungen und Leistungen",
+          "values": [
+            "18.392",
+            "18.392",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forderungen aus Transfer",
+          "values": [
+            "9.847",
+            "5.714",
+            "208",
+            "3.925"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forderungen gegen Gesellschafter",
+          "values": [
+            "732",
+            "732",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige Vermögensgegenstände",
+          "values": [
+            "1.154",
+            "1.154",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "30.125",
+            "25.992",
+            "208",
+            "3.925"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Angaben in TEURO",
+          "values": [
+            "30.06.24",
+            "",
+            "Restlaufzeit",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "bis 31.12.24",
+            "bis 30.06.25",
+            "nach 30.06.25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forderungen aus Lieferungen und Leistungen",
+          "values": [
+            "17.982",
+            "17.982",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forderungen aus Transfer",
+          "values": [
+            "54.317",
+            "47.443",
+            "2.194",
+            "4.680"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Forderungen gegen Gesellschafter",
+          "values": [
+            "173",
+            "173",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige Vermögensgegenstände",
+          "values": [
+            "2.160",
+            "2.160",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "74.632",
+            "67.758",
+            "2.194",
+            "4.680"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": "UNTERNEHMENSREGISTER / #### 10. Flüssige Mittel / #### 11. Aktive Rechnungsabgrenzungsposten",
+      "columns": [
+        "Angaben in TEURO",
+        "30.06.2023",
+        "",
+        "",
+        "30.06.2024",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Fälligkeit",
+            "",
+            "",
+            "Fälligkeit",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "bis 1 Jahr",
+            "1 bis 5 Jahre",
+            "größer 5 Jahre",
+            "bis 1 Jahr",
+            "1 bis 5 Jahre",
+            "größer 5 Jahre"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Signing Fees",
+          "values": [
+            "1.357",
+            "2.078",
+            "0",
+            "747",
+            "1.250",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ausgleichszahlungen",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "300",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lizenzen",
+          "values": [
+            "436",
+            "46",
+            "0",
+            "342",
+            "21",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zinsaufwand Forderungsver- kauf (Disagio)",
+          "values": [
+            "442",
+            "294",
+            "0",
+            "245",
+            "49",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trainingslager",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "720",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VBG-Beitrag",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "878",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anzahlung Merchandising",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "216",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige",
+          "values": [
+            "2.282",
+            "20",
+            "0",
+            "1.515",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "4.517",
+            "2.438",
+            "0",
+            "4.963",
+            "1.320",
+            "0"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 23,
+      "section": null,
+      "columns": [
+        "Angaben in TEURO",
+        "30.06.23",
+        "",
+        "Restlaufzeit",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "bis 31.12.23",
+            "bis 30.06.24",
+            "nach 30.06.24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Signing Fees",
+          "values": [
+            "3.435",
+            "679",
+            "678",
+            "2.078"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ausgleichszahlungen",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lizenzen",
+          "values": [
+            "482",
+            "290",
+            "146",
+            "46"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zinsaufwand Forderungsver- kauf (Disagio)",
+          "values": [
+            "736",
+            "245",
+            "197",
+            "294"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trainingslager",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VBG-Beitrag",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anzahlung Merchandising",
+          "values": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige",
+          "values": [
+            "2.302",
+            "2.222",
+            "60",
+            "20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "6.955",
+            "3.436",
+            "1.081",
+            "2.438"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "Angaben in TEURO",
+        "30.06.24",
+        "Restlaufzeit",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "bis 31.12.24",
+            "bis 30.06.25",
+            "nach 30.06.25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Signing Fees",
+          "values": [
+            "1.997",
+            "373",
+            "374",
+            "1.250"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ausgleichszahlungen",
+          "values": [
+            "300",
+            "300",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lizenzen",
+          "values": [
+            "363",
+            "254",
+            "88",
+            "21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Zinsaufwand Forderungsverkauf (Disagio)",
+          "values": [
+            "294",
+            "147",
+            "98",
+            "49"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Trainingslager",
+          "values": [
+            "720",
+            "720",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VBG-Beitrag",
+          "values": [
+            "878",
+            "878",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Anzahlung Merchandising",
+          "values": [
+            "216",
+            "216",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige",
+          "values": [
+            "1.515",
+            "1.405",
+            "110",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "6.283",
+            "4.293",
+            "670",
+            "1.320"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 24,
+      "section": "## 12. Eigenkapital / ## 13. Rückstellungen",
+      "columns": [
+        "Angaben in TEURO Art der Rückstellung",
+        "Stand 30.06.2023",
+        "Verbrauch",
+        "Auflösung",
+        "Zuführung",
+        "Stand 30.06.2024"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Steuerrückstellungen",
+          "values": [
+            "624",
+            "577",
+            "2",
+            "852",
+            "897"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige Rückstellungen",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verpflichtungen aus Abschluss- und Prüfungskosten",
+          "values": [
+            "139",
+            "134",
+            "4",
+            "162",
+            "163"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verpflichtungen aus dem Personalbereich",
+          "values": [
+            "5.369",
+            "3.679",
+            "4",
+            "5.448",
+            "7.134"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spielbetrieb",
+          "values": [
+            "42",
+            "17",
+            "11",
+            "548",
+            "562"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Übrige",
+          "values": [
+            "2.752",
+            "2.445",
+            "154",
+            "1.377",
+            "1.530"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Summe Sonstige",
+          "values": [
+            "8.302",
+            "6.275",
+            "173",
+            "7.535",
+            "9.389"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Summe Gesamt",
+          "values": [
+            "8.926",
+            "6.852",
+            "175",
+            "8.387",
+            "10.286"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "Angaben in TEURO",
+        "30.06.2023",
+        "",
+        "",
+        "30.06.2024",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Fälligkeit",
+            "",
+            "",
+            "Fälligkeit",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Art der Rückstellung",
+          "values": [
+            "bis 1 Jahr",
+            "1 bis 5 Jahre",
+            "größer 5 Jahre",
+            "bis 1 Jahr",
+            "1 bis 5 Jahre",
+            "größer 5 Jahre"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Steuerrückstellungen",
+          "values": [
+            "624",
+            "0",
+            "0",
+            "897",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige Rückstellungen",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verpflichtungen aus Abschluss- und Prüfungskosten",
+          "values": [
+            "139",
+            "0",
+            "0",
+            "163",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verpflichtungen aus dem Perso- nalbereich",
+          "values": [
+            "4.687",
+            "535",
+            "147",
+            "5.871",
+            "1.067",
+            "196"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spielbetrieb",
+          "values": [
+            "42",
+            "0",
+            "0",
+            "562",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Übrige",
+          "values": [
+            "2.727",
+            "17",
+            "8",
+            "1.505",
+            "17",
+            "8"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Summe Sonstige",
+          "values": [
+            "7.595",
+            "552",
+            "155",
+            "8.101",
+            "1.084",
+            "204"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Summe Gesamt",
+          "values": [
+            "8.219",
+            "552",
+            "155",
+            "8.998",
+            "1.084",
+            "204"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 25,
+      "section": null,
+      "columns": [
+        "Angaben in TEURO",
+        "30.6.2023",
+        "",
+        "",
+        "30.06.2024",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "Fälligkeit",
+            "",
+            "",
+            "Fälligkeit",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Art der Rückstellung",
+          "values": [
+            "bis 31.12.23",
+            "bis 30.06.24",
+            "nach 30.06.24",
+            "bis 31.12.24",
+            "bis 30.06.25",
+            "nach 30.06.25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Steuerrückstellungen",
+          "values": [
+            "624",
+            "0",
+            "0",
+            "897",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige Rückstellungen",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verpflichtungen aus Abschluss- und Prüfungskosten",
+          "values": [
+            "139",
+            "0",
+            "0",
+            "163",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verpflichtungen aus dem Perso- nalbereich",
+          "values": [
+            "3.884",
+            "803",
+            "682",
+            "4.994",
+            "876",
+            "1.264"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spielbetrieb",
+          "values": [
+            "42",
+            "0",
+            "0",
+            "562",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Übrige",
+          "values": [
+            "2.724",
+            "3",
+            "25",
+            "1.502",
+            "3",
+            "25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Summe Sonstige",
+          "values": [
+            "6.789",
+            "806",
+            "707",
+            "7.221",
+            "879",
+            "1.289"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Summe Gesamt",
+          "values": [
+            "7.413",
+            "806",
+            "707",
+            "8.118",
+            "879",
+            "1.289"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "Angaben in TEURO",
+        "30.06.23",
+        "Restlaufzeit",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "bis 1 Jahr",
+            "1 bis 5 Jahre",
+            "größer 5 Jahre"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten gegenüber Kreditinstituten",
+          "values": [
+            "31.903",
+            "965",
+            "4.075",
+            "26.863"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erhaltene Anzahlungen auf Bestellungen",
+          "values": [
+            "284",
+            "284",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "24.477",
+            "21.168",
+            "3.309",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten aus Transfer",
+          "values": [
+            "15.276",
+            "10.191",
+            "5.085",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten gegenüber Gesellschaftern",
+          "values": [
+            "3.941",
+            "169",
+            "483",
+            "3.289"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige Verbindlichkeiten",
+          "values": [
+            "12.911",
+            "9.599",
+            "707",
+            "2.605"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "davon aus Steuern",
+          "values": [
+            "7.333",
+            "7.333",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "88.792",
+            "42.376",
+            "13.659",
+            "32.757"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Angaben in TEURO",
+          "values": [
+            "30.06.24",
+            "Restlaufzeit",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "bis 1 Jahr",
+            "1 bis 5 Jahre",
+            "größer 5 Jahre"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten gegenüber Kreditinstituten",
+          "values": [
+            "57.069",
+            "27.117",
+            "4.164",
+            "25.788"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erhaltene Anzahlungen auf Bestellungen",
+          "values": [
+            "1.556",
+            "1.358",
+            "198",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "22.487",
+            "19.942",
+            "2.545",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten aus Transfer",
+          "values": [
+            "48.933",
+            "28.865",
+            "20.068",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten gegenüber Gesellschaftern",
+          "values": [
+            "3.776",
+            "120",
+            "487",
+            "3.169"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige Verbindlichkeiten",
+          "values": [
+            "15.041",
+            "11.903",
+            "714",
+            "2.424"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "davon aus Steuern",
+          "values": [
+            "10.403",
+            "10.403",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "148.862",
+            "89.305",
+            "28.176",
+            "31.381"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 26,
+      "section": null,
+      "columns": [
+        "Angaben in TEURO",
+        "30.06.23",
+        "Restlaufzeit",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "bis 31.12.23",
+            "bis 30.06.24",
+            "nach 30.06.24"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten gegenüber Kreditinstituten",
+          "values": [
+            "31.903",
+            "480",
+            "485",
+            "30.938"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erhaltene Anzahlungen auf Bestellungen",
+          "values": [
+            "284",
+            "284",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "24.477",
+            "20.621",
+            "547",
+            "3.309"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten aus Transfer",
+          "values": [
+            "15.276",
+            "9.672",
+            "519",
+            "5.085"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten gegenüber Gesellschafter",
+          "values": [
+            "3.941",
+            "110",
+            "59",
+            "3.772"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige Verbindlichkeiten",
+          "values": [
+            "12.911",
+            "9.513",
+            "86",
+            "3.312"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "davon aus Steuern",
+          "values": [
+            "7.333",
+            "7.333",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "88.792",
+            "40.680",
+            "1.696",
+            "46.416"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "Angaben in TEURO",
+        "30.06.24",
+        "Restlaufzeit",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "bis 31.12.24",
+            "bis 30.06.25",
+            "nach 30.06.25"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten gegenüber Kreditinstituten",
+          "values": [
+            "57.069",
+            "26.622",
+            "496",
+            "29.951"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erhaltene Anzahlungen auf Bestellungen",
+          "values": [
+            "1.556",
+            "1.358",
+            "0",
+            "198"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten aus Lieferungen und Leistungen",
+          "values": [
+            "22.487",
+            "19.311",
+            "631",
+            "2.545"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten aus Transfer",
+          "values": [
+            "48.933",
+            "28.846",
+            "19",
+            "20.068"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verbindlichkeiten gegenüber Gesellschafter",
+          "values": [
+            "3.776",
+            "60",
+            "60",
+            "3.656"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstige Verbindlichkeiten",
+          "values": [
+            "15.041",
+            "11.816",
+            "87",
+            "3.138"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "davon aus Steuern",
+          "values": [
+            "10.403",
+            "10.403",
+            "0",
+            "0"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "148.862",
+            "88.013",
+            "1.293",
+            "59.556"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 27,
+      "section": "#### 15. Passiver Rechnungsabgrenzungsposten / #### Erläuterungen zur Gewinn- und Verlustrechnung / #### 16. Umsatzerlöse",
+      "columns": [
+        "Umsätze in TEURO",
+        "2023/2024",
+        "01 bis 06 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Spielbetrieb",
+          "values": [
+            "24.565",
+            "13.976"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vermarktung",
+          "values": [
+            "84.419",
+            "43.832"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TV-Rechte",
+          "values": [
+            "92.614",
+            "61.508"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Spielertransfer",
+          "values": [
+            "143.163",
+            "1.083"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Merchandising und Catering",
+          "values": [
+            "27.184",
+            "10.595"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 28,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "Umsätze in TEURO",
+        "2023/2024",
+        "01 bis 06 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Frauen und Jugendfußball^{1}",
+          "values": [
+            "7.622",
+            "2.561"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fußballschule",
+          "values": [
+            "1.065",
+            "328"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sonstiges",
+          "values": [
+            "177",
+            "63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SUMME",
+          "values": [
+            "380.809",
+            "133.946"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 28,
+      "section": "#### 17. Sonstige betriebliche Erträge / #### 18. Personalaufwand / #### 19. Sonstige betriebliche Aufwendungen",
+      "columns": [
+        "Angaben in TEURO",
+        "2023/2024",
+        "01 bis 06 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Spielbetrieb Lizenzfußball",
+          "values": [
+            "42.906",
+            "13.289"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Marketing und Kommunikation",
+          "values": [
+            "57.770",
+            "31.225"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Transfer",
+          "values": [
+            "38.907",
+            "3.514"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Merchandising",
+          "values": [
+            "4.784",
+            "2.032"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Verwaltung",
+          "values": [
+            "13.138",
+            "8.784"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 29,
+      "section": "UNTERNEHMENSREGISTER",
+      "columns": [
+        "Angaben in TEURO",
+        "2023/2024",
+        "01 bis 06 2023"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Frauen- und Jugendfußball",
+          "values": [
+            "7.251",
+            "5.986"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fußballschule",
+          "values": [
+            "986",
+            "438"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "",
+          "values": [
+            "165.742",
+            "65.268"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 32,
+    "results": [
+      {
+        "label": "Spielbetrieb",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Spielbetrieb",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Spielbetrieb",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Vermarktung",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Vermarktung",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Vermarktung",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "TV-Rechte",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "broadcasting",
+        "matchedLabel": "TV-Rechte",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "TV-Rechte",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Spielertransfer",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Spielertransfer",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Spielertransfer",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Fußballschule",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "youth_football",
+        "matchedLabel": "Fußballschule",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Fußballschule",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Fußballschule",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Merchandising/Handel",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Merchandising/Handel",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Merchandising",
+        "similarity": 50
+      },
+      {
+        "label": "Sonstige",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Sonstige",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gesamt",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gesamt",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Personalaufwand",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Personalaufwand",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Abschreibungen",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Abschreibungen",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transfer",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Transfer",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "other_expenses",
+        "matchedLabel": "Transfer",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Amateurfußball",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amateurfußball",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Frauenfußball",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Frauenfußball",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Marketing und Kommunikation",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Marketing und Kommunikation",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Marketing und Kommunikation",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Handel",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Handel",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Verwaltung",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Verwaltung",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Verwaltung",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "1. Umsatzerlöse",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "1. Umsatzerlöse",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "2. Sonstige betriebliche Erträge",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Sonstige betriebliche Erträge",
+        "similarity": 100
+      },
+      {
+        "label": "2. Sonstige betriebliche Erträge",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Währungsumrechnung",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Währungsumrechnung",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Zuzahlung in die Kapitalrücklage einer Tochtergesellschaft nach § 272 Abs. 2 Nr. 4 HGB",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Zuzahlung in die Kapitalrücklage einer Tochtergesellschaft nach § 272 Abs. 2 Nr. 4 HGB",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Einstellung in den Ergebnisvortrag",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Einstellung in den Ergebnisvortrag",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Konzernjahresfehlbetrag",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Konzernjahresfehlbetrag",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "30.6.2023",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "30.6.2023",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Konzernjahresüberschuss",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Konzernjahresüberschuss",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "30.6.2024",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "30.6.2024",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "31.12.2022",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "31.12.2022",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Merchandising und Catering",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Merchandising und Catering",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Merchandising und Catering",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Frauen und Jugendfußball^{1}",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Frauen und Jugendfußball",
+        "similarity": 100
+      },
+      {
+        "label": "Frauen und Jugendfußball^{1}",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "youth_other_sports_expense",
+        "matchedLabel": "Frauen- und Jugendfußball",
+        "similarity": 100
+      },
+      {
+        "label": "Sonstiges",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "Sonstiges",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Sonstiges",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SUMME",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "SUMME",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Spielbetrieb Lizenzfußball",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Spielbetrieb Lizenzfußball",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "player_amortisation",
+        "matchedLabel": "Spielbetrieb Lizenzfußball (Restbuchwerte aus Spielerabgängen)",
+        "similarity": 50
+      },
+      {
+        "label": "Merchandising",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Merchandising",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Merchandising",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      }
+    ]
+  },
+  "league": {
+    "pais": "de",
+    "query": "Eintracht Frankfurt",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": []
+}

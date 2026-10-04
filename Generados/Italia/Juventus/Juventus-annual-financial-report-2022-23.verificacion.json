@@ -1,0 +1,257 @@
+{
+ "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2022-23.pdf",
+ "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2022-23.md",
+ "generado": "2026-10-04T17:44:08.058Z",
+ "estado": "ok",
+ "clubId": "juventus-it",
+ "year": 2023,
+ "escala": {
+  "valor": "unidades",
+  "escalon": 0,
+  "factor": 1,
+  "de": null
+ },
+ "ajustes": [
+  {
+   "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2022-23.pdf",
+   "campo": "fila",
+   "valor": "0",
+   "linea": 4894,
+   "etiqueta": "(sale) pérdida por acción",
+   "lado": "gasto",
+   "reemplaza": "Basic and diluted loss for the year per share",
+   "motivo": "Guido 2026-10-03: indicador por acción, no un importe",
+   "evidencia": null,
+   "autor": "Guido",
+   "fecha": "2026-10-03"
+  }
+ ],
+ "cola": [],
+ "chequeos": [
+  {
+   "nombre": "total de ingresos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "total de gastos",
+   "ok": null,
+   "detalle": "la lectura 5 no usa totales (en un balancete mezclan lados): la compuerta es el resultado impreso"
+  },
+  {
+   "nombre": "resultado del ejercicio",
+   "ok": true,
+   "detalle": "cierra (como impresos)"
+  },
+  {
+   "nombre": "lectura",
+   "ok": true,
+   "detalle": "cerró con la lectura 6 (resultado antes de impuestos si no hay resultado final + el total impreso puede ser un renglón + renglones sin lado según su signo + signos impresos (un renglón negativo resta en su lado) + solo las hojas con su signo (C/D del balancete), sin subtotales ni totales + la 5 más los renglones sin lado según su signo)"
+  },
+  {
+   "nombre": "documento del año 2024",
+   "ok": true,
+   "detalle": "ingresos de 2023: 503.680824 en este documento y 503.680823 en Juventus-annual-financial-report-2023-24.pdf (columna del año anterior)"
+  },
+  {
+   "nombre": "documento del año 2022",
+   "ok": true,
+   "detalle": "ingresos de 2022: 440.052159 en Juventus-annual-financial-report-2021-22.pdf y 440.052159 en este documento (columna del año anterior)"
+  },
+  {
+   "nombre": "año anterior cargado",
+   "ok": null,
+   "detalle": "el sitio no tiene 2022: este chequeo no se puede hacer"
+  }
+ ],
+ "notas": [
+  "el desglose de \"Other expenses\" (11 filas) no suma la fila: quedó la fila",
+  "ajuste manual: sale la fila \"Basic and diluted loss for the year per share\" (2026-10-03, Guido 2026-10-03: indicador por acción, no un importe)",
+  "la lectura base no cerraba; cerró con la lectura 6"
+ ],
+ "reintentar": null,
+ "reintentado": true,
+ "faltasDesglose": [
+  {
+   "renglon": "Other expenses",
+   "suma": 22.676,
+   "objetivo": 1.168
+  }
+ ],
+ "totales": {
+  "ingresos": 503.680824,
+  "gastos": 602.689924,
+  "financiero": -17.917224,
+  "impuesto": -6.367921,
+  "resultadoImpreso": -123.294245,
+  "resultadoParaCargar": -123.294245,
+  "resultadoFinal": null,
+  "lecturaSignos": "como impresos"
+ },
+ "lineas": [
+  {
+   "etiqueta": "Ticket sales",
+   "lado": "ingreso",
+   "M": 61.500497,
+   "pagina": 142,
+   "linea": 4868,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Audiovisual rights and media revenues",
+   "lado": "ingreso",
+   "M": 157.161351,
+   "pagina": 142,
+   "linea": 4869,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Revenues from sponsorship and advertising",
+   "lado": "ingreso",
+   "M": 150.280938,
+   "pagina": 142,
+   "linea": 4870,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Revenues from sales of products and licences",
+   "lado": "ingreso",
+   "M": 28.569824,
+   "pagina": 142,
+   "linea": 4871,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Revenues from players' registration rights",
+   "lado": "ingreso",
+   "M": 70.166506,
+   "pagina": 142,
+   "linea": 4872,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Other revenue and income",
+   "lado": "ingreso",
+   "M": 35.844221,
+   "pagina": 142,
+   "linea": 4873,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Share of results of associates and joint ventures",
+   "lado": "ingreso",
+   "M": 0.157487,
+   "pagina": 142,
+   "linea": 4889,
+   "origen": "estado (sin lado en el documento: entra como ingreso por su signo, impreso en positivo; lectura 6)"
+  },
+  {
+   "etiqueta": "Purchase of materials, supplies and other consumables",
+   "lado": "gasto",
+   "M": 3.990748,
+   "pagina": 142,
+   "linea": 4875,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Purchases of products for sale",
+   "lado": "gasto",
+   "M": 11.515611,
+   "pagina": 142,
+   "linea": 4876,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "External services",
+   "lado": "gasto",
+   "M": 94.520409,
+   "pagina": 142,
+   "linea": 4877,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Players' wages and technical staff costs",
+   "lado": "gasto",
+   "M": 255.358523,
+   "pagina": 142,
+   "linea": 4878,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Other personnel",
+   "lado": "gasto",
+   "M": 25.379144,
+   "pagina": 142,
+   "linea": 4879,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Expenses from players' registration rights",
+   "lado": "gasto",
+   "M": 12.043215,
+   "pagina": 142,
+   "linea": 4880,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Other expenses",
+   "lado": "gasto",
+   "M": 22.675515,
+   "pagina": 142,
+   "linea": 4881,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Amortisation and write-downs of players' registration rights",
+   "lado": "gasto",
+   "M": 159.134997,
+   "pagina": 142,
+   "linea": 4883,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Depreciation/amortisation of other tangible and intangible assets",
+   "lado": "gasto",
+   "M": 12.380303,
+   "pagina": 142,
+   "linea": 4884,
+   "origen": "estado (lectura 5: hoja)"
+  },
+  {
+   "etiqueta": "Provisions, write-downs and release of funds",
+   "lado": "gasto",
+   "M": 5.691459,
+   "pagina": 142,
+   "linea": 4885,
+   "origen": "estado (lectura 5: hoja)"
+  }
+ ],
+ "signosCarga": {
+  "financiero": 1,
+  "impuesto": 1
+ },
+ "financiero": [
+  {
+   "etiqueta": "Financial income",
+   "M": 3.345833,
+   "linea": 4887
+  },
+  {
+   "etiqueta": "Financial expenses",
+   "M": -21.263057,
+   "linea": 4888
+  }
+ ],
+ "impuesto": [
+  {
+   "etiqueta": "Current taxes",
+   "M": -6.583716,
+   "linea": 4891
+  },
+  {
+   "etiqueta": "Deferred and prepaid taxes",
+   "M": 0.215795,
+   "linea": 4892
+  }
+ ]
+}

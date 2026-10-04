@@ -1,0 +1,1225 @@
+{
+ "md": "Clubes/Brasil/Criciuma/demonstracoes-financeiras-2013.md",
+ "generatedAt": "2026-09-30T04:25:57.261Z",
+ "rubros": [
+  {
+   "label": "Departamento profissional",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "lump_football_operations_expense",
+   "confidence": 0.8,
+   "top3": [
+    [
+     "lump_football_operations_expense",
+     0.81
+    ],
+    [
+     "admin_general_expense",
+     0.08
+    ],
+    [
+     "wages_squad",
+     0.04
+    ]
+   ],
+   "tokens": 1485
+  },
+  {
+   "label": "Outras receitas",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1485
+  },
+  {
+   "label": "Extraordinárias",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "other_income",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "other_income",
+     0.96
+    ],
+    [
+     "exceptional_items",
+     0.04
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 1351
+  },
+  {
+   "label": "MESP - Projeto Formação Atletas – nota 5",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.61,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.64
+    ],
+    [
+     "youth_football",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.06
+    ]
+   ],
+   "tokens": 1552
+  },
+  {
+   "label": "Futebol",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "lump_football_operations",
+   "confidence": 0.46,
+   "top3": [
+    [
+     "lump_football_operations",
+     0.49
+    ],
+    [
+     "lump_football_operations_expense",
+     0.34
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1512
+  },
+  {
+   "label": "Royalties",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 1489
+  },
+  {
+   "label": "Sócios",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "member_dues",
+   "confidence": 0.95,
+   "top3": [
+    [
+     "member_dues",
+     0.96
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ],
+    [
+     "other_income",
+     0.01
+    ]
+   ],
+   "tokens": 1468
+  },
+  {
+   "label": "Venda de mercadorias",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "education_expense",
+     0
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1494
+  },
+  {
+   "label": "Departamento amador",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.64
+    ],
+    [
+     "youth_football",
+     0.33
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1492
+  },
+  {
+   "label": "Departamento administrativo",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "depreciation",
+     0
+    ],
+    [
+     "education_expense",
+     0
+    ]
+   ],
+   "tokens": 1492
+  },
+  {
+   "label": "Departamento financeiro",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "admin_general_expense",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.98
+    ],
+    [
+     "other_expenses",
+     0.02
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1485
+  },
+  {
+   "label": "Departamento de patrimônio",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "admin_general_expense",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "player_amortisation",
+     0
+    ]
+   ],
+   "tokens": 1481
+  },
+  {
+   "label": "Departamento jurídico",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "season_tickets",
+     0
+    ]
+   ],
+   "tokens": 1485
+  },
+  {
+   "label": "Departamento loja Tigre Maníacos",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.85,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.86
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1485
+  },
+  {
+   "label": "Departamento marketing e comercial",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "admin_general_expense",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.52
+    ],
+    [
+     "sponsorship_commercial",
+     0.47
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1469
+  },
+  {
+   "label": "Despesas tributárias",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "admin_general_expense",
+   "confidence": 1,
+   "top3": [
+    [
+     "admin_general_expense",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "youth_football",
+     0
+    ]
+   ],
+   "tokens": 1500
+  },
+  {
+   "label": "Superávit/Déficit antes do resultado financeiro",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "other_income",
+   "confidence": 0.56,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "lump_football_operations",
+     0.15000000000000002
+    ],
+    [
+     "exceptional_items",
+     0.13
+    ]
+   ],
+   "tokens": 1506
+  },
+  {
+   "label": "Superávit/Déficit do exercício",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "other_expenses",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "lump_football_operations",
+     0.27
+    ],
+    [
+     "other_income",
+     0.27
+    ]
+   ],
+   "tokens": 1394
+  },
+  {
+   "label": "Despesas financeiras – nota 16",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.89
+    ],
+    [
+     "admin_general_expense",
+     0.11
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1526
+  },
+  {
+   "label": "Imobilizado",
+   "lado": null,
+   "page": 11,
+   "section": "### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / ##### i Provisões ativas e passivas / ##### j Apuração do resultado / ##### k Mudanças nas políticas contábeis e reclassificações das cifras comparativas",
+   "choice": "depreciation",
+   "confidence": 0.73,
+   "top3": [
+    [
+     "depreciation",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "lump_football_operations_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1570
+  },
+  {
+   "label": "Intangível",
+   "lado": null,
+   "page": 11,
+   "section": "### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / ##### i Provisões ativas e passivas / ##### j Apuração do resultado / ##### k Mudanças nas políticas contábeis e reclassificações das cifras comparativas",
+   "choice": "player_amortisation",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "player_amortisation",
+     0.5
+    ],
+    [
+     "other_amortisation",
+     0.24000000000000002
+    ],
+    [
+     "other_expenses",
+     0.19
+    ]
+   ],
+   "tokens": 1579
+  },
+  {
+   "label": "Terrenos",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "choice": "depreciation",
+   "confidence": 0.62,
+   "top3": [
+    [
+     "depreciation",
+     0.66
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 917
+  },
+  {
+   "label": "Edificações",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "choice": "depreciation",
+   "confidence": 0.63,
+   "top3": [
+    [
+     "depreciation",
+     0.67
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.12
+    ]
+   ],
+   "tokens": 803
+  },
+  {
+   "label": "Receitas financeiras – nota 16",
+   "lado": null,
+   "page": 6,
+   "section": "CRICIÚMA E.C. / ### Demonstrações do resultado / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "player_impairment",
+     0
+    ]
+   ],
+   "tokens": 1522
+  },
+  {
+   "label": "Veículos",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "choice": "depreciation",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "depreciation",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "admin_general_expense",
+     0.17
+    ]
+   ],
+   "tokens": 801
+  },
+  {
+   "label": "Equipamentos informática",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "choice": "admin_general_expense",
+   "confidence": 0.94,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.95
+    ],
+    [
+     "other_expenses",
+     0.04
+    ],
+    [
+     "depreciation",
+     0.01
+    ]
+   ],
+   "tokens": 940
+  },
+  {
+   "label": "Máquinas e equipamentos",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "choice": "admin_general_expense",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.53
+    ],
+    [
+     "depreciation",
+     0.25
+    ],
+    [
+     "other_expenses",
+     0.21
+    ]
+   ],
+   "tokens": 913
+  },
+  {
+   "label": "Móveis e utensílios",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "choice": "depreciation",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "depreciation",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.35
+    ],
+    [
+     "admin_general_expense",
+     0.24
+    ]
+   ],
+   "tokens": 805
+  },
+  {
+   "label": "Atletas formados",
+   "lado": "expense",
+   "page": 14,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.72
+    ],
+    [
+     "player_amortisation",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.02
+    ]
+   ],
+   "tokens": 1066
+  },
+  {
+   "label": "Atletas contratados",
+   "lado": "expense",
+   "page": 14,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "other_expenses",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "player_amortisation",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.37
+    ],
+    [
+     "wages_squad",
+     0.17
+    ]
+   ],
+   "tokens": 1063
+  },
+  {
+   "label": "Atletas em formação",
+   "lado": "expense",
+   "page": 14,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012",
+   "choice": "youth_other_sports_expense",
+   "confidence": 0.69,
+   "top3": [
+    [
+     "youth_other_sports_expense",
+     0.73
+    ],
+    [
+     "player_amortisation",
+     0.26
+    ],
+    [
+     "other_expenses",
+     0.01
+    ]
+   ],
+   "tokens": 1089
+  },
+  {
+   "label": "Obras em execução",
+   "lado": "expense",
+   "page": 13,
+   "section": "#### 7 Adiantamentos a fornecedores / #### 8 Imobilizado",
+   "choice": "admin_general_expense",
+   "confidence": 0.72,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.75
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "depreciation",
+     0.03
+    ]
+   ],
+   "tokens": 859
+  },
+  {
+   "label": "Brasilux Indústria e Comércio",
+   "lado": "revenue",
+   "page": 15,
+   "section": "#### 11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 924
+  },
+  {
+   "label": "Criciúma Construções",
+   "lado": "revenue",
+   "page": 15,
+   "section": "#### 11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "other_income",
+     0
+    ]
+   ],
+   "tokens": 836
+  },
+  {
+   "label": "Cristalsul",
+   "lado": "revenue",
+   "page": 15,
+   "section": "#### 11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "broadcasting",
+     0
+    ],
+    [
+     "stadium_other",
+     0
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "Hypermarcas",
+   "lado": "revenue",
+   "page": 15,
+   "section": "#### 11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "lump_football_operations",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "Seara Alimentos",
+   "lado": "revenue",
+   "page": 15,
+   "section": "#### 11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 1,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     1
+    ],
+    [
+     "matchday_competition",
+     0
+    ],
+    [
+     "other_sports",
+     0
+    ]
+   ],
+   "tokens": 832
+  },
+  {
+   "label": "Siecesc - Sindicato das Indústrias de Carvão",
+   "lado": "revenue",
+   "page": 15,
+   "section": "#### 11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.96,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.96
+    ],
+    [
+     "other_income",
+     0.04
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 996
+  },
+  {
+   "label": "Resicolor Indus. Produtos Químicos",
+   "lado": "revenue",
+   "page": 15,
+   "section": "#### 11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.98,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.98
+    ],
+    [
+     "other_income",
+     0.02
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 987
+  },
+  {
+   "label": "MESP – Projeto de Formação Atletas Amadores (i)",
+   "lado": "revenue",
+   "page": 16,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 12 Receitas de subvenções a realizar",
+   "choice": "youth_football",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "youth_football",
+     0.7
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "other_sports",
+     0.07
+    ]
+   ],
+   "tokens": 1076
+  },
+  {
+   "label": "MESP – Projeto Construção Centro de Treinamento (i)",
+   "lado": "revenue",
+   "page": 16,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 12 Receitas de subvenções a realizar",
+   "choice": "other_income",
+   "confidence": 0.51,
+   "top3": [
+    [
+     "other_income",
+     0.55
+    ],
+    [
+     "member_dues",
+     0.32
+    ],
+    [
+     "sponsorship_commercial",
+     0.06
+    ]
+   ],
+   "tokens": 992
+  },
+  {
+   "label": "Juros ativos",
+   "lado": null,
+   "page": 18,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 16 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 1451
+  },
+  {
+   "label": "Renda de aplicações financeiras",
+   "lado": null,
+   "page": 18,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 16 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "admin_general_expense",
+     0
+    ],
+    [
+     "education",
+     0
+    ]
+   ],
+   "tokens": 1312
+  },
+  {
+   "label": "Variação monetária ativa",
+   "lado": null,
+   "page": 18,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 16 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "other_income",
+     0.99
+    ],
+    [
+     "other_expenses",
+     0.01
+    ],
+    [
+     "youth_other_sports_expense",
+     0
+    ]
+   ],
+   "tokens": 1314
+  },
+  {
+   "label": "CBSM - Companhia Bras. dos Serv. Marketing S.A",
+   "lado": "revenue",
+   "page": 15,
+   "section": "#### 11 Receitas de patrocínios a realizar",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.99,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.99
+    ],
+    [
+     "other_income",
+     0.01
+    ],
+    [
+     "matchday_competition",
+     0
+    ]
+   ],
+   "tokens": 1035
+  },
+  {
+   "label": "Descontos obtidos",
+   "lado": null,
+   "page": 18,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 16 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 0.77,
+   "top3": [
+    [
+     "other_income",
+     0.79
+    ],
+    [
+     "other_expenses",
+     0.18000000000000002
+    ],
+    [
+     "admin_general_expense",
+     0.02
+    ]
+   ],
+   "tokens": 1361
+  },
+  {
+   "label": "Juros passivos",
+   "lado": null,
+   "page": 18,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 16 Resultado financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.68,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.71
+    ],
+    [
+     "other_expenses",
+     0.29
+    ],
+    [
+     "match_organisation_expense",
+     0
+    ]
+   ],
+   "tokens": 1361
+  },
+  {
+   "label": "Despesas e comissões bancárias",
+   "lado": null,
+   "page": 18,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 16 Resultado financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.79,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.8
+    ],
+    [
+     "other_expenses",
+     0.2
+    ],
+    [
+     "wages_squad",
+     0
+    ]
+   ],
+   "tokens": 1524
+  },
+  {
+   "label": "Juros sobre empréstimos",
+   "lado": null,
+   "page": 18,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 16 Resultado financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.39
+    ],
+    [
+     "other_income",
+     0.03
+    ]
+   ],
+   "tokens": 1529
+  },
+  {
+   "label": "Variação monetária passiva",
+   "lado": null,
+   "page": 18,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 16 Resultado financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.76,
+   "top3": [
+    [
+     "other_expenses",
+     0.78
+    ],
+    [
+     "admin_general_expense",
+     0.13
+    ],
+    [
+     "other_income",
+     0.07
+    ]
+   ],
+   "tokens": 1315
+  },
+  {
+   "label": "Encargos sobre tributos em atraso",
+   "lado": null,
+   "page": 18,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 16 Resultado financeiro",
+   "choice": "admin_general_expense",
+   "confidence": 0.9,
+   "top3": [
+    [
+     "admin_general_expense",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.09
+    ],
+    [
+     "exceptional_items",
+     0.01
+    ]
+   ],
+   "tokens": 1518
+  },
+  {
+   "label": "Descontos concedidos",
+   "lado": null,
+   "page": 18,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 16 Resultado financeiro",
+   "choice": "other_expenses",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_expenses",
+     0.9
+    ],
+    [
+     "other_income",
+     0.06
+    ],
+    [
+     "admin_general_expense",
+     0.03
+    ]
+   ],
+   "tokens": 1385
+  },
+  {
+   "label": "Resultado financeiro",
+   "lado": null,
+   "page": 18,
+   "section": "CRICIÚMA E.C. / ### Notas explicativas às demonstrações financeiras / #### Exercícios findos em 31 de dezembro de 2013 e de 2012 / #### 16 Resultado financeiro",
+   "choice": "other_income",
+   "confidence": 0.88,
+   "top3": [
+    [
+     "other_income",
+     0.9
+    ],
+    [
+     "other_expenses",
+     0.06
+    ],
+    [
+     "exceptional_items",
+     0.03
+    ]
+   ],
+   "tokens": 1512
+  }
+ ]
+}

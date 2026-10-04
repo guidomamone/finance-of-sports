@@ -1,0 +1,2254 @@
+{
+  "club": "athleticoparanaense-br",
+  "year": 2024,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Athletico Paranaense/demonstracoes-financeiras-2024.md",
+  "generatedAt": "2026-09-30T14:11:44.079Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 18,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 53,
+  "relevantTableCount": 3,
+  "tables": [
+    {
+      "page": 8,
+      "section": "EBITDA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Superávit do exercício",
+          "values": [
+            "23.439",
+            "383.268"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Resultado financeiro",
+          "values": [
+            "18.703",
+            "17.468"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Depreciação e amortização",
+          "values": [
+            "13.650",
+            "11.683"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Amortização de atletas",
+          "values": [
+            "44.127",
+            "37.355"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Baixas de atletas",
+          "values": [
+            "19.326",
+            "48.280"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EBITDA Ajustado",
+          "values": [
+            "119.245",
+            "498.054"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita operacional líquida",
+          "values": [
+            "261.283",
+            "479.443"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Disponibilidades",
+          "values": [
+            "128.443",
+            "150.256",
+            "128.443",
+            "150.256"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "248.250",
+            "122.068",
+            "248.250",
+            "122.068"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento de fornecedores",
+          "values": [
+            "2.519",
+            "2.344",
+            "2.519",
+            "2.344"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Estoques",
+          "values": [
+            "9.425",
+            "10.756",
+            "9.425",
+            "10.756"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas do exercício seguinte",
+          "values": [
+            "1.220",
+            "1.550",
+            "5.279",
+            "9.669"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": "390.300        287.109         394.360        295.228 / Não circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "57.944",
+            "175.046",
+            "57.944",
+            "175.046"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas do exercício seguinte",
+          "values": [
+            "1.199",
+            "1.883",
+            "1.199",
+            "5.942"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 14,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "240.907",
+            "219.011",
+            "922.025",
+            "907.449"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Investimento",
+          "values": [
+            "455.052",
+            "458.853",
+            "6.197",
+            "5.261"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "126.127",
+            "99.749",
+            "126.127",
+            "99.749"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "29.937",
+            "29.011",
+            "34.345",
+            "41.538"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar",
+          "values": [
+            "50.841",
+            "22.097",
+            "50.841",
+            "22.097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações sociais e fiscais",
+          "values": [
+            "16.750",
+            "13.895",
+            "16.797",
+            "13.896"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento de clientes",
+          "values": [
+            "3.170",
+            "2.694",
+            "3.170",
+            "2.694"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e financiamentos 13 356 -",
+          "values": [
+            "67.954",
+            "52.025"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "103.547          68.661        175.600        133.214 / Não circulante",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "2.974",
+            "15.713",
+            "2.974",
+            "15.713"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar",
+          "values": [
+            "8.261",
+            "21.756",
+            "8.261",
+            "21.756"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões para contingências",
+          "values": [
+            "6.157",
+            "6.115",
+            "10.051",
+            "9.292"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Empréstimos e financiamentos 13 162 -",
+          "values": [
+            "160.538",
+            "179.294"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Parcelamentos fiscais",
+          "values": [
+            "19.756",
+            "10.358",
+            "19.756",
+            "10.358"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 15,
+      "section": "38.869          54.038        203.139        236.509 / Patrimônio líquido",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Capital social",
+          "values": [
+            "298.747",
+            "298.747",
+            "298.747",
+            "298.747"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reservas de capital",
+          "values": [
+            "78.434",
+            "78.434",
+            "78.434",
+            "78.434"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit ou déficit acumulados",
+          "values": [
+            "752.253",
+            "742.196",
+            "752.253",
+            "742.196"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Custo das atividades sociais e esportivas",
+          "values": [
+            "(250.747)",
+            "(230.728)",
+            "(250.747)",
+            "(230.728)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado Bruto",
+          "values": [
+            "10.536",
+            "248.716",
+            "10.536",
+            "248.716"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesa com pessoal",
+          "values": [
+            "(36.942)",
+            "(33.099)",
+            "(36.942)",
+            "(33.099)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação/amortizações",
+          "values": [
+            "(6.340)",
+            "(5.151)",
+            "(13.650)",
+            "(11.683)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas das atividades em geral",
+          "values": [
+            "(60.792)",
+            "(52.483)",
+            "(76.567)",
+            "(56.734)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras despesas/receitas",
+          "values": [
+            "188.249",
+            "116.711",
+            "188.249",
+            "116.711"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 18,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ajuste conforme ITG 2023 (R2) - -",
+          "values": [
+            "(13.382)",
+            "(13.382)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávit líquido do exercício - -",
+          "values": [
+            "23.439",
+            "23.439"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Provisão para contingências 145 2.132",
+          "values": [
+            "4.875"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação e amortização",
+          "values": [
+            "6.593",
+            "5.151",
+            "13.912",
+            "11.683"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas apropriadas ao resultado",
+          "values": [
+            "1.014",
+            "(1.570)",
+            "9.133",
+            "(13.747)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixa de ativos",
+          "values": [
+            "32.564",
+            "48.516",
+            "32.564",
+            "48.516"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização direitos federativos/formação atletas",
+          "values": [
+            "44.127",
+            "37.355",
+            "44.127",
+            "37.355"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superavit líquido ajustado",
+          "values": [
+            "67.143",
+            "512.885",
+            "109.390",
+            "471.683"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Variações nos ativos e passivos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Estoque",
+          "values": [
+            "1.316",
+            "(2.973)",
+            "1.316",
+            "(2.973)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "(11.813)",
+            "(37.833)",
+            "(19.931)",
+            "(26.472)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Adiantamento de clientes",
+          "values": [
+            "1.939",
+            "1.141",
+            "1.939",
+            "1.141"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a pagar",
+          "values": [
+            "15.249",
+            "34.177",
+            "15.249",
+            "33.432"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Atividade de financiamento",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Pagamentos de empréstimos/debêntures 518 -",
+          "values": [
+            "(2.827)",
+            "(81.061)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido (consumido/gerado) pelas atividades de financiamento 518 -",
+          "values": [
+            "(2.827)",
+            "(81.061)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": "Atividade de investimentos",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Adições ao imobilizado",
+          "values": [
+            "(29.377)",
+            "(12.849)",
+            "(29.377)",
+            "(35.231)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível - direitos sobre atletas",
+          "values": [
+            "(102.180)",
+            "(52.763)",
+            "(102.180)",
+            "(52.763)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 19,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo de caixa e equivalentes de caixa no início do exercício",
+          "values": [
+            "150.256",
+            "87.523",
+            "150.256",
+            "87.523"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo de caixa e equivalentes de caixa no final do exercício",
+          "values": [
+            "128.443",
+            "150.256",
+            "128.443",
+            "150.256"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receitas com jogos (b) 78.435",
+          "values": [
+            "79.055"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atividades comerciais (b)",
+          "values": [
+            "92.932",
+            "17.111",
+            "110.043"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras receitas operacionais 210.555 -",
+          "values": [
+            "210.555"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita operacional líquida",
+          "values": [
+            "702.751",
+            "(223.308)",
+            "479.443"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 29,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depreciação/amortizações (e)",
+          "values": [
+            "(42.506)",
+            "37.355",
+            "(5.151)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas das atividades em geral (f)",
+          "values": [
+            "(97.637)",
+            "45.153",
+            "(52.483)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras despesas/receitas -",
+          "values": [
+            "116.711",
+            "116.711"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado de equivalência patrimonial (38.299) -",
+          "values": [
+            "(38.299)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado não operacional 141.162 -",
+          "values": [
+            "141.162"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Bancos",
+          "values": [
+            "9.983",
+            "7.206",
+            "9.983",
+            "7.206"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicações financeiras",
+          "values": [
+            "117.843",
+            "142.477",
+            "117.843",
+            "142.477"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": "das demonstrações contábeis, sendo remuneradas em média a 99% da variação do / Certificado de Depósito Interbancário – CDI. / 6.       Contas a receber / Controladora                      Consolidado / 2024            2023           2024               2023",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Clientes",
+          "values": [
+            "306.912",
+            "299.110",
+            "306.912",
+            "299.110"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "( - ) Provisão créditos de liquidação duvidosa (718) (1.996) (718)",
+          "values": [
+            "(1.996)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 30,
+      "section": "306.194          297.114           306.194        297.114",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "248.968",
+            "124.064",
+            "248.968",
+            "124.064"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "57.944",
+            "175.046",
+            "57.944",
+            "175.046"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "1.220",
+            "1.550",
+            "5.279",
+            "9.669"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "1.199",
+            "1.883",
+            "1.199",
+            "5.942"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CAP S/A - Arena dos Paranaenses",
+          "values": [
+            "448.855",
+            "453.592"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Figueirense Futebol Clube",
+          "values": [
+            "6.197",
+            "5.261"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "455.052                   458.863 / Ações              Participação        Patrim. líquido / CAP S/A - Arena dos Paranaenses                               453.592.395            100%",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Saldo do investimento em 31/12/2023",
+          "values": [
+            "453.592"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "( - ) Resultado de equivalência patrimonial",
+          "values": [
+            "(65.277)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "( + ) Adiantamento para futuro aumento de capital",
+          "values": [
+            "60.540"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldo do investimento em 31/12/2024",
+          "values": [
+            "448.855"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "O CAP possui R$ 60.540 de adiantamento para futuro aumento capital na sua controlada / CAP S.A. – Arena dos Paranaenses. / 12. Intangível",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Atletas formados 4.236 400 (897)",
+          "values": [
+            "(1.399)",
+            "2.341"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas contratados",
+          "values": [
+            "78.938",
+            "101.780",
+            "(18.041)",
+            "(42.727)",
+            "119.950"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas em formação",
+          "values": [
+            "13.382",
+            "(13.382)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Licenças de uso 2.230 2.011 (2)",
+          "values": [
+            "(1.200)",
+            "3.039"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 34,
+      "section": "132.309      104.393            (32.321)             (45.693)            126.127 / Atletas em formação",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Sub 14 22 - (2.693) -",
+          "values": [
+            "2.693"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub 15 21 - (5.709) -",
+          "values": [
+            "5.709"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Sub 17 29 - (4.928) -",
+          "values": [
+            "4.928"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 35,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Financiamento estádio TJLP+1,9% a.a. Penhora, TPC* - -",
+          "values": [
+            "460.521",
+            "487.830"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tít. pot. construtivo Cub-PR Sinduscon - - -",
+          "values": [
+            "(232.547)",
+            "(256.510)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 35,
+      "section": "518              -    228.492     231.319",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante 356 -",
+          "values": [
+            "67.954",
+            "52.025"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante 162 -",
+          "values": [
+            "160.538",
+            "179.294"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 37,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Provisões de natureza trabalhista",
+          "values": [
+            "6.020",
+            "3.720",
+            "6.020",
+            "3.720"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salários e encargos sociais",
+          "values": [
+            "4.794",
+            "3.986",
+            "4.794",
+            "3.986"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 38,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Aquisição e partilha de direitos econômicos",
+          "values": [
+            "50.390",
+            "21.049",
+            "50.390",
+            "21.049"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "8.712",
+            "22.804",
+            "8.712",
+            "22.804"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 38,
+      "section": "59.102        43.853          59.102        43.853",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Circulante",
+          "values": [
+            "50.841",
+            "22.097",
+            "50.841",
+            "22.097"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Não circulante",
+          "values": [
+            "8.261",
+            "21.756",
+            "8.261",
+            "21.756"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Processos trabalhistas 5.866 148",
+          "values": [
+            "5.371"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "6.115 691",
+          "values": [
+            "6.157"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "Consolidado / 2023              Adições                 Baixas             2024",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Processos cíveis 3.355 1.331",
+          "values": [
+            "4.680"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Processos trabalhistas 5.937 148",
+          "values": [
+            "5.371"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "9.292 1.479",
+          "values": [
+            "10.051"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 39,
+      "section": "provisão. Com este esclarecimento a Diretoria Executiva optou em demonstrar em Nota / Explicativa para melhor transparência aos conselheiros, sócios e ao público em geral. / Consolidado / 2024                 2023 / Ações do CAP",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Ações cíveis – passiva – com risco possível",
+          "values": [
+            "34.618",
+            "31.085"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ações tributárias – passiva – com risco possível",
+          "values": [
+            "35.112"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ações trabalhistas – passiva – com risco possível",
+          "values": [
+            "4.104",
+            "5.034"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Direitos de transmissão",
+          "values": [
+            "57.559",
+            "79.791",
+            "57.559",
+            "79.791"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Televisionamento",
+          "values": [
+            "30.365",
+            "43.146",
+            "30.365",
+            "43.146"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Premiações e participações",
+          "values": [
+            "27.193",
+            "36.644",
+            "27.193",
+            "36.644"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Receita de jogos",
+          "values": [
+            "85.459",
+            "79.055",
+            "85.459",
+            "79.055"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bilheteria",
+          "values": [
+            "21.354",
+            "16.891",
+            "21.354",
+            "16.891"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Camarote",
+          "values": [
+            "4.775",
+            "4.108",
+            "4.775",
+            "4.108"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Associados (sócio furacão)",
+          "values": [
+            "59.330",
+            "57.687",
+            "59.330",
+            "57.687"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 40,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Atividades comerciais",
+          "values": [
+            "132.173",
+            "130.178",
+            "132.173",
+            "130.178"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas Arena",
+          "values": [
+            "22.875",
+            "16.726",
+            "22.875",
+            "16.726"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Publicidade",
+          "values": [
+            "15.118",
+            "11.049",
+            "15.118",
+            "11.049"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTT - Rede furacão",
+          "values": [
+            "23.571",
+            "29.112",
+            "23.571",
+            "29.112"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Loja oficial",
+          "values": [
+            "18.974",
+            "21.197",
+            "18.974",
+            "21.197"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "E-commerce",
+          "values": [
+            "3.366",
+            "3.369",
+            "3.366",
+            "3.369"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lanchonetes",
+          "values": [
+            "24.374",
+            "18.793",
+            "24.374",
+            "18.793"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocínios",
+          "values": [
+            "20.426",
+            "27.498",
+            "20.426",
+            "27.498"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Escolas de futebol",
+          "values": [
+            "2.353",
+            "2.435",
+            "2.353",
+            "2.435"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Atividades comerciais",
+          "values": [
+            "(41.568)",
+            "(37.948)",
+            "(41.568)",
+            "(37.948)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo Mercadoria Vendida Escola Oficial",
+          "values": [
+            "(1.388)",
+            "(1.567)",
+            "(1.388)",
+            "(1.567)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo Mercadoria Vendida Loja",
+          "values": [
+            "(8.749)",
+            "(9.591)",
+            "(8.749)",
+            "(9.591)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo Mercadoria Vendida E-Commerce",
+          "values": [
+            "(1.448)",
+            "(1.466)",
+            "(1.448)",
+            "(1.466)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo Mercadoria Vendida Lanchonetes",
+          "values": [
+            "(8.806)",
+            "(5.983)",
+            "(8.806)",
+            "(5.983)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 41,
+      "section": "Custo Mercadoria Vendida Choperia             (420)          -           (420)         -",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Custo das Operações de Jogos",
+          "values": [
+            "(16.896)",
+            "(15.905)",
+            "(16.896)",
+            "(15.905)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo das Operações de Eventos",
+          "values": [
+            "(3.085)",
+            "(2.834)",
+            "(3.085)",
+            "(2.834)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 41,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Custos Com Atletas",
+          "values": [
+            "(209.178)",
+            "(192.780)",
+            "(209.178)",
+            "(192.780)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salários, encargos e benefícios",
+          "values": [
+            "(107.629)",
+            "(100.768)",
+            "(107.629)",
+            "(100.768)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de Imagem",
+          "values": [
+            "(28.537)",
+            "(29.722)",
+            "(28.537)",
+            "(29.722)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos com viagens",
+          "values": [
+            "(18.838)",
+            "(14.006)",
+            "(18.838)",
+            "(14.006)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos Administrativos",
+          "values": [
+            "(10.048)",
+            "(10.929)",
+            "(10.048)",
+            "(10.929)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizações de atletas",
+          "values": [
+            "(44.127)",
+            "(37.355)",
+            "(44.127)",
+            "(37.355)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas com pessoal",
+          "values": [
+            "(36.942)",
+            "(33.099)",
+            "(36.942)",
+            "(33.099)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salários",
+          "values": [
+            "(26.998)",
+            "(25.305)",
+            "(26.998)",
+            "(25.305)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "Rescisões                                       (3)             3         (3)            3",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Encargos sobre folha",
+          "values": [
+            "(3.655)",
+            "(3.176)",
+            "(3.655)",
+            "(3.176)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benefícios sociais sobre folha",
+          "values": [
+            "(5.166)",
+            "(4.213)",
+            "(5.166)",
+            "(4.213)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Depreciação/Amortização",
+          "values": [
+            "(6.340)",
+            "(5.151)",
+            "(13.650)",
+            "(11.683)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação",
+          "values": [
+            "(4.773)",
+            "(3.834)",
+            "(12.084)",
+            "(10.365)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortização",
+          "values": [
+            "(1.567)",
+            "(1.317)",
+            "(1.567)",
+            "(1.317)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas das atividades em geral",
+          "values": [
+            "(60.792)",
+            "(52.483)",
+            "(76.567)",
+            "(56.734)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas administrativas",
+          "values": [
+            "(33.336)",
+            "(35.230)",
+            "(49.108)",
+            "(39.477)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas gerais",
+          "values": [
+            "(10.583)",
+            "(8.676)",
+            "(10.586)",
+            "(8.679)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas tributárias",
+          "values": [
+            "(9.329)",
+            "(3.989)",
+            "(9.329)",
+            "(3.989)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tecnologia da informação",
+          "values": [
+            "(7.543)",
+            "(4.588)",
+            "(7.543)",
+            "(4.588)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 42,
+      "section": "21. Outras despesas/receitas",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Outras despesas/receitas",
+          "values": [
+            "188.249",
+            "116.711",
+            "188.249",
+            "116.711"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita com venda de atletas",
+          "values": [
+            "272.268",
+            "228.592",
+            "272.268",
+            "228.592"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita com transações com atletas",
+          "values": [
+            "12.324",
+            "12.446",
+            "12.324",
+            "12.446"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas com transações de atletas",
+          "values": [
+            "(76.316)",
+            "(89.314)",
+            "(76.316)",
+            "(89.314)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Custo com formação de atletas - 14.035 -",
+          "values": [
+            "14.035"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Baixa de direitos federativos",
+          "values": [
+            "(19.326)",
+            "(48.280)",
+            "(19.326)",
+            "(48.280)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 44,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Repasse de Direitos Econômicos",
+          "values": [
+            "32.347"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vitor Hugo Roque Ferreira AMÉRICA FUTEBOL CLUBE",
+          "values": [
+            "6.671"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Hugo Moura CLUBE DE REGATAS DO FLAMENGO",
+          "values": [
+            "5.750"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Khellven Douglas Silva Oliveira GUARANI DE PALHOÇA FUTEBOL CLUBE",
+          "values": [
+            "4.027"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bruno Guimarães Rodrigues Moura GREMIO OSASCO AUDAX ESPORTE CLUBE",
+          "values": [
+            "2.965"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erick Luis Conrado Carvalho PARANÁ SOCCER TECHNICAL CENTER - PSTC",
+          "values": [
+            "2.816"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucas Halter TRIESTRE FUTEBOL CLUBE",
+          "values": [
+            "2.793"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Alex Paulo Menezes Santana PROFESSIONAL FOOTBALL CLUB LUDOGORETS",
+          "values": [
+            "2.326"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Miguel David Terans Pérez CLUBE ATLETICO MINEIRO",
+          "values": [
+            "2.056"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vitor Frezarin Bueno",
+          "values": [
+            "1.243"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "1.700"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Comissões Sobre Transações Atletas",
+          "values": [
+            "14.737"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bento Matheus Krepski FUTBOL LLAVE SL",
+          "values": [
+            "7.689"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Christian Roberto Alves Cardoso WELT SPORTS",
+          "values": [
+            "1.500"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Erick Luis Conrado Carvalho MMC SPORTS E LINK ASSESSORIA ESPORTIVA",
+          "values": [
+            "1.287"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vitor Frezarin Bueno CAROLINA DE BIASE AGENCIAMENTO PROFISSIONAIS",
+          "values": [
+            "1.278"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucas Halter TRUST SPORTS CONSULTORIA ESPORTIVA",
+          "values": [
+            "1.106"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "1.877"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Diversas Referente a Direitos Atletas",
+          "values": [
+            "14.286"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Participação Vitor Roque (20%)",
+          "values": [
+            "11.118"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Indenização Formação Luciano Arriagada CLUB SOCIAL Y DEPORTIVO COLO-COLO",
+          "values": [
+            "1.285"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de Preferência Lucas Esquivel CLUB ATLETICO UNION",
+          "values": [
+            "1.009"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 44,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Intermediação Sobre Contrato de Atletas",
+          "values": [
+            "8.995"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Vitor Hugo Roque Ferreira LINK ASSESSORIA ESPORTIVA",
+          "values": [
+            "6.176"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bruno Guimarães Rodrigues Moura ALEXIS DE SOUZA MALAVOLTA",
+          "values": [
+            "1.394"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros",
+          "values": [
+            "1.425"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos Atletas",
+          "values": [
+            "3.766"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Mecanismo de Solidariedade",
+          "values": [
+            "2.186"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 45,
+      "section": "CLUB ATHLETICO PARANAENSE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Despesas não operacionais",
+          "values": [
+            "(19.812)",
+            "(6.867)",
+            "(20.932)",
+            "(11.204)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas judiciais",
+          "values": [
+            "(3.117)",
+            "(5.770)",
+            "(4.229)",
+            "(10.107)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 45,
+      "section": "Resultado Não Operacional                    (17.582)    141.162       (18.703)    136.826 / 23. Resultado financeiro / Controladora               Consolidado",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Outras receitas financeiras",
+          "values": [
+            "1.030",
+            "2.710",
+            "1.030",
+            "2.710"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receitas financeiras",
+          "values": [
+            "13.965",
+            "11.996",
+            "13.965",
+            "11.996"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 45,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Outras despesas financeiras",
+          "values": [
+            "(9.060)",
+            "(3.729)",
+            "(9.777)",
+            "(4.233)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas financeiras",
+          "values": [
+            "(12.738)",
+            "(6.793)",
+            "(53.809)",
+            "(29.974)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 45,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Variação cambial ativa",
+          "values": [
+            "20.392",
+            "2.066",
+            "20.392",
+            "2.066"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Variação cambial passiva",
+          "values": [
+            "(10.032)",
+            "(1.557)",
+            "(10.032)",
+            "(1.557)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "labelsChecked": 10,
+    "results": [
+      {
+        "label": "Custo das Operações de Jogos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Custo das Operações de Jogos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Custo das Operações de Jogos",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Custo das Operações de Eventos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Custo das Operações de Eventos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Custo das Operações de Eventos",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Outras despesas/receitas",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras receitas operacionais",
+        "similarity": 50
+      },
+      {
+        "label": "Outras despesas/receitas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita com venda de atletas",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Receita com venda de atletas",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Receita com venda de atletas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita com transações com atletas",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "player_sales",
+        "matchedLabel": "Receita com transações com atletas (empréstimos)",
+        "similarity": 80
+      },
+      {
+        "label": "Receita com transações com atletas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com transações de atletas",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "player_sales",
+        "matchedLabel": "Receita com transações com atletas (empréstimos)",
+        "similarity": 50
+      },
+      {
+        "label": "Despesas com transações de atletas",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "other_expenses",
+        "matchedLabel": "Outras despesas com atletas",
+        "similarity": 60
+      },
+      {
+        "label": "Custo com formação de atletas - 14.035 -",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Custo com formação de atletas - 14.035 -",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Baixa de direitos federativos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Baixa de direitos federativos",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "player_amortisation",
+        "matchedLabel": "Baixa de direitos federativos",
+        "years": [
+          "2024",
+          "2025"
+        ]
+      },
+      {
+        "label": "Outras receitas financeiras",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras receitas operacionais",
+        "similarity": 50
+      },
+      {
+        "label": "Outras receitas financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas financeiras",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receitas financeiras",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Athletico Paranaense",
+    "matches": [
+      {
+        "leagueId": "br-serieA",
+        "year": "2024",
+        "matchedName": "Athletico Paranaense",
+        "wikipediaPage": "2024 Campeonato Brasileiro Série A"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": []
+}

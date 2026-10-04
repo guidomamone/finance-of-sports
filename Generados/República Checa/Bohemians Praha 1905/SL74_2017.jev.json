@@ -1,0 +1,834 @@
+{
+ "md": "Clubes/República Checa/Bohemians Praha 1905/SL74_2017.md",
+ "generatedAt": "2026-09-30T12:59:36.345Z",
+ "rubros": [
+  {
+   "label": "I.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.67,
+   "top3": [
+    [
+     "other_income",
+     0.6900000000000001
+    ],
+    [
+     "lump_football_operations",
+     0.21
+    ],
+    [
+     "matchday_competition",
+     0.03
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Tržby z prodeje výrobků",
+   "lado": "revenue",
+   "page": 30,
+   "section": "",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.6,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.63
+    ],
+    [
+     "other_income",
+     0.17
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ]
+   ],
+   "tokens": 830
+  },
+  {
+   "label": "Tržby z prodeje zboží",
+   "lado": "revenue",
+   "page": 30,
+   "section": "",
+   "choice": "sponsorship_commercial",
+   "confidence": 0.74,
+   "top3": [
+    [
+     "sponsorship_commercial",
+     0.77
+    ],
+    [
+     "other_income",
+     0.15
+    ],
+    [
+     "player_sales",
+     0.04
+    ]
+   ],
+   "tokens": 829
+  },
+  {
+   "label": "II.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.59,
+   "top3": [
+    [
+     "other_income",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.19
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "Tržby ze služeb",
+   "lado": "revenue",
+   "page": 30,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.48,
+   "top3": [
+    [
+     "other_income",
+     0.53
+    ],
+    [
+     "lump_football_operations",
+     0.28
+    ],
+    [
+     "sponsorship_commercial",
+     0.09
+    ]
+   ],
+   "tokens": 825
+  },
+  {
+   "label": "Ostatní tržby a výnosy",
+   "lado": "revenue",
+   "page": 7,
+   "section": "# 1. TEXTOVÁ ČÁST / # 1.1 Popisné údaje / # 1.2 Popis struktury společnosti / # 1.3 Údaje o minulém vývoji VI. hospodářský účetní rok 1. 7. 2017 - 30. 6. 2018 / # 1.3.1 Údaje o tržbách *)",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "player_sales",
+     0
+    ],
+    [
+     "lump_football_operations",
+     0
+    ]
+   ],
+   "tokens": 940
+  },
+  {
+   "label": "Celkem",
+   "lado": "revenue",
+   "page": 30,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 0.52,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "lump_football_operations",
+     0.44
+    ],
+    [
+     "broadcasting",
+     0
+    ]
+   ],
+   "tokens": 820
+  },
+  {
+   "label": "A.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "other_income",
+     0.6
+    ],
+    [
+     "lump_football_operations",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.060000000000000005
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "A.1.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "lump_football_operations",
+     0.27
+    ],
+    [
+     "other_expenses",
+     0.09
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "A.2.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.47,
+   "top3": [
+    [
+     "other_income",
+     0.5
+    ],
+    [
+     "other_expenses",
+     0.29000000000000004
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "C.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.39999999999999997
+    ],
+    [
+     "other_expenses",
+     0.24
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "B.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.45,
+   "top3": [
+    [
+     "other_income",
+     0.48
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "lump_football_operations",
+     0.06999999999999999
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "D.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "depreciation",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "depreciation",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "other_income",
+     0.2
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "D.1.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.11
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "A.3.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.55,
+   "top3": [
+    [
+     "other_income",
+     0.58
+    ],
+    [
+     "other_expenses",
+     0.24000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.09999999999999999
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "D.2.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_expenses",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_expenses",
+     0.41000000000000003
+    ],
+    [
+     "other_income",
+     0.33
+    ],
+    [
+     "lump_football_operations",
+     0.06
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "D.2.1.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.4,
+   "top3": [
+    [
+     "other_income",
+     0.43
+    ],
+    [
+     "other_expenses",
+     0.29000000000000004
+    ],
+    [
+     "lump_football_operations",
+     0.1
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "D.2.2.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_expenses",
+   "confidence": 0.34,
+   "top3": [
+    [
+     "other_expenses",
+     0.38
+    ],
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "E.1.2.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.39,
+   "top3": [
+    [
+     "other_income",
+     0.41
+    ],
+    [
+     "other_expenses",
+     0.26
+    ],
+    [
+     "lump_football_operations",
+     0.08
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "E.2.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "other_expenses",
+     0.27
+    ],
+    [
+     "lump_football_operations",
+     0.09
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "E.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.38,
+   "top3": [
+    [
+     "other_income",
+     0.41000000000000003
+    ],
+    [
+     "other_expenses",
+     0.33
+    ],
+    [
+     "lump_football_operations",
+     0.05
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "E.1.1.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.44,
+   "top3": [
+    [
+     "other_income",
+     0.47000000000000003
+    ],
+    [
+     "lump_football_operations",
+     0.22
+    ],
+    [
+     "other_expenses",
+     0.11
+    ]
+   ],
+   "tokens": 1278
+  },
+  {
+   "label": "E.3.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.33,
+   "top3": [
+    [
+     "other_income",
+     0.37
+    ],
+    [
+     "other_expenses",
+     0.35000000000000003
+    ],
+    [
+     "lump_football_operations",
+     0.07
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "E.1.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.43,
+   "top3": [
+    [
+     "other_income",
+     0.46
+    ],
+    [
+     "other_expenses",
+     0.21
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "III.1.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "depreciation",
+   "confidence": 0.28,
+   "top3": [
+    [
+     "depreciation",
+     0.32
+    ],
+    [
+     "other_expenses",
+     0.31
+    ],
+    [
+     "other_income",
+     0.19
+    ]
+   ],
+   "tokens": 1332
+  },
+  {
+   "label": "III.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "depreciation",
+   "confidence": 0.58,
+   "top3": [
+    [
+     "depreciation",
+     0.61
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ],
+    [
+     "other_income",
+     0.08
+    ]
+   ],
+   "tokens": 1330
+  },
+  {
+   "label": "III.2.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "depreciation",
+   "confidence": 0.31,
+   "top3": [
+    [
+     "depreciation",
+     0.34
+    ],
+    [
+     "other_expenses",
+     0.34
+    ],
+    [
+     "other_income",
+     0.17
+    ]
+   ],
+   "tokens": 1332
+  },
+  {
+   "label": "III.3.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "depreciation",
+   "confidence": 0.37,
+   "top3": [
+    [
+     "depreciation",
+     0.41000000000000003
+    ],
+    [
+     "other_expenses",
+     0.3
+    ],
+    [
+     "other_income",
+     0.12
+    ]
+   ],
+   "tokens": 1332
+  },
+  {
+   "label": "F.1.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.53,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ],
+    [
+     "other_expenses",
+     0.15
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "F.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.32,
+   "top3": [
+    [
+     "other_income",
+     0.34
+    ],
+    [
+     "lump_football_operations",
+     0.25
+    ],
+    [
+     "lump_football_operations_expense",
+     0.14
+    ]
+   ],
+   "tokens": 1274
+  },
+  {
+   "label": "F.3.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.49,
+   "top3": [
+    [
+     "other_income",
+     0.52
+    ],
+    [
+     "other_expenses",
+     0.21000000000000002
+    ],
+    [
+     "lump_football_operations",
+     0.17
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "F.2.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.36,
+   "top3": [
+    [
+     "other_income",
+     0.4
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "lump_football_operations",
+     0.19
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "F.4.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.42,
+   "top3": [
+    [
+     "other_income",
+     0.45
+    ],
+    [
+     "other_expenses",
+     0.25
+    ],
+    [
+     "lump_football_operations",
+     0.14
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "F.5.",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.35,
+   "top3": [
+    [
+     "other_income",
+     0.38
+    ],
+    [
+     "other_expenses",
+     0.32
+    ],
+    [
+     "lump_football_operations",
+     0.12
+    ]
+   ],
+   "tokens": 1276
+  },
+  {
+   "label": "Ostatní tržby",
+   "lado": "revenue",
+   "page": 30,
+   "section": "",
+   "choice": "other_income",
+   "confidence": 1,
+   "top3": [
+    [
+     "other_income",
+     1
+    ],
+    [
+     "member_dues",
+     0
+    ],
+    [
+     "player_sales",
+     0
+    ]
+   ],
+   "tokens": 825
+  },
+  {
+   "label": "*",
+   "lado": null,
+   "page": 16,
+   "section": "VÝKAZ ZISKU A ZTRÁTY / v plném rozsahu",
+   "choice": "other_income",
+   "confidence": 0.54,
+   "top3": [
+    [
+     "other_income",
+     0.56
+    ],
+    [
+     "other_expenses",
+     0.23
+    ],
+    [
+     "lump_football_operations",
+     0.13
+    ]
+   ],
+   "tokens": 1272
+  }
+ ]
+}

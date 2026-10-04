@@ -1,0 +1,2654 @@
+{
+  "club": "ituano",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Ituano/relatorio-de-auditoria-ituano-2019.md",
+  "generatedAt": "2026-09-30T21:53:26.536Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 128,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 37,
+  "relevantTableCount": 3,
+  "tables": [
+    {
+      "page": 2,
+      "section": "ITUANO FUTEBOL CLUBE / # Demonstrações Contábeis Exercício findo em 31 de dezembro de 2019",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "AUDIT Consult – Auditoria & Consultoria | CNPJ",
+          "values": [
+            "03.318.179/0001-18"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rua: Líbero Badaró, 377, Conj.703 - CEP 01009-906 - Centro - São Paulo - SP. – Fone (11)",
+          "values": [
+            "3101-7931."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 6,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / BALANÇO PATRIMONIAL em 31 de DEZEMBRO de 2019 / ATIVO",
+      "columns": [
+        "CIRCULANTE",
+        "NOTAS",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caixa e Bancos",
+          "values": [
+            "4",
+            "364.149,80",
+            "182.366,43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contas a receber",
+          "values": [
+            "5",
+            "164.763,94",
+            "7.678.125,14"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento a Empregados",
+          "values": [
+            "6",
+            "21.762,89",
+            "34.188,58"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento a Fornecedores",
+          "values": [
+            "",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamento a Fornecedores Diversos",
+          "values": [
+            "6",
+            "20.318,51",
+            "10.959,79"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Despesas Antecipadas",
+          "values": [
+            "",
+            "-",
+            "7.077,41"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos a Recuperar",
+          "values": [
+            "7",
+            "11.203,26",
+            "8.598,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do Ativo Circulante",
+          "values": [
+            "",
+            "582.198,40",
+            "7.921.316,05"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "NÃO CIRCULANTE",
+      "columns": [
+        "Realizável a Longo Prazo",
+        "",
+        "23.338.201,52",
+        "17.455.228,42"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Outras Contas a Receber",
+          "values": [
+            "",
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depósito Judicial",
+          "values": [
+            "8",
+            "-",
+            "331.868,98"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos para Negociações Futuras",
+          "values": [
+            "9",
+            "20.500.000,00",
+            "14.456.340,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível - Custo Formação e Direito Federativo",
+          "values": [
+            "10",
+            "3.869.470,35",
+            "3.610.865,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível - Participação em Outros Negócios",
+          "values": [
+            "10",
+            "6.524,64",
+            "10.280,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Benfeitorias em Imóveis de Terceiros",
+          "values": [
+            "11",
+            "-",
+            "78.378,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Amortizações de Investimentos",
+          "values": [
+            "10.d e 11",
+            "(1.037.793,47)",
+            "(1.032.504,88)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "Permanente",
+      "columns": [
+        "Imobilizado - Contruções Imóveis e Terrenos",
+        "12",
+        "446.656,03",
+        "446.656,03"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Imobilizado - Móveis e Instalações",
+          "values": [
+            "12",
+            "225.113,96",
+            "225.113,96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Imobilizado - Máquinas e Equipamentos",
+          "values": [
+            "12",
+            "350.714,63",
+            "327.231,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Depreciação e Amortização",
+          "values": [
+            "12",
+            "(583.744,94)",
+            "(509.661,32)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "PASSIVO",
+      "columns": [
+        "CIRCULANTE",
+        "NOTAS",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Obrigações Trabalhistas - Salários e Encargos",
+          "values": [
+            "13",
+            "305.860,57",
+            "252.965,43"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Acordos e Provisões Trabalhistas",
+          "values": [
+            "14",
+            "418.169,71",
+            "397.111,67"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações Tributárias",
+          "values": [
+            "15",
+            "89.469,15",
+            "89.387,59"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fornecedores e Outras Dívidas a Pagar",
+          "values": [
+            "16",
+            "84.034,89",
+            "438.869,20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Títulos de dívida a pagar",
+          "values": [
+            "16.2",
+            "-",
+            "5.990.625,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e Utilização de Limites Bancários",
+          "values": [
+            "17",
+            "0,01",
+            "2.455.372,47"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos de Receitas Exercícios Futuros",
+          "values": [
+            "19",
+            "-",
+            "300.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Receitas e Antecipações",
+          "values": [
+            "18 e 18.1",
+            "34.132,94",
+            "39.991,56"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Obrigações com terceiros",
+          "values": [
+            "16.1",
+            "70.000,00",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do Passivo Circulante",
+          "values": [
+            "",
+            "1.001.667,27",
+            "9.964.322,92"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 6,
+      "section": "NÃO CIRCULANTE",
+      "columns": [
+        "Exigível a Longo Prazo",
+        "",
+        "3.666.885,36",
+        "9.446.600,56"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Empréstimo e Aporte Dimache Participações",
+          "values": [
+            "20",
+            "3.666.885,36",
+            "9.446.600,56"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do Passivo Não Circulante",
+          "values": [
+            "",
+            "3.666.885,36",
+            "9.446.600,56"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "PATRIMÔNIO LÍQUIDO",
+      "columns": [
+        "Patrimônio Social",
+        "",
+        "29,19",
+        "29,19"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Reservas de Capital",
+          "values": [
+            "",
+            "110.000,00",
+            "110.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Avaliação Patrimonial",
+          "values": [
+            "",
+            "21.642.910,62",
+            "15.803.575,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Exercícios Anteriores",
+          "values": [
+            "",
+            "(1.034.807,35)",
+            "(989.687,06)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávits Acumulados",
+          "values": [
+            "",
+            "4.332.774,26",
+            "4.332.774,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Déficits) Acumulados",
+          "values": [
+            "",
+            "(12.801.730,53)",
+            "(11.770.481,87)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado do Exercício",
+          "values": [
+            "",
+            "7.441.410,78",
+            "(1.031.248,66)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total do Patrimônio Líquido",
+          "values": [
+            "21",
+            "19.690.586,97",
+            "6.454.961,48"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES de RESULTADO",
+      "columns": [
+        "",
+        "2019"
+      ],
+      "rows": [
+        {
+          "rawLabel": "RECEITA - FUTEBOL PROFISSIONAL E DE BASE",
+          "values": [
+            "37.213.689,80"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Premiações em Campeonatos (CBF)",
+          "values": [
+            "460.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direito de Transmissão de TV (FPF)",
+          "values": [
+            "5.853.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Patrocínio e Publicidades",
+          "values": [
+            "1.200.000,02"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Arrecadação de Jogos",
+          "values": [
+            "1.009.053,29"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita com Repasses de Direitos Federativos",
+          "values": [
+            "28.129.842,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Loterias e Outras Receitas",
+          "values": [
+            "845.107,61"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Receita de Projetos e Incentivos Fiscais",
+          "values": [
+            "62.070,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) Impostos Incidentes s/ Vendas e Serviços",
+          "values": [
+            "(345.384,50)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS - FUTEBOL PROFISSIONAL E DE BASE",
+          "values": [
+            "(24.495.764,12)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Despesas com Pessoal (Salários e Encargos)",
+          "values": [
+            "(3.638.297,30)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de Terceiros (Prêmios, Mídia, Serviços de PJ e PF)",
+          "values": [
+            "(18.600.070,96)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Gastos c/ Atletas (Viagens, Uniformes, Taxas CBF-FPF)",
+          "values": [
+            "(684.258,36)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Despesas (Eventos e Partidas- Estádio e Alojamento)",
+          "values": [
+            "(1.573.137,50)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS ADMINISTRATIVAS",
+          "values": [
+            "(3.899.304,56)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Despesas com Pessoal (Salários e encargos)",
+          "values": [
+            "(1.281.246,89)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Água, Luz, Telefone, e Internet (sede do Clube)",
+          "values": [
+            "(93.210,05)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Serviços de Terceiros - Advogado, Contador, Assessores",
+          "values": [
+            "(455.362,98)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Receitas e Despesas Administrativas",
+          "values": [
+            "(590.556,90)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impostos e Taxas diversas",
+          "values": [
+            "(168.453,19)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Encargos Financeiros",
+          "values": [
+            "(1.310.474,55)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECEITAS E DESPESAS NÃO OPERACIONAIS",
+          "values": [
+            "-1.377.210,34"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Resultado na Alienação de Imóveis",
+          "values": [
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Receitas e Despesas Não Operacionais",
+          "values": [
+            "-1.377.210,34"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(DÉFICIT) OU SUPERÁVIT DO EXERCÍCIO",
+          "values": [
+            "7.441.410,78"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    },
+    {
+      "page": 8,
+      "section": "AUDIT / # ITUANO FUTEBOL CLUBE / DEMONSTRAÇÕES das MUTAÇÕES do PATRIMÔNIO SOCIAL",
+      "columns": [
+        "",
+        "Reserva de Reavaliação",
+        "Patrimonio Social",
+        "Reserva - Direito Uso",
+        "Superávit Acumulado",
+        "Déficits Acumulados",
+        "Total"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Saldos em 01/01/2018",
+          "values": [
+            "13.303.575,62",
+            "29,19",
+            "110.000,00",
+            "4.332.774,26",
+            "(12.752.458,53)",
+            "4.993.920,54"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Realização de Reserva de Reavaliação",
+          "values": [
+            "2.500.000,00",
+            "",
+            "",
+            "",
+            "",
+            "2.500.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado do Exercício",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "(1.031.248,66)",
+            "(1.031.248,66)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes de Exercícios Anteriores",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "(7.710,40)",
+            "(7.710,40)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31/12/2018",
+          "values": [
+            "15.803.575,62",
+            "29,19",
+            "110.000,00",
+            "4.332.774,26",
+            "(13.791.417,59)",
+            "6.454.961,48"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Realização de Reserva de Reavaliação",
+          "values": [
+            "5.839.335,00",
+            "",
+            "",
+            "",
+            "",
+            "5.839.335,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado do Exercício",
+          "values": [
+            "",
+            "",
+            "",
+            "7.441.410,78",
+            "",
+            "7.441.410,78"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes de Exercícios Anteriores",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "(45.120,29)",
+            "(45.120,29)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Saldos em 31 de dezembro de 2019",
+          "values": [
+            "21.642.910,62",
+            "29,19",
+            "110.000,00",
+            "11.774.185,04",
+            "(13.836.537,88)",
+            "19.690.586,97"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / DEMONSTRAÇÃO de FLUXO de CAIXA (MÉTODO DIRETO) / FLUXO DE CAIXA DAS ATIVIDADES OPERACIONAIS",
+      "columns": [
+        "Recebimentos da Atividade",
+        "42.319.665,60"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Pagamentos a Fornecedores e Contas a Pagar",
+          "values": [
+            "(22.986.376,59)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamentos a Empregados",
+          "values": [
+            "(4.655.746,22)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": "FLUXO DE CAIXA ANTES de ITENS EXTRAS",
+      "columns": [
+        "Depositos Judiciais - Processos",
+        "(1.527.284,65)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Despesas com Projetos e Incentivos (Incentivo ICMS)",
+          "values": [
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Recebimentos (pagamentos) Líquidos",
+          "values": [
+            "(3.010.222,58)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": "CAIXA LÍQUIDO DAS ATIVIDADES OPERACIONAIS",
+      "columns": [
+        "Compras de Imobilizado/Baixa de Imobilizado",
+        "(323.482,81)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Recebimentos por Vendas de Ativos Permanentes",
+          "values": [
+            "-"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 9,
+      "section": "CAIXA LÍQUIDO DAS ATIVIDADES DE INVESTIMENTO",
+      "columns": [
+        "Recebimento/Pagamento de C/C Pessoas Ligadas",
+        "(5.779.715,20)"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Empréstimos Bancários e de Terceiros(Recebimentos/Pagamentos)",
+          "values": [
+            "(2.542.619,61)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Pagamentos de Financiamentos/Leasing/Consórcio e Juros",
+          "values": [
+            "(183.685,66)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "AUDIT / ### 3.9 Demais Passivos Circulantes / ### 3.10 Demonstração do Fluxo de Caixa / ## 4. DISPONIBILIDADE",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caixa",
+          "values": [
+            "2.384,27",
+            "11.693,92"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos",
+          "values": [
+            "176.454,66",
+            "170.571,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aplicações",
+          "values": [
+            "185.310,87",
+            "101,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "364.149,80",
+            "182.366,43"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 12,
+      "section": "## 5. CLIENTES",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "a- Negociação de atleta",
+          "values": [
+            "-",
+            "134.999,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b- Empréstimo de jogador",
+          "values": [
+            "7.334,00",
+            "7.334,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "c- Empréstimo de jogador",
+          "values": [
+            "-",
+            "25.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "d- Empréstimo de jogador",
+          "values": [
+            "-",
+            "45.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "e- Empréstimo de jogador",
+          "values": [
+            "50.000,00",
+            "50.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "f- Empréstimo de jogador",
+          "values": [
+            "12.000,00",
+            "12.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "g- Acordo Judicial",
+          "values": [
+            "32.000,00",
+            "44.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "h- Cessão Definitiva",
+          "values": [
+            "-",
+            "600.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "i- Venda atleta",
+          "values": [
+            "-",
+            "6.656.250,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "j- Total Player",
+          "values": [
+            "63.429,94.",
+            "103.541,15"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "164.763,94",
+            "7.678.125,14"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "AUDIT / ## 6. ADIANTAMENTOS",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "a- Adiantamento a Fornecedores",
+          "values": [
+            "10.959,79",
+            "10.959,79"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b- Projeto Basquete Ituano",
+          "values": [
+            "9.358,72.",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "c- Adiantamento Transporte",
+          "values": [
+            "1.680,96",
+            "1.285,44"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "d- Adiantamento de Férias",
+          "values": [
+            "16.945,17",
+            "29.766,38"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "e- Outros Adiantamentos",
+          "values": [
+            "3.136,76",
+            "3.136,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "42.081,40",
+            "45.148,37"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "## 7. TRIBUTOS A RECUPERAR/COMPENSAR",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Tributos a compensar",
+          "values": [
+            "11.203,26",
+            "8.598,70"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 13,
+      "section": "## 8. DEPÓSITOS E BLOQUEIOS JUDICIAIS",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Águas de Itu",
+          "values": [
+            "-",
+            "17.620,64"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco Bradesco",
+          "values": [
+            "-",
+            "75.623,50"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Banco do Brasil- Projeto Sub 17",
+          "values": [
+            "-",
+            "25.611,16"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "AUDIT Consult",
+      "columns": [
+        "Banco do Brasil- Projeto Sub 15",
+        "-",
+        "9.419,94"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Caixa-Rômulo Marques",
+          "values": [
+            "-",
+            "213.140,95"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Desbloqueio judicial",
+          "values": [
+            "-",
+            "(9.547,21)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "-",
+            "331.868,98"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "## 9. DIREITOS PARA NEGOCIAÇÕES FUTURAS",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "a- Atleta Claysson Henrique da Silva",
+          "values": [
+            "4.000.000,00",
+            "6.906.340,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b- Atleta Luiz Felipe Ramos Marchi",
+          "values": [
+            "5.000.000,00",
+            "2.550.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "c- Atleta Andrew Morato",
+          "values": [
+            "500.000,00",
+            "1.000.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "d- Atleta Gabriel T.Martinelli Silva",
+          "values": [
+            "10.000.000,00",
+            "3.000.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "e- Atleta Gabriel Baralhas",
+          "values": [
+            "500.000,00",
+            "500.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "f- Atleta Jose A. Santos Junior",
+          "values": [
+            "500.000,00",
+            "500.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "20.500.000,00",
+            "14.456.340,00"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 14,
+      "section": "### VALORIZAÇÃO FUTURA de ATLETAS",
+      "columns": [
+        "ATLETA",
+        "CLUBE",
+        "MERCADO",
+        "PASSE",
+        "DIREITOS ECONOMICOS do CLUBE",
+        "",
+        "",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "",
+          "values": [
+            "",
+            "",
+            "",
+            "%-Ituano",
+            "Em USD/EUR",
+            "COTAÇÃO",
+            "FINAL"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CLAYSON VIEIRA",
+          "values": [
+            "",
+            "US$ 3.317.574,85",
+            "100%",
+            "30%",
+            "995.272,46",
+            "4,0190 R$",
+            "4.000.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LUIZ FELIPE MARCHI",
+          "values": [
+            "",
+            "EUR 7.843.137,29",
+            "85%",
+            "15,0%",
+            "1.000.000,00",
+            "5,0000 R$",
+            "5.000.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ANDREW (MORATO)",
+          "values": [
+            "",
+            "R$ 5.000.000,00",
+            "100%",
+            "10%",
+            "-",
+            "- R$",
+            "500.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GABRIEL T. MARTINELLI SILVA",
+          "values": [
+            "",
+            "EUR 2.000.000,00",
+            "100%",
+            "100%",
+            "2.000.000,00",
+            "5,0000 R$",
+            "10.000.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GABRIEL BARALHAS",
+          "values": [
+            "",
+            "R$ 500.000,00",
+            "100%",
+            "100%",
+            "-",
+            "- R$",
+            "500.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "JOSE A. SANTOS JUNIOR",
+          "values": [
+            "",
+            "R$ 1.000.000,00",
+            "100%",
+            "50%",
+            "-",
+            "- R$",
+            "500.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL:",
+          "values": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "R$",
+            "20.500.000,00"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "## 10. INTANGÍVEL / ### A) DIREITO FEDERATIVO E USO DE IMAGEM",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Cambio Financeiro-Marcelinho",
+          "values": [
+            "-",
+            "204.325,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "### B) FORMAÇÃO DE ATLETAS PROFISSIONAIS",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos formação de atleta-profissional",
+          "values": [
+            "1.295.311,58",
+            "747.118,79"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "### C) FORMAÇÃO DE ATLETAS CATEGORIA BASE",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Gastos formação de atleta-base",
+          "values": [
+            "2.574.158,77",
+            "2.659.421,83"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "### D) AMORTIZAÇÕES DE GASTOS",
+      "columns": [
+        "Descrição",
+        "",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Amortização",
+          "values": [
+            "(1.037.793,47)",
+            "(999.246,47)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 15,
+      "section": "### E) PARTICIPAÇÃO EM OUTROS NEGÓCIOS / ## 11. BENFEITORIAS",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Benfeitorias em imóveis de terceiros",
+          "values": [
+            "0,00",
+            "78.378,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Amortizações em Benfeitorias",
+          "values": [
+            "0,00",
+            "(33.258,41)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "## 12. IMOBILIZADO",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Construções Imóveis e Terrenos",
+          "values": [
+            "446.656,03",
+            "446.656,03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Instalações",
+          "values": [
+            "225.113,96",
+            "225.113,96"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e Equipamentos",
+          "values": [
+            "350.714,63",
+            "327.231,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação Acumulada",
+          "values": [
+            "(583.744,94)",
+            "(509.661,32)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "438.739,68",
+            "489.340,49"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "## 13. OBRIGAÇÕES SOCIAIS E TRABALHISTAS",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salários a Pagar",
+          "values": [
+            "241.672,46",
+            "191.766,30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rescisões a Pagar",
+          "values": [
+            "4.492,22",
+            "9.189,71"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Férias a Pagar",
+          "values": [
+            "-",
+            "3.820,56"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS a Recolher",
+          "values": [
+            "27.810,57",
+            "22.476,10"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS a Recolher",
+          "values": [
+            "31.885,32.",
+            "25.712,76"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "305.860,57",
+            "252.965,43"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "## 14. ACORDOS E PROVISÕES TRABALHISTAS",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "a- Provisão p/ Férias/Encargos",
+          "values": [
+            "418.169,71",
+            "370.082,77"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "b- Provisões Jogadores Empréstados",
+          "values": [
+            "0,00",
+            "27.028,90"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "418.169,71",
+            "397.111,67"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 16,
+      "section": "## 15. IMPOSTOS E CONTRIBUIÇÕES A PAGAR",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "PIS a Recolher",
+          "values": [
+            "4.010,71",
+            "3.258,21"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF a Recolher",
+          "values": [
+            "62.731,22",
+            "45.223,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ISS Retido a Recolher",
+          "values": [
+            "11.251,71",
+            "5.141,03"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS Retido a Recolher",
+          "values": [
+            "6.863,07",
+            "2.457,97"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CRF a Recolher",
+          "values": [
+            "3.670,59",
+            "13.153,83"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Contribuições a Recolher",
+          "values": [
+            "-",
+            "3.587,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros tributos municipais a Recolher",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuição Sindical a Recolher",
+          "values": [
+            "-",
+            "15.452,30"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contribuição Assistencial a Recolher",
+          "values": [
+            "941,85",
+            "1.113,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "89.469,15",
+            "89.387,59"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "## 16. FORNECEDORES A PAGAR / ### 16.1 OBRIGAÇÕES COM TERCEIROS / ### 16.2 OUTRAS NEGOCIAÇÕES A PAGAR / ## 17. EMPRÉSTIMOS E FINANCIAMENTOS",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Limite C/C Banco Bradesco",
+          "values": [
+            "-",
+            "6.672,73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimo Banco Sicredi",
+          "values": [
+            "-",
+            "740.000,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Limite C/C Banco Sicredi",
+          "values": [
+            "0,01",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Direitos de Créditos de Títulos",
+          "values": [
+            "-",
+            "690.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimo Banco Itaú",
+          "values": [
+            "-",
+            "1.000.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimo Banco Itaú",
+          "values": [
+            "-",
+            "18.699,73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "0,01",
+            "2.455.372,47"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 17,
+      "section": "## 18. ADIANTAMENTO DE CLIENTES DIVERSOS / ### 18.1 ADIANTAMENTO PROJETO ITUANO BASQUETE",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ADIANTAMENTO PROJETO ITUANO BASQUETE",
+          "values": [
+            "0,00",
+            "5.858,62"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "## 19. ADIANTAMENTO DE RECEITAS EXERCÍCIOS FUTUROS / ## 20. TÍTULOS A PAGAR",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Dimache Participações",
+          "values": [
+            "3.666.885,36",
+            "9.446.600,56"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 18,
+      "section": "## 21. PATRIMÔNIO LÍQUIDO",
+      "columns": [
+        "Descrição",
+        "2019",
+        "2018"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Patrimônio Social",
+          "values": [
+            "29,19",
+            "29,19"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Reservas de Capital",
+          "values": [
+            "110.000,00",
+            "110.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Avaliação Patrimonial (a)",
+          "values": [
+            "21.642.910,62",
+            "15.803.575,62"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajuste de Exercícios Anteriores",
+          "values": [
+            "(1.034.807,35)",
+            "(989.687,06)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Superávits Acumulados",
+          "values": [
+            "6.990.164,89",
+            "4.332.774,26"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Déficits) Acumulados",
+          "values": [
+            "(15.459.121,16.)",
+            "(11.770.481,87)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado do Exercício",
+          "values": [
+            "7.441.410,78",
+            "(1.031.248,66)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total:",
+          "values": [
+            "19.690.586,97",
+            "6.454.961,48"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 19,
+      "section": "# CONSELHO REGIONAL DE CONTABILIDADE DO ESTADO DE SÃO PAULO / # CERTIDÃO DE REGULARIDADE",
+      "columns": [
+        "Nome",
+        "AUDIT CONSULT - AUDITORIA & CONSULTORIA EIRELI"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CRC No.",
+          "values": [
+            "2SP021024/O-5"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 20,
+      "section": "# CONSELHO REGIONAL DE CONTABILIDADE DO ESTADO DE SÃO PAULO / # CERTIDÃO DE REGULARIDADE",
+      "columns": [
+        "Nome",
+        "PAULO HENRIQUE DE OLIVEIRA SOUZA"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CRC No.",
+          "values": [
+            "ISP150958/O-4"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Categoria",
+          "values": [
+            "CONTADOR"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 21,
+      "section": "AUDIT / # CONSELHO REGIONAL DE CONTABILIDADE DO ESTADO DE SÃO PAULO / # CERTIDÃO DE REGULARIDADE",
+      "columns": [
+        "Nome",
+        "JESSICA FERNANDES VASCONCELOS SARAIVA"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CRC No.",
+          "values": [
+            "ISP298720/O-0"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Categoria",
+          "values": [
+            "CONTADORA"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 6,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / BALANÇO PATRIMONIAL em 31 de DEZEMBRO de 2019 / ATIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do Ativo Circulante",
+      "target": "582.198,40",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "AUDIT / ITUANO FUTEBOL CLUBE / BALANÇO PATRIMONIAL em 31 de DEZEMBRO de 2019 / ATIVO",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do Ativo Circulante",
+      "target": "7.921.316,05",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "PASSIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do Passivo Circulante",
+      "target": "1.001.667,27",
+      "addendCount": 7,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "PASSIVO",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do Passivo Circulante",
+      "target": "9.964.322,92",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "NÃO CIRCULANTE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do Passivo Não Circulante",
+      "target": "3.666.885,36",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "NÃO CIRCULANTE",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do Passivo Não Circulante",
+      "target": "9.446.600,56",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 6,
+      "section": "PATRIMÔNIO LÍQUIDO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total do Patrimônio Líquido",
+      "target": "19.690.586,97",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "-29.189999997615814"
+    },
+    {
+      "page": 6,
+      "section": "PATRIMÔNIO LÍQUIDO",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total do Patrimônio Líquido",
+      "target": "6.454.961,48",
+      "addendCount": 6,
+      "closes": false,
+      "diff": "-29.18999999947846"
+    },
+    {
+      "page": 12,
+      "section": "AUDIT / ### 3.9 Demais Passivos Circulantes / ### 3.10 Demonstração do Fluxo de Caixa / ## 4. DISPONIBILIDADE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "364.149,80",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "AUDIT / ### 3.9 Demais Passivos Circulantes / ### 3.10 Demonstração do Fluxo de Caixa / ## 4. DISPONIBILIDADE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "182.366,43",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 12,
+      "section": "## 5. CLIENTES",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "164.763,94",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-63366.51006"
+    },
+    {
+      "page": 12,
+      "section": "## 5. CLIENTES",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "7.678.125,14",
+      "addendCount": 10,
+      "closes": true
+    },
+    {
+      "page": 13,
+      "section": "AUDIT / ## 6. ADIANTAMENTOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "42.081,40",
+      "addendCount": 5,
+      "closes": false,
+      "diff": "-9349.361280000005"
+    },
+    {
+      "page": 13,
+      "section": "AUDIT / ## 6. ADIANTAMENTOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "45.148,37",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": "AUDIT Consult",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "331.868,98",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-128275.23999999996"
+    },
+    {
+      "page": 14,
+      "section": "## 9. DIREITOS PARA NEGOCIAÇÕES FUTURAS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "20.500.000,00",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": "## 9. DIREITOS PARA NEGOCIAÇÕES FUTURAS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "14.456.340,00",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 14,
+      "section": "### VALORIZAÇÃO FUTURA de ATLETAS",
+      "likelyRelevant": false,
+      "column": 5,
+      "totalLabel": "TOTAL:",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"R$\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 14,
+      "section": "### VALORIZAÇÃO FUTURA de ATLETAS",
+      "likelyRelevant": false,
+      "column": 6,
+      "totalLabel": "TOTAL:",
+      "skipped": true,
+      "reason": "1 de 7 valor(es) del segmento no parecen números (ej. \"FINAL\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 16,
+      "section": "## 12. IMOBILIZADO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "438.739,68",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "## 12. IMOBILIZADO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "489.340,49",
+      "addendCount": 4,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "## 13. OBRIGAÇÕES SOCIAIS E TRABALHISTAS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "305.860,57",
+      "addendCount": 4,
+      "closes": false,
+      "diff": "-31853.434680000006"
+    },
+    {
+      "page": 16,
+      "section": "## 13. OBRIGAÇÕES SOCIAIS E TRABALHISTAS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "252.965,43",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "## 14. ACORDOS E PROVISÕES TRABALHISTAS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "418.169,71",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "## 14. ACORDOS E PROVISÕES TRABALHISTAS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "397.111,67",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "## 15. IMPOSTOS E CONTRIBUIÇÕES A PAGAR",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "89.469,15",
+      "addendCount": 6,
+      "closes": true
+    },
+    {
+      "page": 16,
+      "section": "## 15. IMPOSTOS E CONTRIBUIÇÕES A PAGAR",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "89.387,59",
+      "addendCount": 8,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "## 16. FORNECEDORES A PAGAR / ### 16.1 OBRIGAÇÕES COM TERCEIROS / ### 16.2 OUTRAS NEGOCIAÇÕES A PAGAR / ## 17. EMPRÉSTIMOS E FINANCIAMENTOS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "0,01",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 17,
+      "section": "## 16. FORNECEDORES A PAGAR / ### 16.1 OBRIGAÇÕES COM TERCEIROS / ### 16.2 OUTRAS NEGOCIAÇÕES A PAGAR / ## 17. EMPRÉSTIMOS E FINANCIAMENTOS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "2.455.372,47",
+      "addendCount": 5,
+      "closes": true
+    },
+    {
+      "page": 18,
+      "section": "## 21. PATRIMÔNIO LÍQUIDO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total:",
+      "target": "19.690.586,97",
+      "addendCount": 7,
+      "closes": false,
+      "diff": "15459105.701000005"
+    },
+    {
+      "page": 18,
+      "section": "## 21. PATRIMÔNIO LÍQUIDO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total:",
+      "target": "6.454.961,48",
+      "addendCount": 7,
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 27,
+    "results": [
+      {
+        "label": "RECEITA - FUTEBOL PROFISSIONAL E DE BASE",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECEITA - FUTEBOL PROFISSIONAL E DE BASE",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Premiações em Campeonatos (CBF)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "competition_bonus",
+        "matchedLabel": "Premiações em Campeonatos (FPF)",
+        "similarity": 50
+      },
+      {
+        "label": "Premiações em Campeonatos (CBF)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Direito de Transmissão de TV (FPF)",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "broadcasting",
+        "matchedLabel": "Direito de Transmissão de TV (FPF/CBF)",
+        "similarity": 75
+      },
+      {
+        "label": "Direito de Transmissão de TV (FPF)",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Patrocínio e Publicidades",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "sponsorship_commercial",
+        "matchedLabel": "Patrocínio e Publicidades",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Patrocínio e Publicidades",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Arrecadação de Jogos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "matchday_competition",
+        "matchedLabel": "Arrecadação de Jogos",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Arrecadação de Jogos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita com Repasses de Direitos Federativos",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "player_sales",
+        "matchedLabel": "Receita com Repasses de Direitos Federativos",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Receita com Repasses de Direitos Federativos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Loterias e Outras Receitas",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras Receitas",
+        "similarity": 67
+      },
+      {
+        "label": "Loterias e Outras Receitas",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita de Projetos e Incentivos Fiscais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Receita de Projetos e Incentivos Fiscais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(-) Impostos Incidentes s/ Vendas e Serviços",
+        "side": "revenue",
+        "tier": "EXACTO",
+        "category": "other_income",
+        "matchedLabel": "(-) Impostos Incidentes s/ Vendas e Serviços",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "(-) Impostos Incidentes s/ Vendas e Serviços",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DESPESAS - FUTEBOL PROFISSIONAL E DE BASE",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DESPESAS - FUTEBOL PROFISSIONAL E DE BASE",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "wages_squad",
+        "matchedLabel": "Despesas com Pessoal, futebol profissional e de base (Salários e Encargos)",
+        "similarity": 50
+      },
+      {
+        "label": "Despesas com Pessoal (Salários e Encargos)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com Pessoal (Salários e Encargos)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Despesas com Pessoal, administrativo (Salários e encargos)",
+        "similarity": 83
+      },
+      {
+        "label": "Serviços de Terceiros (Prêmios, Mídia, Serviços de PJ e PF)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços de Terceiros (Prêmios, Mídia, Serviços de PJ e PF)",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Serviços de Terceiros (Prêmios, Mídia, Serviços de PJ e PF)",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Gastos c/ Atletas (Viagens, Uniformes, Taxas CBF-FPF)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos c/ Atletas (Viagens, Uniformes, Taxas CBF-FPF)",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Gastos c/ Atletas (Viagens, Uniformes, Taxas CBF-FPF)",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Outras Despesas (Eventos e Partidas- Estádio e Alojamento)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras Despesas (Eventos e Partidas- Estádio e Alojamento)",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "match_organisation_expense",
+        "matchedLabel": "Outras Despesas (Eventos e Partidas - Estádio e Alojamento)",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "DESPESAS ADMINISTRATIVAS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "DESPESAS ADMINISTRATIVAS",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Outras Despesas Administrativas",
+        "similarity": 67
+      },
+      {
+        "label": "Despesas com Pessoal (Salários e encargos)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Despesas com Pessoal (Salários e encargos)",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Despesas com Pessoal, administrativo (Salários e encargos)",
+        "similarity": 83
+      },
+      {
+        "label": "Água, Luz, Telefone, e Internet (sede do Clube)",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Água, Luz, Telefone, e Internet (sede do Clube)",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Água, Luz, Telefone e Internet (sede do Clube)",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Serviços de Terceiros - Advogado, Contador, Assessores",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Serviços de Terceiros - Advogado, Contador, Assessores",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Serviços de Terceiros - Advogado, Contador, Assessores",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Outras Receitas e Despesas Administrativas",
+        "side": "revenue",
+        "tier": "PARECIDO",
+        "category": "other_income",
+        "matchedLabel": "Outras Receitas",
+        "similarity": 50
+      },
+      {
+        "label": "Outras Receitas e Despesas Administrativas",
+        "side": "expense",
+        "tier": "PARECIDO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Outras Despesas Administrativas",
+        "similarity": 75
+      },
+      {
+        "label": "Impostos e Taxas diversas",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Impostos e Taxas diversas",
+        "side": "expense",
+        "tier": "EXACTO",
+        "category": "admin_general_expense",
+        "matchedLabel": "Impostos e Taxas diversas",
+        "years": [
+          "2024"
+        ]
+      },
+      {
+        "label": "Encargos Financeiros",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Encargos Financeiros",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECEITAS E DESPESAS NÃO OPERACIONAIS",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RECEITAS E DESPESAS NÃO OPERACIONAIS",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado na Alienação de Imóveis",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Resultado na Alienação de Imóveis",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras Receitas e Despesas Não Operacionais",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Outras Receitas e Despesas Não Operacionais",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(DÉFICIT) OU SUPERÁVIT DO EXERCÍCIO",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "(DÉFICIT) OU SUPERÁVIT DO EXERCÍCIO",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Amortização",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dimache Participações",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Dimache Participações",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Ituano",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "7 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "2 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

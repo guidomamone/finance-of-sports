@@ -1,0 +1,380 @@
+{
+ "pdf": "Clubes/Inglaterra/Nottingham Forest/forest-full-accounts-2023-24.pdf",
+ "md": "Clubes/Inglaterra/Nottingham Forest/forest-full-accounts-2023-24.md",
+ "cierre": "2024-06-30",
+ "paginas": [
+  14,
+  24,
+  25,
+  26
+ ],
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-01T02:53:26.033Z",
+ "escala": "miles",
+ "filas": [
+  {
+   "pagina": 14,
+   "etiqueta": "Turnover",
+   "importe_impreso": "189,552",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 14,
+   "etiqueta": "Cost of sales",
+   "importe_impreso": "{12,643}",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 14,
+   "etiqueta": "Gross profit",
+   "importe_impreso": "176,909",
+   "tipo": "subtotal",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 14,
+   "etiqueta": "Administrative expenses",
+   "importe_impreso": "(250,164)",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": null
+  },
+  {
+   "pagina": 14,
+   "etiqueta": "Operating loss",
+   "importe_impreso": "{73,255)",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 14,
+   "etiqueta": "Interest receivable and similar income",
+   "importe_impreso": "16",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 14,
+   "etiqueta": "Interest payable and similar expenses",
+   "importe_impreso": "{15,193}",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": null
+  },
+  {
+   "pagina": 14,
+   "etiqueta": "Profit on disoosal of player registrations",
+   "importe_impreso": "100,531",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": null
+  },
+  {
+   "pagina": 14,
+   "etiqueta": "Profiti{loss) before taxation",
+   "importe_impreso": "12,099",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 14,
+   "etiqueta": "Profit/{loss) for the financial year",
+   "importe_impreso": "12,099",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 14,
+   "etiqueta": "Actuarial loss on defined benefit pension schemes",
+   "importe_impreso": "(229}",
+   "tipo": "renglon",
+   "lado": "otro",
+   "detalla_a": null
+  },
+  {
+   "pagina": 14,
+   "etiqueta": "Total comprehensive income for the year",
+   "importe_impreso": "11,870",
+   "tipo": "resultado",
+   "lado": "resultado",
+   "detalla_a": null
+  },
+  {
+   "pagina": 24,
+   "etiqueta": "Gate receipts",
+   "importe_impreso": "14,408",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "pagina": 24,
+   "etiqueta": "Media related activity",
+   "importe_impreso": "130,019",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "pagina": 24,
+   "etiqueta": "Merchandising",
+   "importe_impreso": "8,550",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "pagina": 24,
+   "etiqueta": "Other commercial",
+   "importe_impreso": "21,088",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "pagina": 24,
+   "etiqueta": "Loan fees received",
+   "importe_impreso": "15,487",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "pagina": 24,
+   "etiqueta": "Turnover analysed by class of business",
+   "importe_impreso": "189,552",
+   "tipo": "total",
+   "lado": "ingreso",
+   "detalla_a": "Turnover"
+  },
+  {
+   "pagina": 24,
+   "etiqueta": "Interest income",
+   "importe_impreso": "16",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest receivable and similar income"
+  },
+  {
+   "pagina": 24,
+   "etiqueta": "Audit of the financial statements of the company",
+   "importe_impreso": "95",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 24,
+   "etiqueta": "Taxation compliance services",
+   "importe_impreso": "10",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 24,
+   "etiqueta": "Other taxation services",
+   "importe_impreso": "39",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 24,
+   "etiqueta": "All other non-aucit services",
+   "importe_impreso": "5",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 24,
+   "etiqueta": "For other services",
+   "importe_impreso": "54",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Wages and salaries",
+   "importe_impreso": "149,678",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Social security costs",
+   "importe_impreso": "16,391",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Pension costs",
+   "importe_impreso": "330",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Their aggregate remuneration comprised",
+   "importe_impreso": "166,399",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Remuneration for qualifying services",
+   "importe_impreso": "759",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Company pension contributions to defined contribution schemes",
+   "importe_impreso": "17",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Directors’ remuneration",
+   "importe_impreso": "776",
+   "tipo": "subtotal",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Remuneration for qualifying services",
+   "importe_impreso": "395",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Administrative expenses"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Exchange losses",
+   "importe_impreso": "28",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Depreciation of owned tangible fixed assets",
+   "importe_impreso": "1,159",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Loss/profit} on disposal of tangible fixed assets",
+   "importe_impreso": "66",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Amortisation of player registrations",
+   "importe_impreso": "61,685",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Profit on disposal of player registrations",
+   "importe_impreso": "100,531",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profit on disoosal of player registrations"
+  },
+  {
+   "pagina": 25,
+   "etiqueta": "Operating lease charges",
+   "importe_impreso": "267",
+   "tipo": "renglon",
+   "lado": "gasto",
+   "detalla_a": "Operating loss"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Interest on bank overdrafts and loans",
+   "importe_impreso": "232",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Interest in respect of transfer fee discounting",
+   "importe_impreso": "7,120",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Non bank interest on loans",
+   "importe_impreso": "7,778",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Interest on finance leases and hire purchase contracts",
+   "importe_impreso": "47",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Unwinding of discount on pension obligation",
+   "importe_impreso": "16",
+   "tipo": "renglon",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Interest payable and similar expenses",
+   "importe_impreso": "15,193",
+   "tipo": "total",
+   "lado": "financiero",
+   "detalla_a": "Interest payable and similar expenses"
+  },
+  {
+   "pagina": 26,
+   "etiqueta": "Profit on disposal of player registrations",
+   "importe_impreso": "100,531",
+   "tipo": "renglon",
+   "lado": "ingreso",
+   "detalla_a": "Profit on disoosal of player registrations"
+  }
+ ],
+ "total_ingresos_impreso": "189,552",
+ "total_gastos_impreso": null,
+ "resultado_impreso": "12,099",
+ "observaciones": "Etiquetas e importes copiados con errores de OCR (llaves, 'disoosal', 'Profiti{loss)'). Tax on profit/(loss) con guion: excluida. Nota 8 (Interest on bank deposits): el importe 2024 no se lee en la transcripción desordenada de pág. 26; se omitió. Los importes de nota 9 se asignaron por orden y cuadran con el total 15,193 (232+7,120+7,778+47+16). Etiquetas de subtotales de notas 4, 5 y 6 sin rótulo impreso se nombraron con el encabezado de la nota. No se imprime total de gastos. Cifras de empleados (número) excluidas por no ser importes. Nota 7 (Operating loss) incluye partidas informativas, no suman al estado."
+}

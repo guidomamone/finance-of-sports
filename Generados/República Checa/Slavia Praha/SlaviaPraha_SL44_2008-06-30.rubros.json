@@ -1,0 +1,1018 @@
+{
+ "md": "Clubes/República Checa/Slavia Praha/SlaviaPraha_SL44_2008-06-30.md",
+ "pdf": "Clubes/República Checa/Slavia Praha/SlaviaPraha_SL44_2008-06-30.pdf",
+ "club": "slavia-praha",
+ "year": 2008,
+ "numberFormat": "espacio como separador de miles (escandinavo)",
+ "generatedAt": "2026-09-30T22:07:51.363Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [
+  "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15)."
+ ],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 94,
+  "notasUsadas": [
+   "11",
+   "12",
+   "9",
+   "lista-p19-0",
+   "1"
+  ]
+ },
+ "ladoConocido": 84,
+ "rubros": [
+  {
+   "label": "Tržby za prodej zboží",
+   "lado": "revenue",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000001
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Přírůstky",
+   "lado": "expense",
+   "page": 30,
+   "section": "Příloha k účetní závěrce k 30.6.2008 / Oprávky / (údaje v tis. Kč)",
+   "values": [
+    0.000002
+   ],
+   "origen": "nota 12 (ancla 1)",
+   "ancla": "Náklady vynaložené na prodané zboží"
+  },
+  {
+   "label": "Náklady vynaložené na prodané zboží",
+   "lado": "expense",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000002
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "1. Spotřeba materiálu a energie",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000009
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "2. Služby",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.00001
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Přidaná hodnota",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000011
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Osobní náklady",
+   "lado": "expense",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000012
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "1. Mzdové náklady",
+   "lado": "expense",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000013
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "3. Náklady na sociální zabezpečení a zdravotní pojištění",
+   "lado": "expense",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000015
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "4. Sociální náklady",
+   "lado": "expense",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000016
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Daně a poplatky",
+   "lado": "expense",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000017
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Odpisy dlouhodobého nehmotného a hmotného majetku",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000018
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Tržby z prodeje dlouhodobého majetku a materiálu",
+   "lado": "revenue",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000019
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "1. Tržby z prodeje dlouhodobého majetku",
+   "lado": "revenue",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.00002
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Zůstatková cena prodaného dlouhodobého majetku a materiálu",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000022
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "1. Zůstatková cena prodaného dlouhodobého majetku",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000023
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Změna stavu rezerv a opravných položek v provozní oblasti a komplexních nákladů příštích období",
+   "lado": "expense",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000025
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Ostatní provozní výnosy",
+   "lado": "revenue",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000026
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Ostatní provozní náklady",
+   "lado": "expense",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000027
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Změna stavu rezerv a opravných položek ve finanční oblasti",
+   "lado": null,
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000041
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Výnosové úroky",
+   "lado": "revenue",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000042
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Nákladové úroky",
+   "lado": "expense",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000043
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Ostatní finanční výnosy",
+   "lado": "revenue",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000044
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Ostatní finanční náklady",
+   "lado": "expense",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000045
+   ],
+   "origen": "estado 1"
+  },
+  {
+   "label": "Stav k 30.6.2006",
+   "lado": null,
+   "page": 29,
+   "section": "Oprávky / (údaje v tis. Kč)",
+   "values": [
+    0.000347
+   ],
+   "origen": "nota 9 (ancla 8)",
+   "ancla": "Stav k 30.6.2006"
+  },
+  {
+   "label": "Přírůstky",
+   "lado": null,
+   "page": 29,
+   "section": "# 4. DOPLŇUJÍCÍ ÚDAJE K ROZVAZE A VÝKAZU ZISKU A ZTRÁTY / ## 4.1. Dlouhodobý nehmotný majetek",
+   "values": [
+    0.618007
+   ],
+   "origen": "estado 8"
+  },
+  {
+   "label": "Tržby za prodej zboží",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "values": [
+    0.000546
+   ],
+   "origen": "renglón del estado abierto en una nota",
+   "esAncla": true
+  },
+  {
+   "label": "Náklady vynaložené na prodané zboží",
+   "lado": "revenue",
+   "page": 16,
+   "section": "# Výkaz zisků a ztrát - druhové členění",
+   "values": [
+    0.000002
+   ],
+   "origen": "nota 1 (ancla 26>lista-p19-0)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "1.1. Založení a charakteristika společnosti ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000004
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "1.2. Změny a dodatky v obchodním rejstříku ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000004
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "1.3. Organizační struktura společnosti ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000004
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "1.4. Statutární a dozorčí orgány ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000005
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "ÚČETNÍ METODY A OBECNÉ ÚČETNÍ ZÁSADY ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000006
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "PŘEHLED VÝZNAMNÝCH ÚČETNÍCH PRAVIDEL A POSTUPŮ ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000007
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.1. Způsob ocenění a odepisování ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000007
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.1.1. Dlouhodobý hmotný a nehmotný majetek ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000007
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.1.2. Odpisy dlouhodobého majetku ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000007
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.1.3. Pořizovací cena hráčů ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000007
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.1.4. Účtování o prodeji hráčů ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000007
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.1.5. Pohledávky ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000008
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.1.6. Závazky z obchodních vztahů ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000008
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.1.7. Zásoby ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000008
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.1.8. Reklamní smlouvy ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000008
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.2. Způsob stanovení opravných položek k majetku a rezerv ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000008
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.2.1. Opravné položky ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000008
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.2.2. Rezervy ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000008
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.3. Použití odhadů ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000008
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.4. Snížení hodnoty ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000009
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.5. Přepočty údajů v cizích měnách na českou měnu ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000009
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.6. Daně ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000009
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.6.1. Splatná daň ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000009
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.6.2. Odložená daň ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000009
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.7. [ilegible] ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.00001
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "3.8. Přehled o peněžních tocích ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.00001
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "DOPLŇUJÍCÍ ÚDAJE K ROZVAZE A VÝKAZU ZISKU A ZTRÁTY ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000011
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.1. Dlouhodobý nehmotný majetek ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000011
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.2. Dlouhodobý hmotný majetek ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000011
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.3. Majetek ve finančním pronájmu ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000012
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.4. Pohledávky ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000012
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.4.1. Krátkodobé pohledávky z obchodních vztahů ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000013
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.4.2. Věková struktura krátkodobých pohledávek z obchodních vztahů ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000013
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.5. Náklady příštích období ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000013
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.6. Dohadné účty aktivní ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000013
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.7. Vlastní kapitál ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000013
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.7.1. Změny vlastního kapitálu ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000013
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.7.2. Základní kapitál ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000014
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "[ilegible: řádek o základním kapitálu společnosti ... zápis obchodním rejstříkem] ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000014
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.8. Rezervy ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000014
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.9. Závazky ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000014
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.9.1. Krátkodobé závazky z obchodních vztahů ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000014
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.9.2. Věková struktura krátkodobých závazků z obchodních vztahů ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000015
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.9.3. Závazky k podnikům ve skupině ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000015
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.9.4. Dlouhodobé přijaté zálohy ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000015
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.9.5. Jiné dlouhodobé závazky ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000015
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.9.6. Krátkodobé finanční výpomoci ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000015
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.9.7. Závazky ze sociálního pojištění a daňové závazky ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000015
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.10. Ostatní pasiva – přechodné účty pasiv ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000016
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.11. Odložená daň ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000016
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.12. Výnosy z běžné činnosti podle hlavních činností ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000017
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "4.13. Spotřeba materiálu a energie ........",
+   "lado": "revenue",
+   "page": 19,
+   "section": "# Obsah",
+   "values": [
+    0.000017
+   ],
+   "origen": "nota lista-p19-0 (ancla 26)",
+   "ancla": "Tržby za prodej zboží"
+  },
+  {
+   "label": "Prodej televizních práv",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "values": [
+    0.03246
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Reklama",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "values": [
+    0.049132
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Prodej vstupenek",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "values": [
+    0.057513
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Prodej a hostování hráčů",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "values": [
+    0.104264
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Příspěvky od UEFA",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "values": [
+    0.201246
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Ostatní",
+   "lado": "revenue",
+   "page": 37,
+   "section": "## 4.12. Výnosy z běžné činnosti podle hlavních činností",
+   "values": [
+    0.01617
+   ],
+   "origen": "estado 26"
+  },
+  {
+   "label": "Smluvní pokuty a úroky z prodlení a ostatní pokuty a penále",
+   "lado": "expense",
+   "page": 38,
+   "section": "## 4.15. Ostatní provozní náklady",
+   "values": [
+    0.001821
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Přestupy a hostování hráčů",
+   "lado": "expense",
+   "page": 38,
+   "section": "## 4.15. Ostatní provozní náklady",
+   "values": [
+    0.003084
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "Ostatní provozní náklady",
+   "lado": "expense",
+   "page": 38,
+   "section": "## 4.15. Ostatní provozní náklady",
+   "values": [
+    0.004188
+   ],
+   "origen": "estado 29"
+  },
+  {
+   "label": "- odměna při podpisu smlouvy",
+   "lado": "expense",
+   "page": 31,
+   "section": "## 4.5. Náklady příštích období",
+   "values": [
+    0.818
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "- zůstatková cena hráčů",
+   "lado": "expense",
+   "page": 31,
+   "section": "## 4.5. Náklady příštích období",
+   "values": [
+    57.851
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "- časově rozlišené pronájmu stadionu na 50 let",
+   "lado": "expense",
+   "page": 31,
+   "section": "## 4.5. Náklady příštích období",
+   "values": [
+    138.36
+   ],
+   "origen": "estado 17"
+  },
+  {
+   "label": "- ostatní",
+   "lado": "expense",
+   "page": 31,
+   "section": "## 4.5. Náklady příštích období",
+   "values": [
+    0.638
+   ],
+   "origen": "estado 17"
+  }
+ ]
+}

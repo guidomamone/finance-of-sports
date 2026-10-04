@@ -1,0 +1,498 @@
+{
+  "md": "Clubes/Bélgica/Standard Liège/jaarrekening-2010-06-30-individual.md",
+  "pdf": "Clubes/Bélgica/Standard Liège/jaarrekening-2010-06-30-individual.pdf",
+  "club": "standardliege-be",
+  "year": 2010,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T21:55:39.071Z",
+  "tieOuts": {
+    "cierran": 0,
+    "noCierran": 7
+  },
+  "warnings": [
+    "7 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 43,
+    "notasUsadas": []
+  },
+  "ladoConocido": 27,
+  "rubros": [
+    {
+      "label": "Ventes et prestations",
+      "lado": "revenue",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        7.074
+      ],
+      "origen": "estado 11",
+      "glosa": "Ventas y prestaciones de servicios"
+    },
+    {
+      "label": "Chiffre d'affaires",
+      "lado": "revenue",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.07
+      ],
+      "origen": "estado 11",
+      "glosa": "Cifra de negocios"
+    },
+    {
+      "label": "En-cours de fabrication, produits finis et commandes en cours d'exécution: augmentation (réduction)",
+      "lado": "revenue",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.071
+      ],
+      "origen": "estado 11",
+      "glosa": "Productos en curso, productos terminados y pedidos en curso de ejecución: aumento (disminución)"
+    },
+    {
+      "label": "Production immobilisée",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.072
+      ],
+      "origen": "estado 11",
+      "glosa": "Producción capitalizada"
+    },
+    {
+      "label": "Autres produits d'exploitation",
+      "lado": "revenue",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.074
+      ],
+      "origen": "estado 11",
+      "glosa": "Otros ingresos de explotación"
+    },
+    {
+      "label": "Coût des ventes et des prestations",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        6.064
+      ],
+      "origen": "estado 11",
+      "glosa": "Coste de ventas y prestaciones de servicios"
+    },
+    {
+      "label": "Approvisionnements et marchandises",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.06
+      ],
+      "origen": "estado 11",
+      "glosa": "Aprovisionamientos y mercancías"
+    },
+    {
+      "label": "Achats",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        6.008
+      ],
+      "origen": "estado 11",
+      "glosa": "Compras"
+    },
+    {
+      "label": "Stocks: réduction (augmentation)",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.609
+      ],
+      "origen": "estado 11",
+      "glosa": "Existencias: disminución (aumento)"
+    },
+    {
+      "label": "Services et biens divers",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.061
+      ],
+      "origen": "estado 11",
+      "glosa": "Servicios y bienes diversos"
+    },
+    {
+      "label": "Rémunérations, charges sociales et pensions",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.062
+      ],
+      "origen": "estado 11",
+      "glosa": "Remuneraciones, cargas sociales y pensiones"
+    },
+    {
+      "label": "Amortissements et réductions de valeur sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.63
+      ],
+      "origen": "estado 11",
+      "glosa": "Amortizaciones y correcciones de valor sobre gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Réductions de valeur sur stocks, sur commandes en cours d'exécution et sur créances commerciales: dotations (reprises)",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        6.314
+      ],
+      "origen": "estado 11",
+      "glosa": "Correcciones de valor sobre existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
+    },
+    {
+      "label": "Provisions pour risques et charges: dotations (utilisations et reprises)",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        6.357
+      ],
+      "origen": "estado 11",
+      "glosa": "Provisiones para riesgos y gastos: dotaciones (aplicaciones y reversiones)"
+    },
+    {
+      "label": "Autres charges d'exploitation",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        6.408
+      ],
+      "origen": "estado 11",
+      "glosa": "Otros gastos de explotación"
+    },
+    {
+      "label": "Charges d'exploitation portées à l'actif au titre de frais de restructuration",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.649
+      ],
+      "origen": "estado 11",
+      "glosa": "Gastos de explotación activados como gastos de reestructuración"
+    },
+    {
+      "label": "Produits financiers",
+      "lado": "revenue",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.075
+      ],
+      "origen": "estado 11",
+      "glosa": "Ingresos financieros"
+    },
+    {
+      "label": "Produits des immobilisations financières",
+      "lado": "revenue",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.75
+      ],
+      "origen": "estado 11",
+      "glosa": "Ingresos del inmovilizado financiero"
+    },
+    {
+      "label": "Produits des actifs circulants",
+      "lado": "revenue",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.751
+      ],
+      "origen": "estado 11",
+      "glosa": "Ingresos del activo circulante"
+    },
+    {
+      "label": "Autres produits financiers",
+      "lado": "revenue",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        7.529
+      ],
+      "origen": "estado 11",
+      "glosa": "Otros ingresos financieros"
+    },
+    {
+      "label": "Charges financières",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.065
+      ],
+      "origen": "estado 11",
+      "glosa": "Gastos financieros"
+    },
+    {
+      "label": "Charges des dettes",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.65
+      ],
+      "origen": "estado 11",
+      "glosa": "Gastos de la deuda"
+    },
+    {
+      "label": "Réductions de valeur sur actifs circulants autres que stocks, commandes en cours et créances commerciales: dotations (reprises)",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.651
+      ],
+      "origen": "estado 11",
+      "glosa": "Correcciones de valor sobre activos circulantes distintos de existencias, pedidos en curso y créditos comerciales: dotaciones (reversiones)"
+    },
+    {
+      "label": "Autres charges financières",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        6.529
+      ],
+      "origen": "estado 11",
+      "glosa": "Otros gastos financieros"
+    },
+    {
+      "label": "Produits exceptionnels",
+      "lado": "revenue",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.076
+      ],
+      "origen": "estado 11",
+      "glosa": "Ingresos extraordinarios"
+    },
+    {
+      "label": "Reprises d'amortissements et de réductions de valeur sur immobilisations incorporelles et corporelles",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.76
+      ],
+      "origen": "estado 11",
+      "glosa": "Reversiones de amortizaciones y correcciones de valor sobre inmovilizado intangible y material"
+    },
+    {
+      "label": "Reprises de réductions de valeur sur immobilisations financières",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.761
+      ],
+      "origen": "estado 11",
+      "glosa": "Reversiones de correcciones de valor sobre inmovilizado financiero"
+    },
+    {
+      "label": "Reprises de provisions pour risques et charges exceptionnels",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.762
+      ],
+      "origen": "estado 11",
+      "glosa": "Reversiones de provisiones para riesgos y gastos extraordinarios"
+    },
+    {
+      "label": "Plus-values sur réalisation d'actifs immobilisés",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.763
+      ],
+      "origen": "estado 11",
+      "glosa": "Plusvalías por enajenación de activos inmovilizados"
+    },
+    {
+      "label": "Autres produits exceptionnels",
+      "lado": "revenue",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        7.649
+      ],
+      "origen": "estado 11",
+      "glosa": "Otros ingresos extraordinarios"
+    },
+    {
+      "label": "Charges exceptionnelles",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.066
+      ],
+      "origen": "estado 11",
+      "glosa": "Gastos extraordinarios"
+    },
+    {
+      "label": "Amortissements et réductions de valeur exceptionnels sur frais d'établissement, sur immobilisations incorporelles et corporelles",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.66
+      ],
+      "origen": "estado 11",
+      "glosa": "Amortizaciones y correcciones de valor extraordinarias sobre gastos de establecimiento, inmovilizado intangible y material"
+    },
+    {
+      "label": "Réductions de valeur sur immobilisations financières",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.661
+      ],
+      "origen": "estado 11",
+      "glosa": "Correcciones de valor sobre inmovilizado financiero"
+    },
+    {
+      "label": "Provisions pour risques et charges exceptionnels: dotations (utilisations)",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.662
+      ],
+      "origen": "estado 11",
+      "glosa": "Provisiones para riesgos y gastos extraordinarios: dotaciones (aplicaciones)"
+    },
+    {
+      "label": "Moins-values sur réalisation d'actifs immobilisés",
+      "lado": null,
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.663
+      ],
+      "origen": "estado 11",
+      "glosa": "Minusvalías por enajenación de activos inmovilizados"
+    },
+    {
+      "label": "Autres charges exceptionnelles",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        6.648
+      ],
+      "origen": "estado 11",
+      "glosa": "Otros gastos extraordinarios"
+    },
+    {
+      "label": "Charges exceptionnelles portées à l'actif au titre de frais de restructuration",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.669
+      ],
+      "origen": "estado 11",
+      "glosa": "Gastos extraordinarios activados como gastos de reestructuración"
+    },
+    {
+      "label": "Prélèvements sur les impôts différés",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.78
+      ],
+      "origen": "estado 11",
+      "glosa": "Disposición de impuestos diferidos"
+    },
+    {
+      "label": "Transfert aux impôts différés",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        0.68
+      ],
+      "origen": "estado 11",
+      "glosa": "Transferencia a impuestos diferidos"
+    },
+    {
+      "label": "Impôts",
+      "lado": "expense",
+      "page": 6,
+      "section": "N° BE 0433.255.448 | C 3 / # COMPTE DE RÉSULTATS",
+      "values": [
+        6.703
+      ],
+      "origen": "estado 11",
+      "glosa": "Impuestos"
+    },
+    {
+      "label": "Régularisations d'impôts et reprises de provisions fiscales",
+      "lado": "expense",
+      "page": 7,
+      "section": "N° BE 0433.255.448 | C 3",
+      "values": [
+        0.077
+      ],
+      "origen": "estado 12",
+      "glosa": "Ajustes de impuestos y reversiones de provisiones fiscales"
+    },
+    {
+      "label": "Prélèvements sur les réserves immunisées",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0433.255.448 | C 3",
+      "values": [
+        0.789
+      ],
+      "origen": "estado 12",
+      "glosa": "Disposición de reservas exentas"
+    },
+    {
+      "label": "Transfert aux réserves immunisées",
+      "lado": null,
+      "page": 7,
+      "section": "N° BE 0433.255.448 | C 3",
+      "values": [
+        0.689
+      ],
+      "origen": "estado 12",
+      "glosa": "Transferencia a reservas exentas"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+ "md": "Clubes/España/RCD Mallorca/cuentas-anuales-informe-gestion-2024-2025.md",
+ "generado": "2026-10-02T00:19:36.213Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "(En euros)",
+ "caja": {
+  "lineas": [
+   287
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   316,
+   318,
+   328,
+   330
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Deuda financiera = deudas con entidades de crédito y arrendamiento financiero (LP y CP); se excluyen deudas con clubs por traspasos, 'Otras deudas' LP (30,4M, naturaleza no especificada, posiblemente concursal) y 'Otros pasivos financieros' CP, que podrían ser discutibles."
+}

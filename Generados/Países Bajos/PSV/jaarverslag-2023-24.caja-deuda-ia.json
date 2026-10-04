@@ -1,0 +1,22 @@
+{
+ "md": "Clubes/Países Bajos/PSV/jaarverslag-2023-24.md",
+ "generado": "2026-10-02T00:19:20.419Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "miles",
+ "escala_evidencia": "(Bedragen in EUR x 1.000)",
+ "caja": {
+  "lineas": [
+   1614
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   1645,
+   1647,
+   1653
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Balance consolidado. Deuda: préstamos subordinados (Partnerfonds I/II, 45.100), Overige schulden LP (404, préstamo de derden kredietverstrekkers / lease financiero) y porción corriente de deuda LP (202, que incluye 100 de subordinados y 102 de otros préstamos). Se excluyen deudas por transfers y la deuda fiscal diferida (Belastingen), aunque esta última es una deuda con intereses."
+}

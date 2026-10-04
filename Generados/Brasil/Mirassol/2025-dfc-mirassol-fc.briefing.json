@@ -1,0 +1,238 @@
+{
+  "club": "mirassol",
+  "year": 2025,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Mirassol/2025-dfc-mirassol-fc.md",
+  "generatedAt": "2026-09-30T21:53:28.965Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 2,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 1,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "# MIRASSOL FUTEBOL CLUBE / MIRASSOL FUTEBOL CLUBE",
+      "columns": [
+        "Fluxo de Caixa das Atividades Operacionais",
+        "2025"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Superávit do Exercício",
+          "values": [
+            "67.711"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Ajustes ao Resultado do Exercício",
+          "values": [
+            "(7.910)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+) Depreciação e Amortização",
+          "values": [
+            "2.402"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+/-) Ganho/Perda na Transferência de Atletas",
+          "values": [
+            "(800)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(+/-) Ajustes de Exercícios Anteriores",
+          "values": [
+            "(9.512)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Resultado do exercício ajustado",
+          "values": [
+            "59.801"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) Redução nos Ativos Operacionais",
+          "values": [
+            "168"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) / Redução em Contas a Receber",
+          "values": [
+            "2.957"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) / Redução em Adiantamentos",
+          "values": [
+            "(2.252)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) / Redução em Impostos a Recuperar",
+          "values": [
+            "(611)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) / Redução em Despesas a Apropriar",
+          "values": [
+            "54"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) / Redução em Depósitos Judiciais",
+          "values": [
+            "20"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento (Redução) nos Passivos Operacionais",
+          "values": [
+            "9.515"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento / (Redução) em Fornecedores",
+          "values": [
+            "4.221"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento / (Redução) em Obrigações Tributárias",
+          "values": [
+            "810"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento / (Redução) em Obrigações Trabalhistas",
+          "values": [
+            "608"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento / (Redução) em Outras Obrigações",
+          "values": [
+            "3.876"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa líquido gerado nas atividades operacionais",
+          "values": [
+            "69.485"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fluxo de Caixa das Atividades de Investimento",
+          "values": [
+            "(30.532)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) / Redução em Investimentos",
+          "values": [
+            "(14)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) / Redução em Ativo Imobilizado",
+          "values": [
+            "(21.776)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(Aumento) / Redução em Intangível",
+          "values": [
+            "(9.543)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Valor recebido na Alienação de Imobilizado",
+          "values": [
+            "800"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento líquido/(diminuição) de caixa e equivalentes de caixa",
+          "values": [
+            "38.952"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa no fim do exercício",
+          "values": [
+            "11.584"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Caixa e equivalentes de caixa no início do exercício",
+          "values": [
+            "50.536"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Aumento líquido/(diminuição) de caixa e equivalentes de caixa",
+          "values": [
+            "38.952"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "br",
+    "query": "Mirassol",
+    "matches": [
+      {
+        "leagueId": "br-serieA",
+        "year": "2025",
+        "matchedName": "Mirassol",
+        "wikipediaPage": "2025 Campeonato Brasileiro Série A"
+      }
+    ],
+    "cached": true
+  },
+  "fxHints": [],
+  "warnings": []
+}

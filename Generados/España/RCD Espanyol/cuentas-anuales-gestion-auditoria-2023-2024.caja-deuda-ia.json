@@ -1,0 +1,24 @@
+{
+ "md": "Clubes/España/RCD Espanyol/cuentas-anuales-gestion-auditoria-2023-2024.md",
+ "generado": "2026-10-02T00:14:43.015Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "Euros",
+ "caja": {
+  "lineas": [
+   364
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [
+   396,
+   405,
+   398,
+   400,
+   417
+  ],
+  "ninguna": false
+ },
+ "observaciones": "Se incluyen las deudas bancarias (L396, que vale 0 en 2024, y L405), el préstamo de la matriz (L398) y las deudas con características especiales (L400 y L417), que según las notas 9.1.5 y 9.1.6 serían préstamos participativos (CVC y matriz); su inclusión es dudosa porque a efectos mercantiles computan como patrimonio. Se excluyen L407 (posible saldo comercial con el grupo) y L397 (otros pasivos financieros menores)."
+}

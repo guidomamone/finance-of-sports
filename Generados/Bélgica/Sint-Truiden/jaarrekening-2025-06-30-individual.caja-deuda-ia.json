@@ -1,0 +1,18 @@
+{
+ "md": "Clubes/Bélgica/Sint-Truiden/jaarrekening-2025-06-30-individual.md",
+ "generado": "2026-10-02T00:20:08.570Z",
+ "criterioDeuda": "DEUDA FINANCIERA: préstamos y obligaciones bancarias o financieras, corriente + no corriente (no el total del pasivo, no las cuentas por pagar comerciales).",
+ "escala": "unidades",
+ "escala_evidencia": "met een balanstotaal van € 30.803.706,69",
+ "caja": {
+  "lineas": [
+   303
+  ],
+  "ninguna": false
+ },
+ "deuda": {
+  "lineas": [],
+  "ninguna": false
+ },
+ "observaciones": "Las páginas del pasivo (PASSIVA, schulden code 17/49, financiële schulden 170/4 y 43) no están incluidas, por lo que no se puede identificar la deuda financiera; la escala en unidades (euros) se infiere de que el total del activo 30.803.707 coincide con el balanstotaal € 30.803.706,69 del informe del auditor."
+}

@@ -1,0 +1,202 @@
+{
+  "md": "Clubes/España/Real Madrid/informe-economico-2015-2016.md",
+  "pdf": "Clubes/España/Real Madrid/informe-economico-2015-2016.pdf",
+  "club": "realmadrid",
+  "year": 2016,
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "generatedAt": "2026-09-30T22:01:02.377Z",
+  "tieOuts": {
+    "cierran": 4,
+    "noCierran": 18
+  },
+  "warnings": [
+    "3 tabla(s)/columna(s) MARCADAS RELEVANTES (Recursos/Gastos) no cerraron el tie-out automático o dieron error -- prioridad alta, revisar antes de cargar (ver \"tieOuts\").",
+    "16 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "14 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ],
+  "estadoDeResultados": true,
+  "seleccion": {
+    "ok": true,
+    "filas": 16,
+    "notasUsadas": []
+  },
+  "ladoConocido": 16,
+  "rubros": [
+    {
+      "label": "Ingresos Financieros",
+      "lado": "revenue",
+      "page": 61,
+      "section": "",
+      "values": [
+        9.158
+      ],
+      "origen": "estado 92",
+      "glosa": "Ingresos Financieros"
+    },
+    {
+      "label": "Gastos Financieros por coste implícito derivado del pago aplazado en la adquisición de jugadores",
+      "lado": "expense",
+      "page": 61,
+      "section": "",
+      "values": [
+        -3.116
+      ],
+      "origen": "estado 92",
+      "glosa": "Gastos Financieros por coste implícito derivado del pago aplazado en la adquisición de jugadores"
+    },
+    {
+      "label": "Gastos Financieros por intereses de préstamos, gastos de avales y otros gastos financieros",
+      "lado": "expense",
+      "page": 61,
+      "section": "",
+      "values": [
+        -2.007
+      ],
+      "origen": "estado 92",
+      "glosa": "Gastos Financieros por intereses de préstamos, gastos de avales y otros gastos financieros"
+    },
+    {
+      "label": "Construcciones y otro inmovilizado material (11.573) (499) 751 -",
+      "lado": "expense",
+      "page": 27,
+      "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangible / no deportivo totalmente amortizados es como sigue: / Miles € / 30/06/2016    30/06/2015     Correcciones por deterioro:",
+      "values": [
+        -11.321
+      ],
+      "origen": "estado 19",
+      "glosa": "Construcciones y otro inmovilizado material (11.573) (499) 751 -"
+    },
+    {
+      "label": "Concesiones",
+      "lado": "expense",
+      "page": 27,
+      "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangible / no deportivo totalmente amortizados es como sigue: / Miles € / 30/06/2016    30/06/2015     Correcciones por deterioro:",
+      "values": [
+        2.103
+      ],
+      "origen": "estado 19",
+      "glosa": "Concesiones"
+    },
+    {
+      "label": "Patentes, licencias, marcas y similares 769 726 VALOR NETO 319.248 5.025 (671) -",
+      "lado": "expense",
+      "page": 27,
+      "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangible / no deportivo totalmente amortizados es como sigue: / Miles € / 30/06/2016    30/06/2015     Correcciones por deterioro:",
+      "values": [
+        323.602
+      ],
+      "origen": "estado 19",
+      "glosa": "Patentes, licencias, marcas y similares 769 726 VALOR NETO 319.248 5.025 (671) -"
+    },
+    {
+      "label": "Aplicaciones informáticas",
+      "lado": "expense",
+      "page": 27,
+      "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangible / no deportivo totalmente amortizados es como sigue: / Miles € / 30/06/2016    30/06/2015     Correcciones por deterioro:",
+      "values": [
+        5.188
+      ],
+      "origen": "estado 19",
+      "glosa": "Aplicaciones informáticas"
+    },
+    {
+      "label": "Otro inmovilizado intangible",
+      "lado": "expense",
+      "page": 27,
+      "section": "5.1 Otra información / Un resumen del coste de los elementos de inmovilizado intangible / no deportivo totalmente amortizados es como sigue: / Miles € / 30/06/2016    30/06/2015     Correcciones por deterioro:",
+      "values": [
+        120.209
+      ],
+      "origen": "estado 19",
+      "glosa": "Otro inmovilizado intangible"
+    },
+    {
+      "label": "de jugadores, su pago se efectúa en dos plazos semestrales, en Ingresos de estadio",
+      "lado": "revenue",
+      "page": 40,
+      "section": "67 millones de euros de periodificaciones de cuotas socios/abo- / de euros fichas/otros personal, 68 millones de euros de periodifi- / 22.152       27.130 / gativo existente al cierre del periodo. / Periodificaciones a corto plazo",
+      "values": [
+        54895
+      ],
+      "origen": "estado 45",
+      "glosa": "de jugadores, su pago se efectúa en dos plazos semestrales, en Ingresos de estadio"
+    },
+    {
+      "label": "enero y en julio. En el caso de las cuotas de socios/abonados, se Ingresos de marketing",
+      "lado": "revenue",
+      "page": 40,
+      "section": "67 millones de euros de periodificaciones de cuotas socios/abo- / de euros fichas/otros personal, 68 millones de euros de periodifi- / 22.152       27.130 / gativo existente al cierre del periodo. / Periodificaciones a corto plazo",
+      "values": [
+        10322
+      ],
+      "origen": "estado 45",
+      "glosa": "enero y en julio. En el caso de las cuotas de socios/abonados, se Ingresos de marketing"
+    },
+    {
+      "label": "cobran el 30 de junio las del ejercicio siguiente, generando una Ingresos de competiciones",
+      "lado": "revenue",
+      "page": 40,
+      "section": "67 millones de euros de periodificaciones de cuotas socios/abo- / de euros fichas/otros personal, 68 millones de euros de periodifi- / 22.152       27.130 / gativo existente al cierre del periodo. / Periodificaciones a corto plazo",
+      "values": [
+        6619
+      ],
+      "origen": "estado 45",
+      "glosa": "cobran el 30 de junio las del ejercicio siguiente, generando una Ingresos de competiciones"
+    },
+    {
+      "label": "periodificación acreedora cuya cancelación se irá realizando a lo",
+      "lado": "revenue",
+      "page": 40,
+      "section": "67 millones de euros de periodificaciones de cuotas socios/abo- / de euros fichas/otros personal, 68 millones de euros de periodifi- / 22.152       27.130 / gativo existente al cierre del periodo. / Periodificaciones a corto plazo",
+      "values": [
+        67422
+      ],
+      "origen": "estado 45",
+      "glosa": "periodificación acreedora cuya cancelación se irá realizando a lo"
+    },
+    {
+      "label": "Diferencias de cambio negativas no realizadas",
+      "lado": "expense",
+      "page": 51,
+      "section": "9.158             3.959 / Gastos financieros",
+      "values": [
+        3351
+      ],
+      "origen": "estado 65",
+      "glosa": "Diferencias de cambio negativas no realizadas"
+    },
+    {
+      "label": "Gastos de intereses y préstamos",
+      "lado": "expense",
+      "page": 51,
+      "section": "9.158             3.959 / Gastos financieros",
+      "values": [
+        1223
+      ],
+      "origen": "estado 65",
+      "glosa": "Gastos de intereses y préstamos"
+    },
+    {
+      "label": "Gtos. Financ. de actualización de pasivos financieros (Notas 14.1 y 15)",
+      "lado": "expense",
+      "page": 51,
+      "section": "9.158             3.959 / Gastos financieros",
+      "values": [
+        3116
+      ],
+      "origen": "estado 65",
+      "glosa": "Gtos. Financ. de actualización de pasivos financieros (Notas 14.1 y 15)"
+    },
+    {
+      "label": "T-2, siendo T el periodo contable anual, respecto del que se haya Total ingresos financieros (nota 17.6)",
+      "lado": "revenue",
+      "page": 57,
+      "section": "dos del punto de equilibrio de cada periodo contable cubierto por / Ingresos estados financieros / el periodo de seguimiento, a saber, los periodos contables T, T-1 y",
+      "values": [
+        9.158
+      ],
+      "origen": "estado 72",
+      "glosa": "T-2, siendo T el periodo contable anual, respecto del que se haya Total ingresos financieros (nota 17.6)"
+    }
+  ]
+}

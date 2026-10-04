@@ -1,0 +1,130 @@
+{
+  "md": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.md",
+  "pdf": "Clubes/Grecia/AEL Larissa/AEL_notes_ELP_2019-06-30.pdf",
+  "club": "aellarissa-gr",
+  "year": 2019,
+  "generatedAt": "2026-10-03T20:30:35.218Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Πωλήσεις λοιπών αποθεμάτων & άχρηστου υλικού",
+      "lado": "revenue",
+      "page": 14,
+      "section": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\"",
+      "values": [
+        0.016129
+      ],
+      "glosa": "Ventas de otras existencias y material de desecho"
+    },
+    {
+      "label": "Πωλήσεις υπηρεσιών",
+      "lado": "revenue",
+      "page": 14,
+      "section": "nota que desglosa \"Κύκλος εργασιών (καθαρός)\"",
+      "values": [
+        2.319316
+      ],
+      "glosa": "Prestaciones de servicios"
+    },
+    {
+      "label": "Επιχορηγήσεις & διάφορα έσοδα πωλήσεων",
+      "lado": "revenue",
+      "page": 14,
+      "section": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\"",
+      "values": [
+        0.366298
+      ],
+      "glosa": "Subvenciones y otros ingresos de ventas"
+    },
+    {
+      "label": "Έσοδα παρεπόμενων ασχολιών",
+      "lado": "revenue",
+      "page": 14,
+      "section": "nota que desglosa \"(+) Λοιπά συνήθη έσοδα\"",
+      "values": [
+        0.385218
+      ],
+      "glosa": "Ingresos por actividades accesorias"
+    },
+    {
+      "label": "(+) Λοιπά έσοδα και κέρδη",
+      "lado": "revenue",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0
+      ],
+      "glosa": "(+) Otros ingresos y ganancias"
+    },
+    {
+      "label": "Αμοιβές και έξοδα προσωπικού",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+      "values": [
+        2.462845
+      ],
+      "glosa": "Retribuciones y gastos de personal"
+    },
+    {
+      "label": "Αμοιβές και έξοδα τρίτων",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+      "values": [
+        0.529934
+      ],
+      "glosa": "Honorarios y gastos de terceros"
+    },
+    {
+      "label": "Παροχές τρίτων",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+      "values": [
+        0.116926
+      ],
+      "glosa": "Servicios de terceros"
+    },
+    {
+      "label": "Διάφορα έξοδα",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+      "values": [
+        0.410632
+      ],
+      "glosa": "Gastos diversos"
+    },
+    {
+      "label": "Αποσβέσεις",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+      "values": [
+        0.011318
+      ],
+      "glosa": "Amortizaciones"
+    },
+    {
+      "label": "Φόροι-τέλη",
+      "lado": "expense",
+      "page": 14,
+      "section": "nota que desglosa \"(-) Κόστος πωλήσεων\" + \"(-) Έξοδα διοίκησης\" + \"(-) Έξοδα διάθεσης\" (escalón 1: grupo de renglones)",
+      "values": [
+        0.003164
+      ],
+      "glosa": "Impuestos y tasas"
+    },
+    {
+      "label": "(-) Λοιπά έξοδα και ζημιές",
+      "lado": "expense",
+      "page": 3,
+      "section": "estado",
+      "values": [
+        0.0216
+      ],
+      "glosa": "(-) Otros gastos y pérdidas"
+    }
+  ]
+}

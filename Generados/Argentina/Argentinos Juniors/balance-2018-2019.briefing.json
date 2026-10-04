@@ -1,0 +1,224 @@
+{
+  "club": "argentinosjuniors",
+  "year": 2019,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Argentinos Juniors/balance-2018-2019.md",
+  "generatedAt": "2026-09-30T22:38:22.405Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 1,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 6,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 9,
+      "section": "2.2 LIGA METROPOLITANA / CLASIFICACIÓN GENERAL 4°, 303 pts. en 165 PJ. / 2.3 LIGA BUENOS AIRES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Torneo finalizado en Diciembre",
+          "values": [
+            "2018."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Compitieron 8 categorías, de 2002 a 2009 en la Zona",
+          "values": [
+            "1."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Las siguientes categorías obtuvieron el campeonato anual: 2005, 2006, 2007 y",
+          "values": [
+            "2008."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "FUTSAL MASCULINO AFA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Categoría 6 ta. Posición",
+          "values": [
+            "3ra."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Categoría 5ta. Posición",
+          "values": [
+            "3ra."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Categoría 4ta. Posición",
+          "values": [
+            "2da."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Categoría 3era. Posición",
+          "values": [
+            "12va."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Categoría 1era. Posición",
+          "values": [
+            "9na."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "Detalle de posiciones Torneo Apertura 2019",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Categoría 8va. Posición",
+          "values": [
+            "12."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Categoría 7 ma. Posición",
+          "values": [
+            "17."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Categoría 6 ta. Posición",
+          "values": [
+            "3era."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Categoría 5ta. Posición",
+          "values": [
+            "3ra."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Categoría 4ta. Posición",
+          "values": [
+            "8va."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 16,
+      "section": "TENIS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "CABALLEROS 4ta ascendió a",
+          "values": [
+            "3era."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CABALLEROS 5ta ascendió a",
+          "values": [
+            "4ta."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "PRENSA",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Total seguidores: De 170.291 aumentó a",
+          "values": [
+            "172.088",
+            "(+1.797)."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Impresiones:",
+          "values": [
+            "35.340.000."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 31,
+      "section": "Promoción paga: No se realizó. / - Facebook:",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "De 29.041 seguidores aumentó a",
+          "values": [
+            "34.548",
+            "(+5.507)."
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cantidad de publicaciones realizadas:",
+          "values": [
+            "(+423)."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 31,
+      "section": "PRENSA",
+      "likelyRelevant": false,
+      "totalLabel": "Total seguidores: De 170.291 aumentó a",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "Ninguna tabla se marcó \"likelyRelevant\" -- revisar a mano si el documento tiene una sección de Recursos/Gastos que extract-table-rows.mjs no reconoció (ver RELEVANTE en tools/vocabulario.mjs)."
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Argentinos Juniors",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "1 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

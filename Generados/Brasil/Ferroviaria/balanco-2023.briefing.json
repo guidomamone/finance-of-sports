@@ -1,0 +1,2585 @@
+{
+  "club": "ferroviaria",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Ferroviaria/balanco-2023.md",
+  "generatedAt": "2026-09-30T21:52:31.280Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 66,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 6,
+  "relevantTableCount": 0,
+  "tables": [
+    {
+      "page": 1,
+      "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # BALANÇO PATRIMONIAL",
+      "columns": [
+        "Descrição",
+        "Saldo Atual"
+      ],
+      "rows": [
+        {
+          "rawLabel": "ATIVO",
+          "values": [
+            "25.659.924,51D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ATIVO CIRCULANTE",
+          "values": [
+            "14.880.213,60D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DISPONÍVEL",
+          "values": [
+            "275.376,07D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CAIXA GERAL",
+          "values": [
+            "2.555,15D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CAIXA",
+          "values": [
+            "2.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAIXA - FILIAL",
+          "values": [
+            "555,15D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCOS CONTA MOVIMENTO",
+          "values": [
+            "96.911,58D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "BANCO SICOOB - C/C 8681-9",
+          "values": [
+            "52.842,34D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO BRADESCO S/A - C/C 3929-2",
+          "values": [
+            "1,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO BRADESCO S/A - C/C 8959-1",
+          "values": [
+            "1,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO PAG SEGURO - FILIAL",
+          "values": [
+            "44.067,24D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APLICAÇÕES FINANCEIRAS - LIQUIDEZ IMEDIATA",
+          "values": [
+            "162.107,96D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "BANCO BRADESCO - INVEST FÁCIL C/3929-2",
+          "values": [
+            "59.116,65D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO BRADESCO - INVEST FÁCIL C/8959-1",
+          "values": [
+            "102.475,41D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO SANTANDER - CONTAMAX",
+          "values": [
+            "515,90D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TÍTULOS DE CAPITALIZAÇÃO",
+          "values": [
+            "13.801,38D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "BANCO BRADESCO",
+          "values": [
+            "13.801,38D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TÍTULOS E DUPLICATAS A RECEBER",
+          "values": [
+            "3.577,50D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "TÍTULOS A RECEBER",
+          "values": [
+            "3.577,50D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CARTÃO PAGSEGURO - FILIAL",
+          "values": [
+            "3.577,50D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ESTOQUES",
+          "values": [
+            "6.159,00D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ESTOQUES - FILIAL",
+          "values": [
+            "6.159,00D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "MERCADORIAS",
+          "values": [
+            "6.159,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OUTROS CRÉDITOS",
+          "values": [
+            "317.047,61D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CRÉDITOS DIVERSOS",
+          "values": [
+            "317.047,61D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ASSOCIAÇÃO FERROVIÁRIA DE ESPORTES",
+          "values": [
+            "317.047,61D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ADIANTAMENTOS E EMPRÉSTIMOS",
+          "values": [
+            "233.751,63D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ADIANTAMENTOS A EMPREGADOS",
+          "values": [
+            "43.314,26D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ADIANTAMENTOS DE FÉRIAS",
+          "values": [
+            "43.314,26D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ADIANTAMENTOS A FORNECEDORES",
+          "values": [
+            "189.177,39D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "4NUTRI SUPLEMENTOS ALIMENTARES LTDA",
+          "values": [
+            "144,84D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LUIS ROBERTO DIAS DE SOUSA EPP",
+          "values": [
+            "14.515,08D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "R2M ENGENHARIA LTDA",
+          "values": [
+            "69.800,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HOTEL NOVO LIMEIRA EIRELI",
+          "values": [
+            "60.590,01D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PASSARO, VIEIRA, BOTELHO & TORRES SOCIEDADE DE ADVOGADOS",
+          "values": [
+            "1.532,43D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "A7 BRINDES COMERCIO DE PRODUTOS PERSONALIZADOS",
+          "values": [
+            "1.245,03D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ZP PROJETOS E ASSESSORIA LTDA",
+          "values": [
+            "1.350,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "JVDA - SPORTS LTDA",
+          "values": [
+            "40.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMPRÉSTIMOS A EMPREGADOS",
+          "values": [
+            "1.259,98D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "MARIA DA SILVA SANTOS VARGAS",
+          "values": [
+            "260,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EDSON APARECIDO DE SOUZA",
+          "values": [
+            "999,98D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPOSTOS E CONTRIBUIÇÕES A COMPENSAR/RECUPERAR",
+          "values": [
+            "960.147,66D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "IMPOSTOS E CONTRIBUIÇÕES A COMPENSAR",
+          "values": [
+            "959.959,66D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "IRPJ ESTIMADO",
+          "values": [
+            "252.169,94D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CSLL ESTIMADO",
+          "values": [
+            "95.101,18D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF S/APLICAÇÕES FINANCEIRAS",
+          "values": [
+            "637,26D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRJP ESTIMATIVA 2019",
+          "values": [
+            "427.802,58D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CSLL ESTIMATIVA 2019",
+          "values": [
+            "157.608,93D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS A COMPENSAR",
+          "values": [
+            "1.012,08D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "S.A.F. A RECUPERAR",
+          "values": [
+            "25.627,69D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMPOSTOS E CONTRIBUIÇÕES A RECUPERAR - FILIAL",
+          "values": [
+            "188,00D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ICMS A RECUPERAR",
+          "values": [
+            "188,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CONTRATOS DE PATROCÍNIOS",
+          "values": [
+            "6.974.000,00D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CONTRATOS DE PATROCÍNIOS",
+          "values": [
+            "6.974.000,00D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "VIAÇÃO PARATY LTDA",
+          "values": [
+            "300.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAMPINAS CAP INTERMEDIAÇÃO DE SERV. E NEGÓCIOS LTDA",
+          "values": [
+            "14.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "L8ML CAP INTERMEDIAÇÃO DE SERV. E NEGÓCIOS LTDA",
+          "values": [
+            "14.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LPM CAP INTERMEDIAÇÃO DE SERV. E NEG. MOBILIÁRIOS LTDA",
+          "values": [
+            "14.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NORE CAP INTERMEDIAÇÃO DE SERV. E NEG. MOBILIÁRIOS LTDA",
+          "values": [
+            "14.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RIB CAP INTERMEDIAÇÃO DE SERV. E NEG. MOBILIÁRIOS LTDA",
+          "values": [
+            "14.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PP CAP INTERIOR INTERM. DE SERV. E NEG. MOBILIÁRIOS LTDA",
+          "values": [
+            "14.000,00D"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # BALANÇO PATRIMONIAL",
+      "columns": [
+        "Descrição",
+        "Saldo Atual"
+      ],
+      "rows": [
+        {
+          "rawLabel": "SJC CAP INTERMEDIAÇÃO DE SERV. E NEG. MOBILIÁRIOS LTDA",
+          "values": [
+            "14.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ESTRELA D GICBA LTDA",
+          "values": [
+            "1.000.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMPRESA CRUZ DE TRANSPORTES LTDA.",
+          "values": [
+            "50.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSTITUTO ESTRE DE RESPONSABILIDADE SOCIO-AMBIENTAL",
+          "values": [
+            "50.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BETNACIONAL",
+          "values": [
+            "600.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MRV ENGENHARIA E PARTICIPAÇÕES S/A",
+          "values": [
+            "40.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FUN GAMING GROUP",
+          "values": [
+            "2.940.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MJR FARMA COMÉRCIO E DISTRIBUIÇÃO S/A",
+          "values": [
+            "1.800.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FRIOZEN ARMAZENS FRIGORIFICOS LTDA",
+          "values": [
+            "96.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CONTRATOS DE TRANSAÇÕES DE ATLETAS",
+          "values": [
+            "6.110.154,13D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CONTRATOS DE CESSÃO DEFINITIVA DE DIREITOS FEDERATIVOS E ECONÔMICOS",
+          "values": [
+            "6.030.154,13D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CRUZEIRO ESPORTE CLUBE",
+          "values": [
+            "625.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SOCIEDADE ESPORTIVA PALMEIRAS",
+          "values": [
+            "700.000,05D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CLUB ATHLETICO PARANAENSE",
+          "values": [
+            "491.699,71D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SPORT CLUB INTERNACIONAL",
+          "values": [
+            "120.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SANTOS FUTEBOL CLUBE",
+          "values": [
+            "4.093.454,37D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CONTRATOS DE REPASSE DE CESSÃO TEMPORÁRIA",
+          "values": [
+            "80.000,00D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "FORTALEZA ESPORTE CLUBE",
+          "values": [
+            "80.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATIVO NÃO CIRCULANTE",
+          "values": [
+            "10.779.710,91D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DIREITOS REALIZÁVEIS A LONGO PRAZO",
+          "values": [
+            "402.827,79D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DEPÓSITOS JUDICIAIS",
+          "values": [
+            "191.866,88D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DEPÓSITO JUDICIAL - NARCISO FRANCISCO MORA MARSILL",
+          "values": [
+            "39.690,61D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPÓSITOS JUDICIAIS 2016",
+          "values": [
+            "3.819,60D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPÓSITOS JUDICIAIS 2017",
+          "values": [
+            "106.693,91D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPÓSITO JUDICIAL - M 00370-2004-00615005",
+          "values": [
+            "4.431,83D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPÓSITO JUDICIAL - 1701/04",
+          "values": [
+            "4.678,13D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPÓSITO JUDICIAL - FRANSÉRGIO DA SILVA",
+          "values": [
+            "9.828,51D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPÓSITO JUDICIAL - EWERTON MACEDO DIAS",
+          "values": [
+            "10.059,15D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEPÓSITO JUDICIAL - RAFAELA CRISTINA SILVA PEREIRA",
+          "values": [
+            "12.665,14D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BLOQUEIO JUDICIAL",
+          "values": [
+            "210.960,91D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "BLOQUEIO JUDICIAL",
+          "values": [
+            "171.705,51D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BLOQUEIO JUDICIAL - FGTS EXECUÇÃO FISCAL 5001130-19.2022.4.03.6120",
+          "values": [
+            "39.255,40D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INVESTIMENTOS",
+          "values": [
+            "4.646,28D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "OUTRAS PARTICIPAÇÕES SOCIETÁRIAS",
+          "values": [
+            "4.646,28D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "SICOOB",
+          "values": [
+            "4.646,28D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMOBILIZADO",
+          "values": [
+            "537.596,80D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "IMOBILIZADO",
+          "values": [
+            "966.967,43D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "MÓVEIS E UTENSÍLIOS",
+          "values": [
+            "296.866,07D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSTALAÇÕES",
+          "values": [
+            "53.366,33D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EQUIPAMENTOS ELETRÔNICOS",
+          "values": [
+            "72.607,78D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EQUIPAMENTOS ESPORTIVOS",
+          "values": [
+            "39.470,49D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VEÍCULOS",
+          "values": [
+            "209.250,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MÓVEIS E UTENSÍLIOS - DEPTO. AMADOR",
+          "values": [
+            "11.089,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MÁQUINAS E EQUIPAMENTOS",
+          "values": [
+            "282.038,76D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "APARELHOS DE COMUNICAÇÃO",
+          "values": [
+            "2.279,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/DEPRECIAÇÕES ACUMULADAS",
+          "values": [
+            "430.879,49C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "/-/D.A.S/MÓVEIS E UTENSÍLIOS",
+          "values": [
+            "82.972,99C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/D.A.S/INSTALAÇÕES",
+          "values": [
+            "19.112,05C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/D.A.S/EQUIPAMENTOS ELETRÔNICOS",
+          "values": [
+            "41.441,79C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/D.A.S/EQUIPAMENTOS ESPORTIVOS",
+          "values": [
+            "10.014,24C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/D.A.S/VEÍCULOS",
+          "values": [
+            "184.608,87C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/D.A.S/MÓVEIS E UTENSÍLIOS - DEPTO. AMADOR",
+          "values": [
+            "11.089,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/D.A.S/MÁQUINAS E EQUIPAMENTOS",
+          "values": [
+            "80.889,81C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/D.A.S/APARELHOS DE COMUNICAÇÃO",
+          "values": [
+            "750,74C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IMOBILIZADO - FILIAL",
+          "values": [
+            "3.203,18D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "MÓVEIS E UTENSÍLIOS",
+          "values": [
+            "900,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EQUIPAMENTOS ELETRÔNICOS",
+          "values": [
+            "2.303,18D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/DEPRECIAÇÕES ACUMULADAS - FILIAL",
+          "values": [
+            "1.694,32C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "/-/D.A.S/MÓVEIS E UTENSÍLIOS",
+          "values": [
+            "330,50C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/D.A.S/EQUIPAMENTOS ELETRÔNICOS",
+          "values": [
+            "1.363,82C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INTANGÍVEL - ATLETAS EM FORMAÇÃO",
+          "values": [
+            "2.188.647,04D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ATLETAS EM FORMAÇÃO",
+          "values": [
+            "1.617.218,01D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CUSTO DE FORMAÇÃO SUB-15",
+          "values": [
+            "181.597,77D"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 3,
+      "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # BALANÇO PATRIMONIAL",
+      "columns": [
+        "Descrição",
+        "Saldo Atual"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CUSTO DE FORMAÇÃO SUB-17",
+          "values": [
+            "529.901,94D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CUSTO DE FORMAÇÃO SUB-20",
+          "values": [
+            "905.718,30D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATLETAS PROFISSIONAIS",
+          "values": [
+            "1.183.334,57D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ATLETAS PROFISSIONAIS FORMADOS",
+          "values": [
+            "1.183.334,57D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/AMORTIZAÇÃO DE ATLETAS PROFISSIONAIS",
+          "values": [
+            "611.905,54C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "/-/AMORTIZAÇÃO DE ATLETAS FORMADOS",
+          "values": [
+            "611.905,54C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATIVOS INTANGÍVEIS",
+          "values": [
+            "7.645.993,00D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ATIVOS INTANGÍVEIS",
+          "values": [
+            "7.660.993,00D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "MARCAS E PATENTES",
+          "values": [
+            "2.600,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SOFTWARE - BELMAR",
+          "values": [
+            "15.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AQUISIÇÃO DE ATLETAS",
+          "values": [
+            "6.050.000,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIREITO DE USO",
+          "values": [
+            "1.593.393,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/AMORTIZAÇÕES ACUMULADAS",
+          "values": [
+            "15.000,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "/-/AMORTIZAÇÃO SOFTWARE - BELMAR",
+          "values": [
+            "15.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PASSIVO",
+          "values": [
+            "25.659.924,51C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PASSIVO CIRCULANTE",
+          "values": [
+            "18.890.187,45C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "FORNECEDORES",
+          "values": [
+            "1.080.213,34C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "FORNECEDORES",
+          "values": [
+            "1.080.213,34C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "LUPO S/A",
+          "values": [
+            "25.960,05C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GRAN HOTEL NINA LTDA",
+          "values": [
+            "12.616,66C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CONNECT CORE TECNOLOGIA DA INFORMACAO LTDA - ME",
+          "values": [
+            "506,51C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "POLICLÍNICA SÃO DOMINGOS S/S",
+          "values": [
+            "7.508,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SQUARO MARKETING SPORTIVO LTDA",
+          "values": [
+            "26.278,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "JOSE ROBERTO FERNANDES PUBLICIDADE",
+          "values": [
+            "1.500,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SPORTSTEC DO BRASIL TECNOLOGIA ESPORTIVA LIMITADA.",
+          "values": [
+            "30.454,40C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FERGAZ COMERCIO DE GAS LTDA",
+          "values": [
+            "2.850,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PALACIO DAS BORRACHAS FER. E PARAF. LTDA",
+          "values": [
+            "623,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ANDERSON TUBIAS DOS SANTOS 39283926897",
+          "values": [
+            "300,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VANESSA GOMES DE LIMA ESPORTES EIRELI ME",
+          "values": [
+            "86.500,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BRUNO R BORTOLOZZO E CIA LTDA",
+          "values": [
+            "7.158,50C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "KEKY GELO-INDUSTRIA E COMERCIO LTDA",
+          "values": [
+            "2.118,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CARLOS A F LUIZ ARARAQUARA",
+          "values": [
+            "424,96C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ECO DIAGNOSTICA LTDA",
+          "values": [
+            "3.080,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VILACOPOS DIST. PROD. ALIM. LTDA",
+          "values": [
+            "167,06C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GLOBUS BRASIL HI TECH COMERCIO DE EQUIPAMENTOS IMPORTACAO E EXPORTACAO",
+          "values": [
+            "29.060,22C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CLASEN & CASADO FILHO SOCIEDADE DE ADVOGADOS",
+          "values": [
+            "11.262,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GOES E MARTINS ASSESSORIA DO TRABALHO LTDA ME",
+          "values": [
+            "522,80C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SABORECITRUS INDUSTRIA E COMERCIO DE SUCOS E ALIMENTOS LTDA",
+          "values": [
+            "1.190,10C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ABESALAO BERNARDO - ME",
+          "values": [
+            "6.315,50C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SH SPORTS LTDA",
+          "values": [
+            "9.385,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ARARAQUARA COMERCIO DE SUCO NATURAL LTDA.",
+          "values": [
+            "154,80C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MASTER VIDA LABORATORIO DE ANALISES CLINICAS EIRELI",
+          "values": [
+            "32.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SISTEM GAS COMERCIO E SERVICOS EIRELI",
+          "values": [
+            "3.469,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "WL-SERVIÇOS COMBINADOS DE APOIO PARA CONDOMINIOS-EIRELI",
+          "values": [
+            "53.999,94C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "V P - LOCACAO DE VEICULOS LTDA",
+          "values": [
+            "267.969,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CEDRS - GESTAO EMPRESARIAL LTDA",
+          "values": [
+            "1.062,75C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SONIA TEREZINHA VIEIRA DELIZA - EPP",
+          "values": [
+            "12.510,08C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "JR BUSINESS AND REPRENTATION - INTERMEDIAÇÃO E AGENCIAMENTO DE NEGÓCIOS",
+          "values": [
+            "4.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HOTEL MONTE SERRAT",
+          "values": [
+            "515,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CASA DE CARNES CENTRAL DE ARARAQUARA LTDA",
+          "values": [
+            "65.096,26C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MECÂNICA MANTESE LTDA. - EPP",
+          "values": [
+            "1.453,20C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PAMA COMERCIO DE GENEROS ALIMENTICIOS LTDA",
+          "values": [
+            "1.090,65C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BENEDITO CARLOS DA CRUZ 06592938897",
+          "values": [
+            "1.139,90C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CENTRO PAULISTA COMERCIO DE PRODUTOS DE LIMPEZA LTDA",
+          "values": [
+            "5.263,25C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COMERCIAL PIPOCOPOS LTDA",
+          "values": [
+            "7.431,93C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "JEFFERSON DA SILVA PAULINO",
+          "values": [
+            "12.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DENIS SILVA PRODUTOS E SERVIÇOS LTDA",
+          "values": [
+            "6.415,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BENICASA E SILVA LTDA ME",
+          "values": [
+            "13.847,02C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GABRIEL B. DOS SANTOS ESPORTES",
+          "values": [
+            "19.580,64C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ATACADISTA REAL GONCALVES LTDA",
+          "values": [
+            "3.456,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BZ 16 GESTÃO DE NEGÓCIOS ESPORTIVOS LTDA",
+          "values": [
+            "1.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TRUST TEAM MARKETING PROMOCIONAL E EVENTOS LTDA",
+          "values": [
+            "128.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CLINICA MEDICA LELP LTDA",
+          "values": [
+            "5.631,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RJ ALVES CONSULTORIA LTDA",
+          "values": [
+            "28.155,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "4NUTRI SUPLEMENTOS ALIMENTARES LTDA",
+          "values": [
+            "509,80C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RAFAELA BEVILAQUA MASCARIN",
+          "values": [
+            "14.270,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "POSTO TOTAL ARARAQUARA EIRELI",
+          "values": [
+            "2.211,85C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "VERA LUCIA DA SILVA GARBIN CONFECCOES-EPP",
+          "values": [
+            "1.386,00C"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # BALANÇO PATRIMONIAL",
+      "columns": [
+        "Descrição",
+        "Saldo Atual"
+      ],
+      "rows": [
+        {
+          "rawLabel": "BATISTELA ESPORTE E LAZER LTDA",
+          "values": [
+            "12.000,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BIOGENESE COMERCIO DE ARTIGOS MEDICOS LTDA ME",
+          "values": [
+            "7.602,86€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "J.R.C. SERVIÇOS PROFISSIONAIS E COMERCIAIS S/S LTDA",
+          "values": [
+            "9.850,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MJ9 SPORTS GERENCIAMENTO ESPORTIVO LTDA",
+          "values": [
+            "2.000,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DI CAFE MAQUINAS PARA CAFE EXPRESSO LTDA",
+          "values": [
+            "226,70€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TORCIDA BABY DO BRASIL LTDA",
+          "values": [
+            "3.153,28€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CF DO BRASIL TECHNOLOGIES LTDA",
+          "values": [
+            "4.100,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ISN COMERCIO DE SUPLEMENTOS LTDA",
+          "values": [
+            "5.570,65€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GARDEN PLAZA HOEL LTDA",
+          "values": [
+            "158,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FILEBOX - SISTEMAS DE ARQUIVO S/S LTDA.",
+          "values": [
+            "164,70€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PRO SOCCER TECNOLOGIA E ALTO RENDIMENTO LTDA",
+          "values": [
+            "1.500,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "THOMAZ SPORTS E MARKETING LTDA",
+          "values": [
+            "8.000,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEIXA ELA TREINAR ESPORTES INOVA SIMPLES (I.S) LTDA",
+          "values": [
+            "5.056,83€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BERNINI'S ORGANIZACAO DE EVENTOS ESPORTIVOS LTDA",
+          "values": [
+            "450,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LUIZ LEANDRO LOPES SANCHES",
+          "values": [
+            "2.000,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RADSQUARE TECNOLOGIA LTDA",
+          "values": [
+            "5.959,19€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ISG CONSULTORIA EM PROJETOS LTDA",
+          "values": [
+            "18.770,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "KACHO MARKETING DIGITAL, COMUNICACAO E COMERCIO VAREJISTA LT",
+          "values": [
+            "80,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DSR ASSESSORIA ESPORTIVA LTDA",
+          "values": [
+            "1.000,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BENASSI SPORTS LTDA",
+          "values": [
+            "4.000,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RAFAEL LIMA FERRAGENS",
+          "values": [
+            "123,30€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LUPMED COMERCIAL DISTRIBUICAO & IMPORTACAO LTDA",
+          "values": [
+            "860,20€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ANDRÉ ROBERTO DE OLIVEIRA 31910320889 - MEI",
+          "values": [
+            "100,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FB10 PARTICIPAÇÕES LTDA",
+          "values": [
+            "20.000,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "JULIO CESAR CARNEIRO",
+          "values": [
+            "6.750,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "GRAO SANTO CAFE LTDA",
+          "values": [
+            "380,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ZAPSIGN PROCESSAMENTO DE DADOS LTDA",
+          "values": [
+            "958,80€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OBRIGAÇÕES TRABALHISTAS",
+          "values": [
+            "6.751.437,05€"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DÉBITOS SOCIAIS",
+          "values": [
+            "1.051.996,40€"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "SALÁRIOS A PAGAR",
+          "values": [
+            "715.794,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESCISÕES DE TRABALHO A PAGAR",
+          "values": [
+            "98.823,00€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ACORDO TRABALHISTA A PAGAR",
+          "values": [
+            "237.379,40€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROVISÕES SOCIAIS",
+          "values": [
+            "813.958,24€"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PROVISÃO PARA FÉRIAS",
+          "values": [
+            "718.185,23€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROVISÃO PARA INSS FÉRIAS",
+          "values": [
+            "32.247,16€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROVISÃO PARA FGTS FÉRIAS",
+          "values": [
+            "57.326,79€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROVISÃO PARA PIS FÉRIAS",
+          "values": [
+            "6.199,06€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ENCARGOS SOCIAIS",
+          "values": [
+            "2.917.546,36€"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "INSS A RECOLHER",
+          "values": [
+            "2.078.355,89€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FGTS A RECOLHER",
+          "values": [
+            "223.818,60€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF S/SALÁRIOS A RECOLHER",
+          "values": [
+            "541.708,17€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PIS S/FOLHA DE PAGAMENTO A RECOLHER",
+          "values": [
+            "73.663,70€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTOS ENCARGOS SOCIAIS",
+          "values": [
+            "1.967.936,05€"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PARCELAMENTO FGTS",
+          "values": [
+            "3.643,51€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO FGTS - 06020811000130",
+          "values": [
+            "166.704,25€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO PGFN - 8023342",
+          "values": [
+            "145.110,48€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO PGFN - 8490081",
+          "values": [
+            "27.652,29€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO PGFN - 8489364",
+          "values": [
+            "26.900,28€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO PGFN - 8489685",
+          "values": [
+            "31.888,51€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO SIMPLIFICADO ORDINARIO - 27/11/2020",
+          "values": [
+            "203.641,10€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO SIMPLIFICADO PREVIDENCIARIO - 09/12/2021",
+          "values": [
+            "997.457,43€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO SIMPLIFICADO - 13/12/2021",
+          "values": [
+            "55.369,92€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO PERT DEBITOS PREVIDENCIARIOS - 03/05/2021",
+          "values": [
+            "44.820,09€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO SIMPLIFICADO ORDINARIO - 15/04/2021",
+          "values": [
+            "264.748,19€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OBRIGAÇÕES TRIBUTÁRIAS",
+          "values": [
+            "2.260.647,64€"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DÉBITOS FISCAIS",
+          "values": [
+            "1.851.994,80€"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "COFINS A RECOLHER",
+          "values": [
+            "195.260,44€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PIS A RECOLHER",
+          "values": [
+            "43.949,30€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CRF A RECOLHER",
+          "values": [
+            "143.043,73€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CSLL A RECOLHER",
+          "values": [
+            "275.366,97€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRPJ A RECOLHER",
+          "values": [
+            "718.876,45€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF S/ALUGUÉL A RECOLHER",
+          "values": [
+            "24.988,57€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS RETIDO A RECOLHER",
+          "values": [
+            "55.751,92€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS A RECOLHER - OUTROS",
+          "values": [
+            "20.692,86€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF SERVIÇOS PESSOAS FÍSICAS A RECOLHER",
+          "values": [
+            "1.133,76€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "IRRF S/SERVIÇOS PRESTADOS A RECOLHER",
+          "values": [
+            "46.475,30€"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ISS RETIDO A RECOLHER",
+          "values": [
+            "237.126,01€"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 5,
+      "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # BALANÇO PATRIMONIAL",
+      "columns": [
+        "Descrição",
+        "Saldo Atual"
+      ],
+      "rows": [
+        {
+          "rawLabel": "S.A.F. A RECOLHER",
+          "values": [
+            "89.329,49C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTOS TRIBUTÁRIOS",
+          "values": [
+            "411.670,36C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PARCELAMENTO 12996/14 PGNF DEMAIS DÉBITOS 4737",
+          "values": [
+            "3.083,97C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO PGFN - 7807134",
+          "values": [
+            "5.010,48C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO PGFN - 7636754",
+          "values": [
+            "107.870,17C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO SIMPLIFICADO NÃO PREVIDENCIARIO - 09/12/2020",
+          "values": [
+            "155.067,15C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO SIMPLIFICADO NÃO PREVIDENCIARIO - 14/04/2021",
+          "values": [
+            "140.638,59C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/ENCARGOS PARCELAMENTOS TRIBUTÁRIOS",
+          "values": [
+            "3.017,52D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "/-/PARCELAMENTO PGFN - 7807134",
+          "values": [
+            "3.017,52D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSTITUIÇÕES FINANCEIRAS",
+          "values": [
+            "1.152.941,42C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "EMPRÉSTIMOS E FINANCIAMENTOS",
+          "values": [
+            "1.706.555,53C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "BANCO SICOOB - CONTRATO",
+          "values": [
+            "355.339,57C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BANCO BRADESCO S/A - CAPITAL DE GIRO 15764133",
+          "values": [
+            "1.351.215,96C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/ENCARGOS S/EMPRÉSTIMOS E FINANCIAMENTOS",
+          "values": [
+            "553.614,11D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "/-/BANCO SICOOB - CONTRATO",
+          "values": [
+            "160.351,38D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/BANCO BRADESCO S/A - CAPITAL DE GIRO 15764133",
+          "values": [
+            "393.262,73D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OBRIGAÇÕES DIVERSAS",
+          "values": [
+            "411.948,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "OUTRAS CONTAS A PAGAR",
+          "values": [
+            "511.696,85C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "MAX SILVA SPORTS LTDA",
+          "values": [
+            "35.333,34C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CUIABÁ ESPORTE CLUBE LTDA",
+          "values": [
+            "23.833,34C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIREITO DE IMAGEM FUTEBOL FEMININO A PAGAR",
+          "values": [
+            "271.354,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "AMERICA FUTEBOL CLUBE",
+          "values": [
+            "40.582,17C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CARTÃO DE CREDITO A PAGAR - FINAL 4774",
+          "values": [
+            "15.594,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAPIVARIANO FUTEBOL CLUBE",
+          "values": [
+            "125.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/CONTRATOS DE PRESTAÇÕES DE SERVIÇOS",
+          "values": [
+            "35.333,34D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "/-/MAX SILVA SPORTS LTDA",
+          "values": [
+            "35.333,34D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/CONTRATOS DE TRANSAÇÕES DE ATLETAS",
+          "values": [
+            "64.415,51D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "/-/CUIABÁ ESPORTE CLUBE",
+          "values": [
+            "23.833,34D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/AMERICA FUTEBOL CLUBE",
+          "values": [
+            "40.582,17D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMPRÉSTIMOS DE TERCEIROS",
+          "values": [
+            "108.000,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "EMPRÉSTIMOS DE TERCEIROS",
+          "values": [
+            "108.000,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DATASOCCER SPORTS ADM. DE BENS PROPRIOS, MARKETING, ASSESSORIA E SERVIÇO",
+          "values": [
+            "108.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECEITAS A DIFERIR",
+          "values": [
+            "6.974.000,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CONTRATOS DE PATROCÍNIOS",
+          "values": [
+            "6.974.000,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "VIAÇÃO PARATY LTDA",
+          "values": [
+            "300.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAMPINAS CAP INTERMEDIAÇÃO DE SERV. E NEGÓCIOS LTDA",
+          "values": [
+            "14.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LBML CAP INTERMEDIAÇÃO DE SERV. E NEGÓCIOS LTDA",
+          "values": [
+            "14.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LPM CAP INTERMEDIAÇÃO DE SERV. E NEG. MOBILIÁRIOS LTDA",
+          "values": [
+            "14.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NORE CAP INTERMEDIAÇÃO DE SERV. E NEG. MOBILIÁRIOS LTDA",
+          "values": [
+            "14.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RIB CAP INTERMEDIAÇÃO DE SERV. E NEG. MOBILIÁRIOS LTDA",
+          "values": [
+            "14.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PP CAP INTERIOR INTERM. DE SERV. E NEG. MOBILIÁRIOS LTDA",
+          "values": [
+            "14.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SJC CAP INTERMEDIAÇÃO DE SERV. E NEG. MOBILIÁRIOS LTDA",
+          "values": [
+            "14.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ESTRELLA D GICBA LTDA.",
+          "values": [
+            "1.000.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "EMPRESA CRUZ DE TRANSPORTES LTDA.",
+          "values": [
+            "50.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSTITUTO ESTRE DE RESPONSABILIDADE SOCIO-AMBIENTAL",
+          "values": [
+            "50.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BETNACIONAL",
+          "values": [
+            "600.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MRV ENGENHARIA E PARTICIPAÇÕES S/A",
+          "values": [
+            "40.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FUN GAMING GROUP",
+          "values": [
+            "2.940.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "MJR FARMA COMÉRCIO E DISTRIBUIÇÃO S/A",
+          "values": [
+            "1.800.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "FRIOZEM ARMAZENS FRIGORIFICOS LTDA",
+          "values": [
+            "96.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ADIANTAMENTO DE CLIENTES",
+          "values": [
+            "151.000,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ESTRELLA D GICBA LTDA",
+          "values": [
+            "100.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "HEATMAP SPORTS AND ENTERTAINMENT LTDA",
+          "values": [
+            "51.000,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PASSIVO NÃO CIRCULANTE",
+          "values": [
+            "19.153.003,16C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "OBRIGAÇÕES TRABALHISTAS",
+          "values": [
+            "2.052.448,98C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PARCELAMENTOS ENCARGOS SOCIAIS",
+          "values": [
+            "2.052.448,98C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PARCELAMENTO PGFN - 8023342",
+          "values": [
+            "483.701,92C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO PGFN - 8490081",
+          "values": [
+            "99.813,64C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO PGFN - 8489364",
+          "values": [
+            "214.339,45C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO PGFN - 8489685",
+          "values": [
+            "254.085,52C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO SIMPLIFICADO ORDINARIO - 27/11/2020",
+          "values": [
+            "324.807,85C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO SIMPLIFICADO - 13/12/2021",
+          "values": [
+            "86.437,38C"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": true
+    },
+    {
+      "page": 6,
+      "section": "C.N.P.J.: 06.020.811/0001-30 / CONSOLIDADO / # BALANÇO PATRIMONIAL",
+      "columns": [
+        "Descrição",
+        "Saldo Atual"
+      ],
+      "rows": [
+        {
+          "rawLabel": "PARCELAMENTO PERT DEBITOS PREVIDENCIARIOS - 03/05/2021",
+          "values": [
+            "129.608,76C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO SIMPLIFICADO ORDINARIO - 15/04/2021",
+          "values": [
+            "459.654,46C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OBRIGAÇÕES TRIBUTÁRIAS",
+          "values": [
+            "473.370,31C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PARCELAMENTOS TRIBUTÁRIOS",
+          "values": [
+            "476.891,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PARCELAMENTO PGFN - 787134",
+          "values": [
+            "5.845,80C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO SIMPLIFICADO NÃO PREVIDENCIARIO - 09/12/2020",
+          "values": [
+            "251.897,06C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARCELAMENTO SIMPLIFICADO NÃO PREVIDENCIARIO - 14/04/2021",
+          "values": [
+            "219.148,14C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "/-/ENCARGOS PARCELAMENTOS TRIBUTÁRIOS",
+          "values": [
+            "3.520,69D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "/-/PARCELAMENTO PGFN - 7807134",
+          "values": [
+            "3.520,69D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CONTINGÊNCIAS",
+          "values": [
+            "1.475.370,90C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CONTINGÊNCIAS",
+          "values": [
+            "1.475.370,90C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PROVISÃO P/CONTINGÊNCIAS TRABALHISTAS",
+          "values": [
+            "569.424,56C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROVISÃO P/CONTINGÊNCIAS CIVEIS",
+          "values": [
+            "905.946,34C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSTITUIÇÕES FINANCEIRAS",
+          "values": [
+            "887,46C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "EMPRÉSTIMOS E FINANCIAMENTOS",
+          "values": [
+            "887,46C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "BANCO BRADESCO S/A - SALDO DEVEDOR",
+          "values": [
+            "887,46C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ADIANTAMENTO PARA FUTURO AUMENTO DE CAPITAL",
+          "values": [
+            "11.306.760,87C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "ADIANTAMENTO PARA FUTURO AUMENTO DE CAPITAL",
+          "values": [
+            "11.306.760,87C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "FILIPPO VILELLA DUARTE BERTOLUCCI",
+          "values": [
+            "11.306.760,87C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PARTES RELACIONADAS",
+          "values": [
+            "3.844.164,64C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PARTES RELACIONADAS",
+          "values": [
+            "3.844.164,64C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "GIULIANO PACHECO BERTOLUCCI",
+          "values": [
+            "2.227.464,64C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "JULIO CESAR COSTA TARAN",
+          "values": [
+            "1.616.700,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PATRIMÔNIO LÍQUIDO",
+          "values": [
+            "12.383.266,10D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CAPITAL SOCIAL",
+          "values": [
+            "17.834.019,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CAPITAL SUBSCRITO",
+          "values": [
+            "17.834.019,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CAPITAL AUTORIZADO A SUBSCREVER",
+          "values": [
+            "19.429.798,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CAPITAL A SUBSCREVER",
+          "values": [
+            "1.595.779,00D"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESERVAS",
+          "values": [
+            "252.579,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RESERVAS DE CAPITAL",
+          "values": [
+            "252.579,00C"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "AGIO NA EMISSAO DE AÇÕES",
+          "values": [
+            "252.579,00C"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LUCROS OU PREJUÍZOS ACUMULADOS",
+          "values": [
+            "30.469.864,10D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "LUCROS OU PREJUÍZOS ACUMULADOS",
+          "values": [
+            "30.469.864,10D"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "/-/PREJUÍZOS ACUMULADOS",
+          "values": [
+            "30.469.864,10D"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/ferroviaria-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"ferroviaria\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

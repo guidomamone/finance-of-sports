@@ -1,0 +1,576 @@
+{
+  "club": "cuiaba",
+  "year": 2023,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Cuiaba/balanco-patrimonial-2023.md",
+  "generatedAt": "2026-09-30T21:52:26.309Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 93,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 3,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 1,
+      "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / CUIABÁ – MATO GROSSO / BALANCO PATRIMONIAL 31 DE DEZEMBRO DE 2023 / Valores Expressos em Reais (R$)",
+      "columns": [
+        "ATIVO",
+        "Saldo em 31/12/2023",
+        "Saldo em 31/12/2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CIRCULANTE",
+          "values": [
+            "21.108.242",
+            "5.546.599"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Disponibilidades",
+          "values": [
+            "12.840.574",
+            "3.429.558"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Clientes",
+          "values": [
+            "5.545.128",
+            "403.812"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Adiantamentos",
+          "values": [
+            "2.599.312",
+            "1.590.002"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Contas",
+          "values": [
+            "123.227",
+            "123.227"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NÃO CIRCULANTE",
+          "values": [
+            "49.318.683",
+            "24.745.743"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Imobilizado",
+          "values": [
+            "23.257.147",
+            "16.994.010"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Intangível",
+          "values": [
+            "26.061.536",
+            "7.751.733"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DO ATIVO",
+          "values": [
+            "70.426.925",
+            "30.292.342"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 1,
+      "section": null,
+      "columns": [
+        "PASSIVO",
+        "Saldo em 31/12/2023",
+        "Saldo em 31/12/2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "CIRCULANTE",
+          "values": [
+            "8.186.129",
+            "5.521.763"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Fornecedores",
+          "values": [
+            "3.625.526",
+            "2.870.999"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Empréstimos e Financiamentos",
+          "values": [
+            "190.207",
+            "339.993"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salários, férias e encargos sociais",
+          "values": [
+            "1.207.195",
+            "1.007.102"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Obrigações Tributárias",
+          "values": [
+            "3.163.202",
+            "1.303.669"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Contas",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "NÃO CIRCULANTE",
+          "values": [
+            "2.170.841",
+            "2.056.640"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Empréstimos e Financiamentos",
+          "values": [
+            "651.062",
+            "536.861"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisões p/ Contingência",
+          "values": [
+            "1.519.779",
+            "1.519.779"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PATRIMÔNIO LÍQUIDO",
+          "values": [
+            "60.069.955",
+            "22.713.939"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "Capital social realizado",
+          "values": [
+            "10.000",
+            "10.000"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lucro/(Prejuízo) Acumulados",
+          "values": [
+            "60.059.955",
+            "22.703.939"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DO PASSIVO",
+          "values": [
+            "70.426.925",
+            "30.292.342"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 2,
+      "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / DEMONSTRAÇÃO DO RESULTADO NO EXERCÍCIO EM 31/12/2023 / Valores Expressos em Reais (R$)",
+      "columns": [
+        "DEMONSTRAÇÃO DO RESULTADO",
+        "Saldo em 31/12/2023",
+        "Saldo em 31/12/2022"
+      ],
+      "rows": [
+        {
+          "rawLabel": "RECEITA OPERACIONAL BRUTA",
+          "values": [
+            "168.532.840",
+            "133.342.794"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RECEITA FUTEBOL PROFISSIONAL",
+          "values": [
+            "164.031.359",
+            "130.653.048"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "PATROCÍNIOS",
+          "values": [
+            "14.582.342",
+            "17.147.045"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PLACAS DE PUBLICIDADE",
+          "values": [
+            "6.050.000",
+            "5.500.100"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DIREITOS ECONÔMICOS DE ATLETAS",
+          "values": [
+            "17.252.050",
+            "1.276.842"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "SÓCIO TORCEDOR",
+          "values": [
+            "2.337.031",
+            "3.017.469"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "COTAS/TV",
+          "values": [
+            "103.565.410",
+            "87.560.832"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "BILHETERIA/JOGOS",
+          "values": [
+            "20.181.467",
+            "16.116.301"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OUTRAS RECEITAS C/ FUTEBOL",
+          "values": [
+            "63.061",
+            "34.460"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DEMAIS RECEITAS",
+          "values": [
+            "4.501.481",
+            "2.689.745"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "LICENCIAMENTOS",
+          "values": [
+            "1.074.189",
+            "287.757"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ESCOLINHA",
+          "values": [
+            "1.241.567",
+            "874.757"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LOTERIAS",
+          "values": [
+            "887.110",
+            "981.819"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OUTRAS RECEITAS",
+          "values": [
+            "1.298.615",
+            "545.413"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) DEDUÇÕES DAS RECEITAS",
+          "values": [
+            "10.599.427",
+            "9.604.853"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DESPESAS TRIBUTÁRIAS",
+          "values": [
+            "10.599.427",
+            "9.604.853"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RECEITA OPERACIONAL LÍQUIDA",
+          "values": [
+            "157.933.413",
+            "123.737.941"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "LUCRO BRUTO",
+          "values": [
+            "157.933.413",
+            "123.737.941"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(-) CUSTOS FUTEBOL PROFISSIONAL",
+          "values": [
+            "98.846.512",
+            "83.450.280"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "CUSTOS COM PESSOAL",
+          "values": [
+            "74.689.520",
+            "68.268.443"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CUSTOS COM JOGOS",
+          "values": [
+            "9.584.064",
+            "8.318.707"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OUTROS CUSTOS COM FUTEBOL",
+          "values": [
+            "14.572.928",
+            "6.863.131"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) DESPESAS",
+          "values": [
+            "21.124.887",
+            "14.775.866"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DESPESAS COM PESSOAL",
+          "values": [
+            "7.341.037",
+            "2.238.022"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS ADMINISTRATIVAS",
+          "values": [
+            "13.549.932",
+            "12.369.340"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS COM VENDAS",
+          "values": [
+            "107.449",
+            "15.268"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "DESPESAS TRIBUTÁRIAS",
+          "values": [
+            "126.468",
+            "153.237"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESULTADO DA ATIVIDADE",
+          "values": [
+            "37.962.014",
+            "25.511.794"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(+/-) DESPESAS/(RECEITAS) OPERACIONAI",
+          "values": [
+            "605.998",
+            "(278.683)"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "DESPESAS/(RECEITAS) FINANCEIRAS",
+          "values": [
+            "605.998",
+            "(278.683)"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LUCRO/(PREJUÍZO) OPERACIONAL",
+          "values": [
+            "37.356.016",
+            "25.790.477"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "RESULTADO ANTES DA PROVISÃO DO IR/C",
+          "values": [
+            "37.356.016",
+            "25.790.477"
+          ],
+          "bold": true
+        },
+        {
+          "rawLabel": "(-) PROVISÃO PARA IMPOSTO DE RENDA",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "(-) PROVISÃO PARA CONTRIBUIÇÃO SOCIA",
+          "values": [
+            "-",
+            "-"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LUCRO/(PREJUÍZO) LÍQUIDO DO EXERCÍCI",
+          "values": [
+            "37.356.016",
+            "25.790.477"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": true
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 1,
+      "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / CUIABÁ – MATO GROSSO / BALANCO PATRIMONIAL 31 DE DEZEMBRO DE 2023 / Valores Expressos em Reais (R$)",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL DO ATIVO",
+      "target": "70.426.925",
+      "addendCount": 2,
+      "how": "solo-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 1,
+      "section": "CUIABA ESPORTE CLUBE – SOCIEDADE ANONIMA DE FUTEBOL / CNPJ: 04.847.144/0001-39 / CUIABÁ – MATO GROSSO / BALANCO PATRIMONIAL 31 DE DEZEMBRO DE 2023 / Valores Expressos em Reais (R$)",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DO ATIVO",
+      "target": "30.292.342",
+      "addendCount": 6,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 1,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL DO PASSIVO",
+      "target": "70.426.925",
+      "addendCount": 3,
+      "how": "solo-subtotales-en-negrita",
+      "closes": true
+    },
+    {
+      "page": 1,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL DO PASSIVO",
+      "target": "30.292.342",
+      "addendCount": 8,
+      "how": "sin-subtotales-en-negrita",
+      "closes": true
+    }
+  ],
+  "categoryPrecedent": {
+    "skipped": true,
+    "reason": "data/cuiaba-data.js no existe todavía -- club nuevo, sin precedente posible. Categorización 100% a mano (club-data-mapping/SKILL.md sección 1)."
+  },
+  "league": {
+    "skipped": true,
+    "reason": "\"cuiaba\" no tiene entrada en data/clubs.js todavía (club nuevo) -- sin país/nombre para buscar automático."
+  },
+  "fxHints": [],
+  "warnings": []
+}

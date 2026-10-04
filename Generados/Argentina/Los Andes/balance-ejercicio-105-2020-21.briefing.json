@@ -1,0 +1,473 @@
+{
+  "club": "losandes-ar",
+  "year": 2021,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Argentina/Los Andes/balance-ejercicio-105-2020-21.md",
+  "generatedAt": "2026-09-30T22:39:16.917Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 1,
+    "eu": 102,
+    "space": 0
+  },
+  "scannedWarning": false,
+  "tableCount": 10,
+  "relevantTableCount": 1,
+  "tables": [
+    {
+      "page": 3,
+      "section": ". CLUB ATLÉTICO LOS ANDES / ACTIVO / ACTIVO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Caja (Nota",
+          "values": [
+            "2,1)",
+            "169.809,00",
+            "112,614,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Bancos (NOTA 2.2)",
+          "values": [
+            "7.990.010,11",
+            "3.606.664,95"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Cuotas a cobrar",
+          "values": [
+            "4.597.411,43",
+            "6.329.130,90"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "Iva credito fiscal",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Otros creditos fiscales (NOTA 2.3)",
+          "values": [
+            "10.438.926,06",
+            "12.196.021,82"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVO CORRIENTE",
+          "values": [
+            "23,196.156,60",
+            "22.244.431,68"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "ACTIVO NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Plantel profesional",
+          "values": [
+            "47.460.553,51",
+            "47.460.553,51"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Plantel futbol amateur",
+          "values": [
+            "9.602.907,22",
+            "9.602.907,22"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL ACTIVO NO CORRIENTE",
+          "values": [
+            "477.402.575,02",
+            "466.831.237,77"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "TOTAL ACTIVO 500.598.731,62 489.075.669,45 / PASIVO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "DEUDAS OPERATIVAS (NOTA 2.4)",
+          "values": [
+            "12.919.866,02",
+            "25.270.258,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Soc. y previsionales (NOTA 2.5)",
+          "values": [
+            "28.048.575,07",
+            "20.883.983,05"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASIVO CORRIENTE",
+          "values": [
+            "40.968.441,09",
+            "46.154.241,59"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "PASIVO NO CORRIENTE",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "DEUDAS OPERATIVAS",
+          "values": [
+            "(NOTA2.6)",
+            "24.393.663,95",
+            "39.044,043,84"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "OTRAS DEUDAS (NOTA 2.7)",
+          "values": [
+            "2.634.848,27",
+            "3.957.544,17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "PROVISIONES PARA JUICIOS (NOTA 2.8)",
+          "values": [
+            "10.026.535,49",
+            "15.059,864,17"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": null,
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "TOTAL PASIVO NO CORRIENTE",
+          "values": [
+            "37.055.047,71",
+            "58.061.452,17"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL DEL PASIVO",
+          "values": [
+            "78.023.488,80",
+            "104.215.693,76"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 3,
+      "section": "PATRIMONIO NETO",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "S/ ESTADO RESPECTIVO",
+          "values": [
+            "422.575.242,82",
+            "384.859.975,69"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "TOTAL PASIVO MAS PATRIMONIO NETO",
+          "values": [
+            "500.598.731,62",
+            "489.075:669,45."
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 4,
+      "section": "CLUB ATLETICO LOS ANDES / RECURSOS 2021 2020 / TOTAL RECURSOS 125,444,731,23 145.470,891,42 / MENOS / MENOS",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "Gastos Administrativos",
+          "values": [
+            "14.015.284,11",
+            "42.895.523,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "sutotal",
+          "values": [
+            "10.301.144,96",
+            "-11.218.471,75"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "REPCAM",
+          "values": [
+            "27.414,122,16",
+            "17.534.783,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RESULTADO FINAL EJERCICIO 37.715.267,12 n",
+          "values": [
+            "6.316.311,96"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true
+    },
+    {
+      "page": 6,
+      "section": "MUEBLES Y UTILES ETA ada / QUIPOS INSTALACIONES RATA, / NETO / AMORT. ACUM . [JAMORT / VALOR ORIGEN _JINICIO AMORT DEL EJERC [Balas [ACUMULADA _ [30/06/2021",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "TT oaaaaromo] 9.ooames32] sam63sa[ | 952645286]",
+          "values": [
+            "906.817.91|",
+            "1:428.481,45Í"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "LT 2204. 1a109| 57.952736,50| 31223655] |",
+          "values": [
+            "61060973.06|",
+            "1.179.758,04[",
+            "4.291.994,59|"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Tf aiasazasoa| 12. 205.o70.90|—829.894,56] |",
+          "values": [
+            "13.074:965,46|",
+            "28.419.762,55|",
+            "_3.838.667,52"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    },
+    {
+      "page": 10,
+      "section": "BANCO PROVINCIA 388.072,67 / BANCO COLEGIOS 6.210.917,86 / BANCO NACION CA. 16.443,00 / BANCO NACION CTA CTE 1.139.024,14 7.990.010,11 / 2.3.- OTROS CREDITOS FISCALES",
+      "columns": null,
+      "rows": [
+        {
+          "rawLabel": "1. BRUTOS",
+          "values": [
+            "44.945,16"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "RETENCION GANANCIAS",
+          "values": [
+            "872.968,71"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 3,
+      "section": "Iva credito fiscal",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL ACTIVO CORRIENTE",
+      "target": "23,196.156,60",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "10438902.863844"
+    },
+    {
+      "page": 3,
+      "section": "Iva credito fiscal",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL ACTIVO CORRIENTE",
+      "target": "22.244.431,68",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-10048409.86"
+    },
+    {
+      "page": 3,
+      "section": "ACTIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL ACTIVO NO CORRIENTE",
+      "target": "477.402.575,02",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-420339114.28999996"
+    },
+    {
+      "page": 3,
+      "section": "ACTIVO NO CORRIENTE",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL ACTIVO NO CORRIENTE",
+      "target": "466.831.237,77",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-409767777.03999996"
+    },
+    {
+      "page": 3,
+      "section": "TOTAL ACTIVO 500.598.731,62 489.075.669,45 / PASIVO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PASIVO CORRIENTE",
+      "target": "40.968.441,09",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 3,
+      "section": "TOTAL ACTIVO 500.598.731,62 489.075.669,45 / PASIVO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PASIVO CORRIENTE",
+      "target": "46.154.241,59",
+      "addendCount": 2,
+      "closes": false,
+      "diff": "-0.01000000536441803"
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL PASIVO NO CORRIENTE",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": null,
+      "likelyRelevant": false,
+      "totalLabel": "TOTAL DEL PASIVO",
+      "skipped": true,
+      "reason": "Sin ningún rubro nuevo desde el total anterior -- probablemente combina subtotales previos, no rubros (revisar a mano)."
+    },
+    {
+      "page": 3,
+      "section": "PATRIMONIO NETO",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "TOTAL PASIVO MAS PATRIMONIO NETO",
+      "target": "500.598.731,62",
+      "addendCount": 1,
+      "closes": false,
+      "diff": "-78023488.80000001"
+    },
+    {
+      "page": 3,
+      "section": "PATRIMONIO NETO",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "TOTAL PASIVO MAS PATRIMONIO NETO",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"489.075:669,45.\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 4,
+    "results": [
+      {
+        "label": "Gastos Administrativos",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Gastos Administrativos",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "sutotal",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "sutotal",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REPCAM",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "REPCAM",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RESULTADO FINAL EJERCICIO 37.715.267,12 n",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "RESULTADO FINAL EJERCICIO 37.715.267,12 n",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "ar",
+    "query": "Los Andes",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "6 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "3 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}

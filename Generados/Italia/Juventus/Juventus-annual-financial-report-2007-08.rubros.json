@@ -1,0 +1,150 @@
+{
+  "md": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.md",
+  "pdf": "Clubes/Italia/Juventus/Juventus-annual-financial-report-2007-08.pdf",
+  "club": "juventus-it",
+  "year": 2008,
+  "generatedAt": "2026-10-03T23:14:05.478Z",
+  "origen": "verificar.mjs (proceso nuevo, Versión 324)",
+  "rubros": [
+    {
+      "label": "Ticket sales",
+      "lado": "revenue",
+      "page": 47,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        13.98013
+      ],
+      "glosa": "Ingresos por taquilla"
+    },
+    {
+      "label": "Television and radio rights and media revenues",
+      "lado": "revenue",
+      "page": 47,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        124.249226
+      ],
+      "glosa": "Ingresos por derechos de televisión, radio y medios"
+    },
+    {
+      "label": "Revenues from sponsorship and advertising",
+      "lado": "revenue",
+      "page": 47,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        41.172522
+      ],
+      "glosa": "Ingresos por patrocinio y publicidad"
+    },
+    {
+      "label": "Revenues from players' registration rights",
+      "lado": "revenue",
+      "page": 47,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        17.129728
+      ],
+      "glosa": "Ingresos por derechos federativos de jugadores"
+    },
+    {
+      "label": "Other revenues",
+      "lado": "revenue",
+      "page": 47,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        7.200056
+      ],
+      "glosa": "Otros ingresos"
+    },
+    {
+      "label": "Purchase of materials, supplies and other consumables",
+      "lado": "expense",
+      "page": 47,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.408753
+      ],
+      "glosa": "Compra de materiales, suministros y otros consumibles"
+    },
+    {
+      "label": "External services",
+      "lado": "expense",
+      "page": 47,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        26.296011
+      ],
+      "glosa": "Servicios exteriores"
+    },
+    {
+      "label": "Players' wages and technical staff costs",
+      "lado": "expense",
+      "page": 47,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        112.739183
+      ],
+      "glosa": "Salarios de jugadores y costes del cuerpo técnico"
+    },
+    {
+      "label": "Other personnel",
+      "lado": "expense",
+      "page": 47,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        8.123481
+      ],
+      "glosa": "Otros gastos de personal"
+    },
+    {
+      "label": "Expenses from players' registration rights",
+      "lado": "expense",
+      "page": 47,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        2.172615
+      ],
+      "glosa": "Gastos por derechos federativos de jugadores"
+    },
+    {
+      "label": "Other costs",
+      "lado": "expense",
+      "page": 47,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        22.743293
+      ],
+      "glosa": "Otros costes"
+    },
+    {
+      "label": "Amortisation and write-downs of players' registration rights",
+      "lado": "expense",
+      "page": 47,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        32.258847
+      ],
+      "glosa": "Amortización y deterioro de derechos federativos de jugadores"
+    },
+    {
+      "label": "Other amortisation, write-downs and provisions",
+      "lado": "expense",
+      "page": 47,
+      "section": "estado (lectura 5: hoja)",
+      "values": [
+        5.986141
+      ],
+      "glosa": "Otras amortizaciones, deterioros y provisiones"
+    },
+    {
+      "label": "Other non recurring revenues and costs",
+      "lado": "expense",
+      "page": 47,
+      "section": "estado (sin lado en el documento: entra como gasto por su signo, impreso en negativo; lectura 6)",
+      "values": [
+        1.291444
+      ],
+      "glosa": "Otros ingresos y costes no recurrentes"
+    }
+  ]
+}

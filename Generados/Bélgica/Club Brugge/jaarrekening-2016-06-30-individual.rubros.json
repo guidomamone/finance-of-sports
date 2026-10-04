@@ -1,0 +1,52 @@
+{
+ "md": "Clubes/Bélgica/Club Brugge/jaarrekening-2016-06-30-individual.md",
+ "pdf": "Clubes/Bélgica/Club Brugge/jaarrekening-2016-06-30-individual.pdf",
+ "club": "clubbrugge-be",
+ "year": 2016,
+ "numberFormat": "eu (punto miles, coma decimal)",
+ "generatedAt": "2026-09-30T21:54:45.290Z",
+ "tieOuts": {
+  "cierran": 0,
+  "noCierran": 0
+ },
+ "warnings": [],
+ "estadoDeResultados": true,
+ "seleccion": {
+  "ok": true,
+  "filas": 3,
+  "notasUsadas": []
+ },
+ "ladoConocido": 3,
+ "rubros": [
+  {
+   "label": "Bezoldigingen en rechtstreekse sociale voordelen",
+   "lado": "expense",
+   "page": 20,
+   "section": "Personeelskosten",
+   "values": [
+    26.24184
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Werkgeversbijdragen voor sociale verzekeringen",
+   "lado": "expense",
+   "page": 20,
+   "section": "Personeelskosten",
+   "values": [
+    5.896989
+   ],
+   "origen": "estado 14"
+  },
+  {
+   "label": "Werkgeverspremies voor bovenwettelijke verzekeringen",
+   "lado": "expense",
+   "page": 20,
+   "section": "Personeelskosten",
+   "values": [
+    0.754447
+   ],
+   "origen": "estado 14"
+  }
+ ]
+}

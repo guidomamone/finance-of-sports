@@ -1,0 +1,63 @@
+{
+ "pdf": "Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.pdf",
+ "md": "Clubes/Brasil/Novorizontino/dre-e-fluxo-de-caixa-2017.md",
+ "modelo": "claude-opus-5-5",
+ "generado": "2026-10-03T01:45:29.751Z",
+ "bloques": {
+  "b1": {
+   "pagina": 1,
+   "lineas": [
+    8,
+    57
+   ],
+   "tipo": "tabla"
+  },
+  "b2": {
+   "pagina": 2,
+   "lineas": [
+    69,
+    74
+   ],
+   "tipo": "tabla"
+  },
+  "b3": {
+   "pagina": 3,
+   "lineas": [
+    86,
+    127
+   ],
+   "tipo": "tabla"
+  },
+  "b4": {
+   "pagina": 4,
+   "lineas": [
+    139,
+    140
+   ],
+   "tipo": "tabla"
+  },
+  "b5": {
+   "pagina": 5,
+   "lineas": [
+    163,
+    183
+   ],
+   "tipo": "tabla"
+  }
+ },
+ "sin_estado": false,
+ "estado": [
+  "b5"
+ ],
+ "notas_ingresos": [],
+ "notas_gastos": [],
+ "escala": "unidades",
+ "escala_evidencia": "Los importes se imprimen con centavos (ej. 8,019,563.48), sin indicación de miles: están en unidades de reales.",
+ "moneda": "BRL",
+ "columna_ejercicio": "01/01/2017 a 31/12/2017",
+ "columna_anterior": "01/01/2016 a 31/12/2016",
+ "perimetro": "individual",
+ "necesito_ver": [],
+ "dudas": [],
+ "observaciones": "b5 es la DRE del Grêmio Novorizontino (entidad individual). b1-b3 son balance patrimonial, no se eligen. No hay notas que desglosen ingresos o gastos. 'Receitas Financeiras Líquidas' figura con signo negativo dentro de despesas operacionais (resultado financiero neto negativo)."
+}

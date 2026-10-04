@@ -1,0 +1,648 @@
+{
+  "club": "ituano",
+  "year": 2013,
+  "sourceFile": "/Users/guidopablomamonesoneira/Claude/Projects/finance-of-sports/Clubes/Brasil/Ituano/2013-anexo-b.md",
+  "generatedAt": "2026-09-30T21:53:19.688Z",
+  "numberFormat": "eu (punto miles, coma decimal)",
+  "numberFormatEvidence": {
+    "us": 0,
+    "eu": 9,
+    "space": 0
+  },
+  "scannedWarning": true,
+  "tableCount": 10,
+  "relevantTableCount": 2,
+  "tables": [
+    {
+      "page": 3,
+      "section": "# NOTA 05. IMPOSTOS A RECUPERAR / # NOTA 06. DEPÓSITOS E BLOQUEIOS JUDICIAIS / # NOTA 07. INTANGÍVEL / # a) DIREITO FEDERATIVO e USO DE IMAGEM / # b) FORMAÇÃO DE ATLETAS",
+      "columns": [
+        "Descrição",
+        "2013",
+        "2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Atletas profissionais (ii)",
+          "values": [
+            "R$ 138.861,89",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Atletas em formação (i)",
+          "values": [
+            "R$ 170.562,91",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "R$ 309.424,80",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": null,
+      "columns": [
+        "Saldo em 31/12/2012",
+        "Adições",
+        "Baixas",
+        "Transferências Profissional",
+        "Saldo em 31/12/2013"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Infantil",
+          "values": [
+            "0,00 2.778,19",
+            "-",
+            "-",
+            "2.778,19"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juvenil",
+          "values": [
+            "0,00 6.053,59",
+            "-",
+            "-",
+            "6.053,59"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juniores",
+          "values": [
+            "0,00 300.593,02",
+            "-",
+            "(138.861,89)",
+            "161.731,13"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "0,00 309.424,80",
+            "-",
+            "(138.861,89)",
+            "170.562,91"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 4,
+      "section": "#### Movimentação do custo de atletas formados / ##### Profissional",
+      "columns": [
+        "Saldo inicial",
+        "Adições",
+        "Baixas",
+        "Amortização",
+        "Saldo final"
+      ],
+      "rows": [
+        {
+          "rawLabel": "31/12/2012",
+          "values": [
+            "",
+            "",
+            "",
+            "31/12/2013"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "0,00",
+          "values": [
+            "138.861,89",
+            "-",
+            "-",
+            "138.861,89"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "## NOTA 10. IMOBILIZADO",
+      "columns": [
+        "Descrição",
+        "31/12/2013",
+        "31/12/2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Construções Imóveis e Terrenos",
+          "values": [
+            "1.488.853,44",
+            "96.849,70"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Móveis e Instalações",
+          "values": [
+            "189.549,96",
+            "183.083,63"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Máquinas e Equipamentos",
+          "values": [
+            "163.448,47",
+            "159.313,80"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Depreciação Acumulada",
+          "values": [
+            "(232.011,71)",
+            "(143.076,30)"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 5,
+      "section": "### Reavaliação de Bens Imóveis",
+      "columns": [
+        "Posição Antes da Reavaliação",
+        "",
+        "",
+        "Posição Após a Reavaliação",
+        ""
+      ],
+      "rows": [
+        {
+          "rawLabel": "Imóveis",
+          "values": [
+            "31/12/2012",
+            "Depreciação",
+            "31/12/2013",
+            "Depreciação"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Terrenos",
+          "values": [
+            "0,00",
+            "",
+            "",
+            ""
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Edificações",
+          "values": [
+            "96.849,40",
+            "(11.621,88)",
+            "2.966.085,00",
+            "125.767,32"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Total",
+          "values": [
+            "96.849,40",
+            "(11.621,88)",
+            "2.966.085,00",
+            "125.767,32"
+          ],
+          "bold": true
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "NOTA 11. EMPRESTIMOS PESSOAS FISICAS LIGADAS AO CLUBE",
+      "columns": [
+        "Descrição",
+        "31/12/2013",
+        "31/12/2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Ademir Francisco de Campos",
+          "values": [
+            "0,00",
+            "3.500,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Salomão Guerra",
+          "values": [
+            "0,00",
+            "33.900,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outros Creditos- Coreano",
+          "values": [
+            "0,00",
+            "29.914,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "George Bykoff",
+          "values": [
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Lineu Antonio Giacomin",
+          "values": [
+            "0,00",
+            "5.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fernando Francisco Vieira",
+          "values": [
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Luiz Antonio Cristofoletti",
+          "values": [
+            "0,00",
+            "3.000,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Fernando Maria Bragagnolio",
+          "values": [
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Juros Passivos",
+          "values": [
+            "0,00",
+            "60.195,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "NOTA 12. OBRIGAÇÕES TRABALHISTAS - SALÁRIOS E ENCARGOS",
+      "columns": [
+        "Descrição",
+        "31/12/2013",
+        "31/12/2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Salários e Ordenados à Pagar",
+          "values": [
+            "111.435,15",
+            "80.985,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS e FGTS a Recolher",
+          "values": [
+            "27.438,94",
+            "16.350,59"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Rescisões e Acordos à Pagar",
+          "values": [
+            "15.000,00",
+            "0,00"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": true,
+      "filasDeResultados": false
+    },
+    {
+      "page": 6,
+      "section": "NOTA 13. ACORDOS e PROVISÕES TRABALHISTAS",
+      "columns": [
+        "Descrição",
+        "31/12/2013",
+        "31/12/2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Outras Obrigações com Funcionários",
+          "values": [
+            "0,00",
+            "0,00"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão p/Contingencia - INSS/FGTS",
+          "values": [
+            "269.883,83",
+            "261.449,01"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Provisão p/Férias",
+          "values": [
+            "105.439,29",
+            "54.796,17"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": "# NOTA 14. OBRIGAÇÕES TRIBUTARIAS",
+      "columns": [
+        "Descrição",
+        "31/12/2013",
+        "31/12/2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "IRRF a Recolher",
+          "values": [
+            "43.184,98",
+            "37.798,53"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "ISS Retido a Recolher",
+          "values": [
+            "3.497,85",
+            "4.569,73"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "INSS Retido a Recolher",
+          "values": [
+            "4.195,51",
+            "4.147,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "CRF a Recolher",
+          "values": [
+            "64.407,07",
+            "64.407,07"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Outras Contrib.a Recolher",
+          "values": [
+            "3.587,99",
+            "3.587,99"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "Contrib. Sindical a Recolher",
+          "values": [
+            "9.666,03",
+            "9.282,21"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    },
+    {
+      "page": 7,
+      "section": "# NOTA 15. FORNECEDORES E OUTRAS DIVIDAS A PAGAR / # NOTA 16. TITULOS A PAGAR",
+      "columns": [
+        "Descrição",
+        "31/12/2013",
+        "31/12/2012"
+      ],
+      "rows": [
+        {
+          "rawLabel": "Dimache Participações",
+          "values": [
+            "1.729.508,96",
+            "1.102.317,11"
+          ],
+          "bold": false
+        },
+        {
+          "rawLabel": "JP Gerenciamento",
+          "values": [
+            "1.974.436,13",
+            "2.125.767,01"
+          ],
+          "bold": false
+        }
+      ],
+      "likelyRelevant": false,
+      "filasDeResultados": false
+    }
+  ],
+  "tieOuts": [
+    {
+      "page": 3,
+      "section": "# NOTA 05. IMPOSTOS A RECUPERAR / # NOTA 06. DEPÓSITOS E BLOQUEIOS JUDICIAIS / # NOTA 07. INTANGÍVEL / # a) DIREITO FEDERATIVO e USO DE IMAGEM / # b) FORMAÇÃO DE ATLETAS",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "El valor de la fila de total (\"R$ 309.424,80\") no parece un número -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 3,
+      "section": "# NOTA 05. IMPOSTOS A RECUPERAR / # NOTA 06. DEPÓSITOS E BLOQUEIOS JUDICIAIS / # NOTA 07. INTANGÍVEL / # a) DIREITO FEDERATIVO e USO DE IMAGEM / # b) FORMAÇÃO DE ATLETAS",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "target": "0,00",
+      "addendCount": 2,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "target": "0,00 309.424,80",
+      "addendCount": 3,
+      "closes": false,
+      "diff": "0.008742690000000001"
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total",
+      "target": "(138.861,89)",
+      "addendCount": 1,
+      "closes": true
+    },
+    {
+      "page": 4,
+      "section": null,
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total",
+      "target": "170.562,91",
+      "addendCount": 3,
+      "closes": true
+    },
+    {
+      "page": 5,
+      "section": "### Reavaliação de Bens Imóveis",
+      "likelyRelevant": false,
+      "column": 0,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 3 valor(es) del segmento no parecen números (ej. \"31/12/2012\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 5,
+      "section": "### Reavaliação de Bens Imóveis",
+      "likelyRelevant": false,
+      "column": 1,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"Depreciação\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 5,
+      "section": "### Reavaliação de Bens Imóveis",
+      "likelyRelevant": false,
+      "column": 2,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"31/12/2013\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    },
+    {
+      "page": 5,
+      "section": "### Reavaliação de Bens Imóveis",
+      "likelyRelevant": false,
+      "column": 3,
+      "totalLabel": "Total",
+      "skipped": true,
+      "reason": "1 de 2 valor(es) del segmento no parecen números (ej. \"Depreciação\") -- probablemente encabezado de 2 niveles o tabla rotada, revisar a mano."
+    }
+  ],
+  "categoryPrecedent": {
+    "labelsChecked": 5,
+    "results": [
+      {
+        "label": "31/12/2012",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "31/12/2012",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "0,00",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "0,00",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Salários e Ordenados à Pagar",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Salários e Ordenados à Pagar",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INSS e FGTS a Recolher",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "INSS e FGTS a Recolher",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Rescisões e Acordos à Pagar",
+        "side": "revenue",
+        "tier": "SIN_PRECEDENTE"
+      },
+      {
+        "label": "Rescisões e Acordos à Pagar",
+        "side": "expense",
+        "tier": "SIN_PRECEDENTE"
+      }
+    ]
+  },
+  "league": {
+    "pais": "br",
+    "query": "Ituano",
+    "matches": [],
+    "cached": false
+  },
+  "fxHints": [],
+  "warnings": [
+    "Documento marcado como ESCANEADO por Mistral OCR -- verificar a mano contra el PDF antes de cargar cualquier número (CLAUDE.md, club-data-mapping/SKILL.md sección 15).",
+    "1 tabla(s)/columna(s) más no cerraron fuera de las relevantes (notas de balance, etc.) -- prioridad baja, puede ser estructura de la nota que esta heurística no capta bien.",
+    "5 fila(s) de total sin chequeo automático (más de un nivel de subtotal, o valor no numérico) -- agrupación/lectura a mano."
+  ]
+}
